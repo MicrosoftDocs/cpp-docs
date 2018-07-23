@@ -831,56 +831,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-getparamio.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#getparamio",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-getparamlength.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#getparamlength",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-getparamname.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#getparamname",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-getparamstatus.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#getparamstatus",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-getparamstring.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#getparamstring",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-getparamtype.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#getparamtype",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-setparam.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#setparam",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-setparamlength.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#setparamlength",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-setparamstatus.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#setparamstatus",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "docs/data/oledb/cdynamicparameteraccessor-setparamstring.md",
-            "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#setparamstring",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "docs/data/oledb/cdynamicparameteraccessor-cdynamicparameteraccessor.md",
             "redirect_url": "/cpp/data/oledb/cdynamicparameteraccessor-class#cdynamicparameteraccessor",
             "redirect_document_id": false
