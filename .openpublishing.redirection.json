@@ -906,6 +906,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cenumerator-find.md",
+            "redirect_url": "/cpp/data/oledb/cenumerator-class#find",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cenumerator-getmoniker.md",
+            "redirect_url": "/cpp/data/oledb/cenumerator-class#getmoniker",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cenumerator-open.md",
+            "redirect_url": "/cpp/data/oledb/cenumerator-class#open",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
