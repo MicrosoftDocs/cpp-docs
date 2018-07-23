@@ -107,8 +107,6 @@
 ### [CDynamicAccessor Class](cdynamicaccessor-class.md)
 ### [CDynamicParameterAccessor Class](cdynamicparameteraccessor-class.md)
 ### [CDynamicStringAccessor Class](cdynamicstringaccessor-class.md)
-#### [CDynamicStringAccessor::GetString](cdynamicstringaccessor-getstring.md)
-#### [CDynamicStringAccessor::SetString](cdynamicstringaccessor-setstring.md)
 ### [CDynamicStringAccessorA Class](cdynamicstringaccessora-class.md)
 ### [CDynamicStringAccessorW Class](cdynamicstringaccessorw-class.md)
 ### [CEnumerator Class](cenumerator-class.md)
