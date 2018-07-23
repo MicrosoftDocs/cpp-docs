@@ -83,7 +83,7 @@ class CRowset
 |[SetData](#setdata)|Sets data values in one or more columns of a row using [IRowsetChange:SetData](https://msdn.microsoft.com/library/ms721232.aspx).|  
 |[Undo](#undo)|Undoes any changes made to a row since the last fetch or [Update](../../data/oledb/crowset-update.md).|  
 |[Update](#update)|Transmits any pending changes made to the current row since the last fetch or update.|  
-|[UpdateAll](#udpateall)|Transmits any pending changes made to all rows since the last fetch or update.|  
+|[UpdateAll](#updateall)|Transmits any pending changes made to all rows since the last fetch or update.|  
   
 ## Remarks  
  In OLE DB, a rowset is the object through which a program sets and retrieves data.  
@@ -443,9 +443,9 @@ HRESULT MoveNext() throw();HRESULT MoveNext(LONG lSkip, 
   
  This method requires that you set the following properties before calling `Open` on the table or command containing the rowset:  
   
--   DBPROP_CANSCROLLBACKWARDS must be VARIANT_TRUE if *lSkip* < 0  
+-   `DBPROP_CANSCROLLBACKWARDS` must be VARIANT_TRUE if *lSkip* < 0  
   
--   DBPROP_CANFETCHBACKWARDS must be VARIANT_TRUE if *bForward* = false  
+-   `DBPROP_CANFETCHBACKWARDS` must be VARIANT_TRUE if *bForward* = false  
   
  Otherwise (if *lSkip* >= 0 and *bForward* = true), you do not need to set any additional properties.  
 
