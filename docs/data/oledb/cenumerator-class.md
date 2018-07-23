@@ -43,7 +43,7 @@ class CEnumerator : 
 ## <a name="find"></a> CEnumerator::Find
 Looks for a specified name among available providers.  
   
-## Syntax  
+### Syntax  
   
 ```cpp
       bool Find(TCHAR* szSearchName) throw();  
@@ -53,16 +53,16 @@ Looks for a specified name among available providers.
  *szSearchName*  
  [in] The name to search for.  
   
-## Return Value  
+### Return Value  
  **true** if the name was found. Otherwise, **false**.  
   
-## Remarks  
+### Remarks  
  This name maps to the `SOURCES_NAME` member of the [ISourcesRowset](https://msdn.microsoft.com/library/ms715969.aspx) interface.  
   
 ## <a name="getmoniker"></a> CEnumerator::GetMoniker
 Parses the display name to extract the component of the string that can be converted into a moniker.  
   
-## Syntax  
+### Syntax  
   
 ```cpp
 HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();  
@@ -79,13 +79,13 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker, 
  *lpszDisplayName*  
  [in] The display name to parse.  
   
-## Return Value  
+### Return Value  
  A standard HRESULT.  
 
 ## <a name="open"></a> CEnumerator::Open
 Binds the moniker for the enumerator, if one is specified, then retrieves the rowset for the enumerator by calling [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx).  
   
-## Syntax  
+### Syntax  
   
 ```cpp
 HRESULT Open(LPMONIKER pMoniker) throw();  
@@ -107,7 +107,7 @@ HRESULT Open(const CEnumerator& enumerator) throw();
  *enumerator*  
  [in] A reference to an enumerator.  
   
-## Return Value  
+### Return Value  
  A standard HRESULT.  
   
 ## See Also  
