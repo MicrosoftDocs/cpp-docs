@@ -117,7 +117,6 @@
 ### [CNoMultipleResults Class](cnomultipleresults-class.md)
 ### [CNoRowset Class](cnorowset-class.md)
 ### [CRestrictions Class](crestrictions-class.md)
-#### [CRestrictions::Open](crestrictions-open.md)
 ### [CRowset Class](crowset-class.md)
 #### [CRowset::AddRefRows](crowset-addrefrows.md)
 #### [CRowset::Close](crowset-close.md)
