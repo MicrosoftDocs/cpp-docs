@@ -153,7 +153,7 @@ bool GetParamIO(DBORDINAL nParam, 
  *pParamIO*  
  A pointer to the variable containing the `DBPARAMIO` type (input or output) of the specified parameter. It is defined as follows:  
   
-```  
+```cpp  
 typedef DWORD DBPARAMIO;  
   
 enum DBPARAMIOENUM {  
@@ -345,7 +345,7 @@ bool SetParamLength(DBORDINAL nParam,
 ### Remarks  
  Returns **true** on success or **false** on failure. 
 
-## CDynamicParameterAccessor::SetParamStatus
+## <a name="setparamstatus"></a> CDynamicParameterAccessor::SetParamStatus
 Sets the status of the specified parameter stored in the buffer.  
   
 ### Syntax  
