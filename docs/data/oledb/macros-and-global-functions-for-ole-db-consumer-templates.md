@@ -86,7 +86,7 @@ The OLE DB Consumer Templates include the following macros and global functions:
 |[END_PARAM_MAP](#end_param_map)|Marks the end of the parameter map entries.|  
 |[SET_PARAM_TYPE](#set_param_type)|Specifies COLUMN_ENTRY macros that follow the SET_PARAM_TYPE macro as input, output, or input/output.|  
 
-### <a name="alttraceerrorrecords"></a> AtlTraceErrorRecords
+### <a name="atltraceerrorrecords"></a> AtlTraceErrorRecords
 Dumps OLE DB Error Record information to the dump device if an error is returned.  
   
 #### Syntax  
@@ -427,8 +427,7 @@ Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BL
 #### Syntax  
   
 ```cpp
-BLOB_NAME_LENGTH_STATUS(pszName, IID, flags, data, length  
-, status )  
+BLOB_NAME_LENGTH_STATUS(pszName, IID, flags, data, length, status )  
 ```  
   
 #### Parameters  
@@ -456,8 +455,7 @@ Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BL
 #### Syntax  
   
 ```cpp
-BLOB_NAME_STATUS(pszName, IID, flags, data  
-, status )  
+BLOB_NAME_STATUS(pszName, IID, flags, data, status )  
 ```  
   
 #### Parameters  
@@ -933,7 +931,7 @@ COLUMN_NAME(pszName, data)
  [in] The corresponding data member in the user record.  
   
 #### Remarks  
- The **COLUMN_NAME_\*** macros are used in the same places as [COLUMN_ENTRY](../../data/oledb/column-entry.md):  
+ The COLUMN_NAME_* macros are used in the same places as [COLUMN_ENTRY](../../data/oledb/column-entry.md):  
   
 -   Between the [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) and [END_COLUMN_MAP](../../data/oledb/end-column-map.md) macros.  
   
@@ -976,7 +974,7 @@ COLUMN_NAME_EX(pszName, wType, nLength, nPrecision, nScale, data, length, status
  [in] The variable to be bound to the column status.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_length"></a> COLUMN_NAME_LENGTH
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes column length.  
@@ -999,7 +997,7 @@ COLUMN_NAME_LENGTH(pszName, data, length)
  [in] The variable to be bound to the column length.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_length_status"></a> COLUMN_NAME_LENGTH_STATUS
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes column length and column status.  
@@ -1024,7 +1022,7 @@ COLUMN_NAME_LENGTH_STATUS(pszName, data, length, status )
  [in] The variable to be bound to the column status.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_ps"></a> COLUMN_NAME_PS
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes precision and scale.  
@@ -1049,7 +1047,7 @@ COLUMN_NAME_PS(pszName, nPrecision, nScale, data )
  [in] The corresponding data member in the user record.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_ps_length"></a> COLUMN_NAME_PS_LENGTH
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes precision, scale, and column length.  
@@ -1077,7 +1075,7 @@ COLUMN_NAME_PS_LENGTH(pszName, nPrecision, nScale, data, length )
  [in] The variable to be bound to the column length.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_ps_length_status"></a> COLUMN_NAME_PS_LENGTH_STATUS
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes precision, scale, column length, and column status.  
@@ -1108,7 +1106,7 @@ COLUMN_NAME_PS_LENGTH_STATUS(pszName, nPrecision, nScale, data, length, status )
  [in] The variable to be bound to the column status.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_ps_status"></a> COLUMN_NAME_PS_STATUS
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes precision, scale, and column status.  
@@ -1136,7 +1134,7 @@ COLUMN_NAME_PS_STATUS(pszName, nPrecision, nScale, data, status )
  [in] The variable to be bound to the column status.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_status"></a> COLUMN_NAME_STATUS
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes column status.  
@@ -1158,7 +1156,7 @@ COLUMN_NAME_STATUS(pszName, data, status )
  [in] The variable to be bound to the column status.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_type"></a> COLUMN_NAME_TYPE
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes data type.  
@@ -1181,7 +1179,7 @@ COLUMN_NAME_TYPE(pszName, wType, data)
  [in] The corresponding data member in the user record.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_type_ps"></a> COLUMN_NAME_TYPE_PS
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes data type, precision, and scale.  
@@ -1210,7 +1208,7 @@ COLUMN_NAME_TYPE_PS(pszName, wType, nPrecision, nScale, data)
  [in] The corresponding data member in the user record.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_type_size"></a> COLUMN_NAME_TYPE_SIZE
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes data type and size.  
@@ -1236,7 +1234,7 @@ COLUMN_NAME_TYPE_SIZE(pszName, wType, nLength, data)
  [in] The corresponding data member in the user record.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="column_name_type_status"></a> COLUMN_NAME_TYPE_STATUS
 Represents a binding on the rowset to the specific column in the rowset. Similar to [COLUMN_NAME](../../data/oledb/column-name.md), except that this macro also takes data type and column status.  
@@ -1262,7 +1260,7 @@ COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)
  [in] The corresponding data member in the user record.  
   
 #### Remarks  
- See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the **COLUMN_NAME_\*** macros are used.  
+ See [COLUMN_NAME](../../data/oledb/column-name.md) for information on where the COLUMN_NAME_* macros are used.  
 
 ### <a name="end_column_map"></a> END_COLUMN_MAP
 Marks the end of the column map entries.  
@@ -1389,11 +1387,10 @@ SET_PARAM_TYPE(type)
   
 -   `DBPARAMIO_OUTPUT` An output parameter.  
   
--   **DBPARAMIO_INPUT &#124; DBPARAMIO_OUTPUT** The parameter is both an input and an output parameter.  
+-   `DBPARAMIO_INPUT | DBPARAMIO_OUTPUT` The parameter is both an input and an output parameter.  
   
 #### Example  
-```
-cpp  
+```cpp  
 class CArtistsProperty
 {
 public:
