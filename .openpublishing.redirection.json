@@ -1146,6 +1146,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/irowsetnotifyimpl-onfieldchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifyimpl-class#onfieldchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifyimpl-onrowchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifyimpl-class#onrowchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifyimpl-onrowsetchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifyimpl-class#onrowsetchange",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
