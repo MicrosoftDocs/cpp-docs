@@ -1091,6 +1091,76 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/csession-abort.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#abort",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-close.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-commit.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#commit",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-gettransactioninfo.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#gettransactioninfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-open.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-starttransaction.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#starttransaction",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cstreamrowset-close.md",
+            "redirect_url": "/cpp/data/oledb/cstreamrowset-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cstreamrowset-cstreamrowset.md",
+            "redirect_url": "/cpp/data/oledb/cstreamrowset-class#cstreamrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ctable-open.md",
+            "redirect_url": "/cpp/data/oledb/ctable-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cxmlaccessor-getxmlcolumndata.md",
+            "redirect_url": "/cpp/data/oledb/cxmlaccessor-class#getxmlcolumndata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cxmlaccessor-getxmlrowdata.md",
+            "redirect_url": "/cpp/data/oledb/cxmlaccessor-class#getxmlrowdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifyimpl-onfieldchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifyimpl-class#onfieldchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifyimpl-onrowchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifyimpl-class#onrowchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifyimpl-onrowsetchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifyimpl-class#onrowsetchange",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
