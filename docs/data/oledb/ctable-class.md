@@ -24,7 +24,7 @@ class CTable :
    public CAccessorRowset <TAccessor, TRowset>  
 ```  
   
-#### Parameters  
+### Parameters  
  *TAccessor*  
  An accessor class.  
   

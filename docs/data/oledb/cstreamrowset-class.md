@@ -24,7 +24,7 @@ template <class TAccessor = CAccessorBase>
 class CStreamRowset  
 ```  
   
-#### Parameters  
+### Parameters  
  *TAccessor*  
  An accessor class.  
 

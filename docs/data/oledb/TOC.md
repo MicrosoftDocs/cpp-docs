@@ -122,8 +122,6 @@
 ### [CStreamRowset Class](cstreamrowset-class.md)
 ### [CTable Class](ctable-class.md)
 ### [CXMLAccessor Class](cxmlaccessor-class.md)
-#### [CXMLAccessor::GetXMLColumnData](cxmlaccessor-getxmlcolumndata.md)
-#### [CXMLAccessor::GetXMLRowData](cxmlaccessor-getxmlrowdata.md)
 ### [IRowsetNotifyImpl Class](irowsetnotifyimpl-class.md)
 #### [IRowsetNotifyImpl::OnFieldChange](irowsetnotifyimpl-onfieldchange.md)
 #### [IRowsetNotifyImpl::OnRowChange](irowsetnotifyimpl-onrowchange.md)
