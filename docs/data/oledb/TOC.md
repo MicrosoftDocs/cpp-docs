@@ -121,7 +121,6 @@
 ### [CSession Class](csession-class.md)
 ### [CStreamRowset Class](cstreamrowset-class.md)
 ### [CTable Class](ctable-class.md)
-#### [CTable::Open](ctable-open.md)
 ### [CXMLAccessor Class](cxmlaccessor-class.md)
 #### [CXMLAccessor::GetXMLColumnData](cxmlaccessor-getxmlcolumndata.md)
 #### [CXMLAccessor::GetXMLRowData](cxmlaccessor-getxmlrowdata.md)

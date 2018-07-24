@@ -1131,6 +1131,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/ctable-open.md.md",
+            "redirect_url": "/cpp/data/oledb/ctable-class#open",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
