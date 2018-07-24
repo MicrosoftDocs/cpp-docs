@@ -1091,6 +1091,36 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/csession-abort.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#abort",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-close.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-commit.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#commit",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-gettransactioninfo.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#gettransactioninfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-open.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#open",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csession-starttransaction.md",
+            "redirect_url": "/cpp/data/oledb/csession-class#starttransaction",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
