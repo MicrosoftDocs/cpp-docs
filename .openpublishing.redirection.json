@@ -1121,6 +1121,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cstreamrowset-close.md",
+            "redirect_url": "/cpp/data/oledb/cstreamrowset-class#close",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cstreamrowset-cstreamrowset.md",
+            "redirect_url": "/cpp/data/oledb/cstreamrowset-class#cstreamrowset",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false

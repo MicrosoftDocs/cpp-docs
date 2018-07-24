@@ -4,9 +4,11 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::CStreamRowset<TAccessor>", "ATL::CStreamRowset", "CStreamRowset", "ATL.CStreamRowset<TAccessor>", "ATL.CStreamRowset"]
+f1_keywords: ["ATL::CStreamRowset<TAccessor>", "ATL::CStreamRowset", "CStreamRowset", "ATL.CStreamRowset<TAccessor>", "ATL.CStreamRowset",
+    "CStreamRowset::CStreamRowset", "CStreamRowset.CStreamRowset", "ATL.CStreamRowset.CStreamRowset", "ATL::CStreamRowset::CStreamRowset", "CStreamRowset", "CStreamRowset<TAccessor>::CStreamRowset", "ATL::CStreamRowset<TAccessor>::CStreamRowset",
+    "CStreamRowset<TAccessor>.Close", "ATL.CStreamRowset<TAccessor>.Close", "CStreamRowset::Close", "CStreamRowset<TAccessor>::Close", "ATL::CStreamRowset::Close", "ATL.CStreamRowset.Close", "ATL::CStreamRowset<TAccessor>::Close", "CStreamRowset.Close"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CStreamRowset class"]
+helpviewer_keywords: ["CStreamRowset class", "CStreamRowset class, constructor", "Close method"]
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
 author: "mikeblome"
 ms.author: "mblome"
@@ -23,8 +25,11 @@ class CStreamRowset
 ```  
   
 #### Parameters  
- `TAccessor`  
+ *TAccessor*  
  An accessor class.  
+
+## Requirements  
+ **Header:** atldbcli.h  
   
 ## Members  
   
@@ -32,8 +37,8 @@ class CStreamRowset
   
 |||  
 |-|-|  
-|[CStreamRowset](../../data/oledb/cstreamrowset-cstreamrowset.md)|Constructor. Instantiates and initializes the `CStreamRowset` object.|  
-|[Close](../../data/oledb/cstreamrowset-close.md)|Releases the [ISequentialStream](https://msdn.microsoft.com/en-us/library/ms718035.aspx) interface pointer in the class.|  
+|[CStreamRowset](#cstreamrowset)|Constructor. Instantiates and initializes the `CStreamRowset` object.|  
+|[Close](#close)|Releases the [ISequentialStream](https://msdn.microsoft.com/library/ms718035.aspx) interface pointer in the class.|  
   
 ## Remarks  
  Use `CStreamRowset` in your `CCommand` or `CTable` declaration, for example:  
@@ -44,7 +49,7 @@ class CStreamRowset
   
  [!code-cpp[NVC_OLEDB_Consumer#12](../../data/oledb/codesnippet/cpp/cstreamrowset-class_2.cpp)]  
   
- `ICommand::Execute` returns an `ISequentialStream` pointer, which is stored in `m_spStream`. You then use the **Read** method to retrieve the (Unicode string) data in XML format. For example:  
+ `ICommand::Execute` returns an `ISequentialStream` pointer, which is stored in `m_spStream`. You then use the `Read` method to retrieve the (Unicode string) data in XML format. For example:  
   
  [!code-cpp[NVC_OLEDB_Consumer#13](../../data/oledb/codesnippet/cpp/cstreamrowset-class_3.cpp)]  
   
@@ -53,8 +58,25 @@ class CStreamRowset
 > [!NOTE]
 >  This feature works with SQL Server 2000 only.  
   
-## Requirements  
- **Header:** atldbcli.h  
+## <a name="cstreamrowset"></a> CStreamRowset::CStreamRowset
+Instantiates and initializes the `CStreamRowset` object.  
+  
+### Syntax  
+  
+```cpp
+CStreamRowset();  
+  
+```  
+
+## <a name="close"></a> CStreamRowset::Close
+Releases the [ISequentialStream](https://msdn.microsoft.com/library/ms718035.aspx) interface pointer in the class.  
+  
+### Syntax  
+  
+```cpp
+void Close();  
+  
+```  
   
 ## See Also  
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   

@@ -120,8 +120,6 @@
 ### [CRowset Class](crowset-class.md)
 ### [CSession Class](csession-class.md)
 ### [CStreamRowset Class](cstreamrowset-class.md)
-#### [CStreamRowset::Close](cstreamrowset-close.md)
-#### [CStreamRowset::CStreamRowset](cstreamrowset-cstreamrowset.md)
 ### [CTable Class](ctable-class.md)
 #### [CTable::Open](ctable-open.md)
 ### [CXMLAccessor Class](cxmlaccessor-class.md)
