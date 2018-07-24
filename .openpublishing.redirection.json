@@ -1131,7 +1131,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "docs/data/oledb/ctable-open.md.md",
+            "source_path": "docs/data/oledb/ctable-open.md",
             "redirect_url": "/cpp/data/oledb/ctable-class#open",
             "redirect_document_id": false
         },
