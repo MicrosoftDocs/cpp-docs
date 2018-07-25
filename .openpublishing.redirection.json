@@ -1311,6 +1311,231 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/atltraceerrorrecords.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#atltraceerrorrecords",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-accessor.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#begin_accessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-accessor-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#begin_accessor_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-column-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#begin_column_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-param-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#begin_param_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/blob-entry.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#blob_entry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/blob-entry-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#blob_entry_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/blob-entry-length-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#blob_entry_length_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/blob-entry-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#blob_entry_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/blob-name.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#blob_name",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/blob-name-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#blob_name_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/blob-name-length-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#blob_name_length_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/blob-name-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#blob_name_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/bookmark-entry.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#bookmark_entry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-ex.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_ex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-length-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_length_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-ps.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_ps",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-ps-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_ps_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-ps-length-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_ps_length_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-ps-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_ps_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-type.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-entry-type-size.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_entry_type_size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-ex.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_ex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-length-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_length_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-ps.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_ps",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-ps-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_ps_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-ps-length-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_ps_length_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-ps-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_ps_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-type.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_type",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-type-ps.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_type_ps",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-type-size.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_type_size",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/column-name-type-status.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#column_name_type_status",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/define-command.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#define_command",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/define-command-ex.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#define_command_ex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-accessor.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#end_accessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-accessor-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#end_accessor_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-column-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#end_column_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-param-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#end_param_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/set-param-type.md",
+            "redirect_url": "/cpp/data/oledb/macros-and-global-functions-for-ole-db-consumer-templates#set_param_type",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
