@@ -1776,6 +1776,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/idbpropertiesimpl-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/idbpropertiesimpl-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbpropertiesimpl-getpropertyinfo.md",
+            "redirect_url": "/cpp/data/oledb/idbpropertiesimpl-class#getpropertyinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbpropertiesimpl-setproperties.md",
+            "redirect_url": "/cpp/data/oledb/idbpropertiesimpl-class#setproperties",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
