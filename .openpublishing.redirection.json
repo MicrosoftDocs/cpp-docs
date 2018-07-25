@@ -1536,6 +1536,101 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/crowsetimpl-getcolumninfo.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#getcolumninfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-getcommandfromid.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#getcommandfromid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-m-rgrowdata.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#rgrowdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-m-strcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#strcommandtext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-m-strindextext.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#strindextext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-namefromdbid.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#namefromdbid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-setcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#setcommmandtext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-validatecommandid.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#validatecommandid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csimplerow-addrefrow.md",
+            "redirect_url": "/cpp/data/oledb/csimplerow-class#addrefrow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csimplerow-compare.md",
+            "redirect_url": "/cpp/data/oledb/csimplerow-class#compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csimplerow-csimplerow.md",
+            "redirect_url": "/cpp/data/oledb/csimplerow-class#csimplerow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csimplerow-m-dwref.md",
+            "redirect_url": "/cpp/data/oledb/csimplerow-class#dwref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csimplerow-m-irowset.md",
+            "redirect_url": "/cpp/data/oledb/csimplerow-class#irowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/csimplerow-releaserow.md",
+            "redirect_url": "/cpp/data/oledb/csimplerow-class#releaserow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cutlprops-getpropvalue.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#getpropvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cutlprops-isvalidvalue.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#isvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cutlprops-oninterfacerequested.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#oninterfacerequested",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cutlprops-onpropertychanged.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#onpropertychanged",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cutlprops-setpropvalue.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#setpropvalue",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
