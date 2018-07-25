@@ -1751,6 +1751,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/idbinitializeimpl-idbinitializeimpl.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#idbinitializeimpl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbinitializeimpl-initialize.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#initialize",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbinitializeimpl-m-dwstatus.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#dwstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbinitializeimpl-m-pcutlpropinfo.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#pcutlpropinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbinitializeimpl-uninitialize.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#uninitialize",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
