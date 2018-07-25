@@ -1631,6 +1631,86 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/iaccessorimpl-addrefaccessor.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#addrefaccessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iaccessorimpl-createaccessor.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#createaccessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iaccessorimpl-getbindings.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#getbindings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iaccessorimpl-iaccessorimpl.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#iaccessorimpl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iaccessorimpl-releaseaccessor.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#releaseaccessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icolumnsinfoimpl-getcolumninfo.md",
+            "redirect_url": "/cpp/data/oledb/icolumnsinfoimpl-class#getcolumninfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icolumnsinfoimpl-mapcolumnids.md",
+            "redirect_url": "/cpp/data/oledb/icolumnsinfoimpl-class#mapcolumnids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandimpl-cancel.md",
+            "redirect_url": "/cpp/data/oledb/icommandimpl-class#cancel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandimpl-cancelexecution.md",
+            "redirect_url": "/cpp/data/oledb/icommandimpl-class#cancelexecution",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandimpl-createrowset.md",
+            "redirect_url": "/cpp/data/oledb/icommandimpl-class#createrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandimpl-execute.md",
+            "redirect_url": "/cpp/data/oledb/icommandimpl-class#execute",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandimpl-getdbsession.md",
+            "redirect_url": "/cpp/data/oledb/icommandimpl-class#getdbsession",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandimpl-icommandimpl.md",
+            "redirect_url": "/cpp/data/oledb/icommandimpl-class#icommandimpl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandimpl-m-bcancel.md",
+            "redirect_url": "/cpp/data/oledb/icommandimpl-class#bcancel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandimpl-m-bcancelwhenexecuting.md",
+            "redirect_url": "/cpp/data/oledb/icommandimpl-class#bcancelwhenexecuting",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandimpl-m-bisexecuting.md",
+            "redirect_url": "/cpp/data/oledb/icommandimpl-class#bisexecuting",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
