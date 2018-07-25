@@ -1631,6 +1631,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/iaccessorimpl-addrefaccessor.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#addrefaccessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iaccessorimpl-createaccessor.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#createaccessor",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iaccessorimpl-getbindings.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#getbindings",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iaccessorimpl-iaccessorimpl.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#iaccessorimpl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iaccessorimpl-releaseaccessor.md",
+            "redirect_url": "/cpp/data/oledb/iaccessorimpl-class#releaseaccessor",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
