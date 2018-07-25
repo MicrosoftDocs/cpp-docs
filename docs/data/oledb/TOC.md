@@ -137,7 +137,6 @@
 ### [IConvertTypeImpl Class](iconverttypeimpl-class.md)
 ### [IDBCreateCommandImpl Class](idbcreatecommandimpl-class.md)
 ### [IDBCreateSessionImpl Class](idbcreatesessionimpl-class.md)
-#### [IDBCreateSessionImpl::CreateSession](idbcreatesessionimpl-createsession.md)
 ### [IDBInitializeImpl Class](idbinitializeimpl-class.md)
 #### [IDBInitializeImpl::IDBInitializeImpl](idbinitializeimpl-idbinitializeimpl.md)
 #### [IDBInitializeImpl::Initialize](idbinitializeimpl-initialize.md)
