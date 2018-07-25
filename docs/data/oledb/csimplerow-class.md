@@ -87,6 +87,16 @@ The constructor.
 ### Remarks  
  Sets [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) to *iRowsetCur*. 
 
+## <a name="releaserow"></a> CSimpleRow::ReleaseRow
+Releases rows in a thread-safe manner.  
+  
+### Syntax  
+  
+```cpp
+DWORD ReleaseRow();  
+  
+```  
+
 ## <a name="dwref"></a> CSimpleRow::m_dwRef
 Reference count to an existing row handle.  
   

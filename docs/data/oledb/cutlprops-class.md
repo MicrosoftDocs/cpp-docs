@@ -141,7 +141,7 @@ Called after setting a property to handle chained properties.
  *iCurSet*  
  The index into the property-set array; zero if there is only one property set.  
   
- *pDBProp`  
+ *pDBProp*  
  The property ID and new value in a [DBPROP](https://msdn.microsoft.com/library/ms717970.aspx) structure.  
   
 ### Return Value  
