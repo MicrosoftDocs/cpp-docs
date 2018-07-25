@@ -1606,6 +1606,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/cutlprops-getpropvalue.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#getpropvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cutlprops-isvalidvalue.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#isvalidvalue",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cutlprops-oninterfacerequested.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#oninterfacerequested",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cutlprops-onpropertychanged.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#onpropertychanged",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/cutlprops-setpropvalue.md",
+            "redirect_url": "/cpp/data/oledb/cutlprops-class#setpropvalue",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
