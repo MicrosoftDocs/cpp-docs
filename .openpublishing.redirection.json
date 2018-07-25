@@ -1791,6 +1791,31 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/idbschemarowsetimpl-checkrestrictions.md",
+            "redirect_url": "/cpp/data/oledb/idbschemarowsetimpl-class#checkrestrictions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbschemarowsetimpl-createschemarowset.md",
+            "redirect_url": "/cpp/data/oledb/idbschemarowsetimpl-class#createschemarowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbschemarowsetimpl-getrowset.md",
+            "redirect_url": "/cpp/data/oledb/idbschemarowsetimpl-class#getrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbschemarowsetimpl-getschemas.md",
+            "redirect_url": "/cpp/data/oledb/idbschemarowsetimpl-class#getschemas",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbschemarowsetimpl-setrestrictions.md",
+            "redirect_url": "/cpp/data/oledb/idbschemarowsetimpl-class#setrestrictions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
