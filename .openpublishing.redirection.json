@@ -1721,6 +1721,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/icommandtextimpl-getcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/icommandtextimpl-class#getcommandtext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandtextimpl-m-strcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/icommandtextimpl-class#strcommandtext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandtextimpl-setcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/icommandtextimpl-class#setcommandtext",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
