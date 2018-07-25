@@ -1656,6 +1656,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/icolumnsinfoimpl-getcolumninfo.md",
+            "redirect_url": "/cpp/data/oledb/icolumnsinfoimpl-class#getcolumninfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icolumnsinfoimpl-mapcolumnids.md",
+            "redirect_url": "/cpp/data/oledb/icolumnsinfoimpl-class#mapcolumnids",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false

@@ -131,8 +131,6 @@
 ### [CUtlProps Class](cutlprops-class.md)
 ### [IAccessorImpl Class](iaccessorimpl-class.md)
 ### [IColumnsInfoImpl Class](icolumnsinfoimpl-class.md)
-#### [IColumnsInfoImpl::GetColumnInfo](icolumnsinfoimpl-getcolumninfo.md)
-#### [IColumnsInfoImpl::MapColumnIDs](icolumnsinfoimpl-mapcolumnids.md)
 ### [ICommandImpl Class](icommandimpl-class.md)
 #### [ICommandImpl::Cancel](icommandimpl-cancel.md)
 #### [ICommandImpl::CancelExecution](icommandimpl-cancelexecution.md)
