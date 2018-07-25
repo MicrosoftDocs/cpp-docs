@@ -1711,6 +1711,71 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/icommandpropertiesimpl-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/icommandpropertiesimpl-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandpropertiesimpl-setproperties.md",
+            "redirect_url": "/cpp/data/oledb/icommandpropertiesimpl-class#setproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandtextimpl-getcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/icommandtextimpl-class#getcommandtext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandtextimpl-m-strcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/icommandtextimpl-class#strcommandtext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandtextimpl-setcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/icommandtextimpl-class#setcommandtext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iconverttypeimpl-canconvert.md",
+            "redirect_url": "/cpp/data/oledb/iconverttypeimpl-class#canconvert",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbcreatecommandimpl-createcommand.md",
+            "redirect_url": "/cpp/data/oledb/idbcreatecommandimpl-class#createcommand",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbcreatesessionimpl-createsession.md",
+            "redirect_url": "/cpp/data/oledb/idbcreatesessionimpl-class#createsession",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbinitializeimpl-idbinitializeimpl.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#idbinitializeimpl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbinitializeimpl-initialize.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#initialize",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbinitializeimpl-m-dwstatus.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#dwstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbinitializeimpl-m-pcutlpropinfo.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#pcutlpropinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/idbinitializeimpl-uninitialize.md",
+            "redirect_url": "/cpp/data/oledb/idbinitializeimpl-class#uninitialize",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
