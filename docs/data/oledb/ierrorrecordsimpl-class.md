@@ -38,7 +38,7 @@ class IErrorRecordsImpl : public IErrorRecords
   
 |||  
 |-|-|  
-|[GetErrorDescriptionString](#getdescriptionstring)|Gets the error description string from an error record.|  
+|[GetErrorDescriptionString](#geterrordescriptionstring)|Gets the error description string from an error record.|  
 |[GetErrorGUID](#geterrorguid)|Gets the error GUID from an error record.|  
 |[GetErrorHelpContext](#geterrorhelpcontext)|Gets the help context ID from an error record.|  
 |[GetErrorHelpFile](#geterrorhelpfile)|Gets the full pathname of the help file from an error record.|  
