@@ -1536,6 +1536,46 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/crowsetimpl-getcolumninfo.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#getcolumninfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-getcommandfromid.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#getcommandfromid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-m-rgrowdata.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#rgrowdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-m-strcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#strcommandtext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-m-strindextext.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#strindextext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-namefromdbid.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#namefromdbid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-setcommandtext.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#setcommmandtext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/crowsetimpl-validatecommandid.md",
+            "redirect_url": "/cpp/data/oledb/crowsetimpl-class#validatecommandid",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
