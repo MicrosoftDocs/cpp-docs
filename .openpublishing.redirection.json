@@ -1711,6 +1711,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/icommandpropertiesimpl-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/icommandpropertiesimpl-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/icommandpropertiesimpl-setproperties.md",
+            "redirect_url": "/cpp/data/oledb/icommandpropertiesimpl-class#setproperties",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false

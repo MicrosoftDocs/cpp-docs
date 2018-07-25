@@ -133,8 +133,6 @@
 ### [IColumnsInfoImpl Class](icolumnsinfoimpl-class.md)
 ### [ICommandImpl Class](icommandimpl-class.md)
 ### [ICommandPropertiesImpl Class](icommandpropertiesimpl-class.md)
-#### [ICommandPropertiesImpl::GetProperties](icommandpropertiesimpl-getproperties.md)
-#### [ICommandPropertiesImpl::SetProperties](icommandpropertiesimpl-setproperties.md)
 ### [ICommandTextImpl Class](icommandtextimpl-class.md)
 #### [ICommandTextImpl::GetCommandText](icommandtextimpl-getcommandtext.md)
 #### [ICommandTextImpl::m_strCommandText](icommandtextimpl-m-strcommandtext.md)
