@@ -135,7 +135,6 @@
 ### [ICommandPropertiesImpl Class](icommandpropertiesimpl-class.md)
 ### [ICommandTextImpl Class](icommandtextimpl-class.md)
 ### [IConvertTypeImpl Class](iconverttypeimpl-class.md)
-#### [IConvertTypeImpl::CanConvert](iconverttypeimpl-canconvert.md)
 ### [IDBCreateCommandImpl Class](idbcreatecommandimpl-class.md)
 #### [IDBCreateCommandImpl::CreateCommand](idbcreatecommandimpl-createcommand.md)
 ### [IDBCreateSessionImpl Class](idbcreatesessionimpl-class.md)
