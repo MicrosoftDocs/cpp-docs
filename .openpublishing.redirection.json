@@ -1816,6 +1816,66 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-adderrorrecord.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#adderrorrecord",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-getbasicerrorinfo.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#getbasicerrorinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-getcustomerrorobject.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#getcustomerrorobject",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-geterrordescriptionstring.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#geterrordescriptionstring",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-geterrorguid.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#geterrorguid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-geterrorhelpcontext.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#geterrorhelpcontext",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-geterrorhelpfile.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#geterrorhelpfile",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-geterrorinfo.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#geterrorinfo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-geterrorparameters.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#geterrorparameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-getrecordcount.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#getrecordcount",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-geterrorsource.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#geterrorsource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/ierrorrecordsimpl-m-rgerrors.md",
+            "redirect_url": "/cpp/data/oledb/ierrorrecordsimpl-class#rgerrors",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
