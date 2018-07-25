@@ -54,24 +54,24 @@ class CRowsetImpl :  
   
 |||  
 |-|-|  
-|[NameFromDBID](../../data/oledb/crowsetimpl-namefromdbid.md)|Extracts a string from a `DBID` and copies it to the *bstr* passed in.|  
-|[SetCommandText](../../data/oledb/crowsetimpl-setcommandtext.md)|Validates and stores the `DBID`s in the two strings ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).|  
+|[NameFromDBID](#namefromdbid)|Extracts a string from a `DBID` and copies it to the *bstr* passed in.|  
+|[SetCommandText](#setcommandtext)|Validates and stores the `DBID`s in the two strings ([m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)).|  
   
 ### Overridable Methods  
   
 |||  
 |-|-|  
-|[GetColumnInfo](../../data/oledb/crowsetimpl-getcolumninfo.md)|Retrieves column information for a particular client request.|  
-|[GetCommandFromID](../../data/oledb/crowsetimpl-getcommandfromid.md)|Checks to see if either or both parameters contain string values, and if so, copies the string values to the data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).|  
-|[ValidateCommandID](../../data/oledb/crowsetimpl-validatecommandid.md)|Checks to see if either or both `DBID`s contain string values, and if so, copies them to its data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).|  
+|[GetColumnInfo](#getcolumninfo)|Retrieves column information for a particular client request.|  
+|[GetCommandFromID](#getcommandfromid)|Checks to see if either or both parameters contain string values, and if so, copies the string values to the data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).|  
+|[ValidateCommandID](#validatecommandid)|Checks to see if either or both `DBID`s contain string values, and if so, copies them to its data members [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) and [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md).|  
   
 ### Data Members  
   
 |||  
 |-|-|  
-|[m_rgRowData](../../data/oledb/crowsetimpl-m-rgrowdata.md)|By default, a `CAtlArray` that templatizes on the user record template argument to `CRowsetImpl`. Another array type class can be used by changing the `ArrayType` template argument to `CRowsetImpl`.|  
-|[m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md)|Contains the rowset's initial command.|  
-|[m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)|Contains the rowset's initial index.|  
+|[m_rgRowData](#rgrowdata)|By default, a `CAtlArray` that templatizes on the user record template argument to `CRowsetImpl`. Another array type class can be used by changing the `ArrayType` template argument to `CRowsetImpl`.|  
+|[m_strCommandText](#strcommandtext)|Contains the rowset's initial command.|  
+|[m_strIndexText](#strindextext)|Contains the rowset's initial index.|  
   
 ## Remarks  
  `CRowsetImpl` provides overrides in the form of static upcasts. The methods control the manner in which a given rowset will validate command text. You can create your own `CRowsetImpl`-style class by making your implementation interfaces multiple-inherited. The only method for which you must provide implementation is `Execute`. Depending on what type of rowset you are creating, the creator methods will expect different signatures for `Execute`. For example, if you are using a `CRowsetImpl`-derived class to implement a schema rowset, the `Execute` method will have the following signature:  

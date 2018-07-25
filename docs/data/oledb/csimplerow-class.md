@@ -4,9 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["CSimpleRow", "ATL::CSimpleRow", "ATL.CSimpleRow"]
+f1_keywords: ["CSimpleRow", "ATL::CSimpleRow", "ATL.CSimpleRow", "CSimpleRow::AddRefRow", "AddRefRow", "ATL.CSimpleRow.AddRefRow", "ATL::CSimpleRow::AddRefRow", "CSimpleRow.AddRefRow", "CSimpleRow.Compare",              "CSimpleRow::Compare", "CSimpleRow", "ATL::CSimpleRow::CSimpleRow", "CSimpleRow.CSimpleRow", "ATL.CSimpleRow.CSimpleRow", "CSimpleRow::CSimpleRow", "ATL::CSimpleRow::ReleaseRow", "CSimpleRow::ReleaseRow",            "ReleaseRow", "CSimpleRow.ReleaseRow", "ATL.CSimpleRow.ReleaseRow", "CSimpleRow.m_dwRef", "CSimpleRow::m_dwRef", "CSimpleRow::m_iRowset", "CSimpleRow.m_iRowset"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CSimpleRow class"]
+helpviewer_keywords: ["CSimpleRow class", "AddRefRow method", "Compare method", "CSimpleRow class, constructor", "ReleaseRow method", "m_dwRef", "m_iRowset"]
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
 author: "mikeblome"
 ms.author: "mblome"
@@ -20,30 +20,92 @@ Provides a default implementation for the row handle, which is used in the [IRow
 ```cpp
 class CSimpleRow  
 ```  
-  
+
+## Requirements  
+ **Header:** atldb.h  
+
 ## Members  
   
 ### Methods  
   
 |||  
 |-|-|  
-|[AddRefRow](../../data/oledb/csimplerow-addrefrow.md)|Adds a reference count to an existing row handle.|  
-|[Compare](../../data/oledb/csimplerow-compare.md)|Compares two rows to see if they refer to the same row instance.|  
-|[CSimpleRow](../../data/oledb/csimplerow-csimplerow.md)|The constructor.|  
-|[ReleaseRow](../../data/oledb/csimplerow-releaserow.md)|Releases rows.|  
+|[AddRefRow](#addrefrow)|Adds a reference count to an existing row handle.|  
+|[Compare](#compare)|Compares two rows to see if they refer to the same row instance.|  
+|[CSimpleRow](#csimplerow)|The constructor.|  
+|[ReleaseRow](#releaserow)|Releases rows.|  
   
 ### Data Members  
   
 |||  
 |-|-|  
-|[m_dwRef](../../data/oledb/csimplerow-m-dwref.md)|Reference count to an existing row handle.|  
-|[m_iRowset](../../data/oledb/csimplerow-m-irowset.md)|An index to the rowset representing the cursor.|  
+|[m_dwRef](#dwref)|Reference count to an existing row handle.|  
+|[m_iRowset](#irowset)|An index to the rowset representing the cursor.|  
   
 ## Remarks  
  A row handle is logically a unique tag for a result row. `IRowsetImpl` creates a new `CSimpleRow` for every row requested in [IRowsetImpl::GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md). `CSimpleRow` can also be replaced with your own implementation of the row handle, as it is a default template argument to `IRowsetImpl`. The only requirement to replacing this class is to have the replacement class provide a constructor that accepts a single parameter of type **LONG**.  
+
+## <a name="addrefrow"></a> CSimpleRow::AddRefRow
+Adds a reference count to an existing row handle in a thread-safe manner.  
   
-## Requirements  
- **Header:** atldb.h  
+### Syntax  
+  
+```cpp
+DWORD AddRefRow();  
+  
+```  
+
+## <a name="compare"></a> CSimpleRow::Compare
+Compares two rows to see if they refer to the same row instance.  
+  
+### Syntax  
+  
+```cpp
+HRESULT Compare(CSimpleRow* pRow);  
+```  
+  
+#### Parameters  
+ *pRow*  
+ A pointer to a `CSimpleRow` object.  
+  
+### Return Value  
+ An HRESULT value, usually S_OK, indicating the two rows are the same row instance, or S_FALSE, indicating the two rows are different. See [IRowsetIdentity::IsSameRow](https://msdn.microsoft.com/library/ms719629.aspx) in the *OLE DB Programmer's Reference* for other possible return values. 
+
+## <a name="csimplerow"></a> CSimpleRow::CSimpleRow
+The constructor.  
+  
+### Syntax  
+  
+```cpp
+      CSimpleRow(DBCOUNTITEM iRowsetCur);  
+```  
+  
+#### Parameters  
+ *iRowsetCur*  
+ [in] Index to the current rowset.  
+  
+### Remarks  
+ Sets [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) to *iRowsetCur*. 
+
+## <a name="dwref"></a> CSimpleRow::m_dwRef
+Reference count to an existing row handle.  
+  
+### Syntax  
+  
+```cpp
+DWORD m_dwRef;  
+  
+```  
+
+## <a name="irowset"></a> CSimpleRow::m_iRowset
+Index to the rowset representing the cursor.  
+  
+### Syntax  
+  
+```cpp
+KeyType m_iRowset;  
+  
+```  
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
