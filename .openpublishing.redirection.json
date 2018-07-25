@@ -1741,6 +1741,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/idbcreatecommandimpl-createcommand.md",
+            "redirect_url": "/cpp/data/oledb/idbcreatecommandimpl-class#createcommand",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
