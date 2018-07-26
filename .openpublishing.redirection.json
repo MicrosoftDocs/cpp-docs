@@ -1921,6 +1921,81 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/irowsetimpl-addrefrows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#addrefrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-createrow.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#createrow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-getdata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#getdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-getdbstatus.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#getdbstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-getnextrows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#getnextrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-irowsetimpl.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#irowsetimpl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-bcanfetchback.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#bcanfetchback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-bcanscrollback.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#bcanscrollback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-breset.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#breset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-irowset.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#irowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-rgrowhandles.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#rgrowhandles",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-refrows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#refrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-releaserows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#releaserows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-restartposition.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#restartposition",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-setdbstatus.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#setdbstatus",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
