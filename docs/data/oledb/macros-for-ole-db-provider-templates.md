@@ -39,7 +39,7 @@ The OLE DB Templates Provider macros offer functionality in the following catego
 |[END_PROVIDER_COLUMN_MAP](#end_provider_column_map)|Marks the end of the provider column map entries.|  
 |[PROVIDER_COLUMN_ENTRY](#provider_column_entry)|Represents a specific column supported by the provider.|  
 |[PROVIDER_COLUMN_ENTRY_FIXED](#provider_column_entry_fixed)|Represents a specific column supported by the provider. You can specify the column data type.|  
-|[PROVIDER_COLUMN_ENTRY_GN](#provder_column_entry_gn)|Represents a specific column supported by the provider. You can specify the column's size, data type, precision, scale, and schema rowset GUID.|  
+|[PROVIDER_COLUMN_ENTRY_GN](#provider_column_entry_gn)|Represents a specific column supported by the provider. You can specify the column's size, data type, precision, scale, and schema rowset GUID.|  
 |[PROVIDER_COLUMN_ENTRY_LENGTH](#provider_column_entry_length)|Represents a specific column supported by the provider. You can specify the column size.|  
 |[PROVIDER_COLUMN_ENTRY_STR](#provider_column_entry_str)|Represents a specific column supported by the provider. It assumes the column type is a string.|  
 |[PROVIDER_COLUMN_ENTRY_TYPE_LENGTH](#provider_column_entry_type_length)|Represents a specific column supported by the provider. Like PROVIDER_COLUMN_ENTRY_LENGTH, but also allows you to specify the column's data type as well as size.|  
@@ -519,7 +519,7 @@ Associates a GUID with a class.
 #### Remarks  
  [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) can then query the map for a list of GUIDs, or it can create a rowset if it is given a GUID. The schema rowset `IDBSchemaRowsetImpl` creates is similar to a standard `CRowsetImpl`-derived class, except it must provide an `Execute` method that has the following signature:  
   
-```  
+```cpp  
 HRESULT Execute (LONG* pcRowsAffected,  
     ULONG cRestrictions,  
     const VARIANT* rgRestrictions);  
