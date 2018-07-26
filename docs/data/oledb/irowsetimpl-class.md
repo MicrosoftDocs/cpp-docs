@@ -52,7 +52,7 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 |||  
 |-|-|  
 |[AddRefRows](#addrefrows)|Adds a reference count to an existing row handle.|  
-|[CreateRow](#createrows)|Called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new `HROW`. Not called directly by user.|  
+|[CreateRow](#createrow)|Called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new `HROW`. Not called directly by user.|  
 |[GetData](#getdata)|Retrieves data from the rowset's copy of the row.|  
 |[GetDBStatus](#getdbstatus)|Returns the status for the specified field.|  
 |[GetNextRows](#getnextrows)|Fetches rows sequentially, remembering the previous position.|  
