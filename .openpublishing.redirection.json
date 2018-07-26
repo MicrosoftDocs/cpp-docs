@@ -1971,6 +1971,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/isessionpropertiesimpl-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/isessionpropertiesimpl-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/isessionpropertiesimpl-setproperties.md",
+            "redirect_url": "/cpp/data/oledb/isessionpropertiesimpl-class#setproperties",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/data/oledb/igetdatasourceimpl-getdatasource.md",
             "redirect_url": "/cpp/data/oledb/igetdatasourceimpl-class#getdatasource",
             "redirect_document_id": false

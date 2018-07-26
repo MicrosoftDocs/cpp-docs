@@ -152,8 +152,6 @@
 ### [IRowsetNotifyCP Class](irowsetnotifycp-class.md)
 ### [IRowsetUpdateImpl Class](irowsetupdateimpl-class.md)
 ### [ISessionPropertiesImpl Class](isessionpropertiesimpl-class.md)
-#### [ISessionPropertiesImpl::GetProperties](isessionpropertiesimpl-getproperties.md)
-#### [ISessionPropertiesImpl::SetProperties](isessionpropertiesimpl-setproperties.md)
 ### [Macros for OLE DB Provider Templates](macros-for-ole-db-provider-templates.md)
 #### [BEGIN_PROPERTY_SET](begin-property-set.md)
 #### [BEGIN_PROPERTY_SET_EX](begin-property-set-ex.md)
