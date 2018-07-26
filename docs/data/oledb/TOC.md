@@ -142,7 +142,6 @@
 ### [IDBSchemaRowsetImpl Class](idbschemarowsetimpl-class.md)
 ### [IErrorRecordsImpl Class](ierrorrecordsimpl-class.md)
 ### [IGetDataSourceImpl Class](igetdatasourceimpl-class.md)
-#### [IGetDataSourceImpl::GetDataSource](igetdatasourceimpl-getdatasource.md)
 ### [IOpenRowsetImpl Class](iopenrowsetimpl-class.md)
 #### [IOpenRowsetImpl::CreateRowset](iopenrowsetimpl-createrowset.md)
 #### [IOpenRowsetImpl::OpenRowset](iopenrowsetimpl-openrowset.md)
