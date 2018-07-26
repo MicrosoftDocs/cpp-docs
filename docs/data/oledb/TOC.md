@@ -146,7 +146,6 @@
 ### [IRowsetChangeImpl Class](irowsetchangeimpl-class.md)
 ### [IRowsetCreatorImpl Class](irowsetcreatorimpl-class.md)
 ### [IRowsetIdentityImpl Class](irowsetidentityimpl-class.md)
-#### [IRowsetIdentityImpl::IsSameRow](irowsetidentityimpl-issamerow.md)
 ### [IRowsetImpl Class](irowsetimpl-class.md)
 #### [IRowsetImpl::AddRefRows](irowsetimpl-addrefrows.md)
 #### [IRowsetImpl::CreateRow](irowsetimpl-createrow.md)
