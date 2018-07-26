@@ -1916,6 +1916,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/irowsetnotifycp-fire-onfieldchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifycp-class#onfieldchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifycp-fire-onrowchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifycp-class#onrowchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifycp-fire-onrowsetchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifycp-class#onrowsetchange",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/data/oledb/igetdatasourceimpl-getdatasource.md",
             "redirect_url": "/cpp/data/oledb/igetdatasourceimpl-class#getdatasource",
             "redirect_document_id": false
