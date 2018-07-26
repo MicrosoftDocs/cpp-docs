@@ -2101,6 +2101,111 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/begin-property-set.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_property_set",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-property-set-ex.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_property_set_ex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-propset-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_propset_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-provider-column-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_provider_column_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-schema-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_schema_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/chain-property-set.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#chain_property_set",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-property-set.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#end_property_set",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-propset-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#end_propset_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-provider-column-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#end_provider_column_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-schema-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#end_schema_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-gn.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_gn",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-fixed.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_fixed",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-str.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_str",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-type-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_type_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-wstr.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_wstr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/property-info-entry.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#property_info_entry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/property-info-entry-ex.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#property_info_entry_ex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/property-info-entry-value.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#property_info_entry_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/schema-entry.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#schema_entry",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
