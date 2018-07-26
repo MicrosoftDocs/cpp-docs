@@ -1876,6 +1876,61 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/irowsetinfoimpl-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/irowsetinfoimpl-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetinfoimpl-getreferencedrowset.md",
+            "redirect_url": "/cpp/data/oledb/irowsetinfoimpl-class#getreferencedrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetinfoimpl-getspecification.md",
+            "redirect_url": "/cpp/data/oledb/irowsetinfoimpl-class#getspecification",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-compare.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-getrowsat.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#getrowsat",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-getrowsbybookmark.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#getrowsbybookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-hash.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#hash",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-m-rgbookmarks.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#rgbookmarks",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifycp-fire-onfieldchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifycp-class#onfieldchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifycp-fire-onrowchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifycp-class#onrowchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifycp-fire-onrowsetchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifycp-class#onrowsetchange",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/data/oledb/igetdatasourceimpl-getdatasource.md",
             "redirect_url": "/cpp/data/oledb/igetdatasourceimpl-class#getdatasource",
             "redirect_document_id": false
