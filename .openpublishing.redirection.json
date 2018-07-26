@@ -1891,6 +1891,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/irowsetchangeimpl-deleterows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetchangeimpl-class#deleterows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetchangeimpl-flushdata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetchangeimpl-class#flushdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetchangeimpl-insertrow.md",
+            "redirect_url": "/cpp/data/oledb/irowsetchangeimpl-class#insertrow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetchangeimpl-setdata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetchangeimpl-class#setdata",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
