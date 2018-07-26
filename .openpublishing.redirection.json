@@ -1876,6 +1876,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/irowsetinfoimpl-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/irowsetinfoimpl-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetinfoimpl-getreferencedrowset.md",
+            "redirect_url": "/cpp/data/oledb/irowsetinfoimpl-class#getreferencedrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetinfoimpl-getspecification.md",
+            "redirect_url": "/cpp/data/oledb/irowsetinfoimpl-class#getspecification",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/data/oledb/igetdatasourceimpl-getdatasource.md",
             "redirect_url": "/cpp/data/oledb/igetdatasourceimpl-class#getdatasource",
             "redirect_document_id": false
