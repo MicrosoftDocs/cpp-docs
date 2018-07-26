@@ -61,7 +61,7 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
   
 |||  
 |-|-|  
-|[SetData](../../data/oledb/irowsetupdateimpl-setdata.md)|Sets data values in one or more columns.|  
+|[SetData](#setdata)|Sets data values in one or more columns.|  
   
 ### Interface Methods (Used with IRowsetUpdate)  
   
