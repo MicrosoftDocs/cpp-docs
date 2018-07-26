@@ -53,7 +53,7 @@ class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface
 |||  
 |-|-|  
 |[DeleteRows](#deleterows)|Deletes rows from the rowset.|  
-|[InsertRow](#insertrows)|Inserts a row into the rowset.|  
+|[InsertRow](#insertrow)|Inserts a row into the rowset.|  
 |[SetData](#setdata)|Sets data values in one or more columns.|  
   
 ### Implementation Method (Callback)  

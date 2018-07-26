@@ -71,7 +71,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 ## <a name="openrowset"></a> IOpenRowsetImpl::OpenRowset
 Opens and returns a rowset that includes all rows from a single base table or index.  
   
-## Syntax  
+### Syntax  
   
 ```cpp
 HRESULT OpenRowset(IUnknown* pUnkOuter,  
@@ -86,7 +86,7 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
 #### Parameters  
  See [IOpenRowset::OpenRowset](https://msdn.microsoft.com/library/ms716724.aspx) in the *OLE DB Programmer's Reference*.  
   
-## Remarks  
+### Remarks  
  This method is not found in ATLDB.H. It is created by the ATL Object Wizard when you create a provider.  
   
 ## See Also  
