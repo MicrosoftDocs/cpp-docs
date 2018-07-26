@@ -1931,6 +1931,46 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-getpendingrows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#getpendingrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-getoriginaldata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#getoriginaldata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-getrowstatus.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#getrowstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-isupdateallowed.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#isupdateallowed",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-m-mapcacheddata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#mapcacheddata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-setdata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#setdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-undo.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#undo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-update.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#update",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/data/oledb/igetdatasourceimpl-getdatasource.md",
             "redirect_url": "/cpp/data/oledb/igetdatasourceimpl-class#getdatasource",
             "redirect_document_id": false
