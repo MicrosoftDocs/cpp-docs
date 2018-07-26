@@ -30,13 +30,13 @@ To get started, choose **File** > **Open** > **Folder** from the main menu or el
 The following example shows a simple CMakeLists.txt file and .cpp file:
 
 ```cpp
-// Hello.cpp
+// hello.cpp
 
-#include <iostream>;
+#include <iostream>
 
 int main(int argc, char* argv[])
 {
-    std::cout << "Hello" << std::endl;
+    std::cout << "Hello from Linux CMake" << std::endl;
 }
 ```
 
