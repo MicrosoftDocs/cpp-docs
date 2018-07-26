@@ -143,8 +143,6 @@
 ### [IErrorRecordsImpl Class](ierrorrecordsimpl-class.md)
 ### [IGetDataSourceImpl Class](igetdatasourceimpl-class.md)
 ### [IOpenRowsetImpl Class](iopenrowsetimpl-class.md)
-#### [IOpenRowsetImpl::CreateRowset](iopenrowsetimpl-createrowset.md)
-#### [IOpenRowsetImpl::OpenRowset](iopenrowsetimpl-openrowset.md)
 ### [IRowsetChangeImpl Class](irowsetchangeimpl-class.md)
 #### [IRowsetChangeImpl::DeleteRows](irowsetchangeimpl-deleterows.md)
 #### [IRowsetChangeImpl::FlushData](irowsetchangeimpl-flushdata.md)

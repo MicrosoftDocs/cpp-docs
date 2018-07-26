@@ -1881,6 +1881,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/iopenrowsetimpl-createrowset.md",
+            "redirect_url": "/cpp/data/oledb/iopenrowsetimpl-class#createrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/iopenrowsetimpl-openrowset.md",
+            "redirect_url": "/cpp/data/oledb/iopenrowsetimpl-class#openrowset",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false
