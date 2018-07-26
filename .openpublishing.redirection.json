@@ -1911,6 +1911,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/irowsetcreatorimpl-setsite.md",
+            "redirect_url": "/cpp/data/oledb/irowsetcreatorimpl-class#setsite",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/dotnet/index.md",
             "redirect_url": "/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp",
             "redirect_document_id": false

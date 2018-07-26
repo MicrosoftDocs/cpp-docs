@@ -145,7 +145,6 @@
 ### [IOpenRowsetImpl Class](iopenrowsetimpl-class.md)
 ### [IRowsetChangeImpl Class](irowsetchangeimpl-class.md)
 ### [IRowsetCreatorImpl Class](irowsetcreatorimpl-class.md)
-#### [IRowsetCreatorImpl::SetSite](irowsetcreatorimpl-setsite.md)
 ### [IRowsetIdentityImpl Class](irowsetidentityimpl-class.md)
 #### [IRowsetIdentityImpl::IsSameRow](irowsetidentityimpl-issamerow.md)
 ### [IRowsetImpl Class](irowsetimpl-class.md)
