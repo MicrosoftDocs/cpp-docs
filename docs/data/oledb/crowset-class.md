@@ -4,34 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL.CRowset<TAccessor>", "CRowset", "ATL::CRowset", "ATL::CRowset<TAccessor>", "ATL.CRowset",
-    "CRowset<TAccessor>.AddRefRows", "CRowset.AddRefRows", "ATL.CRowset.AddRefRows", "AddRefRows", "CRowset::AddRefRows", "CRowset<TAccessor>::AddRefRows", "ATL::CRowset::AddRefRows", "ATL.CRowset<TAccessor>.AddRefRows", "ATL::CRowset<TAccessor>::AddRefRows",
-    "CRowset::Close", "ATL.CRowset.Close", "CRowset<TAccessor>::Close", "CRowset<TAccessor>.Close", "ATL.CRowset<TAccessor>.Close", "ATL::CRowset::Close", "ATL::CRowset<TAccessor>::Close", "CRowset.Close",
-    "CRowset<TAccessor>.Compare", "CRowset<TAccessor>::Compare", "ATL.CRowset<TAccessor>.Compare", "ATL::CRowset<TAccessor>::Compare", "CRowset.Compare", "ATL::CRowset::Compare", "ATL.CRowset.Compare", "CRowset::Compare", "CRowset<TAccessor>::CRowset", "CRowset.CRowset", "ATL::CRowset::CRowset", "ATL::CRowset<TAccessor>::CRowset", "ATL.CRowset.CRowset", "CRowset", "CRowset<TAccessor>.CRowset", "CRowset::CRowset", "ATL.CRowset<TAccessor>.CRowset",
-    "ATL::CRowset::Delete", "CRowset.Delete", "CRowset::Delete", "ATL.CRowset.Delete", "ATL::CRowset<TAccessor>::Delete", "CRowset<TAccessor>.Delete", "CRowset<TAccessor>::Delete", "ATL.CRowset<TAccessor>.Delete",
-    "ATL.CRowset.FindNextRow", "CRowset<TAccessor>.FindNextRow", "ATL::CRowset::FindNextRow", "CRowset::FindNextRow", "CRowset<TAccessor>::FindNextRow", "CRowset.FindNextRow", "ATL.CRowset<TAccessor>.FindNextRow", "ATL::CRowset<TAccessor>::FindNextRow", "FindNextRow",
-    "ATL::CRowset::GetApproximatePosition", "ATL::CRowset<TAccessor>::GetApproximatePosition", "CRowset.GetApproximatePosition", "CRowset::GetApproximatePosition", "GetApproximatePosition", "ATL.CRowset.GetApproximatePosition", "CRowset<TAccessor>::GetApproximatePosition",
-    "CRowset<TAccessor>::GetData", "ATL::CRowset<TAccessor>::GetData", "ATL::CRowset::GetData", "ATL.CRowset<TAccessor>.GetData", "CRowset<TAccessor>.GetData", "CRowset::GetData", "CRowset.GetData", "ATL.CRowset.GetData",
-    "CRowset<TAccessor>::GetDataHere", "CRowset<TAccessor>.GetDataHere", "CRowset.GetDataHere", "GetDataHere", "CRowset::GetDataHere", "ATL::CRowset::GetDataHere", "ATL::CRowset<TAccessor>::GetDataHere", "ATL.CRowset<TAccessor>.GetDataHere", "ATL.CRowset.GetDataHere",
-    "ATL.CRowset<TAccessor>.GetOriginalData", "CRowset<TAccessor>::GetOriginalData", "GetOriginalData", "ATL::CRowset<TAccessor>::GetOriginalData", "ATL.CRowset.GetOriginalData", "CRowset::GetOriginalData", "ATL::CRowset::GetOriginalData", "CRowset.GetOriginalData",
-    "CRowset.GetRowStatus", "ATL.CRowset<TAccessor>.GetRowStatus", "ATL::CRowset<TAccessor>::GetRowStatus", "CRowset::GetRowStatus", "ATL::CRowset::GetRowStatus", "CRowset<TAccessor>::GetRowStatus", "ATL.CRowset.GetRowStatus", "CRowset<TAccessor>.GetRowStatus", "GetRowStatus",
-    "ATL.CRowset<TAccessor>.Insert", "CRowset.Insert", "CRowset<TAccessor>.Insert", "CRowset<TAccessor>::Insert", "ATL::CRowset<TAccessor>::Insert", "ATL.CRowset.Insert", "CRowset::Insert", "ATL::CRowset::Insert",
-    "CRowset::IsSameRow", "CRowset.IsSameRow", "IsSameRow", "ATL::CRowset::IsSameRow", "ATL.CRowset.IsSameRow", "CRowset<TAccessor>::IsSameRow", "ATL.CRowset<TAccessor>.IsSameRow", "CRowset<TAccessor>.IsSameRow", "ATL::CRowset<TAccessor>::IsSameRow",
-    "CRowset<TAccessor>::MoveFirst", "ATL::CRowset::MoveFirst", "CRowset<TAccessor>.MoveFirst", "CRowset::MoveFirst", "CRowset.MoveFirst", "ATL.CRowset.MoveFirst", "ATL.CRowset<TAccessor>.MoveFirst", "ATL::CRowset<TAccessor>::MoveFirst",
-    "ATL::CRowset<TAccessor>::MoveLast", "CRowset<TAccessor>::MoveLast", "ATL.CRowset.MoveLast", "ATL::CRowset::MoveLast", "CRowset<TAccessor>.MoveLast", "MoveLast", "CRowset::MoveLast", "ATL.CRowset<TAccessor>.MoveLast", "CRowset.MoveLast",
-    "ATL.CRowset<TAccessor>.MoveNext", "ATL.CRowset.MoveNext", "ATL::CRowset<TAccessor>::MoveNext", "CRowset<TAccessor>.MoveNext", "CRowset.MoveNext", "CRowset<TAccessor>::MoveNext", "CRowset::MoveNext", "ATL::CRowset::MoveNext",
-    "CRowset<TAccessor>.MovePrev", "CRowset.MovePrev", "MovePrev", "CRowset::MovePrev", "ATL.CRowset.MovePrev", "ATL::CRowset<TAccessor>::MovePrev", "ATL::CRowset::MovePrev", "ATL.CRowset<TAccessor>.MovePrev", "CRowset<TAccessor>::MovePrev",
-    "ATL::CRowset::MoveToBookmark", "ATL::CRowset<TAccessor>::MoveToBookmark", "ATL.CRowset.MoveToBookmark", "ATL.CRowset<TAccessor>.MoveToBookmark", "MoveToBookmark", "CRowset::MoveToBookmark", "CRowset.MoveToBookmark", "CRowset<TAccessor>::MoveToBookmark",
-    "MoveToRatio", "CRowset<TAccessor>::MoveToRatio", "CRowset::MoveToRatio", "CRowset<TAccessor>.MoveToRatio", "ATL.CRowset.MoveToRatio", "ATL::CRowset::MoveToRatio", "CRowset.MoveToRatio", "ATL.CRowset<TAccessor>.MoveToRatio", "ATL::CRowset<TAccessor>::MoveToRatio",
-    "ReleaseRows", "CRowset::ReleaseRows", "ATL::CRowset<TAccessor>::ReleaseRows", "CRowset<TAccessor>.ReleaseRows", "CRowset.ReleaseRows", "ATL.CRowset.ReleaseRows", "ATL.CRowset<TAccessor>.ReleaseRows", "CRowset<TAccessor>::ReleaseRows", "ATL::CRowset::ReleaseRows",
-    "ATL.CRowset<TAccessor>.SetData", "SetData", "ATL::CRowset::SetData", "CRowset<TAccessor>.SetData", "CRowset::SetData", "ATL.CRowset.SetData", "CRowset.SetData", "CRowset<TAccessor>::SetData", "ATL::CRowset<TAccessor>::SetData",
-    "CRowset.Undo", "ATL::CRowset<TAccessor>::Undo", "CRowset<TAccessor>::Undo", "ATL.CRowset.Undo", "ATL.CRowset<TAccessor>.Undo", "CRowset<TAccessor>.Undo", "ATL::CRowset::Undo", "CRowset::Undo", "Undo",
-    "CRowset.Update", "ATL.CRowset.Update", "ATL.CRowset<TAccessor>.Update", "ATL::CRowset<TAccessor>::Update", "CRowset<TAccessor>::Update", "CRowset::Update", "CRowset<TAccessor>.Update", "ATL::CRowset::Update",
-    "CRowset::UpdateAll", "ATL.CRowset.UpdateAll", "CRowset<TAccessor>.UpdateAll", "ATL.CRowset<TAccessor>.UpdateAll", "UpdateAll", "CRowset.UpdateAll", "ATL::CRowset<TAccessor>::UpdateAll", "CRowset<TAccessor>::UpdateAll", "ATL::CRowset::UpdateAll"]
+f1_keywords: ["ATL.CRowset<TAccessor>", "CRowset", "ATL::CRowset", "ATL::CRowset<TAccessor>", "ATL.CRowset", "CRowset<TAccessor>.AddRefRows", "CRowset.AddRefRows", "ATL.CRowset.AddRefRows", "AddRefRows", "CRowset::AddRefRows", "CRowset<TAccessor>::AddRefRows", "ATL::CRowset::AddRefRows", "ATL.CRowset<TAccessor>.AddRefRows", "ATL::CRowset<TAccessor>::AddRefRows", "CRowset::Close", "ATL.CRowset.Close", "CRowset<TAccessor>::Close", "CRowset<TAccessor>.Close", "ATL.CRowset<TAccessor>.Close", "ATL::CRowset::Close", "ATL::CRowset<TAccessor>::Close", "CRowset.Close", "CRowset<TAccessor>.Compare", "CRowset<TAccessor>::Compare", "ATL.CRowset<TAccessor>.Compare", "ATL::CRowset<TAccessor>::Compare", "CRowset.Compare", "ATL::CRowset::Compare", "ATL.CRowset.Compare", "CRowset::Compare", "CRowset<TAccessor>::CRowset", "CRowset.CRowset", "ATL::CRowset::CRowset", "ATL::CRowset<TAccessor>::CRowset", "ATL.CRowset.CRowset", "CRowset", "CRowset<TAccessor>.CRowset", "CRowset::CRowset", "ATL.CRowset<TAccessor>.CRowset", "ATL::CRowset::Delete", "CRowset.Delete", "CRowset::Delete", "ATL.CRowset.Delete", "ATL::CRowset<TAccessor>::Delete", "CRowset<TAccessor>.Delete", "CRowset<TAccessor>::Delete", "ATL.CRowset<TAccessor>.Delete", "ATL.CRowset.FindNextRow", "CRowset<TAccessor>.FindNextRow", "ATL::CRowset::FindNextRow", "CRowset::FindNextRow", "CRowset<TAccessor>::FindNextRow", "CRowset.FindNextRow", "ATL.CRowset<TAccessor>.FindNextRow", "ATL::CRowset<TAccessor>::FindNextRow", "FindNextRow", "ATL::CRowset::GetApproximatePosition", "ATL::CRowset<TAccessor>::GetApproximatePosition", "CRowset.GetApproximatePosition", "CRowset::GetApproximatePosition", "GetApproximatePosition", "ATL.CRowset.GetApproximatePosition", "CRowset<TAccessor>::GetApproximatePosition", "CRowset<TAccessor>::GetData", "ATL::CRowset<TAccessor>::GetData", "ATL::CRowset::GetData", "ATL.CRowset<TAccessor>.GetData", "CRowset<TAccessor>.GetData", "CRowset::GetData", "CRowset.GetData", "ATL.CRowset.GetData", "CRowset<TAccessor>::GetDataHere", "CRowset<TAccessor>.GetDataHere", "CRowset.GetDataHere", "GetDataHere", "CRowset::GetDataHere", "ATL::CRowset::GetDataHere", "ATL::CRowset<TAccessor>::GetDataHere", "ATL.CRowset<TAccessor>.GetDataHere", "ATL.CRowset.GetDataHere", "ATL.CRowset<TAccessor>.GetOriginalData", "CRowset<TAccessor>::GetOriginalData", "GetOriginalData", "ATL::CRowset<TAccessor>::GetOriginalData", "ATL.CRowset.GetOriginalData", "CRowset::GetOriginalData", "ATL::CRowset::GetOriginalData", "CRowset.GetOriginalData", "CRowset.GetRowStatus", "ATL.CRowset<TAccessor>.GetRowStatus", "ATL::CRowset<TAccessor>::GetRowStatus", "CRowset::GetRowStatus", "ATL::CRowset::GetRowStatus", "CRowset<TAccessor>::GetRowStatus", "ATL.CRowset.GetRowStatus", "CRowset<TAccessor>.GetRowStatus", "GetRowStatus", "ATL.CRowset<TAccessor>.Insert", "CRowset.Insert", "CRowset<TAccessor>.Insert", "CRowset<TAccessor>::Insert", "ATL::CRowset<TAccessor>::Insert", "ATL.CRowset.Insert", "CRowset::Insert", "ATL::CRowset::Insert", "CRowset::IsSameRow", "CRowset.IsSameRow", "IsSameRow", "ATL::CRowset::IsSameRow", "ATL.CRowset.IsSameRow", "CRowset<TAccessor>::IsSameRow", "ATL.CRowset<TAccessor>.IsSameRow", "CRowset<TAccessor>.IsSameRow", "ATL::CRowset<TAccessor>::IsSameRow", "CRowset<TAccessor>::MoveFirst", "ATL::CRowset::MoveFirst", "CRowset<TAccessor>.MoveFirst", "CRowset::MoveFirst", "CRowset.MoveFirst", "ATL.CRowset.MoveFirst", "ATL.CRowset<TAccessor>.MoveFirst", "ATL::CRowset<TAccessor>::MoveFirst", "ATL::CRowset<TAccessor>::MoveLast", "CRowset<TAccessor>::MoveLast", "ATL.CRowset.MoveLast", "ATL::CRowset::MoveLast", "CRowset<TAccessor>.MoveLast", "MoveLast", "CRowset::MoveLast", "ATL.CRowset<TAccessor>.MoveLast", "CRowset.MoveLast", "ATL.CRowset<TAccessor>.MoveNext", "ATL.CRowset.MoveNext", "ATL::CRowset<TAccessor>::MoveNext", "CRowset<TAccessor>.MoveNext", "CRowset.MoveNext", "CRowset<TAccessor>::MoveNext", "CRowset::MoveNext", "ATL::CRowset::MoveNext", "CRowset<TAccessor>.MovePrev", "CRowset.MovePrev", "MovePrev", "CRowset::MovePrev", "ATL.CRowset.MovePrev", "ATL::CRowset<TAccessor>::MovePrev", "ATL::CRowset::MovePrev", "ATL.CRowset<TAccessor>.MovePrev", "CRowset<TAccessor>::MovePrev", "ATL::CRowset::MoveToBookmark", "ATL::CRowset<TAccessor>::MoveToBookmark", "ATL.CRowset.MoveToBookmark", "ATL.CRowset<TAccessor>.MoveToBookmark", "MoveToBookmark", "CRowset::MoveToBookmark", "CRowset.MoveToBookmark", "CRowset<TAccessor>::MoveToBookmark", "MoveToRatio", "CRowset<TAccessor>::MoveToRatio", "CRowset::MoveToRatio", "CRowset<TAccessor>.MoveToRatio", "ATL.CRowset.MoveToRatio", "ATL::CRowset::MoveToRatio", "CRowset.MoveToRatio", "ATL.CRowset<TAccessor>.MoveToRatio", "ATL::CRowset<TAccessor>::MoveToRatio", "ReleaseRows", "CRowset::ReleaseRows", "ATL::CRowset<TAccessor>::ReleaseRows", "CRowset<TAccessor>.ReleaseRows", "CRowset.ReleaseRows", "ATL.CRowset.ReleaseRows", "ATL.CRowset<TAccessor>.ReleaseRows", "CRowset<TAccessor>::ReleaseRows", "ATL::CRowset::ReleaseRows", "ATL.CRowset<TAccessor>.SetData", "SetData", "ATL::CRowset::SetData", "CRowset<TAccessor>.SetData", "CRowset::SetData", "ATL.CRowset.SetData", "CRowset.SetData", "CRowset<TAccessor>::SetData", "ATL::CRowset<TAccessor>::SetData", "CRowset.Undo", "ATL::CRowset<TAccessor>::Undo", "CRowset<TAccessor>::Undo", "ATL.CRowset.Undo", "ATL.CRowset<TAccessor>.Undo", "CRowset<TAccessor>.Undo", "ATL::CRowset::Undo", "CRowset::Undo", "Undo", "CRowset.Update", "ATL.CRowset.Update", "ATL.CRowset<TAccessor>.Update", "ATL::CRowset<TAccessor>::Update", "CRowset<TAccessor>::Update", "CRowset::Update", "CRowset<TAccessor>.Update", "ATL::CRowset::Update", "CRowset::UpdateAll", "ATL.CRowset.UpdateAll", "CRowset<TAccessor>.UpdateAll", "ATL.CRowset<TAccessor>.UpdateAll", "UpdateAll", "CRowset.UpdateAl", "ATL::CRowset<TAccessor>::UpdateAll", "CRowset<TAccessor>::UpdateAll", "ATL::CRowset::UpdateAll"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CRowset class", "AddRefRows method", "Close method", "Compare method", "CRowset class, constructor", "Delete method", "FindNextRow method", "GetApproximatePosition method",
-    "GetData method [OLE DB]", "GetDataHere method", "GetOriginalData method", "GetRowStatus method", "Insert method", "IsSameRow method", "MoveFirst method", "MoveLast method", "MoveNext method",
-    "MovePrev method", "MoveToBookmark method", "MoveToRatio method", "ReleaseRows method", "SetData method", "Undo method", "Update method", "UpdateAll method"]
+helpviewer_keywords: ["CRowset class", "AddRefRows method", "Close method", "Compare method", "CRowset class, constructor", "Delete method", "FindNextRow method", "GetApproximatePosition method", "GetData method [OLE DB]", "GetDataHere method", "GetOriginalData method", "GetRowStatus method", "Insert method", "IsSameRow method", "MoveFirst method", "MoveLast method", "MoveNext method", "MovePrev method", "MoveToBookmark method", "MoveToRatio method", "ReleaseRows method", "SetData method", "Undo method", "Update method", "UpdateAll method"]
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
 author: "mikeblome"
 ms.author: "mblome"
@@ -47,7 +22,7 @@ template <class TAccessor = CAccessorBase>
 class CRowset  
 ```  
   
-#### Parameters  
+### Parameters  
  *TAccessor*  
  An accessor class. The default is `CAccessorBase`.  
   
@@ -97,7 +72,6 @@ Calls [IRowset::AddRefRows](https://msdn.microsoft.com/library/ms719619.aspx) to
   
 ```cpp
 HRESULT AddRefRows() throw();  
-  
 ```  
   
 ### Return Value  
@@ -113,7 +87,6 @@ Releases rows and the current [IRowset](https://msdn.microsoft.com/library/ms720
   
 ```cpp
 void Close() throw();  
-  
 ```  
   
 ### Remarks  
@@ -154,7 +127,7 @@ Creates a new `CRowset` object and (optionally) associates it with an [IRowset](
 ### Syntax  
   
 ```cpp
-      CRowset();   
+CRowset();   
 
 CRowset(IRowset* pRowset);  
 ```  
@@ -170,7 +143,6 @@ Calls [IRowsetChange::DeleteRows](https://msdn.microsoft.com/library/ms724362.as
   
 ```cpp
 HRESULT Delete() const throw();  
-  
 ```  
   
 ### Return Value  
@@ -183,7 +155,7 @@ Finds the next matching row after the specified bookmark.
   
 ```cpp
 HRESULT FindNextRow(DBCOMPAREOP op,   
-  BYTE* pData,   
+   BYTE* pData,   
    DBTYPE wType,   
    DBLENGTH nLength,   
    BYTE bPrecision,   
@@ -262,7 +234,6 @@ Retrieves data from the rowset's copy of the row.
 ```cpp
 HRESULT GetData() throw();   
 
-
 HRESULT GetData(int nAccessor) throw();  
 ```  
   
@@ -283,7 +254,7 @@ Retrieves data from the current row and places it into the specified buffer.
   
 ```cpp
 HRESULT GetDataHere(int nAccessor,   
-  void* pBuffer) throw();  
+   void* pBuffer) throw();  
 ```  
   
 #### Parameters  
@@ -306,7 +277,6 @@ Calls `IRowsetUpdate::GetOriginalData` to retrieve the data most recently fetche
   
 ```cpp
 HRESULT GetOriginalData() throw();  
-  
 ```  
   
 ### Return Value  
@@ -391,7 +361,6 @@ Moves the cursor to the initial position and retrieves the initial row.
   
 ```cpp
 HRESULT MoveFirst() throw();  
-  
 ```  
   
 ### Return Value  
@@ -407,7 +376,6 @@ Moves the cursor to the last row.
   
 ```cpp
 HRESULT MoveLast() throw();  
-  
 ```  
   
 ### Return Value  
@@ -424,7 +392,9 @@ Moves the cursor to the next record.
 ### Syntax  
   
 ```cpp
-HRESULT MoveNext() throw();HRESULT MoveNext(LONG lSkip,   
+HRESULT MoveNext() throw();
+
+HRESULT MoveNext(LONG lSkip,   
    bool bForward= true) throw();  
 ```  
   
@@ -456,7 +426,6 @@ Moves the cursor to the previous record.
   
 ```cpp
 HRESULT MovePrev() throw();  
-  
 ```  
   
 ### Return Value  
@@ -529,7 +498,6 @@ Calls [IRowset::ReleaseRows](https://msdn.microsoft.com/library/ms719771.aspx) t
   
 ```cpp
 HRESULT ReleaseRows() throw();  
-  
 ```  
   
 ### Return Value  
@@ -542,7 +510,6 @@ Sets data values in one or more columns of a row.
   
 ```cpp
 HRESULT SetData() const throw();   
-
 
 HRESULT SetData(int nAccessor) const throw();  
 ```  

@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ICommandPropertiesImpl", "ATL.ICommandPropertiesImpl", "ATL::ICommandPropertiesImpl", "ICommandPropertiesImpl::GetProperties", "ICommandPropertiesImpl.GetProperties", "GetProperties",                      "ICommandPropertiesImpl.SetProperties", "ICommandPropertiesImpl::SetProperties", "SetProperties"]
+f1_keywords: ["ICommandPropertiesImpl", "ATL.ICommandPropertiesImpl", "ATL::ICommandPropertiesImpl", "ICommandPropertiesImpl::GetProperties", "ICommandPropertiesImpl.GetProperties", "GetProperties", "ICommandPropertiesImpl.SetProperties", "ICommandPropertiesImpl::SetProperties", "SetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandPropertiesImpl class", "GetProperties method", "SetProperties method"]
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
@@ -51,7 +51,7 @@ Returns all the requested property sets using the command's property map.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,   
+STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,   
    const DBPROPIDSET rgPropertyIDSets[],   
    ULONG * pcPropertySets,   
    DBPROPSET ** prgPropertySets);  
@@ -69,7 +69,7 @@ Sets properties for the command object.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(SetProperties)(ULONG cPropertySets,   
+STDMETHOD(SetProperties)(ULONG cPropertySets,   
    DBPROPSET rgPropertySets[]);  
 ```  
   

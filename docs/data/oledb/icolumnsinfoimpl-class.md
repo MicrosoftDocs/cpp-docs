@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL.IColumnsInfoImpl<T>", "ATL::IColumnsInfoImpl", "IColumnsInfoImpl", "ATL.IColumnsInfoImpl", "ATL::IColumnsInfoImpl<T>", "GetColumnInfo", "ATL::IColumnsInfoImpl::GetColumnInfo",                          "ATL.IColumnsInfoImpl.GetColumnInfo", "ATL::IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl::GetColumnInfo", "IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl.GetColumnInfo",                             "IColumnsInfoImpl<T>::MapColumnIDs", "MapColumnIDs", "ATL::IColumnsInfoImpl::MapColumnIDs", "IColumnsInfoImpl.MapColumnIDs", "ATL::IColumnsInfoImpl<T>::MapColumnIDs", "IColumnsInfoImpl::MapColumnIDs",                "ATL.IColumnsInfoImpl<T>.MapColumnIDs", "ATL.IColumnsInfoImpl.MapColumnIDs"]
+f1_keywords: ["ATL.IColumnsInfoImpl<T>", "ATL::IColumnsInfoImpl", "IColumnsInfoImpl", "ATL.IColumnsInfoImpl", "ATL::IColumnsInfoImpl<T>", "GetColumnInfo", "ATL::IColumnsInfoImpl::GetColumnInfo", "ATL.IColumnsInfoImpl.GetColumnInfo", "ATL::IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl::GetColumnInfo", "IColumnsInfoImpl<T>::GetColumnInfo", "IColumnsInfoImpl.GetColumnInfo", "IColumnsInfoImpl<T>::MapColumnIDs", "MapColumnIDs", "ATL::IColumnsInfoImpl::MapColumnIDs", "IColumnsInfoImpl.MapColumnIDs", "ATL::IColumnsInfoImpl<T>::MapColumnIDs", "IColumnsInfoImpl::MapColumnIDs", "ATL.IColumnsInfoImpl<T>.MapColumnIDs", "ATL.IColumnsInfoImpl.MapColumnIDs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IColumnsInfoImpl class", "GetColumnInfo method", "MapColumnIDs method"]
 ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
@@ -49,7 +49,7 @@ Returns the column metadata needed by most consumers.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,  
+STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,  
    DBCOLUMNINFO** prgInfo,  
    OLECHAR** ppStringsBuffer);  
 ```  
@@ -63,7 +63,7 @@ Returns an array of ordinals of the columns in a rowset that are identified by t
 ### Syntax  
   
 ```cpp
-      STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,  
+STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,  
    const DBID rgColumnIDs[],  
    DBORDINAL rgColumns[]);  
 ```  

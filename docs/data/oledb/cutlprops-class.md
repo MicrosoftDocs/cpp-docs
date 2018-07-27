@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["CUtlProps", "CUtlProps::GetPropValue", "CUtlProps.GetPropValue", "GetPropValue", "CUtlProps::IsValidValue", "CUtlProps.IsValidValue", "IsValidValue", "CUtlProps", "OnPropertyChanged",                      "CUtlProps.OnPropertyChanged", "CUtlProps::OnPropertyChanged", "SetPropValue", "ATL::CUtlProps<T>::SetPropValue", "ATL.CUtlProps<T>.SetPropValue", "ATL.CUtlProps.SetPropValue", "CUtlProps::SetPropValue",             "CUtlProps<T>::SetPropValue", "CUtlProps.SetPropValue", "CUtlProps<T>.SetPropValue", "ATL::CUtlProps::SetPropValue"]
+f1_keywords: ["CUtlProps", "CUtlProps::GetPropValue", "CUtlProps.GetPropValue", "GetPropValue", "CUtlProps::IsValidValue", "CUtlProps.IsValidValue", "IsValidValue", "CUtlProps", "OnPropertyChanged", "CUtlProps.OnPropertyChanged", "CUtlProps::OnPropertyChanged", "SetPropValue", "ATL::CUtlProps<T>::SetPropValue", "ATL.CUtlProps<T>.SetPropValue", "ATL.CUtlProps.SetPropValue", "CUtlProps::SetPropValue", "CUtlProps<T>::SetPropValue", "CUtlProps.SetPropValue", "CUtlProps<T>.SetPropValue", "ATL::CUtlProps::SetPropValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CUtlProps class", "GetPropValue method", "IsValidValue method", "OnInterfaceRequested method", "OnPropertyChanged method", "SetPropValue method"]
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
@@ -54,7 +54,7 @@ Gets a property from a property set.
 ### Syntax  
   
 ```cpp
-      OUT_OF_LINE HRESULT GetPropValue(const GUID* pguidPropSet,  
+OUT_OF_LINE HRESULT GetPropValue(const GUID* pguidPropSet,  
    DBPROPID dwPropId,  
    VARIANT* pvValue);  
 ```  
@@ -78,7 +78,7 @@ Used to validate a value before setting a property.
 ### Syntax  
   
 ```cpp
-      virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,  
+virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,  
    DBPROP* pDBProp);  
 ```  
   
@@ -101,7 +101,7 @@ Handles requests for an optional interface when a consumer calls a method on one
 ### Syntax  
   
 ```cpp
-      virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);  
+virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);  
 ```  
   
 #### Parameters  
@@ -133,7 +133,7 @@ Called after setting a property to handle chained properties.
 ### Syntax  
   
 ```cpp
-      virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,  
+virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,  
    DBPROP* pDBProp);  
 ```  
   
