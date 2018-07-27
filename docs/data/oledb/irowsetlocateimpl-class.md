@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["IRowsetLocateImpl", "ATL.IRowsetLocateImpl.Compare", "IRowsetLocateImpl::Compare", "IRowsetLocateImpl.Compare", "ATL::IRowsetLocateImpl::Compare", "GetRowsAt", "IRowsetLocateImpl.GetRowsAt",               "ATL::IRowsetLocateImpl::GetRowsAt", "IRowsetLocateImpl::GetRowsAt", "ATL.IRowsetLocateImpl.GetRowsAt", "IRowsetLocateImpl::GetRowsByBookmark", "IRowsetLocateImpl.GetRowsByBookmark", "GetRowsByBookmark",             "IRowsetLocateImpl::Hash", "IRowsetLocateImpl.Hash", "m_rgBookmarks", "IRowsetLocateImpl::m_rgBookmarks", "ATL.IRowsetLocateImpl.m_rgBookmarks", "ATL::IRowsetLocateImpl::m_rgBookmarks",                               "IRowsetLocateImpl.m_rgBookmarks"]
+f1_keywords: ["IRowsetLocateImpl", "ATL.IRowsetLocateImpl.Compare", "IRowsetLocateImpl::Compare", "IRowsetLocateImpl.Compare", "ATL::IRowsetLocateImpl::Compare", "GetRowsAt", "IRowsetLocateImpl.GetRowsAt", "ATL::IRowsetLocateImpl::GetRowsAt", "IRowsetLocateImpl::GetRowsAt", "ATL.IRowsetLocateImpl.GetRowsAt", "IRowsetLocateImpl::GetRowsByBookmark", "IRowsetLocateImpl.GetRowsByBookmark", "GetRowsByBookmark", "IRowsetLocateImpl::Hash", "IRowsetLocateImpl.Hash", "m_rgBookmarks", "IRowsetLocateImpl::m_rgBookmarks", "ATL.IRowsetLocateImpl.m_rgBookmarks", "ATL::IRowsetLocateImpl::m_rgBookmarks", "IRowsetLocateImpl.m_rgBookmarks"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["providers, bookmarks", "IRowsetLocateImpl class", "bookmarks, OLE DB", "Compare method", "GetRowsAt method", "GetRowsByBookmark method", "Hash method", "m_rgbookmarks"]
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
@@ -90,7 +90,7 @@ Compares two bookmarks.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (Compare )(HCHAPTER /* hReserved */,  
+STDMETHOD (Compare )(HCHAPTER /* hReserved */,  
    DBBKMARK cbBookmark1,  
    const BYTE* pBookmark1,  
    DBBKMARK cbBookmark2,  
@@ -120,7 +120,7 @@ Fetches rows starting with the row specified by an offset from a bookmark.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetRowsAt )(HWATCHREGION /* hReserved1 */,  
+STDMETHOD (GetRowsAt )(HWATCHREGION /* hReserved1 */,  
    HCHAPTER hReserved2,  
    DBBKMARK cbBookmark,  
    const BYTE* pBookmark,  
@@ -144,7 +144,7 @@ Fetches one or more rows that match the specified bookmarks.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetRowsByBookmark )(HCHAPTER /* hReserved */,  
+STDMETHOD (GetRowsByBookmark )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const DBBKMARK rgcbBookmarks[],  
    const BYTE* rgpBookmarks,  
@@ -167,7 +167,7 @@ Returns hash values for the specified bookmarks.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (Hash )(HCHAPTER /* hReserved */,  
+STDMETHOD (Hash )(HCHAPTER /* hReserved */,  
    DBBKMARK cbBookmarks,  
    const DBBKMARK* rgcbBookmarks[],  
    const BYTE* rgpBookmarks[],  
@@ -188,7 +188,6 @@ An array of bookmarks.
   
 ```cpp
 CAtlArray<DBROWCOUNT> m_rgBookmarks;  
-  
 ```  
   
 ## See Also  

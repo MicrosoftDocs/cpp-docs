@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl", "IsSameRow", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow",            "ATL::IRowsetIdentityImpl::IsSameRow"]
+f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl", "IsSameRow", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow", "ATL::IRowsetIdentityImpl::IsSameRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetIdentityImpl class", "IsSameRow method"]
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
@@ -47,7 +47,7 @@ Compares two row handles to see if they refer to the same row.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(IsSameRow )(HROW hThisRow,  
+STDMETHOD(IsSameRow )(HROW hThisRow,  
    HROW hThatRow);  
 ```  
   

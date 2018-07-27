@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["IDBPropertiesImpl", "ATL.IDBPropertiesImpl", "ATL.IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl", "IDBPropertiesImpl::GetProperties", "IDBPropertiesImpl.GetProperties",       "GetProperties", "IDBPropertiesImpl::GetPropertyInfo", "IDBPropertiesImpl.GetPropertyInfo", "GetPropertyInfo", "IDBPropertiesImpl.SetProperties", "SetProperties", "IDBPropertiesImpl::SetProperties"]
+f1_keywords: ["IDBPropertiesImpl", "ATL.IDBPropertiesImpl", "ATL.IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl", "IDBPropertiesImpl::GetProperties", "IDBPropertiesImpl.GetProperties", "GetProperties", "IDBPropertiesImpl::GetPropertyInfo", "IDBPropertiesImpl.GetPropertyInfo", "GetPropertyInfo", "IDBPropertiesImpl.SetProperties", "SetProperties", "IDBPropertiesImpl::SetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDBPropertiesImpl class", "GetProperties method", "GetPropertyInfo method", "SetProperties method"]
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
@@ -49,7 +49,7 @@ Returns the values of properties in the Data Source, Data Source Information, an
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetProperties)(ULONG cPropertySets,   
+STDMETHOD(GetProperties)(ULONG cPropertySets,   
    const DBPROPIDSET rgPropertySets[],   
    ULONG * pcProperties,   
    DBPROPSET ** prgProperties);  
@@ -76,7 +76,7 @@ Returns property information supported by the data source.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,   
+STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,   
    const DBPROPIDSET rgPropertySets[],   
    ULONG * pcPropertyInfoSets,   
    DBPROPINFOSET ** prgPropertyInfoSets,   
@@ -102,7 +102,7 @@ Sets properties in the Data Source and Initialization property groups, for data 
 ### Syntax  
   
 ```cpp
-      STDMETHOD(SetProperties)(ULONG cPropertySets,   
+STDMETHOD(SetProperties)(ULONG cPropertySets,   
    DBPROPSET rgPropertySets[]);  
 ```  
   
