@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Schema Rowsets
-Schema rowsets allow consumers to obtain information about a data store without knowing its underlying structure, or schema. For example, a data store might have tables organized into a user-defined hierarchy, so there would be no way to ensure knowledge of the schema except by reading it. (As another example, note that the Visual C++ wizards use schema rowsets to generate accessors for the consumer.) To allow the consumer to do this, the provider's session object exposes methods on the [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) interface. In Visual C++ applications, you use the [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) class to implement **IDBSchemaRowset**.  
+Schema rowsets allow consumers to obtain information about a data store without knowing its underlying structure, or schema. For example, a data store might have tables organized into a user-defined hierarchy, so there would be no way to ensure knowledge of the schema except by reading it. (As another example, note that the Visual C++ wizards use schema rowsets to generate accessors for the consumer.) To allow the consumer to do this, the provider's session object exposes methods on the [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) interface. In Visual C++ applications, you use the [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) class to implement `IDBSchemaRowset`.  
   
  `IDBSchemaRowsetImpl` supports the following methods:  
   
@@ -39,15 +39,15 @@ Schema rowsets allow consumers to obtain information about a data store without 
   
 -   **C** *ShortName* **SessionTRSchemaRowset** handles requests for table information (the `DBSCHEMA_TABLES` schema rowset).  
   
--   **C** *ShortName* **SessionColSchemaRowset** handles requests for column information (the **DBSCHEMA_COLUMNS** schema rowset). The wizard supplies sample implementations for these classes, which return schema information for a DOS provider.  
+-   **C** *ShortName* **SessionColSchemaRowset** handles requests for column information (the `DBSCHEMA_COLUMNS` schema rowset). The wizard supplies sample implementations for these classes, which return schema information for a DOS provider.  
   
--   **C** *ShortName* **SessionPTSchemaRowset** handles requests for schema information about the provider type (the **DBSCHEMA_PROVIDER_TYPES** schema rowset). The default implementation provided by the wizard returns `S_OK`.  
+-   **C** *ShortName* **SessionPTSchemaRowset** handles requests for schema information about the provider type (the `DBSCHEMA_PROVIDER_TYPES` schema rowset). The default implementation provided by the wizard returns `S_OK`.  
   
  You can customize these classes to handle schema information appropriate to your provider:  
   
--   In **C***ShortName***SessionTRSchemaRowset**, you must fill out the catalog, table, and description fields (**trData.m_szType**, **trData.m_szTable**, and **trData.m_szDesc**). The wizard-generated example uses only one row (table). Other providers might return more than one table.  
+-   In **C***ShortName***SessionTRSchemaRowset**, you must fill out the catalog, table, and description fields (`trData.m_szType`, `trData.m_szTable`, and `trData.m_szDesc`). The wizard-generated example uses only one row (table). Other providers might return more than one table.  
   
--   In **C***ShortName***SessionColSchemaRowset**, you pass the name of the table as a **DBID**.  
+-   In **C***ShortName***SessionColSchemaRowset**, you pass the name of the table as a `DBID`.  
   
 ## Setting Restrictions  
  An important concept in schema rowset support is setting restrictions, which you do using `SetRestrictions`. Restrictions allow consumers to fetch only matching rows (for example, find all the columns in the table "MyTable"). Restrictions are optional, and in the case in which none are supported (the default), all data is always returned. For an example of a provider that does support restrictions, see the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample.  
@@ -63,7 +63,7 @@ BEGIN_SCHEMA_MAP(CUpdateSession)
 END_SCHEMA_MAP()  
 ```  
   
- To support **IDBSchemaRowset**, you must support `DBSCHEMA_TABLES`, **DBSCHEMA_COLUMNS**, and **DBSCHEMA_PROVIDER_TYPES**. You can add additional schema rowsets at your discretion.  
+ To support `IDBSchemaRowset`, you must support `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, and `DBSCHEMA_PROVIDER_TYPES`. You can add additional schema rowsets at your discretion.  
   
  Declare a schema rowset class with an `Execute` method such as `CUpdateSessionTRSchemaRowset` in UpdatePV:  
   
@@ -97,14 +97,14 @@ class CUpdateSessionTRSchemaRowset :
  By default, the implementation returns 0 (does not support any restrictions) for any request. UpdatePV is an example of a provider that does support restrictions.  
   
 ### Example  
- This code is taken from the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample. UpdatePv supports the three required schema rowsets: `DBSCHEMA_TABLES`, **DBSCHEMA_COLUMNS**, and **DBSCHEMA_PROVIDER_TYPES**. As an example of how to implement schema support in your provider, this topic takes you through implementing the **DBSCHEMA_TABLE** rowset.  
+ This code is taken from the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample. UpdatePv supports the three required schema rowsets: `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, and `DBSCHEMA_PROVIDER_TYPES`. As an example of how to implement schema support in your provider, this topic takes you through implementing the `DBSCHEMA_TABLE` rowset.  
   
 > [!NOTE]
 >  The sample code might differ from what is listed here; you should regard the sample code as the more up-to-date version.  
   
- The first step in adding schema support is to determine which restrictions you are going to support. To determine which restrictions are available for your schema rowset, look at the OLE DB specification for the definition of **IDBSchemaRowset**. Following the main definition, you see a table containing the schema rowset name, the number of restrictions, and the restriction columns. Select the schema rowset you want to support and make a note of the number of restrictions and restriction columns. For example, `DBSCHEMA_TABLES` supports four restrictions (**TABLE_CATALOG**, **TABLE_SCHEMA**, **TABLE_NAME**, and **TABLE_TYPE**):  
+ The first step in adding schema support is to determine which restrictions you are going to support. To determine which restrictions are available for your schema rowset, look at the OLE DB specification for the definition of `IDBSchemaRowset`. Following the main definition, you see a table containing the schema rowset name, the number of restrictions, and the restriction columns. Select the schema rowset you want to support and make a note of the number of restrictions and restriction columns. For example, `DBSCHEMA_TABLES` supports four restrictions (**TABLE_CATALOG**, **TABLE_SCHEMA**, **TABLE_NAME**, and **TABLE_TYPE**):  
   
-```  
+```cpp  
 void SetRestrictions(ULONG cRestrictions, GUID* rguidSchema,   
    ULONG* rgRestrictions)  
 {  
@@ -128,7 +128,7 @@ if (InlineIsEqualGUID(rguidSchema[l], DBSCHEMA_TABLES))
     rgRestrictions[l] = 0x0C;  
 ```  
   
- The following `Execute` function is similar to those in regular rowsets. You have three arguments: `pcRowsAffected`, `cRestrictions`, and `rgRestrictions`. The `pcRowsAffected` variable is an output parameter that the provider can return the count of rows in the schema rowset. The `cRestrictions` parameter is an input parameter containing the number of restrictions passed by the consumer to the provider. The `rgRestrictions` parameter is an array of **VARIANT** values that contain the restriction values.  
+ The following `Execute` function is similar to those in regular rowsets. You have three arguments: *pcRowsAffected*, *cRestrictions*, and *rgRestrictions*. The *pcRowsAffected* variable is an output parameter that the provider can return the count of rows in the schema rowset. The *cRestrictions* parameter is an input parameter containing the number of restrictions passed by the consumer to the provider. The *rgRestrictions* parameter is an array of `VARIANT` values that contain the restriction values.  
   
 ```  
 HRESULT Execute(DBROWCOUNT* pcRowsAffected, ULONG cRestrictions,   
@@ -137,11 +137,11 @@ HRESULT Execute(DBROWCOUNT* pcRowsAffected, ULONG cRestrictions,
   
  The `cRestrictions` variable is based on the total number of restrictions for a schema rowset, regardless of whether the provider supports them. Because UpdatePv supports two restrictions (the third and fourth), this code only looks for a `cRestrictions` value greater than or equal to three.  
   
- The value for the **TABLE_NAME** restriction is stored in `rgRestrictions[2]` (again, the third restriction in a zero-based array is 2). You need to check that the restriction is not `VT_EMPTY` to actually support it. Note that **VT_NULL** is not equal to `VT_EMPTY`. **VT_NULL** specifies a valid restriction value.  
+ The value for the **TABLE_NAME** restriction is stored in `rgRestrictions[2]` (again, the third restriction in a zero-based array is 2). You need to check that the restriction is not VT_EMPTY to actually support it. Note that VT_NULL is not equal to VT_EMPTY. VT_NULL specifies a valid restriction value.  
   
- The UpdatePv definition of a table name is a fully qualified path name to a text file. Extract the restriction value and then attempt to open the file to ensure that the file does actually exist. If the file does not exist, return `S_OK`. This might seem a bit backwards but what the code is really telling the consumer is that there were no supported tables by the name specified. The `S_OK` return means that the code executed correctly.  
+ The UpdatePv definition of a table name is a fully qualified path name to a text file. Extract the restriction value and then attempt to open the file to ensure that the file does actually exist. If the file does not exist, return S_OK. This might seem a bit backwards but what the code is really telling the consumer is that there were no supported tables by the name specified. The S_OK return means that the code executed correctly.  
   
-```  
+```cpp  
 USES_CONVERSION;  
 enum {  
             sizeOfszFile = 255  
@@ -176,7 +176,7 @@ if (cRestrictions >= 3 && rgRestrictions[2].vt != VT_EMPTY)
 }  
 ```  
   
- Supporting the fourth restriction (**TABLE_TYPE**) is similar to the third restriction. Check to see that the value is not `VT_EMPTY`. This restriction only returns the table type, **TABLE**. To determine the valid values for the `DBSCHEMA_TABLES`, look in Appendix B of the *OLE DB Programmer's Reference* in the **TABLES** rowset section.  
+ Supporting the fourth restriction (**TABLE_TYPE**) is similar to the third restriction. Check to see that the value is not VT_EMPTY. This restriction only returns the table type, **TABLE**. To determine the valid values for the `DBSCHEMA_TABLES`, look in Appendix B of the *OLE DB Programmer's Reference* in the **TABLES** rowset section.  
   
 ```  
 // TABLE_TYPE restriction:  
@@ -195,9 +195,9 @@ if (cRestrictions >=4 && rgRestrictions[3].vt != VT_EMPTY)
 }  
 ```  
   
- This is where you actually create a row entry for the rowset. The variable `trData` corresponds to **CTABLESRow**, a structure defined in the OLE DB provider templates. **CTABLESRow** corresponds to the **TABLES** rowset definition in Appendix B of the OLE DB specification. You only have one row to add because you can only support one table at a time.  
+ This is where you actually create a row entry for the rowset. The variable `trData` corresponds to `CTABLESRow`, a structure defined in the OLE DB provider templates. `CTABLESRow` corresponds to the **TABLES** rowset definition in Appendix B of the OLE DB specification. You only have one row to add because you can only support one table at a time.  
   
-```  
+```cpp  
 // Bring over the data:  
 wcspy_s(trData.m_szType, OLESTR("TABLE"), 5);  
 
@@ -208,7 +208,7 @@ wcsncpy_s(trData.m_szTable, T2OLE(szFile), _TRUNCATE());
   
  UpdatePV sets only three columns: **TABLE_NAME**, **TABLE_TYPE**, and **DESCRIPTION**. You should make a note of the columns for which you return information, because you need this information when you implement `GetDBStatus`:  
   
-```  
+```cpp  
     _ATLTRY  
     {  
         m_rgRowData.Add(trData);  
@@ -226,7 +226,7 @@ wcsncpy_s(trData.m_szTable, T2OLE(szFile), _TRUNCATE());
   
  The `GetDBStatus` function is very important to the correct operation of the schema rowset. Because you do not return data for every column in the **TABLES** rowset, you need to specify which columns you return data for and which you do not.  
   
-```  
+```cpp  
 virtual DBSTATUS GetDBStatus(CSimpleRow* , ATLCOLUMNINFO* pColInfo)  
 {  
     ATLASSERT(pColInfo != NULL);  
@@ -245,13 +245,13 @@ virtual DBSTATUS GetDBStatus(CSimpleRow* , ATLCOLUMNINFO* pColInfo)
 }  
 ```  
   
- Because your `Execute` function returns data for the **TABLE_NAME**, **TABLE_TYPE**, and **DESCRIPTION** fields from the **TABLES** rowset, you can look in Appendix B of the OLE DB specification and determine (by counting from the top down) that they are ordinals 3, 4, and 6. For each of those columns, return **DBSTATUS_S_OK**. For all the other columns, return **DBSTATUS_S_ISNULL**. It is important to return this status, because a consumer might not understand that the value you return is **NULL** or something else. Again, note that **NULL** is not equivalent to empty.  
+ Because your `Execute` function returns data for the **TABLE_NAME**, **TABLE_TYPE**, and **DESCRIPTION** fields from the **TABLES** rowset, you can look in Appendix B of the OLE DB specification and determine (by counting from the top down) that they are ordinals 3, 4, and 6. For each of those columns, return DBSTATUS_S_OK. For all the other columns, return DBSTATUS_S_ISNULL. It is important to return this status, because a consumer might not understand that the value you return is NULL or something else. Again, note that NULL is not equivalent to empty.  
   
  For more information about the OLE DB schema rowset interface, see the [IDBSchemaRowset](../../data/oledb/idbschemarowsetimpl-class.md) interface in the OLE DB Programmer's Reference.  
   
- For information about how consumers can use **IDBSchemaRowset** methods, see [Obtaining Metadata with Schema Rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).  
+ For information about how consumers can use `IDBSchemaRowset` methods, see [Obtaining Metadata with Schema Rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).  
   
- For an example of an provider that supports schema rowsets, see the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample.  
+ For an example of an provider that supports schema rowsets, see the [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) sample.  
   
 ## See Also  
  [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)
