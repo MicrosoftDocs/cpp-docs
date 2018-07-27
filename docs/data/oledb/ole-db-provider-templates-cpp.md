@@ -49,7 +49,6 @@ OLE DB is an important part of the Microsoft Universal Data Access strategy. The
  Providers can vary greatly in complexity and functionality. It is useful to categorize providers into read-only providers and updatable providers:  
   
 -   Visual C++ 6.0 supported only read-only providers. [Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md) discusses how to create a read-only provider.  
-  
 -   Visual C++ supports updatable providers, which can update (write to) the data store. For information about updatable providers, see [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md); the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample is an example of an updatable provider.  
   
  For more information, see:  

@@ -56,12 +56,10 @@ HRESULT Open(const CSession& session,
    DBPROPSET* pPropSet = NULL,  
    ULONG ulPropSets = 0) throw ();  
 
-
 HRESULT Open(const CSession& session,  
    LPCSTR szTableName,  
    DBPROPSET* pPropSet = NULL,  
    ULONG ulPropSets = 0) throw ();  
-
 
 HRESULT Open(const CSession& session,  
    DBID& dbid,  

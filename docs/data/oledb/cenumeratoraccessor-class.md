@@ -4,12 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::CEnumeratorAccessor", "CEnumeratorAccessor", "ATL.CEnumeratorAccessor",
-    "CEnumeratorAccessor.m_bIsParent", "ATL::CEnumeratorAccessor::m_bIsParent", "m_bIsParent", "ATL.CEnumeratorAccessor.m_bIsParent", "CEnumeratorAccessor::m_bIsParent",
-    "ATL::CEnumeratorAccessor::m_nType", "CEnumeratorAccessor.m_nType", "CEnumeratorAccessor::m_nType", "ATL.CEnumeratorAccessor.m_nType", "m_nType",
-    "ATL::CEnumeratorAccessor::m_szDescription", "CEnumeratorAccessor.m_szDescription", "CEnumeratorAccessor::m_szDescription", "ATL.CEnumeratorAccessor.m_szDescription",
-    "CEnumeratorAccessor::m_szName", "ATL.CEnumeratorAccessor.m_szName", "m_szName", "ATL::CEnumeratorAccessor::m_szName", "CEnumeratorAccessor.m_szName",
-    "CEnumeratorAccessor::m_szParseName", "ATL::CEnumeratorAccessor::m_szParseName", "m_szParseName", "CEnumeratorAccessor.m_szParseName", "ATL.CEnumeratorAccessor.m_szParseName"]
+f1_keywords: ["ATL::CEnumeratorAccessor", "CEnumeratorAccessor", "ATL.CEnumeratorAccessor", "CEnumeratorAccessor.m_bIsParent", "ATL::CEnumeratorAccessor::m_bIsParent", "m_bIsParent", "ATL.CEnumeratorAccessor.m_bIsParent", "CEnumeratorAccessor::m_bIsParent", "ATL::CEnumeratorAccessor::m_nType", "CEnumeratorAccessor.m_nType", "CEnumeratorAccessor::m_nType", "ATL.CEnumeratorAccessor.m_nType", "m_nType", "ATL::CEnumeratorAccessor::m_szDescription", "CEnumeratorAccessor.m_szDescription", "CEnumeratorAccessor::m_szDescription", "ATL.CEnumeratorAccessor.m_szDescription", "CEnumeratorAccessor::m_szName", "ATL.CEnumeratorAccessor.m_szName", "m_szName", "ATL::CEnumeratorAccessor::m_szName", "CEnumeratorAccessor.m_szName", "CEnumeratorAccessor::m_szParseName", "ATL::CEnumeratorAccessor::m_szParseName", "m_szParseName", "CEnumeratorAccessor.m_szParseName", "ATL.CEnumeratorAccessor.m_szParseName"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CEnumeratorAccessor class", "m_bIsParent", "m_nType", "m_szDescription", "m_szName", "m_szParseName"]
 ms.assetid: 21e8e7ea-3511-4afe-b33f-d520f4ff82bb
@@ -51,7 +46,6 @@ A variable indicating whether the enumerator is a parent enumerator, if the row 
   
 ```cpp
 VARIANT_BOOL m_bIsParent;  
-  
 ```  
   
 ### Remarks  
@@ -64,7 +58,6 @@ A variable indicating whether the row describes a data source or an enumerator.
   
 ```cpp
 USHORT m_nType;  
-  
 ```  
   
 ### Remarks  
@@ -77,7 +70,6 @@ The description of the data source or enumerator.
   
 ```cpp
 WCHAR m_szDescription[129];  
-  
 ```  
   
 ### Remarks  
@@ -90,7 +82,6 @@ The name of the data source or enumerator.
   
 ```cpp
 WCHAR m_szName[129];  
-  
 ```  
   
 ### Remarks  
@@ -103,7 +94,6 @@ String to pass to [IParseDisplayName](http://msdn.microsoft.com/library/windows/
   
 ```cpp
 WCHAR m_szParseName[129];  
-  
 ```  
   
 ### Remarks  

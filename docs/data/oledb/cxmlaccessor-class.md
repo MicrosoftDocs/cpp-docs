@@ -4,9 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::CXMLAccessor", "CXMLAccessor", "ATL.CXMLAccessor",
-    "ATL.CXMLAccessor.GetXMLColumnData", "CXMLAccessor::GetXMLColumnData", "CXMLAccessor.GetXMLColumnData", "ATL::CXMLAccessor::GetXMLColumnData", "GetXMLColumnData",
-    "ATL::CXMLAccessor::GetXMLRowData", "ATL.CXMLAccessor.GetXMLRowData", "CXMLAccessor::GetXMLRowData", "CXMLAccessor.GetXMLRowData", "GetXMLRowData"]
+f1_keywords: ["ATL::CXMLAccessor", "CXMLAccessor", "ATL.CXMLAccessor", "ATL.CXMLAccessor.GetXMLColumnData", "CXMLAccessor::GetXMLColumnData", "CXMLAccessor.GetXMLColumnData", "ATL::CXMLAccessor::GetXMLColumnData", "GetXMLColumnData", "ATL::CXMLAccessor::GetXMLRowData", "ATL.CXMLAccessor.GetXMLRowData", "CXMLAccessor::GetXMLRowData", "CXMLAccessor.GetXMLRowData", "GetXMLRowData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CXMLAccessor class", "GetXMLColumnData method", "GetXMLRowData method"]
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a

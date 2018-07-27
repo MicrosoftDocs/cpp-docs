@@ -4,9 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["CEnumerator", "CEnumerator::Find", "ATL::CEnumerator::Find", "ATL.CEnumerator.Find", "CEnumerator.Find",
-    "GetMoniker", "CEnumerator.GetMoniker", "CEnumerator::GetMoniker", "ATL.CEnumerator.GetMoniker", "ATL::CEnumerator::GetMoniker",
-    "ATL.CEnumerator.Open", "CEnumerator::Open", "ATL::CEnumerator::Open", "CEnumerator.Open"]
+f1_keywords: ["CEnumerator", "CEnumerator::Find", "ATL::CEnumerator::Find", "ATL.CEnumerator.Find", "CEnumerator.Find", "GetMoniker", "CEnumerator.GetMoniker", "CEnumerator::GetMoniker", "ATL.CEnumerator.GetMoniker", "ATL::CEnumerator::GetMoniker", "ATL.CEnumerator.Open", "CEnumerator::Open", "ATL::CEnumerator::Open", "CEnumerator.Open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CEnumerator class", "Find method", "GetMoniker method", "Open method"]
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
@@ -46,7 +44,7 @@ Looks for a specified name among available providers.
 ### Syntax  
   
 ```cpp
-      bool Find(TCHAR* szSearchName) throw();  
+bool Find(TCHAR* szSearchName) throw();  
 ```  
   
 #### Parameters  
@@ -66,7 +64,6 @@ Parses the display name to extract the component of the string that can be conve
   
 ```cpp
 HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();  
-
 
 HRESULT GetMoniker(LPMONIKER* ppMoniker,   
    LPCTSTR lpszDisplayName) const throw();  
@@ -90,9 +87,7 @@ Binds the moniker for the enumerator, if one is specified, then retrieves the ro
 ```cpp
 HRESULT Open(LPMONIKER pMoniker) throw();  
 
-
 HRESULT Open(const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR) throw();  
-
 
 HRESULT Open(const CEnumerator& enumerator) throw();  
 ```  

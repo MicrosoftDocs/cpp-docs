@@ -26,13 +26,13 @@ class CNoAccessor
   
  `CNoAccessor` implements the following stub methods, each of which correspond to other accessor class methods:  
   
--   **BindColumns** - Binds columns to accessors.  
+-   `BindColumns` - Binds columns to accessors.  
   
 -   `BindParameters` - Binds the created parameters to columns.  
   
--   **Bind** - Creates bindings.  
+-   `Bind` - Creates bindings.  
   
--   **Close** - Closes the accessor.  
+-   `Close` - Closes the accessor.  
   
 -   `ReleaseAccessors` - Releases the accessors created by the class.  
   
@@ -48,7 +48,7 @@ class CNoAccessor
   
 -   `GetBuffer` - Retrieves the pointer to the bookmark buffer.  
   
--   **NoBindOnNullRowset** - Prevents data binding on empty rowsets.  
+-   `NoBindOnNullRowset` - Prevents data binding on empty rowsets.  
   
 ## Requirements  
  **Header:** atldbcli.h  

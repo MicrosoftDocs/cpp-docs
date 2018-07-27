@@ -4,11 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["vc.templates.ole", "BEGIN_PROPERTY_SET", "BEGIN_PROPERTY_SET_EX", "BEGIN_PROPSET_MAP", "CHAIN_PROPERTY_SET", "END_PROPERTY_SET", "END_PROPSET_MAP", "PROPERTY_INFO_ENTRY",
-    "PROPERTY_INFO_ENTRY_EX", "PROPERTY_INFO_ENTRY_VALUE", "BEGIN_PROVIDER_COLUMN_MAP", "END_PROVIDER_COLUMN_MAP", "PROVIDER_COLUMN_ENTRY", "PROVIDER_COLUMN_ENTRY_FIXED", "PROVIDER_COLUMN_ENTRY_GN", "PROVIDER_COLUMN_ENTRY_LENGTH", "PROVIDER_COLUMN_ENTRY_STR", "PROVIDER_COLUMN_ENTRY_TYPE_LENGTH", "PROVIDER_COLUMN_ENTRY_WSTR", "BEGIN_SCHEMA_MAP", "END_SCHEMA_MAP", "SCHEMA_ENTRY"]
+f1_keywords: ["vc.templates.ole", "BEGIN_PROPERTY_SET", "BEGIN_PROPERTY_SET_EX", "BEGIN_PROPSET_MAP", "CHAIN_PROPERTY_SET", "END_PROPERTY_SET", "END_PROPSET_MAP", "PROPERTY_INFO_ENTRY", "PROPERTY_INFO_ENTRY_EX", "PROPERTY_INFO_ENTRY_VALUE", "BEGIN_PROVIDER_COLUMN_MAP", "END_PROVIDER_COLUMN_MAP", "PROVIDER_COLUMN_ENTRY", "PROVIDER_COLUMN_ENTRY_FIXED", "PROVIDER_COLUMN_ENTRY_GN", "PROVIDER_COLUMN_ENTRY_LENGTH", "PROVIDER_COLUMN_ENTRY_STR", "PROVIDER_COLUMN_ENTRY_TYPE_LENGTH", "PROVIDER_COLUMN_ENTRY_WSTR", "BEGIN_SCHEMA_MAP", "END_SCHEMA_MAP", "SCHEMA_ENTRY"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["OLE DB provider templates, macros", "macros, OLE DB Provider Templates", "Provider Template macros (OLE DB)", "OLE DB Provider Template macros", "BEGIN_PROPERTY_SET macro",
-    "BEGIN_PROPERTY_SET_EX macro", "BEGIN_PROPSET_MAP macro", "CHAIN_PROPERTY_SET macro", "END_PROPERTY_SET macro", "END_PROPSET_MAP macro", "PROPERTY_INFO_ENTRY macro", "PROPERTY_INFO_ENTRY_EX macro", "PROPERTY_INFO_ENTRY_VALUE macro", "BEGIN_PROVIDER_COLUMN_MAP macro", "END_PROVIDER_COLUMN_MAP macro", "PROVIDER_COLUMN_ENTRY macro", "PROVIDER_COLUMN_ENTRY_FIXED macro", "PROVIDER_COLUMN_ENTRY_GN macro", "PROVIDER_COLUMN_ENTRY_LENGTH macro", "PROVIDER_COLUMN_ENTRY_STR macro", "PROVIDER_COLUMN_ENTRY_TYPE_LENGTH macro", "PROVIDER_COLUMN_ENTRY_WSTR macro", "BEGIN_SCHEMA_MAP macro", "END_SCHEMA_MAP macro", "SCHEMA_ENTRY macro"]
+helpviewer_keywords: ["OLE DB provider templates, macros", "macros, OLE DB Provider Templates", "Provider Template macros (OLE DB)", "OLE DB Provider Template macros", "BEGIN_PROPERTY_SET macro", "BEGIN_PROPERTY_SET_EX macro", "BEGIN_PROPSET_MAP macro", "CHAIN_PROPERTY_SET macro", "END_PROPERTY_SET macro", "END_PROPSET_MAP macro", "PROPERTY_INFO_ENTRY macro", "PROPERTY_INFO_ENTRY_EX macro", "PROPERTY_INFO_ENTRY_VALUE macro", "BEGIN_PROVIDER_COLUMN_MAP macro", "END_PROVIDER_COLUMN_MAP macro", "PROVIDER_COLUMN_ENTRY macro", "PROVIDER_COLUMN_ENTRY_FIXED macro", "PROVIDER_COLUMN_ENTRY_GN macro", "PROVIDER_COLUMN_ENTRY_LENGTH macro", "PROVIDER_COLUMN_ENTRY_STR macro", "PROVIDER_COLUMN_ENTRY_TYPE_LENGTH macro", "PROVIDER_COLUMN_ENTRY_WSTR macro", "BEGIN_SCHEMA_MAP macro", "END_SCHEMA_MAP macro", "SCHEMA_ENTRY macro"]
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
 author: "mikeblome"
 ms.author: "mblome"
@@ -63,7 +61,6 @@ Marks the beginning of a property set in a property set map.
   
 ```cpp
 BEGIN_PROPERTY_SET(guid)  
-  
 ```  
   
 #### Parameters  
@@ -79,8 +76,7 @@ Marks the beginning of a property set in a property set map.
 #### Syntax  
   
 ```cpp
-BEGIN_PROPERTY_SET_EX(guid  
-, flags )  
+BEGIN_PROPERTY_SET_EX(guid, flags)  
 ```  
   
 #### Parameters  
@@ -100,7 +96,6 @@ Marks the beginning of the property set map entries.
   
 ```cpp
 BEGIN_PROPSET_MAP(Class)  
-  
 ```  
   
 #### Parameters  
@@ -125,7 +120,6 @@ This macro chains property groups together.
   
 ```cpp
 CHAIN_PROPERTY_SET(ChainClass)  
-  
 ```  
   
 #### Parameters  
@@ -145,7 +139,6 @@ Marks the end of a property set.
   
 ```cpp
 END_PROPERTY_SET(guid)  
-  
 ```  
   
 #### Parameters  
@@ -162,7 +155,6 @@ Marks the end of property set map entries.
   
 ```cpp
 END_PROPSET_MAP()  
-  
 ```  
   
 #### Example  
@@ -175,7 +167,6 @@ Represents a specific property in a property set.
   
 ```cpp
 PROPERTY_INFO_ENTRY(dwPropID)  
-  
 ```  
   
 #### Parameters  
@@ -194,8 +185,7 @@ Represents a specific property in a property set.
 #### Syntax  
   
 ```cpp
-PROPERTY_INFO_ENTRY_EX(dwPropID  
-, vt, dwFlags, value, options )  
+PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)  
 ```  
   
 #### Parameters  
@@ -226,8 +216,7 @@ Represents a specific property in a property set.
 #### Syntax  
   
 ```cpp
-PROPERTY_INFO_ENTRY_VALUE(dwPropID  
-, value )  
+PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)  
 ```  
   
 #### Parameters  
@@ -250,7 +239,6 @@ Marks the beginning of the provider column map entries.
   
 ```cpp
 BEGIN_PROVIDER_COLUMN_MAP(theClass)  
-  
 ```  
   
 #### Parameters  
@@ -269,7 +257,6 @@ Marks the end of the provider column map entries.
   
 ```cpp
 END_PROVIDER_COLUMN_MAP()  
-  
 ```  
   
 #### Example  
@@ -281,8 +268,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY (name  
-, ordinal, member )  
+PROVIDER_COLUMN_ENTRY (name, ordinal, member)  
 ```  
   
 #### Parameters  
@@ -301,8 +287,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_FIXED(name  
-, ordinal, dbtype, member )  
+PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)  
 ```  
   
 #### Parameters  
@@ -330,8 +315,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_GN (name  
-, ordinal, flags, colSize, dbtype, precision, scale, guid )  
+PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scale, guid)  
 ```  
   
 #### Parameters  
@@ -368,8 +352,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_LENGTH(name  
-, ordinal, size, member )  
+PROVIDER_COLUMN_ENTRY_LENGTH(name, ordinal, size, member)  
 ```  
   
 #### Parameters  
@@ -397,8 +380,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_STR(name  
-, ordinal, member )  
+PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)  
 ```  
   
 #### Parameters  
@@ -423,13 +405,11 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name  
-, ordinal, dbtype, size, member )  
+PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)  
 ```  
   
 #### Parameters  
  *name*  
-  
  [in] The column name.  
   
  *ordinal*  
@@ -453,8 +433,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_WSTR(name  
-, ordinal, member )  
+PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)  
 ```  
   
 #### Parameters  
@@ -476,7 +455,7 @@ Denotes the beginning of a schema map.
 #### Syntax  
   
 ```cpp
-      BEGIN_SCHEMA_MAP(SchemaClass);  
+BEGIN_SCHEMA_MAP(SchemaClass);  
 ```  
   
 #### Parameters  
@@ -493,7 +472,6 @@ Denotes the end of the schema map.
   
 ```cpp
 END_SCHEMA_MAP()  
-  
 ```  
   
 #### See Also  
@@ -505,7 +483,7 @@ Associates a GUID with a class.
 #### Syntax  
   
 ```cpp
-      SCHEMA_ENTRY(guid,  
+SCHEMA_ENTRY(guid,  
    rowsetClass);   
 ```  
   

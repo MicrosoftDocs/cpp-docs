@@ -4,31 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL.CDynamicAccessor", "ATL::CDynamicAccessor", "CDynamicAccessor",
-    "ATL::CDynamicAccessor::AddBindEntry", "AddBindEntry", "CDynamicAccessor.AddBindEntry", "CDynamicAccessor::AddBindEntry", "ATL.CDynamicAccessor.AddBindEntry",
-    "CDynamicAccessor::CDynamicAccessor", "ATL::CDynamicAccessor::CDynamicAccessor", "ATL.CDynamicAccessor.CDynamicAccessor", "CDynamicAccessor.CDynamicAccessor",
-    "ATL::CDynamicAccessor::Close", "ATL.CDynamicAccessor.Close", "CDynamicAccessor.Close", "CDynamicAccessor::Close",
-    "ATL.CDynamicAccessor.GetBlobHandling", "CDynamicAccessor::GetBlobHandling", "ATL::CDynamicAccessor::GetBlobHandling", "GetBlobHandling", "CDynamicAccessor.GetBlobHandling",
-    "ATL::CDynamicAccessor::GetBlobSizeLimit", "CDynamicAccessor.GetBlobSizeLimit", "CDynamicAccessor::GetBlobSizeLimit", "GetBlobSizeLimit", "ATL.CDynamicAccessor.GetBlobSizeLimit",
-    "CDynamicAccessor.GetBookmark", "GetBookmark", "CDynamicAccessor::GetBookmark", "ATL.CDynamicAccessor.GetBookmark", "ATL::CDynamicAccessor::GetBookmark",
-    "ATL.CDynamicAccessor.GetColumnCount", "ATL::CDynamicAccessor::GetColumnCount", "CDynamicAccessor::GetColumnCount", "CDynamicAccessor.GetColumnCount", "GetColumnCount",
-    "CDynamicAccessor.GetColumnFlags", "ATL::CDynamicAccessor::GetColumnFlags", "ATL.CDynamicAccessor.GetColumnFlags", "CDynamicAccessor::GetColumnFlags", "GetColumnFlags",
-    "GetColumnInfo", "ATL.CDynamicAccessor.GetColumnInfo", "ATL::CDynamicAccessor::GetColumnInfo", "CDynamicAccessor.GetColumnInfo", "CDynamicAccessor::GetColumnInfo",
-    "ATL::CDynamicAccessor::GetColumnName", "GetColumnName", "ATL.CDynamicAccessor.GetColumnName", "CDynamicAccessor::GetColumnName", "CDynamicAccessor.GetColumnName",
-    "ATL.CDynamicAccessor.GetColumnType", "CDynamicAccessor::GetColumnType", "GetColumnType", "CDynamicAccessor.GetColumnType", "ATL::CDynamicAccessor::GetColumnType",
-    "CDynamicAccessor.GetLength", "ATL.CDynamicAccessor.GetLength", "CDynamicAccessor::GetLength", "ATL::CDynamicAccessor::GetLength",
-    "CDynamicAccessor.GetOrdinal", "ATL::CDynamicAccessor::GetOrdinal", "CDynamicAccessor::GetOrdinal", "ATL.CDynamicAccessor.GetOrdinal", "GetOrdinal",
-    "ATL::CDynamicAccessor::GetStatus", "CDynamicAccessor.GetStatus", "ATL.CDynamicAccessor.GetStatus", "CDynamicAccessor::GetStatus",
-    "GetValue", "CDynamicAccessor::GetValue<ctype>", "ATL.CDynamicAccessor.GetValue<ctype>", "CDynamicAccessor.GetValue", "CDynamicAccessor::GetValue", "ATL.CDynamicAccessor.GetValue", "ATL::CDynamicAccessor::GetValue", "ATL::CDynamicAccessor::GetValue<ctype>",
-    "CDynamicAccessor::SetBlobHandling", "CDynamicAccessor.SetBlobHandling", "ATL::CDynamicAccessor::SetBlobHandling", "SetBlobHandling", "ATL.CDynamicAccessor.SetBlobHandling",
-    "CDynamicAccessor::SetBlobSizeLimit", "SetBlobSizeLimit", "CDynamicAccessor.SetBlobSizeLimit", "ATL.CDynamicAccessor.SetBlobSizeLimit", "ATL::CDynamicAccessor::SetBlobSizeLimit",
-    "ATL::CDynamicAccessor::SetLength", "CDynamicAccessor.SetLength", "CDynamicAccessor::SetLength", "ATL.CDynamicAccessor.SetLength",
-    "CDynamicAccessor::SetStatus", "ATL::CDynamicAccessor::SetStatus", "CDynamicAccessor.SetStatus", "ATL.CDynamicAccessor.SetStatus",
-    "ATL.CDynamicAccessor.SetValue", "ATL::CDynamicAccessor::SetValue", "ATL::CDynamicAccessor::SetValue<ctype>", "CDynamicAccessor.SetValue", "ATL.CDynamicAccessor.SetValue<ctype>", "CDynamicAccessor::SetValue", "CDynamicAccessor::SetValue<ctype>"]
+f1_keywords: ["ATL.CDynamicAccessor", "ATL::CDynamicAccessor", "CDynamicAccessor", "ATL::CDynamicAccessor::AddBindEntry", "AddBindEntry", "CDynamicAccessor.AddBindEntry", "CDynamicAccessor::AddBindEntry", "ATL.CDynamicAccessor.AddBindEntry", "CDynamicAccessor::CDynamicAccessor", "ATL::CDynamicAccessor::CDynamicAccessor", "ATL.CDynamicAccessor.CDynamicAccessor", "CDynamicAccessor.CDynamicAccessor", "ATL::CDynamicAccessor::Close", "ATL.CDynamicAccessor.Close", "CDynamicAccessor.Close", "CDynamicAccessor::Close", "ATL.CDynamicAccessor.GetBlobHandling", "CDynamicAccessor::GetBlobHandling", "ATL::CDynamicAccessor::GetBlobHandling", "GetBlobHandling", "CDynamicAccessor.GetBlobHandling", "ATL::CDynamicAccessor::GetBlobSizeLimit", "CDynamicAccessor.GetBlobSizeLimit", "CDynamicAccessor::GetBlobSizeLimit", "GetBlobSizeLimit", "ATL.CDynamicAccessor.GetBlobSizeLimit", "CDynamicAccessor.GetBookmark", "GetBookmark", "CDynamicAccessor::GetBookmark", "ATL.CDynamicAccessor.GetBookmark", "ATL::CDynamicAccessor::GetBookmark", "ATL.CDynamicAccessor.GetColumnCount", "ATL::CDynamicAccessor::GetColumnCount", "CDynamicAccessor::GetColumnCount", "CDynamicAccessor.GetColumnCount", "GetColumnCount", "CDynamicAccessor.GetColumnFlags", "ATL::CDynamicAccessor::GetColumnFlags", "ATL.CDynamicAccessor.GetColumnFlags", "CDynamicAccessor::GetColumnFlags", "GetColumnFlags", "GetColumnInfo", "ATL.CDynamicAccessor.GetColumnInfo", "ATL::CDynamicAccessor::GetColumnInfo", "CDynamicAccessor.GetColumnInfo", "CDynamicAccessor::GetColumnInfo", "ATL::CDynamicAccessor::GetColumnName", "GetColumnName", "ATL.CDynamicAccessor.GetColumnName", "CDynamicAccessor::GetColumnName", "CDynamicAccessor.GetColumnName", "ATL.CDynamicAccessor.GetColumnType", "CDynamicAccessor::GetColumnType", "GetColumnType", "CDynamicAccessor.GetColumnType", "ATL::CDynamicAccessor::GetColumnType", "CDynamicAccessor.GetLength", "ATL.CDynamicAccessor.GetLength", "CDynamicAccessor::GetLength", "ATL::CDynamicAccessor::GetLength", "CDynamicAccessor.GetOrdinal", "ATL::CDynamicAccessor::GetOrdinal", "CDynamicAccessor::GetOrdinal", "ATL.CDynamicAccessor.GetOrdinal", "GetOrdinal", "ATL::CDynamicAccessor::GetStatus", "CDynamicAccessor.GetStatus", "ATL.CDynamicAccessor.GetStatus", "CDynamicAccessor::GetStatus", "GetValue", "CDynamicAccessor::GetValue<ctype>", "ATL.CDynamicAccessor.GetValue<ctype>", "CDynamicAccessor.GetValue", "CDynamicAccessor::GetValue", "ATL.CDynamicAccessor.GetValue", "ATL::CDynamicAccessor::GetValue", "ATL::CDynamicAccessor::GetValue<ctype>", "CDynamicAccessor::SetBlobHandling", "CDynamicAccessor.SetBlobHandling", "ATL::CDynamicAccessor::SetBlobHandling", "SetBlobHandling", "ATL.CDynamicAccessor.SetBlobHandling", "CDynamicAccessor::SetBlobSizeLimit", "SetBlobSizeLimit", "CDynamicAccessor.SetBlobSizeLimit", "ATL.CDynamicAccessor.SetBlobSizeLimit", "ATL::CDynamicAccessor::SetBlobSizeLimit", "ATL::CDynamicAccessor::SetLength", "CDynamicAccessor.SetLength", "CDynamicAccessor::SetLength", "ATL.CDynamicAccessor.SetLength", "CDynamicAccessor::SetStatus", "ATL::CDynamicAccessor::SetStatus", "CDynamicAccessor.SetStatus", "ATL.CDynamicAccessor.SetStatus", "ATL.CDynamicAccessor.SetValue", "ATL::CDynamicAccessor::SetValue", "ATL::CDynamicAccessor::SetValue<ctype>", "CDynamicAccessor.SetValue", "ATL.CDynamicAccessor.SetValue<ctype>", "CDynamicAccessor::SetValue", "CDynamicAccessor::SetValue<ctype>"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CDynamicAccessor class", "AddBindEntry method", "CDynamicAccessor class, constructor", "Close method", "GetBlobHandling method", "GetBlobSizeLimit method",
-    "GetBookmark method", "GetColumnCount method", "GetColumnFlags method", "GetColumnInfo method", "GetColumnName method", "GetColumnType method", "GetLength method", "GetOrdinal method",
-    "GetStatus method", "GetValue method", "SetBlobHandling method", "SetBlobSizeLimit method", "SetLength method", "SetStatus method", "SetValue method"]
+helpviewer_keywords: ["CDynamicAccessor class", "AddBindEntry method", "CDynamicAccessor class, constructor", "Close method", "GetBlobHandling method", "GetBlobSizeLimit method", "GetBookmark method", "GetColumnCount method", "GetColumnFlags method", "GetColumnInfo method", "GetColumnName method", "GetColumnType method", "GetLength method", "GetOrdinal method", "GetStatus method", "GetValue method", "SetBlobHandling method", "SetBlobSizeLimit method", "SetLength method", "SetStatus method", "SetValue method"]
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
 author: "mikeblome"
 ms.author: "mblome"
@@ -105,7 +83,7 @@ Instantiates and initializes the `CDynamicAccessor` object.
 ### Syntax  
   
 ```cpp
-      CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
+CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
    DBLENGTH nBlobSize = 8000);  
 ```  
   
@@ -128,7 +106,6 @@ Unbinds all the columns, releases the allocated memory, and releases the [IAcces
   
 ```cpp
 void Close() throw();  
-  
 ```  
 
 ## <a name="getblobhandling"></a> CDynamicAccessor::GetBlobHandling
@@ -138,7 +115,6 @@ Retrieves the BLOB handling value for the current row.
   
 ```cpp
 const DBBLOBHANDLINGENUM GetBlobHandling() const;  
-  
 ```  
   
 ### Remarks  
@@ -151,7 +127,6 @@ Retrieves the maximum BLOB size in bytes.
   
 ```cpp
 const DBLENGTH GetBlobSizeLimit() const;  
-  
 ```  
   
 ### Remarks  
@@ -183,7 +158,6 @@ Retrieves the number of columns.
   
 ```cpp
 DBORDINAL GetColumnCount() const throw();  
-  
 ```  
   
 ### Return Value  
@@ -196,7 +170,7 @@ Retrieves the column characteristics.
   
 ```cpp
 bool GetColumnFlags(DBORDINAL nColumn,   
-  DBCOLUMNFLAGS* pFlags) const throw();  
+   DBCOLUMNFLAGS* pFlags) const throw();  
 ```  
   
 #### Parameters  
@@ -249,7 +223,7 @@ Retrieves the name of the specified column.
 ### Syntax  
   
 ```cpp
-      LPOLESTR GetColumnName(DBORDINAL nColumn) const throw();  
+LPOLESTR GetColumnName(DBORDINAL nColumn) const throw();  
 ```  
   
 #### Parameters  
@@ -266,7 +240,7 @@ Retrieves the data type of a specified column.
   
 ```cpp
 bool GetColumnType(DBORDINAL nColumn,   
-  DBTYPE* pType) const throw();  
+   DBTYPE* pType) const throw();  
 ```  
   
 #### Parameters  
@@ -286,7 +260,7 @@ Retrieves the length of the specified column.
   
 ```cpp
 bool GetLength(DBORDINAL nColumn,   
-  DBLENGTH* pLength) const throw();  
+   DBLENGTH* pLength) const throw();  
 
 bool GetLength(const CHAR* pColumnName,   
    DBLENGTH* pLength) const throw();  
@@ -317,7 +291,7 @@ Retrieves the column number given a column name.
 ### Syntax  
   
 ```cpp
-      bool GetOrdinal(const CHAR* pColumnName,  
+bool GetOrdinal(const CHAR* pColumnName,  
    DBORDINAL* pOrdinal) const throw();  
 
 bool GetOrdinal(const WCHAR* pColumnName,  
@@ -341,7 +315,7 @@ Retrieves the status of the specified column.
   
 ```cpp
 bool GetStatus(DBORDINAL nColumn,   
-  DBSTATUS* pStatus) const throw();  
+   DBSTATUS* pStatus) const throw();  
 
 bool GetStatus(const CHAR* pColumnName,  
    DBSTATUS* pStatus) const throw();  
@@ -414,7 +388,7 @@ Sets the BLOB handling value for the current row.
 ### Syntax  
   
 ```cpp
-      bool SetBlobHandling(DBBLOBHANDLINGENUM eBlobHandling);  
+bool SetBlobHandling(DBBLOBHANDLINGENUM eBlobHandling);  
 ```  
   
 #### Parameters  
@@ -438,7 +412,7 @@ Sets the maximum BLOB size in bytes.
 ### Syntax  
   
 ```cpp
-      void SetBlobSizeLimit(DBLENGTH nBlobSize);  
+void SetBlobSizeLimit(DBLENGTH nBlobSize);  
 ```  
   
 #### Parameters  

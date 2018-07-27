@@ -4,9 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["CRowsetImpl", "ATL.CRowsetImpl", "ATL::CRowsetImpl", "CRowsetImpl.NameFromDBID", "CRowsetImpl::NameFromDBID", "CRowsetImpl.SetCommandText", "CRowsetImpl::SetCommandText", "GetColumnInfo",                  "CRowsetImpl.GetColumnInfo", "CRowsetImpl::GetColumnInfo", "CRowsetImpl::GetCommandFromID", "GetCommandFromID", "CRowsetImpl.GetCommandFromID", "CRowsetImpl.ValidateCommandID", "CRowsetImpl::ValidateCommandID",      "CRowsetImpl.m_rgRowData", "CRowsetImpl::m_rgRowData", "CRowsetImpl::m_strCommandText", "CRowsetImpl.m_strCommandText", "CRowsetImpl::m_strIndexText", "CRowsetImpl.m_strIndexText"]
+f1_keywords: ["CRowsetImpl", "ATL.CRowsetImpl", "ATL::CRowsetImpl", "CRowsetImpl.NameFromDBID", "CRowsetImpl::NameFromDBID", "CRowsetImpl.SetCommandText", "CRowsetImpl::SetCommandText", "GetColumnInfo", "CRowsetImpl.GetColumnInfo", "CRowsetImpl::GetColumnInfo", "CRowsetImpl::GetCommandFromID", "GetCommandFromID", "CRowsetImpl.GetCommandFromID", "CRowsetImpl.ValidateCommandID", "CRowsetImpl::ValidateCommandID", "CRowsetImpl.m_rgRowData", "CRowsetImpl::m_rgRowData", "CRowsetImpl::m_strCommandText", "CRowsetImpl.m_strCommandText", "CRowsetImpl::m_strIndexText", "CRowsetImpl.m_strIndexText"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CRowsetImpl class", "NameFromDBID method", "SetCommandText method", "GetColumnInfo method", "GetCommandFromID method", "ValidateCommandID method", "m_rgRowData", "m_strCommandText",                "m_strIndexText"]
+helpviewer_keywords: ["CRowsetImpl class", "NameFromDBID method", "SetCommandText method", "GetColumnInfo method", "GetCommandFromID method", "ValidateCommandID method", "m_rgRowData", "m_strCommandText", "m_strIndexText"]
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
 author: "mikeblome"
 ms.author: "mblome"
@@ -142,7 +142,7 @@ Retrieves column information for a particular client request.
 ### Syntax  
   
 ```cpp
-      static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(T* pv,  
+static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(T* pv,  
    ULONG* pcCols);  
 ```  
   
@@ -218,7 +218,6 @@ By default, a `CAtlArray` that templatizes on the user record template argument 
   
 ```cpp
 ArrayType CRowsetBaseImpl::m_rgRowData;  
-  
 ```  
   
 ### Remarks  
@@ -231,7 +230,6 @@ Contains the rowset's initial command.
   
 ```cpp
 CComBSTR CRowsetBaseImpl::m_strCommandText;  
-  
 ```  
 
 ## <a name="strindextext"></a> CRowsetImpl::m_strIndexText
@@ -241,5 +239,4 @@ Contains the rowset's initial index.
   
 ```cpp
 CComBSTR CRowsetBaseImpl::m_strIndexText;  
-  
-```  
+``` 
