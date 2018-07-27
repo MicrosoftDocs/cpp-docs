@@ -29,7 +29,7 @@ This topic applies to the MFC ODBC classes.
  Another frequent — and equally important — use of [Requery](../../mfc/reference/crecordset-class.md#requery) is to select a new set of records based on changing parameter values.  
   
 > [!TIP]
->  Query speed is probably significantly faster if you call **Requery** with changing parameter values than if you call **Open** again.  
+>  Query speed is probably significantly faster if you call `Requery` with changing parameter values than if you call `Open` again.  
   
 ##  <a name="_core_requerying_dynasets_vs.._snapshots"></a> Requerying Dynasets vs. Snapshots  
  Because dynasets are meant to present a set of records with dynamic up-to-date data, you want to requery dynasets often if you want to reflect other users' additions. Snapshots, on the other hand, are useful because you can safely rely on their static contents while you prepare reports, calculate totals, and so on. Still, you might sometimes want to requery a snapshot as well. In a multiuser environment, snapshot data might lose synchronization with the data source as other users change the database.  
@@ -43,9 +43,9 @@ This topic applies to the MFC ODBC classes.
  For an example, see [Record Views: Filling a List Box from a Second Recordset](../../data/filling-a-list-box-from-a-second-recordset-mfc-data-access.md).  
   
 > [!TIP]
->  To optimize **Requery** performance, avoid changing the recordset's [filter](../../data/odbc/recordset-filtering-records-odbc.md) or [sort](../../data/odbc/recordset-sorting-records-odbc.md). Change only the parameter value before calling **Requery**.  
+>  To optimize `Requery` performance, avoid changing the recordset's [filter](../../data/odbc/recordset-filtering-records-odbc.md) or [sort](../../data/odbc/recordset-sorting-records-odbc.md). Change only the parameter value before calling `Requery`.  
   
- If the **Requery** call fails, you can retry the call; otherwise, your application should terminate gracefully. A call to **Requery** or **Open** might fail for any of a number of reasons. Perhaps a network error occurs; or, during the call, after the existing data is released but before the new data is obtained, another user might get exclusive access; or the table on which your recordset depends could be deleted.  
+ If the `Requery` call fails, you can retry the call; otherwise, your application should terminate gracefully. A call to `Requery` or `Open` might fail for any of a number of reasons. Perhaps a network error occurs; or, during the call, after the existing data is released but before the new data is obtained, another user might get exclusive access; or the table on which your recordset depends could be deleted.  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   
