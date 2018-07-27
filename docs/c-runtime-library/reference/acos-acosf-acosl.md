@@ -39,29 +39,29 @@ Value between -1 and 1, for which to calculate the arccosine (the inverse cosine
 
 ## Return Value
 
-The **acos** function returns the arccosine of *x* in the range 0 to π radians.
+The `acos` function returns the arccosine of *x* in the range 0 to π radians.
 
-By default, if *x* is less than -1 or greater than 1, **acos** returns an indefinite.
+By default, if *x* is less than -1 or greater than 1, `acos` returns an indefinite.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± ∞|**INVALID**|**_DOMAIN**|
-|± QNAN,IND|none|**_DOMAIN**|
-|&#124;x&#124;>1|**INVALID**|**_DOMAIN**|
+|± ∞|INVALID|_DOMAIN|
+|± QNAN,IND|none|_DOMAIN|
+|&#124;x&#124;>1|INVALID|_DOMAIN|
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of **acos** that take and return **float** and **long** **double** types. In a C program, **acos** always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of `acos` that take and return **float** and **long** **double** types. In a C program, `acos` always takes and returns a **double**.
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|**acos**, **acosf**, **acosl**|\<math.h>|\<errno.h>|
+|`acos`, `acosf`, `acosl`|\<math.h>|\<errno.h>|
 
 ## Example
 
-This program prompts for a value in the range -1 to 1. Input values outside this range produce **_DOMAIN** error messages. If a valid value is entered, the program prints the arcsine and the arccosine of that value.
+This program prompts for a value in the range -1 to 1. Input values outside this range produce _DOMAIN error messages. If a valid value is entered, the program prints the arcsine and the arccosine of that value.
 
 ```C
 // crt_asincos.c

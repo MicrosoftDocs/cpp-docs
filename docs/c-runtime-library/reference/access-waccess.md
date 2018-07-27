@@ -42,19 +42,19 @@ Read/write attribute.
 
 ## Return Value
 
-Each function returns 0 if the file has the given mode. The function returns -1 if the named file does not exist or does not have the given mode; in this case, **errno** is set as shown in the following table.
+Each function returns 0 if the file has the given mode. The function returns -1 if the named file does not exist or does not have the given mode; in this case, `errno` is set as shown in the following table.
 
 |||
 |-|-|
-**EACCES**|Access denied: the file's permission setting does not allow specified access.
-**ENOENT**|File name or path not found.
-**EINVAL**|Invalid parameter.
+EACCES|Access denied: the file's permission setting does not allow specified access.
+ENOENT|File name or path not found.
+EINVAL|Invalid parameter.
 
 For more information about these and other return codes, see [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-When used with files, the **_access** function determines whether the specified file or directory exists and has the attributes specified by the value of *mode*. When used with directories, **_access** determines only whether the specified directory exists; in Windows 2000 and later operating systems, all directories have read and write access.
+When used with files, the `_access` function determines whether the specified file or directory exists and has the attributes specified by the value of *mode*. When used with directories, `_access` determines only whether the specified directory exists; in Windows 2000 and later operating systems, all directories have read and write access.
 
 |*mode* value|Checks file for|
 |------------------|---------------------|
@@ -65,26 +65,26 @@ When used with files, the **_access** function determines whether the specified 
 
 This function only checks whether the file and directory are read-only or not, it does not check the filesystem security settings. For that you need an access token. For more information on filesystem security, see [Access Tokens](http://msdn.microsoft.com/library/windows/desktop/aa374909). An ATL class exists to provide this functionality; see [CAccessToken Class](../../atl/reference/caccesstoken-class.md).
 
-**_waccess** is a wide-character version of **_access**; the *path* argument to **_waccess** is a wide-character string. **_waccess** and **_access** behave identically otherwise.
+`_waccess` is a wide-character version of `_access`; the *path* argument to `_waccess` is a wide-character string. `_waccess` and `_access` behave identically otherwise.
 
-This function validates its parameters. If *path* is **NULL** or *mode* does not specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets **errno** to **EINVAL** and returns -1.
+This function validates its parameters. If *path* is NULL or *mode* does not specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, the function sets `errno` to EINVAL and returns -1.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_taccess**|**_access**|**_access**|**_waccess**|
+|`_taccess`|`_access`|`_access`|`_waccess`|
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|**_access**|\<io.h>|\<errno.h>|
-|**_waccess**|\<wchar.h> or \<io.h>|\<errno.h>|
+|`_access`|\<io.h>|\<errno.h>|
+|`_waccess`|\<wchar.h> or \<io.h>|\<errno.h>|
 
 ## Example
 
-The following example uses **_access** to check the file named crt_ACCESS.C to see whether it exists and whether writing is allowed.
+The following example uses `_access` to check the file named crt_ACCESS.C to see whether it exists and whether writing is allowed.
 
 ```C
 // crt_access.c
