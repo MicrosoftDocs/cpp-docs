@@ -110,7 +110,7 @@ SELECT \
 ### Column Map  
  The wizard then generates the column bindings or column map. To fix several issues with some providers, the following code might bind columns in a different order than that reported by the provider.  
   
-```cpp  
+```  
    BEGIN_COLUMN_MAP(CProductsAccessor)  
       COLUMN_ENTRY_LENGTH_STATUS(1, m_ProductID, m_dwProductIDLength, m_dwProductIDStatus)  
       COLUMN_ENTRY_LENGTH_STATUS(2, m_ProductName, m_dwProductNameLength, m_dwProductNameStatus)  

@@ -35,7 +35,7 @@ class ATL_NO_VTABLE CMyProviderSource :
 ## COM Map  
  Whenever the client calls `QueryInterface` for an interface on the data source, it goes through the following COM map:  
   
-```cpp  
+```  
 BEGIN_COM_MAP(CMyProviderSource)  
    COM_INTERFACE_ENTRY(IDBCreateSession)  
    COM_INTERFACE_ENTRY(IDBInitialize)  
@@ -50,7 +50,7 @@ END_COM_MAP()
 ## Property Map  
  The property map specifies all the properties designated by the provider:  
   
-```cpp  
+```  
 BEGIN_PROPSET_MAP(CMyProviderSource)  
    BEGIN_PROPERTY_SET(DBPROPSET_DATASOURCEINFO)  
       PROPERTY_INFO_ENTRY(ACTIVESESSIONS)  
