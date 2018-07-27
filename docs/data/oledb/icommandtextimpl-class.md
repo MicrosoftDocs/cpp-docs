@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ICommandText", "GetCommandText", "ICommandTextImpl.GetCommandText", "ICommandTextImpl::GetCommandText", "ATL::ICommandTextImpl::m_strCommandText", "ICommandTextImpl<T>::m_strCommandText",                  "m_strCommandText", "ICommandTextImpl.m_strCommandText", "ICommandTextImpl::m_strCommandText", "ATL::ICommandTextImpl<T>::m_strCommandText", "ATL.ICommandTextImpl.m_strCommandText",                                   "ICommandTextImpl.SetCommandText", "ICommandTextImpl::SetCommandText", "SetCommandText"]
+f1_keywords: ["ICommandText", "GetCommandText", "ICommandTextImpl.GetCommandText", "ICommandTextImpl::GetCommandText", "ATL::ICommandTextImpl::m_strCommandText", "ICommandTextImpl<T>::m_strCommandText", "m_strCommandText", "ICommandTextImpl.m_strCommandText", "ICommandTextImpl::m_strCommandText", "ATL::ICommandTextImpl<T>::m_strCommandText", "ATL.ICommandTextImpl.m_strCommandText", "ICommandTextImpl.SetCommandText", "ICommandTextImpl::SetCommandText", "SetCommandText"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandText class", "GetCommandText method", "m_strCommandText", "SetCommandText method"]
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
@@ -25,7 +25,7 @@ class ATL_NO_VTABLE ICommandTextImpl
   
 ### Parameters  
  *T*  
- The command class derived from **ICommandTextImpl**. 
+ The command class derived from `ICommandTextImpl`. 
 
 ## Requirements  
  **Header:** altdb.h  
@@ -54,7 +54,7 @@ Returns the text command set by the last call to [SetCommandText](../../data/ole
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetCommandText)(GUID * pguidDialect,   
+STDMETHOD(GetCommandText)(GUID * pguidDialect,   
    LPOLESTR * ppwszCommand);  
 ```  
   
@@ -67,7 +67,7 @@ Sets the command text, replacing the existing command text.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(SetCommandText)(REFGUID rguidDialect,   
+STDMETHOD(SetCommandText)(REFGUID rguidDialect,   
    LPCOLESTR pwszCommand);  
 ```  
   
@@ -81,7 +81,6 @@ Stores the command text string.
   
 ```cpp
 CComBSTR m_strCommandText;  
-  
 ```  
   
 ## See Also  

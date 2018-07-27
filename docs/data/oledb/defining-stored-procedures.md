@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 # Defining Stored Procedures
 Before calling a stored procedure, you must first define it, using the [DEFINE_COMMAND](../../data/oledb/define-command.md) macro. When you define the command, denote parameters with a question mark (?) as the parameter marker:  
   
-```  
+```cpp  
 DEFINE_COMMAND(CMySProcAccessor, _T("{INSERT {name, phone} into shippers  (?,?)}")  
 ```  
   
@@ -22,7 +22,7 @@ DEFINE_COMMAND(CMySProcAccessor, _T("{INSERT {name, phone} into shippers  (?,?)}
   
  Next, in the parameter map, specify the parameters that you used in the command, listing the parameters in the order that they occur in the command:  
   
-```  
+```cpp  
 BEGIN_PARAM_MAP(CMySProcAccessor)  
    SET_PARAM_TYPE(DBPARAMIO_INPUT)  
    COLUMN_ENTRY(1, m_Name)   // name corresponds to first '?' param  
@@ -33,20 +33,20 @@ END_PARAM_MAP()
   
  The previous example defines a stored procedure as it goes. Typically, for efficient reuse of code, a database contains a set of predefined stored procedures with names such as "Sales by Year" or "dt_adduserobject." You can view their definitions using SQL Server Enterprise Manager. You call them as follows (the placement of the '?' parameters depends on the stored procedure's interface):  
   
-```  
+```cpp  
 DEFINE_COMMAND(CMySProcAccessor, _T("{CALL \"Sales by Year\" (?,?) }")  
 DEFINE_COMMAND(CMySProcAccessor, _T("{CALL dbo.dt_adduserobject (?,?) }")  
 ```  
   
  Next, declare the command class:  
   
-```  
+```cpp  
 class CMySProc : public CCommand<CAccessor<CMySProcAccessor>>  
 ```  
   
  Finally, call the stored procedure in `OpenRowset` as follows:  
   
-```  
+```cpp  
 CSession m_session;  
 
 HRESULT OpenRowset()  
@@ -57,7 +57,7 @@ HRESULT OpenRowset()
   
  Also note that you can define a stored procedure using the database attribute [db_command](../../windows/db-command.md) as follows:  
   
-```  
+```cpp  
 db_command("{ ? = CALL dbo.dt_adduserobject }")  
 ```  
   

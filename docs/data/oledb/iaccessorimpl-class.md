@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["IAccessorImpl", "ATL.IAccessorImpl.IAccessorImpl", "ATL::IAccessorImpl::IAccessorImpl", "IAccessorImpl::IAccessorImpl", "IAccessorImpl.IAccessorImpl", "IAccessorImpl",                                      "ATL::IAccessorImpl::AddRefAccessor", "AddRefAccessor", "IAccessorImpl::AddRefAccessor", "IAccessorImpl.AddRefAccessor", "ATL.IAccessorImpl.AddRefAccessor", "IAccessorImpl::CreateAccessor", "CreateAccessor",         "ATL::IAccessorImpl::CreateAccessor", "IAccessorImpl.CreateAccessor", "ATL.IAccessorImpl.CreateAccessor", "IAccessorImpl.GetBindings", "ATL::IAccessorImpl::GetBindings", "IAccessorImpl::GetBindings",                 "GetBindings", "ATL.IAccessorImpl.GetBindings", "ReleaseAccessor", "IAccessorImpl::ReleaseAccessor", "ATL.IAccessorImpl.ReleaseAccessor", "ATL::IAccessorImpl::ReleaseAccessor", "IAccessorImpl.ReleaseAccessor"]
+f1_keywords: ["IAccessorImpl", "ATL.IAccessorImpl.IAccessorImpl", "ATL::IAccessorImpl::IAccessorImpl", "IAccessorImpl::IAccessorImpl", "IAccessorImpl.IAccessorImpl", "IAccessorImpl", "ATL::IAccessorImpl::AddRefAccessor", "AddRefAccessor", "IAccessorImpl::AddRefAccessor", "IAccessorImpl.AddRefAccessor", "ATL.IAccessorImpl.AddRefAccessor", "IAccessorImpl::CreateAccessor", "CreateAccessor", "ATL::IAccessorImpl::CreateAccessor", "IAccessorImpl.CreateAccessor", "ATL.IAccessorImpl.CreateAccessor", "IAccessorImpl.GetBindings", "ATL::IAccessorImpl::GetBindings", "IAccessorImpl::GetBindings", "GetBindings", "ATL.IAccessorImpl.GetBindings", "ReleaseAccessor", "IAccessorImpl::ReleaseAccessor", "ATL.IAccessorImpl.ReleaseAccessor", "ATL::IAccessorImpl::ReleaseAccessor", "IAccessorImpl.ReleaseAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IAccessorImpl class", "IAccessorImpl class, constructor", "IAccessorImpl constructor", "AddRefAccessor method", "CreateAccessor method", "GetBindings method", "ReleaseAccessor method"]
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
@@ -19,8 +19,8 @@ Provides an implementation of the [IAccessor](https://msdn.microsoft.com/library
 
 ```cpp
 template <class T, 
-          class BindType = ATLBINDINGS,
-          class BindingVector = CAtlMap <HACCESSOR hAccessor, BindType* pBindingsStructure>>  
+   class BindType = ATLBINDINGS,
+   class BindingVector = CAtlMap <HACCESSOR hAccessor, BindType* pBindingsStructure>>  
 class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>  
 ```  
   
@@ -64,7 +64,6 @@ The constructor.
   
 ```cpp
 IAccessorImpl();  
-  
 ```  
 
 ## <a name="addrefaccessor"></a> IAccessorImpl::AddRefAccessor
@@ -73,7 +72,7 @@ Adds a reference count to an existing accessor.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,  
+STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,  
    DBREFCOUNT* pcRefCount);  
 ```  
   
@@ -86,7 +85,7 @@ Creates an accessor from a set of bindings.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,  
+STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,  
    DBCOUNTITEM cBindings,  
    const DBBINDING rgBindings[],  
    DBLENGTH cbRowSize,  
@@ -103,7 +102,7 @@ Returns the basic columns bindings from the consumer in an accessor.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetBindings)(HACCESSOR hAccessor,  
+STDMETHOD(GetBindings)(HACCESSOR hAccessor,  
    DBACCESSORFLAGS* pdwAccessorFlags,  
    DBCOUNTITEM* pcBindings,  
    DBBINDING** prgBindings);  
@@ -118,7 +117,7 @@ Releases an accessor.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,  
+STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,  
    DBREFCOUNT* pcRefCount);  
 ```  
   
