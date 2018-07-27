@@ -36,20 +36,20 @@ You can use the MFC database classes with or without the document/view architect
   
 -   If you are accessing a recordset in a local context, create a `CRecordset` object locally in member functions of the document or the view, as needed.  
   
-     Declare a recordset object as a local variable in a function. Pass **NULL** to the constructor, which causes the framework to create and open a temporary `CDatabase` object for you. As an alternative, pass a pointer to a `CDatabase` object. Use the recordset within the function and let it be destroyed automatically when the function exits.  
+     Declare a recordset object as a local variable in a function. Pass NULL to the constructor, which causes the framework to create and open a temporary `CDatabase` object for you. As an alternative, pass a pointer to a `CDatabase` object. Use the recordset within the function and let it be destroyed automatically when the function exits.  
   
-     When you pass **NULL** to a recordset constructor, the framework uses information returned by the recordset's `GetDefaultConnect` member function to create a `CDatabase` object and open it. The wizards implement `GetDefaultConnect` for you.  
+     When you pass NULL to a recordset constructor, the framework uses information returned by the recordset's `GetDefaultConnect` member function to create a `CDatabase` object and open it. The wizards implement `GetDefaultConnect` for you.  
   
 -   If you are accessing a recordset during the lifetime of your document, embed one or more `CRecordset` objects in your document.  
   
-     Construct the recordset objects either when you initialize the document or as needed. You might write a function that returns a pointer to the recordset if it already exists or constructs and opens the recordset if it does not exist yet. Close, delete, and recreate the recordset as needed, or call its **Requery** member function to refresh the records.  
+     Construct the recordset objects either when you initialize the document or as needed. You might write a function that returns a pointer to the recordset if it already exists or constructs and opens the recordset if it does not exist yet. Close, delete, and recreate the recordset as needed, or call its `Requery` member function to refresh the records.  
   
 -   If you are accessing a data source during the lifetime of your document, embed a `CDatabase` object or store a pointer to a `CDatabase` object in it.  
   
-     The `CDatabase` object manages a connection to your data source. The object is constructed automatically during document construction, and you call its **Open** member function when you initialize the document. When you construct recordset objects in document member functions, you pass a pointer to the document's `CDatabase` object. This associates each recordset with its data source. The database object is usually destroyed when the document closes. The recordset objects are typically destroyed when they exit the scope of a function.  
+     The `CDatabase` object manages a connection to your data source. The object is constructed automatically during document construction, and you call its `Open` member function when you initialize the document. When you construct recordset objects in document member functions, you pass a pointer to the document's `CDatabase` object. This associates each recordset with its data source. The database object is usually destroyed when the document closes. The recordset objects are typically destroyed when they exit the scope of a function.  
   
 ##  <a name="_core_other_factors"></a> Other Factors  
- Form-based applications often do not have any use for the framework's document serialization mechanism, so you might want to remove, disable, or replace the `New` and **Open** commands on the **File** menu. See the article [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md).  
+ Form-based applications often do not have any use for the framework's document serialization mechanism, so you might want to remove, disable, or replace the **New** and **Open** commands on the **File** menu. See the article [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md).  
   
  You might also want to make use of the many user-interface possibilities that the framework can support. For example, you could use multiple `CRecordView`  objects in a splitter window, open multiple recordsets in different multiple document interface (MDI) child windows, and so on.  
   
