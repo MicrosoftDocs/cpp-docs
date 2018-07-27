@@ -1,7 +1,7 @@
 ---
 title: "Adding a Control (ATL Tutorial, Part 2) | Microsoft Docs"
 ms.custom: "get-started-article"
-ms.date: "11/04/2016"
+ms.date: "06/18/2018"
 ms.technology: ["cpp-atl"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -17,7 +17,7 @@ In this step, you will add a control to your project, build it, and test it on a
   
 #### To add an object to an ATL project  
   
-1.  In Class View, right-click the Polygon project.  
+1.  In **Solution Explorer**, right-click the Polygon project.  
   
 2.  Point to **Add** on the shortcut menu, and click **New Item** in the submenu.  
   

@@ -55,22 +55,22 @@ static BOOL CreateToolTip(
 ```  
   
 ### Parameters  
- [out] `pToolTip`  
+ [out] *pToolTip*  
  A reference to a tooltip pointer. It is set to point to the newly created tooltip when the function returns.  
   
- [in] `pWndParent`  
+ [in] *pWndParent*  
  Parent of the tooltip.  
   
- [in] `nType`  
+ [in] *nType*  
  Type of the tooltip.  
   
 ### Return Value  
  Nonzero if a tooltip has been created successfully.  
   
 ### Remarks  
- You must call [CTooltipManager::DeleteToolTip](#deletetooltip) to delete the tooltip control that is passed back in `pToolTip`.  
+ You must call [CTooltipManager::DeleteToolTip](#deletetooltip) to delete the tooltip control that is passed back in *pToolTip*.  
   
- The [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) sets the visual display parameters of each tooltip it creates based on the tooltip type that `nType` specifies. To change the parameters for one or more tooltip types, call [CTooltipManager::SetTooltipParams](#settooltipparams).  
+ The [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) sets the visual display parameters of each tooltip it creates based on the tooltip type that *nType* specifies. To change the parameters for one or more tooltip types, call [CTooltipManager::SetTooltipParams](#settooltipparams).  
   
  Valid tooltip types are listed in the following table:  
   
@@ -96,11 +96,11 @@ static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 ```  
   
 ### Parameters  
- [in, out] `pToolTip`  
+ [in, out] *pToolTip*  
  A reference to a pointer to a tooltip to be destroyed.  
   
 ### Remarks  
- Call this method for each [CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md) that was created by [CTooltipManager::CreateToolTip](#createtooltip). The parent control should call this method from its `OnDestroy` handler. This is required to correctly remove the tooltip from the framework. This method sets `pToolTip` to `NULL` before it returns.  
+ Call this method for each [CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md) that was created by [CTooltipManager::CreateToolTip](#createtooltip). The parent control should call this method from its `OnDestroy` handler. This is required to correctly remove the tooltip from the framework. This method sets *pToolTip* to NULL before it returns.  
   
 ##  <a name="settooltipparams"></a>  CTooltipManager::SetTooltipParams  
  Customizes the appearance of the tooltip control for the specified Windows control types.  
@@ -113,21 +113,21 @@ void SetTooltipParams(
 ```  
   
 ### Parameters  
- [in] `nTypes`  
+ [in] *nTypes*  
  Specifies control types.  
   
- [in] `pRTC`  
+ [in] *pRTC*  
  Runtime class of custom tooltip.  
   
- [in] `pParams`  
+ [in] *pParams*  
  Tooltip parameters.  
   
 ### Remarks  
- This method sets the runtime class and initial parameters that the [CToolTipManager](../../mfc/reference/ctooltipmanager-class.md) uses when it creates tooltips. When a control calls [CTooltipManager::CreateToolTip](#createtooltip) and passes in a tooltip type that is one of the types indicated by `nTypes`, the tooltip manager creates a tooltip control that is an instance of the runtime class specified by `pRTC` and passes the parameters specified by `pParams` to the new tooltip.  
+ This method sets the runtime class and initial parameters that the [CToolTipManager](../../mfc/reference/ctooltipmanager-class.md) uses when it creates tooltips. When a control calls [CTooltipManager::CreateToolTip](#createtooltip) and passes in a tooltip type that is one of the types indicated by *nTypes*, the tooltip manager creates a tooltip control that is an instance of the runtime class specified by *pRTC* and passes the parameters specified by *pParams* to the new tooltip.  
   
  When you call this method, all existing tooltip owners receive the AFX_WM_UPDATETOOLTIPS message and they must re-create their tooltips by using [CTooltipManager::CreateToolTip](#createtooltip).  
   
- `nTypes` can be any combination of the valid tooltip types that [CTooltipManager::CreateToolTip](#createtooltip) uses, or it can be AFX_TOOLTIP_TYPE_ALL. If you pass AFX_TOOLTIP_TYPE_ALL, all tooltip types are affected.  
+ *nTypes* can be any combination of the valid tooltip types that [CTooltipManager::CreateToolTip](#createtooltip) uses, or it can be AFX_TOOLTIP_TYPE_ALL. If you pass AFX_TOOLTIP_TYPE_ALL, all tooltip types are affected.  
   
 ### Example  
  The following example demonstrates how to use the `SetTooltipParams` method of the `CTooltipManager` class. This code snippet is part of the [Draw Client sample](../../visual-cpp-samples.md).  
@@ -147,23 +147,23 @@ static void SetTooltipText(
 ```  
   
 ### Parameters  
- [in] `pTI`  
+ [in] *pTI*  
  A pointer to a TOOLINFO object.  
   
- [in, out] `pToolTip`  
+ [in, out] *pToolTip*  
  A pointer to the tooltip control for which to set the text and description.  
   
- [in] `nType`  
+ [in] *nType*  
  Specifies the type of control with which this tooltip is associated.  
   
- [in] `strText`  
+ [in] *strText*  
  The text to set as the tooltip text.  
   
- [in] `lpszDescr`  
- A pointer to the tooltip description. Can be `NULL`.  
+ [in] *lpszDescr*  
+ A pointer to the tooltip description. Can be NULL.  
   
 ### Remarks  
- The value of `nType` must be the same value as the `nType` parameter of [CTooltipManager::CreateToolTip](#createtooltip) when you created the tooltip.  
+ The value of *nType* must be the same value as the *nType* parameter of [CTooltipManager::CreateToolTip](#createtooltip) when you created the tooltip.  
   
 ##  <a name="updatetooltips"></a>  CTooltipManager::UpdateTooltips  
  [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  

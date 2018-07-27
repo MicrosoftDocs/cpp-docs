@@ -77,10 +77,10 @@ CD2DResource(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DResource::Create  
@@ -91,7 +91,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget) = 0;
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  
@@ -146,7 +146,7 @@ virtual HRESULT ReCreate(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  

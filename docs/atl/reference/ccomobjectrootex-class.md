@@ -23,8 +23,8 @@ class CComObjectRootEx : public CComObjectRootBase
 ```  
   
 #### Parameters  
- `ThreadModel`  
- The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting `ThreadModel` to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting `ThreadModel` to [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel).  
+ *ThreadModel*  
+ The class whose methods implement the desired threading model. You can explicitly choose the threading model by setting *ThreadModel* to [CComSingleThreadModel](../../atl/reference/ccomsinglethreadmodel-class.md), [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md), or [CComMultiThreadModelNoCS](../../atl/reference/ccommultithreadmodelnocs-class.md). You can accept the server's default thread model by setting *ThreadModel* to [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel) or [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel).  
 
   
 ## Members  
@@ -46,21 +46,21 @@ class CComObjectRootEx : public CComObjectRootBase
 |[FinalConstruct](#finalconstruct)|Override in your class to perform any initialization required by your object.|  
 |[FinalRelease](#finalrelease)|Override in your class to perform any cleanup required by your object.|  
 |[OuterAddRef](#outeraddref)|Increments the reference count for an aggregated object.|  
-|[OuterQueryInterface](#outerqueryinterface)|Delegates to the outer **IUnknown** of an aggregated object.|  
+|[OuterQueryInterface](#outerqueryinterface)|Delegates to the outer `IUnknown` of an aggregated object.|  
 |[OuterRelease](#outerrelease)|Decrements the reference count for an aggregated object.|  
   
 ### Static Functions  
   
 |||  
 |-|-|  
-|[InternalQueryInterface](#internalqueryinterface)|Delegates to the **IUnknown** of a nonaggregated object.|  
+|[InternalQueryInterface](#internalqueryinterface)|Delegates to the `IUnknown` of a nonaggregated object.|  
 |[ObjectMain](#objectmain)|Called during module initialization and termination for derived classes listed in the object map.|  
   
 ### Data Members  
   
 |||  
 |-|-|  
-|[m_dwRef](#m_dwref)|With `m_pOuterUnknown`, part of a union. Used when the object is not aggregated to hold the reference count of `AddRef` and **Release**.|  
+|[m_dwRef](#m_dwref)|With `m_pOuterUnknown`, part of a union. Used when the object is not aggregated to hold the reference count of `AddRef` and `Release`.|  
 |[m_pOuterUnknown](#m_pouterunknown)|With `m_dwRef`, part of a union. Used when the object is aggregated to hold a pointer to the outer unknown.|  
   
 ## Remarks  
@@ -68,15 +68,15 @@ class CComObjectRootEx : public CComObjectRootBase
   
  A class that implements a COM server must inherit from `CComObjectRootEx` or [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md).  
   
- If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable) macro, ATL creates an instance of **CComPolyObject\<CYourClass>** when **IClassFactory::CreateInstance** is called. During creation, the value of the outer unknown is checked. If it is **NULL**, **IUnknown** is implemented for a nonaggregated object. If the outer unknown is not **NULL**, **IUnknown** is implemented for an aggregated object.  
+ If your class definition specifies the [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable) macro, ATL creates an instance of `CComPolyObject<CYourClass>` when `IClassFactory::CreateInstance` is called. During creation, the value of the outer unknown is checked. If it is NULL, `IUnknown` is implemented for a nonaggregated object. If the outer unknown is not NULL, `IUnknown` is implemented for an aggregated object.  
   
- If your class does not specify the `DECLARE_POLY_AGGREGATABLE` macro, ATL creates an instance of **CAggComObject\<CYourClass>** for aggregated objects or an instance of **CComObject\<CYourClass>** for nonaggregated objects.  
+ If your class does not specify the DECLARE_POLY_AGGREGATABLE macro, ATL creates an instance of `CAggComObject<CYourClass>` for aggregated objects or an instance of `CComObject<CYourClass>` for nonaggregated objects.  
   
  The advantage of using `CComPolyObject` is that you avoid having both `CComAggObject` and `CComObject` in your module to handle the aggregated and nonaggregated cases. A single `CComPolyObject` object handles both cases. Therefore, only one copy of the vtable and one copy of the functions exist in your module. If your vtable is large, this can substantially decrease your module size. However, if your vtable is small, using `CComPolyObject` can result in a slightly larger module size because it is not optimized for an aggregated or nonaggregated object, as are `CComAggObject` and `CComObject`.  
   
- If your object is aggregated, [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) is implemented by `CComAggObject` or `CComPolyObject`. These classes delegate `QueryInterface`, `AddRef`, and **Release** calls to `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease` to forward to the outer unknown. Typically, you override `CComObjectRootEx::FinalConstruct` in your class to create any aggregated objects, and override `CComObjectRootEx::FinalRelease` to free any aggregated objects.  
+ If your object is aggregated, [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) is implemented by `CComAggObject` or `CComPolyObject`. These classes delegate `QueryInterface`, `AddRef`, and `Release` calls to `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease` to forward to the outer unknown. Typically, you override `CComObjectRootEx::FinalConstruct` in your class to create any aggregated objects, and override `CComObjectRootEx::FinalRelease` to free any aggregated objects.  
   
- If your object is not aggregated, **IUnknown** is implemented by `CComObject` or `CComPolyObject`. In this case, calls to `QueryInterface`, `AddRef`, and **Release** are delegated to `CComObjectRootEx`'s `InternalQueryInterface`, `InternalAddRef`, and `InternalRelease` to perform the actual operations.  
+ If your object is not aggregated, `IUnknown` is implemented by `CComObject` or `CComPolyObject`. In this case, calls to `QueryInterface`, `AddRef`, and `Release` are delegated to `CComObjectRootEx`'s `InternalQueryInterface`, `InternalAddRef`, and `InternalRelease` to perform the actual operations.  
   
 ## Requirements  
  **Header:** atlcom.h  
@@ -96,14 +96,14 @@ HRESULT FinalConstruct();
 ```  
   
 ### Return Value  
- Return `S_OK` on success or one of the standard error `HRESULT` values.  
+ Return S_OK on success or one of the standard error HRESULT values.  
   
 ### Remarks  
- By default, `CComObjectRootEx::FinalConstruct` simply returns `S_OK`.  
+ By default, `CComObjectRootEx::FinalConstruct` simply returns S_OK.  
   
  There are advantages to performing initialization in `FinalConstruct` rather than the constructor of your class:  
   
--   You cannot return a status code from a constructor, but you can return an `HRESULT` by means of `FinalConstruct`'s return value. When objects of your class are being created using the standard class factory provided by ATL, this return value is propagated back to the COM client allowing you to provide them with detailed error information.  
+-   You cannot return a status code from a constructor, but you can return an HRESULT by means of `FinalConstruct`'s return value. When objects of your class are being created using the standard class factory provided by ATL, this return value is propagated back to the COM client allowing you to provide them with detailed error information.  
   
 -   You cannot call virtual functions through the virtual function mechanism from the constructor of a class. Calling a virtual function from the constructor of a class results in a statically resolved call to the function as it is defined at that point in the inheritance hierarchy. Calls to pure virtual functions result in linker errors.  
   
@@ -120,13 +120,13 @@ HRESULT FinalConstruct();
   
  Here is a typical way to create an aggregate:  
   
--   Add an **IUnknown** pointer to your class object and initialize it to **NULL** in the constructor.  
+-   Add an `IUnknown` pointer to your class object and initialize it to NULL in the constructor.  
   
 -   Override `FinalConstruct` to create the aggregate.  
   
--   Use the **IUnknown** pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](com-interface-entry-macros.md#com_interface_entry_aggregate) macro.  
+-   Use the `IUnknown` pointer you defined as the parameter to the [COM_INTERFACE_ENTRY_AGGREGATE](com-interface-entry-macros.md#com_interface_entry_aggregate) macro.  
   
--   Override `FinalRelease` to release the **IUnknown** pointer.  
+-   Override `FinalRelease` to release the `IUnknown` pointer.  
   
 ##  <a name="finalrelease"></a>  CComObjectRootEx::FinalRelease  
  You can override this method in your derived class to perform any cleanup required for your object.  
@@ -151,7 +151,7 @@ ULONG InternalAddRef();
  A value that may be useful for diagnostics and testing.  
   
 ### Remarks  
- If the thread model is multithreaded, **InterlockedIncrement** is used to prevent more than one thread from changing the reference count at the same time.  
+ If the thread model is multithreaded, `InterlockedIncrement` is used to prevent more than one thread from changing the reference count at the same time.  
   
 ##  <a name="internalqueryinterface"></a>  CComObjectRootEx::InternalQueryInterface  
  Retrieves a pointer to the requested interface.  
@@ -165,20 +165,20 @@ static HRESULT InternalQueryInterface(
 ```  
   
 ### Parameters  
- `pThis`  
+ *pThis*  
  [in] A pointer to the object that contains the COM map of interfaces exposed to `QueryInterface`.  
   
- `pEntries`  
- [in] A pointer to the **_ATL_INTMAP_ENTRY** structure that accesses a map of available interfaces.  
+ *pEntries*  
+ [in] A pointer to the `_ATL_INTMAP_ENTRY` structure that accesses a map of available interfaces.  
   
- `iid`  
+ *iid*  
  [in] The GUID of the interface being requested.  
   
- `ppvObject`  
- [out] A pointer to the interface pointer specified in `iid`, or **NULL** if the interface is not found.  
+ *ppvObject*  
+ [out] A pointer to the interface pointer specified in *iid*, or NULL if the interface is not found.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ### Remarks  
  `InternalQueryInterface` only handles interfaces in the COM map table. If your object is aggregated, `InternalQueryInterface` does not delegate to the outer unknown. You can enter interfaces into the COM map table with the macro [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) or one of its variants.  
@@ -194,7 +194,7 @@ ULONG InternalRelease();
  In both non-debug and debug builds, this function returns a value which may be useful for diagnostics or testing. The exact value returned depends on many factors such as the operating system used, and may, or may not, be the reference count.  
   
 ### Remarks  
- If the thread model is multithreaded, **InterlockedDecrement** is used to prevent more than one thread from changing the reference count at the same time.  
+ If the thread model is multithreaded, `InterlockedDecrement` is used to prevent more than one thread from changing the reference count at the same time.  
   
 ##  <a name="lock"></a>  CComObjectRootEx::Lock  
  If the thread model is multithreaded, this method calls the Win32 API function [EnterCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682608), which waits until the thread can take ownership of the critical section object obtained through a private data member.  
@@ -228,7 +228,7 @@ long m_dwRef;
   
  `};`  
   
- If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in `m_dwRef`. If the object is aggregated, the pointer to the outer unknown is stored in [m_pOuterUnknown](#m_pouterunknown).  
+ If the object is not aggregated, the reference count accessed by `AddRef` and `Release` is stored in `m_dwRef`. If the object is aggregated, the pointer to the outer unknown is stored in [m_pOuterUnknown](#m_pouterunknown).  
   
 ##  <a name="m_pouterunknown"></a>  CComObjectRootEx::m_pOuterUnknown  
  Part of a union that accesses four bytes of memory.  
@@ -251,21 +251,21 @@ IUnknown*
   
  `};`  
   
- If the object is aggregated, the pointer to the outer unknown is stored in `m_pOuterUnknown`. If the object is not aggregated, the reference count accessed by `AddRef` and **Release** is stored in [m_dwRef](#m_dwref).  
+ If the object is aggregated, the pointer to the outer unknown is stored in `m_pOuterUnknown`. If the object is not aggregated, the reference count accessed by `AddRef` and `Release` is stored in [m_dwRef](#m_dwref).  
   
 ##  <a name="objectmain"></a>  CComObjectRootEx::ObjectMain  
- For each class listed in the [object map](http://msdn.microsoft.com/en-us/b57619cc-534f-4b8f-bfd4-0c12f937202f), this function is called once when the module is initialized, and again when it is terminated.  
+ For each class listed in the [object map](http://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f), this function is called once when the module is initialized, and again when it is terminated.  
   
 ```
 static void WINAPI ObjectMain(bool bStarting);
 ```  
   
 ### Parameters  
- `bStarting`  
- [out] The value is **true** if the class is being initialized; otherwise **false**.  
+ *bStarting*  
+ [out] The value is TRUE if the class is being initialized; otherwise FALSE.  
   
 ### Remarks  
- The value of the `bStarting` parameter indicates whether the module is being initialized or terminated. The default implementation of `ObjectMain` does nothing, but you can override this function in your class to initialize or clean up resources that you want to allocate for the class. Note that `ObjectMain` is called before any instances of the class are requested.  
+ The value of the *bStarting* parameter indicates whether the module is being initialized or terminated. The default implementation of `ObjectMain` does nothing, but you can override this function in your class to initialize or clean up resources that you want to allocate for the class. Note that `ObjectMain` is called before any instances of the class are requested.  
   
  `ObjectMain` is called from the entry point of the DLL, so the type of operation that the entry-point function can perform is restricted. For more information on these restrictions, see [DLLs and Visual C++ run-time library behavior](../../build/run-time-library-behavior.md) and [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583).  
   
@@ -290,14 +290,14 @@ HRESULT OuterQueryInterface(REFIID iid, void** ppvObject);
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  [in] The GUID of the interface being requested.  
   
- `ppvObject`  
- [out] A pointer to the interface pointer specified in `iid`, or **NULL** if the aggregation does not support the interface.  
+ *ppvObject*  
+ [out] A pointer to the interface pointer specified in *iid*, or NULL if the aggregation does not support the interface.  
   
 ### Return Value  
- One of the standard `HRESULT` values.  
+ One of the standard HRESULT values.  
   
 ##  <a name="outerrelease"></a>  CComObjectRootEx::OuterRelease  
  Decrements the reference count of the outer unknown of an aggregation.  

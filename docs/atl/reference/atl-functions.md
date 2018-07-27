@@ -20,7 +20,7 @@ To find an ATL function by category, see the following topics.
  Provide support for manipulating file paths.
  
  [COM Map Global Functions](../../atl/reference/com-map-global-functions.md)  
- Provide support for COM map **IUnknown** implementations.  
+ Provide support for COM map `IUnknown` implementations.  
   
  [Composite Control Global Functions](../../atl/reference/composite-control-global-functions.md)  
  Provide support for creating dialog boxes, and for creating, hosting and licensing ActiveX controls.  

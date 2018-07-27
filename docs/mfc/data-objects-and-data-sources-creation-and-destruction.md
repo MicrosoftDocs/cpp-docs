@@ -51,14 +51,14 @@ As explained in the article [Data Objects and Data Sources (OLE)](../mfc/data-ob
   
 5.  The application calls the `SetClipboard` member function (or the `DoDragDrop` member function if this is a drag-and-drop operation) belonging to the object created in step 3.  
   
-6.  If this is a **Cut** operation or `DoDragDrop` returns `DROPEFFECT_MOVE`, the data selected in step 1 is deleted from the document.  
+6.  If this is a **Cut** operation or `DoDragDrop` returns **DROPEFFECT_MOVE**, the data selected in step 1 is deleted from the document.  
   
  This scenario is implemented by the MFC OLE samples [OCLIENT](../visual-cpp-samples.md) and [HIERSVR](../visual-cpp-samples.md). Look at the source for each application's `CView`-derived class for all but the `GetClipboardData` and `OnGetClipboardData` functions. These two functions are in either the `COleClientItem` or `COleServerItem`-derived class implementations. These sample programs provide a good example of how to implement these concepts.  
   
  One other situation in which you might want to create a `COleDataSource` object occurs if you are modifying the default behavior of a drag-and-drop operation. For more information, see the [Drag and Drop: Customizing](../mfc/drag-and-drop-customizing.md) article.  
   
 ##  <a name="_core_destroying_data_sources"></a> Destroying Data Sources  
- Data sources must be destroyed by the application currently responsible for them. In situations where you hand the data source to OLE, such as calling [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop), you need to call **pDataSrc->InternalRelease**. For example:  
+ Data sources must be destroyed by the application currently responsible for them. In situations where you hand the data source to OLE, such as calling [COleDataSource::DoDragDrop](../mfc/reference/coledatasource-class.md#dodragdrop), you need to call `pDataSrc->InternalRelease`. For example:  
   
  [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/cpp/data-objects-and-data-sources-creation-and-destruction_1.cpp)]  
   

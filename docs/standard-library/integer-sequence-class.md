@@ -25,10 +25,10 @@ struct integer_sequence
 
 ### Parameters
 
-T
+*T*
  The type of the values; must be an integral type: bool, char, char16_t, char32_t, wchar_t, or signed or unsigned integer types.
 
-Vals
+*Vals*
  A non-type parameter pack that represents a sequence of values of integral type T.
 
 ## Members

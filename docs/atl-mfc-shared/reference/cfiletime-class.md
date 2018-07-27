@@ -76,11 +76,11 @@ class CFileTime :  public FILETIME
 |Member variable|Number of 100-nanosecond intervals|  
 |---------------------|-----------------------------------------|  
 |Millisecond|10,000|  
-|Second|Millisecond * 1,000|  
-|Minute|Second * 60|  
-|Hour|Minute * 60|  
-|Day|Hour * 24|  
-|Week|Day * 7|  
+|Second|Millisecond \* 1,000|  
+|Minute|Second \* 60|  
+|Hour|Minute \* 60|  
+|Day|Hour \* 24|  
+|Week|Day \* 7|  
   
  **Note** Not all file systems can record creation and last access time and not all file systems record them in the same manner. For example, on the Windows NT FAT file system, create time has a resolution of 10 milliseconds, write time has a resolution of 2 seconds, and access time has a resolution of 1 day (the access date). On NTFS, access time has a resolution of 1 hour. Furthermore, FAT records times on disk in local time, but NTFS records times on disk in UTC. For more information, see [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290).  
   
@@ -102,10 +102,10 @@ CFileTime(ULONGLONG nTime) throw();
 ```  
   
 ### Parameters  
- `ft`  
+ *ft*  
  A [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure.  
   
- `nTime`  
+ *nTime*  
  The date and time expressed as a 64-bit value.  
   
 ### Remarks  
@@ -196,10 +196,10 @@ CFileTimeSpan operator-(CFileTime ft) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  A `CFileTimeSpan` object.  
   
- `ft`  
+ *ft*  
  A `CFileTime` object.  
   
 ### Return Value  
@@ -213,11 +213,11 @@ bool operator!=(CFileTime ft) const throw();
 ```  
   
 ### Parameters  
- `ft`  
+ *ft*  
  The `CFileTime` object to be compared.  
   
 ### Return Value  
- Returns **true** if the item being compared is not equal to the `CFileTime` object, otherwise **false**.  
+ Returns TRUE if the item being compared is not equal to the `CFileTime` object, otherwise FALSE.  
   
 ##  <a name="operator_add"></a>  CFileTime::operator +  
  This operator is used to perform addition on a `CFileTimeSpan` object.  
@@ -227,7 +227,7 @@ CFileTime operator+(CFileTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  A `CFileTimeSpan` object.  
   
 ### Return Value  
@@ -241,7 +241,7 @@ CFileTime& operator+=(CFileTimeSpan span) throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  A `CFileTimeSpan` object.  
   
 ### Return Value  
@@ -255,11 +255,11 @@ bool operator<(CFileTime ft) const throw();
 ```  
   
 ### Parameters  
- `ft`  
+ *ft*  
  The `CFileTime` object to be compared.  
   
 ### Return Value  
- Returns **true** if the first object is less (earlier in time) than the second, **false** otherwise.  
+ Returns TRUE if the first object is less (earlier in time) than the second, FALSE otherwise.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#43](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_3.cpp)]  
@@ -272,11 +272,11 @@ bool operator<=(CFileTime ft) const throw();
 ```  
   
 ### Parameters  
- `ft`  
+ *ft*  
  The `CFileTime` object to be compared.  
   
 ### Return Value  
- Returns **true** if the first object is less than (earlier in time) or equal to the second, otherwise **false**.  
+ Returns TRUE if the first object is less than (earlier in time) or equal to the second, otherwise FALSE.  
   
 ##  <a name="operator_eq"></a>  CFileTime::operator =  
  The assignment operator.  
@@ -286,7 +286,7 @@ CFileTime& operator=(const FILETIME& ft) throw();
 ```  
   
 ### Parameters  
- `ft`  
+ *ft*  
  A `CFileTime` object containing the new time and date.  
   
 ### Return Value  
@@ -300,7 +300,7 @@ CFileTime& operator-=(CFileTimeSpan span) throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  A `CFileTimeSpan` object containing the relative time to subtract.  
   
 ### Return Value  
@@ -314,11 +314,11 @@ bool operator==(CFileTime ft) const throw();
 ```  
   
 ### Parameters  
- `ft`  
+ *ft*  
  The `CFileTime` object to compare.  
   
 ### Return Value  
- Returns **true** if the objects are equal, otherwise **false**.  
+ Returns TRUE if the objects are equal, otherwise FALSE.  
   
 ##  <a name="operator_gt"></a>  CFileTime::operator &gt;  
  This operator compares two `CFileTime` objects to determine the larger.  
@@ -328,11 +328,11 @@ bool operator>(CFileTime ft) const throw();
 ```  
   
 ### Parameters  
- `ft`  
+ *ft*  
  The `CFileTime` object to be compared.  
   
 ### Return Value  
- Returns **true** if the first object is greater than (later in time) than the second, otherwise **false**.  
+ Returns TRUE if the first object is greater than (later in time) than the second, otherwise FALSE.  
   
 ##  <a name="operator_gt_eq"></a>  CFileTime::operator &gt;=  
  This operator compares two `CFileTime` objects to determine equality or the larger.  
@@ -342,11 +342,11 @@ bool operator>=(CFileTime ft) const throw();
 ```  
   
 ### Parameters  
- `ft`  
+ *ft*  
  The `CFileTime` object to be compared.  
   
 ### Return Value  
- Returns **true** if the first object is greater than (later in time) or equal to the second, otherwise **false**.  
+ Returns TRUE if the first object is greater than (later in time) or equal to the second, otherwise FALSE.  
   
 ##  <a name="second"></a>  CFileTime::Second  
  A static data member storing the number of 100-nanosecond intervals that make up one day.  
@@ -366,7 +366,7 @@ void SetTime(ULONGLONG nTime) throw();
 ```  
   
 ### Parameters  
- `nTime`  
+ *nTime*  
  The 64-bit value representing the date and time, in either local or Coordinated Universal Time (UTC) format.  
   
 ##  <a name="utctolocal"></a>  CFileTime::UTCToLocal  

@@ -25,12 +25,12 @@ struct is_move_constructible;
 
 ### Parameters
 
-T
+*T*
  The type to be evaluated
 
 ## Remarks
 
-A type predicate that evaluates to true if the type `T` can be constructed by using a move operation. This predicate is equivalent to `is_constructible<T, T&&>`.
+A type predicate that evaluates to true if the type *T* can be constructed by using a move operation. This predicate is equivalent to `is_constructible<T, T&&>`.
 
 ## Requirements
 

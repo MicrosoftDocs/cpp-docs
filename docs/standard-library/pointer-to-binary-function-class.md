@@ -32,22 +32,22 @@ public:
 
 ### Parameters
 
-`pfunc`
+*pfunc*
  The binary function to be converted.
 
-`left`
+*left*
  The left object that the *\*pfunc* is called on.
 
-`right`
+*right*
  The right object that the *\*pfunc* is called on.
 
 ## Return Value
 
-The template class stores a copy of **pfunc**. It defines its member function `operator()` as returning (\* **pfunc**)(_ *Left*, \_ *Right*).
+The template class stores a copy of `pfunc`. It defines its member function `operator()` as returning (\* **pfunc**)(_ *Left*, \_ *Right*).
 
 ## Remarks
 
-A binary function pointer is a function object and may be passed to any C++ Standard Library algorithm that is expecting a binary function as a parameter, but it is not adaptable. To use it with an adaptor, such as binding a value to it or using it with a negator, it must be supplied with the nested types **first_argument_type**, **second_argument_type**, and **result_type** that make such an adaptation possible. The conversion by `pointer_to_binary_function` allows the function adaptors to work with binary function pointers.
+A binary function pointer is a function object and may be passed to any C++ Standard Library algorithm that is expecting a binary function as a parameter, but it is not adaptable. To use it with an adaptor, such as binding a value to it or using it with a negator, it must be supplied with the nested types `first_argument_type`, `second_argument_type`, and `result_type` that make such an adaptation possible. The conversion by `pointer_to_binary_function` allows the function adaptors to work with binary function pointers.
 
 ## Example
 

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IPerPropertyBrowsingImpl Class
-This class implements **IUnknown** and allows a client to access the information in an object's property pages.  
+This class implements `IUnknown` and allows a client to access the information in an object's property pages.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -28,7 +28,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IPerPropertyBrowsingImpl`.  
   
 ## Members  
@@ -39,11 +39,11 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 |----------|-----------------|  
 |[IPerPropertyBrowsingImpl::GetDisplayString](#getdisplaystring)|Retrieves a string describing a given property.|  
 |[IPerPropertyBrowsingImpl::GetPredefinedStrings](#getpredefinedstrings)|Retrieves an array of strings corresponding to the values that a given property can accept.|  
-|[IPerPropertyBrowsingImpl::GetPredefinedValue](#getpredefinedvalue)|Retrieves a **VARIANT** containing the value of a property identified by a given DISPID. The DISPID is associated with the string name retrieved from `GetPredefinedStrings`. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPerPropertyBrowsingImpl::GetPredefinedValue](#getpredefinedvalue)|Retrieves a VARIANT containing the value of a property identified by a given DISPID. The DISPID is associated with the string name retrieved from `GetPredefinedStrings`. The ATL implementation returns E_NOTIMPL.|  
 |[IPerPropertyBrowsingImpl::MapPropertyToPage](#mappropertytopage)|Retrieves the CLSID of the property page associated with a given property.|  
   
 ## Remarks  
- The [IPerPropertyBrowsing](http://msdn.microsoft.com/library/windows/desktop/ms678432) interface allows a client to access the information in an object's property pages. Class `IPerPropertyBrowsingImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
+ The [IPerPropertyBrowsing](http://msdn.microsoft.com/library/windows/desktop/ms678432) interface allows a client to access the information in an object's property pages. Class `IPerPropertyBrowsingImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
 > [!NOTE]
 >  If you are using Microsoft Access as the container application, you must derive your class from `IPerPropertyBrowsingImpl`. Otherwise, Access will not load your control.  
@@ -81,13 +81,13 @@ STDMETHOD(GetPredefinedStrings)(
 ```  
   
 ### Return Value  
- ATL's implementation of [GetPredefinedValue](#getpredefinedvalue) returns **E_NOTIMPL**.  
+ ATL's implementation of [GetPredefinedValue](#getpredefinedvalue) returns E_NOTIMPL.  
   
 ### Remarks  
  See [IPerPropertyBrowsing::GetPredefinedStrings](http://msdn.microsoft.com/library/windows/desktop/ms679724) in the Windows SDK.  
   
 ##  <a name="getpredefinedvalue"></a>  IPerPropertyBrowsingImpl::GetPredefinedValue  
- Retrieves a **VARIANT** containing the value of a property identified by a given DISPID. The DISPID is associated with the string name retrieved from `GetPredefinedStrings`.  
+ Retrieves a VARIANT containing the value of a property identified by a given DISPID. The DISPID is associated with the string name retrieved from `GetPredefinedStrings`.  
   
 ```
 STDMETHOD(GetPredefinedValue)(
@@ -97,7 +97,7 @@ STDMETHOD(GetPredefinedValue)(
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  ATL's implementation of [GetPredefinedStrings](#getpredefinedstrings) retrieves no corresponding strings.  

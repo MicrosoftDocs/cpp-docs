@@ -68,10 +68,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
- `ppHandler`  
+ *ppHandler*  
   
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
@@ -87,13 +87,13 @@ IFACEMETHOD(OnStoryboardStatusChanged) (
 ```  
   
 ### Parameters  
- `storyboard`  
+ *storyboard*  
  A pointer to storyboard whose status has changed.  
   
- `newStatus`  
+ *newStatus*  
  Specifies new storyboard status.  
   
- `previousStatus`  
+ *previousStatus*  
  Specifies previous storyboard status.  
   
 ### Return Value  
@@ -107,7 +107,7 @@ IFACEMETHOD(OnStoryboardUpdated) (__in IUIAnimationStoryboard* storyboard);
 ```  
   
 ### Parameters  
- `storyboard`  
+ *storyboard*  
  A pointer to storyboard, which was updated.  
   
 ### Return Value  
@@ -121,7 +121,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
 ## See Also  

@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Destructors (C++)
 
-A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to `delete`. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
+A destructor is a member function that is invoked automatically when the object goes out of scope or is explicitly destroyed by a call to **delete**. A destructor has the same name as the class, preceded by a tilde (`~`). For example, the destructor for class `String` is declared: `~String()`.
 
 If you do not define a destructor, the compiler will provide a default one; for many classes this is sufficient. You only need to define a custom destructor when the class stores handles to system resources that need to be released, or pointers that own the memory they point to.
 
@@ -57,7 +57,7 @@ int main() {
 }
 ```
 
-In the preceding example, the destructor `String::~String` uses the `delete` operator to deallocate the space dynamically allocated for text storage.
+In the preceding example, the destructor `String::~String` uses the **delete** operator to deallocate the space dynamically allocated for text storage.
 
 ## Declaring destructors
 
@@ -67,7 +67,7 @@ Several rules govern the declaration of destructors. Destructors:
 
 - Do not accept arguments.
 
-- Do not return a value (or `void`).
+- Do not return a value (or **void**).
 
 - Cannot be declared as **const**, **volatile**, or **static**. However, they can be invoked for the destruction of objects declared as **const**, **volatile**, or **static**.
 

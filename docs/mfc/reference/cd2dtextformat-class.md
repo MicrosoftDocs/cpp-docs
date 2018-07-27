@@ -88,31 +88,31 @@ CD2DTextFormat(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `strFontFamilyName`  
+ *strFontFamilyName*  
  A CString object that contains the name of the font family.  
   
- `fontSize`  
+ *fontSize*  
  The logical size of the font in DIP ("device-independent pixel") units. A DIPequals 1/96 inch.  
   
- `fontWeight`  
+ *fontWeight*  
  A value that indicates the font weight for the text object.  
   
- `fontStyle`  
+ *fontStyle*  
  A value that indicates the font style for the text object.  
   
- `fontStretch`  
+ *fontStretch*  
  A value that indicates the font stretch for the text object.  
   
- `strFontLocale`  
+ *strFontLocale*  
  A CString object that contains the locale name.  
   
- `pFontCollection`  
+ *pFontCollection*  
  A pointer to a font collection object. When this is NULL, indicates the system font collection.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DTextFormat::Create  

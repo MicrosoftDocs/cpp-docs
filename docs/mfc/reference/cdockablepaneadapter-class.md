@@ -28,8 +28,8 @@ class CDockablePaneAdapter : public CDockablePane
 |Name|Description|  
 |----------|-----------------|  
 |[CDockablePaneAdapter::GetWrappedWnd](#getwrappedwnd)|Returns the wrapped window.|  
-|[CDockablePaneAdapter::LoadState](#loadstate)|(Overrides [CDockablePane::LoadState](http://msdn.microsoft.com/en-us/96110136-4f46-4764-8a76-3b4abaf77917).)|  
-|[CDockablePaneAdapter::SaveState](#savestate)|(Overrides [CDockablePane::SaveState](http://msdn.microsoft.com/en-us/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
+|[CDockablePaneAdapter::LoadState](#loadstate)|(Overrides [CDockablePane::LoadState](http://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917).)|  
+|[CDockablePaneAdapter::SaveState](#savestate)|(Overrides [CDockablePane::SaveState](http://msdn.microsoft.com/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
 |[CDockablePaneAdapter::SetWrappedWnd](#setwrappedwnd)||  
   
 ## Remarks  
@@ -71,13 +71,13 @@ virtual BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  The profile name.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  The profile index.  
   
- [in] `uiID`  
+ [in] *uiID*  
  The pane ID.  
   
 ### Return Value  
@@ -95,13 +95,13 @@ virtual BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  The profile name.  
   
- [in] `nIndex`  
+ [in] *nIndex*  
  The profile index (defaults to the control ID of the window).  
   
- [in] `uiID`  
+ [in] *uiID*  
  The pane ID.  
   
 ### Return Value  
@@ -116,7 +116,7 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to the window for the pane adapter to wrap.  
   
 ### Return Value  

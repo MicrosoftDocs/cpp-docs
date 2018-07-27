@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # complex Class
 
-The template class describes an object that stores two objects of type **Type**, one that represents the real part of a complex number and one that represents the imaginary part.
+The template class describes an object that stores two objects of type `Type`, one that represents the real part of a complex number and one that represents the imaginary part.
 
 ## Syntax
 
@@ -27,7 +27,7 @@ class complex
 
 ## Remarks
 
-An object of class **Type**:
+An object of class `Type`:
 
 - Has a public default constructor, destructor, copy constructor, and assignment operator with conventional behavior.
 
@@ -35,9 +35,9 @@ An object of class **Type**:
 
 - Defines the arithmetic operators and math functions, as needed, that are defined for the floating-point types with conventional behavior.
 
-In particular, no subtle differences may exist between copy construction and default construction followed by assignment. None of the operations on objects of class **Type** may throw exceptions.
+In particular, no subtle differences may exist between copy construction and default construction followed by assignment. None of the operations on objects of class `Type` may throw exceptions.
 
-Explicit specializations of template class complex exist for the three floating-point types. In this implementation, a value of any other type **Type** is typecast to **double** for actual calculations, with the **double** result assigned back to the stored object of type **Type**`.`
+Explicit specializations of template class complex exist for the three floating-point types. In this implementation, a value of any other type `Type` is typecast to **double** for actual calculations, with the **double** result assigned back to the stored object of type `Type``.`
 
 ### Constructors
 
@@ -93,13 +93,13 @@ constexpr complex(
 
 ### Parameters
 
-`_RealVal`
+*_RealVal*
  The value of the real part used to initialize the complex number being constructed.
 
-`_ImagVal`
+*_ImagVal*
  The value of the imaginary part used to initialize the complex number being constructed.
 
-`complexNum`
+*complexNum*
  The complex number whose real and imaginary parts are used to initialize the complex number being constructed.
 
 ### Remarks
@@ -175,7 +175,7 @@ T imag(const T& right);
 
 ### Parameters
 
-`right`
+*right*
  A complex number whose imaginary value is to be extracted.
 
 ### Return Value
@@ -232,7 +232,7 @@ complex<Type>& operator*=(const complex<Type>& right);
 
 ### Parameters
 
-`right`
+*right*
  A complex number or a number that is of the same type as the parameter of the target complex number.
 
 ### Return Value
@@ -316,7 +316,7 @@ complex<Type>& operator+=(const complex<Type>& right);
 
 ### Parameters
 
-`right`
+*right*
  A complex number or a number that is of the same type as the parameter of the target complex number.
 
 ### Return Value
@@ -419,10 +419,10 @@ complex<Type>& operator-=(const complex<Type>& complexNum);
 
 ### Parameters
 
-`complexNum`
+*complexNum*
  A complex number to be subtracted from the target complex number.
 
-`_RealPart`
+*_RealPart*
  A real number to be subtracted from the target complex number.
 
 ### Return Value
@@ -527,10 +527,10 @@ complex<Type>& operator/=(const complex<Type>& complexNum);
 
 ### Parameters
 
-`complexNum`
+*complexNum*
  A complex number to be subtracted from the target complex number.
 
-`_RealPart`
+*_RealPart*
  A real number to be subtracted from the target complex number.
 
 ### Return Value
@@ -629,7 +629,7 @@ complex<Type>& operator=(const Type& right);
 
 ### Parameters
 
-`right`
+*right*
  A complex number or a number that is of the same type as the parameter of the target complex number.
 
 ### Return Value
@@ -707,7 +707,7 @@ T real(const T& right);
 
 ### Parameters
 
-`right`
+*right*
  A complex number whose real value is to be extracted.
 
 ### Return Value
@@ -760,7 +760,7 @@ typedef Type value_type;
 
 ### Remarks
 
-`value_type` is a synonym for the class complex **Type** template parameter.
+`value_type` is a synonym for the class complex `Type` template parameter.
 
 ### Example
 
@@ -789,5 +789,5 @@ of type value_type: c1 = (3,4).
 
 ## See also
 
-[complex Members](http://msdn.microsoft.com/en-us/d5c4466c-43a0-4817-aca1-9a5d492dae28)<br/>
+[complex Members](http://msdn.microsoft.com/d5c4466c-43a0-4817-aca1-9a5d492dae28)<br/>
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

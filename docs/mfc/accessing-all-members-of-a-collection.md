@@ -30,7 +30,7 @@ The MFC array collection classes — both template-based and not — use indexes
   
      This example uses a typed pointer array that contains pointers to `CPerson` objects. The array is derived from class `CObArray`, one of the nontemplate predefined classes. `GetAt` returns a pointer to a `CPerson` object. For typed pointer collection classes — arrays or lists — the first parameter specifies the base class; the second parameter specifies the type to store.  
   
-     The `CTypedPtrArray` class also overloads the **[ ]** operator so that you can use the customary array-subscript syntax to access elements of an array. An alternative to the statement in the body of the `for` loop above is  
+     The `CTypedPtrArray` class also overloads the **[ ]** operator so that you can use the customary array-subscript syntax to access elements of an array. An alternative to the statement in the body of the **for** loop above is  
   
      [!code-cpp[NVC_MFCCollections#13](../mfc/codesnippet/cpp/accessing-all-members-of-a-collection_2.cpp)]  
   

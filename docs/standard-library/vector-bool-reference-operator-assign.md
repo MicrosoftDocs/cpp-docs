@@ -26,10 +26,10 @@ reference& operator=(bool Val);
 
 ### Parameters
 
-`Right`
+*Right*  
  The element reference whose value is to be assigned to the bit.
 
-`Val`
+*Val*  
  The Boolean value to be assigned to the bit.
 
 ## Example

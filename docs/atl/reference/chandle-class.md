@@ -68,11 +68,11 @@ void Attach(HANDLE h) throw();
 ```  
   
 ### Parameters  
- `h`  
- `CHandle` will take ownership of the handle `h`.  
+ *h*  
+ `CHandle` will take ownership of the handle *h*.  
   
 ### Remarks  
- Assigns the `CHandle` object to the `h` handle. In debugs builds, an ATLASSERT will be raised if `h` is NULL. No other check as to the validity of the handle is made.  
+ Assigns the `CHandle` object to the *h* handle. In debugs builds, an ATLASSERT will be raised if *h* is NULL. No other check as to the validity of the handle is made.  
   
 ##  <a name="chandle"></a>  CHandle::CHandle  
  The constructor.  
@@ -84,7 +84,7 @@ explicit CHandle(HANDLE h) throw();
 ```  
   
 ### Parameters  
- `h`  
+ *h*  
  An existing handle or `CHandle`.  
   
 ### Remarks  
@@ -108,7 +108,7 @@ void Close() throw();
 ```  
   
 ### Remarks  
- Closes an open object handle. If the handle is NULL, which will be the case if **Close** has already been called, an ATLASSERT will be raised in debug builds.  
+ Closes an open object handle. If the handle is NULL, which will be the case if `Close` has already been called, an ATLASSERT will be raised in debug builds.  
   
 ##  <a name="detach"></a>  CHandle::Detach  
  Call this method to detach a handle from a `CHandle` object.  
@@ -138,8 +138,8 @@ CHandle& operator=(CHandle& h) throw();
 ```  
   
 ### Parameters  
- `h`  
- `CHandle` will take ownership of the handle `h`.  
+ *h*  
+ `CHandle` will take ownership of the handle *h*.  
   
 ### Return Value  
  Returns a reference to the new `CHandle` object.  

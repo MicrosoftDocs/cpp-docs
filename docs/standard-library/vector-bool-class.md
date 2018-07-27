@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # vector&lt;bool&gt; Class
 
-The `vector<bool>` class is a partial specialization of [vector](../standard-library/vector-class.md) for elements of type `bool`. It has an allocator for the underlying type that's used by the specialization, which provides space optimization by storing one `bool` value per bit.
+The `vector<bool>` class is a partial specialization of [vector](../standard-library/vector-class.md) for elements of type **bool**. It has an allocator for the underlying type that's used by the specialization, which provides space optimization by storing one **bool** value per bit.
 
 ## Syntax
 
@@ -27,14 +27,14 @@ class vector<bool, Allocator>
 
 This class template specialization behaves like vector, except for the differences explained in this article.
 
-Operations that deal with the `bool` type correspond to values in the container storage. `allocator_traits::construct` is not used to construct these values.
+Operations that deal with the **bool** type correspond to values in the container storage. `allocator_traits::construct` is not used to construct these values.
 
 ### Typedefs
 
 |Type name|Description|
 |-|-|
 |[const_pointer](#const_pointer)|A typedef to a `const_iterator` that can serve as a constant pointer to a Boolean element of the `vector<bool>`.|
-|[const_reference](#const_reference)|A typedef for `bool`. After initialization, it does not observe updates to the original value.|
+|[const_reference](#const_reference)|A typedef for **bool**. After initialization, it does not observe updates to the original value.|
 |[pointer](#pointer)|A typedef to an `iterator` that can serve as a pointer to a Boolean element of the `vector<bool>`.|
 
 ### Member functions
@@ -133,7 +133,7 @@ vector&<bool&>::const_reference operator[](size_type Pos) const;
 
 |Parameter|Description|
 |-|-|
-|`Pos`|The position of the `vector<bool>` element.|
+|*Pos*|The position of the `vector<bool>` element.|
 
 ### Return Value
 
@@ -143,7 +143,7 @@ If the position specified is greater than or equal to the size of the container,
 
 ### Remarks
 
-If you compile with `_ITERATOR_DEBUG_LEVEL` set, a run-time error occurs if you attempt to access an element outside the bounds of the vector.  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
+If you compile with _ITERATOR_DEBUG_LEVEL set, a run-time error occurs if you attempt to access an element outside the bounds of the vector.  For more information, see [Checked Iterators](../standard-library/checked-iterators.md).
 
 ### Example
 
@@ -248,7 +248,7 @@ The vector with first element flipped is:
 
 ###  <a name="reference_operator_bool"></a>  vector\<bool>::reference::operator bool
 
-Provides an implicit conversion from `vector<bool>::reference` to `bool`.
+Provides an implicit conversion from `vector<bool>::reference` to **bool**.
 
 ```cpp
 operator bool() const;
@@ -273,10 +273,10 @@ reference& operator=(bool Val);
 
 ### Parameters
 
-`Right`
+*Right*  
  The element reference whose value is to be assigned to the bit.
 
-`Val`
+*Val*  
  The Boolean value to be assigned to the bit.
 
 #### Example
@@ -362,11 +362,11 @@ static void swap(
 
 ### Parameters
 
-`Left`
- The element to be exchanged with the `Right` element.
+*Left*  
+ The element to be exchanged with the *Right* element.
 
-`Right`
- The element to be exchanged with the `Left` element.
+*Right*  
+ The element to be exchanged with the *Left* element.
 
 ### Remarks
 

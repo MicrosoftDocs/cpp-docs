@@ -95,27 +95,27 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `dwStyle`  
+ *dwStyle*  
  Specifies the progress bar control's style. Apply any combination of window stylesdescribed in [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK, in addition to the following progress bar control styles, to the control:  
   
-- `PBS_VERTICAL` Displays progress information vertically, top to bottom. Without this flag, the progress bar control displays horizontally, left to right.  
+- PBS_VERTICAL Displays progress information vertically, top to bottom. Without this flag, the progress bar control displays horizontally, left to right.  
   
-- `PBS_SMOOTH` Displays gradual, smooth filling in the progress bar control. Without this flag, the control will fill with blocks.  
+- PBS_SMOOTH Displays gradual, smooth filling in the progress bar control. Without this flag, the control will fill with blocks.  
   
- `rect`  
- Specifies the progress bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure. Because the control must be a child window, the specified coordinates are relative to the client area of the `pParentWnd`.  
+ *rect*  
+ Specifies the progress bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure. Because the control must be a child window, the specified coordinates are relative to the client area of the *pParentWnd*.  
   
- `pParentWnd`  
- Specifies the progress bar control's parent window, usually a `CDialog`. It must not be **NULL.**  
+ *pParentWnd*  
+ Specifies the progress bar control's parent window, usually a `CDialog`. It must not be NULL.  
   
- `nID`  
+ *nID*  
  Specifies the progress bar control's ID.  
   
 ### Return Value  
- **TRUE** if the `CProgressCtrl` object is successfully created; otherwise **FALSE**.  
+ TRUE if the `CProgressCtrl` object is successfully created; otherwise FALSE.  
   
 ### Remarks  
- You construct a `CProgressCtrl` object in two steps. First, call the constructor, which creates the `CProgressCtrl` object, and then call **Create**, which creates the progress bar control.  
+ You construct a `CProgressCtrl` object in two steps. First, call the constructor, which creates the `CProgressCtrl` object, and then call `Create`, which creates the progress bar control.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#2](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_2.cpp)]  
@@ -133,19 +133,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `dwExStyle`  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the `dwExStyle` parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ *dwExStyle*  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the progress bar control's style. Apply any combination of window styles described in [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of `pParentWnd`.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the window that is the control's parent.  
   
- `nID`  
+ *nID*  
  The control's child-window ID.  
   
 ### Return Value  
@@ -162,7 +162,7 @@ COLORREF GetBarColor() const;
 ```  
   
 ### Return Value  
- The color of the current progress bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or `CLR_DEFAULT` if the progress indicator bar color is the default color.  
+ The color of the current progress bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or CLR_DEFAULT if the progress indicator bar color is the default color.  
   
 ### Remarks  
  This method sends the [PBM_GETBARCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760826) message, which is described in the Windows SDK.  
@@ -206,14 +206,14 @@ void GetRange(
 ```  
   
 ### Parameters  
- `nLower`  
+ *nLower*  
  A reference to an integer receiving the lower limit of the progress bar control.  
   
- `nUpper`  
+ *nUpper*  
  A reference to an integer receiving the upper limit of the progress bar control.  
   
 ### Remarks  
- This function copies the values of the lower and upper limits to the integers referenced by `nLower` and `nUpper`, respectively.  
+ This function copies the values of the lower and upper limits to the integers referenced by *nLower* and *nUpper*, respectively.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_4.cpp)]  
@@ -230,9 +230,9 @@ int GetState() const;
   
 |Value|State|  
 |-----------|-----------|  
-|`PBST_NORMAL`|In progress|  
-|`PBST_ERROR`|Error|  
-|`PBST_PAUSED`|Paused|  
+|PBST_NORMAL|In progress|  
+|PBST_ERROR|Error|  
+|PBST_PAUSED|Paused|  
   
 ### Remarks  
  This method sends the [PBM_GETSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760834) message, which is described in the Windows SDK.  
@@ -273,14 +273,14 @@ int GetStep() const;
  [!code-cpp[NVC_MFC_CProgressCtrl_s1#3](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_7.cpp)]  
   
 ##  <a name="offsetpos"></a>  CProgressCtrl::OffsetPos  
- Advances the progress bar control's current position by the increment specified by `nPos` and redraws the bar to reflect the new position.  
+ Advances the progress bar control's current position by the increment specified by *nPos* and redraws the bar to reflect the new position.  
   
 ```  
 int OffsetPos(int nPos);
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  Amount to advance the position.  
   
 ### Return Value  
@@ -300,10 +300,10 @@ COLORREF SetBarColor(COLORREF clrBar);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `clrBar`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that specifies the new color of the progress indicator bar. Specify `CLR_DEFAULT` to cause the progress bar to use its default color.|  
+|[in] *clrBar*|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that specifies the new color of the progress indicator bar. Specify CLR_DEFAULT to cause the progress bar to use its default color.|  
   
 ### Return Value  
- The previous color of the progress indicator bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or `CLR_DEFAULT` if the color of the progress indicator bar is the default color.  
+ The previous color of the progress indicator bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or CLR_DEFAULT if the color of the progress indicator bar is the default color.  
   
 ### Remarks  
  The `SetBarColor` method sets the progress bar color only if a [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)][theme](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx) is not in effect.  
@@ -328,11 +328,11 @@ COLORREF SetBkColor(COLORREF clrNew);
 ```  
   
 ### Parameters  
- `clrNew`  
- A **COLORREF** value that specifies the new background color. Specify the `CLR_DEFAULT` value to use the default background color for the progress bar.  
+ *clrNew*  
+ A COLORREF value that specifies the new background color. Specify the CLR_DEFAULT value to use the default background color for the progress bar.  
   
 ### Return Value  
- The [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value indicating the previous background color, or **CLR_DEFAULT** if the background color is the default color.  
+ The [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value indicating the previous background color, or CLR_DEFAULT if the background color is the default color.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CProgressCtrl#6](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_10.cpp)]  
@@ -350,11 +350,11 @@ BOOL SetMarquee(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `fMarqueeMode`|`true` to turn marquee mode on, or `false` to turn marquee mode off.|  
-|[in] `nInterval`|Time in milliseconds between updates of the marquee animation.|  
+|[in] *fMarqueeMode*|TRUE to turn marquee mode on, or FALSE to turn marquee mode off.|  
+|[in] *nInterval*|Time in milliseconds between updates of the marquee animation.|  
   
 ### Return Value  
- This method always returns `true`.  
+ This method always returns TRUE.  
   
 ### Remarks  
  When marquee mode is turned on, the progress bar is animated and scrolls like a sign on a theater marquee.  
@@ -372,14 +372,14 @@ BOOL SetMarquee(
  [!code-cpp[NVC_MFC_CProgressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_11.cpp)]  
   
 ##  <a name="setpos"></a>  CProgressCtrl::SetPos  
- Sets the progress bar control's current position as specified by `nPos` and redraws the bar to reflect the new position.  
+ Sets the progress bar control's current position as specified by *nPos* and redraws the bar to reflect the new position.  
   
 ```  
 int SetPos(int nPos);
 ```  
   
 ### Parameters  
- `nPos`  
+ *nPos*  
  New position of the progress bar control.  
   
 ### Return Value  
@@ -406,10 +406,10 @@ void SetRange32(
 ```  
   
 ### Parameters  
- `nLower`  
+ *nLower*  
  Specifies the lower limit of the range (default is zero).  
   
- `nUpper`  
+ *nUpper*  
  Specifies the upper limit of the range (default is 100).  
   
 ### Remarks  
@@ -429,7 +429,7 @@ int SetState(int iState);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `iState`|The state to set the progress bar. Use one of the following values:<br /><br /> - `PBST_NORMAL` - In progress<br />- `PBST_ERROR` - Error<br />- `PBST_PAUSED` - Paused|  
+|[in] *iState*|The state to set the progress bar. Use one of the following values:<br /><br /> - PBST_NORMAL - In progress<br />- PBST_ERROR - Error<br />- PBST_PAUSED - Paused|  
   
 ### Return Value  
  The previous state of the current progress bar control.  

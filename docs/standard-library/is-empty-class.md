@@ -25,12 +25,12 @@ struct is_empty;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` is an empty class, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is an empty class, otherwise it holds false.
 
 ## Example
 

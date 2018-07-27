@@ -52,7 +52,7 @@ void* Allocate(size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `nBytes`  
+ *nBytes*  
  The requested number of bytes in the new memory block.  
   
 ### Return Value  
@@ -72,7 +72,7 @@ void Free(void* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to memory previously allocated by this memory manager.  
   
 ### Remarks  
@@ -89,7 +89,7 @@ size_t GetSize(void* p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to memory previously allocated by this memory manager.  
   
 ### Return Value  
@@ -106,10 +106,10 @@ void* Reallocate(void* p, size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  Pointer to memory previously allocated by this memory manager.  
   
- `nBytes`  
+ *nBytes*  
  The requested number of bytes in the new memory block.  
   
 ### Return Value  
@@ -124,7 +124,7 @@ void* Reallocate(void* p, size_t nBytes) throw();
  For an example, see the [IAtlMemMgr Overview](../../atl/reference/iatlmemmgr-class.md).  
   
 ##  <a name="get_allowcontextmenu"></a>  IAxWinAmbientDispatch::get_AllowContextMenu  
- The **AllowContextMenu** property specifies whether the hosted control is allowed to display its own context menu.  
+ The `AllowContextMenu` property specifies whether the hosted control is allowed to display its own context menu.  
   
 ```
 STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
@@ -135,13 +135,13 @@ STDMETHOD(get_AllowContextMenu)(VARIANT_BOOL* pbAllowContextMenu);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
+ The ATL host object implementation uses VARIANT_TRUE as the default value of this property.  
   
 ##  <a name="get_allowshowui"></a>  IAxWinAmbientDispatch::get_AllowShowUI  
- The **AllowShowUI** property specifies whether the hosted control is allowed to display its own user interface.  
+ The `AllowShowUI` property specifies whether the hosted control is allowed to display its own user interface.  
   
 ```
 STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
@@ -152,13 +152,13 @@ STDMETHOD(get_AllowShowUI)(VARIANT_BOOL* pbAllowShowUI);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **VARIANT_FALSE** as the default value of this property.  
+ The ATL host object implementation uses VARIANT_FALSE as the default value of this property.  
   
 ##  <a name="get_allowwindowlessactivation"></a>  IAxWinAmbientDispatch::get_AllowWindowlessActivation  
- The **AllowWindowlessActivation** property specifies whether the container will allow windowless activation.  
+ The `AllowWindowlessActivation` property specifies whether the container will allow windowless activation.  
   
 ```
 STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
@@ -169,10 +169,10 @@ STDMETHOD(get_AllowWindowlessActivation)(VARIANT_BOOL* pbAllowWindowless);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
+ The ATL host object implementation uses VARIANT_TRUE as the default value of this property.  
   
 ##  <a name="get_backcolor"></a>  IAxWinAmbientDispatch::get_BackColor  
  The `BackColor` property specifies the ambient background color of the container.  
@@ -186,13 +186,13 @@ STDMETHOD(get_BackColor)(OLE_COLOR* pclrBackground);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **COLOR_BTNFACE** or **COLOR_WINDOW** as the default value of this property (depending on whether the parent of the host window is a dialog or not).  
+ The ATL host object implementation uses COLOR_BTNFACE or COLOR_WINDOW as the default value of this property (depending on whether the parent of the host window is a dialog or not).  
   
 ##  <a name="get_displayasdefault"></a>  IAxWinAmbientDispatch::get_DisplayAsDefault  
- **DisplayAsDefault** is an ambient property that allows a control to find out if it is the default control.  
+ `DisplayAsDefault` is an ambient property that allows a control to find out if it is the default control.  
   
 ```
 STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
@@ -203,13 +203,13 @@ STDMETHOD(get_DisplayAsDefault)(VARIANT_BOOL* pbDisplayAsDefault);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **VARIANT_FALSE** as the default value of this property.  
+ The ATL host object implementation uses VARIANT_FALSE as the default value of this property.  
   
 ##  <a name="get_dochostdoubleclickflags"></a>  IAxWinAmbientDispatch::get_DocHostDoubleClickFlags  
- The **DocHostDoubleClickFlags** property specifies the operation that should take place in response to a double-click.  
+ The `DocHostDoubleClickFlags` property specifies the operation that should take place in response to a double-click.  
   
 ```
 STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
@@ -220,13 +220,13 @@ STDMETHOD(get_DocHostDoubleClickFlags)(DWORD* pdwDocHostDoubleClickFlags);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **DOCHOSTUIDBLCLK_DEFAULT** as the default value of this property.  
+ The ATL host object implementation uses DOCHOSTUIDBLCLK_DEFAULT as the default value of this property.  
   
 ##  <a name="get_dochostflags"></a>  IAxWinAmbientDispatch::get_DocHostFlags  
- The **DocHostFlags** property specifies the user interface capabilities of the host object.  
+ The `DocHostFlags` property specifies the user interface capabilities of the host object.  
   
 ```
 STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
@@ -237,24 +237,24 @@ STDMETHOD(get_DocHostFlags)(DWORD* pdwDocHostFlags);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **DOCHOSTUIFLAG_NO3DBORDER** as the default value of this property.  
+ The ATL host object implementation uses DOCHOSTUIFLAG_NO3DBORDER as the default value of this property.  
   
 ##  <a name="get_font"></a>  IAxWinAmbientDispatch::get_Font  
- The **Font** property specifies the ambient font of the container.  
+ The `Font` property specifies the ambient font of the container.  
   
 ```
 STDMETHOD(get_Font)(IFontDisp** pFont);
 ```  
   
 ### Parameters  
- `pFont`  
- [out] The address of an **IFontDisp** interface pointer used to receive the current value of this property.  
+ *pFont*  
+ [out] The address of an `IFontDisp` interface pointer used to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  The ATL host object implementation uses the default GUI font or the system font as the default value of this property.  
@@ -271,13 +271,13 @@ STDMETHOD(get_ForeColor)(OLE_COLOR* pclrForeground);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  The ATL host object implementation uses the system window text color as the default value of this property.  
   
 ##  <a name="get_localeid"></a>  IAxWinAmbientDispatch::get_LocaleID  
- The **LocaleID** property specifies the ambient locale ID of the container.  
+ The `LocaleID` property specifies the ambient locale ID of the container.  
   
 ```
 STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
@@ -288,7 +288,7 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  The ATL host object implementation uses the user's default locale as the default value of this property.  
@@ -296,7 +296,7 @@ STDMETHOD(get_LocaleID)(LCID* plcidLocaleID);
  With this method you can discover the Ambient LocalID, that is, the LocaleID of the program your control is being used in. Once you know the LocaleID, you can call code to load locale-specific captions, error message text, and so forth from a resource file or satellite DLL.  
   
 ##  <a name="get_messagereflect"></a>  IAxWinAmbientDispatch::get_MessageReflect  
- The **MessageReflect** ambient property specifies whether the container will reflect messages to the hosted control.  
+ The `MessageReflect` ambient property specifies whether the container will reflect messages to the hosted control.  
   
 ```
 STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
@@ -307,13 +307,13 @@ STDMETHOD(get_MessageReflect)(VARIANT_BOOL* pbMessageReflect);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
+ The ATL host object implementation uses VARIANT_TRUE as the default value of this property.  
   
 ##  <a name="get_optionkeypath"></a>  IAxWinAmbientDispatch::get_OptionKeyPath  
- The **OptionKeyPath** property specifies the registry key path to user settings.  
+ The `OptionKeyPath` property specifies the registry key path to user settings.  
   
 ```
 STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
@@ -324,10 +324,10 @@ STDMETHOD(get_OptionKeyPath)(BSTR* pbstrOptionKeyPath);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="get_showgrabhandles"></a>  IAxWinAmbientDispatch::get_ShowGrabHandles  
- The **ShowGrabHandles** ambient property allows the control to find out if it should draw itself with grab handles.  
+ The `ShowGrabHandles` ambient property allows the control to find out if it should draw itself with grab handles.  
   
 ```
 STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
@@ -338,13 +338,13 @@ STDMETHOD(get_ShowGrabHandles)(VARIANT_BOOL* pbShowGrabHandles);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation always returns **VARIANT_FALSE** as the value of this property.  
+ The ATL host object implementation always returns VARIANT_FALSE as the value of this property.  
   
 ##  <a name="get_showhatching"></a>  IAxWinAmbientDispatch::get_ShowHatching  
- The **ShowHatching** ambient property allows the control to find out if it should draw itself hatched.  
+ The `ShowHatching` ambient property allows the control to find out if it should draw itself hatched.  
   
 ```
 STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
@@ -355,13 +355,13 @@ STDMETHOD(get_ShowHatching)(VARIANT_BOOL* pbShowHatching);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation always returns **VARIANT_FALSE** as the value of this property.  
+ The ATL host object implementation always returns VARIANT_FALSE as the value of this property.  
   
 ##  <a name="get_usermode"></a>  IAxWinAmbientDispatch::get_UserMode  
- The **UserMode** property specifies the ambient user mode of the container.  
+ The `UserMode` property specifies the ambient user mode of the container.  
   
 ```
 STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
@@ -372,13 +372,13 @@ STDMETHOD(get_UserMode)(VARIANT_BOOL* pbUserMode);
  [out] The address of a variable to receive the current value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
+ The ATL host object implementation uses VARIANT_TRUE as the default value of this property.  
   
 ##  <a name="put_allowcontextmenu"></a>  IAxWinAmbientDispatch::put_AllowContextMenu  
- The **AllowContextMenu** property specifies whether the hosted control is allowed to display its own context menu.  
+ The `AllowContextMenu` property specifies whether the hosted control is allowed to display its own context menu.  
   
 ```
 STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
@@ -389,13 +389,13 @@ STDMETHOD(put_AllowContextMenu)(VARIANT_BOOL bAllowContextMenu);
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
+ The ATL host object implementation uses VARIANT_TRUE as the default value of this property.  
   
 ##  <a name="put_allowshowui"></a>  IAxWinAmbientDispatch::put_AllowShowUI  
- The **AllowShowUI** property specifies whether the hosted control is allowed to display its own user interface.  
+ The `AllowShowUI` property specifies whether the hosted control is allowed to display its own user interface.  
   
 ```
 STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
@@ -406,13 +406,13 @@ STDMETHOD(put_AllowShowUI)(VARIANT_BOOL bAllowShowUI);
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **VARIANT_FALSE** as the default value of this property.  
+ The ATL host object implementation uses VARIANT_FALSE as the default value of this property.  
   
 ##  <a name="put_allowwindowlessactivation"></a>  IAxWinAmbientDispatch::put_AllowWindowlessActivation  
- The **AllowWindowlessActivation** property specifies whether the container will allow windowless activation.  
+ The `AllowWindowlessActivation` property specifies whether the container will allow windowless activation.  
   
 ```
 STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
@@ -423,10 +423,10 @@ STDMETHOD(put_AllowWindowlessActivation)(VARIANT_BOOL bAllowWindowless);
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
+ The ATL host object implementation uses VARIANT_TRUE as the default value of this property.  
   
 ##  <a name="put_backcolor"></a>  IAxWinAmbientDispatch::put_BackColor  
  The `BackColor` property specifies the ambient background color of the container.  
@@ -440,30 +440,30 @@ STDMETHOD(put_BackColor)(OLE_COLOR clrBackground);
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **COLOR_BTNFACE** or **COLOR_WINDOW** as the default value of this property (depending on whether the parent of the host window is a dialog or not).  
+ The ATL host object implementation uses COLOR_BTNFACE or COLOR_WINDOW as the default value of this property (depending on whether the parent of the host window is a dialog or not).  
   
 ##  <a name="put_displayasdefault"></a>  IAxWinAmbientDispatch::put_DisplayAsDefault  
- **DisplayAsDefault** is an ambient property that allows a control to find out if it is the default control.  
+ `DisplayAsDefault` is an ambient property that allows a control to find out if it is the default control.  
   
 ```
 STDMETHOD(put_DisplayAsDefault)(VARIANT_BOOL bDisplayAsDefault);
 ```  
   
 ### Parameters  
- `bDisplayAsDefault`  
+ *bDisplayAsDefault*  
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **VARIANT_FALSE** as the default value of this property.  
+ The ATL host object implementation uses VARIANT_FALSE as the default value of this property.  
   
 ##  <a name="put_dochostdoubleclickflags"></a>  IAxWinAmbientDispatch::put_DocHostDoubleClickFlags  
- The **DocHostDoubleClickFlags** property specifies the operation that should take place in response to a double-click.  
+ The `DocHostDoubleClickFlags` property specifies the operation that should take place in response to a double-click.  
   
 ```
 STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
@@ -474,13 +474,13 @@ STDMETHOD(put_DocHostDoubleClickFlags)(DWORD dwDocHostDoubleClickFlags);
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **DOCHOSTUIDBLCLK_DEFAULT** as the default value of this property.  
+ The ATL host object implementation uses DOCHOSTUIDBLCLK_DEFAULT as the default value of this property.  
   
 ##  <a name="put_dochostflags"></a>  IAxWinAmbientDispatch::put_DocHostFlags  
- The **DocHostFlags** property specifies the user interface capabilities of the host object.  
+ The `DocHostFlags` property specifies the user interface capabilities of the host object.  
   
 ```
 STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
@@ -491,24 +491,24 @@ STDMETHOD(put_DocHostFlags)(DWORD dwDocHostFlags);
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses **DOCHOSTUIFLAG_NO3DBORDER** as the default value of this property.  
+ The ATL host object implementation uses DOCHOSTUIFLAG_NO3DBORDER as the default value of this property.  
   
 ##  <a name="put_font"></a>  IAxWinAmbientDispatch::put_Font  
- The **Font** property specifies the ambient font of the container.  
+ The `Font` property specifies the ambient font of the container.  
   
 ```
 STDMETHOD(put_Font)(IFontDisp* pFont);
 ```  
   
 ### Parameters  
- `pFont`  
+ *pFont*  
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  The ATL host object implementation uses the default GUI font or the system font as the default value of this property.  
@@ -525,13 +525,13 @@ STDMETHOD(put_ForeColor)(OLE_COLOR clrForeground);
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  The ATL host object implementation uses the system window text color as the default value of this property.  
   
 ##  <a name="put_localeid"></a>  IAxWinAmbientDispatch::put_LocaleID  
- The **LocaleID** property specifies the ambient locale ID of the container.  
+ The `LocaleID` property specifies the ambient locale ID of the container.  
   
 ```
 STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
@@ -542,30 +542,30 @@ STDMETHOD(put_LocaleID)(LCID lcidLocaleID);
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  The ATL host object implementation uses the user's default locale as the default value of this property.  
   
 ##  <a name="put_messagereflect"></a>  IAxWinAmbientDispatch::put_MessageReflect  
- The **MessageReflect** ambient property specifies whether the container will reflect messages to the hosted control.  
+ The `MessageReflect` ambient property specifies whether the container will reflect messages to the hosted control.  
   
 ```
 STDMETHOD(put_MessageReflect)(VARIANT_BOOL bMessageReflect);
 ```  
   
 ### Parameters  
- `bMessageReflect`  
+ *bMessageReflect*  
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
+ The ATL host object implementation uses VARIANT_TRUE as the default value of this property.  
   
 ##  <a name="put_optionkeypath"></a>  IAxWinAmbientDispatch::put_OptionKeyPath  
- The **OptionKeyPath** property specifies the registry key path to user settings.  
+ The `OptionKeyPath` property specifies the registry key path to user settings.  
   
 ```
 STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
@@ -576,24 +576,24 @@ STDMETHOD(put_OptionKeyPath)(BSTR bstrOptionKeyPath);
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="put_usermode"></a>  IAxWinAmbientDispatch::put_UserMode  
- The **UserMode** property specifies the ambient user mode of the container.  
+ The `UserMode` property specifies the ambient user mode of the container.  
   
 ```
 STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 ```  
   
 ### Parameters  
- `bUserMode`  
+ *bUserMode*  
  [in] The new value of this property.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- The ATL host object implementation uses `VARIANT_TRUE` as the default value of this property.  
+ The ATL host object implementation uses VARIANT_TRUE as the default value of this property.  
   
 ##  <a name="setambientdispatch"></a>  IAxWinAmbientDispatchEx::SetAmbientDispatch  
  This method is called to supplement the default ambient property interface with a user-defined interface.  
@@ -613,7 +613,7 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
  When `SetAmbientDispatch` is called with a pointer to a new interface, this new interface will be used to invoke any properties or methods asked for by the hosted control — if those properties are not already provided by [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md).  
   
 ##  <a name="attachcontrol"></a>  IAxWinHostWindow::AttachControl  
- Attaches an existing (and previously initialized) control to the host object using the window identified by `hWnd`.  
+ Attaches an existing (and previously initialized) control to the host object using the window identified by *hWnd*.  
   
 ```
 STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
@@ -621,16 +621,16 @@ STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
   
 ### Parameters  
  *pUnkControl*  
- [in] A pointer to the **IUnknown** interface of the control to be attached to the host object.  
+ [in] A pointer to the `IUnknown` interface of the control to be attached to the host object.  
   
- `hWnd`  
+ *hWnd*  
  [in] A handle to the window to be used for hosting.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="createcontrol"></a>  IAxWinHostWindow::CreateControl  
- Creates a control, initializes it, and hosts it in the window identified by `hWnd`.  
+ Creates a control, initializes it, and hosts it in the window identified by *hWnd*.  
   
 ```
 STDMETHOD(CreateControl)(
@@ -640,17 +640,17 @@ STDMETHOD(CreateControl)(
 ```  
   
 ### Parameters  
- `lpTricsData`  
+ *lpTricsData*  
  [in] A string identifying the control to create. Can be a CLSID (must include the braces), ProgID, URL, or raw HTML (prefixed by **MSHTML:**).  
   
- `hWnd`  
+ *hWnd*  
  [in] A handle to the window to be used for hosting.  
   
- `pStream`  
- [in] An interface pointer for a stream containing initialization data for the control. Can be **NULL**.  
+ *pStream*  
+ [in] An interface pointer for a stream containing initialization data for the control. Can be NULL.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  This window will be subclassed by the host object exposing this interface so that messages can be reflected to the control and other container features will work.  
@@ -673,26 +673,26 @@ STDMETHOD(CreateControlEx)(
 ```  
   
 ### Parameters  
- `lpTricsData`  
+ *lpTricsData*  
  [in] A string identifying the control to create. Can be a CLSID (must include the braces), ProgID, URL, or raw HTML (prefixed with **MSHTML:**).  
   
- `hWnd`  
+ *hWnd*  
  [in] A handle to the window to be used for hosting.  
   
- `pStream`  
- [in] An interface pointer for a stream containing initialization data for the control. Can be **NULL**.  
+ *pStream*  
+ [in] An interface pointer for a stream containing initialization data for the control. Can be NULL.  
   
- `ppUnk`  
- [out] The address of a pointer that will receive the **IUnknown** interface of the created control. Can be **NULL**.  
+ *ppUnk*  
+ [out] The address of a pointer that will receive the `IUnknown` interface of the created control. Can be NULL.  
   
  *riidAdvise*  
- [in] The interface identifier of an outgoing interface on the contained object. Can be **IID_NULL**.  
+ [in] The interface identifier of an outgoing interface on the contained object. Can be IID_NULL.  
   
  *punkAdvise*  
- [in] A pointer to the **IUnknown** interface of the sink object to be connected to the connection point on the contained object specified by `iidSink`.  
+ [in] A pointer to the `IUnknown` interface of the sink object to be connected to the connection point on the contained object specified by `iidSink`.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  Unlike the `CreateControl` method, `CreateControlEx` also allows you to receive an interface pointer to the newly created control and set up an event sink to receive events fired by the control.  
@@ -707,14 +707,14 @@ STDMETHOD(QueryControl)(REFIID riid, void** ppvObject);
 ```  
   
 ### Parameters  
- `riid`  
+ *riid*  
  [in] The ID of an interface on the control being requested.  
   
- `ppvObject`  
+ *ppvObject*  
  [out] The address of a pointer that will receive the specified interface of the created control.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="setexternaldispatch"></a>  IAxWinHostWindow::SetExternalDispatch  
  Sets the external dispinterface, which is available to contained controls through the [IDocHostUIHandlerDispatch::GetExternal](../../atl/reference/idochostuihandlerdispatch-interface.md) method.  
@@ -724,11 +724,11 @@ STDMETHOD(SetExternalDispatch)(IDispatch* pDisp);
 ```  
   
 ### Parameters  
- `pDisp`  
+ *pDisp*  
  [in] A pointer to an `IDispatch` interface.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ##  <a name="setexternaluihandler"></a>  IAxWinHostWindow::SetExternalUIHandler  
  Call this function to set the external [IDocHostUIHandlerDispatch](../../atl/reference/idochostuihandlerdispatch-interface.md) interface for the `CAxWindow` object.  
@@ -738,11 +738,11 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 ```  
   
 ### Parameters  
- `pDisp`  
- [in] A pointer to an **IDocHostUIHandlerDispatch** interface.  
+ *pDisp*  
+ [in] A pointer to an `IDocHostUIHandlerDispatch` interface.  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
  This function is used by controls (such as the Web browser control) that query the host's site for the `IDocHostUIHandlerDispatch` interface.  
@@ -759,7 +759,7 @@ STDMETHOD(CreateControlLic)(
 ```  
   
 ### Parameters  
- `bstrLic`  
+ *bstrLic*  
  [in] The BSTR that contains the license key for the control.  
   
 ### Remarks  
@@ -785,7 +785,7 @@ STDMETHOD(CreateControlLicEx)(
 ```  
   
 ### Parameters  
- `bstrLic`  
+ *bstrLic*  
  [in] The BSTR that contains the license key for the control.  
   
 ### Remarks  

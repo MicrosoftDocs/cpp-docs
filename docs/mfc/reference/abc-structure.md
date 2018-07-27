@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # ABC Structure
-The **ABC** structure contains the width of a character in a TrueType font.  
+The `ABC` structure contains the width of a character in a TrueType font.  
   
 ## Syntax  
   

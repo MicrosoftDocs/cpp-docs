@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IOleInPlaceObjectWindowlessImpl Class
-This class implements **IUnknown** and provides methods that enable a windowless control to receive window messages and to participate in drag-and-drop operations.  
+This class implements `IUnknown` and provides methods that enable a windowless control to receive window messages and to participate in drag-and-drop operations.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -26,7 +26,7 @@ class IOleInPlaceObjectWindowlessImpl
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IOleInPlaceObjectWindowlessImpl`.  
   
 ## Members  
@@ -35,17 +35,17 @@ class IOleInPlaceObjectWindowlessImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp](#contextsensitivehelp)|Enables context-sensitive help. The ATL implementation returns **E_NOTIMPL**.|  
-|[IOleInPlaceObjectWindowlessImpl::GetDropTarget](#getdroptarget)|Supplies the `IDropTarget` interface for an in-place active, windowless object that supports drag and drop. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp](#contextsensitivehelp)|Enables context-sensitive help. The ATL implementation returns E_NOTIMPL.|  
+|[IOleInPlaceObjectWindowlessImpl::GetDropTarget](#getdroptarget)|Supplies the `IDropTarget` interface for an in-place active, windowless object that supports drag and drop. The ATL implementation returns E_NOTIMPL.|  
 |[IOleInPlaceObjectWindowlessImpl::GetWindow](#getwindow)|Gets a window handle.|  
 |[IOleInPlaceObjectWindowlessImpl::InPlaceDeactivate](#inplacedeactivate)|Deactivates an active in-place control.|  
 |[IOleInPlaceObjectWindowlessImpl::OnWindowMessage](#onwindowmessage)|Dispatches a message from the container to a windowless control that is in-place active.|  
-|[IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo](#reactivateandundo)|Reactivates a previously deactivated control. The ATL implementation returns **E_NOTIMPL**.|  
+|[IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo](#reactivateandundo)|Reactivates a previously deactivated control. The ATL implementation returns E_NOTIMPL.|  
 |[IOleInPlaceObjectWindowlessImpl::SetObjectRects](#setobjectrects)|Indicates what part of the in-place control is visible.|  
 |[IOleInPlaceObjectWindowlessImpl::UIDeactivate](#uideactivate)|Deactivates and removes the user interface that supports in-place activation.|  
   
 ## Remarks  
- The [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) interface manages the reactivation and deactivation of in-place controls and determines how much of the control should be visible. The [IOleInPlaceObjectWindowless](http://msdn.microsoft.com/library/windows/desktop/ms687304) interface enables a windowless control to receive window messages and to participate in drag-and-drop operations. Class `IOleInPlaceObjectWindowlessImpl` provides a default implementation of `IOleInPlaceObject` and `IOleInPlaceObjectWindowless` and implements **IUnknown** by sending information to the dump device in debug builds.  
+ The [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) interface manages the reactivation and deactivation of in-place controls and determines how much of the control should be visible. The [IOleInPlaceObjectWindowless](http://msdn.microsoft.com/library/windows/desktop/ms687304) interface enables a windowless control to receive window messages and to participate in drag-and-drop operations. Class `IOleInPlaceObjectWindowlessImpl` provides a default implementation of `IOleInPlaceObject` and `IOleInPlaceObjectWindowless` and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -58,7 +58,7 @@ class IOleInPlaceObjectWindowlessImpl
  **Header:** atlctl.h  
   
 ##  <a name="contextsensitivehelp"></a>  IOleInPlaceObjectWindowlessImpl::ContextSensitiveHelp  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ```
 HRESULT ContextSensitiveHelp(BOOL fEnterMode);
@@ -68,7 +68,7 @@ HRESULT ContextSensitiveHelp(BOOL fEnterMode);
  See [IOleWindow::ContextSensitiveHelp](http://msdn.microsoft.com/library/windows/desktop/ms680059) in the Windows SDK.  
   
 ##  <a name="getdroptarget"></a>  IOleInPlaceObjectWindowlessImpl::GetDropTarget  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ```
 HRESULT GetDropTarget(IDropTarget** ppDropTarget);
@@ -85,7 +85,7 @@ HRESULT GetWindow(HWND* phwnd);
 ```  
   
 ### Remarks  
- Some containers will not work with a control that has been windowless, even if it is currently windowed. In ATL's implementation, if the control class's data member `m_bWasOnceWindowless` is **TRUE**, the function returns **E_FAIL**. Otherwise, if *phwnd* is not **NULL**, `GetWindow` sets \* *phwnd* to the control class's data member `m_hWnd` and returns `S_OK`.  
+ Some containers will not work with a control that has been windowless, even if it is currently windowed. In ATL's implementation, if the control class's data member `m_bWasOnceWindowless` is TRUE, the function returns E_FAIL. Otherwise, if *phwnd* is not NULL, `GetWindow` sets \* *phwnd* to the control class's data member `m_hWnd` and returns S_OK.  
   
  See [IOleWindow::GetWindow](http://msdn.microsoft.com/library/windows/desktop/ms687282) in the Windows SDK.  
   
@@ -97,7 +97,7 @@ HRESULT InPlaceDeactivate(HWND* phwnd);
 ```  
   
 ### Remarks  
- This method performs a full or partial deactivation depending on the state of the control. If necessary, the control's user interface is deactivated, and the control's window, if any, is destroyed. The container is notified that the control is no longer active in place. The **IOleInPlaceUIWindow** interface used by the container to negotiate menus and border space is released.  
+ This method performs a full or partial deactivation depending on the state of the control. If necessary, the control's user interface is deactivated, and the control's window, if any, is destroyed. The container is notified that the control is no longer active in place. The `IOleInPlaceUIWindow` interface used by the container to negotiate menus and border space is released.  
   
  See [IOleInPlaceObject::InPlaceDeactivate](http://msdn.microsoft.com/library/windows/desktop/ms679700) in the Windows SDK.  
   
@@ -116,7 +116,7 @@ HRESULT OnWindowMessage(
  See [IOleInPlaceObjectWindowless::OnWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms693783) in the Windows SDK.  
   
 ##  <a name="reactivateandundo"></a>  IOleInPlaceObjectWindowlessImpl::ReactivateAndUndo  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ```
 HRESULT ReactivateAndUndo();
@@ -145,7 +145,7 @@ HRESULT UIDeactivate();
 ```  
   
 ### Remarks  
- Sets the control class's data member `m_bUIActive` to **FALSE**. The ATL implementation of this function always returns `S_OK`.  
+ Sets the control class's data member `m_bUIActive` to FALSE. The ATL implementation of this function always returns S_OK.  
   
  See [IOleInPlaceObject::UIDeactivate](http://msdn.microsoft.com/library/windows/desktop/ms693348) in the Windows SDK.  
   

@@ -26,10 +26,10 @@ class CHeapPtr : public CHeapPtrBase<T, Allocator>
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The object type to be stored on the heap.  
   
- `Allocator`  
+ *Allocator*  
  The memory allocation class to use.  
   
 ## Members  
@@ -72,7 +72,7 @@ bool Allocate(size_t nElements = 1) throw();
 ```  
   
 ### Parameters  
- `nElements`  
+ *nElements*  
  The number of elements used to calculate the amount of memory to allocate. The default value is 1.  
   
 ### Return Value  
@@ -94,7 +94,7 @@ CHeapPtr(CHeapPtr<T, Allocator>& p) throw();
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  An existing heap pointer or `CHeapPtr`.  
   
 ### Remarks  
@@ -112,7 +112,7 @@ CHeapPtr<T, Allocator>& operator=(
 ```  
   
 ### Parameters  
- `p`  
+ *p*  
  An existing `CHeapPtr` object.  
   
 ### Return Value  
@@ -129,7 +129,7 @@ bool Reallocate(size_t nElements) throw();
 ```  
   
 ### Parameters  
- `nElements`  
+ *nElements*  
  The new number of elements used to calculate the amount of memory to allocate.  
   
 ### Return Value  

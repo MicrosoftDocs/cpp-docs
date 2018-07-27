@@ -1,7 +1,7 @@
 ---
 title: "Setting the Dialog Box’s Background Color | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "07/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,7 +12,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Setting the Dialog Box’s Background Color
-You can set the background color of your dialog boxes by handling `WM_CTLCOLOR` messages for the dialog box window. The color you set is used for only the specified dialog box.  
+You can set the background color of your dialog boxes by handling WM_CTLCOLOR messages for the dialog box window. The color you set is used for only the specified dialog box.
+
+See [codexpert blog](http://codexpert.ro/blog/2013/03/13/painting-the-dialog-backround/) for an example.  
   
 ## See Also  
  [Life Cycle of a Dialog Box](../mfc/life-cycle-of-a-dialog-box.md)   

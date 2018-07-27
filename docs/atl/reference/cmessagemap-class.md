@@ -47,7 +47,7 @@ class ATL_NO_VTABLE CMessageMap
  **Header:** atlwin.h  
   
 ##  <a name="processwindowmessage"></a>  CMessageMap::ProcessWindowMessage  
- Accesses the message map identified by `dwMsgMapID` in a `CMessageMap`-derived class.  
+ Accesses the message map identified by *dwMsgMapID* in a `CMessageMap`-derived class.  
   
 ```
 virtual BOOL ProcessWindowMessage(  
@@ -60,26 +60,26 @@ virtual BOOL ProcessWindowMessage(
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  [in] The handle to the window receiving the message.  
   
- `uMsg`  
+ *uMsg*  
  [in] The message sent to the window.  
   
- `wParam`  
+ *wParam*  
  [in] Additional message-specific information.  
   
- `lParam`  
+ *lParam*  
  [in] Additional message-specific information.  
   
- `lResult`  
+ *lResult*  
  [out] The result of the message processing.  
   
- `dwMsgMapID`  
+ *dwMsgMapID*  
  [in] The identifier of the message map that will process the message. The default message map, declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), is identified by 0. An alternate message map, declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), is identified by `msgMapID`.  
   
 ### Return Value  
- **TRUE** if the message is fully handled; otherwise, **FALSE**.  
+ TRUE if the message is fully handled; otherwise, FALSE.  
   
 ### Remarks  
  Called by the window procedure of a [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) object or of an object that is dynamically chaining to the message map.  

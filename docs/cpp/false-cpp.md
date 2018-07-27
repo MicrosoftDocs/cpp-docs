@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # false (C++)
-The keyword is one of the two values for a variable of type [bool](../cpp/bool-cpp.md) or a conditional expression (a conditional expression is now a **true** Boolean expression). For example, if `i` is a variable of type `bool`, the `i = false;` statement assigns **false** to `i`.  
+The keyword is one of the two values for a variable of type [bool](../cpp/bool-cpp.md) or a conditional expression (a conditional expression is now a **true** Boolean expression). For example, if `i` is a variable of type **bool**, the `i = false;` statement assigns **false** to `i`.  
   
 ## Example  
   

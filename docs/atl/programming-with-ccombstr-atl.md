@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Programming with CComBSTR (ATL)
-The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper around the `BSTR` data type. While `CComBSTR` is a useful tool, there are several situations that require caution.  
+The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper around the BSTR data type. While `CComBSTR` is a useful tool, there are several situations that require caution.  
   
 -   [Conversion Issues](#programmingwithccombstr_conversionissues)  
   
@@ -36,7 +36,7 @@ The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper 
  [!code-cpp[NVC_ATL_Utilities#115](../atl/codesnippet/cpp/programming-with-ccombstr-atl_2.cpp)]  
   
 ##  <a name="programmingwithccombstr_scopeissues"></a> Scope Issues  
- As with any well-behaved class, `CComBSTR` will free its resources when it goes out of scope. If a function returns a pointer to the `CComBSTR` string, this can cause problems, as the pointer will reference memory that has already been freed. In these cases, use the **Copy** method, as shown below.  
+ As with any well-behaved class, `CComBSTR` will free its resources when it goes out of scope. If a function returns a pointer to the `CComBSTR` string, this can cause problems, as the pointer will reference memory that has already been freed. In these cases, use the `Copy` method, as shown below.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#116](../atl/codesnippet/cpp/programming-with-ccombstr-atl_3.cpp)]  
@@ -48,7 +48,7 @@ The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper 
  [!code-cpp[NVC_ATL_Utilities#117](../atl/codesnippet/cpp/programming-with-ccombstr-atl_4.cpp)]  
   
 ##  <a name="programmingwithccombstr_usingloops"></a> Using CComBSTR Objects in Loops  
- As the `CComBSTR` class allocates a buffer to perform certain operations, such as the `+=` operator or **Append** method, it is not recommended that you perform string manipulation inside a tight loop. In these situations, `CStringT` provides better performance.  
+ As the `CComBSTR` class allocates a buffer to perform certain operations, such as the `+=` operator or `Append` method, it is not recommended that you perform string manipulation inside a tight loop. In these situations, `CStringT` provides better performance.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#118](../atl/codesnippet/cpp/programming-with-ccombstr-atl_5.cpp)]  
@@ -60,7 +60,7 @@ The ATL class [CComBSTR](../atl/reference/ccombstr-class.md) provides a wrapper 
   
  [!code-cpp[NVC_ATL_Utilities#119](../atl/codesnippet/cpp/programming-with-ccombstr-atl_6.cpp)]  
   
- To avoid the leak, call the **Empty** method on existing `CComBSTR` objects before passing the address as an **[out]** parameter.  
+ To avoid the leak, call the `Empty` method on existing `CComBSTR` objects before passing the address as an **[out]** parameter.  
   
  Note that the same code would not cause a leak if the function's parameter was **[in, out]**.  
   

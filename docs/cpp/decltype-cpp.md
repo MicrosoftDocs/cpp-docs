@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # decltype  (C++)
-The `decltype` type specifier yields the type of a specified expression. The `decltype` type specifier, together with the [auto keyword](../cpp/auto-cpp.md), is useful primarily to developers who write template libraries. Use `auto` and `decltype` to declare a template function whose return type depends on the types of its template arguments. Or, use `auto` and `decltype` to declare a template function that wraps a call to another function, and then returns the return type of the wrapped function.  
+The `decltype` type specifier yields the type of a specified expression. The `decltype` type specifier, together with the [auto keyword](../cpp/auto-cpp.md), is useful primarily to developers who write template libraries. Use **auto** and `decltype` to declare a template function whose return type depends on the types of its template arguments. Or, use **auto** and `decltype` to declare a template function that wraps a call to another function, and then returns the return type of the wrapped function.  
   
 ## Syntax  
   
@@ -25,21 +25,21 @@ decltype( expression )
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`expression`|An expression. For more information, see [Expressions](../cpp/expressions-cpp.md).|  
+|*expression*|An expression. For more information, see [Expressions](../cpp/expressions-cpp.md).|  
   
 ## Return Value  
- The type of the `expression` parameter.  
+ The type of the *expression* parameter.  
   
 ## Remarks  
  The `decltype` type specifier is supported in Visual C++ 2010 or later versions, and can be used with native or managed code. `decltype(auto)` (C++14) is supported in Visual Studio 2015 and later.  
   
- The compiler uses the following rules to determine the type of the `expression` parameter.  
+ The compiler uses the following rules to determine the type of the *expression* parameter.  
   
--   If the `expression` parameter is an identifier or a [class member access](../cpp/member-access-operators-dot-and.md), `decltype(expression)` is the type of the entity named by `expression`. If there is no such entity or the `expression` parameter names a set of overloaded functions, the compiler yields an error message.  
+-   If the *expression* parameter is an identifier or a [class member access](../cpp/member-access-operators-dot-and.md), `decltype(expression)` is the type of the entity named by *expression*. If there is no such entity or the *expression* parameter names a set of overloaded functions, the compiler yields an error message.  
   
--   If the `expression` parameter is a call to a function or an overloaded operator function, `decltype(expression)` is the return type of the function. Parentheses around an overloaded operator are ignored.  
+-   If the *expression* parameter is a call to a function or an overloaded operator function, `decltype(expression)` is the return type of the function. Parentheses around an overloaded operator are ignored.  
   
--   If the `expression` parameter is an [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(expression)` is the type of `expression`. If the `expression` parameter is an [lvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(expression)` is an [lvalue reference](../cpp/lvalue-reference-declarator-amp.md) to the type of `expression`.  
+-   If the *expression* parameter is an [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(expression)` is the type of *expression*. If the *expression* parameter is an [lvalue](../cpp/lvalues-and-rvalues-visual-cpp.md), `decltype(expression)` is an [lvalue reference](../cpp/lvalue-reference-declarator-amp.md) to the type of *expression*.  
   
  The following code example demonstrates some uses of the `decltype` type specifier. First, assume that you have coded the following statements.  
   
@@ -54,24 +54,24 @@ const A* a = new A();
   
 |Statement|Type|Notes|  
 |---------------|----------|-----------|  
-|`decltype(fx());`|`const int&&`|An [rvalue reference](../cpp/rvalue-reference-declarator-amp-amp.md) to a `const int`.|  
-|`decltype(var);`|`int`|The type of variable `var`.|  
-|`decltype(a->x);`|`double`|The type of the member access.|  
-|`decltype((a->x));`|`const double&`|The inner parentheses cause the statement to be evaluated as an expression instead of a member access. And because `a` is declared as a `const` pointer, the type is a reference to `const double`.|  
+|`decltype(fx());`|`const int&&`|An [rvalue reference](../cpp/rvalue-reference-declarator-amp-amp.md) to a **const int**.|  
+|`decltype(var);`|**int**|The type of variable `var`.|  
+|`decltype(a->x);`|**double**|The type of the member access.|  
+|`decltype((a->x));`|`const double&`|The inner parentheses cause the statement to be evaluated as an expression instead of a member access. And because `a` is declared as a `const` pointer, the type is a reference to **const double**.|  
   
 ## Decltype and Auto  
  In C++14, you can use `decltype(auto)` with no trailing return type to declare a template function whose return type depends on the types of its template arguments.  
   
- In C++11, you can use the `decltype` type specifier on a trailing return type, together with the `auto` keyword, to declare a template function whose return type depends on the types of its template arguments. For example, consider the following code example in which the return type of the template function depends on the types of the template arguments. In the code example, the *UNKNOWN* placeholder indicates that the return type cannot be specified.  
+ In C++11, you can use the `decltype` type specifier on a trailing return type, together with the **auto** keyword, to declare a template function whose return type depends on the types of its template arguments. For example, consider the following code example in which the return type of the template function depends on the types of the template arguments. In the code example, the *UNKNOWN* placeholder indicates that the return type cannot be specified.  
   
 ```cpp  
 template<typename T, typename U>  
 UNKNOWN func(T&& t, U&& u){ return t + u; };   
 ```  
   
- The introduction of the `decltype` type specifier enables a developer to obtain the type of the expression that the template function returns. Use the *alternative function declaration syntax* that is shown later, the `auto` keyword, and the `decltype` type specifier to declare a *late-specified* return type. The late-specified return type is determined when the declaration is compiled, instead of when it is coded.  
+ The introduction of the `decltype` type specifier enables a developer to obtain the type of the expression that the template function returns. Use the *alternative function declaration syntax* that is shown later, the **auto** keyword, and the `decltype` type specifier to declare a *late-specified* return type. The late-specified return type is determined when the declaration is compiled, instead of when it is coded.  
   
- The following prototype illustrates the syntax of an alternative function declaration. Note that the `const` and `volatile` qualifiers, and the `throw` [exception specification](../cpp/exception-specifications-throw-cpp.md) are optional. The *function_body* placeholder represents a compound statement that specifies what the function does. As a best coding practice, the *expression* placeholder in the `decltype` statement should match the expression specified by the `return` statement, if any, in the *function_body*.  
+ The following prototype illustrates the syntax of an alternative function declaration. Note that the **const** and **volatile** qualifiers, and the **throw** [exception specification](../cpp/exception-specifications-throw-cpp.md) are optional. The *function_body* placeholder represents a compound statement that specifies what the function does. As a best coding practice, the *expression* placeholder in the `decltype` statement should match the expression specified by the **return** statement, if any, in the *function_body*.  
   
  **auto** *function_name* **(** *parameters*<sub>opt</sub> **)** **const**<sub>opt</sub> **volatile**<sub>opt</sub> **->** **decltype(** *expression* **)** **throw**<sub>opt</sub> **{** *function_body* **};**  
   

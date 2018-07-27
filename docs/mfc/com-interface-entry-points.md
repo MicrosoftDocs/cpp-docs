@@ -18,7 +18,7 @@ For member functions of a COM interface, use the [METHOD_PROLOGUE](com-interface
   
  [!code-cpp[NVC_MFCConnectionPoints#5](../mfc/codesnippet/cpp/com-interface-entry-points_1.cpp)]  
   
- For additional information, see [Technical Note 38](../mfc/tn038-mfc-ole-iunknown-implementation.md) on MFC/OLE **IUnknown** implementation.  
+ For additional information, see [Technical Note 38](../mfc/tn038-mfc-ole-iunknown-implementation.md) on MFC/OLE `IUnknown` implementation.  
   
  The `METHOD_PROLOGUE` macro is defined as:  
   

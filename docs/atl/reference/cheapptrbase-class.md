@@ -26,10 +26,10 @@ class CHeapPtrBase
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The object type to be stored on the heap.  
   
- `Allocator`  
+ *Allocator*  
  The memory allocation class to use. By default CRT routines are used to allocate and free memory.  
   
 ## Members  
@@ -79,7 +79,7 @@ bool AllocateBytes(size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `nBytes`  
+ *nBytes*  
  The number of bytes of memory to allocate.  
   
 ### Return Value  
@@ -96,7 +96,7 @@ void Attach(T* pData) throw();
 ```  
   
 ### Parameters  
- `pData`  
+ *pData*  
  The `CHeapPtrBase` object will take ownership of this pointer.  
   
 ### Remarks  
@@ -190,7 +190,7 @@ bool ReallocateBytes(size_t nBytes) throw();
 ```  
   
 ### Parameters  
- `nBytes`  
+ *nBytes*  
  The new amount of memory to allocate, in bytes.  
   
 ### Return Value  

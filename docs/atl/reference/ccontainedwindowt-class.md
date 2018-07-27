@@ -29,7 +29,7 @@ class CContainedWindowT : public TBase
  *TBase*  
  The base class of your new class. The default base class is `CWindow`.  
   
- `TWinTraits`  
+ *TWinTraits*  
  A traits class that defines styles for your window. The default is `CControlWinTraits`.  
   
 > [!NOTE]
@@ -68,12 +68,12 @@ class CContainedWindowT : public TBase
 ## Remarks  
  `CContainedWindowT` implements a window contained within another object. `CContainedWindowT`'s window procedure uses a message map in the containing object to direct messages to the appropriate handlers. When constructing a `CContainedWindowT` object, you specify which message map should be used.  
   
- `CContainedWindowT` allows you to create a new window by superclassing an existing window class. The **Create** method first registers a window class that is based on an existing class but uses `CContainedWindowT::WindowProc`. **Create** then creates a window based on this new window class. Each instance of `CContainedWindowT` can superclass a different window class.  
+ `CContainedWindowT` allows you to create a new window by superclassing an existing window class. The `Create` method first registers a window class that is based on an existing class but uses `CContainedWindowT::WindowProc`. `Create` then creates a window based on this new window class. Each instance of `CContainedWindowT` can superclass a different window class.  
   
  `CContainedWindowT` also supports window subclassing. The `SubclassWindow` method attaches an existing window to the `CContainedWindowT` object and changes the window procedure to `CContainedWindowT::WindowProc`. Each instance of `CContainedWindowT` can subclass a different window.  
   
 > [!NOTE]
->  For any given `CContainedWindowT` object, call either **Create** or `SubclassWindow`. You should not invoke both methods on the same object.  
+>  For any given `CContainedWindowT` object, call either `Create` or `SubclassWindow`. You should not invoke both methods on the same object.  
   
  When you use the **Add control based on** option in the ATL Project Wizard, the wizard will automatically add a `CContainedWindowT` data member to the class implementing the control. The following example shows how the contained window is declared:  
   
@@ -114,27 +114,27 @@ CContainedWindowT(
 ```     
   
 ### Parameters  
- `lpszClassName`  
+ *lpszClassName*  
  [in] The name of an existing window class on which the contained window will be based.  
   
- `pObject`  
+ *pObject*  
  [in] A pointer to the containing object that declares the message map. This object's class must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).  
   
- `dwMsgMapID`  
+ *dwMsgMapID*  
  [in] Identifies the message map that will process the contained window's messages. The default value, 0, specifies the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.  
   
 ### Remarks  
- If you want to create a new window through [Create](#create), you must pass the name of an existing window class for the `lpszClassName` parameter. For an example, see the [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) overview.  
+ If you want to create a new window through [Create](#create), you must pass the name of an existing window class for the *lpszClassName* parameter. For an example, see the [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) overview.  
   
  There are three constructors:  
   
 -   The constructor with three arguments is the one typically called.  
   
--   The constructor with two arguments uses the class name from **TBase::GetWndClassName**.  
+-   The constructor with two arguments uses the class name from `TBase::GetWndClassName`.  
   
--   The constructor with no arguments is used if you want to supply the arguments later. You must supply the window class name, message map object, and message map ID when you later call **Create**.  
+-   The constructor with no arguments is used if you want to supply the arguments later. You must supply the window class name, message map object, and message map ID when you later call `Create`.  
   
- If you subclass an existing window through [SubclassWindow](#subclasswindow), the `lpszClassName` value will not be used; therefore, you can pass **NULL** for this parameter.  
+ If you subclass an existing window through [SubclassWindow](#subclasswindow), the *lpszClassName* value will not be used; therefore, you can pass NULL for this parameter.  
   
 ##  <a name="create"></a>  CContainedWindowT::Create  
  Calls [RegisterWndSuperclass](#registerwndsuperclass) to register a window class that is based on an existing class but uses [CContainedWindowT::WindowProc](#windowproc).  
@@ -174,47 +174,47 @@ HWND Create(
 ```  
   
 ### Parameters  
- `lpszClassName`  
+ *lpszClassName*  
  [in] The name of an existing window class on which the contained window will be based.  
   
- `pObject`  
+ *pObject*  
  [in] A pointer to the containing object that declares the message map. This object's class must derive from [CMessageMap](../../atl/reference/cmessagemap-class.md).  
   
- `dwMsgMapID`  
+ *dwMsgMapID*  
  [in] Identifies the message map that will process the contained window's messages. The default value, 0, specifies the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.  
   
- `hWndParent`  
+ *hWndParent*  
  [in] The handle to the parent or owner window.  
   
- `rect`  
+ *rect*  
  [in] A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.  
   
- `szWindowName`  
- [in] Specifies the name of the window. The default value is **NULL**.  
+ *szWindowName*  
+ [in] Specifies the name of the window. The default value is NULL.  
   
- `dwStyle`  
- [in] The style of the window. The default value is **WS_CHILD &#124; WS_VISIBLE**. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
+ *dwStyle*  
+ [in] The style of the window. The default value is WS_CHILD &#124; WS_VISIBLE. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
   
- `dwExStyle`  
+ *dwExStyle*  
  [in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `MenuOrID`  
+ *MenuOrID*  
  [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.  
   
- `lpCreateParam`  
+ *lpCreateParam*  
  [in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680).  
   
 ### Return Value  
- If successful, the handle to the newly created window; otherwise, **NULL**.  
+ If successful, the handle to the newly created window; otherwise, NULL.  
   
 ### Remarks  
- The existing window class name is saved in [m_lpszClassName](#m_lpszclassname). **Create** then creates a window based on this new class. The newly created window is automatically attached to the `CContainedWindowT` object.  
+ The existing window class name is saved in [m_lpszClassName](#m_lpszclassname). `Create` then creates a window based on this new class. The newly created window is automatically attached to the `CContainedWindowT` object.  
   
 > [!NOTE]
->  Do not call **Create** if you have already called [SubclassWindow](#subclasswindow).  
+>  Do not call `Create` if you have already called [SubclassWindow](#subclasswindow).  
   
 > [!NOTE]
->  If 0 is used as the value for the `MenuOrID` parameter, it must be specified as 0U (the default value) to avoid a compiler error.  
+>  If 0 is used as the value for the *MenuOrID* parameter, it must be specified as 0U (the default value) to avoid a compiler error.  
   
 ##  <a name="defwindowproc"></a>  CContainedWindowT::DefWindowProc  
  Called by [WindowProc](#windowproc) to process messages not handled by the message map.  
@@ -228,13 +228,13 @@ LRESULT DefWindowProc(
 ```  
   
 ### Parameters  
- `uMsg`  
+ *uMsg*  
  [in] The message sent to the window.  
   
- `wParam`  
+ *wParam*  
  [in] Additional message-specific information.  
   
- `lParam`  
+ *lParam*  
  [in] Additional message-specific information.  
   
 ### Return Value  
@@ -244,7 +244,7 @@ LRESULT DefWindowProc(
  By default, `DefWindowProc` calls the [CallWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).  
   
 ##  <a name="getcurrentmessage"></a>  CContainedWindowT::GetCurrentMessage  
- Returns the current message ( **m_pCurrentMsg**).  
+ Returns the current message (`m_pCurrentMsg`).  
   
 ```
 const _ATL_MSG* GetCurrentMessage();
@@ -317,18 +317,18 @@ ATOM RegisterWndSuperClass();
  This window class is based on an existing class but uses [CContainedWindowT::WindowProc](#windowproc). The existing window class's name and window procedure are saved in [m_lpszClassName](#m_lpszclassname) and [m_pfnSuperWindowProc](#m_pfnsuperwindowproc), respectively.  
   
 ##  <a name="subclasswindow"></a>  CContainedWindowT::SubclassWindow  
- Subclasses the window identified by `hWnd` and attaches it to the `CContainedWindowT` object.  
+ Subclasses the window identified by *hWnd* and attaches it to the `CContainedWindowT` object.  
   
 ```
 BOOL SubclassWindow(HWND hWnd);
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  [in] The handle to the window being subclassed.  
   
 ### Return Value  
- **TRUE** if the window is successfully subclassed; otherwise, **FALSE**.  
+ TRUE if the window is successfully subclassed; otherwise, FALSE.  
   
 ### Remarks  
  The subclassed window now uses [CContainedWindowT::WindowProc](#windowproc). The original window procedure is saved in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).  
@@ -344,7 +344,7 @@ void SwitchMessageMap(DWORD dwMsgMapID);
 ```  
   
 ### Parameters  
- `dwMsgMapID`  
+ *dwMsgMapID*  
  [in] The message map identifier. To use the default message map declared with [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), pass zero. To use an alternate message map declared with [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), pass `msgMapID`.  
   
 ### Remarks  
@@ -360,11 +360,11 @@ HWND UnsubclassWindow(BOOL bForce = FALSE);
 ```  
   
 ### Parameters  
- `bForce`  
- [in] Set to **TRUE** to force the original window procedure to be restored even if the window procedure for this `CContainedWindowT` object is not currently active. If `bForce` is set to **FALSE** and the window procedure for this `CContainedWindowT` object is not currently active, the original window procedure will not be restored.  
+ *bForce*  
+ [in] Set to TRUE to force the original window procedure to be restored even if the window procedure for this `CContainedWindowT` object is not currently active. If *bForce* is set to FALSE and the window procedure for this `CContainedWindowT` object is not currently active, the original window procedure will not be restored.  
   
 ### Return Value  
- The handle to the window previously subclassed. If `bForce` is set to **FALSE** and the window procedure for this `CContainedWindowT` object is not currently active, returns **NULL**.  
+ The handle to the window previously subclassed. If *bForce* is set to FALSE and the window procedure for this `CContainedWindowT` object is not currently active, returns NULL.  
   
 ### Remarks  
  Use this method only if you want to restore the original window procedure before the window is destroyed. Otherwise, [WindowProc](#windowproc) will automatically do this when the window is destroyed.  
@@ -381,16 +381,16 @@ static LRESULT CALLBACK WindowProc(
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  [in] The handle to the window.  
   
- `uMsg`  
+ *uMsg*  
  [in] The message sent to the window.  
   
- `wParam`  
+ *wParam*  
  [in] Additional message-specific information.  
   
- `lParam`  
+ *lParam*  
  [in] Additional message-specific information.  
   
 ### Return Value  

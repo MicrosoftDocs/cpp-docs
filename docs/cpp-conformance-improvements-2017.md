@@ -9,7 +9,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), and [15.7](#improvements_157)
+# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157)
 
 With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
@@ -73,7 +73,7 @@ It is now possible in a single declaration to store a value with individual name
 
 There is now an implicit/non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself, when its definition introduces no enumerator and the source uses a list-initialization syntax. For more information, see [Construction Rules for enum class Values](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf).
 
-### Capturing *this by value
+### Capturing \*this by value
 
 The `*this` object in a lambda expression may now be captured by value. This enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as [=,\*this]](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html).
 
@@ -331,7 +331,7 @@ void bar(A<0> *p)
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` in order to make make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
 
-## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), and [15.7](#update_157)
+## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), and [15.8](#update_158)
 
 ### Copy-list-initialization
 
@@ -485,12 +485,12 @@ or else perform a static cast to convert the object before passing it:
     printf("%i\n", static_cast<int>(s))
 ```
 
-For strings built and managed using CStringW, the provided `operator LPCWSTR()` should be used to cast a CStringW object to the C pointer expected by the format string.
+For strings built and managed using CString, the provided `operator LPCTSTR()` should be used to cast a CString object to the C pointer expected by the format string.
 
 ```cpp
-CStringW str1;
-CStringW str2;
-str1.Format(L"%s", static_cast<LPCWSTR>(str2));
+CString str1;
+CString str2 = _T("hello!");
+str1.Format(_T("%s"), static_cast<LPCTSTR>(str2));
 ```
 
 ### cv-qualifiers in class construction
@@ -1613,6 +1613,211 @@ int main() {
     return 0;
 }
 
+```
+
+## <a name="update_158"></a> Bug fixes and behavior changes in Visual Studio 2017 version 15.8
+
+### typename on unqualified identifiers
+
+In [/permissive-](build/reference/permissive-standards-conformance.md) mode,  spurious `typename` keywords on unqualified identifiers in alias template definitions are no longer accepted by the compiler. The following code now produces C7511 *'T': 'typename' keyword must be followed by a qualified name*:
+
+```cpp
+template <typename T>
+using  X = typename T;
+```
+
+To fix the error, simply change the second line to `using  X = T;`.
+
+### __declspec() on right side of alias template definitions
+
+[__declspec](cpp/declspec.md) is no longer permitted on the right-hand-side of an alias template definition. This was previously accepted by the compiler but was completely ignored, and would never result in a deprecation warning when the alias was used.
+
+The standard C++ attribute [\[\[deprecated\]\]](cpp/attributes.md) may be used instead, and will be respected as of Visual Studio 2017 version 15.6. The following code now produces C2760 *syntax error: unexpected token '__declspec', expected 'type specifier'*:
+
+```cpp
+template <typename T>
+using X = __declspec(deprecated("msg")) T;
+```
+
+To fix the error, change to code to the following (with the attribute placed before the '=' of the alias definition):
+
+```cpp
+template <typename T>
+using  X [[deprecated("msg")]] = T;
+```
+
+### Two-phase name lookup diagnostics
+
+Two-phase name lookup requires that non-dependent names used in template bodies must be visible to the template at definition time. Previously, the Microsoft C++ compiler would leave an unfound name un-looked-up until instantiation times. Now, it requires that non-dependent names are bound in the template body.
+
+One way this can manifest is with lookup into dependent base classes. Previously, the compiler allowed the use of names that are defined in dependent base classes because they would be looked up during instantiation time when all the types are resolved. Now that code it is treated as an error. In these cases you can force the variable to be looked up at instantiation time by qualifying it with the base class type or otherwise making it dependent, for example by adding a `this->` pointer.
+
+In **/permissive-** mode, the following code now raises C3861: *'base_value': identifier not found*:
+
+```cpp
+template <class T>
+struct Base {
+    int base_value = 42;
+};
+
+template <class T>
+struct S : Base<T> {
+    int f() {
+        return base_value;
+    }
+};
+
+```
+
+To fix the error, change the `return` statement to `return this->base_value;`.
+
+### forward declarations and definitions in namespace std
+
+The C++ standard doesn't allow a user to add forward declarations or definitions into namespace `std`. Adding declarations or definitions to namespace `std` or to a namespace within namespace std now results in undefined behavior.
+
+At some time in the future, Microsoft will move the location where some STL types are defined. When this happens, it will break existing code that adds forward declarations to namespace `std`. A new warning, C4643, helps identify such source issues. The warning is enabled in **/default** mode and is off by default. It will impact programs that are compiled with **/Wall** or **/WX**. 
+
+The following code now raises C4643: *Forward declaring 'vector' in namespace std is not permitted by the C++ Standard*. 
+
+
+```cpp
+namespace std { 
+    template<typename T> class vector; 
+} 
+```
+
+To fix the error, use an **include** directive rather than a forward declaration:
+
+```cpp
+#include <vector>
+```
+
+### Constructors that delegate to themselves
+
+The C++ Standard suggests that a compiler should emit a diagnostic when a delegating constructor delegates to itself. The Microsoft C++ compiler in [/std:c++17](build/reference/std-specify-language-standard-version.md) and [/std:c++latest](build/reference/std-specify-language-standard-version.md) modes now raises C7535: *'X::X': delegating constructor calls itself*.
+
+Without this error, the following program will compile but will generate an infinite loop:
+
+```cpp
+class X { 
+public: 
+    X(int, int); 
+    X(int v) : X(v){}
+}; 
+```
+
+To avoid the infinite loop, delegate to a different constructor:
+
+```cpp
+class X { 
+public: 
+
+    X(int, int); 
+    X(int v) : X(v, 0) {} 
+}; 
+```
+
+### offsetof with constant expressions
+
+[offsetof](c-runtime-library/reference/offsetof-macro.md) has traditionally been implemented using a macro that requires a [reinterpret_cast](cpp/reinterpret-cast-operator.md). This is illegal in contexts that require a constant expression, but the Microsoft C++ compiler has traditionally allowed it. The offsetof macro that is shipped as part of the STL correctly uses a compiler intrinsic (**__builtin_offsetof**), but many people have used the macro trick to define their own **offsetof**.  
+
+In Visual Studio 2017 version 15.8, the compiler constrains the areas that these reinterpret_casts can appear in the default mode in order to help code conform to standard C++ behavior. Under [/permissive-](build/reference/permissive-standards-conformance.md), the constraints are even stricter. Using the result of an offsetof in places that require constant expressions may result in code that issues warning C4644 *usage of the macro-based offsetof pattern in constant expressions is non-standard; use offsetof defined in the C++ standard library instead* or C2975 *invalid template argument, expected compile-time constant expression*.
+
+The following code raises C4644 in **/default** and **/std:c++17** modes, and C2975 in **/permissive-** mode: 
+
+```cpp
+struct Data { 
+    int x; 
+}; 
+
+// Common pattern of user-defined offsetof 
+#define MY_OFFSET(T, m) (unsigned long long)(&(((T*)nullptr)->m)) 
+
+int main() 
+
+{ 
+    switch (0) { 
+    case MY_OFFSET(Data, x): return 0; 
+    default: return 1; 
+    } 
+} 
+```
+
+To fix the error, use **offsetof** as defined via \<cstddef>:
+
+```cpp
+#include <cstddef>  
+
+struct Data { 
+    int x; 
+};  
+
+int main() 
+{ 
+    switch (0) { 
+    case offsetof(Data, x): return 0; 
+    default: return 1; 
+    } 
+} 
+```
+
+
+### cv-qualifiers on base classes subject to pack expansion
+
+Previous versions of the Microsoft C++ compiler did not detect that a base-class had cv-qualifiers if it was also subject to pack expansion. 
+
+In Visual Studio 2017 version 15.8, in **/permissive-** mode the following code raises C3770 *'const S': is not a valid base class*: 
+
+```cpp
+template<typename... T> 
+class X : public T... { };  
+
+class S { };  
+
+int main() 
+{ 
+    X<const S> x; 
+} 
+```
+### template keyword and nested-name-specifiers
+
+In **/permissive-** mode, the compiler now requires the `template` keyword to precede a template-name when it comes after a nested-name-specifier which is dependent. 
+
+The following code in **/permissive-** mode now raises C7510: *'foo': use of dependent template name must be prefixed with 'template'. note: see reference to class template instantiation 'X<T>' being compiled*:
+
+```cpp
+template<typename T> struct Base
+{
+    template<class U> void foo() {} 
+}; 
+
+template<typename T> 
+struct X : Base<T> 
+{ 
+    void foo() 
+    { 
+        Base<T>::foo<int>(); 
+    } 
+}; 
+```
+
+To fix the error, add the `template` keyword to the `Base<T>::foo<int>();` statement, as shown in the following example:
+
+```cpp
+template<typename T> struct Base
+{
+    template<class U> void foo() {}
+};
+ 
+template<typename T> 
+struct X : Base<T> 
+{ 
+    void foo() 
+    { 
+        // Add template keyword here:
+        Base<T>::template foo<int>(); 
+    } 
+}; 
 ```
 
 ## See also

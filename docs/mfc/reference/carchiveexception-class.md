@@ -52,7 +52,7 @@ class CArchiveException : public CException
  **Header:** afx.h  
   
 ##  <a name="carchiveexception"></a>  CArchiveException::CArchiveException  
- Constructs a `CArchiveException` object, storing the value of `cause` in the object.  
+ Constructs a `CArchiveException` object, storing the value of *cause* in the object.  
   
 ```  
 CArchiveException(
@@ -61,10 +61,10 @@ CArchiveException(
 ```  
   
 ### Parameters  
- `cause`  
+ *cause*  
  An enumerated type variable that indicates the reason for the exception. For a list of the enumerators, see the [m_cause](#m_cause) data member.  
   
- `lpszArchiveName`  
+ *lpszArchiveName*  
  Points to a string containing the name of the `CArchive` object causing the exception.  
   
 ### Remarks  
@@ -80,29 +80,29 @@ int m_cause;
 ```  
   
 ### Remarks  
- This data member is a public variable of type `int`. Its values are defined by a `CArchiveException` enumerated type. The enumerators and their meanings are as follows:  
+ This data member is a public variable of type **int**. Its values are defined by a `CArchiveException` enumerated type. The enumerators and their meanings are as follows:  
   
-- **CArchiveException::none** No error occurred.  
+- `CArchiveException::none` No error occurred.  
   
-- **CArchiveException::genericException** Unspecified error.  
+- `CArchiveException::genericException` Unspecified error.  
   
-- **CArchiveException::readOnly** Tried to write into an archive opened for loading.  
+- `CArchiveException::readOnly` Tried to write into an archive opened for loading.  
   
-- **CArchiveException::endOfFile** Reached end of file while reading an object.  
+- `CArchiveException::endOfFile` Reached end of file while reading an object.  
   
-- **CArchiveException::writeOnly** Tried to read from an archive opened for storing.  
+- `CArchiveException::writeOnly` Tried to read from an archive opened for storing.  
   
-- **CArchiveException::badIndex** Invalid file format.  
+- `CArchiveException::badIndex` Invalid file format.  
   
-- **CArchiveException::badClass** Tried to read an object into an object of the wrong type.  
+- `CArchiveException::badClass` Tried to read an object into an object of the wrong type.  
   
-- **CArchiveException::badSchema** Tried to read an object with a different version of the class.  
+- `CArchiveException::badSchema` Tried to read an object with a different version of the class.  
   
     > [!NOTE]
     >  These `CArchiveException` cause enumerators are distinct from the `CFileException` cause enumerators.  
   
     > [!NOTE]
-    > **CArchiveException::generic** is deprecated. Use **genericException** instead. If **generic** is used in an application and built with /clr, there will be syntax errors that are not easy to decipher.  
+    > `CArchiveException::generic` is deprecated. Use `genericException` instead. If **generic** is used in an application and built with /clr, there will be syntax errors that are not easy to decipher.  
   
 ##  <a name="m_strfilename"></a>  CArchiveException::m_strFileName  
  Specifies the name of the file for this exception condition.  

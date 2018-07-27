@@ -47,8 +47,8 @@ class CMFCColorDialog : public CDialogEx
   
 |Name|Description|  
 |----------|-----------------|  
-|`m_bIsMyPalette`|`TRUE` if the color selection dialog box uses its own color palette, or `FALSE` if the dialog box uses a palette that is specified in the `CMFCColorDialog` constructor.|  
-|`m_bPickerMode`|`TRUE` while the user is selecting a color from the selection dialog box; otherwise, `FALSE`.|  
+|`m_bIsMyPalette`|TRUE if the color selection dialog box uses its own color palette, or FALSE if the dialog box uses a palette that is specified in the `CMFCColorDialog` constructor.|  
+|`m_bPickerMode`|TRUE while the user is selecting a color from the selection dialog box; otherwise, FALSE.|  
 |`m_btnColorSelect`|The color button that the user has selected.|  
 |`m_CurrentColor`|The currently selected color.|  
 |`m_hcurPicker`|The cursor that is used to pick a color.|  
@@ -98,16 +98,16 @@ CMFCColorDialog(
 ```  
   
 ### Parameters  
- [in] `clrInit`  
+ [in] *clrInit*  
  The default color selection. If no value is specified, the default is RGB(0,0,0) (black).  
   
- [in] `dwFlags`  
+ [in] *dwFlags*  
  (Reserved.)  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  A pointer to the dialog box's parent or owner window.  
   
- [in] `hPal`  
+ [in] *hPal*  
  A handle to a color palette.  
   
 ### Return Value  
@@ -155,7 +155,7 @@ void SetCurrentColor(COLORREF rgb);
 ```  
   
 ### Parameters  
- [in] `rgb`  
+ [in] *rgb*  
  An RGB color value  
   
 ### Remarks  
@@ -168,7 +168,7 @@ void SetNewColor(COLORREF rgb);
 ```  
   
 ### Parameters  
- [in] `rgb`  
+ [in] *rgb*  
  A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) that specifies an RGB color.  
   
 ### Remarks  
@@ -184,13 +184,13 @@ void SetPageOne(
 ```  
   
 ### Parameters  
- [in] `R`  
+ [in] *R*  
  Specifies the red component of the RGB value.  
   
- [in] `G`  
+ [in] *G*  
  Specifies the green component of the RGB value.  
   
- [in] `B`  
+ [in] *B*  
  Specifies the blue component of the RGB value.  
   
 ### Remarks  
@@ -206,13 +206,13 @@ void SetPageTwo(
 ```  
   
 ### Parameters  
- [in] `R`  
+ [in] *R*  
  Specifies a red component of the RGB value  
   
- [in] `G`  
+ [in] *G*  
  Specifies a green component of an RGB value  
   
- [in] `B`  
+ [in] *B*  
  Specifies a blue component of an RGB value  
   
 ### Remarks  

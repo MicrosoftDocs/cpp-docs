@@ -187,27 +187,27 @@ static const int none = 0;
 
 ### Remarks
 
-The type is a synonym for an `int` type that can represent a group of distinct elements of a bitmask type local to class locale or can be used to represent any of the corresponding C locale categories. The elements are:
+The type is a synonym for an **int** type that can represent a group of distinct elements of a bitmask type local to class locale or can be used to represent any of the corresponding C locale categories. The elements are:
 
-- **collate**, corresponding to the C category LC_COLLATE
+- `collate`, corresponding to the C category LC_COLLATE
 
-- **ctype**, corresponding to the C category LC_CTYPE
+- `ctype`, corresponding to the C category LC_CTYPE
 
-- **monetary**, corresponding to the C category LC_MONETARY
+- `monetary`, corresponding to the C category LC_MONETARY
 
-- **numeric**, corresponding to the C category LC_NUMERIC
+- `numeric`, corresponding to the C category LC_NUMERIC
 
-- **time**, corresponding to the C category LC_TIME
+- `time`, corresponding to the C category LC_TIME
 
-- **messages**, corresponding to the Posix category LC_MESSAGES
+- `messages`, corresponding to the Posix category LC_MESSAGES
 
 In addition, two useful values are:
 
-- **none**, corresponding to none of the C categories
+- `none`, corresponding to none of the C categories
 
-- **all**, corresponding to the C union of all categories LC_ALL
+- `all`, corresponding to the C union of all categories LC_ALL
 
-You can represent an arbitrary group of categories by using `OR` with these constants, as in **monetary** &#124; **time**.
+You can represent an arbitrary group of categories by using `OR` with these constants, as in `monetary` &#124; `time`.
 
 ## <a name="classic"></a>  locale::classic
 
@@ -275,12 +275,12 @@ locale combine(const locale& Loc) const;
 
 ### Parameters
 
-`Loc`
+*Loc*
  The locale containing the facet to be inserted into the target locale.
 
 ### Return Value
 
-The member function returns a locale object that replaces in or adds to **\*this** the facet `Facet` listed in `Loc`.
+The member function returns a locale object that replaces in or adds to **\*this** the facet `Facet` listed in *Loc*.
 
 ### Example
 
@@ -344,7 +344,7 @@ static locale global(const locale& Loc);
 
 ### Parameters
 
-`Loc`
+*Loc*
  The locale to be used as the default locale by the program.
 
 ### Return Value
@@ -393,7 +393,7 @@ class id { protected:    id();
 
 ### Remarks
 
-The member class describes the static member object required by each unique locale facet. Note that you cannot copy or assign an object of class **id**.
+The member class describes the static member object required by each unique locale facet. Note that you cannot copy or assign an object of class `id`.
 
 ## <a name="locale"></a>  locale::locale
 
@@ -414,40 +414,40 @@ locale(const locale& Loc, const Facet* Fac);
 
 ### Parameters
 
-`Locname`
+*Locname*
  Name of a locale.
 
-`Loc`
+*Loc*
  A locale that is to be copied in constructing the new locale.
 
-`Other`
+*Other*
  A locale from which to select a category.
 
-`Cat`
+*Cat*
  The category to be substituted into the constructed locale.
 
-`Fac`
+*Fac*
  The facet to be substituted into the constructed locale.
 
 ### Remarks
 
-The first constructor initializes the object to match the global locale. The second and third constructors initialize all the locale categories to have behavior consistent with the locale name `Locname`. The remaining constructors copy `Loc`, with the exceptions noted:
+The first constructor initializes the object to match the global locale. The second and third constructors initialize all the locale categories to have behavior consistent with the locale name *Locname*. The remaining constructors copy *Loc*, with the exceptions noted:
 
 `locale(const locale& Loc, const locale& Other, category Cat);`
 
-replaces from `Other` those facets corresponding to a category C for which C & `Cat` is nonzero.
+replaces from *Other* those facets corresponding to a category C for which C & *Cat* is nonzero.
 
 `locale(const locale& Loc, const char* Locname, category Cat);`
 
 `locale(const locale& Loc, const string& Locname, category Cat);`
 
-replaces from `locale(Locname, _All)` those facets corresponding to a category C for which C & `Cat` is nonzero.
+replaces from `locale(Locname, _All)` those facets corresponding to a category C for which C & *Cat* is nonzero.
 
 `template<class Facet> locale(const locale& Loc, Facet* Fac);`
 
-replaces in (or adds to) `Loc` the facet `Fac`, if `Fac` is not a null pointer.
+replaces in (or adds to) *Loc* the facet *Fac*, if *Fac* is not a null pointer.
 
-If a locale name `Locname` is a null pointer or otherwise invalid, the function throws [runtime_error](../standard-library/runtime-error-class.md).
+If a locale name *Locname* is a null pointer or otherwise invalid, the function throws [runtime_error](../standard-library/runtime-error-class.md).
 
 ### Example
 
@@ -538,7 +538,7 @@ bool operator!=(const locale& right) const;
 
 ### Parameters
 
-`right`
+*right*
  One of the locales to be tested for inequality.
 
 ### Return Value
@@ -602,10 +602,10 @@ bool operator()(
 
 ### Parameters
 
-`left`
+*left*
  The left string.
 
-`right`
+*right*
  The right string.
 
 ### Return Value
@@ -671,7 +671,7 @@ bool operator==(const locale& right) const;
 
 ### Parameters
 
-`right`
+*right*
  One of the locales to be tested for equality.
 
 ### Return Value

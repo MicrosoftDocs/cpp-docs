@@ -23,7 +23,7 @@ class CStringElementTraits
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to be stored in the collection.  
   
 ## Members  
@@ -61,10 +61,10 @@ static bool CompareElements(INARGTYPE str1, INARGTYPE str2);
 ```  
   
 ### Parameters  
- `str1`  
+ *str1*  
  The first string element.  
   
- `str2`  
+ *str2*  
  The second string element.  
   
 ### Return Value  
@@ -78,14 +78,14 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2);
 ```  
   
 ### Parameters  
- `str1`  
+ *str1*  
  The first string element.  
   
- `str2`  
+ *str2*  
  The second string element.  
   
 ### Return Value  
- Zero if the strings are identical, < 0 if `str1` is less than `str2`, or > 0 if `str1` is greater than `str2`. The [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method is used to perform the comparisons.  
+ Zero if the strings are identical, < 0 if *str1* is less than *str2*, or > 0 if *str1* is greater than *str2*. The [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method is used to perform the comparisons.  
 
   
 ##  <a name="copyelements"></a>  CStringElementTraits::CopyElements  
@@ -99,13 +99,13 @@ static void CopyElements(
 ```  
   
 ### Parameters  
- `pDest`  
+ *pDest*  
  Pointer to the first element that will receive the copied data.  
   
- `pSrc`  
+ *pSrc*  
  Pointer to the first element to copy.  
   
- `nElements`  
+ *nElements*  
  The number of elements to copy.  
   
 ### Remarks  
@@ -119,7 +119,7 @@ static ULONG Hash(INARGTYPE str);
 ```  
   
 ### Parameters  
- `str`  
+ *str*  
  The string element.  
   
 ### Return Value  
@@ -150,13 +150,13 @@ static void RelocateElements(
 ```  
   
 ### Parameters  
- `pDest`  
+ *pDest*  
  Pointer to the first element that will receive the relocated data.  
   
- `pSrc`  
+ *pSrc*  
  Pointer to the first element to relocate.  
   
- `nElements`  
+ *nElements*  
  The number of elements to relocate.  
   
 ### Remarks  

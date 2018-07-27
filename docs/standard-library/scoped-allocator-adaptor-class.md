@@ -103,10 +103,10 @@ pointer allocate(size_type count);pointer allocate(size_type count, const_void_p
 
 ### Parameters
 
-`count`
+*count*
  The number of elements for which sufficient storage is to be allocated.
 
-`hint`
+*hint*
  A pointer that might assist the allocator object by locating the address of an object allocated prior to the request.
 
 ### Return Value
@@ -142,24 +142,24 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
 
 ### Parameters
 
-`ptr`
+*ptr*
  A pointer to the memory location where the object is to be constructed.
 
-`args`
+*args*
  A list of arguments.
 
-`first`
+*first*
  An object of the first type in a pair.
 
-`second`
+*second*
  An object of the second type in a pair.
 
-`right`
+*right*
  An existing object to be moved or copied.
 
 ### Remarks
 
-The first method constructs the object at `ptr` by calling `Outermost_traits::construct(OUTERMOST(*this), ptr, xargs...)`, where `xargs...` is one of the following.
+The first method constructs the object at *ptr* by calling `Outermost_traits::construct(OUTERMOST(*this), ptr, xargs...)`, where `xargs...` is one of the following.
 
 - If `uses_allocator<Ty, inner_allocator_type>` holds false, then `xargs...` is `args...`.
 
@@ -167,7 +167,7 @@ The first method constructs the object at `ptr` by calling `Outermost_traits::co
 
 - If `uses_allocator<Ty, inner_allocator_type>` holds true, and `is_constructible<Ty, args..., inner_allocator()>` holds true, then `xargs...` is `args..., inner_allocator()`.
 
-The second method constructs the pair object at `ptr` by calling `Outermost_traits::construct(OUTERMOST(*this), &ptr->first, xargs...)`, where `xargs...` is `first...` modified as in the above list, and `Outermost_traits::construct(OUTERMOST(*this), &ptr->second, xargs...)`, where `xargs...` is `second...` modified as in the above list.
+The second method constructs the pair object at *ptr* by calling `Outermost_traits::construct(OUTERMOST(*this), &ptr->first, xargs...)`, where `xargs...` is `first...` modified as in the above list, and `Outermost_traits::construct(OUTERMOST(*this), &ptr->second, xargs...)`, where `xargs...` is `second...` modified as in the above list.
 
 The third method behaves the same as `this->construct(ptr, piecewise_construct, tuple<>, tuple<>)`.
 
@@ -187,10 +187,10 @@ void deallocate(pointer ptr, size_type count);
 
 ### Parameters
 
-`ptr`
+*ptr*
  A pointer to the starting location of the objects to be deallocated.
 
-`count`
+*count*
  The number of objects to deallocate.
 
 ## <a name="destroy"></a>  scoped_allocator_adaptor::destroy
@@ -204,7 +204,7 @@ void destroy(Ty* ptr)
 
 ### Parameters
 
-`ptr`
+*ptr*
  A pointer to the object to be destroyed.
 
 ### Return Value
@@ -280,18 +280,18 @@ scoped_allocator_adaptor(Outer2&& al,
 
 ### Parameters
 
-`right`
+*right*
  An existing `scoped_allocator_adaptor`.
 
-`al`
+*al*
  An existing allocator to be used as the outer allocator.
 
-`rest`
+*rest*
  A list of allocators to be used as the inner allocators.
 
 ### Remarks
 
-The first constructor default constructs its stored allocator objects. Each of the next three constructors constructs its stored allocator objects from the corresponding objects in `right`. The last constructor constructs its stored allocator objects from the corresponding arguments in the argument list.
+The first constructor default constructs its stored allocator objects. Each of the next three constructors constructs its stored allocator objects from the corresponding objects in *right*. The last constructor constructs its stored allocator objects from the corresponding arguments in the argument list.
 
 ## <a name="select_on_container_copy_construction"></a>  scoped_allocator_adaptor::select_on_container_copy_construction
 
@@ -303,7 +303,7 @@ scoped_allocator_adaptor select_on_container_copy_construction();
 
 ### Return Value
 
-This method effectively returns `scoped_allocator_adaptor(Outer_traits::select_on_container_copy_construction(*this), inner_allocator().select_on_container_copy_construction())`. The result is a new `scoped_allocator_adaptor` object with each stored allocator object initialized by calling `al.select_on_container_copy_construction()` for the corresponding allocator `al`.
+This method effectively returns `scoped_allocator_adaptor(Outer_traits::select_on_container_copy_construction(*this), inner_allocator().select_on_container_copy_construction())`. The result is a new `scoped_allocator_adaptor` object with each stored allocator object initialized by calling `al.select_on_container_copy_construction()` for the corresponding allocator *al*.
 
 ## See also
 

@@ -25,12 +25,12 @@ struct is_trivially_copyable;
 
 ### Parameters
 
-`T`
+*T*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `T` is a trivially copyable type, otherwise it holds false. Trivially copyable types have no non-trivial copy operations, move operations, or destructors. Generally, a copy operation is considered trivial if it can be implemented as a bitwise copy. Both built-in types and arrays of trivially copyable types are trivially copyable.
+An instance of the type predicate holds true if the type *T* is a trivially copyable type, otherwise it holds false. Trivially copyable types have no non-trivial copy operations, move operations, or destructors. Generally, a copy operation is considered trivial if it can be implemented as a bitwise copy. Both built-in types and arrays of trivially copyable types are trivially copyable.
 
 ## Requirements
 

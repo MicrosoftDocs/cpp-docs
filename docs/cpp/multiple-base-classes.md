@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Multiple Base Classes
-As described in [Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), a class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element. For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
+A class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element. For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
   
 ```cpp 
 // deriv_MultipleBaseClasses.cpp  
@@ -66,7 +66,7 @@ class LunchQueue : virtual public Queue {};
 class LunchCashierQueue : public LunchQueue, public CashierQueue {};  
 ```  
   
- The `virtual` keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).  
+ The **virtual** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).  
   
  ![Simulated lunch&#45;line object, virtual base classes](../cpp/media/vc38xp3.gif "vc38XP3")  
 Simulated Lunch-Line Object with Virtual Base Classes  

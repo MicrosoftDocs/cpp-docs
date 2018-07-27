@@ -100,7 +100,7 @@ bool try_lock();
 
 ### Return Value
 
-`true` if the method successfully obtains ownership of the `mutex`; otherwise, `false`.
+**true** if the method successfully obtains ownership of the `mutex`; otherwise, **false**.
 
 ### Remarks
 

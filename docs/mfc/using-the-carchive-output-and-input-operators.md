@@ -27,13 +27,13 @@ ms.workload: ["cplusplus"]
   
      [!code-cpp[NVC_MFCSerialization#8](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_2.cpp)]  
   
- Usually, you store and load data to and from a file via an archive in the `Serialize` functions of `CObject`-derived classes, which you must have declared with the **DECLARE_SERIALIZE** macro. A reference to a `CArchive` object is passed to your `Serialize` function. You call the `IsLoading` function of the `CArchive` object to determine whether the `Serialize` function has been called to load data from the file or store data to the file.  
+ Usually, you store and load data to and from a file via an archive in the `Serialize` functions of `CObject`-derived classes, which you must have declared with the DECLARE_SERIALIZE macro. A reference to a `CArchive` object is passed to your `Serialize` function. You call the `IsLoading` function of the `CArchive` object to determine whether the `Serialize` function has been called to load data from the file or store data to the file.  
   
  The `Serialize` function of a serializable `CObject`-derived class typically has the following form:  
   
  [!code-cpp[NVC_MFCSerialization#9](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_3.cpp)]  
   
- The above code template is exactly the same as the one AppWizard creates for the `Serialize` function of the document (a class derived from **CDocument)**. This code template helps you write code that is easier to review, because the storing code and the loading code should always be parallel, as in the following example:  
+ The above code template is exactly the same as the one AppWizard creates for the `Serialize` function of the document (a class derived from `CDocument`). This code template helps you write code that is easier to review, because the storing code and the loading code should always be parallel, as in the following example:  
   
  [!code-cpp[NVC_MFCSerialization#10](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_4.cpp)]  
   
@@ -41,7 +41,7 @@ ms.workload: ["cplusplus"]
   
 ||||  
 |-|-|-|  
-|`CObject*`|**SIZE and CSize**|**float**|  
+|`CObject*`|**SIZE** and `CSize`|**float**|  
 |**WORD**|`CString`|**POINT** and `CPoint`|  
 |`DWORD`|**BYTE**|`RECT` and `CRect`|  
 |**Double**|**LONG**|`CTime` and `CTimeSpan`|  

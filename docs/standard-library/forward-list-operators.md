@@ -29,8 +29,8 @@ bool operator==(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Remarks
 
@@ -50,8 +50,8 @@ bool operator!=(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 
@@ -75,12 +75,12 @@ bool operator<(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 
-`true` if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise `false`.
+**true** if the list on the left side of the operator is less than but not equal to the list on the right side of the operator; otherwise **false**.
 
 ### Remarks
 
@@ -100,12 +100,12 @@ bool operator<=(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 
-`true` if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise `false`.
+**true** if the list on the left side of the operator is less than or equal to the list on the right side of the operator; otherwise **false**.
 
 ### Remarks
 
@@ -125,12 +125,12 @@ bool operator>(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 
-`true` if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise `false`.
+**true** if the list on the left side of the operator is greater than the list on the right side of the operator; otherwise **false**.
 
 ### Remarks
 
@@ -150,12 +150,12 @@ bool operator>=(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `forward_list`.|
-|`right`|An object of type `forward_list`.|
+|*left*|An object of type `forward_list`.|
+|*right*|An object of type `forward_list`.|
 
 ### Return Value
 
-`true` if the forward list on the left side of the operator is greater than or equal to the forward list on the right side of the operator; otherwise `false`.
+**true** if the forward list on the left side of the operator is greater than or equal to the forward list on the right side of the operator; otherwise **false**.
 
 ### Remarks
 

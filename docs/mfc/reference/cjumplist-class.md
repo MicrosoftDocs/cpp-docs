@@ -90,19 +90,19 @@ BOOL AddDestination(
 ```  
   
 ### Parameters  
- `lpcszCategoryName`  
+ *lpcszCategoryName*  
  Specifies a category name. If the specified category does not exist, it will be created.  
   
- `strDestinationPath`  
+ *strDestinationPath*  
  Specifies a path to destination file.  
   
- `strCategoryName`  
+ *strCategoryName*  
  Specifies a category name. If the specified category does not exist, it will be created.  
   
- `pShellItem`  
+ *pShellItem*  
  Specifies a Shell Item representing the destination being added.  
   
- `pShellLink`  
+ *pShellLink*  
  Specifies a Shell Link representing the destination being added.  
   
 ### Return Value  
@@ -118,8 +118,8 @@ BOOL AddKnownCategory(KNOWNDESTCATEGORY category);
 ```  
   
 ### Parameters  
- `category`  
- Specifies a known category type. Can be either `KDC_RECENT`, or `KDC_KNOWN`.  
+ *category*  
+ Specifies a known category type. Can be either KDC_RECENT, or KDC_KNOWN.  
   
 ### Return Value  
   
@@ -141,22 +141,22 @@ BOOL AddTask(IShellLink* pShellLink);
 ```  
   
 ### Parameters  
- `strTargetExecutablePath`  
+ *strTargetExecutablePath*  
  Specifies the target task path.  
   
- `strCommandLineArgs`  
+ *strCommandLineArgs*  
  Specifies command line arguments of the executable specified by strTargetExecutablePath.  
   
- `strTitle`  
+ *strTitle*  
  Task name that will be displayed in the Destination List.  
   
- `strIconLocation`  
+ *strIconLocation*  
  Location of icon that will be displayed in the Destination List along with the title.  
   
- `iIconIndex`  
+ *iIconIndex*  
  Icon index.  
   
- `pShellLink`  
+ *pShellLink*  
  Shell Link that represents a task to be added.  
   
 ### Return Value  
@@ -172,7 +172,7 @@ BOOL AddTasks(IObjectArray* pObjectCollection);
 ```  
   
 ### Parameters  
- `pObjectCollection`  
+ *pObjectCollection*  
  A collection of tasks to be added.  
   
 ### Return Value  
@@ -198,7 +198,7 @@ CJumpList(BOOL bAutoCommit = TRUE);
 ```  
   
 ### Parameters  
- `bAutoCommit`  
+ *bAutoCommit*  
  If this parameter is FALSE the list is not automatically committed in  destructor.  
   
 ##  <a name="clearall"></a>  CJumpList::ClearAll  
@@ -243,7 +243,7 @@ ICustomDestinationList* GetDestinationList();
 ### Return Value  
   
 ### Remarks  
- If the jump list has not been initialized, or has been committed or aborted, the returned value will be `NULL`.  
+ If the jump list has not been initialized, or has been committed or aborted, the returned value will be NULL.  
   
 ##  <a name="getmaxslots"></a>  CJumpList::GetMaxSlots  
  Retrieves the maximum number of items, including category headers that can display in the calling application's destination menu.  
@@ -289,7 +289,7 @@ void SetAppID(LPCTSTR strAppID);
 ```  
   
 ### Parameters  
- `strAppID`  
+ *strAppID*  
  A string that specifies the Application User Model ID.  
   
 ## See Also  

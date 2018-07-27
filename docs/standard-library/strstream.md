@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # &lt;strstream&gt;
 
-Defines several classes that support iostreams operations on sequences stored in an allocated array of `char` object. Such sequences are easily converted to and from C strings.
+Defines several classes that support iostreams operations on sequences stored in an allocated array of **char** object. Such sequences are easily converted to and from C strings.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ Objects of type `strstream` work with `char` *, which are C strings. Use [\<sstr
 
 |Class|Description|
 |-|-|
-|[strstreambuf Class](../standard-library/strstreambuf-class.md)|The class describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a `char` array object.|
+|[strstreambuf Class](../standard-library/strstreambuf-class.md)|The class describes a stream buffer that controls the transmission of elements to and from a sequence of elements stored in a **char** array object.|
 |[istrstream Class](../standard-library/istrstream-class.md)|The class describes an object that controls extraction of elements and encoded objects from a stream buffer of class [strstreambuf](../standard-library/strstreambuf-class.md).|
 |[ostrstream Class](../standard-library/ostrstream-class.md)|The class describes an object that controls insertion of elements and encoded objects into a stream buffer of class [strstreambuf](../standard-library/strstreambuf-class.md).|
 |[strstream Class](../standard-library/strstream-class.md)|The class describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [strstreambuf](../standard-library/strstreambuf-class.md).|

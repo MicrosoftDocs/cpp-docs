@@ -25,12 +25,12 @@ struct is_nothrow_copy_assignable;
 
 ### Parameters
 
-`T`
+*T*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true for a referenceable type `T` where `is_nothrow_assignable<T&, const T&>` holds true; otherwise it holds false.
+An instance of the type predicate holds true for a referenceable type *T* where `is_nothrow_assignable<T&, const T&>` holds true; otherwise it holds false.
 
 ## Requirements
 

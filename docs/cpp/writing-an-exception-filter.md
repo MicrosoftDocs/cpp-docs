@@ -46,7 +46,7 @@ int Eval_Exception ( int n_except ) {
   
  It is a good idea to use a function call in the *filter* expression whenever *filter* needs to do anything complex. Evaluating the expression causes execution of the function, in this case, `Eval_Exception`.  
   
- Note the use of [GetExceptionCode](http://msdn.microsoft.com/library/windows/desktop/ms679356) to determine the exception. You must call this function inside the filter itself. `Eval_Exception` cannot call **GetExceptionCode**, but it must have the exception code passed to it.  
+ Note the use of [GetExceptionCode](http://msdn.microsoft.com/library/windows/desktop/ms679356) to determine the exception. You must call this function inside the filter itself. `Eval_Exception` cannot call `GetExceptionCode`, but it must have the exception code passed to it.  
   
  This handler passes control to another handler unless the exception is an integer or floating-point overflow. If it is, the handler calls a function (`ResetVars` is only an example, not an API function) to reset some global variables. *Statement-block-2*, which in this example is empty, can never be executed because `Eval_Exception` never returns EXCEPTION_EXECUTE_HANDLER (1).  
   
@@ -56,7 +56,7 @@ int Eval_Exception ( int n_except ) {
   
 -   The comma operator  
   
- The conditional operator is frequently useful, because it can be used to check for a specific return code and then return one of two different values. For example, the filter in the following code recognizes the exception only if the exception is `STATUS_INTEGER_OVERFLOW`:  
+ The conditional operator is frequently useful, because it can be used to check for a specific return code and then return one of two different values. For example, the filter in the following code recognizes the exception only if the exception is STATUS_INTEGER_OVERFLOW:  
   
 ```cpp 
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0 ) {  

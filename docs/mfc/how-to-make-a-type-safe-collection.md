@@ -36,7 +36,7 @@ This article explains how to make type-safe collections for your own data types.
   
 3.  If necessary, implement the [helper functions](../mfc/reference/collection-class-helpers.md) and [SerializeElements](../mfc/reference/collection-class-helpers.md#serializeelements). For information on implementing these functions, see [Implementing Helper Functions](#_core_implementing_helper_functions).  
   
- This example shows the declaration of a list of integers. The first parameter in step 1 is the type of data stored as elements of the list. The second parameter specifies how the data is to be passed to and returned from member functions of the collection class, such as **Add** and `GetAt`.  
+ This example shows the declaration of a list of integers. The first parameter in step 1 is the type of data stored as elements of the list. The second parameter specifies how the data is to be passed to and returned from member functions of the collection class, such as `Add` and `GetAt`.  
   
 ##  <a name="_core_implementing_helper_functions"></a> Implementing Helper Functions  
  The template-based collection classes `CArray`, `CList`, and `CMap` use five global helper functions that you can customize as needed for your derived collection class. For information on these helper functions, see [Collection Class Helpers](../mfc/reference/collection-class-helpers.md) in the *MFC Reference*. Implementation of the serialization function is necessary for most uses of the template-based collection classes.  
@@ -50,10 +50,10 @@ This article explains how to make type-safe collections for your own data types.
   
  [!code-cpp[NVC_MFCCollections#9](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_3.cpp)]  
   
- The overloaded insertion operators for `CArchive` call `CObject::Serialize` (or an override of that function) for each **CPerson** object.  
+ The overloaded insertion operators for `CArchive` call `CObject::Serialize` (or an override of that function) for each `CPerson` object.  
   
 ##  <a name="_core_using_nontemplate_collection_classes"></a> Using Nontemplate Collection Classes  
- MFC also supports the collection classes introduced with MFC version 1.0. These classes are not based on templates. They can be used to contain data of the supported types `CObject*`, **UINT**, `DWORD`, and `CString`. You can use these predefined collections (such as `CObList`) to hold collections of any objects derived from `CObject`. MFC also provides other predefined collections to hold primitive types such as **UINT** and void pointers (`void`*). In general, however, it is often useful to define your own type-safe collections to hold objects of a more specific class and its derivatives. Note that doing so with the collection classes not based on templates is more work than using the template-based classes.  
+ MFC also supports the collection classes introduced with MFC version 1.0. These classes are not based on templates. They can be used to contain data of the supported types `CObject*`, `UINT`, `DWORD`, and `CString`. You can use these predefined collections (such as `CObList`) to hold collections of any objects derived from `CObject`. MFC also provides other predefined collections to hold primitive types such as `UINT` and void pointers (`void`*). In general, however, it is often useful to define your own type-safe collections to hold objects of a more specific class and its derivatives. Note that doing so with the collection classes not based on templates is more work than using the template-based classes.  
   
  There are two ways to create type-safe collections with the nontemplate collections:  
   

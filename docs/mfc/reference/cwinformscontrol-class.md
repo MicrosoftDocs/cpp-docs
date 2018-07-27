@@ -94,25 +94,25 @@ inline BOOL CreateManagedControl(
 ```  
   
 ### Parameters  
- `pType`  
- The data type of the control to be created. Must be a [Type](https://msdn.microsoft.com/en-us/library/system.type) data type.  
+ *pType*  
+ The data type of the control to be created. Must be a [Type](https://msdn.microsoft.com/library/system.type) data type.  
   
- `dwStyle`  
+ *dwStyle*  
  The window style to apply to the control. Specify a combination of [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles). Currently, only the following styles are supported: WS_TABSTOP, WS_VISIBLE, WS_DISABLED and WS_GROUP.  
   
- `rect`  
+ *rect*  
  A [RECT Structure](../../mfc/reference/rect-structure1.md) that defines the coordinates of the upper-left and lower-right corners of the control (first overload only).  
   
- `nPlaceHolderID`  
+ *nPlaceHolderID*  
  The handle of the static place holder control placed in the Resource Editor. The newly created Windows Forms control replaces the static control, assuming its position, z-order, and styles (second overload only).  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the parent window.  
   
- `nID`  
+ *nID*  
  The resource ID number to be assigned to the newly created control.  
   
- `pControl`  
+ *pControl*  
  An instance of a Windows Forms control to be associated with the [CWinFormsControl](../../mfc/reference/cwinformscontrol-class.md) object (fourth overload only).  
   
 ### Return Value  
@@ -121,13 +121,13 @@ inline BOOL CreateManagedControl(
 ### Remarks  
  This method instantiates a .NET Framework Windows Forms control in an MFC container.  
   
- The first overload of the method accepts a .NET Framework data type `pType` so that MFC can instantiate a new object of this type. `pType` must be a [Type](https://msdn.microsoft.com/en-us/library/system.type) data type.  
+ The first overload of the method accepts a .NET Framework data type *pType* so that MFC can instantiate a new object of this type. *pType* must be a [Type](https://msdn.microsoft.com/library/system.type) data type.  
   
- The second overload of the method creates a Windows Forms control based on the `TManagedControl` template parameter of the `CWinFormsControl` class. The size and position of the control is based on the `RECT` structure passed to the method. Only `dwStyle` matters for the styles.  
+ The second overload of the method creates a Windows Forms control based on the `TManagedControl` template parameter of the `CWinFormsControl` class. The size and position of the control is based on the `RECT` structure passed to the method. Only *dwStyle* matters for the styles.  
   
- The third overload of the method creates a Windows Forms control that replaces a static control, destroying it and assuming its position, z-order, and styles. The static control serves only as a placeholder for the Windows Forms control. When creating the control, this overload combines the styles from `dwStyle` with the static control's resource styles.  
+ The third overload of the method creates a Windows Forms control that replaces a static control, destroying it and assuming its position, z-order, and styles. The static control serves only as a placeholder for the Windows Forms control. When creating the control, this overload combines the styles from *dwStyle* with the static control's resource styles.  
   
- The fourth overload of the method allows you to pass in an already instantiated Windows Forms control `pControl` that MFC will wrap. It must be of the same type as the `TManagedControl` template parameter of the `CWinFormsControl` class.  
+ The fourth overload of the method allows you to pass in an already instantiated Windows Forms control *pControl* that MFC will wrap. It must be of the same type as the `TManagedControl` template parameter of the `CWinFormsControl` class.  
   
  See [Using a Windows Form User Control in MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md) for samples on using Windows Form controls.  
   

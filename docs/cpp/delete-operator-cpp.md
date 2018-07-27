@@ -23,7 +23,7 @@ Deallocates a block of memory.
 ```  
   
 ## Remarks  
- The *cast-expression* argument must be a pointer to a block of memory previously allocated for an object created with the [new operator](../cpp/new-operator-cpp.md). The **delete** operator has a result of type `void` and therefore does not return a value. For example:  
+ The *cast-expression* argument must be a pointer to a block of memory previously allocated for an object created with the [new operator](../cpp/new-operator-cpp.md). The **delete** operator has a result of type **void** and therefore does not return a value. For example:  
   
 ```cpp 
 CDialog* MyDialog = new CDialog;  

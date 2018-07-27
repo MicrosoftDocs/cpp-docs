@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
   
  It may be worthwhile to not inline a function if it is small and not critical to the performance of your code. That is, if the function is small and not likely to be called often, such as a function that handles an error condition.  
   
- Keep in mind that if a function is marked `noinline`, the calling function will be smaller and thus, itself a candidate for compiler inlining.  
+ Keep in mind that if a function is marked **noinline**, the calling function will be smaller and thus, itself a candidate for compiler inlining.  
   
 ```cpp 
 class X {  

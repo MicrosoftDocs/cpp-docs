@@ -25,10 +25,10 @@ class basic_stringstream : public basic_iostream<Elem, Tr>
 
 ### Parameters
 
-`Alloc`
+*Alloc*
  The allocator class.
 
-`Elem`
+*Elem*
  The type of the basic element of the string.
 
 *Tr*
@@ -36,7 +36,7 @@ class basic_stringstream : public basic_iostream<Elem, Tr>
 
 ## Remarks
 
-The template class describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>, with elements of type **Elem**, whose character traits are determined by the class **Tr**, and whose elements are allocated by an allocator of class `Alloc`. The object stores an object of class basic_stringbuf< **Elem**, **Tr**, `Alloc`>.
+The template class describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>, with elements of type `Elem`, whose character traits are determined by the class `Tr`, and whose elements are allocated by an allocator of class `Alloc`. The object stores an object of class basic_stringbuf< **Elem**, **Tr**, `Alloc`>.
 
 ### Constructors
 
@@ -83,17 +83,17 @@ explicit basic_stringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base::
 
 ### Parameters
 
-`_Mode`
+*_Mode*
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-`str`
+*str*
  An object of type `basic_string`.
 
 ### Remarks
 
-The first constructor initializes the base class by calling [basic_iostream](../standard-library/basic-iostream-class.md)( **sb**), where **sb** is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>. It also initializes **sb** by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>( `_Mode`).
+The first constructor initializes the base class by calling [basic_iostream](../standard-library/basic-iostream-class.md)( **sb**), where `sb` is the stored object of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>. It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>( `_Mode`).
 
-The second constructor initializes the base class by calling basic_iostream( **sb**). It also initializes **sb** by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(_ *Str*, `_Mode`).
+The second constructor initializes the base class by calling basic_iostream( **sb**). It also initializes `sb` by calling basic_stringbuf< **Elem**, **Tr**, `Alloc`>(_ *Str*, `_Mode`).
 
 ## <a name="rdbuf"></a>  basic_stringstream::rdbuf
 
@@ -105,7 +105,7 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
 
 ### Return Value
 
-The address of the stored stream buffer of type **pointer** to basic_stringbuf< **Elem**, **Tr**, `Alloc`>.
+The address of the stored stream buffer of type `pointer` to basic_stringbuf< **Elem**, **Tr**, `Alloc`>.
 
 ### Example
 
@@ -125,7 +125,7 @@ void str(
 
 ### Parameters
 
-`_Newstr`
+*_Newstr*
  The new string.
 
 ### Return Value
@@ -138,7 +138,7 @@ The first member function returns [rdbuf](#rdbuf) -> [str](../standard-library/b
 
 ### Example
 
-See [basic_stringbuf::str](../standard-library/basic-stringbuf-class.md#str) for an example that uses **str**.
+See [basic_stringbuf::str](../standard-library/basic-stringbuf-class.md#str) for an example that uses `str`.
 
 ## See also
 

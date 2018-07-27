@@ -25,15 +25,15 @@ struct extent;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
-`I`
+*I*
  The array bound to query.
 
 ## Remarks
 
-If `Ty` is an array type that has at least `I` dimensions, the type query holds the number of elements in the dimension specified by `I`. If `Ty` is not an array type or its rank is less than `I`, or if `I` is zero and `Ty` is of type "array of unknown bound of `U`", the type query holds the value 0.
+If *Ty* is an array type that has at least *I* dimensions, the type query holds the number of elements in the dimension specified by *I*. If *Ty* is not an array type or its rank is less than *I*, or if *I* is zero and *Ty* is of type "array of unknown bound of `U`", the type query holds the value 0.
 
 ## Example
 

@@ -56,19 +56,19 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
 
 ### Parameters
 
-`BidIt`
+*BidIt*
  The iterator type.
 
-`IOtraits`
+*IOtraits*
  The string traits class.
 
-`Alloc`
+*Alloc*
  The allocator class.
 
-`left`
+*left*
  The left object to compare.
 
-`right`
+*right*
  The right object to compare.
 
 ### Remarks
@@ -172,24 +172,24 @@ bool operator<(const sub_match<BidIt>& left,
 
 ### Parameters
 
-`BidIt`
+*BidIt*
  The iterator type.
 
-`IOtraits`
+*IOtraits*
  The string traits class.
 
-`Alloc`
+*Alloc*
  The allocator class.
 
-`left`
+*left*
  The left object to compare.
 
-`right`
+*right*
  The right object to compare.
 
 ### Remarks
 
-Each template operator converts its arguments to a string type and returns true only if the converted value of `left` compares less than the converted value of `right`.
+Each template operator converts its arguments to a string type and returns true only if the converted value of *left* compares less than the converted value of *right*.
 
 ### Example
 
@@ -258,22 +258,22 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
 
 ### Parameters
 
-`Elem`
+*Elem*
  The element type.
 
-`IOtraits`
+*IOtraits*
  The string traits class.
 
-`Alloc`
+*Alloc*
  The allocator class.
 
-`BidIt`
+*BidIt*
  The iterator type.
 
-`os`
+*os*
  The output stream.
 
-`right`
+*right*
  The object to insert.
 
 ### Remarks
@@ -344,19 +344,19 @@ bool operator<=(const sub_match<BidIt>& left,
 
 ### Parameters
 
-`BidIt`
+*BidIt*
  The iterator type.
 
-`IOtraits`
+*IOtraits*
  The string traits class.
 
-`Alloc`
+*Alloc*
  The allocator class.
 
-`left`
+*left*
  The left object to compare.
 
-`right`
+*right*
  The right object to compare.
 
 ### Remarks
@@ -459,19 +459,19 @@ bool operator==(const match_results<BidIt, Alloc>& left,
 
 ### Parameters
 
-`BidIt`
+*BidIt*
  The iterator type.
 
-`IOtraits`
+*IOtraits*
  The string traits class.
 
-`Alloc`
+*Alloc*
  The allocator class.
 
-`left`
+*left*
  The left object to compare.
 
-`right`
+*right*
  The right object to compare.
 
 ### Remarks
@@ -583,19 +583,19 @@ bool operator>(const sub_match<BidIt>& left,
 
 ### Parameters
 
-`BidIt`
+*BidIt*
  The iterator type.
 
-`IOtraits`
+*IOtraits*
  The string traits class.
 
-`Alloc`
+*Alloc*
  The allocator class.
 
-`left`
+*left*
  The left object to compare.
 
-`right`
+*right*
  The right object to compare.
 
 ### Remarks
@@ -694,19 +694,19 @@ bool operator>=(const sub_match<BidIt>& left,
 
 ### Parameters
 
-`BidIt`
+*BidIt*
  The iterator type.
 
-`IOtraits`
+*IOtraits*
  The string traits class.
 
-`Alloc`
+*Alloc*
  The allocator class.
 
-`left`
+*left*
  The left object to compare.
 
-`right`
+*right*
  The right object to compare.
 
 ### Remarks

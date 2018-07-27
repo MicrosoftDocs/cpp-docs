@@ -102,7 +102,7 @@ void MyArray<T,N>::Print()
 template MyArray<double, 5>;template MyArray<string, 5>;
 ```
 
-In the previous example, the explicit instantiations are at the bottom of the .cpp file. A `MyArray` may be used only for **double** or **string** types.
+In the previous example, the explicit instantiations are at the bottom of the .cpp file. A `MyArray` may be used only for **double** or `String` types.
 
 > [!NOTE]
 > In C++11 the **export** keyword was deprecated in the context of template definitions. In practical terms this has little impact because most compilers never supported it.

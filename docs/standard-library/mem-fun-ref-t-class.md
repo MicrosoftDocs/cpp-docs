@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # mem_fun_ref_t Class
 
-An adapter class that allows a **non_const** member function that takes no arguments to be called as a unary function object when initialized with a reference argument.
+An adapter class that allows a `non_const` member function that takes no arguments to be called as a unary function object when initialized with a reference argument.
 
 ## Syntax
 
@@ -31,11 +31,11 @@ class mem_fun_ref_t : public unary_function<Type, Result> {
 
 ### Parameters
 
-`_Pm`
- A pointer to the member function of class **Type** to be converted to a function object.
+*_Pm*
+ A pointer to the member function of class `Type` to be converted to a function object.
 
-`left`
- The object that the `_Pm` member function is called on.
+*left*
+ The object that the *_Pm* member function is called on.
 
 ## Return Value
 
@@ -43,7 +43,7 @@ An adaptable unary function.
 
 ## Remarks
 
-The template class stores a copy of `_Pm`, which must be a pointer to a member function of class **Type**, in a private member object. It defines its member function `operator()` as returning ( **left**.* `_Pm`)( ).
+The template class stores a copy of *_Pm*, which must be a pointer to a member function of class `Type`, in a private member object. It defines its member function `operator()` as returning ( **left**.* `_Pm`)( ).
 
 ## Example
 

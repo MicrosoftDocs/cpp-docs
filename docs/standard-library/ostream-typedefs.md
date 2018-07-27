@@ -14,7 +14,7 @@ ms.assetid: 2ec4dc52-a01f-4654-bd65-dd5288777c48
 
 ## <a name="ostream"></a>  ostream
 
-Creates a type from basic_ostream that is specialized on `char` and `char_traits` specialized on `char`.
+Creates a type from basic_ostream that is specialized on **char** and `char_traits` specialized on **char**.
 
 ```cpp
 typedef basic_ostream<char, char_traits<char>> ostream;
@@ -22,11 +22,11 @@ typedef basic_ostream<char, char_traits<char>> ostream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ostream](../standard-library/basic-ostream-class.md), specialized for elements of type `char` with default character traits.
+The type is a synonym for template class [basic_ostream](../standard-library/basic-ostream-class.md), specialized for elements of type **char** with default character traits.
 
 ## <a name="wostream"></a>  wostream
 
-Creates a type from basic_ostream that is specialized on `wchar_t` and `char_traits` specialized on `wchar_t`.
+Creates a type from basic_ostream that is specialized on **wchar_t** and `char_traits` specialized on **wchar_t**.
 
 ```cpp
 typedef basic_ostream<wchar_t, char_traits<wchar_t>> wostream;
@@ -34,7 +34,7 @@ typedef basic_ostream<wchar_t, char_traits<wchar_t>> wostream;
 
 ### Remarks
 
-The type is a synonym for template class [basic_ostream](../standard-library/basic-ostream-class.md), specialized for elements of type `wchar_t` with default character traits.
+The type is a synonym for template class [basic_ostream](../standard-library/basic-ostream-class.md), specialized for elements of type **wchar_t** with default character traits.
 
 ## See also
 

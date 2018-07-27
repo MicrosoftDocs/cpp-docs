@@ -69,13 +69,13 @@ CMFCRibbonLinkCtrl(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Specifies the command ID of the command that executes when the link control is clicked.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  Specifies the label to display on the link control.  
   
- [in] `lpszLink`  
+ [in] *lpszLink*  
  Specifies the hyperlink associated with the link control.  
   
 ### Example  
@@ -91,7 +91,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
   
 ### Remarks  
   
@@ -103,7 +103,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -129,7 +129,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -154,8 +154,8 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 ```  
   
 ### Parameters  
- [in] `CDC*`  
- [in] `CRect`  
+ [in] *CDC**  
+ [in] *CRect*  
   
 ### Return Value  
   
@@ -180,7 +180,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -192,7 +192,7 @@ virtual void OnMouseMove(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
   
 ### Remarks  
   
@@ -213,10 +213,10 @@ BOOL OpenLink();
 ```  
   
 ### Return Value  
- `TRUE` if the associated Web page was opened successfully; otherwise, `FALSE`.  
+ TRUE if the associated webpage was opened successfully; otherwise, FALSE.  
   
 ### Remarks  
- Opens a web page using the hyperlink associated with the `CMFCRibbonLinkCtrl` object.  
+ Opens a webpage using the hyperlink associated with the `CMFCRibbonLinkCtrl` object.  
   
 ##  <a name="setlink"></a>  CMFCRibbonLinkCtrl::SetLink  
  Sets the value of the hyperlink.  
@@ -226,7 +226,7 @@ void SetLink(LPCTSTR lpszLink);
 ```  
   
 ### Parameters  
- [in] `lpszLink`  
+ [in] *lpszLink*  
  Specifies the hyperlink text.  
   
 ## See Also  

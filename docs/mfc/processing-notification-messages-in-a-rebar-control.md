@@ -16,23 +16,23 @@ In the parent class of the rebar control, create an `OnChildNotify` handler func
   
  The following notification messages can be sent by the rebar control object:  
   
--   **RBN_AUTOSIZE** Sent by a rebar control (created with the **RBS_AUTOSIZE** style) when the rebar automatically resizes itself.  
+-   RBN_AUTOSIZE Sent by a rebar control (created with the RBS_AUTOSIZE style) when the rebar automatically resizes itself.  
   
--   **RBN_BEGINDRAG** Sent by a rebar control when the user begins dragging a band.  
+-   RBN_BEGINDRAG Sent by a rebar control when the user begins dragging a band.  
   
--   **RBN_CHILDSIZE** Sent by a rebar control when a band's child window is resized.  
+-   RBN_CHILDSIZE Sent by a rebar control when a band's child window is resized.  
   
--   **RBN_DELETEDBAND** Sent by a rebar control after a band has been deleted.  
+-   RBN_DELETEDBAND Sent by a rebar control after a band has been deleted.  
   
--   **RBN_DELETINGBAND** Sent by a rebar control when a band is about to be deleted.  
+-   RBN_DELETINGBAND Sent by a rebar control when a band is about to be deleted.  
   
--   **RBN_ENDDRAG** Sent by a rebar control when the user stops dragging a band.  
+-   RBN_ENDDRAG Sent by a rebar control when the user stops dragging a band.  
   
--   **RBN_GETOBJECT** Sent by a rebar control (created with the **RBS_REGISTERDROP** style) when an object is dragged over a band in the control.  
+-   RBN_GETOBJECT Sent by a rebar control (created with the RBS_REGISTERDROP style) when an object is dragged over a band in the control.  
   
--   **RBN_HEIGHTCHANGE** Sent by a rebar control when its height has changed.  
+-   RBN_HEIGHTCHANGE Sent by a rebar control when its height has changed.  
   
--   **RBN_LAYOUTCHANGED** Sent by a rebar control when the user changes the layout of the control's bands.  
+-   RBN_LAYOUTCHANGED Sent by a rebar control when the user changes the layout of the control's bands.  
   
  For more information on these notifications, see [Rebar Control Reference](http://msdn.microsoft.com/library/windows/desktop/bb774375) in the Windows SDK.  
   

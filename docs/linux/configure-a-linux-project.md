@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "linux"]
 ---
 
 # Configure a Linux Project
-This topic describes how to configure a Visual Studio Linux project. For information about CMake Linux Projects, see [Configure a Linux CMake Project ](cmake-linux-project.md).
+This topic describes how to configure a C++ Linux project in Visual Studio. For information about CMake Linux Projects in Visual Studio, see [Configure a Linux CMake Project ](cmake-linux-project.md).
 
 ## General settings
 A variety of options can be configured for a Linux project with Visual Studio.  To view these options, select the **Project > Properties** menu, or right click on the project in **Solution Explorer** and select **Properties** from the context menu. The **General** settings appear.

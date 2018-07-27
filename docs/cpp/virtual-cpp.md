@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # virtual (C++)
-The `virtual` keyword declares a virtual function or a virtual base class.  
+The **virtual** keyword declares a virtual function or a virtual base class.  
   
 ## Syntax  
   
@@ -23,16 +23,16 @@ virtual [access-specifier] base-class-name
 ```  
   
 #### Parameters  
- `type-specifiers`  
+ *type-specifiers*  
  Specifies the return type of the virtual member function.  
   
- `member-function-declarator`  
+ *member-function-declarator*  
  Declares a member function.  
   
- `access-specifier`  
- Defines the level of access to the base class, `public`, `protected` or `private`. Can appear before or after the `virtual` keyword.  
+ *access-specifier*  
+ Defines the level of access to the base class, **public**, **protected** or **private**. Can appear before or after the **virtual** keyword.  
   
- `base-class-name`  
+ *base-class-name*  
  Identifies a previously declared class type.  
   
 ## Remarks  

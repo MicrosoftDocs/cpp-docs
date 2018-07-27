@@ -21,8 +21,8 @@ ms.workload: ["cplusplus"]
 |-----------|-------------|  
 |[_bstr_t](../cpp/bstr-t-class.md)|Wraps the `BSTR` type to provide useful operators and methods.|  
 |[_com_error](../cpp/com-error-class.md)|Defines the error object thrown by [_com_raise_error](../cpp/com-raise-error.md) in most failures.|  
-|[_com_ptr_t](../cpp/com-ptr-t-class.md)|Encapsulates COM interface pointers, and automates the required calls to `AddRef`, **Release**, and `QueryInterface`.|  
-|[_variant_t](../cpp/variant-t-class.md)|Wraps the **VARIANT** type to provide useful operators and methods.|  
+|[_com_ptr_t](../cpp/com-ptr-t-class.md)|Encapsulates COM interface pointers, and automates the required calls to `AddRef`, `Release`, and `QueryInterface`.|  
+|[_variant_t](../cpp/variant-t-class.md)|Wraps the `VARIANT` type to provide useful operators and methods.|  
   
 **END Microsoft Specific**  
   

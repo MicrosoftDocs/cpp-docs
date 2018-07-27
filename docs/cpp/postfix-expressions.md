@@ -51,9 +51,9 @@ simple-type-name ( expression-list )
   
  indicates the invocation of the constructor.  If the simple-type-name is a fundamental type, the expression list must be a single expression, and this expression indicates a cast of the expression's value to the fundamental type.  This type of cast expression mimics a constructor.  Because this form allows fundamental types and classes to be constructed using the same syntax, this form is especially useful when defining template classes.  
   
- The *cast-keyword* is one of `dynamic_cast`, `static_cast` or `reinterpret_cast`.  More information may be found in **dynamic_cast**, **static_cast** and **reinterpet_cast**.  
+ The *cast-keyword* is one of **dynamic_cast**, **static_cast** or **reinterpret_cast**.  More information may be found in **dynamic_cast**, **static_cast** and **reinterpet_cast**.  
   
- The `typeid` operator is considered a postfix expression.  See **typeid operator**.  
+ The **typeid** operator is considered a postfix expression.  See **typeid operator**.  
   
 ## Formal and actual arguments  
  Calling programs pass information to called functions in "actual arguments." The called functions access the information using corresponding "formal arguments."  
@@ -79,7 +79,7 @@ simple-type-name ( expression-list )
   
      Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md)).  
   
-     Therefore, if the function prototype (declaration) calls for an argument of type **long**, and if the calling program supplies an actual argument of type `int`, the actual argument is promoted using a standard type conversion to type **long** (see [Standard Conversions](../cpp/standard-conversions.md)).  
+     Therefore, if the function prototype (declaration) calls for an argument of type **long**, and if the calling program supplies an actual argument of type **int**, the actual argument is promoted using a standard type conversion to type **long** (see [Standard Conversions](../cpp/standard-conversions.md)).  
   
      It is an error to supply an actual argument for which there is no standard or user-defined conversion to the type of the formal argument.  
   
@@ -138,7 +138,7 @@ double& func2( double& d, const char *c ) {
   
 -   If the actual argument is of type **float**, it is promoted to type **double** prior to the function call.  
   
--   Any signed or unsigned `char`, **short**, enumerated type, or bit field is converted to either a signed or an unsigned `int` using integral promotion.  
+-   Any signed or unsigned **char**, **short**, enumerated type, or bit field is converted to either a signed or an unsigned **int** using integral promotion.  
   
 -   Any argument of class type is passed by value as a data structure; the copy is created by binary copying instead of by invoking the class's copy constructor (if one exists).  
   
@@ -179,7 +179,7 @@ void print( const char *string, const char *terminator )
 }  
 ```  
   
- The preceding program declares a function, `print`, that takes two arguments. However, the second argument, `terminator`, has a default value, `"\n"`. In **main**, the first two calls to `print` allow the default second argument to supply a new line to terminate the printed string. The third call specifies an explicit value for the second argument. The output from the program is  
+ The preceding program declares a function, `print`, that takes two arguments. However, the second argument, `terminator`, has a default value, `"\n"`. In `main`, the first two calls to `print` allow the default second argument to supply a new line to terminate the printed string. The third call specifies an explicit value for the second argument. The output from the program is  
   
 ```Output 
 hello,  

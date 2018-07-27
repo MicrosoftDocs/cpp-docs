@@ -86,13 +86,13 @@ CMFCHeaderCtrl::CMFCHeaderCtrl()
   
 |Member variable|Value|  
 |---------------------|-----------|  
-|`m_bIsMousePressed`|`FALSE`|  
-|`m_bMultipleSort`|`FALSE`|  
-|`m_bAscending`|`TRUE`|  
+|`m_bIsMousePressed`|FALSE|  
+|`m_bMultipleSort`|FALSE|  
+|`m_bAscending`|TRUE|  
 |`m_nHighlightedItem`|-1|  
-|`m_bTracked`|`FALSE`|  
-|`m_bIsDlgControl`|`FALSE`|  
-|`m_hFont`|`NULL`|  
+|`m_bTracked`|FALSE|  
+|`m_bIsDlgControl`|FALSE|  
+|`m_hFont`|NULL|  
   
 ##  <a name="enablemultiplesort"></a>  CMFCHeaderCtrl::EnableMultipleSort  
  Enables or disables *multiple column sort* mode for the current header control.  
@@ -102,8 +102,8 @@ void EnableMultipleSort(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable multiple column sort mode; `FALSE` to disable multiple column sort mode and to remove any columns from the list of sorted columns. The default value is `TRUE`.  
+ [in] *bEnable*  
+ TRUE to enable multiple column sort mode; FALSE to disable multiple column sort mode and to remove any columns from the list of sorted columns. The default value is TRUE.  
   
 ### Remarks  
  Use this method to enable or disable multiple column sort mode. Two or more columns can participate in a sort if the header control is in multiple column sort mode.  
@@ -116,7 +116,7 @@ int GetColumnState(int iColumn) const;
 ```  
   
 ### Parameters  
- [in] `iColumn`  
+ [in] *iColumn*  
  The zero-based index of a column.  
   
 ### Return Value  
@@ -151,7 +151,7 @@ BOOL IsAscending() const;
 ```  
   
 ### Return Value  
- `TRUE` if any column in the header control is sorted in ascending order; otherwise, `FALSE`.  
+ TRUE if any column in the header control is sorted in ascending order; otherwise, FALSE.  
   
 ### Remarks  
  The value that this method returns is used to display the appropriate sort arrow on the header control item. Use the [CMFCHeaderCtrl::SetSortColumn](#setsortcolumn) method to set the sort order.  
@@ -164,7 +164,7 @@ BOOL IsDialogControl() const;
 ```  
   
 ### Return Value  
- `TRUE` if the parent window of the current header control is a dialog box; otherwise, `FALSE`.  
+ TRUE if the parent window of the current header control is a dialog box; otherwise, FALSE.  
   
 ##  <a name="ismultiplesort"></a>  CMFCHeaderCtrl::IsMultipleSort  
  Indicates whether the current header control is in *multiple column sort* mode.  
@@ -174,7 +174,7 @@ BOOL IsMultipleSort() const;
 ```  
   
 ### Return Value  
- `TRUE` if multiple column sort mode is enabled; otherwise, `FALSE`.  
+ TRUE if multiple column sort mode is enabled; otherwise, FALSE.  
   
 ### Remarks  
  Use the [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) method to enable or disable multiple column sort mode. Two or more columns can participate in a sort if the header control is in multiple column sort mode.  
@@ -192,20 +192,20 @@ virtual void OnDrawItem(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `iItem`  
+ [in] *iItem*  
  The zero-based index of the item to draw.  
   
- [in] `rect`  
+ [in] *rect*  
  The bounding rectangle of the item to draw.  
   
- [in] `bIsPressed`  
- `TRUE` to draw the item in pressed state; otherwise, `FALSE`.  
+ [in] *bIsPressed*  
+ TRUE to draw the item in pressed state; otherwise, FALSE.  
   
- [in] `bIsHighlighted`  
- `TRUE` to draw the item in highlighted state; otherwise, `FALSE`.  
+ [in] *bIsHighlighted*  
+ TRUE to draw the item in highlighted state; otherwise, FALSE.  
   
 ##  <a name="ondrawsortarrow"></a>  CMFCHeaderCtrl::OnDrawSortArrow  
  Called by the framework to draw the sort arrow.  
@@ -217,10 +217,10 @@ virtual void OnDrawSortArrow(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectArrow`  
+ [in] *rectArrow*  
  The bounding rectangle of the sort arrow.  
   
 ##  <a name="onfillbackground"></a>  CMFCHeaderCtrl::OnFillBackground  
@@ -231,7 +231,7 @@ virtual void OnFillBackground(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
 ### Remarks  
@@ -244,7 +244,7 @@ void RemoveSortColumn(int iColumn);
 ```  
   
 ### Parameters  
- [in] `iColumn`  
+ [in] *iColumn*  
  The zero-based index of the column to remove.  
   
 ##  <a name="setsortcolumn"></a>  CMFCHeaderCtrl::SetSortColumn  
@@ -258,20 +258,20 @@ void SetSortColumn(
 ```  
   
 ### Parameters  
- [in] `iColumn`  
+ [in] *iColumn*  
  The zero-based index of a header control column. If this parameter is less than zero, this method removes all columns from the list of sort columns.  
   
- [in] `bAscending`  
- Specifies the sort order of the column that the `iColumn` parameter specifies. `TRUE` to set ascending order; `FALSE` to set descending order. The default value is `TRUE`.  
+ [in] *bAscending*  
+ Specifies the sort order of the column that the *iColumn* parameter specifies. TRUE to set ascending order; FALSE to set descending order. The default value is TRUE.  
   
- [in] `bAdd`  
- `TRUE` to set the sort order of the column that the `iColumn` parameter specifies.  
+ [in] *bAdd*  
+ TRUE to set the sort order of the column that the *iColumn* parameter specifies.  
   
  If the current header control is in *multiple column sort* mode, this method adds the specified column to the list of sort columns. Use [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) to set multiple column sort mode.  
   
  If multiple column sort mode is not set and this method is compiled in debug mode, this method asserts. If multiple column sort mode is not set and this method is compiled in retail mode, this method first removes all columns from the list of sort columns, and then adds the specified column to the list.  
   
- `FALSE` to first remove all columns from the list of sort columns, and then add the specified column to the list. The default value is `FALSE`.  
+ FALSE to first remove all columns from the list of sort columns, and then add the specified column to the list. The default value is FALSE.  
   
 ### Remarks  
  Use this method to set the sort order of a column. If necessary, this method adds the column to the list of sort columns. The header control uses the sort order to draw a sort arrow that points up or down.  

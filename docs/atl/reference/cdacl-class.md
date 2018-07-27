@@ -84,23 +84,23 @@ bool AddAllowedAce(
 ```  
   
 ### Parameters  
- `rSid`  
+ *rSid*  
  A [CSid](../../atl/reference/csid-class.md) object.  
   
- `AccessMask`  
+ *AccessMask*  
  Specifies the mask of access rights to be allowed for the specified `CSid` object.  
   
- `AceFlags`  
+ *AceFlags*  
  A set of bit flags that control ACE inheritance.  
   
- `pObjectType`  
+ *pObjectType*  
  The object type.  
   
- `pInheritedObjectType`  
+ *pInheritedObjectType*  
  The inherited object type.  
   
 ### Return Value  
- Returns **true** if the ACE is added to the `CDacl` object, **false** on failure.  
+ Returns TRUE if the ACE is added to the `CDacl` object, FALSE on failure.  
   
 ### Remarks  
  A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that allows access to the `CDacl` object.  
@@ -125,23 +125,23 @@ bool AddDeniedAce(
 ```  
   
 ### Parameters  
- `rSid`  
+ *rSid*  
  A `CSid` object.  
   
- `AccessMask`  
+ *AccessMask*  
  Specifies the mask of access rights to be denied for the specified `CSid` object.  
   
- `AceFlags`  
+ *AceFlags*  
  A set of bit flags that control ACE inheritance. Defaults to 0 in the first form of the method.  
   
- `pObjectType`  
+ *pObjectType*  
  The object type.  
   
- `pInheritedObjectType`  
+ *pInheritedObjectType*  
  The inherited object type.  
   
 ### Return Value  
- Returns **true** if the ACE is added to the `CDacl` object, **false** on failure.  
+ Returns TRUE if the ACE is added to the `CDacl` object, FALSE on failure.  
   
 ### Remarks  
  A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that denies access to the `CDacl` object.  
@@ -157,11 +157,11 @@ CDacl () throw();
 ```  
   
 ### Parameters  
- `rhs`  
- An existing **ACL** (access-control list) structure.  
+ *rhs*  
+ An existing `ACL` (access-control list) structure.  
   
 ### Remarks  
- The `CDacl` object can be optionally created using an existing **ACL** structure. It is important to note that only a DACL (discretionary access-control list), and not a SACL (system access-control list), should be passed as this parameter. In debug builds, passing a SACL will cause an ASSERT. In release builds, passing a SACL will cause the ACEs (access-control entries) in the ACL to be ignored, and no error will occur.  
+ The `CDacl` object can be optionally created using an existing `ACL` structure. It is important to note that only a DACL (discretionary access-control list), and not a SACL (system access-control list), should be passed as this parameter. In debug builds, passing a SACL will cause an ASSERT. In release builds, passing a SACL will cause the ACEs (access-control entries) in the ACL to be ignored, and no error will occur.  
   
 ##  <a name="dtor"></a>  CDacl::~CDacl  
  The destructor.  
@@ -191,7 +191,7 @@ CDacl& operator= (const ACL& rhs) throw(...);
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  The ACL (access-control list) to assign to the existing object.  
   
 ### Return Value  
@@ -208,7 +208,7 @@ void RemoveAce(UINT nIndex) throw();
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index to the ACE entry to remove.  
   
 ### Remarks  
@@ -222,7 +222,7 @@ void RemoveAllAces() throw();
 ```  
   
 ### Remarks  
- Removes every **ACE** (access-control entry) structure (if any) in the `CDacl` object.  
+ Removes every `ACE` (access-control entry) structure (if any) in the `CDacl` object.  
   
 ## See Also  
  [Security Sample](../../visual-cpp-samples.md)   

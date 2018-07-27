@@ -36,8 +36,8 @@ class CSocketAddr
 |[CSocketAddr::FindAddr](#findaddr)|Call this method to convert the provided host name to the host address.|  
 |[CSocketAddr::FindINET4Addr](#findinet4addr)|Call this method to convert the IPv4 host name to the host address.|  
 |[CSocketAddr::FindINET6Addr](#findinet6addr)|Call this method to convert the IPv6 host name to the host address.|  
-|[CSocketAddr::GetAddrInfo](#getaddrinfo)|Call this method to return a pointer to a specific element in the **addrinfo** list.|  
-|[CSocketAddr::GetAddrInfoList](#getaddrinfolist)|Call this method to return a pointer to the **addrinfo** list.|  
+|[CSocketAddr::GetAddrInfo](#getaddrinfo)|Call this method to return a pointer to a specific element in the `addrinfo` list.|  
+|[CSocketAddr::GetAddrInfoList](#getaddrinfolist)|Call this method to return a pointer to the `addrinfo` list.|  
   
 ## Remarks  
  This class provides an IP version agnostic approach for looking up network addresses for use with Windows sockets API functions and socket wrappers in libraries.  
@@ -81,22 +81,22 @@ int FindAddr(
 ```  
   
 ### Parameters  
- `szHost`  
+ *szHost*  
  The host name or dotted IP address.  
   
  *szPortOrServiceName*  
  The port number or name of service on host.  
   
- `nPortNo`  
+ *nPortNo*  
  The port number.  
   
- `flags`  
+ *flags*  
  0 or combination of AI_PASSIVE, AI_CANONNAME or AI_NUMERICHOST.  
   
  *addr_family*  
  Address family (such as PF_INET).  
   
- `sock_type`  
+ *sock_type*  
  Socket type (such as SOCK_STREAM).  
   
  *ai_proto*  
@@ -120,16 +120,16 @@ int FindINET4Addr(
 ```  
   
 ### Parameters  
- `szHost`  
+ *szHost*  
  The host name or dotted IP address.  
   
- `nPortNo`  
+ *nPortNo*  
  The port number.  
   
- `flags`  
+ *flags*  
  0 or combination of AI_PASSIVE, AI_CANONNAME or AI_NUMERICHOST.  
   
- `sock_type`  
+ *sock_type*  
  Socket type (such as SOCK_STREAM).  
   
 ### Return Value  
@@ -150,16 +150,16 @@ int FindINET6Addr(
 ```  
   
 ### Parameters  
- `szHost`  
+ *szHost*  
  The host name or dotted IP address.  
   
- `nPortNo`  
+ *nPortNo*  
  The port number.  
   
- `flags`  
+ *flags*  
  0 or combination of AI_PASSIVE, AI_CANONNAME or AI_NUMERICHOST.  
   
- `sock_type`  
+ *sock_type*  
  Socket type (such as SOCK_STREAM).  
   
 ### Return Value  
@@ -169,21 +169,21 @@ int FindINET6Addr(
  This method calls the Win32 API function [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) to perform the conversion.  
   
 ##  <a name="getaddrinfo"></a>  CSocketAddr::GetAddrInfo  
- Call this method to return a pointer to a specific element in the **addrinfo** list.  
+ Call this method to return a pointer to a specific element in the `addrinfo` list.  
   
 ```
 addrinfo* const GetAddrInfoint nIndex = 0) const;
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  A reference to a specific element in the [addrinfo](http://msdn.microsoft.com/library/windows/desktop/ms737530) list.  
   
 ### Return Value  
- Returns a pointer to the **addrinfo** structure referenced by `nIndex` in the linked list containing response information about the host.  
+ Returns a pointer to the `addrinfo` structure referenced by *nIndex* in the linked list containing response information about the host.  
   
 ##  <a name="getaddrinfolist"></a>  CSocketAddr::GetAddrInfoList  
- Call this method to return a pointer to the **addrinfo** list.  
+ Call this method to return a pointer to the `addrinfo` list.  
   
 ```
 addrinfo* const GetAddrInfoList() const;

@@ -79,13 +79,14 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
   
 ```  
 explicit CDaoRecordView(LPCTSTR lpszTemplateName);  
-explicit CDaoRecordView(UINT nIDTemplate);```  
+explicit CDaoRecordView(UINT nIDTemplate);
+```  
   
 ### Parameters  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Contains a null-terminated string that is the name of a dialog template resource.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Contains the ID number of a dialog template resource.  
   
 ### Remarks  
@@ -94,10 +95,10 @@ explicit CDaoRecordView(UINT nIDTemplate);```
 > [!NOTE]
 >  Your derived class must supply its own constructor. In the constructor of your derived class, call the constructor `CDaoRecordView::CDaoRecordView` with the resource name or ID as an argument.  
   
- **CDaoRecordView::OnInitialUpdate** calls `CWnd::UpdateData`, which calls `CWnd::DoDataExchange`. This initial call to `DoDataExchange` connects `CDaoRecordView` controls (indirectly) to `CDaoRecordset` field data members created by ClassWizard. These data members cannot be used until after you call the base class **CFormView::OnInitialUpdate** member function.  
+ `CDaoRecordView::OnInitialUpdate` calls `CWnd::UpdateData`, which calls `CWnd::DoDataExchange`. This initial call to `DoDataExchange` connects `CDaoRecordView` controls (indirectly) to `CDaoRecordset` field data members created by ClassWizard. These data members cannot be used until after you call the base class `CFormView::OnInitialUpdate` member function.  
   
 > [!NOTE]
->  If you use ClassWizard, the wizard defines an `enum` value `CDaoRecordView::IDD` in the class declaration and uses it in the member initialization list for the constructor.  
+>  If you use ClassWizard, the wizard defines an **enum** value `CDaoRecordView::IDD` in the class declaration and uses it in the member initialization list for the constructor.  
   
  [!code-cpp[NVC_MFCDatabase#35](../../mfc/codesnippet/cpp/cdaorecordview-class_1.cpp)]  
   
@@ -140,10 +141,10 @@ virtual CDaoRecordset* OnGetRecordset() = 0;
 ```  
   
 ### Return Value  
- A pointer to a `CDaoRecordset`-derived object if the object was successfully created; otherwise a **NULL** pointer.  
+ A pointer to a `CDaoRecordset`-derived object if the object was successfully created; otherwise a NULL pointer.  
   
 ### Remarks  
- You must override this member function to construct or obtain a recordset object and return a pointer to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the recordset pointer stored in the record view if one exists. If not, it constructs a recordset object of the type you specified with ClassWizard and calls its **Open** member function to open the table or run the query, and then returns a pointer to the object.  
+ You must override this member function to construct or obtain a recordset object and return a pointer to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the recordset pointer stored in the record view if one exists. If not, it constructs a recordset object of the type you specified with ClassWizard and calls its `Open` member function to open the table or run the query, and then returns a pointer to the object.  
   
  For more information and examples, see the article [Record Views: Using a Record View](../../data/using-a-record-view-mfc-data-access.md).  
   
@@ -155,16 +156,16 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 ```  
   
 ### Parameters  
- `nIDMoveCommand`  
+ *nIDMoveCommand*  
  One of the following standard command ID values:  
   
-- `ID_RECORD_FIRST` Move to the first record in the recordset.  
+- ID_RECORD_FIRST Move to the first record in the recordset.  
   
-- `ID_RECORD_LAST` Move to the last record in the recordset.  
+- ID_RECORD_LAST Move to the last record in the recordset.  
   
-- `ID_RECORD_NEXT` Move to the next record in the recordset.  
+- ID_RECORD_NEXT Move to the next record in the recordset.  
   
-- `ID_RECORD_PREV` Move to the previous record in the recordset.  
+- ID_RECORD_PREV Move to the previous record in the recordset.  
   
 ### Return Value  
  Nonzero if the move was successful; otherwise 0 if the move request was denied.  
@@ -179,7 +180,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  If you move past the last record in the recordset, the record view continues to display the last record. If you move backward past the first record, the record view continues to display the first record.  
   
 > [!CAUTION]
->  Calling `OnMove` throws an exception if the recordset has no records. Call the appropriate user interface update handler function — **OnUpdateRecordFirst**, **OnUpdateRecordLast**, **OnUpdateRecordNext**, or **OnUpdateRecordPrev** — before the corresponding move operation to determine whether the recordset has any records.  
+>  Calling `OnMove` throws an exception if the recordset has no records. Call the appropriate user interface update handler function — `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, or `OnUpdateRecordPrev` — before the corresponding move operation to determine whether the recordset has any records.  
   
 ## See Also  
  [CFormView Class](../../mfc/reference/cformview-class.md)   

@@ -1,7 +1,7 @@
 ---
 title: "Using setjmp-longjmp | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/15/2018"
+ms.date: "07/27/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 f1_keywords: ["longjmp_cpp", "setjmp_cpp"]
@@ -17,12 +17,12 @@ ms.workload: ["cplusplus"]
 When [setjmp](../c-runtime-library/reference/setjmp.md) and [longjmp](../c-runtime-library/reference/longjmp.md) are used together, they provide a way to execute a non-local **goto**. They are typically used to pass execution control to error-handling or recovery code in a previously called routine without using the standard calling or return conventions.
 
 > [!CAUTION]
-> Because **setjmp** and **longjmp** might degrade performance by preventing optimization on local variables, we recommend that you do not use them in C++ programs. We recommend that you use **try** and **catch** constructs instead.
+> Because `setjmp` and `longjmp` might degrade performance by preventing optimization on local variables, we don't recommend their use in C++ programs. We recommend you use **try** and **catch** constructs instead.
 
-If you decide to use **setjmp** and **longjmp** in a C++ program, also include \<setjmp.h> or \<setjmpex.h> to assure correct interaction between the functions and C++ exception handling. If you use [/EH](../build/reference/eh-exception-handling-model.md) to compile, destructors for local objects are called during the stack unwind. If you use **/EHs** to compile, and one of your functions calls a function that uses [noexcept](../cpp/noexcept-cpp.md) and the function that uses **noexcept** calls **longjmp**, then the destructor unwind might not occur, depending on the optimizer.
+If you decide to use `setjmp` and `longjmp` in a C++ program, also include \<setjmp.h> or \<setjmpex.h> to assure correct interaction between the functions and C++ exception handling. If you use [/EH](../build/reference/eh-exception-handling-model.md) to compile, destructors for local objects are called during the stack unwind. If you use **/EHs** to compile, and one of your functions calls a function that uses [noexcept](../cpp/noexcept-cpp.md) and the function that uses **noexcept** calls `longjmp`, then the destructor unwind might not occur, depending on the optimizer state.
 
-In portable code, when a non-local **goto** that calls **longjmp** is executed, correct destruction of frame-based objects might be unreliable.
+In portable code, when a non-local **goto** that calls `longjmp` is executed, correct destruction of frame-based objects might be unreliable.
 
 ## See also
 
-- [Mixing C (Structured) and C++ Exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)
+[Mixing C (Structured) and C++ Exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)  

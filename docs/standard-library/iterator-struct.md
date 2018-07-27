@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # iterator Struct
 
-An empty base struct used to ensure that a user-defined iterator class works properly with **iterator_trait**s.
+An empty base struct used to ensure that a user-defined iterator class works properly with `iterator_trait`s.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ The template struct serves as a base type for all iterators. It defines the memb
 
 - `iterator_category` (a synonym for the template parameter `Category`).
 
-- `value_type` (a synonym for the template parameter **Type**).
+- `value_type` (a synonym for the template parameter `Type`).
 
 - `difference_type` (a synonym for the template parameter `Distance`).
 
@@ -45,7 +45,7 @@ The template struct serves as a base type for all iterators. It defines the memb
 
 - `reference` (a synonym for the template parameter `Reference`).
 
-Note that `value_type` should not be a constant type even if **pointer** points at an object of const **Type** and reference designates an object of const **Type**.
+Note that `value_type` should not be a constant type even if `pointer` points at an object of **const** `Type` and reference designates an object of **const** `Type`.
 
 ## Example
 

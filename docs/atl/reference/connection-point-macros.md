@@ -37,7 +37,7 @@ BEGIN_CONNECTION_POINT_MAP(x)
  [in] The name of the class containing the connection points.  
   
 ### Remarks  
- Start your connection point map with the `BEGIN_CONNECTION_POINT_MAP` macro, add entries for each of your connection points with the [CONNECTION_POINT_ENTRY](#connection_point_entry) macro, and complete the map with the [END_CONNECTION_POINT_MAP](#end_connection_point_map) macro.  
+ Start your connection point map with the BEGIN_CONNECTION_POINT_MAP macro, add entries for each of your connection points with the [CONNECTION_POINT_ENTRY](#connection_point_entry) macro, and complete the map with the [END_CONNECTION_POINT_MAP](#end_connection_point_map) macro.  
   
  For more information about connection points in ATL, see the article [Connection Points](../../atl/atl-connection-points.md).  
   
@@ -53,16 +53,16 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  [in] The GUID of the interface being added to the connection point map. 
  
- `piid`  
+ *piid*  
  [in] Pointer to the GUID of the interface being adde.   
   
 ### Remarks  
  Connection point entries in the map are used by [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md). The class containing the connection point map must inherit from `IConnectionPointContainerImpl`.  
   
- Start your connection point map with the [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) macro, add entries for each of your connection points with the `CONNECTION_POINT_ENTRY` macro, and complete the map with the [END_CONNECTION_POINT_MAP](#end_connection_point_map) macro.  
+ Start your connection point map with the [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) macro, add entries for each of your connection points with the CONNECTION_POINT_ENTRY macro, and complete the map with the [END_CONNECTION_POINT_MAP](#end_connection_point_map) macro.  
   
  For more information about connection points in ATL, see the article [Connection Points](../../atl/atl-connection-points.md).  
   
@@ -77,7 +77,7 @@ END_CONNECTION_POINT_MAP()
 ```  
   
 ### Remarks  
- Start your connection point map with the [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) macro, add entries for each of your connection points with the [CONNECTION_POINT_ENTRY](#connection_point_entry) macro, and complete the map with the `END_CONNECTION_POINT_MAP` macro.  
+ Start your connection point map with the [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) macro, add entries for each of your connection points with the [CONNECTION_POINT_ENTRY](#connection_point_entry) macro, and complete the map with the END_CONNECTION_POINT_MAP macro.  
   
  For more information about connection points in ATL, see the article [Connection Points](../../atl/atl-connection-points.md).  
   

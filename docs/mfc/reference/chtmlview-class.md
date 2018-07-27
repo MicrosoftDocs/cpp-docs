@@ -44,7 +44,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::GetLocationURL](#getlocationurl)|Retrieves the URL of the resource that WebBrowser is currently displaying.|  
 |[CHtmlView::GetMenuBar](#getmenubar)|Retrieves a value that determines whether the menu bar is visible.|  
 |[CHtmlView::GetOffline](#getoffline)|Retrieves a value that determines whether the control is offline.|  
-|[CHtmlView::GetParentBrowser](#getparentbrowser)|Retrieves a pointer to the `IDispatch` interface. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).|  
+|[CHtmlView::GetParentBrowser](#getparentbrowser)|Retrieves a pointer to the `IDispatch` interface. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).|  
 |[CHtmlView::GetProperty](#getproperty)|Retrieves the current value of a property associated with the given object.|  
 |[CHtmlView::GetReadyState](#getreadystate)|Retrieves the ready state of the web browser object.|  
 |[CHtmlView::GetRegisterAsBrowser](#getregisterasbrowser)|Indicates whether the WebBrowser control is registered as a top-level browser for target name resolution.|  
@@ -68,7 +68,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::Navigate2](#navigate2)|Navigates to the resource identified by a URL, or to the file identified by a full path.|  
 |[CHtmlView::OnBeforeNavigate2](#onbeforenavigate2)|Called before a navigation occurs in the given WebBrowser (on either a window or frameset element).|  
 |[CHtmlView::OnCommandStateChange](#oncommandstatechange)|Called to notify an application that the enabled state of a web browser command has changed.|  
-|[CHtmlView::OnDocumentComplete](#ondocumentcomplete)|Called to notify an application that a document has reached the `READYSTATE_COMPLETE` state.|  
+|[CHtmlView::OnDocumentComplete](#ondocumentcomplete)|Called to notify an application that a document has reached the READYSTATE_COMPLETE state.|  
 |[CHtmlView::OnDocWindowActivate](#ondocwindowactivate)|Called from the Internet Explorer or MSHTML implementation of [IOleInPlaceActiveObject::OnDocWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms687281), which notifies the active in-place object when the container's document window is activated or deactivated.|  
 |[CHtmlView::OnDownloadBegin](#ondownloadbegin)|Called to notify an application that a navigation operation is beginning.|  
 |[CHtmlView::OnDownloadComplete](#ondownloadcomplete)|Called when a navigation operation finished, was halted, or failed.|  
@@ -184,26 +184,26 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `lpszClassName`  
- Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) global function or the **RegisterClass** Windows function. If **NULL**, uses the predefined default [CFrameWnd](../../mfc/reference/cframewnd-class.md) attributes.  
+ *lpszClassName*  
+ Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) global function or the `RegisterClass` Windows function. If NULL, uses the predefined default [CFrameWnd](../../mfc/reference/cframewnd-class.md) attributes.  
   
- `lpszWindowName`  
+ *lpszWindowName*  
  Points to a null-terminated character string that represents the window name.  
   
- `dwStyle`  
- Specifies the window style attributes. By default, the **WS_VISIBLE** and **WS_CHILD** Windows styles are set.  
+ *dwStyle*  
+ Specifies the window style attributes. By default, the WS_VISIBLE and WS_CHILD Windows styles are set.  
   
- `rect`  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The `rectDefault` value allows Windows to specify the size and position of the new window.  
+ *rect*  
+ A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the parent window of the control.  
   
- `nID`  
- The ID number of the view. By default, set to **AFX_IDW_PANE_FIRST**.  
+ *nID*  
+ The ID number of the view. By default, set to AFX_IDW_PANE_FIRST.  
   
- `pContext`  
- A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). **NULL** by default.  
+ *pContext*  
+ A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). NULL by default.  
   
 ##  <a name="createcontrolsite"></a>  CHtmlView::CreateControlSite  
  Overridable used to create a control site instance to host a control on the form.  
@@ -217,16 +217,16 @@ virtual BOOL CreateControlSite(
 ```  
   
 ### Parameters  
- `pContainer`  
+ *pContainer*  
  A pointer to a [COleControlContainer](../../mfc/reference/colecontrolcontainer-class.md) object containing the control.  
   
- `ppSite`  
+ *ppSite*  
  A pointer to a pointer to a [COleControlSite](../../mfc/reference/colecontrolsite-class.md) object, providing the site for the control.  
   
- `nID`  
+ *nID*  
  The identifier of the control to be hosted.  
   
- `clsid`  
+ *clsid*  
  The CLSID of the control to be hosted  
   
 ### Return Value  
@@ -246,20 +246,20 @@ HRESULT ExecFormsCommand(
 ```  
   
 ### Parameters  
- `dwCommandID`  
- The command to be executed. This command must belong to the **CMDSETID3_Forms3** group.  
+ *dwCommandID*  
+ The command to be executed. This command must belong to the CMDSETID3_Forms3 group.  
   
  *pVarIn*  
- Pointer to a **VARIANT** structure containing input arguments. Can be **NULL**.  
+ Pointer to a `VARIANT` structure containing input arguments. Can be NULL.  
   
  *pVarOut*  
- Pointer to a **VARIANT** structure to receive command output. Can be **NULL**.  
+ Pointer to a `VARIANT` structure to receive command output. Can be NULL.  
   
 ### Return Value  
- A standard `HRESULT` value. For a complete listing of possible values, see [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) in the Windows SDK.  
+ A standard HRESULT value. For a complete listing of possible values, see [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) in the Windows SDK.  
   
 ### Remarks  
- **ExecFormsCommand** implements the behavior of the [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) method.  
+ `ExecFormsCommand` implements the behavior of the [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) method.  
   
 ##  <a name="execwb"></a>  CHtmlView::ExecWB  
  Call this member function to execute a command in the WebBrowser or Internet Explorer.  
@@ -273,13 +273,13 @@ void ExecWB(
 ```  
   
 ### Parameters  
- `cmdID`  
+ *cmdID*  
  The command to execute.  
   
  *cmdexecopt*  
  The options set for executing the command.  
   
- `pvaIn`  
+ *pvaIn*  
  A variant used for specifying command input arguments.  
   
  *pvaOut*  
@@ -309,7 +309,7 @@ LPDISPATCH GetApplication() const;
 ```  
   
 ### Return Value  
- A pointer to the `IDispatch` interface of the active document object. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+ A pointer to the `IDispatch` interface of the active document object. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).  
   
 ### Remarks  
  Applies to Internet Explorer and WebBrowser.  
@@ -485,10 +485,10 @@ COleVariant GetProperty(LPCTSTR lpszProperty);
 ```  
   
 ### Parameters  
- `lpszProperty`  
+ *lpszProperty*  
  A pointer to a string containing the property to retrieve.  
   
- `strValue`  
+ *strValue*  
  A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that receives the current value of the property.  
   
 ### Return Value  
@@ -560,7 +560,7 @@ BOOL GetSource(CString& strRef);
  Nonzero if successful; otherwise zero.  
   
 ### Parameters  
- `refString`  
+ *refString*  
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) that will hold the source code.  
   
 ### Remarks  
@@ -708,13 +708,14 @@ void GoSearch();
   
 ```  
 BOOL LoadFromResource(LPCTSTR lpszResource);  
-BOOL LoadFromResource(UINT nRes);```  
+BOOL LoadFromResource(UINT nRes);
+```  
   
 ### Parameters  
- `lpszResource`  
+ *lpszResource*  
  A pointer to a string containing the name of the resource to load.  
   
- `nRes`  
+ *nRes*  
  The ID of the buffer containing the name of the resource to load.  
   
 ### Return Value  
@@ -740,20 +741,20 @@ void Navigate(
  *URL*  
  A caller-allocated string that contains the URL to navigate to, or the full path of the file to display.  
   
- `dwFlags`  
+ *dwFlags*  
  The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) enumeration.  
   
- `lpszTargetFrameName`  
+ *lpszTargetFrameName*  
  A pointer to a string that contains the name of the frame in which to display the resource.  
   
- `lpszHeaders`  
+ *lpszHeaders*  
  A pointer to a value that specifies the HTTP headers to send to the server. These headers are added to the default Internet Explorer headers. The headers can specify such things as the action required of the server, the type of data being passed to the server, or a status code. This parameter is ignored if *URL* is not an HTTP URL.  
   
- `lpvPostData`  
- A pointer to the data to send with the HTTP POST transaction. For example, the POST transaction is used to send data gathered by an HTML form. If this parameter does not specify any post data, **Navigate** issues an HTTP GET transaction. This parameter is ignored if *URL* is not an HTTP URL.  
+ *lpvPostData*  
+ A pointer to the data to send with the HTTP POST transaction. For example, the POST transaction is used to send data gathered by an HTML form. If this parameter does not specify any post data, `Navigate` issues an HTTP GET transaction. This parameter is ignored if *URL* is not an HTTP URL.  
   
- `dwPostDataLen`  
- Data to send with the HTTP POST transaction. For example, the POST transaction is used to send data gathered by an HTML form. If this parameter does not specify any post data, **Navigate** issues an HTTP GET transaction. This parameter is ignored if *URL* is not an HTTP URL.  
+ *dwPostDataLen*  
+ Data to send with the HTTP POST transaction. For example, the POST transaction is used to send data gathered by an HTML form. If this parameter does not specify any post data, `Navigate` issues an HTTP GET transaction. This parameter is ignored if *URL* is not an HTTP URL.  
   
 ### Remarks  
  Applies to Internet Explorer and WebBrowser.  
@@ -789,29 +790,29 @@ void Navigate2(
  *pIDL*  
  A pointer to an [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) structure.  
   
- `dwFlags`  
+ *dwFlags*  
  The flags of a variable that specifies whether to add the resource to the history list, whether to read to or write from the cache, and whether to display the resource in a new window. The variable can be a combination of the values defined by the [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) enumeration.  
   
- `lpszTargetFrameName`  
+ *lpszTargetFrameName*  
  A pointer to a string that contains the name of the frame in which to display the resource.  
   
- `lpszURL`  
+ *lpszURL*  
  A pointer to a string containing the URL.  
   
- `lpvPostData`  
+ *lpvPostData*  
  Data to send with the HTTP POST transaction. For example, the POST transaction is used to send data gathered by an HTML form. If this parameter does not specify any post data, `Navigate2` issues an HTTP GET transaction. This parameter is ignored if *URL* is not an HTTP or HTTPS URL.  
   
- `dwPostDataLen`  
- Length in bytes of the data pointed to by the `lpvPostData` parameter.  
+ *dwPostDataLen*  
+ Length in bytes of the data pointed to by the *lpvPostData* parameter.  
   
- `lpszHeaders`  
+ *lpszHeaders*  
  A pointer to a value that specifies the HTTP or HTTPS headers to send to the server. These headers are added to the default Internet Explorer headers. The headers can specify such things as the action required of the server, the type of data being passed to the server, or a status code. This parameter is ignored if *URL* is not an HTTP or HTTPS URL.  
   
- `baPostedData`  
+ *baPostedData*  
  A reference to a [CByteArray](../../mfc/reference/cbytearray-class.md) object.  
   
 ### Remarks  
- This member function extends the **Navigate** member function by supporting browsing on special folders, such as Desktop and My Computer, that are represented by the parameter *pIDL*.  
+ This member function extends the `Navigate` member function by supporting browsing on special folders, such as Desktop and My Computer, that are represented by the parameter *pIDL*.  
   
  Applies to Internet Explorer and WebBrowser.  
   
@@ -832,22 +833,22 @@ virtual void OnBeforeNavigate2(
 ```  
   
 ### Parameters  
- `lpszURL`  
+ *lpszURL*  
  Pointer to a string containing the URL to navigate to.  
   
- `nFlags`  
+ *nFlags*  
  Reserved for future use.  
   
- `lpszTargetFrameName`  
- A string that contains the name of the frame in which to display the resource, or **NULL** if no named frame is targeted for the resource.  
+ *lpszTargetFrameName*  
+ A string that contains the name of the frame in which to display the resource, or NULL if no named frame is targeted for the resource.  
   
- `baPostedData`  
+ *baPostedData*  
  A reference to a `CByteArray` object containing the data to send to the server if the HTTP POST transaction is being used.  
   
- `lpszHeaders`  
+ *lpszHeaders*  
  A pointer to a string containing additional HTTP headers to send to the server (HTTP URLs only). The headers can specify such things as the action required of the server, the type of data being passed to the server, or a status code.  
   
- `pbCancel`  
+ *pbCancel*  
  A pointer to a cancel flag. An application can set this parameter to nonzero to cancel the navigation operation, or to zero to allow it to proceed.  
   
 ##  <a name="oncommandstatechange"></a>  CHtmlView::OnCommandStateChange  
@@ -863,38 +864,38 @@ virtual void OnCommandStateChange(
  *nCommand*  
  Identifier of the command whose enabled state has changed.  
   
- `bEnable`  
+ *bEnable*  
  Enabled state. This parameter is nonzero if the command is enabled, or zero if it is disabled.  
   
 ##  <a name="ondocumentcomplete"></a>  CHtmlView::OnDocumentComplete  
- This member function is called by the framework to notify an application that a document has reached the `READYSTATE_COMPLETE` state.  
+ This member function is called by the framework to notify an application that a document has reached the READYSTATE_COMPLETE state.  
   
 ```  
 virtual void OnDocumentComplete(LPCTSTR lpszURL);
 ```  
   
 ### Parameters  
- `lpszURL`  
+ *lpszURL*  
  A pointer to a string that evaluates to the URL, UNC file name, or a PIDL (a pointer to an item identifier list) that was navigated to.  
   
 ### Remarks  
  Not every frame will fire this event, but each frame that fires an [OnDownloadBegin](#ondownloadbegin) event will fire a corresponding `OnDocumentComplete` event.  
   
- The URL indicated by `lpszURL` can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of "www.microsoft.com" in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be "http://www.microsoft.com/". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.  
+ The URL indicated by *lpszURL* can be different from the URL that the browser was told to navigate to, because this URL is the canonicalized and qualified URL. For example, if an application specifies a URL of "www.microsoft.com" in a call to [Navigate](#navigate) or [Navigate2](#navigate2), the URL passed by `OnNavigateComplete2` will be "http://www.microsoft.com/". Also, if the server has redirected the browser to a different URL, the redirected URL will be reflected here.  
   
 ##  <a name="ondocwindowactivate"></a>  CHtmlView::OnDocWindowActivate  
- Called from the Internet Explorer or MSHTML implementation of **IOleInPlaceActiveObject::OnDocWindowActivate**, which notifies the active in-place object when the container's document window is activated or deactivated.  
+ Called from the Internet Explorer or MSHTML implementation of `IOleInPlaceActiveObject::OnDocWindowActivate`, which notifies the active in-place object when the container's document window is activated or deactivated.  
   
 ```  
 virtual HRESULT OnDocWindowActivate(BOOL fActivate);
 ```  
   
 ### Parameters  
- `fActivate`  
+ *fActivate*  
  Indicates the state of the document window. If this value is nonzero, the window is being activated. If this value is zero, the window is being deactivated.  
   
 ### Return Value  
- `S_OK` if successful, or an OLE-defined error code otherwise.  
+ S_OK if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
  Override `OnDocWindowActivate` to react to the `OnDocWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) in the Windows SDK for more information.  
@@ -924,11 +925,11 @@ virtual HRESULT OnEnableModeless(BOOL fEnable);
 ```  
   
 ### Parameters  
- `fEnable`  
+ *fEnable*  
  Indicates if the host's modeless dialog boxes are enabled or disabled. If this value is nonzero, modeless dialog boxes are enabled. If this value is zero, modeless dialog boxes are disabled.  
   
 ### Return Value  
- `S_OK` if successful, or an OLE-defined error code otherwise.  
+ S_OK if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
  Enables or disables modeless dialog boxes when the container creates or destroys a modal dialog box. Override `OnEnableModeless` to react to the `EnableModeless` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) in the Windows SDK for more information.  
@@ -943,14 +944,14 @@ virtual HRESULT OnFilterDataObject(
 ```  
   
 ### Parameters  
- `pDataObject`  
+ *pDataObject*  
  Address of the [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) interface supplied by Internet Explorer or MSHTML.  
   
  *ppDataObject*  
- Address that receives the `IDataObject` interface pointer supplied by the host. The contents of this parameter should always be initialized to **NULL**, even if the method fails.  
+ Address that receives the `IDataObject` interface pointer supplied by the host. The contents of this parameter should always be initialized to NULL, even if the method fails.  
   
 ### Return Value  
- `S_OK` if the data object is replaced, **S_FALSE** if the data object is not replaced, or an OLE-defined error code if an error occurs.  
+ S_OK if the data object is replaced, S_FALSE if the data object is not replaced, or an OLE-defined error code if an error occurs.  
   
 ### Remarks  
  Override `OnFilterDataObject` to react to the `FilterDataObject` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) in the Windows SDK for more information.  
@@ -963,11 +964,11 @@ virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
 ```  
   
 ### Parameters  
- `fActivate`  
+ *fActivate*  
  Indicates the state of the container's top-level frame window. If this value is nonzero, the window is being activated. If this value is zero, the window is being deactivated.  
   
 ### Return Value  
- `S_OK` if successful, or an OLE-defined error code otherwise.  
+ S_OK if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
  Override `OnFrameWindowActivate` to react to the `OnFrameWindowActivate` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) in the Windows SDK for more information.  
@@ -993,10 +994,10 @@ virtual HRESULT OnGetDropTarget(
 ```  
   
 ### Parameters  
- `pDropTarget`  
+ *pDropTarget*  
  [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) Internet Explorer or MSHTML proposes to use.  
   
- `ppDropTarget`  
+ *ppDropTarget*  
  Address of the `IDropTarget` that receives the `IDropTarget` interface pointer the host wants to provide.  
   
 ### Return Value  
@@ -1014,10 +1015,10 @@ virtual HRESULT OnGetExternal(LPDISPATCH* lppDispatch);
   
 ### Parameters  
  *lppDispatch*  
- A pointer to the address that receives the `IDispatch` interface pointer of the host application. If the host exposes an Automation interface, it can provide a reference to Internet Explorer or MSHTML through this parameter. The contents of this parameter should always be initialized to **NULL**, even if the method fails.  
+ A pointer to the address that receives the `IDispatch` interface pointer of the host application. If the host exposes an Automation interface, it can provide a reference to Internet Explorer or MSHTML through this parameter. The contents of this parameter should always be initialized to NULL, even if the method fails.  
   
 ### Return Value  
- `S_OK` if successful, or an OLE-defined error code otherwise.  
+ S_OK if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
  Override `OnGetExternal` to react to the `GetExternal` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) in the Windows SDK for more information.  
@@ -1030,11 +1031,11 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 ```  
   
 ### Parameters  
- `pInfo`  
+ *pInfo*  
  Address of a [DOCHOSTUIINFO](https://msdn.microsoft.com/library/aa770044.aspx) structure that receives the host's UI capabilities.  
   
 ### Return Value  
- `S_OK` if successful, or an OLE-defined error code otherwise.  
+ S_OK if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
  Override `OnGetHostInfo` to react to the `GetHostInfo` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) in the Windows SDK for more information.  
@@ -1049,14 +1050,14 @@ virtual HRESULT OnGetOptionKeyPath(
 ```  
   
 ### Parameters  
- `pchKey`  
- Address of an `LPOLESTR` that receives the registry subkey string where the host stores its default options. This subkey will be under the HKEY_CURRENT_USER key. Allocate this memory using [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727). The calling application is responsible for freeing this memory using [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722). This parameter should always be initialized to **NULL**, even if the method fails.  
+ *pchKey*  
+ Address of an `LPOLESTR` that receives the registry subkey string where the host stores its default options. This subkey will be under the HKEY_CURRENT_USER key. Allocate this memory using [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727). The calling application is responsible for freeing this memory using [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722). This parameter should always be initialized to NULL, even if the method fails.  
   
- `dwReserved`  
+ *dwReserved*  
  Reserved for future use. Not currently used.  
   
 ### Return Value  
- `S_OK` if successful, or **S_FALSE** otherwise. If **S_FALSE**, Internet Explorer or MSHTML will default to its own user options.  
+ S_OK if successful, or S_FALSE otherwise. If S_FALSE, Internet Explorer or MSHTML will default to its own user options.  
   
 ### Remarks  
  Override `OnGetOptionKeyPath` to react to the `GetOptionKeyPath` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) in the Windows SDK for more information.  
@@ -1069,7 +1070,7 @@ virtual HRESULT OnHideUI();
 ```  
   
 ### Return Value  
- `S_OK` if successful, or an OLE-defined error code otherwise.  
+ S_OK if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
  Override `OnHideUI` to react to the `HideUI` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx) in the Windows SDK for more information.  
@@ -1113,17 +1114,17 @@ virtual void OnNavigateError(
 ```  
   
 ### Parameters  
- `lpszURL`  
+ *lpszURL*  
  The URL for which navigation failed.  
   
  *lpszFrame*  
  The name of the frame in which the resource is to be displayed, or NULL if no named frame was targeted for the resource.  
   
- `dwError`  
+ *dwError*  
  An error status code, if available. For a list of the possible HRESULT and HTTP status codes, see [NavigateError Event Status Codes.](https://msdn.microsoft.com/library/aa768365.aspx)  
   
- `pbCancel`  
- Specifies whether to cancel the navigation to an error page or any further autosearch. If **TRUE** (the default), continue with navigation to an error page or autosearch; if **FALSE**, cancel navigation to an error page or autosearch.  
+ *pbCancel*  
+ Specifies whether to cancel the navigation to an error page or any further autosearch. If TRUE (the default), continue with navigation to an error page or autosearch; if FALSE, cancel navigation to an error page or autosearch.  
   
 ### Remarks  
  Override this method to provide custom navigation error handling.  
@@ -1140,10 +1141,10 @@ virtual void OnNewWindow2(
 ```  
   
 ### Parameters  
- `ppDisp`  
+ *ppDisp*  
  A pointer to an interface pointer that, optionally, receives the `IDispatch` interface pointer of a new WebBrowser or Internet Explorer object.  
   
- `Cancel`  
+ *Cancel*  
  A pointer to a cancel flag. An application can set this parameter to nonzero to cancel the navigation operation, or to zero to allow it to proceed.  
   
 ### Remarks  
@@ -1176,7 +1177,7 @@ virtual void OnPropertyChange(LPCTSTR lpszProperty);
 ```  
   
 ### Parameters  
- `lpszProperty`  
+ *lpszProperty*  
  A pointer to a string containing the name of the property.  
   
 ##  <a name="onquit"></a>  CHtmlView::OnQuit  
@@ -1197,17 +1198,17 @@ virtual HRESULT OnResizeBorder(
 ```  
   
 ### Parameters  
- `prcBorder`  
+ *prcBorder*  
  New outer rectangle for border space.  
   
- `pUIWindow`  
+ *pUIWindow*  
  A pointer to the interface for the frame or document window object whose border has changed.  
   
- `fFrameWindow`  
- **TRUE** if the frame window is calling [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053), otherwise **FALSE**.  
+ *fFrameWindow*  
+ TRUE if the frame window is calling [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053), otherwise FALSE.  
   
 ### Return Value  
- `S_OK` if successful, or an OLE-defined error code otherwise.  
+ S_OK if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
  Override `OnResizeBorder` to react to the `ResizeBorder` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) in the Windows SDK for more information.  
@@ -1224,16 +1225,16 @@ virtual HRESULT OnShowContextMenu(
 ```  
   
 ### Parameters  
- `dwID`  
- Identifier of the context menu to be displayed. See **IDocHostUIHandler::ShowContextMenu** in the Windows SDK for a list of values.  
+ *dwID*  
+ Identifier of the context menu to be displayed. See `IDocHostUIHandler::ShowContextMenu` in the Windows SDK for a list of values.  
   
- `ppt`  
+ *ppt*  
  Screen coordinates for the menu.  
   
- `pcmdtReserved`  
+ *pcmdtReserved*  
  [IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797) interface used to query command status and execute commands on this object.  
   
- `pdispReserved`  
+ *pdispReserved*  
  IDispatch interface of the object at the screen coordinates. This allows a host to differentiate particular objects to provide more specific context.  
   
 ### Return Value  
@@ -1255,19 +1256,19 @@ virtual HRESULT OnShowUI(
 ```  
   
 ### Parameters  
- `dwID`  
+ *dwID*  
  Reserved for future use.  
   
- `pActiveObject`  
+ *pActiveObject*  
  [IOleInPlaceActiveObject](http://msdn.microsoft.com/library/windows/desktop/ms691299) interface of the currently active object.  
   
- `pCommandTarget`  
+ *pCommandTarget*  
  [IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797) interface of the object.  
   
- `pFrame`  
+ *pFrame*  
  [IOleInPlaceFrame](http://msdn.microsoft.com/library/windows/desktop/ms692770) interface of the object. This is needed for menus and toolbars.  
   
- `pDoc`  
+ *pDoc*  
  [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) interface for the object. This is needed for toolbars.  
   
 ### Return Value  
@@ -1295,7 +1296,7 @@ virtual void OnStatusTextChange(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- `lpszText`  
+ *lpszText*  
  A string that contains the new status bar text.  
   
 ##  <a name="ontheatermode"></a>  CHtmlView::OnTheaterMode  
@@ -1317,7 +1318,7 @@ virtual void OnTitleChange(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- `lpszText`  
+ *lpszText*  
  The new document title.  
   
 ### Remarks  
@@ -1345,17 +1346,17 @@ virtual HRESULT OnTranslateAccelerator(
 ```  
   
 ### Parameters  
- `lpMsg`  
+ *lpMsg*  
  Points to the message that might need to be translated.  
   
- `pguidCmdGroup`  
+ *pguidCmdGroup*  
  Command group identifier.  
   
- `nCmdID`  
+ *nCmdID*  
  Command identifier.  
   
 ### Return Value  
- `S_OK` if successful, or **S_FALSE** otherwise.  
+ S_OK if successful, or S_FALSE otherwise.  
   
 ### Remarks  
  Override `OnTranslateAccelerator` to react to the `TranslateAccelerator` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) in the Windows SDK for more information.  
@@ -1371,17 +1372,17 @@ virtual HRESULT OnTranslateUrl(
 ```  
   
 ### Parameters  
- `dwTranslate`  
+ *dwTranslate*  
  Reserved for future use.  
   
- `pchURLIn`  
+ *pchURLIn*  
  Address of a string supplied by Internet Explorer or MSHTML that represents the URL to be translated.  
   
- `ppchURLOut`  
- Address of a string pointer that receives the address of the translated URL. The host allocates the buffer using the task memory allocator. The contents of this parameter should always be initialized to **NULL**, even if the URL is not translated or the method fails.  
+ *ppchURLOut*  
+ Address of a string pointer that receives the address of the translated URL. The host allocates the buffer using the task memory allocator. The contents of this parameter should always be initialized to NULL, even if the URL is not translated or the method fails.  
   
 ### Return Value  
- `S_OK` if the URL was translated, **S_FALSE** if the URL was not translated, or an OLE-defined error code if an error occurred.  
+ `S_OK` if the URL was translated, S_FALSE if the URL was not translated, or an OLE-defined error code if an error occurred.  
   
 ### Remarks  
  Override `OnTranslateUrl` to react to the `TranslateUrl` notification from the Microsoft Web Browser control. See [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) in the Windows SDK for more information.  
@@ -1394,7 +1395,7 @@ virtual HRESULT OnUpdateUI();
 ```  
   
 ### Return Value  
- `S_OK` if successful, or an OLE-defined error code otherwise.  
+ S_OK if successful, or an OLE-defined error code otherwise.  
   
 ### Remarks  
  The host should update the state of toolbar buttons. This method is called regardless of the return value from `ShowUI`. Override `OnUpdateUI` to react to the `UpdateUI` notification from the Microsoft Web Browser control.  
@@ -1407,7 +1408,7 @@ virtual void OnVisible(BOOL bVisible);
 ```  
   
 ### Parameters  
- `bVisible`  
+ *bVisible*  
  Nonzero if the object is visible or zero otherwise.  
   
 ### Remarks  
@@ -1443,11 +1444,11 @@ void PutProperty(
 ```  
   
 ### Parameters  
- `lpszProperty`  
+ *lpszProperty*  
  A string containing the property to set.  
   
  *vtValue*  
- The new value of the property indicated by `lpszProperty`.  
+ The new value of the property indicated by *lpszProperty*.  
   
  *lpszPropertyName*  
  A pointer to a string containing the name of the property to set.  
@@ -1455,13 +1456,13 @@ void PutProperty(
  *dValue*  
  The new value of the property.  
   
- `lValue`  
+ *lValue*  
  The new value of the property.  
   
- `lpszValue`  
+ *lpszValue*  
  A pointer to a string containing the new value of the property.  
   
- `nValue`  
+ *nValue*  
  The new value of the property.  
   
 ### Remarks  
@@ -1479,20 +1480,20 @@ HRESULT QueryFormsCommand(
 ```  
   
 ### Parameters  
- `dwCommandID`  
+ *dwCommandID*  
  The identifier of the command being queried for.  
   
  *pbSupported*  
- A pointer to a **BOOL** specifying if the command (identified by `dwCommandID`) is supported. If TRUE, the command is supported; otherwise FALSE.  
+ A pointer to a BOOL specifying if the command (identified by *dwCommandID*) is supported. If TRUE, the command is supported; otherwise FALSE.  
   
- `pbEnabled`  
- A pointer to a **BOOL** specifying if the command (identified by `dwCommandID`) is enabled. If TRUE, the command is supported; otherwise FALSE.  
+ *pbEnabled*  
+ A pointer to a BOOL specifying if the command (identified by *dwCommandID*) is enabled. If TRUE, the command is supported; otherwise FALSE.  
   
  *pbChecked*  
- A pointer to a **BOOL** specifying if the command (identified by `dwCommandID`) is checked. If TRUE, the command is supported; otherwise FALSE.  
+ A pointer to a BOOL specifying if the command (identified by *dwCommandID*) is checked. If TRUE, the command is supported; otherwise FALSE.  
   
 ### Return Value  
- A standard `HRESULT` value. For a complete listing of possible values, see [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) in the Windows SDK.  
+ A standard HRESULT value. For a complete listing of possible values, see [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) in the Windows SDK.  
   
 ### Remarks  
  `QueryFormsCommand` implements the behavior of the [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) method.  
@@ -1505,7 +1506,7 @@ OLECMDF QueryStatusWB(OLECMDID cmdID) const;
 ```  
   
 ### Parameters  
- `cmdID`  
+ *cmdID*  
  The [OLECMDID](http://msdn.microsoft.com/library/windows/desktop/ms691264) value of the command for which the caller needs status information.  
   
 ### Return Value  
@@ -1524,7 +1525,7 @@ void Refresh();
 ```  
   
 ### Remarks  
- **Refresh** contains no parameters for setting the refresh level.  
+ `Refresh` contains no parameters for setting the refresh level.  
   
  Applies to Internet Explorer and WebBrowser.  
   
@@ -1536,7 +1537,7 @@ void Refresh2(int nLevel);
 ```  
   
 ### Parameters  
- `nLevel`  
+ *nLevel*  
  The address of the variable specifying the refresh level. The possible variables are defined in [RefreshConstants](https://msdn.microsoft.com/library/aa768363.aspx), in the Windows SDK.  
   
 ### Remarks  
@@ -1552,7 +1553,7 @@ void SetAddressBar(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  Nonzero to show address bar; otherwise zero.  
   
 ### Remarks  
@@ -1566,7 +1567,7 @@ void SetFullScreen(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  Nonzero for full-screen mode; otherwise zero.  
   
 ### Remarks  
@@ -1582,7 +1583,7 @@ void SetHeight(long nNewValue);
 ```  
   
 ### Parameters  
- `nNewValue`  
+ *nNewValue*  
  The height, in pixels, of the main window.  
   
 ### Remarks  
@@ -1596,7 +1597,7 @@ void SetLeft(long nNewValue);
 ```  
   
 ### Parameters  
- `nNewValue`  
+ *nNewValue*  
  The screen coordinate of the left edge of the main window.  
   
 ##  <a name="setmenubar"></a>  CHtmlView::SetMenuBar  
@@ -1607,7 +1608,7 @@ void SetMenuBar(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  Nonzero to show menu bar; otherwise zero.  
   
 ### Remarks  
@@ -1621,7 +1622,7 @@ void SetOffline(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  Nonzero to read from the local cache; otherwise zero.  
   
 ### Remarks  
@@ -1637,7 +1638,7 @@ void SetRegisterAsBrowser(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  Determines whether Internet Explorer is registered as a top-level browser. If nonzero, the web browser is registered as a top-level browser; if zero, it is not a top-level browser. The default value is zero.  
   
 ### Remarks  
@@ -1653,7 +1654,7 @@ void SetRegisterAsDropTarget(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  Determines if the WebBrowser control is registered as a drop target for navigation. If nonzero, the object is registered as a drop target; if zero, it is not a drop target.  
   
 ### Remarks  
@@ -1667,7 +1668,7 @@ void SetSilent(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  If nonzero, dialog boxes will not be displayed; if zero, dialog boxes will be displayed. The default value is zero.  
   
 ### Remarks  
@@ -1681,7 +1682,7 @@ void SetStatusBar(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  Nonzero if the status bar is visible; otherwise zero.  
   
 ### Remarks  
@@ -1695,7 +1696,7 @@ void SetTheaterMode(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  Nonzero to set the WebBrowser control to theater mode; otherwise zero. The default value is zero.  
   
 ### Remarks  
@@ -1711,7 +1712,7 @@ void SetToolBar(int nNewValue);
 ```  
   
 ### Parameters  
- `nNewValue`  
+ *nNewValue*  
  Indicates whether to display the toolbar. Nonzero if the toolbar is to be displayed; otherwise zero.  
   
 ### Remarks  
@@ -1725,7 +1726,7 @@ void SetTop(long nNewValue);
 ```  
   
 ### Parameters  
- `nNewValue`  
+ *nNewValue*  
  The screen coordinate of the top edge of the main window.  
   
 ### Remarks  
@@ -1739,7 +1740,7 @@ void SetVisible(BOOL bNewValue);
 ```  
   
 ### Parameters  
- `bNewValue`  
+ *bNewValue*  
  Nonzero if the control is visible; otherwise zero.  
   
 ### Remarks  
@@ -1753,7 +1754,7 @@ void SetWidth(long nNewValue);
 ```  
   
 ### Parameters  
- `nNewValue`  
+ *nNewValue*  
  The width, in pixels, of the Internet Explorer main window.  
   
 ##  <a name="stop"></a>  CHtmlView::Stop  

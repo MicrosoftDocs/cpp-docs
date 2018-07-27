@@ -54,7 +54,7 @@ class CRegKey
 |[CRegKey::QueryMultiStringValue](#querymultistringvalue)|Call this method to retrieve the multistring data for a specified value name.|  
 |[CRegKey::QueryQWORDValue](#queryqwordvalue)|Call this method to retrieve the QWORD data for a specified value name.|  
 |[CRegKey::QueryStringValue](#querystringvalue)|Call this method to retrieve the string data for a specified value name.|  
-|[CRegKey::QueryValue](#queryvalue)|Call this method to retrieve the data for the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.|  
+|[CRegKey::QueryValue](#queryvalue)|Call this method to retrieve the data for the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.|  
 |[CRegKey::RecurseDeleteKey](#recursedeletekey)|Call this method to remove the specified key from the registry and explicitly remove any subkeys.|  
 |[CRegKey::SetBinaryValue](#setbinaryvalue)|Call this method to set the binary value of the registry key.|  
 |[CRegKey::SetDWORDValue](#setdwordvalue)|Call this method to set the DWORD value of the registry key.|  
@@ -64,7 +64,7 @@ class CRegKey
 |[CRegKey::SetMultiStringValue](#setmultistringvalue)|Call this method to set the multistring value of the registry key.|  
 |[CRegKey::SetQWORDValue](#setqwordvalue)|Call this method to set the QWORD value of the registry key.|  
 |[CRegKey::SetStringValue](#setstringvalue)|Call this method to set the string value of the registry key.|  
-|[CRegKey::SetValue](#setvalue)|Call this method to store data in the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.|  
+|[CRegKey::SetValue](#setvalue)|Call this method to store data in the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.|  
   
 ### Public Operators  
   
@@ -85,7 +85,7 @@ class CRegKey
   
  `CRegKey` provides a programming interface to the system registry for a given machine. For example, to open a particular registry key, call `CRegKey::Open`. To retrieve or modify a data value, call `CRegKey::QueryValue` or `CRegKey::SetValue`, respectively. To close a key, call `CRegKey::Close`.  
   
- When you close a key, its registry data is written (flushed) to the hard disk. This process may take several seconds. If your application must explicitly write registry data to the hard disk, you can call the [RegFlushKey](http://msdn.microsoft.com/library/windows/desktop/ms724867) Win32 function. However, **RegFlushKey** uses many system resources and should be called only when absolutely necessary.  
+ When you close a key, its registry data is written (flushed) to the hard disk. This process may take several seconds. If your application must explicitly write registry data to the hard disk, you can call the [RegFlushKey](http://msdn.microsoft.com/library/windows/desktop/ms724867) Win32 function. However, `RegFlushKey` uses many system resources and should be called only when absolutely necessary.  
   
 > [!IMPORTANT]
 >  Any methods that allow the caller to specify a registry location have the potential to read data that cannot be trusted. Methods that make use of [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) should take into consideration that this function does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
@@ -94,18 +94,18 @@ class CRegKey
  **Header:** atlbase.h  
   
 ##  <a name="attach"></a>  CRegKey::Attach  
- Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](#m_hkey) member handle to `hKey`.  
+ Call this method to attach an HKEY to the `CRegKey` object by setting the [m_hKey](#m_hkey) member handle to *hKey*.  
   
 ```
 void Attach(HKEY hKey) throw();
 ```  
   
 ### Parameters  
- `hKey`  
+ *hKey*  
  The handle of a registry key.  
   
 ### Remarks  
- **Attach** will assert if `m_hKey` is non-NULL.  
+ `Attach` will assert if `m_hKey` is non-NULL.  
   
 ##  <a name="close"></a>  CRegKey::Close  
  Call this method to release the [m_hKey](#m_hkey) member handle and set it to NULL.  
@@ -118,7 +118,7 @@ LONG Close() throw();
  If successful, returns ERROR_SUCCESS; otherwise returns an error value.  
   
 ##  <a name="create"></a>  CRegKey::Create  
- Call this method to create the specified key, if it does not exist as a subkey of `hKeyParent`.  
+ Call this method to create the specified key, if it does not exist as a subkey of *hKeyParent*.  
   
 ```
 LONG Create(  
@@ -132,20 +132,20 @@ LONG Create(
 ```  
   
 ### Parameters  
- `hKeyParent`  
+ *hKeyParent*  
  The handle of an open key.  
   
- `lpszKeyName`  
- Specifies the name of a key to be created or opened. This name must be a subkey of `hKeyParent`.  
+ *lpszKeyName*  
+ Specifies the name of a key to be created or opened. This name must be a subkey of *hKeyParent*.  
   
- `lpszClass`  
+ *lpszClass*  
  Specifies the class of the key to be created or opened. The default value is REG_NONE.  
   
- `dwOptions`  
+ *dwOptions*  
  Options for the key. The default value is REG_OPTION_NON_VOLATILE. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the Windows SDK.  
   
- `samDesired`  
- The security access for the key. The default value is KEY_READ &#124; KEY_WRITE. For a list of possible values and descriptions, see **RegCreateKeyEx**.  
+ *samDesired*  
+ The security access for the key. The default value is KEY_READ &#124; KEY_WRITE. For a list of possible values and descriptions, see `RegCreateKeyEx`.  
   
  *lpSecAttr*  
  A pointer to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that indicates whether the handle of the key can be inherited by a child process. By default, this parameter is NULL (meaning the handle cannot be inherited).  
@@ -157,7 +157,7 @@ LONG Create(
  If successful, returns ERROR_SUCCESS and opens the key. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- **Create** sets the [m_hKey](#m_hkey) member to the handle of this key.  
+ `Create` sets the [m_hKey](#m_hkey) member to the handle of this key.  
   
 ##  <a name="cregkey"></a>  CRegKey::CRegKey  
  The constructor.  
@@ -170,13 +170,13 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  A reference to a `CRegKey` object.  
   
- `hKey`  
+ *hKey*  
  A handle to a registry key.  
   
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Remarks  
@@ -200,7 +200,7 @@ LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
 ```  
   
 ### Parameters  
- `lpszSubKey`  
+ *lpszSubKey*  
  Specifies the name of the key to delete. This name must be a subkey of [m_hKey](#m_hkey).  
   
 ### Return Value  
@@ -217,7 +217,7 @@ LONG DeleteValue(LPCTSTR lpszValue) throw();
 ```  
   
 ### Parameters  
- `lpszValue`  
+ *lpszValue*  
  Specifies the value field to remove.  
   
 ### Return Value  
@@ -245,14 +245,14 @@ LONG EnumKey(
 ```  
   
 ### Parameters  
- `iIndex`  
+ *iIndex*  
  The subkey index. This parameter should be zero for the first call and then incremented for subsequent calls  
   
- `pszName`  
+ *pszName*  
  Pointer to a buffer that receives the name of the subkey, including the terminating null character. Only the name of the subkey is copied to the buffer, not the full key hierarchy.  
   
  *pnNameLength*  
- Pointer to a variable that specifies the size, in TCHARs, of the buffer specified by the `pszName` parameter. This size should include the terminating null character. When the method returns, the variable pointed to by *pnNameLength* contains the number of characters stored in the buffer. The count returned does not include the terminating null character.  
+ Pointer to a variable that specifies the size, in TCHARs, of the buffer specified by the *pszName* parameter. This size should include the terminating null character. When the method returns, the variable pointed to by *pnNameLength* contains the number of characters stored in the buffer. The count returned does not include the terminating null character.  
   
  *pftLastWriteTime*  
  Pointer to a variable that receives the time the enumerated subkey was last written to.  
@@ -287,14 +287,14 @@ LONG GetKeySecurity(
 ```  
   
 ### Parameters  
- `si`  
+ *si*  
  The [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) value that indicates the requested security information.  
   
- `psd`  
+ *psd*  
  A pointer to a buffer that receives a copy of the requested security descriptor.  
   
- `pnBytes`  
- The size, in bytes, of the buffer pointed to by `psd`.  
+ *pnBytes*  
+ The size, in bytes, of the buffer pointed to by *psd*.  
   
 ### Return Value  
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code is defined in WINERROR.H.  
@@ -343,11 +343,11 @@ LONG NotifyChangeKeyValue(
 |REG_NOTIFY_CHANGE_LAST_SET|Notify the caller of changes to a value of the key. This can include adding or deleting a value, or changing an existing value.|  
 |REG_NOTIFY_CHANGE_SECURITY|Notify the caller of changes to the security descriptor of the key.|  
   
- `hEvent`  
- Handle to an event. If the *bAsync* parameter is TRUE, the method returns immediately and changes are reported by signaling this event. If `bAsync` is FALSE, `hEvent` is ignored.  
+ *hEvent*  
+ Handle to an event. If the *bAsync* parameter is TRUE, the method returns immediately and changes are reported by signaling this event. If *bAsync* is FALSE, *hEvent* is ignored.  
   
- `bAsync`  
- Specifies a flag that indicates how the method reports changes. If this parameter is TRUE, the method returns immediately and reports changes by signaling the specified event. When this parameter is FALSE, the method does not return until a change has occurred. If `hEvent` does not specify a valid event, the `bAsync` parameter cannot be TRUE.  
+ *bAsync*  
+ Specifies a flag that indicates how the method reports changes. If this parameter is TRUE, the method returns immediately and reports changes by signaling the specified event. When this parameter is FALSE, the method does not return until a change has occurred. If *hEvent* does not specify a valid event, the *bAsync* parameter cannot be TRUE.  
   
 ### Return Value  
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
@@ -370,22 +370,22 @@ LONG Open(
 ```  
   
 ### Parameters  
- `hKeyParent`  
+ *hKeyParent*  
  The handle of an open key.  
   
- `lpszKeyName`  
- Specifies the name of a key to be created or opened. This name must be a subkey of `hKeyParent`.  
+ *lpszKeyName*  
+ Specifies the name of a key to be created or opened. This name must be a subkey of *hKeyParent*.  
   
- `samDesired`  
+ *samDesired*  
  The security access for the key. The default value is KEY_ALL_ACCESS. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the Windows SDK.  
   
 ### Return Value  
  If successful, returns ERROR_SUCCESS; otherwise, a non-zero error value defined in WINERROR.H.  
   
 ### Remarks  
- If the `lpszKeyName` parameter is NULL or points to an empty string, **Open** opens a new handle of the key identified by `hKeyParent`, but does not close any previously opened handle.  
+ If the *lpszKeyName* parameter is NULL or points to an empty string, `Open` opens a new handle of the key identified by *hKeyParent*, but does not close any previously opened handle.  
   
- Unlike [CRegKey::Create](#create), **Open** will not create the specified key if it does not exist.  
+ Unlike [CRegKey::Create](#create), `Open` will not create the specified key if it does not exist.  
   
 ##  <a name="operator_hkey"></a>  CRegKey::operator HKEY  
  Converts a `CRegKey` object to an HKEY.  
@@ -402,14 +402,14 @@ CRegKey& operator= (CRegKey& key) throw();
 ```  
   
 ### Parameters  
- `key`  
+ *key*  
  The key to copy.  
   
 ### Return Value  
  Returns a reference to the new key.  
   
 ### Remarks  
- This operator detaches `key` from its current object and assigns it to the `CRegKey` object instead.  
+ This operator detaches *key* from its current object and assigns it to the `CRegKey` object instead.  
   
 ##  <a name="querybinaryvalue"></a>  CRegKey::QueryBinaryValue  
  Call this method to retrieve the binary data for a specified value name.  
@@ -422,20 +422,20 @@ LONG QueryBinaryValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a null-terminated string containing the name of the value to query.  
   
- `pValue`  
+ *pValue*  
  Pointer to a buffer that receives the value's data.  
   
- `pnBytes`  
- Pointer to a variable that specifies the size, in bytes, of the buffer pointed to by the `pValue` parameter. When the method returns, this variable contains the size of the data copied to the buffer.  
+ *pnBytes*  
+ Pointer to a variable that specifies the size, in bytes, of the buffer pointed to by the *pValue* parameter. When the method returns, this variable contains the size of the data copied to the buffer.  
   
 ### Return Value  
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_BINARY, ERROR_INVALID_DATA is returned.  
   
 ### Remarks  
- This method makes use of **RegQueryValueEx** and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
   
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
@@ -450,17 +450,17 @@ LONG QueryDWORDValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a null-terminated string containing the name of the value to query.  
   
- `dwValue`  
+ *dwValue*  
  Pointer to a buffer that receives the DWORD.  
   
 ### Return Value  
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_DWORD, ERROR_INVALID_DATA is returned.  
   
 ### Remarks  
- This method makes use of **RegQueryValueEx** and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
   
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
@@ -475,10 +475,10 @@ LONG QueryGUIDValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a null-terminated string containing the name of the value to query.  
   
- `guidValue`  
+ *guidValue*  
  Pointer to a variable that receives the GUID.  
   
 ### Return Value  
@@ -501,20 +501,20 @@ LONG QueryMultiStringValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a null-terminated string containing the name of the value to query.  
   
- `pszValue`  
+ *pszValue*  
  Pointer to a buffer that receives the multistring data. A multistring is an array of null-terminated strings, terminated by two null characters.  
   
- `pnChars`  
- The size, in TCHARs, of the buffer pointed to by `pszValue`. When the method returns, `pnChars` contains the size, in TCHARs, of the multistring retrieved, including a terminating null character.  
+ *pnChars*  
+ The size, in TCHARs, of the buffer pointed to by *pszValue*. When the method returns, *pnChars* contains the size, in TCHARs, of the multistring retrieved, including a terminating null character.  
   
 ### Return Value  
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_MULTI_SZ, ERROR_INVALID_DATA is returned.  
   
 ### Remarks  
- This method makes use of **RegQueryValueEx** and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
   
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
@@ -529,17 +529,17 @@ LONG QueryQWORDValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a null-terminated string containing the name of the value to query.  
   
- `qwValue`  
+ *qwValue*  
  Pointer to a buffer that receives the QWORD.  
   
 ### Return Value  
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_QWORD, ERROR_INVALID_DATA is returned.  
   
 ### Remarks  
- This method makes use of **RegQueryValueEx** and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
   
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
@@ -555,26 +555,26 @@ LONG QueryStringValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a null-terminated string containing the name of the value to query.  
   
- `pszValue`  
+ *pszValue*  
  Pointer to a buffer that receives the string data.  
   
- `pnChars`  
- The size, in TCHARs, of the buffer pointed to by `pszValue`. When the method returns, `pnChars` contains the size, in TCHARs, of the string retrieved, including a terminating null character.  
+ *pnChars*  
+ The size, in TCHARs, of the buffer pointed to by *pszValue*. When the method returns, *pnChars* contains the size, in TCHARs, of the string retrieved, including a terminating null character.  
   
 ### Return Value  
- If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_SZ, ERROR_INVALID_DATA is returned. If the method returns ERROR_MORE_DATA, `pnChars` equals zero, not the required buffer size in bytes.  
+ If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_SZ, ERROR_INVALID_DATA is returned. If the method returns ERROR_MORE_DATA, *pnChars* equals zero, not the required buffer size in bytes.  
   
 ### Remarks  
- This method makes use of **RegQueryValueEx** and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
   
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
   
 ##  <a name="queryvalue"></a>  CRegKey::QueryValue  
- Call this method to retrieve the data for the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.  
+ Call this method to retrieve the data for the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.  
   
 ```
 LONG QueryValue(  
@@ -594,40 +594,40 @@ ATL_DEPRECATED LONG QueryValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
- Pointer to a null-terminated string containing the name of the value to query. If `pszValueName` is NULL or an empty string, "", the method retrieves the type and data for the key's unnamed or default value, if any.  
+ *pszValueName*  
+ Pointer to a null-terminated string containing the name of the value to query. If *pszValueName* is NULL or an empty string, "", the method retrieves the type and data for the key's unnamed or default value, if any.  
   
- `pdwType`  
- Pointer to a variable that receives a code indicating the type of data stored in the specified value. The `pdwType` parameter can be NULL if the type code is not required.  
+ *pdwType*  
+ Pointer to a variable that receives a code indicating the type of data stored in the specified value. The *pdwType* parameter can be NULL if the type code is not required.  
   
- `pData`  
+ *pData*  
  Pointer to a buffer that receives the value's data. This parameter can be NULL if the data is not required.  
   
- `pnBytes`  
- Pointer to a variable that specifies the size, in bytes, of the buffer pointed to by the `pData` parameter. When the method returns, this variable contains the size of the data copied to *pData.*  
+ *pnBytes*  
+ Pointer to a variable that specifies the size, in bytes, of the buffer pointed to by the *pData* parameter. When the method returns, this variable contains the size of the data copied to *pData.*  
   
- `dwValue`  
+ *dwValue*  
  The value field's numerical data.  
   
- `lpszValueName`  
+ *lpszValueName*  
  Specifies the value field to be queried.  
   
- `szValue`  
+ *szValue*  
  The value field's string data.  
   
- `pdwCount`  
- The size of the string data. Its value is initially set to the size of the `szValue` buffer.  
+ *pdwCount*  
+ The size of the string data. Its value is initially set to the size of the *szValue* buffer.  
   
 ### Return Value  
  If successful, returns ERROR_SUCCESS; otherwise, a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- The two original versions of `QueryValue` are no longer supported and are marked as **ATL_DEPRECATED**. The compiler will issue a warning if these forms are used.  
+ The two original versions of `QueryValue` are no longer supported and are marked as ATL_DEPRECATED. The compiler will issue a warning if these forms are used.  
   
  The remaining method calls RegQueryValueEx.  
   
 > [!IMPORTANT]
->  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the RegQueryValueEx function used by this method does not explicitly handle strings which are `NULL` terminated. Both conditions should be checked for by the calling code.  
+>  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the RegQueryValueEx function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
   
 ##  <a name="recursedeletekey"></a>  CRegKey::RecurseDeleteKey  
  Call this method to remove the specified key from the registry and explicitly remove any subkeys.  
@@ -657,14 +657,14 @@ LONG SetBinaryValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.  
   
- `pValue`  
+ *pValue*  
  Pointer to a buffer containing the data to be stored with the specified value name.  
   
- `nBytes`  
- Specifies the size, in bytes, of the information pointed to by the `pValue` parameter.  
+ *nBytes*  
+ Specifies the size, in bytes, of the information pointed to by the *pValue* parameter.  
   
 ### Return Value  
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
@@ -680,10 +680,10 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.  
   
- `dwValue`  
+ *dwValue*  
  The DWORD data to be stored with the specified value name.  
   
 ### Return Value  
@@ -700,10 +700,10 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.  
   
- `guidValue`  
+ *guidValue*  
  Reference to the GUID to be stored with the specified value name.  
   
 ### Return Value  
@@ -723,20 +723,20 @@ LONG SetKeyValue(
 ```  
   
 ### Parameters  
- `lpszKeyName`  
+ *lpszKeyName*  
  Specifies the name of the key to be created or opened. This name must be a subkey of [m_hKey](#m_hkey).  
   
- `lpszValue`  
+ *lpszValue*  
  Specifies the data to be stored. This parameter must be non-NULL.  
   
- `lpszValueName`  
+ *lpszValueName*  
  Specifies the value field to be set. If a value field with this name does not already exist in the key, it is added.  
   
 ### Return Value  
  If successful, returns ERROR_SUCCESS; otherwise, a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- Call this method to create or open the `lpszKeyName` key and store the `lpszValue` data in the `lpszValueName` value field.  
+ Call this method to create or open the *lpszKeyName* key and store the *lpszValue* data in the *lpszValueName* value field.  
   
 ##  <a name="setkeysecurity"></a>  CRegKey::SetKeySecurity  
  Call this method to set the security of the registry key.  
@@ -746,7 +746,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 ```  
   
 ### Parameters  
- `si`  
+ *si*  
  Specifies the components of the security descriptor to set. The value can be a combination of the following values:  
   
 |Value|Meaning|  
@@ -756,7 +756,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 |OWNER_SECURITY_INFORMATION|Sets the key's owner SID. The key must have WRITE_OWNER access, or the calling process must be the object's owner or have the SE_TAKE_OWNERSHIP_NAME privilege enabled.|  
 |SACL_SECURITY_INFORMATION|Sets the key's system access-control list (SACL). The key must have ACCESS_SYSTEM_SECURITY access. The proper way to get this access is to enable the SE_SECURITY_NAME [privilege](http://msdn.microsoft.com/library/windows/desktop/aa379306) in the caller's current access token, open the handle for ACCESS_SYSTEM_SECURITY access, and then disable the privilege.|  
   
- `psd`  
+ *psd*  
  Pointer to a [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561) structure that specifies the security attributes to set for the specified key.  
   
 ### Return Value  
@@ -773,10 +773,10 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.  
   
- `pszValue`  
+ *pszValue*  
  Pointer to the multistring data to be stored with the specified value name. A multistring is an array of null-terminated strings, terminated by two null characters.  
   
 ### Return Value  
@@ -793,10 +793,10 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.  
   
- `qwValue`  
+ *qwValue*  
  The QWORD data to be stored with the specified value name.  
   
 ### Return Value  
@@ -816,13 +816,13 @@ LONG SetStringValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
+ *pszValueName*  
  Pointer to a string containing the name of the value to set. If a value with this name is not already present, the method adds it to the key.  
   
- `pszValue`  
+ *pszValue*  
  Pointer to the string data to be stored with the specified value name.  
   
- `dwType`  
+ *dwType*  
  The type of the string to write to the registry: either REG_SZ (the default) or REG_EXPAND_SZ (for multistrings).  
   
 ### Return Value  
@@ -832,7 +832,7 @@ LONG SetStringValue(
  This method uses [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923\(v=vs.85\).aspx) to write the value to the registry.  
   
 ##  <a name="setvalue"></a>  CRegKey::SetValue  
- Call this method to store data in the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as **ATL_DEPRECATED**.  
+ Call this method to store data in the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.  
   
 ```
 LONG SetValue(  
@@ -859,44 +859,44 @@ ATL_DEPRECATED LONG SetValue(
 ```  
   
 ### Parameters  
- `pszValueName`  
- Pointer to a string containing the name of the value to set. If a value with this name is not already present in the key, the method adds it to the key. If `pszValueName` is NULL or an empty string, "", the method sets the type and data for the key's unnamed or default value.  
+ *pszValueName*  
+ Pointer to a string containing the name of the value to set. If a value with this name is not already present in the key, the method adds it to the key. If *pszValueName* is NULL or an empty string, "", the method sets the type and data for the key's unnamed or default value.  
   
- `dwType`  
- Specifies a code indicating the type of data pointed to by the `pValue` parameter.  
+ *dwType*  
+ Specifies a code indicating the type of data pointed to by the *pValue* parameter.  
   
- `pValue`  
+ *pValue*  
  Pointer to a buffer containing the data to be stored with the specified value name.  
   
- `nBytes`  
- Specifies the size, in bytes, of the information pointed to by the `pValue` parameter. If the data is of type REG_SZ, REG_EXPAND_SZ, or REG_MULTI_SZ, `nBytes` must include the size of the terminating null character.  
+ *nBytes*  
+ Specifies the size, in bytes, of the information pointed to by the *pValue* parameter. If the data is of type REG_SZ, REG_EXPAND_SZ, or REG_MULTI_SZ, *nBytes* must include the size of the terminating null character.  
   
- `hKeyParent`  
+ *hKeyParent*  
  The handle of an open key.  
   
- `lpszKeyName`  
- Specifies the name of a key to be created or opened. This name must be a subkey of `hKeyParent`.  
+ *lpszKeyName*  
+ Specifies the name of a key to be created or opened. This name must be a subkey of *hKeyParent*.  
   
- `lpszValue`  
+ *lpszValue*  
  Specifies the data to be stored. This parameter must be non-NULL.  
   
- `lpszValueName`  
+ *lpszValueName*  
  Specifies the value field to be set. If a value field with this name does not already exist in the key, it is added.  
   
- `dwValue`  
+ *dwValue*  
  Specifies the data to be stored.  
   
- `bMulti`  
+ *bMulti*  
  If false, indicates the string is of type REG_SZ. If true, indicates the string is a multistring of type REG_MULTI_SZ.  
   
- `nValueLen`  
- If `bMulti` is true, `nValueLen` is the length of the *lpszValue* string in characters. If `bMulti` is false, a value of -1 indicates that the method will calculate the length automatically.  
+ *nValueLen*  
+ If *bMulti* is true, *nValueLen* is the length of the *lpszValue* string in characters. If *bMulti* is false, a value of -1 indicates that the method will calculate the length automatically.  
   
 ### Return Value  
  If successful, returns ERROR_SUCCESS; otherwise, a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- The two original versions of `SetValue` are marked as **ATL_DEPRECATED** and should no longer be used. The compiler will issue a warning if these forms are used.  
+ The two original versions of `SetValue` are marked as ATL_DEPRECATED and should no longer be used. The compiler will issue a warning if these forms are used.  
   
  The third method calls [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923).  
   

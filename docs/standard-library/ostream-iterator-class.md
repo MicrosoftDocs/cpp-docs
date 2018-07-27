@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # ostream_iterator Class
 
-The template class ostream_iterator describes an output iterator object that writes successive elements onto the output stream with the extraction **operator <<**.
+The template class ostream_iterator describes an output iterator object that writes successive elements onto the output stream with the extraction `operator <<`.
 
 ## Syntax
 
@@ -28,10 +28,10 @@ class ostream_iterator
 *Type*
  The type of object to be inserted into the output stream.
 
-`CharType`
- The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char`.
+*CharType*
+ The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is **char**.
 
-`Traits`
+*Traits*
  The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 The ostream_iterator class must satisfy the requirements for an output iterator. Algorithms can be written directly to output streams using an `ostream_iterator`.
@@ -54,9 +54,9 @@ The ostream_iterator class must satisfy the requirements for an output iterator.
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x`.|
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x`.|
 |[operator++](#op_add_add)|A nonfunctional increment operator that returns an `ostream_iterator` to the same object it addressed before the operation was called.|
-|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for writing to an output stream.|
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression \* `i` = `x` for writing to an output stream.|
 
 ## Requirements
 
@@ -74,7 +74,7 @@ typedef CharType char_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **CharType**.
+The type is a synonym for the template parameter `CharType`.
 
 ### Example
 
@@ -214,7 +214,7 @@ Elements written to output stream:
 
 ## <a name="op_eq"></a>  ostream_iterator::operator=
 
-Assignment operator used to implement the output_iterator expression * `i` = `x` for writing to an output stream.
+Assignment operator used to implement the output_iterator expression \* `i` = `x` for writing to an output stream.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
@@ -222,16 +222,16 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### Parameters
 
-`val`
+*val*
  The value of the object of type `Type` to be inserted into the output stream.
 
 ### Return Value
 
-The operator inserts `val` into the output stream associated with the object, followed by the delimiter specified in the [ostream_iterator constructor](#ostream_iterator) (if any), and then returns a reference to the `ostream_iterator`.
+The operator inserts *val* into the output stream associated with the object, followed by the delimiter specified in the [ostream_iterator constructor](#ostream_iterator) (if any), and then returns a reference to the `ostream_iterator`.
 
 ### Remarks
 
-The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression * `ii` = `t` be valid and says nothing about the operator or the operator= on their own. This member operator returns `*this`.
+The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* `ii` = `t` be valid and says nothing about the operator or the operator= on their own. This member operator returns `*this`.
 
 ### Example
 
@@ -281,17 +281,17 @@ ostream_iterator(
 
 ### Parameters
 
-`_Ostr`
+*_Ostr*
  The output stream of type [ostream_iterator::ostream_type](#ostream_type) to be iterated over.
 
-`_Delimiter`
+*_Delimiter*
  The delimiter that is inserted into the output stream between values.
 
 ### Remarks
 
 The first constructor initializes the output stream pointer with `&_Ostr`. The delimiter string pointer designates an empty string.
 
-The second constructor initializes the output stream pointer with `&_Ostr` and the delimiter string pointer with `_Delimiter`.
+The second constructor initializes the output stream pointer with `&_Ostr` and the delimiter string pointer with *_Delimiter*.
 
 ### Example
 
@@ -366,7 +366,7 @@ typedef Traits traits_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Traits**.
+The type is a synonym for the template parameter `Traits`.
 
 ### Example
 

@@ -25,15 +25,15 @@ struct is_same;
 
 ### Parameters
 
-`Ty1`
+*Ty1*
  The first type to query.
 
-`Ty2`
+*Ty2*
  The second type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the types `Ty1` and `Ty2` are the same type, otherwise it holds false.
+An instance of the type predicate holds true if the types *Ty1* and *Ty2* are the same type, otherwise it holds false.
 
 ## Example
 

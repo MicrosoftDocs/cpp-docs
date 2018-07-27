@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CTokenGroups Class
-This class is a wrapper for the **TOKEN_GROUPS** structure.  
+This class is a wrapper for the `TOKEN_GROUPS` structure.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -37,12 +37,12 @@ class CTokenGroups
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTokenGroups::Add](#add)|Adds a `CSid` or existing **TOKEN_GROUPS** structure to the `CTokenGroups` object.|  
+|[CTokenGroups::Add](#add)|Adds a `CSid` or existing `TOKEN_GROUPS` structure to the `CTokenGroups` object.|  
 |[CTokenGroups::Delete](#delete)|Deletes a `CSid` and its associated attributes from the `CTokenGroups` object.|  
 |[CTokenGroups::DeleteAll](#deleteall)|Deletes all `CSid` objects and their associated attributes from the `CTokenGroups` object.|  
-|[CTokenGroups::GetCount](#getcount)|Returns the number of `CSid` objects and associated attributes contained in the **CTokenGroups** object.|  
+|[CTokenGroups::GetCount](#getcount)|Returns the number of `CSid` objects and associated attributes contained in the `CTokenGroups` object.|  
 |[CTokenGroups::GetLength](#getlength)|Returns the size of the `CTokenGroups` object.|  
-|[CTokenGroups::GetPTOKEN_GROUPS](#getptoken_groups)|Retrieves a pointer to the **TOKEN_GROUPS** structure.|  
+|[CTokenGroups::GetPTOKEN_GROUPS](#getptoken_groups)|Retrieves a pointer to the `TOKEN_GROUPS` structure.|  
 |[CTokenGroups::GetSidsAndAttributes](#getsidsandattributes)|Retrieves the `CSid` objects and attributes belonging to the `CTokenGroups` object.|  
 |[CTokenGroups::LookupSid](#lookupsid)|Retrieves the attributes associated with a `CSid` object.|  
   
@@ -50,13 +50,13 @@ class CTokenGroups
   
 |Name|Description|  
 |----------|-----------------|  
-|[CTokenGroups::operator const TOKEN_GROUPS *](#operator_const_token_groups__star)|Casts the `CTokenGroups` object to a pointer to the **TOKEN_GROUPS** structure.|  
+|[CTokenGroups::operator const TOKEN_GROUPS *](#operator_const_token_groups__star)|Casts the `CTokenGroups` object to a pointer to the `TOKEN_GROUPS` structure.|  
 |[CTokenGroups::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
  An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.  
   
- The **CTokenGroups** class is a wrapper for the [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure, containing information about the group security identifiers (SIDs) in an access token.  
+ The `CTokenGroups` class is a wrapper for the [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure, containing information about the group security identifiers (SIDs) in an access token.  
   
  For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
@@ -64,7 +64,7 @@ class CTokenGroups
  **Header:** atlsecurity.h  
   
 ##  <a name="add"></a>  CTokenGroups::Add  
- Adds a `CSid` or existing **TOKEN_GROUPS** structure to the `CTokenGroups` object.  
+ Adds a `CSid` or existing `TOKEN_GROUPS` structure to the `CTokenGroups` object.  
   
 ```
 void Add(const CSid& rSid, DWORD dwAttributes) throw(... );  
@@ -72,10 +72,10 @@ void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
 ```  
   
 ### Parameters  
- `rSid`  
+ *rSid*  
  A [CSid](../../atl/reference/csid-class.md) object.  
   
- `dwAttributes`  
+ *dwAttributes*  
  The attributes to associate with the `CSid` object.  
   
  *rTokenGroups*  
@@ -94,11 +94,11 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  The `CTokenGroups` object or [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure with which to construct the `CTokenGroups` object.  
   
 ### Remarks  
- The `CTokenGroups` object can optionally be created using a **TOKEN_GROUPS** structure or a previously defined `CTokenGroups` object.  
+ The `CTokenGroups` object can optionally be created using a `TOKEN_GROUPS` structure or a previously defined `CTokenGroups` object.  
   
 ##  <a name="dtor"></a>  CTokenGroups::~CTokenGroups  
  The destructor.  
@@ -118,7 +118,7 @@ bool Delete(const CSid& rSid) throw();
 ```  
   
 ### Parameters  
- `rSid`  
+ *rSid*  
  The [CSid](../../atl/reference/csid-class.md) object for which the security identifier (SID) and attributes should be removed.  
   
 ### Return Value  
@@ -142,17 +142,17 @@ UINT GetCount() const throw();
  Returns the number of [CSid](../../atl/reference/csid-class.md) objects and their associated attributes contained in the `CTokenGroups` object.  
   
 ##  <a name="getlength"></a>  CTokenGroups::GetLength  
- Returns the size of the **CTokenGroup** object.  
+ Returns the size of the `CTokenGroup` object.  
   
 ```
 UINT GetLength() const throw();
 ```  
   
 ### Remarks  
- Returns the total size of the **CTokenGroup** object, in bytes.  
+ Returns the total size of the `CTokenGroup` object, in bytes.  
   
 ##  <a name="getptoken_groups"></a>  CTokenGroups::GetPTOKEN_GROUPS  
- Retrieves a pointer to the **TOKEN_GROUPS** structure.  
+ Retrieves a pointer to the `TOKEN_GROUPS` structure.  
   
 ```
 const TOKEN_GROUPS* GetPTOKEN_GROUPS() const throw(...);
@@ -171,10 +171,10 @@ void GetSidsAndAttributes(
 ```  
   
 ### Parameters  
- `pSids`  
+ *pSids*  
  Pointer to an array of [CSid](../../atl/reference/csid-class.md) objects.  
   
- `pAttributes`  
+ *pAttributes*  
  Pointer to an array of DWORDs. If this parameter is omitted or NULL, the attributes are not retrieved.  
   
 ### Remarks  
@@ -190,17 +190,17 @@ bool LookupSid(
 ```  
   
 ### Parameters  
- `rSid`  
+ *rSid*  
  The [CSid](../../atl/reference/csid-class.md) object.  
   
- `pdwAttributes`  
+ *pdwAttributes*  
  Pointer to a DWORD which will accept the `CSid` object's attribute. If omitted or NULL, the attribute will not be retrieved.  
   
 ### Return Value  
  Returns true if the `CSid` is found, false otherwise.  
   
 ### Remarks  
- Setting `pdwAttributes` to NULL provides a way of confirming the existence of the `CSid` without accessing the attribute. Note that this method should not be used to check access rights. Applications should instead use the [CAccessToken::CheckTokenMembership](../../atl/reference/caccesstoken-class.md#checktokenmembership) method.  
+ Setting *pdwAttributes* to NULL provides a way of confirming the existence of the `CSid` without accessing the attribute. Note that this method should not be used to check access rights. Applications should instead use the [CAccessToken::CheckTokenMembership](../../atl/reference/caccesstoken-class.md#checktokenmembership) method.  
   
 ##  <a name="operator_eq"></a>  CTokenGroups::operator =  
  Assignment operator.  
@@ -211,14 +211,14 @@ CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 ```  
   
 ### Parameters  
- `rhs`  
+ *rhs*  
  The `CTokenGroups` object or [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure to assign to the `CTokenGroups` object.  
   
 ### Return Value  
  Returns the updated `CTokenGroups` object.  
   
 ##  <a name="operator_const_token_groups__star"></a>  CTokenGroups::operator const TOKEN_GROUPS *  
- Casts a value to a pointer to the **TOKEN_GROUPS** structure.  
+ Casts a value to a pointer to the `TOKEN_GROUPS` structure.  
   
 ```  
 operator const TOKEN_GROUPS *() const throw(...);

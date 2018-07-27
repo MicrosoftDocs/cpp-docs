@@ -34,7 +34,7 @@ class CColorDialog : public CCommonDialog
 |Name|Description|  
 |----------|-----------------|  
 |[CColorDialog::DoModal](#domodal)|Displays a color dialog box and allows the user to make a selection.|  
-|[CColorDialog::GetColor](#getcolor)|Returns a **COLORREF** structure containing the values of the selected color.|  
+|[CColorDialog::GetColor](#getcolor)|Returns a `COLORREF` structure containing the values of the selected color.|  
 |[CColorDialog::GetSavedCustomColors](#getsavedcustomcolors)|Retrieves custom colors created by the user.|  
 |[CColorDialog::SetCurrentColor](#setcurrentcolor)|Forces the current color selection to the specified color.|  
   
@@ -55,11 +55,11 @@ class CColorDialog : public CCommonDialog
   
  To construct a `CColorDialog` object, use the provided constructor or derive a new class and use your own custom constructor.  
   
- Once the dialog box has been constructed, you can set or modify any values in the [m_cc](#m_cc) structure to initialize the values of the dialog box's controls. The `m_cc` structure is of type [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830).  
+ Once the dialog box has been constructed, you can set or modify any values in the [m_cc](#m_cc) structure to initialize the values of the dialog box's controls. The *m_cc* structure is of type [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830).  
   
- After initializing the dialog box's controls, call the `DoModal` member function to display the dialog box and allow the user to select a color. `DoModal` returns the user's selection of either the dialog box's OK ( **IDOK**) or Cancel ( **IDCANCEL**) button.  
+ After initializing the dialog box's controls, call the `DoModal` member function to display the dialog box and allow the user to select a color. `DoModal` returns the user's selection of either the dialog box's OK (IDOK) or Cancel (IDCANCEL) button.  
   
- If `DoModal` returns **IDOK**, you can use one of `CColorDialog`'s member functions to retrieve the information input by the user.  
+ If `DoModal` returns IDOK, you can use one of `CColorDialog`'s member functions to retrieve the information input by the user.  
   
  You can use the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred during initialization of the dialog box and to learn more about the error.  
   
@@ -104,10 +104,10 @@ CColorDialog(
  *clrInit*  
  The default color selection. If no value is specified, the default is RGB(0,0,0) (black).  
   
- `dwFlags`  
+ *dwFlags*  
  A set of flags that customize the function and appearance of the dialog box. For more information, see the [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830) structure in the Windows SDK.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the dialog box's parent or owner window.  
   
 ### Example  
@@ -121,9 +121,9 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- **IDOK** or **IDCANCEL**. If **IDCANCEL** is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
+ IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
   
- **IDOK** and **IDCANCEL** are constants that indicate whether the user selected the OK or Cancel button.  
+ IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.  
   
 ### Remarks  
  If you want to initialize the various color dialog-box options by setting members of the [m_cc](#m_cc) structure, you should do this before calling `DoModal` but after the dialog-box object is constructed.  
@@ -157,7 +157,7 @@ static COLORREF* PASCAL GetSavedCustomColors();
  A pointer to an array of 16 RGB color values that stores custom colors created by the user.  
   
 ### Remarks  
- The `GetSavedCustomColors` member function provides access to these colors. These colors can be retrieved after [DoModal](#domodal) returns **IDOK**.  
+ The `GetSavedCustomColors` member function provides access to these colors. These colors can be retrieved after [DoModal](#domodal) returns IDOK.  
   
  Each of the 16 RGB values in the returned array is initialized to RGB(255,255,255) (white). The custom colors chosen by the user are saved only between dialog box invocations within the application. If you wish to save these colors between invocations of the application, you must save them in some other manner, such as in an initialization (.INI) file.  
   
@@ -172,7 +172,7 @@ CHOOSECOLOR m_cc;
 ```  
   
 ### Remarks  
- After constructing a `CColorDialog` object, you can use `m_cc` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function.  
+ After constructing a `CColorDialog` object, you can use *m_cc* to set various aspects of the dialog box before calling the [DoModal](#domodal) member function.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#53](../../mfc/codesnippet/cpp/ccolordialog-class_4.cpp)]  
@@ -206,18 +206,18 @@ virtual BOOL OnColorOK();
  [!code-cpp[NVC_MFCDocView#52](../../mfc/codesnippet/cpp/ccolordialog-class_5.cpp)]  
   
 ##  <a name="setcurrentcolor"></a>  CColorDialog::SetCurrentColor  
- Call this function after calling `DoModal` to force the current color selection to the color value specified in `clr`.  
+ Call this function after calling `DoModal` to force the current color selection to the color value specified in *clr*.  
   
 ```  
 void SetCurrentColor(COLORREF clr);
 ```  
   
 ### Parameters  
- `clr`  
+ *clr*  
  An RGB color value.  
   
 ### Remarks  
- This function is called from within a message handler or `OnColorOK`. The dialog box will automatically update the user's selection based on the value of the `clr` parameter.  
+ This function is called from within a message handler or `OnColorOK`. The dialog box will automatically update the user's selection based on the value of the *clr* parameter.  
   
 ### Example  
   See the example for [CColorDialog::OnColorOK](#oncolorok).  

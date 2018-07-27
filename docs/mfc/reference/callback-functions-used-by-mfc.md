@@ -39,11 +39,11 @@ int CALLBACK EXPORT ObjectFunc(
  *lpszLogObject*  
  Points to a [LOGPEN](../../mfc/reference/logpen-structure.md) or [LOGBRUSH](../../mfc/reference/logbrush-structure.md) data structure that contains information about the logical attributes of the object.  
   
- `lpData`  
+ *lpData*  
  Points to the application-supplied data passed to the `EnumObjects` function.  
   
 ### Return Value  
- The callback function returns an `int`. The value of this return is user-defined. If the callback function returns 0, `EnumObjects` stops enumeration early.  
+ The callback function returns an **int**. The value of this return is user-defined. If the callback function returns 0, `EnumObjects` stops enumeration early.  
   
 ### Remarks  
  The actual name must be exported.  
@@ -61,17 +61,17 @@ BOOL CALLBACK EXPORT OutputFunc(
 ```  
   
 ### Parameters  
- `hDC`  
+ *hDC*  
  Identifies a memory device context with a bitmap of at least the width and height specified by `nWidth` and `nHeight` to `GrayString`.  
   
- `lpData`  
+ *lpData*  
  Points to the character string to be drawn.  
   
- `nCount`  
+ *nCount*  
  Specifies the number of characters to output.  
   
 ### Return Value  
- The callback function's return value must be **TRUE** to indicate success; otherwise it is **FALSE**.  
+ The callback function's return value must be TRUE to indicate success; otherwise it is FALSE.  
   
 ### Remarks  
  The callback function (*OutputFunc*) must draw an image relative to the coordinates (0,0) rather than (*x*, *y*).  
@@ -91,8 +91,8 @@ BOOL CALLBACK EXPORT AbortFunc(
  *hPr*  
  Identifies the device context.  
   
- `code`  
- Specifies whether an error has occurred. It is 0 if no error has occurred. It is **SP_OUTOFDISK** if the Print Manager is currently out of disk space and more disk space will become available if the application waits. If `code` is **SP_OUTOFDISK**, the application does not have to abort the print job. If it does not, it must yield to the Print Manager by calling the **PeekMessage** or **GetMessage** Windows function.  
+ *code*  
+ Specifies whether an error has occurred. It is 0 if no error has occurred. It is SP_OUTOFDISK if the Print Manager is currently out of disk space and more disk space will become available if the application waits. If *code* is SP_OUTOFDISK, the application does not have to abort the print job. If it does not, it must yield to the Print Manager by calling the `PeekMessage` or `GetMessage` Windows function.  
   
 ### Return Value  
  The return value of the abort-handler function is nonzero if the print job is to continue, and 0 if it is canceled.  

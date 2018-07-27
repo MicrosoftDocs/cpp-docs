@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # _SCL_SECURE_NO_WARNINGS
 
-Calling any of the potentially unsafe methods in the C++ Standard Library results in [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). To disable this warning, define the macro **_SCL_SECURE_NO_WARNINGS** in your code:
+Calling any of the potentially unsafe methods in the C++ Standard Library results in [Compiler Warning (level 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). To disable this warning, define the macro _SCL_SECURE_NO_WARNINGS in your code:
 
 ```cpp
 #define _SCL_SECURE_NO_WARNINGS

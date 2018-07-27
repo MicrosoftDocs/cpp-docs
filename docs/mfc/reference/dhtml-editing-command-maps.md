@@ -33,7 +33,7 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
 ```  
   
 ### Parameters  
- `className`  
+ *className*  
  The name of the class.  
   
 ### Remarks  
@@ -55,13 +55,13 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
 ```  
   
 ### Parameters  
- `className`  
+ *className*  
  The name of the class containing the DHTML editing command map. This class should derive directly or indirectly from [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) and include the [DECLARE_DHTMLEDITING_CMDMAP](#declare_dhtmlediting_cmdmap) macro within its class definition.  
   
 ### Remarks  
  Add a DHTML editing command map to your class to map user interface commands to HTML editing commands.  
   
- Place the `BEGIN_DHTMLEDITING_CMDMAP` macro in the class's implementation (.cpp) file followed by [DHTMLEDITING_CMD_ENTRY](#dhtmlediting_cmd_entry) macros for the commands the class is to map (for example, from **ID_EDIT_CUT** to **IDM_CUT**). Use the [END_DHTMLEDITING_CMDMAP](#end_dhtmlediting_cmdmap) macro to mark the end of the event map.  
+ Place the BEGIN_DHTMLEDITING_CMDMAP macro in the class's implementation (.cpp) file followed by [DHTMLEDITING_CMD_ENTRY](#dhtmlediting_cmd_entry) macros for the commands the class is to map (for example, from ID_EDIT_CUT to IDM_CUT). Use the [END_DHTMLEDITING_CMDMAP](#end_dhtmlediting_cmdmap) macro to mark the end of the event map.  
   
 ### Requirements  
   **Header** afxhtml.h  
@@ -90,11 +90,11 @@ DHTMLEDITING_CMD_ENTRY(cmdID,  dhtmlcmdID)
 ```  
   
 ### Parameters  
- `cmdID`  
- The command ID (such as **ID_EDIT_COPY**).  
+ *cmdID*  
+ The command ID (such as ID_EDIT_COPY).  
   
- `dhtmlcmdID`  
- The HTML editing command to which `cmdID` maps (such as **IDM_COPY**).  
+ *dhtmlcmdID*  
+ The HTML editing command to which *cmdID* maps (such as IDM_COPY).  
   
 ### Example  
  See [HTMLEdit Sample](../../visual-cpp-samples.md).  
@@ -110,13 +110,13 @@ DHTMLEDITING_CMD_ENTRY_FUNC(cmdID, dhtmlcmdID,  member_func_name)
 ```  
   
 ### Parameters  
- `cmdID`  
- The command ID (such as **ID_EDIT_COPY**).  
+ *cmdID*  
+ The command ID (such as ID_EDIT_COPY).  
   
- `dhtmlcmdID`  
- The HTML editing command to which `cmdID` maps (such as **IDM_COPY**).  
+ *dhtmlcmdID*  
+ The HTML editing command to which *cmdID* maps (such as IDM_COPY).  
   
- `member_func_name`  
+ *member_func_name*  
  The name of the message-handler function to which the command is mapped.  
   
 ### Example  
@@ -133,14 +133,14 @@ DHTMLEDITING_CMD_ENTRY_TYPE(cmdID  ,   dhtmlcmdID  ,    elemType)
 ```  
   
 ### Parameters  
- `cmdID`  
- The command ID (such as **ID_EDIT_COPY**).  
+ *cmdID*  
+ The command ID (such as ID_EDIT_COPY).  
   
- `dhtmlcmdID`  
- The HTML editing command to which `cmdID` maps (such as **IDM_COPY**).  
+ *dhtmlcmdID*  
+ The HTML editing command to which *cmdID* maps (such as IDM_COPY).  
   
- `elemType`  
- The user interface element type; one of **AFX_UI_ELEMTYPE_NORMAL**, **AFX_UI_ELEMTYPE_CHECKBOX**, or **AFX_UI_ELEMTYPE_RADIO**.  
+ *elemType*  
+ The user interface element type; one of AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_CHECKBOX, or AFX_UI_ELEMTYPE_RADIO.  
   
 ### Example  
  See [HTMLEdit Sample](../../visual-cpp-samples.md).  
@@ -156,17 +156,17 @@ DHTMLEDITING_CMD_ENTRY_FUNC_TYPE(cmdID, dhtmlcmdID, member_func_name,  elemType)
 ```  
   
 ### Parameters  
- `cmdID`  
- The command ID (such as **ID_EDIT_COPY**).  
+ *cmdID*  
+ The command ID (such as ID_EDIT_COPY).  
   
- `dhtmlcmdID`  
- The HTML editing command to which `cmdID` maps (such as **IDM_COPY**).  
+ *dhtmlcmdID*  
+ The HTML editing command to which *cmdID* maps (such as IDM_COPY).  
   
- `member_func_name`  
+ *member_func_name*  
  The name of the message-handler function to which the command is mapped.  
   
- `elemType`  
- The user interface element type; one of **AFX_UI_ELEMTYPE_NORMAL**, **AFX_UI_ELEMTYPE_CHECKBOX**, or **AFX_UI_ELEMTYPE_RADIO**.  
+ *elemType*  
+ The user interface element type; one of AFX_UI_ELEMTYPE_NORMAL, AFX_UI_ELEMTYPE_CHECKBOX, or AFX_UI_ELEMTYPE_RADIO.  
   
 ### Example  
  See [HTMLEdit Sample](../../visual-cpp-samples.md).  

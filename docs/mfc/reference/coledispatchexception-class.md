@@ -34,7 +34,7 @@ class COleDispatchException : public CException
 |[COleDispatchException::m_wCode](#m_wcode)|`IDispatch`-specific error code.|  
   
 ## Remarks  
- Like the other exception classes derived from the `CException` base class, `COleDispatchException` can be used with the **THROW**, `THROW_LAST`, **TRY**, **CATCH**, `AND_CATCH`, and `END_CATCH` macros.  
+ Like the other exception classes derived from the `CException` base class, `COleDispatchException` can be used with the THROW, THROW_LAST, TRY, CATCH, AND_CATCH, and END_CATCH macros.  
   
  In general, you should call [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) to create and throw a `COleDispatchException` object.  
   

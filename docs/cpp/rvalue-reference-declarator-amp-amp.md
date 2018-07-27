@@ -63,7 +63,7 @@ int main()
   
  Ordinarily, to solve this problem, you must provide overloaded versions of the generic function that take both `T&` and `const T&` for each of its parameters. As a result, the number of overloaded functions increases exponentially with the number of parameters. Rvalue references enable you to write one version of a function that accepts arbitrary arguments and forwards them to another function as if the other function had been called directly.  
   
- Consider the following example that declares four types, `W`, `X`, `Y`, and `Z`. The constructor for each type takes a different combination of `const` and non-`const` lvalue references as its parameters.  
+ Consider the following example that declares four types, `W`, `X`, `Y`, and `Z`. The constructor for each type takes a different combination of **const** and non-**const** lvalue references as its parameters.  
   
 ```cpp 
 struct W  
@@ -143,7 +143,7 @@ int main()
 ## Additional Properties of Rvalue References  
  **You can overload a function to take an lvalue reference and an rvalue reference.**  
   
- By overloading a function to take a `const` lvalue reference or an rvalue reference, you can write code that distinguishes between non-modifiable objects (lvalues) and modifiable temporary values (rvalues). You can pass an object to a function that takes an rvalue reference unless the object is marked as `const`. The following example shows the function `f`, which is overloaded to take an lvalue reference and an rvalue reference. The `main` function calls `f` with both lvalues and an rvalue.  
+ By overloading a function to take a **const** lvalue reference or an rvalue reference, you can write code that distinguishes between non-modifiable objects (lvalues) and modifiable temporary values (rvalues). You can pass an object to a function that takes an rvalue reference unless the object is marked as **const**. The following example shows the function `f`, which is overloaded to take an lvalue reference and an rvalue reference. The `main` function calls `f` with both lvalues and an rvalue.  
   
 ```cpp 
 // reference-overload.cpp  
@@ -235,7 +235,7 @@ In g(MemoryBlock&&).
   
 -   **You can cast an lvalue to an rvalue reference.**  
   
- The C++ Standard Library [std::move](../standard-library/utility-functions.md#move) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the `static_cast` keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
+ The C++ Standard Library [std::move](../standard-library/utility-functions.md#move) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the **static_cast** keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
   
 ```cpp 
 // cast-reference.cpp  
@@ -278,7 +278,7 @@ In g(MemoryBlock&&).
   
  It is common to write a function template that passes (or *forwards*) its parameters to another function. It is important to understand how template type deduction works for function templates that take rvalue references.  
   
- If the function argument is an rvalue, the compiler deduces the argument to be an rvalue reference. For example, if you pass an rvalue reference to an object of type `X` to a template function that takes type `T&&` as its parameter, template argument deduction deduces `T` to be `X`. Therefore, the parameter has type `X&&`. If the function argument is an lvalue or `const` lvalue, the compiler deduces its type to be an lvalue reference or `const` lvalue reference of that type.  
+ If the function argument is an rvalue, the compiler deduces the argument to be an rvalue reference. For example, if you pass an rvalue reference to an object of type `X` to a template function that takes type `T&&` as its parameter, template argument deduction deduces `T` to be `X`. Therefore, the parameter has type `X&&`. If the function argument is an lvalue or **const** lvalue, the compiler deduces its type to be an lvalue reference or **const** lvalue reference of that type.  
   
  The following example declares one structure template and then specializes it for various reference types. The `print_type_and_value` function takes an rvalue reference as its parameter and forwards it to the appropriate specialized version of the `S::print` method. The `main` function demonstrates the various ways to call the `S::print` method.  
   

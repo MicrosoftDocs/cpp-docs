@@ -4,16 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ICommandImpl"]
+f1_keywords: ["ICommandImpl", "ICommandImpl::Cancel", "Cancel", "ICommandImpl.Cancel", "ICommandImpl::CancelExecution", "ATL::ICommandImpl::CancelExecution", "ATL.ICommandImpl.CancelExecution", "CancelExecution",        "ICommandImpl.CancelExecution", "ICommandImpl::CreateRowset", "ICommandImpl.CreateRowset", "CreateRowset", "ICommandImpl::Execute", "ICommandImpl.Execute", "ICommandImpl::GetDBSession", "GetDBSession",               "ICommandImpl.GetDBSession", "ATL.ICommandImpl.ICommandImpl", "ATL::ICommandImpl::ICommandImpl", "ICommandImpl", "ICommandImpl::ICommandImpl", "ICommandImpl.ICommandImpl", "ICommandImpl::m_bCancel",                  "ICommandImpl.m_bCancel", "m_bCancel", "ATL::ICommandImpl::m_bCancel", "ATL.ICommandImpl.m_bCancel", "ICommandImpl::m_bCancelWhenExecuting", "ICommandImpl.m_bCancelWhenExecuting",                                     "ATL::ICommandImpl::m_bCancelWhenExecuting", "m_bCancelWhenExecuting", "ATL.ICommandImpl.m_bCancelWhenExecuting", "ICommandImpl.m_bIsExecuting", "ATL::ICommandImpl::m_bIsExecuting", "m_bIsExecuting",                 "ATL.ICommandImpl.m_bIsExecuting", "ICommandImpl::m_bIsExecuting"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ICommandImpl class"]
+helpviewer_keywords: ["ICommandImpl class", "Cancel method", "CancelExecution method", "CreateRowset method", "Execute method", "GetDBSession method", "ICommandImpl constructor", "ICommandImpl class, constructor",       "m_bCancel", "m_bCancelWhenExecuting", "m_bIsExecuting"]
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandImpl Class
-Provides implementation for the [ICommand](https://msdn.microsoft.com/en-us/library/ms709737.aspx) interface.  
+Provides implementation for the [ICommand](https://msdn.microsoft.com/library/ms709737.aspx) interface.  
   
 ## Syntax
 
@@ -22,12 +22,15 @@ template <class T, class CommandBase = ICommand>
 class ATL_NO_VTABLE ICommandImpl : public CommandBase  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  Your class, derived from `ICommandImpl`.  
   
- `CommandBase`  
+ *CommandBase*  
  A command interface. The default is `ICommand`.  
+
+## Requirements  
+ **Header:** atldb.h  
   
 ## Members  
   
@@ -35,26 +38,178 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
   
 |||  
 |-|-|  
-|[CancelExecution](../../data/oledb/icommandimpl-cancelexecution.md)|Cancels the current command execution.|  
-|[Cancel](../../data/oledb/icommandimpl-cancel.md)|Cancels the current command execution.|  
-|[CreateRowset](../../data/oledb/icommandimpl-createrowset.md)|Creates a rowset object.|  
-|[Execute](../../data/oledb/icommandimpl-execute.md)|Executes the command.|  
-|[GetDBSession](../../data/oledb/icommandimpl-getdbsession.md)|Returns an interface pointer to the session that created the command.|  
-|[ICommandImpl](../../data/oledb/icommandimpl-icommandimpl.md)|The constructor.|  
+|[Cancel](#cancel)|Cancels the current command execution.|  
+|[CancelExecution](#cancelexecution)|Cancels the current command execution.|  
+|[CreateRowset](#createrowset)|Creates a rowset object.|  
+|[Execute](#execute)|Executes the command.|  
+|[GetDBSession](#getdbsession)|Returns an interface pointer to the session that created the command.|  
+|[ICommandImpl](#icommandimpl)|The constructor.|  
   
 ### Data Members  
   
 |||  
 |-|-|  
-|[m_bCancel](../../data/oledb/icommandimpl-m-bcancel.md)|Indicates whether the command is to be canceled.|  
-|[m_bCancelWhenExecuting](../../data/oledb/icommandimpl-m-bcancelwhenexecuting.md)|Indicates whether the command is to be canceled when executing.|  
-|[m_bIsExecuting](../../data/oledb/icommandimpl-m-bisexecuting.md)|Indicates whether the command is currently executing.|  
+|[m_bCancel](#bcancel)|Indicates whether the command is to be canceled.|  
+|[m_bCancelWhenExecuting](#bcancelwhenexecuting)|Indicates whether the command is to be canceled when executing.|  
+|[m_bIsExecuting](#bisexecuting)|Indicates whether the command is currently executing.|  
   
 ## Remarks  
  A mandatory interface on the command object.  
   
-## Requirements  
- **Header:** atldb.h  
+## <a name="cancel"></a> ICommandImpl::Cancel
+Cancels the current command execution.  
+  
+### Syntax  
+  
+```cpp
+STDMETHOD(Cancel)();  
+  
+```  
+  
+### Remarks  
+ See [ICommand::Cancel](https://msdn.microsoft.com/library/ms714402.aspx) in the *OLE DB Programmer's Reference*.  
+
+## <a name="cancelexecution"></a> ICommandImpl::CancelExecution
+Cancels the current command execution.  
+  
+### Syntax  
+  
+```cpp
+HRESULT CancelExecution();  
+  
+```  
+
+## <a name="createrowset"></a> ICommandImpl::CreateRowset
+Called by [Execute](../../data/oledb/icommandimpl-execute.md) to create a single rowset.  
+  
+### Syntax  
+  
+```cpp
+      template template <class RowsetClass  
+      >  
+HRESULT CreateRowset(IUnknown* pUnkOuter,  
+   REFIID riid,  
+   DBPARAMS* pParams,  
+   DBROWCOUNT* pcRowsAffected,  
+   IUnknown** ppRowset,  
+   RowsetClass*& pRowsetObj);  
+```  
+  
+#### Parameters  
+ *RowsetClass*  
+ A template class member representing the user's rowset class. Usually generated by the wizard.  
+  
+ *pUnkOuter*  
+ [in] A pointer to the controlling `IUnknown` interface if the rowset is being created as part of an aggregate; otherwise, it is null.  
+  
+ *riid*  
+ [in] Corresponds to *riid* in `ICommand::Execute`.  
+  
+ *pParams*  
+ [in/out] Corresponds to *pParams* in `ICommand::Execute`.  
+  
+ *pcRowsAffected*  
+ Corresponds to *pcRowsAffected* in `ICommand::Execute`.  
+  
+ *ppRowset*  
+ [in/out] Corresponds to *ppRowset* in `ICommand::Execute`.  
+  
+ *pRowsetObj*  
+ [out] A pointer to a rowset object. Typically this parameter is not used, but it can be used if you must perform more work on the rowset before passing it to a COM object. The lifetime of *pRowsetObj* is bound by *ppRowset*.  
+  
+### Return Value  
+ A standard HRESULT value. See `ICommand::Execute` for a list of typical values.  
+  
+### Remarks  
+ To create more than one rowset, or to provide your own conditions for creating different rowsets, place different calls to `CreateRowset` from within `Execute`.  
+  
+ See [ICommand::Execute](https://msdn.microsoft.com/library/ms718095.aspx) in the *OLE DB Programmer's Reference.*  
+
+## <a name="execute"></a> ICommandImpl::Execute
+Executes the command.  
+  
+### Syntax  
+  
+```cpp
+HRESULT Execute(IUnknown* pUnkOuter,  
+   REFIID riid,  
+   DBPARAMS* pParams,  
+   DBROWCOUNT* pcRowsAffected,  
+   IUnknown** ppRowset);  
+```  
+  
+#### Parameters  
+ See [ICommand::Execute](https://msdn.microsoft.com/library/ms718095.aspx) in the *OLE DB Programmer's Reference*.  
+  
+### Remarks  
+ The outgoing interface requested will be an interface acquired from the rowset object that this function creates.  
+  
+ `Execute` calls [CreateRowset](../../data/oledb/icommandimpl-createrowset.md). Override the default implementation to create more than one rowset or to provide your own conditions for creating different rowsets.  
+
+## <a name="getdbsession"></a> ICommandImpl::GetDBSession
+Returns an interface pointer to the session that created the command.  
+  
+### Syntax  
+  
+```cpp
+      STDMETHOD (GetDBSession) (REFIID riid,  
+   IUnknown** ppSession);  
+```  
+  
+#### Parameters  
+ See [ICommand::GetDBSession](https://msdn.microsoft.com/library/ms719622.aspx) in the *OLE DB Programmer's Reference*.  
+  
+### Remarks  
+ Useful for retrieving properties from the session.  
+
+## <a name="icommandimpl"></a> ICommandImpl::ICommandImpl
+The constructor.  
+  
+### Syntax  
+  
+```cpp
+ICommandImpl();  
+  
+```  
+
+## <a name="bcancel"></a> ICommandImpl::m_bCancel
+Indicates whether the command is canceled.  
+  
+### Syntax  
+  
+```cpp
+unsigned m_bCancel:1;  
+  
+```  
+  
+### Remarks  
+ You can retrieve this variable in the `Execute` method of your command class and cancel as appropriate. 
+
+## <a name="bcancelwhenexecuting"></a> ICommandImpl::m_bCancelWhenExecuting
+Indicates whether the command can be canceled when executing.  
+  
+### Syntax  
+  
+```cpp
+unsigned m_bCancelWhenExecuting:1;  
+  
+```  
+  
+### Remarks  
+ Defaults to **true** (can be canceled).  
+
+## <a name="bisexecuting"></a> ICommandImpl::m_bIsExecuting
+Indicates whether the command is currently executing.  
+  
+### Syntax  
+  
+```cpp
+unsigned m_bIsExecuting:1;  
+  
+```  
+  
+### Remarks  
+ The `Execute` method of your command class can set this variable to **true**. 
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Dual Interfaces Classes
 The following class provides support for dual interfaces:  
   
--   [IDispatchImpl](../atl/reference/idispatchimpl-class.md) Implements the `IDispatch` portion of a dual interface. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+-   [IDispatchImpl](../atl/reference/idispatchimpl-class.md) Implements the `IDispatch` portion of a dual interface. For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).  
   
 ## See Also  
  [Class Overview](../atl/atl-class-overview.md)

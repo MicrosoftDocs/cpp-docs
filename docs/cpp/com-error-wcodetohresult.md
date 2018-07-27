@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _com_error::WCodeToHRESULT
 **Microsoft Specific**  
   
- Maps 16-bit `wCode` to 32-bit `HRESULT`.  
+ Maps 16-bit *wCode* to 32-bit HRESULT.  
   
 ## Syntax  
   
@@ -27,11 +27,11 @@ ms.workload: ["cplusplus"]
 ```  
   
 #### Parameters  
- `wCode`  
- The 16-bit `wCode` to be mapped to 32-bit `HRESULT`.  
+ *wCode*  
+ The 16-bit *wCode* to be mapped to 32-bit HRESULT.  
   
 ## Return Value  
- 32-bit `HRESULT` mapped from the 16-bit `wCode`.  
+ 32-bit HRESULT mapped from the 16-bit *wCode*.  
   
 ## Remarks  
  See the [WCode](../cpp/com-error-wcode.md) member function.  

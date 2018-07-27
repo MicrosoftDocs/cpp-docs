@@ -34,7 +34,7 @@ HRESULT AtlFreeMarshalStream(IStream* pStream);
 ```  
   
 ### Parameters  
- `pStream`  
+ *pStream*  
  [in] A pointer to the `IStream` interface on the stream used for marshaling.  
   
 ### Example  
@@ -54,17 +54,17 @@ HRESULT AtlMarshalPtrInProc(
  *pUnk*  
  [in] A pointer to the interface to be marshaled.  
   
- `iid`  
+ *iid*  
  [in] The GUID of the interface being marshaled.  
   
- `ppStream`  
+ *ppStream*  
  [out] A pointer to the `IStream` interface on the new stream object used for marshaling.  
   
 ### Return Value  
  A standard HRESULT value.  
   
 ### Remarks  
- The **MSHLFLAGS_TABLESTRONG** flag is set so the pointer can be marshaled to multiple streams. The pointer can also be unmarshaled multiple times.  
+ The MSHLFLAGS_TABLESTRONG flag is set so the pointer can be marshaled to multiple streams. The pointer can also be unmarshaled multiple times.  
   
  If marshaling fails, the stream pointer is released.  
   
@@ -84,13 +84,13 @@ HRESULT AtlUnmarshalPtr(
 ```  
   
 ### Parameters  
- `pStream`  
+ *pStream*  
  [in] A pointer to the stream being unmarshaled.  
   
- `iid`  
+ *iid*  
  [in] The GUID of the interface being unmarshaled.  
   
- `ppUnk`  
+ *ppUnk*  
  [out] A pointer to the unmarshaled interface.  
   
 ### Return Value  

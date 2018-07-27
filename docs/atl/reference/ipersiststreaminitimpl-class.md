@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IPersistStreamInitImpl Class
-This class implements **IUnknown** and provides a default implementation of the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface.  
+This class implements `IUnknown` and provides a default implementation of the [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -27,7 +27,7 @@ class ATL_NO_VTABLE IPersistStreamInitImpl
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IPersistStreamInitImpl`.  
   
 ## Members  
@@ -37,14 +37,14 @@ class ATL_NO_VTABLE IPersistStreamInitImpl
 |Name|Description|  
 |----------|-----------------|  
 |[IPersistStreamInitImpl::GetClassID](#getclassid)|Retrieves the object's CLSID.|  
-|[IPersistStreamInitImpl::GetSizeMax](#getsizemax)|Retrieves the size of the stream needed to save the object's data. The ATL implementation returns **E_NOTIMPL**.|  
+|[IPersistStreamInitImpl::GetSizeMax](#getsizemax)|Retrieves the size of the stream needed to save the object's data. The ATL implementation returns E_NOTIMPL.|  
 |[IPersistStreamInitImpl::InitNew](#initnew)|Initializes a newly created object.|  
 |[IPersistStreamInitImpl::IsDirty](#isdirty)|Checks whether the object's data has changed since it was last saved.|  
 |[IPersistStreamInitImpl::Load](#load)|Loads the object's properties from the specified stream.|  
 |[IPersistStreamInitImpl::Save](#save)|Saves the object's properties to the specified stream.|  
   
 ## Remarks  
- The [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface allows a client to request that your object loads and saves its persistent data to a single stream. Class `IPersistStreamInitImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
+ The [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) interface allows a client to request that your object loads and saves its persistent data to a single stream. Class `IPersistStreamInitImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -74,7 +74,7 @@ STDMETHOD(GetSizeMax)(ULARGE_INTEGER FAR* pcbSize);
 ```  
   
 ### Return Value  
- Returns **E_NOTIMPL**.  
+ Returns E_NOTIMPL.  
   
 ### Remarks  
  See [IPersistStreamInit::GetSizeMax](http://msdn.microsoft.com/library/windows/desktop/ms687287) in the Windows SDK.  

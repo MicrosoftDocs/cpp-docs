@@ -80,7 +80,7 @@ void BeginWaitCursor();
 ```  
   
 ### Remarks  
- The framework calls this function to show the user that it is busy, such as when a **CDocument** object loads or saves itself to a file.  
+ The framework calls this function to show the user that it is busy, such as when a `CDocument` object loads or saves itself to a file.  
   
  The actions of `BeginWaitCursor` are not always effective outside of a single message handler as other actions, such as `OnSetCursor` handling, could change the cursor.  
   
@@ -108,16 +108,16 @@ BOOL DoOleVerb(
 ```  
   
 ### Parameters  
- `iVerb`  
+ *iVerb*  
  Numerical identifier of the verb.  
   
- `lpMsg`  
+ *lpMsg*  
  Pointer to the [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) structure describing the event (such as a double-click) that invoked the verb.  
   
- `hWndParent`  
+ *hWndParent*  
  Handle of the document window containing the object.  
   
- `lpRect`  
+ *lpRect*  
  Pointer to the [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.  
   
 ### Return Value  
@@ -177,11 +177,11 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
 ```  
   
 ### Parameters  
- `ppenumOleVerb`  
+ *ppenumOleVerb*  
  A pointer to a pointer to an [IEnumOLEVERB](http://msdn.microsoft.com/library/windows/desktop/ms695084) interface.  
   
 ### Return Value  
- TRUE if the object supports at least one OLE verb (in which case \* `ppenumOleVerb` points to an **IEnumOLEVERB** enumerator interface), otherwise FALSE.  
+ TRUE if the object supports at least one OLE verb (in which case \* *ppenumOleVerb* points to an `IEnumOLEVERB` enumerator interface), otherwise FALSE.  
   
 ### Remarks  
  This member function is basically an implementation of [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781).  
@@ -194,11 +194,11 @@ static CCmdTarget* PASCAL FromIDispatch(LPDISPATCH lpDispatch);
 ```  
   
 ### Parameters  
- `lpDispatch`  
+ *lpDispatch*  
  A pointer to an `IDispatch` object.  
   
 ### Return Value  
- A pointer to the `CCmdTarget` object associated with `lpDispatch`. This function returns **NULL** if the `IDispatch` object is not recognized as a Microsoft Foundation Class `IDispatch` object.  
+ A pointer to the `CCmdTarget` object associated with *lpDispatch*. This function returns NULL if the `IDispatch` object is not recognized as a Microsoft Foundation Class `IDispatch` object.  
   
 ### Remarks  
  The result of this function is the inverse of a call to the member function `GetIDispatch`.  
@@ -250,9 +250,9 @@ virtual UINT GetTypeInfoCount();
  The number of type information interfaces.  
   
 ### Remarks  
- This member function basically implements [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
+ This member function basically implements [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
   
- Derived classes should override this function to return the number of type information interfaces provided (either 0 or 1). If not overridden, **GetTypeInfoCount** returns 0. To override, use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeLib` and `GetTypeLibCache`.  
+ Derived classes should override this function to return the number of type information interfaces provided (either 0 or 1). If not overridden, `GetTypeInfoCount` returns 0. To override, use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeLib` and `GetTypeLibCache`.  
   
 ##  <a name="gettypeinfoofguid"></a>  CCmdTarget::GetTypeInfoOfGuid  
  Retrieves the type description that corresponds to the specified GUID.  
@@ -265,17 +265,17 @@ HRESULT GetTypeInfoOfGuid(
 ```  
   
 ### Parameters  
- `lcid`  
+ *lcid*  
  A locale identifier ( `LCID`).  
   
- `guid`  
+ *guid*  
  The [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931) of the type description.  
   
- `ppTypeInfo`  
+ *ppTypeInfo*  
  Pointer to a pointer to the `ITypeInfo` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * `ppTypeInfo` points to the type information interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeInfo* points to the type information interface.  
   
 ##  <a name="gettypelib"></a>  CCmdTarget::GetTypeLib  
  Gets a pointer to a type library.  
@@ -287,14 +287,14 @@ virtual HRESULT GetTypeLib(
 ```  
   
 ### Parameters  
- `lcid`  
- A locale identifier ( `LCID`).  
+ *lcid*  
+ A locale identifier (LCID).  
   
- `ppTypeLib`  
+ *ppTypeLib*  
  A pointer to a pointer to the `ITypeLib` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * `ppTypeLib` points to the type library interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeLib* points to the type library interface.  
   
 ### Remarks  
  Derived classes should override this member function (if not overridden, `GetTypeLib` returns TYPE_E_CANTLOADLIBRARY). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLibCache`.  
@@ -307,27 +307,27 @@ virtual CTypeLibCache* GetTypeLibCache();
 ```  
   
 ### Return Value  
- A pointer to a **CTypeLibCache** object.  
+ A pointer to a `CTypeLibCache` object.  
   
 ### Remarks  
- Derived classes should override this member function (if not overridden, **GetTypeLibCache** returns NULL). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLib`.  
+ Derived classes should override this member function (if not overridden, `GetTypeLibCache` returns NULL). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLib`.  
   
 ##  <a name="isinvokeallowed"></a>  CCmdTarget::IsInvokeAllowed  
- This function is called by MFC's implementation of **IDispatch::Invoke** to determine if a given automation method (identified by `dispid`) can be invoked.  
+ This function is called by MFC's implementation of `IDispatch::Invoke` to determine if a given automation method (identified by *dispid*) can be invoked.  
   
 ```  
 virtual BOOL IsInvokeAllowed(DISPID dispid);
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  A dispatch ID.  
   
 ### Return Value  
  TRUE if the method can be invoked, otherwise FALSE.  
   
 ### Remarks  
- If `IsInvokeAllowed` returns TRUE, **Invoke** proceeds to call the method; otherwise, `Invoke` will fail, returning E_UNEXPECTED.  
+ If `IsInvokeAllowed` returns TRUE, `Invoke` proceeds to call the method; otherwise, `Invoke` will fail, returning E_UNEXPECTED.  
   
  Derived classes can override this function to return appropriate values (if not overridden, `IsInvokeAllowed` returns TRUE). See in particular [COleControl::IsInvokeAllowed](../../mfc/reference/colecontrol-class.md#isinvokeallowed).  
   
@@ -360,17 +360,17 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Contains the command ID.  
   
- `nCode`  
- Identifies the command notification code. See **Remarks** for more information about values for `nCode`.  
+ *nCode*  
+ Identifies the command notification code. See **Remarks** for more information about values for *nCode*.  
   
- `pExtra`  
- Used according to the value of `nCode`. See **Remarks** for more information about `pExtra`.  
+ *pExtra*  
+ Used according to the value of *nCode*. See **Remarks** for more information about *pExtra*.  
   
- `pHandlerInfo`  
- If not **NULL**, `OnCmdMsg` fills in the **pTarget** and **pmf** members of the `pHandlerInfo` structure instead of dispatching the command. Typically, this parameter should be **NULL**.  
+ *pHandlerInfo*  
+ If not NULL, `OnCmdMsg` fills in the *pTarget* and *pmf* members of the *pHandlerInfo* structure instead of dispatching the command. Typically, this parameter should be NULL.  
   
 ### Return Value  
  Nonzero if the message is handled; otherwise 0.  
@@ -382,14 +382,14 @@ virtual BOOL OnCmdMsg(
   
  On rare occasions, you may want to override this member function to extend the framework's standard command routing. Refer to [Technical Note 21](../../mfc/tn021-command-and-message-routing.md) for advanced details of the command-routing architecture.  
   
- If you override `OnCmdMsg`, you must supply the appropriate value for `nCode`, the command notification code, and `pExtra`, which depends on the value of `nCode`. The following table lists their corresponding values:  
+ If you override `OnCmdMsg`, you must supply the appropriate value for *nCode*, the command notification code, and *pExtra*, which depends on the value of *nCode*. The following table lists their corresponding values:  
   
-|`nCode` value|`pExtra` value|  
+|*nCode* value|*pExtra* value|  
 |-------------------|--------------------|  
-|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)*|  
-|CN_EVENT|AFX_EVENT*|  
-|CN_UPDATE_COMMAND_UI|CCmdUI*|  
-|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)*|  
+|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)\*|  
+|CN_EVENT|AFX_EVENT\*|  
+|CN_UPDATE_COMMAND_UI|CCmdUI\*|  
+|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)\*|  
 |CN_OLE_UNREGISTER|NULL|  
   
 ### Example  

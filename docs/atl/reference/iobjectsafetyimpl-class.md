@@ -26,15 +26,15 @@ class IObjectSafetyImpl
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IObjectSafetyImpl`.  
   
  *dwSupportedSafety*  
  Specifies the supported safety options for the control. Can be one of the following values:  
   
-- **INTERFACESAFE_FOR_UNTRUSTED_CALLER** The interface identified by the [SetInterfaceSafetyOptions](#setinterfacesafetyoptions) parameter `riid` should be made safe for scripting.  
+- INTERFACESAFE_FOR_UNTRUSTED_CALLER The interface identified by the [SetInterfaceSafetyOptions](#setinterfacesafetyoptions) parameter `riid` should be made safe for scripting.  
   
-- **INTERFACESAFE_FOR_UNTRUSTED_DATA** The interface identified by the `SetInterfaceSafetyOptions` parameter `riid` should be made safe for untrusted data during initialization.  
+- INTERFACESAFE_FOR_UNTRUSTED_DATA The interface identified by the `SetInterfaceSafetyOptions` parameter `riid` should be made safe for untrusted data during initialization.  
   
 ## Members  
   
@@ -52,9 +52,9 @@ class IObjectSafetyImpl
 |[IObjectSafetyImpl::m_dwCurrentSafety](#m_dwcurrentsafety)|Stores the object's current safety level.|  
   
 ## Remarks  
- Class `IObjectSafetyImpl` provides a default implementation of `IObjectSafety`. The `IObjectSafety` interface allows a client to retrieve and set an object's safety levels. For example, a web browser can call **IObjectSafety::SetInterfaceSafetyOptions** to make a control safe for initialization or safe for scripting.  
+ Class `IObjectSafetyImpl` provides a default implementation of `IObjectSafety`. The `IObjectSafety` interface allows a client to retrieve and set an object's safety levels. For example, a web browser can call `IObjectSafety::SetInterfaceSafetyOptions` to make a control safe for initialization or safe for scripting.  
   
- Note that using the [IMPLEMENTED_CATEGORY](category-macros.md#implemented_category) macro with the **CATID_SafeForScripting** and **CATID_SafeForInitializing** component categories provides an alternative way of specifying that a component is safe.  
+ Note that using the [IMPLEMENTED_CATEGORY](category-macros.md#implemented_category) macro with the CATID_SafeForScripting and CATID_SafeForInitializing component categories provides an alternative way of specifying that a component is safe.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -77,7 +77,7 @@ HRESULT GetInterfaceSafetyOptions(
 ```  
   
 ### Remarks  
- The implementation returns the appropriate values for any interface supported by the object's implementation of **IUnknown::QueryInterface**.  
+ The implementation returns the appropriate values for any interface supported by the object's implementation of `IUnknown::QueryInterface`.  
   
 > [!IMPORTANT]
 >  Any object that supports `IObjectSafety` is responsible for its own security, and that of any object it delegates. The programmer must take into account issues arising from running code in the user's context, cross-site scripting and perform suitable zone checking.  
@@ -102,7 +102,7 @@ HRESULT SetInterfaceSafetyOptions(
 ```  
   
 ### Remarks  
- The implementation returns **E_NOINTERFACE** for any interface not supported by the object's implementation of **IUnknown::QueryInterface**.  
+ The implementation returns E_NOINTERFACE for any interface not supported by the object's implementation of `IUnknown::QueryInterface`.  
   
 > [!IMPORTANT]
 >  Any object that supports `IObjectSafety` is responsible for its own security, and that of any object it delegates. The programmer must take into account issues arising from running code in the user's context, cross-site scripting and perform suitable zone checking.  

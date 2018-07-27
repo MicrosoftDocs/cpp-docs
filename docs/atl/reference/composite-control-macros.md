@@ -36,7 +36,7 @@ BEGIN_SINK_MAP(_class)
 ```  
   
 ### Parameters  
- `_class`  
+ *_class*  
  [in] Specifies the control.  
   
 ### Example  
@@ -59,21 +59,21 @@ END_SINK_MAP()
  CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
   
 ##  <a name="sink_entry"></a>  SINK_ENTRY  
- Declares the handler function ( `fn`) for the specified event ( `dispid`), of the control identified by `id`.  
+ Declares the handler function (*fn*) for the specified event (*dispid*), of the control identified by *id*.  
   
 ```
 SINK_ENTRY( id, dispid, fn )
 ```  
   
 ### Parameters  
- `id`  
+ *id*  
  [in] Identifies the control.  
   
- `dispid`  
+ *dispid*  
  [in] Identifies the specified event.  
   
- `fn`  
- [in] Name of the event handler function. This function must use the **_stdcall** calling convention and have the appropriate dispinterface-style signature.  
+ *fn*  
+ [in] Name of the event handler function. This function must use the `_stdcall` calling convention and have the appropriate dispinterface-style signature.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]  
@@ -82,7 +82,7 @@ SINK_ENTRY( id, dispid, fn )
  CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
   
 ##  <a name="sink_entry_ex"></a>  SINK_ENTRY_EX and SINK_ENTRY_EX_P
- Declares the handler function ( `fn`) for the specified event ( `dispid`), of the dispatch interface ( *iid)*, for the control identified by `id`.  
+ Declares the handler function (*fn*) for the specified event (*dispid*), of the dispatch interface (*iid*), for the control identified by *id*.  
   
 ```
 SINK_ENTRY_EX( id, iid, dispid, fn )
@@ -90,20 +90,20 @@ SINK_ENTRY_EX_P( id, piid, dispid, fn ) // (Visual Studio 2017)
 ```  
   
 ### Parameters  
- `id`  
+ *id*  
  [in] Identifies the control.  
   
- `iid`  
+ *iid*  
  [in] Identifies the dispatch interface.  
 
- `piid`  
+ *piid*  
  [in] Pointer to the dispatch interface.  
   
- `dispid`  
+ *dispid*  
  [in] Identifies the specified event.  
   
- `fn`  
- [in] Name of the event handler function. This function must use the **_stdcall** calling convention and have the appropriate dispinterface-style signature.  
+ *fn*  
+ [in] Name of the event handler function. This function must use the `_stdcall` calling convention and have the appropriate dispinterface-style signature.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#136](../../atl/codesnippet/cpp/composite-control-macros_2.h)]  
@@ -112,7 +112,7 @@ SINK_ENTRY_EX_P( id, piid, dispid, fn ) // (Visual Studio 2017)
  CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  
   
 ##  <a name="sink_entry_info"></a>  SINK_ENTRY_INFO and SINK_ENTRY_INFO_P  
- Use the `SINK_ENTRY_INFO` macro within an event sink map to provide the information needed by [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) to route events to the relevant handler function.  
+ Use the SINK_ENTRY_INFO macro within an event sink map to provide the information needed by [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) to route events to the relevant handler function.  
   
 ```
 SINK_ENTRY_INFO( id, iid, dispid, fn, info )
@@ -120,23 +120,23 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 ```  
   
 ### Parameters  
- `id`  
- [in] Unsigned integer identifying the event source. This value must match the `nID` template parameter used in the related [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) base class.  
+ *id*  
+ [in] Unsigned integer identifying the event source. This value must match the *nID* template parameter used in the related [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) base class.  
   
- `iid`  
+ *iid*  
  [in] IID that identifies the dispatch interface.  
 
- `piid`  
+ *piid*  
  [in] Pointer to IID that identifies the dispatch interface.
   
- `dispid`  
+ *dispid*  
  [in] DISPID identifying the specified event.  
   
- `fn`  
- [in] Name of the event handler function. This function must use the **_stdcall** calling convention and have the appropriate dispinterface-style signature.  
+ *fn*  
+ [in] Name of the event handler function. This function must use the `_stdcall` calling convention and have the appropriate dispinterface-style signature.  
   
- `info`  
- [in] Type information for the event handler function. This type information is provided in the form of a pointer to an `_ATL_FUNC_INFO` structure. `CC_CDECL` is the only option supported in Windows CE for the `CALLCONV` field of the `_ATL_FUNC_INFO` structure. Any other value is unsupported thus its behavior undefined.  
+ *info*  
+ [in] Type information for the event handler function. This type information is provided in the form of a pointer to an `_ATL_FUNC_INFO` structure. CC_CDECL is the only option supported in Windows CE for the CALLCONV field of the `_ATL_FUNC_INFO` structure. Any other value is unsupported thus its behavior undefined.  
   
 ### Remarks  
  The first four macro parameters are the same as those for the [SINK_ENTRY_EX](#sink_entry_ex) macro. The final parameter provides type information for the event. CE ATL implementation of ActiveX event sinks only supports return values of type HRESULT or void from your event handler methods; any other return value is unsupported and its behavior is undefined.  

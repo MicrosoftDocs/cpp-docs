@@ -53,7 +53,7 @@ The Microsoft run-time library defines the following standard types and typedefs
 |`fpos_t` (long integer, `__int64`, or structure, depending on the target platform)|Used by [fgetpos](../c-runtime-library/reference/fgetpos.md) and [fsetpos](../c-runtime-library/reference/fsetpos.md) to record information for uniquely specifying every position within a file.|STDIO.H|  
 |`_fsize_t` (unsigned long integer)|Used to represent the size of a file.|IO.H,<br /><br /> WCHAR.H|  
 |`_HEAPINFO` structure|Contains information about next heap entry for [_heapwalk](../c-runtime-library/reference/heapwalk.md).|MALLOC.H|  
-|`_HFILE` (void *)|An operating system file handle.|CRTDBG.H|  
+|`_HFILE` (void \*)|An operating system file handle.|CRTDBG.H|  
 |`imaxdiv_t`|The type of value that's returned by the [imaxdiv](../c-runtime-library/reference/imaxdiv.md) function, containing both the quotient and the remainder.|inttypes.h|  
 |`ino_t`, `_ino_t` (unsigned short)|For returning status information.|WCHAR.H|  
 |`intmax_t`|A signed integer type capable of representing any value of any signed integer type.|stdint.h|  

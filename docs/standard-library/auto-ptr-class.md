@@ -46,15 +46,15 @@ public:
 ```
 ### Parameters
 
-`right`
+*right*
  The `auto_ptr` from which to get an existing resource.
 
-`ptr`
+*ptr*
  The pointer specified to replace the stored pointer.
 
 ## Remarks
 
-The template class describes a smart pointer, called an `auto_ptr`, to an allocated object. The pointer must be either null or designate an object allocated by `new`. The `auto_ptr` transfers ownership if its stored value is assigned to another object. (It replaces the stored value after a transfer with a null pointer.) The destructor for `auto_ptr<Type>` deletes the allocated object. The `auto_ptr<Type>` ensures that an allocated object is automatically deleted when control leaves a block, even through a thrown exception. You should not construct two `auto_ptr<Type>` objects that own the same object.
+The template class describes a smart pointer, called an `auto_ptr`, to an allocated object. The pointer must be either null or designate an object allocated by **new**. The `auto_ptr` transfers ownership if its stored value is assigned to another object. (It replaces the stored value after a transfer with a null pointer.) The destructor for `auto_ptr<Type>` deletes the allocated object. The `auto_ptr<Type>` ensures that an allocated object is automatically deleted when control leaves a block, even through a thrown exception. You should not construct two `auto_ptr<Type>` objects that own the same object.
 
 You can pass an `auto_ptr<Type>` object by value as an argument to a function call. An `auto_ptr` cannot be an element of any Standard Library container. You cannot reliably manage a sequence of `auto_ptr<Type>` objects with a C++ Standard Library container.
 
@@ -78,7 +78,7 @@ You can pass an `auto_ptr<Type>` object by value as an argument to a function ca
 |-|-|
 |[get](#get)|The member function returns the stored pointer `myptr`.|
 |[release](#release)|The member replaces the stored pointer `myptr` with a null pointer and returns the previously stored pointer.|
-|[reset](#reset)|The member function evaluates the expression `delete myptr`, but only if the stored pointer value `myptr` changes as a result of function call. It then replaces the stored pointer with `ptr`.|
+|[reset](#reset)|The member function evaluates the expression `delete myptr`, but only if the stored pointer value `myptr` changes as a result of function call. It then replaces the stored pointer with *ptr*.|
 
 ### Operators
 
@@ -113,19 +113,19 @@ auto _ptr(auto _ptr<Other>& right) throw();
 
 ### Parameters
 
-`ptr`
+*ptr*
  The pointer to the object that `auto_ptr` encapsulates.
 
-`right`
+*right*
  The `auto_ptr` object to be copied by the constructor.
 
 ### Remarks
 
-The first constructor stores `ptr` in **myptr**, the stored pointer to the allocated object. The second constructor transfers ownership of the pointer stored in `right`, by storing `right`. [release](#release) in **myptr**.
+The first constructor stores *ptr* in `myptr`, the stored pointer to the allocated object. The second constructor transfers ownership of the pointer stored in *right*, by storing *right*. [release](#release) in `myptr`.
 
-The third constructor behaves the same as the second, except that it stores **right**. `ref`. **release** in **myptr**, where `ref` is the reference stored in `right`.
+The third constructor behaves the same as the second, except that it stores `right`. `ref`. `release` in `myptr`, where `ref` is the reference stored in `right`.
 
-The template constructor behaves the same as the second constructor, provided that a pointer to **Other** can be implicitly converted to a pointer to **Type**.
+The template constructor behaves the same as the second constructor, provided that a pointer to `Other` can be implicitly converted to a pointer to `Type`.
 
 ### Example
 
@@ -188,7 +188,7 @@ Destructing 00311AF8
 
 ## <a name="element_type"></a>  auto_ptr::element_type
 
-The type is a synonym for the template parameter **Type**.
+The type is a synonym for the template parameter `Type`.
 
 ```cpp
 
@@ -197,7 +197,7 @@ typedef Type element  _type;
 
 ## <a name="get"></a>  auto_ptr::get
 
-The member function returns the stored pointer **myptr**.
+The member function returns the stored pointer `myptr`.
 
 ```cpp
 Type *get() const throw();
@@ -205,7 +205,7 @@ Type *get() const throw();
 
 ### Return Value
 
-The stored pointer **myptr**.
+The stored pointer `myptr`.
 
 ### Example
 
@@ -267,7 +267,7 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 
 ### Parameters
 
-`right`
+*right*
  An object of type `auto_ptr`.
 
 ### Return Value
@@ -276,7 +276,7 @@ A reference to an object of type `auto_ptr`\< **Type**>.
 
 ### Remarks
 
-The assignment evaluates the expression **delete myptr**, but only if the stored pointer **myptr** changes as a result of the assignment. It then transfers ownership of the pointer stored in _ *Right*, by storing \_ *Right*. [release](#release) in **myptr**. The function returns **\*this**.
+The assignment evaluates the expression `delete myptr`, but only if the stored pointer `myptr` changes as a result of the assignment. It then transfers ownership of the pointer stored in _ *Right*, by storing \_ *Right*. [release](#release) in `myptr`. The function returns **\*this**.
 
 ### Example
 
@@ -292,7 +292,7 @@ Type& operator*() const throw();
 
 ### Return Value
 
-A reference to an object of type **Type** that the pointer owns.
+A reference to an object of type `Type` that the pointer owns.
 
 ### Remarks
 
@@ -312,11 +312,11 @@ Type * operator->() const throw();
 
 ### Return Value
 
-A member of the object that **auto_ptr** owns.
+A member of the object that `auto_ptr` owns.
 
 ### Remarks
 
-The selection operator returns [get](#get)`( )`, so that the expression *ap*-> **member** behaves the same as ( *ap*. **get**( ) )-> **member**, where *ap* is an object of class `auto_ptr`\< **Type**>. Hence, the stored pointer must not be null, and **Type** must be a class, struct, or union type with a **member** member.
+The selection operator returns [get](#get)`( )`, so that the expression *ap*-> **member** behaves the same as ( *ap*. **get**( ) )-> **member**, where *ap* is an object of class `auto_ptr`\< **Type**>. Hence, the stored pointer must not be null, and `Type` must be a class, struct, or union type with a `member` member.
 
 ### Example
 
@@ -354,7 +354,7 @@ int main()
 
 ## <a name="op_auto_ptr_ref_lt_other_gt"></a>  auto_ptr::operator auto_ptr_ref&lt;Other&gt;
 
-Casts from an `auto_ptr` to an **auto_ptr_ref**.
+Casts from an `auto_ptr` to an `auto_ptr_ref`.
 
 ```cpp
 template <class Other>
@@ -415,7 +415,7 @@ main exiting
 
 ## <a name="release"></a>  auto_ptr::release
 
-The member replaces the stored pointer **myptr** with a null pointer and returns the previously stored pointer.
+The member replaces the stored pointer `myptr` with a null pointer and returns the previously stored pointer.
 
 ```cpp
 Type *release() throw();
@@ -427,7 +427,7 @@ The previously stored pointer.
 
 ### Remarks
 
-The member replaces the stored pointer **myptr** with a null pointer and returns the previously stored pointer.
+The member replaces the stored pointer `myptr` with a null pointer and returns the previously stored pointer.
 
 ### Example
 
@@ -477,7 +477,7 @@ Destructing 00311B88 Value: 6
 
 ## <a name="reset"></a>  auto_ptr::reset
 
-The member function evaluates the expression **delete** **myptr**, but only if the stored pointer value **myptr** changes as a result of a function call. It then replaces the stored pointer with **ptr**.
+The member function evaluates the expression `delete myptr`, but only if the stored pointer value `myptr` changes as a result of a function call. It then replaces the stored pointer with `ptr`.
 
 ```cpp
 void reset(Type* ptr = 0);
@@ -485,8 +485,8 @@ void reset(Type* ptr = 0);
 
 ### Parameters
 
-`ptr`
- The pointer specified to replace the stored pointer **myptr**.
+*ptr*
+ The pointer specified to replace the stored pointer `myptr`.
 
 ### Example
 

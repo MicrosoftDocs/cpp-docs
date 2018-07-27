@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IRunnableObjectImpl Class
-This class implements **IUnknown** and provides a default implementation of the [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) interface.  
+This class implements `IUnknown` and provides a default implementation of the [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) interface.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -26,7 +26,7 @@ class IRunnableObjectImpl
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IRunnableObjectImpl`.  
   
 ## Members  
@@ -35,14 +35,14 @@ class IRunnableObjectImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[IRunnableObjectImpl::GetRunningClass](#getrunningclass)|Returns the CLSID of the running control. The ATL implementation sets the CLSID to `GUID_NULL` and returns **E_UNEXPECTED**.|  
-|[IRunnableObjectImpl::IsRunning](#isrunning)|Determines if the control is running. The ATL implementation returns **TRUE**.|  
-|[IRunnableObjectImpl::LockRunning](#lockrunning)|Locks the control into the running state. The ATL implementation returns `S_OK`.|  
-|[IRunnableObjectImpl::Run](#run)|Forces the control to run. The ATL implementation returns `S_OK`.|  
-|[IRunnableObjectImpl::SetContainedObject](#setcontainedobject)|Indicates that the control is embedded. The ATL implementation returns `S_OK`.|  
+|[IRunnableObjectImpl::GetRunningClass](#getrunningclass)|Returns the CLSID of the running control. The ATL implementation sets the CLSID to GUID_NULL and returns E_UNEXPECTED.|  
+|[IRunnableObjectImpl::IsRunning](#isrunning)|Determines if the control is running. The ATL implementation returns TRUE.|  
+|[IRunnableObjectImpl::LockRunning](#lockrunning)|Locks the control into the running state. The ATL implementation returns S_OK.|  
+|[IRunnableObjectImpl::Run](#run)|Forces the control to run. The ATL implementation returns S_OK.|  
+|[IRunnableObjectImpl::SetContainedObject](#setcontainedobject)|Indicates that the control is embedded. The ATL implementation returns S_OK.|  
   
 ## Remarks  
- The [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) interface enables a container to determine if a control is running, force it to run, or lock it into the running state. Class `IRunnableObjectImpl` provides a default implementation of this interface and implements **IUnknown** by sending information to the dump device in debug builds.  
+ The [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) interface enables a container to determine if a control is running, force it to run, or lock it into the running state. Class `IRunnableObjectImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -62,7 +62,7 @@ HRESULT GetRunningClass(LPCLSID lpClsid);
 ```  
   
 ### Return Value  
- The ATL implementation sets \* *lpClsid* to `GUID_NULL` and returns **E_UNEXPECTED**.  
+ The ATL implementation sets \* *lpClsid* to GUID_NULL and returns E_UNEXPECTED.  
   
 ### Remarks  
  See [IRunnableObject::GetRunningClass](http://msdn.microsoft.com/library/windows/desktop/ms693734) in the Windows SDK.  
@@ -75,7 +75,7 @@ virtual BOOL IsRunning();
 ```  
   
 ### Return Value  
- The ATL implementation returns **TRUE**.  
+ The ATL implementation returns TRUE.  
   
 ### Remarks  
  See [IRunnableObject::IsRunning](http://msdn.microsoft.com/library/windows/desktop/ms678496) in the Windows SDK.  
@@ -88,7 +88,7 @@ HRESULT LockRunning(BOOL fLock, BOOL fLastUnlockCloses);
 ```  
   
 ### Return Value  
- The ATL implementation returns `S_OK`.  
+ The ATL implementation returns S_OK.  
   
 ### Remarks  
  See [IRunnableObject::LockRunning](http://msdn.microsoft.com/library/windows/desktop/ms693361) in the Windows SDK.  
@@ -101,7 +101,7 @@ HRESULT Run(LPBINDCTX lpbc);
 ```  
   
 ### Return Value  
- The ATL implementation returns `S_OK`.  
+ The ATL implementation returns S_OK.  
   
 ### Remarks  
  See [IRunnableObject::Run](http://msdn.microsoft.com/library/windows/desktop/ms694517) in the Windows SDK.  
@@ -114,7 +114,7 @@ HRESULT SetContainedObject(BOOL fContained);
 ```  
   
 ### Return Value  
- The ATL implementation returns `S_OK`.  
+ The ATL implementation returns S_OK.  
   
 ### Remarks  
  See [IRunnableObject::SetContainedObject](http://msdn.microsoft.com/library/windows/desktop/ms693710) in the Windows SDK.  

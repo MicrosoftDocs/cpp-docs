@@ -186,7 +186,7 @@ MOUT << _T(" chUser:'") << chUser
   
 ```  
   
- The macro `MOUT` resolves to *g_pmout which is an object of type `mstream`. The mstream class is derived from the standard output string class, `std::basic_ostream<TCHAR>.` However with _T around the string literal, which we put in in preparation for converting to Unicode, the overload resolution for operator << fails with the following error message:  
+ The macro `MOUT` resolves to \*g_pmout which is an object of type `mstream`. The mstream class is derived from the standard output string class, `std::basic_ostream<TCHAR>.` However with _T around the string literal, which we put in in preparation for converting to Unicode, the overload resolution for operator << fails with the following error message:  
   
 ```Output  
 1>winmsgs.cpp(4612): error C2666: 'mstream::operator <<': 2 overloads have similar conversions

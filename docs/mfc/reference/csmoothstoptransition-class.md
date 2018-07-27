@@ -65,7 +65,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which is responsible for creation of standard transitions.  
   
 ### Return Value  
@@ -81,10 +81,10 @@ CSmoothStopTransition(
 ```  
   
 ### Parameters  
- `maximumDuration`  
+ *maximumDuration*  
  The maximum duration of the transition.  
   
- `dblFinalValue`  
+ *dblFinalValue*  
  The value of the animation variable at the end of the transition.  
   
 ##  <a name="m_dblfinalvalue"></a>  CSmoothStopTransition::m_dblFinalValue  

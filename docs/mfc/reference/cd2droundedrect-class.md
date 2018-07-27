@@ -46,13 +46,14 @@ CD2DRoundedRect(
     const CD2DSizeF& sizeRadius);  
   
 CD2DRoundedRect(const D2D1_ROUNDED_RECT& rectIn);  
-CD2DRoundedRect(const D2D1_ROUNDED_RECT* rectIn);```  
+CD2DRoundedRect(const D2D1_ROUNDED_RECT* rectIn);
+```  
   
 ### Parameters  
- `rectIn`  
+ *rectIn*  
  source rectangle  
   
- `sizeRadius`  
+ *sizeRadius*  
  radius size  
   
 ## See Also  

@@ -31,7 +31,7 @@ Some of the functions declared in this header are replaceable. The implementatio
 
 |||
 |-|-|
-|[nothrow](../standard-library/new-functions.md#nothrow)|Provides an object to be used as an argument for the `nothrow` versions of **new** and **delete**.|
+|[nothrow](../standard-library/new-functions.md#nothrow)|Provides an object to be used as an argument for the **nothrow** versions of **new** and **delete**.|
 
 ### Typedefs
 

@@ -26,7 +26,7 @@ Besides running the message loop and giving you an opportunity to initialize the
   
  If you want to initialize GDI+ for your application (by calling [GdiplusStartup](https://msdn.microsoft.com/library/ms534077) in your [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) function), you have to suppress the GDI+ background thread.  
   
- You can do this by setting the **SuppressBackgroundThread** member of the [GdiplusStartupInput](https://msdn.microsoft.com/library/ms534067) structure to **TRUE**. When suppressing the GDI+ background thread, the **NotificationHook** and **NotificationUnhook** calls should be made just prior to entering and exiting the application's message loop. For more information on these calls, see [GdiplusStartupOutput](https://msdn.microsoft.com/library/ms534068). Therefore, a good place to call **GdiplusStartup** and the hook notification functions would be in an override of the virtual function [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), as shown below:  
+ You can do this by setting the `SuppressBackgroundThread` member of the [GdiplusStartupInput](https://msdn.microsoft.com/library/ms534067) structure to **TRUE**. When suppressing the GDI+ background thread, the `NotificationHook` and `NotificationUnhook` calls should be made just prior to entering and exiting the application's message loop. For more information on these calls, see [GdiplusStartupOutput](https://msdn.microsoft.com/library/ms534068). Therefore, a good place to call `GdiplusStartup` and the hook notification functions would be in an override of the virtual function [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), as shown below:  
   
  [!code-cpp[NVC_MFCDocView#6](../mfc/codesnippet/cpp/special-cwinapp-services_1.cpp)]  
   

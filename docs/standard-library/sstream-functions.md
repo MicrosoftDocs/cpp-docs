@@ -42,8 +42,8 @@ void swap(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|Reference to an `sstream` object.|
-|`right`|Reference to an `sstream` object.|
+|*left*|Reference to an `sstream` object.|
+|*right*|Reference to an `sstream` object.|
 
 ### Remarks
 

@@ -23,11 +23,11 @@ Visual C++ 6.0 supplies ActiveX controls you can use in applications that you th
   
 -   Asycfilt.dll  
   
--   Comcat.dll *  
+-   Comcat.dll \*  
   
--   Oleaut32.dll *  
+-   Oleaut32.dll \*  
   
--   Olepro32.dll *  
+-   Olepro32.dll \*  
   
 -   Stdole2.tlb  
   
