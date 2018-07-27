@@ -43,7 +43,7 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 |[CAccessorRowset](#caccessorrowset)|Constructor.|  
 |[Close](#close)|Closes the rowset and any accessors.|  
 |[FreeRecordMemory](#freerecordmemory)|Frees any columns in the current record that need to be freed.|  
-|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/en-us/library/ms722704.aspx).|  
+|[GetColumnInfo](#getcolumninfo)|Implements [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx).|  
   
 ## Remarks  
  Class `TAccessor` manages the accessor. Class *TRowset* manages the rowset.  

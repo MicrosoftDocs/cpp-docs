@@ -44,7 +44,7 @@ This topic explains how to use the RFX function calls that make up the body of y
 |`RFX_Binary`|`CByteArray`|  
 |`RFX_Double`|**double**|  
 |`RFX_Single`|**float**|  
-|`RFX_Int`|`int`|  
+|`RFX_Int`|**int**|  
 |`RFX_Long`|**long**|  
 |`RFX_LongBinary`|`CLongBinary`|  
 |`RFX_Text`|`CString`|  

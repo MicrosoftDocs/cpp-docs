@@ -22,7 +22,7 @@ template <class T>
 class CAccessor : public CAccessorBase, public T  
 ```  
   
-#### Parameters  
+### Parameters  
  *T*  
  The user record class.  
   
