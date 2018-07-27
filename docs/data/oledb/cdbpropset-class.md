@@ -4,13 +4,10 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["CDBPropSet", "ATL.CDBPropSet", "ATL::CDBPropSet", "CDBPropSet::AddProperty", "CDBPropSet.AddProperty", "AddProperty", "ATL::CDBPropSet::AddProperty", "ATL.CDBPropSet.AddProperty",
-    "CDBPropSet.CDBPropSet", "CDBPropSet::CDBPropSet", "ATL::CDBPropSet::CDBPropSet", "ATL.CDBPropSet.CDBPropSet",
-    "CDBPropSet.operator=", "ATL::CDBPropSet::operator=", "ATL.CDBPropSet.operator=", "CDBPropSet::operator=",
-    "ATL.CDBPropSet.SetGUID", "CDBPropSet.SetGUID", "ATL::CDBPropSet::SetGUID", "SetGUID", "CDBPropSet::SetGUID"]
+f1_keywords: ["CDBPropSet", "ATL.CDBPropSet", "ATL::CDBPropSet", "CDBPropSet::AddProperty", "CDBPropSet.AddProperty", "AddProperty", "ATL::CDBPropSet::AddProperty", "ATL.CDBPropSet.AddProperty", "CDBPropSet.CDBPropSet", "CDBPropSet::CDBPropSet", "ATL::CDBPropSet::CDBPropSet", "ATL.CDBPropSet.CDBPropSet", "CDBPropSet.operator=", "ATL::CDBPropSet::operator=", "ATL.CDBPropSet.operator=", "CDBPropSet::operator=", "ATL.CDBPropSet.SetGUID", "CDBPropSet.SetGUID", "ATL::CDBPropSet::SetGUID", "SetGUID", "CDBPropSet::SetGUID"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CDBPropSet class", "AddProperty method", "CDBPropSet class, constructor", "operator =, property sets", "= operator, with OLE DB templates", "operator=, property sets",
-    "SetGUID method", "AddProperty method"]
+helpviewer_keywords: ["CDBPropSet class", "AddProperty method", "CDBPropSet class, constructor", "operator =, property sets", "= operator, with OLE DB templates", 
+      "operator=, property sets", "SetGUID method", "AddProperty method"]
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
 author: "mikeblome"
 ms.author: "mblome"
@@ -101,7 +98,7 @@ The constructor. Initializes the `rgProperties`, `cProperties`, and `guidPropert
 ### Syntax  
   
 ```cpp
-      CDBPropSet(const GUID& guid);  
+CDBPropSet(const GUID& guid);  
 
 CDBPropSet(const CDBPropSet& propset);  
 
@@ -121,7 +118,7 @@ Sets the `guidPropertySet` field in the `DBPROPSET` structure.
 ### Syntax  
   
 ```cpp
-      void SetGUID(const GUID& guid) throw();  
+void SetGUID(const GUID& guid) throw();  
 ```  
   
 #### Parameters  
@@ -137,7 +134,7 @@ Assigns the contents of one property set to another property set.
 ### Syntax  
   
 ```cpp
-      CDBPropSet& operator =(CDBPropSet& propset) throw();  
+CDBPropSet& operator =(CDBPropSet& propset) throw();  
 ```  
   
 ## See Also  

@@ -4,15 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::CCommand", "CCommand", "ATL.CCommand", "CCommand.Close", "CCommand::Close", "CCommand.Create", "CCommand::Create",
-    "CCommand.CreateCommand", "CreateCommand", "CCommand::CreateCommand",
-    "ATL::CCommand::GetNextResult", "CCommand::GetNextResult", "GetNextResult", "CCommand.GetNextResult", "ATL.CCommand.GetNextResult",
-    "GetParameterInfo", "CCommand.GetParameterInfo", "CCommand::GetParameterInfo", "ATL.CCommand.Open", "ATL::CCommand::Open", "CCommand.Open", "CCommand::Open",
-    "CCommand.Prepare", "CCommand::Prepare", "Prepare", "CCommand.ReleaseCommand", "ReleaseCommand", "CCommand::ReleaseCommand",
-    "SetParameterInfo", "CCommand.SetParameterInfo", "CCommand::SetParameterInfo", "Unprepare", "CCommand.Unprepare", "CCommand::Unprepare"]
+f1_keywords: ["ATL::CCommand", "CCommand", "ATL.CCommand", "CCommand.Close", "CCommand::Close", "CCommand.Create", "CCommand::Create", "CCommand.CreateCommand", "CreateCommand", "CCommand::CreateCommand", "ATL::CCommand::GetNextResult", "CCommand::GetNextResult", "GetNextResult", "CCommand.GetNextResult", "ATL.CCommand.GetNextResult", "GetParameterInfo", "CCommand.GetParameterInfo", "CCommand::GetParameterInfo", "ATL.CCommand.Open", "ATL::CCommand::Open", "CCommand.Open", "CCommand::Open", "CCommand.Prepare", "CCommand::Prepare", "Prepare", "CCommand.ReleaseCommand", "ReleaseCommand", "CCommand::ReleaseCommand", "SetParameterInfo", "CCommand.SetParameterInfo", "CCommand::SetParameterInfo", "Unprepare", "CCommand.Unprepare", "CCommand::Unprepare"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CCommand class", "Close method", "Create method [C++]", "CreateCommand method", "GetNextResult method", "GetParameterInfo method", "Open method",
-    "Prepare method", "ReleaseCommand method", "SetParameterInfo method", "Unprepare method"]
+helpviewer_keywords: ["CCommand class", "Close method", "Create method [C++]", "CreateCommand method", "GetNextResult method", "GetParameterInfo method", "Open method", "Prepare method", "ReleaseCommand method", "SetParameterInfo method", "Unprepare method"]
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
 author: "mikeblome"
 ms.author: "mblome"
@@ -25,12 +19,12 @@ Provides methods to set and execute a command.
 
 ```cpp
 template <class TAccessor = CNoAccessor,  
-          template <typename T> class TRowset = CRowset,  
-          class TMultiple = CNoMultipleResults>  
+   template <typename T> class TRowset = CRowset,  
+   class TMultiple = CNoMultipleResults>  
 class CCommand :   
-           public CAccessorRowset <TAccessor, TRowset>,  
-           public CCommandBase,  
-           public TMultiple  
+   public CAccessorRowset <TAccessor, TRowset>,  
+   public CCommandBase,  
+   public TMultiple  
 ```  
   
 ### Parameters  
@@ -102,7 +96,7 @@ Fetches the next result set if one is available.
 ### Syntax  
   
 ```cpp
-HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected,  
+HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected, 
    bool bBind = true) throw();  
 ```  
   
@@ -135,7 +129,6 @@ HRESULT Open(const CSession& session,
    bool bBind = true,  
    ULONG ulPropSets = 0) throw();  
 
-
 HRESULT Open(const CSession& session,  
    LPCSTR szCommand,  
    DBPROPSET *pPropSet = NULL,  
@@ -144,7 +137,6 @@ HRESULT Open(const CSession& session,
    bool bBind = true,  
    ULONG ulPropSets = 0) throw();  
 
-
 HRESULT Open(const CSession& session,  
    INT szCommand = NULL,  
    DBPROPSET *pPropSet = NULL,  
@@ -152,7 +144,6 @@ HRESULT Open(const CSession& session,
    REFGUID guidCommand = DBGUID_DEFAULT,  
    bool bBind = true,  
    ULONG ulPropSets = 0) throw();  
-
 
 HRESULT Open(DBPROPSET *pPropSet = NULL,  
    DBROWCOUNT* pRowsAffected = NULL,  
@@ -217,7 +208,6 @@ Calls [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) to c
 HRESULT CCommandBase::Create(const CSession& session,   
    LPCWSTR wszCommand,   
    REFGUID guidCommand = DBGUID_DEFAULT) throw ();  
-
 
 HRESULT CCommandBase::Create(const CSession& session,   
    LPCSTR szCommand,   
@@ -305,7 +295,6 @@ Releases the parameter accessor, then releases the command itself.
   
 ```cpp
 void CCommandBase::ReleaseCommand() throw();  
-  
 ```  
   
 ### Remarks  
@@ -335,7 +324,6 @@ Discards the current command execution plan.
   
 ```cpp
 HRESULT CCommandBase::Unprepare() throw();  
-  
 ```  
   
 ### Return Value  

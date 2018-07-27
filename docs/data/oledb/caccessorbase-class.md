@@ -4,9 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["CAccessorBase", "CAccessorBase.Close", "CAccessorBase::Close", "GetHAccessor", "CAccessorBase::GetHAccessor", "CAccessorBase.GetHAccessor",
-    "CAccessorBase::GetNumAccessors", "GetNumAccessors", "CAccessorBase.GetNumAccessors", "IsAutoAccessor", "CAccessorBase.IsAutoAccessor", "CAccessorBase::IsAutoAccessor",
-    "CAccessorBase::ReleaseAccessors", "CAccessorBase.ReleaseAccessors", "ReleaseAccessors"]
+f1_keywords: ["CAccessorBase", "CAccessorBase.Close", "CAccessorBase::Close", "GetHAccessor", "CAccessorBase::GetHAccessor", "CAccessorBase.GetHAccessor", "CAccessorBase::GetNumAccessors", "GetNumAccessors", "CAccessorBase.GetNumAccessors", "IsAutoAccessor", "CAccessorBase.IsAutoAccessor", "CAccessorBase::IsAutoAccessor","CAccessorBase::ReleaseAccessors", "CAccessorBase.ReleaseAccessors", "ReleaseAccessors"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAccessorBase class", "Close method", "GetHAccessor method", "GetNumAccessors method", "IsAutoAccessor method", "ReleaseAccessors method"]
 ms.assetid: 389b65be-11ca-4ae0-9290-60c621c4982b
@@ -45,7 +43,6 @@ Closes the accessors.
   
 ```cpp
 void Close();  
-  
 ```  
   
 ### Remarks  
@@ -57,7 +54,7 @@ Retrieves the accessor handle of a specified accessor.
 ### Syntax  
   
 ```cpp
-      HACCESSOR GetHAccessor(ULONG nAccessor) const;  
+HACCESSOR GetHAccessor(ULONG nAccessor) const;  
 ```  
   
 #### Parameters  
@@ -74,7 +71,6 @@ Retrieves the number of accessors created by the class.
   
 ```cpp
 ULONG GetNumAccessors() const;  
-  
 ```  
   
 ### Return Value  
@@ -86,7 +82,7 @@ Returns true if data is automatically retrieved for the accessor during a Move o
 ### Syntax  
   
 ```cpp
-      bool IsAutoAccessor(ULONG nAccessor) const;  
+bool IsAutoAccessor(ULONG nAccessor) const;  
 ```  
   
 #### Parameters  
