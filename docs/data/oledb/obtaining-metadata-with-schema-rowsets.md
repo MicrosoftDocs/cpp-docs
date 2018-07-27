@@ -33,7 +33,7 @@ Sometimes you need to obtain information about the provider, rowset, table, colu
 ## Restrictions  
  When you query for schema information, you can use restrictions to specify the type of information in which you are interested. You can think of restrictions as a filter or qualifier in a query. For example, in the query:  
   
-```  
+```sql  
 SELECT * FROM authors where l_name = 'pivo'  
 ```  
   
@@ -41,23 +41,23 @@ SELECT * FROM authors where l_name = 'pivo'
   
  The [schema rowset typedef classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) encapsulate all the OLE DB schema rowsets so that you can access a schema rowset just like any other rowset by instantiating and opening it. For example, the typedef class [CColumns](../../data/oledb/ccolumns-ccolumnsinfo.md) is defined as:  
   
-```  
+```cpp  
 CRestrictions<CAccessor<CColumnsInfo>  
 ```  
   
  The [CRestrictions](../../data/oledb/crestrictions-class.md) class supplies the restriction support. After you create an instance of the schema rowset, call [CRestrictions::Open](../../data/oledb/crestrictions-open.md). This method returns a result set based on the restrictions that you specify.  
   
- To specify restrictions, refer to [Appendix B: Schema Rowsets](http://go.microsoft.com/fwlink/p/?linkid=64681) and look up the rowset that you are using. For example, **CColumns** corresponds to the [COLUMNS Rowset](http://go.microsoft.com/fwlink/p/?linkid=64682); that topic lists the restriction columns in the COLUMNS rowset: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. You must follow that order in specifying your restrictions.  
+ To specify restrictions, refer to [Appendix B: Schema Rowsets](http://go.microsoft.com/fwlink/p/?linkid=64681) and look up the rowset that you are using. For example, `CColumns` corresponds to the [COLUMNS Rowset](http://go.microsoft.com/fwlink/p/?linkid=64682); that topic lists the restriction columns in the COLUMNS rowset: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. You must follow that order in specifying your restrictions.  
   
- So, for example, if you want to restrict by table name, note that TABLE_NAME is the third restriction column, and then call **Open**, specifying the desired table name as the third restriction parameter, as shown in the following example.  
+ So, for example, if you want to restrict by table name, note that TABLE_NAME is the third restriction column, and then call `Open`, specifying the desired table name as the third restriction parameter, as shown in the following example.  
   
 #### To use schema rowsets  
   
 1.  You must include the header file Atldbsch.h (of course, you need Atldbcli.h for consumer support as well).  
   
-2.  Instantiate a schema rowset object in the consumer's or the document's header file. If you want table information, declare a **CTables** object; if you want column information, declare a **CColumns** object. This example shows how to retrieve the columns in the authors table:  
+2.  Instantiate a schema rowset object in the consumer's or the document's header file. If you want table information, declare a `CTables` object; if you want column information, declare a `CColumns` object. This example shows how to retrieve the columns in the authors table:  
   
-    ```  
+    ```cpp  
     CDataSource ds;  
     ds.Open();  
     CSession ss;  

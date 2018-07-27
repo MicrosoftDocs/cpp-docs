@@ -4,8 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL.IRowsetNotifyImpl", "ATL::IRowsetNotifyImpl", "IRowsetNotifyImpl", "IRowsetNotifyImpl.OnFieldChange", "IRowsetNotifyImpl::OnFieldChange", "OnFieldChange",
-    "IRowsetNotifyImpl::OnRowChange", "IRowsetNotifyImpl.OnRowChange", "OnRowChange", "OnRowsetChange", "IRowsetNotifyImpl::OnRowsetChange", "IRowsetNotifyImpl.OnRowsetChange"]
+f1_keywords: ["ATL.IRowsetNotifyImpl", "ATL::IRowsetNotifyImpl", "IRowsetNotifyImpl", "IRowsetNotifyImpl.OnFieldChange", "IRowsetNotifyImpl::OnFieldChange", "OnFieldChange", "IRowsetNotifyImpl::OnRowChange", "IRowsetNotifyImpl.OnRowChange", "OnRowChange", "OnRowsetChange", "IRowsetNotifyImpl::OnRowsetChange", "IRowsetNotifyImpl.OnRowsetChange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetNotifyImpl class", "OnFieldChange method", "OnRowChange method", "OnRowsetChange method"]
 ms.assetid: fbfd0cb2-38ff-4b42-899a-8de902f834b8
@@ -95,7 +94,7 @@ Notifies the consumer of any change affecting the entire rowset.
 ### Syntax  
   
 ```cpp
-   STDMETHOD(OnRowsetChange)(   
+STDMETHOD(OnRowsetChange)(   
 /* [in] */ IRowset* /* pRowset */,  
 /* [in] */ DBREASON /* eReason */,  
 /* [in] */ DBEVENTPHASE /* ePhase */,  

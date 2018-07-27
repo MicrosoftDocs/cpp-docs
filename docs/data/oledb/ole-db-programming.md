@@ -31,6 +31,5 @@ Microsoft OLE DB is a legacy technology; for new applications it is the required
 |Data access programming overview (Visual C++)|[Data Access Programming](../../data/data-access-programming-mfc-atl.md)|  
 |ODBC conceptual topics|[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  
 
-  
 ## See Also  
  [Data Access](../data-access-in-cpp.md)

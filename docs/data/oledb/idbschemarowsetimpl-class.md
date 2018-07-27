@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["IDBSchemaRowsetImpl", "CheckRestrictions", "IDBSchemaRowsetImpl::CheckRestrictions", "IDBSchemaRowsetImpl.CheckRestrictions", "IDBSchemaRowsetImpl::CreateSchemaRowset",                                     "ATL::IDBSchemaRowsetImpl::CreateSchemaRowset", "CreateSchemaRowset", "IDBSchemaRowsetImpl.CreateSchemaRowset", "ATL.IDBSchemaRowsetImpl.CreateSchemaRowset", "IDBSchemaRowsetImpl::SetRestrictions",                   "SetRestrictions", "IDBSchemaRowsetImpl.SetRestrictions", "ATL::IDBSchemaRowsetImpl::GetRowset", "ATL.IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl<SessionClass>::GetRowset",                                   "IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl::GetRowset", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetRowset", "GetRowset", "ATL::IDBSchemaRowsetImpl::GetSchemas", "GetSchemas",                              "IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "ATL.IDBSchemaRowsetImpl.GetSchemas", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "IDBSchemaRowsetImpl.GetSchemas", "IDBSchemaRowsetImpl::GetSchemas"]
+f1_keywords: ["IDBSchemaRowsetImpl", "CheckRestrictions", "IDBSchemaRowsetImpl::CheckRestrictions", "IDBSchemaRowsetImpl.CheckRestrictions", "IDBSchemaRowsetImpl::CreateSchemaRowset", "ATL::IDBSchemaRowsetImpl::CreateSchemaRowset", "CreateSchemaRowset", "IDBSchemaRowsetImpl.CreateSchemaRowset", "ATL.IDBSchemaRowsetImpl.CreateSchemaRowset", "IDBSchemaRowsetImpl::SetRestrictions", "SetRestrictions", "IDBSchemaRowsetImpl.SetRestrictions", "ATL::IDBSchemaRowsetImpl::GetRowset", "ATL.IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl<SessionClass>::GetRowset",                                   "IDBSchemaRowsetImpl.GetRowset", "IDBSchemaRowsetImpl::GetRowset", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetRowset", "GetRowset", "ATL::IDBSchemaRowsetImpl::GetSchemas", "GetSchemas", "IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "ATL.IDBSchemaRowsetImpl.GetSchemas", "ATL::IDBSchemaRowsetImpl<SessionClass>::GetSchemas", "IDBSchemaRowsetImpl.GetSchemas", "IDBSchemaRowsetImpl::GetSchemas"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IDBSchemaRowsetImpl class", "CheckRestrictions method", "CreateSchemaRowset method", "SetRestrictions method", "GetRowset method", "GetSchemas method"]
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
@@ -139,7 +139,7 @@ Specifies which restrictions you support on a particular schema rowset.
   
 ```cpp
 void SetRestrictions(ULONG cRestrictions,  
-  GUID* /* rguidSchema */,  
+   GUID* /* rguidSchema */,  
    ULONG* rgRestrictions);  
 ```  
   
@@ -170,7 +170,7 @@ Returns a schema rowset.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetRowset)(IUnknown *pUnkOuter,  
+STDMETHOD (GetRowset)(IUnknown *pUnkOuter,  
    REFGUID rguidSchema,  
    ULONG cRestrictions,  
    const VARIANT rgRestrictions[],  
@@ -216,7 +216,7 @@ Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetSchema s )(ULONG * pcSchemas,  
+STDMETHOD (GetSchema s )(ULONG * pcSchemas,  
    GUID ** prgSchemas,  
    ULONG** prgRest);  
 ```  

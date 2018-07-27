@@ -4,11 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["IRowsetUpdateImpl", "ATL.IRowsetUpdateImpl", "ATL::IRowsetUpdateImpl", "SetData", "IRowsetUpdateImpl::SetData", "IRowsetUpdateImpl.SetData", "ATL::IRowsetUpdateImpl::SetData",                              "ATL.IRowsetUpdateImpl.SetData", "ATL.IRowsetUpdateImpl.GetOriginalData", "IRowsetUpdateImpl.GetOriginalData", "GetOriginalData", "ATL::IRowsetUpdateImpl::GetOriginalData", "IRowsetUpdateImpl::GetOriginalData",
-    "IRowsetUpdateImpl::GetPendingRows", "GetPendingRows", "IRowsetUpdateImpl.GetPendingRows", "ATL::IRowsetUpdateImpl::GetPendingRows", "ATL.IRowsetUpdateImpl.GetPendingRows", "ATL.IRowsetUpdateImpl.GetRowStatus", "IRowsetUpdateImpl::GetRowStatus", "IRowsetUpdateImpl.GetRowStatus", "ATL::IRowsetUpdateImpl::GetRowStatus", "GetRowStatus", "ATL.IRowsetUpdateImpl.Undo", "ATL::IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl.Undo", "ATL::IRowsetUpdateImpl::Update", "IRowsetUpdateImpl::Update", "IRowsetUpdateImpl.Update", "ATL.IRowsetUpdateImpl.Update", "IRowsetUpdateImpl::IsUpdateAllowed", "IRowsetUpdateImpl.IsUpdateAllowed", "IsUpdateAllowed", "IRowsetUpdateImpl.m_mapCachedData", "IRowsetUpdateImpl::m_mapCachedData", "m_mapCachedData"]
+f1_keywords: ["IRowsetUpdateImpl", "ATL.IRowsetUpdateImpl", "ATL::IRowsetUpdateImpl", "SetData", "IRowsetUpdateImpl::SetData", "IRowsetUpdateImpl.SetData", "ATL::IRowsetUpdateImpl::SetData", "ATL.IRowsetUpdateImpl.SetData", "ATL.IRowsetUpdateImpl.GetOriginalData", "IRowsetUpdateImpl.GetOriginalData", "GetOriginalData", "ATL::IRowsetUpdateImpl::GetOriginalData", "IRowsetUpdateImpl::GetOriginalData", "IRowsetUpdateImpl::GetPendingRows", "GetPendingRows", "IRowsetUpdateImpl.GetPendingRows", "ATL::IRowsetUpdateImpl::GetPendingRows", "ATL.IRowsetUpdateImpl.GetPendingRows", "ATL.IRowsetUpdateImpl.GetRowStatus", "IRowsetUpdateImpl::GetRowStatus", "IRowsetUpdateImpl.GetRowStatus", "ATL::IRowsetUpdateImpl::GetRowStatus", "GetRowStatus", "ATL.IRowsetUpdateImpl.Undo", "ATL::IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl::Undo", "IRowsetUpdateImpl.Undo", "ATL::IRowsetUpdateImpl::Update", "IRowsetUpdateImpl::Update", "IRowsetUpdateImpl.Update", "ATL.IRowsetUpdateImpl.Update", "IRowsetUpdateImpl::IsUpdateAllowed", "IRowsetUpdateImpl.IsUpdateAllowed", "IsUpdateAllowed", "IRowsetUpdateImpl.m_mapCachedData", "IRowsetUpdateImpl::m_mapCachedData", "m_mapCachedData"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["providers, updatable", "IRowsetUpdateImpl class", "updatable providers, deferred update", "SetData method", "GetOriginalData method", "GetPendingRows method", "GetRowStatus method",
-    "Undo method", "Update method", "IsUpdateAllowed method", "m_mapCachedData"]
+helpviewer_keywords: ["providers, updatable", "IRowsetUpdateImpl class", "updatable providers, deferred update", "SetData method", "GetOriginalData method", "GetPendingRows method", "GetRowStatus method", "Undo method", "Update method", "IsUpdateAllowed method", "m_mapCachedData"]
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
 author: "mikeblome"
 ms.author: "mblome"
@@ -105,7 +103,7 @@ Sets data values in one or more columns.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (SetData )(HROW hRow,  
+STDMETHOD (SetData )(HROW hRow,  
    HACCESSOR hAccessor,  
    void* pSrcData);  
 ```  
@@ -122,7 +120,7 @@ Gets the data most recently transmitted to or obtained from the data source, ign
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetOriginalData )(HROW hRow,  
+STDMETHOD (GetOriginalData )(HROW hRow,  
    HACCESSOR hAccessor,  
    void* pData);  
 ```  
@@ -136,7 +134,7 @@ Returns a list of rows with pending changes.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,  
+STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,  
    DBPENDINGSTATUS dwRowStatus,  
    DBCOUNTITEM* pcPendingRows,  
    HROW** prgPendingRows,  
@@ -158,7 +156,7 @@ Returns the status of specified rows.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,  
+STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBPENDINGSTATUS rgPendingStatus[]);  
@@ -176,7 +174,7 @@ Undoes any changes to the row since the last fetch or update.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (Undo )(HCHAPTER /* hReserved */,  
+STDMETHOD (Undo )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[ ],  
    DBCOUNTITEM* pcRowsUndone,  
@@ -202,7 +200,7 @@ Transmits any changes made to the row since the last fetch or update.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (Update )(HCHAPTER /* hReserved */,  
+STDMETHOD (Update )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBCOUNTITEM* pcRows,  
@@ -249,7 +247,7 @@ A map containing the original data for the deferred operation.
 ### Syntax  
   
 ```cpp
-      CAtlMap<   
+CAtlMap<   
    HROW hRow,    
    Storage* pData   
 >   
