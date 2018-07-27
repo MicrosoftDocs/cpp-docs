@@ -18,13 +18,13 @@ Find the property group and property ID for the property you want. For more info
   
  Create a [CDBPropSet](../../data/oledb/cdbpropset-class.md) object using the property group as the parameter to the constructor. For example:  
   
-```  
+```cpp  
 CDBPropSet propset(DBPROPSET_ROWSET);  
 ```  
   
  Call [AddProperty](../../data/oledb/cdbpropset-addproperty.md), passing it the property ID and a value to be assigned to the property. The type of the value depends on the property you are using.  
   
-```  
+```cpp  
 CDBPropSet propset(DBPROPSET_ROWSET);  
 
 propset.AddProperty(DBPROP_IRowsetChange, true);  
@@ -32,9 +32,9 @@ propset.AddProperty(DBPROP_IRowsetChange, true);
 propset.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_INSERT | DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_DELETE);  
 ```  
   
- Use the `IRowset` interface to call **GetProperties**. Pass the property set as a parameter. Here is the final code:  
+ Use the `IRowset` interface to call `GetProperties`. Pass the property set as a parameter. Here is the final code:  
   
-```  
+```cpp  
 CAgentRowset<CMyProviderCommand>* pRowset = (CAgentRowset<CMyProviderCommand>*) pThis;  
   
 CComQIPtr<IRowsetInfo, &IID_IRowsetInfo> spRowsetProps = pRowset;  
