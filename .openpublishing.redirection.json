@@ -1876,6 +1876,111 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/data/oledb/irowsetinfoimpl-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/irowsetinfoimpl-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetinfoimpl-getreferencedrowset.md",
+            "redirect_url": "/cpp/data/oledb/irowsetinfoimpl-class#getreferencedrowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetinfoimpl-getspecification.md",
+            "redirect_url": "/cpp/data/oledb/irowsetinfoimpl-class#getspecification",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-compare.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#compare",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-getrowsat.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#getrowsat",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-getrowsbybookmark.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#getrowsbybookmark",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-hash.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#hash",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetlocateimpl-m-rgbookmarks.md",
+            "redirect_url": "/cpp/data/oledb/irowsetlocateimpl-class#rgbookmarks",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifycp-fire-onfieldchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifycp-class#onfieldchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifycp-fire-onrowchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifycp-class#onrowchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetnotifycp-fire-onrowsetchange.md",
+            "redirect_url": "/cpp/data/oledb/irowsetnotifycp-class#onrowsetchange",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-getpendingrows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#getpendingrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-getoriginaldata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#getoriginaldata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-getrowstatus.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#getrowstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-isupdateallowed.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#isupdateallowed",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-m-mapcacheddata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#mapcacheddata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-setdata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#setdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-undo.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#undo",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetupdateimpl-update.md",
+            "redirect_url": "/cpp/data/oledb/irowsetupdateimpl-class#update",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/isessionpropertiesimpl-getproperties.md",
+            "redirect_url": "/cpp/data/oledb/isessionpropertiesimpl-class#getproperties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/isessionpropertiesimpl-setproperties.md",
+            "redirect_url": "/cpp/data/oledb/isessionpropertiesimpl-class#setproperties",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/data/oledb/igetdatasourceimpl-getdatasource.md",
             "redirect_url": "/cpp/data/oledb/igetdatasourceimpl-class#getdatasource",
             "redirect_document_id": false
@@ -1908,6 +2013,196 @@
         {
             "source_path": "docs/data/oledb/irowsetchangeimpl-setdata.md",
             "redirect_url": "/cpp/data/oledb/irowsetchangeimpl-class#setdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetcreatorimpl-setsite.md",
+            "redirect_url": "/cpp/data/oledb/irowsetcreatorimpl-class#setsite",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetidentityimpl-issamerow.md",
+            "redirect_url": "/cpp/data/oledb/irowsetidentityimpl-class#issamerow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-addrefrows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#addrefrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-createrow.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#createrow",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-getdata.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#getdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-getdbstatus.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#getdbstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-getnextrows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#getnextrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-irowsetimpl.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#irowsetimpl",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-bcanfetchback.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#bcanfetchback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-bcanscrollback.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#bcanscrollback",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-breset.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#breset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-irowset.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#irowset",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-m-rgrowhandles.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#rgrowhandles",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-refrows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#refrows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-releaserows.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#releaserows",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-restartposition.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#restartposition",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/irowsetimpl-setdbstatus.md",
+            "redirect_url": "/cpp/data/oledb/irowsetimpl-class#setdbstatus",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-property-set.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_property_set",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-property-set-ex.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_property_set_ex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-propset-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_propset_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-provider-column-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_provider_column_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/begin-schema-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#begin_schema_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/chain-property-set.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#chain_property_set",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-property-set.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#end_property_set",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-propset-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#end_propset_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-provider-column-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#end_provider_column_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/end-schema-map.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#end_schema_map",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-gn.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_gn",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-fixed.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_fixed",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-str.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_str",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-type-length.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_type_length",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/provider-column-entry-wstr.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#provider_column_entry_wstr",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/property-info-entry.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#property_info_entry",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/property-info-entry-ex.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#property_info_entry_ex",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/property-info-entry-value.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#property_info_entry_value",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/data/oledb/schema-entry.md",
+            "redirect_url": "/cpp/data/oledb/macros-for-ole-db-provider-templates#schema_entry",
             "redirect_document_id": false
         },
         {
