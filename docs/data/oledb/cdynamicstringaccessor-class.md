@@ -18,11 +18,10 @@ Allows you to access a data source when you have no knowledge of the database sc
 ## Syntax  
   
 ```cpp
-      template< typename BaseType, DBTYPEENUM OleDbType >  
+template< typename BaseType, DBTYPEENUM OleDbType >  
 class CDynamicStringAccessorT : public CDynamicAccessor  
 ```  
 
-  
 ## Requirements  
  **Header**: atldbcli.h 
 
@@ -52,7 +51,7 @@ Retrieves the specified column data as a string.
 ### Syntax  
   
 ```cpp
-      BaseType* GetString(DBORDINAL nColumn) const throw();  
+BaseType* GetString(DBORDINAL nColumn) const throw();  
 
 BaseType* GetString(const CHAR* pColumnName) const throw();  
 
@@ -79,12 +78,10 @@ Sets the specified column data as a string.
   
 ```cpp
 HRESULT SetString(DBORDINAL nColumn,  
-  BaseType* data) throw();  
-
+   BaseType* data) throw();  
 
 HRESULT SetString(const CHAR* pColumnName,  
    BaseType* data) throw();  
-
 
 HRESULT SetString(const WCHAR* pColumnName,  
    BaseType* data) throw();  

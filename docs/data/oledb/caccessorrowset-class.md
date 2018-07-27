@@ -4,13 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["CAccessorRowset", "ATL.CAccessorRowset", "ATL::CAccessorRowset", "CAccessorRowset.Bind", "CAccessorRowset::Bind",
-    "CAccessorRowset::CAccessorRowset", "CAccessorRowset.CAccessorRowset", "CAccessorRowset", "ATL.CAccessorRowset.CAccessorRowset", "ATL::CAccessorRowset::CAccessorRowset",
-    "CAccessorRowset.Close", "CAccessorRowset::Close", "CAccessorRowset::FreeRecordMemory", "CAccessorRowset.FreeRecordMemory", "FreeRecordMemory",
-    "GetColumnInfo", "CAccessorRowset.GetColumnInfo", "CAccessorRowset::GetColumnInfo"]
+f1_keywords: ["CAccessorRowset", "ATL.CAccessorRowset", "ATL::CAccessorRowset", "CAccessorRowset.Bind", "CAccessorRowset::Bind", "CAccessorRowset::CAccessorRowset", "CAccessorRowset.CAccessorRowset", "CAccessorRowset", "ATL.CAccessorRowset.CAccessorRowset", "ATL::CAccessorRowset::CAccessorRowset", "CAccessorRowset.Close", "CAccessorRowset::Close", "CAccessorRowset::FreeRecordMemory", "CAccessorRowset.FreeRecordMemory", "FreeRecordMemory", "GetColumnInfo", "CAccessorRowset.GetColumnInfo", "CAccessorRowset::GetColumnInfo"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CAccessorRowset class", "CAccessorRowset class, methods", "CAccessorRowset class, members", "Bind method", "CAccessorRowset class, constructor",
-    "Close method", "FreeRecordMemory method", "GetColumnInfo method"]
+helpviewer_keywords: ["CAccessorRowset class", "CAccessorRowset class, methods", "CAccessorRowset class, members", "Bind method", "CAccessorRowset class, constructor", "Close method", "FreeRecordMemory method", "GetColumnInfo method"]
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
 author: "mikeblome"
 ms.author: "mblome"
@@ -23,7 +19,7 @@ Encapsulates a rowset and its associated accessors in a single class.
 
 ```cpp
 template <class TAccessor = CNoAccessor, 
-          template <typename T> class TRowset = CRowset>  
+   template <typename T> class TRowset = CRowset>  
 class CAccessorRowset : public TAccessor, public TRowset<TAccessor>  
 ```  
   
@@ -59,7 +55,6 @@ Creates the bindings if you specified `bBind` as **false** in [CCommand::Open](.
   
 ```cpp
 HRESULT Bind();  
-  
 ```  
   
 ### Return Value  
@@ -72,7 +67,6 @@ Initializes the `CAccessorRowset` object.
   
 ```cpp
 CAccessorRowset();  
-  
 ```  
 
 ## <a name="close"></a> CAccessorRowset::Close
@@ -82,7 +76,6 @@ Releases any active accessors and the rowset.
   
 ```cpp
 void Close();  
-  
 ```  
   
 ### Remarks  
@@ -95,7 +88,6 @@ Frees any columns in the current record that need to be freed.
   
 ```cpp
 void FreeRecordMemory();  
-  
 ```  
 
 ## <a name="getcolumninfo"></a> CAccessorRowset::GetColumnInfo
@@ -104,16 +96,16 @@ Gets column information from the opened rowset.
 ### Syntax  
   
 ```cpp
-HRESULT GetColumnInfo(DBORDINAL* pulColumns,  
-   DBCOLUMNINFO** ppColumnInfo,  
-   LPOLESTR* ppStrings) const;  
-
-HRESULT GetColumnInfo(DBORDINAL* pColumns,  
+HRESULT GetColumnInfo(DBORDINAL* pulColumns, 
+   DBCOLUMNINFO** ppColumnInfo, 
+   LPOLESTR* ppStrings) const; 
+    
+HRESULT GetColumnInfo(DBORDINAL* pColumns, 
    DBCOLUMNINFO** ppColumnInfo);  
 ```  
   
 #### Parameters  
- See [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/en-us/library/ms722704.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT.  
@@ -121,7 +113,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 ### Remarks  
  The user must free the returned column information and string buffer. Use the second version of this method when you use [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) and need to override the bindings.  
   
- For more information, see [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/en-us/library/ms722704.aspx) in the *OLE DB Programmer's Reference*.  
+ For more information, see [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
