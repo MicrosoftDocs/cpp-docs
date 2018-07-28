@@ -31,7 +31,7 @@ If you mix structured and C++ exceptions, be aware of these potential issues:
 
 - [Using setjmp or longjmp in C++ programs](../cpp/using-setjmp-longjmp.md)
 
-  See more information on the use of **setjmp** and **longjmp** in C++ programs.
+  See more information on the use of `setjmp` and `longjmp` in C++ programs.
 
 - [Handle structured exceptions in C++](../cpp/exception-handling-differences.md)
 
