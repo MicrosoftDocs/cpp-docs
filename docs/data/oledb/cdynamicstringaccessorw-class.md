@@ -24,7 +24,7 @@ typedef CDynamicStringAccessorT<WCHAR, DBTYPE_WSTR> CDynamicStringAccessorW;
 ## Remarks  
  They both request that the provider fetch all data accessed from the data store as string data, but `CDynamicStringAccessor` requests Unicode string data.  
   
- `CDynamicStringAccessorW` inherits **GetString** and `SetString` from `CDynamicStringAccessor`. When you use these methods in a `CDynamicStringAccessorW` object, ***BaseType*** is **WCHAR**.  
+ `CDynamicStringAccessorW` inherits `GetString` and `SetString` from `CDynamicStringAccessor`. When you use these methods in a `CDynamicStringAccessorW` object, ***BaseType*** is **WCHAR**.  
   
 ## Requirements  
  **Header**: atldbcli.h  

@@ -4,9 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ICommandImpl", "ICommandImpl::Cancel", "Cancel", "ICommandImpl.Cancel", "ICommandImpl::CancelExecution", "ATL::ICommandImpl::CancelExecution", "ATL.ICommandImpl.CancelExecution", "CancelExecution",        "ICommandImpl.CancelExecution", "ICommandImpl::CreateRowset", "ICommandImpl.CreateRowset", "CreateRowset", "ICommandImpl::Execute", "ICommandImpl.Execute", "ICommandImpl::GetDBSession", "GetDBSession",               "ICommandImpl.GetDBSession", "ATL.ICommandImpl.ICommandImpl", "ATL::ICommandImpl::ICommandImpl", "ICommandImpl", "ICommandImpl::ICommandImpl", "ICommandImpl.ICommandImpl", "ICommandImpl::m_bCancel",                  "ICommandImpl.m_bCancel", "m_bCancel", "ATL::ICommandImpl::m_bCancel", "ATL.ICommandImpl.m_bCancel", "ICommandImpl::m_bCancelWhenExecuting", "ICommandImpl.m_bCancelWhenExecuting",                                     "ATL::ICommandImpl::m_bCancelWhenExecuting", "m_bCancelWhenExecuting", "ATL.ICommandImpl.m_bCancelWhenExecuting", "ICommandImpl.m_bIsExecuting", "ATL::ICommandImpl::m_bIsExecuting", "m_bIsExecuting",                 "ATL.ICommandImpl.m_bIsExecuting", "ICommandImpl::m_bIsExecuting"]
+f1_keywords: ["ICommandImpl", "ICommandImpl::Cancel", "Cancel", "ICommandImpl.Cancel", "ICommandImpl::CancelExecution", "ATL::ICommandImpl::CancelExecution", "ATL.ICommandImpl.CancelExecution", "CancelExecution", "ICommandImpl.CancelExecution", "ICommandImpl::CreateRowset", "ICommandImpl.CreateRowset", "CreateRowset", "ICommandImpl::Execute", "ICommandImpl.Execute", "ICommandImpl::GetDBSession", "GetDBSession", "ICommandImpl.GetDBSession", "ATL.ICommandImpl.ICommandImpl", "ATL::ICommandImpl::ICommandImpl", "ICommandImpl", "ICommandImpl::ICommandImpl", "ICommandImpl.ICommandImpl", "ICommandImpl::m_bCancel", "ICommandImpl.m_bCancel", "m_bCancel", "ATL::ICommandImpl::m_bCancel", "ATL.ICommandImpl.m_bCancel", "ICommandImpl::m_bCancelWhenExecuting", "ICommandImpl.m_bCancelWhenExecuting",                                     "ATL::ICommandImpl::m_bCancelWhenExecuting", "m_bCancelWhenExecuting", "ATL.ICommandImpl.m_bCancelWhenExecuting", "ICommandImpl.m_bIsExecuting", "ATL::ICommandImpl::m_bIsExecuting", "m_bIsExecuting", "ATL.ICommandImpl.m_bIsExecuting", "ICommandImpl::m_bIsExecuting"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ICommandImpl class", "Cancel method", "CancelExecution method", "CreateRowset method", "Execute method", "GetDBSession method", "ICommandImpl constructor", "ICommandImpl class, constructor",       "m_bCancel", "m_bCancelWhenExecuting", "m_bIsExecuting"]
+helpviewer_keywords: ["ICommandImpl class", "Cancel method", "CancelExecution method", "CreateRowset method", "Execute method", "GetDBSession method", "ICommandImpl constructor", "ICommandImpl class, constructor", "m_bCancel", "m_bCancelWhenExecuting", "m_bIsExecuting"]
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
 author: "mikeblome"
 ms.author: "mblome"
@@ -63,7 +63,6 @@ Cancels the current command execution.
   
 ```cpp
 STDMETHOD(Cancel)();  
-  
 ```  
   
 ### Remarks  
@@ -76,7 +75,6 @@ Cancels the current command execution.
   
 ```cpp
 HRESULT CancelExecution();  
-  
 ```  
 
 ## <a name="createrowset"></a> ICommandImpl::CreateRowset
@@ -85,8 +83,7 @@ Called by [Execute](../../data/oledb/icommandimpl-execute.md) to create a single
 ### Syntax  
   
 ```cpp
-      template template <class RowsetClass  
-      >  
+template template <class RowsetClass>  
 HRESULT CreateRowset(IUnknown* pUnkOuter,  
    REFIID riid,  
    DBPARAMS* pParams,  
@@ -152,7 +149,7 @@ Returns an interface pointer to the session that created the command.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetDBSession) (REFIID riid,  
+STDMETHOD (GetDBSession) (REFIID riid,  
    IUnknown** ppSession);  
 ```  
   
@@ -169,7 +166,6 @@ The constructor.
   
 ```cpp
 ICommandImpl();  
-  
 ```  
 
 ## <a name="bcancel"></a> ICommandImpl::m_bCancel
@@ -179,7 +175,6 @@ Indicates whether the command is canceled.
   
 ```cpp
 unsigned m_bCancel:1;  
-  
 ```  
   
 ### Remarks  
@@ -192,7 +187,6 @@ Indicates whether the command can be canceled when executing.
   
 ```cpp
 unsigned m_bCancelWhenExecuting:1;  
-  
 ```  
   
 ### Remarks  
@@ -205,7 +199,6 @@ Indicates whether the command is currently executing.
   
 ```cpp
 unsigned m_bIsExecuting:1;  
-  
 ```  
   
 ### Remarks  

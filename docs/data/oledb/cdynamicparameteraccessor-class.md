@@ -4,21 +4,10 @@ ms.custom: ""
 ms.date: "02/14/2018"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL.CDynamicParameterAccessor", "ATL::CDynamicParameterAccessor", "CDynamicParameterAccessor",
-    "CDynamicParameterAccessor::CDynamicParameterAccessor", "CDynamicParameterAccessor.CDynamicParameterAccessor", 
-    "CDynamicParameterAccessor::GetParam", "ATL.CDynamicParameterAccessor.GetParam", "CDynamicParameterAccessor::GetParam<ctype>", "CDynamicParameterAccessor.GetParam", "GetParam", "ATL::CDynamicParameterAccessor::GetParam<ctype>", "ATL::CDynamicParameterAccessor::GetParam",
-    "ATL::CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor.GetParamCount", "GetParamCount", "ATL.CDynamicParameterAccessor.GetParamCount",
-    "GetParamIO", "CDynamicParameterAccessor::GetParamIO", "ATL.CDynamicParameterAccessor.GetParamIO", "CDynamicParameterAccessor.GetParamIO", "ATL::CDynamicParameterAccessor::GetParamIO",
-    "ATL::CDynamicParameterAccessor::GetParamLength", "ATL.CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor::GetParamLength", "GetParamLength", "CDynamicParameterAccessor::GetParamName", "ATL.CDynamicParameterAccessor.GetParamName", "GetParamName", "CDynamicParameterAccessor.GetParamName", "ATL::CDynamicParameterAccessor::GetParamName",
-    "CDynamicParameterAccessor::GetParamStatus", "CDynamicParameterAccessor.GetParamStatus", "ATL.CDynamicParameterAccessor.GetParamStatus", "ATL::CDynamicParameterAccessor::GetParamStatus", "GetParamStatus", "CDynamicParameterAccessor.GetParamString", "GetParamString", "CDynamicParameterAccessor::GetParamString", "ATL.CDynamicParameterAccessor.GetParamString", "ATL::CDynamicParameterAccessor::GetParamString",
-    "CDynamicParameterAccessor.GetParamType", "CDynamicParameterAccessor:GetParamType", "CDynamicParameterAccessor::GetParamType", "ATL.CDynamicParameterAccessor.GetParamType", "GetParamType", "ATL::CDynamicParameterAccessor::GetParamType",
-    "ATL::CDynamicParameterAccessor::SetParam", "ATL::CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor.SetParam", "ATL.CDynamicParameterAccessor.SetParam", "SetParam", "CDynamicParameterAccessor:SetParam", "CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor::SetParam",
-    "ATL::CDynamicParameterAccessor::SetParamLength", "CDynamicParameterAccessor.SetParamLength", "ATL.CDynamicParameterAccessor.SetParamLength", "CDynamicParameterAccessor::SetParamLength", "SetParamLength", "CDynamicParameterAccessor::SetParamStatus", "ATL.CDynamicParameterAccessor.SetParamStatus", "ATL::CDynamicParameterAccessor::SetParamStatus", "CDynamicParameterAccessor.SetParamStatus", "SetParamStatus",
-    "ATL.CDynamicParameterAccessor.SetParamString", "ATL::CDynamicParameterAccessor::SetParamString", "SetParamString", "CDynamicParameterAccessor::SetParamString", "CDynamicParameterAccessor.SetParamString"]
+f1_keywords: ["ATL.CDynamicParameterAccessor", "ATL::CDynamicParameterAccessor", "CDynamicParameterAccessor", "CDynamicParameterAccessor::CDynamicParameterAccessor", "CDynamicParameterAccessor.CDynamicParameterAccessor", "CDynamicParameterAccessor::GetParam", "ATL.CDynamicParameterAccessor.GetParam", "CDynamicParameterAccessor::GetParam<ctype>", "CDynamicParameterAccessor.GetParam", "GetParam", "ATL::CDynamicParameterAccessor::GetParam<ctype>", "ATL::CDynamicParameterAccessor::GetParam", "ATL::CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor::GetParamCount", "CDynamicParameterAccessor.GetParamCount", "GetParamCount", "ATL.CDynamicParameterAccessor.GetParamCount", "GetParamIO", "CDynamicParameterAccessor::GetParamIO", "ATL.CDynamicParameterAccessor.GetParamIO", "CDynamicParameterAccessor.GetParamIO", "ATL::CDynamicParameterAccessor::GetParamIO", "ATL::CDynamicParameterAccessor::GetParamLength", "ATL.CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor.GetParamLength", "CDynamicParameterAccessor::GetParamLength", "GetParamLength", "CDynamicParameterAccessor::GetParamName", "ATL.CDynamicParameterAccessor.GetParamName", "GetParamName", "CDynamicParameterAccessor.GetParamName", "ATL::CDynamicParameterAccessor::GetParamName", "CDynamicParameterAccessor::GetParamStatus", "CDynamicParameterAccessor.GetParamStatus","ATL.CDynamicParameterAccessor.GetParamStatus", "ATL::CDynamicParameterAccessor::GetParamStatus", "GetParamStatus", "CDynamicParameterAccessor.GetParamString", "GetParamString", "CDynamicParameterAccessor::GetParamString", "ATL.CDynamicParameterAccessor.GetParamString", "ATL::CDynamicParameterAccessor::GetParamString",  "CDynamicParameterAccessor.GetParamType", "CDynamicParameterAccessor:GetParamType", "CDynamicParameterAccessor::GetParamType", "ATL.CDynamicParameterAccessor.GetParamType", "GetParamType", "ATL::CDynamicParameterAccessor::GetParamType", "ATL::CDynamicParameterAccessor::SetParam", "ATL::CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor.SetParam", "ATL.CDynamicParameterAccessor.SetParam", "SetParam", "CDynamicParameterAccessor:SetParam", "CDynamicParameterAccessor::SetParam<ctype>", "CDynamicParameterAccessor::SetParam", "ATL::CDynamicParameterAccessor::SetParamLength", "CDynamicParameterAccessor.SetParamLength", "ATL.CDynamicParameterAccessor.SetParamLength", "CDynamicParameterAccessor::SetParamLength", "SetParamLength", "CDynamicParameterAccessor::SetParamStatus", "ATL.CDynamicParameterAccessor.SetParamStatus", "ATL::CDynamicParameterAccessor::SetParamStatus", "CDynamicParameterAccessor.SetParamStatus", "SetParamStatus", "ATL.CDynamicParameterAccessor.SetParamString", "ATL::CDynamicParameterAccessor::SetParamString", "SetParamString", "CDynamicParameterAccessor::SetParamString", "CDynamicParameterAccessor.SetParamString"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CDynamicParameterAccessor class", "CDynamicParameterAccessor class, constructor", "CDynamicParameterAccessor method", "GetParam method", "GetParamCount method",
-    "GetParamIO method", "GetParamLength method", "GetParamName method", "GetParamStatus method", "GetParamString method", "GetParamType method", "SetParam method",
-    "SetParamLength method", "SetParamStatus method", "SetParamString method"]
+helpviewer_keywords: ["CDynamicParameterAccessor class", "CDynamicParameterAccessor class, constructor", "CDynamicParameterAccessor method", "GetParam method", 
+  "GetParamCount method", "GetParamIO method", "GetParamLength method", "GetParamName method", "GetParamStatus method", "GetParamString method", "GetParamType method", "SetParam method", "SetParamLength method", "SetParamStatus method", "SetParamString method"]
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
 author: "mikeblome"
 ms.author: "mblome"
@@ -72,7 +61,7 @@ The constructor.
 ### Syntax  
   
 ```cpp
-      typedef CDynamicParameterAccessor _ParamClass;  
+typedef CDynamicParameterAccessor _ParamClass;  
 CDynamicParameterAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
    DBLENGTH nBlobSize = 8000 )   
    : CDynamicAccessor(eBlobHandling, nBlobSize )  
@@ -95,7 +84,7 @@ Retrieves the nonstring data for a specified parameter from the parameter buffer
   
 ```cpp
 template <class ctype>bool GetParam(DBORDINAL nParam,   
-  ctype* pData) const throw();  
+   ctype* pData) const throw();  
 
 template <class ctype> bool GetParam(TCHAR* pParamName,   
    ctype* pData) const throw();  
@@ -130,7 +119,6 @@ Retrieves the number of parameters stored in the buffer.
   
 ```cpp
 DB_UPARAMS GetParamCount() const throw();  
-  
 ```  
   
 ### Return Value  
@@ -173,7 +161,7 @@ Retrieves the length of the specified parameter stored in the buffer.
   
 ```cpp
 bool GetParamLength(DBORDINAL nParam,  
-  DBLENGTH* pLength);  
+   DBLENGTH* pLength);  
 
 DBLENGTH* GetParamLength(DBORDINAL nParam) const throw();  
 ```  
@@ -194,7 +182,7 @@ Retrieves the name of the specified parameter.
 ### Syntax  
   
 ```cpp
-      LPOLESTR GetParamName(DBORDINAL nParam) const throw();  
+LPOLESTR GetParamName(DBORDINAL nParam) const throw();  
 ```  
   
 #### Parameters  
@@ -211,7 +199,7 @@ Retrieves the status of the specified parameter stored in the buffer.
   
 ```cpp
 bool GetParamStatus(DBORDINAL nParam,  
-  DBSTATUS* pStatus);  
+   DBSTATUS* pStatus);  
 
 DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();  
 ```  
@@ -233,11 +221,17 @@ Retrieves the string data of the specified parameter stored in the buffer.
   
 ```cpp
 bool GetParamString(DBORDINAL nParam,  
-  CSimpleStringA& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
-  CSimpleStringW& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
-  CHAR* pBuffer,  
-   size_t* pMaxLen) throw();bool GetParamString(DBORDINAL nParam,  
-  WCHAR* pBuffer,  
+   CSimpleStringA& strOutput) throw();
+
+bool GetParamString(DBORDINAL nParam,  
+   CSimpleStringW& strOutput) throw();
+   
+bool GetParamString(DBORDINAL nParam,  
+   CHAR* pBuffer,  
+   size_t* pMaxLen) throw();
+
+bool GetParamString(DBORDINAL nParam,  
+   WCHAR* pBuffer,  
    size_t* pMaxLen) throw();  
 ```  
   
@@ -272,7 +266,7 @@ Retrieves the data type of a specified parameter.
   
 ```cpp
 bool GetParamType(DBORDINAL nParam,  
-  DBTYPE* pType) const throw();  
+   DBTYPE* pType) const throw();  
 ```  
   
 #### Parameters  
@@ -293,13 +287,13 @@ Sets the parameter buffer using the specified (non-string) data.
 ```cpp
 template <class ctype>
 bool SetParam(DBORDINAL nParam,  
-               constctype* pData,  
-               DBSTATUS status = DBSTATUS_S_OK) throw();  
+   constctype* pData,  
+   DBSTATUS status = DBSTATUS_S_OK) throw();  
 
 template <class ctype>  
 bool SetParam(TCHAR* pParamName,  
-               const ctype* pData,  
-               DBSTATUS status = DBSTATUS_S_OK) throw();  
+   const ctype* pData,  
+   DBSTATUS status = DBSTATUS_S_OK) throw();  
 ```  
   
 #### Parameters  
