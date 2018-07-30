@@ -4,19 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["cliext::priority_queue", "cliext::priority_queue::assign", "cliext::priority_queue::const_reference", "cliext::priority_queue::container_type", "cliext::priority_queue::difference_type", 
-    "cliext::priority_queue::empty", "cliext::priority_queue::generic_container", "cliext::priority_queue::generic_value", "cliext::priority_queue::get_container", 
-    "cliext::priority_queue::operator=", "cliext::priority_queue::pop", "cliext::priority_queue::priority_queue", "cliext::priority_queue::push", 
-    "cliext::priority_queue::reference", "cliext::priority_queue::size", "cliext::priority_queue::size_type", "cliext::priority_queue::to_array", 
-    "cliext::priority_queue::top", "cliext::priority_queue::top_item", "cliext::priority_queue::value_comp", "cliext::priority_queue::value_compare", 
-    "cliext::priority_queue::value_type" ]
+f1_keywords: ["cliext::priority_queue", "cliext::priority_queue::assign", "cliext::priority_queue::const_reference", "cliext::priority_queue::container_type", "cliext::priority_queue::difference_type", "cliext::priority_queue::empty", "cliext::priority_queue::generic_container", "cliext::priority_queue::generic_value", "cliext::priority_queue::get_container", "cliext::priority_queue::operator=", "cliext::priority_queue::pop", "cliext::priority_queue::priority_queue", "cliext::priority_queue::push", "cliext::priority_queue::reference", "cliext::priority_queue::size", "cliext::priority_queue::size_type", "cliext::priority_queue::to_array", "cliext::priority_queue::top", "cliext::priority_queue::top_item", "cliext::priority_queue::value_comp", "cliext::priority_queue::value_compare", "cliext::priority_queue::value_type" ]
 dev_langs: ["C++"]
-helpviewer_keywords: ["priority_queue class [STL/CLR]", "<queue> header [STL/CLR]", "<cliext/queue> header [STL/CLR]", "assign member [STL/CLR]", "const_reference member [STL/CLR]", 
-    "container_type member [STL/CLR]", "difference_type member [STL/CLR]",  "empty member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", 
-    "operator= member [STL/CLR]", "pop member [STL/CLR]", "priority_queue member [STL/CLR]", "push member [STL/CLR]", 
-    "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "to_array member [STL/CLR]", 
-    "top member [STL/CLR]", "top_item member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", 
-    "value_type member [STL/CLR]" ]
+helpviewer_keywords: ["priority_queue class [STL/CLR]", "<queue> header [STL/CLR]", "<cliext/queue> header [STL/CLR]", "assign member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]",  "empty member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", "priority_queue member [STL/CLR]", "push member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "to_array member [STL/CLR]", "top member [STL/CLR]", "top_item member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]" ]
 ms.assetid: 4d0000d3-68ff-4c4b-8157-7060540136f5
 author: "mikeblome"
 ms.author: "mblome"
@@ -25,11 +15,11 @@ ms.workload: ["cplusplus", "dotnet"]
 # priority_queue (STL/CLR)
 The template class describes an object that controls a varying-length ordered sequence of elements that has limited access. You use the container adapter `priority_queue` to manage an underlying container as a priority queue.  
   
- In the description below, `GValue` is the same as `Value` unless the latter is a ref type, in which case it is `Value^`. Similarly, `GContainer` is the same as `Container` unless the latter is a ref type, in which case it is `Container^`.  
+ In the description below, `GValue` is the same as *Value* unless the latter is a ref type, in which case it is `Value^`. Similarly, `GContainer` is the same as *Container* unless the latter is a ref type, in which case it is `Container^`.  
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     ref class priority_queue  
@@ -39,10 +29,10 @@ template<typename Value,
 ```  
   
 ### Parameters  
- Value  
+ *Value*  
  The type of an element in the controlled sequence.  
   
- Container  
+ *Container*  
  The type of the underlying container.  
   
 ## Requirements  
@@ -126,12 +116,12 @@ Replaces all elements.
   
 ### Syntax  
   
-```  
+```cpp  
 void assign(priority_queue<Value, Container>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container adapter to insert.  
   
 ### Remarks  
@@ -165,7 +155,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -178,7 +167,7 @@ The type of a constant reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
@@ -187,7 +176,7 @@ typedef value_type% const_reference;
   
 ### Example  
   
-```  
+```cpp  
 // cliext_priority_queue_const_reference.cpp   
 // compile with: /clr   
 #include <cliext/queue>   
@@ -209,7 +198,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -221,7 +209,7 @@ The type of the underlying container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Container value_type;  
 ```  
   
@@ -250,7 +238,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -262,7 +249,7 @@ The types of a signed distance between two elements.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
@@ -305,7 +292,6 @@ int main()
     System::Console::WriteLine("popping 3 = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -319,7 +305,7 @@ Tests whether no elements are present.
   
 ### Syntax  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
@@ -356,7 +342,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -372,7 +357,7 @@ The type of the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::IPriorityQueue<Value>  
     generic_container;  
 ```  
@@ -419,7 +404,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -434,7 +418,7 @@ The type of an element for use with the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
@@ -477,7 +461,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -491,7 +474,7 @@ Accesses the underlying container.
   
 ### Syntax  
   
-```  
+```cpp  
 container_type get_container();  
 ```  
   
@@ -519,7 +502,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -531,16 +513,16 @@ Replaces the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 priority_queue <Value, Container>% operator=(priority_queue <Value, Container>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container adapter to copy.  
   
 ### Remarks  
- The member operator copies `right` to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in `right`.  
+ The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.  
   
 ### Example  
   
@@ -569,8 +551,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -583,7 +564,7 @@ Removes the highest-proirity element.
   
 ### Syntax  
   
-```  
+```cpp  
 void pop();  
 ```  
   
@@ -617,7 +598,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -630,7 +610,7 @@ Constructs a container adapter object.
   
 ### Syntax  
   
-```  
+```cpp  
 priority_queue();  
 priority_queue(priority_queue<Value, Container> right);  
 priority_queue(priority_queue<Value, Container> right);  
@@ -647,19 +627,19 @@ template<typename InIt>
 ```  
   
 #### Parameters  
- cont  
+ *cont*  
  Container to copy.  
   
- first  
+ *first*  
  Beginning of range to insert.  
   
- last  
+ *last*  
  End of range to insert.  
   
- pred  
+ *pred*  
  Ordering predicate for the controlled sequence.  
   
- right  
+ *right*  
  Object or range to insert.  
   
 ### Remarks  
@@ -673,7 +653,7 @@ template<typename InIt>
   
  `priority_queue(priority_queue<Value, Container>% right);`  
   
- creates a wrapped container that is a copy of `right.get_container()`, with the ordering predicate `right.value_comp()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the queue object `right`, with the same ordering predicate.  
+ creates a wrapped container that is a copy of `right.get_container()`, with the ordering predicate `right.value_comp()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the queue object *right*, with the same ordering predicate.  
   
  The constructor:  
   
@@ -685,13 +665,13 @@ template<typename InIt>
   
  `explicit priority_queue(value_compare^ pred);`  
   
- creates an empty wrapped container, with the ordering predicate `pred`. You use it to specify an empty initial controlled sequence, with the specified ordering predicate.  
+ creates an empty wrapped container, with the ordering predicate *pred*. You use it to specify an empty initial controlled sequence, with the specified ordering predicate.  
   
  The constructor:  
   
  `priority_queue(value_compare^ pred, container_type cont);`  
   
- creates an empty wrapped container, with the ordering predicate `pred`, then pushes all the elements of `cont` You use it to specify an initial controlled sequence from an existing container, with the specified ordering predicate.  
+ creates an empty wrapped container, with the ordering predicate *pred*, then pushes all the elements of *cont* You use it to specify an initial controlled sequence from an existing container, with the specified ordering predicate.  
   
  The constructor:  
   
@@ -703,13 +683,13 @@ template<typename InIt>
   
  `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred);`  
   
- creates an empty wrapped container, with the ordering predicate `pred`, then pushes the sequence [`first`, `last`). You use it to specify an initial controlled sequence from a specified seqeuence, with the specified ordering predicate.  
+ creates an empty wrapped container, with the ordering predicate *pred*, then pushes the sequence [`first`, `last`). You use it to specify an initial controlled sequence from a specified seqeuence, with the specified ordering predicate.  
   
  The constructor:  
   
  `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred, container_type% cont);`  
   
- creates an empty wrapped container, with the ordering predicate `pred`, then pushes all the elements of `cont` plus the sequence [`first`, `last`). You use it to specify an initial controlled sequence from an existing container and a specified seqeuence, with the specified ordering predicate.  
+ creates an empty wrapped container, with the ordering predicate *pred*, then pushes all the elements of *cont* plus the sequence [`first`, `last`). You use it to specify an initial controlled sequence from an existing container and a specified seqeuence, with the specified ordering predicate.  
   
 ### Example  
   
@@ -793,7 +773,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -815,7 +794,7 @@ Adds a new element.
   
 ### Syntax  
   
-```  
+```cpp  
 void push(value_type val);  
 ```  
   
@@ -843,7 +822,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -855,7 +833,7 @@ The type of a reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
@@ -890,7 +868,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -903,7 +880,7 @@ Counts the number of elements.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
@@ -941,7 +918,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -956,7 +932,7 @@ The type of a signed distance between two element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
@@ -991,7 +967,6 @@ int main()
     System::Console::WriteLine("size difference = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1004,7 +979,7 @@ Copies the controlled sequence to a new array.
   
 ### Syntax  
   
-```  
+```cpp  
 cli::array<Value>^ to_array();  
 ```  
   
@@ -1040,7 +1015,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1053,7 +1027,7 @@ Accesses the highest-priority element.
   
 ### Syntax  
   
-```  
+```cpp  
 reference top();  
 ```  
   
@@ -1090,7 +1064,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
 
 ## <a name="top_item"></a> priority_queue::top_item (STL/CLR)
@@ -1098,7 +1071,7 @@ Accesses the highest-priority element.
   
 ### Syntax  
   
-```  
+```cpp  
 property value_type back_item;  
 ```  
   
@@ -1135,7 +1108,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1149,7 +1121,7 @@ Copies the ordering delegate for two elements.
   
 ### Syntax  
   
-```  
+```cpp  
 value_compare^ value_comp();  
 ```  
   
@@ -1189,7 +1161,6 @@ int main()
         vcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1207,7 +1178,7 @@ The ordering delegate for two values.
   
 ### Syntax  
   
-```  
+```cpp  
 binary_delegate<value_type, value_type, int> value_compare;  
 ```  
   
@@ -1247,7 +1218,6 @@ int main()
         vcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1265,12 +1235,12 @@ The type of an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Value value_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Value`.  
+ The type is a synonym for the template parameter *Value*.  
   
 ### Example  
   
@@ -1297,7 +1267,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
