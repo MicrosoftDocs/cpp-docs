@@ -4,27 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["<cliext/algorithm>", "cliext::adjacent_find", "cliext::binary_search", "cliext::copy", "cliext::copy_backward", "cliext::count", "cliext::count_if", "cliext::equal", "cliext::equal_range",
-    "cliext::fill", "cliext::fill_n", "cliext::find", "cliext::find_end", "cliext::find_first_of", "cliext::find_if", "cliext::for_each", "cliext::generate", "cliext::generate_n", "cliext::includes", 
-    "cliext::inplace_merge", "cliext::iter_swap", "cliext::lexicographical_compare", "cliext::lower_bound", "cliext::make_heap", "cliext::max", "cliext::max_element", "cliext::merge", "cliext::min", 
-    "cliext::min_element", "cliext::mismatch", "cliext::next_permutation", "cliext::nth_element", "cliext::partial_sort", "cliext::partial_sort_copy", "cliext::partition", "cliext::pop_heap", 
-    "cliext::prev_permutation", "cliext::push_heap", "cliext::random_shuffle", "cliext::remove", "cliext::remove_copy", "cliext::remove_copy_if", "cliext::remove_if", "cliext::replace", "cliext::replace_copy", 
-    "cliext::replace_copy_if", "cliext::replace_if", "cliext::reverse", "cliext::reverse_copy", "cliext::rotate", "cliext::rotate_copy", "cliext::search", "cliext::search_n", "cliext::set_difference", 
-    "cliext::set_intersection", "cliext::set_symmetric_difference", "cliext::set_union", "cliext::sort", "cliext::sort_heap", "cliext::stable_partition", "cliext::stable_sort", "cliext::swap", 
-    "cliext::swap_ranges", "cliext::transform", "cliext::unique", "cliext::unique_copy", "cliext::upper_bound"]
+f1_keywords: ["<cliext/algorithm>", "cliext::adjacent_find", "cliext::binary_search", "cliext::copy", "cliext::copy_backward", "cliext::count", "cliext::count_if", "cliext::equal", "cliext::equal_range", "cliext::fill", "cliext::fill_n", "cliext::find", "cliext::find_end", "cliext::find_first_of", "cliext::find_if", "cliext::for_each", "cliext::generate", "cliext::generate_n", "cliext::includes", "cliext::inplace_merge", "cliext::iter_swap", "cliext::lexicographical_compare", "cliext::lower_bound", "cliext::make_heap", "cliext::max", "cliext::max_element", "cliext::merge", "cliext::min", "cliext::min_element", "cliext::mismatch", "cliext::next_permutation", "cliext::nth_element", "cliext::partial_sort", "cliext::partial_sort_copy", "cliext::partition", "cliext::pop_heap", "cliext::prev_permutation", "cliext::push_heap", "cliext::random_shuffle", "cliext::remove", "cliext::remove_copy", "cliext::remove_copy_if", "cliext::remove_if", "cliext::replace", "cliext::replace_copy",  "cliext::replace_copy_if", "cliext::replace_if", "cliext::reverse", "cliext::reverse_copy", "cliext::rotate", "cliext::rotate_copy", "cliext::search", "cliext::search_n", "cliext::set_difference", "cliext::set_intersection", "cliext::set_symmetric_difference", "cliext::set_union", "cliext::sort", "cliext::sort_heap", "cliext::stable_partition", "cliext::stable_sort", "cliext::swap", "cliext::swap_ranges", "cliext::transform", "cliext::unique", "cliext::unique_copy", "cliext::upper_bound"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["algorithm functions [STL/CLR]", "<algorithm> header [STL/CLR]", "<cliext/algorithm> header [STL/CLR]", "adjacent_find function", "binary_search function [STL/CLR]", "copy function [STL/CLR]",
-    "copy_backward function [STL/CLR]", "count function [STL/CLR]", "count_if function [STL/CLR]", "equal function [STL/CLR]", "equal_range function [STL/CLR]", "fill function", "fill_n function",
-    "find function [STL/CLR]", "find_end function [STL/CLR]", "find_first_of function [STL/CLR]", "find_if function [STL/CLR]", "for_each function [STL/CLR]", "generate function [STL/CLR]", 
-    "generate_n function [STL/CLR]", "includes function [STL/CLR]", "inplace_merge function [STL/CLR]", "iter_swap function [STL/CLR]", "lexicographical_compare function [STL/CLR]", "lower_bound function [STL/CLR]",
-     "make_heap function [STL/CLR]", "max function [STL/CLR]", "max_element function [STL/CLR]", "merge function [STL/CLR]", "min function [STL/CLR]", "min_element function [STL/CLR]", "mismatch function [STL/CLR]", 
-    "next_permutation function [STL/CLR]", "nth_element function [STL/CLR]", "partial_sort function [STL/CLR]", "partial_sort_copy function [STL/CLR]", "partition function [STL/CLR]", "pop_heap function [STL/CLR]", 
-    "prev_permutation function [STL/CLR]", "push_heap function [STL/CLR]", "random_shuffle function [STL/CLR]", "remove function [STL/CLR]", "remove_copy function [STL/CLR]", "remove_copy_if function [STL/CLR]", 
-    "remove_if function [STL/CLR]", "replace function [STL/CLR]", "replace_copy function [STL/CLR]", "replace_copy_if function [STL/CLR]", "replace_if function [STL/CLR]", "reverse function [STL/CLR]", 
-    "reverse_copy function [STL/CLR]", "rotate function [STL/CLR]", "rotate_copy function [STL/CLR]", "search function [STL/CLR]", "search_n function [STL/CLR]", "set_difference function [STL/CLR]", 
-    "set_intersection function [STL/CLR]", "set_symmetric_difference function [STL/CLR]", "set_union function [STL/CLR]", "sort function [STL/CLR]", "sort_heap function [STL/CLR]", 
-    "stable_partition function [STL/CLR]", "stable_sort function [STL/CLR]", "swap function [STL/CLR]", "swap_ranges function [STL/CLR]", "transform function [STL/CLR]", "unique function [STL/CLR]", 
-    "unique_copy function [STL/CLR]", "upper_bound function [STL/CLR]"]
+helpviewer_keywords: ["algorithm functions [STL/CLR]", "<algorithm> header [STL/CLR]", "<cliext/algorithm> header [STL/CLR]", "adjacent_find function", "binary_search function [STL/CLR]", "copy function [STL/CLR]", "copy_backward function [STL/CLR]", "count function [STL/CLR]", "count_if function [STL/CLR]", "equal function [STL/CLR]", "equal_range function [STL/CLR]", "fill function", "fill_n function", "find function [STL/CLR]", "find_end function [STL/CLR]", "find_first_of function [STL/CLR]", "find_if function [STL/CLR]", "for_each function [STL/CLR]", "generate function [STL/CLR]", "generate_n function [STL/CLR]", "includes function [STL/CLR]", "inplace_merge function [STL/CLR]", "iter_swap function [STL/CLR]", "lexicographical_compare function [STL/CLR]", "lower_bound function [STL/CLR]", "make_heap function [STL/CLR]", "max function [STL/CLR]", "max_element function [STL/CLR]", "merge function [STL/CLR]", "min function [STL/CLR]", "min_element function [STL/CLR]", "mismatch function [STL/CLR]", "next_permutation function [STL/CLR]", "nth_element function [STL/CLR]", "partial_sort function [STL/CLR]", "partial_sort_copy function [STL/CLR]", "partition function [STL/CLR]", "pop_heap function [STL/CLR]", "prev_permutation function [STL/CLR]", "push_heap function [STL/CLR]", "random_shuffle function [STL/CLR]", "remove function [STL/CLR]", "remove_copy function [STL/CLR]", "remove_copy_if function [STL/CLR]", "remove_if function [STL/CLR]", "replace function [STL/CLR]", "replace_copy function [STL/CLR]", "replace_copy_if function [STL/CLR]", "replace_if function [STL/CLR]", "reverse function [STL/CLR]", "reverse_copy function [STL/CLR]", "rotate function [STL/CLR]", "rotate_copy function [STL/CLR]", "search function [STL/CLR]", "search_n function [STL/CLR]", "set_difference function [STL/CLR]", "set_intersection function [STL/CLR]", "set_symmetric_difference function [STL/CLR]", "set_union function [STL/CLR]", "sort function [STL/CLR]", "sort_heap function [STL/CLR]", "stable_partition function [STL/CLR]", "stable_sort function [STL/CLR]", "swap function [STL/CLR]", "swap_ranges function [STL/CLR]", "transform function [STL/CLR]", "unique function [STL/CLR]", "unique_copy function [STL/CLR]", "upper_bound function [STL/CLR]"]
 ms.assetid: ee2718dc-a98d-40b8-8341-593fe7d2ac15
 author: "mikeblome"
 ms.author: "mblome"
@@ -35,7 +17,7 @@ Defines STL/CLR container template functions that perform algorithms.
   
 ## Syntax  
   
-```  
+```cpp  
 #include <cliext/algorithm>  
 ```  
 
@@ -122,7 +104,7 @@ Searches for two adjacent elements that are either equal or satisfy a specified 
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt> inline  
     _FwdIt adjacent_find(_FwdIt _First, _FwdIt _Last);  
 template<class _FwdIt, class _Pr> inline  
@@ -137,7 +119,7 @@ Tests whether there is an element in a sorted range that is equal to a specified
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Ty> inline  
     bool binary_search(_FwdIt _First, _FwdIt _Last, const _Ty% _Val);  
 template<class _FwdIt, class _Ty, class _Pr> inline  
@@ -153,7 +135,7 @@ Assigns the values of elements from a source range to a destination range, itera
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt> inline  
     _OutIt copy(_InIt _First, _InIt _Last, _OutIt _Dest);  
 ```  
@@ -166,7 +148,7 @@ Assigns the values of elements from a source range to a destination range, itera
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _BidIt1, class _BidIt2> inline  
     _BidIt2 copy_backward(_BidIt1 _First, _BidIt1 _Last,  
         _BidIt2 _Dest);  
@@ -180,7 +162,7 @@ Returns the number of elements in a range whose values match a specified value.
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _Ty> inline  
     typename iterator_traits<_InIt>::difference_type  
         count(_InIt _First, _InIt _Last, const _Ty% _Val);  
@@ -194,7 +176,7 @@ Returns the number of elements in a range whose values match a specified conditi
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _Pr> inline  
     typename iterator_traits<_InIt>::difference_type  
         count_if(_InIt _First, _InIt _Last, _Pr _Pred);  
@@ -208,7 +190,7 @@ Compares two ranges element by element either for equality or equivalence in a s
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2> inline  
     bool equal(_InIt1 _First1, _InIt1 _Last1, _InIt2 _First2);  
 template<class _InIt1, class _InIt2, class _Pr> inline  
@@ -224,7 +206,7 @@ Finds a pair of positions in an ordered range, the first less than or equivalent
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Ty> inline  
     _PAIR_TYPE(_FwdIt) equal_range(_FwdIt _First, _FwdIt _Last,  
         const _Ty% _Val);  
@@ -241,7 +223,7 @@ Assigns the same new value to every element in a specified range.
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Ty> inline  
     void fill(_FwdIt _First, _FwdIt _Last, const _Ty% _Val);  
 ```  
@@ -254,7 +236,7 @@ Assigns a new value to a specified number of elements in a range beginning with 
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _OutIt, class _Diff, class _Ty> inline  
     void fill_n(_OutIt _First, _Diff _Count, const _Ty% _Val);  
 ```  
@@ -267,7 +249,7 @@ Locates the position of the first occurrence of an element in a range that has a
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _Ty> inline  
     _InIt find(_InIt _First, _InIt _Last, const _Ty% _Val);  
 ```  
@@ -280,7 +262,7 @@ Looks in a range for the last subsequence that is identical to a specified seque
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt1, class _FwdIt2> inline  
     _FwdIt1 find_end(_FwdIt1 _First1, _FwdIt1 _Last1,  
         _FwdIt2 _First2, _FwdIt2 _Last2);  
@@ -297,7 +279,7 @@ Searches for the first occurrence of any of several values within a target range
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt1, class _FwdIt2> inline  
     _FwdIt1 find_first_of(_FwdIt1 _First1, _FwdIt1 _Last1,  
         _FwdIt2 _First2, _FwdIt2 _Last2);  
@@ -314,7 +296,7 @@ Locates the position of the first occurrence of an element in a range that satis
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _Pr> inline  
     _InIt find_if(_InIt _First, _InIt _Last, _Pr _Pred);  
 ```  
@@ -327,7 +309,7 @@ Applies a specified function object to each element in a forward order within a 
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _Fn1> inline  
     _Fn1 for_each(_InIt _First, _InIt _Last, _Fn1 _Func);  
 ```  
@@ -340,7 +322,7 @@ Assigns the values generated by a function object to each element in a range.
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Fn0> inline  
     void generate(_FwdIt _First, _FwdIt _Last, _Fn0 _Func);  
 ```  
@@ -353,7 +335,7 @@ Assigns the values generated by a function object to a specified number of eleme
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _OutIt, class _Diff, class _Fn0> inline  
     void generate_n(_OutIt _Dest, _Diff _Count, _Fn0 _Func);  
 ```  
@@ -366,7 +348,7 @@ Tests whether one sorted range contains all the elements contained in a second s
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2> inline  
     bool includes(_InIt1 _First1, _InIt1 _Last1,  
         _InIt2 _First2, _InIt2 _Last2);  
@@ -383,7 +365,7 @@ Combines the elements from two consecutive sorted ranges into a single sorted ra
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _BidIt> inline  
     void inplace_merge(_BidIt _First, _BidIt _Mid, _BidIt _Last);  
 template<class _BidIt, class _Pr> inline  
@@ -399,7 +381,7 @@ Exchanges two values referred to by a pair of specified iterators.
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt1, class _FwdIt2> inline  
     void iter_swap(_FwdIt1 _Left, _FwdIt2 _Right);  
 ```  
@@ -412,7 +394,7 @@ Compares element by element between two sequences to determine which is lesser o
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2> inline  
     bool lexicographical_compare(_InIt1 _First1, _InIt1 _Last1,  
         _InIt2 _First2, _InIt2 _Last2);  
@@ -429,7 +411,7 @@ Finds the position of the first element in an ordered range that has a value les
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Ty> inline  
     _FwdIt lower_bound(_FwdIt _First, _FwdIt _Last, const _Ty% _Val);  
 template<class _FwdIt, class _Ty, class _Pr> inline  
@@ -445,7 +427,7 @@ Converts elements from a specified range into a heap in which the first element 
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _RanIt> inline  
     void make_heap(_RanIt _First, _RanIt _Last);  
 template<class _RanIt, class _Pr> inline  
@@ -460,7 +442,7 @@ Compares two objects and returns the larger of the two, where the ordering crite
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _Ty> inline  
     const _Ty max(const _Ty% _Left, const _Ty% _Right);  
 template<class _Ty, class _Pr> inline  
@@ -475,7 +457,7 @@ Finds the first occurrence of largest element in a specified range where the ord
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt> inline  
     _FwdIt max_element(_FwdIt _First, _FwdIt _Last);  
 template<class _FwdIt, class _Pr> inline  
@@ -490,7 +472,7 @@ Combines all the elements from two sorted source ranges into a single, sorted de
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2, class _OutIt> inline  
     _OutIt merge(_InIt1 _First1, _InIt1 _Last1,  
         _InIt2 _First2, _InIt2 _Last2, _OutIt _Dest);  
@@ -507,7 +489,7 @@ Compares two objects and returns the lesser of the two, where the ordering crite
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _Ty> inline  
     const _Ty min(const _Ty% _Left, const _Ty% _Right);  
 template<class _Ty, class _Pr> inline  
@@ -522,7 +504,7 @@ Finds the first occurrence of smallest element in a specified range where the or
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt> inline  
     _FwdIt min_element(_FwdIt _First, _FwdIt _Last);  
 template<class _FwdIt, class _Pr> inline  
@@ -537,7 +519,7 @@ Compares two ranges element by element either for equality or equivalent in a se
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2> inline  
     _PAIR_TYPE(_InIt1)  
         mismatch(_InIt1 _First1, _InIt1 _Last1, _InIt2 _First2);  
@@ -555,7 +537,7 @@ Reorders the elements in a range so that the original ordering is replaced by th
   
 ### Syntax  
   
-```  
+```cpp 
 template<class _BidIt> inline  
     bool next_permutation(_BidIt _First, _BidIt _Last);  
 template<class _BidIt, class _Pr> inline  
@@ -570,7 +552,7 @@ Partitions a range of elements, correctly locating the `n`th element of the sequ
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _RanIt> inline  
     void nth_element(_RanIt _First, _RanIt _Nth, _RanIt _Last);  
 template<class _RanIt, class _Pr> inline  
@@ -586,7 +568,7 @@ Arranges a specified number of the smaller elements in a range into a nondescend
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _RanIt> inline  
     void partial_sort(_RanIt _First, _RanIt _Mid, _RanIt _Last);  
 template<class _RanIt, class _Pr> inline  
@@ -602,7 +584,7 @@ Copies elements from a source range into a destination range where the source el
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _RanIt> inline  
     _RanIt partial_sort_copy(_InIt _First1, _InIt _Last1,  
         _RanIt _First2, _RanIt _Last2);  
@@ -619,7 +601,7 @@ Classifies elements in a range into two disjoint sets, with those elements satis
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _BidIt, class _Pr> inline  
     _BidIt partition(_BidIt _First, _BidIt _Last, _Pr _Pred);  
 ```  
@@ -632,7 +614,7 @@ Removes the largest element from the front of a heap to the next-to-last positio
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _RanIt> inline  
     void pop_heap(_RanIt _First, _RanIt _Last);  
 template<class _RanIt, class _Pr> inline  
@@ -647,7 +629,7 @@ Reorders the elements in a range so that the original ordering is replaced by th
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _BidIt> inline  
     bool prev_permutation(_BidIt _First, _BidIt _Last);  
 template<class _BidIt, class _Pr> inline  
@@ -662,7 +644,7 @@ Adds an element that is at the end of a range to an existing heap consisting of 
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _RanIt> inline  
     void push_heap(_RanIt _First, _RanIt _Last);  
 template<class _RanIt, class _Pr> inline  
@@ -677,7 +659,7 @@ Rearranges a sequence of `N` elements in a range into one of `N`! possible arran
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _RanIt> inline  
     void random_shuffle(_RanIt _First, _RanIt _Last);  
 template<class _RanIt, class _Fn1> inline  
@@ -692,7 +674,7 @@ Eliminates a specified value from a given range without disturbing the order of 
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Ty> inline  
     _FwdIt remove(_FwdIt _First, _FwdIt _Last, const _Ty% _Val);  
 ```  
@@ -705,7 +687,7 @@ Copies elements from a source range to a destination range, except that elements
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt, class _Ty> inline  
     _OutIt remove_copy(_InIt _First, _InIt _Last,  
         _OutIt _Dest, const _Ty% _Val);  
@@ -719,7 +701,7 @@ Copies elements from a source range to a destination range, except that satisfyi
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt, class _Pr> inline  
     _OutIt remove_copy_if(_InIt _First, _InIt _Last, _OutIt _Dest,  
         _Pr _Pred);  
@@ -733,7 +715,7 @@ Eliminates elements that satisfy a predicate from a given range without disturbi
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Pr> inline  
     _FwdIt remove_if(_FwdIt _First, _FwdIt _Last, _Pr _Pred);  
 ```  
@@ -746,7 +728,7 @@ Examines each element in a range and replaces it if it matches a specified value
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Ty> inline  
     void replace(_FwdIt _First, _FwdIt _Last,  
         const _Ty% _Oldval, const _Ty% _Newval);  
@@ -760,7 +742,7 @@ Examines each element in a source range and replaces it if it matches a specifie
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt, class _Ty> inline  
     _OutIt replace_copy(_InIt _First, _InIt _Last, _OutIt _Dest,  
         const _Ty% _Oldval, const _Ty% _Newval);  
@@ -774,7 +756,7 @@ Examines each element in a source range and replaces it if it satisfies a specif
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt, class _Pr, class _Ty> inline  
     _OutIt replace_copy_if(_InIt _First, _InIt _Last, _OutIt _Dest,  
         _Pr _Pred, const _Ty% _Val);  
@@ -788,7 +770,7 @@ Examines each element in a range and replaces it if it satisfies a specified pre
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Pr, class _Ty> inline  
     void replace_if(_FwdIt _First, _FwdIt _Last, _Pr _Pred,  
         const _Ty% _Val);  
@@ -802,7 +784,7 @@ Reverses the order of the elements within a range.
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _BidIt> inline  
     void reverse(_BidIt _First, _BidIt _Last);  
 ```  
@@ -815,7 +797,7 @@ Reverses the order of the elements within a source range while copying them into
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _BidIt, class _OutIt> inline  
     _OutIt reverse_copy(_BidIt _First, _BidIt _Last, _OutIt _Dest);  
 ```  
@@ -828,7 +810,7 @@ Exchanges the elements in two adjacent ranges.
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt> inline  
     void rotate(_FwdIt _First, _FwdIt _Mid, _FwdIt _Last);  
 ```  
@@ -841,7 +823,7 @@ Exchanges the elements in two adjacent ranges within a source range and copies t
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _OutIt> inline  
     _OutIt rotate_copy(_FwdIt _First, _FwdIt _Mid, _FwdIt _Last,  
         _OutIt _Dest);  
@@ -855,7 +837,7 @@ Searches for the first occurrence of a sequence within a target range whose elem
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt1, class _FwdIt2> inline  
     _FwdIt1 search(_FwdIt1 _First1, _FwdIt1 _Last1,  
         _FwdIt2 _First2, _FwdIt2 _Last2);  
@@ -872,7 +854,7 @@ Searches for the first subsequence in a range that of a specified number of elem
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt1, class _Diff2, class _Ty> inline  
     _FwdIt1 search_n(_FwdIt1 _First1, _FwdIt1 _Last1,  
         _Diff2 _Count, const _Ty& _Val);  
@@ -889,7 +871,7 @@ Unites all of the elements that belong to one sorted source range, but not to a 
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2, class _OutIt> inline  
     _OutIt set_difference(_InIt1 _First1, _InIt1 _Last1,  
         _InIt2 _First2, _InIt2 _Last2,_OutIt _Dest);  
@@ -906,7 +888,7 @@ Unites all of the elements that belong to both sorted source ranges into a singl
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2, class _OutIt> inline  
     _OutIt set_intersection(_InIt1 _First1, _InIt1 _Last1,  
         _InIt2 _First2, _InIt2 _Last2, _OutIt _Dest);  
@@ -923,7 +905,7 @@ Unites all of the elements that belong to one, but not both, of the sorted sourc
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2, class _OutIt> inline  
     _OutIt set_symmetric_difference(_InIt1 _First1, _InIt1 _Last1,  
         _InIt2 _First2, _InIt2 _Last2, _OutIt _Dest);  
@@ -940,7 +922,7 @@ Unites all of the elements that belong to at least one of two sorted source rang
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2, class _OutIt> inline  
     _OutIt set_union(_InIt1 _First1, _InIt1 _Last1,  
         _InIt2 _First2, _InIt2 _Last2, _OutIt _Dest);  
@@ -957,7 +939,7 @@ Arranges the elements in a specified range into a nondescending order or accordi
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _RanIt> inline  
     void sort(_RanIt _First, _RanIt _Last);  
 template<class _RanIt, class _Pr> inline  
@@ -972,7 +954,7 @@ Converts a heap into a sorted range.
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _RanIt> inline  
     void sort_heap(_RanIt _First, _RanIt _Last);  
 template<class _RanIt, class _Pr> inline  
@@ -987,7 +969,7 @@ Classifies elements in a range into two disjoint sets, with those elements satis
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _BidIt, class _Pr> inline  
     _BidIt stable_partition(_BidIt _First, _BidIt _Last, _Pr _Pred);  
 ```  
@@ -1000,7 +982,7 @@ Arranges the elements in a specified range into a nondescending order or accordi
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _BidIt> inline  
     void stable_sort(_BidIt _First, _BidIt _Last);  
 template<class _BidIt, class _Pr> inline  
@@ -1015,7 +997,7 @@ Exchanges the values of the elements between two types of objects, assigning the
   
 ### Syntax  
   
-```  
+```cpp  
 <class _Ty> inline  
     void swap(_Ty% _Left, _Ty% _Right);  
 ```  
@@ -1028,7 +1010,7 @@ Exchanges the elements of one range with the elements of another, equal sized ra
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt1, class _FwdIt2> inline  
     _FwdIt2 swap_ranges(_FwdIt1 _First1, _FwdIt1 _Last1,  
         _FwdIt2 _First2);  
@@ -1042,7 +1024,7 @@ Applies a specified function object to each element in a source range or to a pa
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt, class _Fn1> inline  
     _OutIt transform(_InIt _First, _InIt _Last, _OutIt _Dest,  
         _Fn1 _Func);  
@@ -1059,7 +1041,7 @@ Removes duplicate elements that are adjacent to each other in a specified range.
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt> inline  
     _FwdIt unique(_FwdIt _First, _FwdIt _Last);  
 template<class _FwdIt, class _Pr> inline  
@@ -1074,7 +1056,7 @@ Copies elements from a source range into a destination range except for the dupl
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt> inline  
     _OutIt unique_copy(_InIt _First, _InIt _Last, _OutIt _Dest);  
 template<class _InIt, class _OutIt, class _Pr> inline  
@@ -1090,7 +1072,7 @@ Finds the position of the first element in an ordered range that has a value tha
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _FwdIt, class _Ty> inline  
     _FwdIt upper_bound(_FwdIt _First, _FwdIt _Last, const _Ty% _Val);  
 template<class _FwdIt, class _Ty, class _Pr> inline  
