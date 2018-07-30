@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL.IRowsetInfoImpl", "IRowsetInfoImpl", "ATL::IRowsetInfoImpl", "ATL.IRowsetInfoImpl.GetProperties", "IRowsetInfoImpl.GetProperties", "ATL::IRowsetInfoImpl::GetProperties",                                "IRowsetInfoImpl::GetProperties", "GetProperties", "ATL::IRowsetInfoImpl::GetReferencedRowset", "GetReferencedRowset", "ATL.IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl.GetReferencedRowset",                "IRowsetInfoImpl::GetReferencedRowset", "IRowsetInfoImpl::GetSpecification", "ATL.IRowsetInfoImpl.GetSpecification", "IRowsetInfoImpl.GetSpecification", "GetSpecification",                                            "ATL::IRowsetInfoImpl::GetSpecification"]
+f1_keywords: ["ATL.IRowsetInfoImpl", "IRowsetInfoImpl", "ATL::IRowsetInfoImpl", "ATL.IRowsetInfoImpl.GetProperties", "IRowsetInfoImpl.GetProperties", "ATL::IRowsetInfoImpl::GetProperties", "IRowsetInfoImpl::GetProperties", "GetProperties", "ATL::IRowsetInfoImpl::GetReferencedRowset", "GetReferencedRowset", "ATL.IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl.GetReferencedRowset", "IRowsetInfoImpl::GetReferencedRowset", "IRowsetInfoImpl::GetSpecification", "ATL.IRowsetInfoImpl.GetSpecification", "IRowsetInfoImpl.GetSpecification", "GetSpecification", "ATL::IRowsetInfoImpl::GetSpecification"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetInfoImpl class", "GetProperties method", "GetReferencedRowset method", "GetSpecification method"]
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
@@ -53,7 +53,7 @@ Returns the current settings for properties in the `DBPROPSET_ROWSET` group.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,  
+STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,  
    const DBPROPIDSET rgPropertyIDSets[],  
    ULONG* pcPropertySets,  
    DBPROPSET** prgPropertySets);  
@@ -68,7 +68,7 @@ Returns an interface pointer to the rowset to which a bookmark applies.
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,  
+STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,  
    REFIID riid,  
    IUnknown** ppReferencedRowset);  
 ```  
@@ -82,7 +82,7 @@ Returns an interface pointer on the object (command or session) that created thi
 ### Syntax  
   
 ```cpp
-      STDMETHOD (GetSpecification )(REFIID riid,  
+STDMETHOD (GetSpecification )(REFIID riid,  
    IUnknown** ppSpecification);  
 ```  
   

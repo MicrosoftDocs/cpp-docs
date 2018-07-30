@@ -38,9 +38,9 @@ Sometimes you might not want to use the framework's document/view architecture i
   
 |Option|View|Document|  
 |------------|----------|--------------|  
-|**None**|Derived from `CView`.|Provides no database support. This is the default option.<br /><br /> If you select the **Document/view architecture support** option on the [Application Type, MFC Application Wizard](../mfc/reference/application-type-mfc-application-wizard.md) page, you get full document support including serialization and `New`, **Open**, **Save**, and **Save As** commands on the **File** menu. See [Applications with No Document](#_core_applications_with_no_document).|  
+|**None**|Derived from `CView`.|Provides no database support. This is the default option.<br /><br /> If you select the **Document/view architecture support** option on the [Application Type, MFC Application Wizard](../mfc/reference/application-type-mfc-application-wizard.md) page, you get full document support including serialization and **New**, **Open**, **Save**, and **Save As** commands on the **File** menu. See [Applications with No Document](#_core_applications_with_no_document).|  
 |**Header files only**|Derived from `CView`.|Provides the basic level of database support for your application.<br /><br /> Includes Afxdb.h. Adds link libraries, but does not create any database-specific classes. You can create recordsets later and use them to examine and update records.|  
-|**Database view without file support**|Derived from `CRecordView`|Provides document support but no serialization support. Document can store recordset and coordinate multiple views; does not support serialization or the `New`, **Open**, **Save**, and **Save As** commands. See [Applications with Minimal Documents](#_core_applications_with_minimal_documents). If you include a database view, you must specify the source of the data.<br /><br /> Includes database header files, link libraries, a record view, and a recordset. (Available only for applications with the **Document/view architecture support** option selected on the [Application Type, MFC Application Wizard](../mfc/reference/application-type-mfc-application-wizard.md) page.)|  
+|**Database view without file support**|Derived from `CRecordView`|Provides document support but no serialization support. Document can store recordset and coordinate multiple views; does not support serialization or the **New**, **Open**, **Save**, and **Save As** commands. See [Applications with Minimal Documents](#_core_applications_with_minimal_documents). If you include a database view, you must specify the source of the data.<br /><br /> Includes database header files, link libraries, a record view, and a recordset. (Available only for applications with the **Document/view architecture support** option selected on the [Application Type, MFC Application Wizard](../mfc/reference/application-type-mfc-application-wizard.md) page.)|  
 |**Database view with file support**|Derived from `CRecordView`|Provides full document support, including serialization and document-related **File** menu commands. Database applications typically operate on a per-record basis rather than on a per-file basis and so do not need serialization. However, you might have a special use for serialization. See [Applications with Minimal Documents](#_core_applications_with_minimal_documents). If you include a database view, you must specify the source of the data.<br /><br /> Includes database header files, link libraries, a record view, and a recordset. (Available only for applications with the **Document/view architecture support** option selected on the [Application Type, MFC Application Wizard](../mfc/reference/application-type-mfc-application-wizard.md) page.)|  
   
  For a discussion of alternatives to serialization and alternative uses for serialization, see [Serialization: Serialization vs. Database Input/Output](../mfc/serialization-serialization-vs-database-input-output.md).  
@@ -75,7 +75,7 @@ Sometimes you might not want to use the framework's document/view architecture i
 ###  <a name="_core_writing_applications_without_documents"></a> Writing Applications Without Documents  
  Because the application wizard does not support creating applications without documents, you must write your own `CWinApp`-derived class and, if needed, also create a `CFrameWnd` or `CMDIFrameWnd` class. Override `CWinApp::InitInstance` and declare an application object as:  
   
-```  
+```cpp  
 CYourNameApp theApp;  
 ```  
   
@@ -90,7 +90,7 @@ CYourNameApp theApp;
   
  Because no document owns the `CRecordset` object, you probably want to store it as an embedded data member in your `CWinApp`-derived application class. Alternatives include:  
   
--   Not keeping a permanent `CRecordset` object at all. You can pass **NULL** to your recordset class constructors. In that case, the framework creates a temporary `CDatabase`  object using the information in the recordset's `GetDefaultConnect` member function. This is the most likely alternative approach.  
+-   Not keeping a permanent `CRecordset` object at all. You can pass NULL to your recordset class constructors. In that case, the framework creates a temporary `CDatabase`  object using the information in the recordset's `GetDefaultConnect` member function. This is the most likely alternative approach.  
   
 -   Making the `CRecordset` object a global variable. This variable should be a pointer to a recordset object that you create dynamically in your `CWinApp::InitInstance` override. This avoids attempting to construct the object before the framework is initialized.  
   

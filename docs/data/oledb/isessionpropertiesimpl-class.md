@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ISessionPropertiesImpl", "ISessionPropertiesImpl::GetProperties", "ISessionPropertiesImpl.GetProperties", "GetProperties", "ISessionPropertiesImpl.SetProperties", "SetProperties",                          "ISessionPropertiesImpl::SetProperties"]
+f1_keywords: ["ISessionPropertiesImpl", "ISessionPropertiesImpl::GetProperties", "ISessionPropertiesImpl.GetProperties", "GetProperties", "ISessionPropertiesImpl.SetProperties", "SetProperties", "ISessionPropertiesImpl::SetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ISessionPropertiesImpl class", "GetProperties method", "SetProperties method"]
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
@@ -52,7 +52,7 @@ Returns the list of properties in the `DBPROPSET_SESSION` property group that ar
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetProperties)(ULONG cPropertyIDSets,   
+STDMETHOD(GetProperties)(ULONG cPropertyIDSets,   
    const DBPROPIDSET rgPropertyIDSets[],   
    ULONG * pcPropertySets,   
    DBPROPSET ** prgPropertySets);  
@@ -67,7 +67,7 @@ Sets properties in the `DBPROPSET_SESSION` property group.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(SetProperties)(ULONG cPropertySets,   
+STDMETHOD(SetProperties)(ULONG cPropertySets,   
    DBPROPSET rgPropertySets[]);  
 ```  
   

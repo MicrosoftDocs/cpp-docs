@@ -47,8 +47,7 @@ Creates a rowset object. Not called directly by user. See [IOpenRowset::OpenRows
 ### Syntax  
   
 ```cpp
-      template template <class RowsetClass  
-      >  
+template template <class RowsetClass>  
 HRESULT CreateRowset(IUnknown* pUnkOuter,  
    DBID* pTableID,  
    DBID* pIndexID,  

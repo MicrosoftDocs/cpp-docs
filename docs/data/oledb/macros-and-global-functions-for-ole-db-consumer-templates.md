@@ -4,10 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["vc.templates.ole", "ATL.AtlTraceErrorRecords", "ATL::AtlTraceErrorRecords", "AtlTraceErrorRecords", "BEGIN_ACCESSOR", "BEGIN_ACCESSOR_MAP", "END_ACCESSOR", "END_ACCESSOR_MAP", "BEGIN_COLUMN_MAP",          "BLOB_ENTRY", "BLOB_ENTRY_LENGTH", "BLOB_ENTRY_LENGTH_STATUS", "BLOB_ENTRY_STATUS", "BLOB_NAME", "BLOB_NAME_LENGTH", "BLOB_NAME_LENGTH_STATUS", "BLOB_NAME_STATUS", "BOOKMARK_ENTRY", "COLUMN_ENTRY",                  "COLUMN_ENTRY_EX", "COLUMN_ENTRY_LENGTH", "COLUMN_ENTRY_LENGTH_STATUS", "COLUMN_ENTRY_PS", "COLUMN_ENTRY_PS_LENGTH", "COLUMN_ENTRY_PS_LENGTH_STATUS", "COLUMN_ENTRY_PS_STATUS", "COLUMN_ENTRY_STATUS",                 "COLUMN_ENTRY_TYPE", "COLUMN_ENTRY_TYPE_SIZE", "COLUMN_NAME", "COLUMN_NAME_EX", "COLUMN_NAME_LENGTH", "COLUMN_NAME_LENGTH_STATUS", "COLUMN_NAME_PS", "COLUMN_NAME_PS_LENGTH", "COLUMN_NAME_PS_LENGTH_STATUS",          "COLUMN_NAME_PS_STATUS", "COLUMN_NAME_STATUS", "COLUMN_NAME_TYPE", "COLUMN_NAME_TYPE_PS", "COLUMN_NAME_TYPE_SIZE", "COLUMN_NAME_TYPE_STATUS", "END_COLUMN_MAP", "DEFINE_COMMAND", "DEFINE_COMMAND_EX",                 "BEGIN_PARAM_MAP", "END_PARAM_MAP", "SET_PARAM_TYPE"]
+f1_keywords: ["vc.templates.ole", "ATL.AtlTraceErrorRecords", "ATL::AtlTraceErrorRecords", "AtlTraceErrorRecords", "BEGIN_ACCESSOR", "BEGIN_ACCESSOR_MAP", "END_ACCESSOR", "END_ACCESSOR_MAP", "BEGIN_COLUMN_MAP", "BLOB_ENTRY", "BLOB_ENTRY_LENGTH", "BLOB_ENTRY_LENGTH_STATUS", "BLOB_ENTRY_STATUS", "BLOB_NAME", "BLOB_NAME_LENGTH", "BLOB_NAME_LENGTH_STATUS", "BLOB_NAME_STATUS", "BOOKMARK_ENTRY", "COLUMN_ENTRY", "COLUMN_ENTRY_EX", "COLUMN_ENTRY_LENGTH", "COLUMN_ENTRY_LENGTH_STATUS", "COLUMN_ENTRY_PS", "COLUMN_ENTRY_PS_LENGTH", "COLUMN_ENTRY_PS_LENGTH_STATUS", "COLUMN_ENTRY_PS_STATUS", "COLUMN_ENTRY_STATUS", "COLUMN_ENTRY_TYPE", "COLUMN_ENTRY_TYPE_SIZE", "COLUMN_NAME", "COLUMN_NAME_EX", "COLUMN_NAME_LENGTH", "COLUMN_NAME_LENGTH_STATUS", "COLUMN_NAME_PS", "COLUMN_NAME_PS_LENGTH", "COLUMN_NAME_PS_LENGTH_STATUS", "COLUMN_NAME_PS_STATUS", "COLUMN_NAME_STATUS", "COLUMN_NAME_TYPE", "COLUMN_NAME_TYPE_PS", "COLUMN_NAME_TYPE_SIZE", "COLUMN_NAME_TYPE_STATUS", "END_COLUMN_MAP", "DEFINE_COMMAND", "DEFINE_COMMAND_EX",      "BEGIN_PARAM_MAP", "END_PARAM_MAP", "SET_PARAM_TYPE"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["OLE DB consumer templates, macros", "macros, OLE DB consumer template", "AtlTraceErrorRecords function", "BEGIN_ACCESSOR macro, syntax", "BEGIN_ACCESSOR macro", "BEGIN_ACCESSOR_MAP macro",
-    "END_ACCESSOR macro", "END_ACCESSOR_MAP macro", "BEGIN_COLUMN_MAP macro", "BLOB_ENTRY macro", "BLOB_ENTRY_LENGTH macro", "BLOB_ENTRY_LENGTH_STATUS macro", "BLOB_ENTRY_STATUS macro", "BLOB_NAME macro", "BLOB_NAME_LENGTH macro", "BLOB_NAME_LENGTH_STATUS macro", "BLOB_NAME_STATUS macro", "BOOKMARK_ENTRY macro", "COLUMN_ENTRY macro", "COLUMN_ENTRY_EX macro", "COLUMN_ENTRY_LENGTH macro", "COLUMN_ENTRY_LENGTH_STATUS macro", "COLUMN_ENTRY_PS macro", "COLUMN_ENTRY_PS_LENGTH macro", "COLUMN_ENTRY_PS_LENGTH_STATUS macro", "COLUMN_ENTRY_PS_STATUS macro", "COLUMN_ENTRY_STATUS macro", "COLUMN_ENTRY_TYPE macro", "COLUMN_ENTRY_TYPE_SIZE macro", "COLUMN_NAME macro", "COLUMN_NAME_EX macro", "COLUMN_NAME_LENGTH macro", "COLUMN_NAME_LENGTH_STATUS macro", "COLUMN_NAME_PS macro", "COLUMN_NAME_PS_LENGTH macro", "COLUMN_NAME_PS_LENGTH_STATUS macro", "COLUMN_NAME_PS_STATUS macro", "COLUMN_NAME_STATUS macro", "COLUMN_NAME_TYPE macro", "COLUMN_NAME_TYPE_PS macro", "COLUMN_NAME_TYPE_SIZE macro", "COLUMN_NAME_TYPE_STATUS macro", "END_COLUMN_MAP macro", "DEFINE_COMMAND macro", "DEFINE_COMMAND_EX macro", "BEGIN_PARAM_MAP macro", "END_PARAM_MAP macro", "SET_PARAM_TYPE macro"]
+helpviewer_keywords: ["OLE DB consumer templates, macros", "macros, OLE DB consumer template", "AtlTraceErrorRecords function", "BEGIN_ACCESSOR macro, syntax", "BEGIN_ACCESSOR macro", "BEGIN_ACCESSOR_MAP macro", "END_ACCESSOR macro", "END_ACCESSOR_MAP macro", "BEGIN_COLUMN_MAP macro", "BLOB_ENTRY macro", "BLOB_ENTRY_LENGTH macro", "BLOB_ENTRY_LENGTH_STATUS macro", "BLOB_ENTRY_STATUS macro", "BLOB_NAME macro", "BLOB_NAME_LENGTH macro", "BLOB_NAME_LENGTH_STATUS macro", "BLOB_NAME_STATUS macro", "BOOKMARK_ENTRY macro", "COLUMN_ENTRY macro", "COLUMN_ENTRY_EX macro", "COLUMN_ENTRY_LENGTH macro", "COLUMN_ENTRY_LENGTH_STATUS macro", "COLUMN_ENTRY_PS macro", "COLUMN_ENTRY_PS_LENGTH macro", "COLUMN_ENTRY_PS_LENGTH_STATUS macro", "COLUMN_ENTRY_PS_STATUS macro", "COLUMN_ENTRY_STATUS macro", "COLUMN_ENTRY_TYPE macro", "COLUMN_ENTRY_TYPE_SIZE macro", "COLUMN_NAME macro", "COLUMN_NAME_EX macro", "COLUMN_NAME_LENGTH macro", "COLUMN_NAME_LENGTH_STATUS macro", "COLUMN_NAME_PS macro", "COLUMN_NAME_PS_LENGTH macro", "COLUMN_NAME_PS_LENGTH_STATUS macro", "COLUMN_NAME_PS_STATUS macro", "COLUMN_NAME_STATUS macro", "COLUMN_NAME_TYPE macro", "COLUMN_NAME_TYPE_PS macro", "COLUMN_NAME_TYPE_SIZE macro", "COLUMN_NAME_TYPE_STATUS macro", "END_COLUMN_MAP macro", "DEFINE_COMMAND macro", "DEFINE_COMMAND_EX macro", "BEGIN_PARAM_MAP macro", "END_PARAM_MAP macro", "SET_PARAM_TYPE macro"]
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
 author: "mikeblome"
 ms.author: "mblome"
@@ -92,7 +91,7 @@ Dumps OLE DB Error Record information to the dump device if an error is returned
 #### Syntax  
   
 ```cpp
-      inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);  
+inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);  
 ```  
   
 #### Parameters  
@@ -200,7 +199,6 @@ Marks the end of an accessor entry.
   
 ```cpp
 END_ACCESSOR()  
-  
 ```  
   
 #### Remarks  
@@ -216,7 +214,6 @@ Marks the end of the accessor map entries.
   
 ```cpp
 END_ACCESSOR_MAP()  
-  
 ```  
   
 #### Remarks  
@@ -230,7 +227,7 @@ Marks the beginning of a column map entry.
   
 #### Syntax  
   
-```  
+```cpp  
 BEGIN_COLUMN_MAP(x)  
 ```  
   
@@ -257,7 +254,6 @@ Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BL
   
 ```cpp
 BLOB_ENTRY(nOrdinal, IID, flags, data)  
-  
 ```  
   
 #### Parameters  
@@ -283,7 +279,6 @@ Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BL
   
 ```cpp
 BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)  
-  
 ```  
   
 #### Parameters  
@@ -348,8 +343,7 @@ Used with BEGIN_COLUMN_MAP or BEGIN_ACCESSOR_MAP to bind a binary large object (
 #### Syntax  
   
 ```cpp
-BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)  
-  
+BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)   
 ```  
   
 #### Parameters  
@@ -481,7 +475,6 @@ Binds the bookmark column.
   
 ```cpp
 BOOKMARK_ENTRY(variable)  
-  
 ```  
   
 #### Parameters  
@@ -547,7 +540,6 @@ Represents a binding on the rowset to the specific column in the rowset.
   
 ```cpp
 COLUMN_ENTRY(nOrdinal, data)  
-  
 ```  
   
 #### Parameters  
@@ -578,7 +570,6 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, status)  
-  
 ```  
   
 #### Parameters  
@@ -627,7 +618,6 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_LENGTH(nOrdinal, data, length)  
-  
 ```  
   
 #### Parameters  
@@ -658,7 +648,6 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_LENGTH_STATUS(nOrdinal, data, length, status)  
-  
 ```  
   
 #### Parameters  
@@ -692,7 +681,6 @@ Represents a binding on the rowset to the specific column in the rowset.
   
 ```cpp
 COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)  
-  
 ```  
   
 #### Parameters  
@@ -726,7 +714,6 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_PS_LENGTH(nOrdinal, nPrecision, nScale, data, length)  
-  
 ```  
   
 #### Parameters  
@@ -763,7 +750,6 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status)  
-  
 ```  
   
 #### Parameters  
@@ -803,7 +789,6 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)  
-  
 ```  
   
 #### Parameters  
@@ -840,7 +825,6 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_STATUS(nOrdinal, data, status)  
-  
 ```  
   
 #### Parameters  
@@ -871,7 +855,6 @@ Represents a binding to the specific column in the database. Supports *type* par
   
 ```cpp
 COLUMN_ENTRY_TYPE (nOrdinal, wType, data)  
-  
 ```  
   
 #### Parameters  
@@ -894,7 +877,6 @@ Represents a binding to the specific column in the database. Supports *type* and
   
 ```cpp
 COLUMN_ENTRY_TYPE_SIZE(nOrdinal, wType, nLength, data)  
-  
 ```  
   
 #### Parameters  
@@ -920,7 +902,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME(pszName, data)  
-  
 ```  
   
 #### Parameters  
@@ -983,7 +964,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_LENGTH(pszName, data, length)  
-  
 ```  
   
 #### Parameters  
@@ -1165,7 +1145,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_TYPE(pszName, wType, data)  
-  
 ```  
   
 #### Parameters  
@@ -1188,7 +1167,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_TYPE_PS(pszName, wType, nPrecision, nScale, data)  
-  
 ```  
   
 #### Parameters  
@@ -1217,7 +1195,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_TYPE_SIZE(pszName, wType, nLength, data)  
-  
 ```  
   
 #### Parameters  
@@ -1243,7 +1220,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)  
-  
 ```  
   
 #### Parameters  
@@ -1269,7 +1245,6 @@ Marks the end of the column map entries.
   
 ```cpp
 END_COLUMN_MAP()  
-  
 ```  
   
 #### Remarks  
@@ -1288,7 +1263,6 @@ Specifies the command that will be used to create the rowset when using the [CCo
   
 ```cpp
 DEFINE_COMMAND(x, szCommand)  
-  
 ```  
   
 #### Parameters  
@@ -1313,7 +1287,6 @@ Specifies the command that will be used to create the rowset when using the [CCo
   
 ```cpp
 DEFINE_COMMAND_EX(x, wszCommand)  
-  
 ```  
   
 #### Parameters  
@@ -1338,7 +1311,6 @@ Marks the beginning of the parameter map entries.
   
 ```cpp
 BEGIN_PARAM_MAP(x)  
-  
 ```  
   
 #### Parameters  
@@ -1358,7 +1330,6 @@ Marks the end of the parameter map entries.
   
 ```cpp
 END_PARAM_MAP()  
-  
 ```  
   
 #### Example  
@@ -1371,7 +1342,6 @@ Specifies COLUMN_ENTRY macros that follow the SET_PARAM_TYPE macro input, output
   
 ```cpp
 SET_PARAM_TYPE(type)  
-  
 ```  
   
 #### Parameters  

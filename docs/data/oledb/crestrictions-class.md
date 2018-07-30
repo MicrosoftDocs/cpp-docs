@@ -20,10 +20,10 @@ A generic class that allows you to specify restrictions for schema rowsets.
 ```cpp
 template <class T, short nRestrictions, const GUID* pguid>  
 class CRestrictions : 
-        public CSchemaRowset <T, nRestrictions>  
+   public CSchemaRowset <T, nRestrictions>  
 ```  
   
-#### Parameters  
+### Parameters  
  *T*  
  The class used for the accessor.  
   

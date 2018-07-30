@@ -4,21 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::CDataConnection", "ATL.CDataConnection", "CDataConnection", 
-    "CDataConnection.CDataConnection", "ATL.CDataConnection.CDataConnection", "CDataConnection::CDataConnection", "ATL::CDataConnection::CDataConnection",
-    "CDataConnection.Copy", "ATL.CDataConnection.Copy", "ATL::CDataConnection::Copy", "CDataConnection::Copy",
-    "CDataConnection.Open", "ATL.CDataConnection.Open", "CDataConnection::Open", "ATL::CDataConnection::Open",
-    "CDataConnection.OpenNewSession", "ATL.CDataConnection.OpenNewSession", "ATL::CDataConnection::OpenNewSession", "OpenNewSession", "CDataConnection::OpenNewSession",
-    "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL",
-    "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL",
-    "CDataSource&", "CDataConnection.operatorCDataSource&", "operatorCDataSource&", "CDataConnection::operatorCDataSource&",
-    "CDataSource*", "CDataConnection::operatorCDataSource*", "CDataConnection.operatorCDataSource*", "operatorCDataSource*",
-    "CSession&", "CDataConnection::operatorCSession&", "CDataConnection.operatorCSession&", "operatorCSession&",
-    "CDataConnection.operatorCSession*", "CDataConnection::operatorCSession*", "operatorCSession*", "CSession*"]
+f1_keywords: ["ATL::CDataConnection", "ATL.CDataConnection", "CDataConnection", "CDataConnection.CDataConnection", "ATL.CDataConnection.CDataConnection", "CDataConnection::CDataConnection", "ATL::CDataConnection::CDataConnection", "CDataConnection.Copy", "ATL.CDataConnection.Copy", "ATL::CDataConnection::Copy", "CDataConnection::Copy", "CDataConnection.Open", "ATL.CDataConnection.Open", "CDataConnection::Open", "ATL::CDataConnection::Open", "CDataConnection.OpenNewSession", "ATL.CDataConnection.OpenNewSession", "ATL::CDataConnection::OpenNewSession", "OpenNewSession", "CDataConnection::OpenNewSession", "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL", "CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL", "CDataConnection::operatorBOOL", "ATL::CDataConnection::operatorBOOL","CDataConnection.operatorBOOL", "ATL.CDataConnection.operatorBOOL", "CDataSource&", "CDataConnection.operatorCDataSource&", "operatorCDataSource&", "CDataConnection::operatorCDataSource&", "CDataSource*", "CDataConnection::operatorCDataSource*", "CDataConnection.operatorCDataSource*", "operatorCDataSource*", "CSession&", "CDataConnection::operatorCSession&", "CDataConnection.operatorCSession&", "operatorCSession&", "CDataConnection.operatorCSession*", "CDataConnection::operatorCSession*", "operatorCSession*", "CSession*"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CDataConnection class", "CDataConnection class, constructor", "Copy method", "Open method", "OpenNewSession method", "BOOL operator", "operator bool",
-    "BOOL operator", "operator bool", "CDataSource& operator", "operator & (CDataSource)", "CDataSource* operator", "operator * (CDataSource)",
-    "operator CSession&", "CSession& operator", "operator CSession*", "CSession* operator"]
+helpviewer_keywords: ["CDataConnection class", "CDataConnection class, constructor", "Copy method", "Open method", "OpenNewSession method", "BOOL operator", "operator bool", "BOOL operator", "operator bool", "CDataSource& operator", "operator & (CDataSource)", "CDataSource* operator", "operator * (CDataSource)", "operator CSession&", "CSession& operator", "operator CSession*", "CSession* operator"]
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
 author: "mikeblome"
 ms.author: "mblome"
@@ -74,8 +62,7 @@ Instantiates and initializes a `CDataConnection` object.
 ### Syntax  
   
 ```cpp
-      CDataConnection();   
-
+CDataConnection();   
 CDataConnection(const CDataConnection &ds);  
 ```  
   
@@ -94,7 +81,7 @@ Creates a copy of an existing data connection.
 ### Syntax  
   
 ```cpp
-      CDataConnection& Copy(const CDataConnection & ds) throw();  
+CDataConnection& Copy(const CDataConnection & ds) throw();  
 ```  
   
 #### Parameters  
@@ -143,7 +130,6 @@ Determines whether the current session is open or not.
   
 ```cpp
 operator BOOL() throw();  
-  
 ```  
   
 ### Remarks  
@@ -156,7 +142,6 @@ Determines whether the current session is open or not.
   
 ```cpp
 operator bool() throw();  
-  
 ```  
   
 ### Remarks  
@@ -169,7 +154,6 @@ Returns a reference to the contained `CDataSource` object.
   
 ```cpp
 operator const CDataSource&() throw();  
-  
 ```  
   
 ### Remarks  
@@ -189,7 +173,6 @@ Returns a pointer to the contained `CDataSource` object.
   
 ```cpp
 operator const CDataSource*() throw();  
-  
 ```  
   
 ### Remarks  
@@ -204,7 +187,6 @@ Returns a reference to the contained `CSession` object.
   
 ```cpp
 operator const CSession&();  
-  
 ```  
   
 ### Remarks  
@@ -224,7 +206,6 @@ Returns a pointer to the contained `CSession` object.
   
 ```cpp
 operator const CSession*() throw();  
-  
 ```  
   
 ### Remarks  

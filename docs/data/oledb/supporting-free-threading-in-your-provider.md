@@ -18,7 +18,7 @@ All the OLE DB provider classes are thread-safe, and registry entries are set ac
   
  The following example shows how to block your code:  
   
-```  
+```cpp  
 template <class T>  
 class CMyObject<T> : public...  
   
