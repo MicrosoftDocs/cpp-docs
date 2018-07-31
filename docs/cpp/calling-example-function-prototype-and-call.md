@@ -38,5 +38,5 @@ MyFunc ('x', 12, 8192, 2.7183);
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Calling Conventions](../cpp/calling-conventions.md)

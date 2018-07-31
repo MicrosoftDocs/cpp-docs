@@ -35,5 +35,5 @@ ms.workload: ["cplusplus"]
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Based Pointers](../cpp/based-pointers-cpp.md)
