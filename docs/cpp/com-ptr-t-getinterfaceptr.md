@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 Interface* GetInterfacePtr( ) const throw( );   
 Interface*& GetInterfacePtr() throw();  
 ```  
@@ -30,5 +29,5 @@ Interface*& GetInterfacePtr() throw();
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

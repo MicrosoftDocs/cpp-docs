@@ -18,7 +18,6 @@ When modifying a data declaration, the **const** keyword specifies that the obje
 ## Syntax  
   
 ```  
-  
 const declaration ;  
 member-function const ;  
 ```  
@@ -161,5 +160,5 @@ extern "C" const int x=10;
   
 -   [#define](../preprocessor/hash-define-directive-c-cpp.md).  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)
