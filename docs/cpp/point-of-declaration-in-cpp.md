@@ -28,5 +28,5 @@ int main()
   
  If the point of declaration were *after* the initialization, then the local `dVar` would be initialized to 7.0, the value of the global variable `dVar`. However, since that is not the case, `dVar` is initialized to an undefined value.  
   
-## See Also  
+## See also  
  [Scope](../cpp/scope-visual-cpp.md)

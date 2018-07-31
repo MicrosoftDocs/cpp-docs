@@ -65,7 +65,7 @@ int main()
 }  
 ```  
   
- In the preceding example, `pwCaption` is a pointer to any member of class `Window` that has type **char\***. The type of `pwCaption` is `char * Window::* `. The next code fragment declares pointers to the `SetCaption` and `GetCaption` member functions.  
+ In the preceding example, `pwCaption` is a pointer to any member of class `Window` that has type `char*`. The type of `pwCaption` is `char * Window::* `. The next code fragment declares pointers to the `SetCaption` and `GetCaption` member functions.  
   
 ```cpp 
 const char * (Window::*pfnwGC)() = &Window::GetCaption;  
@@ -89,7 +89,7 @@ strcpy_s( pwChildWindow->*pwCaption, cUntitledLen, szUntitled );
   
  The difference between the **.\*** and **->\*** operators (the pointer-to-member operators) is that the **.\*** operator selects members given an object or object reference, while the **->\*** operator selects members through a pointer. (For more about these operators, see [Expressions with Pointer-to-Member Operators](../cpp/pointer-to-member-operators-dot-star-and-star.md).)  
   
- The result of the pointer-to-member operators is the type of the member — in this case, **char \***.  
+ The result of the pointer-to-member operators is the type of the member — in this case, `char *`.  
   
  The following code fragment invokes the member functions `GetCaption` and `SetCaption` using pointers to members:  
   
@@ -160,6 +160,3 @@ int main()
 //Output: Print function for class Base  
 Print function for class Derived  
 ```  
-  
-## See Also  
- 
