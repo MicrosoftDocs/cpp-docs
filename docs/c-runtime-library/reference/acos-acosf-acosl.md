@@ -45,9 +45,9 @@ By default, if *x* is less than -1 or greater than 1, **acos** returns an indefi
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± ∞|`INVALID`|`_DOMAIN`|
-|± `QNAN`,`IND`|none|`_DOMAIN`|
-|&#124;x&#124;>1|`INVALID`|`_DOMAIN`|
+|± ∞|INVALID|_DOMAIN|
+|± QNAN,IND|none|_DOMAIN|
+|&#124;x&#124;>1|INVALID|_DOMAIN|
 
 ## Remarks
 
