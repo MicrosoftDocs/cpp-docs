@@ -51,5 +51,5 @@ int main()
 pt1 = pt2 = pt3;  
 ```  
   
-## See Also  
+## See also  
  [Operator Overloading](../cpp/operator-overloading.md)

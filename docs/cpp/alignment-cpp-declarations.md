@@ -52,7 +52,6 @@ struct x_
    char d;           // 1 byte  
    char _pad1[1];    // padding to make sizeof(x_) multiple of 4  
 }  
-  
 ```  
   
 1.  Both declarations return sizeof(struct x_) as 12 bytes.  
@@ -90,8 +89,7 @@ adr offset   element
 0x0020   short c;  
 0x0022   char d;  
 0x0023   char _pad1[1];  
-  
 ```  
   
-## See Also  
+## See also  
  [Data Structure Alignment](http://en.wikipedia.org/wiki/Data_structure_alignment)
