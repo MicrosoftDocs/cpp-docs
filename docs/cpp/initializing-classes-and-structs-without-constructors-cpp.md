@@ -55,11 +55,10 @@ int main()
   
     return 0;  
 }  
-  
 ```  
   
  Note that when a class or struct has no constructor, you provide the list elements in the order that the members are declared in the class. If the class has a constructor, provide the elements in the order of the parameters.  
   
-## See Also  
+## See also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)   
  [Constructors](../cpp/constructors-cpp.md)

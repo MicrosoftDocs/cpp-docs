@@ -15,7 +15,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 * cast-expression  
 ```  
   
@@ -56,7 +55,7 @@ int main() {
   
 -   The pointer specifies an address not used by the executing program.  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Address-of Operator: &](../cpp/address-of-operator-amp.md)   
