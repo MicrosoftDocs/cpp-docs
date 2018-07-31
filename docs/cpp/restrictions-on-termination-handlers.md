@@ -18,6 +18,6 @@ You cannot use a **goto** statement to jump into a **__try** statement block or 
   
  A **return** statement inside a **__finally** statement block presents roughly the same situation. Control returns to the immediate caller of the function containing the termination handler. If the system was unwinding the stack, this process is halted, and the program proceeds as if there had been no exception raised.  
   
-## See Also  
+## See also  
  [Writing a Termination Handler](../cpp/writing-a-termination-handler.md)   
  [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

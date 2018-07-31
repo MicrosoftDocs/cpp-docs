@@ -100,6 +100,6 @@ The size of the pointer is 4
 sizeof array / sizeof array[0]  
 ```  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)
