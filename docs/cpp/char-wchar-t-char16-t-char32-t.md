@@ -32,4 +32,3 @@ The **wchar_t** type is an implementation-defined wide character type. In the Mi
 The **char16_t** and **char32_t** types represent 16-bit and 32-bit wide characters, respectively. Unicode encoded as UTF-16 can be stored in the **char16_t** type, and Unicode encoded as UTF-32 can be stored in the **char32_t** type. Strings of these types and **wchar_t** are all referred to as *wide* strings, though the term often refers specifically to strings of **wchar_t** type.
 
 In the C++ standard library, the `basic_string` type is specialized for both narrow and wide strings. Use `std::string` when the characters are of type **char**, `std::u16string` when the characters are of type **char16_t**, `std::u32string` when the characters are of type **char32_t**, and `std::wstring` when the characters are of type **wchar_t**. Other types that represent text, including `std::stringstream` and `std::cout` have specializations for narrow and wide strings.  
-  
