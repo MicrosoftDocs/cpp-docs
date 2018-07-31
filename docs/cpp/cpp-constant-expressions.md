@@ -41,9 +41,9 @@ const double Size = 11.0;
 char chArray[(int)Size];  
 ```  
   
-Explicit conversions to integral types are legal in constant expressions; all other types and derived types are illegal except when used as operands to the `sizeof` operator.  
+Explicit conversions to integral types are legal in constant expressions; all other types and derived types are illegal except when used as operands to the **sizeof** operator.  
   
 The comma operator and assignment operators cannot be used in constant expressions.  
   
-## See Also  
+## See also  
  [Types of Expressions](../cpp/types-of-expressions.md)

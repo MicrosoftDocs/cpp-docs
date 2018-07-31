@@ -84,5 +84,4 @@ The following list details erroneous operations on bit fields:
 - Initializing a non-**const** reference with a bit field.
 
 ## See also
-
-- [Classes and Structs](../cpp/classes-and-structs-cpp.md)
+ [Classes and Structs](../cpp/classes-and-structs-cpp.md)

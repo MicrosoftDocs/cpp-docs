@@ -194,7 +194,6 @@ int main()
     // Print the result.  
     cout << timestwoplusthree << endl;  
 }  
-  
 ```  
   
 ### Output  
@@ -246,7 +245,6 @@ int main()
     // Print the result, which is (7+8)*2.  
     cout << answer << endl;  
 }  
-  
 ```  
   
 ### Output  
@@ -266,7 +264,6 @@ int main()
  You can use the **this** pointer explicitly in a function, as shown here:  
   
 ```cpp  
-
 // capture "this" by reference
 void ApplyScale(const vector<int>& v) const  
 {  
@@ -280,7 +277,6 @@ void ApplyScale2(const vector<int>& v) const
    for_each(v.begin(), v.end(),   
       [*this](int n) { cout << n * _scale << endl; });  
 }  
-
 ```  
   
  You can also capture the **this** pointer implicitly:  
@@ -334,7 +330,6 @@ int main()
     Scale s(3);  
     s.ApplyScale(values);  
 }  
-  
 ```  
   
 ### Output  
@@ -344,7 +339,6 @@ int main()
 6  
 9  
 12  
-  
 ```  
   
 ### Remarks  
@@ -355,7 +349,7 @@ int main()
 ##  <a name="templateLambdaExpressions"></a> Using Lambda Expressions with Templates  
   
 ### Example  
- Because lambda expressions are typed, you can use them with C++ templates. The following example shows the `negate_all` and `print_all` functions. The `negate_all` function applies the unary `operator-` to each element in the `vector` object. The `print_all` function prints each element in the `vector` object to the console.  
+ Because lambda expressions are typed, you can use them with C++ templates. The following example shows the `negate_all` and `print_all` functions. The `negate_all` function applies the unary **operator-** to each element in the `vector` object. The `print_all` function prints each element in the `vector` object to the console.  
   
 ### Code  
   
@@ -395,7 +389,6 @@ int main()
     cout << "After negate_all():" << endl;  
     print_all(v);  
 }  
-  
 ```  
   
 ### Output  
@@ -408,7 +401,6 @@ After negate_all():
 -34  
 43  
 -56  
-  
 ```  
   
 ### Remarks  
@@ -492,7 +484,6 @@ int main()
         Console::WriteLine(s + Convert::ToChar(ch));   
     }("Hello");  
 }  
-  
 ```  
   
 ### Output  
@@ -509,7 +500,7 @@ Hello!
   
  [[In This Article](#top)]  
   
-## See Also  
+## See also  
  [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)   
  [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md)   
  [auto](../cpp/auto-cpp.md)   
