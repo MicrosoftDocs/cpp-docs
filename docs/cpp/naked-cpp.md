@@ -29,7 +29,6 @@ __declspec(naked) declarator
 
  The compiler cannot generate an inline function for a function marked with the naked attribute, even if the function is also marked with the [__forceinline](inline-functions-cpp.md) keyword.  
 
-  
  The compiler issues an error if the **naked** attribute is applied to anything other than the definition of a non-member method.  
   
 ## Examples  
@@ -61,7 +60,7 @@ __declspec( naked ) int func();  // Error--naked attribute not permitted on func
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [Naked Function Calls](../cpp/naked-function-calls.md)

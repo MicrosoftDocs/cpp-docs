@@ -21,7 +21,6 @@ const int answer = 42; // integer literal
 double d = sin(108.87);     //floating point literal passed to sin function  
 bool b = true;              // boolean literal  
 MyClass* mc = nullptr;      // pointer literal  
-  
 ```  
   
  Sometimes it's important to tell the compiler how to interpret a literal, or what specific type to give to it. You do this by appending prefixes or suffixes to the literal. For example, the  prefix 0x tells the compiler to interpret the number that follows it as a hexadecimal value, for example 0x35. The ULL suffix tells the compiler to treat the value as an **unsigned long long** type, as in 5894345ULL. See the following sections for the complete list of prefixes and suffixes for each literal type.  
@@ -117,7 +116,6 @@ void func( long double );
  A binary literal can be specified by the use of the `0B` or `0b` prefix, followed by a sequence of 1's and 0's:  
   
 ```cpp 
-  
 auto x = 0B001101 ; // int  
 auto y = 0b000001 ; // int  
 ```  
@@ -128,12 +126,11 @@ auto y = 0b000001 ; // int
 ```cpp 
 if (num < 100)  
     return "Success";  
-  
 ```  
   
  In the previous example, it might be better to use a named constant that conveys a clear meaning, for example "MAXIMUM_ERROR_THRESHOLD". And if the return value "Success" is seen by end users, then it might be better to use a named string constant that can be stored in a single location in a file from where it can be localized into other languages. Using named constants helps others as well as yourself to understand the intent of the code.  
   
-## See Also  
+## See also  
  [Lexical Conventions](../cpp/lexical-conventions.md)   
  [C++ String Literals](../cpp/string-and-character-literals-cpp.md)   
  [C++ User-Defined Literals](../cpp/user-defined-literals-cpp.md)
