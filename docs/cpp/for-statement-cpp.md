@@ -127,9 +127,9 @@ for (int i = 0 ; i < 5 ; i++) {
   
  By default, under [/Ze](../build/reference/za-ze-disable-language-extensions.md), a variable declared in a **for** loop remains in scope until the **for** loop's enclosing scope ends.  
   
- [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) enables standard behavior of variables declared in for loops without needing to specify /Za.  
+ [/Zc:forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) enables standard behavior of variables declared in for loops without needing to specify `/Za`.  
   
- It is also possible to use the scoping differences of the **for** loop to redeclare variables under /Ze as follows:  
+ It is also possible to use the scoping differences of the **for** loop to redeclare variables under `/Ze` as follows:  
   
 ```cpp  
 // for_statement5.cpp  
@@ -143,7 +143,7 @@ int main(){
   
  This more closely mimics the standard behavior of a variable declared in a **for** loop, which requires variables declared in a **for** loop to go out of scope after the loop is done. When a variable is declared in a **for** loop, the compiler internally promotes it to a local variable in the **for** loop's enclosing scope even if there is already a local variable with the same name.  
   
-## See Also  
+## See also  
  [Iteration Statements](../cpp/iteration-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [while Statement (C++)](../cpp/while-statement-cpp.md)   
