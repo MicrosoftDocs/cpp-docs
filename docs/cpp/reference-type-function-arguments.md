@@ -65,5 +65,5 @@ long JulianFromGregorian( const Date& GDate );
   
  Any function prototyped as taking a reference type can accept an object of the same type in its place because there is a standard conversion from *typename* to *typename***&**.  
   
-## See Also  
+## See also  
  [References](../cpp/references-cpp.md)
