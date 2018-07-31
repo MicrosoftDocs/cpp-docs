@@ -36,5 +36,5 @@ An exception is an error condition, possibly outside the program's control, that
   
  For information about exception handling on x64 processors, see [Exception Handling (x64)](../build/exception-handling-x64.md).  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

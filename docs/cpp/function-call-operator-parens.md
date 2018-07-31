@@ -166,7 +166,7 @@ int main() {
   
  Functions can be called recursively. For more information about function declarations, see [Functions](functions-cpp.md). Related material is in [Program and Linkage](../cpp/program-and-linkage-cpp.md).  
   
-## See Also  
+## See also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Function Call](../c-language/function-call-c.md)   
