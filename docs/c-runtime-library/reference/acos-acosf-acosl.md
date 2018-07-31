@@ -34,34 +34,34 @@ long double acos( long double x );   // C++ only
 
 ### Parameters
 
-*x*<br/>
+*x*  
 Value between -1 and 1, for which to calculate the arccosine (the inverse cosine).
 
 ## Return Value
 
-The `acos` function returns the arccosine of *x* in the range 0 to π radians.
+The **acos** function returns the arccosine of *x* in the range 0 to π radians.
 
-By default, if *x* is less than -1 or greater than 1, `acos` returns an indefinite.
+By default, if *x* is less than -1 or greater than 1, **acos** returns an indefinite.
 
 |Input|SEH Exception|Matherr Exception|
 |-----------|-------------------|-----------------------|
-|± ∞|INVALID|_DOMAIN|
-|± QNAN,IND|none|_DOMAIN|
-|&#124;x&#124;>1|INVALID|_DOMAIN|
+|± ∞|`INVALID`|`_DOMAIN`|
+|± `QNAN`,`IND`|none|`_DOMAIN`|
+|&#124;x&#124;>1|`INVALID`|`_DOMAIN`|
 
 ## Remarks
 
-Because C++ allows overloading, you can call overloads of `acos` that take and return **float** and **long** **double** types. In a C program, `acos` always takes and returns a **double**.
+Because C++ allows overloading, you can call overloads of **acos** that take and return **float** and **long** **double** types. In a C program, **acos** always takes and returns a **double**.
 
 ## Requirements
 
 |Routine|Required header|Optional headers|
 |-------------|---------------------|----------------------|
-|`acos`, `acosf`, `acosl`|\<math.h>|\<errno.h>|
+|**acos**, **acosf**, **acosl**|\<math.h>|\<errno.h>|
 
 ## Example
 
-This program prompts for a value in the range -1 to 1. Input values outside this range produce _DOMAIN error messages. If a valid value is entered, the program prints the arcsine and the arccosine of that value.
+This program prompts for a value in the range -1 to 1. Input values outside this range produce `_DOMAIN` error messages. If a valid value is entered, the program prints the arcsine and the arccosine of that value.
 
 ```C
 // crt_asincos.c
@@ -111,10 +111,10 @@ Arccosine of 0.000000 = 1.570796
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)  
+[asin, asinf, asinl](asin-asinf-asinl.md)  
+[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)  
+[cos, cosf, cosl](cos-cosf-cosl.md)  
+[_matherr](matherr.md)  
+[sin, sinf, sinl](sin-sinf-sinl.md)  
+[tan, tanf, tanl](tan-tanf-tanl.md)  

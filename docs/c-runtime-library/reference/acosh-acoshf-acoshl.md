@@ -34,27 +34,27 @@ long double acosh( long double x );  // C++ only
 
 ### Parameters
 
-*x*<br/>
+*x*  
 Floating-point value.
 
 ## Return Value
 
-The `acosh` functions return the inverse hyberbolic cosine (arc hyperbolic cosine) of *x*. These functions are valid over the domain *x* ≥ 1. If *x* is less than 1, `errno` is set to EDOM and the result is a quiet NaN. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
+The **acosh** functions return the inverse hyberbolic cosine (arc hyperbolic cosine) of *x*. These functions are valid over the domain *x* ≥ 1. If *x* is less than 1, `errno` is set to `EDOM` and the result is a quiet NaN. If *x* is a quiet NaN, indefinite, or infinity, the same value is returned.
 
 |Input|SEH Exception|**_matherr** Exception|
 |-----------|-------------------|--------------------------|
-|± QNAN, IND, INF|none|none|
+|± `QNAN`, `IND`, `INF`|none|none|
 |*x* < 1|none|none|
 
 ## Remarks
 
-When you use C++, you can call overloads of `acosh` that take and return **float** or **long** **double** values. In a C program, `acosh` always takes and returns **double**.
+When you use C++, you can call overloads of **acosh** that take and return **float** or **long** **double** values. In a C program, **acosh** always takes and returns **double**.
 
 ## Requirements
 
 |Function|C header|C++ header|
 |--------------|--------------|------------------|
-|`acosh`, `acoshf`, `acoshl`|\<math.h>|\<cmath>|
+|**acosh**, **acoshf**, **acoshl**|\<math.h>|\<cmath>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -88,9 +88,9 @@ acosh( 1.324609 ) = 0.785398
 
 ## See also
 
-[Floating-Point Support](../../c-runtime-library/floating-point-support.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+[Floating-Point Support](../../c-runtime-library/floating-point-support.md)  
+[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)  
+[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)  
+[cosh, coshf, coshl](cosh-coshf-coshl.md)  
+[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)  
+[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)  

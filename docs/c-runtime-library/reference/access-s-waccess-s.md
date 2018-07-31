@@ -34,10 +34,10 @@ errno_t _waccess_s(
 
 ### Parameters
 
-*path*<br/>
+*path*  
 File or directory path.
 
-*mode*<br/>
+*mode*  
 Permission setting.
 
 ## Return Value
@@ -46,15 +46,15 @@ Each function returns 0 if the file has the given mode. The function returns an 
 
 |errno value|Condition|
 |-|-|
-EACCES|Access denied. The file's permission setting does not allow specified access.
-ENOENT|File name or path not found.
-EINVAL|Invalid parameter.
+`EACCES`|Access denied. The file's permission setting does not allow specified access.
+`ENOENT`|File name or path not found.
+`EINVAL`|Invalid parameter.
 
 For more information, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## Remarks
 
-When used with files, the `_access_s` function determines whether the specified file exists and can be accessed as specified by the value of *mode*. When used with directories, `_access_s` determines only whether the specified directory exists. In Windows 2000 and later operating systems, all directories have read and write access.
+When used with files, the **_access_s** function determines whether the specified file exists and can be accessed as specified by the value of *mode*. When used with directories, **_access_s** determines only whether the specified directory exists. In Windows 2000 and later operating systems, all directories have read and write access.
 
 |mode value|Checks file for|
 |----------------|---------------------|
@@ -63,28 +63,28 @@ When used with files, the `_access_s` function determines whether the specified 
 |04|Read permission.|
 |06|Read and write permission.|
 
-Permission to read or write the file is not enough to ensure the ability to open a file. For example, if a file is locked by another process, it might not be accessible even though `_access_s` returns 0.
+Permission to read or write the file is not enough to ensure the ability to open a file. For example, if a file is locked by another process, it might not be accessible even though **_access_s** returns 0.
 
-`_waccess_s` is a wide-character version of `_access_s`, where the *path* argument to `_waccess_s` is a wide-character string. Otherwise, `_waccess_s` and `_access_s` behave identically.
+**_waccess_s** is a wide-character version of **_access_s**, where the *path* argument to **_waccess_s** is a wide-character string. Otherwise, **_waccess_s** and **_access_s** behave identically.
 
-These functions validate their parameters. If *path* is NULL or *mode* does not specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to EINVAL and return EINVAL.
+These functions validate their parameters. If *path* is NULL or *mode* does not specify a valid mode, the invalid parameter handler is invoked, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, these functions set `errno` to `EINVAL` and return `EINVAL`.
 
 ### Generic-Text Routine Mappings
 
 |Tchar.h routine|_UNICODE and _MBCS not defined|_MBCS defined|_UNICODE defined|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_taccess_s`|`_access_s`|`_access_s`|`_waccess_s`|
+|`_taccess_s`|**_access_s**|**_access_s**|**_waccess_s**|
 
 ## Requirements
 
 |Routine|Required header|Optional header|
 |-------------|---------------------|---------------------|
-|`_access_s`|\<io.h>|\<errno.h>|
-|`_waccess_s`|\<wchar.h> or \<io.h>|\<errno.h>|
+|**_access_s**|\<io.h>|\<errno.h>|
+|**_waccess_s**|\<wchar.h> or \<io.h>|\<errno.h>|
 
 ## Example
 
-This example uses `_access_s` to check the file named crt_access_s.c to see whether it exists and whether writing is allowed.
+This example uses **_access_s** to check the file named crt_access_s.c to see whether it exists and whether writing is allowed.
 
 ```C
 // crt_access_s.c
@@ -128,9 +128,9 @@ File crt_access_s.c does not have write permission.
 
 ## See also
 
-[File Handling](../../c-runtime-library/file-handling.md)<br/>
-[_access, _waccess](access-waccess.md)<br/>
-[_chmod, _wchmod](chmod-wchmod.md)<br/>
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
-[_open, _wopen](open-wopen.md)<br/>
-[_stat, _wstat Functions](stat-functions.md)<br/>
+[File Handling](../../c-runtime-library/file-handling.md)  
+[_access, _waccess](access-waccess.md)  
+[_chmod, _wchmod](chmod-wchmod.md)  
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)  
+[_open, _wopen](open-wopen.md)  
+[_stat, _wstat Functions](stat-functions.md)  
