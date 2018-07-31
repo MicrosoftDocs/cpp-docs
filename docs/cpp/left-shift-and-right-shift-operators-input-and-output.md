@@ -48,7 +48,6 @@ int main() {
     bitset<16> bitset3{short3};  
     cout << bitset3 << endl;  // 0000000000010000  
 }  
-  
 ```  
   
  If you left-shift a signed number so that the sign bit is affected, the result is undefined. The following example shows what happens in Visual C++ when a 1 bit is left-shifted into the sign bit position.  
@@ -212,6 +211,6 @@ int main() {
   
  The value of `E1 >> E2` is `E1` right-shifted `E2` bit positions. If `E1` has an unsigned type or if `E1` has a signed type and a non-negative value, the value of the result is the integral part of the quotient of **E1/2**<sup>**E2**</sup>. If `E1` has a signed type and a negative value, the resulting value is implementation-defined.  
   
-## See Also  
+## See also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

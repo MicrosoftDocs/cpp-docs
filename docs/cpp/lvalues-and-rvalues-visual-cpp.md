@@ -67,8 +67,7 @@ int main()
 
 The terms *lvalue* and *rvalue* are often used when you refer to object references. For more information about references, see [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md) and [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-## See Also
-
- [Basic Concepts](../cpp/basic-concepts-cpp.md)
- [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md)
+## See also
+ [Basic Concepts](../cpp/basic-concepts-cpp.md)  
+ [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md)  
  [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md)
