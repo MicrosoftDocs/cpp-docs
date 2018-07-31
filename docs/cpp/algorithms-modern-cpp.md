@@ -60,16 +60,16 @@ auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );
 ### Range-based for loops  
  The range-based **for** loop is a C++11 language feature, not a C++ Standard Library algorithm. But it deserves mention in this discussion about loops. Range-based **for** loops are an extension of the **for** keyword and provide a convenient and efficient way to write loops that iterate over a range of values. C++ Standard Library containers, strings, and arrays are ready-made for range-based **for** loops. To enable this new iteration syntax for your user-defined type, add the following support:  
   
--   A **begin** method that returns an iterator to the beginning of the structure and an **end** method that returns an iterator to the end of the structure.  
+-   A `begin` method that returns an iterator to the beginning of the structure and an `end` method that returns an iterator to the end of the structure.  
   
 -   Support in the iterator for these methods: **operator***, **operator!=**, and **operator++** (prefix version).  
   
  These methods can be either members or stand-alone functions.  
   
 ## Random Numbers  
- It's no secret that the old CRT **rand()** function has many flaws, which have been discussed at length in the C++ community. In modern C++, you don't have to deal with those shortcomings—nor do you have to invent your own uniformly distributed random number generator—because the tools for quickly and easily creating them are available in the C++ Standard Library, as shown in [\<random>](../standard-library/random.md).  
+ It's no secret that the old CRT `rand()` function has many flaws, which have been discussed at length in the C++ community. In modern C++, you don't have to deal with those shortcomings—nor do you have to invent your own uniformly distributed random number generator—because the tools for quickly and easily creating them are available in the C++ Standard Library, as shown in [\<random>](../standard-library/random.md).  
   
-## See Also  
+## See also  
  [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)
