@@ -23,19 +23,19 @@ inline INT32 CompareStringOrdinal(
 ```  
   
 #### Parameters  
- `lhs`  
+ *lhs*  
  The first HSTRING to compare.  
   
- `rhs`  
+ *rhs*  
  The second HSTRING to compare.  
   
 ## Return Value  
   
 |Value|Condition|  
 |-----------|---------------|  
-|-1|`lhs` is less than `rhs`.|  
-|0|`lhs` equals `rhs`.|  
-|1|`lhs` is greater than `rhs`.|  
+|-1|*lhs* is less than *rhs*.|  
+|0|*lhs* equals *rhs*.|  
+|1|*lhs* is greater than *rhs*.|  
   
 ## Remarks  
  Compares two specified HSTRING objects and returns an integer that indicates their relative position in a sort order.  

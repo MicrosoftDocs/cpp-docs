@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory::AddRef Method
-Increments the reference count for the current ClassFactory object.  
+Increments the reference count for the current **ClassFactory** object.  
   
 ## Syntax  
   

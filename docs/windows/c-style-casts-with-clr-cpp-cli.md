@@ -31,9 +31,9 @@ The following topic applies only to the Common Language Runtime.
 ## Remarks  
  A C-style cast is not recommended. When compiling with [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md), use [safe_cast](../windows/safe-cast-cpp-component-extensions.md).  
   
- The following sample shows a C-style cast that maps to a `const_cast`.  
+ The following sample shows a C-style cast that maps to a **const_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_1.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -45,9 +45,9 @@ int main() {
 }  
 ```  
   
- The following sample shows a C-style cast that maps to a `safe_cast`.  
+ The following sample shows a C-style cast that maps to a **safe_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_2.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -57,9 +57,9 @@ int main() {
 }  
 ```  
   
- The following sample shows a C-style cast that maps to a `safe_cast` plus `const_cast`.  
+ The following sample shows a C-style cast that maps to a **safe_cast** plus **const_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_3.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -78,9 +78,9 @@ int main() {
 }  
 ```  
   
- The following sample shows a C-style cast that maps to a `static_cast`.  
+ The following sample shows a C-style cast that maps to a **static_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_4.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -99,9 +99,9 @@ int main() {
 }  
 ```  
   
- The following sample shows a C-style cast that maps to a `static_cast` plus `const_cast`.  
+ The following sample shows a C-style cast that maps to a **static_cast** plus **const_cast**.  
   
-```  
+```cpp  
 // cstyle_casts_5.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -122,7 +122,7 @@ int main() {
   
  The following sample shows a C-style cast that maps to a run-time check.  
   
-```  
+```cpp  
 // cstyle_casts_6.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -143,7 +143,7 @@ int main() {
   
  The following sample shows an invalid C-style cast, which causes the compiler to issue an error.  
   
-```  
+```cpp  
 // cstyle_casts_7.cpp  
 // compile with: /clr  
 using namespace System;  

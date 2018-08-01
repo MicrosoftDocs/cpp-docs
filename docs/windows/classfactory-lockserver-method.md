@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory::LockServer Method
-Increments or decrements the number of underlying objects that are tracked by the current ClassFactory object.  
+Increments or decrements the number of underlying objects that are tracked by the current **ClassFactory** object.  
   
 ## Syntax  
   
@@ -24,8 +24,8 @@ STDMETHOD(
 ```  
   
 #### Parameters  
- `fLock`  
- `true` to increment the number of tracked objects. `false` to decrement the number of tracked objects.  
+ *fLock*  
+ **true** to increment the number of tracked objects. **false** to decrement the number of tracked objects.  
   
 ## Return Value  
  S_OK if successful; otherwise, E_FAIL.  

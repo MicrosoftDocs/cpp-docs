@@ -25,14 +25,14 @@ __forceinline bool CanCastTo(
 ```  
   
 #### Parameters  
- `riid`  
+ *riid*  
  An interface ID.  
   
- `ppv`  
+ *ppv*  
  A pointer to the last interface ID that was cast successfully.  
   
 ## Return Value  
- `true` if all the cast operations succeeded; otherwise, `false`.  
+ **true** if all the cast operations succeeded; otherwise, **false**.  
   
 ## Requirements  
  **Header:** implements.h  
