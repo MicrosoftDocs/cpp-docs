@@ -27,13 +27,13 @@ For project dialog boxes that are already associated with a class, you can take 
 
 2. In the [Properties window](/visualstudio/ide/reference/properties-window), click the **ControlEvents** button to display the list of common Windows events associated with the control. For example, the standard **OK** button on the **About** dialog box lists the following notification events:
 
-   - **BN_CLICKED**
+   - BN_CLICKED
 
-   - **BN_DOUBLECLICKED**
+   - BN_DOUBLECLICKED
 
-   - **BN_KILLFOCUS**
+   - BN_KILLFOCUS
 
-   - **BN_SETFOCUS**
+   - BN_SETFOCUS
 
     > [!NOTE]
     > Alternately, select the dialog box and click the **ControlEvents** button to display the list of common Windows events for all controls in the dialog box.

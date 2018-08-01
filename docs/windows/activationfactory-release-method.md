@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::Release Method
-Decrements the reference count of the current ActivationFactory object.  
+Decrements the reference count of the current **ActivationFactory** object.  
   
 ## Syntax  
   

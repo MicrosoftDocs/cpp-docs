@@ -26,14 +26,14 @@ HRESULT AsWeak(
 ```  
   
 #### Parameters  
- `T`  
- A pointer to the type of parameter `p`.  
+ *T*  
+ A pointer to the type of parameter *p*.  
   
- `p`  
+ *p*  
  An instance of a type.  
   
- `pWeak`  
- When this operation completes, a pointer to a weak reference to parameter `p`.  
+ *pWeak*  
+ When this operation completes, a pointer to a weak reference to parameter *p*.  
   
 ## Return Value  
  S_OK, if this operation is successful; otherwise, an error HRESULT that indicates the cause of the failure.  
