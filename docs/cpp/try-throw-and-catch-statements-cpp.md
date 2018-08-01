@@ -26,7 +26,6 @@ To implement exception handling in C++, you use **try**, **throw**, and **catch*
 ## Example  
   
 ```cpp 
-  
 MyData md;  
 try {  
    // Code that could throw an exception  
@@ -76,7 +75,7 @@ catch(...) {
 }  
 ```  
   
-## See Also  
+## See also  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [Unhandled C++ Exceptions](../cpp/unhandled-cpp-exceptions.md)   
