@@ -25,7 +25,7 @@ This topic lists attributes according to the C++ language elements to which they
 |[Parameter Attributes](../windows/parameter-attributes.md)|Applies to parameters of a method in a class or interface.|  
 |[Data Member Attributes](../windows/data-member-attributes.md)|Applies to the data members in a class, coclass, or interface.|  
 |[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)|Applies to the C++ keywords.|  
-|[Array Attributes](../windows/array-attributes.md)|Applies to arrays or **SAFEARRAY**s.|  
+|[Array Attributes](../windows/array-attributes.md)|Applies to arrays or `SAFEARRAY`s.|  
 |[Stand-Alone Attributes](../windows/stand-alone-attributes.md)|Operates more like a line of code but does not operate on a C++ keyword. Stand-alone attribute statements require a semicolon at the end of the line.|  
 |[Custom Attributes](../windows/custom-attributes-cpp.md)|Allows the user to extend metadata.|  
   

@@ -122,7 +122,7 @@ class CMyClass
   
  The following sample is the result of copying injected code into a source code file:  
   
-```  
+```cpp  
 // attr_injected.cpp  
 // compile with: comsupp.lib  
 #define _ATL_ATTRIBUTES 1  

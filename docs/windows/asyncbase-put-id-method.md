@@ -24,7 +24,7 @@ STDMETHOD(
 ```  
   
 #### Parameters  
- `id`  
+ *id*  
  A nonzero handle.  
   
 ## Return Value  
