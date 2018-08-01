@@ -20,9 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-
    __declspec(allocate("segname")) declarator  
-
 ```  
   
 ## Remarks  
@@ -51,6 +49,6 @@ int main() {
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)

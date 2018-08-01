@@ -197,5 +197,5 @@ int GetExtendedErrorStatus( char *message )
   
  With the preceding interface, several classes can use the services of this function by passing a memory location where they want the error message copied.  
   
-## See Also  
+## See also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)

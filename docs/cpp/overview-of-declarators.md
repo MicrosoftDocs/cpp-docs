@@ -162,13 +162,11 @@ int a, *b, c[5], **d, &e=a;
   - pointer-operator declarator   
   - ( declarator )  
 
-  
 - and *pointer-operator* is one of:  
   
   - \* [cv-qualifiers]  
   - & [cv-qualifiers] ::nested-name-specifier \* [cv-qualifiers]  
 
-  
  Because a declarator may contain declarators, it is possible to construct the more complex derived types such as arrays of pointers, functions returning arrays of function pointers, by using the above rules.  To form each step of the construction, start with the identifier representing the base data type and apply the syntax rule above with the previous expression as the `declarator`.  The order that you apply the syntax rules should be the reverse of the way the expression is stated in English.  If applying the *pointer-operator* syntax rule to an array or function expression, use parentheses if you want a pointer to the array or function, as in the last row in the table below.  
   
  The following example shows the construction of "pointer to array of 10 pointers to int".  

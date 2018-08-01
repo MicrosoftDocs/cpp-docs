@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
    __declspec( dllimport ) declarator  
    __declspec( dllexport ) declarator  
 ```  
@@ -68,6 +67,6 @@ DllExport int n;
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)

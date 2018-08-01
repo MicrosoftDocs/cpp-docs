@@ -32,7 +32,6 @@ An initializer specifies the initial value of a variable. You can initialize var
     ```cpp  
     Point get_new_point(int x, int y) { return { x, y }; }  
     Point get_new_point(int x, int y) { return Point{ x, y }; }  
-  
     ```  
   
  Initializers may take these forms:  
@@ -79,7 +78,7 @@ An initializer specifies the initial value of a variable. You can initialize var
   
 -   Char variables are initialized to `'\0'`.  
   
--   Pointers are initialized to `nullptr`.  
+-   Pointers are initialized to **nullptr**.  
   
 -   Arrays, [POD](../standard-library/is-pod-class.md) classes, structs, and unions have their members initialized to a zero value.  
   
@@ -200,7 +199,6 @@ int main() {
     int a{};     // value of a is 0  
     double b{};  // value of b is 0.00000000000000000  
 }  
-  
 ```  
   
 ### Copy initialization  
@@ -519,4 +517,3 @@ Decision Graph for Initialization of Reference Types
   
 ### Initialization of external variables  
  Declarations of automatic, static, and external variables can contain initializers. However, declarations of external variables can contain initializers only if the variables are not declared as **extern**.
-  

@@ -20,4 +20,3 @@ This section describes Microsoft-specific extensions to C++ in the following are
 -   Extended storage-class attributes declared with the [__declspec](../cpp/declspec.md) keyword  
   
 -   The [__w64](../cpp/w64.md) keyword  
-  

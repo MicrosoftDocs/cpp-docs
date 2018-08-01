@@ -73,7 +73,6 @@ public:
       return nSE;  
    }  
 };  
-  
 ```  
   
  To use this class, you install a custom C exception translation function that is called by the internal exception handling mechanism each time a C exception is thrown. Within your translation function, you can throw any typed exception (perhaps an `SE_Exception` type, or a class type derived from `SE_Exception`) that can be caught by an appropriate matching C++ **catch** handler. The translation function can simply return, which indicates that it did not handle the exception. If the translation function itself raises a C exception, [terminate](../c-runtime-library/reference/terminate-crt.md) is called.  
@@ -136,5 +135,5 @@ Caught a __try exception with SE_Exception.
 nSE = 0xc0000094  
 ```  
   
-## See Also  
+## See also  
  [Mixing C (Structured) and C++ Exceptions](../cpp/mixing-c-structured-and-cpp-exceptions.md)

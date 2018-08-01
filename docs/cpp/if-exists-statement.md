@@ -27,8 +27,8 @@ statements
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`identifier`|The identifier whose existence you want to test.|  
-|`statements`|One or more statements to execute if `identifier` exists.|  
+|*identifier*|The identifier whose existence you want to test.|  
+|*statements*|One or more statements to execute if *identifier* exists.|  
   
 ## Remarks  
   
@@ -116,7 +116,7 @@ g_bFlag = 1
 C::f exists  
 ```  
   
-## See Also  
+## See also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [__if_not_exists Statement](../cpp/if-not-exists-statement.md)

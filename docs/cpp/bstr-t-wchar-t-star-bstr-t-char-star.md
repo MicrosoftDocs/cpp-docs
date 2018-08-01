@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 operator const wchar_t*( ) const throw( );   
 operator wchar_t*( ) const throw( );   
 operator const char*( ) const;   
@@ -32,5 +31,5 @@ operator char*( ) const;
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

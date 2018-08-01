@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 template<typename _OtherIID>   
 _com_ptr_t& operator=( const _com_ptr_t<_OtherIID>& p );  
   
@@ -62,5 +61,5 @@ _com_ptr_t& operator=( const _variant_t& varSrc );
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

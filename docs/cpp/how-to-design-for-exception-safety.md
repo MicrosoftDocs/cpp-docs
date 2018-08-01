@@ -77,7 +77,6 @@ private:
 public:  
     SPShapeResourceClass() : m_p(new Circle), m_q(new Triangle) { }  
 };  
-  
 ```  
   
 ### Use the RAII Idiom to Manage Resources  
@@ -110,6 +109,6 @@ public:
   
 -   Do not allow any exceptions to escape from a destructor. A basic axiom of C++ is that destructors should never allow an exception to propagate up the call stack. If a destructor must perform a potentially exception-throwing operation, it must do so in a try catch block and swallow the exception. The standard library provides this guarantee on all destructors it defines.  
   
-## See Also  
+## See also  
  [Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)   
  [How to: Interface Between Exceptional and Non-Exceptional Code](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)

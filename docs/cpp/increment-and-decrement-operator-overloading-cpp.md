@@ -120,7 +120,7 @@ int main()
 }  
 ```  
   
- There is no syntax for using the increment or decrement operators to pass these values other than explicit invocation, as shown in the preceding code. A more straightforward way to implement this functionality is to overload the addition/assignment operator (`+=`).  
+ There is no syntax for using the increment or decrement operators to pass these values other than explicit invocation, as shown in the preceding code. A more straightforward way to implement this functionality is to overload the addition/assignment operator (**+=**).  
   
-## See Also  
+## See also  
  [Operator Overloading](../cpp/operator-overloading.md)

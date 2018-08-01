@@ -17,7 +17,6 @@ The function-call operator, invoked using parentheses, is a binary operator.
 ## Syntax  
   
 ```  
-  
 primary-expression ( expression-list )  
 ```  
   
@@ -76,5 +75,5 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Operator Overloading](../cpp/operator-overloading.md)

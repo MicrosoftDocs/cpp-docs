@@ -52,7 +52,6 @@ public:
  Some declarations that are not definitions are:  
   
 ```cpp 
-  
 extern int i;  
 char *strchr( const char *Str, const char Target );  
 ```  
@@ -85,6 +84,6 @@ char *strchr( const char *Str, const char Target );
     }  
     ```  
   
-## See Also  
+## See also  
  [Basic Concepts](../cpp/basic-concepts-cpp.md)   
  [Point of Declaration](../cpp/point-of-declaration-in-cpp.md)

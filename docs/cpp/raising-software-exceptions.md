@@ -41,7 +41,7 @@ Some of the most common sources of program errors are not flagged as exceptions 
 #define STATUS_FILE_BAD_FORMAT        0xE0000002  
 ```  
   
- After you have defined an exception code, you can use it to raise an exception. For example, the following code raises the STATUS_INSUFFICIENT_MEM exception in response to a memory allocation problem:  
+ After you have defined an exception code, you can use it to raise an exception. For example, the following code raises the `STATUS_INSUFFICIENT_MEM` exception in response to a memory allocation problem:  
   
 ```cpp 
 lpstr = _malloc( nBufferSize );  
@@ -61,6 +61,6 @@ __except (GetExceptionCode() == STATUS_INSUFFICIENT_MEM ||
         GetExceptionCode() == STATUS_FILE_BAD_FORMAT )  
 ```  
   
-## See Also  
+## See also  
  [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)   
  [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

@@ -20,18 +20,16 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 GUID GUID( ) const throw( );  
-  
 ```  
   
 ## Return Value  
- Returns the result of `IErrorInfo::GetGUID` for the `IErrorInfo` object recorded within the `_com_error` object. If no `IErrorInfo` object is recorded, it returns GUID_NULL.  
+ Returns the result of `IErrorInfo::GetGUID` for the `IErrorInfo` object recorded within the `_com_error` object. If no `IErrorInfo` object is recorded, it returns `GUID_NULL`.  
   
 ## Remarks  
  Any failure while calling the `IErrorInfo::GetGUID` method is ignored.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_error Class](../cpp/com-error-class.md)

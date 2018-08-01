@@ -20,8 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-      _com_error& operator = (  
+_com_error& operator = (  
    const _com_error& that   
 ) throw ( );  
 ```  
@@ -32,5 +31,5 @@ ms.workload: ["cplusplus"]
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_error Class](../cpp/com-error-class.md)

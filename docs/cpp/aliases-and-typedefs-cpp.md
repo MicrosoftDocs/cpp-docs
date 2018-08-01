@@ -21,10 +21,10 @@ using identifier = type;
 ```  
   
 ## Remarks  
- `identifier`  
+ *identifier*  
  The name of the alias.  
   
- `type`  
+ *type*  
  The type identifier you are creating an alias for.  
   
  An alias does not introduce a new type and cannot change the meaning of an existing type name.  
@@ -167,7 +167,6 @@ int main()
 // typedef UL back in scope  
 ```  
  
-  
 ```cpp 
 // typedef_specifier1.cpp  
 typedef char FlagType;  

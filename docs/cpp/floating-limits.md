@@ -39,5 +39,5 @@ ms.workload: ["cplusplus"]
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Integer Limits](../cpp/integer-limits.md)

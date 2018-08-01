@@ -18,7 +18,6 @@ Associates a handler method with an event.
 ## Syntax  
   
 ```  
-  
 long __hook(  
    &SourceClass::EventMethod,  
    source,  
@@ -91,7 +90,7 @@ long __hook(
 ## Example  
  See [Event Handling in Native C++](../cpp/event-handling-in-native-cpp.md) and [Event Handling in COM](../cpp/event-handling-in-com.md) for samples.  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Event Handling](../cpp/event-handling.md)   
  [event_source](../windows/event-source.md)   

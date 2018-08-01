@@ -19,7 +19,7 @@ Pointers are declared using the following sequence.
 [ms-modifier] declarator ;  
 ```  
   
- where any valid pointer declarator may be used for `declarator`.  The syntax for a simple pointer declarator is as follows:  
+ where any valid pointer declarator may be used for `declarator`. The syntax for a simple pointer declarator is as follows:  
   
 ```  
 * [cv-qualifiers] identifier [= expression]  
@@ -236,8 +236,7 @@ int main() {
 ```  
   
 ```Output  
-  
-      a  
+a  
 45  
 d  
 a  
@@ -255,6 +254,6 @@ node 2 = 789
 a (add node)  d (display list)  q (quit)  
 ```  
   
-## See Also  
+## See also  
  [Indirection Operator: *](../cpp/indirection-operator-star.md)   
  [Address-of Operator: &](../cpp/address-of-operator-amp.md)

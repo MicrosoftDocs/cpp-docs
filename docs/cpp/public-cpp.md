@@ -61,6 +61,6 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Controlling Access to Class Members](member-access-control-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

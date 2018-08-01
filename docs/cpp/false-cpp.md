@@ -35,5 +35,5 @@ int main()
 0  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

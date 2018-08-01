@@ -18,7 +18,6 @@ To customize how class members are initialized, or to invoke functions when an o
 Constructors can optionally take a member init list. This is a more efficient way to initialize class members than assigning values in the constructor body. The following example shows a class `Box` with three overloaded constructors. The last two use member init lists:
 
 ```cpp
-
 class Box {
 public:
     // Default constructor
@@ -43,13 +42,11 @@ private:
     int m_length{ 0 };
     int m_height{ 0 };
 };
-
 ```
 
 When you declare an instance of a class, the compiler chooses which constructor to invoke based on the rules of overload resolution:
 
 ```cpp
-
 int main()
 {
     Box b; // Calls Box()
@@ -61,7 +58,6 @@ int main()
     // Using function-style notation:
     Box b4(2, 4, 6); // Calls Box(int, int, int)
 }
-
 ```
 
 - Constructors may be declared as **inline**, [explicit](#explicit_constructors), **friend** or [constexpr](#constexpr_constructors).
@@ -75,7 +71,6 @@ A constructor can optionally have a member initializer list, which initializes c
 Using a member intializer list is preferred over assigning values in the body of the constructor because it directly initializes the member. In the following example shows the member initializer list consists of all the **identifier(argument)** expressions after the colon:
 
 ```cpp
-  
     Box(int width, int length, int height)
         : m_width(width), m_length(length), m_height(height)
     {}
@@ -121,7 +116,6 @@ int main() {
     Box box1; // Invoke compiler-generated constructor
     cout << "box1.Volume: " << box1.Volume() << endl; // Outputs 0
 }
-
 ```
 
 If you rely on an implicit default constructor, be sure to initialize members in the class definition, as shown in the previous example. Without those initializers, the members would be uninitialized and the Volume() call would produce a garbage value. In general, it is good practice to initialize members in this way even when not relying on an implicit default constructor.
@@ -129,7 +123,6 @@ If you rely on an implicit default constructor, be sure to initialize members in
 You can prevent the compiler from generating an implicit default constructor by defining it as [deleted](#explicitly_defaulted_and_deleted_constructors):
 
 ```cpp
-
     // Default constructor
     Box() = delete;
 
@@ -168,14 +161,12 @@ int main(){
     Box box2{ 2, 3, 4 };
     Box box3; // C2512: no appropriate default constructor available
 }
-
 ```
 
 If a class has no default constructor, an array of objects of that class cannot be constructed by using square-bracket syntax alone. For example, given the previous code block, an array of Boxes cannot be declared like this:
 
 ```cpp
 Box boxes[3]; // C2512: no appropriate default constructor available
-
 ```
 
 However, you can use a set of initializer lists to initialize an array of Box objects:
@@ -193,7 +184,6 @@ A *copy constructor* initializes an object by copying the member values from an 
 A copy constructor may have one of these signatures:
 
 ```cpp
-
     Box(Box& other); // Avoid if possible--allows modification of other.
     Box(const Box& other);
     Box(volatile Box& other);
@@ -228,7 +218,6 @@ The compiler chooses a move constructor in certain situations where the object i
 #include <string>
 #include <algorithm>
 using namespace std;
-
 
 class Box {
 public:
@@ -286,8 +275,6 @@ int main()
     cin >> ch; // keep window open
     return 0;
 }
-
-
 ```
 
 If a class does not define a move constructor, the compiler generates an implicit one if there is no user-declared copy constructor, copy assignment operator, move assignment operator, or destructor. If no explicit or implicit move constructor is defined, operations that would otherwise use a move constructor use the copy constructor instead. If a class declares a move constructor or move assignment operator, the implicitly declared copy constructor is defined as deleted.
@@ -326,7 +313,6 @@ A constructor may be declared as [constexpr](constexpr-cpp.md) if
 - all non-static data members and base class sub-objects are initialized;
 - if the class is (a) a union having variant members, or (b) has anonymous unions, only one of the union members is initialized;
 - every non-static data member of class type, and all base-class sub-objects have a constexpr constructor
-
 
 ## <a name="init_list_constructors"></a> Initializer list constructors
 
@@ -373,13 +359,11 @@ private:
 }
 //elsewhere...
     ShippingOrder so(42, 10.8);
-
 ```
 
 Such conversions can be useful in some cases, but more often they can lead to subtle but serious errors in your code. As a general rule, you should use the **explicit** keyword on a constructor (and user-defined operators) to prevent this kind of implicit type conversion:
 
 ```cpp
-
 explicit Box(int size): m_width(size), m_length(size), m_height(size){}
 ```
 
@@ -400,7 +384,6 @@ A constructor performs its work in this order:
 The following example shows the order in which base class and member constructors are called in the constructor for a derived class. First, the base constructor is called, then the base-class members are initialized in the order in which they appear in the class declaration, and then the derived constructor is called.
 
 ```cpp
-
 #include <iostream>
 
 using namespace std;
@@ -438,12 +421,11 @@ private:
 int main() {
     DerivedContainer dc;
 }
-
 ```
 
 Here's the output:
 
-```output
+```Output
 Contained1 ctor
 Contained2 ctor
 BaseContainer ctor
@@ -451,7 +433,7 @@ Contained3 ctor
 DerivedContainer ctor
 ```
 
-A derived class constructor always calls a base class constructor, so that it can rely on completely constructed base classes before any extra work is done. The base class constructors are called in order of derivation—for example, if ClassA is derived from ClassB, which is derived from ClassC, the ClassC constructor is called first, then the ClassB constructor, then the ClassA constructor.
+A derived class constructor always calls a base class constructor, so that it can rely on completely constructed base classes before any extra work is done. The base class constructors are called in order of derivation—for example, if `ClassA` is derived from `ClassB`, which is derived from `ClassC`, the `ClassC` constructor is called first, then the `ClassB` constructor, then the `ClassA` constructor.
 
 If a base class does not have a default constructor, you must supply the base class constructor parameters in the derived class constructor:
 
@@ -525,18 +507,15 @@ public:
 int main() {
     DerivedClass dc;
 }
-
 ```
 
 You should expect the following output:
 
-```output
-
+```Output
 BaseClass1 ctor
 BaseClass2 ctor
 BaseClass3 ctor
 DerivedClass ctor
-
 ```
 
 ## <a name="virtual_functions_in_constructors"></a> Virtual functions in constructors
@@ -575,7 +554,7 @@ int main() {
 
 Here's the output:
 
-```output
+```Output
 BaseClass print_it
 Derived Class print_it
 ```
@@ -654,7 +633,6 @@ Derived d1(5) calls: Base(int)
 Derived d1('c') calls: Base(char)
 Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
-
 ```
 
 The using statement brings into scope all constructors from the base class except those that have an identical signature to constructors in the derived class. In general, it is best to use inheriting constructors when the derived class declares no new data members or constructors.
@@ -667,7 +645,6 @@ class Derived : T {
     using T::T;   // declare the constructors from T
     // ...
 };
-
 ```
 
 A deriving class cannot inherit from multiple base classes if those base classes have constructors that have an identical signature.
