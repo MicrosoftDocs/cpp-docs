@@ -65,7 +65,7 @@ DllExport int n;
   
 -   [Using dllimport and dllexport in C++ Classes](../cpp/using-dllimport-and-dllexport-in-cpp-classes.md)  
   
- **END Microsoft Specific**  
+**END Microsoft Specific**  
   
 ## See also  
  [__declspec](../cpp/declspec.md)   

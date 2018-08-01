@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Considerations for Writing Prolog/Epilog Code
-## Microsoft Specific  
+ **Microsoft Specific**  
  Before writing your own prolog and epilog code sequences, it is important to understand how the stack frame is laid out. It is also useful to know how to use the `__LOCAL_SIZE` symbol.  
   
 ##  <a name="_pluslang_c.2b2b_.stack_frame_layout"></a> Stack Frame Layout  

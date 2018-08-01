@@ -108,5 +108,5 @@ func( i, ++i );
   
 -   The expression in a return statement. The expression is completely evaluated and all side effects completed before control returns to the calling function.  
   
-## See Also  
+## See also  
  [Expressions](../cpp/expressions-cpp.md)

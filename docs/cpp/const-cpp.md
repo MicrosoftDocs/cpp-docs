@@ -120,7 +120,7 @@ int main()
 }  
 ```  
   
-## C and C++ const Differences  
+## C and C++ const differences  
  When you declare a variable as **const** in a C source code file, you do so as:  
   
 ```cpp 
@@ -158,7 +158,7 @@ extern "C" const int x=10;
   
 -   [volatile](../cpp/volatile-cpp.md)  
   
--   [#define](../preprocessor/hash-define-directive-c-cpp.md).  
+-   [#define](../preprocessor/hash-define-directive-c-cpp.md)  
   
 ## See also  
  [Keywords](../cpp/keywords-cpp.md)

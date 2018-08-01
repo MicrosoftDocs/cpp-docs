@@ -17,7 +17,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 template<typename _InterfaceType> bool operator==(  
    int NULL,  
    _com_ptr_t<_InterfaceType>& p   
@@ -74,7 +73,7 @@ template<typename _Interface,
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *i*  
  A raw interface pointer.  
   
@@ -86,5 +85,5 @@ template<typename _Interface,
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)
