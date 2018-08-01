@@ -18,9 +18,7 @@ Specifies that the user-defined type is a control.
 ## Syntax  
   
 ```  
-  
 [control]  
-  
 ```  
   
 ## Remarks  
@@ -28,7 +26,7 @@ Specifies that the user-defined type is a control.
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_control.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -49,7 +47,7 @@ class CTest : public ICustom {};
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -59,4 +57,4 @@ class CTest : public ICustom {};
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   

@@ -24,11 +24,11 @@ explicit CriticalSection(
 ```  
   
 #### Parameters  
- `spincount`  
+ *spincount*  
  The spin count for the critical section object. The default value is 0.  
   
 ## Remarks  
- For more information about critical sections and spincounts, see the **InitializeCriticalSectionAndSpinCount** function in the Synchronization section of the Windows API documenation.  
+ For more information about critical sections and spincounts, see the `InitializeCriticalSectionAndSpinCount` function in the **Synchronization** section of the Windows API documenation.  
   
 ## Requirements  
  **Header:** corewrappers.h  

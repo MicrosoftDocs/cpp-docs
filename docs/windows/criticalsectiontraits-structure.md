@@ -27,14 +27,14 @@ struct CriticalSectionTraits;
   
 |Name|Description|  
 |----------|-----------------|  
-|`Type`|A `typedef` that defines a pointer to a critical section. `Type` is defined as `typedef CRITICAL_SECTION* Type;`.|  
+|`Type`|A **typedef** that defines a pointer to a critical section. `Type` is defined as `typedef CRITICAL_SECTION* Type;`.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CriticalSectionTraits::GetInvalidValue Method](../windows/criticalsectiontraits-getinvalidvalue-method.md)|Specializes a CriticalSection template so that the template is always invalid.|  
-|[CriticalSectionTraits::Unlock Method](../windows/criticalsectiontraits-unlock-method.md)|Specializes a CriticalSection template so that it supports releasing ownership of the specified critical section object.|  
+|[CriticalSectionTraits::GetInvalidValue Method](../windows/criticalsectiontraits-getinvalidvalue-method.md)|Specializes a `CriticalSection` template so that the template is always invalid.|  
+|[CriticalSectionTraits::Unlock Method](../windows/criticalsectiontraits-unlock-method.md)|Specializes a `CriticalSection` template so that it supports releasing ownership of the specified critical section object.|  
   
 ## Inheritance Hierarchy  
  `CriticalSectionTraits`  

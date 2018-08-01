@@ -18,8 +18,7 @@ Defines metadata for an object in the type library.
 ## Syntax  
   
 ```  
-  
-      [ custom(  
+[ custom(  
    uuid,   
    value  
 ) ];  
@@ -43,7 +42,7 @@ Defines metadata for an object in the type library.
   
 |||  
 |-|-|  
-|**Applies to**|Non-COM `interface`, **class**, `enum`s, `idl_module` methods, interface members, interface parameters, `typedef`s, **union**s, `struct`s|  
+|**Applies to**|Non-COM **interface**, **class**, **enum**s, `idl_module` methods, interface members, interface parameters, **typedef**s, **union**s, **struct**s|  
 |**Repeatable**|Yes|  
 |**Required attributes**|**coclass** (when used on class)|  
 |**Invalid attributes**|None|  
@@ -57,4 +56,4 @@ Defines metadata for an object in the type library.
  [Parameter Attributes](../windows/parameter-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
+ [Interface Attributes](../windows/interface-attributes.md)   
