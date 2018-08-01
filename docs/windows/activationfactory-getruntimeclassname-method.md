@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::GetRuntimeClassName Method
-Gets the runtime class name of the object that the current ActivationFactory instantiates.  
+Gets the runtime class name of the object that the current **ActivationFactory** instantiates.  
   
 ## Syntax  
   
@@ -24,8 +24,8 @@ STDMETHOD(
 ```  
   
 #### Parameters  
- `runtimeName`  
- When this operation completes, a handle to a string that contains the runtime class name of the object that the current ActivationFactory instantiates.  
+ *runtimeName*  
+ When this operation completes, a handle to a string that contains the runtime class name of the object that the current **ActivationFactory** instantiates.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that describes the failure.  

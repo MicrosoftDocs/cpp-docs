@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::GetTrustLevel Method
-Gets the trust level of the object that the current ActivationFactory instantiates.  
+Gets the trust level of the object that the current **ActivationFactory** instantiates.  
   
 ## Syntax  
   
@@ -24,11 +24,11 @@ STDMETHOD(
 ```  
   
 #### Parameters  
- `trustLvl`  
- When this operation completes, the trust level of the runtime class that the ActivationFactory instantiates.  
+ *trustLvl*  
+ When this operation completes, the trust level of the runtime class that the **ActivationFactory** instantiates.  
   
 ## Return Value  
- S_OK if successful; otherwise, an assertion error is emitted and `trustLvl` is set to FullTrust.  
+ S_OK if successful; otherwise, an assertion error is emitted and *trustLvl* is set to FullTrust.  
   
 ## Requirements  
  **Header:** module.h  
