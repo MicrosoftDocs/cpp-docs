@@ -18,9 +18,7 @@ Used for Visual Basic code optimization.
 ## Syntax  
   
 ```  
-  
 [defaultcollelem]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Used for Visual Basic code optimization.
 ## Example  
  The following code shows an interface method using the **defaultcollelem** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_defaultcollelem.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -59,4 +57,4 @@ __interface IMyForm
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+ [Method Attributes](../windows/method-attributes.md)   

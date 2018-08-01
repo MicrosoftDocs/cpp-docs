@@ -18,14 +18,13 @@ Defines an interface as the default vtable interface for a COM object.
 ## Syntax  
   
 ```  
-  
-      [ defaultvtable(  
+[ defaultvtable(  
    interface  
 ) ]  
 ```  
   
 #### Parameters  
- `interface`  
+ *interface*  
  The designated interface that you want to have the default vtable for the COM object.  
   
 ## Remarks  
@@ -34,7 +33,7 @@ Defines an interface as the default vtable interface for a COM object.
 ## Example  
  The following code shows attributes on a class that use **defaultvtable** to specify a default interface:  
   
-```  
+```cpp  
 // cpp_attr_ref_defaultvtable.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -66,7 +65,7 @@ class CMyC3 : public IMyI3 {};
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|**coclass**|  
 |**Invalid attributes**|None|  
@@ -75,4 +74,4 @@ class CMyC3 : public IMyI3 {};
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
+ [Class Attributes](../windows/class-attributes.md)   

@@ -121,7 +121,7 @@ If *bulk_fetch* is less than one, `SetRows` will return zero.
 ## Remarks  
 **db_command** creates a [CCommand](../data/oledb/ccommand-class.md) object, which is used by an OLE DB consumer to execute a command.  
   
-You can use **db_command** with either class or function scope; the main difference is the scope of the `CCommand` object. With function scope, data such as bindings terminate at function end. Both class and function scope usages involve the OLE DB Consumer Template class **CCommand\<>**, but the template arguments differ for the function and class cases. In the function case, bindings will be made to an **Accessor** that comprises local variables, while the class usage will infer a `CAccessor`-derived class as the argument. When used as a class attribute, **db_command** works in conjunction with **db_column**.  
+You can use **db_command** with either class or function scope; the main difference is the scope of the `CCommand` object. With function scope, data such as bindings terminate at function end. Both class and function scope usages involve the OLE DB Consumer Template class `CCommand<>`, but the template arguments differ for the function and class cases. In the function case, bindings will be made to an **Accessor** that comprises local variables, while the class usage will infer a `CAccessor`-derived class as the argument. When used as a class attribute, **db_command** works in conjunction with **db_column**.  
   
 **db_command** can be used to execute commands that do not return a result set.  
   

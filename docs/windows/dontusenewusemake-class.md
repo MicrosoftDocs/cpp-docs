@@ -22,7 +22,7 @@ class DontUseNewUseMake;
 ```  
   
 ## Remarks  
- Prevents using operator `new` in RuntimeClass. Consequently, you must use the [Make function](../windows/make-function.md) instead.  
+ Prevents using operator **new** in RuntimeClass. Consequently, you must use the [Make function](../windows/make-function.md) instead.  
   
 ## Members  
   
@@ -30,7 +30,7 @@ class DontUseNewUseMake;
   
 |Name|Description|  
 |----------|-----------------|  
-|[DontUseNewUseMake::operator new Operator](../windows/dontusenewusemake-operator-new-operator.md)|Overloads operator `new` and prevents it from being used in RuntimeClass.|  
+|[DontUseNewUseMake::operator new Operator](../windows/dontusenewusemake-operator-new-operator.md)|Overloads operator **new** and prevents it from being used in RuntimeClass.|  
   
 ## Inheritance Hierarchy  
  `DontUseNewUseMake`  

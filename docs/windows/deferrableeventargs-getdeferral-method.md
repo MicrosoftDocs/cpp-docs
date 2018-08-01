@@ -20,7 +20,7 @@ HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
 ```  
   
 #### Parameters  
- `result`  
+ *result*  
  A pointer that will reference the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=526520) object when the call completes.  
   
 ## Return Value  
