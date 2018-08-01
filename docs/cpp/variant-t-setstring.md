@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 void SetString(const char* pSrc);  
 ```  
   
@@ -33,5 +32,5 @@ void SetString(const char* pSrc);
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)
