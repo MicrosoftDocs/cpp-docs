@@ -24,11 +24,11 @@ class AgileEventSource
 ```
 
 ## Parameters  
- `TDelegateInterface`  
+ *TDelegateInterface*  
 
  The interface to a delegate that represents an event handler.
 
- `TEventSourceOptions`  
+ *TEventSourceOptions*  
  An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
 
 ## Remarks
@@ -69,11 +69,10 @@ HRESULT Add(
 
 ### Parameters
 
-*delegateInterface*
-
+*delegateInterface*  
 The interface to a delegate object, which represents an event handler.
 
-*token*
+*token*  
 When this operation completes, a handle that represents the event. Use this token as the parameter to the Remove() method to discard the event handler.
 
 ### Return Value
@@ -82,5 +81,4 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 
 ## See Also
-
  [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

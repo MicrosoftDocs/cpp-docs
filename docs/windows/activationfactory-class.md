@@ -27,17 +27,17 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
 ```  
   
 #### Parameters  
- `I0`  
+ *I0*  
  The zeroth interface.  
   
- `I1`  
+ *I1*  
  The first interface.  
   
- `I2`  
+ *I2*  
  The second interface.  
   
 ## Remarks  
- ActivationFactory provides registration methods and basic functionality for the IActivationFactory interface. ActivationFactory also enables you to provide a custom factory implementation.  
+ **ActivationFactory** provides registration methods and basic functionality for the `IActivationFactory` interface. **ActivationFactory** also enables you to provide a custom factory implementation.  
   
  The following code fragment symbolically illustrates how to use ActivationFactory.  
   
@@ -53,18 +53,18 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
   
 |Name|Description|  
 |----------|-----------------|  
-|[ActivationFactory::ActivationFactory Constructor](../windows/activationfactory-activationfactory-constructor.md)|Initializes the ActivationFactory class.|  
+|[ActivationFactory::ActivationFactory Constructor](../windows/activationfactory-activationfactory-constructor.md)|Initializes the **ActivationFactory** class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ActivationFactory::AddRef Method](../windows/activationfactory-addref-method.md)|Increments the reference count of the current ActivationFactory object.|  
+|[ActivationFactory::AddRef Method](../windows/activationfactory-addref-method.md)|Increments the reference count of the current **ActivationFactory** object.|  
 |[ActivationFactory::GetIids Method](../windows/activationfactory-getiids-method.md)|Retrieves an array of implemented interface IDs.|  
-|[ActivationFactory::GetRuntimeClassName Method](../windows/activationfactory-getruntimeclassname-method.md)|Gets the runtime class name of the object that the current ActivationFactory instantiates.|  
+|[ActivationFactory::GetRuntimeClassName Method](../windows/activationfactory-getruntimeclassname-method.md)|Gets the runtime class name of the object that the current **ActivationFactory** instantiates.|  
 |[ActivationFactory::GetTrustLevel Method](../windows/activationfactory-gettrustlevel-method.md)|Gets the trust level of the object that the current ActivationFactory instantiates.|  
 |[ActivationFactory::QueryInterface Method](../windows/activationfactory-queryinterface-method.md)|Retrieves a pointer to the specified interface.|  
-|[ActivationFactory::Release Method](../windows/activationfactory-release-method.md)|Decrements the reference count of the current ActivationFactory object.|  
+|[ActivationFactory::Release Method](../windows/activationfactory-release-method.md)|Decrements the reference count of the current **ActivationFactory** object.|  
   
 ## Inheritance Hierarchy  
  `I0`  
