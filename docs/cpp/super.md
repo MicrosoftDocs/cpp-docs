@@ -20,9 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 __super::member_function();  
-  
 ```  
   
 ## Remarks  
@@ -59,5 +57,5 @@ struct D : B1, B2 {
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

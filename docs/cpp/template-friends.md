@@ -251,6 +251,5 @@ A
 a  
 ```  
   
-## See Also  
-
-[Default Arguments](../cpp/default-arguments.md)
+## See also  
+ [Default Arguments](../cpp/default-arguments.md)

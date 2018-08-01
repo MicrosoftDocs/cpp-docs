@@ -35,5 +35,4 @@ For non-static class functions, if the function is defined out-of-line, the call
 **END Microsoft Specific**
 
 ## See also
-
-- [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)
+ [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)

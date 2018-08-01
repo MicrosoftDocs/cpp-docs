@@ -57,7 +57,7 @@ Although Windows and Visual C++ support structured exception handling (SEH), we 
 -   [Using Structured Exception Handling with C++](../cpp/using-structured-exception-handling-with-cpp.md)  
   
 ## Example  
- As stated earlier, destructors for local objects are called if you use SEH in a C++ program and compile it by using the **/EH** option with certain modifiers—for example, **/EHsc** and **/EHa**. However, the behavior during execution may not be what you expect if you are also using C++ exceptions. The following example demonstrates these behavioral differences.  
+ As stated earlier, destructors for local objects are called if you use SEH in a C++ program and compile it by using the `/EH` option with certain modifiers—for example, `/EHsc` and `/EHa`. However, the behavior during execution may not be what you expect if you are also using C++ exceptions. The following example demonstrates these behavioral differences.  
   
 ```cpp  
 #include <stdio.h>  
@@ -104,7 +104,6 @@ int main()
   
     return 0;  
 }  
-  
 ```  
   
  If you use **/EHsc** to compile this code but the local test control `CPPEX` is undefined, there is no execution of the `TestClass` destructor and the output looks like this:  
@@ -134,7 +133,7 @@ Executing SEH __except block
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [\<exception>](../standard-library/exception.md)   
