@@ -22,7 +22,7 @@ operator void**() const;
 ```  
   
 ## Remarks  
- Deletes the current ComPtrRef object, casts the pointer to the interface that was represented by the ComPtrRef object as a pointer-to-pointer-to `void`, and then returns the cast pointer.  
+ Deletes the current **ComPtrRef** object, casts the pointer to the interface that was represented by the **ComPtrRef** object as a pointer-to-pointer-to **void**, and then returns the cast pointer.  
   
 ## Requirements  
  **Header:** client.h  

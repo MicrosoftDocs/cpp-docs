@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSection::~CriticalSection Destructor
-Deinitializes and destroys the current CriticalSection object.  
+Deinitializes and destroys the current **CriticalSection** object.  
   
 ## Syntax  
   

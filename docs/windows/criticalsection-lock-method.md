@@ -26,7 +26,7 @@ SyncLock Lock();
 ```  
   
 #### Parameters  
- `cs`  
+ *cs*  
  A user-specified critical section object.  
   
 ## Return Value  

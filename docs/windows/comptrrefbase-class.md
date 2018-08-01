@@ -25,8 +25,8 @@ class ComPtrRefBase;
 ```  
   
 #### Parameters  
- `T`  
- A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the ComPtr.  
+ *T*  
+ A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the **ComPtr**.  
   
 ## Remarks  
  Represents the base class for the [ComPtrRef](../windows/comptrref-class.md) class.  
@@ -37,7 +37,7 @@ class ComPtrRefBase;
   
 |Name|Description|  
 |----------|-----------------|  
-|`InterfaceType`|A synonym for the type of template parameter `T`.|  
+|`InterfaceType`|A synonym for the type of template parameter *T*.|  
   
 ### Public Operators  
   

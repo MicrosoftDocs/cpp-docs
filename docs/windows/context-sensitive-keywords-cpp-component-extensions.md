@@ -65,9 +65,9 @@ ms.workload: ["cplusplus", "uwp"]
 ### Examples  
  **Example**  
   
- The following code example shows that in the appropriate context, the `property` context-sensitive keyword can be used to define a property and a variable.  
+ The following code example shows that in the appropriate context, the **property** context-sensitive keyword can be used to define a property and a variable.  
   
-```  
+```cpp  
 // context_sensitive_keywords.cpp  
 // compile with: /clr  
 public ref class C {  

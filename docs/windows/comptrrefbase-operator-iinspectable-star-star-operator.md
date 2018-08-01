@@ -24,9 +24,9 @@ operator IInspectable**() const;
 
 ## Remarks
 
-Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IInspectable interface.
+Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IInspectable` interface.
 
-An error is emitted if the current ComPtrRefBase doesn't derive from IInspectable.
+An error is emitted if the current **ComPtrRefBase** doesn't derive from `IInspectable`.
 
 This cast is available only if **&#95;&#95;WRL_CLASSIC_COM&#95;&#95;** is defined.
 
@@ -37,6 +37,5 @@ This cast is available only if **&#95;&#95;WRL_CLASSIC_COM&#95;&#95;** is define
 **Namespace:** Microsoft::WRL::Details
 
 ## See Also
-
 [ComPtrRefBase Class](../windows/comptrrefbase-class.md)   
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

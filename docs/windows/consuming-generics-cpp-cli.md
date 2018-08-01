@@ -21,7 +21,7 @@ Generics authored in one .NET language may be used in other .NET languages. Unli
   
 ### Code  
   
-```  
+```cs  
 // consuming_generics_from_other_NET_languages.cs  
 // compile with: /target:library  
 // a C# program  
@@ -84,7 +84,7 @@ public class CircularList<ItemType> {
   
 ### Code  
   
-```  
+```cpp  
 // consuming_generics_from_other_NET_languages_2.cpp  
 // compile with: /clr  
 #using <consuming_generics_from_other_NET_languages.dll>  
