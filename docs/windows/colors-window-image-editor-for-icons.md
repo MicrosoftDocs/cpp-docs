@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Colors Window (Image Editor for Icons)
-The Colors window has two parts:  
+The **Colors** window has two parts:  
   
-1.  The Colors Palette, which is an array of color samples that represent colors you can use. You can click the samples to select foreground and background colors when you are using the graphics tools.  
+1.  The **Colors Palette**, which is an array of color samples that represent colors you can use. You can click the samples to select foreground and background colors when you are using the graphics tools.  
   
-2.  The Color Indicator, which shows the foreground and background colors and selectors for screen and inverse color.  
+2.  The **Color Indicator**, which shows the foreground and background colors and selectors for screen and inverse color.  
   
      ![Colors window](../windows/media/vccolorswindow.gif "vcColorsWindow")  
 Colors Window  
@@ -26,8 +26,6 @@ Colors Window
 >  The **Screen color** and **Inverse color** tools are only available for icons and cursors.  
   
  You can use the Colors window with the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md).  
-  
-
   
 ## Requirements  
  None  

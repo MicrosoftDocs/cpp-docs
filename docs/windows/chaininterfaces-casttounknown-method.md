@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::CastToUnknown Method
-Casts the interface pointer of the type defined by the `I0` template parameter to a pointer to IUnknown.  
+Casts the interface pointer of the type defined by the *I0* template parameter to a pointer to IUnknown.  
   
 ## Syntax  
   

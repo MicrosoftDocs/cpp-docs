@@ -188,56 +188,56 @@ ComPtr<TDelegateInterface> Callback(
 ```  
   
 #### Parameters  
- `TDelegateInterface`  
+ *TDelegateInterface*  
  A template parameter that specifies the interface of the delegate to call when an event occurs.  
   
- `TCallback`  
+ *TCallback*  
  A template parameter that specifies the type of an object that represents an object and its callback member function.  
   
- `TCallbackObject`  
+ *TCallbackObject*  
  A template parameter that specifies the object whose member function is the method to call when an event occurs.  
   
- `TArg1`  
+ *TArg1*  
  A template parameter that specifies the type of the first callback method argument.  
   
- `TArg2`  
+ *TArg2*  
  A template parameter that specifies the type of the second callback method argument.  
   
- `TArg3`  
+ *TArg3*  
  A template parameter that specifies the type of the third callback method argument.  
   
- `TArg4`  
+ *TArg4*  
  A template parameter that specifies the type of the fourth callback method argument.  
   
- `TArg5`  
+ *TArg5*  
  A template parameter that specifies the type of the fifth callback method argument.  
   
- `TArg6`  
+ *TArg6*  
  A template parameter that specifies the type of the sixth callback method argument.  
   
- `TArg7`  
+ *TArg7*  
  A template parameter that specifies the type of the seventh callback method argument.  
   
- `TArg8`  
+ *TArg8*  
  A template parameter that specifies the type of the eigth callback method argument.  
   
- `TArg9`  
+ *TArg9*  
  A template parameter that specifies the type of the ninth callback method argument.  
   
- `callback`  
+ *callback*  
  An object that represents the callback object and its member function.  
   
- `object`  
+ *object*  
  The object whose member function is called when an event occurs.  
   
- `method`  
+ *method*  
  The member function to call when an event occurs.  
   
 ## Return Value  
  An object whose member function is the specified callback method.  
   
 ## Remarks  
- The base of a delegate object must be IUnknown, not IInspectable.  
+ The base of a delegate object must be `IUnknown`, not `IInspectable`.  
   
 ## Requirements  
  **Header:** event.h  
