@@ -125,7 +125,7 @@ int main() {
   
  **Microsoft Specific**  
   
- To create a value from an ordinary character literal (those without a prefix), the compiler converts the character  or character sequence between single quotes into 8-bit values within a 32-bit integer. Multiple characters in the literal fill corresponding bytes as needed from high-order to low-order. To create a **char** value, the compiler takes the low-order byte. To create a `wchar_t` or `char16_t` value, the compiler takes the low-order word. The compiler warns that the result is truncated if any bits are set above the assigned byte or word.  
+ To create a value from an ordinary character literal (those without a prefix), the compiler converts the character  or character sequence between single quotes into 8-bit values within a 32-bit integer. Multiple characters in the literal fill corresponding bytes as needed from high-order to low-order. To create a **char** value, the compiler takes the low-order byte. To create a **wchar_t** or `char16_t` value, the compiler takes the low-order word. The compiler warns that the result is truncated if any bits are set above the assigned byte or word.  
   
 ```cpp  
 char c0    = 'abcd';    // C4305, C4309, truncates to 'd'  
@@ -210,7 +210,7 @@ const char* str2 = u8"\U0001F607 is O:-)";
 ```  
   
 ### Wide String Literals  
- A wide string literal is a null-terminated array of constant `wchar_t` that is prefixed by '`L`' and contains any graphic character except the double quotation mark ("), backslash (\\), or newline character. A wide string literal may contain the escape sequences listed above and any universal character name.  
+ A wide string literal is a null-terminated array of constant **wchar_t** that is prefixed by '`L`' and contains any graphic character except the double quotation mark ("), backslash (\\), or newline character. A wide string literal may contain the escape sequences listed above and any universal character name.  
   
 ```cpp  
 const wchar_t* wide = L"zyxw";  
@@ -298,7 +298,7 @@ const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
   
  **Microsoft Specific**  
   
- In Visual C++ you can use a string literal to initialize a pointer to non-const **char** or `wchar_t`. This is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:  
+ In Visual C++ you can use a string literal to initialize a pointer to non-const **char** or **wchar_t**. This is allowed in C99 code, but is deprecated in C++98 and removed in C++11. An attempt to modify the string causes an access violation, as in this example:  
   
 ```cpp  
 wchar_t* str = L"hello";  
@@ -378,7 +378,7 @@ const char16_t* s4 = u"😃 = \U0001F603 is :-D";
 const char32_t* s5 = U"😎 = \U0001F60E is B-)";  
 ```  
   
-## See Also  
+## See also  
  [Character Sets](../cpp/character-sets.md)   
  [Numeric, Boolean and Pointer Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md)   
  [User-Defined Literals](../cpp/user-defined-literals-cpp.md)

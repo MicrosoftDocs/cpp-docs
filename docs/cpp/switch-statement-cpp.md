@@ -149,7 +149,6 @@ int main(int argc, char *argv[])
   
  A **switch** statement can be nested. In such cases, **case** or **default** labels associate with the closest **switch** statement that encloses them.  
 
- 
 ## Microsoft Specific  
  Microsoft C does not limit the number of case values in a **switch** statement. The number is limited only by the available memory. ANSI C requires at least 257 case labels be allowed in a **switch** statement.  
   
@@ -157,7 +156,6 @@ int main(int argc, char *argv[])
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- 

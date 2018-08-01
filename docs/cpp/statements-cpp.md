@@ -36,5 +36,5 @@ C++ statements are the program elements that control how and in what order objec
   
  For information on exception handling statements see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md).  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)
