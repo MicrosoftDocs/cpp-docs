@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::CopyTo Method
-Copies the current or specified interface associated with this ComPtr to the specified pointer.  
+Copies the current or specified interface associated with this **ComPtr** to the specified pointer.  
   
 ## Syntax  
   
@@ -34,24 +34,24 @@ HRESULT CopyTo(
 ```  
   
 #### Parameters  
- `U`  
+ *U*  
  A type name.  
   
- `ptr`  
+ *ptr*  
  When this operation completes, a pointer to the requested interface.  
   
- `riid`  
+ *riid*  
  An interface ID.  
   
 ## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates why the implicit QueryInterface operation failed.  
+ S_OK if successful; otherwise, an HRESULT that indicates why the implicit `QueryInterface` operation failed.  
   
 ## Remarks  
- The first function returns a copy of a pointer to the interface associated with this ComPtr. This function always returns S_OK.  
+ The first function returns a copy of a pointer to the interface associated with this **ComPtr**. This function always returns S_OK.  
   
- The second function performs a QueryInterface operation on the interface associated with this ComPtr for the interface specified by the `riid` parameter.  
+ The second function performs a `QueryInterface` operation on the interface associated with this **ComPtr** for the interface specified by the *riid* parameter.  
   
- The third function performs a QueryInterface operation on the interface associated with this ComPtr for the underlying interface of the  `U` parameter.  
+ The third function performs a `QueryInterface` operation on the interface associated with this **ComPtr** for the underlying interface of the  *U* parameter.  
   
 ## Requirements  
  **Header:** client.h  

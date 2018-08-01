@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::AsIID Method
-Returns a ComPtr object that represents the interface identified by the specified interface ID.  
+Returns a **ComPtr** object that represents the interface identified by the specified interface ID.  
   
 ## Syntax  
   
@@ -25,11 +25,11 @@ WRL_NOTHROW HRESULT AsIID(
 ```  
   
 #### Parameters  
- `riid`  
+ *riid*  
  An interface ID.  
   
- `p`  
- If the object has an interface whose ID equals `riid`, a doubly-indirect pointer to the interface specified by the `riid` parameter; otherwise, a pointer to IUnknown.  
+ *p*  
+ If the object has an interface whose ID equals *riid*, a doubly-indirect pointer to the interface specified by the *riid* parameter; otherwise, a pointer to `IUnknown`.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that indicates the error.  

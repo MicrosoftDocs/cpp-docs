@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::Attach Method
-Associates this ComPtr with the interface type specified by the current template type parameter.  
+Associates this **ComPtr** with the interface type specified by the current template type parameter.  
   
 ## Syntax  
   
@@ -24,7 +24,7 @@ void Attach(
 ```  
   
 #### Parameters  
- `other`  
+ *other*  
  An interface type.  
   
 ## Requirements  

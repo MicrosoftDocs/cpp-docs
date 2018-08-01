@@ -22,10 +22,10 @@ InterfaceType* const * GetAddressOf() const;
 ```  
   
 ## Return Value  
- Address of a pointer to the interface represented by the current ComPtrRef object.  
+ Address of a pointer to the interface represented by the current **ComPtrRef** object.  
   
 ## Remarks  
- Retrieves the address of a pointer to the interface represented by the current ComPtrRef object.  
+ Retrieves the address of a pointer to the interface represented by the current **ComPtrRef** object.  
   
 ## Requirements  
  **Header:** client.h  

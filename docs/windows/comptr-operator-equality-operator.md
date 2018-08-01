@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator== Operator
-Indicates whether two ComPtr objects are equal.  
+Indicates whether two **ComPtr** objects are equal.  
   
 ## Syntax  
   
@@ -31,20 +31,19 @@ bool operator==(
    decltype(__nullptr),  
    const ComPtr<T>& a  
 );  
-  
 ```  
   
 #### Parameters  
- `a`  
- A reference to a ComPtr object.  
+ *a*  
+ A reference to a **ComPtr** object.  
   
- `b`  
- A reference to another ComPtr object.  
+ *b*  
+ A reference to another **ComPtr** object.  
   
 ## Return Value  
- The first operator yields `true` if object `a` is equal to object `b`; otherwise, `false`.  
+ The first operator yields **true** if object *a* is equal to object *b*; otherwise, **false**.  
   
- The second and third operators yield `true` if object `a` is equal to `nullptr`; otherwise, `false`.  
+ The second and third operators yield **true** if object *a* is equal to **nullptr**; otherwise, **false**.  
   
 ## Requirements  
  **Header:** client.h  

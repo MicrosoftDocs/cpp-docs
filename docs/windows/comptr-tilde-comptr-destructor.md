@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::~ComPtr Destructor
-Deinitializes an instance of ComPtr.  
+Deinitializes an instance of **ComPtr**.  
   
 ## Syntax  
   

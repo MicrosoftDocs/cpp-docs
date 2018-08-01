@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::ComPtr Constructor
-Intializes a new instance of the ComPtr class. Overloads provide default, copy, move, and conversion constructors.  
+Intializes a new instance of the **ComPtr** class. Overloads provide default, copy, move, and conversion constructors.  
   
 ## Syntax  
   
@@ -47,11 +47,11 @@ WRL_NOTHROW ComPtr(
 ```  
   
 #### Parameters  
- `U`  
- The type of the `other` parameter.  
+ *U*  
+ The type of the *other* parameter.  
   
- `other`  
- An object of type `U`.  
+ *other*  
+ An object of type *U*.  
   
 ## Return Value  
   
