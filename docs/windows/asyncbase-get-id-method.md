@@ -24,14 +24,14 @@ STDMETHOD(
 ```  
   
 #### Parameters  
- `id`  
+ *id*  
  The location where the handle is to be stored.  
   
 ## Return Value  
  S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.  
   
 ## Remarks  
- This method implements IAsyncInfo::get_Id.  
+ This method implements `IAsyncInfo::get_Id`.  
   
 ## Requirements  
  **Header:** async.h  

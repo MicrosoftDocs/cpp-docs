@@ -27,7 +27,7 @@ STDMETHOD(
  S_OK if the operation starts or is already started; otherwise, E_ILLEGAL_STATE_CHANGE.  
   
 ## Remarks  
- Start() is a default implementation of IAsyncInfo::Start, and does no actual work. To actually start an asynchronous operation, override the OnStart() pure virtual method.  
+ **Start()** is a default implementation of `IAsyncInfo::Start`, and does no actual work. To actually start an asynchronous operation, override the `OnStart()` pure virtual method.  
   
 ## Requirements  
  **Header:** async.h  

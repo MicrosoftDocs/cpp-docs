@@ -27,7 +27,7 @@ STDMETHOD(
  By default, always returns S_OK.  
   
 ## Remarks  
- Cancel() is a default implementation of IAsyncInfo::Cancel, and does no actual work. To actually cancel an asynchronous operation, override the OnCancel() pure virtual method.  
+ `Cancel()` is a default implementation of `IAsyncInfo::Cancel`, and does no actual work. To actually cancel an asynchronous operation, override the `OnCancel()` pure virtual method.  
   
 ## Requirements  
  **Header:** async.h  

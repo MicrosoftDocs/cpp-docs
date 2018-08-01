@@ -24,7 +24,7 @@ bool TryTransitionToCompleted(
 ```  
   
 ## Return Value  
- `true` if the asynchronous operation has completed; otherwise, `false`.  
+ **true** if the asynchronous operation has completed; otherwise, **false**.  
   
 ## Requirements  
  **Header:** async.h  

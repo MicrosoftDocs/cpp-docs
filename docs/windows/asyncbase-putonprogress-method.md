@@ -24,7 +24,7 @@ STDMETHOD(
 ```  
   
 #### Parameters  
- `progressHandler`  
+ *progressHandler*  
  The address to which the progress event handler is set.  
   
 ## Return Value  

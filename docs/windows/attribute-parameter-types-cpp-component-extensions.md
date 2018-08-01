@@ -14,21 +14,21 @@ ms.workload: ["cplusplus", "uwp"]
 # Attribute Parameter Types  (C++ Component Extensions)
 Values passed to attributes must be known to the compiler at compile time.  Attribute parameters can be of the following types:  
   
--   `bool`  
+-   **bool**  
   
--   `char`, `unsigned char`  
+-   **char**, **unsigned char**  
   
--   `short`, `unsigned short`  
+-   **short**, **unsigned short**  
   
--   `int`, `unsigned int`  
+-   **int**, **unsigned int**  
   
--   `long`, `unsigned long`  
+-   **long**, **unsigned long**  
   
--   `__int64`, `unsigned __int64`  
+-   **__int64**, **unsigned __int64**  
   
--   `float`, `double`  
+-   **float**, **double**  
   
--   `wchar_t`  
+-   **wchar_t**  
   
 -   `char*` or `wchar_t*` or `System::String*`  
   
@@ -36,13 +36,13 @@ Values passed to attributes must be known to the compiler at compile time.  Attr
   
 -   `System::Object ^`  
   
--   `enum`  
+-   **enum**  
   
 ## Example  
   
 ### Code  
   
-```  
+```cpp  
 // attribute_parameter_types.cpp  
 // compile with: /clr /c  
 using namespace System;  
@@ -70,7 +70,7 @@ ref struct MyStruct {
   
 ### Code  
   
-```  
+```cpp  
 // extending_metadata_c.cpp  
 // compile with: /clr /c  
 using namespace System;  
@@ -103,7 +103,7 @@ ref class ClassD {};   // Positional and named
   
 ### Code  
   
-```  
+```cpp  
 // extending_metadata_d.cpp  
 // compile with: /clr /c  
 using namespace System;  

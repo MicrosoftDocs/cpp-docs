@@ -24,7 +24,7 @@ inline void ErrorCode(
 ```  
   
 #### Parameters  
- `error`  
+ *error*  
  The location where this operation stores the current error code.  
   
 ## Remarks  

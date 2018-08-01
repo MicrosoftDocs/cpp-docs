@@ -22,7 +22,7 @@ inline bool ContinueAsyncOperation();
 ```  
   
 ## Return Value  
- `true` if the current state of the asynchronous operation is *started*, which means the operation should continue. Otherwise, `false`, which means the operation should halt.  
+ **true** if the current state of the asynchronous operation is *started*, which means the operation should continue. Otherwise, **false**, which means the operation should halt.  
   
 ## Requirements  
  **Header:** async.h  
