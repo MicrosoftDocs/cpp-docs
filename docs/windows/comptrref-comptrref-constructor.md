@@ -24,11 +24,11 @@ ComPtrRef(
 ```  
   
 #### Parameters  
- `ptr`  
- The underlying value of another ComPtrRef object.  
+ *ptr*  
+ The underlying value of another **ComPtrRef** object.  
   
 ## Remarks  
- Initializes a new instance of the ComPtrRef class from the specified pointer to another ComPtrRef object.  
+ Initializes a new instance of the **ComPtrRef** class from the specified pointer to another **ComPtrRef** object.  
   
 ## Requirements  
  **Header:** client.h  

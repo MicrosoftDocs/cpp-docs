@@ -24,7 +24,7 @@ HRESULT AsWeak(
 ```  
   
 #### Parameters  
- `pWeakRef`  
+ *pWeakRef*  
  When this operation completes, a pointer to a weak reference object.  
   
 ## Return Value  

@@ -22,7 +22,7 @@ operator T*();
 ```  
   
 ## Remarks  
- Returns the value of the [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member of the current ComPtrRef object.  
+ Returns the value of the [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member of the current **ComPtrRef** object.  
   
 ## Requirements  
  **Header:** client.h  

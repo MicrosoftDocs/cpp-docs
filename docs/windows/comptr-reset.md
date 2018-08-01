@@ -11,7 +11,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::Reset
-Releases all references for the pointer to the interface that is associated with this ComPtr.  
+Releases all references for the pointer to the interface that is associated with this **ComPtr**.  
   
 ## Syntax  
   
