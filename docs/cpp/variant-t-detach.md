@@ -20,9 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 VARIANT Detach( );  
-  
 ```  
   
 ## Return Value  
@@ -33,5 +31,5 @@ VARIANT Detach( );
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)
