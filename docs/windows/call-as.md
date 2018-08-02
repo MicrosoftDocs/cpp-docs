@@ -18,8 +18,7 @@ Enables a [local](../windows/local-cpp.md) function to be mapped to a remote fun
 ## Syntax  
   
 ```  
-  
-      [ call_as(  
+[ call_as(  
    function  
 ) ]  
 ```  
@@ -34,7 +33,7 @@ Enables a [local](../windows/local-cpp.md) function to be mapped to a remote fun
 ## Example  
  The following code shows how you can use **call_as** to map a nonremotable function (**f1**) to a remotable function (**Remf1**):  
   
-```  
+```cpp  
 // cpp_attr_ref_call_as.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -62,4 +61,4 @@ __interface IMInterface {
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [local](../windows/local-cpp.md)   
+ [local](../windows/local-cpp.md)   

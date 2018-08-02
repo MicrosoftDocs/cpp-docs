@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Arrays (C++ Component Extensions)
-The `Platform::Array<T>` type in C++/CX, or the `array` keyword in C++/CLI, declares an array of a specified type and initial value.  
+The `Platform::Array<T>` type in C++/CX, or the **array** keyword in C++/CLI, declares an array of a specified type and initial value.  
   
 ## All Platforms  
  The array must be declared by using the handle-to-object (^) modifier after the closing angle bracket (>) in the declaration.  
@@ -32,7 +32,7 @@ The `Platform::Array<T>` type in C++/CX, or the `array` keyword in C++/CLI, decl
   
 ### Syntax  
   
- The first example of the syntax uses the `ref new` aggregate keyword to allocate an array. The second example declares a local array.  
+ The first example of the syntax uses the **ref new** aggregate keyword to allocate an array. The second example declares a local array.  
   
 ```  
 [qualifiers] [Platform::]Array<[qualifiers] array-type [,rank]>^ identifier = 
@@ -45,20 +45,20 @@ The `Platform::Array<T>` type in C++/CX, or the `array` keyword in C++/CLI, decl
  *qualifiers* [optional]  
  One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).  
   
- `array-type`  
+ *array-type*  
  The type of the array variable. Valid types are Windows Runtime classes and fundamental types, ref classes and structs, value classes and structs, and native pointers (`type*`).  
   
- `rank` [optional]  
+ *rank* [optional]  
  The number of dimensions of the array. Must be 1.  
   
- `identifier`  
+ *identifier*  
  The name of the array variable.  
   
- `initialization-type`  
- The type of the values that initialize the array. Typically, `array-type` and `initialization-type` are the same type. However, the types can be different if there is a conversion from `initialization-type` to `array-type`—for example, if `initialization-type` is derived from `array-type`.  
+ *initialization-type*  
+ The type of the values that initialize the array. Typically, *array-type* and *initialization-type* are the same type. However, the types can be different if there is a conversion from *initialization-type* to *array-type*—for example, if *initialization-type* is derived from *array-type*.  
   
- `initialization-list` [optional]  
- A comma-delimited list of values in curly brackets that initialize the elements of the array. For example, if `rank-size-list` were `(3)`, which declares a one-dimensional array of 3 elements, `initialization list` could be `{1,2,3}`.  
+ *initialization-list* [optional]  
+ A comma-delimited list of values in curly brackets that initialize the elements of the array. For example, if *rank-size-list* were `(3)`, which declares a one-dimensional array of 3 elements, *initialization list* could be `{1,2,3}`.  
   
 ### Remarks  
   
@@ -86,7 +86,7 @@ int main() {
   
 ### Syntax  
   
- The first example of the syntax uses the `gcnew` keyword to allocate an array. The second example declares a local array.  
+ The first example of the syntax uses the **gcnew** keyword to allocate an array. The second example declares a local array.  
   
 ```  
 [qualifiers] [cli::]array<[qualifiers] array-type [,rank]>^ identifier = 
@@ -99,25 +99,25 @@ int main() {
  *qualifiers* [optional]  
  One or more of these storage class specifiers: [mutable](../cpp/mutable-data-members-cpp.md), [volatile](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [static](../cpp/static-members-cpp.md).  
   
- `array-type`  
+ *array-type*  
  The type of the array variable. Valid types are Windows Runtime classes and fundamental types, ref classes and structs, value classes and structs, native pointers (`type*`), and native POD (plain old data) types.  
   
- `rank` [optional]  
+ *rank* [optional]  
  The number of dimensions of the array. The default is 1; the maximum is 32. Each dimension of the array is itself an array.  
   
- `identifier`  
+ *identifier*  
  The name of the array variable.  
   
- `initialization-type`  
- The type of the values that initialize the array. Typically, `array-type` and `initialization-type` are the same type. However, the types can be different if there is a conversion from `initialization-type` to `array-type`—for example, if `initialization-type` is derived from `array-type`.  
+ *initialization-type*  
+ The type of the values that initialize the array. Typically, *array-type* and *initialization-type* are the same type. However, the types can be different if there is a conversion from *initialization-type* to *array-type*—for example, if *initialization-type* is derived from *array-type*.  
   
- `rank-size-list`  
- A comma-delimited list of the size of each dimension in the array. Alternatively, if the `initialization-list` parameter is specified, the compiler can deduce the size of each dimension and `rank-size-list` can be omitted. 
+ *rank-size-list*  
+ A comma-delimited list of the size of each dimension in the array. Alternatively, if the *initialization-list* parameter is specified, the compiler can deduce the size of each dimension and *rank-size-list* can be omitted. 
   
- `initialization-list` [optional]  
+ *initialization-list* [optional]  
  A comma-delimited list of values in curly brackets that initialize the elements of the array. Or a comma-delimited list of nested *initialization-list* items that initialize the elements in a multi-dimensional array.  
   
- For example, if `rank-size-list` were `(3)`, which declares a one-dimensional array of 3 elements, `initialization list` could be `{1,2,3}`. If `rank-size-list` were `(3,2,4)`, which declares a three-dimensional array of 3 elements in the first dimension, 2 elements in the second, and 4 elements in the third, `initialization-list` could be `{{1,2,3},{0,0},{-5,10,-21,99}}`.)  
+ For example, if *rank-size-list* were `(3)`, which declares a one-dimensional array of 3 elements, *initialization list* could be `{1,2,3}`. If *rank-size-list* were `(3,2,4)`, which declares a three-dimensional array of 3 elements in the first dimension, 2 elements in the second, and 4 elements in the third, *initialization-list* could be `{{1,2,3},{0,0},{-5,10,-21,99}}`.)  
   
 ### Remarks  
   

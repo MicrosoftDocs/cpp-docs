@@ -22,7 +22,7 @@ FactoryCache* factoryCache;
 ```  
   
 ## Remarks  
- Stores the pointer to the factory cache for the CreatorMap.  
+ Stores the pointer to the factory cache for the **CreatorMap**.  
   
 ## Requirements  
  **Header:** module.h  

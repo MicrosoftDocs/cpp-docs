@@ -13,12 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::As Method
-Returns a ComPtr object that represents the interface identified by the specified template parameter.  
+Returns a **ComPtr** object that represents the interface identified by the specified template parameter.  
   
 ## Syntax  
   
 ```  
-  
 template<typename U>  
 HRESULT As(  
    _Out_ ComPtr<U>* p  
@@ -28,15 +27,14 @@ template<typename U>
 HRESULT As(  
    _Out_ Details::ComPtrRef<ComPtr<U>> p  
 ) const;  
-  
 ```  
   
 #### Parameters  
- `U`  
- The interface to be represented by parameter `p`.  
+ *U*  
+ The interface to be represented by parameter *p*.  
   
- `p`  
- A ComPtr object that represents the interface specified by parameter `U`. Parameter `p` must not refer to the current ComPtr object.  
+ *p*  
+ A **ComPtr** object that represents the interface specified by parameter *U*. Parameter *p* must not refer to the current **ComPtr** object.  
   
 ## Remarks  
  The first template is the form that you should use in your code. The second template is an internal, helper specialization that supports C++ language features such as the [auto](../cpp/auto-cpp.md) type deduction keyword.  

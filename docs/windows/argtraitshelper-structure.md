@@ -23,7 +23,7 @@ struct ArgTraitsHelper;
 ```  
   
 #### Parameters  
- `TDelegateInterface`  
+ *TDelegateInterface*  
  A delegate interface.  
   
 ## Remarks  
@@ -42,7 +42,7 @@ struct ArgTraitsHelper;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ArgTraitsHelper::args Constant](../windows/argtraitshelper-args-constant.md)|Helps [ArgTraits::args](../windows/argtraits-args-constant.md) keep count of the number of parameters on the Invoke method of a delegate interface.|  
+|[ArgTraitsHelper::args Constant](../windows/argtraitshelper-args-constant.md)|Helps [ArgTraits::args](../windows/argtraits-args-constant.md) keep count of the number of parameters on the `Invoke` method of a delegate interface.|  
   
 ## Inheritance Hierarchy  
  `ArgTraitsHelper`  

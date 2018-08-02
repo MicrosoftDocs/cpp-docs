@@ -22,7 +22,7 @@ class ComposableBase;
 ```  
   
 #### Parameters  
- `FactoryInterface`  
+ *FactoryInterface*  
   
 ## Remarks  
   

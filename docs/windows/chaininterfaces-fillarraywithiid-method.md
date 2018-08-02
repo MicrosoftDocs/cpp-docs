@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::FillArrayWithIid Method
-Stores the interface ID defined by the `I0` template parameter into a specified location in a specified array of interface IDs.  
+Stores the interface ID defined by the *I0* template parameter into a specified location in a specified array of interface IDs.  
   
 ## Syntax  
   
@@ -25,10 +25,10 @@ __forceinline static void FillArrayWithIid(
 ```  
   
 #### Parameters  
- `index`  
- Pointer to an index value into the `iids` array.  
+ *index*  
+ Pointer to an index value into the *iids* array.  
   
- `iids`  
+ *iids*  
  An array of interface IDs.  
   
 ## Requirements  

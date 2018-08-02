@@ -18,8 +18,7 @@ Used with the [switch_type](../windows/switch-type.md) attribute in a **union**.
 ## Syntax  
   
 ```  
-  
-      [ case(  
+[ case(  
    value  
 ) ]  
 ```  
@@ -44,7 +43,7 @@ Used with the [switch_type](../windows/switch-type.md) attribute in a **union**.
 ## Example  
  The following code shows a use of the **case** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_case.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -67,7 +66,7 @@ struct SizedValue2 {
   
 |||  
 |-|-|  
-|**Applies to**|Member of a **class** or `struct`|  
+|**Applies to**|Member of a **class** or **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  

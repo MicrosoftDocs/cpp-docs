@@ -83,7 +83,6 @@ long_num2 = int_num * long_num2;
  Objects of signed integral types can be converted to corresponding unsigned types. When these conversions occur, the actual bit pattern does not change; however, the interpretation of the data changes. Consider this code:  
   
 ```cpp 
-  
 #include <iostream>  
   
 using namespace std;  
@@ -95,7 +94,6 @@ int main()
     cout << (u = i) << "\n";  
 }  
 // Output: 65533  
-  
 ```  
   
  In the preceding example, a **signed short**, `i`, is defined and initialized to a negative number. The expression `(u = i)` causes `i` to be converted to an **unsigned short** prior to the assignment to `u`.  
@@ -151,7 +149,6 @@ cout << (float)1E300 << endl;
  The following code illustrates the conversion rules described in the table:  
   
 ```cpp 
-  
 double dVal;  
 float fVal;  
 int iVal;  
@@ -237,12 +234,12 @@ int main()
  The pointer `pA` is of type `A *`, which can be interpreted as meaning "pointer to an object of type `A`." Members of `bObject` `(`such as `BComponent` and `BMemberFunc`) are unique to type `B` and are therefore inaccessible through `pA`. The `pA` pointer allows access only to those characteristics (member functions and data) of the object that are defined in class `A`.  
   
 ### Pointer to function  
- A pointer to a function can be converted to type **void \***, if type **void \*** is large enough to hold that pointer.  
+ A pointer to a function can be converted to type `void *`, if type `void *` is large enough to hold that pointer.  
   
 ### Pointer to void  
  Pointers to type **void** can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). (See [Expressions with Explicit Type Conversions](http://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about type casts.) A pointer to any type can be converted implicitly to a pointer to type **void**.A pointer to an incomplete object of a type can be converted to a pointer to **void** (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it is declared, but there is insufficient information available to determine its size or base class.  
   
- A pointer to any object that is not **const** or **volatile** can be implicitly converted to a pointer of type **void \***.  
+ A pointer to any object that is not **const** or **volatile** can be implicitly converted to a pointer of type `void *`.  
   
 ### const and volatile pointers  
  C++ does not supply a standard conversion from a **const** or **volatile** type to a type that is not **const** or **volatile**. However, any sort of conversion can be specified using explicit type casts (including conversions that are unsafe).  
@@ -313,5 +310,5 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

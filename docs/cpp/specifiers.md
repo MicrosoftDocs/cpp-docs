@@ -41,7 +41,7 @@ This topic describes the *decl-specifiers* (declaration specifiers) component of
  Because **signed**, **unsigned**, **long**, and **short** all imply **int**, a **typedef** name following one of these keywords is taken to be a member of *declarator-list,* not of *decl-specifiers*.  
   
 > [!NOTE]
->  Because a name can be redeclared, its interpretation is subject to the most recent declaration in the current scope. Redeclaration can affect how names are interpreted by the compiler, especially `typedef` names.  
+>  Because a name can be redeclared, its interpretation is subject to the most recent declaration in the current scope. Redeclaration can affect how names are interpreted by the compiler, especially **typedef** names.  
   
-## See Also  
+## See also  
  [Declarations and Definitions](declarations-and-definitions-cpp.md)

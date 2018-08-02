@@ -18,9 +18,7 @@ Creates a COM object, which can implement a COM interface.
 ## Syntax  
   
 ```  
-  
 [coclass]  
-  
 ```  
   
 ## Remarks  
@@ -38,13 +36,13 @@ Creates a COM object, which can implement a COM interface.
   
 -   Injects code or data to support a COM class factory for the object.  
   
--   Injects code or data to implement **IUnknown** and make the object a COM-creatable object.  
+-   Injects code or data to implement `IUnknown` and make the object a COM-creatable object.  
   
  Specifically, the following base classes are added to the target object:  
   
 -   [CComCoClass Class](../atl/reference/ccomcoclass-class.md) provides the default class factory and aggregation model for the object.  
   
--   [CComObjectRootEx Class](../atl/reference/ccomobjectrootex-class.md) has a template based on the threading model class specified by the [threading](../windows/threading-cpp.md) attribute. If the **threading** attribute is not specified, the default threading model is apartment.  
+-   [CComObjectRootEx Class](../atl/reference/ccomobjectrootex-class.md) has a template based on the threading model class specified by the [threading](../windows/threading-cpp.md) attribute. If the `threading` attribute is not specified, the default threading model is apartment.  
   
 -   [IProvideClassInfo2Impl](../atl/reference/iprovideclassinfo2impl-class.md) is added if the [noncreatable](../windows/noncreatable.md) attribute is not specified for the target object.  
   
@@ -56,11 +54,11 @@ Creates a COM object, which can implement a COM interface.
   
 -   `GetObjectCLSID`, which is related to registration, can also be used to obtain the CLSID of the target class.  
   
--   **GetObjectFriendlyName** by default returns a string of the format "\<*target class name*> `Object`". If this function is already present, it is not added. Add this function to the target class to return a friendlier name than the one automatically generated.  
+-   `GetObjectFriendlyName` by default returns a string of the format "\<*target class name*> `Object`". If this function is already present, it is not added. Add this function to the target class to return a friendlier name than the one automatically generated.  
   
--   **GetProgID**, which is related to registration, returns the string specified with the [progid](../windows/progid.md) attribute.  
+-   `GetProgID`, which is related to registration, returns the string specified with the [progid](../windows/progid.md) attribute.  
   
--   **GetVersionIndependentProgID** has the same functionality as **GetProgID**, but it returns the string specified with [vi_progid](../windows/vi-progid.md).  
+-   `GetVersionIndependentProgID` has the same functionality as `GetProgID`, but it returns the string specified with [vi_progid](../windows/vi-progid.md).  
   
  The following changes, which are related to the COM map, are made to the target class:  
   
@@ -73,7 +71,7 @@ Creates a COM object, which can implement a COM interface.
 ## Example  
  The following code shows how to use the **coclass** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_coclass1.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -91,7 +89,7 @@ class CMyClass : public I {};
   
  The following sample shows how to override the default implementation of a function that appears in the code injected by the **coclass** attribute. See [/Fx](../build/reference/fx-merge-injected-code.md) for more information on viewing injected code. Any base classes or interfaces that you use for a class will be appear in the injected code.   Further, if a class is included by default in the injected code and you explicitly specify that class as a base for your coclass, the attribute provider will use the form specified in your code.  
   
-```  
+```cpp  
 // cpp_attr_ref_coclass2.cpp  
 // compile with: /LD  
 #include <atlbase.h>  
@@ -131,7 +129,7 @@ public:
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  

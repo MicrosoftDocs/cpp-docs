@@ -24,7 +24,7 @@ void FireProgress(
 ```  
   
 #### Parameters  
- `arg`  
+ *arg*  
  The event handler method to invoke.  
   
 ## Remarks  

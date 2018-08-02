@@ -68,5 +68,5 @@ operator unsigned __int64() const;
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)

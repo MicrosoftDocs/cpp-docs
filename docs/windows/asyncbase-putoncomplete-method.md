@@ -24,7 +24,7 @@ STDMETHOD(
 ```  
   
 #### Parameters  
- `completeHandler`  
+ *completeHandler*  
  The address to which the completion event handler is set.  
   
 ## Return Value  

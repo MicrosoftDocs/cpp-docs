@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::Verify Method
-Verifies that each interface defined by template parameters `I0` through `I9` inherits from IUnknown and/or IInspectable, and that `I0` inherits from `I1` through `I9`.  
+Verifies that each interface defined by template parameters *I0* through *I9* inherits from IUnknown and/or IInspectable, and that *I0* inherits from *I1* through *I9*.  
   
 ## Syntax  
   
@@ -22,10 +22,10 @@ WRL_NOTHROW __forceinline static void Verify();
 ```  
   
 ## Remarks  
- If the verification operation fails, a `static_assert` emits an error message describing the failure.  
+ If the verification operation fails, a **static_assert** emits an error message describing the failure.  
   
 ## Remarks  
- Template parameters `I0` and `I1` are required, and parameters `I2` through `I9` are optional.  
+ Template parameters *I0* and *I1* are required, and parameters *I2* through *I9* are optional.  
   
 ## Requirements  
  **Header:** implements.h  

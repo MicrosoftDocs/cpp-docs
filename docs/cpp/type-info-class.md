@@ -13,9 +13,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # type_info Class
-The `type_info` class describes type information generated within the program by the compiler. Objects of this class effectively store a pointer to a name for the type. The `type_info` class also stores an encoded value suitable for comparing two types for equality or collating order. The encoding rules and collating sequence for types are unspecified and may differ between programs.  
+The **type_info** class describes type information generated within the program by the compiler. Objects of this class effectively store a pointer to a name for the type. The **type_info** class also stores an encoded value suitable for comparing two types for equality or collating order. The encoding rules and collating sequence for types are unspecified and may differ between programs.  
   
- The `<typeinfo>` header file must be included in order to use the `type_info` class. The interface for the `type_info` class is:  
+ The `<typeinfo>` header file must be included in order to use the **type_info** class. The interface for the **type_info** class is:  
   
 ```cpp
 class type_info {  
@@ -30,11 +30,11 @@ public:
 };  
 ```  
   
- You cannot instantiate objects of the `type_info` class directly, because the class has only a private copy constructor. The only way to construct a (temporary) `type_info` object is to use the [typeid](../cpp/typeid-operator.md) operator. Since the assignment operator is also private, you cannot copy or assign objects of class `type_info`.  
+ You cannot instantiate objects of the **type_info** class directly, because the class has only a private copy constructor. The only way to construct a (temporary) **type_info** object is to use the [typeid](../cpp/typeid-operator.md) operator. Since the assignment operator is also private, you cannot copy or assign objects of class **type_info**.  
   
- `type_info::hash_code` defines a hash function suitable for mapping values of type `typeinfo` to a distribution of index values.  
+ `type_info::hash_code` defines a hash function suitable for mapping values of type **typeinfo** to a distribution of index values.  
   
- The operators `==` and `!=` can be used to compare for equality and inequality with other `type_info` objects, respectively.  
+ The operators `==` and `!=` can be used to compare for equality and inequality with other **type_info** objects, respectively.  
   
  There is no link between the collating order of types and inheritance relationships. Use the `type_info::before` member function to determine the collating sequence of types. There is no guarantee that `type_info::before` will yield the same result in different programs or even different runs of the same program. In this manner, `type_info::before` is similar to the address-of `(&)` operator.  
   
@@ -44,5 +44,5 @@ public:
   
  Type information is generated for polymorphic classes only if the [/GR (Enable Run-Time Type Information)](../build/reference/gr-enable-run-time-type-information.md) compiler option is specified.  
   
-## See Also  
+## See also  
  [Run-Time Type Information](../cpp/run-time-type-information.md)

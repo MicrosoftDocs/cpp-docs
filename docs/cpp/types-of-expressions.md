@@ -34,5 +34,5 @@ C++ expressions are divided into several categories:
   
 -   [Run-Time Type Information](../cpp/run-time-type-information.md). Determine the type of an object during program execution.  
   
-## See Also  
+## See also  
  [Expressions](../cpp/expressions-cpp.md)

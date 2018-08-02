@@ -30,7 +30,7 @@ Declarations introduce names in a program, for example the names of variables, n
   
 5.  Is a **typedef** statement.  
   
- Examples of declarations that are also definitions are:  
+Examples of declarations that are also definitions are:  
   
 ```cpp 
 // Declare and define int variables i and j.  
@@ -49,7 +49,7 @@ public:
 };  
 ```  
   
- Some declarations that are not definitions are:  
+Some declarations that are not definitions are:  
   
 ```cpp 
 extern int i;  

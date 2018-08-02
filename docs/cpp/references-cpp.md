@@ -99,12 +99,8 @@ int main() {
 4  
 ```  
   
-## Comment  
- Topics in this section:  
-  
--   [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)  
-  
--   [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)  
-  
--   [References to Pointers](../cpp/references-to-pointers.md)  
+## See also
+ [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)  
+ [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)  
+ [References to Pointers](../cpp/references-to-pointers.md)  
   

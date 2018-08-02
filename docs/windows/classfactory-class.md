@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory Class
-Implements the basic functionality of the IClassFactory interface.  
+Implements the basic functionality of the `IClassFactory` interface.  
   
 ## Syntax  
   
@@ -34,13 +34,13 @@ class ClassFactory : public Details::RuntimeClass<
 ```  
   
 #### Parameters  
- `I0`  
+ *I0*  
  The zeroth interface.  
   
- `I1`  
+ *I1*  
  The first interface.  
   
- `I2`  
+ *I2*  
  The second interface.  
   
 ## Remarks  

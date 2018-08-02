@@ -15,12 +15,11 @@ ms.workload: ["cplusplus"]
 # __stdcall
 **Microsoft Specific**  
   
- The **__stdcall** calling convention is used to call Win32 API functions. The callee cleans the stack, so the compiler makes **vararg** functions **__cdecl**. Functions that use this calling convention require a function prototype.  
+ The **__stdcall** calling convention is used to call Win32 API functions. The callee cleans the stack, so the compiler makes `vararg` functions **__cdecl**. Functions that use this calling convention require a function prototype.  
   
 ## Syntax  
   
 ```  
-  
 return-type __stdcall function-name[(argument-list)]  
 ```  
   
@@ -62,7 +61,7 @@ void __stdcall CMyClass::mymethod() { return; }
 ```  
   
 ## Example  
- In the following example, use of __**stdcall** results in all `WINAPI` function types being handled as a standard call:  
+ In the following example, use of **__stdcall** results in all `WINAPI` function types being handled as a standard call:  
   
 ```cpp  
 // Example of the __stdcall keyword  
@@ -71,6 +70,6 @@ void __stdcall CMyClass::mymethod() { return; }
 typedef BOOL (__stdcall *funcname_ptr)(void * arg1, const char * arg2, DWORD flags, ...);  
 ```  
   
-## See Also  
+## See also  
  [Argument Passing and Naming Conventions](../cpp/argument-passing-and-naming-conventions.md)   
  [Keywords](../cpp/keywords-cpp.md)
