@@ -43,7 +43,7 @@ You can freely use regular C-style arrays or [std::array](../standard-library/ar
  [!code-cpp[cx_arrays#01](../cppcx/codesnippet/CPP/js-array/class1.cpp#01)]  
   
 ## ReceiveArray pattern  
- In the ReceiveArray pattern, client code declares an array and passes it to a method which allocates the memory for it and initializes it. The C++ input parameter type is is a pointer-to-hat: `Array<T>^*`. The following example shows how to declare an array object in JavaScript, and pass it to a C++ function that allocates the memory, initializes the elements, and returns it to JavaScript. JavaScript treats the allocated array as a return value, but the C++ function treats it as an out parameter.  
+ In the ReceiveArray pattern, client code declares an array and passes it to a method which allocates the memory for it and initializes it. The C++ input parameter type is a pointer-to-hat: `Array<T>^*`. The following example shows how to declare an array object in JavaScript, and pass it to a C++ function that allocates the memory, initializes the elements, and returns it to JavaScript. JavaScript treats the allocated array as a return value, but the C++ function treats it as an out parameter.  
   
  [!code-javascript[cx_arrays#102](../cppcx/codesnippet/JavaScript/array-and-writeonlyarray-c-_3.js)]  
   
