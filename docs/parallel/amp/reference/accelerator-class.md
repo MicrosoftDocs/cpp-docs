@@ -166,7 +166,7 @@ static const wchar_t default_accelerator[];
   
 ##  <a name="default_cpu_access_type"></a> default_cpu_access_type 
 
- The default cpu [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this this `accelerator`.  
+ The default cpu [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.  
   
 ```  
 __declspec(property(get= get_default_cpu_access_type)) access_type default_cpu_access_type;  
@@ -480,7 +480,7 @@ static inline bool set_default(std::wstring _Path);
   
 ##  <a name="set_default_cpu_access_type"></a> set_default_cpu_access_type 
 
- Set the default cpu access_type for arrays created on this accelerator or for implicit memory allocations as part of array_views accessed on this this accelerator. This method only succeeds if the default_cpu_access_type for the accelerator has not already been overriden by a previous call to this method and the runtime selected default_cpu_access_type for this accelerator has not yet been used for allocating an array or for an implicit memory allocation backing an array_view accessed on this accelerator.  
+ Set the default cpu access_type for arrays created on this accelerator or for implicit memory allocations as part of array_views accessed on this accelerator. This method only succeeds if the default_cpu_access_type for the accelerator has not already been overriden by a previous call to this method and the runtime selected default_cpu_access_type for this accelerator has not yet been used for allocating an array or for an implicit memory allocation backing an array_view accessed on this accelerator.  
   
 ```  
 bool set_default_cpu_access_type(access_type _Default_cpu_access_type);
