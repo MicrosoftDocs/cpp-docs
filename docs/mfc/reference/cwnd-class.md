@@ -6957,7 +6957,7 @@ afx_msg void OnNcXButtonUp(
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
   
 ##  <a name="onnextmenu"></a>  CWnd::OnNextMenu  
- The framework calls this member function when when the right or left arrow key is used to switch between the menu bar and the system menu.  
+ The framework calls this member function when the right or left arrow key is used to switch between the menu bar and the system menu.  
   
 ```  
 afx_msg void OnNextMenu(
