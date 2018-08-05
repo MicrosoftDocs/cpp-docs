@@ -108,7 +108,7 @@ inline bool atomic_compare_exchange_strong_explicit(
 ### Remarks
 
 An *atomic compare and exchange operation* compares the value that is stored in the object that is pointed to by *Atom* against the value that is pointed to by *Exp*. If the values are equal,
-    The the value that is stored in the object that is pointed to by *atom* is replaced with `Val` by using a `read-modify-write` operation and applying the memory order constraints that are specified by *Order1*. If the values are not equal,
+    The value that is stored in the object that is pointed to by *atom* is replaced with `Val` by using a `read-modify-write` operation and applying the memory order constraints that are specified by *Order1*. If the values are not equal,
     The operation replaces the value that is pointed to by *Exp* with the value that is stored in the object that is pointed to by *Atom* and applies the memory order constraints that are specified by *Order2*.
 
 ## <a name="atomic_compare_exchange_weak"></a>  atomic_compare_exchange_weak
