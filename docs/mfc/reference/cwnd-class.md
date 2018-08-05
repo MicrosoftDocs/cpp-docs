@@ -5790,7 +5790,7 @@ afx_msg void OnKeyDown(
   
 ### Parameters  
  *nChar*  
- Specifies the virtual key code of the given key. For a list of of standard virtual key codes, see Winuser.h  
+ Specifies the virtual key code of the given key. For a list of standard virtual key codes, see Winuser.h  
   
  *nRepCnt*  
  Repeat count (the number of times the keystroke is repeated as a result of the user holding down the key).  
@@ -5832,7 +5832,7 @@ afx_msg void OnKeyUp(
   
 ### Parameters  
  *nChar*  
- Specifies the virtual key code of the given key. For a list of of standard virtual key codes, see Winuser.h  
+ Specifies the virtual key code of the given key. For a list of standard virtual key codes, see Winuser.h  
   
  *nRepCnt*  
  Repeat count (the number of times the keystroke is repeated as a result of the user holding down the key).  
@@ -7738,7 +7738,7 @@ afx_msg void OnSysChar(
 |31|Specifies the transition state. The value is 1 if the key is being released, or it is 0 if the key is being pressed.|  
   
 ### Remarks  
- It specifies the virtual key code of the Control-menu key. (For a list of of standard virtual key codes, see Winuser.h)  
+ It specifies the virtual key code of the Control-menu key. (For a list of standard virtual key codes, see Winuser.h)  
   
  When the context code is 0, WM_SYSCHAR can pass the [WM_SYSCHAR](http://msdn.microsoft.com/library/windows/desktop/ms646357) message to the [TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms646373) Windows function, which will handle it as though it were a normal key message instead of a system character-key. This allows accelerator keys to be used with the active window even if the active window does not have the input focus.  
   
@@ -7871,7 +7871,7 @@ afx_msg void OnSysKeyDown(
   
 ### Parameters  
  *nChar*  
- Specifies the virtual key code of the key being pressed. For a list of of standard virtual key codes, see Winuser.h  
+ Specifies the virtual key code of the key being pressed. For a list of standard virtual key codes, see Winuser.h  
   
  *nRepCnt*  
  Specifies the repeat count.  
@@ -7915,7 +7915,7 @@ afx_msg void OnSysKeyUp(
   
 ### Parameters  
  *nChar*  
- Specifies the virtual key code of the key being pressed. For a list of of standard virtual key codes, see Winuser.h  
+ Specifies the virtual key code of the key being pressed. For a list of standard virtual key codes, see Winuser.h  
   
  *nRepCnt*  
  Specifies the repeat count.  
@@ -8215,7 +8215,7 @@ afx_msg int OnVKeyToItem(
   
 ### Parameters  
  *nKey*  
- Specifies the virtual key code of the key that the user pressed. For a list of of standard virtual key codes, see Winuser.h  
+ Specifies the virtual key code of the key that the user pressed. For a list of standard virtual key codes, see Winuser.h  
   
  *pListBox*  
  Specifies a pointer to the list box. The pointer may be temporary and should not be stored for later use.  
