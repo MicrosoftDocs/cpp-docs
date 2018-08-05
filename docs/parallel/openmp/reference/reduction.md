@@ -28,7 +28,7 @@ reduction(operation:var)
  The operator for the operation to perform on the variables (`var`) at the end of the parallel region.  
   
  `var`  
- One more more variables on which to perform scalar reduction. If more than one variable is specified, separate variable names with a comma.  
+ One or more variables on which to perform scalar reduction. If more than one variable is specified, separate variable names with a comma.  
   
 ## Remarks  
  `reduction` applies to the following directives:  
