@@ -72,7 +72,7 @@ This document demonstrates how to create agent-based applications that are based
   
  [!code-cpp[concrt-dataflow-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_5.cpp)]  
   
-6.  Wait for the `event` and `countdown event` objects to be set. These events signal that that the agent has received the sentinel value and that all operations have finished.  
+6.  Wait for the `event` and `countdown event` objects to be set. These events signal that the agent has received the sentinel value and that all operations have finished.  
   
  [!code-cpp[concrt-dataflow-agent#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_6.cpp)]  
   
