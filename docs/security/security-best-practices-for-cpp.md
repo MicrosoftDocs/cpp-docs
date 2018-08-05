@@ -21,7 +21,7 @@ This article contains information about security tools and practices. Using them
  These security features are built into the Visual C++ compiler and linker:  
   
  [/guard (Enable Control Flow Guard)](../build/reference/guard-enable-control-flow-guard.md)  
- Causes the compiler to to analyze control flow for indirect call targets at compile time, and then to insert code to verify the targets at runtime.  
+ Causes the compiler to analyze control flow for indirect call targets at compile time, and then to insert code to verify the targets at runtime.  
   
  [/GS (Buffer Security Check)](../build/reference/gs-buffer-security-check.md)  
  Instructs the compiler to insert overrun detection code into functions that are at risk of being exploited. When an overrun is detected, execution is stopped. By default, this option is on.  

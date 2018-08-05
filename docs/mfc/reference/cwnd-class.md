@@ -8160,7 +8160,7 @@ afx_msg void OnUnInitMenuPopup(
 >  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.  
   
 ##  <a name="onupdateuistate"></a>  CWnd::OnUpdateUIState  
- Called to to change the user interface (UI) state for the specified window and all its child windows.  
+ Called to change the user interface (UI) state for the specified window and all its child windows.  
   
 ```  
 afx_msg void OnUpdateUIState(
