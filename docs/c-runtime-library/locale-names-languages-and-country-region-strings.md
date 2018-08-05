@@ -28,7 +28,7 @@ The *locale* argument to the `setlocale` and `_create_locale` functions can be s
   
  The code page is the ANSI/OEM code page that's associated with the locale. The code page is determined for you when you specify a locale by language or by language and country/region alone. The special value `.ACP` specifies the ANSI code page for the country/region. The special value `.OCP` specifies the OEM code page for the country/region. For example, if you specify `"Greek_Greece.ACP"` as the locale, the locale is stored as `Greek_Greece.1253` (the ANSI code page for Greek), and if you specify `"Greek_Greece.OCP"` as the locale, it is stored as `Greek_Greece.737` (the OEM code page for Greek). For more information about code pages, see [Code Pages](../c-runtime-library/code-pages.md). For a list of supported code pages on Windows, see [Code Page Identifiers](http://msdn.microsoft.com/library/windows/desktop/dd317756.aspx).  
   
- If you use only the code page to specify the locale, the system default language and country/region are used. For example, if you specify `".1254"` (ANSI Turkish) as the locale on a system that's configured for English (United States), the locale that's stored is `English_United States.1254`. We do not recommend this form, because it could lead to inconsistent behavior.  
+ If you use only the code page to specify the locale, the user's default language and country/region (as reported by [GetUserDefaultLocaleName](https://docs.microsoft.com/en-us/windows/desktop/api/winnls/nf-winnls-getuserdefaultlocalename)) are used. For example, if you specify `".1254"` (ANSI Turkish) as the locale for a user that's configured for English (United States), the locale that's stored is `English_United States.1254`. We do not recommend this form, because it could lead to inconsistent behavior.  
   
 A *locale* argument value of `C` specifies the minimal ANSI conforming environment for C translation. The `C` locale assumes that every `char` data type is 1 byte and its value is always less than 256. If *locale* points to an empty string, the locale is the implementation-defined native environment.  
   
@@ -45,9 +45,9 @@ _wsetlocale(LC_ALL, L"LC_MONETARY=en-GB;LC_TIME=es-ES");
 ```  
   
 ## See Also  
- [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)   
- [_get_current_locale](../c-runtime-library/reference/get-current-locale.md)   
- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)   
- [_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)   
- [Language Strings](../c-runtime-library/language-strings.md)   
+ [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md)
+ [_get_current_locale](../c-runtime-library/reference/get-current-locale.md)
+ [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)
+ [_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)
+ [Language Strings](../c-runtime-library/language-strings.md)
  [Country/Region Strings](../c-runtime-library/country-region-strings.md)
