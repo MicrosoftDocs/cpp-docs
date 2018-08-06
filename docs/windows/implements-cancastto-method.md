@@ -24,12 +24,12 @@ __forceinline HRESULT CanCastTo(
 );  
 ```  
   
-#### Parameters  
- `riid`  
+### Parameters  
+ *riid*  
  A reference to an interface ID.  
   
- `ppv`  
- If successful, a pointer to the interface specified by `riid`.  
+ *ppv*  
+ If successful, a pointer to the interface specified by *riid*.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that indicates the error, such as E_NOINTERFACE.  

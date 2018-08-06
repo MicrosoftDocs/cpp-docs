@@ -32,18 +32,17 @@ inline bool operator!=(
 inline bool operator!=(  
                const HStringReference& lhs,   
                const HSTRING& rhs) throw()  
-  
 ```  
   
-#### Parameters  
- `lhs`  
- The first parameter to compare. `lhs` can be an HStringReference object or an HSTRING handle.  
+### Parameters  
+ *lhs*  
+ The first parameter to compare. *lhs* can be an **HStringReference** object or an HSTRING handle.  
   
- `rhs`  
- The second parameter to compare.  `rhs` can be an HStringReference object or an HSTRING handle.  
+ *rhs*  
+ The second parameter to compare.  *rhs* can be an **HStringReference** object or an HSTRING handle.  
   
 ## Return Value  
- `true` if the `lhs` and `rhs` parameters are not equal; otherwise, `false`.  
+ **true** if the *lhs* and *rhs* parameters are not equal; otherwise, **false**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

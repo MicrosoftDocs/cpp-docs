@@ -18,8 +18,7 @@ Specifies the IID of the COM interface pointed to by an interface pointer.
 ## Syntax  
   
 ```  
-  
-      [ iid_is(  
+[ iid_is(  
    "expression"  
 ) ]  
 ```  
@@ -34,7 +33,7 @@ Specifies the IID of the COM interface pointed to by an interface pointer.
 ## Example  
  The following code shows the use of **iid_is**:  
   
-```  
+```cpp  
 // cpp_attr_ref_iid_is.cpp  
 // compile with: /LD  
 #include "wtypes.h"  
@@ -64,4 +63,4 @@ __interface IFireTabCtrl : IDispatch
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
+ [Parameter Attributes](../windows/parameter-attributes.md)   

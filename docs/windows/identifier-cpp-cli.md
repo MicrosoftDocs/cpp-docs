@@ -16,30 +16,29 @@ ms.workload: ["cplusplus", "uwp"]
 Enables the use of Visual C++ keywords as identifiers.  
   
 ## All Platforms  
-**Syntax**  
+### Syntax  
   
 ```  
 __identifier(  
 Visual_C++_keyword  
 )  
-  
 ```  
   
-**Remarks**  
+### Remarks  
   
-Use of the `__identifier` keyword for identifiers that are not keywords is permitted, but strongly discouraged as a matter of style.  
+Use of the **__identifier** keyword for identifiers that are not keywords is permitted, but strongly discouraged as a matter of style.  
   
 ## Windows Runtime  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ### Examples  
  **Example**  
   
- In the following example, a class named `template` is created in C# and distributed as a DLL. In the Visual C++ program that uses the `template` class, the `__identifier` keyword conceals the fact that `template` is a standard C++ keyword.  
+ In the following example, a class named `template` is created in C# and distributed as a DLL. In the Visual C++ program that uses the `template` class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.  
   
-```  
+```cs  
 // identifier_template.cs  
 // compile with: /target:library  
 public class template {  
@@ -47,7 +46,7 @@ public class template {
 }  
 ```  
   
-```  
+```cpp  
 // keyword__identifier.cpp  
 // compile with: /ZW  
 #using <identifier_template.dll>  
@@ -58,19 +57,18 @@ int main() {
 ```  
   
 ## Common Language Runtime 
- **Remarks**  
+### Remarks  
   
- The `__identifier` keyword is valid with the **/clr** compiler option.  
+ The **__identifier** keyword is valid with the `/clr` compiler option.  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
- In the following example, a class named `template` is created in C# and distributed as a DLL. In the Visual C++ program that uses the `template` class, the `__identifier` keyword conceals the fact that `template` is a standard C++ keyword.  
+ In the following example, a class named `template` is created in C# and distributed as a DLL. In the Visual C++ program that uses the `template` class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.  
   
-```  
+```cs  
 // identifier_template.cs  
 // compile with: /target:library  
 public class template {  
@@ -78,7 +76,7 @@ public class template {
 }  
 ```  
   
-```  
+```cpp  
 // keyword__identifier.cpp  
 // compile with: /clr  
 #using <identifier_template.dll>  

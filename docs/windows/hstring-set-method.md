@@ -12,12 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::Set Method
-Sets the value of the current HString object to the specified wide-character string or HString parameter.  
+Sets the value of the current **HString** object to the specified wide-character string or **HString** parameter.  
   
 ## Syntax  
   
 ```  
-  
 HRESULT Set(  
           const wchar_t* str) throw();  
 HRESULT Set(   
@@ -29,15 +28,15 @@ HRESULT Set(
            ) throw();  
 ```  
   
-#### Parameters  
- `str`  
+### Parameters  
+ *str*  
  A wide-character string.  
   
- `len`  
- The maximum length of the `str` parameter that is assigned to the current HString object.  
+ *len*  
+ The maximum length of the *str* parameter that is assigned to the current **HString** object.  
   
- `hstr`  
- An existing HString object.  
+ *hstr*  
+ An existing **HString** object.  
   
 ## Requirements  
  **Header:** corewrappers.h  

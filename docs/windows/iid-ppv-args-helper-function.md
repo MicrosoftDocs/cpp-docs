@@ -28,20 +28,20 @@ void** IID_PPV_ARGS_Helper(
 ```  
   
 #### Parameters  
- `T`  
- The type of argument `pp`.  
+ *T*  
+ The type of argument *pp*.  
   
- `pp`  
+ *pp*  
  A doubly-indirect pointer.  
   
 ## Return Value  
- Argument `pp` cast to a pointer-to-a-pointer to `void`.  
+ Argument *pp* cast to a pointer-to-a-pointer to **void**.  
   
 ## Remarks  
- A compile-time error is generated if the template parameter `T` doesn't derive from `IUnknown`.  
+ A compile-time error is generated if the template parameter *T* doesn't derive from `IUnknown`.  
   
 ## Requirements  
  **Header:** client.h  
   
 ## See Also  
- [Reference (Windows Runtime Library)](http://msdn.microsoft.com/en-us/00000000-0000-0000-0000-000000000000)
+ [Reference (Windows Runtime Library)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)
