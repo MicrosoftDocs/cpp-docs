@@ -25,17 +25,17 @@ void* operator new(
 ```  
   
 #### Parameters  
- `__unnamed0`  
+ *__unnamed0*  
  An unnamed parameter that specifies the number of bytes of memory to allocate.  
   
- `placement`  
+ *placement*  
  The type to be allocated.  
   
 ## Return Value  
- Provides a way to pass additional arguments if you overload operator `new`.  
+ Provides a way to pass additional arguments if you overload operator **new**.  
   
 ## Remarks  
- Overloads operator `new` and prevents it from being used in RuntimeClass.  
+ Overloads operator **new** and prevents it from being used in `RuntimeClass`.  
   
 ## Requirements  
  **Header:** implements.h  

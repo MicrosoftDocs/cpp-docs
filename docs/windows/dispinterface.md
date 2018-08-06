@@ -18,9 +18,7 @@ Places an interface in the .idl file as a dispatch interface.
 ## Syntax  
   
 ```  
-  
 [dispinterface]  
-  
 ```  
   
 ## Remarks  
@@ -46,7 +44,7 @@ dispinterface helloPro
   
 |||  
 |-|-|  
-|**Applies to**|`interface`|  
+|**Applies to**|**interface**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|**dual**, **object**, **oleautomation**, `local`, **ms_union**|  
@@ -60,4 +58,4 @@ dispinterface helloPro
  [dual](../windows/dual.md)   
  [custom](../windows/custom-cpp.md)   
  [object](../windows/object-cpp.md)   
- [__interface](../cpp/interface.md)   
+ [__interface](../cpp/interface.md)   

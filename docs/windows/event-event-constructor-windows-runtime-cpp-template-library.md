@@ -26,8 +26,8 @@ WRL_NOTHROW Event(
 ```  
   
 #### Parameters  
- `h`  
- Handle to an event. By default, `h` is initialized to `nullptr`.  
+ *h*  
+ Handle to an event. By default, *h* is initialized to **nullptr**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

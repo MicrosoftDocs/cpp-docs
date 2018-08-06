@@ -30,7 +30,7 @@ struct DerefHelper<T*>;
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  A template parameter.  
   
 ## Remarks  

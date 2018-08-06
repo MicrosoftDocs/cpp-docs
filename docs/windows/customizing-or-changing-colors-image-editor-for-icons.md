@@ -28,9 +28,7 @@ The Image editor's [Colors palette](../windows/colors-window-image-editor-for-ic
   
 5.  Click **OK** to add the new color.  
   
-
-  
- Requirements  
+## Requirements  
   
  None  
   
