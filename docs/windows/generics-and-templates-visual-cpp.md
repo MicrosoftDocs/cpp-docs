@@ -50,7 +50,7 @@ Generics and templates are both language features that provide support for param
   
 ### Code  
   
-```  
+```cpp  
 // templates_and_generics.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -85,7 +85,7 @@ int main() {
   
 ### Output  
   
-```  
+```Output  
 F  
 ```  
   

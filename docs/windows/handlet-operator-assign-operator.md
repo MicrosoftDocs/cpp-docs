@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::operator= Operator
-Moves the value of the specified HandleT object to the current HandleT object.  
+Moves the value of the specified **HandleT** object to the current **HandleT** object.  
   
 ## Syntax  
   
@@ -23,15 +23,15 @@ HandleT& operator=(
 );  
 ```  
   
-#### Parameters  
- `h`  
+### Parameters  
+ *h*  
  An rvalue-reference to a handle.  
   
 ## Return Value  
- A reference to the current HandleT object.  
+ A reference to the current **HandleT** object.  
   
 ## Remarks  
- This operation invalidates the HandleT object specified by parameter `h`.  
+ This operation invalidates the **HandleT** object specified by parameter *h*.  
   
 ## Requirements  
  **Header:** corewrappers.h  

@@ -28,27 +28,27 @@ STDMETHODIMP MarshalInterface(
 ) override;  
 ```  
   
-#### Parameters  
- `pStm`  
+### Parameters  
+ *pStm*  
  Pointer to the stream to be used during marshaling.  
   
- `riid`  
- Reference to the identifier of the interface to be marshaled. This interface must be derived from the IUnknown interface.  
+ *riid*  
+ Reference to the identifier of the interface to be marshaled. This interface must be derived from the `IUnknown` interface.  
   
- `pv`  
+ *pv*  
  Pointer to the interface pointer to be marshaled; can be NULL if the caller does not have a pointer to the desired interface.  
   
- `dwDestContext`  
+ *dwDestContext*  
  Destination context where the specified interface is to be unmarshaled.  
   
  Specify one or more MSHCTX enumeration values.  
   
  Unmarshaling can occur in another apartment of the current process (MSHCTX_INPROC) or in another process on the same computer as the current process (MSHCTX_LOCAL).  
   
- `pvDestContext`  
+ *pvDestContext*  
  Reserved for future use; must be zero.  
   
- `mshlflags`  
+ *mshlflags*  
  Specifies whether the data to be marshaled is to be transmitted back to the client process — the typical case — or written to a global table, where it can be retrieved by multiple clients.  
   
 ## Return Value  
