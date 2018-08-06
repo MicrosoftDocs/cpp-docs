@@ -25,12 +25,12 @@ A generic function is a function that is declared with type parameters. When cal
  This feature is not supported in the Windows Runtime.  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
  A generic function is a function that is declared with type parameters. When called, actual types are used instead of the type parameters.  
   
- **Syntax**  
+### Syntax  
   
 ```  
 [attributes] [modifiers]  
@@ -41,13 +41,13 @@ return-type identifier<type-parameter identifier(s)>
 {function-body}  
 ```  
   
- **Parameters**  
+### Parameters 
   
  *attributes* (Optional)  
  Additional declarative information. For more information on attributes and attribute classes, see attributes.  
   
  *modifiers* (Optional)  
- A modifier for the function, such as static.  `virtual` is not allowed since virtual methods may not be generic.  
+ A modifier for the function, such as static.  **virtual** is not allowed since virtual methods may not be generic.  
   
  *return-type*  
  The type returned by the method. If the return type is void, no return value is required.  
@@ -67,7 +67,7 @@ return-type identifier<type-parameter identifier(s)>
  *function-body*  
  The body of the method, which may refer to the type parameter identifiers.  
   
- **Remarks**  
+### Remarks  
   
  Generic functions are functions declared with a generic type parameter. They may be methods in a class or struct, or standalone functions. A single generic declaration implicitly declares a family of functions that differ only in the substitution of a different actual type for the generic type parameter.  
   
@@ -76,14 +76,14 @@ return-type identifier<type-parameter identifier(s)>
  When called, the generic type parameter is replaced by an actual type. The actual type may be explicitly specified in angled brackets using syntax similar to a template function call. If called without the type parameters, the compiler will attempt to deduce the actual type from the parameters supplied in the function call. If the intended type argument cannot be deduced from the parameters used, the compiler will report an error.  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
  **Example**  
   
  The following code sample demonstrates a generic function.  
   
-```  
+```cpp  
 // generics_generic_function_1.cpp  
 // compile with: /clr  
 generic <typename ItemType>  
@@ -118,7 +118,7 @@ int main() {
   
  Generic functions can be overloaded based on signature or arity, the number of type parameters on a function. Also, generic functions can be overloaded with non-generic functions of the same name, as long as the functions differ in some type parameters. For example, the following functions can be overloaded:  
   
-```  
+```cpp  
 // generics_generic_function_2.cpp  
 // compile with: /clr /c  
 ref struct MyClass {  
@@ -134,9 +134,9 @@ ref struct MyClass {
   
  **Example**  
   
- The following example uses a generic function to find the first element in an array. It declares `MyClass`, which inherits from the base class `MyBaseClass`. `MyClass` contains a generic function, `MyFunction`, which calls another generic function, `MyBaseClassFunction`, within the base class. In **main**, the generic function, `MyFunction`, is called using different type arguments.  
+ The following example uses a generic function to find the first element in an array. It declares `MyClass`, which inherits from the base class `MyBaseClass`. `MyClass` contains a generic function, `MyFunction`, which calls another generic function, `MyBaseClassFunction`, within the base class. In `main`, the generic function, `MyFunction`, is called using different type arguments.  
   
-```  
+```cpp  
 // generics_generic_function_3.cpp  
 // compile with: /clr  
 using namespace System;  

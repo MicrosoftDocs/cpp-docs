@@ -25,17 +25,17 @@ generic < [class | typename] type-parameter-identifiers>
 ```  
   
 #### Parameters  
- `attributes` (Optional)  
+ *attributes* (Optional)  
  Additional declarative information. For more information on attributes and attribute classes, see Attributes.  
   
  *type-parameter-identifier(s)*  
  Comma-separated list of identifiers for the type parameters.  
   
- `type-parameter-constraints-clauses`  
+ *type-parameter-constraints-clauses*  
  Takes the form specified in [Constraints on Generic Type Parameters (C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)  
   
  *accessibility-modifiers* (Optional)  
- Accessibility modifiers (e.g. **public**, `private`).  
+ Accessibility modifiers (e.g. **public**, **private**).  
   
  *result-type*  
  The return type of the delegate.  
@@ -49,7 +49,7 @@ generic < [class | typename] type-parameter-identifiers>
 ## Example  
  The delegate type parameters are specified at the point where a delegate object is created. Both the delegate and method associated with it must have the same signature. The following is an example of a generic delegate declaration.  
   
-```  
+```cpp  
 // generics_generic_delegate1.cpp  
 // compile with: /clr /c  
 generic <class ItemType>  
@@ -65,7 +65,7 @@ delegate ItemType GenDelegate(ItemType p1, ItemType% p2);
   
 -   When a generic method is called without specifying type arguments, the compiler tries to infer the type arguments for the call.  
   
-```  
+```cpp  
 // generics_generic_delegate2.cpp  
 // compile with: /clr  
 generic <class ItemType>  
@@ -102,7 +102,7 @@ int main() {
 ## Example  
  The following example declares a generic delegate `GenDelegate<ItemType>`, and then instantiates it by associating it to the method `MyMethod` that uses the type parameter `ItemType`. Two instances of the delegate (an integer and a double) are created and invoked.  
   
-```  
+```cpp  
 // generics_generic_delegate.cpp  
 // compile with: /clr  
 using namespace System;  

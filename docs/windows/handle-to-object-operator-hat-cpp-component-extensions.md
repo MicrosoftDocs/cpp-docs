@@ -41,7 +41,7 @@ The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](.
   
  This sample shows how to create an instance of a reference type on the managed heap.  This sample also shows that you can initialize one handle with another, resulting in two references to same object on managed, garbage-collected heap. Notice that assigning [nullptr](../windows/nullptr-cpp-component-extensions.md) to one handle does not mark the object for garbage collection.  
   
-```  
+```cpp  
 // mcppv2_handle.cpp  
 // compile with: /clr  
 ref class MyClass {  
@@ -77,7 +77,7 @@ int main() {
   
  The following sample shows how to declare a handle to an object on the managed heap, where the type of object is a boxed value type. The sample also shows how to get the value type from the boxed object.  
   
-```  
+```cpp  
 // mcppv2_handle_2.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -111,7 +111,7 @@ Not a boxed int
   
  This sample shows that the common C++ idiom of using a void* pointer to point to an arbitrary object is replaced by Object^, which can hold a handle to any reference class. It also shows that all types, such as arrays and delegates, can be converted to an object handle.  
   
-```  
+```cpp  
 // mcppv2_handle_3.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -160,7 +160,7 @@ Type is MyDel
   
  This sample shows that a handle can be dereferenced and that a member can be accessed via a dereferenced handle.  
   
-```  
+```cpp  
 // mcppv2_handle_4.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -210,7 +210,7 @@ Cannot access array element 11, size is 10
   
  This sample shows that a native reference (`&`) can’t bind to an `int` member of a managed type, as the `int` might be stored in the garbage collected heap, and native references don’t track object movement in the managed heap. The fix is to use a local variable, or to change `&` to `%`, making it a tracking reference.  
   
-```  
+```cpp  
 // mcppv2_handle_5.cpp  
 // compile with: /clr  
 ref struct A {  
@@ -231,7 +231,7 @@ int main() {
 ```  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ## See Also  
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)   

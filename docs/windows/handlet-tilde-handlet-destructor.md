@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::~HandleT Destructor
-Deinitializes an instance of the HandleT class.  
+Deinitializes an instance of the **HandleT** class.  
   
 ## Syntax  
   
