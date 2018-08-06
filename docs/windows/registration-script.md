@@ -18,8 +18,7 @@ Executes the specified custom registration script.
 ## Syntax  
   
 ```  
-  
-      [ registration_script(   
+[ registration_script(   
    script   
 ) ]  
 ```  
@@ -29,14 +28,14 @@ Executes the specified custom registration script.
  The full path to a custom registration script (.rgs) file. A value of **none**, such as `script = "none"`, indicates that the coclass has no registration requirements.  
   
 ## Remarks  
- The **registration_script** C++ attribute executes the custom registration script specified by **script**. If this attribute is not specified, a standard .rgs file (containing information for registering the component) is used. For more information on .rgs files, see [The ATL Registry Component (Registrar)](../atl/atl-registry-component-registrar.md).  
+ The **registration_script** C++ attribute executes the custom registration script specified by *script*. If this attribute is not specified, a standard .rgs file (containing information for registering the component) is used. For more information on .rgs files, see [The ATL Registry Component (Registrar)](../atl/atl-registry-component-registrar.md).  
   
  This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element.  
   
 ## Example  
  The following code specifies that the component has a registry script called cpp_attr_ref_registration_script.rgs.  
   
-```  
+```cpp  
 // cpp_attr_ref_registration_script.cpp  
 // compile with: /LD  
 #define _ATL_ATTRIBUTES  
@@ -61,9 +60,9 @@ class CMyClass:public IFace {};
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
-|**Required attributes**|One or more of the following: **coclass**, **progid**, or **vi_progid**.|  
+|**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|  
 |**Invalid attributes**|None|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
@@ -71,4 +70,4 @@ class CMyClass:public IFace {};
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [rdx](../windows/rdx.md)   
+ [rdx](../windows/rdx.md)   

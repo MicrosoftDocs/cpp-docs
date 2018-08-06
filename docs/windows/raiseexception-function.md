@@ -23,17 +23,17 @@ inline void __declspec(noreturn)   RaiseException(
       DWORD dwExceptionFlags = EXCEPTION_NONCONTINUABLE);  
 ```  
   
-#### Parameters  
- `hr`  
+### Parameters  
+ *hr*  
  The exception code of the exception being raised; that is, the HRESULT of a failed operation.  
   
- `dwExceptionFlags`  
+ *dwExceptionFlags*  
  A flag that indicates a continuable exception (the flag value is zero), or noncontinuable exception (flag value is nonzero). By default, the exception is noncontinuable.  
   
 ## Remarks  
  Raises an exception in the calling thread.  
   
- For more information, see the Windows **RaiseException** function.  
+ For more information, see the Windows `RaiseException` function.  
   
 ## Requirements  
  **Header:** internal.h  

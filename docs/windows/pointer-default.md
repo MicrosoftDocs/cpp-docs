@@ -18,15 +18,14 @@ Specifies the default pointer attribute for all pointers, except top-level point
 ## Syntax  
   
 ```  
-  
-      [ pointer_default(  
+[ pointer_default(  
    value  
 ) ]  
 ```  
   
 #### Parameters  
  *value*  
- A value that describes the pointer type: **ptr**, `ref`, or **unique**.  
+ A value that describes the pointer type: **ptr**, **ref**, or **unique**.  
   
 ## Remarks  
  The **pointer_default** C++ attribute has the same functionality as the [pointer_default](http://msdn.microsoft.com/library/windows/desktop/aa367141) MIDL attribute.  
@@ -40,7 +39,7 @@ Specifies the default pointer attribute for all pointers, except top-level point
   
 |||  
 |-|-|  
-|**Applies to**|`interface`|  
+|**Applies to**|**interface**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -49,4 +48,4 @@ Specifies the default pointer attribute for all pointers, except top-level point
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
+ [Interface Attributes](../windows/interface-attributes.md)   
