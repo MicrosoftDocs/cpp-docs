@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::~HString Destructor
-Destroys the current instance of the HString class.  
+Destroys the current instance of the **HString** class.  
   
 ## Syntax  
   

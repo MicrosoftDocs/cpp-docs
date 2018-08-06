@@ -18,8 +18,7 @@ Allows you to use IDL constructs that are not supported in the current version o
 ## Syntax  
   
 ```  
-  
-      [ idl_quote(  
+[ idl_quote(  
    text  
 ) ]  
 ```  
@@ -34,7 +33,7 @@ Allows you to use IDL constructs that are not supported in the current version o
 ## Example  
  The following code shows how you could specify an unsupported attribute (using **in**, which is supported) and how to define and use an undefined .idl construct:  
   
-```  
+```cpp  
 // cpp_attr_ref_idl_quote.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -84,4 +83,4 @@ __interface IStatic{
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
+ [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
