@@ -23,8 +23,8 @@ STDMETHODIMP DisconnectObject(
 ) override;  
 ```  
   
-#### Parameters  
- `dwReserved`  
+### Parameters  
+ *dwReserved*  
  Reserved for future use; must be zero.  
   
 ## Return Value  

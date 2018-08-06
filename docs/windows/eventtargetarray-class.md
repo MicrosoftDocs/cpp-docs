@@ -24,7 +24,7 @@ class EventTargetArray : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::Run
 ## Remarks  
  Represents an array of event handlers.  
   
- The event handlers that are associated with an [EventSource](../windows/eventsource-class.md) object are stored in a protected EventTargetArray data member.  
+ The event handlers that are associated with an [EventSource](../windows/eventsource-class.md) object are stored in a protected **EventTargetArray** data member.  
   
 ## Members  
   
@@ -32,8 +32,8 @@ class EventTargetArray : public Microsoft::WRL::RuntimeClass<Microsoft::WRL::Run
   
 |Name|Description|  
 |----------|-----------------|  
-|[EventTargetArray::EventTargetArray Constructor](../windows/eventtargetarray-eventtargetarray-constructor.md)|Initializes a new instance of the EventTargetArray class.|  
-|[EventTargetArray::~EventTargetArray Destructor](../windows/eventtargetarray-tilde-eventtargetarray-destructor.md)|Deinitializes the current EventTargetArray class.|  
+|[EventTargetArray::EventTargetArray Constructor](../windows/eventtargetarray-eventtargetarray-constructor.md)|Initializes a new instance of the **EventTargetArray** class.|  
+|[EventTargetArray::~EventTargetArray Destructor](../windows/eventtargetarray-tilde-eventtargetarray-destructor.md)|Deinitializes the current **EventTargetArray** class.|  
   
 ### Public Methods  
   

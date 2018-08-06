@@ -23,8 +23,8 @@ static HRESULT CreateGlobalInterfaceTable(
 );  
 ```  
   
-#### Parameters  
- `git`  
+### Parameters  
+ *git*  
  When this operation completes, a pointer to a global interface table.  
   
 ## Return Value  
