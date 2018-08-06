@@ -11,19 +11,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::CopyTo Method
-Copies the current HString object to an HSTRING object.  
+Copies the current **HString** object to an HSTRING object.  
   
 ## Syntax  
   
 ```  
-  
 HRESULT CopyTo(  
    _Out_ HSTRING *str  
    ) const throw();  
 ```  
   
 #### Parameters  
- `str`  
+ *str*  
  The HSTRING that receives the copy.  
   
 ## Remarks  

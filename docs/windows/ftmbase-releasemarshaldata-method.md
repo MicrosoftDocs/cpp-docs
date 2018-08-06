@@ -24,7 +24,7 @@ STDMETHODIMP ReleaseMarshalData(
 ```  
   
 #### Parameters  
- `pStm`  
+ *pStm*  
  Pointer to a stream that contains the data packet to be destroyed.  
   
 ## Return Value  

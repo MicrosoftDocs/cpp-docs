@@ -18,14 +18,13 @@ Specifies an exported function or constant in a module by identifying the entry 
 ## Syntax  
   
 ```  
-  
-      [ entry(  
+[ entry(  
    id  
 ) ]  
 ```  
   
 #### Parameters  
- `id`  
+ *id*  
  The ID of the entry point.  
   
 ## Remarks  
@@ -48,4 +47,4 @@ Specifies an exported function or constant in a module by identifying the entry 
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
+ [IDL Attributes](../windows/idl-attributes.md)   

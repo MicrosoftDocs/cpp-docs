@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::targetsPointerLock_ Data Member
-Synchronizes access to internal data members even while event handlers for this EventSource are being added, removed, or invoked.  
+Synchronizes access to internal data members even while event handlers for this **EventSource** are being added, removed, or invoked.  
   
 ## Syntax  
   

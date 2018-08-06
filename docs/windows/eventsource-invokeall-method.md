@@ -171,65 +171,65 @@ void InvokeAll(
 );  
 ```  
   
-#### Parameters  
- `T0`  
+### Parameters  
+ *T0*  
  The type of the zeroth event handler argument.  
   
- `T1`  
+ *T1*  
  The type of the first event handler argument.  
   
- `T2`  
+ *T2*  
  The type of the second event handler argument.  
   
- `T3`  
+ *T3*  
  The type of the third event handler argument.  
   
- `T4`  
+ *T4*  
  The type of the fourth event handler argument.  
   
- `T5`  
+ *T5*  
  The type of the fifth event handler argument.  
   
- `T6`  
+ *T6*  
  The type of the sixth event handler argument.  
   
- `T7`  
+ *T7*  
  The type of the seventh event handler argument.  
   
- `T8`  
+ *T8*  
  The type of the eigth event handler argument.  
   
- `T9`  
+ *T9*  
  The type of the ninth event handler argument.  
   
- `arg0`  
+ *arg0*  
  The zeroth event handler argument.  
   
- `arg1`  
+ *arg1*  
  The first event handler argument.  
   
- `arg2`  
+ *arg2*  
  The second event handler argument.  
   
- `arg3`  
+ *arg3*  
  The third event handler argument.  
   
- `arg4`  
+ *arg4*  
  The fourth event handler argument.  
   
- `arg5`  
+ *arg5*  
  The fifth event handler argument.  
   
- `arg6`  
+ *arg6*  
  The sixth event handler argument.  
   
- `arg7`  
+ *arg7*  
  The seventh event handler argument.  
   
- `arg8`  
+ *arg8*  
  The eigth event handler argument.  
   
- `arg9`  
+ *arg9*  
  The ninth event handler argument.  
   
 ## Requirements  

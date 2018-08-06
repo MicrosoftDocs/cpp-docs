@@ -25,15 +25,15 @@ inline HRESULT GetActivationFactory(
 );  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  A template parameter that specifies the type of the activation factory.  
   
- `activatableClassId`  
+ *activatableClassId*  
  The name of the class that the activation factory can produce.  
   
- `factory`  
- When this operation completes, a reference to the activation factory for type `T`.  
+ *factory*  
+ When this operation completes, a reference to the activation factory for type *T*.  
   
 ## Return Value  
  S_OK if successful; otherwise, an error HRESULT that indicates why this operation failed.  

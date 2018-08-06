@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "uwp"]
 # How to: Add MFC Support to Resource Script Files
 Normally, when you build an MFC application for Windows using the [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md), the wizard generates a basic set of files (including a resource script (.rc) file) that contains the core features of the Microsoft Foundation classes (MFC). However, if you are editing an .rc file for a Windows application that is not based on MFC, the following features specific to the MFC framework are not available:  
   
--   MFC code wizards (previously called "[MFC ClassWizard](http://msdn.microsoft.com/en-us/98dc2434-ba93-4e0b-b084-1a4bc26cdf1e)")  
+-   MFC code wizards (previously called "[MFC ClassWizard](http://msdn.microsoft.com/98dc2434-ba93-4e0b-b084-1a4bc26cdf1e)")  
   
 -   Menu prompt strings  
   
@@ -39,9 +39,7 @@ Normally, when you build an MFC application for Windows using the [MFC Applicati
     > [!NOTE]
     >  In addition to setting this flag, the .rc file must be part of an MFC project. For example, just setting **MFC Mode** to **True** on an .rc file in a Win32 project won't give you any of the MFC features.  
   
-
-  
- **Requirements**  
+## Requirements  
   
  MFC  
   

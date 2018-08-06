@@ -18,7 +18,6 @@ Represents a free-threaded marshaler object.
 ## Syntax  
   
 ```  
-  
 class FtmBase : public Microsoft::WRL::Implements<  
    Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,   
    Microsoft::WRL::CloakedIid<IMarshal> >;  
@@ -33,7 +32,7 @@ class FtmBase : public Microsoft::WRL::Implements<
   
 |Name|Description|  
 |----------|-----------------|  
-|[FtmBase::FtmBase Constructor](../windows/ftmbase-ftmbase-constructor.md)|Initializes a new instance of the FtmBase class.|  
+|[FtmBase::FtmBase Constructor](../windows/ftmbase-ftmbase-constructor.md)|Initializes a new instance of the **FtmBase** class.|  
   
 ### Public Methods  
   

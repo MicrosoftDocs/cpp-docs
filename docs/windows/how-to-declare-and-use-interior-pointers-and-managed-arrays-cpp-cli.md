@@ -15,13 +15,13 @@ ms.workload: ["cplusplus", "uwp"]
 The following C++/CLI sample shows how you can declare and use an interior pointer to an array.  
   
 > [!IMPORTANT]
->  This language feature is supported by the **/clr** compiler option, but not by the **/ZW** compiler option.  
+>  This language feature is supported by the `/clr` compiler option, but not by the `/ZW` compiler option.  
   
 ## Example  
   
 ### Code  
   
-```  
+```cpp  
 // interior_ptr_arrays.cpp  
 // compile with: /clr  
 #define SIZE 10  
@@ -47,7 +47,7 @@ int main() {
   
 ### Output  
   
-```  
+```Output  
 1st element in arr holds: 1  
 ipi points to memory address whose value is: 1  
 after incrementing ipi, it points to memory address whose value is: 2  

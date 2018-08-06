@@ -16,7 +16,7 @@ The following attributes apply to the data members in a class, coclass, or inter
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|[db_accessor](../windows/db-accessor.md)|Groups **db_column** attributes that participate in `IAccessor`-based binding.|  
+|[db_accessor](../windows/db-accessor.md)|Groups `db_column` attributes that participate in `IAccessor`-based binding.|  
 |[db_column](../windows/db-column.md)|Binds a specified column to the rowset.|  
 |[db_command](../windows/db-command.md)|Creates an OLE DB command.|  
 |[db_param](../windows/db-param.md)|Associates the specified member variable with an input or output parameter and delimits the variable.|  
@@ -28,7 +28,7 @@ The following attributes apply to the data members in a class, coclass, or inter
 |[range](../windows/range-cpp.md)|Specifies a range of allowable values for arguments or fields whose values are set at run time.|  
 |[rdx](../windows/rdx.md)|Creates a registry key or modifies an existing registry key.|  
 |[readonly](../windows/readonly-cpp.md)|Prohibits assignment to a data member.|  
-|[requestedit](../windows/requestedit.md)|Indicates that the property supports the **OnRequestEdit** notification.|  
+|[requestedit](../windows/requestedit.md)|Indicates that the property supports the `OnRequestEdit` notification.|  
   
 ## See Also  
  [Attributes by Usage](../windows/attributes-by-usage.md)

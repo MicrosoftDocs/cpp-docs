@@ -12,19 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Declare Value Types with the interior_ptr Keyword (C++/CLI)
-An `interior_ptr` can be used with a value type.  
+An **interior_ptr** can be used with a value type.  
   
 > [!IMPORTANT]
->  This language feature is supported by the **/clr** compiler option, but not by the **/ZW** compiler option.  
+>  This language feature is supported by the `/clr` compiler option, but not by the `/ZW` compiler option.  
   
 ## Example  
   
 ### Description  
- The following C++/CLI sample shows how to use an `interior_ptr` with a value type.  
+ The following C++/CLI sample shows how to use an **interior_ptr** with a value type.  
   
 ### Code  
   
-```  
+```cpp  
 // interior_ptr_value_types.cpp  
 // compile with: /clr  
 value struct V {  
@@ -54,7 +54,7 @@ int main() {
   
 ### Output  
   
-```  
+```Output  
 1  
 2  
 2  
@@ -66,13 +66,13 @@ int main() {
 ## Example  
   
 ### Description  
- In a value type, the `this` pointer evaluates to an interior_ptr.  
+ In a value type, the **this** pointer evaluates to an interior_ptr.  
   
- In the body of a non-static member-function of a value type `V`, `this` is an expression of type `interior_ptr<V>` whose value is the address of the object for which the function is called.  
+ In the body of a non-static member-function of a value type `V`, **this** is an expression of type `interior_ptr<V>` whose value is the address of the object for which the function is called.  
   
 ### Code  
   
-```  
+```cpp  
 // interior_ptr_value_types_this.cpp  
 // compile with: /clr /LD  
 value struct V {  
@@ -93,7 +93,7 @@ value struct V {
   
 ### Code  
   
-```  
+```cpp  
 // interior_ptr_value_static.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -119,7 +119,7 @@ int main() {
   
 ### Output  
   
-```  
+```Output 
 22  
 23  
 hello  

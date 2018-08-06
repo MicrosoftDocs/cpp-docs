@@ -22,7 +22,7 @@ inline static Type GetInvalidValue();
 ```  
   
 ## Return Value  
- Always returns `nullptr`.  
+ Always returns **nullptr**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

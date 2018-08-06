@@ -18,9 +18,7 @@ Places an interface in the .idl file as a dual interface.
 ## Syntax  
   
 ```  
-  
 [dual]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Places an interface in the .idl file as a dual interface.
 ## Example  
  The following code is an attribute block that uses **dual** before an interface definition:  
   
-```  
+```cpp  
 // cpp_attr_ref_dual.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -67,7 +65,7 @@ __interface IStatic : IDispatch
   
 |||  
 |-|-|  
-|**Applies to**|`interface`|  
+|**Applies to**|**interface**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|**dispinterface**|  
@@ -80,4 +78,4 @@ __interface IStatic : IDispatch
  [custom](../windows/custom-cpp.md)   
  [dispinterface](../windows/dispinterface.md)   
  [object](../windows/object-cpp.md)   
- [__interface](../cpp/interface.md)   
+ [__interface](../cpp/interface.md)   

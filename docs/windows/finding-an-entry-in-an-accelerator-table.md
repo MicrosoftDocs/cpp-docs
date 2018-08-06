@@ -23,9 +23,9 @@ ms.workload: ["cplusplus", "uwp"]
   
  You can then scan the list and find the entry.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
- **Requirements**  
+## Requirements  
   
  Win32  
   

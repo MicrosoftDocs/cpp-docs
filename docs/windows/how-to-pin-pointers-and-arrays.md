@@ -18,7 +18,7 @@ Pinning a sub-object defined in a managed object has the effect of pinning the e
   
 ### Code  
   
-```  
+```cpp  
 // pin_ptr_array.cpp  
 // compile with: /clr  
 #include <stdio.h>  
@@ -40,7 +40,7 @@ int main() {
   
 ### Output  
   
-```  
+```Output  
 ++  
 ```  
   

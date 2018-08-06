@@ -21,10 +21,8 @@ template<
 class ComposableBase;  
 ```  
   
-#### Parameters  
+### Parameters  
  *FactoryInterface*  
-  
-## Remarks  
   
 ## Requirements  
  **Header:** implements.h  

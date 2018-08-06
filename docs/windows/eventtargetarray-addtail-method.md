@@ -23,14 +23,14 @@ void AddTail(
 );  
 ```  
   
-#### Parameters  
- `element`  
+### Parameters  
+ *element*  
  Pointer to the event handler to append.  
   
 ## Remarks  
  Appends the specified event handler to the end of the internal array of event handlers.  
   
- AddTail() is intended to be used internally by only the EventSource class.  
+ **AddTail()** is intended to be used internally by only the `EventSource` class.  
   
 ## Requirements  
  **Header:** event.h  

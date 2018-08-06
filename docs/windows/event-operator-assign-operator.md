@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Event::operator= Operator
-Assigns the specified Event reference to the current Event instance.  
+Assigns the specified **Event** reference to the current **Event** instance.  
   
 ## Syntax  
   
@@ -24,11 +24,11 @@ WRL_NOTHROW Event& operator=(
 ```  
   
 #### Parameters  
- `h`  
- An rvalue-reference to an Event instance.  
+ *h*  
+ An rvalue-reference to an **Event** instance.  
   
 ## Return Value  
- A pointer to the current Event instance.  
+ A pointer to the current **Event** instance.  
   
 ## Requirements  
  **Header:** corewrappers.h  

@@ -23,12 +23,12 @@ inline static bool Close(
 );  
 ```  
   
-#### Parameters  
- `h`  
+### Parameters  
+ *h*  
  The handle to close.  
   
 ## Return Value  
- **true** if handle `h` closed successfully; otherwise, **false**.  
+ **true** if handle *h* closed successfully; otherwise, **false**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

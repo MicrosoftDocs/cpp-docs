@@ -38,7 +38,7 @@ ms.workload: ["cplusplus", "uwp"]
   
  Sets the height of the layout grid in DLUs. A vertical DLU is the average height of the dialog box font divided by eight.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  Win32  
@@ -46,4 +46,3 @@ ms.workload: ["cplusplus", "uwp"]
 ## See Also  
  [Modifying the Layout Grid](../windows/modifying-the-layout-grid.md)   
  [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)
-

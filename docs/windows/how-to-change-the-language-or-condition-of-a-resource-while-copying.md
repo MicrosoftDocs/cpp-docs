@@ -37,9 +37,7 @@ IDD_AboutBox (Finnish - XX33)
   
     -   In the **Condition** box, type the condition.  
   
-
-  
- Requirements  
+## Requirements  
   
  Win32  
   
