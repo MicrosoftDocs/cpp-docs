@@ -18,14 +18,13 @@ Prevents the compiler from injecting code as a result of attribute use.
 ## Syntax  
   
 ```  
-  
-      [ no_injected_text(  
+[ no_injected_text(  
    boolean  
 ) ];  
 ```  
   
 #### Parameters  
- `boolean`(optional)  
+ *boolean* (optional)  
  **true** if you want no code injected, **false** to allow code to be injected. **true** is the default.  
   
 ## Remarks  
@@ -45,4 +44,4 @@ Prevents the compiler from injecting code as a result of attribute use.
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
- [Compiler Attributes](../windows/compiler-attributes.md)   
+ [Compiler Attributes](../windows/compiler-attributes.md)   

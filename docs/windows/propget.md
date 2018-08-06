@@ -18,9 +18,7 @@ Specifies a property accessor function.
 ## Syntax  
   
 ```  
-  
 [propget]  
-  
 ```  
   
 ## Remarks  
@@ -38,7 +36,7 @@ Specifies a property accessor function.
 |**Applies to**|Method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
-|**Invalid attributes**|**propput**, **propputref**|  
+|**Invalid attributes**|`propput`, `propputref`|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
@@ -46,4 +44,4 @@ Specifies a property accessor function.
  [IDL Attributes](../windows/idl-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
  [propput](../windows/propput.md)   
- [propputref](../windows/propputref.md)   
+ [propputref](../windows/propputref.md)   

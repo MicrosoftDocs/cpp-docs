@@ -30,9 +30,7 @@ ms.workload: ["cplusplus", "uwp"]
     > [!NOTE]
     >  You can also use the shortcut keys for copying and pasting.  
   
-
-  
- **Requirements**  
+## Requirements  
   
  Win32  
   

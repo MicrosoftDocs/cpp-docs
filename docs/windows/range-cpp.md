@@ -18,8 +18,7 @@ Specifies a range of allowable values for arguments or fields whose values are s
 ## Syntax  
   
 ```  
-  
-      [ range(  
+[ range(  
    low,   
    high  
 ) ]  
@@ -37,7 +36,7 @@ Specifies a range of allowable values for arguments or fields whose values are s
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_range.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -68,4 +67,4 @@ __interface ICustom {
  [IDL Attributes](../windows/idl-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
  [Parameter Attributes](../windows/parameter-attributes.md)   
- [Data Member Attributes](../windows/data-member-attributes.md)   
+ [Data Member Attributes](../windows/data-member-attributes.md)   

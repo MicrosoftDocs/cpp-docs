@@ -18,9 +18,7 @@ Designates a pointer as a full pointer.
 ## Syntax  
   
 ```  
-  
 [ptr]  
-  
 ```  
   
 ## Remarks  
@@ -35,7 +33,7 @@ Designates a pointer as a full pointer.
   
 |||  
 |-|-|  
-|**Applies to**|Interface parameter, interface method, `typedef`|  
+|**Applies to**|Interface parameter, interface method, **typedef**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -46,4 +44,4 @@ Designates a pointer as a full pointer.
  [IDL Attributes](../windows/idl-attributes.md)   
  [Interface Attributes](../windows/interface-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
