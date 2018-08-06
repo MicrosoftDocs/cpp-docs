@@ -22,7 +22,7 @@ MakeAllocator();
 ```  
   
 ## Remarks  
- Initializes a new instance of the MakeAllocator class.  
+ Initializes a new instance of the **MakeAllocator** class.  
   
 ## Requirements  
  **Header:** implements.h  

@@ -27,18 +27,18 @@ template<
 struct MixIn;  
 ```  
   
-#### Parameters  
- `Derived`  
+### Parameters  
+ *Derived*  
  A type derived from the [Implements](../windows/implements-structure.md) structure.  
   
- `MixInType`  
+ *MixInType*  
  A base type.  
   
- `hasImplements`  
- `true` if `MixInType` is derived from the current implementation the base type; `false` otherwise.  
+ *hasImplements*  
+ **true** if *MixInType* is derived from the current implementation the base type; **false** otherwise.  
   
 ## Remarks  
- If a class is derived from both Windows Runtime and class COM interfaces, the class declaration list must first list any Windows Runtime interfaces and then any classic COM interfaces. MixIn ensures that the interfaces are specified in the correct order.  
+ If a class is derived from both Windows Runtime and class COM interfaces, the class declaration list must first list any Windows Runtime interfaces and then any classic COM interfaces. **MixIn** ensures that the interfaces are specified in the correct order.  
   
 ## Inheritance Hierarchy  
  `MixIn`  
