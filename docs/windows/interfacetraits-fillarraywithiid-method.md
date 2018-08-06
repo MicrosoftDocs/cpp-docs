@@ -22,14 +22,13 @@ __forceinline static void FillArrayWithIid(
    _Inout_ unsigned long &index,  
    _In_ IID* iids  
 );  
-  
 ```  
   
-#### Parameters  
- `index`  
+### Parameters  
+ *index*  
  Pointer to a field that contains a zero-based index value.  
   
- `iids`  
+ *iids*  
  An array of interface IDs.  
   
 ## Remarks  

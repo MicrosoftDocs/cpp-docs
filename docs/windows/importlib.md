@@ -18,13 +18,12 @@ Makes types that have already been compiled into another type library available 
 ## Syntax  
   
 ```  
-  
-      [ importlib(  
+[ importlib(  
    "tlb_file"  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *tlb_file*  
  The name of a .tlb file, in quotes, that you want imported into the type library of the current project.  
   
@@ -34,7 +33,7 @@ Makes types that have already been compiled into another type library available 
 ## Example  
  The following code shows an example of how to use **importlib**:  
   
-```  
+```cpp  
 // cpp_attr_ref_importlib.cpp  
 // compile with: /LD  
 [module(name="MyLib")];  

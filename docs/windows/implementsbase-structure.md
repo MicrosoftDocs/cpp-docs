@@ -24,7 +24,7 @@ struct ImplementsBase;
 ## Remarks  
  Used to validate template parameter types in [Implements Structure](../windows/implements-structure.md).  
   
- The ImplementsBase structure is empty by design.  
+ The **ImplementsBase** structure is empty by design.  
   
 ## Inheritance Hierarchy  
  `ImplementsBase`  

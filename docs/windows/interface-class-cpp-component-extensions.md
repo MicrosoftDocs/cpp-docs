@@ -16,30 +16,30 @@ ms.workload: ["cplusplus", "uwp"]
 Declares an interface.  For information on native interfaces, see [__interface](../cpp/interface.md).  
   
 ## All Runtimes  
- **Syntax**  
+
+### Syntax  
   
 ```  
-  
 interface_access  
 interface class  
  name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};  
 ```  
   
- **Parameters**  
+### Parameters  
   
  *interface_access*  
- The accessibility of an interface outside the assembly.  Possible values are **public** and `private`.  `private` is the default.  Nested interfaces cannot have an *interface_access* specifier.  
+ The accessibility of an interface outside the assembly.  Possible values are **public** and **private**.  **private** is the default. Nested interfaces cannot have an *interface_access* specifier.  
   
  *name*  
  The name of the interface.  
   
  *inherit_access*  
- The accessibility of *base_interface*.  The only permitted accessibility for a base interface is `public` (the default).  
+ The accessibility of *base_interface*.  The only permitted accessibility for a base interface is **public** (the default).  
   
  *base_interface* (optional)  
  A base interface for interface *name*.  
   
- **Remarks**  
+### Remarks  
   
  **interface struct** is equivalent to **interface class**.  
   
@@ -67,7 +67,7 @@ interface class
  (There are no remarks for this language feature that apply to only the Windows Runtime.)  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
  **Remarks**  
@@ -75,14 +75,13 @@ interface class
  (There are no remarks for this language feature that apply to only the common language runtime.)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
  The following code example demonstrates how an interface can define the behavior of a clock function.  
   
-```  
+```cpp  
 // mcppv2_interface_class.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -188,11 +187,9 @@ OnClick: 7, 3.14159
 in Function_1  
 ```  
   
- **Example**  
-  
  The following code sample shows two ways to implement functions with the same signature declared in multiple interfaces and where those interfaces are used by a class.  
   
-```  
+```cpp  
 // mcppv2_interface_class_2.cpp  
 // compile with: /clr /c  
 interface class I {  

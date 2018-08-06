@@ -22,7 +22,7 @@ An *interior pointer* declares a pointer to inside a reference type, but not to 
  (There are no remarks for this language feature that apply to only the Windows Runtime.)  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
  The following syntax example demonstrates an interior pointer.  
@@ -35,13 +35,13 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
   
 ### Parameters  
  *cv_qualifier*  
- **const** or `volatile` qualifiers.  
+ **const** or **volatile** qualifiers.  
   
  *type*  
  The type of *initializer*.  
   
  *var*  
- The name of the `interior_ptr` variable.  
+ The name of the **interior_ptr** variable.  
   
  *initializer*  
  A member of a reference type, element of a managed array, or any other object that you can assign to a native pointer.  
@@ -49,17 +49,17 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 ### Remarks  
  A native pointer is not able to track an item as its location changes on the managed heap, which results from the garbage collector moving instances of an object. In order for a pointer to correctly refer to the instance, the runtime needs to update the pointer to the newly positioned object.  
   
- An `interior_ptr` represents a superset of the functionality of a native pointer.  Therefore, anything that can be assigned to a native pointer can also be assigned to an `interior_ptr`.  An interior pointer is permitted to perform the same set of operations as native pointers, including comparison and pointer arithmetic.  
+ An **interior_ptr** represents a superset of the functionality of a native pointer.  Therefore, anything that can be assigned to a native pointer can also be assigned to an **interior_ptr**.  An interior pointer is permitted to perform the same set of operations as native pointers, including comparison and pointer arithmetic.  
   
  An interior pointer can only be declared on the stack.  An interior pointer cannot be declared as a member of a class.  
   
  Since interior pointers exist only on the stack, taking the address of an interior pointer yields an unmanaged pointer.  
   
- `interior_ptr` has an implicit conversion to `bool`, which allows for its use in conditional statements.  
+ **interior_ptr** has an implicit conversion to **bool**, which allows for its use in conditional statements.  
   
  For information on how to declare an interior pointer that points into an object that cannot be moved on the garbage-collected heap, see [pin_ptr](../windows/pin-ptr-cpp-cli.md).  
   
- `interior_ptr` is in the cli namespace.  See [Platform, default, and cli Namespaces](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) for more information.  
+ **interior_ptr** is in the cli namespace.  See [Platform, default, and cli Namespaces](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) for more information.  
   
  For more information on interior pointers, see  
   
@@ -72,10 +72,9 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 -   [How to: Declare Interior Pointers with the const Keyword (C++/CLI)](../windows/how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli.md)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
  The following sample shows how to declare and use an interior pointer into a reference type.  
   

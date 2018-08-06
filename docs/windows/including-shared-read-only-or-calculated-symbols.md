@@ -57,9 +57,7 @@ The first time the development environment reads a resource file created by anot
   
 4.  Click **OK**.  
   
-
-  
- Requirements  
+## Requirements  
   
  Win32  
   

@@ -24,18 +24,18 @@ static __forceinline IUnknown* CastToUnknown(
 );  
 ```  
   
-#### Parameters  
- `T`  
- The type of parameter `ptr`.  
+### Parameters  
+ *T*  
+ The type of parameter *ptr*.  
   
- `ptr`  
- Pointer to type `T`.  
+ *ptr*  
+ Pointer to type *T*.  
   
 ## Return Value  
  Pointer to the IUnknown from which `Base` is derived.  
   
 ## Remarks  
- Casts the specified pointer to a pointer to IUnknown.  
+ Casts the specified pointer to a pointer to `IUnknown`.  
   
  For more information about `Base`, see the Public Typedefs section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).  
   
