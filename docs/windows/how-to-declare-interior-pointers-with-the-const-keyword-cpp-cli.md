@@ -12,14 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Declare Interior Pointers with the const Keyword (C++/CLI)
-The following sample shows how to use `const` in the declaration of an interior pointer.  
+The following sample shows how to use **const** in the declaration of an interior pointer.  
   
 > [!IMPORTANT]
->  This language feature is supported by the **/clr** compiler option, but not by the **/ZW** compiler option.  
+>  This language feature is supported by the `/clr` compiler option, but not by the `/ZW` compiler option.  
   
 ## Example  
   
-```  
+```cpp  
 // interior_ptr_const.cpp  
 // compile with: /clr  
 using namespace System;  

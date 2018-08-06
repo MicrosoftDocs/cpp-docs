@@ -17,10 +17,10 @@ Learn how to use the Windows Runtime C++ Template Library (WRL)[Microsoft::WRL::
   
 To learn how to use Windows Runtime C++ Template Library to create a classic COM component and instantiate it from an external desktop app, see [How to: Create a Classic COM Component](../windows/how-to-create-a-classic-com-component-using-wrl.md).  
   
- This document shows two examples. The first example uses the `Make` function to instantiate a component. The second example uses the `MakeAndInitialize` function to instantiate a component that can fail during construction. (Because COM typically uses `HRESULT` values, instead of exceptions, to indicate errors, a COM type typically does not throw from its constructor. `MakeAndInitialize` enables a component to validate its construction arguments through the `RuntimeClassInitialize` method.) Both examples define a basic logger interface and implement that interface by defining a class that writes messages to the console.  
+ This document shows two examples. The first example uses the `Make` function to instantiate a component. The second example uses the `MakeAndInitialize` function to instantiate a component that can fail during construction. (Because COM typically uses HRESULT values, instead of exceptions, to indicate errors, a COM type typically does not throw from its constructor. `MakeAndInitialize` enables a component to validate its construction arguments through the `RuntimeClassInitialize` method.) Both examples define a basic logger interface and implement that interface by defining a class that writes messages to the console.  
   
 > [!IMPORTANT]
->  You can’t use the `new` operator to instantiate Windows Runtime C++ Template Library components. Therefore, we recommend that you always use `Make` or `MakeAndInitialize` to instantiate a component directly.  
+>  You can’t use the **new** operator to instantiate Windows Runtime C++ Template Library components. Therefore, we recommend that you always use `Make` or `MakeAndInitialize` to instantiate a component directly.  
   
 ### To create and instantiate a basic logger component  
   

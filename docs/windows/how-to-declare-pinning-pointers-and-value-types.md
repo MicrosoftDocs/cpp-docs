@@ -18,7 +18,7 @@ A value type can be implicitly boxed. You can then declare a pinning pointer to 
   
 ### Code  
   
-```  
+```cpp  
 // pin_ptr_value.cpp  
 // compile with: /clr  
 value struct V {  
@@ -38,7 +38,7 @@ int main() {
   
 ### Output  
   
-```  
+```Output  
 8  
 7  
 7  

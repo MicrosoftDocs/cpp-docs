@@ -19,10 +19,10 @@ ms.workload: ["cplusplus", "uwp"]
   
 ### To create a new resource script (.rc) file  
   
-1.  Put focus on your existing project folder in `Solution Explorer`, for example, "MyProject."  
+1.  Put focus on your existing project folder in **Solution Explorer**, for example, "MyProject."  
   
     > [!NOTE]
-    >  Don't confuse the project folder with the Solution folder in Solution Explorer. If you put focus on the Solution folder, your choices in the **Add New Item** dialog box (in Step 3) will be different.  
+    >  Don't confuse the project folder with the Solution folder in Solution Explorer. If you put focus on the **Solution** folder, your choices in the **Add New Item** dialog box (in Step 3) will be different.  
   
 2.  On the **Project** menu click **Add New Item**.  
   
@@ -35,7 +35,7 @@ ms.workload: ["cplusplus", "uwp"]
 > [!NOTE]
 >  You can only add a resource script (.rc file) to an existing project that is loaded into the Visual Studio IDE. You cannot create a standalone .rc file (one outside the project). [Resource templates](../windows/how-to-use-resource-templates.md) (.rct files) can be created anytime.  
   
- RRequirements  
+## Requirements  
   
  Win32  
   

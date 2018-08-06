@@ -39,9 +39,7 @@ Normally it is easy and convenient to work with the default arrangement of all r
   
      The resources in files included in this way are made a part of your executable file at compile time. They are not directly available for editing or modification when you are working on your project's main .rc file. You need to open included .rc files separately. Any files that are included but don't have an .rc extension will not be editable by the resource editors.  
   
-
-  
- Requirements  
+## Requirements  
   
  Win32  
   
