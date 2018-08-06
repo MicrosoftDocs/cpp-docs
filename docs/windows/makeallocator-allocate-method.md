@@ -22,14 +22,14 @@ __forceinline void* Allocate();
 ```  
   
 ## Return Value  
- If successful, a pointer to the allocated memory; otherwise, `nullptr`.  
+ If successful, a pointer to the allocated memory; otherwise, **nullptr**.  
   
 ## Remarks  
- Allocates memory and associates it with the current MakeAllocator object.  
+ Allocates memory and associates it with the current **MakeAllocator** object.  
   
- The size of the allocated memory is the size of the type specified by the current MakeAllocator template parameter.  
+ The size of the allocated memory is the size of the type specified by the current **MakeAllocator** template parameter.  
   
- A developer needs to override only the Allocate() method to implement a different memory allocation model.  
+ A developer needs to override only the **Allocate()** method to implement a different memory allocation model.  
   
 ## Requirements  
  **Header:** implements.h  

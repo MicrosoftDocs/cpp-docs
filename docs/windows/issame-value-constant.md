@@ -18,7 +18,6 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-  
   template <typename T1, typename T2>  
 struct IsSame  
 {  
@@ -30,7 +29,6 @@ struct IsSame<T1, T1>
 {  
     static const bool value = true;  
 };  
-  
 ```  
   
 ## Remarks  

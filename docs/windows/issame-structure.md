@@ -29,11 +29,11 @@ template <
 struct IsSame<T1, T1>;  
 ```  
   
-#### Parameters  
- `T1`  
+### Parameters  
+ *T1*  
  A type.  
   
- `T2`  
+ *T2*  
  Another type.  
   
 ## Remarks  

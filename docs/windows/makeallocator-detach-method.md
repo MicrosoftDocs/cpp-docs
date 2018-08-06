@@ -22,9 +22,9 @@ __forceinline void Detach();
 ```  
   
 ## Remarks  
- Disassociates memory allocated by the [Allocate](../windows/makeallocator-allocate-method.md) method from the current MakeAllocator object.  
+ Disassociates memory allocated by the [Allocate](../windows/makeallocator-allocate-method.md) method from the current **MakeAllocator** object.  
   
- If you call Detach(), you are responsible for deleting the memory provided by the Allocate method.  
+ If you call **Detach()**, you are responsible for deleting the memory provided by the `Allocate` method.  
   
 ## Requirements  
  **Header:** implements.h  
