@@ -45,13 +45,13 @@ ms.workload: ["cplusplus", "uwp"]
   
  You can create a resource as a new default resource (a resource that is not based on a template) or as a resource patterned after a [template](../windows/how-to-use-resource-templates.md).  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
-  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*
+ 
  ## Requirements  
   
  Win32  
   
-## See Also  
+## See also  
  [Resource Files](../windows/resource-files-visual-studio.md)   
  [Resource Editors](../windows/resource-editors.md)   
  [Add Resource Dialog Box](../windows/add-resource-dialog-box.md)
