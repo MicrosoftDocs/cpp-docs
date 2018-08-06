@@ -499,7 +499,7 @@ BOOL SetText(
  Zero-based index of the part to set. If this value is 255, the status bar control is assumed to be a simple control having only one part.  
   
  *nType*  
- Type of drawing operation. See [SB_SETTEXT message](http://msdn.microsoft.com/library/bb760758\(vs.85\).aspx) for a list of possible values.  
+ Type of drawing operation. See [SB_SETTEXT message](/windows/desktop/Controls/sb-settext) for a list of possible values.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  

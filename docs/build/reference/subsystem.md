@@ -27,7 +27,7 @@ Specifies the execution environment that's required by the executable image.
  You can specify any of the following subsystems:  
   
  BOOT_APPLICATION  
- An application that runs in the Windows boot environment. For more information about boot applications, see [About the BCD WMI Provider](http://msdn.microsoft.com/library/aa362639.aspx).  
+ An application that runs in the Windows boot environment. For more information about boot applications, see [About the BCD WMI Provider](/previous-versions/windows/desktop/bcd/about-bcd).  
   
  CONSOLE  
  A Windows character-mode application. The operating system provides a console for console applications.  

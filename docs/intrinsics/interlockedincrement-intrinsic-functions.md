@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _InterlockedIncrement Intrinsic Functions
 **Microsoft Specific**  
   
- Provide compiler intrinsic support for the Win32 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedIncrement](http://msdn.microsoft.com/library/ms683614.aspx) function.  
+ Provide compiler intrinsic support for the Win32 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement) function.  
   
 ## Syntax  
   

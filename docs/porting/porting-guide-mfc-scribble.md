@@ -63,7 +63,7 @@ Platform 'Itanium' is missing from this project. All the configurations and thei
 _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)  
 ```  
   
- This is a warning, not an error, and is very common when upgrading a Visual C++ project. This is the macro that defines what the lowest version of Windows that our application will run on. If we ignore the warning, we accept the default value, _WIN32_WINNT_MAXVER, which means the current version of Windows. For a table of possible values, see [Using the Windows Headers](https://msdn.microsoft.com/en-us/library/aa383745.aspx). For example, we can set it to run on any version from Vista onwards.  
+ This is a warning, not an error, and is very common when upgrading a Visual C++ project. This is the macro that defines what the lowest version of Windows that our application will run on. If we ignore the warning, we accept the default value, _WIN32_WINNT_MAXVER, which means the current version of Windows. For a table of possible values, see [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers). For example, we can set it to run on any version from Vista onwards.  
   
 ```  
 #define _WIN32_WINNT _WIN32_WINNT_VISTA  

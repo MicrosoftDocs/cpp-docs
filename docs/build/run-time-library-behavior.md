@@ -171,5 +171,5 @@ A sample initialization function that handles multithreading is included in [Usi
 ## See Also  
   
 [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)  
-[DllMain entry point](https://msdn.microsoft.com/library/windows/desktop/ms682583.aspx)  
-[Dynamic-link Library Best Practices](https://msdn.microsoft.com/library/windows/desktop/dn633971.aspx)  
+[DllMain entry point](/windows/desktop/Dlls/dllmain)  
+[Dynamic-link Library Best Practices](/windows/desktop/Dlls/dynamic-link-library-best-practices)  

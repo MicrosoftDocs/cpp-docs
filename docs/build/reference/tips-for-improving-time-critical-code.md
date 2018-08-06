@@ -117,9 +117,9 @@ Writing fast code requires understanding all aspects of your application and how
 ##  <a name="_core_small_working_set"></a> Small Working Set  
  Smaller working sets mean better locality of reference, fewer page faults, and more cache hits. The process working set is the closest metric the operating system directly provides for measuring locality of reference.  
   
--   To set the upper and lower limits of the working set, use [SetProcessWorkingSetSize](http://msdn.microsoft.com/library/windows/desktop/ms683226.aspx).  
+-   To set the upper and lower limits of the working set, use [SetProcessWorkingSetSize](/windows/desktop/api/winbase/nf-winbase-getprocessworkingsetsize).  
   
--   To get the upper and lower limits of the working set, use [GetProcessWorkingSetSize](http://msdn.microsoft.com/library/windows/desktop/ms686234.aspx).  
+-   To get the upper and lower limits of the working set, use [GetProcessWorkingSetSize](/windows/desktop/api/winbase/nf-winbase-setprocessworkingsetsize).  
   
 -   To view the size of the working set, use Spy++.  
   

@@ -52,7 +52,7 @@ Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:fil
  The name of the .winmd file to parse. If the path contains spaces, use quotation marks.  
   
 ## Midlrt command-line arguments  
- See [MIDLRT and Windows Runtime components](http://msdn.microsoft.com/library/windows/desktop/hh869900\(v=vs.85\).aspx).  
+ See [MIDLRT and Windows Runtime components](/windows/desktop/Midl/midlrt-and-windows-runtime-components).  
   
 ## Examples  
  The following example shows a winmdidl command at a Visual Studio x86 command prompt. It specifies an output directory, and a file that contains special banner text to add to the generated .idl file.  
