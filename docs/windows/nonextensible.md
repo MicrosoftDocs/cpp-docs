@@ -18,9 +18,7 @@ Specifies that the `IDispatch` implementation includes only the properties and m
 ## Syntax  
   
 ```  
-  
 [nonextensible]  
-  
 ```  
   
 ## Remarks  
@@ -31,7 +29,7 @@ Specifies that the `IDispatch` implementation includes only the properties and m
 ## Example  
  The following code shows one use of the **nonextensible** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_nonextensible.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -52,13 +50,13 @@ __interface IFireTabCtrl
   
 |||  
 |-|-|  
-|**Applies to**|`interface`|  
+|**Applies to**|**interface**|  
 |**Repeatable**|No|  
-|**Required attributes**|**dual** and **oleautomation**, or **dispinterface**|  
+|**Required attributes**|`dual` and `oleautomation`, or `dispinterface`|  
 |**Invalid attributes**|None|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
+ [Interface Attributes](../windows/interface-attributes.md)   

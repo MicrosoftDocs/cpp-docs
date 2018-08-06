@@ -18,9 +18,7 @@ Indicates that an interface member should not be displayed in a property browser
 ## Syntax  
   
 ```  
-  
 [nonbrowsable]  
-  
 ```  
   
 ## Remarks  
@@ -28,7 +26,7 @@ Indicates that an interface member should not be displayed in a property browser
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_nonbrowsable.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -57,4 +55,4 @@ __interface IMyI
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+ [Method Attributes](../windows/method-attributes.md)   

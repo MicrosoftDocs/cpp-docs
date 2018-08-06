@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # new (new slot in vtable)  (C++ Component Extensions)
-The `new` keyword indicates that a virtual member will get a new slot in the vtable.  
+The **new** keyword indicates that a virtual member will get a new slot in the vtable.  
   
 ## All Runtimes  
  (There are no remarks for this language feature that apply to all runtimes.)  
@@ -21,25 +21,24 @@ The `new` keyword indicates that a virtual member will get a new slot in the vta
  Not supported in Windows Runtime.  
   
 ## Common Language Runtime 
- **Remarks**  
+### Remarks  
   
- In a **/clr** compilation, `new` indicates that a virtual member will get a new slot in the vtable; that the function does not override a base class method.  
+ In a `/clr` compilation, **new** indicates that a virtual member will get a new slot in the vtable; that the function does not override a base class method.  
   
- `new` causes the newslot modifier to be added to the IL for the function.  For more information about newslot, see:  
+ **new** causes the newslot modifier to be added to the IL for the function.  For more information about newslot, see:  
   
--   [MethodInfo.GetBaseDefinition Method](https://msdn.microsoft.com/en-us/library/system.reflection.methodinfo.getbasedefinition.aspx)  
+-   [MethodInfo.GetBaseDefinition Method](https://msdn.microsoft.com/library/system.reflection.methodinfo.getbasedefinition.aspx)  
   
--   [MethodAttributes Enumeration](https://msdn.microsoft.com/en-us/library/system.reflection.methodattributes.aspx)  
+-   [MethodAttributes Enumeration](https://msdn.microsoft.com/library/system.reflection.methodattributes.aspx)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
- The following sample shows the effect of `new`.  
+ The following sample shows the effect of **new**.  
   
-```  
+```cpp  
 // newslot.cpp  
 // compile with: /clr  
 ref class C {  
