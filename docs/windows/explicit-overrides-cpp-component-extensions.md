@@ -18,8 +18,7 @@ This topic discusses how to explicitly override a member of a base class or inte
  **Syntax**  
   
 ```  
-  
-      overriding-function-declarator = type::function [,type::function] { overriding-function-definition }  
+overriding-function-declarator = type::function [,type::function] { overriding-function-definition }  
 overriding-function-declarator = function { overriding-function-definition }  
 ```  
   
@@ -46,22 +45,22 @@ overriding-function-declarator = function { overriding-function-definition }
 ## Windows Runtime  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
  **Remarks**  
   
- For information about explicit overrides in native code or code compiled with **/clr:oldSyntax**, see [Explicit Overrides](../cpp/explicit-overrides-cpp.md).  
+ For information about explicit overrides in native code or code compiled with `/clr:oldSyntax`, see [Explicit Overrides](../cpp/explicit-overrides-cpp.md).  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
  **Example**  
   
  The following code example shows a simple, implicit override and implementation of a member in a base interface, not using explicit overrides.  
   
-```  
+```cpp  
 // explicit_override_1.cpp  
 // compile with: /clr  
 interface struct I1 {  
@@ -91,8 +90,7 @@ X::f override of I1::f
   
  The following code example shows how to implement all interface members with a common signature, using explicit override syntax.  
   
-```  
-  
+```cpp  
 // explicit_override_2.cpp  
 // compile with: /clr  
 interface struct I1 {  
@@ -158,7 +156,7 @@ X::g
   
  The following code example shows an explicit interface implementation that implements a type safe collection.  
   
-```  
+```cpp  
 // explicit_override_4.cpp  
 // compile with: /clr /LD  
 using namespace System;  

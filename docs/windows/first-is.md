@@ -18,13 +18,12 @@ Specifies the index of the first array element to be transmitted.
 ## Syntax  
   
 ```  
-  
-      [ first_is(  
+[ first_is(  
    "expression"  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *expression*  
  One or more C-language expressions. Empty argument slots are allowed.  
   
@@ -34,7 +33,7 @@ Specifies the index of the first array element to be transmitted.
 ## Example  
  The following code shows various ways to specify a section in an array:  
   
-```  
+```cpp  
 // cpp_attr_ref_first_is.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -60,7 +59,7 @@ requestedit] HRESULT get_I([out, retval]long *i);
   
 |||  
 |-|-|  
-|**Applies to**|Field in `struct` or **union**, interface parameter, interface method|  
+|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -74,4 +73,4 @@ requestedit] HRESULT get_I([out, retval]long *i);
  [last_is](../windows/last-is.md)   
  [max_is](../windows/max-is.md)   
  [length_is](../windows/length-is.md)   
- [size_is](../windows/size-is.md)   
+ [size_is](../windows/size-is.md)   

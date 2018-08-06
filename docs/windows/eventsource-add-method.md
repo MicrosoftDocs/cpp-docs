@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::Add Method
-Appends the event handler represented by the specified delegate interface to the set of event handlers for the current EventSource object.  
+Appends the event handler represented by the specified delegate interface to the set of event handlers for the current **EventSource** object.  
   
 ## Syntax  
   
@@ -24,11 +24,11 @@ HRESULT Add(
 );  
 ```  
   
-#### Parameters  
- `delegateInterface`  
+### Parameters  
+ *delegateInterface*  
  The interface to a delegate object, which represents an event handler.  
   
- `token`  
+ *token*  
  When this operation completes, a handle that represents the event. Use this token as the parameter to the [Remove()](../windows/eventsource-remove-method.md) method to discard the event handler.  
   
 ## Return Value  
