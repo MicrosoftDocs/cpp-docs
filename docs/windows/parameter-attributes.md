@@ -31,7 +31,7 @@ The following attributes apply to parameters of a method in a class or interface
 |[range](../windows/range-cpp.md)|Specifies a range of allowable values for arguments or fields whose values are set at run time.|  
 |[ref](../windows/ref-cpp.md)|Identifies a reference pointer.|  
 |[retval](../windows/retval.md)|Designates the parameter that receives the return value of the member.|  
-|[satype](../windows/satype.md)|Specifies the data type of the **SAFEARRAY** structure.|  
+|[satype](../windows/satype.md)|Specifies the data type of the `SAFEARRAY` structure.|  
 |[size_is](../windows/size-is.md)|Specifies the size of memory allocated for sized pointers, sized pointers to sized pointers, and single- or multidimensional arrays.|  
 |[unique](../windows/unique-cpp.md)|Specifies a unique pointer.|  
   

@@ -28,14 +28,14 @@ template <
 class RemoveIUnknown : public T;  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  A class.  
   
 ## Remarks  
  Makes a type that is equivalent to an `IUnknown`-based type, but has  nonvirtual `QueryInterface`, `AddRef`, and `Release` member functions.  
   
- By default, COM methods provide virtual `QueryInterface`, `AddRef`, and Release methods. However, `ComPtr` doesn't require the overhead of virtual methods. `RemoveIUnknown` eliminates that overhead by providing private, nonvirtual `QueryInterface`, `AddRef`, and `Release` methods.  
+ By default, COM methods provide virtual `QueryInterface`, `AddRef`, and `Release` methods. However, `ComPtr` doesn't require the overhead of virtual methods. `RemoveIUnknown` eliminates that overhead by providing private, nonvirtual `QueryInterface`, `AddRef`, and `Release` methods.  
   
 ## Members  
   
@@ -43,7 +43,7 @@ class RemoveIUnknown : public T;
   
 |Name|Description|  
 |----------|-----------------|  
-|`ReturnType`|A synonym for a type that is equivalent to template parameter `T` but has nonvirtual IUnknown members.|  
+|`ReturnType`|A synonym for a type that is equivalent to template parameter *T* but has nonvirtual `IUnknown` members.|  
   
 ## Inheritance Hierarchy  
  `T`  
