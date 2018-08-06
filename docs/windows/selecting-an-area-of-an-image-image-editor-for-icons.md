@@ -34,9 +34,9 @@ You can use selection tools to define an area of an image that you want to cut, 
   
 1.  Click the image outside of the current selection. The selection border changes focus and encompasses the whole image once again.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
+## Requirements  
   
  None  
   
@@ -44,4 +44,3 @@ You can use selection tools to define an area of an image that you want to cut, 
  [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
  [Image Editor for Icons](../windows/image-editor-for-icons.md)
-
