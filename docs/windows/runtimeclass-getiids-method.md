@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::GetIids Method
-Gets an array that can contain the interface IDs implemented by the current RuntimeClass object.  
+Gets an array that can contain the interface IDs implemented by the current **RuntimeClass** object.  
   
 ## Syntax  
   
@@ -25,11 +25,11 @@ STDMETHOD(
    _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);  
 ```  
   
-#### Parameters  
- `iidCount`  
- When this operation completes, the total number of elements in array `iids`.  
+### Parameters  
+ *iidCount*  
+ When this operation completes, the total number of elements in array *iids*.  
   
- `iids`  
+ *iids*  
  When this operation completes, a pointer to an array of interface IDs.  
   
 ## Return Value  

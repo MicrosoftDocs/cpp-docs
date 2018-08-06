@@ -26,18 +26,18 @@ __forceinline static HRESULT GetImplementedIIDS(
 );  
 ```  
   
-#### Parameters  
- `T`  
- The type of the `implements` parameter.  
+### Parameters  
+ *T*  
+ The type of the *implements* parameter.  
   
- `implements`  
- Pointer to the type specified by parameter `T`.  
+ *implements*  
+ Pointer to the type specified by parameter *T*.  
   
- `iidCount`  
+ *iidCount*  
  The maximum number of interface IDs to retrieve.  
   
- `iids`  
- If this operation completes successfully, an array of the interface IDs implemented by type `T`.  
+ *iids*  
+ If this operation completes successfully, an array of the interface IDs implemented by type *T*.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that describes the error.  
