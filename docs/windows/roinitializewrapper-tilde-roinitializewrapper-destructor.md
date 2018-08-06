@@ -21,7 +21,7 @@ Uninitializes the Windows Runtime.
 ```  
   
 ## Remarks  
- The RoInitializeWrapper class invokes Windows::Foundation::Uninitialize().  
+ The **RoInitializeWrapper** class invokes `Windows::Foundation::Uninitialize()`.  
   
 ## Requirements  
  **Header:** corewrappers.h  

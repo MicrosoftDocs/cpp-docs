@@ -18,9 +18,7 @@ Designates the parameter that receives the return value of the member.
 ## Syntax  
   
 ```  
-  
 [retval]  
-  
 ```  
   
 ## Remarks  
@@ -47,4 +45,4 @@ Designates the parameter that receives the return value of the member.
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Parameter Attributes](../windows/parameter-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+ [Method Attributes](../windows/method-attributes.md)   

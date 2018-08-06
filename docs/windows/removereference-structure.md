@@ -26,8 +26,8 @@ template<class T>
 struct RemoveReference<T&&>;  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  A class.  
   
 ## Remarks  

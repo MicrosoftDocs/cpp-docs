@@ -21,9 +21,9 @@ struct RuntimeClassBase;
 ```  
   
 ## Remarks  
- Used to detect RuntimeClass in the [Make](../windows/make-function.md) function.  
+ Used to detect `RuntimeClass` in the [Make](../windows/make-function.md) function.  
   
- RuntimeClassBase is an empty structure.  
+ **RuntimeClassBase** is an empty structure.  
   
 ## Inheritance Hierarchy  
  `RuntimeClassBase`  
