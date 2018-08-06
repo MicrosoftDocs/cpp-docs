@@ -33,11 +33,12 @@ ms.workload: ["cplusplus", "uwp"]
  You can now [create](../windows/how-to-create-a-resource.md) and add new resources to your .rc file.  
   
 > [!NOTE]
->  You can only add a resource script (.rc file) to an existing project that is loaded into the Visual Studio IDE. You cannot create a standalone .rc file (one outside the project). [Resource templates](../windows/how-to-use-resource-templates.md) (.rct files) can be created anytime.  
-  
+>  You can only add a resource script (.rc file) to an existing project that is loaded into the Visual Studio IDE. You cannot create a standalone .rc file (one outside the project). [Resource templates](../windows/how-to-use-resource-templates.md) (.rct files) can be created anytime.
+
+
 ## Requirements  
   
- Win32  
+Win32  
   
 ## See Also  
  [Resource Files](../windows/resource-files-visual-studio.md)   
