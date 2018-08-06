@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier::method_ Data Member
-Holds a pointer to the event handler for the current Module::MethodReleaseNotifier object.  
+Holds a pointer to the event handler for the current **Module::MethodReleaseNotifier** object.  
   
 ## Syntax  
   

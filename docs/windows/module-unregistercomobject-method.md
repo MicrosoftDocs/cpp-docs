@@ -24,14 +24,14 @@ virtual HRESULT UnregisterCOMObject(
    unsigned int count  
 ```  
   
-#### Parameters  
- `serverName`  
+### Parameters  
+ *serverName*  
  (Unused)  
   
- `cookies`  
+ *cookies*  
  An array of pointers to values that identify the class objects to be unregistered. The array was created by the [RegisterCOMObject](../windows/module-registercomobject-method.md) method.  
   
- `count`  
+ *count*  
  The number of classes to unregister.  
   
 ## Return Value  
