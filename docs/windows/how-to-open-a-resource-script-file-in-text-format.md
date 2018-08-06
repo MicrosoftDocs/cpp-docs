@@ -18,7 +18,7 @@ There may be times when you want to view the contents of your project's resource
 > [!NOTE]
 >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
- You can easily open the resource file in text format to view all the resources it contains and perform global operations supported by the [Text editor](http://msdn.microsoft.com/en-us/508e1f18-99d5-48ad-b5ad-d011b21c6ab1).  
+ You can easily open the resource file in text format to view all the resources it contains and perform global operations supported by the [Text editor](http://msdn.microsoft.com/508e1f18-99d5-48ad-b5ad-d011b21c6ab1).  
   
 > [!NOTE]
 >  The resource editors do not directly read .rc or resource.h files. The resource compiler compiles them into .aps files, which are consumed by the resource editors. This file is a compile step and only stores symbolic data. As with a normal compile process, information that is not symbolic (for example, comments) is discarded during the compile process. Whenever the .aps file gets out of synch with the .rc file, the .rc file is regenerated (for example, when you Save, the resource editor overwrites the .rc file and the resource.h file). Any changes to the resources themselves will remain incorporated in the .rc file, but comments will always be lost once the .rc file is overwritten. For information on how to preserve comments, see [Including Resources at Compile Time](../windows/how-to-include-resources-at-compile-time.md).  
@@ -45,9 +45,7 @@ There may be times when you want to view the contents of your project's resource
   
 2.  From the shortcut menu, choose **Open with...**, then select **Source Code (Text) Editor**.  
   
-
-  
- Requirements  
+## Requirements  
   
  Win32  
   

@@ -33,7 +33,7 @@ ms.workload: ["cplusplus", "uwp"]
   
 ### To create a new resource in Class View  
   
-1.  In [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click your class and choose **Add**, then click **Add Resource** from the shortcut menu.  
+1.  In [Class View](http://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click your class and choose **Add**, then click **Add Resource** from the shortcut menu.  
   
 2.  In the [Add Resource dialog box](../windows/add-resource-dialog-box.md), choose the type of resource you'd like to add to your project.  
   
@@ -45,11 +45,12 @@ ms.workload: ["cplusplus", "uwp"]
   
  You can create a resource as a new default resource (a resource that is not based on a template) or as a resource patterned after a [template](../windows/how-to-use-resource-templates.md).  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*
+
+
+## Requirements  
   
- **Requirements**  
-  
- Win32  
+Win32  
   
 ## See Also  
  [Resource Files](../windows/resource-files-visual-studio.md)   

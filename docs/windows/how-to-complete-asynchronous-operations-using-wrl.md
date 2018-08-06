@@ -66,7 +66,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
 ### Compiling the Code  
  To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `wrl-consume-async.cpp` and then run the following command in a Visual Studio Command Prompt window.  
   
- **cl.exe wrl-consume-async.cpp runtimeobject.lib**  
+ `cl.exe wrl-consume-async.cpp runtimeobject.lib` 
   
 ## Example: Working with a Background Thread  
  The following steps start a worker thread and define the action that's performed by that thread. The complete example follows.  
@@ -114,7 +114,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
 ### Compiling the Code  
  To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `wrl-consume-asyncOp.cpp` and then run the following command in a Visual Studio Command Prompt window.  
   
- **cl.exe wrl-consume-asyncOp.cpp runtimeobject.lib**  
+ `cl.exe wrl-consume-asyncOp.cpp runtimeobject.lib`  
   
 ## See Also  
  [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)
