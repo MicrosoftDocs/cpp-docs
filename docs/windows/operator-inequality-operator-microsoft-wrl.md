@@ -51,15 +51,15 @@ WRL_NOTHROW bool operator!=(
 );  
 ```  
   
-#### Parameters  
- `a`  
+### Parameters  
+ *a*  
  The left object.  
   
- `b`  
+ *b*  
  The right object.  
   
 ## Return Value  
- `true` if the objects are not equal; otherwise, `false`.  
+ **true** if the objects are not equal; otherwise, **false**.  
   
 ## Requirements  
  **Header:** client.h  

@@ -24,15 +24,15 @@ inline typename RemoveReference<T>::Type&& Move(
 );  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  The type of the argument.  
   
- `arg`  
+ *arg*  
  An argument to move.  
   
 ## Return Value  
- Parameter `arg` after reference or rvalue-reference traits, if any, have been removed.  
+ Parameter *arg* after reference or rvalue-reference traits, if any, have been removed.  
   
 ## Remarks  
  Moves the specified argument from one location to another.  

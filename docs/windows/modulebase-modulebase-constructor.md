@@ -22,7 +22,7 @@ ModuleBase();
 ```  
   
 ## Remarks  
- Initializes an instance of the Module class.  
+ Initializes an instance of the `Module` class.  
   
 ## Requirements  
  **Header:** implements.h  

@@ -27,7 +27,7 @@ ms.workload: ["cplusplus", "uwp"]
   
 ### To open a managed resource for binary editing  
   
-1.  In Solution Explorer, select the specific resource file you want to edit.  
+1.  In **Solution Explorer**, select the specific resource file you want to edit.  
   
 2.  Right-click the resource and choose **Open With** from the shortcut menu.  
   
@@ -37,7 +37,7 @@ ms.workload: ["cplusplus", "uwp"]
     >  You can use the [Image editor](../windows/image-editor-for-icons.md) and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
     > [!NOTE]
-    >  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).   
+    >  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).   
   
  ![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")  
 Binary Data for a Dialog Box Displayed in the Binary Editor  
@@ -47,10 +47,9 @@ Binary Data for a Dialog Box Displayed in the Binary Editor
 > [!NOTE]
 >  If you want to use the Binary editor on a resource already being edited in another editor window, close the other editor window first.  
   
- **Requirements**  
+## Requirements  
   
  None  
   
 ## See Also  
  [Binary Editor](binary-editor.md)
-
