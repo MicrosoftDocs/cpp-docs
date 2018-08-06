@@ -25,7 +25,7 @@ IUnknown* CastToUnknown();
  Pointer to the underlying IUnknown interface.  
   
 ## Remarks  
- Gets a pointer to the underlying IUnknown interface for the current Implements structure.  
+ Gets a pointer to the underlying `IUnknown` interface for the current `Implements` structure.  
   
 ## Requirements  
  **Header:** implements.h  

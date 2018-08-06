@@ -22,7 +22,7 @@ static const unsigned long IidCount = 1;
 ```  
   
 ## Remarks  
- Holds the number of interface IDs associated with the current InterfaceTraits object.  
+ Holds the number of interface IDs associated with the current **InterfaceTraits** object.  
   
 ## Requirements  
  **Header:** implements.h  

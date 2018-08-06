@@ -18,7 +18,6 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-  
 HRESULT CanCastTo(  
    REFIID riid,  
    _Deref_out_ void **ppv  
@@ -30,14 +29,14 @@ HRESULT CanCastTo(
 );  
 ```  
   
-#### Parameters  
- `riid`  
+### Parameters  
+ *riid*  
  Reference to an interface ID.  
   
- `ppv`  
- If this operation is successful, a pointer to the interface specified by `riid` or `iid`.  
+ *ppv*  
+ If this operation is successful, a pointer to the interface specified by *riid* or *iid*.  
   
- `iid`  
+ *iid*  
  Reference to an interface ID.  
   
 ## Return Value  

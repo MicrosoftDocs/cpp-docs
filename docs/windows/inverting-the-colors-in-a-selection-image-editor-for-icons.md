@@ -19,9 +19,7 @@ The Image editor provides a convenient way to invert colors in the selected part
   
 1.  On the **Image** menu, click **Invert Colors**.  
   
-
-  
- Requirements  
+## Requirements  
   
  None  
   

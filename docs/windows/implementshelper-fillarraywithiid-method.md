@@ -24,10 +24,10 @@ void FillArrayWithIid(
 ```  
   
 #### Parameters  
- `index`  
- A zero-based index that indicates the starting array element for this operation. When this operation completes, `index` is incremented by 1.  
+ *index*  
+ A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.  
   
- `iids`  
+ *iids*  
  An array of type IIDs.  
   
 ## Remarks  
