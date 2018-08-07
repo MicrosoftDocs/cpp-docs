@@ -22,8 +22,8 @@ STDMETHOD(
 )(_Out_ TrustLevel* trustLvl);  
 ```  
   
-#### Parameters  
- `trustLvl`  
+### Parameters  
+ *trustLvl*  
  When this operation completes, the trust level of the current class object.  
   
 ## Return Value  
