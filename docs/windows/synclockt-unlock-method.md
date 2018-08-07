@@ -22,7 +22,7 @@ void Unlock();
 ```  
   
 ## Remarks  
- Releases control of the resource held by the current SyncLockT object, if any.  
+ Releases control of the resource held by the current **SyncLockT** object, if any.  
   
 ## Requirements  
  **Header:** corewrappers.h  

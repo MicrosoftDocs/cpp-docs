@@ -13,14 +13,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # string (C++)
-Indicates that the one-dimensional `char`, `wchar_t`, **byte** (or equivalent) array or the pointer to such an array must be treated as a string.  
+Indicates that the one-dimensional **char**, **wchar_t**, `byte` (or equivalent) array or the pointer to such an array must be treated as a string.  
   
 ## Syntax  
   
 ```  
-  
 [string]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Indicates that the one-dimensional `char`, `wchar_t`, **byte** (or equivalent) a
 ## Example  
  The following code shows how to use **string** on an interface and on a typedef:  
   
-```  
+```cpp  
 // cpp_attr_ref_string.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -58,4 +56,4 @@ __interface IFireTabCtrl
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Array Attributes](../windows/array-attributes.md)   
- [export](../windows/export.md)   
+ [export](../windows/export.md)   

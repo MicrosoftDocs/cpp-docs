@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockExclusiveTraits::GetInvalidValue Method
-Retrieves an SRWLockExclusiveTraits object that is always invalid.  
+Retrieves an **SRWLockExclusiveTraits** object that is always invalid.  
   
 ## Syntax  
   
@@ -22,7 +22,7 @@ inline static Type GetInvalidValue();
 ```  
   
 ## Return Value  
- An empty SRWLockExclusiveTraits object.  
+ An empty **SRWLockExclusiveTraits** object.  
   
 ## Requirements  
  **Header:** corewrappers.h  
