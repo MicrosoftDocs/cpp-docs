@@ -23,7 +23,7 @@ This example shows how you can use the `...` syntax in Visual C++ to implement f
   
 ### Code  
   
-```  
+```cpp  
 // mcppv2_paramarray.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -51,7 +51,7 @@ int main() {
 ## Code Example  
  The following example shows how to call from C# a Visual C++ function that takes a variable number of arguments.  
   
-```  
+```cpp  
 // mcppv2_paramarray2.cpp  
 // compile with: /clr:safe /LD  
 using namespace System;  
@@ -66,7 +66,7 @@ public:
   
  In C#, an argument that is passed to a `ParamArray` parameter can be called by a variable number of arguments. The following code sample is in C#.  
   
-```  
+```cs  
 // mcppv2_paramarray3.cs  
 // compile with: /r:mcppv2_paramarray2.dll  
 // a C# program  
@@ -83,7 +83,7 @@ public class X {
   
  A call to `f` in Visual C++ can pass an initialized array or a variable-length array.  
   
-```  
+```cpp  
 // mcpp_paramarray4.cpp  
 // compile with: /clr  
 using namespace System;  

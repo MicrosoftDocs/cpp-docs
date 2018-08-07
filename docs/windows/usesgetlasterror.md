@@ -18,9 +18,7 @@ Tells the caller that if there is an error when calling that function, then the 
 ## Syntax  
   
 ```  
-  
 [usesgetlasterror]  
-  
 ```  
   
 ## Remarks  
@@ -43,4 +41,4 @@ Tells the caller that if there is an error when calling that function, then the 
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
+ [IDL Attributes](../windows/idl-attributes.md)   

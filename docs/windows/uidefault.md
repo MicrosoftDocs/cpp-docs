@@ -18,9 +18,7 @@ Indicates that the type information member is the default member for display in 
 ## Syntax  
   
 ```  
-  
 [uidefault]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Indicates that the type information member is the default member for display in 
 ## Example  
  The following code shows a sample of **uidefault**:  
   
-```  
+```cpp  
 // cpp_attr_ref_uidefault.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -61,4 +59,4 @@ __interface ICustom{
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+ [Method Attributes](../windows/method-attributes.md)   
