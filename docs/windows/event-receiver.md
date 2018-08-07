@@ -17,14 +17,14 @@ Creates an event receiver (sink).
   
 ## Syntax  
   
-```  
+```cpp  
 [ event_receiver(  
    type   
    [, layout_dependent=false]   
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *type*  
  An enumeration of one of the following values:  
   
@@ -32,13 +32,13 @@ Creates an event receiver (sink).
   
 -   `com` for COM code. This value requires that you include the following header files:  
   
-    ```  
+    ```cpp  
     #define _ATL_ATTRIBUTES  
     #include <atlbase.h>  
     #include <atlcom.h>  
     ```  
   
- **layout_dependent**  
+ *layout_dependent*  
  Specify *layout_dependent* only if `type`=**com**. *layout_dependent* is a Boolean:  
   
 -   **true** means that the signature of the delegates in the event receiver must exactly match those to which they are hooked in the event source. The event receiver handler names must match the names specified in the relevant event source interface. You must use `coclass` when *layout_dependent* is **true**. It is slightly more efficient to specify **true**.  
@@ -63,7 +63,7 @@ Creates an event receiver (sink).
 |-|-|  
 |**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
-|**Required attributes**|**coclass** when *layout_dependent*=**true**|  
+|**Required attributes**|`coclass` when *layout_dependent*=**true**|  
 |**Invalid attributes**|None|  
   
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  

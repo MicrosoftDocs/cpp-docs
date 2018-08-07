@@ -14,14 +14,14 @@ ms.workload: ["cplusplus", "uwp"]
 Declares an enumeration at namespace scope, which is a user-defined type consisting of a set of named constants called enumerators.  
   
 ## All Runtimes  
- **Remarks**  
+### Remarks
   
  C++/CX and C++/CLI support **public enum class** and **private enum class** which are similar to the standard C++ **enum class** but with the addition of the accessibility specifier. Under **/clr**, the C++11 **enum class** type is permitted but will generate warning C4472 which is intended to ensure that you really want the ISO enum type and not the C++/CX and C++/CLI type. For more information about the ISO Standard C++ **enum** keyword, see [Enumerations](../cpp/enumerations-cpp.md).  
   
 ## Windows Runtime  
- **Syntax**  
+### Syntax  
   
-```  
+```cpp  
       access  
       enum class  
       enumeration-identifier  
@@ -29,8 +29,7 @@ Declares an enumeration at namespace scope, which is a user-defined type consist
 accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [var];  
 ```  
   
- **Parameters**  
-  
+### Parameters  
  *access*  
  The accessibility of the enumeration, which can be **public** or **private**.  
   
@@ -50,7 +49,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
  *var*  
  (Optional) The name of a variable of the enumeration type.  
   
- **Remarks**  
+### Remarks 
   
  For more information, and examples, see [Enums](http://msdn.microsoft.com/%20library/windows/apps/hh755820.aspx).  
   
@@ -63,19 +62,19 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 -   If *underlying-type* is `char16`, and the enumeration value ranges from 0xD800 through 0xDFFF, the value can be represented. However, the value logically incorrect because it represents half a Unicode surrogate pair and should not appear in isolation.  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- **Syntax**  
+### Syntax
   
-```  
+```cpp  
       access  
       enum class  
       name [:type] { enumerator-list } var;  
 accessenum structname [:type] { enumerator-list } var;  
 ```  
   
- **Parameters**  
+ ### Parameters  
   
  *access*  
  The accessibility of the enum. Can be either **public** or **private**.  
@@ -92,7 +91,7 @@ accessenum structname [:type] { enumerator-list } var;
  *var* (optional)  
  The name of a variable of the enumeration type.  
   
- **Remarks**  
+### Remarks 
   
  **enum class** and **enum struct** are equivalent declarations.  
   
@@ -153,13 +152,13 @@ int main() {
   
  would emit the following in MSIL for the function signature:  
   
-```  
+```cpp  
 void f(int32);  
 ```  
   
  However, in current versions of the compiler, the standard enum is emitted as a managed enum with a [NativeEnumAttribute] and the following in MSIL for the function signature:  
   
-```  
+```cpp  
 void f(E)  
 ```  
   
@@ -170,12 +169,9 @@ void f(E)
 -   [Underlying Type of an Enum](../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
-  
- desc  
   
 ```cpp  
 // mcppv2_enum_2.cpp  
@@ -205,8 +201,6 @@ int main()
    System::Console::WriteLine(o);  
 }   
 ```  
-  
- **Output**  
   
 ```Output  
 no automatic conversion to int: b  

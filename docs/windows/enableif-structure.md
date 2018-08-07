@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    bool b,  
    typename T = void  
@@ -30,7 +30,7 @@ template <
 struct EnableIf<true, T>;  
 ```  
   
-#### Parameters  
+### Parameters  
  *T*  
  A type.  
   
