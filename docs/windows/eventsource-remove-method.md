@@ -17,7 +17,7 @@ Deletes the event handler represented by the specified event registration token 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Remove(  
    EventRegistrationToken token  
 );  
@@ -31,7 +31,7 @@ HRESULT Remove(
  S_OK if successful; otherwise, an HRESULT that indicates the error.  
   
 ## Remarks  
- For more information about the EventRegistrationToken structure, see the `Windows::Foundation::EventRegistrationToken` Structure topic in the Windows Runtime reference documentation.  
+ For more information about the `EventRegistrationToken` structure, see the **Windows::Foundation::EventRegistrationToken Structure** topic in the **Windows Runtime** reference documentation.  
   
 ## Requirements  
  **Header:** event.h  

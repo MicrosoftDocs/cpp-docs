@@ -17,7 +17,7 @@ Initializes a new instance of the **EventSource** class.
   
 ## Syntax  
   
-```  
+```cpp  
 EventSource();  
 ```  
   

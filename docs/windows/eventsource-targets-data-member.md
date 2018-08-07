@@ -17,7 +17,7 @@ An array of one or more event handlers.
   
 ## Syntax  
   
-```  
+```cpp  
 ComPtr<Details::EventTargetArray> targets_;  
 ```  
   

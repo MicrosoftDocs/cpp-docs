@@ -17,13 +17,13 @@ Destroys a marshaled data packet.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHODIMP ReleaseMarshalData(  
    __in IStream *pStm  
 ) override;  
 ```  
   
-#### Parameters  
+### Parameters  
  *pStm*  
  Pointer to a stream that contains the data packet to be destroyed.  
   
