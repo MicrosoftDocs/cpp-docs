@@ -23,16 +23,15 @@ Templates enable you to define a prototype of a Windows Runtime or common langua
  (There are no remarks for this language feature that apply to only the Windows Runtime.)  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
  There are some limitations to creating class templates from managed types, which are demonstrated in the following code examples.  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
  It is possible to instantiate a generic type with a managed type template parameter, but you cannot instantiate a managed template with a generic type template parameter.  This is because generic types are resolved at runtime.  For more information, see [Generics and Templates (Visual C++)](../windows/generics-and-templates-visual-cpp.md).  
   
@@ -56,8 +55,6 @@ ref class R {
 };  
 ```  
   
- **Example**  
-  
  A generic type or function cannot be nested in a managed template.  
   
 ```cpp  
@@ -68,8 +65,6 @@ template<class T> public ref class R {
    generic<class T> ref class W {};   // C2959  
 };  
 ```  
-  
- **Example**  
   
  You cannot access templates defined in a referenced assembly with C++/CLI language syntax, but you can use reflection.  If a template is not instantiated, it’s not emitted in the metadata.  If a template is instantiated, only referenced member functions will appear in metadata.  
   
@@ -101,8 +96,6 @@ int main() {
 }  
 ```  
   
- **Example**  
-  
  You can change the managed modifier of a class in a partial specialization or explicit specialization of a class template.  
   
 ```cpp  
@@ -128,7 +121,6 @@ interface class A<T%> {};
 // native class  
 template <>  
 class A <int> {};  
-  
 ```  
   
 ## See Also  

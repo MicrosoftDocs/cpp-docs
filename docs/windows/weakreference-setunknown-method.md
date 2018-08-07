@@ -23,12 +23,12 @@ void SetUnknown(
 );  
 ```  
   
-#### Parameters  
- `unk`  
+### Parameters  
+ *unk*  
  A pointer to the `IUnknown` interface of an object.  
   
 ## Remarks  
- Sets the strong reference of the current `WeakReference` object to the specified interface pointer.  
+ Sets the strong reference of the current **WeakReference** object to the specified interface pointer.  
   
 ## Requirements  
  **Header:** implements.h  
@@ -36,5 +36,5 @@ void SetUnknown(
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also
-[WeakReference Class](../windows/weakreference-class1.md)  
+ [WeakReference Class](../windows/weakreference-class1.md)  
  [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

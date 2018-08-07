@@ -23,10 +23,7 @@ Normally, when you are working in the Menu editor, a menu resource is displayed 
     > [!NOTE]
     >  To change back to the menu-bar view, click **View as Popup** again (which removes the check mark and returns your menu-bar view).  
   
-
-  
- **Requirements**  
-  
+## Requirements  
  Win32  
   
 ## See Also  
