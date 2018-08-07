@@ -23,15 +23,15 @@ template<class T, class U>
 bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<ComPtr<U>>& b) throw();  
 ```  
   
-#### Parameters  
- `a`  
+### Parameters  
+ *a*  
  The left object.  
   
- `b`  
+ *b*  
  The right object.  
   
 ## Return Value  
- `true` if the address of `a` is less than the address of `b`; otherwise, `false`.  
+ **true** if the address of *a* is less than the address of *b*; otherwise, **false**.  
   
 ## Requirements  
  **Header:** client.h  

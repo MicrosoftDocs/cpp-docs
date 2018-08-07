@@ -25,15 +25,15 @@ WRL_NOTHROW HRESULT GetActivationFactory(
 );  
 ```  
   
-#### Parameters  
- `pActivatibleClassId`  
+### Parameters  
+ *pActivatibleClassId*  
  IID of a runtime class.  
   
- `ppIFactory`  
+ *ppIFactory*  
  The IActivationFactory for the specified runtime class.  
   
- `serverName`  
- The name of a subset of class factories in the current module. Specify the server name used in the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro, or specify `nullptr` to get the default server name.  
+ *serverName*  
+ The name of a subset of class factories in the current module. Specify the server name used in the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro, or specify **nullptr** to get the default server name.  
   
 ## Return Value  
  S_OK if successful; otherwise, the HRESULT returned by GetActivationFactory.  
@@ -44,5 +44,5 @@ WRL_NOTHROW HRESULT GetActivationFactory(
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
-[Module Class](../windows/module-class.md)
+ [Module Class](../windows/module-class.md)  
  [ActivatableClass Macros](../windows/activatableclass-macros.md)

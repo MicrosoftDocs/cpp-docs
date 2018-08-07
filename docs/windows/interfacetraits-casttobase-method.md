@@ -24,12 +24,12 @@ static __forceinline Base* CastToBase(
 );  
 ```  
   
-#### Parameters  
- `T`  
- The type of parameter `ptr`.  
+### Parameters  
+ *T*  
+ The type of parameter *ptr*.  
   
- `ptr`  
- Pointer to a type `T`.  
+ *ptr*  
+ Pointer to a type *T*.  
   
 ## Return Value  
  A pointer to `Base`.  

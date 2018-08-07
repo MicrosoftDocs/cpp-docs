@@ -18,9 +18,7 @@ Ensures that a typedef will go into the type library even if it is not reference
 ## Syntax  
   
 ```  
-  
 [public]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Ensures that a typedef will go into the type library even if it is not reference
 ## Example  
  The following code shows how to use the **public** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_public.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -49,7 +47,7 @@ __interface IFireTabCtrl : IDispatch
   
 |||  
 |-|-|  
-|**Applies to**|`typedef`|  
+|**Applies to**|**typedef**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  

@@ -18,12 +18,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-  
 static const unsigned long IidCount;  
 ```  
   
 ## Remarks  
- Holds the number of implemented interface IDs in the current Implements object.  
+ Holds the number of implemented interface IDs in the current `Implements` object.  
   
 ## Requirements  
  **Header:** implements.h  

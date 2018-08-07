@@ -27,25 +27,25 @@ class Mutex : public HandleT<HandleTraits::MutexTraits>
   
 |Name|Description|  
 |----------|-----------------|  
-|**SyncLock**|A synonym for a class that supports synchronous locks.|  
+|`SyncLock`|A synonym for a class that supports synchronous locks.|  
   
 ### Public Constructor  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Mutex::Mutex Constructor](../windows/mutex-mutex-constructor.md)|Initializes a new instance of the Mutex class.|  
+|[Mutex::Mutex Constructor](../windows/mutex-mutex-constructor.md)|Initializes a new instance of the **Mutex** class.|  
   
 ### Public Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Mutex::Lock Method](../windows/mutex-lock-method.md)|Waits until the current object, or the Mutex object associated with the specified handle, releases the mutex or the specified time-out interval has elapsed.|  
+|[Mutex::Lock Method](../windows/mutex-lock-method.md)|Waits until the current object, or the **Mutex** object associated with the specified handle, releases the mutex or the specified time-out interval has elapsed.|  
   
 ### Public Operator  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Mutex::operator= Operator](../windows/mutex-operator-assign-operator.md)|Assigns (moves) the specified Mutex object to the current Mutex object.|  
+|[Mutex::operator= Operator](../windows/mutex-operator-assign-operator.md)|Assigns (moves) the specified **Mutex** object to the current **Mutex** object.|  
   
 ## Inheritance Hierarchy  
  `Mutex`  

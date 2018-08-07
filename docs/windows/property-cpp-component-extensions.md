@@ -29,7 +29,7 @@ Declares a *property*, which is a member function that behaves and is accessed l
  *indexed property*  
  A property block that you can use to get and set a property value that is specified by one or more indexes.  
   
- You can create an indexed property that has either a user-defined property name or a *default* property name. The name of a default index property is the name of the class in which the property is defined. To declare a default property, specify the `default` keyword instead of a property name.  
+ You can create an indexed property that has either a user-defined property name or a *default* property name. The name of a default index property is the name of the class in which the property is defined. To declare a default property, specify the **default** keyword instead of a property name.  
   
  You must explicitly declare a data member to contain the property value. For an indexed property, the data member is typically an array or a collection.  
   
@@ -55,37 +55,37 @@ property type default[index_list] {
 ```  
   
 ### Parameters  
- `type`  
+ *type*  
  The data type of the property value, and consequently the property itself.  
   
- `property_name`  
+ *property_name*  
  The name of the property.  
   
- `access-modifier`  
- An access qualifier. Valid qualifiers are `static` and `virtual`.  
+ *access-modifier*  
+ An access qualifier. Valid qualifiers are **static** and **virtual**.  
   
- The get or set accessors need not agree on the `virtual` qualifier, but they must agree on the `static` qualifier.  
+ The get or set accessors need not agree on the **virtual** qualifier, but they must agree on the **static** qualifier.  
   
- `inheritance-modifier`  
- An inheritance qualifier. Valid qualifiers are `abstract` and `sealed`.  
+ *inheritance-modifier*  
+ An inheritance qualifier. Valid qualifiers are **abstract** and **sealed**.  
   
- `index_list`  
+ *index_list*  
  A comma-delimited list of one or more indexes. Each index consists of an index type, and an optional identifier that can be used in the property method body.  
   
- `value`  
+ *value*  
  The value to assign to the property in a set operation, or retrieve in a get operation.  
   
- `property_body`  
- The property method body of the set or get accessor. The `property_body` can use the `index_list` to access the underlying property data member, or as parameters in user-defined processing.  
+ *property_body*  
+ The property method body of the set or get accessor. The *property_body* can use the *index_list* to access the underlying property data member, or as parameters in user-defined processing.  
   
 ## Windows Runtime  
  For more information, see [Properties (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755807.aspx).  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- **Syntax**  
+### Syntax  
   
 ```cpp  
 modifier property type property_name;
@@ -102,10 +102,10 @@ modifier property type default[index];
 }  
 ```  
   
- **Parameters**  
+### Parameters  
   
  *modifier*  
- A modifier that can be used on either a property declaration or a get/set accessor method. Possible values are `static` and `virtual`.  
+ A modifier that can be used on either a property declaration or a get/set accessor method. Possible values are **static** and **virtual**.  
   
  *type*  
  The type of the value that is represented by the property.  
@@ -116,7 +116,7 @@ modifier property type default[index];
  *index_list*  
  A comma-delimited list of one or more indexes, specified in square brackets (the subscript operator, ([])). For each index, specify a type and optionally an identifier that can be used in the property method body.  
   
- **Remarks**  
+### Remarks  
   
  The first syntax example shows a *simple property*, which implicitly declares both a `set` and `get` method. The compiler automatically creates a private field to store the value of the property.  
   
@@ -124,15 +124,15 @@ modifier property type default[index];
   
  The third syntax example shows a customer-defined *index property*. An index property takes parameters in addition to the value to be set or retrieved. You must specify a name for the property. Unlike a simple property, the `set` and/or `get` methods of an index property must be explicitly defined, and you must specify a name for the property.  
   
- The fourth syntax example shows a *default* property, which provides array-like access to an instance of the type. The keyword, `default`, serves only to specify a default property. The name of the default property is the name of the type in which the property is defined.  
+ The fourth syntax example shows a *default* property, which provides array-like access to an instance of the type. The keyword, **default**, serves only to specify a default property. The name of the default property is the name of the type in which the property is defined.  
   
- The `property` keyword can appear in a class, interface, or value type. A property can have a get function (read-only), a set function (write-only), or both (read-write).  
+ The **property** keyword can appear in a class, interface, or value type. A property can have a get function (read-only), a set function (write-only), or both (read-write).  
   
  A property name cannot match the name of the managed class that contains it. The return type of the getter function must match the type of the last parameter of a corresponding setter function.  
   
  To client code, a property has the appearance of an ordinary data member, and can be written to or read from by using the same syntax as a data member.  
   
- The get and set methods need not agree on the `virtual` modifier.  
+ The get and set methods need not agree on the **virtual** modifier.  
   
  The accessibility of the get and set method can differ.  
   
@@ -152,16 +152,16 @@ modifier property type default[index];
   
  Different accessibility is allowed for the accessor methods in a property block.  That is, the set method can be public and the get method can be private.  However, it is an error for an accessor method to have a less restrictive accessibility than what is on the declaration of the property itself.  
   
- `property` is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
+ **property** is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
  The following example shows the declaration and use of a property data member and a property block.  It also shows that a property accessor can be defined out of class.  
   
-```  
+```cpp  
 // mcppv2_property.cpp  
 // compile with: /clr  
 using namespace System;  

@@ -22,20 +22,20 @@ A namespace qualifies the names of language elements so the names do not conflic
  For more information, see [Namespaces and type visibility (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh969551.aspx).  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- **Syntax**  
+### Syntax  
   
 ```  
 using namespace cli;  
 ```  
   
- **Remarks**  
+### Remarks  
   
- The C++/CLI supports the `cli` namespace. When compiling with **/clr**, the `using` statement in the Syntax section is implied.  
+ The C++/CLI supports the **cli** namespace. When compiling with `/clr`, the **using** statement in the Syntax section is implied.  
   
- The following language features are in the `cli` namespace:  
+ The following language features are in the **cli** namespace:  
   
 -   [Arrays](../windows/arrays-cpp-component-extensions.md)  
   
@@ -46,14 +46,13 @@ using namespace cli;
 -   [safe_cast](../windows/safe-cast-cpp-component-extensions.md)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
- The following code example demonstrates that it is possible to use a symbol in the `cli` namespace as a user-defined symbol in your code.  However, once you have done so, you will have to explicitly or implicitly qualify your references to the `cli` language element of the same name.  
+ The following code example demonstrates that it is possible to use a symbol in the **cli** namespace as a user-defined symbol in your code.  However, once you have done so, you will have to explicitly or implicitly qualify your references to the **cli** language element of the same name.  
   
-```  
+```cpp  
 // cli_namespace.cpp  
 // compile with: /clr  
 using namespace cli;  

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::GetRuntimeClassName Method
 
-Gets the runtime class name of the current RuntimeClass object.
+Gets the runtime class name of the current **RuntimeClass** object.
 
 ## Syntax
 
@@ -44,5 +44,4 @@ An assert error is emitted if &#95;&#95;WRL_STRICT&#95;&#95; or &#95;&#95;WRL_FO
 **Namespace:** Microsoft::WRL
 
 ## See Also
-
-[RuntimeClass Class](../windows/runtimeclass-class.md)
+ [RuntimeClass Class](../windows/runtimeclass-class.md)

@@ -22,11 +22,10 @@ virtual HRESULT UnregisterWinRTObject(
    unsigned int,  
    _Inout_ WINRT_REGISTRATION_COOKIE* cookie  
 );  
-  
 ```  
   
 #### Parameters  
- `cookie`  
+ *cookie*  
  A pointer to a value that identifies the class object whose registration is to be revoked.  
   
 ## Return Value  

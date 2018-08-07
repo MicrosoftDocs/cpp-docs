@@ -23,7 +23,7 @@ struct Nil;
 ## Remarks  
  Used to indicate an unspecified, optional template parameter.  
   
- Nil is an empty structure.  
+ **Nil** is an empty structure.  
   
 ## Inheritance Hierarchy  
  `Nil`  

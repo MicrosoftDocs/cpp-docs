@@ -29,5 +29,5 @@ virtual long GetObjectCount() const;
   
  **Namespace:** Microsoft::WRL
  
- ## See Also
+## See Also
  [Module Class](../windows/module-class.md)

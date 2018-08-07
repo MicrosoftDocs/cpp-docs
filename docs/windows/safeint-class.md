@@ -22,19 +22,19 @@ template<typename T, typename E = _SAFEINT_DEFAULT_ERROR_POLICY>
 class SafeInt;  
 ```  
   
-#### Parameters  
+### Parameters  
   
 |Template|Description|  
 |--------------|-----------------|  
-|T|The type of integer or Boolean parameter that `SafeInt` replaces.|  
+|T|The type of integer or Boolean parameter that **SafeInt** replaces.|  
 |E|An enumerated data type that defines the error handling policy.|  
 |U|The type of integer or Boolean parameter for the secondary operand.|  
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] rhs|An input parameter that represents the value on the right side of the operator in several stand-alone functions.|  
-|[in] i|An input parameter that represents the value on the right side of the operator in several stand-alone functions.|  
-|[in] bits|An input parameter that represents the value on the right side of the operator in several stand-alone functions.|  
+|[in] *rhs*|An input parameter that represents the value on the right side of the operator in several stand-alone functions.|  
+|[in] *i*|An input parameter that represents the value on the right side of the operator in several stand-alone functions.|  
+|[in] *bits*|An input parameter that represents the value on the right side of the operator in several stand-alone functions.|  
   
 ## Members  
   
@@ -154,17 +154,17 @@ class SafeInt;
 |&#124;=|`template<typename U>`<br /><br /> `SafeInt<T,E>& operator&#124;= (SafeInt<U, E> rhs) throw()`|  
   
 ## Remarks  
- The `SafeInt` class protects against integer overflow in mathematical operations. For example, consider adding two 8-bit integers: one has a value of 200 and the second has a value of 100. The correct mathematical operation would be 200 + 100 = 300. However, because of the 8-bit integer limit, the upper bit will be lost and the compiler will return 44 (300 - 2<sup>8</sup>) as the result. Any operation that depends on this mathematical equation will generate unexpected behavior.  
+ The **SafeInt** class protects against integer overflow in mathematical operations. For example, consider adding two 8-bit integers: one has a value of 200 and the second has a value of 100. The correct mathematical operation would be 200 + 100 = 300. However, because of the 8-bit integer limit, the upper bit will be lost and the compiler will return 44 (300 - 2<sup>8</sup>) as the result. Any operation that depends on this mathematical equation will generate unexpected behavior.  
   
- The `SafeInt` class checks whether an arithmetic overflow occurs or whether the code tries to divide by zero. In both cases, the class calls the error handler to warn the program of the potential problem.  
+ The **SafeInt** class checks whether an arithmetic overflow occurs or whether the code tries to divide by zero. In both cases, the class calls the error handler to warn the program of the potential problem.  
   
- This class also lets you compare two different types of integers as long as they are `SafeInt` objects. Typically, when you perform a comparison, you must first convert the numbers to be the same type. Casting one number to another type often requires checks to make sure that there is no loss of data.  
+ This class also lets you compare two different types of integers as long as they are **SafeInt** objects. Typically, when you perform a comparison, you must first convert the numbers to be the same type. Casting one number to another type often requires checks to make sure that there is no loss of data.  
   
- The Operators table in this topic lists the mathematical and comparison operators supported by the `SafeInt` class. Most mathematical operators return a `SafeInt` object of type `T`.  
+ The Operators table in this topic lists the mathematical and comparison operators supported by the **SafeInt** class. Most mathematical operators return a **SafeInt** object of type `T`.  
   
- Comparison operations between a `SafeInt` and an integral type can be performed in either direction. For example, both `SafeInt<int>(x) < y` and `y> SafeInt<int>(x)` are valid and will return the same result.  
+ Comparison operations between a **SafeInt** and an integral type can be performed in either direction. For example, both `SafeInt<int>(x) < y` and `y> SafeInt<int>(x)` are valid and will return the same result.  
   
- Many binary operators do not support using two different `SafeInt` types. One example of this is the `&` operator. `SafeInt<T, E> & int` is supported, but `SafeInt<T, E> & SafeInt<U, E>` is not. In the latter example, the compiler does not know what type of parameter to return. One solution to this problem is to cast the second parameter back to the base type. By using the same parameters, this can be done with `SafeInt<T, E> & (U)SafeInt<U, E>`.  
+ Many binary operators do not support using two different **SafeInt** types. One example of this is the `&` operator. `SafeInt<T, E> & int` is supported, but `SafeInt<T, E> & SafeInt<U, E>` is not. In the latter example, the compiler does not know what type of parameter to return. One solution to this problem is to cast the second parameter back to the base type. By using the same parameters, this can be done with `SafeInt<T, E> & (U)SafeInt<U, E>`.  
   
 > [!NOTE]
 >  For any bitwise operations, the two different parameters should be the same size. If the sizes differ, the compiler will throw an [ASSERT](../mfc/reference/diagnostic-services.md#assert) exception. The results of this operation cannot be guaranteed to be accurate. To resolve this issue, cast the smaller parameter until it is the same size as the larger parameter.  
@@ -177,9 +177,9 @@ class SafeInt;
   
 -   `((uint)~0) > -1`  
   
- The first statement resolves to `true`, but the second statement resolves to `false`. The bitwise negation of 0 is 0xFFFFFFFF. In the second statement, the default comparison operator compares 0xFFFFFFFF to 0xFFFFFFFF and considers them to be equal. The comparison operator for the `SafeInt` class realizes that the second parameter is negative whereas the first parameter is unsigned. Therefore, although the bit representation is identical, the `SafeInt` logical operator realizes that the unsigned integer is larger than -1.  
+ The first statement resolves to **true**, but the second statement resolves to **false**. The bitwise negation of 0 is 0xFFFFFFFF. In the second statement, the default comparison operator compares 0xFFFFFFFF to 0xFFFFFFFF and considers them to be equal. The comparison operator for the **SafeInt** class realizes that the second parameter is negative whereas the first parameter is unsigned. Therefore, although the bit representation is identical, the **SafeInt** logical operator realizes that the unsigned integer is larger than -1.  
   
- Be careful when you use the `SafeInt` class together with the `?:` ternary operator. Consider the following line of code.  
+ Be careful when you use the **SafeInt** class together with the `?:` ternary operator. Consider the following line of code.  
   
 ```  
 Int x = flag ? SafeInt<unsigned int>(y) : -1;  
@@ -191,7 +191,7 @@ Int x = flag ? SafeInt<unsigned int>(y) : -1;
 Int x = flag ? SafeInt<unsigned int>(y) : SafeInt<unsigned int>(-1);  
 ```  
   
- If `flag` is `false`, the compiler throws an exception instead of assigning the value of -1 to `x`. Therefore, to avoid this behavior, the correct code to use is the following line.  
+ If `flag` is **false**, the compiler throws an exception instead of assigning the value of -1 to `x`. Therefore, to avoid this behavior, the correct code to use is the following line.  
   
 ```  
 Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;  
@@ -200,14 +200,14 @@ Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;
  `T` and `U` can be assigned a Boolean type, character type, or integer type. The integer types can be signed or unsigned and any size from 8 bits to 64 bits.  
   
 > [!NOTE]
->  Although the `SafeInt` class accepts any kind of integer, it performs more efficiently with unsigned types.  
+>  Although the **SafeInt** class accepts any kind of integer, it performs more efficiently with unsigned types.  
   
- `E` is the error handling mechanism that `SafeInt` uses. Two error handling mechanisms are provided with the SafeInt library. The default policy is `SafeIntErrorPolicy_SafeIntException`, which throws a [SafeIntException Class](../windows/safeintexception-class.md) exception when an error occurs. The other policy is `SafeIntErrorPolicy_InvalidParameter`, which stops the program if an error occurs.  
+ `E` is the error handling mechanism that **SafeInt** uses. Two error handling mechanisms are provided with the SafeInt library. The default policy is `SafeIntErrorPolicy_SafeIntException`, which throws a [SafeIntException Class](../windows/safeintexception-class.md) exception when an error occurs. The other policy is `SafeIntErrorPolicy_InvalidParameter`, which stops the program if an error occurs.  
   
- There are two options to customize the error policy. The first option is to set the parameter `E` when you create a `SafeInt`. Use this option when you want to change the error handling policy for just one `SafeInt`. The other option is to define `_SAFEINT_DEFAULT_ERROR_POLICY` to be your customized error-handling class before you include the `SafeInt` library. Use this option when you want to change the default error handling policy for all instances of the `SafeInt` class in your code.  
+ There are two options to customize the error policy. The first option is to set the parameter `E` when you create a **SafeInt**. Use this option when you want to change the error handling policy for just one **SafeInt**. The other option is to define _SAFEINT_DEFAULT_ERROR_POLICY to be your customized error-handling class before you include the **SafeInt** library. Use this option when you want to change the default error handling policy for all instances of the **SafeInt** class in your code.  
   
 > [!NOTE]
->  A customized class that handles errors from the SafeInt library should not return control to the code that called the error handler. After the error handler is called, the result of the `SafeInt` operation cannot be trusted.  
+>  A customized class that handles errors from the SafeInt library should not return control to the code that called the error handler. After the error handler is called, the result of the **SafeInt** operation cannot be trusted.  
   
 ## Requirements  
  **Header:** safeint.h  

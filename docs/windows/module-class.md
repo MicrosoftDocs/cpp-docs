@@ -18,7 +18,6 @@ Represents a collection of related objects.
 ## Syntax  
   
 ```  
-  
 template<ModuleType moduleType>  
 class Module;  
   
@@ -29,8 +28,8 @@ template<>
 class Module<OutOfProc> : public Module<InProc>;  
 ```  
   
-#### Parameters  
- `moduleType`  
+### Parameters  
+ *moduleType*  
  A combination of one or more [ModuleType](../windows/moduletype-enumeration.md) enumeration values.  
   
 ## Members  
@@ -47,13 +46,13 @@ class Module<OutOfProc> : public Module<InProc>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Module::~Module Destructor](../windows/module-tilde-module-destructor.md)|Deinitializes the current instance of the Module class.|  
+|[Module::~Module Destructor](../windows/module-tilde-module-destructor.md)|Deinitializes the current instance of the **Module** class.|  
   
 ### Protected Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Module::Module Constructor](../windows/module-module-constructor.md)|Initializes a new instance of the Module class.|  
+|[Module::Module Constructor](../windows/module-module-constructor.md)|Initializes a new instance of the **Module** class.|  
   
 ### Public Methods  
   

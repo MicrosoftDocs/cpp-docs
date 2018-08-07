@@ -24,8 +24,8 @@ template <
 struct RuntimeClassFlags;  
 ```  
   
-#### Parameters  
- `flags`  
+### Parameters  
+ *flags*  
  A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.  
   
 ## Members  

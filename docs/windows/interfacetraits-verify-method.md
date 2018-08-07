@@ -22,7 +22,7 @@ __forceinline static void Verify();
 ```  
   
 ## Remarks  
- Verifies that Base is properly derived.  
+ Verifies that `Base` is properly derived.  
   
  For more information about `Base`, see the Public Typedefs section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).  
   

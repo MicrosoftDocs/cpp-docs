@@ -30,11 +30,11 @@ template <
 struct IsBaseOfStrict<Base, Base>;  
 ```  
   
-#### Parameters  
- `Base`  
+### Parameters  
+ *Base*  
  The base type.  
   
- `Derived`  
+ *Derived*  
  The derived type.  
   
 ## Remarks  

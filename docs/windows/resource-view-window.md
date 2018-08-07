@@ -30,11 +30,9 @@ ms.workload: ["cplusplus", "uwp"]
   
      \- or -  
   
-2.  Press **CTRL+SHIFT+E**.  
+2.  Press **Ctrl**+**Shift**+**E**.  
   
-
-  
-### Requirements  
+## Requirements  
  Win32  
   
 ## See Also  

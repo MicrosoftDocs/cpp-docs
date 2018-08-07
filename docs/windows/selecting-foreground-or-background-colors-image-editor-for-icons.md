@@ -23,9 +23,9 @@ Except for the **Eraser**, tools on the **Image Editor** toolbar draw with the c
   
 1.  With the right mouse button, click the color you want on the **Colors** palette.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
- Requirements  
+## Requirements  
   
  None  
   

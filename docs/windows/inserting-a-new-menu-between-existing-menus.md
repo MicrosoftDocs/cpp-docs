@@ -20,9 +20,9 @@ ms.workload: ["cplusplus", "uwp"]
   
 2.  Right-click on the menu bar and choose **Insert New** from the shortcut menu.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
- Requirements  
+## Requirements  
   
  Win32  
   

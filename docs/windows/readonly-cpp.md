@@ -18,9 +18,7 @@ Prohibits assignment to a data member.
 ## Syntax  
   
 ```  
-  
 [readonly]  
-  
 ```  
   
 ## Remarks  
@@ -31,7 +29,7 @@ Prohibits assignment to a data member.
 ## Example  
  The following code shows a use of the **readonly** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_readonly.cpp  
 // compile with: /LD  
 [idl_quote("midl_pragma warning(disable:2461)")];  
@@ -60,4 +58,4 @@ __interface IFireTabCtrl
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Data Member Attributes](../windows/data-member-attributes.md)   
+ [Data Member Attributes](../windows/data-member-attributes.md)   

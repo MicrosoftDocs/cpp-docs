@@ -23,8 +23,8 @@ inline static void Unlock(
 );  
 ```  
   
-#### Parameters  
- `h`  
+### Parameters  
+ *h*  
  Handle to a mutex object.  
   
 ## Return Value  

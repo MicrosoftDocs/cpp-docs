@@ -18,9 +18,7 @@ Specifies a property setting function.
 ## Syntax  
   
 ```  
-  
 [propput]  
-  
 ```  
   
 ## Remarks  
@@ -38,7 +36,7 @@ Specifies a property setting function.
 |**Applies to**|Method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
-|**Invalid attributes**|**propget**, **propputref**|  
+|**Invalid attributes**|`propget`, `propputref`|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   

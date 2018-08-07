@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RoInitializeWrapper::HRESULT() Operator
-Retrieves the HRESULT value produced by the last RoInitializeWrapper constructor.  
+Retrieves the HRESULT value produced by the last **RoInitializeWrapper** constructor.  
   
 ## Syntax  
   

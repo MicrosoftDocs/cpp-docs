@@ -23,12 +23,12 @@ explicit InvokeHelper(
 );  
 ```  
   
-#### Parameters  
- `callback`  
+### Parameters  
+ *callback*  
  An event handler.  
   
 ## Remarks  
- Initializes a new instance of the InvokeHelper class.  
+ Initializes a new instance of the **InvokeHelper** class.  
   
  The `TCallback` template parameter specifies the type of the event handler.  
   

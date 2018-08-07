@@ -28,7 +28,7 @@ enum RuntimeClassType;
 |Name|Description|  
 |----------|-----------------|  
 |`ClassicCom`|A classic COM runtime class.|  
-|`Delegate`|Equivalent to **ClassicCom**.|  
+|`Delegate`|Equivalent to `ClassicCom`.|  
 |`InhibitFtmBase`|Disables `FtmBase` support while `__WRL_CONFIGURATION_LEGACY__` is not defined.|  
 |`InhibitWeakReference`|Disables weak reference support.|  
 |`WinRt`|A Windows Runtime class.|  

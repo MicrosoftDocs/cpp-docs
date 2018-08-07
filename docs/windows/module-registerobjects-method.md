@@ -23,11 +23,11 @@ HRESULT RegisterObjects(
    const wchar_t* serverName);  
 ```  
   
-#### Parameters  
- `module`  
+### Parameters  
+ *module*  
  An array of COM or Windows Runtime objects.  
   
- `serverName`  
+ *serverName*  
  Name of the server that created the objects.  
   
 ## Return Value  

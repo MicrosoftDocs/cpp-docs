@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier::Release
-Deletes the current Module::ReleaseNotifier object if the object was constructed with a parameter of `true`.  
+Deletes the current **Module::ReleaseNotifier** object if the object was constructed with a parameter of **true**.  
   
 ## Syntax  
   

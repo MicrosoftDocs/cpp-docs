@@ -22,7 +22,7 @@ virtual ~ModuleBase();
 ```  
   
 ## Remarks  
- Deinitializes the current instance of the ModuleBase class.  
+ Deinitializes the current instance of the **ModuleBase** class.  
   
 ## Requirements  
  **Header:** implements.h  

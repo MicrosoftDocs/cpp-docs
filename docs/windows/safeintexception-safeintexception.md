@@ -13,7 +13,7 @@ ms.author: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeIntException::SafeIntException
-Creates a `SafeIntException` object.  
+Creates a **SafeIntException** object.  
   
 ## Syntax  
   
@@ -25,12 +25,12 @@ SafeIntException(
 );  
 ```  
   
-#### Parameters  
- [in] `code`  
+### Parameters  
+ [in] *code*  
  An enumerated data value that describes the error that occurred.  
   
 ## Remarks  
- The possible values for `code` are defined in the file Safeint.h. For convenience, the possible values are also listed here.  
+ The possible values for *code* are defined in the file Safeint.h. For convenience, the possible values are also listed here.  
   
 -   `SafeIntNoError`  
   

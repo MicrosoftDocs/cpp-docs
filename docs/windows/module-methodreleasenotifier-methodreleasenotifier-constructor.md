@@ -13,12 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier::MethodReleaseNotifier Constructor
-Initializes a new instance of the Module::MethodReleaseNotifier class.  
+Initializes a new instance of the **Module::MethodReleaseNotifier** class.  
   
 ## Syntax  
   
 ```  
-  
 MethodReleaseNotifier(  
    _In_ T* object,   
    _In_ void (T::* method)(),   
@@ -27,15 +26,15 @@ MethodReleaseNotifier(
             method_(method);  
 ```  
   
-#### Parameters  
- `object`  
+### Parameters  
+ *object*  
  An object whose member function is an event handler.  
   
- `method`  
- The member function of parameter `object` that is the event handler.  
+ *method*  
+ The member function of parameter *object* that is the event handler.  
   
- `release`  
- Specify `true` to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) method; otherwise, specify `false`.  
+ *release*  
+ Specify **true** to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) method; otherwise, specify **false**.  
   
 ## Requirements  
  **Header:** module.h  

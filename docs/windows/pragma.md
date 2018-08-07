@@ -13,13 +13,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # pragma
-Emits the specified string into the generated .idl file without the use of  quotation marks. .  
+Emits the specified string into the generated .idl file without the use of quotation marks. 
   
 ## Syntax  
   
 ```  
-  
-      [ pragma(  
+[ pragma(  
    pragma_statement  
 ) ];  
 ```  
@@ -33,7 +32,7 @@ Emits the specified string into the generated .idl file without the use of  quot
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_pragma.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -63,4 +62,4 @@ __interface A
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
- [pack](../preprocessor/pack.md)   
+ [pack](../preprocessor/pack.md)   

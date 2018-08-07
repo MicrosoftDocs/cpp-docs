@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier::Invoke Method
-Calls the event handler associated with the current Module::MethodReleaseNotifier object.  
+Calls the event handler associated with the current **Module::MethodReleaseNotifier** object.  
   
 ## Syntax  
   

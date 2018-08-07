@@ -18,9 +18,7 @@ Defines an object that cannot be instantiated by itself.
 ## Syntax  
   
 ```  
-  
 [noncreatable]  
-  
 ```  
   
 ## Remarks  
@@ -30,7 +28,7 @@ Defines an object that cannot be instantiated by itself.
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_noncreatable.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -54,7 +52,7 @@ class CMyClass : public A
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|**coclass**|  
 |**Invalid attributes**|None|  

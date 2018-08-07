@@ -31,5 +31,4 @@ WRL_NOTHROW static Module& GetModule();
  **Namespace:** Microsoft::WRL  
   
 ## See Also  
- 
-[Module Class](../windows/module-class.md)
+ [Module Class](../windows/module-class.md)
