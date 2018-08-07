@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename T  
 >  
 class ComPtrRefBase;  
 ```  
   
-#### Parameters  
+### Parameters  
  *T*  
  A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the **ComPtr**.  
   
@@ -43,8 +43,8 @@ class ComPtrRefBase;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ComPtrRefBase::operator IInspectable** Operator](../windows/comptrrefbase-operator-iinspectable-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IInspectable interface.|  
-|[ComPtrRefBase::operator IUnknown** Operator](../windows/comptrrefbase-operator-iunknown-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IUnknown interface.|  
+|[ComPtrRefBase::operator IInspectable** Operator](../windows/comptrrefbase-operator-iinspectable-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IInspectable` interface.|  
+|[ComPtrRefBase::operator IUnknown** Operator](../windows/comptrrefbase-operator-iunknown-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IUnknown` interface.|  
   
 ### Protected Data Members  
   
