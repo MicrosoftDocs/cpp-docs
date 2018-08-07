@@ -17,7 +17,7 @@ Places an interface in the .idl file as a dispatch interface.
   
 ## Syntax  
   
-```  
+```cpp  
 [dispinterface]  
 ```  
   
@@ -28,7 +28,7 @@ Places an interface in the .idl file as a dispatch interface.
   
  The usage example for [dispinterface](http://msdn.microsoft.com/library/windows/desktop/aa366802) in the MIDL documentation:  
   
-```  
+```cpp  
 dispinterface helloPro   
    { interface hello; };   
 ```  
@@ -47,7 +47,7 @@ dispinterface helloPro
 |**Applies to**|**interface**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
-|**Invalid attributes**|**dual**, **object**, **oleautomation**, `local`, **ms_union**|  
+|**Invalid attributes**|`dual`, `object`, `oleautomation`, `local`, `ms_union`|  
   
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
   

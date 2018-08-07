@@ -16,7 +16,7 @@ Represents an event.
   
 ## Syntax  
   
-```  
+```cpp  
 class Event : public HandleT<HandleTraits::EventTraits>;  
 ```  
   
@@ -26,13 +26,13 @@ class Event : public HandleT<HandleTraits::EventTraits>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[Event::Event Constructor (Windows Runtime C++ Template Library)](../windows/event-event-constructor-windows-runtime-cpp-template-library.md)|Initializes a new instance of the Event class.|  
+|[Event::Event Constructor (Windows Runtime C++ Template Library)](../windows/event-event-constructor-windows-runtime-cpp-template-library.md)|Initializes a new instance of the **Event** class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[Event::operator= Operator](../windows/event-operator-assign-operator.md)|Assigns the specified Event reference to the current Event instance.|  
+|[Event::operator= Operator](../windows/event-operator-assign-operator.md)|Assigns the specified **Event** reference to the current **Event** instance.|  
   
 ## Inheritance Hierarchy  
  `HandleT`  

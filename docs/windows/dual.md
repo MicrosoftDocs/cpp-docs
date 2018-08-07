@@ -17,7 +17,7 @@ Places an interface in the .idl file as a dual interface.
   
 ## Syntax  
   
-```  
+```cpp  
 [dual]  
 ```  
   
@@ -68,7 +68,7 @@ __interface IStatic : IDispatch
 |**Applies to**|**interface**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
-|**Invalid attributes**|**dispinterface**|  
+|**Invalid attributes**|`dispinterface`|  
   
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
