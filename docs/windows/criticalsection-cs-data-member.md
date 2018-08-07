@@ -17,7 +17,7 @@ Declares a critical section data member.
   
 ## Syntax  
   
-```  
+```cpp  
 CRITICAL_SECTION cs_;  
 ```  
   

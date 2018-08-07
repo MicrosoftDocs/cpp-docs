@@ -17,14 +17,14 @@ Indicates that the custom or dispinterface defined within a coclass represents t
   
 ## Syntax  
   
-```  
+```cpp  
 [ default(  
    interface1,  
    interface2  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *interface1*  
  The default interface that will be made available to scripting environments that create an object based on the class defined with the **default** attribute.  
   

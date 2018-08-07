@@ -23,7 +23,7 @@ typename TEventArgsClass
 class DeferrableEventArgs : public TEventArgsInterface  
 ```  
   
-#### Parameters  
+### Parameters  
  *TEventArgsInterface*  
  The interface type that declares the arguments for a deferred event.  
   

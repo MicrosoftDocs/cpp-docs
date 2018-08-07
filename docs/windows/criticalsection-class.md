@@ -17,7 +17,7 @@ Represents a critical section object.
   
 ## Syntax  
   
-```  
+```cpp  
 class CriticalSection;  
 ```  
   

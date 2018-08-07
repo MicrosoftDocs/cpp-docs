@@ -17,7 +17,7 @@ Binds a specified column to a variable in the rowset.
   
 ## Syntax  
   
-```  
+```cpp  
 [ db_column(   
    ordinal,   
    dbtype,   
@@ -32,7 +32,7 @@ Binds a specified column to a variable in the rowset.
  *ordinal*  
  The ordinal column number (`DBCOLUMNINFO` ordinal) or column name (ANSI or Unicode string) corresponding to a field in the rowset to which to bind data. If you use numbers, you can skip consecutive ordinals (for example: 1, 2, 3, 5). The name may contain spaces if the OLE DB provider you use supports it. For example, you can use either of the following formats:  
   
-```  
+```cpp  
 [db_column("2")] TCHAR szCity[30];  
 [db_column(L"city_name")] TCHAR szCity[30];  
 ```  

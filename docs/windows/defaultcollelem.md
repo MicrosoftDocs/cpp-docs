@@ -17,7 +17,7 @@ Used for Visual Basic code optimization.
   
 ## Syntax  
   
-```  
+```cpp  
 [defaultcollelem]  
 ```  
   

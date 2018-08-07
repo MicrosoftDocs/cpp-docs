@@ -17,7 +17,7 @@ Opens an OLE DB table.
   
 ## Syntax  
   
-```  
+```cpp  
 [ db_table(   
    db_table,   
    name,   

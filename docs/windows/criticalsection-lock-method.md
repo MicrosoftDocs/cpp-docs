@@ -17,7 +17,7 @@ Waits for ownership of the specified critical section object. The function retur
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLock Lock();  
   
    static SyncLock Lock(  
@@ -25,7 +25,7 @@ SyncLock Lock();
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *cs*  
  A user-specified critical section object.  
   
