@@ -26,18 +26,18 @@ ms.workload: ["cplusplus", "uwp"]
   
      -or-  
   
-     Select the blank button at the right end of the toolbar (in the Toolbar View pane) and begin drawing. A default button command ID is assigned (ID_BUTTON\<n>).  
+     Select the blank button at the right end of the toolbar (in the **Toolbar View** pane) and begin drawing. A default button command ID is assigned (ID_BUTTON\<n>).  
   
  You can also copy and paste an image onto a toolbar as a new button.  
   
-#### To add an image to a toolbar as a button  
+### To add an image to a toolbar as a button  
   
 1.  In [Resource View](../windows/resource-view-window.md), open the toolbar by double-clicking it.  
   
 2.  Next, open the image you'd like to add to your toolbar.  
   
     > [!NOTE]
-    >  If you open the image in Visual Studio, it will open in the Image editor. You can also open the image in other graphics programs.  
+    >  If you open the image in Visual Studio, it will open in the **Image** editor. You can also open the image in other graphics programs.  
   
 3.  From the **Edit** menu, choose **Copy**.  
   
@@ -47,13 +47,12 @@ ms.workload: ["cplusplus", "uwp"]
   
      The image will appear on your toolbar as a new button.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
-### Requirements  
+## Requirements  
  MFC or ATL  
   
 ## See Also  
  [Toolbar Button Properties](../windows/toolbar-button-properties.md)   
  [Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)   
  [Toolbar Editor](../windows/toolbar-editor.md)
-

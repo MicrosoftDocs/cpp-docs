@@ -27,7 +27,7 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 ) throw();  
 ```  
   
-#### Parameters  
+### Parameters  
  *flags*  
  A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.  
   

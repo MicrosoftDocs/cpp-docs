@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a Console Application
-The easiest way to create a Win32 console application is to use the Win32 Application Wizard.  
+The easiest way to create a Win32 console application is to use the **Win32 Application Wizard**.  
   
 ### To create a Win32 console application  
   
