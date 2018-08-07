@@ -17,7 +17,7 @@ Associates the specified member variable with an input or output parameter and d
   
 ## Syntax  
   
-```  
+```cpp  
 [ db_param(   
    ordinal,   
    paramtype="DBPARAMIO_INPUT",   
@@ -29,7 +29,7 @@ Associates the specified member variable with an input or output parameter and d
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *ordinal*  
  The column number (DBCOLUMNINFO ordinal) corresponding to a field in the rowset to which to bind data.  
   

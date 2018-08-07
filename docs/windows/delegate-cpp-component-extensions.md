@@ -55,7 +55,7 @@ delegate-type-identifier
  Use the *delegate-type-identifier* to declare an event with the same prototype as the delegate. For more information, see [Delegates (C++/CX)](../cppcx/delegates-c-cx.md).  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
  The common language runtime supports delegates with the following syntax.  
@@ -111,10 +111,9 @@ function_declaration
 -   [Generic Delegates (Visual C++)](../windows/generic-delegates-visual-cpp.md)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
  The following example shows how to declare, initialize, and invoke delegates.  
   
@@ -174,8 +173,6 @@ int main () {
    StaticDelInst(11);  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 in func1 8  

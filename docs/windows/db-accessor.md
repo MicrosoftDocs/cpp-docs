@@ -17,7 +17,7 @@ Groups `db_column` attributes that participate in `IAccessor`-based binding.
   
 ## Syntax  
   
-```  
+```cpp  
 [ db_accessor(   
    num,   
    auto   

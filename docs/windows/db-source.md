@@ -17,7 +17,7 @@ Creates a connection to a data source.
   
 ## Syntax  
   
-```  
+```cpp  
 [ db_source(   
    db_source,   
    name,   
@@ -33,7 +33,7 @@ Creates a connection to a data source.
  When you use **db_source** on a class, *name* is an instance of a data source object that has the **db_source** attribute applied to it (see example 1). When you use **db_source** inline in a method implementation, *name* is a variable (local to the method) that can be used to access the data source (see example 2). You pass this *name* to the *source_name* parameter of `db_command` to associate the data source with a command.  
   
  *hresult* (optional)  
- Identifies the variable that will receive the `HRESULT` of this database command. If the variable does not exist, it will be automatically injected by the attribute.  
+ Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.  
   
 ## Remarks  
  **db_source** creates a [CDataSource](../data/oledb/cdatasource-class.md) and a [CSession](../data/oledb/csession-class.md) object, which together represent a connection with an OLE DB consumer data source.  
