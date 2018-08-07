@@ -24,14 +24,14 @@ template <
 class SyncLockWithStatusT : public SyncLockT<SyncTraits>;  
 ```  
   
-#### Parameters  
- `SyncTraits`  
+### Parameters  
+ *SyncTraits*  
  A type that can take exclusive or shared ownership of a resource.  
   
 ## Remarks  
  Represents a type that can take exclusive or shared ownership of a resource.  
   
- The SyncLockWithStatusT class is used to implement the [Mutex](../windows/mutex-class1.md) and [Semaphore](../windows/semaphore-class.md) classes.  
+ The **SyncLockWithStatusT** class is used to implement the [Mutex](../windows/mutex-class1.md) and [Semaphore](../windows/semaphore-class.md) classes.  
   
 ## Members  
   
@@ -39,26 +39,26 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::SyncLockWithStatusT Constructor](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Initializes a new instance of the SyncLockWithStatusT class.|  
+|[SyncLockWithStatusT::SyncLockWithStatusT Constructor](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Initializes a new instance of the **SyncLockWithStatusT** class.|  
   
 ### Protected Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::SyncLockWithStatusT Constructor](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Initializes a new instance of the SyncLockWithStatusT class.|  
+|[SyncLockWithStatusT::SyncLockWithStatusT Constructor](../windows/synclockwithstatust-synclockwithstatust-constructor.md)|Initializes a new instance of the **SyncLockWithStatusT** class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::GetStatus Method](../windows/synclockwithstatust-getstatus-method.md)|Retrieves the wait status of the current SyncLockWithStatusT object.|  
-|[SyncLockWithStatusT::IsLocked Method](../windows/synclockwithstatust-islocked-method.md)|Indicates whether the current SyncLockWithStatusT object owns a resource; that is, the SyncLockWithStatusT object is *locked*.|  
+|[SyncLockWithStatusT::GetStatus Method](../windows/synclockwithstatust-getstatus-method.md)|Retrieves the wait status of the current **SyncLockWithStatusT** object.|  
+|[SyncLockWithStatusT::IsLocked Method](../windows/synclockwithstatust-islocked-method.md)|Indicates whether the current **SyncLockWithStatusT** object owns a resource; that is, the **SyncLockWithStatusT** object is *locked*.|  
   
 ### Protected Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SyncLockWithStatusT::status_ Data Member](../windows/synclockwithstatust-status-data-member.md)|Holds the result of the underlying wait operation after a lock operation on an object based on the current SyncLockWithStatusT object.|  
+|[SyncLockWithStatusT::status_ Data Member](../windows/synclockwithstatust-status-data-member.md)|Holds the result of the underlying wait operation after a lock operation on an object based on the current **SyncLockWithStatusT** object.|  
   
 ## Inheritance Hierarchy  
  `SyncLockT`  

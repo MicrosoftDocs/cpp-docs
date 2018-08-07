@@ -18,25 +18,24 @@ Implements support for returning detailed errors.
 ## Syntax  
   
 ```  
-  
-      [ support_error_info(  
+[ support_error_info(  
    error_interface=uuid  
 ) ]  
 ```  
   
-#### Parameters  
- **error_interface**  
- The identifier of the interface implementing **IErrorInfo**.  
+### Parameters  
+ *error_interface*  
+ The identifier of the interface implementing `IErrorInfo`.  
   
 ## Remarks  
- The **support_error_info** C++ attribute implements support for returning detailed, contextual errors encountered by the target object to the client. For the object to support errors, the methods of the **IErrorInfo** interface must be implemented by the object. For more information, see [Supporting IDispatch and IErrorInfo](../atl/supporting-idispatch-and-ierrorinfo.md).  
+ The **support_error_info** C++ attribute implements support for returning detailed, contextual errors encountered by the target object to the client. For the object to support errors, the methods of the `IErrorInfo` interface must be implemented by the object. For more information, see [Supporting IDispatch and IErrorInfo](../atl/supporting-idispatch-and-ierrorinfo.md).  
   
- This attribute adds the [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) class as a base class to the target object. This results in a default implementation of **ISupportErrorInfo** and can be used when a single interface generates errors on an object.  
+ This attribute adds the [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) class as a base class to the target object. This results in a default implementation of `ISupportErrorInfo` and can be used when a single interface generates errors on an object.  
   
 ## Example  
- The following code adds default support for the **ISupportErrorInfo** interface to the `CMyClass` object.  
+ The following code adds default support for the `ISupportErrorInfo` interface to the `CMyClass` object.  
   
-```  
+```cpp  
 // cpp_attr_ref_support_error_info.cpp  
 // compile with: /LD  
 #define _ATL_ATTRIBUTES  
@@ -71,4 +70,4 @@ class CMyClass
   
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
+ [Class Attributes](../windows/class-attributes.md)   

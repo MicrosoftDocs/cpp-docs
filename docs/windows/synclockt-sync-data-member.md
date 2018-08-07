@@ -22,7 +22,7 @@ typename SyncTraits::Type sync_;
 ```  
   
 ## Remarks  
- Holds the underlying resource represented by the SyncLockT class.  
+ Holds the underlying resource represented by the **SyncLockT** class.  
   
 ## Requirements  
  **Header:** corewrappers.h  

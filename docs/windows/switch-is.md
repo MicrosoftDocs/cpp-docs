@@ -18,9 +18,7 @@ Specifies the expression or identifier acting as the union discriminant that sel
 ## Syntax  
   
 ```  
-  
 [switch_is]  
-  
 ```  
   
 ## Remarks  
@@ -35,7 +33,7 @@ Specifies the expression or identifier acting as the union discriminant that sel
   
 |||  
 |-|-|  
-|**Applies to**|`typedef`|  
+|**Applies to**|**typedef**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -45,4 +43,4 @@ Specifies the expression or identifier acting as the union discriminant that sel
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [switch_type](../windows/switch-type.md)   
+ [switch_type](../windows/switch-type.md)   
