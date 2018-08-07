@@ -25,22 +25,20 @@ When you're designing a dialog box, you can simulate and test its run-time behav
     > [!NOTE]
     >  Connections to dialog box code made by using wizards are not included in the simulation.  
   
- When you test a dialog box, it typically displays at a location that's relative to the main program window. If you've set the dialog box's Absolute Align property to True, the dialog box displays at a position that's relative to the upper-left corner of the screen.  
+ When you test a dialog box, it typically displays at a location that's relative to the main program window. If you've set the dialog box's **Absolute Align** property to **True**, the dialog box displays at a position that's relative to the upper-left corner of the screen.  
   
 ### To test a dialog box  
   
 1.  When the Dialog editor is the active window, on the menu bar, choose **Format**, **Test Dialog**.  
   
-2.  To end the simulation, press Esc, or just choose the **Close** button in the dialog box you are testing.  
+2.  To end the simulation, press **Esc**, or just choose the **Close** button in the dialog box you are testing.  
   
  For information about how to add resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index).  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Dialog Editor](../windows/dialog-editor.md)   
  [Showing or Hiding the Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)
-

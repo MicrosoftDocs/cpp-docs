@@ -28,20 +28,20 @@ explicit SyncLockWithStatusT(
 );  
 ```  
   
-#### Parameters  
- `other`  
- An rvalue-reference to another SyncLockWithStatusT object.  
+### Parameters  
+ *other*  
+ An rvalue-reference to another **SyncLockWithStatusT** object.  
   
- `sync`  
- A reference to another SyncLockWithStatusT object.  
+ *sync*  
+ A reference to another **SyncLockWithStatusT** object.  
   
- `status`  
- The value of the [status_](../windows/synclockwithstatust-status-data-member.md) data member of the `other` parameter or the `sync` parameter.  
+ *status*  
+ The value of the [status_](../windows/synclockwithstatust-status-data-member.md) data member of the *other* parameter or the *sync* parameter.  
   
 ## Remarks  
- Initializes a new instance of the SyncLockWithStatusT class.  
+ Initializes a new instance of the **SyncLockWithStatusT** class.  
   
- The first constructor initializes the current SyncLockWithStatusT object from another SyncLockWithStatusT specified by parameter `other`, and then invalidates the other SyncLockWithStatusT object. The second constructor is `protected`, and initializes the current SyncLockWithStatusT object to an invalid state.  
+ The first constructor initializes the current **SyncLockWithStatusT** object from another **SyncLockWithStatusT** specified by parameter *other*, and then invalidates the other **SyncLockWithStatusT** object. The second constructor is **protected**, and initializes the current **SyncLockWithStatusT** object to an invalid state.  
   
 ## Requirements  
  **Header:** corewrappers.h  

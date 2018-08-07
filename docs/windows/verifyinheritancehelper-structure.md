@@ -29,11 +29,11 @@ template <
 struct VerifyInheritanceHelper<I, Nil>;  
 ```  
   
-#### Parameters  
- `I`  
+### Parameters  
+ *I*  
  A type.  
   
- `Base`  
+ *Base*  
  Another type.  
   
 ## Remarks  

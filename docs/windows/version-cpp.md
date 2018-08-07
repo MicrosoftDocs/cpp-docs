@@ -18,15 +18,14 @@ Identifies a particular version among multiple versions of a class.
 ## Syntax  
   
 ```  
-  
-      [ version(  
+[ version(  
    "version"  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *version*  
- The version number of the coclass. If not specified, 1.0 will be placed in the .idl file.  
+ The version number of the `coclass`. If not specified, 1.0 will be placed in the .idl file.  
   
 ## Remarks  
  The **version** C++ attribute has the same functionality as the [version](http://msdn.microsoft.com/library/windows/desktop/aa367306) MIDL attribute and is passed through to the generated .idl file.  
@@ -40,7 +39,7 @@ Identifies a particular version among multiple versions of a class.
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|**coclass**|  
 |**Invalid attributes**|None|  
@@ -49,4 +48,4 @@ Identifies a particular version among multiple versions of a class.
   
 ## See Also  
  [Compiler Attributes](../windows/compiler-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
+ [Class Attributes](../windows/class-attributes.md)   

@@ -20,13 +20,13 @@ A *tracking reference* (`%`) behaves like an ordinary C++ reference (`&`) except
   
 -   Assignment of an object to a tracking reference causes the object’s reference count to be incremented.  
   
--   A native reference (&) is the result when you dereference a *. A tracking reference (%) is the result when you dereference a ^. As long as you have a % to an object, the object will stay alive in memory.  
+-   A native reference (`&`) is the result when you dereference a `*`. A tracking reference (`%`) is the result when you dereference a `^`. As long as you have a `%` to an object, the object will stay alive in memory.  
   
 -   The dot (`.`) member-access operator is used to access a member of the object.  
   
 -   Tracking references are valid for value types and handles (for example `String^`).  
   
--   A tracking reference cannot be assigned a null or `nullptr` value. A tracking reference may be reassigned to another valid object as many times as required.  
+-   A tracking reference cannot be assigned a null or **nullptr** value. A tracking reference may be reassigned to another valid object as many times as required.  
   
 -   A tracking reference cannot be used as a unary take-address operator.  
   
@@ -42,7 +42,6 @@ Foo^ spFoo2 = %srFoo;
  The following example shows how to pass a ^ to a function that takes a %.  
   
 ```  
-  
 ref class Foo sealed {};  
   
     // internal or private  
@@ -72,11 +71,10 @@ ref class Foo sealed {};
 -   [How to: Use Tracking References in C++/CLI](../dotnet/how-to-use-tracking-references-in-cpp-cli.md)
   
 ### Examples  
- **Example**  
   
  The following sample for C++/CLI shows how to use a tracking reference with native and managed types.  
   
-```  
+```cpp  
 // tracking_reference_1.cpp  
 // compile with: /clr  
 ref class MyClass {  
@@ -110,14 +108,11 @@ int main() {
   
    delete[] pi;  
 }  
-  
 ```  
-  
- **Example**  
   
  The following sample for C++/CLI shows how to bind a tracking reference to an array.  
   
-```  
+```cpp  
 // tracking_reference_2.cpp  
 // compile with: /clr  
 using namespace System;  
