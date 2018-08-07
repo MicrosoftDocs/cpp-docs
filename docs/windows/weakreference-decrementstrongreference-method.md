@@ -22,9 +22,9 @@ ULONG DecrementStrongReference();
 ```  
   
 ## Remarks  
- Decrements the strong reference count of the current WeakReference object.  
+ Decrements the strong reference count of the current **WeakReference** object.  
   
- When the strong reference count becomes zero, the strong reference is set to `nullptr`.  
+ When the strong reference count becomes zero, the strong reference is set to **nullptr**.  
   
 ## Return Value  
  The decremented strong reference count.  
@@ -35,5 +35,5 @@ ULONG DecrementStrongReference();
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
-[WeakReference Class](../windows/weakreference-class1.md)  
+ [WeakReference Class](../windows/weakreference-class1.md)  
  [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

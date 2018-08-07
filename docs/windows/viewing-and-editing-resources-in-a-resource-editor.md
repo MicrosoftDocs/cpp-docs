@@ -23,7 +23,7 @@ Each resource type has a Resource editor specific to that resource type. You can
 ## Win32 Resources  
  You can access Win32 resources in the [Resource View](../windows/resource-view-window.md) pane.  
   
-#### To view a Win32 resource in a resource editor  
+### To view a Win32 resource in a resource editor  
   
 1.  Select **Resource View** from the **View** menu.  
   
@@ -40,9 +40,9 @@ Each resource type has a Resource editor specific to that resource type. You can
   
      You can also [view resources in an .rc (resource script) file without having a project open](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).  
   
-#### To delete an existing Win 32 resource  
+### To delete an existing Win 32 resource  
   
-1.  In Resource View, expand the node for a resource type.  
+1.  In **Resource View**, expand the node for a resource type.  
   
 2.  Right-click on the resource you want to delete and choose **Delete** from the shortcut menu.  
   
@@ -52,21 +52,20 @@ Each resource type has a Resource editor specific to that resource type. You can
 ## Resources in Managed Projects  
  Because managed projects do not use resource script files, you must open your resources from **Solution Explorer**. You can use the [Image editor](../windows/image-editor-for-icons.md) and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
-#### To view a managed resource in a resource editor  
+### To view a managed resource in a resource editor  
   
-1.  In Solution Explorer, double-click the resource, for example, Bitmap1.bmp.  
+1.  In **Solution Explorer**, double-click the resource, for example, Bitmap1.bmp.  
   
      The resource opens in the appropriate editor.  
   
-#### To delete an existing managed resource  
+### To delete an existing managed resource  
   
-1.  In Solution Explorer, right-click the resource you want to delete and choose **Delete** from the shortcut menu.  
+1.  In **Solution Explorer**, right-click the resource you want to delete and choose **Delete** from the shortcut menu.  
   
 ### Requirements  
  None  
   
 ## See Also  
  [Resource Editors](../windows/resource-editors.md)
-

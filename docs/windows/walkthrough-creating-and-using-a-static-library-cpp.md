@@ -31,15 +31,15 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
 ##  <a name="CreateLibProject"></a> Creating a static library project  
   
-#### To create a static library project  
+### To create a static library project  
   
-1.  On the menu bar, choose **File**, **New**, **Project**.  
+1.  On the menu bar, choose **File** > **New** > **Project**.  
   
 2. In the left pane of the **New Project** dialog box, expand **Installed, Visual C++**, and then select **Windows Desktop**.
   
 3. In the center pane, select **Windows Desktop Wizard**.  
   
-4.  Specify a name for the project—for example, **MathFuncsLib**—in the **Name** box. Specify a name for the solution—for example, **StaticLibrary**—in the **Solution Name** box. Choose the **OK** button.  
+4.  Specify a name for the project—for example, *MathFuncsLib*—in the **Name** box. Specify a name for the solution—for example, *StaticLibrary*—in the **Solution Name** box. Choose the **OK** button.  
   
 5. Under **Application type**, select Static Library (.lib).  
   
@@ -49,36 +49,36 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
  
 ##  <a name="AddClassToLib"></a> Adding a class to the static library  
   
-#### To add a class to the static library  
+### To add a class to the static library  
   
-1.  To create a header file for a new class, open the shortcut menu for the **MathFuncsLib** project in **Solution Explorer**, and then choose **Add**, **New Item**. In the **Add New Item** dialog box, in the left pane, under **Visual C++**, select **Code**. In the center pane, select **Header File (.h)**. Specify a name for the header file—for example, **MathFuncsLib.h**—and then choose the **Add** button. A blank header file is displayed.  
+1.  To create a header file for a new class, open the shortcut menu for the **MathFuncsLib** project in **Solution Explorer**, and then choose **Add**, **New Item**. In the **Add New Item** dialog box, in the left pane, under **Visual C++**, select **Code**. In the center pane, select **Header File (.h)**. Specify a name for the header file—for example, *MathFuncsLib.h*—and then choose the **Add** button. A blank header file is displayed.  
   
 2.  Add a class named **MyMathFuncs** to do common mathematical operations such as addition, subtraction, multiplication, and division. The code should resemble this:  
   
      [!code-cpp[NVC_Walkthrough_Create_Static_Lib#100](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_1.h)]  
   
-3.  To create a source file for the new class, open the shortcut menu for the **MathFuncsLib** project in **Solution Explorer**, and then choose **Add**, **New Item**. In the **Add New Item** dialog box, in the left pane, under **Visual C++**, select **Code**. In the center pane, select **C++ File (.cpp)**. Specify a name for the source file—for example, **MathFuncsLib.cpp**—and then choose the **Add** button. A blank source file is displayed.  
+3.  To create a source file for the new class, open the shortcut menu for the **MathFuncsLib** project in **Solution Explorer**, and then choose **Add**, **New Item**. In the **Add New Item** dialog box, in the left pane, under **Visual C++**, select **Code**. In the center pane, select **C++ File (.cpp)**. Specify a name for the source file—for example, *MathFuncsLib.cpp*—and then choose the **Add** button. A blank source file is displayed.  
   
 4.  Use this source file to implement the functionality for **MyMathFuncs**. The code should resemble this:  
   
      [!code-cpp[NVC_Walkthrough_Create_Static_Lib#110](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_2.cpp)]  
   
-5.  Compile the static library by selecting **Build**, **Build Solution** on the menu bar. This creates a static library that can be used by other programs.  
+5.  Compile the static library by selecting **Build** > **Build Solution** on the menu bar. This creates a static library that can be used by other programs.  
   
     > [!NOTE]
-    >  When you build on the Visual Studio command line, you must build the program in two steps. First, run **cl /c /EHsc MathFuncsLib.cpp** to compile the code and create an object file that's named **MathFuncsLib.obj**. (The **cl** command invokes the compiler, Cl.exe, and the **/c** option specifies compile without linking. For more information, see [/c (Compile Without Linking)](../build/reference/c-compile-without-linking.md).) Second, run **lib MathFuncsLib.obj** to link the code and create the static library **MathFuncsLib.lib**. (The **lib** command invokes the Library Manager, Lib.exe. For more information, see [LIB Reference](../build/reference/lib-reference.md).)  
+    >  When you build on the Visual Studio command line, you must build the program in two steps. First, run `cl /c /EHsc MathFuncsLib.cpp` to compile the code and create an object file that's named **MathFuncsLib.obj**. (The `cl` command invokes the compiler, Cl.exe, and the `/c` option specifies compile without linking. For more information, see [/c (Compile Without Linking)](../build/reference/c-compile-without-linking.md).) Second, run **lib MathFuncsLib.obj** to link the code and create the static library **MathFuncsLib.lib**. (The `lib` command invokes the Library Manager, Lib.exe. For more information, see [LIB Reference](../build/reference/lib-reference.md).)  
   
 ##  <a name="CreateAppToRefTheLib"></a> Creating a C++ console app that references the static library  
   
-#### To create a C++ console app that references the static library  
+### To create a C++ console app that references the static library  
   
-1.  On the menu bar, choose **File**, **New**, **Project**.  
+1.  On the menu bar, choose **File** > **New** > **Project**.  
   
 2. In the left pane of the **New Project** dialog box, expand **Installed, Visual C++**, and then select **Windows Desktop**.  
 
 3. In the center pane, select **Windows Desktop Wizard**.  
   
-4.  Specify a name for the project—for example, **MyExecRefsLib**—in the **Name** box. In the drop-down list next to **Solution**, select **Add to Solution**. This adds the new project to the solution that contains the static library. Choose the **OK** button.  
+4.  Specify a name for the project—for example, *MyExecRefsLib*—in the **Name** box. In the drop-down list next to **Solution**, select **Add to Solution**. This adds the new project to the solution that contains the static library. Choose the **OK** button.  
 5. Under **Application type**, select **Console Application (.exe)**.
 
 6. Under **Additioal Options**, un-check the **Precompiled header** check box.
@@ -87,11 +87,11 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
 ##  <a name="UseLibInApp"></a> Using the functionality from the static library in the app  
   
-#### To use the functionality from the static library in the app  
+### To use the functionality from the static library in the app  
   
 1.  After you create a console app, an empty program is created for you. The name for the source file is the same as the name that you chose earlier. In this example, it's named **MyExecRefsLib.cpp**.  
   
-2.  Before you can use the math routines in the static library, you must reference it. To do this, open the shortcut menu for the MyExecRefsLib project in **Solution Explorer**, and then choose **Add, Reference**.  
+2.  Before you can use the math routines in the static library, you must reference it. To do this, open the shortcut menu for the MyExecRefsLib project in **Solution Explorer**, and then choose **Add** > **Reference**.  
   
 3.  The **Add Reference** dialog box lists the libraries that you can reference. The **Projects** tab lists the projects in the current solution and any libraries that they contain. On the **Projects** tab, select the **MathFuncsLib** check box, and then choose the **OK** button.  
   
@@ -103,15 +103,15 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
      [!code-cpp[NVC_Walkthrough_Create_Static_Lib#120](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_3.cpp)]  
   
-6.  Build the executable by choosing **Build**, **Build Solution** on the menu bar.  
+6.  Build the executable by choosing **Build** > **Build Solution** on the menu bar.  
   
 ##  <a name="RunApp"></a> Running the app  
   
-#### To run the app  
+### To run the app  
   
 1.  Make sure that **MyExecRefsLib** is selected as the default project by opening the shortcut menu for **MyExecRefsLib** in **Solution Explorer**, and then choosing **Set as StartUp Project**.  
   
-2.  To run the project, on the menu bar, choose **Debug**, **Start Without Debugging**. The output should resemble this:  
+2.  To run the project, on the menu bar, choose **Debug** > **Start Without Debugging**. The output should resemble this:  
   
     ```Output  
     a + b = 106.4  

@@ -18,25 +18,24 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 ## Syntax  
   
 ```  
-  
 STDMETHOD(Resolve)  
    (REFIID riid,   
    _Deref_out_opt_ IInspectable **ppvObject  
 );  
 ```  
   
-#### Parameters  
- `riid`  
+### Parameters  
+ *riid*  
  An interface ID.  
   
- `ppvObject`  
- When this operation completes,  a copy of the current strong reference if the strong reference count is nonzero.  
+ *ppvObject*  
+ When this operation completes, a copy of the current strong reference if the strong reference count is nonzero.  
   
 ## Return Value  
   
--   S_OK if this operation is successful and the strong reference count is zero. The `ppvObject` parameter is set to `nullptr`.  
+-   S_OK if this operation is successful and the strong reference count is zero. The *ppvObject* parameter is set to **nullptr**.  
   
--   S_OK if this operation is successful and the strong reference count is nonzero. The `ppvObject` parameter is set to the strong reference.  
+-   S_OK if this operation is successful and the strong reference count is nonzero. The *ppvObject* parameter is set to the strong reference.  
   
 -   Otherwise, an HRESULT that indicates the reason this operation failed.  
   

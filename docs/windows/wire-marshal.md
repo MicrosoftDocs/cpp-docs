@@ -18,9 +18,7 @@ Specifies a data type that will be used for transmission instead of an applicati
 ## Syntax  
   
 ```  
-  
 [wire_marshal]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Specifies a data type that will be used for transmission instead of an applicati
 ## Example  
  The following code shows a use of **wire_marshal**:  
   
-```  
+```cpp  
 // cpp_attr_ref_wire_marshal.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -51,7 +49,7 @@ Specifies a data type that will be used for transmission instead of an applicati
   
 |||  
 |-|-|  
-|**Applies to**|`typedef`|  
+|**Applies to**|**typedef**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -60,4 +58,4 @@ Specifies a data type that will be used for transmission instead of an applicati
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   

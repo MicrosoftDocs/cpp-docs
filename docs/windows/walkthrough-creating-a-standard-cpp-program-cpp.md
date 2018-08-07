@@ -20,7 +20,7 @@ You can use Visual C++ in the Visual Studio integrated development environment (
  Visual C++ complies with the 2003 C++ Standard, with these major exceptions: two-stage name lookup, exception specifications, and export. Additionally, Visual C++ supports several C++0x features, for example, lambdas, auto, static_assert, rvalue references, and extern templates.  
   
 > [!NOTE]
->  If compliance with the standard is required, use the **/Za** compiler option to disable Microsoft extensions to the standard. For more information, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md).  
+>  If compliance with the standard is required, use the `/Za` compiler option to disable Microsoft extensions to the standard. For more information, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md).  
   
 ## Prerequisites  
  To complete this walkthrough, you must understand the fundamentals of the C++ language.  
