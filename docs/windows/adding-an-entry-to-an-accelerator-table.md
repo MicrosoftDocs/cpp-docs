@@ -30,12 +30,9 @@ ms.workload: ["cplusplus", "uwp"]
 6.  Press **ENTER**.  
   
     > [!NOTE]
-    >  Make sure all accelerators you define are unique. You can have several key combinations assigned to the same ID with no ill effect, for example, CTRL + P and F8 can both be assigned to ID_PRINT. However, having a key combination assigned to more than one ID will not work well, for example, CTRL + Z assigned to both ID_SPELL_CHECK and ID_THESAURUS.  
+    >  Make sure all accelerators you define are unique. You can have several key combinations assigned to the same ID with no ill effect, for example, **Ctrl** + **P** and **F8** can both be assigned to ID_PRINT. However, having a key combination assigned to more than one ID will not work well, for example, **Ctrl** + **Z** assigned to both ID_SPELL_CHECK and ID_THESAURUS.  
   
-
-  
- **Requirements**  
-  
+## Requirements  
  Win32  
   
 ## See Also  

@@ -17,13 +17,13 @@ Retrieves an array of implemented interface IDs.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    GetIids  
 )(_Out_ ULONG *iidCount, _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);  
 ```  
   
-#### Parameters  
+### Parameters  
  *iidCount*  
  When this operation completes, the number of interace IDs in the *iids* array.  
   

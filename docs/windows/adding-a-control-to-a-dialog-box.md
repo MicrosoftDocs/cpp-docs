@@ -23,22 +23,20 @@ ms.workload: ["cplusplus", "uwp"]
   
          \- or -  
   
-    -   Drag and drop the control from the Toolbox window to the location on your dialog box. For more information, see [Sizing a Control While You Add It](../windows/sizing-a-control-while-you-add-it.md).  
+    -   Drag and drop the control from the **Toolbox** window to the location on your dialog box. For more information, see [Sizing a Control While You Add It](../windows/sizing-a-control-while-you-add-it.md).  
   
          \- or -  
   
-    -   Double-click the control in the Toolbox window (it appears on your dialog box) then reposition the control to the location you prefer.  
+    -   Double-click the control in the **Toolbox** window (it appears on your dialog box) then reposition the control to the location you prefer.  
   
- For information about the types of controls available on the Toolbox window, see [Dialog Editor Tab, Toolbox Window](../windows/dialog-editor-tab-toolbox.md).  
+ For information about the types of controls available on the **Toolbox** window, see [Dialog Editor Tab, Toolbox Window](../windows/dialog-editor-tab-toolbox.md).  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
-
