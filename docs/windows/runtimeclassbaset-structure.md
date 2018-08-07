@@ -23,8 +23,8 @@ template <
 friend struct Details::RuntimeClassBaseT;  
 ```  
   
-#### Parameters  
- `RuntimeClassTypeT`  
+### Parameters  
+ *RuntimeClassTypeT*  
  A field of flags that specifies one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.  
   
 ## Remarks  
@@ -41,5 +41,5 @@ friend struct Details::RuntimeClassBaseT;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Reference (Windows Runtime Library)](http://msdn.microsoft.com/en-us/00000000-0000-0000-0000-000000000000)   
+ [Reference (Windows Runtime Library)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)   
  [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

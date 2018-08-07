@@ -26,18 +26,18 @@ inline bool SafeAdd (
 ) throw ();  
 ```  
   
-#### Parameters  
- [in] `t`  
+### Parameters  
+ [in] *t*  
  The first number to add. This must be of type T.  
   
- [in] `u`  
+ [in] *u*  
  The second number to add. This must be of type U.  
   
- [out] `result`  
- The parameter where `SafeAdd` stores the result.  
+ [out] *result*  
+ The parameter where **SafeAdd** stores the result.  
   
 ## Return Value  
- `true` if no error occurs; `false` if an error occurs.  
+ **true** if no error occurs; **false** if an error occurs.  
   
 ## Remarks  
  This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single addition operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  

@@ -32,9 +32,7 @@ You can save and load a Colors palette that contains [customized colors](../wind
   
 2.  In the [Load Color Palette dialog box](../windows/load-palette-colors-dialog-box-image-editor-for-icons.md), navigate to the correct directory and select the palette you want to load. Color palettes are saved with a .pal file extension.  
   
-
-  
- Requirements  
+## Requirements  
   
  None  
   

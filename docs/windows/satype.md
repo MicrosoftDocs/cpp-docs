@@ -13,20 +13,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # satype
-Specifies the data type of the **SAFEARRAY** structure.  
+Specifies the data type of the `SAFEARRAY` structure.  
   
 ## Syntax  
   
 ```  
-  
-      [ satype(  
+[ satype(  
    data_type  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *data_type*  
- The data type for the **SAFEARRAY** data structure that is being passed as a parameter to an interface method.  
+ The data type for the `SAFEARRAY` data structure that is being passed as a parameter to an interface method.  
   
 ## Requirements  
   
@@ -40,14 +39,14 @@ Specifies the data type of the **SAFEARRAY** structure.
 |**Invalid attributes**|None|  
   
 ## Remarks  
- The **satype** C++ attribute specifies the data type of the **SAFEARRAY**.  
+ The **satype** C++ attribute specifies the data type of the `SAFEARRAY`.  
   
 > [!NOTE]
->  A level of indirection is dropped from the **SAFEARRAY** pointer in the generated .idl file from how it is declared in the .cpp file.  
+>  A level of indirection is dropped from the `SAFEARRAY` pointer in the generated .idl file from how it is declared in the .cpp file.  
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_satype.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -62,4 +61,4 @@ __interface A {
  [Compiler Attributes](../windows/compiler-attributes.md)   
  [Parameter Attributes](../windows/parameter-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [id](../windows/id.md)   
+ [id](../windows/id.md)   
