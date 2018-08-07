@@ -17,13 +17,13 @@ Enables a [local](../windows/local-cpp.md) function to be mapped to a remote fun
   
 ## Syntax  
   
-```  
+```cpp  
 [ call_as(  
    function  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *function*  
  The local function that you want to be called when a remote function is invoked.  
   
@@ -31,7 +31,7 @@ Enables a [local](../windows/local-cpp.md) function to be mapped to a remote fun
  The **call_as** C++ attribute has the same functionality as the [call_as](http://msdn.microsoft.com/library/windows/desktop/aa366748) MIDL attribute.  
   
 ## Example  
- The following code shows how you can use **call_as** to map a nonremotable function (**f1**) to a remotable function (**Remf1**):  
+ The following code shows how you can use **call_as** to map a nonremotable function (`f1`) to a remotable function (`Remf1`):  
   
 ```cpp  
 // cpp_attr_ref_call_as.cpp  
