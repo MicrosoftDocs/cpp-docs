@@ -17,13 +17,13 @@ Indicates whether the specified error code can modify the internal error state.
   
 ## Syntax  
   
-```  
+```cpp  
 bool TryTransitionToError(  
    const HRESULT error  
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *error*  
  An error HRESULT.  
   

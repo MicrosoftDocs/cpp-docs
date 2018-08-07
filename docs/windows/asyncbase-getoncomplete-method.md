@@ -17,13 +17,13 @@ Copies the address of the current completion event handler to the specified vari
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    GetOnComplete  
 )(TComplete** completeHandler);  
 ```  
   
-#### Parameters  
+### Parameters  
  *completeHandler*  
  The location where the address of the current completion event handler is stored.  
   

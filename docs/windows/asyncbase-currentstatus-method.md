@@ -17,13 +17,13 @@ Retrieves the status of the current asynchronous operation.
   
 ## Syntax  
   
-```  
+```cpp  
 inline void CurrentStatus(  
    Details::AsyncStatusInternal *status  
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *status*  
  The location where this operation stores the current status.  
   

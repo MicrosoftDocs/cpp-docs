@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 struct BoolStruct;  
 ```  
   
 ## Remarks  
- The BoolStruct structure defines whether a ComPtr is managing the object lifetime of an interface. BoolStruct is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.  
+ The **BoolStruct** structure defines whether a `ComPtr` is managing the object lifetime of an interface. **BoolStruct** is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.  
   
 ## Members  
   

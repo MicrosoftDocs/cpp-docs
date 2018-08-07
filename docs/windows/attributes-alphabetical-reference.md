@@ -106,7 +106,7 @@ The following attributes are available in Visual C++.
 |[satype](../windows/satype.md)|Specifies the data type of the `SAFEARRAY`.|  
 |[size_is](../windows/size-is.md)|Specifies the size of memory allocated for sized pointers, sized pointers to sized pointers, and single- or multidimensional arrays.|  
 |[source](../windows/source-cpp.md)|Indicates that a member of a class, property, or method is a source of events.|  
-|[string](../windows/string-cpp.md)|Indicates that the one-dimensional **char**, **wchar_t**, **byte**, or equivalent array or the pointer to such an array must be treated as a string.|  
+|[string](../windows/string-cpp.md)|Indicates that the one-dimensional **char**, **wchar_t**, `byte`, or equivalent array or the pointer to such an array must be treated as a string.|  
 |[support_error_info](../windows/support-error-info.md)|Supports error reporting for the target object.|  
 |[switch_is](../windows/switch-is.md)|Specifies the expression or identifier acting as the union discriminant that selects the union member.|  
 |[switch_type](../windows/switch-type.md)|Identifies the type of the variable used as the union discriminant.|  
