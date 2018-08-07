@@ -13,12 +13,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding Values to a Combo Box Control
-You can add values to a combo box control as long as you have the Dialog editor open.  
+You can add values to a combo box control as long as you have the **Dialog** editor open.  
   
 > [!TIP]
->  It's a good idea to add all values to the combo box *before* you size the box in the Dialog editor, or you may truncate text that should appear in the combo control.  
+>  It's a good idea to add all values to the combo box *before* you size the box in the **Dialog** editor, or you may truncate text that should appear in the combo control.  
   
-#### To enter values into a combo box control  
+### To enter values into a combo box control  
   
 1.  Select the combo box control by clicking on it.  
   
@@ -39,20 +39,19 @@ You can add values to a combo box control as long as you have the Dialog editor 
 > [!NOTE]
 >  You cannot add values to Win32 projects using this procedure (the **Data** property is grayed out for Win32 projects). Because Win32 projects do not have libraries that add this capability, you must add values to a combo box with a Win32 project programmatically.  
   
-#### To test the appearance of values in a combo box  
+### To test the appearance of values in a combo box  
   
 1.  After entering values in the **Data** property, click the **Test** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  
   
-     Try scrolling down the entire value list. Values appear exactly as they are typed in the **Data** property in the Properties window. There is no spelling or capitalization checking.  
+     Try scrolling down the entire value list. Values appear exactly as they are typed in the **Data** property in the **Properties** window. There is no spelling or capitalization checking.  
   
-     Press ESC to return to the Dialog box editor.  
+     Press **Esc** to return to the **Dialog box** editor.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
-### Requirements  
+## Requirements  
  Win32  
   
 ## See Also  
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
-
