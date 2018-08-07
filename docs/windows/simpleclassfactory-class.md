@@ -22,14 +22,14 @@ template<typename Base>
 class SimpleClassFactory : public ClassFactory<>;  
 ```  
   
-#### Parameters  
- `Base`  
+### Parameters  
+ *Base*  
  A base class.  
   
 ## Remarks  
  The base class must provide a default constructor.  
   
- The following code example demonstrates how to use SimpleClassFactory with the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro.  
+ The following code example demonstrates how to use **SimpleClassFactory** with the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro.  
   
  `ActivatableClassWithFactoryEx(MyClass, SimpleClassFactory, MyServerName);`  
   

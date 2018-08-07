@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SemaphoreTraits Structure
-Defines common characteristics of a Semaphore object.  
+Defines common characteristics of a **Semaphore** object.  
   
 ## Syntax  
   
