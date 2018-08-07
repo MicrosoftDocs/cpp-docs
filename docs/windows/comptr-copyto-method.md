@@ -17,7 +17,7 @@ Copies the current or specified interface associated with this **ComPtr** to the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CopyTo(  
    _Deref_out_ InterfaceType** ptr  
 );  
@@ -33,7 +33,7 @@ HRESULT CopyTo(
 ) const;  
 ```  
   
-#### Parameters  
+### Parameters  
  *U*  
  A type name.  
   

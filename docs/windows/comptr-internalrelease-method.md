@@ -17,7 +17,7 @@ Performs a COM Release operation on the interface associated with this **ComPtr*
   
 ## Syntax  
   
-```  
+```cpp  
 void InternalRelease();  
 ```  
   

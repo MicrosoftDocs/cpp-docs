@@ -17,14 +17,14 @@ Returns a **ComPtr** object that represents the interface identified by the spec
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW HRESULT AsIID(  
    REFIID riid,  
    _Out_ ComPtr<IUnknown>* p  
 ) const;  
 ```  
   
-#### Parameters  
+### Parameters  
  *riid*  
  An interface ID.  
   

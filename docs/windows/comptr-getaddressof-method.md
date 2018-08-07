@@ -17,7 +17,7 @@ Retrieves the address of the [ptr_](../windows/comptr-ptr-data-member.md) data m
   
 ## Syntax  
   
-```  
+```cpp  
 T* const* GetAddressOf() const;  
 T** GetAddressOf();  
 ```  

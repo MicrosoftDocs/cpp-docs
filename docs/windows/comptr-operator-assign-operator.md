@@ -17,7 +17,7 @@ Assigns a value to the current **ComPtr**.
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW ComPtr& operator=(  
    decltype(__nullptr)  
 );  
@@ -44,7 +44,7 @@ WRL_NOTHROW ComPtr& operator=(
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *U*  
  A class.  
   

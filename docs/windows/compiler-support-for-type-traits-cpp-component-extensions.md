@@ -16,7 +16,7 @@ ms.workload: ["cplusplus", "uwp"]
 The compiler supports *type traits*, which indicate various characteristics of a type at compile time.  
   
 ## All Runtimes  
- **Remarks**  
+### Remarks  
   
  Type traits are especially useful to programmers who write libraries.  
   
@@ -26,9 +26,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_assign(` `type` `)`  
   
-     Returns true if the platform or native type has a copy assignment operator.  
+     Returns **true** if the platform or native type has a copy assignment operator.  
   
-    ```  
+    ```cpp  
     ref struct R {  
     void operator=(R% r) {}  
     };  
@@ -40,9 +40,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_copy(` `type` `)`  
   
-     Returns true if the platform or native type has a copy constructor.  
+     Returns **true** if the platform or native type has a copy constructor.  
   
-    ```  
+    ```cpp  
     ref struct R {  
     R(R% r) {}  
     };  
@@ -54,9 +54,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_finalizer(` `type` `)`  
   
-     (Not supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)].) Returns true if the CLR type has a finalizer. See [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.  
+     (Not supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)].) Returns **true** if the CLR type has a finalizer. See [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.  
   
-    ```  
+    ```cpp  
     using namespace System;  
     ref struct R {  
     ~R() {}  
@@ -71,9 +71,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_nothrow_assign(` `type` `)`  
   
-     Returns true if a copy assignment operator has an empty exception specification.  
+     Returns **true** if a copy assignment operator has an empty exception specification.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     void operator=(S& r) throw() {}  
@@ -87,9 +87,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_nothrow_constructor(` `type` `)`  
   
-     Returns true if the default constructor has an empty exception specification.  
+     Returns **true** if the default constructor has an empty exception specification.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     S() throw() {}  
@@ -103,9 +103,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_nothrow_copy(` `type` `)`  
   
-     Returns true if the copy constructor has an empty exception specification.  
+     Returns **true** if the copy constructor has an empty exception specification.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     S(S& r) throw() {}  
@@ -119,9 +119,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_trivial_assign(` `type` `)`  
   
-     Returns true if the type has a trivial, compiler-generated assignment operator.  
+     Returns **true** if the type has a trivial, compiler-generated assignment operator.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
   
@@ -133,9 +133,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_trivial_constructor(` `type` `)`  
   
-     Returns true if the type has a trivial, compiler-generated constructor.  
+     Returns **true** if the type has a trivial, compiler-generated constructor.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
   
@@ -147,9 +147,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_trivial_copy(` `type` `)`  
   
-     Returns true if the type has a trivial, compiler-generated copy constructor.  
+     Returns **true** if the type has a trivial, compiler-generated copy constructor.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
   
@@ -161,7 +161,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_trivial_destructor(` `type` `)`  
   
-     Returns true if the type has a trivial, compiler-generated destructor.  
+     Returns **true** if the type has a trivial, compiler-generated destructor.  
   
     ``` cpp 
     // has_trivial_destructor.cpp  
@@ -176,7 +176,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_user_destructor(` `type` `)`  
   
-     Returns true if the platform or native type has a user-declared destructor.  
+     Returns **true** if the platform or native type has a user-declared destructor.  
   
     ```cpp
     // has_user_destructor.cpp  
@@ -193,7 +193,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_virtual_destructor(` `type` `)`  
   
-     Returns true if the type has a virtual destructor.  
+     Returns **true** if the type has a virtual destructor.  
   
      `__has_virtual_destructor` also works on platform types, and any user-defined destructor in a platform type is a virtual destructor.  
   
@@ -212,7 +212,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_abstract(` `type` `)`  
   
-     Returns true if the type is an abstract type. For more information on native abstract types, see [abstract](../windows/abstract-cpp-component-extensions.md).  
+     Returns **true** if the type is an abstract type. For more information on native abstract types, see [abstract](../windows/abstract-cpp-component-extensions.md).  
   
      `__is_abstract` also works for platform types. An interface with at least one member is an abstract type, as is a reference type with at least one abstract member. For more information on abstract platform types, see [Abstract Classes](../cpp/abstract-classes-cpp.md)  
   
@@ -231,9 +231,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_base_of(` `base` `,` `derived` `)`  
   
-     Returns true if the first type is a base class of the second type, of if both types are the same.  
+     Returns **true** if the first type is a base class of the second type, of if both types are the same.  
   
-     `__is_base_of` also works on platform types. For example, it will return true if the first type is an [interface class](../windows/interface-class-cpp-component-extensions.md) and the second type implements the interface.  
+     `__is_base_of` also works on platform types. For example, it will return **true** if the first type is an [interface class](../windows/interface-class-cpp-component-extensions.md) and the second type implements the interface.  
   
     ```cpp
     // is_base_of.cpp  
@@ -252,9 +252,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_class(` `type` `)`  
   
-     Returns true if the type is a native class or struct.  
+     Returns **true** if the type is a native class or struct.  
   
-    ```
+    ```cpp
     #include <stdio.h>  
     struct S {};  
   
@@ -266,9 +266,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_convertible_to(` `from` `,`  `to` `)`  
   
-     Returns true if the first type can be converted to the second type.  
+     Returns **true** if the first type can be converted to the second type.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
     struct T : public S {};  
@@ -284,9 +284,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_delegate(` `type` `)`  
   
-     Returns true if `type` is a delegate. For more information, see [delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md).  
+     Returns **true** if `type` is a delegate. For more information, see [delegate  (C++ Component Extensions)](../windows/delegate-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     delegate void MyDel();  
     int main() {  
     System::Console::WriteLine(__is_delegate(MyDel));  
@@ -295,9 +295,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_empty(` `type` `)`  
   
-     Returns true if the type has no instance data members.  
+     Returns **true** if the type has no instance data members.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     int Test() {}  
@@ -311,7 +311,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_enum(` `type` `)`  
   
-     Returns true if the type is a native enum.  
+     Returns **true** if the type is a native enum.  
   
     ```cpp
     // is_enum.cpp  
@@ -333,7 +333,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_interface_class(` `type` `)`  
   
-     Returns true if passed a platform interface. For more information, see [interface class](../windows/interface-class-cpp-component-extensions.md).  
+     Returns **true** if passed a platform interface. For more information, see [interface class](../windows/interface-class-cpp-component-extensions.md).  
   
     ```cpp
     // is_interface_class.cpp  
@@ -347,11 +347,11 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_pod(` `type` `)`  
   
-     Returns true if the type is a class or union with no constructor or private or protected non-static members, no base classes, and no virtual functions. See the C++ standard, sections 8.5.1/1, 9/4, and 3.9/10 for more information on PODs.  
+     Returns **true** if the type is a class or union with no constructor or private or protected non-static members, no base classes, and no virtual functions. See the C++ standard, sections 8.5.1/1, 9/4, and 3.9/10 for more information on PODs.  
   
      `__is_pod` will return false on fundamental types.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {};  
   
@@ -363,9 +363,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_polymorphic(` `type` `)`  
   
-     Returns true if a native type has virtual functions.  
+     Returns **true** if a native type has virtual functions.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     struct S {  
     virtual void Test(){}  
@@ -379,9 +379,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_ref_array(` `type` `)`  
   
-     Returns true if passed a platform array. For more information, see [Arrays](../windows/arrays-cpp-component-extensions.md).  
+     Returns **true** if passed a platform array. For more information, see [Arrays](../windows/arrays-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     using namespace System;  
     int main() {  
     array<int>^ x = gcnew array<int>(10);  
@@ -391,9 +391,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_ref_class(` `type` `)`  
   
-     Returns true if passed a reference class. For more information on user-defined reference types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).  
+     Returns **true** if passed a reference class. For more information on user-defined reference types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     using namespace System;  
     ref class R {};  
     int main() {  
@@ -404,9 +404,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_sealed(` `type` `)`  
   
-     Returns true if passed a platform or native type marked sealed. For more information, see [sealed](../windows/sealed-cpp-component-extensions.md).  
+     Returns **true** if passed a platform or native type marked sealed. For more information, see [sealed](../windows/sealed-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     ref class R sealed{};  
     int main() {  
     System::Console::WriteLine(__is_sealed(R));  
@@ -415,9 +415,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_simple_value_class(` `type` `)`  
   
-     Returns true if passed a value type that contains no references to the garbage-collected heap. For more information on user-defined value types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).  
+     Returns **true** if passed a value type that contains no references to the garbage-collected heap. For more information on user-defined value types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     using namespace System;  
     ref class R {};  
     value struct V {};  
@@ -433,9 +433,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_union(` `type` `)`  
   
-     Returns true if a type is a union.  
+     Returns **true** if a type is a union.  
   
-    ```  
+    ```cpp  
     #include <stdio.h>  
     union A {  
     int i;  
@@ -450,9 +450,9 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__is_value_class(` `type` `)`  
   
-     Returns true if passed a value type. For more information on user-defined value types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).  
+     Returns **true** if passed a value type. For more information on user-defined value types, see [Classes and Structs](../windows/classes-and-structs-cpp-component-extensions.md).  
   
-    ```  
+    ```cpp  
     value struct V {};  
   
     int main() {  
@@ -461,25 +461,25 @@ The compiler supports *type traits*, which indicate various characteristics of a
     ```  
   
 ## Windows Runtime  
- **Remarks**  
+### Remarks  
   
  The `__has_finalizer(`*type*`)` type trait is not supported because this platform does not support finalizers.  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- **Remarks**  
+### Remarks  
   
  (There are no platform-specific remarks for this feature.)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
  **Example**  
   
- The following code example shows how to use a class template to expose a compiler type trait for a **/clr** compilation. For more information, see [Windows Runtime and Managed Templates](../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md).  
+ The following code example shows how to use a class template to expose a compiler type trait for a `/clr` compilation. For more information, see [Windows Runtime and Managed Templates](../windows/windows-runtime-and-managed-templates-cpp-component-extensions.md).  
   
 ```cpp  
 // compiler_type_traits.cpp  
@@ -500,8 +500,6 @@ int main () {
       Console::WriteLine("R is not a ref class");  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 R is a ref class  

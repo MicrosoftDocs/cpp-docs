@@ -17,13 +17,13 @@ Increments or decrements the number of underlying objects that are tracked by th
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    LockServer  
 )(BOOL fLock);  
 ```  
   
-#### Parameters  
+### Parameters  
  *fLock*  
  **true** to increment the number of tracked objects. **false** to decrement the number of tracked objects.  
   
@@ -31,7 +31,7 @@ STDMETHOD(
  S_OK if successful; otherwise, E_FAIL.  
   
 ## Remarks  
- ClassFactory keeps track of objects in an underlying instance of the [Module](../windows/module-class.md) class.  
+ **ClassFactory** keeps track of objects in an underlying instance of the [Module](../windows/module-class.md) class.  
   
 ## Requirements  
  **Header:** module.h  

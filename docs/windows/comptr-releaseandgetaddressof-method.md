@@ -17,7 +17,7 @@ Releases the interface associated with this **ComPtr** and then retrieves the ad
   
 ## Syntax  
   
-```  
+```cpp  
 T** ReleaseAndGetAddressOf();  
 ```  
   
