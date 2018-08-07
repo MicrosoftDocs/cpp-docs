@@ -17,7 +17,7 @@ Implements the Windows Runtime asynchronous state machine.
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename TComplete,  
    typename TProgress = Details::Nil,  
@@ -32,7 +32,7 @@ template <
 class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Implements<IAsyncInfo>;  
 ```  
   
-#### Parameters  
+### Parameters  
  *TComplete*  
  An event handler that is called when an asynchronous operation completes.  
   
@@ -40,7 +40,7 @@ class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Im
  An event handler that is called when a running asynchronous operation reports the current progress of the operation.  
   
  *resultType*  
- One of the [AsyncResultType](../windows/asyncresulttype-enumeration.md) enumeration values. By default, SingleResult.  
+ One of the [AsyncResultType](../windows/asyncresulttype-enumeration.md) enumeration values. By default, `SingleResult`.  
   
 ## Members  
   

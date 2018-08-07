@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "uwp"]
 # Application Settings, Win 32 Project Wizard
 Use this page of the wizard to set options for the Win32 project.  
   
- **Application type**  
+## Application type  
  Creates the specified application type.  
   
 |Option|Description|  
@@ -25,7 +25,7 @@ Use this page of the wizard to set options for the Win32 project.
 |**DLL**|Creates a Win32 dynamic-link library (DLL). A Win32 DLL is a binary file, written in C or C++, that uses calls to the Win32 API rather than to MFC classes, and that acts as a shared library of functions that can be used simultaneously by multiple applications.<br /><br /> You cannot add MFC or ATL support to a DLL application. You can indicate that the DLL exports symbols.|  
 |**Static library**|Creates a static library. A static library is a file containing objects and their functions and data that links into your program when the executable file is built. This topic explains how to create the starter files and [project properties](../ide/property-pages-visual-cpp.md) for a static library. A static library file provides the following benefits:<br /><br /> -   A Win32 static library is useful if the application you are working on makes calls to the Win32 API rather than to MFC classes.<br />-   The linking process is the same whether the rest of your Windows application is written in C or in C++.<br />-   You can link a static library to an MFC-based program or to a non-MFC program.|  
   
- **Additional options**  
+## Additional options  
  Defines the support and options for the application, depending on its type.  
   
 |Option|Description|  
@@ -35,7 +35,7 @@ Use this page of the wizard to set options for the Win32 project.
 |**Precompiled header**|Specifies that the static library project uses a pre-compiled header.|  
 |Security Development Lifecycle (SDL) checks|For more information about SDL, see [Microsoft Security Development Lifecycle (SDL)  Process Guidance](../build/reference/sdl-enable-additional-security-checks.md)|  
   
- **Add support for**  
+## Add support for  
  Add support for one of the libraries supplied in Visual C++.  
   
 |Option|Description|  

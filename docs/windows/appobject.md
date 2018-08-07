@@ -17,7 +17,7 @@ Identifies the coclass as an application object, which is associated with a full
   
 ## Syntax  
   
-```  
+```cpp  
 [appobject]  
 ```  
   
