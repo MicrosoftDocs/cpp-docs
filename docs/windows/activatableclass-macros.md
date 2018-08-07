@@ -48,7 +48,7 @@ A name that specifies a subset of factories in the module.
 
 ## Remarks
 
-Do not use these macros with classic COM unless you use the `#undef` directive to ensure that the **&#95;&#95;WRL_WINRT_STRICT&#95;&#95;** macro definition is removed.
+Do not use these macros with classic COM unless you use the `#undef` directive to ensure that the `__WRL_WINRT_STRICT__` macro definition is removed.
 
 ## Requirements
 

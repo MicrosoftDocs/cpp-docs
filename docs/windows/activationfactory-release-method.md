@@ -17,7 +17,7 @@ Decrements the reference count of the current **ActivationFactory** object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD_(  
    ULONG,  
    Release  
