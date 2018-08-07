@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GenericReleaseNotifier::callback_ Data Member
-Holds the lambda, functor, or pointer-to-function event handler associated with the current Module::GenericReleaseNotifier object.  
+Holds the lambda, functor, or pointer-to-function event handler associated with the current `Module::GenericReleaseNotifier` object.  
   
 ## Syntax  
   

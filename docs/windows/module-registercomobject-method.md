@@ -27,20 +27,20 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
   
 ```  
   
-#### Parameters  
- `serverName`  
+### Parameters  
+ *serverName*  
  Fully-qualified name of a server.  
   
- `clsids`  
+ *clsids*  
  An array of CLSIDs to register.  
   
- `factories`  
+ *factories*  
  An array of IUnknown interfaces of the class objects whose availability is being published.  
   
- `cookies`  
+ *cookies*  
  When the operation completes, an array of pointers to values that identify the class objects that were registered. These values are later used revoke the registration.  
   
- `count`  
+ *count*  
  The number of CLSIDs to register.  
   
 ## Return Value  
@@ -49,7 +49,7 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 ## Remarks  
  The COM objects are registered with the CLSCTX_LOCAL_SERVER enumerator of the CLSCTX enumeration.  
   
- The type of connection to the registered objects is specified by a combination of the current `comflag` template parameter and the REGCLS_SUSPENDED enumerator of the REGCLS enumeration.  
+ The type of connection to the registered objects is specified by a combination of the current *comflag* template parameter and the REGCLS_SUSPENDED enumerator of the REGCLS enumeration.  
   
 ## Requirements  
  **Header:** module.h  

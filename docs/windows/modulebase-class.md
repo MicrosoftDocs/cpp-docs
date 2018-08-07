@@ -30,8 +30,8 @@ class ModuleBase;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ModuleBase::ModuleBase Constructor](../windows/modulebase-modulebase-constructor.md)|Initializes an instance of the Module class.|  
-|[ModuleBase::~ModuleBase Destructor](../windows/modulebase-tilde-modulebase-destructor.md)|Deinitializes the current instance of the Module class.|  
+|[ModuleBase::ModuleBase Constructor](../windows/modulebase-modulebase-constructor.md)|Initializes an instance of the `Module` class.|  
+|[ModuleBase::~ModuleBase Destructor](../windows/modulebase-tilde-modulebase-destructor.md)|Deinitializes the current instance of the `Module` class.|  
   
 ### Public Methods  
   
