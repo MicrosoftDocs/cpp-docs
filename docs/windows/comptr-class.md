@@ -17,7 +17,7 @@ Creates a *smart pointer* type that represents the interface specified by the te
   
 ## Syntax  
   
-```  
+```cpp  
 template <typename T>  
 class ComPtr;  
   
@@ -25,7 +25,7 @@ template<class T>
 friend class ComPtr;  
 ```  
   
-#### Parameters  
+### Parameters  
  *T*  
  The interface that the **ComPtr** represents.  
   

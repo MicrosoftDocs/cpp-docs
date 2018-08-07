@@ -17,7 +17,7 @@ Returns a **ComPtr** object that represents the interface identified by the spec
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename U>  
 HRESULT As(  
    _Out_ ComPtr<U>* p  
@@ -29,7 +29,7 @@ HRESULT As(
 ) const;  
 ```  
   
-#### Parameters  
+### Parameters  
  *U*  
  The interface to be represented by parameter *p*.  
   

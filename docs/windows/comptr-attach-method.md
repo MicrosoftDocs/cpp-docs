@@ -17,13 +17,13 @@ Associates this **ComPtr** with the interface type specified by the current temp
   
 ## Syntax  
   
-```  
+```cpp  
 void Attach(  
    _In_opt_ InterfaceType* other  
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *other*  
  An interface type.  
   

@@ -17,7 +17,7 @@ Exchanges the interface managed by the current **ComPtr** with the interface man
   
 ## Syntax  
   
-```  
+```cpp  
 void Swap(  
    _Inout_ ComPtr&& r  
 );  
@@ -27,7 +27,7 @@ void Swap(
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *r*  
  A **ComPtr**.  
   

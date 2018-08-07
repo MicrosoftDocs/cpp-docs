@@ -17,7 +17,7 @@ Indicates to the `RuntimeClass`, `Implements` and `ChainInterfaces` templates th
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T>  
 struct CloakedIid : T;  
 ```  
@@ -27,7 +27,7 @@ struct CloakedIid : T;
  The interface that is hidden (cloaked).  
   
 ## Remarks  
- The following is an example of how `CloakedIid` is used: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.  
+ The following is an example of how **CloakedIid** is used: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.  
   
 ## Inheritance Hierarchy  
  `T`  

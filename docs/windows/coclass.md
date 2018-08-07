@@ -17,7 +17,7 @@ Creates a COM object, which can implement a COM interface.
   
 ## Syntax  
   
-```  
+```cpp  
 [coclass]  
 ```  
   
@@ -66,7 +66,7 @@ Creates a COM object, which can implement a COM interface.
   
 -   An [OBJECT_ENTRY_AUTO](../atl/reference/object-map-macros.md#object_entry_auto) macro is inserted into the COM map.
   
- The name of the coclass generated in the .idl file for the class will have the same name as the class.  For example, and referring to the following sample, to access the class ID for a coclass CMyClass, in a client through the MIDL-generated header file, use CLSID_CMyClass.  
+ The name of the coclass generated in the .idl file for the class will have the same name as the class.  For example, and referring to the following sample, to access the class ID for a coclass `CMyClass`, in a client through the MIDL-generated header file, use `CLSID_CMyClass`.  
   
 ## Example  
  The following code shows how to use the **coclass** attribute:  
@@ -87,7 +87,7 @@ appobject, uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")]
 class CMyClass : public I {};  
 ```  
   
- The following sample shows how to override the default implementation of a function that appears in the code injected by the **coclass** attribute. See [/Fx](../build/reference/fx-merge-injected-code.md) for more information on viewing injected code. Any base classes or interfaces that you use for a class will be appear in the injected code.   Further, if a class is included by default in the injected code and you explicitly specify that class as a base for your coclass, the attribute provider will use the form specified in your code.  
+ The following sample shows how to override the default implementation of a function that appears in the code injected by the **coclass** attribute. See [/Fx](../build/reference/fx-merge-injected-code.md) for more information on viewing injected code. Any base classes or interfaces that you use for a class will be appear in the injected code. Further, if a class is included by default in the injected code and you explicitly specify that class as a base for your coclass, the attribute provider will use the form specified in your code.  
   
 ```cpp  
 // cpp_attr_ref_coclass2.cpp  
