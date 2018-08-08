@@ -102,9 +102,7 @@ int main() {
    (*p2)->data = 3;  
    Console::WriteLine((*p2)->data);  
 }  
-```  
-  
- **Output**  
+``` 
   
 ```Output  
 1  

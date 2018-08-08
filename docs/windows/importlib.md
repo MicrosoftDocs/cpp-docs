@@ -17,7 +17,7 @@ Makes types that have already been compiled into another type library available 
   
 ## Syntax  
   
-```  
+```cpp  
 [ importlib(  
    "tlb_file"  
 ) ];  

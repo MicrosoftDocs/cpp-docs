@@ -17,7 +17,7 @@ Gets a pointer to the underlying `IUnknown` interface.
   
 ## Syntax  
   
-```  
+```cpp  
 __forceinline IUnknown* CastToUnknown();  
 ```  
   
