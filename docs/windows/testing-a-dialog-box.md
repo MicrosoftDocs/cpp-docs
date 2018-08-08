@@ -29,7 +29,7 @@ When you're designing a dialog box, you can simulate and test its run-time behav
   
 ### To test a dialog box  
   
-1.  When the Dialog editor is the active window, on the menu bar, choose **Format**, **Test Dialog**.  
+1.  When the **Dialog** editor is the active window, on the menu bar, choose **Format** > **Test Dialog**.  
   
 2.  To end the simulation, press **Esc**, or just choose the **Close** button in the dialog box you are testing.  
   

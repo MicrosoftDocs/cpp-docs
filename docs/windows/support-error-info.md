@@ -17,7 +17,7 @@ Implements support for returning detailed errors.
   
 ## Syntax  
   
-```  
+```cpp  
 [ support_error_info(  
    error_interface=uuid  
 ) ]  
