@@ -17,7 +17,7 @@ Indicates that the one-dimensional **char**, **wchar_t**, `byte` (or equivalent)
   
 ## Syntax  
   
-```  
+```cpp  
 [string]  
 ```  
   

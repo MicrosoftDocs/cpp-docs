@@ -17,7 +17,7 @@ Represents a slim reader/writer lock.
   
 ## Syntax  
   
-```  
+```cpp  
 class SRWLock;  
 ```  
   

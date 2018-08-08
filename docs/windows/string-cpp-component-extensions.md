@@ -123,8 +123,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 abcdef  
   
@@ -201,8 +199,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 overloaded +(String ^ a, String ^ b)   
   
@@ -253,8 +249,6 @@ int main() {
    func3("string" + "string");   // returns System::String  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 char *  

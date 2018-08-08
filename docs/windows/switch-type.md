@@ -17,7 +17,7 @@ Identifies the type of the variable used as the union discriminant.
   
 ## Syntax  
   
-```  
+```cpp  
 [switch_type(  
 type  
 }]  

@@ -17,7 +17,7 @@ Describes common characteristics of the `SRWLock` class in exclusive lock mode.
   
 ## Syntax  
   
-```  
+```cpp  
 struct SRWLockExclusiveTraits;  
 ```  
   

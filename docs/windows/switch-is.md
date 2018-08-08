@@ -17,7 +17,7 @@ Specifies the expression or identifier acting as the union discriminant that sel
   
 ## Syntax  
   
-```  
+```cpp  
 [switch_is]  
 ```  
   

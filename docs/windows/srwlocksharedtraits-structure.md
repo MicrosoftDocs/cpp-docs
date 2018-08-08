@@ -17,7 +17,7 @@ Describes common characteristics of the `SRWLock` class in shared lock mode.
   
 ## Syntax  
   
-```  
+```cpp  
 struct SRWLockSharedTraits;  
 ```  
   

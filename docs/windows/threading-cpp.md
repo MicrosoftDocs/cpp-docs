@@ -17,7 +17,7 @@ Specifies the threading model for a COM object.
   
 ## Syntax  
   
-```  
+```cpp  
 [ threading(  
    model=enumeration  
 ) ]  

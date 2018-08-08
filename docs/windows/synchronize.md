@@ -17,7 +17,7 @@ Synchronizes access to the target method.
   
 ## Syntax  
   
-```  
+```cpp  
 [synchronize]  
 ```  
   

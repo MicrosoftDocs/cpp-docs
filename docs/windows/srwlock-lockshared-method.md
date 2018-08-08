@@ -17,7 +17,7 @@ Acquires an **SRWLock** object in shared mode.
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLockShared LockShared();  
   
 static SyncLockShared LockShared(  
