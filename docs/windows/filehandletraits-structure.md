@@ -17,7 +17,7 @@ Defines characteristics of a file handle.
   
 ## Syntax  
   
-```  
+```cpp  
 struct FileHandleTraits : HANDLETraits;  
 ```  
   

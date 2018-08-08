@@ -17,7 +17,7 @@ Retrieves the number of event handlers associated with the current **EventSource
   
 ## Syntax  
   
-```  
+```cpp  
 size_t GetSize() const;  
 ```  
   

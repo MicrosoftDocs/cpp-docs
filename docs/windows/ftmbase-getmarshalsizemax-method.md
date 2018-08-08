@@ -17,7 +17,7 @@ Get the upper bound on the number of bytes needed to marshal the specified inter
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHODIMP GetMarshalSizeMax(  
    __in REFIID riid,  
    __in_opt void *pv,  

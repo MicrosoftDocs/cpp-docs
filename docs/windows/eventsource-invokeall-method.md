@@ -17,7 +17,7 @@ Calls each event handler associated with the current [EventSource](../windows/ev
   
 ## Syntax  
   
-```  
+```cpp  
 void InvokeAll();  
 template <  
    typename T0  

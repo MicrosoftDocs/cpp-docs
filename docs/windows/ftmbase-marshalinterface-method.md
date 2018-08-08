@@ -17,7 +17,7 @@ Writes into a stream the data required to initialize a proxy object in some clie
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHODIMP MarshalInterface(  
    __in IStream *pStm,  
    __in REFIID riid,  
