@@ -17,7 +17,7 @@ Specifies an optional parameter for a member function.
   
 ## Syntax  
   
-```  
+```cpp  
 [optional]  
 ```  
   

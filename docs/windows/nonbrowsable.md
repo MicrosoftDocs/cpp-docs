@@ -17,7 +17,7 @@ Indicates that an interface member should not be displayed in a property browser
   
 ## Syntax  
   
-```  
+```cpp  
 [nonbrowsable]  
 ```  
   

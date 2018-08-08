@@ -17,13 +17,13 @@ Specifies the ProgID for a COM object.
   
 ## Syntax  
   
-```  
+```cpp  
 [ progid(  
    name  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *name*  
  The ProgID representing the object.  
   

@@ -23,7 +23,7 @@ ms.workload: ["cplusplus", "uwp"]
 2.  Right-click the resource and click **Open Binary Data** from the shortcut menu.  
   
     > [!NOTE]
-    >  If you use the [Resource View](../windows/resource-view-window.md) window to open a resource with a format that Visual Studio does not recognize (such as RCDATA or a custom resource), the resource is automatically opened in the Binary editor.  
+    >  If you use the [Resource View](../windows/resource-view-window.md) window to open a resource with a format that Visual Studio does not recognize (such as RCDATA or a custom resource), the resource is automatically opened in the **Binary** editor.  
   
 ### To open a managed resource for binary editing  
   
@@ -45,10 +45,9 @@ Binary Data for a Dialog Box Displayed in the Binary Editor
  Only certain ASCII values are represented in the Binary editor (0x20 through 0x7E). Extended characters are displayed as periods in the ASCII Value section of the Binary editor (the right panel). The "printable" characters are ASCII values 32 through 126.  
   
 > [!NOTE]
->  If you want to use the Binary editor on a resource already being edited in another editor window, close the other editor window first.  
+>  If you want to use the **Binary** editor on a resource already being edited in another editor window, close the other editor window first.  
   
 ## Requirements  
-  
  None  
   
 ## See Also  

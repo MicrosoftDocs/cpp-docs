@@ -17,13 +17,13 @@ Emits the specified string into the generated .idl file without the use of quota
   
 ## Syntax  
   
-```  
+```cpp  
 [ pragma(  
    pragma_statement  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *pragma_statement*  
  The pragma that you want to go into the generated .idl file.  
   

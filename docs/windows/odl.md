@@ -17,7 +17,7 @@ Identifies an interface as an Object Description Language (ODL) interface. The M
   
 ## Syntax  
   
-```  
+```cpp  
 [odl]  
 ```  
   

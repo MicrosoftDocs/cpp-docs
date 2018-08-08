@@ -17,13 +17,13 @@ Prevents the compiler from injecting code as a result of attribute use.
   
 ## Syntax  
   
-```  
+```cpp  
 [ no_injected_text(  
    boolean  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *boolean* (optional)  
  **true** if you want no code injected, **false** to allow code to be injected. **true** is the default.  
   
