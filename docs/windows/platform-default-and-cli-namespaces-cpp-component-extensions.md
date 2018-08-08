@@ -27,7 +27,7 @@ A namespace qualifies the names of language elements so the names do not conflic
 ## Common Language Runtime 
 ### Syntax  
   
-```  
+```cpp  
 using namespace cli;  
 ```  
   

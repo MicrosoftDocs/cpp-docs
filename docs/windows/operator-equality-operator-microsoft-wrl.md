@@ -16,7 +16,7 @@ Equality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../wi
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW bool operator==(  
    const ComPtr<T>& a,  
    const ComPtr<U>& b  

@@ -17,7 +17,7 @@ Specifies a property setting function.
   
 ## Syntax  
   
-```  
+```cpp  
 [propput]  
 ```  
   

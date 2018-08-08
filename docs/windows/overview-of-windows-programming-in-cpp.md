@@ -29,7 +29,7 @@ You can write UWP apps in C++/CX, a dialect of C++, you can use the [C++/WinRT l
 
    This category also includes using C++ for core components and computational code in the context of server and cloud programming. Sometimes the performance-intensive code at the core of a server or cloud application is written in C++ to maximize performance. You can compile such code into a DLL and use it from C# or Visual Basic.
 
-- **.NET Framework applications**. Most .NET Framework applications are written in C# or Visual Basic, but you can also C++/CLI (the /clr compiler option in Visual C++). We recommend using C++/CLI for a minimal interop layer in a larger application that includes managed and native code.
+- **.NET Framework applications**. Most .NET Framework applications are written in C# or Visual Basic, but you can also C++/CLI (the `/clr` compiler option in Visual C++). We recommend using C++/CLI for a minimal interop layer in a larger application that includes managed and native code.
 
 ##  <a name="BK_WindowsUniversal"></a> Windows Universal Apps
 

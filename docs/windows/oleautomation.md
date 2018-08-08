@@ -17,7 +17,7 @@ Indicates that an interface is compatible with Automation.
   
 ## Syntax  
   
-```  
+```cpp  
 [oleautomation]  
 ```  
   

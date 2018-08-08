@@ -85,8 +85,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 C::f() called  
   

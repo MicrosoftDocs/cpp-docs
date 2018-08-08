@@ -17,7 +17,7 @@ Identifies pointer parameters that are returned from the called procedure to the
   
 ## Syntax  
   
-```  
+```cpp  
 [out]  
 ```  
   

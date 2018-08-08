@@ -17,7 +17,7 @@ Defines an object that cannot be instantiated by itself.
   
 ## Syntax  
   
-```  
+```cpp  
 [noncreatable]  
 ```  
   

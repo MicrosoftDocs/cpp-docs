@@ -17,7 +17,7 @@ Specifies a property accessor function.
   
 ## Syntax  
   
-```  
+```cpp  
 [propget]  
 ```  
   

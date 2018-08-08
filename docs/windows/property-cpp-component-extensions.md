@@ -197,8 +197,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 test  
   

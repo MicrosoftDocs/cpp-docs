@@ -17,14 +17,14 @@ Specifies a range of allowable values for arguments or fields whose values are s
   
 ## Syntax  
   
-```  
+```cpp  
 [ range(  
    low,   
    high  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *low*  
  The low range value.  
   

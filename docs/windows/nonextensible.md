@@ -17,7 +17,7 @@ Specifies that the `IDispatch` implementation includes only the properties and m
   
 ## Syntax  
   
-```  
+```cpp  
 [nonextensible]  
 ```  
   

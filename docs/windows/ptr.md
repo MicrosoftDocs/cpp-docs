@@ -17,7 +17,7 @@ Designates a pointer as a full pointer.
   
 ## Syntax  
   
-```  
+```cpp  
 [ptr]  
 ```  
   
