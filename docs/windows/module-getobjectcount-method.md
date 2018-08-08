@@ -17,7 +17,7 @@ Retrieves the number of objects managed by this module.
   
 ## Syntax  
   
-```  
+```cpp  
 virtual long GetObjectCount() const;  
 ```  
   

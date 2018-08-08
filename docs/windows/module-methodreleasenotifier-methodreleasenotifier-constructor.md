@@ -17,7 +17,7 @@ Initializes a new instance of the **Module::MethodReleaseNotifier** class.
   
 ## Syntax  
   
-```  
+```cpp  
 MethodReleaseNotifier(  
    _In_ T* object,   
    _In_ void (T::* method)(),   

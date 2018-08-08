@@ -17,7 +17,7 @@ Waits until the current object, or the **Mutex** object associated with the spec
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLock Lock(  
    DWORD milliseconds = INFINITE  
 );  

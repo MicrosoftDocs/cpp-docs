@@ -17,7 +17,7 @@ Controls the network data representation alignment of nonencapsulated unions.
   
 ## Syntax  
   
-```  
+```cpp  
 [ms_union]  
 ```  
   
