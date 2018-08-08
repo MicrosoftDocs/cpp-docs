@@ -29,7 +29,7 @@ A resource template is a customized resource that you have saved as an .rct file
   
 4.  Provide a name and location for your new .rct file and click **Open**.  
   
-5.  The new .rct file is added to your project and appears in Solution Explorer under the **Resources** folder.  
+5.  The new .rct file is added to your project and appears in **Solution Explorer** under the **Resources** folder.  
   
      You can now double-click the .rct file to open it in a document window, then add resources to it (right-click the file in the document window and choose **Add Resource** from the shortcut menu). You can then customize those resources and save the .rct file.  
   
@@ -59,7 +59,6 @@ A resource template is a customized resource that you have saved as an .rct file
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
 ## Requirements  
-  
  Win32  
   
 ## See Also  

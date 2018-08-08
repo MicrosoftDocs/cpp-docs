@@ -33,7 +33,7 @@ inline bool operator!=( const HString& lhs,
                         const HSTRING& rhs) throw()  
 ```  
   
-#### Parameters  
+### Parameters  
  *lhs*  
  The first parameter to compare. *lhs* can be an **HString** or `HStringReference` object, or an HSTRING handle.  
   

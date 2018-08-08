@@ -13,14 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Icons and Cursors: Image Resources for Display Devices (Image Editor for Icons)
-Icons and cursors are graphical resources that can contain multiple images in different sizes and color schemes for different types of display devices. In addition, a cursor has a "hot spot," the location Windows uses to track its position. Both icons and cursors are created and edited using the Image editor, as are bitmaps and other images.  
+Icons and cursors are graphical resources that can contain multiple images in different sizes and color schemes for different types of display devices. In addition, a cursor has a "hot spot," the location Windows uses to track its position. Both icons and cursors are created and edited using the **Image** editor, as are bitmaps and other images.  
   
- When you create a new icon or cursor, the Image editor first creates an image of a standard type. The image is initially filled with the screen (transparent) color. If the image is a cursor, the hot spot is initially the upper-left corner (coordinates 0,0).  
+ When you create a new icon or cursor, the **Image** editor first creates an image of a standard type. The image is initially filled with the screen (transparent) color. If the image is a cursor, the hot spot is initially the upper-left corner (coordinates 0,0).  
   
- By default, the Image editor supports the creation of additional images for the devices shown in the following table. You can create images for other devices by typing width, height, and color-count parameters into the [Custom Image dialog box](custom-image-dialog-box-image-editor-for-icons.md).  
+ By default, the **Image** editor supports the creation of additional images for the devices shown in the following table. You can create images for other devices by typing width, height, and color-count parameters into the [Custom Image dialog box](custom-image-dialog-box-image-editor-for-icons.md).  
   
 > [!NOTE]
->  Using the Image Editor, you can view 32-bit images, but you cannot edit them.  
+>  Using the **Image Editor**, you can view 32-bit images, but you cannot edit them.  
   
 |Color|Width (pixels)|Height (pixels)|  
 |-----------|----------------------|-----------------------|  

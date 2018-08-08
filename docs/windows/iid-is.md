@@ -17,13 +17,13 @@ Specifies the IID of the COM interface pointed to by an interface pointer.
   
 ## Syntax  
   
-```  
+```cpp  
 [ iid_is(  
    "expression"  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *expression*  
  A C language expression that specifies an IID of a COM interface pointed to by an interface pointer.  
   

@@ -15,13 +15,13 @@ Copies the current **HStringReference** object to an HSTRING object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CopyTo(  
    _Out_ HSTRING *str  
    ) const throw();  
 ```  
   
-#### Parameters  
+### Parameters  
  *str*  
  The HSTRING that receives the copy.  
   
