@@ -17,7 +17,7 @@ Defines the library block in the .idl file.
   
 ## Syntax  
   
-```  
+```cpp  
 [ module (  
    type=dll,  
    name=string,  
@@ -71,10 +71,10 @@ Defines the library block in the .idl file.
  Sets the name of the .dll file to use to perform a document string lookup. See [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) for more information.  
   
  *helpfile* (optional)  
- The name of the Help file for the type library.  
+ The name of the **Help** file for the type library.  
   
  *helpcontext* (optional)  
- The Help ID for this type library.  
+ The **Help ID** for this type library.  
   
  *helpstringcontext* (optional)  
  See [helpstringcontext](../windows/helpstringcontext.md) for more information.  

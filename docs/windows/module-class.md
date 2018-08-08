@@ -17,7 +17,7 @@ Represents a collection of related objects.
   
 ## Syntax  
   
-```  
+```cpp  
 template<ModuleType moduleType>  
 class Module;  
   
@@ -84,7 +84,7 @@ class Module<OutOfProc> : public Module<InProc>;
 |Name|Description|  
 |----------|-----------------|  
 |[Module::objectCount_ Data Member](../windows/module-objectcount-data-member.md)|Keeps track of how many classes have been created with the [Make](../windows/make-function.md) function.|  
-|[Module::releaseNotifier_ Data Member](../windows/module-releasenotifier-data-member.md)|Holds a pointer to a ReleaseNotifier object.|  
+|[Module::releaseNotifier_ Data Member](../windows/module-releasenotifier-data-member.md)|Holds a pointer to a `ReleaseNotifier` object.|  
   
 ### Macros  
   

@@ -17,7 +17,7 @@ When used in the interface header, allows you to use the MIDL compiler as a head
   
 ## Syntax  
   
-```  
+```cpp  
 [local]  
 ```  
   

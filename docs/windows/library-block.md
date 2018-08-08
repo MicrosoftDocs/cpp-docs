@@ -17,7 +17,7 @@ Places a construct inside the IDL library block.
   
 ## Syntax  
   
-```  
+```cpp  
 [library_block]  
 ```  
   

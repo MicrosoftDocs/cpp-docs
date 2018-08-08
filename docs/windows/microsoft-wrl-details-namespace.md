@@ -15,7 +15,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 namespace Microsoft::WRL::Details;  
 ```  
   
@@ -40,7 +40,7 @@ namespace Microsoft::WRL::Details;
 |----------|-----------------|  
 |[ArgTraits Structure](../windows/argtraits-structure.md)|Declares a specified delegate interface and an anonymous member function that has a specified number of parameters.|  
 |[ArgTraitsHelper Structure](../windows/argtraitshelper-structure.md)|Helps define common characteristics of delegate arguments.|  
-|[BoolStruct Structure](../windows/boolstruct-structure.md)|Defines whether a ComPtr is managing the object lifetime of an interface. BoolStruct is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.|  
+|[BoolStruct Structure](../windows/boolstruct-structure.md)|Defines whether a `ComPtr` is managing the object lifetime of an interface. `BoolStruct` is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.|  
 |[CreatorMap Structure](../windows/creatormap-structure.md)|Contains information about how to initialize, register, and unregister objects.|  
 |[DerefHelper Structure](../windows/derefhelper-structure.md)|Represent a dereferenced pointer to the `T*` template parameter.|  
 |[EnableIf Structure](../windows/enableif-structure.md)|Defines a data member of the type specified by the second template parameter if the first template parameter evaluates to **true**.|  

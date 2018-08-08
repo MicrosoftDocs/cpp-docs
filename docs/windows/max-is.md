@@ -17,13 +17,13 @@ Designates the maximum value for a valid array index.
   
 ## Syntax  
   
-```  
+```cpp  
 [ max_is(  
    "expression"  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *expression*  
  One or more C-language expressions. Empty argument slots are allowed.  
   

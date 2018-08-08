@@ -17,7 +17,7 @@ Calls the event handler associated with the current **Module::GenericReleaseNoti
   
 ## Syntax  
   
-```  
+```cpp  
 void Invoke();  
 ```  
   
