@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCPropertyGridProperty Class
 A `CMFCPropertyGridProperty` object represents a list item in a property list control.  
   
-   For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
    
 ## Syntax  
   

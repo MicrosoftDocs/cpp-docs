@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCToolTipCtrl Class
 An extended tooltip implementation based on the [CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md). A tooltip based on the `CMFCToolTipCtrl` class can display an icon, a label, and a description. You can customize its visual appearance by using a gradient fill, custom text and border colors, bold text, rounded corners, or a balloon style.  
 
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   

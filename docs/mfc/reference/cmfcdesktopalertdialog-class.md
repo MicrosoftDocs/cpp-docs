@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCDesktopAlertDialog Class
 The `CMFCDesktopAlertDialog` class is used together with the [CMFCDesktopAlertWnd Class](../../mfc/reference/cmfcdesktopalertwnd-class.md) to display a custom dialog in a popup window.  
 
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   

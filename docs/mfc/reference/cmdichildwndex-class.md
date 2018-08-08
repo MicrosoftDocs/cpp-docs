@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMDIChildWndEx Class
 The `CMDIChildWndEx` class provides the functionality of a Windows multiple document interface (MDI) child window. It extends the functionality of [CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md). The framework requires this class when an MDI application uses certain MFC classes.  
  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
 
   
 ## Syntax  

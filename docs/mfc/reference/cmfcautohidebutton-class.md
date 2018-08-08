@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCAutoHideButton Class
 A button that displays or hides a [CDockablePane Class](../../mfc/reference/cdockablepane-class.md) that is configured to hide.  
 
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
 ## Syntax  
   
 ```  

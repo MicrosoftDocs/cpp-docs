@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCAutoHideBar Class
 The `CMFCAutoHideBar` class is a special toolbar class that implements the auto-hide feature.  
 
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
 ## Syntax  
   
 ```  

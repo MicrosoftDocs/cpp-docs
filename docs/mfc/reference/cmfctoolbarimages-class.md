@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CMFCToolBarImages Class
 The images on a toolbar. The `CMFCToolBarImages` class manages toolbar images loaded from application resources or from files.  
-   For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
 ## Syntax  
   
 ```  

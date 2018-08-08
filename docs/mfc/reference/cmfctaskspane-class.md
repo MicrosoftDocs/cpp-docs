@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CMFCTasksPane Class
-For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
  The `CMFCTasksPane` class implements a list of clickable items (tasks).  
   

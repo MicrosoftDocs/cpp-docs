@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CTabbedPane Class
 Implements the functionality of a pane with detachable tabs.  
 
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   

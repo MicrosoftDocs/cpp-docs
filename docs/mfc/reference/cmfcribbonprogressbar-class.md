@@ -120,7 +120,7 @@ int GetRangeMin() const;
  The minimum value of the current range.  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonProgressBar::GetRegularSize  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual CSize GetRegularSize(CDC* pDC);
@@ -147,7 +147,7 @@ BOOL IsInfiniteMode() const;
  In infinite mode, the progress bar fills repeatedly from the minimum value to the maximum value. You might use infinite mode to indicate that an operation is ongoing, but that the completion time is unknown.  
   
 ##  <a name="ondraw"></a>  CMFCRibbonProgressBar::OnDraw  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void OnDraw(CDC* pDC);

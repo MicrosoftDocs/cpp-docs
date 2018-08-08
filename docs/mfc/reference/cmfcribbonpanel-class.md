@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCRibbonPanel Class
 Implements a panel that contains a set of ribbon elements. When the panel is drawn, it displays as many elements as possible, given the size of the panel.  
 
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
  
   
 ## Syntax  

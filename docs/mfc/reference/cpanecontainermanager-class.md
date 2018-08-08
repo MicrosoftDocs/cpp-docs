@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CPaneContainerManager Class
 The `CPaneContainerManager` class manages the storage and display of the current docking layout.  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMenuTearOffManager Class
 Manages tear-off menus. A tear-off menu is a menu on the menu bar. The user can remove a tear-off menu from the menu bar, causing the tear-off menu to float.  
   
-   For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
    
 ## Syntax  
   

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCStatusBar Class
 The `CMFCStatusBar` class implements a status bar similar to the `CStatusBar` class. However, the `CMFCStatusBar` class has features not offered by the `CStatusBar` class, such as the ability to display images, animations, and progress bars; and the ability to respond to mouse double-clicks. 
 
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.   
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.   
   
 ## Syntax  
   

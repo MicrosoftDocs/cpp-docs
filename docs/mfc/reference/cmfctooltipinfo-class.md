@@ -185,7 +185,7 @@ BOOL m_bVislManagerTheme;
  If `m_bVislManagerTheme` is TRUE, every tooltip requests a new [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) from the visual manager of the application before they appear on the screen, and uses the values in that object to determine their appearance. The other members of your [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) are ignored.  
   
 ##  <a name="operator_eq"></a>  CMFCToolTipInfo::operator=  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);

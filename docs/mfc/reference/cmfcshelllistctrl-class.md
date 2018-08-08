@@ -216,7 +216,7 @@ BOOL IsDesktop() const;
  TRUE if the displayed folder is the desktop folder; FALSE otherwise.  
   
 ##  <a name="oncompareitems"></a>  CMFCShellListCtrl::OnCompareItems  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual int OnCompareItems(

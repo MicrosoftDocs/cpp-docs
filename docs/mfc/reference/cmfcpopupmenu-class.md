@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CMFCPopupMenu Class
 Implements Windows pop-up menu functionality and extends it by adding features such as tear-off menus and tooltips.
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
   
 ## Syntax  
   

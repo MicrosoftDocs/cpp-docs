@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CDockingPanesRow Class
 Manages a list of panes that are located in the same horizontal or vertical row (column) of a dock site.  
 
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   

@@ -67,7 +67,7 @@ class CUserTool : public CObject
  **Header:** afxusertool.h  
   
 ##  <a name="copyicontoclipboard"></a>  CUserTool::CopyIconToClipboard  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 BOOL CopyIconToClipboard();
@@ -169,7 +169,7 @@ CString m_strLabel;
 ```  
   
 ##  <a name="serialize"></a>  CUserTool::Serialize  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void Serialize(CArchive& ar);

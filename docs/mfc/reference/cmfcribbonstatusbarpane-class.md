@@ -173,7 +173,7 @@ BOOL IsExtended() const;
  TRUE if pane is on status bar extended area. FALSE otherwise.  
   
 ##  <a name="ondrawborder"></a>  CMFCRibbonStatusBarPane::OnDrawBorder  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void OnDrawBorder(CDC*);
@@ -185,7 +185,7 @@ virtual void OnDrawBorder(CDC*);
 ### Remarks  
   
 ##  <a name="onfillbackground"></a>  CMFCRibbonStatusBarPane::OnFillBackground  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual COLORREF OnFillBackground(CDC* pDC);

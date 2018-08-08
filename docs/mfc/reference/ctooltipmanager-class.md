@@ -166,7 +166,7 @@ static void SetTooltipText(
  The value of *nType* must be the same value as the *nType* parameter of [CTooltipManager::CreateToolTip](#createtooltip) when you created the tooltip.  
   
 ##  <a name="updatetooltips"></a>  CTooltipManager::UpdateTooltips  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 void UpdateTooltips();

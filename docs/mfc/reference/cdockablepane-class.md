@@ -1049,7 +1049,7 @@ AFX_IMPORT_DATA static int m_nSlideSteps;
  For a faster animation effect, decrease this value. For a slower animation effect, increase this value.  
   
 ##  <a name="onafterchangeparent"></a>  CDockablePane::OnAfterChangeParent  
- For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);

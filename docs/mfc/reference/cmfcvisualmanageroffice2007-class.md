@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCVisualManagerOffice2007 Class
 `CMFCVisualManagerOffice2007` gives an application a Microsoft Office 2007 appearance. 
 
-For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   

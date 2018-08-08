@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CPaneFrameWnd Class
-For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
+For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
  Implements a mini-frame window that contains one pane. The pane fills the client area of the window.  
   
