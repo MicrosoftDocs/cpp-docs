@@ -24,12 +24,12 @@ Places a record in an object. The linker checks these records for potential mism
 ## Remarks  
  When you link the project, the linker throws a `LNK2038` error if the project contains two objects that have the same `name` but each has a different `value`. Use this pragma to prevent inconsistent object files from linking.  
   
- Both name and value are string literals and obey the rules for string literals with respect to escape characters and concatenation. They are case-sensitive and cannot contain a comma, equal sign, quotation marks, or the `null` character.  
+ Both name and value are string literals and obey the rules for string literals with respect to escape characters and concatenation. They are case-sensitive and cannot contain a comma, equal sign, quotation marks, or the **null** character.  
   
 ## Example  
  This example creates two files that have different version numbers for the same version label.  
   
-```  
+```cpp  
 // pragma_directive_detect_mismatch_a.cpp  
 #pragma detect_mismatch("myLib_version", "9")  
 int main ()  

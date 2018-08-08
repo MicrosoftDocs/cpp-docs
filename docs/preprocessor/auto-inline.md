@@ -18,7 +18,6 @@ Excludes any functions defined within the range where **off** is specified from 
 ## Syntax  
   
 ```  
-  
 #pragma auto_inline( [{on | off}] )  
 ```  
   

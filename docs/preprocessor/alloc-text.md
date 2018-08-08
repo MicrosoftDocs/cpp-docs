@@ -18,7 +18,6 @@ Names the code section where the specified function definitions are to reside. T
 ## Syntax  
   
 ```  
-  
 #pragma alloc_text( "  
 textsection  
 ", function1, ... )  

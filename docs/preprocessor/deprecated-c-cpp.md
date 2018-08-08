@@ -34,7 +34,7 @@ The **deprecated** pragma lets you indicate that a function, type, or any other 
   
 ## Example  
   
-```  
+```cpp  
 // pragma_directive_deprecated.cpp  
 // compile with: /W3  
 #include <stdio.h>  
@@ -55,7 +55,7 @@ int main() {
   
  The following sample shows how to deprecate a class:  
   
-```  
+```cpp  
 // pragma_directive_deprecated2.cpp  
 // compile with: /W3  
 #pragma deprecated(X)  

@@ -28,7 +28,7 @@ You can enable warnings that are normally off by default by using one of the fol
 
 - [/Wall](../build/reference/compiler-option-warning-level.md)
 
-   **/Wall** enables all warnings that are off by default. If you use this option, you can turn off individual warnings by using the [/wd](../build/reference/compiler-option-warning-level.md) option.
+   `/Wall` enables all warnings that are off by default. If you use this option, you can turn off individual warnings by using the [/wd](../build/reference/compiler-option-warning-level.md) option.
 
 - [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
 
@@ -169,5 +169,4 @@ This warning was off by default in versions of the compiler before Visual Studio
 |[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (level 4)|missing type specifier - int assumed. Note: C no longer supports default-int|
 
 ## See Also
-
 [warning](../preprocessor/warning.md)

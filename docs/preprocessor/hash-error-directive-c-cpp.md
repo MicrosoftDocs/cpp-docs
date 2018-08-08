@@ -13,7 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # #error Directive (C/C++)
-The `#error` directive emits a user-specified error message at compile time and then terminates the compilation.  
+The **#error** directive emits a user-specified error message at compile time and then terminates the compilation.  
   
 ## Syntax  
   
@@ -22,7 +22,7 @@ The `#error` directive emits a user-specified error message at compile time and 
 ```  
   
 ## Remarks  
- The error message that this directive emits includes the *token-string* parameter. The `token-string` parameter is not subject to macro expansion. This directive is most useful during preprocessing for notifying the developer of a program inconsistency or the violation of a constraint. The following example demonstrates error processing during preprocessing:  
+ The error message that this directive emits includes the *token-string* parameter. The *token-string* parameter is not subject to macro expansion. This directive is most useful during preprocessing for notifying the developer of a program inconsistency or the violation of a constraint. The following example demonstrates error processing during preprocessing:  
   
 ```  
 #if !defined(__cplusplus)  

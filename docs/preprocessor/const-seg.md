@@ -30,26 +30,26 @@ Specifies the segment where [const](../cpp/const-cpp.md) variables are stored in
   
  `#pragma const_seg` with no parameters resets the segment to .rdata.  
   
- `push` (optional)  
- Puts a record on the internal compiler stack. A `push` can have an `identifier` and `segment-name`.  
+ *push* (optional)  
+ Puts a record on the internal compiler stack. A *push* can have an *identifier* and *segment-name*.  
   
- `pop` (optional)  
+ *pop* (optional)  
  Removes a record from the top of the internal compiler stack.  
   
- `identifier` (optional)  
- When used with `push`, assigns a name to the record on the internal compiler stack. When used with `pop`, pops records off the internal stack until `identifier` is removed; if `identifier` is not found on the internal stack, nothing is popped.  
+ *identifier* (optional)  
+ When used with *push*, assigns a name to the record on the internal compiler stack. When used with *pop*, pops records off the internal stack until *identifier* is removed; if *identifier* is not found on the internal stack, nothing is popped.  
   
- Using `identifier` enables multiple records to be popped with a single `pop` command.  
+ Using *identifier* enables multiple records to be popped with a single *pop* command.  
   
- "`segment-name`" (optional)  
- The name of a segment. When used with `pop`, the stack is popped and `segment-name` becomes the active segment name.  
+ "*segment-name*" (optional)  
+ The name of a segment. When used with *pop*, the stack is popped and *segment-name* becomes the active segment name.  
   
- "`segment-class`" (optional)  
+ "*segment-class*" (optional)  
  Included for compatibility with C++ prior to version 2.0. It is ignored.  
   
 ## Example  
   
-```  
+```cpp  
 // pragma_directive_const_seg.cpp  
 // compile with: /EHsc  
 #include <iostream>  

@@ -13,7 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # #define Directive (C/C++)
-The `#define` creates a *macro*, which is the association of an identifier or parameterized identifier with a token string. After the macro is defined, the compiler can substitute the token string for each occurrence of the identifier in the source file.  
+The **#define** creates a *macro*, which is the association of an identifier or parameterized identifier with a token string. After the macro is defined, the compiler can substitute the token string for each occurrence of the identifier in the source file.  
   
 ## Syntax  
  `#define` *identifier* *token-string*opt  
@@ -21,7 +21,7 @@ The `#define` creates a *macro*, which is the association of an identifier or pa
  `#define` *identifier* `(` *identifier*opt`,`*...*`,`*identifier*opt`)`*token-string*opt  
   
 ## Remarks  
- The `#define` directive causes the compiler to substitute *token-string* for each occurrence of *identifier* in the source file. The *identifier* is replaced only when it forms a token. That is, *identifier* is not replaced if it appears in a comment, in a string, or as part of a longer identifier. For more information, see [Tokens](../cpp/tokens-cpp.md).  
+ The **#define** directive causes the compiler to substitute *token-string* for each occurrence of *identifier* in the source file. The *identifier* is replaced only when it forms a token. That is, *identifier* is not replaced if it appears in a comment, in a string, or as part of a longer identifier. For more information, see [Tokens](../cpp/tokens-cpp.md).  
   
  The *token-string* argument consists of a series of tokens, such as keywords, constants, or complete statements. One or more white-space characters must separate *token-string* from *identifier*. This white space is not considered part of the substituted text, nor is any white space that follows the last token of the text.  
   
@@ -35,7 +35,7 @@ The `#define` creates a *macro*, which is the association of an identifier or pa
   
  When a macro has been defined in the second syntax form, subsequent textual instances followed by an argument list indicate a macro call. The actual arguments that follows an instance of *identifier* in the source file are matched to the corresponding formal parameters in the macro definition. Each formal parameter in *token-string* that is not preceded by a stringizing (`#`), charizing (`#@`), or token-pasting (`##`) operator, or not followed by a `##` operator, is replaced by the corresponding actual argument. Any macros in the actual argument are expanded before the directive replaces the formal parameter. (The operators are described in [Preprocessor Operators](../preprocessor/preprocessor-operators.md).)  
   
- The following examples of macros with arguments illustrate the second form of the `#define` syntax:  
+ The following examples of macros with arguments illustrate the second form of the **#define** syntax:  
   
 ```  
 // Macro to define cursor lines   
@@ -52,7 +52,7 @@ The `#define` creates a *macro*, which is the association of an identifier or pa
   
  If the name of the macro being defined occurs in *token-string* (even as a result of another macro expansion), it is not expanded.  
   
- A second `#define` for a macro with the same name generates a warning unless the second token sequence is identical to the first.  
+ A second **#define** for a macro with the same name generates a warning unless the second token sequence is identical to the first.  
   
  **Microsoft Specific**  
   
@@ -74,7 +74,7 @@ The `#define` creates a *macro*, which is the association of an identifier or pa
   
  **END Microsoft Specific**  
   
- This example illustrates the `#define` directive:  
+ This example illustrates the **#define** directive:  
   
 ```  
 #define WIDTH       80  
@@ -103,7 +103,7 @@ var = 80 + 10 * 20;
   
  **Microsoft Specific**  
   
- Defining macros and constants with the [/D](../build/reference/d-preprocessor-definitions.md) compiler option has the same effect as using a `#define` preprocessing directive at the start of your file. Up to 30 macros can be defined by using the /D option.  
+ Defining macros and constants with the [/D](../build/reference/d-preprocessor-definitions.md) compiler option has the same effect as using a **#define** preprocessing directive at the start of your file. Up to 30 macros can be defined by using the /D option.  
   
  **END Microsoft Specific**  
   

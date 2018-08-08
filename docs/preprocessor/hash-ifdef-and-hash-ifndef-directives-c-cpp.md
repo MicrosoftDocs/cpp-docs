@@ -35,11 +35,11 @@ The **#ifdef** and **#ifndef** directives perform the same task as the `#if` dir
   
  **Microsoft Specific**  
   
- The *identifier* can be passed from the command line using the /D option. Up to 30 macros can be specified with /D.  
+ The *identifier* can be passed from the command line using the `/D` option. Up to 30 macros can be specified with `/D`.  
   
  This is useful for checking whether a definition exists, because a definition can be passed from the command line. For example:  
   
-```  
+```cpp  
 // ifdef_ifndef.CPP  
 // compile with: /Dtest /c  
 #ifndef test  

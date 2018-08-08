@@ -23,11 +23,11 @@ ms.workload: ["cplusplus"]
 exclude("Name1"[, "Name2",...])  
 ```  
   
-#### Parameters  
- `Name1`  
+### Parameters  
+ *Name1*  
  First item to be excluded.  
   
- `Name2`  
+ *Name2*  
  Second item to be excluded (if necessary).  
   
 ## Remarks  

@@ -23,8 +23,8 @@ ms.workload: ["cplusplus"]
 embedded_idl[("param")]  
 ```  
   
-#### Parameters  
- `param`  
+### Parameters  
+ *param*  
  Can be one of two values:  
   
 -   emitidl: Type information imported from the typelib will be present in the IDL generated for the attributed project.  This is the default and will be in effect if you do not specify a parameter to `embedded_idl`.  
@@ -33,7 +33,7 @@ embedded_idl[("param")]
   
 ## Example  
   
-```  
+```cpp  
 // import_embedded_idl.cpp  
 // compile with: /LD  
 #include <windows.h>  
