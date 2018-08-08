@@ -41,13 +41,13 @@ Defines the library block in the .idl file.
  *type* (optional)  
  Can be one of the following:  
   
--   `dll` Adds functions and classes that allow the resulting DLL to function as a in-process COM server. This is the default value.  
+   -   `dll` Adds functions and classes that allow the resulting DLL to function as a in-process COM server. This is the default value.  
   
--   `exe` Adds functions and classes that allow the resulting executable to function as a out of process COM server.  
+   -   `exe` Adds functions and classes that allow the resulting executable to function as a out of process COM server.  
   
--   `service` Adds functions and classes that allow the resulting executable to function as an NT service.  
+   -   `service` Adds functions and classes that allow the resulting executable to function as an NT service.  
   
--   `unspecified` Disables injection of ATL code related to the module attribute: the injection of ATL Module class, global instance _AtlModule and entry point functions. Does not disable injection of ATL code due to other attributes in the project.  
+   -   `unspecified` Disables injection of ATL code related to the module attribute: the injection of ATL Module class, global instance _AtlModule and entry point functions. Does not disable injection of ATL code due to other attributes in the project.  
   
  *name* (optional)  
  The name of the library block.  
