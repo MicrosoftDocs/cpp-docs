@@ -17,7 +17,7 @@ Specifies that the function takes a variable number of arguments.
   
 ## Syntax  
   
-```  
+```cpp  
 [vararg]  
 ```  
   

@@ -17,7 +17,7 @@ Sets the specified `ComPtr` pointer parameter to represent the specified interfa
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename U>  
 HRESULT As(  
    _Out_ ComPtr<U>* ptr  

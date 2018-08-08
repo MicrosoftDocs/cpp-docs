@@ -43,7 +43,7 @@ The Visual C++ Win32 Application Wizard allows you to create any of four types o
 > [!NOTE]
 >  You cannot add ATL classes, and you can add MFC classes only to those Windows desktop application types that support MFC (see the previous table).  
   
- You can view the files the wizard creates for your project in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file ReadMe.txt. For more information about the file types, [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md).  
+ You can view the files the wizard creates for your project in **Solution Explorer**. For more information about the files the wizard creates for your project, see the project-generated file, `ReadMe.txt`. For more information about the file types, [File Types Created for Visual C++ Projects](../ide/file-types-created-for-visual-cpp-projects.md).  
   
 ## See Also  
  [Creating an Empty Windows Desktop Application](../windows/creating-an-empty-windows-desktop-application.md)   

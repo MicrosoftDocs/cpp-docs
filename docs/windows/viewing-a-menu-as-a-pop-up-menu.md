@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Viewing a Menu as a Pop-up Menu
-Normally, when you are working in the Menu editor, a menu resource is displayed as a menu bar. However, you might have menu resources that are added to the application's menu bar while the program is running.  
+Normally, when you are working in the **Menu** editor, a menu resource is displayed as a menu bar. However, you might have menu resources that are added to the application's menu bar while the program is running.  
   
 ### To view a menu resource as a pop-up menu  
   

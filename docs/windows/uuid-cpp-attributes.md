@@ -17,7 +17,7 @@ Specifies the unique ID for a class or interface.
   
 ## Syntax  
   
-```  
+```cpp  
 [ uuid(  
    "uuid"  
 ) ]  
