@@ -17,7 +17,7 @@ Retreives a cache of class factories.
   
 ## Syntax  
   
-```  
+```cpp  
  HRESULT GetClassObject(  
    REFCLSID clsid,  
    REFIID riid,  

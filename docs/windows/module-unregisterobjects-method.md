@@ -17,7 +17,7 @@ Unregisters the objects in the specified module so that other applications canno
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnregisterObjects(  
    ModuleBase* module,  
    const wchar_t* serverName);  

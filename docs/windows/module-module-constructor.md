@@ -17,7 +17,7 @@ Initializes a new instance of the **Module** class.
   
 ## Syntax  
   
-```  
+```cpp  
 Module();  
 ```  
   

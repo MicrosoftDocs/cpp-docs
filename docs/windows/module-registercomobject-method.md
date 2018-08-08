@@ -17,7 +17,7 @@ Registers one or more COM objects so other applications can connect to them.
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW virtual HRESULT RegisterCOMObject(  
    const wchar_t* serverName,  
    IID* clsids,  

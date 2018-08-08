@@ -17,14 +17,14 @@ Unregisters one or more Windows Runtime objects so that other applications canno
   
 ## Syntax  
   
-```  
+```cpp  
 virtual HRESULT UnregisterWinRTObject(  
    unsigned int,  
    _Inout_ WINRT_REGISTRATION_COOKIE* cookie  
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *cookie*  
  A pointer to a value that identifies the class object whose registration is to be revoked.  
   

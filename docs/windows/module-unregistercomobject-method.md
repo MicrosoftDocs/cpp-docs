@@ -17,7 +17,7 @@ Unregisters one or more COM objects, which prevents other applications from conn
   
 ## Syntax  
   
-```  
+```cpp  
 virtual HRESULT UnregisterCOMObject(  
    const wchar_t* serverName,  
    DWORD* cookies,  

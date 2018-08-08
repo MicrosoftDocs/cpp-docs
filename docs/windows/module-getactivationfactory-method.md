@@ -17,7 +17,7 @@ Gets an activation factory for the module.
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW HRESULT GetActivationFactory(  
    _In_ HSTRING pActivatibleClassId,  
    _Deref_out_ IActivationFactory **ppIFactory,  

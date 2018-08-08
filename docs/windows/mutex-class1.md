@@ -17,7 +17,7 @@ Represents a synchronization object that exclusively controls a shared resource.
   
 ## Syntax  
   
-```  
+```cpp  
 class Mutex : public HandleT<HandleTraits::MutexTraits>  
 ```  
   

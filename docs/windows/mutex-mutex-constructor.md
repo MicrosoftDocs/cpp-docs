@@ -17,7 +17,7 @@ Initializes a new instance of the **Mutex** class.
   
 ## Syntax  
   
-```  
+```cpp  
 explicit Mutex(  
    HANDLE h  
 );  

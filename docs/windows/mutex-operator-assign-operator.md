@@ -17,7 +17,7 @@ Assigns (moves) the specified **Mutex** object to the current **Mutex** object.
   
 ## Syntax  
   
-```  
+```cpp  
 Mutex& operator=(  
    _Inout_ Mutex&& h  
 );  
