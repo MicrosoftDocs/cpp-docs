@@ -17,7 +17,7 @@ Divides two numbers in a way that protects against dividing by zero.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeDivide (  
    T t,  

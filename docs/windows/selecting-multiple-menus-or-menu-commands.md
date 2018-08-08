@@ -21,7 +21,6 @@ You can select multiple menu names or menu commands to perform bulk operations s
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
 ## Requirements  
-  
  Win32  
   
 ## See Also  

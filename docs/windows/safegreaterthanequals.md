@@ -17,7 +17,7 @@ Compares two numbers.
   
 ## Syntax  
   
-```  
+```cpp  
 template <typename T, typename U>  
 inline bool SafeGreaterThanEquals (  
    const T t,  

@@ -25,7 +25,6 @@ STDMETHOD( ActivateInstance )(
 ```
 
 ### Parameters
-
 *ppvObject*  
 When this operation completes, pointer to an instance of the object specified by the `Base` class template parameter.
 
@@ -35,7 +34,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ## Remarks
 
-If &#95;&#95;WRL_STRICT&#95;&#95; is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+If `__WRL_STRICT__` is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
 
 ## Requirements
 

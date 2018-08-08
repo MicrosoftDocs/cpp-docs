@@ -24,7 +24,6 @@ STDMETHOD( GetRuntimeClassName )(
 ```
 
 ### Parameters
-
 *runtimeName*  
 When this operation completes, the runtime class name.
 
@@ -34,7 +33,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ## Remarks
 
-If &#95;&#95;WRL_STRICT&#95;&#95; is defined, an assert error is emitted if the class specified by the `Base` class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+If `__WRL_STRICT__` is defined, an assert error is emitted if the class specified by the `Base` class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
 
 ## Requirements
 
