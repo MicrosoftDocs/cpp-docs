@@ -17,7 +17,7 @@ Sets the specified `ComPtr` pointer parameter to represent the specified interfa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AsIID(  
    REFIID riid,  
    _Out_ ComPtr<IInspectable>* ptr  

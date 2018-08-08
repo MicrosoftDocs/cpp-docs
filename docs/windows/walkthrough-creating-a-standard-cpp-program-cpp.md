@@ -45,7 +45,7 @@ You can use Visual C++ in the Visual Studio integrated development environment (
   
     2.  In the **Code** node, click **C++ File (.cpp)**, type a name for the file, and then click **Add**.  
   
-     The .cpp file appears in the Source Files folder in **Solution Explorer**, and the file is opened in the Visual Studio editor.  
+     The .cpp file appears in the **Source Files** folder in **Solution Explorer**, and the file is opened in the Visual Studio editor.  
   
 6.  In the file in the editor, type a valid C++ program that uses the C++ Standard Library, or copy one of the sample programs and paste it in the file.  
   

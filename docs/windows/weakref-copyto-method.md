@@ -17,7 +17,7 @@ Assigns a pointer to an interface, if available, to the specified pointer variab
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CopyTo(  
    REFIID riid,  
    _Deref_out_ IInspectable** ptr  

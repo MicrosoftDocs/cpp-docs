@@ -17,7 +17,7 @@ Initializes a new instance of the **WeakRef** class.
   
 ## Syntax  
   
-```  
+```cpp  
 WeakRef();  
 WeakRef(  
    decltype(__nullptr)  

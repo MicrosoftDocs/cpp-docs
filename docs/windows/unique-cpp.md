@@ -17,7 +17,7 @@ Specifies a unique pointer.
   
 ## Syntax  
   
-```  
+```cpp  
 [unique]  
 ```  
   

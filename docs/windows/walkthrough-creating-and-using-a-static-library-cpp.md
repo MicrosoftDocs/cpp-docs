@@ -53,7 +53,7 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
 1.  To create a header file for a new class, open the shortcut menu for the **MathFuncsLib** project in **Solution Explorer**, and then choose **Add**, **New Item**. In the **Add New Item** dialog box, in the left pane, under **Visual C++**, select **Code**. In the center pane, select **Header File (.h)**. Specify a name for the header file—for example, *MathFuncsLib.h*—and then choose the **Add** button. A blank header file is displayed.  
   
-2.  Add a class named **MyMathFuncs** to do common mathematical operations such as addition, subtraction, multiplication, and division. The code should resemble this:  
+2.  Add a class named `MyMathFuncs` to do common mathematical operations such as addition, subtraction, multiplication, and division. The code should resemble this:  
   
      [!code-cpp[NVC_Walkthrough_Create_Static_Lib#100](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_1.h)]  
   
@@ -66,7 +66,7 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
 5.  Compile the static library by selecting **Build** > **Build Solution** on the menu bar. This creates a static library that can be used by other programs.  
   
     > [!NOTE]
-    >  When you build on the Visual Studio command line, you must build the program in two steps. First, run `cl /c /EHsc MathFuncsLib.cpp` to compile the code and create an object file that's named **MathFuncsLib.obj**. (The `cl` command invokes the compiler, Cl.exe, and the `/c` option specifies compile without linking. For more information, see [/c (Compile Without Linking)](../build/reference/c-compile-without-linking.md).) Second, run **lib MathFuncsLib.obj** to link the code and create the static library **MathFuncsLib.lib**. (The `lib` command invokes the Library Manager, Lib.exe. For more information, see [LIB Reference](../build/reference/lib-reference.md).)  
+    >  When you build on the Visual Studio command line, you must build the program in two steps. First, run `cl /c /EHsc MathFuncsLib.cpp` to compile the code and create an object file that's named `MathFuncsLib.obj`. (The `cl` command invokes the compiler, Cl.exe, and the `/c` option specifies compile without linking. For more information, see [/c (Compile Without Linking)](../build/reference/c-compile-without-linking.md).) Second, run `lib MathFuncsLib.obj` to link the code and create the static library `MathFuncsLib.lib`. (The `lib` command invokes the Library Manager, Lib.exe. For more information, see [LIB Reference](../build/reference/lib-reference.md).)  
   
 ##  <a name="CreateAppToRefTheLib"></a> Creating a C++ console app that references the static library  
   
@@ -89,17 +89,17 @@ This step-by-step walkthrough shows how to create a static library (.lib file) f
   
 ### To use the functionality from the static library in the app  
   
-1.  After you create a console app, an empty program is created for you. The name for the source file is the same as the name that you chose earlier. In this example, it's named **MyExecRefsLib.cpp**.  
+1.  After you create a console app, an empty program is created for you. The name for the source file is the same as the name that you chose earlier. In this example, it's named `MyExecRefsLib.cpp`.  
   
-2.  Before you can use the math routines in the static library, you must reference it. To do this, open the shortcut menu for the MyExecRefsLib project in **Solution Explorer**, and then choose **Add** > **Reference**.  
+2.  Before you can use the math routines in the static library, you must reference it. To do this, open the shortcut menu for the **MyExecRefsLib** project in **Solution Explorer**, and then choose **Add** > **Reference**.  
   
 3.  The **Add Reference** dialog box lists the libraries that you can reference. The **Projects** tab lists the projects in the current solution and any libraries that they contain. On the **Projects** tab, select the **MathFuncsLib** check box, and then choose the **OK** button.  
   
-4.  To reference the **MathFuncsLib.h** header file, you must modify the included directories path. In the **Property Pages** dialog box for **MyExecRefsLib**, expand the **Configuration Properties** node, expand the **C/C++** node, and then select **General**. Next to **Additional Include Directories**, specify the path of the **MathFuncsLib** directory or browse for it.  
+4.  To reference the `MathFuncsLib.h` header file, you must modify the included directories path. In the **Property Pages** dialog box for **MyExecRefsLib**, expand the **Configuration Properties** node, expand the **C/C++** node, and then select **General**. Next to **Additional Include Directories**, specify the path of the **MathFuncsLib** directory or browse for it.  
   
      To browse for the directory path, open the property value drop-down list, and then choose **Edit**. In the **Additional Include Directories** dialog box, in the text box, select a blank line and then choose the ellipsis button (**...**) at the end of the line. In the **Select Directory** dialog box, select the **MathFuncsLib** directory and then choose **Select Folder** button to save your selection and close the dialog box. In the **Additional Include Directories** dialog box, choose the **OK** button, and then in the **Property Pages** dialog box, choose the **OK** button to save your changes to the project.  
   
-5.  You can now use the **MyMathFuncs** class in this app. To do this, replace the contents of **MyExecRefsLib.cpp** with this code:  
+5.  You can now use the `MyMathFuncs` class in this app. To do this, replace the contents of `MyExecRefsLib.cpp` with this code:  
   
      [!code-cpp[NVC_Walkthrough_Create_Static_Lib#120](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_3.cpp)]  
   

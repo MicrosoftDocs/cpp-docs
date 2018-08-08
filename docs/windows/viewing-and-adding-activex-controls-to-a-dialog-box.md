@@ -37,7 +37,7 @@ Visual Studio enables you to insert ActiveX controls into your dialog box.
     > [!CAUTION]
     >  It may not be legal to distribute all of the ActiveX controls on your system. Please refer to the license agreement for the software that installed the controls or contact the software company.  
   
-     You can place controls in the Toolbox window for easy access. For more information, see [Customize Toolbox dialog box](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb).  
+     You can place controls in the **Toolbox** window for easy access. For more information, see [Customize Toolbox dialog box](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb).  
   
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
