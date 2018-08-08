@@ -84,7 +84,7 @@ ACCEL const* GetAccel() const;
  Use this function to retrieve the `ACCEL` structure for a shortcut key that the user entered into your `CMFCAcceleratorKeyAssignCtrl` object.  
   
 ##  <a name="isfocused"></a>  CMFCAcceleratorKeyAssignCtrl::IsFocused  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ```  
 BOOL IsFocused() const;  
@@ -108,7 +108,7 @@ BOOL IsKeyDefined() const;
  Use this function to determine whether the user entered a valid shortcut key in your `CMFCAcceleratorKeyAssignCtrl` object. If a shortcut key exists, you can use [CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel) method to obtain the `ACCEL` structure associated with this shortcut key.  
   
 ##  <a name="pretranslatemessage"></a>  CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);

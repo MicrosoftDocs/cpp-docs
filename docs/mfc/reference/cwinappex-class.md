@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CWinAppEx Class
 `CWinAppEx` handles the application state, saves the state to the registry, loads the state from the registry, initializes application managers, and provides links to those same application managers.  
   
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
 ## Syntax  
   
 ```  

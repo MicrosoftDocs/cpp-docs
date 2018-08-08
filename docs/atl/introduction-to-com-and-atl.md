@@ -23,7 +23,7 @@ This section provides a brief introduction to COM and ATL.
   
 ## Related Sections  
  [The Component Object Model](http://msdn.microsoft.com/library/windows/desktop/ms694363)  
- The [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] material on COM.  
+ The Windows SDK material on COM.  
   
  [ATL](../atl/active-template-library-atl-concepts.md)  
  Provides links to conceptual topics on how to program using the Active Template Library.  

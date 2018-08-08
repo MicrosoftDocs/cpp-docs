@@ -160,7 +160,7 @@ void ActivateMDITab(int nTab = -1);
  The zero-based index of a tab to display, or -1 to specify the currently active tab.  
   
 ##  <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ```  
 virtual BOOL AllowDestroyEmptyTabbedPane() const;  

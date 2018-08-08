@@ -117,7 +117,7 @@ int GetRangeMin() const;
  The minimum increment that the slider can travel on the slider control.  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonSlider::GetRegularSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ```  
 virtual CSize GetRegularSize(CDC* pDC);
@@ -151,7 +151,7 @@ BOOL HasZoomButtons() const;
  TRUE if the slider has zoom buttons; FALSE otherwise.  
   
 ##  <a name="ondraw"></a>  CMFCRibbonSlider::OnDraw  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void OnDraw(CDC* pDC);

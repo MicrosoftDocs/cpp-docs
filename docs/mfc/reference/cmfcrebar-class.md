@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CMFCReBar Class
 A `CMFCReBar` object is a control bar that provides layout, persistence, and state information for rebar controls.  
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
 ## Syntax  
   
 ```  

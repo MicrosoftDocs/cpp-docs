@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCVisualManagerWindows Class
 `CMFCVisualManagerWindows` mimics the appearance of Microsoft Windows XP or Microsoft Vista when the user selects a Windows XP or Vista theme.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   

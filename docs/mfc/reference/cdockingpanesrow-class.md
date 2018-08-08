@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CDockingPanesRow Class
 Manages a list of panes that are located in the same horizontal or vertical row (column) of a dock site.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   

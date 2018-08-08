@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCDropDownToolBar Class
 A toolbar that appears when the user presses and holds a top-level toolbar button.  
   
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
 ## Syntax  
   
 ```  

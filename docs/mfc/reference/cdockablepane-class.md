@@ -790,7 +790,7 @@ virtual AFX_CS_STATUS GetDockingStatus(
 ### Remarks  
  The framework calls this method to handle docking of a floating pane.  
   
- For floating toolbars or docking panes that use the DT_IMMEDIATE docking mode, the framework delays the dock command to enable the user to move the window out of the client area of the parent frame before docking occurs. The length of the delay is measured in milliseconds and is controlled by the [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) data member.. The default value of [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) is 200. This behavior emulates the docking behavior of [!INCLUDE[ofprword](../../mfc/reference/includes/ofprword_md.md)] 2007.  
+ For floating toolbars or docking panes that use the DT_IMMEDIATE docking mode, the framework delays the dock command to enable the user to move the window out of the client area of the parent frame before docking occurs. The length of the delay is measured in milliseconds and is controlled by the [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) data member.. The default value of [CDockingManager::m_nTimeOutBeforeToolBarDock](../../mfc/reference/cdockingmanager-class.md#m_ntimeoutbeforetoolbardock) is 200. This behavior emulates the docking behavior of Microsoft Word 2007.  
   
  For delayed docking states (CS_DELAY_DOCK and CS_DELAY_DOCK_TO_TAB), the framework does not perform docking until the user releases the mouse button. If a pane uses the DT_STANDARD docking mode, the framework displays a rectangle at the projected docking location. If a pane uses the DT_SMART docking mode, the framework displays smart docking markers and semi-transparent rectangles at the projected docking location. To specify the docking mode for your pane, call the [CBasePane::SetDockingMode](../../mfc/reference/cbasepane-class.md#setdockingmode) method. For more information about smart docking, see [CDockingManager::GetSmartDockingParams](../../mfc/reference/cdockingmanager-class.md#getsmartdockingparams).  
   
@@ -1049,7 +1049,7 @@ AFX_IMPORT_DATA static int m_nSlideSteps;
  For a faster animation effect, decrease this value. For a slower animation effect, increase this value.  
   
 ##  <a name="onafterchangeparent"></a>  CDockablePane::OnAfterChangeParent  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);

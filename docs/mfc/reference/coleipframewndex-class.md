@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # COleIPFrameWndEx Class
 The `COleIPFrameWndEx` class implements an OLE container that supports MFC. You must derive the in-place frame window class for your application from the `COleIPFrameWndEx` class, instead of deriving it from the [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md)class. 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]   
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.   
   
 ## Syntax  
   

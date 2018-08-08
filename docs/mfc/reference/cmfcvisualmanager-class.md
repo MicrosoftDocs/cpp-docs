@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCVisualManager Class
 Provides support for changing the appearance of your application at a global level. The `CMFCVisualManager` class works together with a class that provides instructions to draw the GUI controls of your application using a consistent style. These other classes are referred to as visual managers and they inherit from `CMFCBaseVisualManager`.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   

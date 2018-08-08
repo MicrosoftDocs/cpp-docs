@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCPropertyGridProperty Class
 A `CMFCPropertyGridProperty` object represents a list item in a property list control.  
   
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
    
 ## Syntax  
   

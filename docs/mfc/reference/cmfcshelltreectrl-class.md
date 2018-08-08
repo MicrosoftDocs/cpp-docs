@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCShellTreeCtrl Class
 The `CMFCShellTreeCtrl` class extends [CTreeCtrl Class](../../mfc/reference/ctreectrl-class.md) functionality by displaying a hierarchy of Shell items.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.    
 ## Syntax  
   
 ```  

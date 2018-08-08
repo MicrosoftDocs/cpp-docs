@@ -67,7 +67,7 @@ class CUserTool : public CObject
  **Header:** afxusertool.h  
   
 ##  <a name="copyicontoclipboard"></a>  CUserTool::CopyIconToClipboard  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ```  
 BOOL CopyIconToClipboard();
@@ -169,7 +169,7 @@ CString m_strLabel;
 ```  
   
 ##  <a name="serialize"></a>  CUserTool::Serialize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void Serialize(CArchive& ar);

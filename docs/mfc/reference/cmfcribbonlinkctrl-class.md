@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonLinkCtrl Class
 Implements a hyperlink that is positioned on a ribbon. The hyperlink opens a Web page when you click it.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VCtlmfcsrcmfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
