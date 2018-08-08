@@ -17,7 +17,7 @@ Specifies the number of array elements to be transmitted.
   
 ## Syntax  
   
-```  
+```cpp  
 [ length_is(  
    "expression"  
 ) ]  

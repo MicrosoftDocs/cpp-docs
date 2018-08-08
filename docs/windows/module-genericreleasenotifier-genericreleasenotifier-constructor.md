@@ -17,7 +17,7 @@ Initializes a new instance of the **Module::GenericReleaseNotifier** class.
   
 ## Syntax  
   
-```  
+```cpp  
 GenericReleaseNotifier(  
    T callback,   
    bool release  

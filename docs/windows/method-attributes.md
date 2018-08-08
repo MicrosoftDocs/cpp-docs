@@ -27,8 +27,8 @@ The following attributes apply to the methods in a class, coclass, or interface.
 |[defaultbind](../windows/defaultbind.md)|Indicates the single, bindable property that best represents the object.|  
 |[defaultcollelem](../windows/defaultcollelem.md)|Used for Visual Basic code optimization.|  
 |[displaybind](../windows/displaybind.md)|Indicates a property that should be displayed to the user as bindable.|  
-|[helpcontext](../windows/helpcontext.md)|Specifies a context ID that lets the user view information about this element in the Help file.|  
-|[helpfile](../windows/helpfile.md)|Sets the name of the Help file for a type library.|  
+|[helpcontext](../windows/helpcontext.md)|Specifies a context ID that lets the user view information about this element in the **Help** file.|  
+|[helpfile](../windows/helpfile.md)|Sets the name of the **Help** file for a type library.|  
 |[helpstring](../windows/helpstring.md)|Specifies a character string that is used to describe the element to which it applies.|  
 |[helpstringcontext](../windows/helpstringcontext.md)|Specifies the ID of a help topic in an .hlp or .chm file.|  
 |[helpstringdll](../windows/helpstringdll.md)|Specifies the name of the DLL to use to perform document string lookup (localization).|  

@@ -17,7 +17,7 @@ Indicates that the COM object to which it applies is licensed, and must be insta
   
 ## Syntax  
   
-```  
+```cpp  
 [licensed]  
 ```  
   

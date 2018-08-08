@@ -17,7 +17,7 @@ Lets you pass a locale identifier to a function.
   
 ## Syntax  
   
-```  
+```cpp  
 [lcid]  
 ```  
   

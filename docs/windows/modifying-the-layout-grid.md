@@ -20,7 +20,7 @@ When you are placing or arranging controls in a dialog box, you can use the layo
   
 2.  In the [Guide Settings Dialog Box](../windows/guide-settings-dialog-box.md), select or clear the **Grid** button.  
   
-     You can still control the grid in individual Dialog editor windows using the **Toggle Grid** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  
+     You can still control the grid in individual **Dialog** editor windows using the **Toggle Grid** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).  
   
 ### To change the size of the layout grid  
   
@@ -31,7 +31,6 @@ When you are placing or arranging controls in a dialog box, you can use the layo
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
-  
  Win32  
   
 ## See Also  

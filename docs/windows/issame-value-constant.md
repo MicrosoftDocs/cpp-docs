@@ -17,8 +17,8 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
-  template <typename T1, typename T2>  
+```cpp  
+template <typename T1, typename T2>  
 struct IsSame  
 {  
     static const bool value = false;  
@@ -34,7 +34,7 @@ struct IsSame<T1, T1>
 ## Remarks  
  Indicates whether one type is the same as another.  
   
- `value` is **true** if the template parameters are the same, and **false** if the template parameters are different.  
+ **value** is **true** if the template parameters are the same, and **false** if the template parameters are different.  
   
 ## Requirements  
  **Header:** internal.h  

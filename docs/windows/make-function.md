@@ -17,7 +17,7 @@ Initializes the specified Windows Runtime class. Use this function to instantiat
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename T,  
    typename TArg1,  

@@ -17,7 +17,7 @@ Specifies the index of the last array element to be transmitted.
   
 ## Syntax  
   
-```  
+```cpp  
 [ last_is(  
    "expression"  
 ) ]  
