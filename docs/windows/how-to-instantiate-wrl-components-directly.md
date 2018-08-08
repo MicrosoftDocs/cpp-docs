@@ -24,13 +24,13 @@ To learn how to use Windows Runtime C++ Template Library to create a classic COM
   
 ### To create and instantiate a basic logger component  
   
-1.  In Visual Studio, create a **Win32 Console Application** project. Name the project, for example, `WRLLogger`.  
+1.  In Visual Studio, create a **Win32 Console Application** project. Name the project, for example, *WRLLogger*.  
   
 2.  Add a **Midl File (.idl)** file to the project, name the file `ILogger.idl`, and then add this code:  
   
      [!code-cpp[wrl-logger-make#1](../windows/codesnippet/CPP/how-to-instantiate-wrl-components-directly_1.idl)]  
   
-3.  Use the following code to replace the contents of WRLLogger.cpp.  
+3.  Use the following code to replace the contents of `WRLLogger.cpp`.  
   
      [!code-cpp[wrl-logger-make#2](../windows/codesnippet/CPP/how-to-instantiate-wrl-components-directly_2.cpp)]  
   
@@ -40,7 +40,7 @@ To learn how to use Windows Runtime C++ Template Library to create a classic COM
   
      [!code-cpp[wrl-logger-makeandinitialize#1](../windows/codesnippet/CPP/how-to-instantiate-wrl-components-directly_3.cpp)]  
   
-2.  Use the following code to replace the definition of `wmain`. This version uses `MakeAndInitialize` to instantiate the `CConsoleWriter` object and checks the `HRESULT` result.  
+2.  Use the following code to replace the definition of `wmain`. This version uses `MakeAndInitialize` to instantiate the `CConsoleWriter` object and checks the HRESULT result.  
   
      [!code-cpp[wrl-logger-makeandinitialize#2](../windows/codesnippet/CPP/how-to-instantiate-wrl-components-directly_4.cpp)]  
   

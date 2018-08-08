@@ -16,7 +16,7 @@ Creates an `HStringReference` object from a specified string parameter.
   
 ## Syntax  
   
-```  
+```cpp  
 template<unsigned int sizeDest>  
     static HStringReference MakeReference(  
               wchar_t const (&str)[ sizeDest]);  

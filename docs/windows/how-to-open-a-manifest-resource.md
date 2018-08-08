@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Open a Manifest Resource
-If you open a manifest resource from [Resource View](../windows/resource-view-window.md), the resource will open in binary format. To view the contents of a manifest resource in a more viewable format, you must open the resource from Solution Explorer.  
+If you open a manifest resource from [Resource View](../windows/resource-view-window.md), the resource will open in binary format. To view the contents of a manifest resource in a more viewable format, you must open the resource from **Solution Explorer**.  
   
 ### To open a manifest resource in the Text Editor  
   
@@ -20,7 +20,7 @@ If you open a manifest resource from [Resource View](../windows/resource-view-wi
   
 2.  Double-click the .manifest file.  
   
-     Your manifest resource opens in the Text Editor.  
+     Your manifest resource opens in the **Text Editor**.  
   
 ### To open a manifest resource in another editor  
   
@@ -31,7 +31,6 @@ If you open a manifest resource from [Resource View](../windows/resource-view-wi
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
 ## Requirements  
-  
  Win32  
   
 ## See Also  

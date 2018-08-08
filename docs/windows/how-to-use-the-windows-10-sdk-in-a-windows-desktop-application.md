@@ -21,7 +21,6 @@ If you want to target an earlier version of the SDK, you can open **Project | Pr
   
 1.  Make sure the Windows 10 SDK is installed. The Windows 10 SDK is installed as part of the **Desktop development with C++** workload. A standalone version is available at [Downloads and tools for Windows 10](https://developer.microsoft.com/windows/downloads).
 
-  
 2.  Open the shortcut menu for the project node, and choose **Retarget SDK Version**.  
   
      ![Retarget SDK Version](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")  
@@ -42,7 +41,7 @@ If you want to target an earlier version of the SDK, you can open **Project | Pr
   
      ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")  
   
-     This action changes the values of project macros that include paths to header files and library files. To see what changed, in the Visual C++ Directories section of the Project Properties dialog, choose one of the properties such as the Include Directories, choose to open the dropdown list, and choose \<Edit>. The **Include Directories** dialog appears.  
+     This action changes the values of project macros that include paths to header files and library files. To see what changed, in the **Visual C++ Directories** section of the **Project Properties** dialog, choose one of the properties such as the **Include Directories**, choose to open the dropdown list, and choose \<Edit>. The **Include Directories** dialog appears.  
   
      ![Include Directories dialog box](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")  
   
@@ -56,7 +55,7 @@ If you want to target an earlier version of the SDK, you can open **Project | Pr
   
 1.  Open the shortcut menu for the project node, and choose **Retarget SDK Version**.  
   
-2.  In the Target Platform Version dropdown list, choose 8.1.  
+2.  In the **Target Platform Version** dropdown list, choose **8.1**.  
   
 ## See Also  
  [Windows Desktop Applications (Visual C++)](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)

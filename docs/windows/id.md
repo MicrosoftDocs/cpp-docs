@@ -17,7 +17,7 @@ Specifies a *dispid* parameter for a member function (either a property or a met
   
 ## Syntax  
   
-```  
+```cpp  
 [ id(  
    dispid  
 ) ]  

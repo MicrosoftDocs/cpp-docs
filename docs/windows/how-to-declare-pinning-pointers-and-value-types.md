@@ -36,8 +36,6 @@ int main() {
 }  
 ```  
   
-### Output  
-  
 ```Output  
 8  
 7  

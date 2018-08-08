@@ -42,7 +42,6 @@ You can import graphical resources (bitmaps, icons, cursors, and toolbars), HTML
 4.  Navigate to the folder where you want to save the file and click **Export**.  
   
 ## Requirements  
-  
  Win32  
   
 ## See Also  

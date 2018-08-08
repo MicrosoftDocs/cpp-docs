@@ -16,11 +16,11 @@ Indicates whether the current **HString** object is empty or not.
   
 ## Syntax  
   
-```  
+```cpp  
 bool IsValid() const throw()  
 ```  
   
-#### Parameters  
+### Parameters  
  **true** if the current **HString** object is not empty; otherwise, **false**.  
   
 ## Requirements  

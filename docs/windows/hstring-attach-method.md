@@ -16,13 +16,13 @@ Associates the specified **HString** object with the current **HString** object.
   
 ## Syntax  
   
-```  
+```cpp  
 void Attach(  
        HSTRING hstr  
        ) throw()  
 ```  
   
-#### Parameters  
+### Parameters  
  *hstr*  
  An existing **HString** object.  
   

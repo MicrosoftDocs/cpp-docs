@@ -45,8 +45,6 @@ int main() {
 }  
 ```  
   
-### Output  
-  
 ```Output  
 1st element in arr holds: 1  
 ipi points to memory address whose value is: 1  

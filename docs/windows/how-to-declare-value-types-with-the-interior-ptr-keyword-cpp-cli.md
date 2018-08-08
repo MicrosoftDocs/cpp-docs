@@ -51,9 +51,7 @@ int main() {
    System::Console::WriteLine(pv->data);  
 }  
 ```  
-  
-### Output  
-  
+
 ```Output  
 1  
 2  
@@ -116,8 +114,6 @@ int main() {
    Console::WriteLine(*p3);  
 }  
 ```  
-  
-### Output  
   
 ```Output 
 22  
