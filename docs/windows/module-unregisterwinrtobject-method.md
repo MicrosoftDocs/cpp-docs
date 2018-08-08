@@ -28,8 +28,6 @@ virtual HRESULT UnregisterWinRTObject(
  *cookie*  
  A pointer to a value that identifies the class object whose registration is to be revoked.  
   
-## Return Value  
-  
 ## Requirements  
  **Header:** module.h  
   
