@@ -16,11 +16,11 @@ You can select multiple menu names or menu commands to perform bulk operations s
   
 ### To select multiple menu commands  
   
-1.  While holding down the CTRL key, click the menus or submenu commands you want.  
+1.  While holding down the **Ctrl** key, click the menus or submenu commands you want.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
- **Requirements**  
+## Requirements  
   
  Win32  
   

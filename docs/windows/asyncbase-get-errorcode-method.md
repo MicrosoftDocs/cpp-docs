@@ -17,13 +17,13 @@ Retrieves the error code for the current asynchronous operation.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    get_ErrorCode  
 )(HRESULT* errorCode) override;  
 ```  
   
-#### Parameters  
+### Parameters  
  *errorCode*  
  The location where the current error code is stored.  
   

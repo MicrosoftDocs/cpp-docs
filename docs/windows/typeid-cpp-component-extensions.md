@@ -38,29 +38,27 @@ Platform::Type^ type = T::typeid;
 ```  
   
 ### Parameters  
- `T`  
+ *T*  
  A type name.  
   
 ### Remarks  
  In C++/CX,  typeid returns a [Platform::Type](../cppcx/platform-type-class.md) that is constructed from runtime type information.  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- **Syntax**  
+### Syntax  
   
 ```  
-  
 type::typeid  
 ```  
   
- **Parameters**  
-  
+### Parameters   
  *type*  
- The name of a type (abstract declarator) for which you want the System::Type object.  
+ The name of a type (abstract declarator) for which you want the `System::Type` object.  
   
- **Remarks**  
+### Remarks  
   
  `typeid` is used to get the <xref:System.Type> for a type at compile time.  
   
@@ -73,14 +71,13 @@ type::typeid
  `typeid` also works with native types, although it will still return a System::Type.  To get a type_info structure, use [typeid Operator](../cpp/typeid-operator.md).  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
- The following example compares the typeid keyword to the GetType() member.  
+ The following example compares the typeid keyword to the `GetType()` member.  
   
-```  
+```cpp  
 // keyword__typeid.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -110,14 +107,11 @@ typeid and GetType returned the same System::Type
 G  
   
 System.Single*  
-  
 ```  
-  
- **Example**  
   
  The following sample shows that a variable of type System::Type can be used to get the attributes on a type.  It also shows that for some types, you will have to create a typedef to use `typeid`.  
   
-```  
+```cpp  
 // keyword__typeid_2.cpp  
 // compile with: /clr  
 using namespace System;  

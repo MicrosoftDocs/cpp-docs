@@ -17,7 +17,7 @@ Synchronizes access to internal data members even while event handlers for this 
   
 ## Syntax  
   
-```  
+```cpp  
 Wrappers::SRWLock targetsPointerLock_;  
 ```  
   

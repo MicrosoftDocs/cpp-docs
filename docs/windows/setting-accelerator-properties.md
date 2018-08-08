@@ -19,13 +19,11 @@ You can set accelerator properties in the [Properties window](/visualstudio/ide/
 -   The [Modifier property](../windows/accelerator-modifier-property.md) sets control key combinations for the accelerator.  
   
     > [!NOTE]
-    >  In the Properties window, this property appears as three separate Boolean properties, all of which can be controlled independently: Alt, Ctrl, and Shift.  
+    >  In the Properties window, this property appears as three separate Boolean properties, all of which can be controlled independently: **Alt**, **Ctrl**, and **Shift**.  
   
 -   The [Key property](../windows/accelerator-key-property.md) sets the actual key to use as the accelerator.  
   
 -   The [Type property](../windows/accelerator-type-property.md) determines whether the key is interpreted as virtual (VIRTKEY) or ASCII/ANSI.  
-  
-
   
 ## Requirements  
  Win32  

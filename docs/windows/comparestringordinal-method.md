@@ -22,7 +22,7 @@ inline INT32 CompareStringOrdinal(
    HSTRING rhs)  
 ```  
   
-#### Parameters  
+### Parameters  
  *lhs*  
  The first HSTRING to compare.  
   

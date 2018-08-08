@@ -22,7 +22,7 @@ ms.workload: ["cplusplus", "uwp"]
   
 4.  Click **OK**.  
   
- To add files that are neither source, header, or resource files to your project, right-click the Solution node in Solution Explorer and add the files to the project in the same manner. A Miscellaneous folder will be created to hold the other files in your project.  
+ To add files that are neither source, header, or resource files to your project, right-click the **Solution** node in **Solution Explorer** and add the files to the project in the same manner. A **Miscellaneous** folder will be created to hold the other files in your project.  
   
 > [!NOTE]
 >  Before building your project, you will need to specify build options for these files so that they are included correctly in your finished application. For more information, see [Specifying Project Settings with Property Pages](../ide/property-pages-visual-cpp.md) and [Building a C/C++ Program](../build/building-c-cpp-programs.md).  

@@ -32,7 +32,7 @@ Toolbar Editor
   
  The Toolbar editor is similar to the Image editor in functionality. The menu items, graphic tools, and bitmap grid are the same as those in the Image editor. There is a menu command on the Image menu to allow you to switch between the Toolbar editor and the Image editor. For more information on using the Graphics toolbar, Colors palette, or Image menu, see [Image Editor](../windows/image-editor-for-icons.md).  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  MFC or ATL  
@@ -40,4 +40,3 @@ Toolbar Editor
 ## See Also  
  [Resource Editors](../windows/resource-editors.md)   
  [Menus and Other Resources](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
-

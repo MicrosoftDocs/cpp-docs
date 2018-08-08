@@ -16,7 +16,7 @@ You can use generic type parameters with delegates. For more information on dele
   
 ## Syntax  
   
-```  
+```cpp  
 [attributes]   
 generic < [class | typename] type-parameter-identifiers>  
 [type-parameter-constraints-clauses]  
@@ -24,7 +24,7 @@ generic < [class | typename] type-parameter-identifiers>
 ([formal-parameters]);  
 ```  
   
-#### Parameters  
+### Parameters  
  *attributes* (Optional)  
  Additional declarative information. For more information on attributes and attribute classes, see Attributes.  
   

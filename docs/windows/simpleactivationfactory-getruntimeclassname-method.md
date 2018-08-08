@@ -43,5 +43,4 @@ If &#95;&#95;WRL_STRICT&#95;&#95; is defined, an assert error is emitted if the 
 **Namespace:** Microsoft::WRL
 
 ## See Also
-
-[SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)
+ [SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)

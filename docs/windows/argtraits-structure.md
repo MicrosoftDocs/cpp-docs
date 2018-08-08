@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename TMemberFunction>  
 struct ArgTraits;  
 template<typename TDelegateInterface>  
@@ -105,7 +105,7 @@ template<
 struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9)>;  
 ```  
   
-#### Parameters  
+### Parameters  
  *TMemberFunction*  
  Typename parameter for an ArgTraits structure that cannot match any `Invoke` method signature.  
   
@@ -140,7 +140,7 @@ struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2,
  The type of the ninth argument of the `Invoke` method.  
   
 ## Remarks  
- The `ArgTraits` structure declares a specified delegate interface and an anonymous member function that has a specified number of parameters.  
+ The **ArgTraits** structure declares a specified delegate interface and an anonymous member function that has a specified number of parameters.  
   
 ## Members  
   

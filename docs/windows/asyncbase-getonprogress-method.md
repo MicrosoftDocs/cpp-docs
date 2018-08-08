@@ -17,13 +17,13 @@ Copies the address of the current progress event handler to the specified variab
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    GetOnProgress  
 )(TProgress** progressHandler);  
 ```  
   
-#### Parameters  
+### Parameters  
  *progressHandler*  
  The location where the address of the current progress event handler is stored.  
   

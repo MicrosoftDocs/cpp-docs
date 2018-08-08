@@ -17,13 +17,13 @@ Specifies an exported function or constant in a module by identifying the entry 
   
 ## Syntax  
   
-```  
+```cpp  
 [ entry(  
    id  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *id*  
  The ID of the entry point.  
   

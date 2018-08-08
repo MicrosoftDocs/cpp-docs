@@ -35,12 +35,11 @@ When you open the Dialog editor, the Dialog Editor toolbar automatically appears
 1.  On the **View** menu click **Toolbars** then choose **Dialog Editor** from the submenu.  
   
     > [!NOTE]
-    >  The Dialog Editor toolbar is displayed by default when you open a dialog box resource in the Dialog editor; however, if you explicitly close the toolbar, you will need to invoke it the next time you open a dialog box resource.  
+    >  The **Dialog Editor** toolbar is displayed by default when you open a dialog box resource in the Dialog editor; however, if you explicitly close the toolbar, you will need to invoke it the next time you open a dialog box resource.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  
@@ -48,4 +47,3 @@ When you open the Dialog editor, the Dialog Editor toolbar automatically appears
  [How to: Create a Resource](../windows/how-to-create-a-resource.md)   
  [Resource Files](../windows/resource-files-visual-studio.md)   
  [Dialog Editor](../windows/dialog-editor.md)
-

@@ -17,7 +17,7 @@ Specifies the name of the DLL to use to perform document string lookup (localiza
   
 ## Syntax  
   
-```  
+```cpp  
 [ helpstringdll(  
    "string"  
 ) ]  

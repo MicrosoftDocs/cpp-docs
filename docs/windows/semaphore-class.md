@@ -18,7 +18,6 @@ Represents a synchronization object that controls a shared resource that can sup
 ## Syntax  
   
 ```  
-  
 class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>  
 ```  
   
@@ -34,7 +33,7 @@ class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>
   
 |Name|Description|  
 |----------|-----------------|  
-|[Semaphore::Semaphore Constructor](../windows/semaphore-semaphore-constructor.md)|Initializes a new instance of the Semaphore class.|  
+|[Semaphore::Semaphore Constructor](../windows/semaphore-semaphore-constructor.md)|Initializes a new instance of the **Semaphore** class.|  
   
 ### Public Methods  
   
@@ -52,7 +51,7 @@ class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>
   
 |Name|Description|  
 |----------|-----------------|  
-|[Semaphore::operator= Operator](../windows/semaphore-operator-assign-operator.md)|Moves the specified handle from a Semaphore object to the current Semaphore object.|  
+|[Semaphore::operator= Operator](../windows/semaphore-operator-assign-operator.md)|Moves the specified handle from a **Semaphore** object to the current **Semaphore** object.|  
   
 ## Inheritance Hierarchy  
  `Semaphore`  

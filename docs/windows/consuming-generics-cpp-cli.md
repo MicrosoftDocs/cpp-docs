@@ -103,9 +103,7 @@ int main() {
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 90  
 80  
 70  

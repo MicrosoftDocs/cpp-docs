@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Customizing or Changing Colors (Image Editor for Icons)
-The Image editor's [Colors palette](../windows/colors-window-image-editor-for-icons.md) initially displays 16 standard colors. In addition to the displayed colors, you can create your own custom colors. You can then [save and load a customized Color palette](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  
+The **Image** editor's [Colors palette](../windows/colors-window-image-editor-for-icons.md) initially displays 16 standard colors. In addition to the displayed colors, you can create your own custom colors. You can then [save and load a customized Color palette](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  
   
 ### To change colors on the colors palette  
   
@@ -29,7 +29,6 @@ The Image editor's [Colors palette](../windows/colors-window-image-editor-for-ic
 5.  Click **OK** to add the new color.  
   
 ## Requirements  
-  
  None  
   
 ## See Also  

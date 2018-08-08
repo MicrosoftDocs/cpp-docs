@@ -17,7 +17,7 @@ Indicates that the item exists but should not be displayed in a user-oriented br
   
 ## Syntax  
   
-```  
+```cpp  
 [hidden]  
 ```  
   

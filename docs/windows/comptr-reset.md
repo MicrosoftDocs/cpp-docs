@@ -15,7 +15,7 @@ Releases all references for the pointer to the interface that is associated with
   
 ## Syntax  
   
-```  
+```cpp  
 unsigned long Reset();  
 ```  
   

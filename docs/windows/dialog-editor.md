@@ -13,15 +13,15 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Dialog Editor
-The Dialog editor allows you to create or edit dialog box resources. You open the dialog editor by double-clicking on a dialog’s .rc file in the Resource View window (**View &#124; Resource View**). Note that Resource View is not available in Express editions.  
+The **Dialog** editor allows you to create or edit dialog box resources. You open the dialog editor by double-clicking on a dialog’s .rc file in the **Resource View** window (**View** > **Resource View**). Note that **Resource View** is not available in Express editions.  
   
- One of the first steps in making a new dialog box (or dialog box template) is adding controls to the dialog box. In the Dialog editor, you can arrange controls to fit a certain size, shape, or alignment, or you can move them around to work within the dialog box. It's also easy to delete a control.  
+ One of the first steps in making a new dialog box (or dialog box template) is adding controls to the dialog box. In the **Dialog** editor, you can arrange controls to fit a certain size, shape, or alignment, or you can move them around to work within the dialog box. It's also easy to delete a control.  
   
  You can store a dialog box as a template so you can reuse it. You can also easily switch between designing the dialog box and editing the code that implements it.  
   
- It's also possible to edit properties of single or multiple controls in the Dialog editor. You can change the tab order, that is, the order in which controls gain focus when the TAB key is pressed, or you can define an access key (a key combination) that allows users to choose a control using the keyboard. For a list of preset access keys, see [Accelerator Keys for the Dialog Editor](../windows/accelerator-keys-for-the-dialog-editor.md).  
+ It's also possible to edit properties of single or multiple controls in the Dialog editor. You can change the tab order, that is, the order in which controls gain focus when the **Tab** key is pressed, or you can define an access key (a key combination) that allows users to choose a control using the keyboard. For a list of preset access keys, see [Accelerator Keys for the Dialog Editor](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
- The Dialog editor also allows you to use custom controls, including ActiveX controls. In addition, you can edit a [form view](../mfc/reference/cformview-class.md), [Record Views](../data/record-views-mfc-data-access.md), or [Dialog Bars](../mfc/dialog-bars.md).  
+ The **Dialog** editor also allows you to use custom controls, including ActiveX controls. In addition, you can edit a [form view](../mfc/reference/cformview-class.md), [Record Views](../data/record-views-mfc-data-access.md), or [Dialog Bars](../mfc/dialog-bars.md).  
   
  Starting with Visual Studio 2015, you can use the dialog editor to define dynamic layouts, which specify how controls move and resize when the user resizes a dialog. For more information, see [Dynamic Layout](../mfc/dynamic-layout.md).  
   
@@ -44,9 +44,9 @@ The Dialog editor allows you to create or edit dialog box resources. You open th
 -   [Troubleshooting the Dialog Editor](../windows/troubleshooting-the-dialog-editor.md)  
   
     > [!TIP]
-    >  While using the Dialog editor, in many instances, you can click the right mouse button to display a shortcut menu of frequently used commands.  
+    >  While using the **Dialog** editor, in many instances, you can click the right mouse button to display a shortcut menu of frequently used commands.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  Win32  
@@ -57,4 +57,3 @@ The Dialog editor allows you to create or edit dialog box resources. You open th
  [Control Classes](../mfc/control-classes.md)   
  [Dialog Box Classes](../mfc/dialog-box-classes.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
-

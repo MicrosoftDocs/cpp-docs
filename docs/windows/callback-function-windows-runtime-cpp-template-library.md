@@ -16,7 +16,7 @@ Creates an object whose member function is a callback method.
   
 ## Syntax  
   
-```  
+```cpp  
 template<  
    typename TDelegateInterface,  
    typename TCallback  
@@ -187,7 +187,7 @@ ComPtr<TDelegateInterface> Callback(
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *TDelegateInterface*  
  A template parameter that specifies the interface of the delegate to call when an event occurs.  
   

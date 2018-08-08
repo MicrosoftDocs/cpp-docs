@@ -18,9 +18,7 @@ Specifies a unique pointer.
 ## Syntax  
   
 ```  
-  
 [unique]  
-  
 ```  
   
 ## Remarks  
@@ -35,7 +33,7 @@ Specifies a unique pointer.
   
 |||  
 |-|-|  
-|**Applies to**|`typedef`, `struct`, **union**, interface parameter, interface method|  
+|**Applies to**|**typedef**, **struct**, **union**, interface parameter, interface method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -45,4 +43,4 @@ Specifies a unique pointer.
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
+ [Parameter Attributes](../windows/parameter-attributes.md)   

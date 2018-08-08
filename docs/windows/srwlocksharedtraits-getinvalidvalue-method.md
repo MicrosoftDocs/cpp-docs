@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockSharedTraits::GetInvalidValue Method
-Retrieves an SRWLockSharedTraits object that is always invalid.  
+Retrieves an **SRWLockSharedTraits** object that is always invalid.  
   
 ## Syntax  
   
@@ -22,7 +22,7 @@ inline static Type GetInvalidValue();
 ```  
   
 ## Return Value  
- A handle to a SRWLockSharedTraits object.  
+ A handle to a **SRWLockSharedTraits** object.  
   
 ## Requirements  
  **Header:** corewrappers.h  

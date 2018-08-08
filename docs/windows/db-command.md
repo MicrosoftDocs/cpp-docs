@@ -29,7 +29,6 @@ Creates an OLE DB command.
 ```  
   
 ### Parameters  
-
 *command*  
 A command string containing the text of an OLE DB command. A simple example is:  
   
@@ -100,12 +99,12 @@ The `CSession` variable or instance of a class that has the `db_source` attribut
 **db_command** checks to ensure that the variable used for *source_name* is valid, so the specified variable should be in function or global scope.  
   
 *hresult* (optional)  
-Identifies the variable that will receive the `HRESULT` of this database command. If the variable does not exist, it will be automatically injected by the attribute.  
+Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.  
   
 *bindings* (optional)  
 Allows you to separate the binding parameters from the OLE DB command.  
   
-If you specify a value for *bindings*, **db_command** will parse the associated value and will not parse the \[*bindtype*] parameter. This usage allows you to use OLE DB provider syntax. To disable parsing, without binding parameters, specify **Bindings=""**.  
+If you specify a value for *bindings*, **db_command** will parse the associated value and will not parse the \[*bindtype*] parameter. This usage allows you to use OLE DB provider syntax. To disable parsing, without binding parameters, specify `Bindings=""`.  
   
 If you do not specify a value for *bindings*, **db_command** will parse the binding parameter block, looking for '**(**', followed by **\[**_bindtype_**]** in brackets, followed by one or more previously declared C++ member variables, followed by '**)**'. All text between the parentheses will be stripped from the resulting command, and these parameters will be used to construct column and parameter bindings for this command.  
   
@@ -121,7 +120,7 @@ If *bulk_fetch* is less than one, `SetRows` will return zero.
 ## Remarks  
 **db_command** creates a [CCommand](../data/oledb/ccommand-class.md) object, which is used by an OLE DB consumer to execute a command.  
   
-You can use **db_command** with either class or function scope; the main difference is the scope of the `CCommand` object. With function scope, data such as bindings terminate at function end. Both class and function scope usages involve the OLE DB Consumer Template class `CCommand<>`, but the template arguments differ for the function and class cases. In the function case, bindings will be made to an **Accessor** that comprises local variables, while the class usage will infer a `CAccessor`-derived class as the argument. When used as a class attribute, **db_command** works in conjunction with **db_column**.  
+You can use **db_command** with either class or function scope; the main difference is the scope of the `CCommand` object. With function scope, data such as bindings terminate at function end. Both class and function scope usages involve the OLE DB Consumer Template class `CCommand<>`, but the template arguments differ for the function and class cases. In the function case, bindings will be made to an `Accessor` that comprises local variables, while the class usage will infer a `CAccessor`-derived class as the argument. When used as a class attribute, **db_command** works in conjunction with **db_column**.  
   
 **db_command** can be used to execute commands that do not return a result set.  
   

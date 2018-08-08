@@ -17,7 +17,7 @@ Initializes the **ActivationFactory** class.
   
 ## Syntax  
   
-```  
+```cpp  
 ActivationFactory();  
 ```  
   

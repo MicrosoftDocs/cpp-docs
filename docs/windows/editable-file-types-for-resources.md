@@ -25,8 +25,6 @@ You can open the following types of files and edit the resources they contain.
 |.dll|Dynamic-link library files.|  
 |.bmp, .ico, .dib, and .cur|Bitmap, icon, toolbar and cursor files.|  
   
-
-  
 ## Requirements  
  Win32  
   

@@ -17,7 +17,7 @@ Creates an event source.
   
 ## Syntax  
   
-```  
+```cpp  
 [ event_source(  
    type,  
    optimize=[speed | size],  
@@ -33,7 +33,7 @@ Creates an event source.
   
 -   `com` for COM code. You must use `coclass` when `type`=`com`. This value requires that you include the following header files:  
   
-    ```  
+    ```cpp  
     #define _ATL_ATTRIBUTES  
     #include <atlbase.h>  
     #include <atlcom.h>  

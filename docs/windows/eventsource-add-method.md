@@ -17,7 +17,7 @@ Appends the event handler represented by the specified delegate interface to the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Add(  
    _In_ TDelegateInterface* delegateInterface,  
    _Out_ EventRegistrationToken* token  

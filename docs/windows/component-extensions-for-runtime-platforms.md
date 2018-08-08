@@ -14,9 +14,9 @@ ms.workload: ["cplusplus", "uwp"]
 # Component Extensions for Runtime Platforms
 Visual C++ provides language extensions to help you program against runtime platforms. By using C++/CX, you can program Universal Windows Platform apps and components that compile to native code. Although you can create Universal Windows Platform apps by programming directly against the Windows Runtime COM interfaces, by using C++/CX, you can work with constructors, exceptions, and other modern C++ programming idioms. To enable C++ programming in a managed execution environment on the .NET platform, you can use C++/CLI.  
   
- **Two runtimes, one set of extensions**  
+### Two runtimes, one set of extensions  
   
- C++/CX is a subset of C++/CLI. For extensions that are common to C++/CX and C++/CLI, the semantics depend on whether you are targeting the common language runtime (CLR) or the Windows Runtime. To compile your app to run on the Windows Runtime, specify the **/ZW** compiler option. To compile it to run on the CLR, specify the **/clr** compiler option. These switches are set automatically when you use Visual Studio to create a project.  
+ C++/CX is a subset of C++/CLI. For extensions that are common to C++/CX and C++/CLI, the semantics depend on whether you are targeting the common language runtime (CLR) or the Windows Runtime. To compile your app to run on the Windows Runtime, specify the `/ZW` compiler option. To compile it to run on the CLR, specify the `/clr` compiler option. These switches are set automatically when you use Visual Studio to create a project.  
   
  For more information about how to create Universal Windows Platform apps in C++, see [Roadmap for Windows Runtime apps using C++](http://msdn.microsoft.com/library/windows/apps/hh700360.aspx).  
   
@@ -71,7 +71,7 @@ Visual C++ provides language extensions to help you program against runtime plat
 |**nullptr**|No|Indicates that a handle or pointer does not point at an object.|[nullptr](../windows/nullptr-cpp-component-extensions.md)|  
   
 ## Template Constructs  
- The following language constructs are implemented as templates, instead of as keywords. If you specify the **/ZW** compiler option, they are defined in the `lang` namespace. If you specify the **/clr** compiler option, they are defined in the `cli` namespace.  
+ The following language constructs are implemented as templates, instead of as keywords. If you specify the `/ZW` compiler option, they are defined in the `lang` namespace. If you specify the `/clr` compiler option, they are defined in the `cli` namespace.  
   
 |Keyword|Purpose|Reference|  
 |-------------|-------------|---------------|  

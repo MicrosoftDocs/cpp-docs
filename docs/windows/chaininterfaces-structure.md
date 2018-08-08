@@ -17,7 +17,7 @@ Specifies verification and initialization functions that can be applied to a set
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename I0,  
    typename I1,  
@@ -48,7 +48,7 @@ template <
 struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, I4, I5, I6, I7, I8, I9>;  
 ```  
   
-#### Parameters  
+### Parameters  
  *I0*  
  (Required) Interface ID 0.  
   
@@ -94,8 +94,8 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
   
 |Name|Description|  
 |----------|-----------------|  
-|[ChainInterfaces::CanCastTo Method](../windows/chaininterfaces-cancastto-method.md)|Indicates whether the specified interface ID can be cast to each of the specializations defined by the ChainInterface template parameters.|  
-|[ChainInterfaces::CastToUnknown Method](../windows/chaininterfaces-casttounknown-method.md)|Casts the interface pointer of the type defined by the *I0* template parameter to a pointer to IUnknown.|  
+|[ChainInterfaces::CanCastTo Method](../windows/chaininterfaces-cancastto-method.md)|Indicates whether the specified interface ID can be cast to each of the specializations defined by the **ChainInterface** template parameters.|  
+|[ChainInterfaces::CastToUnknown Method](../windows/chaininterfaces-casttounknown-method.md)|Casts the interface pointer of the type defined by the *I0* template parameter to a pointer to `IUnknown`.|  
 |[ChainInterfaces::FillArrayWithIid Method](../windows/chaininterfaces-fillarraywithiid-method.md)|Stores the interface ID defined by the *I0* template parameter into a specified location in a specified array of interface IDs.|  
 |[ChainInterfaces::Verify Method](../windows/chaininterfaces-verify-method.md)|Verifies that each interface defined by template parameters *I0* through *I9* inherits from `IUnknown` and/or `IInspectable`, and that *I0* inherits from *I1* through *I9*.|  
   

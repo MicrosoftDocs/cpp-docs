@@ -17,7 +17,7 @@ Specifies the index of the first array element to be transmitted.
   
 ## Syntax  
   
-```  
+```cpp  
 [ first_is(  
    "expression"  
 ) ]  

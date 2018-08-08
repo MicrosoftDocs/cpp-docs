@@ -17,7 +17,7 @@ Causes a data structure to be placed in the .idl file.
   
 ## Syntax  
   
-```  
+```cpp  
 [export]  
 ```  
   

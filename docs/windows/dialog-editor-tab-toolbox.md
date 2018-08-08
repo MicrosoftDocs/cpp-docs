@@ -12,9 +12,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Dialog Editor Tab, Toolbox
-The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the Dialog editor. To add controls to your new dialog box, drag controls from the Toolbox to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.  
+The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog** editor. To add controls to your new dialog box, drag controls from the **Toolbox** to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.  
   
- The standard controls available in the Toolbox are:  
+ The standard controls available in the **Toolbox** are:  
   
 -   [Button control](../mfc/reference/cbutton-class.md)  
   
@@ -38,7 +38,7 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
   
 -   [Scroll bar control](../mfc/reference/cscrollbar-class.md)  
   
- The [Windows Common Controls](../mfc/controls-mfc.md) available in the Toolbox provide increased functionality in your application. They include:  
+ The [Windows Common Controls](../mfc/controls-mfc.md) available in the **Toolbox** provide increased functionality in your application. They include:  
   
 -   [Slider control](../mfc/slider-control-styles.md)  
   
@@ -66,15 +66,15 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
   
 -   [Custom control](custom-controls-in-the-dialog-editor.md)  
   
- You can add custom controls to the dialog box by selecting the **Custom Control** icon in the Toolbox and dragging it to your dialog box. To add a Syslink control, add a custom control, then change the control's **Class** property to **Syslink**. This will cause the properties to refresh and show the Syslink control properties. For information on the MFC wrapper class, see [CLinkCtrl](../mfc/reference/clinkctrl-class.md).  
+ You can add custom controls to the dialog box by selecting the **Custom Control** icon in the **Toolbox** and dragging it to your dialog box. To add a **Syslink** control, add a custom control, then change the control's **Class** property to **Syslink**. This will cause the properties to refresh and show the **Syslink** control properties. For information on the MFC wrapper class, see [CLinkCtrl](../mfc/reference/clinkctrl-class.md).  
   
  You may also [add ActiveX controls to your dialog box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md).  
   
- You can also customize the Toolbox window for easier use. For more information, see [Using the Toolbox](/visualstudio/ide/using-the-toolbox).  
+ You can also customize the **Toolbox** window for easier use. For more information, see [Using the Toolbox](/visualstudio/ide/using-the-toolbox).  
 
- For more information on using the RichEdit 1.0 control with MFC, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md)  
+ For more information on using the **RichEdit 1.0** control with MFC, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md)  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  Win32  
@@ -87,4 +87,3 @@ The Dialog Editor tab appears in the [Toolbox window](/visualstudio/ide/referenc
  [Rich Edit Control Examples](../mfc/rich-edit-control-examples.md)   
  [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
-

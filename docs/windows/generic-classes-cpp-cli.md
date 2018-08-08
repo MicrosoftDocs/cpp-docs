@@ -16,7 +16,7 @@ A generic class is declared using the following form:
   
 ## Syntax  
   
-```  
+```cpp  
 [attributes]  
 generic <class-key type-parameter-identifier(s)>  
 [constraint-clauses]  
@@ -30,7 +30,7 @@ class-body
 ## Remarks  
  In the above syntax, the following terms are used:  
   
- `attributes` (optional)  
+ *attributes* (optional)  
  Additional declarative information. For more information on attributes and attribute classes, see Attributes.  
   
  *class-key*  
@@ -414,7 +414,7 @@ ref struct Outer {
 };  
 ```  
   
- The type Outer\<int>::Inner is not the same as the type Outer\<double>::Inner.  
+ The type `Outer<int>::Inner` is not the same as the type `Outer<double>::Inner`.  
   
  As with generic methods in generic classes, additional type parameters can be defined for the nested type. If you use the same type parameter names in the inner and outer class, the inner type parameter will hide the outer type parameter.  
   
@@ -434,7 +434,7 @@ ref class Outer {
   
  Since there is no way to refer to the outer type parameter, the compiler will produce a warning in this situation.  
   
- When constructed nested generic types are named, the type parameter for the outer type is not included in the type parameter list for the inner type, even though the inner type is implicitly parameterized by the outer type's type parameter. In the above case, a name of a constructed type would be Outer\<int>::Inner\<string>.  
+ When constructed nested generic types are named, the type parameter for the outer type is not included in the type parameter list for the inner type, even though the inner type is implicitly parameterized by the outer type's type parameter. In the above case, a name of a constructed type would be `Outer<int>::Inner<string>`.  
   
  The following example demonstrates building and reading a linked list using nested types in generic classes.  
   
@@ -533,7 +533,7 @@ Reading nodes:
   
 -   Properties, events, indexers and operators can use the type parameters of the enclosing generic class as return values, parameters, or local variables, such as when `ItemType` is a type parameter of a class:  
   
-    ```  
+    ```cpp  
     public ItemType MyProperty {}  
     ```  
   

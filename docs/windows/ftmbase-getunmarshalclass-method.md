@@ -17,7 +17,7 @@ Gets the CLSID that COM uses to locate the DLL containing the code for the corre
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHODIMP GetUnmarshalClass(  
    __in REFIID riid,  
    __in_opt void *pv,  

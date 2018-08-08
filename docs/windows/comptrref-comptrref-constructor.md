@@ -17,13 +17,13 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 ComPtrRef(  
    _In_opt_ T* ptr  
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *ptr*  
  The underlying value of another **ComPtrRef** object.  
   

@@ -15,12 +15,12 @@ ms.workload: ["cplusplus", "uwp"]
 A generic function is a function that is declared with type parameters. When called, actual types are used instead of the type parameters.  
   
 ## All Platforms  
- **Remarks**  
+### Remarks
   
  This feature does not apply to all platforms.  
   
 ## Windows Runtime  
- **Remarks**  
+### Remarks
   
  This feature is not supported in the Windows Runtime.  
   
@@ -32,7 +32,7 @@ A generic function is a function that is declared with type parameters. When cal
   
 ### Syntax  
   
-```  
+```cpp  
 [attributes] [modifiers]  
 return-type identifier<type-parameter identifier(s)>  
 [type-parameter-constraints clauses]  
@@ -79,7 +79,6 @@ return-type identifier<type-parameter identifier(s)>
  Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
  The following code sample demonstrates a generic function.  
   
@@ -114,8 +113,6 @@ int main() {
 }  
 ```  
   
- **Example**  
-  
  Generic functions can be overloaded based on signature or arity, the number of type parameters on a function. Also, generic functions can be overloaded with non-generic functions of the same name, as long as the functions differ in some type parameters. For example, the following functions can be overloaded:  
   
 ```cpp  
@@ -131,8 +128,6 @@ ref struct MyClass {
    void MyMythod(int i) {}  
 };  
 ```  
-  
- **Example**  
   
  The following example uses a generic function to find the first element in an array. It declares `MyClass`, which inherits from the base class `MyBaseClass`. `MyClass` contains a generic function, `MyFunction`, which calls another generic function, `MyBaseClassFunction`, within the base class. In `main`, the generic function, `MyFunction`, is called using different type arguments.  
   
@@ -169,8 +164,6 @@ int main() {
    myObj->MyFunction<String^>("Hello generic functions!"));  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 My function returned an int: 2003  

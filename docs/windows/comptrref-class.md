@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename T  
 >  
@@ -43,7 +43,7 @@ class ComPtrRef : public ComPtrRefBase<T>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ComPtrRef::GetAddressOf Method](../windows/comptrref-getaddressof-method.md)|Retrieves the address of a pointer to the interface represented by the current ComPtrRef object.|  
+|[ComPtrRef::GetAddressOf Method](../windows/comptrref-getaddressof-method.md)|Retrieves the address of a pointer to the interface represented by the current **ComPtrRef** object.|  
 |[ComPtrRef::ReleaseAndGetAddressOf Method](../windows/comptrref-releaseandgetaddressof-method.md)|Deletes the current **ComPtrRef** object and returns a pointer-to-a-pointer to the interface that was represented by the **ComPtrRef** object.|  
   
 ### Public Operators  

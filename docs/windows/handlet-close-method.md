@@ -17,7 +17,7 @@ Closes the current **HandleT** object.
   
 ## Syntax  
   
-```  
+```cpp  
 void Close();  
 ```  
   

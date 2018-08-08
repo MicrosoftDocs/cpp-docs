@@ -18,14 +18,13 @@ On a class, specifies the COM object's source interfaces for connection points. 
 ## Syntax  
   
 ```  
-  
-      [ source(  
+[ source(  
    interfaces  
 ) ]  
 ```  
   
-#### Parameters  
- `interfaces`  
+### Parameters  
+ *interfaces*  
  One or more interfaces that you specify when you apply the source attribute to a class. This parameter is not used when source is applied to a property or method.  
   
 ## Remarks  
@@ -35,7 +34,7 @@ On a class, specifies the COM object's source interfaces for connection points. 
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_source.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -73,9 +72,9 @@ class NN : public b
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`, `interface`|  
+|**Applies to**|**class**, **struct**, **interface**|  
 |**Repeatable**|No|  
-|**Required attributes**|**coclass** (when applied to class or struct)|  
+|**Required attributes**|`coclass` (when applied to class or struct)|  
 |**Invalid attributes**|None|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
@@ -84,4 +83,4 @@ class NN : public b
  [IDL Attributes](../windows/idl-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [coclass](../windows/coclass.md)   
+ [coclass](../windows/coclass.md)   

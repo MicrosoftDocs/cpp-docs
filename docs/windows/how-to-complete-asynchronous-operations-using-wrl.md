@@ -30,7 +30,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
   
      [!code-cpp[wrl-consume-async#2](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_1.cpp)]  
   
-     Windows.System.Threading.h declares the types that are required to use an asynchronous timer.  
+     `Windows.System.Threading.h` declares the types that are required to use an asynchronous timer.  
   
      We recommend that you utilize the `using namespace` directive in your .cpp file to make the code more readable.  
   
@@ -112,7 +112,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
  [!code-cpp[wrl-consume-asyncOp#1](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_14.cpp)]  
   
 ### Compiling the Code  
- To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `wrl-consume-asyncOp.cpp` and then run the following command in a Visual Studio Command Prompt window.  
+ To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `wrl-consume-asyncOp.cpp` and then run the following command in a **Visual Studio Command Prompt** window.  
   
  `cl.exe wrl-consume-asyncOp.cpp runtimeobject.lib`  
   

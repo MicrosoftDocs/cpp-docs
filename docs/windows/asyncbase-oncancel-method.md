@@ -17,7 +17,7 @@ When overridden in a derived class, cancels an asynchronous operation.
   
 ## Syntax  
   
-```  
+```cpp  
 virtual void OnCancel(  
    void  
 ) = 0;  

@@ -24,7 +24,7 @@ virtual ~WeakReference();
 ## Return Value  
   
 ## Remarks  
- Deinitializes the current instance of the WeakReference class.  
+ Deinitializes the current instance of the **WeakReference** class.  
   
 ## Requirements  
  **Header:** implements.h  

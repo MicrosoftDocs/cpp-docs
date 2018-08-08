@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 void* operator new(  
    size_t,  
    _In_ void* placement  
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *__unnamed0*  
  An unnamed parameter that specifies the number of bytes of memory to allocate.  
   

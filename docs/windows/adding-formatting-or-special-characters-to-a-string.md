@@ -21,7 +21,7 @@ ms.workload: ["cplusplus", "uwp"]
   
 2.  Select the string you want to modify.  
   
-3.  In the [Properties Window](/visualstudio/ide/reference/properties-window), add any of the standard escape sequences listed below to the text in the **Caption** box, and press **ENTER**.  
+3.  In the [Properties Window](/visualstudio/ide/reference/properties-window), add any of the standard escape sequences listed below to the text in the **Caption** box, and press **Enter**.  
   
     |To get this|Type this|  
     |-----------------|---------------|  
@@ -33,14 +33,12 @@ ms.workload: ["cplusplus", "uwp"]
     |Alert (bell)|\a|  
   
 > [!NOTE]
->  The String editor does not support the full set of escaped ASCI characters. You can only use those listed above.  
+>  The **String** editor does not support the full set of escaped ASCI characters. You can only use those listed above.  
   
- For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
- **Requirements**  
-  
+## Requirements 
  Win32  
   
 ## See Also  
  [String Editor](../windows/string-editor.md)   
-

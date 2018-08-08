@@ -17,23 +17,23 @@ Specifies whether all subsequent IDL attributes are processed and placed in the 
   
 ## Syntax  
   
-```
+```cpp
 [ emitidl(state, defaultimports=boolean) ];
 ```  
   
 ### Parameters  
 *state*  
-One of these possible values: **true**, **false**, **forced**, **restricted**, **push**, or **pop**.  
+One of these possible values: `true`, `false`, `forced`, `restricted`, `push`, or `pop`.  
   
--   If **true**, any IDL category attributes encountered in a source code file are placed in the generated .idl file. This is the default setting for **emitidl**.  
+-   If `true`, any IDL category attributes encountered in a source code file are placed in the generated .idl file. This is the default setting for **emitidl**.  
   
--   If **false**, any IDL category attributes encountered in a source code file are not placed in the generated .idl file.  
+-   If `false`, any IDL category attributes encountered in a source code file are not placed in the generated .idl file.  
   
--   If **restricted**, allows IDL attributes to be in the file without a [module](../windows/module-cpp.md) attribute. The compiler does not generate an .idl file.  
+-   If `restricted`, allows IDL attributes to be in the file without a [module](../windows/module-cpp.md) attribute. The compiler does not generate an .idl file.  
   
--   If **forced**, overrides a subsequent **restricted** attribute, which requires a file to have a **module** attribute if there are IDL attributes in the file.  
+-   If `forced`, overrides a subsequent `restricted` attribute, which requires a file to have a `module` attribute if there are IDL attributes in the file.  
   
--   **push** lets you save the current **emitidl** settings to an internal **emitidl** stack, and **pop** lets you set **emitidl** to whatever value is at the top of the internal **emitidl** stack.  
+-   `push` lets you save the current **emitidl** settings to an internal **emitidl** stack, and `pop` lets you set **emitidl** to whatever value is at the top of the internal **emitidl** stack.  
   
 `defaultimports=`*boolean* \(optional)  
 -   If *boolean* is **true**, docobj.idl is imported into the generated .idl file. Also, if an .idl file with the same name as an .h file that you `#include` into your source code is found in the same directory as the .h file, then the generated .idl file contains an import statement for that .idl file.  

@@ -24,18 +24,18 @@ inline bool TerminateMap(
     bool forceTerminate) throw()  
 ```  
   
-## Parameters  
- `module`  
+### Parameters  
+ *module*  
  A [module](../windows/module-class.md).  
   
- `serverName`  
- The name of a subset of class factories in the module specified by parameter `module`.  
+ *serverName*  
+ The name of a subset of class factories in the module specified by parameter *module*.  
   
- `forceTerminate`  
- `true` to terminate the class factories regardless of they are active; `false` to not terminate the class factories if any factory is active.  
+ *forceTerminate*  
+ **true** to terminate the class factories regardless of they are active; **false** to not terminate the class factories if any factory is active.  
   
 ## Return Value  
- `true` if all class factories were terminated; otherwise, `false`.  
+ **true** if all class factories were terminated; otherwise, **false**.  
   
 ## Remarks  
  Shuts down the class factories in the specified module.  

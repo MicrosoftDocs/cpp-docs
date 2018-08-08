@@ -17,7 +17,7 @@ Retrieves a pointer to the type specified by the current template parameter.
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW Microsoft::WRL::Details::RemoveIUnknown<InterfaceType>* operator->() const;  
 ```  
   

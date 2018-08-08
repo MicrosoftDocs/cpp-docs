@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakRef::operator&amp; Operator
-Returns a ComPtrRef object that represents the current WeakRef object.  
+Returns a `ComPtrRef` object that represents the current **WeakRef** object.  
   
 ## Syntax  
   
@@ -22,7 +22,7 @@ Details::ComPtrRef<WeakRef> operator&() throw()
 ```  
   
 ## Return Value  
- A ComPtrRef object that represents the current WeakRef object.  
+ A `ComPtrRef` object that represents the current **WeakRef** object.  
   
 ## Remarks  
  This is an internal helper operator that is not meant to be used in your code.  

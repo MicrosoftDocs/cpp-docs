@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # helpcontext
-Specifies a context ID that lets the user view information about this element in the Help file.  
+Specifies a context ID that lets the user view information about this element in the **Help** file.  
   
 ## Syntax  
   
-```  
+```cpp  
 [ helpcontext(  
    id  
 ) ]  

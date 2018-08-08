@@ -16,7 +16,7 @@ ms.workload: ["cplusplus", "uwp"]
 *Context-sensitive keywords* are language elements that are recognized only in specific contexts. Outside the specific context, a context-sensitive keyword can be a user-defined symbol.  
   
 ## All Runtimes  
- **Remarks**  
+### Remarks
   
  The following is a list of context-sensitive keywords:  
   
@@ -47,23 +47,22 @@ ms.workload: ["cplusplus", "uwp"]
  For readability purposes, you may want to limit your use of context-sensitive keywords as user-defined symbols.  
   
 ## Windows Runtime  
- **Remarks**  
+### Remarks  
   
  (There are no platform-specific remarks for this feature.)  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- **Remarks**  
+### Remarks  
   
  (There are no platform-specific remarks for this feature.)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
  The following code example shows that in the appropriate context, the **property** context-sensitive keyword can be used to define a property and a variable.  
   
@@ -87,8 +86,6 @@ int main() {
    System::Console::WriteLine(++property);  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 100  

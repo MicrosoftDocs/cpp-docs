@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::Verify Method
-Verifies that each interface defined by template parameters *I0* through *I9* inherits from IUnknown and/or IInspectable, and that *I0* inherits from *I1* through *I9*.  
+Verifies that each interface defined by template parameters *I0* through *I9* inherits from `IUnknown` and/or `IInspectable`, and that *I0* inherits from *I1* through *I9*.  
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW __forceinline static void Verify();  
 ```  
   
