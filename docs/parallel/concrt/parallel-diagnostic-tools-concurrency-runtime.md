@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Parallel Diagnostic Tools (Concurrency Runtime)
-[!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] provides extensive support for debugging and profiling multi-threaded applications.  
+Visual Studio provides extensive support for debugging and profiling multi-threaded applications.  
   
 ## Debugging  
  The Visual Studio debugger includes the **Parallel Stacks** window, **Parallel Tasks** window, and **Parallel Watch** window. For more information, see [Walkthrough: Debugging a Parallel Application](/visualstudio/debugger/walkthrough-debugging-a-parallel-application) and [How to: Use the Parallel Watch Window](/visualstudio/debugger/how-to-use-the-parallel-watch-window).  

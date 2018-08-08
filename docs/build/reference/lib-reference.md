@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 The Microsoft Library Manager (LIB.exe) creates and manages a library of Common Object File Format (COFF) object files. LIB can also be used to create export files and import libraries to reference exported definitions.  
   
 > [!NOTE]
->  You can start this tool only from the [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] command prompt. You cannot start it from a system command prompt or from File Explorer.  
+>  You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.  
   
 -   [Overview of LIB](../../build/reference/overview-of-lib.md)  
   

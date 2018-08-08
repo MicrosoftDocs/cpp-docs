@@ -47,7 +47,7 @@ Specifies the text segment where functions are stored in the .obj file.
  "`segment-class`" (optional)  
  Ignored, but included for compatibility with versions of C++ earlier than version 2.0.  
   
- You can use the [DUMPBIN.EXE](../build/reference/dumpbin-command-line.md) application to view .obj files. Versions of DUMPBIN for each supported target architecture are included with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
+ You can use the [DUMPBIN.EXE](../build/reference/dumpbin-command-line.md) application to view .obj files. Versions of DUMPBIN for each supported target architecture are included with Visual Studio.  
   
 ## Example  
  This example shows how to use the `code_seg` pragma directive to control where object code is put:  

@@ -45,7 +45,7 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerVS2005::OnUpdateSystemColors](#onupdatesystemcolors)|(Overrides [CMFCVisualManagerOffice2003::OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onupdatesystemcolors).)|  
   
 ## Remarks  
- You use the CMFCVisualManagerVS2005 class to change the visual appearance of your application to resemble that of the [!INCLUDE[vsprvsext](../../mfc/reference/includes/vsprvsext_md.md)].  
+ You use the CMFCVisualManagerVS2005 class to change the visual appearance of your application to resemble that of the Microsoft Visual Studio 2005.  
   
  All of the members of this class are virtual functions that are derived from the ancestor of this class, [CMFCVisualManager Class](../../mfc/reference/cmfcvisualmanager-class.md).  
   

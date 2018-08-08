@@ -20,7 +20,7 @@ This step-by-step walkthrough demonstrates how to use C++ AMP to accelerate the 
   
 -   Read [Using Tiles](../../parallel/amp/using-tiles.md).  
   
--   Make sure that [!INCLUDE[win7](../../build/includes/win7_md.md)], [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] is installed on your computer.  
+-   Make sure that Windows 7, [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] is installed on your computer.  
   
 ### To create the project  
   

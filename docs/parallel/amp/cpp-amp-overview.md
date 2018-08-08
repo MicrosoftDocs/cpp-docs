@@ -16,7 +16,7 @@ C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code 
   
 ## System Requirements  
   
-- [!INCLUDE[win7](../../build/includes/win7_md.md)], [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)]  
+- Windows 7, [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)]  
   
 -   DirectX 11 Feature Level 11.0 or later hardware  
   

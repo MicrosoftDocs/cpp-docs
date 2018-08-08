@@ -112,7 +112,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
   
 -   Detachable tabbed windows.  
   
- The `CMFCTabCtrl` class can be used with a dialog box, but is intended for applications that use docking control bars like [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] and [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)]. For more information, see [CDockablePane Class](../../mfc/reference/cdockablepane-class.md).  
+ The `CMFCTabCtrl` class can be used with a dialog box, but is intended for applications that use docking control bars like Microsoft Excel and Visual Studio. For more information, see [CDockablePane Class](../../mfc/reference/cdockablepane-class.md).  
   
  Follow these steps to add a resizable, docking tab control in your application:  
   
