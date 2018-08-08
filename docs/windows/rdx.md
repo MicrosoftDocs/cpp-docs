@@ -17,7 +17,7 @@ Creates a registry key or modifies an existing registry key.
   
 ## Syntax  
   
-```  
+```cpp  
 [ rdx(   
    key,   
    valuename=NULL,   

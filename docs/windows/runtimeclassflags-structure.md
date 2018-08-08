@@ -17,7 +17,7 @@ Contains the type for an instance of a [RuntimeClass](../windows/runtimeclass-cl
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    unsigned int flags  
 >  

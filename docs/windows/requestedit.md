@@ -17,7 +17,7 @@ Indicates that the property supports the `OnRequestEdit` notification.
   
 ## Syntax  
   
-```  
+```cpp  
 [requestedit]  
 ```  
   

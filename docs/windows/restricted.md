@@ -17,7 +17,7 @@ Specifies that a member of a module, interface, or dispinterface cannot be calle
   
 ## Syntax  
   
-```  
+```cpp  
 [ restricted(  
    interfaces  
 ) ]  

@@ -17,7 +17,7 @@ Prohibits assignment to a data member.
   
 ## Syntax  
   
-```  
+```cpp  
 [readonly]  
 ```  
   

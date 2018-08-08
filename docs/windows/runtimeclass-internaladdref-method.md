@@ -17,7 +17,7 @@ Increments the reference count to the current **RuntimeClass** object.
   
 ## Syntax  
   
-```  
+```cpp  
 ULONG InternalAddRef();  
 ```  
   

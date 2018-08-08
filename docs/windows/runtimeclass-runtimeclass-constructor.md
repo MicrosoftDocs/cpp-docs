@@ -17,7 +17,7 @@ Initializes the current instance of the **RuntimeClass** class.
   
 ## Syntax  
   
-```  
+```cpp  
 RuntimeClass();  
 ```  
   

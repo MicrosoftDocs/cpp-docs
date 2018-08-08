@@ -72,8 +72,6 @@ int main()
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 32  
 ```  
