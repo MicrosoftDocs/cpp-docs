@@ -16,7 +16,7 @@ Select controls to size, align, move, copy, or delete them, and then perform the
   
  When a control is selected, it has a shaded border around it with solid (active) or hollow (inactive) "sizing handles," small squares that appear in the selection border. When multiple controls are selected, the dominant control has solid sizing handles; all the other selected controls have hollow sizing handles.  
   
- When you are sizing or aligning multiple controls, the Dialog editor uses the "dominant control" to determine how the other controls are sized or aligned. By default, the dominant control is the first control selected.  
+ When you are sizing or aligning multiple controls, the **Dialog** editor uses the "dominant control" to determine how the other controls are sized or aligned. By default, the dominant control is the first control selected.  
   
 -   [Selecting Multiple Controls](../windows/selecting-multiple-controls.md)  
   

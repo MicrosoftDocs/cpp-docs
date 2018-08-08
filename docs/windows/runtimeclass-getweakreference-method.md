@@ -17,7 +17,7 @@ Gets a pointer to the weak reference object for the current **RuntimeClass** obj
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    GetWeakReference  
 )(_Deref_out_ IWeakReference **weakReference);  

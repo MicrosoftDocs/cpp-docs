@@ -17,7 +17,7 @@ Deinitializes the current instance of the **RuntimeClass** class.
   
 ## Syntax  
   
-```  
+```cpp  
 virtual ~RuntimeClass();  
 ```  
   

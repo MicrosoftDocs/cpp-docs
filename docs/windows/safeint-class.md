@@ -17,7 +17,7 @@ Extends the integer primitives to help prevent integer overflow and lets you com
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename E = _SAFEINT_DEFAULT_ERROR_POLICY>  
 class SafeInt;  
 ```  
@@ -181,19 +181,19 @@ class SafeInt;
   
  Be careful when you use the **SafeInt** class together with the `?:` ternary operator. Consider the following line of code.  
   
-```  
+```cpp  
 Int x = flag ? SafeInt<unsigned int>(y) : -1;  
 ```  
   
  The compiler converts it to this:  
   
-```  
+```cpp  
 Int x = flag ? SafeInt<unsigned int>(y) : SafeInt<unsigned int>(-1);  
 ```  
   
  If `flag` is **false**, the compiler throws an exception instead of assigning the value of -1 to `x`. Therefore, to avoid this behavior, the correct code to use is the following line.  
   
-```  
+```cpp  
 Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;  
 ```  
   

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Setting a Cursor&#39;s Hot Spot (Image Editor for Icons)
-The hot spot of a [cursor](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md) is the point to which Windows refers in tracking the cursor's position. By default, the hot spot is set to the upper-left corner of the cursor (coordinates 0,0). The Hotspot property in the [Properties window](/visualstudio/ide/reference/properties-window) shows the hot spot coordinates.  
+The hot spot of a [cursor](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md) is the point to which Windows refers in tracking the cursor's position. By default, the hot spot is set to the upper-left corner of the cursor (coordinates 0,0). The **Hotspot** property in the [Properties window](/visualstudio/ide/reference/properties-window) shows the hot spot coordinates.  
   
 ### To set a cursor's hot spot  
   
@@ -29,7 +29,6 @@ The hot spot of a [cursor](../windows/icons-and-cursors-image-resources-for-disp
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
-  
  None  
   
 ## See Also  

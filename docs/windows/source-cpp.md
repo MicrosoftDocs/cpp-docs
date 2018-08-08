@@ -17,7 +17,7 @@ On a class, specifies the COM object's source interfaces for connection points. 
   
 ## Syntax  
   
-```  
+```cpp  
 [ source(  
    interfaces  
 ) ]  

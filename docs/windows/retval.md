@@ -17,7 +17,7 @@ Designates the parameter that receives the return value of the member.
   
 ## Syntax  
   
-```  
+```cpp  
 [retval]  
 ```  
   

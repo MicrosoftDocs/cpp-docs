@@ -17,7 +17,7 @@ Specify the size of memory allocated for sized pointers, sized pointers to sized
   
 ## Syntax  
   
-```  
+```cpp  
 [ size_is(  
    "expression"  
 ) ]  

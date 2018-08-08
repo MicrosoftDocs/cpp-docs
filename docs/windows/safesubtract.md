@@ -17,7 +17,7 @@ Subtracts two numbers in a way that protects against overflow.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeSubtract (  
    T t,  
