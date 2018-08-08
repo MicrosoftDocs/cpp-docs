@@ -22,14 +22,14 @@ The restrictions that apply to type parameters on classes are the same as those 
   
 ## Syntax  
   
-```  
+```cpp  
 [attributes] generic <class-key type-parameter-identifier[, ...]>  
 [type-parameter-constraints-clauses][accesibility-modifiers] interface class identifier [: base-list] {   interface-body} [declarators] ;  
 ```  
   
 ## Remarks  
  *attributes* (optional)  
- Additional declarative information. For more information on attributes and attribute classes, see Attributes.  
+ Additional declarative information. For more information on attributes and attribute classes, see **Attributes**.  
   
  *class-key*  
  **class** or **typename**  

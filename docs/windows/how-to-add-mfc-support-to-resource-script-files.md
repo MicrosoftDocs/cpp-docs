@@ -40,7 +40,6 @@ Normally, when you build an MFC application for Windows using the [MFC Applicati
     >  In addition to setting this flag, the .rc file must be part of an MFC project. For example, just setting **MFC Mode** to **True** on an .rc file in a Win32 project won't give you any of the MFC features.  
   
 ## Requirements  
-  
  MFC  
   
 ## See Also  

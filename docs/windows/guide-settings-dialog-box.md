@@ -15,26 +15,26 @@ ms.workload: ["cplusplus", "uwp"]
 ## Layout guides  
  Displays the settings for the layout guides.  
   
- **None**  
+### None  
   
  Hides layout tools.  
   
- **Rulers and guides**  
+### Rulers and guides  
   
  When enabled, adds rulers to the layout tools; guides can be placed in the rulers. The default guides are the margins, which can be moved by dragging. Click in the rulers to place a guide. Controls "snap" to guides when the controls are moved over or next to them. Controls also move with a guide once they are attached to it. When a control is attached to a guide on each side, and a guide is moved, the control is resized.  
   
- **Grid**  
+### Grid  
   
  Creates a layout grid. New controls will automatically align to the grid.  
   
 ## Grid spacing  
  Displays the settings for the grid spacing in dialog box units (DLUs).  
   
- **Width: DLUs**  
+### Width: DLUs  
   
  Sets the width of the layout grid in DLUs. A horizontal DLU is the average width of the dialog box font divided by four.  
   
- **Height: DLUs**  
+### Height: DLUs 
   
  Sets the height of the layout grid in DLUs. A vertical DLU is the average height of the dialog box font divided by eight.  
   

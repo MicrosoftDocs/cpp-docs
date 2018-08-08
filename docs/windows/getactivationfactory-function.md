@@ -17,7 +17,7 @@ Retrieves an activation factory for the type specified by the template parameter
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T>  
 inline HRESULT GetActivationFactory(  
    _In_ HSTRING activatableClassId,  

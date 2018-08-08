@@ -17,7 +17,7 @@ Deinitializes an instance of the **HandleT** class.
   
 ## Syntax  
   
-```  
+```cpp  
 ~HandleT();  
 ```  
   

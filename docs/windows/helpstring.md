@@ -17,7 +17,7 @@ Specifies a character string that is used to describe the element to which it ap
   
 ## Syntax  
   
-```  
+```cpp  
 [ helpstring(  
    "string"  
 ) ]  
