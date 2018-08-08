@@ -18,8 +18,8 @@ Predefined inference rules use NMAKE-supplied command and options macros.
 |----------|-------------|------------------------|--------------------|----------------------------|  
 |.asm.exe|$(AS) $(AFLAGS) $<|ml $<|no|x86|  
 |.asm.obj|$(AS) $(AFLAGS) /c $<|ml /c $<|yes|x86|  
-|.asm.exe|$(AS) $(AFLAGS) $<|ml64 $<|no|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|.asm.obj|$(AS) $(AFLAGS) /c $<|ml64 /c $<|yes|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|.asm.exe|$(AS) $(AFLAGS) $<|ml64 $<|no|x64|  
+|.asm.obj|$(AS) $(AFLAGS) /c $<|ml64 /c $<|yes|x64|  
 |.c.exe|$(CC) $(CFLAGS) $<|cl $<|no|all|  
 |.c.obj|$(CC) $(CFLAGS) /c $<|cl /c $<|yes|all|  
 |.cc.exe|$(CC) $(CFLAGS) $<|cl $<|no|all|  

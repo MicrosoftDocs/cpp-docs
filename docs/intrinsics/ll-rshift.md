@@ -40,7 +40,7 @@ __int64 __ll_rshift(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__ll_rshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ll_rshift`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

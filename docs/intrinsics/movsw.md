@@ -41,7 +41,7 @@ void __movsw( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__movsw`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsw`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

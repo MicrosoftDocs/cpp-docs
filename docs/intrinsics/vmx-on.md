@@ -44,7 +44,7 @@ unsigned char __vmx_on(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__vmx_on`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_on`|x64|  
   
  **Header file** \<intrin.h>  
   

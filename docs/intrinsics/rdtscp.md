@@ -46,7 +46,7 @@ unsigned __int64 __rdtscp(
 > [!CAUTION]
 >  Unlike `rdtsc`, `rdtscp` is a serializing instruction; nevertheless, the compiler can move code around this intrinsic.  
   
- The interpretation of the TSC value in this generation of hardware differs from that in earlier versions of [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  See hardware manuals for more information.  
+ The interpretation of the TSC value in this generation of hardware differs from that in earlier versions of x64.  See hardware manuals for more information.  
   
  The meaning of the value in `TSC_AUX[31:0]` depends on the operating system.  
   

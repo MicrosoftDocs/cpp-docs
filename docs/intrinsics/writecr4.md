@@ -33,7 +33,7 @@ void writecr4( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__writecr4`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writecr4`|x86, x64|  
   
  **Header file** \<intrin.h>  
   
