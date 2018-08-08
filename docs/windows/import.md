@@ -17,7 +17,7 @@ Specifies another .idl, .odl, or header file containing definitions you want to 
   
 ## Syntax  
   
-```  
+```cpp  
 [ import(  
    idl_file  
 ) ];  

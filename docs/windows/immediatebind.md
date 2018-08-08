@@ -17,7 +17,7 @@ Indicates that the database will be notified immediately of all changes to a pro
   
 ## Syntax  
   
-```  
+```cpp  
 [immediatebind]  
 ```  
   

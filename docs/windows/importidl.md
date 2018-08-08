@@ -17,7 +17,7 @@ Inserts the specified .idl file into the generated .idl file.
   
 ## Syntax  
   
-```  
+```cpp  
 [ importidl(  
    idl_file  
 ) ];  

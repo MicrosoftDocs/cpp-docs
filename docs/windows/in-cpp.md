@@ -17,7 +17,7 @@ Indicates that a parameter is to be passed from the calling procedure to the cal
   
 ## Syntax  
   
-```  
+```cpp  
 [in]  
 ```  
   

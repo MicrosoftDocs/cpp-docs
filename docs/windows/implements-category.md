@@ -17,7 +17,7 @@ Specifies the component categories implemented by the target class.
   
 ## Syntax  
   
-```  
+```cpp  
 [ implements_category(  
    implements_category="uuid"  
 ) ]  
@@ -33,7 +33,7 @@ Specifies the component categories implemented by the target class.
  This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if `progid` is applied, `vi_progid` and `coclass` are also applied.  
   
 ## Example  
- The following code specifies that the following object implements the Control category.  
+ The following code specifies that the following object implements the `Control` category.  
   
 ```cpp  
 // cpp_attr_ref_implements_category.cpp  

@@ -17,7 +17,7 @@ Causes an .idl or .h file to be included in the generated .idl file.
   
 ## Syntax  
   
-```  
+```cpp  
 [ includelib(  
    name.idl  
 ) ];  

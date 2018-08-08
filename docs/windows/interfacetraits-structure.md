@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template<  
    typename I0  
 >  
@@ -57,7 +57,7 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
 |[InterfaceTraits::CastToBase Method](../windows/interfacetraits-casttobase-method.md)|Casts the specified pointer to a pointer to `Base`.|  
 |[InterfaceTraits::CastToUnknown Method](../windows/interfacetraits-casttounknown-method.md)|Casts the specified pointer to a pointer to `IUnknown`.|  
 |[InterfaceTraits::FillArrayWithIid Method](../windows/interfacetraits-fillarraywithiid-method.md)|Assigns the interface ID of `Base` to the array element specified by the index argument.|  
-|[InterfaceTraits::Verify Method](../windows/interfacetraits-verify-method.md)|Verifies that Base is properly derived.|  
+|[InterfaceTraits::Verify Method](../windows/interfacetraits-verify-method.md)|Verifies that `Base` is properly derived.|  
   
 ### Public Constants  
   

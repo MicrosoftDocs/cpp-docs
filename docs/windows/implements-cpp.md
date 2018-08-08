@@ -17,7 +17,7 @@ Specifies dispatch interfaces that are forced to be members of the IDL coclass.
   
 ## Syntax  
   
-```  
+```cpp  
 [ implements(   
    interfaces={interfaces},  
    dispinterfaces={dispinterfaces}  
@@ -32,7 +32,7 @@ Specifies dispatch interfaces that are forced to be members of the IDL coclass.
  A comma separated list of the dispinterface that will be a member of the IDL coclass. A shorthand method for specifying a single dispinterface is **implements(dispinterfaces** *= dispinterface_name***)**.  
   
 ## Remarks  
- By default, only COM-interfaces that are base classes of the coclass are added in the IDL coclass. **implements** lets you force other interfaces to be IDL coclass members.  
+ By default, only COM-interfaces that are base classes of the `coclass` are added in the IDL coclass. **implements** lets you force other interfaces to be IDL `coclass` members.  
   
 ## Requirements  
   
