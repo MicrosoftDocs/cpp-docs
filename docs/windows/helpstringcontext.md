@@ -17,7 +17,7 @@ Specifies the ID of a help topic in an .hlp or .chm file.
   
 ## Syntax  
   
-```  
+```cpp  
 [ helpstringcontext(  
    contextID  
 ) ]  
@@ -25,7 +25,7 @@ Specifies the ID of a help topic in an .hlp or .chm file.
   
 ### Parameters  
  *contextID*  
- A 32-bit Help context identifier in the Help file.  
+ A 32-bit Help context identifier in the **Help** file.  
   
 ## Remarks  
  The **helpstringcontext** C++ attribute has the same functionality as the [helpstringcontext](http://msdn.microsoft.com/library/windows/desktop/aa366858) ODL attribute.  

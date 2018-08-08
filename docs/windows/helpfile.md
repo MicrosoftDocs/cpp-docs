@@ -17,7 +17,7 @@ Sets the name of the Help file for a type library.
   
 ## Syntax  
   
-```  
+```cpp  
 [ helpfile(  
    "filename"  
 ) ]  

@@ -17,7 +17,7 @@ Disassociates the current **HandleT** object from its underlying handle.
   
 ## Syntax  
   
-```  
+```cpp  
 typename HandleTraits::Type Detach();  
 ```  
   

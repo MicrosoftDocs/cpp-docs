@@ -17,7 +17,7 @@ Associates the specified handle with the current **HandleT** object.
   
 ## Syntax  
   
-```  
+```cpp  
 void Attach(  
    typename HandleTraits::Type h  
 );  
