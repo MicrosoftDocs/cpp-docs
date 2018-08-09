@@ -25,14 +25,13 @@ The **Select Color**, or color-pickup, tool makes any color on the image the cur
 2.  Select the color you want to pick up from the image.  
   
     > [!NOTE]
-    >  After you pick up a color, the Image editor reactivates the most recently used tool.  
+    >  After you pick up a color, the **Image** editor reactivates the most recently used tool.  
   
 3.  Draw using the left mouse button for the foreground color, or the right mouse button for the background color.  
   
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
-  
  None  
   
 ## See Also  

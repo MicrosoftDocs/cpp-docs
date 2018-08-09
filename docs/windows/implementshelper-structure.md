@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename RuntimeClassFlagsT,  
    typename ILst,  
@@ -39,7 +39,7 @@ friend struct Details::ImplementsHelper;
 ## Remarks  
  Helps implement the [Implements](../windows/implements-structure.md) structure.  
   
- This template traverses a list of interfaces and adds them as base classes, and as information necessary to enable QueryInterface.  
+ This template traverses a list of interfaces and adds them as base classes, and as information necessary to enable `QueryInterface`.  
   
 ## Members  
   

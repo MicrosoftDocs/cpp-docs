@@ -18,7 +18,7 @@ Enables the use of Visual C++ keywords as identifiers.
 ## All Platforms  
 ### Syntax  
   
-```  
+```cpp  
 __identifier(  
 Visual_C++_keyword  
 )  
@@ -36,7 +36,7 @@ Use of the **__identifier** keyword for identifiers that are not keywords is per
 ### Examples  
  **Example**  
   
- In the following example, a class named `template` is created in C# and distributed as a DLL. In the Visual C++ program that uses the `template` class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.  
+ In the following example, a class named **template** is created in C# and distributed as a DLL. In the Visual C++ program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.  
   
 ```cs  
 // identifier_template.cs  
@@ -66,7 +66,7 @@ int main() {
   
 ### Examples  
   
- In the following example, a class named `template` is created in C# and distributed as a DLL. In the Visual C++ program that uses the `template` class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.  
+ In the following example, a class named **template** is created in C# and distributed as a DLL. In the Visual C++ program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.  
   
 ```cs  
 // identifier_template.cs  

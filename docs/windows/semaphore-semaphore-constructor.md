@@ -17,7 +17,7 @@ Initializes a new instance of the **Semaphore** class.
   
 ## Syntax  
   
-```  
+```cpp  
 explicit Semaphore(  
    HANDLE h  
 );  

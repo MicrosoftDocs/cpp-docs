@@ -17,7 +17,7 @@ Specifies a property setting function that uses a reference instead of a value.
   
 ## Syntax  
   
-```  
+```cpp  
 [propputref]  
 ```  
   

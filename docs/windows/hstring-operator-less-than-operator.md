@@ -22,7 +22,7 @@ inline bool operator<(
     const HString& rhs) throw()  
 ```  
   
-#### Parameters  
+### Parameters  
  *lhs*  
  The first parameter to compare. *lhs* can be a reference to an **HString**.  
   

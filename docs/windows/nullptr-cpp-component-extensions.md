@@ -104,8 +104,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 pMyClass == nullptr  
   
@@ -172,8 +170,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 test  
 ```  
@@ -200,8 +196,6 @@ int main() {
    x -> Test();  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 NULL  

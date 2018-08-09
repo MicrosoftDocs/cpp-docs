@@ -17,7 +17,7 @@ Defines common characteristics of a **Semaphore** object.
   
 ## Syntax  
   
-```  
+```cpp  
 struct SemaphoreTraits : HANDLENullTraits;  
 ```  
   

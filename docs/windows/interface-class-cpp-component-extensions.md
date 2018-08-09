@@ -19,14 +19,13 @@ Declares an interface.  For information on native interfaces, see [__interface](
 
 ### Syntax  
   
-```  
+```cpp  
 interface_access  
 interface class  
  name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};  
 ```  
   
 ### Parameters  
-  
  *interface_access*  
  The accessibility of an interface outside the assembly.  Possible values are **public** and **private**.  **private** is the default. Nested interfaces cannot have an *interface_access* specifier.  
   
@@ -62,7 +61,7 @@ interface class
  In the development environment, you can get F1 help on these keywords by highlighting the keyword, (`interface class`, for example) and pressing F1.  
   
 ## Windows Runtime  
- **Remarks**  
+### Remarks 
   
  (There are no remarks for this language feature that apply to only the Windows Runtime.)  
   
@@ -70,7 +69,7 @@ interface class
  Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- **Remarks**  
+### Remarks
   
  (There are no remarks for this language feature that apply to only the common language runtime.)  
   
@@ -170,8 +169,6 @@ int main() {
    hi->Function_1();  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 in Function_3  

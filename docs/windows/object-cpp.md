@@ -17,7 +17,7 @@ Identifies a custom interface.
   
 ## Syntax  
   
-```  
+```cpp  
 [object]  
 ```  
   

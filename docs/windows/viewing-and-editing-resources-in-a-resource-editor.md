@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Viewing and Editing Resources in a Resource Editor
-Each resource type has a Resource editor specific to that resource type. You can rearrange, resize, add controls and features, or otherwise modify aspects of a resource using the associated editor. You can also edit a resource in [text format](../windows/how-to-open-a-resource-script-file-in-text-format.md) and [binary format](../windows/opening-a-resource-for-binary-editing.md).  
+Each resource type has a **Resource** editor specific to that resource type. You can rearrange, resize, add controls and features, or otherwise modify aspects of a resource using the associated editor. You can also edit a resource in [text format](../windows/how-to-open-a-resource-script-file-in-text-format.md) and [binary format](../windows/opening-a-resource-for-binary-editing.md).  
   
  Some resource types are individual files that can be imported and used in various ways; these include bitmaps, icons, cursors, toolbars, and html files. Such resources have file names as well as [resource identifiers](../windows/symbols-resource-identifiers.md). Others, such as dialogs, menus, and string tables in Win32 projects, exist only as part of a resource script (.rc) file or resource template (.rct) file.  
   
@@ -27,16 +27,16 @@ Each resource type has a Resource editor specific to that resource type. You can
   
 1.  Select **Resource View** from the **View** menu.  
   
-2.  If the Resource View window is not the top-most window, click the **Resource View** tab to bring it to the top.  
+2.  If the **Resource View** window is not the top-most window, click the **Resource View** tab to bring it to the top.  
   
-3.  From Resource View, expand the folder for the project that contains resources you want to view. For example, if you want to view a dialog resource, expand the Dialog folder.  
+3.  From **Resource View**, expand the folder for the project that contains resources you want to view. For example, if you want to view a dialog resource, expand the **Dialog** folder.  
   
     > [!NOTE]
     >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
-4.  Double-click the resource, for example, IDD_ABOUTBOX.  
+4.  Double-click the resource, for example, **IDD_ABOUTBOX**.  
   
-     The resource opens in the appropriate editor. For example, for dialog resources, the resource opens inside the Dialog editor.  
+     The resource opens in the appropriate editor. For example, for dialog resources, the resource opens inside the **Dialog** editor.  
   
      You can also [view resources in an .rc (resource script) file without having a project open](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).  
   
@@ -56,7 +56,7 @@ Each resource type has a Resource editor specific to that resource type. You can
   
 ### To view a managed resource in a resource editor  
   
-1.  In **Solution Explorer**, double-click the resource, for example, Bitmap1.bmp.  
+1.  In **Solution Explorer**, double-click the resource, for example, **Bitmap1.bmp**.  
   
      The resource opens in the appropriate editor.  
   
@@ -64,7 +64,7 @@ Each resource type has a Resource editor specific to that resource type. You can
   
 1.  In **Solution Explorer**, right-click the resource you want to delete and choose **Delete** from the shortcut menu.  
   
-### Requirements  
+## Requirements  
  None  
   
 ## See Also  

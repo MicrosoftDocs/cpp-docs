@@ -17,7 +17,7 @@ Defines the library block in the .idl file.
   
 ## Syntax  
   
-```  
+```cpp  
 [ module (  
    type=dll,  
    name=string,  
@@ -38,8 +38,8 @@ Defines the library block in the .idl file.
 ```  
   
 ### Parameters  
- *type* (optional)  
- Can be one of the following:  
+*type* (optional)  
+Can be one of the following:  
   
 -   `dll` Adds functions and classes that allow the resulting DLL to function as a in-process COM server. This is the default value.  
   
@@ -49,51 +49,51 @@ Defines the library block in the .idl file.
   
 -   `unspecified` Disables injection of ATL code related to the module attribute: the injection of ATL Module class, global instance _AtlModule and entry point functions. Does not disable injection of ATL code due to other attributes in the project.  
   
- *name* (optional)  
- The name of the library block.  
+*name* (optional)  
+The name of the library block.  
   
- *version* (optional)  
- The version number you want to assign to the library block. The default value is 1.0.  
+*version* (optional)  
+The version number you want to assign to the library block. The default value is 1.0.  
   
- *uuid*  
- The unique ID for the library. If you omit this parameter, an ID will be automatically generated for the library. You may need to retrieve the *uuid* of your library block, which you can do by using the identifier **__uuidof(***libraryname***)**.  
+*uuid*  
+The unique ID for the library. If you omit this parameter, an ID will be automatically generated for the library. You may need to retrieve the *uuid* of your library block, which you can do by using the identifier **__uuidof(***libraryname***)**.  
   
- *lcid*  
- The localization parameter. See [lcid](http://msdn.microsoft.com/library/windows/desktop/aa367067) for more information.  
+*lcid*  
+The localization parameter. See [lcid](http://msdn.microsoft.com/library/windows/desktop/aa367067) for more information.  
   
- *control* (optional)  
- Specifies that all coclasses in the library are controls.  
+*control* (optional)  
+Specifies that all coclasses in the library are controls.  
   
- *helpstring*  
- Specifies the type library.  
+*helpstring*  
+Specifies the type library.  
   
- *helpstringdll*  (optional)  
- Sets the name of the .dll file to use to perform a document string lookup. See [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) for more information.  
+*helpstringdll*  (optional)  
+Sets the name of the .dll file to use to perform a document string lookup. See [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) for more information.  
   
- *helpfile* (optional)  
- The name of the Help file for the type library.  
+*helpfile* (optional)  
+The name of the **Help** file for the type library.  
   
- *helpcontext* (optional)  
- The Help ID for this type library.  
+*helpcontext* (optional)  
+The **Help ID** for this type library.  
   
- *helpstringcontext* (optional)  
- See [helpstringcontext](../windows/helpstringcontext.md) for more information.  
+*helpstringcontext* (optional)  
+See [helpstringcontext](../windows/helpstringcontext.md) for more information.  
   
- *hidden* (optional)  
- Prevents the entire library from being displayed. This usage is intended for use with controls. Hosts need to create a new type library that wraps the control with extended properties. See the [hidden](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL attribute for more information.  
+*hidden* (optional)  
+Prevents the entire library from being displayed. This usage is intended for use with controls. Hosts need to create a new type library that wraps the control with extended properties. See the [hidden](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL attribute for more information.  
   
- *restricted* (optional)  
- Members of the library cannot be called arbitrarily. See the [restricted](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL attribute for more information.  
+*restricted* (optional)  
+Members of the library cannot be called arbitrarily. See the [restricted](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL attribute for more information.  
   
- *custom*  (optional)  
- One or more attributes; this is similar to the [custom](../windows/custom-cpp.md) attribute. The first parameter to *custom* is the GUID of the attribute. For example:  
+*custom*  (optional)  
+One or more attributes; this is similar to the [custom](../windows/custom-cpp.md) attribute. The first parameter to *custom* is the GUID of the attribute. For example:  
   
 ```  
 [module(custom={guid,1}, custom={guid1,2})]  
 ```  
   
- *resource_name*  
- The string resource ID of the .rgs file used to register the APP ID of the DLL, executable, or service. When the module is of type service, this argument is also used to obtain the ID of the string containing the service name.  
+*resource_name*  
+The string resource ID of the .rgs file used to register the APP ID of the DLL, executable, or service. When the module is of type service, this argument is also used to obtain the ID of the string containing the service name.  
   
 > [!NOTE]
 >  Both the .rgs file and the string containing the service name should contain the same numerical value.  

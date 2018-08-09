@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 __forceinline static void Verify();  
 ```  
   
 ## Remarks  
  Verifies that `Base` is properly derived.  
   
- For more information about `Base`, see the Public Typedefs section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).  
+ For more information about `Base`, see the **Public Typedefs** section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).  
   
 ## Requirements  
  **Header:** implements.h  

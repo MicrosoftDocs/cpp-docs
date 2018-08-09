@@ -49,17 +49,17 @@ Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Univ
   
 ### To use the WRL to create the Media Foundation grayscale transform component  
   
-1.  In Visual Studio, create a **Blank Solution** project. Name the project, for example, `MediaCapture`.  
+1.  In Visual Studio, create a **Blank Solution** project. Name the project, for example, *MediaCapture*.  
   
-2.  Add a **DLL (Universal Windows)** project to the solution. Name the project, for example, `GrayscaleTransform`.  
+2.  Add a **DLL (Universal Windows)** project to the solution. Name the project, for example, *GrayscaleTransform*.  
   
-3.  Add a **Midl File (.idl)** file to the project. Name the file, for example, `GrayscaleTransform.idl`.  
+3.  Add a **Midl File (.idl)** file to the project. Name the file, for example, *GrayscaleTransform.idl*.  
   
 4.  Add this code to GrayscaleTransform.idl.  
   
      [!code-cpp[wrl-media-capture#1](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_1.idl)]  
   
-5.  Use the following code to replace the contents of pch.h.  
+5.  Use the following code to replace the contents of `pch.h`.  
   
      [!code-cpp[wrl-media-capture#2](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_2.h)]  
   
@@ -67,9 +67,9 @@ Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Univ
   
      [!code-cpp[wrl-media-capture#3](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_3.h)]  
   
-7.  GrayscaleTransform.h is not used in this example. You can remove it from the project if you want to.  
+7.  `GrayscaleTransform.h` is not used in this example. You can remove it from the project if you want to.  
   
-8.  Use the following code to replace the contents of GrayscaleTransform.cpp.  
+8.  Use the following code to replace the contents of `GrayscaleTransform.cpp`.  
   
      [!code-cpp[wrl-media-capture#4](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_4.cpp)]  
   
@@ -82,7 +82,7 @@ Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Univ
        DllGetClassObject                   PRIVATE
    ```   
   
-10. Use the following code to replace the contents of dllmain.cpp.  
+10. Use the following code to replace the contents of `dllmain.cpp`.  
   
      [!code-cpp[wrl-media-capture#6](../windows/codesnippet/CPP/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_6.cpp)]  
   
@@ -96,21 +96,21 @@ Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Univ
   
 ### To use the WRL the custom Media Foundation component from a C# app  
   
-1.  Add a new **C# Blank App (XAML)** project to the `MediaCapture` solution. Name the project, for example, `MediaCapture`.  
+1.  Add a new **C# Blank App (XAML)** project to the `MediaCapture` solution. Name the project, for example, *MediaCapture*.  
   
 2.  In the **MediaCapture** project, add a reference to the `GrayscaleTransform` project. To learn how, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager).  
   
-3.  In Package.appxmanifest, on the **Capabilities** tab, select **Microphone** and **Webcam**. Both capabilities are required to capture photos from the webcam.  
+3.  In `Package.appxmanifest`, on the **Capabilities** tab, select **Microphone** and **Webcam**. Both capabilities are required to capture photos from the webcam.  
   
-4.  In MainPage.xaml, add this code to the root [Grid](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) element:  
+4.  In `MainPage.xaml`, add this code to the root [Grid](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) element:  
   
      [!code-xml[wrl-media-capture#7](../windows/codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]  
   
-5.  Use the following code to replace the contents of MainPage.xaml.cs.  
+5.  Use the following code to replace the contents of `MainPage.xaml.cs`.  
   
      [!code-cs[wrl-media-capture#8](../windows/codesnippet/CSharp/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_8.cs)]  
   
- The following illustration shows the MediaCapture app.  
+ The following illustration shows the `MediaCapture app`.  
   
  ![MediaCapture app capturing a photo](../windows/media/wrl_media_capture.png "WRL_Media_Capture")  
   

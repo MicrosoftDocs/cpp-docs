@@ -17,7 +17,7 @@ Ensures that a typedef will go into the type library even if it is not reference
   
 ## Syntax  
   
-```  
+```cpp  
 [public]  
 ```  
   

@@ -17,7 +17,7 @@ Implements `QueryInterface` and `GetIid` for the specified interfaces.
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename I0,  
    typename I1 = Details::Nil,  

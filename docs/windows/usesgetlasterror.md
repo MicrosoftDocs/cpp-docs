@@ -17,7 +17,7 @@ Tells the caller that if there is an error when calling that function, then the 
   
 ## Syntax  
   
-```  
+```cpp  
 [usesgetlasterror]  
 ```  
   

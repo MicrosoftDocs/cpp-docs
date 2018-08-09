@@ -33,9 +33,10 @@ Previewing your resources allows you to view graphical resource without opening 
   
 ### To preview resources  
   
-1.  In [Resource View](../windows/resource-view-window.md) or a document window, select your resource, for example, IDD_ABOUTBOX.  
+1.  In [Resource View](../windows/resource-view-window.md) or a document window, select your resource, for example, **IDD_ABOUTBOX**.  
   
-     **Note** If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
+     > [!NOTE]
+     > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
 2.  In the [Properties window](/visualstudio/ide/reference/properties-window), click the **Property Pages** button.  
   
@@ -43,12 +44,11 @@ Previewing your resources allows you to view graphical resource without opening 
   
 3.  On the **View** menu, click **Property Pages**.  
   
-     The Property Page for the resource opens displaying a preview of that resource. You can then use the Up and Down arrow keys to navigate the tree control in Resource View or the document window. The Property Page will stay open and show any resource that has focus and is able to be previewed.  
+     The **Property Page** for the resource opens displaying a preview of that resource. You can then use the **Up** and **Down** arrow keys to navigate the tree control in **Resource View** or the document window. The **Property Page** will stay open and show any resource that has focus and is able to be previewed.  
   
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements 
-  
  Win32  
   
 ## See Also  

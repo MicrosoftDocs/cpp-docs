@@ -17,7 +17,7 @@ Creates an instance of a module.
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW static Module& Create();  
 template<typename T>  
 WRL_NOTHROW static Module& Create(  

@@ -17,7 +17,7 @@ Retrieves an **SRWLockExclusiveTraits** object that is always invalid.
   
 ## Syntax  
   
-```  
+```cpp  
 inline static Type GetInvalidValue();  
 ```  
   

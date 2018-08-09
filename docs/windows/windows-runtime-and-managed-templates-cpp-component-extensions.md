@@ -33,7 +33,7 @@ Templates enable you to define a prototype of a Windows Runtime or common langua
   
 ### Examples  
   
- It is possible to instantiate a generic type with a managed type template parameter, but you cannot instantiate a managed template with a generic type template parameter.  This is because generic types are resolved at runtime.  For more information, see [Generics and Templates (Visual C++)](../windows/generics-and-templates-visual-cpp.md).  
+ It is possible to instantiate a generic type with a managed type template parameter, but you cannot instantiate a managed template with a generic type template parameter. This is because generic types are resolved at runtime. For more information, see [Generics and Templates (Visual C++)](../windows/generics-and-templates-visual-cpp.md).  
   
 ```cpp  
 // managed_templates.cpp  
@@ -66,7 +66,7 @@ template<class T> public ref class R {
 };  
 ```  
   
- You cannot access templates defined in a referenced assembly with C++/CLI language syntax, but you can use reflection.  If a template is not instantiated, it’s not emitted in the metadata.  If a template is instantiated, only referenced member functions will appear in metadata.  
+ You cannot access templates defined in a referenced assembly with C++/CLI language syntax, but you can use reflection. If a template is not instantiated, it’s not emitted in the metadata. If a template is instantiated, only referenced member functions will appear in metadata.  
   
 ```cpp  
 // managed_templates_3.cpp  

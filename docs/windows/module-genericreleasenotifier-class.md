@@ -17,7 +17,7 @@ Invokes an event handler when the last object in the current module is released.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T>  
 class GenericReleaseNotifier : public ReleaseNotifier;  
 ```  

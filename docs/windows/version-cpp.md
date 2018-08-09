@@ -17,7 +17,7 @@ Identifies a particular version among multiple versions of a class.
   
 ## Syntax  
   
-```  
+```cpp  
 [ version(  
    "version"  
 ) ]  

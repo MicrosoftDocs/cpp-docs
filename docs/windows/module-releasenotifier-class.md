@@ -17,7 +17,7 @@ Invokes an event handler when the last object in a module is released.
   
 ## Syntax  
   
-```  
+```cpp  
 class ReleaseNotifier;  
 ```  
   

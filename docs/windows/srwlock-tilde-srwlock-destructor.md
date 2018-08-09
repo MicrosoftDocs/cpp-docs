@@ -17,7 +17,7 @@ Deinitializes an instance of the **SRWLock** class.
   
 ## Syntax  
   
-```  
+```cpp  
 ~SRWLock();  
 ```  
   

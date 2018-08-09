@@ -29,4 +29,4 @@ ms.workload: ["cplusplus", "uwp"]
   
 ## See Also  
  [Creating an Empty Windows Desktop Application](../windows/creating-an-empty-windows-desktop-application.md)   
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Deploying Applications](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

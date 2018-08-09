@@ -88,6 +88,6 @@ This article contains information about security tools and practices. Using them
 For information about how to indentify and mitigate against speculative execution side channel hardware vulnerabilities in C++ software, see [C++ Developer Guidance for Speculative Execution Side Channels](developer-guidance-speculative-execution.md).
 
 ## See Also  
-- <xref:System.Security>   
-- [Security](/dotnet/standard/security/index)   
-- [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)
+<xref:System.Security>   
+[Security](/dotnet/standard/security/index)   
+[How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)

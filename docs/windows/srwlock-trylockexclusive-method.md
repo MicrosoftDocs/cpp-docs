@@ -17,7 +17,7 @@ Attempts to acquire a **SRWLock** object in exclusive mode for the current or sp
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLockExclusive TryLockExclusive();  
   
 static SyncLockExclusive TryLockExclusive(  

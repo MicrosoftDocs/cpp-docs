@@ -16,7 +16,7 @@ Disassociates the specified **HString** object from its underlying value.
   
 ## Syntax  
   
-```  
+```cpp  
 HSTRING Detach() throw()  
 ```  
   

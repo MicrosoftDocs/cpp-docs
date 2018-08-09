@@ -17,7 +17,7 @@ Deinitializes the current instance of the **Module** class.
   
 ## Syntax  
   
-```  
+```cpp  
 virtual ~Module();  
 ```  
   

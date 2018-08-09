@@ -56,8 +56,6 @@ int main() {
 };  
 ```  
   
-### Output  
-  
 ```Output 
 in f( int* pi )  
 in f( interior_ptr<int> pi )  

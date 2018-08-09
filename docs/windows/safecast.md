@@ -17,7 +17,7 @@ Casts one type of number to another type.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeCast (  
    const T From,  

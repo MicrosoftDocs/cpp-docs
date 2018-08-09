@@ -17,7 +17,7 @@ Holds a pointer to the event handler for the current **Module::MethodReleaseNoti
   
 ## Syntax  
   
-```  
+```cpp  
 void (T::* method_)();  
 ```  
   

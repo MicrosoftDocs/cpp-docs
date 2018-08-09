@@ -17,7 +17,7 @@ Waits until the current object, or the **Semaphore** object associated with the 
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLock Lock(  
    DWORD milliseconds = INFINITE  
 );  

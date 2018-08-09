@@ -17,7 +17,7 @@ Registers one or more Windows Runtime objects so other applications can connect 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RegisterWinRTObject(const wchar_t* serverName,  
    wchar_t** activatableClassIds,  
    WINRT_REGISTRATION_COOKIE* cookie,  

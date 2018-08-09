@@ -17,13 +17,13 @@ Allows you to use IDL constructs that are not supported in the current version o
   
 ## Syntax  
   
-```  
+```cpp  
 [ idl_quote(  
    text  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *text*  
  The attribute name that you intend the Visual C++ compiler to pass through to the generated .idl file without returning a compiler error.  
   
@@ -66,7 +66,7 @@ __interface IStatic{
 };  
 ```  
   
- This code causes MYFLOT and MYDUB and the *text* entry to be placed in the generated .idl file. The *name* parameter forces *text* to be placed before anything that references *name* in the generated .idl file. The *dependencies* parameter forces the dependency list definitions to be placed before *text* in the generated .idl file.  
+ This code causes `MYFLOT` and `MYDUB` and the *text* entry to be placed in the generated .idl file. The *name* parameter forces *text* to be placed before anything that references *name* in the generated .idl file. The *dependencies* parameter forces the dependency list definitions to be placed before *text* in the generated .idl file.  
   
 ## Requirements  
   

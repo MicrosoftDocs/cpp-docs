@@ -42,9 +42,7 @@ int main() {
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 3  
 ```  
   

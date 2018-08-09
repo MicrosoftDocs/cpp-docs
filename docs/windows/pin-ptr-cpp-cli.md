@@ -131,8 +131,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 45  
 ```  
@@ -167,8 +165,6 @@ int main() {
 };  
 ```  
   
- **Output**  
-  
 ```Output  
 1  
 ```  
@@ -196,8 +192,6 @@ int main() {
    Console::WriteLine(mt->i);  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 8  

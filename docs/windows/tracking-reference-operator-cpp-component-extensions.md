@@ -33,7 +33,7 @@ A *tracking reference* (`%`) behaves like an ordinary C++ reference (`&`) except
 ## Windows Runtime  
  A tracking reference behaves like a standard C++ reference, except that a % is reference-counted. The following snippet shows how to convert between % and ^ types:  
   
-```  
+```cpp  
 Foo^ spFoo = ref new Foo();  
 Foo% srFoo = *spFoo;  
 Foo^ spFoo2 = %srFoo;  
@@ -41,7 +41,7 @@ Foo^ spFoo2 = %srFoo;
   
  The following example shows how to pass a ^ to a function that takes a %.  
   
-```  
+```cpp  
 ref class Foo sealed {};  
   
     // internal or private  
@@ -126,8 +126,6 @@ int main() {
    Console::WriteLine(a[0]);  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 21  

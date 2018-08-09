@@ -17,7 +17,7 @@ Identifies a reference pointer.
   
 ## Syntax  
   
-```  
+```cpp  
 [ref]  
 ```  
   

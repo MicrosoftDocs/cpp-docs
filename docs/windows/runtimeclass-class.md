@@ -19,7 +19,7 @@ This class provides the boilerplate implementation of WinRT and COM classes, pro
   
 ## Syntax  
   
-```
+```cpp
 template <typename ...TInterfaces> class RuntimeClass
 template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 ```

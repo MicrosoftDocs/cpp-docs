@@ -17,13 +17,13 @@ Specifies the required component categories of the target class.
   
 ## Syntax  
   
-```  
+```cpp  
 [ requires_category(   
   requires_category  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *requires_category*  
  The ID of the required category.  
   

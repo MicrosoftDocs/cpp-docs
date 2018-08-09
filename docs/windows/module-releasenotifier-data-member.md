@@ -17,7 +17,7 @@ Holds a pointer to a `ReleaseNotifier` object.
   
 ## Syntax  
   
-```  
+```cpp  
 ReleaseNotifier *releaseNotifier_;  
 ```  
   

@@ -17,7 +17,7 @@ Specifies an entry point in a .dll file.
   
 ## Syntax  
   
-```  
+```cpp  
 [ idl_module (   
    name=module_name,   
    dllname=dll,   

@@ -17,7 +17,7 @@ Specifies the type of [RuntimeClass](../windows/runtimeclass-class.md) instance 
   
 ## Syntax  
   
-```  
+```cpp  
 enum RuntimeClassType;  
 ```  
   

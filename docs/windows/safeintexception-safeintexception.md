@@ -17,7 +17,7 @@ Creates a **SafeIntException** object.
   
 ## Syntax  
   
-```  
+```cpp  
 SafeIntException();  
   
 SafeIntException(  

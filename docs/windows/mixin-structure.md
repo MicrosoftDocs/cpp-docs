@@ -17,7 +17,7 @@ Ensures that a runtime class derives from Windows Runtime interfaces, if any, an
   
 ## Syntax  
   
-```  
+```cpp  
 template<  
    typename Derived,  
    typename MixInType,  
