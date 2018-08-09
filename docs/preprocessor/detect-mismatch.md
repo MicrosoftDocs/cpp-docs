@@ -22,12 +22,14 @@ Places a record in an object. The linker checks these records for potential mism
 ```  
   
 ## Remarks  
- When you link the project, the linker throws a `LNK2038` error if the project contains two objects that have the same `name` but each has a different `value`. Use this pragma to prevent inconsistent object files from linking.  
+ 
+When you link the project, the linker throws a `LNK2038` error if the project contains two objects that have the same `name` but each has a different `value`. Use this pragma to prevent inconsistent object files from linking.  
   
- Both name and value are string literals and obey the rules for string literals with respect to escape characters and concatenation. They are case-sensitive and cannot contain a comma, equal sign, quotation marks, or the **null** character.  
+Both name and value are string literals and obey the rules for string literals with respect to escape characters and concatenation. They are case-sensitive and cannot contain a comma, equal sign, quotation marks, or the **null** character.  
   
 ## Example  
- This example creates two files that have different version numbers for the same version label.  
+ 
+This example creates two files that have different version numbers for the same version label.  
   
 ```cpp  
 // pragma_directive_detect_mismatch_a.cpp  
@@ -41,7 +43,8 @@ int main ()
 #pragma detect_mismatch("myLib_version", "1")  
 ```  
   
- If you compile both of these files by using the command line `cl pragma_directive_detect_mismatch_a.cpp pragma_directive_detect_mismatch_b.cpp`, you will receive the error `LNK2038`.  
+If you compile both of these files by using the command line `cl pragma_directive_detect_mismatch_a.cpp pragma_directive_detect_mismatch_b.cpp`, you will receive the error `LNK2038`.  
   
 ## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

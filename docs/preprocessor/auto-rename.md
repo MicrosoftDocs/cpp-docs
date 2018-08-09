@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # auto_rename
 **C++ Specific**  
   
- Renames C++ reserved words by appending two underscores (__) to the variable name to resolve potential name conflicts.  
+Renames C++ reserved words by appending two underscores (__) to the variable name to resolve potential name conflicts.  
   
 ## Syntax  
   
@@ -23,11 +23,13 @@ ms.workload: ["cplusplus"]
 auto_rename  
 ```  
   
-## Remarks  
- This attribute is used when importing a type library that uses one or more C++ reserved words (keywords or macros) as variable names.  
+## Remarks 
+
+This attribute is used when importing a type library that uses one or more C++ reserved words (keywords or macros) as variable names.  
   
  **END C++ Specific**  
   
-## See Also  
- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+## See Also 
+
+[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

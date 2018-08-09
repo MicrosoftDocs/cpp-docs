@@ -11,7 +11,6 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler warnings that are off by default
-
 The compiler includes warnings that are turned off by default, because most developers don't want to see them. In some cases, they represent a stylistic choice, or are common idioms in older code, or take advantage of a Microsoft extension to the language. In other cases, they indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. Some of these warnings may be very noisy in library headers. The C runtime libraries and the C++ standard libraries are intended to emit no warnings only at warning level [/W4](../build/reference/compiler-option-warning-level.md).
 
 ## Enable warnings that are off by default
@@ -169,4 +168,5 @@ This warning was off by default in versions of the compiler before Visual Studio
 |[C4431](../error-messages/compiler-warnings/compiler-warning-level-4-c4431.md) (level 4)|missing type specifier - int assumed. Note: C no longer supports default-int|
 
 ## See Also
+
 [warning](../preprocessor/warning.md)

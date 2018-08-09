@@ -22,21 +22,23 @@ float_control( value,setting [push] | push | pop )
 ```  
   
 ## Flags  
- *value*, *setting* *[push]*  
- Specifies floating-point behavior. *value* can be `precise` or `except`. For more information, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md). *setting* can either be `on` or `off`.  
+ 
+*value*, *setting* *[push]*  
+Specifies floating-point behavior. *value* can be `precise` or `except`. For more information, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md). *setting* can either be `on` or `off`.  
   
- If *value* is `precise`, the settings for `precise` and `except` are being specified. `except` can only be set to `on` when `precise` is also set to `on`.  
+If *value* is `precise`, the settings for `precise` and `except` are being specified. `except` can only be set to `on` when `precise` is also set to `on`.  
   
- If the optional *push* token is added, the current setting for *value* is pushed on to the internal compiler stack.  
+If the optional *push* token is added, the current setting for *value* is pushed on to the internal compiler stack.  
   
- *push*  
- Push the current **float_control** setting on to the internal compiler stack  
+*push*  
+Push the current **float_control** setting on to the internal compiler stack  
   
- *pop*  
- Removes the **float_control** setting from the top of the internal compiler stack and makes that the new **float_control** setting.  
+*pop*  
+Removes the **float_control** setting from the top of the internal compiler stack and makes that the new **float_control** setting.  
   
 ## Remarks  
- You cannot turn `float_control precise` off when `except` is on. Similarly, `precise` cannot be turned off when `fenv_access` is on. To go from strict model to a fast model with the **float_control** pragma, use the following code:  
+ 
+You cannot turn `float_control precise` off when `except` is on. Similarly, `precise` cannot be turned off when `fenv_access` is on. To go from strict model to a fast model with the **float_control** pragma, use the following code:  
   
 ```  
 #pragma float_control(except, off)  
@@ -44,7 +46,7 @@ float_control( value,setting [push] | push | pop )
 #pragma float_control(precise, off)  
 ```  
   
- To go from fast model to a strict model with the **float_control** pragma, use the following code:  
+To go from fast model to a strict model with the **float_control** pragma, use the following code:  
   
 ```  
 #pragma float_control(precise, on)  
@@ -52,14 +54,15 @@ float_control( value,setting [push] | push | pop )
 #pragma float_control(except, on)  
 ```  
   
- Other floating-point pragmas include:  
+Other floating-point pragmas include:  
   
--   [fenv_access](../preprocessor/fenv-access.md)  
+- [fenv_access](../preprocessor/fenv-access.md)  
   
--   [fp_contract](../preprocessor/fp-contract.md)  
+- [fp_contract](../preprocessor/fp-contract.md)  
   
 ## Example  
- The following sample shows how to catch an overflow floating-point exception by using pragma **float_control**.  
+ 
+The following sample shows how to catch an overflow floating-point exception by using pragma **float_control**.  
   
 ```cpp  
 // pragma_directive_float_control.cpp  
@@ -100,4 +103,5 @@ Pass
 ```  
   
 ## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  

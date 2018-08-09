@@ -22,7 +22,8 @@ The **#error** directive emits a user-specified error message at compile time an
 ```  
   
 ## Remarks  
- The error message that this directive emits includes the *token-string* parameter. The *token-string* parameter is not subject to macro expansion. This directive is most useful during preprocessing for notifying the developer of a program inconsistency or the violation of a constraint. The following example demonstrates error processing during preprocessing:  
+ 
+The error message that this directive emits includes the *token-string* parameter. The *token-string* parameter is not subject to macro expansion. This directive is most useful during preprocessing for notifying the developer of a program inconsistency or the violation of a constraint. The following example demonstrates error processing during preprocessing:  
   
 ```  
 #if !defined(__cplusplus)  
@@ -31,4 +32,5 @@ The **#error** directive emits a user-specified error message at compile time an
 ```  
   
 ## See Also  
- [Preprocessor Directives](../preprocessor/preprocessor-directives.md)
+ 
+[Preprocessor Directives](../preprocessor/preprocessor-directives.md)

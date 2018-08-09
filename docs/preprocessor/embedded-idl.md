@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # embedded_idl
 **C++ Specific**  
   
- Specifies that the type library is written to the .tlh file with the attribute-generated code preserved.  
+Specifies that the type library is written to the .tlh file with the attribute-generated code preserved.  
   
 ## Syntax  
   
@@ -24,12 +24,12 @@ embedded_idl[("param")]
 ```  
   
 ### Parameters  
- *param*  
- Can be one of two values:  
+*param*  
+Can be one of two values:  
   
--   emitidl: Type information imported from the typelib will be present in the IDL generated for the attributed project.  This is the default and will be in effect if you do not specify a parameter to `embedded_idl`.  
+- emitidl: Type information imported from the typelib will be present in the IDL generated for the attributed project.  This is the default and will be in effect if you do not specify a parameter to `embedded_idl`.  
   
--   no_emitidl: Type information imported from the typelib will not be present in the IDL generated for the attributed project.  
+- no_emitidl: Type information imported from the typelib will not be present in the IDL generated for the attributed project.  
   
 ## Example  
   
@@ -42,8 +42,10 @@ embedded_idl[("param")]
 ```  
   
 ## Remarks  
- **END C++ Specific**  
+ 
+**END C++ Specific**  
   
 ## See Also  
- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

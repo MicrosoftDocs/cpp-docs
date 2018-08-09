@@ -22,10 +22,11 @@ Instructs the compiler to turn off stack probes if `off` (or `-`) is specified, 
 #pragma check_stack{+ | -}  
 ```  
   
-## Remarks  
- If no argument is given, stack probes are treated according to the default. This pragma takes effect at the first function defined after the pragma is seen. Stack probes are neither a part of macros nor of functions that are generated inline.  
+## Remarks 
+
+If no argument is given, stack probes are treated according to the default. This pragma takes effect at the first function defined after the pragma is seen. Stack probes are neither a part of macros nor of functions that are generated inline.  
   
- If you don't give an argument for the **check_stack** pragma, stack checking reverts to the behavior specified on the command line. For more information, see [Compiler Reference](../build/reference/compiler-options.md). The interaction of the `#pragma check_stack` and the [/Gs](../build/reference/gs-control-stack-checking-calls.md) option is summarized in the following table.  
+If you don't give an argument for the **check_stack** pragma, stack checking reverts to the behavior specified on the command line. For more information, see [Compiler Reference](../build/reference/compiler-options.md). The interaction of the `#pragma check_stack` and the [/Gs](../build/reference/gs-control-stack-checking-calls.md) option is summarized in the following table.  
   
 ### Using the check_stack Pragma  
   
@@ -37,4 +38,5 @@ Instructs the compiler to turn off stack probes if `off` (or `-`) is specified, 
 |`#pragma check_stack(off)`<br /><br /> or `#pragma check_stack -`|Yes or No|Turns off stack checking for functions that follow|  
   
 ## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
