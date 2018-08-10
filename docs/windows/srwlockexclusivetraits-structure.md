@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockExclusiveTraits Structure
-Describes common characteristics of the SRWLock class in exclusive lock mode.  
+Describes common characteristics of the `SRWLock` class in exclusive lock mode.  
   
 ## Syntax  
   
-```  
+```cpp  
 struct SRWLockExclusiveTraits;  
 ```  
   
@@ -33,8 +33,8 @@ struct SRWLockExclusiveTraits;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SRWLockExclusiveTraits::GetInvalidValue Method](../windows/srwlockexclusivetraits-getinvalidvalue-method.md)|Retrieves an SRWLockExclusiveTraits object that is always invalid.|  
-|[SRWLockExclusiveTraits::Unlock Method](../windows/srwlockexclusivetraits-unlock-method.md)|Releases exclusive control of the specified SRWLock object.|  
+|[SRWLockExclusiveTraits::GetInvalidValue Method](../windows/srwlockexclusivetraits-getinvalidvalue-method.md)|Retrieves an **SRWLockExclusiveTraits** object that is always invalid.|  
+|[SRWLockExclusiveTraits::Unlock Method](../windows/srwlockexclusivetraits-unlock-method.md)|Releases exclusive control of the specified `SRWLock` object.|  
   
 ## Inheritance Hierarchy  
  `SRWLockExclusiveTraits`  

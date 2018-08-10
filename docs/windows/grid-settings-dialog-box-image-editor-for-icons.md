@@ -33,4 +33,3 @@ Allows you to specify the grid settings for your image and displays grid lines o
 ## See Also  
  [Resizing an Image](../windows/resizing-an-image-image-editor-for-icons.md)   
  [Image Editor for Icons](../windows/image-editor-for-icons.md)
-

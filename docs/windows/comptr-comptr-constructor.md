@@ -17,7 +17,7 @@ Intializes a new instance of the **ComPtr** class. Overloads provide default, co
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW ComPtr();  
 WRL_NOTHROW ComPtr(  
    decltype(__nullptr)  
@@ -46,7 +46,7 @@ WRL_NOTHROW ComPtr(
    void *>;  
 ```  
   
-#### Parameters  
+### Parameters  
  *U*  
  The type of the *other* parameter.  
   

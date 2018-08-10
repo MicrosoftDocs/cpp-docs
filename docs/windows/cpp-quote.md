@@ -17,13 +17,13 @@ Emits the specified string, without the quote characters, into the generated .id
   
 ## Syntax  
   
-```  
+```cpp  
 [ cpp_quote(  
    "statement"  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *statement*  
  A C instruction.  
   

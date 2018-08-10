@@ -17,7 +17,7 @@ Retrieves a weak reference to a specified instance.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T>  
 HRESULT AsWeak(  
    _In_ T* p,  
@@ -25,7 +25,7 @@ HRESULT AsWeak(
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *T*  
  A pointer to the type of parameter *p*.  
   

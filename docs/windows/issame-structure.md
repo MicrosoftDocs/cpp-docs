@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename T1,  
    typename T2  
@@ -29,11 +29,11 @@ template <
 struct IsSame<T1, T1>;  
 ```  
   
-#### Parameters  
- `T1`  
+### Parameters  
+ *T1*  
  A type.  
   
- `T2`  
+ *T2*  
  Another type.  
   
 ## Remarks  

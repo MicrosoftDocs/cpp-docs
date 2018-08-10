@@ -17,7 +17,7 @@ Deinitializes an instance of **ComPtr**.
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW ~ComPtr();  
 ```  
   

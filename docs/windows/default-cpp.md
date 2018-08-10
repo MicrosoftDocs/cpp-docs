@@ -17,15 +17,14 @@ Indicates that the custom or dispinterface defined within a coclass represents t
   
 ## Syntax  
   
-```  
-  
-      [ default(  
+```cpp  
+[ default(  
    interface1,  
    interface2  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *interface1*  
  The default interface that will be made available to scripting environments that create an object based on the class defined with the **default** attribute.  
   
@@ -40,9 +39,9 @@ Indicates that the custom or dispinterface defined within a coclass represents t
  The **default** C++ attribute has the same functionality as the [default](http://msdn.microsoft.com/library/windows/desktop/aa366787) MIDL attribute. The **default** attribute is also used with the [case](../windows/case-cpp.md) attribute.  
   
 ## Example  
- The following code shows how **default** is used on the definition of a coclass to specify **ICustomDispatch** as the default programmability interface:  
+ The following code shows how **default** is used on the definition of a coclass to specify `ICustomDispatch` as the default programmability interface:  
   
-```  
+```cpp  
 // cpp_attr_ref_default.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -99,9 +98,9 @@ int main() {
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`, data member|  
+|**Applies to**|**class**, **struct**, data member|  
 |**Repeatable**|No|  
-|**Required attributes**|**coclass** (when applied to **class** or `struct`)|  
+|**Required attributes**|**coclass** (when applied to **class** or **struct**)|  
 |**Invalid attributes**|None|  
   
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
@@ -109,4 +108,4 @@ int main() {
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [coclass](../windows/coclass.md)   
+ [coclass](../windows/coclass.md)   

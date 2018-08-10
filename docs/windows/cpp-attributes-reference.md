@@ -14,7 +14,8 @@ ms.workload: ["cplusplus", "uwp"]
 # C++ Attributes Reference
 Microsoft defines a set of attributes that simplify COM programming and .NET Framework common language runtime development. When you include attributes in your source files, the compiler works with provider DLLs to insert code or modify the code in the generated object files.  
   
- **Note:** If you are looking for C++ standard attributes, see [Attributes](../cpp/attributes.md).  
+ > [!NOTE] 
+ > If you are looking for C++ standard attributes, see [Attributes](../cpp/attributes.md).  
   
 ## In This Section  
  [Concepts](../windows/attributed-programming-concepts.md)  

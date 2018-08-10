@@ -17,18 +17,18 @@ Gets the trust level of the object that the current **ActivationFactory** instan
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    GetTrustLevel  
 )(_Out_ TrustLevel* trustLvl);  
 ```  
   
-#### Parameters  
+### Parameters  
  *trustLvl*  
  When this operation completes, the trust level of the runtime class that the **ActivationFactory** instantiates.  
   
 ## Return Value  
- S_OK if successful; otherwise, an assertion error is emitted and *trustLvl* is set to FullTrust.  
+ S_OK if successful; otherwise, an assertion error is emitted and *trustLvl* is set to `FullTrust`.  
   
 ## Requirements  
  **Header:** module.h  

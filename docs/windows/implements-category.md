@@ -17,26 +17,25 @@ Specifies the component categories implemented by the target class.
   
 ## Syntax  
   
-```  
-  
-      [ implements_category(  
+```cpp  
+[ implements_category(  
    implements_category="uuid"  
 ) ]  
 ```  
   
-#### Parameters  
- **implements_category**  
+### Parameters  
+ *implements_category*  
  The ID of the implemented category.  
   
 ## Remarks  
  The **implements_category** C++ attribute specifies the component categories implemented by the target class. This is done by creating a CATEGORY map and adding separate entries specified by the **implements_category** attribute. For more information, see [What are Component Categories and How Do They Work?](http://msdn.microsoft.com/library/windows/desktop/ms694322).  
   
- This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if **progid** is applied, **vi_progid** and **coclass** are also applied.  
+ This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if `progid` is applied, `vi_progid` and `coclass` are also applied.  
   
 ## Example  
- The following code specifies that the following object implements the Control category.  
+ The following code specifies that the following object implements the `Control` category.  
   
-```  
+```cpp  
 // cpp_attr_ref_implements_category.cpp  
 // compile with: /LD  
 #define _ATL_ATTRIBUTES  
@@ -55,9 +54,9 @@ class CMyClass {};
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|Yes|  
-|**Required attributes**|One of the following: **coclass**, **progid**, or **vi_progid**|  
+|**Required attributes**|One of the following: `coclass`, `progid`, or `vi_progid`|  
 |**Invalid attributes**|None|  
   
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
@@ -66,4 +65,3 @@ class CMyClass {};
  [COM Attributes](../windows/com-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [IMPLEMENTED_CATEGORY](../atl/reference/category-macros.md#implemented_category)   
- 

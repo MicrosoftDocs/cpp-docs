@@ -13,19 +13,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::InternalClose Method
-Closes the current HandleT object.  
+Closes the current **HandleT** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 virtual bool InternalClose();  
 ```  
   
 ## Return Value  
- `true` if the current HandleT closed successfully; otherwise, `false`.  
+ **true** if the current **HandleT** closed successfully; otherwise, **false**.  
   
 ## Remarks  
- InternalClose() is protected.  
+ **InternalClose()** is **protected**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

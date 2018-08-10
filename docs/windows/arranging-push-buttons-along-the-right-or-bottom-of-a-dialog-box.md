@@ -18,20 +18,18 @@ ms.workload: ["cplusplus", "uwp"]
   
 2.  From the **Format** menu, choose **Arrange Buttons**, and then choose one of the following arrangements:  
   
-    -   **Right**: aligns push buttons along the right edge of the dialog box.  
+    -   `Right`: aligns push buttons along the right edge of the dialog box.  
   
-    -   **Bottom**: aligns push buttons along the bottom edge of the dialog box.  
+    -   `Bottom`: aligns push buttons along the bottom edge of the dialog box.  
   
          If you select a control other than a push button, its position is not affected.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- **Requirements**  
-  
+## Requirements
  Win32  
   
 ## See Also  
  [Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)   
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
-

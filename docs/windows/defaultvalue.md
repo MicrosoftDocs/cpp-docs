@@ -17,12 +17,11 @@ Allows specification of a default value for a typed optional parameter.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [ defaultvalue= value ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *value*  
  The default value for the parameter.  
   
@@ -32,7 +31,7 @@ Allows specification of a default value for a typed optional parameter.
 ## Example  
  The following code shows an interface method using the **defaultvalue** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_defaultvalue.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -74,4 +73,4 @@ __interface IFireTabCtrl : IDispatch {
  [retval](../windows/retval.md)   
  [in](../windows/in-cpp.md)   
  [pointer_default](../windows/pointer-default.md)   
- [unique](../windows/unique-cpp.md)   
+ [unique](../windows/unique-cpp.md)   

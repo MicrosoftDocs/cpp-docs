@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Implements Structure
-Implements QueryInterface and GetIid for the specified interfaces.  
+Implements `QueryInterface` and `GetIid` for the specified interfaces.  
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename I0,  
    typename I1 = Details::Nil,  
@@ -46,44 +46,44 @@ template <
 struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3, I4, I5, I6, I7, I8> : Details::ImplementsHelper<RuntimeClassFlags<flags>, typename Details::InterfaceListHelper<I0, I1, I2, I3, I4, I5, I6, I7, I8>::TypeT>, Details::ImplementsBase;  
 ```  
   
-#### Parameters  
- `I0`  
+### Parameters  
+ *I0*  
  The zeroth interface ID. (Mandatory)  
   
- `I1`  
+ *I1*  
  The first interface ID. (Optional)  
   
- `I2`  
+ *I2*  
  The second interface ID. (Optional)  
   
- `I3`  
+ *I3*  
  The third interface ID. (Optional)  
   
- `I4`  
+ *I4*  
  The fourth interface ID. (Optional)  
   
- `I5`  
+ *I5*  
  The fifth interface ID. (Optional)  
   
- `I6`  
+ *I6*  
  The sixth interface ID. (Optional)  
   
- `I7`  
+ *I7*  
  The seventh interface ID. (Optional)  
   
- `I8`  
+ *I8*  
  The eigth interface ID. (Optional)  
   
- `I9`  
+ *I9*  
  The ninth interface ID. (Optional)  
   
- `flags`  
+ *flags*  
  Configuration flags for the class. One or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerations that are specified in a [RuntimeClassFlags](../windows/runtimeclassflags-structure.md) structure.  
   
 ## Remarks  
- Derives from the list of specified interfaces and implements helper templates for QueryInterface and GetIid.  
+ Derives from the list of specified interfaces and implements helper templates for `QueryInterface` and `GetIid`.  
   
- Each `I0` through `I9` interface parameter must derive from either IUnknown, IInspectable, or the [ChainInterfaces](../windows/chaininterfaces-structure.md) template. The `flags` parameter determines whether support is generated for IUnknown or IInspectable.  
+ Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `IInspectable`, or the [ChainInterfaces](../windows/chaininterfaces-structure.md) template. The *flags* parameter determines whether support is generated for `IUnknown` or `IInspectable`.  
   
 ## Members  
   
@@ -98,7 +98,7 @@ struct __declspec(novtable) Implements<RuntimeClassFlags<flags>, I0, I1, I2, I3,
 |Name|Description|  
 |----------|-----------------|  
 |[Implements::CanCastTo Method](../windows/implements-cancastto-method.md)|Gets a pointer to the specified interface.|  
-|[Implements::CastToUnknown Method](../windows/implements-casttounknown-method.md)|Gets a pointer to the underlying IUnknown interface.|  
+|[Implements::CastToUnknown Method](../windows/implements-casttounknown-method.md)|Gets a pointer to the underlying `IUnknown` interface.|  
 |[Implements::FillArrayWithIid Method](../windows/implements-fillarraywithiid-method.md)|Inserts the interface ID specified by the current zeroth template parameter into the specified array element.|  
   
 ### Protected Constants  

@@ -16,12 +16,12 @@ Initializes the Windows Runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 class RoInitializeWrapper  
 ```  
   
 ## Remarks  
- RoInitializeWrapper is a convenience that initializes the Windows Runtime and returns an HRESULT that indicates whether the operation was successful. Because the class destructor calls `::Windows::Foundation::Uninitialize`, instances of `RoInitializeWrapper` must be declared at global or top-level scope.  
+ **RoInitializeWrapper** is a convenience that initializes the Windows Runtime and returns an HRESULT that indicates whether the operation was successful. Because the class destructor calls `::Windows::Foundation::Uninitialize`, instances of **RoInitializeWrapper** must be declared at global or top-level scope.  
   
 ## Members  
   
@@ -29,14 +29,14 @@ class RoInitializeWrapper
   
 |Name|Description|  
 |----------|-----------------|  
-|[RoInitializeWrapper::RoInitializeWrapper Constructor](../windows/roinitializewrapper-roinitializewrapper-constructor.md)|Initializes a new instance of the RoInitializeWrapper class.|  
-|[RoInitializeWrapper::~RoInitializeWrapper Destructor](../windows/roinitializewrapper-tilde-roinitializewrapper-destructor.md)|Destroys the current instance of the RoInitializeWrapper class.|  
+|[RoInitializeWrapper::RoInitializeWrapper Constructor](../windows/roinitializewrapper-roinitializewrapper-constructor.md)|Initializes a new instance of the **RoInitializeWrapper** class.|  
+|[RoInitializeWrapper::~RoInitializeWrapper Destructor](../windows/roinitializewrapper-tilde-roinitializewrapper-destructor.md)|Destroys the current instance of the **RoInitializeWrapper** class.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[RoInitializeWrapper::HRESULT() Operator](../windows/roinitializewrapper-hresult-parens-operator.md)|Retrieves the HRESULT produced by the RoInitializeWrapper constructor.|  
+|[RoInitializeWrapper::HRESULT() Operator](../windows/roinitializewrapper-hresult-parens-operator.md)|Retrieves the HRESULT produced by the **RoInitializeWrapper** constructor.|  
   
 ## Inheritance Hierarchy  
  `RoInitializeWrapper`  

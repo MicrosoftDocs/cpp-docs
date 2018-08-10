@@ -17,19 +17,17 @@ Identifies a reference pointer.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [ref]  
-  
 ```  
   
 ## Remarks  
- The `ref` C++ attribute has the same functionality as the [ref](http://msdn.microsoft.com/library/windows/desktop/aa367153) MIDL attribute.  
+ The **ref** C++ attribute has the same functionality as the [ref](http://msdn.microsoft.com/library/windows/desktop/aa367153) MIDL attribute.  
   
 ## Example  
- The following code shows how to use the `ref` attribute:  
+ The following code shows how to use the **ref** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_ref.cpp  
 // compile with: /LD  
 #include <windows.h>   
@@ -47,7 +45,7 @@ __interface IFireTabCtrl
   
 |||  
 |-|-|  
-|**Applies to**|`typedef`, interface parameter, interface method|  
+|**Applies to**|**typedef**, interface parameter, interface method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -57,4 +55,4 @@ __interface IFireTabCtrl
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
+ [Parameter Attributes](../windows/parameter-attributes.md)   

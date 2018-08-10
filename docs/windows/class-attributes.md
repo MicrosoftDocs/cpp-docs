@@ -32,7 +32,7 @@ The following attributes apply to the [class](../cpp/class-cpp.md) C++ keyword.
 |[defaultvtable](../windows/defaultvtable.md)|Defines an interface as the default vtable interface for a control.|  
 |[event_receiver](../windows/event-receiver.md)|Creates an event receiver.|  
 |[event_source](../windows/event-source.md)|Creates an event source.|  
-|[helpcontext](../windows/helpcontext.md)|Specifies a context ID that lets the user view information about this element in the Help file.|  
+|[helpcontext](../windows/helpcontext.md)|Specifies a context ID that lets the user view information about this element in the **Help** file.|  
 |[helpfile](../windows/helpfile.md)|Sets the name of the Help file for a type library.|  
 |[helpstringcontext](../windows/helpstringcontext.md)|Specifies the ID of a help topic in an .hlp or .chm file.|  
 |[helpstring](../windows/helpstring.md)|Specifies a character string that is used to describe the element to which it applies.|  
@@ -43,8 +43,8 @@ The following attributes apply to the [class](../cpp/class-cpp.md) C++ keyword.
 |[noncreatable](../windows/noncreatable.md)|Defines an object that cannot be instantiated by itself.|  
 |[progid](../windows/progid.md)|Defines the ProgID for a control.|  
 |[registration_script](../windows/registration-script.md)|Executes the specified registration script.|  
-|[requestedit](../windows/requestedit.md)|Indicates that the property supports the **OnRequestEdit** notification.|  
-|[source](../windows/source-cpp.md)|Specifies the control's source interfaces for connection points on a class. On a property or method, the **source** attribute indicates that the member returns an object or VARIANT that is a source of events.|  
+|[requestedit](../windows/requestedit.md)|Indicates that the property supports the `OnRequestEdit` notification.|  
+|[source](../windows/source-cpp.md)|Specifies the control's source interfaces for connection points on a class. On a property or method, the `source` attribute indicates that the member returns an object or `VARIANT` that is a source of events.|  
 |[support_error_info](../windows/support-error-info.md)|Supports error reporting for the target object.|  
 |[threading](../windows/threading-cpp.md)|Specifies the threading model for a control.|  
 |[uuid](../windows/uuid-cpp-attributes.md)|Specifies the unique ID for a class or interface.|  

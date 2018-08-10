@@ -17,7 +17,7 @@ Multiplies two numbers together in a way that protects against overflow.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeMultiply (  
    T t,  
@@ -26,18 +26,18 @@ inline bool SafeMultiply (
 ) throw ();  
 ```  
   
-#### Parameters  
- [in] `t`  
- The first number to multiply. This must be of type T.  
+### Parameters  
+ [in] *t*  
+ The first number to multiply. This must be of type `T`.  
   
- [in] `u`  
- The second number to multiply. This must be of type U.  
+ [in] *u*  
+ The second number to multiply. This must be of type `U`.  
   
- [out] `result`  
- The parameter where `SafeMultiply` stores the result.  
+ [out] *result*  
+ The parameter where **SafeMultiply** stores the result.  
   
 ## Return Value  
- `true` if no error occurs; `false` if an error occurs.  
+ **true** if no error occurs; **false** if an error occurs.  
   
 ## Remarks  
  This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single multiplication operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  
@@ -45,7 +45,7 @@ inline bool SafeMultiply (
 > [!NOTE]
 >  This method should only be used when a single mathematical operation must be protected. If there are multiple operations, you should use the `SafeInt` class instead of calling the individual stand-alone functions.  
   
- For more information about the template types T and U, see [SafeInt Functions](../windows/safeint-functions.md).  
+ For more information about the template types `T` and `U`, see [SafeInt Functions](../windows/safeint-functions.md).  
   
 ## Requirements  
  **Header:** safeint.h  

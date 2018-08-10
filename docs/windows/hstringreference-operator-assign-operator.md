@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HStringReference::Operator= Operator
-Moves the value of another HStringReference object to the current HStringReference object.  
+Moves the value of another **HStringReference** object to the current **HStringReference** object.  
   
 ## Syntax  
   
@@ -20,12 +20,12 @@ Moves the value of another HStringReference object to the current HStringReferen
 HStringReference& operator=(HStringReference&& other) throw()  
 ```  
   
-#### Parameters  
- `other`  
- An existing HStringReference object.  
+### Parameters  
+ *other*  
+ An existing **HStringReference** object.  
   
 ## Remarks  
- The value of the existing `other` object is copied to the current HStringReference object, and then the `other` object is destroyed.  
+ The value of the existing *other* object is copied to the current **HStringReference** object, and then the *other* object is destroyed.  
   
 ## Requirements  
  **Header:** corewrappers.h  

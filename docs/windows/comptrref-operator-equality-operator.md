@@ -43,12 +43,12 @@ bool operator==(
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *a*  
- A reference to a ComPtrRef object.  
+ A reference to a **ComPtrRef** object.  
   
  *b*  
- A reference to another ComPtrRef object, or a pointer to an anonymous type (`void*`).  
+ A reference to another **ComPtrRef** object, or a pointer to an anonymous type (`void*`).  
   
 ## Return Value  
  The first operator yields **true** if object *a* is equal to object *b*; otherwise, **false**.  
@@ -58,7 +58,7 @@ bool operator==(
  The fourth and fifth operators yield **true** if object *a* is equal to object *b*; otherwise, **false**.  
   
 ## Remarks  
- Indicates whether two ComPtrRef objects are equal.  
+ Indicates whether two **ComPtrRef** objects are equal.  
   
 ## Requirements  
  **Header:** client.h  

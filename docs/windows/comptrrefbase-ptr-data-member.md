@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 T* ptr_;  
 ```  
   
@@ -25,7 +25,7 @@ T* ptr_;
  Pointer to the type specified by the current template parameter.  
   
 ## Remarks  
- `ptr_` is the protected data member.  
+ **ptr_** is the protected data member.  
   
 ## Requirements  
  **Header:** client.h  

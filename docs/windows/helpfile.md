@@ -17,14 +17,13 @@ Sets the name of the Help file for a type library.
   
 ## Syntax  
   
-```  
-  
-      [ helpfile(  
+```cpp  
+[ helpfile(  
    "filename"  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *filename*  
  The name of the file that contains the help topics.  
   
@@ -40,7 +39,7 @@ Sets the name of the Help file for a type library.
   
 |||  
 |-|-|  
-|**Applies to**|`interface`, `typedef`, **class**, method, property|  
+|**Applies to**|**interface**, **typedef**, **class**, method, **property**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -54,4 +53,4 @@ Sets the name of the Help file for a type library.
  [Method Attributes](../windows/method-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [helpcontext](../windows/helpcontext.md)   
- [helpstring](../windows/helpstring.md)   
+ [helpstring](../windows/helpstring.md)   

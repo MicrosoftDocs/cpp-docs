@@ -17,10 +17,8 @@ Indicates that the item exists but should not be displayed in a user-oriented br
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [hidden]  
-  
 ```  
   
 ## Remarks  
@@ -35,9 +33,9 @@ Indicates that the item exists but should not be displayed in a user-oriented br
   
 |||  
 |-|-|  
-|**Applies to**|`interface`, **class**, `struct`, method, property|  
+|**Applies to**|**interface**, **class**, **struct**, method, property|  
 |**Repeatable**|No|  
-|**Required attributes**|**coclass** (when applied to **class** or `struct`)|  
+|**Required attributes**|**coclass** (when applied to **class** or **struct**)|  
 |**Invalid attributes**|None|  
   
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
@@ -46,4 +44,4 @@ Indicates that the item exists but should not be displayed in a user-oriented br
  [IDL Attributes](../windows/idl-attributes.md)   
  [Interface Attributes](../windows/interface-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+ [Method Attributes](../windows/method-attributes.md)   

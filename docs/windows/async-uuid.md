@@ -17,13 +17,13 @@ Specifies the UUID that directs the MIDL compiler to define both synchronous and
   
 ## Syntax  
   
-```  
+```cpp  
 [async_uuid (  
    uuid  
 )]  
 ```  
   
-#### Parameters  
+### Parameters  
  *uuid*  
  A UUID that identifies the version of the interface.  
   

@@ -17,7 +17,7 @@ Represents an invalid handle.
   
 ## Syntax  
   
-```  
+```cpp  
 inline static HANDLE GetInvalidValue();  
 ```  
   

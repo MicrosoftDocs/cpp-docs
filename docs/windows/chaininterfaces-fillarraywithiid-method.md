@@ -17,14 +17,14 @@ Stores the interface ID defined by the *I0* template parameter into a specified 
   
 ## Syntax  
   
-```  
+```cpp  
 __forceinline static void FillArrayWithIid(  
    _Inout_ unsigned long &index,  
    _In_ IID* iids  
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *index*  
  Pointer to an index value into the *iids* array.  
   

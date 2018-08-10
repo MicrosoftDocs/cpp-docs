@@ -17,10 +17,9 @@ The null preprocessor directive is a single number sign (**#**) alone on a line.
 ## Syntax  
   
 ```  
-  
 #  
-  
 ```  
   
 ## See Also  
- [Preprocessor Directives](../preprocessor/preprocessor-directives.md)
+ 
+[Preprocessor Directives](../preprocessor/preprocessor-directives.md)

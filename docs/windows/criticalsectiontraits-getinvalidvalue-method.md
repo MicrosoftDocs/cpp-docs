@@ -17,7 +17,7 @@ Specializes a **CriticalSection** template so that the template is always invali
   
 ## Syntax  
   
-```  
+```cpp  
 inline static Type GetInvalidValue();  
 ```  
   
@@ -25,7 +25,7 @@ inline static Type GetInvalidValue();
  Always returns a pointer to an invalid critical section.  
   
 ## Remarks  
- The *Type* modifier is defined as `typedef CRITICAL_SECTION* Type;`.  
+ The `Type` modifier is defined as `typedef CRITICAL_SECTION* Type;`.  
   
 ## Requirements  
  **Header:** corewrappers.h  

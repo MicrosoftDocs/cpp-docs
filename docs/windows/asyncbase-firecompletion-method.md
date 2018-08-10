@@ -17,7 +17,7 @@ Invokes the completion event handler, or resets the internal progress delegate.
   
 ## Syntax  
   
-```  
+```cpp  
 void FireCompletion(  
    void  
 ) override;  

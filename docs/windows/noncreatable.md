@@ -17,9 +17,9 @@ Defines an object that cannot be instantiated by itself.
   
 ## Syntax  
   
-```
-[noncreatable]
-```
+```cpp  
+[noncreatable]  
+```  
   
 ## Remarks  
  The **noncreatable** C++ attribute has the same functionality as the [noncreatable](http://msdn.microsoft.com/library/windows/desktop/aa367118) MIDL attribute and is automatically passed through to the generated .IDL file by the compiler.  
@@ -28,7 +28,7 @@ Defines an object that cannot be instantiated by itself.
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_noncreatable.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -52,7 +52,7 @@ class CMyClass : public A
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|**coclass**|  
 |**Invalid attributes**|None|  

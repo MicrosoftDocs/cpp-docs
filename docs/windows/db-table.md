@@ -17,7 +17,7 @@ Opens an OLE DB table.
   
 ## Syntax  
   
-```  
+```cpp  
 [ db_table(   
    db_table,   
    name,   
@@ -36,18 +36,18 @@ Opens an OLE DB table.
  *source_name* (optional)  
  The `CSession` variable or instance of a class that has the `db_source` attribute applied to it on which the command executes. See [db_source](../windows/db-source.md).  
   
- `hresult` (optional)  
- Identifies the variable that will receive the `HRESULT` of this database command. If the variable does not exist, it will be automatically injected by the attribute.  
+ *hresult* (optional)  
+ Identifies the variable that will receive the HRESULT of this database command. If the variable does not exist, it will be automatically injected by the attribute.  
   
 ## Remarks  
- **db_table** creates a [CTable](../data/oledb/ctable-class.md) object, which is used by an OLE DB consumer to open a table. You can use this attribute only at the class level; you cannot use it inline. Use **db_column** to bind table columns to variables; use **db_param** to delimit (set the parameter type and so on) of parameters.  
+ **db_table** creates a [CTable](../data/oledb/ctable-class.md) object, which is used by an OLE DB consumer to open a table. You can use this attribute only at the class level; you cannot use it inline. Use `db_column` to bind table columns to variables; use `db_param` to delimit (set the parameter type and so on) of parameters.  
   
  When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.  
   
 ## Example  
  The following example opens the Products table for use by `CProducts`.  
   
-```  
+```cpp  
 // db_table.cpp  
 // compile with: /LD  
 #include <atlbase.h>  
@@ -60,7 +60,7 @@ class CProducts {
 };  
 ```  
   
- For an example of this attribute used in an application, see the samples [AtlAgent](http://msdn.microsoft.com/en-us/52bef5da-c1a0-4223-b4e6-9e464b6db409) and [MultiRead](http://msdn.microsoft.com/en-us/5a2a915a-77dc-492f-94b2-1b809995dd5e).  
+ For an example of this attribute used in an application, see the samples [AtlAgent](http://msdn.microsoft.com/52bef5da-c1a0-4223-b4e6-9e464b6db409) and [MultiRead](http://msdn.microsoft.com/5a2a915a-77dc-492f-94b2-1b809995dd5e).  
   
 ## Requirements  
   
@@ -68,7 +68,7 @@ class CProducts {
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  

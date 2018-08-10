@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # raw_dispinterfaces
 **C++ Specific**  
   
- Tells the compiler to generate low-level wrapper functions for dispinterface methods and properties that call **IDispatch::Invoke** and return the `HRESULT` error code.  
+Tells the compiler to generate low-level wrapper functions for dispinterface methods and properties that call `IDispatch::Invoke` and return the HRESULT error code.  
   
 ## Syntax  
   
@@ -24,10 +24,12 @@ raw_dispinterfaces
 ```  
   
 ## Remarks  
- If this attribute is not specified, only high-level wrappers are generated, which throw C++ exceptions in case of failure.  
+ 
+If this attribute is not specified, only high-level wrappers are generated, which throw C++ exceptions in case of failure.  
   
- **END C++ Specific**  
+**END C++ Specific**  
   
 ## See Also  
- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

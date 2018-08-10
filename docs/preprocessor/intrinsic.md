@@ -26,7 +26,7 @@ Specifies that calls to functions specified in the pragma's argument list are in
 
 The **intrinsic** pragma tells the compiler that a function has known behavior.  The compiler may call the function and not replace the function call with inline instructions, if it will result in better performance.
 
-The library functions with intrinsic forms are listed below. Once an **intrinsic** pragma is seen, it takes effect at the first function definition containing a specified intrinsic function. The effect continues to the end of the source file or to the appearance of a **function** pragma specifying the same intrinsic function. The **intrinsic** pragma can be used only outside of a function definition — at the global level.
+The library functions with intrinsic forms are listed below. Once an **intrinsic** pragma is seen, it takes effect at the first function definition containing a specified intrinsic function. The effect continues to the end of the source file or to the appearance of a `function` pragma specifying the same intrinsic function. The **intrinsic** pragma can be used only outside of a function definition — at the global level.
 
 The following functions have intrinsic forms and the intrinsic forms are used when you specify [/Oi](../build/reference/oi-generate-intrinsic-functions.md):
 
@@ -43,11 +43,11 @@ Programs that use intrinsic functions are faster because they do not have the ov
 
 **x86 Specific**
 
-The **_disable** and **_enable** intrinsics generate kernel-mode instructions to disable/enable interrupts and could be useful in kernel-mode drivers.
+The `_disable` and `_enable` intrinsics generate kernel-mode instructions to disable/enable interrupts and could be useful in kernel-mode drivers.
 
 ### Example
 
-Compile the following code from the command line with "cl -c -FAs sample.c" and look at sample.asm to see that they turn into x86 instructions CLI and STI:
+Compile the following code from the command line with `cl -c -FAs sample.c` and look at sample.asm to see that they turn into x86 instructions CLI and STI:
 
 ```cpp
 // pragma_directive_intrinsic.cpp
@@ -87,5 +87,5 @@ See [#pragma function](../preprocessor/function-c-cpp.md) for information and an
 
 ## See also
 
-[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)<br/>
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
+[Compiler Intrinsics](../intrinsics/compiler-intrinsics.md)  

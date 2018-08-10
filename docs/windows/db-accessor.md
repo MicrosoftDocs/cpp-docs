@@ -13,13 +13,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # db_accessor
-Groups **db_column** attributes that participate in `IAccessor`-based binding.  
+Groups `db_column` attributes that participate in `IAccessor`-based binding.  
   
 ## Syntax  
   
-```  
-  
-      [ db_accessor(   
+```cpp  
+[ db_accessor(   
    num,   
    auto   
 ) ]  
@@ -30,10 +29,10 @@ Groups **db_column** attributes that participate in `IAccessor`-based binding.
  Specifies the accessor number (a zero-based integer index). You must specify accessor numbers in increasing order, using integers or defined values.  
   
  *auto*  
- A Boolean value that specifies whether the accessor is automatically retrieved (**TRUE**) or not retrieved (**FALSE**).  
+ A Boolean value that specifies whether the accessor is automatically retrieved (TRUE) or not retrieved (FALSE).  
   
 ## Remarks  
- **db_accessor** defines the underlying OLE DB accessor for subsequent **db_column** and **db_param** attributes within the same class or function. **db_accessor** is usable at member level and is used to group **db_column** attributes that participate in OLE DB `IAccessor`-based binding. It is used in conjunction with either the **db_table** or **db_command** attributes. Calling this attribute is similar to calling the [BEGIN_ACCESSOR](../data/oledb/begin-accessor.md) and [END_ACCESSOR](../data/oledb/end-accessor.md) macros.  
+ **db_accessor** defines the underlying OLE DB accessor for subsequent `db_column` and `db_param` attributes within the same class or function. **db_accessor** is usable at member level and is used to group `db_column` attributes that participate in OLE DB `IAccessor`-based binding. It is used in conjunction with either the `db_table` or `db_command` attributes. Calling this attribute is similar to calling the [BEGIN_ACCESSOR](../data/oledb/begin-accessor.md) and [END_ACCESSOR](../data/oledb/end-accessor.md) macros.  
   
  **db_accessor** generates a rowset and binds it to the corresponding accessor maps. If you do not call **db_accessor**, accessor 0 will automatically be generated, and all column bindings will be mapped to this accessor block.  
   
@@ -44,7 +43,7 @@ Groups **db_column** attributes that participate in `IAccessor`-based binding.
 ## Example  
  The following example uses **db_accessor** to group columns in the Orders table from the Northwind database into two accessors. Accessor 0 is an automatic accessor, and accessor 1 is not.  
   
-```  
+```cpp  
 // cpp_attr_ref_db_accessor.cpp  
 // compile with: /LD /link /OPT:NOREF  
 #define _ATL_ATTRIBUTES  

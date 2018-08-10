@@ -28,8 +28,7 @@ ms.workload: ["cplusplus", "uwp"]
   
 -   Click the **Close** button.  
   
- Requirements  
-  
+## Requirements  
  None  
   
 ## See Also  

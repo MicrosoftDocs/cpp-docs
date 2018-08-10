@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Mutex::Lock Method
-Waits until the current object, or the Mutex object associated with the specified handle, releases the mutex or the specified time-out interval has elapsed.  
+Waits until the current object, or the **Mutex** object associated with the specified handle, releases the mutex or the specified time-out interval has elapsed.  
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLock Lock(  
    DWORD milliseconds = INFINITE  
 );  
@@ -28,12 +28,12 @@ static SyncLock Lock(
 );  
 ```  
   
-#### Parameters  
- `milliseconds`  
+### Parameters  
+ *milliseconds*  
  The time-out interval, in milliseconds. The default value is INFINITE, which waits indefinitely.  
   
- `h`  
- The handle of a Mutex object.  
+ *h*  
+ The handle of a **Mutex** object.  
   
 ## Return Value  
   

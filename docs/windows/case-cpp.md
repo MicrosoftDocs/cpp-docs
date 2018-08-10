@@ -17,8 +17,10 @@ Used with the [switch_type](../windows/switch-type.md) attribute in a **union**.
   
 ## Syntax  
   
-```  
-[ case( value ) ]  
+```cpp  
+[ case(  
+   value  
+) ]  
 ```  
   
 #### Parameters  

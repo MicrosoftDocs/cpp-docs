@@ -24,10 +24,10 @@ You can create a runtime dialog box that a user cannot exit. This kind of dialog
   
      At run time, a user cannot exit a modal dialog box that has these characteristics.  
   
- To enable testing of this kind of dialog box, the test dialog box function detects when ESC is pressed. (ESC is also known as the VK_ESCAPE virtual key.) No matter how the dialog box is designed to behave at run time, you can terminate it in test mode by pressing ESC.  
+ To enable testing of this kind of dialog box, the test dialog box function detects when **Esc** is pressed. (**Esc** is also known as the VK_ESCAPE virtual key.) No matter how the dialog box is designed to behave at run time, you can terminate it in test mode by pressing **Esc**.  
   
 > [!NOTE]
->  For MFC applications, to create a dialog box that users cannot exit, you must override the default behavior of `OnOK` and `OnCancel` because even if you delete the associated buttons, the dialog box can still be dismissed by pressing ENTER or ESC.  
+>  For MFC applications, to create a dialog box that users cannot exit, you must override the default behavior of `OnOK` and `OnCancel` because even if you delete the associated buttons, the dialog box can still be dismissed by pressing **Enter** or **Esc**.  
   
  For information about how to add resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index).  
   
@@ -38,4 +38,3 @@ You can create a runtime dialog box that a user cannot exit. This kind of dialog
  [How to: Create a Resource](../windows/how-to-create-a-resource.md)   
  [Resource Files](../windows/resource-files-visual-studio.md)   
  [Dialog Editor](../windows/dialog-editor.md)
-

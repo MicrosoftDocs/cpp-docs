@@ -17,10 +17,8 @@ Lets you pass a locale identifier to a function.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [lcid]  
-  
 ```  
   
 ## Remarks  
@@ -28,7 +26,7 @@ Lets you pass a locale identifier to a function.
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_lcid.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -56,4 +54,4 @@ __interface IStatic {
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
+ [Parameter Attributes](../windows/parameter-attributes.md)   

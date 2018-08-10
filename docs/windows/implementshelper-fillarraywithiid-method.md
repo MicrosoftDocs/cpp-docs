@@ -17,17 +17,17 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 void FillArrayWithIid(  
    _Inout_ unsigned long *index,   
    _Inout_ IID* iids) throw();  
 ```  
   
-#### Parameters  
- `index`  
- A zero-based index that indicates the starting array element for this operation. When this operation completes, `index` is incremented by 1.  
+### Parameters  
+ *index*  
+ A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.  
   
- `iids`  
+ *iids*  
  An array of type IIDs.  
   
 ## Remarks  

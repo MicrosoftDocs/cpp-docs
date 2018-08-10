@@ -17,7 +17,7 @@ Determines whether the asynchronous operation should continue processing or shou
   
 ## Syntax  
   
-```  
+```cpp  
 inline bool ContinueAsyncOperation();  
 ```  
   

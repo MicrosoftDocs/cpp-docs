@@ -17,13 +17,13 @@ Retrieves a pointer to the interface specified by parameter.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    QueryInterface  
 )(REFIID riid, _Deref_out_ void **ppvObject);  
 ```  
   
-#### Parameters  
+### Parameters  
  *riid*  
  An interface ID.  
   

@@ -57,7 +57,7 @@ Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:fil
 ## Examples  
  The following example shows a winmdidl command at a Visual Studio x86 command prompt. It specifies an output directory, and a file that contains special banner text to add to the generated .idl file.  
   
- **C:\Program Files (x86)\Microsoft Visual Studio 12.0>winmdidl /nologo /outdir:c:\users\giraffe\documents\ /banner:c:\users\giraffe\documents\banner.txt "C:\Users\giraffe\Documents\Visual Studio 2013\Projects\Test_for_winmdidl\Debug\Test_for_winmdidl\test_for_winmdidl.winmd"**  
+ `C:\Program Files (x86)\Microsoft Visual Studio 12.0>winmdidl /nologo /outdir:c:\users\giraffe\documents\ /banner:c:\users\giraffe\documents\banner.txt "C:\Users\giraffe\Documents\Visual Studio 2013\Projects\Test_for_winmdidl\Debug\Test_for_winmdidl\test_for_winmdidl.winmd"`  
   
  The next example shows the console display from winmdidl that indicates that the operation succeeded.  
   
@@ -65,7 +65,7 @@ Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:fil
   
  Next, midlrt is run on the generated IDL file. Notice that the **metadata_dir** argument is specified after the name of the .idl file. The path of \WinMetadata\ is required—it's the location for windows.winmd.  
   
- **C:\Program Files (x86)\Microsoft Visual Studio 12.0> midlrt "c:\users\mblome\documents\test_for_winmdidl.idl" /metadata_dir "C:\Windows\System32\WinMetadata"**  
+ `C:\Program Files (x86)\Microsoft Visual Studio 12.0> midlrt "c:\users\mblome\documents\test_for_winmdidl.idl" /metadata_dir "C:\Windows\System32\WinMetadata"`  
   
 ## Remarks  
  The output file from a winmdidl operation has the same name as the input file but has the .idl file name extension.  
