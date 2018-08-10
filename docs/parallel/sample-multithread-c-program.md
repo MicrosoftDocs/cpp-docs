@@ -11,13 +11,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Sample Multithread C Program
-Bounce.c is a sample multithread program that creates a new thread each time the letter **a** or **A** is typed. Each thread bounces a happy face of a different color around the screen. Up to 32 threads can be created. The program's normal termination occurs when `q` or **Q** is typed. For information about compiling and linking Bounce.c, see [Compiling and Linking Multithread Programs](../parallel/compiling-and-linking-multithread-programs.md).  
+Bounce.c is a sample multithread program that creates a new thread each time the letter `a` or `A` is typed. Each thread bounces a happy face of a different color around the screen. Up to 32 threads can be created. The program's normal termination occurs when `q` or `Q` is typed. For information about compiling and linking Bounce.c, see [Compiling and Linking Multithread Programs](../parallel/compiling-and-linking-multithread-programs.md).  
   
 ## Example  
   
 ### Code  
   
-```  
+```c  
 // sample_multithread_c_program.c  
 // compile with: /c  
 //  
@@ -210,4 +210,5 @@ q
 ```  
   
 ## See Also  
- [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+
+[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)

@@ -20,4 +20,5 @@ There are several problems you might encounter in creating, linking, or executin
 |Your program generates numerous compile and link errors.|You can eliminate many potential problems by setting the compiler's warning level to one of its highest values and heeding the warning messages. By using the level 3 or level 4 warning level options, you can detect unintentional data conversions, missing function prototypes, and use of non-ANSI features.|  
   
 ## See Also  
- [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+
+[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
