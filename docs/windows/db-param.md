@@ -18,8 +18,7 @@ Associates the specified member variable with an input or output parameter and d
 ## Syntax  
   
 ```  
-  
-      [ db_param(   
+[ db_param(   
    ordinal,   
    paramtype="DBPARAMIO_INPUT",   
    dbtype,   

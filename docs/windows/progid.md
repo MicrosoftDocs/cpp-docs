@@ -18,10 +18,7 @@ Specifies the ProgID for a COM object.
 ## Syntax  
   
 ```  
-  
-      [ progid(  
-   name  
-) ];  
+[ progid( name ) ];  
 ```  
   
 #### Parameters  

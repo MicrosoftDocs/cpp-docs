@@ -17,11 +17,9 @@ Defines an object that cannot be instantiated by itself.
   
 ## Syntax  
   
-```  
-  
-[noncreatable]  
-  
-```  
+```
+[noncreatable]
+```
   
 ## Remarks  
  The **noncreatable** C++ attribute has the same functionality as the [noncreatable](http://msdn.microsoft.com/library/windows/desktop/aa367118) MIDL attribute and is automatically passed through to the generated .IDL file by the compiler.  

@@ -18,10 +18,7 @@ Specifies a version-independent form of the ProgID.
 ## Syntax  
   
 ```  
-  
-      [ vi_progid(  
-   name  
-) ];  
+[ vi_progid( name ) ];  
 ```  
   
 #### Parameters  

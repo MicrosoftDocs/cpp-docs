@@ -18,8 +18,7 @@ Binds a specified column to a variable in the rowset.
 ## Syntax  
   
 ```  
-  
-      [ db_column(   
+[ db_column(   
    ordinal,   
    dbtype,   
    precision,   

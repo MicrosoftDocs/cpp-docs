@@ -18,8 +18,7 @@ Opens an OLE DB table.
 ## Syntax  
   
 ```  
-  
-      [ db_table(   
+[ db_table(   
    db_table,   
    name,   
    source_name,   

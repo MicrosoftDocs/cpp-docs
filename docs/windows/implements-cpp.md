@@ -18,8 +18,7 @@ Specifies dispatch interfaces that are forced to be members of the IDL coclass.
 ## Syntax  
   
 ```  
-  
-      [ implements(   
+[ implements(   
    interfaces={interfaces},  
    dispinterfaces={dispinterfaces}  
 )]  

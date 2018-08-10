@@ -18,12 +18,12 @@ Creates an OLE DB command.
 ## Syntax  
   
 ```cpp
-[ db_command(   
-   command,   
-   name,   
-   source_name,   
-   hresult,   
-   bindings,   
+[ db_command(
+   command,
+   name,
+   source_name,
+   hresult,
+   bindings,
    bulk_fetch)  
 ]  
 ```  

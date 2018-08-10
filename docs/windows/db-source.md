@@ -18,8 +18,7 @@ Creates a connection to a data source.
 ## Syntax  
   
 ```  
-  
-      [ db_source(   
+[ db_source(   
    db_source,   
    name,   
    hresult   
