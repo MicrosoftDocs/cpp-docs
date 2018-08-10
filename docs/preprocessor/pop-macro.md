@@ -18,19 +18,18 @@ Sets the value of the *macro_name* macro to the value on the top of the stack fo
 ## Syntax  
   
 ```  
-  
 #pragma pop_macro("  
 macro_name  
 ")  
-  
 ```  
   
 ## Remarks  
- You must first issue a [push_macro](../preprocessor/push-macro.md) for *macro_name* before you can do a **pop_macro**.  
+ 
+You must first issue a [push_macro](../preprocessor/push-macro.md) for *macro_name* before you can do a **pop_macro**.  
   
 ## Example  
   
-```  
+```cpp  
 // pragma_directives_pop_macro.cpp  
 // compile with: /W1  
 #include <stdio.h>  
@@ -63,4 +62,5 @@ int main() {
 ```  
   
 ## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
