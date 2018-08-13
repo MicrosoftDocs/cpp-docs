@@ -17,14 +17,13 @@ Specifies the index of the last array element to be transmitted.
   
 ## Syntax  
   
-```  
-  
-      [ last_is(  
+```cpp  
+[ last_is(  
    "expression"  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *expression*  
  One or more C-language expressions. Empty argument slots are allowed.  
   
@@ -40,7 +39,7 @@ Specifies the index of the last array element to be transmitted.
   
 |||  
 |-|-|  
-|**Applies to**|Field in `struct` or **union**, interface parameter, interface method|  
+|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -54,4 +53,4 @@ Specifies the index of the last array element to be transmitted.
  [first_is](../windows/first-is.md)   
  [max_is](../windows/max-is.md)   
  [length_is](../windows/length-is.md)   
- [size_is](../windows/size-is.md)   
+ [size_is](../windows/size-is.md)   

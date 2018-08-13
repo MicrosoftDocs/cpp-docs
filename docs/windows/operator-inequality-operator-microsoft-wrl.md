@@ -16,7 +16,7 @@ Inequality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW bool operator!=(  
    const ComPtr<T>& a,  
    const ComPtr<U>& b  
@@ -51,15 +51,15 @@ WRL_NOTHROW bool operator!=(
 );  
 ```  
   
-#### Parameters  
- `a`  
+### Parameters  
+ *a*  
  The left object.  
   
- `b`  
+ *b*  
  The right object.  
   
 ## Return Value  
- `true` if the objects are not equal; otherwise, `false`.  
+ **true** if the objects are not equal; otherwise, **false**.  
   
 ## Requirements  
  **Header:** client.h  

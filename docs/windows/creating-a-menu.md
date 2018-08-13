@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a Menu
 > [!NOTE]
->  The Resource Window is not available in Express editions.  
+>  The **Resource Window** is not available in Express editions.  
   
 ### To create a standard menu  
   
@@ -35,12 +35,11 @@ New Item Box
 New Item Box with Focus Shifted After You Type Menu Name  
   
     > [!NOTE]
-    >  To create a single-item menu on the menu bar, set the Popup property to False.  
+    >  To create a single-item menu on the menu bar, set the **Popup** property to **False**.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- **Requirements**  
-  
+## Requirements  
  Win32  
   
 ## See Also  

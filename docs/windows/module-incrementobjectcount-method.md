@@ -17,7 +17,7 @@ Increments the number of objects tracked by the module.
   
 ## Syntax  
   
-```  
+```cpp  
 virtual long IncrementObjectCount();  
 ```  
   
@@ -29,5 +29,5 @@ virtual long IncrementObjectCount();
   
  **Namespace:** Microsoft::WRL
  
- ## See Also
+## See Also
  [Module Class](../windows/module-class.md)

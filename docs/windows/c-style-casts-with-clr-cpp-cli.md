@@ -154,7 +154,7 @@ int main() {
 ```  
   
 ## Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ## See Also  
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

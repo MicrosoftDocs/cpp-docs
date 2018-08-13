@@ -17,15 +17,14 @@ Specifies that a member of a module, interface, or dispinterface cannot be calle
   
 ## Syntax  
   
-```  
-  
-      [ restricted(  
+```cpp  
+[ restricted(  
    interfaces  
 ) ]  
 ```  
   
-#### Parameters  
- `interfaces`  
+### Parameters  
+ *interfaces*  
  One or more interfaces that may not be called arbitrarily on a COM object. This parameter is only valid when applied to a class.  
   
 ## Remarks  
@@ -34,7 +33,7 @@ Specifies that a member of a module, interface, or dispinterface cannot be calle
 ## Example  
  The following code shows how to use the **restricted** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_restricted.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -63,9 +62,9 @@ class c : public a, public b
   
 |||  
 |-|-|  
-|**Applies to**|Interface method, `interface`, **class**, `struct`|  
+|**Applies to**|Interface method, **interface**, **class**, **struct**|  
 |**Repeatable**|No|  
-|**Required attributes**|**coclass** (when applied to **class** or `struct`)|  
+|**Required attributes**|**coclass** (when applied to **class** or **struct**)|  
 |**Invalid attributes**|None|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
@@ -73,4 +72,4 @@ class c : public a, public b
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Interface Attributes](../windows/interface-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+ [Method Attributes](../windows/method-attributes.md)   

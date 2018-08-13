@@ -21,7 +21,7 @@ enum FactoryCacheFlags;
 ```  
   
 ## Remarks  
- By default, the factory caching policy is specified as the [ModuleType](../windows/moduletype-enumeration.md) template parameter when you create a [Module](../windows/module-class.md) object. To override this policy, specify a `FactoryCacheFlags` value when you create a factory object.  
+ By default, the factory caching policy is specified as the [ModuleType](../windows/moduletype-enumeration.md) template parameter when you create a [Module](../windows/module-class.md) object. To override this policy, specify a **FactoryCacheFlags** value when you create a factory object.  
   
 |||  
 |-|-|  

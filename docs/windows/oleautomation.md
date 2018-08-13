@@ -17,10 +17,8 @@ Indicates that an interface is compatible with Automation.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [oleautomation]  
-  
 ```  
   
 ## Remarks  
@@ -35,7 +33,7 @@ Indicates that an interface is compatible with Automation.
   
 |||  
 |-|-|  
-|**Applies to**|`interface`|  
+|**Applies to**|**interface**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|**dispinterface**|  
@@ -44,4 +42,4 @@ Indicates that an interface is compatible with Automation.
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
+ [Interface Attributes](../windows/interface-attributes.md)   

@@ -17,7 +17,7 @@ Indicates that the property supports data binding.
   
 ## Syntax  
   
-```  
+```cpp  
 [bindable]  
 ```  
   

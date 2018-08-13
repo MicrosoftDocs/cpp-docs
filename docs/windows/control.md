@@ -17,7 +17,7 @@ Specifies that the user-defined type is a control.
   
 ## Syntax  
   
-```  
+```cpp  
 [control]  
 ```  
   

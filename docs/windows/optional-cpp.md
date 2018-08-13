@@ -17,10 +17,8 @@ Specifies an optional parameter for a member function.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [optional]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Specifies an optional parameter for a member function.
 ## Example  
  The following code shows how **optional** might be used:  
   
-```  
+```cpp  
 // cpp_attr_ref_optional.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -57,4 +55,4 @@ __interface IFireTabCtrl : IDispatch
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
+ [Parameter Attributes](../windows/parameter-attributes.md)   

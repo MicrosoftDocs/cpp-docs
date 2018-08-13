@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "uwp"]
 # New &lt;Device&gt; Image Type Dialog Box (Image Editor for Icons)
 Enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, click **New Image Type** on the **Image** menu.  
   
- **Target Image Type**  
+### Target Image Type  
  Lists the available image types. Select the image type you want to open:  
   
 ||||  
@@ -30,7 +30,7 @@ Enables you to create a new device image of a specified type. To open the **New 
 > [!NOTE]
 >  Any existing images will not be displayed in this list.  
   
- **Custom**  
+### Custom  
  Opens the [Custom Image dialog box](custom-image-dialog-box-image-editor-for-icons.md) in which you can create a new image with a custom size and number of colors.  
   
 ## Requirements  

@@ -22,15 +22,15 @@ InspectableClass(
    trustLevel)  
 ```  
   
-#### Parameters  
- `runtimeClassName`  
+### Parameters  
+ *runtimeClassName*  
  The full textual name of the runtime class.  
   
- `trustLevel`  
+ *trustLevel*  
  One of the [TrustLevel](http://msdn.microsoft.com/library/br224625.aspx) enumerated values.  
   
 ## Remarks  
- The `InspectableClass` macro can be used only with Windows Runtime types.  
+ The **InspectableClass** macro can be used only with Windows Runtime types.  
   
 ## Requirements  
  **Header:** implements.h  

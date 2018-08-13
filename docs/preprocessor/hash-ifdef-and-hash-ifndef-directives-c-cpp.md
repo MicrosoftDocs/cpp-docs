@@ -27,19 +27,20 @@ The **#ifdef** and **#ifndef** directives perform the same task as the `#if` dir
 ```  
   
 ## Remarks  
- You can use the **#ifdef** and **#ifndef** directives anywhere `#if` can be used. The **#ifdef** *identifier* statement is equivalent to `#if 1` when *identifier* has been defined, and it is equivalent to `#if 0` when *identifier* has not been defined or has been undefined with the `#undef` directive. These directives check only for the presence or absence of identifiers defined with `#define`, not for identifiers declared in the C or C++ source code.  
+ 
+You can use the **#ifdef** and **#ifndef** directives anywhere `#if` can be used. The **#ifdef** *identifier* statement is equivalent to `#if 1` when *identifier* has been defined, and it is equivalent to `#if 0` when *identifier* has not been defined or has been undefined with the `#undef` directive. These directives check only for the presence or absence of identifiers defined with `#define`, not for identifiers declared in the C or C++ source code.  
   
- These directives are provided only for compatibility with previous versions of the language. The **defined(** *identifier* **)** constant expression used with the `#if` directive is preferred.  
+These directives are provided only for compatibility with previous versions of the language. The **defined(** *identifier* **)** constant expression used with the `#if` directive is preferred.  
   
- The **#ifndef** directive checks for the opposite of the condition checked by **#ifdef**. If the identifier has not been defined (or its definition has been removed with `#undef`), the condition is true (nonzero). Otherwise, the condition is false (0).  
+The **#ifndef** directive checks for the opposite of the condition checked by **#ifdef**. If the identifier has not been defined (or its definition has been removed with `#undef`), the condition is true (nonzero). Otherwise, the condition is false (0).  
   
- **Microsoft Specific**  
+**Microsoft Specific**  
   
- The *identifier* can be passed from the command line using the /D option. Up to 30 macros can be specified with /D.  
+The *identifier* can be passed from the command line using the `/D` option. Up to 30 macros can be specified with `/D`.  
   
- This is useful for checking whether a definition exists, because a definition can be passed from the command line. For example:  
+This is useful for checking whether a definition exists, because a definition can be passed from the command line. For example:  
   
-```  
+```cpp  
 // ifdef_ifndef.CPP  
 // compile with: /Dtest /c  
 #ifndef test  
@@ -47,7 +48,8 @@ The **#ifdef** and **#ifndef** directives perform the same task as the `#if` dir
 #endif  
 ```  
   
- **END Microsoft Specific**  
+**END Microsoft Specific**  
   
 ## See Also  
- [Preprocessor Directives](../preprocessor/preprocessor-directives.md)
+ 
+[Preprocessor Directives](../preprocessor/preprocessor-directives.md)

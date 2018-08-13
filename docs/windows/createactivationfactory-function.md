@@ -25,7 +25,7 @@ template<typename Factory>
      _Outptr_ IUnknown **ppFactory) throw();  
 ```  
   
-#### Parameters  
+### Parameters  
  *flags*  
  A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.  
   

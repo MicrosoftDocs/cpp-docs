@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 MakeAllocator();  
 ```  
   
 ## Remarks  
- Initializes a new instance of the MakeAllocator class.  
+ Initializes a new instance of the **MakeAllocator** class.  
   
 ## Requirements  
  **Header:** implements.h  

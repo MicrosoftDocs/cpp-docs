@@ -43,7 +43,7 @@ bool operator!=(
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *a*  
  A reference to a **ComPtrRef** object.  
   

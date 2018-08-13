@@ -28,7 +28,7 @@ Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data membe
 
 An error is emitted if the current **ComPtrRefBase** doesn't derive from `IInspectable`.
 
-This cast is available only if **&#95;&#95;WRL_CLASSIC_COM&#95;&#95;** is defined.
+This cast is available only if `__WRL_CLASSIC_COM__` is defined.
 
 ## Requirements
 

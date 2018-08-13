@@ -22,7 +22,7 @@ Visual C++ supports the required predefined preprocessor macros specified by the
 
 The compiler supports this predefined identifier specified by ISO C99 and ISO C++11.
 
-- **&#95;&#95;func&#95;&#95;** The unqualified and unadorned name of the enclosing function as a function-local `static const` array of `char`.
+- **&#95;&#95;func&#95;&#95;** The unqualified and unadorned name of the enclosing function as a function-local **static const** array of **char**.
 
     ```cpp
     void example(){
@@ -60,7 +60,7 @@ Microsoft Visual C++ supports these additional predefined macros.
 
 - **&#95;&#95;AVX2&#95;&#95;** Defined as 1 when the [/arch:AVX2](../build/reference/arch-x86.md) compiler option is set and the compiler target is x86 or x64. Otherwise, undefined.
 
-- **&#95;CHAR&#95;UNSIGNED** Defined as 1 if the default `char` type is unsigned. This is set when the [/J (Default char Type Is unsigned)](../build/reference/j-default-char-type-is-unsigned.md) compiler option is set. Otherwise, undefined.
+- **&#95;CHAR&#95;UNSIGNED** Defined as 1 if the default **char** type is unsigned. This is set when the [/J (Default char Type Is unsigned)](../build/reference/j-default-char-type-is-unsigned.md) compiler option is set. Otherwise, undefined.
 
 - **&#95;&#95;CLR&#95;VER** Defined as an integer literal that represents the version of the common language runtime used when the application was compiled. The value is encoded in the form `Mmmbbbbb`, where `M` is the major version of the runtime, `mm` is the minor version of the runtime, and `bbbbb` is the build number. **&#95;&#95;CLR&#95;VER** is defined if the [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option is set. Otherwise, undefined.
 
@@ -178,9 +178,9 @@ Microsoft Visual C++ supports these additional predefined macros.
 
 - **&#95;M&#95;ARM&#95;FP** Defined as an integer literal value that indicates which [/arch](../build/reference/arch-arm.md) compiler option was set, if the compilation target is an ARM processor. Otherwise, undefined.
 
-  - In the range 30-39 if no **/arch** ARM option was specified, indicating the default architecture for ARM was set (`VFPv3`).
+  - In the range 30-39 if no `/arch` ARM option was specified, indicating the default architecture for ARM was set (`VFPv3`).
 
-  - In the range 40-49 if **/arch:VFPv4** was set.
+  - In the range 40-49 if `/arch:VFPv4` was set.
 
   - See [/arch (ARM)](../build/reference/arch-arm.md) for more information.
 
@@ -204,11 +204,11 @@ Microsoft Visual C++ supports these additional predefined macros.
 
 - **&#95;M&#95;IX86&#95;FP** Defined as an integer literal value that indicates the [/arch](../build/reference/arch-arm.md) compiler option that was set, or the default. This macro is always defined when the compilation target is an x86 processor. Otherwise, undefined. When defined, the value is:
 
-  - 0 if the **/arch:IA32** compiler option was set.
+  - 0 if the `/arch:IA32` compiler option was set.
 
-  - 1 if the **/arch:SSE** compiler option was set.
+  - 1 if the `/arch:SSE` compiler option was set.
 
-  - 2 if the **/arch:SSE2**, **/arch:AVX** or **/arch:AVX2** compiler option was set. This value is the default if an **/arch** compiler option was not specified. When **/arch:AVX** is specified, the macro **&#95;&#95;AVX&#95;&#95;** is also defined. When **/arch:AVX2** is specified, both **&#95;&#95;AVX&#95;&#95;** and **&#95;&#95;AVX2&#95;&#95;** are also defined.
+  - 2 if the `/arch:SSE2`, `/arch:AVX` or `/arch:AVX2` compiler option was set. This value is the default if an `/arch` compiler option was not specified. When `/arch:AVX` is specified, the macro **&#95;&#95;AVX&#95;&#95;** is also defined. When `/arch:AVX2` is specified, both **&#95;&#95;AVX&#95;&#95;** and **&#95;&#95;AVX2&#95;&#95;** are also defined.
 
   - See [/arch (x86)](../build/reference/arch-x86.md) for more information.
 
@@ -220,9 +220,9 @@ Microsoft Visual C++ supports these additional predefined macros.
 
 - **&#95;MSC&#95;EXTENSIONS** Defined as 1 if the [/Ze (Enable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md) compiler option is set, which is the default. Otherwise, undefined.
 
-- **&#95;MSC&#95;FULL&#95;VER** Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element. For example, if the version number of the Visual C++ compiler is 15.00.20706.01, the **&#95;MSC&#95;FULL&#95;VER** macro evaluates to 150020706. Enter **cl /?** at the command line to view the compiler's version number. This macro is always defined.
+- **&#95;MSC&#95;FULL&#95;VER** Defined as an integer literal that encodes the major, minor, and build number elements of the compiler's version number. The major number is the first element of the period-delimited version number, the minor number is the second element, and the build number is the third element. For example, if the version number of the Visual C++ compiler is 15.00.20706.01, the **&#95;MSC&#95;FULL&#95;VER** macro evaluates to 150020706. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
 
-- **&#95;MSC&#95;VER** Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Visual C++ compiler is 17.00.51106.1, the **&#95;MSC&#95;VER** macro evaluates to 1700. Enter **cl /?** at the command line to view the compiler's version number. This macro is always defined.
+- **&#95;MSC&#95;VER** Defined as an integer literal that encodes the major and minor number elements of the compiler's version number. The major number is the first element of the period-delimited version number and the minor number is the second element. For example, if the version number of the Visual C++ compiler is 17.00.51106.1, the **&#95;MSC&#95;VER** macro evaluates to 1700. Enter `cl /?` at the command line to view the compiler's version number. This macro is always defined.
 
    |Visual Studio version|&#95;MSC&#95;VER|
    |-|-|
@@ -280,7 +280,7 @@ Microsoft Visual C++ supports these additional predefined macros.
 
 - **&#95;VC&#95;NODEFAULTLIB** Defined as 1 when the [/Zl (Omit Default Library Name)](../build/reference/zl-omit-default-library-name.md) compiler option is set. Otherwise, undefined.
 
-- **&#95;WCHAR&#95;T&#95;DEFINED** Defined as 1 when the default [/Zc:wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option is set. The **&#95;WCHAR&#95;T&#95;DEFINED** macro is defined but has no value if the **/Zc:wchar_t-** compiler option is set, and `wchar_t` is defined in a system header file included in your project. Otherwise, undefined.
+- **&#95;WCHAR&#95;T&#95;DEFINED** Defined as 1 when the default [/Zc:wchar_t](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) compiler option is set. The **&#95;WCHAR&#95;T&#95;DEFINED** macro is defined but has no value if the `/Zc:wchar_t-` compiler option is set, and **wchar_t** is defined in a system header file included in your project. Otherwise, undefined.
 
 - **&#95;WIN32** Defined as 1 when the compilation target is 32-bit ARM, 64-bit ARM, x86, or x64. Otherwise, undefined.
 

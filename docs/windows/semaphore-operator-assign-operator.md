@@ -13,22 +13,22 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Semaphore::operator= Operator
-Moves the specified handle from a Semaphore object to the current Semaphore object.  
+Moves the specified handle from a **Semaphore** object to the current **Semaphore** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 Semaphore& operator=(  
    _Inout_ Semaphore&& h  
 );  
 ```  
   
-#### Parameters  
- `h`  
- Rvalue-reference to a Semaphore object.  
+### Parameters  
+ *h*  
+ Rvalue-reference to a **Semaphore** object.  
   
 ## Return Value  
- A reference to the current Semaphore object.  
+ A reference to the current **Semaphore** object.  
   
 ## Requirements  
  **Header:** corewrappers.h  

@@ -17,14 +17,14 @@ Defines metadata for an object in the type library.
   
 ## Syntax  
   
-```  
+```cpp  
 [ custom(  
    uuid,   
    value  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *uuid*  
  A unique ID.  
   

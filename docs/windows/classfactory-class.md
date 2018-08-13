@@ -17,7 +17,7 @@ Implements the basic functionality of the `IClassFactory` interface.
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename I0 = Details::Nil,  
    typename I1 = Details::Nil,  
@@ -33,7 +33,7 @@ class ClassFactory : public Details::RuntimeClass<
       false>;  
 ```  
   
-#### Parameters  
+### Parameters  
  *I0*  
  The zeroth interface.  
   
@@ -44,7 +44,7 @@ class ClassFactory : public Details::RuntimeClass<
  The second interface.  
   
 ## Remarks  
- Utilize `ClassFactory` to provide a user-defined factory implementation.  
+ Utilize **ClassFactory** to provide a user-defined factory implementation.  
   
  The following programming pattern demonstrates how to use the [Implements](../windows/implements-structure.md) structure to specify more than three interfaces on a class factory.  
   
@@ -62,10 +62,10 @@ class ClassFactory : public Details::RuntimeClass<
   
 |Name|Description|  
 |----------|-----------------|  
-|[ClassFactory::AddRef Method](../windows/classfactory-addref-method.md)|Increments the reference count for the current ClassFactory object.|  
-|[ClassFactory::LockServer Method](../windows/classfactory-lockserver-method.md)|Increments or decrements the number of underlying objects that are tracked by the current ClassFactory object.|  
+|[ClassFactory::AddRef Method](../windows/classfactory-addref-method.md)|Increments the reference count for the current **ClassFactory** object.|  
+|[ClassFactory::LockServer Method](../windows/classfactory-lockserver-method.md)|Increments or decrements the number of underlying objects that are tracked by the current **ClassFactory** object.|  
 |[ClassFactory::QueryInterface Method](../windows/classfactory-queryinterface-method.md)|Retrieves a pointer to the interface specified by parameter.|  
-|[ClassFactory::Release Method](../windows/classfactory-release-method.md)|Decrements the reference count for the current ClassFactory object.|  
+|[ClassFactory::Release Method](../windows/classfactory-release-method.md)|Decrements the reference count for the current **ClassFactory** object.|  
   
 ## Inheritance Hierarchy  
  `I0`  

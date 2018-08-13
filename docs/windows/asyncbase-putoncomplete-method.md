@@ -17,13 +17,13 @@ Sets the address of the completion event handler to the specified value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    PutOnComplete  
 )(TComplete* completeHandler);  
 ```  
   
-#### Parameters  
+### Parameters  
  *completeHandler*  
  The address to which the completion event handler is set.  
   

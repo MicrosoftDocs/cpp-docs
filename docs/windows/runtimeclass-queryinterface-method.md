@@ -17,8 +17,7 @@ Retrieves a pointer to the specified interface ID.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 STDMETHOD(  
    QueryInterface  
 )  
@@ -26,12 +25,12 @@ STDMETHOD(
    _Deref_out_ void **ppvObject);  
 ```  
   
-#### Parameters  
- `riid`  
+### Parameters  
+ *riid*  
  An interface ID.  
   
- `ppvObject`  
- When this opereation completes, a pointer to the interface specified by the `riid` parameter.  
+ *ppvObject*  
+ When this opereation completes, a pointer to the interface specified by the *riid* parameter.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that indicates the error.  

@@ -33,7 +33,7 @@ This topic answers the following frequently asked questions:
 -   [Can I use attributes on a class derived from a class that also uses attributes?](#vcconcaniuseattributesonclassderivedfromclassthatalsousesattributesanchor)  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor1"></a> What is an HRESULT?  
- An `HRESULT` is a simple data type that is often used as a return value by attributes and ATL in general. The following table describes the various values. More values are contained in the header file winerror.h.  
+ An HRESULT is a simple data type that is often used as a return value by attributes and ATL in general. The following table describes the various values. More values are contained in the header file winerror.h.  
   
 |Name|Description|Value|  
 |----------|-----------------|-----------|  
@@ -52,7 +52,7 @@ This topic answers the following frequently asked questions:
 ##  <a name="vcconattributeprogrammmingfaqanchor2"></a> When do I have to specify the parameter name for an attribute?  
  In most cases, if the attribute has a single parameter, that parameter is named. This name is not required when inserting the attribute in your code. For example, the following usage of the [aggregatable](../windows/aggregatable.md) attribute:  
   
-```  
+```cpp  
 [coclass, aggregatable(value=allowed)]  
 class CMyClass  
 {  
@@ -62,7 +62,7 @@ class CMyClass
   
  is exactly the same as:  
   
-```  
+```cpp  
 [coclass, aggregatable(allowed)]  
 class CMyClass  
 {  
@@ -91,7 +91,7 @@ class CMyClass
   
  The following is allowed:  
   
-```  
+```cpp  
 [ coclass,  
    progid("MyClass.CMyClass.1"), /* Multiple-line  
                                        comment */  
@@ -101,7 +101,7 @@ class CMyClass
   
  The following is disallowed:  
   
-```  
+```cpp  
 [ coclass,  
    progid("MyClass.CMyClass.1" /* Multiple-line comment */ ),  
    threading("both" // Single-line comment)  
@@ -112,10 +112,10 @@ class CMyClass
  You can inherit both attributed and unattributed classes from other classes, which may themselves be attributed or not. The result of deriving from an attributed class is the same as deriving from that class after the attribute provider has transformed its code. Attributes are not transmitted to derived classes through C++ inheritance. An attribute provider only transforms code in the vicinity of its attributes.  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor5"></a> How can I use attributes in a nonattributed ATL project?  
- You may have a nonattributed ATL project, which has an .idl file, and you may want to start adding attributed objects. In this case, use the Add Class Wizard to provide the code.  
+ You may have a nonattributed ATL project, which has an .idl file, and you may want to start adding attributed objects. In this case, use the **Add Class Wizard** to provide the code.  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor6"></a> How can I use an .idl file in an attributed project?  
- You may have a .idl file that you want to use in your ATL attributed project. In this case, you would use the [importidl](../windows/importidl.md) attribute, compile the .idl file to a .h file (see the [MIDL Property Pages](../ide/midl-property-pages.md) in the project's Property Pages dialog box), and then include the .h file in your project.  
+ You may have a .idl file that you want to use in your ATL attributed project. In this case, you would use the [importidl](../windows/importidl.md) attribute, compile the .idl file to a .h file (see the [MIDL Property Pages](../ide/midl-property-pages.md) in the project's **Property Pages** dialog box), and then include the .h file in your project.  
   
 ##  <a name="vcconattributeprogrammmingfaqanchor7"></a> Can I modify code that is injected by an attribute?  
  Some attributes inject code into your project. You can see the injected code by using the [/Fx](../build/reference/fx-merge-injected-code.md) compiler option. It is also possible to copy code from the injected file and paste it into your source code. This allows you to modify the behavior of the attribute. However, you may have to modify other parts of your code as well.  

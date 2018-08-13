@@ -17,13 +17,13 @@ Adds an interface entry into the COM map of the target class.
   
 ## Syntax  
   
-```  
+```cpp  
 [ com_interface_entry(   
   com_interface_entry  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *com_interface_entry*  
  A string containing the actual text of the entry. For a list of possible values, see [COM_INTERFACE_ENTRY Macros](../atl/reference/com-interface-entry-macros.md).  
   
@@ -46,7 +46,7 @@ Adds an interface entry into the COM map of the target class.
   
  This restriction is necessary because ATL uses the first entry in the interface map as the identity `IUnknown`; therefore, the entry must be a valid interface. For example, the following code sample is invalid because the first entry in the interface map does not specify an actual COM interface.  
   
-```  
+```cpp  
 [ coclass, com_interface_entry =  
     "COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)"  
 ]  
@@ -88,7 +88,7 @@ class CMyClass: public IMyClass, public IDebugTest
   
  The resulting COM object map for `CMyBaseClass` is as follows:  
   
-```  
+```cpp  
 BEGIN_COM_MAP(CMyClass)  
     COM_INTERFACE_ENTRY (IMyClass)  
     COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)  
@@ -107,7 +107,7 @@ END_COM_MAP()
 |-|-|  
 |**Applies to**|**class**, **struct**|  
 |**Repeatable**|Yes|  
-|**Required attributes**|One or more of the following: **coclass**, **progid**, or **vi_progid**.|  
+|**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|  
 |**Invalid attributes**|None|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  

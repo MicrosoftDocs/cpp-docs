@@ -17,17 +17,15 @@ When used in the interface header, allows you to use the MIDL compiler as a head
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [local]  
-  
 ```  
   
 ## Remarks  
- The `local` C++ attribute has the same functionality as the [local](http://msdn.microsoft.com/library/windows/desktop/aa367071) MIDL attribute.  
+ The **local** C++ attribute has the same functionality as the [local](http://msdn.microsoft.com/library/windows/desktop/aa367071) MIDL attribute.  
   
 ## Example  
- See [call_as](../windows/call-as.md) for an example of how to use `local`.  
+ See [call_as](../windows/call-as.md) for an example of how to use **local**.  
   
 ## Requirements  
   
@@ -35,10 +33,10 @@ When used in the interface header, allows you to use the MIDL compiler as a head
   
 |||  
 |-|-|  
-|**Applies to**|`interface`, interface method|  
+|**Applies to**|**interface**, interface method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
-|**Invalid attributes**|**dispinterface**|  
+|**Invalid attributes**|`dispinterface`|  
   
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
@@ -46,4 +44,4 @@ When used in the interface header, allows you to use the MIDL compiler as a head
  [IDL Attributes](../windows/idl-attributes.md)   
  [Interface Attributes](../windows/interface-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
- [call_as](../windows/call-as.md)   
+ [call_as](../windows/call-as.md)   

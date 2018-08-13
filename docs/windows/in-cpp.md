@@ -17,10 +17,8 @@ Indicates that a parameter is to be passed from the calling procedure to the cal
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [in]  
-  
 ```  
   
 ## Remarks  
@@ -48,4 +46,4 @@ Indicates that a parameter is to be passed from the calling procedure to the cal
  [Method Attributes](../windows/method-attributes.md)   
  [defaultvalue](../windows/defaultvalue.md)   
  [id](../windows/id.md)   
- [out](../windows/out-cpp.md)   
+ [out](../windows/out-cpp.md)   

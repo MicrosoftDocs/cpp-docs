@@ -27,7 +27,7 @@ Use the sizing handles to resize a control. When the pointer is positioned on a 
     -   Sizing handles at the corners change both horizontal and vertical size.  
   
     > [!TIP]
-    >  You can resize the control one dialog unit (DLU) at a time by holding down the SHIFT key and using the Right and Down ARROW keys.  
+    >  You can resize the control one dialog unit (DLU) at a time by holding down the **Shift** key and using the **Right Arrow** and **Down Arrow** keys.  
   
 ### To automatically size a control to fit the text within it  
   
@@ -37,13 +37,11 @@ Use the sizing handles to resize a control. When the pointer is positioned on a 
   
 -   Right-click the control and choose **Size to Content** from the shortcut menu.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
-

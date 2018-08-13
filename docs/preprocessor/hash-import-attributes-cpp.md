@@ -12,11 +12,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # #import Attributes (C++)
-Provides links to attributes used with the #import directive.  
+Provides links to attributes used with the `#import` directive.  
   
- **Microsoft Specific**  
+**Microsoft Specific**  
   
- The following attributes are available to the #import directive.  
+The following attributes are available to the `#import` directive.  
   
 |Attribute|Description|  
 |---------------|-----------------|  
@@ -29,7 +29,7 @@ Provides links to attributes used with the #import directive.
 |[implementation_only](../preprocessor/implementation-only.md)|Suppresses the generation of the .tlh header file (the primary header file).|  
 |[include()](../preprocessor/include-parens.md)|Disables automatic exclusion.|  
 |[inject_statement](../preprocessor/inject-statement.md)|Inserts its argument as source text into the type-library header.|  
-|[named_guids](../preprocessor/named-guids.md)|Tells the compiler to define and initialize GUID variables in old style, of the form **LIBID_MyLib**, **CLSID_MyCoClass**, **IID_MyInterface**, and **DIID_MyDispInterface**.|  
+|[named_guids](../preprocessor/named-guids.md)|Tells the compiler to define and initialize GUID variables in old style, of the form `LIBID_MyLib`, `CLSID_MyCoClass`, `IID_MyInterface`, and `DIID_MyDispInterface`.|  
 |[no_auto_exclude](../preprocessor/no-auto-exclude.md)|Disables automatic exclusion.|  
 |[no_dual_interfaces](../preprocessor/no-dual-interfaces.md)|Changes the way the compiler generates wrapper functions for dual interface methods.|  
 |[no_implementation](../preprocessor/no-implementation.md)|Suppresses the generation of the .tli header, which contains the implementations of the wrapper member functions.|  
@@ -37,7 +37,7 @@ Provides links to attributes used with the #import directive.
 |[no_registry](../preprocessor/no-registry.md)|Tells the compiler not to search the registry for type libraries.|  
 |[no_search_namespace](../preprocessor/no-search-namespace.md)|Has the same functionality as the [no_namespace](../preprocessor/no-namespace.md) attribute but is used on type libraries that you use the #import directive with the [auto_search](../preprocessor/auto-search.md) attribute.|  
 |[no_smart_pointers](../preprocessor/no-smart-pointers.md)|Suppresses the creation of smart pointers for all interfaces in the type library.|  
-|[raw_dispinterfaces](../preprocessor/raw-dispinterfaces.md)|Tells the compiler to generate low-level wrapper functions for dispinterface methods and properties that call **IDispatch::Invoke** and return the `HRESULT` error code.|  
+|[raw_dispinterfaces](../preprocessor/raw-dispinterfaces.md)|Tells the compiler to generate low-level wrapper functions for dispinterface methods and properties that call `IDispatch::Invoke` and return the HRESULT error code.|  
 |[raw_interfaces_only](../preprocessor/raw-interfaces-only.md)|Suppresses the generation of error-handling wrapper functions and [property](../cpp/property-cpp.md) declarations that use those wrapper functions.|  
 |[raw_method_prefix](../preprocessor/raw-method-prefix.md)|Specifies a different prefix to avoid name collisions.|  
 |[raw_native_types](../preprocessor/raw-native-types.md)|Disables the use of COM support classes in the high-level wrapper functions and forces the use of low-level data types instead.|  
@@ -47,7 +47,8 @@ Provides links to attributes used with the #import directive.
 |[rename_search_namespace](../preprocessor/rename-search-namespace.md)|Has the same functionality as the [rename_namespace](../preprocessor/rename-namespace.md) attribute but is used on type libraries that you use the #import directive with the [auto_search](../preprocessor/auto-search.md) attribute.|  
 |[tlbid](../preprocessor/tlbid.md)|Allows for loading libraries other than the primary type library.|  
   
- **END Microsoft Specific**  
+**END Microsoft Specific**  
   
 ## See Also  
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

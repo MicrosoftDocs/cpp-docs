@@ -17,29 +17,28 @@ Specifies the ProgID for a COM object.
   
 ## Syntax  
   
-```  
-  
-      [ progid(  
+```cpp  
+[ progid(  
    name  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *name*  
  The ProgID representing the object.  
   
  ProgIDs present a human-readable version of the class identifier (CLSID) used to identify COM/ActiveX objects.  
   
 ## Remarks  
- The **progid** C++ attribute lets you specify the ProgID for a COM object. A ProgID has the form *name1.name2.version*. If you do not specify a *version* for a ProgID, the default version is 1. If you do not specify *name1.name2*, the default name is *classname.classname*. If you do not specify **progid** and you do specify **vi_progid**, *name1.name2* are taken from **vi_progid** and the (next sequential number) version is appended.  
+ The **progid** C++ attribute lets you specify the ProgID for a COM object. A ProgID has the form *name1.name2.version*. If you do not specify a *version* for a ProgID, the default version is 1. If you do not specify *name1.name2*, the default name is *classname.classname*. If you do not specify **progid** and you do specify `vi_progid`, *name1.name2* are taken from `vi_progid` and the (next sequential number) version is appended.  
   
- If an attribute block that uses **progid** does not also use `uuid`, the compiler will check the registry to see if a `uuid` exists for the specified **progid**. If **progid** is not specified, the version (and coclass name, if creating a coclass) will be used to generate a **progid**.  
+ If an attribute block that uses **progid** does not also use **uuid**, the compiler will check the registry to see if a **uuid** exists for the specified **progid**. If **progid** is not specified, the version (and coclass name, if creating a coclass) will be used to generate a **progid**.  
   
- **progid** implies the **coclass** attribute, that is, if you specify **progid**, it is the same thing as specifying the **coclass** and **progid** attributes.  
+ **progid** implies the `coclass` attribute, that is, if you specify **progid**, it is the same thing as specifying the `coclass` and **progid** attributes.  
   
  The **progid** attribute causes a class to be automatically registered under the specified name. The generated .idl file will not display the **progid** value.  
   
- When this attribute is used within a project that uses ATL, the behavior of the attribute changes. In addition to the above behavior, the information specified with this attribute is used in the **GetProgID** function, injected by the **coclass** attribute. For more information, see the [coclass](../windows/coclass.md) attribute.  
+ When this attribute is used within a project that uses ATL, the behavior of the attribute changes. In addition to the above behavior, the information specified with this attribute is used in the `GetProgID` function, injected by the `coclass` attribute. For more information, see the [coclass](../windows/coclass.md) attribute.  
   
 ## Example  
  See the example for [coclass](../windows/coclass.md) for a sample use of **progid**.  
@@ -50,7 +49,7 @@ Specifies the ProgID for a COM object.
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  

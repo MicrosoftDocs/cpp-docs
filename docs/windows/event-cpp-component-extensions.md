@@ -13,15 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # event  (C++ Component Extensions)
-The `event` keyword declares an *event*, which is a notification to registered subscribers (*event handlers*) that something of interest has occurred.  
+The **event** keyword declares an *event*, which is a notification to registered subscribers (*event handlers*) that something of interest has occurred.  
   
 ## All Runtimes  
  C++/CX supports declaring an *event member* or an *event block*. An event member is shorthand for declaring an event block. By default, an event member declares the `add()`, `remove()`, and `raise()` functions that are declared explicitly in an event block. To customize the functions in an event member, declare an event block instead and then override the functions that you require.  
   
- **Syntax**  
+### Syntax
   
-```  
-  
+```cpp  
 // event data member  
 modifiereventdelegate^ event_name;     
   
@@ -34,10 +33,9 @@ modifiereventdelegate^ event_name
 }  
 ```  
   
- **Parameters**  
-  
+### Parameters
  *modifier*  
- A modifier that can be used on either the event declaration or an event accessor method.  Possible values are `static` and `virtual`.  
+ A modifier that can be used on either the event declaration or an event accessor method.  Possible values are **static** and **virtual**.  
   
  *delegate*  
  The [delegate](../windows/delegate-cpp-component-extensions.md), whose signature the event handler must match.  
@@ -46,12 +44,12 @@ modifiereventdelegate^ event_name
  The name of the event.  
   
  *return_value*  
- The return value of the event accessor method.  To be verifiable, the return type must be `void`.  
+ The return value of the event accessor method.  To be verifiable, the return type must be **void**.  
   
  *parameters*  
  (optional) Parameters for the `raise` method, which match the signature of the *delegate* parameter.  
   
- **Remarks**  
+### Remarks
   
  An event is an association between a delegate and a member function (event handler) that responds to the triggering of the event and allows clients from any class to register methods that comply with the signature and return type of the underlying delegate.  
   
@@ -63,9 +61,9 @@ modifiereventdelegate^ event_name
  *event block*  
  An event block enables you to explicitly declare and customize the behavior of the `add()`, `remove()`, and `raise()` methods.  
   
- You can use `operators+=` and `operator-=` to add and remove an event handler, or call the `add()` and `remove()` methods explicitly.  
+ You can use **operators+=** and **operator-=** to add and remove an event handler, or call the `add()` and `remove()` methods explicitly.  
   
- `event` is a context-sensitive keyword; see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md) for more information.  
+ **event** is a context-sensitive keyword; see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md) for more information.  
   
 ## Windows Runtime  
   
@@ -75,15 +73,14 @@ modifiereventdelegate^ event_name
  If you intend to add and then remove an event handler, you must save the EventRegistrationToken structure that is returned by the add operation. Then in the remove operation, you must use the saved EventRegistrationToken structure to identify the event handler to be removed.  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- The `event` keyword lets you declare an event. An event is a way for a class to provide notifications when something of interest happens.  
+ The **event** keyword lets you declare an event. An event is a way for a class to provide notifications when something of interest happens.  
   
- **Syntax**  
+### Syntax
   
-```  
-  
+```cpp  
 // event data member  
 modifiereventdelegate^ event_name;   
   
@@ -96,10 +93,9 @@ modifiereventdelegate^ event_name
 }  
 ```  
   
- **Parameters**  
-  
+### Parameters
  *modifier*  
- A modifier that can be used on either the event declaration or an event accessor method.  Possible values are `static` and `virtual`.  
+ A modifier that can be used on either the event declaration or an event accessor method.  Possible values are **static** and **virtual**.  
   
  *delegate*  
  The [delegate](../windows/delegate-cpp-component-extensions.md), whose signature the event handler must match.  
@@ -108,13 +104,12 @@ modifiereventdelegate^ event_name
  The name of the event.  
   
  *return_value*  
- The return value of the event accessor method.  To be verifiable, the return type must be `void`.  
+ The return value of the event accessor method.  To be verifiable, the return type must be **void**.  
   
  *parameters*  
  (optional) Parameters for the `raise` method, which match the signature of the *delegate* parameter.  
   
- **Remarks**  
-  
+### Remarks
  An event is an association between a delegate and a member function (event handler) that responds to the triggering of the event and allows clients from any class to register methods that comply with the signature and return type of the underlying delegate.  
   
  The delegate can have one or more associated methods that will be called when your code indicates that the event has occurred. An event in one program can be made available to other programs that target the .NET Framework common language runtime.  
@@ -135,13 +130,13 @@ modifiereventdelegate^ event_name
   
  The following steps must be taken in order to create and use events in Visual C++:  
   
-1.  Create or identify a delegate. If you are defining your own event, you must also ensure that there is a delegate to use with the `event` keyword. If the event is predefined, in the .NET Framework for example, then consumers of the event need only know the name of the delegate.  
+1.  Create or identify a delegate. If you are defining your own event, you must also ensure that there is a delegate to use with the **event** keyword. If the event is predefined, in the .NET Framework for example, then consumers of the event need only know the name of the delegate.  
   
 2.  Create a class that contains:  
   
     -   An event created from the delegate.  
   
-    -   (optional) A method that verifies that an instance of the delegate declared with the `event` keyword exists. Otherwise, this logic must be placed in the code that fires the event.  
+    -   (optional) A method that verifies that an instance of the delegate declared with the **event** keyword exists. Otherwise, this logic must be placed in the code that fires the event.  
   
     -   Methods that call the event. These methods can be overrides of some base class functionality.  
   
@@ -160,14 +155,13 @@ modifiereventdelegate^ event_name
 -   [Events in an Interface](../dotnet/how-to-use-events-in-cpp-cli.md)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
-  
+
  The following code example demonstrates declaring pairs of delegates, events, and event handlers; subscribing (adding) the event handlers; invoking the event handlers; and then unsubscribing (removing) the event handlers.  
   
-```  
+```cpp  
 // mcppv2_events.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -218,19 +212,15 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 OnClick: 7, 3.14159  
   
 OnDblClick: Hello  
 ```  
   
- **Example**  
+ The following code example demonstrates the logic used to generate the `raise` method of a trivial event: If the event has one or more subscribers, calling the `raise` method implicitly or explicitly calls the delegate. If the delegate's return type is not **void** and if there are zero event subscribers, the `raise` method returns the default value for the delegate type. If there are no event subscribers, calling the `raise` method simply returns and no exception is raised. If the delegate return type is not **void**, the delegate type is returned.  
   
- The following code example demonstrates the logic used to generate the `raise` method of a trivial event: If the event has one or more subscribers, calling the `raise` method implicitly or explicitly calls the delegate. If the delegate's return type is not `void` and if there are zero event subscribers, the `raise` method returns the default value for the delegate type. If there are no event subscribers, calling the `raise` method simply returns and no exception is raised. If the delegate return type is not `void`, the delegate type is returned.  
-  
-```  
+```cpp  
 // trivial_events.cpp  
 // compile with: /clr /c  
 using namespace System;  
@@ -261,8 +251,6 @@ int main() {
    Console::WriteLine(c.i);     
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 0  

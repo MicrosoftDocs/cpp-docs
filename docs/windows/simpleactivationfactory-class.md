@@ -17,13 +17,13 @@ Provides a fundamental mechanism to create a Windows Runtime or classic COM base
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename Base>  
 class SimpleActivationFactory : public ActivationFactory<>;  
 ```  
   
-#### Parameters  
- `Base`  
+### Parameters  
+ *Base*  
  A base class.  
   
 ## Remarks  
@@ -40,8 +40,8 @@ class SimpleActivationFactory : public ActivationFactory<>;
 |Name|Description|  
 |----------|-----------------|  
 |[SimpleActivationFactory::ActivateInstance Method](../windows/simpleactivationfactory-activateinstance-method.md)|Creates an instance of the specified interface.|  
-|[SimpleActivationFactory::GetRuntimeClassName Method](../windows/simpleactivationfactory-getruntimeclassname-method.md)|Gets the runtime class name of an instance of the class specified by the `Base` class template parameter.|  
-|[SimpleActivationFactory::GetTrustLevel Method](../windows/simpleactivationfactory-gettrustlevel-method.md)|Gets the trust level of an instance of the class specified by the `Base` class template parameter.|  
+|[SimpleActivationFactory::GetRuntimeClassName Method](../windows/simpleactivationfactory-getruntimeclassname-method.md)|Gets the runtime class name of an instance of the class specified by the *Base* class template parameter.|  
+|[SimpleActivationFactory::GetTrustLevel Method](../windows/simpleactivationfactory-gettrustlevel-method.md)|Gets the trust level of an instance of the class specified by the *Base* class template parameter.|  
   
 ## Inheritance Hierarchy  
  `I0`  

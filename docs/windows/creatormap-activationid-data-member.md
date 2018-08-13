@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 union {   
    const IID* clsid;  
    const wchar_t* (*getRuntimeName)();  
 } activationId;  
 ```  
   
-## Parameters  
+### Parameters  
  *clsid*  
  An interface ID.  
   

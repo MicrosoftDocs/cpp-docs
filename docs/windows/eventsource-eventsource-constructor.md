@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::EventSource Constructor
-Initializes a new instance of the EventSource class.  
+Initializes a new instance of the **EventSource** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 EventSource();  
 ```  
   

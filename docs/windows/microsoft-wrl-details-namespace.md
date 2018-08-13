@@ -15,7 +15,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 namespace Microsoft::WRL::Details;  
 ```  
   
@@ -27,7 +27,7 @@ namespace Microsoft::WRL::Details;
 |----------|-----------------|  
 |[ComPtrRef Class](../windows/comptrref-class.md)|Represents a reference to an object of type ComPtr\<T>.|  
 |[ComPtrRefBase Class](../windows/comptrrefbase-class.md)|Represents the base class for the [ComPtrRef](../windows/comptrref-class.md) class.|  
-|[DontUseNewUseMake Class](../windows/dontusenewusemake-class.md)|Prevents using operator `new` in `RuntimeClass`. Consequently, you must use the [Make function](../windows/make-function.md) instead.|  
+|[DontUseNewUseMake Class](../windows/dontusenewusemake-class.md)|Prevents using operator **new** in `RuntimeClass`. Consequently, you must use the [Make function](../windows/make-function.md) instead.|  
 |[EventTargetArray Class](../windows/eventtargetarray-class.md)|Represents an array of event handlers.|  
 |[MakeAllocator Class](../windows/makeallocator-class.md)|Allocates memory for an activatable class, with or without weak reference support.|  
 |[ModuleBase Class](../windows/modulebase-class.md)|Represents the base class of the [Module](../windows/module-class.md) classes.|  
@@ -40,17 +40,17 @@ namespace Microsoft::WRL::Details;
 |----------|-----------------|  
 |[ArgTraits Structure](../windows/argtraits-structure.md)|Declares a specified delegate interface and an anonymous member function that has a specified number of parameters.|  
 |[ArgTraitsHelper Structure](../windows/argtraitshelper-structure.md)|Helps define common characteristics of delegate arguments.|  
-|[BoolStruct Structure](../windows/boolstruct-structure.md)|Defines whether a ComPtr is managing the object lifetime of an interface. BoolStruct is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.|  
+|[BoolStruct Structure](../windows/boolstruct-structure.md)|Defines whether a `ComPtr` is managing the object lifetime of an interface. `BoolStruct` is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.|  
 |[CreatorMap Structure](../windows/creatormap-structure.md)|Contains information about how to initialize, register, and unregister objects.|  
 |[DerefHelper Structure](../windows/derefhelper-structure.md)|Represent a dereferenced pointer to the `T*` template parameter.|  
-|[EnableIf Structure](../windows/enableif-structure.md)|Defines a data member of the type specified by the second template parameter if the first template parameter evaluates to `true`.|  
+|[EnableIf Structure](../windows/enableif-structure.md)|Defines a data member of the type specified by the second template parameter if the first template parameter evaluates to **true**.|  
 |[FactoryCache Structure](../windows/factorycache-structure.md)|Contains the location of a class factory and a value that identifies a registered Windows Runtime or COM class object.|  
 |[ImplementsBase Structure](../windows/implementsbase-structure.md)|Used to validate template parameter types in [Implements Structure](../windows/implements-structure.md).|  
 |[ImplementsHelper Structure](../windows/implementshelper-structure.md)|Helps implement the [Implements](../windows/implements-structure.md) structure.|  
 |[InterfaceList Structure](../windows/interfacelist-structure.md)|Used to create a recursive list of interfaces.|  
 |[InterfaceListHelper Structure](../windows/interfacelisthelper-structure.md)|Builds an `InterfaceList` type by recursively applying the specified template parameter arguments.|  
 |[InterfaceTraits Structure](../windows/interfacetraits-structure.md)|Implements common characteristics of an interface.|  
-|[InvokeHelper Structure](../windows/invokehelper-structure.md)|Provides an implementation of the Invoke() method based on the specified number and type of arguments.|  
+|[InvokeHelper Structure](../windows/invokehelper-structure.md)|Provides an implementation of the `Invoke()` method based on the specified number and type of arguments.|  
 |[IsBaseOfStrict Structure](../windows/isbaseofstrict-structure.md)|Tests whether one type is the base of another.|  
 |[IsSame Structure](../windows/issame-structure.md)|Tests whether one specified type is the same as another specified type.|  
 |[Nil Structure](../windows/nil-structure.md)|Used to indicate an unspecified, optional template parameter.|  
@@ -64,7 +64,7 @@ namespace Microsoft::WRL::Details;
   
 |Name|Description|  
 |----------|-----------------|  
-|[AsyncStatusInternal Enumeration](../windows/asyncstatusinternal-enumeration.md)|Specifies a mapping between internal enumerations for the state of asynchronous operations and the **Windows::Foundation::AsyncStatus** enumeration.|  
+|[AsyncStatusInternal Enumeration](../windows/asyncstatusinternal-enumeration.md)|Specifies a mapping between internal enumerations for the state of asynchronous operations and the `Windows::Foundation::AsyncStatus` enumeration.|  
   
 ### Functions  
   

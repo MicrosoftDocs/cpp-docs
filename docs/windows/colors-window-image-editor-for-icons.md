@@ -25,7 +25,7 @@ Colors Window
 > [!NOTE]
 >  The **Screen color** and **Inverse color** tools are only available for icons and cursors.  
   
- You can use the Colors window with the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md).  
+ You can use the **Colors** window with the [Image Editor toolbar](../windows/toolbar-image-editor-for-icons.md).  
   
 ## Requirements  
  None  

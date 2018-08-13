@@ -12,9 +12,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # MFC Predefined Symbols
-MFC projects always include several header files that support windows. These are added via #include statements in the StdAfx.h file:  
+MFC projects always include several header files that support windows. These are added via `#include` statements in the `StdAfx.h` file:  
   
-```  
+```cpp  
 #include <afxwin.h>      //MFC core and standard components  
 #include <afxext.h>      //MFC extensions  
 #include <afxdisp.h      //MFC automation classes  

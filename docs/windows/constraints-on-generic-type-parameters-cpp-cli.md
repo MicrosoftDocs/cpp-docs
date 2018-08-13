@@ -19,11 +19,11 @@ In generic type or method declarations, you can qualify a type parameter with co
   
 ## Syntax  
   
-```  
+```cpp  
 where type-parameter: constraint list  
 ```  
   
-#### Parameters  
+### Parameters  
  *type-parameter*  
  One of the type parameters, to be constrained.  
   
@@ -32,7 +32,7 @@ where type-parameter: constraint list
   
  The list can also include a class. For the type argument to satisfy a base class constraint, it must be the same class as the constraint or derive from the constraint.  
   
- You can also specify `gcnew()` to indicate the type argument must have a public parameterless constructor; or **ref class** to indicate the type argument must be a reference type, including any class, interface, delegate, or array type; or **value class** to indicate the type argument must be a value type. Any value type except Nullable\<T> can be specified.  
+ You can also specify **gcnew()** to indicate the type argument must have a public parameterless constructor; or **ref class** to indicate the type argument must be a reference type, including any class, interface, delegate, or array type; or **value class** to indicate the type argument must be a value type. Any value type except Nullable\<T> can be specified.  
   
  You can also specify a generic parameter as a constraint. The type argument supplied for the type you are constraining must be or derive from the type of the constraint. This is called a naked type constraint.  
   

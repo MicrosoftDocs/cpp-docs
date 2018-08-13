@@ -17,7 +17,7 @@ Starts the asynchronous operation.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    Start  
 )(void);  

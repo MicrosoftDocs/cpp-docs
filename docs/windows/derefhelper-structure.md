@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename T  
 >  
@@ -29,14 +29,14 @@ template <
 struct DerefHelper<T*>;  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  A template parameter.  
   
 ## Remarks  
  Represent a dereferenced pointer to the `T*` template parameter.  
   
- DerefHelper is used in an expression such as: `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;`.  
+ **DerefHelper** is used in an expression such as: `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;`.  
   
 ## Members  
   

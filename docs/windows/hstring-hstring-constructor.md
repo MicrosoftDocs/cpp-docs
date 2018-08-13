@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::HString Constructor
-Initializes a new instance of the HString class.  
+Initializes a new instance of the **HString** class.  
   
 ## Syntax  
   
@@ -22,16 +22,16 @@ HString(HString&& other) throw();
 ```  
   
 #### Parameters  
- `hstr`  
+ *hstr*  
  An HSTRING handle.  
   
- `other`  
- An existing HString object.  
+ *other*  
+ An existing **HString** object.  
   
 ## Remarks  
- The first constructor initializes a new HString object that is empty.  
+ The first constructor initializes a new **HString** object that is empty.  
   
- The second constructor initializes a new HString object to the value of the existing `other` parameter, and then destroys the `other` parameter.  
+ The second constructor initializes a new **HString** object to the value of the existing *other* parameter, and then destroys the *other* parameter.  
   
 ## Requirements  
  **Header:** corewrappers.h  

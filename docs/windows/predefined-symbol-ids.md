@@ -27,8 +27,6 @@ When you begin a new project, depending on the project type, some symbol IDs are
     > [!NOTE]
     >  Predefined symbols are always read-only.  
   
-
-  
 ## Requirements  
  Win32, MFC, or ATL  
   

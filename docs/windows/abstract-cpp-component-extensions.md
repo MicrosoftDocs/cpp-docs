@@ -20,16 +20,16 @@ The **abstract** keyword declares either:
 -   A type member function can be defined only in a derived type.  
   
 ## All Platforms  
- **Syntax**  
+### Syntax 
   
-```  
+```cpp  
       class-declaration  
       class-identifier  
       abstract {}  
 virtualreturn-typemember-function-identifier() abstract ;  
 ```  
   
- **Remarks**  
+### Remarks
   
  The first example syntax declares a class to be abstract. The *class-declaration* component can be either a native C++ declaration (**class** or **struct**), or a C++ extension declaration (**ref class** or **ref struct**) if the `/ZW` or `/clr` compiler option is specified.  
   
@@ -45,17 +45,16 @@ virtualreturn-typemember-function-identifier() abstract ;
  For more information, see [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
- The following code example generates an error because class `X` is marked `abstract`.  
+ The following code example generates an error because class `X` is marked **abstract**.  
   
 ```cpp  
 // abstract_keyword.cpp  
@@ -70,9 +69,7 @@ int main() {
 }  
 ```  
   
- **Example**  
-  
- The following code example generates an error because it instantiates a native class that is marked `abstract`. This error will occur with or without the `/clr` compiler option.  
+ The following code example generates an error because it instantiates a native class that is marked **abstract**. This error will occur with or without the `/clr` compiler option.  
   
 ```cpp  
 // abstract_keyword_2.cpp  
@@ -86,9 +83,7 @@ int main() {
                     // cannot be instantiated. See declaration of 'X'}  
 ```  
   
- **Example**  
-  
- The following code example generates an error because function `f` includes a definition but is marked `abstract`. The final statement in the example shows that declaring an abstract virtual function is equivalent to declaring a pure virtual function.  
+ The following code example generates an error because function `f` includes a definition but is marked **abstract**. The final statement in the example shows that declaring an abstract virtual function is equivalent to declaring a pure virtual function.  
   
 ```cpp  
 // abstract_keyword_3.cpp  

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSectionTraits Structure
-Specializes a CriticalSection object to support either an invalid critical section or a function to release a critical section.  
+Specializes a `CriticalSection` object to support either an invalid critical section or a function to release a critical section.  
   
 ## Syntax  
   
