@@ -21,7 +21,8 @@ The conventions use different font attributes for different components of the sy
 |opt|Nonterminals followed by opt are always optional.|  
 |default typeface|Characters in the set described or listed in this typeface can be used as terminals in statements.|  
   
- A colon (:) following a nonterminal introduces its definition. Alternative definitions are listed on separate lines.  
+A colon (:) following a nonterminal introduces its definition. Alternative definitions are listed on separate lines.  
   
 ## See Also  
- [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+
+[Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

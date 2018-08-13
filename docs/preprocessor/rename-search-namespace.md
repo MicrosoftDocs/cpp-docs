@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # rename_search_namespace
 **C++ Specific**  
   
- Has the same functionality as the [rename_namespace](../preprocessor/rename-namespace.md) attribute but is used on type libraries that you use the #import directive with the [auto_search](../preprocessor/auto-search.md) attribute.  
+Has the same functionality as the [rename_namespace](../preprocessor/rename-namespace.md) attribute but is used on type libraries that you use the `#import` directive with the [auto_search](../preprocessor/auto-search.md) attribute.  
   
 ## Syntax  
   
@@ -23,13 +23,15 @@ ms.workload: ["cplusplus"]
 rename_search_namespace("NewName")  
 ```  
   
-#### Parameters  
- `NewName`  
- The new name of the namespace.  
+### Parameters  
+*NewName*  
+The new name of the namespace.  
   
 ## Remarks  
- **END C++ Specific**  
+ 
+**END C++ Specific**  
   
 ## See Also  
- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

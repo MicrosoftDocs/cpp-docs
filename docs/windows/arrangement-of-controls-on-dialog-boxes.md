@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Arrangement of Controls on Dialog Boxes
-The Dialog editor provides layout tools that align and size controls automatically. For most tasks, you can use the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). All Dialog Editor toolbar commands are also available on the Format menu, and most have [shortcut keys](../windows/accelerator-keys-for-the-dialog-editor.md).  
+The **Dialog** editor provides layout tools that align and size controls automatically. For most tasks, you can use the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). All **Dialog Editor** toolbar commands are also available on the **Format** menu, and most have [shortcut keys](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
  Many layout commands for dialog boxes are available only when more than one control is selected. You can select a single control or multiple controls, and when more than one control is selected, the first one you select is by default the "dominant" control. For information on selecting controls and the dominant control, see [Selecting Controls](../windows/selecting-controls.md).  
   
@@ -32,7 +32,7 @@ The Dialog editor provides layout tools that align and size controls automatical
   
 -   [Changing the Tab Order of Controls](../windows/changing-the-tab-order-of-controls.md)  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  Win32  
@@ -40,4 +40,3 @@ The Dialog editor provides layout tools that align and size controls automatical
 ## See Also  
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
-

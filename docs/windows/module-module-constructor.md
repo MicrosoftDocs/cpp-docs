@@ -13,16 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::Module Constructor
-Initializes a new instance of the Module class.  
+Initializes a new instance of the **Module** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 Module();  
 ```  
   
 ## Remarks  
- This constructor is protected and cannot be called with the `new` keyword. Instead, call either [Module::GetModule Method](../windows/module-getmodule-method.md) or [Module::Create Method](../windows/module-create-method.md).  
+ This constructor is protected and cannot be called with the **new** keyword. Instead, call either [Module::GetModule Method](../windows/module-getmodule-method.md) or [Module::Create Method](../windows/module-create-method.md).  
   
 ## Requirements  
  **Header:** module.h  

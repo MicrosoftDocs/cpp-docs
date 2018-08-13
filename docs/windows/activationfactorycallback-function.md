@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(  
    HSTRING activationId,  
    IActivationFactory **ppFactory  
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *activationId*  
  Handle to a string that specifies a runtime class name.  
   

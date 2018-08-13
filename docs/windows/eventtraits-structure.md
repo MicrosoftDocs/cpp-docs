@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTraits Structure
-Defines characteristics of an Event class handle.  
+Defines characteristics of an `Event` class handle.  
   
 ## Syntax  
   
-```  
+```cpp  
 struct EventTraits : HANDLENullTraits;  
 ```  
   

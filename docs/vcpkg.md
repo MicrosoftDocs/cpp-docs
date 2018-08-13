@@ -82,7 +82,7 @@ Additional packages (*) will be installed to complete this operation.
 
 ```
 
-For CMAKE projects, use use CMAKE_TOOLCHAIN_FILE to make libraries available with `find_package()`. For example:  
+For CMAKE projects, use CMAKE_TOOLCHAIN_FILE to make libraries available with `find_package()`. For example:  
 
 ```cmd
 cmake .. -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake (Linux/MacOS)

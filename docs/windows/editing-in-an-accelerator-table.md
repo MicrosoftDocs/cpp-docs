@@ -29,12 +29,11 @@ ms.workload: ["cplusplus", "uwp"]
   
     -   For [Key](../windows/accelerator-key-property.md), select from the list or type to edit.  
   
-    -   For [Type](../windows/accelerator-type-property.md), select ASCII or VIRTKEY from the list.  
+    -   For [Type](../windows/accelerator-type-property.md), select **ASCII** or **VIRTKEY** from the list.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
- **Requirements**  
-  
+## Requirements  
  Win32  
   
 ## See Also  

@@ -12,11 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::DecrementReference Method
-Decrements the reference count for the current RuntimeClass object.  
+Decrements the reference count for the current **RuntimeClass** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 ULONG DecrementReference();  
 ```  
   

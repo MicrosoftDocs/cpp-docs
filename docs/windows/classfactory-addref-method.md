@@ -17,7 +17,7 @@ Increments the reference count for the current **ClassFactory** object.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD_(  
    ULONG,  
    AddRef  

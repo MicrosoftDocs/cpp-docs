@@ -12,16 +12,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::IsValid Method
-Indicates whether the current HString object is empty or not.  
+Indicates whether the current **HString** object is empty or not.  
   
 ## Syntax  
   
-```  
+```cpp  
 bool IsValid() const throw()  
 ```  
   
-#### Parameters  
- `true` if the current HString object is not empty; otherwise, `false`.  
+### Parameters  
+ **true** if the current **HString** object is not empty; otherwise, **false**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

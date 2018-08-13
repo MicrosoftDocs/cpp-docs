@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::TryLockExclusive Method
-Attempts to acquire a SRWLock object in exclusive mode for the current or specified SRWLock object. If the call is successful, the calling thread takes ownership of the lock.  
+Attempts to acquire a **SRWLock** object in exclusive mode for the current or specified **SRWLock** object. If the call is successful, the calling thread takes ownership of the lock.  
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLockExclusive TryLockExclusive();  
   
 static SyncLockExclusive TryLockExclusive(  
@@ -25,12 +25,12 @@ static SyncLockExclusive TryLockExclusive(
 );  
 ```  
   
-#### Parameters  
- `lock`  
- Pointer to an SRWLock object.  
+### Parameters  
+ *lock*  
+ Pointer to an **SRWLock** object.  
   
 ## Return Value  
- If successful, an SRWLock object in exclusive mode and the calling thread takes ownership of the lock. Otherwise, an SRWLock object whose state is invalid.  
+ If successful, an **SRWLock** object in exclusive mode and the calling thread takes ownership of the lock. Otherwise, an **SRWLock** object whose state is invalid.  
   
 ## Requirements  
  **Header:** corewrappers.h  

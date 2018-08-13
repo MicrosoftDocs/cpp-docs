@@ -17,16 +17,16 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 EventTargetArray(  
    _Out_ HRESULT* hr,  
    size_t items  
 );  
 ```  
   
-#### Parameters  
- `hr`  
- After this constructor operations, parameter `hr` indicates whether allocation of the array succeeded or failed. The following table lists the possible values for `hr`.  
+### Parameters  
+ *hr*  
+ After this constructor operations, parameter *hr* indicates whether allocation of the array succeeded or failed. The following table lists the possible values for *hr*.  
   
  S_OK  
  The operation succeeded.  
@@ -35,15 +35,15 @@ EventTargetArray(
  Memory couldn't be allocated for the array.  
   
  S_FALSE  
- Parameter `items` is less than or equal to zero.  
+ Parameter *items* is less than or equal to zero.  
   
- `items`  
+ *items*  
  The number of array elements to allocate.  
   
 ## Remarks  
- Initializes a new instance of the EventTargetArray class.  
+ Initializes a new instance of the **EventTargetArray** class.  
   
- EventTargetArray is used to keep an array of event handlers in an EventSource object.  
+ **EventTargetArray** is used to keep an array of event handlers in an `EventSource` object.  
   
 ## Requirements  
  **Header:** event.h  

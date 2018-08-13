@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Editing Accelerator Tables
-In Visual C++, you can edit an accelerator table directly with in-place editing in the Accelerator editor.  
+In Visual C++, you can edit an accelerator table directly with in-place editing in the **Accelerator** editor.  
   
  The procedures below refer to the use of standard property pages, however, both in-place editing and the property page method have the same result. Changes made using property pages or using in-place editing are immediately reflected in the accelerator table.  
   
@@ -29,7 +29,7 @@ In Visual C++, you can edit an accelerator table directly with in-place editing 
   
 -   [Changing the properties of multiple accelerator keys](../windows/changing-the-properties-of-multiple-accelerator-keys.md)  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  Win32  

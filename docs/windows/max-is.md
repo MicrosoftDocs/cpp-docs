@@ -17,14 +17,13 @@ Designates the maximum value for a valid array index.
   
 ## Syntax  
   
-```  
-  
-      [ max_is(  
+```cpp  
+[ max_is(  
    "expression"  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *expression*  
  One or more C-language expressions. Empty argument slots are allowed.  
   
@@ -37,7 +36,7 @@ Designates the maximum value for a valid array index.
   
 |||  
 |-|-|  
-|**Applies to**|Field in `struct` or **union**, interface parameter, interface method|  
+|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|**size_is**|  
@@ -54,4 +53,4 @@ Designates the maximum value for a valid array index.
  [first_is](../windows/first-is.md)   
  [last_is](../windows/last-is.md)   
  [length_is](../windows/length-is.md)   
- [size_is](../windows/size-is.md)   
+ [size_is](../windows/size-is.md)   

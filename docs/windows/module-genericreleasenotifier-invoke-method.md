@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GenericReleaseNotifier::Invoke Method
-Calls the event handler associated with the current Module::GenericReleaseNotifier object.  
+Calls the event handler associated with the current **Module::GenericReleaseNotifier** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 void Invoke();  
 ```  
   

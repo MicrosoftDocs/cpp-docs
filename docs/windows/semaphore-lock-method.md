@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Semaphore::Lock Method
-Waits until the current object, or the Semaphore object associated with the specified handle, is in the signaled state or the specified time-out interval has elapsed.  
+Waits until the current object, or the **Semaphore** object associated with the specified handle, is in the signaled state or the specified time-out interval has elapsed.  
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLock Lock(  
    DWORD milliseconds = INFINITE  
 );  
@@ -28,15 +28,15 @@ static SyncLock Lock(
 );  
 ```  
   
-#### Parameters  
- `milliseconds`  
+### Parameters  
+ *milliseconds*  
  The time-out interval, in milliseconds. The default value is INFINITE, which waits indefinitely.  
   
- `h`  
- A handle to a Semaphore object.  
+ *h*  
+ A handle to a **Semaphore** object.  
   
 ## Return Value  
- A Details::SyncLockWithStatusT\<HandleTraits::SemaphoreTraits>  
+ A `Details::SyncLockWithStatusT<HandleTraits::SemaphoreTraits>`  
   
 ## Requirements  
  **Header:** corewrappers.h  
@@ -44,5 +44,4 @@ static SyncLock Lock(
  **Namespace:** Microsoft::WRL::Wrappers  
   
 ## See Also  
-[Semaphore Class](../windows/semaphore-class.md)
- 
+ [Semaphore Class](../windows/semaphore-class.md)

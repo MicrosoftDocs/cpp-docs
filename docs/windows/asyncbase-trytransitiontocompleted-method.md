@@ -17,7 +17,7 @@ Indicates whether the current asynchronous operation has completed.
   
 ## Syntax  
   
-```  
+```cpp  
 bool TryTransitionToCompleted(  
    void  
 );  

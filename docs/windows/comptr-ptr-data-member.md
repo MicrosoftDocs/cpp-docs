@@ -17,7 +17,7 @@ Contains a pointer to the interface that is associated with, and managed by this
   
 ## Syntax  
   
-```  
+```cpp  
 InterfaceType *ptr_;  
 ```  
   

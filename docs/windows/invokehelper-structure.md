@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template<  
    typename TDelegateInterface,  
    typename TCallback,  
@@ -76,16 +76,16 @@ template<
 struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
 ```  
   
-#### Parameters  
- `TDelegateInterface`  
- `TCallback`  
+### Parameters  
+ *TDelegateInterface*  
+ *TCallback*  
  The type of the event handler function.  
   
- `argCount`  
- The number of arguments in an InvokeHelper specialization.  
+ *argCount*  
+ The number of arguments in an **InvokeHelper** specialization.  
   
 ## Remarks  
- Provides an implementation of the Invoke() method based on the specified number and type of arguments.  
+ Provides an implementation of the `Invoke()` method based on the specified number and type of arguments.  
   
 ## Members  
   
@@ -99,7 +99,7 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeC
   
 |Name|Description|  
 |----------|-----------------|  
-|[InvokeHelper::InvokeHelper Constructor](../windows/invokehelper-invokehelper-constructor.md)|Initializes a new instance of the InvokeHelper class.|  
+|[InvokeHelper::InvokeHelper Constructor](../windows/invokehelper-invokehelper-constructor.md)|Initializes a new instance of the **InvokeHelper** class.|  
   
 ### Public Methods  
   

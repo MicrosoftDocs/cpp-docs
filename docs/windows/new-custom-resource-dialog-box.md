@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "uwp"]
 # New Custom Resource Dialog Box
 Enables you to create a new custom resource.  
   
- **Resource Type**  
+### Resource Type  
  Provides a text box for you to enter the name of a custom resource type. Visual C++ automatically capitalizes the name when you exit the **New Custom Resource** dialog box.  
   
 ## Remarks  

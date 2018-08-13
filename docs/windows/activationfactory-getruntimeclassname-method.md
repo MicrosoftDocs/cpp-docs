@@ -17,13 +17,13 @@ Gets the runtime class name of the object that the current **ActivationFactory**
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    GetRuntimeClassName  
 )(_Out_ HSTRING* runtimeName);  
 ```  
   
-#### Parameters  
+### Parameters  
  *runtimeName*  
  When this operation completes, a handle to a string that contains the runtime class name of the object that the current **ActivationFactory** instantiates.  
   

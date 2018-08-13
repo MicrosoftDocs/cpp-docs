@@ -17,18 +17,18 @@ Releases control of a shared resource.
   
 ## Syntax  
   
-```  
+```cpp  
 inline static void Unlock(  
    _In_ Type h  
 );  
 ```  
   
-#### Parameters  
- `h`  
- Handle to a semaphore object.  
+### Parameters  
+ *h*  
+ Handle to a **Semaphore** object.  
   
 ## Remarks  
- If the unlock operation is unsuccessful, Unlock() emits an error that indicates the cause of the failure.  
+ If the unlock operation is unsuccessful, **Unlock()** emits an error that indicates the cause of the failure.  
   
 ## Requirements  
  **Header:** corewrappers.h  

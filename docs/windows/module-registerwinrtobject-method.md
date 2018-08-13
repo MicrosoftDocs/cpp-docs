@@ -17,24 +17,24 @@ Registers one or more Windows Runtime objects so other applications can connect 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RegisterWinRTObject(const wchar_t* serverName,  
    wchar_t** activatableClassIds,  
    WINRT_REGISTRATION_COOKIE* cookie,  
    unsigned int count)  
 ```  
   
-#### Parameters  
- `serverName`  
+### Parameters  
+ *serverName*  
  A name that specifies a subset of objects affected by this operation.  
   
- `activatableClassIds`  
+ *activatableClassIds*  
  An array of activatable CLSIDs to register.  
   
- `cookie`  
+ *cookie*  
  A value that identifies the class objects that were registered. This value is used later to revoke the registration.  
   
- `count`  
+ *count*  
  The number of objects to register.  
   
 ## Return Value  

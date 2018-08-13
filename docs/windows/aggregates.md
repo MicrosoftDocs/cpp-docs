@@ -17,14 +17,14 @@ Indicates that the object aggregates the object specified by the CLSID.
   
 ## Syntax  
   
-```  
+```cpp  
 [ aggregates(  
    clsid,  
    variable_name  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *clsid*  
  Specifies the CLSID of the aggregatable object.  
   
@@ -36,7 +36,7 @@ Indicates that the object aggregates the object specified by the CLSID.
   
  This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if `progid` is applied, `vi_progid` and `coclass` are also applied.  
   
- **ATL Projects**  
+### ATL Projects  
   
  If this attribute is used within a project that uses ATL, the behavior of the attribute changes. First, the following entry is added to the COM map of the target object:  
   

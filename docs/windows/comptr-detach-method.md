@@ -17,7 +17,7 @@ Disassociates this **ComPtr** object from the interface that it represents.
   
 ## Syntax  
   
-```  
+```cpp  
 T* Detach();  
 ```  
   

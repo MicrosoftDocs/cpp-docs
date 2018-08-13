@@ -17,7 +17,7 @@ Enables one or more classes to be activated by the Windows Runtime.
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename I0 = Details::Nil,  
    typename I1 = Details::Nil,  
@@ -26,7 +26,7 @@ template <
 class ActivationFactory : public Details::RuntimeClass<typename Details::InterfaceListHelper<IActivationFactory, I0, I1, I2, Details::Nil>::TypeT, RuntimeClassFlags<WinRt | InhibitWeakReference>, false>;  
 ```  
   
-#### Parameters  
+### Parameters  
  *I0*  
  The zeroth interface.  
   
@@ -62,7 +62,7 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
 |[ActivationFactory::AddRef Method](../windows/activationfactory-addref-method.md)|Increments the reference count of the current **ActivationFactory** object.|  
 |[ActivationFactory::GetIids Method](../windows/activationfactory-getiids-method.md)|Retrieves an array of implemented interface IDs.|  
 |[ActivationFactory::GetRuntimeClassName Method](../windows/activationfactory-getruntimeclassname-method.md)|Gets the runtime class name of the object that the current **ActivationFactory** instantiates.|  
-|[ActivationFactory::GetTrustLevel Method](../windows/activationfactory-gettrustlevel-method.md)|Gets the trust level of the object that the current ActivationFactory instantiates.|  
+|[ActivationFactory::GetTrustLevel Method](../windows/activationfactory-gettrustlevel-method.md)|Gets the trust level of the object that the current **ActivationFactory** instantiates.|  
 |[ActivationFactory::QueryInterface Method](../windows/activationfactory-queryinterface-method.md)|Retrieves a pointer to the specified interface.|  
 |[ActivationFactory::Release Method](../windows/activationfactory-release-method.md)|Decrements the reference count of the current **ActivationFactory** object.|  
   

@@ -17,7 +17,7 @@ Defines the fundamental types that make up the Windows Runtime C++ Template Libr
   
 ## Syntax  
   
-```  
+```cpp  
 namespace Microsoft::WRL;  
 ```  
   
@@ -51,8 +51,8 @@ namespace Microsoft::WRL;
 |Name|Description|  
 |----------|-----------------|  
 |[ChainInterfaces Structure](../windows/chaininterfaces-structure.md)|Specifies verification and initialization functions that can be applied to a set of interface IDs.|  
-|[CloakedIid Structure](../windows/cloakediid-structure.md)|Indicates to the RuntimeClass, Implements and ChainInterfaces templates that the specified interface is not accessible in the IID list.|  
-|[Implements Structure](../windows/implements-structure.md)|Implements QueryInterface and GetIid for the specified interfaces.|  
+|[CloakedIid Structure](../windows/cloakediid-structure.md)|Indicates to the `RuntimeClass`, `Implements` and `ChainInterfaces` templates that the specified interface is not accessible in the IID list.|  
+|[Implements Structure](../windows/implements-structure.md)|Implements `QueryInterface` and `GetIid` for the specified interfaces.|  
 |[MixIn Structure](../windows/mixin-structure.md)|Ensures that a runtime class derives from Windows Runtime interfaces, if any, and then classic COM interfaces.|  
 |[RuntimeClassFlags Structure](../windows/runtimeclassflags-structure.md)|Contains the type for an instance of a [RuntimeClass](../windows/runtimeclass-class.md).|  
   
@@ -60,7 +60,7 @@ namespace Microsoft::WRL;
   
 |Name|Description|  
 |----------|-----------------|  
-|[AsyncResultType Enumeration](../windows/asyncresulttype-enumeration.md)|Specifies the type of result returned by the GetResults() method.|  
+|[AsyncResultType Enumeration](../windows/asyncresulttype-enumeration.md)|Specifies the type of result returned by the `GetResults()` method.|  
 |[ModuleType Enumeration](../windows/moduletype-enumeration.md)|Specifies whether a module should support an in-process server or an out-of-process server.|  
 |[RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md)|Specifies the type of [RuntimeClass](../windows/runtimeclass-class.md) instance that is supported.|  
   

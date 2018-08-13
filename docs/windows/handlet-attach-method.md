@@ -13,18 +13,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::Attach Method
-Associates the specified handle with the current HandleT object.  
+Associates the specified handle with the current **HandleT** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 void Attach(  
    typename HandleTraits::Type h  
 );  
 ```  
   
 #### Parameters  
- `h`  
+ *h*  
  A handle.  
   
 ## Requirements  

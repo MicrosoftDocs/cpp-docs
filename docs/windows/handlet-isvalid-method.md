@@ -13,16 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::IsValid Method
-Indicates whether the current HandleT object represents a handle.  
+Indicates whether the current **HandleT** object represents a handle.  
   
 ## Syntax  
   
-```  
+```cpp  
 bool IsValid() const;  
 ```  
   
 ## Return Value  
- `true` if the HandleT represents a handle; otherwise, `false`.  
+ **true** if the **HandleT** represents a handle; otherwise, **false**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

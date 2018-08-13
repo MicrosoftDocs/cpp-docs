@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 ~MakeAllocator();  
 ```  
   
 ## Remarks  
- Deinitializes the current instance of the MakeAllocator class.  
+ Deinitializes the current instance of the **MakeAllocator** class.  
   
  This destructor also deletes the underlying allocated memory if necessary.  
   

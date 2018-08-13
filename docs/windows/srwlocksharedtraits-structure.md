@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockSharedTraits Structure
-Describes common characteristics of the SRWLock class in shared lock mode.  
+Describes common characteristics of the `SRWLock` class in shared lock mode.  
   
 ## Syntax  
   
-```  
+```cpp  
 struct SRWLockSharedTraits;  
 ```  
   
@@ -33,8 +33,8 @@ struct SRWLockSharedTraits;
   
 |Name|Description|  
 |----------|-----------------|  
-|[SRWLockSharedTraits::GetInvalidValue Method](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|Retrieves an SRWLockSharedTraits object that is always invalid.|  
-|[SRWLockSharedTraits::Unlock Method](../windows/srwlocksharedtraits-unlock-method.md)|Releases exclusive control of the specified SRWLock object.|  
+|[SRWLockSharedTraits::GetInvalidValue Method](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|Retrieves an **SRWLockSharedTraits** object that is always invalid.|  
+|[SRWLockSharedTraits::Unlock Method](../windows/srwlocksharedtraits-unlock-method.md)|Releases exclusive control of the specified `SRWLock` object.|  
   
 ## Inheritance Hierarchy  
  `SRWLockSharedTraits`  

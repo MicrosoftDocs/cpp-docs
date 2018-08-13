@@ -14,20 +14,18 @@ ms.workload: ["cplusplus", "uwp"]
 # Adding Multiple Controls
 ### To add multiple controls  
   
-1.  While holding down the **CTRL** key, select a control in the [Toolbox Window](/visualstudio/ide/reference/toolbox).  
+1.  While holding down the **Ctrl** key, select a control in the [Toolbox Window](/visualstudio/ide/reference/toolbox).  
   
-2.  Release the **CTRL** key and click the dialog box as many times as you want to add the particular control.  
+2.  Release the **Ctrl** key and click the dialog box as many times as you want to add the particular control.  
   
-3.  Press **ESC** to stop placing controls.  
+3.  Press **Esc** to stop placing controls.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Adding Event Handlers for Dialog Box Controls](../windows/adding-event-handlers-for-dialog-box-controls.md)   
  [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)
-

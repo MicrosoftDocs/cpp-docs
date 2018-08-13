@@ -34,7 +34,7 @@ The `Platform::Array<T>` type in C++/CX, or the **array** keyword in C++/CLI, de
   
  The first example of the syntax uses the **ref new** aggregate keyword to allocate an array. The second example declares a local array.  
   
-```  
+```cpp  
 [qualifiers] [Platform::]Array<[qualifiers] array-type [,rank]>^ identifier = 
     ref new[Platform::]Array<initialization-type> [{initialization-list [,...]}]  
   
@@ -65,7 +65,7 @@ The `Platform::Array<T>` type in C++/CX, or the **array** keyword in C++/CLI, de
  You can detect at compile time whether a type is a reference-counted array with `__is_ref_array(type)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ### Examples  
  The following example creates a one-dimensional array that has 100 elements.  
@@ -88,7 +88,7 @@ int main() {
   
  The first example of the syntax uses the **gcnew** keyword to allocate an array. The second example declares a local array.  
   
-```  
+```cpp  
 [qualifiers] [cli::]array<[qualifiers] array-type [,rank]>^ identifier = 
     gcnew [cli::]array<initialization-type[,rank]>(rank-size-list[,...]) [{initialization-list [,...]}]  
   
@@ -121,7 +121,7 @@ int main() {
   
 ### Remarks  
   
- `array` is in the [Platform, default, and cli Namespaces](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) namespace.  
+ **array** is in the [Platform, default, and cli Namespaces](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) namespace.  
   
  Like standard C++, the indices of an array are zero-based, and an array is subscripted by using square brackets ([]). Unlike standard C++, the indices of a multi-dimensional array are specified in a list of indices for each dimension instead of a set of square-bracket ([]) operators for each dimension. For example, *identifier*[*index1*, *index2*] instead of *identifier*[*index1*][ *index2*].  
   
@@ -134,7 +134,7 @@ int main() {
  At compile time, you can detect whether a type is a common language runtime (CLR) array with `__is_ref_array(type)`. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
  The following example creates a one-dimensional array that has 100 elements, and a three-dimensional array that has 3 elements in the first dimension, 5 elements in the second, and 6 elements in the third.  

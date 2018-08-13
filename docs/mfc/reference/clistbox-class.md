@@ -1200,7 +1200,7 @@ virtual int VKeyToItem(
   
 ### Parameters  
  *nKey*  
- The virtual key code of the key the user pressed. For a list of of standard virtual key codes, see Winuser.h  
+ The virtual key code of the key the user pressed. For a list of standard virtual key codes, see Winuser.h  
   
  *nIndex*  
  The current position of the list-box caret.  

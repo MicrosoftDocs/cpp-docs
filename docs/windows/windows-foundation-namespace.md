@@ -17,7 +17,7 @@ Enables fundamental Windows Runtime functionality, such as object and factory cr
   
 ## Syntax  
   
-```  
+```cpp  
 namespace Windows::Foundation;  
 ```  
   
@@ -36,4 +36,4 @@ namespace Windows::Foundation;
  **Namespace:** Windows  
   
 ## See Also  
- [Windows Namespace](http://msdn.microsoft.com/en-us/45b08650-69cd-4f7f-a959-b7361476865c)
+ [Windows Namespace](http://msdn.microsoft.com/45b08650-69cd-4f7f-a959-b7361476865c)

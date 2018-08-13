@@ -24,14 +24,12 @@ You can use the **Resource Includes** dialog box to modify the environment's nor
  Enables you to include header files that contain symbols that should not be modified during an editing session. For example, you can include a symbol file that is shared among several projects. You can also include MFC .h files. For more information, see [Including Shared (Read-Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md).  
   
  **Compile-time directives**  
- Allows you to include resource files that are created and edited separately from the resources in your main resource file, contain compile-time directives (such as those that conditionally include resources), or contain resources in a custom format. You can also use the Compile-time directives box to include standard MFC resource files. For more information, see [Including Resources at Compile Time](../windows/how-to-include-resources-at-compile-time.md).  
+ Allows you to include resource files that are created and edited separately from the resources in your main resource file, contain compile-time directives (such as those that conditionally include resources), or contain resources in a custom format. You can also use the **Compile-time directives box** to include standard MFC resource files. For more information, see [Including Resources at Compile Time](../windows/how-to-include-resources-at-compile-time.md).  
   
 > [!NOTE]
 >  Entries in these text boxes appear in the .rc file marked by `TEXTINCLUDE 1`, `TEXTINCLUDE 2`, and `TEXTINCLUDE 3` respectively. For more information, see [TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md).  
   
  Once you have made changes to your resource file using the **Resource Includes** dialog box, you need to close the .rc file and then reopen it for the changes to take effect. For more information, see [Including Resources at Compile Time](../windows/how-to-include-resources-at-compile-time.md).  
-  
-
   
 ## Requirements  
  Win32  

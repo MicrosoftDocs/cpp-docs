@@ -140,7 +140,7 @@ namespace concurrency;
 |[IUMSUnblockNotification Structure](iumsunblocknotification-structure.md)|Represents a notification from the Resource Manager that a thread proxy which blocked and triggered a return to the scheduler's designated scheduling context has unblocked and is ready to be scheduled. This interface is invalid once the thread proxy's associated execution context, returned from the `GetContext` method, is rescheduled.|  
 |[IVirtualProcessorRoot Structure](ivirtualprocessorroot-structure.md)|An abstraction for a hardware thread on which a thread proxy can execute.|  
 |[scheduler_interface Structure](scheduler-interface-structure.md)|Scheduler Interface|  
-|[scheduler_ptr Structure (Concurrency Runtime)](scheduler-ptr-structure-concurrency-runtime.md)|Represents a pointer to a scheduler. This class exists to allow the the specification of a shared lifetime by using shared_ptr or just a plain reference by using raw pointer.|  
+|[scheduler_ptr Structure (Concurrency Runtime)](scheduler-ptr-structure-concurrency-runtime.md)|Represents a pointer to a scheduler. This class exists to allow the specification of a shared lifetime by using shared_ptr or just a plain reference by using raw pointer.|  
   
 ### Enumerations  
   

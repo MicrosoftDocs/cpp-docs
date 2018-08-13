@@ -39,7 +39,7 @@ Generics and templates are both language features that provide support for param
   
 ## Combining Templates and Generics  
   
--   The basic difference in generics has implications for building applications that combine templates and generics. For example, suppose you have a template class that you want to create a generic wrapper for to expose that template to other languages as a generic. You cannot have the generic take a type parameter that it then passes though to the template, since the template needs to have that type parameter at compile time, but the generic won't resolve the type parameter until runtime. Nesting a template inside a generic won't work either because there's no way to expand the templates at compile time for arbitrary generic types that could be instantiated at runtime.  
+The basic difference in generics has implications for building applications that combine templates and generics. For example, suppose you have a template class that you want to create a generic wrapper for to expose that template to other languages as a generic. You cannot have the generic take a type parameter that it then passes though to the template, since the template needs to have that type parameter at compile time, but the generic won't resolve the type parameter until runtime. Nesting a template inside a generic won't work either because there's no way to expand the templates at compile time for arbitrary generic types that could be instantiated at runtime.  
   
 ## Example  
   
@@ -50,7 +50,7 @@ Generics and templates are both language features that provide support for param
   
 ### Code  
   
-```  
+```cpp  
 // templates_and_generics.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -83,9 +83,7 @@ int main() {
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 F  
 ```  
   

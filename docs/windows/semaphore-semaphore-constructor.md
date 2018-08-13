@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Semaphore::Semaphore Constructor
-Initializes a new instance of the Semaphore class.  
+Initializes a new instance of the **Semaphore** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 explicit Semaphore(  
    HANDLE h  
 );  
@@ -27,9 +27,9 @@ WRL_NOTHROW Semaphore(
 );  
 ```  
   
-#### Parameters  
- `h`  
- A handle or an rvalue-reference to a Semaphore object.  
+### Parameters  
+ *h*  
+ A handle or an rvalue-reference to a **Semaphore** object.  
   
 ## Requirements  
  **Header:** corewrappers.h  

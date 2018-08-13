@@ -17,7 +17,7 @@ Closes the asynchronous operation.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    Close  
 )(void) override;  

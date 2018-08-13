@@ -18,7 +18,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
  To simplify the use of the Windows Runtime, Windows Runtime C++ Template Library provides the smart pointer template, [ComPtr\<T>](../windows/comptr-class.md), that automatically performs reference counting. When you declare a variable, specify `ComPtr<`*interface-name*`>` *identifier*. To access an interface member, apply the arrow member-access operator (`->`) to the identifier.  
   
 > [!IMPORTANT]
->  When you call an interface function, always test the `HRESULT` return value.  
+>  When you call an interface function, always test the HRESULT return value.  
   
 ## Activating and Using a Windows Runtime Component  
  The following steps use the `Windows::Foundation::IUriRuntimeClass` interface to demonstrate how to create an activation factory for a Windows Runtime component, create an instance of that component, and retrieve a property value. They also show how to initialize the Windows Runtime. The complete example follows.  
@@ -73,7 +73,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
 ## Compiling the Code  
  To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `wrl-consume-component.cpp` and then run the following command in a Visual Studio Command Prompt window.  
   
- **cl.exe wrl-consume-component.cpp runtimeobject.lib**  
+ `cl.exe wrl-consume-component.cpp runtimeobject.lib`  
   
 ## See Also  
  [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

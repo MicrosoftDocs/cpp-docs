@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Using a Drawing Tool (Image Editor for Icons)
-The Image editor's freehand drawing and erasing tools all work in the same way: you select the tool and, if necessary, [select foreground and background colors](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) and size and shape options. You then move the pointer to the image and click or drag to draw and erase.  
+The **Image** editor's freehand drawing and erasing tools all work in the same way: you select the tool and, if necessary, [select foreground and background colors](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) and size and shape options. You then move the pointer to the image and click or drag to draw and erase.  
   
  When you select the **Eraser** tool, **Brush** tool, or **Airbrush** tool, the option selector displays that tool's options.  
   
@@ -53,10 +53,9 @@ The Image editor's freehand drawing and erasing tools all work in the same way: 
   
 2.  On the cascading submenu, choose the tool you wish to use.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
-  
+## Requirements  
  None  
   
 ## See Also  
@@ -64,4 +63,3 @@ The Image editor's freehand drawing and erasing tools all work in the same way: 
  [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)   
  [Image Editor for Icons](../windows/image-editor-for-icons.md)   
  [Working with Color](../windows/working-with-color-image-editor-for-icons.md)
-
