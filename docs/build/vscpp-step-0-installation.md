@@ -52,7 +52,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    The first time you run Visual Studio, you are asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to. 
 
-   It may take Visual Studio several minutes to to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
+   It may take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
 
    ![Visual Studio 2017 sign in](../build/media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
 

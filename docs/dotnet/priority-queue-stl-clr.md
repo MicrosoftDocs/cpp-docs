@@ -799,7 +799,7 @@ void push(value_type val);
 ```  
   
 ### Remarks  
- The member function inserts an element with value `val` into the the controlled sequence, and reorders the controlled sequence to maintain the heap discipline. You use it to add another element to the queue.  
+ The member function inserts an element with value `val` into the controlled sequence, and reorders the controlled sequence to maintain the heap discipline. You use it to add another element to the queue.  
   
 ### Example  
   

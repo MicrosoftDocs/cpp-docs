@@ -253,7 +253,7 @@ collection_adapter(Coll^ collection);
   
  `collection_adapter(Coll^ collection);`  
   
- initializes the stored handle with with `collection`.  
+ initializes the stored handle with `collection`.  
   
 ### Example  
   
