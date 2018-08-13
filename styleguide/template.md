@@ -51,15 +51,15 @@ File names use the following rules:
 Use sentence-style capitalization. Always capitalize:
 
 - The first word of a heading.
-- The word following a colon in a title or heading (for example, "How to: Sort an array"). 
+- The word following a colon in a title or heading (for example, "How to: Sort an array").
 
-Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above. 
+Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above.
 
 There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
 
 If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.
 
-There should always be one blank line after and before a heading (except for fist-level headings).
+There should always be one blank line before and after a heading (except for first-level headings).
 
 Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
 
@@ -75,11 +75,11 @@ Second-level headings will generate the on-page TOC that appears in the "In this
 
 ## Text styling
 
-*Italics*
-Use for files, folders, paths (for long items, split onto their own line) - new terms - URLs (unless rendered as links, which is the default).
+*Italics*  
+Use for user-generated filenames, folders, and paths (for long items, split onto their own line); new terms; parameter names; user-entered values; and URLs (unless rendered as links, which is the default).
 
-**Bold**
-Use for UI elements.
+**Bold**  
+Use for UI elements and language keywords.
 
 ## Links
 
@@ -98,6 +98,12 @@ To link to a Markdown file in the same repo, use [relative links](https://www.w3
 To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
 
 - Example: [.NET Community](../docs/welcome.md#community)
+
+### Docs Links
+
+To link to a file in a different Docs repo, use the docs.microsoft.com relative URL as the link. Do not include the .md suffix.
+
+- Example: [Universal Windows Platform documentation](/windows/uwp)
 
 ### External Links
 
@@ -121,7 +127,7 @@ You can use one of the following syntax:
 3. Shorthand form: `@UID`
 
 - Example: `@System.String`
-- Example: `[String class](xref:System.String)` 
+- Example: `[String class](xref:System.String)`
 
 For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
 
@@ -141,7 +147,7 @@ Lists should be surrounded by blank lines.
 1. Is
 1. An
 1. Ordered
-1. List  
+1. List
 
 #### Ordered list with an embedded list
 
@@ -228,13 +234,13 @@ int sum = i + j;
 ```
 
 In other languages, use the comment syntax for that language.
-Finally, you can use line
-numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
+
+Finally, you can use line numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
 because they are very brittle.
 
 Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
-system. However, if you need to show something that causes compile time or
-runtime errors, you can use inline code blocks.
+system. However, if you need to show something that causes compile time or runtime errors, you can 
+use inline code blocks.
 
 ### Inline code blocks with language identifier
 
@@ -293,7 +299,7 @@ function fancyAlert(arg) {
 
 ### Inline code
 
-Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
+Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language expressions and function names.
 
 ## Blockquotes
 
