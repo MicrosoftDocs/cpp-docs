@@ -74,17 +74,13 @@ The documentation is written in [GitHub Flavored Markdown](https://help.github.c
 
 If you want to build the docs locally, you need to install [DocFX](https://dotnet.github.io/docfx/); latest versions are the best.
 
-There are several ways to use DocFX, and most of them are covered in the [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html).
-The following instructions use the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tool.
-If you are comfortable with other ways listed on the link above, feel free to use those.
+There are several ways to use DocFX, and most of them are covered in the [DocFX getting started guide](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html). The following instructions use the [command-line based](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool) version of the tool. If you are comfortable with other ways listed on the link above, feel free to use those.
 
 **Note:** Currently DocFX requires the .NET Framework on Windows or Mono (for Linux or macOS). We hope to port it to .NET Core in the future.
 
 You can build and preview the resulting site locally using a built-in web server. Navigate to the `cpp-docs\docs` folder on your machine and type the following command:
 
-```shell
-docfx -t default --serve
-```
+> docfx -t default --serve
 
 This starts the local preview on [localhost:8080](http://localhost:8080). You can then view the changes by going to `http://localhost:8080/[path]`, such as `http://localhost:8080/cpp/visual-cpp-in-visual-studio.html`.
 
