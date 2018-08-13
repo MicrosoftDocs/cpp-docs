@@ -1,7 +1,7 @@
 ---
 title: "Locale Names, Languages, and Country-Region Strings | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/13/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "conceptual"
 f1_keywords: ["c.strings"]
