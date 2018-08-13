@@ -41,7 +41,6 @@ struct Trivial2
    private:
    int j;   // Different access control
 };
-
 ```
 
 ## Standard layout types
@@ -74,7 +73,6 @@ struct SL
    int j;
    SL(int a, int b) : i(a), j(b) {} // User-defined constructor OK
 };
-
 ```
 
  The last two requirements can perhaps be better illustrated with code. In the next example, even though Base is standard-layout, `Derived` is not standard layout because both it (the most derived class) and `Base` have non-static data members:
@@ -180,7 +178,6 @@ int main()
 
    return 0;
 }
-
 ```
 
 ## <a name="literal_types"></a> Literal types
@@ -193,6 +190,5 @@ A literal type is one whose layout can be determined at compile time. The follow
 - Arrays of void, scalar types or references
 - A class that has a trivial destructor, and one or more constexpr constructors that are not move or copy constructors. Additionally, all its non-static data members and base classes must be literal types and not volatile.
 
-## See Also
-
+## See also
  [Basic Concepts](../cpp/basic-concepts-cpp.md)

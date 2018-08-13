@@ -42,7 +42,7 @@ Computes the sum of all the elements in a specified range including some initial
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _Ty> inline  
     _Ty accumulate(_InIt _First, _InIt _Last, _Ty _Val);  
 template<class _InIt, class _Ty, class _Fn2> inline  
@@ -57,7 +57,7 @@ Computes the successive differences between each element and its predecessor in 
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt> inline  
     _OutIt adjacent_difference(_InIt _First, _InIt _Last,  
         _OutIt _Dest);  
@@ -74,7 +74,7 @@ Computes the sum of the element-wise product of two ranges and adds it to a spec
   
 ###Syntax  
   
-```  
+```cpp  
 template<class _InIt1, class _InIt2, class _Ty> inline  
     _Ty inner_product(_InIt1 _First1, _InIt1 _Last1, _InIt2 _First2,  
         _Ty _Val);  
@@ -92,7 +92,7 @@ Computes a series of sums in an input range from the first element through the `
   
 ### Syntax  
   
-```  
+```cpp  
 template<class _InIt, class _OutIt> inline  
     _OutIt partial_sum(_InIt _First, _InIt _Last, _OutIt _Dest);  
 template<class _InIt, class _OutIt, class _Fn2> inline  
@@ -102,4 +102,3 @@ template<class _InIt, class _OutIt, class _Fn2> inline
   
 ### Remarks  
  This function behaves the same as the C++ Standard Library numeric function `partial_sum`. For more information, see [partial_sum](../standard-library/numeric-functions.md#partial_sum).  
-    

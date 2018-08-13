@@ -17,10 +17,8 @@ Places a construct inside the IDL library block.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [library_block]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Places a construct inside the IDL library block.
 ## Example  
  In the following code, a custom interface is placed inside the library block.  
   
-```  
+```cpp  
 // cpp_attr_ref_library_block.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -55,4 +53,4 @@ __interface IMyInterface {
   
 ## See Also  
  [Compiler Attributes](../windows/compiler-attributes.md)   
- [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
+ [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   

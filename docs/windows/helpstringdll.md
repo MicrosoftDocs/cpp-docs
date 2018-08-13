@@ -17,15 +17,14 @@ Specifies the name of the DLL to use to perform document string lookup (localiza
   
 ## Syntax  
   
-```  
-  
-      [ helpstringdll(  
+```cpp  
+[ helpstringdll(  
    "string"  
 ) ]  
 ```  
   
-#### Parameters  
- `string`  
+### Parameters  
+ *string*  
  The DLL to use to perform document string lookup.  
   
 ## Remarks  
@@ -33,7 +32,7 @@ Specifies the name of the DLL to use to perform document string lookup (localiza
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_helpstringdll.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -52,7 +51,7 @@ __interface IMyI
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `interface`, interface method|  
+|**Applies to**|**class**, **interface**, interface method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -63,4 +62,4 @@ __interface IMyI
  [IDL Attributes](../windows/idl-attributes.md)   
  [Interface Attributes](../windows/interface-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+ [Method Attributes](../windows/method-attributes.md)   

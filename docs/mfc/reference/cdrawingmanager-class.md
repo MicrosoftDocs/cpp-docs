@@ -871,7 +871,7 @@ static COLORREF __stdcall SmartMixColors(
 ### Remarks  
  This method fails with an error if either *k1* or *k2* is less than zero. If both of these parameters are set to 0, the method returns `RGB(0, 0, 0)`.  
   
- The weighted ratio is calculated with the following formula:                         (color1 * k1 + color2 \* k2)/(k1 + k2). After the weighted ratio is determined, the method calculates the luminosity for the mixed color. It then multiplies the luminosity by *dblLumRatio*. If the value is larger than 1.0, the method sets the luminosity for the mixed color to the new value. Otherwise, the luminosity is set to 1.0.  
+ The weighted ratio is calculated with the following formula:                         (color1 \* k1 + color2 \* k2)/(k1 + k2). After the weighted ratio is determined, the method calculates the luminosity for the mixed color. It then multiplies the luminosity by *dblLumRatio*. If the value is larger than 1.0, the method sets the luminosity for the mixed color to the new value. Otherwise, the luminosity is set to 1.0.  
   
 ##  <a name="drawrotated"></a>  CDrawingManager::DrawRotated  
  Rotates a source DC content inside the given rectangle by 90 degrees.  

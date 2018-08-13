@@ -17,33 +17,32 @@ Specifies the threading model for a COM object.
   
 ## Syntax  
   
-```  
-  
-      [ threading(  
+```cpp  
+[ threading(  
    model=enumeration  
 ) ]  
 ```  
   
-#### Parameters  
- ***model*** (optional)  
+### Parameters  
+ *model* (optional)  
  One of the following threading models:  
   
--   **apartment** (apartment threading)  
+-   `apartment` (apartment threading)  
   
--   **neutral** (.NET Framework components with no user interface)  
+-   `neutral` (.NET Framework components with no user interface)  
   
--   **single** (simple threading)  
+-   `single` (simple threading)  
   
--   **free** (free threading)  
+-   `free` (free threading)  
   
--   **both** (apartment and free threading)  
+-   `both` (apartment and free threading)  
   
- The default value is **apartment**.  
+ The default value is `apartment`.  
   
 ## Remarks  
  The **threading** C++ attribute does not appear in the generated .idl file but will be used in the implementation of your COM object.  
   
- In ATL projects, If the [coclass](../windows/coclass.md) attribute is also present, the threading model specified by *model* is passed as the template parameter to the [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) class, inserted by the **coclass** attribute.  
+ In ATL projects, If the [coclass](../windows/coclass.md) attribute is also present, the threading model specified by *model* is passed as the template parameter to the [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) class, inserted by the `coclass` attribute.  
   
  The **threading** attribute also guards access to an [event_source](../windows/event-source.md).  
   
@@ -56,7 +55,7 @@ Specifies the threading model for a COM object.
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|**coclass**|  
 |**Invalid attributes**|None|  
@@ -68,4 +67,4 @@ Specifies the threading model for a COM object.
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [Multithreading Support for Older Code (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)   
- [Neutral Apartments](http://msdn.microsoft.com/library/windows/desktop/ms681813)   
+ [Neutral Apartments](http://msdn.microsoft.com/library/windows/desktop/ms681813)   

@@ -17,10 +17,8 @@ Identifies the coclass as an application object, which is associated with a full
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [appobject]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Identifies the coclass as an application object, which is associated with a full
 ## Example  
  The following code shows a simple class definition preceded by an attribute block that includes **appobject**:  
   
-```  
+```cpp  
 // cpp_attr_ref_appobject.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -50,9 +48,9 @@ class A : public ICustom {
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
-|**Required attributes**|**coclass**|  
+|**Required attributes**|`coclass`|  
 |**Invalid attributes**|None|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
@@ -60,4 +58,4 @@ class A : public ICustom {
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   

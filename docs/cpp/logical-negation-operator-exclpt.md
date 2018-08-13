@@ -16,7 +16,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 ! cast-expression  
 ```  
   
@@ -43,7 +42,7 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Unary Arithmetic Operators](../c-language/unary-arithmetic-operators.md)

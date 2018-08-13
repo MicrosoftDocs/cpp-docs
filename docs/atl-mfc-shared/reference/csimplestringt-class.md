@@ -426,7 +426,7 @@ PXSTR GetBufferSetLength(int nLength);
   
  The buffer memory is automatically freed when the `CSimpleStringT` object is destroyed.  
   
- If you keep track of the string length yourself, do not not append the terminating null character. You must specify the final string length when you release the buffer by using `ReleaseBuffer`. If you do append a terminating null character when you call `ReleaseBuffer`, pass -1 (the default) for the length to `ReleaseBuffer`, and `ReleaseBuffer` will perform a `strlen` on the buffer to determine its length.  
+ If you keep track of the string length yourself, do not append the terminating null character. You must specify the final string length when you release the buffer by using `ReleaseBuffer`. If you do append a terminating null character when you call `ReleaseBuffer`, pass -1 (the default) for the length to `ReleaseBuffer`, and `ReleaseBuffer` will perform a `strlen` on the buffer to determine its length.  
   
  For more information about reference counting, see the following articles:  
   

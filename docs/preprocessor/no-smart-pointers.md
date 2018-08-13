@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # no_smart_pointers
 **C++ Specific**  
   
- Suppresses the creation of smart pointers for all interfaces in the type library.  
+Suppresses the creation of smart pointers for all interfaces in the type library.  
   
 ## Syntax  
   
@@ -24,10 +24,12 @@ no_smart_pointers
 ```  
   
 ## Remarks  
- By default, when you use `#import`, you get a smart pointer declaration for all interfaces in the type library. These smart pointers are of type [_com_ptr_t Class](../cpp/com-ptr-t-class.md).  
+ 
+By default, when you use `#import`, you get a smart pointer declaration for all interfaces in the type library. These smart pointers are of type [_com_ptr_t Class](../cpp/com-ptr-t-class.md).  
   
- **END C++ Specific**  
+**END C++ Specific**  
   
 ## See Also  
- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # auto_search
 **C++ Specific**  
   
- Specifies that, when a type library is referenced with #import and itself references another type library, the compiler can do an implicit #import for the other type library.  
+Specifies that, when a type library is referenced with `#import` and itself references another type library, the compiler can do an implicit `#import` for the other type library.  
   
 ## Syntax  
   
@@ -26,6 +26,7 @@ auto_search
 ## Remarks  
  **END C++ Specific**  
   
-## See Also  
- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+## See Also 
+
+[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

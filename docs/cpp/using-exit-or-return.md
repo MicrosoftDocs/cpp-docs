@@ -66,5 +66,5 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Additional Termination Considerations](../cpp/additional-termination-considerations.md)

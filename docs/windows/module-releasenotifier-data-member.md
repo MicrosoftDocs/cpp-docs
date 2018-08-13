@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::releaseNotifier_ Data Member
-Holds a pointer to a ReleaseNotifier object.  
+Holds a pointer to a `ReleaseNotifier` object.  
   
 ## Syntax  
   
-```  
+```cpp  
 ReleaseNotifier *releaseNotifier_;  
 ```  
   

@@ -85,5 +85,5 @@ ms.workload: ["cplusplus"]
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [dllexport, dllimport](../cpp/dllexport-dllimport.md)

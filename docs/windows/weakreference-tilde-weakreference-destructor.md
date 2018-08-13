@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 virtual ~WeakReference();  
 ```  
   
 ## Return Value  
   
 ## Remarks  
- Deinitializes the current instance of the WeakReference class.  
+ Deinitializes the current instance of the **WeakReference** class.  
   
 ## Requirements  
  **Header:** implements.h  

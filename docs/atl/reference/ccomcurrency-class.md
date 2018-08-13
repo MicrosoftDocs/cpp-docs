@@ -246,7 +246,7 @@ CComCurrency operator*(const CComCurrency& cur) const;
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#57](../../atl/codesnippet/cpp/ccomcurrency-class_5.cpp)]  
   
-##  <a name="operator_star_eq"></a>  CComCurrency::operator *=  
+##  <a name="operator_star_eq"></a>  CComCurrency::operator \*=  
  This operator is used to perform multiplication on a `CComCurrency` object and assign it the result.  
   
 ```

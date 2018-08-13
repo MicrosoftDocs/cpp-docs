@@ -17,17 +17,17 @@ Unregisters the objects in the specified module so that other applications canno
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnregisterObjects(  
    ModuleBase* module,  
    const wchar_t* serverName);  
 ```  
   
-#### Parameters  
- `module`  
+### Parameters  
+ *module*  
  Pointer to a module.  
   
- `serverName`  
+ *serverName*  
  A qualifying name that specifies a subset of objects affected by this operation.  
   
 ## Return Value  

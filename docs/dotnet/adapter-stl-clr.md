@@ -4,15 +4,9 @@ ms.custom: ""
 ms.date: "06/15/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["<cliext/adapter>", "cliext::collection_adapter", "cliext::collection_adapter::base", "cliext::collection_adapter::begin", "cliext::collection_adapter", "cliext::collection_adapter::collection_adapter",
-    "cliext::collection_adapter::difference_type", "cliext::collection_adapter::end", "cliext::collection_adapter::iterator", "cliext::collection_adapter::key_type", "cliext::collection_adapter::mapped_type",
-    "cliext::collection_adapter::operator=", "cliext::collection_adapter::reference", "cliext::collection_adapter::size", "cliext::collection_adapter::size_type", "cliext::collection_adapter::swap",
-    "cliext::collection_adapter::value_type", "cliext::make_collection", "cliext::range_adapter", "cliext::operator=", "cliext::range_adapter::operator=", "cliext::range_adapter::range_adapter"]
+f1_keywords: ["<cliext/adapter>", "cliext::collection_adapter", "cliext::collection_adapter::base", "cliext::collection_adapter::begin", "cliext::collection_adapter", "cliext::collection_adapter::collection_adapter", "cliext::collection_adapter::difference_type", "cliext::collection_adapter::end", "cliext::collection_adapter::iterator", "cliext::collection_adapter::key_type", "cliext::collection_adapter::mapped_type", "cliext::collection_adapter::operator=", "cliext::collection_adapter::reference", "cliext::collection_adapter::size", "cliext::collection_adapter::size_type", "cliext::collection_adapter::swap", "cliext::collection_adapter::value_type", "cliext::make_collection", "cliext::range_adapter", "cliext::operator=", "cliext::range_adapter::operator=", "cliext::range_adapter::range_adapter"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["<adapter> header [STL/CLR]", "adapter [STL/CLR]", "<cliext/adapter> header [STL/CLR]", "collection_adapter class [STL/CLR]", "base member [STL/CLR]", "begin member [STL/CLR]",
-    "collection_adapter member [STL/CLR]", "difference_type member [STL/CLR]", "end member [STL/CLR]", "iterator member [STL/CLR]", "key_type member [STL/CLR]", "mapped_type member [STL/CLR]", 
-    "operator= member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "value_type member [STL/CLR]", "make_collection function [STL/CLR]",
-    "range_adapter class [STL/CLR]", "operator= member [STL/CLR]", "range_adapter member [STL/CLR]"]
+helpviewer_keywords: ["<adapter> header [STL/CLR]", "adapter [STL/CLR]", "<cliext/adapter> header [STL/CLR]", "collection_adapter class [STL/CLR]", "base member [STL/CLR]", "begin member [STL/CLR]", "collection_adapter member [STL/CLR]", "difference_type member [STL/CLR]", "end member [STL/CLR]", "iterator member [STL/CLR]", "key_type member [STL/CLR]", "mapped_type member [STL/CLR]", "operator= member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "value_type member [STL/CLR]", "make_collection function [STL/CLR]", "range_adapter class [STL/CLR]", "operator= member [STL/CLR]", "range_adapter member [STL/CLR]"]
 ms.assetid: 71ce7e51-42b6-4f70-9595-303791a97677
 author: "mikeblome"
 ms.author: "mblome"
@@ -23,7 +17,7 @@ The STL/CLR header `<cliext/adapter>` specifies two template classes (`collectio
   
 ## Syntax  
   
-```  
+```cpp  
 #include <cliext/adapter>  
 ```  
 
@@ -50,7 +44,7 @@ Wraps a .NET collection for use as an STL/CLR container. A `collection_adapter` 
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Coll>  
     ref class collection_adapter;  
   
@@ -81,8 +75,8 @@ template<typename Key,
         System::Collections::Generic::IDictionary<Key, Value>>;  
 ```  
   
-##### Parameters  
- Coll  
+#### Parameters  
+ *Coll*  
  The type of the wrapped collection.  
   
 ### Specializations  
@@ -131,7 +125,7 @@ Designates the wrapped BCL interface.
   
 ### Syntax  
   
-```  
+```cpp  
 Coll^ base();  
 ```  
   
@@ -161,7 +155,6 @@ int main()
     System::Console::WriteLine("base() same = {0}", c1.base() == %c1);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -174,7 +167,7 @@ Designates the beginning of the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator begin();  
 ```  
   
@@ -210,7 +203,6 @@ int main()
     System::Console::WriteLine("*++begin() = {0}", *++it);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -224,7 +216,7 @@ Constructs an adapter object.
   
 ### Syntax  
   
-```  
+```cpp  
 collection_adapter();  
 collection_adapter(collection_adapter<Coll>% right);  
 collection_adapter(collection_adapter<Coll>^ right);  
@@ -232,10 +224,10 @@ collection_adapter(Coll^ collection);
 ```  
   
 #### Parameters  
- collection  
+ *collection*  
  BCL handle to wrap.  
   
- right  
+ *right*  
  Object to copy.  
   
 ### Remarks  
@@ -261,7 +253,7 @@ collection_adapter(Coll^ collection);
   
  `collection_adapter(Coll^ collection);`  
   
- initializes the stored handle with with `collection`.  
+ initializes the stored handle with `collection`.  
   
 ### Example  
   
@@ -301,7 +293,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -316,7 +307,7 @@ The types of a signed distance between two elements.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
@@ -367,7 +358,7 @@ Designates the end of the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator end();  
 ```  
   
@@ -411,7 +402,7 @@ The type of an iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T1 iterator;  
 ```  
   
@@ -443,7 +434,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -455,7 +445,7 @@ The type of a dictionary key.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Key key_type;  
 ```  
   
@@ -492,7 +482,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -504,7 +493,7 @@ The type of a dictionary value.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Value mapped_type;  
 ```  
   
@@ -541,7 +530,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -553,16 +541,16 @@ Replaces the stored BCL handle.
   
 ### Syntax  
   
-```  
+```cpp  
 collection_adapter<Coll>% operator=(collection_adapter<Coll>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Adapter to copy.  
   
 ### Remarks  
- The member operator copies `right` to the object, then returns `*this`. You use it to replace the stored BCL handle with a copy of the stored BCL handle in `right`.  
+ The member operator copies *right* to the object, then returns `*this`. You use it to replace the stored BCL handle with a copy of the stored BCL handle in *right*.  
   
 ### Example  
   
@@ -595,7 +583,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -608,7 +595,7 @@ The type of a reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
@@ -643,7 +630,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -655,7 +641,7 @@ Counts the number of elements.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
@@ -684,7 +670,6 @@ int main()
     System::Console::WriteLine("size() = {0}", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -697,7 +682,7 @@ The type of a signed distance between two element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
@@ -728,7 +713,6 @@ int main()
     System::Console::WriteLine("size() = {0}", size);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -741,16 +725,16 @@ Swaps the contents of two containers.
   
 ### Syntax  
   
-```  
+```cpp  
 void swap(collection_adapter<Coll>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container to swap contents with.  
   
 ### Remarks  
- The member function swaps the stored BCL handles between `*this` and `right`.  
+ The member function swaps the stored BCL handles between `*this` and *right*.  
   
 ### Example  
   
@@ -793,7 +777,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -808,12 +791,12 @@ The type of an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Value value_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Value`, if present in the specialization; otherwise it is a synonym for `System::Object^`.  
+ The type is a synonym for the template parameter *Value*, if present in the specialization; otherwise it is a synonym for `System::Object^`.  
   
 ### Example  
   
@@ -844,7 +827,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -856,19 +838,19 @@ Make a `range_adapter` from an iterator pair.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Iter>  
     range_adapter<Iter> make_collection(Iter first, Iter last);  
 ```  
   
 #### Parameters  
- `Iter`  
+ *Iter*  
  The type of the wrapped iterators.  
   
- `first`  
+ *first*  
  First iterator to wrap.  
   
- `last`  
+ *last*  
  Second iterator to wrap.  
   
 ### Remarks  
@@ -916,7 +898,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -932,7 +913,7 @@ A template class that wraps a pair of iterators that are used to implement sever
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Iter>  
     ref class range_adapter  
         :   public  
@@ -944,7 +925,7 @@ template<typename Iter>
 ```  
   
 #### Parameters  
- Iter  
+ *Iter*  
  The type associated with the wrapped iterators.  
   
 ### Members  
@@ -974,16 +955,16 @@ Replaces the stored iterator pair.
   
 ### Syntax  
   
-```  
+```cpp  
 range_adapter<Iter>% operator=(range_adapter<Iter>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Adapter to copy.  
   
 ### Remarks  
- The member operator copies `right` to the object, then returns `*this`. You use it to replace the stored iterator pair with a copy of the stored iterator pair in `right`.  
+ The member operator copies *right* to the object, then returns `*this`. You use it to replace the stored iterator pair with a copy of the stored iterator pair in *right*.  
   
 ### Example  
   
@@ -1016,7 +997,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1029,7 +1009,7 @@ Constructs an adapter object.
   
 ### Syntax  
   
-```  
+```cpp  
 range_adapter();  
 range_adapter(range_adapter<Iter>% right);  
 range_adapter(range_adapter<Iter>^ right);  
@@ -1037,13 +1017,13 @@ range_adapter(Iter first, Iter last);
 ```  
   
 #### Parameters  
- first  
+ *first*  
  First iterator to wrap.  
   
- last  
+ *last*  
  Second iterator to wrap.  
   
- right  
+ *right*  
  Object to copy.  
   
 ### Remarks  
@@ -1057,7 +1037,7 @@ range_adapter(Iter first, Iter last);
   
  `range_adapter(range_adapter<Iter>% right);`  
   
- initializes the stored iterator pair by copying the pair stored in `right`.  
+ initializes the stored iterator pair by copying the pair stored in *right*.  
   
  The constructor:  
   
@@ -1069,7 +1049,7 @@ range_adapter(Iter first, Iter last);
   
  `range_adapter(Iter^ first, last);`  
   
- initializes the stored iterator pair with `first` and `last`.  
+ initializes the stored iterator pair with *first* and *last*.  
   
 ### Example  
   
@@ -1111,7 +1091,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  

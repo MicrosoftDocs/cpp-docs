@@ -17,18 +17,18 @@ Inserts the interface ID specified by the current zeroth template parameter into
   
 ## Syntax  
   
-```  
+```cpp  
 __forceinline static void FillArrayWithIid(  
    unsigned long &index,  
    _In_ IID* iids  
 );  
 ```  
   
-#### Parameters  
- `index`  
- A zero-based index that indicates the starting array element for this operation. When this operation completes, `index` is incremented by 1.  
+### Parameters  
+ *index*  
+ A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.  
   
- `iids`  
+ *iids*  
  An array of type IID.  
   
 ## Remarks  

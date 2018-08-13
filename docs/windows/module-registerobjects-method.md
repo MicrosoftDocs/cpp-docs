@@ -17,17 +17,17 @@ Registers COM or Windows Runtime objects so other applications can connect to th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RegisterObjects(  
    ModuleBase* module,   
    const wchar_t* serverName);  
 ```  
   
-#### Parameters  
- `module`  
+### Parameters  
+ *module*  
  An array of COM or Windows Runtime objects.  
   
- `serverName`  
+ *serverName*  
  Name of the server that created the objects.  
   
 ## Return Value  

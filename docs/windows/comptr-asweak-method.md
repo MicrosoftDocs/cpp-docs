@@ -17,14 +17,14 @@ Retrieves a weak reference to the current object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AsWeak(  
    _Out_ WeakRef* pWeakRef  
 );  
 ```  
   
-#### Parameters  
- `pWeakRef`  
+### Parameters  
+ *pWeakRef*  
  When this operation completes, a pointer to a weak reference object.  
   
 ## Return Value  

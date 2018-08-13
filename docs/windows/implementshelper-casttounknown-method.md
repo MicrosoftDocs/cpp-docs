@@ -17,15 +17,15 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 IUnknown* CastToUnknown();  
 ```  
   
 ## Return Value  
- Pointer to the underlying IUnknown interface.  
+ Pointer to the underlying `IUnknown` interface.  
   
 ## Remarks  
- Gets a pointer to the underlying IUnknown interface for the current Implements structure.  
+ Gets a pointer to the underlying `IUnknown` interface for the current `Implements` structure.  
   
 ## Requirements  
  **Header:** implements.h  

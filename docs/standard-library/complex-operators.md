@@ -156,7 +156,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="op_star"></a>  operator*
+## <a name="op_star"></a>  operator\*
 
 Multiplies two complex numbers, one or both of which may belong to the subset of the type for the real and imaginary parts.
 
@@ -181,10 +181,10 @@ complex<Type> operator*(
 ### Parameters
 
 *left*
- The first of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the * operation.
+ The first of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the \* operation.
 
 *right*
- The second of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the * operation.
+ The second of two complex numbers or a number that is of the parameter type for a complex number that is to be multiplied by the \* operation.
 
 ### Return Value
 

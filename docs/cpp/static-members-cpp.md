@@ -67,5 +67,5 @@ long nBytes = Console.bytecount;
   
  The type of a static member is not qualified by its class name. Therefore, the type of `BufferedOutput::bytecount` is **long**.  
   
-## See Also  
+## See also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)

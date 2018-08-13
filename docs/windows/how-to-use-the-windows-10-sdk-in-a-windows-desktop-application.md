@@ -1,7 +1,7 @@
 ---
 title: "How to: Use the Windows 10 SDK in a Windows Desktop Application | Microsoft Docs"
 ms.custom: "get-started-article"
-ms.date: "04/19/2018"
+ms.date: "07/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -11,7 +11,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Use the Windows 10 SDK in a Windows Desktop Application
-When you create a classic Windows desktop project in Visual Studio 2017, it is set up by default to build with the version of the Windows 10 SDK that was installed when the C++ Desktop workload was installed or last updated. This version of the Windows SDK is compatible with all recent Windows releases. If you want to target an earlier version of the SDK, you can open Project | Properties and choose from the other SDK versions available in the Windows SDK Version dropdown.  
+When you create a classic Windows desktop project in Visual Studio 2017, it is set up by default to build with the version of the Windows 10 SDK that was installed when the C++ Desktop workload was installed or last updated. This version of the Windows SDK is compatible with Windows 7 and later. See [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers) for more information about targeting specific versions of Windows.
+
+If you want to target an earlier version of the SDK, you can open **Project | Properties** and choose from the other SDK versions available in the Windows SDK Version dropdown.
   
  Starting with Visual Studio 2015 and the Windows 10 SDK, the CRT library was separated into two parts, one (ucrtbase) that contains the functions that are acceptable to be used in Universal Windows Apps, and one that contains everything else (vcruntime140). Since the Windows 10 SDK contains new functions, such as many C99 functions, you need to follow these steps in order to use those functions. See [CRT Library Features](../c-runtime-library/crt-library-features.md).  
   
@@ -19,7 +21,6 @@ When you create a classic Windows desktop project in Visual Studio 2017, it is s
   
 1.  Make sure the Windows 10 SDK is installed. The Windows 10 SDK is installed as part of the **Desktop development with C++** workload. A standalone version is available at [Downloads and tools for Windows 10](https://developer.microsoft.com/windows/downloads).
 
-  
 2.  Open the shortcut menu for the project node, and choose **Retarget SDK Version**.  
   
      ![Retarget SDK Version](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")  
@@ -40,7 +41,7 @@ When you create a classic Windows desktop project in Visual Studio 2017, it is s
   
      ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")  
   
-     This action changes the values of project macros that include paths to header files and library files. To see what changed, in the Visual C++ Directories section of the Project Properties dialog, choose one of the properties such as the Include Directories, choose to open the dropdown list, and choose \<Edit>. The **Include Directories** dialog appears.  
+     This action changes the values of project macros that include paths to header files and library files. To see what changed, in the **Visual C++ Directories** section of the **Project Properties** dialog, choose one of the properties such as the **Include Directories**, choose to open the dropdown list, and choose \<Edit>. The **Include Directories** dialog appears.  
   
      ![Include Directories dialog box](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")  
   
@@ -54,7 +55,7 @@ When you create a classic Windows desktop project in Visual Studio 2017, it is s
   
 1.  Open the shortcut menu for the project node, and choose **Retarget SDK Version**.  
   
-2.  In the Target Platform Version dropdown list, choose 8.1.  
+2.  In the **Target Platform Version** dropdown list, choose **8.1**.  
   
 ## See Also  
  [Windows Desktop Applications (Visual C++)](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)

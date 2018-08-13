@@ -49,7 +49,7 @@ A pointer to an integer to store a value that has the sign and approximate magni
 
 ## Remarks
 
-The **remquo** function calculates the floating-point remainder *f* of *x* / *y* such that *x* = *i* * *y* + *f*, where *i* is an integer, *f* has the same sign as *x*, and the absolute value of *f* is less than the absolute value of *y*.
+The **remquo** function calculates the floating-point remainder *f* of *x* / *y* such that *x* = *i* \* *y* + *f*, where *i* is an integer, *f* has the same sign as *x*, and the absolute value of *f* is less than the absolute value of *y*.
 
 C++ allows overloading, so you can call overloads of **remquo** that take and return **float** or **long** **double** values. In a C program, **remquo** always takes two **double** arguments and returns a **double**.
 

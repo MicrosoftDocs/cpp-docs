@@ -29,19 +29,18 @@ using namespace default;
    Platform::String^ MyString1 = "The quick brown fox";  
    String^ MyString2 = "jumped over the lazy dog.";  
    String^ MyString3 = "Hello, world!";  
-  
 ```  
   
 ### Remarks  
- For more information and examples about strings, see [Platform::String, std::wstring, and Literals (Platform)](http://msdn.microsoft.com/en-us/ec92fbc6-edf3-4137-a85e-8e29bdb857a8)  
+ For more information and examples about strings, see [Platform::String, std::wstring, and Literals (Platform)](http://msdn.microsoft.com/ec92fbc6-edf3-4137-a85e-8e29bdb857a8)  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
- This topic discusses how the Visual C++ compiler processes string literals when you run it by using the **/clr** compiler option. To use **/clr**, you must also use the common language runtime (CLR), C++/CLI syntax and managed objects. For more information about **/clr**, see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md).  
+ This topic discusses how the Visual C++ compiler processes string literals when you run it by using the `/clr` compiler option. To use `/clr`, you must also use the common language runtime (CLR), C++/CLI syntax and managed objects. For more information about `/clr`, see [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md).  
   
- When compiling with **/clr**, the compiler will convert string literals to strings of type <xref:System.String>. To preserve backward compatibility with existing code there are two exceptions to this:  
+ When compiling with `/clr`, the compiler will convert string literals to strings of type <xref:System.String>. To preserve backward compatibility with existing code there are two exceptions to this:  
   
 -   Exception handling. When a string literal is thrown, the compiler will catch it as a string literal.  
   
@@ -66,7 +65,6 @@ using namespace default;
  Compiler option: **/clr**  
   
 ### Examples  
- **Example**  
   
  The following code example demonstrates concatenating and comparing strings.  
   
@@ -125,8 +123,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 abcdef  
   
@@ -156,8 +152,6 @@ abc
   
 n is empty  
 ```  
-  
- **Example**  
   
  The following sample shows that you can overload the compiler-provided operators, and that the compiler will find a function overload based on the <xref:System.String> type.  
   
@@ -205,8 +199,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 overloaded +(String ^ a, String ^ b)   
   
@@ -218,8 +210,6 @@ String ^ a
   
 const char * a  
 ```  
-  
- **Example**  
   
  The following sample shows that the compiler distinguishes between native strings and <xref:System.String> strings.  
   
@@ -259,8 +249,6 @@ int main() {
    func3("string" + "string");   // returns System::String  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 char *  

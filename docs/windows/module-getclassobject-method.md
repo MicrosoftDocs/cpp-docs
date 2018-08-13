@@ -17,7 +17,7 @@ Retreives a cache of class factories.
   
 ## Syntax  
   
-```  
+```cpp  
  HRESULT GetClassObject(  
    REFCLSID clsid,  
    REFIID riid,  
@@ -26,23 +26,23 @@ Retreives a cache of class factories.
 );  
 ```  
   
-#### Parameters  
- `clsid`  
+### Parameters  
+ *clsid*  
  Class ID.  
   
- `riid`  
+ *riid*  
  Interface ID that you request.  
   
- `ppv`  
+ *ppv*  
  Pointer to returned object.  
   
- `serverName`  
- The server name that is specified in either the `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, or `ActivatableClass` macro; or `nullptr` to get the default server name.  
+ *serverName*  
+ The server name that is specified in either the `ActivatableClassWithFactory`, `ActivatableClassWithFactoryEx`, or `ActivatableClass` macro; or **nullptr** to get the default server name.  
   
 ## Return Value  
   
 ## Remarks  
- Use this method only for COM, not the Windows Runtime. This method exposes only IClassFactory methods.  
+ Use this method only for COM, not the Windows Runtime. This method exposes only `IClassFactory` methods.  
   
 ## Requirements  
  **Header:** module.h  

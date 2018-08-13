@@ -18,7 +18,6 @@ A compound statement consists of zero or more statements enclosed in curly brace
 ## Syntax  
   
 ```  
-  
 { [ statement-list ] }  
 ```  
   
@@ -40,5 +39,5 @@ else
 > [!NOTE]
 >  Because a declaration is a statement, a declaration can be one of the statements in the *statement-list*. As a result, names declared inside a compound statement, but not explicitly declared as static, have local scope and (for objects) lifetime. See [Scope](../cpp/scope-visual-cpp.md) for details about treatment of names with local scope.  
   
-## See Also  
+## See also  
  [Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)

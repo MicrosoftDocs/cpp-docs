@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::GetAddressOf Method
-Retrieves the address of the [ptr_](../windows/comptr-ptr-data-member.md) data member, which contains a pointer to the interface represented by this ComPtr.  
+Retrieves the address of the [ptr_](../windows/comptr-ptr-data-member.md) data member, which contains a pointer to the interface represented by this **ComPtr**.  
   
 ## Syntax  
   
-```  
+```cpp  
 T* const* GetAddressOf() const;  
 T** GetAddressOf();  
 ```  

@@ -4,9 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["IDBPropertiesImpl", "ATL.IDBPropertiesImpl", "ATL.IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl"]
+f1_keywords: ["IDBPropertiesImpl", "ATL.IDBPropertiesImpl", "ATL.IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl<T>", "ATL::IDBPropertiesImpl", "IDBPropertiesImpl::GetProperties", "IDBPropertiesImpl.GetProperties", "GetProperties", "IDBPropertiesImpl::GetPropertyInfo", "IDBPropertiesImpl.GetPropertyInfo", "GetPropertyInfo", "IDBPropertiesImpl.SetProperties", "SetProperties", "IDBPropertiesImpl::SetProperties"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IDBPropertiesImpl class"]
+helpviewer_keywords: ["IDBPropertiesImpl class", "GetProperties method", "GetPropertyInfo method", "SetProperties method"]
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
 author: "mikeblome"
 ms.author: "mblome"
@@ -23,9 +23,12 @@ class ATL_NO_VTABLE IDBPropertiesImpl
    : public IDBProperties, public CUtlProps<T>  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  Your class, derived from `IDBPropertiesImpl`.  
+
+## Requirements  
+ **Header:** atldb.h  
   
 ## Members  
   
@@ -33,15 +36,81 @@ class ATL_NO_VTABLE IDBPropertiesImpl
   
 |||  
 |-|-|  
-|[GetProperties](../../data/oledb/idbpropertiesimpl-getproperties.md)|Returns the values of properties in the Data Source, Data Source Information, and Initialization property groups that are currently set on the data source object or the values of properties in the Initialization property group that are currently set on the enumerator.|  
-|[GetPropertyInfo](../../data/oledb/idbpropertiesimpl-getpropertyinfo.md)|Returns information about all properties supported by the provider.|  
-|[SetProperties](../../data/oledb/idbpropertiesimpl-setproperties.md)|Sets properties in the Data Source and Initialization property groups, for data source objects, or the Initialization property group, for enumerators.|  
+|[GetProperties](#getproperties)|Returns the values of properties in the Data Source, Data Source Information, and Initialization property groups that are currently set on the data source object or the values of properties in the Initialization property group that are currently set on the enumerator.|  
+|[GetPropertyInfo](#getpropertyinfo)|Returns information about all properties supported by the provider.|  
+|[SetProperties](#setproperties)|Sets properties in the Data Source and Initialization property groups, for data source objects, or the Initialization property group, for enumerators.|  
   
 ## Remarks  
- [IDBProperties](https://msdn.microsoft.com/en-us/library/ms719607.aspx) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](https://msdn.microsoft.com/en-us/library/ms713706.aspx), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
+ [IDBProperties](https://msdn.microsoft.com/library/ms719607.aspx) is a mandatory interface for data source objects and an optional interface for enumerators. However, if an enumerator exposes [IDBInitialize](https://msdn.microsoft.com/library/ms713706.aspx), it must expose `IDBProperties`. `IDBPropertiesImpl` implements `IDBProperties` by using a static function defined by [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
+
+## <a name="getproperties"></a> IDBPropertiesImpl::GetProperties
+Returns the values of properties in the Data Source, Data Source Information, and Initialization property groups that are currently set on the data source object or the values of properties in the Initialization property group that are currently set on the enumerator.  
   
-## Requirements  
- **Header:** atldb.h  
+### Syntax  
+  
+```cpp
+STDMETHOD(GetProperties)(ULONG cPropertySets,   
+   const DBPROPIDSET rgPropertySets[],   
+   ULONG * pcProperties,   
+   DBPROPSET ** prgProperties);  
+```  
+  
+#### Parameters  
+ See [IDBProperties::GetProperties](https://msdn.microsoft.com/library/ms714344.aspx) in the *OLE DB Programmer's Reference*.  
+  
+ Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetProperties`:  
+  
+|OLE DB Template parameters|*OLE DB Programmer's Reference* parameters|  
+|--------------------------------|------------------------------------------------|  
+|*cPropertySets*|*cPropertyIDSets*|  
+|*rgPropertySets*|*rgPropertyIDSets*|  
+|*pcProperties*|*pcPropertySets*|  
+|*prgProperties*|*prgPropertySets*|  
+  
+### Remarks  
+ If the provider is initialized, this method returns the values of properties in the DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINIT property groups that are currently set on the data source object. If the provider is not initialized, it returns DBPROPSET_DBINIT group properties only. 
+  
+## <a name="getpropertyinfo"></a> IDBPropertiesImpl::GetPropertyInfo
+Returns property information supported by the data source.  
+  
+### Syntax  
+  
+```cpp
+STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,   
+   const DBPROPIDSET rgPropertySets[],   
+   ULONG * pcPropertyInfoSets,   
+   DBPROPINFOSET ** prgPropertyInfoSets,   
+   OLECHAR ** ppDescBuffer);  
+```  
+  
+#### Parameters  
+ See [IDBProperties::GetPropertyInfo](https://msdn.microsoft.com/library/ms718175.aspx) in the *OLE DB Programmer's Reference*.  
+  
+ Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IDBProperties::GetPropertyInfo`:  
+  
+|OLE DB Template parameters|*OLE DB Programmer's Reference* parameters|  
+|--------------------------------|------------------------------------------------|  
+|*cPropertySets*|*cPropertyIDSets*|  
+|*rgPropertySets*|*rgPropertyIDSets*|  
+  
+### Remarks  
+ Uses [IDBInitializeImpl::m_pCUtlPropInfo](../../data/oledb/idbinitializeimpl-m-pcutlpropinfo.md) to implement this functionality. 
+
+## <a name="setproperties"></a> IDBPropertiesImpl::SetProperties
+Sets properties in the Data Source and Initialization property groups, for data source objects, or the Initialization property group, for enumerators.  
+  
+### Syntax  
+  
+```cpp
+STDMETHOD(SetProperties)(ULONG cPropertySets,   
+   DBPROPSET rgPropertySets[]);  
+```  
+  
+#### Parameters  
+ See [IDBProperties::SetProperties](https://msdn.microsoft.com/library/ms723049.aspx) in the *OLE DB Programmer's Reference*.  
+  
+### Remarks  
+ If the provider is initialized, this method sets the values of properties in the DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINIT property groups for the data source object. If the provider is not initialized, it sets DBPROPSET_DBINIT group properties only.  
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   

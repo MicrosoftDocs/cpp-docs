@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template<  
    typename I0  
 >  
@@ -29,12 +29,12 @@ template<>
 struct __declspec(novtable) InterfaceTraits<Nil>;  
 ```  
   
-#### Parameters  
- `I0`  
+### Parameters  
+ *I0*  
  The name of an interface.  
   
- `CloakedType`  
- For RuntimeClass, Implements and ChainInterfaces, an interface that won't be in the list of supported interface IDs.  
+ *CloakedType*  
+ For `RuntimeClass`, `Implements` and `ChainInterfaces`, an interface that won't be in the list of supported interface IDs.  
   
 ## Remarks  
  Implements common characteristics of an interface.  
@@ -47,7 +47,7 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
   
 |Name|Description|  
 |----------|-----------------|  
-|`Base`|A synonym for the `I0` template parameter.|  
+|`Base`|A synonym for the *I0* template parameter.|  
   
 ### Public Methods  
   
@@ -55,15 +55,15 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
 |----------|-----------------|  
 |[InterfaceTraits::CanCastTo Method](../windows/interfacetraits-cancastto-method.md)|Indicates whether the specified pointer can be cast to a pointer to `Base`.|  
 |[InterfaceTraits::CastToBase Method](../windows/interfacetraits-casttobase-method.md)|Casts the specified pointer to a pointer to `Base`.|  
-|[InterfaceTraits::CastToUnknown Method](../windows/interfacetraits-casttounknown-method.md)|Casts the specified pointer to a pointer to IUnknown.|  
+|[InterfaceTraits::CastToUnknown Method](../windows/interfacetraits-casttounknown-method.md)|Casts the specified pointer to a pointer to `IUnknown`.|  
 |[InterfaceTraits::FillArrayWithIid Method](../windows/interfacetraits-fillarraywithiid-method.md)|Assigns the interface ID of `Base` to the array element specified by the index argument.|  
-|[InterfaceTraits::Verify Method](../windows/interfacetraits-verify-method.md)|Verifies that Base is properly derived.|  
+|[InterfaceTraits::Verify Method](../windows/interfacetraits-verify-method.md)|Verifies that `Base` is properly derived.|  
   
 ### Public Constants  
   
 |Name|Description|  
 |----------|-----------------|  
-|[InterfaceTraits::IidCount Constant](../windows/interfacetraits-iidcount-constant.md)|Holds the number of interface IDs associated with the current InterfaceTraits object.|  
+|[InterfaceTraits::IidCount Constant](../windows/interfacetraits-iidcount-constant.md)|Holds the number of interface IDs associated with the current **InterfaceTraits** object.|  
   
 ## Inheritance Hierarchy  
  `InterfaceTraits`  

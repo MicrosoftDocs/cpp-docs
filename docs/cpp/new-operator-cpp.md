@@ -245,7 +245,7 @@ T *TObject =::new TObject;
   
  The scope-resolution operator (`::`) forces use of the global **new** operator.  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [new and delete operators](../cpp/new-and-delete-operators.md)

@@ -17,14 +17,13 @@ Specify the size of memory allocated for sized pointers, sized pointers to sized
   
 ## Syntax  
   
-```  
-  
-      [ size_is(  
+```cpp  
+[ size_is(  
    "expression"  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *expression*  
  The size of memory allocated for sized pointers.  
   
@@ -40,10 +39,10 @@ Specify the size of memory allocated for sized pointers, sized pointers to sized
   
 |||  
 |-|-|  
-|**Applies to**|Field in `struct` or **union**, interface parameter, interface method|  
+|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
-|**Invalid attributes**|**max_is**|  
+|**Invalid attributes**|`max_is`|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
@@ -54,4 +53,4 @@ Specify the size of memory allocated for sized pointers, sized pointers to sized
  [first_is](../windows/first-is.md)   
  [last_is](../windows/last-is.md)   
  [max_is](../windows/max-is.md)   
- [length_is](../windows/length-is.md)   
+ [length_is](../windows/length-is.md)   

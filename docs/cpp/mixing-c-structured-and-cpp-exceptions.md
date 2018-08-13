@@ -32,5 +32,5 @@ If you want to write more portable code, using structured exception handling in 
   
 -   [Differences between SEH and C++ EH](../cpp/exception-handling-differences.md)  
   
-## See Also  
+## See also  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)

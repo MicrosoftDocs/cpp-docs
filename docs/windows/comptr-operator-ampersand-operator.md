@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator&amp; Operator
-Releases the interface associated with this `ComPtr` object and then retrieves the address of the `ComPtr` object.  
+Releases the interface associated with this **ComPtr** object and then retrieves the address of the **ComPtr** object.  
   
 ## Syntax  
   
@@ -24,7 +24,7 @@ const Details::ComPtrRef<const WeakRef> operator&() const
 ```  
   
 ## Return Value  
- A weak reference to the current `ComPtr`.  
+ A weak reference to the current **ComPtr**.  
   
 ## Remarks  
  This method differs from [ComPtr::GetAddressOf](../windows/comptr-getaddressof-method.md) in that this method releases a reference to the interface pointer. Use `ComPtr::GetAddressOf` when you require the address of the interface pointer but do not want to release that interface.  

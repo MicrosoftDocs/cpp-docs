@@ -13,13 +13,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # partial  (C++ Component Extensions)
-The `partial` keyword enables different parts of the same ref class to be authored independently and in different files.  
+The **partial** keyword enables different parts of the same ref class to be authored independently and in different files.  
   
 ## All Runtimes  
  (This language feature applies only to the Windows Runtime.)  
   
 ## Windows Runtime  
- For a ref class that has two partial definitions, the `partial` keyword is applied to the first occurrence of the definition, and this is typically done by auto-generated code, so that a human coder doesn’t use the keyword very often. For all subsequent partial definitions of the class, omit the `partial` modifier from the *class-key* keyword and class identifier. When the compiler encounters a previously defined ref class and class identifier but no `partial` keyword, it internally combines all of the parts of the ref class definition into one definition.  
+ For a ref class that has two partial definitions, the **partial** keyword is applied to the first occurrence of the definition, and this is typically done by auto-generated code, so that a human coder doesn’t use the keyword very often. For all subsequent partial definitions of the class, omit the **partial** modifier from the *class-key* keyword and class identifier. When the compiler encounters a previously defined ref class and class identifier but no **partial** keyword, it internally combines all of the parts of the ref class definition into one definition.  
   
 ### Syntax  
   
@@ -37,15 +37,15 @@ class-key identifier {
   
 ### Parameters  
  *class-key*  
- A keyword that declares a class or struct that is supported by the Windows Runtime. Either `ref class`, `value class`, `ref struct`, or `value struct`.  
+ A keyword that declares a class or struct that is supported by the Windows Runtime. Either **ref class**, **value class**, **ref struct**, or **value struct**.  
   
  *identifier*  
  The name of the defined type.  
   
 ### Remarks  
- A partial class supports scenarios where you modify one part of a class definition in one file, and automatic code-generating software—for example, the XAML designer—modifies code in the same class in another file. By using a partial class, you can prevent the automatic code generator from overwriting your code. In a Visual Studio project, the `partial` modifier is applied automatically to the generated file.  
+ A partial class supports scenarios where you modify one part of a class definition in one file, and automatic code-generating software—for example, the XAML designer—modifies code in the same class in another file. By using a partial class, you can prevent the automatic code generator from overwriting your code. In a Visual Studio project, the **partial** modifier is applied automatically to the generated file.  
   
- Contents: With two exceptions, a partial class definition can contain anything that the full class definition could contain if the `partial` keyword was omitted. However, you can't specify class accessibility (for example, `public partial class X { ... };`),  or a `declspec`.  
+ Contents: With two exceptions, a partial class definition can contain anything that the full class definition could contain if the **partial** keyword was omitted. However, you can't specify class accessibility (for example, `public partial class X { ... };`),  or a **declspec**.  
   
  Access specifiers used in a partial class definition for *identifier* do not affect the default accessibility in a subsequent partial or full class definition for *identifier*. Inline definitions of static data members are allowed.  
   
@@ -59,10 +59,10 @@ class-key identifier {
   
  Generics: A partial class can be a generic if the full definition could be generic. But every partial and full class must have exactly the same generic parameters, including formal parameter names.  
   
- For more information about how to use the `partial` keyword, see [Partial Classes (C++/CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023).  
+ For more information about how to use the **partial** keyword, see [Partial Classes (C++/CX)](http://go.microsoft.com/fwlink/p/?LinkId=249023).  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
  (This language feature does not apply to the Common Language Runtime.)  

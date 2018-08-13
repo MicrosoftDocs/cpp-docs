@@ -27,8 +27,7 @@ auto declarator initializer;
   
 -   [auto](../cpp/auto-cpp.md) describes the new definition of the **auto** keyword.  
   
-  
 -   [/Zc:auto (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md) describes the compiler option that tells the compiler which definition of the **auto** keyword to use.  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

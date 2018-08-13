@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::~SRWLock Destructor
-Deinitializes an instance of the SRWLock class.  
+Deinitializes an instance of the **SRWLock** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 ~SRWLock();  
 ```  
   

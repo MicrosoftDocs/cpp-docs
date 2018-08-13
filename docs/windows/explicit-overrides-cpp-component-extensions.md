@@ -15,16 +15,14 @@ ms.workload: ["cplusplus", "uwp"]
 This topic discusses how to explicitly override a member of a base class or interface. A named (explicit) override should only be used to override a method with a derived method that has a different name.  
   
 ## All Runtimes  
- **Syntax**  
+### Syntax
   
-```  
-  
-      overriding-function-declarator = type::function [,type::function] { overriding-function-definition }  
+```cpp  
+overriding-function-declarator = type::function [,type::function] { overriding-function-definition }  
 overriding-function-declarator = function { overriding-function-definition }  
 ```  
-  
- **Parameters**  
-  
+
+### Parameters 
  *overriding-function-declarator*  
  The return type, name, and argument list of the overriding function.  Note that the overriding function does not have to have the same name as the function being overridden.  
   
@@ -37,7 +35,7 @@ overriding-function-declarator = function { overriding-function-definition }
  *overriding-function-definition*  
  The function body statements that define the overriding function.  
   
- **Remarks**  
+### Remarks
   
  Use explicit overrides to create an alias for a method signature, or to provide different implementations for methods witht the same signature.  
   
@@ -46,22 +44,21 @@ overriding-function-declarator = function { overriding-function-definition }
 ## Windows Runtime  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- **Remarks**  
+### Remarks
   
- For information about explicit overrides in native code or code compiled with **/clr:oldSyntax**, see [Explicit Overrides](../cpp/explicit-overrides-cpp.md).  
+ For information about explicit overrides in native code or code compiled with `/clr:oldSyntax`, see [Explicit Overrides](../cpp/explicit-overrides-cpp.md).  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
-### Examples  
- **Example**  
+### Examples   
   
  The following code example shows a simple, implicit override and implementation of a member in a base interface, not using explicit overrides.  
   
-```  
+```cpp  
 // explicit_override_1.cpp  
 // compile with: /clr  
 interface struct I1 {  
@@ -81,18 +78,13 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 X::f override of I1::f  
 ```  
   
- **Example**  
-  
  The following code example shows how to implement all interface members with a common signature, using explicit override syntax.  
   
-```  
-  
+```cpp  
 // explicit_override_2.cpp  
 // compile with: /clr  
 interface struct I1 {  
@@ -117,18 +109,14 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 X::f override of I1::f and I2::f  
 X::f override of I1::f and I2::f  
 ```  
   
- **Example**  
-  
  The following code example shows how a function override can have a different name from the function it is implementing.  
   
-```  
+```cpp  
 // explicit_override_3.cpp  
 // compile with: /clr  
 interface struct I1 {  
@@ -148,17 +136,13 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 X::g  
 ```  
   
- **Example**  
-  
  The following code example shows an explicit interface implementation that implements a type safe collection.  
   
-```  
+```cpp  
 // explicit_override_4.cpp  
 // compile with: /clr /LD  
 using namespace System;  

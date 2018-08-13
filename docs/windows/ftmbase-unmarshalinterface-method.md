@@ -17,7 +17,7 @@ Initializes a newly created proxy and returns an interface pointer to that proxy
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHODIMP UnmarshalInterface(  
    __in IStream *pStm,  
    __in REFIID riid,  
@@ -25,15 +25,15 @@ STDMETHODIMP UnmarshalInterface(
 ) override;  
 ```  
   
-#### Parameters  
- `pStm`  
+### Parameters  
+ *pStm*  
  Pointer to the stream from which the interface pointer is to be unmarshaled.  
   
- `riid`  
+ *riid*  
  Reference to the identifier of the interface to be unmarshaled.  
   
- `ppv`  
- When this operation completes, the address of a pointer variable that receives the interface pointer requested in `riid`. If this operation is successful, *`ppv` contains the requested interface pointer of the interface to be unmarshaled.  
+ *ppv*  
+ When this operation completes, the address of a pointer variable that receives the interface pointer requested in *riid*. If this operation is successful, **ppv* contains the requested interface pointer of the interface to be unmarshaled.  
   
 ## Return Value  
  S_OK if successful; otherwise, E_NOINTERFACE or E_FAIL.  

@@ -59,5 +59,5 @@ catch( CExcptClass E )
   
  In this example, the ellipsis **catch** handler is the only handler that is examined.  
   
-## See Also  
+## See also  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)

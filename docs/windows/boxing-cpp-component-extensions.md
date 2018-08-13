@@ -20,24 +20,21 @@ The Visual C++ compiler can convert value types to objects in a process called *
 ## Windows Runtime  
  C++/CX supports a shorthand syntax for boxing value types and unboxing reference types. A value type is boxed when it is assigned to a variable of type `Object`. An `Object` variable is unboxed when it is assigned to a value type variable and the unboxed type is specified in parentheses; that is, when the object variable is cast to a value type.  
   
-```  
-  
+```cpp  
   Platform::Object^  
   object_variable  = value_variable;  
 value_variable = (value_type) object_variable;  
-  
 ```  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ### Examples  
- The following code example boxes and unboxes a `DateTime` value. First, the example obtains a DateTime value that represents the current date and time and assigns it to a DateTime variable. Then the DateTime is boxed by assigning it to an Object variable. Finally, the boxed value is unboxed by assigning it to another DateTime variable.  
+ The following code example boxes and unboxes a `DateTime` value. First, the example obtains a `DateTime` value that represents the current date and time and assigns it to a `DateTime` variable. Then the `DateTime` is boxed by assigning it to an `Object` variable. Finally, the boxed value is unboxed by assigning it to another `DateTime` variable.  
   
- To test the example, create a BlankApplication project, replace the BlankPage::OnNavigatedTo() method, and then specify breakpoints at the closing bracket and the assignment to variable str1. When the example reaches the closing bracket, examine str1.  
+ To test the example, create a `BlankApplication` project, replace the `BlankPage::OnNavigatedTo()` method, and then specify breakpoints at the closing bracket and the assignment to variable `str1`. When the example reaches the closing bracket, examine `str1`.  
   
-```  
-  
+```cpp  
 void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)  
 {  
     using namespace Windows::Globalization::DateTimeFormatting;  
@@ -67,13 +64,12 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
     String^ str2 = dtf->Format(dtAnother);  
     OutputDebugString(str2->Data());  
 }  
-  
 ```  
   
  For more information, see [Boxing (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh969554.aspx).  
   
 ## Common Language Runtime  
- The Visual C++ compiler now boxes value types to <xref:System.Object>.  This is possible because of a compiler-defined conversion to convert value types to <xref:System.Object>.  
+ The Visual C++ compiler now boxes value types to <xref:System.Object>. This is possible because of a compiler-defined conversion to convert value types to <xref:System.Object>.  
   
  Boxing and unboxing enable value types to be treated as objects. Value types, including both struct types and built-in types such as int, can be converted to and from the type <xref:System.Object>.  
   
@@ -88,10 +84,9 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
 -   [Standard Conversions and Implicit Boxing](../dotnet/standard-conversions-and-implicit-boxing.md)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
  The following sample shows how implicit boxing works.  
   
@@ -164,8 +159,6 @@ int main() {
    func2((V2^)v2);   // Using explicit boxing: calls func2(System::ValueType^)  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 1  

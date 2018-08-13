@@ -18,7 +18,6 @@ The **class** keyword declares a class type or defines an object of a class type
 ## Syntax  
   
 ```  
-  
 [template-spec]  
 class [ms-decl-spec] [tag [: base-list ]]  
 {  
@@ -137,6 +136,6 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)

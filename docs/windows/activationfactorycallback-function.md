@@ -17,19 +17,19 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(  
    HSTRING activationId,  
    IActivationFactory **ppFactory  
 );  
 ```  
   
-#### Parameters  
- `activationId`  
+### Parameters  
+ *activationId*  
  Handle to a string that specifies a runtime class name.  
   
- `ppFactory`  
- When this operation completes, an activation factory that corresponds to  parameter `activationId`.  
+ *ppFactory*  
+ When this operation completes, an activation factory that corresponds to  parameter *activationId*.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that describes the failure. Likely failure HRESULTs are CLASS_E_CLASSNOTAVAILABLE and E_INVALIDARG.  

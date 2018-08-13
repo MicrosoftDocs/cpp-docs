@@ -30,7 +30,7 @@ Creates a binary that can be executed in the Windows kernel.
 ## Remarks  
  There is no `#pragma` equivalent to control this option.  
   
- Specifying the **/kernel** option tells the compiler and linker to arbitrate which language features are permissible in kernel mode and to make sure that that you have sufficient expressive power to avoid runtime instability that is unique to kernel mode C++. This is accomplished by prohibiting the use of C++ language features that are disruptive in kernel mode and by providing warnings for C++ language features that are potentially disruptive but cannot be disabled.  
+ Specifying the **/kernel** option tells the compiler and linker to arbitrate which language features are permissible in kernel mode and to make sure that you have sufficient expressive power to avoid runtime instability that is unique to kernel mode C++. This is accomplished by prohibiting the use of C++ language features that are disruptive in kernel mode and by providing warnings for C++ language features that are potentially disruptive but cannot be disabled.  
   
  The **/kernel** option applies to both the compiler and linker phases of a build and is set at the project level. Pass the **/kernel** switch to indicate to the compiler that the resulting binary, after linking, should be loaded into the Windows kernel. The compiler will narrow the spectrum of C++ language features to a subset that is compatible with the kernel.  
   

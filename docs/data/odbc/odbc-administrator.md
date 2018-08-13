@@ -28,7 +28,7 @@ ODBC Administrator registers and configures the [data sources](../../data/odbc/d
   
      The opening dialog box in the Setup program is appears.  
   
-2.  Click **Next** on each dialog box until you reach the **Installation Options** dialog box. Select **Custom**, and then click `Next`.  
+2.  Click **Next** on each dialog box until you reach the **Installation Options** dialog box. Select **Custom**, and then click **Next**.  
   
 3.  Clear all the check boxes in the **Microsoft Visual C++ Setup** dialog box except the **Database Options** check box, and then click **Details** to display the **Database Options** dialog box.  
   

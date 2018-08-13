@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 ~SyncLockT();  
 ```  
   
 ## Remarks  
- Deinitializes an instance of the SyncLockT class.  
+ Deinitializes an instance of the **SyncLockT** class.  
   
- This destructor also unlocks the current SyncLockT instance.  
+ This destructor also unlocks the current **SyncLockT** instance.  
   
 ## Requirements  
  **Header:** corewrappers.h  

@@ -17,7 +17,7 @@ Determines whether one number is less than another.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeLessThan (  
    const T t,  
@@ -25,25 +25,25 @@ inline bool SafeLessThan (
 ) throw ();  
 ```  
   
-#### Parameters  
- [in] `t`  
- The first number. This must be of type T.  
+### Parameters  
+ [in] *t*  
+ The first number. This must be of type `T`.  
   
- [in] `u`  
- The second numer. This must be of type U.  
+ [in] *u*  
+ The second numer. This must be of type `U`.  
   
 ## Return Value  
- `true` if `t` is less than `u`; otherwise `false`.  
+ **true** if *t* is less than *u*; otherwise **false**.  
   
 ## Remarks  
- This method enhances the standard comparison operator because `SafeLessThan` enables you to compare two different types of number.  
+ This method enhances the standard comparison operator because **SafeLessThan** enables you to compare two different types of number.  
   
  This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single comparison operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  
   
 > [!NOTE]
 >  This method should only be used when a single mathematical operation must be protected. If there are multiple operations, you should use the `SafeInt` class rather than calling the individual stand-alone functions.  
   
- For more information about the template types T and U, see [SafeInt Functions](../windows/safeint-functions.md).  
+ For more information about the template types `T` and `U`, see [SafeInt Functions](../windows/safeint-functions.md).  
   
 ## Requirements  
  **Header:** safeint.h  

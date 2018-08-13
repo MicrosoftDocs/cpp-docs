@@ -108,7 +108,7 @@ In modern C++ programming, the Standard Library includes *smart pointers*, which
  [CAutoPtrList Class](../atl/reference/cautoptrlist-class.md)  
  Class that encapsulates methods for manipulating a list of `CAutoPtr` nodes.  
   
-## See Also  
+## See also  
  [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)   

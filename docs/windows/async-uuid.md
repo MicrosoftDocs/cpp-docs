@@ -17,14 +17,13 @@ Specifies the UUID that directs the MIDL compiler to define both synchronous and
   
 ## Syntax  
   
-```  
-  
-      [async_uuid (  
+```cpp  
+[async_uuid (  
    uuid  
 )]  
 ```  
   
-#### Parameters  
+### Parameters  
  *uuid*  
  A UUID that identifies the version of the interface.  
   
@@ -33,7 +32,7 @@ Specifies the UUID that directs the MIDL compiler to define both synchronous and
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_async_uuid.cpp  
 // compile with: /LD  
 #include <Windows.h>  
@@ -60,4 +59,4 @@ __interface ICustom {
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
+ [Interface Attributes](../windows/interface-attributes.md)   

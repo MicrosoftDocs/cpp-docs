@@ -13,22 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # sealed  (C++ Component Extensions)
-`sealed` is a context-sensitive keyword for ref classes that indicates that a virtual member cannot be overridden, or that a type cannot be used as a base type.  
+**sealed** is a context-sensitive keyword for ref classes that indicates that a virtual member cannot be overridden, or that a type cannot be used as a base type.  
   
 > [!NOTE]
->  The ISO C++11 Standard language has the [final](../cpp/final-specifier.md) keyword, which is supported in Visual Studio. Use `final` on standard classes, and `sealed` on ref classes.  
+>  The ISO C++11 Standard language has the [final](../cpp/final-specifier.md) keyword, which is supported in Visual Studio. Use **final** on standard classes, and **sealed** on ref classes.  
   
 ## All Runtimes  
   
 ## Syntax
   
-```  
+```cpp  
 ref class identifier sealed {...};  
 virtual return-type identifier() sealed {...};  
 ```  
   
 ### Parameters  
-  
  *identifier*  
  The name of the function or class.  
   
@@ -39,26 +38,26 @@ virtual return-type identifier() sealed {...};
   
  In the first syntax example, a class is sealed. In the second example, a virtual function is sealed.  
   
- The `sealed` keyword is valid for native targets, and also for the Windows Runtime and the common language runtime (CLR). For more information, see [Override Specifiers and Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
+ The **sealed** keyword is valid for native targets, and also for the Windows Runtime and the common language runtime (CLR). For more information, see [Override Specifiers and Native Compilations](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).  
   
  You can detect at compile time whether a type is sealed by using the `__is_sealed(type)` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
- `sealed` is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
+ **sealed** is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
 ## Windows Runtime  
  See [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
  (There are no remarks for this language feature that apply to only the common language runtime.)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- This following code example shows the effect of `sealed` on a virtual member.  
+ This following code example shows the effect of **sealed** on a virtual member.  
   
 ```cpp  
 // sealed_keyword.cpp  

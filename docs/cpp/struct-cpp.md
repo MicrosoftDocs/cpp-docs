@@ -101,4 +101,3 @@ int main() {
 // brother.age = 7  
 // my_cell.character = 1  
 ```  
-  

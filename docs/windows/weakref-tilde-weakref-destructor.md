@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakRef::~WeakRef Destructor
-Deinitializes the current instance of the WeakRef class.  
+Deinitializes the current instance of the **WeakRef** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 ~WeakRef();  
 ```  
   

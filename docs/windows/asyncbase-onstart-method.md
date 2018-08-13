@@ -17,7 +17,7 @@ When overridden in a derived class, starts an asynchronous operation.
   
 ## Syntax  
   
-```  
+```cpp  
 virtual void OnStart(  
    void  
 ) = 0;  

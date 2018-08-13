@@ -104,6 +104,3 @@ print( d, 0 ); // Override default argument to achieve other
     ```cpp 
     int (*pShowIntVal)( int i = 0 );  
     ```  
-  
-## See Also  
- 

@@ -13,16 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::ptr_ Data Member
-Contains a pointer to the interface that is associated with, and managed by this ComPtr.  
+Contains a pointer to the interface that is associated with, and managed by this **ComPtr**.  
   
 ## Syntax  
   
-```  
+```cpp  
 InterfaceType *ptr_;  
 ```  
   
 ## Remarks  
- `ptr_` is an internal, protected data member.  
+ **ptr_** is an internal, protected data member.  
   
 ## Requirements  
  **Header:** client.h  

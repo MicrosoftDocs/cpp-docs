@@ -17,9 +17,8 @@ Specifies an entry point in a .dll file.
   
 ## Syntax  
   
-```  
-  
-      [ idl_module (   
+```cpp  
+[ idl_module (   
    name=module_name,   
    dllname=dll,   
    uuid="uuid",   
@@ -32,47 +31,47 @@ Specifies an entry point in a .dll file.
 function declaration  
 ```  
   
-#### Parameters  
- **name**  
+### Parameters  
+ *name*  
  A user-defined name for the code block that will appear in the .idl file.  
   
- **dllname** (optional)  
+ *dllname* (optional)  
  The .dll file that contains the export.  
   
- `uuid` (optional)  
+ *uuid* (optional)  
  A unique ID.  
   
- **helpstring** (optional)  
+ *helpstring* (optional)  
  A character string used to describe the type library.  
   
- **helpstringcontext** (optional)  
+ *helpstringcontext* (optional)  
  The ID of a help topic in an .hlp or .chm file.  
   
- **helpcontext** (optional)  
+ *helpcontext* (optional)  
  The Help ID for this type library.  
   
- **hidden** (optional)  
+ *hidden* (optional)  
  A parameter that prevents the library from being displayed. See the [hidden](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL attribute for more information.  
   
- ***restricted***  (optional)  
+ *restricted*  (optional)  
  Members of the library cannot be arbitrarily called. See the [restricted](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL attribute for more information.  
   
  *function declaration*  
  The function that you will define.  
   
 ## Remarks  
- The `idl_module` C++ attribute lets you specify the entry point in a .dll file, which allows you to import from a .dll file.  
+ The **idl_module** C++ attribute lets you specify the entry point in a .dll file, which allows you to import from a .dll file.  
   
  The **idl_module** attribute has functionality similar to the [module](http://msdn.microsoft.com/library/windows/desktop/aa367099) MIDL attribute.  
   
  You can export anything from a COM object that you can export from a .dll file by putting a DLL entry point in the library block of an .idl file.  
   
- Your must use `idl_module` in two steps. First, you must define a name/DLL pair. Then, when you use `idl_module` to specify an entry point, specify the name and any additional attributes.  
+ Your must use **idl_module** in two steps. First, you must define a name/DLL pair. Then, when you use **idl_module** to specify an entry point, specify the name and any additional attributes.  
   
 ## Example  
- The following code shows how to use the `idl_module` attribute:  
+ The following code shows how to use the **idl_module** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_idl_module.cpp  
 // compile with: /LD  
 [idl_quote("midl_pragma warning(disable:2461)")];  
@@ -97,4 +96,4 @@ void FuncName(int i);
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
- [entry](../windows/entry.md)   
+ [entry](../windows/entry.md)   
