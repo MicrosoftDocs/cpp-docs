@@ -43,7 +43,14 @@
             "feedback_github_repo": "MicrosoftDocs/cpp-docs",
             "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/62/index.html"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "author": {
+        "standard-library/**/**.md": "corob-msft"
+      },
+      "md.author": {
+        "standard-library/**/**.md": "corob"
+      }      
+    },
     "template": [],
     "xref": ["msdn.4.5.2.zip", "namespaces.4.5.2.zip", "vs.110.zip", "vs.140.zip", "office15.zip"],
     "dest": "vcppdocs"
