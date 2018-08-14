@@ -1,7 +1,7 @@
 ---
 title: "Using setjmp and longjmp | Microsoft Docs"
 ms.custom: ""
-ms.date: "07/27/2018"
+ms.date: "08/14/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 f1_keywords: ["longjmp_cpp", "setjmp_cpp"]

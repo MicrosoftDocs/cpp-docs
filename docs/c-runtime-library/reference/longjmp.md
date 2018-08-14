@@ -1,7 +1,7 @@
 ---
 title: "longjmp | Microsoft Docs"
 ms.custom: ""
-ms.date: "07/27/2018"
+ms.date: "08/14/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 apiname: ["longjmp"]

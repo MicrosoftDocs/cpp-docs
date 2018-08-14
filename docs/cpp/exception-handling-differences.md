@@ -1,7 +1,7 @@
 ---
 title: "Handle structured exceptions in C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/15/2018"
+ms.date: "08/14/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]

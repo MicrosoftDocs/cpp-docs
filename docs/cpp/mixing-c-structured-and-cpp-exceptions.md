@@ -1,7 +1,7 @@
 ---
 title: "Mixing C (Structured) and C++ exceptions | Microsoft Docs"
 ms.custom: ""
-ms.date: "07/27/2018"
+ms.date: "08/14/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]

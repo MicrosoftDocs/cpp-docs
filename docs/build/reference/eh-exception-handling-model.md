@@ -1,7 +1,7 @@
 ---
 title: "-EH (Exception Handling Model) | Microsoft Docs"
 ms.custom: ""
-ms.date: "07/27/2018"
+ms.date: "08/14/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.ExceptionHandling", "/eh", "VC.Project.VCCLCompilerTool.ExceptionHandling"]
