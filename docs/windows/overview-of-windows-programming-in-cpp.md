@@ -90,7 +90,7 @@ The Microsoft libraries include:
 
 Many Windows programming scenarios also require the Windows SDK, which includes the header files that enable access to the Windows operating system components. By default, Visual Studio installs the Windows SDK as a component of the C++ Desktop workload, which enables development of Universal Windows apps. To develop UWP apps, you need the Windows 10 version of the Windows SDK. For information, see [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk). (For more information about the Windows SDKs for earlier versions of Windows, see the [Windows SDK archive](https://developer.microsoft.com/windows/downloads/sdk-archive)). 
 
-**Program Files (x86)\Windows Kits** is the default location for for all versions of the Windows SDK that you have installed.
+**Program Files (x86)\Windows Kits** is the default location for all versions of the Windows SDK that you have installed.
 
 Other platforms such as Xbox and Azure have their own SDKs that you may have to install. For more information, see the DirectX Developer Center and the Azure Developer Center.
 

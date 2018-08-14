@@ -25,7 +25,7 @@ shared(var)
  where,  
   
  `var`  
- One more more variables to share. If more than one variable is specified, separate variable names with a comma.  
+ One or more variables to share. If more than one variable is specified, separate variable names with a comma.  
   
 ## Remarks  
  Another way to share variables among threads is with the [copyprivate](../../../parallel/openmp/reference/copyprivate.md) clause.  
