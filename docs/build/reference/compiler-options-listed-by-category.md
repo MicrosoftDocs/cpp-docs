@@ -59,7 +59,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/Gy](gy-enable-function-level-linking.md)|Enables function-level linking.|
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|Deprecated. Enables fast checks. (Same as [/RTC1](rtc-run-time-error-checks.md))|
 |[/Gz](gd-gr-gv-gz-calling-convention.md)|Uses the `__stdcall` calling convention. (x86 only)|
-|[/homeparams](homeparams-copy-register-parameters-to-stack.md)|Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] compilers (native and cross compile).|
+|[/homeparams](homeparams-copy-register-parameters-to-stack.md)|Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile).|
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|Creates a hotpatchable image.|
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|Generates fast transcendentals.|
 |[QIfist](qifist-suppress-ftol.md)|Deprecated. Suppresses the call of the helper function `_ftol` when a conversion from a floating-point type to an integral type is required. (x86 only)|

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _InterlockedDecrement Intrinsic Functions
 **Microsoft Specific**  
   
- Provides compiler intrinsic support for the Win32 [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] [InterlockedDecrement](http://msdn.microsoft.com/library/ms683580.aspx) function.  
+ Provides compiler intrinsic support for the Win32 Windows SDK [InterlockedDecrement](http://msdn.microsoft.com/library/ms683580.aspx) function.  
   
 ## Syntax  
   
@@ -69,7 +69,7 @@ __int64 _InterlockedDecrement64_nf(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, x64|  
 |`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM|  
   
  **Header file** \<intrin.h>  

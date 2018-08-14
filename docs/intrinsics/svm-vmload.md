@@ -38,7 +38,7 @@ void __svm_vmload(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__svm_vmload`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__svm_vmload`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

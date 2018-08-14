@@ -699,7 +699,7 @@ int LineLength(int nLine = -1) const;
 ### Return Value  
  For single-line edit controls, the return value is the length, in TCHARs, of the text in the edit control.  
   
- For multiline edit controls, the return value is the length, in TCHARs, of the line specified by the *nLine* parameter. For [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] text, the length is the number of bytes in the line; for Unicode text, the length is the number of characters in the line. The length does not include the carriage-return character at the end of the line.  
+ For multiline edit controls, the return value is the length, in TCHARs, of the line specified by the *nLine* parameter. For ANSI text, the length is the number of bytes in the line; for Unicode text, the length is the number of characters in the line. The length does not include the carriage-return character at the end of the line.  
   
  If the *nLine* parameter is more than the number of characters in the control, the return value is zero.  
   

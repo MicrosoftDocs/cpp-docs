@@ -19,7 +19,7 @@ This document describes interface elements that were introduced in Visual Studio
  ![MFC Feature Pack example application](../mfc/media/mfc_featurepack.png "mfc_featurepack")  
   
 ## Window Docking  
- Window docking functionality resembles the window docking that the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] graphical user interface uses.  
+ Window docking functionality resembles the window docking that the Visual Studio graphical user interface uses.  
   
 ## Control Bars are Now Panes  
  Control bars are now known as panes and are derived from [CBasePane Class](../mfc/reference/cbasepane-class.md). In earlier versions of MFC, the base class of control bars was `CControlBar`.  

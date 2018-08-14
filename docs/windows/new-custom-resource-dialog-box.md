@@ -19,7 +19,7 @@ Enables you to create a new custom resource.
  Provides a text box for you to enter the name of a custom resource type. Visual C++ automatically capitalizes the name when you exit the **New Custom Resource** dialog box.  
   
 ## Remarks  
- Do not specify a resource name or ID that is reserved by [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)]. The reserved names are DESIGNINFO, HWB, and TEXTINCLUDE, and the reserved ID is 255.  
+ Do not specify a resource name or ID that is reserved by Visual Studio. The reserved names are DESIGNINFO, HWB, and TEXTINCLUDE, and the reserved ID is 255.  
   
 ## See Also  
  [Add Resource Dialog Box](../windows/add-resource-dialog-box.md)

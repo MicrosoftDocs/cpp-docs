@@ -44,7 +44,7 @@ unsigned __int64 __shiftleft128( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__shiftleft128`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__shiftleft128`|x64|  
   
  **Header file** \<intrin.h>  
   

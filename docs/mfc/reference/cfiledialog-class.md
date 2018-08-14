@@ -424,7 +424,7 @@ explicit CFileDialog(
   
  The *lpszFilter* parameter is used to determine the type of file name a file must have to be displayed in the file list. The first string in the string pair describes the filter; the second string indicates the file name extension to use. Multiple extensions may be specified by using a semicolon (the ';' character) as the delimiter. The string ends with two '&#124;' characters, followed by a NULL character. You can also use a [CString](../../atl-mfc-shared/using-cstring.md) object for this parameter.  
   
- For example, [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] allows users to open files that have extensions .xlc (chart) or .xls (worksheet), among others. The filter for Excel could be written as:  
+ For example, Microsoft Excel allows users to open files that have extensions .xlc (chart) or .xls (worksheet), among others. The filter for Excel could be written as:  
   
  [!code-cpp[NVC_MFCFiles#24](../../atl-mfc-shared/reference/codesnippet/cpp/cfiledialog-class_2.cpp)]  
   
@@ -1216,7 +1216,7 @@ void SetControlText(
  A pointer to the string that contains the text to set for the control.  
   
 ### Remarks  
- Both versions of this function are valid for applications that use Unicode. However, only the version with the LPCSTR type is valid for applications that use [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)].  
+ Both versions of this function are valid for applications that use Unicode. However, only the version with the LPCSTR type is valid for applications that use ANSI.  
   
  To use this method, you must create the dialog box with the OFN_EXPLORER style. Otherwise, the function will fail with an assertion.  
   
@@ -1302,16 +1302,16 @@ void SetTemplate(
  Contains the ID number of the template resource for the non-Explorer `CFileDialog` object. This template is only used on Windows NT 3.51 or when the OFN_EXPLORER style is not present.  
   
  [in] *nWin4ID*  
- Contains the ID number of the template resource for the Explorer `CFileDialog` object. This template is used only on [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
+ Contains the ID number of the template resource for the Explorer `CFileDialog` object. This template is used only on Windows NT 4.0  and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
   
  [in] *lpWin3ID*  
  Contains the name of the template resource for the non-Explorer `CFileDialog` object. This template is only used on Windows NT 3.51 or when the OFN_EXPLORER style is not present.  
   
  [in] *lpWin4ID*  
- Contains the name of the template resource of the Explorer `CFileDialog` object. This template is used only on [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
+ Contains the name of the template resource of the Explorer `CFileDialog` object. This template is used only on Windows NT 4.0  and later versions, Windows 95 and later versions, or when the OFN_EXPLORER style is present.  
   
 ### Remarks  
- The system will use only one of the specified templates. The system determines which template to use based on the presence of the OFN_EXPLORER style and the operating system that the application is running on. By specifying both a non-Explorer and Explorer-style template, it is easy to support Windows NT 3.51, [!INCLUDE[WinNt4Family](../../mfc/reference/includes/winnt4family_md.md)] and later versions, and Windows 95 and later versions.  
+ The system will use only one of the specified templates. The system determines which template to use based on the presence of the OFN_EXPLORER style and the operating system that the application is running on. By specifying both a non-Explorer and Explorer-style template, it is easy to support Windows NT 3.51, Windows NT 4.0  and later versions, and Windows 95 and later versions.  
   
 > [!NOTE]
 > Windows Vista or later style file dialog boxes do not support this function. Attempting to use this function on a Windows Vista or later style file dialog box will throw [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md). An alternative is to use a customized dialog. For more information about using a custom `CFileDialog`, see [IFileDialogCustomize](http://msdn.microsoft.com/library/windows/desktop/bb775912).  

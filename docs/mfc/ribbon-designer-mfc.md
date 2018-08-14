@@ -17,7 +17,7 @@ The Ribbon Designer lets you create and customize ribbons in MFC applications. A
   
  ![MFC Ribbon Resource Control](../mfc/media/ribbon_no_callouts.png "ribbon_no_callouts")  
   
- In earlier versions of Visual Studio, ribbons had to be created by writing code that uses the MFC ribbon classes such as [CMFCRibbonBar Class](../mfc/reference/cmfcribbonbar-class.md). In [!INCLUDE[vs_dev10_long](../build/includes/vs_dev10_long_md.md)], the ribbon designer provides an alternative method for building ribbons. First, create and customize a ribbon as a resource. Then load the ribbon resource from code in the MFC application. You can even use ribbon resources and MFC ribbon classes together. For example, you can create a ribbon resource, and then programmatically add more elements to it at runtime by using code.  
+ In earlier versions of Visual Studio, ribbons had to be created by writing code that uses the MFC ribbon classes such as [CMFCRibbonBar Class](../mfc/reference/cmfcribbonbar-class.md). In Visual Studio 2010 and later, the ribbon designer provides an alternative method for building ribbons. First, create and customize a ribbon as a resource. Then load the ribbon resource from code in the MFC application. You can even use ribbon resources and MFC ribbon classes together. For example, you can create a ribbon resource, and then programmatically add more elements to it at runtime by using code.  
   
 ## Understanding the Ribbon Designer  
  The ribbon designer creates and stores the ribbon as a resource. When you create a ribbon resource, the ribbon designer does these three things:  

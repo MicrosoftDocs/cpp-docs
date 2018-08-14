@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Deprecated ANSI APIs
 The Microsoft Foundation Class (MFC) library is migrating toward classes and methods that are based on the Unicode character set. Consequently, the ANSI versions of several MFC methods are deprecated. Use the Unicode versions of these methods in your future applications.  
   
- Starting with Windows Common Controls version 6.1, which ships in [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)], the following ANSI methods are deprecated.  
+ Starting with Windows Common Controls version 6.1, which ships in Windows Vista, the following ANSI methods are deprecated.  
   
 ## CButton class  
   

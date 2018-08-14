@@ -841,7 +841,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Mimics the appearance of Microsoft Windows XP or Microsoft Vista when the user selects a Windows XP or Vista theme.  
   
  [CMFCVisualManagerWindows7 Class](../../mfc/reference/cmfcvisualmanagerwindows7-class.md)  
- Gives an application the appearance of a [!INCLUDE[win7](../../build/includes/win7_md.md)] application.  
+ Gives an application the appearance of a Windows 7 application.  
   
  [CMFCWindowsManagerDialog Class](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)  
  Enables a user to manage MDI child windows in a MDI application.  

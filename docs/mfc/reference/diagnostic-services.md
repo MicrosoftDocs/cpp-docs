@@ -601,7 +601,7 @@ BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
  The previous value for this flag.  
   
 ### Remarks  
- When an application unloads the MFC library, the MFC library checks for memory leaks. At this point, any memory leaks are reported to the user through the **Debug** window of [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)].  
+ When an application unloads the MFC library, the MFC library checks for memory leaks. At this point, any memory leaks are reported to the user through the **Debug** window of Visual Studio.  
   
  If your application loads another library before the MFC library, some memory allocations in that library will be incorrectly reported as memory leaks. False memory leaks can cause your application to close slowly as the MFC library reports them. In this case, use `AfxEnableMemoryLeakDump` to disable the memory leak dump.  
   

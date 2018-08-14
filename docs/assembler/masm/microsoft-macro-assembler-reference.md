@@ -34,7 +34,7 @@ The Microsoft Macro Assembler (MASM) provides several advantages over inline ass
  Provides links to websites that may contain programming information about processors that are not manufactured, sold, or supported by Microsoft.  
   
  [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md)  
- Information about how to create output files for [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)].  
+ Information about how to create output files for x64.  
   
 ## Related Sections  
  [Visual C++](../../visual-cpp-in-visual-studio.md)  

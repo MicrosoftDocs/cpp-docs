@@ -27,7 +27,7 @@ void _disable(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_disable`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_disable`|x86, ARM, x64|  
   
  **Header file** \<intrin.h>  
   

@@ -12,7 +12,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # How to: Embed a Manifest Inside a C/C++ Application
-It is recommended that a C/C++ application (or library) have its manifest embedded inside the final binary because this guarantees correct runtime behavior in most scenarios. By default, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] tries to embed the manifest when it builds a project from source files; see [Manifest Generation in Visual Studio](../build/manifest-generation-in-visual-studio.md) for more information. However if an application is built by using nmake, some changes to the existing makefile are necessary. This section demonstrates how to change existing makefiles to automatically embed the manifest inside the final binary.  
+It is recommended that a C/C++ application (or library) have its manifest embedded inside the final binary because this guarantees correct runtime behavior in most scenarios. By default, Visual Studio tries to embed the manifest when it builds a project from source files; see [Manifest Generation in Visual Studio](../build/manifest-generation-in-visual-studio.md) for more information. However if an application is built by using nmake, some changes to the existing makefile are necessary. This section demonstrates how to change existing makefiles to automatically embed the manifest inside the final binary.  
   
 ## Two approaches  
  There are two ways to embed the manifest inside an application or library.  
