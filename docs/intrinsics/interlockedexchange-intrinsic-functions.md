@@ -121,7 +121,7 @@ __int64 _InterlockedExchange64_rel(
 |`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`, `_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
   
 ## Remarks  
- `_InterlockedExchange` provides compiler intrinsic support for the Win32 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedExchange](http://msdn.microsoft.com/library/ms683590.aspx) function.  
+ `_InterlockedExchange` provides compiler intrinsic support for the Win32 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedExchange](/windows/desktop/api/winbase/nf-winbase-interlockedexchange) function.  
   
  There are several variations on `_InterlockedExchange` that vary based on the data types they involve and whether processor-specific acquire or release semantics is used.  
   

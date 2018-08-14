@@ -36,7 +36,7 @@ class CWindowDC : public CDC
 |[CWindowDC::m_hWnd](#m_hwnd)|The HWND to which this `CWindowDC` is attached.|  
   
 ## Remarks  
- Calls the Windows function [GetWindowDC](http://msdn.microsoft.com/library/windows/desktop/dd144947\(v=vs.85\).aspx)at construction time and [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920\(v=vs.85\).aspx) at destruction time. This means that a `CWindowDC` object accesses the entire screen area of a [CWnd](../../mfc/reference/cwnd-class.md) (both client and nonclient areas).  
+ Calls the Windows function [GetWindowDC](/windows/desktop/api/winuser/nf-winuser-getwindowdc)at construction time and [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) at destruction time. This means that a `CWindowDC` object accesses the entire screen area of a [CWnd](../../mfc/reference/cwnd-class.md) (both client and nonclient areas).  
   
  For more information on using `CWindowDC`, see [Device Contexts](../../mfc/device-contexts.md).  
   

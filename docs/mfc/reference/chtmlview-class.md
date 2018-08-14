@@ -44,7 +44,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::GetLocationURL](#getlocationurl)|Retrieves the URL of the resource that WebBrowser is currently displaying.|  
 |[CHtmlView::GetMenuBar](#getmenubar)|Retrieves a value that determines whether the menu bar is visible.|  
 |[CHtmlView::GetOffline](#getoffline)|Retrieves a value that determines whether the control is offline.|  
-|[CHtmlView::GetParentBrowser](#getparentbrowser)|Retrieves a pointer to the `IDispatch` interface. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).|  
+|[CHtmlView::GetParentBrowser](#getparentbrowser)|Retrieves a pointer to the `IDispatch` interface. For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).|  
 |[CHtmlView::GetProperty](#getproperty)|Retrieves the current value of a property associated with the given object.|  
 |[CHtmlView::GetReadyState](#getreadystate)|Retrieves the ready state of the web browser object.|  
 |[CHtmlView::GetRegisterAsBrowser](#getregisterasbrowser)|Indicates whether the WebBrowser control is registered as a top-level browser for target name resolution.|  
@@ -309,7 +309,7 @@ LPDISPATCH GetApplication() const;
 ```  
   
 ### Return Value  
- A pointer to the `IDispatch` interface of the active document object. For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+ A pointer to the `IDispatch` interface of the active document object. For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).  
   
 ### Remarks  
  Applies to Internet Explorer and WebBrowser.  

@@ -46,7 +46,7 @@ This topic lists options for additional features for your application, such as H
  An application manifest can also specify other DLLs and versions that your application needs. For more information about application manifests, see [Isolated Applications and Side-by-Side Assemblies](http://msdn.microsoft.com/library/dd408052) in the Windows SDK.  
   
  **Support Restart Manager**  
- Adds support for the [Windows Restart Manager](http://msdn.microsoft.com/library/windows/desktop/aa373680\(v=vs.85\).aspx). This video shows how to use the Restart Manager from MFC: [How Do I: Use the New Restart Manager](http://msdn.microsoft.com/vstudio/ee886407).  
+ Adds support for the [Windows Restart Manager](/windows/desktop/RstMgr/using-restart-manager). This video shows how to use the Restart Manager from MFC: [How Do I: Use the New Restart Manager](http://msdn.microsoft.com/vstudio/ee886407).  
   
  **Advanced frame panes**  
  |Option|Description|  

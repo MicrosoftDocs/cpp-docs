@@ -62,7 +62,7 @@ The Windows Runtime C++ Template Library (WRL) is a template library that provid
  Shows how to consume custom Windows Runtime components from WRL by creating an IDL file from the .winmd metadata.  
   
  [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)  
- Shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/bbc11c4a-aecf-4d6d-8275-3e852e309908) and [IXMLHTTPRequest2Callback](http://msdn.microsoft.com/aa4b3f4c-6e28-458b-be25-6cce8865fc71) interfaces together with tasks to send HTTP GET and POST requests to a web service in a UWP app.  
+ Shows how to use the [IXMLHTTPRequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) and [IXMLHTTPRequest2Callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) interfaces together with tasks to send HTTP GET and POST requests to a web service in a UWP app.  
   
  [Bing Maps Trip Optimizer sample](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)  
  Uses the `HttpRequest` class that's defined in [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) in the context of a complete UWP app.  
