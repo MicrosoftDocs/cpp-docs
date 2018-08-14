@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _InterlockedDecrement Intrinsic Functions
 **Microsoft Specific**  
   
- Provides compiler intrinsic support for the Win32 Windows SDK [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement) function.  
+Provides compiler intrinsic support for the Win32 Windows SDK [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement) function.  
   
 ## Syntax  
   
