@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumerator Class
-Uses an OLE DB enumerator object, which exposes the [ISourcesRowset](https://msdn.microsoft.com/library/ms715969.aspx) interface to return a rowset describing all data sources and enumerators.  
+Uses an OLE DB enumerator object, which exposes the [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) interface to return a rowset describing all data sources and enumerators.  
   
 ## Syntax
 
@@ -55,7 +55,7 @@ bool Find(TCHAR* szSearchName) throw();
  **true** if the name was found. Otherwise, **false**.  
   
 ### Remarks  
- This name maps to the `SOURCES_NAME` member of the [ISourcesRowset](https://msdn.microsoft.com/library/ms715969.aspx) interface.  
+ This name maps to the `SOURCES_NAME` member of the [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) interface.  
   
 ## <a name="getmoniker"></a> CEnumerator::GetMoniker
 Parses the display name to extract the component of the string that can be converted into a moniker.  
@@ -80,7 +80,7 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker, 
  A standard HRESULT.  
 
 ## <a name="open"></a> CEnumerator::Open
-Binds the moniker for the enumerator, if one is specified, then retrieves the rowset for the enumerator by calling [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx).  
+Binds the moniker for the enumerator, if one is specified, then retrieves the rowset for the enumerator by calling [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)).  
   
 ### Syntax  
   

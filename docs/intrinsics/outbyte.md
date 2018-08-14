@@ -37,7 +37,7 @@ void __outbyte( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__outbyte`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outbyte`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

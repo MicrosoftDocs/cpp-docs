@@ -33,8 +33,8 @@ The following tables show Visual C++ features that are available in Visual Studi
 |--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|
 |32-bit X86 compiler|X|X|X|X|
 |X86_arm cross-compiler|X||X|X|
-|64-bit [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] compiler|||X|X|
-|X86_ [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] cross-compiler|X|X|X|X|
+|64-bit x64 compiler|||X|X|
+|X86_ x64 cross-compiler|X|X|X|X|
 
 ## Libraries and Headers
 

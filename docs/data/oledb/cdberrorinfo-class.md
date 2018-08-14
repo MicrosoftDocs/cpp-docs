@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CDBErrorInfo Class
-Provides support for OLE DB error processing using the OLE DB [IErrorRecords](https://msdn.microsoft.com/library/ms718112.aspx) interface.  
+Provides support for OLE DB error processing using the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface.  
   
 ## Syntax
 
@@ -31,10 +31,10 @@ class CDBErrorInfo
 |||  
 |-|-|  
 |[GetAllErrorInfo](#getallerrorinfo)|Returns all error information contained in an error record.|  
-|[GetBasicErrorInfo](#getbasicerrorinfo)|Calls [IErrorRecords::GetBasicErrorInfo](https://msdn.microsoft.com/library/ms723907.aspx) to return basic information about the specified error.|  
-|[GetCustomErrorObject](#getcustomerrorobject)|Calls [IErrorRecords::GetCustomErrorObject](https://msdn.microsoft.com/library/ms725417.aspx) to return a pointer to an interface on a custom error object.|  
-|[GetErrorInfo](#geterrorinfo)|Calls [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/library/ms711230.aspx) to return an `IErrorInfo` interface pointer to the specified record.|  
-|[GetErrorParameters](#geterrorparameters)|Calls [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/library/ms715793.aspx) to return the error parameters.|  
+|[GetBasicErrorInfo](#getbasicerrorinfo)|Calls [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) to return basic information about the specified error.|  
+|[GetCustomErrorObject](#getcustomerrorobject)|Calls [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) to return a pointer to an interface on a custom error object.|  
+|[GetErrorInfo](#geterrorinfo)|Calls [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) to return an `IErrorInfo` interface pointer to the specified record.|  
+|[GetErrorParameters](#geterrorparameters)|Calls [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) to return the error parameters.|  
 |[GetErrorRecords](#geterrorrecords)|Gets error records for the specified object.|  
   
 ## Remarks  
@@ -77,7 +77,7 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
  [out] A pointer to a string containing the path to the help file that describes the error.  
   
 ### Return Value  
- S_OK if successful. See [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/library/ms711230.aspx) in the *OLE DB Programmer's Reference* for other return values.  
+ S_OK if successful. See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) in the *OLE DB Programmer's Reference* for other return values.  
   
 ### Remarks  
  The output value of *pbstrDescription* is obtained internally by calling `IErrorInfo::GetDescription`, which sets the value to NULL if the locale is not supported, or if both of the following conditions are true:  
@@ -87,7 +87,7 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
 2.  the value of *lcid* is NOT equal to the value returned by GetUserDefaultLCID. 
 
 ## <a name="getbasicerrorinfo"></a> CDBErrorInfo::GetBasicErrorInfo
-Calls [IErrorRecords::GetBasicErrorInfo](https://msdn.microsoft.com/library/ms723907.aspx) to return basic information about the error, such as the return code and provider-specific error number.  
+Calls [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) to return basic information about the error, such as the return code and provider-specific error number.  
   
 ### Syntax  
   
@@ -97,13 +97,13 @@ HRESULT GetBasicErrorInfo(ULONG ulRecordNum, 
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetBasicErrorInfo](https://msdn.microsoft.com/library/ms723907.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT.  
 
 ## <a name="getcustomerrorobject"></a> CDBErrorInfo::GetCustomErrorObject
-Calls [IErrorRecords::GetCustomErrorObject](https://msdn.microsoft.com/library/ms725417.aspx) to return a pointer to an interface on a custom error object.  
+Calls [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) to return a pointer to an interface on a custom error object.  
   
 ### Syntax  
   
@@ -113,13 +113,13 @@ HRESULT GetCustomErrorObject(ULONG ulRecordNum, 
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetCustomErrorObject](https://msdn.microsoft.com/library/ms725417.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT.  
 
 ## <a name="geterrorinfo"></a> CDBErrorInfo::GetErrorInfo
-Calls [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/library/ms711230.aspx) to return an [IErrorInfo](https://msdn.microsoft.com/library/ms718112.aspx) interface pointer to the specified record.  
+Calls [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) to return an [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface pointer to the specified record.  
   
 ### Syntax  
   
@@ -129,13 +129,13 @@ HRESULT GetErrorInfo(ULONG ulRecordNum, 
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/library/ms711230.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT.  
 
 ## <a name="geterrorparameters"></a> CDBErrorInfo::GetErrorParameters
-Calls [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/library/ms715793.aspx) to return the error parameters.  
+Calls [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) to return the error parameters.  
   
 ### Syntax  
   
@@ -145,7 +145,7 @@ HRESULT GetErrorParameters(ULONG ulRecordNum, 
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/library/ms715793.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT.  

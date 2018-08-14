@@ -27,7 +27,7 @@ void __halt( void );
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__halt`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__halt`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

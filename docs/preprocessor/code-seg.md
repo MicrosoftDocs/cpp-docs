@@ -48,7 +48,7 @@ The name of a segment. When used with *pop*, the stack is popped and *segment-na
 "*segment-class*" (optional)  
 Ignored, but included for compatibility with versions of C++ earlier than version 2.0.  
   
-You can use the [DUMPBIN.EXE](../build/reference/dumpbin-command-line.md) application to view .obj files. Versions of DUMPBIN for each supported target architecture are included with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
+You can use the [DUMPBIN.EXE](../build/reference/dumpbin-command-line.md) application to view .obj files. Versions of DUMPBIN for each supported target architecture are included with Visual Studio.  
   
 ## Example  
 

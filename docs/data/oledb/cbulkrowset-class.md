@@ -52,7 +52,7 @@ class CBulkRowset : public CRowset<TAccessor>
  [!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]  
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
-Calls [IRowset::AddRefRows](https://msdn.microsoft.com/library/ms719619.aspx) to increment the reference count for all rows currently retrieved from the bulk rowset.  
+Calls [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) to increment the reference count for all rows currently retrieved from the bulk rowset.  
   
 ### Syntax  
   
@@ -138,7 +138,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
  [in] The number count of rows from the bookmark to the target row. If *lSkip* is zero, the first row fetched is the bookmarked row. If *lSkip* is 1, the first row fetched is the row after the bookmarked row. If *lSkip* is -1, the first row fetched is the row before the bookmarked row.  
   
 ### Return Value  
- See [IRowset::GetData](https://msdn.microsoft.com/library/ms716988.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IRowset::GetData](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 Fetches rows starting from a fractional position in the rowset.  
@@ -165,10 +165,10 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
   
  `(nNumerator *  RowsetSize ) / nDenominator`  
   
- Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](https://msdn.microsoft.com/library/ms709602.aspx) in the *OLE DB Programmer's Reference*.   
+ Where `RowsetSize` is the size of the rowset, measured in rows. The accuracy of this formula depends on the specific provider. For details, see [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602\(v=vs.85\)) in the *OLE DB Programmer's Reference*.   
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
-Calls [IRowset::ReleaseRows](https://msdn.microsoft.com/library/ms719771.aspx) to decrement the reference count for all rows currently retrieved from the bulk rowset.  
+Calls [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) to decrement the reference count for all rows currently retrieved from the bulk rowset.  
   
 ### Syntax  
   

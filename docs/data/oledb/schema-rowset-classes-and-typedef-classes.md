@@ -17,42 +17,42 @@ A schema is a collection of database objects that are owned, or have been create
   
  Schema rowsets are predefined rowsets representing metadata. Schema rowsets are generally used in dynamic programming, where the database structure is not known at compile time. You can use these schema rowsets to obtain information about a database at run time.  
   
- Use the typedef classes to instantiate the schema rowsets. The corresponding typedef and schema rowset classes are listed below. You must call [CRestrictions::Open](../../data/oledb/crestrictions-open.md) after you have created an instance of the schema rowset. This method returns a result set based on the restrictions you specify. See [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) for information on restriction columns associated with each schema rowset.  
+ Use the typedef classes to instantiate the schema rowsets. The corresponding typedef and schema rowset classes are listed below. You must call [CRestrictions::Open](../../data/oledb/crestrictions-open.md) after you have created an instance of the schema rowset. This method returns a result set based on the restrictions you specify. See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) for information on restriction columns associated with each schema rowset.  
   
  The following table displays each OLE DB Schema Rowset and its corresponding OLE DB Templates typedef class and info class.  
   
 |OLE DB Schema Rowset|Typedef class|Info class|  
 |--------------------------|-------------------|----------------|  
-|[ASSERTIONS](https://msdn.microsoft.com/library/ms719776.aspx)|[CAssertions](#assertion)|[CAssertionInfo](#assertion)|  
-|[CATALOGS](https://msdn.microsoft.com/library/ms721241.aspx)|[CCatalogs](#catalog)|[CCatalogInfo](#catalog)|  
-|[CHARACTER_SETS](https://msdn.microsoft.com/library/ms722638.aspx)|[CCharacterSets](#characterset)|[CCharacterSetInfo](#characterset)|  
-|[COLLATIONS](https://msdn.microsoft.com/library/ms715783.aspx)|[CCollations](#collation)|[CCollationInfo](#collation)|  
-|[COLUMN_PRIVILEGES](https://msdn.microsoft.com/library/ms715800.aspx)|[CColumnPrivileges](#columnprivilege)|[CColumnPrivilegeInfo](#columnprivilege)|  
-|[COLUMNS](https://msdn.microsoft.com/library/ms723052.aspx)|[CColumns](#columns)|[CColumnsInfo](#columns)|  
-|[CONSTRAINT_COLUMN_USAGE](https://msdn.microsoft.com/library/ms724522.aspx)|[CConstraintColumnUsage](#constraintcolumnusage)|[CConstraintColumnUsageInfo](#constraintcolumnusage)|  
-|[CONSTRAINT_TABLE_USAGE](https://msdn.microsoft.com/library/ms713710.aspx)|[CConstraintTableUsage](#constrainttableusage)|[CConstraintTableUsageInfo](#constrainttableusage)|  
-|[CHECK_CONSTRAINTS](https://msdn.microsoft.com/library/ms712845.aspx)|[CCheckConstraints](#checkconstraint)|[CCheckConstraintInfo](#checkconstraint)|  
-|[COLUMN_DOMAIN_USAGE](https://msdn.microsoft.com/library/ms711240.aspx)|[CColumnDomainUsage](#columndomainusage)|[CColumnDomainUsageInfo](#columndomainusage)|  
-|[FOREIGN_KEYS](https://msdn.microsoft.com/library/ms711276.aspx)|[CForeignKeys](#foreignkeys)|[CForeignKeysInfo](#foreignkeys)|  
-|[INDEXES](https://msdn.microsoft.com/library/ms709712.aspx)|[CIndexes](#index)|[CIndexInfo](#index)|  
-|[KEY_COLUMN_USAGE](https://msdn.microsoft.com/library/ms712990.aspx)|[CKeyColumn](#keycolumn)|[CKeyColumnInfo](#keycolumn)|  
-|[PRIMARY_KEYS](https://msdn.microsoft.com/library/ms714362.aspx)|[CPrimaryKeys](#primarykey)|[CPrimaryKeyInfo](#primarykey)|  
-|[PROCEDURES](https://msdn.microsoft.com/library/ms724021.aspx)|[CProcedures](#procedure)|[CProcedureInfo](#procedure)|  
-|[PROCEDURE_COLUMNS](https://msdn.microsoft.com/library/ms723092.aspx)|[CProcedureColumns](#procedurecolumn)|[CProcedureColumnInfo](#procedurecolumn)|  
-|[PROCEDURE_PARAMETERS](https://msdn.microsoft.com/library/ms713623.aspx)|[CProcedureParameters](#procedureparam)|[CProcedureParameterInfo](#procedureparam)|  
-|[PROVIDER_TYPES](https://msdn.microsoft.com/library/ms709785.aspx)|[CProviderTypes](#provider)|[CProviderInfo](#provider)|  
-|[REFERENTIAL_CONSTRAINTS](https://msdn.microsoft.com/library/ms719737.aspx)|[CReferentialConstraints](#referentialconstraint)|[CReferentialConstraintInfo](#referentialconstraint)|  
-|[SCHEMATA](https://msdn.microsoft.com/library/ms716887.aspx)|[CSchemata](#schemata)|[CSchemataInfo](#schemata)|  
-|[SQL_LANGUAGES](https://msdn.microsoft.com/library/ms714374.aspx)|[CSQLLanguages](#sqllanguage)|[CSQLLanguageInfo](#sqllanguage)|  
-|[STATISTICS](https://msdn.microsoft.com/library/ms715957.aspx)|[CStatistics](#statistic)|[CStatisticInfo](#statistic)|  
-|[TABLE_CONSTRAINTS](https://msdn.microsoft.com/library/ms715921.aspx)|[CTableConstraints](#tableconstraint)|[CTableConstraintInfo](#tableconstraint)|  
-|[TABLES](https://msdn.microsoft.com/library/ms716980.aspx)|[CTables](#table)|[CTableInfo](#table)|  
-|[TABLE_PRIVILEGES](https://msdn.microsoft.com/library/ms725428.aspx)|[CTablePrivileges](#tableprivilege)|[CTablePrivilegeInfo](#tableprivilege)|  
-|[TRANSLATIONS](https://msdn.microsoft.com/library/ms725365.aspx)|[CTranslations](#translation)|[CTranslationInfo](#translation)|  
-|[USAGE_PRIVILEGES](https://msdn.microsoft.com/library/ms722743.aspx)|[CUsagePrivileges](#usageprivilege)|[CUsagePrivilegeInfo](#usageprivilege)|  
-|[VIEW_COLUMN_USAGE](https://msdn.microsoft.com/library/ms714896.aspx)|[CViewColumnUsage](#viewcolumn)|[CViewColumnInfo](#viewcolumn)|  
-|[VIEWS](https://msdn.microsoft.com/library/ms723122.aspx)|[CViews](#view)|[CViewInfo](#view)|  
-|[VIEW_TABLE_USAGE](https://msdn.microsoft.com/library/ms719727.aspx)|[CViewTableUsage](#viewtable)|[CViewTableInfo](#viewtable)|  
+|[ASSERTIONS](/previous-versions/windows/desktop/ms719776\(v=vs.85\))|[CAssertions](#assertion)|[CAssertionInfo](#assertion)|  
+|[CATALOGS](/previous-versions/windows/desktop/ms721241\(v=vs.85\))|[CCatalogs](#catalog)|[CCatalogInfo](#catalog)|  
+|[CHARACTER_SETS](/previous-versions/windows/desktop/ms722638\(v=vs.85\))|[CCharacterSets](#characterset)|[CCharacterSetInfo](#characterset)|  
+|[COLLATIONS](/previous-versions/windows/desktop/ms715783\(v=vs.85\))|[CCollations](#collation)|[CCollationInfo](#collation)|  
+|[COLUMN_PRIVILEGES](/previous-versions/windows/desktop/ms715800\(v=vs.85\))|[CColumnPrivileges](#columnprivilege)|[CColumnPrivilegeInfo](#columnprivilege)|  
+|[COLUMNS](/previous-versions/windows/desktop/ms723052\(v=vs.85\))|[CColumns](#columns)|[CColumnsInfo](#columns)|  
+|[CONSTRAINT_COLUMN_USAGE](/previous-versions/windows/desktop/ms724522\(v=vs.85\))|[CConstraintColumnUsage](#constraintcolumnusage)|[CConstraintColumnUsageInfo](#constraintcolumnusage)|  
+|[CONSTRAINT_TABLE_USAGE](/previous-versions/windows/desktop/ms713710\(v=vs.85\))|[CConstraintTableUsage](#constrainttableusage)|[CConstraintTableUsageInfo](#constrainttableusage)|  
+|[CHECK_CONSTRAINTS](/previous-versions/windows/desktop/ms712845\(v=vs.85\))|[CCheckConstraints](#checkconstraint)|[CCheckConstraintInfo](#checkconstraint)|  
+|[COLUMN_DOMAIN_USAGE](/previous-versions/windows/desktop/ms711240\(v=vs.85\))|[CColumnDomainUsage](#columndomainusage)|[CColumnDomainUsageInfo](#columndomainusage)|  
+|[FOREIGN_KEYS](/previous-versions/windows/desktop/ms711276\(v=vs.85\))|[CForeignKeys](#foreignkeys)|[CForeignKeysInfo](#foreignkeys)|  
+|[INDEXES](/previous-versions/windows/desktop/ms709712\(v=vs.85\))|[CIndexes](#index)|[CIndexInfo](#index)|  
+|[KEY_COLUMN_USAGE](/previous-versions/windows/desktop/ms712990\(v=vs.85\))|[CKeyColumn](#keycolumn)|[CKeyColumnInfo](#keycolumn)|  
+|[PRIMARY_KEYS](/previous-versions/windows/desktop/ms714362\(v=vs.85\))|[CPrimaryKeys](#primarykey)|[CPrimaryKeyInfo](#primarykey)|  
+|[PROCEDURES](/previous-versions/windows/desktop/ms724021\(v=vs.85\))|[CProcedures](#procedure)|[CProcedureInfo](#procedure)|  
+|[PROCEDURE_COLUMNS](/previous-versions/windows/desktop/ms723092\(v=vs.85\))|[CProcedureColumns](#procedurecolumn)|[CProcedureColumnInfo](#procedurecolumn)|  
+|[PROCEDURE_PARAMETERS](/previous-versions/windows/desktop/ms713623\(v=vs.85\))|[CProcedureParameters](#procedureparam)|[CProcedureParameterInfo](#procedureparam)|  
+|[PROVIDER_TYPES](/previous-versions/windows/desktop/ms709785\(v=vs.85\))|[CProviderTypes](#provider)|[CProviderInfo](#provider)|  
+|[REFERENTIAL_CONSTRAINTS](/previous-versions/windows/desktop/ms719737\(v=vs.85\))|[CReferentialConstraints](#referentialconstraint)|[CReferentialConstraintInfo](#referentialconstraint)|  
+|[SCHEMATA](/previous-versions/windows/desktop/ms716887\(v=vs.85\))|[CSchemata](#schemata)|[CSchemataInfo](#schemata)|  
+|[SQL_LANGUAGES](/previous-versions/windows/desktop/ms714374\(v=vs.85\))|[CSQLLanguages](#sqllanguage)|[CSQLLanguageInfo](#sqllanguage)|  
+|[STATISTICS](/previous-versions/windows/desktop/ms715957\(v=vs.85\))|[CStatistics](#statistic)|[CStatisticInfo](#statistic)|  
+|[TABLE_CONSTRAINTS](/previous-versions/windows/desktop/ms715921\(v=vs.85\))|[CTableConstraints](#tableconstraint)|[CTableConstraintInfo](#tableconstraint)|  
+|[TABLES](/previous-versions/windows/desktop/ms716980\(v=vs.85\))|[CTables](#table)|[CTableInfo](#table)|  
+|[TABLE_PRIVILEGES](/previous-versions/windows/desktop/ms725428\(v=vs.85\))|[CTablePrivileges](#tableprivilege)|[CTablePrivilegeInfo](#tableprivilege)|  
+|[TRANSLATIONS](/previous-versions/windows/desktop/ms725365\(v=vs.85\))|[CTranslations](#translation)|[CTranslationInfo](#translation)|  
+|[USAGE_PRIVILEGES](/previous-versions/windows/desktop/ms722743\(v=vs.85\))|[CUsagePrivileges](#usageprivilege)|[CUsagePrivilegeInfo](#usageprivilege)|  
+|[VIEW_COLUMN_USAGE](/previous-versions/windows/desktop/ms714896\(v=vs.85\))|[CViewColumnUsage](#viewcolumn)|[CViewColumnInfo](#viewcolumn)|  
+|[VIEWS](/previous-versions/windows/desktop/ms723122\(v=vs.85\))|[CViews](#view)|[CViewInfo](#view)|  
+|[VIEW_TABLE_USAGE](/previous-versions/windows/desktop/ms719727\(v=vs.85\))|[CViewTableUsage](#viewtable)|[CViewTableInfo](#viewtable)|  
   
 ## <a name="assertion"></a> CAssertions, CAssertionInfo
 Call the typedef class `CAssertions` to implement its parameter class `CAssertionInfo`.  
@@ -62,7 +62,7 @@ Call the typedef class `CAssertions` to implement its parameter class `CAssertio
   
  This class identifies the assertions defined in the catalog that are owned by a given user.  
   
- The following table lists the class data members for `CAssertionInfo` and their corresponding OLE DB Columns. See [ASSERTIONS Rowset](https://msdn.microsoft.com/library/ms719776.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members for `CAssertionInfo` and their corresponding OLE DB Columns. See [ASSERTIONS Rowset](/previous-versions/windows/desktop/ms719776\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -81,7 +81,7 @@ Call the typedef class `CCatalogs` to implement its parameter class `CCatalogInf
   
  This class identifies the physical attributes associated with catalogs accessible from the DBMS.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [CATALOGS Rowset](https://msdn.microsoft.com/library/ms721241.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [CATALOGS Rowset](/previous-versions/windows/desktop/ms721241\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -96,7 +96,7 @@ Call the typedef class `CCharacterSets` to implement its parameter class `CChara
   
  This class identifies the character sets defined in the catalog that are accessible to a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [CHARACTER_SETS Rowset](https://msdn.microsoft.com/library/ms722638.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [CHARACTER_SETS Rowset](/previous-versions/windows/desktop/ms722638\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -117,7 +117,7 @@ Call the typedef class `CCheckConstraints` to implement its parameter class `CCh
   
  This class identifies the check constraints, defined in the catalog, that are owned by a given user. A check constraint specifies the data values or formats that are acceptable in one or more columns in a table.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [CHECK_CONSTRAINTS Rowset](https://msdn.microsoft.com/library/ms712845.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [CHECK_CONSTRAINTS Rowset](/previous-versions/windows/desktop/ms712845\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -135,7 +135,7 @@ Call the typedef class `CCollations` to implement its parameter class `CCollatio
   
  This class identifies the character collations, defined in the catalog, that are accessible to a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [COLLATIONS Rowset](https://msdn.microsoft.com/library/ms715783.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [COLLATIONS Rowset](/previous-versions/windows/desktop/ms715783\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -155,7 +155,7 @@ Call the typedef class `CColumnDomainUsage` to implement its parameter class `CC
   
  This class identifies the columns, defined in the catalog, that are dependent on a domain defined in the catalog and owned by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [COLUMN_DOMAIN_USAGE Rowset](https://msdn.microsoft.com/library/ms711240.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [COLUMN_DOMAIN_USAGE Rowset](/previous-versions/windows/desktop/ms711240\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -177,7 +177,7 @@ Call the typedef class `CColumnPrivileges` to implement its parameter class `CCo
   
  This class identifies the privileges on columns of tables, defined in the catalog, that are available to or granted by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [COLUMN_PRIVILEGES Rowset](https://msdn.microsoft.com/library/ms715800.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [COLUMN_PRIVILEGES Rowset](/previous-versions/windows/desktop/ms715800\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -200,7 +200,7 @@ Call the typedef class `CColumns` to implement its parameter class `CColumnsInfo
   
  This class identifies the columns of tables defined in the catalog that are accessible to a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [COLUMNS Rowset](https://msdn.microsoft.com/library/ms723052.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [COLUMNS Rowset](/previous-versions/windows/desktop/ms723052\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -241,7 +241,7 @@ Call the typedef class `CConstraintColumnUsage` to implement its parameter class
   
  This class identifies the columns used by referential constraints, unique constraints, check constraints, and assertions, defined in the catalog and owned by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [CONSTRAINT_COLUMN_USAGE Rowset](https://msdn.microsoft.com/library/ms724522.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [CONSTRAINT_COLUMN_USAGE Rowset](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -263,7 +263,7 @@ Call the typedef class `CConstraintTableUsage` to implement its parameter class 
   
  This class identifies the tables used by referential constraints, unique constraints, check constraints, and assertions, defined in the catalog and owned by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [CONSTRAINT_TABLE_USAGE Rowset](https://msdn.microsoft.com/library/ms724522.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [CONSTRAINT_TABLE_USAGE Rowset](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -282,7 +282,7 @@ Call the typedef class `CForeignKeys` to implement its parameter class `CForeign
   
  This class identifies the foreign key columns defined in the catalog by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [FOREIGN_KEYS Rowset](https://msdn.microsoft.com/library/ms711276.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [FOREIGN_KEYS Rowset](/previous-versions/windows/desktop/ms711276\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -310,7 +310,7 @@ Call the typedef class `CIndexes` to implement its parameter class `CIndexInfo`.
   
  This class identifies the indexes, defined in the catalog, that are owned by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [INDEXES Rowset](https://msdn.microsoft.com/library/ms709712.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [INDEXES Rowset](/previous-versions/windows/desktop/ms709712\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -347,7 +347,7 @@ Call the typedef class `CKeyColumns` to implement its parameter class `CKeyColum
   
  This class identifies the columns, defined in the catalog, that are constrained as keys by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [KEY_COLUMN_USAGE Rowset](https://msdn.microsoft.com/library/ms712990.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [KEY_COLUMN_USAGE Rowset](/previous-versions/windows/desktop/ms712990\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -370,7 +370,7 @@ Call the typedef class `CPrimaryKeys` to implement its parameter class `CPrimary
   
  This class identifies the primary key columns defined in the catalog by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [PRIMARY_KEYS Rowset](https://msdn.microsoft.com/library/ms714362.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [PRIMARY_KEYS Rowset](/previous-versions/windows/desktop/ms714362\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -390,7 +390,7 @@ Call the typedef class `CProcedureColumns` to implement its parameter class `CPr
   
  This class returns information about the columns of rowsets returned by procedures.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [PROCEDURE_COLUMNS Rowset](https://msdn.microsoft.com/library/ms723092.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [PROCEDURE_COLUMNS Rowset](/previous-versions/windows/desktop/ms723092\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -419,7 +419,7 @@ Call the typedef class `CProcedureParameters` to implement its parameter class `
   
  This class returns information about the parameters and return codes of procedures.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [PROCEDURE_PARAMETERS Rowset](https://msdn.microsoft.com/library/ms713623.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [PROCEDURE_PARAMETERS Rowset](/previous-versions/windows/desktop/ms713623\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -447,7 +447,7 @@ Call the typedef class `CProcedures` to implement its parameter class `CProcedur
   
  This class identifies the procedures, defined in the catalog, that are owned by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [PROCEDURES Rowset](https://msdn.microsoft.com/library/ms724021.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [PROCEDURES Rowset](/previous-versions/windows/desktop/ms724021\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -466,7 +466,7 @@ Call the typedef class `CProviderTypes` to implement its parameter class `CProvi
   
  This class identifies the (base) data types supported by the data provider.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [PROVIDER_TYPES Rowset](https://msdn.microsoft.com/library/ms709785.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [PROVIDER_TYPES Rowset](/previous-versions/windows/desktop/ms709785\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -499,7 +499,7 @@ Call the typedef class `CReferentialConstraints` to implement its parameter clas
   
  This class identifies the referential constraints, defined in the catalog, that are owned by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [REFERENTIAL_CONSTRAINTS Rowset](https://msdn.microsoft.com/library/ms719737.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [REFERENTIAL_CONSTRAINTS Rowset](/previous-versions/windows/desktop/ms719737\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -522,7 +522,7 @@ Call the typedef class `CSchemata` to implement its parameter class `CSchemataIn
   
  This class identifies the schemas that are owned by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [SCHEMATA Rowset](https://msdn.microsoft.com/library/ms716887.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [SCHEMATA Rowset](/previous-versions/windows/desktop/ms716887\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -541,7 +541,7 @@ Call the typedef class `CSQLLanguages` to implement its parameter class `CSQLLan
   
  This class identifies the conformance levels, options, and dialects supported by the SQL-implementation processing data defined in the catalog.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [SQL_LANGUAGES Rowset](https://msdn.microsoft.com/library/ms714374.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [SQL_LANGUAGES Rowset](/previous-versions/windows/desktop/ms714374\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -561,7 +561,7 @@ Call the typedef class `CStatistics` to implement its parameter class `CStatisti
   
  This class identifies the statistics, defined in the catalog, that are owned by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [STATISTICS Rowset](https://msdn.microsoft.com/library/ms715957.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [STATISTICS Rowset](/previous-versions/windows/desktop/ms715957\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -578,7 +578,7 @@ Call the typedef class `CTableConstraints` to implement its parameter class `CTa
   
  This class identifies the table constraints, defined in the catalog, that are owned by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [TABLE_CONSTRAINTS Rowset](https://msdn.microsoft.com/library/ms715921.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [TABLE_CONSTRAINTS Rowset](/previous-versions/windows/desktop/ms715921\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -601,7 +601,7 @@ Call the typedef class `CTablePrivileges` to implement its parameter class `CTab
   
  This class identifies the tables defined in the catalog that are accessible to a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [TABLE_PRIVILEGES Rowset](https://msdn.microsoft.com/library/ms725428.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [TABLE_PRIVILEGES Rowset](/previous-versions/windows/desktop/ms725428\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -621,7 +621,7 @@ Call the typedef class `CTables` to implement its parameter class `CTableInfo`.
   
  This class identifies the privileges on tables, defined in the catalog, that are available to or granted by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [TABLES Rowset](https://msdn.microsoft.com/library/ms716980.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [TABLES Rowset](/previous-versions/windows/desktop/ms716980\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -640,7 +640,7 @@ Call the typedef class `CTranslations` to implement its parameter class `CTransl
   
  This class identifies the character translations defined in the catalog that are accessible to a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [TRANSLATIONS Rowset](https://msdn.microsoft.com/library/ms725365.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [TRANSLATIONS Rowset](/previous-versions/windows/desktop/ms725365\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -662,7 +662,7 @@ Call the typedef class `CUsagePrivileges` to implement its parameter class `CUsa
   
  This class identifies the USAGE privileges on objects defined in the catalog that are available to or granted by a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [USAGE_PRIVILEGES Rowset](https://msdn.microsoft.com/library/ms722743.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [USAGE_PRIVILEGES Rowset](/previous-versions/windows/desktop/ms722743\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -683,7 +683,7 @@ Call the typedef class `CViewColumnUsage` to implement its parameter class `CVie
   
  This class identifies the columns on which viewed tables, defined in the catalog and owned by a given user, are dependent.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [VIEW_COLUMN_USAGE Rowset](https://msdn.microsoft.com/library/ms714896.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [VIEW_COLUMN_USAGE Rowset](/previous-versions/windows/desktop/ms714896\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -705,7 +705,7 @@ Call the typedef class `CViews` to implement its parameter class `CViewInfo`.
   
  This class identifies the tables on which viewed tables, defined in the catalog and owned by a given user, are dependent.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [VIEWS Rowset](https://msdn.microsoft.com/library/ms723122.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [VIEWS Rowset](/previous-versions/windows/desktop/ms723122\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  
@@ -725,7 +725,7 @@ Call the typedef class `CViewTableUsage` to implement its parameter class `CView
   
  This class identifies the viewed tables, defined in the catalog, that are accessible to a given user.  
   
- The following table lists the class data members and their corresponding OLE DB Columns. See [VIEW_TABLE_USAGE Rowset](https://msdn.microsoft.com/library/ms719727.aspx) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
+ The following table lists the class data members and their corresponding OLE DB Columns. See [VIEW_TABLE_USAGE Rowset](/previous-versions/windows/desktop/ms719727\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information about the schema and columns.  
   
 |Data members|OLE DB columns|  
 |------------------|--------------------|  

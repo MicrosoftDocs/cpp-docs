@@ -34,7 +34,7 @@ void __lidt(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__lidt`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__lidt`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

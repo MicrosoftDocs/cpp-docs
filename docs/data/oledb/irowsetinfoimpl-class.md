@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetInfoImpl Class
-Provides an implementation for the [IRowsetInfo](https://msdn.microsoft.com/library/ms724541.aspx) interface.  
+Provides an implementation for the [IRowsetInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) interface.  
   
 ## Syntax
 
@@ -60,7 +60,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 ```  
   
 #### Parameters  
- See [IRowsetInfo::GetProperties](https://msdn.microsoft.com/library/ms719611.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IRowsetInfo::GetProperties](/previous-versions/windows/desktop/ms719611\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="getreferencedrowset"></a> IRowsetInfoImpl::GetReferencedRowset
 Returns an interface pointer to the rowset to which a bookmark applies.  
@@ -74,7 +74,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 ```  
   
 #### Parameters  
- See [IRowsetInfo::GetReferencedRowset](https://msdn.microsoft.com/library/ms721145.aspx) in the *OLE DB Programmer's Reference*. The *iOrdinal* parameter must be a bookmark column. 
+ See [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145\(v=vs.85\)) in the *OLE DB Programmer's Reference*. The *iOrdinal* parameter must be a bookmark column. 
 
 ## <a name="getspecification"></a> IRowsetInfoImpl::GetSpecification
 Returns an interface pointer on the object (command or session) that created this rowset.  
@@ -87,7 +87,7 @@ STDMETHOD (GetSpecification )(REFIID riid,
 ```  
   
 #### Parameters  
- See [IRowsetInfo::GetSpecification](https://msdn.microsoft.com/library/ms716746.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
  Use this method with [IGetDataSourceImpl](../../data/oledb/igetdatasourceimpl-class.md) to retrieve properties from the data source object.  

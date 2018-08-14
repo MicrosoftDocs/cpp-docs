@@ -32,7 +32,7 @@ unsigned __int64 __readcr0(void);  /* X64 */
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readcr0`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readcr0`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

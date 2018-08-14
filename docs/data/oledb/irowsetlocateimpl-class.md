@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetLocateImpl Class
-Implements the OLE DB [IRowsetLocate](https://msdn.microsoft.com/library/ms721190.aspx) interface, which fetches arbitrary rows from a rowset.  
+Implements the OLE DB [IRowsetLocate](/previous-versions/windows/desktop/ms721190\(v=vs.85\)) interface, which fetches arbitrary rows from a rowset.  
   
 ## Syntax
 
@@ -47,7 +47,7 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
  The storage unit for all row handles held by the provider.  
   
  *BookmarkKeyType*  
- The type of the bookmark, such as a LONG or a string. Ordinary bookmarks must have a length of at least two bytes. (Single-byte length is reserved for the OLE DB [standard bookmarks](https://msdn.microsoft.com/library/ms712954.aspx)`DBBMK_FIRST`, `DBBMK_LAST`, and `DBBMK_INVALID`.)  
+ The type of the bookmark, such as a LONG or a string. Ordinary bookmarks must have a length of at least two bytes. (Single-byte length is reserved for the OLE DB [standard bookmarks](/previous-versions/windows/desktop/ms712954\(v=vs.85\))`DBBMK_FIRST`, `DBBMK_LAST`, and `DBBMK_INVALID`.)  
   
  *BookmarkType*  
  The mapping mechanism for maintaining bookmark-to-data relationships.  
@@ -76,13 +76,13 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 |[m_rgBookmarks](#rgbookmarks)|An array of bookmarks.|  
   
 ## Remarks  
- `IRowsetLocateImpl` is the OLE DB Templates implementation of the [IRowsetLocate](https://msdn.microsoft.com/library/ms721190.aspx) interface. `IRowsetLocate` is used to fetch arbitrary rows from a rowset. A rowset that does not implement this interface is a `sequential` rowset. When `IRowsetLocate` is present on a rowset, column 0 is the bookmark for the rows; reading this column will obtain a bookmark value that can be used to reposition to the same row.  
+ `IRowsetLocateImpl` is the OLE DB Templates implementation of the [IRowsetLocate](/previous-versions/windows/desktop/ms721190\(v=vs.85\)) interface. `IRowsetLocate` is used to fetch arbitrary rows from a rowset. A rowset that does not implement this interface is a `sequential` rowset. When `IRowsetLocate` is present on a rowset, column 0 is the bookmark for the rows; reading this column will obtain a bookmark value that can be used to reposition to the same row.  
   
  `IRowsetLocateImpl` is used to implement bookmark support in providers. Bookmarks are placeholders (indices on a rowset) that enable the consumer to return quickly to a row, allowing high-speed access to data. The provider determines what bookmarks can uniquely identify a row. Using `IRowsetLocateImpl` methods, you can compare bookmarks, fetch rows by offset, fetch rows by bookmark, and return hash values for bookmarks.  
   
  To support OLE DB bookmarks in a rowset, make the rowset inherit from this class.  
   
- For information on implementing bookmark support, see [Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md) in the *Visual C++ Programmer's Guide* and [Bookmarks](https://msdn.microsoft.com/library/ms709728.aspx) in the *OLE DB Programmer's Reference* in the Platform SDK.  
+ For information on implementing bookmark support, see [Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md) in the *Visual C++ Programmer's Guide* and [Bookmarks](/previous-versions/windows/desktop/ms709728\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Platform SDK.  
 
 ## <a name="compare"></a> IRowsetLocateImpl::Compare
 Compares two bookmarks.  
@@ -99,10 +99,10 @@ STDMETHOD (Compare )(HCHAPTER /* hReserved */,
 ```  
   
 #### Parameters  
- See [IRowsetLocate::Compare](https://msdn.microsoft.com/library/ms709539.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
- Either of the bookmarks can be a standard OLE DB-defined [standard bookmark](https://msdn.microsoft.com/library/ms712954.aspx) (`DBBMK_FIRST`, `DBBMK_LAST`, or `DBBMK_INVALID`). The value returned in `pComparison` indicates the relationship between the two bookmarks:  
+ Either of the bookmarks can be a standard OLE DB-defined [standard bookmark](/previous-versions/windows/desktop/ms712954\(v=vs.85\)) (`DBBMK_FIRST`, `DBBMK_LAST`, or `DBBMK_INVALID`). The value returned in `pComparison` indicates the relationship between the two bookmarks:  
   
 -   DBCOMPARE_LT (`cbBookmark1` is before `cbBookmark2`.)  
   
@@ -131,10 +131,10 @@ STDMETHOD (GetRowsAt )(HWATCHREGION /* hReserved1 */,
 ```  
   
 #### Parameters  
- See [IRowsetLocate::GetRowsAt](https://msdn.microsoft.com/library/ms723031.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowsetLocate::GetRowsAt](/previous-versions/windows/desktop/ms723031\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
- To fetch from the cursor position instead, use [IRowset::GetRowsAt](https://msdn.microsoft.com/library/ms723031.aspx).  
+ To fetch from the cursor position instead, use [IRowset::GetRowsAt](/previous-versions/windows/desktop/ms723031\(v=vs.85\)).  
   
  `IRowsetLocateImpl::GetRowsAt` does not change the cursor position. 
 
@@ -154,12 +154,12 @@ STDMETHOD (GetRowsByBookmark )(HCHAPTER /* hReserved */,
   
 #### Parameters  
  *hReserved*  
- [in] Corresponds to *hChapter* parameter to [IRowsetLocate::GetRowsByBookmark](https://msdn.microsoft.com/library/ms725420.aspx).  
+ [in] Corresponds to *hChapter* parameter to [IRowsetLocate::GetRowsByBookmark](/previous-versions/windows/desktop/ms725420\(v=vs.85\)).  
   
- For other parameters, see [IRowsetLocate::GetRowsByBookmark](https://msdn.microsoft.com/library/ms725420.aspx) in the *OLE DB Programmer's Reference*.  
+ For other parameters, see [IRowsetLocate::GetRowsByBookmark](/previous-versions/windows/desktop/ms725420\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
- The bookmark can be a value you define or an OLE DB [standard bookmarks](https://msdn.microsoft.com/library/ms712954.aspx) (`DBBMK_FIRST` or `DBBMK_LAST`). Does not change the cursor position.  
+ The bookmark can be a value you define or an OLE DB [standard bookmarks](/previous-versions/windows/desktop/ms712954\(v=vs.85\)) (`DBBMK_FIRST` or `DBBMK_LAST`). Does not change the cursor position.  
 
 ## <a name="hash"></a> IRowsetLocateImpl::Hash
 Returns hash values for the specified bookmarks.  
@@ -177,9 +177,9 @@ STDMETHOD (Hash )(HCHAPTER /* hReserved */,
   
 #### Parameters  
  *hReserved*  
- [in] Corresponds to *hChapter* parameter to [IRowsetLocate::Hash](https://msdn.microsoft.com/library/ms709697.aspx).  
+ [in] Corresponds to *hChapter* parameter to [IRowsetLocate::Hash](/previous-versions/windows/desktop/ms709697\(v=vs.85\)).  
   
- For other parameters, see [IRowsetLocate::Hash](https://msdn.microsoft.com/library/ms709697.aspx) in the *OLE DB Programmer's Reference*.  
+ For other parameters, see [IRowsetLocate::Hash](/previous-versions/windows/desktop/ms709697\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="rgbookmarks"></a> IRowsetLocateImpl::m_rgBookmarks
 An array of bookmarks.  
@@ -193,6 +193,6 @@ CAtlArray<DBROWCOUNT> m_rgBookmarks;
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
  [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)   
- [IRowsetLocate:IRowset](https://msdn.microsoft.com/library/ms721190.aspx)   
+ [IRowsetLocate:IRowset](/previous-versions/windows/desktop/ms721190\(v=vs.85\))   
  [Provider Support for Bookmarks](../../data/oledb/provider-support-for-bookmarks.md)   
- [Bookmarks](https://msdn.microsoft.com/library/ms709728.aspx)
+ [Bookmarks](/previous-versions/windows/desktop/ms709728\(v=vs.85\))

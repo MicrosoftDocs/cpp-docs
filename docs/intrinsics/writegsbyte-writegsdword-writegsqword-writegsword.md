@@ -49,10 +49,10 @@ void __writegsqword( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__writegsbyte`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__writegsdword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__writegsqword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__writegsword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writegsbyte`|x64|  
+|`__writegsdword`|x64|  
+|`__writegsqword`|x64|  
+|`__writegsword`|x64|  
   
  **Header file** \<intrin.h>  
   

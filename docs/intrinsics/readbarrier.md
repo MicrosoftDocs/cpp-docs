@@ -31,7 +31,7 @@ void _ReadBarrier(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_ReadBarrier`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_ReadBarrier`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

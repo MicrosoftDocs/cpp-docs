@@ -44,8 +44,8 @@ unsigned char _bittestandcomplement64(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_bittestandcomplement`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_bittestandcomplement64`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_bittestandcomplement`|x86, ARM, x64|  
+|`_bittestandcomplement64`|x64|  
   
  **Header file** \<intrin.h>  
   

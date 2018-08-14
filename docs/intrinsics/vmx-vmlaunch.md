@@ -41,7 +41,7 @@ unsigned char __vmx_vmlaunch(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__vmx_vmlaunch`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmlaunch`|x64|  
   
  **Header file** \<intrin.h>  
   

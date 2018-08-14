@@ -37,7 +37,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/errorReport](errorreport-report-internal-compiler-errors.md)|Allows you to provide internal compiler error (ICE) information directly to the Visual C++ team.|
 |[/execution-charset](execution-charset-set-execution-character-set.md)|Set execution character set.|
 |[/F](f-set-stack-size.md)|Sets stack size.|
-|[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specific [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] architecture or for the specifics of micro-architectures in both the AMD64 and Extended Memory 64 Technology (EM64T) architectures.|
+|[/favor](favor-optimize-for-architecture-specifics.md)|Produces code that is optimized for a specific x64 architecture or for the specifics of micro-architectures in both the AMD64 and Extended Memory 64 Technology (EM64T) architectures.|
 |[/FA](fa-fa-listing-file.md)|Creates a listing file.|
 |[/Fa](fa-fa-listing-file.md)|Sets the listing file name.|
 |[/FC](fc-full-path-of-source-code-file-in-diagnostics.md)|Display full path of source code files passed to cl.exe in diagnostic text.|
@@ -75,7 +75,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/Gz](gd-gr-gv-gz-calling-convention.md)|Uses the `__stdcall` calling convention (x86 only).|
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
 |[/HELP](help-compiler-command-line-help.md)|Lists the compiler options.|
-|[/homeparams](homeparams-copy-register-parameters-to-stack.md)|Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] compilers (native and cross compile).|
+|[/homeparams](homeparams-copy-register-parameters-to-stack.md)|Forces parameters passed in registers to be written to their locations on the stack upon function entry. This compiler option is only for the x64 compilers (native and cross compile).|
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|Creates a hotpatchable image.|
 |[/I](i-additional-include-directories.md)|Searches a directory for include files.|
 |[/J](j-default-char-type-is-unsigned.md)|Changes the default `char` type.|

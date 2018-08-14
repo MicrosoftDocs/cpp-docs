@@ -32,7 +32,7 @@ class CDynamicAccessor : public CAccessorBase
 |-|-|  
 |[AddBindEntry](#addbindentry)|Adds a bind entry to the output columns when overriding the default accessor.|  
 |[CDynamicAccessor](#cdynamicaccessor)|Instantiates and initializes the `CDynamicAccessor` object.|  
-|[Close](#close)|Unbinds all the columns, releases the allocated memory, and releases the [IAccessor](https://msdn.microsoft.com/library/ms719672.aspx) interface pointer in the class.|  
+|[Close](#close)|Unbinds all the columns, releases the allocated memory, and releases the [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) interface pointer in the class.|  
 |[GetBlobHandling](#getblobhandling)|Retrieves the BLOB handling value for the current row.|  
 |[GetBlobSizeLimit](#getblobsizelimit)|Retrieves the maximum BLOB size in bytes.|  
 |[GetBookmark](#getbookmark)|Retrieves the bookmark for the current row.|  
@@ -69,7 +69,7 @@ HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
   
 #### Parameters  
  *info*  
- [in] A `DBCOLUMNINFO` structure containing column information. See "DBCOLUMNINFO Structures" in [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) in the *OLE DB Programmer's Reference*.  
+ [in] A `DBCOLUMNINFO` structure containing column information. See "DBCOLUMNINFO Structures" in [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  One of the standard HRESULT values.  
@@ -100,7 +100,7 @@ CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
  You can also specify how `CDynamicAccessor` handles column data that qualifies as BLOB data: it can handle BLOB data in the default manner; it can skip (does not bind) BLOB data; or it can bind BLOB data in provider-allocated memory.  
 
 ## <a name="close"></a> CDynamicAccessor::Close
-Unbinds all the columns, releases the allocated memory, and releases the [IAccessor](https://msdn.microsoft.com/library/ms719672.aspx) interface pointer in the class.  
+Unbinds all the columns, releases the allocated memory, and releases the [IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\)) interface pointer in the class.  
   
 ### Syntax  
   
@@ -178,7 +178,7 @@ bool GetColumnFlags(DBORDINAL nColumn, 
  [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
  *pFlags*  
- [out] A pointer to a bitmask that describes column characteristics. See "DBCOLUMNFLAGS Enumerated Type" in [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) in the *OLE DB Programmer's Reference*.  
+ [out] A pointer to a bitmask that describes column characteristics. See "DBCOLUMNFLAGS Enumerated Type" in [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  Returns **true** if the column characteristics are successfully retrieved. Otherwise, it returns **false**.  
@@ -200,13 +200,13 @@ HRESULT GetColumnInfo(IRowset* pRowset, 
   
 #### Parameters  
  *pRowset*  
- [in] A pointer to the [IRowset](https://msdn.microsoft.com/library/ms720986.aspx) interface.  
+ [in] A pointer to the [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) interface.  
   
  *pColumns*  
  [out] A pointer to memory in which to return the number of columns in the rowset; this number includes the bookmark column, if there is one.  
   
  *ppColumnInfo*  
- [out] A pointer to memory in which to return an array of `DBCOLUMNINFO` structures. See "DBCOLUMNINFO Structures" in [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) in the *OLE DB Programmer's Reference*.  
+ [out] A pointer to memory in which to return an array of `DBCOLUMNINFO` structures. See "DBCOLUMNINFO Structures" in [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *ppStringsBuffer*  
  [out] A pointer to memory in which to return a pointer to storage for all string values (names used either within *columnid* or for *pwszName*) within a single allocation block.  
@@ -215,7 +215,7 @@ HRESULT GetColumnInfo(IRowset* pRowset, 
  One of the standard HRESULT values.  
   
 ### Remarks  
- See [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) in the *OLE DB Programmer's Reference* for information on the data types `DBORDINAL`, `DBCOLUMNINFO`, and `OLECHAR`.  
+ See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference* for information on the data types `DBORDINAL`, `DBCOLUMNINFO`, and `OLECHAR`.  
 
 ## <a name="getcolumnname"></a> CDynamicAccessor::GetColumnName
 Retrieves the name of the specified column.  
@@ -332,7 +332,7 @@ bool GetStatus(const WCHAR* pColumnName,
  [in] A pointer to a character string containing the column name.  
   
  *pStatus*  
- [out] A pointer to the variable containing the column status. See [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) in the *OLE DB Programmer's Reference* for more information.  
+ [out] A pointer to the variable containing the column status. See [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
   
 ### Return Value  
  Returns **true** if the specified column is found. Otherwise, this function returns **false**.  
@@ -474,7 +474,7 @@ bool SetStatus(const WCHAR* pColumnName, 
  [in] The column number. Column numbers start with 1. A value of 0 refers to the bookmark column, if any.  
   
  *status*  
- [in] The column status. See [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) in the *OLE DB Programmer's Reference* for more information.  
+ [in] The column status. See [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
   
  *pColumnName*  
  [in] A pointer to a character string containing the column name.  

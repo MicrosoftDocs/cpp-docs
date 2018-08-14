@@ -32,7 +32,7 @@ void __ud2();
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__ud2`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ud2`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

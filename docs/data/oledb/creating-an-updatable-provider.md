@@ -20,7 +20,7 @@ Visual C++ supports updatable providers or providers that can update (write to) 
  Next, you must make sure your provider contains all the functionality to support anything the consumer might request of it. If the consumer wants to update the data store, the provider has to contain code that persists data to the data store. For example, you might use the C Run-Time Library or MFC to perform such operations on your data source. The section "[Writing to the Data Source](#vchowwritingtothedatasource)" describes how to write to the data source, deal with NULL and default values, and set column flags.  
   
 > [!NOTE]
->  UpdatePV is an example of an updatable provider. UpdatePV is the same as MyProv but with updatable support.  
+>  [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) is an example of an updatable provider. UpdatePV is the same as MyProv but with updatable support.  
   
 ##  <a name="vchowmakingprovidersupdatable"></a> Making Providers Updatable  
 

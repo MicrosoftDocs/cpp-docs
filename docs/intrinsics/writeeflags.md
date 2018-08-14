@@ -35,7 +35,7 @@ void __writeeflags(unsigned __int64 Value);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__writeeflags`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writeeflags`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

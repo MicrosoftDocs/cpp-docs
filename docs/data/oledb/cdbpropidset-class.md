@@ -41,7 +41,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 |[operator =](#op_equal)|Assigns the contents of one property ID set to another.|  
   
 ## Remarks  
- OLE DB consumers use `DBPROPIDSET` structures to pass an array of property IDs for which the consumer wants to get property information. The properties identified in a single [DBPROPIDSET](https://msdn.microsoft.com/library/ms717981.aspx) structure belong to one property set.  
+ OLE DB consumers use `DBPROPIDSET` structures to pass an array of property IDs for which the consumer wants to get property information. The properties identified in a single [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) structure belong to one property set.  
 
 ## <a name="addpropertyid"></a> CDBPropIDSet::AddPropertyID
 Adds a property ID to the property ID set.  
@@ -57,7 +57,7 @@ bool AddPropertyID(DBPROPID propid) throw();
  [in] The property ID to be added to the property ID set.  
 
 ## <a name="cdbpropidset"></a> CDBPropIDSet::CDBPropIDSet
-The constructor. Initializes the `rgProperties`, `cProperties`, and (optionally) `guidPropertySet` fields of the [DBPROPIDSET](https://msdn.microsoft.com/library/ms717981.aspx) structure.  
+The constructor. Initializes the `rgProperties`, `cProperties`, and (optionally) `guidPropertySet` fields of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) structure.  
   
 ### Syntax  
   
@@ -87,7 +87,7 @@ void SetGUID(const GUID& guid) throw();
   
 #### Parameters  
  *guid*  
- [in] A GUID used to set the `guidPropertySet` field of the [DBPROPIDSET](https://msdn.microsoft.com/library/ms717981.aspx) structure.  
+ [in] A GUID used to set the `guidPropertySet` field of the [DBPROPIDSET](/previous-versions/windows/desktop/ms717981\(v=vs.85\)) structure.  
   
 ### Remarks  
  This field can be set by the [constructor](../../data/oledb/cdbpropidset-cdbpropidset.md) as well. Call this function if you use the default constructor for this class.  

@@ -29,7 +29,7 @@ The database classes provide a simpler interface to a [data source](../../data/o
   
 -   Deallocate storage when you finish.  
   
- For more information about these steps, see the [Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/ms710252.aspx) SDK in the MSDN documentation.  
+ For more information about these steps, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252\(v=vs.85\)) SDK in the MSDN documentation.  
   
  In addition to these steps, you need to take extra steps to check function return values, ensure that your program is not waiting for an asynchronous call to finish, and so on. You can simplify these last steps by using the AFX_SQL_ASYNC and AFX_SQL_SYNC macros. For more information, see [Macros and Globals](../../mfc/reference/mfc-macros-and-globals.md) in the *MFC Reference*.  
 

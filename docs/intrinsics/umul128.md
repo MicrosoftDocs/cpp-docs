@@ -44,7 +44,7 @@ unsigned __int64 _umul128( 
   
 |Intrinsic|Architecture|Header|  
 |---------------|------------------|------------|  
-|`_umul128`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_umul128`|ARM, x64|\<intrin.h>|  
   
 ## Example  
   
