@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IGetDataSourceImpl Class
-Provides an implementation of the [IGetDataSource](https://msdn.microsoft.com/library/ms709721.aspx) object.  
+Provides an implementation of the [IGetDataSource](/previous-versions/windows/desktop/ms709721\(v=vs.85\)) object.  
   
 ## Syntax
 
@@ -51,7 +51,7 @@ STDMETHOD(GetDataSource)(REFIID riid, 
 ```  
   
 #### Parameters  
- See [IGetDataSource::GetDataSource](https://msdn.microsoft.com/library/ms725443.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IGetDataSource::GetDataSource](/previous-versions/windows/desktop/ms725443\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
  Useful if you need to access properties in the data source object.  

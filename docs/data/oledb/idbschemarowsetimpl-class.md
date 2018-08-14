@@ -47,15 +47,15 @@ class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset
 |[GetSchemas](#getschemas)|Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md).|  
   
 ## Remarks  
- This class implements the [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) interface and the templatized creator function [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md).  
+ This class implements the [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) interface and the templatized creator function [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md).  
   
- OLE DB uses schema rowsets to return data about the data in a provider. Such data is often called "metadata." By default, a provider must always support `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, and `DBSCHEMA_PROVIDER_TYPES`, as described in [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) in the *OLE DB Programmer's Reference*. Schema rowsets are designated in a schema map. For information about the schema map entries, see [SCHEMA_ENTRY](../../data/oledb/schema-entry.md).  
+ OLE DB uses schema rowsets to return data about the data in a provider. Such data is often called "metadata." By default, a provider must always support `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, and `DBSCHEMA_PROVIDER_TYPES`, as described in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference*. Schema rowsets are designated in a schema map. For information about the schema map entries, see [SCHEMA_ENTRY](../../data/oledb/schema-entry.md).  
   
  The OLE DB Provider Wizard, in the ATL Object Wizard, automatically generates code for the schema rowsets in your project. (By default, the wizard supports the mandatory schema rowsets previously mentioned.) When you create a consumer using the ATL Object Wizard, the wizard uses schema rowsets to bind the correct data to a provider. If you do not implement your schema rowsets to provide the correct metadata, the wizard will not bind the correct data.  
   
  For information on how to support schema rowsets in your provider, see [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md).  
   
- For more information about schema rowsets, see [Schema Rowsets](https://msdn.microsoft.com/library/ms712921.aspx) in the *OLE DB Programmer's Reference*.  
+ For more information about schema rowsets, see [Schema Rowsets](/previous-versions/windows/desktop/ms712921\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="checkrestrictions"></a> IDBSchemaRowsetImpl::CheckRestrictions
 Checks the validity of restrictions against a schema rowset.  
@@ -82,7 +82,7 @@ HRESULT CheckRestrictions(REFGUID rguidSchema,
   
  `CheckRestrictions` determines if the consumer is calling [GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) with the correct restriction and the correct restriction type (for example, a VT_BSTR for a string) that the provider supports. It also determines if the correct number of restrictions are supported. By default, `CheckRestrictions` will ask the provider, through the [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) call, which restrictions it supports on a given rowset. It then compares the restrictions from the consumer against those supported by the provider and either succeeds or fails.  
   
- For more information on schema rowsets, see [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
+ For more information on schema rowsets, see [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK.  
 
 ## <a name="createschemarowset"></a> IDBSchemaRowsetImpl::CreateSchemaRowset
 Implements a COM object creator function for the object specified by the template parameter.  
@@ -118,7 +118,7 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
  [in] The number of property sets to set.  
   
  *rgPropertySets*  
- [in] An array of [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) structures that specify the properties being set.  
+ [in] An array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures that specify the properties being set.  
   
  *ppRowset*  
  [out] The outgoing `IUnknown` requested by *riid*. This `IUnknown` is an interface on the schema rowset object.  
@@ -151,7 +151,7 @@ void SetRestrictions(ULONG cRestrictions,
  [in] An array of the GUIDs of the schema rowsets for which to fetch restrictions. Each array element contains the GUID of one schema rowset (for example, `DBSCHEMA_TABLES`).  
   
  *rgRestrictions*  
- [in] An array of length *cRestrictions* of restriction values to be set. Each element corresponds to the restrictions on the schema rowset identified by the GUID. If a schema rowset is not supported by the provider, the element is set to zero. Otherwise, the **ULONG** value contains a bit mask that represents the restrictions supported on that schema rowset. For more information on which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
+ [in] An array of length *cRestrictions* of restriction values to be set. Each element corresponds to the restrictions on the schema rowset identified by the GUID. If a schema rowset is not supported by the provider, the element is set to zero. Otherwise, the **ULONG** value contains a bit mask that represents the restrictions supported on that schema rowset. For more information on which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
 ### Remarks  
  The `IDBSchemaRowset` object calls `SetRestrictions` to determine which restrictions you support on a particular schema rowset (it is called by [GetSchemas](../../data/oledb/idbschemarowsetimpl-getschemas.md) through an upcasted pointer). Restrictions allow consumers to fetch only matching rows (for example, find all the columns in the table "MyTable"). Restrictions are optional, and in the case in which none are supported (the default), all data is always returned.  
@@ -160,9 +160,9 @@ void SetRestrictions(ULONG cRestrictions,
   
  For information on implementing schema rowset support, see [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md).  
   
- For an example of an provider that supports schema rowsets, see the [UpdatePV](../../visual-cpp-samples.md) sample.  
+ For an example of an provider that supports schema rowsets, see the [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) sample.  
   
- For more information on schema rowsets, see [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK. 
+ For more information on schema rowsets, see [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK. 
   
 ## <a name="getrowset"></a> IDBSchemaRowsetImpl::GetRowset
 Returns a schema rowset.  
@@ -200,7 +200,7 @@ STDMETHOD (GetRowset)(IUnknown *pUnkOuter,
  [in] The number of property sets to set.  
   
  *rgPropertySets*  
- [in/out] An array of [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) structures to set on the newly created schema rowset.  
+ [in/out] An array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures to set on the newly created schema rowset.  
   
  *ppRowset*  
  [out] A pointer to the requested interface on the newly created schema rowset.  
@@ -208,7 +208,7 @@ STDMETHOD (GetRowset)(IUnknown *pUnkOuter,
 ### Remarks  
  This method requires the user to have a schema map in the session class. Using the schema map information, `GetRowset` creates a given rowset object if the *rguidSchema* parameter is equal to one of the map entries GUIDs. See [SCHEMA_ENTRY](../../data/oledb/schema-entry.md) for a description of the map entry.  
   
- See [IDBSchemaRowset::GetRowset](https://msdn.microsoft.com/library/ms722634.aspx) in the Windows SDK.  
+ See [IDBSchemaRowset::GetRowset](/previous-versions/windows/desktop/ms722634\(v=vs.85\)) in the Windows SDK.  
 
 ## <a name="getschemas"></a> IDBSchemaRowsetImpl::GetSchemas
 Returns a list of schema rowsets accessible by [IDBSchemaRowsetImpl::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md).  
@@ -232,7 +232,7 @@ STDMETHOD (GetSchema s )(ULONG * pcSchemas,
  [out] A pointer to an array of **ULONG**s that is to be filled with the restriction array.  
   
 ### Remarks  
- This method returns an array of all schema rowsets supported by the provider. See [IDBSchemaRowset::GetSchemas](https://msdn.microsoft.com/library/ms719605.aspx) in the Windows SDK.  
+ This method returns an array of all schema rowsets supported by the provider. See [IDBSchemaRowset::GetSchemas](/previous-versions/windows/desktop/ms719605\(v=vs.85\)) in the Windows SDK.  
   
  The implementation of this function requires the user to have a schema map in the session class. Using the schema map information, it then responds with the array of GUIDs for the schemas in the map. This represents the schemas supported by the provider.  
 

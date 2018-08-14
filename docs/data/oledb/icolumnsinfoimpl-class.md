@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IColumnsInfoImpl Class
-Provides an implementation of the [IColumnsInfo](https://msdn.microsoft.com/library/ms724541.aspx) interface.  
+Provides an implementation of the [IColumnsInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\)) interface.  
   
 ## Syntax
 
@@ -55,7 +55,7 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
 ```  
   
 #### Parameters  
- See [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/library/ms722704.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IColumnsInfo::GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="mapcolumnids"></a> IColumnsInfoImpl::MapColumnIDs
 Returns an array of ordinals of the columns in a rowset that are identified by the specified column IDs.  
@@ -69,7 +69,7 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
 ```  
   
 #### Parameters  
- See [IColumnsInfo::MapColumnIDs](https://msdn.microsoft.com/library/ms714200.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   

@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Referencing a Property in Your Provider
-Find the property group and property ID for the property you want. For more information, see [OLE DB Properties](https://msdn.microsoft.com/library/ms722734.aspx) in the *OLE DB Programmer's Reference*.  
+Find the property group and property ID for the property you want. For more information, see [OLE DB Properties](/previous-versions/windows/desktop/ms722734\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  The following example assumes that you are trying to get a property from the rowset. The code for using the session or command is similar, but uses a different interface.  
   

@@ -16,11 +16,11 @@ A [transaction](../../data/transactions-mfc-data-access.md) is a way to group, o
   
  OLE DB supports transactions with the following three methods:  
   
--   [ITransactionLocal::StartTransaction](https://msdn.microsoft.com/library/ms709786.aspx)  
+-   [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786\(v=vs.85\))  
   
--   [ITransaction::Commit](https://msdn.microsoft.com/library/ms713008.aspx)  
+-   [ITransaction::Commit](/previous-versions/windows/desktop/ms713008\(v=vs.85\))  
   
--   [ITransaction::Abort](https://msdn.microsoft.com/library/ms709833.aspx)  
+-   [ITransaction::Abort](/previous-versions/windows/desktop/ms709833\(v=vs.85\))  
   
 ## Relationship of Sessions and Transactions  
  A single data source object can create one or more session objects, each of which can be inside or outside the scope of a transaction at a given time.  
@@ -39,7 +39,7 @@ A [transaction](../../data/transactions-mfc-data-access.md) is a way to group, o
  Calling `ITransaction::Commit` or `ITransaction::Abort` ends the transaction. `Commit` causes all changes within the scope of the transaction to be applied to the data store. `Abort` causes all changes within the scope of the transaction to be canceled and the data store is left in the state it had before the transaction started.  
   
 ## Nested Transactions  
- A [nested transaction](https://msdn.microsoft.com/library/ms716985.aspx) occurs when you start a new local transaction when an active transaction already exists on the session. The new transaction is started as a nested transaction below the current transaction. If the provider does not support nested transactions, calling `StartTransaction` when there is already an active transaction on the session returns XACT_E_XTIONEXISTS.  
+ A [nested transaction](/previous-versions/windows/desktop/ms716985\(v=vs.85\)) occurs when you start a new local transaction when an active transaction already exists on the session. The new transaction is started as a nested transaction below the current transaction. If the provider does not support nested transactions, calling `StartTransaction` when there is already an active transaction on the session returns XACT_E_XTIONEXISTS.  
   
 ## Distributed Transactions  
  A distributed transaction is a transaction that updates distributed data; that is, data on more than one networked computer system. If you want to support transactions over a distributed system, you should use the .NET Framework rather than the OLE DB transaction support.  

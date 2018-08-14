@@ -36,7 +36,7 @@ class CStreamRowset
 |||  
 |-|-|  
 |[CStreamRowset](#cstreamrowset)|Constructor. Instantiates and initializes the `CStreamRowset` object.|  
-|[Close](#close)|Releases the [ISequentialStream](https://msdn.microsoft.com/library/ms718035.aspx) interface pointer in the class.|  
+|[Close](#close)|Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035\(v=vs.85\)) interface pointer in the class.|  
   
 ## Remarks  
  Use `CStreamRowset` in your `CCommand` or `CTable` declaration, for example:  
@@ -66,7 +66,7 @@ CStreamRowset();
 ```  
 
 ## <a name="close"></a> CStreamRowset::Close
-Releases the [ISequentialStream](https://msdn.microsoft.com/library/ms718035.aspx) interface pointer in the class.  
+Releases the [ISequentialStream](/previous-versions/windows/desktop/ms718035\(v=vs.85\)) interface pointer in the class.  
   
 ### Syntax  
   

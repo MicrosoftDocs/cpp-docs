@@ -93,7 +93,7 @@ bool AddProperty(DWORD dwPropertyID, 
  **true** if the property was successfully added. Otherwise, **false**. 
 
 ## <a name="cdbpropset"></a> CDBPropSet::CDBPropSet
-The constructor. Initializes the `rgProperties`, `cProperties`, and `guidPropertySet` fields of the [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) structure.  
+The constructor. Initializes the `rgProperties`, `cProperties`, and `guidPropertySet` fields of the [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structure.  
   
 ### Syntax  
   
@@ -123,7 +123,7 @@ void SetGUID(const GUID& guid) throw();
   
 #### Parameters  
  *guid*  
- [in] A GUID used to set the `guidPropertySet` field of the [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) structure.  
+ [in] A GUID used to set the `guidPropertySet` field of the [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structure.  
   
 ### Remarks  
  This field can be set by the [constructor](../../data/oledb/cdbpropset-cdbpropset.md) as well.  
@@ -141,5 +141,5 @@ CDBPropSet& operator =(CDBPropSet& propset) throw();
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)   
  [CDBPropIDSet Class](../../data/oledb/cdbpropidset-class.md)   
- [DBPROPSET Structure](https://msdn.microsoft.com/library/ms714367.aspx)   
- [DBPROP Structure](https://msdn.microsoft.com/library/ms717970.aspx)
+ [DBPROPSET Structure](/previous-versions/windows/desktop/ms714367\(v=vs.85\))   
+ [DBPROP Structure](/previous-versions/windows/desktop/ms717970\(v=vs.85\))

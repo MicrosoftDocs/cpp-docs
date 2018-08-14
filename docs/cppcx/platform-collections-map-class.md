@@ -54,7 +54,7 @@ Allowed types are:
 
 - public enum class
 
-Map is basically a wrapper for [std::map](../standard-library/map-class.md). It is a C++ concrete implementation of the [Windows::Foundation::Collections::IMap<Windows::Foundation::Collections::IKeyValuePair\<K,V>>](http://go.microsoft.com/fwlink/p/?LinkId=262408) and [IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::Map` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap\<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262408).
+Map is basically a wrapper for [std::map](../standard-library/map-class.md). It is a C++ concrete implementation of the [Windows::Foundation::Collections::IMap<Windows::Foundation::Collections::IKeyValuePair\<K,V>>](http://go.microsoft.com/fwlink/p/?LinkId=262408) and [IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) types that are passed across public Windows Runtime interfaces. If you try to use a `Platform::Collections::Map` type in a public return value or parameter, compiler error C3986 is raised. You can fix the error by changing the type of the parameter or return value to [Windows::Foundation::Collections::IMap\<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262408).
 
 For more information, see [Collections](../cppcx/collections-c-cx.md).
 
@@ -127,7 +127,7 @@ A convenient way to hold the iterator returned by First() is to assign the retur
 
 ## <a name="getview"></a>  Map::GetView Method
 
-Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md), which implements the [Windows::Foundation::Collections::IMapView\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) interface.
+Returns a read-only view of the current Map; that is, a [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md), which implements the [Windows::Foundation::Collections::IMapView\<K,V>]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface.
 
 ### Syntax
 
@@ -249,7 +249,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### Property Value/Return Value
 
-A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
+A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
 
 ## .NET Framework Equivalent
 

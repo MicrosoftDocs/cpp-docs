@@ -34,7 +34,7 @@ ms.workload: ["cplusplus", "data-storage"]
   
  Note that the OLE DB provider templates do not implement the row and storage objects.  
   
- The following table lists mandatory and optional interfaces for the objects listed above, according to the [OLE DB 2.6 SDK Documentation](https://msdn.microsoft.com/library/ms722784.aspx).  
+ The following table lists mandatory and optional interfaces for the objects listed above, according to the [OLE DB 2.6 SDK Documentation](/previous-versions/windows/desktop/ms722784\(v=vs.85\)).  
   
 |Component|Interface|Comment|  
 |---------------|---------------|-------------|  
@@ -52,4 +52,4 @@ ms.workload: ["cplusplus", "data-storage"]
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Interfaces](https://msdn.microsoft.com/library/ms709709.aspx)
+ [OLE DB Interfaces](/previous-versions/windows/desktop/ms709709\(v=vs.85\))

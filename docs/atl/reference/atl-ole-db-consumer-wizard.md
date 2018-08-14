@@ -20,7 +20,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
   
 ## UIElement List  
 **Data Source**  
-The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](https://msdn.microsoft.com/library/ms718102.aspx) in the Windows SDK documentation.  
+The **Data Source** button lets you set up the specified data source using the specified OLE DB provider. When you click this button, the **Data Link Properties** dialog box appears. For more information on building connection strings and the **Data Link Properties** dialog box, see [Data Link API Overview](/previous-versions/windows/desktop/ms718102\(v=vs.85\)) in the Windows SDK documentation.  
   
 > [!NOTE]
 >  In previous releases, Shift-clicking the **Data Source** button opened a File Open dialog to allow you to select a Data Link (.udl) file. This functionality is no longer supported.  
@@ -163,7 +163,7 @@ Click **OK** to finish. The **Select Database Object** dialog box appears. From 
  Select this option if you want to use `CCommand` or `db_command` to create the command and command accessor class declarations. This is the default selection.  
   
  **Support**  
- Select the check boxes to specify the kinds of updates to be supported in the consumer (the default is none). Each of the following will set [DBPROP_IRowsetChange](https://msdn.microsoft.com/library/ms715892.aspx) and the appropriate entries for [DBPROP_UPDATABILITY](https://msdn.microsoft.com/library/ms722676.aspx) in the property set map.  
+ Select the check boxes to specify the kinds of updates to be supported in the consumer (the default is none). Each of the following will set [DBPROP_IRowsetChange](/previous-versions/windows/desktop/ms715892\(v=vs.85\)) and the appropriate entries for [DBPROP_UPDATABILITY](/previous-versions/windows/desktop/ms722676\(v=vs.85\)) in the property set map.  
   
  **Change**  
  Specifies that the consumer support updates of row data in the rowset.  
@@ -177,4 +177,4 @@ Click **OK** to finish. The **Select Database Object** dialog box appears. From 
 ## See Also  
  [ATL OLE DB Consumer](../../atl/reference/adding-an-atl-ole-db-consumer.md)   
  [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)   
- [Connection Strings and Data Links (OLE DB)](https://msdn.microsoft.com/library/ms718376.aspx)
+ [Connection Strings and Data Links (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))

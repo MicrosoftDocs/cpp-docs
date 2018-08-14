@@ -151,10 +151,10 @@ HRESULT CoCreateInstance(
  CLSID associated with the data and code that will be used to create the object.  
   
 ### Return Value  
- Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING or E_NOINTERFACE on failure. See [CoCreateClassInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) and [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) for a description of these errors.  
+ Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING or E_NOINTERFACE on failure. See [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) and [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) for a description of these errors.  
   
 ### Remarks  
- If the first form of the method is called, [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) is used to recover the CLSID. Both forms then call [CoCreateClassInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
+ If the first form of the method is called, [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) is used to recover the CLSID. Both forms then call [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
  In debug builds, an assertion error will occur if [CComPtrBase::p](#p) is not equal to NULL.  
   

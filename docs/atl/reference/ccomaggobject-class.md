@@ -41,7 +41,7 @@ class CComAggObject : public IUnknown,
 |Name|Description|  
 |----------|-----------------|  
 |[CComAggObject::AddRef](#addref)|Increments the reference count on the aggregated object.|  
-|[CComAggObject::CreateInstance](#createinstance)|This static function allows you to create a new **CComAggObject<** `contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
+|[CComAggObject::CreateInstance](#createinstance)|This static function allows you to create a new **CComAggObject<** `contained` **>** object without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).|  
 |[CComAggObject::FinalConstruct](#finalconstruct)|Performs final initialization of `m_contained`.|  
 |[CComAggObject::FinalRelease](#finalrelease)|Performs final destruction of `m_contained`.|  
 |[CComAggObject::QueryInterface](#queryinterface)|Retrieves a pointer to the requested interface.|  
@@ -107,7 +107,7 @@ CComAggObject(void* pv);
  Frees all allocated resources, calls [FinalRelease](#finalrelease), and decrements the module lock count.  
   
 ##  <a name="createinstance"></a>  CComAggObject::CreateInstance  
- This static function allows you to create a new **CComAggObject<**`contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
+ This static function allows you to create a new **CComAggObject<**`contained` **>** object without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ```
 static HRESULT WINAPI CreateInstance(
