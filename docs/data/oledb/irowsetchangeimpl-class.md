@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetChangeImpl Class
-The OLE DB Templates implementation of the [IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx) interface in the OLE DB specification.  
+The OLE DB Templates implementation of the [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) interface in the OLE DB specification.  
   
 ## Syntax
 
@@ -76,7 +76,7 @@ class ATL_NO_VTABLE IRowsetChangeImpl : public BaseInterface
   
 -   Chapter 6 of the *OLE DB Programmer's Reference*  
   
--   Also see how the `RUpdateRowset` class is used in the UpdatePV sample  
+-   Also see how the `RUpdateRowset` class is used in the [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) sample.  
   
 ## <a name="deleterows"></a> IRowsetChangeImpl::DeleteRows
 Deletes rows from the rowset.  
@@ -91,7 +91,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 ```  
   
 #### Parameters  
- See [IRowsetChange::DeleteRows](https://msdn.microsoft.com/library/ms724362.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IRowsetChange::DeleteRows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="insertrow"></a> IRowsetChangeImpl::InsertRow
 Creates and initializes a new row in the rowset.  
@@ -106,7 +106,7 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 ```  
   
 #### Parameters  
- See [IRowsetChange::InsertRow](https://msdn.microsoft.com/library/ms716921.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IRowsetChange::InsertRow](/previous-versions/windows/desktop/ms716921\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="setdata"></a> IRowsetChangeImpl::SetData
 Sets data values in one or more columns.  
@@ -120,7 +120,7 @@ STDMETHOD (SetData )(HROW hRow,
 ```  
   
 #### Parameters  
- See [IRowsetChange::SetData](https://msdn.microsoft.com/library/ms721232.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IRowsetChange::SetData](/previous-versions/windows/desktop/ms721232\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="flushdata"></a> IRowsetChangeImpl::FlushData
 Overidden by provider to commit data to its store.  

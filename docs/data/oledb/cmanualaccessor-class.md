@@ -52,7 +52,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] Column number.  
@@ -90,7 +90,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] Parameter number.  

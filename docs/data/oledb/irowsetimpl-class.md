@@ -72,7 +72,7 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 |[m_rgRowHandles](#rgrowhandles)|A list of row handles.|  
   
 ## Remarks  
- [IRowset](https://msdn.microsoft.com/library/ms720986.aspx) is the base rowset interface.  
+ [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) is the base rowset interface.  
 
 ## <a name="addrefrows"></a> IRowsetImpl::AddRefRows
 Adds a reference count to an existing row handle.  
@@ -87,7 +87,7 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 ```  
   
 #### Parameters  
- See [IRowset::AddRefRows](https://msdn.microsoft.com/library/ms719619.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="createrow"></a> IRowsetImpl::CreateRow
 A helper method called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new `HROW`.  
@@ -125,7 +125,7 @@ STDMETHOD(GetData )(HROW hRow,
 ```  
   
 #### Parameters  
- See [IRowset::GetData](https://msdn.microsoft.com/library/ms716988.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::GetData](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IRowset::GetData`:  
   
@@ -154,7 +154,7 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
  The column for which status is being requested.  
   
 ### Return Value  
- The [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) flags for the column. 
+ The [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) flags for the column. 
 
 ## <a name="getnextrows"></a> IRowsetImpl::GetNextRows
 Fetches rows sequentially, remembering the previous position.  
@@ -170,7 +170,7 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 ```  
   
 #### Parameters  
- See [IRowset::GetNextRows](https://msdn.microsoft.com/library/ms709827.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="irowsetimpl"></a> IRowsetImpl::IRowsetImpl
 The constructor.  
@@ -198,7 +198,7 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 ```  
   
 #### Parameters  
- See [IRowset::AddRefRows](https://msdn.microsoft.com/library/ms719619.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -217,7 +217,7 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
 ```  
   
 #### Parameters  
- See [IRowset::ReleaseRows](https://msdn.microsoft.com/library/ms719771.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="restartposition"></a> IRowsetImpl::RestartPosition
 Repositions the next fetch position to its initial position; that is, its position when the rowset was first created.  
@@ -229,7 +229,7 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
 ```  
   
 #### Parameters  
- See [IRowset::RestartPosition](https://msdn.microsoft.com/library/ms712877.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
  The rowset position is undefined until `GetNextRow` is called. You can move backwards in a rowet by calling `RestartPosition` and then fetching or scrolling backwards.  
@@ -247,7 +247,7 @@ virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,
   
 #### Parameters  
  *statusFlags*  
- The [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) flags to set for the column.  
+ The [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) flags to set for the column.  
   
  *currentRow*  
  The current row.  

@@ -23,7 +23,7 @@ The **ref new** aggregate keyword allocates an instance of a type that is garbag
  For more information about how memory for native C++ types is allocated and deallocated, see [the new and delete operators](../cpp/new-and-delete-operators.md).  
   
 ## Windows Runtime  
- Use **ref new** to allocate memory for Windows Runtime objects whose lifetime you want to administer automatically. The object is automatically deallocated when its reference count goes to zero, which occurs after the last copy of the reference has gone out of scope. For more information, see [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
+ Use **ref new** to allocate memory for Windows Runtime objects whose lifetime you want to administer automatically. The object is automatically deallocated when its reference count goes to zero, which occurs after the last copy of the reference has gone out of scope. For more information, see [Ref classes and structs](../cppcx/ref-classes-and-structs-c-cx.md).  
   
 ### Requirements  
  Compiler option: `/ZW`  

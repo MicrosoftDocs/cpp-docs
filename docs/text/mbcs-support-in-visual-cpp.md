@@ -26,7 +26,7 @@ When run on an MBCS-enabled version of Windows, the Visual C++ development syste
   
  The IME, activated by the ALT+\` key combination, appears as a set of buttons (an indicator) and a conversion window. The application positions the window at the text insertion point. The application must handle `WM_MOVE` and `WM_SIZE` messages by repositioning the conversion window to conform to the new location or size of the target window.  
   
- If you want users of your application to have the ability to enter Kanji characters, the application must handle Windows IME messages. For more information about IME programming, see [Input Method Editor](https://msdn.microsoft.com/library/ms776145.aspx).  
+ If you want users of your application to have the ability to enter Kanji characters, the application must handle Windows IME messages. For more information about IME programming, see [Input Method Editor](/previous-versions/windows/desktop/ms776145\(v=vs.85\)).  
   
 ## Visual C++ Debugger  
  The Visual C++ debugger provides the ability to set breakpoints on IME messages. In addition, the Memory window can display double-byte characters.  

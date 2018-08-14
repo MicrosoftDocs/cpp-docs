@@ -48,7 +48,7 @@ The classes and interfaces for the OLE DB Provider Templates can be grouped into
  Opens and returns a rowset that includes all rows from a single base table or index. Mandatory interface for a session object.  
   
  [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md)  
- Implements the OLE DB [IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx) interface, which enables updating of the values of columns in existing rows, deleting rows, and inserting new rows.  
+ Implements the OLE DB [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) interface, which enables updating of the values of columns in existing rows, deleting rows, and inserting new rows.  
   
  [IRowsetCreatorImpl](../../data/oledb/irowsetcreatorimpl-class.md)  
  This class inherits from [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) and overrides [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869). `IRowsetCreatorImpl` performs the same functions as `IObjectWithSite` but also enables the OLE DB properties `DBPROPCANSCROLLBACKWARDS` and `DBPROPCANFETCHBACKWARDS`.  
@@ -63,13 +63,13 @@ The classes and interfaces for the OLE DB Provider Templates can be grouped into
  Implements the rowset properties by using the property set map defined in your command class. Mandatory interface on rowsets.  
   
  [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md)  
- Implements the OLE DB [IRowsetLocate](https://msdn.microsoft.com/library/ms721190.aspx) interface, which fetches arbitrary rows from a rowset. To support OLE DB bookmarks in a rowset, make the rowset inherit from this class.  
+ Implements the OLE DB [IRowsetLocate](/previous-versions/windows/desktop/ms721190\(v=vs.85\)) interface, which fetches arbitrary rows from a rowset. To support OLE DB bookmarks in a rowset, make the rowset inherit from this class.  
   
  [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md)  
- Implements broadcast functions to advise listeners on the connection point `IID_IRowsetNotify` of changes to the contents of the rowset. Consumers that handle notifications implement [IRowsetNotify](https://msdn.microsoft.com/library/ms712959.aspx) and register it on that connection point.  
+ Implements broadcast functions to advise listeners on the connection point `IID_IRowsetNotify` of changes to the contents of the rowset. Consumers that handle notifications implement [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\)) and register it on that connection point.  
   
  [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md)  
- Implements the OLE DB [IRowsetUpdate](https://msdn.microsoft.com/library/ms714401.aspx) interface, which enables consumers to delay the transmission of changes made with [IRowsetChange](https://msdn.microsoft.com/library/ms715790.aspx) to the data source and undo changes before transmission.  
+ Implements the OLE DB [IRowsetUpdate](/previous-versions/windows/desktop/ms714401\(v=vs.85\)) interface, which enables consumers to delay the transmission of changes made with [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) to the data source and undo changes before transmission.  
   
 ## Command Classes  
  [ICommandImpl](../../data/oledb/icommandimpl-class.md)  
@@ -102,7 +102,7 @@ The classes and interfaces for the OLE DB Provider Templates can be grouped into
   
  [IErrorRecordsImpl](../../data/oledb/ierrorrecordsimpl-class.md)  
   
- Implements the OLE DB [IErrorRecords](https://msdn.microsoft.com/library/ms718112.aspx) interface, adding records to and retrieving records from a data member.  
+ Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface, adding records to and retrieving records from a data member.  
   
 ## See Also  
  [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)   

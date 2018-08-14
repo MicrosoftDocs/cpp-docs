@@ -49,7 +49,7 @@ VARIANT_BOOL m_bIsParent;
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx) in the *OLE DB Programmer's Reference* for more information. 
+ See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information. 
 
 ## <a name="ntype"></a> CEnumeratorAccessor::m_nType
 A variable indicating whether the row describes a data source or an enumerator.  
@@ -61,7 +61,7 @@ USHORT m_nType;
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx) in the *OLE DB Programmer's Reference* for more information.
+ See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.
 
 ## <a name="szdescription"></a> CEnumeratorAccessor::m_szDescription
 The description of the data source or enumerator.  
@@ -73,7 +73,7 @@ WCHAR m_szDescription[129];
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx) in the *OLE DB Programmer's Reference* for more information.
+ See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.
 
 ## <a name="szname"></a> CEnumeratorAccessor::m_szName
 The name of the data source or enumerator.  
@@ -85,7 +85,7 @@ WCHAR m_szName[129];
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx) in the *OLE DB Programmer's Reference* for more information.  
+ See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
 
 ## <a name="szparsename"></a> CEnumeratorAccessor::m_szParseName
 String to pass to [IParseDisplayName](http://msdn.microsoft.com/library/windows/desktop/ms680604) to obtain a moniker for the data source or enumerator.  
@@ -97,7 +97,7 @@ WCHAR m_szParseName[129];
 ```  
   
 ### Remarks  
- See [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx) in the *OLE DB Programmer's Reference* for more information.  
+ See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
   
 ## See Also  
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   

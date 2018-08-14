@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Schema Rowsets
-Schema rowsets allow consumers to obtain information about a data store without knowing its underlying structure, or schema. For example, a data store might have tables organized into a user-defined hierarchy, so there would be no way to ensure knowledge of the schema except by reading it. (As another example, note that the Visual C++ wizards use schema rowsets to generate accessors for the consumer.) To allow the consumer to do this, the provider's session object exposes methods on the [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) interface. In Visual C++ applications, you use the [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) class to implement `IDBSchemaRowset`.  
+Schema rowsets allow consumers to obtain information about a data store without knowing its underlying structure, or schema. For example, a data store might have tables organized into a user-defined hierarchy, so there would be no way to ensure knowledge of the schema except by reading it. (As another example, note that the Visual C++ wizards use schema rowsets to generate accessors for the consumer.) To allow the consumer to do this, the provider's session object exposes methods on the [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) interface. In Visual C++ applications, you use the [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) class to implement `IDBSchemaRowset`.  
   
  `IDBSchemaRowsetImpl` supports the following methods:  
   
@@ -50,7 +50,7 @@ Schema rowsets allow consumers to obtain information about a data store without 
 -   In **C***ShortName***SessionColSchemaRowset**, you pass the name of the table as a `DBID`.  
   
 ## Setting Restrictions  
- An important concept in schema rowset support is setting restrictions, which you do using `SetRestrictions`. Restrictions allow consumers to fetch only matching rows (for example, find all the columns in the table "MyTable"). Restrictions are optional, and in the case in which none are supported (the default), all data is always returned. For an example of a provider that does support restrictions, see the [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) sample.  
+ An important concept in schema rowset support is setting restrictions, which you do using `SetRestrictions`. Restrictions allow consumers to fetch only matching rows (for example, find all the columns in the table "MyTable"). Restrictions are optional, and in the case in which none are supported (the default), all data is always returned. For an example of a provider that does support restrictions, see the [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) sample.  
   
 ## Setting up the Schema Map  
  Set up a schema map such as this one in Session.h in UpdatePV:  
@@ -79,7 +79,7 @@ class CUpdateSessionTRSchemaRowset :
   
  Note that `CUpdateSession` inherits from `IDBSchemaRowsetImpl`, so it has all the restriction handling methods. Using `CSchemaRowsetImpl`, declare three child classes (listed in the schema map above): `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, and `CUpdateSessionPTSchemaRowset`. Each of these child classes has an `Execute` method that handles its respective set of restrictions (search criteria). Each `Execute` method compares the values of the `cRestrictions` and `rgRestrictions` parameters. See the description of these parameters in [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md).  
   
- For more information about which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
+ For more information about which restrictions correspond to a particular schema rowset, consult the table of schema rowset GUIDs in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
  For example, if you supported the **TABLE_NAME** restriction on `DBSCHEMA_TABLES`, you would do the following:  
   

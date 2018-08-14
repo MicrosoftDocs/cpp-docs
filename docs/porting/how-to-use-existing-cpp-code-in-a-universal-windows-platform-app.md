@@ -52,7 +52,7 @@ This topic contains the following procedures:
   
 ##  <a name="BK_Win32DLL"></a> Using a Win32 DLL in a UWP App  
  
-For better security and reliability, Universal Windows Apps run in a restricted runtime environment, so you can't just use any native DLL the way you would in a classic Windows desktop application. If you have source code for a DLL, you can port the code so that it runs on the UWP. You start by changing a few project settings and project file metadata to identify the project as a UWP project. You need to compile the library code using the `/ZW` option, which enables C++/CX. Certain API calls are not allowed in UWP apps due to stricter controls associated with that environment. See [Win32 and COM for Windows Runtime apps and Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
+For better security and reliability, Universal Windows Apps run in a restricted runtime environment, so you can't just use any native DLL the way you would in a classic Windows desktop application. If you have source code for a DLL, you can port the code so that it runs on the UWP. You start by changing a few project settings and project file metadata to identify the project as a UWP project. You need to compile the library code using the `/ZW` option, which enables C++/CX. Certain API calls are not allowed in UWP apps due to stricter controls associated with that environment. See [Win32 and COM for Windows Runtime apps and Universal Windows Platform (UWP) apps](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
   
 The following procedure applies to the case where you have a native DLL that exposes functions using **__declspec(dllexport)**.  
   

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandImpl Class
-Provides implementation for the [ICommand](https://msdn.microsoft.com/library/ms709737.aspx) interface.  
+Provides implementation for the [ICommand](/previous-versions/windows/desktop/ms709737\(v=vs.85\)) interface.  
   
 ## Syntax
 
@@ -66,7 +66,7 @@ STDMETHOD(Cancel)();
 ```  
   
 ### Remarks  
- See [ICommand::Cancel](https://msdn.microsoft.com/library/ms714402.aspx) in the *OLE DB Programmer's Reference*.  
+ See [ICommand::Cancel](/previous-versions/windows/desktop/ms714402\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="cancelexecution"></a> ICommandImpl::CancelExecution
 Cancels the current command execution.  
@@ -120,7 +120,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 ### Remarks  
  To create more than one rowset, or to provide your own conditions for creating different rowsets, place different calls to `CreateRowset` from within `Execute`.  
   
- See [ICommand::Execute](https://msdn.microsoft.com/library/ms718095.aspx) in the *OLE DB Programmer's Reference.*  
+ See [ICommand::Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) in the *OLE DB Programmer's Reference.*  
 
 ## <a name="execute"></a> ICommandImpl::Execute
 Executes the command.  
@@ -136,7 +136,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 ```  
   
 #### Parameters  
- See [ICommand::Execute](https://msdn.microsoft.com/library/ms718095.aspx) in the *OLE DB Programmer's Reference*.  
+ See [ICommand::Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
  The outgoing interface requested will be an interface acquired from the rowset object that this function creates.  
@@ -154,7 +154,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 ```  
   
 #### Parameters  
- See [ICommand::GetDBSession](https://msdn.microsoft.com/library/ms719622.aspx) in the *OLE DB Programmer's Reference*.  
+ See [ICommand::GetDBSession](/previous-versions/windows/desktop/ms719622\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
  Useful for retrieving properties from the session.  

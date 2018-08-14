@@ -38,22 +38,22 @@ Binds a specified column to a variable in the rowset.
 ```  
   
  *dbtype* (optional)  
- An OLE DB [Type Indicator](https://msdn.microsoft.com/library/ms711251.aspx) for the column entry.  
+ An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) for the column entry.  
   
  *precision* (optional)  
- The precision to be used for the column entry. For details, see the description of the `bPrecision` element of the [DBBINDING structure](https://msdn.microsoft.com/library/ms716845.aspx)  
+ The precision to be used for the column entry. For details, see the description of the `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))  
   
  *scale* (optional)  
- The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](https://msdn.microsoft.com/library/ms716845.aspx)  
+ The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))  
   
  *status* (optional)  
- A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](https://msdn.microsoft.com/library/ms722617.aspx) in the *OLE DB Programmer's Reference*.  
+ A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *length* (optional)  
  A member variable used to hold the size of the column in bytes.  
   
 ## Remarks  
- **db_column** binds the specified table column to a variable in the rowset. It delimits member data that can participate in OLE DB `IAccessor`-based binding. This attribute sets up the column map normally defined using the OLE DB consumer macros [BEGIN_COLUMN_MAP](../data/oledb/begin-column-map.md), [END_COLUMN_MAP](../data/oledb/end-column-map.md), and [COLUMN_ENTRY](../data/oledb/column-entry.md). These manipulate the OLE DB [DBBINDING structure](https://msdn.microsoft.com/library/ms716845.aspx) to bind the specified column. Each member you mark with the **db_column** attribute will occupy one entry in the column map in the form of a column entry. Therefore, you call this attribute where you would put the column map, that is, in the command or table class.  
+ **db_column** binds the specified table column to a variable in the rowset. It delimits member data that can participate in OLE DB `IAccessor`-based binding. This attribute sets up the column map normally defined using the OLE DB consumer macros [BEGIN_COLUMN_MAP](../data/oledb/begin-column-map.md), [END_COLUMN_MAP](../data/oledb/end-column-map.md), and [COLUMN_ENTRY](../data/oledb/column-entry.md). These manipulate the OLE DB [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) to bind the specified column. Each member you mark with the **db_column** attribute will occupy one entry in the column map in the form of a column entry. Therefore, you call this attribute where you would put the column map, that is, in the command or table class.  
   
  Use **db_column** in conjunction with either the [db_table](../windows/db-table.md) or [db_command](../windows/db-command.md) attributes.  
   
