@@ -17,7 +17,7 @@ Retrieves a pointer to the specified interface ID.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    QueryInterface  
 )  

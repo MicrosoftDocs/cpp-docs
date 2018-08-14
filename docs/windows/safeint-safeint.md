@@ -17,7 +17,7 @@ Constructs a **SafeInt** object.
   
 ## Syntax  
   
-```  
+```cpp  
 SafeInt() throw  
   
 SafeInt (  

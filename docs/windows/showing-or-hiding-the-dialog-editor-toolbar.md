@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Showing or Hiding the Dialog Editor Toolbar
-When you open the Dialog editor, the Dialog Editor toolbar automatically appears at the top of your solution.  
+When you open the **Dialog** editor, the **Dialog Editor** toolbar automatically appears at the top of your solution.  
   
 ### Dialog Editor Toolbar  
   
@@ -26,9 +26,9 @@ When you open the Dialog editor, the Dialog Editor toolbar automatically appears
 |![Center Vertical button](../mfc/media/vcdialogeditorvertical.png "vcDialogEditorVertical")|Vertical|![Toggle Grid button](../mfc/media/vcdialogeditortogglegrid.png "vcDialogEditorToggleGrid")|Toggle Grid|  
 |![Center Horizontal button](../mfc/media/vcdialogeditorhorizontal.png "vcDialogEditorHorizontal")|Horizontal|![Toggle Guides button](../mfc/media/vcdialogeditortoggleguides.png "vcDialogEditorToggleGuides")|Toggle Guides|  
   
- The Dialog Editor toolbar contains buttons for arranging the layout of controls on the dialog box, for example size and alignment. Dialog Editor toolbar buttons correspond to commands on the Format menu. For details, see [Accelerator Keys for the Dialog Editor](../windows/accelerator-keys-for-the-dialog-editor.md).  
+ The **Dialog Editor** toolbar contains buttons for arranging the layout of controls on the dialog box, for example size and alignment. **Dialog Editor** toolbar buttons correspond to commands on the **Format** menu. For details, see [Accelerator Keys for the Dialog Editor](../windows/accelerator-keys-for-the-dialog-editor.md).  
   
- When you are in the Dialog editor, you can toggle the display of the Dialog Editor toolbar by selecting it from the list of available toolbars and windows.  
+ When you are in the **Dialog** editor, you can toggle the display of the **Dialog Editor** toolbar by selecting it from the list of available toolbars and windows.  
   
 ### To show or hide the dialog editor toolbar  
   

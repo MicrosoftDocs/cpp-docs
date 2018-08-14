@@ -23,8 +23,7 @@ WRL_NOTHROW __forceinline static void Verify();
   
 ## Remarks  
  If the verification operation fails, a **static_assert** emits an error message describing the failure.  
-  
-## Remarks  
+
  Template parameters *I0* and *I1* are required, and parameters *I2* through *I9* are optional.  
   
 ## Requirements  

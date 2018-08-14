@@ -100,8 +100,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 typeid and GetType returned the same System::Type  
 G  
@@ -162,8 +160,6 @@ int main() {
       Console::WriteLine("int::typeid == handle_to_int::typeid, as expected");  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 True  

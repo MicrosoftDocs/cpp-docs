@@ -17,7 +17,7 @@ Determines whether one number is less than another.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeLessThan (  
    const T t,  

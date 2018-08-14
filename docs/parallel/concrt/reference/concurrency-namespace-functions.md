@@ -1088,7 +1088,7 @@ inline void parallel_sort(
  The mimimum size of a chunk that will be split into two for parallel execution.  
   
 ### Remarks  
- The first overload uses the the binary comparator `std::less`.  
+ The first overload uses the binary comparator `std::less`.  
   
  The second overloaded uses the supplied binary comparator that should have the signature `bool _Func(T, T)` where `T` is the type of the elements in the input range.  
   

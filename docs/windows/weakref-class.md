@@ -17,7 +17,7 @@ Represents a *weak reference* that can be used by only the Windows Runtime, not 
   
 ## Syntax  
   
-```  
+```cpp  
 class WeakRef : public ComPtr<IWeakReference>  
 ```  
   

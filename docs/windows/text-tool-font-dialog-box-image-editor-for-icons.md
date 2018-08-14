@@ -18,7 +18,7 @@ Specifies font settings when you use the [Text Tool Dialog Box](../windows/text-
   
 -   [Changing the Font of Text on an Image](../windows/changing-the-font-of-text-on-an-image-image-editor-for-icons.md)  
   
- To access this dialog box, click the **Font** button in the Text Tool dialog box.  
+ To access this dialog box, click the **Font** button in the **Text Tool** dialog box.  
   
  **Font**  
  Lists the available fonts.  
@@ -40,4 +40,3 @@ Specifies font settings when you use the [Text Tool Dialog Box](../windows/text-
   
 ## See Also  
  [Editing Graphical Resources](../windows/editing-graphical-resources-image-editor-for-icons.md)
-

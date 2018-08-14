@@ -244,7 +244,7 @@ pair(Value1 val1, Value2 val2);
   
  `pair(Value1 val1, Value2 val2);`  
   
- initializes the stored pair with with *val1* and *val2*.  
+ initializes the stored pair with *val1* and *val2*.  
   
 ### Example  
   

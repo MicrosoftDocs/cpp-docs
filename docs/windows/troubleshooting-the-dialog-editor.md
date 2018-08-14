@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Troubleshooting the Dialog Editor
-Below are a few issues of which you should be aware when working in the Dialog editor.  
+Below are a few issues of which you should be aware when working in the **Dialog** editor.  
   
 -   [Adding Controls to a Dialog Causes the Dialog to No Longer Function](../windows/adding-controls-to-a-dialog-causes-the-dialog-to-no-longer-function.md)  
   

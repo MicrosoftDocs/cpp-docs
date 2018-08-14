@@ -17,7 +17,7 @@ Directs that the specified enumerated type be transmitted as a 32-bit entity rat
   
 ## Syntax  
   
-```  
+```cpp  
 [v1_enum]  
 ```  
   

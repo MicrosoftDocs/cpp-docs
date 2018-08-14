@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # high_method_prefix
 **C++ Specific**  
   
- Specifies a prefix to be used in naming high-level properties and methods.  
+Specifies a prefix to be used in naming high-level properties and methods.  
   
 ## Syntax  
   
@@ -23,15 +23,17 @@ ms.workload: ["cplusplus"]
 high_method_prefix("Prefix")  
 ```  
   
-#### Parameters  
- `Prefix`  
- Prefix to be used.  
+### Parameters  
+*Prefix*  
+Prefix to be used.  
   
 ## Remarks  
- By default, high-level error-handling properties and methods are exposed by member functions named without a prefix. The names are from the type library.  
+ 
+By default, high-level error-handling properties and methods are exposed by member functions named without a prefix. The names are from the type library.  
   
- **END C++ Specific**  
+**END C++ Specific**  
   
 ## See Also  
- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

@@ -26,7 +26,6 @@ Except for the **Eraser**, tools on the **Image Editor** toolbar draw with the c
  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
 ## Requirements  
-  
  None  
   
 ## See Also  

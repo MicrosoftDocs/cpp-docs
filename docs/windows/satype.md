@@ -17,7 +17,7 @@ Specifies the data type of the `SAFEARRAY` structure.
   
 ## Syntax  
   
-```  
+```cpp  
 [ satype(  
    data_type  
 ) ]  

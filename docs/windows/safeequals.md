@@ -17,7 +17,7 @@ Compares two numbers to determine whether they are equal.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeEquals (  
    const T t,  

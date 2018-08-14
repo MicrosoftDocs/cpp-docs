@@ -14,7 +14,8 @@ ms.workload: ["cplusplus"]
 # Library Support for Multithreading
 All versions of the CRT now support multi threading with the exception of the non-locking versions of some functions. See [Multithreaded Libraries Performance](../c-runtime-library/multithreaded-libraries-performance.md) for more information.  
   
- See [CRT Library Features](../c-runtime-library/crt-library-features.md) for more information on CRT versions.  
+See [CRT Library Features](../c-runtime-library/crt-library-features.md) for more information on CRT versions.  
   
 ## See Also  
- [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+
+[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)

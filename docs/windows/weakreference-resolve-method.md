@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(Resolve)  
    (REFIID riid,   
    _Deref_out_opt_ IInspectable **ppvObject  

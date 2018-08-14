@@ -84,8 +84,6 @@ int main(Array<String^>^ args) {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 Caught expected exception: InvalidCastException  
 ```  
@@ -159,8 +157,6 @@ int main() {
    }  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 Caught expected exception  

@@ -17,7 +17,7 @@ Specifies a data type that will be used for transmission instead of an applicati
   
 ## Syntax  
   
-```  
+```cpp  
 [wire_marshal]  
 ```  
   

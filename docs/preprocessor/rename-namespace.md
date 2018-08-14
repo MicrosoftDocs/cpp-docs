@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # rename_namespace
 **C++ Specific**  
   
- Renames the namespace that contains the contents of the type library.  
+Renames the namespace that contains the contents of the type library.  
   
 ## Syntax  
   
@@ -23,17 +23,19 @@ ms.workload: ["cplusplus"]
 rename_namespace("NewName")  
 ```  
   
-#### Parameters  
- `NewName`  
- The new name of the namespace.  
+### Parameters  
+*NewName*  
+The new name of the namespace.  
   
 ## Remarks  
- It takes a single argument, *NewName*, which specifies the new name for the namespace.  
+ 
+It takes a single argument, *NewName*, which specifies the new name for the namespace.  
   
- To remove the namespace, use the [no_namespace](../preprocessor/no-namespace.md) attribute instead.  
+To remove the namespace, use the [no_namespace](../preprocessor/no-namespace.md) attribute instead.  
   
- **END C++ Specific**  
+**END C++ Specific**  
   
 ## See Also  
- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

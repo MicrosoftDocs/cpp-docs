@@ -17,13 +17,13 @@ Specifies a version-independent form of the ProgID.
   
 ## Syntax  
   
-```  
+```cpp  
 [ vi_progid(  
    name  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *name*  
  The version-independent ProgID representing the object.  
   

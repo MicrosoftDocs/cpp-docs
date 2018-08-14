@@ -17,7 +17,7 @@ Instructs the compiler to associate a presented type that client and server appl
   
 ## Syntax  
   
-```  
+```cpp  
 [ transmit_as(  
    type  
 ) ]  

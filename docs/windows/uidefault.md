@@ -17,7 +17,7 @@ Indicates that the type information member is the default member for display in 
   
 ## Syntax  
   
-```  
+```cpp  
 [uidefault]  
 ```  
   

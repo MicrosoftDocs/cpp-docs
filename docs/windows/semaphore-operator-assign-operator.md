@@ -17,7 +17,7 @@ Moves the specified handle from a **Semaphore** object to the current **Semaphor
   
 ## Syntax  
   
-```  
+```cpp  
 Semaphore& operator=(  
    _Inout_ Semaphore&& h  
 );  

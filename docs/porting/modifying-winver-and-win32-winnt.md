@@ -48,9 +48,9 @@ This targets the Windows 10 operating system. These values are listed in the Win
 If you don't see all of these versions of Windows listed in a copy of SDKDDKVer.h that you're looking at, you probably are using an older version of the Windows SDK. By default, Win32 projects in Visual Studio 2017 use the Windows 10 SDK.   
   
 > [!NOTE]
->  Values are not guaranteed to work if you include internal MFC headers in your application.  
+> Values are not guaranteed to work if you include internal MFC headers in your application.  
   
-You can also define this macro by using the **/D** compiler option. For more information, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).  
+You can also define this macro by using the `/D` compiler option. For more information, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).  
   
 For more information about the meanings of these macros, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).  
   

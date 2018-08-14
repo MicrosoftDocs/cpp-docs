@@ -14,15 +14,16 @@ ms.workload: ["cplusplus"]
 
 This page gathers all the "What's New" pages for all versions of Visual C++ from Visual Studio 2015 back to 2003. This information is provided as a convenience in case it might be useful when upgrading from earlier versions of Visual C++.
 
-**Note** For information about Visual Studio 2017, see [What's new for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio 2017](../cpp-conformance-improvements-2017.md).
+> [!NOTE]
+> For information about Visual Studio 2017, see [What's new for Visual C++ in Visual Studio 2017](../what-s-new-for-visual-cpp-in-visual-studio.md) and [Conformance Improvements in Visual C++ in Visual Studio 2017](../cpp-conformance-improvements-2017.md).
 
 ## What's New for C++ in Visual Studio 2015
 
 In Visual Studio 2015 and later, ongoing improvements to compiler conformance can sometimes change how the compiler understands your existing source code. When this happens, you might encounter new or different errors during your build, or even behavioral differences in code that previously built and seemed to run correctly.
 
- Fortunately, these differences  have little or no impact on most of your source code and when source code or other changes are needed to address these differences,  fixes are usually small and straight-forward. We've included many examples of previously-acceptable source code that might need to be changed *(before)* and the fixes to correct them *(after)*.
+Fortunately, these differences  have little or no impact on most of your source code and when source code or other changes are needed to address these differences,  fixes are usually small and straight-forward. We've included many examples of previously-acceptable source code that might need to be changed *(before)* and the fixes to correct them *(after)*.
 
- Although these differences can affect your source code or other build artifacts, they don't affect binary compatibility between updates to Visual C++ versions. A more-severe kind of change, the  *breaking change* can affect binary compatibility, but these kinds of binary compatibility breaks only occur between major versions of Visual C++. For example, between Visual C++ 2013 and Visual C++ 2015. For information on the breaking changes that occurred between Visual C++ 2013 and Visual C++ 2015, see [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md).
+Although these differences can affect your source code or other build artifacts, they don't affect binary compatibility between updates to Visual C++ versions. A more-severe kind of change, the  *breaking change* can affect binary compatibility, but these kinds of binary compatibility breaks only occur between major versions of Visual C++. For example, between Visual C++ 2013 and Visual C++ 2015. For information on the breaking changes that occurred between Visual C++ 2013 and Visual C++ 2015, see [Visual C++ change history 2003 - 2015](../porting/visual-cpp-change-history-2003-2015.md).
 
 - [Conformance Improvements in Visual Studio 2015](#VS_RTM)
 
@@ -34,13 +35,13 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
 
 ### <a name="VS_RTM"></a> Conformance Improvements in Visual Studio 2015
 
-- **/Zc:forScope- option** The compiler option **/Zc:forScope-** is deprecated and will be removed in a future release.
+- **/Zc:forScope- option** The compiler option `/Zc:forScope-` is deprecated and will be removed in a future release.
 
    ```output
     Command line warning  D9035: option 'Zc:forScope-' has been deprecated and will be removed in a future release
    ```
 
-   The option was usually used in order to allow nonstandard code that uses loop variables after the point where, according to the standard, they should have gone out of scope. It was only necessary when you are compiling with the /Za option, since without /Za, using a for loop variable after the end of the loop is always allowed. If you don't care about standards conformance (for example, if your code isn't meant to portable to other compilers), you could turn off the /Za option (or set the Disable Language Extensions property to No). If you do care about writing portable, standards-compliant code, you should rewrite your code so that it conforms to the standard by moving the declaration of such variables to a point outside the loop.
+   The option was usually used in order to allow nonstandard code that uses loop variables after the point where, according to the standard, they should have gone out of scope. It was only necessary when you are compiling with the `/Za` option, since without `/Za`, using a for loop variable after the end of the loop is always allowed. If you don't care about standards conformance (for example, if your code isn't meant to portable to other compilers), you could turn off the `/Za` option (or set the **Disable Language Extensions** property to **No**). If you do care about writing portable, standards-compliant code, you should rewrite your code so that it conforms to the standard by moving the declaration of such variables to a point outside the loop.
 
    ```cpp
     // zc_forScope.cpp
@@ -55,11 +56,11 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     }
    ```
 
-- **Zg compiler option.** The /Zg compiler option (Generate Function Prototypes) is no longer available. This compiler option was previously deprecated.
+- **Zg compiler option.** The `/Zg` compiler option (Generate Function Prototypes) is no longer available. This compiler option was previously deprecated.
 
 - You can no longer run unit tests with C++/CLI from the command-line with mstest.exe. Instead, use vstest.console.exe
 
-- **mutable keyword.** The `mutable` storage class specifier is no longer allowed in places where previously it compiled without error. Now, the compiler gives error C2071 (illegal storage class). According to the standard, the mutable specifier can be applied only to names of class data members, and cannot be applied to names declared const or static, and cannot be applied to reference members.
+- **mutable keyword.** The **mutable** storage class specifier is no longer allowed in places where previously it compiled without error. Now, the compiler gives error C2071 (illegal storage class). According to the standard, the mutable specifier can be applied only to names of class data members, and cannot be applied to names declared const or static, and cannot be applied to reference members.
 
    For example, consider the following code:
 
@@ -75,7 +76,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     error C2071: 'S::r': illegal storage class
    ```
 
-   To fix the error, simply remove the redundant mutable keyword.
+   To fix the error, simply remove the redundant **mutable** keyword.
 
 - **char_16_t and char32_t** You can no longer use `char16_t` or `char32_t` as aliases in a typedef, because these types are now treated as built-in. It was common for users and library authors to define `char16_t` and `char32_t` as aliases of `uint16_t` and `uint32_t`, respectively.
 
@@ -94,7 +95,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     }
    ```
 
-   To update your code, remove the typedef declarations and rename any other identifiers that collide with these names.
+   To update your code, remove the **typedef** declarations and rename any other identifiers that collide with these names.
 
 - **Non-type template parameters** Certain code that involves non-type template parameters is now correctly checked for type compatibility when you provide explicit template arguments. For example, the following code compiled without error in previous versions of Visual C++.
 
@@ -115,7 +116,6 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
         S2 s2;
         s2.f<S1, &S1::f>();
     }
-
    ```
 
    The current compiler correctly gives an error, because the template parameter type doesn't match the template argument (the parameter is a pointer to a const member, but the function f is non-const):
@@ -148,10 +148,9 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     {
         throw S(); // error
     }
-
    ```
 
-   The problem is that the copy constructor is private, so the object cannot be copied as happens in the normal course of handling an exception. The same applies when the copy constructor is declared `explicit`.
+   The problem is that the copy constructor is private, so the object cannot be copied as happens in the normal course of handling an exception. The same applies when the copy constructor is declared **explicit**.
 
    ```cpp
     struct S {
@@ -163,10 +162,9 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     {
         throw S(); // error
     }
-
    ```
 
-   To update your code, make sure that the copy constructor for your exception object is public and not marked `explicit`.
+   To update your code, make sure that the copy constructor for your exception object is public and not marked **explicit**.
 
    Catching an exception by value also requires the exception object to be copyable. The following code compiled in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], but does not compile in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)]:
 
@@ -190,10 +188,9 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
         {
         }
     }
-
    ```
 
-   You can fix this issue by changing the parameter type for the `catch` to a reference.
+   You can fix this issue by changing the parameter type for the **catch** to a reference.
 
    ```cpp
     catch(D& d)
@@ -237,30 +234,28 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     char * str = "abc" "def";
    ```
 
-- **Placement new and delete** A change has been made to the delete operator in order to bring it into conformance with C++14 standard. Details of the standards change can be found at [C++ Sized Deallocation](http://isocpp.org/files/papers/n3778.html). The changes add a form of the global delete operator that takes a size parameter. The breaking change is that if you were previously using an operator delete with the same signature (to correspond with a placement new operator), you will receive a compiler error (C2956, which occurs at the point where the placement new is used, since that's the position in code where the compiler tries to identify an appropriate matching delete operator).
+- **Placement new and delete** A change has been made to the **delete** operator in order to bring it into conformance with C++14 standard. Details of the standards change can be found at [C++ Sized Deallocation](http://isocpp.org/files/papers/n3778.html). The changes add a form of the global **delete** operator that takes a size parameter. The breaking change is that if you were previously using an operator **delete** with the same signature (to correspond with a **placement new** operator), you will receive a compiler error (C2956, which occurs at the point where the **placement new** is used, since that's the position in code where the compiler tries to identify an appropriate matching **delete** operator).
 
-   The function `void operator delete(void *, size_t)` was a placement delete operator corresponding to the placement new function "void \* operator new(size_t, size_t)" in C++11. With C++14 sized deallocation, this delete function is now a *usual deallocation function* (global delete operator). The standard requires that if the use of a placement new looks up a corresponding delete function and finds a usual deallocation function, the program is ill-formed.
+   The function `void operator delete(void *, size_t)` was a **placement delete** operator corresponding to the **placement new** function `void * operator new(size_t, size_t)` in C++11. With C++14 sized deallocation, this **delete** function is now a *usual deallocation function* (global **delete** operator). The standard requires that if the use of a **placement new** looks up a corresponding **delete** function and finds a usual deallocation function, the program is ill-formed.
 
-   For example, suppose your code defines both a placement new and a placement delete:
+   For example, suppose your code defines both a **placement new** and a **placement delete**:
 
    ```cpp
     void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
-
    ```
 
-   The problem occurs because of the match in function signatures between a placement delete operator you've defined, and the new global sized delete operator. Consider whether you can use a different type other than size_t for any placement new and delete operators.  Note that the type of the size_t typedef is compiler-dependent; it is a typedef for unsigned int in Visual C++. A good solution is to use an enumerated type such as this:
+   The problem occurs because of the match in function signatures between a **placement delete** operator you've defined, and the new global sized **delete** operator. Consider whether you can use a different type other than `size_t` for any **placement new** and **delete** operators.  Note that the type of the `size_t` **typedef** is compiler-dependent; it is a **typedef** for **unsigned int** in Visual C++. A good solution is to use an enumerated type such as this:
 
    ```cpp
     enum class my_type : size_t {};
-
    ```
 
-   Then, change your definition of placement new and delete to use this type as the second argument instead of size_t. You’ll also need to update the calls to placement new to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of new and delete to cast back to the integer type. You don’t need to use an enum for this; a class type with a size_t member would also work.
+   Then, change your definition of placement **new** and **delete** to use this type as the second argument instead of `size_t`. You’ll also need to update the calls to **placement new** to pass the new type (for example, by using `static_cast<my_type>` to convert from the integer value) and update the definition of **new** and **delete** to cast back to the integer type. You don’t need to use an **enum** for this; a class type with a `size_t` member would also work.
 
-   An alternative solution is that you might be able to eliminate the placement new altogether. If your code uses placement new to implement a memory pool where the placement argument is the size of the object being allocated or deleted, then sized deallocation feature might be suitable to replace your own custom memory pool code, and you can get rid of the placement functions and just use your own two-argument delete operator instead of the placement functions.
+   An alternative solution is that you might be able to eliminate the **placement new** altogether. If your code uses **placement new** to implement a memory pool where the placement argument is the size of the object being allocated or deleted, then sized deallocation feature might be suitable to replace your own custom memory pool code, and you can get rid of the placement functions and just use your own two-argument **delete** operator instead of the placement functions.
 
-   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option /Zc:sizedDealloc-. If you use this option, the two-argument delete functions don’t exist and won't cause a conflict with your placement delete operator.
+   If you don't want to update your code immediately, you can revert to the old behavior by using the compiler option `/Zc:sizedDealloc-`. If you use this option, the two-argument **delete** functions don’t exist and won't cause a conflict with your **placement delete** operator.
 
 - **Union data members**
 
@@ -323,7 +318,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     } u;
    ```
 
-- **Unions with anonymous structs** In order to conform with the standard, the runtime behavior has changed for members of anonymous structures in unions. The constructor for anonymous structure members in a union is no longer implicitly called when such a union is created.   Also, the destructor for anonymous structure members in a union is no longer implicitly called when the union goes out of scope. Consider the following code, in which a union U contains an anonymous structure that contains a member which is a named structure S that has a destructor.
+- **Unions with anonymous structs** In order to conform with the standard, the runtime behavior has changed for members of anonymous structures in unions. The constructor for anonymous structure members in a union is no longer implicitly called when such a union is created. Also, the destructor for anonymous structure members in a union is no longer implicitly called when the union goes out of scope. Consider the following code, in which a union U contains an anonymous structure that contains a member which is a named structure S that has a destructor.
 
    ```cpp
     #include <stdio.h>
@@ -467,7 +462,6 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     S<D> s1;
         S<D> s2(s1);
     }
-
    ```
 
    If you compile with the current compiler, you get the following error:
@@ -543,7 +537,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     }
    ```
 
-- **Overloaded operator new and operator delete** Previous versions of the compiler allowed non-member `operator new` and non-member `operator delete` to be declared static, and to be declared in namespaces other than the global namespace.  This old behavior created a risk that the program would not call the `new` or `delete` operator implementation that the programmer intended, resulting in silent bad runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2323 instead.
+- **Overloaded operator new and operator delete** Previous versions of the compiler allowed non-member **operator new** and non-member **operator delete** to be declared static, and to be declared in namespaces other than the global namespace.  This old behavior created a risk that the program would not call the **new** or **delete** operator implementation that the programmer intended, resulting in silent bad runtime behavior. The compiler no longer accepts code written in this way and issues compiler error C2323 instead.
 
    ```Output
     error C2323: 'operator new': non-member operator new or delete functions may not be declared static or in a namespace other than the global namespace.
@@ -595,7 +589,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     }
    ```
 
-- **Redundant typename in elaborated type specifiers**  Previous versions of the compiler allowed `typename` in an elaborated type specifiers; code written in this way is semantically incorrect. The compiler no longer accepts code written in this way and issues compiler error C3406 instead.
+- **Redundant typename in elaborated type specifiers**  Previous versions of the compiler allowed **typename** in an elaborated type specifiers; code written in this way is semantically incorrect. The compiler no longer accepts code written in this way and issues compiler error C3406 instead.
 
    ```Output
     error C3406: 'typename' cannot be used in an elaborated type specifier
@@ -699,7 +693,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     }
    ```
 
-- **Restoration of switch statement warnings** A Previous version of the compiler removed previously-existing warnings related to `switch` statements; these warnings have now been restored. The compiler now issues the restored warnings, and warnings related to specific cases (including the default case) are now issued on the line containing the offending case, rather than on the last line of the switch statement. As a result of now issuing those warnings on different lines than in the past, warnings previously suppressed by using `#pragma warning(disable:####)` may no longer be suppressed as intended. To suppress these warnings as intended, it might be necessary to move the `#pragma warning(disable:####)` directive to a line above the first potentially-offending case. The following are the restored warnings.
+- **Restoration of switch statement warnings** A Previous version of the compiler removed previously-existing warnings related to **switch** statements; these warnings have now been restored. The compiler now issues the restored warnings, and warnings related to specific cases (including the default case) are now issued on the line containing the offending case, rather than on the last line of the switch statement. As a result of now issuing those warnings on different lines than in the past, warnings previously suppressed by using `#pragma warning(disable:####)` may no longer be suppressed as intended. To suppress these warnings as intended, it might be necessary to move the `#pragma warning(disable:####)` directive to a line above the first potentially-offending case. The following are the restored warnings.
 
    ```Output
     warning C4060: switch statement contains no 'case' or 'default' labels
@@ -794,7 +788,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
 
    Examples of the other restored warnings are provided in their documentation.
 
-- **#include: use of parent-directory specifier '..' in pathname** (only affects /Wall /WX)
+- **#include: use of parent-directory specifier '..' in pathname** (only affects `/Wall` `/WX`)
 
      Previous versions of the compiler did not detect the use of the parent-directory specifier '..' in the pathname of  `#include` directives. Code written in this way is usually intended to include headers that exist outside of the project by incorrectly using project-relative paths. This old behavior created a risk that the program could be compiled by including a different source file than the programmer intended, or that these relative paths would not be portable to other build environments. The compiler now detects and notifies the programmer of code written in this way and issues an optional compiler warning C4464, if enabled.
 
@@ -816,7 +810,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
 
    Additionally, although the compiler does not give a specific diagnostic, we also recommend that the parent-directory specifier ".." should note be used to specify your project's include directories.
 
-- **#pragma optimize() extends past end of header file** (only affects /Wall /WX)
+- **#pragma optimize() extends past end of header file** (only affects `/Wall` `/WX`)
 
    Previous versions of the compiler did not detect changes to  optimization flag settings that escape a header file included within a translation unit. The compiler now detects and notifies the programmer of code written in this way and issues an optional compiler warning C4426 at the location of the offending `#include`, if enabled. This warning is only issued if the changes conflict with the optimization flags set by command-line arguments to the compiler.
 
@@ -849,9 +843,9 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     #include "C4426.h"
    ```
 
-- **Mismatched #pragma warning(push)** and **#pragma warning(pop)** (only affects /Wall /WX)
+- **Mismatched #pragma warning(push)** and **#pragma warning(pop)** (only affects `/Wall` `/WX`)
 
-   Previous versions of the compiler did not detect `#pragma warning(push)` state changes being paired with `#pragma warning(pop)` state changes in a different source file, which is rarely intended. This old behavior created a risk that the program would be compiled with a different set of warnings enabled than the programmer intended, possibly resulting in silent bad runtime behavior. The compiler now detects and notifies the programmer of code written in this way and issues an optional compiler warning C5031 at the location of the matching `#pragma warning(pop)`, if enabled. This warning includes a note referencing the location of the corresponding #pragma warning(push).
+   Previous versions of the compiler did not detect `#pragma warning(push)` state changes being paired with `#pragma warning(pop)` state changes in a different source file, which is rarely intended. This old behavior created a risk that the program would be compiled with a different set of warnings enabled than the programmer intended, possibly resulting in silent bad runtime behavior. The compiler now detects and notifies the programmer of code written in this way and issues an optional compiler warning C5031 at the location of the matching `#pragma warning(pop)`, if enabled. This warning includes a note referencing the location of the corresponding `#pragma warning(push)`.
 
    ```Output
     warning C5031: #pragma warning(pop): likely mismatch, popping warning state pushed in different file
@@ -877,7 +871,6 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     ...
     #include "C5031_part2.h" // matches 'dangling' #pragma warning(push), resulting in warning C5031
     ...
-
    ```
 
    Example (after)
@@ -902,12 +895,11 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     ...
     #include "C5031_part2.h"
     ...
-
    ```
 
    Though uncommon, code written in this way is sometimes intentional. Code written in this way is sensitive to changes in `#include` order; when possible, we recommend that source code files manage warning state in a self-contained way.
 
-- **Unmatched #pragma warning(push)** (only affects /Wall /WX) Previous versions of the compiler did not detect unmatched `#pragma warning(push)` state changes at the end of a translation unit. The compiler now detects and notifies the programmer of code written in this way and issues an optional compiler warning C5032 at the location of the unmatched #pragma warning(push), if enabled. This warning is only issued if there are no compilation errors in the translation unit.
+- **Unmatched #pragma warning(push)** (only affects `/Wall` `/WX`) Previous versions of the compiler did not detect unmatched `#pragma warning(push)` state changes at the end of a translation unit. The compiler now detects and notifies the programmer of code written in this way and issues an optional compiler warning C5032 at the location of the unmatched `#pragma warning(push)`, if enabled. This warning is only issued if there are no compilation errors in the translation unit.
 
    ```Output
     warning C5032: detected #pragma warning(push) with no corresponding #pragma warning(pop)
@@ -944,9 +936,9 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     // C5032.cpp ends -- the translation unit is completed without unmatched #pragma warning(push)
    ```
 
-- **Additional warnings might be issued as a result of improved #pragma warning state tracking** Previous versions of the compiler tracked #pragma warning state changes insufficiently well to issue all intended warnings. This behavior created a risk that certain warnings would be effectively suppressed in circumstances different than the programmer intended. The compiler now tracks #pragma warning state more robustly -- especially related to #pragma warning state changes inside of templates -- and optionally issues new warnings C5031 and C5032 which are intended to help the programmer locate unintended uses of `#pragma warning(push)` and `#pragma warning(pop)`.
+- **Additional warnings might be issued as a result of improved #pragma warning state tracking** Previous versions of the compiler tracked `#pragma warning` state changes insufficiently well to issue all intended warnings. This behavior created a risk that certain warnings would be effectively suppressed in circumstances different than the programmer intended. The compiler now tracks `#pragma warning` state more robustly -- especially related to `#pragma warning` state changes inside of templates -- and optionally issues new warnings C5031 and C5032 which are intended to help the programmer locate unintended uses of `#pragma warning(push)` and `#pragma warning(pop)`.
 
-   As a result of improved #pragma warning state change tracking, warnings formerly incorrectly suppressed or warnings related to issues formerly misdiagnosed might now be issued.
+   As a result of improved `#pragma warning` state change tracking, warnings formerly incorrectly suppressed or warnings related to issues formerly misdiagnosed might now be issued.
 
 - **Improved identification of unreachable code** C++ Standard Library changes and improved ability to inline function calls over previous versions of the compiler might allow the compiler to prove that certain code is now unreachable. This new behavior can result in new and more-frequently issued instances of warning C4720.
 
@@ -954,7 +946,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     warning C4720: unreachable code
    ```
 
-   In many cases, this warning might only be issued when compiling with optimizations enabled, since optimizations may inline more function calls, eliminate redundant code, or otherwise make it possible to determine that certain code is unreachable. We have observed that new instances of warning C4720 have frequently occurred in try/catch blocks, especially in relation to use of [std::find](assetId:///std::find?qualifyHint=False&autoUpgrade=True).
+   In many cases, this warning might only be issued when compiling with optimizations enabled, since optimizations may inline more function calls, eliminate redundant code, or otherwise make it possible to determine that certain code is unreachable. We have observed that new instances of warning C4720 have frequently occurred in **try/catch** blocks, especially in relation to use of [std::find](assetId:///std::find?qualifyHint=False&autoUpgrade=True).
 
    Example (before)
 
@@ -984,9 +976,9 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
 
 ### <a name="VS_Update2"></a> Conformance Improvements in Visual Studio 2015 Update 2
 
-- **Additional warnings and errors might be issued as a result of partial support for expression SFINAE** Previous versions of the compiler did not parse certain kinds of expressions inside `decltype` specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in  expressions that previous versions of the compiler did not parse.
+- **Additional warnings and errors might be issued as a result of partial support for expression SFINAE** Previous versions of the compiler did not parse certain kinds of expressions inside **decltype** specifiers due to lack of  support for expression SFINAE. This old behavior was incorrect and does not conform to the C++ standard. The compiler now parses these expressions and has partial support for expression SFINAE due to  ongoing conformance improvements. As a result, the compiler now issues warnings and errors found in  expressions that previous versions of the compiler did not parse.
 
-   When this new behavior parses a `decltype` expression that includes a type that has not yet been declared, the compiler issues compiler error C2039 as a result.
+   When this new behavior parses a **decltype** expression that includes a type that has not yet been declared, the compiler issues compiler error C2039 as a result.
 
    ```Output
     error C2039: 'type': is not a member of '`global namespace''
@@ -1020,7 +1012,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     }
    ```
 
-   When this new behavior parses a `decltype` expression that is missing a necessary use of the `typename` keyword to specify that a dependent name is a type, the compiler issues  compiler warning C4346 together with compiler error C2923.
+   When this new behavior parses a **decltype** expression that is missing a necessary use of the **typename** keyword to specify that a dependent name is a type, the compiler issues  compiler warning C4346 together with compiler error C2923.
 
    ```Output
     warning C4346: 'S2<T>::Type': dependent name is not a type
@@ -1071,7 +1063,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     };
    ```
 
-- `volatile` **member variables prevent implicitly defined constructors and assignment operators** Previous versions of the compiler allowed a class that has `volatile` member variables to have default copy/move constructors and default copy/move assignment operators automatically generated. This old behavior was incorrect and does not conform to the C++ standard. The compiler now considers a class that has volatile member variables to have non-trivial construction and assignment operators which prevents default implementations of these operators from being automatically generated.  When such a class is a member of a union (or an anonymous union inside of a class), the copy/move constructors and copy/move assignment operators of the union (or the class containing the unonymous union) will be implicitly defined as deleted. Attempting to construct or copy the union (or class containing the anonymous union) without explicitly defining them is an error and the compiler  issues compiler error C2280 as a result.
+- `volatile` **member variables prevent implicitly defined constructors and assignment operators** Previous versions of the compiler allowed a class that has **volatile** member variables to have default copy/move constructors and default copy/move assignment operators automatically generated. This old behavior was incorrect and does not conform to the C++ standard. The compiler now considers a class that has volatile member variables to have non-trivial construction and assignment operators which prevents default implementations of these operators from being automatically generated. When such a class is a member of a union (or an anonymous union inside of a class), the copy/move constructors and copy/move assignment operators of the union (or the class containing the unonymous union) will be implicitly defined as deleted. Attempting to construct or copy the union (or class containing the anonymous union) without explicitly defining them is an error and the compiler issues compiler error C2280 as a result.
 
    ```Output
     error C2280: 'B::B(const B &)': attempting to reference a deleted function
@@ -1140,7 +1132,6 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     };
 
     void A::func() const {}  // C2511
-
    ```
 
    Example (after)
@@ -1152,10 +1143,9 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     };
 
     void A::func() {}  // removed const
-
    ```
 
-- **Forward declaration of enum is not allowed in WinRT code** (affects /ZW only) Code compiled for the Windows Runtime (WinRT) doesn't allow `enum` types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the /clr compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
+- **Forward declaration of enum is not allowed in WinRT code** (affects `/ZW` only) Code compiled for the Windows Runtime (WinRT) doesn't allow **enum** types to be forward declared, similarly to when managed C++ code is compiled for the .Net Framework using the `/clr` compiler switch. This behavior is ensures that the size of an enumeration is always known and can be correctly projected to the WinRT type system. The compiler rejects code written in this way and  issues compiler error C2599 together with compiler error C3197.
 
    ```Output
     error C2599: 'CustomEnum': the forward declaration of a WinRT enum is not allowed
@@ -1193,7 +1183,6 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
 
    ```cpp
               // forward declaration of CustomEnum removed
-
     namespace A {
       public enum class CustomEnum: int32
       {
@@ -1211,7 +1200,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     };
    ```
 
-- **Overloaded non-member operator new and operator delete may not be declared inline** (Level 1 (/W1) on-by-default) Previous versions of the compiler do not issue a warning when non-member operator new and operator delete functions are declared inline. Code written in this way is ill-formed (no diagnostic required) and can cause memory issues  resulting from mismatched new and delete operators (especially when used together with sized deallocation) that can be difficult to diagnose.   The compiler now issues compiler warning C4595 to help identify code written in this way.
+- **Overloaded non-member operator new and operator delete may not be declared inline** (Level 1 (`/W1`) on-by-default) Previous versions of the compiler do not issue a warning when non-member **operator new** and **operator delete** functions are declared inline. Code written in this way is ill-formed (no diagnostic required) and can cause memory issues resulting from mismatched new and delete operators (especially when used together with sized deallocation) that can be difficult to diagnose. The compiler now issues compiler warning C4595 to help identify code written in this way.
 
    ```Output
     warning C4595: 'operator new': non-member operator new or delete functions may not be declared inline
@@ -1220,7 +1209,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
    Example (before)
 
    ```cpp
-              inline void* operator new(size_t sz)  // warning C4595
+    inline void* operator new(size_t sz)  // warning C4595
     {
       ...
     }
@@ -1229,7 +1218,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
    Example (after)
 
    ```cpp
-              void* operator new(size_t sz)  // removed inline
+    void* operator new(size_t sz)  // removed inline
     {
       ...
     }
@@ -1239,7 +1228,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
 
 ### <a name="VS_Update3"></a> Conformance Improvements in Visual Studio 2015 Update 3
 
-- **std::is_convertable now detects self-assignment**  (standard library) Previous versions of the `std::is_convertable` type-trait did not correctly detect self-assignment of a class type when its copy constructor is deleted or private. Now, `std::is_convertable<>::value` is correctly set to `false` when applied to a class type with a deleted or private copy constructor.
+- **std::is_convertable now detects self-assignment**  (standard library) Previous versions of the `std::is_convertable` type-trait did not correctly detect self-assignment of a class type when its copy constructor is deleted or private. Now, `std::is_convertable<>::value` is correctly set to **false** when applied to a class type with a deleted or private copy constructor.
 
    There is no compiler diagnostic associated with this change.
 
@@ -1263,9 +1252,9 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     static_assert(std::is_convertible<X1&, X1>::value, "BOOM");static_assert(std::is_convertible<X2&, X2>::value, "BOOM");
    ```
 
-   In previous versions of Visual C++, the static assertions at the bottom of this example pass because `std::is_convertable<>::value` was incorrectly set to `true`. Now, `std::is_convertable<>::value` is correctly set to `false`, causing the static assertions to fail.
+   In previous versions of Visual C++, the static assertions at the bottom of this example pass because `std::is_convertable<>::value` was incorrectly set to **true**. Now, `std::is_convertable<>::value` is correctly set to **false**, causing the static assertions to fail.
 
-- **Defaulted or deleted trivial copy and move constructors respect access specifiers** Previous versions of the compiler did not check the access specifier of defaulted or deleted trivial copy and move constructors before allowing them to be called. This old behavior was incorrect and does not conform to the C++ standard. In some cases, this old  behavior created a risk of silent bad code generation, resulting in unpredictable runtime behavior. The compiler now checks the access specifier  of defaulted or deleted trivial copy and move constructors to determine whether it can be called, and if not, issues compiler warning C2248 as a result.
+- **Defaulted or deleted trivial copy and move constructors respect access specifiers** Previous versions of the compiler did not check the access specifier of defaulted or deleted trivial copy and move constructors before allowing them to be called. This old behavior was incorrect and does not conform to the C++ standard. In some cases, this old behavior created a risk of silent bad code generation, resulting in unpredictable runtime behavior. The compiler now checks the access specifier of defaulted or deleted trivial copy and move constructors to determine whether it can be called, and if not, issues compiler warning C2248 as a result.
 
    ```Output
     error C2248: 'S::S' cannot access private member declared in class 'S'
@@ -1309,7 +1298,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     }
    ```
 
-- **Deprecation of attributed ATL code support** (Level 1 (/W1) on-by-default) Previous versions of the compiler supported attributed ATL code. As the next phase of removing support for attributed ATL code that [began in Visual C++ 2008](https://msdn.microsoft.com/library/bb384632\(v=vs.90\).aspx), attributed ATL code has been deprecated. The compiler now issues compiler warning C4467 to help identify this kind of deprecated code.
+- **Deprecation of attributed ATL code support** (Level 1 (`/W1`) on-by-default) Previous versions of the compiler supported attributed ATL code. As the next phase of removing support for attributed ATL code that [began in Visual C++ 2008](https://msdn.microsoft.com/library/bb384632\(v=vs.90\).aspx), attributed ATL code has been deprecated. The compiler now issues compiler warning C4467 to help identify this kind of deprecated code.
 
    ```Output
     warning C4467: Usage of ATL attributes is deprecated
@@ -1328,7 +1317,6 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
 
    ```cpp
     __declspec(uuid("594382D9-44B0-461A-8DE3-E06A3E73C5EB")) A {};
-
    ```
 
    Sometimes you might need or want to create an IDL file to avoid the use deprecated ATL attributes, as in the example code below
@@ -1405,7 +1393,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     };
    ```
 
-- **Precompiled header (PCH) files and mismatched #include directives** (only affects /Wall /WX) Previous versions of the compiler accepted mismatched `#include` directives in source files between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler.   The compiler now issues compiler warning CC4598 to help identify mismatched `#include` directives when using PCH files.
+- **Precompiled header (PCH) files and mismatched #include directives** (only affects `/Wall` `/WX`) Previous versions of the compiler accepted mismatched `#include` directives in source files between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler. The compiler now issues compiler warning CC4598 to help identify mismatched `#include` directives when using PCH files.
 
    ```Output
     warning C4598: 'b.h': included header file specified for Ycc.h at position 2 does not match Yuc.h at that position
@@ -1447,7 +1435,7 @@ In Visual Studio 2015 and later, ongoing improvements to compiler conformance ca
     #include "c.h"
    ```
 
-- **Precompiled header (PCH) files and mismatched include directories** (only affects /Wall /WX) Previous versions of the compiler accepted mismatched include directory (`-I`) command line arguments to the compiler between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler.   The compiler now issues compiler warning CC4599 to help identify mismatched include directory (`-I`) command line arguments when using PCH files.
+- **Precompiled header (PCH) files and mismatched include directories** (only affects `/Wall` `/WX`) Previous versions of the compiler accepted mismatched include directory (`-I`) command line arguments to the compiler between `-Yc` and `-Yu` compilations when using precompiled header (PCH)  files. Code written in this way is no longer accepted by the compiler.   The compiler now issues compiler warning CC4599 to help identify mismatched include directory (`-I`) command line arguments when using PCH files.
 
    ```Output
     warning C4599: '-I..' : specified for Ycc.h at position 1 does not match Yuc.h at that position
@@ -1490,9 +1478,11 @@ The Microsoft Visual C++ compiler supports these ISO C++11 language features:
 - Compound literals.
 - Designated initializers.
 - Mixing declarations with code.
-- String literal conversion to modifiable values can be disallowed by using the new compiler option **/Zc:strictStrings**. In C++98, conversion from string literals to char\* (and wide string literals to wchar_t\*) was deprecated. In C++11, the conversion was removed entirely. Although the compiler could strictly conform to the standard, instead it provides the **/Zc:strictStrings** option so that you can control conversion. By default, the option is off. Note that when you are using this option in debug mode, the STL will not compile.
-- rvalue/lvalue Reference Casts. With rvalue references, C++11 can clearly distinguish between lvalues and rvalues. Previously, the compiler did not provide this in specific casting scenarios. A new compiler option, **/Zc:rvalueCast**, has been added to make the compiler conformant with the C++ Language Working Paper(see section 5.4, [expr.cast]/1). The default behavior when this option is not specified is the same as in Visual Studio 2012.
-  - Note: For defaulted functions, using =default to request memberwise move constructors and move assignment operators is not supported.
+- String literal conversion to modifiable values can be disallowed by using the new compiler option `/Zc:strictStrings`. In C++98, conversion from string literals to `char*` (and wide string literals to `wchar_t*`) was deprecated. In C++11, the conversion was removed entirely. Although the compiler could strictly conform to the standard, instead it provides the `/Zc:strictStrings` option so that you can control conversion. By default, the option is off. Note that when you are using this option in debug mode, the STL will not compile.
+- rvalue/lvalue Reference Casts. With rvalue references, C++11 can clearly distinguish between lvalues and rvalues. Previously, the compiler did not provide this in specific casting scenarios. A new compiler option, `/Zc:rvalueCast`, has been added to make the compiler conformant with the C++ Language Working Paper(see section 5.4, [expr.cast]/1). The default behavior when this option is not specified is the same as in Visual Studio 2012.
+
+> [!NOTE]
+> For defaulted functions, using =default to request memberwise move constructors and move assignment operators is not supported.
 
 ### C99 Libraries
 
@@ -1525,7 +1515,7 @@ This improved support for ISO C/C++ standards may require changes to existing co
 - Auto-Vectorizer now recognizes and optimizes more C++ patterns to make your code run faster.
 - ARM platform and Atom micro-architecture code quality improvements.
 - __vectorcall calling convention is added. Pass vector type arguments by using the __vectorcall calling convention to use vector registers.
-- New Linker Options. The /Gw (compiler) and /Gy (assembler) switches enable linker optimizations to produce leaner binaries.
+- New Linker Options. The `/Gw` (compiler) and `/Gy` (assembler) switches enable linker optimizations to produce leaner binaries.
 - C++ AMP shared memory support to reduce or eliminate data copying between CPU and GPU.
 
 ### Profile Guided Optimization (PGO) enhancements
@@ -1535,12 +1525,14 @@ This improved support for ISO C/C++ standards may require changes to existing co
 
 ### Windows Runtime App Development Support
 
-- **Support For Boxed Types In Value structs.** You can now define value types by using fields that can be null—for example, IBox\<int>^ as opposed to int. This means that the fields can either have a value, or be equal to nullptr.
+- **Support For Boxed Types In Value structs.** You can now define value types by using fields that can be null—for example, `IBox<int>^` as opposed to **int**. This means that the fields can either have a value, or be equal to **nullptr**.
 - **Richer Exception Information.** C++/CX supports the new Windows error model that enables the capture and propagation of rich exception information across the application binary interface (ABI); this includes call stacks and custom message strings.
 - **Object::ToString() Is Now Virtual.** You can now override ToString in user-defined Windows Runtime ref types.
 - **Support For Deprecated APIs.** Public Windows Runtime APIs can now be marked as deprecated and given a custom message that appears as a build warning and can provide migration guidance.
 - **Debugger Improvements.** Support for native/JavaScript interop debugging, Windows Runtime exception diagnosis, and async code debugging (both Windows Runtime and PPL).
-  - Note: In addition to the C++-specific features and enhancements that are described in this section, other enhancements in Visual Studio also can help you write better Windows Runtime apps.
+
+> [!NOTE]
+> In addition to the C++-specific features and enhancements that are described in this section, other enhancements in Visual Studio also can help you write better Windows Runtime apps.
 
 ### Diagnostics Enhancements
 
@@ -1579,7 +1571,7 @@ This improved support for ISO C/C++ standards may require changes to existing co
 
 **Find All References** now automatically resolves and filters references in the background after it displays the list of textual matches.
 
-**Context-Based Member List Filtering.** Inaccessible members are filtered out of the IntelliSense member lists. For example, private members are not displayed in the member list unless you are modifying the code that implements the type. While the member list is open, you can press Ctrl+J to remove one level of filtering (applies only to the current member list window). You can press Ctrl+J again to remove the textual filtering and show every member.
+**Context-Based Member List Filtering.** Inaccessible members are filtered out of the IntelliSense member lists. For example, private members are not displayed in the member list unless you are modifying the code that implements the type. While the member list is open, you can press **Ctrl**+**J** to remove one level of filtering (applies only to the current member list window). You can press **Ctrl**+**J** again to remove the textual filtering and show every member.
 
 **Parameter Help Scrolling.** The displayed function signature in the parameter-help tooltip now changes based on the number of parameters you've actually typed, rather than just showing an arbitrary signature and not updating it based on the current context. Parameter help also functions correctly when it's displayed on nested functions.
 
@@ -1602,7 +1594,7 @@ This improved support for ISO C/C++ standards may require changes to existing co
 #### Standard Template Library
 
 - Support for new STL headers: \<atomic>, \<chrono>, \<condition_variable>, \<filesystem>, \<future>, \<mutex>, \<ratio>, and \<thread>.
-- To optimize memory resource usage, containers are now smaller. For example, in x86 release mode with default settings, std::vector has shrunk from 16 bytes in Visual Studio 2010 to 12 bytes in Visual Studio 2012, and std::map has shrunk from 16 bytes in Visual Studio 2010 to 8 bytes in Visual Studio 2012.
+- To optimize memory resource usage, containers are now smaller. For example, in x86 release mode with default settings, `std::vector` has shrunk from 16 bytes in Visual Studio 2010 to 12 bytes in Visual Studio 2012, and `std::map` has shrunk from 16 bytes in Visual Studio 2010 to 8 bytes in Visual Studio 2012.
 - As permitted but not required by the C++11 Standard, SCARY iterators have been implemented.
 
 #### Other C++11 Enhancements
@@ -1629,7 +1621,7 @@ func1(Element::Helium); // OK
 ### Compiler and Linker
 
 - **Auto-vectorizer**. The compiler analyzes loops in your code and, where possible, emits instructions that use the vector registers and instructions that are present in all modern processors. This makes the loops run faster. (The processor instructions are known as SSE, for Streaming SIMD Extensions). You do not have to enable or request this optimization because it is applied automatically.
-- **Auto-parallelizer**. The compiler can analyze loops in your code and emit instructions that spread the calculations across multiple cores or processors. This can make the loops run faster. You must request this optimization because it is not enabled by default. In many cases, it helps to include a #pragma loop(hint_parallel(N)) in your code immediately before the loops that you want parallelized.
+- **Auto-parallelizer**. The compiler can analyze loops in your code and emit instructions that spread the calculations across multiple cores or processors. This can make the loops run faster. You must request this optimization because it is not enabled by default. In many cases, it helps to include a `#pragma loop(hint_parallel(N))` in your code immediately before the loops that you want parallelized.
 - The auto-vectorizer and auto-parallelizer can work together so that calculations are spread across multiple cores and the code on each core uses its vector registers.
 
 ### New in Visual Studio 2012 Update 1
@@ -1653,14 +1645,14 @@ With hardware moving to multi-core and many-core architectures, developers can n
 In Visual Studio 2010, powerful C++ parallelization libraries such as the Parallel Patterns Library were introduced, together with features to take advantage of concurrency by expressing sophisticated dataflow pipelines. In Visual Studio 2012, these libraries have been extended to provide better performance, more control, and richer support for the parallel patterns that developers need most. The breadth of the offering now includes:
 
 - A rich task-based programming model that supports asynchrony and continuations.
-- Parallel Algorithms , which support fork-join parallelism (parallel_for, parallel_for with affinity, parallel_for_each, parallel_sort, parallel_reduce, parallel_transform).
+- Parallel Algorithms, which support fork-join parallelism (parallel_for, parallel_for with affinity, parallel_for_each, parallel_sort, parallel_reduce, parallel_transform).
 - Concurrency-safe containers, which provide thread-safe versions of std data structures such as priority_queue, queue, vector, and map.
 - The Asynchronous Agents Library, which developers can use to express dataflow pipelines that naturally decompose into concurrent units.
 - A customizable scheduler and resource manager to facilitate the smooth composition of the patterns in this list.
 
 ##### General Parallel Debugging Enhancements
 
-In addition to the Parallel Tasks window and Parallel Stacks window, Visual Studio 2012 offers a new Parallel Watch window so that you can examine the values of an expression across all threads and processes, and perform sorting and filtering on the result. You can also use your own visualizers to extend the window, and you can take advantage of the new multi-process support across all tool windows.
+In addition to the **Parallel Tasks** window and **Parallel Stacks** window, Visual Studio 2012 offers a new **Parallel Watch** window so that you can examine the values of an expression across all threads and processes, and perform sorting and filtering on the result. You can also use your own visualizers to extend the window, and you can take advantage of the new multi-process support across all tool windows.
 
 ### IDE
 
@@ -1668,7 +1660,7 @@ In addition to the Parallel Tasks window and Parallel Stacks window, Visual Stud
 
 **Asynchronous Solution Load.** Projects are now loaded asynchronously—the key parts of the solution first—so that you can start working faster.
 
-**Automated deployment for remote debugging.** Deployment of files for remote debugging in Visual C++ has been simplified. The Deploy option on the project context menu automatically copies to the remote computer the files that are specified in the debugging configuration properties. Copying files manually to the remote computer is no longer required.
+**Automated deployment for remote debugging.** Deployment of files for remote debugging in Visual C++ has been simplified. The **Deploy** option on the project context menu automatically copies to the remote computer the files that are specified in the debugging configuration properties. Copying files manually to the remote computer is no longer required.
 
 **C++/CLI IntelliSense.** C++/CLI now has full IntelliSense support. IntelliSense features such as Quick Info, Parameter Help, List Members, and Auto Completion now work for C++/CLI. In addition, the other IntelliSense and IDE enhancements listed in this document also work for C++/CLI.
 
@@ -1676,11 +1668,11 @@ In addition to the Parallel Tasks window and Parallel Stacks window, Visual Stud
 
 **C++ Code Constructs.** Skeleton code is available for switch, if-else, for loop, and other basic code constructs, in the List Members drop-down list. Select a piece of code from the list to insert it into your code and then fill in the required logic. You can also create your own custom pieces of code for use in the editor.
 
-**List Members Enhancements.** The List Members drop-down list appears automatically as you type code into the code editor. Results are filtered, so that only relevant members are displayed as you type. You can control the kind of filtering logic that's used by the Member List—in the Options dialog box under Text Editor, C/C++, Advanced.
+**List Members Enhancements.** The **List Members** drop-down list appears automatically as you type code into the code editor. Results are filtered, so that only relevant members are displayed as you type. You can control the kind of filtering logic that's used by the Member List—in the **Options** dialog box under **Text Editor** > **C/C++** > **Advanced**.
 
 **Semantic Colorization.** Types, enumerations, macros, and other C++ tokens now have colorization by default.
 
-**Reference Highlighting.** Selecting a symbol now highlights all instances of the symbol in the current file. Press Ctrl+Shift+Up Arrow or Ctrl+Shift+Down Arrow to move among the highlighted references. You can turn this feature off in the Options dialog box, under **Text Editor, C/C++, Advanced**.
+**Reference Highlighting.** Selecting a symbol now highlights all instances of the symbol in the current file. Press **Ctrl**+**Shift**+**Up Arrow** or **Ctrl**+**Shift**+**Down Arrow** to move among the highlighted references. You can turn this feature off in the **Options** dialog box, under **Text Editor** > **C/C++** > **Advanced**.
 
 ### Application Lifecycle Management Tools
 
@@ -1692,50 +1684,49 @@ Here are some other code analysis enhancements:
 
 - New concurrency warnings help you avoid concurrency bugs by making sure that you are using the correct locking disciplines in multithreaded C/C++ programs. The analyzer detects potential race conditions, lock order inversions, caller/callee locking contract violations, mismatched synchronization operations, and other concurrency bugs.
 - You can specify the C++ rules that you want to apply to code analysis runs by using rule sets.
-- In the Code Analysis window, you can insert into the source code a pragma that suppresses a selected warning.
+- In the **Code Analysis** window, you can insert into the source code a pragma that suppresses a selected warning.
 - You can enhance the accuracy and completeness of static code analysis by using the new version of the Microsoft source-code annotation language (SAL) to describe how a function uses its parameters, the assumptions that it makes about them, and the guarantees that it makes when it finishes.
 - Support for 64bit C++ projects.
 
 #### Updated Unit Test Framework
 
-Use the new C++ unit test framework in Visual Studio to write C++ unit tests. Add a new unit test project to your existing C++ solution by locating the C++ Unit Test Project template under the Visual C++ category in the New Project dialog box. Start writing your unit tests in the generated TEST_METHOD code stub in the Unittest1.cpp file. When the test code is written, build the solution. When you want to run the tests, open a Unit Test Explorer window by choosing View, Other Windows, Unit Test Explorer, and then, on the shortcut menu for the test case you want, choose Run selected test. After the test run finishes, you can view test results and additional stack trace information in the same window.
+Use the new C++ unit test framework in Visual Studio to write C++ unit tests. Add a new unit test project to your existing C++ solution by locating the C++ Unit Test Project template under the Visual C++ category in the New Project dialog box. Start writing your unit tests in the generated TEST_METHOD code stub in the Unittest1.cpp file. When the test code is written, build the solution. When you want to run the tests, open a **Unit Test Explorer** window by choosing **View** > **Other Windows** > **Unit Test Explorer**, and then, on the shortcut menu for the test case you want, choose **Run selected test**. After the test run finishes, you can view test results and additional stack trace information in the same window.
 
 #### Architecture Dependency Graphs
 
-To understand your code better, you can now generate dependency graphs for the binary, class, namespace, and include files in a solution. On the menu bar, choose Architecture, Generate Dependency Graph, and then For Solution or For Include File to generate a dependency graph. When the graph generation is complete, you can explore it by expanding each node, learn dependency relationships by moving between nodes, and browse source code by choosing View Content on the shortcut menu for a node. To generate a dependency graph for include files, on the shortcut menu for a *.cpp source code file or *.h header file, choose Generate Graph of Include Files.
+To understand your code better, you can now generate dependency graphs for the binary, class, namespace, and include files in a solution. On the menu bar, choose **Architecture** > **Generate Dependency Graph**, and then **For Solution** or **For Include File** to generate a dependency graph. When the graph generation is complete, you can explore it by expanding each node, learn dependency relationships by moving between nodes, and browse source code by choosing **View Content** on the shortcut menu for a node. To generate a dependency graph for include files, on the shortcut menu for a *.cpp source code file or *.h header file, choose **Generate Graph of Include Files**.
 
 #### Architecture Explorer
 
-By using the Architecture Explorer, you can explore the assets in your C++ solution, projects, or files. On the menu bar, choose Architecture, Windows, Architecture Explorer. You can select a node you are interested in, for example, Class View. In this case, the right side of the tool window is expanded with a list of namespaces. If you select a namespace, a new column shows a list of the classes, structs, and enums in this namespace. You can continue to explore these assets, or go back to the column on the far left to start another query. See Find Code with Architecture Explorer.
+By using the **Architecture Explorer**, you can explore the assets in your C++ solution, projects, or files. On the menu bar, choose **Architecture** > **Windows** > **Architecture Explorer**. You can select a node you are interested in, for example, **Class View**. In this case, the right side of the tool window is expanded with a list of namespaces. If you select a namespace, a new column shows a list of the classes, structs, and enums in this namespace. You can continue to explore these assets, or go back to the column on the far left to start another query. See **Find Code with Architecture Explorer**.
 
 #### Code Coverage
 
-Code coverage has been updated to dynamically instrument binaries at runtime. This lowers the configuration overhead and provides better performance. You can also collect code-coverage data from unit tests for C++ apps. When you have created C++ unit tests, you can use Unit Test Explorer to discover tests in your solution. To run the unit tests and collect code coverage data for them, in Unit Test Explorer, choose Analyze Code Coverage. You can examine the code coverage results in the Code Coverage Results window—on the menu bar, choose Test, Windows, Code Coverage Results.
+Code coverage has been updated to dynamically instrument binaries at runtime. This lowers the configuration overhead and provides better performance. You can also collect code-coverage data from unit tests for C++ apps. When you have created C++ unit tests, you can use **Unit Test Explorer** to discover tests in your solution. To run the unit tests and collect code coverage data for them, in **Unit Test Explorer**, choose **Analyze Code Coverage**. You can examine the code coverage results in the **Code Coverage Results** window—on the menu bar, choose **Test** > **Windows** > **Code Coverage Results**.
 
 ## What's New for C++ in Visual Studio 2010
 
 ### C++ Compiler and Linker
 
-**auto Keyword.** The auto keyword has a new purpose. Use the default meaning of the auto keyword to declare a variable whose type is deduced from the initialization expression in the declaration of the variable. The /Zc:auto compiler option invokes either the new or the previous meaning of the auto keyword.
+**auto Keyword.** The **auto** keyword has a new purpose. Use the default meaning of the **auto** keyword to declare a variable whose type is deduced from the initialization expression in the declaration of the variable. The `/Zc:auto` compiler option invokes either the new or the previous meaning of the **auto** keyword.
 
-**decltype Type Specifier.** The decltype type specifier returns the type of a specified expression. Use the decltype type specifier in combination with the auto keyword to declare a type that is either complex or known only to the compiler. For example, use the combination to declare a template function whose return type depends on the types of its template arguments. Or, declare a template function that calls another function, and then returns the return type of the called function.
+**decltype Type Specifier.** The **decltype** type specifier returns the type of a specified expression. Use the **decltype** type specifier in combination with the **auto** keyword to declare a type that is either complex or known only to the compiler. For example, use the combination to declare a template function whose return type depends on the types of its template arguments. Or, declare a template function that calls another function, and then returns the return type of the called function.
 
-**Lambda Expressions.** Lambda functions have a function body but no name. Lambda functions combine the best characteristics of function pointers and function objects.
-Use a lambda function by itself, as a template function parameter instead of a function object, or together with the auto keyword to declare a variable whose type is a lambda.
+**Lambda Expressions.** Lambda functions have a function body but no name. Lambda functions combine the best characteristics of function pointers and function objects. Use a lambda function by itself, as a template function parameter instead of a function object, or together with the **auto** keyword to declare a variable whose type is a lambda.
 
 **Rvalue Reference.** The rvalue reference declarator (&&) declares a reference to an rvalue. An rvalue reference lets you use move semantics and perfect forwarding to write more efficient constructors, functions, and templates.
 
-**static_assert Declaration.** A static_assert declaration tests a software assertion at compile time, unlike other assertion mechanisms that test at run time. If the assertion fails, the compilation fails and a specified error message is issued.
+**static_assert Declaration.** A **static_assert** declaration tests a software assertion at compile time, unlike other assertion mechanisms that test at run time. If the assertion fails, the compilation fails and a specified error message is issued.
 
-**nullptr and __nullptr Keywords.** The Visual C++ compiler lets you use the nullptr keyword with native code or with managed code. The nullptr keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets nullptr to be managed code when you use the /clr compiler option, and native code when you do not use the /clr option.
-The Microsoft-specific __nullptr keyword has the same meaning as nullptr, but it applies to native code only. If you compile native C/C++ code by using the /clr compiler option, the compiler cannot determine whether the nullptr keyword is a native or a managed term. To make your intention clear to the compiler, use the nullptr keyword to specify the managed term, and __nullptr to specify the native term.
+**nullptr and __nullptr Keywords.** The Visual C++ compiler lets you use the **nullptr** keyword with native code or with managed code. The **nullptr** keyword indicates that an object handle, interior pointer, or native pointer type does not point to an object. The compiler interprets **nullptr** to be managed code when you use the `/clr` compiler option, and native code when you do not use the `/clr` option.
+The Microsoft-specific **__nullptr** keyword has the same meaning as **nullptr**, but it applies to native code only. If you compile native C/C++ code by using the `/clr` compiler option, the compiler cannot determine whether the **nullptr** keyword is a native or a managed term. To make your intention clear to the compiler, use the nullptr keyword to specify the managed term, and **__nullptr** to specify the native term.
 
-**/Zc:trigraphs Compiler Option.** By default, support for trigraphs is disabled. Use the /Zc:trigraphs compiler option to enable trigraphs support.
+**/Zc:trigraphs Compiler Option.** By default, support for trigraphs is disabled. Use the `/Zc:trigraphs` compiler option to enable trigraphs support.
 A trigraph consists of two consecutive question marks (??) followed by a unique third character. The compiler replaces a trigraph with the corresponding punctuation character. For example, the compiler replaces the ??= trigraph with the # (number sign) character. Use trigraphs in C source files that use a character set that does not contain certain punctuation characters.
 
 **New Profile-Guided Optimization Option.** PogoSafeMode is a new profile-guided optimization option that lets you specify whether to use safe mode or fast mode when you optimize your application. Safe mode is thread-safe, but it is slower than fast mode. Fast mode is the default behavior.
 
-**New Common Language Runtime (CLR) Option /clr:nostdlib.** A new option is added for /clr (Common Language Runtime Compilation). If different versions of the same libraries are included, a compile error is issued. The new option lets you exclude the default CLR libraries so that your program can use a specified version.
+**New Common Language Runtime (CLR) Option /clr:nostdlib.** A new option is added for `/clr` (Common Language Runtime Compilation). If different versions of the same libraries are included, a compile error is issued. The new option lets you exclude the default CLR libraries so that your program can use a specified version.
 
 **New pragma directive detect_mistmatch.** The pragma directive detect_mismatch lets you put a tag in your files that is compared to other tags that have the same name. If there are multiple values for the same name, the linker issues an error.
 
@@ -1745,7 +1736,7 @@ A trigraph consists of two consecutive question marks (??) followed by a unique 
 
 **MSBuild.** Visual C++ solutions and projects are now built by using MSBuild.exe, which replaces VCBuild.exe. MSBuild is the same flexible, extensible, XML-based build tool that is used by the other Visual Studio languages and project types. Because of this change, Visual C++ project files now use an XML file format and have the .vcxproj file name extension. Visual C++ project files from earlier versions of Visual Studio are automatically converted to the new file format.
 
-**VC++ Directories.** The VC++ directories setting is now located in two places. Use project property pages to set per-project values for VC++ directories. Use the Property Manager and a property sheet to set global, per-configuration values for VC++ directories.
+**VC++ Directories.** The VC++ directories setting is now located in two places. Use project property pages to set per-project values for VC++ directories. Use the **Property Manager** and a property sheet to set global, per-configuration values for VC++ directories.
 
 **Project-to-Project Dependencies.** In earlier releases, defined dependencies between projects were stored in the solution file. When these solutions are converted to the new project file format, dependencies are converted to project-to-project references. This change can affect applications because the concepts of solution dependencies and project-to-project references are different.
 
@@ -1758,12 +1749,12 @@ A trigraph consists of two consecutive question marks (??) followed by a unique 
 **Standard C++ Library.** The following list describes many of the changes that have been made to the Standard C++ Library.
 
 - The new rvalue reference C++ language feature has been used to implement move semantics and perfect forwarding for many functions in the Standard Template Library. Move semantics and perfect forwarding greatly improve the performance of operations that allocate or assign variables or parameters.
-- Rvalue references are also used to implement the new unique_ptr class, which is a safer smart pointer type than the auto_ptr class. The unique_ptr class is movable but not copyable, implements strict ownership semantics without affecting safety, and works well with containers that are aware of rvalue references. The auto_ptr class is deprecated.
-- Fifteen new functions, for example, find_if_not, copy_if, and is_sorted, have been added to the \<algorithm> header.
+- Rvalue references are also used to implement the new `unique_ptr` class, which is a safer smart pointer type than the `auto_ptr` class. The `unique_ptr` class is movable but not copyable, implements strict ownership semantics without affecting safety, and works well with containers that are aware of rvalue references. The `auto_ptr` class is deprecated.
+- Fifteen new functions, for example, `find_if_not`, `copy_if`, and `is_sorted`, have been added to the \<algorithm> header.
 - In the \<memory> header, the new make_shared function is a convenient, robust, and efficient way to make a shared pointer to an object at the same time the object is constructed.
 - Singly linked lists are supported by the \<forward_list> header.
-- The new cbegin, cend, crbegin, and crend member functions provide a const_iterator that moves forward or backward through a container.
-- The \<system_error> header and related templates support the processing of low-level system errors. Members of the exception_ptr class can be used to transport exceptions between threads.
+- The new `cbegin`, `cend`, `crbegin`, and `crend` member functions provide a `const_iterator` that moves forward or backward through a container.
+- The \<system_error> header and related templates support the processing of low-level system errors. Members of the `exception_ptr` class can be used to transport exceptions between threads.
 - The \<codecvt> header supports converting various encodings of Unicode characters to other encodings.
 - The \<allocators> header defines several templates that help allocate and free memory blocks for node-based containers.
 - There are numerous updates to the \<random> header.
@@ -1776,9 +1767,9 @@ A trigraph consists of two consecutive question marks (??) followed by a unique 
 
 **High-DPI Awareness.** By default, MFC applications are now High-DPI-aware. If an application is High-DPI (high dots per inch) aware, the operating system can scale windows, text, and other UI elements to the current screen resolution. This means that a scaled image is more likely to be correctly laid out, and not clipped or pixelated.
 
-**Restart Manager.** The restart manager automatically saves documents and restarts your application if it unexpectedly closes or restarts. For example, you can use the restart manager to start your application after it is closed by an automatic update. For more information about how to configure your application to use the restart manager, see How to: Add Restart Manager Support.
+**Restart Manager.** The restart manager automatically saves documents and restarts your application if it unexpectedly closes or restarts. For example, you can use the restart manager to start your application after it is closed by an automatic update. For more information about how to configure your application to use the restart manager, see **How to: Add Restart Manager Support**.
 
-**CTaskDialog.** The CTaskDialog class can be used instead of the standard AfxMessageBox message box. The CTaskDialog class displays and gathers more information than the standard message box does.
+**CTaskDialog.** The `CTaskDialog` class can be used instead of the standard `AfxMessageBox` message box. The `CTaskDialog` class displays and gathers more information than the standard message box does.
 
 #### SafeInt Library
 
@@ -1790,35 +1781,35 @@ New macros have been added to ATL to expand the functionality of PROP_ENTRY_TYPE
 
 #### /analyze Warnings
 
-Most /analyze (Enterprise Code Analysis) warnings have been removed from the C Run-Time (CRT), MFC, and ATL libraries.
+Most `/analyze` (Enterprise Code Analysis) warnings have been removed from the C Run-Time (CRT), MFC, and ATL libraries.
 
 #### Animation and D2D support
 
-MFC now supports animation and Direct2D graphics. The MFC library has several new MFC classes and functions to support this functionality. There are also two new walkthroughs to show how to add a D2D object and an animation object to a project. These walkthroughs are Walkthrough: Adding a D2D Object to an MFC Project and Walkthrough: Adding Animation to an MFC Project.
+MFC now supports animation and Direct2D graphics. The MFC library has several new MFC classes and functions to support this functionality. There are also two new walkthroughs to show how to add a D2D object and an animation object to a project. These walkthroughs are **Walkthrough: Adding a D2D Object to an MFC Project** and **Walkthrough: Adding Animation to an MFC Project**.
 
 ### IDE
 
 **Improved IntelliSense.** IntelliSense for Visual C++ has been completely redesigned to be faster, more accurate, and able to handle larger projects. To achieve this improvement, the IDE makes a distinction between how a developer views and modifies source code, and how the IDE uses source code and project settings to build a solution.
-Because of this separation of duties, browsing features such as Class View and the new Navigate To dialog box are handled by a system that is based on a new SQL Server desktop database (.sdf) file that replaces the old no compile browse (.ncb) file. IntelliSense features such as Quick Information, Auto Completion, and Parameter Help parse translation units only when required. Hybrid features such as the new Call Hierarchy window use a combination of the browse and IntelliSense features.
+Because of this separation of duties, browsing features such as **Class View** and the new **Navigate To** dialog box are handled by a system that is based on a new SQL Server desktop database (.sdf) file that replaces the old no compile browse (.ncb) file. IntelliSense features such as Quick Information, Auto Completion, and Parameter Help parse translation units only when required. Hybrid features such as the new **Call Hierarchy** window use a combination of the browse and IntelliSense features.
 Because IntelliSense processes only the information that you require at the moment, the IDE is more responsive. Also, because information is more up to date, IDE views and windows are more accurate. Finally, because the IDE infrastructure is better organized, more capable, and more scalable, it can handle larger projects.
 
-**Improved IntelliSense Errors.** The IDE better detects errors that could cause a loss of IntelliSense and displays red wavy underlines under them. In addition, the IDE reports IntelliSense errors to the Error List Window. To display the code that is causing the problem, double-click the error in the Error List Window.
+**Improved IntelliSense Errors.** The IDE better detects errors that could cause a loss of IntelliSense and displays red wavy underlines under them. In addition, the IDE reports IntelliSense errors to the **Error List Window**. To display the code that is causing the problem, double-click the error in the **Error List Window**.
 
-**#include Auto-Complete Feature.** The IDE supports auto-completion for the #include keyword. When you type #include, the IDE creates a drop-down list box of valid header files. If you continue by typing a file name, the IDE filters the list based on your entry. At any point, you can select from the list the file you want to include. This lets you quickly include files without knowing the exact file name.
+**#include Auto-Complete Feature.** The IDE supports auto-completion for the `#include` keyword. When you type `#include`, the IDE creates a drop-down list box of valid header files. If you continue by typing a file name, the IDE filters the list based on your entry. At any point, you can select from the list the file you want to include. This lets you quickly include files without knowing the exact file name.
 
-**Navigate To.** The Navigate To dialog box lets you search for all symbols and files in your project that match a specified string. Search results are immediately revised as you type additional characters in your search string. The Results feedback field tells you the number of items found and helps you decide whether to constrain your search. The Kind/Scope, Location, and Preview feedback fields help you disambiguate items that have similar names. In addition, you can extend this feature to support other programming languages.
+**Navigate To.** The **Navigate To** dialog box lets you search for all symbols and files in your project that match a specified string. Search results are immediately revised as you type additional characters in your search string. The **Results** feedback field tells you the number of items found and helps you decide whether to constrain your search. The **Kind/Scope**, **Location**, and **Preview** feedback fields help you disambiguate items that have similar names. In addition, you can extend this feature to support other programming languages.
 
 **Parallel Debugging and Profiling.** The Visual Studio debugger is aware of the Concurrency Runtime and helps you troubleshoot parallel processing applications. You can use the new concurrency profiler tool to visualize the overall behavior of your application. Also, you can use new tool windows to visualize the state of tasks and their call stacks.
 
-**Ribbon Designer.** The Ribbon Designer is a graphical editor that lets you create and modify an MFC ribbon UI. The final ribbon UI is represented by an XML-based resource file (.mfcribbon-ms). For existing applications, you can capture your current ribbon UI by temporarily adding a few lines of code and then invoking the Ribbon Designer. After the ribbon resource file is created, you can replace your handwritten ribbon UI code with a few statements that load the ribbon resource.
+**Ribbon Designer.** The **Ribbon Designer** is a graphical editor that lets you create and modify an MFC ribbon UI. The final ribbon UI is represented by an XML-based resource file (.mfcribbon-ms). For existing applications, you can capture your current ribbon UI by temporarily adding a few lines of code and then invoking the **Ribbon Designer**. After the ribbon resource file is created, you can replace your handwritten ribbon UI code with a few statements that load the ribbon resource.
 
-**Call Hierarchy.** The Call Hierarchy window lets you navigate to all functions that are called by a particular function, or to all functions that call a particular function.
+**Call Hierarchy.** The **Call Hierarchy** window lets you navigate to all functions that are called by a particular function, or to all functions that call a particular function.
 
 ### Tools
 
 **MFC Class Wizard.** Visual C++ 2010 brings back the well-regarded MFC Class Wizard tool. The MFC Class Wizard is a convenient way to add classes, messages, and variables to a project without having to manually modify sets of source files.
 
-**ATL Control Wizard.** The ATL Control Wizard no longer automatically populates the ProgID field. If an ATL control does not have a ProgID, other tools may not work with it. One example of a tool that requires controls to have a ProgID is the Insert Active Control dialog box. For more information about the dialog box, see Insert ActiveX Control Dialog Box.
+**ATL Control Wizard.** The ATL Control Wizard no longer automatically populates the `ProgID` field. If an ATL control does not have a `ProgID`, other tools may not work with it. One example of a tool that requires controls to have a `ProgID` is the **Insert Active Control** dialog box. For more information about the dialog box, see **Insert ActiveX Control Dialog Box**.
 
 ### Microsoft Macro Assembler Reference
 
@@ -1828,12 +1819,12 @@ The addition of the YMMWORD data type supports the 256-bit multimedia operands t
 
 ### Visual C++ Integrated Development Environment (IDE)
 
-- Dialog boxes that are created in ATL, MFC, and Win32 applications now comply with the Windows Vista style guidelines. When you create a new project by using Visual Studio 2008, all dialog boxes that you insert into your application will comply with the Windows Vista style guideline. If you recompile a project that you created with an earlier version of Visual Studio, any existing dialog boxes will maintain the same look that they previously had. For more information about how to insert dialog boxes into your application, see Dialog Editor.
+- Dialog boxes that are created in ATL, MFC, and Win32 applications now comply with the Windows Vista style guidelines. When you create a new project by using Visual Studio 2008, all dialog boxes that you insert into your application will comply with the Windows Vista style guideline. If you recompile a project that you created with an earlier version of Visual Studio, any existing dialog boxes will maintain the same look that they previously had. For more information about how to insert dialog boxes into your application, see **Dialog Editor**.
 
-- The ATL Project wizard now has an option to register components for all users. Beginning with Visual Studio 2008, the COM components and type libraries that are created by the ATL Project wizard are registered in the HKEY_CURRENT_USER node of the registry unless you select Register component for all users.
-- The ATL Project wizard no longer provides an option to create attributed ATL projects. Beginning with Visual Studio 2008, the ATL Project wizard does not have an option to change the attributed status of a new project. All new ATL projects that the wizard creates are now unattributed.
+- The **ATL Project** wizard now has an option to register components for all users. Beginning with Visual Studio 2008, the COM components and type libraries that are created by the **ATL Project** wizard are registered in the HKEY_CURRENT_USER node of the registry unless you select **Register component for all users**.
+- The **ATL Project** wizard no longer provides an option to create attributed ATL projects. Beginning with Visual Studio 2008, the **ATL Project** wizard does not have an option to change the attributed status of a new project. All new ATL projects that the wizard creates are now unattributed.
 - Writing to the registry can be redirected. With the introduction of Windows Vista, writing to certain areas of the registry requires a program to run in elevated mode. It is not desirable to always run Visual Studio in elevated mode. Per-user redirection automatically redirects registry writes from HKEY_CLASSES_ROOT to HKEY_CURRENT_USER without any programming changes.
-- The Class Designer now has limited support for native C++ code. In earlier versions of Visual Studio, the Class Designer worked only with Visual C# and Visual Basic. C++ users can now use the Class Designer, but only in read-only mode. For more information about how to use the Class Designer with C++, see Working with Visual C++ Code in Class Designer.
+- The **Class Designer** now has limited support for native C++ code. In earlier versions of Visual Studio, the **Class Designer** worked only with Visual C# and Visual Basic. C++ users can now use the **Class Designer**, but only in read-only mode. For more information about how to use the **Class Designer** with C++, see **Working with Visual C++ Code in Class Designer**.
 - The project wizard no longer has an option to create a C++ SQL Server project. Beginning with Visual Studio 2008, the new project wizard does not have an option to create a C++ SQL Server project. SQL Server projects created by using an earlier version of Visual Studio will still compile and work correctly.
 
 ### Visual C++ Libraries
@@ -1849,18 +1840,18 @@ The addition of the YMMWORD data type supports the 256-bit multimedia operands t
 #### MFC Library
 
 - Windows Vista supports Common Controls. Over 150 methods in 18 new or existing classes have been added to support features in Windows Vista, or to improve functionality in current MFC classes.
-- The new CNetAddressCtrl class enables you to input and validate IPv4 and IPv6 addresses or DNS names.
-- The new CPagerCtrl class simplifies use of the Windows pager control.
-- The new CSplitButton class simplifies the use of the Windows splitbutton control to select a default or optional action.
+- The new `CNetAddressCtrl` class enables you to input and validate IPv4 and IPv6 addresses or DNS names.
+- The new `CPagerCtrl` class simplifies use of the Windows pager control.
+- The new `CSplitButton` class simplifies the use of the Windows splitbutton control to select a default or optional action.
 
 #### C++ Support Library
 
-- C++ introduces the marshaling library. The marshaling library provides an easy and optimized way to marshal data between native and managed environments. The library is an alternative to more complex and less efficient approaches such as Using PInvoke. See Overview of Marshaling in C++ for more information.
+- C++ introduces the marshaling library. The marshaling library provides an easy and optimized way to marshal data between native and managed environments. The library is an alternative to more complex and less efficient approaches such as Using PInvoke. See **Overview of Marshaling in C++** for more information.
 
 #### ATL Server
 
 - ATL Server is released as a shared source project.
-- Most of the ATL Server code base has been released as a shared source project on CodePlex and is not installed as part of Visual Studio 2008. Several files associated with ATL Server are no longer part of Visual Studio. For the list of removed files, see Removed ATL Server Files.
+- Most of the ATL Server code base has been released as a shared source project on CodePlex and is not installed as part of Visual Studio 2008. Several files associated with ATL Server are no longer part of Visual Studio. For the list of removed files, see **Removed ATL Server Files**.
 - Data encoding and decoding classes from atlenc.h and utility functions and classes from atlutil.h and atlpath.h are now part of the ATL library.
 - Microsoft will continue to support versions of ATL Server that are included in earlier releases of Visual Studio as long as those versions of Visual Studio are supported. CodePlex will continue development of the ATL Server code as a community project. Microsoft does not support a CodePlex version of ATL Server.
 
@@ -1871,17 +1862,17 @@ The addition of the YMMWORD data type supports the 256-bit multimedia operands t
 - The compiler supports managed incremental builds. When you specify this option, the compiler will not recompile code when a referenced assembly changes. Instead it will perform an incremental build. Files are recompiled only if the changes affect the dependent code.
 - Attributes related to ATL Server are no longer supported. The compiler no longer supports several attributes that were directly related to ATL Server. For a complete list of the removed attributes, see Breaking Changes.
 - The compiler supports Intel Core microarchitecture. The compiler contains tuning for the Intel Core microarchitecture during code generation. By default, this tuning is on and cannot be disabled as it also helps Pentium 4 and other processors.
-- Intrinsics support newer AMD and Intel processors. Several new intrinsic instructions support the greater functionality in more recent AMD and Intel processors. For more information about the new intrinsics, see Supplemental Streaming SIMD Extensions 3 Instructions, Streaming SIMD Extensions 4 Instructions, SSE4A and Advanced Bit Manipulation Intrinsics, AES Intrinsics, _mm_clmulepi64_si128, and __rdtscp.
-- The __cpuid function is updated. The __cpuid, __cpuidex functions now support several new features from the latest revisions of AMD and Intel processors. The __cpuidex intrinsic is new and gathers more information from recent processors.
-- The /MP compiler option reduces total build time. The /MP option can significantly reduce the total time to compile several source files by creating several processes that compile the files simultaneously. This option is especially useful on computers that support hyperthreading, multiple processors, or multiple cores.
-- The /Wp64 compiler option and __w64 keyword are deprecated. The /Wp64 compiler option and __w64 keyword, which detect 64-bit portability issues, are deprecated and will be removed in a future version of the compiler. Instead of this compiler option and keyword, use a Visual C++ compiler that targets a 64-bit platform.
-- /Qfast_transcendentals generates inline code for transcendental functions.
-- /Qimprecise_fwaits removes the fwait commands internal to try blocks when you use the /fp:except compiler option.
+- Intrinsics support newer AMD and Intel processors. Several new intrinsic instructions support the greater functionality in more recent AMD and Intel processors. For more information about the new intrinsics, see **Supplemental Streaming SIMD Extensions 3 Instructions**, **Streaming SIMD Extensions 4 Instructions**, **SSE4A and Advanced Bit Manipulation Intrinsics**, **AES Intrinsics**, **_mm_clmulepi64_si128**, and **__rdtscp**.
+- The `__cpuid` function is updated. The `__cpuid`, `__cpuidex` functions now support several new features from the latest revisions of AMD and Intel processors. The `__cpuidex` intrinsic is new and gathers more information from recent processors.
+- The `/MP` compiler option reduces total build time. The `/MP` option can significantly reduce the total time to compile several source files by creating several processes that compile the files simultaneously. This option is especially useful on computers that support hyperthreading, multiple processors, or multiple cores.
+- The `/Wp64` compiler option and **__w64** keyword are deprecated. The `/Wp64` compiler option and **__w64** keyword, which detect 64-bit portability issues, are deprecated and will be removed in a future version of the compiler. Instead of this compiler option and keyword, use a Visual C++ compiler that targets a 64-bit platform.
+- `/Qfast_transcendentals` generates inline code for transcendental functions.
+- `/Qimprecise_fwaits` removes the fwait commands internal to try blocks when you use the `/fp:except` compiler option.
 
 ### Linker Changes
 
-- User Account Control information is now embedded into manifest files for executables by the Visual C++ linker (link.exe). This feature is enabled by default.   For more information about how to disable this feature, or how to modify the default behavior, see /MANIFESTUAC (Embeds UAC information in manifest).
-- The linker now has the /DYNAMICBASE option to enable the Address Space Layout Randomization feature of Windows Vista. This option modifies the header of an executable to indicate whether the application should be randomly rebased at load time.
+- User Account Control information is now embedded into manifest files for executables by the Visual C++ linker (link.exe). This feature is enabled by default. For more information about how to disable this feature, or how to modify the default behavior, see `/MANIFESTUAC` (Embeds UAC information in manifest).
+- The linker now has the `/DYNAMICBASE` option to enable the Address Space Layout Randomization feature of Windows Vista. This option modifies the header of an executable to indicate whether the application should be randomly rebased at load time.
 
 ## What's New for C++ in Visual Studio 2005
 
@@ -1925,83 +1916,83 @@ __sptr, __uptr
 The compiler has breaking changes in this release.
 
 - `64-bit native and cross-compilers.
-- /analyze (Enterprise Code Analysis) compiler option has been added.
-- /bigobj compiler option has been added.
-- /clr:pure, /clr:safe, and /clr:oldSyntax have been added. (Later deprecated in Visual Studio 2015 and removed in Visual Studio 2017.)
-- Deprecated compiler options: many compiler options have been deprecated in this release; see Deprecated Compiler Options for more information.
-- Double thunking in /clr code is reduced; see Double Thunking (C++) for more information.
-- /EH (Exception Handling Model) or /EHs can no longer be used to catch an exception that is raised with something other than a throw; use /EHa.
-- /errorReport (Report Internal Compiler Errors) compiler option has been added.
-- /favor (Optimize for 64) compiler option has been added.
-- /FA, /Fa (Listing File) compiler option has been added.
-- /FC (Full Path of Source Code File in Diagnostics) compiler option has been added.
-- /fp (Specify Floating-Point Behavior) compiler option has been added.
-- /G (Optimize for Processor) Options compiler option has been added.
-- /G (Optimize for Processor) Options compiler option has been added.
-- /G3, /G4, /G5, /G6, /G7, and /GB compiler options have been removed. The compiler now uses a "blended model" that attempts to create the best output file for all architectures.
-- /Gf has been removed. Use /GF (Eliminate Duplicate Strings) instead.
-- /GL (Whole Program Optimization) is now compatible with /CLRHEADER.
-- /GR is now on by default.
-- /GS (Buffer Security Check) now provides security protection for vulnerable pointer parameters. /GS is now on by default. /GS now also works on functions compiled to MSIL with /clr (Common Language Runtime Compilation).
-- /homeparams (Copy Register Parameters to Stack) compiler option has been added.
-- /hotpatch (Create Hotpatchable Image) compiler option has been added.
-- Inline function heuristics have been updated; see inline, __inline, __forceinline and inline_depth for more information
+- `/analyze` (Enterprise Code Analysis) compiler option has been added.
+- `/bigobj` compiler option has been added.
+- `/clr:pure`, `/clr:safe`, and `/clr:oldSyntax` have been added. (Later deprecated in Visual Studio 2015 and removed in Visual Studio 2017.)
+- Deprecated compiler options: many compiler options have been deprecated in this release; see **Deprecated Compiler Options** for more information.
+- Double thunking in `/clr` code is reduced; see **Double Thunking (C++)** for more information.
+- `/EH` (Exception Handling Model) or `/EHs` can no longer be used to catch an exception that is raised with something other than a throw; use `/EHa`.
+- `/errorReport` (Report Internal Compiler Errors) compiler option has been added.
+- `/favor` (Optimize for 64) compiler option has been added.
+- `/FA`, `/Fa` (Listing File) compiler option has been added.
+- `/FC` (Full Path of Source Code File in Diagnostics) compiler option has been added.
+- `/fp` (Specify Floating-Point Behavior) compiler option has been added.
+- `/G` (Optimize for Processor) Options compiler option has been added.
+- `/G` (Optimize for Processor) Options compiler option has been added.
+- `/G3`, `/G4`, `/G5`, `/G6`, `/G7`, and `/GB` compiler options have been removed. The compiler now uses a "blended model" that attempts to create the best output file for all architectures.
+- `/Gf` has been removed. Use `/GF` (Eliminate Duplicate Strings) instead.
+- `/GL` (Whole Program Optimization) is now compatible with `/CLRHEADER`.
+- `/GR` is now on by default.
+- `/GS` (Buffer Security Check) now provides security protection for vulnerable pointer parameters. `/GS` is now on by default. `/GS` now also works on functions compiled to MSIL with `/clr` (Common Language Runtime Compilation).
+- `/homeparams` (Copy Register Parameters to Stack) compiler option has been added.
+- `/hotpatch` (Create Hotpatchable Image) compiler option has been added.
+- Inline function heuristics have been updated; see **inline**, **__inline**, **__forceinline** and **inline_depth** for more information
 - Many new intrinsic functions have been added, and many previously undocumented intrinsics are now documented.
 - By default, any call to new that fails will throw an exception.
-- /ML and /MLd compiler options have been removed. Visual C++ no longer supports single-threaded, statically linked CRT library support.
-- The compiler implemented the Named Return Value Optimization, which is enabled when you compile with /O1, /O2 (Minimize Size, Maximize Speed), /Og (Global Optimizations), and /Ox (Full Optimization).
-- /Oa compiler option has been removed but will be silently ignored; use the noalias or restrict__declspec modifiers to specify how the compiler does aliasing.
-- /Op compiler option had been removed. Use /fp (Specify Floating-Point Behavior) instead.
+- `/ML` and `/MLd` compiler options have been removed. Visual C++ no longer supports single-threaded, statically linked CRT library support.
+- The compiler implemented the Named Return Value Optimization, which is enabled when you compile with `/O1`, `/O2` (Minimize Size, Maximize Speed), `/Og` (Global Optimizations), and `/Ox` (Full Optimization).
+- `/Oa` compiler option has been removed but will be silently ignored; use the `noalias` or `restrict__declspec` modifiers to specify how the compiler does aliasing.
+- `/Op` compiler option had been removed. Use `/fp` (Specify Floating-Point Behavior) instead.
 - OpenMP is now supported by Visual C++.
-- /openmp (Enable OpenMP 2.0 Support) compiler option has been added.
-- /Ow compiler option has been removed but will be silently ignored. Use the noalias or restrict__declspec modifiers to specify how the compiler does aliasing.
+- `/openmp` (Enable OpenMP 2.0 Support) compiler option has been added.
+- `/Ow` compiler option has been removed but will be silently ignored. Use the `noalias` or `restrict__declspec` modifiers to specify how the compiler does aliasing.
 
 ### Profile-Guided Optimizations
 
-- /QI0f has been removed.
-- /QIfdiv has been removed.
-- /QIPF_B (Errata for B CPU Stepping) compiler option has been added.
-- /QIPF_C (Errata for C CPU Stepping) compiler option has been added.
-- /QIPF_fr32 (Do Not Use Upper 96 Floating Point Registers) compiler option has been added.
-- /QIPF_noPIC (Generate Position Dependent Code) compiler option has been added.
-- /QIPF_restrict_plabels (Assume No Functions Created at Run Time) compiler option has been added.
+- `/QI0f` has been removed.
+- `/QIfdiv` has been removed.
+- `/QIPF_B` (Errata for B CPU Stepping) compiler option has been added.
+- `/QIPF_C` (Errata for C CPU Stepping) compiler option has been added.
+- `/QIPF_fr32` (Do Not Use Upper 96 Floating Point Registers) compiler option has been added.
+- `/QIPF_noPIC` (Generate Position Dependent Code) compiler option has been added.
+- `/QIPF_restrict_plabels` (Assume No Functions Created at Run Time) compiler option has been added.
 
 ### Unicode Support in the Compiler and Linker
 
-- /vd (Disable Construction Displacements) now allows you to use dynamic_cast Operator on an object being constructed (/vd2)
-- /YX compiler option has been removed. Use /Yc (Create Precompiled Header File) or /Yu (Use Precompiled Header File) instead. If you remove /YX from your build configurations and replace it with nothing, it can result in faster builds.
-- /Zc:forScope is now on by default.
-- /Zc:wchar_t is now on by default.
-- /Zd compiler option has been removed. Line-number only debugging information is no longer supported. Use /Zi instead (see /Z7, /Zi, /ZI (Debug Information Format) for more information).
-- /Zg is now only valid on C source code files, and not on C++ source code files.
-- /Zx (Debug Optimized Itanium Code) compiler option has been added.
+- `/vd` (Disable Construction Displacements) now allows you to use dynamic_cast Operator on an object being constructed (/vd2)
+- `/YX` compiler option has been removed. Use `/Yc` (Create Precompiled Header File) or `/Yu` (Use Precompiled Header File) instead. If you remove `/YX` from your build configurations and replace it with nothing, it can result in faster builds.
+- `/Zc:forScope` is now on by default.
+- `/Zc:wchar_t` is now on by default.
+- `/Zd` compiler option has been removed. Line-number only debugging information is no longer supported. Use `/Zi` instead (see **/Z7, /Zi, /ZI (Debug Information Format)** for more information).
+- `/Zg` is now only valid on C source code files, and not on C++ source code files.
+- `/Zx` (Debug Optimized Itanium Code) compiler option has been added.
 
 ### New Language Features
 
 - The attributeattribute is now deprecated.
-- appdomain__declspec modifier has been added.
-- __clrcall calling convention has been added.
-- deprecated (C++)declspec modifier now allows you to specify a string that will be displayed at compile time, when a user tries to access a deprecated class or function.
-- dynamic_cast Operator has breaking changes.
+- `appdomain__declspec` modifier has been added.
+- `__clrcall` calling convention has been added.
+- deprecated (C++) **declspec** modifier now allows you to specify a string that will be displayed at compile time, when a user tries to access a deprecated class or function.
+- **dynamic_cast** Operator has breaking changes.
 - Native enums now allow you to specify the underlying type.
-- jitintrinsicdeclspec modifier has been added.
-- noaliasdeclspec modifier has been added.
-- process__declspec modifier has been added.
-- abstract, override, and sealed are valid for native compilations.
-- __restrict keyword has been added.
-- restrictdeclspec modifier has been added.
-- __thiscall is now a keyword.
-- __unaligned keyword is now documented.
-- volatile (C++) has updated behavior with respect to optimizations.
+- `jitintrinsicdeclspec` modifier has been added.
+- `noaliasdeclspec` modifier has been added.
+- `process__declspec` modifier has been added.
+- **abstract**, **override**, and **sealed** are valid for native compilations.
+- **__restrict** keyword has been added.
+- `restrictdeclspec` modifier has been added.
+- **__thiscall** is now a keyword.
+- **__unaligned** keyword is now documented.
+- **volatile** (C++) has updated behavior with respect to optimizations.
 
 ### New Preprocessor Features
 
 - __CLR_VER predefined macro added.
-- The comment (C/C++) pragma now accepts /MANIFESTDEPENDENCY as a linker comment. The exestr option to comment is now deprecated.
-- embedded_idl attribute (The #import Directive) now takes an optional parameter.
-- fenv_access pragma
-- float_control pragma
-- fp_contract pragma
+- The comment (C/C++) pragma now accepts `/MANIFESTDEPENDENCY` as a linker comment. The exestr option to comment is now deprecated.
+- `embedded_idl` attribute (The `#import` Directive) now takes an optional parameter.
+- `fenv_access` pragma
+- `float_control` pragma
+- `fp_contract` pragma
 - Global variables will not be initialized in the order they are declared if you have global variables in pragma managed, unmanaged and unmanaged sections. This is a potential breaking change if, for example, an unmanaged global variable is initialized with a managed global variables, and a fully constructed managed object is required.
 - Sections specified with init_seg are now read only, and not read/write as in previous versions.
 - inline_depth default is now 16. A default of 16 was also in effect in Visual C++ .NET 2003.
@@ -2009,61 +2000,61 @@ The compiler has breaking changes in this release.
 - _M_CEE, _M_CEE_PURE, and _M_CEE_SAFE predefined macros added, see Predefined Macros.
 - _M_IX86_FP predefined macro added.
 - _M_X64 predefined macro added.
-- make_public pragma
-- managed, unmanaged pragma syntax updated (now has push and pop)
-- mscorlib.dll is now implicitly referenced by The #using Directive in all /clr compilations.
+- `make_public` pragma
+- `managed`, `unmanaged` pragma syntax updated (now has `push` and `pop`)
+- mscorlib.dll is now implicitly referenced by The `#using` Directive in all `/clr` compilations.
 - _OPENMP predefined macro added.
 - optimize pragma has been updated, a and w are no longer valid parameters.
 - no_registry#import attribute has been added.
-- region, endregion pragmas added
+- `region`, `endregion` pragmas added
 - _VC_NODEFAULTLIB predefined macro added.
 - Variadic Macros are now implemented.
-- vtordisp is deprecated and will be removed in a future release of Visual C++.
-- The warning pragma now has the suppress specifier.
+- `vtordisp` is deprecated and will be removed in a future release of Visual C++.
+- The `warning` pragma now has the suppress specifier.
 
 ### New Linker Features
 
 - Modules (non-assembly MSIL output files) are now allowed as input to the linker.
-- /ALLOWISOLATION (Manifest Lookup) linker option has been added.
-- /ASSEMBLYRESOURCE (Embed a Managed Resource) has been updated to now allow you to specify the name of the resource in the assembly, and to specify that the resource is private in the assembly.
-- /CLRIMAGETYPE (Specify Type of CLR Image) linker option has been added.
-- /CLRSUPPORTLASTERROR (Preserve Last Error Code for PInvoke Calls) linker option has been added.
-- /CLRTHREADATTRIBUTE (Set CLR Thread Attribute) linker option has been added.
-- /CLRUNMANAGEDCODECHECK (Add SupressUnmanagedCodeSecurityAttribute) linker option has been added.
-- /ERRORREPORT (Report Internal Linker Errors) linker option has been added.
-- /EXETYPE linker option has been removed. The linker no longer supports creating Windows 95 and Windows 98 device drivers. Use an appropriate DDK to create these device drivers. The EXETYPE keyword is no longer valid for module definition files.
-- /FUNCTIONPADMIN (Create Hotpatchable Image) linker option has been added.
-- /LTCG linker option is now supported on modules compiled with /clr. /LTCG has also been updated to support profile-guided optimizations.
-- /MANIFEST (Create Side-by-Side Assembly Manifest) linker option has been added.
-- /MANIFESTDEPENDENCY (Specify Manifest Dependencies) linker option has been added.
-- /MANIFESTFILE (Name Manifest File) linker option has been added.
-- /MAPINFO:LINES linker option has been removed.
-- /NXCOMPAT (Compatible with Data Execution Prevention) linker option has been added.
-- /PGD (Specify Database for Profile-Guided Optimizations) linker option has been added.
-- /PROFILE (Performance Tools Profiler) linker option has been added.
-- /SECTION (Specify Section Attributes) linker option now supports attribute negation and no longer supports the L or D (VxD-related) attributes.
+- `/ALLOWISOLATION` (Manifest Lookup) linker option has been added.
+- `/ASSEMBLYRESOURCE` (Embed a Managed Resource) has been updated to now allow you to specify the name of the resource in the assembly, and to specify that the resource is private in the assembly.
+- `/CLRIMAGETYPE` (Specify Type of CLR Image) linker option has been added.
+- `/CLRSUPPORTLASTERROR` (Preserve Last Error Code for PInvoke Calls) linker option has been added.
+- `/CLRTHREADATTRIBUTE` (Set CLR Thread Attribute) linker option has been added.
+- `/CLRUNMANAGEDCODECHECK` (Add SupressUnmanagedCodeSecurityAttribute) linker option has been added.
+- `/ERRORREPORT` (Report Internal Linker Errors) linker option has been added.
+- `/EXETYPE` linker option has been removed. The linker no longer supports creating Windows 95 and Windows 98 device drivers. Use an appropriate DDK to create these device drivers. The EXETYPE keyword is no longer valid for module definition files.
+- `/FUNCTIONPADMIN` (Create Hotpatchable Image) linker option has been added.
+- `/LTCG` linker option is now supported on modules compiled with `/clr`. `/LTCG` has also been updated to support profile-guided optimizations.
+- `/MANIFEST` (Create Side-by-Side Assembly Manifest) linker option has been added.
+- `/MANIFESTDEPENDENCY` (Specify Manifest Dependencies) linker option has been added.
+- `/MANIFESTFILE` (Name Manifest File) linker option has been added.
+- `/MAPINFO:LINES` linker option has been removed.
+- `/NXCOMPAT` (Compatible with Data Execution Prevention) linker option has been added.
+- `/PGD` (Specify Database for Profile-Guided Optimizations) linker option has been added.
+- `/PROFILE` (Performance Tools Profiler) linker option has been added.
+- `/SECTION` (Specify Section Attributes) linker option now supports attribute negation and no longer supports the L or D (VxD-related) attributes.
 - Unicode Support in the Compiler and Linker
-- /VERBOSE (Print Progress Messages) linker option now also accepts ICF and REF.
-- /VXD linker option has been removed. The linker no longer supports creating Windows 95 and Windows 98 device drivers. Use an appropriate DDK to create these device drivers. The VXD keyword is no longer valid for module definition files.
-- /WS linker option has been removed. /WS was used to modify images targeted for Windows NT 4.0. IMAGECFG.exe -R filename can be used instead of /WS. IMAGECFG.exe can be found on the Windows NT 4.0 CD-ROM in SUPPORT\DEBUG\I386\IMAGECFG.EXE.
-- /WX (Treat Linker Warnings as Errors) linker option is now documented.
+- `/VERBOSE` (Print Progress Messages) linker option now also accepts ICF and REF.
+- `/VXD` linker option has been removed. The linker no longer supports creating Windows 95 and Windows 98 device drivers. Use an appropriate DDK to create these device drivers. The VXD keyword is no longer valid for module definition files.
+- `/WS` linker option has been removed. `/WS` was used to modify images targeted for Windows NT 4.0. IMAGECFG.exe -R filename can be used instead of `/WS`. IMAGECFG.exe can be found on the Windows NT 4.0 CD-ROM in SUPPORT\DEBUG\I386\IMAGECFG.EXE.
+- `/WX` (Treat Linker Warnings as Errors) linker option is now documented.
 
 ### New Linker Utility Features
 
-- /ALLOWISOLATION editbin option had been added
+- `/ALLOWISOLATION` editbin option had been added
 - DESCRIPTION module definition file statement is removed. The linker no longer supports building virtual device drivers.
-- /ERRORREPORT option has been added to bscmake.exe, dumpbin.exe, editbin.exe, and lib.exe.
-- /LTCG lib option has been added.
-- /NXCOMPAT editbin option has been added.
-- /RANGE dumpbin option has been added.
-- /TLS dumpbin option has been added.
-- /WS editbin option has been removed. /WS was used to modify images targeted for Windows NT 4.0. IMAGECFG.exe -R filename can be used instead of /WS. IMAGECFG.exe can be found on the Windows NT 4.0 CD-ROM in SUPPORT\DEBUG\I386\IMAGECFG.EXE.
+- `/ERRORREPORT` option has been added to bscmake.exe, dumpbin.exe, editbin.exe, and lib.exe.
+- `/LTCG` lib option has been added.
+- `/NXCOMPAT` editbin option has been added.
+- `/RANGE` dumpbin option has been added.
+- `/TLS` dumpbin option has been added.
+- `/WS` editbin option has been removed. `/WS` was used to modify images targeted for Windows NT 4.0. IMAGECFG.exe -R filename can be used instead of `/WS`. IMAGECFG.exe can be found on the Windows NT 4.0 CD-ROM in SUPPORT\DEBUG\I386\IMAGECFG.EXE.
 - /WX[:NO] lib option has been added.
 
 ### New NMAKE Features
 
-- /ERRORREPORT has been added.
-- /G has been added.
+- `/ERRORREPORT` has been added.
+- `/G` has been added.
 - The predefined rules have been updated.
 - The $(MAKE) macro, which is documented in Recursion Macros, now gives the full path to nmake.exe.
 
@@ -2072,7 +2063,7 @@ The compiler has breaking changes in this release.
 - MASM expressions are now 64-bit values. In previous versions MASM expressions were 32-bit values.
 - The instruction __asm int 3 now causes a function to be compiled to native.
 - ALIAS (MASM) is now documented.
-- /ERRORREPORT ml.exe and ml64.exe option is added.
+- `/ERRORREPORT` ml.exe and ml64.exe option is added.
 - .FPO is now documented.
 - H2INC.exe will not ship in Visual C++ 2005. If you need to continue to use H2INC, use H2INC.exe from a previous version of Visual C++.
 - operator IMAGEREL has been added.
@@ -2087,49 +2078,49 @@ The compiler has breaking changes in this release.
 - .SAVEXMM128
 - .SETFRAME In addition, the PROC directive was updated with x64-only syntax.
 - MMWORD directive has been added
-- /omf (ML.exe command line option) now implies /c. ML.exe does not support linking OMF format objects.
+- `/omf` (ML.exe command line option) now implies `/c`. ML.exe does not support linking OMF format objects.
 - The SEGMENT directive now supports additional attributes.
 - operator SECTIONREL has been added.
 - XMMWORD directive has been added
 
 ### New CRT Features
 
-- Secure versions of several functions have been added. These functions handle errors in a better way and enforce stricter controls on buffers to help avoid common security flaws. The new secure versions are identified by the _s suffix.
+- Secure versions of several functions have been added. These functions handle errors in a better way and enforce stricter controls on buffers to help avoid common security flaws. The new secure versions are identified by the **_s** suffix.
 - Existing less secure versions of many functions have been deprecated. To disable the deprecation warnings, define _CRT_SECURE_NO_WARNINGS.
 - Many existing functions now validate their parameters and invoke the invalid parameter handler when an invalid parameter is passed.
-- Many existing functions now set errno where they did not before.
-- The typedef errno_t with type integer was added. errno_t is used whenever a function return type or parameter deals with error codes from errno. errno_t replaces errcode.
-- Locale-dependent functions now have versions which take the locale as a parameter rather than using the current locale. These new functions have the _l suffix. Several new functions were added to work with locale objects. New functions include _get_current_locale, _create_locale and _free_locale.
+- Many existing functions now set `errno` where they did not before.
+- The typedef `errno_t` with type integer was added. `errno_t` is used whenever a function return type or parameter deals with error codes from `errno`. `errno_t` replaces `errcode`.
+- Locale-dependent functions now have versions which take the locale as a parameter rather than using the current locale. These new functions have the **_l** suffix. Several new functions were added to work with locale objects. New functions include `_get_current_locale`, `_create_locale` and `_free_locale`.
 - New functions were added to support locking and unlocking file handles.
-- The _spawn family of functions does not reset errno to zero on success, as it did in previous versions.
-- Versions of the printf family of functions that allow you to specify the order in which the arguments are used are available.
-- Unicode is now a supported text format. The function _open supports _O_TEXTW, _O_UTF8 and _O_UTF16 attributes. The fopen function supports the "ccs=ENCODING" method of specifying a Unicode format.
-- A new version of the CRT libraries built in managed code (MSIL) is now available and is used when compiling with the /clr (Common Language Runtime Compilation) option.
+- The `_spawn` family of functions does not reset errno to zero on success, as it did in previous versions.
+- Versions of the `printf` family of functions that allow you to specify the order in which the arguments are used are available.
+- Unicode is now a supported text format. The function `_open` supports _O_TEXTW, _O_UTF8 and _O_UTF16 attributes. The `fopen` function supports the "ccs=ENCODING" method of specifying a Unicode format.
+- A new version of the CRT libraries built in managed code (MSIL) is now available and is used when compiling with the `/clr` (Common Language Runtime Compilation) option.
 - _fileinfo has been removed.
-- The default size for time_t is now 64 bits, which expands the range of time_t and several of the time functions out to the year 3000.
-- The CRT now supports setting the locale on a per thread basis. The function _configthreadlocale was added to support this feature.
-- The _statusfp2 and __control87_2 functions were added to allow access to and control of the floating point control word on both the x87 and SSE2 floating point processor.
-- The_mkgmtime and _mkgmtime64 functions were added to provide support for converting times (struct tm) to Greenwich Mean Time (GMT).
-- Changes were made to swprintf and vswprintf to better conform with the standard.
+- The default size for `time_t` is now 64 bits, which expands the range of `time_t` and several of the time functions out to the year 3000.
+- The CRT now supports setting the locale on a per thread basis. The function `_configthreadlocale` was added to support this feature.
+- The `_statusfp2` and `__control87_2` functions were added to allow access to and control of the floating point control word on both the x87 and SSE2 floating point processor.
+- The `_mkgmtime` and `_mkgmtime64` functions were added to provide support for converting times (struct tm) to Greenwich Mean Time (GMT).
+- Changes were made to `swprintf` and `vswprintf` to better conform with the standard.
 - A new header file, INTRIN.H, provides prototypes for some intrinsic functions.
-- The fopen function now has an N attribute.
-- The _open function now has an _O_NOINHERIT attribute.
-- The atoi function now returns INT_MAX and sets errno to ERANGE on overflow. In previous versions, the overflow behavior was undefined.
-- The printf family of functions supports hexadecimal floating point output implemented according to the ANSI C99 standard using the format type specifiers %a and %A.
-- The printf family now supports the "ll" (long long) size prefix.
-- The _controlfp function has been optimized for better performance.
+- The `fopen` function now has an N attribute.
+- The `_open` function now has an _O_NOINHERIT attribute.
+- The `atoi` function now returns INT_MAX and sets `errno` to ERANGE on overflow. In previous versions, the overflow behavior was undefined.
+- The `printf` family of functions supports hexadecimal floating point output implemented according to the ANSI C99 standard using the format type specifiers %a and %A.
+- The `printf` family now supports the "ll" (long long) size prefix.
+- The `_controlfp` function has been optimized for better performance.
 - Debug versions of some functions have been added.
-- Added _chgsignl and _cpysignl (long double versions).
-- Added _locale_t type to type table.
-- New macro _countof Macro added for computing number of elements in an array.
+- Added `_chgsignl` and `_cpysignl` (long double versions).
+- Added `_locale_t` type to type table.
+- New macro `_countof` Macro added for computing number of elements in an array.
 - In each function topic, a section on .NET Framework equivalents has been added.
-- Several string functions now have the option of truncating strings rather than failing when output buffers are too small; see _TRUNCATE.
-- _set_se_translator now requires the use of the /EHa compiler option.
-- fpos_t is now __int64 under /Za (for C code) and when __STDC__ is set manually (for C++ code). It used to be a struct.
+- Several string functions now have the option of truncating strings rather than failing when output buffers are too small; see **_TRUNCATE**.
+- `_set_se_translator` now requires the use of the `/EHa` compiler option.
+- `fpos_t` is now **__int64** under `/Za` (for C code) and when __STDC__ is set manually (for C++ code). It used to be a **struct**.
 - _CRT_DISABLE_PERFCRIT_LOCKS can improve the I/O performance of single-threaded programs.
-- POSIX names have been deprecated in favor of ISO C++ conformant names (for example, use _getch rather than getch).
+- POSIX names have been deprecated in favor of ISO C++ conformant names (for example, use `_getch` rather than `getch`).
 - New link options .obj files are available for pure mode
-- _recalloc combines features of realloc and calloc.
+- `_recalloc` combines features of `realloc` and `calloc`.
 
 ## What's New for C++ in Visual Studio 2003
 
@@ -2140,13 +2131,13 @@ The compiler has breaking changes in this release.
 - A walkthrough has been added showing how to port an existing, native application to use Managed Extensions for C++: Walkthrough: Porting an Existing Native C++ Application to Interoperate with .NET Framework Components.
 - You can now create a delegate on a method of a value type.
 - The compiler's conformance with the C++ standard has been significantly enhanced for Visual C++ .NET 2003.
-- /arch compiler option is added.
-- /Gf is deprecated and will be removed in the next version of Visual C++.
-- /G7 compiler option is added.
-- The /GS compiler option has been enhanced to help protect local variables from direct buffer overruns.
-- The /noBool compiler option has been removed. The compiler now allows bool to appear only as a keyword (and not an identifier) in a C++ source code file.
-- The long long type is now available as a typedef of __int64 Note that there is not yet support for long long in the CRT.
-- The /Zm compiler option now specifies the precompiled header memory allocation limit.
+- `/arch` compiler option is added.
+- `/Gf` is deprecated and will be removed in the next version of Visual C++.
+- `/G7` compiler option is added.
+- The `/GS` compiler option has been enhanced to help protect local variables from direct buffer overruns.
+- The `/noBool` compiler option has been removed. The compiler now allows **bool** to appear only as a keyword (and not an identifier) in a C++ source code file.
+- The **long long** type is now available as a **typedef** of **__int64** Note that there is not yet support for **long long** in the CRT.
+- The `/Zm` compiler option now specifies the precompiled header memory allocation limit.
 - _InterlockedCompareExchange intrinsic now documented.
 - _InterlockedDecrement intrinsic now documented.
 - _InterlockedExchange intrinsic now documented.
@@ -2171,7 +2162,7 @@ The following linker switches have been added:
 
 ### MASM
 
-The .SAFESEH directive and /safeseh ml.exe option were added.
+The .SAFESEH directive and `/safeseh` ml.exe option were added.
 
 ## See Also
 

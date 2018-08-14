@@ -22,13 +22,12 @@ ms.workload: ["cplusplus", "uwp"]
   
 ## Syntax
   
-```  
+```cpp  
 ref class identifier sealed {...};  
 virtual return-type identifier() sealed {...};  
 ```  
   
 ### Parameters  
-  
  *identifier*  
  The name of the function or class.  
   

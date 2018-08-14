@@ -17,7 +17,7 @@ Acquires an **SRWLock** object in exclusive mode.
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLockExclusive LockExclusive();  
   
 static SyncLockExclusive LockExclusive(  
