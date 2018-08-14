@@ -28,7 +28,7 @@ Controls stack probes.
 ## Remarks  
  A stack probe is a sequence of code that the compiler inserts into every function call. When initiated, a stack probe reaches benignly into memory by the amount of space that is required to store the function's local variables.  
   
- If a function requires more than `size` bytes of stack space for local variables, its stack probe is initiated. By default, the compiler generates code that initiates a stack probe when a function requires more than one page of stack space. This is equivalent to a compiler option of **/Gs4096** for x86, [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)], and ARM platforms. This value allows an application and the Windows memory manager to increase the amount of memory committed to the program stack dynamically at run time.  
+ If a function requires more than `size` bytes of stack space for local variables, its stack probe is initiated. By default, the compiler generates code that initiates a stack probe when a function requires more than one page of stack space. This is equivalent to a compiler option of **/Gs4096** for x86, x64, and ARM platforms. This value allows an application and the Windows memory manager to increase the amount of memory committed to the program stack dynamically at run time.  
   
 > [!NOTE]
 >  The default value of **/Gs4096** allows the program stack of applications for Windows to grow correctly at run time. We recommend that you do not change the default value unless you know exactly why you have to change it.  

@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 **Microsoft Specific**
 
-Generates the `cpuid` instruction that is available on x86 and [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]. This instruction queries the processor for information about supported features and the CPU type.
+Generates the `cpuid` instruction that is available on x86 and x64. This instruction queries the processor for information about supported features and the CPU type.
 
 ## Syntax
 
@@ -48,8 +48,8 @@ An additional code that specifies information to retrieve, passed in ECX.
 
 |Intrinsic|Architecture|
 |---------------|------------------|
-|`__cpuid`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|
-|`__cpuidex`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|
+|`__cpuid`|x86, x64|
+|`__cpuidex`|x86, x64|
 
 **Header file** \<intrin.h>
 

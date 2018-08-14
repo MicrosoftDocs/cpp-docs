@@ -187,7 +187,7 @@ void CheckKey( void * ignored )
     repeat = 0;    // _endthread implied
 }
 
-// Bounce - Thread to create and and control a colored letter that moves
+// Bounce - Thread to create and control a colored letter that moves
 // around on the screen.
 //
 // Params: parg - the value to create the character from

@@ -40,7 +40,7 @@ unsigned __int64 __ull_rshift( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__ull_rshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ull_rshift`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

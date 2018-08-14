@@ -641,7 +641,7 @@ int main() {
 ```  
   
 ## Generic Structs  
- The rules for declaring and using generic structs are the same as those for generic classes, except for the differences noted in in the Visual C++ language reference.  
+ The rules for declaring and using generic structs are the same as those for generic classes, except for the differences noted in the Visual C++ language reference.  
   
 ## Example  
  The following example declares a generic struct, `MyGenStruct`, with one field, `myField`, and assigns values of different types (**int**, **double**, `String^`) to this field.  

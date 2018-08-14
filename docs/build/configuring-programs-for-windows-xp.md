@@ -19,7 +19,7 @@ To get the platform toolset and components to target [!INCLUDE[winxp](../build/i
 
 ## Windows XP targeting experience
 
-The Windows XP platform toolset that's included in Visual Studio is a version of the [!INCLUDE[win7](../build/includes/win7_md.md)] SDK, but it uses the current C++ compiler. It also configures project properties to appropriate default values, for example, the specification of a compatible linker for down-level targeting. Only Windows desktop apps that are created by using a Windows XP platform toolset run on [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)], but those apps can also run on more recent Windows operating systems.
+The Windows XP platform toolset that's included in Visual Studio is a version of the Windows 7 SDK, but it uses the current C++ compiler. It also configures project properties to appropriate default values, for example, the specification of a compatible linker for down-level targeting. Only Windows desktop apps that are created by using a Windows XP platform toolset run on [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)], but those apps can also run on more recent Windows operating systems.
 
 #### To target Windows XP
 
@@ -59,7 +59,7 @@ Due to differences in platform and library support, the development experience f
 
 - **Static analysis**
 
-   The Windows XP platform toolsets don't support static analysis because the SAL annotations for the [!INCLUDE[win7](../build/includes/win7_md.md)] SDK and the runtime libraries are incompatible. When you want to perform static analysis on an app that supports [!INCLUDE[winxp](../build/includes/winxp_md.md)] or [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)], you can temporarily switch the solution to target the default platform toolset to perform the analysis, and then switch back to the Windows XP platform toolset to build the app.
+   The Windows XP platform toolsets don't support static analysis because the SAL annotations for the Windows 7 SDK and the runtime libraries are incompatible. When you want to perform static analysis on an app that supports [!INCLUDE[winxp](../build/includes/winxp_md.md)] or [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)], you can temporarily switch the solution to target the default platform toolset to perform the analysis, and then switch back to the Windows XP platform toolset to build the app.
 
 - **Debugging of DirectX graphics**
 

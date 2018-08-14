@@ -30,7 +30,7 @@ void __vmx_off();
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__vmx_off`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_off`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

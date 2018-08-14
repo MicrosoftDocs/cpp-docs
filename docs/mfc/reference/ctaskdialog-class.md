@@ -121,7 +121,7 @@ class CTaskDialog : public CObject
 |`m_strVerification`|The string that the `CTaskDialog` displays to the right of the verification check box.|  
   
 ## Remarks  
- The `CTaskDialog` class replaces the standard Windows message box and has additional functionality such as new controls to gather information from the user. This class is in the MFC library in [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)]. The `CTaskDialog` is available starting with Windows Vista. Earlier versions of Windows cannot display the `CTaskDialog` object. Use `CTaskDialog::IsSupported` to determine at runtime whether the current user can display the task dialog box. The standard Windows message box is still supported in [!INCLUDE[vs_dev10_long](../../build/includes/vs_dev10_long_md.md)].  
+ The `CTaskDialog` class replaces the standard Windows message box and has additional functionality such as new controls to gather information from the user. This class is in the MFC library in Visual Studio 2010 and later. The `CTaskDialog` is available starting with Windows Vista. Earlier versions of Windows cannot display the `CTaskDialog` object. Use `CTaskDialog::IsSupported` to determine at runtime whether the current user can display the task dialog box. The standard Windows message box is still supported.  
   
  The `CTaskDialog` is available only when you build your application by using the Unicode library.  
   

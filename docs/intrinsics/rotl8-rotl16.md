@@ -44,8 +44,8 @@ unsigned short _rotl16( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_rotl8`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_rotl16`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_rotl8`|x86, ARM, x64|  
+|`_rotl16`|x86, ARM, x64|  
   
  **Header file** \<intrin.h>  
   

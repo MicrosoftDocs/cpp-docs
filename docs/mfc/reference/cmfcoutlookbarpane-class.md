@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CMFCOutlookBarPane Class
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
  A control derived from [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md) that can be inserted into an Outlook bar ( [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)). The Outlook bar pane contains a column of large buttons. The user can scroll up and down the list of buttons if it is larger than the pane. When the user detaches an Outlook bar pane from the Outlook bar, it can float or dock in the main frame window.  
   
@@ -177,7 +177,7 @@ BOOL AddButton(
  If the index specified by *iInsertAt* is -1, the button is added at the end of the page.  
   
 ##  <a name="canbeattached"></a>  CMFCOutlookBarPane::CanBeAttached  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual BOOL CanBeAttached() const;  
