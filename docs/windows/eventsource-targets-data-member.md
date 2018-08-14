@@ -17,12 +17,12 @@ An array of one or more event handlers.
   
 ## Syntax  
   
-```  
+```cpp  
 ComPtr<Details::EventTargetArray> targets_;  
 ```  
   
 ## Remarks  
- When the event that is represented by the current EventSource object occurs, the event handlers are called.  
+ When the event that is represented by the current **EventSource** object occurs, the event handlers are called.  
   
 ## Requirements  
  **Header:** event.h  

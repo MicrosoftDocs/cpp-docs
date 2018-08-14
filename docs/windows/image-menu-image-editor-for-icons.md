@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Image Menu (Image Editor for Icons)
-The Image menu, which appears only when the Image editor is active, has commands for editing images, managing color palettes, and setting Image Editor window options. In addition, commands for using device images are available when working with icons and cursors.  
+The **Image** menu, which appears only when the **Image** editor is active, has commands for editing images, managing color palettes, and setting **Image Editor** window options. In addition, commands for using device images are available when working with icons and cursors.  
   
  **Invert Colors**  
  Inverts your colors. For more information, see [Inverting the Colors in a Selection](../windows/inverting-the-colors-in-a-selection-image-editor-for-icons.md).  
@@ -72,4 +72,3 @@ The Image menu, which appears only when the Image editor is active, has commands
 ## See Also  
  [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
  [Image Editor for Icons](../windows/image-editor-for-icons.md)
-

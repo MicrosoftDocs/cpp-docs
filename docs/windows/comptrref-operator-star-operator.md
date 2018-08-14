@@ -17,15 +17,15 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 InterfaceType* operator *();  
 ```  
   
 ## Return Value  
- Pointer to the interface represented by the current ComPtrRef object.  
+ Pointer to the interface represented by the current **ComPtrRef** object.  
   
 ## Remarks  
- Retrieves the pointer to the interface represented by the current ComPtrRef object.  
+ Retrieves the pointer to the interface represented by the current **ComPtrRef** object.  
   
 ## Requirements  
  **Header:** client.h  

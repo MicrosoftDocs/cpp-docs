@@ -36,7 +36,7 @@ unsigned short __inword(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__inword`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__inword`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

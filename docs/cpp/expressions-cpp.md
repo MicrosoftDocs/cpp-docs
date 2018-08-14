@@ -51,5 +51,5 @@ This section describes C++ expressions. Expressions are sequences of operators a
     > [!NOTE]
     >  Operators for built-in types cannot be overloaded; their behavior is predefined.  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

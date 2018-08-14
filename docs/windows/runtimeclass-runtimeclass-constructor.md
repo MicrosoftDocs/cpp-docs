@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::RuntimeClass Constructor
-Initializes the current instance of the RuntimeClass class.  
+Initializes the current instance of the **RuntimeClass** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 RuntimeClass();  
 ```  
   

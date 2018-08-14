@@ -15,7 +15,6 @@ ms.workload: ["cplusplus"]
 The arguments in the prototype  
   
 ```cpp 
-  
 int main( int argc, char* argv[], char* envp[]);
 int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);  
 ```  
@@ -31,16 +30,16 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
  The first command-line argument is always `argv`**[1]** and the last one is `argv`**[**`argc` - 1**]**.  
   
 > [!NOTE]
->  By convention, `argv`**[0]** is the command with which the program is invoked.  However, it is possible to spawn a process using [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms683197) and if you use both the first and second arguments (`lpApplicationName` and `lpCommandLine`), `argv`**[0]** may not be the executable name; use [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) to retrieve the executable name, and its fully-qualified path.  
+>  By convention, `argv`**[0]** is the command with which the program is invoked.  However, it is possible to spawn a process using [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms683197) and if you use both the first and second arguments (*lpApplicationName* and *lpCommandLine*), `argv`**[0]** may not be the executable name; use [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) to retrieve the executable name, and its fully-qualified path.  
   
 ## Microsoft Specific  
  *envp*  
- The *envp* array, which is a common extension in many UNIX systems, is used in Microsoft C++. It is an array of strings representing the variables set in the user's environment. This array is terminated by a NULL entry. It can be declared as an array of pointers to **char (char** \*envp[ ]**)** or as a pointer to pointers to **char (char** \*\*envp**)**. If your program uses **wmain** instead of **main**, use the **wchar_t** data type instead of **char**. The environment block passed to **main** and **wmain** is a "frozen" copy of the current environment. If you subsequently change the environment via a call to **putenv** or `_wputenv`, the current environment (as returned by `getenv`/`_wgetenv` and the `_environ`/ `_wenviron` variable) will change, but the block pointed to by envp will not change. See [Customizing Command Line Processing](../cpp/customizing-cpp-command-line-processing.md) for information on suppressing environment processing. This argument is ANSI compatible in C, but not in C++.  
+ The *envp* array, which is a common extension in many UNIX systems, is used in Microsoft C++. It is an array of strings representing the variables set in the user's environment. This array is terminated by a NULL entry. It can be declared as an array of pointers to **char (char** \*envp[ ]**)** or as a pointer to pointers to **char (char** \*\*envp**)**. If your program uses `wmain` instead of `main`, use the `wchar_t` data type instead of **char**. The environment block passed to `main` and `wmain` is a "frozen" copy of the current environment. If you subsequently change the environment via a call to `putenv` or `_wputenv`, the current environment (as returned by `getenv`/`_wgetenv` and the `_environ`/ `_wenviron` variable) will change, but the block pointed to by envp will not change. See [Customizing Command Line Processing](../cpp/customizing-cpp-command-line-processing.md) for information on suppressing environment processing. This argument is ANSI compatible in C, but not in C++.  
   
 **END Microsoft Specific**  
   
 ## Example  
- The following example shows how to use the *argc*, *argv*, and *envp* arguments to **main**:  
+ The following example shows how to use the *argc*, *argv*, and *envp* arguments to `main`:  
   
 ```cpp 
 // argument_definitions.cpp  
@@ -66,5 +65,5 @@ int main( int argc, char *argv[], char *envp[] ) {
 }  
 ```  
   
-## See Also  
+## See also  
  [main: Program Startup](../cpp/main-program-startup.md)

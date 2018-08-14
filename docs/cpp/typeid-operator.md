@@ -15,7 +15,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 typeid(type-id)  
 typeid(expression)  
 ```  
@@ -89,6 +88,6 @@ T max( T arg1, T arg2 ) {
 }  
 ```  
   
-## See Also  
+## See also  
  [Run-Time Type Information](../cpp/run-time-type-information.md)   
  [Keywords](../cpp/keywords-cpp.md)

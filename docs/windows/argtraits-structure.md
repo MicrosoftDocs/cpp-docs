@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename TMemberFunction>  
 struct ArgTraits;  
 template<typename TDelegateInterface>  
@@ -105,42 +105,42 @@ template<
 struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9)>;  
 ```  
   
-#### Parameters  
- `TMemberFunction`  
- Typename parameter for an ArgTraits structure that cannot match any Invoke method signature.  
+### Parameters  
+ *TMemberFunction*  
+ Typename parameter for an ArgTraits structure that cannot match any `Invoke` method signature.  
   
- `TDelegateInterface`  
+ *TDelegateInterface*  
  A delegate interface.  
   
- `TArg1`  
- The type of the first argument of the Invoke method.  
+ *TArg1*  
+ The type of the first argument of the `Invoke` method.  
   
- `TArg2`  
- The type of the second argument of the Invoke method.  
+ *TArg2*  
+ The type of the second argument of the `Invoke` method.  
   
- `TArg3`  
- The type of the third argument of the Invoke method.  
+ *TArg3*  
+ The type of the third argument of the `Invoke` method.  
   
- `TArg4`  
- The type of the fourth argument of the Invoke method.  
+ *TArg4*  
+ The type of the fourth argument of the `Invoke` method.  
   
- `TArg5`  
- The type of the fifth argument of the Invoke method.  
+ *TArg5*  
+ The type of the fifth argument of the `Invoke` method.  
   
- `TArg6`  
- The type of the sixth argument of the Invoke method.  
+ *TArg6*  
+ The type of the sixth argument of the `Invoke` method.  
   
- `TArg7`  
- The type of the seventh argument of the Invoke method.  
+ *TArg7*  
+ The type of the seventh argument of the `Invoke` method.  
   
- `TArg8`  
- The type of the eigth argument of the Invoke method.  
+ *TArg8*  
+ The type of the eigth argument of the `Invoke` method.  
   
- `TArg9`  
- The type of the ninth argument of the Invoke method.  
+ *TArg9*  
+ The type of the ninth argument of the `Invoke` method.  
   
 ## Remarks  
- The `ArgTraits` structure declares a specified delegate interface and an anonymous member function that has a specified number of parameters.  
+ The **ArgTraits** structure declares a specified delegate interface and an anonymous member function that has a specified number of parameters.  
   
 ## Members  
   
@@ -162,7 +162,7 @@ struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2,
   
 |Name|Description|  
 |----------|-----------------|  
-|[ArgTraits::args Constant](../windows/argtraits-args-constant.md)|Keeps count of the number of parameters on the Invoke method of a delegate interface.|  
+|[ArgTraits::args Constant](../windows/argtraits-args-constant.md)|Keeps count of the number of parameters on the `Invoke` method of a delegate interface.|  
   
 ## Inheritance Hierarchy  
  `ArgTraits`  

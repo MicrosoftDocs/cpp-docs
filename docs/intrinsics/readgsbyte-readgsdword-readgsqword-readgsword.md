@@ -45,10 +45,10 @@ unsigned __int64 __readgsqword( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readgsbyte`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__readgsdword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__readgsqword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__readgsword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readgsbyte`|x64|  
+|`__readgsdword`|x64|  
+|`__readgsqword`|x64|  
+|`__readgsword`|x64|  
   
  **Header file** \<intrin.h>  
   

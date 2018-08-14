@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ICommandPropertiesImpl", "ATL.ICommandPropertiesImpl", "ATL::ICommandPropertiesImpl", "ICommandPropertiesImpl::GetProperties", "ICommandPropertiesImpl.GetProperties", "GetProperties",                      "ICommandPropertiesImpl.SetProperties", "ICommandPropertiesImpl::SetProperties", "SetProperties"]
+f1_keywords: ["ICommandPropertiesImpl", "ATL.ICommandPropertiesImpl", "ATL::ICommandPropertiesImpl", "ICommandPropertiesImpl::GetProperties", "ICommandPropertiesImpl.GetProperties", "GetProperties", "ICommandPropertiesImpl.SetProperties", "ICommandPropertiesImpl::SetProperties", "SetProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandPropertiesImpl class", "GetProperties method", "SetProperties method"]
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ICommandPropertiesImpl Class
-Provides an implementation of the [ICommandProperties](https://msdn.microsoft.com/library/ms723044.aspx) interface.  
+Provides an implementation of the [ICommandProperties](/previous-versions/windows/desktop/ms723044\(v=vs.85\)) interface.  
   
 ## Syntax
 
@@ -51,14 +51,14 @@ Returns all the requested property sets using the command's property map.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,   
+STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,   
    const DBPROPIDSET rgPropertyIDSets[],   
    ULONG * pcPropertySets,   
    DBPROPSET ** prgPropertySets);  
 ```  
   
 #### Parameters  
- See [ICommandProperties::GetProperties](https://msdn.microsoft.com/library/ms723119.aspx) in the *OLE DB Programmer's Reference*.  
+ See [ICommandProperties::GetProperties](/previous-versions/windows/desktop/ms723119\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
  See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
@@ -69,12 +69,12 @@ Sets properties for the command object.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(SetProperties)(ULONG cPropertySets,   
+STDMETHOD(SetProperties)(ULONG cPropertySets,   
    DBPROPSET rgPropertySets[]);  
 ```  
   
 #### Parameters  
- See [ICommandProperties::SetProperties](https://msdn.microsoft.com/library/ms711497.aspx) in the *OLE DB Programmer's Reference*.  
+ See [ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   

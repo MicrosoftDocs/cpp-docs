@@ -123,6 +123,5 @@ Block-scoped i has the value: 5
 Global-scoped i has the value: 7
 ```
 
-## See Also
-
+## See also
  [Basic Concepts](../cpp/basic-concepts-cpp.md)

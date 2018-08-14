@@ -306,13 +306,13 @@ bool LoadAccount(
  The system name. This string can be the name of a remote computer. If this string is NULL, the local system is used instead.  
   
  *pSid*  
- A pointer to a [SID](http://msdn.microsoft.com/library/windows/desktop/aa379594\(v=vs.85\).aspx) structure.  
+ A pointer to a [SID](/windows/desktop/api/winnt/ns-winnt-_sid) structure.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure. To get extended error information, call `GetLastError`.  
   
 ### Remarks  
- `LoadAccount` attempts to find a security identifier for the specified name. See [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166\(v=vs.85\).aspx) for more details.  
+ `LoadAccount` attempts to find a security identifier for the specified name. See [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) for more details.  
   
 ##  <a name="operator_eq"></a>  CSid::operator =  
  Assignment operator.  

@@ -17,23 +17,22 @@ Specifies dispatch interfaces that are forced to be members of the IDL coclass.
   
 ## Syntax  
   
-```  
-  
-      [ implements(   
+```cpp  
+[ implements(   
    interfaces={interfaces},  
    dispinterfaces={dispinterfaces}  
 )]  
 ```  
   
-#### Parameters  
- **interfaces**  
+### Parameters  
+ *interfaces*  
  A comma separated list of the interfaces that will be a member of the IDL coclass. A shorthand method for specifying a single interface is **implements(***interface_name***)**.  
   
- **dispinterfaces**  
+ *dispinterfaces*  
  A comma separated list of the dispinterface that will be a member of the IDL coclass. A shorthand method for specifying a single dispinterface is **implements(dispinterfaces** *= dispinterface_name***)**.  
   
 ## Remarks  
- By default, only COM-interfaces that are base classes of the coclass are added in the IDL coclass. **implements** lets you force other interfaces to be IDL coclass members.  
+ By default, only COM-interfaces that are base classes of the `coclass` are added in the IDL coclass. **implements** lets you force other interfaces to be IDL `coclass` members.  
   
 ## Requirements  
   
@@ -41,7 +40,7 @@ Specifies dispatch interfaces that are forced to be members of the IDL coclass.
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|Yes|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -103,7 +102,7 @@ library odod
 ## Example  
  And the following .h file, which also needs to be available to the compiler.  
   
-```  
+```cpp  
 // attr_implements.h  
 // this ALWAYS GENERATED file contains definitions for the interfaces  
   
@@ -418,9 +417,9 @@ CBar;
 ```  
   
 ## Example  
- In the following program, without implements, IBar1, IBar2, and ISna will not be in the coclass in the generated IDL.  
+ In the following program, without implements, `IBar1`, `IBar2`, and `ISna` will not be in the `coclass` in the generated IDL.  
   
-```  
+```cpp  
 // attr_implements.cpp  
 // compile with: /LD /link /idlout:out.idl  
 #define _ATL_ATTRIBUTES 1  

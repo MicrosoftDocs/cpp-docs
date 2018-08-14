@@ -4,10 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["IRowsetImpl", "IRowsetImpl::AddRefRows", "AddRefRows", "IRowsetImpl.AddRefRows", "ATL::IRowsetImpl::AddRefRows", "ATL.IRowsetImpl.AddRefRows", "IRowsetImpl.CreateRow", "ATL.IRowsetImpl.CreateRow",           "ATL::IRowsetImpl::CreateRow", "CreateRow", "IRowsetImpl::CreateRow", "ATL.IRowsetImpl.GetData", "ATL::IRowsetImpl::GetData", "IRowsetImpl::GetData", "IRowsetImpl.GetData", "GetDBStatus",                             "IRowsetImpl.GetDBStatus", "IRowsetImpl::GetDBStatus", "GetNextRows", "ATL.IRowsetImpl.GetNextRows", "ATL::IRowsetImpl::GetNextRows", "IRowsetImpl::GetNextRows", "IRowsetImpl.GetNextRows",                            "IRowsetImpl.IRowsetImpl", "ATL::IRowsetImpl::IRowsetImpl", "ATL.IRowsetImpl.IRowsetImpl", "IRowsetImpl::IRowsetImpl", "IRowsetImpl", "ATL::IRowsetImpl::RefRows", "ATL.IRowsetImpl.RefRows",                           "IRowsetImpl.RefRows", "RefRows", "IRowsetImpl::RefRows", "ATL.IRowsetImpl.ReleaseRows", "ReleaseRows", "IRowsetImpl::ReleaseRows", "ATL::IRowsetImpl::ReleaseRows", "IRowsetImpl.ReleaseRows",                         "ATL.IRowsetImpl.RestartPosition", "IRowsetImpl::RestartPosition", "RestartPosition", "ATL::IRowsetImpl::RestartPosition", "IRowsetImpl.RestartPosition", "IRowsetImpl.SetDBStatus", "IRowsetImpl::SetDBStatus",        "SetDBStatus", "ATL.IRowsetImpl.m_bCanFetchBack", "ATL::IRowsetImpl::m_bCanFetchBack", "IRowsetImpl.m_bCanFetchBack", "IRowsetImpl::m_bCanFetchBack", "m_bCanFetchBack", "IRowsetImpl::m_bCanScrollBack",               "ATL::IRowsetImpl::m_bCanScrollBack", "IRowsetImpl.m_bCanScrollBack", "ATL.IRowsetImpl.m_bCanScrollBack", "m_bCanScrollBack", "ATL.IRowsetImpl.m_bReset", "IRowsetImpl.m_bReset", "m_bReset",                           "IRowsetImpl::m_bReset", "ATL::IRowsetImpl::m_bReset", "IRowsetImpl::m_iRowset", "IRowsetImpl.m_iRowset", "ATL::IRowsetImpl::m_iRowset", "ATL.IRowsetImpl.m_iRowset", "m_iRowset", "IRowsetImpl::m_rgRowHandles",       "IRowsetImpl.m_rgRowHandles", "m_rgRowHandles", "ATL::IRowsetImpl::m_rgRowHandles", "ATL.IRowsetImpl.m_rgRowHandles"]
+f1_keywords: ["IRowsetImpl", "IRowsetImpl::AddRefRows", "AddRefRows", "IRowsetImpl.AddRefRows", "ATL::IRowsetImpl::AddRefRows", "ATL.IRowsetImpl.AddRefRows", "IRowsetImpl.CreateRow", "ATL.IRowsetImpl.CreateRow", "ATL::IRowsetImpl::CreateRow", "CreateRow", "IRowsetImpl::CreateRow", "ATL.IRowsetImpl.GetData", "ATL::IRowsetImpl::GetData", "IRowsetImpl::GetData", "IRowsetImpl.GetData", "GetDBStatus", "IRowsetImpl.GetDBStatus", "IRowsetImpl::GetDBStatus", "GetNextRows", "ATL.IRowsetImpl.GetNextRows", "ATL::IRowsetImpl::GetNextRows", "IRowsetImpl::GetNextRows", "IRowsetImpl.GetNextRows", "IRowsetImpl.IRowsetImpl", "ATL::IRowsetImpl::IRowsetImpl", "ATL.IRowsetImpl.IRowsetImpl", "IRowsetImpl::IRowsetImpl", "IRowsetImpl", "ATL::IRowsetImpl::RefRows", "ATL.IRowsetImpl.RefRows", "IRowsetImpl.RefRows", "RefRows", "IRowsetImpl::RefRows", "ATL.IRowsetImpl.ReleaseRows", "ReleaseRows", "IRowsetImpl::ReleaseRows", "ATL::IRowsetImpl::ReleaseRows", "IRowsetImpl.ReleaseRows", "ATL.IRowsetImpl.RestartPosition", "IRowsetImpl::RestartPosition", "RestartPosition", "ATL::IRowsetImpl::RestartPosition", "IRowsetImpl.RestartPosition", "IRowsetImpl.SetDBStatus", "IRowsetImpl::SetDBStatus",        "SetDBStatus", "ATL.IRowsetImpl.m_bCanFetchBack", "ATL::IRowsetImpl::m_bCanFetchBack", "IRowsetImpl.m_bCanFetchBack", "IRowsetImpl::m_bCanFetchBack", "m_bCanFetchBack", "IRowsetImpl::m_bCanScrollBack", "ATL::IRowsetImpl::m_bCanScrollBack", "IRowsetImpl.m_bCanScrollBack", "ATL.IRowsetImpl.m_bCanScrollBack", "m_bCanScrollBack", "ATL.IRowsetImpl.m_bReset", "IRowsetImpl.m_bReset", "m_bReset", "IRowsetImpl::m_bReset", "ATL::IRowsetImpl::m_bReset", "IRowsetImpl::m_iRowset", "IRowsetImpl.m_iRowset", "ATL::IRowsetImpl::m_iRowset", "ATL.IRowsetImpl.m_iRowset", "m_iRowset", "IRowsetImpl::m_rgRowHandles", "IRowsetImpl.m_rgRowHandles", "m_rgRowHandles", "ATL::IRowsetImpl::m_rgRowHandles", "ATL.IRowsetImpl.m_rgRowHandles"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IRowsetImpl class", "AddRefRows method", "CreateRow method", "GetData method [OLE DB]", "GetDBStatus method", "GetNextRows method", "IRowsetImpl constructor", "RefRows method", 
-      "ReleaseRows method", "RestartPosition method", "SetDBStatus method", "m_bCanFetchBack", "m_bCanScrollBack", "m_bReset", "m_iRowset", "m_rgRowHandles"]
+helpviewer_keywords: ["IRowsetImpl class", "AddRefRows method", "CreateRow method", "GetData method [OLE DB]", "GetDBStatus method", "GetNextRows method", "IRowsetImpl constructor", "RefRows method", "ReleaseRows method", "RestartPosition method", "SetDBStatus method", "m_bCanFetchBack", "m_bCanScrollBack", "m_bReset", "m_iRowset", "m_rgRowHandles"]
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
 author: "mikeblome"
 ms.author: "mblome"
@@ -73,7 +72,7 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 |[m_rgRowHandles](#rgrowhandles)|A list of row handles.|  
   
 ## Remarks  
- [IRowset](https://msdn.microsoft.com/library/ms720986.aspx) is the base rowset interface.  
+ [IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\)) is the base rowset interface.  
 
 ## <a name="addrefrows"></a> IRowsetImpl::AddRefRows
 Adds a reference count to an existing row handle.  
@@ -81,14 +80,14 @@ Adds a reference count to an existing row handle.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,  
+STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBREFCOUNT rgRefCounts[],  
    DBROWSTATUS rgRowStatus[]);  
 ```  
   
 #### Parameters  
- See [IRowset::AddRefRows](https://msdn.microsoft.com/library/ms719619.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="createrow"></a> IRowsetImpl::CreateRow
 A helper method called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md) to allocate a new `HROW`.  
@@ -97,7 +96,7 @@ A helper method called by [GetNextRows](../../data/oledb/irowsetimpl-getnextrows
   
 ```cpp
 HRESULT CreateRow(DBROWOFFSET lRowsOffset,  
-  DBCOUNTITEM& cRowsObtained,  
+   DBCOUNTITEM& cRowsObtained,  
    HROW* rgRows);  
 ```  
   
@@ -120,13 +119,13 @@ Retrieves data from the rowset's copy of the row.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetData )(HROW hRow,  
+STDMETHOD(GetData )(HROW hRow,  
    HACCESSOR hAccessor,  
    void* pDstData);  
 ```  
   
 #### Parameters  
- See [IRowset::GetData](https://msdn.microsoft.com/library/ms716988.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::GetData](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  Some parameters correspond to *OLE DB Programmer's Reference* parameters of different names, which are described in `IRowset::GetData`:  
   
@@ -143,7 +142,7 @@ Returns the DBSTATUS status flags for the specified field.
 ### Syntax  
   
 ```cpp
-      virtual DBSTATUS GetDBStatus(RowClass* currentRow,  
+virtual DBSTATUS GetDBStatus(RowClass* currentRow,  
    ATLCOLUMNINFO* columnNames);  
 ```  
   
@@ -155,7 +154,7 @@ Returns the DBSTATUS status flags for the specified field.
  The column for which status is being requested.  
   
 ### Return Value  
- The [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) flags for the column. 
+ The [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) flags for the column. 
 
 ## <a name="getnextrows"></a> IRowsetImpl::GetNextRows
 Fetches rows sequentially, remembering the previous position.  
@@ -163,7 +162,7 @@ Fetches rows sequentially, remembering the previous position.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetNextRows )(HCHAPTER hReserved,  
+STDMETHOD(GetNextRows )(HCHAPTER hReserved,  
    DBROWOFFSET lRowsOffset,  
    DBROWCOUNT cRows,  
    DBCOUNTITEM* pcRowsObtained,  
@@ -171,7 +170,7 @@ Fetches rows sequentially, remembering the previous position.
 ```  
   
 #### Parameters  
- See [IRowset::GetNextRows](https://msdn.microsoft.com/library/ms709827.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IRowset::GetNextRows](/previous-versions/windows/desktop/ms709827\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="irowsetimpl"></a> IRowsetImpl::IRowsetImpl
 The constructor.  
@@ -180,7 +179,6 @@ The constructor.
   
 ```cpp
 IRowsetImpl();  
-  
 ```  
   
 ### Remarks  
@@ -200,7 +198,7 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 ```  
   
 #### Parameters  
- See [IRowset::AddRefRows](https://msdn.microsoft.com/library/ms719619.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -211,7 +209,7 @@ Releases rows.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,  
+STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBROWOPTIONS rgRowOptions[],  
    DBREFCOUNT rgRefCounts[],  
@@ -219,7 +217,7 @@ Releases rows.
 ```  
   
 #### Parameters  
- See [IRowset::ReleaseRows](https://msdn.microsoft.com/library/ms719771.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="restartposition"></a> IRowsetImpl::RestartPosition
 Repositions the next fetch position to its initial position; that is, its position when the rowset was first created.  
@@ -227,11 +225,11 @@ Repositions the next fetch position to its initial position; that is, its positi
 ### Syntax  
   
 ```cpp
-      STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);  
+STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);  
 ```  
   
 #### Parameters  
- See [IRowset::RestartPosition](https://msdn.microsoft.com/library/ms712877.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowset::RestartPosition](/previous-versions/windows/desktop/ms712877\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
  The rowset position is undefined until `GetNextRow` is called. You can move backwards in a rowet by calling `RestartPosition` and then fetching or scrolling backwards.  
@@ -242,14 +240,14 @@ Sets the DBSTATUS status flags for the specified field.
 ### Syntax  
   
 ```cpp
-      virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,  
+virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,  
    RowClass* currentRow,  
    ATLCOLUMNINFO* columnInfo);  
 ```  
   
 #### Parameters  
  *statusFlags*  
- The [DBSTATUS](https://msdn.microsoft.com/library/ms722617.aspx) flags to set for the column.  
+ The [DBSTATUS](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) flags to set for the column.  
   
  *currentRow*  
  The current row.  
@@ -270,7 +268,6 @@ Indicates whether a provider supports backward fetching.
   
 ```cpp
 unsigned m_bCanFetchBack:1;  
-  
 ```  
   
 ### Remarks  
@@ -283,7 +280,6 @@ Indicates whether a provider can have its cursor scroll backwards.
   
 ```cpp
 unsigned  m_bCanScrollBack:1;  
-  
 ```  
   
 ### Remarks  
@@ -296,7 +292,6 @@ A bit flag used to determine if the cursor position is defined on the rowset.
   
 ```cpp
 unsigned m_bReset:1;  
-  
 ```  
   
 ### Remarks  
@@ -309,7 +304,6 @@ An index to the rowset, representing the cursor.
   
 ```cpp
 DBROWOFFSET m_iRowset;  
-  
 ```  
 
 ## <a name="rgrowhandles"></a> IRowsetImpl::m_rgRowHandles
@@ -318,9 +312,7 @@ A map of row handles currently contained by the provider in response to `GetNext
 ### Syntax  
   
 ```cpp
-MapClass  
- m_rgRowHandles;  
-  
+MapClass m_rgRowHandles;  
 ```  
   
 ### Remarks  

@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::~RuntimeClass Destructor
-Deinitializes the current instance of the RuntimeClass class.  
+Deinitializes the current instance of the **RuntimeClass** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 virtual ~RuntimeClass();  
 ```  
   

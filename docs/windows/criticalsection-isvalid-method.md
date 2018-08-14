@@ -17,12 +17,12 @@ Indicates whether the current critical section is valid.
   
 ## Syntax  
   
-```  
+```cpp  
 bool IsValid() const;  
 ```  
   
 ## Return Value  
- By default, always returns `true`.  
+ By default, always returns **true**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

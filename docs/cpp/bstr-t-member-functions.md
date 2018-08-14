@@ -14,5 +14,5 @@ ms.workload: ["cplusplus"]
 # _bstr_t Member Functions
 For information about `_bstr_t` member functions, see [_bstr_t Class](../cpp/bstr-t-class.md).  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

@@ -32,13 +32,13 @@ A symbol value can be any integer expressed in the normal manner for #define pre
   
 -   You cannot define a symbol value using other symbol strings. For example, the following symbol definition is not supported:  
   
-    ```  
+    ```cpp  
     #define IDC_MYEDIT  IDC_OTHEREDIT  //not supported  
     ```  
   
 -   You cannot use preprocessor macros with arguments as value definitions. For example:  
   
-    ```  
+    ```cpp  
     #define   IDD_ABOUT  ID(7) //not supported  
     ```  
   
@@ -47,8 +47,6 @@ A symbol value can be any integer expressed in the normal manner for #define pre
 -   Your application may have an existing file containing symbols defined with expressions. For more information on how to include the symbols as read-only symbols, see [Using Shared (Read Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md).  
   
  For more information on number ranges, see [TN023: Standard MFC Resources](../mfc/tn023-standard-mfc-resources.md).  
-  
-
   
 ## Requirements  
  Win32  

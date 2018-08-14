@@ -13,16 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::Get Method
-Retrieves a pointer to the interface that is associated with this ComPtr.  
+Retrieves a pointer to the interface that is associated with this **ComPtr**.  
   
 ## Syntax  
   
-```  
+```cpp  
 T* Get() const;  
 ```  
   
 ## Return Value  
- Pointer to the interface that is associated with this ComPtr.  
+ Pointer to the interface that is associated with this **ComPtr**.  
   
 ## Requirements  
  **Header:** client.h  

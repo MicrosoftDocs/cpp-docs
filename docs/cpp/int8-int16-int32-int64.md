@@ -53,7 +53,7 @@ func
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Fundamental Types](../cpp/fundamental-types-cpp.md)   
  [Data Type Ranges](../cpp/data-type-ranges.md)

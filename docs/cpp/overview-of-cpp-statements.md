@@ -17,7 +17,6 @@ C++ statements are executed sequentially, except when an expression statement, a
  Statements may be of the following types:  
   
 ```  
-  
 labeled-statement  
 expression-statement  
 compound-statement  
@@ -26,7 +25,6 @@ iteration-statement
 jump-statement  
 declaration-statement  
 try-throw-catch  
-  
 ```  
   
  In most cases, the C++ statement syntax is identical to that of ANSI C. The primary difference between the two is that in C, declarations are allowed only at the start of a block; C++ adds the *declaration-statement*, which effectively removes this restriction. This enables you to introduce variables at a point in the program where a precomputed initialization value can be calculated.  
@@ -44,5 +42,5 @@ try-throw-catch
 |[default](../cpp/switch-statement-cpp.md)|[__finally](../cpp/structured-exception-handling-c-cpp.md)|[switch](../cpp/switch-statement-cpp.md)||  
 |[do](../cpp/do-while-statement-cpp.md)|[if](../cpp/if-else-statement-cpp.md)|[throw](../cpp/try-throw-and-catch-statements-cpp.md)||  
   
-## See Also  
+## See also  
  [Statements](../cpp/statements-cpp.md)

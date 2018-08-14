@@ -32,5 +32,5 @@ The C++ standard recommends limits for various language constructs. The followin
   
 -   Template arguments in a template declaration - C++ standard: 1024, Visual C++ compiler: 2046.  
   
-## See Also  
+## See also  
  [Nonstandard Behavior](../cpp/nonstandard-behavior.md)

@@ -18,7 +18,6 @@ Converts the operand `expression` to an object of type `type-id`.
 ## Syntax  
   
 ```  
-  
 dynamic_cast < type-id > ( expression )  
 ```  
   
@@ -285,6 +284,6 @@ in GlobalTest
 Can't cast to C  
 ```  
   
-## See Also  
+## See also  
  [Casting Operators](../cpp/casting-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)

@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 operator InterfaceType**();  
 ```  
   
 ## Remarks  
- Deletes the current ComPtrRef object and returns a pointer-to-a-pointer to the interface that was represented by the ComPtrRef object.  
+ Deletes the current **ComPtrRef** object and returns a pointer-to-a-pointer to the interface that was represented by the **ComPtrRef** object.  
   
 ## Requirements  
  **Header:** client.h  

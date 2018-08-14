@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 ModuleBase();  
 ```  
   
 ## Remarks  
- Initializes an instance of the Module class.  
+ Initializes an instance of the `Module` class.  
   
 ## Requirements  
  **Header:** implements.h  

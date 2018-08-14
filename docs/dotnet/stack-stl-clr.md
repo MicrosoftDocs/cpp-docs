@@ -4,21 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["cliext::stack", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", 
-    "cliext::operator>", "cliext::operator>=", "cliext::stack::assign", "cliext::stack::const_reference", 
-    "cliext::stack::container_type", "cliext::stack::difference_type", "cliext::stack::empty", "cliext::stack::generic_container", 
-    "cliext::stack::generic_value", "cliext::stack::get_container", "cliext::stack::operator=", "cliext::stack::pop", 
-    "cliext::stack::push", "cliext::stack::reference", "cliext::stack::size", "cliext::stack::size_type", 
-    "cliext::stack::stack", "cliext::stack::to_array", "cliext::stack::top", "cliext::stack::top_item", 
-    "cliext::stack::value_type"]
+f1_keywords: ["cliext::stack", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", "cliext::operator>", "cliext::operator>=", "cliext::stack::assign", "cliext::stack::const_reference", "cliext::stack::container_type", "cliext::stack::difference_type", "cliext::stack::empty", "cliext::stack::generic_container", "cliext::stack::generic_value", "cliext::stack::get_container", "cliext::stack::operator=", "cliext::stack::pop", "cliext::stack::push", "cliext::stack::reference", "cliext::stack::size", "cliext::stack::size_type", "cliext::stack::stack", "cliext::stack::to_array", "cliext::stack::top", "cliext::stack::top_item", "cliext::stack::value_type"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["<stack> header [STL/CLR]", "<cliext/stack> header [STL/CLR]", "stack class [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", 
-    "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", 
-    "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "generic_container member [STL/CLR]", 
-    "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", 
-    "push member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", 
-    "stack member [STL/CLR]", "to_array member [STL/CLR]", "top member [STL/CLR]", "top_item member [STL/CLR]", 
-    "value_type member [STL/CLR]"]
+helpviewer_keywords: ["<stack> header [STL/CLR]", "<cliext/stack> header [STL/CLR]", "stack class [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", "push member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "stack member [STL/CLR]", "to_array member [STL/CLR]", "top member [STL/CLR]", "top_item member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 6ee96b9f-8a33-4cf7-b7e0-6535c24bdefb
 author: "mikeblome"
 ms.author: "mblome"
@@ -27,11 +15,11 @@ ms.workload: ["cplusplus", "dotnet"]
 # stack (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has last-in first-out access. You use the container adapter `stack` to manage an underlying container as a push-down stack.  
   
- In the description below, `GValue` is the same as `Value` unless the latter is a ref type, in which case it is `Value^`. Similarly, `GContainer` is the same as `Container` unless the latter is a ref type, in which case it is `Container^`.  
+ In the description below, `GValue` is the same as *Value* unless the latter is a ref type, in which case it is `Value^`. Similarly, `GContainer` is the same as *Container* unless the latter is a ref type, in which case it is `Container^`.  
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     ref class stack  
@@ -42,10 +30,10 @@ template<typename Value,
 ```  
   
 ### Parameters  
- Value  
+ *Value*  
  The type of an element in the controlled sequence.  
   
- Container  
+ *Container*  
  The type of the underlying container.  
 
 ## Requirements  
@@ -100,7 +88,7 @@ template<typename Value,
 |IStack\<Value, Container>|Maintain generic container adapter.|  
   
 ## Remarks  
- The object allocates and frees storage for the sequence it controls through an underlying container, of type `Container`, that stores `Value` elements and grows on demand. The object restricts access to pushing and popping just the last element, implementing a last-in first-out queue (also known as a LIFO queue, or stack).  
+ The object allocates and frees storage for the sequence it controls through an underlying container, of type *Container*, that stores *Value* elements and grows on demand. The object restricts access to pushing and popping just the last element, implementing a last-in first-out queue (also known as a LIFO queue, or stack).  
  
 ## Members
 
@@ -109,12 +97,12 @@ Replaces all elements.
   
 ### Syntax  
   
-```  
+```cpp  
 void assign(stack<Value, Container>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container adapter to insert.  
   
 ### Remarks  
@@ -148,7 +136,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -161,7 +148,7 @@ The type of a constant reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
@@ -192,7 +179,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -204,12 +190,12 @@ The type of the underlying container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Container value_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Container`.  
+ The type is a synonym for the template parameter *Container*.  
   
 ### Example  
   
@@ -232,8 +218,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -245,7 +230,7 @@ The types of a signed distance between two elements.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
@@ -288,7 +273,6 @@ int main()
     System::Console::WriteLine("popping 3 = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -302,7 +286,7 @@ Tests whether no elements are present.
   
 ### Syntax  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
@@ -339,7 +323,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -355,7 +338,7 @@ The type of the generic interface for the container adapter.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::IStack<Value>  
     generic_container;  
 ```  
@@ -402,7 +385,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -417,7 +399,7 @@ The type of an element for use with the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
@@ -460,7 +442,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -474,7 +455,7 @@ Accesses the underlying container.
   
 ### Syntax  
   
-```  
+```cpp  
 container_type^ get_container();  
 ```  
   
@@ -503,7 +484,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -515,16 +495,16 @@ Replaces the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 stack <Value, Container>% operator=(stack <Value, Container>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container adapter to copy.  
   
 ### Remarks  
- The member operator copies `right` to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in `right`.  
+ The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.  
   
 ### Example  
   
@@ -553,8 +533,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -567,7 +546,7 @@ Removes the last element.
   
 ### Syntax  
   
-```  
+```cpp  
 void pop();  
 ```  
   
@@ -601,7 +580,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -614,7 +592,7 @@ Adds a new last element.
   
 ### Syntax  
   
-```  
+```cpp  
 void push(value_type val);  
 ```  
   
@@ -642,7 +620,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -654,7 +631,7 @@ The type of a reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
@@ -689,7 +666,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -702,7 +678,7 @@ Counts the number of elements.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
@@ -740,7 +716,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -755,7 +730,7 @@ The type of a signed distance between two element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
@@ -790,7 +765,6 @@ int main()
     System::Console::WriteLine("size difference = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -803,7 +777,7 @@ Constructs a container adapter object.
   
 ### Syntax  
   
-```  
+```cpp  
 stack();  
 stack(stack<Value, Container>% right);  
 stack(stack<Value, Container>^ right);  
@@ -811,10 +785,10 @@ explicit stack(container_type% wrapped);
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Object to copy.  
   
- wrapped  
+ *wrapped*  
  Wrapped container to use.  
   
 ### Remarks  
@@ -828,7 +802,7 @@ explicit stack(container_type% wrapped);
   
  `stack(stack<Value, Container>% right);`  
   
- creates a wrapped container that is a copy of `right.get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the stack object `right`.  
+ creates a wrapped container that is a copy of `right.get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the stack object *right*.  
   
  The constructor:  
   
@@ -840,7 +814,7 @@ explicit stack(container_type% wrapped);
   
  `explicit stack(container_type% wrapped);`  
   
- uses the existing container `wrapped` as the wrapped container. You use it to construct a stack from an existing container.  
+ uses the existing container *wrapped* as the wrapped container. You use it to construct a stack from an existing container.  
   
 ### Example  
   
@@ -878,8 +852,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -894,7 +867,7 @@ Copies the controlled sequence to a new array.
   
 ### Syntax  
   
-```  
+```cpp  
 cli::array<Value>^ to_array();  
 ```  
   
@@ -930,7 +903,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -943,7 +915,7 @@ Accesses the last element.
   
 ### Syntax  
   
-```  
+```cpp  
 reference top();  
 ```  
   
@@ -980,7 +952,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -994,7 +965,7 @@ Accesses the last element.
   
 ### Syntax  
   
-```  
+```cpp  
 property value_type top_item;  
 ```  
   
@@ -1031,7 +1002,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1045,12 +1015,12 @@ The type of an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Value value_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Value`.  
+ The type is a synonym for the template parameter *Value*.  
   
 ### Example  
   
@@ -1076,8 +1046,7 @@ int main()
         }   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1089,7 +1058,7 @@ Stack not equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator!=(stack<Value, Container>% left,  
@@ -1097,14 +1066,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(left == right)`. You use it to test whether `left` is not ordered the same as `right` when the two stacks are compared element by element.  
+ The operator function returns `!(left == right)`. You use it to test whether *left* is not ordered the same as *right* when the two stacks are compared element by element.  
   
 ### Example  
   
@@ -1142,8 +1111,7 @@ int main()
     System::Console::WriteLine("[a b c] != [a b d] is {0}",   
         c1 != c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1158,7 +1126,7 @@ Stack less than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator<(stack<Value, Container>% left,  
@@ -1166,14 +1134,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[stack::size (STL/CLR)](../dotnet/stack-size-stl-clr.md)`() <` `right->size()` You use it to test whether `left` is ordered before `right` when the two stacks are compared element by element.  
+ The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[stack::size (STL/CLR)](../dotnet/stack-size-stl-clr.md)`() <` `right->size()` You use it to test whether *left* is ordered before *right* when the two stacks are compared element by element.  
   
 ### Example  
   
@@ -1211,8 +1179,7 @@ int main()
     System::Console::WriteLine("[a b c] < [a b d] is {0}",   
         c1 < c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1227,7 +1194,7 @@ Stack less than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator<=(stack<Value, Container>% left,  
@@ -1235,14 +1202,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(right < left)`. You use it to test whether `left` is not ordered after `right` when the two stacks are compared element by element.  
+ The operator function returns `!(right < left)`. You use it to test whether *left* is not ordered after *right* when the two stacks are compared element by element.  
   
 ### Example  
   
@@ -1280,8 +1247,7 @@ int main()
     System::Console::WriteLine("[a b d] <= [a b c] is {0}",   
         c2 <= c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1296,7 +1262,7 @@ Stack equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator==(stack<Value, Container>% left,  
@@ -1304,14 +1270,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns true only if the sequences controlled by `left` and `right` have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether `left` is ordered the same as `right` when the two stacks are compared element by element.  
+ The operator function returns true only if the sequences controlled by *left* and *right* have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether *left* is ordered the same as *right* when the two stacks are compared element by element.  
   
 ### Example  
   
@@ -1349,8 +1315,7 @@ int main()
     System::Console::WriteLine("[a b c] == [a b d] is {0}",   
         c1 == c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1365,7 +1330,7 @@ Stack greater than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator>(stack<Value, Container>% left,  
@@ -1373,14 +1338,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `right` `<` `left`. You use it to test whether `left` is ordered after `right` when the two stacks are compared element by element.  
+ The operator function returns `right` `<` `left`. You use it to test whether *left* is ordered after *right* when the two stacks are compared element by element.  
   
 ### Example  
   
@@ -1418,8 +1383,7 @@ int main()
     System::Console::WriteLine("[a b d] > [a b c] is {0}",   
         c2 > c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1434,7 +1398,7 @@ Stack greater than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator>=(stack<Value, Container>% left,  
@@ -1442,18 +1406,18 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(left < right)`. You use it to test whether `left` is not ordered before `right` when the two stacks are compared element by element.  
+ The operator function returns `!(left < right)`. You use it to test whether *left* is not ordered before *right* when the two stacks are compared element by element.  
   
 ### Example  
   
-```  
+```cpp  
 // cliext_stack_operator_ge.cpp   
 // compile with: /clr   
 #include <cliext/stack>   
@@ -1488,7 +1452,6 @@ int main()
         c1 >= c2);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1496,4 +1459,4 @@ int main()
  a b d  
 [a b c] >= [a b c] is True  
 [a b c] >= [a b d] is False  
-```  
+``` 

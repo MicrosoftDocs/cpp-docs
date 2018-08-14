@@ -1096,7 +1096,7 @@ void SetText(LPCTSTR lpszText);
   
 ### Parameters  
  [in] *lpszText*  
- Pointer to a string that that contains the text for the edit box.  
+ Pointer to a string that contains the text for the edit box.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

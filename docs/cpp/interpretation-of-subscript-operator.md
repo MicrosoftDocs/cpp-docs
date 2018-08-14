@@ -24,5 +24,5 @@ Like other operators, the subscript operator (**[ ]**) can be redefined by the u
  ***array-name* ) + (**   
  ***subscript* 1**  *max*2 *\* max*3*...max*n)               **+** *subscript*2 *\* max*3*...max*n)                    . . . *+* *subscript*n))  
   
-## See Also  
+## See also  
  [Arrays](../cpp/arrays-cpp.md)

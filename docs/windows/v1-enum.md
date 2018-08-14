@@ -17,10 +17,8 @@ Directs that the specified enumerated type be transmitted as a 32-bit entity rat
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [v1_enum]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Directs that the specified enumerated type be transmitted as a 32-bit entity rat
 ## Example  
  The following code shows a use of **v1_enum**:  
   
-```  
+```cpp  
 // cpp_attr_ref_v1_enum.cpp  
 // compile with: /LD  
 [module(name="MyLibrary")];  
@@ -56,4 +54,4 @@ enum eList {
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   

@@ -56,12 +56,10 @@ HRESULT Open(const CSession& session,
    DBPROPSET* pPropSet = NULL,  
    ULONG ulPropSets = 0) throw ();  
 
-
 HRESULT Open(const CSession& session,  
    LPCSTR szTableName,  
    DBPROPSET* pPropSet = NULL,  
    ULONG ulPropSets = 0) throw ();  
-
 
 HRESULT Open(const CSession& session,  
    DBID& dbid,  
@@ -83,16 +81,16 @@ HRESULT Open(const CSession& session,
  [in] The `DBID` of the table to open.  
   
  *pPropSet*  
- [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.  
+ [in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.  
   
  *ulPropSets*  
- [in] The number of [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) structures passed in the *pPropSet* argument.  
+ [in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures passed in the *pPropSet* argument.  
   
 ### Return Value  
  A standard HRESULT.  
   
 ### Remarks  
- For more details, see [IOpenRowset::OpenRowset](https://msdn.microsoft.com/library/ms716724.aspx) in the *OLE DB Programmer's Reference*.  
+ For more details, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   

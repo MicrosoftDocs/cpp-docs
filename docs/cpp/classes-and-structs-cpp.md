@@ -56,5 +56,5 @@ This section introduces C++ classes and structs. The two constructs are identica
 |Default access is public|Default access is private|Default access is public|  
 |No usage constraints|No usage constraints|Use only one member at a time|  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

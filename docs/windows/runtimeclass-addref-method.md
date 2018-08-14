@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::AddRef Method
-Increments the reference count for the current RuntimeClass object.  
+Increments the reference count for the current **RuntimeClass** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD_(  
    ULONG,  
    AddRef  

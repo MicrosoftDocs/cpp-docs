@@ -4,11 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::CManualAccessor", "ATL.CManualAccessor", "CManualAccessor",
-    "ATL::CManualAccessor::AddBindEntry", "ATL.CManualAccessor.AddBindEntry", "CManualAccessor::AddBindEntry", "AddBindEntry", "CManualAccessor.AddBindEntry",
-    "CManualAccessor::AddParameterEntry", "ATL.CManualAccessor.AddParameterEntry", "CManualAccessor.AddParameterEntry", "AddParameterEntry", "ATL::CManualAccessor::AddParameterEntry",
-    "ATL::CManualAccessor::CreateAccessor", "CreateAccessor", "ATL.CManualAccessor.CreateAccessor", "CManualAccessor.CreateAccessor", "CManualAccessor::CreateAccessor",
-    "ATL::CManualAccessor::CreateParameterAccessor", "ATL.CManualAccessor.CreateParameterAccessor", "CManualAccessor.CreateParameterAccessor", "CreateParameterAccessor", "CManualAccessor::CreateParameterAccessor"]
+f1_keywords: ["ATL::CManualAccessor", "ATL.CManualAccessor", "CManualAccessor", "ATL::CManualAccessor::AddBindEntry", "ATL.CManualAccessor.AddBindEntry", "CManualAccessor::AddBindEntry", "AddBindEntry", "CManualAccessor.AddBindEntry", "CManualAccessor::AddParameterEntry", "ATL.CManualAccessor.AddParameterEntry", "CManualAccessor.AddParameterEntry", "AddParameterEntry", "ATL::CManualAccessor::AddParameterEntry", "ATL::CManualAccessor::CreateAccessor", "CreateAccessor", "ATL.CManualAccessor.CreateAccessor", "CManualAccessor.CreateAccessor", "CManualAccessor::CreateAccessor", "ATL::CManualAccessor::CreateParameterAccessor", "ATL.CManualAccessor.CreateParameterAccessor", "CManualAccessor.CreateParameterAccessor", "CreateParameterAccessor", "CManualAccessor::CreateParameterAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CManualAccessor class", "AddBindEntry method", "AddParameterEntry method", "CreateAccessor method", "CreateParameterAccessor method"]
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
@@ -56,7 +52,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] Column number.  
@@ -94,7 +90,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] Parameter number.  
@@ -154,7 +150,7 @@ Allocates memory for the parameter bind structures and initializes the parameter
   
 ```cpp
 HRESULT CreateParameterAccessor(int nBindEntries,   
-  void* pBuffer,   
+   void* pBuffer,   
    DBLENGTH nBufferSize) throw();  
 ```  
   

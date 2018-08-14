@@ -17,12 +17,12 @@ Represents a slim reader/writer lock.
   
 ## Syntax  
   
-```  
+```cpp  
 class SRWLock;  
 ```  
   
 ## Remarks  
- A slim reader/writer lock is used to synchronize access across threads to an object or resource. For more information, see [Synchronization Functions](http://msdn.microsoft.com/en-us/9b6359c2-0113-49b6-83d0-316ad95aba1b).  
+ A slim reader/writer lock is used to synchronize access across threads to an object or resource. For more information, see [Synchronization Functions](/windows/desktop/Sync/synchronization-functions).  
   
 ## Members  
   
@@ -30,30 +30,30 @@ class SRWLock;
   
 |||  
 |-|-|  
-|**SyncLockExclusive**|Synonym for an SRWLock object that is acquired in exclusive mode.|  
-|**SyncLockShared**|Synonym for an SRWLock object that is acquired in shared mode.|  
+|`SyncLockExclusive`|Synonym for an **SRWLock** object that is acquired in exclusive mode.|  
+|`SyncLockShared`|Synonym for an **SRWLock** object that is acquired in shared mode.|  
   
 ### Public Constructors  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SRWLock::SRWLock Constructor](../windows/srwlock-srwlock-constructor.md)|Initializes a new instance of the SRWLock class.|  
-|[SRWLock::~SRWLock Destructor](../windows/srwlock-tilde-srwlock-destructor.md)|Deinitializes an instance of the SRWLock class.|  
+|[SRWLock::SRWLock Constructor](../windows/srwlock-srwlock-constructor.md)|Initializes a new instance of the **SRWLock** class.|  
+|[SRWLock::~SRWLock Destructor](../windows/srwlock-tilde-srwlock-destructor.md)|Deinitializes an instance of the **SRWLock** class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SRWLock::LockExclusive Method](../windows/srwlock-lockexclusive-method.md)|Acquires an SRWLock object in exclusive mode.|  
-|[SRWLock::LockShared Method](../windows/srwlock-lockshared-method.md)|Acquires an SRWLock object in shared mode.|  
-|[SRWLock::TryLockExclusive Method](../windows/srwlock-trylockexclusive-method.md)|Attempts to acquire a SRWLock object in exclusive mode for the current or specified SRWLock object.|  
-|[SRWLock::TryLockShared Method](../windows/srwlock-trylockshared-method.md)|Attempts to acquire a SRWLock object in shared mode for the current or specified SRWLock object.|  
+|[SRWLock::LockExclusive Method](../windows/srwlock-lockexclusive-method.md)|Acquires an **SRWLock** object in exclusive mode.|  
+|[SRWLock::LockShared Method](../windows/srwlock-lockshared-method.md)|Acquires an **SRWLock** object in shared mode.|  
+|[SRWLock::TryLockExclusive Method](../windows/srwlock-trylockexclusive-method.md)|Attempts to acquire a **SRWLock** object in exclusive mode for the current or specified **SRWLock** object.|  
+|[SRWLock::TryLockShared Method](../windows/srwlock-trylockshared-method.md)|Attempts to acquire a **SRWLock** object in shared mode for the current or specified **SRWLock** object.|  
   
 ### Protected Data Member  
   
 |Name|Description|  
 |----------|-----------------|  
-|[SRWLock::SRWLock_ Data Member](../windows/srwlock-srwlock-data-member.md)|Contains the underlying lock variable for the current SRWLock object.|  
+|[SRWLock::SRWLock_ Data Member](../windows/srwlock-srwlock-data-member.md)|Contains the underlying lock variable for the current **SRWLock** object.|  
   
 ## Inheritance Hierarchy  
  `SRWLock`  

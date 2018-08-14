@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::~Module Destructor
-Deinitializes the current instance of the Module class.  
+Deinitializes the current instance of the **Module** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 virtual ~Module();  
 ```  
   

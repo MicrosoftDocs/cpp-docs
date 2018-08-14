@@ -4,11 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["vc.templates.ole", "BEGIN_PROPERTY_SET", "BEGIN_PROPERTY_SET_EX", "BEGIN_PROPSET_MAP", "CHAIN_PROPERTY_SET", "END_PROPERTY_SET", "END_PROPSET_MAP", "PROPERTY_INFO_ENTRY",
-    "PROPERTY_INFO_ENTRY_EX", "PROPERTY_INFO_ENTRY_VALUE", "BEGIN_PROVIDER_COLUMN_MAP", "END_PROVIDER_COLUMN_MAP", "PROVIDER_COLUMN_ENTRY", "PROVIDER_COLUMN_ENTRY_FIXED", "PROVIDER_COLUMN_ENTRY_GN", "PROVIDER_COLUMN_ENTRY_LENGTH", "PROVIDER_COLUMN_ENTRY_STR", "PROVIDER_COLUMN_ENTRY_TYPE_LENGTH", "PROVIDER_COLUMN_ENTRY_WSTR", "BEGIN_SCHEMA_MAP", "END_SCHEMA_MAP", "SCHEMA_ENTRY"]
+f1_keywords: ["vc.templates.ole", "BEGIN_PROPERTY_SET", "BEGIN_PROPERTY_SET_EX", "BEGIN_PROPSET_MAP", "CHAIN_PROPERTY_SET", "END_PROPERTY_SET", "END_PROPSET_MAP", "PROPERTY_INFO_ENTRY", "PROPERTY_INFO_ENTRY_EX", "PROPERTY_INFO_ENTRY_VALUE", "BEGIN_PROVIDER_COLUMN_MAP", "END_PROVIDER_COLUMN_MAP", "PROVIDER_COLUMN_ENTRY", "PROVIDER_COLUMN_ENTRY_FIXED", "PROVIDER_COLUMN_ENTRY_GN", "PROVIDER_COLUMN_ENTRY_LENGTH", "PROVIDER_COLUMN_ENTRY_STR", "PROVIDER_COLUMN_ENTRY_TYPE_LENGTH", "PROVIDER_COLUMN_ENTRY_WSTR", "BEGIN_SCHEMA_MAP", "END_SCHEMA_MAP", "SCHEMA_ENTRY"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["OLE DB provider templates, macros", "macros, OLE DB Provider Templates", "Provider Template macros (OLE DB)", "OLE DB Provider Template macros", "BEGIN_PROPERTY_SET macro",
-    "BEGIN_PROPERTY_SET_EX macro", "BEGIN_PROPSET_MAP macro", "CHAIN_PROPERTY_SET macro", "END_PROPERTY_SET macro", "END_PROPSET_MAP macro", "PROPERTY_INFO_ENTRY macro", "PROPERTY_INFO_ENTRY_EX macro", "PROPERTY_INFO_ENTRY_VALUE macro", "BEGIN_PROVIDER_COLUMN_MAP macro", "END_PROVIDER_COLUMN_MAP macro", "PROVIDER_COLUMN_ENTRY macro", "PROVIDER_COLUMN_ENTRY_FIXED macro", "PROVIDER_COLUMN_ENTRY_GN macro", "PROVIDER_COLUMN_ENTRY_LENGTH macro", "PROVIDER_COLUMN_ENTRY_STR macro", "PROVIDER_COLUMN_ENTRY_TYPE_LENGTH macro", "PROVIDER_COLUMN_ENTRY_WSTR macro", "BEGIN_SCHEMA_MAP macro", "END_SCHEMA_MAP macro", "SCHEMA_ENTRY macro"]
+helpviewer_keywords: ["OLE DB provider templates, macros", "macros, OLE DB Provider Templates", "Provider Template macros (OLE DB)", "OLE DB Provider Template macros", "BEGIN_PROPERTY_SET macro", "BEGIN_PROPERTY_SET_EX macro", "BEGIN_PROPSET_MAP macro", "CHAIN_PROPERTY_SET macro", "END_PROPERTY_SET macro", "END_PROPSET_MAP macro", "PROPERTY_INFO_ENTRY macro", "PROPERTY_INFO_ENTRY_EX macro", "PROPERTY_INFO_ENTRY_VALUE macro", "BEGIN_PROVIDER_COLUMN_MAP macro", "END_PROVIDER_COLUMN_MAP macro", "PROVIDER_COLUMN_ENTRY macro", "PROVIDER_COLUMN_ENTRY_FIXED macro", "PROVIDER_COLUMN_ENTRY_GN macro", "PROVIDER_COLUMN_ENTRY_LENGTH macro", "PROVIDER_COLUMN_ENTRY_STR macro", "PROVIDER_COLUMN_ENTRY_TYPE_LENGTH macro", "PROVIDER_COLUMN_ENTRY_WSTR macro", "BEGIN_SCHEMA_MAP macro", "END_SCHEMA_MAP macro", "SCHEMA_ENTRY macro"]
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
 author: "mikeblome"
 ms.author: "mblome"
@@ -63,7 +61,6 @@ Marks the beginning of a property set in a property set map.
   
 ```cpp
 BEGIN_PROPERTY_SET(guid)  
-  
 ```  
   
 #### Parameters  
@@ -79,8 +76,7 @@ Marks the beginning of a property set in a property set map.
 #### Syntax  
   
 ```cpp
-BEGIN_PROPERTY_SET_EX(guid  
-, flags )  
+BEGIN_PROPERTY_SET_EX(guid, flags)  
 ```  
   
 #### Parameters  
@@ -100,18 +96,17 @@ Marks the beginning of the property set map entries.
   
 ```cpp
 BEGIN_PROPSET_MAP(Class)  
-  
 ```  
   
 #### Parameters  
  *Class*  
  [in] The class in which this property set is specified. A property set can be specified in the following OLE DB objects:  
   
--   [Data Source Objects](https://msdn.microsoft.com/library/ms721278.aspx)  
+-   [Data Source Objects](/previous-versions/windows/desktop/ms721278\(v=vs.85\))  
   
--   [Session Objects](https://msdn.microsoft.com/library/ms711572.aspx)  
+-   [Session Objects](/previous-versions/windows/desktop/ms711572\(v=vs.85\))  
   
--   [Commands](https://msdn.microsoft.com/library/ms724608.aspx)  
+-   [Commands](/previous-versions/windows/desktop/ms724608\(v=vs.85\))  
   
 #### Example  
  Here is a sample property set map:  
@@ -125,7 +120,6 @@ This macro chains property groups together.
   
 ```cpp
 CHAIN_PROPERTY_SET(ChainClass)  
-  
 ```  
   
 #### Parameters  
@@ -145,7 +139,6 @@ Marks the end of a property set.
   
 ```cpp
 END_PROPERTY_SET(guid)  
-  
 ```  
   
 #### Parameters  
@@ -162,7 +155,6 @@ Marks the end of property set map entries.
   
 ```cpp
 END_PROPSET_MAP()  
-  
 ```  
   
 #### Example  
@@ -175,15 +167,14 @@ Represents a specific property in a property set.
   
 ```cpp
 PROPERTY_INFO_ENTRY(dwPropID)  
-  
 ```  
   
 #### Parameters  
  *dwPropID*  
- [in] A [DBPROPID](https://msdn.microsoft.com/library/ms723882.aspx) value that can be used in conjunction with the property set GUID to identify a property.  
+ [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) value that can be used in conjunction with the property set GUID to identify a property.  
   
 #### Remarks  
- This macro sets the property value of type `DWORD` to a default value defined in ATLDB.H. To set the property to a value of your choosing, use [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). To set the [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) and [DBPROPFLAGS](https://msdn.microsoft.com/library/ms724342.aspx) for the property at the same time, use [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
+ This macro sets the property value of type `DWORD` to a default value defined in ATLDB.H. To set the property to a value of your choosing, use [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). To set the [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) and [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) for the property at the same time, use [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
   
 #### Example  
  See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
@@ -194,19 +185,18 @@ Represents a specific property in a property set.
 #### Syntax  
   
 ```cpp
-PROPERTY_INFO_ENTRY_EX(dwPropID  
-, vt, dwFlags, value, options )  
+PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)  
 ```  
   
 #### Parameters  
  *dwPropID*  
- [in] A [DBPROPID](https://msdn.microsoft.com/library/ms723882.aspx) value that can be used in conjunction with the property set GUID to identify a property.  
+ [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) value that can be used in conjunction with the property set GUID to identify a property.  
   
  *vt*  
  [in] The [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) of this property entry.  
   
  *dwFlags*  
- [in] A [DBPROPFLAGS](https://msdn.microsoft.com/library/ms724342.aspx) value describing this property entry.  
+ [in] A [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) value describing this property entry.  
   
  *value*  
  [in] The property value of type `DWORD`.  
@@ -226,13 +216,12 @@ Represents a specific property in a property set.
 #### Syntax  
   
 ```cpp
-PROPERTY_INFO_ENTRY_VALUE(dwPropID  
-, value )  
+PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)  
 ```  
   
 #### Parameters  
  *dwPropID*  
- [in] A [DBPROPID](https://msdn.microsoft.com/library/ms723882.aspx) value that can be used in conjunction with the property set GUID to identify a property.  
+ [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) value that can be used in conjunction with the property set GUID to identify a property.  
   
  *value*  
  [in] The property value of type `DWORD`.  
@@ -250,7 +239,6 @@ Marks the beginning of the provider column map entries.
   
 ```cpp
 BEGIN_PROVIDER_COLUMN_MAP(theClass)  
-  
 ```  
   
 #### Parameters  
@@ -269,7 +257,6 @@ Marks the end of the provider column map entries.
   
 ```cpp
 END_PROVIDER_COLUMN_MAP()  
-  
 ```  
   
 #### Example  
@@ -281,8 +268,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY (name  
-, ordinal, member )  
+PROVIDER_COLUMN_ENTRY (name, ordinal, member)  
 ```  
   
 #### Parameters  
@@ -301,8 +287,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_FIXED(name  
-, ordinal, dbtype, member )  
+PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)  
 ```  
   
 #### Parameters  
@@ -313,7 +298,7 @@ PROVIDER_COLUMN_ENTRY_FIXED(name
  [in] The column number. Unless the column is a Bookmark column, the column number must not be 0.  
   
  *dbtype*  
- [in] The data type in [DBTYPE](https://msdn.microsoft.com/library/ms711251.aspx).  
+ [in] The data type in [DBTYPE](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
   
  *member*  
  [in] The member variable in `dataClass` that stores the data.  
@@ -330,8 +315,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_GN (name  
-, ordinal, flags, colSize, dbtype, precision, scale, guid )  
+PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scale, guid)  
 ```  
   
 #### Parameters  
@@ -342,22 +326,22 @@ PROVIDER_COLUMN_ENTRY_GN (name
  [in] The column number. Unless the column is a Bookmark column, the column number must not be 0.  
   
  *flags*  
- [in] Specifies how data is returned. See the `dwFlags` description in [DBBINDING Structures](https://msdn.microsoft.com/library/ms716845.aspx).  
+ [in] Specifies how data is returned. See the `dwFlags` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
   
  *colSize*  
  [in] The column size.  
   
  *dbtype*  
- [in] Indicates the data type of the value. See the `wType` description in [DBBINDING Structures](https://msdn.microsoft.com/library/ms716845.aspx).  
+ [in] Indicates the data type of the value. See the `wType` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
   
  *precision*  
- [in] Indicates the precision to use when getting data if *dbType* is DBTYPE_NUMERIC or DBTYPE_DECIMAL. See the `bPrecision` description in [DBBINDING Structures](https://msdn.microsoft.com/library/ms716845.aspx).  
+ [in] Indicates the precision to use when getting data if *dbType* is DBTYPE_NUMERIC or DBTYPE_DECIMAL. See the `bPrecision` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
   
  *scale*  
- [in] Indicates the scale to use when getting data if dbType is DBTYPE_NUMERIC or DBTYPE_DECIMAL. See the `bScale` description in [DBBINDING Structures](https://msdn.microsoft.com/library/ms716845.aspx).  
+ [in] Indicates the scale to use when getting data if dbType is DBTYPE_NUMERIC or DBTYPE_DECIMAL. See the `bScale` description in [DBBINDING Structures](/previous-versions/windows/desktop/ms716845\(v=vs.85\)).  
   
  *guid*  
- A schema rowset GUID. See [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) in the *OLE DB Programmer's Reference* for a list of schema rowsets and their GUIDs.  
+ A schema rowset GUID. See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference* for a list of schema rowsets and their GUIDs.  
   
 #### Remarks  
  Allows you to specify the column's size, data type, precision, scale, and schema rowset GUID.  
@@ -368,8 +352,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_LENGTH(name  
-, ordinal, size, member )  
+PROVIDER_COLUMN_ENTRY_LENGTH(name, ordinal, size, member)  
 ```  
   
 #### Parameters  
@@ -397,8 +380,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_STR(name  
-, ordinal, member )  
+PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)  
 ```  
   
 #### Parameters  
@@ -412,7 +394,7 @@ PROVIDER_COLUMN_ENTRY_STR(name
  [in] The member variable in the data class that stores the data.  
   
 #### Remarks  
- Use this macro when the column data is assumed to be [DBTYPE_STR](https://msdn.microsoft.com/library/ms711251.aspx).  
+ Use this macro when the column data is assumed to be [DBTYPE_STR](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
   
 #### Example  
  See [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).   
@@ -423,20 +405,18 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name  
-, ordinal, dbtype, size, member )  
+PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)  
 ```  
   
 #### Parameters  
  *name*  
-  
  [in] The column name.  
   
  *ordinal*  
  [in] The column number. Unless the column is a Bookmark column, the column number must not be 0.  
   
  *dbtype*  
- [in] The data type in [DBTYPE](https://msdn.microsoft.com/library/ms711251.aspx).  
+ [in] The data type in [DBTYPE](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
   
  *size*  
  [in] The column size in bytes.  
@@ -453,8 +433,7 @@ Represents a specific column supported by the provider.
 #### Syntax  
   
 ```cpp
-PROVIDER_COLUMN_ENTRY_WSTR(name  
-, ordinal, member )  
+PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)  
 ```  
   
 #### Parameters  
@@ -468,7 +447,7 @@ PROVIDER_COLUMN_ENTRY_WSTR(name
  [in] The member variable in the data class that stores the data.  
   
 #### Remarks  
- Use this macro when the column data is a null terminated Unicode character string, [DBTYPE_WSTR](https://msdn.microsoft.com/library/ms711251.aspx).  
+ Use this macro when the column data is a null terminated Unicode character string, [DBTYPE_WSTR](/previous-versions/windows/desktop/ms711251\(v=vs.85\)).  
 
 ### <a name="begin_schema_map"></a> BEGIN_SCHEMA_MAP
 Denotes the beginning of a schema map.  
@@ -476,7 +455,7 @@ Denotes the beginning of a schema map.
 #### Syntax  
   
 ```cpp
-      BEGIN_SCHEMA_MAP(SchemaClass);  
+BEGIN_SCHEMA_MAP(SchemaClass);  
 ```  
   
 #### Parameters  
@@ -484,7 +463,7 @@ Denotes the beginning of a schema map.
  The class that contains the MAP. Typically this will be the session class.  
   
 #### Remarks  
- See [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) in the Windows SDK for more information about schema rowsets.  
+ See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the Windows SDK for more information about schema rowsets.  
 
 ### <a name="end_schema_map"></a> END_SCHEMA_MAP
 Denotes the end of the schema map.  
@@ -493,7 +472,6 @@ Denotes the end of the schema map.
   
 ```cpp
 END_SCHEMA_MAP()  
-  
 ```  
   
 #### See Also  
@@ -505,13 +483,13 @@ Associates a GUID with a class.
 #### Syntax  
   
 ```cpp
-      SCHEMA_ENTRY(guid,  
+SCHEMA_ENTRY(guid,  
    rowsetClass);   
 ```  
   
 #### Parameters  
  *guid*  
- A schema rowset GUID. See [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) in the *OLE DB Programmer's Reference* for a list of schema rowsets and their GUIDs.  
+ A schema rowset GUID. See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference* for a list of schema rowsets and their GUIDs.  
   
  *rowsetClass*  
  The class that will be created to represent the schema rowset.  
@@ -525,7 +503,7 @@ HRESULT Execute (LONG* pcRowsAffected,
     const VARIANT* rgRestrictions);  
 ```  
   
- This `Execute` function populates the rowset's data. The ATL Project Wizard creates, as described in [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) in the *OLE DB Programmer's Reference*, three initial schema rowsets in the project for each of the three mandatory OLE DB schemas:  
+ This `Execute` function populates the rowset's data. The ATL Project Wizard creates, as described in [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) in the *OLE DB Programmer's Reference*, three initial schema rowsets in the project for each of the three mandatory OLE DB schemas:  
   
 -   DBSCHEMA_TABLES  
   

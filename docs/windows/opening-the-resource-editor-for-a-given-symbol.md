@@ -25,10 +25,9 @@ When you are browsing symbols in the [Resource Symbols dialog box](../windows/re
   
      The resource appears in the appropriate editor window.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  

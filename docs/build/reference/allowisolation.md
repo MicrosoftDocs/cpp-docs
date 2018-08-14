@@ -34,4 +34,4 @@ Specifies behavior for manifest lookup.
 ## See Also  
  [EDITBIN Options](../../build/reference/editbin-options.md)   
  [/ALLOWISOLATION (Manifest Lookup)](../../build/reference/allowisolation-manifest-lookup.md)   
- [Manifest Files Reference](http://msdn.microsoft.com/library/aa375632.aspx)
+ [Manifest Files Reference](/windows/desktop/SbsCs/manifest-files-reference)

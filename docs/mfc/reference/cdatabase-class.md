@@ -134,7 +134,7 @@ void Cancel();
 ```  
   
 ### Remarks  
- Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function [SQLSetConnectOption](https://msdn.microsoft.com/library/ms713564.aspx). For more information, see [Asynchronous Execution](https://msdn.microsoft.com/library/ms713563.aspx) in the Windows SDK.  
+ Note that the MFC ODBC classes no longer use asynchronous processing; to perform an asychronous operation, you must directly call the ODBC API function [SQLSetConnectOption](/previous-versions/windows/desktop/ms713564\(v=vs.85\)). For more information, see [Asynchronous Execution](/previous-versions/windows/desktop/ms713563\(v=vs.85\)) in the Windows SDK.  
   
 ##  <a name="cantransact"></a>  CDatabase::CanTransact  
  Call this member function to determine whether the database allows transactions.  

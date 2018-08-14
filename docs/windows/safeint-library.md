@@ -13,15 +13,15 @@ ms.author: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Library
-The SafeInt library helps prevent integer overflows that might result when the application performs mathematical operations.  
+The **SafeInt** library helps prevent integer overflows that might result when the application performs mathematical operations.  
   
 ## In This Section  
   
 |Section|Description|  
 |-------------|-----------------|  
 |[SafeInt Class](../windows/safeint-class.md)|This class protects against integer overflows.|  
-|[SafeInt Functions](../windows/safeint-functions.md)|Functions that can be used without creating a `SafeInt` object.|  
-|[SafeIntException Class](../windows/safeintexception-class.md)|A class of exceptions related to the `SafeInt` class.|  
+|[SafeInt Functions](../windows/safeint-functions.md)|Functions that can be used without creating a **SafeInt** object.|  
+|[SafeIntException Class](../windows/safeintexception-class.md)|A class of exceptions related to the **SafeInt** class.|  
   
 ## Related Sections  
   

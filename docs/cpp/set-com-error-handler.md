@@ -38,7 +38,7 @@ void __stdcall _set_com_error_handler(
  `IErrorInfo` object.  
   
 ## Remarks  
- By default, [_com_raise_error](../cpp/com-raise-error.md) handles all COM errors. You can change this behavior by using `_set_com_error_handler` to call your own error-handling function.  
+ By default, [_com_raise_error](../cpp/com-raise-error.md) handles all COM errors. You can change this behavior by using **_set_com_error_handler** to call your own error-handling function.  
   
  The replacement function must have a signature that is equivalent to that of `_com_raise_error`.  
   
@@ -88,5 +88,5 @@ Exception raised: Unable to establish the connection!
   
  **Lib:** If the **wchar_t is Native Type** compiler option is on, use comsuppw.lib or comsuppwd.lib. If **wchar_t is Native Type** is off, use comsupp.lib. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
   
-## See Also  
+## See also  
  [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

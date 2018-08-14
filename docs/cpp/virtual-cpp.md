@@ -40,5 +40,5 @@ virtual [access-specifier] base-class-name
   
  Also see the following keywords: [class](../cpp/class-cpp.md), [private](../cpp/private-cpp.md), [public](../cpp/public-cpp.md), and [protected](../cpp/protected-cpp.md).  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

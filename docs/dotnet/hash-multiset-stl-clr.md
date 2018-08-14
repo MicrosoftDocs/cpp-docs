@@ -4,24 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["cliext::hash_multiset", "cliext::hash_multiset::begin", "cliext::hash_multiset::bucket_count", "cliext::hash_multiset::clear", "cliext::hash_multiset::const_iterator", 
-    "cliext::hash_multiset::const_reference", "cliext::hash_multiset::const_reverse_iterator", "cliext::hash_multiset::count", "cliext::hash_multiset::difference_type", "cliext::hash_multiset::empty", 
-    "cliext::hash_multiset::end", "cliext::hash_multiset::equal_range", "cliext::hash_multiset::erase", "cliext::hash_multiset::find", "cliext::hash_multiset::generic_container", 
-    "cliext::hash_multiset::generic_iterator", "cliext::hash_multiset::generic_reverse_iterator", "cliext::hash_multiset::generic_value", "cliext::hash_multiset::hash_delegate", 
-    "cliext::hash_multiset::hash_multiset", "cliext::hash_multiset::hasher", "cliext::hash_multiset::insert", "cliext::hash_multiset::iterator", "cliext::hash_multiset::key_comp", 
-    "cliext::hash_multiset::key_compare", "cliext::hash_multiset::key_type", "cliext::hash_multiset::load_factor", "cliext::hash_multiset::lower_bound", "cliext::hash_multiset::make_value", 
-    "cliext::hash_multiset::max_load_factor", "cliext::hash_multiset::operator=", "cliext::hash_multiset::rbegin", "cliext::hash_multiset::reference", "cliext::hash_multiset::rehash", 
-    "cliext::hash_multiset::rend", "cliext::hash_multiset::reverse_iterator", "cliext::hash_multiset::size", "cliext::hash_multiset::size_type", "cliext::hash_multiset::swap", 
-    "cliext::hash_multiset::to_array", "cliext::hash_multiset::upper_bound", "cliext::hash_multiset::value_comp", "cliext::hash_multiset::value_compare", "cliext::hash_multiset::value_type"]
+f1_keywords: ["cliext::hash_multiset", "cliext::hash_multiset::begin", "cliext::hash_multiset::bucket_count", "cliext::hash_multiset::clear", "cliext::hash_multiset::const_iterator", "cliext::hash_multiset::const_reference", "cliext::hash_multiset::const_reverse_iterator", "cliext::hash_multiset::count", "cliext::hash_multiset::difference_type", "cliext::hash_multiset::empty", "cliext::hash_multiset::end", "cliext::hash_multiset::equal_range", "cliext::hash_multiset::erase", "cliext::hash_multiset::find", "cliext::hash_multiset::generic_container", "cliext::hash_multiset::generic_iterator", "cliext::hash_multiset::generic_reverse_iterator", "cliext::hash_multiset::generic_value", "cliext::hash_multiset::hash_delegate", "cliext::hash_multiset::hash_multiset", "cliext::hash_multiset::hasher", "cliext::hash_multiset::insert", "cliext::hash_multiset::iterator", "cliext::hash_multiset::key_comp", "cliext::hash_multiset::key_compare", "cliext::hash_multiset::key_type", "cliext::hash_multiset::load_factor", "cliext::hash_multiset::lower_bound", "cliext::hash_multiset::make_value", "cliext::hash_multiset::max_load_factor", "cliext::hash_multiset::operator=", "cliext::hash_multiset::rbegin", "cliext::hash_multiset::reference", "cliext::hash_multiset::rehash", "cliext::hash_multiset::rend", "cliext::hash_multiset::reverse_iterator", "cliext::hash_multiset::size", "cliext::hash_multiset::size_type", "cliext::hash_multiset::swap", "cliext::hash_multiset::to_array", "cliext::hash_multiset::upper_bound", "cliext::hash_multiset::value_comp", "cliext::hash_multiset::value_compare", "cliext::hash_multiset::value_type"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["<cliext/hash_set> header [STL/CLR]", "hash_multiset class [STL/CLR]", "<hash_set> header [STL/CLR]", "begin member [STL/CLR]", "bucket_count member [STL/CLR]", 
-    "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", 
-    "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", 
-    "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "hash_delegate member [STL/CLR]", 
-    "hash_multiset member [STL/CLR]", "hasher member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", 
-    "key_type member [STL/CLR]", "load_factor member [STL/CLR]", "lower_bound member [STL/CLR]", "make_value member [STL/CLR]", "max_load_factor member [STL/CLR]", "operator= member [STL/CLR]", 
-    "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rehash member [STL/CLR]", "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", 
-    "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
+helpviewer_keywords: ["<cliext/hash_set> header [STL/CLR]", "hash_multiset class [STL/CLR]", "<hash_set> header [STL/CLR]", "begin member [STL/CLR]", "bucket_count member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "hash_delegate member [STL/CLR]", "hash_multiset member [STL/CLR]", "hasher member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", "key_type member [STL/CLR]", "load_factor member [STL/CLR]", "lower_bound member [STL/CLR]", "make_value member [STL/CLR]", "max_load_factor member [STL/CLR]", "operator= member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rehash member [STL/CLR]", "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 8462bd21-6829-4dd3-ac81-c42d6fdf92f0
 author: "mikeblome"
 ms.author: "mblome"
@@ -30,11 +15,11 @@ ms.workload: ["cplusplus", "dotnet"]
 # hash_multiset (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `hash_multiset` to manage a sequence of elements as a hash table, each table entry storing a bidirectional linked list of nodes, and each node storing one element. The value of each element is used as a key, for ordering the sequence.  
   
- In the description below, `GValue` is the same as `GKey`, which in turn is the same as `Key` unless the latter is a ref type, in which case it is `Key^`.  
+ In the description below, `GValue` is the same as `GKey`, which in turn is the same as *Key* unless the latter is a ref type, in which case it is `Key^`.  
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename Key>  
     ref class hash_multiset  
         :   public  
@@ -49,7 +34,7 @@ template<typename Key>
 ```  
   
 ### Parameters  
- Key  
+ *Key*  
  The type of the key component of an element in the controlled sequence.  
 
 ## Requirements  
@@ -153,7 +138,7 @@ template<typename Key>
   
  A hash_multiset iterator stores a handle to its associated hash_multiset node, which in turn stores a handle to its associated container. You can use iterators only with their associated container objects. A hash_multiset iterator remains valid so long as its associated hash_multiset node is associated with some hash_multiset. Moreover, a valid iterator is dereferencable -- you can use it to access or alter the element value it designates -- so long as it is not equal to `end()`.  
   
- Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does `not` destroy its elements.  
+ Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does *not* destroy its elements.  
   
 ## Members
 
@@ -162,7 +147,7 @@ Designates the beginning of the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator begin();  
 ```  
   
@@ -195,7 +180,6 @@ int main()
     System::Console::WriteLine("*++begin() = {0}", *++it);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -209,7 +193,7 @@ Counts the number of buckets.
   
 ### Syntax  
   
-```  
+```cpp  
 int bucket_count();  
 ```  
   
@@ -259,7 +243,6 @@ int main()
         c1.max_load_factor());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -282,7 +265,7 @@ Removes all elements.
   
 ### Syntax  
   
-```  
+```cpp  
 void clear();  
 ```  
   
@@ -324,7 +307,6 @@ int main()
     System::Console::WriteLine("size() = {0}", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -339,7 +321,7 @@ The type of a constant iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T2 const_iterator;  
 ```  
   
@@ -368,7 +350,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -380,7 +361,7 @@ The type of a constant reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
@@ -412,7 +393,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -424,7 +404,7 @@ The type of a constant reverse iterator for the controlled sequence..
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T4 const_reverse_iterator;  
 ```  
   
@@ -453,7 +433,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -465,16 +444,16 @@ Finds the number of elements matching a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type count(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
- The member function returns the number of elements in the controlled sequence that have equivalent ordering with `key`. You use it to determine the number of elements currently in the controlled sequence that match a specified key.  
+ The member function returns the number of elements in the controlled sequence that have equivalent ordering with *key*. You use it to determine the number of elements currently in the controlled sequence that match a specified key.  
   
 ### Example  
   
@@ -501,7 +480,6 @@ int main()
     System::Console::WriteLine("count(L'C') = {0}", c1.count(L'C'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -516,7 +494,7 @@ The types of a signed distance between two elements.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
@@ -556,7 +534,6 @@ int main()
     System::Console::WriteLine("begin()-end() = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -570,7 +547,7 @@ Tests whether no elements are present.
   
 ### Syntax  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
@@ -605,7 +582,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -621,7 +597,7 @@ Designates the end of the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator end();  
 ```  
   
@@ -655,7 +631,6 @@ int main()
     System::Console::WriteLine("*--end() = {0}", *++it);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -669,12 +644,12 @@ Finds range that matches a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 cliext::pair<iterator, iterator> equal_range(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
@@ -713,7 +688,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -727,31 +701,31 @@ Removes elements at specified positions.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator erase(iterator where);  
 iterator erase(iterator first, iterator last);  
 bool erase(key_type key)  
 ```  
   
 #### Parameters  
- first  
+ *first*  
  Beginning of range to erase.  
   
- key  
+ *key*  
  Key value to erase.  
   
- last  
+ *last*  
  End of range to erase.  
   
- where  
+ *where*  
  Element to erase.  
   
 ### Remarks  
- The first member function removes the element of the controlled sequence pointed to by `where`, and returns an iterator that designates the first element remaining beyond the element removed, or [hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`()` if no such element exists. You use it to remove a single element.  
+ The first member function removes the element of the controlled sequence pointed to by *where*, and returns an iterator that designates the first element remaining beyond the element removed, or [hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`()` if no such element exists. You use it to remove a single element.  
   
  The second member function removes the elements of the controlled sequence in the range [`first`, `last`), and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists.. You use it to remove zero or more contiguous elements.  
   
- The third member function removes any element of the controlled sequence whose key has equivalent ordering to `key`, and returns a count of the number of elements removed. You use it to remove and count all elements that match a specified key.  
+ The third member function removes any element of the controlled sequence whose key has equivalent ordering to *key*, and returns a count of the number of elements removed. You use it to remove and count all elements that match a specified key.  
   
  Each element erasure takes time proportional to the logarithm of the number of elements in the controlled sequence.  
   
@@ -793,7 +767,6 @@ int main()
     System::Console::WriteLine("size() = {0}", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -809,16 +782,16 @@ Finds an element that matches a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator find(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
- If at least one element in the controlled sequence has equivalent ordering with `key`, the member function returns an iterator designating one of those elements; otherwise it returns [hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.  
+ If at least one element in the controlled sequence has equivalent ordering with *key*, the member function returns an iterator designating one of those elements; otherwise it returns [hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.  
   
 ### Example  
   
@@ -848,7 +821,6 @@ int main()
         L'C', c1.find(L'C') != c1.end());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -863,7 +835,7 @@ The type of the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::  
     IHash<GKey, GValue>  
     generic_container;  
@@ -911,7 +883,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -926,7 +897,7 @@ The type of an iterator for use with the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::Generic::  
     ContainerBidirectionalIterator<generic_value>  
     generic_iterator;  
@@ -967,7 +938,6 @@ int main()
     System::Console::WriteLine(" {0}", gcval);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -981,7 +951,7 @@ The type of a reverse iterator for use with the generic interface for the contai
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::Generic::  
     ReverseRandomAccessIterator<generic_value>  
     generic_reverse_iterator;  
@@ -1022,7 +992,6 @@ int main()
     System::Console::WriteLine(" {0}", gcval);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1036,7 +1005,7 @@ The type of an element for use with the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
@@ -1075,7 +1044,6 @@ int main()
     System::Console::WriteLine(" {0}", gcval);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1089,7 +1057,7 @@ Finds an element that matches a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 hasher^ hash_delegate();  
 ```  
   
@@ -1113,7 +1081,6 @@ int main()
     System::Console::WriteLine("hash(L'b') = {0}", myhash(L'b'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1126,7 +1093,7 @@ Constructs a container object.
   
 ### Syntax  
   
-```  
+```cpp  
 hash_multiset();  
 explicit hash_multiset(key_compare^ pred);  
 hash_multiset(key_compare^ pred, hasher^ hashfn);  
@@ -1148,19 +1115,19 @@ hash_multiset(System::Collections::Generic::IEnumerable<GValue>^ right,
 ```  
   
 #### Parameters  
- first  
+ *first*  
  Beginning of range to insert.  
   
- hashfn  
+ *hashfn*  
  Hash function for mapping keys to buckets.  
   
- last  
+ *last*  
  End of range to insert.  
   
- pred  
+ *pred*  
  Ordering predicate for the controlled sequence.  
   
- right  
+ *right*  
  Object or range to insert.  
   
 ### Remarks  
@@ -1174,25 +1141,25 @@ hash_multiset(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `explicit hash_multiset(key_compare^ pred);`  
   
- initializes the controlled sequence with no elements, with the ordering predicate `pred`, and with the default hash function. You use it to specify an empty initial controlled sequence, with the specified ordering predicate and the default hash function.  
+ initializes the controlled sequence with no elements, with the ordering predicate *pred*, and with the default hash function. You use it to specify an empty initial controlled sequence, with the specified ordering predicate and the default hash function.  
   
  The constructor:  
   
  `hash_multiset(key_compare^ pred, hasher^ hashfn);`  
   
- initializes the controlled sequence with no elements, with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to specify an empty initial controlled sequence, with the specified ordering predicate and hash function.  
+ initializes the controlled sequence with no elements, with the ordering predicate *pred*, and with the hash function *hashfn*. You use it to specify an empty initial controlled sequence, with the specified ordering predicate and hash function.  
   
  The constructor:  
   
  `hash_multiset(hash_multiset<Key>% right);`  
   
- initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_multiset object `right`, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_multiset object *right*, with the default ordering predicate and hash function.  
   
  The constructor:  
   
  `hash_multiset(hash_multiset<Key>^ right);`  
   
- initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_multiset object `right`, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate, and with the default hash function. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the hash_multiset object *right*, with the default ordering predicate and hash function.  
   
  The constructor:  
   
@@ -1204,31 +1171,31 @@ hash_multiset(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `template<typename InIter> hash_multiset(InIter first, InIter last, key_compare^ pred);`  
   
- initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate *pred*, and with the default hash function. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and the default hash function.  
   
  The constructor:  
   
  `template<typename InIter> hash_multiset(InIter first, InIter last, key_compare^ pred, hasher^ hashfn);`  
   
- initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate *pred*, and with the hash function *hashfn*. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate and hash function.  
   
  The constructor:  
   
  `hash_multiset(System::Collections::Generic::IEnumerable<Key>^ right);`  
   
- initializes the controlled sequence with the sequence designated by the enumerator `right`, with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the default ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence designated by the enumerator *right*, with the default ordering predicate, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the default ordering predicate and hash function.  
   
  The constructor:  
   
  `hash_multiset(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`  
   
- initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and default hash function.  
+ initializes the controlled sequence with the sequence designated by the enumerator *right*, with the ordering predicate *pred*, and with the default hash function. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and default hash function.  
   
  The constructor:  
   
  `hash_multiset(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred, hasher^ hashfn);`  
   
- initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`, and with the hash function `hashfn`. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and hash function.  
+ initializes the controlled sequence with the sequence designated by the enumerator *right*, with the ordering predicate *pred*, and with the hash function *hashfn*. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate and hash function.  
   
 ### Example  
   
@@ -1336,7 +1303,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1364,7 +1330,7 @@ The hashing delegate for a key.
   
 ### Syntax  
   
-```  
+```cpp  
 Microsoft::VisualC::StlClr::UnaryDelegate<GKey, int>  
     hasher;  
 ```  
@@ -1389,7 +1355,6 @@ int main()
     System::Console::WriteLine("hash(L'b') = {0}", myhash(L'b'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1402,7 +1367,7 @@ Adds elements.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator insert(value_type val);  
 iterator insert(iterator where, value_type val);  
 template<typename InIter>  
@@ -1411,31 +1376,31 @@ void insert(System::Collections::Generic::IEnumerable<value_type>^ right);
 ```  
   
 #### Parameters  
- first  
+ *first*  
  Beginning of range to insert.  
   
- last  
+ *last*  
  End of range to insert.  
   
- right  
+ *right*  
  Enumeration to insert.  
   
- val  
+ *val*  
  Key value to insert.  
   
- where  
+ *where*  
  Where in container to insert (hint only).  
   
 ### Remarks  
  Each of the member functions inserts a sequence specified by the remaining operands.  
   
- The first member function inserts an element with value `val`, and returns an iterator that designates the newly inserted element. You use it to insert a single element.  
+ The first member function inserts an element with value *val*, and returns an iterator that designates the newly inserted element. You use it to insert a single element.  
   
- The second member function inserts an element with value `val`, using `where` as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element which might be adjacent to an element you know.  
+ The second member function inserts an element with value *val*, using *where* as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element which might be adjacent to an element you know.  
   
  The third member function inserts the sequence [`first`, `last`). You use it to insert zero or more elements copied from another sequence.  
   
- The fourth member function inserts the sequence designated by the `right`. You use it to insert a sequence described by an enumerator.  
+ The fourth member function inserts the sequence designated by the *right*. You use it to insert a sequence described by an enumerator.  
   
  Each element insertion takes time proportional to the logarithm of the number of elements in the controlled sequence. Insertion can occur in amortized constant time, however, given a hint that designates an element adjacent to the insertion point.  
   
@@ -1494,7 +1459,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1513,7 +1477,7 @@ The type of an iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T1 iterator;  
 ```  
   
@@ -1542,7 +1506,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1554,7 +1517,7 @@ Copies the ordering delegate for two keys.
   
 ### Syntax  
   
-```  
+```cpp  
 key_compare^key_comp();  
 ```  
   
@@ -1594,7 +1557,6 @@ int main()
         kcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1612,7 +1574,7 @@ The ordering delegate for two keys.
   
 ### Syntax  
   
-```  
+```cpp  
 Microsoft::VisualC::StlClr::BinaryDelegate<GKey, GKey, bool>  
     key_compare;  
 ```  
@@ -1653,7 +1615,6 @@ int main()
         kcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1671,12 +1632,12 @@ The type of an ordering key.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Key key_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Key`.  
+ The type is a synonym for the template parameter *Key*.  
   
 ### Example  
   
@@ -1703,7 +1664,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1715,7 +1675,7 @@ Counts the average elements per bucket.
   
 ### Syntax  
   
-```  
+```cpp  
 float load_factor();  
 ```  
   
@@ -1765,7 +1725,6 @@ int main()
         c1.max_load_factor());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1788,16 +1747,16 @@ Finds beginning of range that matches a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator lower_bound(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
- The member function determines the first element `X` in the controlled sequence that hashes to the same bucket as `key` and has equivalent ordering to `key`. If no such element exists, it returns [hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.  
+ The member function determines the first element `X` in the controlled sequence that hashes to the same bucket as *key* and has equivalent ordering to *key*. If no such element exists, it returns [hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.  
   
 ### Example  
   
@@ -1828,7 +1787,6 @@ int main()
         *c1.lower_bound(L'b'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1843,16 +1801,16 @@ Constructs a value object.
   
 ### Syntax  
   
-```  
+```cpp  
 static value_type make_value(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to use.  
   
 ### Remarks  
- The member function returns a `value_type` object whose key is `key`. You use it to compose an object suitable for use with several other member functions.  
+ The member function returns a `value_type` object whose key is *key*. You use it to compose an object suitable for use with several other member functions.  
   
 ### Example  
   
@@ -1875,7 +1833,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1887,19 +1844,19 @@ Gets or sets the maximum elements per bucket.
   
 ### Syntax  
   
-```  
+```cpp  
 float max_load_factor();  
 void max_load_factor(float new_factor);  
 ```  
   
 #### Parameters  
- new_factor  
+ *new_factor*  
  New maximum load factor to store.  
   
 ### Remarks  
  The first member function returns the current stored maximum load factor. You use it to determine the maximum average bucket size.  
   
- The second member function replaces the store maximum load factor with `new_factor`. No automatic rehashing occurs until a subsequent insert.  
+ The second member function replaces the store maximum load factor with *new_factor*. No automatic rehashing occurs until a subsequent insert.  
   
 ### Example  
   
@@ -1944,7 +1901,6 @@ int main()
         c1.max_load_factor());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1967,16 +1923,16 @@ Replaces the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 hash_multiset<Key>% operator=(hash_multiset<Key>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container to copy.  
   
 ### Remarks  
- The member operator copies `right` to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in `right`.  
+ The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.  
   
 ### Example  
   
@@ -2007,7 +1963,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2020,7 +1975,7 @@ Designates the beginning of the reversed controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 reverse_iterator rbegin();  
 ```  
   
@@ -2053,7 +2008,6 @@ int main()
     System::Console::WriteLine("*++rbegin() = {0}", *++rit);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2067,7 +2021,7 @@ The type of a reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
@@ -2099,7 +2053,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2111,7 +2064,7 @@ Rebuilds the hash table.
   
 ### Syntax  
   
-```  
+```cpp  
 void rehash();  
 ```  
   
@@ -2161,7 +2114,6 @@ int main()
         c1.max_load_factor());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2184,7 +2136,7 @@ Designates the end of the reversed controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 reverse_iterator rend();  
 ```  
   
@@ -2218,7 +2170,6 @@ int main()
     System::Console::WriteLine("*--rend() = {0}", *++rit);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2232,7 +2183,7 @@ The type of a reverse iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T3 reverse_iterator;  
 ```  
   
@@ -2261,7 +2212,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2273,7 +2223,7 @@ Counts the number of elements.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
@@ -2311,7 +2261,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2326,7 +2275,7 @@ The type of a signed distance between two element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
@@ -2360,7 +2309,6 @@ int main()
     System::Console::WriteLine("end()-begin() = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2373,16 +2321,16 @@ Swaps the contents of two containers.
   
 ### Syntax  
   
-```  
+```cpp  
 void swap(hash_multiset<Key>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container to swap contents with.  
   
 ### Remarks  
- The member function swaps the controlled sequences between `this` and `right`. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.  
+ The member function swaps the controlled sequences between `this` and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.  
   
 ### Example  
   
@@ -2424,7 +2372,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2439,7 +2386,7 @@ Copies the controlled sequence to a new array.
   
 ### Syntax  
   
-```  
+```cpp  
 cli::array<value_type>^ to_array();  
 ```  
   
@@ -2475,7 +2422,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2488,16 +2434,16 @@ Finds end of range that matches a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator upper_bound(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
- The member function determines the last element `X` in the controlled sequence that hashes to the same bucket as `key` and has equivalent ordering to `key`. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.  
+ The member function determines the last element `X` in the controlled sequence that hashes to the same bucket as *key* and has equivalent ordering to *key*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [hash_multiset::end (STL/CLR)](../dotnet/hash-multiset-end-stl-clr.md)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.  
   
 ### Example  
   
@@ -2528,7 +2474,6 @@ int main()
         *c1.upper_bound(L'b'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2543,7 +2488,7 @@ Copies the ordering delegate for two element values.
   
 ### Syntax  
   
-```  
+```cpp  
 value_compare^ value_comp();  
 ```  
   
@@ -2572,7 +2517,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2586,7 +2530,7 @@ The ordering delegate for two element values.
   
 ### Syntax  
   
-```  
+```cpp  
 Microsoft::VisualC::StlClr::BinaryDelegate<generic_value, generic_value, bool>  
     value_compare;  
 ```  
@@ -2616,7 +2560,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2630,7 +2573,7 @@ The type of an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef generic_value value_type;  
 ```  
   
@@ -2662,7 +2605,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  

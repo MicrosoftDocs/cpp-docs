@@ -4,16 +4,16 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::IErrorRecordsImpl", "ATL.IErrorRecordsImpl", "IErrorRecordsImpl", "GetErrorDescriptionString", "IErrorRecordsImpl.GetErrorDescriptionString", "IErrorRecordsImpl::GetErrorDescriptionString",           "GetErrorGUID", "IErrorRecordsImpl.GetErrorGUID", "IErrorRecordsImpl::GetErrorGUID", "GetErrorHelpContext", "IErrorRecordsImpl::GetErrorHelpContext", "IErrorRecordsImpl.GetErrorHelpContext",                          "IErrorRecordsImpl::GetErrorHelpFile", "GetErrorHelpFile", "IErrorRecordsImpl.GetErrorHelpFile", "IErrorRecordsImpl.GetErrorSource", "GetErrorSource", "IErrorRecordsImpl::GetErrorSource",                             "IErrorRecordsImpl.AddErrorRecord", "AddErrorRecord", "IErrorRecordsImpl::AddErrorRecord", "ATL::IErrorRecordsImpl::GetBasicErrorInfo", "IErrorRecordsImpl::GetBasicErrorInfo", "GetBasicErrorInfo",                    "ATL.IErrorRecordsImpl.GetBasicErrorInfo", "IErrorRecordsImpl.GetBasicErrorInfo", "ATL::IErrorRecordsImpl::GetCustomErrorObject", "IErrorRecordsImpl::GetCustomErrorObject",                                            "ATL.IErrorRecordsImpl.GetCustomErrorObject", "IErrorRecordsImpl.GetCustomErrorObject", "GetCustomErrorObject", "GetErrorInfo", "IErrorRecordsImpl.GetErrorInfo", "IErrorRecordsImpl::GetErrorInfo",                    "IErrorRecordsImpl::GetErrorParameters", "ATL.IErrorRecordsImpl.GetErrorParameters", "IErrorRecordsImpl.GetErrorParameters", "GetErrorParameters", "ATL::IErrorRecordsImpl::GetErrorParameters",                        "IErrorRecordsImpl::GetRecordCount", "ATL::IErrorRecordsImpl::GetRecordCount", "IErrorRecordsImpl.GetRecordCount", "ATL.IErrorRecordsImpl.GetRecordCount", "IErrorRecordsImpl::m_rgErrors",                             "IErrorRecordsImpl.m_rgErrors", "ATL.IErrorRecordsImpl.m_rgErrors", "m_rgErrors", "ATL::IErrorRecordsImpl::m_rgErrors"]
+f1_keywords: ["ATL::IErrorRecordsImpl", "ATL.IErrorRecordsImpl", "IErrorRecordsImpl", "GetErrorDescriptionString", "IErrorRecordsImpl.GetErrorDescriptionString", "IErrorRecordsImpl::GetErrorDescriptionString", "GetErrorGUID", "IErrorRecordsImpl.GetErrorGUID", "IErrorRecordsImpl::GetErrorGUID", "GetErrorHelpContext", "IErrorRecordsImpl::GetErrorHelpContext", "IErrorRecordsImpl.GetErrorHelpContext", "IErrorRecordsImpl::GetErrorHelpFile", "GetErrorHelpFile", "IErrorRecordsImpl.GetErrorHelpFile", "IErrorRecordsImpl.GetErrorSource", "GetErrorSource", "IErrorRecordsImpl::GetErrorSource", "IErrorRecordsImpl.AddErrorRecord", "AddErrorRecord", "IErrorRecordsImpl::AddErrorRecord", "ATL::IErrorRecordsImpl::GetBasicErrorInfo", "IErrorRecordsImpl::GetBasicErrorInfo", "GetBasicErrorInfo",                    "ATL.IErrorRecordsImpl.GetBasicErrorInfo", "IErrorRecordsImpl.GetBasicErrorInfo", "ATL::IErrorRecordsImpl::GetCustomErrorObject", "IErrorRecordsImpl::GetCustomErrorObject",        "ATL.IErrorRecordsImpl.GetCustomErrorObject", "IErrorRecordsImpl.GetCustomErrorObject", "GetCustomErrorObject", "GetErrorInfo", "IErrorRecordsImpl.GetErrorInfo", "IErrorRecordsImpl::GetErrorInfo", "IErrorRecordsImpl::GetErrorParameters", "ATL.IErrorRecordsImpl.GetErrorParameters", "IErrorRecordsImpl.GetErrorParameters", "GetErrorParameters", "ATL::IErrorRecordsImpl::GetErrorParameters", "IErrorRecordsImpl::GetRecordCount", "ATL::IErrorRecordsImpl::GetRecordCount", "IErrorRecordsImpl.GetRecordCount", "ATL.IErrorRecordsImpl.GetRecordCount", "IErrorRecordsImpl::m_rgErrors", "IErrorRecordsImpl.m_rgErrors", "ATL.IErrorRecordsImpl.m_rgErrors", "m_rgErrors", "ATL::IErrorRecordsImpl::m_rgErrors"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IErrorRecordsImpl class", "GetErrorDescriptionString method", "GetErrorGUID method", "GetErrorHelpContext method", "GetErrorHelpFile method", "GetErrorSource method", "AddErrorRecord method",      "GetBasicErrorInfo method", "GetCustomErrorObject method", "GetErrorInfo method", "GetErrorParameters method", "GetRecordCount method", "m_rgErrors"]
+helpviewer_keywords: ["IErrorRecordsImpl class", "GetErrorDescriptionString method", "GetErrorGUID method", "GetErrorHelpContext method", "GetErrorHelpFile method", "GetErrorSource method", "AddErrorRecord method", "GetBasicErrorInfo method", "GetCustomErrorObject method", "GetErrorInfo method", "GetErrorParameters method", "GetRecordCount method", "m_rgErrors"]
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IErrorRecordsImpl Class
-Implements the OLE DB [IErrorRecords](https://msdn.microsoft.com/library/ms718112.aspx) interface, adding records to and retrieving records from a data member ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) of type **CAtlArray<**`RecordClass`**>**.  
+Implements the OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface, adding records to and retrieving records from a data member ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) of type **CAtlArray<**`RecordClass`**>**.  
   
 ## Syntax
 
@@ -51,7 +51,7 @@ class IErrorRecordsImpl : public IErrorRecords
 |[AddErrorRecord](#adderrorrecord)|Adds a record to the OLE DB error object.|  
 |[GetBasicErrorInfo](#getbasicerrorinfo)|Returns basic information about the error, such as the return code and provider-specific error number.|  
 |[GetCustomErrorObject](#getcustomerrorobject)|Returns a pointer to an interface on a custom error object.|  
-|[GetErrorInfo](#geterrorinfo)|Returns an [IErrorInfo](https://msdn.microsoft.com/library/ms718112.aspx) interface pointer on the specified record.|  
+|[GetErrorInfo](#geterrorinfo)|Returns an [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface pointer on the specified record.|  
 |[GetErrorParameters](#geterrorparameters)|Returns the error parameters.|  
 |[GetRecordCount](#getrecordcount)|Returns the number of records in the OLE DB record object.|  
   
@@ -67,7 +67,7 @@ Gets the error description string from an error record.
 ### Syntax  
   
 ```cpp
-      LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);  
+LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  
@@ -83,7 +83,7 @@ Gets the error GUID from an error record.
 ### Syntax  
   
 ```cpp
-      REFGUID GetErrorGUID(ERRORINFO& rCurError);  
+REFGUID GetErrorGUID(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  
@@ -99,7 +99,7 @@ Gets the help context ID from an error record.
 ### Syntax  
   
 ```cpp
-      DWORD GetErrorHelpContext(ERRORINFO& rCurError);  
+DWORD GetErrorHelpContext(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  
@@ -115,7 +115,7 @@ Gets the path name of the help file from an error record.
 ### Syntax  
   
 ```cpp
-      LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);  
+LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  
@@ -131,7 +131,7 @@ Gets the source code that caused the error from an error record.
 ### Syntax  
   
 ```cpp
-      LPOLESTR GetErrorSource(ERRORINFO& rCurError);  
+LPOLESTR GetErrorSource(ERRORINFO& rCurError);  
 ```  
   
 #### Parameters  
@@ -147,7 +147,7 @@ Adds a record to the OLE DB error object.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,  
+STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,  
    DWORD dwLookupID,  
    DISPPARAMS *pdispparams,  
    IUnknown *punkCustomError,  
@@ -155,7 +155,7 @@ Adds a record to the OLE DB error object.
 ```  
   
 #### Parameters  
- See [IErrorRecords::AddErrorRecord](https://msdn.microsoft.com/library/ms725362.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IErrorRecords::AddErrorRecord](/previous-versions/windows/desktop/ms725362\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="getbasicerrorinfo"></a> IErrorRecordsImpl::GetBasicErrorInfo
 Returns basic information about the error, such as the return code and provider-specific error number.  
@@ -163,12 +163,12 @@ Returns basic information about the error, such as the return code and provider-
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,  
+STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,  
    ERRORINFO *pErrorInfo);  
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetBasicErrorInfo](https://msdn.microsoft.com/library/ms723907.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="getcustomerrorobject"></a> IErrorRecordsImpl::GetCustomErrorObject
 Returns a pointer to an interface on a custom error object.  
@@ -176,27 +176,27 @@ Returns a pointer to an interface on a custom error object.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,  
+STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,  
    REFIID riid,  
    IUnknown **ppObject);  
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetCustomErrorObject](https://msdn.microsoft.com/library/ms725417.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="geterrorinfo"></a> IErrorRecordsImpl::GetErrorInfo
-Returns an [IErrorInfo](https://msdn.microsoft.com/library/ms718112.aspx) interface pointer on the specified record.  
+Returns an [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) interface pointer on the specified record.  
   
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,  
+STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,  
    LCID lcid,  
    IErrorInfo **ppErrorInfo);  
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/library/ms711230.aspx) in the *OLE DB Programmer's Reference*.
+ See [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="geterrorparameters"></a> IErrorRecordsImpl::GetErrorParameters
 Returns the error parameters.  
@@ -204,12 +204,12 @@ Returns the error parameters.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,  
+STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,  
    DISPPARAMS *pdispparams);  
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/library/ms715793.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="getrecordcount"></a> IErrorRecordsImpl::GetRecordCount
 Returns the number of records in the OLE DB record object.  
@@ -217,11 +217,11 @@ Returns the number of records in the OLE DB record object.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(GetRecordCount )(ULONG *pcRecords);  
+STDMETHOD(GetRecordCount )(ULONG *pcRecords);  
 ```  
   
 #### Parameters  
- See [IErrorRecords::GetRecordCount](https://msdn.microsoft.com/library/ms722724.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IErrorRecords::GetRecordCount](/previous-versions/windows/desktop/ms722724\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="rgerrors"></a> IErrorRecordsImpl::m_rgErrors
 An array of error records.  
@@ -229,10 +229,7 @@ An array of error records.
 ### Syntax  
   
 ```cpp
-CAtlArray<  
-RecordClass  
-> m_rgErrors;  
-  
+CAtlArray< RecordClass > m_rgErrors;  
 ```  
   
 ## See Also  

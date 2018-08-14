@@ -13,22 +13,22 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Mutex::operator= Operator
-Assigns (moves) the specified Mutex object to the current Mutex object.  
+Assigns (moves) the specified **Mutex** object to the current **Mutex** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 Mutex& operator=(  
    _Inout_ Mutex&& h  
 );  
 ```  
   
-#### Parameters  
- `h`  
- An rvalue-reference to a Mutex object.  
+### Parameters  
+ *h*  
+ An rvalue-reference to a **Mutex** object.  
   
 ## Return Value  
- A reference to the current Mutex object.  
+ A reference to the current **Mutex** object.  
   
 ## Remarks  
  For more information, see the **Move Semantics** section of [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  

@@ -39,8 +39,6 @@ The restrictions on symbol names are as follows:
 |Strings|IDS_|String in the string table|  
 |MFC|AFX_|Reserved for predefined MFC symbols|  
   
-
-  
 ## Requirements  
  Win32  
   

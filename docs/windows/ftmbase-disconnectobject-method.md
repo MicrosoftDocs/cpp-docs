@@ -17,14 +17,14 @@ Forcibly releases all external connections to an object. The object's server cal
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHODIMP DisconnectObject(  
    __in DWORD dwReserved  
 ) override;  
 ```  
   
-#### Parameters  
- `dwReserved`  
+### Parameters  
+ *dwReserved*  
  Reserved for future use; must be zero.  
   
 ## Return Value  

@@ -44,8 +44,8 @@ unsigned char _BitScanReverse64(
   
 |Intrinsic|Architecture|Header|  
 |---------------|------------------|------------|  
-|`_BitScanReverse`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
-|`_BitScanReverse64`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]||  
+|`_BitScanReverse`|x86, ARM, x64|\<intrin.h>|  
+|`_BitScanReverse64`|ARM, x64||  
   
 ## Example  
   

@@ -16,7 +16,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 postfix-expression [ expression ]  
 ```  
   
@@ -98,7 +97,7 @@ int main() {
   
  The subscript operator is commutative. Therefore, the expressions *array*[*index*] and *array*[*array*] are guaranteed to be equivalent as long as the subscript operator is not overloaded (see [Overloaded Operators](../cpp/operator-overloading.md)). The first form is the most common coding practice, but either works.  
   
-## See Also  
+## See also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Arrays](../cpp/arrays-cpp.md)   

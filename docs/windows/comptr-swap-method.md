@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::Swap Method
-Exchanges the interface managed by the current ComPtr with the interface managed by the specified ComPtr.  
+Exchanges the interface managed by the current **ComPtr** with the interface managed by the specified **ComPtr**.  
   
 ## Syntax  
   
-```  
+```cpp  
 void Swap(  
    _Inout_ ComPtr&& r  
 );  
@@ -27,9 +27,9 @@ void Swap(
 );  
 ```  
   
-#### Parameters  
- `r`  
- A ComPtr.  
+### Parameters  
+ *r*  
+ A **ComPtr**.  
   
 ## Requirements  
  **Header:** client.h  

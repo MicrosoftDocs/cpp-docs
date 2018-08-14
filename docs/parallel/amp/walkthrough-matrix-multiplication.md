@@ -14,48 +14,49 @@ ms.workload: ["cplusplus"]
 This step-by-step walkthrough demonstrates how to use C++ AMP to accelerate the execution of matrix multiplication. Two algorithms are presented, one without tiling and one with tiling.  
   
 ## Prerequisites  
- Before you start:  
+ 
+Before you start:  
   
--   Read [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md).  
+- Read [C++ AMP Overview](../../parallel/amp/cpp-amp-overview.md).  
   
--   Read [Using Tiles](../../parallel/amp/using-tiles.md).  
+- Read [Using Tiles](../../parallel/amp/using-tiles.md).  
   
--   Make sure that [!INCLUDE[win7](../../build/includes/win7_md.md)], [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] is installed on your computer.  
+- Make sure that Windows 7, [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] is installed on your computer.  
   
 ### To create the project  
   
-1.  On the menu bar in Visual Studio, choose **File**, **New**, **Project**.  
+1. On the menu bar in Visual Studio, choose **File** > **New** > **Project**.  
   
-2.  Under **Installed** in the templates pane, select **Visual C++**.  
+2. Under **Installed** in the templates pane, select **Visual C++**.  
   
-3.  Select **Empty Project**, enter `MatrixMultiply` in the **Name** box, and then choose the **OK** button.  
+3. Select **Empty Project**, enter `MatrixMultiply` in the **Name** box, and then choose the **OK** button.  
   
-4.  Choose the **Next** button.  
+4. Choose the **Next** button.  
   
-5.  In **Solution Explorer**, open the shortcut menu for **Source Files**, and then choose **Add**, **New Item**.  
+5. In **Solution Explorer**, open the shortcut menu for **Source Files**, and then choose **Add** > **New Item**.  
   
-6.  In the **Add New Item** dialog box, select **C++ File (.cpp)**, enter `MatrixMultiply.cpp` in the **Name** box, and then choose the **Add** button.  
+6. In the **Add New Item** dialog box, select **C++ File (.cpp)**, enter `MatrixMultiply.cpp` in the **Name** box, and then choose the **Add** button.  
   
 ## Multiplication without tiling  
- In this section, consider the multiplication of two matrices, A and B, which are defined as follows:  
+ 
+In this section, consider the multiplication of two matrices, A and B, which are defined as follows:  
   
- ![3&#45;by&#45;2 matrix](../../parallel/amp/media/campmatrixanontiled.png "campmatrixanontiled")  
+![3&#45;by&#45;2 matrix](../../parallel/amp/media/campmatrixanontiled.png "campmatrixanontiled")  
   
- ![2&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixbnontiled.png "campmatrixbnontiled")  
+![2&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixbnontiled.png "campmatrixbnontiled")  
   
- A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B is the following 3-by-3 matrix. The product is calculated by multiplying the rows of A by the columns of B element by element.  
+A is a 3-by-2 matrix and B is a 2-by-3 matrix. The product of multiplying A by B is the following 3-by-3 matrix. The product is calculated by multiplying the rows of A by the columns of B element by element.  
   
- ![3&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixproductnontiled.png "campmatrixproductnontiled")  
+![3&#45;by&#45;3 matrix](../../parallel/amp/media/campmatrixproductnontiled.png "campmatrixproductnontiled")  
   
 ### To multiply without using C++ AMP  
   
-1.  Open MatrixMultiply.cpp and use the following code to replace the existing code.  
+1. Open MatrixMultiply.cpp and use the following code to replace the existing code.  
   
 ```cpp  
 #include <iostream>  
   
 void MultiplyWithOutAMP() {  
-  
     int aMatrix[3][2] = {{1, 4}, {2, 5}, {3, 6}};  
     int bMatrix[2][3] = {{7, 8, 9}, {10, 11, 12}};  
     int product[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};  
@@ -80,15 +81,15 @@ void main() {
   
     The algorithm is a straightforward implementation of the definition of matrix multiplication. It does not use any parallel or threaded algorithms to reduce the computation time.  
   
-2.  On the menu bar, choose **File**, **Save All**.  
+2. On the menu bar, choose **File** > **Save All**.  
   
-3.  Choose the F5 keyboard shortcut to start debugging and verify that the output is correct.  
+3. Choose the **F5** keyboard shortcut to start debugging and verify that the output is correct.  
   
-4.  Choose Enter to exit the application.  
+4. Choose **Enter** to exit the application.  
   
 ### To multiply by using C++ AMP  
   
-1.  In MatrixMultiply.cpp, add the following code before the `main` method.  
+1. In MatrixMultiply.cpp, add the following code before the `main` method.  
   
 ```cpp  
 void MultiplyWithAMP() {  
@@ -102,7 +103,6 @@ void MultiplyWithAMP() {
 
     array_view<int, 2> product(3, 3, productMatrix);
 
- 
     parallel_for_each(product.extent,  
         [=] (index<2> idx) restrict(amp) {  
             int row = idx[0];  
@@ -126,14 +126,14 @@ void MultiplyWithAMP() {
   
     The AMP code resembles the non-AMP code. The call to `parallel_for_each` starts one thread for each element in `product.extent`, and replaces the `for` loops for row and column. The value of the cell at the row and column is available in `idx`. You can access the elements of an `array_view` object by using either the `[]` operator and an index variable, or the `()` operator and the row and column variables. The example demonstrates both methods. The `array_view::synchronize` method copies the values of the `product` variable back to the `productMatrix` variable.  
   
-2.  Add the following `include` and `using` statements at the top of MatrixMultiply.cpp.  
+2. Add the following `include` and `using` statements at the top of MatrixMultiply.cpp.  
   
 ```cpp  
 #include <amp.h>  
 using namespace concurrency;  
 ```  
   
-3.  Modify the `main` method to call the `MultiplyWithAMP` method.  
+3. Modify the `main` method to call the `MultiplyWithAMP` method.  
   
 ```cpp  
 void main() {  
@@ -143,53 +143,53 @@ void main() {
 }  
 ```  
   
-4.  Choose the Ctrl+F5 keyboard shortcut to start debugging and verify that the output is correct.  
+4. Choose the **Ctrl**+**F5** keyboard shortcut to start debugging and verify that the output is correct.  
   
-5.  Choose the spacebar to exit the application.  
+5. Choose the **Spacebar** to exit the application.  
   
 ## Multiplication with tiling  
- Tiling is a technique in which you partition data into equal-sized subsets, which are known as tiles. Three things change when you use tiling.  
+ 
+Tiling is a technique in which you partition data into equal-sized subsets, which are known as tiles. Three things change when you use tiling.  
   
--   You can create `tile_static` variables. Access to data in `tile_static` space can be many times faster than access to data in the global space. An instance of a `tile_static` variable is created for each tile, and all threads in the tile have access to the variable. The primary benefit of tiling is the performance gain due to `tile_static` access.  
+- You can create `tile_static` variables. Access to data in `tile_static` space can be many times faster than access to data in the global space. An instance of a `tile_static` variable is created for each tile, and all threads in the tile have access to the variable. The primary benefit of tiling is the performance gain due to `tile_static` access.  
   
--   You can call the [tile_barrier::wait](reference/tile-barrier-class.md#wait) method to stop all of the threads in one tile at a specified line of code. You cannot guarantee the order that the threads will run in, only that all of the threads in one tile will stop at the call to `tile_barrier::wait` before they continue execution.  
+- You can call the [tile_barrier::wait](reference/tile-barrier-class.md#wait) method to stop all of the threads in one tile at a specified line of code. You cannot guarantee the order that the threads will run in, only that all of the threads in one tile will stop at the call to `tile_barrier::wait` before they continue execution.  
 
+- You have access to the index of the thread relative to the entire `array_view` object and the index relative to the tile. By using the local index, you can make your code easier to read and debug.  
   
--   You have access to the index of the thread relative to the entire `array_view` object and the index relative to the tile. By using the local index, you can make your code easier to read and debug.  
+To take advantage of tiling in matrix multiplication, the algorithm must partition the matrix into tiles and then copy the tile data into `tile_static` variables for faster access. In this example, the matrix is partitioned into submatrices of equal size. The product is found by multiplying the submatrices. The two matrices and their product in this example are:  
   
- To take advantage of tiling in matrix multiplication, the algorithm must partition the matrix into tiles and then copy the tile data into `tile_static` variables for faster access. In this example, the matrix is partitioned into submatrices of equal size. The product is found by multiplying the submatrices. The two matrices and their product in this example are:  
+![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixatiled.png "campmatrixatiled")  
   
- ![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixatiled.png "campmatrixatiled")  
+![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixbtiled.png "campmatrixbtiled")  
   
- ![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixbtiled.png "campmatrixbtiled")  
+![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixproducttiled.png "campmatrixproducttiled")  
   
- ![4&#45;by&#45;4 matrix](../../parallel/amp/media/campmatrixproducttiled.png "campmatrixproducttiled")  
+The matrices are partitioned into four 2x2 matrices, which are defined as follows:  
   
- The matrices are partitioned into four 2x2 matrices, which are defined as follows:  
+![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixapartitioned.png "campmatrixapartitioned")  
   
- ![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixapartitioned.png "campmatrixapartitioned")  
+![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixbpartitioned.png "campmatrixbpartitioned")  
   
- ![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixbpartitioned.png "campmatrixbpartitioned")  
+The product of A and B can now be written and calculated as follows:  
   
- The product of A and B can now be written and calculated as follows:  
+![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixproductpartitioned.png "campmatrixproductpartitioned")  
   
- ![4&#45;by&#45;4 matrix partitioned into 2&#45;by&#45;2 sub&#45;matrices](../../parallel/amp/media/campmatrixproductpartitioned.png "campmatrixproductpartitioned")  
+Because matrices `a` through `h` are 2x2 matrices, all of the products and sums of them are also 2x2 matrices. It also follows that A*B is a 4x4 matrix, as expected. To quickly check the algorithm, calculate the value of the element in the first row, first column in the product. In the example, that would be the value of the element in the first row and first column of `ae + bg`. You only have to calculate the first column, first row of `ae` and `bg` for each term. That value for `ae` is `1*1 + 2*5 = 11`. The value for `bg` is `3*1 + 4*5 = 23`. The final value is `11 + 23 = 34`, which is correct.  
   
- Because matrices `a` through `h` are 2x2 matrices, all of the products and sums of them are also 2x2 matrices. It also follows that A*B is a 4x4 matrix, as expected. To quickly check the algorithm, calculate the value of the element in the first row, first column in the product. In the example, that would be the value of the element in the first row and first column of `ae + bg`. You only have to calculate the first column, first row of `ae` and `bg` for each term. That value for `ae` is `1*1 + 2*5 = 11`. The value for `bg` is `3*1 + 4*5 = 23`. The final value is `11 + 23 = 34`, which is correct.  
+To implement this algorithm, the code:  
   
- To implement this algorithm, the code:  
+- Uses a `tiled_extent` object instead of an `extent` object in the `parallel_for_each` call.  
   
--   Uses a `tiled_extent` object instead of an `extent` object in the `parallel_for_each` call.  
+- Uses a `tiled_index` object instead of an `index` object in the `parallel_for_each` call.  
   
--   Uses a `tiled_index` object instead of an `index` object in the `parallel_for_each` call.  
+- Creates `tile_static` variables to hold the submatrices.  
   
--   Creates `tile_static` variables to hold the submatrices.  
-  
--   Uses the `tile_barrier::wait` method to stop the threads for the calculation of the products of the submatrices.  
+- Uses the `tile_barrier::wait` method to stop the threads for the calculation of the products of the submatrices.  
   
 ### To multiply by using AMP and tiling  
   
-1.  In MatrixMultiply.cpp, add the following code before the `main` method.  
+1. In MatrixMultiply.cpp, add the following code before the `main` method.  
   
 ```cpp  
 void MultiplyWithTiling() {  
@@ -262,23 +262,23 @@ void MultiplyWithTiling() {
   
     This example is significantly different than the example without tiling. The code uses these conceptual steps:  
   
-    1.  Copy the elements of tile[0,0] of `a` into `locA`. Copy the elements of tile[0,0] of `b` into `locB`. Notice that `product` is tiled, not `a` and `b`. Therefore, you use global indices to access `a, b`, and `product`. The call to `tile_barrier::wait` is essential. It stops all of the threads in the tile until both `locA` and `locB` are filled.  
+    1. Copy the elements of tile[0,0] of `a` into `locA`. Copy the elements of tile[0,0] of `b` into `locB`. Notice that `product` is tiled, not `a` and `b`. Therefore, you use global indices to access `a, b`, and `product`. The call to `tile_barrier::wait` is essential. It stops all of the threads in the tile until both `locA` and `locB` are filled.  
   
-    2.  Multiply `locA` and `locB` and put the results in `product`.  
+    2. Multiply `locA` and `locB` and put the results in `product`.  
   
-    3.  Copy the elements of tile[0,1] of `a` into `locA`. Copy the elements of tile [1,0] of `b` into `locB`.  
+    3. Copy the elements of tile[0,1] of `a` into `locA`. Copy the elements of tile [1,0] of `b` into `locB`.  
   
-    4.  Multiply `locA` and `locB` and add them to the results that are already in `product`.  
+    4. Multiply `locA` and `locB` and add them to the results that are already in `product`.  
   
-    5.  The multiplication of tile[0,0] is complete.  
+    5. The multiplication of tile[0,0] is complete.  
   
-    6.  Repeat for the other four tiles. There is no indexing specifically for the tiles and the threads can execute in any order. As each thread executes, the `tile_static` variables are created for each tile appropriately and the call to `tile_barrier::wait` controls the program flow.  
+    6. Repeat for the other four tiles. There is no indexing specifically for the tiles and the threads can execute in any order. As each thread executes, the `tile_static` variables are created for each tile appropriately and the call to `tile_barrier::wait` controls the program flow.  
   
-    7.  As you examine the algorithm closely, notice that each submatrix is loaded into a `tile_static` memory twice. That data transfer does take time. However, once the data is in `tile_static` memory, access to the data is much faster. Because calculating the products requires repeated access to the values in the submatrices, there is an overall performance gain. For each algorithm, experimentation is required to find the optimal algorithm and tile size.  
+    7. As you examine the algorithm closely, notice that each submatrix is loaded into a `tile_static` memory twice. That data transfer does take time. However, once the data is in `tile_static` memory, access to the data is much faster. Because calculating the products requires repeated access to the values in the submatrices, there is an overall performance gain. For each algorithm, experimentation is required to find the optimal algorithm and tile size.  
   
          In the non-AMP and non-tile examples, each element of A and B is accessed four times from the global memory to calculate the product. In the tile example, each element is accessed twice from the global memory and four times from the `tile_static` memory. That is not a significant performance gain. However, if the A and B were 1024x1024 matrices and the tile size were 16, there would be a significant performance gain. In that case, each element would be copied into `tile_static` memory only 16 times and accessed from `tile_static` memory 1024 times.  
   
-2.  Modify the main method to call the `MultiplyWithTiling` method, as shown.  
+2. Modify the main method to call the `MultiplyWithTiling` method, as shown.  
   
 ```cpp  
 void main() {  
@@ -289,11 +289,11 @@ void main() {
 }  
 ```  
   
-3.  Choose the Ctrl+F5 keyboard shortcut to start debugging and verify that the output is correct.  
+3. Choose the **Ctrl**+**F5** keyboard shortcut to start debugging and verify that the output is correct.  
   
-4.  Choose the space bar to exit the application.  
+4. Choose the **Space** bar to exit the application.  
   
 ## See Also  
- [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
- [Walkthrough: Debugging a C++ AMP Application](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)
-
+ 
+[C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
+[Walkthrough: Debugging a C++ AMP Application](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)

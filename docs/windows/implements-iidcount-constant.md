@@ -16,7 +16,7 @@ Holds the number of implemented interface IDs.
   
 ## Syntax  
   
-```  
+```cpp  
 static const unsigned long IidCount;  
 ```  
   

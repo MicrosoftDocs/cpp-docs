@@ -4,9 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["CEnumerator", "CEnumerator::Find", "ATL::CEnumerator::Find", "ATL.CEnumerator.Find", "CEnumerator.Find",
-    "GetMoniker", "CEnumerator.GetMoniker", "CEnumerator::GetMoniker", "ATL.CEnumerator.GetMoniker", "ATL::CEnumerator::GetMoniker",
-    "ATL.CEnumerator.Open", "CEnumerator::Open", "ATL::CEnumerator::Open", "CEnumerator.Open"]
+f1_keywords: ["CEnumerator", "CEnumerator::Find", "ATL::CEnumerator::Find", "ATL.CEnumerator.Find", "CEnumerator.Find", "GetMoniker", "CEnumerator.GetMoniker", "CEnumerator::GetMoniker", "ATL.CEnumerator.GetMoniker", "ATL::CEnumerator::GetMoniker", "ATL.CEnumerator.Open", "CEnumerator::Open", "ATL::CEnumerator::Open", "CEnumerator.Open"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CEnumerator class", "Find method", "GetMoniker method", "Open method"]
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
@@ -15,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CEnumerator Class
-Uses an OLE DB enumerator object, which exposes the [ISourcesRowset](https://msdn.microsoft.com/library/ms715969.aspx) interface to return a rowset describing all data sources and enumerators.  
+Uses an OLE DB enumerator object, which exposes the [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) interface to return a rowset describing all data sources and enumerators.  
   
 ## Syntax
 
@@ -46,7 +44,7 @@ Looks for a specified name among available providers.
 ### Syntax  
   
 ```cpp
-      bool Find(TCHAR* szSearchName) throw();  
+bool Find(TCHAR* szSearchName) throw();  
 ```  
   
 #### Parameters  
@@ -57,7 +55,7 @@ Looks for a specified name among available providers.
  **true** if the name was found. Otherwise, **false**.  
   
 ### Remarks  
- This name maps to the `SOURCES_NAME` member of the [ISourcesRowset](https://msdn.microsoft.com/library/ms715969.aspx) interface.  
+ This name maps to the `SOURCES_NAME` member of the [ISourcesRowset](/previous-versions/windows/desktop/ms715969\(v=vs.85\)) interface.  
   
 ## <a name="getmoniker"></a> CEnumerator::GetMoniker
 Parses the display name to extract the component of the string that can be converted into a moniker.  
@@ -66,7 +64,6 @@ Parses the display name to extract the component of the string that can be conve
   
 ```cpp
 HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();  
-
 
 HRESULT GetMoniker(LPMONIKER* ppMoniker,   
    LPCTSTR lpszDisplayName) const throw();  
@@ -83,16 +80,14 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker, 
  A standard HRESULT.  
 
 ## <a name="open"></a> CEnumerator::Open
-Binds the moniker for the enumerator, if one is specified, then retrieves the rowset for the enumerator by calling [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/library/ms711200.aspx).  
+Binds the moniker for the enumerator, if one is specified, then retrieves the rowset for the enumerator by calling [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)).  
   
 ### Syntax  
   
 ```cpp
 HRESULT Open(LPMONIKER pMoniker) throw();  
 
-
 HRESULT Open(const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR) throw();  
-
 
 HRESULT Open(const CEnumerator& enumerator) throw();  
 ```  

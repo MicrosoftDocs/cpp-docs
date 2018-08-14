@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier::~ReleaseNotifier Destructor
-Deinitializes the current instance of the Module::ReleaseNotifier class.  
+Deinitializes the current instance of the **Module::ReleaseNotifier** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW virtual ~ReleaseNotifier();  
 ```  
   

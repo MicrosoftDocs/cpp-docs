@@ -641,7 +641,7 @@ void SetCalendarBorder(int cxyBorder);
 |[in] *cxyBorder*|The width of the border, in pixels.|  
   
 ### Remarks  
- If this method succeeds, the border width is set to the *cxyBorder* parameter. Otherwise, the border width is reset to the default value that is specified by the current [theme](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx), or zero if themes are not used.  
+ If this method succeeds, the border width is set to the *cxyBorder* parameter. Otherwise, the border width is reset to the default value that is specified by the current [theme](/windows/desktop/Controls/visual-styles-overview), or zero if themes are not used.  
   
  This method sends the [MCM_SETCALENDARBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760993) message, which is described in the Windows SDK.  
   
@@ -663,7 +663,7 @@ void SetCalendarBorderDefault();
 ```  
   
 ### Remarks  
- The border width is set to the default value specified by the current [theme](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx), or zero if themes are not used.  
+ The border width is set to the default value specified by the current [theme](/windows/desktop/Controls/visual-styles-overview), or zero if themes are not used.  
   
  This method sends the [MCM_SETCALENDARBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760993) message, which is described in the Windows SDK.  
   

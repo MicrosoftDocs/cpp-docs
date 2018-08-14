@@ -17,7 +17,7 @@ Causes all factories instantiated by the module to shut down.
   
 ## Syntax  
   
-```  
+```cpp  
 void Terminate();  
 ```  
   

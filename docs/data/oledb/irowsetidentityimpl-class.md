@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl", "IsSameRow", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow",            "ATL::IRowsetIdentityImpl::IsSameRow"]
+f1_keywords: ["ATL::IRowsetIdentityImpl", "ATL.IRowsetIdentityImpl", "IRowsetIdentityImpl", "IsSameRow", "IRowsetIdentityImpl.IsSameRow", "ATL.IRowsetIdentityImpl.IsSameRow", "IRowsetIdentityImpl::IsSameRow", "ATL::IRowsetIdentityImpl::IsSameRow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IRowsetIdentityImpl class", "IsSameRow method"]
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetIdentityImpl Class
-Implements the OLE DB [IRowsetIdentity](https://msdn.microsoft.com/library/ms715913.aspx) interface, which enables testing for row identity.  
+Implements the OLE DB [IRowsetIdentity](/previous-versions/windows/desktop/ms715913\(v=vs.85\)) interface, which enables testing for row identity.  
   
 ## Syntax
 
@@ -47,12 +47,12 @@ Compares two row handles to see if they refer to the same row.
 ### Syntax  
   
 ```cpp
-      STDMETHOD(IsSameRow )(HROW hThisRow,  
+STDMETHOD(IsSameRow )(HROW hThisRow,  
    HROW hThatRow);  
 ```  
   
 #### Parameters  
- See [IRowsetIdentity::IsSameRow](https://msdn.microsoft.com/library/ms719629.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
  To compare row handles, this method casts the `HROW` handles to `RowClass` members and calls `memcmp` on the pointers.  

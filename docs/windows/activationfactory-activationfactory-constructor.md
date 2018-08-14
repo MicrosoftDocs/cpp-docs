@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::ActivationFactory Constructor
-Initializes the ActivationFactory class.  
+Initializes the **ActivationFactory** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 ActivationFactory();  
 ```  
   

@@ -13,14 +13,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # requestedit
-Indicates that the property supports the **OnRequestEdit** notification.  
+Indicates that the property supports the `OnRequestEdit` notification.  
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [requestedit]  
-  
 ```  
   
 ## Remarks  
@@ -48,4 +46,4 @@ Indicates that the property supports the **OnRequestEdit** notification.
  [Data Member Attributes](../windows/data-member-attributes.md)   
  [defaultbind](../windows/defaultbind.md)   
  [displaybind](../windows/displaybind.md)   
- [immediatebind](../windows/immediatebind.md)   
+ [immediatebind](../windows/immediatebind.md)   

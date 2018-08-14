@@ -4,10 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["vc.templates.ole", "ATL.AtlTraceErrorRecords", "ATL::AtlTraceErrorRecords", "AtlTraceErrorRecords", "BEGIN_ACCESSOR", "BEGIN_ACCESSOR_MAP", "END_ACCESSOR", "END_ACCESSOR_MAP", "BEGIN_COLUMN_MAP",          "BLOB_ENTRY", "BLOB_ENTRY_LENGTH", "BLOB_ENTRY_LENGTH_STATUS", "BLOB_ENTRY_STATUS", "BLOB_NAME", "BLOB_NAME_LENGTH", "BLOB_NAME_LENGTH_STATUS", "BLOB_NAME_STATUS", "BOOKMARK_ENTRY", "COLUMN_ENTRY",                  "COLUMN_ENTRY_EX", "COLUMN_ENTRY_LENGTH", "COLUMN_ENTRY_LENGTH_STATUS", "COLUMN_ENTRY_PS", "COLUMN_ENTRY_PS_LENGTH", "COLUMN_ENTRY_PS_LENGTH_STATUS", "COLUMN_ENTRY_PS_STATUS", "COLUMN_ENTRY_STATUS",                 "COLUMN_ENTRY_TYPE", "COLUMN_ENTRY_TYPE_SIZE", "COLUMN_NAME", "COLUMN_NAME_EX", "COLUMN_NAME_LENGTH", "COLUMN_NAME_LENGTH_STATUS", "COLUMN_NAME_PS", "COLUMN_NAME_PS_LENGTH", "COLUMN_NAME_PS_LENGTH_STATUS",          "COLUMN_NAME_PS_STATUS", "COLUMN_NAME_STATUS", "COLUMN_NAME_TYPE", "COLUMN_NAME_TYPE_PS", "COLUMN_NAME_TYPE_SIZE", "COLUMN_NAME_TYPE_STATUS", "END_COLUMN_MAP", "DEFINE_COMMAND", "DEFINE_COMMAND_EX",                 "BEGIN_PARAM_MAP", "END_PARAM_MAP", "SET_PARAM_TYPE"]
+f1_keywords: ["vc.templates.ole", "ATL.AtlTraceErrorRecords", "ATL::AtlTraceErrorRecords", "AtlTraceErrorRecords", "BEGIN_ACCESSOR", "BEGIN_ACCESSOR_MAP", "END_ACCESSOR", "END_ACCESSOR_MAP", "BEGIN_COLUMN_MAP", "BLOB_ENTRY", "BLOB_ENTRY_LENGTH", "BLOB_ENTRY_LENGTH_STATUS", "BLOB_ENTRY_STATUS", "BLOB_NAME", "BLOB_NAME_LENGTH", "BLOB_NAME_LENGTH_STATUS", "BLOB_NAME_STATUS", "BOOKMARK_ENTRY", "COLUMN_ENTRY", "COLUMN_ENTRY_EX", "COLUMN_ENTRY_LENGTH", "COLUMN_ENTRY_LENGTH_STATUS", "COLUMN_ENTRY_PS", "COLUMN_ENTRY_PS_LENGTH", "COLUMN_ENTRY_PS_LENGTH_STATUS", "COLUMN_ENTRY_PS_STATUS", "COLUMN_ENTRY_STATUS", "COLUMN_ENTRY_TYPE", "COLUMN_ENTRY_TYPE_SIZE", "COLUMN_NAME", "COLUMN_NAME_EX", "COLUMN_NAME_LENGTH", "COLUMN_NAME_LENGTH_STATUS", "COLUMN_NAME_PS", "COLUMN_NAME_PS_LENGTH", "COLUMN_NAME_PS_LENGTH_STATUS", "COLUMN_NAME_PS_STATUS", "COLUMN_NAME_STATUS", "COLUMN_NAME_TYPE", "COLUMN_NAME_TYPE_PS", "COLUMN_NAME_TYPE_SIZE", "COLUMN_NAME_TYPE_STATUS", "END_COLUMN_MAP", "DEFINE_COMMAND", "DEFINE_COMMAND_EX",      "BEGIN_PARAM_MAP", "END_PARAM_MAP", "SET_PARAM_TYPE"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["OLE DB consumer templates, macros", "macros, OLE DB consumer template", "AtlTraceErrorRecords function", "BEGIN_ACCESSOR macro, syntax", "BEGIN_ACCESSOR macro", "BEGIN_ACCESSOR_MAP macro",
-    "END_ACCESSOR macro", "END_ACCESSOR_MAP macro", "BEGIN_COLUMN_MAP macro", "BLOB_ENTRY macro", "BLOB_ENTRY_LENGTH macro", "BLOB_ENTRY_LENGTH_STATUS macro", "BLOB_ENTRY_STATUS macro", "BLOB_NAME macro", "BLOB_NAME_LENGTH macro", "BLOB_NAME_LENGTH_STATUS macro", "BLOB_NAME_STATUS macro", "BOOKMARK_ENTRY macro", "COLUMN_ENTRY macro", "COLUMN_ENTRY_EX macro", "COLUMN_ENTRY_LENGTH macro", "COLUMN_ENTRY_LENGTH_STATUS macro", "COLUMN_ENTRY_PS macro", "COLUMN_ENTRY_PS_LENGTH macro", "COLUMN_ENTRY_PS_LENGTH_STATUS macro", "COLUMN_ENTRY_PS_STATUS macro", "COLUMN_ENTRY_STATUS macro", "COLUMN_ENTRY_TYPE macro", "COLUMN_ENTRY_TYPE_SIZE macro", "COLUMN_NAME macro", "COLUMN_NAME_EX macro", "COLUMN_NAME_LENGTH macro", "COLUMN_NAME_LENGTH_STATUS macro", "COLUMN_NAME_PS macro", "COLUMN_NAME_PS_LENGTH macro", "COLUMN_NAME_PS_LENGTH_STATUS macro", "COLUMN_NAME_PS_STATUS macro", "COLUMN_NAME_STATUS macro", "COLUMN_NAME_TYPE macro", "COLUMN_NAME_TYPE_PS macro", "COLUMN_NAME_TYPE_SIZE macro", "COLUMN_NAME_TYPE_STATUS macro", "END_COLUMN_MAP macro", "DEFINE_COMMAND macro", "DEFINE_COMMAND_EX macro", "BEGIN_PARAM_MAP macro", "END_PARAM_MAP macro", "SET_PARAM_TYPE macro"]
+helpviewer_keywords: ["OLE DB consumer templates, macros", "macros, OLE DB consumer template", "AtlTraceErrorRecords function", "BEGIN_ACCESSOR macro, syntax", "BEGIN_ACCESSOR macro", "BEGIN_ACCESSOR_MAP macro", "END_ACCESSOR macro", "END_ACCESSOR_MAP macro", "BEGIN_COLUMN_MAP macro", "BLOB_ENTRY macro", "BLOB_ENTRY_LENGTH macro", "BLOB_ENTRY_LENGTH_STATUS macro", "BLOB_ENTRY_STATUS macro", "BLOB_NAME macro", "BLOB_NAME_LENGTH macro", "BLOB_NAME_LENGTH_STATUS macro", "BLOB_NAME_STATUS macro", "BOOKMARK_ENTRY macro", "COLUMN_ENTRY macro", "COLUMN_ENTRY_EX macro", "COLUMN_ENTRY_LENGTH macro", "COLUMN_ENTRY_LENGTH_STATUS macro", "COLUMN_ENTRY_PS macro", "COLUMN_ENTRY_PS_LENGTH macro", "COLUMN_ENTRY_PS_LENGTH_STATUS macro", "COLUMN_ENTRY_PS_STATUS macro", "COLUMN_ENTRY_STATUS macro", "COLUMN_ENTRY_TYPE macro", "COLUMN_ENTRY_TYPE_SIZE macro", "COLUMN_NAME macro", "COLUMN_NAME_EX macro", "COLUMN_NAME_LENGTH macro", "COLUMN_NAME_LENGTH_STATUS macro", "COLUMN_NAME_PS macro", "COLUMN_NAME_PS_LENGTH macro", "COLUMN_NAME_PS_LENGTH_STATUS macro", "COLUMN_NAME_PS_STATUS macro", "COLUMN_NAME_STATUS macro", "COLUMN_NAME_TYPE macro", "COLUMN_NAME_TYPE_PS macro", "COLUMN_NAME_TYPE_SIZE macro", "COLUMN_NAME_TYPE_STATUS macro", "END_COLUMN_MAP macro", "DEFINE_COMMAND macro", "DEFINE_COMMAND_EX macro", "BEGIN_PARAM_MAP macro", "END_PARAM_MAP macro", "SET_PARAM_TYPE macro"]
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
 author: "mikeblome"
 ms.author: "mblome"
@@ -92,7 +91,7 @@ Dumps OLE DB Error Record information to the dump device if an error is returned
 #### Syntax  
   
 ```cpp
-      inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);  
+inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);  
 ```  
   
 #### Parameters  
@@ -200,7 +199,6 @@ Marks the end of an accessor entry.
   
 ```cpp
 END_ACCESSOR()  
-  
 ```  
   
 #### Remarks  
@@ -216,7 +214,6 @@ Marks the end of the accessor map entries.
   
 ```cpp
 END_ACCESSOR_MAP()  
-  
 ```  
   
 #### Remarks  
@@ -230,7 +227,7 @@ Marks the beginning of a column map entry.
   
 #### Syntax  
   
-```  
+```cpp  
 BEGIN_COLUMN_MAP(x)  
 ```  
   
@@ -251,13 +248,12 @@ BEGIN_COLUMN_MAP(x)
  <!--[!CODE [NVC_OLEDB_Consumer#16](../codesnippet/vs_snippets_cpp/nvc_oledb_consumer#16)]  -->
 
 ### <a name="blob_entry"></a> BLOB_ENTRY
-Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)).  
+Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))).  
   
 #### Syntax  
   
 ```cpp
 BLOB_ENTRY(nOrdinal, IID, flags, data)  
-  
 ```  
   
 #### Parameters  
@@ -277,13 +273,12 @@ BLOB_ENTRY(nOrdinal, IID, flags, data)
  See [How Can I Retrieve a BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_entry_length"></a> BLOB_ENTRY_LENGTH
-Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Similar to [BLOB_ENTRY](../../data/oledb/blob-entry.md), except that this macro also gets the length in bytes of the BLOB column.  
+Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Similar to [BLOB_ENTRY](../../data/oledb/blob-entry.md), except that this macro also gets the length in bytes of the BLOB column.  
   
 #### Syntax  
   
 ```cpp
 BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)  
-  
 ```  
   
 #### Parameters  
@@ -306,7 +301,7 @@ BLOB_ENTRY_LENGTH(nOrdinal, IID, flags, data, length)
  See [How Can I Retrieve a BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_entry_length_status"></a> BLOB_ENTRY_LENGTH_STATUS
-Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Similar to [BLOB_ENTRY](../../data/oledb/blob-entry.md), except that this macro also gets the length and status of the BLOB column.  
+Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Similar to [BLOB_ENTRY](../../data/oledb/blob-entry.md), except that this macro also gets the length and status of the BLOB column.  
   
 #### Syntax  
   
@@ -343,13 +338,12 @@ BLOB_ENTRY_LENGTH_STATUS(
  See [How Can I Retrieve a BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_entry_status"></a> BLOB_ENTRY_STATUS
-Used with BEGIN_COLUMN_MAP or BEGIN_ACCESSOR_MAP to bind a binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Similar to [BLOB_ENTRY](../../data/oledb/blob-entry.md), except that this macro also gets the status of the BLOB column.  
+Used with BEGIN_COLUMN_MAP or BEGIN_ACCESSOR_MAP to bind a binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Similar to [BLOB_ENTRY](../../data/oledb/blob-entry.md), except that this macro also gets the status of the BLOB column.  
   
 #### Syntax  
   
 ```cpp
-BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)  
-  
+BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)   
 ```  
   
 #### Parameters  
@@ -372,7 +366,7 @@ BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)
  See [How Can I Retrieve a BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_name"></a> BLOB_NAME
-Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Similar to [BLOB_ENTRY](../../data/oledb/blob-entry.md), except that this macro takes a column name instead of a column number.  
+Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Similar to [BLOB_ENTRY](../../data/oledb/blob-entry.md), except that this macro takes a column name instead of a column number.  
   
 #### Syntax  
   
@@ -397,7 +391,7 @@ BLOB_NAME(pszName, IID, flags, data )
  See [How Can I Retrieve a BLOB?](../../data/oledb/retrieving-a-blob.md).  
 
 ### <a name="blob_name_length"></a> BLOB_NAME_LENGTH
-Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Similar to [BLOB_NAME](../../data/oledb/blob-name.md), except that this macro also gets the length in bytes of the BLOB data column.  
+Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Similar to [BLOB_NAME](../../data/oledb/blob-name.md), except that this macro also gets the length in bytes of the BLOB data column.  
   
 #### Syntax  
   
@@ -422,7 +416,7 @@ BLOB_NAME_LENGTH(pszName, IID, flags, data, length )
  [out] The (actual) length in bytes of the BLOB column.  
 
 ### <a name="blob_name_length_status"></a> BLOB_NAME_LENGTH_STATUS
-Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Similar to [BLOB_NAME](../../data/oledb/blob-name.md), except that this macro also gets the length and status of the BLOB data column.  
+Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Similar to [BLOB_NAME](../../data/oledb/blob-name.md), except that this macro also gets the length and status of the BLOB data column.  
   
 #### Syntax  
   
@@ -450,7 +444,7 @@ BLOB_NAME_LENGTH_STATUS(pszName, IID, flags, data, length, status )
  [out] The status of the BLOB field.  
 
 ### <a name="blob_name_status"></a> BLOB_NAME_STATUS
-Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](https://msdn.microsoft.com/library/ms711511.aspx)). Similar to [BLOB_NAME](../../data/oledb/blob-name.md), except that this macro also gets the status of the BLOB data column.  
+Used with BEGIN_COLUMN_MAP and END_COLUMN_MAP to bind a binary large object ([BLOB](/previous-versions/windows/desktop/ms711511\(v=vs.85\))). Similar to [BLOB_NAME](../../data/oledb/blob-name.md), except that this macro also gets the status of the BLOB data column.  
   
 #### Syntax  
   
@@ -481,7 +475,6 @@ Binds the bookmark column.
   
 ```cpp
 BOOKMARK_ENTRY(variable)  
-  
 ```  
   
 #### Parameters  
@@ -538,7 +531,7 @@ END_COLUMN_MAP()
   
 #### See Also  
  [CBookmark Class](../../data/oledb/cbookmark-class.md)   
- [DBPROP_BOOKMARKS](https://msdn.microsoft.com/library/ms709728.aspx)
+ [DBPROP_BOOKMARKS](/previous-versions/windows/desktop/ms709728\(v=vs.85\))
 
 ### <a name="column_entry"></a> COLUMN_ENTRY
 Represents a binding on the rowset to the specific column in the rowset.  
@@ -547,11 +540,10 @@ Represents a binding on the rowset to the specific column in the rowset.
   
 ```cpp
 COLUMN_ENTRY(nOrdinal, data)  
-  
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] The column number.  
@@ -578,11 +570,10 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, status)  
-  
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] The column number.  
@@ -627,11 +618,10 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_LENGTH(nOrdinal, data, length)  
-  
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] The column number, starting with one. Bookmark corresponds to column zero.  
@@ -658,11 +648,10 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_LENGTH_STATUS(nOrdinal, data, length, status)  
-  
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] The column number.  
@@ -692,11 +681,10 @@ Represents a binding on the rowset to the specific column in the rowset.
   
 ```cpp
 COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)  
-  
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] The column number.  
@@ -726,11 +714,10 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_PS_LENGTH(nOrdinal, nPrecision, nScale, data, length)  
-  
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] The column number, starting with one. Bookmark corresponds to column zero.  
@@ -763,11 +750,10 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status)  
-  
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] The column number.  
@@ -803,11 +789,10 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)  
-  
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] The column number.  
@@ -840,11 +825,10 @@ Represents a binding on the rowset to the specific column in the database.
   
 ```cpp
 COLUMN_ENTRY_STATUS(nOrdinal, data, status)  
-  
 ```  
   
 #### Parameters  
- See [DBBINDING](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*.  
+ See [DBBINDING](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *nOrdinal*  
  [in] The column number.  
@@ -871,7 +855,6 @@ Represents a binding to the specific column in the database. Supports *type* par
   
 ```cpp
 COLUMN_ENTRY_TYPE (nOrdinal, wType, data)  
-  
 ```  
   
 #### Parameters  
@@ -894,7 +877,6 @@ Represents a binding to the specific column in the database. Supports *type* and
   
 ```cpp
 COLUMN_ENTRY_TYPE_SIZE(nOrdinal, wType, nLength, data)  
-  
 ```  
   
 #### Parameters  
@@ -920,7 +902,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME(pszName, data)  
-  
 ```  
   
 #### Parameters  
@@ -983,7 +964,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_LENGTH(pszName, data, length)  
-  
 ```  
   
 #### Parameters  
@@ -1165,7 +1145,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_TYPE(pszName, wType, data)  
-  
 ```  
   
 #### Parameters  
@@ -1188,7 +1167,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_TYPE_PS(pszName, wType, nPrecision, nScale, data)  
-  
 ```  
   
 #### Parameters  
@@ -1217,7 +1195,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_TYPE_SIZE(pszName, wType, nLength, data)  
-  
 ```  
   
 #### Parameters  
@@ -1243,7 +1220,6 @@ Represents a binding on the rowset to the specific column in the rowset. Similar
   
 ```cpp
 COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)  
-  
 ```  
   
 #### Parameters  
@@ -1269,7 +1245,6 @@ Marks the end of the column map entries.
   
 ```cpp
 END_COLUMN_MAP()  
-  
 ```  
   
 #### Remarks  
@@ -1288,7 +1263,6 @@ Specifies the command that will be used to create the rowset when using the [CCo
   
 ```cpp
 DEFINE_COMMAND(x, szCommand)  
-  
 ```  
   
 #### Parameters  
@@ -1313,7 +1287,6 @@ Specifies the command that will be used to create the rowset when using the [CCo
   
 ```cpp
 DEFINE_COMMAND_EX(x, wszCommand)  
-  
 ```  
   
 #### Parameters  
@@ -1338,7 +1311,6 @@ Marks the beginning of the parameter map entries.
   
 ```cpp
 BEGIN_PARAM_MAP(x)  
-  
 ```  
   
 #### Parameters  
@@ -1346,7 +1318,7 @@ BEGIN_PARAM_MAP(x)
  [in] The name of the user record class.  
   
 #### Remarks  
- Parameters are used by [commands](https://msdn.microsoft.com/library/ms724608.aspx).  
+ Parameters are used by [commands](/previous-versions/windows/desktop/ms724608\(v=vs.85\)).  
   
 #### Example  
  See the example for the [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md) macro.  
@@ -1358,7 +1330,6 @@ Marks the end of the parameter map entries.
   
 ```cpp
 END_PARAM_MAP()  
-  
 ```  
   
 #### Example  
@@ -1371,7 +1342,6 @@ Specifies COLUMN_ENTRY macros that follow the SET_PARAM_TYPE macro input, output
   
 ```cpp
 SET_PARAM_TYPE(type)  
-  
 ```  
   
 #### Parameters  
@@ -1379,7 +1349,7 @@ SET_PARAM_TYPE(type)
  [in] The type to set for the parameter.  
   
 #### Remarks  
- Providers support only parameter input/output types that are supported by the underlying data source. The type is a combination of one or more `DBPARAMIO` values (see [DBBINDING Structures](https://msdn.microsoft.com/library/ms716845.aspx) in the *OLE DB Programmer's Reference*):  
+ Providers support only parameter input/output types that are supported by the underlying data source. The type is a combination of one or more `DBPARAMIO` values (see [DBBINDING Structures](/previous-versions/windows/desktop/ms716845\(v=vs.85\)) in the *OLE DB Programmer's Reference*):  
   
 -   `DBPARAMIO_NOTPARAM` The accessor has no parameters. Typically, you set `eParamIO` to this value in row accessors to remind the user that parameters are ignored.  
   

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateSessionImpl Class
-Provides an implementation for the [IDBCreateSession](https://msdn.microsoft.com/library/ms724076.aspx) interface.  
+Provides an implementation for the [IDBCreateSession](/previous-versions/windows/desktop/ms724076\(v=vs.85\)) interface.  
   
 ## Syntax
 
@@ -50,13 +50,13 @@ Creates a new session from the data source object and returns the requested inte
 ### Syntax  
   
 ```cpp
-      STDMETHOD(CreateSession)(IUnknown * pUnkOuter,   
+STDMETHOD(CreateSession)(IUnknown * pUnkOuter,   
    REFIID riid,   
    IUnknown ** ppDBSession);  
 ```  
   
 #### Parameters  
- See [IDBCreateSession::CreateSession](https://msdn.microsoft.com/library/ms714942.aspx) in the *OLE DB Programmer's Reference*.   
+ See [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942\(v=vs.85\)) in the *OLE DB Programmer's Reference*.   
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   

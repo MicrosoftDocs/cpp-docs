@@ -17,27 +17,26 @@ Indicates that the object aggregates the object specified by the CLSID.
   
 ## Syntax  
   
-```  
-  
-      [ aggregates(  
+```cpp  
+[ aggregates(  
    clsid,  
    variable_name  
 ) ]  
 ```  
   
-#### Parameters  
- `clsid`  
+### Parameters  
+ *clsid*  
  Specifies the CLSID of the aggregatable object.  
   
- `variable_name`  
- The name of the variable that is to be inserted. This variable contains the **IUnknown** of the object being aggregated.  
+ *variable_name*  
+ The name of the variable that is to be inserted. This variable contains the `IUnknown` of the object being aggregated.  
   
 ## Remarks  
  When applied to an object, the **aggregates** C++ attribute implements an outer wrapper for the object being aggregated (specified by `clsid`).  
   
- This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if **progid** is applied, **vi_progid** and **coclass** are also applied.  
+ This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if `progid` is applied, `vi_progid` and `coclass` are also applied.  
   
- **ATL Projects**  
+### ATL Projects  
   
  If this attribute is used within a project that uses ATL, the behavior of the attribute changes. First, the following entry is added to the COM map of the target object:  
   
@@ -49,7 +48,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(_m_spAttrXXX, clsid)
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_aggregates.cpp  
 // compile with: /LD  
 #define _ATL_ATTRIBUTES  
@@ -80,9 +79,9 @@ struct CObject : IObject
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|Yes|  
-|**Required attributes**|One or more of the following: **coclass**, **progid**, or **vi_progid**.|  
+|**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|  
 |**Invalid attributes**|None|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
@@ -94,4 +93,3 @@ struct CObject : IObject
  [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)   
  [Aggregatable](http://msdn.microsoft.com/library/windows/desktop/aa366721)   
  [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)   
- 

@@ -44,8 +44,8 @@ unsigned char _bittestandreset64(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_bittestandreset`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_bittestandreset64`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_bittestandreset`|x86, ARM, x64|  
+|`_bittestandreset64`|x64|  
   
  **Header file** \<intrin.h>  
   

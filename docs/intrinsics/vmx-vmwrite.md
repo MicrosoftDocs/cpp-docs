@@ -50,7 +50,7 @@ unsigned char __vmx_vmwrite( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__vmx_vmwrite`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmwrite`|x64|  
   
  **Header file** \<intrin.h>  
   

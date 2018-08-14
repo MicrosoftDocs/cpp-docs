@@ -22,26 +22,24 @@ The following procedure shows you how to align groups of controls.
   
 2.  From the **Format** menu, choose **Align**, and then choose one of the following alignments:  
   
-    -   **Lefts**: aligns the selected controls along their left sides.  
+    -   `Lefts`: aligns the selected controls along their left sides.  
   
-    -   **Centers**: aligns the selected controls horizontally along their center points.  
+    -   `Centers`: aligns the selected controls horizontally along their center points.  
   
-    -   **Rights**: aligns the selected controls along their right sides.  
+    -   `Rights`: aligns the selected controls along their right sides.  
   
-    -   **Tops**: aligns the selected controls along their top edges.  
+    -   `Tops`: aligns the selected controls along their top edges.  
   
-    -   **Middles**: aligns the selected controls vertically along their middle points.  
+    -   `Middles`: aligns the selected controls vertically along their middle points.  
   
-    -   **Bottoms**: aligns the selected controls along their bottom edges.  
+    -   `Bottoms`: aligns the selected controls along their bottom edges.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  
  [Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)   
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls](../mfc/controls-mfc.md)
-

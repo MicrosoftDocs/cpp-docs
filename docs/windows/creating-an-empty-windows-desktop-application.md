@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 # Creating an Empty Windows Desktop Application
 ### To create an empty Windows desktop application  
   
-1.  From the **File** menu, select **New, Project**.  
+1.  From the **File** menu, select **New** > **Project**.  
   
 2.  In the left pane of the **New Project** dialog, click on **Win32** and in the center pane, select **Win32 Console Application**.  
   
@@ -29,4 +29,4 @@ ms.workload: ["cplusplus", "uwp"]
  Next, you can [add files to your empty Visual C++ project](../windows/adding-files-to-an-empty-win32-applications.md).  
   
 ## See Also  
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Deploying Applications](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

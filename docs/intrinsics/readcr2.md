@@ -30,7 +30,7 @@ unsigned __int64 __readcr2(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readcr2`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readcr2`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

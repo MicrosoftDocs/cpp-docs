@@ -20,18 +20,16 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 BSTR Detach( ) throw;  
-  
 ```  
   
 ## Return Value  
  The `BSTR` wrapped by the `_bstr_t`.  
   
 ## Example  
- See [_bstr_t::Assign](../cpp/bstr-t-assign.md) for a example using `Detach`.  
+ See [_bstr_t::Assign](../cpp/bstr-t-assign.md) for a example using **Detach**.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

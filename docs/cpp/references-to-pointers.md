@@ -157,5 +157,5 @@ where:
 Input is from stdin.  
 ```  
   
-## See Also  
+## See also  
  [References](../cpp/references-cpp.md)

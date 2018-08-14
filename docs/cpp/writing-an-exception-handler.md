@@ -28,5 +28,5 @@ Exception handlers are typically used to respond to specific errors. You can use
   
 -   [Restrictions on exception handlers](../cpp/restrictions-on-exception-handlers.md)  
   
-## See Also  
+## See also  
  [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

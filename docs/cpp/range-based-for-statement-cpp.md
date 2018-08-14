@@ -16,7 +16,6 @@ Executes `statement` repeatedly and sequentially for each element in `expression
 ## Syntax  
   
 ```  
-  
 for ( for-range-declaration : expression )  
    statement   
 ```  
@@ -81,7 +80,6 @@ int main()
     cout << endl;  
     cout << "end of vector test" << endl;  
 }  
-  
 ```  
   
  Here is the output:  
@@ -112,7 +110,7 @@ int main()
   
 -   Uses argument-dependent lookup `begin()` and `end()` for anything else.  
   
-## See Also  
+## See also  
  [auto](../cpp/auto-cpp.md)   
  [Iteration Statements](../cpp/iteration-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   

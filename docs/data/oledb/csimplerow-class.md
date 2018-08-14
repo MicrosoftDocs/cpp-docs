@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["CSimpleRow", "ATL::CSimpleRow", "ATL.CSimpleRow", "CSimpleRow::AddRefRow", "AddRefRow", "ATL.CSimpleRow.AddRefRow", "ATL::CSimpleRow::AddRefRow", "CSimpleRow.AddRefRow", "CSimpleRow.Compare",              "CSimpleRow::Compare", "CSimpleRow", "ATL::CSimpleRow::CSimpleRow", "CSimpleRow.CSimpleRow", "ATL.CSimpleRow.CSimpleRow", "CSimpleRow::CSimpleRow", "ATL::CSimpleRow::ReleaseRow", "CSimpleRow::ReleaseRow",            "ReleaseRow", "CSimpleRow.ReleaseRow", "ATL.CSimpleRow.ReleaseRow", "CSimpleRow.m_dwRef", "CSimpleRow::m_dwRef", "CSimpleRow::m_iRowset", "CSimpleRow.m_iRowset"]
+f1_keywords: ["CSimpleRow", "ATL::CSimpleRow", "ATL.CSimpleRow", "CSimpleRow::AddRefRow", "AddRefRow", "ATL.CSimpleRow.AddRefRow", "ATL::CSimpleRow::AddRefRow", "CSimpleRow.AddRefRow", "CSimpleRow.Compare", "CSimpleRow::Compare", "CSimpleRow", "ATL::CSimpleRow::CSimpleRow", "CSimpleRow.CSimpleRow", "ATL.CSimpleRow.CSimpleRow","CSimpleRow::CSimpleRow", "ATL::CSimpleRow::ReleaseRow", "CSimpleRow::ReleaseRow", "ReleaseRow", "CSimpleRow.ReleaseRow", "ATL.CSimpleRow.ReleaseRow", "CSimpleRow.m_dwRef", "CSimpleRow::m_dwRef", "CSimpleRow::m_iRowset", "CSimpleRow.m_iRowset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleRow class", "AddRefRow method", "Compare method", "CSimpleRow class, constructor", "ReleaseRow method", "m_dwRef", "m_iRowset"]
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
@@ -52,7 +52,6 @@ Adds a reference count to an existing row handle in a thread-safe manner.
   
 ```cpp
 DWORD AddRefRow();  
-  
 ```  
 
 ## <a name="compare"></a> CSimpleRow::Compare
@@ -69,7 +68,7 @@ HRESULT Compare(CSimpleRow* pRow);
  A pointer to a `CSimpleRow` object.  
   
 ### Return Value  
- An HRESULT value, usually S_OK, indicating the two rows are the same row instance, or S_FALSE, indicating the two rows are different. See [IRowsetIdentity::IsSameRow](https://msdn.microsoft.com/library/ms719629.aspx) in the *OLE DB Programmer's Reference* for other possible return values. 
+ An HRESULT value, usually S_OK, indicating the two rows are the same row instance, or S_FALSE, indicating the two rows are different. See [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) in the *OLE DB Programmer's Reference* for other possible return values. 
 
 ## <a name="csimplerow"></a> CSimpleRow::CSimpleRow
 The constructor.  
@@ -77,7 +76,7 @@ The constructor.
 ### Syntax  
   
 ```cpp
-      CSimpleRow(DBCOUNTITEM iRowsetCur);  
+CSimpleRow(DBCOUNTITEM iRowsetCur);  
 ```  
   
 #### Parameters  
@@ -94,7 +93,6 @@ Releases rows in a thread-safe manner.
   
 ```cpp
 DWORD ReleaseRow();  
-  
 ```  
 
 ## <a name="dwref"></a> CSimpleRow::m_dwRef
@@ -104,7 +102,6 @@ Reference count to an existing row handle.
   
 ```cpp
 DWORD m_dwRef;  
-  
 ```  
 
 ## <a name="irowset"></a> CSimpleRow::m_iRowset
@@ -114,7 +111,6 @@ Index to the rowset representing the cursor.
   
 ```cpp
 KeyType m_iRowset;  
-  
 ```  
   
 ## See Also  

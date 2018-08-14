@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IConvertTypeImpl Class
-Provides an implementation of the [IConvertType](https://msdn.microsoft.com/library/ms715926.aspx) interface.  
+Provides an implementation of the [IConvertType](/previous-versions/windows/desktop/ms715926\(v=vs.85\)) interface.  
   
 ## Syntax
 
@@ -47,13 +47,13 @@ Gives information on the availability of type conversions on a command or on a r
 ### Syntax  
   
 ```cpp
-      STDMETHOD(CanConvert)(DBTYPE wFromType,   
+STDMETHOD(CanConvert)(DBTYPE wFromType,   
    DBTYPE wToType,   
    DBCONVERTFLAGS dwConvertFlags);  
 ```  
   
 #### Parameters  
- See [IConvertType::CanConvert](https://msdn.microsoft.com/library/ms711224.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IConvertType::CanConvert](/previous-versions/windows/desktop/ms711224\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Remarks  
  Uses OLE DB data conversion in `MSADC.DLL`.  

@@ -16,11 +16,11 @@ This topic applies to the MFC ODBC classes.
   
  This topic explains how to filter a recordset so that it selects only a particular subset of the available records. For example, you might want to select only the class sections for a particular course, such as MATH101. A filter is a search condition defined by the contents of a SQL **WHERE** clause. When the framework appends it to the recordset's SQL statement, the **WHERE** clause constrains the selection.  
   
- You must establish a recordset object's filter after you construct the object but before you call its **Open** member function (or before you call the **Requery** member function for an existing recordset object whose **Open** member function has been called previously).  
+ You must establish a recordset object's filter after you construct the object but before you call its `Open` member function (or before you call the `Requery` member function for an existing recordset object whose `Open` member function has been called previously).  
   
 #### To specify a filter for a recordset object  
   
-1.  Construct a new recordset object (or prepare to call **Requery** for an existing object).  
+1.  Construct a new recordset object (or prepare to call `Requery` for an existing object).  
   
 2.  Set the value of the object's [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) data member.  
   
@@ -41,7 +41,7 @@ This topic applies to the MFC ODBC classes.
   
 3.  Set any other options you need, such as sort order, locking mode, or parameters. Specifying a parameter is especially useful. For information about parameterizing your filter, see [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).  
   
-4.  Call **Open** for the new object (or **Requery** for a previously opened object).  
+4.  Call `Open` for the new object (or `Requery` for a previously opened object).  
   
 > [!TIP]
 >  Using parameters in your filter is potentially the most efficient method for retrieving records.  
@@ -80,7 +80,7 @@ m_strFilter = "StudentID = 100";   // incorrect for some drivers
  The quoting shown above conforms to the ODBC specification, but some DBMSs might require other quote characters. For more information, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).  
   
 > [!NOTE]
->  If you choose to override the recordset's default SQL string by passing your own SQL string to **Open**, you should not set a filter if your custom string has a **WHERE** clause. For more information about overriding the default SQL, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).  
+>  If you choose to override the recordset's default SQL string by passing your own SQL string to `Open`, you should not set a filter if your custom string has a **WHERE** clause. For more information about overriding the default SQL, see [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   

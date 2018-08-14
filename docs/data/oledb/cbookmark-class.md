@@ -4,15 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL.CBookmark", "ATL::CBookmark<nSize>", "CBookmark", "ATL.CBookmark<nSize>", "ATL::CBookmark",
-    "CBookmark<0>.CBookmark<0>", "CBookmark::CBookmark", "ATL.CBookmark.CBookmark", "CBookmark.CBookmark", "CBookmark", "ATL::CBookmark<0>::CBookmark<0>", "ATL.CBookmark<0>.CBookmark<0>", "CBookmark<0>::CBookmark<0>", "ATL::CBookmark::CBookmark",
-    "ATL.CBookmark<0>.GetBuffer", "ATL.CBookmark.GetBuffer", "ATL::CBookmark<0>::GetBuffer", "ATL::CBookmark::GetBuffer", "CBookmark.GetBuffer", "ATL::CBookmark<nSize>::GetBuffer", "ATL.CBookmark<nSize>.GetBuffer", "CBookmark<0>.GetBuffer", "CBookmark<nSize>::GetBuffer", "CBookmark<0>::GetBuffer", "CBookmark<nSize>.GetBuffer", "CBookmark::GetBuffer",
-    "CBookmark::GetSize", "ATL.CBookmark<nSize>.GetSize", "CBookmark<nSize>.GetSize", "CBookmark.GetSize", "ATL::CBookmark::GetSize", "CBookmark<0>::GetSize", "ATL::CBookmark<nSize>::GetSize", "ATL.CBookmark<0>.GetSize", "ATL::CBookmark<0>::GetSize", "ATL.CBookmark.GetSize", "CBookmark<0>.GetSize", "CBookmark<nSize>::GetSize",
-    "CBookmark<0>::SetBookmark", "ATL.CBookmark<0>.SetBookmark", "CBookmark<0>.SetBookmark", "SetBookmark", "ATL::CBookmark::SetBookmark", "ATL::CBookmark<0>::SetBookmark", "CBookmark.SetBookmark", "ATL.CBookmark.SetBookmark", "CBookmark::SetBookmark",
-    "CBookmark<0>::operator=", "CBookmark<0>.operator=", "ATL.CBookmark.operator=", "CBookmark::operator=", "ATL.CBookmark<0>.operator=", "ATL::CBookmark<0>::operator=", "CBookmark.operator=", "ATL::CBookmark::operator="]
+f1_keywords: ["ATL.CBookmark", "ATL::CBookmark<nSize>", "CBookmark", "ATL.CBookmark<nSize>", "ATL::CBookmark", "CBookmark<0>.CBookmark<0>", "CBookmark::CBookmark", "ATL.CBookmark.CBookmark", "CBookmark.CBookmark", "CBookmark", "ATL::CBookmark<0>::CBookmark<0>", "ATL.CBookmark<0>.CBookmark<0>", "CBookmark<0>::CBookmark<0>", "ATL::CBookmark::CBookmark", "ATL.CBookmark<0>.GetBuffer", "ATL.CBookmark.GetBuffer", "ATL::CBookmark<0>::GetBuffer", "ATL::CBookmark::GetBuffer", "CBookmark.GetBuffer", "ATL::CBookmark<nSize>::GetBuffer", "ATL.CBookmark<nSize>.GetBuffer", "CBookmark<0>.GetBuffer", "CBookmark<nSize>::GetBuffer", "CBookmark<0>::GetBuffer", "CBookmark<nSize>.GetBuffer", "CBookmark::GetBuffer", "CBookmark::GetSize", "ATL.CBookmark<nSize>.GetSize", "CBookmark<nSize>.GetSize", "CBookmark.GetSize", "ATL::CBookmark::GetSize", "CBookmark<0>::GetSize", "ATL::CBookmark<nSize>::GetSize", "ATL.CBookmark<0>.GetSize", "ATL::CBookmark<0>::GetSize", "ATL.CBookmark.GetSize", "CBookmark<0>.GetSize", "CBookmark<nSize>::GetSize", "CBookmark<0>::SetBookmark", "ATL.CBookmark<0>.SetBookmark", "CBookmark<0>.SetBookmark", "SetBookmark", "ATL::CBookmark::SetBookmark", "ATL::CBookmark<0>::SetBookmark", "CBookmark.SetBookmark", "ATL.CBookmark.SetBookmark", "CBookmark::SetBookmark", "CBookmark<0>::operator=", "CBookmark<0>.operator=", "ATL.CBookmark.operator=", "CBookmark::operator=", "ATL.CBookmark<0>.operator=", "ATL::CBookmark<0>::operator=", "CBookmark.operator=", "ATL::CBookmark::operator="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CBookmark class", "CBookmark class, constructor", "GetBuffer method", "GetSize method", "SetBookmark method",
-    "= operator, with OLE DB templates", "operator =, bookmarks", "operator=, bookmarks"]
+helpviewer_keywords: ["CBookmark class", "CBookmark class, constructor", "GetBuffer method", "GetSize method", "SetBookmark method", "= operator, with OLE DB templates", "operator =, bookmarks", "operator=, bookmarks"]
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
 author: "mikeblome"
 ms.author: "mblome"
@@ -64,8 +58,8 @@ The constructor.
 ### Syntax  
   
 ```cpp
-      CBookmark();   
-
+CBookmark();
+   
 CBookmark(DBLENGTH nSize);  
 ```  
   
@@ -86,7 +80,6 @@ Retrieves the pointer to the bookmark buffer.
   
 ```cpp
 virtual BYTE* GetBuffer() const throw();  
-  
 ```  
   
 ### Return Value  
@@ -99,7 +92,6 @@ Retrieves the size of the bookmark buffer.
   
 ```cpp
 virtual DBLENGTH GetSize() const throw();  
-  
 ```  
   
 ### Return Value  
@@ -110,9 +102,8 @@ Copies the bookmark value referenced by *pBuffer* to the `CBookmark` buffer and 
   
 ### Syntax  
   
-```
-HRESULT SetBookmark(DBLENGTH nSize,  
-  BYTE* pBuffer) throw();  
+```cpp
+HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();  
 ```  
   
 #### Parameters  
@@ -134,7 +125,7 @@ Assigns a `CBookmark` object to another.
 ### Syntax  
   
 ```cpp
-      CBookmark& operator =(const CBookmark& bookmark) throw();  
+CBookmark& operator =(const CBookmark& bookmark) throw();  
 ```  
   
 ### Remarks  

@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 bool operator==(  
    const VARIANT& varSrc) const;  
 bool operator==(  
@@ -46,5 +45,5 @@ bool operator!=(
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)

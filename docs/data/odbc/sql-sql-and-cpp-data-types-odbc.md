@@ -23,8 +23,8 @@ ms.workload: ["cplusplus", "data-storage"]
 |------------------------|---------------------|  
 |**CHAR**|`CString`|  
 |**DECIMAL**|`CString` 1|  
-|**SMALLINT**|`int`|  
-|`REAL`|**float**|  
+|**SMALLINT**|**int**|  
+|**REAL**|**float**|  
 |**INTEGER**|**long**|  
 |**FLOAT**|**double**|  
 |**DOUBLE**|**double**|  
@@ -38,16 +38,16 @@ ms.workload: ["cplusplus", "data-storage"]
 |**VARBINARY**|`CByteArray`|  
 |**LONGVARBINARY**|`CLongBinary`, `CByteArray` 3|  
 |**DATE**|`CTime`, `CString`|  
-|**TIME**|**CTime, CString**|  
-|**TIMESTAMP**|**CTime, CString**|  
+|**TIME**|`CTime`, `CString`|  
+|**TIMESTAMP**|`CTime`, `CString`|  
   
  1. ANSI **DECIMAL** and **NUMERIC** map to `CString` because **SQL_C_CHAR** is the default ODBC transfer type.  
   
- 2. Character data beyond 255 characters is truncated by default when mapped to `CString`. You can extend the truncation length by explicitly setting the `nMaxLength` argument of `RFX_Text`.  
+ 2. Character data beyond 255 characters is truncated by default when mapped to `CString`. You can extend the truncation length by explicitly setting the *nMaxLength* argument of `RFX_Text`.  
   
- 3. Binary data beyond 255 characters is truncated by default when mapped to `CByteArray`. You can extend the truncation length by explicitly setting the `nMaxLength` argument of `RFX_Binary`.  
+ 3. Binary data beyond 255 characters is truncated by default when mapped to `CByteArray`. You can extend the truncation length by explicitly setting the *nMaxLength* argument of `RFX_Binary`.  
   
- If you are not using the ODBC cursor library, you might encounter a problem when attempting to update two or more long variable-length fields using the Microsoft SQL Server ODBC driver and the MFC ODBC database classes. The ODBC types, **SQL_LONGVARCHAR** and **SQL_LONGVARBINARY**, map to text and image SQL Server types. A `CDBException` is thrown if you update two or more long variable-length fields on the same call to `CRecordset::Update`. Therefore, do not update multiple long columns simultaneously with `CRecordset::Update`. You can update multiple long columns simultaneously with the ODBC API **SQLPutData**. You can also use the ODBC cursor library, but this is not recommended for drivers, like the SQL Server driver, that support cursors and do not need the cursor library.  
+ If you are not using the ODBC cursor library, you might encounter a problem when attempting to update two or more long variable-length fields using the Microsoft SQL Server ODBC driver and the MFC ODBC database classes. The ODBC types, **SQL_LONGVARCHAR** and **SQL_LONGVARBINARY**, map to text and image SQL Server types. A `CDBException` is thrown if you update two or more long variable-length fields on the same call to `CRecordset::Update`. Therefore, do not update multiple long columns simultaneously with `CRecordset::Update`. You can update multiple long columns simultaneously with the ODBC API `SQLPutData`. You can also use the ODBC cursor library, but this is not recommended for drivers, like the SQL Server driver, that support cursors and do not need the cursor library.  
   
  If you are using the ODBC cursor library with the MFC ODBC database classes and the Microsoft SQL Server ODBC driver, an **ASSERT** might occur along with a `CDBException` if a call to `CRecordset::Update` follows a call to `CRecordset::Requery`. Instead, call `CRecordset::Close` and `CRecordset::Open` rather than `CRecordset::Requery`. Another solution is not to use the ODBC cursor library, because the SQL Server and the SQL Server ODBC driver provide native support for cursors natively and the ODBC cursor library is not needed.  
   

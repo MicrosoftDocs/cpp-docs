@@ -102,7 +102,7 @@ This document describes some of the key points to keep in mind when you use the 
   
  [!code-cpp[concrt-windowsstore-primes#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_3.cpp)]  
   
- Each method first performs validation to ensure that that the input parameters are non-negative. If an input value is negative, the method throws [Platform::InvalidArgumentException](http://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx). Error handling is explained later in this section.  
+ Each method first performs validation to ensure that the input parameters are non-negative. If an input value is negative, the method throws [Platform::InvalidArgumentException](http://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx). Error handling is explained later in this section.  
   
  To consume these methods from a UWP app, use the Visual C# **Blank App (XAML)** template to add a second project to the Visual Studio solution. This example names the project `Primes`. Then, from the `Primes` project, add a reference to the `PrimesLibrary` project.  
   

@@ -20,10 +20,10 @@ A generic class that allows you to specify restrictions for schema rowsets.
 ```cpp
 template <class T, short nRestrictions, const GUID* pguid>  
 class CRestrictions : 
-        public CSchemaRowset <T, nRestrictions>  
+   public CSchemaRowset <T, nRestrictions>  
 ```  
   
-#### Parameters  
+### Parameters  
  *T*  
  The class used for the accessor.  
   
@@ -77,7 +77,7 @@ HRESULT Open(const CSession& session,
 ### Remarks  
  You can specify a maximum of seven restrictions on a schema rowset.  
   
- See [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) for information about the defined restrictions on each schema rowset.  
+ See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) for information about the defined restrictions on each schema rowset.  
   
 ## See Also  
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   

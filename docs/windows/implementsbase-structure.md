@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 struct ImplementsBase;  
 ```  
   
 ## Remarks  
  Used to validate template parameter types in [Implements Structure](../windows/implements-structure.md).  
   
- The ImplementsBase structure is empty by design.  
+ The **ImplementsBase** structure is empty by design.  
   
 ## Inheritance Hierarchy  
  `ImplementsBase`  

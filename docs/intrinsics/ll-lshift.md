@@ -40,7 +40,7 @@ unsigned __int64 __ll_lshift(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__ll_lshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ll_lshift`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

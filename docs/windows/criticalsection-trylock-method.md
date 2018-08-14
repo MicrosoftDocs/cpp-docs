@@ -17,7 +17,7 @@ Attempts to enter a critical section without blocking. If the call is successful
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLock TryLock();  
   
 static SyncLock TryLock(  
@@ -25,8 +25,8 @@ static SyncLock TryLock(
 );  
 ```  
   
-#### Parameters  
- `cs`  
+### Parameters  
+ *cs*  
  A user-specified critical section object.  
   
 ## Return Value  

@@ -14,9 +14,9 @@ ms.workload: ["cplusplus"]
 # Compiling and Linking Multithread Programs
 The Bounce.c program is introduced in [Sample Multithread C Program](../parallel/sample-multithread-c-program.md).  
   
- Programs are compiled multithreaded by default.  
+Programs are compiled multithreaded by default.  
   
-#### To compile and link the multithread program Bounce.c from within the development environment  
+### To compile and link the multithread program Bounce.c from within the development environment  
   
 1.  On the **File** menu, click **New**, and then click **Project**.  
   
@@ -28,7 +28,7 @@ The Bounce.c program is introduced in [Sample Multithread C Program](../parallel
   
 5.  On the **Build** menu, build the project by clicking the **Build** command.  
   
-#### To compile and link the multithread program Bounce.c from the command line  
+### To compile and link the multithread program Bounce.c from the command line  
   
 1.  Compile and link the program:  
   
@@ -36,5 +36,6 @@ The Bounce.c program is introduced in [Sample Multithread C Program](../parallel
     CL BOUNCE.C  
     ```  
   
-## See Also  
- [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+## See Also
+
+[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)

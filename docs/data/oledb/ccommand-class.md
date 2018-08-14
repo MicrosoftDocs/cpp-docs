@@ -4,15 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::CCommand", "CCommand", "ATL.CCommand", "CCommand.Close", "CCommand::Close", "CCommand.Create", "CCommand::Create",
-    "CCommand.CreateCommand", "CreateCommand", "CCommand::CreateCommand",
-    "ATL::CCommand::GetNextResult", "CCommand::GetNextResult", "GetNextResult", "CCommand.GetNextResult", "ATL.CCommand.GetNextResult",
-    "GetParameterInfo", "CCommand.GetParameterInfo", "CCommand::GetParameterInfo", "ATL.CCommand.Open", "ATL::CCommand::Open", "CCommand.Open", "CCommand::Open",
-    "CCommand.Prepare", "CCommand::Prepare", "Prepare", "CCommand.ReleaseCommand", "ReleaseCommand", "CCommand::ReleaseCommand",
-    "SetParameterInfo", "CCommand.SetParameterInfo", "CCommand::SetParameterInfo", "Unprepare", "CCommand.Unprepare", "CCommand::Unprepare"]
+f1_keywords: ["ATL::CCommand", "CCommand", "ATL.CCommand", "CCommand.Close", "CCommand::Close", "CCommand.Create", "CCommand::Create", "CCommand.CreateCommand", "CreateCommand", "CCommand::CreateCommand", "ATL::CCommand::GetNextResult", "CCommand::GetNextResult", "GetNextResult", "CCommand.GetNextResult", "ATL.CCommand.GetNextResult", "GetParameterInfo", "CCommand.GetParameterInfo", "CCommand::GetParameterInfo", "ATL.CCommand.Open", "ATL::CCommand::Open", "CCommand.Open", "CCommand::Open", "CCommand.Prepare", "CCommand::Prepare", "Prepare", "CCommand.ReleaseCommand", "ReleaseCommand", "CCommand::ReleaseCommand", "SetParameterInfo", "CCommand.SetParameterInfo", "CCommand::SetParameterInfo", "Unprepare", "CCommand.Unprepare", "CCommand::Unprepare"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CCommand class", "Close method", "Create method [C++]", "CreateCommand method", "GetNextResult method", "GetParameterInfo method", "Open method",
-    "Prepare method", "ReleaseCommand method", "SetParameterInfo method", "Unprepare method"]
+helpviewer_keywords: ["CCommand class", "Close method", "Create method [C++]", "CreateCommand method", "GetNextResult method", "GetParameterInfo method", "Open method", "Prepare method", "ReleaseCommand method", "SetParameterInfo method", "Unprepare method"]
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
 author: "mikeblome"
 ms.author: "mblome"
@@ -25,12 +19,12 @@ Provides methods to set and execute a command.
 
 ```cpp
 template <class TAccessor = CNoAccessor,  
-          template <typename T> class TRowset = CRowset,  
-          class TMultiple = CNoMultipleResults>  
+   template <typename T> class TRowset = CRowset,  
+   class TMultiple = CNoMultipleResults>  
 class CCommand :   
-           public CAccessorRowset <TAccessor, TRowset>,  
-           public CCommandBase,  
-           public TMultiple  
+   public CAccessorRowset <TAccessor, TRowset>,  
+   public CCommandBase,  
+   public TMultiple  
 ```  
   
 ### Parameters  
@@ -41,7 +35,7 @@ class CCommand :
  The type of rowset class (such as `CArrayRowset` or `CNoRowset`) that you want the command to use. The default is `CRowset`.  
   
  *TMultiple*  
- To use an OLE DB command that can return multiple results, specify [CMultipleResults](../../data/oledb/cmultipleresults-class.md). Otherwise, use [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md). For details, see [IMultipleResults](https://msdn.microsoft.com/library/ms721289.aspx).  
+ To use an OLE DB command that can return multiple results, specify [CMultipleResults](../../data/oledb/cmultipleresults-class.md). Otherwise, use [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md). For details, see [IMultipleResults](/previous-versions/windows/desktop/ms721289\(v=vs.85\)).  
 
 ## Requirements  
  **Header:** atldbcli.h  
@@ -102,7 +96,7 @@ Fetches the next result set if one is available.
 ### Syntax  
   
 ```cpp
-HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected,  
+HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected, 
    bool bBind = true) throw();  
 ```  
   
@@ -135,7 +129,6 @@ HRESULT Open(const CSession& session,
    bool bBind = true,  
    ULONG ulPropSets = 0) throw();  
 
-
 HRESULT Open(const CSession& session,  
    LPCSTR szCommand,  
    DBPROPSET *pPropSet = NULL,  
@@ -144,7 +137,6 @@ HRESULT Open(const CSession& session,
    bool bBind = true,  
    ULONG ulPropSets = 0) throw();  
 
-
 HRESULT Open(const CSession& session,  
    INT szCommand = NULL,  
    DBPROPSET *pPropSet = NULL,  
@@ -152,7 +144,6 @@ HRESULT Open(const CSession& session,
    REFGUID guidCommand = DBGUID_DEFAULT,  
    bool bBind = true,  
    ULONG ulPropSets = 0) throw();  
-
 
 HRESULT Open(DBPROPSET *pPropSet = NULL,  
    DBROWCOUNT* pRowsAffected = NULL,  
@@ -165,13 +156,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
  [in] The session in which to execute the command.  
   
  *wszCommand*  
- [in] The command to execute, passed as a Unicode string. Can be NULL when using `CAccessor`, in which case the command will be retrieved from the value passed to the [DEFINE_COMMAND](../../data/oledb/define-command.md) macro. See [ICommand::Execute](https://msdn.microsoft.com/library/ms718095.aspx) in the *OLE DB Programmer's Reference* for details.  
+ [in] The command to execute, passed as a Unicode string. Can be NULL when using `CAccessor`, in which case the command will be retrieved from the value passed to the [DEFINE_COMMAND](../../data/oledb/define-command.md) macro. See [ICommand::Execute](/previous-versions/windows/desktop/ms718095\(v=vs.85\)) in the *OLE DB Programmer's Reference* for details.  
   
  *szCommand*  
  [in] Same as *wszCommand* except that this parameter takes an ANSI command string. The fourth form of this method can take a NULL value. See "Remarks" later in this topic for details.  
   
  *pPropSet*  
- [in] A pointer to an array of [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) structures containing properties and values to be set. See [Property Sets and Property Groups](https://msdn.microsoft.com/library/ms713696.aspx) in the *OLE DB Programmer's Reference* in the Windows SDK.  
+ [in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK.  
   
  *pRowsAffected*  
  [in/out] A pointer to memory where the count of rows affected by a command is returned. If *\*pRowsAffected* is NULL, no row count is returned. Otherwise, `Open` sets *\*pRowsAffected* according to the following conditions:  
@@ -183,13 +174,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 |The command does not update, delete, or insert rows|*\*pRowsAffected* is undefined.|  
   
  *guidCommand*  
- [in] A GUID that specifies the syntax and general rules for the provider to use in parsing the command text. See [ICommandText::GetCommandText](https://msdn.microsoft.com/library/ms709825.aspx) and [ICommandText::SetCommandText](https://msdn.microsoft.com/library/ms709757.aspx) in the *OLE DB Programmer's Reference* for details.  
+ [in] A GUID that specifies the syntax and general rules for the provider to use in parsing the command text. See [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) and [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757\(v=vs.85\)) in the *OLE DB Programmer's Reference* for details.  
   
  *bBind*  
  [in] Specifies whether to bind the command automatically after being executed. The default is **true**, which causes the command to be bound automatically. Setting *bBind* to **false** prevents the automatic binding of the command so that you can bind manually. (Manual binding is of particular interest to OLAP users.)  
   
  *ulPropSets*  
- [in] The number of [DBPROPSET](https://msdn.microsoft.com/library/ms714367.aspx) structures passed in the *pPropSet* argument.  
+ [in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures passed in the *pPropSet* argument.  
   
 ### Return Value  
  A standard HRESULT.  
@@ -209,7 +200,7 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 >  `Open` calls `Execute`, which in turn calls `GetNextResult`. 
 
 ## <a name="create"></a> CCommand::Create
-Calls [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) to create a command for the specified session, then calls [ICommandText::SetCommandText](https://msdn.microsoft.com/library/ms709825.aspx) to specify the command text.  
+Calls [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) to create a command for the specified session, then calls [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) to specify the command text.  
   
 ### Syntax  
   
@@ -217,7 +208,6 @@ Calls [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) to c
 HRESULT CCommandBase::Create(const CSession& session,   
    LPCWSTR wszCommand,   
    REFGUID guidCommand = DBGUID_DEFAULT) throw ();  
-
 
 HRESULT CCommandBase::Create(const CSession& session,   
    LPCSTR szCommand,   
@@ -235,7 +225,7 @@ HRESULT CCommandBase::Create(const CSession& session,
  [in] A pointer to the ANSI text of the command string.  
   
  *guidCommand*  
- [in] A GUID that specifies the syntax and general rules for the provider to use in parsing the command text. For a description of dialects, see [ICommandText::GetCommandText](https://msdn.microsoft.com/library/ms709825.aspx) in the *OLE DB Programmer's Reference*.  
+ [in] A GUID that specifies the syntax and general rules for the provider to use in parsing the command text. For a description of dialects, see [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT.  
@@ -274,7 +264,7 @@ HRESULT CCommandBase::GetParameterInfo(DB_UPARAMS* pParams,
 ```  
   
 #### Parameters  
- See [ICommandWithParameters::GetParameterInfo](https://msdn.microsoft.com/library/ms714917.aspx) in the *OLE DB Programmer's Reference*.  
+ See [ICommandWithParameters::GetParameterInfo](/previous-versions/windows/desktop/ms714917\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT.   
@@ -296,7 +286,7 @@ HRESULT CCommandBase::Prepare(ULONG cExpectedRuns = 0) throw();
  A standard HRESULT.  
   
 ### Remarks  
- This method wraps the OLE DB method [ICommandPrepare::Prepare](https://msdn.microsoft.com/library/ms718370.aspx).  
+ This method wraps the OLE DB method [ICommandPrepare::Prepare](/previous-versions/windows/desktop/ms718370\(v=vs.85\)).  
 
 ## <a name="releasecommand"></a> CCommand::ReleaseCommand
 Releases the parameter accessor, then releases the command itself.  
@@ -305,7 +295,6 @@ Releases the parameter accessor, then releases the command itself.
   
 ```cpp
 void CCommandBase::ReleaseCommand() throw();  
-  
 ```  
   
 ### Remarks  
@@ -323,7 +312,7 @@ HRESULT CCommandBase::SetParameterInfo(DB_UPARAMS ulParams,
 ```  
   
 #### Parameters  
- See [ICommandWithParameters::SetParameterInfo](https://msdn.microsoft.com/library/ms725393.aspx) in the *OLE DB Programmer's Reference*.  
+ See [ICommandWithParameters::SetParameterInfo](/previous-versions/windows/desktop/ms725393\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ### Return Value  
  A standard HRESULT.  
@@ -335,14 +324,13 @@ Discards the current command execution plan.
   
 ```cpp
 HRESULT CCommandBase::Unprepare() throw();  
-  
 ```  
   
 ### Return Value  
  A standard HRESULT.  
   
 ### Remarks  
- This method wraps the OLE DB method [ICommandPrepare::Unprepare](https://msdn.microsoft.com/library/ms719635.aspx). 
+ This method wraps the OLE DB method [ICommandPrepare::Unprepare](/previous-versions/windows/desktop/ms719635\(v=vs.85\)). 
   
 ## See Also  
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   

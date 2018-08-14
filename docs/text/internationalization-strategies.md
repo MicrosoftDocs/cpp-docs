@@ -22,7 +22,7 @@ Depending on your target operating systems and markets, you have several interna
   
      You use MBCS-specific functionality. Strings can contain single-byte characters, double-byte characters, or both. The C run-time library provides functions, macros, and data types for MBCS-only programming. MFC is fully MBCS-enabled.  
   
--   The source code for your application is written for complete portability — by recompiling with the symbol **_UNICODE** or the symbol **_MBCS** defined, you can produce versions that use either. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).  
+-   The source code for your application is written for complete portability — by recompiling with the symbol `_UNICODE` or the symbol `_MBCS` defined, you can produce versions that use either. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).  
   
      You use fully portable C run-time functions, macros, and data types. MFC's flexibility supports any of these strategies.  
   

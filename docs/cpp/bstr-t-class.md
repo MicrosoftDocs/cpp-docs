@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _bstr_t Class
 **Microsoft Specific**  
   
- A `_bstr_t` object encapsulates the [BSTR data type](http://msdn.microsoft.com/1b2d7d2c-47af-4389-a6b6-b01b7e915228). The class manages resource allocation and deallocation through function calls to `SysAllocString` and `SysFreeString` and other `BSTR` APIs when appropriate. The `_bstr_t` class uses reference counting to avoid excessive overhead.  
+ A `_bstr_t` object encapsulates the [BSTR data type](/previous-versions/windows/desktop/automat/bstr). The class manages resource allocation and deallocation through function calls to `SysAllocString` and `SysFreeString` and other `BSTR` APIs when appropriate. The **_bstr_t** class uses reference counting to avoid excessive overhead.  
   
 ### Construction  
   
@@ -53,5 +53,5 @@ ms.workload: ["cplusplus"]
   
  **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   
-## See Also  
+## See also  
  [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)

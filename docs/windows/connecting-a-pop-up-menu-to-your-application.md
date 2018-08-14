@@ -18,7 +18,7 @@ ms.workload: ["cplusplus", "uwp"]
   
 2.  Add the following code to the message handler:  
   
-    ```  
+    ```cpp  
     CMenu menu;  
     VERIFY(menu.LoadMenu(IDR_MENU1));  
     CMenu* pPopup = menu.GetSubMenu(0);  
@@ -27,12 +27,9 @@ ms.workload: ["cplusplus", "uwp"]
     ```  
   
     > [!NOTE]
-    >  The [CPoint](../atl-mfc-shared/reference/cpoint-class.md) **passed by the message handler is in screen coordinates.**  
+    >  The [CPoint](../atl-mfc-shared/reference/cpoint-class.md) passed by the message handler is in screen coordinates.  
   
-
-  
- **Requirements**  
-  
+## Requirements  
  MFC  
   
 ## See Also  

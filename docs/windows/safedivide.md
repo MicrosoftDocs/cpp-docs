@@ -17,7 +17,7 @@ Divides two numbers in a way that protects against dividing by zero.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeDivide (  
    T t,  
@@ -26,18 +26,18 @@ inline bool SafeDivide (
 ) throw ();  
 ```  
   
-#### Parameters  
- [in] `t`  
+### Parameters  
+ [in] *t*  
  The divisor. This must be of type T.  
   
- [in] `u`  
+ [in] *u*  
  The dividend. This must be of type U.  
   
- [out] `result`  
- The parameter where `SafeDivide` stores the result.  
+ [out] *result*  
+ The parameter where **SafeDivide** stores the result.  
   
 ## Return Value  
- `true` if no error occurs; `false` if an error occurs.  
+ **true** if no error occurs; **false** if an error occurs.  
   
 ## Remarks  
  This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single division operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  

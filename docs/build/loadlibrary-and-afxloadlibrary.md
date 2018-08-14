@@ -35,7 +35,7 @@ If Windows cannot load the DLL, the process can attempt to recover from the erro
 
 ## What do you want to know more about?
 
-- [Dynamic-Link Library Search Order](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx)
+- [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
 - [FreeLibrary and AfxFreeLibrary](../build/freelibrary-and-afxfreelibrary.md)
 

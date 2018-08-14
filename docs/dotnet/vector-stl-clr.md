@@ -4,29 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["cliext::vector", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", 
-"cliext::operator>", "cliext::operator>=", "cliext::vector::assign", "cliext::vector::at", 
-"cliext::vector::back", "cliext::vector::back_item", "cliext::vector::begin", "cliext::vector::capacity", 
-"cliext::vector::clear", "cliext::vector::const_iterator", "cliext::vector::const_reference", "cliext::vector::const_reverse_iterator", 
-"cliext::vector::difference_type", "cliext::vector::empty", "cliext::vector::end", "cliext::vector::erase", 
-"cliext::vector::front", "cliext::vector::front_item", "cliext::vector::generic_container", "cliext::vector::generic_iterator", 
-"cliext::vector::generic_reverse_iterator", "cliext::vector::generic_value", "cliext::vector::insert", "cliext::vector::iterator", 
-"cliext::vector::operator=", "cliext::vector::operator", "cliext::vector::pop_back", "cliext::vector::push_back", 
-"cliext::vector::rbegin", "cliext::vector::reference", "cliext::vector::rend", "cliext::vector::reserve", 
-"cliext::vector::resize", "cliext::vector::reverse_iterator", "cliext::vector::size", "cliext::vector::size_type", 
-"cliext::vector::swap", "cliext::vector::to_array", "cliext::vector::value_type", "cliext::vector::vector" ]
+f1_keywords: ["cliext::vector", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", "cliext::operator>", "cliext::operator>=", "cliext::vector::assign", "cliext::vector::at", "cliext::vector::back", "cliext::vector::back_item", "cliext::vector::begin", "cliext::vector::capacity", "cliext::vector::clear", "cliext::vector::const_iterator", "cliext::vector::const_reference", "cliext::vector::const_reverse_iterator", "cliext::vector::difference_type", "cliext::vector::empty", "cliext::vector::end", "cliext::vector::erase", "cliext::vector::front", "cliext::vector::front_item", "cliext::vector::generic_container", "cliext::vector::generic_iterator", "cliext::vector::generic_reverse_iterator", "cliext::vector::generic_value", "cliext::vector::insert", "cliext::vector::iterator", "cliext::vector::operator=", "cliext::vector::operator", "cliext::vector::pop_back", "cliext::vector::push_back", "cliext::vector::rbegin", "cliext::vector::reference", "cliext::vector::rend", "cliext::vector::reserve", "cliext::vector::resize", "cliext::vector::reverse_iterator", "cliext::vector::size", "cliext::vector::size_type", "cliext::vector::swap", "cliext::vector::to_array", "cliext::vector::value_type", "cliext::vector::vector" ]
 dev_langs: ["C++"]
-helpviewer_keywords: ["vector class [STL/CLR]", "<cliext/vector> header [STL/CLR]", "<vector> header [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", 
-    "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> (vector) member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", "at member [STL/CLR]", 
-    "back member [STL/CLR]", "back_item member [STL/CLR]", "begin member [STL/CLR]", "capacity member [STL/CLR]", 
-    "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", 
-    "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "erase member [STL/CLR]", 
-    "front member [STL/CLR]", "front_item member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", 
-    "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", 
-    "operator= member [STL/CLR]", "operator member [STL/CLR]", "pop_back member [STL/CLR]", "push_back member [STL/CLR]", 
-    "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rend member [STL/CLR]", "reserve member [STL/CLR]", 
-    "resize member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", 
-    "swap member [STL/CLR]", "to_array member [STL/CLR]", "value_type member [STL/CLR]", "vector member [STL/CLR]"]
+helpviewer_keywords: ["vector class [STL/CLR]", "<cliext/vector> header [STL/CLR]", "<vector> header [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> (vector) member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", "at member [STL/CLR]", "back member [STL/CLR]", "back_item member [STL/CLR]", "begin member [STL/CLR]", "capacity member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "erase member [STL/CLR]", "front member [STL/CLR]", "front_item member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "operator= member [STL/CLR]", "operator member [STL/CLR]", "pop_back member [STL/CLR]", "push_back member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rend member [STL/CLR]", "reserve member [STL/CLR]", "resize member [STL/CLR]", "reverse_iterator member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "value_type member [STL/CLR]", "vector member [STL/CLR]"]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
 author: "mikeblome"
 ms.author: "mblome"
@@ -35,11 +15,11 @@ ms.workload: ["cplusplus", "dotnet"]
 # vector (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has random access. You use the container `vector` to manage a sequence of elements as a contiguous block of storage. The block is implemented as an array that grows on demand.  
   
- In the description below, `GValue` is the same as `Value` unless the latter is a ref type, in which case it is `Value^`.  
+ In the description below, `GValue` is the same as *Value* unless the latter is a ref type, in which case it is `Value^`.  
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename Value>  
     ref class vector  
         :   public  
@@ -54,7 +34,7 @@ template<typename Value>
 ```  
   
 ### Parameters  
- Value  
+ *Value*  
  The type of an element in the controlled sequence.  
   
 ## Requirements  
@@ -133,7 +113,7 @@ template<typename Value>
 |IVector<Value\>|Maintain generic container.|  
   
 ## Remarks  
- The object allocates and frees storage for the sequence it controls through a stored array of `Value` elements, which grows on demand. Growth occurs in such a way that the cost of appending a new element is amortized constant time. In other words, the cost of adding elements at the end does not increase, on average, as the length of the controlled sequence gets larger. Thus, a vector is a good candidate for the underlying container for template class [stack (STL/CLR)](../dotnet/stack-stl-clr.md).  
+ The object allocates and frees storage for the sequence it controls through a stored array of *Value* elements, which grows on demand. Growth occurs in such a way that the cost of appending a new element is amortized constant time. In other words, the cost of adding elements at the end does not increase, on average, as the length of the controlled sequence gets larger. Thus, a vector is a good candidate for the underlying container for template class [stack (STL/CLR)](../dotnet/stack-stl-clr.md).  
   
  A `vector` supports random-access iterators, which means you can refer to an element directly given its numerical position, counting from zero for the first (front) element, to `size() - 1` for the last (back) element. It also means that a vector is a good candidate for the underlying container for template class [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md).  
   
@@ -150,7 +130,7 @@ Replaces all elements.
   
 ### Syntax  
   
-```  
+```cpp  
 void assign(size_type count, value_type val);  
 template<typename InIt>  
     void assign(InIt first, InIt last);  
@@ -158,27 +138,27 @@ void assign(System::Collections::Generic::IEnumerable<Value>^ right);
 ```  
   
 #### Parameters  
- count  
+ *count*  
  Number of elements to insert.  
   
- first  
+ *first*  
  Beginning of range to insert.  
   
- last  
+ *last*  
  End of range to insert.  
   
- right  
+ *right*  
  Enumeration to insert.  
   
- val  
+ *val*  
  Value of the element to insert.  
   
 ### Remarks  
- The first member function replaces the controlled sequence with a repetition of `count` elements of value `val`. You use it to fill the container with elements all having the same value.  
+ The first member function replaces the controlled sequence with a repetition of *count* elements of value *val*. You use it to fill the container with elements all having the same value.  
   
  If `InIt` is an integer type, the second member function behaves the same as `assign((size_type)first, (value_type)last)`. Otherwise, it replaces the controlled sequence with the sequence [`first`, `last`). You use it to make the controlled sequence a copy another sequence.  
   
- The third member function replaces the controlled sequence with the sequence designated by the enumerator `right`. You use it to make the controlled sequence a copy of a sequence described by an enumerator.  
+ The third member function replaces the controlled sequence with the sequence designated by the enumerator *right*. You use it to make the controlled sequence a copy of a sequence described by an enumerator.  
   
 ### Example  
   
@@ -214,8 +194,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -229,16 +208,16 @@ Accesses an element at a specified position.
   
 ### Syntax  
   
-```  
+```cpp  
 reference at(size_type pos);  
 ```  
   
 #### Parameters  
- pos  
+ *pos*  
  Position of element to access.  
   
 ### Remarks  
- The member function returns a reference to the element of the controlled sequence at position `pos`. You use it to read or write an element whose position you know.  
+ The member function returns a reference to the element of the controlled sequence at position *pos*. You use it to read or write an element whose position you know.  
   
 ### Example  
   
@@ -266,7 +245,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -279,7 +257,7 @@ Accesses the last element.
   
 ### Syntax  
   
-```  
+```cpp  
 reference back();  
 ```  
   
@@ -315,7 +293,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -329,7 +306,7 @@ Accesses the last element.
   
 ### Syntax  
   
-```  
+```cpp  
 property value_type back_item;  
 ```  
   
@@ -365,7 +342,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -379,7 +355,7 @@ Designates the beginning of the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator begin();  
 ```  
   
@@ -418,7 +394,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -433,7 +408,7 @@ Reports the size of allocated storage for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type capacity();  
 ```  
   
@@ -468,7 +443,6 @@ int main()
         c1.capacity(), cap + 5 <= c1.capacity());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -482,7 +456,7 @@ Removes all elements.
   
 ### Syntax  
   
-```  
+```cpp  
 void clear();  
 ```  
   
@@ -491,7 +465,7 @@ void clear();
   
 ### Example  
   
-```  
+```cpp  
 // cliext_vector_clear.cpp   
 // compile with: /clr   
 #include <cliext/vector>   
@@ -523,7 +497,6 @@ int main()
     System::Console::WriteLine("size() = {0}", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -538,7 +511,7 @@ The type of a constant iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T2 const_iterator;  
 ```  
   
@@ -566,7 +539,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -578,7 +550,7 @@ The type of a constant reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
@@ -609,7 +581,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -621,7 +592,7 @@ The type of a constant reverse iterator for the controlled sequence..
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T4 const_reverse_iterator;  
 ```  
   
@@ -650,7 +621,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -662,7 +632,7 @@ The types of a signed distance between two elements.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
@@ -701,7 +671,6 @@ int main()
     System::Console::WriteLine("begin()-end() = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -715,7 +684,7 @@ Tests whether no elements are present.
   
 ### Syntax  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
@@ -749,7 +718,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -765,7 +733,7 @@ Designates the end of the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator end();  
 ```  
   
@@ -805,7 +773,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -820,23 +787,23 @@ Removes elements at specified positions.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator erase(iterator where);  
 iterator erase(iterator first, iterator last);  
 ```  
   
 #### Parameters  
- first  
+ *first*  
  Beginning of range to erase.  
   
- last  
+ *last*  
  End of range to erase.  
   
- where  
+ *where*  
  Element to erase.  
   
 ### Remarks  
- The first member function removes the element of the controlled sequence pointed to by `where`. You use it to remove a single element.  
+ The first member function removes the element of the controlled sequence pointed to by *where*. You use it to remove a single element.  
   
  The second member function removes the elements of the controlled sequence in the range [`first`, `last`). You use it to remove zero or more contiguous elements.  
   
@@ -880,8 +847,7 @@ int main()
         *c1.erase(c1.begin(), --it));   
     System::Console::WriteLine("size() = {0}", c1.size());   
     return (0);   
-    }  
-  
+    }    
 ```  
   
 ```Output  
@@ -897,7 +863,7 @@ Accesses the first element.
   
 ### Syntax  
   
-```  
+```cpp  
 reference front();  
 ```  
   
@@ -933,7 +899,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -947,7 +912,7 @@ Accesses the first element.
   
 ### Syntax  
   
-```  
+```cpp  
 property value_type front_item;  
 ```  
   
@@ -983,7 +948,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -997,7 +961,7 @@ The type of the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::  
     IVector<generic_value>  
     generic_container;  
@@ -1047,7 +1011,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1062,7 +1025,7 @@ The type of an iterator for use with the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::Generic::  
     ContainerRandomAccessIterator<generic_value>  
     generic_iterator;  
@@ -1105,7 +1068,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1119,7 +1081,7 @@ The type of a reverse iterator for use with the generic interface for the contai
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::Generic::  
     ReverseRandomAccessIterator<generic_value> generic_reverse_iterator;  
 ```  
@@ -1161,7 +1123,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1175,7 +1136,7 @@ The type of an element for use with the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
@@ -1216,7 +1177,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1230,7 +1190,7 @@ Adds elements at a specified position.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator insert(iterator where, value_type val);  
 void insert(iterator where, size_type count, value_type val);  
 template<typename InIt>  
@@ -1240,34 +1200,34 @@ void insert(iterator where,
 ```  
   
 #### Parameters  
- count  
+ *count*  
  Number of elements to insert.  
   
- first  
+ *first*  
  Beginning of range to insert.  
   
- last  
+ *last*  
  End of range to insert.  
   
- right  
+ *right*  
  Enumeration to insert.  
   
- val  
+ *val*  
  Value of the element to insert.  
   
- where  
+ *where*  
  Where in container to insert before.  
   
 ### Remarks  
- Each of the member functions inserts, before the element pointed to by `where` in the controlled sequence, a sequence specified by the remaining operands.  
+ Each of the member functions inserts, before the element pointed to by *where* in the controlled sequence, a sequence specified by the remaining operands.  
   
- The first member function inserts an element with value `val` and returns an iterator that designates the newly inserted element. You use it to insert a single element before a place designated by an iterator.  
+ The first member function inserts an element with value *val* and returns an iterator that designates the newly inserted element. You use it to insert a single element before a place designated by an iterator.  
   
- The second member function inserts a repetition of `count` elements of value `val`. You use it to insert zero or more contiguous elements which are all copies of the same value.  
+ The second member function inserts a repetition of *count* elements of value *val*. You use it to insert zero or more contiguous elements which are all copies of the same value.  
   
  If `InIt` is an integer type, the third member function behaves the same as `insert(where, (size_type)first, (value_type)last)`. Otherwise, it inserts the sequence [`first`, `last`). You use it to insert zero or more contiguous elements copied from another sequence.  
   
- The fourth member function inserts the sequence designated by the `right`. You use it to insert a sequence described by an enumerator.  
+ The fourth member function inserts the sequence designated by the *right*. You use it to insert a sequence described by an enumerator.  
   
  When inserting a single element, the number of element copies is linear in the number of elements between the insertion point and the nearer end of the sequence. (When inserting one or more elements at either end of the sequence, no element copies occur.) If `InIt` is an input iterator, the third member function effectively performs a single insertion for each element in the sequence. Otherwise, when inserting `N` elements, the number of element copies is linear in `N` plus the number of elements between the insertion point and the nearer end of the sequence.  
   
@@ -1320,7 +1280,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1337,7 +1296,7 @@ The type of an iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T1 iterator;  
 ```  
   
@@ -1372,7 +1331,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1385,16 +1343,16 @@ Replaces the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 vector<Value>% operator=(vector<Value>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container to copy.  
   
 ### Remarks  
- The member operator copies `right` to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in `right`.  
+ The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.  
   
 ### Example  
   
@@ -1423,7 +1381,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1436,16 +1393,16 @@ Accesses an element at a specified position.
   
 ### Syntax  
   
-```  
+```cpp  
 reference operator[](size_type pos);  
 ```  
   
 #### Parameters  
- pos  
+ *pos*  
  Position of element to access.  
   
 ### Remarks  
- The member operator returns a referene to the element at position `pos`. You use it to access an element whose position you know.  
+ The member operator returns a referene to the element at position *pos*. You use it to access an element whose position you know.  
   
 ### Example  
   
@@ -1473,7 +1430,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1486,7 +1442,7 @@ Removes the last element.
   
 ### Syntax  
   
-```  
+```cpp  
 void pop_back();  
 ```  
   
@@ -1519,7 +1475,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1532,7 +1487,7 @@ Adds a new last element.
   
 ### Syntax  
   
-```  
+```cpp  
 void push_back(value_type val);  
 ```  
   
@@ -1559,7 +1514,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1571,7 +1525,7 @@ Designates the beginning of the reversed controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 reverse_iterator rbegin();  
 ```  
   
@@ -1610,7 +1564,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1625,7 +1578,7 @@ The type of a reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
@@ -1666,7 +1619,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1679,7 +1631,7 @@ Designates the end of the reversed controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 reverse_iterator rend();  
 ```  
   
@@ -1719,7 +1671,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1734,16 +1685,16 @@ Ensures a minimum growth capacity for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 void reserve(size_type count);  
 ```  
   
 #### Parameters  
- count  
+ *count*  
  New minimum capacity of the container.  
   
 ### Remarks  
- The member function ensures that `capacity()` henceforth returns at least `count`. You use it to ensure that the container need not reallocate storage for the controlled sequence until it has grown to the specified size.  
+ The member function ensures that `capacity()` henceforth returns at least *count*. You use it to ensure that the container need not reallocate storage for the controlled sequence until it has grown to the specified size.  
   
 ### Example  
   
@@ -1773,7 +1724,6 @@ int main()
         c1.capacity(), cap + 5 <= c1.capacity());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1787,20 +1737,20 @@ Changes the number of elements.
   
 ### Syntax  
   
-```  
+```cpp  
 void resize(size_type new_size);  
 void resize(size_type new_size, value_type val);  
 ```  
   
 #### Parameters  
- new_size  
+ *new_size*  
  New size of the controlled sequence.  
   
- val  
+ *val*  
  Value of the padding element.  
   
 ### Remarks  
- The member functions both ensure that [vector::size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`()` henceforth returns `new_size`. If it must make the controlled sequence longer, the first member function appends elements with value `value_type()`, while the second member function appends elements with value `val`. To make the controlled sequence shorter, both member functions effectively erase the last element [vector::size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`() -` `new_size` times. You use it to ensure that the controlled sequence has size `new_size`, by either trimming or padding the current controlled sequence.  
+ The member functions both ensure that [vector::size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`()` henceforth returns *new_size*. If it must make the controlled sequence longer, the first member function appends elements with value `value_type()`, while the second member function appends elements with value *val*. To make the controlled sequence shorter, both member functions effectively erase the last element [vector::size (STL/CLR)](../dotnet/vector-size-stl-clr.md)`() -` `new_size` times. You use it to ensure that the controlled sequence has size *new_size*, by either trimming or padding the current controlled sequence.  
   
 ### Example  
   
@@ -1830,7 +1780,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1845,7 +1794,7 @@ The type of a reverse iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T3 reverse_iterator;  
 ```  
   
@@ -1880,7 +1829,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1893,7 +1841,7 @@ Counts the number of elements.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
@@ -1930,7 +1878,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1945,7 +1892,7 @@ The type of a signed distance between two elements.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
@@ -1976,7 +1923,6 @@ int main()
     System::Console::WriteLine("end()-begin() = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1989,16 +1935,16 @@ Swaps the contents of two containers.
   
 ### Syntax  
   
-```  
+```cpp  
 void swap(vector<Value>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container to swap contents with.  
   
 ### Remarks  
- The member function swaps the controlled sequences between `*this` and `right`. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.  
+ The member function swaps the controlled sequences between `*this` and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.  
   
 ### Example  
   
@@ -2036,7 +1982,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2051,7 +1996,7 @@ Copies the controlled sequence to a new array.
   
 ### Syntax  
   
-```  
+```cpp  
 cli::array<Value>^ to_array();  
 ```  
   
@@ -2086,7 +2031,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2099,12 +2043,12 @@ The type of an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Value value_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Value`.  
+ The type is a synonym for the template parameter *Value*.  
   
 ### Example  
   
@@ -2131,7 +2075,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2143,7 +2086,7 @@ Constructs a container object.
   
 ### Syntax  
   
-```  
+```cpp  
 vector();  
 vector(vector<Value>% right);  
 vector(vector<Value>^ right);  
@@ -2155,19 +2098,19 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
 ```  
   
 #### Parameters  
- count  
+ *count*  
  Number of elements to insert.  
   
- first  
+ *first*  
  Beginning of range to insert.  
   
- last  
+ *last*  
  End of range to insert.  
   
- right  
+ *right*  
  Object or range to insert.  
   
- val  
+ *val*  
  Value of the element to insert.  
   
 ### Remarks  
@@ -2181,25 +2124,25 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `vector(vector<Value>% right);`  
   
- initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object `right`.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object *right*.  
   
  The constructor:  
   
  `vector(vector<Value>^ right);`  
   
- initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object whose handle is `right`.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`). You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the vector object whose handle is *right*.  
   
  The constructor:  
   
  `explicit vector(size_type count);`  
   
- initializes the controlled sequence with `count` elements each with value `value_type()`. You use it to fill the container with elements all having the default value.  
+ initializes the controlled sequence with *count* elements each with value `value_type()`. You use it to fill the container with elements all having the default value.  
   
  The constructor:  
   
  `vector(size_type count, value_type val);`  
   
- initializes the controlled sequence with `count` elements each with value `val`. You use it to fill the container with elements all having the same value.  
+ initializes the controlled sequence with *count* elements each with value *val*. You use it to fill the container with elements all having the same value.  
   
  The constructor:  
   
@@ -2213,7 +2156,7 @@ vector(System::Collections::Generic::IEnumerable<Value>^ right);
   
  `vector(System::Collections::Generic::IEnumerable<Value>^ right);`  
   
- initializes the controlled sequence with the sequence designated by the enumerator `right`. You use it to make the controlled sequence a copy of another sequence described by an enumerator.  
+ initializes the controlled sequence with the sequence designated by the enumerator *right*. You use it to make the controlled sequence a copy of another sequence described by an enumerator.  
   
 ### Example  
   
@@ -2268,7 +2211,6 @@ int main()
   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2293,14 +2235,14 @@ template<typename Value>
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(left == right)`. You use it to test whether `left` is not ordered the same as `right` when the two vectors are compared element by element.  
+ The operator function returns `!(left == right)`. You use it to test whether *left* is not ordered the same as *right* when the two vectors are compared element by element.  
   
 ### Example  
   
@@ -2338,7 +2280,6 @@ int main()
         c1 != c2);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2353,21 +2294,21 @@ Vector less than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value>  
     bool operator<(vector<Value>% left,  
         vector<Value>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->size() < right->size()` You use it to test whether `left` is ordered before `right` when the two vectors are compared element by element.  
+ The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->size() < right->size()` You use it to test whether *left* is ordered before *right* when the two vectors are compared element by element.  
   
 ### Example  
   
@@ -2405,7 +2346,6 @@ int main()
         c1 < c2);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2420,21 +2360,21 @@ Vector less than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value>  
     bool operator<=(vector<Value>% left,  
         vector<Value>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(right < left)`. You use it to test whether `left` is not ordered after `right` when the two vectors are compared element by element.  
+ The operator function returns `!(right < left)`. You use it to test whether *left* is not ordered after *right* when the two vectors are compared element by element.  
   
 ### Example  
   
@@ -2472,7 +2412,6 @@ int main()
         c2 <= c1);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2487,21 +2426,21 @@ Vector equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value>  
     bool operator==(vector<Value>% left,  
         vector<Value>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns true only if the sequences controlled by `left` and `right` have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether `left` is ordered the same as `right` when the two vectors are compared element by element.  
+ The operator function returns true only if the sequences controlled by *left* and *right* have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether *left* is ordered the same as *right* when the two vectors are compared element by element.  
   
 ### Example  
   
@@ -2539,7 +2478,6 @@ int main()
         c1 == c2);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2554,21 +2492,21 @@ Vector greater than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value>  
     bool operator>(vector<Value>% left,  
         vector<Value>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `right` `<` `left`. You use it to test whether `left` is ordered after `right` when the two vectors are compared element by element.  
+ The operator function returns `right` `<` `left`. You use it to test whether *left* is ordered after *right* when the two vectors are compared element by element.  
   
 ### Example  
   
@@ -2606,7 +2544,6 @@ int main()
         c2 > c1);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2621,21 +2558,21 @@ Vector greater than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value>  
     bool operator>=(vector<Value>% left,  
         vector<Value>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(left < right)`. You use it to test whether `left` is not ordered before `right` when the two vectors are compared element by element.  
+ The operator function returns `!(left < right)`. You use it to test whether *left* is not ordered before *right* when the two vectors are compared element by element.  
   
 ### Example  
   
@@ -2673,7 +2610,6 @@ int main()
         c1 >= c2);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
