@@ -658,7 +658,7 @@ void SetTaskbarTabProperties(DWORD dwFlags);
   
 ### Parameters  
  *dwFlags*  
- A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTabProperties](http://msdn.microsoft.com/library/dd562049\(vs.85\).aspx).  
+ A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTabProperties](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-itaskbarlist4-settabproperties).  
   
 ### Remarks  
   

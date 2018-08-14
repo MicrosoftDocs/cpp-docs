@@ -303,10 +303,12 @@ COLORREF SetBarColor(COLORREF clrBar);
 |[in] *clrBar*|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that specifies the new color of the progress indicator bar. Specify CLR_DEFAULT to cause the progress bar to use its default color.|  
   
 ### Return Value  
- The previous color of the progress indicator bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or CLR_DEFAULT if the color of the progress indicator bar is the default color.  
+
+The previous color of the progress indicator bar, represented as a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value, or CLR_DEFAULT if the color of the progress indicator bar is the default color.  
   
 ### Remarks  
- The `SetBarColor` method sets the progress bar color only if a Windows Vista[theme](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx) is not in effect.  
+
+The `SetBarColor` method sets the progress bar color only if a Windows Vista [theme](/windows/desktop/Controls/visual-styles-overview) is not in effect.  
   
  This method sends the [PBM_SETBARCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760838) message, which is described in the Windows SDK.  
   

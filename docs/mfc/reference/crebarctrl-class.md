@@ -238,7 +238,7 @@ BOOL DeleteBand(UINT uBand);
  [!code-cpp[NVC_MFC_CReBarCtrl#4](../../mfc/reference/codesnippet/cpp/crebarctrl-class_2.cpp)]  
   
 ##  <a name="dragmove"></a>  CReBarCtrl::DragMove  
- Implements the behavior of the Win32 message [RB_DRAGMOVE](https://msdn.microsoft.com/library/bb774433.aspx), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_DRAGMOVE](/windows/desktop/Controls/rb-dragmove), as described in the Windows SDK.  
   
 ```  
 void DragMove(DWORD dwPos = (DWORD)-1);
