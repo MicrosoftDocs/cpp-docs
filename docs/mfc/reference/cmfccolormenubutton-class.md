@@ -60,7 +60,7 @@ class CMFCColorMenuButton : public CMFCToolBarMenuButton
 ## Remarks  
  To replace the original menu command or toolbar button with a `CMFCColorMenuButton` object, create the `CMFCColorMenuButton` object, set any appropriate [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md) styles, and then call the `ReplaceButton` method of the [CMFCToolBar Class](../../mfc/reference/cmfctoolbar-class.md) class. If you customize a toolbar, call the [CMFCToolBarsCustomizeDialog::ReplaceButton](../../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton) method.  
   
- The color picker dialog box is created during the processing of the [CMFCColorMenuButton::CreatePopupMenu](#createpopupmenu) event handler. The event handler notifies the parent frame with a `WM_COMMAND` message. The `CMFCColorMenuButton` object sends the control ID that is assigned to the original menu command or toolbar button.  
+ The color picker dialog box is created during the processing of the [CMFCColorMenuButton::CreatePopupMenu](#createpopupmenu) event handler. The event handler notifies the parent frame with a WM_COMMAND message. The `CMFCColorMenuButton` object sends the control ID that is assigned to the original menu command or toolbar button.  
   
 ## Example  
  The following example demonstrates how to create and configure a color menu button by using various methods in the `CMFCColorMenuButton` class. In the example, a `CPalette` object is first created and then used to construct an object of the `CMFCColorMenuButton` class. The `CMFCColorMenuButton` object is then configured by enabling its automatic and other buttons, and setting its color and the number of columns. This code is part of the [Word Pad sample](../../visual-cpp-samples.md).  
@@ -174,7 +174,7 @@ void EnableDocumentColors(
  Specifies the button text.  
   
  [in] *bEnable*  
- `TRUE` to display document-specific colors or `FALSE` to display system colors.  
+ TRUE to display document-specific colors or FALSE to display system colors.  
   
 ### Remarks  
  Use this method to display the current document colors or the system palette colors when the user clicks a color menu button.  
@@ -194,10 +194,10 @@ void EnableOtherButton(
  Specifies the button text.  
   
  [in] *bAltColorDlg*  
- Specify `TRUE` to display the `CMFCColorDialog` dialog box, or `FALSE` to display the standard system color dialog box.  
+ Specify TRUE to display the `CMFCColorDialog` dialog box, or FALSE to display the standard system color dialog box.  
   
  [in] *bEnable*  
- Specify `TRUE` to display the "other" button; otherwise, `FALSE`. The default is `TRUE`.  
+ Specify TRUE to display the "other" button; otherwise, FALSE. The default is TRUE.  
   
 ### Remarks  
   
@@ -318,19 +318,19 @@ virtual void OnDraw(
  Points to a list of toolbar images.  
   
  [in] *bHorz*  
- `TRUE` to specify that the toolbar is in a horizontal docked state; otherwise, `FALSE`. The default is `TRUE`.  
+ TRUE to specify that the toolbar is in a horizontal docked state; otherwise, FALSE. The default is TRUE.  
   
  [in] *bCustomizeMode*  
- `TRUE` to specify that the application is in customization mode; otherwise, `FALSE`. The default is `FALSE`.  
+ TRUE to specify that the application is in customization mode; otherwise, FALSE. The default is FALSE.  
   
  [in] *bHighlight*  
- `TRUE` to specify that the button is highlighted; otherwise, `FALSE`. The default is `FALSE`.  
+ TRUE to specify that the button is highlighted; otherwise, FALSE. The default is FALSE.  
   
  [in] *bDrawBorder*  
- `TRUE` to specify that the button's border is displayed; otherwise, `FALSE`. The default is `TRUE`.  
+ TRUE to specify that the button's border is displayed; otherwise, FALSE. The default is TRUE.  
   
  [in] *bGrayDisabledButtons*  
- `TRUE` to specify that disabled buttons are grayed (dimmed) out; otherwise, `FALSE`. The default is `TRUE`.  
+ TRUE to specify that disabled buttons are grayed (dimmed) out; otherwise, FALSE. The default is TRUE.  
   
 ### Remarks  
   
@@ -352,7 +352,7 @@ virtual int OnDrawOnCustomizeList(
  A rectangle that bounds the button to be drawn.  
   
  [in] *bSelected*  
- `TRUE` specifies that the button is in selected state; otherwise, `FALSE`.  
+ TRUE specifies that the button is in selected state; otherwise, FALSE.  
   
 ### Return Value  
  The width of the button.  
@@ -396,7 +396,7 @@ virtual void SetColor(
  An RGB color value.  
   
  [in] *bNotify*  
- `TRUE` to apply the *clr* parameter color to any associated menu button or toolbar button; otherwise, `FALSE`.  
+ TRUE to apply the *clr* parameter color to any associated menu button or toolbar button; otherwise, FALSE.  
   
 ### Remarks  
  Call this method to change the color of the current color button. If the *bNotify* parameter is nonzero, the color of the corresponding button on any associated popup menu or toolbar is changed to the color specified by the *clr* parameter.  

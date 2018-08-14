@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComSafeArray Class
-This class is a wrapper for the **SAFEARRAY** structure.  
+This class is a wrapper for the `SAFEARRAY` structure.  
   
 ## Syntax  
   
@@ -23,7 +23,7 @@ class CComSafeArray
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to be stored in the array.  
   
 ## Members  
@@ -39,13 +39,13 @@ class CComSafeArray
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSafeArray::Add](#add)|Adds one or more elements, or a **SAFEARRAY** structure, to a `CComSafeArray`.|  
-|[CComSafeArray::Attach](#attach)|Attaches a **SAFEARRAY** structure to a `CComSafeArray` object.|  
-|[CComSafeArray::CopyFrom](#copyfrom)|Copies the contents of a **SAFEARRAY** structure into the `CComSafeArray` object.|  
+|[CComSafeArray::Add](#add)|Adds one or more elements, or a `SAFEARRAY` structure, to a `CComSafeArray`.|  
+|[CComSafeArray::Attach](#attach)|Attaches a `SAFEARRAY` structure to a `CComSafeArray` object.|  
+|[CComSafeArray::CopyFrom](#copyfrom)|Copies the contents of a `SAFEARRAY` structure into the `CComSafeArray` object.|  
 |[CComSafeArray::CopyTo](#copyto)|Creates a copy of the `CComSafeArray` object.|  
 |[CComSafeArray::Create](#create)|Creates a `CComSafeArray` object.|  
 |[CComSafeArray::Destroy](#destroy)|Destroys a `CComSafeArray` object.|  
-|[CComSafeArray::Detach](#detach)|Detaches a **SAFEARRAY** from a `CComSafeArray` object.|  
+|[CComSafeArray::Detach](#detach)|Detaches a `SAFEARRAY` from a `CComSafeArray` object.|  
 |[CComSafeArray::GetAt](#getat)|Retrieves a single element from a single-dimensional array.|  
 |[CComSafeArray::GetCount](#getcount)|Returns the number of elements in the array.|  
 |[CComSafeArray::GetDimensions](#getdimensions)|Returns the number of dimensions in the array.|  
@@ -63,7 +63,7 @@ class CComSafeArray
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSafeArray::operator LPSAFEARRAY](#operator_lpsafearray)|Casts a value to a **SAFEARRAY** pointer.|  
+|[CComSafeArray::operator LPSAFEARRAY](#operator_lpsafearray)|Casts a value to a `SAFEARRAY` pointer.|  
 |[CComSafeArray::operator\[\]](ccomsafearray-class.md#operator_at)|Retrieves an element from the array.|  
 |[CComSafeArray::operator =](#operator_eq)|Assignment operator.|  
 
@@ -72,10 +72,10 @@ class CComSafeArray
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComSafeArray::m_psa](#m_psa)|This data member holds the address of the **SAFEARRAY** structure.|  
+|[CComSafeArray::m_psa](#m_psa)|This data member holds the address of the `SAFEARRAY` structure.|  
   
 ## Remarks  
- `CComSafeArray` provides a wrapper for the [SAFEARRAY Data Type](http://msdn.microsoft.com/en-us/9ec8025b-4763-4526-ab45-390c5d8b3b1e) class, making it a simple matter to create and manage single- and multidimensional arrays of almost any of the VARIANT-supported types.  
+ `CComSafeArray` provides a wrapper for the [SAFEARRAY Data Type](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) class, making it a simple matter to create and manage single- and multidimensional arrays of almost any of the VARIANT-supported types.  
   
  `CComSafeArray` simplifies passing arrays between processes, and in addition provides extra security by checking array index values against upper and lower bounds.  
   
@@ -110,7 +110,7 @@ class CComSafeArray
  [!code-cpp[NVC_ATL_Utilities#75](../../atl/codesnippet/cpp/ccomsafearray-class_1.cpp)]  
   
 ##  <a name="add"></a>  CComSafeArray::Add  
- Adds one or more elements, or a **SAFEARRAY** structure, to a `CComSafeArray`.  
+ Adds one or more elements, or a `SAFEARRAY` structure, to a `CComSafeArray`.  
   
 ```
 HRESULT Add(const SAFEARRAY* psaSrc);
@@ -119,10 +119,10 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
 ```  
   
 ### Parameters  
- `psaSrc`  
- A pointer to a **SAFEARRAY** object.  
+ *psaSrc*  
+ A pointer to a `SAFEARRAY` object.  
   
- `ulCount`  
+ *ulCount*  
  The number of objects to add to the array.  
   
  *pT*  
@@ -131,33 +131,33 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
  *t*  
  A reference to the object to be added to the array.  
   
- `bCopy`  
- Indicates whether a copy of the data should be created. The default value is **TRUE**.  
+ *bCopy*  
+ Indicates whether a copy of the data should be created. The default value is TRUE.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The new objects are appended to the end of the existing **SAFEARRAY** object. Adding an object to a multidimensional **SAFEARRAY** object is not supported. When adding an existing array of objects, both arrays must contain elements of the same type.  
+ The new objects are appended to the end of the existing `SAFEARRAY` object. Adding an object to a multidimensional `SAFEARRAY` object is not supported. When adding an existing array of objects, both arrays must contain elements of the same type.  
   
- The `bCopy` flag is taken into account when elements of type `BSTR` or **VARIANT** are added to an array. The default value of **TRUE** ensures that a new copy is made of the data when the element is added to the array.  
+ The *bCopy* flag is taken into account when elements of type BSTR or VARIANT are added to an array. The default value of TRUE ensures that a new copy is made of the data when the element is added to the array.  
   
 ##  <a name="attach"></a>  CComSafeArray::Attach  
- Attaches a **SAFEARRAY** structure to a `CComSafeArray` object.  
+ Attaches a `SAFEARRAY` structure to a `CComSafeArray` object.  
   
 ```
 HRESULT Attach(const SAFEARRAY* psaSrc);
 ```  
   
 ### Parameters  
- `psaSrc`  
- A pointer to the **SAFEARRAY** structure.  
+ *psaSrc*  
+ A pointer to the `SAFEARRAY` structure.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Attaches a **SAFEARRAY** structure to a `CComSafeArray` object, making the existing `CComSafeArray` methods available.  
+ Attaches a `SAFEARRAY` structure to a `CComSafeArray` object, making the existing `CComSafeArray` methods available.  
   
 ##  <a name="ccomsafearray"></a>  CComSafeArray::CComSafeArray  
  The constructor.  
@@ -173,26 +173,26 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 ```  
   
 ### Parameters  
- `bound`  
- A **SAFEARRAYBOUND** structure.  
+ *bound*  
+ A `SAFEARRAYBOUND` structure.  
   
- `ulCount`  
+ *ulCount*  
  The number of elements in the array.  
   
- `lLBound`  
+ *lLBound*  
  The lower bound value; that is, the index of the first element in the array.  
   
- `pBound`  
- A pointer to a **SAFEARRAYBOUND** structure.  
+ *pBound*  
+ A pointer to a `SAFEARRAYBOUND` structure.  
   
- `uDims`  
+ *uDims*  
  The count of dimensions in the array.  
   
- `saSrc`  
- A reference to a **SAFEARRAY** structure or `CComSafeArray` object. In either case the constructor uses this reference to make a copy of the array, so the array is not referenced after construction.  
+ *saSrc*  
+ A reference to a `SAFEARRAY` structure or `CComSafeArray` object. In either case the constructor uses this reference to make a copy of the array, so the array is not referenced after construction.  
   
- `psaSrc`  
- A pointer to a **SAFEARRAY** structure. The constructor uses this address to make a copy of the array, so the array is not referenced after construction.  
+ *psaSrc*  
+ A pointer to a `SAFEARRAY` structure. The constructor uses this address to make a copy of the array, so the array is not referenced after construction.  
   
 ### Remarks  
  Creates a `CComSafeArray` object.  
@@ -208,21 +208,21 @@ CComSafeArray(const SAFEARRAY* psaSrc);
  Frees all allocated resources.  
   
 ##  <a name="copyfrom"></a>  CComSafeArray::CopyFrom  
- Copies the contents of a **SAFEARRAY** structure into the `CComSafeArray` object.  
+ Copies the contents of a `SAFEARRAY` structure into the `CComSafeArray` object.  
   
 ```
 HRESULT CopyFrom(LPSAFEARRAY* ppArray);
 ```  
   
 ### Parameters  
- `ppArray`  
- Pointer to the **SAFEARRAY** to copy.  
+ *ppArray*  
+ Pointer to the `SAFEARRAY` to copy.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method copies the contents of a **SAFEARRAY** into the current `CComSafeArray` object. The existing contents of the array are replaced.  
+ This method copies the contents of a `SAFEARRAY` into the current `CComSafeArray` object. The existing contents of the array are replaced.  
   
 ##  <a name="copyto"></a>  CComSafeArray::CopyTo  
  Creates a copy of the `CComSafeArray` object.  
@@ -232,14 +232,14 @@ HRESULT CopyTo(LPSAFEARRAY* ppArray);
 ```  
   
 ### Parameters  
- `ppArray`  
- A pointer to a location in which to create the new **SAFEARRAY**.  
+ *ppArray*  
+ A pointer to a location in which to create the new `SAFEARRAY`.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method copies the contents of a `CComSafeArray` object into a **SAFEARRAY** structure.  
+ This method copies the contents of a `CComSafeArray` object into a `SAFEARRAY` structure.  
   
 ##  <a name="create"></a>  CComSafeArray::Create  
  Creates a `CComSafeArray`.  
@@ -250,23 +250,23 @@ HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 ```  
   
 ### Parameters  
- `pBound`  
- A pointer to a **SAFEARRAYBOUND** object.  
+ *pBound*  
+ A pointer to a `SAFEARRAYBOUND` object.  
   
- `uDims`  
+ *uDims*  
  The number of dimensions in the array.  
   
- `ulCount`  
+ *ulCount*  
  The number of elements in the array.  
   
- `lLBound`  
+ *lLBound*  
  The lower bound value; that is, the index of the first element in the array.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- A `CComSafeArray` object can be created from an existing **SAFEARRAYBOUND** structure and the number of dimensions, or by specifying the number of elements in the array and the lower bound. If the array is to be accessed from Visual C++, the lower bound should be 0. Other languages may allow other values for the lower bound (for example, Visual Basic supports arrays with elements with a range such as -10 to 10).  
+ A `CComSafeArray` object can be created from an existing `SAFEARRAYBOUND` structure and the number of dimensions, or by specifying the number of elements in the array and the lower bound. If the array is to be accessed from Visual C++, the lower bound should be 0. Other languages may allow other values for the lower bound (for example, Visual Basic supports arrays with elements with a range such as -10 to 10).  
   
 ##  <a name="destroy"></a>  CComSafeArray::Destroy  
  Destroys a `CComSafeArray` object.  
@@ -282,17 +282,17 @@ HRESULT Destroy();
  Destroys an existing `CComSafeArray` object and all of the data it contains.  
   
 ##  <a name="detach"></a>  CComSafeArray::Detach  
- Detaches a **SAFEARRAY** from a `CComSafeArray` object.  
+ Detaches a `SAFEARRAY` from a `CComSafeArray` object.  
   
 ```
 LPSAFEARRAY Detach();
 ```  
   
 ### Return Value  
- Returns a pointer to a **SAFEARRAY** object.  
+ Returns a pointer to a `SAFEARRAY` object.  
   
 ### Remarks  
- This method detaches the **SAFEARRAY** object from the `CComSafeArray` object.  
+ This method detaches the `SAFEARRAY` object from the `CComSafeArray` object.  
   
 ##  <a name="getat"></a>  CComSafeArray::GetAt  
  Retrieves a single element from a single-dimensional array.  
@@ -302,7 +302,7 @@ T& GetAt(LONG lIndex) const;
 ```  
   
 ### Parameters  
- `lIndex`  
+ *lIndex*  
  The index number of the value in the array to return.  
   
 ### Return Value  
@@ -316,7 +316,7 @@ ULONG GetCount(UINT uDim = 0) const;
 ```  
   
 ### Parameters  
- `uDim`  
+ *uDim*  
  The array dimension.  
   
 ### Return Value  
@@ -343,7 +343,7 @@ LONG GetLowerBound(UINT uDim = 0) const;
 ```  
   
 ### Parameters  
- `uDim`  
+ *uDim*  
  The array dimension for which to get the lower bound. If omitted, the default is 0.  
   
 ### Return Value  
@@ -398,7 +398,7 @@ LONG GetUpperBound(UINT uDim = 0) const;
 ```  
   
 ### Parameters  
- `uDim`  
+ *uDim*  
  The array dimension for which to get the upper bound. If omitted, the default is 0.  
   
 ### Return Value  
@@ -415,10 +415,10 @@ bool IsSizable() const;
 ```  
   
 ### Return Value  
- Returns **true** if the `CComSafeArray` can be resized, **false** if it cannot.  
+ Returns TRUE if the `CComSafeArray` can be resized, FALSE if it cannot.  
   
 ##  <a name="m_psa"></a>  CComSafeArray::m_psa  
- Holds the address of the **SAFEARRAY** structure accessed.  
+ Holds the address of the `SAFEARRAY` structure accessed.  
   
 ```
 LPSAFEARRAY m_psa;
@@ -432,7 +432,7 @@ HRESULT MultiDimGetAt(const LONG* alIndex, T& t);
 ```  
   
 ### Parameters  
- `alIndex`  
+ *alIndex*  
  Pointer to a vector of indexes for each dimension in the array. The leftmost (most significant) dimension is `alIndex[0]`.  
   
  *t*  
@@ -449,7 +449,7 @@ HRESULT MultiDimSetAt(const LONG* alIndex, const T& t);
 ```  
   
 ### Parameters  
- `alIndex`  
+ *alIndex*  
  Pointer to a vector of indexes for each dimension in the array. The rightmost (least significant) dimension is `alIndex`[0].  
   
  *T*  
@@ -488,24 +488,24 @@ ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
 ```  
   
 ### Parameters  
- `saSrc`  
+ *saSrc*  
  A reference to a `CComSafeArray` object.  
   
- `psaSrc`  
- A pointer to a **SAFEARRAY** object.  
+ *psaSrc*  
+ A pointer to a `SAFEARRAY` object.  
   
 ### Return Value  
  Returns the type of data stored in the array.  
   
 ##  <a name="operator_lpsafearray"></a>  CComSafeArray::operator LPSAFEARRAY  
- Casts a value to a **SAFEARRAY** pointer.  
+ Casts a value to a `SAFEARRAY` pointer.  
   
 ```
 operator LPSAFEARRAY() const;
 ```  
   
 ### Return Value  
- Casts a value to a **SAFEARRAY** pointer.  
+ Casts a value to a `SAFEARRAY` pointer.  
   
 ##  <a name="resize"></a>  CComSafeArray::Resize  
  Resizes a `CComSafeArray` object.  
@@ -516,20 +516,20 @@ HRESULT Resize(ULONG ulCount, LONG lLBound = 0);
 ```  
   
 ### Parameters  
- `pBound`  
- A pointer to a **SAFEARRAYBOUND** structure that contains information on the number of elements and the lower bound of an array.  
+ *pBound*  
+ A pointer to a `SAFEARRAYBOUND` structure that contains information on the number of elements and the lower bound of an array.  
   
- `ulCount`  
+ *ulCount*  
  The requested number of objects in the resized array.  
   
- `lLBound`  
+ *lLBound*  
  The lower bound.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method only resizes the rightmost dimension. It will not resize arrays that return **IsResizable** as **false**.  
+ This method only resizes the rightmost dimension. It will not resize arrays that return `IsResizable` as FALSE.  
   
 ##  <a name="setat"></a>  CComSafeArray::SetAt  
  Sets the value of an element in a single-dimensional array.  
@@ -539,23 +539,23 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 ```  
   
 ### Parameters  
- `lIndex`  
+ *lIndex*  
  The index number of the array element to set.  
   
  *t*  
  The new value of the specified element.  
   
- `bCopy`  
- Indicates whether a copy of the data should be created. The default value is **TRUE**.  
+ *bCopy*  
+ Indicates whether a copy of the data should be created. The default value is TRUE.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The `bCopy` flag is taken into account when elements of type `BSTR` or **VARIANT** are added to an array. The default value of **TRUE** ensures that a new copy is made of the data when the element is added to the array.  
+ The *bCopy* flag is taken into account when elements of type BSTR or VARIANT are added to an array. The default value of TRUE ensures that a new copy is made of the data when the element is added to the array.  
   
 ## See Also  
- [SAFEARRAY Data Type](http://msdn.microsoft.com/en-us/9ec8025b-4763-4526-ab45-390c5d8b3b1e)   
+ [SAFEARRAY Data Type](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)   
  [CComSafeArray::Create](#create)   
  [CComSafeArray::Destroy](#destroy)   
  [Class Overview](../../atl/atl-class-overview.md)

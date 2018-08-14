@@ -17,18 +17,18 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 union {   
    const IID* clsid;  
    const wchar_t* (*getRuntimeName)();  
 } activationId;  
 ```  
   
-## Parameters  
- `clsid`  
+### Parameters  
+ *clsid*  
  An interface ID.  
   
- `getRuntimeName`  
+ *getRuntimeName*  
  A function that retrieves the Windows runtime name of an object.  
   
 ## Remarks  

@@ -82,27 +82,27 @@ int m_cause;
 ### Remarks  
  This data member is a public variable of type **int**. Its values are defined by a `CArchiveException` enumerated type. The enumerators and their meanings are as follows:  
   
-- **CArchiveException::none** No error occurred.  
+- `CArchiveException::none` No error occurred.  
   
-- **CArchiveException::genericException** Unspecified error.  
+- `CArchiveException::genericException` Unspecified error.  
   
-- **CArchiveException::readOnly** Tried to write into an archive opened for loading.  
+- `CArchiveException::readOnly` Tried to write into an archive opened for loading.  
   
-- **CArchiveException::endOfFile** Reached end of file while reading an object.  
+- `CArchiveException::endOfFile` Reached end of file while reading an object.  
   
-- **CArchiveException::writeOnly** Tried to read from an archive opened for storing.  
+- `CArchiveException::writeOnly` Tried to read from an archive opened for storing.  
   
-- **CArchiveException::badIndex** Invalid file format.  
+- `CArchiveException::badIndex` Invalid file format.  
   
-- **CArchiveException::badClass** Tried to read an object into an object of the wrong type.  
+- `CArchiveException::badClass` Tried to read an object into an object of the wrong type.  
   
-- **CArchiveException::badSchema** Tried to read an object with a different version of the class.  
+- `CArchiveException::badSchema` Tried to read an object with a different version of the class.  
   
     > [!NOTE]
     >  These `CArchiveException` cause enumerators are distinct from the `CFileException` cause enumerators.  
   
     > [!NOTE]
-    > **CArchiveException::generic** is deprecated. Use **genericException** instead. If **generic** is used in an application and built with /clr, there will be syntax errors that are not easy to decipher.  
+    > `CArchiveException::generic` is deprecated. Use `genericException` instead. If **generic** is used in an application and built with /clr, there will be syntax errors that are not easy to decipher.  
   
 ##  <a name="m_strfilename"></a>  CArchiveException::m_strFileName  
  Specifies the name of the file for this exception condition.  

@@ -27,7 +27,7 @@ typedef T8 const_reverse_iterator;
 
 ## Remarks
 
-It is described here as a synonym for the unspecified type **T8** (typically [reverse_iterator](../standard-library/container-class-reverse-iterator.md) <[const_iterator](../standard-library/container-class-const-iterator.md)`>`).
+It is described here as a synonym for the unspecified type `T8` (typically [reverse_iterator](../standard-library/container-class-reverse-iterator.md) <[const_iterator](../standard-library/container-class-const-iterator.md)`>`).
 
 ## See also
 

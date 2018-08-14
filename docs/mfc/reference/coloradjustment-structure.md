@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # COLORADJUSTMENT Structure
-The `COLORADJUSTMENT` structure defines the color adjustment values used by the Windows `StretchBlt` and `StretchDIBits` functions when the `StretchBlt` mode is **HALFTONE**.  
+The `COLORADJUSTMENT` structure defines the color adjustment values used by the Windows `StretchBlt` and `StretchDIBits` functions when the `StretchBlt` mode is HALFTONE.  
   
 ## Syntax  
   
@@ -39,40 +39,40 @@ typedef struct  tagCOLORADJUSTMENT {    /* ca */
  Specifies the size of the structure in bytes.  
   
  *caFlags*  
- Specifies how the output image should be prepared. This member can be set to **NULL** or any combination of the following values:  
+ Specifies how the output image should be prepared. This member can be set to NULL or any combination of the following values:  
   
-- **CA_NEGATIVE** Specifies that the negative of the original image should be displayed.  
+- CA_NEGATIVE Specifies that the negative of the original image should be displayed.  
   
-- **CA_LOG_FILTER** Specifies that a logarithmic function should be applied to the final density of the output colors. This will increase the color contrast when the luminance is low.  
+- CA_LOG_FILTER Specifies that a logarithmic function should be applied to the final density of the output colors. This will increase the color contrast when the luminance is low.  
   
  *caIlluminantIndex*  
  Specifies the luminance of the light source under which the image object is viewed. This member can be set to one of the following values:  
   
-- **ILLUMINANT_EQUAL_ENERGY**  
+- ILLUMINANT_EQUAL_ENERGY  
   
-- **ILLUMINANT_A**  
+- ILLUMINANT_A  
   
-- **ILLUMINANT_B**  
+- ILLUMINANT_B  
   
-- **ILLUMINANT_C**  
+- ILLUMINANT_C  
   
-- **ILLUMINANT_D50**  
+- ILLUMINANT_D50  
   
-- **ILLUMINANT_D55**  
+- ILLUMINANT_D55  
   
-- **ILLUMINANT_D65**  
+- ILLUMINANT_D65  
   
-- **ILLUMINANT_D75**  
+- ILLUMINANT_D75  
   
-- **ILLUMINANT_F2**  
+- ILLUMINANT_F2  
   
-- **ILLUMINANT_TURNGSTEN**  
+- ILLUMINANT_TURNGSTEN  
   
-- **ILLUMINANT_DAYLIGHT**  
+- ILLUMINANT_DAYLIGHT  
   
-- **ILLUMINANT_FLUORESCENT**  
+- ILLUMINANT_FLUORESCENT  
   
-- **ILLUMINANT_NTSC**  
+- ILLUMINANT_NTSC  
   
  *caRedGamma*  
  Specifies the nth power gamma-correction value for the red primary of the source colors. The value must be in the range from 2,500 to 65,000. A value of 10,000 means no gamma-correction.  

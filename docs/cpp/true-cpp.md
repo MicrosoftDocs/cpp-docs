@@ -16,13 +16,12 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 bool-identifier = true ;  
 bool-expression logical-operator true ;  
 ```  
   
 ## Remarks  
- This keyword is one of the two values for a variable of type [bool](../cpp/bool-cpp.md) or a conditional expression (a conditional expression is now a true boolean expression). If `i` is of type `bool`, then the statement `i = true;` assigns **true** to `i`.  
+ This keyword is one of the two values for a variable of type [bool](../cpp/bool-cpp.md) or a conditional expression (a conditional expression is now a true boolean expression). If `i` is of type **bool**, then the statement `i = true;` assigns **true** to `i`.  
   
 ## Example  
   
@@ -43,5 +42,5 @@ int main()
 0  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

@@ -59,7 +59,7 @@ The next example shows how to catch the exception.
 
 [!code-cpp[cx_exceptions#02](codesnippet/CPP/exceptiontest/class1.cpp#02)]
 
-To catch exceptions that are thrown during an asynchronous operation, use the task class and add an an error-handling continuation. The error-handling continuation marshals exceptions that are thrown on other threads back to the calling thread so that you can handle all potential exceptions at just one point in your code. For more information, see [Asynchronous Programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps).
+To catch exceptions that are thrown during an asynchronous operation, use the task class and add an error-handling continuation. The error-handling continuation marshals exceptions that are thrown on other threads back to the calling thread so that you can handle all potential exceptions at just one point in your code. For more information, see [Asynchronous Programming in C++](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps).
 
 ## UnhandledErrorDetected event
 

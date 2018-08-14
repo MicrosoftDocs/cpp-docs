@@ -17,10 +17,8 @@ Controls the network data representation alignment of nonencapsulated unions.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [ms_union]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Controls the network data representation alignment of nonencapsulated unions.
 ## Example  
  The following code shows the placement of **ms_union**:  
   
-```  
+```cpp  
 // cpp_attr_ref_ms_union.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -61,10 +59,10 @@ __interface IFireTabCtrl {
 |**Applies to**|Nonencapsulated unions|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
-|**Invalid attributes**|**dispinterface**|  
+|**Invalid attributes**|`dispinterface`|  
   
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   

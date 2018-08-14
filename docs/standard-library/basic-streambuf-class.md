@@ -25,15 +25,15 @@ class basic_streambuf;
 
 ### Parameters
 
-`Elem`
+*Elem*
  A [char_type](#char_type).
 
-`Tr`
+*Tr*
  The character [traits_type](#traits_type).
 
 ## Remarks
 
-The template class describes an abstract base class for deriving a stream buffer, which controls the transmission of elements to and from a specific representation of a stream. An object of class `basic_streambuf` helps control a stream with elements of type `Tr`, also known as [char_type](#char_type), whose character traits are determined by the class [char_traits](../standard-library/char-traits-struct.md), also known as [traits_type](#traits_type).
+The template class describes an abstract base class for deriving a stream buffer, which controls the transmission of elements to and from a specific representation of a stream. An object of class `basic_streambuf` helps control a stream with elements of type *Tr*, also known as [char_type](#char_type), whose character traits are determined by the class [char_traits](../standard-library/char-traits-struct.md), also known as [traits_type](#traits_type).
 
 Every stream buffer conceptually controls two independent streams: one for extractions (input) and one for insertions (output). A specific representation may, however, make either or both of these streams inaccessible. It typically maintains some relationship between the two streams. What you insert into the output stream of a [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< `Elem`, `Tr`> object, for example, is what you later extract from its input stream. When you position one stream of a [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`> object, you position the other stream in tandem.
 
@@ -153,14 +153,14 @@ basic_streambuf(const basic_streambuf& right);
 
 ### Parameters
 
-`right`
+*right*
  An lvalue reference to the `basic_streambuf` object that is used to set the values for this `basic_streambuf` object.
 
 ### Remarks
 
 The first protected constructor stores a null pointer in all pointers controlling the input buffer and the output buffer. It also stores `locale::classic` in the locale object. For more information, see [locale::classic](../standard-library/locale-class.md#classic).
 
-The second protected constructor copies the pointers and locale from `right`.
+The second protected constructor copies the pointers and locale from *right*.
 
 ## <a name="char_type"></a>  basic_streambuf::char_type
 
@@ -208,7 +208,7 @@ A pointer just past the end of the output buffer.
 
 ## <a name="gbump"></a>  basic_streambuf::gbump
 
-A protected function that adds `count` to the next pointer for the input buffer.
+A protected function that adds *count* to the next pointer for the input buffer.
 
 ```cpp
 void gbump(int count);
@@ -216,7 +216,7 @@ void gbump(int count);
 
 ### Parameters
 
-`count`
+*count*
  The amount by which to advance the pointer.
 
 ## <a name="getloc"></a>  basic_streambuf::getloc
@@ -275,7 +275,7 @@ virtual void imbue(const locale& _Loc);
 
 ### Parameters
 
-`_Loc`
+*_Loc*
  A reference to a locale.
 
 ### Remarks
@@ -342,12 +342,12 @@ basic_streambuf& operator=(const basic_streambuf& right);
 
 ### Parameters
 
-`right`
+*right*
  An lvalue reference to the `basic_streambuf` object that is used to assign values to this object.
 
 ### Remarks
 
-The protected member operator copies from `right` the pointers that control the input buffer and the output buffer. It also stores `right.`[getloc()](#getloc) in the `locale object`. It returns `*this`.
+The protected member operator copies from *right* the pointers that control the input buffer and the output buffer. It also stores `right.`[getloc()](#getloc) in the `locale object`. It returns `*this`.
 
 ## <a name="overflow"></a>  basic_streambuf::overflow
 
@@ -359,7 +359,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-`_Meta`
+*_Meta*
  The character to insert into the buffer, or **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
 
 ### Return Value
@@ -394,7 +394,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-`_Meta`
+*_Meta*
  The character to insert into the buffer, or **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
 
 ### Return Value
@@ -425,7 +425,7 @@ A pointer to the beginning of the output buffer.
 
 ## <a name="pbump"></a>  basic_streambuf::pbump
 
-A protected function that adds `count` to the next pointer for the output buffer.
+A protected function that adds *count* to the next pointer for the output buffer.
 
 ```cpp
 void pbump(int count);
@@ -433,7 +433,7 @@ void pbump(int count);
 
 ### Parameters
 
-`count`
+*count*
  The number of characters by which to move the write position forward.
 
 ## <a name="pos_type"></a>  basic_streambuf::pos_type
@@ -466,7 +466,7 @@ locale pubimbue(const locale& _Loc);
 
 ### Parameters
 
-`_Loc`
+*_Loc*
  A reference to a locale.
 
 ### Return Value
@@ -493,13 +493,13 @@ pos_type pubseekoff(off_type _Off,
 
 ### Parameters
 
-`_Off`
- The position to seek for relative to `_Way`.
+*_Off*
+ The position to seek for relative to *_Way*.
 
-`_Way`
+*_Way*
  The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-`_Which`
+*_Which*
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -508,7 +508,7 @@ Returns the new position or an invalid stream position ( [seekoff](#seekoff)(_ *
 
 ### Remarks
 
-Moves the pointer relative to `_Way`.
+Moves the pointer relative to *_Way*.
 
 ## <a name="pubseekpos"></a>  basic_streambuf::pubseekpos
 
@@ -520,10 +520,10 @@ pos_type pubseekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios
 
 ### Parameters
 
-`_Sp`
+*_Sp*
  The position to seek for.
 
-`_Which`
+*_Which*
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -546,10 +546,10 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
 
 ### Parameters
 
-`_Buffer`
+*_Buffer*
  A pointer to `char_type` for this instantiation.
 
-`count`
+*count*
  The size of the buffer.
 
 ### Return Value
@@ -625,13 +625,13 @@ virtual pos_type seekoff(
 
 ### Parameters
 
-`_Off`
- The position to seek for relative to `_Way`.
+*_Off*
+ The position to seek for relative to *_Way*.
 
-`_Way`
+*_Way*
  The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-`_Which`
+*_Which*
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -662,10 +662,10 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### Parameters
 
-`_Sp`
+*_Sp*
  The position to seek for.
 
-`_Which`
+*_Which*
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -692,10 +692,10 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### Parameters
 
-`_Buffer`
+*_Buffer*
  Pointer to a buffer.
 
-`count`
+*count*
  Size of the buffer.
 
 ### Return Value
@@ -721,15 +721,15 @@ void setg(char_type* _Gbeg,
 *_Gbeg*
  A pointer to the beginning of the buffer.
 
-`_Gnext`
+*_Gnext*
  A pointer to somewhere in the middle of the buffer.
 
-`_Gend`
+*_Gend*
  A pointer to the end of the buffer.
 
 ## <a name="setp"></a>  basic_streambuf::setp
 
-A protected function that stores `_Pbeg` in the beginning pointer and `_Pend` in the end pointer for the output buffer.
+A protected function that stores *_Pbeg* in the beginning pointer and *_Pend* in the end pointer for the output buffer.
 
 ```cpp
 void setp(char_type* _Pbeg, char_type* _Pend);
@@ -737,10 +737,10 @@ void setp(char_type* _Pbeg, char_type* _Pend);
 
 ### Parameters
 
-`_Pbeg`
+*_Pbeg*
  A pointer to the beginning of the buffer.
 
-`_Pend`
+*_Pend*
  A pointer to the end of the buffer.
 
 ## <a name="sgetc"></a>  basic_streambuf::sgetc
@@ -781,7 +781,7 @@ int main( )
 
 ## <a name="sgetn"></a>  basic_streambuf::sgetn
 
-Extracts up to `count` characters from the input buffer and stores them in the provided buffer `ptr`.
+Extracts up to *count* characters from the input buffer and stores them in the provided buffer *ptr*.
 
 This method is potentially unsafe, as it relies on the caller to check that the passed values are correct.
 
@@ -793,10 +793,10 @@ streamsize sgetn(
 
 ### Parameters
 
-`ptr`
+*ptr*
  The buffer to contain the extracted characters.
 
-`count`
+*count*
  The number of elements to read.
 
 ### Return Value
@@ -899,7 +899,7 @@ int_type sputbackc(char_type _Ch);
 
 ### Parameters
 
-`_Ch`
+*_Ch*
  The character.
 
 ### Return Value
@@ -908,7 +908,7 @@ Returns the character or failure.
 
 ### Remarks
 
-If a putback position is available and `_Ch` compares equal to the character stored in that position, the member function decrements the next pointer for the input buffer and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [pbackfail](#pbackfail)( `_Ch`).
+If a putback position is available and *_Ch* compares equal to the character stored in that position, the member function decrements the next pointer for the input buffer and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [pbackfail](#pbackfail)( `_Ch`).
 
 ### Example
 
@@ -947,7 +947,7 @@ int_type sputc(char_type _Ch);
 
 ### Parameters
 
-`_Ch`
+*_Ch*
  The character.
 
 ### Return Value
@@ -956,7 +956,7 @@ Returns the character, if successful.
 
 ### Remarks
 
-If a `write position` is available, the member function stores `_Ch` in the write position, increments the next pointer for the output buffer, and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [overflow](#overflow)( `_Ch`).
+If a `write position` is available, the member function stores *_Ch* in the write position, increments the next pointer for the output buffer, and returns **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( `_Ch`). Otherwise, it returns [overflow](#overflow)( `_Ch`).
 
 ### Example
 
@@ -990,10 +990,10 @@ streamsize sputn(const char_type* ptr, streamsize count);
 
 ### Parameters
 
-`ptr`
+*ptr*
  The character string.
 
-`count`
+*count*
  The count of characters.
 
 ### Return Value
@@ -1119,11 +1119,11 @@ void swap(basic_streambuf& right);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|An lvalue reference to the `basic_streambuf` object that is used to exchange values.|
+|*right*|An lvalue reference to the `basic_streambuf` object that is used to exchange values.|
 
 ### Remarks
 
-The protected member function exchanges with `right` all the pointers controlling the `input buffer` and the `output buffer`. It also exchanges `right.`[getloc()](#getloc) with the `locale` object.
+The protected member function exchanges with *right* all the pointers controlling the `input buffer` and the `output buffer`. It also exchanges `right.`[getloc()](#getloc) with the `locale` object.
 
 ## <a name="sync"></a>  basic_streambuf::sync
 
@@ -1217,10 +1217,10 @@ virtual streamsize xsgetn(
 
 ### Parameters
 
-`ptr`
+*ptr*
  The buffer to contain the extracted characters.
 
-`count`
+*count*
  The number of elements to extract.
 
 ### Return Value
@@ -1229,7 +1229,7 @@ The number of elements extracted.
 
 ### Remarks
 
-The protected virtual member function extracts up to `count` elements from the input stream, as if by repeated calls to [sbumpc](#sbumpc), and stores them in the array beginning at `ptr`. It returns the number of elements actually extracted.
+The protected virtual member function extracts up to *count* elements from the input stream, as if by repeated calls to [sbumpc](#sbumpc), and stores them in the array beginning at *ptr*. It returns the number of elements actually extracted.
 
 ## <a name="xsputn"></a>  basic_streambuf::xsputn
 
@@ -1241,10 +1241,10 @@ virtual streamsize xsputn(const char_type* ptr, streamsize count);
 
 ### Parameters
 
-`ptr`
+*ptr*
  Pointer to elements to insert.
 
-`count`
+*count*
  Number of elements to insert.
 
 ### Return Value
@@ -1253,7 +1253,7 @@ The number of elements actually inserted into the stream.
 
 ### Remarks
 
-The protected virtual member function inserts up to `count` elements into the output stream, as if by repeated calls to [sputc](#sputc), from the array beginning at `ptr`. The insertion of characters into the output stream stops once all `count` characters have been written, or if calling `sputc( count)` would return `traits::eof()`. It returns the number of elements actually inserted.
+The protected virtual member function inserts up to *count* elements into the output stream, as if by repeated calls to [sputc](#sputc), from the array beginning at *ptr*. The insertion of characters into the output stream stops once all *count* characters have been written, or if calling `sputc( count)` would return `traits::eof()`. It returns the number of elements actually inserted.
 
 ## See also
 

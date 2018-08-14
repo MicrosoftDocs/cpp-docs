@@ -63,7 +63,7 @@ virtual COleControlContainer* CreateContainer(CWnd* pWnd);
  A pointer to the window object associated with the custom site container.  
   
 ### Return Value  
- A pointer to the newly created container; otherwise **NULL**.  
+ A pointer to the newly created container; otherwise NULL.  
   
 ### Remarks  
  For more information on creating custom sites, see [COleControlContainer::AttachControlSite](../../mfc/reference/colecontrolcontainer-class.md#attachcontrolsite).  
@@ -133,9 +133,9 @@ static DWORD AFX_CDECL GetDefBtnCode(CWnd* pWnd);
 ### Return Value  
  One of the following values:  
   
-- **DLGC_DEFPUSHBUTTON** Control is the default button in the dialog.  
+- DLGC_DEFPUSHBUTTON Control is the default button in the dialog.  
   
-- **DLGC_UNDEFPUSHBUTTON** Control is not the default button in the dialog.  
+- DLGC_UNDEFPUSHBUTTON Control is not the default button in the dialog.  
   
 - **0** Control is not a button.  
   
@@ -229,7 +229,7 @@ virtual BOOL OnEvent(
  The event being handled.  
   
  *pHandlerInfo*  
- If not **NULL**, `OnEvent` fills in the **pTarget** and **pmf** members of the **AFX_CMDHANDLERINFO** structure instead of dispatching the command. Typically, this parameter should be **NULL**.  
+ If not NULL, `OnEvent` fills in the `pTarget` and `pmf` members of the `AFX_CMDHANDLERINFO` structure instead of dispatching the command. Typically, this parameter should be NULL.  
   
 ### Return Value  
  Nonzero if the event was handled, otherwise zero.  
@@ -248,7 +248,7 @@ virtual const DLGTEMPLATE* PreCreateDialog(
   
 ### Parameters  
  *pOccDialogInfo*  
- An **_AFX_OCC_DIALOG_INFO** structure containing information on the dialog template and any ActiveX controls hosted by the dialog.  
+ An `_AFX_OCC_DIALOG_INFO` structure containing information on the dialog template and any ActiveX controls hosted by the dialog.  
   
  *pOrigTemplate*  
  A pointer to the dialog template to be used in creating the dialog box.  
@@ -270,7 +270,7 @@ virtual void PostCreateDialog(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
   
 ### Parameters  
  *pOccDialogInfo*  
- An **_AFX_OCC_DIALOG_INFO** structure containing information on the dialog template and any ActiveX controls hosted by the dialog.  
+ An `_AFX_OCC_DIALOG_INFO` structure containing information on the dialog template and any ActiveX controls hosted by the dialog.  
   
 ### Remarks  
  This memory was allocated by a call to `SplitDialogTemplate`, and was used for any hosted ActiveX controls in the dialog box.  
@@ -299,7 +299,7 @@ static void AFX_CDECL SetDefaultButton(
 ### Remarks  
   
 > [!NOTE]
->  The control must have the **OLEMISC_ACTSLIKEBUTTON** status bit set. For more information on **OLEMISC** flags, see the [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) topic in the Windows SDK.  
+>  The control must have the OLEMISC_ACTSLIKEBUTTON status bit set. For more information on OLEMISC flags, see the [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) topic in the Windows SDK.  
   
 ##  <a name="splitdialogtemplate"></a>  COccManager::SplitDialogTemplate  
  Called by the framework to split the ActiveX controls from common dialog controls.  
@@ -318,12 +318,12 @@ virtual DLGTEMPLATE* SplitDialogTemplate(
  A list of pointers to dialog box items that are ActiveX controls.  
   
 ### Return Value  
- A pointer to a dialog template structure containing only non-ActiveX controls. If no ActiveX controls are present, **NULL** is returned.  
+ A pointer to a dialog template structure containing only non-ActiveX controls. If no ActiveX controls are present, NULL is returned.  
   
 ### Remarks  
  If any ActiveX controls are found, the template is analyzed and a new template, containing only non-ActiveX controls, is created. Any ActiveX controls found during this process are added to *ppOleDlgItems*.  
   
- If there are no ActiveX controls in the template, **NULL** is returned *.*  
+ If there are no ActiveX controls in the template, NULL is returned *.*  
   
 > [!NOTE]
 >  Memory allocated for the new template is freed in the `PostCreateDialog` function.  

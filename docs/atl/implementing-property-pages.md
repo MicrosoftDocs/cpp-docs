@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Implementing Property Pages
-Property pages are COM objects that implement the `IPropertyPage` or **IPropertyPage2** interface. ATL provides support for implementing property pages through the [ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md) in the [Add Class dialog box](../ide/add-class-dialog-box.md).  
+Property pages are COM objects that implement the `IPropertyPage` or `IPropertyPage2` interface. ATL provides support for implementing property pages through the [ATL Property Page Wizard](../atl/reference/atl-property-page-wizard.md) in the [Add Class dialog box](../ide/add-class-dialog-box.md).  
   
  To create a property page using ATL:  
   

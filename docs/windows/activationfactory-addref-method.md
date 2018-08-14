@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::AddRef Method
-Increments the reference count of the current ActivationFactory object.  
+Increments the reference count of the current **ActivationFactory** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD_(  
    ULONG,  
    AddRef  

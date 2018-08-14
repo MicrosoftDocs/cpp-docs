@@ -105,7 +105,7 @@ CMFCRibbonFontComboBox(
  The command ID of the command that executes when the user selects an item from the combo box.  
   
  [in] *nFontType*  
- Specifies which font types to display in the combo box. Valid options are **DEVICE_FONTTYPE**, **RASTER_FONTTYPE**, and **TRUETYPE_FONTTYPE**, or any bitwise combination thereof.  
+ Specifies which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.  
   
  [in] *nCharSet*  
  Filters the fonts in the combo box to those that belong to the specified character set..  
@@ -163,7 +163,7 @@ BOOL SetFont(
  Specifies the character set for the selected font.  
   
  *bExact*  
- `TRUE` to specify that the character set must match when selecting a font; `FALSE` to specify that the character set can be ignored when selecting a font.  
+ TRUE to specify that the character set must match when selecting a font; FALSE to specify that the character set can be ignored when selecting a font.  
   
 ### Return Value  
  Nonzero if the specified font was found and selected; otherwise, zero.  

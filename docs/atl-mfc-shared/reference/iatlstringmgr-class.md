@@ -49,17 +49,17 @@ CStringData* Allocate(int nAllocLength,int nCharSize) throw();
 ```  
   
 ### Parameters  
- `nAllocLength`  
+ *nAllocLength*  
  The number of characters in the new memory block.  
   
- `nCharSize`  
+ *nCharSize*  
  The size (in bytes) of the character type used by the string manager.  
   
 ### Return Value  
  Returns a pointer to the newly allocated memory block.  
   
 > [!NOTE]
->  Do not signal a failed allocation by throwing an exception. Instead, a failed allocation should be signaled by returning **NULL**.  
+>  Do not signal a failed allocation by throwing an exception. Instead, a failed allocation should be signaled by returning NULL.  
   
 ### Remarks  
  Call [IAtlStringMgr::Free](#free) or [IAtlStringMgr::ReAllocate](#reallocate) to free the memory allocated by this method.  
@@ -93,7 +93,7 @@ void Free(CStringData* pData) throw();
 ```  
   
 ### Parameters  
- `pData`  
+ *pData*  
  A pointer to the memory block to be freed.  
   
 ### Remarks  
@@ -116,7 +116,7 @@ CStringData* GetNilString() throw();
  Call this function to return a representation of an empty string.  
   
 > [!NOTE]
->  When implementing a custom string manager, this function must never fail. You can ensure this by embedding an instance of **CNilStringData** in the string manager class, and return a pointer to that instance.  
+>  When implementing a custom string manager, this function must never fail. You can ensure this by embedding an instance of `CNilStringData` in the string manager class, and return a pointer to that instance.  
   
 > [!NOTE]
 >  For usage examples, see [Memory Management and CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).  
@@ -132,20 +132,20 @@ CStringData* Reallocate(
 ```  
   
 ### Parameters  
- `pData`  
+ *pData*  
  Pointer to the memory previously allocated by this memory manager.  
   
- `nAllocLength`  
+ *nAllocLength*  
  The number of characters in the new memory block.  
   
- `nCharSize`  
+ *nCharSize*  
  The size (in bytes) of the character type used by the string manager.  
   
 ### Return Value  
  Returns a pointer to the start of the newly allocated memory block.  
   
 ### Remarks  
- Call this function to resize the existing memory block specified by `pData`.  
+ Call this function to resize the existing memory block specified by *pData*.  
   
  Call [IAtlStringMgr::Free](#free) to free the memory allocated by this method.  
   

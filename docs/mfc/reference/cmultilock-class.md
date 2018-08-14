@@ -66,7 +66,7 @@ CMultiLock(
   
 ### Parameters  
  *ppObjects*  
- Array of pointers to the synchronization objects to be waited on. Cannot be **NULL**.  
+ Array of pointers to the synchronization objects to be waited on. Cannot be NULL.  
   
  *dwCount*  
  Number of objects in *ppObjects*. Must be greater than 0.  
@@ -103,10 +103,10 @@ DWORD Lock(
   
 ### Parameters  
  *dwTimeOut*  
- Specifies the amount of time to wait for the synchronization object to be available (signaled). If **INFINITE**, `Lock` will wait until the object is signaled before returning.  
+ Specifies the amount of time to wait for the synchronization object to be available (signaled). If INFINITE, `Lock` will wait until the object is signaled before returning.  
   
  *bWaitForAll*  
- Specifies whether all objects waited on must become signaled at the same time before returning. If **FALSE**, `Lock` will return when any one of the objects waited on is signaled.  
+ Specifies whether all objects waited on must become signaled at the same time before returning. If FALSE, `Lock` will return when any one of the objects waited on is signaled.  
   
  *dwWakeMask*  
  Specifies other conditions that are allowed to abort the wait. For a full list of the available options for this parameter, see [MsgWaitForMultipleObjects](http://msdn.microsoft.com/library/windows/desktop/ms684242) in the Windows SDK.  
@@ -114,26 +114,26 @@ DWORD Lock(
 ### Return Value  
  If `Lock` fails, it returns - 1. If successful, it returns one of the following values:  
   
--   Between **WAIT_OBJECT_0** and **WAIT_OBJECT_0** + (number of objects - 1)  
+-   Between WAIT_OBJECT_0 and WAIT_OBJECT_0 + (number of objects - 1)  
   
-     If *bWaitForAll* is **TRUE**, all objects are signaled (available). If *bWaitForAll* is **FALSE**, the return value - **WAIT_OBJECT_0** is the index in the array of objects of the object that is signaled (available).  
+     If *bWaitForAll* is TRUE, all objects are signaled (available). If *bWaitForAll* is FALSE, the return value - WAIT_OBJECT_0 is the index in the array of objects of the object that is signaled (available).  
   
-- **WAIT_OBJECT_0** + (number of objects)  
+- WAIT_OBJECT_0 + (number of objects)  
   
      An event specified in *dwWakeMask* is available in the thread's input queue.  
   
--   Between **WAIT_ABANDONED_0** and **WAIT_ABANDONED_0** + (number of objects - 1)  
+-   Between WAIT_ABANDONED_0 and WAIT_ABANDONED_0 + (number of objects - 1)  
   
-     If *bWaitForAll* is **TRUE**, all objects are signaled, and at least one of the objects is an abandoned mutex object. If *bWaitForAll* is **FALSE**, the return value - **WAIT_ABANDONED_0** is the index in the array of objects of the abandoned mutex object that satisfied the wait.  
+     If *bWaitForAll* is TRUE, all objects are signaled, and at least one of the objects is an abandoned mutex object. If *bWaitForAll* is FALSE, the return value - WAIT_ABANDONED_0 is the index in the array of objects of the abandoned mutex object that satisfied the wait.  
   
-- **WAIT_TIMEOUT**  
+- WAIT_TIMEOUT  
   
      The timeout interval specified in *dwTimeOut* expired without the wait succeeding.  
   
 ### Remarks  
- If *bWaitForAll* is **TRUE**, `Lock` will return successfully as soon as all the synchronization objects become signaled simultaneously. If *bWaitForAll* is **FALSE**, `Lock` will return as soon as one or more of the synchronization objects becomes signaled.  
+ If *bWaitForAll* is TRUE, `Lock` will return successfully as soon as all the synchronization objects become signaled simultaneously. If *bWaitForAll* is FALSE, `Lock` will return as soon as one or more of the synchronization objects becomes signaled.  
   
- If `Lock` is not able to return immediately, it will wait for no more than the number of milliseconds specified in the *dwTimeOut* parameter before returning. If *dwTimeOut* is **INFINITE**, `Lock` will not return until access to an object is gained or a condition specified in *dwWakeMask* was met. Otherwise, if `Lock` was able to acquire a synchronization object, it will return successfully; if not, it will return failure.  
+ If `Lock` is not able to return immediately, it will wait for no more than the number of milliseconds specified in the *dwTimeOut* parameter before returning. If *dwTimeOut* is INFINITE, `Lock` will not return until access to an object is gained or a condition specified in *dwWakeMask* was met. Otherwise, if `Lock` was able to acquire a synchronization object, it will return successfully; if not, it will return failure.  
   
 ##  <a name="unlock"></a>  CMultiLock::Unlock  
  Releases the synchronization object owned by `CMultiLock`.  
@@ -149,10 +149,10 @@ BOOL Unlock(
   
 ### Parameters  
  *lCount*  
- Number of reference counts to release. Must be greater than 0. If the specified amount would cause the object's count to exceed its maximum, the count is not changed and the function returns **FALSE**.  
+ Number of reference counts to release. Must be greater than 0. If the specified amount would cause the object's count to exceed its maximum, the count is not changed and the function returns FALSE.  
   
  *lPrevCount*  
- Points to a variable to receive the previous count for the synchronization object. If **NULL**, the previous count is not returned.  
+ Points to a variable to receive the previous count for the synchronization object. If NULL, the previous count is not returned.  
   
 ### Return Value  
  Nonzero if the function was successful; otherwise 0.  
@@ -160,7 +160,7 @@ BOOL Unlock(
 ### Remarks  
  This function is called by `CMultiLock`'s destructor.  
   
- The first form of `Unlock` tries to unlock the synchronization object managed by `CMultiLock`. The second form of `Unlock` tries to unlock the `CSemaphore` objects owned by `CMultiLock`. If `CMultiLock` does not own any locked `CSemaphore` object, the function returns **FALSE**; otherwise, it returns **TRUE**. *lCount* and *lpPrevCount* are exactly the same as the parameters of [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). The second form of `Unlock` is rarely applicable to multilock situations.  
+ The first form of `Unlock` tries to unlock the synchronization object managed by `CMultiLock`. The second form of `Unlock` tries to unlock the `CSemaphore` objects owned by `CMultiLock`. If `CMultiLock` does not own any locked `CSemaphore` object, the function returns FALSE; otherwise, it returns TRUE. *lCount* and *lpPrevCount* are exactly the same as the parameters of [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). The second form of `Unlock` is rarely applicable to multilock situations.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)

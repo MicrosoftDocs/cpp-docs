@@ -31,10 +31,10 @@ public:
 
 ### Parameters
 
-`Func`
+*Func*  
  The unary function to be negated.
 
-`left`
+*left*  
  The operand of the unary function to be negated.
 
 ## Return Value

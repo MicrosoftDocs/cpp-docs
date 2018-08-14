@@ -27,13 +27,13 @@ class cache_suballoc
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Sz`|The number of elements in the array to be allocated.|
+|*Sz*|The number of elements in the array to be allocated.|
 
 ## Remarks
 
-The cache_suballoc template class stores deallocated memory blocks in a free list with unbounded length, using `freelist<sizeof(Type), max_unbounded>`, and suballocates memory blocks from a larger chunk allocated with `operator new` when the free list is empty.
+The cache_suballoc template class stores deallocated memory blocks in a free list with unbounded length, using `freelist<sizeof(Type), max_unbounded>`, and suballocates memory blocks from a larger chunk allocated with **operator new** when the free list is empty.
 
-Each chunk holds `Sz * Nelts` bytes of usable memory and the data that `operator new` and `operator delete` require. Allocated chunks are never freed.
+Each chunk holds `Sz * Nelts` bytes of usable memory and the data that **operator new** and **operator delete** require. Allocated chunks are never freed.
 
 ### Constructors
 
@@ -66,7 +66,7 @@ void *allocate(std::size_t count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`count`|The number of elements in the array to be allocated.|
+|*count*|The number of elements in the array to be allocated.|
 
 ### Return Value
 
@@ -96,8 +96,8 @@ void deallocate(void* ptr, std::size_t count);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`ptr`|A pointer to the first object to be deallocated from storage.|
-|`count`|The number of objects to be deallocated from storage.|
+|*ptr*|A pointer to the first object to be deallocated from storage.|
+|*count*|The number of objects to be deallocated from storage.|
 
 ### Remarks
 

@@ -29,14 +29,14 @@ typedef struct  tagXFORM {  /* xfrm */
 ```  
   
 ## Remarks  
- The `XFORM` structure specifies a world-space to page-space transformation. The **eDx** and **eDy** members specify the horizontal and vertical translation components, respectively. The following table shows how the other members are used, depending on the operation:  
+ The `XFORM` structure specifies a world-space to page-space transformation. The `eDx` and `eDy` members specify the horizontal and vertical translation components, respectively. The following table shows how the other members are used, depending on the operation:  
   
 |Operation|eM11|eM12|eM21|eM22|  
 |---------------|----------|----------|----------|----------|  
 |`Rotation`|Cosine of rotation angle|Sine of rotation angle|Negative sine of rotation angle|Cosine of rotation angle|  
-|**Scaling**|Horizontal scaling component|Nothing|Nothing|Vertical scaling component|  
-|**Shear**|Nothing|Horizontal proportionality constant|Vertical proportionality constant|Nothing|  
-|**Reflection**|Horizontal reflection component|Nothing|Nothing|Vertical reflection component|  
+|`Scaling`|Horizontal scaling component|Nothing|Nothing|Vertical scaling component|  
+|`Shear`|Nothing|Horizontal proportionality constant|Vertical proportionality constant|Nothing|  
+|`Reflection`|Horizontal reflection component|Nothing|Nothing|Vertical reflection component|  
   
 ## Requirements  
  **Header:** wingdi.h  

@@ -76,12 +76,12 @@ void assign(value_type val, const error_category& _Cat);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`val`|The error code value to store in the `error_code`.|
-|`_Cat`|The error category to store in the `error_code`.|
+|*val*|The error code value to store in the `error_code`.|
+|*_Cat*|The error category to store in the `error_code`.|
 
 ### Remarks
 
-The member function stores `val` as the error code value and a pointer to `_Cat`.
+The member function stores *val* as the error code value and a pointer to *_Cat*.
 
 ## <a name="category"></a>  error_code::category
 
@@ -140,15 +140,15 @@ error_code(_Enum _Errcode,
 
 |Parameter|Description|
 |---------------|-----------------|
-|`val`|The error code value to store in the `error_code`.|
-|`_Cat`|The error category to store in the `error_code`.|
-|`_Errcode`|The enumeration value to store in the `error_code`.|
+|*val*|The error code value to store in the `error_code`.|
+|*_Cat*|The error category to store in the `error_code`.|
+|*_Errcode*|The enumeration value to store in the `error_code`.|
 
 ### Remarks
 
 The first constructor stores a zero error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category).
 
-The second constructor stores `val` as the error code value and a pointer to [error_category](http://msdn.microsoft.com/en-us/6fe57a15-63a1-4e79-8af4-6738e43e19c8).
+The second constructor stores *val* as the error code value and a pointer to [error_category](http://msdn.microsoft.com/6fe57a15-63a1-4e79-8af4-6738e43e19c8).
 
 The third constructor stores `(value_type)_Errcode` as the error code value and a pointer to the [generic_category](../standard-library/system-error-functions.md#generic_category).
 
@@ -180,7 +180,7 @@ bool operator==(const error_code& right) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The object to be tested for equality.|
+|*right*|The object to be tested for equality.|
 
 ### Return Value
 
@@ -202,11 +202,11 @@ bool operator!=(const error_code& right) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The object to be tested for inequality.|
+|*right*|The object to be tested for inequality.|
 
 ### Return Value
 
-**true** if the `error_code` object is not equal to the `error_code` object passed in `right`; otherwise **false**.
+**true** if the `error_code` object is not equal to the `error_code` object passed in *right*; otherwise **false**.
 
 ### Remarks
 
@@ -214,7 +214,7 @@ The member operator returns `!(*this == right)`.
 
 ## <a name="op_lt"></a>  error_code::operator&lt;
 
-Tests if the [error_code](http://msdn.microsoft.com/en-us/09c6ef90-b6f8-430a-b584-e168716c7e31) object is less than the `error_code` object passed in for comparison.
+Tests if the [error_code](http://msdn.microsoft.com/09c6ef90-b6f8-430a-b584-e168716c7e31) object is less than the `error_code` object passed in for comparison.
 
 ```cpp
 bool operator<(const error_code& right) const;
@@ -224,7 +224,7 @@ bool operator<(const error_code& right) const;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`right`|The error_code object to be compared.|
+|*right*|The error_code object to be compared.|
 
 ### Return Value
 
@@ -236,7 +236,7 @@ The member operator returns `category() < right.category() || category() == righ
 
 ## <a name="op_eq"></a>  error_code::operator=
 
-Assigns a new enumeration value to the [error_code](http://msdn.microsoft.com/en-us/09c6ef90-b6f8-430a-b584-e168716c7e31) object.
+Assigns a new enumeration value to the [error_code](http://msdn.microsoft.com/09c6ef90-b6f8-430a-b584-e168716c7e31) object.
 
 ```cpp
 template <class _Enum>
@@ -249,7 +249,7 @@ typename enable_if<is_error_code_enum<_Enum>::value,
 
 |Parameter|Description|
 |---------------|-----------------|
-|`_Errcode`|The enumeration value to assign to the `error_code` object.|
+|*_Errcode*|The enumeration value to assign to the `error_code` object.|
 
 ### Return Value
 
@@ -273,7 +273,7 @@ The Boolean value of the `error_code` object.
 
 ### Remarks
 
-The operator returns a value convertible to `true` only if [value](#value) is not equal to zero. The return type is convertible only to `bool`, not to `void *` or other known scalar types.
+The operator returns a value convertible to **true** only if [value](#value) is not equal to zero. The return type is convertible only to **bool**, not to `void *` or other known scalar types.
 
 ## <a name="value"></a>  error_code::value
 
@@ -299,7 +299,7 @@ typedef int value_type;
 
 ### Remarks
 
-This type definition is a synonym for `int`.
+This type definition is a synonym for **int**.
 
 ## See also
 

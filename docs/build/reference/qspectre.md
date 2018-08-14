@@ -47,6 +47,16 @@ When the **/Qspectre** option is enabled, the compiler attempts to identify inst
 
 The performance impact of **/Qspectre** has been seen to be negligible in several very large code bases, but there are no guarantees that performance of your code under **/Qspectre** remains unaffected. You should benchmark your code to determine the effect of the option on performance. If you know that the mitigation is not required in a performance-critical block or loop, the mitigation can be selectively disabled by use of a [__declspec(spectre(nomitigation))](../../cpp/spectre.md) directive. This directive is not available in compilers that only support the  **/d2guardspecload** option.
 
+### Required libraries
+
+The **/Qspectre** compiler option generates code that implicitly links versions of the runtime libraries that have been built to provide Spectre mitigations. These libraries are optional components that must be installed by using the Visual Studio Installer:
+
+- VC++ 2017 version *version_number* Libs for Spectre (x86 and x64)
+- Visual C++ ATL (x86/x64) with Spectre Mitigations
+- Visual C++ MFC for x86/x64 with Spectre Mitigations
+
+If you build your code by using **/Qspectre** and these libraries are not installed, the build system reports **warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found**. If your MFC or ATL code fails to build and the linker reports an error such as **fatal error LNK1104: cannot open file 'oldnames.lib'**, these missing libraries may be the cause.
+
 ### Additional information
 
 For more details please see the official [Microsoft Security Advisory ADV180002, Guidance to mitigate speculative execution side-channel vulnerabilities](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002). Guidance is also available from Intel, [Speculative Execution Side Channel Mitigations](https://software.intel.com/sites/default/files/managed/c5/63/336996-Speculative-Execution-Side-Channel-Mitigations.pdf), and ARM, [Cache Speculation Side-channels](https://developer.arm.com/-/media/Files/pdf/Cache_Speculation_Side-channels.pdf). For a Windows-specific overview of Spectre and Meltdown mitigations, see [Understanding the performance impact of Spectre and Meltdown mitigations on Windows Systems](https://cloudblogs.microsoft.com/microsoftsecure/2018/01/09/understanding-the-performance-impact-of-spectre-and-meltdown-mitigations-on-windows-systems/) on the Microsoft Secure blog. For an overview of Spectre vulnerability addressed by the MSVC mitigations, see [Spectre mitigations in MSVC](https://blogs.msdn.microsoft.com/vcblog/2018/01/15/spectre-mitigations-in-msvc./) on the Visual C++ Team Blog.

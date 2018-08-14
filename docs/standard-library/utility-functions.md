@@ -25,10 +25,10 @@ T exchange(T& val, Other&& new_val)
 
 ### Parameters
 
-`val`
+*val*  
  The object that will receive the value of new_val.
 
-`new_val`
+*new_val*  
  The object whose value is copied or moved into val.
 
 ### Remarks
@@ -85,12 +85,12 @@ constexpr Type&& forward(typename remove_reference<Type>::type&& Arg) noexcept
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Type`|The type of the value passed in `Arg`, which might be different than the type of `Arg`. Typically determined by a template argument of the forwarding function.|
-|`Arg`|The argument to cast.|
+|*Type*|The type of the value passed in *Arg*, which might be different than the type of *Arg*. Typically determined by a template argument of the forwarding function.|
+|*Arg*|The argument to cast.|
 
 ### Return Value
 
-Returns an rvalue reference to `Arg` if the value passed in `Arg` was originally an rvalue or a reference to an rvalue; otherwise, returns `Arg` without modifying its type.
+Returns an rvalue reference to *Arg* if the value passed in *Arg* was originally an rvalue or a reference to an rvalue; otherwise, returns *Arg* without modifying its type.
 
 ### Remarks
 
@@ -147,25 +147,25 @@ constexpr T2&& get(pair<T1, T2>&& Pr) noexcept;
 
 ### Parameters
 
-`Index`
+*Index*  
  The 0-based index of the designated element.
 
-`T1`
+*T1*  
  The type of the first pair element.
 
-`T2`
+*T2*  
  The type of the second pair element.
 
-`pr`
+*pr*  
  The pair to select from.
 
 ### Remarks
 
 The template functions each return a reference to an element of its `pair` argument.
 
-For the indexed overloads, if the value of `Index` is 0 the functions return `pr.first` and if the value of `Index` is 1 the functions return `pr.second`. The type `RI` is the type of the returned element.
+For the indexed overloads, if the value of *Index* is 0 the functions return `pr.first` and if the value of *Index* is 1 the functions return `pr.second`. The type `RI` is the type of the returned element.
 
-For the overloads that do not have an Index parameter, the element to return is deduced by the type argument. Calling `get<T>(Tuple)` will produce a compiler error if `pr` contains more or less than one element of type T.
+For the overloads that do not have an Index parameter, the element to return is deduced by the type argument. Calling `get<T>(Tuple)` will produce a compiler error if *pr* contains more or less than one element of type T.
 
 ### Example
 
@@ -218,10 +218,10 @@ pair<T, U> make_pair(T&& Val1, U&& Val2);
 
 ### Parameters
 
-`Val1`
+*Val1*  
  Value that initializes the first element of `pair`.
 
-`Val2`
+*Val2*  
  Value that initializes the second element of `pair`.
 
 ### Return Value
@@ -261,8 +261,8 @@ constexpr typename remove_reference<Type>::type&& move(Type&& Arg) noexcept;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Type`|A type deduced from the type of the argument passed in `Arg`, together with the reference collapsing rules.|
-|`Arg`|The argument to cast. Although the type of `Arg` appears to be specified as an rvalue reference, `move` also accepts lvalue arguments because lvalue references can bind to rvalue references.|
+|*Type*|A type deduced from the type of the argument passed in *Arg*, together with the reference collapsing rules.|
+|*Arg*|The argument to cast. Although the type of *Arg* appears to be specified as an rvalue reference, `move` also accepts lvalue arguments because lvalue references can bind to rvalue references.|
 
 ### Return Value
 
@@ -270,11 +270,11 @@ constexpr typename remove_reference<Type>::type&& move(Type&& Arg) noexcept;
 
 ### Remarks
 
-The template argument `Type` is not intended to be specified explicitly, but to be deduced from the type of the value passed in `Arg`. The type of `Type` is further adjusted according to the reference collapsing rules.
+The template argument *Type* is not intended to be specified explicitly, but to be deduced from the type of the value passed in *Arg*. The type of *Type* is further adjusted according to the reference collapsing rules.
 
-`move` does not move its argument. Instead, by unconditionally casting its argument—which might be an lvalue—to an rvalue reference, it enables the compiler to subsequently move, rather than copy, the value passed in `Arg` if its type is move-enabled. If its type is not move-enabled, it is copied instead.
+`move` does not move its argument. Instead, by unconditionally casting its argument—which might be an lvalue—to an rvalue reference, it enables the compiler to subsequently move, rather than copy, the value passed in *Arg* if its type is move-enabled. If its type is not move-enabled, it is copied instead.
 
-If the value passed in `Arg` is an lvalue—that is, it has a name or its address can be taken—it's invalidated when the move occurs. Do not refer to the value passed in `Arg` by its name or address after it's been moved.
+If the value passed in *Arg* is an lvalue—that is, it has a name or its address can be taken—it's invalidated when the move occurs. Do not refer to the value passed in *Arg* by its name or address after it's been moved.
 
 ## <a name="swap"></a>  swap
 
@@ -289,8 +289,8 @@ void swap(pair<T, U>& left, pair<T, U>& right);
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|An object of type `pair`.|
-|`right`|An object of type `pair`.|
+|*left*|An object of type `pair`.|
+|*right*|An object of type `pair`.|
 
 ### Remarks
 

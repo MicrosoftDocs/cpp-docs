@@ -83,7 +83,7 @@ CMFCKeyMapDialog(
  A pointer to the parent window of the `CMFCKeyMapDialog` object.  
   
  [in] *bEnablePrint*  
- `TRUE` if the list of accelerator keys can be printed; otherwise, `FALSE`. The default is `FALSE`.  
+ TRUE if the list of accelerator keys can be printed; otherwise, FALSE. The default is FALSE.  
   
 ### Remarks  
   
@@ -100,7 +100,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- A signed integer, such as `IDOK` or `IDCANCEL`, that is passed to the [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog) method. The method, in turn, closes the dialog box. For more information, see [CDialog::DoModal](../../mfc/reference/cdialog-class.md#domodal).  
+ A signed integer, such as IDOK or IDCANCEL, that is passed to the [CDialog::EndDialog](../../mfc/reference/cdialog-class.md#enddialog) method. The method, in turn, closes the dialog box. For more information, see [CDialog::DoModal](../../mfc/reference/cdialog-class.md#domodal).  
   
 ### Remarks  
  The keyboard mapping dialog box enables you to select and assign accelerator keys to various categories of commands. In addition, you can copy the selected accelerator keys and their description to the clipboard.  
@@ -207,7 +207,7 @@ virtual int OnPrintItem(
  The horizontal offset between the left of the page and the position of the item.  
   
  [in] *bCalcHeight*  
- `TRUE` to calculate the best height for the print item; `FALSE` to truncate the print item so that it fits the default space.  
+ TRUE to calculate the best height for the print item; FALSE to truncate the print item so that it fits the default space.  
   
 ### Return Value  
  The height of the printed item.  

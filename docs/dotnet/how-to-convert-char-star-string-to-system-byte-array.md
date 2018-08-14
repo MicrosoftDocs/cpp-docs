@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
-# How to: Convert char * String to System::Byte Array
+# How to: Convert char \* String to System::Byte Array
 The most efficient way to convert a `char *` string to a <xref:System.Byte> array is to use <xref:System.Runtime.InteropServices.Marshal> class.  
   
 ## Example  

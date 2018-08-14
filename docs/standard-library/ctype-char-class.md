@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # ctype&lt;char&gt; Class
 
-The class is an explicit specialization of template class **ctype\<CharType**> to type `char`, describing an object that can serve as a locale facet to characterize various properties of a character of type `char`.
+The class is an explicit specialization of template class `ctype\<CharType>` to type **char**, describing an object that can serve as a locale facet to characterize various properties of a character of type **char**.
 
 ## Syntax
 
@@ -120,15 +120,15 @@ protected:
 
 The explicit specialization differs from the template class in several ways:
 
-- An object of class ctype< `char`> stores a pointer to the first element of a ctype mask table, an array of UCHAR_MAX + 1 elements of type **ctype_base::mask**. It also stores a Boolean object that indicates whether the array should be deleted (using `operator delete[]`) when the ctype\< **Elem**> object is destroyed.
+- An object of class ctype< `char`> stores a pointer to the first element of a ctype mask table, an array of UCHAR_MAX + 1 elements of type `ctype_base::mask`. It also stores a Boolean object that indicates whether the array should be deleted (using `operator delete[]`) when the ctype\< **Elem**> object is destroyed.
 
-- Its sole public constructor lets you specify **tab**, the ctype mask table, and **del**, the Boolean object that is true if the array should be deleted when the ctype< `char`> object is destroyed, as well as the reference-count parameter refs.
+- Its sole public constructor lets you specify `tab`, the ctype mask table, and `del`, the Boolean object that is true if the array should be deleted when the ctype< `char`> object is destroyed, as well as the reference-count parameter refs.
 
-- The protected member function **table** returns the stored ctype mask table.
+- The protected member function `table` returns the stored ctype mask table.
 
-- The static member object **table_size** specifies the minimum number of elements in a ctype mask table.
+- The static member object `table_size` specifies the minimum number of elements in a ctype mask table.
 
-- The protected static member function **classic_table**( returns the ctype mask table appropriate to the "C" locale.
+- The protected static member function `classic_table`( returns the ctype mask table appropriate to the "C" locale.
 
 - There are no protected virtual member functions [do_is](../standard-library/ctype-class.md#do_is), [do_scan_is](../standard-library/ctype-class.md#do_scan_is), or [do_scan_not](../standard-library/ctype-class.md#do_scan_not). The corresponding public member functions perform the equivalent operations themselves.
 

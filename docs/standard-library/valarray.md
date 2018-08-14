@@ -55,8 +55,8 @@ These template classes and functions are permitted unusual latitude in the inter
 |-|-|
 |[operator!=](../standard-library/valarray-operators.md#op_neq)|Tests whether the corresponding elements of two equally sized valarrays are unequal or whether all the elements of a valarray are unequal a specified value of the valarray's element type.|
 |[operator%](../standard-library/valarray-operators.md#op_mod)|Obtains the remainder of dividing the corresponding elements of two equally sized valarrays or of dividing a valarray by a specified value of the valarray's element type or of dividing a specified value by a valarray.|
-|[operator&](../standard-library/valarray-operators.md#op_amp)|Obtains the bitwise **AND** between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the element type.|
-|[operator&&](../standard-library/valarray-operators.md#op_amp_amp)|Obtains the logical **AND** between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the valarray's element type.|
+|[operator&](../standard-library/valarray-operators.md#op_amp)|Obtains the bitwise `AND` between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the element type.|
+|[operator&&](../standard-library/valarray-operators.md#op_amp_amp)|Obtains the logical `AND` between corresponding elements of two equally sized valarrays or between a valarray and a specified value of the valarray's element type.|
 |[operator>](../standard-library/valarray-operators.md#op_gt)|Tests whether the elements of one valarray are greater than the elements of an equally sized valarray or whether all the elements of a valarray are greater or less than a specified value of the valarray's element type.|
 |[operator>=](../standard-library/valarray-operators.md#op_gt_eq)|Tests whether the elements of one valarray are greater than or equal to the elements of an equally sized valarray or whether all the elements of a valarray are greater than or equal to or less than or equal to a specified value.|
 |[operator>>](../standard-library/valarray-operators.md#op_gt_gt)|Right-shifts the bits for each element of a valarray a specified number of positions or by an element-wise amount specified by a second valarray.|
@@ -82,13 +82,13 @@ These template classes and functions are permitted unusual latitude in the inter
 |[mask_array Class](../standard-library/mask-array-class.md)|An internal, auxiliary template class that supports objects that are subsets of parent valarrays, specified with a Boolean expression, by providing operations between the subset arrays.|
 |[slice Class](../standard-library/slice-class.md)|A utility class to valarray that is used to define one-dimensional, vector-like subsets of a valarray.|
 |[slice_array Class](../standard-library/slice-array-class.md)|An internal, auxiliary template class that supports slice objects by providing operations between subset arrays defined by the slice of a valarray.|
-|[valarray Class](../standard-library/valarray-class.md)|The template class describes an object that controls a sequence of elements of type **Type** that are stored as an array and designed for performing high-speed mathematical operations, optimized for computational performance.|
+|[valarray Class](../standard-library/valarray-class.md)|The template class describes an object that controls a sequence of elements of type `Type` that are stored as an array and designed for performing high-speed mathematical operations, optimized for computational performance.|
 
 ### Specializations
 
 |||
 |-|-|
-|[valarray\<bool> Class](../standard-library/valarray-bool-class.md)|A specialized version of the template class valarray\<**Type**> to elements of type `bool`.|
+|[valarray\<bool> Class](../standard-library/valarray-bool-class.md)|A specialized version of the template class valarray\<**Type**> to elements of type **bool**.|
 
 ## See also
 

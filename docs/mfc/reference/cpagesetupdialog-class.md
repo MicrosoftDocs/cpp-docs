@@ -36,7 +36,7 @@ class CPageSetupDialog : public CCommonDialog
 |[CPageSetupDialog::CreatePrinterDC](#createprinterdc)|Creates a device context for printing.|  
 |[CPageSetupDialog::DoModal](#domodal)|Displays the dialog box and allows the user make a selection.|  
 |[CPageSetupDialog::GetDeviceName](#getdevicename)|Returns the device name of the printer.|  
-|[CPageSetupDialog::GetDevMode](#getdevmode)|Returns the current `DEVMODE` of the printer.|  
+|[CPageSetupDialog::GetDevMode](#getdevmode)|Returns the current DEVMODE of the printer.|  
 |[CPageSetupDialog::GetDriverName](#getdrivername)|Returns the driver used by the printer.|  
 |[CPageSetupDialog::GetMargins](#getmargins)|Returns the current margin settings of the printer.|  
 |[CPageSetupDialog::GetPaperSize](#getpapersize)|Returns the paper size of the printer.|  
@@ -53,11 +53,11 @@ class CPageSetupDialog : public CCommonDialog
 ## Remarks  
  This class is designed to take the place of the Print Setup dialog box.  
   
- To use a `CPageSetupDialog` object, first create the object using the `CPageSetupDialog` constructor. Once the dialog box has been constructed, you can set or modify any values in the `m_psd` data member to initialize the values of the dialog box's controls. The [m_psd](#m_psd) structure is of type **PAGESETUPDLG**.  
+ To use a `CPageSetupDialog` object, first create the object using the `CPageSetupDialog` constructor. Once the dialog box has been constructed, you can set or modify any values in the `m_psd` data member to initialize the values of the dialog box's controls. The [m_psd](#m_psd) structure is of type PAGESETUPDLG.  
   
- After initializing the dialog box controls, call the `DoModal` member function to display the dialog box and allow the user to select print options. `DoModal` returns whether the user selected the OK ( **IDOK**) or Cancel ( **IDCANCEL**) button.  
+ After initializing the dialog box controls, call the `DoModal` member function to display the dialog box and allow the user to select print options. `DoModal` returns whether the user selected the OK (IDOK) or Cancel (IDCANCEL) button.  
   
- If `DoModal` returns **IDOK**, you can use several of `CPageSetupDialog`'s member functions, or access the `m_psd` data member, to retrieve information input by the user.  
+ If `DoModal` returns IDOK, you can use several of `CPageSetupDialog`'s member functions, or access the `m_psd` data member, to retrieve information input by the user.  
   
 > [!NOTE]
 >  After the common OLE Page Setup dialog box is dismissed, any changes made by the user will not be saved by the framework. It is up to the application itself to save any values from this dialog box to a permanent location, such as member of the application's document or application class.  
@@ -91,41 +91,41 @@ CPageSetupDialog(
  *dwFlags*  
  One or more flags you can use to customize the settings of the dialog box. The values can be combined using the bitwise-OR operator. These values have the following meanings:  
   
-- **PSD_DEFAULTMINMARGINS** Sets the minimum allowable widths for the page margins to be the same as the printer's minimums. This flag is ignored if the **PSD_MARGINS** and **PSD_MINMARGINS** flags are also specified.  
+- PSD_DEFAULTMINMARGINS Sets the minimum allowable widths for the page margins to be the same as the printer's minimums. This flag is ignored if the PSD_MARGINS and PSD_MINMARGINS flags are also specified.  
   
-- **PSD_INWININIINTLMEASURE** Not implemented.  
+- PSD_INWININIINTLMEASURE Not implemented.  
   
-- **PSD_MINMARGINS** Causes the system to use the values specified in the **rtMinMargin** member as the minimum allowable widths for the left, top, right, and bottom margins. The system prevents the user from entering a width that is less than the specified minimum. If **PSD_MINMARGINS** is not specified, the system sets the minimum allowable widths to those allowed by the printer.  
+- PSD_MINMARGINS Causes the system to use the values specified in the `rtMinMargin` member as the minimum allowable widths for the left, top, right, and bottom margins. The system prevents the user from entering a width that is less than the specified minimum. If PSD_MINMARGINS is not specified, the system sets the minimum allowable widths to those allowed by the printer.  
   
-- **PSD_MARGINS** Activates the margin control area.  
+- PSD_MARGINS Activates the margin control area.  
   
-- **PSD_INTHOUSANDTHSOFINCHES** Causes the units of the dialog box to be measured in 1/1000 of an inch.  
+- PSD_INTHOUSANDTHSOFINCHES Causes the units of the dialog box to be measured in 1/1000 of an inch.  
   
-- **PSD_INHUNDREDTHSOFMILLIMETERS** Causes the units of the dialog box to be measured in 1/100 of a millimeter.  
+- PSD_INHUNDREDTHSOFMILLIMETERS Causes the units of the dialog box to be measured in 1/100 of a millimeter.  
   
-- **PSD_DISABLEMARGINS** Disables the margin dialog box controls.  
+- PSD_DISABLEMARGINS Disables the margin dialog box controls.  
   
-- **PSD_DISABLEPRINTER** Disables the Printer button.  
+- PSD_DISABLEPRINTER Disables the Printer button.  
   
-- **PSD_NOWARNING** Prevents the warning message from being displayed when there is no default printer.  
+- PSD_NOWARNING Prevents the warning message from being displayed when there is no default printer.  
   
-- **PSD_DISABLEORIENTATION** Disables the page orientation dialog control.  
+- PSD_DISABLEORIENTATION Disables the page orientation dialog control.  
   
-- **PSD_RETURNDEFAULT** Causes `CPageSetupDialog` to return [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures that are initialized for the system default printer without displaying a dialog box. It is assumed that both **hDevNames** and **hDevMode** are **NULL**; otherwise, the function returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only **hDevNames** is returned; **hDevMode** is **NULL**.  
+- PSD_RETURNDEFAULT Causes `CPageSetupDialog` to return [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures that are initialized for the system default printer without displaying a dialog box. It is assumed that both `hDevNames` and `hDevMode` are NULL; otherwise, the function returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only `hDevNames` is returned; `hDevMode` is NULL.  
   
-- **PSD_DISABLEPAPER** Disables the paper selection control.  
+- PSD_DISABLEPAPER Disables the paper selection control.  
   
-- **PSD_SHOWHELP** Causes the dialog box to show the Help button. The **hwndOwner** member must not be **NULL** if this flag is specified.  
+- PSD_SHOWHELP Causes the dialog box to show the Help button. The `hwndOwner` member must not be NULL if this flag is specified.  
   
-- **PSD_ENABLEPAGESETUPHOOK** Enables the hook function specified in **lpfnSetupHook**.  
+- PSD_ENABLEPAGESETUPHOOK Enables the hook function specified in `lpfnSetupHook`.  
   
-- **PSD_ENABLEPAGESETUPTEMPLATE** Causes the operating system to create the dialog box by using the dialog template box identified by **hInstance** and **lpSetupTemplateName**.  
+- PSD_ENABLEPAGESETUPTEMPLATE Causes the operating system to create the dialog box by using the dialog template box identified by `hInstance` and `lpSetupTemplateName`.  
   
-- **PSD_ENABLEPAGESETUPTEMPLATEHANDLE** Indicates that **hInstance** identifies a data block that contains a preloaded dialog box template. The system ignores **lpSetupTemplateName** if this flag is specified.  
+- PSD_ENABLEPAGESETUPTEMPLATEHANDLE Indicates that `hInstance` identifies a data block that contains a preloaded dialog box template. The system ignores `lpSetupTemplateName` if this flag is specified.  
   
-- **PSD_ENABLEPAGEPAINTHOOK** Enables the hook function specified in **lpfnPagePaintHook**.  
+- PSD_ENABLEPAGEPAINTHOOK Enables the hook function specified in `lpfnPagePaintHook`.  
   
-- **PSD_DISABLEPAGEPAINTING** Disables the draw area of the dialog box.  
+- PSD_DISABLEPAGEPAINTING Disables the draw area of the dialog box.  
   
  *pParentWnd*  
  Pointer to the dialog box's parent or owner.  
@@ -154,9 +154,9 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- **IDOK** or **IDCANCEL**. If **IDCANCEL** is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
+ IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
   
- **IDOK** and **IDCANCEL** are constants that indicate whether the user selected the OK or Cancel button.  
+ IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.  
   
 ### Remarks  
  In addition, the user can access the printer setup options such as network location and properties specific to the selected printer.  
@@ -214,10 +214,10 @@ void GetMargins(
   
 ### Parameters  
  *lpRectMargins*  
- Pointer to a [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass **NULL** for this parameter, if you are not interested in this rectangle.  
+ Pointer to a [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that describes (in 1/1000 inches or 1/100 mm) the print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.  
   
  *lpRectMinMargins*  
- Pointer to a `RECT` structure or `CRect` object that describes (in 1/1000 inches or 1/100 mm) the minimum print margins for the currently selected printer. Pass **NULL** for this parameter, if you are not interested in this rectangle.  
+ Pointer to a `RECT` structure or `CRect` object that describes (in 1/1000 inches or 1/100 mm) the minimum print margins for the currently selected printer. Pass NULL for this parameter, if you are not interested in this rectangle.  
   
 ##  <a name="getpapersize"></a>  CPageSetupDialog::GetPaperSize  
  Call this function to retrieve the size of the paper selected for printing.  
@@ -240,7 +240,7 @@ CString GetPortName() const;
  The name of the currently selected printer port.  
   
 ##  <a name="m_psd"></a>  CPageSetupDialog::m_psd  
- A structure of type **PAGESETUPDLG**, whose members store the characteristics of the dialog object.  
+ A structure of type PAGESETUPDLG, whose members store the characteristics of the dialog object.  
   
 ```  
 PAGESETUPDLG m_psd;  
@@ -272,17 +272,17 @@ virtual UINT OnDrawPage(
  *nMessage*  
  Specifies a message, indicating the area of the page currently being drawn. Can be one of the following:  
   
-- **WM_PSD_FULLPAGERECT** The entire page area.  
+- WM_PSD_FULLPAGERECT The entire page area.  
   
-- **WM_PSD_MINMARGINRECT** Current minimum margins.  
+- WM_PSD_MINMARGINRECT Current minimum margins.  
   
-- **WM_PSD_MARGINRECT** Current margins.  
+- WM_PSD_MARGINRECT Current margins.  
   
-- **WM_PSD_GREEKTEXTRECT** Contents of the page.  
+- WM_PSD_GREEKTEXTRECT Contents of the page.  
   
-- **WM_PSD_ENVSTAMPRECT** Area reserved for a postage stamp representation.  
+- WM_PSD_ENVSTAMPRECT Area reserved for a postage stamp representation.  
   
-- **WM_PSD_YAFULLPAGERECT** Area for a return address representation. This area extends to the edges of the sample page area.  
+- WM_PSD_YAFULLPAGERECT Area for a return address representation. This area extends to the edges of the sample page area.  
   
  *lpRect*  
  Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/18113766-3975-4369-bc07-92e34cba712e/locales/en-us) object containing the coordinates of the drawing area.  
@@ -333,13 +333,13 @@ virtual UINT PreDrawPage(
 -   0x01f   Envelope in portrait mode (dot matrix)  
   
  *pPSD*  
- Pointer to a **PAGESETUPDLG** structure. For more information on [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), see the Windows SDK.  
+ Pointer to a `PAGESETUPDLG` structure. For more information on [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), see the Windows SDK.  
   
 ### Return Value  
  Nonzero value if handled; otherwise 0.  
   
 ### Remarks  
- Override this function to customize the drawing of the image. If you override this function and return **TRUE**, you must draw the entire image. If you override this function and return **FALSE**, the entire default image is drawn by the framework.  
+ Override this function to customize the drawing of the image. If you override this function and return TRUE, you must draw the entire image. If you override this function and return FALSE, the entire default image is drawn by the framework.  
   
 ## See Also  
  [MFC Sample WORDPAD](../../visual-cpp-samples.md)   

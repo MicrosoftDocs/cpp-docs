@@ -76,7 +76,7 @@ class CTime
  For more information about using `CTime`, see the articles [Date and Time](../../atl-mfc-shared/date-and-time.md), and [Time Management](../../c-runtime-library/time-management.md) in the Run-Time Library Reference.  
   
 > [!NOTE]
->  The `CTime` structure changed from MFC 7.1 to MFC 8.0. If you serialize a `CTime` structure by using the `operator <<` under MFC 8.0 or a later version, the resulting file will not be readable on older versions of MFC.  
+>  The `CTime` structure changed from MFC 7.1 to MFC 8.0. If you serialize a `CTime` structure by using the **operator <<** under MFC 8.0 or a later version, the resulting file will not be readable on older versions of MFC.  
   
 ## Requirements  
  **Header:** atltime.h  
@@ -94,11 +94,11 @@ bool operator>=(CTime time) const throw();
 ```  
   
 ### Parameters  
- `time`  
+ *time*  
  The `CTime` object to be compared.  
   
 ### Return Value  
- These operators compare two absolute times and return **true** if the condition is true; otherwise **false**.  
+ These operators compare two absolute times and return TRUE if the condition is true; otherwise FALSE.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#161](../../atl-mfc-shared/codesnippet/cpp/ctime-class_1.cpp)]  
@@ -118,32 +118,32 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
 ```  
   
 ### Parameters  
- `timeSrc`  
+ *timeSrc*  
  Indicates a `CTime` object that already exists.  
   
- `time`  
+ *time*  
  A **__time64_t** time value, which is the number of seconds after January 1, 1970 UTC. Note that this will be adjusted to your local time. For example, if you are in New York and create a `CTime` object by passing a parameter of 0, [CTime::GetMonth](#getmonth) will return 12.  
 
   
- `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec`  
+ *nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
  Indicates the date and time values to be copied into the new `CTime` object.  
   
- `nDST`  
+ *nDST*  
  Indicates whether daylight savings time is in effect. Can have one of three values:  
   
-- `nDST` set to 0Standard time is in effect.  
+- *nDST* set to 0Standard time is in effect.  
   
-- `nDST` set to a value greater than 0Daylight savings time is in effect.  
+- *nDST* set to a value greater than 0Daylight savings time is in effect.  
   
-- `nDST` set to a value less than 0The default. Automatically computes whether standard time or daylight savings time is in effect.  
+- *nDST* set to a value less than 0The default. Automatically computes whether standard time or daylight savings time is in effect.  
   
- `wDosDate`, `wDosTime`  
+ *wDosDate*, *wDosTime*  
  MS-DOS date and time values to be converted to a date/time value and copied into the new `CTime` object.  
   
- `st`  
+ *st*  
  A [SYSTEMTIME](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/d6609fff-1931-4818-8a26-f042630af0b0/locales/en-us) structure to be converted to a date/time value and copied into the new `CTime` object.  
   
- `ft`  
+ *ft*  
  A [FILETIME](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/979ce746-dc17-4147-89f8-41d05c5fcc5f/locales/en-us) structure to be converted to a date/time value and copied into the new `CTime` object.  
   
  dbts  
@@ -152,33 +152,33 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
 ### Remarks  
  Each constructor is described below:  
   
-- **CTime();** Constructs an uninitialized `CTime` object. This constructor allows you to define `CTime` object arrays. You should initialize such arrays with valid times before using.  
+- `CTime();` Constructs an uninitialized `CTime` object. This constructor allows you to define `CTime` object arrays. You should initialize such arrays with valid times before using.  
   
-- **CTime( const CTime& );** Constructs a `CTime` object from another `CTime` value.  
+- `CTime( const CTime& );` Constructs a `CTime` object from another `CTime` value.  
   
-- **CTime( __time64_t );** Constructs a `CTime` object from a **__time64_t** type. This constructor expects a UTC time and converts the result to a local time before storing the result.  
+- `CTime( __time64_t );` Constructs a `CTime` object from a **__time64_t** type. This constructor expects a UTC time and converts the result to a local time before storing the result.  
   
-- **CTime( int, int, ...);** Constructs a `CTime` object from local time components with each component constrained to the following ranges:  
+- `CTime( int, int, ...);` Constructs a `CTime` object from local time components with each component constrained to the following ranges:  
   
     |Component|Range|  
     |---------------|-----------|  
-    |`nYear`|1970-3000|  
-    |`nMonth`|1-12|  
-    |`nDay`|1-31|  
-    |`nHour`|0-23|  
-    |`nMin`|0-59|  
-    |`nSec`|0-59|  
+    |*nYear*|1970-3000|  
+    |*nMonth*|1-12|  
+    |*nDay*|1-31|  
+    |*nHour*|0-23|  
+    |*nMin*|0-59|  
+    |*nSec*|0-59|  
   
      This constructor makes the appropriate conversion to UTC. The Debug version of the Microsoft Foundation Class Library asserts if one or more of the time components are out of range. You must validate the arguments before calling. This constructor expects a local time.  
   
-- **CTime( WORD, WORD );** Constructs a `CTime` object from the specified MS-DOS date and time values. This constructor expects a local time.  
+- `CTime( WORD, WORD );` Constructs a `CTime` object from the specified MS-DOS date and time values. This constructor expects a local time.  
   
-- **CTime( const SYSTEMTIME& );** Constructs a `CTime` object from a `SYSTEMTIME` structure. This constructor expects a local time.  
+- `CTime( const SYSTEMTIME& );` Constructs a `CTime` object from a `SYSTEMTIME` structure. This constructor expects a local time.  
   
-- **CTime( const FILETIME& );** Constructs a `CTime` object from a `FILETIME` structure. You most likely will not use `CTime FILETIME` initialization directly. If you use a `CFile` object to manipulate a file, `CFile::GetStatus` retrieves the file time stamp for you through a `CTime` object initialized with a `FILETIME` structure. This constructor assumes a time based on UTC and automatically converts the value to local time before storing the result.  
+- `CTime( const FILETIME& );` Constructs a `CTime` object from a `FILETIME` structure. You most likely will not use `CTime FILETIME` initialization directly. If you use a `CFile` object to manipulate a file, `CFile::GetStatus` retrieves the file time stamp for you through a `CTime` object initialized with a `FILETIME` structure. This constructor assumes a time based on UTC and automatically converts the value to local time before storing the result.  
   
     > [!NOTE]
-    >  The constructor using **DBTIMESTAMP** parameter is only available when OLEDB.h is included.  
+    >  The constructor using `DBTIMESTAMP` parameter is only available when OLEDB.h is included.  
   
  For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure in the Windows SDK. Also see the [MS-DOS Date and Time](http://msdn.microsoft.com/library/windows/desktop/ms724503) entry in the Windows SDK.  
   
@@ -194,10 +194,10 @@ CString Format(UINT nFormatID) const;
 ```  
   
 ### Parameters  
- `pszFormat`  
- A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent ( `%`) sign, are replaced by the corresponding `CTime` component. Other characters in the formatting string are copied unchanged to the returned string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for a list of formatting codes.  
+ *pszFormat*  
+ A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent (`%`) sign, are replaced by the corresponding `CTime` component. Other characters in the formatting string are copied unchanged to the returned string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for a list of formatting codes.  
   
- `nFormatID`  
+ *nFormatID*  
  The ID of the string that identifies this format.  
   
 ### Return Value  
@@ -220,10 +220,10 @@ CString FormatGmt(UINT nFormatID) const;
 ```  
   
 ### Parameters  
- `pszFormat`  
+ *pszFormat*  
  Specifies a formatting string similar to the `printf` formatting string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for details.  
   
- `nFormatID`  
+ *nFormatID*  
  The ID of the string that identifies this format.  
   
 ### Return Value  
@@ -245,14 +245,14 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 ```  
   
 ### Parameters  
- `dbts`  
+ *dbts*  
  A reference to a DBTIMESTAMP structure containing the current local time.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Stores the resulting time in the referenced `dbts` structure. The **DBTIMESTAMP** data structure initialized by this function will have its **fraction** member set to zero.  
+ Stores the resulting time in the referenced *dbts* structure. The `DBTIMESTAMP` data structure initialized by this function will have its `fraction` member set to zero.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#150](../../atl-mfc-shared/codesnippet/cpp/ctime-class_4.cpp)]  
@@ -269,10 +269,10 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
  A reference to a [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will hold the converted date/time value of the `CTime` object.  
   
 ### Return Value  
- True if successful; otherwise false.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
- `GetAsSystemTime` stores the resulting time in the referenced *timeDest* structure. The `SYSTEMTIME` data structure initialized by this function will have its **wMilliseconds** member set to zero.  
+ `GetAsSystemTime` stores the resulting time in the referenced *timeDest* structure. The `SYSTEMTIME` data structure initialized by this function will have its `wMilliseconds` member set to zero.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#151](../../atl-mfc-shared/codesnippet/cpp/ctime-class_5.cpp)]  
@@ -330,8 +330,8 @@ struct tm* GetGmtTm(struct tm* ptm) const;
 ```  
   
 ### Parameters  
- `ptm`  
- Points to a buffer that will receive the time data. If this pointer is **NULL**, an exception is thrown.  
+ *ptm*  
+ Points to a buffer that will receive the time data. If this pointer is NULL, an exception is thrown.  
   
 ### Return Value  
  A pointer to a filled-in **struct tm** as defined in the include file TIME.H. See [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) for the structure layout.  
@@ -339,7 +339,7 @@ struct tm* GetGmtTm(struct tm* ptm) const;
 ### Remarks  
  `GetGmtTm` returns UTC.  
   
- `ptm` cannot be `NULL`. If you want to revert to the old behavior, in which `ptm` could be `NULL` to indicate that an internal, statically allocated buffer should be used, then undefine `_SECURE_ATL`.  
+ *ptm* cannot be NULL. If you want to revert to the old behavior, in which *ptm* could be NULL to indicate that an internal, statically allocated buffer should be used, then undefine _SECURE_ATL.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#155](../../atl-mfc-shared/codesnippet/cpp/ctime-class_9.cpp)]  
@@ -368,8 +368,8 @@ struct tm* GetLocalTm(struct tm* ptm) const;
 ```  
   
 ### Parameters  
- `ptm`  
- Points to a buffer that will receive the time data. If this pointer is **NULL**, an exception is thrown.  
+ *ptm*  
+ Points to a buffer that will receive the time data. If this pointer is NULL, an exception is thrown.  
   
 ### Return Value  
  A pointer to a filled-in **struct tm** as defined in the include file TIME.H. See [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) for the structure layout.  
@@ -377,7 +377,7 @@ struct tm* GetLocalTm(struct tm* ptm) const;
 ### Remarks  
  `GetLocalTm` returns local time.  
   
- `ptm` cannot be `NULL`. If you want to revert to the old behavior, in which `ptm` could be `NULL` to indicate that an internal, statically allocated buffer should be used, then undefine `_SECURE_ATL`.  
+ *ptm* cannot be NULL. If you want to revert to the old behavior, in which *ptm* could be NULL to indicate that an internal, statically allocated buffer should be used, then undefine _SECURE_ATL.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#157](../../atl-mfc-shared/codesnippet/cpp/ctime-class_11.cpp)]  
@@ -438,7 +438,7 @@ __time64_t GetTime() const throw();
 ```  
   
 ### Return Value  
- **GetTime** will return the number of seconds between the current `CTime` object and January 1, 1970.  
+ `GetTime` will return the number of seconds between the current `CTime` object and January 1, 1970.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#158](../../atl-mfc-shared/codesnippet/cpp/ctime-class_12.cpp)]  
@@ -467,7 +467,7 @@ CTime& operator=(__time64_t time) throw();
 ```  
   
 ### Parameters  
- `time`  
+ *time*  
  The new date/time value.  
   
 ### Return Value  
@@ -489,7 +489,7 @@ CTimeSpan operator-(CTime time) const throw();
  *timeSpan*  
  The `CTimeSpan` object to be added or subtracted.  
   
- `time`  
+ *time*  
  The `CTime` object to be subtracted.  
   
 ### Return Value  
@@ -510,7 +510,7 @@ CTime& operator-=(CTimeSpan span) throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  The `CTimeSpan` object to be added or subtracted.  
   
 ### Return Value  
@@ -534,7 +534,7 @@ CArchive& Serialize64(CArchive& ar);
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  The `CArchive` object that you want to update.  
   
 ### Return Value  

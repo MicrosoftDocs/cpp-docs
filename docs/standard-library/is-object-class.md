@@ -25,12 +25,12 @@ struct is_object;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds false if the type `Ty` is a reference type, a function type, or void, or a `cv-qualified` form of one of them, otherwise holds true.
+An instance of the type predicate holds false if the type *Ty* is a reference type, a function type, or void, or a `cv-qualified` form of one of them, otherwise holds true.
 
 ## Example
 

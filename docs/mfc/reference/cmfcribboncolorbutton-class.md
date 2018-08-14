@@ -90,7 +90,7 @@ void AddColorsGroup(
  The list of colors.  
   
  [in] *bContiguousColumns*  
- Controls how the color items are displayed in the group. If `TRUE`, the color items are drawn without a vertical spacing. If `FALSE`, the color items are drawn with a vertical spacing.  
+ Controls how the color items are displayed in the group. If TRUE, the color items are drawn without a vertical spacing. If FALSE, the color items are drawn with a vertical spacing.  
   
 ### Remarks  
  Use this function to make the color pop-up display several groups of colors. You can control how the colors are displayed in group.  
@@ -132,7 +132,7 @@ CMFCRibbonColorButton(
  The color of the button (defaults to black).  
   
  [in] *bSimpleButtonLook*  
- If `TRUE`, the button is drawn as a simple rectangle.  
+ If TRUE, the button is drawn as a simple rectangle.  
   
  [in] *nLargeImageIndex*  
  The zero-based index of the large image to appear on the button.  
@@ -162,7 +162,7 @@ void EnableAutomaticButton(
  An RGB value that specifies the **Automatic** button's default color.  
   
  [in] *bEnable*  
- `TRUE` if the **Automatic** button is enabled; `FALSE` if it is disabled.  
+ TRUE if the **Automatic** button is enabled; FALSE if it is disabled.  
   
  [in] *lpszToolTip*  
  The tooltip of the **Automatic** button.  
@@ -171,7 +171,7 @@ void EnableAutomaticButton(
  Specifies whether the **Automatic** button is at the top, before color palette.  
   
  [in] *bDrawBorder*  
- `TRUE` if the application draws a border around the color bar on the ribbon color button. Color bar displays the currently selected color. `FALSE` if the application does not draw a border  
+ TRUE if the application draws a border around the color bar on the ribbon color button. Color bar displays the currently selected color. FALSE if the application does not draw a border  
   
 ##  <a name="enableotherbutton"></a>  CMFCRibbonColorButton::EnableOtherButton  
  Enables the **Other** button.  

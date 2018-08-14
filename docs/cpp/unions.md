@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Unions
-A `union` is a user-defined type in which all members share the same memory location. This means that at any given time a union can contain no more than one object from its list of members. It also means that no matter how many members a union has, it always uses only enough memory to store the largest member.  
+A **union** is a user-defined type in which all members share the same memory location. This means that at any given time a union can contain no more than one object from its list of members. It also means that no matter how many members a union has, it always uses only enough memory to store the largest member.  
   
  Unions can be useful for conserving memory when you have lots of objects and/or limited memory. However they require extra care to use correctly because you are responsible for ensuring that you always access the last member that was written to. If any member types have a non-trivial constructor, then you must write additional code to explicitly construct and destroy that member. Before using a union, consider whether the problem you are trying to solve could be better expressed by using a base class and derived classes.  
   
@@ -23,17 +23,17 @@ A `union` is a user-defined type in which all members share the same memory loca
 union [name]  { member-list };  
 ```  
   
-#### Parameters  
- `name`  
+### Parameters  
+ *name*  
  The type name given to the union.  
   
- `member-list`  
+ *member-list*  
  Members that the union can contain. See Remarks.  
   
 ## Remarks  
   
 ## Declaring a Union  
- Begin the declaration of a union with the `union` keyword, and enclose the member list in curly braces:  
+ Begin the declaration of a union with the **union** keyword, and enclose the member list in curly braces:  
   
 ```cpp  
 // declaring_a_union.cpp  
@@ -137,7 +137,6 @@ void Initialize()
     second.wind = { 204,1418859354, 14, 27 };  
     inputs.push(second);  
 }  
-  
 ```  
   
  In the previous example, note that the union in the Input struct has no name. This is an anonymous union and its members can be accessed as if they were direct members of the struct. For more information about anonymous unions, see the section below.  
@@ -591,7 +590,6 @@ private:
         WindData wind;  
     };  
 };  
-  
 ```  
   
  Unions cannot store references. Unions don’t support inheritance, therefore a union itself cannot be used as a base class, or inherit from another class, or have virtual functions.  
@@ -621,7 +619,6 @@ int main()
  10  
  3.141600  
 */  
-  
 ```  
   
  The `NumericType` union is arranged in memory (conceptually) as shown in the following figure.  
@@ -642,11 +639,11 @@ In addition to the restrictions for named unions, anonymous unions are subject t
   
 -   They must also be declared as **static** if declared in file or namespace scope.  
   
--   They can have only public members; private and protected members in anonymous unions generate errors.  
+-   They can have only **public** members; **private** and **protected** members in anonymous unions generate errors.  
   
 -   They cannot have member functions.  
   
-## See Also  
+## See also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [class](../cpp/class-cpp.md)   

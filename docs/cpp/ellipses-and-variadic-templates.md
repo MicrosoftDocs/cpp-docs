@@ -38,7 +38,7 @@ template<typename ... Arguments> class classname;
   
  Notice that this article uses the convention that's shown in the first example (the ellipsis is attached to `typename`).  
   
- In the preceding examples, `Arguments` is a parameter pack. The class `classname` can accept a variable number of arguments, as in these examples:  
+ In the preceding examples, *Arguments* is a parameter pack. The class `classname` can accept a variable number of arguments, as in these examples:  
   
 ```cpp  
 template<typename... Arguments> class vtclass;  
@@ -47,14 +47,12 @@ vtclass< > vtinstance1;
 vtclass<int> vtinstance2;  
 vtclass<float, bool> vtinstance3;  
 vtclass<long, std::vector<int>, std::string> vtinstance4;  
-  
 ```  
   
  By using a variadic template class definition, you can also require at least one parameter:  
   
 ```cpp  
 template <typename First, typename... Rest> class classname;  
-  
 ```  
   
  Here's a basic example of *variadic template function* syntax:  
@@ -63,7 +61,7 @@ template <typename First, typename... Rest> class classname;
 template <typename... Arguments> returntype functionname(Arguments... args);  
 ```  
   
- The `Arguments` parameter pack is then expanded for use, as shown in the next section, **Understanding variadic templates**.  
+ The *Arguments* parameter pack is then expanded for use, as shown in the next section, **Understanding variadic templates**.  
   
  Other forms of variadic template function syntax are possible—including, but not limited to, these examples:  
   
@@ -73,18 +71,16 @@ template <typename... Arguments> returntype functionname(Arguments&&... args);
 template <typename... Arguments> returntype functionname(Arguments*... args);  
 ```  
   
- Specifiers like `const` are also allowed:  
+ Specifiers like **const** are also allowed:  
   
 ```cpp  
 template <typename... Arguments> returntype functionname(const Arguments&... args);  
-  
 ```  
   
  As with variadic template class definitions, you can make functions that require at least one parameter:  
   
 ```cpp  
 template <typename First, typename... Rest> returntype functionname(const First& first, const Rest&... args);  
-  
 ```  
   
  Variadic templates use the `sizeof...()` operator (unrelated to the older `sizeof()` operator):  
@@ -99,7 +95,6 @@ void tfunc(const Arguments&... args)
   
     helper_func(xobj, args...);  
 }  
-  
 ```  
   
 ## More about ellipsis placement  
@@ -151,13 +146,11 @@ int main()
     print(100, 200, 300);  
     print("first", 2, "third", 3.14159);  
 }  
-  
 ```  
   
 ## Output  
   
-```  
-  
+```Output  
 1  
 10, 20  
 100, 200, 300  
@@ -166,4 +159,3 @@ first, 2, third, 3.14159
   
 > [!NOTE]
 >  Most implementations that incorporate variadic template functions use recursion of some form, but it's slightly different from traditional recursion.  Traditional recursion involves a function calling itself by using the same signature. (It may be overloaded or templated, but the same signature is chosen each time.) Variadic recursion involves calling a variadic function template by using differing (almost always decreasing) numbers of arguments, and thereby stamping out a different signature every time. A "base case" is still required, but the nature of the recursion is different.  
-  

@@ -16,12 +16,11 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 ! cast-expression  
 ```  
   
 ## Remarks  
- The logical negation operator (**!**) reverses the meaning of its operand. The operand must be of arithmetic or pointer type (or an expression that evaluates to arithmetic or pointer type). The operand is implicitly converted to type `bool`. The result is **true** if the converted operand is **false**; the result is **false** if the converted operand is **true**. The result is of type `bool`.  
+ The logical negation operator (**!**) reverses the meaning of its operand. The operand must be of arithmetic or pointer type (or an expression that evaluates to arithmetic or pointer type). The operand is implicitly converted to type **bool**. The result is TRUE if the converted operand is FALSE; the result is FALSE if the converted operand is TRUE. The result is of type **bool**.  
   
  For an expression *e*, the unary expression **!***e* is equivalent to the expression **(***e* `==` 0), except where overloaded operators are involved.  
   
@@ -43,7 +42,7 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Unary Arithmetic Operators](../c-language/unary-arithmetic-operators.md)

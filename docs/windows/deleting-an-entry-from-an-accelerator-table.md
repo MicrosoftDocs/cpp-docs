@@ -19,18 +19,17 @@ ms.workload: ["cplusplus", "uwp"]
     > [!NOTE]
     >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  Select the entry you want to delete. (Hold down the **CTRL** or **SHIFT** key while clicking to select multiple entries.)  
+2.  Select the entry you want to delete. (Hold down the **Ctrl** or **Shift** key while clicking to select multiple entries.)  
   
 3.  Right-click and choose **Delete** from the shortcut menu (or select **Delete** from the **Edit** menu).  
   
  \- or -  
   
--   Press the Delete key.  
+-   Press the **Delete** key.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
- **Requirements**  
-  
+## Requirements  
  Win32  
   
 ## See Also  

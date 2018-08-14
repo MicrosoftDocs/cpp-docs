@@ -198,7 +198,7 @@ static CCmdTarget* PASCAL FromIDispatch(LPDISPATCH lpDispatch);
  A pointer to an `IDispatch` object.  
   
 ### Return Value  
- A pointer to the `CCmdTarget` object associated with *lpDispatch*. This function returns **NULL** if the `IDispatch` object is not recognized as a Microsoft Foundation Class `IDispatch` object.  
+ A pointer to the `CCmdTarget` object associated with *lpDispatch*. This function returns NULL if the `IDispatch` object is not recognized as a Microsoft Foundation Class `IDispatch` object.  
   
 ### Remarks  
  The result of this function is the inverse of a call to the member function `GetIDispatch`.  
@@ -250,7 +250,7 @@ virtual UINT GetTypeInfoCount();
  The number of type information interfaces.  
   
 ### Remarks  
- This member function basically implements [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
+ This member function basically implements [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
   
  Derived classes should override this function to return the number of type information interfaces provided (either 0 or 1). If not overridden, `GetTypeInfoCount` returns 0. To override, use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeLib` and `GetTypeLibCache`.  
   
@@ -275,7 +275,7 @@ HRESULT GetTypeInfoOfGuid(
  Pointer to a pointer to the `ITypeInfo` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * *ppTypeInfo* points to the type information interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeInfo* points to the type information interface.  
   
 ##  <a name="gettypelib"></a>  CCmdTarget::GetTypeLib  
  Gets a pointer to a type library.  
@@ -288,13 +288,13 @@ virtual HRESULT GetTypeLib(
   
 ### Parameters  
  *lcid*  
- A locale identifier ( `LCID`).  
+ A locale identifier (LCID).  
   
  *ppTypeLib*  
  A pointer to a pointer to the `ITypeLib` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * *ppTypeLib* points to the type library interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeLib* points to the type library interface.  
   
 ### Remarks  
  Derived classes should override this member function (if not overridden, `GetTypeLib` returns TYPE_E_CANTLOADLIBRARY). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLibCache`.  
@@ -370,7 +370,7 @@ virtual BOOL OnCmdMsg(
  Used according to the value of *nCode*. See **Remarks** for more information about *pExtra*.  
   
  *pHandlerInfo*  
- If not **NULL**, `OnCmdMsg` fills in the *pTarget* and *pmf* members of the *pHandlerInfo* structure instead of dispatching the command. Typically, this parameter should be **NULL**.  
+ If not NULL, `OnCmdMsg` fills in the *pTarget* and *pmf* members of the *pHandlerInfo* structure instead of dispatching the command. Typically, this parameter should be NULL.  
   
 ### Return Value  
  Nonzero if the message is handled; otherwise 0.  
@@ -386,10 +386,10 @@ virtual BOOL OnCmdMsg(
   
 |*nCode* value|*pExtra* value|  
 |-------------------|--------------------|  
-|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)*|  
-|CN_EVENT|AFX_EVENT*|  
-|CN_UPDATE_COMMAND_UI|CCmdUI*|  
-|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)*|  
+|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)\*|  
+|CN_EVENT|AFX_EVENT\*|  
+|CN_UPDATE_COMMAND_UI|CCmdUI\*|  
+|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)\*|  
 |CN_OLE_UNREGISTER|NULL|  
   
 ### Example  

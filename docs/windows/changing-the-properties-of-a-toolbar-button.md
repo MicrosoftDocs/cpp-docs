@@ -18,14 +18,12 @@ ms.workload: ["cplusplus", "uwp"]
   
 2.  Type the new ID in the **ID** property in the [Properties Window](/visualstudio/ide/reference/properties-window), or use the drop-down list to select a new **ID**.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
-  
+## Requirements  
  MFC or ATL  
   
 ## See Also  
  [Toolbar Button Properties](../windows/toolbar-button-properties.md)   
  [Creating, Moving, and Editing Toolbar Buttons](../windows/creating-moving-and-editing-toolbar-buttons.md)   
  [Toolbar Editor](../windows/toolbar-editor.md)
-

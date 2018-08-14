@@ -207,7 +207,7 @@ class CMFCToolBar : public CMFCBaseToolBar
   
 1.  Add a `CMFCToolBar` object to the main frame window.  
   
-2.  When you process the `WM_CREATE` message for the main frame window, call either [CMFCToolBar::Create](#create) or [CMFCToolBar::CreateEx](#createex) to create the toolbar and specify its style.  
+2.  When you process the WM_CREATE message for the main frame window, call either [CMFCToolBar::Create](#create) or [CMFCToolBar::CreateEx](#createex) to create the toolbar and specify its style.  
   
 3.  Call [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking) to specify the docking style.  
   
@@ -306,7 +306,7 @@ static BOOL __stdcall AddToolBarForImageCollection(
  Resource ID of a bitmap with disabled menu images.  
   
 ### Return Value  
- `TRUE` if the method succeeds; `FALSE` if *uiResID* or *uiBmpResID* do not specify valid resources, or another error occurs.  
+ TRUE if the method succeeds; FALSE if *uiResID* or *uiBmpResID* do not specify valid resources, or another error occurs.  
   
 ### Remarks  
  Call this method to load a bitmap with toolbar images and add it to the collection of toolbar images. This method creates a temporary toolbar object and calls [CMFCToolBar::LoadToolBar](#loadtoolbar).  
@@ -345,14 +345,14 @@ virtual BOOL AllowChangeTextLabels() const;
 ```  
   
 ### Return Value  
- `TRUE` if it is allowed to display text labels below images; otherwise `FALSE`.  
+ TRUE if it is allowed to display text labels below images; otherwise FALSE.  
   
 ### Remarks  
  This method is called by the customization dialog box to determine whether to enable a **Show text labels** check-box on the **Toolbars** page for the selected toolbar.  
   
- The default implementation returns `TRUE`.  
+ The default implementation returns TRUE.  
   
- Override this method in an object derived from `CMFCToolBar` and return `FALSE` when you do not want the user to decide whether text labels are displayed on toolbar buttons under the images.  
+ Override this method in an object derived from `CMFCToolBar` and return FALSE when you do not want the user to decide whether text labels are displayed on toolbar buttons under the images.  
   
 ##  <a name="allowshowonlist"></a>  CMFCToolBar::AllowShowOnList  
  Determines whether the toolbar is displayed in the list of toolbars on the **Toolbars** pane of the **Customize** dialog box.  
@@ -362,12 +362,12 @@ virtual BOOL AllowShowOnList() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar object can be displayed in the list box on the toolbar customization page; otherwise `FALSE`.  
+ TRUE if the toolbar object can be displayed in the list box on the toolbar customization page; otherwise FALSE.  
   
 ### Remarks  
  This method is called by the framework to determine whether the list on the toolbar customization page should include a particular object derived from `CMFCToolBar`.  
   
- The default implementation always returns `TRUE`. Override this method when you do not want a toolbar to appear in the toolbars list in the customization dialog box.  
+ The default implementation always returns TRUE. Override this method when you do not want a toolbar to appear in the toolbars list in the customization dialog box.  
   
 ##  <a name="aretextlabels"></a>  CMFCToolBar::AreTextLabels  
  Specifies whether text labels under images are currently displayed on the toolbar buttons.  
@@ -377,10 +377,10 @@ BOOL AreTextLabels() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar buttons display text labels below images; otherwise `FALSE`.  
+ TRUE if the toolbar buttons display text labels below images; otherwise FALSE.  
   
 ### Remarks  
- Use [CMFCToolBar::EnableTextLabels](#enabletextlabels) to specify whether the text is displayed. The default value is `FALSE`. Call [CMFCToolBar::AllowChangeTextLabels](#allowchangetextlabels) to specify whether the user can change this setting in the customization dialog box.  
+ Use [CMFCToolBar::EnableTextLabels](#enabletextlabels) to specify whether the text is displayed. The default value is FALSE. Call [CMFCToolBar::AllowChangeTextLabels](#allowchangetextlabels) to specify whether the user can change this setting in the customization dialog box.  
   
 ##  <a name="autograyinactiveimages"></a>  CMFCToolBar::AutoGrayInactiveImages  
  Enable or disables the automatic generation of inactive button images.  
@@ -394,16 +394,16 @@ static void AutoGrayInactiveImages(
   
 ### Parameters  
  [in] *bEnable*  
- A Boolean value that specifies whether to dim inactive images. If this parameter is `TRUE`, inactive images are dimmed. Otherwise, inactive images are not dimmed.  
+ A Boolean value that specifies whether to dim inactive images. If this parameter is TRUE, inactive images are dimmed. Otherwise, inactive images are not dimmed.  
   
  [in] *nGrayImagePercentage*  
- Specifies the luminance percentage for inactive images. If *bEnable* is `FALSE`, this value is ignored.  
+ Specifies the luminance percentage for inactive images. If *bEnable* is FALSE, this value is ignored.  
   
  [in] *bRedrawAllToolbars*  
- A Boolean value that specifies whether to redraw all toolbars in the application. If this parameter is `TRUE`, this method redraws all toolbars.  
+ A Boolean value that specifies whether to redraw all toolbars in the application. If this parameter is TRUE, this method redraws all toolbars.  
   
 ### Remarks  
- If *bEnable* is `TRUE`, the framework uses *nGrayImagePercentage* to generate inactive images from the regular images. Otherwise, you must provide the set of inactive images by using the [CMFCToolBar::GetColdImages](#getcoldimages) method. By default, this option is disabled.  
+ If *bEnable* is TRUE, the framework uses *nGrayImagePercentage* to generate inactive images from the regular images. Otherwise, you must provide the set of inactive images by using the [CMFCToolBar::GetColdImages](#getcoldimages) method. By default, this option is disabled.  
   
  For more information about the *nGrayImagePercentage* parameter, see [CMFCToolBarImages::GrayImages](../../mfc/reference/cmfctoolbarimages-class.md#grayimages).  
   
@@ -432,16 +432,16 @@ virtual CSize CalcFixedLayout(
   
 ### Parameters  
  [in] *bStretch*  
- `TRUE` to stretch the toolbar to the size of the parent frame.  
+ TRUE to stretch the toolbar to the size of the parent frame.  
   
  [in] *bHorz*  
- `TRUE` to orient the toolbar horizontally; `FALSE` to orient the toolbar vertically.  
+ TRUE to orient the toolbar horizontally; FALSE to orient the toolbar vertically.  
   
 ### Return Value  
  A `CSize` object that specifies the size of the toolbar.  
   
 ### Remarks  
- This method calculates the size of the toolbar by using the `CMFCToolBar::CalcLayout` method. It passes the `LM_STRETCH` flag for the *dwMode* parameter if *bStretch* is `TRUE`. It passes the `LM_HORZ` flag if *bHorz* is `TRUE`.  
+ This method calculates the size of the toolbar by using the `CMFCToolBar::CalcLayout` method. It passes the LM_STRETCH flag for the *dwMode* parameter if *bStretch* is TRUE. It passes the LM_HORZ flag if *bHorz* is TRUE.  
   
  See the VisualStudioDemo sample for an example that uses this method.  
   
@@ -469,7 +469,7 @@ virtual CSize CalcSize(BOOL bVertDock);
   
 ### Parameters  
  [in] *bVertDock*  
- `TRUE` to specify that the toolbar is docked vertically; `FALSE` to specify that the toolbar is docked horizontally.  
+ TRUE to specify that the toolbar is docked vertically; FALSE to specify that the toolbar is docked horizontally.  
   
 ### Return Value  
  A `CSize` object that specifies the overall size of the buttons on the toolbar.  
@@ -487,12 +487,12 @@ virtual BOOL CanBeClosed() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar can be closed by the user; otherwise `FALSE`.  
+ TRUE if the toolbar can be closed by the user; otherwise FALSE.  
   
 ### Remarks  
- The framework calls this method to determine whether the user can close a toolbar. If the method returns `TRUE`, the framework enables the SC_CLOSE command in the system menu of the toolbar and the user can close the toolbar by using a check box in the list of toolbars in the customization dialog box.  
+ The framework calls this method to determine whether the user can close a toolbar. If the method returns TRUE, the framework enables the SC_CLOSE command in the system menu of the toolbar and the user can close the toolbar by using a check box in the list of toolbars in the customization dialog box.  
   
- The default implementation returns `TRUE`. Override this method in a class derived from `CMFCToolBar` to make toolbar objects that cannot be closed by the user.  
+ The default implementation returns TRUE. Override this method in a class derived from `CMFCToolBar` to make toolbar objects that cannot be closed by the user.  
   
 ##  <a name="canberestored"></a>  CMFCToolBar::CanBeRestored  
  Determines whether the system can restore a toolbar to its original state after customization.  
@@ -502,14 +502,14 @@ virtual BOOL CanBeRestored() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar can be restored from the application resources; otherwise `FALSE`.  
+ TRUE if the toolbar can be restored from the application resources; otherwise FALSE.  
   
 ### Remarks  
  The framework calls this method to determine whether a toolbar can be returned to its original state after customization. The original state is loaded from the application resources.  
   
- If `CanBeRestored` returns `TRUE`, the **Toolbars** page of the customization dialog box enables the **Reset** button for the selected toolbar.  
+ If `CanBeRestored` returns TRUE, the **Toolbars** page of the customization dialog box enables the **Reset** button for the selected toolbar.  
   
- The default implementation returns `TRUE` if the original resource ID of the toolbar when it was loaded is non-zero. Usually, only user-defined toolbars cannot be restored.  
+ The default implementation returns TRUE if the original resource ID of the toolbar when it was loaded is non-zero. Usually, only user-defined toolbars cannot be restored.  
   
  You can override the `CanBeRestored` method to customize this behavior in derived classes.  
   
@@ -521,7 +521,7 @@ virtual BOOL CanFocus() const;
 ```  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ### Remarks  
  This method overrides the base class implementation, [CBasePane::CanFocus](../../mfc/reference/cbasepane-class.md#canfocus), because toolbar objects cannot receive focus.  
@@ -534,10 +534,10 @@ BOOL CanHandleSiblings();
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar has a sibling and the toolbar and its sibling are positioned on the same pane; otherwise `FALSE`.  
+ TRUE if the toolbar has a sibling and the toolbar and its sibling are positioned on the same pane; otherwise FALSE.  
   
 ### Remarks  
- The internal CMFCCustomizeButton::CreatePopupMenu method calls this method to determine how to show the **Customize** pop-up menu. If this method returns `TRUE`, the framework displays the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons.  
+ The internal CMFCCustomizeButton::CreatePopupMenu method calls this method to determine how to show the **Customize** pop-up menu. If this method returns TRUE, the framework displays the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons.  
   
  You typically do not have to use this method. To enable the **Customize** button that appears on the toolbar, call the [CMFCToolBar::EnableCustomizeButton](#enablecustomizebutton) method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   
@@ -606,10 +606,10 @@ virtual BOOL Create(
  The ID of the child window of the toolbar.  
   
 ### Return Value  
- `TRUE` if this method succeeds; otherwise `FALSE`.  
+ TRUE if this method succeeds; otherwise FALSE.  
   
 ### Remarks  
- This method creates a control bar and attaches it to the toolbar. It creates the control bar with the `TBSTYLE_FLAT` style. Call [CMFCToolBar::CreateEx](#createex) if you want a different control bar style.  
+ This method creates a control bar and attaches it to the toolbar. It creates the control bar with the TBSTYLE_FLAT style. Call [CMFCToolBar::CreateEx](#createex) if you want a different control bar style.  
   
 ##  <a name="createex"></a>  CMFCToolBar::CreateEx  
  Creates a `CMFCToolBar` object that uses additional style options, such as large icons.  
@@ -648,7 +648,7 @@ virtual BOOL CreateEx(
 ### Remarks  
  This method creates a control bar and attaches it to the toolbar.  
   
- Call this method instead of [CMFCToolBar::Create](#create) when you want to provide specific styles. For example, set *dwCtrlStyle* to `TBSTYLE_FLAT | TBSTYLE_TRANSPARENT` to create a toolbar that resembles the toolbars that are used by Internet Explorer 4.  
+ Call this method instead of [CMFCToolBar::Create](#create) when you want to provide specific styles. For example, set *dwCtrlStyle* to TBSTYLE_FLAT | TBSTYLE_TRANSPARENT to create a toolbar that resembles the toolbars that are used by Internet Explorer 4.  
   
 ### Example  
  The following example demonstrates how to use the `CreateEx` method of the `CMFCToolBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
@@ -705,13 +705,13 @@ virtual BOOL DrawButton(
  A pointer to the toolbar images.  
   
  [in] *bHighlighted*  
- `TRUE` if the button is highlighted; otherwise `FALSE`.  
+ TRUE if the button is highlighted; otherwise FALSE.  
   
  [in] *bDrawDisabledImages*  
- `TRUE` if disabled buttons are dimmed; otherwise `FALSE`.  
+ TRUE if disabled buttons are dimmed; otherwise FALSE.  
   
 ### Return Value  
- `TRUE` if the button was repainted; `FALSE` if the button is hidden.  
+ TRUE if the button was repainted; FALSE if the button is hidden.  
   
 ### Remarks  
  The [CMFCToolBar::DrawButton](#drawbutton) method calls this method when a toolbar button must be repainted.  
@@ -736,10 +736,10 @@ virtual void DrawSeparator(
  The bounding rectangle of the location where the separator is drawn, in pixels.  
   
  [in] *bHorz*  
- `TRUE` if the separator is horizontal, `FALSE` if the separator is vertical.  
+ TRUE if the separator is horizontal, FALSE if the separator is vertical.  
   
 ### Remarks  
- [CMFCToolBar::DoPaint](#dopaint) calls this method for each [CMFCToolBar::DrawSeparator](#drawseparator) object that has the `TBBS_SEPARATOR` style, instead of calling [CMFCToolBar::DrawButton](#drawbutton) for those buttons.  
+ [CMFCToolBar::DoPaint](#dopaint) calls this method for each [CMFCToolBar::DrawSeparator](#drawseparator) object that has the TBBS_SEPARATOR style, instead of calling [CMFCToolBar::DrawButton](#drawbutton) for those buttons.  
   
  Override this method in a class derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) to customize the appearance of separators on the toolbar. The default implementation calls [CMFCVisualManager::OnDrawSeparator](../../mfc/reference/cmfcvisualmanager-class.md#ondrawseparator) to draw a separator whose appearance is determined by the current visual manager.  
   
@@ -780,7 +780,7 @@ void EnableCustomizeButton(
 ### Remarks  
  If *iCustomizeCmd* is -1, the framework displays the Customize button when multiple toolbar buttons do not fit in the toolbar area. The button displays a double left-pointing arrow, or chevron, which indicates that there are more buttons.  
   
- If *iCustomizeCmd* specifies a valid command ID, and *bEnable* is `TRUE`, the Customize button is always displayed. The button has a small down arrow and opens a menu that contains a command. This command uses the text label specified by *strCustomizeText*. If *bQuickCustomize* is also `TRUE`, the menu displays the **Add or Remove Buttons** option.  
+ If *iCustomizeCmd* specifies a valid command ID, and *bEnable* is TRUE, the Customize button is always displayed. The button has a small down arrow and opens a menu that contains a command. This command uses the text label specified by *strCustomizeText*. If *bQuickCustomize* is also TRUE, the menu displays the **Add or Remove Buttons** option.  
   
  The framework dynamically adds to the menu any buttons that do not fit in the toolbar area before the item that is specified by *iCustomizeCmd*. The chevron is displayed next to the down arrow.  
   
@@ -796,7 +796,7 @@ virtual void EnableDocking(DWORD dwAlignment);
  Specifies the docking alignment to enable.  
   
 ### Remarks  
- This method extends the base class implementation, [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking), by setting the `CBasePane::m_dwControlBarStyle` data member to `AFX_CBRS_FLOAT`. This method then passes *dwAlignment* to the base class implementation.  
+ This method extends the base class implementation, [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking), by setting the `CBasePane::m_dwControlBarStyle` data member to AFX_CBRS_FLOAT. This method then passes *dwAlignment* to the base class implementation.  
   
 ##  <a name="enablelargeicons"></a>  CMFCToolBar::EnableLargeIcons  
  Enables or disables large icons on toolbar buttons.  
@@ -807,7 +807,7 @@ void EnableLargeIcons(BOOL bEnable);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable large icons, `FALSE` to disable large icons.  
+ TRUE to enable large icons, FALSE to disable large icons.  
   
 ### Remarks  
  By default, large icons are enabled.  
@@ -821,7 +821,7 @@ static void EnableQuickCustomization(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable quick customization, `FALSE` to disable quick customization.  
+ TRUE to enable quick customization, FALSE to disable quick customization.  
   
 ##  <a name="enablereflections"></a>  CMFCToolBar::EnableReflections  
  Enables or disables command reflection.  
@@ -832,7 +832,7 @@ void EnableReflections(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable command reflection; `FALSE` to disable command reflection.  
+ TRUE to enable command reflection; FALSE to disable command reflection.  
   
 ### Remarks  
  Call this method to enable command reflection for toolbar buttons that contain embedded controls, such as combo boxes.  
@@ -848,10 +848,10 @@ void EnableTextLabels(BOOL bEnable=TRUE);
   
 ### Parameters  
  *bEnable*  
- `TRUE` if text labels appear under toolbar button images; otherwise `FALSE`.  
+ TRUE if text labels appear under toolbar button images; otherwise FALSE.  
   
 ### Remarks  
- If text labels are enabled, all buttons on the toolbar are enlarged to provide space for the labels to be displayed under the images. The customization dialog box has a **Show text label** check-box on the **Toolbars** page. When the user selects a toolbar and checks this option, the framework calls `EnableTextLabels` for the selected toolbar. You can disable the check-box for an object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) by returning `FALSE` from [CMFCToolBar::AllowChangeTextLabels](#allowchangetextlabels) .  
+ If text labels are enabled, all buttons on the toolbar are enlarged to provide space for the labels to be displayed under the images. The customization dialog box has a **Show text label** check-box on the **Toolbars** page. When the user selects a toolbar and checks this option, the framework calls `EnableTextLabels` for the selected toolbar. You can disable the check-box for an object derived from [CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md) by returning FALSE from [CMFCToolBar::AllowChangeTextLabels](#allowchangetextlabels) .  
   
 ##  <a name="fromhandlepermanent"></a>  CMFCToolBar::FromHandlePermanent  
  Retrieves a pointer to the `CMFCToolBar` object that contains the given window handle.  
@@ -865,7 +865,7 @@ static CMFCToolBar* __stdcall FromHandlePermanent(HWND hwnd);
  The window handle to look for.  
   
 ### Return Value  
- A pointer to the `CMFCToolBar` object that contains the given window handle, or `NULL` if no corresponding `CMFCToolBar` object exists.  
+ A pointer to the `CMFCToolBar` object that contains the given window handle, or NULL if no corresponding `CMFCToolBar` object exists.  
   
 ### Remarks  
  This shared method examines each toolbar in the application for the `CMFCToolBar` object that contains the given window handle.  
@@ -915,7 +915,7 @@ CMFCToolBarButton* GetButton(int iIndex) const;
  Specifies the index of the button to return.  
   
 ### Return Value  
- A pointer to the toolbar button if it exists; or `NULL` if there is no such button.  
+ A pointer to the toolbar button if it exists; or NULL if there is no such button.  
   
 ##  <a name="getbuttoninfo"></a>  CMFCToolBar::GetButtonInfo  
  Returns the command ID, style, and image index of the button at a specified index.  
@@ -1125,10 +1125,10 @@ CMFCToolBarMenuButton* GetDroppedDownMenu(int* pIndex = NULL) const;
  Receives the index of the button in the collection of toolbar buttons.  
   
 ### Return Value  
- A pointer to the menu button object that is displaying its sub-menu or `NULL` if no menu is displaying its sub-menu.  
+ A pointer to the menu button object that is displaying its sub-menu or NULL if no menu is displaying its sub-menu.  
   
 ### Remarks  
- If this method returns a non- `NULL` value and *pIndex* is not `NULL`, the value pointed to by *pIndex* is set to the index of the menu button in the collection of toolbar buttons.  
+ If this method returns a non- NULL value and *pIndex* is not NULL, the value pointed to by *pIndex* is set to the index of the menu button in the collection of toolbar buttons.  
   
 ##  <a name="getgraydisabledbuttons"></a>  CMFCToolBar::GetGrayDisabledButtons  
  Specifies whether the images of disabled buttons are dimmed versions of the regular button images, or taken from the collection of disabled button images.  
@@ -1138,7 +1138,7 @@ BOOL GetGrayDisabledButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` to dim the images of disabled buttons; `FALSE` to obtain images from the collection of disabled images.  
+ TRUE to dim the images of disabled buttons; FALSE to obtain images from the collection of disabled images.  
   
 ### Remarks  
  Use [CMFCToolBar::SetGrayDisabledButtons](#setgraydisabledbuttons) to switch between dimmed images and the images from the collection of disabled images.  
@@ -1151,7 +1151,7 @@ CMFCToolBarButton* GetHighlightedButton() const;
 ```  
   
 ### Return Value  
- A pointer to a toolbar button object; or `NULL` if no button is highlighted.  
+ A pointer to a toolbar button object; or NULL if no button is highlighted.  
   
 ### Remarks  
  A toolbar button is highlighted if it has keyboard focus. A toolbar button is also highlighted if the toolbar buttons are hot-tracked in this application (for more information, see [CMFCToolBar::GetHotBorder](#gethotborder) and [CMFCToolBar::SetHotBorder](#sethotborder)) and the mouse is pointing at it when no toolbar button or menu item has keyboard focus.  
@@ -1164,7 +1164,7 @@ BOOL GetHotBorder() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar buttons are hot-tracked; otherwise, `FALSE`.  
+ TRUE if the toolbar buttons are hot-tracked; otherwise, FALSE.  
   
 ### Remarks  
  By default, toolbar buttons are hot-tracked.  
@@ -1190,7 +1190,7 @@ HWND GetHwndLastFocus() const;
 ```  
   
 ### Return Value  
- A handle to window that is not derived from [CMFCBaseToolBar Class](../../mfc/reference/cmfcbasetoolbar-class.md), which previously had the input focus; or `NULL` if there is no such window.  
+ A handle to window that is not derived from [CMFCBaseToolBar Class](../../mfc/reference/cmfcbasetoolbar-class.md), which previously had the input focus; or NULL if there is no such window.  
   
 ### Remarks  
  When a `CMFCToolBar` control receives the input focus, it stores a handle to the window that lost the focus so that it can restore it later.  
@@ -1203,7 +1203,7 @@ BOOL GetIgnoreSetText() const;
 ```  
   
 ### Return Value  
- `TRUE` if calls to set button labels are ignored; otherwise, `FALSE`.  
+ TRUE if calls to set button labels are ignored; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1261,10 +1261,10 @@ virtual void GetInvalidateItemRect(
  The index of the button for which to retrieve the client area.  
   
  [out] *lpRect*  
- A pointer to a `RECT` object that receives the region of the client area.  
+ A pointer to a RECT object that receives the region of the client area.  
   
 ### Remarks  
- The *lpRect* parameter must not be `NULL`. If no button exists at the provided index, *lpRect* receives a `RECT` object that is initialized to zero.  
+ The *lpRect* parameter must not be NULL. If no button exists at the provided index, *lpRect* receives a RECT object that is initialized to zero.  
   
 ##  <a name="getitemid"></a>  CMFCToolBar::GetItemID  
  Returns the command ID of the toolbar button at a specified index.  
@@ -1352,12 +1352,12 @@ CMFCToolBarImages* GetLockedColdImages();
 ```  
   
 ### Return Value  
- A pointer to the collection of locked cold images, or `NULL` if the toolbar is not locked.  
+ A pointer to the collection of locked cold images, or NULL if the toolbar is not locked.  
   
 ### Remarks  
  Locked images are versions of the regular toolbar button images that the framework uses when the user cannot customize the toolbar. Cold images are the images that are used when the user is not interacting with the toolbar buttons.  
   
- This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
+ This method returns NULL if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
   
  Call the [CMFCToolBar::LoadBitmapEx](#loadbitmapex) method to load the locked cold images.  
   
@@ -1369,12 +1369,12 @@ CMFCToolBarImages* GetLockedDisabledImages();
 ```  
   
 ### Return Value  
- A pointer to the collection of locked disabled images, or `NULL` if the toolbar is not locked.  
+ A pointer to the collection of locked disabled images, or NULL if the toolbar is not locked.  
   
 ### Remarks  
- Locked images are versions of the regular toolbar button images that the framework uses when the user cannot customize the toolbar. Disabled images are the images that the framework uses when a button has the `TBBS_DISABLED` style.  
+ Locked images are versions of the regular toolbar button images that the framework uses when the user cannot customize the toolbar. Disabled images are the images that the framework uses when a button has the TBBS_DISABLED style.  
   
- This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
+ This method returns NULL if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
   
  Call the [CMFCToolBar::LoadBitmapEx](#loadbitmapex) method to load the locked disabled images.  
   
@@ -1386,12 +1386,12 @@ CMFCToolBarImages* GetLockedImages();
 ```  
   
 ### Return Value  
- A pointer to the collection of locked toolbar button images, or `NULL` if the toolbar is not locked.  
+ A pointer to the collection of locked toolbar button images, or NULL if the toolbar is not locked.  
   
 ### Remarks  
  Locked images are versions of the regular toolbar button images that the framework uses when the user cannot customize the toolbar.  
   
- This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
+ This method returns NULL if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
   
 ##  <a name="getlockedimagesize"></a>  CMFCToolBar::GetLockedImageSize  
  Returns the default size of locked toolbar images.  
@@ -1418,12 +1418,12 @@ CMFCToolBarImages* GetLockedMenuImages();
 ```  
   
 ### Return Value  
- A pointer to the collection of locked toolbar menu images, or `NULL` if the toolbar is not locked.  
+ A pointer to the collection of locked toolbar menu images, or NULL if the toolbar is not locked.  
   
 ### Remarks  
  Locked images are versions of the regular toolbar menu images that the framework uses when the user cannot customize the toolbar.  
   
- This method returns `NULL` if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
+ This method returns NULL if the toolbar is not locked. This method also generates an assertion failure in Debug builds if the toolbar is not locked. For more information about locked toolbars, see [CMFCToolBar::IsLocked](#islocked).  
   
  Call the [CMFCToolBar::LoadBitmapEx](#loadbitmapex) method to load the locked menu images.  
   
@@ -1549,7 +1549,7 @@ static BOOL GetShowTooltips();
 ```  
   
 ### Return Value  
- `TRUE` if tool tips are shown for toolbar buttons; otherwise `FALSE`.  
+ TRUE if tool tips are shown for toolbar buttons; otherwise FALSE.  
   
 ### Remarks  
  By default tool tips are shown. You can change this static flag by calling [CMFCToolBar::SetShowTooltips](#setshowtooltips).  
@@ -1656,7 +1656,7 @@ CMFCToolBarButton* InvalidateButton(int nIndex);
  The zero-based index of the button in the toolbar.  
   
 ### Return Value  
- A pointer to the `CMFCToolBarButton` object that exists at the provided index or `NULL` if no such object exists.  
+ A pointer to the `CMFCToolBarButton` object that exists at the provided index or NULL if no such object exists.  
   
 ### Remarks  
  The framework calls this method when it updates the client area that is associated with a toolbar button. It calls the [CWnd::InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect) method with the client rectangle of the `CMFCToolBarButton` object that exists at the provided index.  
@@ -1669,7 +1669,7 @@ BOOL IsAddRemoveQuickCustomize();
 ```  
   
 ### Return Value  
- `TRUE` if a user can use the **Customize** menu option to modify the toolbar; otherwise, `FALSE`.  
+ TRUE if a user can use the **Customize** menu option to modify the toolbar; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1681,7 +1681,7 @@ static BOOL __stdcall IsAltCustomizeMode();
 ```  
   
 ### Return Value  
- `TRUE` if quick customization is being used to drag a button; otherwise, `FALSE`.  
+ TRUE if quick customization is being used to drag a button; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1693,7 +1693,7 @@ static BOOL IsAutoGrayInactiveImages();
 ```  
   
 ### Return Value  
- `TRUE` if the option to automatically dim inactive images is enabled; otherwise `FALSE`.  
+ TRUE if the option to automatically dim inactive images is enabled; otherwise FALSE.  
   
 ### Remarks  
  You can enable or disable automatic dimming of inactive images by calling [CMFCToolBar::AutoGrayInactiveImages](#autograyinactiveimages).  
@@ -1710,7 +1710,7 @@ static BOOL IsBasicCommand(UINT uiCmd);
  Specifies the command to check.  
   
 ### Return Value  
- `TRUE` if the specified command belongs to the list of basic commands; otherwise `FALSE`.  
+ TRUE if the specified command belongs to the list of basic commands; otherwise FALSE.  
   
 ### Remarks  
  This static method determines whether the command specified by *uiCmd* belongs to the global list of basic commands. You can change the list of basic commands by calling [CMFCToolBar::AddBasicCommand](#addbasiccommand) or [CMFCToolBar::SetBasicCommands](#setbasiccommands).  
@@ -1723,12 +1723,12 @@ virtual BOOL IsButtonExtraSizeAvailable() const;
 ```  
   
 ### Return Value  
- `TRUE` if the bar can display buttons with the extra border size; otherwise `FALSE`.  
+ TRUE if the bar can display buttons with the extra border size; otherwise FALSE.  
   
 ### Remarks  
- The toolbar object returns `TRUE` if it can display buttons that have extended borders. A toolbar button calls this method when it handles the [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd) notification and will set its internal extra border size flag accordingly. This internal flag may be retrieved later by calling [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).  
+ The toolbar object returns TRUE if it can display buttons that have extended borders. A toolbar button calls this method when it handles the [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd) notification and will set its internal extra border size flag accordingly. This internal flag may be retrieved later by calling [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).  
   
- Override this method in a class derived from `CMFCToolBar` and return `TRUE` if your bar can display the toolbar buttons with the extra border size and return `FALSE` otherwise. The default implementation returns `TRUE`.  
+ Override this method in a class derived from `CMFCToolBar` and return TRUE if your bar can display the toolbar buttons with the extra border size and return FALSE otherwise. The default implementation returns TRUE.  
   
 ##  <a name="isbuttonhighlighted"></a>  CMFCToolBar::IsButtonHighlighted  
  Determines whether the specified button is highlighted.  
@@ -1742,7 +1742,7 @@ BOOL IsButtonHighlighted(int iButton) const;
  Specifies the index of a toolbar button.  
   
 ### Return Value  
- `TRUE` if the specified button is highlighted; otherwise, `FALSE`.  
+ TRUE if the specified button is highlighted; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1758,7 +1758,7 @@ static BOOL IsCommandPermitted(UINT uiCmd);
  Specifies the command to check.  
   
 ### Return Value  
- `TRUE` if the specified command is permitted; otherwise `FALSE`.  
+ TRUE if the specified command is permitted; otherwise FALSE.  
   
 ### Remarks  
  This static method determines whether the command specified by *uiCmd* belongs to the global list of non-permitted commands.  
@@ -1777,10 +1777,10 @@ static BOOL IsCommandRarelyUsed(UINT uiCmd);
  Specifies the command to check.  
   
 ### Return Value  
- `TRUE` if the specified command is rarely used; otherwise `FALSE`.  
+ TRUE if the specified command is rarely used; otherwise FALSE.  
   
 ### Remarks  
- The `IsCommandRarelyUsed` method returns `FALSE` when one or more of the following conditions occur:  
+ The `IsCommandRarelyUsed` method returns FALSE when one or more of the following conditions occur:  
   
 -   The specified command belongs to the list of basic commands  
   
@@ -1800,7 +1800,7 @@ static BOOL IsCustomizeMode();
 ```  
   
 ### Return Value  
- `TRUE` if the framework is in customization mode; otherwise `FALSE`.  
+ TRUE if the framework is in customization mode; otherwise FALSE.  
   
 ### Remarks  
  You can toggle customization mode by calling [CMFCToolBar::SetCustomizeMode](#setcustomizemode).  
@@ -1819,7 +1819,7 @@ BOOL IsDragButton(const CMFCToolBarButton* pButton) const;
  Pointer to a toolbar button.  
   
 ### Return Value  
- `TRUE` if the specified button is being dragged; otherwise, `FALSE`.  
+ TRUE if the specified button is being dragged; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1831,10 +1831,10 @@ BOOL IsExistCustomizeButton();
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar contains the **Customize** button; otherwise `FALSE`.  
+ TRUE if the toolbar contains the **Customize** button; otherwise FALSE.  
   
 ### Remarks  
- If this method returns `TRUE`, the [CMFCToolBar::GetCustomizeButton](#getcustomizebutton) method returns a pointer to the **Customize** button that appears at the end of the toolbar.  
+ If this method returns TRUE, the [CMFCToolBar::GetCustomizeButton](#getcustomizebutton) method returns a pointer to the **Customize** button that appears at the end of the toolbar.  
   
  Use the [CMFCToolBar::EnableCustomizeButton](#enablecustomizebutton) method to add the **Customize** button to your toolbar.  
   
@@ -1846,7 +1846,7 @@ virtual BOOL IsFloating() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar is floating; otherwise, `FALSE`.  
+ TRUE if the toolbar is floating; otherwise, FALSE.  
   
 ##  <a name="islargeicons"></a>  CMFCToolBar::IsLargeIcons  
  Specifies whether toolbars in the application currently display large icons.  
@@ -1856,7 +1856,7 @@ static BOOL IsLargeIcons();
 ```  
   
 ### Return Value  
- `TRUE` if the application is using large icons; otherwise `FALSE`.  
+ TRUE if the application is using large icons; otherwise FALSE.  
   
 ### Remarks  
  Call [CMFCToolBar::SetLargeIcons](#setlargeicons) to toggle between large icons and regular icons.  
@@ -1875,10 +1875,10 @@ static BOOL IsLastCommandFromButton(CMFCToolBarButton* pButton);
  Pointer to button.  
   
 ### Return Value  
- `TRUE` if the last command was sent from the button that *pButton* specifies; otherwise `FALSE`.  
+ TRUE if the last command was sent from the button that *pButton* specifies; otherwise FALSE.  
   
 ### Remarks  
- This method obtains a pointer to a [MSG Structure](../../mfc/reference/msg-structure1.md) by calling `CWnd::GetCurrentMessage`. It then compares the `HWND` of the button with the `MSG::lParam` and `MSG::hwnd` members to determine whether the button was the source of the command.  
+ This method obtains a pointer to a [MSG Structure](../../mfc/reference/msg-structure1.md) by calling `CWnd::GetCurrentMessage`. It then compares the HWND of the button with the `MSG::lParam` and `MSG::hwnd` members to determine whether the button was the source of the command.  
   
 ##  <a name="islocked"></a>  CMFCToolBar::IsLocked  
  Determines whether the toolbar is locked.  
@@ -1888,10 +1888,10 @@ BOOL IsLocked() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar is locked; otherwise, `FALSE`.  
+ TRUE if the toolbar is locked; otherwise, FALSE.  
   
 ### Remarks  
- This method returns `TRUE` when the user cannot perform customization tasks such as repositioning toolbar buttons.  
+ This method returns TRUE when the user cannot perform customization tasks such as repositioning toolbar buttons.  
   
  Locked toolbars use separate image lists. For more information about these image lists, see [CMFCToolBar::LoadBitmapEx](#loadbitmapex).  
   
@@ -1903,10 +1903,10 @@ BOOL IsOneRowWithSibling();
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar and its sibling are positioned on the same row; otherwise `FALSE`.  
+ TRUE if the toolbar and its sibling are positioned on the same row; otherwise FALSE.  
   
 ### Remarks  
- The [CMFCCustomizeButton::CreatePopupMenu](http://msdn.microsoft.com/en-us/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) method calls this method to determine how to show the **Customize** pop-up menu. If this method returns `TRUE`, the framework displays the **Show Buttons on One Row** button. Otherwise, the framework displays the **Show Buttons on Two Rows** button.  
+ The [CMFCCustomizeButton::CreatePopupMenu](http://msdn.microsoft.com/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) method calls this method to determine how to show the **Customize** pop-up menu. If this method returns TRUE, the framework displays the **Show Buttons on One Row** button. Otherwise, the framework displays the **Show Buttons on Two Rows** button.  
   
  You typically do not have to use this method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   
@@ -1940,7 +1940,7 @@ BOOL IsUserDefined() const;
 ```  
   
 ### Return Value  
- `TRUE` if the toolbar was created by the user; otherwise `FALSE`.  
+ TRUE if the toolbar was created by the user; otherwise FALSE.  
   
 ##  <a name="loadbitmap"></a>  CMFCToolBar::LoadBitmap  
  Loads toolbar images from application resources.  
@@ -1966,7 +1966,7 @@ virtual BOOL LoadBitmap(
  The resource ID of the bitmap that refers to the regular menu images.  
   
  [in] *bLocked*  
- `TRUE` to lock the toolbar; otherwise `FALSE`.  
+ TRUE to lock the toolbar; otherwise FALSE.  
   
  [in] *uiDisabledResID*  
  The resource ID of the bitmap that refers to the disabled toolbar images.  
@@ -2124,7 +2124,7 @@ virtual BOOL LoadToolBarEx(
  A reference to a `CMFCToolBarInfo` object that contains the resource IDs for the toolbar images.  
   
  [in] *bLocked*  
- A Boolean value that specifies whether the toolbar is locked or not. If this parameter is `TRUE`, the toolbar is locked. Otherwise, the toolbar is not locked.  
+ A Boolean value that specifies whether the toolbar is locked or not. If this parameter is TRUE, the toolbar is locked. Otherwise, the toolbar is not locked.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2261,7 +2261,7 @@ virtual BOOL OnSetDefaultButtonText(CMFCToolBarButton* pButton);
  Points to a button, whose text is being set.  
   
 ### Return Value  
- `TRUE` ifthe text was successfully restored; otherwise `FALSE`.  
+ TRUE ifthe text was successfully restored; otherwise FALSE.  
   
 ### Remarks  
  Override this method to process notifications that the text of a toolbar button is being changed to its default.  
@@ -2285,10 +2285,10 @@ virtual BOOL OnUserToolTip(
  A reference to `CString` object that receives the text of the tooltip.  
   
 ### Return Value  
- `TRUE` if *strTTText* was populated with tooltip text; otherwise `FALSE`.  
+ TRUE if *strTTText* was populated with tooltip text; otherwise FALSE.  
   
 ### Remarks  
- The framework calls this method when the tooltip for a toolbar button is about to be displayed. If `OnUserToolTip` returns `TRUE`, the framework displays a tooltip which contains the text returned by `OnUserToolTip` in *strTTText*. Otherwise, the tooltip contains the button text.  
+ The framework calls this method when the tooltip for a toolbar button is about to be displayed. If `OnUserToolTip` returns TRUE, the framework displays a tooltip which contains the text returned by `OnUserToolTip` in *strTTText*. Otherwise, the tooltip contains the button text.  
   
  Override `OnUserToolTip` to customize tool tips of toolbar buttons. The default implementation calls [CMFCToolBar::OnUserToolTip](#onusertooltip) to obtain the tooltip text.  
   
@@ -2315,10 +2315,10 @@ BOOL ProcessCommand(CMFCToolBarButton* pButton);
  Pointer to a button on the toolbar.  
   
 ### Return Value  
- This method should always return `TRUE`. MFC uses `FALSE` values internally.  
+ This method should always return TRUE. MFC uses FALSE values internally.  
   
 ### Remarks  
- This method posts a WM_COMMAND message to the window that owns the toolbar by calling [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#postmessage) and passing the command ID of the specified button as the `wParam` parameter.  
+ This method posts a WM_COMMAND message to the window that owns the toolbar by calling [CWnd::PostMessage](../../mfc/reference/cwnd-class.md#postmessage) and passing the command ID of the specified button as the *wParam* parameter.  
   
  Use the [ON_COMMAND](message-map-macros-mfc.md#on_command) macro to map the WM_COMMAND message to a member function.  
   
@@ -2344,7 +2344,7 @@ virtual BOOL RemoveButton(int iIndex);
  Specifies the zero-based index of the button to remove.  
   
 ### Return Value  
- `TRUE` if the method succeeds, or `FALSE` if the specified index is invalid or the index refers to the **Customize** button.  
+ TRUE if the method succeeds, or FALSE if the specified index is invalid or the index refers to the **Customize** button.  
   
 ### Remarks  
  This method updates additional toolbar attributes that are affected by the removal of the button. For example, this method removes nonessential separators from the toolbar and rebuilds the table of shortcut keys.  
@@ -2397,7 +2397,7 @@ int ReplaceButton(
  A reference to the `CMFCToolBarButton` to insert.  
   
  [in] *bAll*  
- A Boolean value that specifies whether to replace all buttons that have the command ID specified by *uiCmd*. If this parameter is `TRUE`, all buttons that have the specified command ID are replaced. Otherwise, the first button is replaced.  
+ A Boolean value that specifies whether to replace all buttons that have the command ID specified by *uiCmd*. If this parameter is TRUE, all buttons that have the specified command ID are replaced. Otherwise, the first button is replaced.  
   
 ### Return Value  
  The number of buttons that are replaced. This method returns 0 if a button with the specified command ID does not exist on the toolbar.  
@@ -2457,7 +2457,7 @@ virtual BOOL RestoreOriginalState();
 ```  
   
 ### Return Value  
- `TRUE` if the method succeeds, or `FALSE` if the method fails or the toolbar is user-defined.  
+ TRUE if the method succeeds, or FALSE if the method fails or the toolbar is user-defined.  
   
 ### Remarks  
  This method loads the toolbar from the resource file by using the [CMFCToolBar::LoadToolBar](#loadtoolbar) method.  
@@ -2571,7 +2571,7 @@ virtual BOOL SetButtons(
  The number of items in *lpIDArray*.  
   
  [in] *bRemapImages*  
- A Boolean value that specifies whether to associate the existing button images with the inserted buttons. If this parameter is `TRUE`, the images are remapped.  
+ A Boolean value that specifies whether to associate the existing button images with the inserted buttons. If this parameter is TRUE, the images are remapped.  
   
 ### Return Value  
  Nonzero if the method succeeds; otherwise 0.  
@@ -2598,7 +2598,7 @@ virtual void SetButtonStyle(
  The style of the button. See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for the list of available toolbar button styles.  
   
 ### Remarks  
- This method removes the `TBBS_PRESSED` style if `nStyle` is `TBBS_DISABLED` because the user cannot click a disabled button.  
+ This method removes the TBBS_PRESSED style if *nStyle* is TBBS_DISABLED because the user cannot click a disabled button.  
   
 ##  <a name="setbuttontext"></a>  CMFCToolBar::SetButtonText  
  Sets the text label of a toolbar button.  
@@ -2614,13 +2614,13 @@ BOOL SetButtonText(
  The index of the toolbar button.  
   
  [in] *lpszText*  
- The text label of the toolbar button. Must be non- `NULL`.  
+ The text label of the toolbar button. Must be non- NULL.  
   
 ### Return Value  
- `TRUE` if the method succeeds; otherwise `FALSE`.  
+ TRUE if the method succeeds; otherwise FALSE.  
   
 ### Remarks  
- This method returns `FALSE` if the provided index does not refer to a valid toolbar button.  
+ This method returns FALSE if the provided index does not refer to a valid toolbar button.  
   
 ##  <a name="setcommandusageoptions"></a>  CMFCToolBar::SetCommandUsageOptions  
  Specifies when rarely used commands do not appear in the menu of the application.  
@@ -2639,7 +2639,7 @@ static BOOL SetCommandUsageOptions(
  The percentage of times that a command must be executed to be considered a recently-used command.  
   
 ### Return Value  
- `FALSE` if *nMinUsagePercentage* is equal to or larger than 100; otherwise `TRUE`.  
+ FALSE if *nMinUsagePercentage* is equal to or larger than 100; otherwise TRUE.  
   
 ### Remarks  
  Call this method to customize the algorithm that the framework uses to determine how basic and recently used menu items appear. For more information about basic commands, see [CMFCToolBar::AddBasicCommand](#addbasiccommand).  
@@ -2655,10 +2655,10 @@ static BOOL __stdcall SetCustomizeMode(BOOL bSet=TRUE);
   
 ### Parameters  
  [in] *bSet*  
- A Boolean value that specifies whether to enable or disable customization mode. Set this parameter to `TRUE` to enable customization mode or `FALSE` to disable it.  
+ A Boolean value that specifies whether to enable or disable customization mode. Set this parameter to TRUE to enable customization mode or FALSE to disable it.  
   
 ### Return Value  
- `TRUE` if calling this method changes the customization mode; otherwise `FALSE`.  
+ TRUE if calling this method changes the customization mode; otherwise FALSE.  
   
 ### Remarks  
  This method adjusts the layout of and redraws each toolbar in the application. Call the [CMFCToolBar::IsCustomizeMode](#iscustomizemode) method to determine whether the application is in customization mode,  
@@ -2672,7 +2672,7 @@ void SetGrayDisabledButtons(BOOL bGrayDisabledButtons);
   
 ### Parameters  
  [in] *bGrayDisabledButtons*  
- A Boolean value that specifies how to display unavailable buttons. If this parameter is `TRUE`, the framework dims the buttons. Otherwise, the framework uses the collection of button-unavailable images.  
+ A Boolean value that specifies how to display unavailable buttons. If this parameter is TRUE, the framework dims the buttons. Otherwise, the framework uses the collection of button-unavailable images.  
   
 ### Remarks  
  By default, unavailable buttons are dimmed.  
@@ -2726,7 +2726,7 @@ void SetHotBorder(BOOL bShowHotBorder);
   
 ### Parameters  
  [in] *bShowHotBorder*  
- A Boolean value that specifies whether to hot-track toolbar buttons. If this parameter is `TRUE`, the toolbar hot-tracks its buttons. Otherwise, the toolbar does not hot-track its buttons.  
+ A Boolean value that specifies whether to hot-track toolbar buttons. If this parameter is TRUE, the toolbar hot-tracks its buttons. Otherwise, the toolbar does not hot-track its buttons.  
   
 ### Remarks  
  If a button is hot-tracked, the framework highlights the button when the mouse moves across it. By default, each toolbar hot-tracks its buttons.  
@@ -2768,7 +2768,7 @@ static void SetLargeIcons(BOOL bLargeIcons=TRUE);
   
 ### Parameters  
  [in] *bLargeIcons*  
- A Boolean value that specifies which icons to use. If this parameter is `TRUE`, the framework displays large icons. Otherwise, the framework displays regular icons.  
+ A Boolean value that specifies which icons to use. If this parameter is TRUE, the framework displays large icons. Otherwise, the framework displays regular icons.  
   
 ### Remarks  
  The framework calls this method when the user changes the state of the **Large Icons** check box in the **Options** tab of the **Customize** dialog box. This method resizes all toolbars in the application.  
@@ -2888,7 +2888,7 @@ void SetPermament(BOOL bPermament=TRUE);
   
 ### Parameters  
  [in] *bPermament*  
- A Boolean value that specifies whether a user can close the toolbar. If this parameter is `TRUE`, a user cannot close the toolbar. Otherwise, a user can close the toolbar.  
+ A Boolean value that specifies whether a user can close the toolbar. If this parameter is TRUE, a user cannot close the toolbar. Otherwise, a user can close the toolbar.  
   
 ### Remarks  
  By default, a user can close each toolbar.  
@@ -2904,7 +2904,7 @@ void SetRouteCommandsViaFrame(BOOL bValue);
   
 ### Parameters  
  [in] *bValue*  
- If this parameter is `TRUE`, the parent frame sends commands to the toolbar. Otherwise, the owner sends commands to the toolbar.  
+ If this parameter is TRUE, the parent frame sends commands to the toolbar. Otherwise, the owner sends commands to the toolbar.  
   
 ### Remarks  
  By default, the parent frame sends commands to the toolbar. Call the [CMFCToolBar::GetRouteCommandsViaFrame](#getroutecommandsviaframe) method to determine whether the parent frame or the owner sends commands to the toolbar.  
@@ -2918,7 +2918,7 @@ static void SetShowTooltips(BOOL bValue);
   
 ### Parameters  
  [in] *bValue*  
- If this parameter is `TRUE`, the framework shows tool tips. Otherwise, the framework hides tool tips.  
+ If this parameter is TRUE, the framework shows tool tips. Otherwise, the framework hides tool tips.  
   
 ### Remarks  
  By default, the framework shows tool tips.  
@@ -2983,10 +2983,10 @@ void SetToolBarBtnText(
  Specifies the text label of the toolbar button.  
   
  [in] *bShowText*  
- If this parameter is `TRUE`, the framework shows the text label. Otherwise, the framework hides the text label.  
+ If this parameter is TRUE, the framework shows the text label. Otherwise, the framework hides the text label.  
   
  [in] *bShowImage*  
- If this parameter is `TRUE`, the framework shows the toolbar button image. Otherwise, the framework hides the toolbar button image.  
+ If this parameter is TRUE, the framework shows the toolbar button image. Otherwise, the framework hides the toolbar button image.  
   
 ### Remarks  
  By default, the framework shows the images of toolbar buttons but does not show the text label of toolbar buttons.  
@@ -3044,7 +3044,7 @@ virtual CSize StretchPane(
  The amount, in pixels, by which to stretch the pane.  
   
  [in] *bVert*  
- If `TRUE`, stretches the pane vertically. If `FALSE`, stretches the pane horizontally.  
+ If TRUE, stretches the pane vertically. If FALSE, stretches the pane horizontally.  
   
 ### Return Value  
  A `CSize` object that specifies the size of the toolbar client area.  
@@ -3066,7 +3066,7 @@ virtual BOOL TranslateChar(UINT nChar);
  Specifies a virtual key code. For a list of standard virtual key codes, see Winuser.h  
   
 ### Return Value  
- `FALSE` if the specified key code is either unprintable or does not correspond to a valid keyboard shortcut; `TRUE` if the specified key code corresponds to a drop-down menu option; otherwise, the return value from [CMFCToolBar::ProcessCommand](#processcommand).  
+ FALSE if the specified key code is either unprintable or does not correspond to a valid keyboard shortcut; TRUE if the specified key code corresponds to a drop-down menu option; otherwise, the return value from [CMFCToolBar::ProcessCommand](#processcommand).  
   
 ### Remarks  
  The framework calls this method when a key is pressed together with the Alt key.  

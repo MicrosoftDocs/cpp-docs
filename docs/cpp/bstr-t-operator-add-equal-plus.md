@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 _bstr_t& operator+=( const _bstr_t& s1 );  
 _bstr_t operator+( const _bstr_t& s1 );  
 friend _bstr_t operator+( const char* s2, const _bstr_t& s1);  
@@ -34,7 +33,7 @@ friend _bstr_t operator+( const wchar_t* s3, const _bstr_t& s1);
  *s2*  
  A multibyte string.  
   
- `s3`  
+ *s3*  
  A Unicode string.  
   
 ## Remarks  
@@ -46,9 +45,9 @@ friend _bstr_t operator+( const wchar_t* s3, const _bstr_t& s1);
   
 -   **operator+(**  *s2*  **&#124;**  *s1*  **)** Returns a new `_bstr_t` that is formed by concatenating a multibyte string *s2*, converted to Unicode, with the `BSTR` encapsulated in *s1*.  
   
--   **operator+(**  `s3` **,**  *s1*  **)** Returns a new `_bstr_t` that is formed by concatenating a Unicode string `s3` with the `BSTR` encapsulated in *s1*.  
+-   **operator+(**  *s3* **,**  *s1*  **)** Returns a new `_bstr_t` that is formed by concatenating a Unicode string *s3* with the `BSTR` encapsulated in *s1*.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

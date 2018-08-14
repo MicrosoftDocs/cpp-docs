@@ -115,13 +115,13 @@ virtual BOOL Create(
   
 ### Parameters  
  [in] [out] *pWndOwner*  
- Specifies the owner of the alert window. That owner will then receive all notifications for the desktop alert window. This value cannot be `NULL`.  
+ Specifies the owner of the alert window. That owner will then receive all notifications for the desktop alert window. This value cannot be NULL.  
   
  [in] *uiDlgResID*  
  Specifies the resource ID of the alert window.  
   
  [in] *hMenu*  
- Specifies the menu that displays when the user clicks the menu button. If `NULL`, the menu button is not displayed.  
+ Specifies the menu that displays when the user clicks the menu button. If NULL, the menu button is not displayed.  
   
  [in] *ptPos*  
  Specifies the initial position where the alert window is displayed, using screen coordinates. If this parameter is (-1, -1), the alert window is displayed in the lower-right corner of the screen.  
@@ -133,7 +133,7 @@ virtual BOOL Create(
  Specifies parameters that are used to create an alert window.  
   
 ### Return Value  
- `TRUE` if the alert window was created successfully; otherwise, `FALSE`.  
+ TRUE if the alert window was created successfully; otherwise, FALSE.  
   
 ### Remarks  
  Call this method to create an alert window. The client area of the alert window contains a child dialog box that hosts all controls that are displayed to the user.  
@@ -165,15 +165,15 @@ CMFCPopupMenu::ANIMATION_TYPE GetAnimationType();
 ### Return Value  
  One of the following animation types:  
   
-- `NO_ANIMATION`  
+- NO_ANIMATION  
   
-- `UNFOLD`  
+- UNFOLD  
   
-- `SLIDE`  
+- SLIDE  
   
-- `FADE`  
+- FADE  
   
-- `SYSTEM_DEFAULT_ANIMATION`  
+- SYSTEM_DEFAULT_ANIMATION  
   
 ##  <a name="getautoclosetime"></a>  CMFCDesktopAlertWnd::GetAutoCloseTime  
  Returns the auto-close time out.  
@@ -235,7 +235,7 @@ BOOL HasSmallCaption() const;
 ```  
   
 ### Return Value  
- `TRUE` if the popup window is displayed with a small caption; `FALSE` if the popup window is displayed with a regular-sized caption.  
+ TRUE if the popup window is displayed with a small caption; FALSE if the popup window is displayed with a regular-sized caption.  
   
 ### Remarks  
  Use this method to determine whether the popup window has a small caption or a regular-size caption. By default, the small caption is 7 pixels high. You can obtain the height of the regular-size caption by calling the Windows API function `GetSystemMetrics(SM_CYCAPTION)`.  
@@ -266,7 +266,7 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
  This parameter is not used.  
   
 ### Return Value  
- Always `FALSE`.  
+ Always FALSE.  
   
 ### Remarks  
  Override this method in a derived class if you want to be notified when a user clicks the link on the alert window.  
@@ -342,15 +342,15 @@ void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ### Remarks  
  Call this method to set animation type. You can specify one of the following values:  
   
-- `NO_ANIMATION`  
+- NO_ANIMATION  
   
-- `UNFOLD`  
+- UNFOLD  
   
-- `SLIDE`  
+- SLIDE  
   
-- `FADE`  
+- FADE  
   
-- `SYSTEM_DEFAULT_ANIMATION`  
+- SYSTEM_DEFAULT_ANIMATION  
   
 ##  <a name="setautoclosetime"></a>  CMFCDesktopAlertWnd::SetAutoCloseTime  
  Sets the auto-close time out.  
@@ -375,7 +375,7 @@ void SetSmallCaption(BOOL bSmallCaption = TRUE);
   
 ### Parameters  
  [in] *bSmallCaption*  
- `TRUE` to specify that the alert window displays a small caption; otherwise, `FALSE` to specify that the alert window displays a regular-size caption.  
+ TRUE to specify that the alert window displays a small caption; otherwise, FALSE to specify that the alert window displays a regular-size caption.  
   
 ### Remarks  
  Call this method to display the small or regular-size caption. By default, the small caption is 7 pixels high. You can obtain the size of the regular caption by calling the Windows API function `GetSystemMetrics(SM_CYCAPTION)`.  

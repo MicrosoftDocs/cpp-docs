@@ -82,7 +82,7 @@ y = 9
   
  Declarations of reference types must contain initializers except in the following cases:  
   
--   Explicit `extern` declaration  
+-   Explicit **extern** declaration  
   
 -   Declaration of a class member  
   
@@ -105,5 +105,5 @@ Foo& GetFoo()
   
  The compiler issues a warning in this case: `warning C4172: returning address of local variable or temporary`. In simple programs it is possible that occasionally no access violation will occur if the reference is accessed by the caller before the memory location is overwritten. This is due to sheer luck. Heed the warning.  
   
-## See Also  
+## See also  
  [References](../cpp/references-cpp.md)

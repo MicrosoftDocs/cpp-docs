@@ -17,10 +17,8 @@ Indicates a property that should be displayed to the user as bindable.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [displaybind]  
-  
 ```  
   
 ## Remarks  
@@ -48,4 +46,4 @@ Indicates a property that should be displayed to the user as bindable.
  [Data Member Attributes](../windows/data-member-attributes.md)   
  [defaultbind](../windows/defaultbind.md)   
  [immediatebind](../windows/immediatebind.md)   
- [requestedit](../windows/requestedit.md)   
+ [requestedit](../windows/requestedit.md)   

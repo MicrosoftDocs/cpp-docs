@@ -102,13 +102,13 @@ virtual BOOL Create(DWORD dwStyle,
  Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
   
  *pParentWnd*  
- Specifies the link control's parent window. It must not be `NULL`.  
+ Specifies the link control's parent window. It must not be NULL.  
   
  *nID*  
  Specifies the link control's ID.  
   
 ### Return Value  
- `true` if initialization was successful; otherwise `false`.  
+ TRUE if initialization was successful; otherwise FALSE.  
   
 ### Remarks  
  You construct a `CLinkCtrl` object in two steps. First, call the constructor and then call `Create`, which creates the link control and attaches it to the `CLinkCtrl` object. If you want to use extended windows styles with your control, call [CLinkCtrl::CreateEx](#createex) instead of `Create`.  
@@ -159,13 +159,13 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
  Specifies the link control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](../../mfc/reference/rect-structure1.md) structure.  
   
  *pParentWnd*  
- Specifies the link control's parent window. It must not be `NULL`.  
+ Specifies the link control's parent window. It must not be NULL.  
   
  *nID*  
  Specifies the link control's ID.  
   
 ### Return Value  
- `true` if initialization was successful; otherwise `false`.  
+ TRUE if initialization was successful; otherwise FALSE.  
   
 ### Remarks  
  Use `CreateEx` instead of [Create](#create) to apply extended Windows style constants.  
@@ -199,7 +199,7 @@ int GetIdealSize(
 |Parameter|Description|  
 |---------------|-----------------|  
 |[in] *cxMaxWidth*|The maximum width of the link, in pixels.|  
-|[out] * *pSize*|A pointer to a Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.|  
+|[out] \* *pSize*|A pointer to a Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure. When this method returns, the *cy* member of the `SIZE` structure contains the ideal link text height for the link text width that is specified by *cxMaxWidth*. The *cx* member of the structure contains the link text width that is actually needed.|  
   
 ### Return Value  
  The preferred height of the link text, in pixels. The return value is the same as the value of the *cy* member of the `SIZE` structure.  
@@ -221,7 +221,7 @@ BOOL GetItem(PLITEM pItem) const;
  A pointer to a [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure to receive item information.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720), as described in the Windows SDK.  
@@ -254,10 +254,10 @@ BOOL GetItemID(
  The size in characters of the *szID* buffer.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 > [!NOTE]
->  This function also returns **FALSE** if the buffer of *szID or strID* is smaller than **MAX_LINKID_TEXT**.  
+>  This function also returns FALSE if the buffer of *szID or strID* is smaller than MAX_LINKID_TEXT.  
   
 ### Remarks  
  Retrieves the ID of a specific link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the Windows SDK.  
@@ -280,10 +280,10 @@ BOOL GetItemState(
  The value of the specified state item.  
   
  *stateMask*  
- Combination of flags describing which state item to get. For a list of values, see the description of the **state** member in the [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure. Allowable items are identical to those allowed in **state**.  
+ Combination of flags describing which state item to get. For a list of values, see the description of the `state` member in the [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure. Allowable items are identical to those allowed in `state`.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  Retrieves the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the Windows SDK.  
@@ -316,10 +316,10 @@ BOOL GetItemUrl(
  The size in characters of the *szURL* buffer.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 > [!NOTE]
->  This function also returns **FALSE** if the buffer of *szUrl or strUrl* is smaller than **MAX_LINKID_TEXT**.  
+>  This function also returns FALSE if the buffer of *szUrl or strUrl* is smaller than MAX_LINKID_TEXT.  
   
 ### Remarks  
  Retrieves the URL represented by the specified link control item. For more information, see the Win32 message [LM_GETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760720) in the Windows SDK.  
@@ -333,10 +333,10 @@ BOOL HitTest(PLHITTESTINFO phti) const;
   
 ### Parameters  
  *phti*  
- Pointer to a **LHITTESTINFO** structure containing any information about the link the user clicked.  
+ Pointer to a `LHITTESTINFO` structure containing any information about the link the user clicked.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [LM_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb760722), as described in the Windows SDK.  
@@ -353,7 +353,7 @@ BOOL SetItem(PLITEM pItem);
  A pointer to a [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure containing the information to set.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  This member function implements the behavior of the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724), as described in the Windows SDK.  
@@ -375,7 +375,7 @@ BOOL SetItemID(
  A null-terminated string containing the ID of the specified item.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  Sets the ID of a specific link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the Windows SDK.  
@@ -398,10 +398,10 @@ BOOL SetItemState(
  The value of the specified state item being set.  
   
  *stateMask*  
- Combination of flags describing the state item being set. For a list of values, see the description of the **state** member in the [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure. Allowable items are identical to those allowed in **state**.  
+ Combination of flags describing the state item being set. For a list of values, see the description of the `state` member in the [LITEM](http://msdn.microsoft.com/library/windows/desktop/bb760710) structure. Allowable items are identical to those allowed in `state`.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  Sets the value of the specified state item of a specific link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the Windows SDK.  
@@ -423,7 +423,7 @@ BOOL SetItemUrl(
  A null-terminated string containing the URL represented by the specified item  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
  Sets the URL represented by the specified link control item. For more information, see the Win32 message [LM_SETITEM](http://msdn.microsoft.com/library/windows/desktop/bb760724) in the Windows SDK.  

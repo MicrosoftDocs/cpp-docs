@@ -34,7 +34,7 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
 |Name|Description|  
 |----------|-----------------|  
 |[CHtmlEditView::Create](#create)|Creates a new window object.|  
-|[CHtmlEditView::GetDHtmlDocument](#getdhtmldocument)|Returns the **IHTMLDocument2** interface on the current document.|  
+|[CHtmlEditView::GetDHtmlDocument](#getdhtmldocument)|Returns the `IHTMLDocument2` interface on the current document.|  
 |[CHtmlEditView::GetStartDocument](#getstartdocument)|Retrieves the name of the default document for this view.|  
   
 ## Inheritance Hierarchy  
@@ -82,13 +82,13 @@ virtual BOOL Create(
   
 ### Parameters  
  *lpszClassName*  
- Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function or the **RegisterClass** Windows function. If **NULL**, uses the predefined default [CFrameWnd](../../mfc/reference/cframewnd-class.md) attributes.  
+ Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function or the `RegisterClass` Windows function. If NULL, uses the predefined default [CFrameWnd](../../mfc/reference/cframewnd-class.md) attributes.  
   
  *lpszWindowName*  
  Points to a null-terminated character string that represents the window name.  
   
  *dwStyle*  
- Specifies the window style attributes. By default, the **WS_VISIBLE** and **WS_CHILD** Windows styles are set.  
+ Specifies the window style attributes. By default, the WS_VISIBLE and WS_CHILD Windows styles are set.  
   
  *rect*  
  A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.  
@@ -97,16 +97,16 @@ virtual BOOL Create(
  A pointer to the parent window of the control.  
   
  *nID*  
- The ID number of the view. By default, set to **AFX_IDW_PANE_FIRST**.  
+ The ID number of the view. By default, set to AFX_IDW_PANE_FIRST.  
   
  *pContext*  
- A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). **NULL** by default.  
+ A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). NULL by default.  
   
 ### Remarks  
- This method will also call the contained WebBrowser's **Navigate** method to load a default document (see [CHtmlEditView::GetStartDocument](#getstartdocument)).  
+ This method will also call the contained WebBrowser's `Navigate` method to load a default document (see [CHtmlEditView::GetStartDocument](#getstartdocument)).  
   
 ##  <a name="getdhtmldocument"></a>  CHtmlEditView::GetDHtmlDocument  
- Returns the **IHTMLDocument2** interface on the current document.  
+ Returns the `IHTMLDocument2` interface on the current document.  
   
 ```  
 BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;  

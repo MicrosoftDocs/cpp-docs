@@ -112,7 +112,7 @@ void Close();
 ```  
   
 ### Remarks  
- After calling **Close**, you do not have to create a new `CFileFind` instance before calling [FindFile](#findfile) to begin a new search.  
+ After calling `Close`, you do not have to create a new `CFileFind` instance before calling [FindFile](#findfile) to begin a new search.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  
@@ -140,7 +140,7 @@ virtual BOOL FindFile(
   
 ### Parameters  
  *pstrName*  
- A pointer to a string containing the name of the file to find. If you pass **NULL** for *pstrName*, **FindFile** does a wildcard (*.\*) search.  
+ A pointer to a string containing the name of the file to find. If you pass NULL for *pstrName*, `FindFile` does a wildcard (*.\*) search.  
   
  *dwUnused*  
  Reserved to make `FindFile` polymorphic with derived classes. Must be 0.  
@@ -290,11 +290,11 @@ virtual CString GetFileName() const;
   
  `GetFileName` is one of three `CFileFind` member functions that return some form of the file name. The following list describes the three and how they vary:  
   
-- `GetFileName` returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file name `myfile.txt`.  
+- `GetFileName` returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file name *myfile.txt*.  
   
-- [GetFilePath](#getfilepath) returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file path `c:\myhtml\myfile.txt`.  
+- [GetFilePath](#getfilepath) returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file path *c:\myhtml\myfile.txt*.  
   
-- [GetFileTitle](#getfiletitle) returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file title `myfile`.  
+- [GetFileTitle](#getfiletitle) returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file title *myfile*.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#32](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_2.cpp)]  
@@ -314,11 +314,11 @@ virtual CString GetFilePath() const;
   
  `GetFilePath` is one of three `CFileFind` member functions that return some form of the file name. The following list describes the three and how they vary:  
   
-- [GetFileName](#getfilename) returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file name `myfile.txt`.  
+- [GetFileName](#getfilename) returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file name *myfile.txt*.  
   
 - `GetFilePath` returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file path `c:\myhtml\myfile.txt`.  
   
-- [GetFileTitle](#getfiletitle) returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file title `myfile`.  
+- [GetFileTitle](#getfiletitle) returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file title *myfile*.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  
@@ -338,11 +338,11 @@ virtual CString GetFileTitle() const;
   
  `GetFileTitle` is one of three `CFileFind` member functions that return some form of the file name. The following list describes the three and how they vary:  
   
-- [GetFileName](#getfilename) returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file name `myfile.txt`.  
+- [GetFileName](#getfilename) returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file name *myfile.txt*.  
   
-- [GetFilePath](#getfilepath) returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file path `c:\myhtml\myfile.txt`.  
+- [GetFilePath](#getfilepath) returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file path *c:\myhtml\myfile.txt*.  
   
-- `GetFileTitle` returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file title `myfile`.  
+- `GetFileTitle` returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file title *myfile*.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  
@@ -360,7 +360,7 @@ virtual CString GetFileURL() const;
 ### Remarks  
  You must call [FindNextFile](#findnextfile) at least once before calling `GetFileURL`.  
   
- `GetFileURL` is similar to the member function [GetFilePath](#getfilepath), except that it returns the URL in the form `file://path`. For example, calling `GetFileURL` to get the complete URL for `myfile.txt` returns the URL `file://c:\myhtml\myfile.txt`.  
+ `GetFileURL` is similar to the member function [GetFilePath](#getfilepath), except that it returns the URL in the form `file://path`. For example, calling `GetFileURL` to get the complete URL for *myfile.txt* returns the URL `file://c:\myhtml\myfile.txt`.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  
@@ -453,7 +453,7 @@ virtual CString GetRoot() const;
 ### Remarks  
  You must call [FindNextFile](#findnextfile) at least once before calling `GetRoot`.  
   
- This member function returns the drive specifier and path name used to start a search. For example, calling [FindFile](#findfile) with `*.dat` results in `GetRoot` returning an empty string. Passing a path, such as `c:\windows\system\*.dll`, to **FindFile** results `GetRoot` returning `c:\windows\system\`.  
+ This member function returns the drive specifier and path name used to start a search. For example, calling [FindFile](#findfile) with `*.dat` results in `GetRoot` returning an empty string. Passing a path, such as `c:\windows\system\*.dll`, to `FindFile` results `GetRoot` returning `c:\windows\system\`.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  

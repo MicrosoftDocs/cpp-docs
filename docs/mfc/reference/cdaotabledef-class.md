@@ -104,7 +104,7 @@ class CDaoTableDef : public CObject
         > [!TIP]
         >  The easiest way to create saved tables is to create them and store them in your database using Microsoft Access. Then you can open and use them in your MFC code.  
   
- To use the tabledef object you have opened or created, create and open a `CDaoRecordset` object, specifying the name of the tabledef with a **dbOpenTable** value in the `nOpenType` parameter.  
+ To use the tabledef object you have opened or created, create and open a `CDaoRecordset` object, specifying the name of the tabledef with a `dbOpenTable` value in the *nOpenType* parameter.  
   
  To use a tabledef object to create a `CDaoRecordset` object, you typically create or open a tabledef as described above, then construct a recordset object, passing a pointer to your tabledef object when you call [CDaoRecordset::Open](../../mfc/reference/cdaorecordset-class.md#open). The tabledef you pass must be in an open state. For more information, see class [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md).  
   
@@ -149,7 +149,7 @@ BOOL CanUpdate();
  For related information, see the topic "Updatable Property" in DAO Help.  
   
 ##  <a name="cdaotabledef"></a>  CDaoTableDef::CDaoTableDef  
- Constructs a **CDaoTableDef** object.  
+ Constructs a `CDaoTableDef` object.  
   
 ```  
 CDaoTableDef(CDaoDatabase* pDatabase);
@@ -196,16 +196,16 @@ virtual void Create(
   
 |Constant|Description|  
 |--------------|-----------------|  
-|**dbAttachExclusive**|For databases that use the Microsoft Jet database engine, indicates the table is an attached table opened for exclusive use.|  
-|**dbAttachSavePWD**|For databases that use the Microsoft Jet database engine, indicates that the user ID and password for the attached table are saved with the connection information.|  
-|**dbSystemObject**|Indicates the table is a system table provided by the Microsoft Jet database engine.|  
-|**dbHiddenObject**|Indicates the table is a hidden table provided by the Microsoft Jet database engine.|  
+|`dbAttachExclusive`|For databases that use the Microsoft Jet database engine, indicates the table is an attached table opened for exclusive use.|  
+|`dbAttachSavePWD`|For databases that use the Microsoft Jet database engine, indicates that the user ID and password for the attached table are saved with the connection information.|  
+|`dbSystemObject`|Indicates the table is a system table provided by the Microsoft Jet database engine.|  
+|`dbHiddenObject`|Indicates the table is a hidden table provided by the Microsoft Jet database engine.|  
   
  *lpszSrcTable*  
- A pointer to a string containing the source table name. By default this value is initialized as **NULL**.  
+ A pointer to a string containing the source table name. By default this value is initialized as NULL.  
   
  *lpszConnect*  
- A pointer to a string containing the default connection string. By default this value is initialized as **NULL**.  
+ A pointer to a string containing the default connection string. By default this value is initialized as NULL.  
   
 ### Remarks  
  Once you have named the tabledef, you can then call [Append](#append) to save the tabledef in the database's TableDefs collection. After calling `Append`, the tabledef is in an open state, and you can use it to create a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object.  
@@ -234,17 +234,17 @@ void CreateField(CDaoFieldInfo& fieldinfo);
   
 |Type|Size (bytes)|Description|  
 |----------|--------------------|-----------------|  
-|**dbBoolean**|1 byte|BOOL|  
-|**dbByte**|1|BYTE|  
-|**dbInteger**|2|int|  
-|**dbLong**|4|long|  
-|**dbCurrency**|8|Currency ( [COleCurrency](../../mfc/reference/colecurrency-class.md))|  
-|**dbSingle**|4|float|  
-|**dbDouble**|8|double|  
-|**dbDate**|8|Date/Time ( [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md))|  
-|**dbText**|1 - 255|Text ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|  
-|**dbLongBinary**|0|Long Binary (OLE Object), [CLongBinary](../../mfc/reference/clongbinary-class.md) or [CByteArray](../../mfc/reference/cbytearray-class.md)|  
-|**dbMemo**|0|Memo ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|  
+|`dbBoolean`|1 byte|BOOL|  
+|`dbByte`|BYTE|  
+|`dbInteger`|2|int|  
+|`dbLong`|4|long|  
+|`dbCurrency`|8|Currency ( [COleCurrency](../../mfc/reference/colecurrency-class.md))|  
+|`dbSingle`|4|float|  
+|`dbDouble`|8|double|  
+|`dbDate`|8|Date/Time ( [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md))|  
+|`dbText`|1 - 255|Text ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|  
+|`dbLongBinary`|0|Long Binary (OLE Object), [CLongBinary](../../mfc/reference/clongbinary-class.md) or [CByteArray](../../mfc/reference/cbytearray-class.md)|  
+|`dbMemo`|0|Memo ( [CString](../../atl-mfc-shared/reference/cstringt-class.md))|  
   
  *lSize*  
  A value that indicates the maximum size, in bytes, of a field that contains text, or the fixed size of a field that contains text or numeric values. The *lSize* parameter is ignored for all but text fields.  
@@ -254,31 +254,31 @@ void CreateField(CDaoFieldInfo& fieldinfo);
   
 |Constant|Description|  
 |--------------|-----------------|  
-|**dbFixedField**|The field size is fixed (default for Numeric fields).|  
-|**dbVariableField**|The field size is variable (Text fields only).|  
-|**dbAutoIncrField**|The field value for new records is automatically incremented to a unique long integer that cannot be changed. Only supported for Microsoft Jet database tables.|  
-|**dbUpdatableField**|The field value can be changed.|  
-|**dbDescending**|The field is sorted in descending (Z - A or 100 - 0) order (applies only to a Field object in a Fields collection of an Index object). If you omit this constant, the field is sorted in ascending (A - Z or 0 - 100) order (default).|  
+|`dbFixedField`|The field size is fixed (default for Numeric fields).|  
+|`dbVariableField`|The field size is variable (Text fields only).|  
+|`dbAutoIncrField`|The field value for new records is automatically incremented to a unique long integer that cannot be changed. Only supported for Microsoft Jet database tables.|  
+|`dbUpdatableField`|The field value can be changed.|  
+|`dbDescending`|The field is sorted in descending (Z - A or 100 - 0) order (applies only to a Field object in a Fields collection of an Index object). If you omit this constant, the field is sorted in ascending (A - Z or 0 - 100) order (default).|  
   
  *fieldinfo*  
  A reference to a [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure.  
   
 ### Remarks  
- A **DAOField** (OLE) object is created and appended to the Fields collection of the `DAOTableDef` (OLE) object. Besides its use for examining object properties, you can also use `CDaoFieldInfo` to construct an input parameter for creating new fields in a tabledef. The first version of `CreateField` is simpler to use, but if you want finer control, you can use the second version of `CreateField`, which takes a `CDaoFieldInfo` parameter.  
+ A `DAOField` (OLE) object is created and appended to the Fields collection of the `DAOTableDef` (OLE) object. Besides its use for examining object properties, you can also use `CDaoFieldInfo` to construct an input parameter for creating new fields in a tabledef. The first version of `CreateField` is simpler to use, but if you want finer control, you can use the second version of `CreateField`, which takes a `CDaoFieldInfo` parameter.  
   
  If you use the version of `CreateField` that takes a `CDaoFieldInfo` parameter, you must carefully set each of the following members of the `CDaoFieldInfo` structure:  
   
-- **m_strName**  
+- `m_strName`  
   
-- **m_nType**  
+- `m_nType`  
   
-- **m_lSize**  
+- `m_lSize`  
   
-- **m_lAttributes**  
+- `m_lAttributes`  
   
-- **m_bAllowZeroLength**  
+- `m_bAllowZeroLength`  
   
- The remaining members of `CDaoFieldInfo` should be set to **0**, **FALSE**, or an empty string, as appropriate for the member, or a `CDaoException` may occur.  
+ The remaining members of `CDaoFieldInfo` should be set to **0**, FALSE, or an empty string, as appropriate for the member, or a `CDaoException` may occur.  
   
  For related information, see the topic "CreateField Method" in DAO Help.  
   
@@ -300,13 +300,13 @@ void CreateIndex(CDaoIndexInfo& indexinfo);
   
  The following members of the `CDaoIndexInfo` structure must be set:  
   
-- **m_strName** A name must be supplied.  
+- `m_strName` A name must be supplied.  
   
-- **m_pFieldInfos** Must point to an array of `CDaoIndexFieldInfo` structures.  
+- `m_pFieldInfos` Must point to an array of `CDaoIndexFieldInfo` structures.  
   
-- **m_nFields** Must specify the number of fields in the array of `CDaoFieldInfo` structures.  
+- `m_nFields` Must specify the number of fields in the array of `CDaoFieldInfo` structures.  
   
- The remaining members will be ignored if set to **FALSE**. In addition, the **m_lDistinctCount** member is ignored during creation of the index.  
+ The remaining members will be ignored if set to FALSE. In addition, the `m_lDistinctCount` member is ignored during creation of the index.  
   
 ##  <a name="deletefield"></a>  CDaoTableDef::DeleteField  
  Call this member function to remove a field and make it inaccessible.  
@@ -362,12 +362,12 @@ long GetAttributes();
   
 |Constant|Description|  
 |--------------|-----------------|  
-|**dbAttachExclusive**|For databases that use the Microsoft Jet database engine, indicates the table is an attached table opened for exclusive use.|  
-|**dbAttachSavePWD**|For databases that use the Microsoft Jet database engine, indicates that the user ID and password for the attached table are saved with the connection information.|  
-|**dbSystemObject**|Indicates the table is a system table provided by the Microsoft Jet database engine.|  
-|**dbHiddenObject**|Indicates the table is a hidden table provided by the Microsoft Jet database engine.|  
-|**dbAttachedTable**|Indicates the table is an attached table from a non-ODBC database, such as a Paradox database.|  
-|**dbAttachedODBC**|Indicates the table is an attached table from an ODBC database, such as Microsoft SQL Server.|  
+|`dbAttachExclusive`|For databases that use the Microsoft Jet database engine, indicates the table is an attached table opened for exclusive use.|  
+|`dbAttachSavePWD`|For databases that use the Microsoft Jet database engine, indicates that the user ID and password for the attached table are saved with the connection information.|  
+|`dbSystemObject`|Indicates the table is a system table provided by the Microsoft Jet database engine.|  
+|`dbHiddenObject`|Indicates the table is a hidden table provided by the Microsoft Jet database engine.|  
+|`dbAttachedTable`|Indicates the table is an attached table from a non-ODBC database, such as a Paradox database.|  
+|`dbAttachedODBC`|Indicates the table is an attached table from an ODBC database, such as Microsoft SQL Server.|  
   
  A system table is a table created by the Microsoft Jet database engine to contain various internal information.  
   
@@ -394,7 +394,7 @@ CString GetConnect();
   
  For Microsoft Jet database base tables, the specifier is a empty string ("").  
   
- If a password is required but not provided, the ODBC driver displays a login dialog box the first time a table is accessed and again if the connection is closed and reopened. If an attached table has the **dbAttachSavePWD** attribute, the login prompt will not appear when the table is reopened.  
+ If a password is required but not provided, the ODBC driver displays a login dialog box the first time a table is accessed and again if the connection is closed and reopened. If an attached table has the `dbAttachSavePWD` attribute, the login prompt will not appear when the table is reopened.  
   
  For related information, see the topic "Connect Property" in DAO Help.  
   
@@ -680,13 +680,13 @@ void SetAttributes(long lAttributes);
   
 |Constant|Description|  
 |--------------|-----------------|  
-|**dbAttachExclusive**|For databases that use the Microsoft Jet database engine, indicates the table is an attached table opened for exclusive use.|  
-|**dbAttachSavePWD**|For databases that use the Microsoft Jet database engine, indicates that the user ID and password for the attached table are saved with the connection information.|  
-|**dbSystemObject**|Indicates the table is a system table provided by the Microsoft Jet database engine.|  
-|**dbHiddenObject**|Indicates the table is a hidden table provided by the Microsoft Jet database engine.|  
+|`dbAttachExclusive`|For databases that use the Microsoft Jet database engine, indicates the table is an attached table opened for exclusive use.|  
+|`dbAttachSavePWD`|For databases that use the Microsoft Jet database engine, indicates that the user ID and password for the attached table are saved with the connection information.|  
+|`dbSystemObject`|Indicates the table is a system table provided by the Microsoft Jet database engine.|  
+|`dbHiddenObject`|Indicates the table is a hidden table provided by the Microsoft Jet database engine.|  
   
 ### Remarks  
- When setting multiple attributes, you can combine them by summing the appropriate constants using the bitwise-OR operator. Setting **dbAttachExclusive** on a nonattached table produces an exception. Combining the following values also produce an exception:  
+ When setting multiple attributes, you can combine them by summing the appropriate constants using the bitwise-OR operator. Setting `dbAttachExclusive` on a nonattached table produces an exception. Combining the following values also produce an exception:  
   
 - **dbAttachExclusive &#124; dbAttachedODBC**  
   

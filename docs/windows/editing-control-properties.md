@@ -22,20 +22,18 @@ ms.workload: ["cplusplus", "uwp"]
 2.  In the [Properties window](/visualstudio/ide/reference/properties-window), change the properties of your control.  
   
     > [!NOTE]
-    >  When you set the **Bitmap** property for a button, radio button, or check box control equal to **True**, the style BS_BITMAP is implemented for your control. For more information, see [Button Styles](../mfc/reference/styles-used-by-mfc.md#button-styles). For an example of associating a bitmap with a control, see [CButton::SetBitmap](../mfc/reference/cbutton-class.md#setbitmap). Bitmaps will not appear on your control while you are in the Dialog resource editor.  
+    >  When you set the **Bitmap** property for a button, radio button, or check box control equal to **True**, the style BS_BITMAP is implemented for your control. For more information, see [Button Styles](../mfc/reference/styles-used-by-mfc.md#button-styles). For an example of associating a bitmap with a control, see [CButton::SetBitmap](../mfc/reference/cbutton-class.md#setbitmap). Bitmaps will not appear on your control while you are in the **Dialog** resource editor.  
   
 ### To undo changes to the properties of a control  
   
-1.  Make sure the control has focus in the Dialog editor.  
+1.  Make sure the control has focus in the **Dialog** editor.  
   
 2.  Choose **Undo** from the **Edit** menu (if focus is not on the control, the **Undo** command will be unavailable).  
   
- For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects, see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
-

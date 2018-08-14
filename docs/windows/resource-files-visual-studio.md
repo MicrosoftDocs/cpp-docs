@@ -13,9 +13,9 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Resource Files (Visual Studio)
 > [!NOTE]
->  This material applies to Windows desktop applications. For information about resources in Universal Windows Platform apps, see [Defining App Resources](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
+>  This material applies to Windows desktop applications. For information about resources in Universal Windows Platform apps, see [Defining App Resources](http://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).  
 >   
-> For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+> For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
 >  
 > Since projects in .NET programming languages do not use resource script files, you must open your resources from **Solution Explorer**. You can use the [Image editor](../windows/image-editor-for-icons.md) and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
@@ -72,4 +72,3 @@ ms.workload: ["cplusplus", "uwp"]
  [Resource Editors](../windows/resource-editors.md)   
  [Working with Resource Files](../windows/working-with-resource-files.md)   
  [Menus and Other Resources](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
-

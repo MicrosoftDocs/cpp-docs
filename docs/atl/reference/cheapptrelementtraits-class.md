@@ -27,10 +27,10 @@ class CHeapPtrElementTraits :
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The object type to be stored in the collection class.  
   
- `Allocator`  
+ *Allocator*  
  The memory allocation class to use. The default is [CCRTAllocator](../../atl/reference/ccrtallocator-class.md).  
   
 ## Members  

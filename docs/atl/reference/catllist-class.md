@@ -23,10 +23,10 @@ class CAtlList
 ```  
   
 #### Parameters  
- `E`  
+ *E*  
  The element type.  
   
- `ETraits`  
+ *ETraits*  
  The code used to copy or move elements. See [CElementTraits Class](../../atl/reference/celementtraits-class.md) for more details.  
   
 ## Members  
@@ -96,7 +96,7 @@ POSITION AddHead(INARGTYPE element);
 ```  
   
 ### Parameters  
- `element`  
+ *element*  
  The new element.  
   
 ### Return Value  
@@ -116,11 +116,11 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
 ```  
   
 ### Parameters  
- `plNew`  
+ *plNew*  
  The list to be added.  
   
 ### Remarks  
- The list pointed to by `plNew` is inserted at the start of the existing list. In debug builds, an assertion failure will occur if `plNew` is equal to NULL.  
+ The list pointed to by *plNew* is inserted at the start of the existing list. In debug builds, an assertion failure will occur if *plNew* is equal to NULL.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#14](../../atl/codesnippet/cpp/catllist-class_2.cpp)]  
@@ -134,7 +134,7 @@ POSITION AddTail(INARGTYPE element);
 ```  
   
 ### Parameters  
- `element`  
+ *element*  
  The element to add.  
   
 ### Return Value  
@@ -154,11 +154,11 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
 ```  
   
 ### Parameters  
- `plNew`  
+ *plNew*  
  The list to be added.  
   
 ### Remarks  
- The list pointed to by `plNew` is inserted after the last element (if any) in the list object. The last element in the `plNew` list therefore becomes the tail. In debug builds, an assertion failure will occur if *plNew* is equal to NULL.  
+ The list pointed to by *plNew* is inserted after the last element (if any) in the list object. The last element in the *plNew* list therefore becomes the tail. In debug builds, an assertion failure will occur if *plNew* is equal to NULL.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#16](../../atl/codesnippet/cpp/catllist-class_4.cpp)]  
@@ -184,7 +184,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 ```  
   
 ### Parameters  
- `nBlockSize`  
+ *nBlockSize*  
  The block size.  
   
 ### Remarks  
@@ -213,17 +213,17 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 ```  
   
 ### Parameters  
- `element`  
+ *element*  
  The element to be found in the list.  
   
- `posStartAfter`  
+ *posStartAfter*  
  The start position for the search. If no value is specified, the search begins with the head element.  
   
 ### Return Value  
  Returns the POSITION value of the element if found, otherwise returns NULL.  
   
 ### Remarks  
- In debug builds, an assertion failure will occur if the list object is not valid, or if the `posStartAfter` value is out of range.  
+ In debug builds, an assertion failure will occur if the list object is not valid, or if the *posStartAfter* value is out of range.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#19](../../atl/codesnippet/cpp/catllist-class_7.cpp)]  
@@ -236,11 +236,11 @@ POSITION FindIndex(size_t iElement) const throw();
 ```  
   
 ### Parameters  
- `iElement`  
+ *iElement*  
  The zero-based index of the required list element.  
   
 ### Return Value  
- Returns the corresponding POSITION value, or NULL if `iElement` is out of range.  
+ Returns the corresponding POSITION value, or NULL if *iElement* is out of range.  
   
 ### Remarks  
  This method returns the POSITION corresponding to a given index value, allowing access to the *n*th element in the list.  
@@ -259,7 +259,7 @@ const E& GetAt(POSITION pos) const throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The POSITION value specifying a particular element.  
   
 ### Return Value  
@@ -270,7 +270,7 @@ const E& GetAt(POSITION pos) const throw();
   
  If the list is not **const**, `GetAt` returns a reference to the element. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
- In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
+ In debug builds, an assertion failure will occur if *pos* is equal to NULL.  
   
 ### Example  
  See the example for [CAtlList::FindIndex](#findindex).  
@@ -334,7 +334,7 @@ const E& GetNext(POSITION& pos) const throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  A POSITION value, returned by a previous call to `GetNext`, [CAtlList::GetHeadPosition](#getheadposition), or other `CAtlList` method.  
   
 ### Return Value  
@@ -343,7 +343,7 @@ const E& GetNext(POSITION& pos) const throw();
  If the list is not **const**, `GetNext` returns a reference to the next element of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- The POSITION counter, `pos`, is updated to point to the next element in the list, or NULL if there are no more elements. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
+ The POSITION counter, *pos*, is updated to point to the next element in the list, or NULL if there are no more elements. In debug builds, an assertion failure will occur if *pos* is equal to NULL.  
   
 ### Example  
  See the example for [CAtlList::GetHeadPosition](#getheadposition).  
@@ -357,7 +357,7 @@ const E& GetPrev(POSITION& pos) const throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  A POSITION value, returned by a previous call to `GetPrev`, [CAtlList::GetTailPosition](#gettailposition), or other `CAtlList` method.  
   
 ### Return Value  
@@ -366,7 +366,7 @@ const E& GetPrev(POSITION& pos) const throw();
  If the list is not **const**, `GetPrev` returns a reference to an element of the list. This allows the method to be used on either side of an assignment statement and thus allows the list entries to be modified.  
   
 ### Remarks  
- The POSITION counter, `pos`, is updated to point to the previous element in the list, or NULL if there are no more elements. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
+ The POSITION counter, *pos*, is updated to point to the previous element in the list, or NULL if there are no more elements. In debug builds, an assertion failure will occur if *pos* is equal to NULL.  
   
 ### Example  
  See the example for [CAtlList::GetTailPosition](#gettailposition).  
@@ -423,10 +423,10 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The POSITION value after which the new element will be inserted.  
   
- `element`  
+ *element*  
  The element to be inserted.  
   
 ### Return Value  
@@ -446,10 +446,10 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The new element will be inserted into the list before this POSITION value.  
   
- `element`  
+ *element*  
  The element to be inserted.  
   
 ### Return Value  
@@ -482,11 +482,11 @@ void MoveToHead(POSITION pos) throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The POSITION value of the element to move.  
   
 ### Remarks  
- The specified element is moved from its current position to the head of the list. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
+ The specified element is moved from its current position to the head of the list. In debug builds, an assertion failure will occur if *pos* is equal to NULL.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#26](../../atl/codesnippet/cpp/catllist-class_14.cpp)]  
@@ -499,11 +499,11 @@ void MoveToTail(POSITION pos) throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The POSITION value of the element to move.  
   
 ### Remarks  
- The specified element is moved from its current position to the tail of the list. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
+ The specified element is moved from its current position to the tail of the list. In debug builds, an assertion failure will occur if *pos* is equal to NULL.  
   
 ### Example  
  See the example for [CAtlList::MoveToHead](#movetohead).  
@@ -529,11 +529,11 @@ void RemoveAt(POSITION pos) throw();
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The POSITION value of the element to remove.  
   
 ### Remarks  
- The element referenced by `pos` is removed, and memory is freed. It is acceptable to use `RemoveAt` to remove the head or tail of the list.  
+ The element referenced by *pos* is removed, and memory is freed. It is acceptable to use `RemoveAt` to remove the head or tail of the list.  
   
  In debug builds, an assertion failure will occur if the list is not valid or if removing the element causes the list to access memory which isn't part of the list structure.  
   
@@ -606,14 +606,14 @@ void SetAt(POSITION pos, INARGTYPE element);
 ```  
   
 ### Parameters  
- `pos`  
+ *pos*  
  The POSITION value corresponding to the element to change.  
   
- `element`  
+ *element*  
  The new element value.  
   
 ### Remarks  
- Replaces the existing value with `element`. In debug builds, an assertion failure will occur if `pos` is equal to NULL.  
+ Replaces the existing value with *element*. In debug builds, an assertion failure will occur if *pos* is equal to NULL.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#30](../../atl/codesnippet/cpp/catllist-class_18.cpp)]  

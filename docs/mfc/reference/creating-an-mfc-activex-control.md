@@ -37,5 +37,5 @@ ActiveX control programs are modular programs designed to give a specific type o
 ## See Also  
  [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Property Pages](../../ide/property-pages-visual-cpp.md)   
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Deploying Applications](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
 

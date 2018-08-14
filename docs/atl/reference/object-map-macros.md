@@ -35,12 +35,12 @@ DECLARE_OBJECT_DESCRIPTION( x )
  [in] The class object's description.  
   
 ### Remarks  
- ATL enters this description into the object map through the [OBJECT_ENTRY](http://msdn.microsoft.com/en-us/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) macro.  
+ ATL enters this description into the object map through the [OBJECT_ENTRY](http://msdn.microsoft.com/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) macro.  
   
- `DECLARE_OBJECT_DESCRIPTION` implements a `GetObjectDescription` function, which you can use to override the [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) method.  
+ DECLARE_OBJECT_DESCRIPTION implements a `GetObjectDescription` function, which you can use to override the [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) method.  
 
   
- The `GetObjectDescription` function is called by **IComponentRegistrar::GetComponents**. **IComponentRegistrar** is an Automation interface that allows you to register and unregister individual components in a DLL. When you create a Component Registrar object with the ATL Project Wizard, the wizard will automatically implement the **IComponentRegistrar** interface. **IComponentRegistrar** is typically used by Microsoft Transaction Server.  
+ The `GetObjectDescription` function is called by `IComponentRegistrar::GetComponents`. `IComponentRegistrar` is an Automation interface that allows you to register and unregister individual components in a DLL. When you create a Component Registrar object with the ATL Project Wizard, the wizard will automatically implement the `IComponentRegistrar` interface. `IComponentRegistrar` is typically used by Microsoft Transaction Server.  
   
  For more information about the ATL Project Wizard, see the article [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md).  
   
@@ -55,16 +55,16 @@ OBJECT_ENTRY_AUTO( clsid, class )
 ```  
   
 ### Parameters  
- `clsid`  
- [in] The CLSID of a COM class implemented by the C++ class named `class`.  
+ *clsid*  
+ [in] The CLSID of a COM class implemented by the C++ class named *class*.  
   
- `class`  
- [in] The name of the C++ class implementing the COM class represented by `clsid`.  
+ *class*  
+ [in] The name of the C++ class implementing the COM class represented by *clsid*.  
   
 ### Remarks  
  Object entry macros are placed at global scope in the project to provide support for the registration, initialization, and creation of a class.  
   
- `OBJECT_ENTRY_AUTO` enters the function pointers of the creator class and class-factory creator class `CreateInstance` functions for this object into the auto-generated ATL object map. When [CAtlComModule::RegisterServer](catlcommodule-class.md#registerserver) is called, it updates the system registry for each object in the object map.  
+ OBJECT_ENTRY_AUTO enters the function pointers of the creator class and class-factory creator class `CreateInstance` functions for this object into the auto-generated ATL object map. When [CAtlComModule::RegisterServer](catlcommodule-class.md#registerserver) is called, it updates the system registry for each object in the object map.  
 
   
  The table below describes how the information added to the object map is obtained from the class given as the second parameter to this macro.  
@@ -86,16 +86,16 @@ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 ```  
   
 ### Parameters  
- `clsid`  
- [in] The CLSID of a COM class implemented by the C++ class named `class`.  
+ *clsid*  
+ [in] The CLSID of a COM class implemented by the C++ class named *class*.  
   
- `class`  
- [in] The name of the C++ class implementing the COM class represented by `clsid`.  
+ *class*  
+ [in] The name of the C++ class implementing the COM class represented by *clsid*.  
   
 ### Remarks  
  Object entry macros are placed at global scope in the project to provide support for the registration, initialization, and creation of a class.  
   
- `OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO` allows you to specify that an object should be registered and initialized (see [OBJECT_ENTRY_AUTO](#object_entry_auto) for more information), but it should not be creatable via `CoCreateInstance`.  
+ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO allows you to specify that an object should be registered and initialized (see [OBJECT_ENTRY_AUTO](#object_entry_auto) for more information), but it should not be creatable via `CoCreateInstance`.  
   
 ## See Also  
  [Macros](../../atl/reference/atl-macros.md)

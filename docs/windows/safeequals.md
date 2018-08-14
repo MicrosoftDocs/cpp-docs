@@ -17,7 +17,7 @@ Compares two numbers to determine whether they are equal.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeEquals (  
    const T t,  
@@ -25,18 +25,18 @@ inline bool SafeEquals (
 ) throw ();  
 ```  
   
-#### Parameters  
- [in] `t`  
+### Parameters  
+ [in] *t*  
  The first number to compare. This must be of type T.  
   
- [in] `u`  
+ [in] *u*  
  The second number to compare. This must be of type U.  
   
 ## Return Value  
- `true` if `t` and `u` are equal; otherwise `false`.  
+ **true** if *t* and *u* are equal; otherwise **false**.  
   
 ## Remarks  
- The method enhances `==` because `SafeEquals` enables you to compare two different types of numbers.  
+ The method enhances `==` because **SafeEquals** enables you to compare two different types of numbers.  
   
  This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single comparison operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  
   

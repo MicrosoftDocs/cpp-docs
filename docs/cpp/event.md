@@ -18,14 +18,13 @@ Declares an event.
 ## Syntax  
   
 ```  
-  
 __event method-declarator;  
 __event __interface interface-specifier;  
 __event member-declarator;  
 ```  
   
 ## Remarks  
- The keyword `__event` can be applied to a method declaration, an interface declaration, or a data member declaration. However, you cannot use the `__event` keyword to qualify a member of a nested class.  
+ The keyword **__event** can be applied to a method declaration, an interface declaration, or a data member declaration. However, you cannot use the **__event** keyword to qualify a member of a nested class.  
   
  Depending on whether your event source and receiver are native C++, COM, or managed (.NET Framework), you can use the following constructs as events:  
   
@@ -35,15 +34,15 @@ __event member-declarator;
 |—|interface|—|  
 |—|—|data member|  
   
- Use [__hook](../cpp/hook.md) in an event receiver to associate a handler method with an event method. Note that after you create an event with the `__event` keyword, all event handlers subsequently hooked to that event will be called when the event is called.  
+ Use [__hook](../cpp/hook.md) in an event receiver to associate a handler method with an event method. Note that after you create an event with the **__event** keyword, all event handlers subsequently hooked to that event will be called when the event is called.  
   
- An `__event` method declaration cannot have a definition; a definition is implicitly generated, so the event method can be called as if it were any ordinary method.  
+ An **__event** method declaration cannot have a definition; a definition is implicitly generated, so the event method can be called as if it were any ordinary method.  
   
 > [!NOTE]
 >  A templated class or struct cannot contain events.  
   
 ## Native Events  
- Native events are methods. The return type is typically `HRESULT` or `void`, but can be any integral type, including an `enum`. When an event uses an integral return type, an error condition is defined when an event handler returns a nonzero value, in which case the event being raised will call the other delegates.  
+ Native events are methods. The return type is typically HRESULT or **void**, but can be any integral type, including an **enum**. When an event uses an integral return type, an error condition is defined when an event handler returns a nonzero value, in which case the event being raised will call the other delegates.  
   
 ```cpp 
 // Examples of native C++ events:  
@@ -54,11 +53,11 @@ __event HRESULT OnClick(int* b, char* s);
  See [Event Handling in Native C++](../cpp/event-handling-in-native-cpp.md) for sample code.  
   
 ## COM Events  
- COM events are interfaces. The parameters of a method in an event source interface should be **in** parameters (but this is not rigorously enforced), because an **out** parameter is not useful when multicasting. A level 1 warning will be issued if you use an **out** parameter.  
+ COM events are interfaces. The parameters of a method in an event source interface should be *in* parameters (but this is not rigorously enforced), because an *out* parameter is not useful when multicasting. A level 1 warning will be issued if you use an *out* parameter.  
   
- The return type is typically `HRESULT` or `void`, but can be any integral type, including `enum`. When an event uses an integral return type and an event handler returns a nonzero value, it is an error condition, in which case the event being raised aborts calls to the other delegates. Note that the compiler will automatically mark an event source interface as a [source](../windows/source-cpp.md) in the generated IDL.  
+ The return type is typically HRESULT or **void**, but can be any integral type, including **enum**. When an event uses an integral return type and an event handler returns a nonzero value, it is an error condition, in which case the event being raised aborts calls to the other delegates. Note that the compiler will automatically mark an event source interface as a [source](../windows/source-cpp.md) in the generated IDL.  
   
- The [__interface](../cpp/interface.md) keyword is always required after `__event` for a COM event source.  
+ The [__interface](../cpp/interface.md) keyword is always required after **__event** for a COM event source.  
   
 ```cpp 
 // Example of a COM event:  
@@ -120,7 +119,7 @@ public:
 };  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Event Handling](../cpp/event-handling.md)   
  [event_source](../windows/event-source.md)   

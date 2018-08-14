@@ -139,7 +139,7 @@ static BOOL __stdcall IsKeyHandled(
 |[in] *bIsDefaultFrame*|A Boolean parameter that indicates whether *pWndFrame* is the default frame window.|  
   
 ### Return Value  
- `TRUE` if the shortcut key is handled. `FALSE` if the key is not handled or if *pWndFrame* is `NULL`.  
+ TRUE if the shortcut key is handled. FALSE if the key is not handled or if *pWndFrame* is NULL.  
   
 ### Remarks  
  The input parameters must match the entry in the accelerator table both for *nKey* and *fVirt* to determine whether a shortcut key is handled in *pWndFrame*.  
@@ -197,7 +197,7 @@ BOOL LoadState(
  Nonzero if the state was loaded successfully or 0 otherwise.  
   
 ### Remarks  
- If the *lpszProfileName* parameter is `NULL`, this method checks the default registry location for `CKeyboardManager` data. The default registry location is specified by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md). The data must be previously written with the method [CKeyboardManager::SaveState](#savestate).  
+ If the *lpszProfileName* parameter is NULL, this method checks the default registry location for `CKeyboardManager` data. The default registry location is specified by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md). The data must be previously written with the method [CKeyboardManager::SaveState](#savestate).  
   
  If you do not specify a default window, the main frame window of your application will be used.  
   
@@ -231,7 +231,7 @@ BOOL SaveState(
  Nonzero if the keyboard manager state was saved successfully, or 0 otherwise.  
   
 ### Remarks  
- If the *lpszProfileName* parameter is `NULL`, this method will write the `CKeyboardManager` state to the default location specified by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md). If you specify a location, you can load the data later using the method [CKeyboardManager::LoadState](#loadstate).  
+ If the *lpszProfileName* parameter is NULL, this method will write the `CKeyboardManager` state to the default location specified by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md). If you specify a location, you can load the data later using the method [CKeyboardManager::LoadState](#loadstate).  
   
  If you do not specify a default window, the main frame window will be used as the default window.  
   
@@ -246,7 +246,7 @@ static void ShowAllAccelerators(
   
 ### Parameters  
  [in] *bShowAll*  
- If `true`, all the shortcut keys will be displayed. If `false`, only the first shortcut key will be displayed.  
+ If TRUE, all the shortcut keys will be displayed. If FALSE, only the first shortcut key will be displayed.  
   
  [in] *lpszDelimiter*  
  A string to insert between shortcut keys. This delimiter has no effect if only one shortcut key is displayed.  

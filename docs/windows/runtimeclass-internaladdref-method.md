@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::InternalAddRef Method
-Increments the reference count to the current RuntimeClass object.  
+Increments the reference count to the current **RuntimeClass** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 ULONG InternalAddRef();  
 ```  
   

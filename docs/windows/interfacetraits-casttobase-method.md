@@ -17,19 +17,19 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T>  
 static __forceinline Base* CastToBase(  
    _In_ T* ptr  
 );  
 ```  
   
-#### Parameters  
- `T`  
- The type of parameter `ptr`.  
+### Parameters  
+ *T*  
+ The type of parameter *ptr*.  
   
- `ptr`  
- Pointer to a type `T`.  
+ *ptr*  
+ Pointer to a type *T*.  
   
 ## Return Value  
  A pointer to `Base`.  

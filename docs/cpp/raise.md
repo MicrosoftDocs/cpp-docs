@@ -18,15 +18,13 @@ Emphasizes the call site of an event.
 ## Syntax  
   
 ```  
-  
 __raise method-declarator;  
-  
 ```  
   
 ## Remarks  
  From managed code, an event can only be raised from within the class where it is defined. See [event](../windows/event-cpp-component-extensions.md) for more information.  
   
- The keyword `__raise` causes an error to be emitted if you call a non-event.  
+ The keyword **__raise** causes an error to be emitted if you call a non-event.  
   
 > [!NOTE]
 >  A templated class or struct cannot contain events.  
@@ -57,7 +55,7 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Event Handling](../cpp/event-handling.md)   
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

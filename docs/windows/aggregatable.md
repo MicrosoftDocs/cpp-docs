@@ -17,41 +17,40 @@ Indicates that the class supports aggregation.
   
 ## Syntax  
   
-```  
-  
-      [ aggregatable(   
+```cpp  
+[ aggregatable(   
    value  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *value* (optional)  
  A parameter to indicate when the COM object can be aggregated:  
   
--   **never** The COM object cannot be aggregated.  
+-   `never` The COM object cannot be aggregated.  
   
--   **allowed** The COM object can be created directly or it can be aggregated. This is the default.  
+-   `allowed` The COM object can be created directly or it can be aggregated. This is the default.  
   
--   **always** The COM object cannot be created directly and can only be aggregated. When you call `CoCreateInstance` for this object, you must specify the aggregating object's **IUnknown** interface (the controlling **IUnknown**).  
+-   `always` The COM object cannot be created directly and can only be aggregated. When you call `CoCreateInstance` for this object, you must specify the aggregating object's `IUnknown` interface (the controlling `IUnknown`).  
   
 ## Remarks  
  The **aggregatable** C++ attribute has the same functionality as the [aggregatable](http://msdn.microsoft.com/library/windows/desktop/aa366721) MIDL attribute. This means that the compiler will pass the **aggregatable** attribute through to the generated .idl file.  
   
- This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if **progid** is applied, **vi_progid** and **coclass** are also applied.  
+ This attribute requires that the [coclass](../windows/coclass.md), [progid](../windows/progid.md), or [vi_progid](../windows/vi-progid.md) attribute (or another attribute that implies one of these) also be applied to the same element. If any single attribute is used, the other two are automatically applied. For example, if `progid` is applied, `vi_progid` and `coclass` are also applied.  
   
- **ATL Projects**  
+### ATL Projects  
   
  If this attribute is used within a project that uses ATL, the behavior of the attribute changes. In addition to the previously described behavior, the attribute also adds one of the following macros to the target class:  
   
 |Parameter value|Inserted macro|  
 |---------------------|--------------------|  
-|**Never**|[DECLARE_NOT_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_not_aggregatable)|  
-|**Allowed**|[DECLARE_POLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_poly_aggregatable)|  
-|**Always**|[DECLARE_ONLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_only_aggregatable)|  
+|`Never`|[DECLARE_NOT_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_not_aggregatable)|  
+|`Allowed`|[DECLARE_POLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_poly_aggregatable)|  
+|`Always`|[DECLARE_ONLY_AGGREGATABLE](../atl/reference/aggregation-and-class-factory-macros.md#declare_only_aggregatable)|  
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_aggregatable.cpp  
 // compile with: /LD  
 #define _ATL_ATTRIBUTES  
@@ -71,9 +70,9 @@ class CMyClass {};
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
-|**Required attributes**|One or more of the following: **coclass**, **progid**, or **vi_progid**.|  
+|**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|  
 |**Invalid attributes**|None|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
@@ -82,4 +81,4 @@ class CMyClass {};
  [IDL Attributes](../windows/idl-attributes.md)   
  [Class Attributes](../windows/class-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)   
+ [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)   

@@ -42,25 +42,25 @@ constexpr typename common_type<Duration1, Duration2>::type
 
 ### Parameters
 
-`Left`
+*Left*
  The left `duration` or `time_point` object.
 
-`Right`
+*Right*
  The right `duration` or `time_point` object.
 
-`Time`
+*Time*
  A `time_point` object.
 
-`Dur`
+*Dur*
  A `duration` object.
 
 ### Return Value
 
 The first function returns a `duration` object whose interval length is the difference between the time intervals of the two arguments.
 
-The second function returns a `time_point` object that represents a point in time that is displaced, by the negation of the time interval that is represented by `Dur`, from the point in time that is specified by `Time`.
+The second function returns a `time_point` object that represents a point in time that is displaced, by the negation of the time interval that is represented by *Dur*, from the point in time that is specified by *Time*.
 
-The third function returns a `duration` object that represents the time interval between `Left` and `Right`.
+The third function returns a `duration` object that represents the time interval between *Left* and *Right*.
 
 ## <a name="op_neq"></a>  operator!=
 
@@ -113,15 +113,15 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
 
 ### Parameters
 
-`Dur`
+*Dur*
  A `duration` object.
 
-`Mult`
+*Mult*
  An integral value.
 
 ### Return Value
 
-Each function returns a `duration` object whose interval length is `Mult` multiplied by the length of `Dur`.
+Each function returns a `duration` object whose interval length is *Mult* multiplied by the length of *Dur*.
 
 Unless `is_convertible<Rep2, common_type<Rep1, Rep2>>`*holds true*, the first function does not participate in overload resolution. For more information, sssee [<type_traits>](../standard-library/type-traits.md).
 
@@ -148,23 +148,23 @@ constexpr typename common_type<Rep1, Rep2>::type
 
 ### Parameters
 
-`Dur`
+*Dur*
  A `duration` object.
 
-`Div`
+*Div*
  An integral value.
 
-`Left`
+*Left*
  The left `duration` object.
 
-`Right`
+*Right*
  The right `duration` object.
 
 ### Return Value
 
-The first operator returns a duration object whose interval length is the length of `Dur` divided by the value `Div`.
+The first operator returns a duration object whose interval length is the length of *Dur* divided by the value *Div*.
 
-The second operator returns the ratio of the interval lengths of `Left` and `Right`.
+The second operator returns the ratio of the interval lengths of *Left* and *Right*.
 
 Unless `is_convertible<Rep2, common_type<Rep1, Rep2>>`*holds true*, and `Rep2` is not an instantiation of `duration`, the first operator does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
@@ -196,23 +196,23 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
 
 ### Parameters
 
-`Left`
+*Left*
  The left `duration` or `time_point` object.
 
-`Right`
+*Right*
  The right `duration` or `time_point` object.
 
-`Time`
+*Time*
  A `time_point` object.
 
-`Dur`
+*Dur*
  A `duration` object.
 
 ### Return Value
 
-The first function returns a `duration` object that has a time interval that is equal to the sum of the intervals of `Left` and `Right`.
+The first function returns a `duration` object that has a time interval that is equal to the sum of the intervals of *Left* and *Right*.
 
-The second and third functions return a `time_point` object that represents a point in time that is displaced, by the interval `Dur`, from the point in time `Time`.
+The second and third functions return a `time_point` object that represents a point in time that is displaced, by the interval *Dur*, from the point in time *Time*.
 
 ## <a name="op_lt"></a>  operator&lt;
 
@@ -233,17 +233,17 @@ constexpr bool operator<(
 
 ### Parameters
 
-`Left`
+*Left*
  The left `duration` or `time_point` object.
 
-`Right`
+*Right*
  The right `duration` or `time_point` object.
 
 ### Return Value
 
-The first function returns `true` if the interval length of `Left` is less than the interval length of `Right`. Otherwise, the function returns `false`.
+The first function returns **true** if the interval length of *Left* is less than the interval length of *Right*. Otherwise, the function returns **false**.
 
-The second function returns `true` if `Left` precedes `Right`. Otherwise, the function returns `false`.
+The second function returns **true** if *Left* precedes *Right*. Otherwise, the function returns **false**.
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
 
@@ -263,10 +263,10 @@ constexpr bool operator<=(
 
 ### Parameters
 
-`Left`
+*Left*
  The left `duration` or `time_point` object.
 
-`Right`
+*Right*
  The right `duration` or `time_point` object.
 
 ### Return Value
@@ -291,17 +291,17 @@ constexpr bool operator==(
 
 ### Parameters
 
-`Left`
+*Left*
  The left `duration` or `time_point` object.
 
-`Right`
+*Right*
  The right `duration` or `time_point` object.
 
 ### Return Value
 
-The first function returns `true` if `Left` and `Right` represent time intervals that have the same length. Otherwise, the function returns `false`.
+The first function returns **true** if *Left* and *Right* represent time intervals that have the same length. Otherwise, the function returns **false**.
 
-The second function returns `true` if `Left` and `Right` represent the same point in time. Otherwise, the function returns `false`.
+The second function returns **true** if *Left* and *Right* represent the same point in time. Otherwise, the function returns **false**.
 
 ## <a name="op_gt"></a>  operator&gt;
 
@@ -321,10 +321,10 @@ constexpr bool operator>(
 
 ### Parameters
 
-`Left`
+*Left*
  The left `duration` or `time_point` object.
 
-`Right`
+*Right*
  The right `duration` or `time_point` object.
 
 ### Return Value
@@ -349,10 +349,10 @@ constexpr bool operator>=(
 
 ### Parameters
 
-`Left`
+*Left*
  The left `duration` or `time_point` object.
 
-`Right`
+*Right*
  The right `duration` or `time_point` object.
 
 ### Return Value
@@ -379,23 +379,23 @@ constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>
 
 ### Parameters
 
-`Dur`
+*Dur*
  A `duration` object.
 
-`Div`
+*Div*
  An integral value.
 
-`Left`
+*Left*
  The left `duration` object.
 
-`Right`
+*Right*
  The right `duration` object.
 
 ### Return Value
 
-The first function returns a `duration` object whose interval length is `Dur` modulo `Div`.
+The first function returns a `duration` object whose interval length is *Dur* modulo *Div*.
 
-The second function returns a value that represents `Left` modulo `Right`.
+The second function returns a value that represents *Left* modulo *Right*.
 
 ## See also
 

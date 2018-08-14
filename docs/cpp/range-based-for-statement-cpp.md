@@ -16,17 +16,16 @@ Executes `statement` repeatedly and sequentially for each element in `expression
 ## Syntax  
   
 ```  
-  
 for ( for-range-declaration : expression )  
    statement   
 ```  
   
 ## Remarks  
- Use the range-based `for` statement to construct loops that must execute through a "range", which is defined as anything that you can iterate through—for example, `std::vector`, or any other C++ Standard Library sequence whose range is defined by a `begin()` and `end()`. The name that is declared in the `for-range-declaration` portion is local to the `for` statement and cannot be re-declared in `expression` or `statement`. Note that the [auto](../cpp/auto-cpp.md) keyword is preferred in the `for-range-declaration` portion of the statement. 
+ Use the range-based **for** statement to construct loops that must execute through a "range", which is defined as anything that you can iterate through—for example, `std::vector`, or any other C++ Standard Library sequence whose range is defined by a `begin()` and `end()`. The name that is declared in the `for-range-declaration` portion is local to the **for** statement and cannot be re-declared in `expression` or `statement`. Note that the [auto](../cpp/auto-cpp.md) keyword is preferred in the `for-range-declaration` portion of the statement. 
 
  **New in Visual Studio 2017:**  Range-based for loops no longer require that begin() and end() return objects of the same type. This enables end() to return a sentinel object such as used by ranges as defined in the Ranges-V3 proposal. For more information, see [Generalizing the Range-Based For Loop](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html) and the [range-v3 library on GitHub](https://github.com/ericniebler/range-v3).
   
- This code shows how to use range-based `for` loops to iterate through an array and a vector:  
+ This code shows how to use range-based **for** loops to iterate through an array and a vector:  
   
 ```cpp  
 // range-based-for.cpp  
@@ -81,7 +80,6 @@ int main()
     cout << endl;  
     cout << "end of vector test" << endl;  
 }  
-  
 ```  
   
  Here is the output:  
@@ -102,9 +100,9 @@ int main()
  `end of vector test`  
 ```
 
- A range-based `for` loop terminates when one of these in `statement` is executed: a [break](../cpp/break-statement-cpp.md), [return](../cpp/return-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md) to a labeled statement outside the range-based **for** loop. A [continue](../cpp/continue-statement-cpp.md) statement in a range-based `for` loop terminates only the current iteration.  
+ A range-based **for** loop terminates when one of these in `statement` is executed: a [break](../cpp/break-statement-cpp.md), [return](../cpp/return-statement-cpp.md), or [goto](../cpp/goto-statement-cpp.md) to a labeled statement outside the range-based **for** loop. A [continue](../cpp/continue-statement-cpp.md) statement in a range-based **for** loop terminates only the current iteration.  
   
- Keep in mind these facts about range-based `for`:  
+ Keep in mind these facts about range-based **for**:  
   
 -   Automatically recognizes arrays.  
   
@@ -112,7 +110,7 @@ int main()
   
 -   Uses argument-dependent lookup `begin()` and `end()` for anything else.  
   
-## See Also  
+## See also  
  [auto](../cpp/auto-cpp.md)   
  [Iteration Statements](../cpp/iteration-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   

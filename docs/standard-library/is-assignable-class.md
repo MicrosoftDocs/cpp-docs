@@ -33,7 +33,7 @@ From
 
 ## Remarks
 
-The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both `From` and `To` must be complete types, `void`, or arrays of unknown bound.
+The unevaluated expression `declval<To>() = declval<From>()` must be well-formed. Both `From` and `To` must be complete types, **void**, or arrays of unknown bound.
 
 ## Requirements
 

@@ -88,7 +88,7 @@ BOOL m_bOSMenu;
 ```  
   
 ### Remarks  
- If `m_bOSMenu` is `TRUE`, the framework calls the inherited `TrackPopupMenu` method for this object. Otherwise, the framework calls [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu).  
+ If `m_bOSMenu` is TRUE, the framework calls the inherited `TrackPopupMenu` method for this object. Otherwise, the framework calls [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu).  
   
 ##  <a name="m_brightarrow"></a>  CMFCMenuButton::m_bRightArrow  
  A Boolean member variable that indicates the location of the pop-up menu.  
@@ -98,7 +98,7 @@ BOOL m_bRightArrow;
 ```  
   
 ### Remarks  
- When the user presses the menu button, the application shows a pop-up menu. The framework will display the pop-up menu either under the button or to the right of the button. The button also has a small arrow that indicates where the pop-up menu will appear. If `m_bRightArrow` is `TRUE`, the framework displays the pop-up menu to the right of the button. Otherwise, it displays the pop-up menu under the button.  
+ When the user presses the menu button, the application shows a pop-up menu. The framework will display the pop-up menu either under the button or to the right of the button. The button also has a small arrow that indicates where the pop-up menu will appear. If `m_bRightArrow` is TRUE, the framework displays the pop-up menu to the right of the button. Otherwise, it displays the pop-up menu under the button.  
   
 ##  <a name="m_bstaypressed"></a>  CMFCMenuButton::m_bStayPressed  
  A Boolean member variable that indicates whether the menu button appears pressed while the user makes a selection from the pop-up menu.  
@@ -108,9 +108,9 @@ BOOL m_bStayPressed;
 ```  
   
 ### Remarks  
- If the `m_bStayPressed` member is `FALSE`, the menu button does not become pressed when the uses clicks the button. In this case, the framework displays only the pop-up menu.  
+ If the `m_bStayPressed` member is FALSE, the menu button does not become pressed when the uses clicks the button. In this case, the framework displays only the pop-up menu.  
   
- If the `m_bStayPressed` member is `TRUE`, the menu button becomes pressed when the user clicks the button. It stays pressed until after the user closes the pop-up menu, either by making a selection or canceling.  
+ If the `m_bStayPressed` member is TRUE, the menu button becomes pressed when the user clicks the button. It stays pressed until after the user closes the pop-up menu, either by making a selection or canceling.  
   
 ##  <a name="m_hmenu"></a>  CMFCMenuButton::m_hMenu  
  The handle to the attached menu.  
@@ -163,7 +163,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that specifies the new size for the button.  
   
 ### Remarks  
- If you call this function and *bCalcOnly* is `TRUE`, `SizeToContent` will calculate only the new size of the button.  
+ If you call this function and *bCalcOnly* is TRUE, `SizeToContent` will calculate only the new size of the button.  
   
  The new size of the button is calculated to fit the button text, image, and arrow. The framework also adds in predefined margins of 10 pixels for the horizontal edge and 5 pixels for the vertical edge.  
   

@@ -23,11 +23,11 @@ class CSimpleArray
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The type of data to store in the array.  
   
- `TEqual`  
- A trait object, defining the equality test for elements of type `T`.  
+ *TEqual*  
+ A trait object, defining the equality test for elements of type *T*.  
   
 ## Members  
   
@@ -159,11 +159,11 @@ T& operator[](int nindex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The element index.  
   
 ### Return Value  
- Returns the element of the array referenced by `nIndex`.  
+ Returns the element of the array referenced by *nIndex*.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Utilities#89](../../atl/codesnippet/cpp/csimplearray-class_4.cpp)]  
@@ -225,7 +225,7 @@ BOOL RemoveAtint nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index pointing to the element to remove.  
   
 ### Return Value  
@@ -244,7 +244,7 @@ BOOL SetAtIndex(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index of the element to change.  
   
  *t*  

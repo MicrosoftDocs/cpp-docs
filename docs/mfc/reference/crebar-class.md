@@ -79,22 +79,22 @@ BOOL AddBar(
   
 ### Parameters  
  *pBar*  
- A pointer to a `CWnd` object that is the child window to be inserted into the rebar. The referenced object must have a **WS_CHILD**.  
+ A pointer to a `CWnd` object that is the child window to be inserted into the rebar. The referenced object must have a WS_CHILD.  
   
  *lpszText*  
- A pointer to a string containing the text to appear on the rebar. **NULL** by default. The text contained in *lpszText* is not part of the child window; it is on the rebar itself.  
+ A pointer to a string containing the text to appear on the rebar. NULL by default. The text contained in *lpszText* is not part of the child window; it is on the rebar itself.  
   
  *pbmp*  
- A pointer to a `CBitmap` object to be displayed on the rebar background. **NULL** by default.  
+ A pointer to a `CBitmap` object to be displayed on the rebar background. NULL by default.  
   
  *dwStyle*  
- A `DWORD` containing the style to apply to the rebar. See the **fStyle** function description in the Win32 structure [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) for a complete list of band styles.  
+ A DWORD containing the style to apply to the rebar. See the `fStyle` function description in the Win32 structure [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) for a complete list of band styles.  
   
  *clrFore*  
- A **COLORREF** value that represents the foreground color of the rebar.  
+ A COLORREF value that represents the foreground color of the rebar.  
   
  *clrBack*  
- A **COLORREF** value that represents the background color of the rebar.  
+ A COLORREF value that represents the background color of the rebar.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -118,7 +118,7 @@ virtual BOOL Create(
  Pointer to the `CWnd` object whose Windows window is the parent of the status bar. Normally your frame window.  
   
  *dwCtrlStyle*  
- The rebar control style. By default, **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands within the rebar control. See [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK for a list of styles.  
+ The rebar control style. By default, RBS_BANDBORDERS, which displays narrow lines to separate adjacent bands within the rebar control. See [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK for a list of styles.  
   
  *dwStyle*  
  The rebar window styles.  

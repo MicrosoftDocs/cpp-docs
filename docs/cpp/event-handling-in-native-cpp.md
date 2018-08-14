@@ -88,7 +88,5 @@ MyHandler2 was called with value 123.
 MyHandler1 was called with value 123.  
 ```  
   
-## See Also
-
-[Event Handling](../cpp/event-handling.md)  
-
+## See also
+ [Event Handling](../cpp/event-handling.md)  

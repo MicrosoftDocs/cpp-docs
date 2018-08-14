@@ -30,9 +30,9 @@ When you use the ATL OLE DB Consumer Wizard to generate a consumer, you have the
 >  If you modify the user record class or write your own consumer, the data variables must come before the status and length variables.  
   
 > [!NOTE]
->  The ATL OLE DB Consumer Wizard uses the **DB_NUMERIC** type to bind numeric data types. It formerly used **DBTYPE_VARNUMERIC** (the format of which is described by the **DB_VARNUMERIC** type; see Oledb.h). If you do not use the wizard to create consumers, it is recommended that you use **DB_NUMERIC**.  
+>  The ATL OLE DB Consumer Wizard uses the `DB_NUMERIC` type to bind numeric data types. It formerly used `DBTYPE_VARNUMERIC` (the format of which is described by the `DB_VARNUMERIC` type; see Oledb.h). If you do not use the wizard to create consumers, it is recommended that you use `DB_NUMERIC`.  
   
-```  
+```cpp  
 // Products.H : Declaration of the CProducts class  
   
 class CProductsAccessor  
@@ -78,7 +78,7 @@ public:
 ### Rowset Properties  
  Next, the wizard sets rowset properties. If you selected **Change**, **Insert**, or **Delete** in the ATL OLE DB Consumer Wizard, the appropriate properties are set here (DBPROP_IRowsetChange is always set, then one or more of DBPROPVAL_UP_CHANGE, DBPROPVAL_UP_INSERT, and/or DBPROPVAL_UP_DELETE, respectively).  
   
-```  
+```cpp  
 void GetRowsetProperties(CDBPropSet* pPropSet)  
 {  
    pPropSet->AddProperty(DBPROP_CANFETCHBACKWARDS, true, DBPROPOPTIONS_OPTIONAL);  
@@ -91,7 +91,7 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
 ### Command or Table Class  
  If you specify a command class, the wizard declares the command class; for templated code, the command looks like this:  
   
-```  
+```cpp  
 DEFINE_COMMAND_EX(CProductsAccessor, L" \  
 SELECT \  
    ProductID, \  
@@ -129,7 +129,7 @@ SELECT \
 ### Class Declaration  
  Finally, the wizard generates a command class declaration such as the following:  
   
-```  
+```cpp  
 class CProducts : public CCommand<CAccessor<CProductsAccessor>>  
 ```  
   
@@ -140,7 +140,7 @@ class CProducts : public CCommand<CAccessor<CProductsAccessor>>
   
  In the following example, the wizard generates a declaration for the class `COrders`, but the user record class `COrdersAccessor` does not appear, because the attributes inject it.  
   
-```  
+```cpp  
 #define _ATL_ATTRIBUTES  
 #include <atlbase.h>  
 #include <atldbcli.h>  

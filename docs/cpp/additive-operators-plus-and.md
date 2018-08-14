@@ -98,11 +98,11 @@ for( int i = 0; i < 10; ++i )
 >  Code of the form `pIntArray = pIntArray + 1` is rarely found in C++ programs; to perform an increment, these forms are preferable: `pIntArray++` or `pIntArray += 1`.  
   
 ## Pointer subtraction  
- If both operands are pointers, the result of subtraction is the difference (in array elements) between the operands. The subtraction expression yields a signed integral result of type ptrdiff_t (defined in the standard include file \<stddef.h>).  
+ If both operands are pointers, the result of subtraction is the difference (in array elements) between the operands. The subtraction expression yields a signed integral result of type `ptrdiff_t` (defined in the standard include file \<stddef.h>).  
   
  One of the operands can be of integral type, as long as it is the second operand. The result of the subtraction is of the same type as the original pointer. The value of the subtraction is a pointer to the (*n* - *i*)th array element, where *n* is the element pointed to by the original pointer and *i* is the integral value of the second operand.  
   
-## See Also  
+## See also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Additive Operators](../c-language/c-additive-operators.md)

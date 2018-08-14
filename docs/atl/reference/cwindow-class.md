@@ -81,7 +81,7 @@ class CWindow
 |[CWindow::GetLastActivePopup](#getlastactivepopup)|Retrieves the most recently active pop-up window.|  
 |[CWindow::GetMenu](#getmenu)|Retrieves the window's menu.|  
 |[CWindow::GetNextDlgGroupItem](#getnextdlggroupitem)|Retrieves the previous or next control within a group of controls.|  
-|[CWindow::GetNextDlgTabItem](#getnextdlgtabitem)|Retrieves the previous or next control having the **WS_TABSTOP** style.|  
+|[CWindow::GetNextDlgTabItem](#getnextdlgtabitem)|Retrieves the previous or next control having the WS_TABSTOP style.|  
 |[CWindow::GetParent](#getparent)|Retrieves the immediate parent window.|  
 |[CWindow::GetScrollInfo](#getscrollinfo)|Retrieves the parameters of a scroll bar.|  
 |[CWindow::GetScrollPos](#getscrollpos)|Retrieves the position of the scroll box.|  
@@ -184,8 +184,8 @@ class CWindow
   
 |Name|Description|  
 |----------|-----------------|  
-|[CWindow::operator HWND](#operator_hwnd)|Converts the `CWindow` object to an `HWND`.|  
-|[CWindow::operator =](#operator_eq)|Assigns an `HWND` to the `CWindow` object.|  
+|[CWindow::operator HWND](#operator_hwnd)|Converts the `CWindow` object to an HWND.|  
+|[CWindow::operator =](#operator_eq)|Assigns an HWND to the `CWindow` object.|  
   
 ### Public Data Members  
   
@@ -206,9 +206,9 @@ class CWindow
 > [!NOTE]
 >  Not every window-related Win32 function is wrapped by `CWindow`, and not every `CWindow` method wraps a Win32 function.  
   
- `CWindow::m_hWnd` stores the `HWND` that identifies a window. An `HWND` is attached to your object when you:  
+ `CWindow::m_hWnd` stores the HWND that identifies a window. An HWND is attached to your object when you:  
   
--   Specify an `HWND` in `CWindow`'s constructor.  
+-   Specify an HWND in `CWindow`'s constructor.  
   
 -   Call `CWindow::Attach`.  
   
@@ -238,14 +238,14 @@ UINT ArrangeIconicWindows() throw();
  See [ArrangeIconicWindows](http://msdn.microsoft.com/library/windows/desktop/ms632671) in the Windows SDK.  
   
 ##  <a name="attach"></a>  CWindow::Attach  
- Attaches the window identified by `hWndNew` to the `CWindow` object.  
+ Attaches the window identified by *hWndNew* to the `CWindow` object.  
   
 ```
 void Attach(HWND hWndNew) throw();
 ```  
   
 ### Parameters  
- `hWndNew`  
+ *hWndNew*  
  [in] The handle to a window.  
   
 ### Example  
@@ -285,11 +285,11 @@ BOOL CenterWindow(HWND hWndCenter = NULL) throw();
 ```  
   
 ### Parameters  
- `hWndCenter`  
- [in] The handle to the window against which to center. If this parameter is **NULL** (the default value), the method will set `hWndCenter` to the window's parent window if it is a child window. Otherwise, it will set `hWndCenter` to the window's owner window.  
+ *hWndCenter*  
+ [in] The handle to the window against which to center. If this parameter is NULL (the default value), the method will set *hWndCenter* to the window's parent window if it is a child window. Otherwise, it will set *hWndCenter* to the window's owner window.  
   
 ### Return Value  
- **TRUE** if the window is successfully centered; otherwise, **FALSE**.  
+ TRUE if the window is successfully centered; otherwise, FALSE.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#4](../../atl/codesnippet/cpp/cwindow-class_4.cpp)]  
@@ -376,39 +376,39 @@ HWND Create(
 ```  
   
 ### Parameters  
- `lpstrWndClass`  
+ *lpstrWndClass*  
  [in] A pointer to the window's class.  
   
- `hWndParent`  
+ *hWndParent*  
  [in] The handle to the parent or owner window.  
   
- `rect`  
- [in] A variable of type [_U_RECT](../../atl/reference/u-rect-class.md) specifying the position of the window. The default value is **NULL**. When this parameter is **NULL**, the value of `CWindow::rcDefault` is used.  
+ *rect*  
+ [in] A variable of type [_U_RECT](../../atl/reference/u-rect-class.md) specifying the position of the window. The default value is NULL. When this parameter is NULL, the value of `CWindow::rcDefault` is used.  
   
- `szWindowName`  
- [in] Specifies the name of the window. The default value is **NULL**.  
+ *szWindowName*  
+ [in] Specifies the name of the window. The default value is NULL.  
   
- `dwStyle`  
+ *dwStyle*  
  [in] The style of the window. The default value is 0, meaning no style is specified. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
   
- `dwExStyle`  
+ *dwExStyle*  
  [in] The extended window style. The default value is 0, meaning no extended style is specified. For a list of possible values, see [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
- `MenuOrID`  
+ *MenuOrID*  
  [in] A variable of type [_U_MENUorID](../../atl/reference/u-menuorid-class.md) specifying a handle to a menu or a window identifier. The default value is 0U.  
   
- `lpCreateParam`  
+ *lpCreateParam*  
  A pointer to the window-creation data contained in a [CREATESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms632603) structure.  
   
 ### Return Value  
- If successful, the handle to the newly created window, specified by [m_hWnd](#m_hwnd). Otherwise, **NULL**.  
+ If successful, the handle to the newly created window, specified by [m_hWnd](#m_hwnd). Otherwise, NULL.  
   
 ### Remarks  
  `CWindow::rcDefault` is defined as `__declspec(selectany) RECT CWindow::rcDefault = {CW_USEDEFAULT, CW_USEDEFAULT, 0, 0};`.  
   
  See [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for more information.  
   
- **Note** If 0 is used as the value for the `MenuOrID` parameter, it must be specified as 0U (the default value) to avoid a compiler error.  
+ **Note** If 0 is used as the value for the *MenuOrID* parameter, it must be specified as 0U (the default value) to avoid a compiler error.  
   
 ##  <a name="createcaret"></a>  CWindow::CreateCaret  
  Creates a new shape for the system caret.  
@@ -452,11 +452,11 @@ CWindow(HWND hWnd = NULL) throw();
 ```  
   
 ### Parameters  
- `hWnd`  
+ *hWnd*  
  [in] The handle to a window.  
   
 ### Remarks  
- Initializes the [m_hWnd](#m_hwnd) member to `hWnd`, which by default is **NULL**.  
+ Initializes the [m_hWnd](#m_hwnd) member to *hWnd*, which by default is NULL.  
   
 > [!NOTE]
 > `CWindow::CWindow` does not create a window. Classes [CWindowImpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), and [CDialogImpl](../../atl/reference/cdialogimpl-class.md) (all of which derive from `CWindow`) provide a method to create a window or dialog box, which is then assigned to `CWindow::m_hWnd`. You can also use the [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) Win32 function.  
@@ -479,7 +479,7 @@ HDWP DeferWindowPos(
  See [DeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632681) in the Windows SDK.  
   
 ##  <a name="destroywindow"></a>  CWindow::DestroyWindow  
- Destroys the window associated with the `CWindow` object and sets [m_hWnd](#m_hwnd) to **NULL**.  
+ Destroys the window associated with the `CWindow` object and sets [m_hWnd](#m_hwnd) to NULL.  
   
 ```
 BOOL DestroyWindow() throw();
@@ -494,14 +494,14 @@ BOOL DestroyWindow() throw();
  [!code-cpp[NVC_ATL_Windowing#5](../../atl/codesnippet/cpp/cwindow-class_5.cpp)]  
   
 ##  <a name="detach"></a>  CWindow::Detach  
- Detaches [m_hWnd](#m_hwnd) from the `CWindow` object and sets `m_hWnd` to **NULL**.  
+ Detaches [m_hWnd](#m_hwnd) from the `CWindow` object and sets `m_hWnd` to NULL.  
   
 ```
 HWND Detach() throw();
 ```  
   
 ### Return Value  
- The `HWND` associated with the `CWindow` object.  
+ The HWND associated with the `CWindow` object.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#6](../../atl/codesnippet/cpp/cwindow-class_6.cpp)]  
@@ -670,7 +670,7 @@ HWND GetDescendantWindow(int nID) const throw();
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  [in] The identifier of the descendant window to be retrieved.  
   
 ### Return Value  
@@ -690,17 +690,17 @@ HRESULT GetDlgControl(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  [in] The resource ID of the control being retrieved.  
   
- `iid`  
+ *iid*  
  [in] The ID of the interface you would like to get from the control.  
   
  *ppCtrl*  
  [out] The pointer to the interface.  
   
 ### Return Value  
- Returns `S_OK` on success or any valid error `HRESULT`. For example, the function returns **E_FAIL** if the control specified by `nID` cannot be found and it returns **E_NOINTERFACE** if the control can be found, but it doesn't support the interface specified by `iid`.  
+ Returns S_OK on success or any valid error HRESULT. For example, the function returns E_FAIL if the control specified by *nID* cannot be found and it returns E_NOINTERFACE if the control can be found, but it doesn't support the interface specified by *iid*.  
   
 ### Remarks  
  Using this pointer, you can call methods on the interface.  
@@ -726,17 +726,17 @@ HRESULT GetDlgHost(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  [in] The resource ID of the control being retrieved.  
   
- `iid`  
+ *iid*  
  [in] The ID of the interface you would like to get from the control.  
   
  *ppHost*  
  [out] The pointer to the interface.  
   
 ### Return Value  
- Returns `S_OK` if the window specified by `iid` is a Control Container, and the requested interface could be retrieved. Returns **E_FAIL** if the window is not a Control Container, or if the interface requested could not be retrieved. If a window with the specified ID could not be found, then the return value is equal to HRESULT_FROM_WIN32(ERROR_CONTROL_ID_NOT_FOUND).  
+ Returns S_OK if the window specified by *iid* is a Control Container, and the requested interface could be retrieved. Returns E_FAIL if the window is not a Control Container, or if the interface requested could not be retrieved. If a window with the specified ID could not be found, then the return value is equal to HRESULT_FROM_WIN32(ERROR_CONTROL_ID_NOT_FOUND).  
   
 ### Remarks  
  Using this pointer, you can call methods on the interface.  
@@ -782,7 +782,7 @@ BOOL GetDlgItemText(
  See [GetDlgItemText](http://msdn.microsoft.com/library/windows/desktop/ms645489) in the Windows SDK.  
   
 ### Remarks  
- The second version of this method allows you to copy the control's text to a `BSTR`. This version returns **TRUE** if the text is successfully copied; otherwise, **FALSE**.  
+ The second version of this method allows you to copy the control's text to a BSTR. This version returns TRUE if the text is successfully copied; otherwise, FALSE.  
   
 ##  <a name="getexstyle"></a>  CWindow::GetExStyle  
  Retrieves the extended window styles of the window.  
@@ -811,14 +811,14 @@ HFONT GetFont() const throw();
  A font handle.  
   
 ##  <a name="gethotkey"></a>  CWindow::GetHotKey  
- Determines the hot key associated with the window by sending a **WM_GETHOTKEY** message.  
+ Determines the hot key associated with the window by sending a WM_GETHOTKEY message.  
   
 ```
 DWORD GetHotKey() const throw();
 ```  
   
 ### Return Value  
- The virtual key code and modifiers for the hot key associated with the window. For a list of possible modifiers, see [WM_GETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646278) in the Windows SDK. For a list of of standard virtual key codes, see Winuser.h.  
+ The virtual key code and modifiers for the hot key associated with the window. For a list of possible modifiers, see [WM_GETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646278) in the Windows SDK. For a list of standard virtual key codes, see Winuser.h.  
   
 ##  <a name="geticon"></a>  CWindow::GetIcon  
  Retrieves the handle to the window's large or small icon.  
@@ -828,8 +828,8 @@ HICON GetIcon(BOOL bBigIcon = TRUE) const;
 ```  
   
 ### Parameters  
- `bBigIcon`  
- [in] If **TRUE** (the default value) the method returns the large icon. Otherwise, it returns the small icon.  
+ *bBigIcon*  
+ [in] If TRUE (the default value) the method returns the large icon. Otherwise, it returns the small icon.  
   
 ### Return Value  
  An icon handle.  
@@ -868,7 +868,7 @@ HWND GetNextDlgGroupItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
  See [GetNextDlgGroupItem](http://msdn.microsoft.com/library/windows/desktop/ms645492) in the Windows SDK.  
   
 ##  <a name="getnextdlgtabitem"></a>  CWindow::GetNextDlgTabItem  
- Retrieves the previous or next control having the **WS_TABSTOP** style.  
+ Retrieves the previous or next control having the WS_TABSTOP style.  
   
 ```
 HWND GetNextDlgTabItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
@@ -1119,25 +1119,25 @@ int GetWindowText(CSimpleString& strText) const;
 ```  
   
 ### Parameters  
- `lpszStringBuf`  
+ *lpszStringBuf*  
  A buffer to which to write the window text.  
   
- `nMaxCount`  
+ *nMaxCount*  
  The size of the buffer in characters; also the maximum number of characters to write.  
   
- `bstrText`  
- A `BSTR` in which to store the window text.  
+ *bstrText*  
+ A BSTR in which to store the window text.  
   
- `strText`  
+ *strText*  
  A `CString` in which to store the window text.  
   
 ### Return Value  
- If the text is successfully copied, the return value is **TRUE**; otherwise, the return value is **FALSE**.  
+ If the text is successfully copied, the return value is TRUE; otherwise, the return value is FALSE.  
   
 ### Remarks  
  See [GetWindowText](http://msdn.microsoft.com/library/windows/desktop/ms633520) in the Windows SDK.  
   
- The second version of this method allows you to store the text in a `BSTR`; the third version allows you to store the result in a [CString](../../atl-mfc-shared/reference/cstringt-class.md), since `CSimpleString` is the base class of `CString`.  
+ The second version of this method allows you to store the text in a BSTR; the third version allows you to store the result in a [CString](../../atl-mfc-shared/reference/cstringt-class.md), since `CSimpleString` is the base class of `CString`.  
   
 ##  <a name="getwindowtextlength"></a>  CWindow::GetWindowTextLength  
  Retrieves the length of the window's text.  
@@ -1218,7 +1218,7 @@ BOOL Invalidate(BOOL bErase = TRUE) throw();
 ### Remarks  
  See [InvalidateRect](http://msdn.microsoft.com/library/windows/desktop/dd145002) in the Windows SDK.  
   
- Passes **NULL** for the `RECT` parameter to the `InvalidateRect` Win32 function.  
+ Passes NULL for the `RECT` parameter to the `InvalidateRect` Win32 function.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#18](../../atl/codesnippet/cpp/cwindow-class_18.cpp)]  
@@ -1244,7 +1244,7 @@ void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
  See [InvalidateRgn](http://msdn.microsoft.com/library/windows/desktop/dd145003) in the Windows SDK.  
   
 ### Remarks  
- Specifies a `void` return type, while the `InvalidateRgn` Win32 function always returns **TRUE**.  
+ Specifies a **void** return type, while the `InvalidateRgn` Win32 function always returns TRUE.  
   
 ##  <a name="ischild"></a>  CWindow::IsChild  
  Determines whether the specified window is a child window.  
@@ -1379,14 +1379,14 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 ```  
   
 ### Parameters  
- `bLock`  
- [in] If **TRUE** (the default value), the window will be locked. Otherwise, it will be unlocked.  
+ *bLock*  
+ [in] If TRUE (the default value), the window will be locked. Otherwise, it will be unlocked.  
   
 ### Return Value  
- **TRUE** if the window is successfully locked; otherwise, **FALSE**.  
+ TRUE if the window is successfully locked; otherwise, FALSE.  
   
 ### Remarks  
- If `bLock` is **TRUE**, this method passes [m_hWnd](#m_hwnd) to the Win32 function; otherwise, it passes **NULL**.  
+ If *bLock* is TRUE, this method passes [m_hWnd](#m_hwnd) to the Win32 function; otherwise, it passes NULL.  
   
 ##  <a name="m_hwnd"></a>  CWindow::m_hWnd  
  Contains a handle to the window associated with the `CWindow` object.  
@@ -1441,30 +1441,30 @@ BOOL ModifyStyle(
 ```  
   
 ### Parameters  
- `dwRemove`  
+ *dwRemove*  
  [in] Specifies the window styles to be removed during style modification.  
   
- `dwAdd`  
+ *dwAdd*  
  [in] Specifies the window styles to be added during style modification.  
   
- `nFlags`  
+ *nFlags*  
  [in] Window-positioning flags. For a list of possible values, see the [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) function in the Windows SDK.  
   
 ### Return Value  
- **TRUE** if the window styles are modified; otherwise, **FALSE**.  
+ TRUE if the window styles are modified; otherwise, FALSE.  
   
 ### Remarks  
  Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) function in the Windows SDKfor information about the available window styles.  
   
- If `nFlags` is nonzero, `ModifyStyle` calls the Win32 function `SetWindowPos`, and redraws the window by combining `nFlags` with the following four flags:  
+ If *nFlags* is nonzero, `ModifyStyle` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:  
   
-- `SWP_NOSIZE` Retains the current size.  
+- SWP_NOSIZE Retains the current size.  
   
-- `SWP_NOMOVE` Retains the current position.  
+- SWP_NOMOVE Retains the current position.  
   
-- `SWP_NOZORDER` Retains the current Z order.  
+- SWP_NOZORDER Retains the current Z order.  
   
-- `SWP_NOACTIVATE` Does not activate the window.  
+- SWP_NOACTIVATE Does not activate the window.  
   
  To modify a window's extended styles, call [ModifyStyleEx](#modifystyleex).  
   
@@ -1482,30 +1482,30 @@ BOOL ModifyStyleEx(
 ```  
   
 ### Parameters  
- `dwRemove`  
+ *dwRemove*  
  [in] Specifies the extended styles to be removed during style modification.  
   
- `dwAdd`  
+ *dwAdd*  
  [in] Specifies the extended styles to be added during style modification.  
   
- `nFlags`  
+ *nFlags*  
  [in] Window-positioning flags. For a list of possible values, see the [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) function in the Windows SDK.  
   
 ### Return Value  
- **TRUE** if the extended window styles are modified; otherwise, **FALSE**.  
+ TRUE if the extended window styles are modified; otherwise, FALSE.  
   
 ### Remarks  
  Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) function in the Windows SDKfor information about the available extended styles.  
   
- If `nFlags` is nonzero, `ModifyStyleEx` calls the Win32 function `SetWindowPos`, and redraws the window by combining `nFlags` with the following four flags:  
+ If *nFlags* is nonzero, `ModifyStyleEx` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:  
   
-- `SWP_NOSIZE` Retains the current size.  
+- SWP_NOSIZE Retains the current size.  
   
-- `SWP_NOMOVE` Retains the current position.  
+- SWP_NOMOVE Retains the current position.  
   
-- `SWP_NOZORDER` Retains the current Z order.  
+- SWP_NOZORDER Retains the current Z order.  
   
-- `SWP_NOACTIVATE` Does not activate the window.  
+- SWP_NOACTIVATE Does not activate the window.  
   
  To modify windows using regular window styles, call [ModifyStyle](#modifystyle).  
   
@@ -1554,14 +1554,14 @@ BOOL OpenClipboard() throw();
  See [OpenClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649048) in the Windows SDK.  
   
 ##  <a name="operator_hwnd"></a>  CWindow::operator HWND  
- Converts a `CWindow` object to an `HWND`.  
+ Converts a `CWindow` object to an HWND.  
   
 ```  
 operator HWND() const throw();
 ```  
   
 ##  <a name="operator_eq"></a>  CWindow::operator =  
- Assigns an `HWND` to the `CWindow` object by setting the [m_hWnd](#m_hwnd) member to `hWnd`.  
+ Assigns an HWND to the `CWindow` object by setting the [m_hWnd](#m_hwnd) member to `hWnd`.  
   
 ```
 CWindow& operator= (HWND hWnd) throw();
@@ -1603,23 +1603,23 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
 ```  
   
 ### Parameters  
- `hDC`  
+ *hDC*  
  [in] The handle to a device context.  
   
- `dwFlags`  
+ *dwFlags*  
  [in] Specifies the drawing options. You can combine one or more of the following flags:  
   
-- `PRF_CHECKVISIBLE` Draw the window only if it is visible.  
+- PRF_CHECKVISIBLE Draw the window only if it is visible.  
   
-- `PRF_CHILDREN` Draw all visible child windows.  
+- PRF_CHILDREN Draw all visible child windows.  
   
-- `PRF_CLIENT` Draw the client area of the window.  
+- PRF_CLIENT Draw the client area of the window.  
   
-- `PRF_ERASEBKGND` Erase the background before drawing the window.  
+- PRF_ERASEBKGND Erase the background before drawing the window.  
   
-- `PRF_NONCLIENT` Draw the non-client area of the window.  
+- PRF_NONCLIENT Draw the non-client area of the window.  
   
-- `PRF_OWNED` Draw all owned windows.  
+- PRF_OWNED Draw all owned windows.  
   
 ##  <a name="printclient"></a>  CWindow::PrintClient  
  Sends a [WM_PRINTCLIENT](http://msdn.microsoft.com/library/windows/desktop/dd145217) message to the window to request that it draw its client area in the specified device context.  
@@ -1629,23 +1629,23 @@ void PrintClient(HDC hDC, DWORD dwFlags) const throw();
 ```  
   
 ### Parameters  
- `hDC`  
+ *hDC*  
  [in] The handle to a device context.  
   
- `dwFlags`  
+ *dwFlags*  
  [in] Specifies drawing options. You can combine one or more of the following flags:  
   
-- `PRF_CHECKVISIBLE` Draw the window only if it is visible.  
+- PRF_CHECKVISIBLE Draw the window only if it is visible.  
   
-- `PRF_CHILDREN` Draw all visible child windows.  
+- PRF_CHILDREN Draw all visible child windows.  
   
-- `PRF_CLIENT` Draw the client area of the window.  
+- PRF_CLIENT Draw the client area of the window.  
   
-- `PRF_ERASEBKGND` Erase the background before drawing the window.  
+- PRF_ERASEBKGND Erase the background before drawing the window.  
   
-- `PRF_NONCLIENT` Draw the non-client area of the window.  
+- PRF_NONCLIENT Draw the non-client area of the window.  
   
-- `PRF_OWNED` Draw all owned windows.  
+- PRF_OWNED Draw all owned windows.  
   
 ##  <a name="rcdefault"></a>  CWindow::rcDefault  
  Contains default window dimensions.  
@@ -1696,14 +1696,14 @@ BOOL ResizeClient(
 ```  
   
 ### Parameters  
- `nWidth`  
+ *nWidth*  
  New width of the window in pixels.  
   
- `nHeight`  
+ *nHeight*  
  New height of the window in pixels.  
   
- `bRedraw`  
- A flag indicating whether to redraw changes. Default is **FALSE**, indicating the window does not redraw changes.  
+ *bRedraw*  
+ A flag indicating whether to redraw changes. Default is FALSE, indicating the window does not redraw changes.  
   
 ##  <a name="screentoclient"></a>  CWindow::ScreenToClient  
  Converts screen coordinates to client coordinates.  
@@ -1797,20 +1797,20 @@ void SendMessageToDescendants(
 ```  
   
 ### Parameters  
- `message`  
+ *message*  
  [in] The message to be sent.  
   
- `wParam`  
+ *wParam*  
  [in] Additional message-specific information.  
   
- `lParam`  
+ *lParam*  
  [in] Additional message-specific information.  
   
- `bDeep`  
- [in] If **TRUE** (the default value), the message will be sent to all descendant windows; otherwise, it will be sent only to the immediate child windows.  
+ *bDeep*  
+ [in] If TRUE (the default value), the message will be sent to all descendant windows; otherwise, it will be sent only to the immediate child windows.  
   
 ### Remarks  
- If `bDeep` is **TRUE**, the message is additionally sent to all other descendant windows.  
+ If *bDeep* is TRUE, the message is additionally sent to all other descendant windows.  
   
 ##  <a name="sendnotifymessage"></a>  CWindow::SendNotifyMessage  
  Sends a message to the window.  
@@ -1868,7 +1868,7 @@ int SetDlgCtrlID(int nID) throw();
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  [in] The new value to set for the window's identifier.  
   
 ### Return Value  
@@ -1918,42 +1918,42 @@ void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
 ```  
   
 ### Parameters  
- `hFont`  
+ *hFont*  
  [in] The handle to the new font.  
   
- `bRedraw`  
- [in] If **TRUE** (the default value), the window is redrawn. Otherwise, it is not.  
+ *bRedraw*  
+ [in] If TRUE (the default value), the window is redrawn. Otherwise, it is not.  
   
 ##  <a name="sethotkey"></a>  CWindow::SetHotKey  
- Associates a hot key with the window by sending a **WM_SETHOTKEY** message.  
+ Associates a hot key with the window by sending a WM_SETHOTKEY message.  
   
 ```
 int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
 ```  
   
 ### Parameters  
- `wVirtualKeyCode`  
- [in] The virtual key code of the hot key. For a list of of standard virtual key codes, see Winuser.h.  
+ *wVirtualKeyCode*  
+ [in] The virtual key code of the hot key. For a list of standard virtual key codes, see Winuser.h.  
   
- `wModifiers`  
- [in] The modifiers of the hot key. For a list of possible values, see **WM_SETHOTKEY** in the Windows SDK.  
+ *wModifiers*  
+ [in] The modifiers of the hot key. For a list of possible values, see WM_SETHOTKEY in the Windows SDK.  
   
 ### Return Value  
  For a list of possible return values, see [WM_SETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646284) in the Windows SDK.  
   
 ##  <a name="seticon"></a>  CWindow::SetIcon  
- Sets the window's large or small icon to the icon identified by `hIcon`.  
+ Sets the window's large or small icon to the icon identified by *hIcon*.  
   
 ```
 HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
 ```  
   
 ### Parameters  
- `hIcon`  
+ *hIcon*  
  [in] The handle to a new icon.  
   
- `bBigIcon`  
- [in] If **TRUE** (the default value), the method sets a large icon. Otherwise, it sets a small icon.  
+ *bBigIcon*  
+ [in] If TRUE (the default value), the method sets a large icon. Otherwise, it sets a small icon.  
   
 ### Return Value  
  The handle to the previous icon.  
@@ -1992,8 +1992,8 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
 ```  
   
 ### Parameters  
- `bRedraw`  
- [in] Specifies the state of the redraw flag. If **TRUE** (the default value), the redraw flag is set; if **FALSE**, the flag is cleared.  
+ *bRedraw*  
+ [in] Specifies the state of the redraw flag. If TRUE (the default value), the redraw flag is set; if FALSE, the flag is cleared.  
   
 ### Remarks  
  Call `SetRedraw` to allow changes to be redrawn or to prevent changes from being redrawn.  

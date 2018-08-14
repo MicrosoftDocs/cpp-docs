@@ -15,7 +15,6 @@ ms.workload: ["cplusplus"]
 An array is a collection of like objects. The simplest case of an array is a vector, which may be declared by the following sequence:  
   
 ```  
-  
 decl-specifier identifier [ constant-expression ]  
 decl-specifier identifier []  
 decl-specifier identifer [][ constant-expression] . . .  
@@ -27,7 +26,7 @@ decl-specifier identifier [ constant-expression ]
   
 -   An optional storage class specifier.  
   
--   Optional **const** and/or `volatile` specifiers.  
+-   Optional **const** and/or **volatile** specifiers.  
   
 -   The type name of the elements of the array.  
   
@@ -35,13 +34,13 @@ decl-specifier identifier [ constant-expression ]
   
 -   The identifier.  
   
--   A constant expression of integral type enclosed in brackets, **[].** If multiple dimensions are declared using additional brackets, the constant expression may be omitted on the first set of brackets.  
+-   A constant expression of integral type enclosed in brackets, **[]**. If multiple dimensions are declared using additional brackets, the constant expression may be omitted on the first set of brackets.  
   
 -   Optional additional brackets enclosing constant expressions.  
   
  3. An optional initializer.  See [Initializers](../cpp/initializers.md).  
   
- The number of elements in the array is given by the constant expression. The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The *constant-expression* must be of an integral type and must be greater than 0. A zero-sized array is legal only when the array is the last field in a `struct` or **union** and when the Microsoft extensions (/Ze) are enabled.  
+ The number of elements in the array is given by the constant expression. The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The *constant-expression* must be of an integral type and must be greater than 0. A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.  
   
  The following example shows how to define an array at run time:  
   
@@ -66,7 +65,7 @@ int main() {
 }  
 ```  
   
- Arrays are derived types and can therefore be constructed from any other derived or fundamental type except functions, references, and `void`.  
+ Arrays are derived types and can therefore be constructed from any other derived or fundamental type except functions, references, and **void**.  
   
  Arrays constructed from other arrays are multidimensional arrays. These multidimensional arrays are specified by placing multiple bracketed constant expressions in sequence. For example, consider this declaration:  
   
@@ -74,7 +73,7 @@ int main() {
 int i2[5][7];  
 ```  
   
- It specifies an array of type `int`, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:  
+ It specifies an array of type **int**, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:  
   
  ![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif "vc38RC1")  
 Conceptual Layout of Multidimensional Array  
@@ -162,7 +161,4 @@ The minimum cost to Market 3 is: 17.29
 ```  
   
 ## Comments  
- The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation.  
-  
-## See Also  
- 
+ The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation. 

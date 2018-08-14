@@ -25,14 +25,14 @@ class numeric_limits
 
 ### Parameters
 
-`Type`
+*Type*
  The fundamental element data type whose properties are being tested or queried or set.
 
 ## Remarks
 
-The header defines explicit specializations for the types `wchar_t`, `bool`, `char`, `signed char`, `unsigned char`, `short`, `unsigned short`, `int`, `unsigned int`, `long`, `unsigned long`, `float`, `double`, `long double`**,** `long long`, `unsigned long long`, `char16_t`, and `char32_t`. For these explicit specializations, the member [numeric_limits::is_specialized](#is_specialized) is `true`, and all relevant members have meaningful values. The program can supply additional explicit specializations. Most member functions of the class describe or test possible implementations of `float`.
+The header defines explicit specializations for the types **wchar_t**, **bool**, **char**, **signed char**, **unsigned char**, **short**, **unsigned short**, **int**, **unsigned int**, **long**, **unsigned long**, **float**, **double**, **long double****,** **long long**, **unsigned long long**, `char16_t`, and `char32_t`. For these explicit specializations, the member [numeric_limits::is_specialized](#is_specialized) is **true**, and all relevant members have meaningful values. The program can supply additional explicit specializations. Most member functions of the class describe or test possible implementations of **float**.
 
-For an arbitrary specialization, no members have meaningful values. A member object that does not have a meaningful value stores zero (or `false`) and a member function that does not return a meaningful value returns `Type(0)`.
+For an arbitrary specialization, no members have meaningful values. A member object that does not have a meaningful value stores zero (or **false**) and a member function that does not return a meaningful value returns `Type(0)`.
 
 ### Static Functions and Constants
 
@@ -91,9 +91,9 @@ The smallest nonzero denormalized value.
 
 ### Remarks
 
-`long double` is the same as **double** for the C++ compiler.
+**long double** is the same as **double** for the C++ compiler.
 
-The function returns the minimum value for the type, which is the same as [min](#min) if [has_denorm](#has_denorm) is not equal to **denorm_present**.
+The function returns the minimum value for the type, which is the same as [min](#min) if [has_denorm](#has_denorm) is not equal to `denorm_present`.
 
 ### Example
 
@@ -290,7 +290,7 @@ An enumeration value of type **const**`float_denorm_style`, indicating whether t
 
 ### Remarks
 
-The member stores **denorm_present** for a floating-point type that has denormalized values, effectively a variable number of exponent bits.
+The member stores `denorm_present` for a floating-point type that has denormalized values, effectively a variable number of exponent bits.
 
 ### Example
 
@@ -936,7 +936,7 @@ Returns the most negative finite value.
 
 ### Remarks
 
-Returns the most negative finite value for the type (which is typically `min()` for integer types and `-max()` for floating-point types). The return value is meaningful if `is_bounded` is `true`.
+Returns the most negative finite value for the type (which is typically `min()` for integer types and `-max()` for floating-point types). The return value is meaningful if `is_bounded` is **true**.
 
 ## <a name="max"></a>  numeric_limits::max
 
@@ -952,7 +952,7 @@ The maximum finite value for a type.
 
 ### Remarks
 
-The maximum finite value is INT_MAX for type `int` and FLT_MAX for type **float**. The return value is meaningful if [is_bounded](#is_bounded) is **true**.
+The maximum finite value is INT_MAX for type **int** and FLT_MAX for type **float**. The return value is meaningful if [is_bounded](#is_bounded) is **true**.
 
 ### Example
 
@@ -1102,7 +1102,7 @@ The minimum normalized value for the type.
 
 ### Remarks
 
-The minimum normalized value is INT_MIN for type `int` and FLT_MIN for type `float`. The return value is meaningful if [is_bounded](#is_bounded) is `true` or if [is_signed](#is_signed) is `false`.
+The minimum normalized value is INT_MIN for type **int** and FLT_MIN for type **float**. The return value is meaningful if [is_bounded](#is_bounded) is **true** or if [is_signed](#is_signed) is **false**.
 
 ### Example
 
@@ -1461,7 +1461,7 @@ static const bool tinyness_before = false;
 
 ### Return Value
 
-`true` if the type can detect tiny values before rounding; `false` if it cannot.
+**true** if the type can detect tiny values before rounding; **false** if it cannot.
 
 ### Remarks
 

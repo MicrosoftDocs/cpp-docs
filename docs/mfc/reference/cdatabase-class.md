@@ -58,7 +58,7 @@ class CDatabase : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDatabase::m_hdbc](#m_hdbc)|Open Database Connectivity (ODBC) connection handle to a data source. Type **HDBC**.|  
+|[CDatabase::m_hdbc](#m_hdbc)|Open Database Connectivity (ODBC) connection handle to a data source. Type *HDBC*.|  
   
 ## Remarks  
  A data source is a specific instance of data hosted by some database management system (DBMS). Examples include Microsoft SQL Server, Microsoft Access, Borland dBASE, and xBASE. You can have one or more `CDatabase` objects active at a time in your application.  
@@ -118,13 +118,13 @@ virtual void BindParameters(HSTMT hstmt);
 ```  
   
 ### Parameters  
- `hstmt`  
+ *hstmt*  
  The ODBC statement handle for which you want to bind parameters.  
   
 ### Remarks  
  This approach is useful when you do not need the result set from a stored procedure.  
   
- In your override, call `SQLBindParameters` and related ODBC functions to bind the parameters. MFC calls your override before your call to `ExecuteSQL`. You do not need to call `SQLPrepare`; `ExecuteSQL` calls `SQLExecDirect` and destroys the **hstmt**, which is used only once.  
+ In your override, call `SQLBindParameters` and related ODBC functions to bind the parameters. MFC calls your override before your call to `ExecuteSQL`. You do not need to call `SQLPrepare`; `ExecuteSQL` calls `SQLExecDirect` and destroys the *hstmt*, which is used only once.  
   
 ##  <a name="cancel"></a>  CDatabase::Cancel  
  Call this member function to request that the data source cancel either an asynchronous operation in progress or a process from a second thread.  
@@ -157,7 +157,7 @@ BOOL CanUpdate() const;
 ```  
   
 ### Return Value  
- Nonzero if the `CDatabase` object allows updates; otherwise 0, indicating either that you passed **TRUE** in *bReadOnly* when you opened the `CDatabase` object or that the data source itself is read-only. The data source is read-only if a call to the ODBC API function `SQLGetInfo` for **SQL_DATASOURCE_READ_ONLY** returns "y".  
+ Nonzero if the `CDatabase` object allows updates; otherwise 0, indicating either that you passed TRUE in *bReadOnly* when you opened the `CDatabase` object or that the data source itself is read-only. The data source is read-only if a call to the ODBC API function `SQLGetInfo` for SQL_DATASOURCE_READ_ONLY returns "y".  
   
 ### Remarks  
  Not all drivers support updates.  
@@ -252,13 +252,13 @@ DWORD GetBookmarkPersistence() const;
   
 |Bitmask value|Bookmark persistence|  
 |-------------------|--------------------------|  
-|`SQL_BP_CLOSE`|Bookmarks are valid after a `Requery` operation.|  
-|`SQL_BP_DELETE`|The bookmark for a row is valid after a `Delete` operation on that row.|  
-|`SQL_BP_DROP`|Bookmarks are valid after a `Close` operation.|  
-|`SQL_BP_SCROLL`|Bookmarks are valid after any `Move` operation. This simply identifies if bookmarks are supported on the recordset, as returned by `CRecordset::CanBookmark`.|  
-|`SQL_BP_TRANSACTION`|Bookmarks are valid after a transaction is committed or rolled back.|  
-|`SQL_BP_UPDATE`|The bookmark for a row is valid after an `Update` operation on that row.|  
-|`SQL_BP_OTHER_HSTMT`|Bookmarks associated with one recordset object are valid on a second recordset.|  
+|SQL_BP_CLOSE|Bookmarks are valid after a `Requery` operation.|  
+|SQL_BP_DELETE|The bookmark for a row is valid after a `Delete` operation on that row.|  
+|SQL_BP_DROP|Bookmarks are valid after a `Close` operation.|  
+|SQL_BP_SCROLL|Bookmarks are valid after any `Move` operation. This simply identifies if bookmarks are supported on the recordset, as returned by `CRecordset::CanBookmark`.|  
+|SQL_BP_TRANSACTION|Bookmarks are valid after a transaction is committed or rolled back.|  
+|SQL_BP_UPDATE|The bookmark for a row is valid after an `Update` operation on that row.|  
+|SQL_BP_OTHER_HSTMT|Bookmarks associated with one recordset object are valid on a second recordset.|  
   
  For more information about this return value, see the ODBC API function `SQLGetInfo` in the Windows SDK. For more information about bookmarks, see the article [Recordset: Bookmarks and Absolute Positions (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).  
   
@@ -290,9 +290,9 @@ int GetCursorCommitBehavior() const;
   
 |Return value|Effect on CRecordset objects|  
 |------------------|----------------------------------|  
-|`SQL_CB_CLOSE`|Call `CRecordset::Requery` immediately following the transaction commit.|  
-|`SQL_CB_DELETE`|Call `CRecordset::Close` immediately following the transaction commit.|  
-|`SQL_CB_PRESERVE`|Proceed normally with `CRecordset` operations.|  
+|SQL_CB_CLOSE|Call `CRecordset::Requery` immediately following the transaction commit.|  
+|SQL_CB_DELETE|Call `CRecordset::Close` immediately following the transaction commit.|  
+|SQL_CB_PRESERVE|Proceed normally with `CRecordset` operations.|  
   
  For more information about this return value, see the ODBC API function `SQLGetInfo` in the Windows SDK. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
   
@@ -311,9 +311,9 @@ int GetCursorRollbackBehavior() const;
   
 |Return value|Effect on CRecordset objects|  
 |------------------|----------------------------------|  
-|`SQL_CB_CLOSE`|Call `CRecordset::Requery` immediately following the transaction rollback.|  
-|`SQL_CB_DELETE`|Call `CRecordset::Close` immediately following the transaction rollback.|  
-|`SQL_CB_PRESERVE`|Proceed normally with `CRecordset` operations.|  
+|SQL_CB_CLOSE|Call `CRecordset::Requery` immediately following the transaction rollback.|  
+|SQL_CB_DELETE|Call `CRecordset::Close` immediately following the transaction rollback.|  
+|SQL_CB_PRESERVE|Proceed normally with `CRecordset` operations.|  
   
  For more information about this return value, see the ODBC API function `SQLGetInfo` in the Windows SDK. For more information about transactions, see the article [Transaction (ODBC)](../../data/odbc/transaction-odbc.md).  
   
@@ -390,19 +390,19 @@ virtual BOOL Open(
   
 ### Parameters  
  *lpszDSN*  
- Specifies a data source name — a name registered with ODBC through the ODBC Administrator program. If a DSN value is specified in *lpszConnect* (in the form "DSN=\<data-source>"), it must not be specified again in *lpszDSN*. In this case, *lpszDSN* should be **NULL**. Otherwise, you can pass **NULL** if you want to present the user with a Data Source dialog box in which the user can select a data source. For further information, see Remarks.  
+ Specifies a data source name — a name registered with ODBC through the ODBC Administrator program. If a DSN value is specified in *lpszConnect* (in the form "DSN=\<data-source>"), it must not be specified again in *lpszDSN*. In this case, *lpszDSN* should be NULL. Otherwise, you can pass NULL if you want to present the user with a Data Source dialog box in which the user can select a data source. For further information, see Remarks.  
   
  *bExclusive*  
- Not supported in this version of the class library. Currently, an assertion fails if this parameter is **TRUE**. The data source is always opened as shared (not exclusive).  
+ Not supported in this version of the class library. Currently, an assertion fails if this parameter is TRUE. The data source is always opened as shared (not exclusive).  
   
  *bReadOnly*  
- **TRUE** if you intend the connection to be read-only and to prohibit updates to the data source. All dependent recordsets inherit this attribute. The default value is **FALSE**.  
+ TRUE if you intend the connection to be read-only and to prohibit updates to the data source. All dependent recordsets inherit this attribute. The default value is FALSE.  
   
  *lpszConnect*  
  Specifies a connection string. The connection string concatenates information, possibly including a data source name, a user ID valid on the data source, a user authentication string (password, if the data source requires one), and other information. The whole connection string must be prefixed by the string "ODBC;" (uppercase or lowercase). The "ODBC;" string is used to indicate that the connection is to an ODBC data source; this is for upward compatibility when future versions of the class library might support non-ODBC data sources.  
   
  *bUseCursorLib*  
- **TRUE** if you want the ODBC Cursor Library DLL to be loaded. The cursor library masks some functionality of the underlying ODBC driver, effectively preventing the use of dynasets (if the driver supports them). The only cursors supported if the cursor library is loaded are static snapshots and forward-only cursors. The default value is **TRUE**. If you plan to create a recordset object directly from `CRecordset` without deriving from it, you should not load the cursor library.  
+ TRUE if you want the ODBC Cursor Library DLL to be loaded. The cursor library masks some functionality of the underlying ODBC driver, effectively preventing the use of dynasets (if the driver supports them). The only cursors supported if the cursor library is loaded are static snapshots and forward-only cursors. The default value is TRUE. If you plan to create a recordset object directly from `CRecordset` without deriving from it, you should not load the cursor library.  
   
 ### Return Value  
  Nonzero if the connection is successfully made; otherwise 0 if the user chooses Cancel when presented a dialog box asking for more connection information. In all other cases, the framework throws an exception.  
@@ -435,20 +435,20 @@ virtual BOOL OpenEx(
   
 ### Parameters  
  *lpszConnectString*  
- Specifies an ODBC connection string. This includes the data source name as well as other optional information, such as a user ID and password. For example, "DSN=SQLServer_Source;UID=SA;PWD=abc123" is a possible connection string. Note that if you pass **NULL** for *lpszConnectString*, a Data Source dialog box will prompt the user to select a data source.  
+ Specifies an ODBC connection string. This includes the data source name as well as other optional information, such as a user ID and password. For example, "DSN=SQLServer_Source;UID=SA;PWD=abc123" is a possible connection string. Note that if you pass NULL for *lpszConnectString*, a Data Source dialog box will prompt the user to select a data source.  
   
  *dwOptions*  
  A bitmask which specifies a combination of the following values. The default value is 0, meaning that the database will be opened as shared with write access, the ODBC Cursor Library DLL will not be loaded, and the ODBC connection dialog box will display only if there is not enough information to make the connection.  
   
-- **CDatabase::openExclusive** Not supported in this version of the class library. A data source is always opened as shared (not exclusive). Currently, an assertion fails if you specify this option.  
+- `CDatabase::openExclusive` Not supported in this version of the class library. A data source is always opened as shared (not exclusive). Currently, an assertion fails if you specify this option.  
   
-- **CDatabase::openReadOnly** Open the data source as read-only.  
+- `CDatabase::openReadOnly` Open the data source as read-only.  
   
-- **CDatabase::useCursorLib** Load the ODBC Cursor Library DLL. The cursor library masks some functionality of the underlying ODBC driver, effectively preventing the use of dynasets (if the driver supports them). The only cursors supported if the cursor library is loaded are static snapshots and forward-only cursors. If you plan to create a recordset object directly from `CRecordset` without deriving from it, you should not load the cursor library.  
+- `CDatabase::useCursorLib` Load the ODBC Cursor Library DLL. The cursor library masks some functionality of the underlying ODBC driver, effectively preventing the use of dynasets (if the driver supports them). The only cursors supported if the cursor library is loaded are static snapshots and forward-only cursors. If you plan to create a recordset object directly from `CRecordset` without deriving from it, you should not load the cursor library.  
   
-- **CDatabase::noOdbcDialog** Do not display the ODBC connection dialog box, regardless of whether enough connection information is supplied.  
+- `CDatabase::noOdbcDialog` Do not display the ODBC connection dialog box, regardless of whether enough connection information is supplied.  
   
-- **CDatabase::forceOdbcDialog** Always display the ODBC connection dialog box.  
+- `CDatabase::forceOdbcDialog` Always display the ODBC connection dialog box.  
   
 ### Return Value  
  Nonzero if the connection is successfully made; otherwise 0 if the user chooses Cancel when presented a dialog box asking for more connection information. In all other cases, the framework throws an exception.  
@@ -456,7 +456,7 @@ virtual BOOL OpenEx(
 ### Remarks  
  Your database object must be initialized before you can use it to construct a recordset object.  
   
- If the *lpszConnectString* parameter in your `OpenEx` call does not contain enough information to make the connection, the ODBC driver opens a dialog box to obtain the necessary information from the user, provided you have not set **CDatabase::noOdbcDialog** or **CDatabase::forceOdbcDialog** in the *dwOptions* parameter. When you call `OpenEx`, your connection string, *lpszConnectString*, is stored privately in the `CDatabase` object and is available by calling the [GetConnect](#getconnect) member function.  
+ If the *lpszConnectString* parameter in your `OpenEx` call does not contain enough information to make the connection, the ODBC driver opens a dialog box to obtain the necessary information from the user, provided you have not set `CDatabase::noOdbcDialog` or `CDatabase::forceOdbcDialog` in the *dwOptions* parameter. When you call `OpenEx`, your connection string, *lpszConnectString*, is stored privately in the `CDatabase` object and is available by calling the [GetConnect](#getconnect) member function.  
   
  If you wish, you can open your own dialog box before you call `OpenEx` to get information from the user, such as a password, and then add that information to the connection string you pass to `OpenEx`. Or you might want to save the connection string you pass so you can reuse it the next time your application calls `OpenEx` on a `CDatabase` object.  
   

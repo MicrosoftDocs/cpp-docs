@@ -27,7 +27,7 @@ int main() {
   
  This code defines a family of functions that swap the values of the arguments. From this template, you can generate functions that will swap **int** and **long** types and also user-defined types. `MySwap` will even swap classes if the class's copy constructor and assignment operator are properly defined.  
   
- In addition, the function template will prevent you from swapping objects of different types, because the compiler knows the types of the `a` and `b` parameters at compile time.  
+ In addition, the function template will prevent you from swapping objects of different types, because the compiler knows the types of the *a* and *b* parameters at compile time.  
   
  Although this function could be performed by a nontemplated function, using void pointers, the template version is typesafe. Consider the following calls:  
   
@@ -52,9 +52,9 @@ int main(int j) {
 }  
 ```  
   
- When the template argument is explicitly specified, normal implicit conversions are done to convert the function argument to the type of the corresponding function template parameters. In the above example, the compiler will convert `char j` to type `int`.  
+ When the template argument is explicitly specified, normal implicit conversions are done to convert the function argument to the type of the corresponding function template parameters. In the above example, the compiler will convert `char j` to type **int**.  
   
-## See Also  
+## See also  
  [Templates](../cpp/templates-cpp.md)   
  [Function Template Instantiation](../cpp/function-template-instantiation.md)   
  [Explicit Instantiation](../cpp/explicit-instantiation.md)   

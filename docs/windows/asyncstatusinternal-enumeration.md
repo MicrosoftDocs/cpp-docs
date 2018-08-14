@@ -17,28 +17,28 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 enum AsyncStatusInternal;  
 ```  
   
 ## Remarks  
- Specifies a mapping between internal enumerations for the state of asynchronous operations and the **Windows::Foundation::AsyncStatus** enumeration.  
+ Specifies a mapping between internal enumerations for the state of asynchronous operations and the `Windows::Foundation::AsyncStatus` enumeration.  
   
 ## Members  
  `_Created`  
- Equivalent to ::Windows::Foundation::AsyncStatus::Created  
+ Equivalent to `::Windows::Foundation::AsyncStatus::Created`  
   
  `_Started`  
- Equivalent to ::Windows::Foundation::AsyncStatus::Started  
+ Equivalent to `::Windows::Foundation::AsyncStatus::Started`  
   
  `_Completed`  
- Equivalent to ::Windows::Foundation::AsyncStatus::Completed  
+ Equivalent to `::Windows::Foundation::AsyncStatus::Completed`  
   
  `_Cancelled`  
- Equivalent to ::Windows::Foundation::AsyncStatus::Cancelled  
+ Equivalent to `::Windows::Foundation::AsyncStatus::Cancelled`  
   
  `_Error`  
- Equivalent to ::Windows::Foundation::AsyncStatus::Error  
+ Equivalent to `::Windows::Foundation::AsyncStatus::Error`  
   
 ## Requirements  
  **Header:** async.h  

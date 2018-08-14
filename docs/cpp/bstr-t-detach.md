@@ -20,9 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 BSTR Detach( ) throw;  
-  
 ```  
   
 ## Return Value  
@@ -33,5 +31,5 @@ BSTR Detach( ) throw;
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

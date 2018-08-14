@@ -104,7 +104,7 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
   
 ### Parameters  
  [in] *bIsHoriz*  
- If `TRUE`, the separator is horizontal; if `FALSE`, the separator is vertical.  
+ If TRUE, the separator is horizontal; if FALSE, the separator is vertical.  
   
 ### Remarks  
  Horizontal separators are used in application menus. Vertical separators are used in toolbars.  
@@ -147,7 +147,7 @@ virtual BOOL IsSeparator() const;
 ```  
   
 ### Return Value  
- Always `TRUE` for this class.  
+ Always TRUE for this class.  
   
 ##  <a name="istabstop"></a>  CMFCRibbonSeparator::IsTabStop  
  Indicates whether this is a tab stop.  
@@ -157,7 +157,7 @@ virtual BOOL IsTabStop() const;
 ```  
   
 ### Return Value  
- Always `FALSE` for this class.  
+ Always FALSE for this class.  
   
 ### Remarks  
  A ribbon separator is not a tab stop.  

@@ -76,7 +76,7 @@ Use the macro [ALLOCATOR_DECL](../standard-library/allocators-functions.md#alloc
 
 _Lst1 allocates nodes with `allocator_chunklist` and the [sync_per_thread](../standard-library/sync-per-thread-class.md) synchronization filter.
 
-A block allocator is a cache or a filter. A cache is a template class that takes one argument of type std::size_t. It defines a block allocator that allocates and deallocates memory blocks of a single size. It must obtain memory using operator `new`, but it need not make a separate call to operator `new` for each block. It may, for example, suballocate from a larger block or cache deallocated blocks for subsequent reallocation.
+A block allocator is a cache or a filter. A cache is a template class that takes one argument of type std::size_t. It defines a block allocator that allocates and deallocates memory blocks of a single size. It must obtain memory using operator **new**, but it need not make a separate call to operator **new** for each block. It may, for example, suballocate from a larger block or cache deallocated blocks for subsequent reallocation.
 
 With a compiler that cannot compile rebind the value of the std::size_t argument used when the template was instantiated is not necessarily the value of the argument _Sz passed to a cache's member functions allocate and deallocate.
 
@@ -140,7 +140,7 @@ The cache template `cache_freelist` takes a max class argument which determines 
 |[allocator_base](../standard-library/allocator-base-class.md)|Defines the base class and common functions needed to create a user-defined allocator from a synchronization filter.|
 |[allocator_chunklist](../standard-library/allocator-chunklist-class.md)|Describes an object that manages storage allocation and freeing for objects using a cache of type [cache_chunklist](../standard-library/cache-chunklist-class.md).|
 |[allocator_fixed_size](../standard-library/allocator-fixed-size-class.md)|Describes an object that manages storage allocation and freeing for objects of type `Type` using a cache of type [cache_freelist](../standard-library/cache-freelist-class.md) with a length managed by [max_fixed_size](../standard-library/max-fixed-size-class.md).|
-|[allocator_newdel](../standard-library/allocator-newdel-class.md)|Implements an allocator that uses `operator delete` to deallocate a memory block and `operator new` to allocate a memory block.|
+|[allocator_newdel](../standard-library/allocator-newdel-class.md)|Implements an allocator that uses **operator delete** to deallocate a memory block and **operator new** to allocate a memory block.|
 |[allocator_suballoc](../standard-library/allocator-suballoc-class.md)|Describes an object that manages storage allocation and freeing for objects of type `Type` using a cache of type [cache_suballoc](../standard-library/cache-suballoc-class.md).|
 |[allocator_unbounded](../standard-library/allocator-unbounded-class.md)|Describes an object that manages storage allocation and freeing for objects of type `Type` using a cache of type [cache_freelist](../standard-library/cache-freelist-class.md) with a length managed by [max_unbounded](../standard-library/max-unbounded-class.md).|
 |[allocator_variable_size](../standard-library/allocator-variable-size-class.md)|Describes an object that manages storage allocation and freeing for objects of type `Type` using a cache of type [cache_freelist](../standard-library/cache-freelist-class.md) with a length managed by [max_variable_size](../standard-library/max-variable-size-class.md).|

@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # return Statement in Program Termination (C++)
-Issuing a `return` statement from **main** is functionally equivalent to calling the **exit** function. Consider the following example:  
+Issuing a **return** statement from `main` is functionally equivalent to calling the `exit` function. Consider the following example:  
   
 ```cpp 
 // return_statement.cpp  
@@ -24,7 +24,7 @@ int main()
 }  
 ```  
   
- The **exit** and `return` statements in the preceding example are functionally identical. However, C++ requires that functions that have return types other than `void` return a value. The `return` statement allows you to return a value from **main**.  
+ The `exit` and **return** statements in the preceding example are functionally identical. However, C++ requires that functions that have return types other than **void** return a value. The **return** statement allows you to return a value from `main`.  
   
-## See Also  
+## See also  
  [Program Termination](../cpp/program-termination.md)

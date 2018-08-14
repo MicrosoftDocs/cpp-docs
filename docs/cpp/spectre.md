@@ -52,7 +52,6 @@ int main() {
 **END Microsoft Specific**
 
 ## See also
-
-[__declspec](../cpp/declspec.md)  
-[Keywords](../cpp/keywords-cpp.md)  
-[/Qspectre](../build/reference/qspectre.md)  
+ [__declspec](../cpp/declspec.md)  
+ [Keywords](../cpp/keywords-cpp.md)  
+ [/Qspectre](../build/reference/qspectre.md)  

@@ -11,7 +11,7 @@ The C++ Standard defines a set of attributes and also allows compiler vendors to
 
 In some cases, standard attributes overlap with compiler-specific declspec parameters. In Visual C++, you can use the `[[deprecated]]` attribute instead of using `declspec(deprecated)` and the attribute will be recognized by any conformant compiler. For all other declspec parameters such as dllimport and dllexport, there is as yet no attribute equivalent so you must continue to use declspec syntax. Attributes do not affect the type system, and they don’t change the meaning of a program. Compilers ignore attribute values they don't recognize.
 
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): In the scope of an attribute list, you can specify the namespace for all names with a single `using` introducer:
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): In the scope of an attribute list, you can specify the namespace for all names with a single **using** introducer:
 
 ```cpp
 void g() {

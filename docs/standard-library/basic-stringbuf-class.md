@@ -26,13 +26,13 @@ class basic_stringbuf : public basic_streambuf<Elem, Tr>
 
 ### Parameters
 
-`Alloc`
+*Alloc*
  The allocator class.
 
-`Elem`
+*Elem*
  The type of the basic element of the string.
 
-`Tr`
+*Tr*
  The character traits specialized on the basic element of the string.
 
 ## Remarks
@@ -55,12 +55,12 @@ An object of class basic_stringbuf< `Elem`, `Tr`, `Alloc`> stores a copy of the 
 
 |Type name|Description|
 |-|-|
-|[allocator_type](#allocator_type)|The type is a synonym for the template parameter `Alloc`.|
-|[char_type](#char_type)|Associates a type name with the `Elem` template parameter.|
-|[int_type](#int_type)|Makes this type within `basic_filebuf`'s scope equivalent to the type of the same name in the `Tr` scope.|
-|[off_type](#off_type)|Makes this type within `basic_filebuf`'s scope equivalent to the type of the same name in the `Tr` scope.|
-|[pos_type](#pos_type)|Makes this type within `basic_filebuf`'s scope equivalent to the type of the same name in the `Tr` scope.|
-|[traits_type](#traits_type)|Associates a type name with the `Tr` template parameter.|
+|[allocator_type](#allocator_type)|The type is a synonym for the template parameter *Alloc*.|
+|[char_type](#char_type)|Associates a type name with the *Elem* template parameter.|
+|[int_type](#int_type)|Makes this type within `basic_filebuf`'s scope equivalent to the type of the same name in the *Tr* scope.|
+|[off_type](#off_type)|Makes this type within `basic_filebuf`'s scope equivalent to the type of the same name in the *Tr* scope.|
+|[pos_type](#pos_type)|Makes this type within `basic_filebuf`'s scope equivalent to the type of the same name in the *Tr* scope.|
+|[traits_type](#traits_type)|Associates a type name with the *Tr* template parameter.|
 
 ### Member functions
 
@@ -82,7 +82,7 @@ An object of class basic_stringbuf< `Elem`, `Tr`, `Alloc`> stores a copy of the 
 
 ## <a name="allocator_type"></a>  basic_stringbuf::allocator_type
 
-The type is a synonym for the template parameter `Alloc`.
+The type is a synonym for the template parameter *Alloc*.
 
 ```cpp
 typedef Alloc allocator_type;
@@ -103,21 +103,21 @@ basic_stringbuf(
 
 ### Parameters
 
-`_Mode`
+*_Mode*
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-`str`
+*str*
  An object of type [basic_string](../standard-library/basic-string-class.md).
 
 ### Remarks
 
-The first constructor stores a null pointer in all the pointers controlling the input buffer and the output buffer. For more information, see the Remarks section of the [basic_streambuf Class](../standard-library/basic-streambuf-class.md). It also stores `_Mode` as the stringbuf mode. For more information, see the Remarks section of the [basic_stringbuf Class](../standard-library/basic-stringbuf-class.md).
+The first constructor stores a null pointer in all the pointers controlling the input buffer and the output buffer. For more information, see the Remarks section of the [basic_streambuf Class](../standard-library/basic-streambuf-class.md). It also stores *_Mode* as the stringbuf mode. For more information, see the Remarks section of the [basic_stringbuf Class](../standard-library/basic-stringbuf-class.md).
 
-The second constructor allocates a copy of the sequence controlled by the string object `str`. If `_Mode & ios_base::in` is nonzero, it sets the input buffer to start reading at the start of the sequence. If `_Mode & ios_base::out` is nonzero, it sets the output buffer to begin writing at the start of the sequence. It also stores `_Mode` as the stringbuf mode. For more information, see the Remarks section of the [basic_stringbuf Class](../standard-library/basic-stringbuf-class.md).
+The second constructor allocates a copy of the sequence controlled by the string object *str*. If `_Mode & ios_base::in` is nonzero, it sets the input buffer to start reading at the start of the sequence. If `_Mode & ios_base::out` is nonzero, it sets the output buffer to begin writing at the start of the sequence. It also stores *_Mode* as the stringbuf mode. For more information, see the Remarks section of the [basic_stringbuf Class](../standard-library/basic-stringbuf-class.md).
 
 ## <a name="char_type"></a>  basic_stringbuf::char_type
 
-Associates a type name with the **Elem** template parameter.
+Associates a type name with the *Elem* template parameter.
 
 ```cpp
 typedef Elem char_type;
@@ -125,7 +125,7 @@ typedef Elem char_type;
 
 ## <a name="int_type"></a>  basic_stringbuf::int_type
 
-Makes this type within basic_filebuf's scope equivalent to the type of the same name in the **Tr** scope.
+Makes this type within basic_filebuf's scope equivalent to the type of the same name in the `Tr` scope.
 
 ```cpp
 typedef typename traits_type::int_type int_type;
@@ -133,7 +133,7 @@ typedef typename traits_type::int_type int_type;
 
 ## <a name="off_type"></a>  basic_stringbuf::off_type
 
-Makes this type within basic_filebuf's scope equivalent to the type of the same name in the **Tr** scope.
+Makes this type within basic_filebuf's scope equivalent to the type of the same name in the `Tr` scope.
 
 ```cpp
 typedef typename traits_type::off_type off_type;
@@ -149,12 +149,12 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-`_Meta`
- The character to insert into the buffer, or **traits_type::eof**.
+*_Meta*
+ The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
 
-If the function cannot succeed, it returns **traits_type::eof**. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
+If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
 
 ### Remarks
 
@@ -174,16 +174,16 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-`_Meta`
- The character to insert into the buffer, or **traits_type::eof**.
+*_Meta*
+ The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
 
-If the function cannot succeed, it returns **traits_type::eof**. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
+If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it returns **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
 
 ### Remarks
 
-If `_Meta` compares equal to **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **byte** = **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(_ *Meta*). The function can put back an element in various ways:
+If *_Meta* compares equal to **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the element to push back is effectively the one already in the stream before the current element. Otherwise, that element is replaced by **byte** = **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(_ *Meta*). The function can put back an element in various ways:
 
 - If a putback position is available, and the element stored there compares equal to byte, it can decrement the next pointer for the input buffer.
 
@@ -191,7 +191,7 @@ If `_Meta` compares equal to **traits_type::**[eof](../standard-library/char-tra
 
 ## <a name="pos_type"></a>  basic_stringbuf::pos_type
 
-Makes this type within basic_filebuf's scope equivalent to the type of the same name in the **Tr** scope.
+Makes this type within basic_filebuf's scope equivalent to the type of the same name in the `Tr` scope.
 
 ```cpp
 typedef typename traits_type::pos_type pos_type;
@@ -210,13 +210,13 @@ virtual pos_type seekoff(
 
 ### Parameters
 
-`_Off`
- The position to seek for relative to `_Way`. For more information, see [basic_stringbuf::off_type](#off_type).
+*_Off*
+ The position to seek for relative to *_Way*. For more information, see [basic_stringbuf::off_type](#off_type).
 
-`_Way`
+*_Way*
  The starting point for offset operations. See [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-`_Mode`
+*_Mode*
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions. For more information, see [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
 ### Return Value
@@ -229,13 +229,13 @@ For an object of class `basic_stringbuf<Elem, Tr, Alloc>`, a stream position con
 
 The new position is determined as follows:
 
-- If `_Way` == `ios_base::beg`, the new position is the beginning of the stream plus `_Off`.
+- If `_Way` == `ios_base::beg`, the new position is the beginning of the stream plus *_Off*.
 
-- If `_Way` == `ios_base::cur`, the new position is the current stream position plus `_Off`.
+- If `_Way` == `ios_base::cur`, the new position is the current stream position plus *_Off*.
 
-- If `_Way` == `ios_base::end`, the new position is the end of the stream plus `_Off`.
+- If `_Way` == `ios_base::end`, the new position is the end of the stream plus *_Off*.
 
-If `_Mode & ios_base::in` is nonzero, the function alters the next position to read in the input buffer. If `_Mode & ios_base::out` is nonzero, the function alters the next position to write in the output buffer. For a stream to be affected, its buffer must exist. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence. If the function affects both stream positions, `_Way` must be `ios_base::beg` or `ios_base::end` and both streams are positioned at the same element. Otherwise (or if neither position is affected), the positioning operation fails.
+If `_Mode & ios_base::in` is nonzero, the function alters the next position to read in the input buffer. If `_Mode & ios_base::out` is nonzero, the function alters the next position to write in the output buffer. For a stream to be affected, its buffer must exist. For a positioning operation to succeed, the resulting stream position must lie within the controlled sequence. If the function affects both stream positions, *_Way* must be `ios_base::beg` or `ios_base::end` and both streams are positioned at the same element. Otherwise (or if neither position is affected), the positioning operation fails.
 
 If the function succeeds in altering either or both of the stream positions, it returns the resultant stream position. Otherwise, it fails and returns an invalid stream position.
 
@@ -249,10 +249,10 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Mode = ios_base::in |
 
 ### Parameters
 
-`_Sp`
+*_Sp*
  The position to seek for.
 
-`_Mode`
+*_Mode*
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -277,7 +277,7 @@ void str(
 
 ### Parameters
 
-`_Newstr`
+*_Newstr*
  The new string.
 
 ### Return Value
@@ -294,7 +294,7 @@ The first member function returns an object of class basic_string< **Elem**, **T
 
 - Otherwise, the copied sequence is empty.
 
-The second member function deallocates any sequence currently controlled by **\*this**. It then allocates a copy of the sequence controlled by `_Newstr`. If **mode & ios_base::in** is nonzero, it sets the input buffer to start reading at the beginning of the sequence. If **mode & ios_base::out** is nonzero, it sets the output buffer to start writing at the beginning of the sequence.
+The second member function deallocates any sequence currently controlled by **\*this**. It then allocates a copy of the sequence controlled by *_Newstr*. If **mode & ios_base::in** is nonzero, it sets the input buffer to start reading at the beginning of the sequence. If **mode & ios_base::out** is nonzero, it sets the output buffer to start writing at the beginning of the sequence.
 
 ### Example
 
@@ -330,7 +330,7 @@ be
 
 ## <a name="traits_type"></a>  basic_stringbuf::traits_type
 
-Associates a type name with the **Tr** template parameter.
+Associates a type name with the *Tr* template parameter.
 
 ```cpp
 typedef Tr traits_type;
@@ -338,7 +338,7 @@ typedef Tr traits_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Tr**.
+The type is a synonym for the template parameter *Tr*.
 
 ## <a name="underflow"></a>  basic_stringbuf::underflow
 
@@ -354,7 +354,7 @@ If the function cannot succeed, it returns **traits_type::**[eof](../standard-li
 
 ### Remarks
 
-The protected virtual member function tries to extract the current element **byte** from the input buffer, advance the current stream position, and return the element as **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **byte**). It can do so in one way: If a read position is available, it takes **byte** as the element stored in the read position and advances the next pointer for the input buffer.
+The protected virtual member function tries to extract the current element `byte` from the input buffer, advance the current stream position, and return the element as **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **byte**). It can do so in one way: If a read position is available, it takes `byte` as the element stored in the read position and advances the next pointer for the input buffer.
 
 ## <a name="swap"></a>  basic_streambuf::swap
 
@@ -366,7 +366,7 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 
 ### Parameters
 
-`other`
+*other*
  The basic_stringbuf whose contents will be swapped with this basic_stringbuf.
 
 ### Remarks
@@ -381,7 +381,7 @@ basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
 
 ### Parameters
 
-`other`
+*other*
  A basic_stringbuf whose contents, including locale traits, will be assigned to the stringbuf on the left side of the operator.
 
 ### Remarks

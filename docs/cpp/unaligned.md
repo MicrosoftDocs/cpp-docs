@@ -14,13 +14,13 @@ ms.workload: ["cplusplus"]
 ---
 # __unaligned
 
-**Microsoft specific**. When you declare a pointer with the `__unaligned` modifier, the compiler assumes that the pointer addresses data that is not aligned. Consequently, platform-appropriate code is generated to handle unaligned reads and writes through the pointer.
+**Microsoft specific**. When you declare a pointer with the **__unaligned** modifier, the compiler assumes that the pointer addresses data that is not aligned. Consequently, platform-appropriate code is generated to handle unaligned reads and writes through the pointer.
 
 ## Remarks
 
 This modifier describes the alignment of the data addressed by the pointer; the pointer itself is assumed to be aligned.
 
-The necessity for the `__unaligned` keyword varies by platform and environment. Failure to mark data appropriately can result in issues ranging from performance penalties to hardware faults. The `__unaligned` modifier is not valid for the x86 platform.
+The necessity for the **__unaligned** keyword varies by platform and environment. Failure to mark data appropriately can result in issues ranging from performance penalties to hardware faults. The **__unaligned** modifier is not valid for the x86 platform.
 
 For more information about alignment, see:
 
@@ -35,5 +35,4 @@ For more information about alignment, see:
 - [Examples of Structure Alignment](../build/examples-of-structure-alignment.md)
 
 ## See also
-
-[Keywords](../cpp/keywords-cpp.md)
+ [Keywords](../cpp/keywords-cpp.md)

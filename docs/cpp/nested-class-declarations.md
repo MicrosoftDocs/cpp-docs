@@ -140,7 +140,7 @@ typedef BufferedIO::BufferedInput BIO_INPUT;
 int BIO_INPUT::read()  
 ```  
   
- The preceding declaration is equivalent to the previous one, but it uses a `typedef` name in place of the class names.  
+ The preceding declaration is equivalent to the previous one, but it uses a **typedef** name in place of the class names.  
   
 ## Friend functions in nested classes  
  Friend functions declared in a nested class are considered to be in the scope of the nested class, not the enclosing class. Therefore, the friend functions gain no special access privileges to members or member functions of the enclosing class. If you want to use a name that is declared in a nested class in a friend function and the friend function is defined in file scope, use qualified type names as follows:  
@@ -197,5 +197,5 @@ int GetExtendedErrorStatus( char *message )
   
  With the preceding interface, several classes can use the services of this function by passing a memory location where they want the error message copied.  
   
-## See Also  
+## See also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)

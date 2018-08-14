@@ -13,18 +13,17 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # bad_typeid Exception
-The `bad_typeid` exception is thrown by the [typeid operator](../cpp/typeid-operator.md) when the operand for `typeid` is a NULL pointer.  
+The **bad_typeid** exception is thrown by the [typeid operator](../cpp/typeid-operator.md) when the operand for **typeid** is a NULL pointer.  
   
 ## Syntax  
   
 ```  
-  
 catch (bad_typeid)  
    statement  
 ```  
   
 ## Remarks  
- The interface for `bad_typeid` is:  
+ The interface for **bad_typeid** is:  
   
 ```cpp 
 class bad_typeid : public exception  
@@ -36,7 +35,7 @@ public:
 };  
 ```  
   
- The following example shows the `typeid` operator throwing a `bad_typeid` exception.  
+ The following example shows the **typeid** operator throwing a **bad_typeid** exception.  
   
 ```cpp 
 // expre_bad_typeid.cpp  
@@ -70,6 +69,6 @@ catch (bad_typeid){
 Object is NULL  
 ```  
   
-## See Also  
+## See also  
  [Run-Time Type Information](../cpp/run-time-type-information.md)   
  [Keywords](../cpp/keywords-cpp.md)

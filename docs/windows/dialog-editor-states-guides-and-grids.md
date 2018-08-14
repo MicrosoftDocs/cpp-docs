@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Dialog Editor States (Guides and Grids)
-You can arrange controls on dialog boxes with the Dialog editor in one of three different states:  
+You can arrange controls on dialog boxes with the **Dialog** editor in one of three different states:  
   
 -   With the guides and margins on (default setting)  
   
@@ -30,7 +30,7 @@ You can arrange controls on dialog boxes with the Dialog editor in one of three 
   
 -   [Modifying the Layout Grid](../windows/modifying-the-layout-grid.md)  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  Win32  
@@ -39,4 +39,3 @@ You can arrange controls on dialog boxes with the Dialog editor in one of three 
  [Arrangement of Controls on Dialog Boxes](../windows/arrangement-of-controls-on-dialog-boxes.md)   
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)   
  [Controls (MFC)](../mfc/controls-mfc.md)
-

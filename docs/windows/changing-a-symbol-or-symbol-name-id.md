@@ -28,10 +28,7 @@ When you create a new resource or resource object, the development environment a
   
  You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the names of symbols not currently assigned to a resource. For more information, see [Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md).  
   
-
-  
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  

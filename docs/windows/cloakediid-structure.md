@@ -13,21 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CloakedIid Structure
-Indicates to the RuntimeClass, Implements and ChainInterfaces templates that the specified interface is not accessible in the IID list.  
+Indicates to the `RuntimeClass`, `Implements` and `ChainInterfaces` templates that the specified interface is not accessible in the IID list.  
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T>  
 struct CloakedIid : T;  
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The interface that is hidden (cloaked).  
   
 ## Remarks  
- The following is an example of how CloakedIid is used: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.  
+ The following is an example of how **CloakedIid** is used: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.  
   
 ## Inheritance Hierarchy  
  `T`  

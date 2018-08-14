@@ -164,7 +164,7 @@ BOOL ActivateContextCategory(UINT uiContextID);
  The context category ID.  
   
 ### Return Value  
- `TRUE` if a context category with *uiContextID* is found and activated; otherwise `FALSE`.  
+ TRUE if a context category with *uiContextID* is found and activated; otherwise FALSE.  
   
 ##  <a name="addcategory"></a>  CMFCRibbonBar::AddCategory  
  Creates and initializes a new ribbon category for the ribbon bar.  
@@ -205,10 +205,10 @@ CMFCRibbonCategory* AddCategory(
  Pointer to a [CMFCRibbonCategory Class](../../mfc/reference/cmfcribboncategory-class.md) run-time class to dynamically create a ribbon category at run-time.  
   
 ### Return Value  
- A pointer to the new ribbon category if the method was successful; otherwise, `NULL`.  
+ A pointer to the new ribbon category if the method was successful; otherwise, NULL.  
   
 ### Remarks  
- If the *pRTI* parameter is not `NULL`, the new ribbon category is created dynamically using the run-time class.  
+ If the *pRTI* parameter is not NULL, the new ribbon category is created dynamically using the run-time class.  
   
 ### Example  
  The following example demonstrates how to use the `AddCategory` method in the `CMFCRibbonBar` class.  
@@ -262,7 +262,7 @@ CMFCRibbonCategory* AddContextCategory(
  Pointer to a runtime class.  
   
 ### Return Value  
- A pointer to the newly created category, or `NULL` if the `CreateObject` method of *pRTI* cannot create the specified category.  
+ A pointer to the newly created category, or NULL if the `CreateObject` method of *pRTI* cannot create the specified category.  
   
 ### Remarks  
  Use this function to add a context category. Context categories are a special type of category that can be shown or hidden at runtime, depending on the current application context. For example, when the user selects an object, you can display special tabs with context categories which you use to change the specific selected object.  
@@ -316,7 +316,7 @@ CMFCRibbonMainPanel* AddMainCategory(
  The size of large images.  
   
 ### Return Value  
- Pointer to the new main ribbon category if the method was successful; otherwise, `NULL`.  
+ Pointer to the new main ribbon category if the method was successful; otherwise, NULL.  
   
 ### Remarks  
  If a main ribbon category already exists, it is deleted.  
@@ -334,7 +334,7 @@ CMFCRibbonCategory* AddPrintPreviewCategory();
 ```  
   
 ### Return Value  
- A pointer to the new ribbon category if the method was successful; otherwise, `NULL`.  
+ A pointer to the new ribbon category if the method was successful; otherwise, NULL.  
   
 ### Remarks  
  This method creates a ribbon category and the controls that it needs in order to provide a print preview.  
@@ -361,7 +361,7 @@ CMFCRibbonCategory* AddQATOnlyCategory(
  Size of images for ribbon elements in the category.  
   
 ### Return Value  
- A pointer to the new category if the method was successful; otherwise, `NULL`.  
+ A pointer to the new category if the method was successful; otherwise, NULL.  
   
 ### Remarks  
  The quick access toolbar ribbon category is only used on the quick access toolbar customization dialog box.  
@@ -389,7 +389,7 @@ CMFCRibbonBar(BOOL bReplaceFrameCaption = TRUE);
   
 ### Parameters  
  [in] *bReplaceFrameCaption*  
- `TRUE` for the ribbon bar to replace the caption of the main frame window; `FALSE` to locate the ribbon bar under the caption of the main frame window.  
+ TRUE for the ribbon bar to replace the caption of the main frame window; FALSE to locate the ribbon bar under the caption of the main frame window.  
   
 ### Remarks  
   
@@ -414,7 +414,7 @@ BOOL Create(
  ID of the new window.  
   
 ### Return Value  
- `TRUE` if the window was created; otherwise `FALSE`.  
+ TRUE if the window was created; otherwise FALSE.  
   
 ### Remarks  
   
@@ -448,7 +448,7 @@ BOOL CreateEx(
  ID of the new window.  
   
 ### Return Value  
- `TRUE` if the window was created; otherwise `FALSE`.  
+ TRUE if the window was created; otherwise FALSE.  
   
 ### Remarks  
   
@@ -461,7 +461,7 @@ void DeactivateKeyboardFocus(BOOL bSetFocus = TRUE);
   
 ### Parameters  
  [in] *bSetFocus*  
- `TRUE` to set the focus to the parent window of the ribbon bar.  
+ TRUE to set the focus to the parent window of the ribbon bar.  
   
 ### Remarks  
   
@@ -486,7 +486,7 @@ BOOL DrawMenuImage(
  The display rectangle for a menu button.  
   
 ### Return Value  
- `TRUE` if the image was drawn; otherwise `FALSE`.  
+ TRUE if the image was drawn; otherwise FALSE.  
   
 ### Remarks  
   
@@ -508,7 +508,7 @@ void EnableKeyTips(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable the keytips feature; `FALSE` to disable the keytips feature.  
+ TRUE to enable the keytips feature; FALSE to disable the keytips feature.  
   
 ### Remarks  
  When you enable this feature, key tips are displayed when the user presses the ALT or F10 button. When the user presses ALT key, key tips are displayed with a 200 millisecond delay. This delay allows for shortcuts to be executed so that the pressed ALT key does not interfere with other combinations that include the ALT key.  
@@ -522,10 +522,10 @@ void EnablePrintPreview(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable the **Print Preview** feature; `FALSE` to disable the **Print Preview** feature.  
+ TRUE to enable the **Print Preview** feature; FALSE to disable the **Print Preview** feature.  
   
 ### Remarks  
- If *bEnable* is `FALSE` and a print preview category exists, it is deleted.  
+ If *bEnable* is FALSE and a print preview category exists, it is deleted.  
   
  By default the **Print Preview** feature is enabled.  
   
@@ -540,10 +540,10 @@ void EnableToolTips(
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable tooltips on the ribbon bar; `FALSE` to disable tooltips on the ribbon bar.  
+ TRUE to enable tooltips on the ribbon bar; FALSE to disable tooltips on the ribbon bar.  
   
  [in] *bEnableDescr*  
- `TRUE` to enable tooltip descriptions on the tooltip; `FALSE` to disable tooltip descriptions on the tooltip.  
+ TRUE to enable tooltip descriptions on the tooltip; FALSE to disable tooltip descriptions on the tooltip.  
   
 ### Remarks  
  The *bEnable* parameter determines whether tooltips are displayed when the mouse hovers over a ribbon element. The *bEnableDescr* parameter determines whether additional descriptive text appears with the tooltip text.  
@@ -562,10 +562,10 @@ CMFCRibbonBaseElement* FindByData(
  The data associated with a ribbon element.  
   
  [in] *bVisibleOnly*  
- `TRUE` to search visible ribbon elements only; `FALSE` to search all ribbon elements.  
+ TRUE to search visible ribbon elements only; FALSE to search all ribbon elements.  
   
 ### Return Value  
- A pointer to a ribbon element if it has the specified data and visibility; otherwise `NULL`.  
+ A pointer to a ribbon element if it has the specified data and visibility; otherwise NULL.  
   
 ### Remarks  
  A ribbon element is any control that you can add to the ribbon, such as a ribbon button, or a ribbon category, or a ribbon slider.  
@@ -585,13 +585,13 @@ CMFCRibbonBaseElement* FindByID(
  Command ID for a ribbon element.  
   
  [in] *bVisibleOnly*  
- `TRUE` to search visible ribbon elements only; `FALSE` to search all ribbon elements.  
+ TRUE to search visible ribbon elements only; FALSE to search all ribbon elements.  
   
  [in] *bExcludeQAT*  
- `TRUE` to exclude quick access toolbar elements from the search; otherwise, `FALSE`.  
+ TRUE to exclude quick access toolbar elements from the search; otherwise, FALSE.  
   
 ### Return Value  
- A pointer to a ribbon element if it has the specified command ID and search values; otherwise, `NULL`.  
+ A pointer to a ribbon element if it has the specified command ID and search values; otherwise, NULL.  
   
 ### Remarks  
  A ribbon element is any ribbon control that can be added to the ribbon, such as a ribbon button, or a ribbon category, or a ribbon slider.  
@@ -629,7 +629,7 @@ CMFCRibbonCategory* GetActiveCategory() const;
 ```  
   
 ### Return Value  
- A pointer to the active ribbon category; or `NULL` if no category is active.  
+ A pointer to the active ribbon category; or NULL if no category is active.  
   
 ### Remarks  
  A category is active if it has the focus. By default, the active category is the first category on the left side of the ribbon bar.  
@@ -644,7 +644,7 @@ CMFCRibbonApplicationButton* GetApplicationButton() const;
 ```  
   
 ### Return Value  
- A pointer to the application button; or `NULL` if the button has not been set.  
+ A pointer to the application button; or NULL if the button has not been set.  
   
 ##  <a name="getcaptionheight"></a>  CMFCRibbonBar::GetCaptionHeight  
  Retrieves the height of the caption area for the ribbon bar.  
@@ -670,7 +670,7 @@ CMFCRibbonCategory* GetCategory(int nIndex) const;
  The zero-based index of a ribbon category in the list of ribbon categories that is contained in the ribbon bar.  
   
 ### Return Value  
- A pointer to the ribbon category at the specified index; otherwise, `NULL` if *nIndex* was out of range.  
+ A pointer to the ribbon category at the specified index; otherwise, NULL if *nIndex* was out of range.  
   
 ##  <a name="getcategorycount"></a>  CMFCRibbonBar::GetCategoryCount  
  Retrieves the number of ribbon categories in the ribbon bar.  
@@ -726,7 +726,7 @@ BOOL GetContextName(
  The name of a context category caption.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise, `FALSE` if *uiContextID* was zero or the context category caption was not found.  
+ TRUE if the method was successful; otherwise, FALSE if *uiContextID* was zero or the context category caption was not found.  
   
 ##  <a name="getdroppeddown"></a>  CMFCRibbonBar::GetDroppedDown  
  Retrieves the ribbon element that is currently dropped down.  
@@ -736,7 +736,7 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
 ```  
   
 ### Return Value  
- The ribbon element that is currently dropped down; or `NULL` if no ribbon element is currently dropped down.  
+ The ribbon element that is currently dropped down; or NULL if no ribbon element is currently dropped down.  
   
 ### Remarks  
   
@@ -772,10 +772,10 @@ DWORD GetHideFlags() const;
 ### Remarks  
  The following table lists the possible combination of flags for the return value:  
   
- `AFX_RIBBONBAR_HIDE_ELEMENTS`  
+ AFX_RIBBONBAR_HIDE_ELEMENTS  
  The ribbon bar is minimized vertically and only the category tabs, main button, and quick access toolbar are visible.  
   
- `AFX_RIBBONBAR_HIDE_ALL`  
+ AFX_RIBBONBAR_HIDE_ALL  
  The width of the ribbon bar is less than the minimum width and is completely hidden.  
   
 ##  <a name="getitemidslist"></a>  CMFCRibbonBar::GetItemIDsList  
@@ -791,7 +791,7 @@ void GetItemIDsList(CList<UINT, UINT>& lstItems,
  The list of command IDs for ribbon elements that are contained in the ribbon bar.  
   
  [in] *bHiddenOnly*  
- `TRUE` to exclude ribbon elements that are displayed; `FALSE` to include all ribbon elements in the ribbon bar.  
+ TRUE to exclude ribbon elements that are displayed; FALSE to include all ribbon elements in the ribbon bar.  
   
 ### Remarks  
   
@@ -824,7 +824,7 @@ CObject* GetKeyboardNavLevelCurrent() const;
 ```  
   
 ### Return Value  
- The current keyboard navigation object on the ribbon bar; otherwise `NULL` if no object currently displays keytips.  
+ The current keyboard navigation object on the ribbon bar; otherwise NULL if no object currently displays keytips.  
   
 ### Remarks  
  The object that is currently displaying keytips is the current keyboard navigation object.  
@@ -837,7 +837,7 @@ CObject* GetKeyboardNavLevelParent() const;
 ```  
   
 ### Return Value  
- The parent keyboard navigation object on the ribbon bar; otherwise `NULL`.  
+ The parent keyboard navigation object on the ribbon bar; otherwise NULL.  
   
 ### Remarks  
  When the user presses a keytip on the ribbon bar, the current keyboard navigation object becomes the parent keyboard navigation object.  
@@ -965,7 +965,7 @@ BOOL HideAllContextCategories();
 ```  
   
 ### Return Value  
- `TRUE` if at least one context category was hidden; otherwise, `FALSE`.  
+ TRUE if at least one context category was hidden; otherwise, FALSE.  
   
 ### Remarks  
  If a context category is active, the active category is reset to the first visible category in the category list.  
@@ -994,16 +994,16 @@ virtual CMFCRibbonBaseElement* HitTest(
  Location of the point in ribbon bar coordinates.  
   
  [in] *bCheckActiveCategory*  
- `TRUE` to search the active category; `FALSE` not to search the active category.  
+ TRUE to search the active category; FALSE not to search the active category.  
   
  [in] *bCheckPanelCaption*  
- `TRUE` to test the caption of the ribbon panel with the point located in it; `FALSE` not to test the caption of the ribbon panel with the point located in it. See the Remarks section for more information.  
+ TRUE to test the caption of the ribbon panel with the point located in it; FALSE not to test the caption of the ribbon panel with the point located in it. See the Remarks section for more information.  
   
 ### Return Value  
- A pointer to the ribbon element located at the specified point; otherwise `NULL` if the point is not located in a ribbon element.  
+ A pointer to the ribbon element located at the specified point; otherwise NULL if the point is not located in a ribbon element.  
   
 ### Remarks  
- The caption of the ribbon panel with the point located in it is not tested unless the *bCheckActiveCategory* parameter is `TRUE`.  
+ The caption of the ribbon panel with the point located in it is not tested unless the *bCheckActiveCategory* parameter is TRUE.  
   
 ##  <a name="iskeytipenabled"></a>  CMFCRibbonBar::IsKeyTipEnabled  
  Indicates whether the keytips feature is enabled.  
@@ -1013,7 +1013,7 @@ BOOL IsKeyTipEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the keytips feature is enabled; otherwise `FALSE`.  
+ TRUE if the keytips feature is enabled; otherwise FALSE.  
   
 ##  <a name="ismainribbonbar"></a>  CMFCRibbonBar::IsMainRibbonBar  
  Indicates whether the ribbon bar is the primary ribbon bar.  
@@ -1023,10 +1023,10 @@ virtual BOOL IsMainRibbonBar() const;
 ```  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method always returns `TRUE`. Override this method to indicate whether the ribbon bar is the primary ribbon bar.  
+ By default this method always returns TRUE. Override this method to indicate whether the ribbon bar is the primary ribbon bar.  
   
 ##  <a name="isprintpreviewenabled"></a>  CMFCRibbonBar::IsPrintPreviewEnabled  
  Indicates whether the **Print Preview** feature is enabled.  
@@ -1036,7 +1036,7 @@ BOOL IsPrintPreviewEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the **Print Preview** feature is enabled; otherwise `FALSE`.  
+ TRUE if the **Print Preview** feature is enabled; otherwise FALSE.  
   
 ##  <a name="isqatempty"></a>  CMFCRibbonBar::IsQATEmpty  
  Indicates whether the quick access toolbar contains command buttons.  
@@ -1046,7 +1046,7 @@ BOOL IsQATEmpty() const;
 ```  
   
 ### Return Value  
- `TRUE` if the quick access toolbar contains command buttons; otherwise `FALSE`.  
+ TRUE if the quick access toolbar contains command buttons; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1058,7 +1058,7 @@ BOOL IsQuickAccessToolbarOnTop() const;
 ```  
   
 ### Return Value  
- `TRUE` if the quick access toolbar is located over the ribbon bar; `FALSE` if the quick access toolbar is located under the ribbon bar.  
+ TRUE if the quick access toolbar is located over the ribbon bar; FALSE if the quick access toolbar is located under the ribbon bar.  
   
 ##  <a name="isreplaceframecaption"></a>  CMFCRibbonBar::IsReplaceFrameCaption  
  Indicates whether the ribbon bar replaces or is under the caption of the main frame window.  
@@ -1068,7 +1068,7 @@ BOOL IsReplaceFrameCaption() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon bar replaces the caption of the main frame window; `FALSE` if ribbon bar is under the caption of the main frame window.  
+ TRUE if the ribbon bar replaces the caption of the main frame window; FALSE if ribbon bar is under the caption of the main frame window.  
   
 ##  <a name="isshowgroupborder"></a>  CMFCRibbonBar::IsShowGroupBorder  
  Indicates whether button groups located on the ribbon bar display a group border.  
@@ -1078,14 +1078,14 @@ virtual BOOL IsShowGroupBorder(CMFCRibbonButtonsGroup* pGroup) const;
 ```  
   
 ### Parameters  
- [in] `pGroup`  
+ [in] *pGroup*  
  This parameter is not used.  
   
 ### Return Value  
- Always returns `FALSE`.  
+ Always returns FALSE.  
   
 ### Remarks  
- By default this method always returns `FALSE`. Override this method to indicate whether button groups located on the ribbon bar display a group border.  
+ By default this method always returns FALSE. Override this method to indicate whether button groups located on the ribbon bar display a group border.  
   
 ##  <a name="istooltipdescrenabled"></a>  CMFCRibbonBar::IsToolTipDescrEnabled  
  Indicates whether tooltip descriptions are enabled.  
@@ -1095,7 +1095,7 @@ BOOL IsToolTipDescrEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if tooltip descriptions are enabled; `FALSE` if tooltip descriptions are disabled.  
+ TRUE if tooltip descriptions are enabled; FALSE if tooltip descriptions are disabled.  
   
 ### Remarks  
  Tooltip descriptions are additional descriptive text displayed with the tooltip text.  
@@ -1108,7 +1108,7 @@ BOOL IsToolTipEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if tooltips are enabled; `FALSE` if tooltips are disabled.  
+ TRUE if tooltips are enabled; FALSE if tooltips are disabled.  
   
 ##  <a name="istransparentcaption"></a>  CMFCRibbonBar::IsTransparentCaption  
  Indicates whether the display is set for Windows Aero color scheme.  
@@ -1118,7 +1118,7 @@ BOOL IsTransparentCaption() const;
 ```  
   
 ### Return Value  
- `TRUE` if the color scheme is Windows Aero; otherwise `FALSE`.  
+ TRUE if the color scheme is Windows Aero; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1164,7 +1164,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
   
 ### Parameters  
  [in] *bIsRTL*  
- `TRUE` if the layout is right-to-left; `FALSE` if the layout is left-to-right.  
+ TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
   
 ### Remarks  
  This method adjusts the layout of all controls on the ribbon bar for the new layout direction.  
@@ -1248,7 +1248,7 @@ BOOL OnSysKeyDown(
  Keyboard state flags when the key was pressed.  
   
 ### Return Value  
- `TRUE` if the keystroke event was processed; otherwise `FALSE`.  
+ TRUE if the keystroke event was processed; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1273,7 +1273,7 @@ BOOL OnSysKeyUp(
  This parameter is not used.  
   
 ### Return Value  
- `TRUE` if the keystroke event was processed; otherwise `FALSE`.  
+ TRUE if the keystroke event was processed; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1298,7 +1298,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
  Pointer to a message.  
   
 ### Return Value  
- `TRUE` if the message was processed by the ribbon bar; otherwise `FALSE`.  
+ TRUE if the message was processed by the ribbon bar; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1344,7 +1344,7 @@ BOOL RemoveCategory(int nIndex);
  The zero-based index of a category in the list of ribbon categories that is contained in the ribbon bar.  
   
 ### Return Value  
- `TRUE` if the specified ribbon category was deleted; otherwise `FALSE`.  
+ TRUE if the specified ribbon category was deleted; otherwise FALSE.  
   
 ### Remarks  
  The specified ribbon category is deleted from memory and from the category list.  
@@ -1363,10 +1363,10 @@ BOOL SetActiveCategory(
  A ribbon category that is contained in the ribbon bar.  
   
  [in] *bForceRestore*  
- `TRUE` to maximize the ribbon bar if it is minimized; `FALSE` to display the active category in a pop-up window if the ribbon bar is minimized.  
+ TRUE to maximize the ribbon bar if it is minimized; FALSE to display the active category in a pop-up window if the ribbon bar is minimized.  
   
 ### Return Value  
- `TRUE` if the specified category was set as the active category; otherwise `FALSE`.  
+ TRUE if the specified category was set as the active category; otherwise FALSE.  
   
 ### Remarks  
  The main ribbon category cannot be the active category.  
@@ -1431,7 +1431,7 @@ BOOL SetElementKeys(
  The menu keytip.  
   
 ### Return Value  
- `TRUE` if the keytips of at least one ribbon element are set; otherwise `FALSE`.  
+ TRUE if the keytips of at least one ribbon element are set; otherwise FALSE.  
   
 ### Remarks  
  The optional menu keytip is for ribbon elements with a split button that opens a popup menu.  
@@ -1450,7 +1450,7 @@ void SetKeyboardNavigationLevel(
  Pointer to the current keyboard navigation object.  
   
  [in] *bSetFocus*  
- `TRUE` to set the keyboard focus to the ribbon bar.  
+ TRUE to set the keyboard focus to the ribbon bar.  
   
 ### Remarks  
  Keyboard navigation of the ribbon bar starts when the user presses the ALT or F10 key. The user selects the next navigation level by pressing a keytip on the ribbon bar. The user can return to the previous navigation level by pressing the escape key.  
@@ -1466,7 +1466,7 @@ void SetMaximizeMode(
   
 ### Parameters  
  [in] *bMax*  
- `TRUE` to display the system buttons for an MDI child window on the ribbon bar; `FALSE` to remove the system buttons for an MDI child window from the ribbon bar.  
+ TRUE to display the system buttons for an MDI child window on the ribbon bar; FALSE to remove the system buttons for an MDI child window from the ribbon bar.  
   
  [in] *pWnd*  
  Pointer to the main frame window for the ribbon bar.  
@@ -1488,7 +1488,7 @@ void SetQuickAccessCommands(
  The list of commands to be placed on the Quick Access Toolbar.  
   
  [in] *bRecalcLayout*  
- `TRUE` if want to redraw the ribbon after you add the ribbon elements; `FALSE` otherwise.  
+ TRUE if want to redraw the ribbon after you add the ribbon elements; FALSE otherwise.  
   
 ### Example  
  The following example demonstrates how to use the `SetQuickAccessCommands` method in the `CMFCRibbonBar` class.  
@@ -1523,7 +1523,7 @@ void SetQuickAccessToolbarOnTop(BOOL bOnTop);
   
 ### Parameters  
  [in] *bOnTop*  
- `TRUE` to position the quick access toolbar above the ribbon bar; `FALSE` to position the quick access toolbar below the ribbon bar.  
+ TRUE to position the quick access toolbar above the ribbon bar; FALSE to position the quick access toolbar below the ribbon bar.  
   
 ##  <a name="settooltipfixedwidth"></a>  CMFCRibbonBar::SetTooltipFixedWidth  
  Sets the regular and large sizes of tooltip fixed widths for the ribbon bar.  
@@ -1558,7 +1558,7 @@ void ShowCategory(
  The index of the ribbon category.  
   
  [in] *bShow*  
- If `TRUE`, show the ribbon category; otherwise, hide the ribbon category.  
+ If TRUE, show the ribbon category; otherwise, hide the ribbon category.  
   
 ##  <a name="showcontextcategories"></a>  CMFCRibbonBar::ShowContextCategories  
  Shows or hides the context categories that have the specified ID.  
@@ -1574,7 +1574,7 @@ void ShowContextCategories(
  The context category ID.  
   
  [in] *bShow*  
- If `TRUE`, show the categories that have the specified ID; otherwise, hide the categories that have the specified ID.  
+ If TRUE, show the categories that have the specified ID; otherwise, hide the categories that have the specified ID.  
   
 ##  <a name="showkeytips"></a>  CMFCRibbonBar::ShowKeyTips  
  Shows the keytips for each ribbon element on the ribbon bar.  
@@ -1609,7 +1609,7 @@ virtual BOOL TranslateChar(UINT nChar);
  A user keystroke character code.  
   
 ### Return Value  
- `TRUE` if the character code was processed by the ribbon bar; otherwise `FALSE`.  
+ TRUE if the character code was processed by the ribbon bar; otherwise FALSE.  
   
 ### Remarks  
  The keytips feature enables users to navigate the ribbon bar by using the keyboard.  
@@ -1622,7 +1622,7 @@ virtual CMFCRibbonBaseElement* GetFocused();
 ```  
   
 ### Return Value  
- A pointer to a focused element or `NULL`.  
+ A pointer to a focused element or NULL.  
   
 ### Remarks  
   
@@ -1634,7 +1634,7 @@ BOOL IsWindows7Look() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon has Windows 7 look; otherwise `FALSE`.  
+ TRUE if the ribbon has Windows 7 look; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1662,13 +1662,13 @@ virtual BOOL LoadFromResource(
  Specifies type of the resource located at *uiXMLResID*.  
   
  *hInstance*  
- Handle to the module whose executable file contains the resource. If *hInstance* is `NULL`, the system loads the resource from the module that was used to create the current process.  
+ Handle to the module whose executable file contains the resource. If *hInstance* is NULL, the system loads the resource from the module that was used to create the current process.  
   
  *lpszXMLResID*  
  Specifies resource ID (in string form) with Ribbon Bar information.  
   
 ### Return Value  
- `TRUE` if load succeeds; otherwise `FALSE`.  
+ TRUE if load succeeds; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1684,7 +1684,7 @@ UINT SaveToXMLBuffer(LPBYTE* ppBuffer) const;
  When this function returns, *ppBuffer* points to a buffer allocated by this method and contains Ribbon Bar information in XML format.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1700,7 +1700,7 @@ BOOL SaveToXMLFile(LPCTSTR lpszFilePath) const;
  Specifies the output file.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1715,10 +1715,10 @@ void SetWindows7Look(
   
 ### Parameters  
  *bWindows7Look*  
- `TRUE` sets Windows 7 look; `FALSE` otherwise.  
+ TRUE sets Windows 7 look; FALSE otherwise.  
   
  *bRecalc*  
- `TRUE` recalculates the ribbon layout; `FALSE` otherwise.  
+ TRUE recalculates the ribbon layout; FALSE otherwise.  
   
 ### Remarks  
   

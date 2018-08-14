@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Defining Inline C++ Functions with dllexport and dllimport
 ## Microsoft Specific  
- You can define as inline a function with the `dllexport` attribute. In this case, the function is always instantiated and exported, whether or not any module in the program references the function. The function is presumed to be imported by another program.  
+ You can define as inline a function with the **dllexport** attribute. In this case, the function is always instantiated and exported, whether or not any module in the program references the function. The function is presumed to be imported by another program.  
   
  You can also define as inline a function declared with the **dllimport** attribute. In this case, the function can be expanded (subject to /Ob specifications), but never instantiated. In particular, if the address of an inline imported function is taken, the address of the function residing in the DLL is returned. This behavior is the same as taking the address of a non-inline imported function.  
   
@@ -23,5 +23,5 @@ ms.workload: ["cplusplus"]
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [dllexport, dllimport](../cpp/dllexport-dllimport.md)

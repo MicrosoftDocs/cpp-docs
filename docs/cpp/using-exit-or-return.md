@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Using exit or return
-When you call **exit** or execute a `return` statement from **main**, static objects are destroyed in the reverse order of their initialization. The following example shows how such initialization and cleanup works.  
+When you call **exit** or execute a **return** statement from `main`, static objects are destroyed in the reverse order of their initialization. The following example shows how such initialization and cleanup works.  
   
 ## Example  
   
@@ -53,7 +53,7 @@ int main() {
 }  
 ```  
   
- In the preceding example, the static objects `sd1` and `sd2` are created and initialized before entry to `main`. After this program terminates using the `return` statement, first `sd2` is destroyed and then `sd1`. The destructor for the `ShowData` class closes the files associated with these static objects.   
+ In the preceding example, the static objects `sd1` and `sd2` are created and initialized before entry to `main`. After this program terminates using the **return** statement, first `sd2` is destroyed and then `sd1`. The destructor for the `ShowData` class closes the files associated with these static objects.   
   
  Another way to write this code is to declare the `ShowData` objects with block scope, allowing them to be destroyed when they go out of scope:  
   
@@ -66,5 +66,5 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Additional Termination Considerations](../cpp/additional-termination-considerations.md)

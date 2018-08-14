@@ -12,8 +12,8 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Considerations for Writing Prolog/Epilog Code
-## Microsoft Specific  
- Before writing your own prolog and epilog code sequences, it is important to understand how the stack frame is laid out. It is also useful to know how to use the **__LOCAL_SIZE** symbol.  
+ **Microsoft Specific**  
+ Before writing your own prolog and epilog code sequences, it is important to understand how the stack frame is laid out. It is also useful to know how to use the `__LOCAL_SIZE` symbol.  
   
 ##  <a name="_pluslang_c.2b2b_.stack_frame_layout"></a> Stack Frame Layout  
  This example shows the standard prolog code that might appear in a 32-bit function:  
@@ -37,16 +37,16 @@ ret                       ; Return from function
  The stack always grows down (from high to low memory addresses). The base pointer (`ebp`) points to the pushed value of `ebp`. The locals area begins at `ebp-4`. To access local variables, calculate an offset from `ebp` by subtracting the appropriate value from `ebp`.  
   
 ##  <a name="_pluslang___local_size"></a> __LOCAL_SIZE  
- The compiler provides a symbol, **__LOCAL_SIZE**, for use in the inline assembler block of function prolog code. This symbol is used to allocate space for local variables on the stack frame in custom prolog code.  
+ The compiler provides a symbol, `__LOCAL_SIZE`, for use in the inline assembler block of function prolog code. This symbol is used to allocate space for local variables on the stack frame in custom prolog code.  
   
- The compiler determines the value of **__LOCAL_SIZE**. Its value is the total number of bytes of all user-defined local variables and compiler-generated temporary variables. **__LOCAL_SIZE** can be used only as an immediate operand; it cannot be used in an expression. You must not change or redefine the value of this symbol. For example:  
+ The compiler determines the value of `__LOCAL_SIZE`. Its value is the total number of bytes of all user-defined local variables and compiler-generated temporary variables. `__LOCAL_SIZE` can be used only as an immediate operand; it cannot be used in an expression. You must not change or redefine the value of this symbol. For example:  
   
 ```  
 mov        eax, __LOCAL_SIZE           ;Immediate operand--Okay  
 mov        eax, [ebp - __LOCAL_SIZE]   ;Error  
 ```  
   
- The following example of a naked function containing custom prolog and epilog sequences uses the **__LOCAL_SIZE** symbol in the prolog sequence:  
+ The following example of a naked function containing custom prolog and epilog sequences uses the `__LOCAL_SIZE` symbol in the prolog sequence:  
   
 ```  
 // the__local_size_symbol.cpp  
@@ -72,5 +72,5 @@ __declspec ( naked ) int main() {
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Naked Function Calls](../cpp/naked-function-calls.md)

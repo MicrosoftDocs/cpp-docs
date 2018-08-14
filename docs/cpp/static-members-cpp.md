@@ -65,7 +65,7 @@ long nBytes = Console.bytecount;
   
  Static data members are subject to class-member access rules, so private access to static data members is allowed only for class-member functions and friends. These rules are described in [Member-Access Control](../cpp/member-access-control-cpp.md). The exception is that static data members must be defined in file scope regardless of their access restrictions. If the data member is to be explicitly initialized, an initializer must be provided with the definition.  
   
- The type of a static member is not qualified by its class name. Therefore, the type of `BufferedOutput::bytecount` is `long`.  
+ The type of a static member is not qualified by its class name. Therefore, the type of `BufferedOutput::bytecount` is **long**.  
   
-## See Also  
+## See also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)

@@ -79,7 +79,7 @@ typedef basic_regex<char> regex;
 
 ### Remarks
 
-The type describes a specialization of template class [basic_regex Class](../standard-library/basic-regex-class.md) for elements of type `char`.
+The type describes a specialization of template class [basic_regex Class](../standard-library/basic-regex-class.md) for elements of type **char**.
 
 > [!NOTE]
 > High-bit characters will have unpredictable results with `regex`. Values outside the range of 0 to 127 may result in undefined behavior.
@@ -190,7 +190,7 @@ typedef basic_regex<wchar_t> wregex;
 
 ### Remarks
 
-The type describes a specialization of template class [basic_regex Class](../standard-library/basic-regex-class.md) for elements of type `wchar_t`.
+The type describes a specialization of template class [basic_regex Class](../standard-library/basic-regex-class.md) for elements of type **wchar_t**.
 
 ## <a name="wsmatch"></a>  wsmatch Typedef
 

@@ -94,9 +94,9 @@ class CMapStringToString : public CObject
   
  The structure is composed of two fields:  
   
-- **key** The actual value of the key type.  
+- `key` The actual value of the key type.  
   
-- **value** The value of the associated object.  
+- `value` The value of the associated object.  
   
  It is used to store the return values from [CMapStringToString::PLookup](#plookup), [CMapStringToString::PGetFirstAssoc](#pgetfirstassoc), and [CMapStringToString::PGetNextAssoc](#pgetnextassoc).  
   
@@ -113,7 +113,7 @@ CPair* PGetFirstAssoc();
 ```  
   
 ### Return Value  
- A pointer to the first entry in the map; see [CMapStringToString::CPair](#cpair). If the map is empty, the value is `NULL`.  
+ A pointer to the first entry in the map; see [CMapStringToString::CPair](#cpair). If the map is empty, the value is NULL.  
   
 ### Remarks  
  Call this function to return a pointer the first element in the map object.  
@@ -135,7 +135,7 @@ CPair *PGetNextAssoc(const CPair* pAssoc);
  Points to a map entry returned by a previous [PGetNextAssoc](#pgetnextassoc) or [PGetFirstAssoc](#pgetfirstassoc) call.  
   
 ### Return Value  
- A pointer to the next entry in the map; see [CMapStringToString::CPair](#cpair). If the element is the last in the map, the value is **NULL**.  
+ A pointer to the next entry in the map; see [CMapStringToString::CPair](#cpair). If the element is the last in the map, the value is NULL.  
   
 ### Remarks  
  Call this method to iterate through all the elements in the map. Retrieve the first element with a call to `PGetFirstAssoc` and then iterate through the map with successive calls to `PGetNextAssoc`.  

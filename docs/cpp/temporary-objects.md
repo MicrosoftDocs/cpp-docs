@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Temporary Objects
 In some cases, it is necessary for the compiler to create temporary objects. These temporary objects can be created for the following reasons:  
   
--   To initialize a `const` reference with an initializer of a type different from that of the underlying type of the reference being initialized.  
+-   To initialize a **const** reference with an initializer of a type different from that of the underlying type of the reference being initialized.  
   
 -   To store the return value of a function that returns a user-defined type. These temporaries are created only if your program does not copy the return value to an object. For example:  
   
@@ -41,6 +41,5 @@ In some cases, it is necessary for the compiler to create temporary objects. The
   
 |Reason Temporary Created|Destruction Point|  
 |------------------------------|-----------------------|  
-|Result of expression evaluation|All temporaries created as a result of expression evaluation are destroyed at the end of the expression statement (that is, at the semicolon), or at the end of the controlling expressions for `for`, `if`, `while`, `do`, and `switch` statements.|  
-|Initializing `const` references|If an initializer is not an l-value of the same type as the reference being initialized, a temporary of the underlying object type is created and initialized with the initialization expression. This temporary object is destroyed immediately after the reference object to which it is bound is destroyed.|  
-  
+|Result of expression evaluation|All temporaries created as a result of expression evaluation are destroyed at the end of the expression statement (that is, at the semicolon), or at the end of the controlling expressions for **for**, **if**, **while**, **do**, and **switch** statements.|  
+|Initializing **const** references|If an initializer is not an l-value of the same type as the reference being initialized, a temporary of the underlying object type is created and initialized with the initialization expression. This temporary object is destroyed immediately after the reference object to which it is bound is destroyed.|  

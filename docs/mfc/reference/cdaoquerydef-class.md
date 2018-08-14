@@ -58,7 +58,7 @@ class CDaoQueryDef : public CObject
 |[CDaoQueryDef::SetName](#setname)|Sets the name of the saved query, replacing the name in use when the querydef was created.|  
 |[CDaoQueryDef::SetODBCTimeout](#setodbctimeout)|Sets the timeout value used by ODBC (for an ODBC query) when the querydef is executed.|  
 |[CDaoQueryDef::SetParamValue](#setparamvalue)|Sets the value of a specified parameter to the query.|  
-|[CDaoQueryDef::SetReturnsRecords](#setreturnsrecords)|Specifies whether the querydef returns records. Setting this attribute to **TRUE** is only valid for SQL pass-through queries.|  
+|[CDaoQueryDef::SetReturnsRecords](#setreturnsrecords)|Specifies whether the querydef returns records. Setting this attribute to TRUE is only valid for SQL pass-through queries.|  
 |[CDaoQueryDef::SetSQL](#setsql)|Sets the SQL string that specifies the query defined by the querydef.|  
   
 ### Public Data Members  
@@ -201,7 +201,7 @@ virtual void Create(
  The unique name of the query saved in the database. For details about the string, see the topic "CreateQueryDef Method" in DAO Help. If you accept the default value, an empty string, a temporary querydef is created. Such a query is not saved in the QueryDefs collection.  
   
  *lpszSQL*  
- The SQL string that defines the query. If you accept the default value of **NULL**, you must later call [SetSQL](#setsql) to set the string. Until then, the query is undefined. You can, however, use the undefined query to open a recordset; see Remarks for details. The SQL statement must be defined before you can append the querydef to the QueryDefs collection.  
+ The SQL string that defines the query. If you accept the default value of NULL, you must later call [SetSQL](#setsql) to set the string. Until then, the query is undefined. You can, however, use the undefined query to open a recordset; see Remarks for details. The SQL statement must be defined before you can append the querydef to the QueryDefs collection.  
   
 ### Remarks  
  If you pass a name in *lpszName*, you can then call [Append](#append) to save the querydef in the database's QueryDefs collection. Otherwise, the object is a temporary querydef and is not saved. In either case, the querydef is in an open state, and you can either use it to create a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object or call the querydef's [Execute](#execute) member function.  
@@ -219,17 +219,17 @@ virtual void Execute(int nOptions = dbFailOnError);
  *nOptions*  
  An integer that determines the characteristics of the query. For related information, see the topic "Execute Method" in DAO Help. You can use the bitwise-OR operator ( **&#124;**) to combine the following constants for this argument:  
   
-- **dbDenyWrite** Deny write permission to other users.  
+- `dbDenyWrite` Deny write permission to other users.  
   
-- **dbInconsistent** Inconsistent updates.  
+- `dbInconsistent` Inconsistent updates.  
   
-- **dbConsistent** Consistent updates.  
+- `dbConsistent` Consistent updates.  
   
-- **dbSQLPassThrough** SQL pass-through. Causes the SQL statement to be passed to an ODBC database for processing.  
+- `dbSQLPassThrough` SQL pass-through. Causes the SQL statement to be passed to an ODBC database for processing.  
   
-- **dbFailOnError** Default value. Roll back updates if an error occurs and report the error to the user.  
+- `dbFailOnError` Default value. Roll back updates if an error occurs and report the error to the user.  
   
-- **dbSeeChanges** Generate a run-time error if another user is changing data you are editing.  
+- `dbSeeChanges` Generate a run-time error if another user is changing data you are editing.  
   
 > [!NOTE]
 >  For an explanation of the terms "inconsistent" and "consistent," see the topic "Execute Method" in DAO Help.  
@@ -248,7 +248,7 @@ virtual void Execute(int nOptions = dbFailOnError);
   
  Call the [GetRecordsAffected](#getrecordsaffected) member function of the querydef object to determine the number of records affected by the most recent `Execute` call. For example, `GetRecordsAffected` returns information about the number of records deleted, updated, or inserted when executing an action query. The count returned will not reflect changes in related tables when cascade updates or deletes are in effect.  
   
- If you include both **dbInconsistent** and **dbConsistent** or if you include neither, the result is the default, **dbInconsistent**.  
+ If you include both `dbInconsistent` and `dbConsistent` or if you include neither, the result is the default, `dbInconsistent`.  
   
  `Execute` does not return a recordset. Using `Execute` on a query that selects records causes MFC to throw an exception of type [CDaoException](../../mfc/reference/cdaoexception-class.md).  
   
@@ -335,11 +335,11 @@ void GetFieldInfo(
  *dwInfoOptions*  
  Options that specify which information about the field to retrieve. The available options are listed here along with what they cause the function to return:  
   
-- `AFX_DAO_PRIMARY_INFO` (Default) Name, Type, Size, Attributes  
+- AFX_DAO_PRIMARY_INFO (Default) Name, Type, Size, Attributes  
   
-- `AFX_DAO_SECONDARY_INFO` Primary information plus: Ordinal Position, Required, Allow Zero Length, Source Field, Foreign Name, Source Table, Collating Order  
+- AFX_DAO_SECONDARY_INFO Primary information plus: Ordinal Position, Required, Allow Zero Length, Source Field, Foreign Name, Source Table, Collating Order  
   
-- `AFX_DAO_ALL_INFO` Primary and secondary information plus: Default Value, Validation Text, Validation Rule  
+- AFX_DAO_ALL_INFO Primary and secondary information plus: Default Value, Validation Text, Validation Rule  
   
  *lpszName*  
  A string containing the name of the desired field, for lookup by name. You can use a [CString](../../atl-mfc-shared/reference/cstringt-class.md).  
@@ -417,7 +417,7 @@ void GetParameterInfo(
  *dwInfoOptions*  
  Options that specify which information about the parameter to retrieve. The available option is listed here along with what it causes the function to return:  
   
-- `AFX_DAO_PRIMARY_INFO` (Default) Name, Type  
+- AFX_DAO_PRIMARY_INFO (Default) Name, Type  
   
  *lpszName*  
  A string containing the name of the desired parameter, for lookup by name. You can use a [CString](../../atl-mfc-shared/reference/cstringt-class.md).  
@@ -508,30 +508,30 @@ short GetType();
 ### Remarks  
  The query type is set by what you specify in the querydef's SQL string when you create the querydef or call an existing querydef's [SetSQL](#setsql) member function. The query type returned by this function can be one of the following values:  
   
-- **dbQSelect** Select  
+- `dbQSelect` Select  
   
-- **dbQAction** Action  
+- `dbQAction` Action  
   
-- **dbQCrosstab** Crosstab  
+- `dbQCrosstab` Crosstab  
   
-- **dbQDelete** Delete  
+- `dbQDelete` Delete  
   
-- **dbQUpdate** Update  
+- `dbQUpdate` Update  
   
-- **dbQAppend** Append  
+- `dbQAppend` Append  
   
-- **dbQMakeTable** Make-table  
+- `dbQMakeTable` Make-table  
   
-- **dbQDDL** Data-definition  
+- `dbQDDL` Data-definition  
   
-- **dbQSQLPassThrough** Pass-through  
+- `dbQSQLPassThrough` Pass-through  
   
-- **dbQSetOperation** Union  
+- `dbQSetOperation` Union  
   
-- **dbQSPTBulk** Used with **dbQSQLPassThrough** to specify a query that does not return records.  
+- `dbQSPTBulk` Used with `dbQSQLPassThrough` to specify a query that does not return records.  
   
 > [!NOTE]
->  To create a SQL pass-through query, don't set the **dbSQLPassThrough** constant. This is set automatically by the Microsoft Jet database engine when you create a querydef object and set the connection string.  
+>  To create a SQL pass-through query, don't set the `dbSQLPassThrough` constant. This is set automatically by the Microsoft Jet database engine when you create a querydef object and set the connection string.  
   
  For information about SQL strings, see [GetSQL](#getsql). For information about query types, see [Execute](#execute).  
   
@@ -663,7 +663,7 @@ void SetReturnsRecords(BOOL bReturnsRecords);
   
 ### Parameters  
  *bReturnsRecords*  
- Pass **TRUE** if the query on an external database returns records; otherwise, **FALSE**.  
+ Pass TRUE if the query on an external database returns records; otherwise, FALSE.  
   
 ### Remarks  
  In such a case, you must create the querydef and set its properties using other `CDaoQueryDef` member functions. For a description of external databases, see [SetConnect](#setconnect).  

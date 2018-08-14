@@ -21,13 +21,13 @@ Window traits classes provide a simple method for standardizing the styles used 
   
 |Class|Description|  
 |-----------|-----------------|  
-|[CWinTraits](../atl/reference/cwintraits-class.md)|Use this template when you want to provide default window styles that will be used only when no other styles are specified in the call to **Create**. The styles provided at run time take precedence over the styles set at compile time.|  
+|[CWinTraits](../atl/reference/cwintraits-class.md)|Use this template when you want to provide default window styles that will be used only when no other styles are specified in the call to `Create`. The styles provided at run time take precedence over the styles set at compile time.|  
 |[CWinTraitsOR](../atl/reference/cwintraitsor-class.md)|Use this class when you want to specify styles that must always be set for the window class. The styles provided at run time are combined with the styles set at compile time using the bitwise OR operator.|  
   
  In addition to these templates, ATL provides a number of predefined specializations of the `CWinTraits` template for commonly used combinations of window styles. See the [CWinTraits](../atl/reference/cwintraits-class.md) reference documentation for full details.  
   
 ## Custom Window Traits  
- In the unlikely situation that specializing one of the templates provided by ATL isn't sufficient and you need to create your own traits class, you just need to create a class that implements two static functions: `GetWndStyle` and **GetWndStyleEx**:  
+ In the unlikely situation that specializing one of the templates provided by ATL isn't sufficient and you need to create your own traits class, you just need to create a class that implements two static functions: `GetWndStyle` and `GetWndStyleEx`:  
   
  [!code-cpp[NVC_ATL_Windowing#68](../atl/codesnippet/cpp/understanding-window-traits_1.h)]  
   

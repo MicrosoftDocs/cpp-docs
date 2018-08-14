@@ -71,8 +71,8 @@ void swap (
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|Reference to an `sstream` object.|
-|`right`|Reference to an `sstream` object.|
+|*left*|Reference to an `sstream` object.|
+|*right*|Reference to an `sstream` object.|
 
 ## Remarks
 
@@ -82,14 +82,14 @@ Objects of type `char *` can use the functionality in [\<strstream>](../standard
 
 |Type name|Description|
 |-|-|
-|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Creates a type `basic_istringstream` specialized on a `char` template parameter.|
-|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Creates a type `basic_ostringstream` specialized on a `char` template parameter.|
-|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Creates a type `basic_stringbuf` specialized on a `char` template parameter.|
-|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Creates a type `basic_stringstream` specialized on a `char` template parameter.|
-|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Creates a type `basic_istringstream` specialized on a `wchar_t` template parameter.|
-|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Creates a type `basic_ostringstream` specialized on a `wchar_t` template parameter.|
-|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Creates a type `basic_stringbuf` specialized on a `wchar_t` template parameter.|
-|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Creates a type `basic_stringstream` specialized on a `wchar_t` template parameter.|
+|[istringstream](../standard-library/sstream-typedefs.md#istringstream)|Creates a type `basic_istringstream` specialized on a **char** template parameter.|
+|[ostringstream](../standard-library/sstream-typedefs.md#ostringstream)|Creates a type `basic_ostringstream` specialized on a **char** template parameter.|
+|[stringbuf](../standard-library/sstream-typedefs.md#stringbuf)|Creates a type `basic_stringbuf` specialized on a **char** template parameter.|
+|[stringstream](../standard-library/sstream-typedefs.md#stringstream)|Creates a type `basic_stringstream` specialized on a **char** template parameter.|
+|[wistringstream](../standard-library/sstream-typedefs.md#wistringstream)|Creates a type `basic_istringstream` specialized on a **wchar_t** template parameter.|
+|[wostringstream](../standard-library/sstream-typedefs.md#wostringstream)|Creates a type `basic_ostringstream` specialized on a **wchar_t** template parameter.|
+|[wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)|Creates a type `basic_stringbuf` specialized on a **wchar_t** template parameter.|
+|[wstringstream](../standard-library/sstream-typedefs.md#wstringstream)|Creates a type `basic_stringstream` specialized on a **wchar_t** template parameter.|
 
 ### Manipulators
 
@@ -101,10 +101,10 @@ Objects of type `char *` can use the functionality in [\<strstream>](../standard
 
 |Class|Description|
 |-|-|
-|[basic_stringbuf](../standard-library/basic-stringbuf-class.md)|Describes a stream buffer that controls the transmission of elements of type **Elem**, whose character traits are determined by the class **Tr**, to and from a sequence of elements stored in an array object.|
-|[basic_istringstream](../standard-library/basic-istringstream-class.md)|Describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, with elements of type **Elem**, whose character traits are determined by the class **Tr**, and whose elements are allocated by an allocator of class `Alloc`.|
-|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|Describes an object that controls insertion of elements and encoded objects into a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, with elements of type **Elem**, whose character traits are determined by the class **Tr**, and whose elements are allocated by an allocator of class `Alloc`.|
-|[basic_stringstream](../standard-library/basic-stringstream-class.md)|Describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, with elements of type **Elem**, whose character traits are determined by the class **Tr**, and whose elements are allocated by an allocator of class `Alloc`.|
+|[basic_stringbuf](../standard-library/basic-stringbuf-class.md)|Describes a stream buffer that controls the transmission of elements of type `Elem`, whose character traits are determined by the class `Tr`, to and from a sequence of elements stored in an array object.|
+|[basic_istringstream](../standard-library/basic-istringstream-class.md)|Describes an object that controls extraction of elements and encoded objects from a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, with elements of type `Elem`, whose character traits are determined by the class `Tr`, and whose elements are allocated by an allocator of class `Alloc`.|
+|[basic_ostringstream](../standard-library/basic-ostringstream-class.md)|Describes an object that controls insertion of elements and encoded objects into a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, with elements of type `Elem`, whose character traits are determined by the class `Tr`, and whose elements are allocated by an allocator of class `Alloc`.|
+|[basic_stringstream](../standard-library/basic-stringstream-class.md)|Describes an object that controls insertion and extraction of elements and encoded objects using a stream buffer of class [basic_stringbuf](../standard-library/basic-stringbuf-class.md)<**Elem**, **Tr**, `Alloc`>, with elements of type `Elem`, whose character traits are determined by the class `Tr`, and whose elements are allocated by an allocator of class `Alloc`.|
 
 ## Requirements
 

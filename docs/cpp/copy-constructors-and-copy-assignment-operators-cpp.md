@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Copy Constructors and Copy Assignment Operators (C++)
 > [!NOTE]
->  Starting in C++11, two kinds of assignment are supported in the language: *copy assignment* and *move assignment*. In this article "assignment" means copy assignment unless explicitly stated otherwise. For information about move assignment, see [Move Constructors and Move Assignment Operators (C++)](http://msdn.microsoft.com/en-us/1442de5f-37a5-42a1-83a6-ec9cfe0414db).  
+>  Starting in C++11, two kinds of assignment are supported in the language: *copy assignment* and *move assignment*. In this article "assignment" means copy assignment unless explicitly stated otherwise. For information about move assignment, see [Move Constructors and Move Assignment Operators (C++)](http://msdn.microsoft.com/1442de5f-37a5-42a1-83a6-ec9cfe0414db).  
 >   
 >  Both the assignment operation and the initialization operation cause objects to be copied.  
   
@@ -40,7 +40,7 @@ b = a;
   
  The preceding code could mean "copy the contents of FILE1.DAT to FILE2.DAT" or it could mean "ignore FILE2.DAT and make `b` a second handle to FILE1.DAT." You must attach appropriate copying semantics to each class, as follows.  
   
--   By using the assignment operator `operator=` together with a reference to the class type as the return type and the parameter that is passed by `const` reference—for example `ClassName& operator=(const ClassName& x);`.  
+-   By using the assignment operator **operator=** together with a reference to the class type as the return type and the parameter that is passed by **const** reference—for example `ClassName& operator=(const ClassName& x);`.  
   
 -   By using the copy constructor.   
   
@@ -78,4 +78,3 @@ int main()
  The implications are similar to those of the copy constructor. When the argument type is not **const**, assignment from a **const** object generates an error. The reverse is not true: If a **const** value is assigned to a value that is not **const**, the assignment succeeds.  
   
  For more information about overloaded assignment operators, see [Assignment](../cpp/assignment.md).  
-  

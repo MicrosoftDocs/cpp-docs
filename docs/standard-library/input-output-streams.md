@@ -21,7 +21,7 @@ For more information, see [basic_iostream Class](../standard-library/basic-iostr
 
 Deriving from `basic_iostream` is the class template `basic_fstream`, which is used to stream character data to and from files.
 
-There also are typedefs that provide character-specific specializations of `basic_fstream`. They are `fstream`, which is a file I/O stream that is based on `char`, and `wfstream`, which is a file I/O stream that is based on `wchar_t`. For more information, see [basic_fstream Class](../standard-library/basic-fstream-class.md), [fstream](../standard-library/basic-fstream-class.md), and [wfstream](../standard-library/basic-fstream-class.md). Using these typedefs requires the inclusion of the header file \<fstream>.
+There also are typedefs that provide character-specific specializations of `basic_fstream`. They are `fstream`, which is a file I/O stream that is based on **char**, and `wfstream`, which is a file I/O stream that is based on **wchar_t**. For more information, see [basic_fstream Class](../standard-library/basic-fstream-class.md), [fstream](../standard-library/basic-fstream-class.md), and [wfstream](../standard-library/basic-fstream-class.md). Using these typedefs requires the inclusion of the header file \<fstream>.
 
 > [!NOTE]
 > When a `basic_fstream` object is used to perform file I/O, although the underlying buffer contains separately designated positions for reading and writing, the current input and current output positions are tied together, and therefore, reading some data moves the output position.

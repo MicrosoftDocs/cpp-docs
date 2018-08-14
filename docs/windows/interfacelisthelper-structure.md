@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename T0,  
    typename T1 = Nil,  
@@ -38,41 +38,41 @@ template <
 struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;  
 ```  
   
-#### Parameters  
- `T0`  
+### Parameters  
+ *T0*  
  Template parameter 0, which is required.  
   
- `T1`  
+ *T1*  
  Template parameter 1, which by default is unspecified.  
   
- `T2`  
+ *T2*  
  Template parameter 2, which by default is unspecified.The third template parameter.  
   
- `T3`  
+ *T3*  
  Template parameter 3, which by default is unspecified.  
   
- `T4`  
+ *T4*  
  Template parameter 4, which by default is unspecified.  
   
- `T5`  
+ *T5*  
  Template parameter 5, which by default is unspecified.  
   
- `T6`  
+ *T6*  
  Template parameter 6, which by default is unspecified.  
   
- `T7`  
+ *T7*  
  Template parameter 7, which by default is unspecified.  
   
- `T8`  
+ *T8*  
  Template parameter 8, which by default is unspecified.  
   
- `T9`  
+ *T9*  
  Template parameter 9, which by default is unspecified.  
   
 ## Remarks  
- Builds an InterfaceList type by recursively applying the specified template parameter arguments.  
+ Builds an `InterfaceList` type by recursively applying the specified template parameter arguments.  
   
- The InterfaceListHelper template uses template parameter `T0` to define the first data member in an InterfaceList structure, and then recursively applies the InterfaceListHelper template to any remaining template parameters. InterfaceListHelper stops when there are no remaining template parameters.  
+ The **InterfaceListHelper** template uses template parameter *T0* to define the first data member in an `InterfaceList` structure, and then recursively applies the **InterfaceListHelper** template to any remaining template parameters. **InterfaceListHelper** stops when there are no remaining template parameters.  
   
 ## Members  
   

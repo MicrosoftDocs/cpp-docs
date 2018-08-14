@@ -40,7 +40,7 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 |[CMFCFilterChunkValueImpl::GetChunkGUID](#getchunkguid)|Retrieves the chunk GUID.|  
 |[CMFCFilterChunkValueImpl::GetChunkPID](#getchunkpid)|Retrieves the chunk PID (property ID).|  
 |[CMFCFilterChunkValueImpl::GetChunkType](#getchunktype)|Gets chunk type.|  
-|[CMFCFilterChunkValueImpl::GetString](#getstring)|Retrieves the the string value.|  
+|[CMFCFilterChunkValueImpl::GetString](#getstring)|Retrieves the string value.|  
 |[CMFCFilterChunkValueImpl::GetValue](#getvalue)|Retrieves the value as an allocated propvariant.|  
 |[CMFCFilterChunkValueImpl::GetValueNoAlloc](#getvaluenoalloc)|Returns non-allocated (internal value) value.|  
 |[CMFCFilterChunkValueImpl::IsValid](#isvalid)|Checks whether this property value is valid or not.|  
@@ -220,7 +220,7 @@ BOOL IsValid() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current chunk value is valid; otherwise `FALSE`.  
+ TRUE if the current chunk value is valid; otherwise FALSE.  
   
 ### Remarks  
   

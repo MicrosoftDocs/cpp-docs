@@ -42,40 +42,40 @@ typedef struct tagWINDOWPOS { /* wp */
  *y*  
  Specifies the position of the right edge of the window.  
   
- `cx`  
+ *cx*  
  Specifies the window width, in pixels.  
   
- `cy`  
+ *cy*  
  Specifies the window height, in pixels.  
   
- `flags`  
+ *flags*  
  Specifies window-positioning options. This member can be one of the following values:  
   
-- **SWP_DRAWFRAME** Draws a frame (defined in the class description for the window) around the window. The window receives a `WM_NCCALCSIZE` message.  
+- SWP_DRAWFRAME Draws a frame (defined in the class description for the window) around the window. The window receives a WM_NCCALCSIZE message.  
   
-- **SWP_FRAMECHANGED** Sends a `WM_NCCALCSIZE` message to the window, even if the window's size is not being changed. If this flag is not specified, `WM_NCCALCSIZE` is sent only when the window's size is being changed.  
+- SWP_FRAMECHANGED Sends a WM_NCCALCSIZE message to the window, even if the window's size is not being changed. If this flag is not specified, WM_NCCALCSIZE is sent only when the window's size is being changed.  
   
-- **SWP_HIDEWINDOW** Hides the window.  
+- SWP_HIDEWINDOW Hides the window.  
   
-- `SWP_NOACTIVATE` Does not activate the window.  
+- SWP_NOACTIVATE Does not activate the window.  
   
-- **SWP_NOCOPYBITS** Discards the entire contents of the client area. If this flag is not specified, the valid contents of the client area are saved and copied back into the client area after the window is sized or repositioned.  
+- SWP_NOCOPYBITS Discards the entire contents of the client area. If this flag is not specified, the valid contents of the client area are saved and copied back into the client area after the window is sized or repositioned.  
   
-- `SWP_NOMOVE` Retains current position (ignores the **x** and **y** members).  
+- SWP_NOMOVE Retains current position (ignores the `x` and `y` members).  
   
-- **SWP_NOOWNERZORDER** Does not change the owner window's position in the Z-order.  
+- SWP_NOOWNERZORDER Does not change the owner window's position in the Z-order.  
   
-- `SWP_NOSIZE` Retains current size (ignores the **cx** and **cy** members).  
+- SWP_NOSIZE Retains current size (ignores the `cx` and `cy` members).  
   
-- **SWP_NOREDRAW** Does not redraw changes.  
+- SWP_NOREDRAW Does not redraw changes.  
   
-- **SWP_NOREPOSITION** Same as **SWP_NOOWNERZORDER**.  
+- SWP_NOREPOSITION Same as SWP_NOOWNERZORDER.  
   
-- **SWP_NOSENDCHANGING** Prevents the window from receiving the `WM_WINDOWPOSCHANGING` message.  
+- SWP_NOSENDCHANGING Prevents the window from receiving the WM_WINDOWPOSCHANGING message.  
   
-- `SWP_NOZORDER` Retains current ordering (ignores the **hwndInsertAfter** member).  
+- SWP_NOZORDER Retains current ordering (ignores the `hwndInsertAfter` member).  
   
-- **SWP_SHOWWINDOW** Displays the window.  
+- SWP_SHOWWINDOW Displays the window.  
   
 ## Requirements  
  **Header:** winuser.h  

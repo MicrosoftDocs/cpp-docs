@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # noreturn
 ## Microsoft Specific  
- This `__declspec` attribute tells the compiler that a function does not return. As a consequence, the compiler knows that the code following a call to a **__declspec(noreturn)** function is unreachable.  
+ This **__declspec** attribute tells the compiler that a function does not return. As a consequence, the compiler knows that the code following a call to a **__declspec(noreturn)** function is unreachable.  
   
  If the compiler finds a function with a control path that does not return a value, it generates a warning (C4715) or error message (C2202). If the control path cannot be reached due to a function that never returns, you can use **__declspec(noreturn)** to prevent this warning or error.  
   
@@ -38,6 +38,6 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)

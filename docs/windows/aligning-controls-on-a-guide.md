@@ -32,13 +32,11 @@ The sizing handles of controls snap to guides when the controls are moved, and g
   
 2.  In the [Guide Settings Dialog Box](../windows/guide-settings-dialog-box.md), in the **Grid Spacing** field, specify a new width and height in DLUs.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  
  [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)   
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
-

@@ -49,12 +49,11 @@ int main() {
     test_label(1);  // in label1   
     test_label(2);  // in label2  
 }  
-  
 ```  
   
  **The goto statement**  
   
- The appearance of an *identifier* label in the source program declares a label. Only a [goto](../cpp/goto-statement-cpp.md) statement can transfer control to an *identifier* label. The following code fragment illustrates use of the `goto` statement and an *identifier* label:  
+ The appearance of an *identifier* label in the source program declares a label. Only a [goto](../cpp/goto-statement-cpp.md) statement can transfer control to an *identifier* label. The following code fragment illustrates use of the **goto** statement and an *identifier* label:  
   
  A label cannot appear by itself but must always be attached to a statement. If a label is needed by itself, place a null statement after the label.  
   
@@ -79,7 +78,7 @@ int main() {
   
  **The case statement**  
   
- Labels that appear after the **case** keyword cannot also appear outside a `switch` statement. (This restriction also applies to the **default** keyword.) The following code fragment shows the correct use of **case** labels:  
+ Labels that appear after the **case** keyword cannot also appear outside a **switch** statement. (This restriction also applies to the **default** keyword.) The following code fragment shows the correct use of **case** labels:  
   
 ```cpp 
 // Sample Microsoft Windows message processing loop.  
@@ -108,7 +107,7 @@ switch( msg )
 ```  
   
 ## Labels in the case statement  
- Labels that appear after the **case** keyword cannot also appear outside a `switch` statement. (This restriction also applies to the **default** keyword.) The following code fragment shows the correct use of **case** labels:  
+ Labels that appear after the **case** keyword cannot also appear outside a **switch** statement. (This restriction also applies to the **default** keyword.) The following code fragment shows the correct use of **case** labels:  
   
 ```cpp 
 // Sample Microsoft Windows message processing loop.  
@@ -152,7 +151,7 @@ switch( msg )
 ```  
   
 ## Labels in the goto statement  
- The appearance of an *identifier* label in the source program declares a label. Only a [goto](../cpp/goto-statement-cpp.md) statement can transfer control to an *identifier* label. The following code fragment illustrates use of the `goto` statement and an *identifier* label:  
+ The appearance of an *identifier* label in the source program declares a label. Only a [goto](../cpp/goto-statement-cpp.md) statement can transfer control to an *identifier* label. The following code fragment illustrates use of the **goto** statement and an *identifier* label:  
   
  A label cannot appear by itself but must always be attached to a statement. If a label is needed by itself, place a null statement after the label.  
   
@@ -172,9 +171,8 @@ int main() {
       cerr << "At Test2 label." << endl;  
 // At Test2 label.  
 }  
-  
 ```  
   
-## See Also  
+## See also  
  [Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)   
  [switch Statement (C++)](../cpp/switch-statement-cpp.md)

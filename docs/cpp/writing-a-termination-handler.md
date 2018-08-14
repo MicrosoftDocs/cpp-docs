@@ -26,5 +26,5 @@ Unlike an exception handler, a termination handler is always executed, regardles
   
 -   [Restrictions on termination handlers](../cpp/restrictions-on-termination-handlers.md)  
   
-## See Also  
+## See also  
  [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

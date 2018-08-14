@@ -20,25 +20,24 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 void Attach( Interface* pInterface ) throw( );  
 void Attach( Interface* pInterface, bool fAddRef ) throw( );  
 ```  
   
 #### Parameters  
- `pInterface`  
+ *pInterface*  
  A raw interface pointer.  
   
- `fAddRef`  
- If it is **true**, then `AddRef` is called. If it is **false**, the `_com_ptr_t` object takes ownership of the raw interface pointer without calling `AddRef`.  
+ *fAddRef*  
+ If it is TRUE, then `AddRef` is called. If it is FALSE, the `_com_ptr_t` object takes ownership of the raw interface pointer without calling `AddRef`.  
   
 ## Remarks  
   
--   **Attach(**  `pInterface`  **)** `AddRef` is not called. The ownership of the interface is passed to this `_com_ptr_t` object. **Release** is called to decrement the reference count for the previously encapsulated pointer.  
+-   **Attach(**  *pInterface*  **)** `AddRef` is not called. The ownership of the interface is passed to this `_com_ptr_t` object. `Release` is called to decrement the reference count for the previously encapsulated pointer.  
   
--   **Attach(**  `pInterface` **,**  `fAddRef`  **)** If `fAddRef` is **true**, `AddRef` is called to increment the reference count for the encapsulated interface pointer. If `fAddRef` is **false**, this `_com_ptr_t` object takes ownership of the raw interface pointer without calling `AddRef`. **Release** is called to decrement the reference count for the previously encapsulated pointer.  
+-   **Attach(**  *pInterface* **,**  *fAddRef*  **)** If *fAddRef* is TRUE, `AddRef` is called to increment the reference count for the encapsulated interface pointer. If *fAddRef* is FALSE, this `_com_ptr_t` object takes ownership of the raw interface pointer without calling `AddRef`. `Release` is called to decrement the reference count for the previously encapsulated pointer.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

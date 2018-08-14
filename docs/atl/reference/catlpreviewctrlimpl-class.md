@@ -113,14 +113,14 @@ virtual BOOL Create(HWND hWndParent, const RECT* prc);
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  A handle to the host window supplied by the Shell for Rich Preview.  
   
- `prc`  
+ *prc*  
  Specifies the initial size and position of the window.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
   
@@ -141,7 +141,7 @@ virtual void DoPaint(HDC hdc);
 ```  
   
 ### Parameters  
- `hdc`  
+ *hdc*  
  A handle to a device context for painting.  
   
 ### Remarks  
@@ -194,17 +194,17 @@ LRESULT OnPaint(
 ```  
   
 ### Parameters  
- `nMsg`  
+ *nMsg*  
  Set to WM_PAINT.  
   
- `wParam`  
+ *wParam*  
  This parameter is not used.  
   
- `lParam`  
+ *lParam*  
  This parameter is not used.  
   
- `bHandled`  
- When this function returns, it contains `TRUE`.  
+ *bHandled*  
+ When this function returns, it contains TRUE.  
   
 ### Return Value  
  Always returns 0.  
@@ -228,7 +228,7 @@ virtual void SetHost(HWND hWndParent);
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  A handle to the new parent window.  
   
 ### Remarks  
@@ -244,13 +244,13 @@ virtual void SetPreviewVisuals(
 ```  
   
 ### Parameters  
- `clrBack`  
+ *clrBack*  
  Background color of the preview window.  
   
- `clrText`  
+ *clrText*  
  Text color of the preview window.  
   
- `plf`  
+ *plf*  
  Font used to display text in the preview window.  
   
 ### Remarks  
@@ -263,10 +263,10 @@ virtual void SetRect(const RECT* prc, BOOL bRedraw);
 ```  
   
 ### Parameters  
- `prc`  
+ *prc*  
  Specifies the new size and position of the preview control.  
   
- `bRedraw`  
+ *bRedraw*  
  Specifies whether the control should be redrawn.  
   
 ### Remarks  

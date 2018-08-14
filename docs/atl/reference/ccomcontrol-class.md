@@ -27,7 +27,7 @@ class ATL_NO_VTABLE CComControl : public CComControlBase,
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  The class implementing the control.  
   
  *WinBase*  
@@ -86,11 +86,11 @@ virtual HRESULT ControlQueryInterface(const IID& iid, void** ppv);
 ```  
   
 ### Parameters  
- `iid`  
+ *iid*  
  [in] The GUID of the interface being requested.  
   
- `ppv`  
- [out] A pointer to the interface pointer identified by `iid`, or **NULL** if the interface is not found.  
+ *ppv*  
+ [out] A pointer to the interface pointer identified by *iid*, or NULL if the interface is not found.  
   
 ### Remarks  
  Only handles interfaces in the COM map table.  
@@ -106,10 +106,10 @@ virtual HWND CreateControlWindow(HWND hWndParent, RECT& rcPos);
 ```  
   
 ### Parameters  
- `hWndParent`  
+ *hWndParent*  
  [in] Handle to the parent or owner window. A valid window handle must be supplied. The control window is confined to the area of its parent window.  
   
- `rcPos`  
+ *rcPos*  
  [in] The initial size and position of the window to be created.  
   
 ### Remarks  
@@ -133,7 +133,7 @@ HRESULT FireOnChanged(DISPID dispID);
  One of the standard HRESULT values.  
   
 ### Remarks  
- If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#fireonchanged) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`. 
+ If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#fireonchanged) to notify all connected `IPropertyNotifySink` interfaces that the specified control property has changed. If your control class does not derive from `IPropertyNotifySink`, this method returns S_OK. 
   
  This method is safe to call even if your control doesn't support connection points.  
   
@@ -155,7 +155,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
  One of the standard HRESULT values.  
   
 ### Remarks  
- If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns `S_OK`.  
+ If your control class derives from [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638), this method calls [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) to notify all connected `IPropertyNotifySink` interfaces that the specified control property is about to change. If your control class does not derive from `IPropertyNotifySink`, this method returns S_OK.  
 
   
  This method is safe to call even if your control doesn't support connection points.  
@@ -174,13 +174,13 @@ int MessageBox(
 ```  
   
 ### Parameters  
- `lpszText`  
+ *lpszText*  
  The text to be displayed in the message box.  
   
- `lpszCaption`  
+ *lpszCaption*  
  The dialog box title. If NULL (the default), the title "Error" is used.  
   
- `nType`  
+ *nType*  
  Specifies the contents and behavior of the dialog box. See the [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) entry in the Windows SDK documentation for a list of the different message boxes available. The default provides a simple **OK** button.  
   
 ### Return Value  

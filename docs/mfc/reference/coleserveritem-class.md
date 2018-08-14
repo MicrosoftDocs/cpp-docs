@@ -38,10 +38,10 @@ class COleServerItem : public CDocItem
 |[COleServerItem::DoDragDrop](#dodragdrop)|Performs a drag-and-drop operation.|  
 |[COleServerItem::GetClipboardData](#getclipboarddata)|Gets the data source for use in data transfer (drag and drop or Clipboard).|  
 |[COleServerItem::GetDocument](#getdocument)|Returns the server document that contains the item.|  
-|[COleServerItem::GetEmbedSourceData](#getembedsourcedata)|Gets the **CF_EMBEDSOURCE** data for an OLE item.|  
+|[COleServerItem::GetEmbedSourceData](#getembedsourcedata)|Gets the CF_EMBEDSOURCE data for an OLE item.|  
 |[COleServerItem::GetItemName](#getitemname)|Returns the name of the item. Used for linked items only.|  
-|[COleServerItem::GetLinkSourceData](#getlinksourcedata)|Gets the **CF_LINKSOURCE** data for an OLE item.|  
-|[COleServerItem::GetObjectDescriptorData](#getobjectdescriptordata)|Gets the **CF_OBJECTDESCRIPTOR** data for an OLE item.|  
+|[COleServerItem::GetLinkSourceData](#getlinksourcedata)|Gets the CF_LINKSOURCE data for an OLE item.|  
+|[COleServerItem::GetObjectDescriptorData](#getobjectdescriptordata)|Gets the CF_OBJECTDESCRIPTOR data for an OLE item.|  
 |[COleServerItem::IsConnected](#isconnected)|Indicates whether the item is currently attached to an active container.|  
 |[COleServerItem::IsLinkedItem](#islinkeditem)|Indicates whether the item represents a linked OLE item.|  
 |[COleServerItem::NotifyChanged](#notifychanged)|Updates all containers with automatic link update.|  
@@ -54,7 +54,7 @@ class COleServerItem : public CDocItem
 |[COleServerItem::OnQueryUpdateItems](#onqueryupdateitems)|Called to determine whether any linked items require updating.|  
 |[COleServerItem::OnRenderData](#onrenderdata)|Retrieves data as part of delayed rendering.|  
 |[COleServerItem::OnRenderFileData](#onrenderfiledata)|Retrieves data into a `CFile` object as part of delayed rendering.|  
-|[COleServerItem::OnRenderGlobalData](#onrenderglobaldata)|Retrieves data into an `HGLOBAL` as part of delayed rendering.|  
+|[COleServerItem::OnRenderGlobalData](#onrenderglobaldata)|Retrieves data into an HGLOBAL as part of delayed rendering.|  
 |[COleServerItem::OnSetColorScheme](#onsetcolorscheme)|Called to set the item's color scheme.|  
 |[COleServerItem::OnSetData](#onsetdata)|Called to set the item's data.|  
 |[COleServerItem::OnSetExtent](#onsetextent)|Called by the framework to set the size of the OLE item.|  
@@ -126,7 +126,7 @@ COleServerItem(
  Pointer to the document that will contain the new item.  
   
  *bAutoDelete*  
- Flag indicating whether the object can be deleted when a link to it is released. Set this to **FALSE** if the `COleServerItem` object is an integral part of your document's data which you must delete. Set this to **TRUE** if the object is a secondary structure used to identify a range in your document's data that can be deleted by the framework.  
+ Flag indicating whether the object can be deleted when a link to it is released. Set this to FALSE if the `COleServerItem` object is an integral part of your document's data which you must delete. Set this to TRUE if the object is a secondary structure used to identify a range in your document's data that can be deleted by the framework.  
   
 ##  <a name="copytoclipboard"></a>  COleServerItem::CopyToClipboard  
  Call this function to copy the OLE item to the Clipboard.  
@@ -137,10 +137,10 @@ void CopyToClipboard(BOOL bIncludeLink = FALSE);
   
 ### Parameters  
  *bIncludeLink*  
- Set this to **TRUE** if link data should be copied to the Clipboard. Set this to **FALSE** if your server application does not support links.  
+ Set this to TRUE if link data should be copied to the Clipboard. Set this to FALSE if your server application does not support links.  
   
 ### Remarks  
- The function uses the [OnGetClipboardData](#ongetclipboarddata) member function to create a [COleDataSource](../../mfc/reference/coledatasource-class.md) object containing the OLE item's data in the formats supported. The function then places the `COleDataSource` object on the Clipboard by using the [COleDataSource::SetClipboard](../../mfc/reference/coledatasource-class.md#setclipboard) function. The `COleDataSource` object includes the item's native data and its representation in `CF_METAFILEPICT` format, as well as data in any conversion formats you choose to support. You must have implemented [Serialize](../../mfc/reference/cobject-class.md#serialize) and [OnDraw](#ondraw) for this member function to work.  
+ The function uses the [OnGetClipboardData](#ongetclipboarddata) member function to create a [COleDataSource](../../mfc/reference/coledatasource-class.md) object containing the OLE item's data in the formats supported. The function then places the `COleDataSource` object on the Clipboard by using the [COleDataSource::SetClipboard](../../mfc/reference/coledatasource-class.md#setclipboard) function. The `COleDataSource` object includes the item's native data and its representation in CF_METAFILEPICT format, as well as data in any conversion formats you choose to support. You must have implemented [Serialize](../../mfc/reference/cobject-class.md#serialize) and [OnDraw](#ondraw) for this member function to work.  
   
 ##  <a name="dodragdrop"></a>  COleServerItem::DoDragDrop  
  Call the `DoDragDrop` member function to perform a drag-and-drop operation.  
@@ -162,7 +162,7 @@ DROPEFFECT DoDragDrop(
  The offset from *lpItemRect* where the mouse position was at the time of the drag.  
   
  *bIncludeLink*  
- Set this to **TRUE** if link data should be copied to the Clipboard. Set it to **FALSE** if your application does not support links.  
+ Set this to TRUE if link data should be copied to the Clipboard. Set it to FALSE if your application does not support links.  
   
  *dwEffects*  
  Determines the effects that the drag source will allow in the drag operation (a combination of Copy, Move, and Link).  
@@ -171,10 +171,10 @@ DROPEFFECT DoDragDrop(
  Pointer to the rectangle that defines where the drag actually starts. For more information, see the following Remarks section.  
   
 ### Return Value  
- A value from the `DROPEFFECT` enumeration. If it is `DROPEFFECT_MOVE`, the original data should be removed.  
+ A value from the DROPEFFECT enumeration. If it is DROPEFFECT_MOVE, the original data should be removed.  
   
 ### Remarks  
- The drag-and-drop operation does not start immediately. It waits until the mouse cursor leaves the rectangle specified by *lpRectStartDrag* or until a specified number of milliseconds have passed. If *lpRectStartDrag* is **NULL**, a default rectangle is used so that the drag starts when the mouse cursor moves one pixel.  
+ The drag-and-drop operation does not start immediately. It waits until the mouse cursor leaves the rectangle specified by *lpRectStartDrag* or until a specified number of milliseconds have passed. If *lpRectStartDrag* is NULL, a default rectangle is used so that the drag starts when the mouse cursor moves one pixel.  
   
  The delay time is specified by a registry key setting. You can change the delay time by calling [CWinApp::WriteProfileString](../../mfc/reference/cwinapp-class.md#writeprofilestring) or [CWinApp::WriteProfileInt](../../mfc/reference/cwinapp-class.md#writeprofileint). If you do not specify the delay time, a default value of 200 milliseconds is used. Drag delay time is stored as follows:  
   
@@ -202,7 +202,7 @@ void GetClipboardData(
  Pointer to the `COleDataSource` object that will receive the OLE item's data in all supported formats.  
   
  *bIncludeLink*  
- **TRUE** if link data should be copied to the Clipboard. **FALSE** if your server application does not support links.  
+ TRUE if link data should be copied to the Clipboard. FALSE if your server application does not support links.  
   
  *lpOffset*  
  The offset, in pixels, of the mouse cursor from the origin of the object.  
@@ -211,7 +211,7 @@ void GetClipboardData(
  The size of the object in pixels.  
   
 ### Remarks  
- This function calls the [GetEmbedSourceData](#getembedsourcedata) member function to get the native data for the OLE item and calls the [AddOtherClipboardData](#addotherclipboarddata) member function to get the presentation format and any supported conversion formats. If *bIncludeLink* is **TRUE**, the function also calls [GetLinkSourceData](#getlinksourcedata) to get the link data for the item.  
+ This function calls the [GetEmbedSourceData](#getembedsourcedata) member function to get the native data for the OLE item and calls the [AddOtherClipboardData](#addotherclipboarddata) member function to get the presentation format and any supported conversion formats. If *bIncludeLink* is TRUE, the function also calls [GetLinkSourceData](#getlinksourcedata) to get the link data for the item.  
   
  Override this function if you want to put formats in a `COleDataSource` object before or after those formats supplied by `CopyToClipboard`.  
   
@@ -226,7 +226,7 @@ COleDataSource* GetDataSource();
  A pointer to the `COleDataSource` object used to store the conversion formats.  
   
 ### Remarks  
- If you want your server application to offer data in a variety of formats during data transfer operations, register those formats with the `COleDataSource` object returned by this function. For example, if you want to supply a **CF_TEXT** representation of the OLE item for Clipboard or drag-and-drop operations, you would register the format with the `COleDataSource` object this function returns, and then override the **OnRenderXxxData** member function to provide the data.  
+ If you want your server application to offer data in a variety of formats during data transfer operations, register those formats with the `COleDataSource` object returned by this function. For example, if you want to supply a CF_TEXT representation of the OLE item for Clipboard or drag-and-drop operations, you would register the format with the `COleDataSource` object this function returns, and then override the `OnRenderXxxData` member function to provide the data.  
   
 ##  <a name="getdocument"></a>  COleServerItem::GetDocument  
  Call this function to get a pointer to the document that contains the item.  
@@ -236,13 +236,13 @@ COleServerDoc* GetDocument() const;
 ```  
   
 ### Return Value  
- A pointer to the document that contains the item; **NULL** if the item is not part of a document.  
+ A pointer to the document that contains the item; NULL if the item is not part of a document.  
   
 ### Remarks  
  This allows access to the server document that you passed as an argument to the `COleServerItem` constructor.  
   
 ##  <a name="getembedsourcedata"></a>  COleServerItem::GetEmbedSourceData  
- Call this function to get the **CF_EMBEDSOURCE** data for an OLE item.  
+ Call this function to get the CF_EMBEDSOURCE data for an OLE item.  
   
 ```  
 void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
@@ -250,7 +250,7 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
   
 ### Parameters  
  *lpStgMedium*  
- Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive the **CF_EMBEDSOURCE** data for the OLE item.  
+ Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive the CF_EMBEDSOURCE data for the OLE item.  
   
 ### Remarks  
  This format includes the item's native data. You must have implemented the `Serialize` member function for this function to work properly.  
@@ -273,7 +273,7 @@ const CString& GetItemName() const;
  You typically call this function only for linked items.  
   
 ##  <a name="getlinksourcedata"></a>  COleServerItem::GetLinkSourceData  
- Call this function to get the `CF_LINKSOURCE` data for an OLE item.  
+ Call this function to get the CF_LINKSOURCE data for an OLE item.  
   
 ```  
 BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
@@ -281,7 +281,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
   
 ### Parameters  
  *lpStgMedium*  
- Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive the `CF_LINKSOURCE` data for the OLE item.  
+ Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive the CF_LINKSOURCE data for the OLE item.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -294,7 +294,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
  For more information, see [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) in the Windows SDK.  
   
 ##  <a name="getobjectdescriptordata"></a>  COleServerItem::GetObjectDescriptorData  
- Call this function to get the **CF_OBJECTDESCRIPTOR** data for an OLE item.  
+ Call this function to get the CF_OBJECTDESCRIPTOR data for an OLE item.  
   
 ```  
 void GetObjectDescriptorData(
@@ -305,16 +305,16 @@ void GetObjectDescriptorData(
   
 ### Parameters  
  *lpOffset*  
- Offset of the mouse click from the upper-left corner of the OLE item. Can be **NULL**.  
+ Offset of the mouse click from the upper-left corner of the OLE item. Can be NULL.  
   
  *lpSize*  
- Size of the OLE item. Can be **NULL**.  
+ Size of the OLE item. Can be NULL.  
   
  *lpStgMedium*  
- Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive the **CF_OBJECTDESCRIPTOR** data for the OLE item.  
+ Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure that will receive the CF_OBJECTDESCRIPTOR data for the OLE item.  
   
 ### Remarks  
- The information is copied into the **STGMEDIUM** structure pointed to by *lpStgMedium*. This format includes the information needed for the Paste Special dialog.  
+ The information is copied into the `STGMEDIUM` structure pointed to by *lpStgMedium*. This format includes the information needed for the Paste Special dialog.  
   
  For more information, see [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) in the Windows SDK.  
   
@@ -365,15 +365,15 @@ void NotifyChanged(DVASPECT nDrawAspect = DVASPECT_CONTENT);
   
 ### Parameters  
  *nDrawAspect*  
- A value from the `DVASPECT` enumeration that indicates which aspect of the OLE item has changed. This parameter can have any of the following values:  
+ A value from the DVASPECT enumeration that indicates which aspect of the OLE item has changed. This parameter can have any of the following values:  
   
-- `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
+- DVASPECT_CONTENT Item is represented in such a way that it can be displayed as an embedded object inside its container.  
   
-- `DVASPECT_THUMBNAIL` Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
+- DVASPECT_THUMBNAIL Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
   
-- `DVASPECT_ICON` Item is represented by an icon.  
+- DVASPECT_ICON Item is represented by an icon.  
   
-- `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
+- DVASPECT_DOCPRINT Item is represented as if it were printed using the Print command from the File menu.  
   
 ### Remarks  
  If a container item is linked to the document with an automatic link, the item is updated to reflect the changes. In container applications written using the Microsoft Foundation Class Library, [COleClientItem::OnChange](../../mfc/reference/coleclientitem-class.md#onchange) is called in response.  
@@ -391,16 +391,16 @@ virtual void OnDoVerb(LONG iVerb);
   
 |Value|Meaning|Symbol|  
 |-----------|-------------|------------|  
-|0|Primary verb|`OLEIVERB_PRIMARY`|  
+|0|Primary verb|OLEIVERB_PRIMARY|  
 |1|Secondary verb|(None)|  
-|- 1|Display item for editing|`OLEIVERB_SHOW`|  
-|- 2|Edit item in separate window|`OLEIVERB_OPEN`|  
-|- 3|Hide item|`OLEIVERB_HIDE`|  
+|- 1|Display item for editing|OLEIVERB_SHOW|  
+|- 2|Edit item in separate window|OLEIVERB_OPEN|  
+|- 3|Hide item|OLEIVERB_HIDE|  
   
  The -1 value is typically an alias for another verb. If open editing is not supported, -2 has the same effect as -1. For additional values, see [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508) in the Windows SDK.  
   
 ### Remarks  
- If the container application was written with the Microsoft Foundation Class Library, this function is called when the [COleClientItem::Activate](../../mfc/reference/coleclientitem-class.md#activate) member function of the corresponding `COleClientItem` object is called. The default implementation calls the [OnShow](#onshow) member function if the primary verb or `OLEIVERB_SHOW` is specified, [OnOpen](#onopen) if the secondary verb or `OLEIVERB_OPEN` is specified, and [OnHide](#onhide) if `OLEIVERB_HIDE` is specified. The default implementation calls `OnShow` if `iVerb` is not one of the verbs listed above.  
+ If the container application was written with the Microsoft Foundation Class Library, this function is called when the [COleClientItem::Activate](../../mfc/reference/coleclientitem-class.md#activate) member function of the corresponding `COleClientItem` object is called. The default implementation calls the [OnShow](#onshow) member function if the primary verb or OLEIVERB_SHOW is specified, [OnOpen](#onopen) if the secondary verb or OLEIVERB_OPEN is specified, and [OnHide](#onhide) if OLEIVERB_HIDE is specified. The default implementation calls `OnShow` if *iVerb* is not one of the verbs listed above.  
   
  Override this function if your primary verb does not show the item. For example, if the item is a sound recording and its primary verb is Play, you would not have to display the server application to play the item.  
   
@@ -420,7 +420,7 @@ virtual BOOL OnDraw(
  A pointer to the [CDC](../../mfc/reference/cdc-class.md) object on which to draw the item. The display context is automatically connected to the attribute display context so you can call attribute functions, although doing so would make the metafile device-specific.  
   
  *rSize*  
- Size, in **HIMETRIC** units, in which to draw the metafile.  
+ Size, in HIMETRIC units, in which to draw the metafile.  
   
 ### Return Value  
  Nonzero if the item was successfully drawn; otherwise 0.  
@@ -443,26 +443,26 @@ virtual BOOL OnDrawEx(
  A pointer to the [CDC](../../mfc/reference/cdc-class.md) object on which to draw the item. The DC is automatically connected to the attribute DC so you can call attribute functions, although doing so would make the metafile device-specific.  
   
  *nDrawAspect*  
- A value from the `DVASPECT` enumeration. This parameter can have any of the following values:  
+ A value from the DVASPECT enumeration. This parameter can have any of the following values:  
   
-- `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
+- DVASPECT_CONTENT Item is represented in such a way that it can be displayed as an embedded object inside its container.  
   
-- `DVASPECT_THUMBNAIL` Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
+- DVASPECT_THUMBNAIL Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
   
-- `DVASPECT_ICON` Item is represented by an icon.  
+- DVASPECT_ICON Item is represented by an icon.  
   
-- `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
+- DVASPECT_DOCPRINT Item is represented as if it were printed using the Print command from the File menu.  
   
- `rSize`  
- Size of the item in **HIMETRIC** units.  
+ *rSize*  
+ Size of the item in HIMETRIC units.  
   
 ### Return Value  
  Nonzero if the item was successfully drawn; otherwise 0.  
   
 ### Remarks  
- The default implementation calls `OnDraw` when `DVASPECT` is equal to `DVASPECT_CONTENT`; otherwise it fails.  
+ The default implementation calls `OnDraw` when DVASPECT is equal to DVASPECT_CONTENT; otherwise it fails.  
   
- Override this function to provide presentation data for aspects other than `DVASPECT_CONTENT`, such as `DVASPECT_ICON` or `DVASPECT_THUMBNAIL`.  
+ Override this function to provide presentation data for aspects other than DVASPECT_CONTENT, such as DVASPECT_ICON or DVASPECT_THUMBNAIL.  
   
 ##  <a name="ongetclipboarddata"></a>  COleServerItem::OnGetClipboardData  
  Called by the framework to get a `COleDataSource` object containing all the data that would be placed on the Clipboard by a call to the [CopyToClipboard](#copytoclipboard) member function.  
@@ -476,7 +476,7 @@ virtual COleDataSource* OnGetClipboardData(
   
 ### Parameters  
  *bIncludeLink*  
- Set this to **TRUE** if link data should be copied to the Clipboard. Set this to **FALSE** if your server application does not support links.  
+ Set this to TRUE if link data should be copied to the Clipboard. Set this to FALSE if your server application does not support links.  
   
  *lpOffset*  
  The offset of the mouse cursor from the origin of the object in pixels.  
@@ -491,7 +491,7 @@ virtual COleDataSource* OnGetClipboardData(
  The default implementation of this function calls [GetClipboardData](#getclipboarddata).  
   
 ##  <a name="ongetextent"></a>  COleServerItem::OnGetExtent  
- Called by the framework to retrieve the size, in **HIMETRIC** units, of the OLE item.  
+ Called by the framework to retrieve the size, in HIMETRIC units, of the OLE item.  
   
 ```  
 virtual BOOL OnGetExtent(
@@ -503,13 +503,13 @@ virtual BOOL OnGetExtent(
  *nDrawAspect*  
  Specifies the aspect of the OLE item whose bounds are to be retrieved. This parameter can have any of the following values:  
   
-- `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
+- DVASPECT_CONTENT Item is represented in such a way that it can be displayed as an embedded object inside its container.  
   
-- `DVASPECT_THUMBNAIL` Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
+- DVASPECT_THUMBNAIL Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
   
-- `DVASPECT_ICON` Item is represented by an icon.  
+- DVASPECT_ICON Item is represented by an icon.  
   
-- `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
+- DVASPECT_DOCPRINT Item is represented as if it were printed using the Print command from the File menu.  
   
  *rSize*  
  Reference to a `CSize` object that will receive the size of the OLE item.  
@@ -528,7 +528,7 @@ virtual void OnHide();
 ```  
   
 ### Remarks  
- The default calls **COleServerDoc::OnShowDocument( FALSE )**. The function also notifies the container that the OLE item has been hidden. Override this function if you want to perform special processing when hiding an OLE item.  
+ The default calls `COleServerDoc::OnShowDocument( FALSE )`. The function also notifies the container that the OLE item has been hidden. Override this function if you want to perform special processing when hiding an OLE item.  
   
 ##  <a name="oninitfromdata"></a>  COleServerItem::OnInitFromData  
  Called by the framework to initialize an OLE item using the contents of *pDataObject*.  
@@ -544,13 +544,13 @@ virtual BOOL OnInitFromData(
  Pointer to an OLE data object containing data in various formats for initializing the OLE item.  
   
  *bCreation*  
- **TRUE** if the function is called to initialize an OLE item being newly created by a container application. **FALSE** if the function is called to replace the contents of an already existing OLE item.  
+ TRUE if the function is called to initialize an OLE item being newly created by a container application. FALSE if the function is called to replace the contents of an already existing OLE item.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- If *bCreation* is **TRUE**, this function is called if a container implements Insert New Object based on the current selection. The data selected is used when creating the new OLE item. For example, when selecting a range of cells in a spreadsheet program and then using the Insert New Object to create a chart based on the values in the selected range. The default implementation does nothing. Override this function to choose an acceptable format from those offered by *pDataObject* and initialize the OLE item based on the data provided. This is an advanced overridable.  
+ If *bCreation* is TRUE, this function is called if a container implements Insert New Object based on the current selection. The data selected is used when creating the new OLE item. For example, when selecting a range of cells in a spreadsheet program and then using the Insert New Object to create a chart based on the values in the selected range. The default implementation does nothing. Override this function to choose an acceptable format from those offered by *pDataObject* and initialize the OLE item based on the data provided. This is an advanced overridable.  
   
  For more information, see [IOleObject::InitFromData](http://msdn.microsoft.com/library/windows/desktop/ms688510) in the Windows SDK.  
   
@@ -603,7 +603,7 @@ virtual BOOL OnRenderData(
 ### Remarks  
  The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) or [DelayRenderFileData](../../mfc/reference/coledatasource-class.md#delayrenderfiledata) member function for delayed rendering. The default implementation of this function calls [OnRenderFileData](#onrenderfiledata) or [OnRenderGlobalData](#onrenderglobaldata), respectively, if the supplied storage medium is either a file or memory. If neither of these formats is supplied, the default implementation returns 0 and does nothing.  
   
- If *lpStgMedium*-> *tymed* is **TYMED_NULL**, the **STGMEDIUM** should allocated and filled as specified by *lpFormatEtc->tymed*. If not **TYMED_NULL**, the **STGMEDIUM** should be filled in place with the data.  
+ If *lpStgMedium*-> *tymed* is TYMED_NULL, the STGMEDIUM should allocated and filled as specified by *lpFormatEtc->tymed*. If not TYMED_NULL, the STGMEDIUM should be filled in place with the data.  
   
  This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If your data is small and fixed in size, override `OnRenderGlobalData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
@@ -629,7 +629,7 @@ virtual BOOL OnRenderFileData(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns **FALSE**.  
+ The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns FALSE.  
   
  This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata).  
   
@@ -649,15 +649,15 @@ virtual BOOL OnRenderGlobalData(
  Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
  *phGlobal*  
- Points to a handle to global memory in which the data is to be returned. If no memory has been allocated, this parameter can be **NULL**.  
+ Points to a handle to global memory in which the data is to be returned. If no memory has been allocated, this parameter can be NULL.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns **FALSE**.  
+ The specified format is one previously placed in the `COleDataSource` object using the [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) member function for delayed rendering. The default implementation of this function simply returns FALSE.  
   
- If *phGlobal* is **NULL**, then a new `HGLOBAL` should be allocated and returned in *phGlobal*. Otherwise, the `HGLOBAL` specified by *phGlobal* should be filled with the data. The amount of data placed in the `HGLOBAL` must not exceed the current size of the memory block. Also, the block cannot be reallocated to a larger size.  
+ If *phGlobal* is NULL, then a new HGLOBAL should be allocated and returned in *phGlobal*. Otherwise, the HGLOBAL specified by *phGlobal* should be filled with the data. The amount of data placed in the HGLOBAL must not exceed the current size of the memory block. Also, the block cannot be reallocated to a larger size.  
   
  This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata).  
   
@@ -678,7 +678,7 @@ virtual BOOL OnSetColorScheme(const LOGPALETTE* lpLogPalette);
  Nonzero if the color palette is used; otherwise 0.  
   
 ### Remarks  
- If the container application was written using the Microsoft Foundation Class Library, this function is called when the [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) function of the corresponding `COleClientItem` object is called. The default implementation returns **FALSE**. Override this function if you want to use the recommended palette. The server application is not required to use the suggested palette.  
+ If the container application was written using the Microsoft Foundation Class Library, this function is called when the [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) function of the corresponding `COleClientItem` object is called. The default implementation returns FALSE. Override this function if you want to use the recommended palette. The server application is not required to use the suggested palette.  
   
  For more information, see [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) in the Windows SDK.  
   
@@ -725,13 +725,13 @@ virtual BOOL OnSetExtent(
  *nDrawAspect*  
  Specifies the aspect of the OLE item whose bounds are being specified. This parameter can have any of the following values:  
   
-- `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
+- DVASPECT_CONTENT Item is represented in such a way that it can be displayed as an embedded object inside its container.  
   
-- `DVASPECT_THUMBNAIL` Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
+- DVASPECT_THUMBNAIL Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
   
-- `DVASPECT_ICON` Item is represented by an icon.  
+- DVASPECT_ICON Item is represented by an icon.  
   
-- `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
+- DVASPECT_DOCPRINT Item is represented as if it were printed using the Print command from the File menu.  
   
  *size*  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) structure specifying the new size of the OLE item.  
@@ -740,7 +740,7 @@ virtual BOOL OnSetExtent(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- If the container application was written with the Microsoft Foundation Class Library, this function is called when the [SetExtent](../../mfc/reference/coleclientitem-class.md#setextent) member function of the corresponding `COleClientItem` object is called. The default implementation sets the [m_sizeExtent](#m_sizeextent) member to the specified size if *nDrawAspect* is `DVASPECT_CONTENT`; otherwise it returns 0. Override this function to perform special processing when you change the size of the item.  
+ If the container application was written with the Microsoft Foundation Class Library, this function is called when the [SetExtent](../../mfc/reference/coleclientitem-class.md#setextent) member function of the corresponding `COleClientItem` object is called. The default implementation sets the [m_sizeExtent](#m_sizeextent) member to the specified size if *nDrawAspect* is DVASPECT_CONTENT; otherwise it returns 0. Override this function to perform special processing when you change the size of the item.  
   
 ##  <a name="onshow"></a>  COleServerItem::OnShow  
  Called by the framework to instruct the server application to display the OLE item in place.  
@@ -767,7 +767,7 @@ virtual void OnUpdate(
   
 ### Parameters  
  *pSender*  
- Pointer to the item that modified the document. Can be **NULL**.  
+ Pointer to the item that modified the document. Can be NULL.  
   
  *lHint*  
  Contains information about the modification.  
@@ -776,15 +776,15 @@ virtual void OnUpdate(
  Pointer to an object storing information about the modification.  
   
  *nDrawAspect*  
- A value from the `DVASPECT` enumeration. This parameter can have any one of the following values:  
+ A value from the DVASPECT enumeration. This parameter can have any one of the following values:  
   
-- `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
+- DVASPECT_CONTENT Item is represented in such a way that it can be displayed as an embedded object inside its container.  
   
-- `DVASPECT_THUMBNAIL` Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
+- DVASPECT_THUMBNAIL Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
   
-- `DVASPECT_ICON` Item is represented by an icon.  
+- DVASPECT_ICON Item is represented by an icon.  
   
-- `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
+- DVASPECT_DOCPRINT Item is represented as if it were printed using the Print command from the File menu.  
   
 ### Remarks  
  The default implementation calls [NotifyChanged](#notifychanged), regardless of the hint or sender.  

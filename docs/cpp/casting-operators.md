@@ -18,13 +18,13 @@ There are several casting operators specific to the C++ language. These operator
   
 -   [static_cast](../cpp/static-cast-operator.md) Used for conversion of nonpolymorphic types.  
   
--   [const_cast](../cpp/const-cast-operator.md) Used to remove the `const`, `volatile`, and `__unaligned` attributes.  
+-   [const_cast](../cpp/const-cast-operator.md) Used to remove the **const**, **volatile**, and **__unaligned** attributes.  
   
 -   [reinterpret_cast](../cpp/reinterpret-cast-operator.md) Used for simple reinterpretation of bits.  
   
 -   [safe_cast](../windows/safe-cast-cpp-component-extensions.md) Used to produce verifiable MSIL.  
   
- Use `const_cast` and `reinterpret_cast` as a last resort, since these operators present the same dangers as old style casts. However, they are still necessary in order to completely replace old style casts.  
+ Use **const_cast** and **reinterpret_cast** as a last resort, since these operators present the same dangers as old style casts. However, they are still necessary in order to completely replace old style casts.  
   
-## See Also  
+## See also  
  [Casting](../cpp/casting.md)

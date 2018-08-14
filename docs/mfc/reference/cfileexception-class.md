@@ -129,7 +129,7 @@ virtual BOOL GetErrorMessage(
  Pointer to an unsigned integer that receives the help context ID. If `NULL`, no ID is returned.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise `FALSE`.  
+ TRUE if the method was successful; otherwise FALSE.  
   
 ### Remarks  
  If the specified buffer is too small, the error message is truncated.  
@@ -183,7 +183,7 @@ int m_cause;
     >  These `CFileException` cause enumerators are distinct from the `CArchiveException` cause enumerators.  
   
     > [!NOTE]
-    > `CArchiveException::generic` is deprecated. Use `genericException` instead. If `generic` is used in an application and built with /clr, the resulting syntax errors are not easy to decipher.  
+    > `CArchiveException::generic` is deprecated. Use `genericException` instead. If **generic** is used in an application and built with /clr, the resulting syntax errors are not easy to decipher.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#30](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_3.cpp)]  
@@ -196,7 +196,7 @@ LONG m_lOsError;
 ```  
   
 ### Remarks  
- See your operating-system technical manual for a listing of error codes. This data member is a public variable of type **LONG**.  
+ See your operating-system technical manual for a listing of error codes. This data member is a public variable of type LONG.  
   
 ##  <a name="m_strfilename"></a>  CFileException::m_strFileName  
  Contains the name of the file for this exception condition.  
@@ -206,7 +206,7 @@ CString m_strFileName;
 ```  
   
 ##  <a name="oserrortoexception"></a>  CFileException::OsErrorToException  
- Returns an enumerator that corresponds to a given *lOsError* value. If the error code is unknown, then the function returns **CFileException::generic**.  
+ Returns an enumerator that corresponds to a given *lOsError* value. If the error code is unknown, then the function returns `CFileException::generic`.  
   
 ```  
 static int PASCAL OsErrorToException(LONG lOsError);
@@ -240,7 +240,7 @@ static void PASCAL ThrowErrno(int nErrno, LPCTSTR lpszFileName = NULL);
  [!code-cpp[NVC_MFCFiles#28](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_5.cpp)]  
   
 ##  <a name="throwoserror"></a>  CFileException::ThrowOsError  
- Throws a `CFileException` corresponding to a given *lOsError* value. If the error code is unknown, then the function throws an exception coded as **CFileException::generic**.  
+ Throws a `CFileException` corresponding to a given *lOsError* value. If the error code is unknown, then the function throws an exception coded as `CFileException::generic`.  
   
 ```  
 static void PASCAL ThrowOsError(LONG lOsError, LPCTSTR lpszFileName = NULL);

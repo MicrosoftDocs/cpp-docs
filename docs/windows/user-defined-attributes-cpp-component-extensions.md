@@ -23,7 +23,7 @@ Custom attributes enable you to extend the metadata of an interface, class or st
 ### Remarks  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
  Custom attributes let you extend the metadata of a managed element. For more information, see [Attributes](/dotnet/standard/attributes/index).  
@@ -44,10 +44,9 @@ Custom attributes enable you to extend the metadata of an interface, class or st
  For information on signing assemblies in Visual C++, see [Strong Name Assemblies (Assembly Signing) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
  The following sample shows how to define a custom attribute.  
   
@@ -65,8 +64,6 @@ ref struct Attr : public Attribute {
 [Attr]  
 ref class MyClass {};  
 ```  
-  
- **Example**  
   
  The following example illustrates some important features of custom attributes. For example, this example shows a common usage of the custom attributes: instantiating a server that can fully describe itself to clients.  
   
@@ -143,8 +140,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 Service Priority = 0  
   
@@ -159,9 +154,7 @@ Service Priority = 1
 Service Access = Read  
 ```  
   
- **Example**  
-  
- The Object^ type replaces the variant data type. The following example defines a custom attribute that takes an array of Object^ as parameters.  
+ The `Object^` type replaces the variant data type. The following example defines a custom attribute that takes an array of `Object^` as parameters.  
   
  Attribute arguments must be compile-time constants; in most cases, they should be constant literals.  
   
@@ -182,8 +175,6 @@ public:
 [ AnotherAttr( gcnew array<Object ^> { 3.14159, "pi" }, var1 = gcnew array<Object ^> { "a", "b" } ) ]  
 public ref class SomeClass {};  
 ```  
-  
- **Example**  
   
  The runtime requires that the public part of the custom attribute class must be serializable.  When authoring custom attributes, named arguments of your custom attribute are limited to compile-time constants.  (Think of it as a sequence of bits appended to your class layout in the metadata.)  
   

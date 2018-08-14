@@ -31,7 +31,6 @@ class my_class {
 private:  
    class impl; unique_ptr<impl> pimpl; // opaque type here  
 };  
-  
 ```  
   
  The pimpl idiom avoids rebuild cascades and brittle object layouts. It's well suited for (transitively) popular types.  
@@ -54,7 +53,7 @@ my_class::my_class(): pimpl( new impl )
 ## Best practices  
  Consider whether to add support for non-throwing swap specialization.  
   
-## See Also  
+## See also  
  [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)

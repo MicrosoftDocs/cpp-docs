@@ -13,22 +13,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # const_cast Operator
-Removes the **const**, `volatile`, and **__unaligned** attribute(s) from a class.  
+Removes the **const**, **volatile**, and **__unaligned** attribute(s) from a class.  
   
 ## Syntax  
   
 ```  
-  
 const_cast <type-id> (expression)  
-  
 ```  
   
 ## Remarks  
- A pointer to any object type or a pointer to a data member can be explicitly converted to a type that is identical except for the **const**, `volatile`, and **__unaligned** qualifiers. For pointers and references, the result will refer to the original object. For pointers to data members, the result will refer to the same member as the original (uncast) pointer to data member. Depending on the type of the referenced object, a write operation through the resulting pointer, reference, or pointer to data member might produce undefined behavior.  
+ A pointer to any object type or a pointer to a data member can be explicitly converted to a type that is identical except for the **const**, **volatile**, and **__unaligned** qualifiers. For pointers and references, the result will refer to the original object. For pointers to data members, the result will refer to the same member as the original (uncast) pointer to data member. Depending on the type of the referenced object, a write operation through the resulting pointer, reference, or pointer to data member might produce undefined behavior.  
   
- You cannot use the `const_cast` operator to directly override a constant variable's constant status.  
+ You cannot use the **const_cast** operator to directly override a constant variable's constant status.  
   
- The `const_cast` operator converts a null pointer value to the null pointer value of the destination type.  
+ The **const_cast** operator converts a null pointer value to the null pointer value of the destination type.  
   
 ## Example  
   
@@ -61,8 +59,8 @@ int main() {
 }  
 ```  
   
- On the line containing the `const_cast`, the data type of the `this` pointer is `const CCTest *`. The `const_cast` operator changes the data type of the `this` pointer to `CCTest *`, allowing the member `number` to be modified. The cast lasts only for the remainder of the statement in which it appears.  
+ On the line containing the **const_cast**, the data type of the **this** pointer is `const CCTest *`. The **const_cast** operator changes the data type of the **this** pointer to `CCTest *`, allowing the member `number` to be modified. The cast lasts only for the remainder of the statement in which it appears.  
   
-## See Also  
+## See also  
  [Casting Operators](../cpp/casting-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)

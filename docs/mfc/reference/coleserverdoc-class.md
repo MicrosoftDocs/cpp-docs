@@ -44,7 +44,7 @@ class AFX_NOVTABLE COleServerDoc : public COleLinkingDoc
 |[COleServerDoc::GetZoomFactor](#getzoomfactor)|Returns the zoom factor in pixels.|  
 |[COleServerDoc::IsDocObject](#isdocobject)|Determines if the document is a DocObject.|  
 |[COleServerDoc::IsEmbedded](#isembedded)|Indicates whether the document is embedded in a container document or running stand-alone.|  
-|[COleServerDoc::IsInPlaceActive](#isinplaceactive)|Returns `TRUE` if the item is currently activated in place.|  
+|[COleServerDoc::IsInPlaceActive](#isinplaceactive)|Returns TRUE if the item is currently activated in place.|  
 |[COleServerDoc::NotifyChanged](#notifychanged)|Notifies containers that the user has changed the document.|  
 |[COleServerDoc::NotifyClosed](#notifyclosed)|Notifies containers that the user has closed the document.|  
 |[COleServerDoc::NotifyRename](#notifyrename)|Notifies containers that the user has renamed the document.|  
@@ -154,7 +154,7 @@ virtual COleIPFrameWnd* CreateInPlaceFrame(CWnd* pParentWnd);
  Pointer to the container application's parent window.  
   
 ### Return Value  
- A pointer to the in-place frame window, or **NULL** if unsuccessful.  
+ A pointer to the in-place frame window, or NULL if unsuccessful.  
   
 ### Remarks  
  The default implementation uses information specified in the document template to create the frame. The view used is the first view created for the document. This view is temporarily detached from the original frame and attached to the newly created frame.  
@@ -223,10 +223,10 @@ virtual CDocObjectServer* GetDocObjectServer(LPOLEDOCUMENTSITE pDocSite);
  Pointer to the `IOleDocumentSite` interface that will connect this document to the server.  
   
 ### Return Value  
- A pointer to a `CDocObjectServer`; **NULL** if the operation failed.  
+ A pointer to a `CDocObjectServer`; NULL if the operation failed.  
   
 ### Remarks  
- When a DocObject server is activated, the return of a non- **NULL** pointer shows that the client can support DocObjects. The default implementation returns **NULL**.  
+ When a DocObject server is activated, the return of a non- NULL pointer shows that the client can support DocObjects. The default implementation returns NULL.  
   
  A typical implementation for a document that supports DocObjects will simply allocate a new `CDocObjectServer` object and return it to the caller. For example:  
   
@@ -240,7 +240,7 @@ COleServerItem* GetEmbeddedItem();
 ```  
   
 ### Return Value  
- A pointer to an item representing the entire document; **NULL** if the operation failed.  
+ A pointer to an item representing the entire document; NULL if the operation failed.  
   
 ### Remarks  
  It calls [COleServerDoc::OnGetEmbeddedItem](#ongetembeddeditem), a virtual function with no default implementation.  
@@ -289,13 +289,13 @@ BOOL GetZoomFactor(
   
 ### Parameters  
  *lpSizeNum*  
- Pointer to an object of class `CSize` that will hold the zoom factor's numerator. Can be **NULL**.  
+ Pointer to an object of class `CSize` that will hold the zoom factor's numerator. Can be NULL.  
   
  *lpSizeDenom*  
- Pointer to an object of class `CSize` that will hold the zoom factor's denominator. Can be **NULL**.  
+ Pointer to an object of class `CSize` that will hold the zoom factor's denominator. Can be NULL.  
   
  *lpPosRect*  
- Pointer to an object of class `CRect` that describes the item's new position. If this argument is **NULL**, the function uses the item's current position.  
+ Pointer to an object of class `CRect` that describes the item's new position. If this argument is NULL, the function uses the item's current position.  
   
 ### Return Value  
  Nonzero if the item is activated for in-place editing and its zoom factor is other than 100% (1:1); otherwise 0.  
@@ -313,7 +313,7 @@ BOOL IsDocObject() const;
 ```  
   
 ### Return Value  
- **TRUE** if the document is a DocObject; otherwise **FALSE**.  
+ TRUE if the document is a DocObject; otherwise FALSE.  
   
 ##  <a name="isembedded"></a>  COleServerDoc::IsEmbedded  
  Call the `IsEmbedded` member function to determine whether the document represents an object embedded in a container.  
@@ -394,13 +394,13 @@ virtual void OnClose(OLECLOSE dwCloseOption);
   
 ### Parameters  
  *dwCloseOption*  
- A value from the enumeration `OLECLOSE`. This parameter can have one of the following values:  
+ A value from the enumeration OLECLOSE. This parameter can have one of the following values:  
   
-- `OLECLOSE_SAVEIFDIRTY` The file is saved if it has been modified.  
+- OLECLOSE_SAVEIFDIRTY The file is saved if it has been modified.  
   
-- `OLECLOSE_NOSAVE` The file is closed without being saved.  
+- OLECLOSE_NOSAVE The file is closed without being saved.  
   
-- `OLECLOSE_PROMPTSAVE` If the file has been modified, the user is prompted about saving it.  
+- OLECLOSE_PROMPTSAVE If the file has been modified, the user is prompted about saving it.  
   
 ### Remarks  
  The default implementation calls `CDocument::OnCloseDocument`.  
@@ -435,7 +435,7 @@ virtual void OnDeactivateUI(BOOL bUndoable);
 ### Remarks  
  This function restores the container application's user interface to its original state, hiding any menus and other controls that were created for in-place activation.  
   
- The framework always sets *bUndoable* to **FALSE**. If the server supports undo and there is an operation that can be undone, call the base-class implementation with *bUndoable* set to **TRUE**.  
+ The framework always sets *bUndoable* to FALSE. If the server supports undo and there is an operation that can be undone, call the base-class implementation with *bUndoable* set to TRUE.  
   
 ##  <a name="ondocwindowactivate"></a>  COleServerDoc::OnDocWindowActivate  
  The framework calls this function to activate or deactivate a document window for in-place editing.  
@@ -467,52 +467,52 @@ virtual HRESULT OnExecOleCmd(
   
 ### Parameters  
  *pguidCmdGroup*  
- A pointer to a GUID that identifies a set of commands. Can be **NULL** to indicate the default command group.  
+ A pointer to a GUID that identifies a set of commands. Can be NULL to indicate the default command group.  
   
  *nCmdID*  
  The command to execute. Must be in the group identified by *pguidCmdGroup*.  
   
  *nCmdExecOut*  
- The way the object should execute the command, one or more of the following values from the **OLECMDEXECOPT** enumeration:  
+ The way the object should execute the command, one or more of the following values from the OLECMDEXECOPT enumeration:  
   
- **OLECMDEXECOPT_DODEFAULT**  
+ OLECMDEXECOPT_DODEFAULT  
   
- **OLECMDEXECOPT_PROMPTUSER**  
+ OLECMDEXECOPT_PROMPTUSER  
   
- **OLECMDEXECOPT_DONTPROMPTUSER**  
+ OLECMDEXECOPT_DONTPROMPTUSER  
   
- **OLECMDEXECOPT_SHOWHELP**  
+ OLECMDEXECOPT_SHOWHELP  
   
  *pvarargIn*  
- Pointer to a **VARIANTARG** containing input arguments for the command. Can be **NULL**.  
+ Pointer to a VARIANTARG containing input arguments for the command. Can be NULL.  
   
  *pvarargOut*  
- Pointer to a **VARIANTARG** to receive the output return values from the command. Can be **NULL**.  
+ Pointer to a VARIANTARG to receive the output return values from the command. Can be NULL.  
   
 ### Return Value  
- Returns `S_OK` if successful; otherwise, one of the following error codes:  
+ Returns S_OK if successful; otherwise, one of the following error codes:  
   
 |Value|Description|  
 |-----------|-----------------|  
-|**E_UNEXPECTED**|Unexpected error occurred|  
-|**E_FAIL**|Error occurred|  
-|**E_NOTIMPL**|Indicates MFC itself should attempt to translate and dispatch the command|  
-|**OLECMDERR_E_UNKNOWNGROUP**|*pguidCmdGroup* is non- **NULL** but does not specify a recognized command group|  
-|**OLECMDERR_E_NOTSUPPORTED**|*nCmdID* is not recognized as a valid command in the group *pguidCmdGroup*|  
-|**OLECMDERR_DISABLED**|The command identified by *nCmdID* is disabled and cannot be executed|  
-|**OLECMDERR_NOHELP**|Caller asked for help on the command identified by *nCmdID* but no help is available|  
-|**OLECMDERR_CANCELED**|User canceled the execution|  
+|E_UNEXPECTED|Unexpected error occurred|  
+|E_FAIL|Error occurred|  
+|E_NOTIMPL|Indicates MFC itself should attempt to translate and dispatch the command|  
+|OLECMDERR_E_UNKNOWNGROUP|*pguidCmdGroup* is non- NULL but does not specify a recognized command group|  
+|OLECMDERR_E_NOTSUPPORTED|*nCmdID* is not recognized as a valid command in the group *pguidCmdGroup*|  
+|OLECMDERR_DISABLED|The command identified by *nCmdID* is disabled and cannot be executed|  
+|OLECMDERR_NOHELP|Caller asked for help on the command identified by *nCmdID* but no help is available|  
+|OLECMDERR_CANCELED|User canceled the execution|  
   
 ### Remarks  
  `COleCmdUI` can be used to enable, update, and set other properties of DocObject user interface commands. After the commands are initialized, you can execute them with `OnExecOleCmd`.  
   
  The framework calls the function before attempting to translate and dispatch an OLE document command. You don't need to override this function to handle standard OLE document commands, but you must supply an override to this function if you want to handle your own custom commands or handle commands that accept parameters or return results.  
   
- Most of the commands do not take arguments or return values. For a majority of commands the caller can pass **NULL**s for *pvarargIn* and *pvarargOut*. For commands that expect input values, the caller can declare and initialize a **VARIANTARG** variable and pass a pointer to the variable in *pvarargIn*. For commands that require a single value, the argument can be stored directly in the **VARIANTARG** and passed to the function. Multiple arguments must be packaged within the **VARIANTARG** using one of the supported types (such as `IDispatch` and **SAFEARRAY** ).  
+ Most of the commands do not take arguments or return values. For a majority of commands the caller can pass NULLs for *pvarargIn* and *pvarargOut*. For commands that expect input values, the caller can declare and initialize a VARIANTARG variable and pass a pointer to the variable in *pvarargIn*. For commands that require a single value, the argument can be stored directly in the VARIANTARG and passed to the function. Multiple arguments must be packaged within the VARIANTARG using one of the supported types (such as `IDispatch` and SAFEARRAY ).  
   
- Similarly, if a command returns arguments the caller is expected to declare a **VARIANTARG**, initialize it to `VT_EMPTY`, and pass its address in *pvarargOut*. If a command returns a single value, the object can store that value directly in *pvarargOut*. Multiple output values must be packaged in some way appropriate for the **VARIANTARG**.  
+ Similarly, if a command returns arguments the caller is expected to declare a VARIANTARG, initialize it to VT_EMPTY, and pass its address in *pvarargOut*. If a command returns a single value, the object can store that value directly in *pvarargOut*. Multiple output values must be packaged in some way appropriate for the VARIANTARG.  
   
- The base-class implementation of this function will walk the **OLE_COMMAND_MAP** structures associated with the command target and try to dispatch the command to an appropriate handler. The base-class implementation works only with commands that do not accept arguments or return values. If you need to handle commands that do accept arguments or return values, you must override this function and work with the *pvarargIn* and *pvarargOut* parameters yourself.  
+ The base-class implementation of this function will walk the OLE_COMMAND_MAP structures associated with the command target and try to dispatch the command to an appropriate handler. The base-class implementation works only with commands that do not accept arguments or return values. If you need to handle commands that do accept arguments or return values, you must override this function and work with the *pvarargIn* and *pvarargOut* parameters yourself.  
   
 ##  <a name="onframewindowactivate"></a>  COleServerDoc::OnFrameWindowActivate  
  The framework calls this function when the container application's frame window is activated or deactivated.  
@@ -538,7 +538,7 @@ virtual COleServerItem* OnGetEmbeddedItem() = 0;
 ```  
   
 ### Return Value  
- A pointer to an item representing the entire document; **NULL** if the operation failed.  
+ A pointer to an item representing the entire document; NULL if the operation failed.  
   
 ### Remarks  
  There is no default implementation. You must override this function to return an item that represents the entire document. This return value should be an object of a `COleServerItem`-derived class.  
@@ -554,7 +554,7 @@ virtual BOOL OnReactivateAndUndo();
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The default implementation does nothing except return **FALSE** to indicate failure.  
+ The default implementation does nothing except return FALSE to indicate failure.  
   
  Override this function if your application supports undo. Usually you would perform the undo operation, then activate the item by calling `ActivateInPlace`. If the container application is written with the Microsoft Foundation Class Library, calling `COleClientItem::ReactivateAndUndo` causes this function to be called.  
   
@@ -573,10 +573,10 @@ virtual void OnResizeBorder(
  Pointer to a `RECT` structure or a `CRect` object that specifies the coordinates of the border.  
   
  *lpUIWindow*  
- Pointer to an object of class **IOleInPlaceUIWindow** that owns the current in-place editing session.  
+ Pointer to an object of class `IOleInPlaceUIWindow` that owns the current in-place editing session.  
   
  *bFrame*  
- **TRUE** if *lpUIWindow* points to the container application's top-level frame window, or **FALSE** if *lpUIWindow* points to the container application's document-level frame window.  
+ TRUE if *lpUIWindow* points to the container application's top-level frame window, or FALSE if *lpUIWindow* points to the container application's document-level frame window.  
   
 ### Remarks  
  This function resizes and adjusts toolbars and other user-interface elements in accordance with the new window size.  
@@ -658,7 +658,7 @@ virtual void OnShowDocument(BOOL bShow);
  Specifies whether the user interface to the document is to be shown or hidden.  
   
 ### Remarks  
- If *bShow* is **TRUE**, the default implementation activates the server application, if necessary, and causes the container application to scroll its window so that the item is visible. If *bShow* is **FALSE**, the default implementation deactivates the item through a call to `OnDeactivate`, then destroys or hides all frame windows that have been created for the document, except the first one. If no visible documents remain, the default implementation hides the server application.  
+ If *bShow* is TRUE, the default implementation activates the server application, if necessary, and causes the container application to scroll its window so that the item is visible. If *bShow* is FALSE, the default implementation deactivates the item through a call to `OnDeactivate`, then destroys or hides all frame windows that have been created for the document, except the first one. If no visible documents remain, the default implementation hides the server application.  
   
 ##  <a name="onupdatedocument"></a>  COleServerDoc::OnUpdateDocument  
  Called by the framework when saving a document that is an embedded item in a compound document.  
@@ -727,7 +727,7 @@ void UpdateAllItems(
   
 ### Parameters  
  *pSender*  
- Pointer to the item that modified the document, or **NULL** if all items are to be updated.  
+ Pointer to the item that modified the document, or NULL if all items are to be updated.  
   
  *lHint*  
  Contains information about the modification.  
@@ -736,15 +736,15 @@ void UpdateAllItems(
  Pointer to an object storing information about the modification.  
   
  *nDrawAspect*  
- Determines how the item is to be drawn. This is a value from the `DVASPECT` enumeration. This parameter can have one of the following values:  
+ Determines how the item is to be drawn. This is a value from the DVASPECT enumeration. This parameter can have one of the following values:  
   
-- `DVASPECT_CONTENT` Item is represented in such a way that it can be displayed as an embedded object inside its container.  
+- DVASPECT_CONTENT Item is represented in such a way that it can be displayed as an embedded object inside its container.  
   
-- `DVASPECT_THUMBNAIL` Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
+- DVASPECT_THUMBNAIL Item is rendered in a "thumbnail" representation so that it can be displayed in a browsing tool.  
   
-- `DVASPECT_ICON` Item is represented by an icon.  
+- DVASPECT_ICON Item is represented by an icon.  
   
-- `DVASPECT_DOCPRINT` Item is represented as if it were printed using the Print command from the File menu.  
+- DVASPECT_DOCPRINT Item is represented as if it were printed using the Print command from the File menu.  
   
 ### Remarks  
  You typically call this function after the user changes the server document. If an OLE item is linked to the document with an automatic link, the item is updated to reflect the changes. In container applications written with the Microsoft Foundation Class Library, the [OnChange](../../mfc/reference/coleclientitem-class.md#onchange) member function of `COleClientItem` is called.  

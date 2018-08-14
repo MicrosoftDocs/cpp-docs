@@ -17,14 +17,14 @@ Supports the Windows Runtime C++ Template Library infrastructure and is not inte
   
 ## Syntax  
   
-```  
+```cpp  
 struct CreatorMap;  
 ```  
   
 ## Remarks  
  Contains information about how to initialize, register, and unregister objects.  
   
- CreatorMap contains the following information:  
+ **CreatorMap** contains the following information:  
   
 -   How to initialize, register, and unregister objects.  
   
@@ -39,9 +39,9 @@ struct CreatorMap;
 |Name|Description|  
 |----------|-----------------|  
 |[CreatorMap::activationId Data Member](../windows/creatormap-activationid-data-member.md)|Represents an object ID that is identified either by a classic COM class ID or a Windows Runtime name.|  
-|[CreatorMap::factoryCache Data Member](../windows/creatormap-factorycache-data-member.md)|Stores the pointer to the factory cache for the CreatorMap.|  
-|[CreatorMap::factoryCreator Data Member](../windows/creatormap-factorycreator-data-member.md)|Creates a factory for the specified CreatorMap.|  
-|[CreatorMap::serverName Data Member](../windows/creatormap-servername-data-member.md)|Stores the server name for the CreatorMap.|  
+|[CreatorMap::factoryCache Data Member](../windows/creatormap-factorycache-data-member.md)|Stores the pointer to the factory cache for the **CreatorMap**.|  
+|[CreatorMap::factoryCreator Data Member](../windows/creatormap-factorycreator-data-member.md)|Creates a factory for the specified **CreatorMap**.|  
+|[CreatorMap::serverName Data Member](../windows/creatormap-servername-data-member.md)|Stores the server name for the **CreatorMap**.|  
   
 ## Inheritance Hierarchy  
  `CreatorMap`  

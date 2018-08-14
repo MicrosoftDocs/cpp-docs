@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 
 **Microsoft Specific**
 
-The **thread** extended storage-class modifier is used to declare a thread local variable. For the portable equivalent in C++11 and later, use the [thread_local](../cpp/storage-classes-cpp.md#thread_local) storage class specifier for portable code. On Windows **thread_local** is implemented with **__declspec(thread)**.
+The **thread** extended storage-class modifier is used to declare a thread local variable. For the portable equivalent in C++11 and later, use the [thread_local](../cpp/storage-classes-cpp.md#thread_local) storage class specifier for portable code. On Windows `thread_local` is implemented with **__declspec(thread)**.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ The **thread** extended storage-class modifier is used to declare a thread local
 
 Thread Local Storage (TLS) is the mechanism by which each thread in a multithreaded process allocates storage for thread-specific data. In standard multithreaded programs, data is shared among all threads of a given process, whereas thread local storage is the mechanism for allocating per-thread data. For a complete discussion of threads, see [Multithreading](../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
-Declarations of thread local variables must use [extended attribute syntax](../cpp/declspec.md) and the `__declspec` keyword with the **thread** keyword. For example, the following code declares an integer thread local variable and initializes it with a value:
+Declarations of thread local variables must use [extended attribute syntax](../cpp/declspec.md) and the **__declspec** keyword with the **thread** keyword. For example, the following code declares an integer thread local variable and initializes it with a value:
 
 ```cpp
 __declspec( thread ) int tls_i = 1;
@@ -82,7 +82,6 @@ Additionally, you must observe these guidelines when declaring thread local obje
 **END Microsoft Specific**
 
 ## See also
-
-[__declspec](../cpp/declspec.md)  
-[Keywords](../cpp/keywords-cpp.md)  
-[Thread Local Storage (TLS)](../parallel/thread-local-storage-tls.md)  
+ [__declspec](../cpp/declspec.md)  
+ [Keywords](../cpp/keywords-cpp.md)  
+ [Thread Local Storage (TLS)](../parallel/thread-local-storage-tls.md)  

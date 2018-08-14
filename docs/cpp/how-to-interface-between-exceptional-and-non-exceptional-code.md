@@ -152,7 +152,6 @@ int main ( int argc, char* argv[] )
         cout.copyfmt(state); // restore previous formatting  
     }  
 }  
-  
 ```  
   
 ## Calling Exceptional Code from Non-Exceptional Code  
@@ -185,10 +184,9 @@ BOOL DiffFiles2(const string& file1, const string& file2)
     }   
     return FALSE;   
 }  
-  
 ```  
   
- When you convert from exceptions to error codes, one potential issue is that error codes often don't contain the richness of information that an exception can store. To address this, you can provide a `catch` block for each specific exception type that might be thrown, and perform logging to record the details of the exception before it is converted to an error code. This approach can create a lot of code repetition if multiple functions all use the same set of `catch` blocks. A good way to avoid code repetition is by refactoring those blocks into one private utility function that implements the `try` and `catch` blocks and accepts a function object that is invoked in the `try` block. In each public function, pass the code to the utility function as a lambda expression.  
+ When you convert from exceptions to error codes, one potential issue is that error codes often don't contain the richness of information that an exception can store. To address this, you can provide a **catch** block for each specific exception type that might be thrown, and perform logging to record the details of the exception before it is converted to an error code. This approach can create a lot of code repetition if multiple functions all use the same set of **catch** blocks. A good way to avoid code repetition is by refactoring those blocks into one private utility function that implements the **try** and **catch** blocks and accepts a function object that is invoked in the **try** block. In each public function, pass the code to the utility function as a lambda expression.  
   
 ```cpp  
 template<typename Func>   
@@ -208,7 +206,6 @@ bool Win32ExceptionBoundary(Func&& f)
     }   
     return false;   
 }  
-  
 ```  
   
  The following example shows how to write the lambda expression that defines the functor. When a functor is defined "inline" by using a lambda expression, it is often easier to read than it would be if it were written as a named function object.  
@@ -228,11 +225,10 @@ bool DiffFiles3(const string& file1, const string& file2)
         return true;   
     });   
 }  
-  
 ```  
   
  For more information about lambda expressions, see [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md).  
   
-## See Also  
+## See also  
  [Errors and Exception Handling](../cpp/errors-and-exception-handling-modern-cpp.md)   
  [How to: Design for Exception Safety](../cpp/how-to-design-for-exception-safety.md)

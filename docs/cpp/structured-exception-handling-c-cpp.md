@@ -24,7 +24,7 @@ Although Windows and Visual C++ support structured exception handling (SEH), we 
  `__except` ( `expression` ) *compound-statement*  
   
 ## Remarks  
- With SEH, you can ensure that resources such as memory blocks and files are correctly if execution unexpectedly terminates. You can also handle specific problems—for example, insufficient memory—by using concise structured code that does not rely on `goto` statements or elaborate testing of return codes.  
+ With SEH, you can ensure that resources such as memory blocks and files are correctly if execution unexpectedly terminates. You can also handle specific problems—for example, insufficient memory—by using concise structured code that does not rely on **goto** statements or elaborate testing of return codes.  
   
  The try-except and try-finally statements referred to in this article are Microsoft extensions to the C language. They support SEH by enabling applications to gain control of a program after events that would otherwise terminate execution. Although SEH works with C++ source files, it's not specifically designed for C++. If you use SEH in a C++ program that you compile by using the [/EH](../build/reference/eh-exception-handling-model.md) option—together with certain modifiers—destructors for local objects are called but other execution behavior might not be what you expect. (For an illustration, see the example later in this article.) In most cases, instead of SEH we recommend that you use ISO-standard [C++ exception handling](../cpp/try-throw-and-catch-statements-cpp.md), which Visual C++ also supports. By using C++ exception handling, you can ensure that your code is more portable, and you can handle exceptions of any type.  
   
@@ -44,7 +44,7 @@ Although Windows and Visual C++ support structured exception handling (SEH), we 
   
 -   Recognize the exception and handle it.  
   
- The exception handler that recognizes the exception may not be in the function that was running when the exception occurred. In some cases, it may be in a function much higher on the stack. The currently running function and all other functions on the stack frame are terminated. During this process, the stack is "unwound;" that is, local variables of terminated functions—unless they are `static`—are cleared from the stack.  
+ The exception handler that recognizes the exception may not be in the function that was running when the exception occurred. In some cases, it may be in a function much higher on the stack. The currently running function and all other functions on the stack frame are terminated. During this process, the stack is "unwound;" that is, local variables of terminated functions—unless they are **static**—are cleared from the stack.  
   
  As it unwinds the stack, the operating system calls any termination handlers that you've written for each function. By using a termination handler, you can clean up resources that otherwise would remain open because of an abnormal termination. If you've entered a critical section, you can exit in the termination handler. If the program is going to shut down, you can perform other housekeeping tasks such as closing and removing temporary files.  
   
@@ -57,7 +57,7 @@ Although Windows and Visual C++ support structured exception handling (SEH), we 
 -   [Using Structured Exception Handling with C++](../cpp/using-structured-exception-handling-with-cpp.md)  
   
 ## Example  
- As stated earlier, destructors for local objects are called if you use SEH in a C++ program and compile it by using the **/EH** option with certain modifiers—for example, **/EHsc** and **/EHa**. However, the behavior during execution may not be what you expect if you are also using C++ exceptions. The following example demonstrates these behavioral differences.  
+ As stated earlier, destructors for local objects are called if you use SEH in a C++ program and compile it by using the `/EH` option with certain modifiers—for example, `/EHsc` and `/EHa`. However, the behavior during execution may not be what you expect if you are also using C++ exceptions. The following example demonstrates these behavioral differences.  
   
 ```cpp  
 #include <stdio.h>  
@@ -104,7 +104,6 @@ int main()
   
     return 0;  
 }  
-  
 ```  
   
  If you use **/EHsc** to compile this code but the local test control `CPPEX` is undefined, there is no execution of the `TestClass` destructor and the output looks like this:  
@@ -134,7 +133,7 @@ Executing SEH __except block
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Exception Handling](../cpp/exception-handling-in-visual-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [\<exception>](../standard-library/exception.md)   

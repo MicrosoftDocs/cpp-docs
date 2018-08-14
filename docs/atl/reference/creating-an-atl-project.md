@@ -33,5 +33,4 @@ The easiest way to create an ATL project is to use the ATL Project Wizard, locat
 ## See Also  
  [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Property Pages](../../ide/property-pages-visual-cpp.md)   
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
 

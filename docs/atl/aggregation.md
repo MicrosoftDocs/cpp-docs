@@ -16,7 +16,7 @@ There are times when an object's implementor would like to take advantage of the
   
  Aggregation means that the containing (outer) object creates the contained (inner) object as part of its creation process and the interfaces of the inner object are exposed by the outer. An object allows itself to be aggregatable or not. If it is, then it must follow certain rules for aggregation to work properly.  
   
- Primarily, all **IUnknown** method calls on the contained object must delegate to the containing object.  
+ Primarily, all `IUnknown` method calls on the contained object must delegate to the containing object.  
   
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   

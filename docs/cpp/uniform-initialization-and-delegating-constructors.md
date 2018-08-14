@@ -41,7 +41,6 @@ int main()
     class_a c3{ "yy", 4.4 };  
     class_a c3_1("zz", 5.5);  
 }  
-  
 ```  
   
  If a class has non-default constructors, the order in which class members appear in the brace initializer is the order in which the corresponding parameters appear in the constructor, not the order in which the members are declared (as with `class_a` in the previous example). Otherwise, if the type has no declared constructor, the order in which the members appear in the brace initializer is the same as the order in which they are declared; in this case, you can initialize as many of the public members as you wish, but you cannot skip any member. The following example shows the order that's used in brace initialization when there is no declared constructor:  
@@ -82,13 +81,12 @@ int main()
 }  
 ```  
   
- You can use brace initialization anywhere you would typically do initialization—for example, as a function parameter or a return value, or with the `new` keyword:  
+ You can use brace initialization anywhere you would typically do initialization—for example, as a function parameter or a return value, or with the **new** keyword:  
   
 ```cpp  
 class_d* cf = new class_d{4.5};  
 kr->add_d({ 4.5 });  
 return { 4.5 };  
-  
 ```  
   
 ## initializer_list Constructors  
@@ -108,7 +106,6 @@ initializer_list<int> ilist1{ 5, 6, 7 };
 initializer_list<int> ilist2( ilist1 );  
 if (ilist1.begin() == ilist2.begin())  
     cout << "yes" << endl; // expect "yes"  
-  
 ```  
   
  The standard library container classes, and also `string`, `wstring`, and `regex`, have `initializer_list` constructors. The following examples show how to do brace initialization with these constructors:  
@@ -169,7 +166,6 @@ int main() {
   
     class_c c1{ 1, 3, 2 };  
 }  
-  
 ```  
   
  As you step through the previous example, notice that the constructor `class_c(int, int, int)` first calls the constructor `class_c(int, int)`, which in turn calls `class_c(int)`. Each of the constructors performs only the work that is not performed by the other constructors.  
@@ -192,7 +188,6 @@ public:
     double m_double{ 1.0 };  
     string m_string;  
 };  
-  
 ```  
   
  The next example shows the use of non-static data-member initializers. Notice that if a constructor also initializes a given data member, the member initializer is overridden:  

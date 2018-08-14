@@ -201,7 +201,7 @@ void EnablePaneDoubleClick(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- If `TRUE`, enable the processing of the mouse double-click. Otherwise disable the processing of the mouse double-click.  
+ If TRUE, enable the processing of the mouse double-click. Otherwise disable the processing of the mouse double-click.  
   
 ### Remarks  
  If the status bar is enabled to process double clicks, Windows sends the WM_COMMAND notification together with a resource ID to the owner of the status bar every time that the user double clicks on the status bar pane.  
@@ -503,10 +503,10 @@ void SetPaneAnimation(
  Specifies the frame rate, in milliseconds, for the animation.  
   
  [in] *bUpdate*  
- If `TRUE`, update the pane content immediately. Otherwise, the pane content is updated when it is invalidated.  
+ If TRUE, update the pane content immediately. Otherwise, the pane content is updated when it is invalidated.  
   
 ### Remarks  
- If you want to disable the current animation, call `SetPaneAnimation` with `hImageList` set to `NULL`.  
+ If you want to disable the current animation, call `SetPaneAnimation` with `hImageList` set to NULL.  
   
 ##  <a name="setpanebackgroundcolor"></a>  CMFCStatusBar::SetPaneBackgroundColor  
  Sets the background color of the status bar pane.  
@@ -526,7 +526,7 @@ void SetPaneBackgroundColor(
  Specifies the new background color.  
   
  [in] *bUpdate*  
- If `TRUE`, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.  
+ If TRUE, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.  
   
 ##  <a name="setpaneicon"></a>  CMFCStatusBar::SetPaneIcon  
  Set the icon of the status bar pane.  
@@ -562,7 +562,7 @@ void SetPaneIcon(
  Specifies the transparent color of the bitmap that the *hBmp* indicates.  
   
 ### Remarks  
- You can pass either `HICON` or `HBITMAP` together with the transparent color to set the pane's image. If you do not want to display the image any longer, pass the `NULL` value as the image handle.  
+ You can pass either HICON or HBITMAP together with the transparent color to set the pane's image. If you do not want to display the image any longer, pass the NULL value as the image handle.  
   
  If there is any running animation that [CMFCStatusBar::SetPaneAnimation](#setpaneanimation) has set, the animation will be stopped.  
   
@@ -662,7 +662,7 @@ void SetPaneTextColor(
  Specifies the text color.  
   
  [in] *bUpdate*  
- If `TRUE`, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.  
+ If TRUE, update the pane content immediately. Otherwise, do not update the pane content until the pane is invalidated by another method.  
   
 ##  <a name="setpanewidth"></a>  CMFCStatusBar::SetPaneWidth  
  Set the width of the status bar pane.  

@@ -45,7 +45,7 @@ int main() {
 }  
 ```  
   
- In the preceding code, `multi` is a three-dimensional array of type `double`. The `p2multi` pointer points to an array of type `double` of size three. In this example, the array is used with one, two, and three subscripts. Although it is more common to specify all subscripts, as in the `cout` statement, it is sometimes useful to select a specific subset of array elements, as shown in the statements that follow `cout`.  
+ In the preceding code, `multi` is a three-dimensional array of type **double**. The `p2multi` pointer points to an array of type **double** of size three. In this example, the array is used with one, two, and three subscripts. Although it is more common to specify all subscripts, as in the `cout` statement, it is sometimes useful to select a specific subset of array elements, as shown in the statements that follow `cout`.  
   
-## See Also  
+## See also  
  [Arrays](../cpp/arrays-cpp.md)

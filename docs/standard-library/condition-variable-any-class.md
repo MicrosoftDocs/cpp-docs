@@ -88,11 +88,11 @@ void wait(Lock& Lck, Predicate Pred);
 
 ### Parameters
 
-`Lck`
+*Lck*
  A `mutex` object of any type.
 
-`Pred`
- Any expression that returns `true` or `false`.
+*Pred*
+ Any expression that returns **true** or **false**.
 
 ### Remarks
 
@@ -119,24 +119,24 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 
 ### Parameters
 
-`Lck`
+*Lck*
  A `mutex` object of any type.
 
-`Rel_time`
+*Rel_time*
  A `chrono::duration` object that specifies the amount of time before the thread wakes up.
 
-`Pred`
- Any expression that returns `true` or `false`.
+*Pred*
+ Any expression that returns **true** or **false**.
 
 ### Return Value
 
-The first method returns `cv_status::timeout` if the wait terminates when `Rel_time` has elapsed. Otherwise, the method returns `cv_status::no_timeout`.
+The first method returns `cv_status::timeout` if the wait terminates when *Rel_time* has elapsed. Otherwise, the method returns `cv_status::no_timeout`.
 
-The second method returns the value of `Pred`.
+The second method returns the value of *Pred*.
 
 ### Remarks
 
-The first method blocks until the `condition_variable_any` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#notify_one) or [notify_all](../standard-library/condition-variable-class.md#notify_all), or until the time interval `Rel_time` has elapsed. It can also wake up spuriously.
+The first method blocks until the `condition_variable_any` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#notify_one) or [notify_all](../standard-library/condition-variable-class.md#notify_all), or until the time interval *Rel_time* has elapsed. It can also wake up spuriously.
 
 The second method in effect executes the following code.
 
@@ -174,24 +174,24 @@ void wait_until(
 
 ### Parameters
 
-`Lck`
+*Lck*
  A mutex object.
 
-`Abs_time`
+*Abs_time*
  A [chrono::time_point](../standard-library/time-point-class.md) object.
 
-`Pred`
- Any expression that returns `true` or `false`.
+*Pred*
+ Any expression that returns **true** or **false**.
 
 ### Return Value
 
-Methods that return a `cv_status` type return `cv_status::timeout` if the wait terminates when `Abs_time` elapses. Otherwise, the methods return `cv_status::no_timeout`.
+Methods that return a `cv_status` type return `cv_status::timeout` if the wait terminates when *Abs_time* elapses. Otherwise, the methods return `cv_status::no_timeout`.
 
-Methods that return a `bool` return the value of `Pred`.
+Methods that return a `bool` return the value of *Pred*.
 
 ### Remarks
 
-The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#notify_one) or [notify_all](../standard-library/condition-variable-class.md#notify_all), or until `Abs_time`. It can also wake up spuriously.
+The first method blocks until the `condition_variable` object is signaled by a call to [notify_one](../standard-library/condition-variable-class.md#notify_one) or [notify_all](../standard-library/condition-variable-class.md#notify_all), or until *Abs_time*. It can also wake up spuriously.
 
 The second method in effect executes the following code.
 

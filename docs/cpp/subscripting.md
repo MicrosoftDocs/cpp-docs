@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 The subscript operator (**[ ]**), like the function-call operator, is considered a binary operator. The subscript operator must be a nonstatic member function that takes a single argument. This argument can be of any type and designates the desired array subscript.  
   
 ## Example  
- The following example demonstrates how to create a vector of type `int` that implements bounds checking:  
+ The following example demonstrates how to create a vector of type **int** that implements bounds checking:  
   
 ```cpp 
 // subscripting.cpp  
@@ -83,9 +83,9 @@ Element: [10] = 10
 ```  
   
 ## Comments  
- When `i` reaches 10 in the preceding program, `operator[]` detects that an out-of-bounds subscript is being used and issues an error message.  
+ When `i` reaches 10 in the preceding program, **operator[]** detects that an out-of-bounds subscript is being used and issues an error message.  
   
- Note that the function `operator[]` returns a reference type. This causes it to be an l-value, allowing you to use subscripted expressions on either side of assignment operators.  
+ Note that the function **operator[]** returns a reference type. This causes it to be an l-value, allowing you to use subscripted expressions on either side of assignment operators.  
   
-## See Also  
+## See also  
  [Operator Overloading](../cpp/operator-overloading.md)

@@ -17,9 +17,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```
-
 expression & expression  
-
 ```
   
 ## Remarks  
@@ -30,7 +28,7 @@ expression & expression
  Both operands to the bitwise AND operator must be of integral types. The usual arithmetic conversions covered in [Standard Conversions](standard-conversions.md), are applied to the operands.  
   
 ## Operator Keyword for &  
- The `bitand` operator is the text equivalent of **&**. There are two ways to access the `bitand` operator in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
+ The **bitand** operator is the text equivalent of **&**. There are two ways to access the **bitand** operator in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
   
 ## Example  
   
@@ -48,7 +46,7 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [C++ Built-in Operators, Precedence and Associativity](cpp-built-in-operators-precedence-and-associativity.md)  
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Bitwise Operators](../c-language/c-bitwise-operators.md)

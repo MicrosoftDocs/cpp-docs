@@ -60,22 +60,22 @@ static HANDLE CreateThread(
 ```  
   
 ### Parameters  
- `lpsa`  
+ *lpsa*  
  The security attributes for the new thread.  
   
- `dwStackSize`  
+ *dwStackSize*  
  The stack size for the new thread.  
   
- `pfnThreadProc`  
+ *pfnThreadProc*  
  The thread procedure of the new thread.  
   
- `pvParam`  
+ *pvParam*  
  The parameter to be passed to the thread procedure.  
   
- `dwCreationFlags`  
+ *dwCreationFlags*  
  The creation flags (0 or CREATE_SUSPENDED).  
   
- `pdwThreadId`  
+ *pdwThreadId*  
  [out] Address of the DWORD variable that, on success, receives the thread ID of the newly created thread.  
   
 ### Return Value  

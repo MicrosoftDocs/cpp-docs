@@ -1,7 +1,8 @@
 ---
-title: "Deploy, run, and debug Your Linux project | Microsoft Docs"
+title: "Deploy, run, and debug your C++ Linux project in Visual Studio | Microsoft Docs"
+description: "Describes how to compile, execute, and debug code on the remote target from inside a Linux C++ project in Visual Studio."
 ms.custom: ""
-ms.date: "11/06/2017"
+ms.date: "07/20/2018"
 ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: "Linux"
 ms.topic: "conceptual"
@@ -13,7 +14,7 @@ ms.workload: ["cplusplus", "linux"]
 
 # Deploy, run, and debug your Linux project
 
-Once you have created a Linux project and you have connected to the project using the [Linux Connection Manager](../linux/connect-to-your-remote-linux-computer.md), you can run and debug the project. You compile, execute, and debug the code on the remote target.
+Once you have created a Linux C++ project in Visual Studio and you have connected to the project using the [Linux Connection Manager](../linux/connect-to-your-remote-linux-computer.md), you can run and debug the project. You compile, execute, and debug the code on the remote target.
 
 There are several ways to interact with and debug your Linux project.
 

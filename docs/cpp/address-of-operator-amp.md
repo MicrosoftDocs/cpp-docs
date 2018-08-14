@@ -24,16 +24,16 @@ ms.workload: ["cplusplus"]
   
  The address-of operator can only be applied to variables with fundamental, structure, class, or union types that are declared at the file-scope level, or to subscripted array references. In these expressions, a constant expression that does not include the address-of operator can be added to or subtracted from the address-of expression.  
   
- When applied to functions or l-values, the result of the expression is a pointer type (an r-value) derived from the type of the operand. For example, if the operand is of type `char`, the result of the expression is of type pointer to `char`. The address-of operator, applied to **const** or `volatile` objects, evaluates to **const** `type` **\*** or `volatile` `type` **\***, where `type` is the type of the original object.  
+ When applied to functions or l-values, the result of the expression is a pointer type (an r-value) derived from the type of the operand. For example, if the operand is of type **char**, the result of the expression is of type pointer to **char**. The address-of operator, applied to **const** or **volatile** objects, evaluates to `const type *` or `volatile type *`, where **type** is the type of the original object.  
   
- When the address-of operator is applied to a [qualified name](http://msdn.microsoft.com/en-us/3fefb16d-8120-4627-8b3f-3d90fbdcd1df), the result depends on whether the *qualified-name* specifies a static member. If so, the result is a pointer to the type specified in the declaration of the member. If the member is not static, the result is a pointer to the member *name* of the class indicated by *qualified-class-name*. (See [Primary Expressions](../cpp/primary-expressions.md) for more about *qualified-class-name*.) The following code fragment shows how the result differs, depending on whether the member is static:  
+ When the address-of operator is applied to a qualified name, the result depends on whether the *qualified-name* specifies a static member. If so, the result is a pointer to the type specified in the declaration of the member. If the member is not static, the result is a pointer to the member *name* of the class indicated by *qualified-class-name*. (See [Primary Expressions](../cpp/primary-expressions.md) for more about *qualified-class-name*.) The following code fragment shows how the result differs, depending on whether the member is static:  
   
 ```cpp 
 // expre_Address_Of_Operator.cpp  
 // C2440 expected  
 class PTM {  
 public:  
-           int   iValue;  
+    int iValue;  
     static float fValue;  
 };  
   
@@ -69,7 +69,7 @@ int main() {
   
 ## Output  
   
-```  
+```Output  
 &d equals &rd  
 ```  
   
@@ -96,11 +96,11 @@ int main() {
   
 ## Output  
   
-```  
+```Output  
 25  
 ```  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md)   

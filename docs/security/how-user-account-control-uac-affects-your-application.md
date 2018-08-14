@@ -28,7 +28,7 @@ User Account Control (UAC) is a feature of Windows Vista in which user accounts 
   
  The first option is to modify the UAC fragment of the manifest to change the execution level to *requireAdministrator*. The application will then prompt the user for administrative credentials before it runs. For information about how to do this, see [/MANIFESTUAC (Embeds UAC information in manifest)](../build/reference/manifestuac-embeds-uac-information-in-manifest.md).  
   
- The second option is to not embed a UAC fragment into the manifest by specifying the **/MANIFESTUAC:NO** linker option. In this case, your application will run virtualized. Any changes you make to the registry or to the file system will not persist after your application has ended.  
+ The second option is to not embed a UAC fragment into the manifest by specifying the `/MANIFESTUAC:NO` linker option. In this case, your application will run virtualized. Any changes you make to the registry or to the file system will not persist after your application has ended.  
   
  The following flowchart describes how your application will run depending on whether UAC is enabled and whether the application has a UAC manifest:  
   

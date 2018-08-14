@@ -11,8 +11,8 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Definitions and Declarations (C++)
-## Microsoft Specific
- The DLL interface refers to all items (functions and data) that are known to be exported by some program in the system; that is, all items that are declared as `dllimport` or `dllexport`. All declarations included in the DLL interface must specify either the `dllimport` or `dllexport` attribute. However, the definition must specify only the `dllexport` attribute. For example, the following function definition generates a compiler error:
+**Microsoft Specific**
+ The DLL interface refers to all items (functions and data) that are known to be exported by some program in the system; that is, all items that are declared as **dllimport** or **dllexport**. All declarations included in the DLL interface must specify either the **dllimport** or **dllexport** attribute. However, the definition must specify only the **dllexport** attribute. For example, the following function definition generates a compiler error:
 
 ```
 __declspec( dllimport ) int func() {   // Error; dllimport
@@ -33,7 +33,7 @@ __declspec( dllimport ) int i = 10;  // Error; this is a definition.
 __declspec( dllexport ) int i = 10;  // Okay--export definition
 ```
 
- The use of `dllexport` implies a definition, while `dllimport` implies a declaration. You must use the `extern` keyword with `dllexport` to force a declaration; otherwise, a definition is implied. Thus, the following examples are correct:
+ The use of **dllexport** implies a definition, while **dllimport** implies a declaration. You must use the **extern** keyword with **dllexport** to force a declaration; otherwise, a definition is implied. Thus, the following examples are correct:
 
 ```
 #define DllImport   __declspec( dllimport )
@@ -66,5 +66,5 @@ void func() {
 
 **END Microsoft Specific**
 
-## See Also
+## See also
  [dllexport, dllimport](../cpp/dllexport-dllimport.md)

@@ -25,7 +25,7 @@ The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](.
  For information on how to instantiate an object, see [ref new](../windows/ref-new-gcnew-cpp-component-extensions.md).  
   
 ## Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
  The system uses the CLR *garbage collector* mechanism to determine if the object is no longer being used and can be deleted. The common language runtime maintains a heap on which it allocates objects, and uses managed references (variables) in your program indicate the location of objects on the heap. When an object is no longer used, the memory that it occupied on the heap is freed. Periodically, the garbage collector compacts the heap to better use the freed memory. Compacting the heap can move objects on the heap, which invalidates the locations refered to by managed references. However, the garbage collector is aware of the location of all managed references, and automatically updates them to indicate the current location of the objects on the heap.  
@@ -37,11 +37,10 @@ The *handle declarator* (`^`, pronounced "hat"), modifies the type [specifier](.
  For more information, see [How to: Declare Handles in Native Types](../dotnet/how-to-declare-handles-in-native-types.md).  
   
 ### Examples  
- **Example**  
   
  This sample shows how to create an instance of a reference type on the managed heap.  This sample also shows that you can initialize one handle with another, resulting in two references to same object on managed, garbage-collected heap. Notice that assigning [nullptr](../windows/nullptr-cpp-component-extensions.md) to one handle does not mark the object for garbage collection.  
   
-```  
+```cpp  
 // mcppv2_handle.cpp  
 // compile with: /clr  
 ref class MyClass {  
@@ -66,18 +65,14 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 1  
 2  
 ```  
   
- **Example**  
-  
  The following sample shows how to declare a handle to an object on the managed heap, where the type of object is a boxed value type. The sample also shows how to get the value type from the boxed object.  
   
-```  
+```cpp  
 // mcppv2_handle_2.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -98,20 +93,16 @@ int main() {
    int n = 100;  
    Test(n);  
 }  
-```  
-  
- **Output**  
+```   
   
 ```Output  
 Not a boxed int  
 100  
 ```  
   
- **Example**  
+ This sample shows that the common C++ idiom of using a `void*` pointer to point to an arbitrary object is replaced by `Object^`, which can hold a handle to any reference class. It also shows that all types, such as arrays and delegates, can be converted to an object handle.  
   
- This sample shows that the common C++ idiom of using a void* pointer to point to an arbitrary object is replaced by Object^, which can hold a handle to any reference class. It also shows that all types, such as arrays and delegates, can be converted to an object handle.  
-  
-```  
+```cpp  
 // mcppv2_handle_3.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -146,8 +137,6 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 Type is System.Collections.ArrayList  
   
@@ -156,11 +145,9 @@ Type is System.Int32
 Type is MyDel  
 ```  
   
- **Example**  
-  
  This sample shows that a handle can be dereferenced and that a member can be accessed via a dereferenced handle.  
   
-```  
+```cpp  
 // mcppv2_handle_4.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -198,19 +185,15 @@ int main() {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 Array value: 7  
   
 Cannot access array element 11, size is 10  
 ```  
   
- **Example**  
+ This sample shows that a native reference (`&`) can’t bind to an **int** member of a managed type, as the **int** might be stored in the garbage collected heap, and native references don’t track object movement in the managed heap. The fix is to use a local variable, or to change `&` to `%`, making it a tracking reference.  
   
- This sample shows that a native reference (`&`) can’t bind to an `int` member of a managed type, as the `int` might be stored in the garbage collected heap, and native references don’t track object movement in the managed heap. The fix is to use a local variable, or to change `&` to `%`, making it a tracking reference.  
-  
-```  
+```cpp  
 // mcppv2_handle_5.cpp  
 // compile with: /clr  
 ref struct A {  
@@ -231,7 +214,7 @@ int main() {
 ```  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ## See Also  
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)   

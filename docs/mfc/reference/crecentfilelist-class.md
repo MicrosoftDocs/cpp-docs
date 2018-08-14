@@ -182,7 +182,7 @@ int GetSize() const;
  The number of files in the current most recently used (MRU) file list.  
   
 ##  <a name="operator_at"></a>  CRecentFileList::operator [ ]  
- The overloaded subscript ( `[]`) operator returns a single `CString` specified by the zero-based index in *nIndex*.  
+ The overloaded subscript (`[]`) operator returns a single `CString` specified by the zero-based index in *nIndex*.  
   
 ```  
 CString& operator[ ](int nindex);

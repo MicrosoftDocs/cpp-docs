@@ -81,12 +81,12 @@ bool operator>=(CTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
   
  The object to compare.  
   
 ### Return Value  
- These operators compare two relative time values. They return **true** if the condition is true; otherwise **false**.  
+ These operators compare two relative time values. They return TRUE if the condition is true; otherwise FALSE.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#169](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_1.cpp)]  
@@ -109,29 +109,29 @@ CTimeSpan(
  *timeSpanSrc*  
  A `CTimeSpan` object that already exists.  
   
- `time`  
+ *time*  
  A **__time64_t** time value, which is the number of seconds in the time span.  
   
- `lDays`, `nHours`, `nMins`, `nSecs`  
+ *lDays*, *nHours*, *nMins*, *nSecs*  
  Days, hours, minutes, and seconds, respectively.  
   
 ### Remarks  
  All these constructors create a new `CTimeSpan` object initialized with the specified relative time. Each constructor is described below:  
   
-- **CTimeSpan( );** Constructs an uninitialized `CTimeSpan` object.  
+- `CTimeSpan( );` Constructs an uninitialized `CTimeSpan` object.  
   
-- **CTimeSpan( const CTimeSpan& );** Constructs a `CTimeSpan` object from another `CTimeSpan` value.  
+- `CTimeSpan( const CTimeSpan& );` Constructs a `CTimeSpan` object from another `CTimeSpan` value.  
   
-- **CTimeSpan( __time64_t );** Constructs a `CTimeSpan` object from a **__time64_t** type.  
+- `CTimeSpan( __time64_t );` Constructs a `CTimeSpan` object from a **__time64_t** type.  
   
-- **CTimeSpan( LONG**, **int, int, int );** Constructs a `CTimeSpan` object from components with each component constrained to the following ranges:  
+- `CTimeSpan( LONG, int, int, int );` Constructs a `CTimeSpan` object from components with each component constrained to the following ranges:  
   
     |Component|Range|  
     |---------------|-----------|  
-    |`lDays`|0-25,000 (approximately)|  
-    |`nHours`|0-23|  
-    |`nMins`|0-59|  
-    |`nSecs`|0-59|  
+    |*lDays*|0-25,000 (approximately)|  
+    |*nHours*|0-23|  
+    |*nMins*|0-59|  
+    |*nSecs*|0-59|  
   
  Note that the Debug version of the Microsoft Foundation Class Library asserts if one or more of the time-day components is out of range. It is your responsibility to validate the arguments prior to calling.  
   
@@ -148,8 +148,8 @@ CString Format(UINT nID) const;
 ```  
   
 ### Parameters  
- `pFormat`, `pszFormat`  
- A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent ( `%`) sign, are replaced by the corresponding `CTimeSpan` component. Other characters in the formatting string are copied unchanged to the returned string. The value and meaning of the formatting codes for **Format** are listed below:  
+ *pFormat*, *pszFormat*  
+ A formatting string similar to the `printf` formatting string. Formatting codes, preceded by a percent (`%`) sign, are replaced by the corresponding `CTimeSpan` component. Other characters in the formatting string are copied unchanged to the returned string. The value and meaning of the formatting codes for `Format` are listed below:  
   
 - **%D** Total days in this `CTimeSpan`  
   
@@ -161,7 +161,7 @@ CString Format(UINT nID) const;
   
 - **%%** Percent sign  
   
- `nID`  
+ *nID*  
  The ID of the string that identifies this format.  
   
 ### Return Value  
@@ -184,7 +184,7 @@ LONGLONG GetDays() const throw();
  Returns the number of complete 24-hour days in the time span. This value may be negative if the time span is negative.  
   
 ### Remarks  
- Note that Daylight Savings Time can cause `GetDays` to return a potentially surprising result. For example, when DST is in effect, **GetDays** reports the number of days between April 1 and May 1 as 29, not 30, because one day in April is shortened by an hour and therefore does not count as a complete day.  
+ Note that Daylight Savings Time can cause `GetDays` to return a potentially surprising result. For example, when DST is in effect, `GetDays` reports the number of days between April 1 and May 1 as 29, not 30, because one day in April is shortened by an hour and therefore does not count as a complete day.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#164](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_4.cpp)]  
@@ -286,7 +286,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  The value to add to the `CTimeSpan` object.  
   
 ### Return Value  
@@ -307,7 +307,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 ```  
   
 ### Parameters  
- `span`  
+ *span*  
  The value to add to the `CTimeSpan` object.  
   
 ### Return Value  
@@ -331,7 +331,7 @@ CArchive& Serialize64(CArchive& ar);
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  The `CArchive` object that you want to update.  
   
 ### Return Value  

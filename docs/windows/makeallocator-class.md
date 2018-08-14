@@ -17,8 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
-  
+```cpp  
 template<  
    typename T,  
    bool hasWeakReferenceSupport =   
@@ -32,19 +31,19 @@ template<typename T>
 class MakeAllocator<T, true>;  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  A type name.  
   
- `hasWeakReferenceSupport`  
- `true` to allocate memory for an object that supports weak references; `false` to allocate memory for an object that doesn't support weak references.  
+ *hasWeakReferenceSupport*  
+ **true** to allocate memory for an object that supports weak references; **false** to allocate memory for an object that doesn't support weak references.  
   
 ## Remarks  
  Allocates memory for an activatable class, with or without weak reference support.  
   
- Override the MakeAllocator class to implement a user-defined memory allocation model.  
+ Override the **MakeAllocator** class to implement a user-defined memory allocation model.  
   
- MakeAllocator is typically used to prevent memory leaks if an object throws during construction.  
+ **MakeAllocator** is typically used to prevent memory leaks if an object throws during construction.  
   
 ## Members  
   
@@ -52,15 +51,15 @@ class MakeAllocator<T, true>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[MakeAllocator::MakeAllocator Constructor](../windows/makeallocator-makeallocator-constructor.md)|Initializes a new instance of the MakeAllocator class.|  
-|[MakeAllocator::~MakeAllocator Destructor](../windows/makeallocator-tilde-makeallocator-destructor.md)|Deinitializes the current instance of the MakeAllocator class.|  
+|[MakeAllocator::MakeAllocator Constructor](../windows/makeallocator-makeallocator-constructor.md)|Initializes a new instance of the **MakeAllocator** class.|  
+|[MakeAllocator::~MakeAllocator Destructor](../windows/makeallocator-tilde-makeallocator-destructor.md)|Deinitializes the current instance of the **MakeAllocator** class.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[MakeAllocator::Allocate Method](../windows/makeallocator-allocate-method.md)|Allocates memory and associates it with the current MakeAllocator object.|  
-|[MakeAllocator::Detach Method](../windows/makeallocator-detach-method.md)|Disassociates memory allocated by the [Allocate](../windows/makeallocator-allocate-method.md) method from the current MakeAllocator object.|  
+|[MakeAllocator::Allocate Method](../windows/makeallocator-allocate-method.md)|Allocates memory and associates it with the current **MakeAllocator** object.|  
+|[MakeAllocator::Detach Method](../windows/makeallocator-detach-method.md)|Disassociates memory allocated by the [Allocate](../windows/makeallocator-allocate-method.md) method from the current **MakeAllocator** object.|  
   
 ## Inheritance Hierarchy  
  `MakeAllocator`  

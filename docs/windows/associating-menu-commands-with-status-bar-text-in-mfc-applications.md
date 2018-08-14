@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Associating Menu Commands with Status Bar Text in MFC Applications
-Your application can display descriptive text for each of the menu commands a user may select. You do this by assigning a text string to each menu command using the **Prompt** property in the Properties window. If you have a string in the [string table](../windows/string-editor.md) whose ID is the same as the command, an MFC application will automatically display this string resource in the status bar of the running application when a user hovers over a menu item.  
+Your application can display descriptive text for each of the menu commands a user may select. You do this by assigning a text string to each menu command using the **Prompt** property in the **Properties** window. If you have a string in the [string table](../windows/string-editor.md) whose ID is the same as the command, an MFC application will automatically display this string resource in the status bar of the running application when a user hovers over a menu item.  
   
 ### To associate a menu command with a status bar text string  
   
@@ -20,10 +20,7 @@ Your application can display descriptive text for each of the menu commands a us
   
 2.  In the [Properties Window](/visualstudio/ide/reference/properties-window), type the associated status bar text in the **Prompt** box.  
   
-
-  
- **Requirements**  
-  
+## Requirements  
  MFC  
   
 ## See Also  

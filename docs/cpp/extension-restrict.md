@@ -13,20 +13,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # __restrict
-Like the **__declspec ( [restrict](../cpp/restrict.md) )** modifier, the `__restrict` keyword indicates that a symbol is not aliased in the current scope. The `__restrict` keyword differs from the `__declspec ( restrict )` modifier in the following ways:  
+Like the **__declspec ( [restrict](../cpp/restrict.md) )** modifier, the **__restrict** keyword indicates that a symbol is not aliased in the current scope. The **__restrict** keyword differs from the `__declspec ( restrict )` modifier in the following ways:  
   
--   The `__restrict` keyword is valid only on variables, and `__declspec ( restrict )` is only valid on function declarations and definitions.  
+-   The **__restrict** keyword is valid only on variables, and `__declspec ( restrict )` is only valid on function declarations and definitions.  
   
--   `__restrict` is similar to `restrict` from the C99 spec, but `__restrict` can be used in C++ or C programs.  
+-   **__restrict** is similar to **restrict** from the C99 spec, but **__restrict** can be used in C++ or C programs.  
   
--   When `__restrict` is used, the compiler will not propagate the no-alias property of a variable. That is, if you assign a `__restrict` variable to a non-`__restrict` variable, the compiler will still allow the non-__restrict variable to be aliased. This is different from the behavior of the `restrict` keyword from the C99 specification.  
+-   When **__restrict** is used, the compiler will not propagate the no-alias property of a variable. That is, if you assign a **__restrict** variable to a non-**__restrict** variable, the compiler will still allow the non-__restrict variable to be aliased. This is different from the behavior of the **restrict** keyword from the C99 specification.  
   
  Generally, if you affect the behavior of an entire function, it is better to use `__declspec ( restrict )` than the keyword.  
   
- In Visual Studio 2015 and later, `__restrict` can be used on C++ references.  
+ In Visual Studio 2015 and later, **__restrict** can be used on C++ references.  
   
 > [!NOTE]
->  When used on a variable that also has the [volatile](../cpp/volatile-cpp.md) keyword, `volatile` will take precedence.  
+>  When used on a variable that also has the [volatile](../cpp/volatile-cpp.md) keyword, **volatile** will take precedence.  
   
 ## Example  
   
@@ -52,5 +52,5 @@ union z {
 };  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

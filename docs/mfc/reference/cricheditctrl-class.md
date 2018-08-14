@@ -257,7 +257,7 @@ virtual BOOL Create(
  Specifies the edit control's size and position. Can be a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](../../mfc/reference/rect-structure1.md) structure.  
   
  *pParentWnd*  
- Specifies the edit control's parent window (often a [CDialog](../../mfc/reference/cdialog-class.md)). It must not be **NULL**.  
+ Specifies the edit control's parent window (often a [CDialog](../../mfc/reference/cdialog-class.md)). It must not be NULL.  
   
  *nID*  
  Specifies the edit control's ID.  
@@ -276,15 +276,15 @@ virtual BOOL Create(
   
  Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to an edit control.  
   
-- **WS_CHILD** Always.  
+- WS_CHILD Always.  
   
-- **WS_VISIBLE** Usually.  
+- WS_VISIBLE Usually.  
   
-- **WS_DISABLED** Rarely.  
+- WS_DISABLED Rarely.  
   
-- **WS_GROUP** To group controls.  
+- WS_GROUP To group controls.  
   
-- **WS_TABSTOP** To include edit control in the tabbing order.  
+- WS_TABSTOP To include edit control in the tabbing order.  
   
  For more information about window styles, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
   
@@ -414,7 +414,7 @@ long FindText(
  Zero-based character position of the next match; - 1 if there are no more matches.  
   
 ### Remarks  
- You can search either up or down by setting the proper range parameters in the [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure within the **FINDTEXTEX** structure.  
+ You can search either up or down by setting the proper range parameters in the [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure within the `FINDTEXTEX` structure.  
   
  For more information, see [EM_FINDTEXTEX](http://msdn.microsoft.com/library/windows/desktop/bb788011) message and [FINDTEXTEX](http://msdn.microsoft.com/library/windows/desktop/bb787909) structure in the Windows SDK.  
   
@@ -432,7 +432,7 @@ DWORD FindWordBreak(
   
 ### Parameters  
  *nCode*  
- Indicates the action to take. For a list of possible values, see the description for the parameter *code* in **EM_FINDWORDBREAK** in the Windows SDK.  
+ Indicates the action to take. For a list of possible values, see the description for the parameter *code* in EM_FINDWORDBREAK in the Windows SDK.  
   
  *nStart*  
  The zero-based character position from which to start.  
@@ -454,10 +454,10 @@ long FormatRange(
   
 ### Parameters  
  *pfr*  
- Pointer to the [FORMATRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787911) structure which contains information about the output device. **NULL** indicates that cached information within the rich edit control can be freed.  
+ Pointer to the [FORMATRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787911) structure which contains information about the output device. NULL indicates that cached information within the rich edit control can be freed.  
   
  *bDisplay*  
- Indicates if the text should be rendered. If **FALSE**, the text is just measured.  
+ Indicates if the text should be rendered. If FALSE, the text is just measured.  
   
 ### Return Value  
  The index of the last character that fits in the region plus one.  
@@ -498,15 +498,15 @@ DWORD GetDefaultCharFormat(CHARFORMAT& cf) const;  DWORD GetDefaultCharFormat(CH
   
 ### Parameters  
  *cf*  
- In the first version, a pointer to a **CHARFORMAT** structure holding the default character formatting attributes.  
+ In the first version, a pointer to a `CHARFORMAT` structure holding the default character formatting attributes.  
   
- In the second version, a pointer to a **CHARFORMAT2** structure, which is a Rich Edit 2.0 extension to the **CHARFORMAT** structure, holding the default character formatting attributes.  
+ In the second version, a pointer to a `CHARFORMAT2` structure, which is a Rich Edit 2.0 extension to the `CHARFORMAT` structure, holding the default character formatting attributes.  
   
 ### Return Value  
- The **dwMask** data member of *cf*. It specified the default character formatting attributes.  
+ The `dwMask` data member of *cf*. It specified the default character formatting attributes.  
   
 ### Remarks  
- For more information, see the **EM_GETCHARFORMAT** message and the **CHARFORMAT** and **CHARFORMAT2** structures in the Windows SDK.  
+ For more information, see the EM_GETCHARFORMAT message and the `CHARFORMAT` and `CHARFORMAT2` structures in the Windows SDK.  
   
 ### Example  
   See the example for [SetDefaultCharFormat](#setdefaultcharformat).  
@@ -553,7 +553,7 @@ IRichEditOle* GetIRichEditOle() const;
 ```  
   
 ### Return Value  
- Pointer to the [IRichEditOle](http://msdn.microsoft.com/library/windows/desktop/bb774306) interface that can be used to access this `CRichEditCtrl` object's OLE functionality; **NULL** if the interface is not accessible.  
+ Pointer to the [IRichEditOle](http://msdn.microsoft.com/library/windows/desktop/bb774306) interface that can be used to access this `CRichEditCtrl` object's OLE functionality; NULL if the interface is not accessible.  
   
 ### Remarks  
  Use this interface to access this `CRichEditCtrl` object's OLE functionality.  
@@ -671,15 +671,15 @@ DWORD GetParaFormat(PARAFORMAT& pf) const;  DWORD GetParaFormat(PARAFORMAT2& pf)
  *pf*  
  In the first version, a pointer to a [PARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787940) structure to hold the paragraph formatting attributes of the current selection.  
   
- In the second version, a pointer to a [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure, which is a Rich Edit 2.0 extension to the **PARAFORMAT** structure, holding the default character formatting attributes.  
+ In the second version, a pointer to a [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure, which is a Rich Edit 2.0 extension to the `PARAFORMAT` structure, holding the default character formatting attributes.  
   
 ### Return Value  
- The **dwMask** data member of *pf*. It specifies the paragraph formatting attributes that are consistent throughout the current selection.  
+ The `dwMask` data member of *pf*. It specifies the paragraph formatting attributes that are consistent throughout the current selection.  
   
 ### Remarks  
  If more than one paragraph is selected, *pf* receives the attributes of the first selected paragraph. The return value specifies which attributes are consistent throughout the selection.  
   
- For more information, see the [EM_GETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774182) message and the **PARAFORMAT** and **PARAFORMAT2** structures in the Windows SDK.  
+ For more information, see the [EM_GETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774182) message and the `PARAFORMAT` and `PARAFORMAT2` structures in the Windows SDK.  
   
 ### Example  
   See the example for [CRichEditCtrl::SetParaFormat](#setparaformat).  
@@ -762,11 +762,11 @@ void GetSel(
 ### Remarks  
  The two forms of this function provide alternate ways to get the bounds for the selection. Brief descriptions of these forms follow:  
   
-- **GetSel(** `cr` **)** This form uses the **CHARRANGE** structure with its **cpMin** and **cpMax** members to return the bounds.  
+- **GetSel(** `cr` **)** This form uses the `CHARRANGE` structure with its `cpMin` and `cpMax` members to return the bounds.  
   
 - **GetSel(** `nStartChar` **,** `nEndChar` **)** This form returns the bounds in the parameters *nStartChar* and *nEndChar*.  
   
- The selection includes everything if the beginning ( **cpMin** or *nStartChar*) is 0 and the end ( **cpMax** or *nEndChar*) is - 1.  
+ The selection includes everything if the beginning (`cpMin` or *nStartChar*) is 0 and the end (`cpMax` or *nEndChar*) is - 1.  
   
  For more information, see [EM_EXGETSEL](http://msdn.microsoft.com/library/windows/desktop/bb788001) message and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure in the Windows SDK.  
   
@@ -784,15 +784,15 @@ DWORD GetSelectionCharFormat(CHARFORMAT& cf) const;  DWORD GetSelectionCharForma
  *cf*  
  In the first version, a pointer to a [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) structure to receive the character formatting attributes of the current selection.  
   
- In the second version, a pointer to a [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure, which is a Rich Edit 2.0 extension to the **CHARFORMAT** structure to receive the character formatting attributes of the current selection.  
+ In the second version, a pointer to a [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure, which is a Rich Edit 2.0 extension to the `CHARFORMAT` structure to receive the character formatting attributes of the current selection.  
   
 ### Return Value  
- The **dwMask** data member of *cf*. It specifies the character formatting attributes that are consistent throughout the current selection.  
+ The `dwMask` data member of *cf*. It specifies the character formatting attributes that are consistent throughout the current selection.  
   
 ### Remarks  
  The *cf* parameter receives the attributes of the first character in the current selection. The return value specifies which attributes are consistent throughout the selection.  
   
- For more information, see the [EM_GETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb788026) message and the **CHARFORMAT** and **CHARFORMAT2** structures in the Windows SDK.  
+ For more information, see the [EM_GETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb788026) message and the `CHARFORMAT` and `CHARFORMAT2` structures in the Windows SDK.  
   
 ### Example  
   See the example for [SetSelectionCharFormat](#setselectioncharformat).  
@@ -807,15 +807,15 @@ WORD GetSelectionType() const;
 ### Return Value  
  Flags indicating the contents of the current selection. A combination of the following flags:  
   
-- `SEL_EMPTY` Indicates that there is no current selection.  
+- SEL_EMPTY Indicates that there is no current selection.  
   
-- `SEL_TEXT` Indicates that the current selection contains text.  
+- SEL_TEXT Indicates that the current selection contains text.  
   
-- `SEL_OBJECT` Indicates that the current selection contains at least one OLE item.  
+- SEL_OBJECT Indicates that the current selection contains at least one OLE item.  
   
-- `SEL_MULTICHAR` Indicates that the current selection contains more than one character of text.  
+- SEL_MULTICHAR Indicates that the current selection contains more than one character of text.  
   
-- `SEL_MULTIOBJECT` Indicates that the current selection contains more than one OLE object.  
+- SEL_MULTIOBJECT Indicates that the current selection contains more than one OLE object.  
   
 ### Remarks  
  For more information, see [EM_SELECTIONTYPE](http://msdn.microsoft.com/library/windows/desktop/bb774223) in the Windows SDK.  
@@ -882,7 +882,7 @@ long GetTextLengthEx(
  Code page for translation (CP_ACP for ANSI Code Page, 1200 for Unicode).  
   
 ### Return Value  
- The number of characters or bytes in the edit control. If incompatible flags were set in *dwFlags*, this member function returns `E_INVALIDARG`.  
+ The number of characters or bytes in the edit control. If incompatible flags were set in *dwFlags*, this member function returns E_INVALIDARG.  
   
 ### Remarks  
  `GetTextLengthEx` provides additional ways of determining the length of the text. It supports the Rich Edit 2.0 functionality. See [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the Windows SDKfor more information.  
@@ -962,13 +962,13 @@ void HideSelection(
   
 ### Parameters  
  *bHide*  
- Indicates if the selection should be shown or hidden, **TRUE** to hide the selection.  
+ Indicates if the selection should be shown or hidden, TRUE to hide the selection.  
   
  *bPerm*  
  Indicates if this change in visibility for the selection should be permanent.  
   
 ### Remarks  
- When *bPerm* is **TRUE**, it changes the `ECO_NOHIDESEL` option for this `CRichEditCtrl` object. For a brief description of this option, see [SetOptions](#setoptions). You can use this function to set all the options for this `CRichEditCtrl` object.  
+ When *bPerm* is TRUE, it changes the ECO_NOHIDESEL option for this `CRichEditCtrl` object. For a brief description of this option, see [SetOptions](#setoptions). You can use this function to set all the options for this `CRichEditCtrl` object.  
   
  For more information, see [EM_HIDESELECTION](http://msdn.microsoft.com/library/windows/desktop/bb774210) in the Windows SDK.  
   
@@ -1053,7 +1053,7 @@ int LineLength(int nLine = -1) const;
  Specifies the character index of a character in the line whose length is to be retrieved. If this parameter is -1, the length of the current line (the line that contains the caret) is returned, not including the length of any selected text within the line. When `LineLength` is called for a single-line edit control, this parameter is ignored.  
   
 ### Return Value  
- When `LineLength` is called for a multiple-line edit control, the return value is the length (in `TCHAR`) of the line specified by *nLine*.  It does not include the carriage-return character at the end of the line. When `LineLength` is called for a single-line edit control, the return value is the length (in `TCHAR`) of the text in the edit control. If nLine is greater than the number of characters in the control, the return value is zero.
+ When `LineLength` is called for a multiple-line edit control, the return value is the length (in TCHAR) of the line specified by *nLine*.  It does not include the carriage-return character at the end of the line. When `LineLength` is called for a single-line edit control, the return value is the length (in TCHAR) of the text in the edit control. If nLine is greater than the number of characters in the control, the return value is zero.
   
 ### Remarks  
  Use the [LineIndex](#lineindex) member function to retrieve a character index for a given line number within this `CRichEditCtrl` object.  
@@ -1077,7 +1077,7 @@ void LineScroll(
  Specifies the number of lines to scroll vertically.  
   
  *nChars*  
- Specifies the number of character positions to scroll horizontally. This value is ignored if the rich edit control has either the **ES_RIGHT** or **ES_CENTER** style. [Edit styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles) are specified in [Create](#create).  
+ Specifies the number of character positions to scroll horizontally. This value is ignored if the rich edit control has either the ES_RIGHT or ES_CENTER style. [Edit styles](../../mfc/reference/styles-used-by-mfc.md#edit-styles) are specified in [Create](#create).  
   
 ### Remarks  
  The edit control does not scroll vertically past the last line of text in the edit control. If the current line plus the number of lines specified by *nLines* exceeds the total number of lines in the edit control, the value is adjusted so that the last line of the edit control is scrolled to the top of the edit-control window.  
@@ -1176,7 +1176,7 @@ void ReplaceSel(
  Pointer to a null-terminated string containing the replacement text.  
   
  *bCanUndo*  
- To specify that this function can be undone, set the value of this parameter to **TRUE**. The default value is **FALSE**.  
+ To specify that this function can be undone, set the value of this parameter to TRUE. The default value is FALSE.  
   
 ### Remarks  
  To replace all the text in this `CRichEditCtrl` object, use [CWnd::SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext).  
@@ -1191,7 +1191,7 @@ void ReplaceSel(
   See the example for [LineIndex](#lineindex).  
   
 ##  <a name="requestresize"></a>  CRichEditCtrl::RequestResize  
- Forces this `CRichEditCtrl` object to send **EN_REQUESTRESIZE** notification messages to its parent window.  
+ Forces this `CRichEditCtrl` object to send EN_REQUESTRESIZE notification messages to its parent window.  
   
 ```  
 void RequestResize();
@@ -1211,7 +1211,7 @@ BOOL SetAutoURLDetect(BOOL bEnable = TRUE);
   
 ### Parameters  
  *bEnable*  
- Specifies whether the control is set to automatically detect a URL. If **TRUE**, it is enabled. If **FALSE**, it is disabled.  
+ Specifies whether the control is set to automatically detect a URL. If TRUE, it is enabled. If FALSE, it is disabled.  
   
 ### Return Value  
  Zero if successful, otherwise nonzero. For example, the message may fail due to insufficient memory.  
@@ -1220,7 +1220,7 @@ BOOL SetAutoURLDetect(BOOL bEnable = TRUE);
  If enabled, the rich edit control will scan the text to determine if it matches a standard URL format. For a list of these URL formats, see [EM_AUTOURLDETECT](http://msdn.microsoft.com/library/windows/desktop/bb787991) in the Windows SDK.  
   
 > [!NOTE]
->  Do not set `SetAutoURLDetect` to **TRUE** if your edit control uses the **CFE_LINK** effect for text other than URLs. `SetAutoURLDetect` enables this effect for URLs and disables it for all other text. See [EN_LINK](http://msdn.microsoft.com/library/windows/desktop/bb787970) for more information about the **CFE_LINK** effect.  
+>  Do not set `SetAutoURLDetect` to TRUE if your edit control uses the CFE_LINK effect for text other than URLs. `SetAutoURLDetect` enables this effect for URLs and disables it for all other text. See [EN_LINK](http://msdn.microsoft.com/library/windows/desktop/bb787970) for more information about the CFE_LINK effect.  
   
 ##  <a name="setbackgroundcolor"></a>  CRichEditCtrl::SetBackgroundColor  
  Sets the background color for this `CRichEditCtrl` object.  
@@ -1233,10 +1233,10 @@ COLORREF SetBackgroundColor(
   
 ### Parameters  
  *bSysColor*  
- Indicates if the background color should be set to the system value. If this value is **TRUE**, *cr* is ignored.  
+ Indicates if the background color should be set to the system value. If this value is TRUE, *cr* is ignored.  
   
  *cr*  
- The requested background color. Used only if *bSysColor* is **FALSE**.  
+ The requested background color. Used only if *bSysColor* is FALSE.  
   
 ### Return Value  
  The previous background color for this `CRichEditCtrl` object.  
@@ -1261,15 +1261,15 @@ BOOL SetDefaultCharFormat(CHARFORMAT2& cf);
  *cf*  
  In the first version, a pointer to a [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) structure containing the new default character formatting attributes.  
   
- In the second version, a pointer to a [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure, which is a Rich Edit 2.0 extension to the **CHARFORMAT** structure, containing the default character formatting attributes.  
+ In the second version, a pointer to a [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure, which is a Rich Edit 2.0 extension to the `CHARFORMAT` structure, containing the default character formatting attributes.  
   
 ### Return Value  
  Nonzero if successful; otherwise, 0.  
   
 ### Remarks  
- Only the attributes specified by the **dwMask** member of *cf* are changed by this function.  
+ Only the attributes specified by the `dwMask` member of *cf* are changed by this function.  
   
- For more information, see the [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and the **CHARFORMAT** and **CHARFORMAT2** structures in the Windows SDK.  
+ For more information, see the [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and the `CHARFORMAT` and `CHARFORMAT2` structures in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CRichEditCtrl#25](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_25.cpp)]  
@@ -1305,7 +1305,7 @@ void SetModify(BOOL bModified = TRUE);
   
 ### Parameters  
  *bModified*  
- A value of **TRUE** indicates that the text has been modified, and a value of **FALSE** indicates it is unmodified. By default, the modified flag is set.  
+ A value of TRUE indicates that the text has been modified, and a value of FALSE indicates it is unmodified. By default, the modified flag is set.  
   
 ### Remarks  
  The modified flag indicates whether or not the text within the edit control has been modified. It is automatically set whenever the user changes the text. Its value can be retrieved with the [GetModify](#getmodify) member function.  
@@ -1316,7 +1316,7 @@ void SetModify(BOOL bModified = TRUE);
   See the example for [GetModify](#getmodify).  
   
 ##  <a name="setolecallback"></a>  CRichEditCtrl::SetOLECallback  
- Gives this `CRichEditCtrl` object an **IRichEditOleCallback** object to use to access OLE-related resources and information.  
+ Gives this `CRichEditCtrl` object an `IRichEditOleCallback` object to use to access OLE-related resources and information.  
   
 ```  
 BOOL SetOLECallback(IRichEditOleCallback* pCallback);
@@ -1347,13 +1347,13 @@ void SetOptions(
  *wOp*  
  Indicates the type of operation. One of the following values:  
   
-- `ECOOP_SET` Set the options to those specified by *dwFlags*.  
+- ECOOP_SET Set the options to those specified by *dwFlags*.  
   
-- `ECOOP_OR` Combine the current options with those specified by *dwFlags*.  
+- ECOOP_OR Combine the current options with those specified by *dwFlags*.  
   
-- `ECOOP_AND` Retain only those current options that are also specified by *dwFlags*.  
+- ECOOP_AND Retain only those current options that are also specified by *dwFlags*.  
   
-- `ECOOP_XOR` Logically exclusive OR the current options with those specified by *dwFlags*.  
+- ECOOP_XOR Logically exclusive OR the current options with those specified by *dwFlags*.  
   
  *dwFlags*  
  Rich edit options. The flag values are listed in the Remarks section.  
@@ -1361,21 +1361,21 @@ void SetOptions(
 ### Remarks  
  The options can be a combination of the following values:  
   
-- `ECO_AUTOWORDSELECTION` Automatic word selection on double-click.  
+- ECO_AUTOWORDSELECTION Automatic word selection on double-click.  
   
-- `ECO_AUTOVSCROLL` Automatically scrolls text to the right by 10 characters when the user types a character at the end of the line. When the user presses the ENTER key, the control scrolls all text back to position zero.  
+- ECO_AUTOVSCROLL Automatically scrolls text to the right by 10 characters when the user types a character at the end of the line. When the user presses the ENTER key, the control scrolls all text back to position zero.  
   
-- `ECO_AUTOHSCROLL` Automatically scrolls text up one page when the user presses the ENTER key on the last line.  
+- ECO_AUTOHSCROLL Automatically scrolls text up one page when the user presses the ENTER key on the last line.  
   
-- `ECO_NOHIDESEL` Negates the default behavior for an edit control. The default behavior hides the selection when the control loses the input focus and shows the selection when the control receives the input focus. If you specify `ECO_NOHIDESEL`, the selected text is inverted, even if the control does not have the focus.  
+- ECO_NOHIDESEL Negates the default behavior for an edit control. The default behavior hides the selection when the control loses the input focus and shows the selection when the control receives the input focus. If you specify ECO_NOHIDESEL, the selected text is inverted, even if the control does not have the focus.  
   
-- `ECO_READONLY` Prevents the user from typing or editing text in the edit control.  
+- ECO_READONLY Prevents the user from typing or editing text in the edit control.  
   
-- `ECO_WANTRETURN` Specifies that a carriage return be inserted when the user presses the ENTER key while entering text into a multiple-line rich edit control in a dialog box. If you do not specify this style, pressing the ENTER key sends a command to the rich edit control's parent window, which mimics clicking the parent window's default button (for example, the OK button in a dialog box). This style has no effect on a single-line edit control.  
+- ECO_WANTRETURN Specifies that a carriage return be inserted when the user presses the ENTER key while entering text into a multiple-line rich edit control in a dialog box. If you do not specify this style, pressing the ENTER key sends a command to the rich edit control's parent window, which mimics clicking the parent window's default button (for example, the OK button in a dialog box). This style has no effect on a single-line edit control.  
   
-- `ECO_SAVESEL` Preserves the selection when the control loses the focus. By default, the entire contents of the control are selected when it regains the focus.  
+- ECO_SAVESEL Preserves the selection when the control loses the focus. By default, the entire contents of the control are selected when it regains the focus.  
   
-- `ECO_VERTICAL` Draws text and objects in a vertical direction. Available for Asian languages only.  
+- ECO_VERTICAL Draws text and objects in a vertical direction. Available for Asian languages only.  
   
  For more information, see [EM_SETOPTIONS](http://msdn.microsoft.com/library/windows/desktop/bb774254) in the Windows SDK.  
   
@@ -1394,15 +1394,15 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
  *pf*  
  In the first version, a pointer to a [PARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787940) structure containing the new default paragraph formatting attributes.  
   
- In the second version, a pointer to a [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure, which is a Rich Edit 2.0 extension to the **PARAFORMAT** structure, holding the default character formatting attributes.  
+ In the second version, a pointer to a [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure, which is a Rich Edit 2.0 extension to the `PARAFORMAT` structure, holding the default character formatting attributes.  
   
 ### Return Value  
  Nonzero if successful; otherwise, 0.  
   
 ### Remarks  
- Only the attributes specified by the **dwMask** member of *pf* are changed by this function.  
+ Only the attributes specified by the `dwMask` member of *pf* are changed by this function.  
   
- For more information, see the [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and the **PARAFORMAT** and **PARAFORMAT2** structures in the Windows SDK.  
+ For more information, see the [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and the `PARAFORMAT` and `PARAFORMAT2` structures in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CRichEditCtrl#28](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_28.cpp)]  
@@ -1430,7 +1430,7 @@ BOOL SetPunctuation(
  This member function is available for only Asian-language versions of the operating system.  
   
 ##  <a name="setreadonly"></a>  CRichEditCtrl::SetReadOnly  
- Changes the `ECO_READONLY` option for this `CRichEditCtrl` object.  
+ Changes the ECO_READONLY option for this `CRichEditCtrl` object.  
   
 ```  
 BOOL SetReadOnly(BOOL bReadOnly = TRUE);
@@ -1494,11 +1494,11 @@ void SetSel(CHARRANGE& cr);
 ### Remarks  
  The two forms of this function provide alternate ways to set the bounds for the selection. Brief descriptions of these forms follow:  
   
-- **SetSel(** `cr` **)** This form uses the **CHARRANGE** structure with its **cpMin** and **cpMax** members to set the bounds.  
+- **SetSel(** `cr` **)** This form uses the `CHARRANGE` structure with its `cpMin` and `cpMax` members to set the bounds.  
   
 - **SetSel(** `nStartChar` **,** `nEndChar` **)** This form use the parameters *nStartChar* and *nEndChar* to set the bounds.  
   
- The caret is placed at the end of the selection indicated by the greater of the start ( **cpMin** or *nStartChar*) and end ( **cpMax** or *nEndChar*) indices. This function scrolls the contents of the `CRichEditCtrl` so that the caret is visible.  
+ The caret is placed at the end of the selection indicated by the greater of the start (`cpMin` or *nStartChar*) and end (`cpMax` or *nEndChar*) indices. This function scrolls the contents of the `CRichEditCtrl` so that the caret is visible.  
   
  To select all the text in this `CRichEditCtrl` object, call `SetSel` with a start index of 0 and an end index of - 1.  
   
@@ -1519,15 +1519,15 @@ BOOL SetSelectionCharFormat(CHARFORMAT2& cf);
  *cf*  
  In the first version, a pointer to a [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) structure containing the new character formatting attributes for the current selection.  
   
- In the second version, a pointer to a [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure, which is a Rich Edit 2.0 extension to the **CHARFORMAT** structure, containing the new character formatting attributes for the current selection.  
+ In the second version, a pointer to a [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure, which is a Rich Edit 2.0 extension to the `CHARFORMAT` structure, containing the new character formatting attributes for the current selection.  
   
 ### Return Value  
  Nonzero if successful; otherwise, 0.  
   
 ### Remarks  
- Only the attributes specified by the **dwMask** member of *cf* are changed by this function.  
+ Only the attributes specified by the `dwMask` member of *cf* are changed by this function.  
   
- For more information, see the [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) and the **CHARFORMAT** and **CHARFORMAT2** structures in the Windows SDK.  
+ For more information, see the [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) and the `CHARFORMAT` and `CHARFORMAT2` structures in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CRichEditCtrl#31](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_31.cpp)]  
@@ -1582,7 +1582,7 @@ BOOL SetTextMode(UINT fMode);
  Zero if successful, otherwise nonzero.  
   
 ### Remarks  
- For a description of the text modes, see **EM_SETTEXTMODE** in the Windows SDK.  
+ For a description of the text modes, see EM_SETTEXTMODE in the Windows SDK.  
   
  This member function fails if the control contains text. To make sure the control is empty, send a [WM_SETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632644) message with an empty string.  
   
@@ -1615,15 +1615,15 @@ BOOL SetWordCharFormat(CHARFORMAT2& cf);
  *cf*  
  In the first version, a pointer to a [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) structure containing the new character formatting attributes for the currently selected word.  
   
- In the second version, a pointer to a [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure, which is a Rich Edit 2.0 extension to the **CHARFORMAT** structure, containing the new character formatting attributes for the currently selected word.  
+ In the second version, a pointer to a [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure, which is a Rich Edit 2.0 extension to the `CHARFORMAT` structure, containing the new character formatting attributes for the currently selected word.  
   
 ### Return Value  
  Nonzero if successful; otherwise, 0.  
   
 ### Remarks  
- Only the attributes specified by the **dwMask** member of *cf* are changed by this function.  
+ Only the attributes specified by the `dwMask` member of *cf* are changed by this function.  
   
- For more information, see the [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and the **CHARFORMAT** and **CHARFORMAT2** structures in the Windows SDK.  
+ For more information, see the [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and the `CHARFORMAT` and `CHARFORMAT2` structures in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CRichEditCtrl#33](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_33.cpp)]  
@@ -1679,13 +1679,13 @@ long StreamIn(
 ### Remarks  
  The value of *nFormat* must be one of the following:  
   
-- `SF_TEXT` Indicates reading text only.  
+- SF_TEXT Indicates reading text only.  
   
-- `SF_RTF` Indicates reading text and formatting.  
+- SF_RTF Indicates reading text and formatting.  
   
- Either of these values can be combined with `SFF_SELECTION`. If `SFF_SELECTION` is specified, `StreamIn` replaces the current selection with the contents of the input stream. If it is not specified, `StreamIn` replaces the entire contents of this `CRichEditCtrl` object.  
+ Either of these values can be combined with SFF_SELECTION. If SFF_SELECTION is specified, `StreamIn` replaces the current selection with the contents of the input stream. If it is not specified, `StreamIn` replaces the entire contents of this `CRichEditCtrl` object.  
   
- In the **EDITSTREAM** parameter *es*, you specify a callback function that fills a buffer with text. This callback function is called repeatedly, until the input stream is exhausted.  
+ In the `EDITSTREAM` parameter *es*, you specify a callback function that fills a buffer with text. This callback function is called repeatedly, until the input stream is exhausted.  
   
  For more information, see [EM_STREAMIN](http://msdn.microsoft.com/library/windows/desktop/bb774302) message and [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) structure in the Windows SDK.  
   
@@ -1716,17 +1716,17 @@ long StreamOut(
 ### Remarks  
  The value of *nFormat* must be one of the following:  
   
-- `SF_TEXT` Indicates writing text only.  
+- SF_TEXT Indicates writing text only.  
   
-- `SF_RTF` Indicates writing text and formatting.  
+- SF_RTF Indicates writing text and formatting.  
   
-- `SF_RTFNOOBJS` Indicates writing text and formatting, replacing OLE items with spaces.  
+- SF_RTFNOOBJS Indicates writing text and formatting, replacing OLE items with spaces.  
   
-- `SF_TEXTIZED` Indicates writing text and formatting, with textual representations of OLE items.  
+- SF_TEXTIZED Indicates writing text and formatting, with textual representations of OLE items.  
   
- Any of these values can be combined with `SFF_SELECTION`. If `SFF_SELECTION` is specified, `StreamOut` writes out the current selection into the output stream. If it is not specified, `StreamOut` writes out the entire contents of this `CRichEditCtrl` object.  
+ Any of these values can be combined with SFF_SELECTION. If SFF_SELECTION is specified, `StreamOut` writes out the current selection into the output stream. If it is not specified, `StreamOut` writes out the entire contents of this `CRichEditCtrl` object.  
   
- In the **EDITSTREAM** parameter *es*, you specify a callback function which fills a buffer with text. This callback function is called repeatedly, until the output stream is exhausted.  
+ In the `EDITSTREAM` parameter *es*, you specify a callback function which fills a buffer with text. This callback function is called repeatedly, until the output stream is exhausted.  
   
  For more information, see [EM_STREAMOUT](http://msdn.microsoft.com/library/windows/desktop/bb774304) message and [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) structure in the Windows SDK.  
   

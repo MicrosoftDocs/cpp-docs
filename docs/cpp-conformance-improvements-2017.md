@@ -73,7 +73,7 @@ It is now possible in a single declaration to store a value with individual name
 
 There is now an implicit/non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself, when its definition introduces no enumerator and the source uses a list-initialization syntax. For more information, see [Construction Rules for enum class Values](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf).
 
-### Capturing *this by value
+### Capturing \*this by value
 
 The `*this` object in a lambda expression may now be captured by value. This enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as [=,\*this]](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html).
 
@@ -325,11 +325,11 @@ void bar(A<0> *p)
 
 ### C++17 Repairing elementary string conversions
 
-[P0682R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0682r1.html) Move the new elementary string conversion functions from P0067R5 into a new header \<charconv> and make other improvements, including changing error handling to use use `std::errc` instead of `std::error_code`.
+[P0682R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0682r1.html) Move the new elementary string conversion functions from P0067R5 into a new header \<charconv> and make other improvements, including changing error handling to use `std::errc` instead of `std::error_code`.
 
 ### C++17 constexpr for char_traits (partial)
 
-[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` in order to make make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
+[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` in order to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
 
 ## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), and [15.8](#update_158)
 

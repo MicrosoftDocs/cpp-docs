@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating a New Custom or Data Resource
-You can create a new custom or data resource by placing the resource in a separate file using normal resource script (.rc) file syntax, and then including that file by right-clicking your project in Solution Explorer and clicking **Resource Includes** on the shortcut menu.  
+You can create a new custom or data resource by placing the resource in a separate file using normal resource script (.rc) file syntax, and then including that file by right-clicking your project in **Solution Explorer** and clicking **Resource Includes** on the shortcut menu.  
   
 ### To create a new custom or data resource  
   
@@ -23,9 +23,9 @@ You can create a new custom or data resource by placing the resource in a separa
   
 2.  In **Solution Explorer**, right-click your project's .rc file, then click **Resource Includes** on the shortcut menu.  
   
-3.  In the **Compile-Time Directives** box, type a **#include** statement that gives the name of the file containing your custom resource. For example:  
+3.  In the **Compile-Time Directives** box, type a `#include` statement that gives the name of the file containing your custom resource. For example:  
   
- ```  
+ ```cpp  
     #include mydata.rc  
  ```  
   
@@ -35,12 +35,10 @@ You can create a new custom or data resource by placing the resource in a separa
   
  Another way to create a custom resource is to import an external file as the custom resource. For more information, see [Importing and Exporting Resources](../windows/how-to-import-and-export-resources.md).  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  
  [Binary Editor](binary-editor.md)
-

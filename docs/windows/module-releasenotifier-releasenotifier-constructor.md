@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier::ReleaseNotifier Constructor
-Initializes a new instance of the Module::ReleaseNotifier class.  
+Initializes a new instance of the **Module::ReleaseNotifier** class.  
   
 ## Syntax  
   
@@ -21,9 +21,9 @@ Initializes a new instance of the Module::ReleaseNotifier class.
 ReleaseNotifier(bool release) throw();  
 ```  
   
-#### Parameters  
- `release`  
- `true` to delete this instance when the Release method is called; `false` to not delete this instance.  
+### Parameters  
+ *release*  
+ **true** to delete this instance when the `Release` method is called; **false** to not delete this instance.  
   
 ## Exceptions  
   

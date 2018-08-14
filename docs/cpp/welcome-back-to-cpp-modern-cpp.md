@@ -40,7 +40,6 @@ C++ is one of the most widely used programming languages in the world. Well-writ
  The C++ language itself has also evolved. Compare the following code snippets. This one shows how things used to be in C++:  
   
 ```cpp  
-
 #include <vector>
 
 void f()
@@ -72,7 +71,6 @@ void f()
  Here's how the same thing is accomplished in modern C++:  
   
 ```cpp
-
 #include <memory>  
 #include <vector>  
 
@@ -90,10 +88,9 @@ void f()
         }
     }
 }
-
 ```
 
- In modern C++, you don't have to use new/delete or explicit exception handling because you can use smart pointers instead. When you use the `auto` type deduction and [lambda function](../cpp/lambda-expressions-in-cpp.md), you can write code quicker, tighten it, and understand it better. And a range-based `for` loop is cleaner, easier to use, and less prone to unintended errors than a C-style `for` loop. You can use boilerplate together with minimal lines of code to write your app. And you can make that code exception-safe and memory-safe, and have no allocation/deallocation or error codes to deal with.  
+ In modern C++, you don't have to use new/delete or explicit exception handling because you can use smart pointers instead. When you use the **auto** type deduction and [lambda function](../cpp/lambda-expressions-in-cpp.md), you can write code quicker, tighten it, and understand it better. And a range-based **for** loop is cleaner, easier to use, and less prone to unintended errors than a C-style **for** loop. You can use boilerplate together with minimal lines of code to write your app. And you can make that code exception-safe and memory-safe, and have no allocation/deallocation or error codes to deal with.  
   
  Modern C++ incorporates two kinds of polymorphism: compile-time, through templates, and run-time, through inheritance and virtualization. You can mix the two kinds of polymorphism to great effect. The C++ Standard Library template `shared_ptr` uses internal virtual methods to accomplish its apparently effortless type erasure. But don't over-use virtualization for polymorphism when a template is the better choice. Templates can be very powerful.  
   
@@ -129,7 +126,7 @@ void f()
   
  For more information, see the StackOverflow article [what C++ idioms are deprecated in C++11](http://go.microsoft.com/fwlink/p/?linkid=402836)  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)  

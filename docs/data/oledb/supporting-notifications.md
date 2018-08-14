@@ -12,10 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Supporting Notifications
+
 ## Implementing Connection Point Interfaces on the Provider and Consumer  
  To implement notifications, a provider class must inherit from [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md) and [IConnectionPointContainer](../../atl/reference/iconnectionpointcontainerimpl-class.md).  
   
- `IRowsetNotifyCP` implements the provider site for the connection point interface [IRowsetNotify](https://msdn.microsoft.com/en-us/library/ms712959.aspx). `IRowsetNotifyCP` implements broadcast functions to advise listeners on the connection point **IID_IRowsetNotify** of changes to the contents of the rowset.  
+ `IRowsetNotifyCP` implements the provider site for the connection point interface [IRowsetNotify](https://msdn.microsoft.com/library/ms712959.aspx). `IRowsetNotifyCP` implements broadcast functions to advise listeners on the connection point `IID_IRowsetNotify` of changes to the contents of the rowset.  
   
  Note that you must also implement and register `IRowsetNotify` on the consumer (also known as the sink) using [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) so that the consumer can handle notifications. For information about implementing the connection point interface on the consumer, see [Receiving Notifications](../../data/oledb/receiving-notifications.md).  
   
@@ -30,7 +31,7 @@ END_CONNECTION_POINT_MAP
 ## Adding IRowsetNotify  
  To add `IRowsetNotify`, you need to add `IConnectionPointContainerImpl<rowset-name>` and `IRowsetNotifyCP<rowset-name>` to your inheritance chain.  
   
- For example, here is the inheritance chain for `RUpdateRowset` in [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f):  
+ For example, here is the inheritance chain for `RUpdateRowset` in [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f):  
   
 > [!NOTE]
 >  The sample code might differ from what is listed here; you should regard the sample code as the more up-to-date version.  
@@ -74,19 +75,19 @@ END_CONNECTION_POINT_MAP()
   
 |Property|Add if you support|  
 |--------------|------------------------|  
-|**DBPROP_IConnectionPointContainer**|Always|  
-|**DBPROP_NOTIFICATIONGRANULARITY**|Always|  
-|**DBPROP_NOTIFICATIONPHASES**|Always|  
-|**DBPROP_NOTIFYCOLUMNSET**|`IRowsetChange`|  
-|**DBPROP_NOTIFYROWDELETE**|`IRowsetChange`|  
-|**DBPROP_NOTIFYROWINSERT**|`IRowsetChange`|  
-|**DBPROP_NOTIFYROWSETFETCHPOSITIONCHANGE**|Always|  
-|**DBPROP_NOTIFYROWFIRSTCHANGE**|`IRowsetUpdate`|  
-|**DBPROP_NOTIFYROWSETRELEASE**|Always|  
-|**DBPROP_NOTIFYROWUNDOCHANGE**|`IRowsetUpdate`|  
-|**DBPROP_NOTIFYROWUNDODELETE**|`IRowsetUpdate`|  
-|**DBPROP_NOTIFYROWUNDOINSERT**|`IRowsetUpdate`|  
-|**DBPROP_NOTIFYROWUPDATE**|`IRowsetUpdate`|  
+|`DBPROP_IConnectionPointContainer`|Always|  
+|`DBPROP_NOTIFICATIONGRANULARITY`|Always|  
+|`DBPROP_NOTIFICATIONPHASES`|Always|  
+|`DBPROP_NOTIFYCOLUMNSET`|`IRowsetChange`|  
+|`DBPROP_NOTIFYROWDELETE`|`IRowsetChange`|  
+|`DBPROP_NOTIFYROWINSERT`|`IRowsetChange`|  
+|`DBPROP_NOTIFYROWSETFETCHPOSITIONCHANGE`|Always|  
+|`DBPROP_NOTIFYROWFIRSTCHANGE`|`IRowsetUpdate`|  
+|`DBPROP_NOTIFYROWSETRELEASE`|Always|  
+|`DBPROP_NOTIFYROWUNDOCHANGE`|`IRowsetUpdate`|  
+|`DBPROP_NOTIFYROWUNDODELETE`|`IRowsetUpdate`|  
+|`DBPROP_NOTIFYROWUNDOINSERT`|`IRowsetUpdate`|  
+|`DBPROP_NOTIFYROWUPDATE`|`IRowsetUpdate`|  
   
  Most of the implementation for the notifications is already embedded in the OLE DB Provider Templates. If you do not add `IRowsetNotifyCP` to your inheritance chain, the compiler removes all that code from your compilation stream, thus making your code size smaller.  
   

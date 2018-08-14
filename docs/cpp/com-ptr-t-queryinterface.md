@@ -15,12 +15,11 @@ ms.workload: ["cplusplus"]
 # _com_ptr_t::QueryInterface
 **Microsoft Specific**  
   
- Calls the `QueryInterface` member function of **IUnknown** on the encapsulated interface pointer.  
+ Calls the **QueryInterface** member function of `IUnknown` on the encapsulated interface pointer.  
   
 ## Syntax  
   
 ```  
-  
 template<typename _InterfaceType> HRESULT QueryInterface (  
    const IID& iid,  
    _InterfaceType*& p   
@@ -32,16 +31,16 @@ template<typename _InterfaceType> HRESULT QueryInterface (
 ```  
   
 #### Parameters  
- `iid`  
- **IID** of an interface pointer.  
+ *iid*  
+ `IID` of an interface pointer.  
   
- `p`  
+ *p*  
  Raw interface pointer.  
   
 ## Remarks  
- Calls **IUnknown::QueryInterface** on the encapsulated interface pointer with the specified **IID** and returns the resulting raw interface pointer in `p`. This routine returns the `HRESULT` to indicate success or failure.  
+ Calls `IUnknown::QueryInterface` on the encapsulated interface pointer with the specified `IID` and returns the resulting raw interface pointer in *p*. This routine returns the HRESULT to indicate success or failure.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

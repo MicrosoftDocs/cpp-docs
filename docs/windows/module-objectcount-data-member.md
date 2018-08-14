@@ -16,7 +16,7 @@ Keeps track of how many classes have been created with the [Make](../windows/mak
   
 ## Syntax  
   
-```  
+```cpp  
 volatile long objectCount_;  
 ```  
   

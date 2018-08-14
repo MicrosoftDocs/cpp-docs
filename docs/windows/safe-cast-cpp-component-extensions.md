@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # safe_cast (C++ Component Extensions)
-The `safe_cast` operation returns the specified expression as the specified type, if successful; otherwise, throws `InvalidCastException`.  
+The **safe_cast** operation returns the specified expression as the specified type, if successful; otherwise, throws `InvalidCastException`.  
   
 ## All Runtimes  
  (There are no remarks for this language feature that apply to all runtimes.)  
@@ -26,15 +26,10 @@ type-id
 >(  
 expression  
 )  
-  
 ```  
   
-### Parameters  
-  
-### Remarks  
-  
 ## Windows Runtime  
- `safe_cast` allows you to change the type of a specified expression. In situations where you fully expect a variable or parameter to be convertible to a certain type, you can use safe_cast without a try-catch block to detect programming errors during development. For more information, see [Casting (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755802.aspx).  
+ **safe_cast** allows you to change the type of a specified expression. In situations where you fully expect a variable or parameter to be convertible to a certain type, you can use **safe_cast** without a **try-catch** block to detect programming errors during development. For more information, see [Casting (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755802.aspx).  
   
 ### Syntax  
   
@@ -44,7 +39,6 @@ type-id
 >(  
 expression  
 )  
-  
 ```  
   
 ### Parameters  
@@ -55,17 +49,16 @@ expression
  An expression that evaluates to a handle to a reference or value type, a value type, or a tracking reference to a reference or value type.  
   
 ### Remarks  
- `safe_cast` throws `InvalidCastException` if it cannot convert *expression* to the type specified by *type-id*. To catch `InvalidCastException`, specify the [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md) compiler option, and use a try/catch statement.  
+ **safe_cast** throws `InvalidCastException` if it cannot convert *expression* to the type specified by *type-id*. To catch `InvalidCastException`, specify the [/EH (Exception Handling Model)](../build/reference/eh-exception-handling-model.md) compiler option, and use a **try/catch** statement.  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ### Examples  
- **Example**  
   
- The following code example demonstrates how to use `safe_cast` with the Windows Runtime.  
+ The following code example demonstrates how to use **safe_cast** with the Windows Runtime.  
   
-```cpp#  
+```cpp  
 // safe_cast_ZW.cpp  
 // compile with: /ZW /EHsc  
   
@@ -91,14 +84,12 @@ int main(Array<String^>^ args) {
 }  
 ```  
   
- **Output**  
-  
 ```Output  
 Caught expected exception: InvalidCastException  
 ```  
   
 ## Common Language Runtime 
- `safe_cast` allows you to change the type of an expression and generate verifiable MSIL code.  
+ **safe_cast** allows you to change the type of an expression and generate verifiable MSIL code.  
   
 ### Syntax  
   
@@ -108,7 +99,6 @@ type-id
 >(  
 expression  
 )  
-  
 ```  
   
 ### Parameters  
@@ -121,29 +111,28 @@ expression
 ### Remarks  
  The expression `safe_cast<`*type-id*`>(`*expression*`)` converts the operand expression to an object of type type-id.  
   
- The compiler will accept a [static_cast](../cpp/static-cast-operator.md) in most places that it will accept a `safe_cast`.  However, `safe_cast` is guaranteed to produce verifiable MSIL, where as a `static_cast` could produce unverifiable MSIL.  See [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [Peverify.exe (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) for more information on verifiable code.  
+ The compiler will accept a [static_cast](../cpp/static-cast-operator.md) in most places that it will accept a **safe_cast**.  However, **safe_cast** is guaranteed to produce verifiable MSIL, where as a **static_cast** could produce unverifiable MSIL.  See [Pure and Verifiable Code (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) and [Peverify.exe (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) for more information on verifiable code.  
   
- Like `static_cast`, `safe_cast` invokes user-defined conversions.  
+ Like **static_cast**, **safe_cast** invokes user-defined conversions.  
   
  For more information about casts, see [Casting Operators](../cpp/casting-operators.md).  
   
- `safe_cast` does not apply a **const_cast** (cast away **const**).  
+ **safe_cast** does not apply a **const_cast** (cast away **const**).  
   
- `safe_cast` is in the cli namespace.  See [Platform, default, and cli Namespaces](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) for more information.  
+ **safe_cast** is in the cli namespace.  See [Platform, default, and cli Namespaces](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) for more information.  
   
- For more information on **safe_cas**t, see:  
+ For more information on **safe_cast**, see:  
   
 -   [C-Style Casts with /clr (C++/CLI)](../windows/c-style-casts-with-clr-cpp-cli.md)  
   
 -   [How to: Use safe_cast in C++/CLI](../dotnet/how-to-use-safe-cast-in-cpp-cli.md)  
 
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
- One example of where the compiler will not accept a `static_cast` but will accept a `safe_cast` is for casts between unrelated interface types.  With `safe_cast`, the compiler will not issue a conversion error and will perform a check at runtime to see if the cast is possible  
+ One example of where the compiler will not accept a **static_cast** but will accept a **safe_cast** is for casts between unrelated interface types.  With **safe_cast**, the compiler will not issue a conversion error and will perform a check at runtime to see if the cast is possible  
   
 ```cpp  
 // safe_cast.cpp  
@@ -168,8 +157,6 @@ int main() {
    }  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 Caught expected exception  

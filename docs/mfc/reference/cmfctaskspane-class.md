@@ -85,7 +85,7 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::IsToolBox](#istoolbox)||  
 |[CMFCTasksPane::IsWrapLabelsEnabled](#iswraplabelsenabled)|Indicates whether the task pane wraps words in labels.|  
 |[CMFCTasksPane::IsWrapTasksEnabled](#iswraptasksenabled)|Indicates whether the task pane wraps words in tasks.|  
-|[CMFCTasksPane::LoadState](#loadstate)|(Overrides [CDockablePane::LoadState](http://msdn.microsoft.com/en-us/96110136-4f46-4764-8a76-3b4abaf77917).)|  
+|[CMFCTasksPane::LoadState](#loadstate)|(Overrides [CDockablePane::LoadState](http://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917).)|  
 |[CMFCTasksPane::OnCancel](#oncancel)||  
 |[CMFCTasksPane::OnClickTask](#onclicktask)|Called by the framework when the user clicks an item in the task pane.|  
 |[CMFCTasksPane::OnOK](#onok)||  
@@ -94,8 +94,8 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::OnPressHomeButton](#onpresshomebutton)|Called by the framework when the user clicks the home navigation button|  
 |[CMFCTasksPane::OnPressOtherButton](#onpressotherbutton)||  
 |[CMFCTasksPane::OnSetAccData](#onsetaccdata)|(Overrides [CBasePane::OnSetAccData](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|  
-|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CDockablePane::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](http://msdn.microsoft.com/en-us/49a242cc-b158-400e-9e01-0345ec9c3ffd).)|  
+|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CDockablePane::OnUpdateCmdUI](http://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
+|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](http://msdn.microsoft.com/49a242cc-b158-400e-9e01-0345ec9c3ffd).)|  
 |[CMFCTasksPane::RecalcLayout](#recalclayout)|(Overrides [CPane::RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout).)|  
 |[CMFCTasksPane::RemoveAllGroups](#removeallgroups)|Removes all groups on the specified page.|  
 |[CMFCTasksPane::RemoveAllPages](#removeallpages)|Removes all pages from the task pane except the default (first) page.|  
@@ -103,8 +103,8 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::RemoveGroup](#removegroup)|Removes a group.|  
 |[CMFCTasksPane::RemovePage](#removepage)|Removes a specified page from the task pane.|  
 |[CMFCTasksPane::RemoveTask](#removetask)|Removes a task from a task group.|  
-|[CMFCTasksPane::SaveState](#savestate)|(Overrides [CDockablePane::SaveState](http://msdn.microsoft.com/en-us/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
-|[CMFCTasksPane::Serialize](#serialize)|(Overrides [CDockablePane::Serialize](http://msdn.microsoft.com/en-us/09787e59-e446-4e76-894b-206d303dcfd6).)|  
+|[CMFCTasksPane::SaveState](#savestate)|(Overrides [CDockablePane::SaveState](http://msdn.microsoft.com/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
+|[CMFCTasksPane::Serialize](#serialize)|(Overrides [CDockablePane::Serialize](http://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
 |[CMFCTasksPane::SetActivePage](#setactivepage)|Activates a specified page in the task pane.|  
 |[CMFCTasksPane::SetCaption](#setcaption)|Sets the caption name of a task pane.|  
 |[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|Sets the height of a group caption.|  
@@ -143,13 +143,13 @@ class CMFCTasksPane : public CDockablePane
   
 -   An icon can be assigned to each item in the task pane.  
   
--   Individual items can be associated with a command ID which executes when a user clicks the item. When the click occurs, the `WM_COMMAND` message is sent to the owner of the task pane control.  
+-   Individual items can be associated with a command ID which executes when a user clicks the item. When the click occurs, the WM_COMMAND message is sent to the owner of the task pane control.  
   
  To use the `CMFCTasksPane` control in your application, follow these steps:  
   
 1.  Embed a `CMFCTasksPane` object into the main frame window class.  
   
-2.  When processing the `WM_CREATE` message, call the `Create` method. You can use the regular [CControlBar](../../mfc/reference/ccontrolbar-class.md) styles. For more information, see `CControlBar::Create`.  
+2.  When processing the WM_CREATE message, call the `Create` method. You can use the regular [CControlBar](../../mfc/reference/ccontrolbar-class.md) styles. For more information, see `CControlBar::Create`.  
   
 3.  Call the [CMFCTasksPane::AddGroup](#addgroup) method to add various groups.  
   
@@ -207,10 +207,10 @@ int AddGroup(
  Specifies the group name.  
   
  [in] *bBottomLocation*  
- `TRUE` to create the group at the bottom of the task pane control; otherwise, `FALSE`.  
+ TRUE to create the group at the bottom of the task pane control; otherwise, FALSE.  
   
  [in] *bSpecial*  
- `TRUE` to mark this group as a *special* group; otherwise, `FALSE`. For more information about special groups, see the Remarks section of `CMFCTasksPane`.  
+ TRUE to mark this group as a *special* group; otherwise, FALSE. For more information about special groups, see the Remarks section of `CMFCTasksPane`.  
   
  [in] *hIcon*  
  Specifies the icon to display in the group caption.  
@@ -245,7 +245,7 @@ int AddLabel(
  Specifies the icon to display next to the label. The framework stores icons in a list of images. This parameter is an index into that list.  
   
  [in] *bIsBold*  
- `TRUE` to display the label in bold text; otherwise, `FALSE`.  
+ TRUE to display the label in bold text; otherwise, FALSE.  
   
 ### Return Value  
  The zero-based index of the group where the label was added, or -1 if the group specified by *nGroup* does not exist.  
@@ -354,7 +354,7 @@ int AddWindow(
  Specifies the height of the window.  
   
  [in] *bAutoDestroyWindow*  
- `TRUE` to destroy the window when the task is removed; otherwise, `FALSE`.  
+ TRUE to destroy the window when the task is removed; otherwise, FALSE.  
   
  [in] *dwUserData*  
  Specifies the user-defined data associated with the task.  
@@ -409,13 +409,13 @@ BOOL CollapseGroup(
  Specifies the group to collapse.  
   
  [in] *bCollapse*  
- `TRUE` to collapse the group; `FALSE` to expand the group.  
+ TRUE to collapse the group; FALSE to expand the group.  
   
  [in] *nGroup*  
  Specifies the zero-based index of the group to collapse in the internal list of groups.  
   
 ### Return Value  
- `TRUE` if the group collapses or expands successfully; otherwise, `FALSE`.  
+ TRUE if the group collapses or expands successfully; otherwise, FALSE.  
   
 ### Remarks  
  A collapsed group shows only the group caption; the list of tasks is hidden.  
@@ -458,7 +458,7 @@ void EnableAnimation(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable the animation that occurs when a task group expands or collapses; otherwise, `FALSE`.  
+ TRUE to enable the animation that occurs when a task group expands or collapses; otherwise, FALSE.  
   
 ### Remarks  
  By default, the animation that occurs when a task group expands or collapses is enabled.  
@@ -472,7 +472,7 @@ void EnableGroupCollapse(BOOL bEnable);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` if users can collapse task groups; otherwise, `FALSE`.  
+ TRUE if users can collapse task groups; otherwise, FALSE.  
   
 ### Remarks  
  A task group that is collapsed displays only the group caption; the list of tasks is hidden.  
@@ -486,7 +486,7 @@ void EnableHistoryMenuButtons(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable drop-down menus on the **Next** and **Previous** navigation buttons; otherwise, `FALSE`.  
+ TRUE to enable drop-down menus on the **Next** and **Previous** navigation buttons; otherwise, FALSE.  
   
 ### Remarks  
  By default, the drop-down menus on the **Next** and **Previous** buttons are disabled.  
@@ -508,7 +508,7 @@ void EnableNavigationToolbar(
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable the navigation toolbar; otherwise, `FALSE`.  
+ TRUE to enable the navigation toolbar; otherwise, FALSE.  
   
  [in] *uiToolbarBmpRes*  
  Specifies the resource ID of the bitmap that contains the images to display on the toolbar.  
@@ -545,7 +545,7 @@ void EnableScrollButtons(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to display scroll buttons in the task pane instead of a scroll bar; otherwise, `FALSE`.  
+ TRUE to display scroll buttons in the task pane instead of a scroll bar; otherwise, FALSE.  
   
 ### Remarks  
  By default, the framework displays scroll buttons in the task pane.  
@@ -559,7 +559,7 @@ void EnableWrapLabels(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to wrap the text in labels that appear on the task pane; otherwise, `FALSE`.  
+ TRUE to wrap the text in labels that appear on the task pane; otherwise, FALSE.  
   
 ### Remarks  
  By default, the framework does not wrap the text in labels. When word wrapping is enabled, the text in labels can appear in multiple lines. The label can include line breaking markers such as `\n` and the underline marker `&`.  
@@ -573,7 +573,7 @@ void EnableWrapTasks(BOOL bEnable = TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to wrap tasks in the task pane; otherwise, `FALSE`.  
+ TRUE to wrap tasks in the task pane; otherwise, FALSE.  
   
 ### Remarks  
  By default, word wrapping for tasks is disabled.  
@@ -648,7 +648,7 @@ BOOL GetGroupLocation(
  Contains the zero-based index of the task group.  
   
 ### Return Value  
- `TRUE` if the task group was found; otherwise, `FALSE`.  
+ TRUE if the task group was found; otherwise, FALSE.  
   
 ##  <a name="getgroupvertoffset"></a>  CMFCTasksPane::GetGroupVertOffset  
  Returns the vertical offset of a group.  
@@ -702,7 +702,7 @@ BOOL GetPageByGroup(
  Contains the page index for the specified group. If the task group only contains a default page, the returned value is 0.  
   
 ### Return Value  
- `TRUE` if the group *nGroup* exists; otherwise, `FALSE`.  
+ TRUE if the group *nGroup* exists; otherwise, FALSE.  
   
 ##  <a name="getpagescount"></a>  CMFCTasksPane::GetPagesCount  
  Returns the number of pages.  
@@ -824,10 +824,10 @@ BOOL GetTaskLocation(
  Specifies the task to find.  
   
 ### Return Value  
- `TRUE` if the task location was found; `FALSE` if the specified task does not exist.  
+ TRUE if the task location was found; FALSE if the specified task does not exist.  
   
 ### Remarks  
- This method retrieves the group index and task index for the specified task. If the method returns `FALSE`, *nGroup* and *nTask* are set to -1.  
+ This method retrieves the group index and task index for the specified task. If the method returns FALSE, *nGroup* and *nTask* are set to -1.  
   
 ##  <a name="gettaskshorzoffset"></a>  CMFCTasksPane::GetTasksHorzOffset  
  Returns the horizontal offset of tasks.  
@@ -896,7 +896,7 @@ BOOL IsAnimationEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the animation that occurs when a user expands or collapses a group is enabled; otherwise, `FALSE`.  
+ TRUE if the animation that occurs when a user expands or collapses a group is enabled; otherwise, FALSE.  
   
 ### Remarks  
  Call [CMFCTasksPane::EnableAnimation](#enableanimation) to enable or disable animation.  
@@ -909,7 +909,7 @@ BOOL IsBackButtonEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the back button is enabled; otherwise, `FALSE`.  
+ TRUE if the back button is enabled; otherwise, FALSE.  
   
 ### Remarks  
  When a user clicks the back button, the framework displays the previous task page.  
@@ -922,7 +922,7 @@ BOOL IsForwardButtonEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the forward button is enabled; otherwise, `FALSE`.  
+ TRUE if the forward button is enabled; otherwise, FALSE.  
   
 ### Remarks  
  The forward button enables forward navigation in the history of task pages.  
@@ -946,7 +946,7 @@ BOOL IsHistoryMenuButtonsEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the **Next** and **Previous** navigation buttons have drop-down menus; otherwise, `FALSE`.  
+ TRUE if the **Next** and **Previous** navigation buttons have drop-down menus; otherwise, FALSE.  
   
 ##  <a name="isnavigationtoolbarenabled"></a>  CMFCTasksPane::IsNavigationToolbarEnabled  
  Indicates whether the navigation toolbar is enabled.  
@@ -956,7 +956,7 @@ BOOL IsNavigationToolbarEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the navigation toolbar is enabled; otherwise, `FALSE`.  
+ TRUE if the navigation toolbar is enabled; otherwise, FALSE.  
   
 ##  <a name="istoolbox"></a>  CMFCTasksPane::IsToolBox  
 
@@ -977,7 +977,7 @@ BOOL IsWrapLabelsEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if words in labels are wrapped; otherwise, `FALSE`.  
+ TRUE if words in labels are wrapped; otherwise, FALSE.  
   
 ##  <a name="iswraptasksenabled"></a>  CMFCTasksPane::IsWrapTasksEnabled  
  Specifies whether the framework wraps the task string.  
@@ -987,7 +987,7 @@ BOOL IsWrapTasksEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if the task string is wrapped; otherwise, `FALSE`.  
+ TRUE if the task string is wrapped; otherwise, FALSE.  
   
 ##  <a name="loadstate"></a>  CMFCTasksPane::LoadState  
 
@@ -1248,10 +1248,10 @@ BOOL RemoveTask(
  Specifies the zero-based index of the task to remove.  
   
  [in] *bRedraw*  
- `TRUE` to redraw the task pane; otherwise, `FALSE`.  
+ TRUE to redraw the task pane; otherwise, FALSE.  
   
 ### Return Value  
- `TRUE` if the function succeeds; `FALSE` if *nGroup* or *nTask* is invalid.  
+ TRUE if the function succeeds; FALSE if *nGroup* or *nTask* is invalid.  
   
 ##  <a name="savestate"></a>  CMFCTasksPane::SaveState  
 
@@ -1367,7 +1367,7 @@ BOOL SetGroupName(
  Specifies the name of the group.  
   
 ### Return Value  
- `TRUE` if the group name was successfully set; otherwise, `FALSE`.  
+ TRUE if the group name was successfully set; otherwise, FALSE.  
   
 ##  <a name="setgrouptextcolor"></a>  CMFCTasksPane::SetGroupTextColor  
  Sets the text color for a group caption.  
@@ -1390,7 +1390,7 @@ BOOL SetGroupTextColor(
  Specifies the text color for the highlighted group. If -1, the default highlight color is used.  
   
 ### Return Value  
- `TRUE` if the group text color was successfully changed; otherwise, `FALSE`.  
+ TRUE if the group text color was successfully changed; otherwise, FALSE.  
   
 ##  <a name="setgroupvertoffset"></a>  CMFCTasksPane::SetGroupVertOffset  
  Sets the vertical offset for a group.  
@@ -1406,7 +1406,7 @@ void SetGroupVertOffset(int n = -1);
 ### Remarks  
  The vertical offset is the distance between a task group and the border of the task pane.  
   
- Call this method to customize the margins of task pane elements. If *n* is -1, the framework determines the margin value by using the visual manager ( `CMFCVisualManager::GetTasksPaneGroupVertOffset`). The default offset is 15 pixels.  
+ Call this method to customize the margins of task pane elements. If *n* is -1, the framework determines the margin value by using the visual manager (`CMFCVisualManager::GetTasksPaneGroupVertOffset`). The default offset is 15 pixels.  
   
 ##  <a name="sethorzmargin"></a>  CMFCTasksPane::SetHorzMargin  
  Sets the horizontal margin.  
@@ -1422,7 +1422,7 @@ void SetHorzMargin(int n = -1);
 ### Remarks  
  The horizontal margin is the distance between a task pane and the top or bottom edge of the client area.  
   
- If n is -1, and the framework determines the margin value by using the visual manager ( `CMFCVisualManager::GetTasksPaneHorzMargin`). The default horizontal margin is 12 pixels.  
+ If n is -1, and the framework determines the margin value by using the visual manager (`CMFCVisualManager::GetTasksPaneHorzMargin`). The default horizontal margin is 12 pixels.  
   
 ##  <a name="seticonslist"></a>  CMFCTasksPane::SetIconsList  
  Sets the image list.  
@@ -1494,7 +1494,7 @@ BOOL SetTaskName(
  Specifies the task name.  
   
 ### Return Value  
- `TRUE` if the task name was successfully set; otherwise, `FALSE`.  
+ TRUE if the task name was successfully set; otherwise, FALSE.  
   
 ##  <a name="settaskshorzoffset"></a>  CMFCTasksPane::SetTasksHorzOffset  
  Sets the horizontal offset for tasks.  
@@ -1563,7 +1563,7 @@ BOOL SetTaskTextColor(
  Specifies the text color for the highlighted group. If -1, this method uses the default highlight color.  
   
 ### Return Value  
- `TRUE` if the text color for the task was successfully set; otherwise, `FALSE`.  
+ TRUE if the text color for the task was successfully set; otherwise, FALSE.  
   
 ##  <a name="setvertmargin"></a>  CMFCTasksPane::SetVertMargin  
  Sets the vertical margin.  
@@ -1579,7 +1579,7 @@ void SetVertMargin(int n = -1);
 ### Remarks  
  The vertical margin is the distance between a task pane and the vertical edges of the client area.  
   
- If *n* is -1, the framework determines the margin value by using  the visual manager ( `CMFCVisualManager::GetTasksPaneVertMargin`). The default margin is 12 pixels.  
+ If *n* is -1, the framework determines the margin value by using  the visual manager (`CMFCVisualManager::GetTasksPaneVertMargin`). The default margin is 12 pixels.  
   
 ##  <a name="setwindowheight"></a>  CMFCTasksPane::SetWindowHeight  
  Sets the height for a window control.  
@@ -1607,7 +1607,7 @@ BOOL SetWindowHeight(
  Specifies the height to set.  
   
 ### Return Value  
- `TRUE` if the height of the window control was successfully set; `FALSE` if *nGroup* is invalid or if *hwndTask* does not exist.  
+ TRUE if the height of the window control was successfully set; FALSE if *nGroup* is invalid or if *hwndTask* does not exist.  
   
 ### Remarks  
  Call [CMFCTasksPane::AddWindow](#addwindow) to add tasks with window controls.  
@@ -1643,13 +1643,13 @@ BOOL ShowTask(
  Specifies the zero-based index of the task to show or hide.  
   
  [in] *bShow*  
- `TRUE` to show the task; `FALSE` to hide the task.  
+ TRUE to show the task; FALSE to hide the task.  
   
  [in] *bRedraw*  
- `TRUE` to redraw the task pane; otherwise, `FALSE`.  
+ TRUE to redraw the task pane; otherwise, FALSE.  
   
 ### Return Value  
- `TRUE` if the task was successfully shown or hidden; `FALSE` if the specified group or task does not exist.  
+ TRUE if the task was successfully shown or hidden; FALSE if the specified group or task does not exist.  
   
 ### Remarks  
  Use [CMFCTasksPane::ShowTaskByCmdId](#showtaskbycmdid) to show or hide a task based on its command ID.  
@@ -1669,13 +1669,13 @@ BOOL ShowTaskByCmdId(
  Specifies the command ID of the task to show or hide.  
   
  [in] *bShow*  
- `TRUE` to show the task; `FALSE` to hide the task.  
+ TRUE to show the task; FALSE to hide the task.  
   
  [in] *bRedraw*  
- `TRUE` to redraw the task pane; otherwise, `FALSE`.  
+ TRUE to redraw the task pane; otherwise, FALSE.  
   
 ### Return Value  
- `TRUE` if the task was successfully shown or hidden; `FALSE` if a task with the specified command ID does not exist.  
+ TRUE if the task was successfully shown or hidden; FALSE if a task with the specified command ID does not exist.  
   
 ### Remarks  
  Use [CMFCTasksPane::ShowTask](#showtask) to show or hide a task based on its command ID.  

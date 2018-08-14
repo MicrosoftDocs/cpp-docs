@@ -58,7 +58,7 @@ class CAtlTransactionManager;
   
 |Name|Description|  
 |----------|-----------------|  
-|[m_bFallback](#m_bfallback)|`TRUE` if the fallback is supported; `FALSE` otherwise.|  
+|[m_bFallback](#m_bfallback)|TRUE if the fallback is supported; FALSE otherwise.|  
 |[m_hTransaction](#m_htransaction)|The transaction handle.|  
   
 ## Remarks  
@@ -87,11 +87,11 @@ CAtlTransactionManager(BOOL bFallback = TRUE, BOOL bAutoCreateTransaction = TRUE
 ```  
   
 ### Parameters  
- `bFallback`  
- `TRUE` indicates support fallback. If transacted function fails, the class automatically calls the "non-transacted" function. `FALSE` indicates no "fallback" calls.  
+ *bFallback*  
+ TRUE indicates support fallback. If transacted function fails, the class automatically calls the "non-transacted" function. FALSE indicates no "fallback" calls.  
   
- `bAutoCreateTransaction`  
- `TRUE` indicates that the transaction handler is created automatically in the constructor. `FALSE` indicates that it is not.  
+ *bAutoCreateTransaction*  
+ TRUE indicates that the transaction handler is created automatically in the constructor. FALSE indicates that it is not.  
   
 ### Remarks  
   
@@ -103,7 +103,7 @@ inline BOOL Close();
 ```  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  This wrapper calls the `CloseHandle` function. The method is automatically called in the destructor.  
@@ -116,7 +116,7 @@ inline BOOL Commit();
 ```  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  This wrapper calls the `CommitTransaction` function. The method is automatically called in the destructor.  
@@ -129,7 +129,7 @@ inline BOOL Create();
 ```  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  This wrapper calls the `CreateTransaction` function. Check it for  
@@ -149,26 +149,26 @@ inline HANDLE CreateFile(
 ```  
   
 ### Parameters  
- `lpFileName`  
+ *lpFileName*  
  The name of an object to be created or opened.  
   
- `dwDesiredAccess`  
+ *dwDesiredAccess*  
  The access to the object, which can be summarized as read, write, both, or neither (zero). The most commonly used values are GENERIC_READ, GENERIC_WRITE, or both: GENERIC_READ &#124; GENERIC_WRITE.  
   
- `dwShareMode`  
+ *dwShareMode*  
  The sharing mode of an object, which can be read, write, both, delete, all of these, or none: 0, FILE_SHARE_DELETE, FILE_SHARE_READ, FILE_SHARE_WRITE.  
   
- `lpSecurityAttributes`  
- A pointer to a SECURITY_ATTRIBUTES structure that contains an optional security descriptor and also determines whether or not the returned handle can be inherited by child processes. The parameter can be `NULL`.  
+ *lpSecurityAttributes*  
+ A pointer to a SECURITY_ATTRIBUTES structure that contains an optional security descriptor and also determines whether or not the returned handle can be inherited by child processes. The parameter can be NULL.  
   
- `dwCreationDisposition`  
+ *dwCreationDisposition*  
  An action to take on files that exist and do not exist. This parameter must be one of the following values, which cannot be combined: CREATE_ALWAYS, CREATE_NEW, OPEN_ALWAYS, OPEN_EXISTING, or TRUNCATE_EXISTING.  
   
- `dwFlagsAndAttributes`  
+ *dwFlagsAndAttributes*  
  The file attributes and flags. This parameter can include any combination of the available file attributes (FILE_ATTRIBUTE_*). All other file attributes override FILE_ATTRIBUTE_NORMAL. This parameter can also contain combinations of flags (FILE_FLAG_\*) for control of buffering behavior, access modes, and other special-purpose flags. These combine with any FILE_ATTRIBUTE_\* values.  
   
- `hTemplateFile`  
- A valid handle to a template file with the GENERIC_READ access right. The template file supplies file attributes and extended attributes for the file that is being created. This parameter can be `NULL`.  
+ *hTemplateFile*  
+ A valid handle to a template file with the GENERIC_READ access right. The template file supplies file attributes and extended attributes for the file that is being created. This parameter can be NULL.  
   
 ### Return Value  
  Returns a handle that can be used to access the object.  
@@ -184,7 +184,7 @@ inline BOOL DeleteFile(LPCTSTR lpFileName);
 ```  
   
 ### Parameters  
- `lpFileName`  
+ *lpFileName*  
  The name of the file to be deleted.  
   
 ### Remarks  
@@ -200,14 +200,14 @@ inline HANDLE FindFirstFile(
 ```  
   
 ### Parameters  
- `lpFileName`  
+ *lpFileName*  
  The directory or path, and the file name to search for. This parameter can include wildcard characters, such as an asterisk (*) or a question mark ().  
   
- `pNextInfo`  
+ *pNextInfo*  
  A pointer to the WIN32_FIND_DATA structure that receives information about a found file or subdirectory.  
   
 ### Return Value  
- If the function succeeds, the return value is a search handle used in a subsequent call to `FindNextFile` or `FindClose`. If the function fails or fails to locate files from the search string in the `lpFileName` parameter, the return value is INVALID_HANDLE_VALUE.  
+ If the function succeeds, the return value is a search handle used in a subsequent call to `FindNextFile` or `FindClose`. If the function fails or fails to locate files from the search string in the *lpFileName* parameter, the return value is INVALID_HANDLE_VALUE.  
   
 ### Remarks  
  This wrapper calls the `FindFirstFileTransacted` function.  
@@ -220,7 +220,7 @@ inline DWORD GetFileAttributes(LPCTSTR lpFileName);
 ```  
   
 ### Parameters  
- `lpFileName`  
+ *lpFileName*  
  The name of the file or directory.  
   
 ### Remarks  
@@ -237,14 +237,14 @@ inline BOOL GetFileAttributesEx(
 ```  
   
 ### Parameters  
- `lpFileName`  
+ *lpFileName*  
  The name of the file or directory.  
   
- `fInfoLevelId`  
+ *fInfoLevelId*  
  The level of attribute information to retrieve.  
   
- `lpFileInformation`  
- A pointer to a buffer that receives the attribute information. The type of attribute information that is stored into this buffer is determined by the value of `fInfoLevelId`. If the `fInfoLevelId` parameter is GetFileExInfoStandard then this parameter points to a WIN32_FILE_ATTRIBUTE_DATA structure.  
+ *lpFileInformation*  
+ A pointer to a buffer that receives the attribute information. The type of attribute information that is stored into this buffer is determined by the value of *fInfoLevelId*. If the *fInfoLevelId* parameter is GetFileExInfoStandard then this parameter points to a WIN32_FILE_ATTRIBUTE_DATA structure.  
   
 ### Remarks  
  This wrapper calls the `GetFileAttributesTransacted` function.  
@@ -257,7 +257,7 @@ HANDLE GetHandle() const;
 ```  
   
 ### Return Value  
- Returns the transaction handle for a class. Returns `NULL` if the `CAtlTransactionManager` is not attached to a handle.  
+ Returns the transaction handle for a class. Returns NULL if the `CAtlTransactionManager` is not attached to a handle.  
   
 ### Remarks  
   
@@ -269,12 +269,12 @@ BOOL IsFallback() const;
 ```  
   
 ### Return Value  
- Returns `TRUE` is the class supports fallback calls. `FALSE` otherwise.  
+ Returns TRUE is the class supports fallback calls. FALSE otherwise.  
   
 ### Remarks  
   
 ##  <a name="m_bfallback"></a>  m_bFallback  
- `TRUE` if the fallback is supported; `FALSE` otherwise.  
+ TRUE if the fallback is supported; FALSE otherwise.  
   
 ```
 BOOL m_bFallback;
@@ -299,10 +299,10 @@ inline BOOL MoveFile(LPCTSTR lpOldFileName, LPCTSTR lpNewFileName);
 ```  
   
 ### Parameters  
- `lpOldFileName`  
+ *lpOldFileName*  
  The current name of the existing file or directory on the local computer.  
   
- `lpNewFileName`  
+ *lpNewFileName*  
  The new name for the file or directory. This name must not already exist. A new file may be on a different file system or drive. A new directory must be on the same drive.  
   
 ### Remarks  
@@ -325,31 +325,31 @@ inline LSTATUS RegCreateKeyEx(
 ```  
   
 ### Parameters  
- `hKey`  
+ *hKey*  
  A handle to an open registry key.  
   
- `lpSubKey`  
+ *lpSubKey*  
  The name of a subkey that this function opens or creates.  
   
- `dwReserved`  
+ *dwReserved*  
  This parameter is reserved and must be zero.  
   
- `lpClass`  
+ *lpClass*  
  The user-defined class of this key. This parameter may be ignored. This parameter can be NULL.  
   
- `dwOptions`  
+ *dwOptions*  
  This parameter can be one of the following values: REG_OPTION_BACKUP_RESTORE, REG_OPTION_NON_VOLATILE, or REG_OPTION_VOLATILE.  
   
- `samDesired`  
+ *samDesired*  
  A mask that specifies the access rights for the key.  
   
- `lpSecurityAttributes`  
- Pointer to a SECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by child processes. If `lpSecurityAttributes` is `NULL`, the handle cannot be inherited.  
+ *lpSecurityAttributes*  
+ Pointer to a SECURITY_ATTRIBUTES structure that determines whether the returned handle can be inherited by child processes. If *lpSecurityAttributes* is NULL, the handle cannot be inherited.  
   
- `phkResult`  
+ *phkResult*  
  A pointer to a variable that receives a handle to the opened or created key. If the key is not one of the predefined registry keys, call the `RegCloseKey` function after you have finished using the handle.  
   
- `lpdwDisposition`  
+ *lpdwDisposition*  
  A pointer to a variable that receives one of the following disposition values: REG_CREATED_NEW_KEY or REG_OPENED_EXISTING_KEY.  
   
 ### Return Value  
@@ -369,8 +369,8 @@ inline LSTATUS RegDeleteKeyEx(HKEY hKey, LPCTSTR lpSubKey);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`hKey`|A handle to an open registry key.|  
-|`lpSubKey`|The name of the key to be deleted.|  
+|*hKey*|A handle to an open registry key.|  
+|*lpSubKey*|The name of the key to be deleted.|  
   
 ### Return Value  
  If the function succeeds, the return value is ERROR_SUCCESS. If the function fails, the return value is a nonzero error code defined in Winerror.h.  
@@ -391,19 +391,19 @@ inline LSTATUS RegOpenKeyEx(
 ```  
   
 ### Parameters  
- `hKey`  
+ *hKey*  
  A handle to an open registry key.  
   
- `lpSubKey`  
+ *lpSubKey*  
  The name of the registry subkey to be opened.  
   
- `ulOptions`  
+ *ulOptions*  
  This parameter is reserved and must be zero.  
   
- `samDesired`  
+ *samDesired*  
  A mask that specifies the access rights for the key.  
   
- `phkResult`  
+ *phkResult*  
  A pointer to a variable that receives a handle to the opened or created key. If the key is not one of the predefined registry keys, call the `RegCloseKey` function after you have finished using the handle.  
   
 ### Return Value  
@@ -420,7 +420,7 @@ inline BOOL Rollback();
 ```  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  This wrapper calls the `RollbackTransaction` function.  
@@ -433,10 +433,10 @@ inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
 ```  
   
 ### Parameters  
- `lpFileName`  
+ *lpFileName*  
  The name of the file or directory.  
   
- `dwAttributes`  
+ *dwAttributes*  
  The file attributes to set for the file. For more information, see [SetFileAttributesTransacted](http://go.microsoft.com/fwlink/p/?linkid=158699).  
   
 ### Remarks  

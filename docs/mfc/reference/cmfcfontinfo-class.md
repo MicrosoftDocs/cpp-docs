@@ -92,7 +92,7 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ### Return Value  
   
 ### Remarks  
- This documentation uses the terms *character set* and *script* interchangeably. A *script*, which is also known as a writing system, is a collection of characters and rules for writing those characters in one or more languages. The collection of characters includes the alphabet and punctuation used in that script. For example, Latin script is used for English as it is spoken in the United States, and its alphabet includes the characters from A through Z. The `lfCharSet` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure specifies a character set. For example, the value `ANSI_CHARSET` specifies the [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] character set, which includes the alphabet of the Latin script.  
+ This documentation uses the terms *character set* and *script* interchangeably. A *script*, which is also known as a writing system, is a collection of characters and rules for writing those characters in one or more languages. The collection of characters includes the alphabet and punctuation used in that script. For example, Latin script is used for English as it is spoken in the United States, and its alphabet includes the characters from A through Z. The `lfCharSet` member of the [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure specifies a character set. For example, the value ANSI_CHARSET specifies the [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] character set, which includes the alphabet of the Latin script.  
   
 ##  <a name="getfullname"></a>  CMFCFontInfo::GetFullName  
  Retrieves the concatenated names of a font and its character set (script).  
@@ -105,7 +105,7 @@ CString GetFullName() const;
  A string that contains the font name and script.  
   
 ### Remarks  
- Use this method to obtain the full name of the font. For example, if the font name is is `Arial` and the font script is `Cyrillic`, this method returns "Arial (Cyrillic)".  
+ Use this method to obtain the full name of the font. For example, if the font name is **Arial** and the font script is **Cyrillic**, this method returns "Arial (Cyrillic)".  
   
 ##  <a name="m_ncharset"></a>  CMFCFontInfo::m_nCharSet  
  A value that specifies the character set (script) associated with the font.  

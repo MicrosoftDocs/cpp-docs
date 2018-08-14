@@ -15,21 +15,20 @@ ms.workload: ["cplusplus"]
 # ConvertBSTRToString
 **Microsoft Specific**  
   
- Converts a `BSTR` value to a **char \***.  
+ Converts a `BSTR` value to a `char *`.  
   
 ## Syntax  
   
 ```  
-  
 char* __stdcall ConvertBSTRToString(BSTR pSrc);  
 ```  
   
 #### Parameters  
- `pSrc`  
+ *pSrc*  
  A BSTR variable.  
   
 ## Remarks  
- `ConvertBSTRToString` allocates a string you must delete.  
+ **ConvertBSTRToString** allocates a string you must delete.  
   
 ## Example  
   
@@ -60,9 +59,9 @@ char * text: Test
 **END Microsoft Specific**  
   
 ## Requirements  
- **Header:** \<comutil.h>.  
+ **Header:** \<comutil.h>  
   
  **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   
-## See Also  
+## See also  
  [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

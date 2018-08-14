@@ -104,29 +104,29 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 
 ### Parameters
 
-`Rep2`
+*Rep2*
  An arithmetic type to represent the number of ticks.
 
-`Period2`
+*Period2*
  A `std::ratio` template specialization to represent the tick period in units of seconds.
 
-`R`
+*R*
  The number of ticks of default period.
 
-`Dur`
- The number of ticks of period specified by `Period2`.
+*Dur*
+ The number of ticks of period specified by *Period2*.
 
 ### Remarks
 
 The default constructor constructs an object that is uninitialized. Value initialization by using empty braces initializes an object that represents a time interval of zero clock ticks.
 
-The second, one template argument constructor constructs an object that represents a time interval of `R` clock ticks using a default period of `std::ratio<1>`. To avoid round-off of tick counts, it is an error to construct a duration object from a representation type `Rep2` that can be treated as a floating-point type when `duration::rep` cannot be treated as a floating-point type.
+The second, one template argument constructor constructs an object that represents a time interval of *R* clock ticks using a default period of `std::ratio<1>`. To avoid round-off of tick counts, it is an error to construct a duration object from a representation type *Rep2* that can be treated as a floating-point type when `duration::rep` cannot be treated as a floating-point type.
 
-The third, two template argument constructor constructs an object that represents a time interval whose length is the time interval that is specified by `Dur`. To avoid truncation of tick counts, it is an error to construct a duration object from another duration object whose type is *incommensurable* with the target type.
+The third, two template argument constructor constructs an object that represents a time interval whose length is the time interval that is specified by *Dur*. To avoid truncation of tick counts, it is an error to construct a duration object from another duration object whose type is *incommensurable* with the target type.
 
 A duration type `D1` is *incommensurable* with another duration type `D2` if `D2` cannot be treated as a floating-point type and [ratio_divide\<D1::period, D2::period>::type::den](../standard-library/ratio.md) is not 1.
 
-Unless `Rep2` is implicitly convertible to `rep` and either `treat_as_floating_point<rep>`*holds true* or `treat_as_floating_point<Rep2>`*holds false*, the second constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
+Unless *Rep2* is implicitly convertible to `rep` and either `treat_as_floating_point<rep>`*holds true* or `treat_as_floating_point<Rep2>`*holds false*, the second constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
 Unless no overflow is induced in the conversion and `treat_as_floating_point<rep>`*holds true*,  or both `ratio_divide<Period2, period>::den` equals 1 and `treat_as_floating_point<Rep2>`*holds false*, the third constructor does not participate in overload resolution. For more information, see [<type_traits>](../standard-library/type-traits.md).
 
@@ -190,8 +190,8 @@ duration& operator%=(const duration& Div);
 
 ### Parameters
 
-`Div`
- For the first method, `Div` represents a tick count. For the second method, `Div` is a `duration` object that contains a tick count.
+*Div*
+ For the first method, *Div* represents a tick count. For the second method, *Div* is a `duration` object that contains a tick count.
 
 ### Return Value
 
@@ -207,7 +207,7 @@ duration& operator*=(const rep& Mult);
 
 ### Parameters
 
-`Mult`
+*Mult*
  A value of the type that is specified by `duration::rep`.
 
 ### Return Value
@@ -224,7 +224,7 @@ duration& operator/=(const rep& Div);
 
 ### Parameters
 
-`Div`
+*Div*
  A value of the type that is specified by `duration::rep`.
 
 ### Return Value
@@ -265,7 +265,7 @@ duration& operator+=(const duration& Dur);
 
 ### Parameters
 
-`Dur`
+*Dur*
  A `duration` object.
 
 ### Return Value
@@ -282,7 +282,7 @@ duration& operator-=(const duration& Dur);
 
 ### Parameters
 
-`Dur`
+*Dur*
  A `duration` object.
 
 ### Return Value
@@ -307,7 +307,7 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 
 ### Parameters
 
-`Div`
+*Div*
  The divisor, which is either a duration object or a value that represents tick counts.
 
 ### Remarks

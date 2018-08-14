@@ -70,7 +70,7 @@ These functions validate their parameters. If *stream* or *format* is a null poi
 
 The **fscanf** function reads data from the current position of *stream* into the locations given by *argument* (if any). Each *argument* must be a pointer to a variable of a type that corresponds to a type specifier in *format*. *format* controls the interpretation of the input fields and has the same form and function as the *format* argument for **scanf**; see [scanf](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *format*.
 
-**fwscanf** is a wide-character version of **fscanf**; the format argument to **fwscanf** is a wide-character string. These functions behave identically identically if the stream is opened in ANSI mode. **fscanf** doesn't currently support input from a UNICODE stream.
+**fwscanf** is a wide-character version of **fscanf**; the format argument to **fwscanf** is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **fscanf** doesn't currently support input from a UNICODE stream.
 
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 

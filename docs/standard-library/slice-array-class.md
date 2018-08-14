@@ -47,7 +47,7 @@ The template class is created indirectly by certain valarray operations and cann
 
 `slice_array`\< **Type**> `valarray`< **Type**:: `operator[]` ( `slice`).
 
-You construct a **slice_array\<Type>** object only by writing an expression of the form [va&#91;sl&#93;](../standard-library/valarray-class.md#op_at), for a slice **sl** of valarray **va**. The member functions of class slice_array then behave like the corresponding function signatures defined for **valarray\<Type>**, except that only the sequence of selected elements is affected. The sequence controlled by the slice_array is defined by the three parameters of the slice constructor, the index of the first element in the slice, the number of elements, and the distance between the elements. A slice_array cut from valarray **va** declared by **va**[ `slice`(2, 5, 3)] selects elements with indices 2, 5, 8, 11, and 14 from **va**. The indices must be valid for the procedure to be valid.
+You construct a `slice_array<Type>` object only by writing an expression of the form [va&#91;sl&#93;](../standard-library/valarray-class.md#op_at), for a slice `sl` of valarray `va`. The member functions of class slice_array then behave like the corresponding function signatures defined for `valarray<Type>`, except that only the sequence of selected elements is affected. The sequence controlled by the slice_array is defined by the three parameters of the slice constructor, the index of the first element in the slice, the number of elements, and the distance between the elements. A slice_array cut from valarray `va` declared by **va**[ `slice`(2, 5, 3)] selects elements with indices 2, 5, 8, 11, and 14 from `va`. The indices must be valid for the procedure to be valid.
 
 ## Example
 

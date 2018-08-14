@@ -22,15 +22,15 @@ inline bool operator<(
     const HStringReference& rhs) throw()  
 ```  
   
-#### Parameters  
- `lhs`  
- The first parameter to compare. `lhs` can be a reference to an HStringReference.  
+### Parameters  
+ *lhs*  
+ The first parameter to compare. *lhs* can be a reference to an **HStringReference**.  
   
- `rhs`  
- The second parameter to compare.  `rhs` can be a reference to an HStringReference.  
+ *rhs*  
+ The second parameter to compare.  *rhs* can be a reference to an **HStringReference**.  
   
 ## Return Value  
- `true` if the `lhs` parameter is less than the `rhs` parameter; otherwise, `false`.  
+ **true** if the *lhs* parameter is less than the *rhs* parameter; otherwise, **false**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

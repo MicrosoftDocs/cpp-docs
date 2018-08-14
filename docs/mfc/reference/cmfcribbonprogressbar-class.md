@@ -141,7 +141,7 @@ BOOL IsInfiniteMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the progress bar is in infinite mode; otherwise, `FALSE`.  
+ TRUE if the progress bar is in infinite mode; otherwise, FALSE.  
   
 ### Remarks  
  In infinite mode, the progress bar fills repeatedly from the minimum value to the maximum value. You might use infinite mode to indicate that an operation is ongoing, but that the completion time is unknown.  
@@ -167,7 +167,7 @@ void SetInfiniteMode(BOOL bSet = TRUE);
   
 ### Parameters  
  [in] *bSet*  
- `TRUE` to specify that the progress bar is in infinite mode; otherwise, `FALSE`.  
+ TRUE to specify that the progress bar is in infinite mode; otherwise, FALSE.  
   
 ### Remarks  
  Usually, if the progress bar is in infinite mode, it is telling the user that an operation is ongoing, but that the completion time is unknown. Thus, the progress bar fills repeatedly from the minimum value to the maximum value.  

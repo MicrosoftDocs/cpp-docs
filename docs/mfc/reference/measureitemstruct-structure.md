@@ -29,19 +29,19 @@ typedef struct tagMEASUREITEMSTRUCT {
 ```  
   
 #### Parameters  
- `CtlType`  
+ *CtlType*  
  Contains the control type. The values for control types are as follows:  
   
-- **ODT_COMBOBOX** Owner-draw combo box  
+- ODT_COMBOBOX Owner-draw combo box  
   
-- **ODT_LISTBOX** Owner-draw list box  
+- ODT_LISTBOX Owner-draw list box  
   
-- **ODT_MENU** Owner-draw menu  
+- ODT_MENU Owner-draw menu  
   
- `CtlID`  
+ *CtlID*  
  Contains the control ID for a combo box, list box, or button. This member is not used for a menu.  
   
- `itemID`  
+ *itemID*  
  Contains the menu-item ID for a menu or the list-box-item ID for a variable-height combo box or list box. This member is not used for a fixed-height combo box or list box, or for a button.  
   
  *itemWidth*  
@@ -50,7 +50,7 @@ typedef struct tagMEASUREITEMSTRUCT {
  *itemHeight*  
  Specifies the height of an individual item in a list box or a menu. Before it returns from the message, the owner of the owner-draw combo box, list box, or menu item must fill out this member. The maximum height of a list box item is 255.  
   
- `itemData`  
+ *itemData*  
  For a combo box or list box, this member contains the value that was passed to the list box by one of the following:  
   
 - [CComboBox::AddString](../../mfc/reference/ccombobox-class.md#addstring)  

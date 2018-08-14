@@ -40,7 +40,7 @@ class CObArray : public CObject
 |[CObArray::FreeExtra](#freeextra)|Frees all unused memory above the current upper bound.|  
 |[CObArray::GetAt](#getat)|Returns the value at a given index.|  
 |[CObArray::GetCount](#getcount)|Gets the number of elements in this array.|  
-|[CObArray::GetData](#getdata)|Allows access to elements in the array. Can be **NULL**.|  
+|[CObArray::GetData](#getdata)|Allows access to elements in the array. Can be NULL.|  
 |[CObArray::GetSize](#getsize)|Gets the number of elements in this array.|  
 |[CObArray::GetUpperBound](#getupperbound)|Returns the largest valid index.|  
 |[CObArray::InsertAt](#insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
@@ -409,7 +409,7 @@ INT_PTR GetUpperBound() const;
 ### Remarks  
  Because array indexes are zero-based, this function returns a value 1 less than `GetSize`.  
   
- The condition **GetUpperBound( )** = -1 indicates that the array contains no elements.  
+ The condition `GetUpperBound( )` = -1 indicates that the array contains no elements.  
   
  The following table shows other member functions that are similar to `CObArray::GetUpperBound`.  
   
@@ -447,7 +447,7 @@ void InsertAt(
  An integer index that may be greater than the value returned by `GetUpperBound`.  
   
  *newElement*  
- The `CObject` pointer to be placed in this array. A *newElement* of value **NULL** is allowed.  
+ The `CObject` pointer to be placed in this array. A *newElement* of value NULL is allowed.  
   
  *nCount*  
  The number of times this element should be inserted (defaults to 1).  
@@ -514,7 +514,7 @@ CObject* operator[](int_ptr nindex) const;
   
  The Debug version of the library asserts if the subscript (either on the left or right side of an assignment statement) is out of bounds.  
   
- The following table shows other operators that are similar to **CObArray::operator []**.  
+ The following table shows other operators that are similar to `CObArray::operator []`.  
   
 |Class|Operator|  
 |-----------|--------------|  
@@ -617,7 +617,7 @@ void SetAt(
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `GetUpperBound`.  
   
  *newElement*  
- The object pointer to be inserted in this array. A **NULL** value is allowed.  
+ The object pointer to be inserted in this array. A NULL value is allowed.  
   
 ### Remarks  
  `SetAt` will not cause the array to grow. Use `SetAtGrow` if you want the array to grow automatically.  
@@ -662,7 +662,7 @@ void SetAtGrow(
  An integer index that is greater than or equal to 0.  
   
  *newElement*  
- The object pointer to be added to this array. A **NULL** value is allowed.  
+ The object pointer to be added to this array. A NULL value is allowed.  
   
 ### Remarks  
  The array grows automatically if necessary (that is, the upper bound is adjusted to accommodate the new element).  

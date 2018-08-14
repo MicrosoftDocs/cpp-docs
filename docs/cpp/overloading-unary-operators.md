@@ -32,7 +32,7 @@ The unary operators that can be overloaded are the following:
   
 9. conversion operators  
   
- The postfix increment and decrement operators (`++` and **--**) are treated separately in [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
+ The postfix increment and decrement operators (`++` and `--`) are treated separately in [Increment and Decrement](../cpp/increment-and-decrement-operator-overloading-cpp.md).  
   
  Conversion operators are also discussed in a separate topic; see [User-Defined Type Conversions](../cpp/user-defined-type-conversions-cpp.md).  
   
@@ -51,5 +51,5 @@ The unary operators that can be overloaded are the following:
 > [!NOTE]
 >  There is no restriction on the return types of the unary operators. For example, it makes sense for logical NOT (`!`) to return an integral value, but this is not enforced.  
   
-## See Also  
+## See also  
  [Operator Overloading](../cpp/operator-overloading.md)

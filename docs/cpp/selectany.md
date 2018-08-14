@@ -28,15 +28,15 @@ __declspec( selectany ) declarator
   
  Constructors and assignment by global function or static methods in the declaration do not create a reference and will not prevent /OPT:REF elimination. Side effects from such code should not be depended on when no other references to the data exist.  
   
- For dynamically initialized, global objects, `selectany` will discard an unreferenced object's initialization code, as well.  
+ For dynamically initialized, global objects, **selectany** will discard an unreferenced object's initialization code, as well.  
   
- A global data item can normally be initialized only once in an EXE or DLL project. `selectany` can be used in initializing global data defined by headers, when the same header appears in more than one source file. `selectany` is available in both the C and C++ compilers.  
+ A global data item can normally be initialized only once in an EXE or DLL project. **selectany** can be used in initializing global data defined by headers, when the same header appears in more than one source file. **selectany** is available in both the C and C++ compilers.  
   
 > [!NOTE]
->  `selectany` can only be applied to the actual initialization of global data items that are externally visible.  
+>  **selectany** can only be applied to the actual initialization of global data items that are externally visible.  
   
 ## Example  
- This code shows how to use the `selectany` attribute:  
+ This code shows how to use the **selectany** attribute:  
   
 ```cpp 
 //Correct - x1 is initialized and externally visible   
@@ -69,7 +69,7 @@ __declspec(selectany) X x(1);
 ```  
   
 ## Example  
- This code shows how to use the `selectany` attribute to ensure data COMDAT folding when you also use the [/OPT:ICF](../build/reference/opt-optimizations.md) linker option. Note that data must be marked with `selectany` and placed in a **const** (readonly) section. You must explicitly specify the read-only section.  
+ This code shows how to use the **selectany** attribute to ensure data COMDAT folding when you also use the [/OPT:ICF](../build/reference/opt-optimizations.md) linker option. Note that data must be marked with **selectany** and placed in a **const** (readonly) section. You must explicitly specify the read-only section.  
   
 ```cpp 
 // selectany2.cpp  
@@ -84,6 +84,6 @@ int main() {
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)

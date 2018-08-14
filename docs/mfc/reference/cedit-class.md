@@ -36,9 +36,9 @@ class CEdit : public CWnd
 |[CEdit::CanUndo](#canundo)|Determines whether an edit-control operation can be undone.|  
 |[CEdit::CharFromPos](#charfrompos)|Retrieves the line and character indexes for the character closest to a specified position.|  
 |[CEdit::Clear](#clear)|Deletes (clears) the current selection (if any) in the edit control.|  
-|[CEdit::Copy](#copy)|Copies the current selection (if any) in the edit control to the Clipboard in **CF_TEXT** format.|  
+|[CEdit::Copy](#copy)|Copies the current selection (if any) in the edit control to the Clipboard in CF_TEXT format.|  
 |[CEdit::Create](#create)|Creates the Windows edit control and attaches it to the `CEdit` object.|  
-|[CEdit::Cut](#cut)|Deletes (cuts) the current selection (if any) in the edit control and copies the deleted text to the Clipboard in **CF_TEXT** format.|  
+|[CEdit::Cut](#cut)|Deletes (cuts) the current selection (if any) in the edit control and copies the deleted text to the Clipboard in CF_TEXT format.|  
 |[CEdit::EmptyUndoBuffer](#emptyundobuffer)|Resets (clears) the undo flag of an edit control.|  
 |[CEdit::FmtLines](#fmtlines)|Sets the inclusion of soft line-break characters on or off within a multiple-line edit control.|  
 |[CEdit::GetCueBanner](#getcuebanner)|Retrieves the text that is displayed as the text cue, or tip, in an edit control when the control is empty and does not have focus.|  
@@ -59,7 +59,7 @@ class CEdit : public CWnd
 |[CEdit::LineIndex](#lineindex)|Retrieves the character index of a line within a multiple-line edit control.|  
 |[CEdit::LineLength](#linelength)|Retrieves the length of a line in an edit control.|  
 |[CEdit::LineScroll](#linescroll)|Scrolls the text of a multiple-line edit control.|  
-|[CEdit::Paste](#paste)|Inserts the data from the Clipboard into the edit control at the current cursor position. Data is inserted only if the Clipboard contains data in **CF_TEXT** format.|  
+|[CEdit::Paste](#paste)|Inserts the data from the Clipboard into the edit control at the current cursor position. Data is inserted only if the Clipboard contains data in CF_TEXT format.|  
 |[CEdit::PosFromChar](#posfromchar)|Retrieves the coordinates of the upper-left corner of a specified character index.|  
 |[CEdit::ReplaceSel](#replacesel)|Replaces the current selection in an edit control with the specified text.|  
 |[CEdit::SetCueBanner](#setcuebanner)|Sets the text that is displayed as the text cue, or tip, in an edit control when the control is empty and does not have focus.|  
@@ -100,21 +100,21 @@ class CEdit : public CWnd
   
  Following is a list of potential message-map entries and a description of the cases in which they would be sent to the parent:  
   
-- **ON_EN_CHANGE** The user has taken an action that may have altered text in an edit control. Unlike the **EN_UPDATE** notification message, this notification message is sent after Windows updates the display.  
+- ON_EN_CHANGE The user has taken an action that may have altered text in an edit control. Unlike the EN_UPDATE notification message, this notification message is sent after Windows updates the display.  
   
-- **ON_EN_ERRSPACE** The edit control cannot allocate enough memory to meet a specific request.  
+- ON_EN_ERRSPACE The edit control cannot allocate enough memory to meet a specific request.  
   
-- **ON_EN_HSCROLL** The user clicks an edit control's horizontal scroll bar. The parent window is notified before the screen is updated.  
+- ON_EN_HSCROLL The user clicks an edit control's horizontal scroll bar. The parent window is notified before the screen is updated.  
   
-- **ON_EN_KILLFOCUS** The edit control loses the input focus.  
+- ON_EN_KILLFOCUS The edit control loses the input focus.  
   
-- **ON_EN_MAXTEXT** The current insertion has exceeded the specified number of characters for the edit control and has been truncated. Also sent when an edit control does not have the **ES_AUTOHSCROLL** style and the number of characters to be inserted would exceed the width of the edit control. Also sent when an edit control does not have the **ES_AUTOVSCROLL** style and the total number of lines resulting from a text insertion would exceed the height of the edit control.  
+- ON_EN_MAXTEXT The current insertion has exceeded the specified number of characters for the edit control and has been truncated. Also sent when an edit control does not have the ES_AUTOHSCROLL style and the number of characters to be inserted would exceed the width of the edit control. Also sent when an edit control does not have the ES_AUTOVSCROLL style and the total number of lines resulting from a text insertion would exceed the height of the edit control.  
   
-- **ON_EN_SETFOCUS** Sent when an edit control receives the input focus.  
+- ON_EN_SETFOCUS Sent when an edit control receives the input focus.  
   
-- **ON_EN_UPDATE** The edit control is about to display altered text. Sent after the control has formatted the text but before it screens the text so that the window size can be altered, if necessary.  
+- ON_EN_UPDATE The edit control is about to display altered text. Sent after the control has formatted the text but before it screens the text so that the window size can be altered, if necessary.  
   
-- **ON_EN_VSCROLL** The user clicks an edit control's vertical scroll bar. The parent window is notified before the screen is updated.  
+- ON_EN_VSCROLL The user clicks an edit control's vertical scroll bar. The parent window is notified before the screen is updated.  
   
  If you create a `CEdit` object within a dialog box, the `CEdit` object is automatically destroyed when the user closes the dialog box.  
   
@@ -122,7 +122,7 @@ class CEdit : public CWnd
   
  If you create a `CEdit` object within a window, you may also need to destroy it. If you create the `CEdit` object on the stack, it is destroyed automatically. If you create the `CEdit` object on the heap by using the **new** function, you must call **delete** on the object to destroy it when the user terminates the Windows edit control. If you allocate any memory in the `CEdit` object, override the `CEdit` destructor to dispose of the allocations.  
   
- To modify certain styles in an edit control (such as **ES_READONLY**) you must send specific messages to the control instead of using [ModifyStyle](cwnd-class.md#modifystyle). See [Edit Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775464) in the Windows SDK.  
+ To modify certain styles in an edit control (such as ES_READONLY) you must send specific messages to the control instead of using [ModifyStyle](cwnd-class.md#modifystyle). See [Edit Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775464) in the Windows SDK.  
   
  For more information on `CEdit`, see:  
   
@@ -183,7 +183,7 @@ int CharFromPos(CPoint pt) const;
  The coordinates of a point in the client area of this `CEdit` object.  
   
 ### Return Value  
- The character index in the low-order **WORD**, and the line index in the high-order **WORD**.  
+ The character index in the low-order WORD, and the line index in the high-order WORD.  
   
 ### Remarks  
   
@@ -213,7 +213,7 @@ void Clear();
  [!code-cpp[NVC_MFC_CEdit#4](../../mfc/reference/codesnippet/cpp/cedit-class_3.cpp)]  
   
 ##  <a name="copy"></a>  CEdit::Copy  
- Call this function to coy the current selection (if any) in the edit control to the Clipboard in **CF_TEXT** format.  
+ Call this function to coy the current selection (if any) in the edit control to the Clipboard in CF_TEXT format.  
   
 ```  
 void Copy();
@@ -244,7 +244,7 @@ virtual BOOL Create(
  Specifies the edit control's size and position. Can be a `CRect` object or `RECT` structure.  
   
  *pParentWnd*  
- Specifies the edit control's parent window (usually a `CDialog`). It must not be **NULL**.  
+ Specifies the edit control's parent window (usually a `CDialog`). It must not be NULL.  
   
  *nID*  
  Specifies the edit control's ID.  
@@ -261,21 +261,21 @@ virtual BOOL Create(
   
  Apply the following [window styles](styles-used-by-mfc.md#window-styles) to an edit control.  
   
-- **WS_CHILD** Always  
+- WS_CHILD Always  
   
-- **WS_VISIBLE** Usually  
+- WS_VISIBLE Usually  
   
-- **WS_DISABLED** Rarely  
+- WS_DISABLED Rarely  
   
-- **WS_GROUP** To group controls  
+- WS_GROUP To group controls  
   
-- **WS_TABSTOP** To include edit control in the tabbing order  
+- WS_TABSTOP To include edit control in the tabbing order  
   
 ### Example  
  [!code-cpp[NVC_MFC_CEdit#2](../../mfc/reference/codesnippet/cpp/cedit-class_5.cpp)]  
   
 ##  <a name="cut"></a>  CEdit::Cut  
- Call this function to delete (cut) the current selection (if any) in the edit control and copy the deleted text to the Clipboard in **CF_TEXT** format.  
+ Call this function to delete (cut) the current selection (if any) in the edit control and copy the deleted text to the Clipboard in CF_TEXT format.  
   
 ```  
 void Cut();
@@ -317,7 +317,7 @@ BOOL FmtLines(BOOL bAddEOL);
   
 ### Parameters  
  *bAddEOL*  
- Specifies whether soft line-break characters are to be inserted. A value of **TRUE** inserts the characters; a value of **FALSE** removes them.  
+ Specifies whether soft line-break characters are to be inserted. A value of TRUE inserts the characters; a value of FALSE removes them.  
   
 ### Return Value  
  Nonzero if any formatting occurs; otherwise 0.  
@@ -350,10 +350,10 @@ CString GetCueBanner() const;
  A pointer to a string that contains the cue text.  
   
  [in] *cchText*  
- The number of characters that can be received. This number includes the terminating `NULL` character.  
+ The number of characters that can be received. This number includes the terminating NULL character.  
   
 ### Return Value  
- For the first overload, `true` if the method is successful; otherwise `false`.  
+ For the first overload, TRUE if the method is successful; otherwise FALSE.  
   
  For the second overload, a [CString](../../atl-mfc-shared/using-cstring.md) that contains the cue text if the method is successful; otherwise, the empty string ("").  
   
@@ -389,12 +389,12 @@ HLOCAL GetHandle() const;
 ### Remarks  
  The handle is a local memory handle and may be used by any of the **Local** Windows memory functions that take a local memory handle as a parameter.  
   
- **GetHandle** is processed only by multiple-line edit controls.  
+ `GetHandle` is processed only by multiple-line edit controls.  
   
- Call **GetHandle** for a multiple-line edit control in a dialog box only if the dialog box was created with the **DS_LOCALEDIT** style flag set. If the **DS_LOCALEDIT** style is not set, you will still get a nonzero return value, but you will not be able to use the returned value.  
+ Call `GetHandle` for a multiple-line edit control in a dialog box only if the dialog box was created with the DS_LOCALEDIT style flag set. If the DS_LOCALEDIT style is not set, you will still get a nonzero return value, but you will not be able to use the returned value.  
   
 > [!NOTE]
-> **GetHandle** will not work with Windows 95/98. If you call **GetHandle** in Windows 95/98, it will return **NULL**. **GetHandle** will work as documented under Windows NT, versions 3.51 and later.  
+> `GetHandle` will not work with Windows 95/98. If you call `GetHandle` in Windows 95/98, it will return NULL. `GetHandle` will work as documented under Windows NT, versions 3.51 and later.  
   
  For more information, see [EM_GETHANDLE](http://msdn.microsoft.com/library/windows/desktop/bb761576) in the Windows SDK.  
   
@@ -418,7 +418,7 @@ BOOL GetHighlight(
 |[out] *pichEnd*|Zero-based index of the last character in the range of text that is highlighted.|  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method sends the [EM_GETHILITE](http://msdn.microsoft.com/library/windows/desktop/bb761578) message, which is described in the Windows SDK.  
@@ -505,7 +505,7 @@ DWORD GetMargins() const;
 ```  
   
 ### Return Value  
- The width of the left margin in the low-order **WORD** and the width of the right margin in the high-order **WORD**.  
+ The width of the left margin in the low-order WORD and the width of the right margin in the high-order WORD.  
   
 ### Remarks  
  Margins are measured in pixels.  
@@ -544,10 +544,10 @@ TCHAR GetPasswordChar() const;
 ```  
   
 ### Return Value  
- Specifies the character to be displayed instead of the character that the user typed. The return value is `NULL` if no password character exists.  
+ Specifies the character to be displayed instead of the character that the user typed. The return value is NULL if no password character exists.  
   
 ### Remarks  
- If you create the edit control with the **ES_PASSWORD** style, the DLL that supports the control determines the default password character. The manifest or the [InitCommonControlsEx](http://msdn.microsoft.com/library/windows/desktop/bb775697) method determines which DLL supports the edit control. If user32.dll supports the edit control, the default password character is ASTERISK ('*', U+002A). If comctl32.dll version 6 supports the edit control, the default character is BLACK CIRCLE ('●', U+25CF). For more information about which DLL and version supports the common controls, see [Shell and Common Controls Versions](http://msdn.microsoft.com/library/windows/desktop/bb776779).  
+ If you create the edit control with the ES_PASSWORD style, the DLL that supports the control determines the default password character. The manifest or the [InitCommonControlsEx](http://msdn.microsoft.com/library/windows/desktop/bb775697) method determines which DLL supports the edit control. If user32.dll supports the edit control, the default password character is ASTERISK ('*', U+002A). If comctl32.dll version 6 supports the edit control, the default character is BLACK CIRCLE ('●', U+25CF). For more information about which DLL and version supports the common controls, see [Shell and Common Controls Versions](http://msdn.microsoft.com/library/windows/desktop/bb776779).  
   
  This method sends the [EM_GETPASSWORDCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761594) message, which is described in the Windows SDK.  
   
@@ -594,7 +594,7 @@ void GetSel(
  Reference to an integer that will receive the position of the first nonselected character past the end of the current selection.  
   
 ### Return Value  
- The version that returns a `DWORD` returns a value that contains the starting position in the low-order word and the position of the first nonselected character after the end of the selection in the high-order word.  
+ The version that returns a DWORD returns a value that contains the starting position in the low-order word and the position of the first nonselected character after the end of the selection in the high-order word.  
   
 ### Remarks  
  For more information, see [EM_GETSEL](http://msdn.microsoft.com/library/windows/desktop/bb761598) in the Windows SDK.  
@@ -610,7 +610,7 @@ BOOL HideBalloonTip();
 ```  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This function sends the [EM_HIDEBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb761604) message, which is described in the Windows SDK.  
@@ -624,7 +624,7 @@ void LimitText(int nChars = 0);
   
 ### Parameters  
  *nChars*  
- Specifies the length (in bytes) of the text that the user can enter. If this parameter is 0, the text length is set to **UINT_MAX** bytes. This is the default behavior.  
+ Specifies the length (in bytes) of the text that the user can enter. If this parameter is 0, the text length is set to UINT_MAX bytes. This is the default behavior.  
   
 ### Remarks  
  Changing the text limit restricts only the text the user can enter. It has no effect on any text already in the edit control, nor does it affect the length of the text copied to the edit control by the [SetWindowText](cwnd-class.md#setwindowtext) member function in `CWnd`. If an application uses the `SetWindowText` function to place more text into an edit control than is specified in the call to `LimitText`, the user can delete any of the text within the edit control. However, the text limit will prevent the user from replacing the existing text with new text, unless deleting the current selection causes the text to fall below the text limit.  
@@ -697,15 +697,15 @@ int LineLength(int nLine = -1) const;
  The zero-based index of a character in the line whose length is to be retrieved. The default value is -1.  
   
 ### Return Value  
- For single-line edit controls, the return value is the length, in `TCHAR`s, of the text in the edit control.  
+ For single-line edit controls, the return value is the length, in TCHARs, of the text in the edit control.  
   
- For multiline edit controls, the return value is the length, in `TCHAR`s, of the line specified by the *nLine* parameter. For [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] text, the length is the number of bytes in the line; for Unicode text, the length is the number of characters in the line. The length does not include the carriage-return character at the end of the line.  
+ For multiline edit controls, the return value is the length, in TCHARs, of the line specified by the *nLine* parameter. For [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] text, the length is the number of bytes in the line; for Unicode text, the length is the number of characters in the line. The length does not include the carriage-return character at the end of the line.  
   
  If the *nLine* parameter is more than the number of characters in the control, the return value is zero.  
   
  If the *nLine* parameter is -1, the return value is the number of unselected characters in the lines that contain selected characters. For example, if the selection extends from the fourth character of one line through the eighth character from the end of the next line, the return value is 10. That is, three characters on the first line and seven on the next.  
   
- For more information about the `TCHAR` type, see the `TCHAR` row in the table in [Windows Data Types](http://msdn.microsoft.com/library/windows/desktop/aa383751).  
+ For more information about the TCHAR type, see the TCHAR row in the table in [Windows Data Types](http://msdn.microsoft.com/library/windows/desktop/aa383751).  
   
 ### Remarks  
  This method is supported by the [EM_LINELENGTH](http://msdn.microsoft.com/library/windows/desktop/bb761613) message, which is described in the Windows SDK.  
@@ -727,7 +727,7 @@ void LineScroll(
  Specifies the number of lines to scroll vertically.  
   
  *nChars*  
- Specifies the number of character positions to scroll horizontally. This value is ignored if the edit control has either the **ES_RIGHT** or **ES_CENTER** style.  
+ Specifies the number of character positions to scroll horizontally. This value is ignored if the edit control has either the ES_RIGHT or ES_CENTER style.  
   
 ### Remarks  
  This member function is processed only by multiple-line edit controls.  
@@ -749,7 +749,7 @@ void Paste();
 ```  
   
 ### Remarks  
- Data is inserted only if the Clipboard contains data in **CF_TEXT** format.  
+ Data is inserted only if the Clipboard contains data in CF_TEXT format.  
   
  For more information, see [WM_PASTE](http://msdn.microsoft.com/library/windows/desktop/ms649028) in the Windows SDK.  
   
@@ -793,7 +793,7 @@ void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
  Points to a null-terminated string containing the replacement text.  
   
  *bCanUndo*  
- To specify that this function can be undone, set the value of this parameter to **TRUE** . The default value is **FALSE**.  
+ To specify that this function can be undone, set the value of this parameter to TRUE . The default value is FALSE.  
   
 ### Remarks  
  Replaces only a portion of the text in an edit control. If you want to replace all of the text, use the [CWnd::SetWindowText](cwnd-class.md#setwindowtext) member function.  
@@ -822,14 +822,14 @@ BOOL SetCueBanner(
  Pointer to a string that contains the cue to display in the edit control.  
   
  [in] *fDrawWhenFocused*  
- If `false`, the cue banner is not drawn when the user clicks in the edit control and gives the control the focus.  
+ If FALSE, the cue banner is not drawn when the user clicks in the edit control and gives the control the focus.  
   
- If `true`, the cue banner is drawn even when the control has focus. The cue banner disappears when the user starts to type in the control.  
+ If TRUE, the cue banner is drawn even when the control has focus. The cue banner disappears when the user starts to type in the control.  
   
- The default value is `false`.  
+ The default value is FALSE.  
   
 ### Return Value  
- `true` if the method is successful; otherwise `false`.  
+ TRUE if the method is successful; otherwise FALSE.  
   
 ### Remarks  
  This method sends the [EM_SETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb761639) message, which is described in the Windows SDK. For more information, see the [Edit_SetCueBannerTextFocused](http://msdn.microsoft.com/library/windows/desktop/bb761703) macro.  
@@ -848,21 +848,21 @@ void SetHandle(HLOCAL hBuffer);
   
 ### Parameters  
  *hBuffer*  
- Contains a handle to the local memory. This handle must have been created by a previous call to the [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723) Windows function using the **LMEM_MOVEABLE** flag. The memory is assumed to contain a null-terminated string. If this is not the case, the first byte of the allocated memory should be set to 0.  
+ Contains a handle to the local memory. This handle must have been created by a previous call to the [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723) Windows function using the LMEM_MOVEABLE flag. The memory is assumed to contain a null-terminated string. If this is not the case, the first byte of the allocated memory should be set to 0.  
   
 ### Remarks  
  The edit control will then use this buffer to store the currently displayed text instead of allocating its own buffer.  
   
  This member function is processed only by multiple-line edit controls.  
   
- Before an application sets a new memory handle, it should use the [GetHandle](#gethandle) member function to get the handle to the current memory buffer and free that memory using the **LocalFree** Windows function.  
+ Before an application sets a new memory handle, it should use the [GetHandle](#gethandle) member function to get the handle to the current memory buffer and free that memory using the `LocalFree` Windows function.  
   
  `SetHandle` clears the undo buffer (the [CanUndo](#canundo) member function then returns 0) and the internal modification flag (the [GetModify](#getmodify) member function then returns 0). The edit-control window is redrawn.  
   
- You can use this member function in a multiple-line edit control in a dialog box only if you have created the dialog box with the **DS_LOCALEDIT** style flag set.  
+ You can use this member function in a multiple-line edit control in a dialog box only if you have created the dialog box with the DS_LOCALEDIT style flag set.  
   
 > [!NOTE]
-> **GetHandle** will not work with Windows 95/98. If you call **GetHandle** in Windows 95/98, it will return **NULL**. **GetHandle** will work as documented under Windows NT, versions 3.51 and later.  
+> `GetHandle` will not work with Windows 95/98. If you call `GetHandle` in Windows 95/98, it will return NULL. `GetHandle` will work as documented under Windows NT, versions 3.51 and later.  
   
  For more information, see [EM_SETHANDLE](http://msdn.microsoft.com/library/windows/desktop/bb761641), [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723), and [LocalFree](http://msdn.microsoft.com/library/windows/desktop/aa366730) in the Windows SDK.  
   
@@ -946,7 +946,7 @@ void SetModify(BOOL bModified = TRUE);
   
 ### Parameters  
  *bModified*  
- A value of **TRUE** indicates that the text has been modified, and a value of **FALSE** indicates it is unmodified. By default, the modified flag is set.  
+ A value of TRUE indicates that the text has been modified, and a value of FALSE indicates it is unmodified. By default, the modified flag is set.  
   
 ### Remarks  
  The modified flag indicates whether or not the text within the edit control has been modified. It is automatically set whenever the user changes the text. Its value may be retrieved with the [GetModify](#getmodify) member function.  
@@ -990,7 +990,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
   
 ### Parameters  
  *bReadOnly*  
- Specifies whether to set or remove the read-only state of the edit control. A value of **TRUE** sets the state to read-only; a value of **FALSE** sets the state to read/write.  
+ Specifies whether to set or remove the read-only state of the edit control. A value of TRUE sets the state to read-only; a value of FALSE sets the state to read/write.  
   
 ### Return Value  
  Nonzero if the operation is successful, or 0 if an error occurs.  
@@ -1075,7 +1075,7 @@ void SetSel(
  Specifies the starting position in the low-order word and the ending position in the high-order word. If the low-order word is 0 and the high-order word is -1, all the text in the edit control is selected. If the low-order word is -1, any current selection is removed.  
   
  *bNoScroll*  
- Indicates whether the caret should be scrolled into view. If **FALSE**, the caret is scrolled into view. If **TRUE**, the caret is not scrolled into view.  
+ Indicates whether the caret should be scrolled into view. If FALSE, the caret is scrolled into view. If TRUE, the caret is not scrolled into view.  
   
  *nStartChar*  
  Specifies the starting position. If *nStartChar* is 0 and *nEndChar* is -1, all the text in the edit control is selected. If *nStartChar* is -1, any current selection is removed.  
@@ -1110,7 +1110,7 @@ BOOL SetTabStops(
  Specifies the number of tab stops contained in *rgTabStops*. This number must be greater than 1.  
   
  *rgTabStops*  
- Points to an array of unsigned integers specifying the tab stops in dialog units. A dialog unit is a horizontal or vertical distance. One horizontal dialog unit is equal to one-fourth of the current dialog base width unit, and 1 vertical dialog unit is equal to one-eighth of the current dialog base height unit. The dialog base units are computed based on the height and width of the current system font. The **GetDialogBaseUnits** Windows function returns the current dialog base units in pixels.  
+ Points to an array of unsigned integers specifying the tab stops in dialog units. A dialog unit is a horizontal or vertical distance. One horizontal dialog unit is equal to one-fourth of the current dialog base width unit, and 1 vertical dialog unit is equal to one-eighth of the current dialog base height unit. The dialog base units are computed based on the height and width of the current system font. The `GetDialogBaseUnits` Windows function returns the current dialog base units in pixels.  
   
 ### Return Value  
  Nonzero if the tabs were set; otherwise 0.  
@@ -1149,10 +1149,10 @@ BOOL ShowBalloonTip(
 |[in] *pEditBalloonTip*|Pointer to an [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) structure that describes the balloon tip.|  
 |[in] *lpszTitle*|Pointer to a Unicode string that contains the title of the balloon tip.|  
 |[in] *lpszText*|Pointer to a Unicode string that contains the balloon tip text.|  
-|[in] *ttiIcon*|An **INT** that specifies the type of icon to associate with the balloon tip. The default value is `TTI_NONE`. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) structure.|  
+|[in] *ttiIcon*|An **INT** that specifies the type of icon to associate with the balloon tip. The default value is TTI_NONE. For more information, see the `ttiIcon` member of the [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) structure.|  
   
 ### Return Value  
- `true` if this method is successful; otherwise, `false`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This function sends the [EM_SHOWBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb761668) message, which is described in the Windows SDK. For more information, see the [Edit_ShowBalloonTip](http://msdn.microsoft.com/library/windows/desktop/bb761707) macro.  

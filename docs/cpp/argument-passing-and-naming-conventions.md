@@ -42,5 +42,5 @@ ms.workload: ["cplusplus"]
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Calling Conventions](../cpp/calling-conventions.md)

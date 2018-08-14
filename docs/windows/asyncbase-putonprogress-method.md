@@ -17,14 +17,14 @@ Sets the address of the progress event handler to the specified value.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    PutOnProgress  
 )(TProgress* progressHandler);  
 ```  
   
-#### Parameters  
- `progressHandler`  
+### Parameters  
+ *progressHandler*  
  The address to which the progress event handler is set.  
   
 ## Return Value  

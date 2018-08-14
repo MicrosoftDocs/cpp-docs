@@ -71,7 +71,7 @@ CGopherFile(
   
 ### Parameters  
  *hFile*  
- A handle to an `HINTERNET` file.  
+ A handle to an HINTERNET file.  
   
  *refLocator*  
  A reference to a [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) object.  

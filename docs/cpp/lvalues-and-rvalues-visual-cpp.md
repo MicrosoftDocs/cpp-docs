@@ -27,7 +27,7 @@ The following diagram illustrates the relationships between the categories:
 
  ![C++ expression value categories](media/value_categories.png "C++ expression value categories")
 
- An lvalue has an address that your program can access. Examples of lvalue expressions include variable names, including `const` variables, array elements, function calls that return an lvalue reference, bit-fields, unions, and class members.
+ An lvalue has an address that your program can access. Examples of lvalue expressions include variable names, including **const** variables, array elements, function calls that return an lvalue reference, bit-fields, unions, and class members.
 
  A prvalue expression has no address that is accessible by your program. Examples of prvalue expressions include literals, function calls that return a non-reference type, and temporary objects that are created during expression evalution but accessible only by the compiler.
 
@@ -67,8 +67,7 @@ int main()
 
 The terms *lvalue* and *rvalue* are often used when you refer to object references. For more information about references, see [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md) and [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-## See Also
-
- [Basic Concepts](../cpp/basic-concepts-cpp.md)
- [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md)
+## See also
+ [Basic Concepts](../cpp/basic-concepts-cpp.md)  
+ [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md)  
  [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md)

@@ -16,5 +16,5 @@ Structured exception handling described in these articles works with both C and 
   
  Microsoft C++ now supports the C++ exception handling model, based on the ANSI C++ Standard. This mechanism automatically handles destruction of local objects during stack unwind. If you are writing fault-tolerant C++ code, and you want to implement exception handling, it is strongly recommended that you use C++ exception handling, rather than structured exception handling. (Note that while the C++ compiler supports structured exception handling constructs as described in these articles, the standard C compiler does not support the C++ exception handling syntax.) For detailed information about C++ exception handling, see [C++ Exception Handling](../cpp/cpp-exception-handling.md) and the *Annotated C++ Reference Manual* by Margaret Ellis and Bjarne Stroustrup.  
   
-## See Also  
+## See also  
  [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

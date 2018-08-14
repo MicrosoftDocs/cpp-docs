@@ -23,11 +23,11 @@ ms.workload: ["cplusplus", "uwp"]
 2.  Right-click the resource and click **Open Binary Data** from the shortcut menu.  
   
     > [!NOTE]
-    >  If you use the [Resource View](../windows/resource-view-window.md) window to open a resource with a format that Visual Studio does not recognize (such as RCDATA or a custom resource), the resource is automatically opened in the Binary editor.  
+    >  If you use the [Resource View](../windows/resource-view-window.md) window to open a resource with a format that Visual Studio does not recognize (such as RCDATA or a custom resource), the resource is automatically opened in the **Binary** editor.  
   
 ### To open a managed resource for binary editing  
   
-1.  In Solution Explorer, select the specific resource file you want to edit.  
+1.  In **Solution Explorer**, select the specific resource file you want to edit.  
   
 2.  Right-click the resource and choose **Open With** from the shortcut menu.  
   
@@ -37,7 +37,7 @@ ms.workload: ["cplusplus", "uwp"]
     >  You can use the [Image editor](../windows/image-editor-for-icons.md) and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
     > [!NOTE]
-    >  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).   
+    >  For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).   
   
  ![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")  
 Binary Data for a Dialog Box Displayed in the Binary Editor  
@@ -45,12 +45,10 @@ Binary Data for a Dialog Box Displayed in the Binary Editor
  Only certain ASCII values are represented in the Binary editor (0x20 through 0x7E). Extended characters are displayed as periods in the ASCII Value section of the Binary editor (the right panel). The "printable" characters are ASCII values 32 through 126.  
   
 > [!NOTE]
->  If you want to use the Binary editor on a resource already being edited in another editor window, close the other editor window first.  
+>  If you want to use the **Binary** editor on a resource already being edited in another editor window, close the other editor window first.  
   
- **Requirements**  
-  
+## Requirements  
  None  
   
 ## See Also  
  [Binary Editor](binary-editor.md)
-

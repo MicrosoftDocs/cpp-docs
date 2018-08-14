@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 virtual ~ModuleBase();  
 ```  
   
 ## Remarks  
- Deinitializes the current instance of the ModuleBase class.  
+ Deinitializes the current instance of the **ModuleBase** class.  
   
 ## Requirements  
  **Header:** implements.h  

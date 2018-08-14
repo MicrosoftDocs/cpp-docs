@@ -23,7 +23,7 @@ expression != expression
 ## Remarks  
  The binary equality operators compare their operands for strict equality or inequality.  
   
- The equality operators, equal to (`==`) and not equal to (`!=`), have lower precedence than the relational operators, but they behave similarly. The result type for these operators is `bool`.  
+ The equality operators, equal to (`==`) and not equal to (`!=`), have lower precedence than the relational operators, but they behave similarly. The result type for these operators is **bool**.  
   
  The equal-to operator (`==`) returns **true** (1) if both operands have the same value; otherwise, it returns **false** (0). The not-equal-to operator (`!=`) returns **true** if the operands do not have the same value; otherwise, it returns **false**.  
   
@@ -50,7 +50,7 @@ int main() {
   
  Equality operators can compare pointers to members of the same type. In such a comparison, pointer-to-member conversions are performed. Pointers to members can also be compared to a constant expression that evaluates to 0.  
   
-## See Also  
+## See also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Relational and Equality Operators](../c-language/c-relational-and-equality-operators.md)

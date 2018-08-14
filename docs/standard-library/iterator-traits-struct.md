@@ -33,17 +33,17 @@ struct iterator_traits {
 
 The template struct defines the member types
 
-- **iterator_category**: a synonym for **Iterator::iterator_category**.
+- `iterator_category`: a synonym for `Iterator::iterator_category`.
 
-- `value_type`: a synonym for **Iterator::value_type**.
+- `value_type`: a synonym for `Iterator::value_type`.
 
-- `difference_type`: a synonym for **Iterator::difference_type**.
+- `difference_type`: a synonym for `Iterator::difference_type`.
 
-- `distance_type`: a synonym for **Iterator::difference_type.**
+- `distance_type`: a synonym for `Iterator::difference_type.`
 
-- **pointer**: a synonym for **Iterator::pointer**.
+- `pointer`: a synonym for `Iterator::pointer`.
 
-- **reference**: a synonym for **Iterator::reference**.
+- `reference`: a synonym for `Iterator::reference`.
 
 The partial specializations determine the critical types associated with an object pointer of type **Type \*** or const **Type \***.
 

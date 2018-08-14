@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename T,  
    typename U  
@@ -25,11 +25,11 @@ template <
 struct InterfaceList;  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  An interface name; the first interface in the recursive list.  
   
- `U`  
+ *U*  
  An interface name; the remaining interfaces in the recursive list.  
   
 ## Remarks  
@@ -41,8 +41,8 @@ struct InterfaceList;
   
 |Name|Description|  
 |----------|-----------------|  
-|`FirstT`|Synonym for template parameter `T`.|  
-|`RestT`|Synonym for template parameter `U`.|  
+|`FirstT`|Synonym for template parameter *T*.|  
+|`RestT`|Synonym for template parameter *U*.|  
   
 ## Inheritance Hierarchy  
  `InterfaceList`  

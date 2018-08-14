@@ -24,7 +24,7 @@ class ATL_NO_VTABLE IConnectionPointContainerImpl
 ```  
   
 #### Parameters  
- `T`  
+ *T*  
  Your class, derived from `IConnectionPointContainerImpl`.  
   
 ## Members  

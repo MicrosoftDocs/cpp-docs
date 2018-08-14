@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 # Creating a Simple Consumer
 Use the ATL Project Wizard and ATL OLE DB Consumer Wizard to generate an OLE DB Templates consumer.  
   
-#### To create a console application for an OLE DB consumer  
+### To create a console application for an OLE DB consumer  
   
 1.  On the **File** menu, click **New**, and then click **Project**.  
   
@@ -90,7 +90,7 @@ Use the ATL Project Wizard and ATL OLE DB Consumer Wizard to generate an OLE DB 
 > [!NOTE]
 >  The wizard puts the following line into Products.h:  
   
-```  
+```cpp  
 #error Security Issue: The connection string may contain a password  
 ```  
   

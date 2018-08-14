@@ -40,19 +40,19 @@ class CCriticalSection : public CSyncObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCriticalSection::operator CRITICAL_SECTION*](#operator_critical_section_star)|Retrieves a pointer to the internal **CRITICAL_SECTION** object.|  
+|[CCriticalSection::operator CRITICAL_SECTION*](#operator_critical_section_star)|Retrieves a pointer to the internal CRITICAL_SECTION object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCriticalSection::m_sect](#m_sect)|A **CRITICAL_SECTION** object.|  
+|[CCriticalSection::m_sect](#m_sect)|A CRITICAL_SECTION object.|  
   
 ## Remarks  
  Critical sections are useful when only one thread at a time can be allowed to modify data or some other controlled resource. For example, adding nodes to a linked list is a process that should only be allowed by one thread at a time. By using a `CCriticalSection` object to control the linked list, only one thread at a time can gain access to the list.  
   
 > [!NOTE]
->  The functionality of the `CCriticalSection` class is provided by an actual Win32 **CRITICAL_SECTION** object.  
+>  The functionality of the `CCriticalSection` class is provided by an actual Win32 CRITICAL_SECTION object.  
   
  Critical sections are used instead of mutexes (see [CMutex](../../mfc/reference/cmutex-class.md)) when speed is critical and the resource will not be used across process boundaries.  
   
@@ -126,14 +126,14 @@ CRITICAL_SECTION m_sect;
 ```  
   
 ##  <a name="operator_critical_section_star"></a>  CCriticalSection::operator CRITICAL_SECTION*  
- Retrieves a **CRITICAL_SECTION** object.  
+ Retrieves a CRITICAL_SECTION object.  
   
 ```  
 operator CRITICAL_SECTION*();
 ```   
   
 ### Remarks  
- Call this function to retrieve a pointer to the internal **CRITICAL_SECTION** object.  
+ Call this function to retrieve a pointer to the internal CRITICAL_SECTION object.  
   
 ##  <a name="unlock"></a>  CCriticalSection::Unlock  
  Releases the `CCriticalSection` object for use by another thread.  

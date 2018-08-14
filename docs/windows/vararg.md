@@ -17,10 +17,8 @@ Specifies that the function takes a variable number of arguments.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [vararg]  
-  
 ```  
   
 ## Remarks  
@@ -29,7 +27,7 @@ Specifies that the function takes a variable number of arguments.
 ## Example  
  The following code shows a use of **vararg**:  
   
-```  
+```cpp  
 // cpp_attr_ref_vararg.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -58,4 +56,4 @@ __interface X : public IUnknown
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+ [Method Attributes](../windows/method-attributes.md)   

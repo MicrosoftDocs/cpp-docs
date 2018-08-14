@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "uwp"]
 # ClassFactory::ClassFactory Constructor
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW ClassFactory();  
 ```  
   

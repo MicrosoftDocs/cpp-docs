@@ -17,7 +17,7 @@ Defines common characteristics of an uninitialized handle.
   
 ## Syntax  
   
-```  
+```cpp  
 struct HANDLENullTraits;  
 ```  
   

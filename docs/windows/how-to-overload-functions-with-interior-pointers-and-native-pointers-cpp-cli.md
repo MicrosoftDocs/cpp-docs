@@ -15,13 +15,13 @@ ms.workload: ["cplusplus", "uwp"]
 Functions can be overloaded depending on whether the parameter type is an interior pointer or a native pointer.  
   
 > [!IMPORTANT]
->  This language feature is supported by the **/clr** compiler option, but not by the **/ZW** compiler option.  
+>  This language feature is supported by the `/clr` compiler option, but not by the `/ZW` compiler option.  
   
 ## Example  
   
 ### Code  
   
-```  
+```cpp  
 // interior_ptr_overload.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -56,9 +56,7 @@ int main() {
 };  
 ```  
   
-### Output  
-  
-```  
+```Output 
 in f( int* pi )  
 in f( interior_ptr<int> pi )  
 ```  

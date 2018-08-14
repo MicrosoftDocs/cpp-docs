@@ -22,7 +22,7 @@ Use this page of the wizard to define the threading model and aggregation level 
   
 |Option|Description|  
 |------------|-----------------|  
-|`Single`|The property page runs only in the primary COM thread.|  
+|**Single**|The property page runs only in the primary COM thread.|  
 |**Apartment**|The property page can be created in any single thread apartment. The default.|  
   
  **Aggregation**  

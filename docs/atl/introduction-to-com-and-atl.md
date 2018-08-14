@@ -16,7 +16,7 @@ This section provides a brief introduction to COM and ATL.
   
 ## In This Section  
  [Introduction to COM](../atl/introduction-to-com.md)  
- Provides an overview of the Component Object Model's (COM) fundamental concepts, including interfaces, **IUnknown**, reference counting, `QueryInterface`, marshaling, and aggregation.  
+ Provides an overview of the Component Object Model's (COM) fundamental concepts, including interfaces, `IUnknown`, reference counting, `QueryInterface`, marshaling, and aggregation.  
   
  [Introduction to ATL](../atl/introduction-to-atl.md)  
  Discusses, briefly, what the Active Template Library (ATL) was designed for, template libraries, and ATL version numbers. Includes recommendations for choosing between ATL and MFC.  

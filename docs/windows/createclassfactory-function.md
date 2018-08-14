@@ -25,27 +25,26 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
    REFIID riid,   
    _Outptr_ IUnknown **ppFactory  
 ) throw();  
-  
 ```  
   
-#### Parameters  
- `flags`  
+### Parameters  
+ *flags*  
  A combination of one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration values.  
   
- `entry`  
- Pointer to a [CreatorMap](../windows/creatormap-structure.md) that contains initialization and registration information about parameter `riid`.  
+ *entry*  
+ Pointer to a [CreatorMap](../windows/creatormap-structure.md) that contains initialization and registration information about parameter *riid*.  
   
- `riid`  
+ *riid*  
  Reference to an interface ID.  
   
- `ppFactory`  
+ *ppFactory*  
  If this operation completes successfully, a pointer to a class factory.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that indicates the error.  
   
 ## Remarks  
- An assert error is emitted if template parameter `Factory` doesn't derive from interface IClassFactory.  
+ An assert error is emitted if template parameter *Factory* doesn't derive from interface `IClassFactory`.  
   
 ## Requirements  
  **Header:** module.h  

@@ -89,7 +89,7 @@ CMFCRibbonCheckBox(
  [!code-cpp[NVC_MFC_RibbonApp#17](../../mfc/reference/codesnippet/cpp/cmfcribboncheckbox-class_1.cpp)]  
   
 ##  <a name="getcompactsize"></a>  CMFCRibbonCheckBox::GetCompactSize  
- When overridden, gets the compact size of the checkbox.  
+ When overridden, gets the compact size of the check box.  
   
 ```  
 virtual CSize GetCompactSize(CDC* pDC);
@@ -97,16 +97,16 @@ virtual CSize GetCompactSize(CDC* pDC);
   
 ### Parameters  
  [in] *pDC*  
- Pointer to the `CDC` associated with the checkbox.  
+ Pointer to the CDC associated with the check box.  
   
 ### Return Value  
- Returns a `CSize` object that contains the compact size of the checkbox.  
+ Returns a `CSize` object that contains the compact size of the check box.  
   
 ### Remarks  
- If not overridden, returns the intermediate size of the checkbox.  
+ If not overridden, returns the intermediate size of the check box.  
   
 ##  <a name="getintermediatesize"></a>  CMFCRibbonCheckBox::GetIntermediateSize  
- Gets the intermediate size of the checkbox.  
+ Gets the intermediate size of the check box.  
   
 ```  
 virtual CSize GetIntermediateSize(CDC* pDC);
@@ -114,16 +114,16 @@ virtual CSize GetIntermediateSize(CDC* pDC);
   
 ### Parameters  
  [in] *pDC*  
- Pointer to the `CDC` associated with this checkbox.  
+ Pointer to the CDC associated with this check box.  
   
 ### Return Value  
- A `CSize` object containing the intermediate size of the checkbox.  
+ A `CSize` object containing the intermediate size of the check box.  
   
 ### Remarks  
- If not overridden, calculates the intermediate size as the default checkbox size ( `AFX_CHECK_BOX_DEFAULT_SIZE`) plus the text size, plus margins.  
+ If not overridden, calculates the intermediate size as the default check box size ( `AFX_CHECK_BOX_DEFAULT_SIZE`) plus the text size, plus margins.  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonCheckBox::GetRegularSize  
- Gets the regular size of the checkbox.  
+ Gets the regular size of the check box.  
   
 ```  
 virtual CSize GetRegularSize(CDC* pDC);
@@ -131,28 +131,28 @@ virtual CSize GetRegularSize(CDC* pDC);
   
 ### Parameters  
  [in] *pDC*  
- Pointer to the `CDC` object associated with this checkbox.  
+ Pointer to the CDC object associated with this check box.  
   
 ### Return Value  
- Returns a `CSize` object that contains the regular size of the checkbox.  
+ Returns a `CSize` object that contains the regular size of the check box.  
   
 ### Remarks  
- If not overridden, returns the intermediate size of the checkbox.  
+ If not overridden, returns the intermediate size of the check box.  
   
 ##  <a name="isdrawtooltipimage"></a>  CMFCRibbonCheckBox::IsDrawTooltipImage  
- Indicates whether there is a tooltip image associated with the checkbox.  
+ Indicates whether there is a tooltip image associated with the check box.  
   
 ```  
 virtual BOOL IsDrawTooltipImage() const;  
 ```  
   
 ### Return Value  
- Returns `TRUE` if there is a tooltip image associated with the checkbox, or `FALSE` if not.  
+ Returns TRUE if there is a tooltip image associated with the check box, or FALSE if not.  
   
 ### Remarks  
   
 ##  <a name="ondraw"></a>  CMFCRibbonCheckBox::OnDraw  
- Called by the framework to draw the checkbox using a specified device context.  
+ Called by the framework to draw the check box using a specified device context.  
   
 ```  
 virtual void OnDraw(CDC* pDC);
@@ -160,12 +160,12 @@ virtual void OnDraw(CDC* pDC);
   
 ### Parameters  
  [in] *pDC*  
- Pointer to the `CDC` in which to draw the checkbox.  
+ Pointer to the CDC in which to draw the check box.  
   
 ### Remarks  
   
 ##  <a name="ondrawmenuimage"></a>  CMFCRibbonCheckBox::OnDrawMenuImage  
- Called by the framework to draw a menu image for the checkbox.  
+ Called by the framework to draw a menu image for the check box.  
   
 ```  
 virtual BOOL OnDrawMenuImage(CDC*, CRect);
@@ -173,19 +173,19 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
   
 ### Parameters  
  [in] *CDC**  
- Pointer to the `CDC` associated with the checkbox.  
+ Pointer to the CDC associated with the check box.  
   
  [in] *CRect*  
  A `CRect` object specifying the rectangle in which to draw the menu image.  
   
 ### Return Value  
- Returns `TRUE` if the image was drawn, or `FALSE` if not.  
+ Returns TRUE if the image was drawn, or FALSE if not.  
   
 ### Remarks  
- If not overridden, returns `FALSE`.  
+ If not overridden, returns FALSE.  
   
 ##  <a name="ondrawonlist"></a>  CMFCRibbonCheckBox::OnDrawOnList  
- Called by the framework to draw the checkbox in a commands list box.  
+ Called by the framework to draw the check box in a commands list box.  
   
 ```  
 virtual void OnDrawOnList(
@@ -199,7 +199,7 @@ virtual void OnDrawOnList(
   
 ### Parameters  
  [in] *pDC*  
- Pointer to the device context in which to draw the checkbox.  
+ Pointer to the device context in which to draw the check box.  
   
  [in] *strText*  
  The display text.  
@@ -208,18 +208,18 @@ virtual void OnDrawOnList(
  The distance, in pixels, from the left side of the list box to the display text.  
   
  [in] *rect*  
- The display rectangle for the checkbox.  
+ The display rectangle for the check box.  
   
  [in] *bIsSelected*  
- `TRUE` if the checkbox is selected, or `FALSE` if not.  
+ TRUE if the check box is selected, or FALSE if not.  
   
  [in] *bHighlighted*  
- `TRUE` if the checkbox is highlighted, or `FALSE` if not.  
+ TRUE if the check box is highlighted, or FALSE if not.  
   
 ### Remarks  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonCheckBox::SetACCData  
- Sets the accessibility data for the checkbox.  
+ Sets the accessibility data for the check box.  
   
 ```  
 virtual BOOL SetACCData(
@@ -229,16 +229,16 @@ virtual BOOL SetACCData(
   
 ### Parameters  
  *pParent*  
- The parent window of the checkbox.  
+ The parent window of the check box.  
   
  *data*  
- The accessibility data for the checkbox.  
+ The accessibility data for the check box.  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
- By default this method sets the accessibility data for the checkbox and always returns `TRUE`. Override this method to set the accessibility data and return a value that indicates success or failure.  
+ By default this method sets the accessibility data for the check box and always returns TRUE. Override this method to set the accessibility data and return a value that indicates success or failure.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

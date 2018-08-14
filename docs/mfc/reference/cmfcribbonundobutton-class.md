@@ -129,7 +129,7 @@ virtual BOOL HasMenu() const;
 ```  
   
 ### Return Value  
- Always returns `TRUE`.  
+ Always returns TRUE.  
   
 ### Remarks  
   

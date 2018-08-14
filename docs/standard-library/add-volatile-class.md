@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # add_volatile Class
 
-Makes a volatile type from the specified type.
+Makes a **volatile** type from the specified type.
 
 ## Syntax
 
@@ -33,7 +33,7 @@ The type to modify.
 
 ## Remarks
 
-An instance of `add_volatile<T>` has a member typedef `type` that is *T* if *T* is a reference, a function, or a volatile-qualified type, otherwise `volatile` *T*. The alias `add_volatile_t` is a shortcut to access the member typedef `type`.
+An instance of `add_volatile<T>` has a member **typedef** `type` that is *T* if *T* is a reference, a function, or a volatile-qualified type, otherwise **volatile** *T*. The alias `add_volatile_t` is a shortcut to access the member **typedef** `type`.
 
 ## Example
 

@@ -19,7 +19,7 @@ The first time the development environment reads a resource file created by anot
   
  You can also use included symbol files when you have existing resources with symbol definitions that use expressions rather than simple integers to define the symbol value. For example:  
   
-```  
+```cpp  
 #define   IDC_CONTROL1 2100  
 #define   IDC_CONTROL2 (IDC_CONTROL1+1)  
 ```  
@@ -42,9 +42,9 @@ The first time the development environment reads a resource file created by anot
     > [!NOTE]
     >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
-2.  In the **Read-only symbol directives** box, use the **#include** compiler directive to specify the file where you want the read-only symbols to be kept.  
+2.  In the **Read-only symbol directives** box, use the `#include` compiler directive to specify the file where you want the read-only symbols to be kept.  
   
-     Do not call the file Resource.h, since that is the filename normally used by the main symbol header file.  
+     Do not call the file `Resource.h`, since that is the filename normally used by the main symbol header file.  
   
     > [!NOTE]
     >  **Important** What you type in the Read-Only symbol directives box is included in the resource file exactly as you type it. Make sure what you type does not contain any spelling or syntax errors.  
@@ -57,10 +57,7 @@ The first time the development environment reads a resource file created by anot
   
 4.  Click **OK**.  
   
-
-  
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  

@@ -15,20 +15,18 @@ ms.workload: ["cplusplus"]
 # _bstr_t::operator !
 **Microsoft Specific**  
   
- Checks if the encapsulated `BSTR` is a **NULL** string.  
+ Checks if the encapsulated `BSTR` is a NULL string.  
   
 ## Syntax  
   
 ```  
-  
 bool operator!( ) const throw( );  
-  
 ```  
   
 ## Return Value  
- It returns **true** if yes, **false** if not.  
+ It returns TRUE if yes, FALSE if not.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

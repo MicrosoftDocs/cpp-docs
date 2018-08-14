@@ -16,14 +16,13 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ``` 
-  
 expression ? expression : expression  
 ``` 
   
 ## Remarks  
  The conditional operator (**? :**) is a ternary operator (it takes three operands). The conditional operator works as follows:  
   
--   The first operand is implicitly converted to `bool`. It is evaluated and all side effects are completed before continuing.  
+-   The first operand is implicitly converted to **bool**. It is evaluated and all side effects are completed before continuing.  
   
 -   If the first operand evaluates to **true** (1), the second operand is evaluated.  
   
@@ -66,6 +65,6 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Conditional-Expression Operator](../c-language/conditional-expression-operator.md)

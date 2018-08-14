@@ -99,7 +99,7 @@ BOOL m_bRunAutomated;
 ```  
   
 ### Remarks  
- If `TRUE`, this means start up as an OLE automation server.  
+ If TRUE, this means start up as an OLE automation server.  
   
 ##  <a name="m_brunembedded"></a>  CCommandLineInfo::m_bRunEmbedded  
  Indicates that the `/Embedding` flag was found on the command line.  
@@ -109,7 +109,7 @@ BOOL m_bRunEmbedded;
 ```  
   
 ### Remarks  
- If `TRUE`, this means start up for editing an embedded OLE item.  
+ If TRUE, this means start up for editing an embedded OLE item.  
   
 ##  <a name="m_bshowsplash"></a>  CCommandLineInfo::m_bShowSplash  
  Indicates that the splash screen should be displayed.  
@@ -119,7 +119,7 @@ BOOL m_bShowSplash;
 ```  
   
 ### Remarks  
- If `TRUE`, this means the splash screen for this application should be displayed during startup. The default implementation of [ParseParam](#parseparam) sets this data member to `TRUE` if [m_nShellCommand](#m_nshellcommand) is equal to `CCommandLineInfo::FileNew`.  
+ If TRUE, this means the splash screen for this application should be displayed during startup. The default implementation of [ParseParam](#parseparam) sets this data member to TRUE if [m_nShellCommand](#m_nshellcommand) is equal to `CCommandLineInfo::FileNew`.  
   
 ##  <a name="m_nshellcommand"></a>  CCommandLineInfo::m_nShellCommand  
  Indicates the shell command for this instance of the application.  
@@ -247,7 +247,7 @@ virtual void ParseParam(
  Indicates if this is the last parameter or flag on the command line.  
   
 ### Remarks  
- [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) calls `ParseParam` once for each parameter or flag on the command line, passing the argument to *pszParam*. If the first character of the parameter is a ' **-**' or a ' **/**', then it is removed and *bFlag* is set to `TRUE`. When parsing the final parameter, *bLast* is set to `TRUE`.  
+ [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) calls `ParseParam` once for each parameter or flag on the command line, passing the argument to *pszParam*. If the first character of the parameter is a ' **-**' or a ' **/**', then it is removed and *bFlag* is set to TRUE. When parsing the final parameter, *bLast* is set to TRUE.  
   
  The default implementation of this function recognizes the following flags: `/p`, `/pt`, `/dde`, `/Automation`, and `/Embedding`, as shown in the following table:  
   
@@ -267,7 +267,7 @@ virtual void ParseParam(
   
  The default implementation puts the first non-flag parameter into [m_strFileName](#m_strfilename). In the case of the `/pt` flag, the default implementation puts the second, third, and fourth non-flag parameters into [m_strPrinterName](#m_strprintername), [m_strDriverName](#m_strdrivername), and [m_strPortName](#m_strportname), respectively.  
   
- The default implementation also sets [m_bShowSplash](#m_bshowsplash) to `TRUE` only in the case of a new file. In the case of a new file, the user has taken action involving the application itself. In any other case, including opening existing files using the shell, the user action involves the file directly. In a document-centric standpoint, the splash screen does not need to announce the application starting up.  
+ The default implementation also sets [m_bShowSplash](#m_bshowsplash) to TRUE only in the case of a new file. In the case of a new file, the user has taken action involving the application itself. In any other case, including opening existing files using the shell, the user action involves the file directly. In a document-centric standpoint, the splash screen does not need to announce the application starting up.  
   
  Override this function in your derived class to handle other flag and parameter values.  
   

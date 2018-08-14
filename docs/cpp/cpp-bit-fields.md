@@ -24,7 +24,7 @@ Classes and structures can contain members that occupy less storage than an inte
 The (optional) *declarator* is the name by which the member is accessed in the program. It must be an integral type (including enumerated types). The *constant-expression* specifies the number of bits the member occupies in the structure. Anonymous bit fields — that is, bit-field members with no identifier — can be used for padding.
 
 > [!NOTE]
-> An unnamed bit field of width 0 forces alignment of the next bit field to the next `type` boundary, where `type` is the type of the member.
+> An unnamed bit field of width 0 forces alignment of the next bit field to the next **type** boundary, where **type** is the type of the member.
 
  The following example declares a structure that contains bit fields:
 
@@ -84,5 +84,4 @@ The following list details erroneous operations on bit fields:
 - Initializing a non-**const** reference with a bit field.
 
 ## See also
-
-- [Classes and Structs](../cpp/classes-and-structs-cpp.md)
+ [Classes and Structs](../cpp/classes-and-structs-cpp.md)

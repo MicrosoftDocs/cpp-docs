@@ -25,5 +25,5 @@ Several restrictions apply to the **main** function that do not apply to any oth
   
 -   Cannot be called.  
   
-## See Also  
+## See also  
  [main: Program Startup](../cpp/main-program-startup.md)

@@ -99,12 +99,12 @@ regex_error(regex_constants::error_code error);
 
 ### Parameters
 
-`error`
+*error*
  The error code.
 
 ### Remarks
 
-The constructor constructs an object that holds the value `error`.
+The constructor constructs an object that holds the value *error*.
 
 ### Example
 

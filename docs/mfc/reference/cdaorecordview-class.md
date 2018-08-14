@@ -141,7 +141,7 @@ virtual CDaoRecordset* OnGetRecordset() = 0;
 ```  
   
 ### Return Value  
- A pointer to a `CDaoRecordset`-derived object if the object was successfully created; otherwise a **NULL** pointer.  
+ A pointer to a `CDaoRecordset`-derived object if the object was successfully created; otherwise a NULL pointer.  
   
 ### Remarks  
  You must override this member function to construct or obtain a recordset object and return a pointer to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the recordset pointer stored in the record view if one exists. If not, it constructs a recordset object of the type you specified with ClassWizard and calls its `Open` member function to open the table or run the query, and then returns a pointer to the object.  
@@ -159,13 +159,13 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
  *nIDMoveCommand*  
  One of the following standard command ID values:  
   
-- `ID_RECORD_FIRST` Move to the first record in the recordset.  
+- ID_RECORD_FIRST Move to the first record in the recordset.  
   
-- `ID_RECORD_LAST` Move to the last record in the recordset.  
+- ID_RECORD_LAST Move to the last record in the recordset.  
   
-- `ID_RECORD_NEXT` Move to the next record in the recordset.  
+- ID_RECORD_NEXT Move to the next record in the recordset.  
   
-- `ID_RECORD_PREV` Move to the previous record in the recordset.  
+- ID_RECORD_PREV Move to the previous record in the recordset.  
   
 ### Return Value  
  Nonzero if the move was successful; otherwise 0 if the move request was denied.  

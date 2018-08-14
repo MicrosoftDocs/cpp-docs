@@ -25,7 +25,7 @@ struct is_move_assignable;
 
 ### Parameters
 
-`T`
+*T*
  The type to query.
 
 ## Remarks

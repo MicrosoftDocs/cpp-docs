@@ -225,7 +225,7 @@ explicit operator bool() const noexcept;
 
 ### Remarks
 
-The operator returns a value of `true` when `get() != nullptr`, otherwise `false`.
+The operator returns a value of **true** when `get() != nullptr`, otherwise **false**.
 
 ### Example
 
@@ -315,10 +315,10 @@ shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
 
 ### Parameters
 
-`sp`
+*sp*
  The shared pointer to copy.
 
-`ap`
+*ap*
  The auto pointer to copy.
 
 ### Remarks
@@ -407,7 +407,7 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 ### Parameters
 
-`ptr`
+*ptr*
  An `lvalue` reference to either a `shared_ptr` or a `weak_ptr`.
 
 ### Remarks
@@ -433,22 +433,22 @@ void reset(Other *ptr, D dtor, A alloc);
 
 ### Parameters
 
-`Other`
+*Other*
  The type controlled by the argument pointer.
 
-`D`
+*D*
  The type of the deleter.
 
-`ptr`
+*ptr*
  The pointer to copy.
 
-`dtor`
+*dtor*
  The deleter to copy.
 
-`A`
+*A*
  The type of the allocator.
 
-`alloc`
+*alloc*
  The allocator to copy.
 
 ### Remarks
@@ -554,31 +554,31 @@ shared_ptr(const unique_ptr<Other, D>& up) = delete;
 
 ### Parameters
 
-`Other`
+*Other*
  The type controlled by the argument pointer.
 
-`ptr`
+*ptr*
  The pointer to copy.
 
-`D`
+*D*
  The type of the deleter.
 
-`A`
+*A*
  The type of the allocator.
 
-`dtor`
+*dtor*
  The deleter.
 
-`ator`
+*ator*
  The allocator.
 
-`sp`
+*sp*
  The smart pointer to copy.
 
-`wp`
+*wp*
  The weak pointer.
 
-`ap`
+*ap*
  The auto pointer to copy.
 
 ### Remarks
@@ -704,12 +704,12 @@ void swap(shared_ptr& sp);
 
 ### Parameters
 
-`sp`
+*sp*
  The shared pointer to swap with.
 
 ### Remarks
 
-The member function leaves the resource originally owned by `*this` subsequently owned by `sp`, and the resource originally owned by `sp` subsequently owned by `*this`. The function does not change the reference counts for the two resources and it does not throw any exceptions.
+The member function leaves the resource originally owned by `*this` subsequently owned by *sp*, and the resource originally owned by *sp* subsequently owned by `*this`. The function does not change the reference counts for the two resources and it does not throw any exceptions.
 
 ### Example
 
@@ -775,7 +775,7 @@ bool unique() const;
 
 ### Remarks
 
-The member function returns `true` if no other `shared_ptr` object owns the resource that is owned by `*this`, otherwise `false`.
+The member function returns **true** if no other `shared_ptr` object owns the resource that is owned by `*this`, otherwise **false**.
 
 ### Example
 

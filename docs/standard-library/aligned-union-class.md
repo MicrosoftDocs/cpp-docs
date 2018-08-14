@@ -28,15 +28,15 @@ using aligned_union_t = typename aligned_union<Len, Types...>::type;
 
 ### Parameters
 
-`Len`
+*Len*
  The alignment value for the largest type in the union.
 
-`Types`
+*Types*
  The distinct types in the underlying union.
 
 ## Remarks
 
-Use the template class to get the alignment and size needed to store a union in uninitialized storage. The member typedef `type` names a POD type suitable for storage of any type listed in `Types`; the minimum size is `Len`. The static member `alignment_value` of type `std::size_t` contains the strictest alignment required of all the types listed in `Types`.
+Use the template class to get the alignment and size needed to store a union in uninitialized storage. The member typedef `type` names a POD type suitable for storage of any type listed in *Types*; the minimum size is *Len*. The static member `alignment_value` of type `std::size_t` contains the strictest alignment required of all the types listed in *Types*.
 
 ## Example
 

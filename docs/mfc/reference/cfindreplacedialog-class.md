@@ -36,7 +36,7 @@ class CFindReplaceDialog : public CCommonDialog
 |[CFindReplaceDialog::Create](#create)|Creates and displays a `CFindReplaceDialog` dialog box.|  
 |[CFindReplaceDialog::FindNext](#findnext)|Call this function to determine whether the user wants to find the next occurrence of the find string.|  
 |[CFindReplaceDialog::GetFindString](#getfindstring)|Call this function to retrieve the current find string.|  
-|[CFindReplaceDialog::GetNotifier](#getnotifier)|Call this function to retrieve the **FINDREPLACE** structure in your registered message handler.|  
+|[CFindReplaceDialog::GetNotifier](#getnotifier)|Call this function to retrieve the `FINDREPLACE` structure in your registered message handler.|  
 |[CFindReplaceDialog::GetReplaceString](#getreplacestring)|Call this function to retrieve the current replace string.|  
 |[CFindReplaceDialog::IsTerminating](#isterminating)|Call this function to determine whether the dialog box is terminating.|  
 |[CFindReplaceDialog::MatchCase](#matchcase)|Call this function to determine whether the user wants to match the case of the find string exactly.|  
@@ -119,19 +119,19 @@ virtual BOOL Create(
   
 ### Parameters  
  *bFindDialogOnly*  
- Set this parameter to `TRUE` to display a **Find** dialog box. Set it to `FALSE` to display a **Find/Replace** dialog box.  
+ Set this parameter to TRUE to display a **Find** dialog box. Set it to FALSE to display a **Find/Replace** dialog box.  
   
  *lpszFindWhat*  
- Pointer to the default search string when the dialog box appears. If `NULL`, the dialog box does not contain a default search string.  
+ Pointer to the default search string when the dialog box appears. If NULL, the dialog box does not contain a default search string.  
   
  *lpszReplaceWith*  
- Pointer to the default replacement string when the dialog box appears. If `NULL`, the dialog box does not contain a default replacement string.  
+ Pointer to the default replacement string when the dialog box appears. If NULL, the dialog box does not contain a default replacement string.  
   
  *dwFlags*  
- One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. The default value is `FR_DOWN`, which specifies that the search is to proceed in a downward direction. See the [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835) structure in the Windows SDK for more information on these flags.  
+ One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. The default value is FR_DOWN, which specifies that the search is to proceed in a downward direction. See the [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835) structure in the Windows SDK for more information on these flags.  
   
  *pParentWnd*  
- A pointer to the dialog box's parent or owner window. This is the window that will receive the special message indicating that a find/replace action is requested. If `NULL`, the main window of the application is used.  
+ A pointer to the dialog box's parent or owner window. This is the window that will receive the special message indicating that a find/replace action is requested. If NULL, the main window of the application is used.  
   
 ### Return Value  
  Nonzero if the dialog box object was successfully created; otherwise 0.  
@@ -182,7 +182,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
   
 ### Parameters  
  *lParam*  
- The **lparam** value passed to the frame window's **OnFindReplace** member function.  
+ The *lparam* value passed to the frame window's `OnFindReplace` member function.  
   
 ### Return Value  
  A pointer to the current dialog box.  
@@ -219,7 +219,7 @@ BOOL IsTerminating() const;
  Nonzero if the user has decided to terminate the dialog box; otherwise 0.  
   
 ### Remarks  
- If this function returns nonzero, you should call the `DestroyWindow` member function of the current dialog box and set any dialog box pointer variable to **NULL**. Optionally, you can also store the find/replace text last entered and use it to initialize the next find/replace dialog box.  
+ If this function returns nonzero, you should call the `DestroyWindow` member function of the current dialog box and set any dialog box pointer variable to NULL. Optionally, you can also store the find/replace text last entered and use it to initialize the next find/replace dialog box.  
   
 ### Example  
   See the example for [CFindReplaceDialog::GetFindString](#getfindstring).  
@@ -234,7 +234,7 @@ FINDREPLACE m_fr;
 ### Remarks  
  `m_fr` is a structure of type [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). Its members store the characteristics of the dialog-box object. After constructing a `CFindReplaceDialog` object, you can use `m_fr` to modify various values in the dialog box.  
   
- For more information on this structure, see the **FINDREPLACE** structure in the Windows SDK.  
+ For more information on this structure, see the `FINDREPLACE` structure in the Windows SDK.  
   
 ### Example  
   See the example for [CFindReplaceDialog::CFindReplaceDialog](#cfindreplacedialog).  

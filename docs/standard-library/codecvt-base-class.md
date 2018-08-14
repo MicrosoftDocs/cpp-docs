@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # codecvt_base Class
 
-A base class for the codecvt class that is used to define an enumeration type referred to as **result**, used as the return type for the facet member functions to indicate the result of a conversion.
+A base class for the codecvt class that is used to define an enumeration type referred to as `result`, used as the return type for the facet member functions to indicate the result of a conversion.
 
 ## Syntax
 
@@ -39,13 +39,13 @@ protected:
 
 The class describes an enumeration common to all specializations of template class [codecvt](../standard-library/codecvt-class.md). The enumeration result describes the possible return values from [do_in](../standard-library/codecvt-class.md#do_in) or [do_out](../standard-library/codecvt-class.md#do_out):
 
-- **ok** if the conversion between internal and external character encodings succeeds.
+- `ok` if the conversion between internal and external character encodings succeeds.
 
-- **partial** if the destination is not large enough for the conversion to succeed.
+- `partial` if the destination is not large enough for the conversion to succeed.
 
-- **error** if the source sequence is ill formed.
+- `error` if the source sequence is ill formed.
 
-- **noconv** if the function performs no conversion.
+- `noconv` if the function performs no conversion.
 
 ## Requirements
 

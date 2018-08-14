@@ -20,12 +20,11 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 void SetString(const char* pSrc);  
 ```  
   
 #### Parameters  
- `pSrc`  
+ *pSrc*  
  Pointer to the character string.  
   
 ## Remarks  
@@ -33,5 +32,5 @@ void SetString(const char* pSrc);
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)

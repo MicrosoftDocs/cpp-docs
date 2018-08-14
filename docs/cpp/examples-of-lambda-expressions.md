@@ -17,7 +17,7 @@ This article shows how to use lambda expressions in your programs. For an overvi
 ##  <a name="declaringLambdaExpressions"></a> Declaring Lambda Expressions  
   
 ### Example 1  
- Because a lambda expression is typed, you can assign it to an `auto` variable or to a [function](../standard-library/function-class.md) object, as shown here:  
+ Because a lambda expression is typed, you can assign it to an **auto** variable or to a [function](../standard-library/function-class.md) object, as shown here:  
   
 ### Code  
   
@@ -123,7 +123,7 @@ int main()
 ```  
   
 ### Example 2  
- This example passes a lambda expression as an argument to the `find_if` function. The lambda expression returns `true` if its parameter is an even number.  
+ This example passes a lambda expression as an argument to the `find_if` function. The lambda expression returns **true** if its parameter is an even number.  
   
 ### Code  
   
@@ -194,7 +194,6 @@ int main()
     // Print the result.  
     cout << timestwoplusthree << endl;  
 }  
-  
 ```  
   
 ### Output  
@@ -246,7 +245,6 @@ int main()
     // Print the result, which is (7+8)*2.  
     cout << answer << endl;  
 }  
-  
 ```  
   
 ### Output  
@@ -260,13 +258,12 @@ int main()
 ##  <a name="methodLambdaExpressions"></a> Using a Lambda Expression in a Function  
   
 ### Example  
- You can use lambda expressions in the body of a function. The lambda expression can access any function or data member that the enclosing function can access. You can explicitly or implicitly capture the `this` pointer to provide access to functions and data members of the enclosing class.  
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Capture `this` by value (`[*this]`) when the lambda will be used in asynchronous or parallel operations where the code might execute after the original object goes out of scope.
+ You can use lambda expressions in the body of a function. The lambda expression can access any function or data member that the enclosing function can access. You can explicitly or implicitly capture the **this** pointer to provide access to functions and data members of the enclosing class.  
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): Capture **this** by value (`[*this]`) when the lambda will be used in asynchronous or parallel operations where the code might execute after the original object goes out of scope.
   
- You can use the `this` pointer explicitly in a function, as shown here:  
+ You can use the **this** pointer explicitly in a function, as shown here:  
   
 ```cpp  
-
 // capture "this" by reference
 void ApplyScale(const vector<int>& v) const  
 {  
@@ -280,10 +277,9 @@ void ApplyScale2(const vector<int>& v) const
    for_each(v.begin(), v.end(),   
       [*this](int n) { cout << n * _scale << endl; });  
 }  
-
 ```  
   
- You can also capture the `this` pointer implicitly:  
+ You can also capture the **this** pointer implicitly:  
   
 ```cpp 
 void ApplyScale(const vector<int>& v) const  
@@ -334,7 +330,6 @@ int main()
     Scale s(3);  
     s.ApplyScale(values);  
 }  
-  
 ```  
   
 ### Output  
@@ -344,18 +339,17 @@ int main()
 6  
 9  
 12  
-  
 ```  
   
 ### Remarks  
- The `ApplyScale` function uses a lambda expression to print the product of the scale value and each element in a `vector` object. The lambda expression implicitly captures `this` so that it can access the `_scale` member.  
+ The `ApplyScale` function uses a lambda expression to print the product of the scale value and each element in a `vector` object. The lambda expression implicitly captures **this** so that it can access the `_scale` member.  
   
  [[In This Article](#top)]  
   
 ##  <a name="templateLambdaExpressions"></a> Using Lambda Expressions with Templates  
   
 ### Example  
- Because lambda expressions are typed, you can use them with C++ templates. The following example shows the `negate_all` and `print_all` functions. The `negate_all` function applies the unary `operator-` to each element in the `vector` object. The `print_all` function prints each element in the `vector` object to the console.  
+ Because lambda expressions are typed, you can use them with C++ templates. The following example shows the `negate_all` and `print_all` functions. The `negate_all` function applies the unary **operator-** to each element in the `vector` object. The `print_all` function prints each element in the `vector` object to the console.  
   
 ### Code  
   
@@ -395,7 +389,6 @@ int main()
     cout << "After negate_all():" << endl;  
     print_all(v);  
 }  
-  
 ```  
   
 ### Output  
@@ -408,7 +401,6 @@ After negate_all():
 -34  
 43  
 -56  
-  
 ```  
   
 ### Remarks  
@@ -419,7 +411,7 @@ After negate_all():
 ##  <a name="ehLambdaExpressions"></a> Handling Exceptions  
   
 ### Example  
- The body of a lambda expression follows the rules for both structured exception handling (SEH) and C++ exception handling. You can handle a raised exception in the body of a lambda expression or defer exception handling to the enclosing scope. The following example uses the `for_each` function and a lambda expression to fill a `vector` object with the values of another one. It uses a `try`/`catch` block to handle invalid access to the first vector.  
+ The body of a lambda expression follows the rules for both structured exception handling (SEH) and C++ exception handling. You can handle a raised exception in the body of a lambda expression or defer exception handling to the enclosing scope. The following example uses the **for_each** function and a lambda expression to fill a `vector` object with the values of another one. It uses a **try**/**catch** block to handle invalid access to the first vector.  
   
 ### Code  
   
@@ -492,7 +484,6 @@ int main()
         Console::WriteLine(s + Convert::ToChar(ch));   
     }("Hello");  
 }  
-  
 ```  
   
 ### Output  
@@ -505,11 +496,11 @@ Hello!
  You can also use lambda expressions with the STL/CLR library. For more information, see [STL/CLR Library Reference](../dotnet/stl-clr-library-reference.md).  
   
 > [!IMPORTANT]
->  Lambdas are not supported in these common language runtime (CLR) managed entities: `ref class`, `ref struct`, `value class`, and `value struct`.  
+>  Lambdas are not supported in these common language runtime (CLR) managed entities: **ref class**, **ref struct**, **value class**, and **value struct**.  
   
  [[In This Article](#top)]  
   
-## See Also  
+## See also  
  [Lambda Expressions](../cpp/lambda-expressions-in-cpp.md)   
  [Lambda Expression Syntax](../cpp/lambda-expression-syntax.md)   
  [auto](../cpp/auto-cpp.md)   

@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 operator Interface*( ) const throw( );   
 operator Interface&( ) const;   
 Interface& operator*( ) const;   
@@ -31,19 +30,19 @@ operator bool( ) const throw( );
   
 ## Remarks  
   
--   **operator Interface\*** Returns the encapsulated interface pointer, which may be **NULL**.  
+-   **operator Interface\*** Returns the encapsulated interface pointer, which may be NULL.  
   
--   **operator Interface&** Returns a reference to the encapsulated interface pointer, and issues an error if the pointer is **NULL**.  
+-   **operator Interface&** Returns a reference to the encapsulated interface pointer, and issues an error if the pointer is NULL.  
   
 -   **operator\*** Allows a smart pointer object to act as though it were the actual encapsulated interface when dereferenced.  
   
 -   **operator->** Allows a smart pointer object to act as though it were the actual encapsulated interface when dereferenced.  
   
--   **operator&** Releases any encapsulated interface pointer, replacing it with **NULL**, and returns the address of the encapsulated pointer. This allows the smart pointer to be passed by address to a function that has an **out** parameter through which it returns an interface pointer.  
+-   **operator&** Releases any encapsulated interface pointer, replacing it with NULL, and returns the address of the encapsulated pointer. This allows the smart pointer to be passed by address to a function that has an *out* parameter through which it returns an interface pointer.  
   
--   **operator bool** Allows a smart pointer object to be used in a conditional expression. This operator returns **true** if the pointer is not **NULL**.  
+-   **operator bool** Allows a smart pointer object to be used in a conditional expression. This operator returns TRUE if the pointer is not NULL.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

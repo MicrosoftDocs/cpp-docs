@@ -32,12 +32,11 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 modifier __interface interface-name {interface-definition};  
 ```  
   
 ## Remarks  
- A C++ [class](../cpp/class-cpp.md) or [struct](../cpp/struct-cpp.md) could be implemented with these rules, but `__interface` enforces them.  
+ A C++ [class](../cpp/class-cpp.md) or [struct](../cpp/struct-cpp.md) could be implemented with these rules, but **__interface** enforces them.  
   
  For example, the following is a sample interface definition:  
   
@@ -56,7 +55,7 @@ __interface IMyInterface {
 virtual HRESULT CommitX() = 0;  
 ```  
   
- `__interface` implies the [novtable](../cpp/novtable.md) `__declspec` modifier.  
+ **__interface** implies the [novtable](../cpp/novtable.md) **__declspec** modifier.  
   
 ## Example  
  The following sample shows how to use properties declared in an interface.  
@@ -141,6 +140,6 @@ bstr_data = Testing
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Interface Attributes](../windows/interface-attributes.md)

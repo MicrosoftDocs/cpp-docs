@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 FactoryCache* factoryCache;  
 ```  
   
 ## Remarks  
- Stores the pointer to the factory cache for the CreatorMap.  
+ Stores the pointer to the factory cache for the **CreatorMap**.  
   
 ## Requirements  
  **Header:** module.h  

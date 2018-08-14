@@ -94,7 +94,7 @@ IBindCtx* CreateBindContext(CFileException* pError);
  A pointer to a file exception. In the event of an error, it will be set to the cause.  
   
 ### Return Value  
- A pointer to the bind context [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) to bind with if successful; otherwise **NULL**. If the instance was opened with an `IBindHost` interface, the bind context is retrieved from the `IBindHost`. If there is no `IBindHost` interface or the interface fails to return a bind context, a bind context is created. For a description of the [IBindHost](http://msdn.microsoft.com/library/ie/ms775076) interface, see the Windows SDK.  
+ A pointer to the bind context [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) to bind with if successful; otherwise NULL. If the instance was opened with an `IBindHost` interface, the bind context is retrieved from the `IBindHost`. If there is no `IBindHost` interface or the interface fails to return a bind context, a bind context is created. For a description of the [IBindHost](http://msdn.microsoft.com/library/ie/ms775076) interface, see the Windows SDK.  
   
 ### Remarks  
  A bind context is an object that stores information about a particular moniker binding operation. You can override this function to provide a custom bind context.  
@@ -154,7 +154,7 @@ virtual BOOL Open(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The *lpszURL* parameter cannot be used on a Macintosh. Only the *pMoniker* form of **Open** can be used on a Macintosh.  
+ The *lpszURL* parameter cannot be used on a Macintosh. Only the *pMoniker* form of `Open` can be used on a Macintosh.  
   
  You can use a URL or a filename for the *lpszURL* parameter. For example:  
   

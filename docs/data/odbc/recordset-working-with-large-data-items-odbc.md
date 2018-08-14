@@ -48,7 +48,7 @@ This topic applies to both the MFC ODBC classes and the MFC DAO classes.
  In turn, you use the `HGLOBAL` handle, `m_hData`, to work with the data itself, operating on it as you would on any handle data. This is where [CByteArray](../../mfc/reference/cbytearray-class.md) adds capabilities.  
   
 > [!CAUTION]
->  CLongBinary objects cannot be used as parameters in function calls. In addition, their implementation, which calls **::SQLGetData**, necessarily slows scrolling performance for a scrollable snapshot. This might also be true when you use an **::SQLGetData** call yourself to retrieve dynamic schema columns.  
+>  CLongBinary objects cannot be used as parameters in function calls. In addition, their implementation, which calls `::SQLGetData`, necessarily slows scrolling performance for a scrollable snapshot. This might also be true when you use an `::SQLGetData` call yourself to retrieve dynamic schema columns.  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   

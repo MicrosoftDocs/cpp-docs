@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 ~EventTargetArray();  
 ```  
   
 ## Remarks  
- Deinitializes the current `EventTargetArray` class.  
+ Deinitializes the current **EventTargetArray** class.  
   
 ## Requirements  
  **Header:** event.h  

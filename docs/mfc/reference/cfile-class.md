@@ -282,7 +282,7 @@ virtual CString GetFilePath() const;
 ### Remarks  
  For example, when you call `GetFilePath` to generate a message to the user about the file `c:\windows\write\myfile.wri`, the file path, `c:\windows\write\myfile.wri`, is returned.  
   
- To return just the name of the file ( `myfile.wri`), call [GetFileName](#getfilename). To return the title of the file ( `myfile`), call [GetFileTitle](#getfiletitle).  
+ To return just the name of the file (`myfile.wri`), call [GetFileName](#getfilename). To return the title of the file (`myfile`), call [GetFileTitle](#getfiletitle).  
   
 ### Example  
  See the example for [GetFileName](#getfilename).  
@@ -345,19 +345,19 @@ static BOOL PASCAL GetStatus(
   
 ### Parameters  
  *rStatus*  
- A reference to a user-supplied **CFileStatus** structure that will receive the status information. The **CFileStatus** structure has the following fields:  
+ A reference to a user-supplied `CFileStatus` structure that will receive the status information. The `CFileStatus` structure has the following fields:  
   
-- **CTime m_ctime** The date and time the file was created.  
+- `CTime m_ctime` The date and time the file was created.  
   
-- **CTime m_mtime** The date and time the file was last modified.  
+- `CTime m_mtime` The date and time the file was last modified.  
   
-- **CTime m_atime** The date and time the file was last accessed for reading.  
+- `CTime m_atime` The date and time the file was last accessed for reading.  
   
-- **ULONGLONG m_size** The logical size of the file in bytes, as reported by the DIR command.  
+- `ULONGLONG m_size` The logical size of the file in bytes, as reported by the DIR command.  
   
-- **BYTE m_attribute** The attribute byte of the file.  
+- `BYTE m_attribute` The attribute byte of the file.  
   
-- **char m_szFullName[_MAX_PATH]** The absolute filename in the Windows character set.  
+- `char m_szFullName[_MAX_PATH]` The absolute filename in the Windows character set.  
   
  *lpszFileName*  
  A string in the Windows character set that is the path to the desired file. The path can be relative or absolute, or it can contain a network path name.  
@@ -366,12 +366,12 @@ static BOOL PASCAL GetStatus(
  Pointer to CAtlTransactionManager object  
   
 ### Return Value  
- **TRUE** if the status information for the specified file is successfully obtained; otherwise, **FALSE**.  
+ TRUE if the status information for the specified file is successfully obtained; otherwise, FALSE.  
   
 ### Remarks  
- The non-static version of **GetStatus** retrieves status information of the open file associated with the given `CFile` object.  The static version of **GetStatus** obtains the file status from a given file path without actually opening the file. This is useful for testing the existence and access rights of a file.  
+ The non-static version of `GetStatus` retrieves status information of the open file associated with the given `CFile` object.  The static version of `GetStatus` obtains the file status from a given file path without actually opening the file. This is useful for testing the existence and access rights of a file.  
   
- The **m_attribute** member of the **CFileStatus** structure refers to the file attribute set. The `CFile` class provides the **Attribute** enumeration type so file attributes can be specified symbolically:  
+ The `m_attribute` member of the `CFileStatus` structure refers to the file attribute set. The `CFile` class provides the **Attribute** enumeration type so file attributes can be specified symbolically:  
   
 ```  
 enum Attribute {
@@ -437,7 +437,7 @@ HANDLE m_hFile;
 ```  
   
 ### Remarks  
- `m_hFile` is a public variable of type **UINT**. It contains `CFile::hFileNull` (an operating-system-independent empty file indicator) if the handle has not been assigned.  
+ `m_hFile` is a public variable of type UINT. It contains `CFile::hFileNull` (an operating-system-independent empty file indicator) if the handle has not been assigned.  
   
  Use of `m_hFile` is not recommended because the member's meaning depends on the derived class. `m_hFile` is made a public member for convenience in supporting nonpolymorphic use of the class.  
   
@@ -472,7 +472,7 @@ virtual BOOL Open(
  A string that is the path to the desired file. The path can be relative, absolute, or a network name (UNC).  
   
  *nOpenFlags*  
- A **UINT** that defines the file's sharing and access mode. It specifies the action to take when opening the file. You can combine options by using the bitwise-OR ( **&#124;** ) operator. One access permission and one share option are required; the **modeCreate** and **modeNoInherit** modes are optional. See the [CFile](#cfile) constructor for a list of mode options.  
+ A UINT that defines the file's sharing and access mode. It specifies the action to take when opening the file. You can combine options by using the bitwise-OR ( **&#124;** ) operator. One access permission and one share option are required; the `modeCreate` and `modeNoInherit` modes are optional. See the [CFile](#cfile) constructor for a list of mode options.  
   
  *pError*  
  A pointer to an existing file-exception object that will receive the status of a failed operation.  
@@ -486,16 +486,16 @@ virtual BOOL Open(
 ### Remarks  
  The two functions form a "safe" method for opening a file where a failure is a normal, expected condition.  
   
- While the `CFile` constructor will throw an exception in an error condition, `Open` will return **FALSE** for error conditions. `Open` can still initialize a [CFileException](../../mfc/reference/cfileexception-class.md) object to describe the error, however. If you don't supply the *pError* parameter, or if you pass **NULL** for *pError*, `Open` will return **FALSE** and not throw a `CFileException`. If you pass a pointer to an existing `CFileException`, and `Open` encounters an error, the function will fill it with information describing that error. In neither case will `Open` throw an exception.  
+ While the `CFile` constructor will throw an exception in an error condition, `Open` will return FALSE for error conditions. `Open` can still initialize a [CFileException](../../mfc/reference/cfileexception-class.md) object to describe the error, however. If you don't supply the *pError* parameter, or if you pass NULL for *pError*, `Open` will return FALSE and not throw a `CFileException`. If you pass a pointer to an existing `CFileException`, and `Open` encounters an error, the function will fill it with information describing that error. In neither case will `Open` throw an exception.  
   
  The following table describes the possible results of `Open`.  
   
 |`pError`|Error encountered|Return value|CFileException content|  
 |--------------|------------------------|------------------|----------------------------|  
-|**NULL**|No|**TRUE**|n/a|  
-|ptr to `CFileException`|No|**TRUE**|unchanged|  
-|**NULL**|Yes|**FALSE**|n/a|  
-|ptr to `CFileException`|Yes|**FALSE**|initialized to describe error|  
+|NULL|No|TRUE|n/a|  
+|ptr to `CFileException`|No|TRUE|unchanged|  
+|NULL|Yes|FALSE|n/a|  
+|ptr to `CFileException`|Yes|FALSE|initialized to describe error|  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#13](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_9.cpp)]  
@@ -552,7 +552,7 @@ static void PASCAL Remove(
 ### Remarks  
  It will not remove a directory.  
   
- The **Remove** member function throws an exception if the connected file is open or if the file cannot be removed. This is equivalent to the DEL command.  
+ The `Remove` member function throws an exception if the connected file is open or if the file cannot be removed. This is equivalent to the DEL command.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#17](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_12.cpp)]  
@@ -702,15 +702,15 @@ static void PASCAL SetStatus(
  A string that is the path to the desired file. The path can be relative or absolute, and can contain a network name.  
   
  *status*  
- The buffer containing the new status information. Call the **GetStatus** member function to prefill the **CFileStatus** structure with current values, then make changes as required. If a value is 0, then the corresponding status item is not updated. See the [GetStatus](#getstatus) member function for a description of the **CFileStatus** structure.  
+ The buffer containing the new status information. Call the `GetStatus` member function to prefill the `CFileStatus` structure with current values, then make changes as required. If a value is 0, then the corresponding status item is not updated. See the [GetStatus](#getstatus) member function for a description of the `CFileStatus` structure.  
   
  *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Remarks  
- To set the time, modify the **m_mtime** field of *status*.  
+ To set the time, modify the `m_mtime` field of *status*.  
   
- Please note that when you make a call to `SetStatus` in an attempt to change only the attributes of the file, and the **m_mtime** member of the file status structure is nonzero, the attributes may also be affected (changing the time stamp may have side effects on the attributes). If you want to only change the attributes of the file, first set the **m_mtime** member of the file status structure to zero and then make a call to `SetStatus`.  
+ Please note that when you make a call to `SetStatus` in an attempt to change only the attributes of the file, and the `m_mtime` member of the file status structure is nonzero, the attributes may also be affected (changing the time stamp may have side effects on the attributes). If you want to only change the attributes of the file, first set the `m_mtime` member of the file status structure to zero and then make a call to `SetStatus`.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#21](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_18.cpp)]  
@@ -757,7 +757,7 @@ virtual void Write(
  The number of bytes to be transferred from the buffer. For text-mode files, carriage return-linefeed pairs are counted as single characters.  
   
 ### Remarks  
- **Write** throws an exception in response to several conditions, including the disk-full condition.  
+ `Write` throws an exception in response to several conditions, including the disk-full condition.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#16](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_19.cpp)]  

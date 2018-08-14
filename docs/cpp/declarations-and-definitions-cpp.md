@@ -20,7 +20,7 @@ Declarations introduce names in a program, for example the names of variables, n
   
 1.  Is a function prototype (a function declaration with no function body).  
   
-2.  Contains the `extern` specifier but no initializer (objects and variables) or function body (functions). This signifies that the definition is not necessarily in the current translation unit and gives the name external linkage.  
+2.  Contains the **extern** specifier but no initializer (objects and variables) or function body (functions). This signifies that the definition is not necessarily in the current translation unit and gives the name external linkage.  
   
 3.  Is of a static data member inside a class declaration.  
   
@@ -28,9 +28,9 @@ Declarations introduce names in a program, for example the names of variables, n
   
 4.  Is a class name declaration with no following definition, such as `class T;`.  
   
-5.  Is a `typedef` statement.  
+5.  Is a **typedef** statement.  
   
- Examples of declarations that are also definitions are:  
+Examples of declarations that are also definitions are:  
   
 ```cpp 
 // Declare and define int variables i and j.  
@@ -49,10 +49,9 @@ public:
 };  
 ```  
   
- Some declarations that are not definitions are:  
+Some declarations that are not definitions are:  
   
 ```cpp 
-  
 extern int i;  
 char *strchr( const char *Str, const char Target );  
 ```  
@@ -61,7 +60,7 @@ char *strchr( const char *Str, const char Target );
   
  Declarations occur in a *scope*. The scope controls the visibility of the name declared and the duration of the object defined, if any. For more information about how scope rules interact with declarations, see [Scope](../cpp/scope-visual-cpp.md).  
   
- An object declaration is also a definition unless it contains the `extern` storage-class specifier described in [Storage classes](storage-classes-cpp.md). A function declaration is also a definition unless it is a prototype. A prototype is a function header without a defining function body. The definition of an object causes allocation of storage and appropriate initializations for that object.  
+ An object declaration is also a definition unless it contains the **extern** storage-class specifier described in [Storage classes](storage-classes-cpp.md). A function declaration is also a definition unless it is a prototype. A prototype is a function header without a defining function body. The definition of an object causes allocation of storage and appropriate initializations for that object.  
   
 ## Definitions  
  A definition is a unique specification of an object or variable, function, class, or enumerator. Because definitions must be unique, a program can contain only one definition for a given program element. There can be a many-to-one correspondence between declarations and definitions. There are two cases in which a program element can be declared and not defined:  
@@ -85,6 +84,6 @@ char *strchr( const char *Str, const char Target );
     }  
     ```  
   
-## See Also  
+## See also  
  [Basic Concepts](../cpp/basic-concepts-cpp.md)   
  [Point of Declaration](../cpp/point-of-declaration-in-cpp.md)

@@ -13,19 +13,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockSharedTraits::Unlock Method
-Releases exclusive control of the specified SRWLock object.  
+Releases exclusive control of the specified `SRWLock` object.  
   
 ## Syntax  
   
-```  
+```cpp  
 inline static void Unlock(  
    _In_ Type srwlock  
 );  
 ```  
   
-#### Parameters  
- `srwlock`  
- A handle to an SRWLock object.  
+### Parameters  
+ *srwlock*  
+ A handle to an `SRWLock` object.  
   
 ## Return Value  
   

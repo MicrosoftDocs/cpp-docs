@@ -148,15 +148,15 @@ void AddSubItem(
  Specifies the zero-based index of a location where to insert the item.  
   
  [in] *bOnTop*  
- `TRUE` to specify that the item should be inserted before the ribbon gallery; otherwise, `FALSE`.  
+ TRUE to specify that the item should be inserted before the ribbon gallery; otherwise, FALSE.  
   
 ### Remarks  
  You can combine popup galleries with popup menu items by calling this method. Menu items can be placed before or after the gallery.  
   
- To insert the item before the gallery, set *bOnTop* to `TRUE`. Set *bOnTop* to `FALSE` to insert the item below the gallery.  
+ To insert the item before the gallery, set *bOnTop* to TRUE. Set *bOnTop* to FALSE to insert the item below the gallery.  
   
 > [!NOTE]
->  The parameter *nIndex* specifies the insertion index both at the top of the gallery and at the bottom of the gallery. For example, if you need to insert an item one position before the gallery, set *nIndex* to 1 and *bOnTop* to `TRUE`. Similarly, if you need to insert an item one position below the gallery, set *nIndex* to 1 and *bOnTop* to `FALSE`.  
+>  The parameter *nIndex* specifies the insertion index both at the top of the gallery and at the bottom of the gallery. For example, if you need to insert an item one position before the gallery, set *nIndex* to 1 and *bOnTop* to TRUE. Similarly, if you need to insert an item one position below the gallery, set *nIndex* to 1 and *bOnTop* to FALSE.  
   
 ##  <a name="clear"></a>  CMFCRibbonGallery::Clear  
  Clears the content of the gallery.  
@@ -243,10 +243,10 @@ void EnableMenuResize(
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to enable resizing the menu; otherwise, `FALSE`.  
+ TRUE to enable resizing the menu; otherwise, FALSE.  
   
  [in] *bVertcalOnly*  
- `TRUE` to specify that the gallery can be resized only vertically; `FALSE` to specify that the gallery can be resized both vertically and horizontally.  
+ TRUE to specify that the gallery can be resized only vertically; FALSE to specify that the gallery can be resized both vertically and horizontally.  
   
 ### Remarks  
  Use this method to enable or disable resizing the ribbon gallery. When resizing is enabled, the ribbon gallery displays a gripper that a user can use to resize it.  
@@ -260,7 +260,7 @@ void EnablMenuSideBar(BOOL bEnable=TRUE);
   
 ### Parameters  
  [in] *bEnable*  
- `TRUE` to specify that the side bar is enabled; otherwise, `FALSE`.  
+ TRUE to specify that the side bar is enabled; otherwise, FALSE.  
   
 ### Remarks  
  Call this method to enable or disable the Office XP-style side bar at the left side of the menu.  
@@ -341,7 +341,7 @@ LPCTSTR GetItemToolTip(int nItemIndex) const;
  Specifies the zero-based index of the item for which to retrieve the tooltip text.  
   
 ### Return Value  
- A pointer to the tooltip string assigned to an item in the ribbon gallery. It can be `NULL` if no tooltip is assigned to that item.  
+ A pointer to the tooltip string assigned to an item in the ribbon gallery. It can be NULL if no tooltip is assigned to that item.  
   
 ### Remarks  
   
@@ -417,7 +417,7 @@ BOOL IsButtonMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the palette is displayed as a drop-down menu button; `FALSE` if the palette is displayed directly on the ribbon.  
+ TRUE if the palette is displayed as a drop-down menu button; FALSE if the palette is displayed directly on the ribbon.  
   
 ### Remarks  
   
@@ -429,7 +429,7 @@ BOOL IsMenuResizeEnabled() const;
 ```  
   
 ### Return Value  
- `TRUE` if menu resizing has been enabled; otherwise, `FALSE`.  
+ TRUE if menu resizing has been enabled; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -452,7 +452,7 @@ BOOL IsMenuSideBar() const;
 ```  
   
 ### Return Value  
- `TRUE` if the Office XP-style side bar is drawn at the left side of the popup menu; otherwise, `FALSE`.  
+ TRUE if the Office XP-style side bar is drawn at the left side of the popup menu; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -585,7 +585,7 @@ virtual BOOL SetACCData(
 ### Return Value  
   
 ### Remarks  
- `TRUE` if the method is successful; otherwise, `FALSE`.  
+ TRUE if the method is successful; otherwise, FALSE.  
   
 ##  <a name="setbuttonmode"></a>  CMFCRibbonGallery::SetButtonMode  
  Determines whether to display the ribbon gallery as a drop-down button or as a palette directly on the ribbon.  
@@ -596,7 +596,7 @@ void SetButtonMode(BOOL bSet=TRUE);
   
 ### Parameters  
  [in] *bSet*  
- `TRUE` to display the ribbon gallery as a drop-down menu button; `FALSE` to display the contents of the ribbon gallery directly on the ribbon.  
+ TRUE to display the ribbon gallery as a drop-down menu button; FALSE to display the contents of the ribbon gallery directly on the ribbon.  
   
 ### Remarks  
   

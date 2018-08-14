@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # POINT Structure1
-The **POINT** structure defines the x*-* and y-coordinates of a point.  
+The `POINT` structure defines the x*-* and y-coordinates of a point.  
   
 ## Syntax  
   

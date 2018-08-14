@@ -215,7 +215,7 @@ virtual BOOL OnDrawIcon(
  Coordinates of the icon.  
   
 ### Return Value  
- `TRUE` if the icon was drawn. Otherwise `FALSE`.  
+ TRUE if the icon was drawn. Otherwise FALSE.  
   
 ### Remarks  
  Override this method in a derived class to display a custom icon. You must also override [CMFCToolTipCtrl::GetIconSize](#geticonsize) to enable the tooltip to correctly calculate the layout of text and description.  
@@ -238,7 +238,7 @@ virtual CSize OnDrawLabel(
  Bounding rectangle of the label area.  
   
  [in] *bCalcOnly*  
- If `TRUE`, the label will not be drawn.  
+ If TRUE, the label will not be drawn.  
   
 ### Return Value  
  Size of the label, in pixels.  

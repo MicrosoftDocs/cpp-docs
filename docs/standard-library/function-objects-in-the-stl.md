@@ -45,7 +45,7 @@ template <class Key,
 class set
 ```
 
-The second template argument is the function object `less`. This function object returns `true` if the first parameter passed to it is less than the second parameter passed. Since some containers sort their elements, the container needs a way of comparing two elements, and this is accomplished using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
+The second template argument is the function object `less`. This function object returns **true** if the first parameter passed to it is less than the second parameter passed. Since some containers sort their elements, the container needs a way of comparing two elements, and this is accomplished using the function object. You can define your own sorting criteria for containers by creating a function object and specifying it in the template list for the container.
 
 ## Function Objects and Algorithms
 
@@ -59,7 +59,7 @@ ForwardIterator remove_if(
     Predicate pred);
 ```
 
-The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is `true`, then the element is removed from the container being accessed by the iterators `first` and `last`. You can use any of the function objects declared in the [\<functional>](../standard-library/functional.md) header for the argument `pred` or you can create your own.
+The last argument to `remove_if` is a function object that returns a boolean value (a *predicate*). If the result of the function object is **true**, then the element is removed from the container being accessed by the iterators `first` and `last`. You can use any of the function objects declared in the [\<functional>](../standard-library/functional.md) header for the argument `pred` or you can create your own.
 
 ## See also
 

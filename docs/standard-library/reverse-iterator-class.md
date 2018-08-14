@@ -184,7 +184,7 @@ The type is a synonym for the template parameter `Iterator`.
 
 See [reverse_iterator::base](#base) for an example of how to declare and use `iterator_type`.
 
-## <a name="op_star"></a>  reverse_iterator::operator*
+## <a name="op_star"></a>  reverse_iterator::operator\*
 
 Returns the element that a reverse_iterator addresses.
 
@@ -253,7 +253,7 @@ reverse_iterator<RandomIterator> operator+(difference_type Off) const;
 
 ### Parameters
 
-`Off`
+*Off*
  The offset to be added to the reverse iterator.
 
 ### Return Value
@@ -402,7 +402,7 @@ reverse_iterator<RandomIterator>& operator+=(difference_type Off);
 
 ### Parameters
 
-`Off`
+*Off*
  The offset by which to increment the iterator.
 
 ### Return Value
@@ -475,7 +475,7 @@ reverse_iterator<RandomIterator> operator-(difference_type Off) const;
 
 ### Parameters
 
-`Off`
+*Off*
  The offset to be subtracted from the reverse_iterator.
 
 ### Return Value
@@ -625,7 +625,7 @@ reverse_iterator<RandomIterator>& operator-=(difference_type Off);
 
 ### Parameters
 
-`Off`
+*Off*
  The offset to be subtracted from the `reverse_iterator`.
 
 ### Remarks
@@ -779,7 +779,7 @@ reference operator[](difference_type Off) const;
 
 ### Parameters
 
-`Off`
+*Off*
  The offset from the `reverse_iterator` address.
 
 ### Return Value
@@ -933,7 +933,7 @@ The type is a synonym for the iterator trait typename `iterator_traits`\< *Rando
 
 ### Example
 
-See [reverse_iterator::operator&#91;&#93;](#op_at) or [reverse_iterator::operator*](#op_star) for examples of how to declare and use **reference**.
+See [reverse_iterator::operator&#91;&#93;](#op_at) or [reverse_iterator::operator*](#op_star) for examples of how to declare and use `reference`.
 
 ## <a name="reverse_iterator"></a>  reverse_iterator::reverse_iterator
 
@@ -949,7 +949,7 @@ reverse_iterator(const reverse_iterator<Type>& right);
 
 ### Parameters
 
-`right`
+*right*
  The iterator that is to be adapted to a `reverse_iterator`.
 
 ### Return Value

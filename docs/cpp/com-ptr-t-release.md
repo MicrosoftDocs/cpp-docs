@@ -15,20 +15,18 @@ ms.workload: ["cplusplus"]
 # _com_ptr_t::Release
 **Microsoft Specific**  
   
- Calls the **Release** member function of **IUnknown** on the encapsulated interface pointer.  
+ Calls the **Release** member function of `IUnknown` on the encapsulated interface pointer.  
   
 ## Syntax  
   
 ```  
-  
 void Release( );  
-  
 ```  
   
 ## Remarks  
- Calls `IUnknown::Release` on the encapsulated interface pointer, raising an `E_POINTER` error if this interface pointer is **NULL**.  
+ Calls `IUnknown::Release` on the encapsulated interface pointer, raising an `E_POINTER` error if this interface pointer is NULL.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

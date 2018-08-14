@@ -102,7 +102,7 @@ CMFCTasksPaneTask(
  Specifies the handle to the task window.  
   
  *bAutoDestroyWindow*  
- If `TRUE`, the task window will be destroyed automatically.  
+ If TRUE, the task window will be destroyed automatically.  
   
  *nWindowHeight*  
  Specifies the height of the task window.  
@@ -117,7 +117,7 @@ BOOL m_bAutoDestroyWindow;
 ```  
   
 ### Remarks  
- Set to `TRUE` to specify that the task window ( [CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)) should be destroyed automatically; otherwise, `FALSE`.  
+ Set to TRUE to specify that the task window ( [CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)) should be destroyed automatically; otherwise, FALSE.  
   
 ##  <a name="m_bisbold"></a>  CMFCTasksPaneTask::m_bIsBold  
  Determines whether a task label is drawn in bold text.  
@@ -127,7 +127,7 @@ BOOL m_bIsBold;
 ```  
   
 ### Remarks  
- Set this member to `TRUE` to display bold text for the task label.  
+ Set this member to TRUE to display bold text for the task label.  
   
 ##  <a name="m_dwuserdata"></a>  CMFCTasksPaneTask::m_dwUserData  
  Contains user-defined data that is associated with the task. Set to zero if no data is associated with the task.  
@@ -224,7 +224,7 @@ virtual BOOL SetACCData(
  An object of type `CAccessibilityData` that is populated with the accessibility data of the current task.  
   
 ### Return Value  
- `TRUE` if the *data* parameter was successfully populated with the accessibility data of the current task; otherwise, `FALSE`.  
+ TRUE if the *data* parameter was successfully populated with the accessibility data of the current task; otherwise, FALSE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

@@ -29,16 +29,16 @@ class istream_iterator
 
 ### Parameters
 
-`Type`
+*Type*
  The type of object to be extracted from the input stream.
 
-`CharType`
- The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is `char`.
+*CharType*
+ The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is **char**.
 
-`Traits`
+*Traits*
  The type that represents the character type for the `istream_iterator`. This argument is optional and the default value is `char_traits`< `CharType`>.
 
-`Distance`
+*Distance*
  A signed integral type that represents the difference type for the `istream_iterator`. This argument is optional and the default value is `ptrdiff_t`.
 
 After constructing or incrementing an object of class istream_iterator with a nonnull stored pointer, the object attempts to extract and store an object of type `Type` from the associated input stream. If the extraction fails, the object effectively replaces the stored pointer with a null pointer, thus making an end-of-sequence indicator.
@@ -81,7 +81,7 @@ typedef CharType char_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Chartype**.
+The type is a synonym for the template parameter `Chartype`.
 
 ### Example
 
@@ -131,12 +131,12 @@ istream_iterator(istream_type& _Istr);
 
 ### Parameters
 
-`_Istr`
+*_Istr*
  The input stream to be read use to initialize the `istream_iterator`.
 
 ### Remarks
 
-The First constructor initializes the input stream pointer with a null pointer and creates an end-of-stream iterator. The second constructor initializes the input stream pointer with *&_Istr*, then attempts to extract and store an object of type **Type**.
+The First constructor initializes the input stream pointer with a null pointer and creates an end-of-stream iterator. The second constructor initializes the input stream pointer with *&_Istr*, then attempts to extract and store an object of type `Type`.
 
 The end-of-stream iterator can be use to test whether an `istream_iterator` has reached the end of a stream.
 
@@ -192,7 +192,7 @@ See [istream_iterator](#istream_iterator) for an example of how to declare and u
 
 ## <a name="op_star"></a>  istream_iterator::operator*
 
-The dereferencing operator returns the stored object of type **Type** addressed by the `istream_iterator`.
+The dereferencing operator returns the stored object of type `Type` addressed by the `istream_iterator`.
 
 ```cpp
 const Type& operator*() const;
@@ -200,7 +200,7 @@ const Type& operator*() const;
 
 ### Return Value
 
-The stored object of type **Type**.
+The stored object of type `Type`.
 
 ### Example
 
@@ -296,7 +296,7 @@ istream_iterator<Type, CharType, Traits, Distance> operator++(int);
 
 ### Return Value
 
-The first member operator returns a reference to the incremented object of type **Type** extracted from the input stream and the second member function returns a copy of the object.
+The first member operator returns a reference to the incremented object of type `Type` extracted from the input stream and the second member function returns a copy of the object.
 
 ### Example
 
@@ -340,7 +340,7 @@ typedef Traits traits_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Traits**.
+The type is a synonym for the template parameter *Traits*.
 
 ### Example
 

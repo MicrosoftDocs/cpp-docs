@@ -18,21 +18,21 @@ ms.workload: ["cplusplus"]
  The C decorated function name is "_MyFunc."  
   
  ![CDECL calling convention](../cpp/media/vc37i01.gif "vc37I01")  
-The __cdecl calling convention  
+The **__cdecl** calling convention  
   
 ## __stdcall and thiscall  
- The C decorated name (`__stdcall`) is "_MyFunc@20." The C++ decorated name is proprietary.  
+ The C decorated name (**__stdcall**) is "_MyFunc@20." The C++ decorated name is proprietary.  
   
  ![&#95;&#95;stdcall and thiscall calling conventions](../cpp/media/vc37i02.gif "vc37I02")  
 The __stdcall and thiscall calling conventions  
   
 ## __fastcall  
- The C decorated name (`__fastcall`) is "@MyFunc@20." The C++ decorated name is proprietary.  
+ The C decorated name (**__fastcall**) is "@MyFunc@20." The C++ decorated name is proprietary.  
   
  ![Calling convention for &#95;&#95;fastcall](../cpp/media/vc37i03.gif "vc37I03")  
 The __fastcall calling convention  
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Calling Example: Function Prototype and Call](../cpp/calling-example-function-prototype-and-call.md)

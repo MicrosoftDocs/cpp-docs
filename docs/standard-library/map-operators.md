@@ -29,11 +29,11 @@ bool operator!=(
 
 ### Parameters
 
-`left`
- An object of type **map**.
+*left*
+ An object of type `map`.
 
-`right`
- An object of type **map**.
+*right*
+ An object of type `map`.
 
 ### Return Value
 
@@ -93,11 +93,11 @@ bool operator<(
 
 ### Parameters
 
-`left`
- An object of type **map**.
+*left*
+ An object of type `map`.
 
-`right`
- An object of type **map**.
+*right*
+ An object of type `map`.
 
 ### Return Value
 
@@ -157,11 +157,11 @@ bool operator<=(
 
 ### Parameters
 
-`left`
- An object of type **map**.
+*left*
+ An object of type `map`.
 
-`right`
- An object of type **map**.
+*right*
+ An object of type `map`.
 
 ### Return Value
 
@@ -224,11 +224,11 @@ bool operator==(
 
 ### Parameters
 
-`left`
- An object of type **map**.
+*left*
+ An object of type `map`.
 
-`right`
- An object of type **map**.
+*right*
+ An object of type `map`.
 
 ### Return Value
 
@@ -288,11 +288,11 @@ bool operator>(
 
 ### Parameters
 
-`left`
- An object of type **map**.
+*left*
+ An object of type `map`.
 
-`right`
- An object of type **map**.
+*right*
+ An object of type `map`.
 
 ### Return Value
 
@@ -352,11 +352,11 @@ bool operator>=(
 
 ### Parameters
 
-`left`
- An object of type **map**.
+*left*
+ An object of type `map`.
 
-`right`
- An object of type **map**.
+*right*
+ An object of type `map`.
 
 ### Return Value
 
@@ -419,10 +419,10 @@ bool operator!=(
 
 ### Parameters
 
-`left`
+*left*
  An object of type `multimap`.
 
-`right`
+*right*
  An object of type `multimap`.
 
 ### Return Value
@@ -483,10 +483,10 @@ bool operator<(
 
 ### Parameters
 
-`left`
+*left*
  An object of type `multimap`.
 
-`right`
+*right*
  An object of type `multimap`.
 
 ### Return Value
@@ -547,10 +547,10 @@ bool operator<=(
 
 ### Parameters
 
-`left`
+*left*
  An object of type `multimap`.
 
-`right`
+*right*
  An object of type `multimap`.
 
 ### Return Value
@@ -614,10 +614,10 @@ bool operator==(
 
 ### Parameters
 
-`left`
+*left*
  An object of type `multimap`.
 
-`right`
+*right*
  An object of type `multimap`.
 
 ### Return Value
@@ -678,10 +678,10 @@ bool operator>(
 
 ### Parameters
 
-`left`
+*left*
  An object of type `multimap`.
 
-`right`
+*right*
  An object of type `multimap`.
 
 ### Return Value
@@ -742,10 +742,10 @@ bool operator>=(
 
 ### Parameters
 
-`left`
+*left*
  An object of type `multimap`.
 
-`right`
+*right*
  An object of type `multimap`.
 
 ### Return Value

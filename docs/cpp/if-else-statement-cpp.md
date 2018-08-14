@@ -13,8 +13,8 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # if-else Statement (C++)
-Controls conditional branching. Statements in the *if-block* are executed only if the *if-expression* evaluates to a non-zero value (or `true`). If the value of *expression* is nonzero, *statement1* and any other statements in the block are executed and the else-block, if present, is skipped. If the value of *expression* is zero, then the if-block is skipped and the else-block, if present, is executed. Expressions that evaluate to non-zero are
-- `true`
+Controls conditional branching. Statements in the *if-block* are executed only if the *if-expression* evaluates to a non-zero value (or TRUE). If the value of *expression* is nonzero, *statement1* and any other statements in the block are executed and the else-block, if present, is skipped. If the value of *expression* is zero, then the if-block is skipped and the else-block, if present, is executed. Expressions that evaluate to non-zero are
+- TRUE
 - a non-null pointer,
 - any non-zero arithmetic value, or 
 - a class type that defines an unambiguous conversion to an arithmetic, boolean or pointer type. (For information about conversions, see [Standard Conversions](../cpp/standard-conversions.md).)   
@@ -22,7 +22,6 @@ Controls conditional branching. Statements in the *if-block* are executed only i
 ## Syntax  
   
 ```  
-  
 if ( expression )  
 {
    statement1;
@@ -117,7 +116,6 @@ int main()
 #include <string>
 #include <algorithm>
 
-
 using namespace std;
 
 map<int, string> m;
@@ -145,13 +143,11 @@ int main()
 		shared_flag = false;
 	}
 
-
 	string s{ "if" };
     if (auto keywords = { "if", "for", "while" }; any_of(keywords.begin(), keywords.end(), [&s](const char* kw) { return s == kw; }))
 	{
 		cout << "Error! Token must not be a keyword\n";
 	}
-
 }
 ```
 
@@ -160,7 +156,7 @@ int main()
  The **else** clause of an `if...else` statement is associated with the closest previous **if** statement in the same scope that does not have a corresponding **else** statement.   
 
 ## constexpr if statements
-**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): In function templates, you can use a **constexpr if** statement to make compile-time branching decisions without having to resort to multiple function overloads. For example, you can write a single function that handles parameter unpacking (no zero-parameter overload is needed): 
+**Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): In function templates, you can use a `constexpr if` statement to make compile-time branching decisions without having to resort to multiple function overloads. For example, you can write a single function that handles parameter unpacking (no zero-parameter overload is needed): 
 
 ```cpp
 template <class T, class... Rest>
@@ -182,9 +178,7 @@ void f(T&& t, Rest&&... r)
 }
 ```
 
-  
- 
-## See Also  
+## See also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [switch Statement (C++)](../cpp/switch-statement-cpp.md)

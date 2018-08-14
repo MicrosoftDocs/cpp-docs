@@ -61,7 +61,7 @@ f / 0.0
  The relationship between the multiplicative operators is given by the identity (*e1* / *e2*) \* *e2* + *e1* % *e2* == *e1*.  
   
 ## Example  
- The following program demonstrates the multiplicative operators. Note that either operand of `10 / 3` must be explicitly cast to type `float` to avoid truncation so that both operands are of type `float` before division.  
+ The following program demonstrates the multiplicative operators. Note that either operand of `10 / 3` must be explicitly cast to type **float** to avoid truncation so that both operands are of type **float** before division.  
   
 ```cpp 
 // expre_Multiplicative_Operators.cpp  
@@ -77,7 +77,7 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Multiplicative Operators](../c-language/c-multiplicative-operators.md)
