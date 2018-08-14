@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
 ---
 # longjmp
 
-Restores stack environment and execution locale.
+Restores the stack environment and execution locale set by a `setjmp` call.
 
 ## Syntax
 
@@ -55,6 +55,8 @@ Observe the following restrictions when using **longjmp**:
 - Do not use **longjmp** to transfer control out of an interrupt-handling routine unless the interrupt is caused by a floating-point exception. In this case, a program may return from an interrupt handler via **longjmp** if it first reinitializes the floating-point math package by calling [_fpreset](fpreset.md).
 
 - Do not use **longjmp** to transfer control from a callback routine invoked directly or indirectly by Windows code.
+
+- If the code is compiled by using **/EHs** or **/EHsc** and the function that contains the **longjmp** call is **noexcept** then local objects in that function may not be destructed during the stack unwind.
 
 **END Microsoft Specific**
 
