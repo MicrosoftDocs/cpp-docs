@@ -47,7 +47,7 @@
       "author": {
         "standard-library/**/**.md": "corob-msft"
       },
-      "md.author": {
+      "ms.author": {
         "standard-library/**/**.md": "corob"
       }      
     },
