@@ -60,7 +60,7 @@ This document demonstrates how to use the Concurrency Runtime to move the work t
      Verify that the application was created successfully by building and running it. To build the application, on the **Build** menu, click **Build Solution**. If the application builds successfully, run the application by clicking **Start Debugging** on the **Debug** menu.  
   
 ##  <a name="serial"></a> Implementing the Serial Version of the Mandelbrot Application  
- This section describes how to draw the Mandelbrot fractal. This version draws the Mandelbrot fractal to a [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [Bitmap](https://msdn.microsoft.com/library/ms534420.aspx) object and then copies the contents of that bitmap to the client window.  
+ This section describes how to draw the Mandelbrot fractal. This version draws the Mandelbrot fractal to a [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [Bitmap](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) object and then copies the contents of that bitmap to the client window.  
   
 #### To implement the serial version of the Mandelbrot application  
   

@@ -8,8 +8,8 @@ ms.assetid: aef01de1-06b5-4b6c-aebc-2c9f423d7e47
 ---
 # &lt;new&gt; typedefs
 
-||
-|-|
+| |
+| - |
 |[new_handler](#new_handler)|
 
 ## <a name="new_handler"></a>  new_handler

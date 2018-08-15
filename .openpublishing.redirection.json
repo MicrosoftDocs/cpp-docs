@@ -1,4 +1,4 @@
-{
+{ 
     "redirections": [
         {
             "source_path": "docs/assembler/arm/index.md",
@@ -238,6 +238,11 @@
         {
             "source_path": "docs/cpp/using-extern-to-specify-linkage.md",
             "redirect_url": "/cpp/cpp/extern-cpp",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/cpp/using-structured-exception-handling-with-cpp.md",
+            "redirect_url": "/cpp/cpp/exception-handling-differences",
             "redirect_document_id": false
         },
         {

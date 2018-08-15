@@ -65,7 +65,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h
   
 Windows XP is no longer supported by Microsoft, so even though targeting it is allowed in Visual Studio 2015, you should be phasing out support for it in your applications, and encouraging your users to adopt new versions of Windows.  
   
-To get rid of the error, define WINVER by updating the **Project Properties** setting to the lowest version of Windows you currently want to target. Find a table of values for various Windows releases [here](http://msdn.microsoft.com/library/windows/desktop/aa383745.aspx).  
+ To get rid of the error, define WINVER by updating the **Project Properties** setting to the lowest version of Windows you currently want to target. Find a table of values for various Windows releases [here](/windows/desktop/WinProg/using-the-windows-headers).  
   
 The stdafx.h file contained some of these macro definitions.  
   
@@ -542,7 +542,7 @@ wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
   
 The _T macro has the effect of making a string literal compile as a **char** string or a **wchar_t** string, depending on the setting of MBCS or UNICODE. To replace all strings with _T in Visual Studio, first open the **Quick Replace** (Keyboard: **Ctrl**+**F**) box or the **Replace In Files** (Keyboard: **Ctrl**+**Shift**+**H**), then choose the **Use Regular Expressions** checkbox. Enter `((\".*?\")|('.+?'))` as the search text and `_T($1)` as the replacement text. If you already have the _T macro around some strings, this procedure will add it again, and it might also find cases where you don't want _T, such as when you use `#include`, so it's best to use **Replace Next** rather than **Replace All**.  
   
-This particular function, [wsprintf](https://msdn.microsoft.com/library/windows/desktop/ms647550.aspx), is actually defined in the Windows headers, and the documentation for it recommends that it not be used, due to possible buffer overrun. No size is given for the `szTmp` buffer, so there is no way for the function to check that the buffer can hold all the data to be written to it. See the next section about porting to the Secure CRT, in which we fix other similar problems. We ended up replacing it with [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).  
+ This particular function, [wsprintf](/windows/desktop/api/winuser/nf-winuser-wsprintfa), is actually defined in the Windows headers, and the documentation for it recommends that it not be used, due to possible buffer overrun. No size is given for the `szTmp` buffer, so there is no way for the function to check that the buffer can hold all the data to be written to it. See the next section about porting to the Secure CRT, in which we fix other similar problems. We ended up replacing it with [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).  
   
 Another common error you’ll see in converting to Unicode is this.  
   

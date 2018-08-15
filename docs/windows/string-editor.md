@@ -44,4 +44,5 @@ A string table is a Windows resource that contains a list of IDs, values, and ca
 ## See Also  
  [Resource Editors](../windows/resource-editors.md)   
  [Strings](http://msdn.microsoft.com/library/windows/desktop/ms646979.aspx)   
- [About Strings](http://msdn.microsoft.com/library/windows/desktop/ms647465.aspx)
+ [About Strings](/windows/desktop/menurc/about-strings)
+
