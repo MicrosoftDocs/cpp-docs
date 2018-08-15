@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Compiler Warning (level 1) C4114
 same type qualifier used more than once  
   
- A type declaration or definition uses a type qualifier (**const**, `volatile`, **signed**, or `unsigned`) more than once. This causes a warning with Microsoft extensions (/Ze) and an error under ANSI compatibility (/Za).  
+ A type declaration or definition uses a type qualifier (**const**, **volatile**, **signed**, or **unsigned**) more than once. This causes a warning with Microsoft extensions (/Ze) and an error under ANSI compatibility (/Za).  
   
  The following sample generates C4114:  
   
