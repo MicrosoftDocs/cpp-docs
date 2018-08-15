@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/11/2018"
+ms.date: "08/15/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
@@ -9,7 +9,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157)
+# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158)
 
 With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
@@ -1616,6 +1616,8 @@ int main() {
 ```
 
 ## <a name="update_158"></a> Bug fixes and behavior changes in Visual Studio 2017 version 15.8
+
+The compiler changes in Visual Studio 2017 version 15.8 all fall under the category of bug fixes and behavior changes, and are listed below:
 
 ### typename on unqualified identifiers
 
