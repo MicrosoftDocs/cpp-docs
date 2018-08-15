@@ -5,6 +5,8 @@ ms.date: "11/04/2016"
 ms.topic: "reference"
 f1_keywords: ["new/std::operator delete", "new/std::operator new"]
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
+author: "corob-msft"
+ms.author: "corob"
 ---
 # &lt;new&gt; operators
 
