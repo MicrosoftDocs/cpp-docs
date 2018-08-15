@@ -26,15 +26,14 @@ goto identifier;
   
  A statement label is meaningful only to a **goto** statement; otherwise, statement labels are ignored. Labels cannot be redeclared.  
 
-A **goto** statement is not allowed to transfer control to a location by skipping over the initialization of any variable that is in scope in that location. The following example raises C2362:
+A **goto** statement is not allowed to transfer control to a location that skips over the initialization of any variable that is in scope in that location. The following example raises C2362:
 
 ```cpp
-
-int bar(bool b)
+int goto_fn(bool b)
 {
     if (!b)
     {
-        goto exit;  //C2362
+        goto exit;  // C2362
     }
     else
     { /*...*/ }
@@ -44,7 +43,6 @@ int bar(bool b)
 exit:
     return error_code;
 }
-
 ```
   
  It is good programming style to use the **break**, **continue**, and **return** statements instead of the **goto** statement whenever possible. However, because the **break** statement exits from only one level of a loop, you might have to use a **goto** statement to exit a deeply nested loop.  
