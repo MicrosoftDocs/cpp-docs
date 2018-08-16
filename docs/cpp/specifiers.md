@@ -22,9 +22,11 @@ This topic describes the *decl-specifiers* (declaration specifiers) component of
   
  *function-specifier*  
   
- [friend](../cpp/friend-cpp.md)  
-  
- [typedef]( [typedef](http://msdn.microsod) `(` *extended-decl-modifier-seq* `)`  
+ [friend](friend-cpp.md)  
+ 
+ [typedef](aliases-and-typedefs.md) `(` *extended-decl-modifier-seq* `)`  
+
+ [__declspec](declspec.md) `(` *extended-decl-modifier-seq* `)`  
   
 ## Remarks  
  The *decl-specifiers* part of a declaration is the longest sequence of *decl-specifiers* that can be taken to mean a type name, not including the pointer or reference modifiers. The remainder of the declaration is the *declarator*, which includes the name introduced.  
