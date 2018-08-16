@@ -240,7 +240,7 @@ int main()
   
  This example produces the following output:  
   
-```  
+```Output  
 In MemoryBlock(size_t). length = 25.  
 In MemoryBlock(MemoryBlock&&). length = 25. Moving resource.  
 In ~MemoryBlock(). length = 0.  
@@ -263,7 +263,7 @@ In ~MemoryBlock(). length = 75. Deleting resource.
   
  Before Visual Studio 2010, this example produced the following output:  
   
-```  
+```Output  
 In MemoryBlock(size_t). length = 25.  
 In MemoryBlock(const MemoryBlock&). length = 25. Copying resource.  
 In ~MemoryBlock(). length = 25. Deleting resource.  
@@ -294,7 +294,6 @@ In ~MemoryBlock(). length = 75. Deleting resource.
  If you provide both a move constructor and a move assignment operator for your class, you can eliminate redundant code by writing the move constructor to call the move assignment operator. The following example shows a revised version of the move constructor that calls the move assignment operator:  
   
 ```cpp
-  
 // Move constructor.  
 MemoryBlock(MemoryBlock&& other)  
    : _data(nullptr)  
@@ -306,6 +305,6 @@ MemoryBlock(MemoryBlock&& other)
   
  The [std::move](../standard-library/utility-functions.md#move) function preserves the rvalue property of the *other* parameter.  
   
-## See Also  
+## See also  
  [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md)   
  [\<utility> move](http://msdn.microsoft.com/abef7e85-9dd6-4724-85da-d7f7fe95dca9)

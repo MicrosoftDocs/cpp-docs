@@ -143,7 +143,7 @@ void EnableFileBrowseButton(
 ### Remarks  
  When the edit browse control is in file browse mode and the user clicks the browse button, the control displays the standard file selection dialog box.  
   
- For a full list of available flags, see [OPENFILENAME structure](https://msdn.microsoft.com/library/ms646839.aspx).  
+ For a full list of available flags, see [OPENFILENAME structure](/windows/desktop/api/commdlg/ns-commdlg-tagofna).  
   
 ##  <a name="enablefolderbrowsebutton"></a>  CMFCEditBrowseCtrl::EnableFolderBrowseButton  
  Displays the browse button on the current edit browse control and puts the control in *folder browse* mode.  

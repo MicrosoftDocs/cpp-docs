@@ -4,21 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["cliext::queue", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", 
-    "cliext::operator>", "cliext::operator>=", "cliext::queue::assign", "cliext::queue::back", 
-    "cliext::queue::back_item", "cliext::queue::const_reference", "cliext::queue::container_type", "cliext::queue::difference_type", 
-    "cliext::queue::empty", "cliext::queue::front", "cliext::queue::front_item", "cliext::queue::generic_container", 
-    "cliext::queue::generic_value", "cliext::queue::get_container", "cliext::queue::operator=", "cliext::queue::pop", 
-    "cliext::queue::push", "cliext::queue::queue", "cliext::queue::reference", "cliext::queue::size", 
-    "cliext::queue::size_type", "cliext::queue::to_array", "cliext::queue::value_type"]
+f1_keywords: ["cliext::queue", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", "cliext::operator>", "cliext::operator>=", "cliext::queue::assign", "cliext::queue::back", "cliext::queue::back_item", "cliext::queue::const_reference", "cliext::queue::container_type", "cliext::queue::difference_type", "cliext::queue::empty", "cliext::queue::front", "cliext::queue::front_item", "cliext::queue::generic_container", "cliext::queue::generic_value", "cliext::queue::get_container", "cliext::queue::operator=", "cliext::queue::pop", "cliext::queue::push", "cliext::queue::queue", "cliext::queue::reference", "cliext::queue::size", "cliext::queue::size_type", "cliext::queue::to_array", "cliext::queue::value_type"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["<queue> header [STL/CLR]", "queue class [STL/CLR]", "<cliext/queue> header [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", 
-    "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", "back member [STL/CLR]", 
-    "back_item member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]", 
-    "empty member [STL/CLR]", "front member [STL/CLR]", "front_item member [STL/CLR]", "generic_container member [STL/CLR]", 
-    "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", 
-    "push member [STL/CLR]", "queue member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", 
-    "size_type member [STL/CLR]", "to_array member [STL/CLR]", "value_type member [STL/CLR]"]
+helpviewer_keywords: ["<queue> header [STL/CLR]", "queue class [STL/CLR]", "<cliext/queue> header [STL/CLR]", "operator!= member [STL/CLR]", "operator< member [STL/CLR]", "operator<= member [STL/CLR]", "operator== member [STL/CLR]", "operator> member [STL/CLR]", "operator>= member [STL/CLR]", "assign member [STL/CLR]", "back member [STL/CLR]", "back_item member [STL/CLR]", "const_reference member [STL/CLR]", "container_type member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "front member [STL/CLR]", "front_item member [STL/CLR]", "generic_container member [STL/CLR]", "generic_value member [STL/CLR]", "get_container member [STL/CLR]", "operator= member [STL/CLR]", "pop member [STL/CLR]", "push member [STL/CLR]", "queue member [STL/CLR]", "reference member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "to_array member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
 author: "mikeblome"
 ms.author: "mblome"
@@ -27,11 +15,11 @@ ms.workload: ["cplusplus", "dotnet"]
 # queue (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has first-in first-out access. You use the container adapter `queue` to manage an underlying container as a queue.  
   
- In the description below, `GValue` is the same as `Value` unless the latter is a ref type, in which case it is `Value^`. Similarly, `GContainer` is the same as `Container` unless the latter is a ref type, in which case it is `Container^`.  
+ In the description below, `GValue` is the same as *Value* unless the latter is a ref type, in which case it is `Value^`. Similarly, `GContainer` is the same as *Container* unless the latter is a ref type, in which case it is `Container^`.  
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     ref class queue  
@@ -42,10 +30,10 @@ template<typename Value,
 ```  
   
 ### Parameters  
- Value  
+ *Value*  
  The type of an element in the controlled sequence.  
   
- Container  
+ *Container*  
  The type of the underlying container.  
   
 ## Requirements  
@@ -111,12 +99,12 @@ Replaces all elements.
   
 ### Syntax  
   
-```  
+```cpp  
 void assign(queue<Value, Container>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container adapter to insert.  
   
 ### Remarks  
@@ -150,7 +138,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -163,7 +150,7 @@ Accesses the last element.
   
 ### Syntax  
   
-```  
+```cpp  
 reference back();  
 ```  
   
@@ -200,7 +187,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -214,7 +200,7 @@ Accesses the last element.
   
 ### Syntax  
   
-```  
+```cpp  
 property value_type back_item;  
 ```  
   
@@ -251,7 +237,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -265,7 +250,7 @@ The type of a constant reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
@@ -296,7 +281,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -308,7 +292,7 @@ The type of the underlying container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Container value_type;  
 ```  
   
@@ -337,7 +321,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -349,7 +332,7 @@ The types of a signed distance between two elements.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
@@ -392,7 +375,6 @@ int main()
     System::Console::WriteLine("popping 3 = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -406,7 +388,7 @@ Tests whether no elements are present.
   
 ### Syntax  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
@@ -443,7 +425,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -459,7 +440,7 @@ Accesses the first element.
   
 ### Syntax  
   
-```  
+```cpp  
 reference front();  
 ```  
   
@@ -496,7 +477,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -510,7 +490,7 @@ Accesses the first element.
   
 ### Syntax  
   
-```  
+```cpp  
 property value_type front_item;  
 ```  
   
@@ -547,7 +527,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -561,7 +540,7 @@ The type of the generic interface for the container adapter.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::IQueue<Value>  
     generic_container;  
 ```  
@@ -608,7 +587,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -623,7 +601,7 @@ The type of an element for use with the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
@@ -666,7 +644,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -680,7 +657,7 @@ Accesses the underlying container.
   
 ### Syntax  
   
-```  
+```cpp  
 container_type^ get_container();  
 ```  
   
@@ -708,7 +685,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -720,16 +696,16 @@ Replaces the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 queue <Value, Container>% operator=(queue <Value, Container>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container adapter to copy.  
   
 ### Remarks  
- The member operator copies `right` to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in `right`.  
+ The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.  
   
 ### Example  
   
@@ -758,8 +734,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -772,7 +747,7 @@ Removes the last element.
   
 ### Syntax  
   
-```  
+```cpp  
 void pop();  
 ```  
   
@@ -781,7 +756,7 @@ void pop();
   
 ### Example  
   
-```  
+```cpp  
 // cliext_queue_pop.cpp   
 // compile with: /clr   
 #include <cliext/queue>   
@@ -806,7 +781,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -819,7 +793,7 @@ Adds a new last element.
   
 ### Syntax  
   
-```  
+```cpp  
 void push(value_type val);  
 ```  
   
@@ -847,7 +821,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -859,7 +832,7 @@ Constructs a container adapter object.
   
 ### Syntax  
   
-```  
+```cpp  
 queue();  
 queue(queue<Value, Container>% right);  
 queue(queue<Value, Container>^ right);  
@@ -867,10 +840,10 @@ explicit queue(container_type% wrapped);
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Object to copy.  
   
- wrapped  
+ *wrapped*  
  Wrapped container to use.  
   
 ### Remarks  
@@ -884,7 +857,7 @@ explicit queue(container_type% wrapped);
   
  `queue(queue<Value, Container>% right);`  
   
- creates a wrapped container that is a copy of `right.get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the queue object `right`.  
+ creates a wrapped container that is a copy of `right.get_container()`. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the queue object *right*.  
   
  The constructor:  
   
@@ -896,7 +869,7 @@ explicit queue(container_type% wrapped);
   
  `explicit queue(container_type wrapped);`  
   
- uses the existing container `wrapped` as the wrapped container. You use it to construct a queue from an existing container.  
+ uses the existing container *wrapped* as the wrapped container. You use it to construct a queue from an existing container.  
   
 ### Example  
   
@@ -935,7 +908,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -950,7 +922,7 @@ The type of a reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
@@ -985,7 +957,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -998,7 +969,7 @@ Counts the number of elements.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
@@ -1036,7 +1007,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1051,7 +1021,7 @@ The type of a signed distance between two element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
@@ -1086,7 +1056,6 @@ int main()
     System::Console::WriteLine("size difference = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1099,7 +1068,7 @@ Copies the controlled sequence to a new array.
   
 ### Syntax  
   
-```  
+```cpp  
 cli::array<Value>^ to_array();  
 ```  
   
@@ -1108,7 +1077,7 @@ cli::array<Value>^ to_array();
   
 ### Example  
   
-```  
+```cpp  
 // cliext_queue_to_array.cpp   
 // compile with: /clr   
 #include <cliext/queue>   
@@ -1135,7 +1104,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1148,12 +1116,12 @@ The type of an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Value value_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Value`.  
+ The type is a synonym for the template parameter *Value*.  
   
 ### Example  
   
@@ -1179,8 +1147,7 @@ int main()
         }   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1192,7 +1159,7 @@ Queue not equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator!=(queue<Value, Container>% left,  
@@ -1200,14 +1167,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(left == right)`. You use it to test whether `left` is not ordered the same as `right` when the two queues are compared element by element.  
+ The operator function returns `!(left == right)`. You use it to test whether *left* is not ordered the same as *right* when the two queues are compared element by element.  
   
 ### Example  
   
@@ -1246,7 +1213,6 @@ int main()
         c1 != c2);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1261,7 +1227,7 @@ Queue less than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator<(queue<Value, Container>% left,  
@@ -1269,14 +1235,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)`() <` `right->size()` You use it to test whether `left` is ordered before `right` when the two queues are compared element by element.  
+ The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->`[queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)`() <` `right->size()` You use it to test whether *left* is ordered before *right* when the two queues are compared element by element.  
   
 ### Example  
   
@@ -1314,8 +1280,7 @@ int main()
     System::Console::WriteLine("[a b c] < [a b d] is {0}",   
         c1 < c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1330,7 +1295,7 @@ Queue less than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator<=(queue<Value, Container>% left,  
@@ -1338,14 +1303,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(right < left)`. You use it to test whether `left` is not ordered after `right` when the two queues are compared element by element.  
+ The operator function returns `!(right < left)`. You use it to test whether *left* is not ordered after *right* when the two queues are compared element by element.  
   
 ### Example  
   
@@ -1383,8 +1348,7 @@ int main()
     System::Console::WriteLine("[a b d] <= [a b c] is {0}",   
         c2 <= c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1399,7 +1363,7 @@ Queue equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator==(queue<Value, Container>% left,  
@@ -1407,14 +1371,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns true only if the sequences controlled by `left` and `right` have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether `left` is ordered the same as `right` when the two queues are compared element by element.  
+ The operator function returns true only if the sequences controlled by *left* and *right* have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether *left* is ordered the same as *right* when the two queues are compared element by element.  
   
 ### Example  
   
@@ -1452,8 +1416,7 @@ int main()
     System::Console::WriteLine("[a b c] == [a b d] is {0}",   
         c1 == c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1468,7 +1431,7 @@ Queue greater than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator>(queue<Value, Container>% left,  
@@ -1476,14 +1439,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `right` `<` `left`. You use it to test whether `left` is ordered after `right` when the two queues are compared element by element.  
+ The operator function returns `right` `<` `left`. You use it to test whether *left* is ordered after *right* when the two queues are compared element by element.  
   
 ### Example  
   
@@ -1521,8 +1484,7 @@ int main()
     System::Console::WriteLine("[a b d] > [a b c] is {0}",   
         c2 > c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1537,7 +1499,7 @@ Queue greater than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Value,  
     typename Container>  
     bool operator>=(queue<Value, Container>% left,  
@@ -1545,14 +1507,14 @@ template<typename Value,
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(left < right)`. You use it to test whether `left` is not ordered before `right` when the two queues are compared element by element.  
+ The operator function returns `!(left < right)`. You use it to test whether *left* is not ordered before *right* when the two queues are compared element by element.  
   
 ### Example  
   
@@ -1590,8 +1552,7 @@ int main()
     System::Console::WriteLine("[a b c] >= [a b d] is {0}",   
         c1 >= c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  

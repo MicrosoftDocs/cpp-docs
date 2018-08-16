@@ -104,7 +104,7 @@ ATL provides many classes for storing and accessing data. Which class you decide
   
 -   [DynamicConsumer Sample](../visual-cpp-samples.md)  
   
--   [UpdatePV Sample](../visual-cpp-samples.md)  
+-   [UpdatePV Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)  
   
 -   [Marquee Sample](../visual-cpp-samples.md)  
   

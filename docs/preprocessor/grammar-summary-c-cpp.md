@@ -14,13 +14,14 @@ ms.workload: ["cplusplus"]
 # Grammar Summary (C/C++)
 This section describes the formal grammar of the preprocessor. It covers the syntax of preprocessing directives and operators discussed in [The Preprocessor](../preprocessor/preprocessor.md) and in [Pragma Directives](../preprocessor/pragma-directives-and-the-pragma-keyword.md).  
   
- The following topics are included:  
+The following topics are included:  
   
--   [Definitions](../preprocessor/definitions-for-the-grammar-summary.md)  
+- [Definitions](../preprocessor/definitions-for-the-grammar-summary.md)  
   
--   [Conventions](../preprocessor/conventions.md)  
+- [Conventions](../preprocessor/conventions.md)  
   
--   [Preprocessor Grammar](../preprocessor/preprocessor-grammar.md)  
+- [Preprocessor Grammar](../preprocessor/preprocessor-grammar.md)  
   
 ## See Also  
- [C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)
+ 
+[C/C++ Preprocessor Reference](../preprocessor/c-cpp-preprocessor-reference.md)

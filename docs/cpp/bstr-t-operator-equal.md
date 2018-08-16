@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 _bstr_t& operator=(const _bstr_t& s1) throw ( );  
 _bstr_t& operator=(const char* s2);  
 _bstr_t& operator=(const wchar_t* s3);  
@@ -45,5 +44,5 @@ _bstr_t& operator=(const _variant_t& var);
 ## Example  
  See [_bstr_t::Assign](../cpp/bstr-t-assign.md) for an example of using **operator=**.  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

@@ -105,6 +105,5 @@ int main()
 }  
 ```  
   
-## See Also
-
+## See also
  [Function Templates](../cpp/function-templates.md)

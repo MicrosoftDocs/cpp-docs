@@ -18,22 +18,23 @@ Defines the locale (Country/Region and language) to be used when translating wid
 ## Syntax  
   
 ```  
-  
 #pragma setlocale( "[locale-string]" )  
 ```  
   
 ## Remarks  
- Because the algorithm for converting multibyte characters to wide characters may vary by locale or the compilation may take place in a different locale from where an executable file will be run, this pragma provides a way to specify the target locale at compile time. This guarantees that the wide-character strings will be stored in the correct format.  
+ 
+Because the algorithm for converting multibyte characters to wide characters may vary by locale or the compilation may take place in a different locale from where an executable file will be run, this pragma provides a way to specify the target locale at compile time. This guarantees that the wide-character strings will be stored in the correct format.  
   
- The default *locale-string* is "".  
+The default *locale-string* is "".  
   
- The "C" locale maps each character in the string to its value as a `wchar_t` (unsigned short). Other values that are valid for `setlocale` are those entries that are found in the [Language Strings](../c-runtime-library/language-strings.md) list. For example, you could issue:  
+The "C" locale maps each character in the string to its value as a **wchar_t** (unsigned short). Other values that are valid for `setlocale` are those entries that are found in the [Language Strings](../c-runtime-library/language-strings.md) list. For example, you could issue:  
   
 ```  
 #pragma setlocale("dutch")  
 ```  
   
- The ability to issue a language string depends on the code page and language ID support on your computer.  
+The ability to issue a language string depends on the code page and language ID support on your computer.  
   
 ## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

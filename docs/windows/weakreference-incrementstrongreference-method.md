@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 ULONG IncrementStrongReference();  
 ```  
   
@@ -25,7 +25,7 @@ ULONG IncrementStrongReference();
  The incremented strong reference count.  
   
 ## Remarks  
- Increments the strong reference count of the current WeakReference object.  
+ Increments the strong reference count of the current **WeakReference** object.  
   
 ## Requirements  
  **Header:** implements.h  
@@ -33,5 +33,5 @@ ULONG IncrementStrongReference();
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
-[WeakReference Class](../windows/weakreference-class1.md)  
+ [WeakReference Class](../windows/weakreference-class1.md)  
  [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

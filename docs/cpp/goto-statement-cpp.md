@@ -74,6 +74,6 @@ Outer loop executing. i = 3
 Jumped to stop. i = 3  
 ```  
   
-## See Also  
+## See also  
  [Jump Statements](../cpp/jump-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

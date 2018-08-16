@@ -41,7 +41,7 @@ void __movsd( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__movsd`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsd`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

@@ -17,21 +17,21 @@ Retrieves a value that indicates the status of the asynchronous operation.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    get_Status  
 )(AsyncStatus *status) override;  
 ```  
   
-#### Parameters  
- `status`  
- The location where the status is to be stored. For more information, see Windows::Foundation::AsyncStatus enumeration.  
+### Parameters  
+ *status*  
+ The location where the status is to be stored. For more information, see `Windows::Foundation::AsyncStatus` enumeration.  
   
 ## Return Value  
  S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.  
   
 ## Remarks  
- This method implements IAsyncInfo::get_Status.  
+ This method implements `IAsyncInfo::get_Status`.  
   
 ## Requirements  
  **Header:** async.h  

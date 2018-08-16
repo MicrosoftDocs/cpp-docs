@@ -20,7 +20,7 @@ Traditionally, maintaining an .idl file meant that you had to:
   
  Now, you can modify the .idl file from within a source code file using Visual C++ IDL attributes. In many cases, Visual C++ IDL attributes have the same name as MIDL attributes. When the name of a Visual C++ IDL attribute and a MIDL attribute are the same, it means that putting the Visual C++ attribute in your source code file will result in an .idl file that contains its namesake MIDL attribute. However, a Visual C++ IDL attribute may not provide all the functionality of a MIDL attribute.  
   
- When not used with [COM attributes](../windows/com-attributes.md), IDL attributes let you define interfaces. When the source code is compiled, the attributes are used to define the generated .idl file. When used with COM attributes in an ATL project, some IDL attributes, such as **coclass**, cause code to be injected into the project.  
+ When not used with [COM attributes](../windows/com-attributes.md), IDL attributes let you define interfaces. When the source code is compiled, the attributes are used to define the generated .idl file. When used with COM attributes in an ATL project, some IDL attributes, such as `coclass`, cause code to be injected into the project.  
   
  Note that [idl_quote](../windows/idl-quote.md) lets you use MIDL constructs that are not supported in the current version of Visual C++. This and other attributes such as [importlib](../windows/importlib.md) and [includelib](../windows/includelib-cpp.md) help you to use existing .idl files in your current Visual C++ project.  
   
@@ -64,7 +64,7 @@ Traditionally, maintaining an .idl file meant that you had to:
 |[last_is](../windows/last-is.md)|Specifies the index of the last array element to be transmitted.|  
 |[lcid](../windows/lcid.md)|Lets you pass a locale identifier to a function.|  
 |[length_is](../windows/length-is.md)|Specifies the number of array elements to be transmitted.|  
-|[licensed](../windows/licensed.md)|Indicates that the coclass to which it applies is licensed, and must be instantiated using **IClassFactory2**.|  
+|[licensed](../windows/licensed.md)|Indicates that the coclass to which it applies is licensed, and must be instantiated using `IClassFactory2`.|  
 |[local](../windows/local-cpp.md)|Allows you to use the MIDL compiler as a header generator when used in the interface header. When used in an individual function, designates a local procedure for which no stubs are generated.|  
 |[max_is](../windows/max-is.md)|Designates the maximum value for a valid array index.|  
 |[module](../windows/module-cpp.md)|Defines the library block in the .idl file.|  
@@ -89,12 +89,12 @@ Traditionally, maintaining an .idl file meant that you had to:
 |[range](../windows/range-cpp.md)|Specifies a range of allowable values for arguments or fields whose values are set at run time.|  
 |[readonly](../windows/readonly-cpp.md)|Prohibits assignment to a variable.|  
 |[ref](../windows/ref-cpp.md)|Identifies a reference pointer.|  
-|[requestedit](../windows/requestedit.md)|Indicates that the property supports the **OnRequestEdit** notification.|  
+|[requestedit](../windows/requestedit.md)|Indicates that the property supports the `OnRequestEdit` notification.|  
 |[restricted](../windows/restricted.md)|Specifies that a library, or member of a module, interface, or dispinterface cannot be called arbitrarily.|  
 |[retval](../windows/retval.md)|Designates the parameter that receives the return value of the member.|  
 |[size_is](../windows/size-is.md)|Specifies the size of memory allocated for sized pointers, sized pointers to sized pointers, and single- or multidimensional arrays.|  
 |[source](../windows/source-cpp.md)|Indicates that a member of a class, property, or method is a source of events.|  
-|[string](../windows/string-cpp.md)|Indicates that the one-dimensional `char`, `wchar_t`, **byte**, or equivalent array or the pointer to such an array must be treated as a string.|  
+|[string](../windows/string-cpp.md)|Indicates that the one-dimensional **char**, **wchar_t**, `byte`, or equivalent array or the pointer to such an array must be treated as a string.|  
 |[switch_is](../windows/switch-is.md)|Specifies the expression or identifier acting as the union discriminant that selects the union member.|  
 |[switch_type](../windows/switch-type.md)|Identifies the type of the variable used as the union discriminant.|  
 |[transmit_as](../windows/transmit-as.md)|Instructs the compiler to associate a presented type, which client and server applications manipulate, with a transmitted type.|  
@@ -109,4 +109,4 @@ Traditionally, maintaining an .idl file meant that you had to:
   
 ## See Also  
  [Attributes by Group](../windows/attributes-by-group.md)   
- [Attribute Limitations](http://msdn.microsoft.com/en-us/6e6c4329-f667-4869-b991-cbe9cb7a8f61)
+ [Attribute Limitations](http://msdn.microsoft.com/6e6c4329-f667-4869-b991-cbe9cb7a8f61)

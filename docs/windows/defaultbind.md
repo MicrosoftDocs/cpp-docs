@@ -17,10 +17,8 @@ Indicates the single, bindable property that best represents the object.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [defaultbind]  
-  
 ```  
   
 ## Remarks  
@@ -48,4 +46,4 @@ Indicates the single, bindable property that best represents the object.
  [Data Member Attributes](../windows/data-member-attributes.md)   
  [displaybind](../windows/displaybind.md)   
  [immediatebind](../windows/immediatebind.md)   
- [requestedit](../windows/requestedit.md)   
+ [requestedit](../windows/requestedit.md)   

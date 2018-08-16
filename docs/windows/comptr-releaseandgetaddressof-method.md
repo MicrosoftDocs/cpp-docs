@@ -13,16 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::ReleaseAndGetAddressOf Method
-Releases the interface associated with this ComPtr and then retrieves the address of the [ptr_](../windows/comptr-ptr-data-member.md) data member, which contains a pointer to the interface that was released.  
+Releases the interface associated with this **ComPtr** and then retrieves the address of the [ptr_](../windows/comptr-ptr-data-member.md) data member, which contains a pointer to the interface that was released.  
   
 ## Syntax  
   
-```  
+```cpp  
 T** ReleaseAndGetAddressOf();  
 ```  
   
 ## Return Value  
- The address of the [ptr_](../windows/comptr-ptr-data-member.md) data member of this ComPtr.  
+ The address of the [ptr_](../windows/comptr-ptr-data-member.md) data member of this **ComPtr**.  
   
 ## Requirements  
  **Header:** client.h  

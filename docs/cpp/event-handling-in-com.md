@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 In COM event handling, you set up an event source and event receiver using the [event_source](../windows/event-source.md) and [event_receiver](../windows/event-receiver.md) attributes, respectively, specifying `type`=`com`. These attributes inject the appropriate code for custom, dispatch, and dual interfaces to allow the classes to which they are applied to fire events and handle events through COM connection points.  
   
 ## Declaring Events  
- In an event source class, use the [__event](../cpp/event.md) keyword on an interface declaration to declare that interface's methods as events. The events of that interface are fired when you call them as interface methods. Methods on event interfaces can have zero or more parameters (which should all be `in` parameters). The return type can be void or any integral type.  
+ In an event source class, use the [__event](../cpp/event.md) keyword on an interface declaration to declare that interface's methods as events. The events of that interface are fired when you call them as interface methods. Methods on event interfaces can have zero or more parameters (which should all be *in* parameters). The return type can be void or any integral type.  
   
 ## Defining Event Handlers  
  In an event receiver class, you define event handlers, which are methods with signatures (return types, calling conventions, and arguments) that match the event that they will handle. For COM events, calling conventions do not have to match; see [Layout Dependent COM Events](#vcconeventhandlingincomanchorlayoutdependentcomevents) below for details.  
@@ -194,5 +194,5 @@ public:
 };  
 ```  
   
-## See Also  
+## See also  
  [Event Handling](../cpp/event-handling.md)

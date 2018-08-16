@@ -39,7 +39,7 @@ void __svm_invlpga(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__svm_invlpga`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__svm_invlpga`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

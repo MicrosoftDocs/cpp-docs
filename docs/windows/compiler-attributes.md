@@ -26,7 +26,7 @@ Compiler attributes provide a variety of functionality.
 |[includelib](../windows/includelib-cpp.md)|Causes an .idl or .h file to be included in the generated .idl file.|  
 |[library_block](../windows/library-block.md)|Places a construct inside the .idl file's library block.|  
 |[no_injected_text](../windows/no-injected-text.md)|Prevents the compiler from injecting code as a result of attribute use.|  
-|[satype](../windows/satype.md)|Specifies the data type of the **SAFEARRAY**.|  
+|[satype](../windows/satype.md)|Specifies the data type of the `SAFEARRAY`.|  
 |[version](../windows/version-cpp.md)|Identifies a particular version among multiple versions of an interface or class.|  
   
 ## See Also  

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 This walkthrough shows how to create a traditional Windows desktop application in Visual Studio. The example application you'll create uses the Windows API to display "Hello, Windows desktop!" in a window. You can use the code that you develop in this walkthrough as a pattern to create other Windows desktop applications.
 
-The Windows API (also known as the Win32 API, Windows Desktop API, and Windows Classic API) is a C-language based framework for creating Windows applications. It has been in existence since the 1980s and has been used to create Windows applications for decades. More advanced and easier-to-program frameworks have been built on top of this API, such as MFC, ATL, and the .NET frameworks. Even the most modern code for UWP and Store apps written in C++/WinRT uses this API underneath. For more information about the Windows API, see [Windows API Index](https://msdn.microsoft.com/library/windows/desktop/ff818516.aspx). There are many ways to create Windows applications, but this was the first.
+The Windows API (also known as the Win32 API, Windows Desktop API, and Windows Classic API) is a C-language based framework for creating Windows applications. It has been in existence since the 1980s and has been used to create Windows applications for decades. More advanced and easier-to-program frameworks have been built on top of this API, such as MFC, ATL, and the .NET frameworks. Even the most modern code for UWP and Store apps written in C++/WinRT uses this API underneath. For more information about the Windows API, see [Windows API Index](/windows/desktop/apiindex/windows-api-list). There are many ways to create Windows applications, but this was the first.
 
 > [!IMPORTANT]
 > For the sake of brevity, some code statements are omitted in the text. The [Build the code](#build-the-code) section at the end of this document shows the complete code.
@@ -39,7 +39,7 @@ Follow these steps to create your first Windows desktop project and enter the co
 
 1. On the **File** menu, choose **New** and then choose **Project**.
 
-1. In the **New Project** dialog box, in the left pane, expand **Installed**, **Visual C++**, then select **Windows Desktop**. In the middle pane, select **Windows Desktop Wizard**.
+1. In the **New Project** dialog box, in the left pane, expand **Installed** > **Visual C++**, then select **Windows Desktop**. In the middle pane, select **Windows Desktop Wizard**.
 
    In the **Name** box, type a name for the project, for example, *DesktopApp*. Choose **OK**.
 
@@ -63,7 +63,7 @@ Your project is now created and your source file is opened in the editor. To con
 
 1. On the **File** menu, choose **New** and then choose **Project**.
 
-1. In the **New Project** dialog box, in the left pane, expand **Installed**, **Templates**, **Visual C++**, and then select **Win32**. In the middle pane, select **Win32 Project**.
+1. In the **New Project** dialog box, in the left pane, expand **Installed** > **Templates** > **Visual C++**, and then select **Win32**. In the middle pane, select **Win32 Project**.
 
    In the **Name** box, type a name for the project, for example, *DesktopApp*. Choose **OK**.
 
@@ -107,9 +107,9 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    For information about the parameters and return value of this function, see [WinMain entry point](https://msdn.microsoft.com/library/windows/desktop/ms633559).
 
    > [!NOTE]
-   > What are all those extra words, such as **CALLBACK**, or **HINSTANCE**, or **\_In\_**? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **__declspec** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press ctrl-K, ctrl-I for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
+   > What are all those extra words, such as `CALLBACK`, or `HINSTANCE`, or `_In_`? The traditional Windows API uses typedefs and preprocessor macros extensively to abstract away some of the details of types and platform-specific code, such as calling conventions, **__declspec** declarations, and compiler pragmas. In Visual Studio, you can use the IntelliSense [Quick Info](/visualstudio/ide/using-intellisense#quick-info) feature to see what these typedefs and macros define. Hover your mouse over the word of interest, or select it and press ctrl-K, ctrl-I for a small pop-up window that contains the definition. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense). Parameters and return types often use *SAL Annotations* to help you catch programming errors. For more information, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).
 
-1. Windows desktop programs require &lt;windows.h>. &lt;tchar.h> defines the `TCHAR` macro, which resolves ultimately to `wchar_t` if the UNICODE symbol is defined in your project, otherwise it resolves to `char`.  If you always build with UNICODE enabled, you don't need TCHAR and can just use wchar_t directly.
+1. Windows desktop programs require &lt;windows.h>. &lt;tchar.h> defines the `TCHAR` macro, which resolves ultimately to **wchar_t** if the UNICODE symbol is defined in your project, otherwise it resolves to **char**.  If you always build with UNICODE enabled, you don't need TCHAR and can just use **wchar_t** directly.
 
    ```cpp
    #include <windows.h>
@@ -398,7 +398,7 @@ As promised, here's the complete code for the working application.
 
 ### To build this example
 
-1. Delete any code you've entered in HelloWindowsDesktop.cpp in the editor. Copy this example code and then paste it into HelloWindowsDesktop.cpp:
+1. Delete any code you've entered in *HelloWindowsDesktop.cpp* in the editor. Copy this example code and then paste it into *HelloWindowsDesktop.cpp*:
 
    ```cpp
    // HelloWindowsDesktop.cpp
@@ -557,5 +557,4 @@ As promised, here's the complete code for the working application.
 Congratulations! You've completed this walkthrough and built a traditional Windows desktop application.
 
 ## See Also
-
-[Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)
+ [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)

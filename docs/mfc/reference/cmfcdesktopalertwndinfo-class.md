@@ -67,7 +67,7 @@ class CMFCDesktopAlertWndInfo
  **Header:** afxDesktopAlertDialog.h  
   
 ##  <a name="operator_eq"></a>  CMFCDesktopAlertWndInfo::operator=  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 CMFCDesktopAlertWndInfo& operator=(CMFCDesktopAlertWndInfo& src);

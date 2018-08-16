@@ -19,10 +19,7 @@ ms.workload: ["cplusplus", "uwp"]
     > [!NOTE]
     >  Before deleting an unused symbol in a resource file, make sure it is not used elsewhere in the program or by resource files included at compile time.  
   
-
-  
- **Requirements**  
-  
+## Requirements  
  Win32  
   
 ## See Also  

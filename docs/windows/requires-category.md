@@ -17,14 +17,13 @@ Specifies the required component categories of the target class.
   
 ## Syntax  
   
-```  
-  
-     [ requires_category(   
+```cpp  
+[ requires_category(   
   requires_category  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *requires_category*  
  The ID of the required category.  
   
@@ -36,7 +35,7 @@ Specifies the required component categories of the target class.
 ## Example  
  The following code requires that the object implement the Control category.  
   
-```  
+```cpp  
 // cpp_attr_ref_requires_category.cpp  
 // compile with: /LD  
 #define _ATL_ATTRIBUTES  
@@ -56,13 +55,13 @@ class CMyClass {};
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
-|**Required attributes**|One or more of the following: **coclass**, **progid**, or **vi_progid**.|  
+|**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|  
 |**Invalid attributes**|None|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
- [implements_category](../windows/implements-category.md)   
+ [implements_category](../windows/implements-category.md)   

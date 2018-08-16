@@ -17,10 +17,10 @@ Visual C++ supports updatable providers or providers that can update (write to) 
   
  This topic assumes that you are starting with a workable provider. There are two steps to creating an updatable provider. You must first decide how the provider will make changes to the data store; specifically, whether changes are to be done immediately or deferred until an update command is issued. The section "[Making Providers Updatable](#vchowmakingprovidersupdatable)" describes the changes and settings you need to do in the provider code.  
   
- Next, you must make sure your provider contains all the functionality to support anything the consumer might request of it. If the consumer wants to update the data store, the provider has to contain code that persists data to the data store. For example, you might use the C Run-Time Library or MFC to perform such operations on your data source. The section "[Writing to the Data Source](#vchowwritingtothedatasource)" describes how to write to the data source, deal with `NULL` and default values, and set column flags.  
+ Next, you must make sure your provider contains all the functionality to support anything the consumer might request of it. If the consumer wants to update the data store, the provider has to contain code that persists data to the data store. For example, you might use the C Run-Time Library or MFC to perform such operations on your data source. The section "[Writing to the Data Source](#vchowwritingtothedatasource)" describes how to write to the data source, deal with NULL and default values, and set column flags.  
   
 > [!NOTE]
->  UpdatePV is an example of an updatable provider. UpdatePV is the same as MyProv but with updatable support.  
+>  [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) is an example of an updatable provider. UpdatePV is the same as MyProv but with updatable support.  
   
 ##  <a name="vchowmakingprovidersupdatable"></a> Making Providers Updatable  
 
@@ -42,7 +42,7 @@ Visual C++ supports updatable providers or providers that can update (write to) 
   
      Add `IRowsetChangeImpl` to your inheritance chain using this form:  
   
-    ```  
+    ```cpp  
     IRowsetChangeImpl< rowset-name, storage-name >  
     ```  
   
@@ -52,7 +52,7 @@ Visual C++ supports updatable providers or providers that can update (write to) 
   
      Add `IRowsetUpdate` to your inheritance chain using this form:  
   
-    ```  
+    ```cpp  
     IRowsetUpdateImpl< rowset-name, storage>  
     ```  
   
@@ -75,7 +75,7 @@ Visual C++ supports updatable providers or providers that can update (write to) 
   
 4.  In your property set map, you should also include all of the following settings as they appear below:  
   
-    ```  
+    ```cpp  
     PROPERTY_INFO_ENTRY_VALUE(UPDATABILITY, DBPROPVAL_UP_CHANGE |   
       DBPROPVAL_UP_INSERT | DBPROPVAL_UP_DELETE)  
     PROPERTY_INFO_ENTRY_VALUE(CHANGEINSERTEDROWS, VARIANT_TRUE)  

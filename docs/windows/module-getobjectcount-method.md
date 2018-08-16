@@ -17,7 +17,7 @@ Retrieves the number of objects managed by this module.
   
 ## Syntax  
   
-```  
+```cpp  
 virtual long GetObjectCount() const;  
 ```  
   
@@ -29,5 +29,5 @@ virtual long GetObjectCount() const;
   
  **Namespace:** Microsoft::WRL
  
- ## See Also
+## See Also
  [Module Class](../windows/module-class.md)

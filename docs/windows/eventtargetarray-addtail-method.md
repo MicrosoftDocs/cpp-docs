@@ -17,20 +17,20 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 void AddTail(  
    _In_ IUnknown* element  
 );  
 ```  
   
-#### Parameters  
- `element`  
+### Parameters  
+ *element*  
  Pointer to the event handler to append.  
   
 ## Remarks  
  Appends the specified event handler to the end of the internal array of event handlers.  
   
- AddTail() is intended to be used internally by only the EventSource class.  
+ **AddTail()** is intended to be used internally by only the `EventSource` class.  
   
 ## Requirements  
  **Header:** event.h  

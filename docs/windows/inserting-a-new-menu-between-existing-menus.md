@@ -14,16 +14,15 @@ ms.workload: ["cplusplus", "uwp"]
 # Inserting a New Menu Between Existing Menus
 ### To insert a new menu between existing menus  
   
-1.  Select an existing menu name and press the **INSERT** key. The **New Item** box is inserted before the selected item.  
+1.  Select an existing menu name and press the **Insert** key. The **New Item** box is inserted before the selected item.  
   
      \- or -  
   
 2.  Right-click on the menu bar and choose **Insert New** from the shortcut menu.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  

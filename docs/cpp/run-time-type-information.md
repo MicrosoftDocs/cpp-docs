@@ -30,5 +30,5 @@ Run-time type information (RTTI) is a mechanism that allows the type of an objec
   
      Used to hold the type information returned by the **typeid** operator.  
   
-## See Also  
+## See also  
  [Casting](../cpp/casting.md)

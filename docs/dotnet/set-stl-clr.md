@@ -4,29 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["cliext::set", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", 
-    "cliext::operator>", "cliext::operator>=", "cliext::set::begin", "cliext::set::clear", 
-    "cliext::set::const_iterator", "cliext::set::const_reference", "cliext::set::const_reverse_iterator", "cliext::set::count", 
-    "cliext::set::difference_type", "cliext::set::empty", "cliext::set::end", "cliext::set::equal_range", 
-    "cliext::set::erase", "cliext::set::find", "cliext::set::generic_container", "cliext::set::generic_iterator", 
-    "cliext::set::generic_reverse_iterator", "cliext::set::generic_value", "cliext::set::insert", "cliext::set::iterator", 
-    "cliext::set::key_comp", "cliext::set::key_compare", "cliext::set::key_type", "cliext::set::lower_bound", 
-    "cliext::set::make_value", "cliext::set::operator=", "cliext::set::rbegin", "cliext::set::reference", 
-    "cliext::set::rend", "cliext::set::reverse_iterator", "cliext::set::set", "cliext::set::size",     
-    "cliext::set::size_type", "cliext::set::swap", "cliext::set::to_array", "cliext::set::upper_bound", 
-    "cliext::set::value_comp", "cliext::set::value_compare", "cliext::set::value_type" ]
+f1_keywords: ["cliext::set", "cliext::operator!=", "cliext::operator<", "cliext::operator<=", "cliext::operator==", "cliext::operator>", "cliext::operator>=", "cliext::set::begin", "cliext::set::clear", "cliext::set::const_iterator", "cliext::set::const_reference", "cliext::set::const_reverse_iterator", "cliext::set::count", "cliext::set::difference_type", "cliext::set::empty", "cliext::set::end", "cliext::set::equal_range", "cliext::set::erase", "cliext::set::find", "cliext::set::generic_container", "cliext::set::generic_iterator", "cliext::set::generic_reverse_iterator", "cliext::set::generic_value", "cliext::set::insert", "cliext::set::iterator", "cliext::set::key_comp", "cliext::set::key_compare", "cliext::set::key_type", "cliext::set::lower_bound", "cliext::set::make_value", "cliext::set::operator=", "cliext::set::rbegin", "cliext::set::reference", "cliext::set::rend", "cliext::set::reverse_iterator", "cliext::set::set", "cliext::set::size", "cliext::set::size_type", "cliext::set::swap", "cliext::set::to_array", "cliext::set::upper_bound", "cliext::set::value_comp", "cliext::set::value_compare", "cliext::set::value_type" ]
 dev_langs: ["C++"]
-helpviewer_keywords: ["<cliext/set> header [STL/CLR]", "<set> header [STL/CLR]", "set class [STL/CLR]", "operator!= (set) member [STL/CLR]", "operator< (set) member [STL/CLR]", "operator<= (set) member [STL/CLR]",
-    "operator== (set) member [STL/CLR]", "operator> (set) member [STL/CLR]", "operator>= (set) member [STL/CLR]", "begin member [STL/CLR]", "clear member [STL/CLR]", 
-    "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", 
-    "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", 
-    "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", 
-    "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", 
-    "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", "key_type member [STL/CLR]", "lower_bound member [STL/CLR]", 
-    "make_value member [STL/CLR]", "operator= member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", 
-    "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "set member [STL/CLR]", "size member [STL/CLR]", 
-    "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", 
-    "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
+helpviewer_keywords: ["<cliext/set> header [STL/CLR]", "<set> header [STL/CLR]", "set class [STL/CLR]", "operator!= (set) member [STL/CLR]", "operator< (set) member [STL/CLR]", "operator<= (set) member [STL/CLR]", "operator== (set) member [STL/CLR]", "operator> (set) member [STL/CLR]", "operator>= (set) member [STL/CLR]", "begin member [STL/CLR]", "clear member [STL/CLR]", "const_iterator member [STL/CLR]", "const_reference member [STL/CLR]", "const_reverse_iterator member [STL/CLR]", "count member [STL/CLR]", "difference_type member [STL/CLR]", "empty member [STL/CLR]", "end member [STL/CLR]", "equal_range member [STL/CLR]", "erase member [STL/CLR]", "find member [STL/CLR]", "generic_container member [STL/CLR]", "generic_iterator member [STL/CLR]", "generic_reverse_iterator member [STL/CLR]", "generic_value member [STL/CLR]", "insert member [STL/CLR]", "iterator member [STL/CLR]", "key_comp member [STL/CLR]", "key_compare member [STL/CLR]", "key_type member [STL/CLR]", "lower_bound member [STL/CLR]", "make_value member [STL/CLR]", "operator= member [STL/CLR]", "rbegin member [STL/CLR]", "reference member [STL/CLR]", "rend member [STL/CLR]", "reverse_iterator member [STL/CLR]", "set member [STL/CLR]", "size member [STL/CLR]", "size_type member [STL/CLR]", "swap member [STL/CLR]", "to_array member [STL/CLR]", "upper_bound member [STL/CLR]", "value_comp member [STL/CLR]", "value_compare member [STL/CLR]", "value_type member [STL/CLR]"]
 ms.assetid: 27d3628c-741a-43a7-bef1-5085536f679e
 author: "mikeblome"
 ms.author: "mblome"
@@ -35,11 +15,11 @@ ms.workload: ["cplusplus", "dotnet"]
 # set (STL/CLR)
 The template class describes an object that controls a varying-length sequence of elements that has bidirectional access. You use the container `set` to manage a sequence of elements as a (nearly) balanced ordered tree of nodes, each storing one element.  
   
- In the description below, `GValue` is the same as `GKey`, which in turn is the same as `Key` unless the latter is a ref type, in which case it is `Key^`.  
+ In the description below, `GValue` is the same as `GKey`, which in turn is the same as *Key* unless the latter is a ref type, in which case it is `Key^`.  
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename Key>  
     ref class set  
         :   public  
@@ -54,7 +34,7 @@ template<typename Key>
 ```  
   
 ### Parameters  
- Key  
+ *Key*  
  The type of the key component of an element in the controlled sequence.  
   
 ## Requirements  
@@ -152,7 +132,7 @@ template<typename Key>
   
  A set iterator stores a handle to its associated set node, which in turn stores a handle to its associated container. You can use iterators only with their associated container objects. A set iterator remains valid so long as its associated set node is associated with some set. Moreover, a valid iterator is dereferencable -- you can use it to access or alter the element value it designates -- so long as it is not equal to `end()`.  
   
- Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does `not` destroy its elements.  
+ Erasing or removing an element calls the destructor for its stored value. Destroying the container erases all elements. Thus, a container whose element type is a ref class ensures that no elements outlive the container. Note, however, that a container of handles does *not* destroy its elements.  
  
 ## Members
 
@@ -161,7 +141,7 @@ Designates the beginning of the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator begin();  
 ```  
   
@@ -194,7 +174,6 @@ int main()
     System::Console::WriteLine("*++begin() = {0}", *++it);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -208,7 +187,7 @@ Removes all elements.
   
 ### Syntax  
   
-```  
+```cpp  
 void clear();  
 ```  
   
@@ -250,7 +229,6 @@ int main()
     System::Console::WriteLine("size() = {0}", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -265,7 +243,7 @@ The type of a constant iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T2 const_iterator;  
 ```  
   
@@ -294,7 +272,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -306,7 +283,7 @@ The type of a constant reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% const_reference;  
 ```  
   
@@ -338,7 +315,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -350,7 +326,7 @@ The type of a constant reverse iterator for the controlled sequence..
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T4 const_reverse_iterator;  
 ```  
   
@@ -379,7 +355,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -391,16 +366,16 @@ Finds the number of elements matching a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type count(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
- The member function returns the number of elements in the controlled sequence that have equivalent ordering with `key`. You use it to determine the number of elements currently in the controlled sequence that match a specified key.  
+ The member function returns the number of elements in the controlled sequence that have equivalent ordering with *key*. You use it to determine the number of elements currently in the controlled sequence that match a specified key.  
   
 ### Example  
   
@@ -426,8 +401,7 @@ int main()
     System::Console::WriteLine("count(L'b') = {0}", c1.count(L'b'));   
     System::Console::WriteLine("count(L'C') = {0}", c1.count(L'C'));   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -442,7 +416,7 @@ The types of a signed distance between two elements.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int difference_type;  
 ```  
   
@@ -482,7 +456,6 @@ int main()
     System::Console::WriteLine("begin()-end() = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -496,7 +469,7 @@ Tests whether no elements are present.
   
 ### Syntax  
   
-```  
+```cpp  
 bool empty();  
 ```  
   
@@ -531,7 +504,6 @@ int main()
     System::Console::WriteLine("empty() = {0}", c1.empty());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -547,7 +519,7 @@ Designates the end of the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator end();  
 ```  
   
@@ -581,7 +553,6 @@ int main()
     System::Console::WriteLine("*--end() = {0}", *++it);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -595,12 +566,12 @@ Finds range that matches a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 cliext::pair<iterator, iterator> equal_range(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
@@ -639,7 +610,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -653,31 +623,31 @@ Removes elements at specified positions.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator erase(iterator where);  
 iterator erase(iterator first, iterator last);  
 size_type erase(key_type key)  
 ```  
   
 #### Parameters  
- first  
+ *first*  
  Beginning of range to erase.  
   
- key  
+ *key*  
  Key value to erase.  
   
- last  
+ *last*  
  End of range to erase.  
   
- where  
+ *where*  
  Element to erase.  
   
 ### Remarks  
- The first member function removes the element of the controlled sequence pointed to by `where`, and returns an iterator that designates the first element remaining beyond the element removed, or [set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()` if no such element exists. You use it to remove a single element.  
+ The first member function removes the element of the controlled sequence pointed to by *where*, and returns an iterator that designates the first element remaining beyond the element removed, or [set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()` if no such element exists. You use it to remove a single element.  
   
  The second member function removes the elements of the controlled sequence in the range [`first`, `last`), and returns an iterator that designates the first element remaining beyond any elements removed, or `end()` if no such element exists.. You use it to remove zero or more contiguous elements.  
   
- The third member function removes any element of the controlled sequence whose key has equivalent ordering to `key`, and returns a count of the number of elements removed. You use it to remove and count all elements that match a specified key.  
+ The third member function removes any element of the controlled sequence whose key has equivalent ordering to *key*, and returns a count of the number of elements removed. You use it to remove and count all elements that match a specified key.  
   
  Each element erasure takes time proportional to the logarithm of the number of elements in the controlled sequence.  
   
@@ -718,8 +688,7 @@ int main()
         *c1.erase(c1.begin(), --it));   
     System::Console::WriteLine("size() = {0}", c1.size());   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -735,16 +704,16 @@ Finds an element that matches a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator find(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
- If at least one element in the controlled sequence has equivalent ordering with `key`, the member function returns an iterator designating one of those elements; otherwise it returns [set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.  
+ If at least one element in the controlled sequence has equivalent ordering with *key*, the member function returns an iterator designating one of those elements; otherwise it returns [set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`. You use it to locate an element currently in the controlled sequence that matches a specified key.  
   
 ### Example  
   
@@ -774,7 +743,6 @@ int main()
         L'C', c1.find(L'C') != c1.end());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -789,7 +757,7 @@ The type of the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::  
     ITree<GKey, GValue>  
     generic_container;  
@@ -837,7 +805,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -852,7 +819,7 @@ The type of an iterator for use with the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::Generic::  
     ContainerBidirectionalIterator<generic_value>  
     generic_iterator;  
@@ -893,7 +860,6 @@ int main()
     System::Console::WriteLine(" {0}", gcval);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -907,7 +873,7 @@ The type of a reverse iterator for use with the generic interface for the contai
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Microsoft::VisualC::StlClr::Generic::  
     ReverseRandomAccessIterator<generic_value>  
     generic_reverse_iterator;  
@@ -948,7 +914,6 @@ int main()
     System::Console::WriteLine(" {0}", gcval);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -962,7 +927,7 @@ The type of an element for use with the generic interface for the container.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef GValue generic_value;  
 ```  
   
@@ -1001,7 +966,6 @@ int main()
     System::Console::WriteLine(" {0}", gcval);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1015,7 +979,7 @@ Adds elements.
   
 ### Syntax  
   
-```  
+```cpp  
 cliext::pair<iterator, bool> insert(value_type val);  
 iterator insert(iterator where, value_type val);  
 template<typename InIter>  
@@ -1024,31 +988,31 @@ void insert(System::Collections::Generic::IEnumerable<value_type>^ right);
 ```  
   
 #### Parameters  
- first  
+ *first*  
  Beginning of range to insert.  
   
- last  
+ *last*  
  End of range to insert.  
   
- right  
+ *right*  
  Enumeration to insert.  
   
- val  
+ *val*  
  Key value to insert.  
   
- where  
+ *where*  
  Where in container to insert (hint only).  
   
 ### Remarks  
  Each of the member functions inserts a sequence specified by the remaining operands.  
   
- The first member function endeavors to insert an element with value `val`, and returns a pair of values `X`. If `X.second` is true, `X.first` designates the newly inserted element; otherwise `X.first` designates an element with equivalent ordering that already exists and no new element is inserted. You use it to insert a single element.  
+ The first member function endeavors to insert an element with value *val*, and returns a pair of values `X`. If `X.second` is true, `X.first` designates the newly inserted element; otherwise `X.first` designates an element with equivalent ordering that already exists and no new element is inserted. You use it to insert a single element.  
   
- The second member function inserts an element with value `val`, using `where` as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element which might be adjacent to an element you know.  
+ The second member function inserts an element with value *val*, using *where* as a hint (to improve performance), and returns an iterator that designates the newly inserted element. You use it to insert a single element which might be adjacent to an element you know.  
   
  The third member function inserts the sequence [`first`, `last`). You use it to insert zero or more elements copied from another sequence.  
   
- The fourth member function inserts the sequence designated by the `right`. You use it to insert a sequence described by an enumerator.  
+ The fourth member function inserts the sequence designated by the *right*. You use it to insert a sequence described by an enumerator.  
   
  Each element insertion takes time proportional to the logarithm of the number of elements in the controlled sequence. Insertion can occur in amortized constant time, however, given a hint that designates an element adjacent to the insertion point.  
   
@@ -1110,7 +1074,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1129,7 +1092,7 @@ The type of an iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T1 iterator;  
 ```  
   
@@ -1158,7 +1121,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1170,7 +1132,7 @@ Copies the ordering delegate for two keys.
   
 ### Syntax  
   
-```  
+```cpp  
 key_compare^key_comp();  
 ```  
   
@@ -1210,7 +1172,6 @@ int main()
         kcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1228,7 +1189,7 @@ The ordering delegate for two keys.
   
 ### Syntax  
   
-```  
+```cpp  
 Microsoft::VisualC::StlClr::BinaryDelegate<GKey, GKey, bool>  
     key_compare;  
 ```  
@@ -1269,7 +1230,6 @@ int main()
         kcomp(L'b', L'a'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1287,12 +1247,12 @@ The type of an ordering key.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef Key key_type;  
 ```  
   
 ### Remarks  
- The type is a synonym for the template parameter `Key`.  
+ The type is a synonym for the template parameter *Key*.  
   
 ### Example  
   
@@ -1318,8 +1278,7 @@ int main()
         }   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1331,16 +1290,16 @@ Finds beginning of range that matches a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator lower_bound(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
- The member function determines the first element `X` in the controlled sequence that has equivalent ordering to `key`. If no such element exists, it returns [set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.  
+ The member function determines the first element `X` in the controlled sequence that has equivalent ordering to *key*. If no such element exists, it returns [set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`; otherwise it returns an iterator that designates `X`. You use it to locate the beginning of a sequence of elements currently in the controlled sequence that match a specified key.  
   
 ### Example  
   
@@ -1371,7 +1330,6 @@ int main()
         *c1.lower_bound(L'b'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1386,16 +1344,16 @@ Constructs a value object.
   
 ### Syntax  
   
-```  
+```cpp  
 static value_type make_value(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to use.  
   
 ### Remarks  
- The member function returns a `value_type` object whose key is `key`. You use it to compose an object suitable for use with several other member functions.  
+ The member function returns a `value_type` object whose key is *key*. You use it to compose an object suitable for use with several other member functions.  
   
 ### Example  
   
@@ -1417,8 +1375,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1430,16 +1387,16 @@ Replaces the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 set<Key>% operator=(set<Key>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container to copy.  
   
 ### Remarks  
- The member operator copies `right` to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in `right`.  
+ The member operator copies *right* to the object, then returns `*this`. You use it to replace the controlled sequence with a copy of the controlled sequence in *right*.  
   
 ### Example  
   
@@ -1469,8 +1426,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1483,7 +1439,7 @@ Designates the beginning of the reversed controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 reverse_iterator rbegin();  
 ```  
   
@@ -1516,7 +1472,6 @@ int main()
     System::Console::WriteLine("*++rbegin() = {0}", *++rit);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1530,7 +1485,7 @@ The type of a reference to an element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef value_type% reference;  
 ```  
   
@@ -1562,7 +1517,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1574,7 +1528,7 @@ Designates the end of the reversed controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 reverse_iterator rend();  
 ```  
   
@@ -1608,7 +1562,6 @@ int main()
     System::Console::WriteLine("*--rend() = {0}", *++rit);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1622,7 +1575,7 @@ The type of a reverse iterator for the controlled sequence.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef T3 reverse_iterator;  
 ```  
   
@@ -1651,7 +1604,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1663,7 +1615,7 @@ Constructs a container object.
   
 ### Syntax  
   
-```  
+```cpp  
 set();  
 explicit set(key_compare^ pred);  
 set(set<Key>% right);  
@@ -1679,16 +1631,16 @@ set(System::Collections::Generic::IEnumerable<GValue>^ right,
 ```  
   
 #### Parameters  
- first  
+ *first*  
  Beginning of range to insert.  
   
- last  
+ *last*  
  End of range to insert.  
   
- pred  
+ *pred*  
  Ordering predicate for the controlled sequence.  
   
- right  
+ *right*  
  Object or range to insert.  
   
 ### Remarks  
@@ -1702,19 +1654,19 @@ set(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `explicit set(key_compare^ pred);`  
   
- initializes the controlled sequence with no elements, with the ordering predicate `pred`. You use it to specify an empty initial controlled sequence, with the specified ordering predicate.  
+ initializes the controlled sequence with no elements, with the ordering predicate *pred*. You use it to specify an empty initial controlled sequence, with the specified ordering predicate.  
   
  The constructor:  
   
  `set(set<Key>% right);`  
   
- initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right.begin()`, `right.end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object *right*, with the default ordering predicate.  
   
  The constructor:  
   
  `set(set<Key>^ right);`  
   
- initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object `right`, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence [`right->begin()`, `right->end()`), with the default ordering predicate. You use it to specify an initial controlled sequence that is a copy of the sequence controlled by the set object *right*, with the default ordering predicate.  
   
  The constructor:  
   
@@ -1726,19 +1678,19 @@ set(System::Collections::Generic::IEnumerable<GValue>^ right,
   
  `template<typename InIter> set(InIter first, InIter last, key_compare^ pred);`  
   
- initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
+ initializes the controlled sequence with the sequence [`first`, `last`), with the ordering predicate *pred*. You use it to make the controlled sequence a copy of another sequence, with the specified ordering predicate.  
   
  The constructor:  
   
  `set(System::Collections::Generic::IEnumerable<Key>^ right);`  
   
- initializes the controlled sequence with the sequence designated by the enumerator `right`, with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the default ordering predicate.  
+ initializes the controlled sequence with the sequence designated by the enumerator *right*, with the default ordering predicate. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the default ordering predicate.  
   
  The constructor:  
   
  `set(System::Collections::Generic::IEnumerable<Key>^ right, key_compare^ pred);`  
   
- initializes the controlled sequence with the sequence designated by the enumerator `right`, with the ordering predicate `pred`. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate.  
+ initializes the controlled sequence with the sequence designated by the enumerator *right*, with the ordering predicate *pred*. You use it to make the controlled sequence a copy of another sequence described by an enumerator, with the specified ordering predicate.  
   
 ### Example  
   
@@ -1810,8 +1762,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1832,7 +1783,7 @@ Counts the number of elements.
   
 ### Syntax  
   
-```  
+```cpp  
 size_type size();  
 ```  
   
@@ -1870,7 +1821,6 @@ int main()
     System::Console::WriteLine("size() = {0} after adding 2", c1.size());   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1885,7 +1835,7 @@ The type of a signed distance between two element.
   
 ### Syntax  
   
-```  
+```cpp  
 typedef int size_type;  
 ```  
   
@@ -1919,7 +1869,6 @@ int main()
     System::Console::WriteLine("end()-begin() = {0}", diff);   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1932,16 +1881,16 @@ Swaps the contents of two containers.
   
 ### Syntax  
   
-```  
+```cpp  
 void swap(set<Key>% right);  
 ```  
   
 #### Parameters  
- right  
+ *right*  
  Container to swap contents with.  
   
 ### Remarks  
- The member function swaps the controlled sequences between `this` and `right`. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.  
+ The member function swaps the controlled sequences between `this` and *right*. It does so in constant time and it throws no exceptions. You use it as a quick way to exchange the contents of two containers.  
   
 ### Example  
   
@@ -1982,8 +1931,7 @@ int main()
         System::Console::Write(" {0}", elem);   
     System::Console::WriteLine();   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -1998,7 +1946,7 @@ Copies the controlled sequence to a new array.
   
 ### Syntax  
   
-```  
+```cpp  
 cli::array<value_type>^ to_array();  
 ```  
   
@@ -2034,7 +1982,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2047,16 +1994,16 @@ Finds end of range that matches a specified key.
   
 ### Syntax  
   
-```  
+```cpp  
 iterator upper_bound(key_type key);  
 ```  
   
 #### Parameters  
- key  
+ *key*  
  Key value to search for.  
   
 ### Remarks  
- The member function determines the last element `X` in the controlled sequence that has equivalent ordering to `key`. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.  
+ The member function determines the last element `X` in the controlled sequence that has equivalent ordering to *key*. If no such element exists, or if `X` is the last element in the controlled sequence, it returns [set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)`()`; otherwise it returns an iterator that designates the first element beyond `X`. You use it to locate the end of a sequence of elements currently in the controlled sequence that match a specified key.  
   
 ### Example  
   
@@ -2087,7 +2034,6 @@ int main()
         *c1.upper_bound(L'b'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2102,7 +2048,7 @@ Copies the ordering delegate for two element values.
   
 ### Syntax  
   
-```  
+```cpp  
 value_compare^ value_comp();  
 ```  
   
@@ -2131,7 +2077,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2145,7 +2090,7 @@ The ordering delegate for two element values.
   
 ### Syntax  
   
-```  
+```cpp  
 Microsoft::VisualC::StlClr::BinaryDelegate<generic_value, generic_value, bool>  
     value_compare;  
 ```  
@@ -2175,7 +2120,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2189,10 +2133,8 @@ The type of an element.
   
 ### Syntax  
   
-```  
-  
+```cpp  
 typedef generic_value value_type;  
-  
 ```  
   
 ### Remarks  
@@ -2223,7 +2165,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2235,21 +2176,21 @@ List not equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Key>  
     bool operator!=(set<Key>% left,  
         set<Key>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(left == right)`. You use it to test whether `left` is not ordered the same as `right` when the two sets are compared element by element.  
+ The operator function returns `!(left == right)`. You use it to test whether *left* is not ordered the same as *right* when the two sets are compared element by element.  
   
 ### Example  
   
@@ -2287,8 +2228,7 @@ int main()
     System::Console::WriteLine("[a b c] != [a b d] is {0}",   
         c1 != c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -2303,21 +2243,21 @@ List less than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Key>  
     bool operator<(set<Key>% left,  
         set<Key>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->size() < right->size()` You use it to test whether `left` is ordered before `right` when the two sets are compared element by element.  
+ The operator function returns true if, for the lowest position `i` for which `!(right[i] < left[i])` it is also true that `left[i] < right[i]`. Otherwise, it returns `left->size() < right->size()` You use it to test whether *left* is ordered before *right* when the two sets are compared element by element.  
   
 ### Example  
   
@@ -2355,8 +2295,7 @@ int main()
     System::Console::WriteLine("[a b c] < [a b d] is {0}",   
         c1 < c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -2371,21 +2310,21 @@ List less than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Key>  
     bool operator<=(set<Key>% left,  
         set<Key>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(right < left)`. You use it to test whether `left` is not ordered after `right` when the two sets are compared element by element.  
+ The operator function returns `!(right < left)`. You use it to test whether *left* is not ordered after *right* when the two sets are compared element by element.  
   
 ### Example  
   
@@ -2423,8 +2362,7 @@ int main()
     System::Console::WriteLine("[a b d] <= [a b c] is {0}",   
         c2 <= c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -2439,21 +2377,21 @@ List equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Key>  
     bool operator==(set<Key>% left,  
         set<Key>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns true only if the sequences controlled by `left` and `right` have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether `left` is ordered the same as `right` when the two sets are compared element by element.  
+ The operator function returns true only if the sequences controlled by *left* and *right* have the same length and, for each position `i`, `left[i] ==` `right[i]`. You use it to test whether *left* is ordered the same as *right* when the two sets are compared element by element.  
   
 ### Example  
   
@@ -2491,8 +2429,7 @@ int main()
     System::Console::WriteLine("[a b c] == [a b d] is {0}",   
         c1 == c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -2507,21 +2444,21 @@ List greater than comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Key>  
     bool operator>(set<Key>% left,  
         set<Key>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `right` `<` `left`. You use it to test whether `left` is ordered after `right` when the two sets are compared element by element.  
+ The operator function returns `right` `<` `left`. You use it to test whether *left* is ordered after *right* when the two sets are compared element by element.  
   
 ### Example  
   
@@ -2559,8 +2496,7 @@ int main()
     System::Console::WriteLine("[a b d] > [a b c] is {0}",   
         c2 > c1);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  
@@ -2575,21 +2511,21 @@ List greater than or equal comparison.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Key>  
     bool operator>=(set<Key>% left,  
         set<Key>% right);  
 ```  
   
 #### Parameters  
- left  
+ *left*  
  Left container to compare.  
   
- right  
+ *right*  
  Right container to compare.  
   
 ### Remarks  
- The operator function returns `!(left < right)`. You use it to test whether `left` is not ordered before `right` when the two sets are compared element by element.  
+ The operator function returns `!(left < right)`. You use it to test whether *left* is not ordered before *right* when the two sets are compared element by element.  
   
 ### Example  
   
@@ -2627,8 +2563,7 @@ int main()
     System::Console::WriteLine("[a b c] >= [a b d] is {0}",   
         c1 >= c2);   
     return (0);   
-    }  
-  
+    }   
 ```  
   
 ```Output  

@@ -17,16 +17,14 @@ Identifies the type of the variable used as the union discriminant.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [switch_type(  
 type  
 }]  
-  
 ```  
   
-#### Parameters  
- `type`  
+### Parameters  
+ *type*  
  The switch type, can be an integer, character, Boolean, or enumeration type.  
   
 ## Remarks  
@@ -34,7 +32,7 @@ type
   
  C++ attributes do not support [encapsulated unions](http://msdn.microsoft.com/library/windows/desktop/aa366811). [Nonencapsulated unions](http://msdn.microsoft.com/library/windows/desktop/aa367119) are supported only in the following form:  
   
-```  
+```cpp  
 // cpp_attr_ref_switch_type.cpp  
 // compile with: /LD  
 #include <windows.h>  
@@ -60,7 +58,7 @@ struct SizedValue2 {
   
 |||  
 |-|-|  
-|**Applies to**|`typedef`|  
+|**Applies to**|**typedef**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -70,4 +68,4 @@ struct SizedValue2 {
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [export](../windows/export.md)   
+ [export](../windows/export.md)   

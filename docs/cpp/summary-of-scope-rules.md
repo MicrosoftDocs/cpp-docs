@@ -62,5 +62,5 @@ The use of a name must be unambiguous within its scope (up to the point where ov
   
  Default parameters are in the scope of the parameter for which they are the default, as described in the preceding two paragraphs. However, they cannot access local variables or nonstatic class members. Default parameters are evaluated at the point of the function call, but they are evaluated in the function declaration's original scope. Therefore, the default parameters for member functions are always evaluated in class scope.  
   
-## See Also  
+## See also  
  [Inheritance](../cpp/inheritance-cpp.md)

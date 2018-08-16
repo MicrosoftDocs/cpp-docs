@@ -17,12 +17,12 @@ Represents an invalid handle.
   
 ## Syntax  
   
-```  
+```cpp  
 inline static Type GetInvalidValue();  
 ```  
   
 ## Return Value  
- Always returns `nullptr`.  
+ Always returns **nullptr**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

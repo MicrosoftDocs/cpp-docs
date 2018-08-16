@@ -17,15 +17,15 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 bool IsLocked() const;  
 ```  
   
 ## Return Value  
- **true** if the SyncLockT object is locked; otherwise, **false**.  
+ **true** if the **SyncLockT** object is locked; otherwise, **false**.  
   
 ## Remarks  
- Indicates whether the current SyncLockT object owns a resource; that is, the SyncLockT object is *locked*.  
+ Indicates whether the current **SyncLockT** object owns a resource; that is, the **SyncLockT** object is *locked*.  
   
 ## Requirements  
  **Header:** corewrappers.h  

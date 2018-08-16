@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename Base,  
    typename Derived  
@@ -30,11 +30,11 @@ template <
 struct IsBaseOfStrict<Base, Base>;  
 ```  
   
-#### Parameters  
- `Base`  
+### Parameters  
+ *Base*  
  The base type.  
   
- `Derived`  
+ *Derived*  
  The derived type.  
   
 ## Remarks  

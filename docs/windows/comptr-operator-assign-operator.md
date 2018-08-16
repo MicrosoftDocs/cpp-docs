@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator= Operator
-Assigns a value to the current ComPtr.  
+Assigns a value to the current **ComPtr**.  
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW ComPtr& operator=(  
    decltype(__nullptr)  
 );  
@@ -44,30 +44,30 @@ WRL_NOTHROW ComPtr& operator=(
 );  
 ```  
   
-#### Parameters  
- `U`  
+### Parameters  
+ *U*  
  A class.  
   
- `other`  
- A pointer, reference, or rvalue reference to a type or another ComPtr.  
+ *other*  
+ A pointer, reference, or rvalue reference to a type or another **ComPtr**.  
   
 ## Return Value  
- A reference to the current ComPtr.  
+ A reference to the current **ComPtr**.  
   
 ## Remarks  
- The first version of this operator assigns an empty value to the current ComPtr.  
+ The first version of this operator assigns an empty value to the current **ComPtr**.  
   
- In the second version, if the assigning interface pointer is not the same as the current ComPtr interface pointer, the second interface pointer is assigned to the current ComPtr.  
+ In the second version, if the assigning interface pointer is not the same as the current **ComPtr** interface pointer, the second interface pointer is assigned to the current **ComPtr**.  
   
- In the third version, the assigning interface pointer is assigned to the current ComPtr.  
+ In the third version, the assigning interface pointer is assigned to the current **ComPtr**.  
   
- In the fourth version, if the interface pointer of the assigning value is not the same as the current ComPtr interface pointer, the second interface pointer is assigned to the current ComPtr.  
+ In the fourth version, if the interface pointer of the assigning value is not the same as the current **ComPtr** interface pointer, the second interface pointer is assigned to the current **ComPtr**.  
   
- The fifth version is a copy operator; a reference to a ComPtr is assigned to the current ComPtr.  
+ The fifth version is a copy operator; a reference to a **ComPtr** is assigned to the current **ComPtr**.  
   
- The sixth version is a copy operator that uses move semantics; an rvalue reference to a ComPtr if any type is static cast and then assigned to the current ComPtr.  
+ The sixth version is a copy operator that uses move semantics; an rvalue reference to a **ComPtr** if any type is static cast and then assigned to the current **ComPtr**.  
   
- The seventh version is a copy operator that uses move semantics; an rvalue reference to a ComPtr of type `U` is static cast then and assigned to the current ComPtr.  
+ The seventh version is a copy operator that uses move semantics; an rvalue reference to a **ComPtr** of type *U* is static cast then and assigned to the current **ComPtr**.  
   
 ## Requirements  
  **Header:** client.h  

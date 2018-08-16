@@ -30,7 +30,7 @@ class X {
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [inline, __inline, \__forceinline](inline-functions-cpp.md)

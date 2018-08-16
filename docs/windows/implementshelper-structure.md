@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename RuntimeClassFlagsT,  
    typename ILst,  
@@ -26,20 +26,20 @@ template <
 friend struct Details::ImplementsHelper;  
 ```  
   
-#### Parameters  
- `RuntimeClassFlagsT`  
+### Parameters  
+ *RuntimeClassFlagsT*  
  A field of flags that specifies one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.  
   
- `ILst`  
+ *ILst*  
  A list of interface IDs.  
   
- `IsDelegateToClass`  
- Specify `true` if the current instance of Implements is a base class of the first interface ID in `ILst`; otherwise, `false`.  
+ *IsDelegateToClass*  
+ Specify **true** if the current instance of `Implements` is a base class of the first interface ID in *ILst*; otherwise, **false**.  
   
 ## Remarks  
  Helps implement the [Implements](../windows/implements-structure.md) structure.  
   
- This template traverses a list of interfaces and adds them as base classes, and as information necessary to enable QueryInterface.  
+ This template traverses a list of interfaces and adds them as base classes, and as information necessary to enable `QueryInterface`.  
   
 ## Members  
   
@@ -52,5 +52,5 @@ friend struct Details::ImplementsHelper;
  **Namespace:** Microsoft::WRL::Details  
   
 ## See Also  
- [Reference (Windows Runtime Library)](http://msdn.microsoft.com/en-us/00000000-0000-0000-0000-000000000000)   
+ [Reference (Windows Runtime Library)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)   
  [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

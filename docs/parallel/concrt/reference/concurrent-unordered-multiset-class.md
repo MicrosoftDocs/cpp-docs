@@ -295,7 +295,7 @@ const_iterator find(const key_type& KVal) const;
  The key value to search for.  
   
 ### Return Value  
- An iterator pointing to the location of the the first element that matched the key provided, or the iterator `end()` if no such element exists.  
+ An iterator pointing to the location of the first element that matched the key provided, or the iterator `end()` if no such element exists.  
   
 ##  <a name="get_allocator"></a> get_allocator 
 

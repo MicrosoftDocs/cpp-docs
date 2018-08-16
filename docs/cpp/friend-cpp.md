@@ -46,7 +46,7 @@ friend class F;
 friend F;  
 ```  
   
- The first form introduces a new class F if no existing class by that name was found in the innermost namespace.  **C++11**: The second form does not introduce a new class; it can be used when the class has already been declared, and it must be used when declaring a template type parameter or a typedef as a friend.  
+ The first form introduces a new class F if no existing class by that name was found in the innermost namespace. **C++11**: The second form does not introduce a new class; it can be used when the class has already been declared, and it must be used when declaring a template type parameter or a typedef as a friend.  
   
  Use `class friend F` when the referenced type has not yet been declared:  
   
@@ -231,5 +231,5 @@ Implications of friend Relationship
   
  Friend functions defined inside class declarations are not considered in the scope of the enclosing class; they are in file scope.  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

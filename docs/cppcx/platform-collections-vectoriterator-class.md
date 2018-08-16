@@ -111,7 +111,7 @@ VectorIterator operator--(int);
   
 
 
-## <a name="operator-dereference"></a>  VectorIterator::operator* Operator
+## <a name="operator-dereference"></a>  VectorIterator::operator\* Operator
 Retrieves the address of the element specified by the current VectorIterator.  
   
 ### Syntax  

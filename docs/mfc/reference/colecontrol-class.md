@@ -790,7 +790,7 @@ void FireKeyDown(
   
 ### Parameters  
  *pnChar*  
- Pointer to the virtual key code value of the pressed key. For a list of of standard virtual key codes, see Winuser.h  
+ Pointer to the virtual key code value of the pressed key. For a list of standard virtual key codes, see Winuser.h  
   
  *nShiftState*  
  Contains a combination of the following flags:  
@@ -835,7 +835,7 @@ void FireKeyUp(
   
 ### Parameters  
  *pnChar*  
- Pointer to the virtual key code value of the released key. For a list of of standard virtual key codes, see Winuser.h  
+ Pointer to the virtual key code value of the released key. For a list of standard virtual key codes, see Winuser.h  
   
  *nShiftState*  
  Contains a combination of the following flags:  

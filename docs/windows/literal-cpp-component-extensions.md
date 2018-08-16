@@ -13,38 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # literal (C++ Component Extensions)
-A variable (data member) marked as `literal` in a **/clr** compilation is the native equivalent of a `static const` variable.  
+A variable (data member) marked as **literal** in a **/clr** compilation is the native equivalent of a **static const** variable.  
   
 ## All Platforms  
- **Remarks**  
+### Remarks 
   
  (There are no remarks for this language feature that apply to all runtimes.)  
   
 ## Windows Runtime  
- **Remarks**  
+### Remarks 
   
  (There are no remarks for this language feature that apply to only the Windows Runtime.)  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
   
 ## Remarks  
- A data member marked as `literal` must be initialized when declared and the value must be a constant integral, enum, or string type. Conversion from the type of the initialization expression to the type of the static const data-member must not require a user-defined conversion.  
+ A data member marked as **literal** must be initialized when declared and the value must be a constant integral, enum, or string type. Conversion from the type of the initialization expression to the type of the static const data-member must not require a user-defined conversion.  
   
  No memory is allocated for the literal field at runtime; the compiler only inserts its value in the metadata for the class.  
   
- A variable marked `static const` will not be available in metadata to other compilers.  
+ A variable marked **static const** will not be available in metadata to other compilers.  
   
  For more information, see [Static](../cpp/storage-classes-cpp.md) and [const](../cpp/const-cpp.md).  
   
- `literal` is a context-sensitive keyword. See [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md) for more information.  
+ **literal** is a context-sensitive keyword. See [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md) for more information.  
   
 ## Example  
- This example shows that a `literal` variable implies `static`.  
+ This example shows that a **literal** variable implies **static**.  
   
-```  
+```cpp  
 // mcppv2_literal.cpp  
 // compile with: /clr  
 ref struct X {  
@@ -59,7 +59,7 @@ int main() {
 ## Example  
  The following sample shows the affect of literal in metadata:  
   
-```  
+```cpp  
 // mcppv2_literal2.cpp  
 // compile with: /clr /LD  
 public ref struct A {  
@@ -79,9 +79,9 @@ public ref struct A {
 ```  
   
 ## Example  
- The following sample, authored in C#, references the metadata created in the previous sample and shows the affect of `literal` and `static const` variables:  
+ The following sample, authored in C#, references the metadata created in the previous sample and shows the affect of **literal** and **static const** variables:  
   
-```  
+```cs  
 // mcppv2_literal3.cs  
 // compile with: /reference:mcppv2_literal2.dll  
 // A C# program  
@@ -111,7 +111,7 @@ class B {
 ```  
   
 ## Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ## See Also  
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

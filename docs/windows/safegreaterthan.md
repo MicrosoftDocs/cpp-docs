@@ -17,7 +17,7 @@ Compares two numbers.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeGreaterThan (  
    const T t,  
@@ -25,25 +25,25 @@ inline bool SafeGreaterThan (
 ) throw ();  
 ```  
   
-#### Parameters  
- [in] `t`  
- The first number to compare. This must be of type T.  
+### Parameters  
+ [in] *t*  
+ The first number to compare. This must be of type `T`.  
   
- [in] `u`  
- The second number to compare. This must be of type U.  
+ [in] *u*  
+ The second number to compare. This must be of type `U`.  
   
 ## Return Value  
- `true` if `t` is greater than `u`; otherwise `false`.  
+ **true** if *t* is greater than *u*; otherwise **false**.  
   
 ## Remarks  
- `SafeGreaterThan` extends the regular comparison operator by enabling you to compare two different types of numbers.  
+ **SafeGreaterThan** extends the regular comparison operator by enabling you to compare two different types of numbers.  
   
  This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single comparison operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  
   
 > [!NOTE]
 >  This method should only be used when a single mathematical operation must be protected. If there are multiple operations, you should use the `SafeInt` class instead of calling the individual stand-alone functions.  
   
- For more information about the template types T and U, see [SafeInt Functions](../windows/safeint-functions.md).  
+ For more information about the template types `T` and `U`, see [SafeInt Functions](../windows/safeint-functions.md).  
   
 ## Requirements  
  **Header:** safeint.h  

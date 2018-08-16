@@ -151,7 +151,7 @@ F1 = Add( F2, 23 );
   
  The preceding statement builds two sets:  
   
-|Set 1: Candidate Functions That Have First Argument of Type Fraction|Set 2: Candidate Functions Whose Second Argument Can Be Converted to Type int|  
+|Set 1: Candidate Functions That Have First Argument of Type Fraction|Set 2: Candidate Functions Whose Second Argument Can Be Converted to Type **int**|  
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
 |Variant 1|Variant 1 (**int** can be converted to **long** using a standard conversion)|  
 |Variant 3||  
@@ -166,7 +166,7 @@ F1 = Add( 3, 6 );
   
  The preceding function call builds the following sets:  
   
-|Set 1: Candidate Functions That Have First Argument of Type int|Set 2: Candidate Functions That Have Second Argument of Type int|  
+|Set 1: Candidate Functions That Have First Argument of Type **int**|Set 2: Candidate Functions That Have Second Argument of Type **int**|  
 |---------------------------------------------------------------------|----------------------------------------------------------------------|  
 |Variant 2 (**int** can be converted to **long** using a standard conversion)|Variant 1 (**int** can be converted to **long** using a standard conversion)|  
   
@@ -270,7 +270,7 @@ volatile Over&
   
 3.  Match using standard conversions. Any sequence not classified as an exact match or a match using promotions that contains only standard conversions and trivial conversions is classified as a match using standard conversions. Within this category, the following rules are applied:  
   
-    -   Conversion from a pointer to a derived class, to a pointer to a direct or indirect base class is preferable to converting to **void \*** or **const void \***.  
+    -   Conversion from a pointer to a derived class, to a pointer to a direct or indirect base class is preferable to converting to `void *` or `const void *`.  
   
     -   Conversion from a pointer to a derived class, to a pointer to a base class produces a better match the closer the base class is to a direct base class. Suppose the class hierarchy is as shown in the following figure.  
   
@@ -427,7 +427,6 @@ int main()
     auto v2 = C().get_data(); // get the original. prints "rvalue"
     return 0;
 }
-
 ```
   
 ## Restrictions on overloading  
@@ -454,7 +453,7 @@ int main()
     void Print( PSTR szToPrint );  
     ```  
   
-     The preceding two functions have identical argument lists. `PSTR` is a synonym for type **char \***. In member scope, this code generates an error.  
+     The preceding two functions have identical argument lists. `PSTR` is a synonym for type `char *`. In member scope, this code generates an error.  
   
 -   Enumerated types are distinct types and can be used to distinguish between overloaded functions.  
   
@@ -561,8 +560,5 @@ double Account::Deposit( double dAmount, char *szPassword )
 }  
 ```
 
-
-
-  
-## See Also  
+## See also  
  [Functions (C++)](../cpp/functions-cpp.md)

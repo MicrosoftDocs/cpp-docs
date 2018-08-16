@@ -38,6 +38,6 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)

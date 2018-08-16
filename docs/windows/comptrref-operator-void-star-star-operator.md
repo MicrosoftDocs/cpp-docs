@@ -12,17 +12,17 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# ComPtrRef::operator void** Operator
+# ComPtrRef::operator void\*\* Operator
 Supports the WRL infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 operator void**() const;  
 ```  
   
 ## Remarks  
- Deletes the current ComPtrRef object, casts the pointer to the interface that was represented by the ComPtrRef object as a pointer-to-pointer-to `void`, and then returns the cast pointer.  
+ Deletes the current **ComPtrRef** object, casts the pointer to the interface that was represented by the **ComPtrRef** object as a pointer-to-pointer-to **void**, and then returns the cast pointer.  
   
 ## Requirements  
  **Header:** client.h  

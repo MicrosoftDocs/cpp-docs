@@ -41,7 +41,7 @@ void __stosd( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__stosd`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__stosd`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

@@ -73,7 +73,7 @@ class CNetAddressCtrl : public CEdit
 ## Requirements  
  **Header:** afxcmn.h  
   
- This class is supported in [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] and later.  
+ This class is supported in Windows Vista and later.  
   
  Additional requirements for this class are described in [Build Requirements for Windows Vista Common Controls](../../mfc/build-requirements-for-windows-vista-common-controls.md).  
   

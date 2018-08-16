@@ -29,15 +29,15 @@ You can view resources in an .rc file without having a project open. The .rc fil
   
  To open and view the resource file in text format, see [Editing a Resource Script (.rc) File](../windows/how-to-open-a-resource-script-file-in-text-format.md).  
   
-#### To open multiple .rc files outside a project  
+### To open multiple .rc files outside a project  
   
-1.  Open both resource files stand-alone. For example, open Source1.rc and Source2.rc.  
+1.  Open both resource files stand-alone. For example, open `Source1.rc` and `Source2.rc`.  
   
     1.  From the **File** menu, choose **Open**, then click **File**.  
   
-    2.  In the **Open File** dialog box, navigate to the first resource script file you want to open (Source1.rc), highlight the file, and click **Open**.  
+    2.  In the **Open File** dialog box, navigate to the first resource script file you want to open (`Source1.rc`), highlight the file, and click **Open**.  
   
-    3.  Repeat the previous step to open the second .rc file (Source2.rc).  
+    3.  Repeat the previous step to open the second .rc file (`Source2.rc`).  
   
          The .rc files are now open in separate documents windows.  
   
@@ -52,9 +52,7 @@ You can view resources in an .rc file without having a project open. The .rc fil
 > [!NOTE]
 >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
   
-
-  
-### Requirements  
+## Requirements  
  Win32  
   
 ## See Also  

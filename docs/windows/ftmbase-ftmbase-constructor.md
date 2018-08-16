@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::FtmBase Constructor
-Initializes a new instance of the FtmBase class.  
+Initializes a new instance of the **FtmBase** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 FtmBase();  
 ```  
   

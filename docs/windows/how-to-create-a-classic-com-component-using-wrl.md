@@ -27,11 +27,11 @@ You can use the Windows Runtime C++ Template Library (WRL) to create basic class
   
      [!code-cpp[wrl-classic-com-component#1](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]  
   
-5.  In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](../windows/runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509\(v=vs.85\).aspx) and not [IInspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` is available only to Windows Runtime app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615\(v=vs.85\).aspx).  
+5.  In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](../windows/runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) and not [IInspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` is available only to Windows Runtime app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
      [!code-cpp[wrl-classic-com-component#2](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]  
   
-6.  Use the following code to replace the code in dllmain.cpp. This file defines the DLL export functions. These functions use the [Microsoft::WRL::Module](../windows/module-class.md) class to manage the class factories for the module.  
+6.  Use the following code to replace the code in `dllmain.cpp`. This file defines the DLL export functions. These functions use the [Microsoft::WRL::Module](../windows/module-class.md) class to manage the class factories for the module.  
   
      [!code-cpp[wrl-classic-com-component#3](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_3.cpp)]  
   
@@ -52,7 +52,7 @@ You can use the Windows Runtime C++ Template Library (WRL) to create basic class
   
 ### To consume the COM component from a desktop app  
   
-1.  Register the COM component with the Windows Registry. To do so, create a registration entries file, name it `RegScript.reg`, and add the following text. Replace *\<dll-path>* with the path of your DLL—for example, `C:\\temp\\WRLClassicCOM\\Debug\\CalculatorComponent.dll`.  
+1.  Register the COM component with the Windows Registry. To do so, create a registration entries file, name it `RegScript.reg`, and add the following text. Replace *\<dll-path>* with the path of your DLL—for example, `C:\temp\WRLClassicCOM\Debug\CalculatorComponent.dll`.  
   
     ```
     Windows Registry Editor Version 5.00
@@ -77,7 +77,7 @@ You can use the Windows Runtime C++ Template Library (WRL) to create basic class
   
 3.  Add a **Win32 Console Application** project to the solution. Name the project, for example, `Calculator`.  
   
-4.  Use this code to replace the contents of Calculator.cpp:  
+4.  Use this code to replace the contents of `Calculator.cpp`:  
   
      [!code-cpp[wrl-classic-com-component#6](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_6.cpp)]  
   

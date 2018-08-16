@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _com_ptr_t::_com_ptr_t
 **Microsoft Specific**  
   
- Constructs a `_com_ptr_t` object.  
+ Constructs a **_com_ptr_t** object.  
   
 ## Syntax  
   
@@ -139,10 +139,10 @@ explicit _com_ptr_t( 
  If TRUE, `AddRef` is called to increment the reference count of the encapsulated interface pointer.  
   
  *cp*  
- A `_com_ptr_t` object.  
+ A **_com_ptr_t** object.  
   
  *p*  
- A raw interface pointer, its type being different from the smart pointer type of this `_com_ptr_t` object.  
+ A raw interface pointer, its type being different from the smart pointer type of this **_com_ptr_t** object.  
   
  *varSrc*  
  A `_variant_t` object.  
@@ -159,5 +159,5 @@ explicit _com_ptr_t( 
  *pOuter*  
  The outer unknown for [aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558).  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

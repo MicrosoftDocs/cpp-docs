@@ -19,7 +19,7 @@ The Windows Runtime C++ Template Library (WRL) is a template library that provid
 > With C++/WinRT, you can both consume and author Windows Runtime APIs using any standards-compliant C++17 compiler. C++/WinRT typically performs better and produces smaller binaries than any other language option for the Windows Runtime. We will continue to support C++/CX and WRL, but highly recommend that new applications use C++/WinRT. For more information, see [C++/WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).   
   
 ## Benefits  
- The Windows Runtime C++ Template Library enables you to more easily implement and consume Component Object Model (COM) components. It provides housekeeping techniques like reference-counting to manage the lifetime of objects and testing `HRESULT` values to determine whether an operation succeeded or failed. To successfully use the Windows Runtime C++ Template Library, you must carefully follow these rules and techniques.  
+ The Windows Runtime C++ Template Library enables you to more easily implement and consume Component Object Model (COM) components. It provides housekeeping techniques like reference-counting to manage the lifetime of objects and testing HRESULT values to determine whether an operation succeeded or failed. To successfully use the Windows Runtime C++ Template Library, you must carefully follow these rules and techniques.  
   
  The C++/CX is a high-level, language-based way to use Windows Runtime components. Both the Windows Runtime C++ Template Library and C++/CX simplify the writing of code for the Windows Runtime by automatically performing housekeeping tasks on your behalf.  
   
@@ -27,10 +27,10 @@ The Windows Runtime C++ Template Library (WRL) is a template library that provid
   
 -   Windows Runtime C++ Template Library adds little abstraction over the Windows Runtime Application Binary Interface (ABI), giving you the ability to control the underlying code to better create or consume Windows Runtime APIs.  
   
--   C++/CX represents COM `HRESULT` values as exceptions. If you’ve inherited a code base that uses COM, or one that doesn’t use exceptions, you might find that the Windows Runtime C++ Template Library is a more natural way to work with the Windows Runtime because you don't have to use exceptions.  
+-   C++/CX represents COM HRESULT values as exceptions. If you’ve inherited a code base that uses COM, or one that doesn’t use exceptions, you might find that the Windows Runtime C++ Template Library is a more natural way to work with the Windows Runtime because you don't have to use exceptions.  
   
     > [!NOTE]
-    >  The Windows Runtime C++ Template Library uses `HRESULT` values and does not throw exceptions. In addition, the Windows Runtime C++ Template Library uses smart pointers and the RAII pattern to help guarantee that objects are destroyed correctly when your application code throws an exception. For more info about smart pointers and RAII, see [Smart Pointers](../cpp/smart-pointers-modern-cpp.md) and [Objects Own Resources (RAII)](../cpp/objects-own-resources-raii.md).  
+    >  The Windows Runtime C++ Template Library uses HRESULT values and does not throw exceptions. In addition, the Windows Runtime C++ Template Library uses smart pointers and the RAII pattern to help guarantee that objects are destroyed correctly when your application code throws an exception. For more info about smart pointers and RAII, see [Smart Pointers](../cpp/smart-pointers-modern-cpp.md) and [Objects Own Resources (RAII)](../cpp/objects-own-resources-raii.md).  
   
 -   The purpose and design of the Windows Runtime C++ Template Library is inspired by the Active Template Library (ATL), which is a set of template-based C++ classes that simplify the programming of COM objects. Because Windows Runtime C++ Template Library uses standard C++ to wrap the Windows Runtime, you can more easily port and interact with many existing COM components written in ATL to the Windows Runtime. If you already know ATL, you might find that Windows Runtime C++ Template Library programming is easier.  
   
@@ -62,7 +62,7 @@ The Windows Runtime C++ Template Library (WRL) is a template library that provid
  Shows how to consume custom Windows Runtime components from WRL by creating an IDL file from the .winmd metadata.  
   
  [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)  
- Shows how to use the [IXMLHTTPRequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) and [IXMLHTTPRequest2Callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) interfaces together with tasks to send HTTP GET and POST requests to a web service in a UWP app.  
+ Shows how to use the [IXMLHTTPRequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) and [IXMLHTTPRequest2Callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) interfaces together with tasks to send HTTP GET and POST requests to a web service in a UWP app.  
   
  [Bing Maps Trip Optimizer sample](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)  
  Uses the `HttpRequest` class that's defined in [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) in the context of a complete UWP app.  

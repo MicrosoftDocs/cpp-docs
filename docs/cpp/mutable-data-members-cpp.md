@@ -18,7 +18,6 @@ This keyword can only be applied to non-static and non-const data members of a c
 ## Syntax  
   
 ```  
-  
 mutable member-variable-declaration;  
 ```  
   
@@ -45,5 +44,5 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

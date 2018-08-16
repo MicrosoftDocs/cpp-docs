@@ -17,7 +17,7 @@ Casts one type of number to another type.
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T, typename U>  
 inline bool SafeCast (  
    const T From,  
@@ -25,15 +25,15 @@ inline bool SafeCast (
 );  
 ```  
   
-#### Parameters  
- [in] `From`  
- The source number to convert. This must be of type T.  
+### Parameters  
+ [in] *From*  
+ The source number to convert. This must be of type `T`.  
   
- [out] `To`  
- A reference to the new number type. This must be of type U.  
+ [out] *To*  
+ A reference to the new number type. This must be of type `U`.  
   
 ## Return Value  
- `true` if no error occurs; `false` if an error occurs.  
+ **true** if no error occurs; **false** if an error occurs.  
   
 ## Remarks  
  This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single casting operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  

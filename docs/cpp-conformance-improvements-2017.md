@@ -1,7 +1,7 @@
 ---
 title: "C++ conformance improvements | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/11/2018"
+ms.date: "08/15/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
@@ -9,7 +9,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157)
+# C++ conformance improvements in Visual Studio 2017 versions 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158)
 
 With support for generalized constexpr and NSDMI for aggregates, the Microsoft Visual C++ compiler is now complete for features added in the C++14 Standard. Note that the compiler still lacks a few features from the C++11 and C++98 Standards. See [Visual C++ Language Conformance](visual-cpp-language-conformance.md) for a table that shows the current state of the compiler.
 
@@ -73,7 +73,7 @@ It is now possible in a single declaration to store a value with individual name
 
 There is now an implicit/non-narrowing conversion from a scoped enumeration's underlying type to the enumeration itself, when its definition introduces no enumerator and the source uses a list-initialization syntax. For more information, see [Construction Rules for enum class Values](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf).
 
-### Capturing *this by value
+### Capturing \*this by value
 
 The `*this` object in a lambda expression may now be captured by value. This enables scenarios in which the lambda is invoked in parallel and asynchronous operations, especially on newer machine architectures. For more information, see [Lambda Capture of \*this by Value as [=,\*this]](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html).
 
@@ -325,11 +325,11 @@ void bar(A<0> *p)
 
 ### C++17 Repairing elementary string conversions
 
-[P0682R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0682r1.html) Move the new elementary string conversion functions from P0067R5 into a new header \<charconv> and make other improvements, including changing error handling to use use `std::errc` instead of `std::error_code`.
+[P0682R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0682r1.html) Move the new elementary string conversion functions from P0067R5 into a new header \<charconv> and make other improvements, including changing error handling to use `std::errc` instead of `std::error_code`.
 
 ### C++17 constexpr for char_traits (partial)
 
-[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` in order to make make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
+[P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) Changes to `std::traits_type` member functions `length`, `compare`, and `find` in order to make `std::string_view` usable in constant expressions. (In Visual Studio 2017 version 15.6, supported for Clang/LLVM only. In version 15.7 Preview 2, support is nearly complete for ClXX as well.)
 
 ## Bug fixes in Visual Studio versions 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), and [15.8](#update_158)
 
@@ -1616,6 +1616,8 @@ int main() {
 ```
 
 ## <a name="update_158"></a> Bug fixes and behavior changes in Visual Studio 2017 version 15.8
+
+The compiler changes in Visual Studio 2017 version 15.8 all fall under the category of bug fixes and behavior changes, and are listed below:
 
 ### typename on unqualified identifiers
 

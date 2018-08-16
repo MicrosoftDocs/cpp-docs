@@ -34,7 +34,6 @@ void abssort(float* x, unsigned n) {
         } // end of lambda expression  
     );  
 }  
-  
 ```  
   
  This illustration shows the parts of a lambda:  
@@ -95,7 +94,7 @@ void f(Args... args) {
 }  
 ```  
   
- To use lambda expressions in the body of a class method, pass the `this` pointer to the capture clause to provide access to the methods and data members of the enclosing class. 
+ To use lambda expressions in the body of a class method, pass the **this** pointer to the capture clause to provide access to the methods and data members of the enclosing class. 
  
 **Visual Studio 2017 version 15.3 and later** (available with [/std:c++17](../build/reference/std-specify-language-standard-version.md)): The **this** pointer may be captured by value by specifying `*this` in the capture clause. Capture by value means that the entire *closure*, which is the anonymous function object that encapulates the lambda expression, is copied to every call site where the lambda is invoked. Capture by value is useful when the lambda will execute in parallel or asynchronous operations, especially on certain hardware architectures such as NUMA. 
 
@@ -129,8 +128,7 @@ pNums = make_unique<vector<int>>(nums);
 auto y = [] (int first, int second)  
 {  
     return first + second;  
-};  
-  
+};   
 ```  
   
  In **C++ 14**, if the parameter type is generic, you can use the auto keyword as the type specifier. This tells the compiler to create the function call operator as a template. Each instance of auto in a parameter list is equivalent to a distinct type parameter.  
@@ -328,7 +326,6 @@ vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
     {
 	    return [n] { return n + 1; }();
     }
-
 ``` 
 A lambda is implicitly `constexpr` if its result satisfies the requirements of a `constexpr` function:
 ```cpp
@@ -363,7 +360,7 @@ auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };
   
  In addition to C++11 Standard lambda functionality, Visual Studio supports stateless lambdas, which are omni-convertible to function pointers that use arbitrary calling conventions.  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [Function Objects in the C++ Standard Library](../standard-library/function-objects-in-the-stl.md)   
  [Function Call](../cpp/function-call-cpp.md)   

@@ -76,6 +76,6 @@ Output:
   
  The **reinterpret_cast** allows the pointer to be treated as an integral type. The result is then bit-shifted and XORed with itself to produce a unique index (unique to a high degree of probability). The index is then truncated by a standard C-style cast to the return type of the function.  
   
-## See Also  
+## See also  
  [Casting Operators](../cpp/casting-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)

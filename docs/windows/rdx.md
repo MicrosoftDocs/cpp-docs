@@ -17,24 +17,23 @@ Creates a registry key or modifies an existing registry key.
   
 ## Syntax  
   
-```  
-  
-      [ rdx(   
+```cpp  
+[ rdx(   
    key,   
    valuename=NULL,   
    regtype   
 ) ]  
 ```  
   
-#### Parameters  
- `key`  
+### Parameters  
+ *key*  
  The name of the key to be created or opened.  
   
- `valuename`(optional)  
+ *valuename* (optional)  
  Specifies the value field to be set. If a value field with this name does not already exist in the key, it is added.  
   
  *regtype*  
- The type of registry key being added. Can be one of the following: **text**, **dword**, **binary**, or `CString`.  
+ The type of registry key being added. Can be one of the following: `text`, `dword`, `binary`, or `CString`.  
   
 ## Remarks  
  The **rdx** C++ attribute creates or modifies an existing registry key for a COM component. The attribute adds a BEGIN_RDX_MAP macro to the object that implements the target member. `RegistryDataExchange`, a function injected as a result of the BEGIN_RDX_MAP macro, can be used to transfer data between the registry and the data members  
@@ -47,7 +46,7 @@ Creates a registry key or modifies an existing registry key.
   
 |||  
 |-|-|  
-|**Applies to**|**class** or `struct` member|  
+|**Applies to**|**class** or **struct** member|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -57,7 +56,7 @@ Creates a registry key or modifies an existing registry key.
 ## Example  
  The following code adds a registry key called MyValue to the system describing the CMyClass COM component.  
   
-```  
+```cpp  
 // cpp_attr_ref_rdx.cpp  
 // compile with: /LD /link /OPT:NOREF  
 #define _ATL_ATTRIBUTES  
@@ -78,4 +77,4 @@ public:
   
 ## See Also  
  [COM Attributes](../windows/com-attributes.md)   
- [registration_script](../windows/registration-script.md)   
+ [registration_script](../windows/registration-script.md)   

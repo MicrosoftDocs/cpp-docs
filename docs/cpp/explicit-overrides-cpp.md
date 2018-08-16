@@ -113,5 +113,5 @@ In CMyClass::IMyInt2::mf2()
 In CMyClass::IMyInt2::mf2(int)  
 ```  
   
-## See Also  
+## See also  
  [Inheritance](../cpp/inheritance-cpp.md)

@@ -81,7 +81,7 @@ The following table lists the available choices for the report mode or modes and
 |-----------------|-----------------|------------------------------------------------|
 |**_CRTDBG_MODE_DEBUG**|Not applicable|Writes message by using Windows [OutputDebugString](http://msdn.microsoft.com/library/windows/desktop/aa363362.aspx) API.|
 |**_CRTDBG_MODE_WNDW**|Not applicable|Calls Windows [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) API to create message box to display the message along with **Abort**, **Retry**, and **Ignore** buttons. If a user clicks **Abort**, **_CrtDbgReport** or **_CrtDbgReport** immediately aborts. If a user clicks **Retry**, it returns 1. If a user clicks **Ignore**, execution continues and **_CrtDbgReport** and **_CrtDbgReportW** return 0. Note that clicking **Ignore** when an error condition exists often results in "undefined behavior."|
-|**_CRTDBG_MODE_FILE**|**__HFILE**|Writes message to user-supplied **HANDLE**, using the Windows [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747.aspx) API and does not verify validity of file handle; the application is responsible for opening the report file and passing a valid file handle.|
+|**_CRTDBG_MODE_FILE**|**__HFILE**|Writes message to user-supplied **HANDLE**, using the Windows [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) API and does not verify validity of file handle; the application is responsible for opening the report file and passing a valid file handle.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|Writes message to **stderr**.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|Writes message to **stdout**.|
 

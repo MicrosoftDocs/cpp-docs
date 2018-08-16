@@ -148,4 +148,3 @@ int main() {
   
 > [!NOTE]
 >  Forcing the base class to implement a function such as `PrintNameOf` is often not the best design. [Virtual Functions](../cpp/virtual-functions.md) offers other design alternatives.  
-  

@@ -51,7 +51,7 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
  **Header:** afxanimationcontroller.h  
   
 ##  <a name="canimationmanagereventhandler"></a>  CAnimationManagerEventHandler::CAnimationManagerEventHandler  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 is required.  
   
  Constructs a CAnimationManagerEventHandler object.  
   
@@ -60,7 +60,7 @@ CAnimationManagerEventHandler();
 ```  
   
 ##  <a name="createinstance"></a>  CAnimationManagerEventHandler::CreateInstance  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 is required.  
   
  Creates an instance of CAnimationManagerEventHandler object.  
   
@@ -81,7 +81,7 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
   
 ##  <a name="onmanagerstatuschanged"></a>  CAnimationManagerEventHandler::OnManagerStatusChanged  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 is required.  
   
  Called when a status of animation manager has changed.  
   
@@ -102,7 +102,7 @@ IFACEMETHOD(OnManagerStatusChanged)(
  Current implementation always returns S_OK;  
   
 ##  <a name="setanimationcontroller"></a>  CAnimationManagerEventHandler::SetAnimationController  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 is required.  
   
  Stores a pointer to animation controller to route events.  
   

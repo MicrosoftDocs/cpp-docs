@@ -204,7 +204,7 @@ HRESULT CopyFromMemory(
  The data to copy.  
   
  *pitch*  
- The stride, or pitch, of the source bitmap stored in srcData. The stride is the byte count of a scanline (one row of pixels in memory). The stride can be computed from the following formula: pixel width * bytes per pixel + memory padding.  
+ The stride, or pitch, of the source bitmap stored in srcData. The stride is the byte count of a scanline (one row of pixels in memory). The stride can be computed from the following formula: pixel width \* bytes per pixel + memory padding.  
   
  *destRect*  
  In the current bitmap, the upper-left corner of the area to which the region specified by srcRect is copied. 

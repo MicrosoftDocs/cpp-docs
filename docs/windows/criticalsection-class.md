@@ -17,7 +17,7 @@ Represents a critical section object.
   
 ## Syntax  
   
-```  
+```cpp  
 class CriticalSection;  
 ```  
   
@@ -28,7 +28,7 @@ class CriticalSection;
 |Name|Description|  
 |----------|-----------------|  
 |[CriticalSection::CriticalSection Constructor](../windows/criticalsection-criticalsection-constructor.md)|Initializes a synchronization object that is similar to a mutex object, but can be used by only the threads of a single process.|  
-|[CriticalSection::~CriticalSection Destructor](../windows/criticalsection-tilde-criticalsection-destructor.md)|Deinitializes and destroys the current CriticalSection object.|  
+|[CriticalSection::~CriticalSection Destructor](../windows/criticalsection-tilde-criticalsection-destructor.md)|Deinitializes and destroys the current **CriticalSection** object.|  
   
 ### Public Methods  
   

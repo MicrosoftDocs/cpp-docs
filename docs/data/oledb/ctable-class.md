@@ -4,9 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-data"]
 ms.topic: "reference"
-f1_keywords: ["ATL::CTable", "ATL.CTable", "CTable"]
+f1_keywords: ["ATL::CTable", "ATL.CTable", "CTable", "ATL.CTable.Open", "ATL::CTable::Open", "CTable::Open", "CTable.Open"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CTable class"]
+helpviewer_keywords: ["CTable class", "Open method"]
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
 author: "mikeblome"
 ms.author: "mblome"
@@ -24,12 +24,15 @@ class CTable :
    public CAccessorRowset <TAccessor, TRowset>  
 ```  
   
-#### Parameters  
- `TAccessor`  
+### Parameters  
+ *TAccessor*  
  An accessor class.  
   
- `TRowset`  
+ *TRowset*  
  A rowset class.  
+
+## Requirements  
+ **Header:** atldbcli.h  
   
 ## Members  
   
@@ -37,15 +40,58 @@ class CTable :
   
 |||  
 |-|-|  
-|[Open](../../data/oledb/ctable-open.md)|Opens the table.|  
+|[Open](#open)|Opens the table.|  
   
 ## Remarks  
  See [CCommand](../../data/oledb/ccommand-class.md) for information on how to execute a command to access a rowset.  
+
+## <a name="open"></a> CTable::Open
+Opens the table.  
   
-## Requirements  
- **Header:** atldbcli.h  
+### Syntax  
+  
+```cpp
+HRESULT Open(const CSession& session,  
+   LPCWSTR wszTableName,  
+   DBPROPSET* pPropSet = NULL,  
+   ULONG ulPropSets = 0) throw ();  
+
+HRESULT Open(const CSession& session,  
+   LPCSTR szTableName,  
+   DBPROPSET* pPropSet = NULL,  
+   ULONG ulPropSets = 0) throw ();  
+
+HRESULT Open(const CSession& session,  
+   DBID& dbid,  
+   DBPROPSET* pPropSet = NULL,  
+   ULONG ulPropSets = 0) throw ();  
+```  
+  
+#### Parameters  
+ *session*  
+ [in] The session for which the table is opened.  
+  
+ *wszTableName*  
+ [in] The name of the table to open, passed as a Unicode string.  
+  
+ *szTableName*  
+ [in] The name of the table to open, passed as an ANSI string.  
+  
+ *dbid*  
+ [in] The `DBID` of the table to open.  
+  
+ *pPropSet*  
+ [in] A pointer to an array of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures containing properties and values to be set. See [Property Sets and Property Groups](/previous-versions/windows/desktop/ms713696\(v=vs.85\)) in the *OLE DB Programmer's Reference* in the Windows SDK. The default value of NULL specifies no properties.  
+  
+ *ulPropSets*  
+ [in] The number of [DBPROPSET](/previous-versions/windows/desktop/ms714367\(v=vs.85\)) structures passed in the *pPropSet* argument.  
+  
+### Return Value  
+ A standard HRESULT.  
+  
+### Remarks  
+ For more details, see [IOpenRowset::OpenRowset](/previous-versions/windows/desktop/ms716724\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB Consumer Templates Reference](../../data/oledb/ole-db-consumer-templates-reference.md)   
- [IOpenRowset::OpenRowset](https://msdn.microsoft.com/en-us/library/ms716724.aspx)

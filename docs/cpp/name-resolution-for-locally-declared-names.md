@@ -163,6 +163,5 @@ Base
 1  
 ```  
   
-## See Also
-
+## See also
  [Name Resolution](../cpp/templates-and-name-resolution.md)

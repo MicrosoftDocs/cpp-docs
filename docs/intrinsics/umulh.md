@@ -40,7 +40,7 @@ unsigned __int64 __umulh( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__umulh`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__umulh`|x64|  
   
  **Header file** \<intrin.h>  
   

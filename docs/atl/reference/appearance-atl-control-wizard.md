@@ -86,5 +86,5 @@ Sets additional behavior options for the control.
   
 ## See Also  
  [ATL Control Wizard](../../atl/reference/atl-control-wizard.md)   
- [SUBEDIT Sample: Superclasses a Standard Windows Control](http://msdn.microsoft.com/30e46bdc-ed92-417c-b6b8-359017265a7b)
+ [SUBEDIT Sample: Superclasses a Standard Windows Control](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit)
 

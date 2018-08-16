@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::InternalRelease Method
-Performs a COM Release operation on the interface associated with this ComPtr.  
+Performs a COM Release operation on the interface associated with this **ComPtr**.  
   
 ## Syntax  
   
-```  
+```cpp  
 void InternalRelease();  
 ```  
   

@@ -30,15 +30,15 @@ class CColumnAccessor : public CAccessorBase
   
 -   `CreateAccessor` Allocates memory for the column binding structures and initializes the column data members.  
   
--   **BindColumns** Binds columns to accessors.  
+-   `BindColumns` Binds columns to accessors.  
   
--   **SetParameterBuffer** Allocates buffers for parameters.  
+-   `SetParameterBuffer` Allocates buffers for parameters.  
   
 -   `AddParameter` Adds a parameter entry to the parameter entry structures.  
   
--   **HasOutputColumns** Determines whether the accessor has output columns  
+-   `HasOutputColumns` Determines whether the accessor has output columns  
   
--   **HasParameters** Determines whether the accessor has parameters.  
+-   `HasParameters` Determines whether the accessor has parameters.  
   
 -   `BindParameters` Binds the created parameters to columns.  
   

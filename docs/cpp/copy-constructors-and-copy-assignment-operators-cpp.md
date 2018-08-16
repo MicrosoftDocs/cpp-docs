@@ -78,4 +78,3 @@ int main()
  The implications are similar to those of the copy constructor. When the argument type is not **const**, assignment from a **const** object generates an error. The reverse is not true: If a **const** value is assigned to a value that is not **const**, the assignment succeeds.  
   
  For more information about overloaded assignment operators, see [Assignment](../cpp/assignment.md).  
-  

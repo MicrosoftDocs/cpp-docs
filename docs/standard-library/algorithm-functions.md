@@ -2607,7 +2607,7 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
 
 ### Remarks
 
-`swap` should be used in preference to i **ter_swap**, which was included in the C++ Standard for backward compatibility. If `Fit1` and `Fit2` are forward iterators, then `iter_swap` ( `Fit1`, `Fit2` ), is equivalent to `swap` ( * `Fit1`, \* `Fit2` ).
+`swap` should be used in preference to i **ter_swap**, which was included in the C++ Standard for backward compatibility. If `Fit1` and `Fit2` are forward iterators, then `iter_swap` ( `Fit1`, `Fit2` ), is equivalent to `swap` ( \* `Fit1`, \* `Fit2` ).
 
 The value types of the input forward iterators must have the same value.
 

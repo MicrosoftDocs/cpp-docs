@@ -84,6 +84,6 @@ int main() {
 11  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [alloc_text](../preprocessor/alloc-text.md)

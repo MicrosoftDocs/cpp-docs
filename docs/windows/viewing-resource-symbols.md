@@ -25,10 +25,7 @@ ms.workload: ["cplusplus", "uwp"]
     > [!NOTE]
     >  To see predefined symbols, check the **Show read-only symbols** check box.  
   
-
-  
- **Requirements**  
-  
+## Requirements  
  Win32  
   
 ## See Also  

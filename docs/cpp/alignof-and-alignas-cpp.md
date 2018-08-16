@@ -11,10 +11,10 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # alignof and alignas (C++)
-The `alignas` type specifier is a portable, C++ standard way to specify custom alignment of variables and user defined types. The `alignof` operator is likewise a standard, portable way to obtain the alignment of a specified type or variable.  
+The **alignas** type specifier is a portable, C++ standard way to specify custom alignment of variables and user defined types. The **alignof** operator is likewise a standard, portable way to obtain the alignment of a specified type or variable.  
   
 ## Example  
- You can use `alignas` on a class, struck or union, or on individual members. When multiple `alignas` specifiers are encountered, the compiler will choose the strictest one, (the one with the largest value).  
+ You can use **alignas** on a class, struck or union, or on individual members. When multiple **alignas** specifiers are encountered, the compiler will choose the strictest one, (the one with the largest value).  
   
 ```cpp  
 // alignas_alignof.cpp
@@ -35,5 +35,5 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Alignment](../cpp/alignment-cpp-declarations.md)

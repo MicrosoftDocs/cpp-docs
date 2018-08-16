@@ -1545,7 +1545,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
 |[in] *lpColorScheme*|Pointer to a [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) structure that describes the highlight color and shadow color of the toolbar control.|  
   
 ### Remarks  
- This method has no effect if a [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] visual theme is set.  
+ This method has no effect if a Windows Vista visual theme is set.  
   
  This method sends the [TB_SETCOLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb787421) message, which is described in the Windows SDK.  
   

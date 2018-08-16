@@ -17,10 +17,8 @@ Identifies an interface as an Object Description Language (ODL) interface. The M
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [odl]  
-  
 ```  
   
 ## Remarks  
@@ -28,7 +26,7 @@ Identifies an interface as an Object Description Language (ODL) interface. The M
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_odl.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
@@ -54,7 +52,7 @@ public:
   
 |||  
 |-|-|  
-|**Applies to**|`interface`|  
+|**Applies to**|**interface**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -63,4 +61,4 @@ public:
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
+ [Interface Attributes](../windows/interface-attributes.md)   

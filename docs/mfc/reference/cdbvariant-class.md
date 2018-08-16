@@ -161,7 +161,7 @@ void Clear();
 ### Remarks  
  The `m_pdate` data member belongs to a union. Before accessing `m_pdate`, first check the value of [CDBVariant::m_dwType](#m_dwtype). If `m_dwType` is set to DBVT_DATE, then `m_pdate` contains a valid pointer; otherwise, accessing `m_pdate` will produce unreliable results.  
   
- For more information about the TIMESTAMP_STRUCT data type, see the topic [C Data Types](https://msdn.microsoft.com/library/ms714556.aspx) in Appendix D of the *ODBC Programmer's Reference* in the Windows SDK.  
+ For more information about the TIMESTAMP_STRUCT data type, see the topic [C Data Types](/previous-versions/windows/desktop/ms714556\(v=vs.85\)) in Appendix D of the *ODBC Programmer's Reference* in the Windows SDK.  
   
 ##  <a name="m_pstring"></a>  CDBVariant::m_pstring  
  Stores a pointer to an object of type [CString](../../atl-mfc-shared/reference/cstringt-class.md).  

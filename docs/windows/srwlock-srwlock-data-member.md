@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::SRWLock_ Data Member
-Contains the underlying lock variable for the current SRWLock object.  
+Contains the underlying lock variable for the current **SRWLock** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 SRWLOCK SRWLock_;  
 ```  
   

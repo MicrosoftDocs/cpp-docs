@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::SRWLock Constructor
-Initializes a new instance of the SRWLock class.  
+Initializes a new instance of the **SRWLock** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 SRWLock();  
 ```  
   

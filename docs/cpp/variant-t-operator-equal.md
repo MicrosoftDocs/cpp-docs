@@ -18,7 +18,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 _variant_t& operator=(  
    const VARIANT& varSrc   
 );  
@@ -149,5 +148,5 @@ _variant_t& operator=(
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)

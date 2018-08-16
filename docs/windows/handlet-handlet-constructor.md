@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::HandleT Constructor
-Initializes a new instance of the HandleT class.  
+Initializes a new instance of the **HandleT** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 explicit HandleT(  
    typename HandleTraits::Type h =   
       HandleTraits::GetInvalidValue()  
@@ -28,12 +28,12 @@ HandleT(
 );  
 ```  
   
-#### Parameters  
- `h`  
+### Parameters  
+ *h*  
  A handle.  
   
 ## Remarks  
- The first constructor initializes a HandleT object that is not a valid handle to an object. The second constructor creates a new HandleT object from parameter `h`.  
+ The first constructor initializes a **HandleT** object that is not a valid handle to an object. The second constructor creates a new **HandleT** object from parameter *h*.  
   
 ## Requirements  
  **Header:** corewrappers.h  

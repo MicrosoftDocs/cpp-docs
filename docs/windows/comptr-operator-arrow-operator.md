@@ -17,7 +17,7 @@ Retrieves a pointer to the type specified by the current template parameter.
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW Microsoft::WRL::Details::RemoveIUnknown<InterfaceType>* operator->() const;  
 ```  
   
@@ -25,7 +25,7 @@ WRL_NOTHROW Microsoft::WRL::Details::RemoveIUnknown<InterfaceType>* operator->()
  Pointer to the type specified by the current template type name.  
   
 ## Remarks  
- This helper function removes unnecessary overhead caused by using the STDMETHOD macro. This function makes IUnknown types private instead of virtual.  
+ This helper function removes unnecessary overhead caused by using the STDMETHOD macro. This function makes `IUnknown` types **private** instead of **virtual**.  
   
 ## Requirements  
  **Header:** client.h  
