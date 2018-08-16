@@ -38,7 +38,7 @@ Learn how to create effective error reports against the Visual C++ toolset (comp
 Guidance for porting code and upgrading projects to Visual Studio 2017, including porting C++ code to Windows 10 and the Universal Windows Platform.
 
 [Visual C++ Team Blog](http://blogs.msdn.com/b/vcblog/)<br/>
-Learn more about new features and the latest information from the developers of [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)].
+Learn more about new features and the latest information from the developers of Visual C++.
 
 [Install C++ support in Visual Studio](build/vscpp-step-0-installation.md)<br/>
 Download Visual Studio and install the Visual C++ toolset.

@@ -17,7 +17,7 @@ Describes how to use a setup project to deploy a Visual C++ application.
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   A computer with [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)] installed.  
+-   A computer with Visual Studio 2012 installed.  
   
 -   An additional computer that does not have the Visual C++ libraries.  
   

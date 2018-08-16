@@ -58,9 +58,9 @@ A second **#define** for a macro with the same name generates a warning unless t
   
 **Microsoft Specific**  
   
-Microsoft C/C++ lets you redefine a macro if the new definition is syntactically identical to the original definition. In other words, the two definitions can have different parameter names. This behavior differs from [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] C, which requires that the two definitions be lexically identical.  
+Microsoft C/C++ lets you redefine a macro if the new definition is syntactically identical to the original definition. In other words, the two definitions can have different parameter names. This behavior differs from ANSI C, which requires that the two definitions be lexically identical.  
   
-For example, the following two macros are identical except for the parameter names. [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] C does not allow such a redefinition, but Microsoft C/C++ compiles it without error.  
+For example, the following two macros are identical except for the parameter names. ANSI C does not allow such a redefinition, but Microsoft C/C++ compiles it without error.  
   
 ```  
 #define multiply( f1, f2 ) ( f1 * f2 )  

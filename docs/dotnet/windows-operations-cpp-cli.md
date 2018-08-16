@@ -24,9 +24,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Windows Operations (C++/CLI)
-Demonstrates various Windows-specific tasks using the [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)].  
+Demonstrates various Windows-specific tasks using the Windows SDK.  
   
- The following topics demonstrate various Windows operations performed with the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] using Visual C++.  
+ The following topics demonstrate various Windows operations performed with the Windows SDK using Visual C++.  
 
 ## <a name="determine_shutdown"></a> Determine if Shutdown Has Started
 The following code example demonstrates how to determine whether the application or the .NET Framework is currently terminating. This is useful for accessing static elements in the .NET Framework because, during shutdown, these constructs are finalized by the system and cannot be reliably used. By checking the <xref:System.Environment.HasShutdownStarted%2A> property first, you can avoid potential failures by not accessing these elements.  

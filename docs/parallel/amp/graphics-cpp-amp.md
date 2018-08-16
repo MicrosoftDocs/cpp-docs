@@ -257,7 +257,7 @@ You can also copy from one texture to another by using the [texture::copy_to](re
   
 ## Texture View Classes  
  
-C++ AMP introduces the [texture_view Class](../../parallel/amp/reference/texture-view-class.md) in [!INCLUDE[vs_dev12](../../atl-mfc-shared/includes/vs_dev12_md.md)]. Texture views support the same texel types and ranks as the [texture Class](../../parallel/amp/reference/texture-class.md), but unlike textures, they provide access to additional hardware features such as texture sampling and mipmaps. Texture views support read-only, write-only, and read-write access to the underlying texture data.  
+C++ AMP introduces the [texture_view Class](../../parallel/amp/reference/texture-view-class.md) in Visual Studio 2013. Texture views support the same texel types and ranks as the [texture Class](../../parallel/amp/reference/texture-class.md), but unlike textures, they provide access to additional hardware features such as texture sampling and mipmaps. Texture views support read-only, write-only, and read-write access to the underlying texture data.  
   
 - Read-only access is provided by the `texture_view<const T, N>` template specialization, which supports elements that have 1, 2, or 4 components, texture sampling, and dynamic access to a range of mipmap levels that are determined when the view is instantiated.  
   
@@ -268,7 +268,7 @@ C++ AMP introduces the [texture_view Class](../../parallel/amp/reference/texture
 Texture views are analogous to array views, but do not provide the automatic data management and movement functionality that the [array_view Class](../../parallel/amp/reference/array-view-class.md) provides over the [array class](../../parallel/amp/reference/array-class.md). A `texture_view` can only be accessed on the accelerator view where the underlying texture data resides.  
   
 ### writeonly_texture_view Deprecated  
-For [!INCLUDE[vs_dev12](../../atl-mfc-shared/includes/vs_dev12_md.md)], C++ AMP introduces better support for hardware texture features such as sampling and mipmaps, which could not be supported by the [writeonly_texture_view Class](../../parallel/amp/reference/writeonly-texture-view-class.md). The newly introduced `texture_view` class supports a superset of the functionality in `writeonly_texture_view`; as a result, `writeonly_texture_view` is deprecated.  
+For Visual Studio 2013, C++ AMP introduces better support for hardware texture features such as sampling and mipmaps, which could not be supported by the [writeonly_texture_view Class](../../parallel/amp/reference/writeonly-texture-view-class.md). The newly introduced `texture_view` class supports a superset of the functionality in `writeonly_texture_view`; as a result, `writeonly_texture_view` is deprecated.  
   
 We recommend—at least for new code—that you use `texture_view` to access functionality that was formerly provided by `writeonly_texture_view`. Compare the following two code examples that write to a texture object that has two components (int_2). Notice that in both cases, the view, `wo_tv4`, must be captured by value in the lambda expression. Here is the example that uses the new `texture_view` class:  
   
