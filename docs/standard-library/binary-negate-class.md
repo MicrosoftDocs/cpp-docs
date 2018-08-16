@@ -33,13 +33,13 @@ public:
 
 ### Parameters
 
-`Func`
+*Func*
  The binary function to be negated.
 
-`left`
+*left*
  The left operand of the binary function to be negated.
 
-`right`
+*right*
  The right operand of the binary function to be negated.
 
 ## Return Value

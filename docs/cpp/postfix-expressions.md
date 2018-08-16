@@ -22,13 +22,12 @@ Postfix expressions consist of primary expressions or expressions in which postf
 |[Function call operator](../cpp/function-call-operator-parens.md)|**( )**|  
 |[Explicit type conversion operator](../cpp/explicit-type-conversion-operator-parens.md)|*type-name* **( )**|  
 |[Member access operator](../cpp/member-access-operators-dot-and.md)|**.** or **->**|  
-|[Postfix increment operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|`++`|  
+|[Postfix increment operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**++**|  
 |[Postfix decrement operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**--**|  
   
  The following syntax describes possible postfix expressions:  
   
 ```  
-  
 primary-expression   
 postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )  
 ```  
@@ -39,7 +38,7 @@ postfix-expression[expression]postfix-expression(expression-list)simple-type-nam
 func(1)->GetValue()++  
 ```  
   
- In the above expression, func is a primary expression, func(1) is a function postfix expression, func(1)->GetData is a postfix expression specifying a member of the class, func(1)->GetData() is another function postfix expression, and the entire expression is a postfix expression incrementing the return value of GetData.  The meaning of the expression as a whole is "call func passing 1 as an argument and get a pointer to a class as a return value.  Then call GetValue() on that class, then increment the value returned.  
+ In the above expression, `func` is a primary expression, `func(1)` is a function postfix expression, `func(1)->GetData` is a postfix expression specifying a member of the class, `func(1)->GetData()` is another function postfix expression, and the entire expression is a postfix expression incrementing the return value of GetData.  The meaning of the expression as a whole is "call func passing 1 as an argument and get a pointer to a class as a return value.  Then call `GetValue()` on that class, then increment the value returned.  
   
  The expressions listed above are assignment expressions, meaning that the result of these expressions must be an r-value.  
   
@@ -51,9 +50,9 @@ simple-type-name ( expression-list )
   
  indicates the invocation of the constructor.  If the simple-type-name is a fundamental type, the expression list must be a single expression, and this expression indicates a cast of the expression's value to the fundamental type.  This type of cast expression mimics a constructor.  Because this form allows fundamental types and classes to be constructed using the same syntax, this form is especially useful when defining template classes.  
   
- The *cast-keyword* is one of `dynamic_cast`, `static_cast` or `reinterpret_cast`.  More information may be found in **dynamic_cast**, **static_cast** and **reinterpet_cast**.  
+ The *cast-keyword* is one of **dynamic_cast**, **static_cast** or **reinterpret_cast**.  More information may be found in **dynamic_cast**, **static_cast** and **reinterpet_cast**.  
   
- The `typeid` operator is considered a postfix expression.  See **typeid operator**.  
+ The **typeid** operator is considered a postfix expression.  See **typeid operator**.  
   
 ## Formal and actual arguments  
  Calling programs pass information to called functions in "actual arguments." The called functions access the information using corresponding "formal arguments."  
@@ -79,7 +78,7 @@ simple-type-name ( expression-list )
   
      Note that the initialization is performed as if using the equal-sign syntax instead of the parentheses syntax. A copy of `i` is made prior to passing the value to the function. (For more information, see [Initializers](../cpp/initializers.md) and [Conversions](../cpp/user-defined-type-conversions-cpp.md)).  
   
-     Therefore, if the function prototype (declaration) calls for an argument of type **long**, and if the calling program supplies an actual argument of type `int`, the actual argument is promoted using a standard type conversion to type **long** (see [Standard Conversions](../cpp/standard-conversions.md)).  
+     Therefore, if the function prototype (declaration) calls for an argument of type **long**, and if the calling program supplies an actual argument of type **int**, the actual argument is promoted using a standard type conversion to type **long** (see [Standard Conversions](../cpp/standard-conversions.md)).  
   
      It is an error to supply an actual argument for which there is no standard or user-defined conversion to the type of the formal argument.  
   
@@ -138,7 +137,7 @@ double& func2( double& d, const char *c ) {
   
 -   If the actual argument is of type **float**, it is promoted to type **double** prior to the function call.  
   
--   Any signed or unsigned `char`, **short**, enumerated type, or bit field is converted to either a signed or an unsigned `int` using integral promotion.  
+-   Any signed or unsigned **char**, **short**, enumerated type, or bit field is converted to either a signed or an unsigned **int** using integral promotion.  
   
 -   Any argument of class type is passed by value as a data structure; the copy is created by binary copying instead of by invoking the class's copy constructor (if one exists).  
   
@@ -179,7 +178,7 @@ void print( const char *string, const char *terminator )
 }  
 ```  
   
- The preceding program declares a function, `print`, that takes two arguments. However, the second argument, `terminator`, has a default value, `"\n"`. In **main**, the first two calls to `print` allow the default second argument to supply a new line to terminate the printed string. The third call specifies an explicit value for the second argument. The output from the program is  
+ The preceding program declares a function, `print`, that takes two arguments. However, the second argument, *terminator*, has a default value, `"\n"`. In `main`, the first two calls to `print` allow the default second argument to supply a new line to terminate the printed string. The third call specifies an explicit value for the second argument. The output from the program is  
   
 ```Output 
 hello,  
@@ -187,5 +186,5 @@ world!
 good morning, sunshine.  
 ```  
   
-## See Also  
+## See also  
  [Types of Expressions](../cpp/types-of-expressions.md)

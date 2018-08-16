@@ -30,14 +30,14 @@ unsigned __int64 __rdtsc();
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__rdtsc`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__rdtsc`|x86, x64|  
   
  **Header file** \<intrin.h>  
   
 ## Remarks  
  This routine is available only as an intrinsic.  
   
- The interpretation of the TSC value in this generation of hardware differs from that in earlier versions of [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]. See hardware manuals for more information.  
+ The interpretation of the TSC value in this generation of hardware differs from that in earlier versions of x64. See hardware manuals for more information.  
   
 ## Example  
   

@@ -134,7 +134,7 @@ Unlike in this example, in most cases you should call `LoadLibrary` and `FreeLib
   
 -   [Working with Import Libraries and Export Files](../build/reference/working-with-import-libraries-and-export-files.md)  
   
--   [Dynamic-Link Library Search Order](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx)  
+-   [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)  
   
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

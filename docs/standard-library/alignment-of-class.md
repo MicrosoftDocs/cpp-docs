@@ -25,12 +25,12 @@ struct alignment_of;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-The type query holds the value of the the alignment of the type `Ty`.
+The type query holds the value of the alignment of the type *Ty*.
 
 ## Requirements
 

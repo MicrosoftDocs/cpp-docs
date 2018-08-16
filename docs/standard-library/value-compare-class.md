@@ -38,7 +38,7 @@ protected:
 
 ## Remarks
 
-The comparison criteria provided by value_compare between **value_types** of whole elements contained by a hash_map is induced from a comparison between the keys of the respective elements by the auxiliary class construction. The member function operator uses the object **comp** of type `key_compare` stored in the function object provided by value_compare to compare the sort-key components of two elements.
+The comparison criteria provided by value_compare between `value_types` of whole elements contained by a hash_map is induced from a comparison between the keys of the respective elements by the auxiliary class construction. The member function operator uses the object `comp` of type `key_compare` stored in the function object provided by value_compare to compare the sort-key components of two elements.
 
 For hash_sets and hash_multisets, which are simple containers where the key values are identical to the element values, value_compare is equivalent to `key_compare`; for hash_maps and hash_multimaps they are not, because the value of the type `pair` elements is not identical to the value of the element's key.
 

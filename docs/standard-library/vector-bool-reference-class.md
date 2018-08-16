@@ -32,7 +32,7 @@ bool& refb = vb[1];   // conversion error - do not use
 |Member function|Description|
 |-|-|
 |[flip](../standard-library/vector-bool-reference-flip.md)|Inverts the Boolean value of a vector element.|
-|[operator bool](../standard-library/vector-bool-reference-operator-bool.md)|Provides an implicit conversion from `vector<bool>::reference` to `bool`.|
+|[operator bool](../standard-library/vector-bool-reference-operator-bool.md)|Provides an implicit conversion from `vector<bool>::reference` to **bool**.|
 |[operator=](../standard-library/vector-bool-reference-operator-assign.md)|Assigns a Boolean value to a bit, or the value held by a referenced element to a bit.|
 
 ## Requirements

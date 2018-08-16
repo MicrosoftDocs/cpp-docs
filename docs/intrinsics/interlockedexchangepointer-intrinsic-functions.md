@@ -60,9 +60,9 @@ void * _InterlockedExchangePointer_HLERelease(
   
 |Intrinsic|Architecture|Header|  
 |---------------|------------------|------------|  
-|`_InterlockedExchangePointer`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedExchangePointer`|x86, ARM, x64|\<intrin.h>|  
 |`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM|\<intrin.h>|  
-|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] with HLE support|\<immintrin.h>|  
+|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|x64 with HLE support|\<immintrin.h>|  
   
  On the x86 architecture, `_InterlockedExchangePointer` is a macro that calls `_InterlockedExchange`.  
   

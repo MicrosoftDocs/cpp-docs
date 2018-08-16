@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _InterlockedIncrement Intrinsic Functions
 **Microsoft Specific**  
   
- Provide compiler intrinsic support for the Win32 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedIncrement](http://msdn.microsoft.com/library/ms683614.aspx) function.  
+ Provide compiler intrinsic support for the Win32 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement) function.  
   
 ## Syntax  
   
@@ -69,7 +69,7 @@ __int64 _InterlockedIncrement64_nf(
   
 |Intrinsic|Architecture|Header|  
 |---------------|------------------|------------|  
-|`_InterlockedIncrement`, `_InterlockedIncrement16`, `_InterlockedIncrement64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedIncrement`, `_InterlockedIncrement16`, `_InterlockedIncrement64`|x86, ARM, x64|\<intrin.h>|  
 |`_InterlockedIncrement_acq`, `_InterlockedIncrement_rel`, `_InterlockedIncrement_nf`, `_InterlockedIncrement16_acq`, `_InterlockedIncrement16_rel`, `_InterlockedIncrement16_nf`, `_InterlockedIncrement64_acq`, `_InterlockedIncrement64_rel`, `_InterlockedIncrement64_nf`|ARM|\<intrin.h>|  
   
 ## Remarks  

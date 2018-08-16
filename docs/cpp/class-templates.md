@@ -69,7 +69,6 @@ void X<T>::mf(const U &u)
 int main()  
 {  
 }  
-  
 ```  
   
 ## Nested class templates  
@@ -432,5 +431,5 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Templates](../cpp/templates-cpp.md)

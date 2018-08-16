@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Multiple Base Classes
-As described in [Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), a class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element. For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
+A class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element. For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
   
 ```cpp 
 // deriv_MultipleBaseClasses.cpp  
@@ -66,7 +66,7 @@ class LunchQueue : virtual public Queue {};
 class LunchCashierQueue : public LunchQueue, public CashierQueue {};  
 ```  
   
- The `virtual` keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).  
+ The **virtual** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).  
   
  ![Simulated lunch&#45;line object, virtual base classes](../cpp/media/vc38xp3.gif "vc38XP3")  
 Simulated Lunch-Line Object with Virtual Base Classes  
@@ -84,9 +84,9 @@ Object Layout with Virtual and Nonvirtual Inheritance
 > [!NOTE]
 >  Virtual inheritance provides significant size benefits when compared with nonvirtual inheritance. However, it can introduce extra processing overhead.  
   
- If a derived class overrides a virtual function that it inherits from a virtual base class, and if a constructor or a destructor for the derived base class calls that function using a pointer to the virtual base class, the compiler may introduce additional hidden "vtordisp" fields into the classes with virtual bases. The /vd0 compiler option suppresses the addition of the hidden vtordisp constructor/destructor displacement member. The /vd1 compiler option, the default, enables them where they are necessary. Turn off vtordisps only if you are sure that all class constructors and destructors call virtual functions virtually.  
+ If a derived class overrides a virtual function that it inherits from a virtual base class, and if a constructor or a destructor for the derived base class calls that function using a pointer to the virtual base class, the compiler may introduce additional hidden "vtordisp" fields into the classes with virtual bases. The `/vd0` compiler option suppresses the addition of the hidden vtordisp constructor/destructor displacement member. The `/vd1` compiler option, the default, enables them where they are necessary. Turn off vtordisps only if you are sure that all class constructors and destructors call virtual functions virtually.  
   
- The /vd compiler option affects an entire compilation module. Use the **vtordisp** pragma to suppress and then reenable vtordisp fields on a class-by-class basis:  
+ The `/vd` compiler option affects an entire compilation module. Use the `vtordisp` pragma to suppress and then reenable `vtordisp` fields on a class-by-class basis:  
   
 ```cpp 
 #pragma vtordisp( off )  
@@ -204,5 +204,5 @@ Virtual vs. Nonvirtual Derivation
   
  In the figure, accessing any member of class `A` through nonvirtual base classes causes an ambiguity; the compiler has no information that explains whether to use the subobject associated with `B` or the subobject associated with `C`. However, when `A` is specified as a virtual base class, there is no question which subobject is being accessed.  
   
-## See Also  
+## See also  
  [Inheritance](../cpp/inheritance-cpp.md)

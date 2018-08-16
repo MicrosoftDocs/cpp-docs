@@ -72,7 +72,7 @@ The following attributes are available in Visual C++.
 |[lcid](../windows/lcid.md)|Lets you pass a locale identifier to a function.|  
 |[length_is](../windows/length-is.md)|Specifies the number of array elements to be transmitted.|  
 |[library_block](../windows/library-block.md)|Places a construct inside the .idl file's library block.|  
-|[licensed](../windows/licensed.md)|Indicates that the coclass to which it applies is licensed, and must be instantiated using **IClassFactory2**.|  
+|[licensed](../windows/licensed.md)|Indicates that the coclass to which it applies is licensed, and must be instantiated using `IClassFactory2`.|  
 |[local](../windows/local-cpp.md)|Allows you to use the MIDL compiler as a header generator when used in the interface header. When used in an individual function, designates a local procedure for which no stubs are generated.|  
 |[max_is](../windows/max-is.md)|Designates the maximum value for a valid array index.|  
 |[module](../windows/module-cpp.md)|Defines the library block in the .idl file.|  
@@ -99,14 +99,14 @@ The following attributes are available in Visual C++.
 |[readonly](../windows/readonly-cpp.md)|Prohibits assignment to a variable.|  
 |[ref](../windows/ref-cpp.md)|Identifies a reference pointer.|  
 |[registration_script](../windows/registration-script.md)|Executes the specified registration script.|  
-|[requestedit](../windows/requestedit.md)|Indicates that the property supports the **OnRequestEdit** notification.|  
+|[requestedit](../windows/requestedit.md)|Indicates that the property supports the `OnRequestEdit` notification.|  
 |[requires_category](../windows/requires-category.md)|Specifies required component categories for the class.|  
 |[restricted](../windows/restricted.md)|Specifies that a library, or member of a module, interface, or dispinterface cannot be called arbitrarily.|  
 |[retval](../windows/retval.md)|Designates the parameter that receives the return value of the member.|  
-|[satype](../windows/satype.md)|Specifies the data type of the **SAFEARRAY**.|  
+|[satype](../windows/satype.md)|Specifies the data type of the `SAFEARRAY`.|  
 |[size_is](../windows/size-is.md)|Specifies the size of memory allocated for sized pointers, sized pointers to sized pointers, and single- or multidimensional arrays.|  
 |[source](../windows/source-cpp.md)|Indicates that a member of a class, property, or method is a source of events.|  
-|[string](../windows/string-cpp.md)|Indicates that the one-dimensional `char`, `wchar_t`, **byte**, or equivalent array or the pointer to such an array must be treated as a string.|  
+|[string](../windows/string-cpp.md)|Indicates that the one-dimensional **char**, **wchar_t**, `byte`, or equivalent array or the pointer to such an array must be treated as a string.|  
 |[support_error_info](../windows/support-error-info.md)|Supports error reporting for the target object.|  
 |[switch_is](../windows/switch-is.md)|Specifies the expression or identifier acting as the union discriminant that selects the union member.|  
 |[switch_type](../windows/switch-type.md)|Identifies the type of the variable used as the union discriminant.|  

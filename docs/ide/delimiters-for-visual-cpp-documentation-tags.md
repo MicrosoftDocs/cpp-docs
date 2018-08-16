@@ -41,7 +41,7 @@ The use of documentation tags requires delimiters, which indicate to the compile
     /** <summary>text</summary> */  
     ```  
   
--   The compiler applies a pattern of " * " to ignore at the beginning of the second and third lines.  
+-   The compiler applies a pattern of " \* " to ignore at the beginning of the second and third lines.  
   
     ```  
     /**  

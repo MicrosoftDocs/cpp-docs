@@ -38,7 +38,7 @@ END_PARAM_MAP()
   
  For example, consider a stored procedure with a rowset and an outparameter:  
   
-```  
+```sql  
 create procedure sp_test  
    @_rowcount integer output  
 as  
@@ -47,7 +47,7 @@ as
 return 0  
 ```  
   
- The @_rowcount outparameter reports how many rows were actually returned from the test table. However, this stored procedure limits the number of rows to a maximum of 50. For example, if there were 100 rows in test, the rowcount would be 50 (because this code retrieves only the top 50 rows). If there were only 30 rows in the table, the rowcount would be 30. You must call **Close** or **CloseAll** to populate the outparameter before you fetch its value.  
+ The @_rowcount outparameter reports how many rows were actually returned from the test table. However, this stored procedure limits the number of rows to a maximum of 50. For example, if there were 100 rows in test, the rowcount would be 50 (because this code retrieves only the top 50 rows). If there were only 30 rows in the table, the rowcount would be 30. You must call `Close` or `CloseAll` to populate the outparameter before you fetch its value.  
   
 ## See Also  
  [Using Stored Procedures](../../data/oledb/using-stored-procedures.md)

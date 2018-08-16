@@ -27,7 +27,7 @@ void __nop();
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__nop`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__nop`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

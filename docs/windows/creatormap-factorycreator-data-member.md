@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT (*factoryCreator)(  
    unsigned int* currentflags,  
    const CreatorMap* entry,  
@@ -25,17 +25,17 @@ HRESULT (*factoryCreator)(
  IUnknown** factory);  
 ```  
   
-## Parameters  
- `currentflags`  
+### Parameters  
+ *currentflags*  
  One of the [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.  
   
- `entry`  
+ *entry*  
  A CreatorMap.  
   
- `iidClassFactory`  
+ *iidClassFactory*  
  The interface ID of a class factory.  
   
- `factory`  
+ *factory*  
  When the operation completes, the address of a class factory.  
   
 ## Return Value  

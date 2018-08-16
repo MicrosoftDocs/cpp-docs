@@ -23,11 +23,12 @@ The SQL Native Client component (SNAC), which packages OLE DB and ODBC drivers i
 
 If you use C++/CLI, you can continue to use ADO.NET as always. For more information, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), and [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).  
   
--   In addition to the ODBC wrapper classes, MFC also provides Data Acess Objects (DAO) wrapper classes for connecting to Access databases.  However, DAO is obsolete. Any code based on CDaoDatabase or CDaoRecordset should be upgraded. 
+- In addition to the ODBC wrapper classes, MFC also provides Data Acess Objects (DAO) wrapper classes for connecting to Access databases.  However, DAO is obsolete. Any code based on `CDaoDatabase` or `CDaoRecordset` should be upgraded. 
 
 For more information about the history of data access technologies on Microsoft Windows, see [Microsoft Data Access Components (Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Data_Access_Components).  
 
 ## See Also  
- [Data Access in Visual C++](../data/data-access-in-cpp.md)  
- [Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)  
- [Data Access Technologies Road Map](https://msdn.microsoft.com/en-us/library/ms810810.aspx)  
+ 
+[Data Access in Visual C++](../data/data-access-in-cpp.md)  
+[Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)  
+[Data Access Technologies Road Map](https://msdn.microsoft.com/library/ms810810.aspx)  

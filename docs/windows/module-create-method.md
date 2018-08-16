@@ -17,7 +17,7 @@ Creates an instance of a module.
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW static Module& Create();  
 template<typename T>  
 WRL_NOTHROW static Module& Create(  
@@ -30,18 +30,18 @@ WRL_NOTHROW static Module& Create(
 );  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  Module type.  
   
- `callback`  
+ *callback*  
  Called when the last instance object of the module is released.  
   
- `object`  
- The `object` and `method` parameters are used in combination. Points to the last instance object when the last instance object in the module is released.  
+ *object*  
+ The *object* and *method* parameters are used in combination. Points to the last instance object when the last instance object in the module is released.  
   
- `method`  
- The `object` and `method` parameters are used in combination. Points to the method of the last instance object when the last instance object in the module is released.  
+ *method*  
+ The *object* and *method* parameters are used in combination. Points to the method of the last instance object when the last instance object in the module is released.  
   
 ## Return Value  
  Reference to the module.  
@@ -53,5 +53,3 @@ WRL_NOTHROW static Module& Create(
   
 ## See Also  
 [Module Class](../windows/module-class.md)
-
- 

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMDIChildWndEx Class
 The `CMDIChildWndEx` class provides the functionality of a Windows multiple document interface (MDI) child window. It extends the functionality of [CMDIChildWnd Class](../../mfc/reference/cmdichildwnd-class.md). The framework requires this class when an MDI application uses certain MFC classes.  
  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
 
   
 ## Syntax  
@@ -658,7 +658,7 @@ void SetTaskbarTabProperties(DWORD dwFlags);
   
 ### Parameters  
  *dwFlags*  
- A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTabProperties](http://msdn.microsoft.com/library/dd562049\(vs.85\).aspx).  
+ A combination of STPFLAG values. For more information, see [ITaskbarList4::SetTabProperties](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-itaskbarlist4-settabproperties).  
   
 ### Remarks  
   

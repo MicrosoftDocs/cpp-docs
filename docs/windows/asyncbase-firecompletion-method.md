@@ -17,7 +17,7 @@ Invokes the completion event handler, or resets the internal progress delegate.
   
 ## Syntax  
   
-```  
+```cpp  
 void FireCompletion(  
    void  
 ) override;  
@@ -26,7 +26,7 @@ virtual void FireCompletion();
 ```  
   
 ## Remarks  
- The first version of FireCompletion() resets the internal progress delegate variable. The second version invokes the completion event handler if the asynchronous operation is complete.  
+ The first version of **FireCompletion()** resets the internal progress delegate variable. The second version invokes the completion event handler if the asynchronous operation is complete.  
   
 ## Requirements  
  **Header:** async.h  

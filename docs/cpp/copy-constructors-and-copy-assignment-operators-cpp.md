@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Copy Constructors and Copy Assignment Operators (C++)
 > [!NOTE]
->  Starting in C++11, two kinds of assignment are supported in the language: *copy assignment* and *move assignment*. In this article "assignment" means copy assignment unless explicitly stated otherwise. For information about move assignment, see [Move Constructors and Move Assignment Operators (C++)](http://msdn.microsoft.com/en-us/1442de5f-37a5-42a1-83a6-ec9cfe0414db).  
+>  Starting in C++11, two kinds of assignment are supported in the language: *copy assignment* and *move assignment*. In this article "assignment" means copy assignment unless explicitly stated otherwise. For information about move assignment, see [Move Constructors and Move Assignment Operators (C++)](http://msdn.microsoft.com/1442de5f-37a5-42a1-83a6-ec9cfe0414db).  
 >   
 >  Both the assignment operation and the initialization operation cause objects to be copied.  
   
@@ -78,4 +78,3 @@ int main()
  The implications are similar to those of the copy constructor. When the argument type is not **const**, assignment from a **const** object generates an error. The reverse is not true: If a **const** value is assigned to a value that is not **const**, the assignment succeeds.  
   
  For more information about overloaded assignment operators, see [Assignment](../cpp/assignment.md).  
-  

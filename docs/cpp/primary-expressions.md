@@ -15,7 +15,6 @@ ms.workload: ["cplusplus"]
 Primary expressions are the building blocks of more complex expressions. They are literals, names, and names qualified by the scope-resolution operator (`::`).  A primary expression may have any of the following forms:  
   
 ```  
-  
 literal  
 this
 name  
@@ -46,8 +45,6 @@ public:
   
  An expression enclosed in parentheses is a primary expression whose type and value are identical to those of the unparenthesized expression. It is an l-value if the unparenthesized expression is an l-value.  
   
- In the context of the primary expression syntax given above, *name* means anything in the syntax described for [Names](http://msdn.microsoft.com/en-us/1c49cc24-08d5-4884-b170-ba8ed42d80db), although when using the scope-resolution operator before the name, types of names that can only occur in a class are not allowed.  This includes user-defined conversion function names, and destructor names.  
-  
  Examples of primary expressions include:  
   
 ```cpp 
@@ -72,5 +69,5 @@ A::B   // a qualified name
 A<int> // a template id  
 ```  
   
-## See Also  
+## See also  
  [Types of Expressions](../cpp/types-of-expressions.md)

@@ -17,14 +17,14 @@ Indicates whether the current asynchronous operation has completed.
   
 ## Syntax  
   
-```  
+```cpp  
 bool TryTransitionToCompleted(  
    void  
 );  
 ```  
   
 ## Return Value  
- `true` if the asynchronous operation has completed; otherwise, `false`.  
+ **true** if the asynchronous operation has completed; otherwise, **false**.  
   
 ## Requirements  
  **Header:** async.h  

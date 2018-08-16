@@ -13,14 +13,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # licensed
-Indicates that the COM object to which it applies is licensed, and must be instantiated using **IClassFactory2**.  
+Indicates that the COM object to which it applies is licensed, and must be instantiated using `IClassFactory2`.  
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [licensed]  
-  
 ```  
   
 ## Remarks  
@@ -28,7 +26,7 @@ Indicates that the COM object to which it applies is licensed, and must be insta
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_licensed.cpp  
 // compile with: /LD  
 #include "unknwn.h"  
@@ -53,13 +51,13 @@ public:
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`|  
+|**Applies to**|**class**, **struct**|  
 |**Repeatable**|No|  
-|**Required attributes**|**coclass**|  
+|**Required attributes**|`coclass`|  
 |**Invalid attributes**|None|  
   
  For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
+ [Class Attributes](../windows/class-attributes.md)   

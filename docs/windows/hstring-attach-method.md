@@ -12,20 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::Attach Method
-Associates the specified HString object with the current HString object.  
+Associates the specified **HString** object with the current **HString** object.  
   
 ## Syntax  
   
-```  
-  
+```cpp  
 void Attach(  
        HSTRING hstr  
        ) throw()  
 ```  
   
-#### Parameters  
- `hstr`  
- An existing HString object.  
+### Parameters  
+ *hstr*  
+ An existing **HString** object.  
   
 ## Requirements  
  **Header:** corewrappers.h  

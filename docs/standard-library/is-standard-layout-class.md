@@ -27,11 +27,11 @@ struct is_standard_layout;
 
 |Parameter|Description|
 |---------------|-----------------|
-|`Ty`|The type to query|
+|*Ty*|The type to query|
 
 ## Remarks
 
-An instance of this type predicate holds true if the type `Ty` is a class that has a standard layout of member objects in memory, otherwise it holds false.
+An instance of this type predicate holds true if the type *Ty* is a class that has a standard layout of member objects in memory, otherwise it holds false.
 
 ## Requirements
 

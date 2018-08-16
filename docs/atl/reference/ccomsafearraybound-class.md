@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComSafeArrayBound Class
-This class is a wrapper for a [SAFEARRAYBOUND](http://msdn.microsoft.com/en-us/303a9bdb-71d6-4f14-8747-84cf84936c6d) structure.  
+This class is a wrapper for a [SAFEARRAYBOUND](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) structure.  
   
 ## Syntax  
   

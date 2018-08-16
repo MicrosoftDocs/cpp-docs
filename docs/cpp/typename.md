@@ -18,7 +18,6 @@ In template definitions, provides a hint to the compiler that an unknown identif
 ## Syntax  
   
 ```  
-  
 typename identifier;  
 ```  
   
@@ -57,6 +56,6 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Templates](../cpp/templates-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

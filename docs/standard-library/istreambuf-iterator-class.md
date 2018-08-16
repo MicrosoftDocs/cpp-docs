@@ -26,17 +26,17 @@ class istreambuf_iterator
 
 ### Parameters
 
-`CharType`
+*CharType*
  The type that represents the character type for the istreambuf_iterator.
 
-`Traits`
+*Traits*
  The type that represents the character type for the istreambuf_iterator. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 ## Remarks
 
 The istreambuf_iterator class must satisfy the requirements for an input iterator.
 
-After constructing or incrementing an object of class istreambuf_iterator with a non-null stored pointer, the object effectively attempts to extract and store an object of type **CharType** from the associated input stream. The extraction may be delayed, however, until the object is actually dereferenced or copied. If the extraction fails, the object effectively replaces the stored pointer with a null pointer, thus making an end-of-sequence indicator.
+After constructing or incrementing an object of class istreambuf_iterator with a non-null stored pointer, the object effectively attempts to extract and store an object of type *CharType* from the associated input stream. The extraction may be delayed, however, until the object is actually dereferenced or copied. If the extraction fails, the object effectively replaces the stored pointer with a null pointer, thus making an end-of-sequence indicator.
 
 ### Constructors
 
@@ -84,7 +84,7 @@ typedef CharType char_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **CharType**.
+The type is a synonym for the template parameter *CharType*.
 
 ### Example
 
@@ -129,7 +129,7 @@ bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 
 ### Parameters
 
-`right`
+*right*
  The iterator for which to check for equality.
 
 ### Return Value
@@ -138,7 +138,7 @@ bool equal(const istreambuf_iterator<CharType, Traits>& right) const;
 
 ### Remarks
 
-A range is defined by the `istreambuf_iterator` to the current position and the end-of-stream iterator, but since all non-end-of stream iterators are equivalent under the **equal** member function, it is not possible to define any subranges using `istreambuf_iterator`s. The `==` and `!=` operators have the same semantics.
+A range is defined by the `istreambuf_iterator` to the current position and the end-of-stream iterator, but since all non-end-of stream iterators are equivalent under the `equal` member function, it is not possible to define any subranges using `istreambuf_iterator`s. The `==` and `!=` operators have the same semantics.
 
 ### Example
 
@@ -178,7 +178,7 @@ typedef typename traits_type::int_type int_type;
 
 ### Remarks
 
-The type is a synonym for **Traits::int_type**.
+The type is a synonym for `Traits::int_type`.
 
 ### Example
 
@@ -226,15 +226,15 @@ istreambuf_iterator(istream_type& _Istr) throw();
 
 ### Parameters
 
-`strbuf`
+*strbuf*
  The input stream buffer to which the `istreambuf_iterator` is being attached.
 
-`_Istr`
+*_Istr*
  The input stream to which the `istreambuf_iterator` is being attached.
 
 ### Remarks
 
-The first constructor initializes the input stream-buffer pointer with `strbuf`. The second constructor initializes the input stream-buffer pointer with `_Istr`. `rdbuf`, and then eventually attempts to extract and store an object of type **CharType**.
+The first constructor initializes the input stream-buffer pointer with *strbuf*. The second constructor initializes the input stream-buffer pointer with *_Istr*. `rdbuf`, and then eventually attempts to extract and store an object of type `CharType`.
 
 ### Example
 
@@ -323,7 +323,7 @@ An `istreambuf_iterator` or a reference to an `istreambuf_iterator`.
 
 ### Remarks
 
-The first operator eventually attempts to extract and store an object of type **CharType** from the associated input stream. The second operator makes a copy of the object, increments the object, and then returns the copy.
+The first operator eventually attempts to extract and store an object of type `CharType` from the associated input stream. The second operator makes a copy of the object, increments the object, and then returns the copy.
 
 ### Example
 
@@ -379,7 +379,7 @@ The type is a synonym for `basic_streambuf`\< **CharType**, **Traits**>.
 
 ### Example
 
-See [istreambuf_iterator](#istreambuf_iterator) for an example of how to declare and use **istreambuf_type**.
+See [istreambuf_iterator](#istreambuf_iterator) for an example of how to declare and use `istreambuf_type`.
 
 ## <a name="traits_type"></a>  istreambuf_iterator::traits_type
 
@@ -391,7 +391,7 @@ typedef Traits traits_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Traits**.
+The type is a synonym for the template parameter *Traits*.
 
 ### Example
 

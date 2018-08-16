@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # greater Struct
 
-A binary predicate that performs the greater-than operation ( `operator>`) on its arguments.
+A binary predicate that performs the greater-than operation (`operator>`) on its arguments.
 
 ## Syntax
 
@@ -40,14 +40,14 @@ struct greater<void>
 
 ### Parameters
 
-`Type`, `T`, `U`
+*Type*, *T*, *U*
  Any type that supports an `operator>` that takes operands of the specified or inferred types.
 
-`Left`
- The left operand of the greater-than operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `T`.
+*Left*
+ The left operand of the greater-than operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-`Right`
- The right operand of the greater-than operation. The unspecialized template takes an lvalue reference argument of type `Type`. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type `U`.
+*Right*
+ The right operand of the greater-than operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ## Return Value
 
@@ -55,7 +55,7 @@ The result of `Left > Right`. The specialized template does perfect forwarding o
 
 ## Remarks
 
-The binary predicate `greater`< `Type`> provides a strict weak ordering of a set of element values of type `Type` into equivalence classes, if and only if this type satisfies the standard mathematical requirements for being so ordered. The specializations for any pointer type yield a total ordering of elements, in that all elements of distinct values are ordered with respect to each other.
+The binary predicate `greater`< `Type`> provides a strict weak ordering of a set of element values of type *Type* into equivalence classes, if and only if this type satisfies the standard mathematical requirements for being so ordered. The specializations for any pointer type yield a total ordering of elements, in that all elements of distinct values are ordered with respect to each other.
 
 ## Example
 

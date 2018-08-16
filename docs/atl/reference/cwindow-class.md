@@ -818,7 +818,7 @@ DWORD GetHotKey() const throw();
 ```  
   
 ### Return Value  
- The virtual key code and modifiers for the hot key associated with the window. For a list of possible modifiers, see [WM_GETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646278) in the Windows SDK. For a list of of standard virtual key codes, see Winuser.h.  
+ The virtual key code and modifiers for the hot key associated with the window. For a list of possible modifiers, see [WM_GETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646278) in the Windows SDK. For a list of standard virtual key codes, see Winuser.h.  
   
 ##  <a name="geticon"></a>  CWindow::GetIcon  
  Retrieves the handle to the window's large or small icon.  
@@ -1933,7 +1933,7 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
   
 ### Parameters  
  *wVirtualKeyCode*  
- [in] The virtual key code of the hot key. For a list of of standard virtual key codes, see Winuser.h.  
+ [in] The virtual key code of the hot key. For a list of standard virtual key codes, see Winuser.h.  
   
  *wModifiers*  
  [in] The modifiers of the hot key. For a list of possible values, see WM_SETHOTKEY in the Windows SDK.  

@@ -166,7 +166,7 @@ All containers overload the operator== for comparing two containers of the same 
 
 ### Comparing dissimilar containers (C++14)
 
-In C++14 and later, you can compare dissimilar containers and/or dissimilar elements types by using one of the **std::equal**, **std::mismatch**, or **std::is_permutation** function overloads that take two complete ranges. These overloads enable you to compare containers with different lengths. These overloads are much less susceptible to user error, and are optimized to return false in constant time when containers of dissimilar lengths are compared. Therefore, we recommend you use these overloads unless (1) you have a very clear reason not to, or (2) you are using a [std::list](../standard-library/list-class.md) container, which does not benefit from the dual-range optimizations.
+In C++14 and later, you can compare dissimilar containers and/or dissimilar elements types by using one of the `std::equal`, `std::mismatch`, or `std::is_permutation` function overloads that take two complete ranges. These overloads enable you to compare containers with different lengths. These overloads are much less susceptible to user error, and are optimized to return false in constant time when containers of dissimilar lengths are compared. Therefore, we recommend you use these overloads unless (1) you have a very clear reason not to, or (2) you are using a [std::list](../standard-library/list-class.md) container, which does not benefit from the dual-range optimizations.
 
 ## See also
 

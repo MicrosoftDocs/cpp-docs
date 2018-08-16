@@ -17,9 +17,8 @@ Associates the specified member variable with an input or output parameter and d
   
 ## Syntax  
   
-```  
-  
-      [ db_param(   
+```cpp  
+[ db_param(   
    ordinal,   
    paramtype="DBPARAMIO_INPUT",   
    dbtype,   
@@ -30,36 +29,36 @@ Associates the specified member variable with an input or output parameter and d
 ) ]  
 ```  
   
-#### Parameters  
- `ordinal`  
- The column number (**DBCOLUMNINFO** ordinal) corresponding to a field in the rowset to which to bind data.  
+### Parameters  
+ *ordinal*  
+ The column number (DBCOLUMNINFO ordinal) corresponding to a field in the rowset to which to bind data.  
   
  *paramtype* (optional)  
- The type to set for the parameter. Providers support only parameter I/O types that are supported by the underlying data source. The type is a combination of one or more **DBPARAMIOENUM** values:  
+ The type to set for the parameter. Providers support only parameter I/O types that are supported by the underlying data source. The type is a combination of one or more DBPARAMIOENUM values:  
   
--   **DBPARAMIO_INPUT** An input parameter.  
+-   DBPARAMIO_INPUT An input parameter.  
   
--   **DBPARAMIO_OUTPUT** An output parameter.  
+-   DBPARAMIO_OUTPUT An output parameter.  
   
--   **DBPARAMIO_NOTPARAM** The accessor has no parameters. Setting **eParamIO** to this value in row accessors reminds the user that parameters are ignored.  
+-   DBPARAMIO_NOTPARAM The accessor has no parameters. Setting `eParamIO` to this value in row accessors reminds the user that parameters are ignored.  
   
  *dbtype* (optional)  
- An OLE DB [Type Indicator](https://msdn.microsoft.com/en-us/library/ms711251.aspx) for the column entry.  
+ An OLE DB [Type Indicator](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) for the column entry.  
   
  *precision* (optional)  
- The precision to be used for the column entry. For details, see the description of **bPrecision** element of the [DBBINDING structure](https://msdn.microsoft.com/en-us/library/ms716845.aspx)  
+ The precision to be used for the column entry. For details, see the description of `bPrecision` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))  
   
  *scale* (optional)  
- The scale to be used for the column entry. For details, see the description of **bScale** element of the [DBBINDING structure](https://msdn.microsoft.com/en-us/library/ms716845.aspx)  
+ The scale to be used for the column entry. For details, see the description of `bScale` element of the [DBBINDING structure](/previous-versions/windows/desktop/ms716845\(v=vs.85\))  
   
  *status* (optional)  
- A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as **NULL**. For possible values, see [Status](https://msdn.microsoft.com/en-us/library/ms722617.aspx) in the *OLE DB Programmer's Reference*.  
+ A member variable used to hold the status of this column. The status indicates whether the column value is a data value or some other value, such as NULL. For possible values, see [Status](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
  *length* (optional)  
  A member variable used to hold the size of the column in bytes.  
   
 ## Remarks  
- **db_param** defines parameters that you use in commands; therefore you use it with **db_command**. For example, you can use **db_param** to bind parameters in SQL queries or stored procedures. Parameters in a stored procedure are denoted by question marks (?), and you should bind the data members in the order in which the parameters appear.  
+ **db_param** defines parameters that you use in commands; therefore you use it with `db_command`. For example, you can use **db_param** to bind parameters in SQL queries or stored procedures. Parameters in a stored procedure are denoted by question marks (?), and you should bind the data members in the order in which the parameters appear.  
   
  **db_param** delimits member data that can participate in OLE DB `ICommandWithParameters`-based binding. It sets the parameter type (input or output), OLE DB type, precision, scale, status, and length for the specified parameter. This attribute inserts the OLE DB consumer macros BEGIN_PARAM_MAP ... END_PARAM_MAP. Each member you mark with the **db_param** attribute will occupy one entry in the map in the form of a COLUMN_ENTRY.  
   
@@ -72,7 +71,7 @@ Associates the specified member variable with an input or output parameter and d
   
  The following example associates the `nOutput` variable with an output parameter.  
   
-```  
+```cpp  
 // db_param.cpp  
 // compile with: /LD  
 #include <atlbase.h>  
@@ -112,7 +111,7 @@ struct CSalesbyYear {
   
 |||  
 |-|-|  
-|**Applies to**|**class**, `struct`, member, method, local|  
+|**Applies to**|**class**, **struct**, member, method, local|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  

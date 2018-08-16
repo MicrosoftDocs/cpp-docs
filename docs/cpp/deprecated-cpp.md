@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # deprecated (C++)
 This topic is about the Microsoft-specific deprecated declspec declaration. For information about the C++14 `[[deprecated]]` attribute, and guidance on when to use that attribute vs. the Microsoft-specific declspec or pragma, see [C++ Standard Attributes](attributes.md).
 
- With the exceptions noted below, the **deprecated** declaration offers the same functionality as the [deprecated](../preprocessor/deprecated-c-cpp.md) pragma:  
+With the exceptions noted below, the **deprecated** declaration offers the same functionality as the [deprecated](../preprocessor/deprecated-c-cpp.md) pragma:  
   
 -   The **deprecated** declaration lets you specify particular forms of function overloads as deprecated, whereas the pragma form applies to all overloaded forms of a function name.  
   
@@ -65,6 +65,6 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)

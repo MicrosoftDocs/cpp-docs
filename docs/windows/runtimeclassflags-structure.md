@@ -17,15 +17,15 @@ Contains the type for an instance of a [RuntimeClass](../windows/runtimeclass-cl
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    unsigned int flags  
 >  
 struct RuntimeClassFlags;  
 ```  
   
-#### Parameters  
- `flags`  
+### Parameters  
+ *flags*  
  A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.  
   
 ## Members  

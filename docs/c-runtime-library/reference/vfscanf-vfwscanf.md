@@ -54,7 +54,7 @@ These functions validate their parameters. If *stream* or *format* is a null poi
 
 The **vfscanf** function reads data from the current position of *stream* into the locations that are given by the *arglist* argument list. Each argument in the list must be a pointer to a variable of a type that corresponds to a type specifier in *format*. *format* controls the interpretation of the input fields and has the same form and function as the *format* argument for **scanf**; see [scanf](scanf-scanf-l-wscanf-wscanf-l.md) for a description of *format*.
 
-**vfwscanf** is a wide-character version of **vfscanf**; the format argument to **vfwscanf** is a wide-character string. These functions behave identically identically if the stream is opened in ANSI mode. **vfscanf** doesn't support input from a UNICODE stream.
+**vfwscanf** is a wide-character version of **vfscanf**; the format argument to **vfwscanf** is a wide-character string. These functions behave identically if the stream is opened in ANSI mode. **vfscanf** doesn't support input from a UNICODE stream.
 
 ### Generic-Text Routine Mappings
 

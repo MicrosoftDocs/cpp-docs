@@ -13,13 +13,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Resource Editors
-A Resource editor is a specialized environment for creating or modifying resources that are included in a Visual Studio project. The Visual Studio resource editors share techniques and interfaces to help you create and modify application resources quickly and easily. Resource editors enable you to [view and edit resources in the appropriate editor](../windows/viewing-and-editing-resources-in-a-resource-editor.md) and [preview resources](../windows/previewing-resources.md).  
+A **Resource** editor is a specialized environment for creating or modifying resources that are included in a Visual Studio project. The Visual Studio resource editors share techniques and interfaces to help you create and modify application resources quickly and easily. Resource editors enable you to [view and edit resources in the appropriate editor](../windows/viewing-and-editing-resources-in-a-resource-editor.md) and [preview resources](../windows/previewing-resources.md).  
   
  The appropriate editor opens automatically when you create or open a resource.  
   
  **Note** Because managed projects do not use resource script files, you must open your resources from **Solution Explorer**. You can use the [Image editor](../windows/image-editor-for-icons.md) and the [Binary editor](binary-editor.md) to work with resource files in managed projects. Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 |Use the...|To edit...|  
 |----------------|----------------|  
@@ -41,4 +41,3 @@ A Resource editor is a specialized environment for creating or modifying resourc
  [Resource Files](../windows/resource-files-visual-studio.md)   
  [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)   
  [Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
-

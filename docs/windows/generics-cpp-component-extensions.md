@@ -16,7 +16,7 @@ ms.workload: ["cplusplus", "uwp"]
 Generics are parameterized types and methods. In this section, find out which generic features are supported by both the Windows Runtime and the common language runtime, and which are supported by only the common language runtime. Also, find out how to author your own generic methods and types in Visual C++, and how to use generic types authored in a .NET Framework language in Visual C++. Finally, this section provides a comparison of generics and C++ templates.  
   
 ## In This Section  
- **Supported by the Windows Runtime and the Common Language Runtime**  
+### Supported by the Windows Runtime and the Common Language Runtime 
   
  [Overview of Generics in Visual C++](../windows/overview-of-generics-in-visual-cpp.md)  
  Information about generics are, the motivation for the language feature, definitions of terms used to describe generics, and information about the use of reference types and value types as type parameters for generics.  
@@ -36,7 +36,7 @@ Generics are parameterized types and methods. In this section, find out which ge
  [Generics and Templates (Visual C++)](../windows/generics-and-templates-visual-cpp.md)  
  A comparison of generics and templates, when to use each, and how to combine them usefully.  
   
- **Supported by the Common Language Runtime**  
+### Supported by the Common Language Runtime
   
  [Generic Functions (C++/CLI)](../windows/generic-functions-cpp-cli.md)  
  Information about defining and using generic functions and methods.  

@@ -17,18 +17,18 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 explicit InvokeHelper(  
    TCallback callback  
 );  
 ```  
   
-#### Parameters  
- `callback`  
+### Parameters  
+ *callback*  
  An event handler.  
   
 ## Remarks  
- Initializes a new instance of the InvokeHelper class.  
+ Initializes a new instance of the **InvokeHelper** class.  
   
  The `TCallback` template parameter specifies the type of the event handler.  
   

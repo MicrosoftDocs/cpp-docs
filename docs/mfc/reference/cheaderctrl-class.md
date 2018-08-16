@@ -310,7 +310,7 @@ BOOL EditFilter(
  Specify TRUE to discard the changes made by the user, or FALSE to accept the changes made by the user.  
   
 ### Return Value  
- `true` if this method is successful; otherwise, FALSE.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method implements the behavior of the Win32 message [HDM_EDITFILTER](http://msdn.microsoft.com/library/windows/desktop/bb775312), as described in the Windows SDK.  

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Linker Tools Error LNK1168
 cannot open filename for writing  
   
- The linker can’t write to `filename`. The file may be in use and its file handle locked by another process, or you may not have write permission for the file, or for the directory or network share it is located in. This error is often caused by a transient condition—for example, a lock held by an anti-virus program, a file search indexing process, or a delay in releasing a lock held by the [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] build system.  
+ The linker can’t write to `filename`. The file may be in use and its file handle locked by another process, or you may not have write permission for the file, or for the directory or network share it is located in. This error is often caused by a transient condition—for example, a lock held by an anti-virus program, a file search indexing process, or a delay in releasing a lock held by the Visual Studio build system.  
   
  To fix this issue, verify that the `filename` file handle is not locked, and that you have write permission for the file. If it is an executable, verify that it is not already running.  
   

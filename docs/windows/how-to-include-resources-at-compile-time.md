@@ -19,7 +19,7 @@ Normally it is easy and convenient to work with the default arrangement of all r
   
 -   To add comments to resource statements that will not get deleted when you save the .rc file.  
   
-     The resource editors do not directly read .rc or resource.h files. The resource compiler compiles them into .aps files, which are consumed by the resource editors. This file is a compile step and only stores symbolic data. As with a normal compile process, information that is not symbolic (for example, comments) is discarded during the compile process. Whenever the .aps file gets out of synch with the .rc file, the .rc file is regenerated (for example, when you Save, the resource editor overwrites the .rc file and the resource.h file). Any changes to the resources themselves will remain incorporated in the .rc file, but comments will always be lost once the .rc file is overwritten.  
+     The resource editors do not directly read .rc or `resource.h` files. The resource compiler compiles them into .aps files, which are consumed by the resource editors. This file is a compile step and only stores symbolic data. As with a normal compile process, information that is not symbolic (for example, comments) is discarded during the compile process. Whenever the .aps file gets out of synch with the .rc file, the .rc file is regenerated (for example, when you Save, the resource editor overwrites the .rc file and the `resource.h` file). Any changes to the resources themselves will remain incorporated in the .rc file, but comments will always be lost once the .rc file is overwritten.  
   
 -   To include resources that have already been developed and tested and do not need further modification. (Any files that are included but don't have an .rc extension will not be editable by the resource editors.)  
   
@@ -39,10 +39,7 @@ Normally it is easy and convenient to work with the default arrangement of all r
   
      The resources in files included in this way are made a part of your executable file at compile time. They are not directly available for editing or modification when you are working on your project's main .rc file. You need to open included .rc files separately. Any files that are included but don't have an .rc extension will not be editable by the resource editors.  
   
-
-  
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  

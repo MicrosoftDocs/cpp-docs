@@ -21,7 +21,7 @@ ms.workload: ["cplusplus", "data-storage"]
   
 -   **OLE DB Provider Templates** Used to implement an OLE DB server (provider) application.  
   
- To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you are not familiar with OLE DB, see [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx).  
+ To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you are not familiar with OLE DB, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\)).  
   
  For more information, you can:  
   
@@ -31,9 +31,9 @@ ms.workload: ["cplusplus", "data-storage"]
   
 -   See the list of [OLE DB consumer classes](../../data/oledb/ole-db-consumer-templates-reference.md) or [OLE DB provider classes](../../data/oledb/ole-db-provider-templates-reference.md).  
   
--   See the list of [OLE DB templates samples](http://msdn.microsoft.com/en-us/08958863-0b5f-41ad-ae99-fca7440c553c).  
+-   See the list of [OLE DB templates samples](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c).  
   
--   See [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx) (in the Windows SDK).  
+-   See [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) (in the Windows SDK).  
   
 ## OLE DB Attributes  
  The [OLE DB consumer attributes](../../windows/ole-db-consumer-attributes.md) provide a convenient way to create OLE DB consumers. The OLE DB attributes inject code based on the [OLE DB consumer templates](../../data/oledb/ole-db-consumer-templates-reference.md) to create working OLE DB consumers and providers. If you need to specify functionality not supported by the attributes, you can use the OLE DB Templates in conjunction with attributes in your code.  
@@ -42,7 +42,7 @@ ms.workload: ["cplusplus", "data-storage"]
  The MFC library has one class, [COleDBRecordView](../../mfc/reference/coledbrecordview-class.md), that displays database records in controls. The view is a form view directly connected to a `CRowset` object and displays the fields of the `CRowset` object in the dialog template's controls. It also supplies a default implementation for moving to the first, next, previous, or last record and an interface for updating the record currently on view. For more information, see `COleDBRecordView`.  
   
 ## OLE DB SDK Interfaces  
- In the cases where the OLE DB Templates do not support OLE DB functionality, you need to use the OLE DB interfaces themselves. For more information, see [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx) in the Windows SDK.  
+ In the cases where the OLE DB Templates do not support OLE DB functionality, you need to use the OLE DB interfaces themselves. For more information, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) in the Windows SDK.  
   
 ## See Also  
  [OLE DB Programming](../../data/oledb/ole-db-programming.md)   

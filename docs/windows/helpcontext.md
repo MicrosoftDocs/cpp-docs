@@ -13,19 +13,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # helpcontext
-Specifies a context ID that lets the user view information about this element in the Help file.  
+Specifies a context ID that lets the user view information about this element in the **Help** file.  
   
 ## Syntax  
   
-```  
-  
-      [ helpcontext(  
+```cpp  
+[ helpcontext(  
    id  
 ) ]  
 ```  
   
-#### Parameters  
- `id`  
+### Parameters  
+ *id*  
  The context ID of the help topic. See [HTML Help: Context-Sensitive Help for Your Programs](../mfc/html-help-context-sensitive-help-for-your-programs.md) for more information on context IDs.  
   
 ## Remarks  
@@ -40,7 +39,7 @@ Specifies a context ID that lets the user view information about this element in
   
 |||  
 |-|-|  
-|**Applies to**|`interface`, `typedef`, **class**, method, property|  
+|**Applies to**|**interface**, **typedef**, **class**, method, property|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -54,4 +53,4 @@ Specifies a context ID that lets the user view information about this element in
  [Method Attributes](../windows/method-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [helpfile](../windows/helpfile.md)   
- [helpstring](../windows/helpstring.md)   
+ [helpstring](../windows/helpstring.md)   

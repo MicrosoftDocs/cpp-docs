@@ -17,19 +17,19 @@ ms.workload: ["cplusplus"]
 Superseded by [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md), this macro defines whether the iterator debugging feature is enabled in a debug build. By default, iterator debugging is enabled in Debug builds and disabled in Retail builds. For more information, see [Debug Iterator Support](../standard-library/debug-iterator-support.md).
 
 > [!IMPORTANT]
-> Direct use of the `_HAS_ITERATOR_DEBUGGING` macro is deprecated. Instead, use `_ITERATOR_DEBUG_LEVEL` to control iterator debug settings. For more information, see [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).
+> Direct use of the _HAS_ITERATOR_DEBUGGING macro is deprecated. Instead, use _ITERATOR_DEBUG_LEVEL to control iterator debug settings. For more information, see [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).
 
 ## Remarks
 
-To enable iterator debugging in debug builds, set `_ITERATOR_DEBUG_LEVEL` to 2. This is equivalent to a `_HAS_ITERATOR_DEBUGGING` setting of 1, or enabled:
+To enable iterator debugging in debug builds, set _ITERATOR_DEBUG_LEVEL to 2. This is equivalent to a _HAS_ITERATOR_DEBUGGING setting of 1, or enabled:
 
 ```cpp
 #define _ITERATOR_DEBUG_LEVEL 2
 ```
 
-`_ITERATOR_DEBUG_LEVEL` cannot be set to 2 (and `_HAS_ITERATOR_DEBUGGING` cannot be set to 1) in retail builds.
+_ITERATOR_DEBUG_LEVEL cannot be set to 2 (and _HAS_ITERATOR_DEBUGGING cannot be set to 1) in retail builds.
 
-To disable debug iterators in debug builds, set `_ITERATOR_DEBUG_LEVEL` to 0 or 1. This is equivalent to a `_HAS_ITERATOR_DEBUGGING` setting of 0, or disabled:
+To disable debug iterators in debug builds, set _ITERATOR_DEBUG_LEVEL to 0 or 1. This is equivalent to a _HAS_ITERATOR_DEBUGGING setting of 0, or disabled:
 
 ```cpp
 #define _ITERATOR_DEBUG_LEVEL 0

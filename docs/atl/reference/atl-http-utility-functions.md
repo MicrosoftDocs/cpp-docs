@@ -139,7 +139,7 @@ inline BOOL AtlEscapeUrl(
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
   
-## <a name="atlgetdefaulturlport"></a> 
+## <a name="atlgetdefaulturlport"></a> AtlGetDefaultUrlPort
  Call this function to get the default port number associated with a particular Internet protocol or scheme.  
   
 ```  

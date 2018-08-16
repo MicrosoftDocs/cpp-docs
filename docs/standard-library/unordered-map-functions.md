@@ -30,25 +30,25 @@ void swap(
 
 ### Parameters
 
-`Key`
+*Key*  
  The key type.
 
-`Ty`
+*Ty*  
  The mapped type.
 
-`Hash`
+*Hash*  
  The hash function object type.
 
-`Pred`
+*Pred*  
  The equality comparison function object type.
 
-`Alloc`
+*Alloc*  
  The allocator class.
 
-`left`
+*left*  
  The first container to swap.
 
-`right`
+*right*  
  The second container to swap.
 
 ### Remarks
@@ -124,25 +124,25 @@ void swap(
 
 ### Parameters
 
-`Key`
+*Key*  
  The key type.
 
-`Ty`
+*Ty*  
  The mapped type.
 
-`Hash`
+*Hash*  
  The hash function object type.
 
-`Pred`
+*Pred*  
  The equality comparison function object type.
 
-`Alloc`
+*Alloc*  
  The allocator class.
 
-`left`
+*left*  
  The first container to swap.
 
-`right`
+*right*  
  The second container to swap.
 
 ### Remarks

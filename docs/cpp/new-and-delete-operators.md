@@ -14,25 +14,25 @@ ms.workload: ["cplusplus"]
 ---
 # new and delete Operators
 
-C++ supports dynamic allocation and deallocation of objects using the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The `new` operator calls the special function [operator new](../cpp/new-operator-cpp.md), and the `delete` operator calls the special function [operator delete](../cpp/delete-operator-cpp.md).  
+C++ supports dynamic allocation and deallocation of objects using the [new](../cpp/new-operator-cpp.md) and [delete](../cpp/delete-operator-cpp.md) operators. These operators allocate memory for objects from a pool called the free store. The **new** operator calls the special function [operator new](../cpp/new-operator-cpp.md), and the **delete** operator calls the special function [operator delete](../cpp/delete-operator-cpp.md).  
   
- The `new` function in the C++ Standard Library supports the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of `new`, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default `operator new` in the C++ Standard Library no longer functions.  
+ The **new** function in the C++ Standard Library supports the behavior specified in the C++ standard, which is to throw a std::bad_alloc exception if the memory allocation fails. If you still want the non-throwing version of **new**, link your program with nothrownew.obj. However, when you link with nothrownew.obj, the default **operator new** in the C++ Standard Library no longer functions.  
   
  For a list of the library files that comprise the C Runtime Library and the C++ Standard Library, see [CRT Library Features](../c-runtime-library/crt-library-features.md).  
   
 ##  <a id="new_operator"> </a> The new operator  
- When a statement such as the following is encountered in a program, it translates into a call to the function `operator new`:  
+ When a statement such as the following is encountered in a program, it translates into a call to the function **operator new**:  
   
 ```cpp  
 char *pch = new char[BUFFER_SIZE];  
 ```  
   
-If the request is for zero bytes of storage, **operator new** returns a pointer to a distinct object (that is, repeated calls to **operator new** return different pointers). If there is insufficient memory for the allocation request, **operator new** throws a std::bad_alloc exception, or returns **nullptr** if you have linked in non-throwing `operator new` support.  
+If the request is for zero bytes of storage, **operator new** returns a pointer to a distinct object (that is, repeated calls to **operator new** return different pointers). If there is insufficient memory for the allocation request, **operator new** throws a std::bad_alloc exception, or returns **nullptr** if you have linked in non-throwing **operator new** support.  
   
 You can write a routine that attempts to free memory and retry the allocation; see [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) for more information. For more details on the recovery scheme, see the Handling insufficient memory section of this topic.  
 
   
-The two scopes for `operator new` functions are described in the following table.  
+The two scopes for **operator new** functions are described in the following table.  
   
 ### Scope for operator new Functions  
   
@@ -41,7 +41,7 @@ The two scopes for `operator new` functions are described in the following table
 |**::operator new**|Global|  
 |*class-name* **::operator new**|Class|  
   
- The first argument to **operator new** must be of type **size_t** (a type defined in \<stddef.h>), and the return type is always **void \***.  
+ The first argument to **operator new** must be of type `size_t` (a type defined in \<stddef.h>), and the return type is always **void \***.  
   
  The global **operator new** function is called when the **new** operator is used to allocate objects of built-in types, objects of class type that do not contain user-defined **operator new** functions, and arrays of any type. When the **new** operator is used to allocate objects of a class type where an **operator new** is defined, that class's **operator new** is called.  
   
@@ -138,11 +138,11 @@ void operator delete( void * );
 void operator delete( void *, size_t );  
 ```  
   
- Only one of the preceding two forms can be present for a given class. The first form takes a single argument of type **void \***, which contains a pointer to the object to deallocate. The second form—sized deallocation—takes two arguments, the first of which is a pointer to the memory block to deallocate and the second of which is the number of bytes to deallocate. The return type of both forms is `void` (**operator delete** cannot return a value).  
+ Only one of the preceding two forms can be present for a given class. The first form takes a single argument of type `void *`, which contains a pointer to the object to deallocate. The second form—sized deallocation—takes two arguments, the first of which is a pointer to the memory block to deallocate and the second of which is the number of bytes to deallocate. The return type of both forms is **void** (**operator delete** cannot return a value).  
   
  The intent of the second form is to speed up searching for the correct size category of the object to be deleted, which is often not stored near the allocation itself and likely uncached; the second form is particularly useful when an **operator delete** function from a base class is used to delete an object of a derived class.  
   
- The **operator delete** function is static; therefore, it cannot be virtual. The `operator delete` function obeys access control, as described in [Member-Access Control](../cpp/member-access-control-cpp.md).  
+ The **operator delete** function is static; therefore, it cannot be virtual. The **operator delete** function obeys access control, as described in [Member-Access Control](../cpp/member-access-control-cpp.md).  
   
  The following example shows user-defined **operator new** and **operator delete** functions designed to log allocations and deallocations of memory:  
   
@@ -215,4 +215,3 @@ void f() {
    delete [] pX;  
 }  
 ```  
-

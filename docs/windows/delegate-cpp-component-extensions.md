@@ -19,7 +19,7 @@ Declares a type that represents a function pointer.
  Both the Windows Runtime and common language runtime support delegates.  
   
 ### Remarks  
- `delegate` is a context-sensitive keyword. For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
+ **delegate** is a context-sensitive keyword. For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
  To detect at compile time if a type is a delegate, use the `__is_delegate()` type trait. For more information, see [Compiler Support for Type Traits](../windows/compiler-support-for-type-traits-cpp-component-extensions.md).  
   
@@ -36,12 +36,11 @@ delegate-type-identifier
 (  
 [ parameters ]  
 )  
-  
 ```  
   
 ### Parameters  
  *access*  
- (optional) The accessibility of the delegate, which can be `public` (the default) or `private`. The function prototype can also be qualified with the `const` or `volatile` keywords.  
+ (optional) The accessibility of the delegate, which can be **public** (the default) or **private**. The function prototype can also be qualified with the **const** or **volatile** keywords.  
   
  *return-type*  
  The return type of the function prototype.  
@@ -56,7 +55,7 @@ delegate-type-identifier
  Use the *delegate-type-identifier* to declare an event with the same prototype as the delegate. For more information, see [Delegates (C++/CX)](../cppcx/delegates-c-cx.md).  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
  The common language runtime supports delegates with the following syntax.  
@@ -67,7 +66,6 @@ delegate-type-identifier
 access  
 delegate  
 function_declaration  
-  
 ```  
   
 ### Parameters  
@@ -77,7 +75,7 @@ function_declaration
  *function_declaration*  
  The signature of the function that can be bound to the delegate. The return type of a delegate can be any managed type. For interoperability reasons, it is recommended that the return type of a delegate be a CLS type.  
   
- To define an unbound delegate, the first parameter in *function_declaration* should be the type of the `this` pointer for the object. 
+ To define an unbound delegate, the first parameter in *function_declaration* should be the type of the **this** pointer for the object. 
   
 ### Remarks  
  Delegates are multicast: the "function pointer" can be bound to one or more methods within a managed class. The **delegate** keyword defines a multicast delegate type with a specific method signature.  
@@ -86,9 +84,9 @@ function_declaration
   
  A delegate has the following characteristics:  
   
--   It inherits from **System::MulticastDelegate**.  
+-   It inherits from `System::MulticastDelegate`.  
   
--   It has a constructor that takes two arguments: a pointer to a managed class or **NULL** (in the case of binding to a static method) and a fully qualified method of the specified type.  
+-   It has a constructor that takes two arguments: a pointer to a managed class or NULL (in the case of binding to a static method) and a fully qualified method of the specified type.  
   
 -   It has a method called `Invoke`, whose signature matches the declared signature of the delegate.  
   
@@ -100,9 +98,9 @@ function_declaration
   
  Delegates can be bound or unbound.  
   
- When you instantiate a bound delegate, the first argument shall be an object reference.  The second argument of a delegate instantiation shall either be the address of a method of a managed class object, or a pointer to a method of a value type.   The second argument of a delegate instantiation must name the method with the full class scope syntax and apply the address-of operator.  
+ When you instantiate a bound delegate, the first argument shall be an object reference. The second argument of a delegate instantiation shall either be the address of a method of a managed class object, or a pointer to a method of a value type. The second argument of a delegate instantiation must name the method with the full class scope syntax and apply the address-of operator.  
   
- When you instantiate an unbound delegate, the first argument shall either be the address of a method of a managed class object, or a pointer to a method of a value type.   The argument must name the method with the full class scope syntax and apply the address-of operator.  
+ When you instantiate an unbound delegate, the first argument shall either be the address of a method of a managed class object, or a pointer to a method of a value type. The argument must name the method with the full class scope syntax and apply the address-of operator.  
   
  When creating a delegate to a static or global function, only one parameter is required: the function (optionally, the address of the function).  
   
@@ -113,10 +111,9 @@ function_declaration
 -   [Generic Delegates (Visual C++)](../windows/generic-delegates-visual-cpp.md)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
   
  The following example shows how to declare, initialize, and invoke delegates.  
   
@@ -176,8 +173,6 @@ int main () {
    StaticDelInst(11);  
 }  
 ```  
-  
- **Output**  
   
 ```Output  
 in func1 8  

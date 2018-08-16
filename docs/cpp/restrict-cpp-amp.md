@@ -81,7 +81,6 @@ The restriction specifier can be applied to function and lambda declarations. It
  The following example shows how to use the `restrict(amp)`clause.  
   
 ```cpp 
-  
 void functionAmp() restrict(amp) {}   
 void functionNonAmp() {}   
   
@@ -97,9 +96,8 @@ void callFunctions() restrict(amp)
   
     // Calling a non-amp-restricted function is not allowed.  
     // functionNonAmp();   
-  
 }  
 ```  
   
-## See Also  
+## See also  
  [C++ AMP (C++ Accelerated Massive Parallelism)](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)

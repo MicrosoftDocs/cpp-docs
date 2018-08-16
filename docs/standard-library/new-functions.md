@@ -14,7 +14,7 @@ ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
 
 ## <a name="nothrow"></a>  nothrow
 
-Provides an object to be used as an argument for the `nothrow` versions of **new** and **delete**.
+Provides an object to be used as an argument for the **nothrow** versions of **new** and **delete**.
 
 ```cpp
 extern const std::nothrow_t nothrow;
@@ -30,7 +30,7 @@ See [operator new](../standard-library/new-operators.md#op_new) and [operator ne
 
 ## <a name="set_new_handler"></a>  set_new_handler
 
-Installs a user function that is to be called when `operator new` fails in its attempt to allocate memory.
+Installs a user function that is to be called when **operator new** fails in its attempt to allocate memory.
 
 ```cpp
 new_handler set_new_handler(new_handler Pnew) throw();
@@ -38,8 +38,8 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 ### Parameters
 
-`Pnew`
- The new_handler to be installed.
+*Pnew*  
+The `new_handler` to be installed.
 
 ### Return Value
 
@@ -47,7 +47,7 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 ### Remarks
 
-The function stores `Pnew` in a static [new handler](../standard-library/new-typedefs.md#new_handler) pointer that it maintains, then returns the value previously stored in the pointer. The new handler is used by [operator new](../standard-library/new-operators.md#op_new)( **size_t**).
+The function stores *Pnew* in a static [new handler](../standard-library/new-typedefs.md#new_handler) pointer that it maintains, then returns the value previously stored in the pointer. The new handler is used by [operator new](../standard-library/new-operators.md#op_new)(**size_t**).
 
 ### Example
 

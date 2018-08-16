@@ -17,22 +17,22 @@ Indicates whether the specified interface ID can be cast to each of the speciali
   
 ## Syntax  
   
-```  
+```cpp  
 __forceinline bool CanCastTo(  
    REFIID riid,  
    _Deref_out_ void **ppv  
 );  
 ```  
   
-#### Parameters  
- `riid`  
+### Parameters  
+ *riid*  
  An interface ID.  
   
- `ppv`  
+ *ppv*  
  A pointer to the last interface ID that was cast successfully.  
   
 ## Return Value  
- `true` if all the cast operations succeeded; otherwise, `false`.  
+ **true** if all the cast operations succeeded; otherwise, **false**.  
   
 ## Requirements  
  **Header:** implements.h  

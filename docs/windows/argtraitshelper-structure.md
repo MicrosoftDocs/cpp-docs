@@ -17,13 +17,13 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename TDelegateInterface>  
 struct ArgTraitsHelper;  
 ```  
   
-#### Parameters  
- `TDelegateInterface`  
+### Parameters  
+ *TDelegateInterface*  
  A delegate interface.  
   
 ## Remarks  
@@ -42,7 +42,7 @@ struct ArgTraitsHelper;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ArgTraitsHelper::args Constant](../windows/argtraitshelper-args-constant.md)|Helps [ArgTraits::args](../windows/argtraits-args-constant.md) keep count of the number of parameters on the Invoke method of a delegate interface.|  
+|[ArgTraitsHelper::args Constant](../windows/argtraitshelper-args-constant.md)|Helps [ArgTraits::args](../windows/argtraits-args-constant.md) keep count of the number of parameters on the `Invoke` method of a delegate interface.|  
   
 ## Inheritance Hierarchy  
  `ArgTraitsHelper`  

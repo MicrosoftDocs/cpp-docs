@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 static const bool value = __is_base_of(Base, Derived);  
 ```  
   
 ## Remarks  
  Indicates whether one type is the base of another.  
   
- `value` is `true` if type `Base` is a base class of the type `Derived`, otherwise it is `false`.  
+ **value** is **true** if type `Base` is a base class of the type `Derived`, otherwise it is **false**.  
   
 ## Requirements  
  **Header:** internal.h  

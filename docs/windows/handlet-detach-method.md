@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::Detach Method
-Disassociates the current HandleT object from its underlying handle.  
+Disassociates the current **HandleT** object from its underlying handle.  
   
 ## Syntax  
   
-```  
+```cpp  
 typename HandleTraits::Type Detach();  
 ```  
   
@@ -25,7 +25,7 @@ typename HandleTraits::Type Detach();
  The underlying handle.  
   
 ## Remarks  
- When this operation completes, the current HandleT is set to the invalid state.  
+ When this operation completes, the current **HandleT** is set to the invalid state.  
   
 ## Requirements  
  **Header:** corewrappers.h  

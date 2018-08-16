@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncResultType Enumeration
-Specifies the type of result returned by the GetResults() method.  
+Specifies the type of result returned by the `GetResults()` method.  
   
 ## Syntax  
   
-```  
+```cpp  
 enum AsyncResultType;  
 ```  
   
@@ -27,8 +27,8 @@ enum AsyncResultType;
   
 |Name|Description|  
 |----------|-----------------|  
-|`MultipleResults`|A set of multiple results, which are presented progressively between Start state and before Close() is called.|  
-|`SingleResult`|A single result, which is presented after the Complete event occurs.|  
+|`MultipleResults`|A set of multiple results, which are presented progressively between `Start` state and before `Close()` is called.|  
+|`SingleResult`|A single result, which is presented after the `Complete` event occurs.|  
   
 ## Requirements  
  **Header:** async.h  

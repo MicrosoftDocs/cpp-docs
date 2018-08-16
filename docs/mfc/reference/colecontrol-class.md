@@ -216,7 +216,7 @@ class COleControl : public CWnd
   
  Controls do not need a window. Services that a window offers can easily be provided via a single shared window (usually the container's) and a bit of dispatching code. Having a window is mostly an unnecessary complication on the object.  
   
- When windowless activation is used, the container (which does have a window) is responsible for providing services that would otherwise have been provided by the control's own window. For example, if your control needs to query the keyboard focus, query the mouse capture, or obtain a device context, these operations are managed by the container. The `COleControl`[windowless-operation member functions](http://msdn.microsoft.com/en-us/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) invoke these operations on the container.  
+ When windowless activation is used, the container (which does have a window) is responsible for providing services that would otherwise have been provided by the control's own window. For example, if your control needs to query the keyboard focus, query the mouse capture, or obtain a device context, these operations are managed by the container. The `COleControl`[windowless-operation member functions](http://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) invoke these operations on the container.  
   
  When windowless activation is enabled, the container delegates input messages to the control's `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) for windowless support). `COleControl`'s implementation of this interface will dispatch these messages through your control's message map, after adjusting the mouse coordinates appropriately. You can process these messages like ordinary window messages, by adding the corresponding entries to the message map.  
   
@@ -790,7 +790,7 @@ void FireKeyDown(
   
 ### Parameters  
  *pnChar*  
- Pointer to the virtual key code value of the pressed key. For a list of of standard virtual key codes, see Winuser.h  
+ Pointer to the virtual key code value of the pressed key. For a list of standard virtual key codes, see Winuser.h  
   
  *nShiftState*  
  Contains a combination of the following flags:  
@@ -835,7 +835,7 @@ void FireKeyUp(
   
 ### Parameters  
  *pnChar*  
- Pointer to the virtual key code value of the released key. For a list of of standard virtual key codes, see Winuser.h  
+ Pointer to the virtual key code value of the released key. For a list of standard virtual key codes, see Winuser.h  
   
  *nShiftState*  
  Contains a combination of the following flags:  
@@ -1082,7 +1082,7 @@ BOOL GetAmbientProperty(
  Nonzero if the ambient property is supported; otherwise 0.  
   
 ### Remarks  
- If you use `GetAmbientProperty` to retrieve the ambient DisplayName and ScaleUnits properties, set *vtProp* to VT_BSTR and *pvProp* to **CString\***. If you are retrieving the ambient Font property, set *vtProp* to VT_FONT and *pvProp* to LPFONTDISP*.  
+ If you use `GetAmbientProperty` to retrieve the ambient DisplayName and ScaleUnits properties, set *vtProp* to VT_BSTR and *pvProp* to `CString*`. If you are retrieving the ambient Font property, set *vtProp* to VT_FONT and *pvProp* to LPFONTDISP*.  
   
  Note that functions have already been provided for common ambient properties, such as [AmbientBackColor](#ambientbackcolor) and [AmbientFont](#ambientfont).  
   

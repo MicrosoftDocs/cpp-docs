@@ -17,18 +17,18 @@ Retrieves a pointer to the interface specified by parameter.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    QueryInterface  
 )(REFIID riid, _Deref_out_ void **ppvObject);  
 ```  
   
-#### Parameters  
- `riid`  
+### Parameters  
+ *riid*  
  An interface ID.  
   
- `ppvObject`  
- When this operation completes, a pointer to the interface specified by parameter `riid`.  
+ *ppvObject*  
+ When this operation completes, a pointer to the interface specified by parameter *riid*.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that describes the failure.  

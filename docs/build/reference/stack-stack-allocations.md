@@ -20,9 +20,9 @@ ms.workload: ["cplusplus"]
 ## Remarks  
  The /STACK option sets the size of the stack in bytes. Use this option only when you build an .exe file.  
   
- The `reserve` value specifies the total stack allocation in virtual memory. For ARM, x86 and [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] machines, the default stack size is 1 MB.  
+ The `reserve` value specifies the total stack allocation in virtual memory. For ARM, x86 and x64 machines, the default stack size is 1 MB.  
   
- `commit` is subject to interpretation by the operating system. In Windows WindowsRT it specifies the amount of physical memory to allocate at a time. Committed virtual memory causes space to be reserved in the paging file. A higher `commit` value saves time when the application needs more stack space, but increases the memory requirements and possibly the startup time. For ARM, x86 and [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] machines, the default commit value is 4 KB.  
+ `commit` is subject to interpretation by the operating system. In Windows WindowsRT it specifies the amount of physical memory to allocate at a time. Committed virtual memory causes space to be reserved in the paging file. A higher `commit` value saves time when the application needs more stack space, but increases the memory requirements and possibly the startup time. For ARM, x86 and x64 machines, the default commit value is 4 KB.  
   
  Specify the `reserve` and `commit` values in decimal or C-language notation.  
   

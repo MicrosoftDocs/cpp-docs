@@ -1,7 +1,7 @@
 ---
 title: "ComPtr::AsIID Method | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "07/11/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::AsIID"]
@@ -13,23 +13,23 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::AsIID Method
-Returns a ComPtr object that represents the interface identified by the specified interface ID.  
+Returns a **ComPtr** object that represents the interface identified by the specified interface ID.  
   
 ## Syntax  
   
-```  
+```cpp  
 WRL_NOTHROW HRESULT AsIID(  
    REFIID riid,  
    _Out_ ComPtr<IUnknown>* p  
 ) const;  
 ```  
   
-#### Parameters  
- `riid`  
+### Parameters  
+ *riid*  
  An interface ID.  
   
- `p`  
- If supported, a doubly-indirect pointer to the interface specified by the `riid` parameter; otherwise, a pointer to IUnknown.  
+ *p*  
+ If the object has an interface whose ID equals *riid*, a doubly-indirect pointer to the interface specified by the *riid* parameter; otherwise, a pointer to `IUnknown`.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that indicates the error.  

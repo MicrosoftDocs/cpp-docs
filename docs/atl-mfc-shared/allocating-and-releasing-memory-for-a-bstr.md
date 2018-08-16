@@ -36,6 +36,6 @@ When you create `BSTR`s and pass them between COM objects, you must take care in
 ## See Also  
  [Strings (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
  [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)   
- [SysAllocString](https://msdn.microsoft.com/library/windows/desktop/ms221458.aspx)   
- [SysFreeString](https://msdn.microsoft.com/library/windows/desktop/ms221481.aspx)
+ [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)   
+ [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)
 

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # complex&lt;long double&gt;
 
-Describes an object that stores an ordered pair of objects both of type `long double`, the first representing the real part of a complex number and the second representing the imaginary part.
+Describes an object that stores an ordered pair of objects both of type **long double**, the first representing the real part of a complex number and the second representing the imaginary part.
 
 ## Syntax
 
@@ -34,22 +34,22 @@ complex(
 
 ### Parameters
 
-`_RealVal`
+*_RealVal*
  The value of type **long double** for the real part of the complex number being constructed.
 
-`_ImagVal`
- The value of type `long double` for the imaginary part of the complex number being constructed.
+*_ImagVal*
+ The value of type **long double** for the imaginary part of the complex number being constructed.
 
-`complexNum`
- The complex number of type **double** or of type **float** whose real and imaginary parts are used to initialize a complex number of type `long double` being constructed.
+*complexNum*
+ The complex number of type **double** or of type **float** whose real and imaginary parts are used to initialize a complex number of type **long double** being constructed.
 
 ## Return Value
 
-A complex number of type `long double`.
+A complex number of type **long double**.
 
 ## Remarks
 
-The explicit specialization of the template class complex to a complex class of type `long double` differs from the template class only in the constructors it defines. The conversion from `long double` to **float** is allowed to be implicit, but the conversion from **double** to `long double` is required to be **explicit**. The use of **explicit** rules out the initiation with type conversion using assignment syntax.
+The explicit specialization of the template class complex to a complex class of type **long double** differs from the template class only in the constructors it defines. The conversion from **long double** to **float** is allowed to be implicit, but the conversion from **double** to **long double** is required to be **explicit**. The use of **explicit** rules out the initiation with type conversion using assignment syntax.
 
 For more information on the template class `complex`, see [complex Class](../standard-library/complex-class.md). For a list of members of the template class `complex`, see .
 

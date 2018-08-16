@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 DWORD status_;  
 ```  
   
 ## Remarks  
- Holds the result of the underlying wait operation after a lock operation on an object based on the current SyncLockWithStatusT object.  
+ Holds the result of the underlying wait operation after a lock operation on an object based on the current **SyncLockWithStatusT** object.  
   
 ## Requirements  
  **Header:** corewrappers.h  

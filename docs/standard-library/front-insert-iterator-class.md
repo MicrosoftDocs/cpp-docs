@@ -25,7 +25,7 @@ class front_insert_iterator;
 
 ### Parameters
 
-`Container`
+*Container*
  The type of container into the front of which elements are to be inserted by a `front_insert_iterator`.
 
 ## Remarks
@@ -49,9 +49,9 @@ The container must satisfy the requirements for a front insertion sequence where
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x` for a front insertion.|
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x` for a front insertion.|
 |[operator++](#op_add_add)|Increments the `front_insert_iterator` to the next location into which a value may be stored.|
-|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for a front insertion.|
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression \* `i` = `x` for a front insertion.|
 
 ## Requirements
 
@@ -69,7 +69,7 @@ typedef Container container_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Container**.
+The type is a synonym for the template parameter *Container*.
 
 ### Example
 
@@ -111,7 +111,7 @@ explicit front_insert_iterator(Container& _Cont);
 
 ### Parameters
 
-`_Cont`
+*_Cont*
  The container object into which the `front_insert_iterator` is to insert elements.
 
 ### Return Value
@@ -164,7 +164,7 @@ After the front insertions, the list L is:
 *\
 ```
 
-## <a name="op_star"></a>  front_insert_iterator::operator*
+## <a name="op_star"></a>  front_insert_iterator::operator\*
 
 Dereferences the insert iterator returning the element it addresses.
 
@@ -178,7 +178,7 @@ The member function returns the value of the element addressed.
 
 ### Remarks
 
-Used to implement the output iterator expression **\*Iter** = **value**. If **Iter** is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and does not change the total number of elements in the sequence.
+Used to implement the output iterator expression **\*Iter** = **value**. If `Iter` is an iterator that addresses an element in a sequence, then **\*Iter** = **value** replaces that element with value and does not change the total number of elements in the sequence.
 
 ### Example
 
@@ -288,7 +288,7 @@ front_insert_iterator<Container>& operator=(typename Container::value_type&& val
 
 ### Parameters
 
-`val`
+*val*
  The value to be assigned to the container.
 
 ### Return Value

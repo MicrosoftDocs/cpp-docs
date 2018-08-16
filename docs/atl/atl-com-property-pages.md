@@ -18,7 +18,7 @@ COM property pages provide a user interface for setting the properties (or calli
   
  Each property page can be built completely independently of the objects whose properties can be set. All that a property page needs is to understand a particular interface (or set of interfaces) and to provide a user interface for calling methods on that interface.  
   
- For more information, see [Property Sheets and Property Pages](http://msdn.microsoft.com/library/windows/desktop/ms686577) in the [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)].  
+ For more information, see [Property Sheets and Property Pages](http://msdn.microsoft.com/library/windows/desktop/ms686577) in the Windows SDK.  
   
 ## In This Section  
  [Specifying Property Pages](../atl/specifying-property-pages.md)  

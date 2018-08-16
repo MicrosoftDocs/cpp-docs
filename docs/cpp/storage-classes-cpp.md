@@ -214,7 +214,7 @@ Things to note about the `thread_local` specifier:
 
 -  You must specify `thread_local` for both the declaration and the definition of a thread local object, whether the declaration and definition occur in the same file or separate files.
 
-On Windows, `thread_local` is functionally equivalent to  [__declspec(thread)](../cpp/thread.md) except that `__declspec(thread)` can be applied to a type definition and is valid in C code. Whenever possible, use `thread_local` because it is part of the C++ standard and is therefore more portable.
+On Windows, `thread_local` is functionally equivalent to  [__declspec(thread)](../cpp/thread.md) except that **__declspec(thread)** can be applied to a type definition and is valid in C code. Whenever possible, use `thread_local` because it is part of the C++ standard and is therefore more portable.
 
 ##  <a name="register"></a>  register
 
@@ -307,6 +307,5 @@ There are several points to note about the program:
 
 - Finally, static local variables such as `I3` retain their values for the duration of the program, but are destroyed as the program terminates.
 
-## See Also
-
+## See also
  [Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)

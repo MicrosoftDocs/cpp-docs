@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Supported Platforms (Visual C++)
 
-Apps built by using [!INCLUDE[vsprvs](assembler/masm/includes/vsprvs_md.md)] can be targeted to various platforms, as follows.
+Apps built by using Visual Studio can be targeted to various platforms, as follows.
 
 |Operating System|x86|x64|ARM|
 |----------------------|---------|---------|---------|

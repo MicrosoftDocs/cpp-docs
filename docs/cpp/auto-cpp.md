@@ -210,7 +210,7 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [auto Keyword](../cpp/auto-keyword.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [/Zc:auto (Deduce Variable Type)](../build/reference/zc-auto-deduce-variable-type.md)   

@@ -27,7 +27,7 @@ typedef T2 reference;
 
 ## Remarks
 
-It is described here as a synonym for the unspecified type **T2** (typically **Alloc::reference**). An object of type **reference** can be cast to an object of type [const_reference](../standard-library/container-class-const-reference.md).
+It is described here as a synonym for the unspecified type `T2` (typically `Alloc::reference`). An object of type `reference` can be cast to an object of type [const_reference](../standard-library/container-class-const-reference.md).
 
 ## See also
 

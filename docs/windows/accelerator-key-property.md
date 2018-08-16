@@ -18,7 +18,7 @@ The following are legal entries for the Key property in the accelerator table:
   
     -   Single-digit numbers are always interpreted as the corresponding key, rather than as ASCII or ANSI values.  
   
-    -   Values from 1 through 26, when preceded with zeros, are interpreted as ^A through ^Z, which represents the ASCII value of the letters of the alphabet when pressed with the CTRL key held down.  
+    -   Values from 1 through 26, when preceded with zeros, are interpreted as ^A through ^Z, which represents the ASCII value of the letters of the alphabet when pressed with the **Ctrl** key held down.  
   
     -   Values from 27-32 are always interpreted as three-digit decimal values 027 through 032.  
   
@@ -26,10 +26,10 @@ The following are legal entries for the Key property in the accelerator table:
   
 -   A single keyboard character. Uppercase A - Z or the numbers 0 - 9 can be either ASCII or virtual key values; any other character is ASCII only.  
   
--   A single keyboard character in the range A - Z (uppercase only), preceded by a caret (^) (for example, ^C). This enters the ASCII value of the key when it is pressed with the CTRL key held down.  
+-   A single keyboard character in the range A - Z (uppercase only), preceded by a caret (^) (for example, ^C). This enters the ASCII value of the key when it is pressed with the **Ctrl** key held down.  
   
     > [!NOTE]
-    >  When entering an ASCII value, the modifier property options are limited. The only control key available for use is the ALT key.  
+    >  When entering an ASCII value, the modifier property options are limited. The only control key available for use is the **Alt** key.  
   
 -   Any valid virtual key identifier. The drop-down Key box in the Accelerator table contains a list of standard virtual key identifiers.  
   

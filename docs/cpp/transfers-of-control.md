@@ -49,4 +49,3 @@ int main()
  In the preceding example, the **goto** statement tries to transfer control past the initialization of `i`. However, if `i` were declared but not initialized, the transfer would be legal.  
   
  The objects `total` and `ch`, declared in the block that serves as the *statement* of the **while** statement, are destroyed when that block is exited using the **break** statement.  
-  

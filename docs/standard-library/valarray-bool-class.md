@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # valarray&lt;bool&gt; Class
 
-A specialized version of the template class **valarray\<Type>** to elements of type `bool`.
+A specialized version of the template class **valarray\<Type>** to elements of type **bool**.
 
 ## Syntax
 

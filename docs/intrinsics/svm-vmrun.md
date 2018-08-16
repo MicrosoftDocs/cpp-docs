@@ -40,7 +40,7 @@ void __svm_vmrun(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__svm_vmrun`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__svm_vmrun`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

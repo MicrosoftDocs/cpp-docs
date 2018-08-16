@@ -66,5 +66,5 @@ int main( int argc,      // Number of strings in array argv
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [main: Program Startup](../cpp/main-program-startup.md)

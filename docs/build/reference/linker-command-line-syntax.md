@@ -21,7 +21,7 @@ LINK arguments
  The `arguments` include options and filenames and can be specified in any order. Options are processed first, then files. Use one or more spaces or tabs to separate arguments.  
   
 > [!NOTE]
->  You can start this tool only from the [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] command prompt. You cannot start it from a system command prompt or from File Explorer.  
+>  You can start this tool only from the Visual Studio command prompt. You cannot start it from a system command prompt or from File Explorer.  
   
  On the command line, an option consists of an option specifier, either a dash (-) or a forward slash (/), followed by the name of the option. Option names cannot be abbreviated. Some options take an argument, specified after a colon (:). No spaces or tabs are allowed within an option specification, except within a quoted string in the /COMMENT option. Specify numeric arguments in decimal or C-language notation. Option names and their keyword or filename arguments are not case sensitive, but identifiers as arguments are case sensitive.  
   

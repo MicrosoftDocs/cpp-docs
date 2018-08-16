@@ -36,15 +36,16 @@ public:
    template <class U1, class U2>
       tuple& operator=(const pair<U1, U2>&); // N == 2
    };
+```
 
 ### Parameters
 
-`TN`
+*TN*  
  The type of the Nth tuple element.
 
 ## Remarks
 
-The template class describes an object that stores N objects of types `T1`, `T2`, ..., `TN`, respectively, where where `0 <= N <= Nmax`. The extent of a tuple instance `tuple<T1, T2, ..., TN>` is the number `N` of its template arguments. The index of the template argument `Ti` and of the corresponding stored value of that type is `i - 1`. Thus, while we number the types from 1 to N in this documentation, the corresponding index values range from 0 to N - 1.
+The template class describes an object that stores N objects of types `T1`, `T2`, ..., `TN`, respectively, where `0 <= N <= Nmax`. The extent of a tuple instance `tuple<T1, T2, ..., TN>` is the number `N` of its template arguments. The index of the template argument `Ti` and of the corresponding stored value of that type is `i - 1`. Thus, while we number the types from 1 to N in this documentation, the corresponding index values range from 0 to N - 1.
 
 ## Example
 
@@ -141,15 +142,15 @@ template <class U1, class U2>
 
 ### Parameters
 
-`UN`
+*UN*  
  The type of the Nth copied tuple element.
 
-`right`
+*right*  
  The tuple to copy from.
 
 ### Remarks
 
-The first two member operators assign the elements of `right` to the corresponding elements of `*this`. The third member operator assigns `right.first` to the element at index 0 of `*this` and `right.second` to the element at index 1. All three member operators return `*this`.
+The first two member operators assign the elements of *right* to the corresponding elements of `*this`. The third member operator assigns `right.first` to the element at index 0 of `*this` and `right.second` to the element at index 1. All three member operators return `*this`.
 
 The remaining member operators are analogs to earlier ones, but with [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
@@ -216,8 +217,8 @@ template <class... Types>
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|A tuple whose elements are to be exchanged with those of the tuple `right`.|
-|`right`|A tuple whose elements are to be exchanged with those of the tuple `left`.|
+|*left*|A tuple whose elements are to be exchanged with those of the tuple *right*.|
+|*right*|A tuple whose elements are to be exchanged with those of the tuple *left*.|
 
 ### Remarks
 
@@ -250,10 +251,10 @@ template <class U1, class U2>
 
 ### Parameters
 
-`UN`
+*UN*  
  The type of the Nth copied tuple element.
 
-`right`
+*right*  
  The tuple to copy from.
 
 ### Remarks
@@ -262,7 +263,7 @@ The first constructor constructs an object whose elements are default constructe
 
 The second constructor constructs an object whose elements are copy constructed from the arguments `P1`, `P2`, ..., `PN` with each `Pi` initializing the element at index `i - 1`.
 
-The third and fourth constructors construct an object whose elements are copy constructed from the corresponding element of `right`.
+The third and fourth constructors construct an object whose elements are copy constructed from the corresponding element of *right*.
 
 The fifth constructor constructs an object whose element at index 0 is copy constructed from `right.first` and whose element at index 1 is copy constructed from `right.second`.
 

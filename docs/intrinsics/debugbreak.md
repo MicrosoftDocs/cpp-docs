@@ -27,7 +27,7 @@ void __debugbreak();
   
 |Intrinsic|Architecture|Header|  
 |---------------|------------------|------------|  
-|`__debugbreak`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`__debugbreak`|x86, ARM, x64|\<intrin.h>|  
   
 ## Remarks  
  The `__debugbreak` compiler intrinsic, similar to [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297.aspx), is a portable Win32 way to cause a breakpoint.  

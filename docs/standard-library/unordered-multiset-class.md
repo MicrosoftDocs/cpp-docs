@@ -30,10 +30,10 @@ class unordered_multiset;
 
 |Parameter|Description|
 |-|-|
-|`Key`|The key type.|
-|`Hash`|The hash function object type.|
-|`Pred`|The equality comparison function object type.|
-|`Alloc`|The allocator class.|
+|*Key*|The key type.|
+|*Hash*|The hash function object type.|
+|*Pred*|The equality comparison function object type.|
+|*Alloc*|The allocator class.|
 
 ## Members
 
@@ -163,11 +163,11 @@ const_local_iterator begin(size_type nbucket) const;
 
 |Parameter|Description|
 |-|-|
-|`nbucket`|The bucket number.|
+|*nbucket*|The bucket number.|
 
 ### Remarks
 
-The first two member functions return a forward iterator that points at the first element of the sequence (or just beyond the end of an empty sequence). The last two member functions return a forward iterator that points at the first element of bucket `nbucket` (or just beyond the end of an empty bucket).
+The first two member functions return a forward iterator that points at the first element of the sequence (or just beyond the end of an empty sequence). The last two member functions return a forward iterator that points at the first element of bucket *nbucket* (or just beyond the end of an empty bucket).
 
 ### Example
 
@@ -369,12 +369,12 @@ size_type bucket_size(size_type nbucket) const;
 
 ### Parameters
 
-`nbucket`
+*nbucket*  
  The bucket number.
 
 ### Remarks
 
-The member functions returns the size of bucket number `nbucket`.
+The member functions returns the size of bucket number *nbucket*.
 
 ### Example
 
@@ -418,7 +418,7 @@ bucket_size(7) == 1
 
 ## <a name="cbegin"></a>  unordered_multiset::cbegin
 
-Returns a `const` iterator that addresses the first element in the range.
+Returns a **const** iterator that addresses the first element in the range.
 
 ```cpp
 const_iterator cbegin() const;
@@ -426,13 +426,13 @@ const_iterator cbegin() const;
 
 ### Return Value
 
-A `const` forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
+A **const** forward-access iterator that points at the first element of the range, or the location just beyond the end of an empty range (for an empty range, `cbegin() == cend()`).
 
 ### Remarks
 
 With the return value of `cbegin`, the elements in the range cannot be modified.
 
-You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `begin()` and `cbegin()`.
+You can use this member function in place of the `begin()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `begin()` and `cbegin()`.
 
 ```cpp
 auto i1 = Container.begin();
@@ -444,7 +444,7 @@ auto i2 = Container.cbegin();
 
 ## <a name="cend"></a>  unordered_multiset::cend
 
-Returns a `const` iterator that addresses the location just beyond the last element in a range.
+Returns a **const** iterator that addresses the location just beyond the last element in a range.
 
 ```cpp
 const_iterator cend() const;
@@ -452,13 +452,13 @@ const_iterator cend() const;
 
 ### Return Value
 
-A `const` forward-access iterator that points just beyond the end of the range.
+A **const** forward-access iterator that points just beyond the end of the range.
 
 ### Remarks
 
 `cend` is used to test whether an iterator has passed the end of its range.
 
-You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- `const`) container of any kind that supports `end()` and `cend()`.
+You can use this member function in place of the `end()` member function to guarantee that the return value is `const_iterator`. Typically, it's used in conjunction with the [auto](../cpp/auto-cpp.md) type deduction keyword, as shown in the following example. In the example, consider `Container` to be a modifiable (non- **const**) container of any kind that supports `end()` and `cend()`.
 
 ```cpp
 auto i1 = Container.end();
@@ -735,7 +735,7 @@ size_type count(const Key& keyval) const;
 
 ### Parameters
 
-`keyval`
+*keyval*  
  Key value to search for.
 
 ### Remarks
@@ -854,7 +854,7 @@ iterator emplace(Args&&... args);
 
 |Parameter|Description|
 |-|-|
-|`args`|The arguments forwarded to construct an element to be inserted into the unordered_multiset.|
+|*args*|The arguments forwarded to construct an element to be inserted into the unordered_multiset.|
 
 ### Return Value
 
@@ -883,8 +883,8 @@ iterator emplace_hint(
 
 |Parameter|Description|
 |-|-|
-|`args`|The arguments forwarded to construct an element to be inserted into the unordered_multiset.|
-|`where`|A hint regarding the place to start searching for the correct point of insertion.|
+|*args*|The arguments forwarded to construct an element to be inserted into the unordered_multiset.|
+|*where*|A hint regarding the place to start searching for the correct point of insertion.|
 
 ### Return Value
 
@@ -981,12 +981,12 @@ const_local_iterator end(size_type nbucket) const;
 
 ### Parameters
 
-`nbucket`
+*nbucket*  
  The bucket number.
 
 ### Remarks
 
-The first two member functions return a forward iterator that points just beyond the end of the sequence. The last two member functions return a forward iterator that points just beyond the end of bucket `nbucket`.
+The first two member functions return a forward iterator that points just beyond the end of the sequence. The last two member functions return a forward iterator that points just beyond the end of bucket *nbucket*.
 
 ### Example
 
@@ -1049,12 +1049,12 @@ std::pair<const_iterator, const_iterator>
 
 ### Parameters
 
-`keyval`
+*keyval*  
  Key value to search for.
 
 ### Remarks
 
-The member function returns a pair of iterators `X` such that `[X.first, X.second)` delimits just those elements of the controlled sequence that have equivalent ordering with `keyval`. If no such elements exist, both iterators are `end()`.
+The member function returns a pair of iterators `X` such that `[X.first, X.second)` delimits just those elements of the controlled sequence that have equivalent ordering with *keyval*. If no such elements exist, both iterators are `end()`.
 
 ### Example
 
@@ -1123,16 +1123,16 @@ size_type erase(
 
 ### Parameters
 
-`Where`
+*Where*  
  Position of the element to be removed.
 
-`First`
+*First*  
  Position of the first element to be removed.
 
-`Last`
+*Last*  
  Position just beyond the last element to be removed.
 
-`Key`
+*Key*  
  The key value of the elements to be removed.
 
 ### Return Value
@@ -1155,7 +1155,7 @@ const_iterator find(const Key& keyval) const;
 
 ### Parameters
 
-`keyval`
+*keyval*  
  Key value to search for.
 
 ### Remarks
@@ -1370,13 +1370,13 @@ IList);
 
 |Parameter|Description|
 |-|-|
-|`Val`|The value of an element to be inserted into the unordered_multiset.|
-|`Where`|The place to start searching for the correct point of insertion.|
-|`ValTy`|Template parameter that specifies the argument type that the unordered_multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards `Val` as an argument.|
-|`First`|The position of the first element to be copied.|
-|`Last`|The position just beyond the last element to be copied.|
-|`InputIterator`|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
-|`IList`|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
+|*Val*|The value of an element to be inserted into the unordered_multiset.|
+|*Where*|The place to start searching for the correct point of insertion.|
+|*ValTy*|Template parameter that specifies the argument type that the unordered_multiset can use to construct an element of [value_type](../standard-library/map-class.md#value_type), and perfect-forwards *Val* as an argument.|
+|*First*|The position of the first element to be copied.|
+|*Last*|The position just beyond the last element to be copied.|
+|*InputIterator*|Template function argument that meets the requirements of an [input iterator](../standard-library/input-iterator-tag-struct.md) that points to elements of a type that can be used to construct [value_type](../standard-library/map-class.md#value_type) objects.|
+|*IList*|The [initializer_list](../standard-library/initializer-list.md) from which to copy the elements.|
 
 ### Return Value
 
@@ -1392,7 +1392,7 @@ During the insertion of just one element, if an exception is thrown but does not
 
 The [value_type](../standard-library/map-class.md#value_type) of a container is a typedef that belongs to the container, and, for set, `unordered_multiset<V>::value_type` is type `const V`.
 
-The range member function (5) inserts the sequence of element values into an unordered_multiset that corresponds to each element addressed by an iterator in the range `[First, Last)`; therefore, `Last` does not get inserted. The container member function `end()` refers to the position just after the last element in the container—for example, the statement `m.insert(v.begin(), v.end());` inserts all elements of `v` into `m`.
+The range member function (5) inserts the sequence of element values into an unordered_multiset that corresponds to each element addressed by an iterator in the range `[First, Last)`; therefore, *Last* does not get inserted. The container member function `end()` refers to the position just after the last element in the container—for example, the statement `m.insert(v.begin(), v.end());` inserts all elements of `v` into `m`.
 
 The initializer list member function (6) uses an [initializer_list](../standard-library/initializer-list.md) to copy elements into the unordered_multiset.
 
@@ -1768,12 +1768,12 @@ void max_load_factor(float factor);
 
 ### Parameters
 
-`factor`
+*factor*  
  The new maximum load factor.
 
 ### Remarks
 
-The first member function returns the stored maximum load factor. The second member function replaces the stored maximum load factor with `factor`.
+The first member function returns the stored maximum load factor. The second member function replaces the stored maximum load factor with *factor*.
 
 ### Example
 
@@ -1901,11 +1901,11 @@ unordered_multiset& operator=(unordered_multiset&& right);
 
 |Parameter|Description|
 |-|-|
-|`right`|The [unordered_multiset](../standard-library/unordered-multiset-class.md) being copied into the `unordered_multiset`.|
+|*right*|The [unordered_multiset](../standard-library/unordered-multiset-class.md) being copied into the `unordered_multiset`.|
 
 ### Remarks
 
-After erasing any existing elements in an `unordered_multiset`, `operator=` either copies or moves the contents of `right` into the `unordered_multiset`.
+After erasing any existing elements in an `unordered_multiset`, `operator=` either copies or moves the contents of *right* into the `unordered_multiset`.
 
 ### Example
 
@@ -2050,12 +2050,12 @@ void rehash(size_type nbuckets);
 
 ### Parameters
 
-`nbuckets`
+*nbuckets*  
  The requested number of buckets.
 
 ### Remarks
 
-The member function alters the number of buckets to be at least `nbuckets` and rebuilds the hash table as needed.
+The member function alters the number of buckets to be at least *nbuckets* and rebuilds the hash table as needed.
 
 ### Example
 
@@ -2234,12 +2234,12 @@ void swap(unordered_multiset& right);
 
 ### Parameters
 
-`right`
+*right*  
  The container to swap with.
 
 ### Remarks
 
-The member function swaps the controlled sequences between `*this` and `right`. If [unordered_multiset::get_allocator](#get_allocator)`() == right.get_allocator()`, it does so in constant time, it throws an exception only as a result of copying the stored traits object of type `Tr`, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
+The member function swaps the controlled sequences between `*this` and *right*. If [unordered_multiset::get_allocator](#get_allocator)`() == right.get_allocator()`, it does so in constant time, it throws an exception only as a result of copying the stored traits object of type `Tr`, and it invalidates no references, pointers, or iterators that designate elements in the two controlled sequences. Otherwise, it performs a number of element assignments and constructor calls proportional to the number of elements in the two controlled sequences.
 
 ### Example
 
@@ -2353,27 +2353,27 @@ unordered_multiset(
 
 |Parameter|Description|
 |-|-|
-|`InputIterator`|The iterator type.|
-|`Al`|The allocator object to store.|
-|`Comp`|The comparison function object to store.|
-|`Hash`|The hash function object to store.|
-|`Bucket_count`|The minimum number of buckets.|
-|`Right`|The container to copy.|
-|`IList`|The initializer_list from which to copy.|
+|*InputIterator*|The iterator type.|
+|*Al*|The allocator object to store.|
+|*Comp*|The comparison function object to store.|
+|*Hash*|The hash function object to store.|
+|*Bucket_count*|The minimum number of buckets.|
+|*Right*|The container to copy.|
+|*IList*|The initializer_list from which to copy.|
 
 ### Remarks
 
-The first constructor specifies a copy of the sequence controlled by `Right`. The second constructor specifies an empty controlled sequence. The third constructor inserts the sequence of element values `[First, Last)`. The fourth constructor specifies a copy of the sequence by moving `Right`.
+The first constructor specifies a copy of the sequence controlled by *Right*. The second constructor specifies an empty controlled sequence. The third constructor inserts the sequence of element values `[First, Last)`. The fourth constructor specifies a copy of the sequence by moving *Right*.
 
-All constructors also initialize several stored values. For the copy constructor, the values are obtained from `Right`. Otherwise:
+All constructors also initialize several stored values. For the copy constructor, the values are obtained from *Right*. Otherwise:
 
-The minimum number of buckets is the argument `Bucket_count`, if present; otherwise it is a default value described here as the implementation-defined value `N0`.
+The minimum number of buckets is the argument *Bucket_count*, if present; otherwise it is a default value described here as the implementation-defined value `N0`.
 
-The hash function object is the argument `Hash`, if present; otherwise it is `Hash()`.
+The hash function object is the argument *Hash*, if present; otherwise it is `Hash()`.
 
-The comparison function object is the argument `Comp`, if present; otherwise it is `Comp()`.
+The comparison function object is the argument *Comp*, if present; otherwise it is `Comp()`.
 
-The allocator object is the argument `Al`, if present; otherwise, it is `Alloc()`.
+The allocator object is the argument *Al*, if present; otherwise, it is `Alloc()`.
 
 ## <a name="value_type"></a>  unordered_multiset::value_type
 

@@ -17,7 +17,7 @@ Abstract classes act as expressions of general concepts from which more specific
 
 A class that contains at least one pure virtual function is considered an abstract class. Classes derived from the abstract class must implement the pure virtual function or they, too, are abstract classes.
 
-A virtual function is declared as "pure" by using the *pure-specifier* syntax (described in [Class Protocol Implementation](http://msdn.microsoft.com/en-us/a319f1b3-05e8-400e-950a-1ca6eb105ab5)). Consider the example presented in [Virtual Functions](../cpp/virtual-functions.md). The intent of class `Account` is to provide general functionality, but objects of type `Account` are too general to be useful. Therefore, `Account` is a good candidate for an abstract class:
+Consider the example presented in [Virtual Functions](../cpp/virtual-functions.md). The intent of class `Account` is to provide general functionality, but objects of type `Account` are too general to be useful. Therefore, `Account` is a good candidate for an abstract class:
 
 ```cpp
 // deriv_AbstractClasses.cpp
@@ -84,5 +84,4 @@ When the object pointed to by `pDerived` is deleted, the destructor for class `d
 > In the preceding example, the pure virtual function `base::~base` is called implicitly from `derived::~derived`. It is also possible to call pure virtual functions explicitly using a fully qualified member-function name.
 
 ## See also
-
-- [Inheritance](../cpp/inheritance-cpp.md)
+[Inheritance](../cpp/inheritance-cpp.md)  

@@ -64,7 +64,7 @@ int main() {
 2/1/2000  
 ```  
   
-## See Also  
+## See also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)   

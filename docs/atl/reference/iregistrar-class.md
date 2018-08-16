@@ -34,7 +34,7 @@ See the topic [Using Replaceable Parameters (The Registrar's Preprocessor)](../.
 |[IRegistrar::FileRegister](#fileregister)|Registers the file.|  
 |[IRegistrar::FileUnregister](#fileunregister)|Unregisters the file.|  
 |[IRegistrar::StringRegister](#stringregister)|Registers the string.|  
-|[IRegistrar::StringUnregister](#stringunregister)|Unregisters teh string|  
+|[IRegistrar::StringUnregister](#stringunregister)|Unregisters the string|  
 |[IRegistrar::ResourceRegister](#resourceregister)|Registers the resource.|  
 |[IRegistrar::ResourceUnregister](#resourceunregister)|Unregisters the resource.| 
   

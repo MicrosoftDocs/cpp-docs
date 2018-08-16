@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CMFCReBar Class
 A `CMFCReBar` object is a control bar that provides layout, persistence, and state information for rebar controls.  
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
 ## Syntax  
   
 ```  
@@ -36,7 +36,7 @@ class CMFCReBar : public CPane
 |[CMFCReBar::GetReBarCtrl](#getrebarctrl)|Provides direct access to the underlying [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) common control.|  
 |[CMFCReBar::OnShowControlBarMenu](#onshowcontrolbarmenu)|(Overrides [CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|  
 |[CMFCReBar::OnToolHitTest](#ontoolhittest)|(Overrides [CWnd::OnToolHitTest](../../mfc/reference/cwnd-class.md#ontoolhittest).)|  
-|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CBasePane::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/e139f06a-9793-4ee2-bc3d-517389368c77).)|  
+|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CBasePane::OnUpdateCmdUI](http://msdn.microsoft.com/e139f06a-9793-4ee2-bc3d-517389368c77).)|  
 |[CMFCReBar::SetPaneAlignment](#setpanealignment)|(Overrides [CBasePane::SetPaneAlignment](../../mfc/reference/cbasepane-class.md#setpanealignment).)|  
   
 ## Remarks  

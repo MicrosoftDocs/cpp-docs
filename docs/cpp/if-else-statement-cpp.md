@@ -22,7 +22,6 @@ Controls conditional branching. Statements in the *if-block* are executed only i
 ## Syntax  
   
 ```  
-  
 if ( expression )  
 {
    statement1;
@@ -118,7 +117,6 @@ int main()
 #include <string>
 #include <algorithm>
 
-
 using namespace std;
 
 map<int, string> m;
@@ -146,13 +144,11 @@ int main()
 		shared_flag = false;
 	}
 
-
 	string s{ "if" };
     if (auto keywords = { "if", "for", "while" }; any_of(keywords.begin(), keywords.end(), [&s](const char* kw) { return s == kw; }))
 	{
 		cout << "Error! Token must not be a keyword\n";
 	}
-
 }
 ```
 
@@ -182,9 +178,7 @@ void f(T&& t, Rest&&... r)
 }
 ```
 
-  
- 
-## See Also  
+## See also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [switch Statement (C++)](../cpp/switch-statement-cpp.md)

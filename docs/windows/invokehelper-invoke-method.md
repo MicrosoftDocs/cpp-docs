@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    Invoke  
 )();  
@@ -50,32 +50,32 @@ STDMETHOD(
 )( typename Traits;  
 ```  
   
-#### Parameters  
- `arg1`  
+### Parameters  
+ *arg1*  
  Argument 1.  
   
- `arg2`  
+ *arg2*  
  Argument 2.  
   
- `arg3`  
+ *arg3*  
  Argument 3.  
   
- `arg4`  
+ *arg4*  
  Argument 4.  
   
- `arg5`  
+ *arg5*  
  Argument 5.  
   
- `arg6`  
+ *arg6*  
  Argument 6.  
   
- `arg7`  
+ *arg7*  
  Argument 7.  
   
- `arg8`  
+ *arg8*  
  Argument 8.  
   
- `arg9`  
+ *arg9*  
  Argument 9.  
   
 ## Return Value  

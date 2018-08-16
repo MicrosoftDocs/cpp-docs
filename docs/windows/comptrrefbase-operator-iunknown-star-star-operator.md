@@ -17,14 +17,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 operator IUnknown**() const;  
 ```  
   
 ## Remarks  
- Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the IUnknown interface.  
+ Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IUnknown` interface.  
   
- An error is emitted if the current ComPtrRefBase doesn't derive from IUnknown.  
+ An error is emitted if the current **ComPtrRefBase** doesn't derive from `IUnknown`.  
   
 ## Requirements  
  **Header:** client.h  

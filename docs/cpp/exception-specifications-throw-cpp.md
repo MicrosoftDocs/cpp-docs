@@ -123,7 +123,6 @@ About to throw 1
 in handler
 ```
 
-## See Also
-
- [try, throw, and catch Statements (C++)](../cpp/try-throw-and-catch-statements-cpp.md) 
+## See also
+ [try, throw, and catch Statements (C++)](../cpp/try-throw-and-catch-statements-cpp.md)  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)

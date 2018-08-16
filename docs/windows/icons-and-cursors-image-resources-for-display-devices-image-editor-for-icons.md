@@ -13,14 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Icons and Cursors: Image Resources for Display Devices (Image Editor for Icons)
-Icons and cursors are graphical resources that can contain multiple images in different sizes and color schemes for different types of display devices. In addition, a cursor has a "hot spot," the location Windows uses to track its position. Both icons and cursors are created and edited using the Image editor, as are bitmaps and other images.  
+Icons and cursors are graphical resources that can contain multiple images in different sizes and color schemes for different types of display devices. In addition, a cursor has a "hot spot," the location Windows uses to track its position. Both icons and cursors are created and edited using the **Image** editor, as are bitmaps and other images.  
   
- When you create a new icon or cursor, the Image editor first creates an image of a standard type. The image is initially filled with the screen (transparent) color. If the image is a cursor, the hot spot is initially the upper-left corner (coordinates 0,0).  
+ When you create a new icon or cursor, the **Image** editor first creates an image of a standard type. The image is initially filled with the screen (transparent) color. If the image is a cursor, the hot spot is initially the upper-left corner (coordinates 0,0).  
   
- By default, the Image editor supports the creation of additional images for the devices shown in the following table. You can create images for other devices by typing width, height, and color-count parameters into the [Custom Image dialog box](custom-image-dialog-box-image-editor-for-icons.md).  
+ By default, the **Image** editor supports the creation of additional images for the devices shown in the following table. You can create images for other devices by typing width, height, and color-count parameters into the [Custom Image dialog box](custom-image-dialog-box-image-editor-for-icons.md).  
   
 > [!NOTE]
->  Using the Image Editor, you can view 32-bit images, but you cannot edit them.  
+>  Using the **Image Editor**, you can view 32-bit images, but you cannot edit them.  
   
 |Color|Width (pixels)|Height (pixels)|  
 |-----------|----------------------|-----------------------|  
@@ -54,7 +54,7 @@ Icons and cursors are graphical resources that can contain multiple images in di
   
 -   [Setting a Cursor's Hot Spot](../windows/setting-a-cursor-s-hot-spot-image-editor-for-icons.md)  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
 ## Requirements  
  None  
@@ -63,4 +63,3 @@ Icons and cursors are graphical resources that can contain multiple images in di
  [Image Editor for Icons](../windows/image-editor-for-icons.md)   
  [Icons](http://msdn.microsoft.com/library/windows/desktop/ms646973)   
  [Cursors](http://msdn.microsoft.com/library/windows/desktop/ms646970)
-

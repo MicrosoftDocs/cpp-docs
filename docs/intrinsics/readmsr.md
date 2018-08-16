@@ -36,7 +36,7 @@ __int64 __readmsr( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readmsr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readmsr`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

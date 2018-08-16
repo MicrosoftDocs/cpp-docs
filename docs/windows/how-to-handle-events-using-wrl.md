@@ -25,7 +25,7 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
   
      [!code-cpp[wrl-consume-event#2](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_1.cpp)]  
   
-     Windows.Devices.Enumeration.h declares the types that are required to enumerate devices.  
+     `Windows.Devices.Enumeration.h` declares the types that are required to enumerate devices.  
   
      We recommend that you utilize the `using namespace` directive in your .cpp file to make the code more readable.  
   
@@ -80,9 +80,9 @@ This document shows how to use the Windows Runtime C++ Template Library (WRL)to 
  [!code-cpp[wrl-consume-event#1](../windows/codesnippet/CPP/how-to-handle-events-using-wrl_10.cpp)]  
   
 ## Compiling the Code  
- To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `wrl-consume-events.cpp` and then run the following command in a Visual Studio Command Prompt window.  
+ To compile the code, copy it and then paste it in a Visual Studio project, or paste it in a file that is named `wrl-consume-events.cpp` and then run the following command in a **Visual Studio Command Prompt** window.  
   
- **cl.exe wrl-consume-events.cpp runtimeobject.lib**  
+ `cl.exe wrl-consume-events.cpp runtimeobject.lib`  
   
 ## See Also  
  [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

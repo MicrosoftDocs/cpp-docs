@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCToolBar Class
 The `CMFCToolBar` class resembles [CToolBar Class](../../mfc/reference/ctoolbar-class.md), but provides additional support for user interface features. These include flat toolbars, toolbars with hot images, large icons, pager buttons, locked toolbars, rebar controls, text under images, background images, and tabbed toolbars. The `CMFCToolBar` class also contains built-in support for user customization of toolbars and menus, drag-and-drop between toolbars and menus, combo box buttons, edit box buttons, color pickers, and roll-up buttons.
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
   
 ## Syntax  
   
@@ -1906,7 +1906,7 @@ BOOL IsOneRowWithSibling();
  TRUE if the toolbar and its sibling are positioned on the same row; otherwise FALSE.  
   
 ### Remarks  
- The [CMFCCustomizeButton::CreatePopupMenu](http://msdn.microsoft.com/en-us/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) method calls this method to determine how to show the **Customize** pop-up menu. If this method returns TRUE, the framework displays the **Show Buttons on One Row** button. Otherwise, the framework displays the **Show Buttons on Two Rows** button.  
+ The [CMFCCustomizeButton::CreatePopupMenu](http://msdn.microsoft.com/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) method calls this method to determine how to show the **Customize** pop-up menu. If this method returns TRUE, the framework displays the **Show Buttons on One Row** button. Otherwise, the framework displays the **Show Buttons on Two Rows** button.  
   
  You typically do not have to use this method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   

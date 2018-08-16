@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory::Release Method
-Decrements the reference count for the current ClassFactory object.  
+Decrements the reference count for the current **ClassFactory** object.  
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD_(  
    ULONG,  
    Release  

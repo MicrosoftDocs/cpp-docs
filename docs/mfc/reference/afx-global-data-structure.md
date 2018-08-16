@@ -57,7 +57,7 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::OnSettingChange](#onsettingchange)|Detects the current state of the desktop's menu animation and taskbar autohide features.|  
 |[AFX_GLOBAL_DATA::RegisterWindowClass](#registerwindowclass)|Registers the specified MFC window class.|  
 |[AFX_GLOBAL_DATA::ReleaseTaskBarRefs](#releasetaskbarrefs)|Releases interfaces obtained through GetITaskbarList and GetITaskbarList3 methods.|  
-|[AFX_GLOBAL_DATA::Resume](#resume)|Reinitializes internal function pointers that access methods that support Windows [themes and visual styles](https://msdn.microsoft.com/library/windows/desktop/hh270423.aspx).|  
+|[AFX_GLOBAL_DATA::Resume](#resume)|Reinitializes internal function pointers that access methods that support Windows [themes and visual styles](/windows/desktop/Controls/visual-styles-overview).|  
 |[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Provides a simple way to call the Windows [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540) method.|  
 |[AFX_GLOBAL_DATA::SetMenuFont](#setmenufont)|Creates the specified logical font.|  
 |[AFX_GLOBAL_DATA::ShellCreateItemFromParsingName](#shellcreateitemfromparsingname)|Creates and initializes a Shell item object from a parsing name.|  

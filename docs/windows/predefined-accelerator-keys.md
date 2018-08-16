@@ -69,7 +69,7 @@ There are a number of predefined accelerator keys that may be part of a Windows 
 |VK_XBUTTON1|Windows: X1 mouse button|  
 |VK_XBUTTON2|Windows: X2 mouse button|  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
 ## Requirements  
  Win32  

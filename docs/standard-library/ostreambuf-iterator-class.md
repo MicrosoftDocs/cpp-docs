@@ -24,10 +24,10 @@ template <class CharType = char class Traits = char_traits <CharType>>
 
 ### Parameters
 
-`CharType`
- The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is `char`.
+*CharType*
+ The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is **char**.
 
-`Traits`
+*Traits*
  The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 ## Remarks
@@ -59,7 +59,7 @@ The ostreambuf_iterator class must satisfy the requirements for an output iterat
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x`.|
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x`.|
 |[operator++](#op_add_add)|A nonfunctional increment operator that returns an `ostreambuf_iterator` to the same object it addressed before the operation was called.|
 |[operator=](#op_eq)|The operator inserts a character into the associated stream buffer.|
 
@@ -79,7 +79,7 @@ typedef CharType char_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **CharType**.
+The type is a synonym for the template parameter `CharType`.
 
 ### Example
 
@@ -170,7 +170,7 @@ No insertions failed.
 *\
 ```
 
-## <a name="op_star"></a>  ostreambuf_iterator::operator*
+## <a name="op_star"></a>  ostreambuf_iterator::operator\*
 
 A nonfunctional dereferencing operator used to implement the output iterator expression \* *i* = *x*.
 
@@ -275,7 +275,7 @@ ostreambuf_iterator<CharType, Traits>& operator=(CharType _Char);
 
 ### Parameters
 
-`_Char`
+*_Char*
  The character to be inserted into the stream buffer.
 
 ### Return Value
@@ -328,15 +328,15 @@ ostreambuf_iterator(ostream_type& Ostr) throw();
 
 ### Parameters
 
-`strbuf`
+*strbuf*
  The output streambuf object used to initialize the output stream-buffer pointer.
 
-`Ostr`
+*Ostr*
  The output stream object used to initialize the output stream-buffer pointer.
 
 ### Remarks
 
-The first constructor initializes the output stream-buffer pointer with `strbuf`.
+The first constructor initializes the output stream-buffer pointer with *strbuf*.
 
 The second constructor initializes the output stream-buffer pointer with `Ostr`. `rdbuf`. The stored pointer must not be a null pointer.
 
@@ -399,7 +399,7 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
 
 ### Remarks
 
-The type is a synonym for `basic_streambuf`\< **CharType**, **Traits**>, a stream class for I/O buffers that becomes `streambuf` when specialized to character type `char`.
+The type is a synonym for `basic_streambuf`\< **CharType**, **Traits**>, a stream class for I/O buffers that becomes `streambuf` when specialized to character type **char**.
 
 ### Example
 
@@ -415,7 +415,7 @@ typedef Traits traits_type;
 
 ### Remarks
 
-The type is a synonym for the template parameter **Traits**.
+The type is a synonym for the template parameter `Traits`.
 
 ### Example
 

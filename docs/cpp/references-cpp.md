@@ -50,7 +50,7 @@ A reference, like a pointer, stores the address of an object that is located els
   
  3. An optional initializer.  
   
- The more complex declarator forms for pointers to arrays and functions also apply to references to arrays and functions, see [pointers](../cpp/pointers-cpp.md) and [declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838).  
+ The more complex declarator forms for pointers to arrays and functions also apply to references to arrays and functions, see [pointers](../cpp/pointers-cpp.md).  
   
  Multiple declarators and initializers may appear in a comma-separated list following a single declaration specifier. For example:  
   
@@ -99,12 +99,8 @@ int main() {
 4  
 ```  
   
-## Comment  
- Topics in this section:  
-  
--   [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)  
-  
--   [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)  
-  
--   [References to Pointers](../cpp/references-to-pointers.md)  
+## See also
+ [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)  
+ [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)  
+ [References to Pointers](../cpp/references-to-pointers.md)  
   

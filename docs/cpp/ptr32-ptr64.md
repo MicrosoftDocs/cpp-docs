@@ -63,5 +63,4 @@ int main()
 **END Microsoft Specific**
 
 ## See also
-
-- [Fundamental Types](../cpp/fundamental-types-cpp.md)
+ [Fundamental Types](../cpp/fundamental-types-cpp.md)

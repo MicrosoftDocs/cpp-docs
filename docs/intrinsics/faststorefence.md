@@ -27,7 +27,7 @@ void __faststorefence();
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__faststorefence`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__faststorefence`|x64|  
   
  **Header file** \<intrin.h>  
   

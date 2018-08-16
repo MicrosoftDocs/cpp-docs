@@ -30,7 +30,7 @@ The type to query.
 
 ## Remarks
 
-`is_pod<T>::value` is `true` if the type *T* is Plain Old Data (POD). Otherwise it is `false`.
+`is_pod<T>::value` is **true** if the type *T* is Plain Old Data (POD). Otherwise it is **false**.
 
 Arithmetic types, enumeration types, pointer types, and pointer to member types are POD.
 

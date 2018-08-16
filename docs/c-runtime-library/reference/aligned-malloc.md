@@ -30,15 +30,15 @@ void * _aligned_malloc(
 
 ### Parameters
 
-*size*<br/>
+*size*  
 Size of the requested memory allocation.
 
-*alignment*<br/>
+*alignment*  
 The alignment value, which must be an integer power of 2.
 
 ## Return Value
 
-A pointer to the memory block that was allocated or **NULL** if the operation failed. The pointer is a multiple of *alignment*.
+A pointer to the memory block that was allocated or NULL if the operation failed. The pointer is a multiple of *alignment*.
 
 ## Remarks
 
@@ -46,7 +46,7 @@ A pointer to the memory block that was allocated or **NULL** if the operation fa
 
 **_aligned_malloc** is marked `__declspec(noalias)` and `__declspec(restrict)`, meaning that the function is guaranteed not to modify global variables and that the pointer returned is not aliased. For more information, see [noalias](../../cpp/noalias.md) and [restrict](../../cpp/restrict.md).
 
-This function sets **errno** to **ENOMEM** if the memory allocation failed or if the requested size was greater than **_HEAP_MAXREQ**. For more information about **errno**, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_malloc** validates its parameters. If *alignment* is not a power of 2 or *size* is zero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns **NULL** and sets **errno** to **EINVAL**.
+This function sets `errno` to `ENOMEM` if the memory allocation failed or if the requested size was greater than `_HEAP_MAXREQ`. For more information about `errno`, see [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Also, **_aligned_malloc** validates its parameters. If *alignment* is not a power of 2 or *size* is zero, this function invokes the invalid parameter handler, as described in [Parameter Validation](../../c-runtime-library/parameter-validation.md). If execution is allowed to continue, this function returns NULL and sets `errno` to `EINVAL`.
 
 ## Requirements
 
@@ -138,4 +138,4 @@ This pointer, 3280891, is offset by 5 on alignment of 16
 
 ## See also
 
-[Data Alignment](../../c-runtime-library/data-alignment.md)<br/>
+[Data Alignment](../../c-runtime-library/data-alignment.md)  

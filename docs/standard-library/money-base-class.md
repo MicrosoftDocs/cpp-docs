@@ -27,17 +27,17 @@ struct pattern
 
 ## Remarks
 
-The enumeration **part** describes the possible values in elements of the array field in the structure pattern. The values of **part** are:
+The enumeration `part` describes the possible values in elements of the array field in the structure pattern. The values of `part` are:
 
-- **none** to match zero or more spaces or generate nothing.
+- `none` to match zero or more spaces or generate nothing.
 
-- **sign** to match or generate a positive or negative sign.
+- `sign` to match or generate a positive or negative sign.
 
-- **space** to match zero or more spaces or generate a space.
+- `space` to match zero or more spaces or generate a space.
 
-- **symbol** to match or generate a currency symbol.
+- `symbol` to match or generate a currency symbol.
 
-- **value** to match or generate a monetary value.
+- `value` to match or generate a monetary value.
 
 ## Requirements
 

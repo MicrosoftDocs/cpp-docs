@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Output Stream Manipulators with One Argument (int or long)
 
-The iostream class library provides a set of macros for creating parameterized manipulators. Manipulators with a single `int` or `long` argument are a special case. To create an output stream manipulator that accepts a single `int` or `long` argument (like `setw`), you must use the _Smanip macro, which is defined in \<iomanip>. This example defines a `fillblank` manipulator that inserts a specified number of blanks into the stream:
+The iostream class library provides a set of macros for creating parameterized manipulators. Manipulators with a single **int** or **long** argument are a special case. To create an output stream manipulator that accepts a single **int** or **long** argument (like `setw`), you must use the _Smanip macro, which is defined in \<iomanip>. This example defines a `fillblank` manipulator that inserts a specified number of blanks into the stream:
 
 ## Example
 

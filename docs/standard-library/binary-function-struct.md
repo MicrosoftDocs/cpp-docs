@@ -34,7 +34,7 @@ The template struct serves as a base for classes that define a member function o
 
 **const second_argument_type&** ) **const**
 
-All such binary functions can refer to their first argument type as **first_argument_type**, their second argument type as **second_argument_type**, and their return type as ***result_type***.
+All such binary functions can refer to their first argument type as `first_argument_type`, their second argument type as `second_argument_type`, and their return type as ***result_type***.
 
 ## Example
 

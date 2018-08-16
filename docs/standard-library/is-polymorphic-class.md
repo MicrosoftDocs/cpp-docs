@@ -25,12 +25,12 @@ struct is_polymorphic;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` is a class that declares or inherits a virtual function, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is a class that declares or inherits a virtual function, otherwise it holds false.
 
 ## Example
 

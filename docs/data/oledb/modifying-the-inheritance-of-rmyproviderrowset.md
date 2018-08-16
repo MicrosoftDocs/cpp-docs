@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Modifying the Inheritance of RMyProviderRowset
-To add the `IRowsetLocate` interface to the simple read-only provider example, modify the inheritance of **RMyProviderRowset**. Initially, **RMyProviderRowset** inherits from `CRowsetImpl`. You need to modify it to inherit from **CRowsetBaseImpl**.  
+To add the `IRowsetLocate` interface to the simple read-only provider example, modify the inheritance of `RMyProviderRowset`. Initially, `RMyProviderRowset` inherits from `CRowsetImpl`. You need to modify it to inherit from `CRowsetBaseImpl`.  
   
  To do this, create a new class, `CMyRowsetImpl`, in MyProviderRS.h:  
   
@@ -30,18 +30,18 @@ class CMyRowsetImpl:
   
  Now, edit the COM interface map in MyProviderRS.h to be as follows:  
   
-```  
+```cpp  
 BEGIN_COM_MAP(CMyRowsetImpl)  
    COM_INTERFACE_ENTRY(IRowsetLocate)  
    COM_INTERFACE_ENTRY_CHAIN(_RowsetBaseClass)  
 END_COM_MAP()  
 ```  
   
- This creates a COM interface map that tells `CMyRowsetImpl` to call **QueryInterface** for both the `IRowset` and `IRowsetLocate` interfaces. To get all of the implementation for the other rowset classes, the map links the `CMyRowsetImpl` class back to the **CRowsetBaseImpl** class defined by the OLE DB Templates; the map uses the COM_INTERFACE_ENTRY_CHAIN macro, which tells OLE DB templates to scan the COM map in **CRowsetBaseImpl** in response to a `QueryInterface` call.  
+ This creates a COM interface map that tells `CMyRowsetImpl` to call `QueryInterface` for both the `IRowset` and `IRowsetLocate` interfaces. To get all of the implementation for the other rowset classes, the map links the `CMyRowsetImpl` class back to the `CRowsetBaseImpl` class defined by the OLE DB Templates; the map uses the COM_INTERFACE_ENTRY_CHAIN macro, which tells OLE DB templates to scan the COM map in `CRowsetBaseImpl` in response to a `QueryInterface` call.  
   
  Finally, link `RAgentRowset` to `CMyRowsetBaseImpl` by modifying `RAgentRowset` to inherit from `CMyRowsetImpl`, as follows:  
   
-```  
+```cpp  
 class RAgentRowset : public CMyRowsetImpl<RAgentRowset, CAgentMan, CMyProviderCommand>  
 ```  
   

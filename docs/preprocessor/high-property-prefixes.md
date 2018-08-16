@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # high_property_prefixes
 **C++ Specific**  
   
- Specifies alternate prefixes for three property methods.  
+Specifies alternate prefixes for three property methods.  
   
 ## Syntax  
   
@@ -23,21 +23,23 @@ ms.workload: ["cplusplus"]
 high_property_prefixes("GetPrefix","PutPrefix","PutRefPrefix")  
 ```  
   
-#### Parameters  
- `GetPrefix`  
- Prefix to be used for the **propget** methods.  
+### Parameters  
+*GetPrefix*  
+Prefix to be used for the `propget` methods.  
   
- `PutPrefix`  
- Prefix to be used for the **propput** methods.  
+*PutPrefix*  
+Prefix to be used for the `propput` methods.  
   
- `PutRefPrefix`  
- Prefix to be used for the **propputref** methods.  
+*PutRefPrefix*  
+Prefix to be used for the `propputref` methods.  
   
 ## Remarks  
- By default, high-level error-handling **propget**, **propput**, and **propputref** methods are exposed by member functions named with prefixes **Get**, `Put`, and **PutRef**, respectively.  
+ 
+By default, high-level error-handling `propget`, `propput`, and `propputref` methods are exposed by member functions named with prefixes `Get`, `Put`, and `PutRef`, respectively.  
   
- **END C++ Specific**  
+**END C++ Specific**  
   
 ## See Also  
- [#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
- [#import Directive](../preprocessor/hash-import-directive-cpp.md)
+ 
+[#import Attributes](../preprocessor/hash-import-attributes-cpp.md)   
+[#import Directive](../preprocessor/hash-import-directive-cpp.md)

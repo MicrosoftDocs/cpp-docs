@@ -25,12 +25,12 @@ struct is_unsigned;
 
 ### Parameters
 
-`Ty`
+*Ty*
  The type to query.
 
 ## Remarks
 
-An instance of the type predicate holds true if the type `Ty` is an unsigned integral type or a `cv-qualified` unsigned integral type, otherwise it holds false.
+An instance of the type predicate holds true if the type *Ty* is an unsigned integral type or a `cv-qualified` unsigned integral type, otherwise it holds false.
 
 ## Example
 

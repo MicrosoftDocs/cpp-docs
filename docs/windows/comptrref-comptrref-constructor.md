@@ -17,18 +17,18 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 ComPtrRef(  
    _In_opt_ T* ptr  
 );  
 ```  
   
-#### Parameters  
- `ptr`  
- The underlying value of another ComPtrRef object.  
+### Parameters  
+ *ptr*  
+ The underlying value of another **ComPtrRef** object.  
   
 ## Remarks  
- Initializes a new instance of the ComPtrRef class from the specified pointer to another ComPtrRef object.  
+ Initializes a new instance of the **ComPtrRef** class from the specified pointer to another **ComPtrRef** object.  
   
 ## Requirements  
  **Header:** client.h  

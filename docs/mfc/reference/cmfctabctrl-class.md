@@ -112,7 +112,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
   
 -   Detachable tabbed windows.  
   
- The `CMFCTabCtrl` class can be used with a dialog box, but is intended for applications that use docking control bars like [!INCLUDE[ofprexcel](../../mfc/reference/includes/ofprexcel_md.md)] and [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)]. For more information, see [CDockablePane Class](../../mfc/reference/cdockablepane-class.md).  
+ The `CMFCTabCtrl` class can be used with a dialog box, but is intended for applications that use docking control bars like Microsoft Excel and Visual Studio. For more information, see [CDockablePane Class](../../mfc/reference/cdockablepane-class.md).  
   
  Follow these steps to add a resizable, docking tab control in your application:  
   
@@ -160,7 +160,7 @@ void ActivateMDITab(int nTab = -1);
  The zero-based index of a tab to display, or -1 to specify the currently active tab.  
   
 ##  <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual BOOL AllowDestroyEmptyTabbedPane() const;  

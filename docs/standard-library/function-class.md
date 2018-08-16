@@ -66,10 +66,10 @@ public:
 
 ### Parameters
 
-`Fty`
+*Fty*
  The function type to wrap.
 
-`Ax`
+*Ax*
  The allocator function.
 
 ## Remarks
@@ -143,18 +143,18 @@ template <class Fx, class Alloc>
 
 ### Parameters
 
-`_Func`
+*_Func*
  A callable object.
 
-`_Fnref`
+*_Fnref*
  A reference wrapper that contains a callable object.
 
-`Ax`
+*Ax*
  An allocator object.
 
 ### Remarks
 
-The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object `Ax`.
+The member functions each replace the `callable object` held by `*this` with the callable object passed as the `operand`. Both allocate storage with the allocator object *Ax*.
 
 ## <a name="function"></a>  function::function
 
@@ -181,22 +181,22 @@ template <class Fx, class Alloc>
 
 ### Parameters
 
-`right`
+*right*
  The function object to copy.
 
-`Fx`
+*Fx*
  The type of the callable object.
 
-`_Func`
+*_Func*
  The callable object to wrap.
 
-`Alloc`
+*Alloc*
  The allocator type.
 
-`Ax`
+*Ax*
  The allocator.
 
-`_Fnref`
+*_Fnref*
  The callable object reference to wrap.
 
 ### Remarks
@@ -283,7 +283,7 @@ operator unspecified();
 
 ### Remarks
 
-The operator returns a value that is convertible to `bool` with a true value only if the object is not empty. You use it to test whether the object is empty.
+The operator returns a value that is convertible to **bool** with a true value only if the object is not empty. You use it to test whether the object is empty.
 
 ### Example
 
@@ -328,10 +328,10 @@ result_type operator()(
 
 ### Parameters
 
-`TN`
+*TN*
  The type of the Nth call argument.
 
-`tN`
+*tN*
  The Nth call argument.
 
 ### Remarks
@@ -381,16 +381,16 @@ template <class Fty>
 
 ### Parameters
 
-`npc`
+*npc*
  A null pointer constant.
 
-`right`
+*right*
  The function object to copy.
 
-`fn`
+*fn*
  The callable object to wrap.
 
-`fnref`
+*fnref*
  The callable object reference to wrap.
 
 ### Remarks
@@ -500,12 +500,12 @@ void swap(function& right);
 
 ### Parameters
 
-`right`
+*right*
  The function object to swap with.
 
 ### Remarks
 
-The member function swaps the target objects between `*this` and `right`. It does so in constant time and throws no exceptions.
+The member function swaps the target objects between `*this` and *right*. It does so in constant time and throws no exceptions.
 
 ### Example
 
@@ -562,14 +562,14 @@ template <class Fty2>
 
 ### Parameters
 
-`Fty2`
+*Fty2*
  The target callable object type to test.
 
 ### Remarks
 
-The type `Fty2` must be callable for the argument types `T1, T2, ..., TN` and the return type `Ret`. If `target_type() == typeid(Fty2)`, the member template function returns the address of the target object; otherwise, it returns 0.
+The type *Fty2* must be callable for the argument types `T1, T2, ..., TN` and the return type `Ret`. If `target_type() == typeid(Fty2)`, the member template function returns the address of the target object; otherwise, it returns 0.
 
-A type `Fty2` is callable for the argument types `T1, T2, ..., TN` and the return type `Ret` if, for lvalues `fn, t1, t2, ..., tN` of types `Fty2, T1, T2, ..., TN`, respectively, `INVOKE(fn, t1, t2, ..., tN)` is well-formed and, if `Ret` is not `void`, convertible to `Ret`.
+A type *Fty2* is callable for the argument types `T1, T2, ..., TN` and the return type `Ret` if, for lvalues `fn, t1, t2, ..., tN` of types `Fty2, T1, T2, ..., TN`, respectively, `INVOKE(fn, t1, t2, ..., tN)` is well-formed and, if `Ret` is not **void**, convertible to `Ret`.
 
 ### Example
 

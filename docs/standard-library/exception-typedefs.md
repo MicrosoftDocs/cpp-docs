@@ -5,6 +5,8 @@ ms.date: "11/04/2016"
 ms.topic: "reference"
 f1_keywords: ["exception/std::exception_ptr", "exception/std::terminate_handler", "exception/std::unexpected_handler"]
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
+author: "corob-msft"
+ms.author: "corob"
 ---
 # &lt;exception&gt; typedefs
 
@@ -28,7 +30,7 @@ Use an `exception_ptr` object to reference the current exception or an instance 
 
 When you declare an `exception_ptr` variable, the variable is not associated with any exception. That is, its exception reference field is NULL. Such an `exception_ptr` object is called a *null exception_ptr*.
 
-Use the `current_exception` or `make_exception_ptr` function to assign an exception to an `exception_ptr` object. When you assign an exception to an `exception_ptr` variable, the variable's exception reference field points to a copy of the exception. If there is insufficient memory to copy the exception, the exception reference field points to a copy of a [std::bad_alloc](../standard-library/bad-alloc-class.md) exception. If the `current_exception` or `make_exception_ptr` function cannot copy the exception for any other reason, the function calls the **terminate** CRT function to exit the current process.
+Use the `current_exception` or `make_exception_ptr` function to assign an exception to an `exception_ptr` object. When you assign an exception to an `exception_ptr` variable, the variable's exception reference field points to a copy of the exception. If there is insufficient memory to copy the exception, the exception reference field points to a copy of a [std::bad_alloc](../standard-library/bad-alloc-class.md) exception. If the `current_exception` or `make_exception_ptr` function cannot copy the exception for any other reason, the function calls the `terminate` CRT function to exit the current process.
 
 Despite its name, an `exception_ptr` object is not itself a pointer. It does not obey pointer semantics and cannot be used with the pointer member access ( `->`) or indirection (*) operators. The `exception_ptr` object has no public data members or member functions.
 

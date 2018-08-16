@@ -27,11 +27,11 @@ bool operator!=(
 
 ### Parameters
 
-`left`
- An object of type **list**.
+*left*
+ An object of type `list`.
 
-`right`
- An object of type **list**.
+*right*
+ An object of type `list`.
 
 ### Return Value
 
@@ -78,11 +78,11 @@ bool operator<(
 
 ### Parameters
 
-`left`
- An object of type **list**.
+*left*
+ An object of type `list`.
 
-`right`
- An object of type **list**.
+*right*
+ An object of type `list`.
 
 ### Return Value
 
@@ -133,11 +133,11 @@ bool operator<=(
 
 ### Parameters
 
-`left`
- An object of type **list**.
+*left*
+ An object of type `list`.
 
-`right`
- An object of type **list**.
+*right*
+ An object of type `list`.
 
 ### Return Value
 
@@ -188,11 +188,11 @@ bool operator==(
 
 ### Parameters
 
-`left`
- An object of type **list**.
+*left*
+ An object of type `list`.
 
-`right`
- An object of type **list**.
+*right*
+ An object of type `list`.
 
 ### Return Value
 
@@ -239,11 +239,11 @@ bool operator>(
 
 ### Parameters
 
-`left`
- An object of type **list**.
+*left*
+ An object of type `list`.
 
-`right`
- An object of type **list**.
+*right*
+ An object of type `list`.
 
 ### Return Value
 
@@ -294,11 +294,11 @@ bool operator>=(
 
 ### Parameters
 
-`left`
- An object of type **list**.
+*left*
+ An object of type `list`.
 
-`right`
- An object of type **list**.
+*right*
+ An object of type `list`.
 
 ### Return Value
 

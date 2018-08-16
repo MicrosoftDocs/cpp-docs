@@ -227,7 +227,7 @@ virtual void OnDrawBorder(
  Points to the device context used to draw the border.  
   
  [in] *rectClient*  
- A rectangle in the device context that is specified by the the *pDC* parameter that defines the boundaries of the button to be drawn.  
+ A rectangle in the device context that is specified by the *pDC* parameter that defines the boundaries of the button to be drawn.  
   
  [in] *uiState*  
  Specifies the visual state of the button.  

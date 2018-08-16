@@ -13,19 +13,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # id
-Specifies a `dispid` parameter for a member function (either a property or a method, in an interface or dispinterface).  
+Specifies a *dispid* parameter for a member function (either a property or a method, in an interface or dispinterface).  
   
 ## Syntax  
   
-```  
-  
-      [ id(  
+```cpp  
+[ id(  
    dispid  
 ) ]  
 ```  
   
-#### Parameters  
- `dispid`  
+### Parameters  
+ *dispid*  
  The dispatch ID for the interface method.  
   
 ## Remarks  
@@ -53,4 +52,4 @@ Specifies a `dispid` parameter for a member function (either a property or a met
  [Data Member Attributes](../windows/data-member-attributes.md)   
  [defaultvalue](../windows/defaultvalue.md)   
  [in](../windows/in-cpp.md)   
- [out](../windows/out-cpp.md)   
+ [out](../windows/out-cpp.md)   

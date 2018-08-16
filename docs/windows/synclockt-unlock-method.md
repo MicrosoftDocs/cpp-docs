@@ -17,12 +17,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 void Unlock();  
 ```  
   
 ## Remarks  
- Releases control of the resource held by the current SyncLockT object, if any.  
+ Releases control of the resource held by the current **SyncLockT** object, if any.  
   
 ## Requirements  
  **Header:** corewrappers.h  

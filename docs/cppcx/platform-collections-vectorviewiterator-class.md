@@ -110,7 +110,7 @@ VectorViewIterator operator--(int);
   
 
 
-## <a name="operator-dereference"></a>  VectorViewIterator::operator* Operator
+## <a name="operator-dereference"></a>  VectorViewIterator::operator\* Operator
 Retrieves a reference to the element specified by the current VectorViewIterator.  
   
 ### Syntax  

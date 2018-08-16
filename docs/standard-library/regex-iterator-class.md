@@ -54,13 +54,13 @@ private:
 
 ### Parameters
 
-`BidIt`
+*BidIt*
  The iterator type for submatches.
 
-`Elem`
+*Elem*
  The type of elements to match.
 
-`RXtraits`
+*RXtraits*
  Traits class for elements.
 
 ## Remarks
@@ -205,7 +205,7 @@ bool operator!=(const regex_iterator& right);
 
 ### Parameters
 
-`right`
+*right*
  The iterator to compare to.
 
 ### Remarks
@@ -378,12 +378,12 @@ bool operator==(const regex_iterator& right);
 
 ### Parameters
 
-`right`
+*right*
  The iterator to compare to.
 
 ### Remarks
 
-The member function returns true if `*this` and `right` are both end-of-sequence iterators or if neither is an end-of-sequence iterator and `begin == right.begin`, `end == right.end`, `pregex == right.pregex`, and `flags == right.flags`. Otherwise it returns false.
+The member function returns true if `*this` and *right* are both end-of-sequence iterators or if neither is an end-of-sequence iterator and `begin == right.begin`, `end == right.end`, `pregex == right.pregex`, and `flags == right.flags`. Otherwise it returns false.
 
 ### Example
 
@@ -609,21 +609,21 @@ regex_iterator(BidIt first,
 
 ### Parameters
 
-`first`
+*first*
  Beginning of sequence to match.
 
-`last`
+*last*
  End of sequence to match.
 
-`re`
+*re*
  Regular expression for matches.
 
-`f`
+*f*
  Flags for matches.
 
 ### Remarks
 
-The first constructor constructs an end-of-sequence iterator. The second constructor initializes the stored value `begin` with `first`, the stored value `end` with `last`, the stored value `pregex` with `&re`, and the stored value `flags` with `f`. It then calls `regex_search(begin, end, match, *pregex, flags)`. If the search fails, the constructor sets the object to an end-of-sequence iterator.
+The first constructor constructs an end-of-sequence iterator. The second constructor initializes the stored value `begin` with *first*, the stored value `end` with *last*, the stored value `pregex` with `&re`, and the stored value `flags` with *f*. It then calls `regex_search(begin, end, match, *pregex, flags)`. If the search fails, the constructor sets the object to an end-of-sequence iterator.
 
 ### Example
 

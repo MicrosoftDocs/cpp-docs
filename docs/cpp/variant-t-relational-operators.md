@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 bool operator==(  
    const VARIANT& varSrc) const;  
 bool operator==(  
@@ -33,18 +32,18 @@ bool operator!=(
   
 #### Parameters  
  *varSrc*  
- A **VARIANT** to be compared with the `_variant_t` object.  
+ A `VARIANT` to be compared with the `_variant_t` object.  
   
- `pSrc`  
- Pointer to the **VARIANT** to be compared with the `_variant_t` object.  
+ *pSrc*  
+ Pointer to the `VARIANT` to be compared with the `_variant_t` object.  
   
 ## Return Value  
  Returns **true** if comparison holds, **false** if not.  
   
 ## Remarks  
- Compares a `_variant_t` object with a **VARIANT**, testing for equality or inequality.  
+ Compares a `_variant_t` object with a `VARIANT`, testing for equality or inequality.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)

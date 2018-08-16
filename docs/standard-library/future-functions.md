@@ -30,7 +30,7 @@ future<typename result_of<Fn(ArgTypes...)>::type>
 
 ### Parameters
 
-`policy`
+*policy*
  A [launch](../standard-library/future-enums.md#launch) value.
 
 ### Remarks
@@ -49,11 +49,9 @@ The second function returns a `future<Ty>` object whose *associated asynchronous
 
 Unless `decay<Fn>::type` is a type other than launch, the second function does not participate in overload resolution.
 
-If `policy` is `launch::any`, the function might choose `launch::async` or `launch::deferred`. In this implementation, the function uses `launch::async`.
+The C++ standard states that if policy is launch::async, the function creates a new thread. However the Microsoft implementation is currently non-conforming. It obtains its threads from the Windows ThreadPool, which in some cases may provide a recycled thread rather than a new one. This means that the `launch::async` policy is actually implemented as `launch::async|launch::deferred`.  Another implication of the ThreadPool-based implementation is that there is no guarantee that thread-local variables will be destroyed when the thread completes. If the thread is recycled and provided to a new call to `async`, the old variables will still exist. We therefore recommend that you do not use thread-local variables with `async`.
 
-If `policy` is `launch::async`, the function creates a thread that evaluates `INVOKE(dfn, dargs..., Ty)`. The function returns after it creates the thread without waiting for results. If the system can't start a new thread, the function throws a [system_error](../standard-library/system-error-class.md) that has an error code of `resource_unavailable_try_again`.
-
-If `policy` is `launch::deferred`, the function marks its associated asynchronous state as holding a *deferred function* and returns. The first call to any non-timed function that waits for the associated asynchronous state to be ready in effect calls the deferred function by evaluating `INVOKE(dfn, dargs..., Ty)`.
+If *policy* is `launch::deferred`, the function marks its associated asynchronous state as holding a *deferred function* and returns. The first call to any non-timed function that waits for the associated asynchronous state to be ready in effect calls the deferred function by evaluating `INVOKE(dfn, dargs..., Ty)`.
 
 In all cases, the associated asynchronous state of the `future` object is not set to *ready* until the evaluation of `INVOKE(dfn, dargs..., Ty)` completes, either by throwing an exception or by returning normally. The result of the associated asynchronous state is an exception if one was thrown, or any value that's returned by the evaluation.
 
@@ -80,7 +78,7 @@ inline error_code make_error_code(future_errc Errno) noexcept;
 
 ### Parameters
 
-`Errno`
+*Errno*
  A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.
 
 ### Return Value
@@ -97,7 +95,7 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 
 ### Parameters
 
-`Errno`
+*Errno*
  A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.
 
 ### Return Value
@@ -118,10 +116,10 @@ void swap(packaged_task<Ty(ArgTypes...)>& Left, packaged_task<Ty(ArgTypes...)>& 
 
 ### Parameters
 
-`Left`
+*Left*
  The left `promise` object.
 
-`Right`
+*Right*
  The right `promise` object.
 
 ## See also

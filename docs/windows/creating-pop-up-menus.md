@@ -20,7 +20,7 @@ ms.workload: ["cplusplus", "uwp"]
   
 1.  [Create a menu](../windows/creating-a-menu.md) with an empty title (don't provide a **Caption**).  
   
-2.  [Add a menu command to the new menu](../windows/adding-commands-to-a-menu.md). Move to the first menu command below the blank menu title (the temporary caption says Type Here). Type a **Caption** and any other information.  
+2.  [Add a menu command to the new menu](../windows/adding-commands-to-a-menu.md). Move to the first menu command below the blank menu title (the temporary caption says `Type Here`). Type a **Caption** and any other information.  
   
      Repeat this process for any other menu commands in the pop-up menu.  
   
@@ -29,10 +29,7 @@ ms.workload: ["cplusplus", "uwp"]
     > [!TIP]
     >  For more information on viewing the pop-up menu, see [Viewing a Menu as a Pop-Up Menu](../windows/viewing-a-menu-as-a-pop-up-menu.md).  
   
-
-  
- **Requirements**  
-  
+## Requirements  
  Win32  
   
 ## See Also  

@@ -59,13 +59,13 @@ private:
 
 ### Parameters
 
-`BidIt`
+*BidIt*
  The iterator type for submatches.
 
-`Elem`
+*Elem*
  The type of elements to match.
 
-`RXtraits`
+*RXtraits*
  Traits class for elements.
 
 ## Remarks
@@ -310,7 +310,7 @@ bool operator!=(const regex_token_iterator& right);
 
 ### Parameters
 
-`right`
+*right*
  The iterator to compare to.
 
 ### Remarks
@@ -655,7 +655,7 @@ bool operator==(const regex_token_iterator& right);
 
 ### Parameters
 
-right
+*right*
  The iterator to compare to.
 
 ### Remarks
@@ -1121,16 +1121,16 @@ regex_token_iterator(BidIt first, BidIt last,
 
 ### Parameters
 
-`first`
+*first*
  Beginning of sequence to match.
 
-`last`
+*last*
  End of sequence to match.
 
-`re`
+*re*
  Regular expression for matches.
 
-`f`
+*f*
  Flags for matches.
 
 ### Remarks

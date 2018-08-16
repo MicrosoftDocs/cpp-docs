@@ -32,7 +32,7 @@ void __svm_stgi(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__svm_stgi`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__svm_stgi`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

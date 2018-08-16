@@ -72,14 +72,14 @@ unsigned char _interlockedbittestandreset64_HLERelease(
   
 |Intrinsic|Architecture|Header|  
 |---------------|------------------|------------|  
-|`_interlockedbittestandreset`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_interlockedbittestandreset`|x86, ARM, x64|\<intrin.h>|  
 |`_interlockedbittestandreset_acq`, `_interlockedbittestandreset_nf`, `_interlockedbittestandreset_rel`|ARM|\<intrin.h>|  
-|`_interlockedbittestandreset_HLEAcquire`, `_interlockedbittestandreset_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
-|`_interlockedbittestandreset64`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
-|`_interlockedbittestandreset64_HLEAcquire`, `_interlockedbittestandreset64_HLERelease`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
+|`_interlockedbittestandreset_HLEAcquire`, `_interlockedbittestandreset_HLERelease`|x86, x64|\<immintrin.h>|  
+|`_interlockedbittestandreset64`|x64|\<intrin.h>|  
+|`_interlockedbittestandreset64_HLEAcquire`, `_interlockedbittestandreset64_HLERelease`|x64|\<immintrin.h>|  
   
 ## Remarks  
- On x86 and [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] processors, these intrinsics use the `lock btr` instruction, that reads and sets the specified bit to zero in an atomic operation.  
+ On x86 and x64 processors, these intrinsics use the `lock btr` instruction, that reads and sets the specified bit to zero in an atomic operation.  
   
  On ARM processors, use the intrinsics with `_acq` and `_rel` suffixes for acquire and release semantics, such as at the beginning and end of a critical section. The ARM intrinsics with an `_nf` ("no fence") suffix do not act as a memory barrier.  
   

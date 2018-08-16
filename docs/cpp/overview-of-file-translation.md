@@ -37,9 +37,9 @@ C++ programs, like C programs, consist of one or more files. Each of these files
   
 - Single-line comments are supported. See [Comments](../cpp/comments-cpp.md) for more information.  
   
-- One predefined macro, **__cplusplus**, is defined only for C++. See [Predefined Macros](../preprocessor/predefined-macros.md) in the *Preprocessor Reference* for more information.  
+- One predefined macro, `__cplusplus`, is defined only for C++. See [Predefined Macros](../preprocessor/predefined-macros.md) in the *Preprocessor Reference* for more information.  
   
 - The C preprocessor does not recognize the C++ operators: **.\***, **->\***, and `::`. See [Operators](../cpp/cpp-built-in-operators-precedence-and-associativity.md) and [Expressions](../cpp/expressions-cpp.md), for more information about operators.  
   
-## See Also  
+## See also  
  [Lexical Conventions](../cpp/lexical-conventions.md)

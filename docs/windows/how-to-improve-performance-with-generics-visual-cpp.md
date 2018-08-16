@@ -25,7 +25,7 @@ With generics, you can create reusable code based on a type parameter. The actua
   
  The following code example shows the two main drawbacks of the .NET Framework collections before generics.  
   
-```  
+```cpp  
 // perf_pre_generics.cpp  
 // compile with: /clr  
   
@@ -77,7 +77,7 @@ Popped an int: 7
   
  Compare the example written above with this example that uses a generic <xref:System.Collections.Generic.Stack%601> collection. On large collections that are frequently accessed, the performance of this example will be significantly greater than the preceding example.  
   
-```  
+```cpp  
 // perf_post_generics.cpp  
 // compile with: /clr  
   

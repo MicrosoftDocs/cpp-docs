@@ -22,9 +22,9 @@ The class stores the parameters that characterize an object of type [gslice_arra
 
 - A starting index.
 
-- A length vector of class **valarray<size_t>**.
+- A length vector of class `valarray<size_t>`.
 
-- A stride vector of class **valarray<size_t>**.
+- A stride vector of class `valarray<size_t>`.
 
 The two vectors must have the same length.
 
@@ -67,22 +67,22 @@ gslice(
 
 ### Parameters
 
-`_StartIndex`
+*_StartIndex*
  The valarray index of the first element in the subset.
 
-`_LenArray`
+*_LenArray*
  An array specifying the number of elements in each slice.
 
-`_IncArray`
+*_IncArray*
  An array specifying the stride in each slice.
 
 ### Return Value
 
-The default constructor stores zero for the starting index, and zero-length vectors for the length and stride vectors. The second constructor stores `_StartIndex` for the starting index, `_LenArray` for the length array, and `_IncArray` for the stride array.
+The default constructor stores zero for the starting index, and zero-length vectors for the length and stride vectors. The second constructor stores *_StartIndex* for the starting index, *_LenArray* for the length array, and *_IncArray* for the stride array.
 
 ### Remarks
 
-**gslice** defines a subset of a valarray that consists of multiple slices of the valarray that each start at the same specified element. The ability to use arrays to define multiple slices is the only difference between `gslice` and [slice::slice](../standard-library/slice-class.md#slice). The first slice has a first element with an index of `_StartIndex`, a number of elements specified by the first element of `_LenArray`, and a stride given by the first element of `_IncArray`. The next set of orthogonal slices has first elements given by the first slice. The second element of `_LenArray` specifies the number of elements. The stride is given by the second element of `_IncArray`. A third dimension of slices would take the elements of the two-dimensional array as the starting elements and proceed analogously
+**gslice** defines a subset of a valarray that consists of multiple slices of the valarray that each start at the same specified element. The ability to use arrays to define multiple slices is the only difference between `gslice` and [slice::slice](../standard-library/slice-class.md#slice). The first slice has a first element with an index of *_StartIndex*, a number of elements specified by the first element of *_LenArray*, and a stride given by the first element of *_IncArray*. The next set of orthogonal slices has first elements given by the first slice. The second element of *_LenArray* specifies the number of elements. The stride is given by the second element of *_IncArray*. A third dimension of slices would take the elements of the two-dimensional array as the starting elements and proceed analogously
 
 ### Example
 

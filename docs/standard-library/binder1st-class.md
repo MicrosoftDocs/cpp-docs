@@ -42,24 +42,24 @@ protected:
 
 ### Parameters
 
-`Func`
+*Func*
  The binary function object to be converted to a unary function object.
 
-`left`
+*left*
  The value to which the first argument of the binary function object is to be bound.
 
-`right`
+*right*
  The value of the argument that the adapted binary object compares to the fixed value of the second argument.
 
 ## Return Value
 
-The unary function object that results from binding the first argument of the binary function object to the value `left.`
+The unary function object that results from binding the first argument of the binary function object to the value *left*.
 
 ## Remarks
 
-The template class stores a copy of a binary function object `Func` in **op**, and a copy of `left` in **value**. It defines its member function `operator()` as returning **op**( **value**, `right`).
+The template class stores a copy of a binary function object *Func* in `op`, and a copy of *left* in `value`. It defines its member function `operator()` as returning **op**( **value**, `right`).
 
-If `Func` is an object of type **Operation** and `c` is a constant , then [bind1st](../standard-library/functional-functions.md#bind1st) ( `Func`, `c` ) is equivalent to the `binder1st` class constructor `binder1st`\< **Operation**> ( `Func`, `c` ) and more convenient.
+If *Func* is an object of type `Operation` and `c` is a constant , then [bind1st](../standard-library/functional-functions.md#bind1st) ( `Func`, `c` ) is equivalent to the `binder1st` class constructor `binder1st`\< **Operation**> ( `Func`, `c` ) and more convenient.
 
 ## Example
 

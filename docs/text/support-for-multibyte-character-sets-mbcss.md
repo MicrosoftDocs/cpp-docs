@@ -28,20 +28,20 @@ Multibyte character sets (MBCSs) are an older approach to the need to support ch
  MBCS characters in the environment  
  MBCS characters can appear in strings such as file and directory names.  
   
- Editing operations  
- Editing operations in MBCS applications should operate on characters, not bytes. The caret should not split a character, the RIGHT ARROW key should move right one character, and so on. **Delete** should delete a character; **Undo** should reinsert it.  
+### Editing operations  
+ Editing operations in MBCS applications should operate on characters, not bytes. The caret should not split a character, the **Right Arrow** key should move right one character, and so on. **Delete** should delete a character; **Undo** should reinsert it.  
   
- String handling  
+### String handling  
  In an application that uses MBCS, string handling poses special problems. Characters of both widths are mixed in a single string; therefore, you must remember to check for lead bytes.  
   
- Run-time library support  
- The C run-time library and MFC support single-byte, MBCS, and Unicode programming. Single-byte strings are processed with the `str` family of run-time functions, MBCS strings are processed with corresponding `_mbs` functions, and Unicode strings are processed with corresponding *wcs* functions. MFC class member function implementations use portable run-time functions that map, under the right circumstances, to the normal `str` family of functions, the MBCS functions, or the Unicode functions, as described in "MBCS/Unicode portability."  
+### Run-time library support  
+ The C run-time library and MFC support single-byte, MBCS, and Unicode programming. Single-byte strings are processed with the `str` family of run-time functions, MBCS strings are processed with corresponding `_mbs` functions, and Unicode strings are processed with corresponding `wcs` functions. MFC class member function implementations use portable run-time functions that map, under the right circumstances, to the normal `str` family of functions, the MBCS functions, or the Unicode functions, as described in "MBCS/Unicode portability."  
   
- MBCS/Unicode portability  
- Using the Tchar.h header file, you can build single-byte, MBCS, and Unicode applications from the same sources. Tchar.h defines macros prefixed with *_tcs* , which map to `str`, `_mbs`, or *wcs* functions, as appropriate. To build MBCS, define the symbol **_MBCS**. To build Unicode, define the symbol **_UNICODE**. By default, **_MBCS** is defined for MFC applications. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).  
+### MBCS/Unicode portability  
+ Using the Tchar.h header file, you can build single-byte, MBCS, and Unicode applications from the same sources. Tchar.h defines macros prefixed with *_tcs* , which map to `str`, `_mbs`, or `wcs` functions, as appropriate. To build MBCS, define the symbol `_MBCS`. To build Unicode, define the symbol `_UNICODE`. By default, `_MBCS` is defined for MFC applications. For more information, see [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md).  
   
 > [!NOTE]
->  Behavior is undefined if you define both **_UNICODE** and **_MBCS**.  
+>  Behavior is undefined if you define both `_UNICODE` and `_MBCS`.  
   
  The Mbctype.h and Mbstring.h header files define MBCS-specific functions and macros, which you might need in some cases. For example, `_ismbblead` tells you whether a specific byte in a string is a lead byte.  
   
