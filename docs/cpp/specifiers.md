@@ -24,7 +24,7 @@ This topic describes the *decl-specifiers* (declaration specifiers) component of
   
  [friend](friend-cpp.md)  
  
- [typedef](aliases-and-typedefs.md) `(` *extended-decl-modifier-seq* `)`  
+ [typedef](aliases-and-typedefs-cpp.md) `(` *extended-decl-modifier-seq* `)`  
 
  [__declspec](declspec.md) `(` *extended-decl-modifier-seq* `)`  
   
