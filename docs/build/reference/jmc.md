@@ -1,6 +1,6 @@
 ---
 title: "/JMC (Just My Code debugging) | Microsoft Docs"
-ms.custom: ""08/20/2018"
+ms.custom: "08/20/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["/JMC"]
