@@ -275,7 +275,6 @@
 ## [Templates](templates-cpp.md)
 ### [typename](typename.md)
 ### [Class Templates](class-templates.md)
-### [Template Friends](template-friends.md)
 ### [Function Templates](function-templates.md)
 #### [Function Template Instantiation](function-template-instantiation.md)
 #### [Explicit Instantiation](explicit-instantiation.md)
