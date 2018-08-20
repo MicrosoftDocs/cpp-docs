@@ -1,7 +1,7 @@
 ---
 title: "References to Pointers | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/20/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "language-reference"
 dev_langs: ["C++"]
@@ -66,7 +66,7 @@ int main( int argc, char *argv[] ) {
   
    // Read a text file from the standard input device and  
    //  build a binary tree.  
-   //while( !cin.eof() )   
+   while( !cin.eof() )   
    {  
       cin.get( szBuf, sizeOfBuffer, '\n' );  
       cin.get();  
