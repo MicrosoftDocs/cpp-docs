@@ -38,11 +38,18 @@ EXPORTS
    func2=func1
 ```
 
-If the name that you export is from other module, specify the export's name in the DLL by using *other_module.exported_name*. For example, if your DLL exports a function `other_module.func1` and you want callers to use it as `func2`, you would specify:
+If the name that you export is from some other module, specify the export's name in the DLL by using *other_module.exported_name*. For example, if your DLL exports a function `other_module.func1` and you want callers to use it as `func2`, you would specify:
 
 ```DEF
 EXPORTS
    func2=other_module.func1
+```
+
+If the name that you export is from another module that exports by ordinal, specify the export's ordinal in the DLL by using *other_module.#ordinal_number*. For example, if your DLL exports a function from the other module where it is ordinal 42, and you want callers to use it as `func2`, you would specify:
+
+```DEF
+EXPORTS
+   func2=other_module.#42
 ```
 
 Because the Visual C++ compiler uses name decoration for C++ functions, you must either use the decorated name internal_name or define the exported functions by using extern "C" in the source code. The compiler also decorates C functions that use the [__stdcall](../../cpp/stdcall.md) calling convention with an underscore (_) prefix and a suffix composed of the at sign (@) followed by the number of bytes (in decimal) in the argument list.  
