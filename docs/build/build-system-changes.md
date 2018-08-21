@@ -31,7 +31,7 @@ The MSBuild system is used to build Visual C++ projects. However, in Visual Stud
  In this release, custom build rules are represented by three file types, .xml, .props, and .targets, instead of a .rules file. When a .rules file that was created by using an earlier release of Visual C++ is migrated to the current release, equivalent .xml, .props, and .targets files are created and stored in your project together with the original .rules file.  
   
 > [!IMPORTANT]
->  In the current release, the [!INCLUDE[TLA2#tla_ide](../build/includes/tla2sharptla_ide_md.md)] does not support the creation of new rules. For that reason, the easiest way to use a rule file from a project that was created by using an earlier release of Visual C++ is to migrate the project to the current release.  
+>  In the current release, the IDE does not support the creation of new rules. For that reason, the easiest way to use a rule file from a project that was created by using an earlier release of Visual C++ is to migrate the project to the current release.  
   
 ## Inheritance Macros  
  In earlier releases, the **$(Inherit)** macro specifies the order in which inherited properties appear on the command line that is composed by the project build system. The **$(NoInherit)** macro causes any occurrences of $(Inherit) to be ignored and causes any properties that would otherwise be inherited, not to be inherited. For example, by default the $(Inherit) macro causes files specified by using the [/I (Additional Include Directories)](../build/reference/i-additional-include-directories.md) compiler option to be appended to the command line.  

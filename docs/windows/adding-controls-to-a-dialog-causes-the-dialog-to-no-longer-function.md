@@ -46,7 +46,7 @@ After adding a common control or rich edit control to a dialog box, it will not 
  In order to use common controls on a dialog box, you need to call [InitCommonControlsEx](http://msdn.microsoft.com/library/windows/desktop/bb775697) or `AFXInitCommonControls` before you create the dialog box.  
   
 ## The fix for RichEdit controls  
- You must call `LoadLibrary` for rich edit controls. For more information, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md), [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)], and [Overview of the Rich Edit Control](../mfc/overview-of-the-rich-edit-control.md).  
+ You must call `LoadLibrary` for rich edit controls. For more information, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md), [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the Windows SDK, and [Overview of the Rich Edit Control](../mfc/overview-of-the-rich-edit-control.md).  
   
 ## Requirements  
  Win32  

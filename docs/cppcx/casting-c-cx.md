@@ -92,7 +92,7 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 // ...
 ```
 
-If you use **reinterpret_cast** to convert from oneWindows Runtime interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-[!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] interface.
+If you use **reinterpret_cast** to convert from oneWindows Runtime interface to another, you cause the object to be released twice. Therefore, only use this cast when you are converting to a non-Visual C++ component extensions interface.
 
 ## ABI types
 

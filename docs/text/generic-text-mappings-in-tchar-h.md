@@ -13,9 +13,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Generic-Text Mappings in Tchar.h
-To simplify the transporting of code for international use, the Microsoft run-time library provides Microsoft-specific generic-text mappings for many data types, routines, and other objects. You can use these mappings, which are defined in Tchar.h, to write generic code that can be compiled for single-byte, multibyte, or [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] character sets, depending on a manifest constant that you define by using a `#define` statement. Generic-text mappings are Microsoft extensions that are not [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] compatible.  
+To simplify the transporting of code for international use, the Microsoft run-time library provides Microsoft-specific generic-text mappings for many data types, routines, and other objects. You can use these mappings, which are defined in Tchar.h, to write generic code that can be compiled for single-byte, multibyte, or Unicode character sets, depending on a manifest constant that you define by using a `#define` statement. Generic-text mappings are Microsoft extensions that are not ANSI compatible.  
   
- By using the Tchar.h, you can build single-byte, Multibyte Character Set (MBCS), and [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] applications from the same sources. Tchar.h defines macros (which have the prefix `_tcs`) that, with the correct preprocessor definitions, map to `str`, `_mbs`, or `wcs` functions, as appropriate. To build MBCS, define the symbol `_MBCS`. To build [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)], define the symbol `_UNICODE`. To build a single-byte application, define neither (the default). By default, `_MBCS` is defined for MFC applications.  
+ By using the Tchar.h, you can build single-byte, Multibyte Character Set (MBCS), and Unicode applications from the same sources. Tchar.h defines macros (which have the prefix `_tcs`) that, with the correct preprocessor definitions, map to `str`, `_mbs`, or `wcs` functions, as appropriate. To build MBCS, define the symbol `_MBCS`. To build Unicode, define the symbol `_UNICODE`. To build a single-byte application, define neither (the default). By default, `_MBCS` is defined for MFC applications.  
   
  The `_TCHAR` data type is defined conditionally in Tchar.h. If the symbol `_UNICODE` is defined for your build, `_TCHAR` is defined as **wchar_t**; otherwise, for single-byte and MBCS builds, it is defined as **char**. (**wchar_t**, the basic Unicode wide-character data type, is the 16-bit counterpart to an 8-bit signed **char**.) For international applications, use the `_tcs` family of functions, which operate in `_TCHAR` units, not bytes. For example, `_tcsncpy` copies `n` `_TCHARs`, not `n` bytes.  
   
@@ -31,9 +31,9 @@ To simplify the transporting of code for international use, the Microsoft run-ti
   
 |# define|Compiled version|Example|  
 |---------------|----------------------|-------------|  
-|`_UNICODE`|[!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] (wide-character)|`_tcsrev` maps to `_wcsrev`|  
+|`_UNICODE`|Unicode (wide-character)|`_tcsrev` maps to `_wcsrev`|  
 |`_MBCS`|Multibyte-character|`_tcsrev` maps to `_mbsrev`|  
-|None (the default has neither `_UNICODE` nor `_MBCS` defined)|SBCS ([!INCLUDE[TLA#tla_ascii](../text/includes/tlasharptla_ascii_md.md)])|`_tcsrev` maps to `strrev`|  
+|None (the default has neither `_UNICODE` nor `_MBCS` defined)|SBCS (ASCII)|`_tcsrev` maps to `strrev`|  
   
  For example, the generic-text function `_tcsrev`, which is defined in Tchar.h, maps to `_mbsrev` if you defined `_MBCS` in your program, or to `_wcsrev` if you defined `_UNICODE`. Otherwise, `_tcsrev` maps to `strrev`. Other data type mappings are provided in Tchar.h for programming convenience, but `_TCHAR` is the most useful.  
   
@@ -46,14 +46,14 @@ To simplify the transporting of code for international use, the Microsoft run-ti
 |`_TSCHAR`|**signed char**|**signed char**|**wchar_t**|  
 |`_TUCHAR`|**unsigned char**|**unsigned char**|**wchar_t**|  
 |`_TXCHAR`|**char**|**unsigned char**|**wchar_t**|  
-|`_T` or `_TEXT`|No effect (removed by preprocessor)|No effect (removed by preprocessor)|`L` (converts the following character or string to its [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] counterpart)|  
+|`_T` or `_TEXT`|No effect (removed by preprocessor)|No effect (removed by preprocessor)|`L` (converts the following character or string to its Unicode counterpart)|  
   
  For a list of generic-text mappings of routines, variables, and other objects, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md) in the Run-Time Library Reference.  
   
 > [!NOTE]
 >  Do not use the `str` family of functions with Unicode strings, which are likely to contain embedded null bytes. Similarly, do not use the `wcs` family of functions with MBCS (or SBCS) strings.  
   
- The following code fragments illustrate the use of `_TCHAR` and `_tcsrev` for mapping to the MBCS, [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)], and SBCS models.  
+ The following code fragments illustrate the use of `_TCHAR` and `_tcsrev` for mapping to the MBCS, Unicode, and SBCS models.  
   
 ```  
 _TCHAR *RetVal, *szString;  
@@ -74,7 +74,7 @@ wchar_t *RetVal, *szString;
 RetVal = _wcsrev(szString);  
 ```  
   
- If neither `_MBCS` nor `_UNICODE` have been defined, the preprocessor maps the fragment to single-byte [!INCLUDE[TLA#tla_ascii](../text/includes/tlasharptla_ascii_md.md)] code, as follows:  
+ If neither `_MBCS` nor `_UNICODE` have been defined, the preprocessor maps the fragment to single-byte ASCII code, as follows:  
   
 ```  
 char *RetVal, *szString;  

@@ -44,7 +44,7 @@ This example application uses all three types of synchronization classes. Becaus
  
 Choosing which synchronization access class to use is even simpler. If your application is concerned with accessing a single controlled resource only, use `CSingleLock`. If it needs access to any one of a number of controlled resources, use `CMultiLock`. In example 1, `CSingleLock` would have been used, because in each case only one resource is needed at any particular time.  
   
-For information about how the synchronization classes are used, see [Multithreading: How to Use the Synchronization Classes](../parallel/multithreading-how-to-use-the-synchronization-classes.md). For information about synchronization, see [Synchronization](http://msdn.microsoft.com/library/windows/desktop/ms686353) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)]. For information about multithreading support in MFC, see [Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md).  
+For information about how the synchronization classes are used, see [Multithreading: How to Use the Synchronization Classes](../parallel/multithreading-how-to-use-the-synchronization-classes.md). For information about synchronization, see [Synchronization](http://msdn.microsoft.com/library/windows/desktop/ms686353) in the Windows SDK. For information about multithreading support in MFC, see [Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md).  
   
 ## See Also  
  
