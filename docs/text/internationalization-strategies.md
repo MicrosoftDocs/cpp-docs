@@ -7,8 +7,8 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["globalization [C++], character sets", "language-portable code [C++]", "MBCS [C++], internationalization strategies", "Windows API [C++], international programming strategies", "Win32 [C++], international programming strategies", "Unicode [C++], globalizing applications", "character sets [C++], international programming strategies", "localization [C++], character sets"]
 ms.assetid: b09d9854-0709-4b9a-a00c-b0b8bc4199b1
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Internationalization Strategies

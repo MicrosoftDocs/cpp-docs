@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Guid"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Guid Struct"]
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Guid value class

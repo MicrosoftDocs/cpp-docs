@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::WrongThreadException", "VCCORLIB/Platform::Wro
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::WrongThreadException"]
 ms.assetid: c193f97e-0392-4535-a4c4-0711e4e4a836
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::WrongThreadException Class

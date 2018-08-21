@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Metadata"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Metadata Namespace"]
 ms.assetid: e3e114d8-a4b0-47f0-865a-9ce9d7212e86
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata Namespace

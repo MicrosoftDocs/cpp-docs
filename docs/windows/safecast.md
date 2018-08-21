@@ -8,8 +8,8 @@ f1_keywords: ["SafeCast"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeCast function"]
 ms.assetid: 55316729-8456-403a-9f96-59d4038f67af
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeCast

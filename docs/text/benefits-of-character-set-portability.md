@@ -7,8 +7,8 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["character sets [C++], benefits", "portability [C++], character sets"]
 ms.assetid: bd60b925-1498-4e4f-897b-4c8ce66edcf7
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Benefits of Character Set Portability
