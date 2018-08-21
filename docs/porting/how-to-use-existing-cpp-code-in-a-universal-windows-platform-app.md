@@ -1,7 +1,7 @@
 ---
 title: "How to: Use Existing C++ Code in a Universal Windows Platform App | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/21/2018"
 ms.technology: ["cpp-language"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -11,21 +11,22 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # How to: Use Existing C++ Code in a Universal Windows Platform App
-Perhaps the easiest way to get your desktop program running in the UWP environment is to use the Desktop Bridge technologies. These include the Desktop App Converter, which will package your existing application as a UWP app with no code changes required. For more information, see [Bring your desktop app to the Universal Windows Platform (UWP) with the Desktop Bridge](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-root).
+
+Perhaps the easiest way to get your desktop program running in the UWP environment is to use the Desktop Bridge technologies. These include the Desktop App Converter, which will package your existing application as a UWP app with no code changes required. For more information, see [Desktop Bridge](/windows/uwp/porting/desktop-to-uwp-root).
 
 The rest of this topic discusses how to port C++ libraries (DLLs and static libraries) to the Universal Windows Platform (UWP). You might want to do this so that your core C++ logic can be used with multiple UWP apps. 
   
-UWP Apps run in a protected environment, and as a result, many Win32, COM, and CRT API calls that might compromise the security of the platform are not allowed. The compiler can detect such calls and generate an error, if the `/ZW` option is used. You can use the App Certification Kit on your application to detect code that calls forbidden APIs. See [Using the App Certification Kit](https://msdn.microsoft.com/library/windows/apps/hh694081.aspx).  
+UWP Apps run in a protected environment, and as a result, many Win32, COM, and CRT API calls that might compromise the security of the platform are not allowed. The compiler can detect such calls and generate an error, if the `/ZW` option is used. You can use the App Certification Kit on your application to detect code that calls forbidden APIs. For more information, see [Windows App Certification Kit](/windows/uwp/debug-test-perf/windows-app-certification-kit).  
   
-If source code is available for the library, you might be able to eliminate the forbidden API calls. For details including a list of APIs that are allowed or forbidden, see [Win32 and COM for Windows Runtime Apps and Universal Windows platform (UWP) Apps](https://msdn.microsoft.com/library/windows/apps/br205762.aspx) and [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md). Some alternatives can be found at [Alternatives to Windows APIs in UWP apps](/uwp/win32-and-com/alternatives-to-windows-apis-uwp).  
+If source code is available for the library, you might be able to eliminate the forbidden API calls. For details including a list of APIs that are allowed or forbidden, see [Win32 and COM APIs for UWP apps](/uwp/win32-and-com/win32-and-com-for-uwp-apps) and [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md). Some alternatives can be found at [Alternatives to Windows APIs in UWP apps](/uwp/win32-and-com/alternatives-to-windows-apis-uwp).  
   
-If you just try to add a reference from a Universal Windows Project to a classic desktop library, you get an error message that says the library is not compatible. In the case of a static library, you can link to your library simply by adding the library (.lib file) to your linker input, just as you would in a classic Win32 application. For libraries where only a binary is available, this is the only option. A static library is linked into your app's executable, but a Win32 DLL that you consume in a UWP app must be packaged into the app by including it in the project and marking it as Content. To load a Win32 DLL in a UWP app, you also have to call [LoadPackagedLibrary](https://msdn.microsoft.com/library/windows/desktop/hh447159.aspx) instead of `LoadLibrary` or `LoadLibraryEx`.  
+If you just try to add a reference from a Universal Windows Project to a classic desktop library, you get an error message that says the library is not compatible. In the case of a static library, you can link to your library simply by adding the library (.lib file) to your linker input, just as you would in a classic Win32 application. For libraries where only a binary is available, this is the only option. A static library is linked into your app's executable, but a Win32 DLL that you consume in a UWP app must be packaged into the app by including it in the project and marking it as Content. To load a Win32 DLL in a UWP app, you also have to call [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary) instead of `LoadLibrary` or `LoadLibraryEx`.  
   
 If you have source code for the DLL or static library, you can recompile with `/ZW` as a UWP project. If you do that, you can add a reference using the **Solution Explorer**, and use it in C++ UWP apps. In the case of a DLL, you link with the export library.  
   
 To expose functionality to callers in other languages, you can convert the library into a Windows Runtime Component. Windows Runtime Components differ from ordinary DLLs in that they include metadata in the form of .winmd files which describe the contents in a way that .NET and JavaScript consumers require. To expose API elements to other languages, you can add C++/CX constructs, such as ref classes, and make them public, or use the [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).  In Windows 10 and later, you can use the [C++/WinRT library](https://github.com/microsoft/cppwinrt) instead of C++/CX. 
   
-The preceding discussion doesn't apply to the case of COM components, which must be handled differently. If you have a COM server in an EXE or DLL, you can use it in a Universal Windows Project as long as you package it as a [registration-free COM component](https://msdn.microsoft.com/library/dd408052.aspx), add it to your project as a Content file, and instantiate it using [CoCreateInstanceFromApp](https://msdn.microsoft.com/library/windows/apps/hh404137.aspx). See [Using Free-COM DLL in Windows Store C++ Project](http://blogs.msdn.com/b/win8devsupport/archive/2013/05/20/using-free-com-dll-in-windows-store-c-project.aspx).  
+The preceding discussion doesn't apply to the case of COM components, which must be handled differently. If you have a COM server in an EXE or DLL, you can use it in a Universal Windows Project as long as you package it as a [registration-free COM component](/windows/desktop/sbscs/creating-registration-free-com-objects), add it to your project as a Content file, and instantiate it using [CoCreateInstanceFromApp](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstancefromapp). For more information, see [Using Free-COM DLL in Windows Store C++ Project](https://blogs.msdn.microsoft.com/win8devsupport/2013/05/19/using-free-com-dll-in-windows-store-c-project/).  
   
 If you have an existing COM library that you want to port to the UWP, you might be able to convert it into a Windows Runtime Component by using the [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md). The WRL does not support all the features of ATL and OLE, so whether such a port is feasible depends on how much your COM code depends on what features of COM, ATL, and OLE your component requires.  
   
@@ -52,7 +53,7 @@ This topic contains the following procedures:
   
 ##  <a name="BK_Win32DLL"></a> Using a Win32 DLL in a UWP App  
  
-For better security and reliability, Universal Windows Apps run in a restricted runtime environment, so you can't just use any native DLL the way you would in a classic Windows desktop application. If you have source code for a DLL, you can port the code so that it runs on the UWP. You start by changing a few project settings and project file metadata to identify the project as a UWP project. You need to compile the library code using the `/ZW` option, which enables C++/CX. Certain API calls are not allowed in UWP apps due to stricter controls associated with that environment. See [Win32 and COM for Windows Runtime apps and Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
+For better security and reliability, Universal Windows Apps run in a restricted runtime environment, so you can't just use any native DLL the way you would in a classic Windows desktop application. If you have source code for a DLL, you can port the code so that it runs on the UWP. You start by changing a few project settings and project file metadata to identify the project as a UWP project. You need to compile the library code using the `/ZW` option, which enables C++/CX. Certain API calls are not allowed in UWP apps due to stricter controls associated with that environment. See [Win32 and COM APIs for UWP apps](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
   
 The following procedure applies to the case where you have a native DLL that exposes functions using **__declspec(dllexport)**.  
   
@@ -185,7 +186,7 @@ The following procedure applies to the case where you have a native DLL that exp
   
 ##  <a name="BK_StaticLib"></a> Using a native C++ static library in a UWP App  
  
-You can use a native C++ static library in a UWP project, but there are some restrictions and limitations to be aware of. Start by reading this [topic](https://msdn.microsoft.com/library/hh771041.aspx) about static libraries in C++/CX. You can access the native code in your static library from your UWP app, but it's not recommended to create public ref types in such a static library. If you compile a static library with the `/ZW` option, the librarian (actually the linker in disguise) warns:  
+You can use a native C++ static library in a UWP project, but there are some restrictions and limitations to be aware of. Start by reading about [static libraries in C++/CX](../cppcx/static-libraries-c-cx.md). You can access the native code in your static library from your UWP app, but it's not recommended to create public ref types in such a static library. If you compile a static library with the `/ZW` option, the librarian (actually the linker in disguise) warns:  
   
 > LNK4264: archiving object file compiled with /ZW into a static library; note that when authoring Windows Runtime types it is not recommended to link with a static library that contains Windows Runtime metadata
   
