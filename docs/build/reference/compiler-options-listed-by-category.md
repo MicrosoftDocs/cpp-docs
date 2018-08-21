@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Listed by Category | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/20/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -159,6 +159,7 @@ This article contains a categorical list of compiler options. For an alphabetica
 |[/H](h-restrict-length-of-external-names.md)|Deprecated. Restricts the length of external (public) names.|
 |[/HELP](help-compiler-command-line-help.md)|Lists the compiler options.|
 |[/J](j-default-char-type-is-unsigned.md)|Changes the default `char` type.|
+|[/JMC](jmc.md)|Supports native C++ Just My Code debugging.|
 |[/kernel](kernel-create-kernel-mode-binary.md)|The compiler and linker will create a binary that can be executed in the Windows kernel.|
 |[/MP](mp-build-with-multiple-processes.md)|Builds multiple source files concurrently.|
 |[/nologo](nologo-suppress-startup-banner-c-cpp.md)|Suppresses display of sign-on banner.|

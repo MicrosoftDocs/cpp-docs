@@ -3,6 +3,9 @@ layout: HubPage
 ms.topic: hub-page
 title: Visual C++ Documentation | Microsoft Docs
 description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
+author: "mikeblome"
+ms.author: "mblome"
+ms.workload: ["cplusplus"]
 ---
 <div id="main" class="v2">
     <div class="container">

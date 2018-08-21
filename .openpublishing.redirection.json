@@ -236,6 +236,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/cpp/template-friends.md",
+            "redirect_url": "/cpp/cpp/templates-cpp",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/cpp/using-extern-to-specify-linkage.md",
             "redirect_url": "/cpp/cpp/extern-cpp",
             "redirect_document_id": false
