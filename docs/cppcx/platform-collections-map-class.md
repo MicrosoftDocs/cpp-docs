@@ -8,8 +8,8 @@ f1_keywords: ["COLLECTION/Platform::Collections::Map::Map", "COLLECTION/Platform
 dev_langs: ["C++"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Map Class

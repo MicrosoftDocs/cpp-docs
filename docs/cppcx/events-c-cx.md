@@ -5,8 +5,8 @@ ms.date: "01/22/2017"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 31c8e08a-00ad-40f9-8f7e-124864aaad58
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Events (C++/CX)

@@ -6,8 +6,8 @@ ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 ms.assetid: 4712e9dc-57ba-43cc-811e-022e1dae4de8
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # default namespace

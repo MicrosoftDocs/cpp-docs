@@ -7,8 +7,8 @@ ms.topic: "language-reference"
 f1_keywords: ["C4451"]
 helpviewer_keywords: ["threading issues, C++/CX", "agility, C++/CX", "C++/CX, threading issues"]
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Threading and Marshaling (C++/CX)

@@ -5,8 +5,8 @@ ms.date: "01/22/2017"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 64c7bc56-3191-4cd5-bdf4-476d07d285d5
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Properties (C++/CX)

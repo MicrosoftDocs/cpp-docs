@@ -5,8 +5,8 @@ ms.date: "01/22/2017"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Ref classes and structs (C++/CX)

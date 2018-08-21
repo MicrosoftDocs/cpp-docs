@@ -8,8 +8,8 @@ f1_keywords: ["COLLECTION/Platform::Collections::VectorIterator::VectorIterator"
 dev_langs: ["C++"]
 helpviewer_keywords: ["VectorIterator Class"]
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorIterator Class

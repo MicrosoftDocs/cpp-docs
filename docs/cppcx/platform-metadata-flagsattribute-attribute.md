@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Metadata::FlagsAttribute"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Metadata::FlagsAttribute Attribute"]
 ms.assetid: 56f4a191-cc81-4742-aff8-bd2219c0735c
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::FlagsAttribute Attribute

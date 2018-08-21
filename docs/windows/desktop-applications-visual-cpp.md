@@ -6,8 +6,8 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Desktop Applications (Visual C++)

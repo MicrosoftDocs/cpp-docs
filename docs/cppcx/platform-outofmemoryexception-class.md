@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::OutOfMemoryException", "VCCORLIB/Platform::Out
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OutOfMemoryException"]
 ms.assetid: 49c19f6b-f66c-4448-b861-91dcbf32de2c
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::OutOfMemoryException Class

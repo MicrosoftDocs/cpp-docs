@@ -8,8 +8,8 @@ f1_keywords: ["SafeDivide"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeDivide function"]
 ms.assetid: b5b27484-ad6e-46b1-ba9f-1c7120dd103b
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeDivide

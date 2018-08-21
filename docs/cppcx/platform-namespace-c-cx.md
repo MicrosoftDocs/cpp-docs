@@ -8,8 +8,8 @@ f1_keywords: ["Platform/Platform"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform Namespace (C++/CX)"]
 ms.assetid: b160e822-d424-43d2-ba60-57b0e81f259c
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform namespace (C++/CX)

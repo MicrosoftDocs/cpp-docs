@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not 
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::IBoxArray"]
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::IBoxArray Interface

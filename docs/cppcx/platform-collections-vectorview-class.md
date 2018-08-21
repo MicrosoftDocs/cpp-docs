@@ -8,8 +8,8 @@ f1_keywords: ["COLLECTION/Platform::Collections::VectorView::VectorView", "COLLE
 dev_langs: ["C++"]
 helpviewer_keywords: ["VectorView Class"]
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorView Class

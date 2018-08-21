@@ -7,8 +7,8 @@ ms.topic: "reference"
 f1_keywords: ["VCCORLIB/Platform::Metadata::RuntimeClassName"]
 helpviewer_keywords: ["RuntimeClassName", "Platform::Metadata::RuntimeClassName"]
 ms.assetid: fdef8f85-ab94-4edd-ba50-ee0da9358ff6
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::RuntimeClassName

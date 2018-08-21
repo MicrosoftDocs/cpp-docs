@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::String::String", "VCCORLIB/Platform::String::B
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::String"]
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::String Class

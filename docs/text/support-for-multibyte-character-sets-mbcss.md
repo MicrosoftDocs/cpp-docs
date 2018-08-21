@@ -8,8 +8,8 @@ f1_keywords: ["_mbcs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MBCS [C++], about MBCS", "character sets [C++], multibyte", "multibyte characters [C++]", "MBCS [C++]"]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Support for Multibyte Character Sets (MBCSs)

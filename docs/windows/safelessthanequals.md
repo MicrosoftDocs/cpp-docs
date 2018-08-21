@@ -8,8 +8,8 @@ f1_keywords: ["SafeLessThanEquals"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeLessThanEquals function"]
 ms.assetid: cbd70526-faf2-4fbc-96a0-b61e8cf5f04a
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeLessThanEquals

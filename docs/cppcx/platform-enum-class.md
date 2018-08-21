@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Enum"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Enum Struct"]
 ms.assetid: cf82f0eb-7a37-4e4e-bbe7-e4aebbc9ec0a
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Enum Class

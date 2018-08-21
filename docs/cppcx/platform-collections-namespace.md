@@ -8,8 +8,8 @@ f1_keywords: ["collection/Platform::Collections"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Collections Namespace"]
 ms.assetid: b5042864-5f22-40b7-b7a5-c0691f65cc47
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections Namespace

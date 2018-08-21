@@ -8,8 +8,8 @@ f1_keywords: ["COLLECTION/Platform::Platform", "COLLECTION/Platform::Platform::S
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::STAThreadAttribute Class"]
 ms.assetid: f97960fc-e673-4d9e-910a-54c8415411c4
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::STAThreadAttribute Class

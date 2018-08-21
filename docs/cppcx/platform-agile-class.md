@@ -8,8 +8,8 @@ f1_keywords: ["AGILE/Platform::Platform", "AGILE/Platform::Platform::Agile::Agil
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Agile"]
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Agile Class

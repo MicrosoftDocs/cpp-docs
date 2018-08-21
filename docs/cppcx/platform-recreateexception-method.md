@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Exception"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Exception Class"]
 ms.assetid: fa73d1ab-86e4-4d26-a7d9-81938c1c7e77
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 

@@ -7,8 +7,8 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["globalization [C++], character sets", "programming [C++], international", "multiple language support [C++]", "Unicode [C++]", "international applications [C++], about international applications", "portability [C++]", "translation [C++], character sets", "non-European characters [C++]", "character sets [C++]", "globalization [C++]", "Japanese characters [C++]", "Kanji character support [C++]", "local character sets [C++]", "ASCII characters [C++]", "character sets [C++], about character sets", "localization [C++], character sets", "translating code [C++]", "localization [C++]", "character sets [C++], non-European", "portability [C++], character sets", "MBCS [C++], international programming"]
 ms.assetid: a1bb27ac-abe5-4c6b-867d-f761d4b93205
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Text and Strings in Visual C++

@@ -5,8 +5,8 @@ ms.date: "02/03/2017"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Static libraries (C++/CX)

@@ -6,8 +6,8 @@ ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Visual C++ Help and Community

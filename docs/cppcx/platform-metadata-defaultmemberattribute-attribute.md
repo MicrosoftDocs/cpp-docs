@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Metadata::DefaultMemberAttribute"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Metadata::DefaultMemberAttribute Attribute"]
 ms.assetid: d8abda01-c257-4371-aec4-541d4825e0af
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::DefaultMemberAttribute Attribute

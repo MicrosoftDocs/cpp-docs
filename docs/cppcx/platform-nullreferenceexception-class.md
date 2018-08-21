@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::NullReferenceException", "VCCORLIB/Platform::N
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::NullReferenceException"]
 ms.assetid: be202577-d898-4716-83cd-e3556fe8a241
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::NullReferenceException Class

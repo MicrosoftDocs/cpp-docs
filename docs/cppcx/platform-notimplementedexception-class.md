@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::NotImplementedException", "VCCORLIB/Platform::
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::NotImplementedException"]
 ms.assetid: 6da26cc2-dde8-4aea-aa85-67aac55cf97b
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::NotImplementedException Class

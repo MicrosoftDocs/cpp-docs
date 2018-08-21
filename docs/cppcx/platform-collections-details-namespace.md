@@ -7,8 +7,8 @@ ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::Details"]
 dev_langs: ["C++"]
 ms.assetid: d5ac76ee-b568-4841-882f-738ed6fa4f1e
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Details Namespace

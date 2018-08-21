@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::OutOfBoundsException", "VCCORLIB/Platform::Out
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OutOfBoundsException"]
 ms.assetid: 96f8bf75-1207-4049-964b-7771822cadf3
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::OutOfBoundsException Class

@@ -8,8 +8,8 @@ f1_keywords: ["COLLECTION/Platform::Collections::Vector::Vector", "COLLECTION/Pl
 dev_langs: ["C++"]
 helpviewer_keywords: ["Vector Class (C++/Cx)"]
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Vector Class

@@ -7,7 +7,6 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Microsoft Visual C++ floating-point optimization

@@ -7,8 +7,8 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["buffers [C++], character sizes", "buffer overflows [C++]", "MBCS [C++], buffer overflow"]
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Buffer Overflow

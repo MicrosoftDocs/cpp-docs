@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Object::Object", "VCCORLIB/Platform::Object::E
 dev_langs: ["C++"]
 helpviewer_keywords: ["Object class"]
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Object Class

@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::InvalidArgumentException", "VCCORLIB/Platform:
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::InvalidArgumentException"]
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::InvalidArgumentException Class

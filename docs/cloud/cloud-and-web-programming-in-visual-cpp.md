@@ -6,8 +6,8 @@ ms.technology: ["cpp-azure"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Cloud and Web Programming in Visual C++

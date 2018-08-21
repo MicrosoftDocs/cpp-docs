@@ -7,8 +7,8 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["converting string types", "string conversion [C++]", "strings [C++], converting"]
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # How to: Convert Between Various String Types

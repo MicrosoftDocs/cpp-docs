@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::UIntPtr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::UIntPtr Struct"]
 ms.assetid: dc4f5176-4c4d-4209-b68e-eb30f2c2465b
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::UIntPtr value class

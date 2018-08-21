@@ -5,8 +5,8 @@ ms.date: "01/18/2018"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Exceptions (C++/CX)

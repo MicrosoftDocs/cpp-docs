@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::TypeCode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::TypeCode Enumeration"]
 ms.assetid: 93c1305f-eb16-4bec-aead-f88d9518b4cf
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::TypeCode Enumeration

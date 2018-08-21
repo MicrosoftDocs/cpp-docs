@@ -6,8 +6,8 @@ ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["Platform::WeakReference"]
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::WeakReference Class

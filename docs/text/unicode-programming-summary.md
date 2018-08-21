@@ -7,8 +7,8 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Unicode [C++], programming with", "Unicode [C++], MFC and C run-time functions"]
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Unicode Programming Summary

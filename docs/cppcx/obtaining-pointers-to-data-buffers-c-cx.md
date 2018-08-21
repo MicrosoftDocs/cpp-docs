@@ -5,8 +5,8 @@ ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mikeblome"
 ms.workload: ["cplusplus"]
 ---
 # Obtaining pointers to data buffers (C++/CX)
