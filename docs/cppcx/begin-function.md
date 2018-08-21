@@ -8,8 +8,8 @@ f1_keywords: ["collection/Windows::Foundation::Collections::begin"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["begin Function"]
 ms.assetid: 5a44fb33-e247-49fd-b7a1-4a5b42e9e1e4
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # begin Function

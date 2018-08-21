@@ -8,8 +8,8 @@ f1_keywords: ["collection/Windows::Foundation::Collections::end"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["end Function"]
 ms.assetid: fb837bff-fc76-4bae-9096-facf0e03041c
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # end Function

@@ -24,7 +24,7 @@ Multithreaded applications require stricter care than single-threaded applicatio
   
 ##  <a name="_core_accessing_objects_from_multiple_threads"></a> Accessing Objects from Multiple Threads  
  
-For size and performance reasons, MFC objects are not thread-safe at the object level, only at the class level. This means that you can have two separate threads manipulating two different `CString` objects, but not two threads manipulating the same `CString` object. If you absolutely must have multiple threads manipulating the same object, protect such access with appropriate Win32 synchronization mechanisms, such as critical sections. For more information about critical sections and other related objects, see [Synchronization](http://msdn.microsoft.com/library/windows/desktop/ms686353) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+For size and performance reasons, MFC objects are not thread-safe at the object level, only at the class level. This means that you can have two separate threads manipulating two different `CString` objects, but not two threads manipulating the same `CString` object. If you absolutely must have multiple threads manipulating the same object, protect such access with appropriate Win32 synchronization mechanisms, such as critical sections. For more information about critical sections and other related objects, see [Synchronization](http://msdn.microsoft.com/library/windows/desktop/ms686353) in the Windows SDK.  
   
 The class library uses critical sections internally to protect global data structures, such as those used by the debug memory allocation.  
   
@@ -40,11 +40,11 @@ There are several ways around this problem. The first is to pass individual hand
   
 Another method is to create new user-defined messages corresponding to the different tasks your worker threads will be performing and post these messages to the application's main window using `::PostMessage`. This method of communication is similar to two different applications conversing except that both threads are executing in the same address space.  
   
-For more information about handle maps, see [Technical Note 3](../mfc/tn003-mapping-of-windows-handles-to-objects.md). For more information about thread local storage, see [Thread Local Storage](http://msdn.microsoft.com/library/windows/desktop/ms686749) and [Using Thread Local Storage](http://msdn.microsoft.com/library/windows/desktop/ms686991) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+For more information about handle maps, see [Technical Note 3](../mfc/tn003-mapping-of-windows-handles-to-objects.md). For more information about thread local storage, see [Thread Local Storage](http://msdn.microsoft.com/library/windows/desktop/ms686749) and [Using Thread Local Storage](http://msdn.microsoft.com/library/windows/desktop/ms686991) in the Windows SDK.  
   
 ##  <a name="_core_communicating_between_threads"></a> Communicating Between Threads  
  
-MFC provides a number of classes that allow threads to synchronize access to objects to maintain thread safety. Usage of these classes is described in [Multithreading: How to Use the Synchronization Classes](../parallel/multithreading-how-to-use-the-synchronization-classes.md) and [Multithreading: When to Use the Synchronization Classes](../parallel/multithreading-when-to-use-the-synchronization-classes.md). For more information about these objects, see [Synchronization](http://msdn.microsoft.com/library/windows/desktop/ms686353) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+MFC provides a number of classes that allow threads to synchronize access to objects to maintain thread safety. Usage of these classes is described in [Multithreading: How to Use the Synchronization Classes](../parallel/multithreading-how-to-use-the-synchronization-classes.md) and [Multithreading: When to Use the Synchronization Classes](../parallel/multithreading-when-to-use-the-synchronization-classes.md). For more information about these objects, see [Synchronization](http://msdn.microsoft.com/library/windows/desktop/ms686353) in the Windows SDK.  
   
 ## See Also  
 

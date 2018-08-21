@@ -6,8 +6,8 @@ ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::UnorderedMapView"]
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::UnorderedMapView Class

@@ -8,8 +8,8 @@ f1_keywords: ["SafeMultiply"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeMultiply function"]
 ms.assetid: 81d988a5-fac7-4930-8c37-c24fa8e2c853
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeMultiply

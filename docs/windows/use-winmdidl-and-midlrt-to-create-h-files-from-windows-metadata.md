@@ -19,10 +19,10 @@ Winmdidl.exe and midlrt.exe enable COM-level interaction between native C++ code
   
 -   Generating proxy and stub files for user-defined event types in a Windows Runtime Component. For more information, see [Custom events and event accessors in Windows Runtime Components](/uwp/winrt-components/custom-events-and-event-accessors-in-windows-runtime-components).  
   
- These tools are required only for parsing custom .winmd files. The .idl and .h files for Windows operating system components are already generated for you. By default in [!INCLUDE[win81](../misc/includes/win81_md.md)], they are located in \Program Files (x86)\Windows Kits\8.1\Include\winrt\\.  
+ These tools are required only for parsing custom .winmd files. The .idl and .h files for Windows operating system components are already generated for you. By default in Windows 8.1, they are located in \Program Files (x86)\Windows Kits\8.1\Include\winrt\\.  
   
 ## Location of the tools  
- By default in [!INCLUDE[win81](../misc/includes/win81_md.md)], winmdidl.exe and midlrt.exe are located in  C:\Program Files (x86)\Windows Kits\8.1\\. Versions of the tools are also available in the \bin\x86\ and \bin\x64\ folders.  
+ By default in [Windows 8.1, winmdidl.exe and midlrt.exe are located in  C:\Program Files (x86)\Windows Kits\8.1\\. Versions of the tools are also available in the \bin\x86\ and \bin\x64\ folders.  
   
 ## Winmdidl command-line arguments  
   

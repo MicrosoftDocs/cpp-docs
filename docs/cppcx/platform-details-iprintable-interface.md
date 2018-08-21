@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Details::IPrintable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::IPrintable Interface"]
 ms.assetid: b863a872-2563-4d90-88e0-c5a0bdde83f4
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::IPrintable Interface

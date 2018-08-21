@@ -11,7 +11,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["header files [C++]"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Header files (C++)

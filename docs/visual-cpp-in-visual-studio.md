@@ -1,7 +1,7 @@
 ---
 title: "Visual C++ in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "1/02/2018"
+ms.date: "08/22/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]

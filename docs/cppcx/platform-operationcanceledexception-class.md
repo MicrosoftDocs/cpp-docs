@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::OperationCanceledException::OperationCanceledE
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OperationCanceledException"]
 ms.assetid: 5351bc20-5408-423a-8169-f09acc8a3fbb
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::OperationCanceledException Class

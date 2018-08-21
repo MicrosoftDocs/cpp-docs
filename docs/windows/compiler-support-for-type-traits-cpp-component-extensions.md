@@ -22,7 +22,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
  The following list contains the type traits that are supported by the compiler. All type traits return **false** if the condition specified by the name of the type trait is not met.  
   
- (In the following list, code examples are written only in C++/CLI. But the corresponding type trait is also supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)] unless stated otherwise. The term, "platform type" refers to either Windows Runtime types or common language runtime types.)  
+ (In the following list, code examples are written only in C++/CLI. But the corresponding type trait is also supported in Visual C++ component extensions unless stated otherwise. The term, "platform type" refers to either Windows Runtime types or common language runtime types.)  
   
 -   `__has_assign(` `type` `)`  
   
@@ -54,7 +54,7 @@ The compiler supports *type traits*, which indicate various characteristics of a
   
 -   `__has_finalizer(` `type` `)`  
   
-     (Not supported in [!INCLUDE[cppwrt](../build/reference/includes/cppwrt_md.md)].) Returns **true** if the CLR type has a finalizer. See [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.  
+     (Not supported in Visual C++ component extensions.) Returns **true** if the CLR type has a finalizer. See [Destructors and finalizers in How to: Define and consume classes and structs (C++/CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers) for more information.  
   
     ```cpp  
     using namespace System;  

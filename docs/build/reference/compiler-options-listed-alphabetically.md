@@ -1,7 +1,7 @@
 ---
 title: "Compiler Options Listed Alphabetically | Microsoft Docs"
 ms.custom: ""
-ms.date: "02/22/2018"
+ms.date: "08/20/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -79,6 +79,7 @@ The following is a comprehensive alphabetical list of compiler options. For a ca
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|Creates a hotpatchable image.|
 |[/I](i-additional-include-directories.md)|Searches a directory for include files.|
 |[/J](j-default-char-type-is-unsigned.md)|Changes the default `char` type.|
+|[/JMC](jmc.md)|Supports native C++ Just My Code debugging.|
 |[/kernel](kernel-create-kernel-mode-binary.md)|The compiler and linker will create a binary that can be executed in the Windows kernel.|
 |[/LD](md-mt-ld-use-run-time-library.md)|Creates a dynamic-link library.|
 |[/LDd](md-mt-ld-use-run-time-library.md)|Creates a debug dynamic-link library.|

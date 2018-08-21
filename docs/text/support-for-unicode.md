@@ -6,8 +6,8 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["globalization [C++], character sets", "portable data types [MFC]", "Unicode [C++]", "wide characters [C++], about wide characters", "character sets [C++], Unicode", "localization [C++], character sets", "Unicode [C++], installing support"]
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Support for Unicode

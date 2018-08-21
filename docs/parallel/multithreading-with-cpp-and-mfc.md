@@ -26,7 +26,7 @@ Special attention should be given to situations where more than one thread might
   
 Writing and debugging multithreaded programming is inherently a complicated and tricky undertaking, because you must ensure that objects are not accessed by more than one thread at a time. The multithreading topics do not teach the basics of multithreaded programming, only how to use MFC in your multithreaded program. The multithreaded MFC samples included in Visual C++ illustrate a few multithreaded Adding Functionality and Win32 APIs not encompassed by MFC; however, they are only intended to be a starting point.  
   
-For more information about how the operating system handles processes and threads, see [Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms684841) in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+For more information about how the operating system handles processes and threads, see [Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms684841) in the Windows SDK.  
   
 For more information about MFC multithreading support, see the following topics:  
   
