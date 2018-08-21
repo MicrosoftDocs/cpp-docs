@@ -260,6 +260,7 @@
 ### [/RELEASE (Set the Checksum)](release-set-the-checksum.md)
 ### [/SAFESEH (Image has Safe Exception Handlers)](safeseh-image-has-safe-exception-handlers.md)
 ### [/SECTION (Specify Section Attributes)](section-specify-section-attributes.md)
+### [/SOURCELINK (Include Sourcelink file in PDB)](sourcelink.md)
 ### [/STACK (Stack Allocations)](stack-stack-allocations.md)
 ### [/STUB (MS-DOS Stub File Name)](stub-ms-dos-stub-file-name.md)
 ### [/SUBSYSTEM (Specify Subsystem)](subsystem-specify-subsystem.md)
