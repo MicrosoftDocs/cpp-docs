@@ -76,7 +76,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 ## Windows Runtime  
 ### Remarks  
   
- See [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx) and [Value classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699861.aspx).  
+ See [Ref classes and structs](../cppcx/ref-classes-and-structs-c-cx.md) and [Value classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699861.aspx).  
   
 ### Parameters  
  *base_type* (optional)  

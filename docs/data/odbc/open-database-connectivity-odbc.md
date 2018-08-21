@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "data-storage"]
 # Open Database Connectivity (ODBC)
 The Microsoft Foundation Classes (MFC) library supplies classes for programming with Open Database Connectivity (ODBC). As of Visual Studio 2015 and SQL Server 2012 ODBC is the preferred way to connect to SQL data sources.
   
- For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/ms710252.aspx) SDK in MSDN.  
+ For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252\(v=vs.85\)) SDK in MSDN.  
   
   
 ## In This Section  
@@ -54,7 +54,7 @@ The Microsoft Foundation Classes (MFC) library supplies classes for programming 
 -   [ODBC Driver List](odbc-driver-list.md)  
   
 ## ODBC Database Tasks  
- These tasks are based on the MFC [ODBC](odbc-basics.md) classes. For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/ms710252.aspx) SDK.  
+ These tasks are based on the MFC [ODBC](odbc-basics.md) classes. For more information about using the ODBC API without MFC, see the [Open Database Connectivity (ODBC)](/previous-versions/windows/desktop/ms710252\(v=vs.85\)) SDK.  
   
 -   [Install and Get Started with ODBC](installing-and-getting-started-with-odbc.md)  
   

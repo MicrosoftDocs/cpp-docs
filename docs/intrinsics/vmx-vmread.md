@@ -48,7 +48,7 @@ unsigned char __vmx_vmread(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__vmx_vmread`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmread`|x64|  
   
  **Header file** \<intrin.h>  
   

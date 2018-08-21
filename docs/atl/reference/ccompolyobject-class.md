@@ -41,7 +41,7 @@ class CComPolyObject : public IUnknown,
 |Name|Description|  
 |----------|-----------------|  
 |[CComPolyObject::AddRef](#addref)|Increments the object's reference count.|  
-|[CComPolyObject::CreateInstance](#createinstance)|(Static) Allows you to create a new **CComPolyObject<** `contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).|  
+|[CComPolyObject::CreateInstance](#createinstance)|(Static) Allows you to create a new **CComPolyObject<** `contained` **>** object without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).|  
 |[CComPolyObject::FinalConstruct](#finalconstruct)|Performs final initialization of `m_contained`.|  
 |[CComPolyObject::FinalRelease](#finalrelease)|Performs final destruction of `m_contained`.|  
 |[CComPolyObject::QueryInterface](#queryinterface)|Retrieves a pointer to the requested interface.|  
@@ -115,7 +115,7 @@ CComPolyObject(void* pv);
  Frees all allocated resources, calls [FinalRelease](#finalrelease), and decrements the module lock count.  
   
 ##  <a name="createinstance"></a>  CComPolyObject::CreateInstance  
- Allows you to create a new **CComPolyObject<**`contained` **>** object without the overhead of [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
+ Allows you to create a new **CComPolyObject<**`contained` **>** object without the overhead of [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ```
 static HRESULT WINAPI CreateInstance(  

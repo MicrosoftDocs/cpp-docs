@@ -2,10 +2,9 @@
 
 This core-docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
-When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
+When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content.
 
-
-## Metadata 
+## Metadata
 
 The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)), divided into required fields and optional fields. Some key notes:
 
@@ -14,8 +13,8 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
 - **title**: This title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Developing Libraries with Cross Platform Tools | .NET Core`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
 - **author**, **manager**, **ms.reviewer**: The author field should contain the **GitHub username** of the author, not their alias.  The "manager" and "ms.reviewer" fields, on the other hand, should contain Microsoft aliases. ms.reviewer specifies the name of the PM/dev associated with the article or feature.
-- **ms.devlang** defines the technology. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb and xml.
-- **ms.assetid**: This is the GUID of the article that is used for internal tracking purposes such as Business Intelligence (BI). When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- **ms.devlang** defines the technology. Some of the supported values are: `dotnet`, `cpp`, `csharp`, `fsharp`, `vb` and `xml`.
+- **ms.assetid**: This is the GUID of the article that is used for internal tracking purposes such as Business Intelligence (BI). When creating a new Markdown file, you can get a GUID from [Online GUID Generator](https://www.guidgenerator.com/).
 
 ## Basic Markdown, GFM, and special characters
 
@@ -27,46 +26,60 @@ All basic and GitHub Flavored Markdown (GFM) is supported. For more information 
 Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
 
 - Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
-- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
+- Use the [HTML entity code](https://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
+
+## Markdown editing tools
+
+You can use [Visual Studio Code](https://code.visualstudio.com/) to edit Markdown documents. VS Code has many helpful Markdown extensions, such as:
+
+- [docs-markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) by Microsoft
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 ## File name
 
 File names use the following rules:
-* Contain only lowercase letters, numbers, and hyphens.
-* No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
-* Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
-* No small words - don't include a, and, the, in, or, etc.
-* Must be in Markdown and use the .md file extension.
-* Keep file names reasonably short. They are part of the URL for your articles.  
 
-
+- Contain only lowercase letters, numbers, and hyphens.
+- No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
+- Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
+- No small words - don't include a, and, the, in, or, etc.
+- Must be in Markdown and use the .md file extension.
+- Keep file names reasonably short. They are part of the URL for your articles.  
 
 ## Headings
 
 Use sentence-style capitalization. Always capitalize:
-- The first word of a heading. 
-- The word following a colon in a title or heading (for example, "How to: Sort an array"). 
 
-Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above. 
+- The first word of a heading.
+- The word following a colon in a title or heading (for example, "How to: Sort an array").
+
+Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above.
 
 There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
 
-If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.     
+If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.
+
+There should always be one blank line before and after a heading (except for first-level headings).
 
 Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
 
+```markdown
 ### Third-level heading
+
 #### Fourth-level heading
+
 ##### Fifth level heading
+
 ###### Sixth-level heading
- 
+```
+
 ## Text styling
 
-*Italics*
- Use for files, folders, paths (for long items, split onto their own line) - new terms - URLs (unless rendered as links, which is the default).
+*Italics*  
+Use for user-generated filenames, folders, and paths (for long items, split onto their own line); new terms; parameter names; user-entered values; and URLs (unless rendered as links, which is the default).
 
-**Bold**
-Use for UI elements.
+**Bold**  
+Use for UI elements and language keywords.
 
 ## Links
 
@@ -86,15 +99,21 @@ To link to a header in a Markdown file in the same repo, use relative linking + 
 
 - Example: [.NET Community](../docs/welcome.md#community)
 
+### Docs Links
+
+To link to a file in a different Docs repo, use the docs.microsoft.com relative URL as the link. Do not include the .md suffix.
+
+- Example: [Universal Windows Platform documentation](/windows/uwp)
+
 ### External Links
 
-To link to an external file, use the full URL as the link.
+To link to an external file, use the full URL as the link. Use HTTPS URL if applicable.
 
-- Example: [GitHub](http://www.github.com)
+- Example: [GitHub](https://www.github.com)
 
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
-- Example: http://www.github.com
+- Example: https://www.github.com
 
 ### Links to APIs
 
@@ -102,16 +121,17 @@ The build system has some extensions that allow us to link to .NET Core APIs wit
 When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
 You can use one of the following syntax:
+
 1. Markdown link: `[link_text](xref:UID)`
 2. Auto link: `<xref:UID>`
 3. Shorthand form: `@UID`
 
 - Example: `@System.String`
-- Example: `[String class](xref:System.String)` 
+- Example: `[String class](xref:System.String)`
 
 For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
 
-> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repo: [docascode/coreapi](https://github.com/docascode/coreapi). We're working on having a better system in the future.
+> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repository: [docascode/coreapi](https://github.com/docascode/coreapi). We're working on having a better system in the future.
 
 When the UID contains the special characters \` or \#, the UID value needs to be HTML encoded as %60 and %23 respectively as in the following examples:
 - Example: @System.Threading.Tasks.Task\`1 becomes `@System.Threading.Tasks.Task%601`
@@ -119,14 +139,15 @@ When the UID contains the special characters \` or \#, the UID value needs to be
 
 ## Lists
 
+Lists should be surrounded by blank lines.
+
 ### Ordered lists
 
-1. This 
+1. This
 1. Is
 1. An
 1. Ordered
-1. List  
-
+1. List
 
 #### Ordered list with an embedded list
 
@@ -139,7 +160,6 @@ When the UID contains the special characters \` or \#, the UID value needs to be
 1. ordered
 1. list
 
-
 ### Unordered Lists
 
 - This
@@ -148,11 +168,10 @@ When the UID contains the special characters \` or \#, the UID value needs to be
 - bulleted
 - list
 
+#### Unordered list with an embedded list
 
-##### Unordered list with an embedded list
-
-- This 
-- bulleted 
+- This
+- bulleted
 - list
     - Mrs. Peacock
     - Mr. Green
@@ -161,7 +180,6 @@ When the UID contains the special characters \` or \#, the UID value needs to be
     1. Colonel Mustard
     1. Mrs. White
 - lists
-
 
 ## Horizontal rule
 
@@ -175,7 +193,7 @@ When the UID contains the special characters \` or \#, the UID value needs to be
 | col 2 is      | centered      |   $12 |
 | col 1 is default | left-aligned     |    $1 |
 
-You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily. 
+You can use a [Markdown table generator tool](https://www.tablesgenerator.com/markdown_tables) to help creating them more easily. See also [Markdown editing tools](#markdown-editing-tools).
 
 ## Code
 
@@ -184,21 +202,20 @@ sample following the instructions in the [contributing guide](../CONTRIBUTING.md
 
 You can include the code using include syntax:
 
-```
+```markdown
 [!code-csharp[<title>](<pathToFile>#<RegionName)]
 ```
 
 The example above shows C# syntax, but other languages are supported.
 Use `code-fsharp` for F# samples; use `code-vbnet` for Visual Basic samples.
 Other languages that are supported are:
-* C++: `code-cpp`
-* HTML: `code-html`
-* JavaScript: `code-javascript`
-* Powershell: `code-ps`
-* SQL: `code-sql`
-* XML: `code-xml`
 
-
+- C++: `code-cpp`
+- HTML: `code-html`
+- JavaScript: `code-javascript`
+- PowerShell: `code-ps`
+- SQL: `code-sql`
+- XML: `code-xml`
 
 The text you place for `<title>` shows up as a rollover on the text. The `<pathToFile>`
 is the path to the source file. The `<RegionName>` should be a region in your source
@@ -217,25 +234,25 @@ int sum = i + j;
 ```
 
 In other languages, use the comment syntax for that language.
-Finally, you can use line
-numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
+
+Finally, you can use line numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
 because they are very brittle.
 
 Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
-system. However, if you need to show something that causes compile time or
-runtime errors, you can use inline code blocks.
+system. However, if you need to show something that causes compile time or runtime errors, you can 
+use inline code blocks.
 
 ### Inline code blocks with language identifier
 
 Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
 
-##### C&#9839;
+#### C\#
 
-```c#
+```csharp
 using System;
 namespace HelloWorld
 {
-    class Hello 
+    class Hello
     {
         static void Main() 
         {
@@ -248,6 +265,7 @@ namespace HelloWorld
     }
 }
 ```
+
 #### Python
 
 ```python
@@ -255,6 +273,7 @@ friends = ['john', 'pat', 'gary', 'michael']
 for i, name in enumerate(friends):
     print "iteration {iteration} is {name}".format(iteration=i, name=name)
 ```
+
 #### PowerShell
 
 ```powershell
@@ -266,11 +285,11 @@ $Files = Get-Childitem $Directory -recurse -Include *.log `
 
 ### Generic code block
 
-Use three backticks (&#96;&#96;&#96;) for generic code block coding.   
+Use three backticks (&#96;&#96;&#96;) for generic code block coding.
 
 > The recommended approach is to use code blocks with language identifiers as explained in the previous section to ensure the proper syntax highlighting in the documentation site. Use generic code blocks only when necessary.
 
-```
+```javascript
 function fancyAlert(arg) {
     if(arg) {
         $.docs({div:'#foo'})
@@ -280,7 +299,7 @@ function fancyAlert(arg) {
 
 ### Inline code
 
-Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
+Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language expressions and function names.
 
 ## Blockquotes
 
@@ -294,17 +313,19 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ### Linked Image
 
-[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
+[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net)
 
 ## Videos
 
 ### Channel 9
 
-<iframe src="https://channel9.msdn.com/Shows/On-NET/Shipping-NET-Core-RC2--Tools-Preview-1/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+[![Larry Osterman - His one interaction with Bill Gates (over DOS networking stack)](https://sec.ch9.ms/ch9/caf5/f8657a22-5b83-47a3-9748-4c1be9fecaf5/Larry-Osterman-His-one-interaction-with-Bill-Gate_960.jpg)
+](https://channel9.msdn.com/Blogs/TheChannel9Team/Larry-Osterman-His-one-interaction-with-Bill-Gates-over-DOS-networking-stack)
 
 ### YouTube
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
+[![On .NET 2/4/2016 - Scott Hunter](https://img.youtube.com/vi/g2a4W6Q7aRw/0.jpg)
+](https://www.youtube.com/watch?v=g2a4W6Q7aRw)
 
 ## docs.microsoft extensions
 
@@ -312,7 +333,7 @@ docs.microsoft provides a few additional extensions to GitHub Flavored Markdown.
 
 ### Alerts
 
-It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.     
+It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't differentiate them.
 
 #### Note
 

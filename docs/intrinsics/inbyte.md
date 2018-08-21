@@ -36,7 +36,7 @@ unsigned char __inbyte(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__inbyte`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__inbyte`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

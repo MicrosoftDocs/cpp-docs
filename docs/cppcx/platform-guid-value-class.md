@@ -32,7 +32,7 @@ public value struct Guid
 |[operator()](#operator-call)|Converts a Guid to a GUID.|  
   
 ### Remarks  
- For an example of how to generate a new Platform::Guid using the Windows function [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568\(v=vs.85\).aspx), see [WinRT component: How to generate a GUID?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)  
+ For an example of how to generate a new Platform::Guid using the Windows function [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid), see [WinRT component: How to generate a GUID?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)  
   
 ### Requirements  
  **Minimum supported client:** Windows 8  

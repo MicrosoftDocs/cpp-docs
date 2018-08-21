@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 > [!NOTE]
 >  Programs with inline assembler code are not fully portable to other hardware platforms. If you are designing for portability, avoid using inline assembler.  
   
- Inline assembly is not supported on the ARM and [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] processors.  The following topics explain how to use the Visual C/C++ inline assembler with x86 processors:  
+ Inline assembly is not supported on the ARM and x64 processors.  The following topics explain how to use the Visual C/C++ inline assembler with x86 processors:  
   
 -   [Inline Assembler Overview](../../assembler/inline/inline-assembler-overview.md)  
   

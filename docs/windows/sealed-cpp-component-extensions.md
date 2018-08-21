@@ -45,7 +45,7 @@ virtual return-type identifier() sealed {...};
  **sealed** is a context-sensitive keyword.  For more information, see [Context-Sensitive Keywords](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
 ## Windows Runtime  
- See [Ref classes and structs](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx).  
+ See [Ref classes and structs](../cppcx/ref-classes-and-structs-c-cx.md).  
   
 ### Requirements  
  Compiler option: `/ZW`  

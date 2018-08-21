@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IRowsetNotifyCP Class
-Implements the provider site for the connection point interface [IRowsetNotify](https://msdn.microsoft.com/library/ms712959.aspx).  
+Implements the provider site for the connection point interface [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\)).  
   
 ## Syntax
 
@@ -61,7 +61,7 @@ class IRowsetNotifyCP :
  For detailed information on implementing notifications, see "Supporting Notifications" in [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md).  
 
 ## <a name="onfieldchange"></a> IRowsetNotifyCP::Fire_OnFieldChange
-Broadcasts an [OnFieldChange](https://msdn.microsoft.com/library/ms715961.aspx) event to notify consumers of a change to the value of a column.  
+Broadcasts an [OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\)) event to notify consumers of a change to the value of a column.  
   
 ### Syntax  
   
@@ -76,10 +76,10 @@ HRESULT Fire_OnFieldChange(IRowset* pRowset,
 ```  
   
 #### Parameters  
- See [IRowsetNotify::OnFieldChange](https://msdn.microsoft.com/library/ms715961.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="onrowchange"></a> IRowsetNotifyCP::Fire_OnRowChange
-Broadcasts an [OnRowChange](https://msdn.microsoft.com/library/ms722694.aspx) event to all listeners on the connection point `IID_IRowsetNotify` to notify consumers of a change affecting the rows.  
+Broadcasts an [OnRowChange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)) event to all listeners on the connection point `IID_IRowsetNotify` to notify consumers of a change affecting the rows.  
   
 ### Syntax  
   
@@ -93,10 +93,10 @@ HRESULT Fire_OnRowChange(IRowset* pRowset,
 ```  
   
 #### Parameters  
- See [IRowsetNotify::OnRowChange](https://msdn.microsoft.com/library/ms722694.aspx) in the *OLE DB Programmer's Reference*.  
+ See [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
 
 ## <a name="onrowsetchange"></a> IRowsetNotifyCP::Fire_OnRowsetChange
-Broadcasts an [OnRowsetChange](https://msdn.microsoft.com/library/ms722669.aspx) event to all listeners on the connection point `IID_IRowsetNotify` to notify consumers of a change affecting the entire rowset.  
+Broadcasts an [OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)) event to all listeners on the connection point `IID_IRowsetNotify` to notify consumers of a change affecting the entire rowset.  
   
 ### Syntax  
   
@@ -108,7 +108,7 @@ HRESULT Fire_OnRowsetChange(IRowset* pRowset,
 ```  
   
 #### Parameters  
- See [IRowsetNotify::OnRowsetChange](https://msdn.microsoft.com/library/ms722669.aspx) in the *OLE DB Programmer's Reference*.
+ See [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   

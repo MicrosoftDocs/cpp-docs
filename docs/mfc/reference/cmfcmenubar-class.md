@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CMFCMenuBar Class
 A menu bar that implements docking.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
@@ -328,7 +328,7 @@ void EnableHelpCombobox(
  The width of the button for the combo box in pixels.  
   
 ### Remarks  
- The **Help** combo box resembles the **Help** combo box in the menu bar of [!INCLUDE[ofprword](../../mfc/reference/includes/ofprword_md.md)].  
+ The **Help** combo box resembles the **Help** combo box in the menu bar of Microsoft Word.  
   
  When you call this method with *uiID* set to 0, this method hides the combo box. Otherwise, this method displays the combo box automatically on the right side of your menu bar. After you call this method, call [CMFCMenuBar::GetHelpCombobox](#gethelpcombobox) to obtain a pointer to the inserted [CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) object.  
   

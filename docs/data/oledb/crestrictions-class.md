@@ -77,7 +77,7 @@ HRESULT Open(const CSession& session,
 ### Remarks  
  You can specify a maximum of seven restrictions on a schema rowset.  
   
- See [IDBSchemaRowset](https://msdn.microsoft.com/library/ms713686.aspx) for information about the defined restrictions on each schema rowset.  
+ See [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) for information about the defined restrictions on each schema rowset.  
   
 ## See Also  
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   

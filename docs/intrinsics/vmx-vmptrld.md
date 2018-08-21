@@ -48,7 +48,7 @@ int __vmx_vmptrld( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__vmx_vmptrld`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmptrld`|x64|  
   
  **Header file** \<intrin.h>  
   

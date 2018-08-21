@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBInitializeImpl Class
-Provides an implementation for the [IDBInitialize](https://msdn.microsoft.com/library/ms713706.aspx) interface.  
+Provides an implementation for the [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)) interface.  
   
 ## Syntax
 
@@ -76,7 +76,7 @@ STDMETHOD(Initialize)(void);
 ```  
   
 ### Remarks  
- See [IDBInitialize::Initialize](https://msdn.microsoft.com/library/ms718026.aspx) in the *OLE DB Programmer's Reference*. 
+ See [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="uninitialize"></a> IDBInitializeImpl::Uninitialize
 Places the data source object in an uninitialized state by freeing internal resources such as the property support.  
@@ -88,7 +88,7 @@ STDMETHOD(Uninitialize)(void);
 ```  
   
 ### Remarks  
- See [IDBInitialize::Uninitialize](https://msdn.microsoft.com/library/ms719648.aspx) in the *OLE DB Programmer's Reference*.
+ See [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) in the *OLE DB Programmer's Reference*.
 
 ## <a name="dwstatus"></a> IDBInitializeImpl::m_dwStatus
 Data source flags.  

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CMFCBaseTabCtrl Class
 Implements the base functionality for tabbed windows.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
@@ -158,7 +158,7 @@ class CMFCBaseTabCtrl : public CWnd
 ## Remarks  
  The `CMFCBaseTabCtrl` class is an abstract class. Therefore, it cannot be instantiated. To create a tabbed window, you must derive a class from `CMFCBaseTabCtrl`. The MFC library contains some derived class examples, two of which are [CMFCTabCtrl Class](../../mfc/reference/cmfctabctrl-class.md) and [CMFCOutlookBarTabCtrl Class](../../mfc/reference/cmfcoutlookbartabctrl-class.md).  
   
- Starting with [!INCLUDE[vs_dev14](../../ide/includes/vs_dev14_md.md)], this class supports Microsoft Active Accessibility.  
+ Starting with Visual Studio 2015, this class supports Microsoft Active Accessibility.  
   
 ## Customization Tips  
  The following tips pertain to the `CMFCBaseTabCtrl Class` and any classes that inherit from it:  

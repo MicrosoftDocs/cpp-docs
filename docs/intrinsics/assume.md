@@ -47,7 +47,7 @@ __assume(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__assume`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__assume`|x86, ARM, x64|  
   
 ## Example  
   

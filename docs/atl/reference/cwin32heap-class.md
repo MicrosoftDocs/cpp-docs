@@ -141,7 +141,7 @@ CWin32Heap(
   
  The parameter HEAP_NO_SERIALIZE specifies that mutual exclusion will not be used when the heap functions allocate and free memory, with an according increase in performance.  
   
- The third parameter defaults to 0, which allows the heap to grow as required. See [HeapCreate](http://msdn.microsoft.com/library/windows/desktop/aa366599\(v=vs.85\).aspx) for an explanation of the memory sizes and flags.  
+ The third parameter defaults to 0, which allows the heap to grow as required. See [HeapCreate](/windows/desktop/api/heapapi/nf-heapapi-heapcreate) for an explanation of the memory sizes and flags.  
   
 ##  <a name="dtor"></a>  CWin32Heap::~CWin32Heap  
  The destructor.  

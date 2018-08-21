@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ISessionPropertiesImpl Class
-Provides an implementation of the [ISessionProperties](https://msdn.microsoft.com/library/ms713721.aspx) interface.  
+Provides an implementation of the [ISessionProperties](/previous-versions/windows/desktop/ms713721\(v=vs.85\)) interface.  
   
 ## Syntax
 
@@ -59,7 +59,7 @@ STDMETHOD(GetProperties)(ULONG cPropertyIDSets, 
 ```  
   
 #### Parameters  
- See [ISessionProperties::GetProperties](https://msdn.microsoft.com/library/ms723643.aspx) in the *OLE DB Programmer's Reference*. 
+ See [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643\(v=vs.85\)) in the *OLE DB Programmer's Reference*. 
 
 ## <a name="setproperties"></a> ISessionPropertiesImpl::SetProperties
 Sets properties in the `DBPROPSET_SESSION` property group.  
@@ -72,7 +72,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets, 
 ```  
   
 #### Parameters  
- See [ISessionProperties::SetProperties](https://msdn.microsoft.com/library/ms714405.aspx) in the *OLE DB Programmer's Reference*.  
+ See [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405\(v=vs.85\)) in the *OLE DB Programmer's Reference*.  
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   

@@ -64,7 +64,7 @@ class CPropertySheet : public CWnd
 ## Remarks  
  A property sheet consists of a `CPropertySheet` object and one or more [CPropertyPage](../../mfc/reference/cpropertypage-class.md) objects. The framework displays a property sheet as a window with a set of tab indices and an area that contains the currently selected page. The user navigates to a specific page by using the appropriate tab.  
   
- `CPropertySheet` provides support for the expanded [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) structure introduced in [!INCLUDE[Win98](../../mfc/reference/includes/win98_md.md)] and Windows NT 2000. The structure contains additional flags and members that support using a "watermark" background bitmap.  
+ `CPropertySheet` provides support for the expanded [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) structure introduced in Windows 98 and Windows NT 2000. The structure contains additional flags and members that support using a "watermark" background bitmap.  
   
  To display these new images automatically in your property sheet object, pass valid values for the bitmap and palette images in the call to [CPropertySheet::Construct](#construct) or [CPropertySheet::CPropertySheet](#cpropertysheet).  
   
