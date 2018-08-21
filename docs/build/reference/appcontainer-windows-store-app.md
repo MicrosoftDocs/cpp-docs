@@ -24,7 +24,7 @@ Specifies whether the linker creates an executable image that must be run in an 
   
  This option modifies an executable to indicate whether the app must be run in the appcontainer process-isolation environment. Specify /APPCONTAINER for an app that must run in the appcontainer environment—for example, a Universal Windows Platform (UWP) or Windows Phone 8.x app. (The option is set automatically in Visual Studio when you create a Universal Windows app from a template.) For a desktop app, specify /APPCONTAINER:NO or just omit the option.  
   
- The /APPCONTAINER option was introduced in [!INCLUDE[win8](../../build/reference/includes/win8_md.md)].  
+ The /APPCONTAINER option was introduced in Windows 8.  
   
 ### To set this linker option in Visual Studio  
   

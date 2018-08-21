@@ -25,7 +25,7 @@ Normally it is easy and convenient to work with the default arrangement of all r
   
 -   To include resources that are being used by several different projects, or that are part of a source code version-control system, and thus must exist in a central location where modifications will affect all projects.  
   
--   To include resources (such as RCDATA resources) that are in a custom format. RCDATA resources may have special requirements. For example, you cannot use an expression as a value for the nameID field. See the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] documentation for more information.  
+-   To include resources (such as RCDATA resources) that are in a custom format. RCDATA resources may have special requirements. For example, you cannot use an expression as a value for the nameID field. See the Windows SDK documentation for more information.  
   
  If you have sections in your existing .rc files that meet any of these conditions, you should place the sections in one or more separate .rc files and include them in your project using the [Resource Includes dialog box](../windows/resource-includes-dialog-box.md). The *Projectname*.rc2 file created in the \res subdirectory of a new project is used for this purpose.  
   

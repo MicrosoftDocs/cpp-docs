@@ -49,7 +49,7 @@ if (lpstr == NULL)
     RaiseException( STATUS_INSUFFICIENT_MEM, 0, 0, 0);  
 ```  
   
- If you want to simply raise an exception, you can set the last three parameters to 0. The three last parameters are useful for passing additional information and setting a flag that prevents handlers from continuing execution. See the [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) function in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] for more information.  
+ If you want to simply raise an exception, you can set the last three parameters to 0. The three last parameters are useful for passing additional information and setting a flag that prevents handlers from continuing execution. See the [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) function in the Windows SDK for more information.  
   
  In your exception-handling filters, you can then test for the codes you've defined. For example:  
   

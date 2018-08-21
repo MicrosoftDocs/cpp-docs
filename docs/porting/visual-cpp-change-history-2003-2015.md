@@ -437,7 +437,7 @@ Although these differences can affect your source code or other build artifacts,
   
 - **Exception handling**  
   
-     There are a couple of changes to exception handling. First, exception objects have to be either copyable or movable. The following code compiled in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], but does not compile in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)]:  
+     There are a couple of changes to exception handling. First, exception objects have to be either copyable or movable. The following code compiled in Visual Studio 2013, but does not compile in Visual Studio 2015:  
   
     ```cpp  
     struct S  
@@ -471,7 +471,7 @@ Although these differences can affect your source code or other build artifacts,
   
      To update your code, make sure that the copy constructor for your exception object is **public** and not marked **explicit**.  
   
-     Catching an exception by value also requires the exception object to be copyable. The following code compiled in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], but does not compile in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)]:  
+     Catching an exception by value also requires the exception object to be copyable. The following code compiled in Visual Studio 2013, but does not compile in Visual Studio 2015:  
   
     ```cpp  
     struct B  
@@ -519,7 +519,7 @@ Although these differences can affect your source code or other build artifacts,
     }  
     ```  
   
-     The compiler interpreted this as a string literal "hello" followed by a macro, which is expanded "there", and then the two string literals were concatenated into one. In [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)], the compiler interprets this as a user-defined literal, but since there is no matching user-defined literal _x defined, it gives an error.  
+     The compiler interpreted this as a string literal "hello" followed by a macro, which is expanded "there", and then the two string literals were concatenated into one. In Visual Studio 2015, the compiler interprets this as a user-defined literal, but since there is no matching user-defined literal _x defined, it gives an error.  
   
     ```Output  
     error C3688: invalid literal suffix '_x'; literal operator or literal operator template 'operator ""_x' not found  
@@ -530,7 +530,7 @@ Although these differences can affect your source code or other build artifacts,
   
 - **Adjacent string literals**  
   
-     Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visaul C++. In [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)], you must now add whitespace between the two strings. For example, the following code must be changed:  
+     Similarly to the previous, due to related changes in string parsing, adjacent string literals (either wide or narrow character string literals) without any whitespace were interpreted as a single concatenated string in previous releases of Visaul C++. In Visual Studio 2015, you must now add whitespace between the two strings. For example, the following code must be changed:  
   
     ```cpp  
     char * str = "abc""def";  
@@ -569,7 +569,7 @@ Although these differences can affect your source code or other build artifacts,
   
 - **Union data members**  
   
-     Data members of unions can no longer have reference types. The following code compiled successfully in [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], but produces an error in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)].  
+     Data members of unions can no longer have reference types. The following code compiled successfully in Visual Studio 2013, but produces an error in Visual Studio 2015.  
   
     ```cpp  
     union U1   
@@ -595,7 +595,7 @@ Although these differences can affect your source code or other build artifacts,
   
      To address this issue, change reference types either to a pointer or a value. Changing the type to a pointer requires changes in the code that uses the union field. Changing the code to a value would change the data stored in the union, which affects other fields since fields in union types share the same memory. Depending on the size of the value, it might also change the size of the union.  
   
-- Anonymous unions are now more conformant to the standard. Previous versions of the compiler generated an explicit constructor and destructor for anonymous unions. These are deleted in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)].  
+- Anonymous unions are now more conformant to the standard. Previous versions of the compiler generated an explicit constructor and destructor for anonymous unions. These are deleted in Visual Studio 2015.  
   
     ```cpp  
     struct S   
@@ -612,7 +612,7 @@ Although these differences can affect your source code or other build artifacts,
     } u; // C2280  
     ```  
   
-     The preceding code generates the following error in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)]:  
+     The preceding code generates the following error in Visual Studio 2015:  
   
     ```cpp  
     error C2280: '<unnamed-type-u>::<unnamed-type-u>(void)': attempting to reference a deleted function  
@@ -674,7 +674,7 @@ Although these differences can affect your source code or other build artifacts,
     }  
     ```  
   
-     In [!INCLUDE[cpp_dev12_long](../build/reference/includes/cpp_dev12_long_md.md)], the constructor for S is called when the union is created, and the destructor for S is called when the stack for function f is cleaned up. But in [!INCLUDE[cpp_dev14_long](../porting/includes/cpp_dev14_long_md.md)], the constructor and destructor are not called. The compiler gives a warning about this behavior change.  
+     In Visual Studio 2013, the constructor for S is called when the union is created, and the destructor for S is called when the stack for function f is cleaned up. But in Visual Studio 2015, the constructor and destructor are not called. The compiler gives a warning about this behavior change.  
   
     ```Output  
     warning C4587: 'U::s': behavior change: constructor is no longer implicitly calledwarning C4588: 'U::s': behavior change: destructor is no longer implicitly called  
@@ -814,7 +814,7 @@ Although these differences can affect your source code or other build artifacts,
   
 - **Copy constructors**  
   
-     In both [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] and Visual Studio 2015, the compiler generates a copy constructor for a class if that class has a user-defined move constructor but no user-defined copy constructor. In Dev14, this implicitly generated copy constructor is also marked "= delete".  
+     In both Visual Studio 2013 and Visual Studio 2015, the compiler generates a copy constructor for a class if that class has a user-defined move constructor but no user-defined copy constructor. In Dev14, this implicitly generated copy constructor is also marked "= delete".  
 
 <!--From here to VS_Update1 added 04/21/2017-->
 

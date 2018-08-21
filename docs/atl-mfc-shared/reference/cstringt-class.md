@@ -467,7 +467,7 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
 - `CStringT`( `const unsigned char*` `psz` ): Allows you to construct a `CStringT` from a pointer to **unsigned char**.  
   
 > [!NOTE]
->  Define the _CSTRING_DISABLE_NARROW_WIDE_CONVERSION macro to turn off implicit string conversion between [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] and [!INCLUDE[TLA#tla_unicode](../../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] strings. The macro excludes from compilation constructors that support conversion.  
+>  Define the _CSTRING_DISABLE_NARROW_WIDE_CONVERSION macro to turn off implicit string conversion between ANSI and Unicode strings. The macro excludes from compilation constructors that support conversion.  
   
  Note that the *strSrc* parameter can be either a `CStringT` or `CThisSimpleString` object. For `CStringT`, use one of its default instantiations (`CString`, `CStringA`, or `CStringW`); for `CThisSimpleString`, use a **this** pointer. `CThisSimpleString` declares an instance of the [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md), which is a smaller string class with less built-in functionality than the `CStringT` class.  
   

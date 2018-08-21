@@ -16,11 +16,11 @@ C++ Accelerated Massive Parallelism (C++ AMP) accelerates execution of C++ code 
   
 ## System Requirements  
   
-- Windows 7, [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)]  
+- Windows 7, Windows 8, Windows Server 2008 R2, or Windows Server 2012  
   
 - DirectX 11 Feature Level 11.0 or later hardware  
   
-- For debugging on the software emulator, [!INCLUDE[win8](../../build/reference/includes/win8_md.md)] or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code).  
+- For debugging on the software emulator, Windows 8 or Windows Server 2012 is required. For debugging on the hardware, you must install the drivers for your graphics card. For more information, see [Debugging GPU Code](/visualstudio/debugger/debugging-gpu-code).  
   
 ## Introduction  
  
