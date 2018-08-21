@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["back_inserter Function"]
 ms.assetid: 91476338-5548-44b7-bc7e-2150f4fbe31a
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # back_inserter Function

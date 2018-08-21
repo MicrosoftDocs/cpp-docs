@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::InvalidArgumentException"]
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::InvalidArgumentException Class

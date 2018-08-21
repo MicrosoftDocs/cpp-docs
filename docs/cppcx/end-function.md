@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["end Function"]
 ms.assetid: fb837bff-fc76-4bae-9096-facf0e03041c
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # end Function

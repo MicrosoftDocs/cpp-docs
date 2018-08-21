@@ -7,7 +7,7 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Visual C++ Help and Community

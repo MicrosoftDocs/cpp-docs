@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::HeapAllocationTrackingLevel Enumeration"]
 ms.assetid: dc341bc0-b47b-4eb2-9445-fbaf788e7b1a
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::HeapAllocationTrackingLevel Enumeration

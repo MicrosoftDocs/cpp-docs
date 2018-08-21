@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["SafeGreaterThan function"]
 ms.assetid: 32cecac9-ba88-43eb-a7a4-30e390456739
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeGreaterThan

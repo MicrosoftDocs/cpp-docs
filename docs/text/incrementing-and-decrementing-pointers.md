@@ -8,7 +8,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["incrementing pointers", "MBCS [C++], pointers", "pointers [C++], multibyte characters", "decrementing pointers"]
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Incrementing and Decrementing Pointers

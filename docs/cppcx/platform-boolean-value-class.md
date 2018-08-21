@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Boolean Struct"]
 ms.assetid: 8518a1db-7139-4187-9c7a-1ae3943373f2
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Boolean value class

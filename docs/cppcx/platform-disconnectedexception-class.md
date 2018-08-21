@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::DisconnectedException"]
 ms.assetid: c25e0d64-5bff-4c21-88e5-c4ec2776fa7f
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::DisconnectedException Class

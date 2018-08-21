@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::TypeCode Enumeration"]
 ms.assetid: 93c1305f-eb16-4bec-aead-f88d9518b4cf
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::TypeCode Enumeration

@@ -8,7 +8,7 @@ f1_keywords: ["VCCORLIB/Platform::Box"]
 dev_langs: ["C++"]
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Box Class

@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::__GUID Struct"]
 ms.assetid: 507cc577-b34d-4952-b1a9-ff4ae98bb6dd
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::__GUID Struct

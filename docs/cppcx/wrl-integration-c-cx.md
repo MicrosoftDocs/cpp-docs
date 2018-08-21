@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 3ad43894-c574-477c-ad3e-240301f381d4
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # WRL integration (C++/CX)

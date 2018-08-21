@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Delegates (C++/CX)

@@ -8,7 +8,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["character sets [C++], ANSI", "ANSI [MFC]", "MFC [C++], ANSI support"]
 ms.assetid: f98440ad-90fc-42f5-bf74-975cd793c49c
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Support for ANSI

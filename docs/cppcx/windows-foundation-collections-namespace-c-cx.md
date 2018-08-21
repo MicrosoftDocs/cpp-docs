@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Windows::Foundation::Collections Namespace (C++/CX)"]
 ms.assetid: 04bd3543-e30f-4fd2-95ee-272a3fcd0158
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Windows::Foundation::Collections Namespace (C++/CX)

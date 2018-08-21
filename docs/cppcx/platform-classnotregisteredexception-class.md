@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ClassNotRegisteredException"]
 ms.assetid: 8f8871d8-51b9-46e8-902e-ae023c9f1de9
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::ClassNotRegisteredException Class

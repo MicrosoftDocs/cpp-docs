@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["SafeIntException, constructor"]
 ms.assetid: 8e5a0c24-a56b-4c80-9ee8-876604b1e7dc
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeIntException::SafeIntException

@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 7faf53c8-fa21-42cc-8246-d32533ef9dfa
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Static libraries (C++/CX)

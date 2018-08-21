@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 76e213cf-2f3d-4181-b35b-9fd25d5b307c
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CLR integration (C++/CX)

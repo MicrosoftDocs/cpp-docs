@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ValueType Class"]
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::ValueType Class

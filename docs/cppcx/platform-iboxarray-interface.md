@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::IBoxArray"]
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::IBoxArray Interface

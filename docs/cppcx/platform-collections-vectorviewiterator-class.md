@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["VectorViewIterator Class"]
 ms.assetid: be3aa1ae-e6ba-4a06-8d6b-86d8128026f7
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorViewIterator Class

@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::Console Class"]
 ms.assetid: e8d01367-d8c8-4211-9b9e-3f93c8115dae
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::Console Class

@@ -7,7 +7,7 @@ ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::UnorderedMap"]
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::UnorderedMap Class

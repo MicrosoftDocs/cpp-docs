@@ -7,7 +7,7 @@ ms.topic: "language-reference"
 helpviewer_keywords: ["value struct", "value class"]
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Value classes and structs (C++/CX)

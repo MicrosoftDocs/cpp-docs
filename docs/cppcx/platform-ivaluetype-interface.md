@@ -8,7 +8,7 @@ f1_keywords: ["VCCORLIB/Platform::IValueType"]
 dev_langs: ["C++"]
 ms.assetid: 8b89b21e-0d7b-4cc2-baa3-93b17c82945c
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::IValueType Interface

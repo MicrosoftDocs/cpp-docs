@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["MapView Class"]
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::MapView Class

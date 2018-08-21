@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::Heap Class"]
 ms.assetid: d6dcf9c0-8036-433f-9eb8-c53ec49b0993
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::Heap Class

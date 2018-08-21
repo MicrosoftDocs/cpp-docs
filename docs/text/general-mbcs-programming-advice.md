@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["MBCS [C++], dialog box fonts", "MS Shell Dlg", "MBCS [C++], programming", "dialog boxes [C++], fonts"]
 ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # General MBCS Programming Advice

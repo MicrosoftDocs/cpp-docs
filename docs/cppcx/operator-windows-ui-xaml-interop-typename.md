@@ -6,7 +6,7 @@ ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: a65a105e-7e3a-452f-932f-2cdaf00fbba5
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # operator Windows::UI::Xaml::Interop::TypeName

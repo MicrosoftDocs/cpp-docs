@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::FailureException"]
 ms.assetid: 1729cd07-bfc2-448e-9db5-185d5cbf5b81
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::FailureException Class

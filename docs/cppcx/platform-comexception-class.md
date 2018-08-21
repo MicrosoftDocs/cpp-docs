@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::COMException Class"]
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::COMException Class

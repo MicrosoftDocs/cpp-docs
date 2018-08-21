@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::WrongThreadException"]
 ms.assetid: c193f97e-0392-4535-a4c4-0711e4e4a836
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::WrongThreadException Class

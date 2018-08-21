@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OutOfMemoryException"]
 ms.assetid: 49c19f6b-f66c-4448-b861-91dcbf32de2c
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::OutOfMemoryException Class

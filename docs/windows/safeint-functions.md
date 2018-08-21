@@ -8,7 +8,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["functions, SafeInt"]
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Functions

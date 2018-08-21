@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::NullReferenceException"]
 ms.assetid: be202577-d898-4716-83cd-e3556fe8a241
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::NullReferenceException Class

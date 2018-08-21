@@ -8,7 +8,7 @@ f1_keywords: ["VCCORLIB/Namespace not found::Platform", "VCCORLIB/Namespace not 
 dev_langs: ["C++"]
 ms.assetid: 774df45d-f8a7-45a3-ae24-eecc3c681040
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::IBox Interface

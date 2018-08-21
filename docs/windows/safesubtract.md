@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["SafeSubtract function"]
 ms.assetid: c2712ddc-173f-46a1-b09c-e7ebbd9e68b2
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeSubtract

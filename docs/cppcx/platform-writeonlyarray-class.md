@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::WriteOnlyArray Class"]
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::WriteOnlyArray Class

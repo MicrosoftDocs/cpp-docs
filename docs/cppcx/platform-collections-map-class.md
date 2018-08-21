@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Map Class (C++/Cx)"]
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Map Class

@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["InputIterator Class"]
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::InputIterator Class

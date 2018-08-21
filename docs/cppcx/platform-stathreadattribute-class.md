@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::STAThreadAttribute Class"]
 ms.assetid: f97960fc-e673-4d9e-910a-54c8415411c4
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::STAThreadAttribute Class

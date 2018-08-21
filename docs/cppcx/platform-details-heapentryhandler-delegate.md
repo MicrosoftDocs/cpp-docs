@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::HeapEntryHandler Delegate"]
 ms.assetid: 97ba4e47-ac0f-47c6-a93c-67a21c0a16d3
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::HeapEntryHandler Delegate

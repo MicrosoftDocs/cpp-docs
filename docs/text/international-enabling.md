@@ -8,7 +8,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["globalization [C++], character sets", "strings [C++], international enabling", "localization [C++], character sets", "MBCS [C++], enabling", "Unicode [C++], enabling"]
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # International Enabling

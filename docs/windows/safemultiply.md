@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["SafeMultiply function"]
 ms.assetid: 81d988a5-fac7-4930-8c37-c24fa8e2c853
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeMultiply

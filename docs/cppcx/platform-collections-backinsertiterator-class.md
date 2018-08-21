@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["BackInsertIterator Class"]
 ms.assetid: aecee1ff-100d-4129-b84b-1966f0923dbf
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::BackInsertIterator Class

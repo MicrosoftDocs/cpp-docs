@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::IEquatable Interface"]
 ms.assetid: 72f15f55-f7a4-4cca-aeba-2d5a9996818c
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::IEquatable Interface

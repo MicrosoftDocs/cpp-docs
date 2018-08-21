@@ -8,7 +8,7 @@ f1_keywords: ["VCCORLIB/Platform::Object::ToString"]
 dev_langs: ["C++"]
 ms.assetid: 2541955f-d844-4bd8-944d-185198c86579
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # default::(type_name)::ToString Method

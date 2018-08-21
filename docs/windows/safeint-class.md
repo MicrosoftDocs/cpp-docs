@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["SafeInt class"]
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeInt Class

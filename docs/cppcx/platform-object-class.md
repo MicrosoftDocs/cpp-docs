@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Object class"]
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Object Class

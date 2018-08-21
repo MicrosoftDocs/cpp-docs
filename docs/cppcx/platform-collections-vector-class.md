@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Vector Class (C++/Cx)"]
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Vector Class

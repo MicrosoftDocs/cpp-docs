@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Runtime::CompilerServices Namespace"]
 ms.assetid: 8613b6b3-b193-45d1-b956-881a4a700788
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Runtime::CompilerServices Namespace

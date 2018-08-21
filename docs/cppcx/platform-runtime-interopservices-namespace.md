@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Runtime::InteropServices Namespace"]
 ms.assetid: 546b981a-a360-4a78-b89f-fdf0df848747
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Runtime::InteropServices Namespace

@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Metadata::Attribute Attribute"]
 ms.assetid: 0e69727f-429b-4f7d-85c6-eea614f14dd7
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::Attribute Attribute

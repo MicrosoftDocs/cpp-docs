@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::IntPtr Struct"]
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::IntPtr value class

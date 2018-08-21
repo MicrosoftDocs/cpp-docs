@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::OutOfBoundsException"]
 ms.assetid: 96f8bf75-1207-4049-964b-7771822cadf3
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::OutOfBoundsException Class

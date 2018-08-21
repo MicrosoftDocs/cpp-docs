@@ -9,7 +9,7 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["Users Group [C++]", "security [C++], Users Group", "Windows accounts [C++]", "non administrator users [C++]", "user accounts [C++]", "administrator (not running as) [C++]"]
 ms.assetid: e48a03ec-d345-49f6-809a-1a291eecbc81
 author: "mikeblome"
-ms.author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Running as a Member of the Users Group
