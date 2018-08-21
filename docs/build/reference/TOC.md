@@ -78,6 +78,7 @@
 #### [/hotpatch (Create Hotpatchable Image)](hotpatch-create-hotpatchable-image.md)
 #### [/I (Additional Include Directories)](i-additional-include-directories.md)
 #### [/J (Default char Type Is unsigned)](j-default-char-type-is-unsigned.md)
+#### [/JMC (Just My Code debugging)](jmc.md)
 #### [/kernel (Create Kernel Mode Binary)](kernel-create-kernel-mode-binary.md)
 #### [/link (Pass Options to Linker)](link-pass-options-to-linker.md)
 #### [/LN (Create MSIL Module)](ln-create-msil-module.md)
