@@ -17,7 +17,7 @@ Specifies a SourceLink configuration file to include in the PDB file generated b
 
 ## Syntax
 
-> **/SOURCELINK**[__:__*filename*]
+> **/SOURCELINK:**_filename_
 
 ## Arguments
 
@@ -26,7 +26,7 @@ Specifies a JSON-formatted configuration file that contains a simple mapping of 
 
 ## Remarks
 
-SourceLink is a language- and source-control agnostic system for providing first-class source debugging experiences for binaries. SourceLink is supported for native C++ binaries starting in Visual Studio 2017 version 15.7. For an overview of SourceLink, see [Source Link](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md). For information on how to use SourceLink in your projects and how to generate the SourceLink file, see [Using SourceLink](https://github.com/dotnet/sourcelink#using-sourcelink).
+SourceLink is a language- and source-control agnostic system for providing source debugging for binaries. SourceLink is supported for native C++ binaries starting in Visual Studio 2017 version 15.8. For an overview of SourceLink, see [Source Link](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md). For information on how to use SourceLink in your projects and how to generate the SourceLink file as part of your project, see [Using SourceLink](https://github.com/dotnet/sourcelink#using-sourcelink).
 
 ### To set the /SOURCELINK linker option in Visual Studio
 
