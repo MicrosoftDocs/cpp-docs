@@ -1,1 +1,0 @@
-void DisplayPage(LPCWSTR pwszURL);

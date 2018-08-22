@@ -1,9 +1,0 @@
-; ATLEventHandling.def : Declares the module parameters.
-
-LIBRARY      "ATLEventHandling.DLL"
-
-EXPORTS
-	DllCanUnloadNow     PRIVATE
-	DllGetClassObject   PRIVATE
-	DllRegisterServer   PRIVATE
-	DllUnregisterServer	PRIVATE

@@ -1,4 +1,0 @@
-﻿
-Class DTE
-
-End Class

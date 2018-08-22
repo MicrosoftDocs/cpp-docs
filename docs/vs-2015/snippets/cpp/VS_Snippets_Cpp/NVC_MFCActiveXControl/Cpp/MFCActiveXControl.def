@@ -1,9 +1,0 @@
-; MFCActiveXControl.def : Declares the module parameters.
-
-LIBRARY      "MFCActiveXControl.OCX"
-
-EXPORTS
-    DllCanUnloadNow     PRIVATE
-    DllGetClassObject   PRIVATE
-    DllRegisterServer   PRIVATE
-    DllUnregisterServer PRIVATE

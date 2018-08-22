@@ -1,1 +1,0 @@
-void RetrieveGopherFile(LPCTSTR pszGopherSite, LPCTSTR pszFile);

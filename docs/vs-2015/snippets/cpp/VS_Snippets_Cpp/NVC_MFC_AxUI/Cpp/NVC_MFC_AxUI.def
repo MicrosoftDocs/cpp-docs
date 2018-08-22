@@ -1,9 +1,0 @@
-; NVC_MFC_AxUI.def : Declares the module parameters.
-
-LIBRARY      "NVC_MFC_AxUI.OCX"
-
-EXPORTS
-	DllCanUnloadNow     PRIVATE
-	DllGetClassObject   PRIVATE
-	DllRegisterServer   PRIVATE
-	DllUnregisterServer PRIVATE

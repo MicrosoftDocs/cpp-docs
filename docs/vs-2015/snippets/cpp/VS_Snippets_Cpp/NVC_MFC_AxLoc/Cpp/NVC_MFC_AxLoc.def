@@ -1,9 +1,0 @@
-; NVC_MFC_AxLoc.def : Declares the module parameters.
-
-LIBRARY      "NVC_MFC_AxLoc.OCX"
-
-EXPORTS
-	DllCanUnloadNow     PRIVATE
-	DllGetClassObject   PRIVATE
-	DllRegisterServer   PRIVATE
-	DllUnregisterServer PRIVATE
