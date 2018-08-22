@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::~SRWLock Destructor
-Deinitializes an instance of the **SRWLock** class.  
-  
-## Syntax  
-  
+
+Deinitializes an instance of the **SRWLock** class.
+
+## Syntax
+
 ```cpp  
 ~SRWLock();  
-```  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [SRWLock Class](../windows/srwlock-class.md)
+```
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[SRWLock Class](../windows/srwlock-class.md)

@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::~RuntimeClass Destructor
-Deinitializes the current instance of the **RuntimeClass** class.  
-  
-## Syntax  
-  
+
+Deinitializes the current instance of the **RuntimeClass** class.
+
+## Syntax
+
 ```cpp  
 virtual ~RuntimeClass();  
-```  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [RuntimeClass Class](../windows/runtimeclass-class.md)
+```
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[RuntimeClass Class](../windows/runtimeclass-class.md)

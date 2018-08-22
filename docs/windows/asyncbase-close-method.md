@@ -13,26 +13,31 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::Close Method
-Closes the asynchronous operation.  
-  
-## Syntax  
-  
+
+Closes the asynchronous operation.
+
+## Syntax
+
 ```cpp  
 STDMETHOD(  
    Close  
 )(void) override;  
-```  
-  
-## Return Value  
- S_OK if the operation closes or is already closed; otherwise, E_ILLEGAL_STATE_CHANGE.  
-  
-## Remarks  
- **Close()** is a default implementation of `IAsyncInfo::Close`, and does no actual work. To actually close an asynchronous operation, override the `OnClose()` pure virtual method.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+```
+
+## Return Value
+
+S_OK if the operation closes or is already closed; otherwise, E_ILLEGAL_STATE_CHANGE.
+
+## Remarks
+
+**Close()** is a default implementation of `IAsyncInfo::Close`, and does no actual work. To actually close an asynchronous operation, override the `OnClose()` pure virtual method.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

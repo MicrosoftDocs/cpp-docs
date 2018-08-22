@@ -13,63 +13,69 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SimpleActivationFactory Class
-Provides a fundamental mechanism to create a Windows Runtime or classic COM base class.  
-  
-## Syntax  
-  
+
+Provides a fundamental mechanism to create a Windows Runtime or classic COM base class.
+
+## Syntax
+
 ```cpp  
 template<typename Base>  
 class SimpleActivationFactory : public ActivationFactory<>;  
-```  
-  
-### Parameters  
- *Base*  
- A base class.  
-  
-## Remarks  
- The base class must provide a default constructor.  
-  
- The following code example demonstrates how to use SimpleActivationFactory with the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro.  
-  
- `ActivatableClassWithFactoryEx(MyClass, SimpleActivationFactory, MyServerName);`  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[SimpleActivationFactory::ActivateInstance Method](../windows/simpleactivationfactory-activateinstance-method.md)|Creates an instance of the specified interface.|  
-|[SimpleActivationFactory::GetRuntimeClassName Method](../windows/simpleactivationfactory-getruntimeclassname-method.md)|Gets the runtime class name of an instance of the class specified by the *Base* class template parameter.|  
-|[SimpleActivationFactory::GetTrustLevel Method](../windows/simpleactivationfactory-gettrustlevel-method.md)|Gets the trust level of an instance of the class specified by the *Base* class template parameter.|  
-  
-## Inheritance Hierarchy  
- `I0`  
-  
- `ChainInterfaces`  
-  
- `I0`  
-  
- `RuntimeClassBase`  
-  
- `ImplementsHelper`  
-  
- `DontUseNewUseMake`  
-  
- `RuntimeClassFlags`  
-  
- `RuntimeClassBaseT`  
-  
- `RuntimeClass`  
-  
- `ActivationFactory`  
-  
- `SimpleActivationFactory`  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+```
+
+### Parameters
+
+*Base*  
+A base class.
+
+## Remarks
+
+The base class must provide a default constructor.
+
+The following code example demonstrates how to use SimpleActivationFactory with the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro.
+
+`ActivatableClassWithFactoryEx(MyClass, SimpleActivationFactory, MyServerName);`
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[SimpleActivationFactory::ActivateInstance Method](../windows/simpleactivationfactory-activateinstance-method.md)|Creates an instance of the specified interface.|
+|[SimpleActivationFactory::GetRuntimeClassName Method](../windows/simpleactivationfactory-getruntimeclassname-method.md)|Gets the runtime class name of an instance of the class specified by the *Base* class template parameter.|
+|[SimpleActivationFactory::GetTrustLevel Method](../windows/simpleactivationfactory-gettrustlevel-method.md)|Gets the trust level of an instance of the class specified by the *Base* class template parameter.|
+
+## Inheritance Hierarchy
+
+`I0`
+
+`ChainInterfaces`
+
+`I0`
+
+`RuntimeClassBase`
+
+`ImplementsHelper`
+
+`DontUseNewUseMake`
+
+`RuntimeClassFlags`
+
+`RuntimeClassBaseT`
+
+`RuntimeClass`
+
+`ActivationFactory`
+
+`SimpleActivationFactory`
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

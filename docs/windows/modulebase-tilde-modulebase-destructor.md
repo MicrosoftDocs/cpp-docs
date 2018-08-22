@@ -13,22 +13,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ModuleBase::~ModuleBase Destructor
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 virtual ~ModuleBase();  
-```  
-  
-## Remarks  
- Deinitializes the current instance of the **ModuleBase** class.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ModuleBase Class](../windows/modulebase-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+## Remarks
+
+Deinitializes the current instance of the **ModuleBase** class.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ModuleBase Class](../windows/modulebase-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

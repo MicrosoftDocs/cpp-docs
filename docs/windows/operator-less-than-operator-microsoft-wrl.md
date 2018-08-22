@@ -12,31 +12,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # operator&lt; Operator (Microsoft::WRL)
-Determines if the address of one object is less than another.  
-  
-## Syntax  
-  
+
+Determines if the address of one object is less than another.
+
+## Syntax
+
 ```cpp  
 template<class T, class U>  
 bool operator<(const ComPtr<T>& a, const ComPtr<U>& b) throw();  
 template<class T, class U>  
 bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<ComPtr<U>>& b) throw();  
-```  
-  
-### Parameters  
- *a*  
- The left object.  
-  
- *b*  
- The right object.  
-  
-## Return Value  
- **true** if the address of *a* is less than the address of *b*; otherwise, **false**.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+```
+
+### Parameters
+
+*a*  
+The left object.
+
+*b*  
+The right object.
+
+## Return Value
+
+**true** if the address of *a* is less than the address of *b*; otherwise, **false**.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

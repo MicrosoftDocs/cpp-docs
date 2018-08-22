@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockT::sync_ Data Member
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 typename SyncTraits::Type sync_;  
-```  
-  
-## Remarks  
- Holds the underlying resource represented by the **SyncLockT** class.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::Details  
-  
-## See Also  
- [SyncLockT Class](../windows/synclockt-class.md)
+```
+
+## Remarks
+
+Holds the underlying resource represented by the **SyncLockT** class.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::Details
+
+## See Also
+
+[SyncLockT Class](../windows/synclockt-class.md)

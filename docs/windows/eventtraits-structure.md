@@ -13,25 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTraits Structure
-Defines characteristics of an `Event` class handle.  
-  
-## Syntax  
-  
+
+Defines characteristics of an `Event` class handle.
+
+## Syntax
+
 ```cpp  
 struct EventTraits : HANDLENullTraits;  
-```  
-  
-## Members  
-  
-## Inheritance Hierarchy  
- `HANDLENullTraits`  
-  
- `EventTraits`  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+```
+
+## Members
+
+## Inheritance Hierarchy
+
+`HANDLENullTraits`
+
+`EventTraits`
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

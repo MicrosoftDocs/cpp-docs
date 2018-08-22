@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::Detach Method
-Disassociates this **ComPtr** object from the interface that it represents.  
-  
-## Syntax  
-  
+
+Disassociates this **ComPtr** object from the interface that it represents.
+
+## Syntax
+
 ```cpp  
 T* Detach();  
-```  
-  
-## Return Value  
- A pointer to the interface that was represented by this **ComPtr** object.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+```
+
+## Return Value
+
+A pointer to the interface that was represented by this **ComPtr** object.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

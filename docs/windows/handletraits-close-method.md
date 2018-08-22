@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HANDLETraits::Close Method
-Closes the specified handle.  
-  
-## Syntax  
-  
+
+Closes the specified handle.
+
+## Syntax
+
 ```cpp  
 inline static bool Close(  
    _In_ Type h  
 );  
-```  
-  
-### Parameters  
- *h*  
- The handle to close.  
-  
-## Return Value  
- **true** if handle *h* closed successfully; otherwise, **false**.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [HANDLETraits Structure](../windows/handletraits-structure.md)
+```
+
+### Parameters
+
+*h*  
+The handle to close.
+
+## Return Value
+
+**true** if handle *h* closed successfully; otherwise, **false**.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[HANDLETraits Structure](../windows/handletraits-structure.md)

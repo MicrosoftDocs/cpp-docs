@@ -13,21 +13,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::OnCancel Method
-When overridden in a derived class, cancels an asynchronous operation.  
-  
-## Syntax  
-  
+
+When overridden in a derived class, cancels an asynchronous operation.
+
+## Syntax
+
 ```cpp  
 virtual void OnCancel(  
    void  
 ) = 0;  
-```  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)   
- [AsyncBase::Cancel Method](../windows/asyncbase-cancel-method.md)
+```
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)  
+[AsyncBase::Cancel Method](../windows/asyncbase-cancel-method.md)

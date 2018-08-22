@@ -13,31 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Mutex::Mutex Constructor
-Initializes a new instance of the **Mutex** class.  
-  
-## Syntax  
-  
+
+Initializes a new instance of the **Mutex** class.
+
+## Syntax
+
 ```cpp  
 explicit Mutex(  
    HANDLE h  
-);  
-  
+);
+
 Mutex(  
    _Inout_ Mutex&& h  
 );  
-```  
-  
-### Parameters  
- *h*  
- A handle, or an rvalue-reference to a handle, to a **Mutex** object.  
-  
-## Remarks  
- The first constructor initializes a **Mutex** object from the specified handle. The second constructor initializes a **Mutex** object from the specified handle, and then moves ownership of the mutex to the current **Mutex** object.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers
- 
+```
+
+### Parameters
+
+*h*  
+A handle, or an rvalue-reference to a handle, to a **Mutex** object.
+
+## Remarks
+
+The first constructor initializes a **Mutex** object from the specified handle. The second constructor initializes a **Mutex** object from the specified handle, and then moves ownership of the mutex to the current **Mutex** object.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
  ## See Also
- [Mutex Class](../windows/mutex-class1.md)
+[Mutex Class](../windows/mutex-class1.md)

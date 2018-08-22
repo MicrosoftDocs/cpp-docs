@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::GetWeakReference Method
-Gets a pointer to the weak reference object for the current **RuntimeClass** object.  
-  
-## Syntax  
-  
+
+Gets a pointer to the weak reference object for the current **RuntimeClass** object.
+
+## Syntax
+
 ```cpp  
 STDMETHOD(  
    GetWeakReference  
 )(_Deref_out_ IWeakReference **weakReference);  
-```  
-  
-### Parameters  
- *weakReference*  
- When this operation completes, a pointer to a weak reference object.  
-  
-## Return Value  
- Always S_OK.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [RuntimeClass Class](../windows/runtimeclass-class.md)
+```
+
+### Parameters
+
+*weakReference*  
+When this operation completes, a pointer to a weak reference object.
+
+## Return Value
+
+Always S_OK.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[RuntimeClass Class](../windows/runtimeclass-class.md)

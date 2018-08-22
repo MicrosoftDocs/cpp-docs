@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSection::CriticalSection Constructor
-Initializes a synchronization object that is similar to a mutex object, but can be used by only the threads of a single process.  
-  
-## Syntax  
-  
+
+Initializes a synchronization object that is similar to a mutex object, but can be used by only the threads of a single process.
+
+## Syntax
+
 ```cpp  
 explicit CriticalSection(  
    ULONG spincount = 0  
 );  
-```  
-  
-### Parameters  
- *spincount*  
- The spin count for the critical section object. The default value is 0.  
-  
-## Remarks  
- For more information about critical sections and spincounts, see the `InitializeCriticalSectionAndSpinCount` function in the **Synchronization** section of the Windows API documenation.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [CriticalSection Class](../windows/criticalsection-class.md)
+```
+
+### Parameters
+
+*spincount*  
+The spin count for the critical section object. The default value is 0.
+
+## Remarks
+
+For more information about critical sections and spincounts, see the `InitializeCriticalSectionAndSpinCount` function in the **Synchronization** section of the Windows API documenation.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[CriticalSection Class](../windows/criticalsection-class.md)

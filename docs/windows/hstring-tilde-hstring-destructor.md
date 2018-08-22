@@ -12,18 +12,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::~HString Destructor
-Destroys the current instance of the **HString** class.  
-  
-## Syntax  
-  
+
+Destroys the current instance of the **HString** class.
+
+## Syntax
+
 ```cpp  
 ~HString() throw()  
-```  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HString Class](../windows/hstring-class.md)
+```
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HString Class](../windows/hstring-class.md)

@@ -13,29 +13,34 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSectionTraits::Unlock Method
-Specializes a `CriticalSection` template so that it supports releasing ownership of the specified critical section object.  
-  
-## Syntax  
-  
+
+Specializes a `CriticalSection` template so that it supports releasing ownership of the specified critical section object.
+
+## Syntax
+
 ```cpp  
 inline static void Unlock(  
    _In_ Type cs  
 );  
-```  
-  
-### Parameters  
- *cs*  
- A pointer to a critical section object.  
-  
-## Remarks  
- The `Type` modifier is defined as `typedef CRITICAL_SECTION* Type;`.  
-  
- For more information, see **LeaveCriticalSection function** in the **Synchronization Functions** section of the Windows API documentation.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [CriticalSectionTraits Structure](../windows/criticalsectiontraits-structure.md)
+```
+
+### Parameters
+
+*cs*  
+A pointer to a critical section object.
+
+## Remarks
+
+The `Type` modifier is defined as `typedef CRITICAL_SECTION* Type;`.
+
+For more information, see **LeaveCriticalSection function** in the **Synchronization Functions** section of the Windows API documentation.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[CriticalSectionTraits Structure](../windows/criticalsectiontraits-structure.md)

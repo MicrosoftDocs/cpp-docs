@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::Attach Method
-Associates the specified handle with the current **HandleT** object.  
-  
-## Syntax  
-  
+
+Associates the specified handle with the current **HandleT** object.
+
+## Syntax
+
 ```cpp  
 void Attach(  
    typename HandleTraits::Type h  
 );  
-```  
-  
-#### Parameters  
- *h*  
- A handle.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+```
+
+#### Parameters
+
+*h*  
+A handle.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

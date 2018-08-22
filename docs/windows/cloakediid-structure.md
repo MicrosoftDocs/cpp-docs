@@ -13,31 +13,37 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CloakedIid Structure
-Indicates to the `RuntimeClass`, `Implements` and `ChainInterfaces` templates that the specified interface is not accessible in the IID list.  
-  
-## Syntax  
-  
+
+Indicates to the `RuntimeClass`, `Implements` and `ChainInterfaces` templates that the specified interface is not accessible in the IID list.
+
+## Syntax
+
 ```cpp  
 template<typename T>  
 struct CloakedIid : T;  
-```  
-  
-#### Parameters  
- *T*  
- The interface that is hidden (cloaked).  
-  
-## Remarks  
- The following is an example of how **CloakedIid** is used: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.  
-  
-## Inheritance Hierarchy  
- `T`  
-  
- `CloakedIid`  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+```
+
+#### Parameters
+
+*T*  
+The interface that is hidden (cloaked).
+
+## Remarks
+
+The following is an example of how **CloakedIid** is used: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.
+
+## Inheritance Hierarchy
+
+`T`
+
+`CloakedIid`
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

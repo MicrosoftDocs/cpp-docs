@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtrRefBase::operator IUnknown** Operator
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 operator IUnknown**() const;  
-```  
-  
-## Remarks  
- Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IUnknown` interface.  
-  
- An error is emitted if the current **ComPtrRefBase** doesn't derive from `IUnknown`.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ComPtrRefBase Class](../windows/comptrrefbase-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+## Remarks
+
+Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IUnknown` interface.
+
+An error is emitted if the current **ComPtrRefBase** doesn't derive from `IUnknown`.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ComPtrRefBase Class](../windows/comptrrefbase-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

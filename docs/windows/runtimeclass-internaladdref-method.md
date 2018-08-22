@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::InternalAddRef Method
-Increments the reference count to the current **RuntimeClass** object.  
-  
-## Syntax  
-  
+
+Increments the reference count to the current **RuntimeClass** object.
+
+## Syntax
+
 ```cpp  
 ULONG InternalAddRef();  
-```  
-  
-## Return Value  
- The resulting reference count.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [RuntimeClass Class](../windows/runtimeclass-class.md)
+```
+
+## Return Value
+
+The resulting reference count.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[RuntimeClass Class](../windows/runtimeclass-class.md)

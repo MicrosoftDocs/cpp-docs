@@ -13,52 +13,58 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtrRefBase Class
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 template <  
    typename T  
 >  
 class ComPtrRefBase;  
-```  
-  
-### Parameters  
- *T*  
- A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the **ComPtr**.  
-  
-## Remarks  
- Represents the base class for the [ComPtrRef](../windows/comptrref-class.md) class.  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`InterfaceType`|A synonym for the type of template parameter *T*.|  
-  
-### Public Operators  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[ComPtrRefBase::operator IInspectable** Operator](../windows/comptrrefbase-operator-iinspectable-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IInspectable` interface.|  
-|[ComPtrRefBase::operator IUnknown** Operator](../windows/comptrrefbase-operator-iunknown-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IUnknown` interface.|  
-  
-### Protected Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[ComPtrRefBase::ptr_ Data Member](../windows/comptrrefbase-ptr-data-member.md)|Pointer to the type specified by the current template parameter.|  
-  
-## Inheritance Hierarchy  
- `ComPtrRefBase`  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+### Parameters
+
+*T*  
+A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the **ComPtr**.
+
+## Remarks
+
+Represents the base class for the [ComPtrRef](../windows/comptrref-class.md) class.
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`InterfaceType`|A synonym for the type of template parameter *T*.|
+
+### Public Operators
+
+|Name|Description|
+|----------|-----------------|
+|[ComPtrRefBase::operator IInspectable** Operator](../windows/comptrrefbase-operator-iinspectable-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IInspectable` interface.|
+|[ComPtrRefBase::operator IUnknown** Operator](../windows/comptrrefbase-operator-iunknown-star-star-operator.md)|Casts the current [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member to a pointer-to-a-pointer-to the `IUnknown` interface.|
+
+### Protected Data Members
+
+|Name|Description|
+|----------|-----------------|
+|[ComPtrRefBase::ptr_ Data Member](../windows/comptrrefbase-ptr-data-member.md)|Pointer to the type specified by the current template parameter.|
+
+## Inheritance Hierarchy
+
+`ComPtrRefBase`
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -13,37 +13,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # defaultbind
-Indicates the single, bindable property that best represents the object.  
-  
-## Syntax  
-  
+
+Indicates the single, bindable property that best represents the object.
+
+## Syntax
+
 ```cpp  
 [defaultbind]  
-```  
-  
-## Remarks  
- The **defaultbind** C++ attribute has the same functionality as the [defaultbind](http://msdn.microsoft.com/library/windows/desktop/aa366790) MIDL attribute.  
-  
-## Example  
- See the example for [bindable](../windows/bindable.md) for an example of how to use **defaultbind**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Interface method|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
- [Data Member Attributes](../windows/data-member-attributes.md)   
- [displaybind](../windows/displaybind.md)   
- [immediatebind](../windows/immediatebind.md)   
- [requestedit](../windows/requestedit.md)   
+```
+
+## Remarks
+
+The **defaultbind** C++ attribute has the same functionality as the [defaultbind](http://msdn.microsoft.com/library/windows/desktop/aa366790) MIDL attribute.
+
+## Example
+
+See the example for [bindable](../windows/bindable.md) for an example of how to use **defaultbind**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Interface method|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+ For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Method Attributes](../windows/method-attributes.md)  
+[Data Member Attributes](../windows/data-member-attributes.md)  
+[displaybind](../windows/displaybind.md)  
+[immediatebind](../windows/immediatebind.md)  
+[requestedit](../windows/requestedit.md)   

@@ -12,18 +12,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::objectCount_ Data Member
-Keeps track of how many classes have been created with the [Make](../windows/make-function.md) function.  
-  
-## Syntax  
-  
+
+Keeps track of how many classes have been created with the [Make](../windows/make-function.md) function.
+
+## Syntax
+
 ```cpp  
 volatile long objectCount_;  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
  ## See Also
- [Module Class](../windows/module-class.md)
+[Module Class](../windows/module-class.md)

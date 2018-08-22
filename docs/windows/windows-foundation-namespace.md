@@ -13,27 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Windows::Foundation Namespace
-Enables fundamental Windows Runtime functionality, such as object and factory creation.  
-  
-## Syntax  
-  
+
+Enables fundamental Windows Runtime functionality, such as object and factory creation.
+
+## Syntax
+
 ```cpp  
 namespace Windows::Foundation;  
-```  
-  
-## Members  
-  
-### Functions  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[ActivateInstance Function](../windows/activateinstance-function.md)|Registers and retrieves an instance of a specified type defined in a specified class ID.|  
-|[GetActivationFactory Function](../windows/getactivationfactory-function.md)|Retrieves an activation factory for the type specified by the template parameter.|  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Windows  
-  
-## See Also  
- [Windows Namespace](http://msdn.microsoft.com/45b08650-69cd-4f7f-a959-b7361476865c)
+```
+
+## Members
+
+### Functions
+
+|Name|Description|
+|----------|-----------------|
+|[ActivateInstance Function](../windows/activateinstance-function.md)|Registers and retrieves an instance of a specified type defined in a specified class ID.|
+|[GetActivationFactory Function](../windows/getactivationfactory-function.md)|Retrieves an activation factory for the type specified by the template parameter.|
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Windows
+
+## See Also
+
+[Windows Namespace](http://msdn.microsoft.com/45b08650-69cd-4f7f-a959-b7361476865c)

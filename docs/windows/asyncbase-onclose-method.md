@@ -13,21 +13,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::OnClose Method
-When overridden in a derived class, closes an asynchronous operation.  
-  
-## Syntax  
-  
+
+When overridden in a derived class, closes an asynchronous operation.
+
+## Syntax
+
 ```cpp  
 virtual void OnClose(  
    void  
 ) = 0;  
-```  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)   
- [AsyncBase::Close Method](../windows/asyncbase-close-method.md)
+```
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)  
+[AsyncBase::Close Method](../windows/asyncbase-close-method.md)

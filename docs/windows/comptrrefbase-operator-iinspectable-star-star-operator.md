@@ -37,5 +37,6 @@ This cast is available only if `__WRL_CLASSIC_COM__` is defined.
 **Namespace:** Microsoft::WRL::Details
 
 ## See Also
+
 [ComPtrRefBase Class](../windows/comptrrefbase-class.md)   
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

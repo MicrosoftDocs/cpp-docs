@@ -24,6 +24,7 @@ STDMETHOD( GetRuntimeClassName )(
 ```
 
 ### Parameters
+
 *runtimeName*  
 When this operation completes, the runtime class name.
 
@@ -42,4 +43,5 @@ If `__WRL_STRICT__` is defined, an assert error is emitted if the class specifie
 **Namespace:** Microsoft::WRL
 
 ## See Also
- [SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)
+
+[SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)

@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # MixIn Structure
-Ensures that a runtime class derives from Windows Runtime interfaces, if any, and then classic COM interfaces.  
-  
-## Syntax  
-  
+
+Ensures that a runtime class derives from Windows Runtime interfaces, if any, and then classic COM interfaces.
+
+## Syntax
+
 ```cpp  
 template<  
    typename Derived,  
@@ -25,28 +26,33 @@ template<
    MixInType)  
 >  
 struct MixIn;  
-```  
-  
-### Parameters  
- *Derived*  
- A type derived from the [Implements](../windows/implements-structure.md) structure.  
-  
- *MixInType*  
- A base type.  
-  
- *hasImplements*  
- **true** if *MixInType* is derived from the current implementation the base type; **false** otherwise.  
-  
-## Remarks  
- If a class is derived from both Windows Runtime and class COM interfaces, the class declaration list must first list any Windows Runtime interfaces and then any classic COM interfaces. **MixIn** ensures that the interfaces are specified in the correct order.  
-  
-## Inheritance Hierarchy  
- `MixIn`  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+```
+
+### Parameters
+
+*Derived*  
+A type derived from the [Implements](../windows/implements-structure.md) structure.
+
+*MixInType*  
+A base type.
+
+*hasImplements*  
+**true** if *MixInType* is derived from the current implementation the base type; **false** otherwise.
+
+## Remarks
+
+If a class is derived from both Windows Runtime and class COM interfaces, the class declaration list must first list any Windows Runtime interfaces and then any classic COM interfaces. **MixIn** ensures that the interfaces are specified in the correct order.
+
+## Inheritance Hierarchy
+
+`MixIn`
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

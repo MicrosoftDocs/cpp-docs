@@ -12,15 +12,17 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Consuming Generics (C++/CLI)
-Generics authored in one .NET language may be used in other .NET languages. Unlike templates, a generic in a compiled assembly still remains generic. Thus, one may instantiate the generic type in a different assembly and even in a different language than the assembly in which the generic type was defined.  
-  
-## Example  
-  
-### Description  
- This example shows a generic class defined in C#.  
-  
-### Code  
-  
+
+Generics authored in one .NET language may be used in other .NET languages. Unlike templates, a generic in a compiled assembly still remains generic. Thus, one may instantiate the generic type in a different assembly and even in a different language than the assembly in which the generic type was defined.
+
+## Example
+
+### Description
+
+This example shows a generic class defined in C#.
+
+### Code
+
 ```cs  
 // consuming_generics_from_other_NET_languages.cs  
 // compile with: /target:library  
@@ -32,12 +34,12 @@ public class CircularList<ItemType> {
       public ListNode(ItemType item) {  
          m_item = item;  
       }  
-   }  
-  
-   ListNode first, last;  
-  
-   public CircularList() {}  
-  
+   }
+
+   ListNode first, last;
+
+   public CircularList() {}
+
    public void Add(ItemType item) {  
       ListNode newnode = new ListNode(item);  
       if (first == null) {  
@@ -50,8 +52,8 @@ public class CircularList<ItemType> {
          first = newnode;  
          last.next = first;  
       }   
-   }  
-  
+   }
+
    public void Remove(ItemType item) {  
       ListNode iter = first;  
       if (first.m_item.Equals( item )) {  
@@ -65,8 +67,8 @@ public class CircularList<ItemType> {
               iter.next = iter.next.next;  
               return;  
           }  
-   }  
-  
+   }
+
    public void PrintAll() {  
       ListNode iter = first;  
       do {  
@@ -75,34 +77,35 @@ public class CircularList<ItemType> {
       } while (iter != last);  
    }  
 }  
-```  
-  
-## Example  
-  
-### Description  
- This example consumes the assembly authored in C#.  
-  
-### Code  
-  
+```
+
+## Example
+
+### Description
+
+This example consumes the assembly authored in C#.
+
+### Code
+
 ```cpp  
 // consuming_generics_from_other_NET_languages_2.cpp  
 // compile with: /clr  
 #using <consuming_generics_from_other_NET_languages.dll>  
 using namespace System;  
 class NativeClass {};  
-ref class MgdClass {};  
-  
+ref class MgdClass {};
+
 int main() {  
    CircularList<int>^ circ1 = gcnew CircularList<int>();  
-   CircularList<MgdClass^>^ circ2 = gcnew CircularList<MgdClass^>();  
-  
+   CircularList<MgdClass^>^ circ2 = gcnew CircularList<MgdClass^>();
+
    for (int i = 0 ; i < 100 ; i += 10)  
       circ1->Add(i);  
    circ1->Remove(50);  
    circ1->PrintAll();  
 }  
-```  
-  
+```
+
 ```Output  
 90  
 80  
@@ -112,7 +115,8 @@ int main() {
 30  
 20  
 10  
-```  
-  
-## See Also  
- [Generics](../windows/generics-cpp-component-extensions.md)
+```
+
+## See Also
+
+[Generics](../windows/generics-cpp-component-extensions.md)

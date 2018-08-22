@@ -13,28 +13,33 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtrRef::ComPtrRef Constructor
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 ComPtrRef(  
    _In_opt_ T* ptr  
 );  
-```  
-  
-### Parameters  
- *ptr*  
- The underlying value of another **ComPtrRef** object.  
-  
-## Remarks  
- Initializes a new instance of the **ComPtrRef** class from the specified pointer to another **ComPtrRef** object.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ComPtrRef Class](../windows/comptrref-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+### Parameters
+
+*ptr*  
+The underlying value of another **ComPtrRef** object.
+
+## Remarks
+
+Initializes a new instance of the **ComPtrRef** class from the specified pointer to another **ComPtrRef** object.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ComPtrRef Class](../windows/comptrref-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

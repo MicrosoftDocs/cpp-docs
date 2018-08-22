@@ -13,22 +13,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FactoryCache::factory Data Member
-Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 IUnknown* factory;  
-```  
-  
-## Remarks  
- Points to a Windows Runtime or COM class factory.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [FactoryCache Structure](../windows/factorycache-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+## Remarks
+
+Points to a Windows Runtime or COM class factory.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[FactoryCache Structure](../windows/factorycache-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

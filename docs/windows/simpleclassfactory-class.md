@@ -13,61 +13,67 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SimpleClassFactory Class
-Provides a fundamental mechanism to create a base class.  
-  
-## Syntax  
-  
+
+Provides a fundamental mechanism to create a base class.
+
+## Syntax
+
 ```cpp  
 template<typename Base>  
 class SimpleClassFactory : public ClassFactory<>;  
-```  
-  
-### Parameters  
- *Base*  
- A base class.  
-  
-## Remarks  
- The base class must provide a default constructor.  
-  
- The following code example demonstrates how to use **SimpleClassFactory** with the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro.  
-  
- `ActivatableClassWithFactoryEx(MyClass, SimpleClassFactory, MyServerName);`  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[SimpleClassFactory::CreateInstance Method](../windows/simpleclassfactory-createinstance-method.md)|Creates an instance of the specified interface.|  
-  
-## Inheritance Hierarchy  
- `I0`  
-  
- `ChainInterfaces`  
-  
- `I0`  
-  
- `RuntimeClassBase`  
-  
- `ImplementsHelper`  
-  
- `DontUseNewUseMake`  
-  
- `RuntimeClassFlags`  
-  
- `RuntimeClassBaseT`  
-  
- `RuntimeClass`  
-  
- `ClassFactory`  
-  
- `SimpleClassFactory`  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+```
+
+### Parameters
+
+*Base*  
+A base class.
+
+## Remarks
+
+The base class must provide a default constructor.
+
+The following code example demonstrates how to use **SimpleClassFactory** with the [ActivatableClassWithFactoryEx](../windows/activatableclass-macros.md) macro.
+
+`ActivatableClassWithFactoryEx(MyClass, SimpleClassFactory, MyServerName);`
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[SimpleClassFactory::CreateInstance Method](../windows/simpleclassfactory-createinstance-method.md)|Creates an instance of the specified interface.|
+
+## Inheritance Hierarchy
+
+`I0`
+
+`ChainInterfaces`
+
+`I0`
+
+`RuntimeClassBase`
+
+`ImplementsHelper`
+
+`DontUseNewUseMake`
+
+`RuntimeClassFlags`
+
+`RuntimeClassBaseT`
+
+`RuntimeClass`
+
+`ClassFactory`
+
+`SimpleClassFactory`
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

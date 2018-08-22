@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ArgTraits Structure
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 template<typename TMemberFunction>  
 struct ArgTraits;  
@@ -103,74 +104,79 @@ template<
    typename TArg9  
 >  
 struct ArgTraits<HRESULT (STDMETHODCALLTYPE TDelegateInterface::*)(TArg1, TArg2, TArg3, TArg4, TArg5, TArg6, TArg7, TArg8, TArg9)>;  
-```  
-  
-### Parameters  
- *TMemberFunction*  
- Typename parameter for an ArgTraits structure that cannot match any `Invoke` method signature.  
-  
- *TDelegateInterface*  
- A delegate interface.  
-  
- *TArg1*  
- The type of the first argument of the `Invoke` method.  
-  
- *TArg2*  
- The type of the second argument of the `Invoke` method.  
-  
- *TArg3*  
- The type of the third argument of the `Invoke` method.  
-  
- *TArg4*  
- The type of the fourth argument of the `Invoke` method.  
-  
- *TArg5*  
- The type of the fifth argument of the `Invoke` method.  
-  
- *TArg6*  
- The type of the sixth argument of the `Invoke` method.  
-  
- *TArg7*  
- The type of the seventh argument of the `Invoke` method.  
-  
- *TArg8*  
- The type of the eigth argument of the `Invoke` method.  
-  
- *TArg9*  
- The type of the ninth argument of the `Invoke` method.  
-  
-## Remarks  
- The **ArgTraits** structure declares a specified delegate interface and an anonymous member function that has a specified number of parameters.  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`Arg1Type`|The typedef for TArg1.|  
-|`Arg2Type`|The typedef for TArg2.|  
-|`Arg3Type`|The typedef for TArg3.|  
-|`Arg4Type`|The typedef for TArg4.|  
-|`Arg5Type`|The typedef for TArg5.|  
-|`Arg6Type`|The typedef for TArg6.|  
-|`Arg7Type`|The typedef for TArg7.|  
-|`Arg8Type`|The typedef for TArg8.|  
-|`Arg9Type`|The typedef for TArg9.|  
-  
-### Public Constants  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[ArgTraits::args Constant](../windows/argtraits-args-constant.md)|Keeps count of the number of parameters on the `Invoke` method of a delegate interface.|  
-  
-## Inheritance Hierarchy  
- `ArgTraits`  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+### Parameters
+
+*TMemberFunction*  
+Typename parameter for an ArgTraits structure that cannot match any `Invoke` method signature.
+
+*TDelegateInterface*  
+A delegate interface.
+
+*TArg1*  
+The type of the first argument of the `Invoke` method.
+
+*TArg2*  
+The type of the second argument of the `Invoke` method.
+
+*TArg3*  
+The type of the third argument of the `Invoke` method.
+
+*TArg4*  
+The type of the fourth argument of the `Invoke` method.
+
+*TArg5*  
+The type of the fifth argument of the `Invoke` method.
+
+*TArg6*  
+The type of the sixth argument of the `Invoke` method.
+
+*TArg7*  
+The type of the seventh argument of the `Invoke` method.
+
+*TArg8*  
+The type of the eigth argument of the `Invoke` method.
+
+*TArg9*  
+The type of the ninth argument of the `Invoke` method.
+
+## Remarks
+
+The **ArgTraits** structure declares a specified delegate interface and an anonymous member function that has a specified number of parameters.
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`Arg1Type`|The typedef for TArg1.|
+|`Arg2Type`|The typedef for TArg2.|
+|`Arg3Type`|The typedef for TArg3.|
+|`Arg4Type`|The typedef for TArg4.|
+|`Arg5Type`|The typedef for TArg5.|
+|`Arg6Type`|The typedef for TArg6.|
+|`Arg7Type`|The typedef for TArg7.|
+|`Arg8Type`|The typedef for TArg8.|
+|`Arg9Type`|The typedef for TArg9.|
+
+### Public Constants
+
+|Name|Description|
+|----------|-----------------|
+|[ArgTraits::args Constant](../windows/argtraits-args-constant.md)|Keeps count of the number of parameters on the `Invoke` method of a delegate interface.|
+
+## Inheritance Hierarchy
+
+`ArgTraits`
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

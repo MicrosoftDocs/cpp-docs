@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Make Function
-Initializes the specified Windows Runtime class. Use this function to instantiate a component that is defined in the same module.  
-  
-## Syntax  
-  
+
+Initializes the specified Windows Runtime class. Use this function to instantiate a component that is defined in the same module.
+
+## Syntax
+
 ```cpp  
 template <  
    typename T,  
@@ -157,76 +158,81 @@ template <
    typename T  
 >  
 ComPtr<T> Make();  
-```  
-  
-### Parameters  
- *T*  
- A user-specified class that inherits from `WRL::RuntimeClass`.  
-  
- *TArg1*  
- Type of argument 1 that is passed to the specified runtime class.  
-  
- *TArg2*  
- Type of argument 2 that is passed to the specified runtime class.  
-  
- *TArg3*  
- Type of argument 3 that is passed to the specified runtime class.  
-  
- *TArg4*  
- Type of argument 4 that is passed to the specified runtime class.  
-  
- *TArg5*  
- Type of argument 5 that is passed to the specified runtime class.  
-  
- *TArg6*  
- Type of argument 6 that is passed to the specified runtime class.  
-  
- *TArg7*  
- Type of argument 7 that is passed to the specified runtime class.  
-  
- *TArg8*  
- Type of argument 8 that is passed to the specified runtime class.  
-  
- *TArg9*  
- Type of argument 9 that is passed to the specified runtime class.  
-  
- *arg1*  
- Argument 1 that is passed to the specified runtime class.  
-  
- *arg2*  
- Argument 2 that is passed to the specified runtime class.  
-  
- *arg3*  
- Argument 3 that is passed to the specified runtime class.  
-  
- *arg4*  
- Argument 4 that is passed to the specified runtime class.  
-  
- *arg5*  
- Argument 5 that is passed to the specified runtime class.  
-  
- *arg6*  
- Argument 6 that is passed to the specified runtime class.  
-  
- *arg7*  
- Argument 7 that is passed to the specified runtime class.  
-  
- *arg8*  
- Argument 8 that is passed to the specified runtime class.  
-  
- *arg9*  
- Argument 9 that is passed to the specified runtime class.  
-  
-## Return Value  
- A `ComPtr<T>` object if successful; otherwise, **nullptr**.  
-  
-## Remarks  
- See [How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md), and for an example.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+```
+
+### Parameters
+
+*T*  
+A user-specified class that inherits from `WRL::RuntimeClass`.
+
+*TArg1*  
+Type of argument 1 that is passed to the specified runtime class.
+
+*TArg2*  
+Type of argument 2 that is passed to the specified runtime class.
+
+*TArg3*  
+Type of argument 3 that is passed to the specified runtime class.
+
+*TArg4*  
+Type of argument 4 that is passed to the specified runtime class.
+
+*TArg5*  
+Type of argument 5 that is passed to the specified runtime class.
+
+*TArg6*  
+Type of argument 6 that is passed to the specified runtime class.
+
+*TArg7*  
+Type of argument 7 that is passed to the specified runtime class.
+
+*TArg8*  
+Type of argument 8 that is passed to the specified runtime class.
+
+*TArg9*  
+Type of argument 9 that is passed to the specified runtime class.
+
+*arg1*  
+Argument 1 that is passed to the specified runtime class.
+
+*arg2*  
+Argument 2 that is passed to the specified runtime class.
+
+*arg3*  
+Argument 3 that is passed to the specified runtime class.
+
+*arg4*  
+Argument 4 that is passed to the specified runtime class.
+
+*arg5*  
+Argument 5 that is passed to the specified runtime class.
+
+*arg6*  
+Argument 6 that is passed to the specified runtime class.
+
+*arg7*  
+Argument 7 that is passed to the specified runtime class.
+
+*arg8*  
+Argument 8 that is passed to the specified runtime class.
+
+*arg9*  
+Argument 9 that is passed to the specified runtime class.
+
+## Return Value
+
+A `ComPtr<T>` object if successful; otherwise, **nullptr**.
+
+## Remarks
+
+See [How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md), and for an example.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::ComPtr Constructor
-Intializes a new instance of the **ComPtr** class. Overloads provide default, copy, move, and conversion constructors.  
-  
-## Syntax  
-  
+
+Intializes a new instance of the **ComPtr** class. Overloads provide default, copy, move, and conversion constructors.
+
+## Syntax
+
 ```cpp  
 WRL_NOTHROW ComPtr();  
 WRL_NOTHROW ComPtr(  
@@ -44,30 +45,34 @@ WRL_NOTHROW ComPtr(
    typename ENABLE_IF<__is_convertible_to(U*,  
    T*),  
    void *>;  
-```  
-  
-### Parameters  
- *U*  
- The type of the *other* parameter.  
-  
- *other*  
- An object of type *U*.  
-  
-## Return Value  
-  
-## Remarks  
- The first constructor is the default constructor, which implictly creates an empty object. The second constructor specifies [__nullptr](../windows/nullptr-cpp-component-extensions.md), which explicitly creates an empty object.  
-  
- The third constructor creates an object from the object specified by a pointer.  
-  
- The fourth and fifth constructors are copy constructors. The fifth constructor copies an object if it is convertible to the current type.  
-  
- The sixth and seventh constructors are move constructors. The seventh constructor moves an object if it is convertible to the current type.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+```
+
+### Parameters
+
+*U*  
+The type of the *other* parameter.
+
+*other*  
+An object of type *U*.
+
+## Return Value
+
+## Remarks
+
+The first constructor is the default constructor, which implictly creates an empty object. The second constructor specifies [__nullptr](../windows/nullptr-cpp-component-extensions.md), which explicitly creates an empty object.
+
+The third constructor creates an object from the object specified by a pointer.
+
+The fourth and fifth constructors are copy constructors. The fifth constructor copies an object if it is convertible to the current type.
+
+The sixth and seventh constructors are move constructors. The seventh constructor moves an object if it is convertible to the current type.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

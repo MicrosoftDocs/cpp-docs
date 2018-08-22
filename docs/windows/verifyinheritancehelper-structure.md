@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # VerifyInheritanceHelper Structure
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 template <  
    typename I,  
@@ -27,33 +28,38 @@ template <
    typename I  
 >  
 struct VerifyInheritanceHelper<I, Nil>;  
-```  
-  
-### Parameters  
- *I*  
- A type.  
-  
- *Base*  
- Another type.  
-  
-## Remarks  
- Tests whether one interface is derived from another interface.  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[VerifyInheritanceHelper::Verify Method](../windows/verifyinheritancehelper-verify-method.md)|Tests the two interfaces specified by the current template parameters and determines whether one interface is derived from the other.|  
-  
-## Inheritance Hierarchy  
- `VerifyInheritanceHelper`  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+### Parameters
+
+*I*  
+A type.
+
+*Base*  
+Another type.
+
+## Remarks
+
+Tests whether one interface is derived from another interface.
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[VerifyInheritanceHelper::Verify Method](../windows/verifyinheritancehelper-verify-method.md)|Tests the two interfaces specified by the current template parameters and determines whether one interface is derived from the other.|
+
+## Inheritance Hierarchy
+
+`VerifyInheritanceHelper`
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

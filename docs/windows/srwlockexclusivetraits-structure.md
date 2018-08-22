@@ -13,36 +13,40 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockExclusiveTraits Structure
-Describes common characteristics of the `SRWLock` class in exclusive lock mode.  
-  
-## Syntax  
-  
+
+Describes common characteristics of the `SRWLock` class in exclusive lock mode.
+
+## Syntax
+
 ```cpp  
 struct SRWLockExclusiveTraits;  
-```  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`Type`|Synonym for a pointer to the [SRWLOCK](../windows/srwlock-class.md) class.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[SRWLockExclusiveTraits::GetInvalidValue Method](../windows/srwlockexclusivetraits-getinvalidvalue-method.md)|Retrieves an **SRWLockExclusiveTraits** object that is always invalid.|  
-|[SRWLockExclusiveTraits::Unlock Method](../windows/srwlockexclusivetraits-unlock-method.md)|Releases exclusive control of the specified `SRWLock` object.|  
-  
-## Inheritance Hierarchy  
- `SRWLockExclusiveTraits`  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+```
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`Type`|Synonym for a pointer to the [SRWLOCK](../windows/srwlock-class.md) class.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[SRWLockExclusiveTraits::GetInvalidValue Method](../windows/srwlockexclusivetraits-getinvalidvalue-method.md)|Retrieves an **SRWLockExclusiveTraits** object that is always invalid.|
+|[SRWLockExclusiveTraits::Unlock Method](../windows/srwlockexclusivetraits-unlock-method.md)|Releases exclusive control of the specified `SRWLock` object.|
+
+## Inheritance Hierarchy
+
+`SRWLockExclusiveTraits`
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

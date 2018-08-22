@@ -12,48 +12,54 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RemoveIUnknown Class
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 template <  
    typename T  
 >  
-struct RemoveIUnknown;  
-  
+struct RemoveIUnknown;
+
 template <  
    typename T  
 >  
 class RemoveIUnknown : public T;  
-```  
-  
-### Parameters  
- *T*  
- A class.  
-  
-## Remarks  
- Makes a type that is equivalent to an `IUnknown`-based type, but has  nonvirtual `QueryInterface`, `AddRef`, and `Release` member functions.  
-  
- By default, COM methods provide virtual `QueryInterface`, `AddRef`, and `Release` methods. However, `ComPtr` doesn't require the overhead of virtual methods. `RemoveIUnknown` eliminates that overhead by providing private, nonvirtual `QueryInterface`, `AddRef`, and `Release` methods.  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`ReturnType`|A synonym for a type that is equivalent to template parameter *T* but has nonvirtual `IUnknown` members.|  
-  
-## Inheritance Hierarchy  
- `T`  
-  
- `RemoveIUnknown`  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+### Parameters
+
+*T*  
+A class.
+
+## Remarks
+
+Makes a type that is equivalent to an `IUnknown`-based type, but has  nonvirtual `QueryInterface`, `AddRef`, and `Release` member functions.
+
+By default, COM methods provide virtual `QueryInterface`, `AddRef`, and `Release` methods. However, `ComPtr` doesn't require the overhead of virtual methods. `RemoveIUnknown` eliminates that overhead by providing private, nonvirtual `QueryInterface`, `AddRef`, and `Release` methods.
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`ReturnType`|A synonym for a type that is equivalent to template parameter *T* but has nonvirtual `IUnknown` members.|
+
+## Inheritance Hierarchy
+
+`T`
+
+`RemoveIUnknown`
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

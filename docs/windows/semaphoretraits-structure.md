@@ -13,31 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SemaphoreTraits Structure
-Defines common characteristics of a **Semaphore** object.  
-  
-## Syntax  
-  
+
+Defines common characteristics of a **Semaphore** object.
+
+## Syntax
+
 ```cpp  
 struct SemaphoreTraits : HANDLENullTraits;  
-```  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[SemaphoreTraits::Unlock Method](../windows/semaphoretraits-unlock-method.md)|Releases control of a shared resource.|  
-  
-## Inheritance Hierarchy  
- `HANDLENullTraits`  
-  
- `SemaphoreTraits`  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+```
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[SemaphoreTraits::Unlock Method](../windows/semaphoretraits-unlock-method.md)|Releases control of a shared resource.|
+
+## Inheritance Hierarchy
+
+`HANDLENullTraits`
+
+`SemaphoreTraits`
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

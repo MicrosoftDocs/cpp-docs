@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::Get Method
-Retrieves a pointer to the interface that is associated with this **ComPtr**.  
-  
-## Syntax  
-  
+
+Retrieves a pointer to the interface that is associated with this **ComPtr**.
+
+## Syntax
+
 ```cpp  
 T* Get() const;  
-```  
-  
-## Return Value  
- Pointer to the interface that is associated with this **ComPtr**.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+```
+
+## Return Value
+
+Pointer to the interface that is associated with this **ComPtr**.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

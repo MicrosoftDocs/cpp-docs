@@ -13,37 +13,43 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # TerminateMap Function
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 inline bool TerminateMap(  
    _In_ ModuleBase *module,   
    _In_opt_z_ const wchar_t *serverName,   
     bool forceTerminate) throw()  
-```  
-  
-### Parameters  
- *module*  
- A [module](../windows/module-class.md).  
-  
- *serverName*  
- The name of a subset of class factories in the module specified by parameter *module*.  
-  
- *forceTerminate*  
- **true** to terminate the class factories regardless of they are active; **false** to not terminate the class factories if any factory is active.  
-  
-## Return Value  
- **true** if all class factories were terminated; otherwise, **false**.  
-  
-## Remarks  
- Shuts down the class factories in the specified module.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+### Parameters
+
+*module*  
+A [module](../windows/module-class.md).
+
+*serverName*  
+The name of a subset of class factories in the module specified by parameter *module*.
+
+*forceTerminate*  
+**true** to terminate the class factories regardless of they are active; **false** to not terminate the class factories if any factory is active.
+
+## Return Value
+
+**true** if all class factories were terminated; otherwise, **false**.
+
+## Remarks
+
+Shuts down the class factories in the specified module.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

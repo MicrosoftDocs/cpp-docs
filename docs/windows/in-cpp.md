@@ -13,37 +13,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # in (C++)
-Indicates that a parameter is to be passed from the calling procedure to the called procedure.  
-  
-## Syntax  
-  
+
+Indicates that a parameter is to be passed from the calling procedure to the called procedure.
+
+## Syntax
+
 ```cpp  
 [in]  
-```  
-  
-## Remarks  
- The **in** C++ attribute has the same functionality as the [in](http://msdn.microsoft.com/library/windows/desktop/aa367051) MIDL attribute.  
-  
-## Example  
- See [bindable](../windows/bindable.md) for an example of how to use **in**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Interface parameter, interface method|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|**retval**|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
- [defaultvalue](../windows/defaultvalue.md)   
- [id](../windows/id.md)   
- [out](../windows/out-cpp.md)   
+```
+
+## Remarks
+
+The **in** C++ attribute has the same functionality as the [in](http://msdn.microsoft.com/library/windows/desktop/aa367051) MIDL attribute.
+
+## Example
+
+See [bindable](../windows/bindable.md) for an example of how to use **in**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Interface parameter, interface method|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|**retval**|
+
+ For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Parameter Attributes](../windows/parameter-attributes.md)  
+[Method Attributes](../windows/method-attributes.md)  
+[defaultvalue](../windows/defaultvalue.md)  
+[id](../windows/id.md)  
+[out](../windows/out-cpp.md)   

@@ -13,49 +13,54 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # vi_progid
-Specifies a version-independent form of the ProgID.  
-  
-## Syntax  
-  
+
+Specifies a version-independent form of the ProgID.
+
+## Syntax
+
 ```cpp  
 [ vi_progid(  
    name  
 ) ];  
-```  
-  
-### Parameters  
- *name*  
- The version-independent ProgID representing the object.  
-  
- ProgIDs present a human-readable version of the class identifier (CLSID) used to identify COM/ActiveX objects.  
-  
-## Remarks  
- The **vi_progid** C++ attribute lets you specify a version-independent ProgID for a COM object. A ProgID has the form *name1.name2.version*. A version-independent ProgID does not have a *version*. It is possible to specify both the `progid` and the **vi_progid** attributes on a `coclass`. If you do not specify **vi_progid**, the version-independent ProgID is the value specified by the [progid](../windows/progid.md) attribute.  
-  
- **vi_progid** implies the `coclass` attribute, that is, if you specify **vi_progid**, it is the same thing as specifying the `coclass` and **vi_progid** attributes.  
-  
- The **vi_progid** attribute causes a class to be automatically registered under the specified name. The generated .idl file will not display the ProgID value.  
-  
- In ATL projects, If the [coclass](../windows/coclass.md) attribute is also present, the specified ProgID is used by the `GetVersionIndependentProgID` function (inserted by the `coclass` attribute).  
-  
-## Example  
- See the [coclass](../windows/coclass.md) example for a sample use of **vi_progid**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|**class**, **struct**|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
- [ProgID Key](http://msdn.microsoft.com/library/windows/desktop/dd542719)   
+```
+
+### Parameters
+
+*name*  
+The version-independent ProgID representing the object.
+
+ProgIDs present a human-readable version of the class identifier (CLSID) used to identify COM/ActiveX objects.
+
+## Remarks
+
+The **vi_progid** C++ attribute lets you specify a version-independent ProgID for a COM object. A ProgID has the form *name1.name2.version*. A version-independent ProgID does not have a *version*. It is possible to specify both the `progid` and the **vi_progid** attributes on a `coclass`. If you do not specify **vi_progid**, the version-independent ProgID is the value specified by the [progid](../windows/progid.md) attribute.
+
+**vi_progid** implies the `coclass` attribute, that is, if you specify **vi_progid**, it is the same thing as specifying the `coclass` and **vi_progid** attributes.
+
+The **vi_progid** attribute causes a class to be automatically registered under the specified name. The generated .idl file will not display the ProgID value.
+
+In ATL projects, If the [coclass](../windows/coclass.md) attribute is also present, the specified ProgID is used by the `GetVersionIndependentProgID` function (inserted by the `coclass` attribute).
+
+## Example
+
+See the [coclass](../windows/coclass.md) example for a sample use of **vi_progid**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|**class**, **struct**|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+ For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
+[Class Attributes](../windows/class-attributes.md)  
+[ProgID Key](http://msdn.microsoft.com/library/windows/desktop/dd542719)   

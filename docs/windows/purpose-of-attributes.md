@@ -12,18 +12,19 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Purpose of Attributes
-Attributes extend C++ in directions not currently possible without breaking the classic structure of the language. Attributes allow providers (separate DLLs) to extend language functionality dynamically. The primary goal of attributes is to simplify the authoring of COM components, in addition to increasing the productivity level of the component developer. Attributes can be applied to nearly any C++ construct, such as classes, data members, or member functions. The following is a highlight of benefits provided by this new technology:  
-  
--   Exposes a familiar and simple calling convention.  
-  
--   Uses inserted code, which, unlike macros, is recognized by the debugger.  
-  
--   Allows easy derivation from base classes without burdensome implementation details.  
-  
--   Replaces the large amount of IDL code required by a COM component with a few concise attributes.  
-  
- For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](../windows/event-receiver.md) attribute to a specific class such as `CMyReceiver`. The `event_receiver` attribute is then compiled by the Visual C++ compiler, which inserts the proper code into the object file.  
-  
+
+Attributes extend C++ in directions not currently possible without breaking the classic structure of the language. Attributes allow providers (separate DLLs) to extend language functionality dynamically. The primary goal of attributes is to simplify the authoring of COM components, in addition to increasing the productivity level of the component developer. Attributes can be applied to nearly any C++ construct, such as classes, data members, or member functions. The following is a highlight of benefits provided by this new technology:
+
+- Exposes a familiar and simple calling convention.
+
+- Uses inserted code, which, unlike macros, is recognized by the debugger.
+
+- Allows easy derivation from base classes without burdensome implementation details.
+
+- Replaces the large amount of IDL code required by a COM component with a few concise attributes.
+
+For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](../windows/event-receiver.md) attribute to a specific class such as `CMyReceiver`. The `event_receiver` attribute is then compiled by the Visual C++ compiler, which inserts the proper code into the object file.
+
 ```cpp  
 [event_receiver(com)]  
 class CMyReceiver   
@@ -31,9 +32,10 @@ class CMyReceiver
    void handler1(int i) { ... }  
    void handler2(int i, float j) { ... }  
 }  
-```  
-  
- You can then set up the `CMyReceiver` methods `handler1` and `handler2` to handle events (using the intrinsic function [__hook](../cpp/hook.md)) from an event source, which you can create using [event_source](../windows/event-source.md).  
-  
-## See Also  
- [Concepts](../windows/attributed-programming-concepts.md)
+```
+
+You can then set up the `CMyReceiver` methods `handler1` and `handler2` to handle events (using the intrinsic function [__hook](../cpp/hook.md)) from an event source, which you can create using [event_source](../windows/event-source.md).
+
+## See Also
+
+[Concepts](../windows/attributed-programming-concepts.md)

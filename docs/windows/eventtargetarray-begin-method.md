@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTargetArray::Begin Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 ComPtr<IUnknown>* Begin();  
-```  
-  
-## Return Value  
- The address of the first element in the internal array of event handlers.  
-  
-## Remarks  
- Gets the address of the first element in the internal array of event handlers.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [EventTargetArray Class](../windows/eventtargetarray-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+## Return Value
+
+The address of the first element in the internal array of event handlers.
+
+## Remarks
+
+Gets the address of the first element in the internal array of event handlers.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[EventTargetArray Class](../windows/eventtargetarray-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

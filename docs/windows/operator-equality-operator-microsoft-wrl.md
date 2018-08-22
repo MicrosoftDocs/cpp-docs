@@ -12,10 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # operator== Operator (Microsoft::WRL)
-Equality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../windows/comptrref-class.md) objects.  
-  
-## Syntax  
-  
+
+Equality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../windows/comptrref-class.md) objects.
+
+## Syntax
+
 ```cpp  
 WRL_NOTHROW bool operator==(  
    const ComPtr<T>& a,  
@@ -49,22 +50,26 @@ WRL_NOTHROW bool operator==(
    void* b,  
    const Details::ComPtrRef<ComPtr<T>>& a  
 );  
-```  
-  
-### Parameters  
- *a*  
- The left object.  
-  
- *b*  
- The right object.  
-  
-## Return Value  
- **true** if the objects are equal; otherwise, **false**.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+```
+
+### Parameters
+
+*a*  
+The left object.
+
+*b*  
+The right object.
+
+## Return Value
+
+**true** if the objects are equal; otherwise, **false**.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

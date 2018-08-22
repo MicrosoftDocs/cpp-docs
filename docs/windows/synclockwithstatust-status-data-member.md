@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockWithStatusT::status_ Data Member
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 DWORD status_;  
-```  
-  
-## Remarks  
- Holds the result of the underlying wait operation after a lock operation on an object based on the current **SyncLockWithStatusT** object.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::Details  
-  
-## See Also  
- [SyncLockWithStatusT Class](../windows/synclockwithstatust-class.md)
+```
+
+## Remarks
+
+Holds the result of the underlying wait operation after a lock operation on an object based on the current **SyncLockWithStatusT** object.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::Details
+
+## See Also
+
+[SyncLockWithStatusT Class](../windows/synclockwithstatust-class.md)

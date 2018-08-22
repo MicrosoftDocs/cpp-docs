@@ -13,30 +13,33 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ModuleType Enumeration
-Specifies whether a module should support an in-process server or an out-of-process server.  
-  
-## Syntax  
-  
+
+Specifies whether a module should support an in-process server or an out-of-process server.
+
+## Syntax
+
 ```cpp  
 enum ModuleType;  
-```  
-  
-## Members  
-  
-### Values  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`InProc`|An in-process server.|  
-|`OutOfProc`|An out-of-process server.|  
-|`DisableCaching`|Disable caching mechanism on Module.|  
-|`InProcDisableCaching`|Combination of `InProc` and `DisableCaching`.|  
-|`OutOfProcDisableCaching`|Combination of `OutOfProc` and `DisableCaching`.|  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+```
+
+## Members
+
+### Values
+
+|Name|Description|
+|----------|-----------------|
+|`InProc`|An in-process server.|
+|`OutOfProc`|An out-of-process server.|
+|`DisableCaching`|Disable caching mechanism on Module.|
+|`InProcDisableCaching`|Combination of `InProc` and `DisableCaching`.|
+|`OutOfProcDisableCaching`|Combination of `OutOfProc` and `DisableCaching`.|
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

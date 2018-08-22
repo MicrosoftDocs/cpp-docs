@@ -13,36 +13,40 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HANDLENullTraits Structure
-Defines common characteristics of an uninitialized handle.  
-  
-## Syntax  
-  
+
+Defines common characteristics of an uninitialized handle.
+
+## Syntax
+
 ```cpp  
 struct HANDLENullTraits;  
-```  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`Type`|A synonym for HANDLE.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[HANDLENullTraits::Close Method](../windows/handlenulltraits-close-method.md)|Closes the specified handle.|  
-|[HANDLENullTraits::GetInvalidValue Method](../windows/handlenulltraits-getinvalidvalue-method.md)|Represents an invalid handle.|  
-  
-## Inheritance Hierarchy  
- `HANDLENullTraits`  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+```
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`Type`|A synonym for HANDLE.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[HANDLENullTraits::Close Method](../windows/handlenulltraits-close-method.md)|Closes the specified handle.|
+|[HANDLENullTraits::GetInvalidValue Method](../windows/handlenulltraits-getinvalidvalue-method.md)|Represents an invalid handle.|
+
+## Inheritance Hierarchy
+
+`HANDLENullTraits`
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSection::~CriticalSection Destructor
-Deinitializes and destroys the current **CriticalSection** object.  
-  
-## Syntax  
-  
+
+Deinitializes and destroys the current **CriticalSection** object.
+
+## Syntax
+
 ```cpp  
 WRL_NOTHROW ~CriticalSection();  
-```  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [CriticalSection Class](../windows/criticalsection-class.md)
+```
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[CriticalSection Class](../windows/criticalsection-class.md)

@@ -13,34 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # first_is
-Specifies the index of the first array element to be transmitted.  
-  
-## Syntax  
-  
+
+Specifies the index of the first array element to be transmitted.
+
+## Syntax
+
 ```cpp  
 [ first_is(  
    "expression"  
 ) ]  
-```  
-  
-### Parameters  
- *expression*  
- One or more C-language expressions. Empty argument slots are allowed.  
-  
-## Remarks  
- The **first_is** C++ attribute has the same functionality as the [first_is](http://msdn.microsoft.com/library/windows/desktop/aa366831) MIDL attribute.  
-  
-## Example  
- The following code shows various ways to specify a section in an array:  
-  
+```
+
+### Parameters
+
+*expression*  
+One or more C-language expressions. Empty argument slots are allowed.
+
+## Remarks
+
+The **first_is** C++ attribute has the same functionality as the [first_is](http://msdn.microsoft.com/library/windows/desktop/aa366831) MIDL attribute.
+
+## Example
+
+The following code shows various ways to specify a section in an array:
+
 ```cpp  
 // cpp_attr_ref_first_is.cpp  
 // compile with: /LD  
 #include "windows.h"  
-#include "unknwn.h"  
-  
-[module(name="MyLib")];  
-  
+#include "unknwn.h"
+
+[module(name="MyLib")];
+
 [object, uuid(11111111-1111-1111-1111-111111111111)]  
 __interface b   
 {  
@@ -51,26 +55,27 @@ requestedit] HRESULT get_I([out, retval]long *i);
    HRESULT Proc2([in] short First, [in] short Last,   
 [last_is(First), size_is(Last)] char Arr2[]);  
 };  
-```  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
- [last_is](../windows/last-is.md)   
- [max_is](../windows/max-is.md)   
- [length_is](../windows/length-is.md)   
- [size_is](../windows/size-is.md)   
+```
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Field in **struct** or **union**, interface parameter, interface method|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+ For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
+[Parameter Attributes](../windows/parameter-attributes.md)  
+[last_is](../windows/last-is.md)  
+[max_is](../windows/max-is.md)  
+[length_is](../windows/length-is.md)  
+[size_is](../windows/size-is.md)   

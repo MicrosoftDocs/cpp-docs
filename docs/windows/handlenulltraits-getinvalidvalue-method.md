@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HANDLENullTraits::GetInvalidValue Method
-Represents an invalid handle.  
-  
-## Syntax  
-  
+
+Represents an invalid handle.
+
+## Syntax
+
 ```cpp  
 inline static Type GetInvalidValue();  
-```  
-  
-## Return Value  
- Always returns **nullptr**.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [HANDLENullTraits Structure](../windows/handlenulltraits-structure.md)
+```
+
+## Return Value
+
+Always returns **nullptr**.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[HANDLENullTraits Structure](../windows/handlenulltraits-structure.md)

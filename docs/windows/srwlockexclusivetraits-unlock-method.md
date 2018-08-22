@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockExclusiveTraits::Unlock Method
-Releases exclusive control of the specified `SRWLock` object.  
-  
-## Syntax  
-  
+
+Releases exclusive control of the specified `SRWLock` object.
+
+## Syntax
+
 ```cpp  
 inline static void Unlock(  
    _In_ Type srwlock  
 );  
-```  
-  
-### Parameters  
- *srwlock*  
- Handle to an `SRWLock` object.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [SRWLockExclusiveTraits Structure](../windows/srwlockexclusivetraits-structure.md)
+```
+
+### Parameters
+
+*srwlock*  
+Handle to an `SRWLock` object.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[SRWLockExclusiveTraits Structure](../windows/srwlockexclusivetraits-structure.md)

@@ -13,22 +13,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::GetAddressOf Method
-Retrieves the address of the [ptr_](../windows/comptr-ptr-data-member.md) data member, which contains a pointer to the interface represented by this **ComPtr**.  
-  
-## Syntax  
-  
+
+Retrieves the address of the [ptr_](../windows/comptr-ptr-data-member.md) data member, which contains a pointer to the interface represented by this **ComPtr**.
+
+## Syntax
+
 ```cpp  
 T* const* GetAddressOf() const;  
 T** GetAddressOf();  
-```  
-  
-## Return Value  
- The address of a variable.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+```
+
+## Return Value
+
+The address of a variable.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

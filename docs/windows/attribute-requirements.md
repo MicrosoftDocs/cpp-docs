@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 The requirements listed for C++ attributes describe the project types, compiler settings, and other information necessary for an attribute to work. The categories of information are described below.  
   
 > [!NOTE]
->  Using attributes on a class that derives from a class that also uses attributes is not supported.  
+> Using attributes on a class that derives from a class that also uses attributes is not supported.  
   
 ## Header  
  This field lists the header files that must be included before an attribute can be used.  

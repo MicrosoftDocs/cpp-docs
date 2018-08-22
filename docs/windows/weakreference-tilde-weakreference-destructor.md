@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakReference::~WeakReference Destructor
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 virtual ~WeakReference();  
-```  
-  
-## Return Value  
-  
-## Remarks  
- Deinitializes the current instance of the **WeakReference** class.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
- [WeakReference Class](../windows/weakreference-class1.md)
+```
+
+## Return Value
+
+## Remarks
+
+Deinitializes the current instance of the **WeakReference** class.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[WeakReference Class](../windows/weakreference-class1.md)

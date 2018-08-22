@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::ReleaseMarshalData Method
-Destroys a marshaled data packet.  
-  
-## Syntax  
-  
+
+Destroys a marshaled data packet.
+
+## Syntax
+
 ```cpp  
 STDMETHODIMP ReleaseMarshalData(  
    __in IStream *pStm  
 ) override;  
-```  
-  
-### Parameters  
- *pStm*  
- Pointer to a stream that contains the data packet to be destroyed.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Requirements  
- **Header:** ftm.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [FtmBase Class](../windows/ftmbase-class.md)
+```
+
+### Parameters
+
+*pStm*  
+Pointer to a stream that contains the data packet to be destroyed.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Requirements
+
+**Header:** ftm.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[FtmBase Class](../windows/ftmbase-class.md)

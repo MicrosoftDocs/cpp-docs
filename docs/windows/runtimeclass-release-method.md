@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::Release Method
-Performs a COM Release operation on the current **RuntimeClass** object.  
-  
-## Syntax  
-  
+
+Performs a COM Release operation on the current **RuntimeClass** object.
+
+## Syntax
+
 ```cpp  
 STDMETHOD_(  
    ULONG,  
    Release  
 )();  
-```  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Remarks  
- If the reference count becomes zero, the **RuntimeClass** object is deleted.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [RuntimeClass Class](../windows/runtimeclass-class.md)
+```
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Remarks
+
+If the reference count becomes zero, the **RuntimeClass** object is deleted.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[RuntimeClass Class](../windows/runtimeclass-class.md)

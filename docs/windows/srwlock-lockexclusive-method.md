@@ -13,29 +13,34 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::LockExclusive Method
-Acquires an **SRWLock** object in exclusive mode.  
-  
-## Syntax  
-  
+
+Acquires an **SRWLock** object in exclusive mode.
+
+## Syntax
+
 ```cpp  
-SyncLockExclusive LockExclusive();  
-  
+SyncLockExclusive LockExclusive();
+
 static SyncLockExclusive LockExclusive(  
    _In_ SRWLOCK* lock  
 );  
-```  
-  
-### Parameters  
- *lock*  
- Pointer to an **SRWLock** object.  
-  
-## Return Value  
- An **SRWLock** object in exclusive mode.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [SRWLock Class](../windows/srwlock-class.md)
+```
+
+### Parameters
+
+*lock*  
+Pointer to an **SRWLock** object.
+
+## Return Value
+
+An **SRWLock** object in exclusive mode.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[SRWLock Class](../windows/srwlock-class.md)

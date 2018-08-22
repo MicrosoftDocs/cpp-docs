@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier::Invoke Method
-When implemented, calls an event handler when the last object in a module is released.  
-  
-## Syntax  
-  
+
+When implemented, calls an event handler when the last object in a module is released.
+
+## Syntax
+
 ```cpp  
 virtual void Invoke() = 0;  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::ReleaseNotifier Class](../windows/module-releasenotifier-class.md)
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::ReleaseNotifier Class](../windows/module-releasenotifier-class.md)

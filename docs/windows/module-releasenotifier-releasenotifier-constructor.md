@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier::ReleaseNotifier Constructor
-Initializes a new instance of the **Module::ReleaseNotifier** class.  
-  
-## Syntax  
-  
+
+Initializes a new instance of the **Module::ReleaseNotifier** class.
+
+## Syntax
+
 ```cpp  
 ReleaseNotifier(bool release) throw();  
-```  
-  
-### Parameters  
- *release*  
- **true** to delete this instance when the `Release` method is called; **false** to not delete this instance.  
-  
-## Exceptions  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::ReleaseNotifier Class](../windows/module-releasenotifier-class.md)
+```
+
+### Parameters
+
+*release*  
+**true** to delete this instance when the `Release` method is called; **false** to not delete this instance.
+
+## Exceptions
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::ReleaseNotifier Class](../windows/module-releasenotifier-class.md)

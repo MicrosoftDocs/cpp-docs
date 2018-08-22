@@ -13,37 +13,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::RegisterWinRTObject Method
-Registers one or more Windows Runtime objects so other applications can connect to them.  
-  
-## Syntax  
-  
+
+Registers one or more Windows Runtime objects so other applications can connect to them.
+
+## Syntax
+
 ```cpp  
 HRESULT RegisterWinRTObject(const wchar_t* serverName,  
    wchar_t** activatableClassIds,  
    WINRT_REGISTRATION_COOKIE* cookie,  
    unsigned int count)  
-```  
-  
-### Parameters  
- *serverName*  
- A name that specifies a subset of objects affected by this operation.  
-  
- *activatableClassIds*  
- An array of activatable CLSIDs to register.  
-  
- *cookie*  
- A value that identifies the class objects that were registered. This value is used later to revoke the registration.  
-  
- *count*  
- The number of objects to register.  
-  
-## Return Value  
- S_OK if successful; otherwise, an error HRESULT such as CO_E_OBJISREG that indicates the reason the operation failed.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
+```
+
+### Parameters
+
+*serverName*  
+A name that specifies a subset of objects affected by this operation.
+
+*activatableClassIds*  
+An array of activatable CLSIDs to register.
+
+*cookie*  
+A value that identifies the class objects that were registered. This value is used later to revoke the registration.
+
+*count*  
+The number of objects to register.
+
+## Return Value
+
+S_OK if successful; otherwise, an error HRESULT such as CO_E_OBJISREG that indicates the reason the operation failed.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
  ## See Also
- [Module Class](../windows/module-class.md)
+[Module Class](../windows/module-class.md)

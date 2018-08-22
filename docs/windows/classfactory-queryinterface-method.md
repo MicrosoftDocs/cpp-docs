@@ -13,30 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory::QueryInterface Method
-Retrieves a pointer to the interface specified by parameter.  
-  
-## Syntax  
-  
+
+Retrieves a pointer to the interface specified by parameter.
+
+## Syntax
+
 ```cpp  
 STDMETHOD(  
    QueryInterface  
 )(REFIID riid, _Deref_out_ void **ppvObject);  
-```  
-  
-### Parameters  
- *riid*  
- An interface ID.  
-  
- *ppvObject*  
- When this operation completes, a pointer to the interface specified by parameter *riid*.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that describes the failure.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ClassFactory Class](../windows/classfactory-class.md)
+```
+
+### Parameters
+
+*riid*  
+An interface ID.
+
+*ppvObject*  
+When this operation completes, a pointer to the interface specified by parameter *riid*.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that describes the failure.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ClassFactory Class](../windows/classfactory-class.md)

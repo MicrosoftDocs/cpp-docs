@@ -12,18 +12,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RoInitializeWrapper::HRESULT() Operator
-Retrieves the HRESULT value produced by the last **RoInitializeWrapper** constructor.  
-  
-## Syntax  
-  
+
+Retrieves the HRESULT value produced by the last **RoInitializeWrapper** constructor.
+
+## Syntax
+
 ```cpp  
 operator HRESULT()  
-```  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+```
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

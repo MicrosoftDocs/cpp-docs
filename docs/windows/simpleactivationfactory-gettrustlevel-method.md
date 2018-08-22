@@ -12,27 +12,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SimpleActivationFactory::GetTrustLevel Method
-Gets the trust level of an instance of the class specified by the `Base` class template parameter.  
-  
-## Syntax  
-  
+
+Gets the trust level of an instance of the class specified by the `Base` class template parameter.
+
+## Syntax
+
 ```cpp  
 STDMETHOD(  
    GetTrustLevel  
 )(_Out_ TrustLevel* trustLvl);  
-```  
-  
-### Parameters  
- *trustLvl*  
- When this operation completes, the trust level of the current class object.  
-  
-## Return Value  
- Always S_OK.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)
+```
+
+### Parameters
+
+*trustLvl*  
+When this operation completes, the trust level of the current class object.
+
+## Return Value
+
+Always S_OK.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)

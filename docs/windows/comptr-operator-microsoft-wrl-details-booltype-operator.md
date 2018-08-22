@@ -11,22 +11,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator Microsoft::WRL::Details::BoolType Operator
-Indicates whether or not a **ComPtr** is managing the object lifetime of an interface.  
-  
-## Syntax  
-  
+
+Indicates whether or not a **ComPtr** is managing the object lifetime of an interface.
+
+## Syntax
+
 ```cpp  
 WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;  
-```  
-  
-## Return Value  
- If an interface is associated with this **ComPtr**, the address of the [BoolStruct::Member](../windows/boolstruct-member-data-member.md) data member; otherwise, **nullptr**.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)   
- [ComPtr::Get Method](../windows/comptr-get-method.md)
+```
+
+## Return Value
+
+If an interface is associated with this **ComPtr**, the address of the [BoolStruct::Member](../windows/boolstruct-member-data-member.md) data member; otherwise, **nullptr**.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)  
+[ComPtr::Get Method](../windows/comptr-get-method.md)

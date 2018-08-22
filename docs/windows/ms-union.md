@@ -13,20 +13,23 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ms_union
-Controls the network data representation alignment of nonencapsulated unions.  
-  
-## Syntax  
-  
+
+Controls the network data representation alignment of nonencapsulated unions.
+
+## Syntax
+
 ```cpp  
 [ms_union]  
-```  
-  
-## Remarks  
- The **ms_union** C++ attribute has the same functionality as the [ms_union](http://msdn.microsoft.com/library/windows/desktop/aa367100) MIDL attribute.  
-  
-## Example  
- The following code shows the placement of **ms_union**:  
-  
+```
+
+## Remarks
+
+The **ms_union** C++ attribute has the same functionality as the [ms_union](http://msdn.microsoft.com/library/windows/desktop/aa367100) MIDL attribute.
+
+## Example
+
+The following code shows the placement of **ms_union**:
+
 ```cpp  
 // cpp_attr_ref_ms_union.cpp  
 // compile with: /LD  
@@ -34,8 +37,8 @@ Controls the network data representation alignment of nonencapsulated unions.
 [object, ms_union, uuid("00000000-0000-0000-0000-000000000001")]  
 __interface IFireTabCtrl {  
    HRESULT DisplayString([in, string] char * p1);  
-};  
-  
+};
+
 [export, switch_type(short)] union _WILLIE_UNION_TYPE  {  
    [case(24)]  
       float fMays;  
@@ -43,26 +46,27 @@ __interface IFireTabCtrl {
       double dMcCovey;  
    [default]  
       int x;  
- };  
-  
-[public] typedef _WILLIE_UNION_TYPE WILLIE_UNION_TYPE;  
-  
+ };
+
+[public] typedef _WILLIE_UNION_TYPE WILLIE_UNION_TYPE;
+
 [module(name="ATLFIRELib")];  
-```  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Nonencapsulated unions|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|`dispinterface`|  
-  
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+```
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Nonencapsulated unions|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|`dispinterface`|
+
+ For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   

@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ImplementsHelper Structure
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 template <  
    typename RuntimeClassFlagsT,  
@@ -24,33 +25,38 @@ template <
    bool IsDelegateToClass  
 >  
 friend struct Details::ImplementsHelper;  
-```  
-  
-### Parameters  
- *RuntimeClassFlagsT*  
- A field of flags that specifies one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.  
-  
- *ILst*  
- A list of interface IDs.  
-  
- *IsDelegateToClass*  
- Specify **true** if the current instance of `Implements` is a base class of the first interface ID in *ILst*; otherwise, **false**.  
-  
-## Remarks  
- Helps implement the [Implements](../windows/implements-structure.md) structure.  
-  
- This template traverses a list of interfaces and adds them as base classes, and as information necessary to enable `QueryInterface`.  
-  
-## Members  
-  
-## Inheritance Hierarchy  
- `ImplementsHelper`  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Reference (Windows Runtime Library)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+### Parameters
+
+*RuntimeClassFlagsT*  
+A field of flags that specifies one or more [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumerators.
+
+*ILst*  
+A list of interface IDs.
+
+*IsDelegateToClass*  
+Specify **true** if the current instance of `Implements` is a base class of the first interface ID in *ILst*; otherwise, **false**.
+
+## Remarks
+
+Helps implement the [Implements](../windows/implements-structure.md) structure.
+
+This template traverses a list of interfaces and adds them as base classes, and as information necessary to enable `QueryInterface`.
+
+## Members
+
+## Inheritance Hierarchy
+
+`ImplementsHelper`
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Reference (Windows Runtime Library)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

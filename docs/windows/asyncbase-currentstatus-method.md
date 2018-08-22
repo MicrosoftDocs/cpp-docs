@@ -13,28 +13,33 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::CurrentStatus Method
-Retrieves the status of the current asynchronous operation.  
-  
-## Syntax  
-  
+
+Retrieves the status of the current asynchronous operation.
+
+## Syntax
+
 ```cpp  
 inline void CurrentStatus(  
    Details::AsyncStatusInternal *status  
 );  
-```  
-  
-### Parameters  
- *status*  
- The location where this operation stores the current status.  
-  
-## Remarks  
- This operation is thread-safe.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)   
- [AsyncStatusInternal Enumeration](../windows/asyncstatusinternal-enumeration.md)
+```
+
+### Parameters
+
+*status*  
+The location where this operation stores the current status.
+
+## Remarks
+
+This operation is thread-safe.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)  
+[AsyncStatusInternal Enumeration](../windows/asyncstatusinternal-enumeration.md)

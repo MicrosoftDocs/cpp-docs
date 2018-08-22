@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SemaphoreTraits::Unlock Method
-Releases control of a shared resource.  
-  
-## Syntax  
-  
+
+Releases control of a shared resource.
+
+## Syntax
+
 ```cpp  
 inline static void Unlock(  
    _In_ Type h  
 );  
-```  
-  
-### Parameters  
- *h*  
- Handle to a **Semaphore** object.  
-  
-## Remarks  
- If the unlock operation is unsuccessful, **Unlock()** emits an error that indicates the cause of the failure.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [SemaphoreTraits Structure](../windows/semaphoretraits-structure.md)
+```
+
+### Parameters
+
+*h*  
+Handle to a **Semaphore** object.
+
+## Remarks
+
+If the unlock operation is unsuccessful, **Unlock()** emits an error that indicates the cause of the failure.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[SemaphoreTraits Structure](../windows/semaphoretraits-structure.md)

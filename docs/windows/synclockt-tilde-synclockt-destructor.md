@@ -13,23 +13,27 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockT::~SyncLockT Destructor
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 ~SyncLockT();  
-```  
-  
-## Remarks  
- Deinitializes an instance of the **SyncLockT** class.  
-  
- This destructor also unlocks the current **SyncLockT** instance.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::Details  
-  
-## See Also  
- [SyncLockT Class](../windows/synclockt-class.md)
+```
+
+## Remarks
+
+Deinitializes an instance of the **SyncLockT** class.
+
+This destructor also unlocks the current **SyncLockT** instance.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::Details
+
+## See Also
+
+[SyncLockT Class](../windows/synclockt-class.md)

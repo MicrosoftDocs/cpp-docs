@@ -13,32 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSection::Lock Method
-Waits for ownership of the specified critical section object. The function returns when the calling thread is granted ownership.  
-  
-## Syntax  
-  
+
+Waits for ownership of the specified critical section object. The function returns when the calling thread is granted ownership.
+
+## Syntax
+
 ```cpp  
-SyncLock Lock();  
-  
+SyncLock Lock();
+
    static SyncLock Lock(  
    _In_ CRITICAL_SECTION* cs  
 );  
-```  
-  
-### Parameters  
- *cs*  
- A user-specified critical section object.  
-  
-## Return Value  
- A lock object that can be used to unlock the current critical section.  
-  
-## Remarks  
- The first **Lock** function affects the current critical section object. The second **Lock** function affects a user-specified critical section.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [CriticalSection Class](../windows/criticalsection-class.md)
+```
+
+### Parameters
+
+*cs*  
+A user-specified critical section object.
+
+## Return Value
+
+A lock object that can be used to unlock the current critical section.
+
+## Remarks
+
+The first **Lock** function affects the current critical section object. The second **Lock** function affects a user-specified critical section.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[CriticalSection Class](../windows/criticalsection-class.md)

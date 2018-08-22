@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # InvokeHelper Structure
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 template<  
    typename TDelegateInterface,  
@@ -74,52 +75,57 @@ template<
    typename TCallback  
 >  
 struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-```  
-  
-### Parameters  
- *TDelegateInterface*  
- *TCallback*  
- The type of the event handler function.  
-  
- *argCount*  
- The number of arguments in an **InvokeHelper** specialization.  
-  
-## Remarks  
- Provides an implementation of the `Invoke()` method based on the specified number and type of arguments.  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`Traits`|A synonym for the class that defines the type of each event handler argument.|  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[InvokeHelper::InvokeHelper Constructor](../windows/invokehelper-invokehelper-constructor.md)|Initializes a new instance of the **InvokeHelper** class.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[InvokeHelper::Invoke Method](../windows/invokehelper-invoke-method.md)|Calls the event handler whose signature contains the specified number of arguments.|  
-  
-### Public Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[InvokeHelper::callback_ Data Member](../windows/invokehelper-callback-data-member.md)|Represents the event handler to call when an event occurs.|  
-  
-## Inheritance Hierarchy  
- `InvokeHelper`  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+### Parameters
+
+*TDelegateInterface*  
+*TCallback*  
+The type of the event handler function.
+
+*argCount*  
+The number of arguments in an **InvokeHelper** specialization.
+
+## Remarks
+
+Provides an implementation of the `Invoke()` method based on the specified number and type of arguments.
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`Traits`|A synonym for the class that defines the type of each event handler argument.|
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[InvokeHelper::InvokeHelper Constructor](../windows/invokehelper-invokehelper-constructor.md)|Initializes a new instance of the **InvokeHelper** class.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[InvokeHelper::Invoke Method](../windows/invokehelper-invoke-method.md)|Calls the event handler whose signature contains the specified number of arguments.|
+
+### Public Data Members
+
+|Name|Description|
+|----------|-----------------|
+|[InvokeHelper::callback_ Data Member](../windows/invokehelper-callback-data-member.md)|Represents the event handler to call when an event occurs.|
+
+## Inheritance Hierarchy
+
+`InvokeHelper`
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

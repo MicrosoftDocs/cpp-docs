@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ModuleBase::IncrementObjectCount Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
 ```cpp  
 virtual long IncrementObjectCount() = 0;  
-```  
-  
-## Return Value  
- The count before the increment operation.  
-  
-## Remarks  
- When implemented, increments the number of objects tracked by the module.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ModuleBase Class](../windows/modulebase-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+```
+
+## Return Value
+
+The count before the increment operation.
+
+## Remarks
+
+When implemented, increments the number of objects tracked by the module.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ModuleBase Class](../windows/modulebase-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

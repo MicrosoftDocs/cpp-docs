@@ -12,10 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Callback Function (Windows Runtime C++ Template Library)
-Creates an object whose member function is a callback method.  
-  
-## Syntax  
-  
+
+Creates an object whose member function is a callback method.
+
+## Syntax
+
 ```cpp  
 template<  
    typename TDelegateInterface,  
@@ -185,64 +186,69 @@ ComPtr<TDelegateInterface> Callback(
    TArg8,  
    TArg9)  
 );  
-```  
-  
-### Parameters  
- *TDelegateInterface*  
- A template parameter that specifies the interface of the delegate to call when an event occurs.  
-  
- *TCallback*  
- A template parameter that specifies the type of an object that represents an object and its callback member function.  
-  
- *TCallbackObject*  
- A template parameter that specifies the object whose member function is the method to call when an event occurs.  
-  
- *TArg1*  
- A template parameter that specifies the type of the first callback method argument.  
-  
- *TArg2*  
- A template parameter that specifies the type of the second callback method argument.  
-  
- *TArg3*  
- A template parameter that specifies the type of the third callback method argument.  
-  
- *TArg4*  
- A template parameter that specifies the type of the fourth callback method argument.  
-  
- *TArg5*  
- A template parameter that specifies the type of the fifth callback method argument.  
-  
- *TArg6*  
- A template parameter that specifies the type of the sixth callback method argument.  
-  
- *TArg7*  
- A template parameter that specifies the type of the seventh callback method argument.  
-  
- *TArg8*  
- A template parameter that specifies the type of the eigth callback method argument.  
-  
- *TArg9*  
- A template parameter that specifies the type of the ninth callback method argument.  
-  
- *callback*  
- An object that represents the callback object and its member function.  
-  
- *object*  
- The object whose member function is called when an event occurs.  
-  
- *method*  
- The member function to call when an event occurs.  
-  
-## Return Value  
- An object whose member function is the specified callback method.  
-  
-## Remarks  
- The base of a delegate object must be `IUnknown`, not `IInspectable`.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+```
+
+### Parameters
+
+*TDelegateInterface*  
+A template parameter that specifies the interface of the delegate to call when an event occurs.
+
+*TCallback*  
+A template parameter that specifies the type of an object that represents an object and its callback member function.
+
+*TCallbackObject*  
+A template parameter that specifies the object whose member function is the method to call when an event occurs.
+
+*TArg1*  
+A template parameter that specifies the type of the first callback method argument.
+
+*TArg2*  
+A template parameter that specifies the type of the second callback method argument.
+
+*TArg3*  
+A template parameter that specifies the type of the third callback method argument.
+
+*TArg4*  
+A template parameter that specifies the type of the fourth callback method argument.
+
+*TArg5*  
+A template parameter that specifies the type of the fifth callback method argument.
+
+*TArg6*  
+A template parameter that specifies the type of the sixth callback method argument.
+
+*TArg7*  
+A template parameter that specifies the type of the seventh callback method argument.
+
+*TArg8*  
+A template parameter that specifies the type of the eigth callback method argument.
+
+*TArg9*  
+A template parameter that specifies the type of the ninth callback method argument.
+
+*callback*  
+An object that represents the callback object and its member function.
+
+*object*  
+The object whose member function is called when an event occurs.
+
+*method*  
+The member function to call when an event occurs.
+
+## Return Value
+
+An object whose member function is the specified callback method.
+
+## Remarks
+
+The base of a delegate object must be `IUnknown`, not `IInspectable`.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

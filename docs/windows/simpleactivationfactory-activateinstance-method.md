@@ -25,6 +25,7 @@ STDMETHOD( ActivateInstance )(
 ```
 
 ### Parameters
+
 *ppvObject*  
 When this operation completes, pointer to an instance of the object specified by the `Base` class template parameter.
 
@@ -43,4 +44,5 @@ If `__WRL_STRICT__` is defined, an assert error is emitted if the base class spe
 **Namespace:** Microsoft::WRL
 
 ## See Also
- [SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)
+
+[SimpleActivationFactory Class](../windows/simpleactivationfactory-class.md)

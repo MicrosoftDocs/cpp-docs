@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::Attach Method
-Associates this **ComPtr** with the interface type specified by the current template type parameter.  
-  
-## Syntax  
-  
+
+Associates this **ComPtr** with the interface type specified by the current template type parameter.
+
+## Syntax
+
 ```cpp  
 void Attach(  
    _In_opt_ InterfaceType* other  
 );  
-```  
-  
-### Parameters  
- *other*  
- An interface type.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+```
+
+### Parameters
+
+*other*  
+An interface type.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

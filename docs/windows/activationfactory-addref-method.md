@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::AddRef Method
-Increments the reference count of the current **ActivationFactory** object.  
-  
-## Syntax  
-  
+
+Increments the reference count of the current **ActivationFactory** object.
+
+## Syntax
+
 ```cpp  
 STDMETHOD_(  
    ULONG,  
    AddRef  
 )();  
-```  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that describes the failure.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ActivationFactory Class](../windows/activationfactory-class.md)
+```
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that describes the failure.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ActivationFactory Class](../windows/activationfactory-class.md)

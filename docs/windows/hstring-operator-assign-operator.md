@@ -12,25 +12,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::Operator= Operator
-Moves the value of another **HString** object to the current **HString** object.  
-  
-## Syntax  
-  
+
+Moves the value of another **HString** object to the current **HString** object.
+
+## Syntax
+
 ```cpp  
 HString& operator=(HString&& other) throw()  
-```  
-  
-### Parameters  
- *other*  
- An existing **HString** object.  
-  
-## Remarks  
- The value of the existing *other* object is copied to the current **HString** object, and then the *other* object is destroyed.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HString Class](../windows/hstring-class.md)
+```
+
+### Parameters
+
+*other*  
+An existing **HString** object.
+
+## Remarks
+
+The value of the existing *other* object is copied to the current **HString** object, and then the *other* object is destroyed.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HString Class](../windows/hstring-class.md)

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 This section contains reference information for the Windows Runtime C++ Template Library (WRL).  
   
 > [!NOTE]
->  The Windows Runtime C++ Template Library defines functionality that supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code. Such functionality is noted in this documentation.  
+> The Windows Runtime C++ Template Library defines functionality that supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code. Such functionality is noted in this documentation.  
   
 ## In This Section  
  [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)  

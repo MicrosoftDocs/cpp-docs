@@ -13,35 +13,40 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivateInstance Function
-Registers and retrieves an instance of a specified type defined in a specified class ID.  
-  
-## Syntax  
-  
+
+Registers and retrieves an instance of a specified type defined in a specified class ID.
+
+## Syntax
+
 ```cpp  
 template<typename T>  
 inline HRESULT ActivateInstance(  
    _In_ HSTRING activatableClassId,  
    _Out_ Microsoft::WRL::Details::ComPtrRef<T> instance  
 );  
-```  
-  
-### Parameters  
- *T*  
- A type to activate.  
-  
- *activatableClassId*  
- The name of the class ID that defines parameter *T*.  
-  
- *instance*  
- When this operation completes, a reference to an instance of *T*.  
-  
-## Return Value  
- S_OK if successful; otherwise, an error HRESULT that indicates the cause of the error.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Windows::Foundation  
-  
-## See Also  
- [Windows::Foundation Namespace](../windows/windows-foundation-namespace.md)
+```
+
+### Parameters
+
+*T*  
+A type to activate.
+
+*activatableClassId*  
+The name of the class ID that defines parameter *T*.
+
+*instance*  
+When this operation completes, a reference to an instance of *T*.
+
+## Return Value
+
+S_OK if successful; otherwise, an error HRESULT that indicates the cause of the error.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Windows::Foundation
+
+## See Also
+
+[Windows::Foundation Namespace](../windows/windows-foundation-namespace.md)

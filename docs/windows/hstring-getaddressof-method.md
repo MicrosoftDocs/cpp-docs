@@ -12,24 +12,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::GetAddressOf Method
-Retrieves a pointer to the underlying HSTRING handle.  
-  
-## Syntax  
-  
+
+Retrieves a pointer to the underlying HSTRING handle.
+
+## Syntax
+
 ```cpp  
 HSTRING* GetAddressOf() throw()  
-```  
-  
-## Return Value  
- A pointer to the underlying HSTRING handle.  
-  
-## Remarks  
- After this operation, the string value of the underlying HSTRING handle is destroyed.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HString Class](../windows/hstring-class.md)
+```
+
+## Return Value
+
+A pointer to the underlying HSTRING handle.
+
+## Remarks
+
+After this operation, the string value of the underlying HSTRING handle is destroyed.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HString Class](../windows/hstring-class.md)

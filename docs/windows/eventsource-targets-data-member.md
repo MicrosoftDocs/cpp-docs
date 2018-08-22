@@ -13,21 +13,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::targets_ Data Member
-An array of one or more event handlers.  
-  
-## Syntax  
-  
+
+An array of one or more event handlers.
+
+## Syntax
+
 ```cpp  
 ComPtr<Details::EventTargetArray> targets_;  
-```  
-  
-## Remarks  
- When the event that is represented by the current **EventSource** object occurs, the event handlers are called.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL
- 
+```
+
+## Remarks
+
+When the event that is represented by the current **EventSource** object occurs, the event handlers are called.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL
+
  ## See Also
- [EventSource Class](../windows/eventsource-class.md)
+[EventSource Class](../windows/eventsource-class.md)

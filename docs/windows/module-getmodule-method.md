@@ -13,22 +13,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GetModule Method
-Creates an instance of a module.  
-  
-## Syntax  
-  
+
+Creates an instance of a module.
+
+## Syntax
+
 ```cpp  
 static Module& GetModule();  
 WRL_NOTHROW static Module& GetModule();  
-```  
-  
-## Return Value  
- A reference to a module.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module Class](../windows/module-class.md)
+```
+
+## Return Value
+
+A reference to a module.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module Class](../windows/module-class.md)

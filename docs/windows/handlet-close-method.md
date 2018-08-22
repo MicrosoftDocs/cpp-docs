@@ -13,23 +13,27 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::Close Method
-Closes the current **HandleT** object.  
-  
-## Syntax  
-  
+
+Closes the current **HandleT** object.
+
+## Syntax
+
 ```cpp  
 void Close();  
-```  
-  
-## Remarks  
- The handle that underlies the current **HandleT** is closed, and the **HandleT** is set to the invalid state.  
-  
- If the handle doesn't close properly, an exception is raised in the calling thread.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+```
+
+## Remarks
+
+The handle that underlies the current **HandleT** is closed, and the **HandleT** is set to the invalid state.
+
+If the handle doesn't close properly, an exception is raised in the calling thread.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

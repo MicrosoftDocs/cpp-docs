@@ -57,4 +57,5 @@ Do not use these macros with classic COM unless you use the `#undef` directive t
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

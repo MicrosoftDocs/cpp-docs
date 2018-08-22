@@ -13,53 +13,57 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # helpstringdll
-Specifies the name of the DLL to use to perform document string lookup (localization).  
-  
-## Syntax  
-  
+
+Specifies the name of the DLL to use to perform document string lookup (localization).
+
+## Syntax
+
 ```cpp  
 [ helpstringdll(  
    "string"  
 ) ]  
-```  
-  
-### Parameters  
- *string*  
- The DLL to use to perform document string lookup.  
-  
-## Remarks  
- The **helpstringdll** C++ attribute has the same functionality as the [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) MIDL attribute.  
-  
-## Example  
-  
+```
+
+### Parameters
+
+*string*  
+The DLL to use to perform document string lookup.
+
+## Remarks
+
+The **helpstringdll** C++ attribute has the same functionality as the [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) MIDL attribute.
+
+## Example
+
 ```cpp  
 // cpp_attr_ref_helpstringdll.cpp  
 // compile with: /LD  
 #include <unknwn.h>  
-[module(name="MyLib", helpstringdll="xx.dll")];  
-  
+[module(name="MyLib", helpstringdll="xx.dll")];
+
 [object, uuid("00000000-0000-0000-0000-000000000001")]  
 __interface IMyI   
 {  
    HRESULT xxx();  
 };  
-```  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|**class**, **interface**, interface method|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+```
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|**class**, **interface**, interface method|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+ For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Interface Attributes](../windows/interface-attributes.md)  
+[Class Attributes](../windows/class-attributes.md)  
+[Method Attributes](../windows/method-attributes.md)   
