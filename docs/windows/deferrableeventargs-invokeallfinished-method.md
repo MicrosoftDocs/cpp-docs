@@ -11,24 +11,24 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # DeferrableEventArgs::InvokeAllFinished Method
-Called to indicate that all processing to handle a deferred event is complete.  
+Called to indicate that all processing to handle a deferred event is complete.
   
-## Syntax  
+## Syntax
   
-```cpp  
+```cpp
 void InvokeAllFinished()  
-```  
+```
   
-## Remarks  
- You should call this method after the event source calls [InvokeAll](../windows/eventsource-invokeall-method.md). Calling this method prevents further deferrals from being taken and forces the completion handler to execute if no deferrals were taken.  
+## Remarks
+ You should call this method after the event source calls [InvokeAll](../windows/eventsource-invokeall-method.md). Calling this method prevents further deferrals from being taken and forces the completion handler to execute if no deferrals were taken.
   
- For a code example, see [DeferrableEventArgs Class](../windows/deferrableeventargs-class.md).  
+ For a code example, see [DeferrableEventArgs Class](../windows/deferrableeventargs-class.md).
   
-## Requirements  
- **Header:** event.h  
+## Requirements
+ **Header:** event.h
   
- **Namespace:** Microsoft::WRL  
+ **Namespace:** Microsoft::WRL
   
-## See Also  
- [DeferrableEventArgs Class](../windows/deferrableeventargs-class.md)   
+## See Also
+ [DeferrableEventArgs Class](../windows/deferrableeventargs-class.md)  
  [EventSource::InvokeAll Method](../windows/eventsource-invokeall-method.md)

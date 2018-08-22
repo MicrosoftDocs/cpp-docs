@@ -13,37 +13,43 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # InterfaceTraits::CastToBase Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-template<typename T>  
-static __forceinline Base* CastToBase(  
-   _In_ T* ptr  
-);  
-```  
-  
-### Parameters  
- *T*  
- The type of parameter *ptr*.  
-  
- *ptr*  
- Pointer to a type *T*.  
-  
-## Return Value  
- A pointer to `Base`.  
-  
-## Remarks  
- Casts the specified pointer to a pointer to `Base`.  
-  
- For more information about `Base`, see the Public Typedefs section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [InterfaceTraits Structure](../windows/interfacetraits-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+template<typename T>
+static __forceinline Base* CastToBase(
+   _In_ T* ptr
+);
+```
+
+### Parameters
+
+*T*  
+The type of parameter *ptr*.
+
+*ptr*  
+Pointer to a type *T*.
+
+## Return Value
+
+A pointer to `Base`.
+
+## Remarks
+
+Casts the specified pointer to a pointer to `Base`.
+
+For more information about `Base`, see the Public Typedefs section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[InterfaceTraits Structure](../windows/interfacetraits-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

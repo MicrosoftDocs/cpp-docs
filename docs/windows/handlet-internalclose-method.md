@@ -13,24 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::InternalClose Method
-Closes the current **HandleT** object.  
-  
-## Syntax  
-  
-```cpp  
-virtual bool InternalClose();  
-```  
-  
-## Return Value  
- **true** if the current **HandleT** closed successfully; otherwise, **false**.  
-  
-## Remarks  
- **InternalClose()** is **protected**.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+
+Closes the current **HandleT** object.
+
+## Syntax
+
+```cpp
+virtual bool InternalClose();
+```
+
+## Return Value
+
+**true** if the current **HandleT** closed successfully; otherwise, **false**.
+
+## Remarks
+
+**InternalClose()** is **protected**.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

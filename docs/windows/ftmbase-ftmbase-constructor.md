@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::FtmBase Constructor
-Initializes a new instance of the **FtmBase** class.  
-  
-## Syntax  
-  
-```cpp  
-FtmBase();  
-```  
-  
-## Requirements  
- **Header:** ftm.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [FtmBase Class](../windows/ftmbase-class.md)
+
+Initializes a new instance of the **FtmBase** class.
+
+## Syntax
+
+```cpp
+FtmBase();
+```
+
+## Requirements
+
+**Header:** ftm.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[FtmBase Class](../windows/ftmbase-class.md)

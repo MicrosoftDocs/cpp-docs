@@ -13,45 +13,51 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeEquals
-Compares two numbers to determine whether they are equal.  
-  
-## Syntax  
-  
-```cpp  
-template<typename T, typename U>  
-inline bool SafeEquals (  
-   const T t,  
-   const U u  
-) throw ();  
-```  
-  
-### Parameters  
- [in] *t*  
- The first number to compare. This must be of type T.  
-  
- [in] *u*  
- The second number to compare. This must be of type U.  
-  
-## Return Value  
- **true** if *t* and *u* are equal; otherwise **false**.  
-  
-## Remarks  
- The method enhances `==` because **SafeEquals** enables you to compare two different types of numbers.  
-  
- This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single comparison operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  
-  
+
+Compares two numbers to determine whether they are equal.
+
+## Syntax
+
+```cpp
+template<typename T, typename U>
+inline bool SafeEquals (
+   const T t,
+   const U u
+) throw ();
+```
+
+### Parameters
+
+[in] *t*  
+The first number to compare. This must be of type T.
+
+[in] *u*  
+The second number to compare. This must be of type U.
+
+## Return Value
+
+**true** if *t* and *u* are equal; otherwise **false**.
+
+## Remarks
+
+The method enhances `==` because **SafeEquals** enables you to compare two different types of numbers.
+
+This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single comparison operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).
+
 > [!NOTE]
->  This method should only be used when a single mathematical operation must be protected. If there are multiple operations, you should use the `SafeInt` class instead of calling the individual stand-alone functions.  
-  
- For more information about the template types T and U, see [SafeInt Functions](../windows/safeint-functions.md).  
-  
-## Requirements  
- **Header:** safeint.h  
-  
- **Namespace:** Microsoft::Utilities  
-  
-## See Also  
- [SafeInt Functions](../windows/safeint-functions.md)   
- [SafeInt Library](../windows/safeint-library.md)   
- [SafeInt Class](../windows/safeint-class.md)   
- [SafeNotEquals](../windows/safenotequals.md)
+> This method should only be used when a single mathematical operation must be protected. If there are multiple operations, you should use the `SafeInt` class instead of calling the individual stand-alone functions.
+
+For more information about the template types T and U, see [SafeInt Functions](../windows/safeint-functions.md).
+
+## Requirements
+
+**Header:** safeint.h
+
+**Namespace:** Microsoft::Utilities
+
+## See Also
+
+[SafeInt Functions](../windows/safeint-functions.md)  
+[SafeInt Library](../windows/safeint-library.md)  
+[SafeInt Class](../windows/safeint-class.md)  
+[SafeNotEquals](../windows/safenotequals.md)

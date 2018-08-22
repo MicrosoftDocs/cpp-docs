@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # MakeAllocator::~MakeAllocator Destructor
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-~MakeAllocator();  
-```  
-  
-## Remarks  
- Deinitializes the current instance of the **MakeAllocator** class.  
-  
- This destructor also deletes the underlying allocated memory if necessary.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [MakeAllocator Class](../windows/makeallocator-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+~MakeAllocator();
+```
+
+## Remarks
+
+Deinitializes the current instance of the **MakeAllocator** class.
+
+This destructor also deletes the underlying allocated memory if necessary.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[MakeAllocator Class](../windows/makeallocator-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

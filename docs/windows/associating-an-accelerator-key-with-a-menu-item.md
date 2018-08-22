@@ -12,11 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Associating an Accelerator Key with a Menu Item
-Many times, you want a menu item and a keyboard combination to issue the same program command. You do this by assigning the same resource identifier (ID) to the menu item and to an entry in your application's accelerator table. You then edit the menu item's caption to show the name of the accelerator. For more information on menu items and accelerator keys, see [Associating a Menu Item with an Accelerator Key](../windows/associating-a-menu-command-with-an-accelerator-key.md).  
-  
-## Requirements  
- Win32  
-  
-## See Also  
- [Accelerator Editor](../windows/accelerator-editor.md)   
- [Resource Editors](../windows/resource-editors.md)
+
+Many times, you want a menu item and a keyboard combination to issue the same program command. You do this by assigning the same resource identifier (ID) to the menu item and to an entry in your application's accelerator table. You then edit the menu item's caption to show the name of the accelerator. For more information on menu items and accelerator keys, see [Associating a Menu Item with an Accelerator Key](../windows/associating-a-menu-command-with-an-accelerator-key.md).
+
+## Requirements
+
+Win32
+
+## See Also
+
+[Accelerator Editor](../windows/accelerator-editor.md)  
+[Resource Editors](../windows/resource-editors.md)

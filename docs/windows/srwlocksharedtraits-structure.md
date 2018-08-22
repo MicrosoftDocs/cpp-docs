@@ -13,36 +13,40 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLockSharedTraits Structure
-Describes common characteristics of the `SRWLock` class in shared lock mode.  
-  
-## Syntax  
-  
-```cpp  
-struct SRWLockSharedTraits;  
-```  
-  
-## Members  
-  
-### Public Typedefs  
-  
-|Name|Description|  
-|----------|-----------------|  
-|`Type`|Synonym for a pointer to the [SRWLOCK](../windows/srwlock-class.md) class.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[SRWLockSharedTraits::GetInvalidValue Method](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|Retrieves an **SRWLockSharedTraits** object that is always invalid.|  
-|[SRWLockSharedTraits::Unlock Method](../windows/srwlocksharedtraits-unlock-method.md)|Releases exclusive control of the specified `SRWLock` object.|  
-  
-## Inheritance Hierarchy  
- `SRWLockSharedTraits`  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+
+Describes common characteristics of the `SRWLock` class in shared lock mode.
+
+## Syntax
+
+```cpp
+struct SRWLockSharedTraits;
+```
+
+## Members
+
+### Public Typedefs
+
+|Name|Description|
+|----------|-----------------|
+|`Type`|Synonym for a pointer to the [SRWLOCK](../windows/srwlock-class.md) class.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[SRWLockSharedTraits::GetInvalidValue Method](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|Retrieves an **SRWLockSharedTraits** object that is always invalid.|
+|[SRWLockSharedTraits::Unlock Method](../windows/srwlocksharedtraits-unlock-method.md)|Releases exclusive control of the specified `SRWLock` object.|
+
+## Inheritance Hierarchy
+
+`SRWLockSharedTraits`
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

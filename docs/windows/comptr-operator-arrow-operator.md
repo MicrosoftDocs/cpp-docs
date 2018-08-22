@@ -13,24 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::operator-&gt; Operator
-Retrieves a pointer to the type specified by the current template parameter.  
-  
-## Syntax  
-  
-```cpp  
-WRL_NOTHROW Microsoft::WRL::Details::RemoveIUnknown<InterfaceType>* operator->() const;  
-```  
-  
-## Return Value  
- Pointer to the type specified by the current template type name.  
-  
-## Remarks  
- This helper function removes unnecessary overhead caused by using the STDMETHOD macro. This function makes `IUnknown` types **private** instead of **virtual**.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+
+Retrieves a pointer to the type specified by the current template parameter.
+
+## Syntax
+
+```cpp
+WRL_NOTHROW Microsoft::WRL::Details::RemoveIUnknown<InterfaceType>* operator->() const;
+```
+
+## Return Value
+
+Pointer to the type specified by the current template type name.
+
+## Remarks
+
+This helper function removes unnecessary overhead caused by using the STDMETHOD macro. This function makes `IUnknown` types **private** instead of **virtual**.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

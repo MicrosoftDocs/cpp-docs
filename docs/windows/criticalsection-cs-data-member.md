@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSection::cs_ Data Member
-Declares a critical section data member.  
-  
-## Syntax  
-  
-```cpp  
-CRITICAL_SECTION cs_;  
-```  
-  
-## Remarks  
- This data member is protected.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [CriticalSection Class](../windows/criticalsection-class.md)
+
+Declares a critical section data member.
+
+## Syntax
+
+```cpp
+CRITICAL_SECTION cs_;
+```
+
+## Remarks
+
+This data member is protected.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[CriticalSection Class](../windows/criticalsection-class.md)

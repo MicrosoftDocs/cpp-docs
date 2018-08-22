@@ -13,28 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GenericReleaseNotifier::GenericReleaseNotifier Constructor
-Initializes a new instance of the **Module::GenericReleaseNotifier** class.  
-  
-## Syntax  
-  
-```cpp  
-GenericReleaseNotifier(  
-   T callback,   
-   bool release  
-) throw() : ReleaseNotifier(release), callback_(callback);  
-```  
-  
-### Parameters  
- *callback*  
- A lambda, functor, or pointer-to-function event handler that can be invoked with the parentheses function operator (`()`).  
-  
- *release*  
- Specify **true** to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) method; otherwise, specify **false**.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::GenericReleaseNotifier Class](../windows/module-genericreleasenotifier-class.md)
+
+Initializes a new instance of the **Module::GenericReleaseNotifier** class.
+
+## Syntax
+
+```cpp
+GenericReleaseNotifier(
+   T callback,
+   bool release
+) throw() : ReleaseNotifier(release), callback_(callback);
+```
+
+### Parameters
+
+*callback*  
+A lambda, functor, or pointer-to-function event handler that can be invoked with the parentheses function operator (`()`).
+
+*release*  
+Specify **true** to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) method; otherwise, specify **false**.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::GenericReleaseNotifier Class](../windows/module-genericreleasenotifier-class.md)

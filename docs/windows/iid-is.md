@@ -13,54 +13,59 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # iid_is
-Specifies the IID of the COM interface pointed to by an interface pointer.  
-  
-## Syntax  
-  
-```cpp  
-[ iid_is(  
-   "expression"  
-) ]  
-```  
-  
-### Parameters  
- *expression*  
- A C language expression that specifies an IID of a COM interface pointed to by an interface pointer.  
-  
-## Remarks  
- The **iid_is** C++ attribute has the same functionality as the [iid_is](http://msdn.microsoft.com/library/windows/desktop/aa367044) MIDL attribute.  
-  
-## Example  
- The following code shows the use of **iid_is**:  
-  
-```cpp  
-// cpp_attr_ref_iid_is.cpp  
-// compile with: /LD  
-#include "wtypes.h"  
-#include "unknwn.h"  
-[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IFireTabCtrl : IDispatch  
-{  
-   [id(1)] HRESULT CreateInstance([in] REFIID riid,[out, iid_is("riid")]   
-   IUnknown ** ppvObject);  
-};  
-  
-[module(name="ATLFIRELib")];  
-```  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Interface parameter, data member|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
+
+Specifies the IID of the COM interface pointed to by an interface pointer.
+
+## Syntax
+
+```cpp
+[ iid_is(
+   "expression"
+) ]
+```
+
+### Parameters
+
+*expression*  
+A C language expression that specifies an IID of a COM interface pointed to by an interface pointer.
+
+## Remarks
+
+The **iid_is** C++ attribute has the same functionality as the [iid_is](http://msdn.microsoft.com/library/windows/desktop/aa367044) MIDL attribute.
+
+## Example
+
+The following code shows the use of **iid_is**:
+
+```cpp
+// cpp_attr_ref_iid_is.cpp
+// compile with: /LD
+#include "wtypes.h"
+#include "unknwn.h"
+[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]
+__interface IFireTabCtrl : IDispatch
+{
+   [id(1)] HRESULT CreateInstance([in] REFIID riid,[out, iid_is("riid")]
+   IUnknown ** ppvObject);
+};
+
+[module(name="ATLFIRELib")];
+```
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Interface parameter, data member|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Parameter Attributes](../windows/parameter-attributes.md)  

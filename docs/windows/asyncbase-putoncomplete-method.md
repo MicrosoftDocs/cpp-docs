@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::PutOnComplete Method
-Sets the address of the completion event handler to the specified value.  
-  
-## Syntax  
-  
-```cpp  
-STDMETHOD(  
-   PutOnComplete  
-)(TComplete* completeHandler);  
-```  
-  
-### Parameters  
- *completeHandler*  
- The address to which the completion event handler is set.  
-  
-## Return Value  
- S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Sets the address of the completion event handler to the specified value.
+
+## Syntax
+
+```cpp
+STDMETHOD(
+   PutOnComplete
+)(TComplete* completeHandler);
+```
+
+### Parameters
+
+*completeHandler*  
+The address to which the completion event handler is set.
+
+## Return Value
+
+S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

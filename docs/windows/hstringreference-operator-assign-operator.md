@@ -12,25 +12,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HStringReference::Operator= Operator
-Moves the value of another **HStringReference** object to the current **HStringReference** object.  
-  
-## Syntax  
-  
-```cpp  
+
+Moves the value of another **HStringReference** object to the current **HStringReference** object.
+
+## Syntax
+
+```cpp
 HStringReference& operator=(HStringReference&& other) throw()  
-```  
-  
-### Parameters  
- *other*  
- An existing **HStringReference** object.  
-  
-## Remarks  
- The value of the existing *other* object is copied to the current **HStringReference** object, and then the *other* object is destroyed.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HStringReference Class](../windows/hstringreference-class.md)
+```
+
+### Parameters
+
+*other*  
+An existing **HStringReference** object.
+
+## Remarks
+
+The value of the existing *other* object is copied to the current **HStringReference** object, and then the *other* object is destroyed.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HStringReference Class](../windows/hstringreference-class.md)

@@ -13,33 +13,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Microsoft::WRL::Wrappers::Details Namespace
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-namespace Microsoft::WRL::Wrappers::Details;  
-```  
-  
-## Members  
-  
-### Classes  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[SyncLockT Class](../windows/synclockt-class.md)|Represents a type that can take exclusive or shared ownership of a resource.|  
-|[SyncLockWithStatusT Class](../windows/synclockwithstatust-class.md)|Represents a type that can take exclusive or shared ownership of a resource.|  
-  
-### Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[CompareStringOrdinal Method](../windows/comparestringordinal-method.md)|Compares two specified `HSTRING` objects and returns an integer that indicates their relative position in a sort order.|  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::Details  
-  
-## See Also  
- [Microsoft::WRL::Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+namespace Microsoft::WRL::Wrappers::Details;
+```
+
+## Members
+
+### Classes
+
+|Name|Description|
+|----------|-----------------|
+|[SyncLockT Class](../windows/synclockt-class.md)|Represents a type that can take exclusive or shared ownership of a resource.|
+|[SyncLockWithStatusT Class](../windows/synclockwithstatust-class.md)|Represents a type that can take exclusive or shared ownership of a resource.|
+
+### Methods
+
+|Name|Description|
+|----------|-----------------|
+|[CompareStringOrdinal Method](../windows/comparestringordinal-method.md)|Compares two specified `HSTRING` objects and returns an integer that indicates their relative position in a sort order.|
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::Details
+
+## See Also
+
+[Microsoft::WRL::Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)

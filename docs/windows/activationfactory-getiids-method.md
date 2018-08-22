@@ -13,30 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::GetIids Method
-Retrieves an array of implemented interface IDs.  
-  
-## Syntax  
-  
-```cpp  
-STDMETHOD(  
-   GetIids  
-)(_Out_ ULONG *iidCount, _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);  
-```  
-  
-### Parameters  
- *iidCount*  
- When this operation completes, the number of interace IDs in the *iids* array.  
-  
- *iids*  
- When this operation completes, an array of implemented interface IDs.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that describes the failure. E_OUTOFMEMORY is a possible failure HRESULT.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ActivationFactory Class](../windows/activationfactory-class.md)
+
+Retrieves an array of implemented interface IDs.
+
+## Syntax
+
+```cpp
+STDMETHOD(
+   GetIids
+)(_Out_ ULONG *iidCount, _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);
+```
+
+### Parameters
+
+*iidCount*  
+When this operation completes, the number of interace IDs in the *iids* array.
+
+*iids*  
+When this operation completes, an array of implemented interface IDs.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that describes the failure. E_OUTOFMEMORY is a possible failure HRESULT.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ActivationFactory Class](../windows/activationfactory-class.md)

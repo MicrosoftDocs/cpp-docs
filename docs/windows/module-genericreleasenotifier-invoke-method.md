@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GenericReleaseNotifier::Invoke Method
-Calls the event handler associated with the current **Module::GenericReleaseNotifier** object.  
-  
-## Syntax  
-  
-```cpp  
-void Invoke();  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::GenericReleaseNotifier Class](../windows/module-genericreleasenotifier-class.md)
+
+Calls the event handler associated with the current **Module::GenericReleaseNotifier** object.
+
+## Syntax
+
+```cpp
+void Invoke();
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::GenericReleaseNotifier Class](../windows/module-genericreleasenotifier-class.md)

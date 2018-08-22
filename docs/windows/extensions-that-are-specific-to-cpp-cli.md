@@ -11,7 +11,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Extensions That Are Specific to C++/CLI
-The following language features, which are explained in this section of the documentation, apply only to C++/CLI.  
+The following language features, which are explained in this section of the documentation, apply only to C++/CLI.
   
  [__identifier (C++/CLI)](../windows/identifier-cpp-cli.md)  
   
@@ -25,5 +25,5 @@ The following language features, which are explained in this section of the docu
   
  [Variable Argument Lists (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)  
   
-## See Also  
+## See Also
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

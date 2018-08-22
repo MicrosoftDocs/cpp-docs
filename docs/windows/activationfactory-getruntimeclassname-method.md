@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::GetRuntimeClassName Method
-Gets the runtime class name of the object that the current **ActivationFactory** instantiates.  
-  
-## Syntax  
-  
-```cpp  
-STDMETHOD(  
-   GetRuntimeClassName  
-)(_Out_ HSTRING* runtimeName);  
-```  
-  
-### Parameters  
- *runtimeName*  
- When this operation completes, a handle to a string that contains the runtime class name of the object that the current **ActivationFactory** instantiates.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that describes the failure.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ActivationFactory Class](../windows/activationfactory-class.md)
+
+Gets the runtime class name of the object that the current **ActivationFactory** instantiates.
+
+## Syntax
+
+```cpp
+STDMETHOD(
+   GetRuntimeClassName
+)(_Out_ HSTRING* runtimeName);
+```
+
+### Parameters
+
+*runtimeName*  
+When this operation completes, a handle to a string that contains the runtime class name of the object that the current **ActivationFactory** instantiates.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that describes the failure.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ActivationFactory Class](../windows/activationfactory-class.md)
