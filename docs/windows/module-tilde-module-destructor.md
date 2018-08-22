@@ -13,18 +13,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::~Module Destructor
-Deinitializes the current instance of the **Module** class.  
-  
-## Syntax  
-  
-```cpp  
-virtual ~Module();  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## See Also
- [Module Class](../windows/module-class.md)
+
+Deinitializes the current instance of the **Module** class.
+
+## Syntax
+
+```cpp
+virtual ~Module();
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+[Module Class](../windows/module-class.md)

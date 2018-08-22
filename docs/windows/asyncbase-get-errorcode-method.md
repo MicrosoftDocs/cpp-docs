@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::get_ErrorCode Method
-Retrieves the error code for the current asynchronous operation.  
-  
-## Syntax  
-  
-```cpp  
-STDMETHOD(  
-   get_ErrorCode  
-)(HRESULT* errorCode) override;  
-```  
-  
-### Parameters  
- *errorCode*  
- The location where the current error code is stored.  
-  
-## Return Value  
- S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL if the current asynchronous operation is closed.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Retrieves the error code for the current asynchronous operation.
+
+## Syntax
+
+```cpp
+STDMETHOD(
+   get_ErrorCode
+)(HRESULT* errorCode) override;
+```
+
+### Parameters
+
+*errorCode*  
+The location where the current error code is stored.
+
+## Return Value
+
+S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL if the current asynchronous operation is closed.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

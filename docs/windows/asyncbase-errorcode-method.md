@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::ErrorCode Method
-Retrieves the error code for the current asynchronous operation.  
-  
-## Syntax  
-  
-```cpp  
-inline void ErrorCode(  
-   HRESULT *error  
-);  
-```  
-  
-### Parameters  
- *error*  
- The location where this operation stores the current error code.  
-  
-## Remarks  
- This operation is thread-safe.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Retrieves the error code for the current asynchronous operation.
+
+## Syntax
+
+```cpp
+inline void ErrorCode(
+   HRESULT *error
+);
+```
+
+### Parameters
+
+*error*  
+The location where this operation stores the current error code.
+
+## Remarks
+
+This operation is thread-safe.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

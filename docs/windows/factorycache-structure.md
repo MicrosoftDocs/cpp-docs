@@ -13,33 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FactoryCache Structure
-Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-struct FactoryCache;  
-```  
-  
-## Remarks  
- Contains the location of a class factory and a value that identifies a registered wrt or COM class object.  
-  
-## Members  
-  
-### Public Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[FactoryCache::cookie Data Member](../windows/factorycache-cookie-data-member.md)|Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.|  
-|[FactoryCache::factory Data Member](../windows/factorycache-factory-data-member.md)|Points to a Windows Runtime or COM class factory.|  
-  
-## Inheritance Hierarchy  
- `FactoryCache`  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the Windows Runtime C++ Template Library infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+struct FactoryCache;
+```
+
+## Remarks
+
+Contains the location of a class factory and a value that identifies a registered wrt or COM class object.
+
+## Members
+
+### Public Data Members
+
+|Name|Description|
+|----------|-----------------|
+|[FactoryCache::cookie Data Member](../windows/factorycache-cookie-data-member.md)|Contains a value that identifies a registered Windows Runtime or COM class object, and is later used to unregister the object.|
+|[FactoryCache::factory Data Member](../windows/factorycache-factory-data-member.md)|Points to a Windows Runtime or COM class factory.|
+
+## Inheritance Hierarchy
+
+`FactoryCache`
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

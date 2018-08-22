@@ -34,7 +34,7 @@ Before you start this walkthrough:
   
 - Make sure that line numbers are displayed in the text editor. For more information, see [How to: Display Line Numbers in the Editor](/visualstudio/ide/reference/how-to-display-line-numbers-in-the-editor).  
   
-- Make sure you are running [!INCLUDE[win8](../../build/reference/includes/win8_md.md)] or [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] to support debugging on the software emulator.  
+- Make sure you are running Windows 8 or Windows Server 2012 to support debugging on the software emulator.  
   
  [!INCLUDE[note_settings_general](../../mfc/includes/note_settings_general_md.md)]  
   

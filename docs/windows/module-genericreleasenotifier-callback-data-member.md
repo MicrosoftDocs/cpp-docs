@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::GenericReleaseNotifier::callback_ Data Member
-Holds the lambda, functor, or pointer-to-function event handler associated with the current `Module::GenericReleaseNotifier` object.  
-  
-## Syntax  
-  
-```cpp  
-T callback_;  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::GenericReleaseNotifier Class](../windows/module-genericreleasenotifier-class.md)
+
+Holds the lambda, functor, or pointer-to-function event handler associated with the current `Module::GenericReleaseNotifier` object.
+
+## Syntax
+
+```cpp
+T callback_;
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::GenericReleaseNotifier Class](../windows/module-genericreleasenotifier-class.md)

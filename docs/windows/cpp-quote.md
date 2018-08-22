@@ -13,43 +13,48 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # cpp_quote
-Emits the specified string, without the quote characters, into the generated .idl file.  
-  
-## Syntax  
-  
-```cpp  
-[ cpp_quote(  
-   "statement"  
-) ];  
-```  
-  
-### Parameters  
- *statement*  
- A C instruction.  
-  
-## Remarks  
- The **cpp_quote** C++ attribute is useful if you want to put a preprocessor directive in an .idl file.  
-  
- You can also use **cpp_quote** and generate an .h file as part of the MIDL compilation. For example, if you have a C++ header file that uses C++ IDL attributes but cannot use this file for some task, then you can compile it to create a MIDL-generated .h file, which you should be able to use.  
-  
- The **cpp_quote** attribute has the same functionality as the [cpp_quote](http://msdn.microsoft.com/library/windows/desktop/aa366765) MIDL attribute.  
-  
-## Example  
- See the example for [dual](../windows/dual.md) for an example use how to use **cpp_quote**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Anywhere|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
+
+Emits the specified string, without the quote characters, into the generated .idl file.
+
+## Syntax
+
+```cpp
+[ cpp_quote(
+   "statement"
+) ];
+```
+
+### Parameters
+
+*statement*  
+A C instruction.
+
+## Remarks
+
+The **cpp_quote** C++ attribute is useful if you want to put a preprocessor directive in an .idl file.
+
+You can also use **cpp_quote** and generate an .h file as part of the MIDL compilation. For example, if you have a C++ header file that uses C++ IDL attributes but cannot use this file for some task, then you can compile it to create a MIDL-generated .h file, which you should be able to use.
+
+The **cpp_quote** attribute has the same functionality as the [cpp_quote](http://msdn.microsoft.com/library/windows/desktop/aa366765) MIDL attribute.
+
+## Example
+
+See the example for [dual](../windows/dual.md) for an example use how to use **cpp_quote**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Anywhere|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  

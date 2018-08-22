@@ -16,7 +16,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Graphics Operations (C++/CLI)
-Demonstrates image manipulation using the [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)].  
+Demonstrates image manipulation using the Windows SDK.  
   
  The following topics demonstrate the use of the <xref:System.Drawing.Image?displayProperty=fullName> class to perform image manipulation.  
   

@@ -13,26 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # MutexTraits::Unlock Method
-Releases exclusive control of a shared resource.  
-  
-## Syntax  
-  
-```cpp  
-inline static void Unlock(  
-   _In_ Type h  
-);  
-```  
-  
-### Parameters  
- *h*  
- Handle to a mutex object.  
-  
-## Return Value  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [MutexTraits Structure](../windows/mutextraits-structure.md)
+
+Releases exclusive control of a shared resource.
+
+## Syntax
+
+```cpp
+inline static void Unlock(
+   _In_ Type h
+);
+```
+
+### Parameters
+
+*h*  
+Handle to a mutex object.
+
+## Return Value
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[MutexTraits Structure](../windows/mutextraits-structure.md)

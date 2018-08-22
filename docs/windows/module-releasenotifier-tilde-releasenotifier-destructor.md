@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::ReleaseNotifier::~ReleaseNotifier Destructor
-Deinitializes the current instance of the **Module::ReleaseNotifier** class.  
-  
-## Syntax  
-  
-```cpp  
-WRL_NOTHROW virtual ~ReleaseNotifier();  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::ReleaseNotifier Class](../windows/module-releasenotifier-class.md)
+
+Deinitializes the current instance of the **Module::ReleaseNotifier** class.
+
+## Syntax
+
+```cpp
+WRL_NOTHROW virtual ~ReleaseNotifier();
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::ReleaseNotifier Class](../windows/module-releasenotifier-class.md)

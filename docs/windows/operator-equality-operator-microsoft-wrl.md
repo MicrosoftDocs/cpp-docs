@@ -12,59 +12,64 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # operator== Operator (Microsoft::WRL)
-Equality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../windows/comptrref-class.md) objects.  
-  
-## Syntax  
-  
-```cpp  
-WRL_NOTHROW bool operator==(  
-   const ComPtr<T>& a,  
-   const ComPtr<U>& b  
-);  
-WRL_NOTHROW bool operator==(  
-   const ComPtr<T>& a,  
+
+Equality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../windows/comptrref-class.md) objects.
+
+## Syntax
+
+```cpp
+WRL_NOTHROW bool operator==(
+   const ComPtr<T>& a,
+   const ComPtr<U>& b
+);
+WRL_NOTHROW bool operator==(
+   const ComPtr<T>& a,
    decltype(__nullptr)  
-);  
-WRL_NOTHROW bool operator==(  
-   decltype(__nullptr),  
-   const ComPtr<T>& a  
-);  
-WRL_NOTHROW bool operator==(  
-   const Details::ComPtrRef<ComPtr<T>>& a,  
-   const Details::ComPtrRef<ComPtr<U>>& b  
-);  
-WRL_NOTHROW bool operator==(  
-   const Details::ComPtrRef<ComPtr<T>>& a,  
+);
+WRL_NOTHROW bool operator==(
+   decltype(__nullptr),
+   const ComPtr<T>& a
+);
+WRL_NOTHROW bool operator==(
+   const Details::ComPtrRef<ComPtr<T>>& a,
+   const Details::ComPtrRef<ComPtr<U>>& b
+);
+WRL_NOTHROW bool operator==(
+   const Details::ComPtrRef<ComPtr<T>>& a,
    decltype(__nullptr)  
-);  
-WRL_NOTHROW bool operator==(  
-   decltype(__nullptr),  
-   const Details::ComPtrRef<ComPtr<T>>& a  
-);  
-WRL_NOTHROW bool operator==(  
-   const Details::ComPtrRef<ComPtr<T>>& a,  
-   void* b  
-);  
-WRL_NOTHROW bool operator==(  
-   void* b,  
-   const Details::ComPtrRef<ComPtr<T>>& a  
-);  
-```  
-  
-### Parameters  
- *a*  
- The left object.  
-  
- *b*  
- The right object.  
-  
-## Return Value  
- **true** if the objects are equal; otherwise, **false**.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+);
+WRL_NOTHROW bool operator==(
+   decltype(__nullptr),
+   const Details::ComPtrRef<ComPtr<T>>& a
+);
+WRL_NOTHROW bool operator==(
+   const Details::ComPtrRef<ComPtr<T>>& a,
+   void* b
+);
+WRL_NOTHROW bool operator==(
+   void* b,
+   const Details::ComPtrRef<ComPtr<T>>& a
+);
+```
+
+### Parameters
+
+*a*  
+The left object.
+
+*b*  
+The right object.
+
+## Return Value
+
+**true** if the objects are equal; otherwise, **false**.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # _InterlockedExchangeAdd Intrinsic Functions
 **Microsoft Specific**  
   
- Provide compiler intrinsic support for the Win32 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [_InterlockedExchangeAdd Intrinsic Functions](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) function.  
+ Provide compiler intrinsic support for the Win32 Windows SDK [_InterlockedExchangeAdd Intrinsic Functions](../intrinsics/interlockedexchangeadd-intrinsic-functions.md) function.  
   
 ## Syntax  
   

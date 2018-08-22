@@ -38,7 +38,7 @@ ActivatableClassWithFactoryEx(
 ### Parameters
 
 *className*  
-Name of the class to create.  
+Name of the class to create.
 
 *factory*  
 Factory that will create an instance of the specified class.
@@ -57,4 +57,5 @@ Do not use these macros with classic COM unless you use the `#undef` directive t
 **Namespace:** Microsoft::WRL
 
 ## See Also
+
 [Module Class](../windows/module-class.md)

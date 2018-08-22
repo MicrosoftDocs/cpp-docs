@@ -27,6 +27,7 @@ STDMETHOD( CreateInstance )(
 ```
 
 ### Parameters
+
 *pUnkOuter*  
 Must be **nullptr**; otherwise, the return value is CLASS_E_NOAGGREGATION.
 
@@ -53,4 +54,5 @@ If `__WRL_STRICT__` is defined, an assert error is emitted if the base class spe
 **Namespace:** Microsoft::WRL
 
 ## See Also
- [SimpleClassFactory Class](../windows/simpleclassfactory-class.md)
+
+[SimpleClassFactory Class](../windows/simpleclassfactory-class.md)

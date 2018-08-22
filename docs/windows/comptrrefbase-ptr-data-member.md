@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtrRefBase::ptr_ Data Member
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-T* ptr_;  
-```  
-  
-## Remarks  
- Pointer to the type specified by the current template parameter.  
-  
-## Remarks  
- **ptr_** is the protected data member.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ComPtrRefBase Class](../windows/comptrrefbase-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+T* ptr_;
+```
+
+## Remarks
+
+Pointer to the type specified by the current template parameter.
+
+## Remarks
+
+**ptr_** is the protected data member.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ComPtrRefBase Class](../windows/comptrrefbase-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

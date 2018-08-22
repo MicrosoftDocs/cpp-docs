@@ -18,7 +18,7 @@ Apps built by using Visual Studio can be targeted to various platforms, as follo
 |Operating System|x86|x64|ARM|
 |----------------------|---------|---------|---------|
 |Windows XP|X*|X*||
-|[!INCLUDE[WinXPSvr](build/includes/winxpsvr_md.md)]|X*|X*||
+|Windows Server 2003|X*|X*||
 |Windows Vista|X|X||
 |Windows Server 2008|X|X||
 |Windows 7|X|X||
@@ -30,7 +30,7 @@ Apps built by using Visual Studio can be targeted to various platforms, as follo
 |iOS **|X|X|X|
 |Linux ***|X|X|X|
 
-\* You can use the Windows XP platform toolset included in Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, and Visual Studio 2012 Update 1 or later to build Windows XP and [!INCLUDE[WinXPSvr](build/includes/winxpsvr_md.md)] projects. For information on how to use this platform toolset, see [Configuring Programs for Windows XP](build/configuring-programs-for-windows-xp.md). For additional information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](build/how-to-modify-the-target-framework-and-platform-toolset.md).
+\* You can use the Windows XP platform toolset included in Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, and Visual Studio 2012 Update 1 or later to build Windows XP and Windows Server 2003 projects. For information on how to use this platform toolset, see [Configuring Programs for Windows XP](build/configuring-programs-for-windows-xp.md). For additional information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](build/how-to-modify-the-target-framework-and-platform-toolset.md).
 
 \*\* You can install the **Mobile development with C++** workload in the Visual Studio installer (or the optional **Visual C++ for Cross Platform Mobile Development** component in Visual Studio 2015 setup) to target iOS or Android platforms. For instructions, see [Install Visual C++ for Cross-Platform Mobile Development](/visualstudio/cross-platform/install-visual-cpp-for-cross-platform-mobile-development). To build iOS code, you must have a Mac computer and meet other requirements. For a list of prerequisites and installation instructions, see [Install And Configure Tools to Build using iOS](/visualstudio/cross-platform/install-and-configure-tools-to-build-using-ios). You can build x86 or ARM code to match the target hardware. Use x86 configurations to build for the iOS simulator, Microsoft Visual Studio Emulator for Android, and some Android devices. Use ARM configurations to build for iOS devices and most Android devices.
 

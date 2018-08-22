@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory::AddRef Method
-Increments the reference count for the current **ClassFactory** object.  
-  
-## Syntax  
-  
-```cpp  
-STDMETHOD_(  
-   ULONG,  
-   AddRef  
-)();  
-```  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that describes the failure.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ClassFactory Class](../windows/classfactory-class.md)
+
+Increments the reference count for the current **ClassFactory** object.
+
+## Syntax
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that describes the failure.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ClassFactory Class](../windows/classfactory-class.md)

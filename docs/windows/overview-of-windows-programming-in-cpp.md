@@ -16,14 +16,14 @@ You can use Visual C++ to write many kinds of programs that run on a Windows PC 
 - efficient in memory requirements
 - economical in power consumption 
 - able to take full advantage of multicore and many-core devices
-- able to do general computing on the graphics processing unit (GPGPU)   
+- able to do general computing on the graphics processing unit (GPGPU)  
 - able to take advantage of other recent advances in hardware.
 
 There are several broad categories of Windows apps that you can develop with Visual C++. These categories have different programming models, or app models, which have been introduced over the years. Each model uses different libraries and APIs to provide access to the platform and create user interfaces such as windows and dialog boxes. The C++ standard library as well as third-party libraries can be used in any of these categories, with a few restrictions for UWP.
 
 - [Windows Universal apps](#BK_WindowsUniversal). The third category of Windows apps was introduced with Windows 8, and support for this category of apps continues in Windows 10. These apps are frequently referred to as just "Windows apps" and they include desktop and mobile apps that target a variety of devices. You can write these apps in C++/CX, a dialect of C++ that includes support for Windows Runtime development, or in standard C++ with COM using the Windows Runtime Library (WRL). These apps were originally designed to run full-screen, although in Windows 10 users have the option of running them in a desktop window. These apps are touch-oriented, but it is easy to use the mouse to operate if users prefer or if a touch screen is not available. These apps are distributed from the Microsoft Store, a fact which led to them being called "Store" apps.
 
-UWP apps are able to run on all Windows 10 devices such as tablets and mobile phones, as well as on the desktop. On the desktop, they are able to run as a desktop window, instead of always running full-screen. These apps can also run on the Xbox, and on future devices.  UWP apps run on the Windows Runtime, which provides user interface elements, services, and an interface to the diverse hardware devices that are supported on Windows.  
+UWP apps are able to run on all Windows 10 devices such as tablets and mobile phones, as well as on the desktop. On the desktop, they are able to run as a desktop window, instead of always running full-screen. These apps can also run on the Xbox, and on future devices.  UWP apps run on the Windows Runtime, which provides user interface elements, services, and an interface to the diverse hardware devices that are supported on Windows.
 
 You can write UWP apps in C++/CX, a dialect of C++, you can use the [C++/WinRT library](https://moderncpp.com/)for some scenarios. UWP apps compile to native code and have a XAML user interface, or use DirectX. Windows Runtime components that are written in native code that UWP apps written in other languages can consume. For more information, see [Create a Universal Windows Platform app in C++](http://go.microsoft.com/fwlink/?LinkID=534976), [Create your first UWP game using DirectX](http://go.microsoft.com/fwlink/p/?LinkId=244656), and [Creating Windows Runtime components in C++](http://go.microsoft.com/fwlink/p/?LinkId=244658).
 
@@ -74,7 +74,7 @@ DirectX games can run on the PC or Xbox. For more information, see [DirectX Deve
 
 ## SDKs, libraries, and header files
 
-Visual C++ includes the C Runtime Library (CRT), the C++ Standard Library, and other Microsoft-specific libraries. The include folders that contain header files for these libraries are located either in the Visual Studio installation directory under the \VC\ folder, or in the case of the CRT, in the Windows SDK installation folder.   
+Visual C++ includes the C Runtime Library (CRT), the C++ Standard Library, and other Microsoft-specific libraries. The include folders that contain header files for these libraries are located either in the Visual Studio installation directory under the \VC\ folder, or in the case of the CRT, in the Windows SDK installation folder.
 
 You can use the [Vcpkg package manager](../vcpkg.md) to conveniently install hundreds of third-party open-source libraries for Windows.
 

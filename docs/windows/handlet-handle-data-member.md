@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::handle_ Data Member
-Contains the handle that is represented by the **HandleT** object.  
-  
-## Syntax  
-  
-```cpp  
-typename HandleTraits::Type handle_;  
-```  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+
+Contains the handle that is represented by the **HandleT** object.
+
+## Syntax
+
+```cpp
+typename HandleTraits::Type handle_;
+```
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::RuntimeClass Constructor
-Initializes the current instance of the **RuntimeClass** class.  
-  
-## Syntax  
-  
-```cpp  
-RuntimeClass();  
-```  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [RuntimeClass Class](../windows/runtimeclass-class.md)
+
+Initializes the current instance of the **RuntimeClass** class.
+
+## Syntax
+
+```cpp
+RuntimeClass();
+```
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[RuntimeClass Class](../windows/runtimeclass-class.md)

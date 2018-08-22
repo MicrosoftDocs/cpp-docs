@@ -12,26 +12,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Deleting an Entry From an Accelerator Table
-### To delete an entry from an accelerator table  
-  
-1.  Open the accelerator table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).  
-  
-    > [!NOTE]
-    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
-  
-2.  Select the entry you want to delete. (Hold down the **Ctrl** or **Shift** key while clicking to select multiple entries.)  
-  
-3.  Right-click and choose **Delete** from the shortcut menu (or select **Delete** from the **Edit** menu).  
-  
- \- or -  
-  
--   Press the **Delete** key.  
-  
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
-  
-## Requirements  
- Win32  
-  
-## See Also  
- [Editing Accelerator Tables](../windows/editing-accelerator-tables.md)   
- [Accelerator Editor](../windows/accelerator-editor.md)
+
+### To delete an entry from an accelerator table
+
+1. Open the accelerator table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
+
+   > [!NOTE]
+   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+
+2. Select the entry you want to delete. (Hold down the **Ctrl** or **Shift** key while clicking to select multiple entries.)
+
+3. Right-click and choose **Delete** from the shortcut menu (or select **Delete** from the **Edit** menu).
+
+\- or -
+
+- Press the **Delete** key.
+
+For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
+
+## Requirements
+
+Win32
+
+## See Also
+
+[Editing Accelerator Tables](../windows/editing-accelerator-tables.md)  
+[Accelerator Editor](../windows/accelerator-editor.md)

@@ -25,6 +25,7 @@ STDMETHOD( GetRuntimeClassName )(
 ```
 
 ### Parameters
+
 *runtimeName*  
 When this operation completes, the runtime class name.
 
@@ -43,4 +44,5 @@ An assert error is emitted if `__WRL_STRICT__` or `__WRL_FORCE_INSPECTABLE_CLASS
 **Namespace:** Microsoft::WRL
 
 ## See Also
- [RuntimeClass Class](../windows/runtimeclass-class.md)
+
+[RuntimeClass Class](../windows/runtimeclass-class.md)

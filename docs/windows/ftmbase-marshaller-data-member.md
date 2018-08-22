@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::marshaller_ Data Member
-Holds a reference to the free threaded marshaler.  
-  
-## Syntax  
-  
-```cpp  
-Microsoft::WRL::ComPtr<IMarshal> marshaller_; ;  
-```  
-  
-## Requirements  
- **Header:** ftm.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [FtmBase Class](../windows/ftmbase-class.md)
+
+Holds a reference to the free threaded marshaler.
+
+## Syntax
+
+```cpp
+Microsoft::WRL::ComPtr<IMarshal> marshaller_; ;
+```
+
+## Requirements
+
+**Header:** ftm.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[FtmBase Class](../windows/ftmbase-class.md)

@@ -12,11 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module Attributes
-The following attribute can only be applied to the [module](../windows/module-cpp.md) attribute.  
+The following attribute can only be applied to the [module](../windows/module-cpp.md) attribute.
   
-|Attribute|Description|  
-|---------------|-----------------|  
-|[helpstringdll](../windows/helpstringdll.md)|Specifies the name of the DLL to use to perform document string lookup (localization).|  
+|Attribute|Description|
+|---------------|-----------------|
+|[helpstringdll](../windows/helpstringdll.md)|Specifies the name of the DLL to use to perform document string lookup (localization).|
   
-## See Also  
+## See Also
  [Attributes by Usage](../windows/attributes-by-usage.md)

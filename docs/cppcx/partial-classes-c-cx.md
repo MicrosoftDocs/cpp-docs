@@ -5,8 +5,8 @@ ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Partial classes (C++/CX)

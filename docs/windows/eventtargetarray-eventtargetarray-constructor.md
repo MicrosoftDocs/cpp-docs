@@ -13,43 +13,48 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTargetArray::EventTargetArray Constructor
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-EventTargetArray(  
-   _Out_ HRESULT* hr,  
-   size_t items  
-);  
-```  
-  
-### Parameters  
- *hr*  
- After this constructor operations, parameter *hr* indicates whether allocation of the array succeeded or failed. The following table lists the possible values for *hr*.  
-  
- S_OK  
- The operation succeeded.  
-  
- E_OUTOFMEMORY  
- Memory couldn't be allocated for the array.  
-  
- S_FALSE  
- Parameter *items* is less than or equal to zero.  
-  
- *items*  
- The number of array elements to allocate.  
-  
-## Remarks  
- Initializes a new instance of the **EventTargetArray** class.  
-  
- **EventTargetArray** is used to keep an array of event handlers in an `EventSource` object.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [EventTargetArray Class](../windows/eventtargetarray-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+EventTargetArray(
+   _Out_ HRESULT* hr,
+   size_t items
+);
+```
+
+### Parameters
+
+*hr*  
+After this constructor operations, parameter *hr* indicates whether allocation of the array succeeded or failed. The following table lists the possible values for *hr*.
+
+S_OK
+ The operation succeeded.
+
+E_OUTOFMEMORY
+ Memory couldn't be allocated for the array.
+
+S_FALSE
+ Parameter *items* is less than or equal to zero.
+
+*items*  
+The number of array elements to allocate.
+
+## Remarks
+
+Initializes a new instance of the **EventTargetArray** class.
+
+**EventTargetArray** is used to keep an array of event handlers in an `EventSource` object.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[EventTargetArray Class](../windows/eventtargetarray-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

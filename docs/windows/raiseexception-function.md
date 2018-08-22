@@ -13,32 +13,37 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RaiseException Function
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-inline void __declspec(noreturn)   RaiseException(  
-      HRESULT hr,   
-      DWORD dwExceptionFlags = EXCEPTION_NONCONTINUABLE);  
-```  
-  
-### Parameters  
- *hr*  
- The exception code of the exception being raised; that is, the HRESULT of a failed operation.  
-  
- *dwExceptionFlags*  
- A flag that indicates a continuable exception (the flag value is zero), or noncontinuable exception (flag value is nonzero). By default, the exception is noncontinuable.  
-  
-## Remarks  
- Raises an exception in the calling thread.  
-  
- For more information, see the Windows `RaiseException` function.  
-  
-## Requirements  
- **Header:** internal.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+inline void __declspec(noreturn)   RaiseException(
+      HRESULT hr,
+      DWORD dwExceptionFlags = EXCEPTION_NONCONTINUABLE);
+```
+
+### Parameters
+
+*hr*  
+The exception code of the exception being raised; that is, the HRESULT of a failed operation.
+
+*dwExceptionFlags*  
+A flag that indicates a continuable exception (the flag value is zero), or noncontinuable exception (flag value is nonzero). By default, the exception is noncontinuable.
+
+## Remarks
+
+Raises an exception in the calling thread.
+
+For more information, see the Windows `RaiseException` function.
+
+## Requirements
+
+**Header:** internal.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

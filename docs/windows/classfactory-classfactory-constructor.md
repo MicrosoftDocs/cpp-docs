@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ClassFactory::ClassFactory Constructor
-## Syntax  
-  
-```cpp  
-WRL_NOTHROW ClassFactory();  
-```  
-  
-## Return Value  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ClassFactory Class](../windows/classfactory-class.md)
+
+## Syntax
+
+```cpp
+WRL_NOTHROW ClassFactory();
+```
+
+## Return Value
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ClassFactory Class](../windows/classfactory-class.md)

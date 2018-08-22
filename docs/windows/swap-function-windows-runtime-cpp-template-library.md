@@ -12,33 +12,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Swap Function (Windows Runtime C++ Template Library)
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-WRL_NOTHROW inline void Swap(  
-   _Inout_ T& left,  
-   _Inout_ T& right  
-);  
-```  
-  
-### Parameters  
- *left*  
- The first argument.  
-  
- *right*  
- The second argument.  
-  
-## Return Value  
-  
-## Remarks  
- Exchanges the values of the two specified arguments.  
-  
-## Requirements  
- **Header:** internal.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+WRL_NOTHROW inline void Swap(
+   _Inout_ T& left,
+   _Inout_ T& right
+);
+```
+
+### Parameters
+
+*left*  
+The first argument.
+
+*right*  
+The second argument.
+
+## Return Value
+
+## Remarks
+
+Exchanges the values of the two specified arguments.
+
+## Requirements
+
+**Header:** internal.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

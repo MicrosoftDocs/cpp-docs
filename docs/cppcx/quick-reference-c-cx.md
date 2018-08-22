@@ -5,8 +5,8 @@ ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: ba457195-26e5-43aa-b99d-24a871e550f4
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Quick Reference (C++/CX)

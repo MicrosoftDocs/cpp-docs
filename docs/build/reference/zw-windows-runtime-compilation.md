@@ -13,7 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /ZW (Windows Runtime Compilation)
-Compiles source code to support [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) for the creation of Universal Windows Platform (UWP) apps.  
+Compiles source code to support Visual C++ component extensions C++/CX for the creation of Universal Windows Platform (UWP) apps.  
   
  When you use **/ZW** to compile, always specify **/EHsc** as well.  
   

@@ -13,18 +13,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClassFlags::value Constant
-A field that contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.  
+A field that contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.
   
-## Syntax  
+## Syntax
   
-```cpp  
-static const unsigned int value = flags;  
-```  
+```cpp
+static const unsigned int value = flags;
+```
   
-## Requirements  
- **Header:** implements.h  
+## Requirements
+ **Header:** implements.h
   
- **Namespace:** Microsoft::WRL  
+ **Namespace:** Microsoft::WRL
   
-## See Also  
+## See Also
  [RuntimeClassFlags Structure](../windows/runtimeclassflags-structure.md)
