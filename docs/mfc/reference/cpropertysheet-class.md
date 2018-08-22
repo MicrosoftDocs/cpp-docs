@@ -17,9 +17,9 @@ Represents property sheets, also known as tab dialog boxes.
   
 ## Syntax  
   
-```  
+```
 class CPropertySheet : public CWnd  
-```  
+```
   
 ## Members  
   
