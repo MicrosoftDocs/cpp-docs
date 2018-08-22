@@ -18,12 +18,12 @@ Attempts to acquire a **SRWLock** object in exclusive mode for the current or sp
 
 ## Syntax
 
-```cpp  
+```cpp
 SyncLockExclusive TryLockExclusive();
 
-static SyncLockExclusive TryLockExclusive(  
-   _In_ SRWLOCK* lock  
-);  
+static SyncLockExclusive TryLockExclusive(
+   _In_ SRWLOCK* lock
+);
 ```
 
 ### Parameters

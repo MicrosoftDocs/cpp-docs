@@ -18,10 +18,10 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-void FillArrayWithIid(  
-   _Inout_ unsigned long *index,   
-   _Inout_ IID* iids) throw();  
+```cpp
+void FillArrayWithIid(
+   _Inout_ unsigned long *index,
+   _Inout_ IID* iids) throw();
 ```
 
 ### Parameters

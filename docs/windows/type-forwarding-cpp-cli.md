@@ -33,9 +33,9 @@ The following code example demonstrates how to use type forwarding.
 
 ### Syntax
 
-```  
-#using "new.dll"  
-[assembly:TypeForwardedTo(type::typeid)];  
+```
+#using "new.dll"
+[assembly:TypeForwardedTo(type::typeid)];
 ```
 
 ### Parameters
@@ -86,9 +86,9 @@ So, if a source code file that is used to build assembly A.dll contains a type d
 
 3. Delete the `MyClass` type definition from the source code used to build A.dll, and replace it with the following:
 
-    ```  
-    #using "B.dll"  
-    [assembly:TypeForwardedTo(MyClass::typeid)];  
+    ```
+    #using "B.dll"
+    [assembly:TypeForwardedTo(MyClass::typeid)];
     ```
 
 4. Build assembly A.dll.

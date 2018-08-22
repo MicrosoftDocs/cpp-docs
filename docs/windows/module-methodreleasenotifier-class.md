@@ -18,9 +18,9 @@ Invokes an event handler when the last object in the current module is released.
 
 ## Syntax
 
-```cpp  
-template<typename T>  
-class MethodReleaseNotifier : public ReleaseNotifier;  
+```cpp
+template<typename T>
+class MethodReleaseNotifier : public ReleaseNotifier;
 ```
 
 ### Parameters
@@ -61,5 +61,5 @@ The type of the object whose member function is the event handler.
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

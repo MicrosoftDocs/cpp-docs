@@ -17,9 +17,9 @@ Associates the specified **HString** object with the current **HString** object.
 
 ## Syntax
 
-```cpp  
-void Attach(  
-       HSTRING hstr  
+```cpp
+void Attach(
+       HSTRING hstr
        ) throw()  
 ```
 

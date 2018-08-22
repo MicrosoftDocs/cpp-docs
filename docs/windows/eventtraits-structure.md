@@ -18,8 +18,8 @@ Defines characteristics of an `Event` class handle.
 
 ## Syntax
 
-```cpp  
-struct EventTraits : HANDLENullTraits;  
+```cpp
+struct EventTraits : HANDLENullTraits;
 ```
 
 ## Members

@@ -19,7 +19,7 @@ The control selected first is the dominant control.
 
 1. Hold down the **Ctrl** key and click the control you want to use to influence the size or location of other controls *first*.
 
-     **Note** The sizing handles of the dominant control are solid while the handles of subordinate controls are hollow. All further resizing or alignment is based on the dominant control.
+   **Note** The sizing handles of the dominant control are solid while the handles of subordinate controls are hollow. All further resizing or alignment is based on the dominant control.
 
 ### To change the dominant control
 

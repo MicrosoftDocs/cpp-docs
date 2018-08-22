@@ -34,8 +34,8 @@ The following syntax example demonstrates an interior pointer.
 
 ### Syntax
 
-```cpp  
-cli::interior_ptr<cv_qualifier type> var = &initializer;  
+```cpp
+cli::interior_ptr<cv_qualifier type> var = &initializer;
 ```
 
 ### Parameters
@@ -86,36 +86,36 @@ Compiler option: `/clr`
 
 The following sample shows how to declare and use an interior pointer into a reference type.
 
-```cpp  
-// interior_ptr.cpp  
-// compile with: /clr  
+```cpp
+// interior_ptr.cpp
+// compile with: /clr
 using namespace System;
 
-ref class MyClass {  
-public:  
-   int data;  
+ref class MyClass {
+public:
+   int data;
 };
 
-int main() {  
-   MyClass ^ h_MyClass = gcnew MyClass;  
-   h_MyClass->data = 1;  
+int main() {
+   MyClass ^ h_MyClass = gcnew MyClass;
+   h_MyClass->data = 1;
    Console::WriteLine(h_MyClass->data);
 
-   interior_ptr<int> p = &(h_MyClass->data);  
-   *p = 2;  
+   interior_ptr<int> p = &(h_MyClass->data);
+   *p = 2;
    Console::WriteLine(h_MyClass->data);
 
-   // alternatively  
-   interior_ptr<MyClass ^> p2 = &h_MyClass;  
-   (*p2)->data = 3;  
-   Console::WriteLine((*p2)->data);  
-}  
+   // alternatively
+   interior_ptr<MyClass ^> p2 = &h_MyClass;
+   (*p2)->data = 3;
+   Console::WriteLine((*p2)->data);
+}
 ```
 
-```Output  
-1  
-2  
-3  
+```Output
+1
+2
+3
 ```
 
 ## See Also

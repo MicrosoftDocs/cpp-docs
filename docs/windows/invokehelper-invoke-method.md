@@ -18,37 +18,37 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   Invoke  
-)();  
-STDMETHOD(  
-   Invoke  
-)(typename Traits;  
-STDMETHOD(  
-   Invoke  
-)( typename Traits;  
-STDMETHOD(  
-   Invoke  
-)( typename Traits;  
-STDMETHOD(  
-   Invoke  
-)( typename Traits;  
-STDMETHOD(  
-   Invoke  
-)( typename Traits;  
-STDMETHOD(  
-   Invoke  
-)( typename Traits;  
-STDMETHOD(  
-   Invoke  
-)( typename Traits;  
-STDMETHOD(  
-   Invoke  
-)( typename Traits;  
-STDMETHOD(  
-   Invoke  
-)( typename Traits;  
+```cpp
+STDMETHOD(
+   Invoke
+)();
+STDMETHOD(
+   Invoke
+)(typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
+STDMETHOD(
+   Invoke
+)( typename Traits;
 ```
 
 ### Parameters

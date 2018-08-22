@@ -18,8 +18,8 @@ Specializes a **CriticalSection** template so that the template is always invali
 
 ## Syntax
 
-```cpp  
-inline static Type GetInvalidValue();  
+```cpp
+inline static Type GetInvalidValue();
 ```
 
 ## Return Value

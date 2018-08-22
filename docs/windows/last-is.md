@@ -18,10 +18,10 @@ Specifies the index of the last array element to be transmitted.
 
 ## Syntax
 
-```cpp  
-[ last_is(  
-   "expression"  
-) ]  
+```cpp
+[ last_is(
+   "expression"
+) ]
 ```
 
 ### Parameters
@@ -48,7 +48,7 @@ See [first_is](../windows/first-is.md) for an example of how to specify a sectio
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -58,4 +58,4 @@ See [first_is](../windows/first-is.md) for an example of how to specify a sectio
 [first_is](../windows/first-is.md)  
 [max_is](../windows/max-is.md)  
 [length_is](../windows/length-is.md)  
-[size_is](../windows/size-is.md)   
+[size_is](../windows/size-is.md)  

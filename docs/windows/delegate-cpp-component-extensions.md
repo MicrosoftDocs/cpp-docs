@@ -32,13 +32,13 @@ C++/CX supports delegates with the following syntax.
 
 ### Syntax
 
-```cpp  
-access  
-delegate  
-return-type  
-delegate-type-identifier  
-(  
-[ parameters ]  
+```cpp
+access
+delegate
+return-type
+delegate-type-identifier
+(
+[ parameters ]
 )  
 ```
 
@@ -70,10 +70,10 @@ The common language runtime supports delegates with the following syntax.
 
 ### Syntax
 
-```cpp  
-access  
-delegate  
-function_declaration  
+```cpp
+access
+delegate
+function_declaration
 ```
 
 ### Parameters
@@ -128,64 +128,64 @@ Compiler option: `/clr`
 
 The following example shows how to declare, initialize, and invoke delegates.
 
-```cpp  
-// mcppv2_delegate.cpp  
-// compile with: /clr  
+```cpp
+// mcppv2_delegate.cpp
+// compile with: /clr
 using namespace System;
 
-// declare a delegate  
+// declare a delegate
 public delegate void MyDel(int i);
 
-ref class A {  
-public:  
-   void func1(int i) {  
-      Console::WriteLine("in func1 {0}", i);  
+ref class A {
+public:
+   void func1(int i) {
+      Console::WriteLine("in func1 {0}", i);
    }
 
-   void func2(int i) {  
-      Console::WriteLine("in func2 {0}", i);  
+   void func2(int i) {
+      Console::WriteLine("in func2 {0}", i);
    }
 
-   static void func3(int i) {  
-      Console::WriteLine("in static func3 {0}", i);  
-   }  
+   static void func3(int i) {
+      Console::WriteLine("in static func3 {0}", i);
+   }
 };
 
-int main () {  
+int main () {
    A ^ a = gcnew A;
 
-   // declare a delegate instance  
+   // declare a delegate instance
    MyDel^ DelInst;
 
-   // test if delegate is initialized  
+   // test if delegate is initialized
    if (DelInst)  
       DelInst(7);
 
-   // assigning to delegate  
+   // assigning to delegate
    DelInst = gcnew MyDel(a, &A::func1);
 
-   // invoke delegate  
+   // invoke delegate
    if (DelInst)  
       DelInst(8);
 
-   // add a function  
+   // add a function
    DelInst += gcnew MyDel(a, &A::func2);
 
    DelInst(9);
 
-   // remove a function  
+   // remove a function
    DelInst -= gcnew MyDel(a, &A::func1);
 
-   // invoke delegate with Invoke  
+   // invoke delegate with Invoke
    DelInst->Invoke(10);
 
-   // make delegate to static function  
-   MyDel ^ StaticDelInst = gcnew MyDel(&A::func3);  
-   StaticDelInst(11);  
-}  
+   // make delegate to static function
+   MyDel ^ StaticDelInst = gcnew MyDel(&A::func3);
+   StaticDelInst(11);
+}
 ```
 
-```Output  
+```Output
 in func1 8
 
 in func1 9
@@ -194,7 +194,7 @@ in func2 9
 
 in func2 10
 
-in static func3 11  
+in static func3 11
 ```
 
 ## See Also

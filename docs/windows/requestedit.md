@@ -18,8 +18,8 @@ Indicates that the property supports the `OnRequestEdit` notification.
 
 ## Syntax
 
-```cpp  
-[requestedit]  
+```cpp
+[requestedit]
 ```
 
 ## Remarks
@@ -41,7 +41,7 @@ See the example for [bindable](../windows/bindable.md) for a sample use of **req
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -50,4 +50,4 @@ See the example for [bindable](../windows/bindable.md) for a sample use of **req
 [Data Member Attributes](../windows/data-member-attributes.md)  
 [defaultbind](../windows/defaultbind.md)  
 [displaybind](../windows/displaybind.md)  
-[immediatebind](../windows/immediatebind.md)   
+[immediatebind](../windows/immediatebind.md)  

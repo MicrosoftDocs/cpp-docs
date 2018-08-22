@@ -18,10 +18,10 @@ Increments or decrements the number of underlying objects that are tracked by th
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   LockServer  
-)(BOOL fLock);  
+```cpp
+STDMETHOD(
+   LockServer
+)(BOOL fLock);
 ```
 
 ### Parameters

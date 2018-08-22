@@ -34,7 +34,7 @@ You can also change the size of a control by snapping the control to guides or m
 
 1. Choose **Size to Content** from the **Format** menu.
 
- \- or -
+\- or -
 
 - Right-click the control and choose **Size to Content** from the shortcut menu.
 

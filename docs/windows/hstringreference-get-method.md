@@ -17,7 +17,7 @@ Retrieves the value of the underlying HSTRING handle.
 
 ## Syntax
 
-```cpp  
+```cpp
 HSTRING Get() const throw()  
 ```
 

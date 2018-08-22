@@ -24,12 +24,12 @@ C++/CX and C++/CLI support **public enum class** and **private enum class** whic
 
 ### Syntax
 
-```cpp  
-      access  
-      enum class  
-      enumeration-identifier  
-      [:underlying-type] { enumerator-list } [var];  
-accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [var];  
+```cpp
+      access
+      enum class
+      enumeration-identifier
+      [:underlying-type] { enumerator-list } [var];
+accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [var];
 ```
 
 ### Parameters
@@ -73,14 +73,14 @@ Compiler option: `/ZW`
 
 ### Syntax
 
-```cpp  
-      access  
-      enum class  
-      name [:type] { enumerator-list } var;  
-accessenum structname [:type] { enumerator-list } var;  
+```cpp
+      access
+      enum class
+      name [:type] { enumerator-list } var;
+accessenum structname [:type] { enumerator-list } var;
 ```
 
- ### Parameters
+### Parameters
 
 *access*  
 The accessibility of the enum. Can be either **public** or **private**.
@@ -105,31 +105,31 @@ There are two types of enums: managed or C++/CX and standard.
 
 A managed or C++/CX enum might be defined as follows,
 
-```cpp  
-public enum class day {sun, mon };  
+```cpp
+public enum class day {sun, mon };
 ```
 
 and is semantically equivalent to:
 
-```cpp  
-ref class day {  
-public:  
-   static const int sun = 0;  
-   static const int mon = 1;  
-};  
+```cpp
+ref class day {
+public:
+   static const int sun = 0;
+   static const int mon = 1;
+};
 ```
 
 A standard enum might be defined as follows:
 
-```cpp  
-enum day2 { sun, mon };  
+```cpp
+enum day2 { sun, mon };
 ```
 
 and is semantically equivalent to:
 
-```cpp  
-static const int sun = 0;  
-static const int mon = 1;  
+```cpp
+static const int sun = 0;
+static const int mon = 1;
 ```
 
 Managed enumerator names (*identifiers*) are not injected into the scope where the enumeration is defined; all references to the enumerators must be fully qualified (*name*`::`*identifier*).  For this reason, you cannot define an anonymous managed enum.
@@ -144,27 +144,27 @@ A named, standard enum compiled with `/clr` will be visible in the assembly as a
 
 In Visual C++ 2002 and Visual C++ 2003, a standard enum used as the type in a function parameter:
 
-```cpp  
-// mcppv2_enum.cpp  
-// compile with: /clr  
-enum E { a, b };  
+```cpp
+// mcppv2_enum.cpp
+// compile with: /clr
+enum E { a, b };
 void f(E) {System::Console::WriteLine("hi");}
 
-int main() {  
-   E myi = b;  
-   f(myi);  
-}  
+int main() {
+   E myi = b;
+   f(myi);
+}
 ```
 
 would emit the following in MSIL for the function signature:
 
-```cpp  
-void f(int32);  
+```cpp
+void f(int32);
 ```
 
 However, in current versions of the compiler, the standard enum is emitted as a managed enum with a [NativeEnumAttribute] and the following in MSIL for the function signature:
 
-```cpp  
+```cpp
 void f(E)  
 ```
 
@@ -180,43 +180,43 @@ Compiler option: `/clr`
 
 ### Examples
 
-```cpp  
-// mcppv2_enum_2.cpp  
-// compile with: /clr  
-// managed enum  
+```cpp
+// mcppv2_enum_2.cpp
+// compile with: /clr
+// managed enum
 public enum class m { a, b };
 
-// standard enum  
+// standard enum
 public enum n { c, d };
 
-// unnamed, standard enum  
+// unnamed, standard enum
 public enum { e, f } o;
 
-int main()   
-{  
-   // consume managed enum  
-   m mym = m::b;  
-   System::Console::WriteLine("no automatic conversion to int: {0}", mym);  
+int main()  
+{
+   // consume managed enum
+   m mym = m::b;
+   System::Console::WriteLine("no automatic conversion to int: {0}", mym);
    System::Console::WriteLine("convert to int: {0}", (int)mym);
 
-   // consume standard enum  
-   n myn = d;  
+   // consume standard enum
+   n myn = d;
    System::Console::WriteLine(myn);
 
-   // consume standard, unnamed enum  
-   o = f;  
-   System::Console::WriteLine(o);  
-}   
+   // consume standard, unnamed enum
+   o = f;
+   System::Console::WriteLine(o);
+}
 ```
 
-```Output  
+```Output
 no automatic conversion to int: b
 
 convert to int: 1
 
 1
 
-1  
+1
 ```
 
 ## See Also

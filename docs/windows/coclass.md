@@ -18,8 +18,8 @@ Creates a COM object, which can implement a COM interface.
 
 ## Syntax
 
-```cpp  
-[coclass]  
+```cpp
+[coclass]
 ```
 
 ## Remarks
@@ -74,56 +74,56 @@ The name of the coclass generated in the .idl file for the class will have the s
 
 The following code shows how to use the **coclass** attribute:
 
-```cpp  
-// cpp_attr_ref_coclass1.cpp  
-// compile with: /LD  
-#include "unknwn.h"  
+```cpp
+// cpp_attr_ref_coclass1.cpp
+// compile with: /LD
+#include "unknwn.h"
 [module(name="MyLib")];
 
-[ object, uuid("00000000-0000-0000-0000-000000000001") ]  
-__interface I {  
-   HRESULT func();  
+[ object, uuid("00000000-0000-0000-0000-000000000001") ]
+__interface I {
+   HRESULT func();
 };
 
-[coclass, progid("MyCoClass.coclass.1"), vi_progid("MyCoClass.coclass"),   
-appobject, uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")]  
-class CMyClass : public I {};  
+[coclass, progid("MyCoClass.coclass.1"), vi_progid("MyCoClass.coclass"),
+appobject, uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")]
+class CMyClass : public I {};
 ```
 
 The following sample shows how to override the default implementation of a function that appears in the code injected by the **coclass** attribute. See [/Fx](../build/reference/fx-merge-injected-code.md) for more information on viewing injected code. Any base classes or interfaces that you use for a class will be appear in the injected code. Further, if a class is included by default in the injected code and you explicitly specify that class as a base for your coclass, the attribute provider will use the form specified in your code.
 
-```cpp  
-// cpp_attr_ref_coclass2.cpp  
-// compile with: /LD  
-#include <atlbase.h>  
-#include <atlcom.h>  
-#include <atlwin.h>  
-#include <atltypes.h>  
-#include <atlctl.h>  
-#include <atlhost.h>  
+```cpp
+// cpp_attr_ref_coclass2.cpp
+// compile with: /LD
+#include <atlbase.h>
+#include <atlcom.h>
+#include <atlwin.h>
+#include <atltypes.h>
+#include <atlctl.h>
+#include <atlhost.h>
 #include <atlplus.h>
 
 [module(name="MyLib")];
 
-[object, uuid("00000000-0000-0000-0000-000000000000")]  
+[object, uuid("00000000-0000-0000-0000-000000000000")]
 __interface bb {};
 
-[coclass, uuid("00000000-0000-0000-0000-000000000001")]  
-class CMyClass : public bb {  
-public:  
-   // by adding the definition of UpdateRegistry to your code,   
-   // the function will not be included in the injected code  
-   static HRESULT WINAPI UpdateRegistry(BOOL bRegister) {  
-      // you can add to the default implementation  
-      CRegistryVirtualMachine rvm;  
-      HRESULT hr;  
+[coclass, uuid("00000000-0000-0000-0000-000000000001")]
+class CMyClass : public bb {
+public:
+   // by adding the definition of UpdateRegistry to your code,
+   // the function will not be included in the injected code
+   static HRESULT WINAPI UpdateRegistry(BOOL bRegister) {
+      // you can add to the default implementation
+      CRegistryVirtualMachine rvm;
+      HRESULT hr;
       if (FAILED(hr = rvm.AddStandardReplacements()))  
-         return hr;  
-      rvm.AddReplacement(_T("FriendlyName"), GetObjectFriendlyName());  
-      return rvm.VMUpdateRegistry(GetOpCodes(), GetOpcodeStringVals(),  
-         GetOpcodeDWORDVals(), GetOpcodeBinaryVals(), bRegister);  
-   }  
-};  
+         return hr;
+      rvm.AddReplacement(_T("FriendlyName"), GetObjectFriendlyName());
+      return rvm.VMUpdateRegistry(GetOpCodes(), GetOpcodeStringVals(),
+         GetOpcodeDWORDVals(), GetOpcodeBinaryVals(), bRegister);
+   }
+};
 ```
 
 ## Requirements
@@ -137,7 +137,7 @@ public:
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 

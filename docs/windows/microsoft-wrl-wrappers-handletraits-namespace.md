@@ -18,8 +18,8 @@ Describes characteristics of common handle-based resource types.
 
 ## Syntax
 
-```cpp  
-namespace Microsoft::WRL::Wrappers::HandleTraits;  
+```cpp
+namespace Microsoft::WRL::Wrappers::HandleTraits;
 ```
 
 ## Members

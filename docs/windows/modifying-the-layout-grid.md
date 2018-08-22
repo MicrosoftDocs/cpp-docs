@@ -21,7 +21,7 @@ When you are placing or arranging controls in a dialog box, you can use the layo
 
 2. In the [Guide Settings Dialog Box](../windows/guide-settings-dialog-box.md), select or clear the **Grid** button.
 
-     You can still control the grid in individual **Dialog** editor windows using the **Toggle Grid** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
+   You can still control the grid in individual **Dialog** editor windows using the **Toggle Grid** button on the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md).
 
 ### To change the size of the layout grid
 

@@ -23,9 +23,9 @@ ms.workload: ["cplusplus", "uwp"]
 
 ## Syntax
 
-```cpp  
-ref class identifier sealed {...};  
-virtual return-type identifier() sealed {...};  
+```cpp
+ref class identifier sealed {...};
+virtual return-type identifier() sealed {...};
 ```
 
 ### Parameters
@@ -66,73 +66,73 @@ Compiler option: `/clr`
 
 This following code example shows the effect of **sealed** on a virtual member.
 
-```cpp  
-// sealed_keyword.cpp  
-// compile with: /clr  
-interface struct I1 {  
-   virtual void f();  
-   virtual void g();  
+```cpp
+// sealed_keyword.cpp
+// compile with: /clr
+interface struct I1 {
+   virtual void f();
+   virtual void g();
 };
 
-ref class X : I1 {  
-public:  
-   virtual void f() {  
-      System::Console::WriteLine("X::f override of I1::f");  
+ref class X : I1 {
+public:
+   virtual void f() {
+      System::Console::WriteLine("X::f override of I1::f");
    }
 
-   virtual void g() sealed {  
-      System::Console::WriteLine("X::f override of I1::g");  
-   }  
+   virtual void g() sealed {
+      System::Console::WriteLine("X::f override of I1::g");
+   }
 };
 
-ref class Y : public X {  
-public:  
-   virtual void f() override {  
-      System::Console::WriteLine("Y::f override of I1::f");  
+ref class Y : public X {
+public:
+   virtual void f() override {
+      System::Console::WriteLine("Y::f override of I1::f");
    }
 
    /*  
-   // the following override generates a compiler error  
-   virtual void g() override {  
-      System::Console::WriteLine("Y::g override of I1::g");  
-   }    
-   */  
+   // the following override generates a compiler error
+   virtual void g() override {
+      System::Console::WriteLine("Y::g override of I1::g");
+   } 
+   */
 };
 
-int main() {  
-   I1 ^ MyI = gcnew X;  
-   MyI -> f();  
+int main() {
+   I1 ^ MyI = gcnew X;
+   MyI -> f();
    MyI -> g();
 
-   I1 ^ MyI2 = gcnew Y;  
-   MyI2 -> f();  
-}  
+   I1 ^ MyI2 = gcnew Y;
+   MyI2 -> f();
+}
 ```
 
-```Output  
-X::f override of I1::f  
-X::f override of I1::g  
-Y::f override of I1::f  
+```Output
+X::f override of I1::f
+X::f override of I1::g
+Y::f override of I1::f
 ```
 
 The next code example shows how to mark a class as sealed.
 
-```cpp  
-// sealed_keyword_2.cpp  
-// compile with: /clr  
-interface struct I1 {  
-   virtual void f();  
+```cpp
+// sealed_keyword_2.cpp
+// compile with: /clr
+interface struct I1 {
+   virtual void f();
 };
 
-ref class X sealed : I1 {  
-public:  
-   virtual void f() override {}  
+ref class X sealed : I1 {
+public:
+   virtual void f() override {}
 };
 
-ref class Y : public X {   // C3246 base class X is sealed  
-public:  
-   virtual void f() override {}  
-};  
+ref class Y : public X {   // C3246 base class X is sealed
+public:
+   virtual void f() override {}
+};
 ```
 
 ## See Also

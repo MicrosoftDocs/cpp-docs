@@ -18,15 +18,15 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-SyncLockWithStatusT(  
-   _Inout_ SyncLockWithStatusT&& other  
+```cpp
+SyncLockWithStatusT(
+   _Inout_ SyncLockWithStatusT&& other
 );
 
-explicit SyncLockWithStatusT(  
-   typename SyncTraits::Type sync,  
-   DWORD status  
-);  
+explicit SyncLockWithStatusT(
+   typename SyncTraits::Type sync,
+   DWORD status
+);
 ```
 
 ### Parameters

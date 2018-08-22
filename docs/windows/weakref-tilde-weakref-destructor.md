@@ -18,8 +18,8 @@ Deinitializes the current instance of the **WeakRef** class.
 
 ## Syntax
 
-```cpp  
-~WeakRef();  
+```cpp
+~WeakRef();
 ```
 
 ## Requirements

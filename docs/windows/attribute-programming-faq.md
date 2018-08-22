@@ -55,22 +55,22 @@ An HRESULT is a simple data type that is often used as a return value by attribu
 
 In most cases, if the attribute has a single parameter, that parameter is named. This name is not required when inserting the attribute in your code. For example, the following usage of the [aggregatable](../windows/aggregatable.md) attribute:
 
-```cpp  
-[coclass, aggregatable(value=allowed)]  
-class CMyClass  
-{  
-// The class declaration  
-};  
+```cpp
+[coclass, aggregatable(value=allowed)]
+class CMyClass
+{
+// The class declaration
+};
 ```
 
 is exactly the same as:
 
-```cpp  
-[coclass, aggregatable(allowed)]  
-class CMyClass  
-{  
-// The class declaration  
-};  
+```cpp
+[coclass, aggregatable(allowed)]
+class CMyClass
+{
+// The class declaration
+};
 ```
 
 However, the following attributes have single, unnamed parameters:
@@ -95,21 +95,21 @@ You can use both single-line and multiple-line comments within an attribute bloc
 
 The following is allowed:
 
-```cpp  
-[ coclass,  
-   progid("MyClass.CMyClass.1"), /* Multiple-line  
-                                       comment */  
-   threading("both") // Single-line comment  
-]  
+```cpp
+[ coclass,
+   progid("MyClass.CMyClass.1"), /* Multiple-line
+                                       comment */
+   threading("both") // Single-line comment
+]
 ```
 
 The following is disallowed:
 
-```cpp  
-[ coclass,  
-   progid("MyClass.CMyClass.1" /* Multiple-line comment */ ),  
+```cpp
+[ coclass,
+   progid("MyClass.CMyClass.1" /* Multiple-line comment */ ),
    threading("both" // Single-line comment)  
-]  
+]
 ```
 
 ##  <a name="vcconattributeprogrammmingfaqanchor4"></a> How do attributes interact with inheritance?
@@ -130,110 +130,110 @@ Some attributes inject code into your project. You can see the injected code by 
 
 The following sample is the result of copying injected code into a source code file:
 
-```cpp  
-// attr_injected.cpp  
-// compile with: comsupp.lib  
-#define _ATL_ATTRIBUTES 1  
-#include <atlbase.h>  
+```cpp
+// attr_injected.cpp
+// compile with: comsupp.lib
+#define _ATL_ATTRIBUTES 1
+#include <atlbase.h>
 #include <atlcom.h>
 
 [ module(name="MyLibrary") ];
 
-// ITestTest  
-[   
-   object,  
-   uuid("DADECE00-0FD2-46F1-BFD3-6A0579CA1BC4"),  
-   dual,  
-   helpstring("ITestTest Interface"),  
+// ITestTest
+[
+   object,
+   uuid("DADECE00-0FD2-46F1-BFD3-6A0579CA1BC4"),
+   dual,
+   helpstring("ITestTest Interface"),
    pointer_default(unique)  
 ]
 
-__interface ITestTest : IDispatch {  
-   [id(1), helpstring("method DoTest")]   
-   HRESULT DoTest([in] BSTR str);  
+__interface ITestTest : IDispatch {
+   [id(1), helpstring("method DoTest")]
+   HRESULT DoTest([in] BSTR str);
 };
 
-// _ITestTestEvents  
-[  
-   uuid("12753B9F-DEF4-49b0-9D52-A79C371F2909"),  
-   dispinterface,  
+// _ITestTestEvents
+[
+   uuid("12753B9F-DEF4-49b0-9D52-A79C371F2909"),
+   dispinterface,
    helpstring("_ITestTestEvents Interface")  
 ]
 
-__interface _ITestTestEvents {  
-   [id(1), helpstring("method BeforeChange")] HRESULT BeforeChange([in] BSTR str, [in,out] VARIANT_BOOL* bCancel);  
+__interface _ITestTestEvents {
+   [id(1), helpstring("method BeforeChange")] HRESULT BeforeChange([in] BSTR str, [in,out] VARIANT_BOOL* bCancel);
 };
 
-// CTestTest  
-[  
-   coclass,  
-   threading(apartment),  
-   vi_progid("TestATL1.TestTest"),  
-   progid("TestATL1.TestTest.1"),  
-   version(1.0),  
-   uuid("D9632007-14FA-4679-9E1C-28C9A949E784"),  
-   // this line would be commented out from original file  
-   // event_source("com"),  
-   // this line would be added to support injected code  
-   source(_ITestTestEvents),  
+// CTestTest
+[
+   coclass,
+   threading(apartment),
+   vi_progid("TestATL1.TestTest"),
+   progid("TestATL1.TestTest.1"),
+   version(1.0),
+   uuid("D9632007-14FA-4679-9E1C-28C9A949E784"),
+   // this line would be commented out from original file
+   // event_source("com"),
+   // this line would be added to support injected code
+   source(_ITestTestEvents),
    helpstring("TestTest Class")  
 ]
 
-class ATL_NO_VTABLE CTestTest : public ITestTest,  
-// the following base classes support added injected code  
-public IConnectionPointContainerImpl<CTestTest>,  
-public IConnectionPointImpl<CTestTest, &__uuidof(::_ITestTestEvents), CComDynamicUnkArray>  
-{  
-public:  
-   CTestTest() {  
-   }  
-   // this line would be commented out from original file  
-   // __event __interface _ITestTestEvents;  
+class ATL_NO_VTABLE CTestTest : public ITestTest,
+// the following base classes support added injected code
+public IConnectionPointContainerImpl<CTestTest>,
+public IConnectionPointImpl<CTestTest, &__uuidof(::_ITestTestEvents), CComDynamicUnkArray>
+{
+public:
+   CTestTest() {
+   }
+   // this line would be commented out from original file
+   // __event __interface _ITestTestEvents;
    DECLARE_PROTECT_FINAL_CONSTRUCT()  
-   HRESULT FinalConstruct() {  
-      return S_OK;  
+   HRESULT FinalConstruct() {
+      return S_OK;
    }
 
 void FinalRelease() {}
 
-public:  
-   CComBSTR m_value;  
-   STDMETHOD(DoTest)(BSTR str) {  
-      VARIANT_BOOL bCancel = FALSE;  
-      BeforeChange(str,&bCancel);  
-      if (bCancel) {  
-          return Error("Error : Someone don't want us to change the value");  
+public:
+   CComBSTR m_value;
+   STDMETHOD(DoTest)(BSTR str) {
+      VARIANT_BOOL bCancel = FALSE;
+      BeforeChange(str,&bCancel);
+      if (bCancel) {
+          return Error("Error : Someone don't want us to change the value");
       }
 
-     m_value =str;  
-     return S_OK;  
-    }  
-// the following was copied in from the injected code.  
-HRESULT BeforeChange(::BSTR i1,::VARIANT_BOOL* i2) {  
-   HRESULT hr = S_OK;  
-   IConnectionPointImpl<CTestTest, &__uuidof(_ITestTestEvents), CComDynamicUnkArray>* p = this;  
-   VARIANT rgvars[2];  
-   Lock();  
-   IUnknown** pp = p->m_vec.begin();  
-   Unlock();  
-   while (pp < p->m_vec.end()) {  
-      if (*pp != NULL) {  
-         IDispatch* pDispatch = (IDispatch*) *pp;  
-         ::VariantInit(&rgvars[1]);  
-         rgvars[1].vt = VT_BSTR;  
-         V_BSTR(&rgvars[1])= (BSTR) i1;  
-         ::VariantInit(&rgvars[0]);  
-         rgvars[0].vt = (VT_BOOL | VT_BYREF);  
-         V_BOOLREF(&rgvars[0])= (VARIANT_BOOL*) i2;  
-         DISPPARAMS disp = { rgvars, NULL, 2, 0 };  
-         VARIANT ret_val;  
-         hr = __ComInvokeEventHandler(pDispatch, 1, 1, &disp, &ret_val);  
+   m_value =str;
+   return S_OK;
+    }
+// the following was copied in from the injected code.
+HRESULT BeforeChange(::BSTR i1,::VARIANT_BOOL* i2) {
+   HRESULT hr = S_OK;
+   IConnectionPointImpl<CTestTest, &__uuidof(_ITestTestEvents), CComDynamicUnkArray>* p = this;
+   VARIANT rgvars[2];
+   Lock();
+   IUnknown** pp = p->m_vec.begin();
+   Unlock();
+   while (pp < p->m_vec.end()) {
+      if (*pp != NULL) {
+         IDispatch* pDispatch = (IDispatch*) *pp;
+         ::VariantInit(&rgvars[1]);
+         rgvars[1].vt = VT_BSTR;
+         V_BSTR(&rgvars[1])= (BSTR) i1;
+         ::VariantInit(&rgvars[0]);
+         rgvars[0].vt = (VT_BOOL | VT_BYREF);
+         V_BOOLREF(&rgvars[0])= (VARIANT_BOOL*) i2;
+         DISPPARAMS disp = { rgvars, NULL, 2, 0 };
+         VARIANT ret_val;
+         hr = __ComInvokeEventHandler(pDispatch, 1, 1, &disp, &ret_val);
          if (FAILED(hr))  
-            break;  
-      }  
-      pp++;  
-   }  
-   return hr;  
+            break;
+      }
+      pp++;
+   }
+   return hr;
 }
 
 BEGIN_CONNECTION_POINT_MAP(CTestTest)  
@@ -241,11 +241,11 @@ CONNECTION_POINT_ENTRY(__uuidof(::_ITestTestEvents))
 END_CONNECTION_POINT_MAP()  
 // end added code section
 
-// _ITestCtrlEvents Methods  
-public:  
+// _ITestCtrlEvents Methods
+public:
 };
 
-int main() {}  
+int main() {}
 ```
 
 ##  <a name="vcconattributeprogrammmingfaqhowcaniforwarddeclareanattributedinterface"></a> How can I forward declare an attributed interface?

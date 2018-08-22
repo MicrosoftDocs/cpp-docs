@@ -18,10 +18,10 @@ Sets the handle of the asynchronous operation.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   put_Id  
-)(const unsigned int id);  
+```cpp
+STDMETHOD(
+   put_Id
+)(const unsigned int id);
 ```
 
 ### Parameters

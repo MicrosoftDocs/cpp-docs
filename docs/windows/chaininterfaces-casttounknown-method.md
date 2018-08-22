@@ -18,8 +18,8 @@ Casts the interface pointer of the type defined by the *I0* template parameter t
 
 ## Syntax
 
-```cpp  
-__forceinline IUnknown* CastToUnknown();  
+```cpp
+__forceinline IUnknown* CastToUnknown();
 ```
 
 ## Return Value

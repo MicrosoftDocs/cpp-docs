@@ -18,8 +18,8 @@ Defines an object that cannot be instantiated by itself.
 
 ## Syntax
 
-```cpp  
-[noncreatable]  
+```cpp
+[noncreatable]
 ```
 
 ## Remarks
@@ -30,22 +30,22 @@ When this attribute is used within a project that uses ATL, the behavior of the 
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_noncreatable.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
+```cpp
+// cpp_attr_ref_noncreatable.cpp
+// compile with: /LD
+#include <unknwn.h>
 [module(name="MyLib")];
 
-[object, uuid("11111111-1111-1111-1111-111111111111")]  
-__interface A   
-{  
+[object, uuid("11111111-1111-1111-1111-111111111111")]
+__interface A
+{
 };
 
-[coclass, uuid("11111111-1111-1111-1111-111111111112"), noncreatable]  
-class CMyClass : public A   
-{  
-   HRESULT xx();  
-};  
+[coclass, uuid("11111111-1111-1111-1111-111111111112"), noncreatable]
+class CMyClass : public A
+{
+   HRESULT xx();
+};
 ```
 
 ## Requirements
@@ -59,9 +59,9 @@ class CMyClass : public A
 |**Required attributes**|**coclass**|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)   
+[Class Attributes](../windows/class-attributes.md)  

@@ -18,8 +18,8 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-const wchar_t* serverName;  
+```cpp
+const wchar_t* serverName;
 ```
 
 ## Remarks

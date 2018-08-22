@@ -15,20 +15,20 @@ ms.workload: ["cplusplus", "uwp"]
 
 Manifest resources are XML files that describe the dependencies that an application uses. For example, in Visual Studio, the MFC wizard-generated manifest file defines which of the Windows common control DLLs the application should use, version 5.0 or 6.0:
 
-```xml  
-<description>Your app description here</description>   
-<dependency>   
-    <dependentAssembly>   
-        <assemblyIdentity   
-            type="win32"   
-            name="Microsoft.Windows.Common-Controls"   
-            version="6.0.0.0"   
-            processorArchitecture="X86"   
-            publicKeyToken="6595b64144ccf1df"   
-            language="*"   
-        />   
-    </dependentAssembly>   
-</dependency>   
+```xml
+<description>Your app description here</description>
+<dependency>
+    <dependentAssembly>
+        <assemblyIdentity
+            type="win32"
+            name="Microsoft.Windows.Common-Controls"
+            version="6.0.0.0"
+            processorArchitecture="X86"
+            publicKeyToken="6595b64144ccf1df"
+            language="*"
+        />
+    </dependentAssembly>
+</dependency>
 ```
 
 For a Windows XP or Windows Vista application, the manifest resource not only specifies that the application use the most current version of the Windows common controls (v6.0, as seen above) but it also supports the [Syslink control](http://msdn.microsoft.com/library/windows/desktop/bb760706).

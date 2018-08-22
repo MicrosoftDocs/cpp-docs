@@ -17,8 +17,8 @@ Determines whether factory objects are cached.
 
 ## Syntax
 
-```cpp  
-enum FactoryCacheFlags;  
+```cpp
+enum FactoryCacheFlags;
 ```
 
 ## Remarks

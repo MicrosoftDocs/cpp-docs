@@ -18,27 +18,27 @@ Initializes a new instance of the **WeakRef** class.
 
 ## Syntax
 
-```cpp  
-WeakRef();  
-WeakRef(  
+```cpp
+WeakRef();
+WeakRef(
    decltype(__nullptr)  
 );
 
-WeakRef(  
-   _In_opt_ IWeakReference* ptr  
+WeakRef(
+   _In_opt_ IWeakReference* ptr
 );
 
-WeakRef(  
-   const ComPtr<IWeakReference>& ptr  
+WeakRef(
+   const ComPtr<IWeakReference>& ptr
 );
 
-WeakRef(  
-   const WeakRef& ptr  
+WeakRef(
+   const WeakRef& ptr
 );
 
-WeakRef(  
-   _Inout_ WeakRef&& ptr  
-);  
+WeakRef(
+   _Inout_ WeakRef&& ptr
+);
 ```
 
 ### Parameters

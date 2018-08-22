@@ -18,12 +18,12 @@ Waits for ownership of the specified critical section object. The function retur
 
 ## Syntax
 
-```cpp  
+```cpp
 SyncLock Lock();
 
-   static SyncLock Lock(  
-   _In_ CRITICAL_SECTION* cs  
-);  
+   static SyncLock Lock(
+   _In_ CRITICAL_SECTION* cs
+);
 ```
 
 ### Parameters

@@ -18,20 +18,20 @@ Copies the current or specified interface associated with this **ComPtr** to the
 
 ## Syntax
 
-```cpp  
-HRESULT CopyTo(  
-   _Deref_out_ InterfaceType** ptr  
+```cpp
+HRESULT CopyTo(
+   _Deref_out_ InterfaceType** ptr
 );
 
-HRESULT CopyTo(  
-   REFIID riid,  
-   _Deref_out_ void** ptr  
-) const;  
+HRESULT CopyTo(
+   REFIID riid,
+   _Deref_out_ void** ptr
+) const;
 
-template<typename U>  
-HRESULT CopyTo(  
-   _Deref_out_ U** ptr  
-) const;  
+template<typename U>
+HRESULT CopyTo(
+   _Deref_out_ U** ptr
+) const;
 ```
 
 ### Parameters

@@ -38,9 +38,9 @@ You can easily open the resource file in text format to view all the resources i
 
 6. From the **Open As** drop-down list, select **Text**.
 
-     The resource opens in the **Source Code** editor.
+   The resource opens in the **Source Code** editor.
 
- \- or -
+\- or -
 
 1. In **Solution Explorer**, right-click the .rc file.
 

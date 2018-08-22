@@ -18,10 +18,10 @@ Sets the name of the Help file for a type library.
 
 ## Syntax
 
-```cpp  
-[ helpfile(  
-   "filename"  
-) ]  
+```cpp
+[ helpfile(
+   "filename"
+) ]
 ```
 
 ### Parameters
@@ -48,7 +48,7 @@ See the example for [module](../windows/module-cpp.md) for an example of how to 
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -58,4 +58,4 @@ See the example for [module](../windows/module-cpp.md) for an example of how to 
 [Method Attributes](../windows/method-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
 [helpcontext](../windows/helpcontext.md)  
-[helpstring](../windows/helpstring.md)   
+[helpstring](../windows/helpstring.md)  

@@ -17,7 +17,7 @@ Initializes a new instance of the **RoInitializeWrapper** class.
 
 ## Syntax
 
-```cpp  
+```cpp
 RoInitializeWrapper(   RO_INIT_TYPE flags)  
 ```
 

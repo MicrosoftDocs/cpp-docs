@@ -18,31 +18,31 @@ Assigns a value to the current **ComPtr**.
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW ComPtr& operator=(  
+```cpp
+WRL_NOTHROW ComPtr& operator=(
    decltype(__nullptr)  
-);  
-WRL_NOTHROW ComPtr& operator=(  
-   _In_opt_ T *other  
-);  
-template <typename U>  
-WRL_NOTHROW ComPtr& operator=(  
-   _In_opt_ U *other  
-);  
-WRL_NOTHROW ComPtr& operator=(  
-   const ComPtr &other  
-);  
-template<class U>  
-WRL_NOTHROW ComPtr& operator=(  
-   const ComPtr<U>& other  
-);  
-WRL_NOTHROW ComPtr& operator=(  
-   _Inout_ ComPtr &&other  
-);  
-template<class U>  
-WRL_NOTHROW ComPtr& operator=(  
-   _Inout_ ComPtr<U>&& other  
-);  
+);
+WRL_NOTHROW ComPtr& operator=(
+   _In_opt_ T *other
+);
+template <typename U>
+WRL_NOTHROW ComPtr& operator=(
+   _In_opt_ U *other
+);
+WRL_NOTHROW ComPtr& operator=(
+   const ComPtr &other
+);
+template<class U>
+WRL_NOTHROW ComPtr& operator=(
+   const ComPtr<U>& other
+);
+WRL_NOTHROW ComPtr& operator=(
+   _Inout_ ComPtr &&other
+);
+template<class U>
+WRL_NOTHROW ComPtr& operator=(
+   _Inout_ ComPtr<U>&& other
+);
 ```
 
 ### Parameters

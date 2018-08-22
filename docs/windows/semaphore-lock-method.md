@@ -18,15 +18,15 @@ Waits until the current object, or the **Semaphore** object associated with the 
 
 ## Syntax
 
-```cpp  
-SyncLock Lock(  
-   DWORD milliseconds = INFINITE  
+```cpp
+SyncLock Lock(
+   DWORD milliseconds = INFINITE
 );
 
-static SyncLock Lock(  
-   HANDLE h,  
-   DWORD milliseconds = INFINITE  
-);  
+static SyncLock Lock(
+   HANDLE h,
+   DWORD milliseconds = INFINITE
+);
 ```
 
 ### Parameters

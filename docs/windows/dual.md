@@ -18,8 +18,8 @@ Places an interface in the .idl file as a dual interface.
 
 ## Syntax
 
-```cpp  
-[dual]  
+```cpp
+[dual]
 ```
 
 ## Remarks
@@ -30,36 +30,36 @@ When the **dual** C++ attribute precedes an interface, it causes the interface t
 
 The following code is an attribute block that uses **dual** before an interface definition:
 
-```cpp  
-// cpp_attr_ref_dual.cpp  
-// compile with: /LD  
-#include <windows.h>  
+```cpp
+// cpp_attr_ref_dual.cpp
+// compile with: /LD
+#include <windows.h>
 [module(name="MyLibrary")];
 
 [uuid("2F5F63F1-16DA-11d2-9E7B-00C04FB926DA"), dual]
 
-__interface IStatic : IDispatch   
-{  
-   HRESULT Func1(int i);  
-   [   propget,   
-      id(1),   
-      bindable,   
-      displaybind,   
-      defaultbind,   
-      requestedit  
-   ]   
-   HRESULT P1([out, retval] long *nSize);  
-   [   propput,   
-      id(1),   
-      bindable,   
-      displaybind,   
-      defaultbind,   
-      requestedit  
-   ]   
-   HRESULT P1([in] long nSize);      
+__interface IStatic : IDispatch
+{
+   HRESULT Func1(int i);
+   [   propget,
+      id(1),
+      bindable,
+      displaybind,
+      defaultbind,
+      requestedit
+   ]
+   HRESULT P1([out, retval] long *nSize);
+   [   propput,
+      id(1),
+      bindable,
+      displaybind,
+      defaultbind,
+      requestedit
+   ]
+   HRESULT P1([in] long nSize); 
 };
 
-[cpp_quote("#include file.h")];  
+[cpp_quote("#include file.h")];
 ```
 
 ## Requirements
@@ -73,7 +73,7 @@ __interface IStatic : IDispatch
 |**Required attributes**|None|
 |**Invalid attributes**|`dispinterface`|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -82,4 +82,4 @@ __interface IStatic : IDispatch
 [custom](../windows/custom-cpp.md)  
 [dispinterface](../windows/dispinterface.md)  
 [object](../windows/object-cpp.md)  
-[__interface](../cpp/interface.md)   
+[__interface](../cpp/interface.md)  

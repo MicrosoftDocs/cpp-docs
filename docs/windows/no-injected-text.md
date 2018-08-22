@@ -18,10 +18,10 @@ Prevents the compiler from injecting code as a result of attribute use.
 
 ## Syntax
 
-```cpp  
-[ no_injected_text(  
-   boolean  
-) ];  
+```cpp
+[ no_injected_text(
+   boolean
+) ];
 ```
 
 ### Parameters
@@ -44,8 +44,8 @@ The most common use of the **no_injected_text** C++ attribute is by the [/Fx](..
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
-[Compiler Attributes](../windows/compiler-attributes.md)   
+[Compiler Attributes](../windows/compiler-attributes.md)  

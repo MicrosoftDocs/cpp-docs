@@ -17,10 +17,10 @@ Gets the trust level of an instance of the class specified by the `Base` class t
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   GetTrustLevel  
-)(_Out_ TrustLevel* trustLvl);  
+```cpp
+STDMETHOD(
+   GetTrustLevel
+)(_Out_ TrustLevel* trustLvl);
 ```
 
 ### Parameters

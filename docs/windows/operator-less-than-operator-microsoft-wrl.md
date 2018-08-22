@@ -17,11 +17,11 @@ Determines if the address of one object is less than another.
 
 ## Syntax
 
-```cpp  
-template<class T, class U>  
-bool operator<(const ComPtr<T>& a, const ComPtr<U>& b) throw();  
-template<class T, class U>  
-bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<ComPtr<U>>& b) throw();  
+```cpp
+template<class T, class U>
+bool operator<(const ComPtr<T>& a, const ComPtr<U>& b) throw();
+template<class T, class U>
+bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<ComPtr<U>>& b) throw();
 ```
 
 ### Parameters

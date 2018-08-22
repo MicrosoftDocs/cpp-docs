@@ -18,11 +18,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-EventTargetArray(  
-   _Out_ HRESULT* hr,  
-   size_t items  
-);  
+```cpp
+EventTargetArray(
+   _Out_ HRESULT* hr,
+   size_t items
+);
 ```
 
 ### Parameters
@@ -30,13 +30,13 @@ EventTargetArray(
 *hr*  
 After this constructor operations, parameter *hr* indicates whether allocation of the array succeeded or failed. The following table lists the possible values for *hr*.
 
-S_OK  
+S_OK
  The operation succeeded.
 
-E_OUTOFMEMORY  
+E_OUTOFMEMORY
  Memory couldn't be allocated for the array.
 
-S_FALSE  
+S_FALSE
  Parameter *items* is less than or equal to zero.
 
 *items*  

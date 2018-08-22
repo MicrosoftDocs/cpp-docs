@@ -18,12 +18,12 @@ Attempts to enter a critical section without blocking. If the call is successful
 
 ## Syntax
 
-```cpp  
+```cpp
 SyncLock TryLock();
 
-static SyncLock TryLock(  
-   _In_ CRITICAL_SECTION* cs  
-);  
+static SyncLock TryLock(
+   _In_ CRITICAL_SECTION* cs
+);
 ```
 
 ### Parameters

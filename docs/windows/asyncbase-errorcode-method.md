@@ -18,10 +18,10 @@ Retrieves the error code for the current asynchronous operation.
 
 ## Syntax
 
-```cpp  
-inline void ErrorCode(  
-   HRESULT *error  
-);  
+```cpp
+inline void ErrorCode(
+   HRESULT *error
+);
 ```
 
 ### Parameters

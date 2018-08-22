@@ -18,15 +18,15 @@ Writes into a stream the data required to initialize a proxy object in some clie
 
 ## Syntax
 
-```cpp  
-STDMETHODIMP MarshalInterface(  
-   __in IStream *pStm,  
-   __in REFIID riid,  
-   __in_opt void *pv,  
-   __in DWORD dwDestContext,  
-   __reserved void *pvDestContext,  
-   __in DWORD mshlflags  
-) override;  
+```cpp
+STDMETHODIMP MarshalInterface(
+   __in IStream *pStm,
+   __in REFIID riid,
+   __in_opt void *pv,
+   __in DWORD dwDestContext,
+   __reserved void *pvDestContext,
+   __in DWORD mshlflags
+) override;
 ```
 
 ### Parameters
@@ -55,16 +55,16 @@ Specifies whether the data to be marshaled is to be transmitted back to the clie
 
 ## Return Value
 
-S_OK  
+S_OK
  The interface pointer was marshaled successfully.
 
-E_NOINTERFACE  
+E_NOINTERFACE
  The specified interface is not supported.
 
-STG_E_MEDIUMFULL  
+STG_E_MEDIUMFULL
  The stream is full.
 
-E_FAIL  
+E_FAIL
  The operation failed.
 
 ## Requirements

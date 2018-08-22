@@ -18,10 +18,10 @@ Specifies a context ID that lets the user view information about this element in
 
 ## Syntax
 
-```cpp  
-[ helpcontext(  
-   id  
-) ]  
+```cpp
+[ helpcontext(
+   id
+) ]
 ```
 
 ### Parameters
@@ -48,7 +48,7 @@ See the example for [defaultvalue](../windows/defaultvalue.md) for an example of
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -58,4 +58,4 @@ See the example for [defaultvalue](../windows/defaultvalue.md) for an example of
 [Method Attributes](../windows/method-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
 [helpfile](../windows/helpfile.md)  
-[helpstring](../windows/helpstring.md)   
+[helpstring](../windows/helpstring.md)  

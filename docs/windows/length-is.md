@@ -18,10 +18,10 @@ Specifies the number of array elements to be transmitted.
 
 ## Syntax
 
-```cpp  
-[ length_is(  
-   "expression"  
-) ]  
+```cpp
+[ length_is(
+   "expression"
+) ]
 ```
 
 ### Parameters
@@ -48,7 +48,7 @@ See [first_is](../windows/first-is.md) for an example of how to specify a sectio
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -58,4 +58,4 @@ See [first_is](../windows/first-is.md) for an example of how to specify a sectio
 [first_is](../windows/first-is.md)  
 [max_is](../windows/max-is.md)  
 [last_is](../windows/last-is.md)  
-[size_is](../windows/size-is.md)   
+[size_is](../windows/size-is.md)  

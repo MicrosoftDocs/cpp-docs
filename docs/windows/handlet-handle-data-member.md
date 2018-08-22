@@ -18,8 +18,8 @@ Contains the handle that is represented by the **HandleT** object.
 
 ## Syntax
 
-```cpp  
-typename HandleTraits::Type handle_;  
+```cpp
+typename HandleTraits::Type handle_;
 ```
 
 ## Requirements

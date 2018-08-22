@@ -18,10 +18,10 @@ Assigns (moves) the specified **Mutex** object to the current **Mutex** object.
 
 ## Syntax
 
-```cpp  
-Mutex& operator=(  
-   _Inout_ Mutex&& h  
-);  
+```cpp
+Mutex& operator=(
+   _Inout_ Mutex&& h
+);
 ```
 
 ### Parameters
@@ -43,5 +43,5 @@ For more information, see the **Move Semantics** section of [Rvalue Reference De
 
 **Namespace:** Microsoft::WRL::Wrappers
 
- ## See Also
+## See Also
 [Mutex Class](../windows/mutex-class1.md)

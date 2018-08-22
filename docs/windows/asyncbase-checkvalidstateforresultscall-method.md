@@ -18,8 +18,8 @@ Tests whether the results of an asynchronous operation can be collected in the c
 
 ## Syntax
 
-```cpp  
-inline HRESULT CheckValidStateForResultsCall();  
+```cpp
+inline HRESULT CheckValidStateForResultsCall();
 ```
 
 ## Return Value

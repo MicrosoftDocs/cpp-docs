@@ -18,8 +18,8 @@ Places an interface in the .idl file as a dispatch interface.
 
 ## Syntax
 
-```cpp  
-[dispinterface]  
+```cpp
+[dispinterface]
 ```
 
 ## Remarks
@@ -30,9 +30,9 @@ Unless you specify a base class, a dispatch interface will derive from `IDispatc
 
 The usage example for [dispinterface](http://msdn.microsoft.com/library/windows/desktop/aa366802) in the MIDL documentation:
 
-```cpp  
-dispinterface helloPro   
-   { interface hello; };   
+```cpp
+dispinterface helloPro
+   { interface hello; };
 ```
 
 is not valid for the **dispinterface** attribute.
@@ -52,7 +52,7 @@ See the example for [bindable](../windows/bindable.md) for an example of how to 
 |**Required attributes**|None|
 |**Invalid attributes**|`dual`, `object`, `oleautomation`, `local`, `ms_union`|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -62,4 +62,4 @@ See the example for [bindable](../windows/bindable.md) for an example of how to 
 [dual](../windows/dual.md)  
 [custom](../windows/custom-cpp.md)  
 [object](../windows/object-cpp.md)  
-[__interface](../cpp/interface.md)   
+[__interface](../cpp/interface.md)  

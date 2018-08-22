@@ -18,10 +18,10 @@ On a class, specifies the COM object's source interfaces for connection points. 
 
 ## Syntax
 
-```cpp  
-[ source(  
-   interfaces  
-) ]  
+```cpp
+[ source(
+   interfaces
+) ]
 ```
 
 ### Parameters
@@ -37,36 +37,36 @@ You can use the [default](../windows/default-cpp.md) attribute to specify the de
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_source.cpp  
-// compile with: /LD  
-#include "windows.h"  
-#include "unknwn.h"  
+```cpp
+// cpp_attr_ref_source.cpp
+// compile with: /LD
+#include "windows.h"
+#include "unknwn.h"
 [module(name="MyLib")];
 
-[object, uuid(11111111-1111-1111-1111-111111111111)]  
-__interface b  
-{  
-   [id(0), propget, bindable, displaybind, defaultbind, requestedit]  
-   HRESULT get_I([out, retval]long *i);  
+[object, uuid(11111111-1111-1111-1111-111111111111)]
+__interface b
+{
+   [id(0), propget, bindable, displaybind, defaultbind, requestedit]
+   HRESULT get_I([out, retval]long *i);
 };
 
-[object, uuid(11111111-1111-1111-1111-111111111131)]  
-__interface c  
-{  
-   [id(0), propget, bindable, displaybind, defaultbind, requestedit]   
-   HRESULT et_I([out, retval]long *i);  
+[object, uuid(11111111-1111-1111-1111-111111111131)]
+__interface c
+{
+   [id(0), propget, bindable, displaybind, defaultbind, requestedit]
+   HRESULT et_I([out, retval]long *i);
 };
 
-[coclass, default(c), uuid(11111111-1111-1111-1111-111111111132)]  
-class N : public b  
-{  
+[coclass, default(c), uuid(11111111-1111-1111-1111-111111111132)]
+class N : public b
+{
 };
 
-[coclass, source(c), default(b, c), uuid(11111111-1111-1111-1111-111111111133)]  
-class NN : public b  
-{  
-};  
+[coclass, source(c), default(b, c), uuid(11111111-1111-1111-1111-111111111133)]
+class NN : public b
+{
+};
 ```
 
 ## Requirements
@@ -80,11 +80,11 @@ class NN : public b
 |**Required attributes**|`coclass` (when applied to class or struct)|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
 [Method Attributes](../windows/method-attributes.md)  
-[coclass](../windows/coclass.md)   
+[coclass](../windows/coclass.md)  

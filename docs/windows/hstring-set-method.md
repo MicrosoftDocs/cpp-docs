@@ -17,16 +17,16 @@ Sets the value of the current **HString** object to the specified wide-character
 
 ## Syntax
 
-```cpp  
-HRESULT Set(  
-          const wchar_t* str) throw();  
-HRESULT Set(   
-          const wchar_t* str,   
-          unsigned int len  
-           ) throw();  
-HRESULT Set(  
-          const HSTRING& hstr  
-           ) throw();  
+```cpp
+HRESULT Set(
+          const wchar_t* str) throw();
+HRESULT Set(
+          const wchar_t* str,
+          unsigned int len
+           ) throw();
+HRESULT Set(
+          const HSTRING& hstr
+           ) throw();
 ```
 
 ### Parameters

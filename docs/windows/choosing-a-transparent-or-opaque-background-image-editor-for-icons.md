@@ -28,7 +28,7 @@ You can switch from a transparent background (the default) to an opaque backgrou
 
    - `Transparent Background (T)`: Existing image shows through parts of the selection that match the current background color.
 
- \- or -
+\- or -
 
 - On the **Image** menu, select or clear **Draw Opaque**.
 

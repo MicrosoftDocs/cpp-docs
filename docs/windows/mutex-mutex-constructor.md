@@ -18,14 +18,14 @@ Initializes a new instance of the **Mutex** class.
 
 ## Syntax
 
-```cpp  
-explicit Mutex(  
-   HANDLE h  
+```cpp
+explicit Mutex(
+   HANDLE h
 );
 
-Mutex(  
-   _Inout_ Mutex&& h  
-);  
+Mutex(
+   _Inout_ Mutex&& h
+);
 ```
 
 ### Parameters
@@ -43,5 +43,5 @@ The first constructor initializes a **Mutex** object from the specified handle. 
 
 **Namespace:** Microsoft::WRL::Wrappers
 
- ## See Also
+## See Also
 [Mutex Class](../windows/mutex-class1.md)

@@ -18,12 +18,12 @@ Acquires an **SRWLock** object in shared mode.
 
 ## Syntax
 
-```cpp  
+```cpp
 SyncLockShared LockShared();
 
-static SyncLockShared LockShared(  
-   _In_ SRWLOCK* lock  
-);  
+static SyncLockShared LockShared(
+   _In_ SRWLOCK* lock
+);
 ```
 
 ### Parameters

@@ -18,8 +18,8 @@ Indicates whether the current critical section is valid.
 
 ## Syntax
 
-```cpp  
-bool IsValid() const;  
+```cpp
+bool IsValid() const;
 ```
 
 ## Return Value

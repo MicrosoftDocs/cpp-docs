@@ -18,8 +18,8 @@ Increments the reference count to the current **RuntimeClass** object.
 
 ## Syntax
 
-```cpp  
-ULONG InternalAddRef();  
+```cpp
+ULONG InternalAddRef();
 ```
 
 ## Return Value

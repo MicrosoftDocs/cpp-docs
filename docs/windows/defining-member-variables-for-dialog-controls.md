@@ -24,7 +24,7 @@ To define a member variable for any dialog box control except buttons, you can u
 
 2. While pressing the **Ctrl** key, double-click the dialog box control.
 
-     The [Add Member Variable wizard](../ide/add-member-variable-wizard.md) appears.
+   The [Add Member Variable wizard](../ide/add-member-variable-wizard.md) appears.
 
 3. Type the appropriate information in the **Add Member Variable** wizard. For more information, see [Dialog Data Exchange](../mfc/dialog-data-exchange.md).
 

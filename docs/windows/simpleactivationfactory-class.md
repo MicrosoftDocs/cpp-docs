@@ -18,9 +18,9 @@ Provides a fundamental mechanism to create a Windows Runtime or classic COM base
 
 ## Syntax
 
-```cpp  
-template<typename Base>  
-class SimpleActivationFactory : public ActivationFactory<>;  
+```cpp
+template<typename Base>
+class SimpleActivationFactory : public ActivationFactory<>;
 ```
 
 ### Parameters

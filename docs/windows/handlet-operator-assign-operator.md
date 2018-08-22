@@ -18,10 +18,10 @@ Moves the value of the specified **HandleT** object to the current **HandleT** o
 
 ## Syntax
 
-```cpp  
-HandleT& operator=(  
-   _Inout_ HandleT&& h  
-);  
+```cpp
+HandleT& operator=(
+   _Inout_ HandleT&& h
+);
 ```
 
 ### Parameters

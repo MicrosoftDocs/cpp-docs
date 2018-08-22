@@ -53,168 +53,168 @@ You cannot initialize a handle to zero; only **nullptr** can be used. Assignment
 
 The following code example demonstrates that the **nullptr** keyword can be used wherever a handle, native pointer, or function argument can be used. And the example demonstrates that the **nullptr** keyword can be used to check a reference before it is used.
 
-```cpp  
-// mcpp_nullptr.cpp  
-// compile with: /clr  
-value class V {};  
-ref class G {};  
+```cpp
+// mcpp_nullptr.cpp
+// compile with: /clr
+value class V {};
+ref class G {};
 void f(System::Object ^) {}
 
-int main() {  
-// Native pointer.  
-   int *pN = nullptr;  
-// Managed handle.  
-   G ^pG = nullptr;  
-   V ^pV1 = nullptr;  
-// Managed interior pointer.  
-   interior_ptr<V> pV2 = nullptr;  
-// Reference checking before using a pointer.  
-   if (pN == nullptr) {}  
-   if (pG == nullptr) {}  
-   if (pV1 == nullptr) {}  
-   if (pV2 == nullptr) {}  
-// nullptr can be used as a function argument.  
+int main() {
+// Native pointer.
+   int *pN = nullptr;
+// Managed handle.
+   G ^pG = nullptr;
+   V ^pV1 = nullptr;
+// Managed interior pointer.
+   interior_ptr<V> pV2 = nullptr;
+// Reference checking before using a pointer.
+   if (pN == nullptr) {}
+   if (pG == nullptr) {}
+   if (pV1 == nullptr) {}
+   if (pV2 == nullptr) {}
+// nullptr can be used as a function argument.
    f(nullptr);   // calls f(System::Object ^)  
-}  
+}
 ```
 
 ## Example
 
 The following code example shows that **nullptr** and zero can be used interchangeably on native pointers.
 
-```cpp  
-// mcpp_nullptr_1.cpp  
-// compile with: /clr  
-class MyClass {  
-public:  
-   int i;  
+```cpp
+// mcpp_nullptr_1.cpp
+// compile with: /clr
+class MyClass {
+public:
+   int i;
 };
 
-int main() {  
-   MyClass * pMyClass = nullptr;  
+int main() {
+   MyClass * pMyClass = nullptr;
    if ( pMyClass == nullptr)  
       System::Console::WriteLine("pMyClass == nullptr");
 
    if ( pMyClass == 0)  
       System::Console::WriteLine("pMyClass == 0");
 
-   pMyClass = 0;  
+   pMyClass = 0;
    if ( pMyClass == nullptr)  
       System::Console::WriteLine("pMyClass == nullptr");
 
    if ( pMyClass == 0)  
-      System::Console::WriteLine("pMyClass == 0");  
-}  
+      System::Console::WriteLine("pMyClass == 0");
+}
 ```
 
-```Output  
+```Output
 pMyClass == nullptr
 
 pMyClass == 0
 
 pMyClass == nullptr
 
-pMyClass == 0  
+pMyClass == 0
 ```
 
 ## Example
 
 The following code example shows that **nullptr** is interpreted as a handle to any type or a native pointer to any type. In case of function overloading with handles to different types, an ambiguity error will be generated. The **nullptr** would have to be explicitly cast to a type.
 
-```cpp  
-// mcpp_nullptr_2.cpp  
-// compile with: /clr /LD  
-void f(int *){}  
+```cpp
+// mcpp_nullptr_2.cpp
+// compile with: /clr /LD
+void f(int *){}
 void f(int ^){}
 
-void f_null() {  
-   f(nullptr);   // C2668  
-   // try one of the following lines instead  
-   f((int *) nullptr);  
-   f((int ^) nullptr);  
-}  
+void f_null() {
+   f(nullptr);   // C2668
+   // try one of the following lines instead
+   f((int *) nullptr);
+   f((int ^) nullptr);
+}
 ```
 
 ## Example
 
 The following code example shows that casting **nullptr** is allowed and returns a pointer or handle to the cast type that contains the **nullptr** value.
 
-```cpp  
-// mcpp_nullptr_3.cpp  
-// compile with: /clr /LD  
-using namespace System;  
-template <typename T>   
+```cpp
+// mcpp_nullptr_3.cpp
+// compile with: /clr /LD
+using namespace System;
+template <typename T>
 void f(T) {}   // C2036 cannot deduce template type because nullptr can be any type
 
-int main() {  
+int main() {
    f((Object ^) nullptr);   // T = Object^, call f(Object ^)
 
-   // Delete the following line to resolve.  
+   // Delete the following line to resolve.
    f(nullptr);
 
    f(0);   // T = int, call f(int)  
-}  
+}
 ```
 
 ## Example
 
 The following code example shows that **nullptr** can be used as a function parameter.
 
-```cpp  
-// mcpp_nullptr_4.cpp  
-// compile with: /clr  
-using namespace System;  
-void f(Object ^ x) {  
-   Console::WriteLine("test");  
+```cpp
+// mcpp_nullptr_4.cpp
+// compile with: /clr
+using namespace System;
+void f(Object ^ x) {
+   Console::WriteLine("test");
 }
 
-int main() {  
-   f(nullptr);  
-}  
+int main() {
+   f(nullptr);
+}
 ```
 
-```Output  
-test  
+```Output
+test
 ```
 
 ## Example
 
 The following code example shows that when handles are declared and not explicitly initialized, they are default initialized to **nullptr**.
 
-```cpp  
-// mcpp_nullptr_5.cpp  
-// compile with: /clr  
-using namespace System;  
-ref class MyClass {  
-public:  
-   void Test() {  
-      MyClass ^pMyClass;   // gc type  
+```cpp
+// mcpp_nullptr_5.cpp
+// compile with: /clr
+using namespace System;
+ref class MyClass {
+public:
+   void Test() {
+      MyClass ^pMyClass;   // gc type
       if (pMyClass == nullptr)  
-         Console::WriteLine("NULL");  
-   }  
+         Console::WriteLine("NULL");
+   }
 };
 
-int main() {  
-   MyClass ^ x = gcnew MyClass();  
-   x -> Test();  
-}  
+int main() {
+   MyClass ^ x = gcnew MyClass();
+   x -> Test();
+}
 ```
 
-```Output  
-NULL  
+```Output
+NULL
 ```
 
 ## Example
 
 The following code example shows that **nullptr** can be assigned to a native pointer when you compile with `/clr`.
 
-```cpp  
-// mcpp_nullptr_6.cpp  
-// compile with: /clr  
-int main() {  
-   int * i = 0;  
-   int * j = nullptr;  
-}  
+```cpp
+// mcpp_nullptr_6.cpp
+// compile with: /clr
+int main() {
+   int * i = 0;
+   int * j = nullptr;
+}
 ```
 
 ## Requirements

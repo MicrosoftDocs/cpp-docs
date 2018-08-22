@@ -18,11 +18,11 @@ Specifies a range of allowable values for arguments or fields whose values are s
 
 ## Syntax
 
-```cpp  
-[ range(  
-   low,   
-   high  
-) ]  
+```cpp
+[ range(
+   low,
+   high
+) ]
 ```
 
 ### Parameters
@@ -39,18 +39,18 @@ The **range** C++ attribute has the same functionality as the [range](http://msd
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_range.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
+```cpp
+// cpp_attr_ref_range.cpp
+// compile with: /LD
+#include <unknwn.h>
 [module(name="MyLib")];
 
-[object, uuid("9E66A290-4365-11D2-A997-00C04FA37DDB")]  
-__interface ICustom {  
-   HRESULT Custom([in] long l, [out, retval] long *pLong);  
-   HRESULT length_is1([in, range(0, 999)] long f, [in, length_is(f)] char array[10]);  
-   HRESULT length_is2([in, range(-99, -1)] long f, [in, length_is("f"), size_is(10)] char *array);  
-};  
+[object, uuid("9E66A290-4365-11D2-A997-00C04FA37DDB")]
+__interface ICustom {
+   HRESULT Custom([in] long l, [out, retval] long *pLong);
+   HRESULT length_is1([in, range(0, 999)] long f, [in, length_is(f)] char array[10]);
+   HRESULT length_is2([in, range(-99, -1)] long f, [in, length_is("f"), size_is(10)] char *array);
+};
 ```
 
 ## Requirements
@@ -64,11 +64,11 @@ __interface ICustom {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Method Attributes](../windows/method-attributes.md)  
 [Parameter Attributes](../windows/parameter-attributes.md)  
-[Data Member Attributes](../windows/data-member-attributes.md)   
+[Data Member Attributes](../windows/data-member-attributes.md)  

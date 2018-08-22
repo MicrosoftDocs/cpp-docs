@@ -18,10 +18,10 @@ Specifies an exported function or constant in a module by identifying the entry 
 
 ## Syntax
 
-```cpp  
-[ entry(  
-   id  
-) ]  
+```cpp
+[ entry(
+   id
+) ]
 ```
 
 ### Parameters
@@ -48,8 +48,8 @@ See the example for [idl_module](../windows/idl-module.md) for an example use of
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)   
+[IDL Attributes](../windows/idl-attributes.md)  

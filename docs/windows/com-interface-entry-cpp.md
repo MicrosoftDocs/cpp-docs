@@ -18,10 +18,10 @@ Adds an interface entry into the COM map of the target class.
 
 ## Syntax
 
-```cpp  
-[ com_interface_entry(   
-  com_interface_entry  
-) ]  
+```cpp
+[ com_interface_entry(
+  com_interface_entry
+) ]
 ```
 
 ### Parameters
@@ -49,50 +49,50 @@ Additional usages of the **com_interface_entry** attribute can use all supported
 
 This restriction is necessary because ATL uses the first entry in the interface map as the identity `IUnknown`; therefore, the entry must be a valid interface. For example, the following code sample is invalid because the first entry in the interface map does not specify an actual COM interface.
 
-```cpp  
-[ coclass, com_interface_entry =  
-    "COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)"  
-]  
-   class CMyClass  
-   {  
-   };  
+```cpp
+[ coclass, com_interface_entry =
+    "COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)"
+]
+   class CMyClass
+   {
+   };
 ```
 
 ## Example
 
 The following code adds two entries to the existing COM interface map of `CMyBaseClass`. The first is a standard interface, and the second hides the `IDebugTest` interface.
 
-```cpp  
-// cpp_attr_ref_com_interface_entry.cpp  
-// compile with: /LD  
-#define _ATL_ATTRIBUTES  
-#include "atlbase.h"  
+```cpp
+// cpp_attr_ref_com_interface_entry.cpp
+// compile with: /LD
+#define _ATL_ATTRIBUTES
+#include "atlbase.h"
 #include "atlcom.h"
 
 [module (name ="ldld")];
 
-[ object,  
-  uuid("7dbebed3-d636-4917-af62-c767a720a5b9")]  
+[ object,
+  uuid("7dbebed3-d636-4917-af62-c767a720a5b9")]
 __interface IDebugTest{};
 
-[ object,  
-  uuid("2875ceac-f94b-4087-8e13-d13dc167fcfc")]  
+[ object,
+  uuid("2875ceac-f94b-4087-8e13-d13dc167fcfc")]
 __interface IMyClass{};
 
-[ coclass,  
-  com_interface_entry ("COM_INTERFACE_ENTRY (IMyClass)"),  
-  com_interface_entry ("COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)"),  
+[ coclass,
+  com_interface_entry ("COM_INTERFACE_ENTRY (IMyClass)"),
+  com_interface_entry ("COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)"),
   uuid("b85f8626-e76e-4775-b6a0-4826a9e94af2")  
 ]
 
-class CMyClass: public IMyClass, public IDebugTest  
-{  
-};  
+class CMyClass: public IMyClass, public IDebugTest
+{
+};
 ```
 
 The resulting COM object map for `CMyBaseClass` is as follows:
 
-```cpp  
+```cpp
 BEGIN_COM_MAP(CMyClass)  
     COM_INTERFACE_ENTRY (IMyClass)  
     COM_INTERFACE_ENTRY_NOINTERFACE(IDebugTest)  
@@ -114,10 +114,10 @@ END_COM_MAP()
 |**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [COM Attributes](../windows/com-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  

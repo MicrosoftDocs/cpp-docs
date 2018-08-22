@@ -18,8 +18,8 @@ Declares a critical section data member.
 
 ## Syntax
 
-```cpp  
-CRITICAL_SECTION cs_;  
+```cpp
+CRITICAL_SECTION cs_;
 ```
 
 ## Remarks

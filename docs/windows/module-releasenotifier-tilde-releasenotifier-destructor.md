@@ -18,8 +18,8 @@ Deinitializes the current instance of the **Module::ReleaseNotifier** class.
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW virtual ~ReleaseNotifier();  
+```cpp
+WRL_NOTHROW virtual ~ReleaseNotifier();
 ```
 
 ## Requirements

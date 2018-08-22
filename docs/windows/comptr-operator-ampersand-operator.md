@@ -18,10 +18,10 @@ Releases the interface associated with this **ComPtr** object and then retrieves
 
 ## Syntax
 
-```cpp  
+```cpp
 Details::ComPtrRef<WeakRef> operator&()
 
-const Details::ComPtrRef<const WeakRef> operator&() const  
+const Details::ComPtrRef<const WeakRef> operator&() const
 ```
 
 ## Return Value

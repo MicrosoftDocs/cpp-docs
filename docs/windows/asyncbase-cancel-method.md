@@ -18,10 +18,10 @@ Cancels an asynchronous operation.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   Cancel  
-)(void);  
+```cpp
+STDMETHOD(
+   Cancel
+)(void);
 ```
 
 ## Return Value

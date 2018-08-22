@@ -18,10 +18,10 @@ Causes an .idl or .h file to be included in the generated .idl file.
 
 ## Syntax
 
-```cpp  
-[ includelib(  
-   name.idl  
-) ];  
+```cpp
+[ includelib(
+   name.idl
+) ];
 ```
 
 ### Parameters
@@ -37,11 +37,11 @@ The **includelib** C++ attribute causes an .idl or .h file to be included in the
 
 The following code is shown in a .cpp file:
 
-```cpp  
-// cpp_attr_ref_includelib.cpp  
-// compile with: /LD  
-[module(name="MyLib")];  
-[includelib("includelib.idl")];  
+```cpp
+// cpp_attr_ref_includelib.cpp
+// compile with: /LD
+[module(name="MyLib")];
+[includelib("includelib.idl")];
 ```
 
 ## Requirements
@@ -55,7 +55,7 @@ The following code is shown in a .cpp file:
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -64,4 +64,4 @@ The following code is shown in a .cpp file:
 [import](../windows/import.md)  
 [importidl](../windows/importidl.md)  
 [include](../windows/include-cpp.md)  
-[importlib](../windows/importlib.md)   
+[importlib](../windows/importlib.md)  

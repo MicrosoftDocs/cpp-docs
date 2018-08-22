@@ -18,16 +18,16 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template<  
-   typename I0  
->  
-struct __declspec(novtable) InterfaceTraits;  
-template<typename CloakedType>  
+```cpp
+template<
+   typename I0
+>
+struct __declspec(novtable) InterfaceTraits;
+template<typename CloakedType>
 struct __declspec(novtable) InterfaceTraits<CloakedIid<CloakedType>>;
 
-template<>  
-struct __declspec(novtable) InterfaceTraits<Nil>;  
+template<>
+struct __declspec(novtable) InterfaceTraits<Nil>;
 ```
 
 ### Parameters

@@ -18,8 +18,8 @@ Specifies that the function takes a variable number of arguments.
 
 ## Syntax
 
-```cpp  
-[vararg]  
+```cpp
+[vararg]
 ```
 
 ## Remarks
@@ -30,18 +30,18 @@ The **vararg** C++ attribute has the same functionality as the [vararg](http://m
 
 The following code shows a use of **vararg**:
 
-```cpp  
-// cpp_attr_ref_vararg.cpp  
-// compile with: /LD  
-#include "unknwn.h"  
-#include "oaidl.h"  
+```cpp
+// cpp_attr_ref_vararg.cpp
+// compile with: /LD
+#include "unknwn.h"
+#include "oaidl.h"
 [module(name="MyLibrary")];
 
-[object, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface X : public IUnknown   
-{  
-   [vararg] HRESULT Button([in, satype(VARIANT)]SAFEARRAY *psa);  
-};  
+[object, uuid("00000000-0000-0000-0000-000000000001")]
+__interface X : public IUnknown
+{
+   [vararg] HRESULT Button([in, satype(VARIANT)]SAFEARRAY *psa);
+};
 ```
 
 ## Requirements
@@ -55,9 +55,9 @@ __interface X : public IUnknown
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)   
+[Method Attributes](../windows/method-attributes.md)  

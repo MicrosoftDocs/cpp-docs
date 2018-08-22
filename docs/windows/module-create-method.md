@@ -18,17 +18,17 @@ Creates an instance of a module.
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW static Module& Create();  
-template<typename T>  
-WRL_NOTHROW static Module& Create(  
-   T callback  
-);  
-template<typename T>  
-WRL_NOTHROW static Module& Create(  
-   _In_ T* object,  
+```cpp
+WRL_NOTHROW static Module& Create();
+template<typename T>
+WRL_NOTHROW static Module& Create(
+   T callback
+);
+template<typename T>
+WRL_NOTHROW static Module& Create(
+   _In_ T* object,
    _In_ void (T::* method)()  
-);  
+);
 ```
 
 ### Parameters

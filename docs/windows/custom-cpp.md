@@ -18,11 +18,11 @@ Defines metadata for an object in the type library.
 
 ## Syntax
 
-```cpp  
-[ custom(  
-   uuid,   
-   value  
-) ];  
+```cpp
+[ custom(
+   uuid,
+   value
+) ];
 ```
 
 ### Parameters
@@ -50,7 +50,7 @@ The **custom** attribute has the same functionality as the [custom](http://msdn.
 |**Required attributes**|**coclass** (when used on class)|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -60,4 +60,4 @@ The **custom** attribute has the same functionality as the [custom](http://msdn.
 [Parameter Attributes](../windows/parameter-attributes.md)  
 [Method Attributes](../windows/method-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)   
+[Interface Attributes](../windows/interface-attributes.md)  

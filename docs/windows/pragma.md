@@ -18,10 +18,10 @@ Emits the specified string into the generated .idl file without the use of quota
 
 ## Syntax
 
-```cpp  
-[ pragma(  
-   pragma_statement  
-) ];  
+```cpp
+[ pragma(
+   pragma_statement
+) ];
 ```
 
 ### Parameters
@@ -35,18 +35,18 @@ The **pragma** C++ attribute has the same functionality as the [pragma](http://m
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_pragma.cpp  
-// compile with: /LD  
-#include "unknwn.h"  
-[module(name="MyLib")];  
+```cpp
+// cpp_attr_ref_pragma.cpp
+// compile with: /LD
+#include "unknwn.h"
+[module(name="MyLib")];
 [pragma(pack(4))];
 
-[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface A  
-{  
-   [id(1)] HRESULT MyMethod ([in, satype("BSTR")] SAFEARRAY **p);  
-};  
+[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]
+__interface A
+{
+   [id(1)] HRESULT MyMethod ([in, satype("BSTR")] SAFEARRAY **p);
+};
 ```
 
 ## Requirements
@@ -60,10 +60,10 @@ __interface A
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
-[pack](../preprocessor/pack.md)   
+[pack](../preprocessor/pack.md)  

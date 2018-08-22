@@ -18,10 +18,10 @@ Specifies the index of the first array element to be transmitted.
 
 ## Syntax
 
-```cpp  
-[ first_is(  
-   "expression"  
-) ]  
+```cpp
+[ first_is(
+   "expression"
+) ]
 ```
 
 ### Parameters
@@ -37,24 +37,24 @@ The **first_is** C++ attribute has the same functionality as the [first_is](http
 
 The following code shows various ways to specify a section in an array:
 
-```cpp  
-// cpp_attr_ref_first_is.cpp  
-// compile with: /LD  
-#include "windows.h"  
+```cpp
+// cpp_attr_ref_first_is.cpp
+// compile with: /LD
+#include "windows.h"
 #include "unknwn.h"
 
 [module(name="MyLib")];
 
-[object, uuid(11111111-1111-1111-1111-111111111111)]  
-__interface b   
-{  
-   [id(0), propget, bindable, displaybind, defaultbind,   
-requestedit] HRESULT get_I([out, retval]long *i);  
-   HRESULT Proc1([in] short First, [in] short Last,   
-[first_is(First), last_is(Last), size_is(Last-First)] char Arr1[]);   
-   HRESULT Proc2([in] short First, [in] short Last,   
-[last_is(First), size_is(Last)] char Arr2[]);  
-};  
+[object, uuid(11111111-1111-1111-1111-111111111111)]
+__interface b
+{
+   [id(0), propget, bindable, displaybind, defaultbind,
+requestedit] HRESULT get_I([out, retval]long *i);
+   HRESULT Proc1([in] short First, [in] short Last,
+[first_is(First), last_is(Last), size_is(Last-First)] char Arr1[]);
+   HRESULT Proc2([in] short First, [in] short Last,
+[last_is(First), size_is(Last)] char Arr2[]);
+};
 ```
 
 ## Requirements
@@ -68,7 +68,7 @@ requestedit] HRESULT get_I([out, retval]long *i);
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -78,4 +78,4 @@ requestedit] HRESULT get_I([out, retval]long *i);
 [last_is](../windows/last-is.md)  
 [max_is](../windows/max-is.md)  
 [length_is](../windows/length-is.md)  
-[size_is](../windows/size-is.md)   
+[size_is](../windows/size-is.md)  

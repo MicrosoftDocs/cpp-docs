@@ -18,8 +18,8 @@ Specifies a property setting function that uses a reference instead of a value.
 
 ## Syntax
 
-```cpp  
-[propputref]  
+```cpp
+[propputref]
 ```
 
 ## Remarks
@@ -41,11 +41,11 @@ See the example for [bindable](../windows/bindable.md) for a sample use of **pro
 |**Required attributes**|None|
 |**Invalid attributes**|`propget`, `propput`|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Method Attributes](../windows/method-attributes.md)  
 [propget](../windows/propget.md)  
-[propput](../windows/propput.md)   
+[propput](../windows/propput.md)  

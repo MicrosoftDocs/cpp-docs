@@ -18,11 +18,11 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. Select the byte you want to edit.
 
-     The **Tab** key moves the focus between the hexadecimal and ASCII sections of the **Binary** editor. You can use the **Page Up** and **Page Down** keys to move through the resource one screen at a time.
+   The **Tab** key moves the focus between the hexadecimal and ASCII sections of the **Binary** editor. You can use the **Page Up** and **Page Down** keys to move through the resource one screen at a time.
 
 2. Type the new value.
 
-     The value changes immediately in both the hexadecimal and ASCII sections and focus shifts to the next value in line.
+   The value changes immediately in both the hexadecimal and ASCII sections and focus shifts to the next value in line.
 
    > [!NOTE]
    > The **Binary** editor accepts changes automatically when you close the editor.

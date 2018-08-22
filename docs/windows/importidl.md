@@ -18,10 +18,10 @@ Inserts the specified .idl file into the generated .idl file.
 
 ## Syntax
 
-```cpp  
-[ importidl(  
-   idl_file  
-) ];  
+```cpp
+[ importidl(
+   idl_file
+) ];
 ```
 
 ### Parameters
@@ -37,11 +37,11 @@ You may want to use **importidl**, for example, if you want to use a hand-coded 
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_importidl.cpp  
-// compile with: /LD  
-[module(name="MyLib")];  
-[importidl("import.idl")];  
+```cpp
+// cpp_attr_ref_importidl.cpp
+// compile with: /LD
+[module(name="MyLib")];
+[importidl("import.idl")];
 ```
 
 ## Requirements
@@ -55,7 +55,7 @@ You may want to use **importidl**, for example, if you want to use a hand-coded 
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -64,4 +64,4 @@ You may want to use **importidl**, for example, if you want to use a hand-coded 
 [import](../windows/import.md)  
 [importlib](../windows/importlib.md)  
 [include](../windows/include-cpp.md)  
-[includelib](../windows/includelib-cpp.md)   
+[includelib](../windows/includelib-cpp.md)  

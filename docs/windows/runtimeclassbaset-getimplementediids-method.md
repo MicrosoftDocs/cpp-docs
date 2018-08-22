@@ -18,13 +18,13 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template<typename T>  
-__forceinline static HRESULT GetImplementedIIDS(  
-   _In_ T* implements,  
-   _Out_ ULONG *iidCount,  
-   _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids  
-);  
+```cpp
+template<typename T>
+__forceinline static HRESULT GetImplementedIIDS(
+   _In_ T* implements,
+   _Out_ ULONG *iidCount,
+   _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids
+);
 ```
 
 ### Parameters

@@ -18,16 +18,16 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template <  
-   typename T1,  
-   typename T2  
->  
-struct IsSame;  
-template <  
-   typename T1  
->  
-struct IsSame<T1, T1>;  
+```cpp
+template <
+   typename T1,
+   typename T2
+>
+struct IsSame;
+template <
+   typename T1
+>
+struct IsSame<T1, T1>;
 ```
 
 ### Parameters

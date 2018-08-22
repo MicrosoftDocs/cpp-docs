@@ -18,10 +18,10 @@ Specifies a *dispid* parameter for a member function (either a property or a met
 
 ## Syntax
 
-```cpp  
-[ id(  
-   dispid  
-) ]  
+```cpp
+[ id(
+   dispid
+) ]
 ```
 
 ### Parameters
@@ -48,7 +48,7 @@ See the example for [bindable](../windows/bindable.md) for an example of how to 
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -57,4 +57,4 @@ See the example for [bindable](../windows/bindable.md) for an example of how to 
 [Data Member Attributes](../windows/data-member-attributes.md)  
 [defaultvalue](../windows/defaultvalue.md)  
 [in](../windows/in-cpp.md)  
-[out](../windows/out-cpp.md)   
+[out](../windows/out-cpp.md)  

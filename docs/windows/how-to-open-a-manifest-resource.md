@@ -21,7 +21,7 @@ If you open a manifest resource from [Resource View](../windows/resource-view-wi
 
 2. Double-click the .manifest file.
 
-     Your manifest resource opens in the **Text Editor**.
+   Your manifest resource opens in the **Text Editor**.
 
 ### To open a manifest resource in another editor
 

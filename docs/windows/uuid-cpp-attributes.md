@@ -18,10 +18,10 @@ Specifies the unique ID for a class or interface.
 
 ## Syntax
 
-```cpp  
-[ uuid(  
-   "uuid"  
-) ]  
+```cpp
+[ uuid(
+   "uuid"
+) ]
 ```
 
 ### Parameters
@@ -54,7 +54,7 @@ See the [bindable](../windows/bindable.md) example for a sample use of **uuid**.
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -62,4 +62,4 @@ See the [bindable](../windows/bindable.md) example for a sample use of **uuid**.
 [Interface Attributes](../windows/interface-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[uuid](http://msdn.microsoft.com/library/windows/desktop/aa367302)   
+[uuid](http://msdn.microsoft.com/library/windows/desktop/aa367302)  

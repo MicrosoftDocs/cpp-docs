@@ -18,15 +18,15 @@ Initializes a new instance of the **HandleT** class.
 
 ## Syntax
 
-```cpp  
-explicit HandleT(  
-   typename HandleTraits::Type h =   
+```cpp
+explicit HandleT(
+   typename HandleTraits::Type h =
       HandleTraits::GetInvalidValue()  
 );
 
-HandleT(  
-   _Inout_ HandleT&& h  
-);  
+HandleT(
+   _Inout_ HandleT&& h
+);
 ```
 
 ### Parameters

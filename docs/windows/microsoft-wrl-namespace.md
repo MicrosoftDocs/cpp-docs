@@ -18,8 +18,8 @@ Defines the fundamental types that make up the Windows Runtime C++ Template Libr
 
 ## Syntax
 
-```cpp  
-namespace Microsoft::WRL;  
+```cpp
+namespace Microsoft::WRL;
 ```
 
 ## Members

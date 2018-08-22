@@ -18,10 +18,10 @@ Specifies the required component categories of the target class.
 
 ## Syntax
 
-```cpp  
-[ requires_category(   
-  requires_category  
-) ]  
+```cpp
+[ requires_category(
+  requires_category
+) ]
 ```
 
 ### Parameters
@@ -39,18 +39,18 @@ This attribute requires that the [coclass](../windows/coclass.md), [progid](../w
 
 The following code requires that the object implement the Control category.
 
-```cpp  
-// cpp_attr_ref_requires_category.cpp  
-// compile with: /LD  
-#define _ATL_ATTRIBUTES  
-#include "atlbase.h"  
+```cpp
+// cpp_attr_ref_requires_category.cpp
+// compile with: /LD
+#define _ATL_ATTRIBUTES
+#include "atlbase.h"
 #include "atlcom.h"
 
 [module (name="MyLibrary")];
 
-[ coclass, requires_category("CATID_Control"),  
-  uuid("1e1a2436-f3ea-4ff3-80bf-5409370e8144")]  
-class CMyClass {};  
+[ coclass, requires_category("CATID_Control"),
+  uuid("1e1a2436-f3ea-4ff3-80bf-5409370e8144")]
+class CMyClass {};
 ```
 
 ## Requirements
@@ -64,9 +64,9 @@ class CMyClass {};
 |**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [COM Attributes](../windows/com-attributes.md)  
-[implements_category](../windows/implements-category.md)   
+[implements_category](../windows/implements-category.md)  

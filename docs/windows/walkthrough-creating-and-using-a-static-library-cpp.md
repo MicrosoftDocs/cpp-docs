@@ -57,13 +57,13 @@ An understanding of the fundamentals of the C++ language.
 
 2. Add a class named `MyMathFuncs` to do common mathematical operations such as addition, subtraction, multiplication, and division. The code should resemble this:
 
-     [!code-cpp[NVC_Walkthrough_Create_Static_Lib#100](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_1.h)]
+   [!code-cpp[NVC_Walkthrough_Create_Static_Lib#100](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_1.h)]
 
 3. To create a source file for the new class, open the shortcut menu for the **MathFuncsLib** project in **Solution Explorer**, and then choose **Add**, **New Item**. In the **Add New Item** dialog box, in the left pane, under **Visual C++**, select **Code**. In the center pane, select **C++ File (.cpp)**. Specify a name for the source file—for example, *MathFuncsLib.cpp*—and then choose the **Add** button. A blank source file is displayed.
 
 4. Use this source file to implement the functionality for **MyMathFuncs**. The code should resemble this:
 
-     [!code-cpp[NVC_Walkthrough_Create_Static_Lib#110](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_2.cpp)]
+   [!code-cpp[NVC_Walkthrough_Create_Static_Lib#110](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_2.cpp)]
 
 5. Compile the static library by selecting **Build** > **Build Solution** on the menu bar. This creates a static library that can be used by other programs.
 
@@ -76,11 +76,11 @@ An understanding of the fundamentals of the C++ language.
 
 1. On the menu bar, choose **File** > **New** > **Project**.
 
-2. In the left pane of the **New Project** dialog box, expand **Installed, Visual C++**, and then select **Windows Desktop**.  
+2. In the left pane of the **New Project** dialog box, expand **Installed, Visual C++**, and then select **Windows Desktop**.
 
 3. In the center pane, select **Windows Desktop Wizard**.
 
-4. Specify a name for the project—for example, *MyExecRefsLib*—in the **Name** box. In the drop-down list next to **Solution**, select **Add to Solution**. This adds the new project to the solution that contains the static library. Choose the **OK** button.  
+4. Specify a name for the project—for example, *MyExecRefsLib*—in the **Name** box. In the drop-down list next to **Solution**, select **Add to Solution**. This adds the new project to the solution that contains the static library. Choose the **OK** button.
 5. Under **Application type**, select **Console Application (.exe)**.
 
 6. Under **Additioal Options**, un-check the **Precompiled header** check box.
@@ -99,11 +99,11 @@ An understanding of the fundamentals of the C++ language.
 
 4. To reference the `MathFuncsLib.h` header file, you must modify the included directories path. In the **Property Pages** dialog box for **MyExecRefsLib**, expand the **Configuration Properties** node, expand the **C/C++** node, and then select **General**. Next to **Additional Include Directories**, specify the path of the **MathFuncsLib** directory or browse for it.
 
-     To browse for the directory path, open the property value drop-down list, and then choose **Edit**. In the **Additional Include Directories** dialog box, in the text box, select a blank line and then choose the ellipsis button (**...**) at the end of the line. In the **Select Directory** dialog box, select the **MathFuncsLib** directory and then choose **Select Folder** button to save your selection and close the dialog box. In the **Additional Include Directories** dialog box, choose the **OK** button, and then in the **Property Pages** dialog box, choose the **OK** button to save your changes to the project.
+   To browse for the directory path, open the property value drop-down list, and then choose **Edit**. In the **Additional Include Directories** dialog box, in the text box, select a blank line and then choose the ellipsis button (**...**) at the end of the line. In the **Select Directory** dialog box, select the **MathFuncsLib** directory and then choose **Select Folder** button to save your selection and close the dialog box. In the **Additional Include Directories** dialog box, choose the **OK** button, and then in the **Property Pages** dialog box, choose the **OK** button to save your changes to the project.
 
 5. You can now use the `MyMathFuncs` class in this app. To do this, replace the contents of `MyExecRefsLib.cpp` with this code:
 
-     [!code-cpp[NVC_Walkthrough_Create_Static_Lib#120](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_3.cpp)]
+   [!code-cpp[NVC_Walkthrough_Create_Static_Lib#120](../windows/codesnippet/CPP/walkthrough-creating-and-using-a-static-library-cpp_3.cpp)]
 
 6. Build the executable by choosing **Build** > **Build Solution** on the menu bar.
 
@@ -115,11 +115,11 @@ An understanding of the fundamentals of the C++ language.
 
 2. To run the project, on the menu bar, choose **Debug** > **Start Without Debugging**. The output should resemble this:
 
-    ```Output  
-    a + b = 106.4  
-    a - b = -91.6  
-    a * b = 732.6  
-    a / b = 0.0747475  
+    ```Output
+    a + b = 106.4
+    a - b = -91.6
+    a * b = 732.6
+    a / b = 0.0747475
     ```
 
 ## See Also

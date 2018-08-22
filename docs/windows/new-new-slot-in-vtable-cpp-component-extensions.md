@@ -43,54 +43,54 @@ Compiler option: `/clr`
 
 The following sample shows the effect of **new**.
 
-```cpp  
-// newslot.cpp  
-// compile with: /clr  
-ref class C {  
-public:  
-   virtual void f() {  
-      System::Console::WriteLine("C::f() called");  
+```cpp
+// newslot.cpp
+// compile with: /clr
+ref class C {
+public:
+   virtual void f() {
+      System::Console::WriteLine("C::f() called");
    }
 
-   virtual void g() {  
-      System::Console::WriteLine("C::g() called");  
-   }  
+   virtual void g() {
+      System::Console::WriteLine("C::g() called");
+   }
 };
 
-ref class D : public C {  
-public:  
-   virtual void f() new {  
-      System::Console::WriteLine("D::f() called");  
+ref class D : public C {
+public:
+   virtual void f() new {
+      System::Console::WriteLine("D::f() called");
    }
 
-   virtual void g() override {  
-      System::Console::WriteLine("D::g() called");  
-   }  
+   virtual void g() override {
+      System::Console::WriteLine("D::g() called");
+   }
 };
 
-ref class E : public D {  
-public:  
-   virtual void f() override {  
-      System::Console::WriteLine("E::f() called");  
-   }  
+ref class E : public D {
+public:
+   virtual void f() override {
+      System::Console::WriteLine("E::f() called");
+   }
 };
 
-int main() {  
-   D^ d = gcnew D;  
+int main() {
+   D^ d = gcnew D;
    C^ c = gcnew D;
 
-   c->f();   // calls C::f  
+   c->f();   // calls C::f
    d->f();   // calls D::f
 
-   c->g();   // calls D::g  
+   c->g();   // calls D::g
    d->g();   // calls D::g
 
-   D ^ e = gcnew E;  
-   e->f();   // calls E::f  
-}  
+   D ^ e = gcnew E;
+   e->f();   // calls E::f
+}
 ```
 
-```Output  
+```Output
 C::f() called
 
 D::f() called
@@ -99,7 +99,7 @@ D::g() called
 
 D::g() called
 
-E::f() called  
+E::f() called
 ```
 
 ## See Also

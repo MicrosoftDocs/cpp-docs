@@ -42,4 +42,4 @@ Win32
 
 ## See Also
 
-[String Editor](../windows/string-editor.md)   
+[String Editor](../windows/string-editor.md)  

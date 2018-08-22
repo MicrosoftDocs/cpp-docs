@@ -54,7 +54,7 @@ ref class List {};
 
 generic <typename T>
 
-ref class Queue : public List<T> {};  
+ref class Queue : public List<T> {};
 ```
 
 ### Constraint
@@ -68,50 +68,50 @@ Handles types and value types may be used as type arguments. In the generic defi
 When using a reference type as a generic type argument, use the handle syntax. When using a value type as a generic type argument, use the name of the type directly.
 
 ```cpp
-// generics_overview_2.cpp  
-// compile with: /clr  
+// generics_overview_2.cpp
+// compile with: /clr
 generic <typename T>
 
-ref class GenericType {};  
+ref class GenericType {};
 ref class ReferenceType {};
 
 value struct ValueType {};
 
-int main() {  
-    GenericType<ReferenceType^> x;  
-    GenericType<ValueType> y;  
-}  
+int main() {
+    GenericType<ReferenceType^> x;
+    GenericType<ValueType> y;
+}
 ```
 
 ## Type Parameters
 
 Type parameters in a generic class are treated like other identifiers. However, because the type is not known, there are restrictions on their use. For example, you cannot use members and methods of the type parameter class unless the type parameter is known to support these members. That is, to access a member through the type parameter, you must add the type that contains the member to the type parameter's constraint list.
 
-```cpp  
-// generics_overview_3.cpp  
+```cpp
+// generics_overview_3.cpp
 // compile with: /clr
-interface class I {  
-   void f1();  
-   void f2();  
+interface class I {
+   void f1();
+   void f2();
 };
 
-ref struct R : public I {  
-   virtual void f1() {}  
-   virtual void f2() {}   
-   virtual void f3() {}   
+ref struct R : public I {
+   virtual void f1() {}
+   virtual void f2() {}
+   virtual void f3() {}
 };
 
-generic <typename T>  
-where T : I  
-void f(T t) {  
-   t->f1();  
-   t->f2();  
-   safe_cast<R^>(t)->f3();  
+generic <typename T>
+where T : I
+void f(T t) {
+   t->f1();
+   t->f2();
+   safe_cast<R^>(t)->f3();
 }
 
-int main() {  
-   f(gcnew R());  
-}  
+int main() {
+   f(gcnew R());
+}
 ```
 
 These restrictions apply to operators as well. An unconstrained generic type parameter may not use the `==` and `!=` operators to compare two instances of the type parameter, in case the type does not support these operators. These checks are necessary for generics, but not for templates, because generics may be specialized at runtime with any class that satisfies the constraints, when it is too late to check for the use of invalid members.

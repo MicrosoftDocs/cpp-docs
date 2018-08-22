@@ -37,7 +37,7 @@ You must explicitly declare a data member to contain the property value. For an 
 
 ### Syntax
 
-```cpp  
+```cpp
 property type property_name;
 
 property type property_name { 
@@ -53,7 +53,7 @@ property type property_name[index_list] {
 property type default[index_list] { 
    access-modifier type get(index_list) inheritance-modifier {property_body};
    access-modifier void set(index_list, value) inheritance-modifier {property_body};
-}  
+}
 ```
 
 ### Parameters
@@ -93,7 +93,7 @@ Compiler option: `/ZW`
 
 ### Syntax
 
-```cpp  
+```cpp
 modifier property type property_name;
 
 modifier property type property_name {
@@ -105,7 +105,7 @@ modifier property type property_name[index-list, value] {
    modifier type get(index-list);
 
 modifier property type default[index];
-}  
+}
 ```
 
 ### Parameters
@@ -169,46 +169,46 @@ Compiler option: `/clr`
 
 The following example shows the declaration and use of a property data member and a property block.  It also shows that a property accessor can be defined out of class.
 
-```cpp  
-// mcppv2_property.cpp  
-// compile with: /clr  
-using namespace System;  
-public ref class C {  
-   int MyInt;  
+```cpp
+// mcppv2_property.cpp
+// compile with: /clr
+using namespace System;
+public ref class C {
+   int MyInt;
 public:
 
-   // property data member  
+   // property data member
    property String ^ Simple_Property;
 
-   // property block  
+   // property block
    property int Property_Block {
 
       int get();
 
-      void set(int value) {  
-         MyInt = value;  
-      }  
-   }  
+      void set(int value) {
+         MyInt = value;
+      }
+   }
 };
 
-int C::Property_Block::get() {  
-   return MyInt;  
+int C::Property_Block::get() {
+   return MyInt;
 }
 
-int main() {  
-   C ^ MyC = gcnew C();  
-   MyC->Simple_Property = "test";  
+int main() {
+   C ^ MyC = gcnew C();
+   MyC->Simple_Property = "test";
    Console::WriteLine(MyC->Simple_Property);
 
-   MyC->Property_Block = 21;  
-   Console::WriteLine(MyC->Property_Block);  
-}  
+   MyC->Property_Block = 21;
+   Console::WriteLine(MyC->Property_Block);
+}
 ```
 
-```Output  
+```Output
 test
 
-21  
+21
 ```
 
 ## See Also

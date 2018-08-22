@@ -18,8 +18,8 @@ Initializes an instance of the **AsyncBase** class.
 
 ## Syntax
 
-```cpp  
-AsyncBase();  
+```cpp
+AsyncBase();
 ```
 
 ## Requirements

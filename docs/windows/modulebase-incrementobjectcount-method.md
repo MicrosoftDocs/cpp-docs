@@ -18,8 +18,8 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-virtual long IncrementObjectCount() = 0;  
+```cpp
+virtual long IncrementObjectCount() = 0;
 ```
 
 ## Return Value

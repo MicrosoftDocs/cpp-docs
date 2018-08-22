@@ -17,9 +17,9 @@ Indicates whether the first parameter is less than the second parameter.
 
 ## Syntax
 
-```cpp  
-inline bool operator<(  
-    const HStringReference& lhs,   
+```cpp
+inline bool operator<(
+    const HStringReference& lhs,
     const HStringReference& rhs) throw()  
 ```
 

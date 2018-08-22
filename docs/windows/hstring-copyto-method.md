@@ -16,10 +16,10 @@ Copies the current **HString** object to an HSTRING object.
 
 ## Syntax
 
-```cpp  
-HRESULT CopyTo(  
-   _Out_ HSTRING *str  
-   ) const throw();  
+```cpp
+HRESULT CopyTo(
+   _Out_ HSTRING *str
+   ) const throw();
 ```
 
 ### Parameters

@@ -18,8 +18,8 @@ Retrieves an **SRWLockSharedTraits** object that is always invalid.
 
 ## Syntax
 
-```cpp  
-inline static Type GetInvalidValue();  
+```cpp
+inline static Type GetInvalidValue();
 ```
 
 ## Return Value

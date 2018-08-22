@@ -18,8 +18,8 @@ Defines Resource Acquisition Is Initialization (RAII) wrapper types that simplif
 
 ## Syntax
 
-```cpp  
-namespace Microsoft::WRL::Wrappers;  
+```cpp
+namespace Microsoft::WRL::Wrappers;
 ```
 
 ## Members

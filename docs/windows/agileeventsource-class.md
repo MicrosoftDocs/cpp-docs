@@ -28,7 +28,7 @@ class AgileEventSource
 *TDelegateInterface*  
 The interface to a delegate that represents an event handler.
 
- *TEventSourceOptions*  
+*TEventSourceOptions*  
 An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
 
 ## Remarks
@@ -37,14 +37,14 @@ The vast majority of components in the Windows Runtime are agile components. For
 
 ## Inheritance Hierarchy
 
- `EventSource`
+`EventSource`
 `AgileEventSource`
 
 ## Requirements
 
- **Header:** event.h
+**Header:** event.h
 
- **Namespace:** Microsoft::WRL
+**Namespace:** Microsoft::WRL
 
 ## Members
 

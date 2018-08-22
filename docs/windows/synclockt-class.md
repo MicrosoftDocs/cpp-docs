@@ -18,11 +18,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template <  
-   typename SyncTraits  
->  
-class SyncLockT;  
+```cpp
+template <
+   typename SyncTraits
+>
+class SyncLockT;
 ```
 
 ### Parameters

@@ -18,10 +18,10 @@ Invokes the current progress event handler.
 
 ## Syntax
 
-```cpp  
-void FireProgress(  
-   const typename ProgressTraits::Arg2Type arg  
-);  
+```cpp
+void FireProgress(
+   const typename ProgressTraits::Arg2Type arg
+);
 ```
 
 ### Parameters

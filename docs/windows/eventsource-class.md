@@ -18,9 +18,9 @@ Represents a non-agile event. **EventSource** member functions add, remove, and 
 
 ## Syntax
 
-```cpp  
-template<typename TDelegateInterface>  
-class EventSource;  
+```cpp
+template<typename TDelegateInterface>
+class EventSource;
 ```
 
 ### Parameters

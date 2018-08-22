@@ -18,8 +18,8 @@ Specifies the type of result returned by the `GetResults()` method.
 
 ## Syntax
 
-```cpp  
-enum AsyncResultType;  
+```cpp
+enum AsyncResultType;
 ```
 
 ## Members

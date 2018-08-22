@@ -26,41 +26,41 @@ The following C++/CLI sample shows how to use an **interior_ptr** with a value t
 
 ### Code
 
-```cpp  
-// interior_ptr_value_types.cpp  
-// compile with: /clr  
-value struct V {  
-   V(int i) : data(i){}  
-   int data;  
+```cpp
+// interior_ptr_value_types.cpp
+// compile with: /clr
+value struct V {
+   V(int i) : data(i){}
+   int data;
 };
 
-int main() {  
-   V v(1);  
+int main() {
+   V v(1);
    System::Console::WriteLine(v.data);
 
-   // pointing to a value type  
-   interior_ptr<V> pv = &v;  
+   // pointing to a value type
+   interior_ptr<V> pv = &v;
    pv->data = 2;
 
-   System::Console::WriteLine(v.data);  
+   System::Console::WriteLine(v.data);
    System::Console::WriteLine(pv->data);
 
-   // pointing into a value type  
-   interior_ptr<int> pi = &v.data;  
-   *pi = 3;  
-   System::Console::WriteLine(*pi);  
-   System::Console::WriteLine(v.data);  
-   System::Console::WriteLine(pv->data);  
-}  
-```  
+   // pointing into a value type
+   interior_ptr<int> pi = &v.data;
+   *pi = 3;
+   System::Console::WriteLine(*pi);
+   System::Console::WriteLine(v.data);
+   System::Console::WriteLine(pv->data);
+}
+```
 
-```Output  
-1  
-2  
-2  
-3  
-3  
-3  
+```Output
+1
+2
+2
+3
+3
+3
 ```
 
 ## Example
@@ -73,16 +73,16 @@ In the body of a non-static member-function of a value type `V`, **this** is an 
 
 ### Code
 
-```cpp  
-// interior_ptr_value_types_this.cpp  
-// compile with: /clr /LD  
-value struct V {  
-   int data;  
-   void f() {  
-      interior_ptr<V> pv1 = this;  
-      // V* pv2 = this;   error  
-   }  
-};  
+```cpp
+// interior_ptr_value_types_this.cpp
+// compile with: /clr /LD
+value struct V {
+   int data;
+   void f() {
+      interior_ptr<V> pv1 = this;
+      // V* pv2 = this;   error
+   }
+};
 ```
 
 ## Example
@@ -95,34 +95,34 @@ The address of a static Visual C++ type member yields a native pointer.  The add
 
 ### Code
 
-```cpp  
-// interior_ptr_value_static.cpp  
-// compile with: /clr  
-using namespace System;  
+```cpp
+// interior_ptr_value_static.cpp
+// compile with: /clr
+using namespace System;
 value struct V { int i; };
 
-ref struct G {  
-   static V v = {22};   
-   static int i = 23;   
-   static String^ pS = "hello";   
+ref struct G {
+   static V v = {22};
+   static int i = 23;
+   static String^ pS = "hello";
 };
 
-int main() {  
-   interior_ptr<int> p1 = &G::v.i;  
+int main() {
+   interior_ptr<int> p1 = &G::v.i;
    Console::WriteLine(*p1);
 
-   interior_ptr<int> p2 = &G::i;  
+   interior_ptr<int> p2 = &G::i;
    Console::WriteLine(*p2);
 
-   interior_ptr<String^> p3 = &G::pS;  
-   Console::WriteLine(*p3);  
-}  
+   interior_ptr<String^> p3 = &G::pS;
+   Console::WriteLine(*p3);
+}
 ```
 
 ```Output 
-22  
-23  
-hello  
+22
+23
+hello
 ```
 
 ## See Also

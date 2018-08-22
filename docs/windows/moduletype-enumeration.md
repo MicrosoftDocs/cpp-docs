@@ -18,8 +18,8 @@ Specifies whether a module should support an in-process server or an out-of-proc
 
 ## Syntax
 
-```cpp  
-enum ModuleType;  
+```cpp
+enum ModuleType;
 ```
 
 ## Members

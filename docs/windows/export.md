@@ -18,8 +18,8 @@ Causes a data structure to be placed in the .idl file.
 
 ## Syntax
 
-```cpp  
-[export]  
+```cpp
+[export]
 ```
 
 ## Remarks
@@ -36,15 +36,15 @@ The typedefs valid for export are base types, structs, unions, enums, or type id
 
 The following code shows how to use the **export** attribute:
 
-```cpp  
-// cpp_attr_ref_export.cpp  
-// compile with: /LD  
+```cpp
+// cpp_attr_ref_export.cpp
+// compile with: /LD
 [module(name="MyLibrary")];
 
-[export]  
-struct MyStruct {  
-   int i;  
-};  
+[export]
+struct MyStruct {
+   int i;
+};
 ```
 
 ## Requirements
@@ -58,9 +58,9 @@ struct MyStruct {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [Compiler Attributes](../windows/compiler-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  

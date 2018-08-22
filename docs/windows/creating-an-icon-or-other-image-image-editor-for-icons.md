@@ -25,7 +25,7 @@ You can create a new image (bitmap, icon, cursor, or toolbar), then use the Imag
 
 2. In the [Insert Resource dialog box](../windows/add-resource-dialog-box.md), select the type of image resource you'd like to create (**Bitmap**, for example) then click **New**.
 
-     If a plus sign (**+**) appears next to the image resource type in the **Insert Resource** dialog box, it means that toolbar templates are available. Click the plus sign to expand the list of templates, select a template, and click **New**.
+   If a plus sign (**+**) appears next to the image resource type in the **Insert Resource** dialog box, it means that toolbar templates are available. Click the plus sign to expand the list of templates, select a template, and click **New**.
 
 ### To add a new image resource to a project in a .NET programming language
 
@@ -37,7 +37,7 @@ You can create a new image (bitmap, icon, cursor, or toolbar), then use the Imag
 
 4. In the **Templates** pane, choose the resource type you'd like to add to your project.
 
-     The resource is added to your project in **Solution Explorer** and the resource opens in the [Image editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the Image editor to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).
+   The resource is added to your project in **Solution Explorer** and the resource opens in the [Image editor](../windows/image-editor-for-icons.md). You can now use all the tools available in the Image editor to modify your image. For more information on adding images to a managed project, see [Loading a Picture at Design Time](/dotnet/framework/winforms/controls/how-to-load-a-picture-using-the-designer-windows-forms).
 
    > [!NOTE]
    > Any managed resources you want to edit must be linked resources. The Visual Studio resource editors do not support editing embedded resources. For more information, see [Creating Resource Files](/dotnet/framework/resources/creating-resource-files-for-desktop-apps) in the *.NET Framework Developer's Guide*.

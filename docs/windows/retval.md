@@ -18,8 +18,8 @@ Designates the parameter that receives the return value of the member.
 
 ## Syntax
 
-```cpp  
-[retval]  
+```cpp
+[retval]
 ```
 
 ## Remarks
@@ -43,10 +43,10 @@ See the example for [bindable](../windows/bindable.md) for a sample use of **ret
 |**Required attributes**|**out**|
 |**Invalid attributes**|**in**|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Parameter Attributes](../windows/parameter-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)   
+[Method Attributes](../windows/method-attributes.md)  

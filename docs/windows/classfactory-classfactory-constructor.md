@@ -16,8 +16,8 @@ ms.workload: ["cplusplus", "uwp"]
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW ClassFactory();  
+```cpp
+WRL_NOTHROW ClassFactory();
 ```
 
 ## Return Value

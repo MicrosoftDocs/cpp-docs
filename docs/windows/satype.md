@@ -18,10 +18,10 @@ Specifies the data type of the `SAFEARRAY` structure.
 
 ## Syntax
 
-```cpp  
-[ satype(  
-   data_type  
-) ]  
+```cpp
+[ satype(
+   data_type
+) ]
 ```
 
 ### Parameters
@@ -49,15 +49,15 @@ The **satype** C++ attribute specifies the data type of the `SAFEARRAY`.
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_satype.cpp  
-// compile with: /LD  
-#include "unknwn.h"  
-[module(name="MyModule")];  
-[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface A {  
-   [id(1)] HRESULT MyMethod ([in, satype("BSTR")] SAFEARRAY **p);  
-};  
+```cpp
+// cpp_attr_ref_satype.cpp
+// compile with: /LD
+#include "unknwn.h"
+[module(name="MyModule")];
+[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]
+__interface A {
+   [id(1)] HRESULT MyMethod ([in, satype("BSTR")] SAFEARRAY **p);
+};
 ```
 
 ## See Also
@@ -65,4 +65,4 @@ __interface A {
 [Compiler Attributes](../windows/compiler-attributes.md)  
 [Parameter Attributes](../windows/parameter-attributes.md)  
 [Method Attributes](../windows/method-attributes.md)  
-[id](../windows/id.md)   
+[id](../windows/id.md)  

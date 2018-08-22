@@ -53,41 +53,41 @@ This idiom could be used when you want to build on an existing generic API with 
 
 ### Code
 
-```cpp  
-// templates_and_generics.cpp  
-// compile with: /clr  
+```cpp
+// templates_and_generics.cpp
+// compile with: /clr
 using namespace System;
 
-generic <class ItemType>  
-ref class MyGeneric {  
+generic <class ItemType>
+ref class MyGeneric {
    ItemType m_item;
 
-public:  
-   MyGeneric(ItemType item) : m_item(item) {}  
-   void F() {   
-      Console::WriteLine("F");   
-   }  
+public:
+   MyGeneric(ItemType item) : m_item(item) {}
+   void F() {
+      Console::WriteLine("F");
+   }
 };
 
-template <class T>  
-public ref class MyRef {  
+template <class T>
+public ref class MyRef {
 MyGeneric<T>^ ig;
 
-public:  
-   MyRef(T t) {  
-      ig = gcnew MyGeneric<T>(t);  
-      ig->F();  
-    }      
+public:
+   MyRef(T t) {
+      ig = gcnew MyGeneric<T>(t);
+      ig->F();
+    } 
 };
 
-int main() {  
-   // instantiate the template  
-   MyRef<int>^ mref = gcnew MyRef<int>(11);  
-}  
+int main() {
+   // instantiate the template
+   MyRef<int>^ mref = gcnew MyRef<int>(11);
+}
 ```
 
-```Output  
-F  
+```Output
+F
 ```
 
 ## See Also

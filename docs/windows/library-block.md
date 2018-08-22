@@ -18,8 +18,8 @@ Places a construct inside the IDL library block.
 
 ## Syntax
 
-```cpp  
-[library_block]  
+```cpp
+[library_block]
 ```
 
 ## Remarks
@@ -30,15 +30,15 @@ When you place a construct inside the library block, you ensure that it will be 
 
 In the following code, a custom interface is placed inside the library block.
 
-```cpp  
-// cpp_attr_ref_library_block.cpp  
-// compile with: /LD  
-#include <windows.h>  
-[module(name="MyLib")];  
-[object, library_block, uuid("9E66A290-4365-11D2-A997-00C04FA37DDB")]  
-__interface IMyInterface {  
-   HRESULT f1();  
-};  
+```cpp
+// cpp_attr_ref_library_block.cpp
+// compile with: /LD
+#include <windows.h>
+[module(name="MyLib")];
+[object, library_block, uuid("9E66A290-4365-11D2-A997-00C04FA37DDB")]
+__interface IMyInterface {
+   HRESULT f1();
+};
 ```
 
 ## Requirements
@@ -52,9 +52,9 @@ __interface IMyInterface {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [Compiler Attributes](../windows/compiler-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  

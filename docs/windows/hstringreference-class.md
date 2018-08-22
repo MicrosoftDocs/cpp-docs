@@ -17,8 +17,8 @@ Represents an HSTRING that is created from an existing string.
 
 ## Syntax
 
-```cpp  
-class HStringReference;  
+```cpp
+class HStringReference;
 ```
 
 ## Remarks

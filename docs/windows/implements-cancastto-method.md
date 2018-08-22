@@ -18,11 +18,11 @@ Gets a pointer to the specified interface.
 
 ## Syntax
 
-```cpp  
-__forceinline HRESULT CanCastTo(  
-   REFIID riid,  
-   _Deref_out_ void **ppv  
-);  
+```cpp
+__forceinline HRESULT CanCastTo(
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
 ```
 
 ### Parameters

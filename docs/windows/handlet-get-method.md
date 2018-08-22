@@ -18,8 +18,8 @@ Gets the value of the underlying handle.
 
 ## Syntax
 
-```cpp  
-typename HandleTraits::Type Get() const;  
+```cpp
+typename HandleTraits::Type Get() const;
 ```
 
 ## Return Value

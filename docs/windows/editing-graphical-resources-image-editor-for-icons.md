@@ -60,4 +60,4 @@ None
 ## See Also
 
 [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
-[Image Editor for Icons](../windows/image-editor-for-icons.md)   
+[Image Editor for Icons](../windows/image-editor-for-icons.md)  

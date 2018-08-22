@@ -18,12 +18,12 @@ Compares two numbers to determine whether they are equal.
 
 ## Syntax
 
-```cpp  
-template<typename T, typename U>  
-inline bool SafeEquals (  
-   const T t,  
-   const U u  
-) throw ();  
+```cpp
+template<typename T, typename U>
+inline bool SafeEquals (
+   const T t,
+   const U u
+) throw ();
 ```
 
 ### Parameters

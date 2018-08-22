@@ -19,7 +19,7 @@ Normally, when you are working in the **Menu** editor, a menu resource is displa
 
 1. Right-click the menu and choose **View as Popup** from the shortcut menu.
 
-     This is only a viewing preference and will not modify your menu.
+   This is only a viewing preference and will not modify your menu.
 
    > [!NOTE]
    > To change back to the menu-bar view, click **View as Popup** again (which removes the check mark and returns your menu-bar view).
@@ -31,4 +31,4 @@ Win32
 ## See Also
 
 [Creating Pop-up Menus](../windows/creating-pop-up-menus.md)  
-[Menu Editor](../windows/menu-editor.md)   
+[Menu Editor](../windows/menu-editor.md)  

@@ -18,10 +18,10 @@ Starts the asynchronous operation.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   Start  
-)(void);  
+```cpp
+STDMETHOD(
+   Start
+)(void);
 ```
 
 ## Return Value

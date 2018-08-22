@@ -18,10 +18,10 @@ Emits the specified string, without the quote characters, into the generated .id
 
 ## Syntax
 
-```cpp  
-[ cpp_quote(  
-   "statement"  
-) ];  
+```cpp
+[ cpp_quote(
+   "statement"
+) ];
 ```
 
 ### Parameters
@@ -52,9 +52,9 @@ See the example for [dual](../windows/dual.md) for an example use how to use **c
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  

@@ -18,12 +18,12 @@ Initializes a newly created proxy and returns an interface pointer to that proxy
 
 ## Syntax
 
-```cpp  
-STDMETHODIMP UnmarshalInterface(  
-   __in IStream *pStm,  
-   __in REFIID riid,  
-   __deref_out void **ppv  
-) override;  
+```cpp
+STDMETHODIMP UnmarshalInterface(
+   __in IStream *pStm,
+   __in REFIID riid,
+   __deref_out void **ppv
+) override;
 ```
 
 ### Parameters

@@ -18,8 +18,8 @@ Identifies a reference pointer.
 
 ## Syntax
 
-```cpp  
-[ref]  
+```cpp
+[ref]
 ```
 
 ## Remarks
@@ -30,16 +30,16 @@ The **ref** C++ attribute has the same functionality as the [ref](http://msdn.mi
 
 The following code shows how to use the **ref** attribute:
 
-```cpp  
-// cpp_attr_ref_ref.cpp  
-// compile with: /LD  
-#include <windows.h>   
-[module(name="ATLFIRELib")];  
-[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IFireTabCtrl  
-{  
-   [id(1), unique] char * GetFirstName([in, ref] char * pszFullName );   
-};  
+```cpp
+// cpp_attr_ref_ref.cpp
+// compile with: /LD
+#include <windows.h>
+[module(name="ATLFIRELib")];
+[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]
+__interface IFireTabCtrl
+{
+   [id(1), unique] char * GetFirstName([in, ref] char * pszFullName );
+};
 ```
 
 ## Requirements
@@ -53,10 +53,10 @@ __interface IFireTabCtrl
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Parameter Attributes](../windows/parameter-attributes.md)   
+[Parameter Attributes](../windows/parameter-attributes.md)  

@@ -18,20 +18,20 @@ Assigns a pointer to an interface, if available, to the specified pointer variab
 
 ## Syntax
 
-```cpp  
-HRESULT CopyTo(  
-   REFIID riid,  
-   _Deref_out_ IInspectable** ptr  
+```cpp
+HRESULT CopyTo(
+   REFIID riid,
+   _Deref_out_ IInspectable** ptr
 );
 
-template<typename U>  
-HRESULT CopyTo(  
-   _Deref_out_ U** ptr  
+template<typename U>
+HRESULT CopyTo(
+   _Deref_out_ U** ptr
 );
 
-HRESULT CopyTo(  
-   _Deref_out_ IWeakReference** ptr  
-);  
+HRESULT CopyTo(
+   _Deref_out_ IWeakReference** ptr
+);
 ```
 
 ### Parameters

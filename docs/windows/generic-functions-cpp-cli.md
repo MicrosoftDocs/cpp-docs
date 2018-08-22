@@ -37,13 +37,13 @@ A generic function is a function that is declared with type parameters. When cal
 
 ### Syntax
 
-```cpp  
-[attributes] [modifiers]  
-return-type identifier<type-parameter identifier(s)>  
+```cpp
+[attributes] [modifiers]
+return-type identifier<type-parameter identifier(s)>
 [type-parameter-constraints clauses]
 
 ([formal-parameters])  
-{function-body}  
+{function-body}
 ```
 
 ### Parameters
@@ -88,92 +88,92 @@ Compiler option: `/clr`
 
 The following code sample demonstrates a generic function.
 
-```cpp  
-// generics_generic_function_1.cpp  
-// compile with: /clr  
-generic <typename ItemType>  
+```cpp
+// generics_generic_function_1.cpp
+// compile with: /clr
+generic <typename ItemType>
 void G(int i) {}
 
-ref struct A {  
-   generic <typename ItemType>  
+ref struct A {
+   generic <typename ItemType>
    void G(ItemType) {}
 
-   generic <typename ItemType>  
-   static void H(int i) {}  
+   generic <typename ItemType>
+   static void H(int i) {}
 };
 
-int main() {  
+int main() {
    A myObject;
 
-   // generic function call  
+   // generic function call
    myObject.G<int>(10);
 
-   // generic function call with type parameters deduced  
+   // generic function call with type parameters deduced
    myObject.G(10);
 
-   // static generic function call  
+   // static generic function call
    A::H<int>(10);
 
-   // global generic function call  
-   G<int>(10);  
-}  
+   // global generic function call
+   G<int>(10);
+}
 ```
 
 Generic functions can be overloaded based on signature or arity, the number of type parameters on a function. Also, generic functions can be overloaded with non-generic functions of the same name, as long as the functions differ in some type parameters. For example, the following functions can be overloaded:
 
-```cpp  
-// generics_generic_function_2.cpp  
-// compile with: /clr /c  
-ref struct MyClass {  
+```cpp
+// generics_generic_function_2.cpp
+// compile with: /clr /c
+ref struct MyClass {
    void MyMythod(int i) {}
 
-   generic <class T>   
+   generic <class T>
    void MyMythod(int i) {}
 
-   generic <class T, class V>   
-   void MyMythod(int i) {}  
-};  
+   generic <class T, class V>
+   void MyMythod(int i) {}
+};
 ```
 
 The following example uses a generic function to find the first element in an array. It declares `MyClass`, which inherits from the base class `MyBaseClass`. `MyClass` contains a generic function, `MyFunction`, which calls another generic function, `MyBaseClassFunction`, within the base class. In `main`, the generic function, `MyFunction`, is called using different type arguments.
 
-```cpp  
-// generics_generic_function_3.cpp  
-// compile with: /clr  
+```cpp
+// generics_generic_function_3.cpp
+// compile with: /clr
 using namespace System;
 
-ref class MyBaseClass {  
-protected:  
-   generic <class ItemType>  
-   ItemType MyBaseClassFunction(ItemType item) {  
-      return item;  
-   }  
+ref class MyBaseClass {
+protected:
+   generic <class ItemType>
+   ItemType MyBaseClassFunction(ItemType item) {
+      return item;
+   }
 };
 
-ref class MyClass: public MyBaseClass {  
-public:  
-   generic <class ItemType>  
-   ItemType MyFunction(ItemType item) {  
-      return MyBaseClass::MyBaseClassFunction<ItemType>(item);  
-   }  
+ref class MyClass: public MyBaseClass {
+public:
+   generic <class ItemType>
+   ItemType MyFunction(ItemType item) {
+      return MyBaseClass::MyBaseClassFunction<ItemType>(item);
+   }
 };
 
-int main() {  
+int main() {
    MyClass^ myObj = gcnew MyClass();
 
-   // Call MyFunction using an int.  
-   Console::WriteLine("My function returned an int: {0}",  
+   // Call MyFunction using an int.
+   Console::WriteLine("My function returned an int: {0}",
                            myObj->MyFunction<int>(2003));
 
-   // Call MyFunction using a string.  
-   Console::WriteLine("My function returned a string: {0}",  
-   myObj->MyFunction<String^>("Hello generic functions!"));  
-}  
+   // Call MyFunction using a string.
+   Console::WriteLine("My function returned a string: {0}",
+   myObj->MyFunction<String^>("Hello generic functions!"));
+}
 ```
 
-```Output  
-My function returned an int: 2003  
-My function returned a string: Hello generic functions!  
+```Output
+My function returned an int: 2003
+My function returned a string: Hello generic functions!
 ```
 
 ## See Also

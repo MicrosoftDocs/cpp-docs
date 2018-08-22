@@ -18,11 +18,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template <  
-   typename T  
->  
-class ComPtrRef : public ComPtrRefBase<T>;  
+```cpp
+template <
+   typename T
+>
+class ComPtrRef : public ComPtrRefBase<T>;
 ```
 
 #### Parameters

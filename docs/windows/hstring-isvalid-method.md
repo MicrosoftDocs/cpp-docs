@@ -17,7 +17,7 @@ Indicates whether the current **HString** object is empty or not.
 
 ## Syntax
 
-```cpp  
+```cpp
 bool IsValid() const throw()  
 ```
 

@@ -18,8 +18,8 @@ Prohibits assignment to a data member.
 
 ## Syntax
 
-```cpp  
-[readonly]  
+```cpp
+[readonly]
 ```
 
 ## Remarks
@@ -32,18 +32,18 @@ If you want to prohibit modification of a method parameter, then use the [in](..
 
 The following code shows a use of the **readonly** attribute:
 
-```cpp  
-// cpp_attr_ref_readonly.cpp  
-// compile with: /LD  
-[idl_quote("midl_pragma warning(disable:2461)")];  
-#include "unknwn.h"  
+```cpp
+// cpp_attr_ref_readonly.cpp
+// compile with: /LD
+[idl_quote("midl_pragma warning(disable:2461)")];
+#include "unknwn.h"
 [module(name="ATLFIRELib")];
 
-[dispinterface, uuid(11111111-1111-1111-1111-111111111111)]  
-__interface IFireTabCtrl  
-{  
-   [readonly, id(1)] int i();  
-};  
+[dispinterface, uuid(11111111-1111-1111-1111-111111111111)]
+__interface IFireTabCtrl
+{
+   [readonly, id(1)] int i();
+};
 ```
 
 ## Requirements
@@ -57,9 +57,9 @@ __interface IFireTabCtrl
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Data Member Attributes](../windows/data-member-attributes.md)   
+[Data Member Attributes](../windows/data-member-attributes.md)  

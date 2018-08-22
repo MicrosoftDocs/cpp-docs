@@ -43,4 +43,4 @@ Provides links to reference topic describing the individual attributes and their
 Describes debugging attributed programs.
 
 [__super](../cpp/super.md)and [__interface](../cpp/interface.md)  
-Links to new C++ keywords related to attributed programming.  
+Links to new C++ keywords related to attributed programming.

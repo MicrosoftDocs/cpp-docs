@@ -18,16 +18,16 @@ Sets the specified `ComPtr` pointer parameter to represent the specified interfa
 
 ## Syntax
 
-```cpp  
-template<typename U>  
-HRESULT As(  
-   _Out_ ComPtr<U>* ptr  
+```cpp
+template<typename U>
+HRESULT As(
+   _Out_ ComPtr<U>* ptr
 );
 
-template<typename U>  
-HRESULT As(  
-   _Out_ Details::ComPtrRef<ComPtr<U>> ptr  
-);  
+template<typename U>
+HRESULT As(
+   _Out_ Details::ComPtrRef<ComPtr<U>> ptr
+);
 ```
 
 ### Parameters

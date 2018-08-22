@@ -19,11 +19,11 @@ You can create a runtime dialog box that a user cannot exit. This kind of dialog
 
 1. In the **Properties** pane for the dialog box, set the **System Menu** property to **false**.
 
-     This disables the dialog box system menu and **Close** button.
+   This disables the dialog box system menu and **Close** button.
 
 2. In the dialog box form, delete the **Cancel** and **OK** buttons.
 
-     At run time, a user cannot exit a modal dialog box that has these characteristics.
+   At run time, a user cannot exit a modal dialog box that has these characteristics.
 
 To enable testing of this kind of dialog box, the test dialog box function detects when **Esc** is pressed. (**Esc** is also known as the VK_ESCAPE virtual key.) No matter how the dialog box is designed to behave at run time, you can terminate it in test mode by pressing **Esc**.
 

@@ -18,11 +18,11 @@ Indicates whether the specified interface ID can be cast to each of the speciali
 
 ## Syntax
 
-```cpp  
-__forceinline bool CanCastTo(  
-   REFIID riid,  
-   _Deref_out_ void **ppv  
-);  
+```cpp
+__forceinline bool CanCastTo(
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
 ```
 
 ### Parameters

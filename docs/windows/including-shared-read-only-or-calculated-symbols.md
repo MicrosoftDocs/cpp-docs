@@ -20,8 +20,8 @@ One reason you may want to use read-only symbol definitions is for symbol files 
 
 You can also use included symbol files when you have existing resources with symbol definitions that use expressions rather than simple integers to define the symbol value. For example:
 
-```cpp  
-#define   IDC_CONTROL1 2100  
+```cpp
+#define   IDC_CONTROL1 2100
 #define   IDC_CONTROL2 (IDC_CONTROL1+1)  
 ```
 
@@ -45,16 +45,16 @@ The environment will correctly interpret these calculated symbols as long as:
 
 2. In the **Read-only symbol directives** box, use the `#include` compiler directive to specify the file where you want the read-only symbols to be kept.
 
-     Do not call the file `Resource.h`, since that is the filename normally used by the main symbol header file.
+   Do not call the file `Resource.h`, since that is the filename normally used by the main symbol header file.
 
    > [!NOTE]
    > **Important** What you type in the Read-Only symbol directives box is included in the resource file exactly as you type it. Make sure what you type does not contain any spelling or syntax errors.
 
-     Use the **Read-only symbol directives** box to include files with symbol definitions only. Do not include resource definitions; otherwise, duplicate resource definitions will be created when the file is saved.
+   Use the **Read-only symbol directives** box to include files with symbol definitions only. Do not include resource definitions; otherwise, duplicate resource definitions will be created when the file is saved.
 
 3. Place the symbols in the file you specified.
 
-     The symbols in files included in this way are evaluated each time you open your resource file, but they are not replaced on the disk when you save your file.
+   The symbols in files included in this way are evaluated each time you open your resource file, but they are not replaced on the disk when you save your file.
 
 4. Click **OK**.
 

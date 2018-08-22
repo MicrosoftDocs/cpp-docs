@@ -24,11 +24,11 @@ The **abstract** keyword declares either:
 
 ### Syntax
 
-```cpp  
-      class-declaration  
-      class-identifier  
-      abstract {}  
-virtualreturn-typemember-function-identifier() abstract ;  
+```cpp
+      class-declaration
+      class-identifier
+      abstract {}
+virtualreturn-typemember-function-identifier() abstract ;
 ```
 
 ### Remarks
@@ -61,43 +61,43 @@ Compiler option: `/clr`
 
 The following code example generates an error because class `X` is marked **abstract**.
 
-```cpp  
-// abstract_keyword.cpp  
-// compile with: /clr  
-ref class X abstract {  
-public:  
-   virtual void f() {}  
+```cpp
+// abstract_keyword.cpp
+// compile with: /clr
+ref class X abstract {
+public:
+   virtual void f() {}
 };
 
-int main() {  
-   X ^ MyX = gcnew X;   // C3622  
-}  
+int main() {
+   X ^ MyX = gcnew X;   // C3622
+}
 ```
 
 The following code example generates an error because it instantiates a native class that is marked **abstract**. This error will occur with or without the `/clr` compiler option.
 
-```cpp  
-// abstract_keyword_2.cpp  
-class X abstract {  
-public:  
-   virtual void f() {}  
+```cpp
+// abstract_keyword_2.cpp
+class X abstract {
+public:
+   virtual void f() {}
 };
 
-int main() {  
-   X * MyX = new X; // C3622: 'X': a class declared as 'abstract'  
-                    // cannot be instantiated. See declaration of 'X'}  
+int main() {
+   X * MyX = new X; // C3622: 'X': a class declared as 'abstract'
+                    // cannot be instantiated. See declaration of 'X'}
 ```
 
 The following code example generates an error because function `f` includes a definition but is marked **abstract**. The final statement in the example shows that declaring an abstract virtual function is equivalent to declaring a pure virtual function.
 
-```cpp  
-// abstract_keyword_3.cpp  
-// compile with: /clr  
-ref class X {  
-public:  
-   virtual void f() abstract {}   // C3634  
-   virtual void g() = 0 {}   // C3634  
-};  
+```cpp
+// abstract_keyword_3.cpp
+// compile with: /clr
+ref class X {
+public:
+   virtual void f() abstract {}   // C3634
+   virtual void g() = 0 {}   // C3634
+};
 ```
 
 ## See Also

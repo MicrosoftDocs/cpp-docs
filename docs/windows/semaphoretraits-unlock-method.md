@@ -18,10 +18,10 @@ Releases control of a shared resource.
 
 ## Syntax
 
-```cpp  
-inline static void Unlock(  
-   _In_ Type h  
-);  
+```cpp
+inline static void Unlock(
+   _In_ Type h
+);
 ```
 
 ### Parameters

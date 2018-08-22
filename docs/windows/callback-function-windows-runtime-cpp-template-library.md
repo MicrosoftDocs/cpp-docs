@@ -17,175 +17,175 @@ Creates an object whose member function is a callback method.
 
 ## Syntax
 
-```cpp  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-ComPtr<TDelegateInterface> Callback(  
-   TCallbackcallback  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
+```cpp
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+ComPtr<TDelegateInterface> Callback(
+   TCallbackcallback
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
    _In_ HRESULT (TCallbackObject::* method)()  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
    _In_ HRESULT (TCallbackObject::* method)(TArg1)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
    TArg2)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
    TArg3)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
    TArg4)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
    TArg5)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
-   TArg5,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
+   TArg5,
    TArg6)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6,  
-   typename TArg7  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
-   TArg5,  
-   TArg6,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6,
+   typename TArg7
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
+   TArg5,
+   TArg6,
    TArg7)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6,  
-   typename TArg7,  
-   typename TArg8  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
-   TArg5,  
-   TArg6,  
-   TArg7,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6,
+   typename TArg7,
+   typename TArg8
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
+   TArg5,
+   TArg6,
+   TArg7,
    TArg8)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6,  
-   typename TArg7,  
-   typename TArg8,  
-   typename TArg9  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
-   TArg5,  
-   TArg6,  
-   TArg7,  
-   TArg8,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6,
+   typename TArg7,
+   typename TArg8,
+   typename TArg9
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
+   TArg5,
+   TArg6,
+   TArg7,
+   TArg8,
    TArg9)  
-);  
+);
 ```
 
 ### Parameters

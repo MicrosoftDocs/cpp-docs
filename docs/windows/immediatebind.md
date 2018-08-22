@@ -18,8 +18,8 @@ Indicates that the database will be notified immediately of all changes to a pro
 
 ## Syntax
 
-```cpp  
-[immediatebind]  
+```cpp
+[immediatebind]
 ```
 
 ## Remarks
@@ -41,7 +41,7 @@ See [bindable](../windows/bindable.md) for an example of how to use **immediateb
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -49,4 +49,4 @@ See [bindable](../windows/bindable.md) for an example of how to use **immediateb
 [Method Attributes](../windows/method-attributes.md)  
 [defaultbind](../windows/defaultbind.md)  
 [displaybind](../windows/displaybind.md)  
-[requestedit](../windows/requestedit.md)   
+[requestedit](../windows/requestedit.md)  

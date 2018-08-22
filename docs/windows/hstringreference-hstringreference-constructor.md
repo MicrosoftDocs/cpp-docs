@@ -17,15 +17,15 @@ Initializes a new instance of the **HStringReference** class.
 
 ## Syntax
 
-```cpp  
-template<unsigned int sizeDest>  
+```cpp
+template<unsigned int sizeDest>
 HStringReference(wchar_t const (&str)[ sizeDest]) throw();
 
-template<unsigned int sizeDest>  
-HStringReference(wchar_t const (&str)[ sizeDest],   
+template<unsigned int sizeDest>
+HStringReference(wchar_t const (&str)[ sizeDest],
                  unsigned int len) throw();
 
-HStringReference(HStringReference&& other) throw();  
+HStringReference(HStringReference&& other) throw();
 ```
 
 ### Parameters

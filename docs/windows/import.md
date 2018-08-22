@@ -18,10 +18,10 @@ Specifies another .idl, .odl, or header file containing definitions you want to 
 
 ## Syntax
 
-```cpp  
-[ import(  
-   idl_file  
-) ];  
+```cpp
+[ import(
+   idl_file
+) ];
 ```
 
 ### Parameters
@@ -39,24 +39,24 @@ The **import** attribute only places the specified file into the .idl file that 
 
 The following code:
 
-```cpp  
-// cpp_attr_ref_import.cpp  
-// compile with: /LD  
-[module(name="MyLib")];  
-[import(import.idl)];  
+```cpp
+// cpp_attr_ref_import.cpp
+// compile with: /LD
+[module(name="MyLib")];
+[import(import.idl)];
 ```
 
 produces the following code in the generated .idl file:
 
-```  
-import "docobj.idl";  
+```
+import "docobj.idl";
 import "import.idl";
 
-[ uuid(EED3644C-8488-3ECD-BA97-147DB3CDB499), version(1.0) ]  
-library MyLib {  
-   importlib("stdole2.tlb");  
-   importlib("olepro32.dll");  
-...  
+[ uuid(EED3644C-8488-3ECD-BA97-147DB3CDB499), version(1.0) ]
+library MyLib {
+   importlib("stdole2.tlb");
+   importlib("olepro32.dll");
+...
 ```
 
 ## Requirements
@@ -70,7 +70,7 @@ library MyLib {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -79,4 +79,4 @@ library MyLib {
 [importidl](../windows/importidl.md)  
 [importlib](../windows/importlib.md)  
 [include](../windows/include-cpp.md)  
-[includelib](../windows/includelib-cpp.md)   
+[includelib](../windows/includelib-cpp.md)  

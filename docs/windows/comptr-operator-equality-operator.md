@@ -17,21 +17,21 @@ Indicates whether two **ComPtr** objects are equal.
 
 ## Syntax
 
-```cpp  
-bool operator==(  
-   const ComPtr<T>& a,  
-   const ComPtr<U>& b  
+```cpp
+bool operator==(
+   const ComPtr<T>& a,
+   const ComPtr<U>& b
 );
 
-bool operator==(  
-   const ComPtr<T>& a,  
+bool operator==(
+   const ComPtr<T>& a,
    decltype(__nullptr)  
 );
 
-bool operator==(  
-   decltype(__nullptr),  
-   const ComPtr<T>& a  
-);  
+bool operator==(
+   decltype(__nullptr),
+   const ComPtr<T>& a
+);
 ```
 
 ### Parameters

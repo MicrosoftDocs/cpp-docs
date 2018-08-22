@@ -32,7 +32,7 @@ Once you have customized the resource template, you must save your changes in th
 
 5. The new .rct file is added to your project and appears in **Solution Explorer** under the **Resources** folder.
 
-     You can now double-click the .rct file to open it in a document window, then add resources to it (right-click the file in the document window and choose **Add Resource** from the shortcut menu). You can then customize those resources and save the .rct file.
+   You can now double-click the .rct file to open it in a document window, then add resources to it (right-click the file in the document window and choose **Add Resource** from the shortcut menu). You can then customize those resources and save the .rct file.
 
    > [!NOTE]
    > When you create a new RCT file, Visual Studio searches for it in \Program Files\Microsoft Visual Studio 9.0\VC\VCResourceTemplates, in \Program Files\Microsoft Visual Studio 9.0\VC\VCResourceTemplates\\*LCID* (such as 1033 for English), *or* anywhere on the [include path](../windows/how-to-specify-include-directories-for-resources.md). If you prefer to store your RCT files in another file folder, for example \My Documents, you only need to add this folder to the include path and Visual Studio will find your RCT file.
@@ -55,7 +55,7 @@ Once you have customized the resource template, you must save your changes in th
 
 4. Modify the added resource as needed in its resource editor.
 
-     The resource editor automatically provides a unique resource ID. You can revise the [resource properties](../windows/changing-the-properties-of-a-resource.md) as needed.
+   The resource editor automatically provides a unique resource ID. You can revise the [resource properties](../windows/changing-the-properties-of-a-resource.md) as needed.
 
 For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
 

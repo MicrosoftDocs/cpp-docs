@@ -18,9 +18,9 @@ Creates an instance of a module.
 
 ## Syntax
 
-```cpp  
-static Module& GetModule();  
-WRL_NOTHROW static Module& GetModule();  
+```cpp
+static Module& GetModule();
+WRL_NOTHROW static Module& GetModule();
 ```
 
 ## Return Value

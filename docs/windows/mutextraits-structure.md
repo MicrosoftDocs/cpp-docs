@@ -18,8 +18,8 @@ Defines common characteristics of the [Mutex](../windows/mutex-class1.md) class.
 
 ## Syntax
 
-```cpp  
-struct MutexTraits : HANDLENullTraits;  
+```cpp
+struct MutexTraits : HANDLENullTraits;
 ```
 
 ## Members

@@ -17,7 +17,7 @@ Deletes the underlying string value and intializes the current **HString** objec
 
 ## Syntax
 
-```cpp  
+```cpp
 void Release() throw()  
 ```
 

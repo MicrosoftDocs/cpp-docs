@@ -16,11 +16,11 @@ ms.workload: ["cplusplus", "uwp"]
 
 A symbol value can be any integer expressed in the normal manner for #define preprocessor directives. Here are some examples of symbol values:
 
-```  
-18  
-4001  
-0x0012  
--3456  
+```
+18
+4001
+0x0012
+-3456
 ```
 
 Symbol values for resources (accelerators, bitmaps, cursors, dialog boxes, icons, menus, string tables, and version information) must be decimal numbers in the range from 0 to 32,767 (but cannot be hexadecimal). Symbol values for parts of resources, such as dialog box controls or individual strings in the string table, can be from 0 to 65,534 or from -32,768 to 32,767.
@@ -33,17 +33,17 @@ Here are some limitations of symbol values:
 
 - You cannot define a symbol value using other symbol strings. For example, the following symbol definition is not supported:
 
-    ```cpp  
-    #define IDC_MYEDIT  IDC_OTHEREDIT  //not supported  
+    ```cpp
+    #define IDC_MYEDIT  IDC_OTHEREDIT  //not supported
     ```
 
 - You cannot use preprocessor macros with arguments as value definitions. For example:
 
-    ```cpp  
-    #define   IDD_ABOUT  ID(7) //not supported  
+    ```cpp
+    #define   IDD_ABOUT  ID(7) //not supported
     ```
 
-     is not a valid expression regardless of what `ID` evaluates to at compile time.
+   is not a valid expression regardless of what `ID` evaluates to at compile time.
 
 - Your application may have an existing file containing symbols defined with expressions. For more information on how to include the symbols as read-only symbols, see [Using Shared (Read Only) or Calculated Symbols](../windows/including-shared-read-only-or-calculated-symbols.md).
 

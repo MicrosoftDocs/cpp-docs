@@ -18,8 +18,8 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-__forceinline void* Allocate();  
+```cpp
+__forceinline void* Allocate();
 ```
 
 ## Return Value

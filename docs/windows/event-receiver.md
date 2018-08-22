@@ -18,11 +18,11 @@ Creates an event receiver (sink).
 
 ## Syntax
 
-```cpp  
-[ event_receiver(  
-   type   
-   [, layout_dependent=false]   
-) ]  
+```cpp
+[ event_receiver(
+   type
+   [, layout_dependent=false]
+) ]
 ```
 
 ### Parameters
@@ -34,10 +34,10 @@ An enumeration of one of the following values:
 
 - `com` for COM code. This value requires that you include the following header files:
 
-    ```cpp  
-    #define _ATL_ATTRIBUTES  
-    #include <atlbase.h>  
-    #include <atlcom.h>  
+    ```cpp
+    #define _ATL_ATTRIBUTES
+    #include <atlbase.h>
+    #include <atlcom.h>
     ```
 
 *layout_dependent*  
@@ -69,7 +69,7 @@ The **event_receiver** C++ attribute specifies that the class or structure to wh
 |**Required attributes**|`coclass` when *layout_dependent*=**true**|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -78,4 +78,4 @@ The **event_receiver** C++ attribute specifies that the class or structure to wh
 [__event](../cpp/event.md)  
 [__hook](../cpp/hook.md)  
 [__unhook](../cpp/unhook.md)  
-[Class Attributes](../windows/class-attributes.md)   
+[Class Attributes](../windows/class-attributes.md)  

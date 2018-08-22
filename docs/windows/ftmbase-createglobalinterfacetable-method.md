@@ -18,10 +18,10 @@ Creates a global interface table (GIT).
 
 ## Syntax
 
-```cpp  
-static HRESULT CreateGlobalInterfaceTable(  
-   __out IGlobalInterfaceTable **git  
-);  
+```cpp
+static HRESULT CreateGlobalInterfaceTable(
+   __out IGlobalInterfaceTable **git
+);
 ```
 
 ### Parameters

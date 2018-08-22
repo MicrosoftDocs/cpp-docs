@@ -25,7 +25,7 @@ When you create a new resource or resource object, the development environment a
 
 2. In the **Properties** window, type a new symbol name or select from the list of existing symbols in the **ID** box.
 
-     If you type a new symbol name, it is automatically assigned a value.
+   If you type a new symbol name, it is automatically assigned a value.
 
 You can use the [Resource Symbols dialog box](../windows/resource-symbols-dialog-box.md) to change the names of symbols not currently assigned to a resource. For more information, see [Changing Unassigned Symbols](../windows/changing-unassigned-symbols.md).
 

@@ -26,16 +26,16 @@ For a ref class that has two partial definitions, the **partial** keyword is app
 
 ### Syntax
 
-```cpp  
-partial class-key identifier {  
+```cpp
+partial class-key identifier {
    /* The first part of the partial class definition. 
-      This is typically auto-generated */  
-}  
-// ...  
-class-key identifier {  
+      This is typically auto-generated */
+}
+// ...
+class-key identifier {
    /* The subsequent part(s) of the class definition. The same 
-      identifier is specified, but the "partial" keyword is omitted. */  
-}  
+      identifier is specified, but the "partial" keyword is omitted. */
+}
 ```
 
 ### Parameters

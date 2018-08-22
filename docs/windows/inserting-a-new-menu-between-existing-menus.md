@@ -17,7 +17,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. Select an existing menu name and press the **Insert** key. The **New Item** box is inserted before the selected item.
 
-     \- or -
+   \- or -
 
 2. Right-click on the menu bar and choose **Insert New** from the shortcut menu.
 
@@ -29,4 +29,4 @@ Win32
 
 ## See Also
 
-[Menu Editor](../windows/menu-editor.md)   
+[Menu Editor](../windows/menu-editor.md)  

@@ -23,7 +23,7 @@ Normally, keyboard users move the input focus from one control to another in a d
 
 3. Press **Enter**.
 
-     An underline appears in the displayed caption to indicate the access key, for example, **R**adio1.
+   An underline appears in the displayed caption to indicate the access key, for example, **R**adio1.
 
 ### To define an access key for a control without a visible caption
 

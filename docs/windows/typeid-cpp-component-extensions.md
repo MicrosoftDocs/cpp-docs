@@ -22,8 +22,8 @@ Gets a value that indicates the type of an object.
 
 ### Syntax
 
-```cpp  
-T::typeid  
+```cpp
+T::typeid
 ```
 
 ### Parameters
@@ -35,8 +35,8 @@ A type name.
 
 ### Syntax
 
-```cpp  
-Platform::Type^ type = T::typeid;  
+```cpp
+Platform::Type^ type = T::typeid;
 ```
 
 ### Parameters
@@ -56,8 +56,8 @@ Compiler option: `/ZW`
 
 ### Syntax
 
-```  
-type::typeid  
+```
+type::typeid
 ```
 
 ### Parameters
@@ -85,31 +85,31 @@ Compiler option: `/clr`
 
 The following example compares the typeid keyword to the `GetType()` member.
 
-```cpp  
-// keyword__typeid.cpp  
-// compile with: /clr  
+```cpp
+// keyword__typeid.cpp
+// compile with: /clr
 using namespace System;
 
-ref struct G {  
-   int i;  
+ref struct G {
+   int i;
 };
 
-int main() {  
-   G ^ pG = gcnew G;  
-   Type ^ pType = pG->GetType();  
+int main() {
+   G ^ pG = gcnew G;
+   Type ^ pType = pG->GetType();
    Type ^ pType2 = G::typeid;
 
    if (pType == pType2)  
-      Console::WriteLine("typeid and GetType returned the same System::Type");  
+      Console::WriteLine("typeid and GetType returned the same System::Type");
    Console::WriteLine(G::typeid);
 
-   typedef float* FloatPtr;  
-   Console::WriteLine(FloatPtr::typeid);  
-}  
+   typedef float* FloatPtr;
+   Console::WriteLine(FloatPtr::typeid);
+}
 ```
 
-```Output  
-typeid and GetType returned the same System::Type  
+```Output
+typeid and GetType returned the same System::Type
 G
 
 System.Single*  
@@ -117,47 +117,47 @@ System.Single*
 
 The following sample shows that a variable of type System::Type can be used to get the attributes on a type.  It also shows that for some types, you will have to create a typedef to use `typeid`.
 
-```cpp  
-// keyword__typeid_2.cpp  
-// compile with: /clr  
-using namespace System;  
-using namespace System::Security;  
+```cpp
+// keyword__typeid_2.cpp
+// compile with: /clr
+using namespace System;
+using namespace System::Security;
 using namespace System::Security::Permissions;
 
-typedef int ^ handle_to_int;  
+typedef int ^ handle_to_int;
 typedef int * pointer_to_int;
 
 public ref class MyClass {};
 
 class MyClass2 {};
 
-[attribute(AttributeTargets::All)]  
-ref class AtClass {  
-public:  
-   AtClass(Type ^) {  
-      Console::WriteLine("in AtClass Type ^ constructor");  
-   }  
+[attribute(AttributeTargets::All)]
+ref class AtClass {
+public:
+   AtClass(Type ^) {
+      Console::WriteLine("in AtClass Type ^ constructor");
+   }
 };
 
-[attribute(AttributeTargets::All)]  
-ref class AtClass2 {  
-public:  
-   AtClass2() {  
-      Console::WriteLine("in AtClass2 constructor");  
-   }  
+[attribute(AttributeTargets::All)]
+ref class AtClass2 {
+public:
+   AtClass2() {
+      Console::WriteLine("in AtClass2 constructor");
+   }
 };
 
-// Apply the AtClass and AtClass2 attributes to class B  
-[AtClass(MyClass::typeid), AtClass2]     
-[AttributeUsage(AttributeTargets::All)]  
+// Apply the AtClass and AtClass2 attributes to class B
+[AtClass(MyClass::typeid), AtClass2]
+[AttributeUsage(AttributeTargets::All)]
 ref class B : Attribute {};
 
-int main() {  
+int main() {
    Type ^ MyType = B::typeid;
 
    Console::WriteLine(MyType->IsClass);
 
-   array<Object^>^ MyArray = MyType -> GetCustomAttributes(true);  
+   array<Object^>^ MyArray = MyType -> GetCustomAttributes(true);
    for (int i = 0 ; i < MyArray->Length ; i++ )  
       Console::WriteLine(MyArray[i]);
 
@@ -165,11 +165,11 @@ int main() {
       Console::WriteLine("int::typeid != pointer_to_int::typeid, as expected");
 
    if (int::typeid == handle_to_int::typeid)  
-      Console::WriteLine("int::typeid == handle_to_int::typeid, as expected");  
-}  
+      Console::WriteLine("int::typeid == handle_to_int::typeid, as expected");
+}
 ```
 
-```Output  
+```Output
 True
 
 in AtClass2 constructor
@@ -184,7 +184,7 @@ AtClass
 
 int::typeid != pointer_to_int::typeid, as expected
 
-int::typeid == handle_to_int::typeid, as expected  
+int::typeid == handle_to_int::typeid, as expected
 ```
 
 ## See Also

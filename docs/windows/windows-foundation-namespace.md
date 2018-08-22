@@ -18,8 +18,8 @@ Enables fundamental Windows Runtime functionality, such as object and factory cr
 
 ## Syntax
 
-```cpp  
-namespace Windows::Foundation;  
+```cpp
+namespace Windows::Foundation;
 ```
 
 ## Members

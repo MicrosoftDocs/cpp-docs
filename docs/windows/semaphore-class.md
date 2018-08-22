@@ -18,8 +18,8 @@ Represents a synchronization object that controls a shared resource that can sup
 
 ## Syntax
 
-```cpp  
-class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>  
+```cpp
+class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>
 ```
 
 ## Members

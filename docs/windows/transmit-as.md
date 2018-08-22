@@ -18,10 +18,10 @@ Instructs the compiler to associate a presented type that client and server appl
 
 ## Syntax
 
-```cpp  
-[ transmit_as(  
-   type  
-) ]  
+```cpp
+[ transmit_as(
+   type
+) ]
 ```
 
 ### Parameters
@@ -37,32 +37,32 @@ The **transmit_as** C++ attribute has the same functionality as the [transmit_as
 
 The following code shows a use of the **transmit_as** attribute:
 
-```cpp  
-// cpp_attr_ref_transmit_as.cpp  
-// compile with: /LD  
-#include "windows.h"  
+```cpp
+// cpp_attr_ref_transmit_as.cpp
+// compile with: /LD
+#include "windows.h"
 [module(name="MyLibrary")];
 
-[export] typedef struct _TREE_NODE_TYPE {  
-unsigned short data;   
-struct _TREE_NODE_TYPE * left;  
-struct _TREE_NODE_TYPE * right;   
+[export] typedef struct _TREE_NODE_TYPE {
+unsigned short data;
+struct _TREE_NODE_TYPE * left;
+struct _TREE_NODE_TYPE * right;
 } TREE_NODE_TYPE;
 
-[export] struct PACKED_NODE {  
-   unsigned short data;   // same as normal node  
-   int index;   // array index of parent  
+[export] struct PACKED_NODE {
+   unsigned short data;   // same as normal node
+   int index;   // array index of parent
 };
 
-// A left node recursive built array of  
-// the nodes in the tree.  Can be unpacked with  
-// that knowledge  
-[export] typedef struct _TREE_XMIT_TYPE {  
-   int count;  
-   [size_is(count)] PACKED_NODE node[];  
+// A left node recursive built array of
+// the nodes in the tree.  Can be unpacked with
+// that knowledge
+[export] typedef struct _TREE_XMIT_TYPE {
+   int count;
+   [size_is(count)] PACKED_NODE node[];
 } TREE_XMIT_TYPE;
 
-[transmit_as(TREE_XMIT_TYPE)] typedef TREE_NODE_TYPE * TREE_TYPE;  
+[transmit_as(TREE_XMIT_TYPE)] typedef TREE_NODE_TYPE * TREE_TYPE;
 ```
 
 ## Requirements
@@ -76,10 +76,10 @@ struct _TREE_NODE_TYPE * right;
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[export](../windows/export.md)   
+[export](../windows/export.md)  

@@ -18,11 +18,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(  
-   HSTRING activationId,  
-   IActivationFactory **ppFactory  
-);  
+```cpp
+inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
+   HSTRING activationId,
+   IActivationFactory **ppFactory
+);
 ```
 
 ### Parameters

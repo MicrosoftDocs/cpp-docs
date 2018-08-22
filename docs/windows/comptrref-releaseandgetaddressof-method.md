@@ -18,8 +18,8 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-InterfaceType** ReleaseAndGetAddressOf();  
+```cpp
+InterfaceType** ReleaseAndGetAddressOf();
 ```
 
 ## Return Value

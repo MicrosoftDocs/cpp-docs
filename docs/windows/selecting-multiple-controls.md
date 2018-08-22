@@ -19,13 +19,13 @@ ms.workload: ["cplusplus", "uwp"]
 
 2. Drag the pointer to draw a selection box around the controls you want to select in your dialog box.
 
-     When you release the mouse button, all controls inside and intersecting the selection box are selected.
+   When you release the mouse button, all controls inside and intersecting the selection box are selected.
 
-     \- or -
+   \- or -
 
 - Hold down the **Shift** key and click the controls you'd like to include in the selection.
 
-     \- or -
+   \- or -
 
 - Hold down the **Ctrl** key and click the controls you'd like to include in the selection.
 

@@ -17,7 +17,7 @@ Moves the value of another **HString** object to the current **HString** object.
 
 ## Syntax
 
-```cpp  
+```cpp
 HString& operator=(HString&& other) throw()  
 ```
 

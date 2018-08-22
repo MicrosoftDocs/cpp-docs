@@ -18,8 +18,8 @@ Identifies the coclass as an application object, which is associated with a full
 
 ## Syntax
 
-```cpp  
-[appobject]  
+```cpp
+[appobject]
 ```
 
 ## Remarks
@@ -30,19 +30,19 @@ The **appobject** C++ attribute has the same functionality as the [appobject](ht
 
 The following code shows a simple class definition preceded by an attribute block that includes **appobject**:
 
-```cpp  
-// cpp_attr_ref_appobject.cpp  
-// compile with: /LD  
-#include <windows.h>  
+```cpp
+// cpp_attr_ref_appobject.cpp
+// compile with: /LD
+#include <windows.h>
 [module(name="MyLib", uuid="f1ce17f0-a5df-4d26-95f6-0a122197ac5b")];
 
-[object, uuid="905de6db-7a12-45ab-9f8b-b39f5112f010"]  
+[object, uuid="905de6db-7a12-45ab-9f8b-b39f5112f010"]
 __interface ICustom {};
 
-[coclass, appobject,uuid="00395340-745f-4b69-bd58-e2921452b9fc"]  
-class A : public ICustom {  
-   int i;  
-};  
+[coclass, appobject,uuid="00395340-745f-4b69-bd58-e2921452b9fc"]
+class A : public ICustom {
+   int i;
+};
 ```
 
 ## Requirements
@@ -56,10 +56,10 @@ class A : public ICustom {
 |**Required attributes**|`coclass`|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
-[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  

@@ -18,13 +18,13 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template<typename T>  
-static __forceinline bool CanCastTo(  
-   _In_ T* ptr,  
-   REFIID riid,  
-   _Deref_out_ void **ppv  
-);  
+```cpp
+template<typename T>
+static __forceinline bool CanCastTo(
+   _In_ T* ptr,
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
 ```
 
 ### Parameters

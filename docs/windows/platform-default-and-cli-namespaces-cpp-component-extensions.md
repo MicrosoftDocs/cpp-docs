@@ -32,8 +32,8 @@ Compiler option: `/ZW`
 
 ### Syntax
 
-```cpp  
-using namespace cli;  
+```cpp
+using namespace cli;
 ```
 
 ### Remarks
@@ -58,20 +58,20 @@ Compiler option: `/clr`
 
 The following code example demonstrates that it is possible to use a symbol in the **cli** namespace as a user-defined symbol in your code.  However, once you have done so, you will have to explicitly or implicitly qualify your references to the **cli** language element of the same name.
 
-```cpp  
-// cli_namespace.cpp  
-// compile with: /clr  
-using namespace cli;  
-int main() {  
-   array<int> ^ MyArray = gcnew array<int>(100);  
+```cpp
+// cli_namespace.cpp
+// compile with: /clr
+using namespace cli;
+int main() {
+   array<int> ^ MyArray = gcnew array<int>(100);
    int array = 0;
 
    array<int> ^ MyArray2 = gcnew array<int>(100);   // C2062
 
-   // OK  
-   cli::array<int> ^ MyArray2 = gcnew cli::array<int>(100);  
-   ::array<int> ^ MyArray3 = gcnew ::array<int>(100);  
-}  
+   // OK
+   cli::array<int> ^ MyArray2 = gcnew cli::array<int>(100);
+   ::array<int> ^ MyArray3 = gcnew ::array<int>(100);
+}
 ```
 
 ## See Also

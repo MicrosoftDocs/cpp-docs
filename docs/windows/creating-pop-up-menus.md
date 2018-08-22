@@ -23,7 +23,7 @@ Once you have created the menu resource, your application code needs to load the
 
 2. [Add a menu command to the new menu](../windows/adding-commands-to-a-menu.md). Move to the first menu command below the blank menu title (the temporary caption says `Type Here`). Type a **Caption** and any other information.
 
-     Repeat this process for any other menu commands in the pop-up menu.
+   Repeat this process for any other menu commands in the pop-up menu.
 
 3. Save the menu resource.
 

@@ -20,8 +20,8 @@ Constraints are optional; not specifying a constraint on a parameter is equivale
 
 ## Syntax
 
-```cpp  
-where type-parameter: constraint list  
+```cpp
+where type-parameter: constraint list
 ```
 
 ### Parameters
@@ -48,13 +48,13 @@ Class and interface constraints specify that the argument types must be or inher
 
 The application of constraints to a generic type or method allows code in that type or method to take advantage of the known features of the constrained types. For example, you can declare a generic class such that the type parameter implements the `IComparable<T>` interface:
 
-```cpp  
-// generics_constraints_1.cpp  
-// compile with: /c /clr  
-using namespace System;  
-generic <typename T>  
-where T : IComparable<T>  
-ref class List {};  
+```cpp
+// generics_constraints_1.cpp
+// compile with: /c /clr
+using namespace System;
+generic <typename T>
+where T : IComparable<T>
+ref class List {};
 ```
 
 This constraint requires that a type argument used for `T` implements `IComparable<T>` at compile time. It also allows interface methods, such as `CompareTo`, to be called. No cast is needed on an instance of the type parameter to call interface methods.
@@ -67,28 +67,28 @@ Constraints are required in some cases since the compiler will not allow the use
 
 Multiple constraints for the same type parameter can be specified in a comma-separated list
 
-```cpp  
-// generics_constraints_2.cpp  
-// compile with: /c /clr  
-using namespace System;  
-using namespace System::Collections::Generic;  
-generic <typename T>  
-where T : List<T>, IComparable<T>  
-ref class List {};  
+```cpp
+// generics_constraints_2.cpp
+// compile with: /c /clr
+using namespace System;
+using namespace System::Collections::Generic;
+generic <typename T>
+where T : List<T>, IComparable<T>
+ref class List {};
 ```
 
 With multiple type parameters, use one **where** clause for each type parameter. For example:
 
-```cpp  
-// generics_constraints_3.cpp  
-// compile with: /c /clr  
-using namespace System;  
+```cpp
+// generics_constraints_3.cpp
+// compile with: /c /clr
+using namespace System;
 using namespace System::Collections::Generic;
 
-generic <typename K, typename V>  
-   where K: IComparable<K>  
-   where V: IComparable<K>  
-ref class Dictionary {};  
+generic <typename K, typename V>
+   where K: IComparable<K>
+   where V: IComparable<K>
+ref class Dictionary {};
 ```
 
 To summarize, use constraints in your code according to the following rules:
@@ -99,77 +99,77 @@ To summarize, use constraints in your code according to the following rules:
 
 - Constraints cannot themselves be type parameters, but they can involve the type parameters in an open constructed type. For example:
 
-    ```cpp  
-    // generics_constraints_4.cpp  
-    // compile with: /c /clr  
-    generic <typename T>  
+    ```cpp
+    // generics_constraints_4.cpp
+    // compile with: /c /clr
+    generic <typename T>
     ref class G1 {};
 
-    generic <typename Type1, typename Type2>  
-    where Type1 : G1<Type2>   // OK, G1 takes one type parameter  
-    ref class G2{};  
+    generic <typename Type1, typename Type2>
+    where Type1 : G1<Type2>   // OK, G1 takes one type parameter
+    ref class G2{};
     ```
 
 ## Example
 
 The following example demonstrates using constraints to call instance methods on type parameters.
 
-```cpp  
-// generics_constraints_5.cpp  
-// compile with: /clr  
+```cpp
+// generics_constraints_5.cpp
+// compile with: /clr
 using namespace System;
 
-interface class IAge {  
-   int Age();  
+interface class IAge {
+   int Age();
 };
 
-ref class MyClass {  
-public:  
-   generic <class ItemType> where ItemType : IAge   
-   bool isSenior(ItemType item) {  
-      // Because of the constraint,  
-      // the Age method can be called on ItemType.  
-      if (item->Age() >= 65)   
-         return true;  
-      else  
-         return false;  
-   }  
+ref class MyClass {
+public:
+   generic <class ItemType> where ItemType : IAge
+   bool isSenior(ItemType item) {
+      // Because of the constraint,
+      // the Age method can be called on ItemType.
+      if (item->Age() >= 65)  
+         return true;
+      else
+         return false;
+   }
 };
 
-ref class Senior : IAge {  
-public:  
-   virtual int Age() {  
-      return 70;  
-   }  
+ref class Senior : IAge {
+public:
+   virtual int Age() {
+      return 70;
+   }
 };
 
-ref class Adult: IAge {  
-public:  
-   virtual int Age() {  
-      return 30;  
-   }  
+ref class Adult: IAge {
+public:
+   virtual int Age() {
+      return 30;
+   }
 };
 
-int main() {  
-   MyClass^ ageGuess = gcnew MyClass();  
-   Adult^ parent = gcnew Adult();  
+int main() {
+   MyClass^ ageGuess = gcnew MyClass();
+   Adult^ parent = gcnew Adult();
    Senior^ grandfather = gcnew Senior();
 
    if (ageGuess->isSenior<Adult^>(parent))  
-      Console::WriteLine("\"parent\" is a senior");  
-   else  
+      Console::WriteLine("\"parent\" is a senior");
+   else
       Console::WriteLine("\"parent\" is not a senior");
 
    if (ageGuess->isSenior<Senior^>(grandfather))  
-      Console::WriteLine("\"grandfather\" is a senior");  
-   else  
-      Console::WriteLine("\"grandfather\" is not a senior");  
-}  
+      Console::WriteLine("\"grandfather\" is a senior");
+   else
+      Console::WriteLine("\"grandfather\" is not a senior");
+}
 ```
 
-```Output  
-"parent" is not a senior  
-"grandfather" is a senior  
+```Output
+"parent" is not a senior
+"grandfather" is a senior
 ```
 
 ## Example
@@ -180,19 +180,19 @@ In the following example, `T` is a naked type constraint in the context of the `
 
 Naked type constraints can also be used in generic class definitions. The usefulness of naked type constraints with generic classes is limited because the compiler can assume nothing about a naked type constraint except that it derives from <xref:System.Object>. Use naked type constraints on generic classes in scenarios in which you wish to enforce an inheritance relationship between two type parameters.
 
-```cpp  
-// generics_constraints_6.cpp  
-// compile with: /clr /c  
-generic <class T>  
-ref struct List {  
-   generic <class U>  
-   where U : T  
-   void Add(List<U> items)  {}  
+```cpp
+// generics_constraints_6.cpp
+// compile with: /clr /c
+generic <class T>
+ref struct List {
+   generic <class U>
+   where U : T
+   void Add(List<U> items)  {}
 };
 
-generic <class A, class B, class C>  
-where A : C  
-ref struct SampleClass {};  
+generic <class A, class B, class C>
+where A : C
+ref struct SampleClass {};
 ```
 
 ## See Also

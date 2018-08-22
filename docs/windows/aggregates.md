@@ -18,11 +18,11 @@ Indicates that the object aggregates the object specified by the CLSID.
 
 ## Syntax
 
-```cpp  
-[ aggregates(  
-   clsid,  
-   variable_name  
-) ]  
+```cpp
+[ aggregates(
+   clsid,
+   variable_name
+) ]
 ```
 
 ### Parameters
@@ -43,7 +43,7 @@ This attribute requires that the [coclass](../windows/coclass.md), [progid](../w
 
 If this attribute is used within a project that uses ATL, the behavior of the attribute changes. First, the following entry is added to the COM map of the target object:
 
-```  
+```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(_m_spAttrXXX, clsid)  
 ```
 
@@ -51,29 +51,29 @@ Second, the [DECLARE_GET_CONTROLLING_UNKNOWN](../atl/reference/aggregation-and-c
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_aggregates.cpp  
-// compile with: /LD  
-#define _ATL_ATTRIBUTES  
-#include "atlbase.h"  
+```cpp
+// cpp_attr_ref_aggregates.cpp
+// compile with: /LD
+#define _ATL_ATTRIBUTES
+#include "atlbase.h"
 #include "atlcom.h"
 
-// requires 'aggregatable.dll'  
-// see aggregatable attribute to create 'aggregatable.dll'  
+// requires 'aggregatable.dll'
+// see aggregatable attribute to create 'aggregatable.dll'
 class DECLSPEC_UUID("1a8369cc-1c91-42c4-befa-5a5d8c9d2529") CMyClass;
 
-[module (name="MYObject")];  
-[object, uuid("ab006d85-e754-47c5-9ef4-2744ff32a20c")]  
-__interface IObject  
-{  
+[module (name="MYObject")];
+[object, uuid("ab006d85-e754-47c5-9ef4-2744ff32a20c")]
+__interface IObject
+{
 };
 
-[ coclass, aggregates(__uuidof(CMyClass)),   
-  uuid("91cb2c06-8931-432a-baac-206e55c4edfb")]  
-struct CObject : IObject  
-{  
-   int i;  
-};  
+[ coclass, aggregates(__uuidof(CMyClass)),
+  uuid("91cb2c06-8931-432a-baac-206e55c4edfb")]
+struct CObject : IObject
+{
+   int i;
+};
 ```
 
 ## Requirements
@@ -87,7 +87,7 @@ struct CObject : IObject
 |**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -96,4 +96,4 @@ struct CObject : IObject
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
 [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)  
 [Aggregatable](http://msdn.microsoft.com/library/windows/desktop/aa366721)  
-[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)   
+[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)  

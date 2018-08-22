@@ -18,8 +18,8 @@ Indicates that an interface member should not be displayed in a property browser
 
 ## Syntax
 
-```cpp  
-[nonbrowsable]  
+```cpp
+[nonbrowsable]
 ```
 
 ## Remarks
@@ -28,18 +28,18 @@ The **nonbrowsable** C++ attribute has the same functionality as the [nonbrowsab
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_nonbrowsable.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
+```cpp
+// cpp_attr_ref_nonbrowsable.cpp
+// compile with: /LD
+#include <unknwn.h>
 [module(name="MyLib")];
 
-[object, helpstring("help string"), helpstringcontext(1),   
-uuid="11111111-1111-1111-1111-111111111111"]   
-__interface IMyI  
-{  
-   [nonbrowsable] HRESULT xx();  
-};  
+[object, helpstring("help string"), helpstringcontext(1),
+uuid="11111111-1111-1111-1111-111111111111"]
+__interface IMyI
+{
+   [nonbrowsable] HRESULT xx();
+};
 ```
 
 ## Requirements
@@ -53,9 +53,9 @@ __interface IMyI
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)   
+[Method Attributes](../windows/method-attributes.md)  

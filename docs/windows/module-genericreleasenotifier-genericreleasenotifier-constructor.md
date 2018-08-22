@@ -18,11 +18,11 @@ Initializes a new instance of the **Module::GenericReleaseNotifier** class.
 
 ## Syntax
 
-```cpp  
-GenericReleaseNotifier(  
-   T callback,   
-   bool release  
-) throw() : ReleaseNotifier(release), callback_(callback);  
+```cpp
+GenericReleaseNotifier(
+   T callback,
+   bool release
+) throw() : ReleaseNotifier(release), callback_(callback);
 ```
 
 ### Parameters

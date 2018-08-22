@@ -18,10 +18,10 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-inline bool TerminateMap(  
-   _In_ ModuleBase *module,   
-   _In_opt_z_ const wchar_t *serverName,   
+```cpp
+inline bool TerminateMap(
+   _In_ ModuleBase *module,
+   _In_opt_z_ const wchar_t *serverName,
     bool forceTerminate) throw()  
 ```
 

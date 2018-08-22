@@ -18,8 +18,8 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. Click the item once to select it, then again to begin editing it. Make the changes directly in the **Version Information** table or in the [Properties window](/visualstudio/ide/reference/properties-window). The changes you make will be reflected in both places.
 
-     > [!NOTE] 
-     > When editing the `FILEFLAGS` key in the **Version Information** editor, you'll notice you cannot set the **Debug**, **Private Build**, or **Special Build** properties (in the **Properties** window) for .rc files:
+   > [!NOTE] 
+   > When editing the `FILEFLAGS` key in the **Version Information** editor, you'll notice you cannot set the **Debug**, **Private Build**, or **Special Build** properties (in the **Properties** window) for .rc files:
 
    - The **Version Information** editor sets the **Debug** property with a `#ifdef` in the resource script, based on the `_DEBUG` build flag.
 

@@ -21,11 +21,11 @@ Verifies that the type of the specified argument derives from the `IUnknown` int
 
 ## Syntax
 
-```cpp  
-template<typename T>  
-void** IID_PPV_ARGS_Helper(  
-   _Inout_ Microsoft::WRL::Details::ComPtrRef<T> pp  
-);  
+```cpp
+template<typename T>
+void** IID_PPV_ARGS_Helper(
+   _Inout_ Microsoft::WRL::Details::ComPtrRef<T> pp
+);
 ```
 
 ### Parameters

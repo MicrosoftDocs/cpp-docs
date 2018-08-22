@@ -18,8 +18,8 @@ Specifies a property accessor function.
 
 ## Syntax
 
-```cpp  
-[propget]  
+```cpp
+[propget]
 ```
 
 ## Remarks
@@ -41,11 +41,11 @@ See the example for [bindable](../windows/bindable.md) for a sample use of **pro
 |**Required attributes**|None|
 |**Invalid attributes**|`propput`, `propputref`|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Method Attributes](../windows/method-attributes.md)  
 [propput](../windows/propput.md)  
-[propputref](../windows/propputref.md)   
+[propputref](../windows/propputref.md)  

@@ -18,8 +18,8 @@ Specifies the expression or identifier acting as the union discriminant that sel
 
 ## Syntax
 
-```cpp  
-[switch_is]  
+```cpp
+[switch_is]
 ```
 
 ## Remarks
@@ -41,10 +41,10 @@ See the [case](../windows/case-cpp.md) example for a sample use of **switch_is**
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[switch_type](../windows/switch-type.md)   
+[switch_type](../windows/switch-type.md)  

@@ -18,8 +18,8 @@ Tells the caller that if there is an error when calling that function, then the 
 
 ## Syntax
 
-```cpp  
-[usesgetlasterror]  
+```cpp
+[usesgetlasterror]
 ```
 
 ## Remarks
@@ -41,8 +41,8 @@ See the [idl_module](../windows/idl-module.md) example for a sample of how to us
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
-[IDL Attributes](../windows/idl-attributes.md)   
+[IDL Attributes](../windows/idl-attributes.md)  

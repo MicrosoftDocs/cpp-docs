@@ -18,11 +18,11 @@ Unregisters one or more COM objects, which prevents other applications from conn
 
 ## Syntax
 
-```cpp  
-virtual HRESULT UnregisterCOMObject(  
-   const wchar_t* serverName,  
-   DWORD* cookies,  
-   unsigned int count  
+```cpp
+virtual HRESULT UnregisterCOMObject(
+   const wchar_t* serverName,
+   DWORD* cookies,
+   unsigned int count
 ```
 
 ### Parameters
@@ -46,5 +46,5 @@ S_OK if this operation is successful; otherwise, an error HRESULT that indicates
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

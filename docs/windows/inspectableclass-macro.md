@@ -17,9 +17,9 @@ Sets the runtime class name and trust level.
 
 ## Syntax
 
-```cpp  
-InspectableClass(  
-   runtimeClassName,   
+```cpp
+InspectableClass(
+   runtimeClassName,
    trustLevel)  
 ```
 

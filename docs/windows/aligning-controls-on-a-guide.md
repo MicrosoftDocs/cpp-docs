@@ -23,7 +23,7 @@ The tick marks in the rulers that determine the spacing of guides and controls a
 
 2. Drag a guide to the other side of the control (or controls).
 
-     If necessary with multiple controls, size each to snap to the second guide.
+   If necessary with multiple controls, size each to snap to the second guide.
 
 3. Move either guide to size the control (or controls).
 

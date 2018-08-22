@@ -18,24 +18,24 @@ Defines the library block in the .idl file.
 
 ## Syntax
 
-```cpp  
-[ module (  
-   type=dll,  
-   name=string,  
-   version=1.0,  
-   uuid=uuid,  
-   lcid=integer,  
-   control=boolean,  
-   helpstring=string,  
-   helpstringdll=string,  
-   helpfile=string,  
-   helpcontext=integer,  
-   helpstringcontext=integer,  
-   hidden=boolean,  
-   restricted=boolean,  
-   custom=string,  
-   resource_name=string,  
-) ];  
+```cpp
+[ module (
+   type=dll,
+   name=string,
+   version=1.0,
+   uuid=uuid,
+   lcid=integer,
+   control=boolean,
+   helpstring=string,
+   helpstringdll=string,
+   helpfile=string,
+   helpcontext=integer,
+   helpstringcontext=integer,
+   hidden=boolean,
+   restricted=boolean,
+   custom=string,
+   resource_name=string,
+) ];
 ```
 
 ### Parameters
@@ -90,8 +90,8 @@ Members of the library cannot be called arbitrarily. See the [restricted](http:/
 *custom*  (optional)  
 One or more attributes; this is similar to the [custom](../windows/custom-cpp.md) attribute. The first parameter to *custom* is the GUID of the attribute. For example:
 
-```  
-[module(custom={guid,1}, custom={guid1,2})]  
+```
+[module(custom={guid,1}, custom={guid1,2})]
 ```
 
 *resource_name*  
@@ -112,53 +112,53 @@ If this attribute is used within a project that uses ATL, the behavior of the at
 
 - `type` = **dll**
 
-     [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583), [DllRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](http://msdn.microsoft.com/library/windows/desktop/ms690368), and [DllGetClassObject](http://msdn.microsoft.com/library/windows/desktop/dd797891).
+   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583), [DllRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](http://msdn.microsoft.com/library/windows/desktop/ms690368), and [DllGetClassObject](http://msdn.microsoft.com/library/windows/desktop/dd797891).
 
 - `type` = **exe**
 
-     [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559).
 
 - `type` = **service**
 
-     [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559).
 
 - `type` = **unspecified**
 
-     Disables injection of ATL code related to the module attribute.
+   Disables injection of ATL code related to the module attribute.
 
 ## Example
 
 The following code shows how to create a library block in the generated .idl file.
 
-```cpp  
-// cpp_attr_ref_module1.cpp  
-// compile with: /LD  
-[module(name="MyLibrary", version="1.2", helpfile="MyHelpFile")];  
+```cpp
+// cpp_attr_ref_module1.cpp
+// compile with: /LD
+[module(name="MyLibrary", version="1.2", helpfile="MyHelpFile")];
 ```
 
 The following code shows that you can provide your own implementation of a function that would appear in the code that was injected as a result of using **module**. See [/Fx](../build/reference/fx-merge-injected-code.md) for more information on viewing injected code. In order to override one of the functions inserted by the **module** attribute, make a class that will contain your implementation of the function and make the **module** attribute apply to that class.
 
-```cpp  
-// cpp_attr_ref_module2.cpp  
-// compile with: /LD /link /OPT:NOREF  
-#include <atlbase.h>  
-#include <atlcom.h>  
-#include <atlwin.h>  
-#include <atltypes.h>  
-#include <atlctl.h>  
-#include <atlhost.h>  
+```cpp
+// cpp_attr_ref_module2.cpp
+// compile with: /LD /link /OPT:NOREF
+#include <atlbase.h>
+#include <atlcom.h>
+#include <atlwin.h>
+#include <atltypes.h>
+#include <atlctl.h>
+#include <atlhost.h>
 #include <atlplus.h>
 
-// no semicolon after attribute block  
-[module(dll, name="MyLibrary", version="1.2", helpfile="MyHelpFile")]   
-// module attribute now applies to this class  
-class CMyClass {  
-public:  
-BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {  
-   // add your own code here  
-   return __super::DllMain(dwReason, lpReserved);  
-   }  
-};  
+// no semicolon after attribute block
+[module(dll, name="MyLibrary", version="1.2", helpfile="MyHelpFile")]
+// module attribute now applies to this class
+class CMyClass {
+public:
+BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
+   // add your own code here
+   return __super::DllMain(dwReason, lpReserved);
+   }
+};
 ```
 
 ## Requirements
@@ -172,7 +172,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -185,4 +185,4 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 [helpcontext](../windows/helpcontext.md)  
 [helpstring](../windows/helpstring.md)  
 [helpfile](../windows/helpfile.md)  
-[version](../windows/version-cpp.md)   
+[version](../windows/version-cpp.md)  

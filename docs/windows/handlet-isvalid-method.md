@@ -18,8 +18,8 @@ Indicates whether the current **HandleT** object represents a handle.
 
 ## Syntax
 
-```cpp  
-bool IsValid() const;  
+```cpp
+bool IsValid() const;
 ```
 
 ## Return Value

@@ -18,8 +18,8 @@ Holds a pointer to the object whose member function is the event handler for the
 
 ## Syntax
 
-```cpp  
-T* object_;  
+```cpp
+T* object_;
 ```
 
 ## Requirements

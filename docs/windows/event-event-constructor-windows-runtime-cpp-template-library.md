@@ -17,13 +17,13 @@ Initializes a new instance of the **Event** class.
 
 ## Syntax
 
-```cpp  
-explicit Event(  
+```cpp
+explicit Event(
    HANDLE h = HandleT::Traits::GetInvalidValue()  
-);  
-WRL_NOTHROW Event(  
-   _Inout_ Event&& h  
-);  
+);
+WRL_NOTHROW Event(
+   _Inout_ Event&& h
+);
 ```
 
 ### Parameters

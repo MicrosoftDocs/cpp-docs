@@ -18,10 +18,10 @@ Specifies that a member of a module, interface, or dispinterface cannot be calle
 
 ## Syntax
 
-```cpp  
-[ restricted(  
-   interfaces  
-) ]  
+```cpp
+[ restricted(
+   interfaces
+) ]
 ```
 
 ### Parameters
@@ -37,27 +37,27 @@ The **restricted** C++ attribute has the same functionality as the [restricted](
 
 The following code shows how to use the **restricted** attribute:
 
-```cpp  
-// cpp_attr_ref_restricted.cpp  
-// compile with: /LD  
-#include "windows.h"  
-#include "unknwn.h"  
+```cpp
+// cpp_attr_ref_restricted.cpp
+// compile with: /LD
+#include "windows.h"
+#include "unknwn.h"
 [module(name="MyLib")];
 
-[object, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface a  
-{  
+[object, uuid("00000000-0000-0000-0000-000000000001")]
+__interface a
+{
 };
 
-[object, uuid("00000000-0000-0000-0000-000000000002")]  
-__interface b  
-{  
+[object, uuid("00000000-0000-0000-0000-000000000002")]
+__interface b
+{
 };
 
-[coclass, restricted(a,b), uuid("00000000-0000-0000-0000-000000000003")]  
-class c : public a, public b  
-{  
-};  
+[coclass, restricted(a,b), uuid("00000000-0000-0000-0000-000000000003")]
+class c : public a, public b
+{
+};
 ```
 
 ## Requirements
@@ -71,10 +71,10 @@ class c : public a, public b
 |**Required attributes**|**coclass** (when applied to **class** or **struct**)|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Interface Attributes](../windows/interface-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)   
+[Method Attributes](../windows/method-attributes.md)  

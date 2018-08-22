@@ -49,4 +49,4 @@ Add support for one of the libraries supplied in Visual C++.
 
 ## See Also
 
-[Win32 Application Wizard](../windows/win32-application-wizard.md)   
+[Win32 Application Wizard](../windows/win32-application-wizard.md)  

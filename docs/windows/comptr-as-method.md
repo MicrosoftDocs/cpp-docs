@@ -18,16 +18,16 @@ Returns a **ComPtr** object that represents the interface identified by the spec
 
 ## Syntax
 
-```cpp  
-template<typename U>  
-HRESULT As(  
-   _Out_ ComPtr<U>* p  
+```cpp
+template<typename U>
+HRESULT As(
+   _Out_ ComPtr<U>* p
 ) const;
 
-template<typename U>  
-HRESULT As(  
-   _Out_ Details::ComPtrRef<ComPtr<U>> p  
-) const;  
+template<typename U>
+HRESULT As(
+   _Out_ Details::ComPtrRef<ComPtr<U>> p
+) const;
 ```
 
 ### Parameters

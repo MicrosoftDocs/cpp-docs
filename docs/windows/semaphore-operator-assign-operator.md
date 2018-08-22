@@ -18,10 +18,10 @@ Moves the specified handle from a **Semaphore** object to the current **Semaphor
 
 ## Syntax
 
-```cpp  
-Semaphore& operator=(  
-   _Inout_ Semaphore&& h  
-);  
+```cpp
+Semaphore& operator=(
+   _Inout_ Semaphore&& h
+);
 ```
 
 ### Parameters
@@ -39,5 +39,5 @@ A reference to the current **Semaphore** object.
 
 **Namespace:** Microsoft::WRL::Wrappers
 
- ## See Also
+## See Also
 [Semaphore Class](../windows/semaphore-class.md)

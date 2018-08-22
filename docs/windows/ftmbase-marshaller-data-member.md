@@ -18,8 +18,8 @@ Holds a reference to the free threaded marshaler.
 
 ## Syntax
 
-```cpp  
-Microsoft::WRL::ComPtr<IMarshal> marshaller_; ;  
+```cpp
+Microsoft::WRL::ComPtr<IMarshal> marshaller_; ;
 ```
 
 ## Requirements

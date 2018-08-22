@@ -18,8 +18,8 @@ Used for Visual Basic code optimization.
 
 ## Syntax
 
-```cpp  
-[defaultcollelem]  
+```cpp
+[defaultcollelem]
 ```
 
 ## Remarks
@@ -30,19 +30,19 @@ The **defaultcollelem** C++ attribute has the same functionality as the [default
 
 The following code shows an interface method using the **defaultcollelem** attribute:
 
-```cpp  
-// cpp_attr_ref_defaultcollelem.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
-[module(name="MyLib")];  
-[object, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IMyForm   
-{     
-   [propget, id(1), bindable, defaultcollelem, displaybind,   
-   defaultbind, requestedit] HRESULT P1([out, retval] long *nSize);  
-   [propput, id(1), bindable, defaultcollelem, displaybind,   
-   defaultbind, requestedit] HRESULT P1([in] long nSize);  
-};  
+```cpp
+// cpp_attr_ref_defaultcollelem.cpp
+// compile with: /LD
+#include <unknwn.h>
+[module(name="MyLib")];
+[object, uuid("00000000-0000-0000-0000-000000000001")]
+__interface IMyForm
+{
+   [propget, id(1), bindable, defaultcollelem, displaybind,
+   defaultbind, requestedit] HRESULT P1([out, retval] long *nSize);
+   [propput, id(1), bindable, defaultcollelem, displaybind,
+   defaultbind, requestedit] HRESULT P1([in] long nSize);
+};
 ```
 
 ## Requirements
@@ -56,9 +56,9 @@ __interface IMyForm
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)   
+[Method Attributes](../windows/method-attributes.md)  

@@ -18,8 +18,8 @@ Contains the underlying lock variable for the current **SRWLock** object.
 
 ## Syntax
 
-```cpp  
-SRWLOCK SRWLock_;  
+```cpp
+SRWLOCK SRWLock_;
 ```
 
 ## Requirements

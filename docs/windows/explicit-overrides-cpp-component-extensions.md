@@ -19,10 +19,10 @@ This topic discusses how to explicitly override a member of a base class or inte
 
 ### Syntax
 
-```cpp  
-overriding-function-declarator = type::function [,type::function] { overriding-function-definition }  
-overriding-function-declarator = function { overriding-function-definition }  
-```  
+```cpp
+overriding-function-declarator = type::function [,type::function] { overriding-function-definition }
+overriding-function-declarator = function { overriding-function-definition }
+```
 
 ### Parameters
 
@@ -64,111 +64,111 @@ Compiler option: `/clr`
 
 The following code example shows a simple, implicit override and implementation of a member in a base interface, not using explicit overrides.
 
-```cpp  
-// explicit_override_1.cpp  
-// compile with: /clr  
-interface struct I1 {  
-   virtual void f();  
+```cpp
+// explicit_override_1.cpp
+// compile with: /clr
+interface struct I1 {
+   virtual void f();
 };
 
-ref class X : public I1 {  
-public:  
-   virtual void f() {  
-      System::Console::WriteLine("X::f override of I1::f");  
-   }  
+ref class X : public I1 {
+public:
+   virtual void f() {
+      System::Console::WriteLine("X::f override of I1::f");
+   }
 };
 
-int main() {  
-   I1 ^ MyI = gcnew X;  
-   MyI -> f();  
-}  
+int main() {
+   I1 ^ MyI = gcnew X;
+   MyI -> f();
+}
 ```
 
-```Output  
-X::f override of I1::f  
+```Output
+X::f override of I1::f
 ```
 
 The following code example shows how to implement all interface members with a common signature, using explicit override syntax.
 
-```cpp  
-// explicit_override_2.cpp  
-// compile with: /clr  
-interface struct I1 {  
-   virtual void f();  
+```cpp
+// explicit_override_2.cpp
+// compile with: /clr
+interface struct I1 {
+   virtual void f();
 };
 
-interface struct I2 {  
-   virtual void f();  
+interface struct I2 {
+   virtual void f();
 };
 
-ref struct X : public I1, I2 {  
-   virtual void f() = I1::f, I2::f {  
-      System::Console::WriteLine("X::f override of I1::f and I2::f");  
-   }  
+ref struct X : public I1, I2 {
+   virtual void f() = I1::f, I2::f {
+      System::Console::WriteLine("X::f override of I1::f and I2::f");
+   }
 };
 
-int main() {  
-   I1 ^ MyI = gcnew X;  
-   I2 ^ MyI2 = gcnew X;  
-   MyI -> f();  
-   MyI2 -> f();  
-}  
+int main() {
+   I1 ^ MyI = gcnew X;
+   I2 ^ MyI2 = gcnew X;
+   MyI -> f();
+   MyI2 -> f();
+}
 ```
 
-```Output  
-X::f override of I1::f and I2::f  
-X::f override of I1::f and I2::f  
+```Output
+X::f override of I1::f and I2::f
+X::f override of I1::f and I2::f
 ```
 
 The following code example shows how a function override can have a different name from the function it is implementing.
 
-```cpp  
-// explicit_override_3.cpp  
-// compile with: /clr  
-interface struct I1 {  
-   virtual void f();  
+```cpp
+// explicit_override_3.cpp
+// compile with: /clr
+interface struct I1 {
+   virtual void f();
 };
 
-ref class X : public I1 {  
-public:  
-   virtual void g() = I1::f {  
-      System::Console::WriteLine("X::g");  
-   }  
+ref class X : public I1 {
+public:
+   virtual void g() = I1::f {
+      System::Console::WriteLine("X::g");
+   }
 };
 
-int main() {  
-   I1 ^ a = gcnew X;  
-   a->f();  
-}  
+int main() {
+   I1 ^ a = gcnew X;
+   a->f();
+}
 ```
 
-```Output  
-X::g  
+```Output
+X::g
 ```
 
 The following code example shows an explicit interface implementation that implements a type safe collection.
 
-```cpp  
-// explicit_override_4.cpp  
-// compile with: /clr /LD  
-using namespace System;  
-ref class R : ICloneable {  
+```cpp
+// explicit_override_4.cpp
+// compile with: /clr /LD
+using namespace System;
+ref class R : ICloneable {
    int X;
 
-   virtual Object^ C() sealed = ICloneable::Clone {  
-      return this->Clone();  
+   virtual Object^ C() sealed = ICloneable::Clone {
+      return this->Clone();
    }
 
-public:  
-   R() : X(0) {}  
+public:
+   R() : X(0) {}
    R(int x) : X(x) {}
 
-   virtual R^ Clone() {  
-      R^ r = gcnew R;  
-      r->X = this->X;  
-      return r;  
-   }  
-};  
+   virtual R^ Clone() {
+      R^ r = gcnew R;
+      r->X = this->X;
+      return r;
+   }
+};
 ```
 
 ## See Also

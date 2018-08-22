@@ -18,10 +18,10 @@ Gets the runtime class name of the object that the current **ActivationFactory**
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   GetRuntimeClassName  
-)(_Out_ HSTRING* runtimeName);  
+```cpp
+STDMETHOD(
+   GetRuntimeClassName
+)(_Out_ HSTRING* runtimeName);
 ```
 
 ### Parameters

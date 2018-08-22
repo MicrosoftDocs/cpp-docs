@@ -18,10 +18,10 @@ Assigns the specified **Event** reference to the current **Event** instance.
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW Event& operator=(  
-   _Inout_ Event&& h  
-);  
+```cpp
+WRL_NOTHROW Event& operator=(
+   _Inout_ Event&& h
+);
 ```
 
 ### Parameters

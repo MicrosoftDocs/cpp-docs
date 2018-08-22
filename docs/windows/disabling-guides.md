@@ -32,7 +32,7 @@ You can use special keys in conjunction with the mouse to disable the snapping e
    > [!NOTE]
    > You can also double-click the ruler bar to access the **Guide Settings** dialog box.
 
- \- or -
+\- or -
 
 - On the **Format** menu, click **Toggle Guides**.
 

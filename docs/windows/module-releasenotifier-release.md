@@ -17,8 +17,8 @@ Deletes the current **Module::ReleaseNotifier** object if the object was constru
 
 ## Syntax
 
-```cpp  
-void Release() throw();  
+```cpp
+void Release() throw();
 ```
 
 ## Requirements

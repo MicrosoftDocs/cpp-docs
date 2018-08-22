@@ -17,7 +17,7 @@ Retrieves the HRESULT value produced by the last **RoInitializeWrapper** constru
 
 ## Syntax
 
-```cpp  
+```cpp
 operator HRESULT()  
 ```
 

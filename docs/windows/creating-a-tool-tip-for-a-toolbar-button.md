@@ -31,7 +31,7 @@ A common example of a tool tip is the **Print** button in **WordPad**:
 
 The `Print` in **Step 3** is the "Tool tip name," and the `Prints the active document` from **Step 4** is the "description of the button for the status bar."
 
- If you want this effect using the **Toolbar** editor, you set the **Prompt** property to `Prints the active document\nPrint`.
+If you want this effect using the **Toolbar** editor, you set the **Prompt** property to `Prints the active document\nPrint`.
 
 > [!NOTE]
 > You can edit prompt text using the [Properties Window](/visualstudio/ide/reference/properties-window).

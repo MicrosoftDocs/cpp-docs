@@ -17,8 +17,8 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-struct RuntimeClassBase;  
+```cpp
+struct RuntimeClassBase;
 ```
 
 ## Remarks

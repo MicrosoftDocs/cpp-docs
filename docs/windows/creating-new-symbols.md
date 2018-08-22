@@ -24,9 +24,9 @@ When you are beginning a new project, you may find it convenient to map out the 
 
 3. Accept the assigned symbol value.
 
-     -or-
+   -or-
 
-     In the **Value** box, type a new value.
+   In the **Value** box, type a new value.
 
 4. Click **OK** to add the new symbol to the symbol list.
 

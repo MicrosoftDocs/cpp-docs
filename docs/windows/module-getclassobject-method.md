@@ -18,13 +18,13 @@ Retreives a cache of class factories.
 
 ## Syntax
 
-```cpp  
- HRESULT GetClassObject(  
-   REFCLSID clsid,  
-   REFIID riid,  
-   _Deref_out_ void **ppv,  
-   wchar_t* serverName = nullptr  
-);  
+```cpp
+ HRESULT GetClassObject(
+   REFCLSID clsid,
+   REFIID riid,
+   _Deref_out_ void **ppv,
+   wchar_t* serverName = nullptr
+);
 ```
 
 ### Parameters
@@ -53,5 +53,5 @@ Use this method only for COM, not the Windows Runtime. This method exposes only 
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

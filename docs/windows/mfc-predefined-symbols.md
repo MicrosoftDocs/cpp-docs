@@ -15,12 +15,12 @@ ms.workload: ["cplusplus", "uwp"]
 
 MFC projects always include several header files that support windows. These are added via `#include` statements in the `StdAfx.h` file:
 
-```cpp  
-#include <afxwin.h>      //MFC core and standard components  
-#include <afxext.h>      //MFC extensions  
-#include <afxdisp.h      //MFC automation classes  
-#include <afxdtctl.h>   //MFC support for Internet Explorer common controls  
-#include <afxcmn.h>      //MFC support for Windows common controls.  
+```cpp
+#include <afxwin.h>      //MFC core and standard components
+#include <afxext.h>      //MFC extensions
+#include <afxdisp.h      //MFC automation classes
+#include <afxdtctl.h>   //MFC support for Internet Explorer common controls
+#include <afxcmn.h>      //MFC support for Windows common controls.
 ```
 
 The header files include symbol ID values for MFC common values. These symbols are only available when you are working in an MFC project. Note that the AFX_ prefix is followed by the standard symbol name prefixes.

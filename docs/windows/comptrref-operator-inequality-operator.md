@@ -17,31 +17,31 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-bool operator!=(  
-   const Details::ComPtrRef<ComPtr<T>>& a,  
-   const Details::ComPtrRef<ComPtr<U>>& b  
+```cpp
+bool operator!=(
+   const Details::ComPtrRef<ComPtr<T>>& a,
+   const Details::ComPtrRef<ComPtr<U>>& b
 );
 
-bool operator!=(  
-   const Details::ComPtrRef<ComPtr<T>>& a,  
+bool operator!=(
+   const Details::ComPtrRef<ComPtr<T>>& a,
    decltype(__nullptr)  
 );
 
-bool operator!=(  
-   decltype(__nullptr),  
-   const Details::ComPtrRef<ComPtr<T>>& a  
+bool operator!=(
+   decltype(__nullptr),
+   const Details::ComPtrRef<ComPtr<T>>& a
 );
 
-bool operator!=(  
-   const Details::ComPtrRef<ComPtr<T>>& a,  
-   void* b  
+bool operator!=(
+   const Details::ComPtrRef<ComPtr<T>>& a,
+   void* b
 );
 
-bool operator!=(  
-   void* b,  
-   const Details::ComPtrRef<ComPtr<T>>& a  
-);  
+bool operator!=(
+   void* b,
+   const Details::ComPtrRef<ComPtr<T>>& a
+);
 ```
 
 ### Parameters

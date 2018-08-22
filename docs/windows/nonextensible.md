@@ -18,8 +18,8 @@ Specifies that the `IDispatch` implementation includes only the properties and m
 
 ## Syntax
 
-```cpp  
-[nonextensible]  
+```cpp
+[nonextensible]
 ```
 
 ## Remarks
@@ -32,19 +32,19 @@ Use of **nonextensible** also requires the [oleautomation](../windows/oleautomat
 
 The following code shows one use of the **nonextensible** attribute:
 
-```cpp  
-// cpp_attr_ref_nonextensible.cpp  
-// compile with: /LD  
-#include "unknwn.h"  
-[module(name="ATLFIRELib")];  
+```cpp
+// cpp_attr_ref_nonextensible.cpp
+// compile with: /LD
+#include "unknwn.h"
+[module(name="ATLFIRELib")];
 [export] typedef long HRESULT;
 
-[dual, nonextensible, ms_union, oleautomation,   
-uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IFireTabCtrl  
-{  
-   HRESULT procedure (int i);   
-};  
+[dual, nonextensible, ms_union, oleautomation,
+uuid("00000000-0000-0000-0000-000000000001")]
+__interface IFireTabCtrl
+{
+   HRESULT procedure (int i);
+};
 ```
 
 ## Requirements
@@ -58,9 +58,9 @@ __interface IFireTabCtrl
 |**Required attributes**|`dual` and `oleautomation`, or `dispinterface`|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)   
+[Interface Attributes](../windows/interface-attributes.md)  

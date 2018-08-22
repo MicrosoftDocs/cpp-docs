@@ -18,10 +18,10 @@ Specify the size of memory allocated for sized pointers, sized pointers to sized
 
 ## Syntax
 
-```cpp  
-[ size_is(  
-   "expression"  
-) ]  
+```cpp
+[ size_is(
+   "expression"
+) ]
 ```
 
 ### Parameters
@@ -48,7 +48,7 @@ See the example for [first_is](../windows/first-is.md) for a sample of how to sp
 |**Required attributes**|None|
 |**Invalid attributes**|`max_is`|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -58,4 +58,4 @@ See the example for [first_is](../windows/first-is.md) for a sample of how to sp
 [first_is](../windows/first-is.md)  
 [last_is](../windows/last-is.md)  
 [max_is](../windows/max-is.md)  
-[length_is](../windows/length-is.md)   
+[length_is](../windows/length-is.md)  

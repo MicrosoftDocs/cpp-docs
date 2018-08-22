@@ -18,10 +18,10 @@ Sets the address of the progress event handler to the specified value.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   PutOnProgress  
-)(TProgress* progressHandler);  
+```cpp
+STDMETHOD(
+   PutOnProgress
+)(TProgress* progressHandler);
 ```
 
 ### Parameters

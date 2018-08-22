@@ -18,8 +18,8 @@ Deinitializes the current instance of the **Module** class.
 
 ## Syntax
 
-```cpp  
-virtual ~Module();  
+```cpp
+virtual ~Module();
 ```
 
 ## Requirements
@@ -28,5 +28,5 @@ virtual ~Module();
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

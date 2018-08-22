@@ -18,12 +18,12 @@ Creates a connection to a data source.
 
 ## Syntax
 
-```cpp  
-[ db_source(   
-   db_source,   
-   name,   
-   hresult   
-) ]  
+```cpp
+[ db_source(
+   db_source,
+   name,
+   hresult
+) ]
 ```
 
 ### Parameters
@@ -55,18 +55,18 @@ For an example of this attribute used in an application, see the samples [AtlAge
 
 This sample calls **db_source** on a class to create a connection to the data source `ds` using the Northwind database. `ds` is a handle for the data source, which can be used internally to the `CMyCommand` class.
 
-```cpp  
-// db_source_1.cpp  
-// compile with: /LD  
-#include <atlbase.h>  
-#include <atlplus.h>  
+```cpp
+// db_source_1.cpp
+// compile with: /LD
+#include <atlbase.h>
+#include <atlplus.h>
 #include <atldbcli.h>
 
-[  
-  db_source(L"my_connection_string", name="ds"),  
+[
+  db_source(L"my_connection_string", name="ds"),
   db_command(L"select * from Products")  
-]  
-class CMyCommand {};  
+]
+class CMyCommand {};
 ```
 
 ## Requirements
@@ -80,8 +80,8 @@ class CMyCommand {};
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
-[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
+[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)  

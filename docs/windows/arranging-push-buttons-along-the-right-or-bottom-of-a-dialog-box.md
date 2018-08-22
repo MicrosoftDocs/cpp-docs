@@ -23,7 +23,7 @@ ms.workload: ["cplusplus", "uwp"]
 
    - `Bottom`: aligns push buttons along the bottom edge of the dialog box.
 
-         If you select a control other than a push button, its position is not affected.
+       If you select a control other than a push button, its position is not affected.
 
 For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 

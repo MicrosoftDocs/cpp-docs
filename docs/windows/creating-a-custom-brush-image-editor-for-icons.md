@@ -21,14 +21,14 @@ A custom brush is a rectangular portion of an image that you pick up and use lik
 
 2. Holding the **Shift** key down, click in the selection and drag it across the image.
 
-     \- or -
+   \- or -
 
 3. From the **Image** menu, choose **Use Selection as Brush**.
 
-     Your selection becomes a custom brush that distributes the colors in the selection across the image. Copies of the selection are left along the dragging path. The more slowly you drag, the more copies are made.
+   Your selection becomes a custom brush that distributes the colors in the selection across the image. Copies of the selection are left along the dragging path. The more slowly you drag, the more copies are made.
 
-     > [!NOTE]
-     > Clicking the **Use a Selection as Brush** without first selecting a portion of the image will use the whole image as a brush. The result of using a custom brush will also depend on whether you've selected an [Opaque or Transparent background](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).
+   > [!NOTE]
+   > Clicking the **Use a Selection as Brush** without first selecting a portion of the image will use the whole image as a brush. The result of using a custom brush will also depend on whether you've selected an [Opaque or Transparent background](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).
 
 Pixels in a custom brush that match the current background color are normally transparent: they do not paint over the existing image. You can change this behavior so that background-color pixels paint over the existing image.
 

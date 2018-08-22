@@ -19,7 +19,7 @@ You can resize a group of controls based on the size of the dominant control. Yo
 
 1. [Select the controls](../windows/selecting-multiple-controls.md) you want to resize.
 
-     The control selected first in the series is the dominant control. The final size of the controls in the group depends on the size of the dominant control. For more information on selecting the dominant control, see [Specifying a Dominant Control](../windows/specifying-the-dominant-control.md).
+   The control selected first in the series is the dominant control. The final size of the controls in the group depends on the size of the dominant control. For more information on selecting the dominant control, see [Specifying a Dominant Control](../windows/specifying-the-dominant-control.md).
 
 2. From the **Format** menu, choose **Make Same Size**, then choose one of the following commands:
 

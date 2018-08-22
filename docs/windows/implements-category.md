@@ -18,10 +18,10 @@ Specifies the component categories implemented by the target class.
 
 ## Syntax
 
-```cpp  
-[ implements_category(  
-   implements_category="uuid"  
-) ]  
+```cpp
+[ implements_category(
+   implements_category="uuid"
+) ]
 ```
 
 ### Parameters
@@ -39,17 +39,17 @@ This attribute requires that the [coclass](../windows/coclass.md), [progid](../w
 
 The following code specifies that the following object implements the `Control` category.
 
-```cpp  
-// cpp_attr_ref_implements_category.cpp  
-// compile with: /LD  
-#define _ATL_ATTRIBUTES  
-#include "atlbase.h"  
+```cpp
+// cpp_attr_ref_implements_category.cpp
+// compile with: /LD
+#define _ATL_ATTRIBUTES
+#include "atlbase.h"
 #include "atlcom.h"
 
-[module (name="MyLib")];  
-[ coclass, implements_category("CATID_Control"),  
-  uuid("20a0d0cc-5172-40f5-99ae-5e032f3205ae")]  
-class CMyClass {};  
+[module (name="MyLib")];
+[ coclass, implements_category("CATID_Control"),
+  uuid("20a0d0cc-5172-40f5-99ae-5e032f3205ae")]
+class CMyClass {};
 ```
 
 ## Requirements
@@ -63,10 +63,10 @@ class CMyClass {};
 |**Required attributes**|One of the following: `coclass`, `progid`, or `vi_progid`|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [COM Attributes](../windows/com-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
-[IMPLEMENTED_CATEGORY](../atl/reference/category-macros.md#implemented_category)   
+[IMPLEMENTED_CATEGORY](../atl/reference/category-macros.md#implemented_category)  

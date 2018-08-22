@@ -18,12 +18,12 @@ Creates an event source.
 
 ## Syntax
 
-```cpp  
-[ event_source(  
-   type,  
-   optimize=[speed | size],  
-   decorate=[true | false]  
-) ]  
+```cpp
+[ event_source(
+   type,
+   optimize=[speed | size],
+   decorate=[true | false]
+) ]
 ```
 
 ### Parameters
@@ -35,10 +35,10 @@ An enumeration of one of the following values:
 
 - `com` for COM code. You must use `coclass` when `type`=`com`. This value requires that you include the following header files:
 
-    ```cpp  
-    #define _ATL_ATTRIBUTES  
-    #include <atlbase.h>  
-    #include <atlcom.h>  
+    ```cpp
+    #define _ATL_ATTRIBUTES
+    #include <atlbase.h>
+    #include <atlcom.h>
     ```
 
 *optimize*  
@@ -67,7 +67,7 @@ The **event_source** C++ attribute specifies that the class or structure to whic
 |**Required attributes**|**coclass** when `type`=`com`|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -76,4 +76,4 @@ The **event_source** C++ attribute specifies that the class or structure to whic
 [__event](../cpp/event.md)  
 [__hook](../cpp/hook.md)  
 [__unhook](../cpp/unhook.md)  
-[Class Attributes](../windows/class-attributes.md)   
+[Class Attributes](../windows/class-attributes.md)  

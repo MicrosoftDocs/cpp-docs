@@ -18,18 +18,18 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template<  
-   typename T,  
-   bool hasWeakReferenceSupport =   
+```cpp
+template<
+   typename T,
+   bool hasWeakReferenceSupport =
          !__is_base_of(RuntimeClassFlags<InhibitWeakReference>, T)>
  class MakeAllocator;
 
-template<typename T>  
+template<typename T>
 class MakeAllocator<T, false>;
 
-template<typename T>  
-class MakeAllocator<T, true>;  
+template<typename T>
+class MakeAllocator<T, true>;
 ```
 
 ### Parameters

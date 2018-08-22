@@ -18,9 +18,9 @@ Provides a fundamental mechanism to create a base class.
 
 ## Syntax
 
-```cpp  
-template<typename Base>  
-class SimpleClassFactory : public ClassFactory<>;  
+```cpp
+template<typename Base>
+class SimpleClassFactory : public ClassFactory<>;
 ```
 
 ### Parameters

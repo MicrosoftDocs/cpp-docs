@@ -18,8 +18,8 @@ Gets a pointer to the underlying `IUnknown` interface.
 
 ## Syntax
 
-```cpp  
-__forceinline IUnknown* CastToUnknown();  
+```cpp
+__forceinline IUnknown* CastToUnknown();
 ```
 
 ## Return Value

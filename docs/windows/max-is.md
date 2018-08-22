@@ -18,10 +18,10 @@ Designates the maximum value for a valid array index.
 
 ## Syntax
 
-```cpp  
-[ max_is(  
-   "expression"  
-) ]  
+```cpp
+[ max_is(
+   "expression"
+) ]
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ The **max_is** C++ attribute has the same functionality as the [max_is](http://m
 |**Required attributes**|None|
 |**Invalid attributes**|**size_is**|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## Example
 
@@ -58,4 +58,4 @@ See [first_is](../windows/first-is.md) for an example of how to specify a sectio
 [first_is](../windows/first-is.md)  
 [last_is](../windows/last-is.md)  
 [length_is](../windows/length-is.md)  
-[size_is](../windows/size-is.md)   
+[size_is](../windows/size-is.md)  

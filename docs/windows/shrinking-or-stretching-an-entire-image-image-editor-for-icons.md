@@ -17,7 +17,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. Select the entire image.
 
-     If a part of the image is currently selected and you want to select the entire image, click anywhere on the image outside the current selection border.
+   If a part of the image is currently selected and you want to select the entire image, click anywhere on the image outside the current selection border.
 
 2. Hold down the **Shift** key and drag a sizing handle until the image is the desired size.
 

@@ -17,11 +17,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template <  
-   unsigned int RuntimeClassTypeT  
->  
-friend struct Details::RuntimeClassBaseT;  
+```cpp
+template <
+   unsigned int RuntimeClassTypeT
+>
+friend struct Details::RuntimeClassBaseT;
 ```
 
 ### Parameters

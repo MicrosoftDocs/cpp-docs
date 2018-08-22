@@ -14,8 +14,8 @@ ms.workload: ["cplusplus", "uwp"]
 # How to: Create a Resource Script File
 
 > [!NOTE]
-> The **Resource Editor** is not available in Express editions.  
->   
+> The **Resource Editor** is not available in Express editions.
+>
 > This material applies to Windows desktop applications. Projects in .NET languages do not use resource script files. See [Resource Files](../windows/resource-files-visual-studio.md), for more information.
 
 ### To create a new resource script (.rc) file

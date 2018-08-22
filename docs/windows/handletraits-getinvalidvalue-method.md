@@ -18,8 +18,8 @@ Represents an invalid handle.
 
 ## Syntax
 
-```cpp  
-inline static HANDLE GetInvalidValue();  
+```cpp
+inline static HANDLE GetInvalidValue();
 ```
 
 ## Return Value

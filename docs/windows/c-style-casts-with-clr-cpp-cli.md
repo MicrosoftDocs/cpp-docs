@@ -35,124 +35,124 @@ A C-style cast is not recommended. When compiling with [/clr (Common Language Ru
 
 The following sample shows a C-style cast that maps to a **const_cast**.
 
-```cpp  
-// cstyle_casts_1.cpp  
-// compile with: /clr  
+```cpp
+// cstyle_casts_1.cpp
+// compile with: /clr
 using namespace System;
 
-ref struct R {};  
-int main() {  
-   const R^ constrefR = gcnew R();  
-   R^ nonconstR = (R^)(constrefR);   
-}  
+ref struct R {};
+int main() {
+   const R^ constrefR = gcnew R();
+   R^ nonconstR = (R^)(constrefR);
+}
 ```
 
 The following sample shows a C-style cast that maps to a **safe_cast**.
 
-```cpp  
-// cstyle_casts_2.cpp  
-// compile with: /clr  
-using namespace System;  
-int main() {  
-   Object ^ o = "hello";  
-   String ^ s = (String^)o;  
-}  
+```cpp
+// cstyle_casts_2.cpp
+// compile with: /clr
+using namespace System;
+int main() {
+   Object ^ o = "hello";
+   String ^ s = (String^)o;
+}
 ```
 
 The following sample shows a C-style cast that maps to a **safe_cast** plus **const_cast**.
 
-```cpp  
-// cstyle_casts_3.cpp  
-// compile with: /clr  
+```cpp
+// cstyle_casts_3.cpp
+// compile with: /clr
 using namespace System;
 
-ref struct R {};  
+ref struct R {};
 ref struct R2 : public R {};
 
-int main() {  
-   const R^ constR2 = gcnew R2();  
-   try {  
-   R2^ b2DR = (R2^)(constR2);  
-   }  
-   catch(InvalidCastException^ e) {  
-      System::Console::WriteLine("Invalid Exception");  
-   }  
-}  
+int main() {
+   const R^ constR2 = gcnew R2();
+   try {
+   R2^ b2DR = (R2^)(constR2);
+   }
+   catch(InvalidCastException^ e) {
+      System::Console::WriteLine("Invalid Exception");
+   }
+}
 ```
 
 The following sample shows a C-style cast that maps to a **static_cast**.
 
-```cpp  
-// cstyle_casts_4.cpp  
-// compile with: /clr  
+```cpp
+// cstyle_casts_4.cpp
+// compile with: /clr
 using namespace System;
 
-struct N1 {};  
-struct N2 {  
-   operator N1() {  
-      return N1();  
-   }  
+struct N1 {};
+struct N2 {
+   operator N1() {
+      return N1();
+   }
 };
 
-int main() {  
-   N2 n2;  
-   N1 n1 ;  
-   n1 = (N1)n2;  
-}  
+int main() {
+   N2 n2;
+   N1 n1 ;
+   n1 = (N1)n2;
+}
 ```
 
 The following sample shows a C-style cast that maps to a **static_cast** plus **const_cast**.
 
-```cpp  
-// cstyle_casts_5.cpp  
-// compile with: /clr  
-using namespace System;  
+```cpp
+// cstyle_casts_5.cpp
+// compile with: /clr
+using namespace System;
 struct N1 {};
 
-struct N2 {  
-   operator const N1*() {  
-      static const N1 n1;  
-      return &n1;  
-   }  
+struct N2 {
+   operator const N1*() {
+      static const N1 n1;
+      return &n1;
+   }
 };
 
-int main() {  
-   N2 n2;  
-   N1* n1 = (N1*)(const N1*)n2;   // const_cast + static_cast  
-}  
+int main() {
+   N2 n2;
+   N1* n1 = (N1*)(const N1*)n2;   // const_cast + static_cast
+}
 ```
 
 The following sample shows a C-style cast that maps to a run-time check.
 
-```cpp  
-// cstyle_casts_6.cpp  
-// compile with: /clr  
+```cpp
+// cstyle_casts_6.cpp
+// compile with: /clr
 using namespace System;
 
-ref class R1 {};  
+ref class R1 {};
 ref class R2 {};
 
-int main() {  
-   R1^ r  = gcnew R1();  
-   try {  
-      R2^ rr = ( R2^)(r);  
-   }  
-   catch(System::InvalidCastException^ e) {  
-      Console::WriteLine("Caught expected exception");  
-   }  
-}  
+int main() {
+   R1^ r  = gcnew R1();
+   try {
+      R2^ rr = ( R2^)(r);
+   }
+   catch(System::InvalidCastException^ e) {
+      Console::WriteLine("Caught expected exception");
+   }
+}
 ```
 
 The following sample shows an invalid C-style cast, which causes the compiler to issue an error.
 
-```cpp  
-// cstyle_casts_7.cpp  
-// compile with: /clr  
-using namespace System;  
-int main() {  
-   String^s = S"hello";  
-   int i = (int)s;   // C2440  
-}  
+```cpp
+// cstyle_casts_7.cpp
+// compile with: /clr
+using namespace System;
+int main() {
+   String^s = S"hello";
+   int i = (int)s;   // C2440
+}
 ```
 
 ## Requirements

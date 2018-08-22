@@ -18,10 +18,10 @@ Closes the specified handle.
 
 ## Syntax
 
-```cpp  
-inline static bool Close(  
-   _In_ Type h  
-);  
+```cpp
+inline static bool Close(
+   _In_ Type h
+);
 ```
 
 ### Parameters

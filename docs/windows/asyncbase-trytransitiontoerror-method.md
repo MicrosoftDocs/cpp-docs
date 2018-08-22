@@ -18,10 +18,10 @@ Indicates whether the specified error code can modify the internal error state.
 
 ## Syntax
 
-```cpp  
-bool TryTransitionToError(  
-   const HRESULT error  
-);  
+```cpp
+bool TryTransitionToError(
+   const HRESULT error
+);
 ```
 
 ### Parameters

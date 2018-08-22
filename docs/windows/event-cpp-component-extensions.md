@@ -22,17 +22,17 @@ C++/CX supports declaring an *event member* or an *event block*. An event member
 
 ### Syntax
 
-```cpp  
-// event data member  
+```cpp
+// event data member
 modifiereventdelegate^ event_name;
 
-// event block  
-modifiereventdelegate^ event_name   
-{  
-   modifierreturn_valueadd(delegate^ name);  
-   modifier void remove(delegate^ name);  
-   modifier void raise(parameters);  
-}  
+// event block
+modifiereventdelegate^ event_name
+{
+   modifierreturn_valueadd(delegate^ name);
+   modifier void remove(delegate^ name);
+   modifier void raise(parameters);
+}
 ```
 
 ### Parameters
@@ -86,17 +86,17 @@ The **event** keyword lets you declare an event. An event is a way for a class t
 
 ### Syntax
 
-```cpp  
-// event data member  
+```cpp
+// event data member
 modifiereventdelegate^ event_name;
 
-// event block  
-modifiereventdelegate^ event_name   
-{  
-   modifierreturn_valueadd(delegate^ name);  
-   modifier void remove(delegate^ name);  
-   modifier void raise(parameters);  
-}  
+// event block
+modifiereventdelegate^ event_name
+{
+   modifierreturn_valueadd(delegate^ name);
+   modifier void remove(delegate^ name);
+   modifier void raise(parameters);
+}
 ```
 
 ### Parameters
@@ -148,7 +148,7 @@ The following steps must be taken in order to create and use events in Visual C+
 
    - Methods that call the event. These methods can be overrides of some base class functionality.
 
-     This class defines the event.
+   This class defines the event.
 
 3. Define one or more classes that connect methods to the event. Each of these classes will associate one or more methods with the event in the base class.
 
@@ -168,103 +168,103 @@ Compiler option: `/clr`
 
 ### Examples
 
- The following code example demonstrates declaring pairs of delegates, events, and event handlers; subscribing (adding) the event handlers; invoking the event handlers; and then unsubscribing (removing) the event handlers.
+The following code example demonstrates declaring pairs of delegates, events, and event handlers; subscribing (adding) the event handlers; invoking the event handlers; and then unsubscribing (removing) the event handlers.
 
-```cpp  
-// mcppv2_events.cpp  
-// compile with: /clr  
+```cpp
+// mcppv2_events.cpp
+// compile with: /clr
 using namespace System;
 
-// declare delegates  
-delegate void ClickEventHandler(int, double);  
+// declare delegates
+delegate void ClickEventHandler(int, double);
 delegate void DblClickEventHandler(String^);
 
-// class that defines events  
-ref class EventSource {  
-public:  
-   event ClickEventHandler^ OnClick;   // declare the event OnClick  
+// class that defines events
+ref class EventSource {
+public:
+   event ClickEventHandler^ OnClick;   // declare the event OnClick
    event DblClickEventHandler^ OnDblClick;   // declare OnDblClick
 
-   void FireEvents() {  
-      // raises events  
-      OnClick(7, 3.14159);  
-      OnDblClick("Hello");  
-   }  
+   void FireEvents() {
+      // raises events
+      OnClick(7, 3.14159);
+      OnDblClick("Hello");
+   }
 };
 
-// class that defines methods that will called when event occurs  
-ref class EventReceiver {  
-public:  
-   void OnMyClick(int i, double d) {  
-      Console::WriteLine("OnClick: {0}, {1}", i, d);  
+// class that defines methods that will called when event occurs
+ref class EventReceiver {
+public:
+   void OnMyClick(int i, double d) {
+      Console::WriteLine("OnClick: {0}, {1}", i, d);
    }
 
-   void OnMyDblClick(String^ str) {  
-      Console::WriteLine("OnDblClick: {0}", str);  
-   }  
+   void OnMyDblClick(String^ str) {
+      Console::WriteLine("OnDblClick: {0}", str);
+   }
 };
 
-int main() {  
-   EventSource ^ MyEventSource = gcnew EventSource();  
+int main() {
+   EventSource ^ MyEventSource = gcnew EventSource();
    EventReceiver^ MyEventReceiver = gcnew EventReceiver();
 
-   // hook handler to event  
-   MyEventSource->OnClick += gcnew ClickEventHandler(MyEventReceiver, &EventReceiver::OnMyClick);  
+   // hook handler to event
+   MyEventSource->OnClick += gcnew ClickEventHandler(MyEventReceiver, &EventReceiver::OnMyClick);
    MyEventSource->OnDblClick += gcnew DblClickEventHandler(MyEventReceiver, &EventReceiver::OnMyDblClick);
 
-   // invoke events  
+   // invoke events
    MyEventSource->FireEvents();
 
-   // unhook handler to event  
-   MyEventSource->OnClick -= gcnew ClickEventHandler(MyEventReceiver, &EventReceiver::OnMyClick);  
-   MyEventSource->OnDblClick -= gcnew DblClickEventHandler(MyEventReceiver, &EventReceiver::OnMyDblClick);  
-}  
+   // unhook handler to event
+   MyEventSource->OnClick -= gcnew ClickEventHandler(MyEventReceiver, &EventReceiver::OnMyClick);
+   MyEventSource->OnDblClick -= gcnew DblClickEventHandler(MyEventReceiver, &EventReceiver::OnMyDblClick);
+}
 ```
 
-```Output  
+```Output
 OnClick: 7, 3.14159
 
-OnDblClick: Hello  
+OnDblClick: Hello
 ```
 
 The following code example demonstrates the logic used to generate the `raise` method of a trivial event: If the event has one or more subscribers, calling the `raise` method implicitly or explicitly calls the delegate. If the delegate's return type is not **void** and if there are zero event subscribers, the `raise` method returns the default value for the delegate type. If there are no event subscribers, calling the `raise` method simply returns and no exception is raised. If the delegate return type is not **void**, the delegate type is returned.
 
-```cpp  
-// trivial_events.cpp  
-// compile with: /clr /c  
-using namespace System;  
-public delegate int Del();  
-public ref struct C {  
-   int i;  
+```cpp
+// trivial_events.cpp
+// compile with: /clr /c
+using namespace System;
+public delegate int Del();
+public ref struct C {
+   int i;
    event Del^ MyEvent;
 
-   void FireEvent() {  
-      i = MyEvent();  
-   }  
+   void FireEvent() {
+      i = MyEvent();
+   }
 };
 
-ref struct EventReceiver {  
-   int OnMyClick() { return 0; }  
+ref struct EventReceiver {
+   int OnMyClick() { return 0; }
 };
 
-int main() {  
-   C c;  
+int main() {
+   C c;
    c.i = 687;
 
-   c.FireEvent();  
-   Console::WriteLine(c.i);  
+   c.FireEvent();
+   Console::WriteLine(c.i);
    c.i = 688;
 
-   EventReceiver^ MyEventReceiver = gcnew EventReceiver();  
-   c.MyEvent += gcnew Del(MyEventReceiver, &EventReceiver::OnMyClick);  
-   Console::WriteLine(c.i);     
-}  
+   EventReceiver^ MyEventReceiver = gcnew EventReceiver();
+   c.MyEvent += gcnew Del(MyEventReceiver, &EventReceiver::OnMyClick);
+   Console::WriteLine(c.i);
+}
 ```
 
-```Output  
+```Output
 0
 
-688  
+688
 ```
 
 ## See Also

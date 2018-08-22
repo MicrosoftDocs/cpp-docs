@@ -18,12 +18,12 @@ Creates a registry key or modifies an existing registry key.
 
 ## Syntax
 
-```cpp  
-[ rdx(   
-   key,   
-   valuename=NULL,   
-   regtype   
-) ]  
+```cpp
+[ rdx(
+   key,
+   valuename=NULL,
+   regtype
+) ]
 ```
 
 ### Parameters
@@ -54,32 +54,32 @@ This attribute can be used in conjunction with the [coclass](../windows/coclass.
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## Example
 
 The following code adds a registry key called MyValue to the system describing the CMyClass COM component.
 
-```cpp  
-// cpp_attr_ref_rdx.cpp  
-// compile with: /LD /link /OPT:NOREF  
-#define _ATL_ATTRIBUTES  
+```cpp
+// cpp_attr_ref_rdx.cpp
+// compile with: /LD /link /OPT:NOREF
+#define _ATL_ATTRIBUTES
 #include "atlbase.h"
 
 [module (name="MyLib")];
 
-class CMyClass {  
-public:  
-   CMyClass() {  
-      strcpy_s(m_sz, "SomeValue");  
+class CMyClass {
+public:
+   CMyClass() {
+      strcpy_s(m_sz, "SomeValue");
    }
 
-   [ rdx(key = "HKCR\\MyApp.MyApp.1", valuename = "MyValue", regtype = "text")]   
-   char m_sz[256];  
-};  
+   [ rdx(key = "HKCR\\MyApp.MyApp.1", valuename = "MyValue", regtype = "text")]
+   char m_sz[256];
+};
 ```
 
 ## See Also
 
 [COM Attributes](../windows/com-attributes.md)  
-[registration_script](../windows/registration-script.md)   
+[registration_script](../windows/registration-script.md)  

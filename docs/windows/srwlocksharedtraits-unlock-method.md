@@ -18,10 +18,10 @@ Releases exclusive control of the specified `SRWLock` object.
 
 ## Syntax
 
-```cpp  
-inline static void Unlock(  
-   _In_ Type srwlock  
-);  
+```cpp
+inline static void Unlock(
+   _In_ Type srwlock
+);
 ```
 
 ### Parameters

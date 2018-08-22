@@ -18,10 +18,10 @@ Specifies the default pointer attribute for all pointers, except top-level point
 
 ## Syntax
 
-```cpp  
-[ pointer_default(  
-   value  
-) ]  
+```cpp
+[ pointer_default(
+   value
+) ]
 ```
 
 ### Parameters
@@ -48,9 +48,9 @@ See the example for [defaultvalue](../windows/defaultvalue.md) for a sample use 
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)   
+[Interface Attributes](../windows/interface-attributes.md)  

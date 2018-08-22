@@ -18,13 +18,13 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template <  
-   typename RuntimeClassFlagsT,  
-   typename ILst,  
-   bool IsDelegateToClass  
->  
-friend struct Details::ImplementsHelper;  
+```cpp
+template <
+   typename RuntimeClassFlagsT,
+   typename ILst,
+   bool IsDelegateToClass
+>
+friend struct Details::ImplementsHelper;
 ```
 
 ### Parameters

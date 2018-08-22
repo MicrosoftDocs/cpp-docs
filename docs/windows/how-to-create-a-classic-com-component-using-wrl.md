@@ -26,15 +26,15 @@ This document shows how to use the Windows Runtime C++ Template Library to creat
 
 4. Add this code to CalculatorComponent.idl:
 
-     [!code-cpp[wrl-classic-com-component#1](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]
+   [!code-cpp[wrl-classic-com-component#1](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]
 
 5. In CalculatorComponent.cpp, define the `CalculatorComponent` class. The `CalculatorComponent` class inherits from [Microsoft::WRL::RuntimeClass](../windows/runtimeclass-class.md). [Microsoft::WRL::RuntimeClassFlags\<ClassicCom>](../windows/runtimeclassflags-structure.md) specifies that the class derives from [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) and not [IInspectable](http://msdn.microsoft.com/library/br205821\(v=vs.85\).aspx). (`IInspectable` is available only to Windows Runtime app components.) `CoCreatableClass` creates a factory for the class that can be used with functions such as [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
 
-     [!code-cpp[wrl-classic-com-component#2](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]
+   [!code-cpp[wrl-classic-com-component#2](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]
 
 6. Use the following code to replace the code in `dllmain.cpp`. This file defines the DLL export functions. These functions use the [Microsoft::WRL::Module](../windows/module-class.md) class to manage the class factories for the module.
 
-     [!code-cpp[wrl-classic-com-component#3](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_3.cpp)]
+   [!code-cpp[wrl-classic-com-component#3](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_3.cpp)]
 
 7. Add a **Module-Definition File (.def)** file to the project. Name the file, for example, `CalculatorComponent.def`. This file gives the linker the names of the functions to be exported.
 
@@ -46,7 +46,7 @@ This document shows how to use the Windows Runtime C++ Template Library to creat
     EXPORTS
         DllGetActivationFactory PRIVATE
         DllGetClassObject       PRIVATE
-        DllCanUnloadNow         PRIVATE  
+        DllCanUnloadNow         PRIVATE
     ```
 
 9. Add runtimeobject.lib to the linker line. To learn how, see [.Lib Files as Linker Input](../build/reference/dot-lib-files-as-linker-input.md).
@@ -80,7 +80,7 @@ This document shows how to use the Windows Runtime C++ Template Library to creat
 
 4. Use this code to replace the contents of `Calculator.cpp`:
 
-     [!code-cpp[wrl-classic-com-component#6](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_6.cpp)]
+   [!code-cpp[wrl-classic-com-component#6](../windows/codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_6.cpp)]
 
 ## Robust Programming
 

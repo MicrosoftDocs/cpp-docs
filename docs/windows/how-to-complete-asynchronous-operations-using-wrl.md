@@ -30,36 +30,36 @@ The following steps start an asynchronous timer and wait for the timer to expire
 
 1. Include (`#include`) any required Windows Runtime, Windows Runtime C++ Template Library, or C++ Standard Library headers.
 
-     [!code-cpp[wrl-consume-async#2](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_1.cpp)]
+   [!code-cpp[wrl-consume-async#2](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_1.cpp)]
 
-     `Windows.System.Threading.h` declares the types that are required to use an asynchronous timer.
+   `Windows.System.Threading.h` declares the types that are required to use an asynchronous timer.
 
-     We recommend that you utilize the `using namespace` directive in your .cpp file to make the code more readable.
+   We recommend that you utilize the `using namespace` directive in your .cpp file to make the code more readable.
 
 2. Initialize the Windows Runtime.
 
-     [!code-cpp[wrl-consume-async#3](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_2.cpp)]
+   [!code-cpp[wrl-consume-async#3](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_2.cpp)]
 
 3. Create an activation factory for the `ABI::Windows::System::Threading::IThreadPoolTimer` interface.
 
-     [!code-cpp[wrl-consume-async#4](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_3.cpp)]
+   [!code-cpp[wrl-consume-async#4](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_3.cpp)]
 
-     The Windows Runtime uses fully-qualified names to identify types. The `RuntimeClass_Windows_System_Threading_ThreadPoolTimer` parameter is a string that's provided by the Windows Runtime and contains the required runtime class name.
+   The Windows Runtime uses fully-qualified names to identify types. The `RuntimeClass_Windows_System_Threading_ThreadPoolTimer` parameter is a string that's provided by the Windows Runtime and contains the required runtime class name.
 
 4. Create an [Event](../windows/event-class-windows-runtime-cpp-template-library.md) object that synchronizes the timer callback to the main app.
 
-     [!code-cpp[wrl-consume-async#5](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_4.cpp)]
+   [!code-cpp[wrl-consume-async#5](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_4.cpp)]
 
    > [!NOTE]
    > This event is for demonstration only as part of a console app. This example uses the event to ensure that an async operation completes before the app exits. In most apps, you typically don’t wait for async operations to complete.
 
 5. Create an `IThreadPoolTimer` object that expires after two seconds. Use the `Callback` function to create the event handler (an `ABI::Windows::System::Threading::ITimerElapsedHandler` object).
 
-     [!code-cpp[wrl-consume-async#6](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_5.cpp)]
+   [!code-cpp[wrl-consume-async#6](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_5.cpp)]
 
 6. Print a message to the console and wait for the timer callback to complete. All `ComPtr` and RAII objects leave scope and are released automatically.
 
-     [!code-cpp[wrl-consume-async#7](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_6.cpp)]
+   [!code-cpp[wrl-consume-async#7](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_6.cpp)]
 
 Here is the complete example:
 
@@ -80,36 +80,36 @@ The following steps start a worker thread and define the action that's performed
 
 1. Include (`#include`) any required Windows Runtime, Windows Runtime C++ Template Library, or C++ Standard Library headers.
 
-     [!code-cpp[wrl-consume-asyncOp#2](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_8.cpp)]
+   [!code-cpp[wrl-consume-asyncOp#2](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_8.cpp)]
 
-     Windows.System.Threading.h declares the types that are required to use a worker thread.
+   Windows.System.Threading.h declares the types that are required to use a worker thread.
 
-     We recommend that you use the `using namespace` directive in your .cpp file to make the code more readable.
+   We recommend that you use the `using namespace` directive in your .cpp file to make the code more readable.
 
 2. Initialize the Windows Runtime.
 
-     [!code-cpp[wrl-consume-asyncOp#3](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_9.cpp)]
+   [!code-cpp[wrl-consume-asyncOp#3](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_9.cpp)]
 
 3. Create an activation factory for the `ABI::Windows::System::Threading::IThreadPoolStatics` interface.
 
-     [!code-cpp[wrl-consume-asyncOp#4](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_10.cpp)]
+   [!code-cpp[wrl-consume-asyncOp#4](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_10.cpp)]
 
 4. Create an [Event](../windows/event-class-windows-runtime-cpp-template-library.md) object that synchronizes completion of the worker thread to the main app.
 
-     [!code-cpp[wrl-consume-asyncOp#5](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_11.cpp)]
+   [!code-cpp[wrl-consume-asyncOp#5](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_11.cpp)]
 
    > [!NOTE]
    > This event is for demonstration only as part of a console app. This example uses the event to ensure that an async operation completes before the app exits. In most apps, you typically don’t wait for async operations to complete.
 
 5. Call the `IThreadPoolStatics::RunAsync` method to create a worker thread. Use the `Callback` function to define the action.
 
-     [!code-cpp[wrl-consume-asyncOp#6](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_12.cpp)]
+   [!code-cpp[wrl-consume-asyncOp#6](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_12.cpp)]
 
-     The `IsPrime` function is defined in the complete example that follows.
+   The `IsPrime` function is defined in the complete example that follows.
 
 6. Print a message to the console and wait for the thread to complete. All `ComPtr` and RAII objects leave scope and are released automatically.
 
-     [!code-cpp[wrl-consume-asyncOp#7](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_13.cpp)]
+   [!code-cpp[wrl-consume-asyncOp#7](../windows/codesnippet/CPP/how-to-complete-asynchronous-operations-using-wrl_13.cpp)]
 
 Here is the complete example:
 

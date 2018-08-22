@@ -42,11 +42,11 @@ The **String** editor makes sure you do not use an ID that's already in use. If 
 
 2. On the **Edit** menu, click **Delete**.
 
- \- or -
+\- or -
 
 - Right-click the string you want to delete and choose **Delete** from the shortcut menu.
 
- \- or -
+\- or -
 
 - Press the **Delete** key.
 
@@ -58,4 +58,4 @@ Win32
 
 ## See Also
 
-[String Editor](../windows/string-editor.md)   
+[String Editor](../windows/string-editor.md)  

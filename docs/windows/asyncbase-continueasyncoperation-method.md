@@ -18,8 +18,8 @@ Determines whether the asynchronous operation should continue processing or shou
 
 ## Syntax
 
-```cpp  
-inline bool ContinueAsyncOperation();  
+```cpp
+inline bool ContinueAsyncOperation();
 ```
 
 ## Return Value

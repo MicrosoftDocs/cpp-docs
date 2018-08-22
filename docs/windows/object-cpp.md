@@ -18,8 +18,8 @@ Identifies a custom interface.
 
 ## Syntax
 
-```cpp  
-[object]  
+```cpp
+[object]
 ```
 
 ## Remarks
@@ -43,7 +43,7 @@ See [nonbrowsable](../windows/nonbrowsable.md) for an example of how to use **ob
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -52,4 +52,4 @@ See [nonbrowsable](../windows/nonbrowsable.md) for an example of how to use **ob
 [dual](../windows/dual.md)  
 [dispinterface](../windows/dispinterface.md)  
 [custom](../windows/custom-cpp.md)  
-[__interface](../cpp/interface.md)   
+[__interface](../cpp/interface.md)  

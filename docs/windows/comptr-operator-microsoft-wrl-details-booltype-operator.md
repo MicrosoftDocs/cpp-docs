@@ -16,8 +16,8 @@ Indicates whether or not a **ComPtr** is managing the object lifetime of an inte
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;  
+```cpp
+WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;
 ```
 
 ## Return Value

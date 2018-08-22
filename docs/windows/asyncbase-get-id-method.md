@@ -18,10 +18,10 @@ Retrieves the handle of the asynchronous operation.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   get_Id  
-)(unsigned int *id) override;  
+```cpp
+STDMETHOD(
+   get_Id
+)(unsigned int *id) override;
 ```
 
 ### Parameters

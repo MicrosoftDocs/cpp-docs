@@ -20,7 +20,7 @@ You can size a combo box when you add it to the dialog box. You can also specify
 
 1. Select the combo-box control in your dialog box.
 
-     Initially, only the right and left sizing handles are active.
+   Initially, only the right and left sizing handles are active.
 
 2. Use the sizing handles to set the width of the combo box.
 
@@ -30,13 +30,13 @@ You can also set the vertical size of the drop-down portion of the combo box.
 
 1. Click the drop-down arrow button at the right of the combo box.
 
-     ![Arrow on a combo box in an MFC project](../mfc/media/vccomboboxarrow.gif "vcComboBoxArrow")
+   ![Arrow on a combo box in an MFC project](../mfc/media/vccomboboxarrow.gif "vcComboBoxArrow")
 
-     The outline of the control changes to show the size of the combo box with the drop-down list area extended.
+   The outline of the control changes to show the size of the combo box with the drop-down list area extended.
 
 2. Use the lower sizing handle to change the initial size of the drop-down list area.
 
-     ![Combo&#45;box sizing in an MFC project](../mfc/media/vccomboboxsizing.gif "vcComboBoxSizing")
+   ![Combo&#45;box sizing in an MFC project](../mfc/media/vccomboboxsizing.gif "vcComboBoxSizing")
 
 3. Click the drop-down arrow again to close the drop-down list portion of the combo box.
 

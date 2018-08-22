@@ -18,12 +18,12 @@ Registers and retrieves an instance of a specified type defined in a specified c
 
 ## Syntax
 
-```cpp  
-template<typename T>  
-inline HRESULT ActivateInstance(  
-   _In_ HSTRING activatableClassId,  
-   _Out_ Microsoft::WRL::Details::ComPtrRef<T> instance  
-);  
+```cpp
+template<typename T>
+inline HRESULT ActivateInstance(
+   _In_ HSTRING activatableClassId,
+   _Out_ Microsoft::WRL::Details::ComPtrRef<T> instance
+);
 ```
 
 ### Parameters

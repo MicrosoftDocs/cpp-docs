@@ -18,10 +18,10 @@ Specifies the UUID that directs the MIDL compiler to define both synchronous and
 
 ## Syntax
 
-```cpp  
-[async_uuid (  
-   uuid  
-)]  
+```cpp
+[async_uuid (
+   uuid
+)]
 ```
 
 ### Parameters
@@ -35,16 +35,16 @@ The **async_uuid** C++ attribute has the same functionality as the [async_uuid](
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_async_uuid.cpp  
-// compile with: /LD  
-#include <Windows.h>  
-[module(name="Test")];  
-[object, uuid("9e66a290-4365-11d2-a997-00c04fa37ddb"),   
-async_uuid("e8583106-38fd-487e-912e-4fc8645c677e")]  
-__interface ICustom {  
-   HRESULT Custom([in] long l, [out, retval] long *pLong);  
-};  
+```cpp
+// cpp_attr_ref_async_uuid.cpp
+// compile with: /LD
+#include <Windows.h>
+[module(name="Test")];
+[object, uuid("9e66a290-4365-11d2-a997-00c04fa37ddb"),
+async_uuid("e8583106-38fd-487e-912e-4fc8645c677e")]
+__interface ICustom {
+   HRESULT Custom([in] long l, [out, retval] long *pLong);
+};
 ```
 
 ## Requirements
@@ -58,9 +58,9 @@ __interface ICustom {
 |**Required attributes**|None|
 |**Invalid attributes**|**dual**, **dispinterface**|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)   
+[Interface Attributes](../windows/interface-attributes.md)  

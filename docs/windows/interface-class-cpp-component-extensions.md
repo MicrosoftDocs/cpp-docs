@@ -20,10 +20,10 @@ Declares an interface.  For information on native interfaces, see [__interface](
 
 ### Syntax
 
-```cpp  
-interface_access  
-interface class  
- name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};  
+```cpp
+interface_access
+interface class
+ name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};
 ```
 
 ### Parameters
@@ -86,97 +86,97 @@ Compiler option: `/clr`
 
 The following code example demonstrates how an interface can define the behavior of a clock function.
 
-```cpp  
-// mcppv2_interface_class.cpp  
-// compile with: /clr  
+```cpp
+// mcppv2_interface_class.cpp
+// compile with: /clr
 using namespace System;
 
 public delegate void ClickEventHandler(int, double);
 
-// define interface with nested interface  
-public interface class Interface_A {  
+// define interface with nested interface
+public interface class Interface_A {
    void Function_1();
 
-   interface class Interface_Nested_A {  
-      void Function_2();  
-   };  
+   interface class Interface_Nested_A {
+      void Function_2();
+   };
 };
 
-// interface with a base interface  
-public interface class Interface_B : Interface_A {  
-   property int Property_Block;  
-   event ClickEventHandler^ OnClick;     
-   static void Function_3() { Console::WriteLine("in Function_3"); }  
+// interface with a base interface
+public interface class Interface_B : Interface_A {
+   property int Property_Block;
+   event ClickEventHandler^ OnClick;
+   static void Function_3() { Console::WriteLine("in Function_3"); }
 };
 
-// implement nested interface  
-public ref class MyClass : public Interface_A::Interface_Nested_A {  
-public:  
-   virtual void Function_2() { Console::WriteLine("in Function_2"); }  
+// implement nested interface
+public ref class MyClass : public Interface_A::Interface_Nested_A {
+public:
+   virtual void Function_2() { Console::WriteLine("in Function_2"); }
 };
 
-// implement interface and base interface  
-public ref class MyClass2 : public Interface_B {  
-private:  
+// implement interface and base interface
+public ref class MyClass2 : public Interface_B {
+private:
    int MyInt;
 
-public:  
-   // implement non-static function  
+public:
+   // implement non-static function
    virtual void Function_1() { Console::WriteLine("in Function_1"); }
 
-   // implement property  
-   property int Property_Block {  
-      virtual int get() { return MyInt; }  
-      virtual void set(int value) { MyInt = value; }  
-   }  
-   // implement event  
+   // implement property
+   property int Property_Block {
+      virtual int get() { return MyInt; }
+      virtual void set(int value) { MyInt = value; }
+   }
+   // implement event
    virtual event ClickEventHandler^ OnClick;
 
-   void FireEvents() {  
-      OnClick(7, 3.14159);  
-   }  
+   void FireEvents() {
+      OnClick(7, 3.14159);
+   }
 };
 
-// class that defines method called when event occurs  
-ref class EventReceiver {  
-public:  
-   void OnMyClick(int i, double d) {  
-      Console::WriteLine("OnClick: {0}, {1}", i, d);  
-   }  
+// class that defines method called when event occurs
+ref class EventReceiver {
+public:
+   void OnMyClick(int i, double d) {
+      Console::WriteLine("OnClick: {0}, {1}", i, d);
+   }
 };
 
-int main() {  
-   // call static function in an interface  
+int main() {
+   // call static function in an interface
    Interface_B::Function_3();
 
-   // instantiate class that implements nested interface  
-   MyClass ^ x = gcnew MyClass;  
+   // instantiate class that implements nested interface
+   MyClass ^ x = gcnew MyClass;
    x->Function_2();
 
-   // instantiate class that implements interface with base interface  
-   MyClass2 ^ y = gcnew MyClass2;  
-   y->Function_1();  
-   y->Property_Block = 8;  
+   // instantiate class that implements interface with base interface
+   MyClass2 ^ y = gcnew MyClass2;
+   y->Function_1();
+   y->Property_Block = 8;
    Console::WriteLine(y->Property_Block);
 
    EventReceiver^ MyEventReceiver = gcnew EventReceiver();
 
-   // hook handler to event  
+   // hook handler to event
    y->OnClick += gcnew ClickEventHandler(MyEventReceiver, &EventReceiver::OnMyClick);
 
-   // invoke events  
+   // invoke events
    y->FireEvents();
 
-   // unhook handler to event  
+   // unhook handler to event
    y->OnClick -= gcnew ClickEventHandler(MyEventReceiver, &EventReceiver::OnMyClick);
 
-   // call implemented function via interface handle  
-   Interface_A^ hi = gcnew MyClass2();  
-   hi->Function_1();  
-}  
+   // call implemented function via interface handle
+   Interface_A^ hi = gcnew MyClass2();
+   hi->Function_1();
+}
 ```
 
-```Output  
+```Output
 in Function_3
 
 in Function_2
@@ -187,32 +187,32 @@ in Function_1
 
 OnClick: 7, 3.14159
 
-in Function_1  
+in Function_1
 ```
 
 The following code sample shows two ways to implement functions with the same signature declared in multiple interfaces and where those interfaces are used by a class.
 
-```cpp  
-// mcppv2_interface_class_2.cpp  
-// compile with: /clr /c  
-interface class I {  
-   void Test();  
-   void Test2();  
+```cpp
+// mcppv2_interface_class_2.cpp
+// compile with: /clr /c
+interface class I {
+   void Test();
+   void Test2();
 };
 
-interface class J : I {  
-   void Test();  
-   void Test2();  
+interface class J : I {
+   void Test();
+   void Test2();
 };
 
-ref struct R : I, J {  
-   // satisfies the requirement to implement Test in both interfaces  
+ref struct R : I, J {
+   // satisfies the requirement to implement Test in both interfaces
    virtual void Test() {}
 
-   // implement both interface functions with explicit overrides  
-   virtual void A() = I::Test2 {}  
-   virtual void B() = J::Test2 {}  
-};  
+   // implement both interface functions with explicit overrides
+   virtual void A() = I::Test2 {}
+   virtual void B() = J::Test2 {}
+};
 ```
 
 ## See Also

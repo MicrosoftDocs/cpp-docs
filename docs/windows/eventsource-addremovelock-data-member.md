@@ -18,8 +18,8 @@ Synchronizes access to the [targets_](../windows/eventsource-targets-data-member
 
 ## Syntax
 
-```cpp  
-Wrappers::SRWLock addRemoveLock_;  
+```cpp
+Wrappers::SRWLock addRemoveLock_;
 ```
 
 ## Requirements
@@ -28,5 +28,5 @@ Wrappers::SRWLock addRemoveLock_;
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [EventSource Class](../windows/eventsource-class.md)

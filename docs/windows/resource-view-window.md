@@ -29,7 +29,7 @@ Resource view displays the resource files included in your projects. Expanding t
 
 1. Click **Resource View** on the **View** menu.
 
-     \- or -
+   \- or -
 
 2. Press **Ctrl**+**Shift**+**E**.
 

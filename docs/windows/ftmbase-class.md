@@ -18,10 +18,10 @@ Represents a free-threaded marshaler object.
 
 ## Syntax
 
-```cpp  
-class FtmBase : public Microsoft::WRL::Implements<  
-   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,   
-   Microsoft::WRL::CloakedIid<IMarshal> >;  
+```cpp
+class FtmBase : public Microsoft::WRL::Implements<
+   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,
+   Microsoft::WRL::CloakedIid<IMarshal> >;
 ```
 
 ## Remarks

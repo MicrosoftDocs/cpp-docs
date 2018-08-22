@@ -20,7 +20,7 @@ The **Colors** window has two parts:
 
 2. The **Color Indicator**, which shows the foreground and background colors and selectors for screen and inverse color.
 
-     ![Colors window](../windows/media/vccolorswindow.gif "vcColorsWindow")  
+   ![Colors window](../windows/media/vccolorswindow.gif "vcColorsWindow")  
 Colors Window
 
 > [!NOTE]

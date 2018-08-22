@@ -17,7 +17,7 @@ Destroys the current instance of the **HString** class.
 
 ## Syntax
 
-```cpp  
+```cpp
 ~HString() throw()  
 ```
 

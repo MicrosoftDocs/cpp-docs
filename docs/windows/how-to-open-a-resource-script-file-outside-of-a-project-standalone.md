@@ -34,19 +34,19 @@ To open and view the resource file in text format, see [Editing a Resource Scrip
 
 1. Open both resource files stand-alone. For example, open `Source1.rc` and `Source2.rc`.
 
-    1.  From the **File** menu, choose **Open**, then click **File**.
+   1. From the **File** menu, choose **Open**, then click **File**.
 
-    2.  In the **Open File** dialog box, navigate to the first resource script file you want to open (`Source1.rc`), highlight the file, and click **Open**.
+   2. In the **Open File** dialog box, navigate to the first resource script file you want to open (`Source1.rc`), highlight the file, and click **Open**.
 
-    3.  Repeat the previous step to open the second .rc file (`Source2.rc`).
+   3. Repeat the previous step to open the second .rc file (`Source2.rc`).
 
-         The .rc files are now open in separate documents windows.
+       The .rc files are now open in separate documents windows.
 
 2. When both .rc files are open, tile the windows so you can view them simultaneously:
 
    - From the **Window** menu, choose **New Horizontal Tab Group** or **New Vertical Tab Group**.
 
-         \- or -
+       \- or -
 
    - Right-click one of the .rc files and choose **New Horizontal Tab Group** or **New Vertical Tab Group** from the shortcut menu.
 

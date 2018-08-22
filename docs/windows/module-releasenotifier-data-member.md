@@ -18,8 +18,8 @@ Holds a pointer to a `ReleaseNotifier` object.
 
 ## Syntax
 
-```cpp  
-ReleaseNotifier *releaseNotifier_;  
+```cpp
+ReleaseNotifier *releaseNotifier_;
 ```
 
 ## Requirements
@@ -28,5 +28,5 @@ ReleaseNotifier *releaseNotifier_;
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

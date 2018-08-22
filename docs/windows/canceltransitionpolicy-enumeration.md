@@ -18,8 +18,8 @@ Indicates how an asynchronous operation’s attempt to transition to a terminal 
 
 ## Syntax
 
-```cpp  
-enum CancelTransitionPolicy;  
+```cpp
+enum CancelTransitionPolicy;
 ```
 
 ## Members

@@ -18,10 +18,10 @@ Destroys a marshaled data packet.
 
 ## Syntax
 
-```cpp  
-STDMETHODIMP ReleaseMarshalData(  
-   __in IStream *pStm  
-) override;  
+```cpp
+STDMETHODIMP ReleaseMarshalData(
+   __in IStream *pStm
+) override;
 ```
 
 ### Parameters

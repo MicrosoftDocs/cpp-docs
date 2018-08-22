@@ -18,8 +18,8 @@ An array of one or more event handlers.
 
 ## Syntax
 
-```cpp  
-ComPtr<Details::EventTargetArray> targets_;  
+```cpp
+ComPtr<Details::EventTargetArray> targets_;
 ```
 
 ## Remarks
@@ -32,5 +32,5 @@ When the event that is represented by the current **EventSource** object occurs,
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [EventSource Class](../windows/eventsource-class.md)

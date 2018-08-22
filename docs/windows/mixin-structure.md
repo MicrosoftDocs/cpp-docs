@@ -18,14 +18,14 @@ Ensures that a runtime class derives from Windows Runtime interfaces, if any, an
 
 ## Syntax
 
-```cpp  
-template<  
-   typename Derived,  
-   typename MixInType,  
-   bool hasImplements = __is_base_of(Details::ImplementsBase,  
+```cpp
+template<
+   typename Derived,
+   typename MixInType,
+   bool hasImplements = __is_base_of(Details::ImplementsBase,
    MixInType)  
->  
-struct MixIn;  
+>
+struct MixIn;
 ```
 
 ### Parameters

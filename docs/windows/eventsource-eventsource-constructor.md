@@ -18,8 +18,8 @@ Initializes a new instance of the **EventSource** class.
 
 ## Syntax
 
-```cpp  
-EventSource();  
+```cpp
+EventSource();
 ```
 
 ## Requirements
@@ -28,5 +28,5 @@ EventSource();
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [EventSource Class](../windows/eventsource-class.md)

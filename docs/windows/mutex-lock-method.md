@@ -18,15 +18,15 @@ Waits until the current object, or the **Mutex** object associated with the spec
 
 ## Syntax
 
-```cpp  
-SyncLock Lock(  
-   DWORD milliseconds = INFINITE  
+```cpp
+SyncLock Lock(
+   DWORD milliseconds = INFINITE
 );
 
-static SyncLock Lock(  
-   HANDLE h,  
-   DWORD milliseconds = INFINITE  
-);  
+static SyncLock Lock(
+   HANDLE h,
+   DWORD milliseconds = INFINITE
+);
 ```
 
 ### Parameters
@@ -45,5 +45,5 @@ The handle of a **Mutex** object.
 
 **Namespace:** Microsoft::WRL::Wrappers
 
- ## See Also
+## See Also
 [Mutex Class](../windows/mutex-class1.md)

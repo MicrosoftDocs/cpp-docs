@@ -17,8 +17,8 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. In [Resource View](../windows/resource-view-window.md), right-click the resource you want to edit and choose **Properties** from the shortcut menu.
 
-     > [!NOTE] 
-     > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+   > [!NOTE] 
+   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 2. In the [Properties window](/visualstudio/ide/reference/properties-window), change the properties of your resource.
 

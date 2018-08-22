@@ -18,8 +18,8 @@ Represents a slim reader/writer lock.
 
 ## Syntax
 
-```cpp  
-class SRWLock;  
+```cpp
+class SRWLock;
 ```
 
 ## Remarks

@@ -18,146 +18,146 @@ Initializes the specified Windows Runtime class. Use this function to instantiat
 
 ## Syntax
 
-```cpp  
-template <  
-   typename T,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6,  
-   typename TArg7,  
-   typename TArg8,  
-   typename TArg9  
->  
-ComPtr<T> Make(  
-   TArg1 &&arg1,  
-   TArg2 &&arg2,  
-   TArg3 &&arg3,  
-   TArg4 &&arg4,  
-   TArg5 &&arg5,  
-   TArg6 &&arg6,  
-   TArg7 &&arg7,  
-   TArg8 &&arg8,  
-   TArg9 &&arg9  
-);  
-template <  
-   typename T,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6,  
-   typename TArg7,  
-   typename TArg8  
->  
-ComPtr<T> Make(  
-   TArg1 &&arg1,  
-   TArg2 &&arg2,  
-   TArg3 &&arg3,  
-   TArg4 &&arg4,  
-   TArg5 &&arg5,  
-   TArg6 &&arg6,  
-   TArg7 &&arg7,  
-   TArg8 &&arg8  
-);  
-template <  
-   typename T,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6,  
-   typename TArg7  
->  
-ComPtr<T> Make(  
-   TArg1 &&arg1,  
-   TArg2 &&arg2,  
-   TArg3 &&arg3,  
-   TArg4 &&arg4,  
-   TArg5 &&arg5,  
-   TArg6 &&arg6,  
-   TArg7 &&arg7  
-);  
-template <  
-   typename T,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6  
->  
-ComPtr<T> Make(  
-   TArg1 &&arg1,  
-   TArg2 &&arg2,  
-   TArg3 &&arg3,  
-   TArg4 &&arg4,  
-   TArg5 &&arg5,  
-   TArg6 &&arg6  
-);  
-template <  
-   typename T,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5  
->  
-ComPtr<T> Make(  
-   TArg1 &&arg1,  
-   TArg2 &&arg2,  
-   TArg3 &&arg3,  
-   TArg4 &&arg4,  
-   TArg5 &&arg5  
-);  
-template <  
-   typename T,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4  
->  
-ComPtr<T> Make(  
-   TArg1 &&arg1,  
-   TArg2 &&arg2,  
-   TArg3 &&arg3,  
-   TArg4 &&arg4  
-);  
-template <  
-   typename T,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3  
->  
-ComPtr<T> Make(  
-   TArg1 &&arg1,  
-   TArg2 &&arg2,  
-   TArg3 &&arg3  
-);  
-template <  
-   typename T,  
-   typename TArg1,  
-   typename TArg2  
->  
-ComPtr<T> Make(  
-   TArg1 &&arg1,  
-   TArg2 &&arg2  
-);  
-template <  
-   typename T,  
-   typename TArg1  
->  
-ComPtr<T> Make(  
-   TArg1 &&arg1  
-);  
-template <  
-   typename T  
->  
-ComPtr<T> Make();  
+```cpp
+template <
+   typename T,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6,
+   typename TArg7,
+   typename TArg8,
+   typename TArg9
+>
+ComPtr<T> Make(
+   TArg1 &&arg1,
+   TArg2 &&arg2,
+   TArg3 &&arg3,
+   TArg4 &&arg4,
+   TArg5 &&arg5,
+   TArg6 &&arg6,
+   TArg7 &&arg7,
+   TArg8 &&arg8,
+   TArg9 &&arg9
+);
+template <
+   typename T,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6,
+   typename TArg7,
+   typename TArg8
+>
+ComPtr<T> Make(
+   TArg1 &&arg1,
+   TArg2 &&arg2,
+   TArg3 &&arg3,
+   TArg4 &&arg4,
+   TArg5 &&arg5,
+   TArg6 &&arg6,
+   TArg7 &&arg7,
+   TArg8 &&arg8
+);
+template <
+   typename T,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6,
+   typename TArg7
+>
+ComPtr<T> Make(
+   TArg1 &&arg1,
+   TArg2 &&arg2,
+   TArg3 &&arg3,
+   TArg4 &&arg4,
+   TArg5 &&arg5,
+   TArg6 &&arg6,
+   TArg7 &&arg7
+);
+template <
+   typename T,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6
+>
+ComPtr<T> Make(
+   TArg1 &&arg1,
+   TArg2 &&arg2,
+   TArg3 &&arg3,
+   TArg4 &&arg4,
+   TArg5 &&arg5,
+   TArg6 &&arg6
+);
+template <
+   typename T,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5
+>
+ComPtr<T> Make(
+   TArg1 &&arg1,
+   TArg2 &&arg2,
+   TArg3 &&arg3,
+   TArg4 &&arg4,
+   TArg5 &&arg5
+);
+template <
+   typename T,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4
+>
+ComPtr<T> Make(
+   TArg1 &&arg1,
+   TArg2 &&arg2,
+   TArg3 &&arg3,
+   TArg4 &&arg4
+);
+template <
+   typename T,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3
+>
+ComPtr<T> Make(
+   TArg1 &&arg1,
+   TArg2 &&arg2,
+   TArg3 &&arg3
+);
+template <
+   typename T,
+   typename TArg1,
+   typename TArg2
+>
+ComPtr<T> Make(
+   TArg1 &&arg1,
+   TArg2 &&arg2
+);
+template <
+   typename T,
+   typename TArg1
+>
+ComPtr<T> Make(
+   TArg1 &&arg1
+);
+template <
+   typename T
+>
+ComPtr<T> Make();
 ```
 
 ### Parameters

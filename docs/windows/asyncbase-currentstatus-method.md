@@ -18,10 +18,10 @@ Retrieves the status of the current asynchronous operation.
 
 ## Syntax
 
-```cpp  
-inline void CurrentStatus(  
-   Details::AsyncStatusInternal *status  
-);  
+```cpp
+inline void CurrentStatus(
+   Details::AsyncStatusInternal *status
+);
 ```
 
 ### Parameters

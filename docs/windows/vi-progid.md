@@ -18,10 +18,10 @@ Specifies a version-independent form of the ProgID.
 
 ## Syntax
 
-```cpp  
-[ vi_progid(  
-   name  
-) ];  
+```cpp
+[ vi_progid(
+   name
+) ];
 ```
 
 ### Parameters
@@ -56,11 +56,11 @@ See the [coclass](../windows/coclass.md) example for a sample use of **vi_progid
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
-[ProgID Key](http://msdn.microsoft.com/library/windows/desktop/dd542719)   
+[ProgID Key](http://msdn.microsoft.com/library/windows/desktop/dd542719)  

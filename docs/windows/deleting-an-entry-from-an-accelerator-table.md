@@ -24,7 +24,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 3. Right-click and choose **Delete** from the shortcut menu (or select **Delete** from the **Edit** menu).
 
- \- or -
+\- or -
 
 - Press the **Delete** key.
 

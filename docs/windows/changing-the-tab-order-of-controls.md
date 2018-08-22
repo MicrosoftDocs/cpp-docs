@@ -28,7 +28,7 @@ Even controls that do not have the **Tabstop** property set to **True** need to 
 
 1. On the **Format** menu, click **Tab Order**.
 
- \- or -
+\- or -
 
 - Press **Ctrl**+**D**.
 
@@ -36,7 +36,7 @@ Even controls that do not have the **Tabstop** property set to **True** need to 
 
 1. On the **Format** menu, click **Tab Order**.
 
-     A number in the upper-left corner of each control shows its place in the current tab order.
+   A number in the upper-left corner of each control shows its place in the current tab order.
 
 2. Set the tab order by clicking each control in the order you want the **Tab** key to follow.
 
@@ -51,7 +51,7 @@ Even controls that do not have the **Tabstop** property set to **True** need to 
 
 2. Specify where the change in order will begin. To do this, hold down the **Ctrl** key and click the control prior to the one where you want the changed order to begin.
 
-     For example, if you want to change the order of controls `7` through `9`, hold down **Ctrl**, then select control `6` first.
+   For example, if you want to change the order of controls `7` through `9`, hold down **Ctrl**, then select control `6` first.
 
    > [!NOTE]
    > To set a specific control to number `1` (first in the tab order), double-click the control.

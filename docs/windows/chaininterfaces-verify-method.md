@@ -18,15 +18,15 @@ Verifies that each interface defined by template parameters *I0* through *I9* in
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW __forceinline static void Verify();  
+```cpp
+WRL_NOTHROW __forceinline static void Verify();
 ```
 
 ## Remarks
 
-If the verification operation fails, a **static_assert** emits an error message describing the failure.  
+If the verification operation fails, a **static_assert** emits an error message describing the failure.
 
- Template parameters *I0* and *I1* are required, and parameters *I2* through *I9* are optional.
+Template parameters *I0* and *I1* are required, and parameters *I2* through *I9* are optional.
 
 ## Requirements
 

@@ -18,11 +18,11 @@ Attempts to acquire a **SRWLock** object in shared mode for the current or speci
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW SyncLockShared TryLockShared();  
-WRL_NOTHROW static SyncLockShared TryLockShared(  
-   _In_ SRWLOCK* lock  
-);  
+```cpp
+WRL_NOTHROW SyncLockShared TryLockShared();
+WRL_NOTHROW static SyncLockShared TryLockShared(
+   _In_ SRWLOCK* lock
+);
 ```
 
 ### Parameters

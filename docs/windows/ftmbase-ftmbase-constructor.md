@@ -18,8 +18,8 @@ Initializes a new instance of the **FtmBase** class.
 
 ## Syntax
 
-```cpp  
-FtmBase();  
+```cpp
+FtmBase();
 ```
 
 ## Requirements

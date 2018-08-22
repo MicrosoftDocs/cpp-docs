@@ -18,10 +18,10 @@ Initializes a synchronization object that is similar to a mutex object, but can 
 
 ## Syntax
 
-```cpp  
-explicit CriticalSection(  
-   ULONG spincount = 0  
-);  
+```cpp
+explicit CriticalSection(
+   ULONG spincount = 0
+);
 ```
 
 ### Parameters

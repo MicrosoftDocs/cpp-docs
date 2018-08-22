@@ -21,7 +21,7 @@ You can create a new toolbar by converting a bitmap. The graphic from the bitmap
 
 2. From the **Image** menu, choose **Toolbar Editor**.
 
-     The [New Toolbar Resource dialog box](../windows/new-toolbar-resource-dialog-box.md) appears. You can change the width and height of the icon images to match the bitmap. The toolbar image is then displayed in the Toolbar editor.
+   The [New Toolbar Resource dialog box](../windows/new-toolbar-resource-dialog-box.md) appears. You can change the width and height of the icon images to match the bitmap. The toolbar image is then displayed in the Toolbar editor.
 
 3. To finish the conversion, change the command **ID** of the button using the [Properties window](/visualstudio/ide/reference/properties-window). Type the new **ID** or select an **ID** from the drop-down list.
 

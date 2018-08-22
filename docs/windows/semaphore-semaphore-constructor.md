@@ -18,14 +18,14 @@ Initializes a new instance of the **Semaphore** class.
 
 ## Syntax
 
-```cpp  
-explicit Semaphore(  
-   HANDLE h  
+```cpp
+explicit Semaphore(
+   HANDLE h
 );
 
-WRL_NOTHROW Semaphore(  
-   _Inout_ Semaphore&& h  
-);  
+WRL_NOTHROW Semaphore(
+   _Inout_ Semaphore&& h
+);
 ```
 
 ### Parameters
@@ -39,5 +39,5 @@ A handle or an rvalue-reference to a **Semaphore** object.
 
 **Namespace:** Microsoft::WRL::Wrappers
 
- ## See Also
+## See Also
 [Semaphore Class](../windows/semaphore-class.md)

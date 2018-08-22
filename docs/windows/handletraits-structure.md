@@ -18,8 +18,8 @@ Defines common characteristics of a handle.
 
 ## Syntax
 
-```cpp  
-struct HANDLETraits;  
+```cpp
+struct HANDLETraits;
 ```
 
 ## Members

@@ -18,10 +18,10 @@ Copies the address of the current completion event handler to the specified vari
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   GetOnComplete  
-)(TComplete** completeHandler);  
+```cpp
+STDMETHOD(
+   GetOnComplete
+)(TComplete** completeHandler);
 ```
 
 ### Parameters

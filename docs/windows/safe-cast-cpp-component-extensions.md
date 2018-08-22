@@ -22,11 +22,11 @@ The **safe_cast** operation returns the specified expression as the specified ty
 
 ### Syntax
 
-```cpp  
-[default]:: safe_cast<  
-type-id  
->(  
-expression  
+```cpp
+[default]:: safe_cast<
+type-id
+>(
+expression
 )  
 ```
 
@@ -36,11 +36,11 @@ expression
 
 ### Syntax
 
-```cpp  
-[default]:: safe_cast<  
-type-id  
->(  
-expression  
+```cpp
+[default]:: safe_cast<
+type-id
+>(
+expression
 )  
 ```
 
@@ -64,34 +64,34 @@ Compiler option: `/ZW`
 
 The following code example demonstrates how to use **safe_cast** with the Windows Runtime.
 
-```cpp  
-// safe_cast_ZW.cpp  
+```cpp
+// safe_cast_ZW.cpp
 // compile with: /ZW /EHsc
 
-using namespace default;  
+using namespace default;
 using namespace Platform;
 
-interface class I1 {};  
-interface class I2 {};  
+interface class I1 {};
+interface class I2 {};
 interface class I3 {};
 
 ref class X : public I1, public I2 {};
 
-int main(Array<String^>^ args) {  
-   I1^ i1 = ref new X;  
-   I2^ i2 = safe_cast<I2^>(i1);   // OK, I1 and I2 have common type: X  
-   // I2^ i3 = static_cast<I2^>(i1);   C2440 use safe_cast instead  
-   try {  
-      I3^ i4 = safe_cast<I3^>(i1);   // Fails because i1 is not derived from I3.  
-   }   
-   catch(InvalidCastException^ ic) {  
-     wprintf(L"Caught expected exception: %s\n", ic->Message);  
-   }  
-}  
+int main(Array<String^>^ args) {
+   I1^ i1 = ref new X;
+   I2^ i2 = safe_cast<I2^>(i1);   // OK, I1 and I2 have common type: X
+   // I2^ i3 = static_cast<I2^>(i1);   C2440 use safe_cast instead
+   try {
+      I3^ i4 = safe_cast<I3^>(i1);   // Fails because i1 is not derived from I3.
+   }
+   catch(InvalidCastException^ ic) {
+   wprintf(L"Caught expected exception: %s\n", ic->Message);
+   }
+}
 ```
 
-```Output  
-Caught expected exception: InvalidCastException  
+```Output
+Caught expected exception: InvalidCastException
 ```
 
 ## Common Language Runtime
@@ -100,11 +100,11 @@ Caught expected exception: InvalidCastException
 
 ### Syntax
 
-```cpp  
-[cli]:: safe_cast<  
-type-id  
->(  
-expression  
+```cpp
+[cli]:: safe_cast<
+type-id
+>(
+expression
 )  
 ```
 
@@ -144,32 +144,32 @@ Compiler option: `/clr`
 
 One example of where the compiler will not accept a **static_cast** but will accept a **safe_cast** is for casts between unrelated interface types.  With **safe_cast**, the compiler will not issue a conversion error and will perform a check at runtime to see if the cast is possible
 
-```cpp  
-// safe_cast.cpp  
-// compile with: /clr  
+```cpp
+// safe_cast.cpp
+// compile with: /clr
 using namespace System;
 
-interface class I1 {};  
-interface class I2 {};  
+interface class I1 {};
+interface class I2 {};
 interface class I3 {};
 
 ref class X : public I1, public I2 {};
 
-int main() {  
-   I1^ i1 = gcnew X;  
-   I2^ i2 = safe_cast<I2^>(i1);   // OK, I1 and I2 have common type: X  
-   // I2^ i3 = static_cast<I2^>(i1);   C2440 use safe_cast instead  
-   try {  
-      I3^ i4 = safe_cast<I3^>(i1);   // fail at runtime, no common type  
-   }   
-   catch(InvalidCastException^) {  
-      Console::WriteLine("Caught expected exception");  
-   }  
-}  
+int main() {
+   I1^ i1 = gcnew X;
+   I2^ i2 = safe_cast<I2^>(i1);   // OK, I1 and I2 have common type: X
+   // I2^ i3 = static_cast<I2^>(i1);   C2440 use safe_cast instead
+   try {
+      I3^ i4 = safe_cast<I3^>(i1);   // fail at runtime, no common type
+   }
+   catch(InvalidCastException^) {
+      Console::WriteLine("Caught expected exception");
+   }
+}
 ```
 
-```Output  
-Caught expected exception  
+```Output
+Caught expected exception
 ```
 
 ## See Also

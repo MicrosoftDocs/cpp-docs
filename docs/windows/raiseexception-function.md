@@ -18,10 +18,10 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-inline void __declspec(noreturn)   RaiseException(  
-      HRESULT hr,   
-      DWORD dwExceptionFlags = EXCEPTION_NONCONTINUABLE);  
+```cpp
+inline void __declspec(noreturn)   RaiseException(
+      HRESULT hr,
+      DWORD dwExceptionFlags = EXCEPTION_NONCONTINUABLE);
 ```
 
 ### Parameters

@@ -38,9 +38,9 @@ You can access Win32 resources in the [Resource View](../windows/resource-view-w
 
 4. Double-click the resource, for example, **IDD_ABOUTBOX**.
 
-     The resource opens in the appropriate editor. For example, for dialog resources, the resource opens inside the **Dialog** editor.
+   The resource opens in the appropriate editor. For example, for dialog resources, the resource opens inside the **Dialog** editor.
 
-     You can also [view resources in an .rc (resource script) file without having a project open](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).
+   You can also [view resources in an .rc (resource script) file without having a project open](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).
 
 ### To delete an existing Win 32 resource
 
@@ -61,7 +61,7 @@ For information on adding resources to managed projects, please see [Resources i
 
 1. In **Solution Explorer**, double-click the resource, for example, **Bitmap1.bmp**.
 
-     The resource opens in the appropriate editor.
+   The resource opens in the appropriate editor.
 
 ### To delete an existing managed resource
 

@@ -18,8 +18,8 @@ Indicates that the item exists but should not be displayed in a user-oriented br
 
 ## Syntax
 
-```cpp  
-[hidden]  
+```cpp
+[hidden]
 ```
 
 ## Remarks
@@ -41,11 +41,11 @@ See the example for [bindable](../windows/bindable.md) for an example of how to 
 |**Required attributes**|**coclass** (when applied to **class** or **struct**)|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Interface Attributes](../windows/interface-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)   
+[Method Attributes](../windows/method-attributes.md)  

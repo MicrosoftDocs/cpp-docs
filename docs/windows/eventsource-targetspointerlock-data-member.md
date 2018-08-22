@@ -18,8 +18,8 @@ Synchronizes access to internal data members even while event handlers for this 
 
 ## Syntax
 
-```cpp  
-Wrappers::SRWLock targetsPointerLock_;  
+```cpp
+Wrappers::SRWLock targetsPointerLock_;
 ```
 
 ## Requirements
@@ -28,5 +28,5 @@ Wrappers::SRWLock targetsPointerLock_;
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [EventSource Class](../windows/eventsource-class.md)

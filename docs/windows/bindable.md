@@ -18,8 +18,8 @@ Indicates that the property supports data binding.
 
 ## Syntax
 
-```cpp  
-[bindable]  
+```cpp
+[bindable]
 ```
 
 ## Remarks
@@ -38,25 +38,25 @@ The following MFC samples show the use of **bindable**:
 
 The following code shows how you can use **bindable** on a property:
 
-```cpp  
-// cpp_attr_ref_bindable.cpp  
-// compile with: /LD  
-#include <windows.h>  
-[  
-   uuid("479B29E3-9A2C-11D0-B696-00A0C903487A"),  
-   dispinterface,  
+```cpp
+// cpp_attr_ref_bindable.cpp
+// compile with: /LD
+#include <windows.h>
+[
+   uuid("479B29E3-9A2C-11D0-B696-00A0C903487A"),
+   dispinterface,
    helpstring("property demo Interface")  
-]  
+]
 __interface IPropDemo : IDispatch {
 
-   [propget, id(1), bindable, displaybind, defaultbind, requestedit] HRESULT P1([out, retval] long *nSize);  
-   [propput, id(1), bindable, displaybind, defaultbind, requestedit] HRESULT P1([in] long nSize);  
-   [id(3), bindable, propget] HRESULT Object([out, retval] IDispatch **ppObj);  
-   [id(3), bindable, propputref] HRESULT Object([in] IDispatch* pObj);     
-   [id(-552), helpstring("method AboutBox")] HRESULT AboutBox();  
+   [propget, id(1), bindable, displaybind, defaultbind, requestedit] HRESULT P1([out, retval] long *nSize);
+   [propput, id(1), bindable, displaybind, defaultbind, requestedit] HRESULT P1([in] long nSize);
+   [id(3), bindable, propget] HRESULT Object([out, retval] IDispatch **ppObj);
+   [id(3), bindable, propputref] HRESULT Object([in] IDispatch* pObj);
+   [id(-552), helpstring("method AboutBox")] HRESULT AboutBox();
 };
 
-[ module(name="PropDemoLib", uuid="479B29E2-9A2C-11D0-B696-00A0C903487A", version="1.0", helpstring="property demo") ];  
+[ module(name="PropDemoLib", uuid="479B29E2-9A2C-11D0-B696-00A0C903487A", version="1.0", helpstring="property demo") ];
 ```
 
 ## Requirements
@@ -70,7 +70,7 @@ __interface IPropDemo : IDispatch {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -79,4 +79,4 @@ __interface IPropDemo : IDispatch {
 [defaultbind](../windows/defaultbind.md)  
 [displaybind](../windows/displaybind.md)  
 [immediatebind](../windows/immediatebind.md)  
-[requestedit](../windows/requestedit.md)   
+[requestedit](../windows/requestedit.md)  

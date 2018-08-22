@@ -18,10 +18,10 @@ Specifies the threading model for a COM object.
 
 ## Syntax
 
-```cpp  
-[ threading(  
-   model=enumeration  
-) ]  
+```cpp
+[ threading(
+   model=enumeration
+) ]
 ```
 
 ### Parameters
@@ -64,7 +64,7 @@ See the [licensed](../windows/licensed.md) example for a sample use of **threadi
 |**Required attributes**|**coclass**|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -72,4 +72,4 @@ See the [licensed](../windows/licensed.md) example for a sample use of **threadi
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
 [Multithreading Support for Older Code (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)  
-[Neutral Apartments](http://msdn.microsoft.com/library/windows/desktop/ms681813)   
+[Neutral Apartments](http://msdn.microsoft.com/library/windows/desktop/ms681813)  

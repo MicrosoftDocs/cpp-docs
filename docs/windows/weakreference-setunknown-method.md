@@ -18,10 +18,10 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-void SetUnknown(  
-   _In_ IUnknown* unk  
-);  
+```cpp
+void SetUnknown(
+   _In_ IUnknown* unk
+);
 ```
 
 ### Parameters

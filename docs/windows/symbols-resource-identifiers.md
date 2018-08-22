@@ -16,8 +16,8 @@ ms.workload: ["cplusplus", "uwp"]
 
 A symbol is a resource identifier (ID) that consists of two parts: a text string (symbol name) mapped to an integer value (symbol value). For example:
 
-```  
-IDC_EDITNAME = 5100  
+```
+IDC_EDITNAME = 5100
 ```
 
 Symbol names are most often referred to as identifiers.

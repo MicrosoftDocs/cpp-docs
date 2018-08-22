@@ -18,8 +18,8 @@ Indicates that a parameter is to be passed from the calling procedure to the cal
 
 ## Syntax
 
-```cpp  
-[in]  
+```cpp
+[in]
 ```
 
 ## Remarks
@@ -41,7 +41,7 @@ See [bindable](../windows/bindable.md) for an example of how to use **in**.
 |**Required attributes**|None|
 |**Invalid attributes**|**retval**|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -50,4 +50,4 @@ See [bindable](../windows/bindable.md) for an example of how to use **in**.
 [Method Attributes](../windows/method-attributes.md)  
 [defaultvalue](../windows/defaultvalue.md)  
 [id](../windows/id.md)  
-[out](../windows/out-cpp.md)   
+[out](../windows/out-cpp.md)  

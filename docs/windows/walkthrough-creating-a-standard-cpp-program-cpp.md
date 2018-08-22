@@ -35,19 +35,19 @@ To complete this walkthrough, you must understand the fundamentals of the C++ la
 
 3. Type a name for the project.
 
-     By default, the solution that contains the project has the same name as the project, but you can type a different name. You can also type a different location for the project.
+   By default, the solution that contains the project has the same name as the project, but you can type a different name. You can also type a different location for the project.
 
-     Click **OK** to create the project.
+   Click **OK** to create the project.
 
 4. If **Solution Explorer** is not displayed, on the **View** menu, click **Solution Explorer**.
 
 5. Add a new source file to the project, as follows.
 
-    1.  In **Solution Explorer**, right-click the **Source Files** folder, point to **Add**, and then click **New Item**.
+   1. In **Solution Explorer**, right-click the **Source Files** folder, point to **Add**, and then click **New Item**.
 
-    2.  In the **Code** node, click **C++ File (.cpp)**, type a name for the file, and then click **Add**.
+   2. In the **Code** node, click **C++ File (.cpp)**, type a name for the file, and then click **Add**.
 
-     The .cpp file appears in the **Source Files** folder in **Solution Explorer**, and the file is opened in the Visual Studio editor.
+   The .cpp file appears in the **Source Files** folder in **Solution Explorer**, and the file is opened in the Visual Studio editor.
 
 6. In the file in the editor, type a valid C++ program that uses the C++ Standard Library, or copy one of the sample programs and paste it in the file.
 
@@ -55,11 +55,11 @@ To complete this walkthrough, you must understand the fundamentals of the C++ la
 
 8. On the **Build** menu, click **Build Solution**.
 
-     The **Output** window displays information about the compilation progress, for example, the location of the build log and a message that indicates the build status.
+   The **Output** window displays information about the compilation progress, for example, the location of the build log and a message that indicates the build status.
 
 9. On the **Debug** menu, click **Start without Debugging**.
 
-     If you used the sample program, a command window is displayed and shows whether certain integers are found in the set.
+   If you used the sample program, a command window is displayed and shows whether certain integers are found in the set.
 
 ## Next Steps
 

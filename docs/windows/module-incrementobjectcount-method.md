@@ -18,8 +18,8 @@ Increments the number of objects tracked by the module.
 
 ## Syntax
 
-```cpp  
-virtual long IncrementObjectCount();  
+```cpp
+virtual long IncrementObjectCount();
 ```
 
 ## Return Value

@@ -17,39 +17,39 @@ Equality operator for [ComPtr](../windows/comptr-class.md) and [ComPtrRef](../wi
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW bool operator==(  
-   const ComPtr<T>& a,  
-   const ComPtr<U>& b  
-);  
-WRL_NOTHROW bool operator==(  
-   const ComPtr<T>& a,  
+```cpp
+WRL_NOTHROW bool operator==(
+   const ComPtr<T>& a,
+   const ComPtr<U>& b
+);
+WRL_NOTHROW bool operator==(
+   const ComPtr<T>& a,
    decltype(__nullptr)  
-);  
-WRL_NOTHROW bool operator==(  
-   decltype(__nullptr),  
-   const ComPtr<T>& a  
-);  
-WRL_NOTHROW bool operator==(  
-   const Details::ComPtrRef<ComPtr<T>>& a,  
-   const Details::ComPtrRef<ComPtr<U>>& b  
-);  
-WRL_NOTHROW bool operator==(  
-   const Details::ComPtrRef<ComPtr<T>>& a,  
+);
+WRL_NOTHROW bool operator==(
+   decltype(__nullptr),
+   const ComPtr<T>& a
+);
+WRL_NOTHROW bool operator==(
+   const Details::ComPtrRef<ComPtr<T>>& a,
+   const Details::ComPtrRef<ComPtr<U>>& b
+);
+WRL_NOTHROW bool operator==(
+   const Details::ComPtrRef<ComPtr<T>>& a,
    decltype(__nullptr)  
-);  
-WRL_NOTHROW bool operator==(  
-   decltype(__nullptr),  
-   const Details::ComPtrRef<ComPtr<T>>& a  
-);  
-WRL_NOTHROW bool operator==(  
-   const Details::ComPtrRef<ComPtr<T>>& a,  
-   void* b  
-);  
-WRL_NOTHROW bool operator==(  
-   void* b,  
-   const Details::ComPtrRef<ComPtr<T>>& a  
-);  
+);
+WRL_NOTHROW bool operator==(
+   decltype(__nullptr),
+   const Details::ComPtrRef<ComPtr<T>>& a
+);
+WRL_NOTHROW bool operator==(
+   const Details::ComPtrRef<ComPtr<T>>& a,
+   void* b
+);
+WRL_NOTHROW bool operator==(
+   void* b,
+   const Details::ComPtrRef<ComPtr<T>>& a
+);
 ```
 
 ### Parameters

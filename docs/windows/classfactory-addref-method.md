@@ -18,11 +18,11 @@ Increments the reference count for the current **ClassFactory** object.
 
 ## Syntax
 
-```cpp  
-STDMETHOD_(  
-   ULONG,  
-   AddRef  
-)();  
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
 ```
 
 ## Return Value

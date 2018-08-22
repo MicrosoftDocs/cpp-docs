@@ -18,11 +18,11 @@ Inserts the interface ID specified by the current zeroth template parameter into
 
 ## Syntax
 
-```cpp  
-__forceinline static void FillArrayWithIid(  
-   unsigned long &index,  
-   _In_ IID* iids  
-);  
+```cpp
+__forceinline static void FillArrayWithIid(
+   unsigned long &index,
+   _In_ IID* iids
+);
 ```
 
 ### Parameters

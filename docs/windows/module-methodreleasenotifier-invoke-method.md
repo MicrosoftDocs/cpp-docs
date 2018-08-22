@@ -18,8 +18,8 @@ Calls the event handler associated with the current **Module::MethodReleaseNotif
 
 ## Syntax
 
-```cpp  
-void Invoke();  
+```cpp
+void Invoke();
 ```
 
 ## Requirements

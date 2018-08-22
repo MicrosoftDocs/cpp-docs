@@ -39,7 +39,7 @@ The following attributes apply to the [interface (or __interface)](../cpp/interf
 |[restricted](../windows/restricted.md)|Designates which members of the library cannot be called arbitrarily.|
 |[uuid](../windows/uuid-cpp-attributes.md)|Provides the unique ID for the library|
 
- You must observe these rules for defining an interface:
+You must observe these rules for defining an interface:
 
 - Default calling convention is [__stdcall](../cpp/stdcall.md).
 

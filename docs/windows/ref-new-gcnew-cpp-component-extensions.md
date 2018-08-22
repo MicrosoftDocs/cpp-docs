@@ -44,42 +44,42 @@ Compiler option: `/clr`
 
 The following example uses **gcnew** to allocate a Message object.
 
-```cpp  
-// mcppv2_gcnew_1.cpp  
-// compile with: /clr  
-ref struct Message {  
-   System::String^ sender;  
-   System::String^ receiver;  
-   System::String^ data;  
+```cpp
+// mcppv2_gcnew_1.cpp
+// compile with: /clr
+ref struct Message {
+   System::String^ sender;
+   System::String^ receiver;
+   System::String^ data;
 };
 
-int main() {  
-   Message^ h_Message  = gcnew Message;  
-  //...  
-}  
+int main() {
+   Message^ h_Message  = gcnew Message;
+  //...
+}
 ```
 
 The following example uses **gcnew** to create a boxed value type for use like a reference type.
 
-```cpp  
-// example2.cpp : main project file.  
-// compile with /clr  
-using namespace System;  
-value class Boxed {  
-    public:  
-        int i;  
-};  
+```cpp
+// example2.cpp : main project file.
+// compile with /clr
+using namespace System;
+value class Boxed {
+    public:
+        int i;
+};
 int main()  
-{  
-    Boxed^ y = gcnew Boxed;  
-    y->i = 32;  
-    Console::WriteLine(y->i);  
-    return 0;  
-}  
+{
+    Boxed^ y = gcnew Boxed;
+    y->i = 32;
+    Console::WriteLine(y->i);
+    return 0;
+}
 ```
 
-```Output  
-32  
+```Output
+32
 ```
 
 ## See Also

@@ -18,8 +18,8 @@ Retrieves a pointer to the interface that is associated with this **ComPtr**.
 
 ## Syntax
 
-```cpp  
-T* Get() const;  
+```cpp
+T* Get() const;
 ```
 
 ## Return Value

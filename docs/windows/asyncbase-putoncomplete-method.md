@@ -18,10 +18,10 @@ Sets the address of the completion event handler to the specified value.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   PutOnComplete  
-)(TComplete* completeHandler);  
+```cpp
+STDMETHOD(
+   PutOnComplete
+)(TComplete* completeHandler);
 ```
 
 ### Parameters

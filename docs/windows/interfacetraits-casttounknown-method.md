@@ -18,11 +18,11 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template<typename T>  
-static __forceinline IUnknown* CastToUnknown(  
-   _In_ T* ptr  
-);  
+```cpp
+template<typename T>
+static __forceinline IUnknown* CastToUnknown(
+   _In_ T* ptr
+);
 ```
 
 ### Parameters

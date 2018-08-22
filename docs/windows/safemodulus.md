@@ -18,13 +18,13 @@ Performs the modulus operation on two numbers.
 
 ## Syntax
 
-```cpp  
-template<typename T, typename U>  
-inline bool SafeModulus (  
-   const T t,  
-   const U u,  
-   T& result  
-) throw ();  
+```cpp
+template<typename T, typename U>
+inline bool SafeModulus (
+   const T t,
+   const U u,
+   T& result
+) throw ();
 ```
 
 ### Parameters

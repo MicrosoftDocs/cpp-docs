@@ -22,11 +22,11 @@ ms.workload: ["cplusplus", "uwp"]
 
    - Click the dialog box at the location where you want to place the control. The control appears where you've clicked. For information, see [Adding Multiple Controls](../windows/adding-multiple-controls.md).
 
-         \- or -
+       \- or -
 
    - Drag and drop the control from the **Toolbox** window to the location on your dialog box. For more information, see [Sizing a Control While You Add It](../windows/sizing-a-control-while-you-add-it.md).
 
-         \- or -
+       \- or -
 
    - Double-click the control in the **Toolbox** window (it appears on your dialog box) then reposition the control to the location you prefer.
 

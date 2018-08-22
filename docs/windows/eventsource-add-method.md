@@ -18,11 +18,11 @@ Appends the event handler represented by the specified delegate interface to the
 
 ## Syntax
 
-```cpp  
-HRESULT Add(  
-   _In_ TDelegateInterface* delegateInterface,  
-   _Out_ EventRegistrationToken* token  
-);  
+```cpp
+HRESULT Add(
+   _In_ TDelegateInterface* delegateInterface,
+   _Out_ EventRegistrationToken* token
+);
 ```
 
 ### Parameters
@@ -43,5 +43,5 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [EventSource Class](../windows/eventsource-class.md)

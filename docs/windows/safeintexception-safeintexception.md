@@ -18,12 +18,12 @@ Creates a **SafeIntException** object.
 
 ## Syntax
 
-```cpp  
+```cpp
 SafeIntException();
 
-SafeIntException(  
-   SafeIntError code  
-);  
+SafeIntException(
+   SafeIntError code
+);
 ```
 
 ### Parameters

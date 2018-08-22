@@ -19,7 +19,7 @@ The following procedures shows you how to crop or extend an entire image.
 
 1. Select the entire image.
 
-     If part of the image is currently selected, and you want to select the entire image, click anywhere on the image outside the current selection border.
+   If part of the image is currently selected, and you want to select the entire image, click anywhere on the image outside the current selection border.
 
 2. Drag a sizing handle until the image is the desired size.
 

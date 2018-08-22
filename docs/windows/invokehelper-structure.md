@@ -18,63 +18,63 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback,  
-   unsigned int argCount  
->  
-struct InvokeHelper;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 0> : public Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 1> : public Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 2> : public Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 3> : public Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 4> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 5> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 6> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 7> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 8> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;  
+```cpp
+template<
+   typename TDelegateInterface,
+   typename TCallback,
+   unsigned int argCount
+>
+struct InvokeHelper;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 0> : public Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 1> : public Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 2> : public Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 3> : public Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 4> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 5> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 6> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 7> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 8> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeClass<RuntimeClassFlags<Delegate>, TDelegateInterface>;
 ```
 
 ### Parameters

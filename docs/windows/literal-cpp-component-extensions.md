@@ -50,38 +50,38 @@ For more information, see [Static](../cpp/storage-classes-cpp.md) and [const](..
 
 This example shows that a **literal** variable implies **static**.
 
-```cpp  
-// mcppv2_literal.cpp  
-// compile with: /clr  
-ref struct X {  
-   literal int i = 4;  
+```cpp
+// mcppv2_literal.cpp
+// compile with: /clr
+ref struct X {
+   literal int i = 4;
 };
 
-int main() {  
-   int value = X::i;  
-}  
+int main() {
+   int value = X::i;
+}
 ```
 
 ## Example
 
 The following sample shows the affect of literal in metadata:
 
-```cpp  
-// mcppv2_literal2.cpp  
-// compile with: /clr /LD  
-public ref struct A {  
-   literal int lit = 0;  
-   static const int sc = 1;  
-};  
+```cpp
+// mcppv2_literal2.cpp
+// compile with: /clr /LD
+public ref struct A {
+   literal int lit = 0;
+   static const int sc = 1;
+};
 ```
 
 Notice the difference in the metadata for `sc` and `lit`: the `modopt` directive is applied to `sc`, meaning it can be ignored by other compilers.
 
-```  
+```
 .field public static int32 modopt([mscorlib]System.Runtime.CompilerServices.IsConst) sc = int32(0x0000000A)  
 ```
 
-```  
+```
 .field public static literal int32 lit = int32(0x0000000A)  
 ```
 
@@ -89,33 +89,33 @@ Notice the difference in the metadata for `sc` and `lit`: the `modopt` directive
 
 The following sample, authored in C#, references the metadata created in the previous sample and shows the affect of **literal** and **static const** variables:
 
-```cs  
-// mcppv2_literal3.cs  
-// compile with: /reference:mcppv2_literal2.dll  
-// A C# program  
-class B {  
-   public static void Main() {  
-      // OK  
-      System.Console.WriteLine(A.lit);  
+```cs
+// mcppv2_literal3.cs
+// compile with: /reference:mcppv2_literal2.dll
+// A C# program
+class B {
+   public static void Main() {
+      // OK
+      System.Console.WriteLine(A.lit);
       System.Console.WriteLine(A.sc);
 
-      // C# does not enforce C++ const  
-      A.sc = 9;  
+      // C# does not enforce C++ const
+      A.sc = 9;
       System.Console.WriteLine(A.sc);
 
-      // C# enforces const for a literal  
+      // C# enforces const for a literal
       A.lit = 9;   // CS0131
 
-      // you can assign a C++ literal variable to a C# const variable  
-      const int i = A.lit;  
+      // you can assign a C++ literal variable to a C# const variable
+      const int i = A.lit;
       System.Console.WriteLine(i);
 
-      // but you cannot assign a C++ static const variable  
-      // to a C# const variable  
-      const int j = A.sc;   // CS0133  
-      System.Console.WriteLine(j);  
-   }  
-}  
+      // but you cannot assign a C++ static const variable
+      // to a C# const variable
+      const int j = A.sc;   // CS0133
+      System.Console.WriteLine(j);
+   }
+}
 ```
 
 ## Requirements

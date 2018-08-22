@@ -17,8 +17,8 @@ A helper class for managing the lifetime of an HSTRING using the RAII pattern.
 
 ## Syntax
 
-```cpp  
-class HString;  
+```cpp
+class HString;
 ```
 
 ## Remarks

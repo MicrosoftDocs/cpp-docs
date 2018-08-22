@@ -18,15 +18,15 @@ Binds a specified column to a variable in the rowset.
 
 ## Syntax
 
-```cpp  
-[ db_column(   
-   ordinal,   
-   dbtype,   
-   precision,   
-   scale,   
-   status,   
-   length   
-) ]  
+```cpp
+[ db_column(
+   ordinal,
+   dbtype,
+   precision,
+   scale,
+   status,
+   length
+) ]
 ```
 
 #### Parameters
@@ -34,9 +34,9 @@ Binds a specified column to a variable in the rowset.
 *ordinal*  
 The ordinal column number (`DBCOLUMNINFO` ordinal) or column name (ANSI or Unicode string) corresponding to a field in the rowset to which to bind data. If you use numbers, you can skip consecutive ordinals (for example: 1, 2, 3, 5). The name may contain spaces if the OLE DB provider you use supports it. For example, you can use either of the following formats:
 
-```cpp  
-[db_column("2")] TCHAR szCity[30];  
-[db_column(L"city_name")] TCHAR szCity[30];  
+```cpp
+[db_column("2")] TCHAR szCity[30];
+[db_column(L"city_name")] TCHAR szCity[30];
 ```
 
 *dbtype* (optional)  
@@ -68,40 +68,40 @@ For examples of this attribute used in an application, see the samples [AtlAgent
 
 This sample binds a column in a table to a **long** data member and specifies status and length fields.
 
-```cpp  
-// db_column_1.cpp  
-// compile with: /LD  
-#include <atlbase.h>  
-#include <atlplus.h>  
+```cpp
+// db_column_1.cpp
+// compile with: /LD
+#include <atlbase.h>
+#include <atlplus.h>
 #include <atldbcli.h>
 
-[ db_command(L"Select * from Products") ]  
-class CProducts {  
-   DBSTATUS m_dwProductIDStatus;  
+[ db_command(L"Select * from Products") ]
+class CProducts {
+   DBSTATUS m_dwProductIDStatus;
    DBLENGTH m_dwProductIDLength;
 
-   [ db_column("1", status="m_dwProductIDStatus", length="m_dwProductIDLength") ] LONG m_ProductID;  
-};  
+   [ db_column("1", status="m_dwProductIDStatus", length="m_dwProductIDLength") ] LONG m_ProductID;
+};
 ```
 
 ## Example
 
 This sample binds four columns to a **long**, a character string, a timestamp, and a `DB_NUMERIC` integer, in that order.
 
-```cpp  
-// db_column_2.cpp  
-// compile with: /LD  
-#include <atlbase.h>  
-#include <atlplus.h>  
+```cpp
+// db_column_2.cpp
+// compile with: /LD
+#include <atlbase.h>
+#include <atlplus.h>
 #include <atldbcli.h>
 
-[ db_command(L"Select * from Products") ]  
-class CProducts {  
-   [db_column("1")] LONG m_OrderID;  
-   [db_column("2")] TCHAR m_CustomerID[6];  
-   [db_column("4")] DB_NUMERIC m_OrderDate;     
-   [db_column("7", dbtype="DBTYPE_NUMERIC")] DB_NUMERIC m_ShipVia;  
-};  
+[ db_command(L"Select * from Products") ]
+class CProducts {
+   [db_column("1")] LONG m_OrderID;
+   [db_column("2")] TCHAR m_CustomerID[6];
+   [db_column("4")] DB_NUMERIC m_OrderDate;
+   [db_column("7", dbtype="DBTYPE_NUMERIC")] DB_NUMERIC m_ShipVia;
+};
 ```
 
 ## Requirements
@@ -115,9 +115,9 @@ class CProducts {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)   
+[Class Attributes](../windows/class-attributes.md)  

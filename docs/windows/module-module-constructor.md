@@ -18,8 +18,8 @@ Initializes a new instance of the **Module** class.
 
 ## Syntax
 
-```cpp  
-Module();  
+```cpp
+Module();
 ```
 
 ## Remarks
@@ -32,5 +32,5 @@ This constructor is protected and cannot be called with the **new** keyword. Ins
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

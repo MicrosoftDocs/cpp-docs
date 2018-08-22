@@ -18,8 +18,8 @@ Synchronizes access to the target method.
 
 ## Syntax
 
-```cpp  
-[synchronize]  
+```cpp
+[synchronize]
 ```
 
 ## Remarks
@@ -34,29 +34,29 @@ This attribute requires that the [coclass](../windows/coclass.md), [progid](../w
 
 The following code provides synchronization for the `UpdateBalance` method of the `CMyClass` object.
 
-```cpp  
-// cpp_attr_ref_synchronize.cpp  
-// compile with: /LD  
-#define _ATL_ATTRIBUTES  
-#include "atlbase.h"  
+```cpp
+// cpp_attr_ref_synchronize.cpp
+// compile with: /LD
+#define _ATL_ATTRIBUTES
+#include "atlbase.h"
 #include "atlcom.h"
 
 [module(name="SYNC")];
 
-[coclass,  
- threading(both),  
- vi_progid("MyProject.MyClass"),  
- progid("MyProject.MyClass.1"),  
+[coclass,
+ threading(both),
+ vi_progid("MyProject.MyClass"),
+ progid("MyProject.MyClass.1"),
  uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")  
-]  
-class CMyClass {  
+]
+class CMyClass {
    float m_nBalance;
 
-   [synchronize]  
-   void UpdateBalance(float nAdjust) {  
-      m_nBalance += nAdjust;  
-   }  
-};  
+   [synchronize]
+   void UpdateBalance(float nAdjust) {
+      m_nBalance += nAdjust;
+   }
+};
 ```
 
 ## Requirements
@@ -70,8 +70,8 @@ class CMyClass {
 |**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
-[COM Attributes](../windows/com-attributes.md)   
+[COM Attributes](../windows/com-attributes.md)  

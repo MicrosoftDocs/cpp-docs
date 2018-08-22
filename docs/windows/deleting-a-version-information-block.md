@@ -23,7 +23,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 2. Right-click the block header you wish to delete then choose **Delete Version Info Block** from the shortcut menu.
 
-     This command deletes the selected header and leaves the remaining version information intact. Please note you cannot undo the action.
+   This command deletes the selected header and leaves the remaining version information intact. Please note you cannot undo the action.
 
 For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 

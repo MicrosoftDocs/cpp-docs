@@ -18,10 +18,10 @@ Unregisters the objects in the specified module so that other applications canno
 
 ## Syntax
 
-```cpp  
-HRESULT UnregisterObjects(  
-   ModuleBase* module,  
-   const wchar_t* serverName);  
+```cpp
+HRESULT UnregisterObjects(
+   ModuleBase* module,
+   const wchar_t* serverName);
 ```
 
 ### Parameters
@@ -42,5 +42,5 @@ S_OK if this operation is successful; otherwise, an error HRESULT that indicates
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

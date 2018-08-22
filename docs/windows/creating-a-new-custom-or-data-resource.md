@@ -20,17 +20,17 @@ You can create a new custom or data resource by placing the resource in a separa
 
 1. [Create a .rc file](../windows/how-to-create-a-resource-script-file.md) that contains the custom or data resource.
 
-     You can type custom data in a .rc file as null-terminated quoted strings, or as integers in decimal, hexadecimal, or octal format.
+   You can type custom data in a .rc file as null-terminated quoted strings, or as integers in decimal, hexadecimal, or octal format.
 
 2. In **Solution Explorer**, right-click your project's .rc file, then click **Resource Includes** on the shortcut menu.
 
 3. In the **Compile-Time Directives** box, type a `#include` statement that gives the name of the file containing your custom resource. For example:
 
-```cpp  
-    #include mydata.rc  
+```cpp
+    #include mydata.rc
  ```
 
-     Make sure the syntax and spelling of what you type are correct. The contents of the **Compile-Time Directives** box are inserted into the resource script file exactly as you typed them.
+   Make sure the syntax and spelling of what you type are correct. The contents of the **Compile-Time Directives** box are inserted into the resource script file exactly as you typed them.
 
 4. Click **OK** to record your changes.
 

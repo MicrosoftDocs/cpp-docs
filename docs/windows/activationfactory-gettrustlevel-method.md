@@ -18,10 +18,10 @@ Gets the trust level of the object that the current **ActivationFactory** instan
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   GetTrustLevel  
-)(_Out_ TrustLevel* trustLvl);  
+```cpp
+STDMETHOD(
+   GetTrustLevel
+)(_Out_ TrustLevel* trustLvl);
 ```
 
 ### Parameters

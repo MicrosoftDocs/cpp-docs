@@ -18,8 +18,8 @@ Deinitializes and destroys the current **CriticalSection** object.
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW ~CriticalSection();  
+```cpp
+WRL_NOTHROW ~CriticalSection();
 ```
 
 ## Requirements

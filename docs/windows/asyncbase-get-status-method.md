@@ -18,10 +18,10 @@ Retrieves a value that indicates the status of the asynchronous operation.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   get_Status  
-)(AsyncStatus *status) override;  
+```cpp
+STDMETHOD(
+   get_Status
+)(AsyncStatus *status) override;
 ```
 
 ### Parameters

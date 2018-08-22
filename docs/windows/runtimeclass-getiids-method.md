@@ -18,12 +18,12 @@ Gets an array that can contain the interface IDs implemented by the current **Ru
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   GetIids  
+```cpp
+STDMETHOD(
+   GetIids
 )  
-   (_Out_ ULONG *iidCount,   
-   _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);  
+   (_Out_ ULONG *iidCount,
+   _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);
 ```
 
 ### Parameters

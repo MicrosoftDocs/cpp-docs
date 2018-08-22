@@ -18,10 +18,10 @@ Enables a [local](../windows/local-cpp.md) function to be mapped to a remote fun
 
 ## Syntax
 
-```cpp  
-[ call_as(  
-   function  
-) ]  
+```cpp
+[ call_as(
+   function
+) ]
 ```
 
 ### Parameters
@@ -37,16 +37,16 @@ The **call_as** C++ attribute has the same functionality as the [call_as](http:/
 
 The following code shows how you can use **call_as** to map a nonremotable function (`f1`) to a remotable function (`Remf1`):
 
-```cpp  
-// cpp_attr_ref_call_as.cpp  
-// compile with: /LD  
-#include "unknwn.h"  
-[module(name="MyLib")];  
-[dual, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IMInterface {  
-   [local] HRESULT f1 ( int i );  
-   [call_as(f1)] HRESULT Remf1 ( int i );   
-};  
+```cpp
+// cpp_attr_ref_call_as.cpp
+// compile with: /LD
+#include "unknwn.h"
+[module(name="MyLib")];
+[dual, uuid("00000000-0000-0000-0000-000000000001")]
+__interface IMInterface {
+   [local] HRESULT f1 ( int i );
+   [call_as(f1)] HRESULT Remf1 ( int i );
+};
 ```
 
 ## Requirements
@@ -60,10 +60,10 @@ __interface IMInterface {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Method Attributes](../windows/method-attributes.md)  
-[local](../windows/local-cpp.md)   
+[local](../windows/local-cpp.md)  

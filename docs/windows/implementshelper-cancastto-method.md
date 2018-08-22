@@ -18,16 +18,16 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-HRESULT CanCastTo(  
-   REFIID riid,  
-   _Deref_out_ void **ppv  
+```cpp
+HRESULT CanCastTo(
+   REFIID riid,
+   _Deref_out_ void **ppv
 );
 
-HRESULT CanCastTo(  
-   _In_ const IID &iid,  
-   _Deref_out_ void **ppv  
-);  
+HRESULT CanCastTo(
+   _In_ const IID &iid,
+   _Deref_out_ void **ppv
+);
 ```
 
 ### Parameters

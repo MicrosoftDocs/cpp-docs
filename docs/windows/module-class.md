@@ -18,15 +18,15 @@ Represents a collection of related objects.
 
 ## Syntax
 
-```cpp  
-template<ModuleType moduleType>  
+```cpp
+template<ModuleType moduleType>
 class Module;
 
-template<>  
+template<>
 class Module<InProc> : public Details::ModuleBase;
 
-template<>  
-class Module<OutOfProc> : public Module<InProc>;  
+template<>
+class Module<OutOfProc> : public Module<InProc>;
 ```
 
 ### Parameters

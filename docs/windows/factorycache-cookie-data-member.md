@@ -18,11 +18,11 @@ Supports the Windows Runtime C++ Template Library infrastructure and is not inte
 
 ## Syntax
 
-```cpp  
-union {   
-   WINRT_REGISTRATION_COOKIE winrt;  
-   DWORD com;   
-} cookie;  
+```cpp
+union {
+   WINRT_REGISTRATION_COOKIE winrt;
+   DWORD com;
+} cookie;
 ```
 
 ## Remarks

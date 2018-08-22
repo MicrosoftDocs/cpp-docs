@@ -19,7 +19,7 @@ When you add a list box with a horizontal scroll bar to a dialog box using MFC c
 
 1. Set a maximum width for the widest element by calling [CListBox::SetHorizontalExtent](../mfc/reference/clistbox-class.md#sethorizontalextent) in your code.
 
-     Without this value set, the scroll bar will not appear, even when the items in the list box are wider than the box.
+   Without this value set, the scroll bar will not appear, even when the items in the list box are wider than the box.
 
 For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 

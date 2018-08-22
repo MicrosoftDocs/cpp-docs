@@ -18,11 +18,11 @@ Groups `db_column` attributes that participate in `IAccessor`-based binding.
 
 ## Syntax
 
-```cpp  
-[ db_accessor(   
-   num,   
-   auto   
-) ]  
+```cpp
+[ db_accessor(
+   num,
+   auto
+) ]
 ```
 
 #### Parameters
@@ -47,24 +47,24 @@ When the consumer attribute provider applies this attribute to a class, the comp
 
 The following example uses **db_accessor** to group columns in the Orders table from the Northwind database into two accessors. Accessor 0 is an automatic accessor, and accessor 1 is not.
 
-```cpp  
-// cpp_attr_ref_db_accessor.cpp  
-// compile with: /LD /link /OPT:NOREF  
-#define _ATL_ATTRIBUTES  
-#include <atlbase.h>  
+```cpp
+// cpp_attr_ref_db_accessor.cpp
+// compile with: /LD /link /OPT:NOREF
+#define _ATL_ATTRIBUTES
+#include <atlbase.h>
 #include <atldbcli.h>
 
-[ db_command(L"SELECT LastName, FirstName FROM Orders") ]  
-class CEmployees {  
-public:  
-   [ db_accessor(0, TRUE) ];  
-   [ db_column("1") ] LONG m_OrderID;  
-   [ db_column("2") ] TCHAR m_CustomerID[6];  
+[ db_command(L"SELECT LastName, FirstName FROM Orders") ]
+class CEmployees {
+public:
+   [ db_accessor(0, TRUE) ];
+   [ db_column("1") ] LONG m_OrderID;
+   [ db_column("2") ] TCHAR m_CustomerID[6];
    [ db_column("4") ] DBTIMESTAMP m_OrderDate;
 
-   [ db_accessor(1, FALSE) ];  
-   [ db_column("8") ] CURRENCY m_Freight;  
-};  
+   [ db_accessor(1, FALSE) ];
+   [ db_column("8") ] CURRENCY m_Freight;
+};
 ```
 
 ## Requirements
@@ -78,8 +78,8 @@ public:
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
-[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
+[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)  

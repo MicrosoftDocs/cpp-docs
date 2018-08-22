@@ -18,10 +18,10 @@ Retrieves an array of implemented interface IDs.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   GetIids  
-)(_Out_ ULONG *iidCount, _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);  
+```cpp
+STDMETHOD(
+   GetIids
+)(_Out_ ULONG *iidCount, _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);
 ```
 
 ### Parameters

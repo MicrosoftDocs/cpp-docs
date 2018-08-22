@@ -18,9 +18,9 @@ Extends the integer primitives to help prevent integer overflow and lets you com
 
 ## Syntax
 
-```cpp  
-template<typename T, typename E = _SAFEINT_DEFAULT_ERROR_POLICY>  
-class SafeInt;  
+```cpp
+template<typename T, typename E = _SAFEINT_DEFAULT_ERROR_POLICY>
+class SafeInt;
 ```
 
 ### Parameters
@@ -183,20 +183,20 @@ The first statement resolves to **true**, but the second statement resolves to *
 
 Be careful when you use the **SafeInt** class together with the `?:` ternary operator. Consider the following line of code.
 
-```cpp  
-Int x = flag ? SafeInt<unsigned int>(y) : -1;  
+```cpp
+Int x = flag ? SafeInt<unsigned int>(y) : -1;
 ```
 
 The compiler converts it to this:
 
-```cpp  
-Int x = flag ? SafeInt<unsigned int>(y) : SafeInt<unsigned int>(-1);  
+```cpp
+Int x = flag ? SafeInt<unsigned int>(y) : SafeInt<unsigned int>(-1);
 ```
 
 If `flag` is **false**, the compiler throws an exception instead of assigning the value of -1 to `x`. Therefore, to avoid this behavior, the correct code to use is the following line.
 
-```cpp  
-Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;  
+```cpp
+Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;
 ```
 
 `T` and `U` can be assigned a Boolean type, character type, or integer type. The integer types can be signed or unsigned and any size from 8 bits to 64 bits.

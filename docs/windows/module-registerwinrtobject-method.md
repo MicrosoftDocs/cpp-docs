@@ -18,10 +18,10 @@ Registers one or more Windows Runtime objects so other applications can connect 
 
 ## Syntax
 
-```cpp  
-HRESULT RegisterWinRTObject(const wchar_t* serverName,  
-   wchar_t** activatableClassIds,  
-   WINRT_REGISTRATION_COOKIE* cookie,  
+```cpp
+HRESULT RegisterWinRTObject(const wchar_t* serverName,
+   wchar_t** activatableClassIds,
+   WINRT_REGISTRATION_COOKIE* cookie,
    unsigned int count)  
 ```
 
@@ -49,5 +49,5 @@ S_OK if successful; otherwise, an error HRESULT such as CO_E_OBJISREG that indic
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

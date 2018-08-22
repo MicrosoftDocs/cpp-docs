@@ -19,9 +19,9 @@ ms.workload: ["cplusplus", "uwp"]
 
 2. In the **Width** and **Height** boxes in the [Properties window](/visualstudio/ide/reference/properties-window), type the dimensions that you want.
 
-     If you are increasing the size of the image, the **Image** editor extends the image to the right, downward, or both, and fills the new region with the current background color. The image is not stretched.
+   If you are increasing the size of the image, the **Image** editor extends the image to the right, downward, or both, and fills the new region with the current background color. The image is not stretched.
 
-     If you are decreasing the size of the image, the **Image** editor crops the image on the right or bottom edge, or both.
+   If you are decreasing the size of the image, the **Image** editor crops the image on the right or bottom edge, or both.
 
    > [!NOTE]
    > You can use the **Width** and **Height** properties to resize only the entire image, not to resize a partial selection.

@@ -25,7 +25,7 @@ The **Image** editor's [Colors palette](../windows/colors-window-image-editor-fo
 
 4. Many custom colors are dithered. If you want the solid color closest to the dithered color, double-click the **Color** box.
 
-     If you later decide you want the dithered color, move the slider on the **Luminosity** bar or move the cross hairs in the **Gradient Color Display** box again to restore the dithering.
+   If you later decide you want the dithered color, move the slider on the **Luminosity** bar or move the cross hairs in the **Gradient Color Display** box again to restore the dithering.
 
 5. Click **OK** to add the new color.
 

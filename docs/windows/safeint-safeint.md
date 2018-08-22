@@ -18,25 +18,25 @@ Constructs a **SafeInt** object.
 
 ## Syntax
 
-```cpp  
+```cpp
 SafeInt() throw
 
-SafeInt (  
-   const T& i  
+SafeInt (
+   const T& i
 ) throw ()
 
-SafeInt (  
-   bool b  
+SafeInt (
+   bool b
 ) throw ()
 
-template <typename U>  
-SafeInt (  
-   const SafeInt <U, E>& u  
+template <typename U>
+SafeInt (
+   const SafeInt <U, E>& u
 )
 
-I template <typename U>  
-SafeInt (  
-   const U& i  
+I template <typename U>
+SafeInt (
+   const U& i
 )  
 ```
 
@@ -51,7 +51,7 @@ The Boolean value for the new **SafeInt** object.
 [in] *u*  
 A **SafeInt** of type U. The new **SafeInt** object will have the same value as *u*, but will be of type T.
 
-U  
+U
  The type of data stored in the **SafeInt**. This can be either a Boolean, character, or integer type. If it is an integer type, it can be signed or unsigned and be between 8 and 64 bits.
 
 ## Remarks

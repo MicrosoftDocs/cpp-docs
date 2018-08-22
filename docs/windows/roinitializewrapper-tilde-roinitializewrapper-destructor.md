@@ -17,7 +17,7 @@ Uninitializes the Windows Runtime.
 
 ## Syntax
 
-```cpp  
+```cpp
 ~RoInitializeWrapper()  
 ```
 

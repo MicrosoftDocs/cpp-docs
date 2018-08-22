@@ -18,10 +18,10 @@ Specializes a `CriticalSection` template so that it supports releasing ownership
 
 ## Syntax
 
-```cpp  
-inline static void Unlock(  
-   _In_ Type cs  
-);  
+```cpp
+inline static void Unlock(
+   _In_ Type cs
+);
 ```
 
 ### Parameters

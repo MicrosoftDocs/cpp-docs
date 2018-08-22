@@ -18,10 +18,10 @@ Executes the specified custom registration script.
 
 ## Syntax
 
-```cpp  
-[ registration_script(   
-   script   
-) ]  
+```cpp
+[ registration_script(
+   script
+) ]
 ```
 
 ### Parameters
@@ -39,23 +39,23 @@ This attribute requires that the [coclass](../windows/coclass.md), [progid](../w
 
 The following code specifies that the component has a registry script called cpp_attr_ref_registration_script.rgs.
 
-```cpp  
-// cpp_attr_ref_registration_script.cpp  
-// compile with: /LD  
-#define _ATL_ATTRIBUTES  
-#include "atlbase.h"  
+```cpp
+// cpp_attr_ref_registration_script.cpp
+// compile with: /LD
+#define _ATL_ATTRIBUTES
+#include "atlbase.h"
 #include "atlcom.h"
 
 [module (name="REG")];
 
-[object, uuid("d9cd196b-6836-470b-9b9b-5b04b828e5b0")]  
+[object, uuid("d9cd196b-6836-470b-9b9b-5b04b828e5b0")]
 __interface IFace {};
 
-// requires "cpp_attr_ref_registration_script.rgs"  
-// create sample .RGS file "cpp_attr_ref_registration_script.rgs" if it does not exist  
-[ coclass, registration_script(script="cpp_attr_ref_registration_script.rgs"),  
-  uuid("50d3ad42-3601-4f26-8cfe-0f1f26f98f67")]  
-class CMyClass:public IFace {};  
+// requires "cpp_attr_ref_registration_script.rgs"
+// create sample .RGS file "cpp_attr_ref_registration_script.rgs" if it does not exist
+[ coclass, registration_script(script="cpp_attr_ref_registration_script.rgs"),
+  uuid("50d3ad42-3601-4f26-8cfe-0f1f26f98f67")]
+class CMyClass:public IFace {};
 ```
 
 ## Requirements
@@ -69,10 +69,10 @@ class CMyClass:public IFace {};
 |**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [COM Attributes](../windows/com-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
-[rdx](../windows/rdx.md)   
+[rdx](../windows/rdx.md)  

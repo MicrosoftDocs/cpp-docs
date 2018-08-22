@@ -18,12 +18,12 @@ Retrieves a weak reference to a specified instance.
 
 ## Syntax
 
-```cpp  
-template<typename T>  
-HRESULT AsWeak(  
-   _In_ T* p,  
-   _Out_ WeakRef* pWeak  
-);  
+```cpp
+template<typename T>
+HRESULT AsWeak(
+   _In_ T* p,
+   _Out_ WeakRef* pWeak
+);
 ```
 
 ### Parameters

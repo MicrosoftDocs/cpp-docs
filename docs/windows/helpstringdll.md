@@ -18,10 +18,10 @@ Specifies the name of the DLL to use to perform document string lookup (localiza
 
 ## Syntax
 
-```cpp  
-[ helpstringdll(  
-   "string"  
-) ]  
+```cpp
+[ helpstringdll(
+   "string"
+) ]
 ```
 
 ### Parameters
@@ -35,17 +35,17 @@ The **helpstringdll** C++ attribute has the same functionality as the [helpstrin
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_helpstringdll.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
+```cpp
+// cpp_attr_ref_helpstringdll.cpp
+// compile with: /LD
+#include <unknwn.h>
 [module(name="MyLib", helpstringdll="xx.dll")];
 
-[object, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IMyI   
-{  
-   HRESULT xxx();  
-};  
+[object, uuid("00000000-0000-0000-0000-000000000001")]
+__interface IMyI
+{
+   HRESULT xxx();
+};
 ```
 
 ## Requirements
@@ -59,11 +59,11 @@ __interface IMyI
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Interface Attributes](../windows/interface-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
-[Method Attributes](../windows/method-attributes.md)   
+[Method Attributes](../windows/method-attributes.md)  

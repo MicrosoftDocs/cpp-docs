@@ -18,8 +18,8 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-static const int args = -1; ;  
+```cpp
+static const int args = -1; ;
 ```
 
 ## Remarks

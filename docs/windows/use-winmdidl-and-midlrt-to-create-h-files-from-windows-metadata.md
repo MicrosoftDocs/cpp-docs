@@ -28,8 +28,8 @@ By default in [Windows 8.1, winmdidl.exe and midlrt.exe are located in  C:\Progr
 
 ## Winmdidl command-line arguments
 
-```  
-Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile  
+```
+Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
 ```
 
 `/nologo`  
@@ -41,7 +41,7 @@ Not used.
 `/time`  
 Displays the total execution time in the console output.
 
- /outdir:\<dir>  
+/outdir:\<dir>
  Specifies an output directory. If the path contains spaces, use quotation marks. The default output directory is *\<drive>*:\Users\\*\<username>*\AppData\Local\VirtualStore\Program Files (x86)\Microsoft Visual Studio 12.0\\.
 
 `/banner:<file>`  

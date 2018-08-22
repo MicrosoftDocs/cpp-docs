@@ -24,7 +24,7 @@ When you are browsing symbols in the [Resource Symbols dialog box](../windows/re
 
 3. Click the **View Use** button.
 
-     The resource appears in the appropriate editor window.
+   The resource appears in the appropriate editor window.
 
 For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
 

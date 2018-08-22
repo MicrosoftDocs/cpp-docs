@@ -25,8 +25,8 @@ For symbols associated with a single resource, you can use the [Properties Windo
 
 2. In the **Properties** window, type the symbol name followed by an equal sign and an integer in the **ID** box, for example:
 
-    ```  
-    IDC_EDITNAME=5100  
+    ```
+    IDC_EDITNAME=5100
     ```
 
 The new value is stored in the symbol header file the next time you save the project. Only the symbol name remains visible in the ID box; the equal sign and value are not displayed after they are validated.

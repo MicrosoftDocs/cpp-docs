@@ -17,8 +17,8 @@ Represents an event.
 
 ## Syntax
 
-```cpp  
-class Event : public HandleT<HandleTraits::EventTraits>;  
+```cpp
+class Event : public HandleT<HandleTraits::EventTraits>;
 ```
 
 ## Members

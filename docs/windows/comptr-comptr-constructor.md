@@ -18,33 +18,33 @@ Intializes a new instance of the **ComPtr** class. Overloads provide default, co
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW ComPtr();  
-WRL_NOTHROW ComPtr(  
+```cpp
+WRL_NOTHROW ComPtr();
+WRL_NOTHROW ComPtr(
    decltype(__nullptr)  
-);  
-template<class U>  
-WRL_NOTHROW ComPtr(  
-   _In_opt_ U *other  
-);  
-WRL_NOTHROW ComPtr(  
-   const ComPtr& other  
-);  
-template<class U>  
-WRL_NOTHROW ComPtr(  
-   const ComPtr<U> &other,  
-   typename ENABLE_IF<__is_convertible_to(U*,  
-   T*),  
-   void *>;  
-WRL_NOTHROW ComPtr(  
-   _Inout_ ComPtr &&other  
-);  
-template<class U>  
-WRL_NOTHROW ComPtr(  
-   _Inout_ ComPtr<U>&& other,  
-   typename ENABLE_IF<__is_convertible_to(U*,  
-   T*),  
-   void *>;  
+);
+template<class U>
+WRL_NOTHROW ComPtr(
+   _In_opt_ U *other
+);
+WRL_NOTHROW ComPtr(
+   const ComPtr& other
+);
+template<class U>
+WRL_NOTHROW ComPtr(
+   const ComPtr<U> &other,
+   typename ENABLE_IF<__is_convertible_to(U*,
+   T*),
+   void *>;
+WRL_NOTHROW ComPtr(
+   _Inout_ ComPtr &&other
+);
+template<class U>
+WRL_NOTHROW ComPtr(
+   _Inout_ ComPtr<U>&& other,
+   typename ENABLE_IF<__is_convertible_to(U*,
+   T*),
+   void *>;
 ```
 
 ### Parameters

@@ -25,13 +25,13 @@ There are often times you want a menu command and a keyboard combination to issu
 
    - Type the name of the modifier key (**Ctrl**, **Alt**, or **Shift**) followed by a plus sign (**+**) and the name, letter, or symbol of the additional key.
 
-         For example, to assign **Ctrl**+**O** to the **Open** command on the **File** menu, you modify the menu command's **Caption** so that it looks like this:
+       For example, to assign **Ctrl**+**O** to the **Open** command on the **File** menu, you modify the menu command's **Caption** so that it looks like this:
 
-        ```  
-        &Open...\tCtrl+O   
+        ```
+        &Open...\tCtrl+O
         ```
 
-         The menu command in the **Menu** editor is updated to reflect the new caption as you type it.
+       The menu command in the **Menu** editor is updated to reflect the new caption as you type it.
 
 3. [Create the accelerator-table entry](../windows/adding-an-entry-to-an-accelerator-table.md) in the **Accelerator** editor and assign it the same identifier as the menu command. Use a key combination that you think will be easy to remember.
 

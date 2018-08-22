@@ -17,8 +17,8 @@ Decrements the reference count for the current **RuntimeClass** object.
 
 ## Syntax
 
-```cpp  
-ULONG DecrementReference();  
+```cpp
+ULONG DecrementReference();
 ```
 
 ## Return Value

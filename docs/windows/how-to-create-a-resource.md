@@ -20,8 +20,8 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. With focus on your .rc file in [Resource View](../windows/resource-view-window.md), click the **Edit** menu and choose **Add Resource** (or right-click the .rc file in **Resource View** and choose **Add Resource** from the shortcut menu).
 
-     > [!NOTE] 
-     > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+   > [!NOTE] 
+   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 2. In the [Add Resource dialog box](../windows/add-resource-dialog-box.md), choose the type of resource you'd like to add to your project.
 
@@ -29,7 +29,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. In **Solution Explorer**, right-click the project folder and choose **Add**, then click **Add Resource** on the shortcut menu.
 
-     If you do not already have an .rc file in your project, this step will create one. You can then repeat this step to add specific resource types to the new .rc file.
+   If you do not already have an .rc file in your project, this step will create one. You can then repeat this step to add specific resource types to the new .rc file.
 
 2. In the [Add Resource dialog box](../windows/add-resource-dialog-box.md), choose the type of resource you'd like to add to your project.
 

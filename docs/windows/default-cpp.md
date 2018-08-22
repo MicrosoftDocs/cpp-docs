@@ -18,11 +18,11 @@ Indicates that the custom or dispinterface defined within a coclass represents t
 
 ## Syntax
 
-```cpp  
-[ default(  
-   interface1,  
-   interface2  
-) ]  
+```cpp
+[ default(
+   interface1,
+   interface2
+) ]
 ```
 
 ### Parameters
@@ -45,53 +45,53 @@ The **default** C++ attribute has the same functionality as the [default](http:/
 
 The following code shows how **default** is used on the definition of a coclass to specify `ICustomDispatch` as the default programmability interface:
 
-```cpp  
-// cpp_attr_ref_default.cpp  
-// compile with: /LD  
-#include "windows.h"  
+```cpp
+// cpp_attr_ref_default.cpp
+// compile with: /LD
+#include "windows.h"
 [module(name="MyLibrary")];
 
-[object, uuid("9E66A290-4365-11D2-A997-00C04FA37DDB")]  
-__interface ICustom {  
-   HRESULT Custom([in] long l, [out, retval] long *pLong);  
+[object, uuid("9E66A290-4365-11D2-A997-00C04FA37DDB")]
+__interface ICustom {
+   HRESULT Custom([in] long l, [out, retval] long *pLong);
 };
 
-[dual, uuid("9E66A291-4365-11D2-A997-00C04FA37DDB")]   
-__interface IDual {  
-   HRESULT Dual([in] long l, [out, retval] long *pLong);  
+[dual, uuid("9E66A291-4365-11D2-A997-00C04FA37DDB")]
+__interface IDual {
+   HRESULT Dual([in] long l, [out, retval] long *pLong);
 };
 
-[object, uuid("9E66A293-4365-11D2-A997-00C04FA37DDB")]  
-__interface ICustomDispatch : public IDispatch {  
-   HRESULT Dispatch([in] long l, [out, retval] long *pLong);  
+[object, uuid("9E66A293-4365-11D2-A997-00C04FA37DDB")]
+__interface ICustomDispatch : public IDispatch {
+   HRESULT Dispatch([in] long l, [out, retval] long *pLong);
 };
 
-[   coclass,  
-   default(ICustomDispatch),   
-   source(IDual),  
+[   coclass,
+   default(ICustomDispatch),
+   source(IDual),
    uuid("9E66A294-4365-11D2-A997-00C04FA37DDB")  
-]  
-class CClass : public ICustom, public IDual, public ICustomDispatch {  
-   HRESULT Custom(long l, long *pLong) { return(S_OK); }  
-   HRESULT Dual(long l, long *pLong) { return(S_OK); }  
-   HRESULT Dispatch(long l, long *pLong) { return(S_OK); }  
+]
+class CClass : public ICustom, public IDual, public ICustomDispatch {
+   HRESULT Custom(long l, long *pLong) { return(S_OK); }
+   HRESULT Dual(long l, long *pLong) { return(S_OK); }
+   HRESULT Dispatch(long l, long *pLong) { return(S_OK); }
 };
 
-int main() {  
-#if 0 // Can't instantiate without implementations of IUnknown/IDispatch  
+int main() {
+#if 0 // Can't instantiate without implementations of IUnknown/IDispatch
    CClass *pClass = new CClass;
 
    long llong;
 
-   pClass->custom(1, &llong);  
-   pClass->dual(1, &llong);  
-   pClass->dispinterface(1, &llong);  
+   pClass->custom(1, &llong);
+   pClass->dual(1, &llong);
+   pClass->dispinterface(1, &llong);
    pClass->dispatch(1, &llong);
 
-   delete pClass;  
-#endif  
-   return(0);  
-}  
+   delete pClass;
+#endif
+   return(0);
+}
 ```
 
 The [source](../windows/source-cpp.md) attribute also has an example of how to use **default**.
@@ -107,10 +107,10 @@ The [source](../windows/source-cpp.md) attribute also has an example of how to u
 |**Required attributes**|**coclass** (when applied to **class** or **struct**)|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
-[coclass](../windows/coclass.md)   
+[coclass](../windows/coclass.md)  

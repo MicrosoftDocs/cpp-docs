@@ -17,8 +17,8 @@ Keeps track of how many classes have been created with the [Make](../windows/mak
 
 ## Syntax
 
-```cpp  
-volatile long objectCount_;  
+```cpp
+volatile long objectCount_;
 ```
 
 ## Requirements
@@ -27,5 +27,5 @@ volatile long objectCount_;
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

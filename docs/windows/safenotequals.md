@@ -18,12 +18,12 @@ Determines if two numbers are not equal.
 
 ## Syntax
 
-```cpp  
-template<typename T, typename U>  
-inline bool SafeNotEquals (  
-   const T t,  
-   const U u  
-) throw ();  
+```cpp
+template<typename T, typename U>
+inline bool SafeNotEquals (
+   const T t,
+   const U u
+) throw ();
 ```
 
 ### Parameters

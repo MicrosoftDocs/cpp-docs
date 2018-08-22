@@ -16,7 +16,7 @@ Gets a reference to the [Deferral](http://go.microsoft.com/fwlink/p/?linkid=5265
 
 ## Syntax
 
-```cpp  
+```cpp
 HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)  
 ```
 

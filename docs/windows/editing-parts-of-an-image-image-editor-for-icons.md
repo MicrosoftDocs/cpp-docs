@@ -33,7 +33,7 @@ In addition, you can resize the selection, whether it includes the entire image 
 
 1. From the **Edit** menu, choose **Paste**.
 
-     The Clipboard contents, surrounded by the selection border, appear in the upper-left corner of the pane.
+   The Clipboard contents, surrounded by the selection border, appear in the upper-left corner of the pane.
 
 2. Position the pointer within the selection border and drag the image to the desired location on the image.
 
@@ -43,7 +43,7 @@ In addition, you can resize the selection, whether it includes the entire image 
 
 1. From the **Edit** menu, choose **Delete**.
 
-     The original area of the selection is filled with the current background color.
+   The original area of the selection is filled with the current background color.
 
    > [!NOTE]
    > You can access the **Cut**, **Copy**, **Paste**, and **Delete** commands by right clicking in the **Resource View** window.

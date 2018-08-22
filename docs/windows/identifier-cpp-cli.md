@@ -20,9 +20,9 @@ Enables the use of Visual C++ keywords as identifiers.
 
 ### Syntax
 
-```cpp  
-__identifier(  
-Visual_C++_keyword  
+```cpp
+__identifier(
+Visual_C++_keyword
 )  
 ```
 
@@ -42,22 +42,22 @@ Compiler option: `/ZW`
 
 In the following example, a class named **template** is created in C# and distributed as a DLL. In the Visual C++ program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.
 
-```cs  
-// identifier_template.cs  
-// compile with: /target:library  
-public class template {  
-   public void Run() { }  
-}  
+```cs
+// identifier_template.cs
+// compile with: /target:library
+public class template {
+   public void Run() { }
+}
 ```
 
-```cpp  
-// keyword__identifier.cpp  
-// compile with: /ZW  
-#using <identifier_template.dll>  
-int main() {  
-   __identifier(template)^ pTemplate = ref new __identifier(template)();  
-   pTemplate->Run();  
-}  
+```cpp
+// keyword__identifier.cpp
+// compile with: /ZW
+#using <identifier_template.dll>
+int main() {
+   __identifier(template)^ pTemplate = ref new __identifier(template)();
+   pTemplate->Run();
+}
 ```
 
 ## Common Language Runtime
@@ -74,23 +74,23 @@ Compiler option: `/clr`
 
 In the following example, a class named **template** is created in C# and distributed as a DLL. In the Visual C++ program that uses the **template** class, the **__identifier** keyword conceals the fact that **template** is a standard C++ keyword.
 
-```cs  
-// identifier_template.cs  
-// compile with: /target:library  
-public class template {  
-   public void Run() { }  
-}  
+```cs
+// identifier_template.cs
+// compile with: /target:library
+public class template {
+   public void Run() { }
+}
 ```
 
-```cpp  
-// keyword__identifier.cpp  
-// compile with: /clr  
+```cpp
+// keyword__identifier.cpp
+// compile with: /clr
 #using <identifier_template.dll>
 
-int main() {  
-   __identifier(template) ^pTemplate = gcnew __identifier(template)();  
-   pTemplate->Run();  
-}  
+int main() {
+   __identifier(template) ^pTemplate = gcnew __identifier(template)();
+   pTemplate->Run();
+}
 ```
 
 ## See Also

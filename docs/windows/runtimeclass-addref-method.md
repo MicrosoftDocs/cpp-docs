@@ -18,11 +18,11 @@ Increments the reference count for the current **RuntimeClass** object.
 
 ## Syntax
 
-```cpp  
-STDMETHOD_(  
-   ULONG,  
-   AddRef  
-)();  
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
 ```
 
 ## Return Value

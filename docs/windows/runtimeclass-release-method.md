@@ -18,11 +18,11 @@ Performs a COM Release operation on the current **RuntimeClass** object.
 
 ## Syntax
 
-```cpp  
-STDMETHOD_(  
-   ULONG,  
-   Release  
-)();  
+```cpp
+STDMETHOD_(
+   ULONG,
+   Release
+)();
 ```
 
 ## Return Value

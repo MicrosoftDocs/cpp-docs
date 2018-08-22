@@ -72,29 +72,29 @@ Compiler option: `/clr`
 
 The following code example shows that in the appropriate context, the **property** context-sensitive keyword can be used to define a property and a variable.
 
-```cpp  
-// context_sensitive_keywords.cpp  
-// compile with: /clr  
-public ref class C {  
-   int MyInt;  
-public:  
+```cpp
+// context_sensitive_keywords.cpp
+// compile with: /clr
+public ref class C {
+   int MyInt;
+public:
    C() : MyInt(99) {}
 
-   property int Property_Block {   // context-sensitive keyword  
-      int get() { return MyInt; }  
-   }  
+   property int Property_Block {   // context-sensitive keyword
+      int get() { return MyInt; }
+   }
 };
 
-int main() {  
-   int property = 0;               // variable name  
-   C ^ MyC = gcnew C();  
-   property = MyC->Property_Block;  
-   System::Console::WriteLine(++property);  
-}  
+int main() {
+   int property = 0;               // variable name
+   C ^ MyC = gcnew C();
+   property = MyC->Property_Block;
+   System::Console::WriteLine(++property);
+}
 ```
 
-```Output  
-100  
+```Output
+100
 ```
 
 ## See Also

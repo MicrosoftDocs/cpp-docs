@@ -19,12 +19,12 @@ ms.workload: ["cplusplus", "uwp"]
 
 2. Add the following code to the message handler:
 
-    ```cpp  
-    CMenu menu;  
-    VERIFY(menu.LoadMenu(IDR_MENU1));  
-    CMenu* pPopup = menu.GetSubMenu(0);  
-    ASSERT(pPopup != NULL);  
-    pPopup->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON, point.x, point.y, AfxGetMainWnd());  
+    ```cpp
+    CMenu menu;
+    VERIFY(menu.LoadMenu(IDR_MENU1));
+    CMenu* pPopup = menu.GetSubMenu(0);
+    ASSERT(pPopup != NULL);
+    pPopup->TrackPopupMenu(TPM_LEFTALIGN | TPM_RIGHTBUTTON, point.x, point.y, AfxGetMainWnd());
     ```
 
    > [!NOTE]
@@ -37,4 +37,4 @@ MFC
 ## See Also
 
 [Creating Pop-up Menus](../windows/creating-pop-up-menus.md)  
-[Menu Editor](../windows/menu-editor.md)   
+[Menu Editor](../windows/menu-editor.md)  

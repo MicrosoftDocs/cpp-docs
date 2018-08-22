@@ -17,7 +17,7 @@ Retrieves a pointer to the underlying HSTRING handle.
 
 ## Syntax
 
-```cpp  
+```cpp
 HSTRING* GetAddressOf() throw()  
 ```
 

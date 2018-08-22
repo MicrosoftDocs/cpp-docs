@@ -18,8 +18,8 @@ The `SafeInt` class uses **SafeIntException** to identify why a mathematical ope
 
 ## Syntax
 
-```cpp  
-class SafeIntException;  
+```cpp
+class SafeIntException;
 ```
 
 ## Members

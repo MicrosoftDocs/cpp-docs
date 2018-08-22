@@ -17,16 +17,16 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template <  
-   typename T  
->  
+```cpp
+template <
+   typename T
+>
 struct RemoveIUnknown;
 
-template <  
-   typename T  
->  
-class RemoveIUnknown : public T;  
+template <
+   typename T
+>
+class RemoveIUnknown : public T;
 ```
 
 ### Parameters

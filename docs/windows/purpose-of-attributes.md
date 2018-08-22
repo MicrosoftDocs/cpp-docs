@@ -25,13 +25,13 @@ Attributes extend C++ in directions not currently possible without breaking the 
 
 For example, to implement a simple event sink for a generic ATL class, you could apply the [event_receiver](../windows/event-receiver.md) attribute to a specific class such as `CMyReceiver`. The `event_receiver` attribute is then compiled by the Visual C++ compiler, which inserts the proper code into the object file.
 
-```cpp  
-[event_receiver(com)]  
-class CMyReceiver   
-{  
-   void handler1(int i) { ... }  
-   void handler2(int i, float j) { ... }  
-}  
+```cpp
+[event_receiver(com)]
+class CMyReceiver
+{
+   void handler1(int i) { ... }
+   void handler2(int i, float j) { ... }
+}
 ```
 
 You can then set up the `CMyReceiver` methods `handler1` and `handler2` to handle events (using the intrinsic function [__hook](../cpp/hook.md)) from an event source, which you can create using [event_source](../windows/event-source.md).

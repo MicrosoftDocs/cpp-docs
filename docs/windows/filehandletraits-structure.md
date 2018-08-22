@@ -18,8 +18,8 @@ Defines characteristics of a file handle.
 
 ## Syntax
 
-```cpp  
-struct FileHandleTraits : HANDLETraits;  
+```cpp
+struct FileHandleTraits : HANDLETraits;
 ```
 
 ## Members

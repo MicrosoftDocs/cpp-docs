@@ -24,31 +24,31 @@ Starting with Visual Studio 2015 and the Windows 10 SDK, the CRT library was sep
 
 2. Open the shortcut menu for the project node, and choose **Retarget SDK Version**.
 
-     ![Retarget SDK Version](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")
+   ![Retarget SDK Version](../windows/media/retargetingwindowssdk1.PNG "RetargetingWindowsSDK1")
 
-     The **Review Solution Actions** dialog appears.
+   The **Review Solution Actions** dialog appears.
 
-     ![Review Solution Actions](../windows/media/retargetingwindowssdk2.PNG "RetargetingWindowsSDK2")
+   ![Review Solution Actions](../windows/media/retargetingwindowssdk2.PNG "RetargetingWindowsSDK2")
 
 3. In the **Target Platform Version** dropdown list, choose the version of the Windows 10 SDK you want to target. Choose the OK button to apply the change.
 
-     Note that 8.1 in this context refers to the Windows SDK version, which is also backwardly compatible with Windows 8, Windows Server 2012, Windows 7, Windows Server 2008, and Windows Vista.
+   Note that 8.1 in this context refers to the Windows SDK version, which is also backwardly compatible with Windows 8, Windows Server 2012, Windows 7, Windows Server 2008, and Windows Vista.
 
-     If this step is successful, the following text appears in the Output window:
+   If this step is successful, the following text appears in the Output window:
 
-     `Retargeting End: 1 completed, 0 failed, 0 skipped`
+   `Retargeting End: 1 completed, 0 failed, 0 skipped`
 
 4. Open the project properties, and in the **Configuration Properties, General** section, notice the values of **Windows Target Platform Version**. Changing the value here has the same effect as following this procedure. See [General Property Page (Project)](../ide/general-property-page-project.md).
 
-     ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
+   ![Target Platform Version](../windows/media/retargetingwindowssdk3.PNG "RetargetingWindowsSDK3")
 
-     This action changes the values of project macros that include paths to header files and library files. To see what changed, in the **Visual C++ Directories** section of the **Project Properties** dialog, choose one of the properties such as the **Include Directories**, choose to open the dropdown list, and choose \<Edit>. The **Include Directories** dialog appears.
+   This action changes the values of project macros that include paths to header files and library files. To see what changed, in the **Visual C++ Directories** section of the **Project Properties** dialog, choose one of the properties such as the **Include Directories**, choose to open the dropdown list, and choose \<Edit>. The **Include Directories** dialog appears.
 
-     ![Include Directories dialog box](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")
+   ![Include Directories dialog box](../windows/media/retargetingwindowssdk4.PNG "RetargetingWindowsSDK4")
 
-     Choose the **Macros >>** button, and scroll down the list of macros to the Windows SDK macros to see all the new values.
+   Choose the **Macros >>** button, and scroll down the list of macros to the Windows SDK macros to see all the new values.
 
-     ![Windows SDK Macros](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
+   ![Windows SDK Macros](../windows/media/retargetingwindowssdk5.PNG "RetargetingWindowsSDK5")
 
 5. Repeat for other projects, as needed, and rebuild the solution.
 

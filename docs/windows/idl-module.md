@@ -18,18 +18,18 @@ Specifies an entry point in a .dll file.
 
 ## Syntax
 
-```cpp  
-[ idl_module (   
-   name=module_name,   
-   dllname=dll,   
-   uuid="uuid",   
-   helpstring="help text",   
-   helpstringcontext=helpcontextID,   
-   helpcontext=helpcontext,   
-   hidden,   
-   restricted  
-) ]  
-function declaration  
+```cpp
+[ idl_module (
+   name=module_name,
+   dllname=dll,
+   uuid="uuid",
+   helpstring="help text",
+   helpstringcontext=helpcontextID,
+   helpcontext=helpcontext,
+   hidden,
+   restricted
+) ]
+function declaration
 ```
 
 ### Parameters
@@ -75,13 +75,13 @@ Your must use **idl_module** in two steps. First, you must define a name/DLL pai
 
 The following code shows how to use the **idl_module** attribute:
 
-```cpp  
-// cpp_attr_ref_idl_module.cpp  
-// compile with: /LD  
-[idl_quote("midl_pragma warning(disable:2461)")];  
-[module(name="MyLibrary"), idl_module(name="MyLib", dllname="xxx.dll")];  
-[idl_module(name="MyLib"), entry(4), usesgetlasterror]  
-void FuncName(int i);  
+```cpp
+// cpp_attr_ref_idl_module.cpp
+// compile with: /LD
+[idl_quote("midl_pragma warning(disable:2461)")];
+[module(name="MyLibrary"), idl_module(name="MyLib", dllname="xxx.dll")];
+[idl_module(name="MyLib"), entry(4), usesgetlasterror]
+void FuncName(int i);
 ```
 
 ## Requirements
@@ -95,10 +95,10 @@ void FuncName(int i);
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
-[entry](../windows/entry.md)   
+[entry](../windows/entry.md)  

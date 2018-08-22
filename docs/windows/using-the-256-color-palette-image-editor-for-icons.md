@@ -21,7 +21,7 @@ To draw with a selection from the 256-color palette, you need to select the colo
 
 2. Choose a color from the 256 colors displayed in the **Colors** palette in the **Colors** window.
 
-     The color selected will become the current color in the **Colors** palette in the **Colors** window.
+   The color selected will become the current color in the **Colors** palette in the **Colors** window.
 
    > [!NOTE]
    > The initial palette used for 256-color images matches the palette returned by the `CreateHalftonePalette` Windows API. All icons intended for the Windows shell should use this palette to prevent flicker during palette realization.

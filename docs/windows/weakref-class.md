@@ -18,8 +18,8 @@ Represents a *weak reference* that can be used by only the Windows Runtime, not 
 
 ## Syntax
 
-```cpp  
-class WeakRef : public ComPtr<IWeakReference>  
+```cpp
+class WeakRef : public ComPtr<IWeakReference>
 ```
 
 ## Remarks
@@ -30,30 +30,30 @@ A **WeakRef** object is typically used to represent an object whose existence is
 
 Note that there is a behavior change in the [As](../windows/weakref-as-method.md), [AsIID](../windows/weakref-asiid-method.md) and [CopyTo](../windows/weakref-copyto-method.md) methods in the Windows 10 SDK. Previously, after calling any of these methods, you could check the WeakRef for **nullptr** to determine if a strong reference was successfully obtained, as in the following code:
 
-```cpp  
-WeakRef wr;  
+```cpp
+WeakRef wr;
 strongComptrRef.AsWeak(&wr);
 
-// Now suppose that the object strongComPtrRef points to no longer exists  
-// and the following code tries to get a strong ref from the weak ref:  
-ComPtr<ISomeInterface> strongRef;  
+// Now suppose that the object strongComPtrRef points to no longer exists
+// and the following code tries to get a strong ref from the weak ref:
+ComPtr<ISomeInterface> strongRef;
 HRESULT hr = wr.As(&strongRef);
 
-// This check won't work with the Windows 10 SDK version of the library.  
-// Check the input pointer instead.  
+// This check won't work with the Windows 10 SDK version of the library.
+// Check the input pointer instead.
 if(wr == nullptr)  
-{  
-    wprintf(L"Couldn’t get strong ref!");  
-}  
+{
+    wprintf(L"Couldn’t get strong ref!");
+}
 ```
 
 The above code does not work when using the Windows 10 SDK (or later). Instead, check the pointer that was passed in for **nullptr**.
 
-```cpp  
+```cpp
 if (strongRef == nullptr)  
-{  
-    wprintf(L"Couldn't get strong ref!");  
-}  
+{
+    wprintf(L"Couldn't get strong ref!");
+}
 ```
 
 ## Members

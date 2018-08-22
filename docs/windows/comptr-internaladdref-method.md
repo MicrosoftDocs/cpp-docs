@@ -18,8 +18,8 @@ Increments the reference count of the interface associated with this **ComPtr**.
 
 ## Syntax
 
-```cpp  
-void InternalAddRef() const;  
+```cpp
+void InternalAddRef() const;
 ```
 
 ## Remarks

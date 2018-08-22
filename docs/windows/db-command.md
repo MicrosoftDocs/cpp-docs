@@ -19,14 +19,14 @@ Creates an OLE DB command.
 ## Syntax
 
 ```cpp
-[ db_command(   
-   command,   
-   name,   
-   source_name,   
-   hresult,   
-   bindings,   
+[ db_command(
+   command,
+   name,
+   source_name,
+   hresult,
+   bindings,
    bulk_fetch)  
-]  
+]
 ```
 
 ### Parameters
@@ -35,16 +35,16 @@ Creates an OLE DB command.
 A command string containing the text of an OLE DB command. A simple example is:
 
 ```cpp
-[ db_command ( command = "Select * from Products" ) ]  
+[ db_command ( command = "Select * from Products" ) ]
 ```
 
 The *command* syntax is as follows:
 
-> binding parameter block 1  
-> &nbsp;&nbsp;OLE DB command  
-> binding parameter block 2  
-> &nbsp;&nbsp;continuation of OLE DB command  
-> binding parameter block 3  
+> binding parameter block 1
+> &nbsp;&nbsp;OLE DB command
+> binding parameter block 2
+> &nbsp;&nbsp;continuation of OLE DB command
+> binding parameter block 3
 > ...
 
 A *binding parameter block* is defined as follows:
@@ -80,14 +80,14 @@ If the command string contains one or more parameters such as \[db_column] or \[
 
 Here are some examples of binding parameter blocks. The following example binds the `m_au_fname` and `m_au_lname` data members to the `au_fname` and `au_lname` columns, respectively, of the authors table in the pubs database:
 
-```cpp  
-TCHAR m_au_fname[21];  
-TCHAR m_au_lname[41];  
+```cpp
+TCHAR m_au_fname[21];
+TCHAR m_au_lname[41];
 TCHAR m_state[3] = 'CA';
 
-[db_command (  
-   command = "SELECT au_fname([bindto]m_au_fname), au_lname([bindto]m_au_lname) " \  
-   "FROM dbo.authors " \  
+[db_command (
+   command = "SELECT au_fname([bindto]m_au_fname), au_lname([bindto]m_au_lname) " \
+   "FROM dbo.authors " \
    "WHERE state = ?([in]m_state)")  
 ]
 ```
@@ -135,113 +135,113 @@ This sample defines a command that selects the first and last names from a table
 
 Note that this code requires you to provide your own connection string that connects to the pubs database. For information on how to do this in the development environment, see [How to: Connect to a Database and Browse Existing Objects](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) and [Add new connections](/visualstudio/data-tools/add-new-connections).
 
-```cpp  
-// db_command.h  
-#include <atlbase.h>  
-#include <atlplus.h>  
+```cpp
+// db_command.h
+#include <atlbase.h>
+#include <atlplus.h>
 #include <atldbcli.h>
 
 #pragma once
 
-[  db_source(L"your connection string"),  
-   db_command(L" \  
-      SELECT au_lname, au_fname \  
-      FROM dbo.authors \  
+[  db_source(L"your connection string"),
+   db_command(L" \
+      SELECT au_lname, au_fname \
+      FROM dbo.authors \
       WHERE state = 'CA'")  ]
 
-struct CAuthors {  
-   // In order to fix several issues with some providers, the code below may bind  
+struct CAuthors {
+   // In order to fix several issues with some providers, the code below may bind
    // columns in a different order than reported by the provider
 
-   DBSTATUS m_dwau_lnameStatus;  
-   DBSTATUS m_dwau_fnameStatus;  
-   DBLENGTH m_dwau_lnameLength;  
+   DBSTATUS m_dwau_lnameStatus;
+   DBSTATUS m_dwau_fnameStatus;
+   DBLENGTH m_dwau_lnameLength;
    DBLENGTH m_dwau_fnameLength;
 
-   [ db_column("au_lname", status="m_dwau_lnameStatus", length="m_dwau_lnameLength") ] TCHAR m_au_lname[41];  
+   [ db_column("au_lname", status="m_dwau_lnameStatus", length="m_dwau_lnameLength") ] TCHAR m_au_lname[41];
    [ db_column("au_fname", status="m_dwau_fnameStatus", length="m_dwau_fnameLength") ] TCHAR m_au_fname[21];
 
    [ db_param("7", paramtype="DBPARAMIO_INPUT") ] TCHAR m_state[3];
 
-   void GetRowsetProperties(CDBPropSet* pPropSet) {  
-      pPropSet->AddProperty(DBPROP_CANFETCHBACKWARDS, true, DBPROPOPTIONS_OPTIONAL);  
-      pPropSet->AddProperty(DBPROP_CANSCROLLBACKWARDS, true, DBPROPOPTIONS_OPTIONAL);  
-   }  
-};  
+   void GetRowsetProperties(CDBPropSet* pPropSet) {
+      pPropSet->AddProperty(DBPROP_CANFETCHBACKWARDS, true, DBPROPOPTIONS_OPTIONAL);
+      pPropSet->AddProperty(DBPROP_CANSCROLLBACKWARDS, true, DBPROPOPTIONS_OPTIONAL);
+   }
+};
 ```
 
 ## Example
 
-```cpp  
-// db_command.cpp  
-// compile with: /c  
+```cpp
+// db_command.cpp
+// compile with: /c
 #include "db_command.h"
 
-int main(int argc, _TCHAR* argv[]) {  
+int main(int argc, _TCHAR* argv[]) {
    HRESULT hr = CoInitialize(NULL);
 
-   // Instantiate rowset  
+   // Instantiate rowset
    CAuthors rs;
 
-   // Open rowset and move to first row  
-   strcpy_s(rs.m_state, sizeof(rs.m_state), _T("CA"));  
-   hr = rs.OpenAll();  
+   // Open rowset and move to first row
+   strcpy_s(rs.m_state, sizeof(rs.m_state), _T("CA"));
+   hr = rs.OpenAll();
    hr = rs.MoveFirst();
 
-   // Iterate through the rowset  
-   while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET ) {  
-      // Print out the column information for each row  
-      printf("First Name: %s, Last Name: %s\n", rs.m_au_fname, rs.m_au_lname);  
-      hr = rs.MoveNext();  
+   // Iterate through the rowset
+   while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET ) {
+      // Print out the column information for each row
+      printf("First Name: %s, Last Name: %s\n", rs.m_au_fname, rs.m_au_lname);
+      hr = rs.MoveNext();
    }
 
-   rs.CloseAll();  
-   CoUninitialize();  
-}  
+   rs.CloseAll();
+   CoUninitialize();
+}
 ```
 
 ## Example
 
 This sample uses `db_source` on a data source class `CMySource`, and `db_command` on command classes `CCommand1` and `CCommand2`.
 
-```cpp  
-// db_command_2.cpp  
-// compile with: /c  
-#include <atlbase.h>  
-#include <atlplus.h>  
-#include <atldbcli.h>  
+```cpp
+// db_command_2.cpp
+// compile with: /c
+#include <atlbase.h>
+#include <atlplus.h>
+#include <atldbcli.h>
 // class usage for both db_source and db_command
 
-[  db_source(L"your connection string"),  
-   db_command(L" \  
-      SELECT au_lname, au_fname \  
-      FROM dbo.authors \  
-      WHERE state = 'CA'")  ]  
-struct CMySource {  
-   HRESULT OpenDataSource() {  
-      return S_OK;  
-   }  
+[  db_source(L"your connection string"),
+   db_command(L" \
+      SELECT au_lname, au_fname \
+      FROM dbo.authors \
+      WHERE state = 'CA'")  ]
+struct CMySource {
+   HRESULT OpenDataSource() {
+      return S_OK;
+   }
 };
 
-[db_command(command = "SELECT * FROM Products")]  
+[db_command(command = "SELECT * FROM Products")]
 class CCommand1 {};
 
-[db_command(command = "SELECT FNAME, LNAME FROM Customers")]  
+[db_command(command = "SELECT FNAME, LNAME FROM Customers")]
 class CCommand2 {};
 
-int main() {  
-   CMySource s;  
-   HRESULT hr = s.OpenDataSource();  
-   if (SUCCEEDED(hr)) {  
-      CCommand1 c1;  
+int main() {
+   CMySource s;
+   HRESULT hr = s.OpenDataSource();
+   if (SUCCEEDED(hr)) {
+      CCommand1 c1;
       hr = c1.Open(s);
 
-      CCommand2 c2;  
-      hr = c2.Open(s);  
+      CCommand2 c2;
+      hr = c2.Open(s);
    }
 
-   s.CloseDataSource();  
-}  
+   s.CloseDataSource();
+}
 ```
 
 ## Requirements
@@ -255,9 +255,9 @@ int main() {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See also
 
 [OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  

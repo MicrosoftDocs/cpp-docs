@@ -17,7 +17,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. In the dialog box, select the control and press the **Delete** key.
 
-     \- or -
+   \- or -
 
 2. On the **Edit** menu, click **Delete**.
 

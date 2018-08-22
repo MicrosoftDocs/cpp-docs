@@ -17,9 +17,9 @@ Initializes a new instance of the **HString** class.
 
 ## Syntax
 
-```cpp  
-HString(HSTRING hstr = nullptr) throw();  
-HString(HString&& other) throw();  
+```cpp
+HString(HSTRING hstr = nullptr) throw();
+HString(HString&& other) throw();
 ```
 
 #### Parameters

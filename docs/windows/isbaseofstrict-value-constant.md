@@ -18,8 +18,8 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-static const bool value = __is_base_of(Base, Derived);  
+```cpp
+static const bool value = __is_base_of(Base, Derived);
 ```
 
 ## Remarks

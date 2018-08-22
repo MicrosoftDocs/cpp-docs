@@ -18,8 +18,8 @@ Supports the Windows Runtime C++ Template Library infrastructure and is not inte
 
 ## Syntax
 
-```cpp  
-struct FactoryCache;  
+```cpp
+struct FactoryCache;
 ```
 
 ## Remarks

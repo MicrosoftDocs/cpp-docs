@@ -18,8 +18,8 @@ Tests whether delegate properties can be modified in the current asynchronous st
 
 ## Syntax
 
-```cpp  
-inline HRESULT CheckValidStateForDelegateCall();  
+```cpp
+inline HRESULT CheckValidStateForDelegateCall();
 ```
 
 ## Return Value

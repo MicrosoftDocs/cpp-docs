@@ -32,7 +32,7 @@ The screen and inverse colors you apply to icons and cursors either shape and co
 
 2. Choose a color from the **Colors** palette in the **Colors** window.
 
-     The complementary color is automatically designated for the other selector.
+   The complementary color is automatically designated for the other selector.
 
    > [!TIP]
    > If you double-click the **Screen-Color** or **Inverse-Color** selector, the [Custom Color Selector dialog box](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md) appears.

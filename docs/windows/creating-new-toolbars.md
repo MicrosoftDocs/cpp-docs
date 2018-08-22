@@ -18,14 +18,14 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. In **Resource** view, right-click your .rc file, then choose **Add Resource** from the shortcut menu. (If you have an existing toolbar in your .rc file, you can simply right-click the **Toolbar** folder and select **Insert Toolbar** from the shortcut menu.)
 
-     > [!NOTE]
-     > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+   > [!NOTE]
+   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
 
 2. In the **Add Resource** dialog box, select **Toolbar** in the **Resource Type** list, then click **New**.
 
-     If a plus sign (**+**) appears next to the **Toolbar** resource type, it means that toolbar templates are available. Click the plus sign to expand the list of templates, select a template, and click **New**.
+   If a plus sign (**+**) appears next to the **Toolbar** resource type, it means that toolbar templates are available. Click the plus sign to expand the list of templates, select a template, and click **New**.
 
-     \- or -
+   \- or -
 
 3. [Convert an existing bitmap to a toolbar](../windows/converting-bitmaps-to-toolbars.md).
 

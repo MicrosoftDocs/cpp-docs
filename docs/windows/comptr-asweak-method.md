@@ -18,10 +18,10 @@ Retrieves a weak reference to the current object.
 
 ## Syntax
 
-```cpp  
-HRESULT AsWeak(  
-   _Out_ WeakRef* pWeakRef  
-);  
+```cpp
+HRESULT AsWeak(
+   _Out_ WeakRef* pWeakRef
+);
 ```
 
 ### Parameters

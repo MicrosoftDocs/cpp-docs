@@ -17,7 +17,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. Right-click in an **Image Editor** pane and choose **Show Colors Window** from the shortcut menu.
 
-     \- or -
+   \- or -
 
 2. Click **Show Colors Window** on the [Image menu](../windows/image-menu-image-editor-for-icons.md).
 
@@ -25,7 +25,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. Unpin the window. This will allow the window to auto hide when it's not in use.
 
- \- or -
+\- or -
 
 - Click the **Close** button.
 

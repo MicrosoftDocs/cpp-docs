@@ -22,7 +22,7 @@ The hot spot of a [cursor](../windows/icons-and-cursors-image-resources-for-disp
 
 2. Click the pixel you want to designate as the cursor's hot spot.
 
-     The **Hotspot** property in the **Properties** window displays the new coordinates.
+   The **Hotspot** property in the **Properties** window displays the new coordinates.
 
    > [!TIP]
    > Tool tips appear when you hover your cursor over a toolbar button. These tips can help you identify the function of each button.

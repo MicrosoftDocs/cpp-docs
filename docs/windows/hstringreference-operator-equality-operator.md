@@ -17,17 +17,17 @@ Indicates whether the two parameters are equal.
 
 ## Syntax
 
-```cpp  
-inline bool operator==(  
-               const HStringReference& lhs,   
+```cpp
+inline bool operator==(
+               const HStringReference& lhs,
                const HStringReference& rhs) throw()
 
-inline bool operator==(  
-               const HSTRING& lhs,   
+inline bool operator==(
+               const HSTRING& lhs,
                const HStringReference& rhs) throw()
 
-inline bool operator==(  
-               const HStringReference& lhs,   
+inline bool operator==(
+               const HStringReference& lhs,
                const HSTRING& rhs) throw()  
 ```
 

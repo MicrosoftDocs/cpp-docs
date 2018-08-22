@@ -18,8 +18,8 @@ Lets you pass a locale identifier to a function.
 
 ## Syntax
 
-```cpp  
-[lcid]  
+```cpp
+[lcid]
 ```
 
 ## Remarks
@@ -28,17 +28,17 @@ The **lcid** C++ attribute implements the functionality of the [lcid](http://msd
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_lcid.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
-[module(name="MyLibrary")];  
+```cpp
+// cpp_attr_ref_lcid.cpp
+// compile with: /LD
+#include <unknwn.h>
+[module(name="MyLibrary")];
 typedef long HRESULT;
 
-[dual, uuid("2F5F63F1-16DA-11d2-9E7B-00C04FB926DA")]  
-__interface IStatic {  
-   HRESULT MyFunc([in, lcid] long LocaleID, [out, retval] BSTR * ReturnVal);  
-};  
+[dual, uuid("2F5F63F1-16DA-11d2-9E7B-00C04FB926DA")]
+__interface IStatic {
+   HRESULT MyFunc([in, lcid] long LocaleID, [out, retval] BSTR * ReturnVal);
+};
 ```
 
 ## Requirements
@@ -52,9 +52,9 @@ __interface IStatic {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Parameter Attributes](../windows/parameter-attributes.md)   
+[Parameter Attributes](../windows/parameter-attributes.md)  

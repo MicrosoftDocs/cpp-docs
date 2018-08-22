@@ -18,17 +18,17 @@ Supports the Windows Runtime C++ Template Library infrastructure and is not inte
 
 ## Syntax
 
-```cpp  
-template <  
-   bool isWinRTInterface,  
-   typename I  
->  
+```cpp
+template <
+   bool isWinRTInterface,
+   typename I
+>
 struct VerifyInterfaceHelper;
 
-template <  
-   typename I  
->  
-struct VerifyInterfaceHelper<false, I>;  
+template <
+   typename I
+>
+struct VerifyInterfaceHelper<false, I>;
 ```
 
 ### Parameters

@@ -18,10 +18,10 @@ Allows you to use IDL constructs that are not supported in the current version o
 
 ## Syntax
 
-```cpp  
-[ idl_quote(  
-   text  
-) ]  
+```cpp
+[ idl_quote(
+   text
+) ]
 ```
 
 ### Parameters
@@ -37,37 +37,37 @@ If the **idl_quote** C++ attribute is used as a stand-alone attribute (with a se
 
 The following code shows how you could specify an unsupported attribute (using **in**, which is supported) and how to define and use an undefined .idl construct:
 
-```cpp  
-// cpp_attr_ref_idl_quote.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
+```cpp
+// cpp_attr_ref_idl_quote.cpp
+// compile with: /LD
+#include <unknwn.h>
 [module(name="MyLibrary")];
 
-[export]  
-struct MYFLOT {  
-   int i;  
+[export]
+struct MYFLOT {
+   int i;
 };
 
-[export]  
-struct MYDUB {  
-   int i;  
+[export]
+struct MYDUB {
+   int i;
 };
 
-[idl_quote("typedef union _S1_TYPE switch (long l1) U1_TYPE { case 1024: \  
+[idl_quote("typedef union _S1_TYPE switch (long l1) U1_TYPE { case 1024: \
 struct MYFLOT f1; case 2048: struct MYDUB d2; } S1_TYPE;") ];
 
-typedef struct _S1_TYPE {   
+typedef struct _S1_TYPE {
    long l1;
 
-union {   
-   MYFLOT f1; MYDUB d2; } U1_TYPE;   
+union {
+   MYFLOT f1; MYDUB d2; } U1_TYPE;
 } S1_TYPE;
 
-[uuid("2F5F63F1-16DA-11d2-9E7B-00C04FB926DA"), object]  
-__interface IStatic{  
-   HRESULT Func1([idl_quote("in")] int i);  
-   HRESULT func( S1_TYPE* myStruct );  
-};  
+[uuid("2F5F63F1-16DA-11d2-9E7B-00C04FB926DA"), object]
+__interface IStatic{
+   HRESULT Func1([idl_quote("in")] int i);
+   HRESULT func( S1_TYPE* myStruct );
+};
 ```
 
 This code causes `MYFLOT` and `MYDUB` and the *text* entry to be placed in the generated .idl file. The *name* parameter forces *text* to be placed before anything that references *name* in the generated .idl file. The *dependencies* parameter forces the dependency list definitions to be placed before *text* in the generated .idl file.
@@ -83,9 +83,9 @@ This code causes `MYFLOT` and `MYDUB` and the *text* entry to be placed in the g
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
+[Stand-Alone Attributes](../windows/stand-alone-attributes.md)  

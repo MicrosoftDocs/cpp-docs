@@ -45,177 +45,177 @@ For more information, see [How to: Declare Handles in Native Types](../dotnet/ho
 
 This sample shows how to create an instance of a reference type on the managed heap.  This sample also shows that you can initialize one handle with another, resulting in two references to same object on managed, garbage-collected heap. Notice that assigning [nullptr](../windows/nullptr-cpp-component-extensions.md) to one handle does not mark the object for garbage collection.
 
-```cpp  
-// mcppv2_handle.cpp  
-// compile with: /clr  
-ref class MyClass {  
-public:  
-   MyClass() : i(){}  
-   int i;  
-   void Test() {  
-      i++;  
-      System::Console::WriteLine(i);  
-   }  
+```cpp
+// mcppv2_handle.cpp
+// compile with: /clr
+ref class MyClass {
+public:
+   MyClass() : i(){}
+   int i;
+   void Test() {
+      i++;
+      System::Console::WriteLine(i);
+   }
 };
 
-int main() {  
-   MyClass ^ p_MyClass = gcnew MyClass;  
+int main() {
+   MyClass ^ p_MyClass = gcnew MyClass;
    p_MyClass->Test();
 
-   MyClass ^ p_MyClass2;  
+   MyClass ^ p_MyClass2;
    p_MyClass2 = p_MyClass;
 
-   p_MyClass = nullptr;  
-   p_MyClass2->Test();     
-}  
+   p_MyClass = nullptr;
+   p_MyClass2->Test();
+}
 ```
 
-```Output  
-1  
-2  
+```Output
+1
+2
 ```
 
 The following sample shows how to declare a handle to an object on the managed heap, where the type of object is a boxed value type. The sample also shows how to get the value type from the boxed object.
 
-```cpp  
-// mcppv2_handle_2.cpp  
-// compile with: /clr  
+```cpp
+// mcppv2_handle_2.cpp
+// compile with: /clr
 using namespace System;
 
-void Test(Object^ o) {  
+void Test(Object^ o) {
    Int32^ i = dynamic_cast<Int32^>(o);
 
    if(i)  
-      Console::WriteLine(i);  
-   else  
-      Console::WriteLine("Not a boxed int");  
+      Console::WriteLine(i);
+   else
+      Console::WriteLine("Not a boxed int");
 }
 
-int main() {  
-   String^ str = "test";  
+int main() {
+   String^ str = "test";
    Test(str);
 
-   int n = 100;  
-   Test(n);  
-}  
+   int n = 100;
+   Test(n);
+}
 ```
 
-```Output  
-Not a boxed int  
-100  
+```Output
+Not a boxed int
+100
 ```
 
 This sample shows that the common C++ idiom of using a `void*` pointer to point to an arbitrary object is replaced by `Object^`, which can hold a handle to any reference class. It also shows that all types, such as arrays and delegates, can be converted to an object handle.
 
-```cpp  
-// mcppv2_handle_3.cpp  
-// compile with: /clr  
-using namespace System;  
-using namespace System::Collections;  
-public delegate void MyDel();  
-ref class MyClass {  
-public:  
-   void Test() {}  
+```cpp
+// mcppv2_handle_3.cpp
+// compile with: /clr
+using namespace System;
+using namespace System::Collections;
+public delegate void MyDel();
+ref class MyClass {
+public:
+   void Test() {}
 };
 
-void Test(Object ^ x) {  
-   Console::WriteLine("Type is {0}", x->GetType());  
+void Test(Object ^ x) {
+   Console::WriteLine("Type is {0}", x->GetType());
 }
 
-int main() {  
-   // handle to Object can hold any ref type  
+int main() {
+   // handle to Object can hold any ref type
    Object ^ h_MyClass = gcnew MyClass;
 
-   ArrayList ^ arr = gcnew ArrayList();  
+   ArrayList ^ arr = gcnew ArrayList();
    arr->Add(gcnew MyClass);
 
-   h_MyClass = dynamic_cast<MyClass ^>(arr[0]);  
+   h_MyClass = dynamic_cast<MyClass ^>(arr[0]);
    Test(arr);
 
-   Int32 ^ bi = 1;  
+   Int32 ^ bi = 1;
    Test(bi);
 
    MyClass ^ h_MyClass2 = gcnew MyClass;
 
-   MyDel^ DelInst = gcnew MyDel(h_MyClass2, &MyClass::Test);  
-   Test(DelInst);  
-}  
+   MyDel^ DelInst = gcnew MyDel(h_MyClass2, &MyClass::Test);
+   Test(DelInst);
+}
 ```
 
-```Output  
+```Output
 Type is System.Collections.ArrayList
 
 Type is System.Int32
 
-Type is MyDel  
+Type is MyDel
 ```
 
 This sample shows that a handle can be dereferenced and that a member can be accessed via a dereferenced handle.
 
-```cpp  
-// mcppv2_handle_4.cpp  
-// compile with: /clr  
-using namespace System;  
-value struct DataCollection {  
-private:  
-   int Size;  
+```cpp
+// mcppv2_handle_4.cpp
+// compile with: /clr
+using namespace System;
+value struct DataCollection {
+private:
+   int Size;
    array<String^>^ x;
 
-public:  
-   DataCollection(int i) : Size(i) {  
-      x = gcnew array<String^>(Size);  
+public:
+   DataCollection(int i) : Size(i) {
+      x = gcnew array<String^>(Size);
       for (int i = 0 ; i < Size ; i++)  
-         x[i] = i.ToString();  
+         x[i] = i.ToString();
    }
 
-   void f(int Item) {  
+   void f(int Item) {
       if (Item >= Size)  
-      {  
-         System::Console::WriteLine("Cannot access array element {0}, size is {1}", Item, Size);  
-         return;  
-      }  
-      else  
-         System::Console::WriteLine("Array value: {0}", x[Item]);  
-   }  
+      {
+         System::Console::WriteLine("Cannot access array element {0}, size is {1}", Item, Size);
+         return;
+      }
+      else
+         System::Console::WriteLine("Array value: {0}", x[Item]);
+   }
 };
 
-void f(DataCollection y, int Item) {  
-   y.f(Item);  
+void f(DataCollection y, int Item) {
+   y.f(Item);
 }
 
-int main() {  
-   DataCollection ^ a = gcnew DataCollection(10);  
-   f(*a, 7);   // dereference a handle, return handle's object  
-   (*a).f(11);   // access member via dereferenced handle  
-}  
+int main() {
+   DataCollection ^ a = gcnew DataCollection(10);
+   f(*a, 7);   // dereference a handle, return handle's object
+   (*a).f(11);   // access member via dereferenced handle
+}
 ```
 
-```Output  
+```Output
 Array value: 7
 
-Cannot access array element 11, size is 10  
+Cannot access array element 11, size is 10
 ```
 
 This sample shows that a native reference (`&`) can’t bind to an **int** member of a managed type, as the **int** might be stored in the garbage collected heap, and native references don’t track object movement in the managed heap. The fix is to use a local variable, or to change `&` to `%`, making it a tracking reference.
 
-```cpp  
-// mcppv2_handle_5.cpp  
-// compile with: /clr  
-ref struct A {  
-   void Test(unsigned int &){}  
-   void Test2(unsigned int %){}  
-   unsigned int i;  
+```cpp
+// mcppv2_handle_5.cpp
+// compile with: /clr
+ref struct A {
+   void Test(unsigned int &){}
+   void Test2(unsigned int %){}
+   unsigned int i;
 };
 
-int main() {  
-   A a;  
-   a.i = 9;  
-   a.Test(a.i);   // C2664  
+int main() {
+   A a;
+   a.i = 9;
+   a.Test(a.i);   // C2664
    a.Test2(a.i);   // OK
 
-   unsigned int j = 0;  
-   a.Test(j);   // OK  
-}  
+   unsigned int j = 0;
+   a.Test(j);   // OK
+}
 ```
 
 ### Requirements

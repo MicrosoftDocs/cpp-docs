@@ -18,10 +18,10 @@ Retrieves a pointer to the specified interface.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   QueryInterface  
-)(REFIID riid, _Deref_out_ void **ppvObject);  
+```cpp
+STDMETHOD(
+   QueryInterface
+)(REFIID riid, _Deref_out_ void **ppvObject);
 ```
 
 ### Parameters

@@ -18,12 +18,12 @@ Registers one or more COM objects so other applications can connect to them.
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW virtual HRESULT RegisterCOMObject(  
-   const wchar_t* serverName,  
-   IID* clsids,  
-   IClassFactory** factories,  
-   DWORD* cookies,  
+```cpp
+WRL_NOTHROW virtual HRESULT RegisterCOMObject(
+   const wchar_t* serverName,
+   IID* clsids,
+   IClassFactory** factories,
+   DWORD* cookies,
    unsigned int count);
 
 ```
@@ -61,5 +61,5 @@ The type of connection to the registered objects is specified by a combination o
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

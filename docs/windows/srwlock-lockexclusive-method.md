@@ -18,12 +18,12 @@ Acquires an **SRWLock** object in exclusive mode.
 
 ## Syntax
 
-```cpp  
+```cpp
 SyncLockExclusive LockExclusive();
 
-static SyncLockExclusive LockExclusive(  
-   _In_ SRWLOCK* lock  
-);  
+static SyncLockExclusive LockExclusive(
+   _In_ SRWLOCK* lock
+);
 ```
 
 ### Parameters

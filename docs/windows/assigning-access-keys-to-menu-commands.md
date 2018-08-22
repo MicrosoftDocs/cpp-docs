@@ -19,7 +19,7 @@ You can assign an access key (a mnemonic that allows the user to select the menu
 
 1. Type an ampersand (`&`) in front of a letter in the menu name or command name to specify that letter as the corresponding access key. For example "&File" sets **Alt**+**F** as the shortcut key for the **File** menu in applications written for Microsoft Windows.
 
-     The menu item will provide a visible cue that one of the letters has a shortcut key assigned to it. The letter following the ampersand will appear underlined (contingent on the operating system).
+   The menu item will provide a visible cue that one of the letters has a shortcut key assigned to it. The letter following the ampersand will appear underlined (contingent on the operating system).
 
    > [!NOTE]
    > Make sure all the access keys on a menu are unique by right-clicking your menu and choosing **Check Mnemonics** from the shortcut menu.

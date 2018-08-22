@@ -18,8 +18,8 @@ Causes all factories instantiated by the module to shut down.
 
 ## Syntax
 
-```cpp  
-void Terminate();  
+```cpp
+void Terminate();
 ```
 
 ## Remarks
@@ -32,5 +32,5 @@ Releases the factories in the cache.
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [Module Class](../windows/module-class.md)

@@ -25,13 +25,13 @@ The Windows Runtime architecture requires Visual C++ to implement the `String` d
 
 ### Syntax
 
-```cpp  
-// compile with /ZW  
-using namespace Platform;  
-using namespace default;  
-   Platform::String^ MyString1 = "The quick brown fox";  
-   String^ MyString2 = "jumped over the lazy dog.";  
-   String^ MyString3 = "Hello, world!";  
+```cpp
+// compile with /ZW
+using namespace Platform;
+using namespace default;
+   Platform::String^ MyString1 = "The quick brown fox";
+   String^ MyString2 = "jumped over the lazy dog.";
+   String^ MyString3 = "Hello, world!";
 ```
 
 ### Remarks
@@ -75,62 +75,62 @@ Compiler option: **/clr**
 
 The following code example demonstrates concatenating and comparing strings.
 
-```cpp  
-// string_operators.cpp  
-// compile with: /clr  
-// In the following code, the caret ("^") indicates that the   
-// declared variable is a handle to a C++/CLI managed object.  
+```cpp
+// string_operators.cpp
+// compile with: /clr
+// In the following code, the caret ("^") indicates that the
+// declared variable is a handle to a C++/CLI managed object.
 using namespace System;
 
-int main() {  
-   String ^ a = gcnew String("abc");  
-   String ^ b = "def";   // same as gcnew form  
+int main() {
+   String ^ a = gcnew String("abc");
+   String ^ b = "def";   // same as gcnew form
    Object ^ c = gcnew String("ghi");
 
    char d[100] = "abc";
 
-   // variables of System::String returning a System::String  
-   Console::WriteLine(a + b);  
-   Console::WriteLine(a + c);  
+   // variables of System::String returning a System::String
+   Console::WriteLine(a + b);
+   Console::WriteLine(a + c);
    Console::WriteLine(c + a);
 
-   // accessing a character in the string  
+   // accessing a character in the string
    Console::WriteLine(a[2]);
 
-   // concatenation of three System::Strings  
+   // concatenation of three System::Strings
    Console::WriteLine(a + b + c);
 
-   // concatenation of a System::String and string literal  
+   // concatenation of a System::String and string literal
    Console::WriteLine(a + "zzz");
 
-   // you can append to a System::String ^  
-   Console::WriteLine(a + 1);  
-   Console::WriteLine(a + 'a');  
+   // you can append to a System::String ^
+   Console::WriteLine(a + 1);
+   Console::WriteLine(a + 'a');
    Console::WriteLine(a + 3.1);
 
-   // test System::String ^ for equality  
-   a += b;  
-   Console::WriteLine(a);  
-   a = b;  
+   // test System::String ^ for equality
+   a += b;
+   Console::WriteLine(a);
+   a = b;
    if (a == b)  
       Console::WriteLine("a and b are equal");
 
-   a = "abc";  
+   a = "abc";
    if (a != b)  
       Console::WriteLine("a and b are not equal");
 
-   // System:String ^ and tracking reference  
-   String^% rstr1 = a;  
+   // System:String ^ and tracking reference
+   String^% rstr1 = a;
    Console::WriteLine(rstr1);
 
-   // testing an empty System::String ^  
-   String ^ n;  
+   // testing an empty System::String ^
+   String ^ n;
    if (n == nullptr)  
-      Console::WriteLine("n is empty");  
-}  
+      Console::WriteLine("n is empty");
+}
 ```
 
-```Output  
+```Output
 abcdef
 
 abcghi
@@ -157,56 +157,56 @@ a and b are not equal
 
 abc
 
-n is empty  
+n is empty
 ```
 
 The following sample shows that you can overload the compiler-provided operators, and that the compiler will find a function overload based on the <xref:System.String> type.
 
-```cpp  
-// string_operators_2.cpp  
-// compile with: /clr  
+```cpp
+// string_operators_2.cpp
+// compile with: /clr
 using namespace System;
 
-// a string^ overload will be favored when calling with a String  
-void Test_Overload(const char * a) {   
-   Console::WriteLine("const char * a");   
-}  
-void Test_Overload(String ^ a) {   
-   Console::WriteLine("String ^ a");   
+// a string^ overload will be favored when calling with a String
+void Test_Overload(const char * a) {
+   Console::WriteLine("const char * a");
+}
+void Test_Overload(String ^ a) {
+   Console::WriteLine("String ^ a");
 }
 
-// overload will be called instead of compiler defined operator  
-String ^ operator +(String ^ a, String ^ b) {  
-   return ("overloaded +(String ^ a, String ^ b)");  
+// overload will be called instead of compiler defined operator
+String ^ operator +(String ^ a, String ^ b) {
+   return ("overloaded +(String ^ a, String ^ b)");
 }
 
-// overload will be called instead of compiler defined operator  
-String ^ operator +(Object ^ a, String ^ b) {  
-   return ("overloaded +(Object ^ a, String ^ b)");  
+// overload will be called instead of compiler defined operator
+String ^ operator +(Object ^ a, String ^ b) {
+   return ("overloaded +(Object ^ a, String ^ b)");
 }
 
-// overload will be called instead of compiler defined operator  
-String ^ operator +(String ^ a, Object ^ b) {  
-   return ("overloaded +(String ^ a, Object ^ b)");  
+// overload will be called instead of compiler defined operator
+String ^ operator +(String ^ a, Object ^ b) {
+   return ("overloaded +(String ^ a, Object ^ b)");
 }
 
-int main() {  
-   String ^ a = gcnew String("abc");  
-   String ^ b = "def";   // same as gcnew form  
+int main() {
+   String ^ a = gcnew String("abc");
+   String ^ b = "def";   // same as gcnew form
    Object ^ c = gcnew String("ghi");
 
    char d[100] = "abc";
 
-   Console::WriteLine(a + b);  
-   Console::WriteLine(a + c);  
+   Console::WriteLine(a + b);
+   Console::WriteLine(a + c);
    Console::WriteLine(c + a);
 
-   Test_Overload("hello");  
-   Test_Overload(d);  
-}  
+   Test_Overload("hello");
+   Test_Overload(d);
+}
 ```
 
-```Output  
+```Output
 overloaded +(String ^ a, String ^ b)
 
 overloaded +(String ^ a, Object ^ b)
@@ -215,56 +215,56 @@ overloaded +(Object ^ a, String ^ b)
 
 String ^ a
 
-const char * a  
+const char * a
 ```
 
 The following sample shows that the compiler distinguishes between native strings and <xref:System.String> strings.
 
-```cpp  
-// string_operators_3.cpp  
-// compile with: /clr  
-using namespace System;  
-int func() {  
+```cpp
+// string_operators_3.cpp
+// compile with: /clr
+using namespace System;
+int func() {
    throw "simple string";   // const char *  
 };
 
-int func2() {  
-   throw "string" + "string";   // returns System::String  
+int func2() {
+   throw "string" + "string";   // returns System::String
 };
 
-template<typename T>  
-void func3(T t) {  
-   Console::WriteLine(T::typeid);  
+template<typename T>
+void func3(T t) {
+   Console::WriteLine(T::typeid);
 }
 
-int main() {  
-   try {  
-      func();  
-   }  
-   catch(char * e) {  
-      Console::WriteLine("char *");  
+int main() {
+   try {
+      func();
+   }
+   catch(char * e) {
+      Console::WriteLine("char *");
    }
 
-   try {  
-      func2();  
-   }  
-   catch(String^ str) {  
-      Console::WriteLine("String^ str");  
+   try {
+      func2();
+   }
+   catch(String^ str) {
+      Console::WriteLine("String^ str");
    }
 
    func3("string");   // const char *  
-   func3("string" + "string");   // returns System::String  
-}  
+   func3("string" + "string");   // returns System::String
+}
 ```
 
-```Output  
+```Output
 char *
 
 String^ str
 
 System.SByte*
 
-System.String  
+System.String
 ```
 
 ## See Also

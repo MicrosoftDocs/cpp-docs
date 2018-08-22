@@ -18,10 +18,10 @@ Identifies a particular version among multiple versions of a class.
 
 ## Syntax
 
-```cpp  
-[ version(  
-   "version"  
-) ]  
+```cpp
+[ version(
+   "version"
+) ]
 ```
 
 ### Parameters
@@ -48,9 +48,9 @@ See the [bindable](../windows/bindable.md) example for a sample use of **version
 |**Required attributes**|**coclass**|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [Compiler Attributes](../windows/compiler-attributes.md)  
-[Class Attributes](../windows/class-attributes.md)   
+[Class Attributes](../windows/class-attributes.md)  

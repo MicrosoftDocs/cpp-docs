@@ -38,7 +38,7 @@ ActivatableClassWithFactoryEx(
 ### Parameters
 
 *className*  
-Name of the class to create.  
+Name of the class to create.
 
 *factory*  
 Factory that will create an instance of the specified class.

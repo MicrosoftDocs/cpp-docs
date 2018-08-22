@@ -18,8 +18,8 @@ Defines common characteristics of a **Semaphore** object.
 
 ## Syntax
 
-```cpp  
-struct SemaphoreTraits : HANDLENullTraits;  
+```cpp
+struct SemaphoreTraits : HANDLENullTraits;
 ```
 
 ## Members

@@ -30,8 +30,8 @@ A *pinning pointer* is an interior pointer that prevents the object pointed to f
 
 ### Syntax
 
-```cpp  
-[cli::]pin_ptr<cv_qualifiertype>var = &initializer;  
+```cpp
+[cli::]pin_ptr<cv_qualifiertype>var = &initializer;
 ```
 
 ### Parameters
@@ -94,113 +94,113 @@ Compiler option: `/clr`
 
 The following example uses **pin_ptr** to constrain the position of the first element of an array.
 
-```cpp  
-// pin_ptr_1.cpp  
-// compile with: /clr   
-using namespace System;  
+```cpp
+// pin_ptr_1.cpp
+// compile with: /clr
+using namespace System;
 #define SIZE 10
 
-#pragma unmanaged  
-// native function that initializes an array  
-void native_function(int* p) {  
+#pragma unmanaged
+// native function that initializes an array
+void native_function(int* p) {
    for(int i = 0 ; i < 10 ; i++)  
-    p[i] = i;  
-}  
+    p[i] = i;
+}
 #pragma managed
 
-public ref class A {  
-private:  
+public ref class A {
+private:
    array<int>^ arr;   // CLR integer array
 
-public:  
-   A() {  
-      arr = gcnew array<int>(SIZE);  
+public:
+   A() {
+      arr = gcnew array<int>(SIZE);
    }
 
-   void load() {  
-   pin_ptr<int> p = &arr[0];   // pin pointer to first element in arr  
-   int* np = p;   // pointer to the first element in arr  
-   native_function(np);   // pass pointer to native function  
+   void load() {
+   pin_ptr<int> p = &arr[0];   // pin pointer to first element in arr
+   int* np = p;   // pointer to the first element in arr
+   native_function(np);   // pass pointer to native function
    }
 
-   int sum() {  
-      int total = 0;  
+   int sum() {
+      int total = 0;
       for (int i = 0 ; i < SIZE ; i++)  
-         total += arr[i];  
-      return total;  
-   }  
+         total += arr[i];
+      return total;
+   }
 };
 
-int main() {  
-   A^ a = gcnew A;  
-   a->load();   // initialize managed array using the native function  
-   Console::WriteLine(a->sum());  
-}  
+int main() {
+   A^ a = gcnew A;
+   a->load();   // initialize managed array using the native function
+   Console::WriteLine(a->sum());
+}
 ```
 
-```Output  
-45  
+```Output
+45
 ```
 
 The following example shows that an interior pointer can be converted to a pinning pointer, and that the return type of the address-of operator (`&`) is an interior pointer when the operand is on the managed heap.
 
-```cpp  
-// pin_ptr_2.cpp  
-// compile with: /clr  
+```cpp
+// pin_ptr_2.cpp
+// compile with: /clr
 using namespace System;
 
-ref struct G {  
-   G() : i(1) {}  
-   int i;  
+ref struct G {
+   G() : i(1) {}
+   int i;
 };
 
-ref struct H {  
-   H() : j(2) {}  
-   int j;  
+ref struct H {
+   H() : j(2) {}
+   int j;
 };
 
-int main() {  
-   G ^ g = gcnew G;   // g is a whole reference object pointer  
+int main() {
+   G ^ g = gcnew G;   // g is a whole reference object pointer
    H ^ h = gcnew H;
 
    interior_ptr<int> l = &(g->i);   // l is interior pointer
 
    pin_ptr<int> k = &(h->j);   // k is a pinning interior pointer
 
-   k = l;   // ok  
-   Console::WriteLine(*k);  
-};  
+   k = l;   // ok
+   Console::WriteLine(*k);
+};
 ```
 
-```Output  
-1  
+```Output
+1
 ```
 
 The following example shows that a pinning pointer can be cast to another type.
 
-```cpp  
-// pin_ptr_3.cpp  
-// compile with: /clr  
+```cpp
+// pin_ptr_3.cpp
+// compile with: /clr
 using namespace System;
 
-ref class ManagedType {  
-public:  
-   int i;  
+ref class ManagedType {
+public:
+   int i;
 };
 
-int main() {  
-   ManagedType ^mt = gcnew ManagedType;  
-   pin_ptr<int> pt = &mt->i;  
-   *pt = 8;  
+int main() {
+   ManagedType ^mt = gcnew ManagedType;
+   pin_ptr<int> pt = &mt->i;
+   *pt = 8;
    Console::WriteLine(mt->i);
 
-   char *pc = ( char* ) pt;  
-   *pc = 255;  
-   Console::WriteLine(mt->i);  
-}  
+   char *pc = ( char* ) pt;
+   *pc = 255;
+   Console::WriteLine(mt->i);
+}
 ```
 
-```Output  
-8  
-255  
+```Output
+8
+255
 ```

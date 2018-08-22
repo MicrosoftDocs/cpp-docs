@@ -18,17 +18,17 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-template <  
-   bool b,  
-   typename T = void  
+```cpp
+template <
+   bool b,
+   typename T = void
 >
 
-struct EnableIf;  
-template <  
-   typename T  
->  
-struct EnableIf<true, T>;  
+struct EnableIf;
+template <
+   typename T
+>
+struct EnableIf<true, T>;
 ```
 
 ### Parameters

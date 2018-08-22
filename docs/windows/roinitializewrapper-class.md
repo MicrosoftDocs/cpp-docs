@@ -17,8 +17,8 @@ Initializes the Windows Runtime.
 
 ## Syntax
 
-```cpp  
-class RoInitializeWrapper  
+```cpp
+class RoInitializeWrapper
 ```
 
 ## Remarks

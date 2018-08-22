@@ -18,13 +18,13 @@ Opens an OLE DB table.
 
 ## Syntax
 
-```cpp  
-[ db_table(   
-   db_table,   
-   name,   
-   source_name,   
-   hresult   
-) ]  
+```cpp
+[ db_table(
+   db_table,
+   name,
+   source_name,
+   hresult
+) ]
 ```
 
 #### Parameters
@@ -51,17 +51,17 @@ When the consumer attribute provider applies this attribute to a class, the comp
 
 The following example opens the Products table for use by `CProducts`.
 
-```cpp  
-// db_table.cpp  
-// compile with: /LD  
-#include <atlbase.h>  
-#include <atlplus.h>  
+```cpp
+// db_table.cpp
+// compile with: /LD
+#include <atlbase.h>
+#include <atlplus.h>
 #include <atldbcli.h>
 
-[ db_table(L"dbo.Products") ]  
-class CProducts {  
-   [ db_column("1") ] LONG m_ProductID;  
-};  
+[ db_table(L"dbo.Products") ]
+class CProducts {
+   [ db_column("1") ] LONG m_ProductID;
+};
 ```
 
 For an example of this attribute used in an application, see the samples [AtlAgent](http://msdn.microsoft.com/52bef5da-c1a0-4223-b4e6-9e464b6db409) and [MultiRead](http://msdn.microsoft.com/5a2a915a-77dc-492f-94b2-1b809995dd5e).
@@ -77,8 +77,8 @@ For an example of this attribute used in an application, see the samples [AtlAge
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
-[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
+[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)  

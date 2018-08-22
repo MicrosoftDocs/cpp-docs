@@ -19,13 +19,13 @@ Declares a class or struct whose *object lifetime* is administered automatically
 
 ### Syntax
 
-```cpp  
-      class_access  
-      ref class  
-      name  
-      modifier :  inherit_accessbase_type {};  
-class_accessref structnamemodifier :  inherit_accessbase_type {};  
-class_accessvalue classnamemodifier :  inherit_accessbase_type {};  
+```cpp
+      class_access
+      ref class
+      name
+      modifier :  inherit_accessbase_type {};
+class_accessref structnamemodifier :  inherit_accessbase_type {};
+class_accessvalue classnamemodifier :  inherit_accessbase_type {};
 class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 
 ```

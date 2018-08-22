@@ -18,10 +18,10 @@ Deletes the event handler represented by the specified event registration token 
 
 ## Syntax
 
-```cpp  
-HRESULT Remove(  
-   EventRegistrationToken token  
-);  
+```cpp
+HRESULT Remove(
+   EventRegistrationToken token
+);
 ```
 
 ### Parameters
@@ -43,5 +43,5 @@ For more information about the `EventRegistrationToken` structure, see the **Win
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [EventSource Class](../windows/eventsource-class.md)

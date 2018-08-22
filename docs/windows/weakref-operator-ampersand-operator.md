@@ -18,7 +18,7 @@ Returns a `ComPtrRef` object that represents the current **WeakRef** object.
 
 ## Syntax
 
-```cpp  
+```cpp
 Details::ComPtrRef<WeakRef> operator&() throw()  
 ```
 

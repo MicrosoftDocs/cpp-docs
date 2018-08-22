@@ -18,8 +18,8 @@ Identifies pointer parameters that are returned from the called procedure to the
 
 ## Syntax
 
-```cpp  
-[out]  
+```cpp
+[out]
 ```
 
 ## Remarks
@@ -41,11 +41,11 @@ See the example for [bindable](../windows/bindable.md) for a sample use of **out
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Parameter Attributes](../windows/parameter-attributes.md)  
 [defaultvalue](../windows/defaultvalue.md)  
-[id](../windows/id.md)   
+[id](../windows/id.md)  

@@ -18,10 +18,10 @@ Closes the asynchronous operation.
 
 ## Syntax
 
-```cpp  
-STDMETHOD(  
-   Close  
-)(void) override;  
+```cpp
+STDMETHOD(
+   Close
+)(void) override;
 ```
 
 ## Return Value

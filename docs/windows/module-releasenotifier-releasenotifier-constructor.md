@@ -18,8 +18,8 @@ Initializes a new instance of the **Module::ReleaseNotifier** class.
 
 ## Syntax
 
-```cpp  
-ReleaseNotifier(bool release) throw();  
+```cpp
+ReleaseNotifier(bool release) throw();
 ```
 
 ### Parameters

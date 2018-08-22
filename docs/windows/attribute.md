@@ -18,12 +18,12 @@ Allows you to create a custom attribute.
 
 ## Syntax
 
-```cpp  
-[ attribute(  
-   AllowOn,  
-   AllowMultiple=boolean,  
-   Inherited=boolean  
-) ]  
+```cpp
+[ attribute(
+   AllowOn,
+   AllowMultiple=boolean,
+   Inherited=boolean
+) ]
 ```
 
 ### Parameters
@@ -44,9 +44,9 @@ Indicates if the attribute is to be inherited by subclasses. The compiler provid
 
 You define a [custom attribute](../windows/custom-attributes-cpp.md) by placing the **attribute** attribute on a managed class or struct definition. The name of the class is the custom attribute. For example:
 
-```cpp  
-[ attribute(Parameter) ]  
-public ref class MyAttr {};  
+```cpp
+[ attribute(Parameter) ]
+public ref class MyAttr {};
 ```
 
 defines an attribute called `MyAttr` that can be applied to function parameters. The class must be public if the attribute is going to be used in other assemblies.
@@ -56,46 +56,46 @@ defines an attribute called `MyAttr` that can be applied to function parameters.
 
 The class's public constructors define the attribute's unnamed parameters. Overloaded constructors allow multiple ways of specifying the attribute, so a custom attribute that is defined the following way:
 
-```cpp  
-// cpp_attr_ref_attribute.cpp  
-// compile with: /c /clr  
-using namespace System;  
-[ attribute(AttributeTargets::Class) ]   // apply attribute to classes  
-public ref class MyAttr {  
-public:  
-   MyAttr() {}   // Constructor with no parameters  
-   MyAttr(int arg1) {}   // Constructor with one parameter  
+```cpp
+// cpp_attr_ref_attribute.cpp
+// compile with: /c /clr
+using namespace System;
+[ attribute(AttributeTargets::Class) ]   // apply attribute to classes
+public ref class MyAttr {
+public:
+   MyAttr() {}   // Constructor with no parameters
+   MyAttr(int arg1) {}   // Constructor with one parameter
 };
 
-[MyAttr]  
+[MyAttr]
 ref class ClassA {};   // Attribute with no parameters
 
-[MyAttr(123)]  
-ref class ClassB {};   // Attribute with one parameter  
+[MyAttr(123)]
+ref class ClassB {};   // Attribute with one parameter
 ```
 
 The class's public data members and properties are the attribute's optional named parameters:
 
-```cpp  
-// cpp_attr_ref_attribute_2.cpp  
-// compile with: /c /clr  
-using namespace System;  
-[ attribute(AttributeTargets::Class) ]  
-ref class MyAttr {  
-public:  
-   // Property Priority becomes attribute's named parameter Priority  
-    property int Priority {  
-       void set(int value) {}  
-       int get() { return 0;}  
-   }  
-   // Data member Version becomes attribute's named parameter Version  
-   int Version;  
-   MyAttr() {}   // constructor with no parameters  
-   MyAttr(int arg1) {}   // constructor with one parameter  
+```cpp
+// cpp_attr_ref_attribute_2.cpp
+// compile with: /c /clr
+using namespace System;
+[ attribute(AttributeTargets::Class) ]
+ref class MyAttr {
+public:
+   // Property Priority becomes attribute's named parameter Priority
+    property int Priority {
+       void set(int value) {}
+       int get() { return 0;}
+   }
+   // Data member Version becomes attribute's named parameter Version
+   int Version;
+   MyAttr() {}   // constructor with no parameters
+   MyAttr(int arg1) {}   // constructor with one parameter
 };
 
-[MyAttr(123, Version=2)]   
-ref class ClassC {};  
+[MyAttr(123, Version=2)]
+ref class ClassC {};
 ```
 
 For a list of possible attribute parameter types, see [Custom Attributes](../windows/custom-attributes-cpp.md).
@@ -104,31 +104,31 @@ See [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-e
 
 The **attribute** attribute has an *AllowMultiple* parameter that specifies whether the custom attribute is single use or multiuse (can appear more than once on the same entity).
 
-```cpp  
-// cpp_attr_ref_attribute_3.cpp  
-// compile with: /c /clr  
-using namespace System;  
-[ attribute(AttributeTargets::Class, AllowMultiple = true) ]  
-ref struct MyAttr {  
-   MyAttr(){}  
+```cpp
+// cpp_attr_ref_attribute_3.cpp
+// compile with: /c /clr
+using namespace System;
+[ attribute(AttributeTargets::Class, AllowMultiple = true) ]
+ref struct MyAttr {
+   MyAttr(){}
 };   // MyAttr is a multiuse attribute
 
-[MyAttr, MyAttr()]  
-ref class ClassA {};  
+[MyAttr, MyAttr()]
+ref class ClassA {};
 ```
 
 Custom attribute classes are derived directly or indirectly from <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>, which makes identifying attribute definitions in metadata fast and easy. The **attribute** attribute implies inheritance from `System::Attribute`, so explicit derivation is not necessary:
 
-```cpp  
-[ attribute(Class) ]  
-ref class MyAttr  
+```cpp
+[ attribute(Class) ]
+ref class MyAttr
 ```
 
 is equivalent to
 
-```cpp  
-[ attribute(Class) ]  
-ref class MyAttr : System::Attribute   // OK, but redundant.  
+```cpp
+[ attribute(Class) ]
+ref class MyAttr : System::Attribute   // OK, but redundant.
 ```
 
 **attribute** is an alias for <xref:System.AttributeUsageAttribute?displayProperty=fullName> (not AttributeAttribute; this is an exception to the attribute naming rule).
@@ -144,63 +144,63 @@ ref class MyAttr : System::Attribute   // OK, but redundant.
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_attribute_4.cpp  
-// compile with: /c /clr  
-using namespace System;  
-[attribute(AttributeTargets::Class)]  
-ref struct ABC {  
-   ABC(Type ^) {}  
+```cpp
+// cpp_attr_ref_attribute_4.cpp
+// compile with: /c /clr
+using namespace System;
+[attribute(AttributeTargets::Class)]
+ref struct ABC {
+   ABC(Type ^) {}
 };
 
-[ABC(String::typeid)]   // typeid operator yields System::Type ^  
-ref class MyClass {};  
+[ABC(String::typeid)]   // typeid operator yields System::Type ^
+ref class MyClass {};
 ```
 
 ## Example
 
 The `Inherited` named argument specifies whether a custom attribute applied on a base class will show up on reflection of a derived class.
 
-```cpp  
-// cpp_attr_ref_attribute_5.cpp  
-// compile with: /clr  
-using namespace System;  
+```cpp
+// cpp_attr_ref_attribute_5.cpp
+// compile with: /clr
+using namespace System;
 using namespace System::Reflection;
 
-[attribute( AttributeTargets::Method, Inherited=false )]  
+[attribute( AttributeTargets::Method, Inherited=false )]
 ref class BaseOnlyAttribute { };
 
-[attribute( AttributeTargets::Method, Inherited=true )]  
+[attribute( AttributeTargets::Method, Inherited=true )]
 ref class DerivedTooAttribute { };
 
-ref struct IBase {  
-public:  
-   [BaseOnly, DerivedToo]  
-   virtual void meth() {}  
+ref struct IBase {
+public:
+   [BaseOnly, DerivedToo]
+   virtual void meth() {}
 };
 
-// Reflection on Derived::meth will show DerivedTooAttribute   
-// but not BaseOnlyAttribute.  
-ref class Derived : public IBase {  
-public:  
-   virtual void meth() override {}  
+// Reflection on Derived::meth will show DerivedTooAttribute
+// but not BaseOnlyAttribute.
+ref class Derived : public IBase {
+public:
+   virtual void meth() override {}
 };
 
-int main() {  
+int main() {
    IBase ^ pIB = gcnew Derived;
 
-   MemberInfo ^ pMI = pIB->GetType( )->GetMethod( "meth" );  
-   array<Object ^> ^ pObjs = pMI->GetCustomAttributes( true );  
-   Console::WriteLine( pObjs->Length ) ;  
-}  
+   MemberInfo ^ pMI = pIB->GetType( )->GetMethod( "meth" );
+   array<Object ^> ^ pObjs = pMI->GetCustomAttributes( true );
+   Console::WriteLine( pObjs->Length ) ;
+}
 ```
 
-```Output  
-2  
+```Output
+2
 ```
 
 ## See Also

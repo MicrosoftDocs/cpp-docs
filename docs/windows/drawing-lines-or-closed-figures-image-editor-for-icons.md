@@ -35,7 +35,7 @@ Lines are drawn in a width determined by the current brush selection, and framed
 
 1. On the **Image Editor** toolbar (or from the **Image** menu, **Tools** command), click a **Closed-Figure Drawing** tool.
 
-     The **Closed-Figure Drawing** tools create figures as indicated on their respective buttons.
+   The **Closed-Figure Drawing** tools create figures as indicated on their respective buttons.
 
 2. If necessary, select colors and a line width.
 

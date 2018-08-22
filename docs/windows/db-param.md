@@ -18,16 +18,16 @@ Associates the specified member variable with an input or output parameter and d
 
 ## Syntax
 
-```cpp  
-[ db_param(   
-   ordinal,   
-   paramtype="DBPARAMIO_INPUT",   
-   dbtype,   
-   precision,   
-   scale,   
-   status,   
-   length  
-) ]  
+```cpp
+[ db_param(
+   ordinal,
+   paramtype="DBPARAMIO_INPUT",
+   dbtype,
+   precision,
+   scale,
+   status,
+   length
+) ]
 ```
 
 ### Parameters
@@ -75,38 +75,38 @@ The following example creates a command class based on the SalesbyYear stored pr
 
 The following example associates the `nOutput` variable with an output parameter.
 
-```cpp  
-// db_param.cpp  
-// compile with: /LD  
-#include <atlbase.h>  
-#include <atlplus.h>  
+```cpp
+// db_param.cpp
+// compile with: /LD
+#include <atlbase.h>
+#include <atlplus.h>
 #include <atldbcli.h>
 
-[ db_source(L"my_connection_string"),   
-  db_command(L"{ ? = CALL dbo.\"Sales by Year\"(?,?) }")   
-]  
-struct CSalesbyYear {  
-   DBSTATUS m_dwShippedDateStatus;  
-   DBSTATUS m_dwOrderIDStatus;  
-   DBSTATUS m_dwSubtotalStatus;  
+[ db_source(L"my_connection_string"),
+  db_command(L"{ ? = CALL dbo.\"Sales by Year\"(?,?) }")  
+]
+struct CSalesbyYear {
+   DBSTATUS m_dwShippedDateStatus;
+   DBSTATUS m_dwOrderIDStatus;
+   DBSTATUS m_dwSubtotalStatus;
    DBSTATUS m_dwYearStatus;
 
-   DBLENGTH m_dwShippedDateLength;  
-   DBLENGTH m_dwOrderIDLength;  
-   DBLENGTH m_dwSubtotalLength;  
+   DBLENGTH m_dwShippedDateLength;
+   DBLENGTH m_dwOrderIDLength;
+   DBLENGTH m_dwSubtotalLength;
    DBLENGTH m_dwYearLength;
 
-   // Bind columns  
-   [ db_column("1", status="m_dwShippedDateStatus", length="m_dwShippedDateLength") ] DBTIMESTAMP m_ShippedDate;  
-   [ db_column("2", status="m_dwOrderIDStatus", length="m_dwOrderIDLength") ] LONG m_OrderID;  
-   [ db_column("3", status="m_dwSubtotalStatus", length="m_dwSubtotalLength") ] CURRENCY m_Subtotal;  
+   // Bind columns
+   [ db_column("1", status="m_dwShippedDateStatus", length="m_dwShippedDateLength") ] DBTIMESTAMP m_ShippedDate;
+   [ db_column("2", status="m_dwOrderIDStatus", length="m_dwOrderIDLength") ] LONG m_OrderID;
+   [ db_column("3", status="m_dwSubtotalStatus", length="m_dwSubtotalLength") ] CURRENCY m_Subtotal;
    [ db_column("4", status="m_dwYearStatus", length="m_dwYearLength") ] TCHAR m_Year[31];
 
-   // Bind parameters  
-   [ db_param("1", paramtype="DBPARAMIO_OUTPUT") ] LONG m_RETURN_VALUE;  
-   [ db_param("2", paramtype="DBPARAMIO_INPUT") ] DBTIMESTAMP m_Beginning_Date;  
-   [ db_param("3", paramtype="DBPARAMIO_INPUT") ] DBTIMESTAMP m_Ending_Date;  
-};  
+   // Bind parameters
+   [ db_param("1", paramtype="DBPARAMIO_OUTPUT") ] LONG m_RETURN_VALUE;
+   [ db_param("2", paramtype="DBPARAMIO_INPUT") ] DBTIMESTAMP m_Beginning_Date;
+   [ db_param("3", paramtype="DBPARAMIO_INPUT") ] DBTIMESTAMP m_Ending_Date;
+};
 ```
 
 ## Requirements
@@ -120,8 +120,8 @@ struct CSalesbyYear {
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
-[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)   
+[OLE DB Consumer Attributes](../windows/ole-db-consumer-attributes.md)  

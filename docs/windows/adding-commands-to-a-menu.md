@@ -20,7 +20,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 2. Click a menu name, for example, **File**.
 
-     Each menu will expand and expose a new item box for commands. For example, you can add the commands **New**, **Open**, and **Close** to a **File** menu.
+   Each menu will expand and expose a new item box for commands. For example, you can add the commands **New**, **Open**, and **Close** to a **File** menu.
 
 3. In the new item box, type a name for the new menu command.
 
@@ -34,14 +34,14 @@ ms.workload: ["cplusplus", "uwp"]
 
 5. In the **Prompt** box in the **Properties** window, type the prompt string you want to appear in your application's status bar.
 
-     This creates an entry in the string table with the same resource identifier as the menu command you created.
+   This creates an entry in the string table with the same resource identifier as the menu command you created.
 
    > [!NOTE]
    > Prompts can only apply to menu items with a **Popup** property of **True**. For example, top-level menu items can have prompts if they have sub-menu items. The purpose of a **Prompt** is to indicate what will happen if a user clicks the menu item.
 
 6. Press **Enter** to complete the menu command.
 
-     The new item box is selected so you can create additional menu commands.
+   The new item box is selected so you can create additional menu commands.
 
 ## Requirements
 
@@ -49,4 +49,4 @@ Win32
 
 ## See Also
 
-[Menu Editor](../windows/menu-editor.md)   
+[Menu Editor](../windows/menu-editor.md)  

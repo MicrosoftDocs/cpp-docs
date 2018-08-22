@@ -18,10 +18,10 @@ Specifies the IID of the COM interface pointed to by an interface pointer.
 
 ## Syntax
 
-```cpp  
-[ iid_is(  
-   "expression"  
-) ]  
+```cpp
+[ iid_is(
+   "expression"
+) ]
 ```
 
 ### Parameters
@@ -37,19 +37,19 @@ The **iid_is** C++ attribute has the same functionality as the [iid_is](http://m
 
 The following code shows the use of **iid_is**:
 
-```cpp  
-// cpp_attr_ref_iid_is.cpp  
-// compile with: /LD  
-#include "wtypes.h"  
-#include "unknwn.h"  
-[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IFireTabCtrl : IDispatch  
-{  
-   [id(1)] HRESULT CreateInstance([in] REFIID riid,[out, iid_is("riid")]   
-   IUnknown ** ppvObject);  
+```cpp
+// cpp_attr_ref_iid_is.cpp
+// compile with: /LD
+#include "wtypes.h"
+#include "unknwn.h"
+[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]
+__interface IFireTabCtrl : IDispatch
+{
+   [id(1)] HRESULT CreateInstance([in] REFIID riid,[out, iid_is("riid")]
+   IUnknown ** ppvObject);
 };
 
-[module(name="ATLFIRELib")];  
+[module(name="ATLFIRELib")];
 ```
 
 ## Requirements
@@ -63,9 +63,9 @@ __interface IFireTabCtrl : IDispatch
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Parameter Attributes](../windows/parameter-attributes.md)   
+[Parameter Attributes](../windows/parameter-attributes.md)  

@@ -22,34 +22,34 @@ The following C++/CLI sample shows how you can declare and use an interior point
 
 ### Code
 
-```cpp  
-// interior_ptr_arrays.cpp  
-// compile with: /clr  
+```cpp
+// interior_ptr_arrays.cpp
+// compile with: /clr
 #define SIZE 10
 
-int main() {  
-   // declare the array  
+int main() {
+   // declare the array
    array<int>^ arr = gcnew array<int>(SIZE);
 
-   // initialize the array  
+   // initialize the array
    for (int i = 0 ; i < SIZE ; i++)  
       arr[i] = i + 1;
 
-   // create an interior pointer into the array  
+   // create an interior pointer into the array
    interior_ptr<int> ipi = &arr[0];
 
-   System::Console::WriteLine("1st element in arr holds: {0}", arr[0]);  
+   System::Console::WriteLine("1st element in arr holds: {0}", arr[0]);
    System::Console::WriteLine("ipi points to memory address whose value is: {0}", *ipi);
 
-   ipi++;  
-   System::Console::WriteLine("after incrementing ipi, it points to memory address whose value is: {0}", *ipi);  
-}  
+   ipi++;
+   System::Console::WriteLine("after incrementing ipi, it points to memory address whose value is: {0}", *ipi);
+}
 ```
 
-```Output  
-1st element in arr holds: 1  
-ipi points to memory address whose value is: 1  
-after incrementing ipi, it points to memory address whose value is: 2  
+```Output
+1st element in arr holds: 1
+ipi points to memory address whose value is: 1
+after incrementing ipi, it points to memory address whose value is: 2
 ```
 
 ## See Also

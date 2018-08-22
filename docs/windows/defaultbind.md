@@ -18,8 +18,8 @@ Indicates the single, bindable property that best represents the object.
 
 ## Syntax
 
-```cpp  
-[defaultbind]  
+```cpp
+[defaultbind]
 ```
 
 ## Remarks
@@ -41,7 +41,7 @@ See the example for [bindable](../windows/bindable.md) for an example of how to 
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
@@ -50,4 +50,4 @@ See the example for [bindable](../windows/bindable.md) for an example of how to 
 [Data Member Attributes](../windows/data-member-attributes.md)  
 [displaybind](../windows/displaybind.md)  
 [immediatebind](../windows/immediatebind.md)  
-[requestedit](../windows/requestedit.md)   
+[requestedit](../windows/requestedit.md)  

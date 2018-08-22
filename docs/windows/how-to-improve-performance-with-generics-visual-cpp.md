@@ -27,51 +27,51 @@ Second, there is no way to control which types can be added to a collection. It 
 
 The following code example shows the two main drawbacks of the .NET Framework collections before generics.
 
-```cpp  
-// perf_pre_generics.cpp  
+```cpp
+// perf_pre_generics.cpp
 // compile with: /clr
 
-using namespace System;  
+using namespace System;
 using namespace System::Collections;
 
 int main()  
-{  
-    // This Stack can contain any type.  
+{
+    // This Stack can contain any type.
     Stack ^s = gcnew Stack();
 
-    // Push an integer to the Stack.  
-    // A boxing operation is performed here.  
+    // Push an integer to the Stack.
+    // A boxing operation is performed here.
     s->Push(7);
 
-    // Push a String to the same Stack.  
-    // The Stack now contains two different data types.  
+    // Push a String to the same Stack.
+    // The Stack now contains two different data types.
     s->Push("Seven");
 
-    // Pop the items off the Stack.  
-    // The item is returned as an Object, so a cast is  
-    // necessary to convert it to its proper type.  
+    // Pop the items off the Stack.
+    // The item is returned as an Object, so a cast is
+    // necessary to convert it to its proper type.
     while (s->Count> 0)  
-    {  
-        Object ^o = s->Pop();  
+    {
+        Object ^o = s->Pop();
         if (o->GetType() == Type::GetType("System.String"))  
-        {  
-            Console::WriteLine("Popped a String: {0}", (String ^)o);  
-        }  
+        {
+            Console::WriteLine("Popped a String: {0}", (String ^)o);
+        }
         else if (o->GetType() == Type::GetType("System.Int32"))  
-        {  
-            Console::WriteLine("Popped an int: {0}", (int)o);  
-        }  
-        else  
-        {  
-            Console::WriteLine("Popped an unknown type!");  
-        }  
-    }  
-}  
+        {
+            Console::WriteLine("Popped an int: {0}", (int)o);
+        }
+        else
+        {
+            Console::WriteLine("Popped an unknown type!");
+        }
+    }
+}
 ```
 
-```Output  
-Popped a String: Seven  
-Popped an int: 7  
+```Output
+Popped a String: Seven
+Popped an int: 7
 ```
 
 ## Example
@@ -80,44 +80,44 @@ The new <xref:System.Collections.Generic?displayProperty=fullName> namespace con
 
 Compare the example written above with this example that uses a generic <xref:System.Collections.Generic.Stack%601> collection. On large collections that are frequently accessed, the performance of this example will be significantly greater than the preceding example.
 
-```cpp  
-// perf_post_generics.cpp  
+```cpp
+// perf_post_generics.cpp
 // compile with: /clr
 
 #using <System.dll>
 
-using namespace System;  
+using namespace System;
 using namespace System::Collections::Generic;
 
 int main()  
-{  
-    // This Stack can only contain integers.  
+{
+    // This Stack can only contain integers.
     Stack<int> ^s = gcnew Stack<int>();
 
-    // Push an integer to the Stack.  
-    // A boxing operation is performed here.  
-    s->Push(7);  
+    // Push an integer to the Stack.
+    // A boxing operation is performed here.
+    s->Push(7);
     s->Push(14);
 
-    // You can no longer push a String to the same Stack.  
-    // This will result in compile time error C2664.  
+    // You can no longer push a String to the same Stack.
+    // This will result in compile time error C2664.
     //s->Push("Seven");
 
-    // Pop an item off the Stack.  
-    // The item is returned as the type of the collection, so no  
-    // casting is necessary and no unboxing is performed for  
-    // value types.  
-    int i = s->Pop();  
+    // Pop an item off the Stack.
+    // The item is returned as the type of the collection, so no
+    // casting is necessary and no unboxing is performed for
+    // value types.
+    int i = s->Pop();
     Console::WriteLine(i);
 
-    // You can no longer retrieve a String from the Stack.  
-    // This will result in compile time error C2440.  
-    //String ^str = s->Pop();  
-}  
+    // You can no longer retrieve a String from the Stack.
+    // This will result in compile time error C2440.
+    //String ^str = s->Pop();
+}
 ```
 
-```Output  
-14  
+```Output
+14
 ```
 
 ## See Also

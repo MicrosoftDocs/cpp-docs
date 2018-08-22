@@ -18,9 +18,9 @@ Indicates to the `RuntimeClass`, `Implements` and `ChainInterfaces` templates th
 
 ## Syntax
 
-```cpp  
-template<typename T>  
-struct CloakedIid : T;  
+```cpp
+template<typename T>
+struct CloakedIid : T;
 ```
 
 #### Parameters

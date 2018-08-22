@@ -18,8 +18,8 @@ Holds the lambda, functor, or pointer-to-function event handler associated with 
 
 ## Syntax
 
-```cpp  
-T callback_;  
+```cpp
+T callback_;
 ```
 
 ## Requirements

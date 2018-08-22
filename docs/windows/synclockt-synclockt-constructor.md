@@ -18,14 +18,14 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-SyncLockT(  
-   _Inout_ SyncLockT&& other  
+```cpp
+SyncLockT(
+   _Inout_ SyncLockT&& other
 );
 
-explicit SyncLockT(  
+explicit SyncLockT(
    typename SyncTraits::Type sync = SyncTraits::GetInvalidValue()  
-);  
+);
 ```
 
 ### Parameters

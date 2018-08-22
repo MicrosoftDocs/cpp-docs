@@ -19,28 +19,28 @@ A value type can be implicitly boxed. You can then declare a pinning pointer to 
 
 ### Code
 
-```cpp  
-// pin_ptr_value.cpp  
-// compile with: /clr  
-value struct V {  
-   int i;  
+```cpp
+// pin_ptr_value.cpp
+// compile with: /clr
+value struct V {
+   int i;
 };
 
-int main() {  
-   V ^ v = gcnew V;   // imnplicit boxing  
-   v->i=8;  
-   System::Console::WriteLine(v->i);  
-   pin_ptr<V> mv = &*v;  
-   mv->i = 7;  
-   System::Console::WriteLine(v->i);  
-   System::Console::WriteLine(mv->i);  
-}  
+int main() {
+   V ^ v = gcnew V;   // imnplicit boxing
+   v->i=8;
+   System::Console::WriteLine(v->i);
+   pin_ptr<V> mv = &*v;
+   mv->i = 7;
+   System::Console::WriteLine(v->i);
+   System::Console::WriteLine(mv->i);
+}
 ```
 
-```Output  
-8  
-7  
-7  
+```Output
+8
+7
+7
 ```
 
 ## See Also

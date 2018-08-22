@@ -18,8 +18,8 @@ Specifies a property setting function.
 
 ## Syntax
 
-```cpp  
-[propput]  
+```cpp
+[propput]
 ```
 
 ## Remarks
@@ -41,7 +41,7 @@ See the example for [bindable](../windows/bindable.md) for a sample use of **pro
 |**Required attributes**|None|
 |**Invalid attributes**|`propget`, `propputref`|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 

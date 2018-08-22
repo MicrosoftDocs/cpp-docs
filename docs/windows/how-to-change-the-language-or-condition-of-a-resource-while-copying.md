@@ -22,7 +22,7 @@ While copying in a resource, you can change its language property or condition p
 
 The language and condition of a resource are shown in parentheses after the name of the resource in the Workspace window. In this example the resource named IDD_AboutBox is using Finnish as its language and its condition is XX33.
 
-```cpp  
+```cpp
 IDD_AboutBox (Finnish - XX33)  
 ```
 

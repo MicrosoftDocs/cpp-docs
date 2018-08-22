@@ -18,8 +18,8 @@ Identifies an interface as an Object Description Language (ODL) interface. The M
 
 ## Syntax
 
-```cpp  
-[odl]  
+```cpp
+[odl]
 ```
 
 ## Remarks
@@ -28,24 +28,24 @@ The **odl** C++ attribute has the same functionality as the [odl](http://msdn.mi
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_odl.cpp  
-// compile with: /LD  
-#include <unknwn.h>  
+```cpp
+// cpp_attr_ref_odl.cpp
+// compile with: /LD
+#include <unknwn.h>
 [module(name="MyLIb")];
 
-[odl, oleautomation, dual, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IMyInterface  
-{  
-   HRESULT x();  
+[odl, oleautomation, dual, uuid("00000000-0000-0000-0000-000000000001")]
+__interface IMyInterface
+{
+   HRESULT x();
 };
 
-[coclass, uuid("00000000-0000-0000-0000-000000000002")]  
-class cmyClass : public IMyInterface  
-{  
-public:  
-   HRESULT x(){}  
-};  
+[coclass, uuid("00000000-0000-0000-0000-000000000002")]
+class cmyClass : public IMyInterface
+{
+public:
+   HRESULT x(){}
+};
 ```
 
 ## Requirements
@@ -59,9 +59,9 @@ public:
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
-[Interface Attributes](../windows/interface-attributes.md)   
+[Interface Attributes](../windows/interface-attributes.md)  

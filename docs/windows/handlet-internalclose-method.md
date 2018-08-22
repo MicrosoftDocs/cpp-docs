@@ -18,8 +18,8 @@ Closes the current **HandleT** object.
 
 ## Syntax
 
-```cpp  
-virtual bool InternalClose();  
+```cpp
+virtual bool InternalClose();
 ```
 
 ## Return Value

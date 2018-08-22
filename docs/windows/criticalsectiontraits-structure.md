@@ -18,8 +18,8 @@ Specializes a `CriticalSection` object to support either an invalid critical sec
 
 ## Syntax
 
-```  
-struct CriticalSectionTraits;  
+```
+struct CriticalSectionTraits;
 ```
 
 ## Members

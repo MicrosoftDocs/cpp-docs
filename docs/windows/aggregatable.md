@@ -18,10 +18,10 @@ Indicates that the class supports aggregation.
 
 ## Syntax
 
-```cpp  
-[ aggregatable(   
-   value  
-) ]  
+```cpp
+[ aggregatable(
+   value
+) ]
 ```
 
 ### Parameters
@@ -53,18 +53,18 @@ If this attribute is used within a project that uses ATL, the behavior of the at
 
 ## Example
 
-```cpp  
-// cpp_attr_ref_aggregatable.cpp  
-// compile with: /LD  
-#define _ATL_ATTRIBUTES  
-#include "atlbase.h"  
+```cpp
+// cpp_attr_ref_aggregatable.cpp
+// compile with: /LD
+#define _ATL_ATTRIBUTES
+#include "atlbase.h"
 #include "atlcom.h"
 
 [module(name="MyModule")];
 
-[ coclass, aggregatable(allowed),  
-  uuid("1a8369cc-1c91-42c4-befa-5a5d8c9d2529")]  
-class CMyClass {};  
+[ coclass, aggregatable(allowed),
+  uuid("1a8369cc-1c91-42c4-befa-5a5d8c9d2529")]
+class CMyClass {};
 ```
 
 ## Requirements
@@ -78,11 +78,11 @@ class CMyClass {};
 |**Required attributes**|One or more of the following: `coclass`, `progid`, or `vi_progid`.|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)   
+[Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)  

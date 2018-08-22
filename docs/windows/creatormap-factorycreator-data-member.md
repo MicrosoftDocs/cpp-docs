@@ -18,12 +18,12 @@ Supports the WRL infrastructure and is not intended to be used directly from you
 
 ## Syntax
 
-```cpp  
-HRESULT (*factoryCreator)(  
-   unsigned int* currentflags,  
-   const CreatorMap* entry,  
-   REFIID iidClassFactory,  
- IUnknown** factory);  
+```cpp
+HRESULT (*factoryCreator)(
+   unsigned int* currentflags,
+   const CreatorMap* entry,
+   REFIID iidClassFactory,
+ IUnknown** factory);
 ```
 
 ### Parameters

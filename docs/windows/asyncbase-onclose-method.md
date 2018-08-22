@@ -18,10 +18,10 @@ When overridden in a derived class, closes an asynchronous operation.
 
 ## Syntax
 
-```cpp  
-virtual void OnClose(  
-   void  
-) = 0;  
+```cpp
+virtual void OnClose(
+   void
+) = 0;
 ```
 
 ## Requirements

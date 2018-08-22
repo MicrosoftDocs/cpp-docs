@@ -18,8 +18,8 @@ Decrements the number of objects tracked by the module.
 
 ## Syntax
 
-```cpp  
-virtual long DecrementObjectCount();  
+```cpp
+virtual long DecrementObjectCount();
 ```
 
 ## Return Value

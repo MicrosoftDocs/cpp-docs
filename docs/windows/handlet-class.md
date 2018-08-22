@@ -18,11 +18,11 @@ Represents a handle to an object.
 
 ## Syntax
 
-```cpp  
-template <  
-   typename HandleTraits  
->  
-class HandleT;  
+```cpp
+template <
+   typename HandleTraits
+>
+class HandleT;
 ```
 
 ### Parameters

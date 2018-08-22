@@ -25,9 +25,9 @@ ms.workload: ["cplusplus", "uwp"]
 
 3. Assign an ID to the blank button at the right end of the toolbar. You can do so by editing the **ID** property in the [Properties Window](/visualstudio/ide/reference/properties-window). For example, you may want to give a toolbar button the same ID as a menu option. In this case, use the drop-down list box to select the **ID** of the menu option.
 
-     -or-
+   -or-
 
-     Select the blank button at the right end of the toolbar (in the **Toolbar View** pane) and begin drawing. A default button command ID is assigned (ID_BUTTON\<n>).
+   Select the blank button at the right end of the toolbar (in the **Toolbar View** pane) and begin drawing. A default button command ID is assigned (ID_BUTTON\<n>).
 
 You can also copy and paste an image onto a toolbar as a new button.
 
@@ -46,7 +46,7 @@ You can also copy and paste an image onto a toolbar as a new button.
 
 5. From the **Edit** menu, choose **Paste**.
 
-     The image will appear on your toolbar as a new button.
+   The image will appear on your toolbar as a new button.
 
 For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 

@@ -18,10 +18,10 @@ Specifies the ProgID for a COM object.
 
 ## Syntax
 
-```cpp  
-[ progid(  
-   name  
-) ];  
+```cpp
+[ progid(
+   name
+) ];
 ```
 
 ### Parameters
@@ -58,11 +58,11 @@ See the example for [coclass](../windows/coclass.md) for a sample use of **progi
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 
 [IDL Attributes](../windows/idl-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[ProgID Key](http://msdn.microsoft.com/library/windows/desktop/dd542719)   
+[ProgID Key](http://msdn.microsoft.com/library/windows/desktop/dd542719)  

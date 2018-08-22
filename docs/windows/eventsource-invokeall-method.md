@@ -18,158 +18,158 @@ Calls each event handler associated with the current [EventSource](../windows/ev
 
 ## Syntax
 
-```cpp  
-void InvokeAll();  
-template <  
-   typename T0  
->  
-void InvokeAll(  
-   T0arg0  
-);  
-template <  
-   typename T0,  
-   typename T1  
->  
-void InvokeAll(  
-   T0arg0,  
-   T1arg1  
-);  
-template <  
-   typename T0,  
-   typename T1,  
-   typename T2  
->  
-void InvokeAll(  
-   T0arg0,  
-   T1arg1,  
-   T2arg2  
-);  
-template <  
-   typename T0,  
-   typename T1,  
-   typename T2,  
-   typename T3  
->  
-void InvokeAll(  
-   T0arg0,  
-   T1arg1,  
-   T2arg2,  
-   T3arg3  
-);  
-template <  
-   typename T0,  
-   typename T1,  
-   typename T2,  
-   typename T3,  
-   typename T4  
->  
-void InvokeAll(  
-   T0arg0,  
-   T1arg1,  
-   T2arg2,  
-   T3arg3,  
-   T4arg4  
-);  
-template <  
-   typename T0,  
-   typename T1,  
-   typename T2,  
-   typename T3,  
-   typename T4,  
-   typename T5  
->  
-void InvokeAll(  
-   T0arg0,  
-   T1arg1,  
-   T2arg2,  
-   T3arg3,  
-   T4arg4,  
-   T5arg5  
-);  
-template <  
-   typename T0,  
-   typename T1,  
-   typename T2,  
-   typename T3,  
-   typename T4,  
-   typename T5,  
-   typename T6  
->  
-void InvokeAll(  
-   T0arg0,  
-   T1arg1,  
-   T2arg2,  
-   T3arg3,  
-   T4arg4,  
-   T5arg5,  
-   T6arg6  
-);  
-template <  
-   typename T0,  
-   typename T1,  
-   typename T2,  
-   typename T3,  
-   typename T4,  
-   typename T5,  
-   typename T6,  
-   typename T7  
->  
-void InvokeAll(  
-   T0arg0,  
-   T1arg1,  
-   T2arg2,  
-   T3arg3,  
-   T4arg4,  
-   T5arg5,  
-   T6arg6,  
-   T7arg7  
-);  
-template <  
-   typename T0,  
-   typename T1,  
-   typename T2,  
-   typename T3,  
-   typename T4,  
-   typename T5,  
-   typename T6,  
-   typename T7,  
-   typename T8  
->  
-void InvokeAll(  
-   T0arg0,  
-   T1arg1,  
-   T2arg2,  
-   T3arg3,  
-   T4arg4,  
-   T5arg5,  
-   T6arg6,  
-   T7arg7,  
-   T8arg8  
-);  
-template <  
-   typename T0,  
-   typename T1,  
-   typename T2,  
-   typename T3,  
-   typename T4,  
-   typename T5,  
-   typename T6,  
-   typename T7,  
-   typename T8,  
-   typename T9  
->  
-void InvokeAll(  
-   T0arg0,  
-   T1arg1,  
-   T2arg2,  
-   T3arg3,  
-   T4arg4,  
-   T5arg5,  
-   T6arg6,  
-   T7arg7,  
-   T8arg8,  
-   T9arg9  
-);  
+```cpp
+void InvokeAll();
+template <
+   typename T0
+>
+void InvokeAll(
+   T0arg0
+);
+template <
+   typename T0,
+   typename T1
+>
+void InvokeAll(
+   T0arg0,
+   T1arg1
+);
+template <
+   typename T0,
+   typename T1,
+   typename T2
+>
+void InvokeAll(
+   T0arg0,
+   T1arg1,
+   T2arg2
+);
+template <
+   typename T0,
+   typename T1,
+   typename T2,
+   typename T3
+>
+void InvokeAll(
+   T0arg0,
+   T1arg1,
+   T2arg2,
+   T3arg3
+);
+template <
+   typename T0,
+   typename T1,
+   typename T2,
+   typename T3,
+   typename T4
+>
+void InvokeAll(
+   T0arg0,
+   T1arg1,
+   T2arg2,
+   T3arg3,
+   T4arg4
+);
+template <
+   typename T0,
+   typename T1,
+   typename T2,
+   typename T3,
+   typename T4,
+   typename T5
+>
+void InvokeAll(
+   T0arg0,
+   T1arg1,
+   T2arg2,
+   T3arg3,
+   T4arg4,
+   T5arg5
+);
+template <
+   typename T0,
+   typename T1,
+   typename T2,
+   typename T3,
+   typename T4,
+   typename T5,
+   typename T6
+>
+void InvokeAll(
+   T0arg0,
+   T1arg1,
+   T2arg2,
+   T3arg3,
+   T4arg4,
+   T5arg5,
+   T6arg6
+);
+template <
+   typename T0,
+   typename T1,
+   typename T2,
+   typename T3,
+   typename T4,
+   typename T5,
+   typename T6,
+   typename T7
+>
+void InvokeAll(
+   T0arg0,
+   T1arg1,
+   T2arg2,
+   T3arg3,
+   T4arg4,
+   T5arg5,
+   T6arg6,
+   T7arg7
+);
+template <
+   typename T0,
+   typename T1,
+   typename T2,
+   typename T3,
+   typename T4,
+   typename T5,
+   typename T6,
+   typename T7,
+   typename T8
+>
+void InvokeAll(
+   T0arg0,
+   T1arg1,
+   T2arg2,
+   T3arg3,
+   T4arg4,
+   T5arg5,
+   T6arg6,
+   T7arg7,
+   T8arg8
+);
+template <
+   typename T0,
+   typename T1,
+   typename T2,
+   typename T3,
+   typename T4,
+   typename T5,
+   typename T6,
+   typename T7,
+   typename T8,
+   typename T9
+>
+void InvokeAll(
+   T0arg0,
+   T1arg1,
+   T2arg2,
+   T3arg3,
+   T4arg4,
+   T5arg5,
+   T6arg6,
+   T7arg7,
+   T8arg8,
+   T9arg9
+);
 ```
 
 ### Parameters
@@ -240,5 +240,5 @@ The ninth event handler argument.
 
 **Namespace:** Microsoft::WRL
 
- ## See Also
+## See Also
 [EventSource Class](../windows/eventsource-class.md)

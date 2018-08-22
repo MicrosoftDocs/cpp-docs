@@ -18,15 +18,15 @@ Get the upper bound on the number of bytes needed to marshal the specified inter
 
 ## Syntax
 
-```cpp  
-STDMETHODIMP GetMarshalSizeMax(  
-   __in REFIID riid,  
-   __in_opt void *pv,  
-   __in DWORD dwDestContext,  
-   __reserved void *pvDestContext,  
-   __in DWORD mshlflags,  
-   __out DWORD *pSize  
-) override;  
+```cpp
+STDMETHODIMP GetMarshalSizeMax(
+   __in REFIID riid,
+   __in_opt void *pv,
+   __in DWORD dwDestContext,
+   __reserved void *pvDestContext,
+   __in DWORD mshlflags,
+   __out DWORD *pSize
+) override;
 ```
 
 ### Parameters

@@ -18,10 +18,10 @@ Makes types that have already been compiled into another type library available 
 
 ## Syntax
 
-```cpp  
-[ importlib(  
-   "tlb_file"  
-) ];  
+```cpp
+[ importlib(
+   "tlb_file"
+) ];
 ```
 
 ### Parameters
@@ -37,11 +37,11 @@ The **importlib** C++ attribute causes an `importlib` statement to be placed in 
 
 The following code shows an example of how to use **importlib**:
 
-```cpp  
-// cpp_attr_ref_importlib.cpp  
-// compile with: /LD  
-[module(name="MyLib")];  
-[importlib("importlib.tlb")];  
+```cpp
+// cpp_attr_ref_importlib.cpp
+// compile with: /LD
+[module(name="MyLib")];
+[importlib("importlib.tlb")];
 ```
 
 ## Requirements
@@ -55,7 +55,7 @@ The following code shows an example of how to use **importlib**:
 |**Required attributes**|None|
 |**Invalid attributes**|None|
 
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
 
 ## See Also
 

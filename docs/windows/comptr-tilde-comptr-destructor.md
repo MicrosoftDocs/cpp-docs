@@ -18,8 +18,8 @@ Deinitializes an instance of **ComPtr**.
 
 ## Syntax
 
-```cpp  
-WRL_NOTHROW ~ComPtr();  
+```cpp
+WRL_NOTHROW ~ComPtr();
 ```
 
 ## Requirements
