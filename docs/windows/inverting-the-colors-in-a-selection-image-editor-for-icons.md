@@ -13,15 +13,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Inverting the Colors in a Selection (Image Editor for Icons)
-The **Image** editor provides a convenient way to invert colors in the selected part of the image so you can tell how an image would appear with inverted colors.  
-  
-### To invert colors in the current selection  
-  
-1.  On the **Image** menu, click **Invert Colors**.  
-  
-## Requirements  
- None  
-  
-## See Also  
- [Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)   
- [Working with Color](../windows/working-with-color-image-editor-for-icons.md)
+
+The **Image** editor provides a convenient way to invert colors in the selected part of the image so you can tell how an image would appear with inverted colors.
+
+### To invert colors in the current selection
+
+1. On the **Image** menu, click **Invert Colors**.
+
+## Requirements
+
+None
+
+## See Also
+
+[Accelerator Keys](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Working with Color](../windows/working-with-color-image-editor-for-icons.md)

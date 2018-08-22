@@ -15,17 +15,17 @@ ms.workload: ["cplusplus", "uwp"]
 # Custom Image Dialog Box (Image Editor for Icons)
 Enables you to create a new image with a custom size and number of colors.
  **Width**  
- Provides a space for you to enter the width of the custom image in pixels (1 - 512, limit of 2048).  
+ Provides a space for you to enter the width of the custom image in pixels (1 - 512, limit of 2048).
   
  **Height**  
- Provides a space for you to enter the height for the custom image in pixels (1 - 512, limit of 2048).  
+ Provides a space for you to enter the height for the custom image in pixels (1 - 512, limit of 2048).
   
  **Colors**  
- Provides a space for you to choose the number of colors for the custom image: 2, 16, or 256.  
+ Provides a space for you to choose the number of colors for the custom image: 2, 16, or 256.
   
-## Requirements  
- None  
+## Requirements
+ None
   
-## See Also  
- [New \<Device> Image Type Dialog Box](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)   
+## See Also
+ [New \<Device> Image Type Dialog Box](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md)  
  [Image Editor for Icons](../windows/image-editor-for-icons.md)

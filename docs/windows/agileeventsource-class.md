@@ -23,12 +23,13 @@ class AgileEventSource
     : public Microsoft::WRL::EventSource<TDelegateInterface, TEventSourceOptions>;
 ```
 
-## Parameters  
- *TDelegateInterface*  
- The interface to a delegate that represents an event handler.
+## Parameters
 
- *TEventSourceOptions*  
- An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
+*TDelegateInterface*  
+The interface to a delegate that represents an event handler.
+
+*TEventSourceOptions*  
+An [InvokeModeOptions](invokemodeoptions-structure.md) stucture whose invokeMode field is set to `InvokeMode::StopOnFirstError` or `InvokeMode::FireAll`.
 
 ## Remarks
 
@@ -36,14 +37,14 @@ The vast majority of components in the Windows Runtime are agile components. For
 
 ## Inheritance Hierarchy
 
- `EventSource`
- `AgileEventSource`
+`EventSource`
+`AgileEventSource`
 
 ## Requirements
 
- **Header:** event.h
+**Header:** event.h
 
- **Namespace:** Microsoft::WRL
+**Namespace:** Microsoft::WRL
 
 ## Members
 
@@ -80,4 +81,5 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 
 ## See Also
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

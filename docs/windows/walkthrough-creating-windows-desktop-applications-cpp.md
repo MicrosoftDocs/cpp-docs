@@ -557,4 +557,5 @@ As promised, here's the complete code for the working application.
 Congratulations! You've completed this walkthrough and built a traditional Windows desktop application.
 
 ## See Also
- [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)
+
+[Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)

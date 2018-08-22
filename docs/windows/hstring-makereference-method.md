@@ -12,38 +12,43 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::MakeReference Method
-Creates an `HStringReference` object from a specified string parameter.  
-  
-## Syntax  
-  
-```cpp  
-template<unsigned int sizeDest>  
-    static HStringReference MakeReference(  
-              wchar_t const (&str)[ sizeDest]);  
-  
-    template<unsigned int sizeDest>  
-    static HStringReference MakeReference(  
-              wchar_t const (&str)[sizeDest],   
-              unsigned int len);  
-```  
-  
-### Parameters  
- *sizeDest*  
- A template parameter that specifies the size of the destination `HStringReference` buffer.  
-  
- *str*  
- A reference to a wide-character string.  
-  
- *len*  
- The maximum length of the *str* parameter buffer to use in this operation. If the *len* parameter isn't specified, the entire *str* parameter is used.  
-  
-## Return Value  
- An `HStringReference` object whose value is the same as the specified *str* parameter.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HString Class](../windows/hstring-class.md)
+
+Creates an `HStringReference` object from a specified string parameter.
+
+## Syntax
+
+```cpp
+template<unsigned int sizeDest>
+    static HStringReference MakeReference(
+              wchar_t const (&str)[ sizeDest]);
+
+    template<unsigned int sizeDest>
+    static HStringReference MakeReference(
+              wchar_t const (&str)[sizeDest],
+              unsigned int len);
+```
+
+### Parameters
+
+*sizeDest*  
+A template parameter that specifies the size of the destination `HStringReference` buffer.
+
+*str*  
+A reference to a wide-character string.
+
+*len*  
+The maximum length of the *str* parameter buffer to use in this operation. If the *len* parameter isn't specified, the entire *str* parameter is used.
+
+## Return Value
+
+An `HStringReference` object whose value is the same as the specified *str* parameter.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HString Class](../windows/hstring-class.md)

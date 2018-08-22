@@ -13,36 +13,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # InterfaceTraits::FillArrayWithIid Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-__forceinline static void FillArrayWithIid(  
-   _Inout_ unsigned long &index,  
-   _In_ IID* iids  
-);  
-```  
-  
-### Parameters  
- *index*  
- Pointer to a field that contains a zero-based index value.  
-  
- *iids*  
- An array of interface IDs.  
-  
-## Remarks  
- Assigns the interface ID of `Base` to the array element specified by the index argument.  
-  
- Contrary to the name of this API, only one array element is modified; not the entire array.  
-  
- For more information about `Base`, see the Public Typedefs section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [InterfaceTraits Structure](../windows/interfacetraits-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+__forceinline static void FillArrayWithIid(
+   _Inout_ unsigned long &index,
+   _In_ IID* iids
+);
+```
+
+### Parameters
+
+*index*  
+Pointer to a field that contains a zero-based index value.
+
+*iids*  
+An array of interface IDs.
+
+## Remarks
+
+Assigns the interface ID of `Base` to the array element specified by the index argument.
+
+Contrary to the name of this API, only one array element is modified; not the entire array.
+
+For more information about `Base`, see the Public Typedefs section in [InterfaceTraits Structure](../windows/interfacetraits-structure.md).
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[InterfaceTraits Structure](../windows/interfacetraits-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

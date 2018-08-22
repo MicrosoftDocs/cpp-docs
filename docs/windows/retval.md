@@ -13,36 +13,40 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # retval
-Designates the parameter that receives the return value of the member.  
-  
-## Syntax  
-  
-```cpp  
-[retval]  
-```  
-  
-## Remarks  
- The **retval** C++ attribute has the same functionality as the [retval](http://msdn.microsoft.com/library/windows/desktop/aa367158) MIDL attribute.  
-  
- **retval** must appear on the last argument in a function's declaration.  
-  
-## Example  
- See the example for [bindable](../windows/bindable.md) for a sample use of **retval**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Interface parameter, interface method|  
-|**Repeatable**|No|  
-|**Required attributes**|**out**|  
-|**Invalid attributes**|**in**|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+
+Designates the parameter that receives the return value of the member.
+
+## Syntax
+
+```cpp
+[retval]
+```
+
+## Remarks
+
+The **retval** C++ attribute has the same functionality as the [retval](http://msdn.microsoft.com/library/windows/desktop/aa367158) MIDL attribute.
+
+**retval** must appear on the last argument in a function's declaration.
+
+## Example
+
+See the example for [bindable](../windows/bindable.md) for a sample use of **retval**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Interface parameter, interface method|
+|**Repeatable**|No|
+|**Required attributes**|**out**|
+|**Invalid attributes**|**in**|
+
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Parameter Attributes](../windows/parameter-attributes.md)  
+[Method Attributes](../windows/method-attributes.md)  

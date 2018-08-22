@@ -35,13 +35,13 @@ For project dialog boxes that are already associated with a class, you can take 
 
    - BN_SETFOCUS
 
-    > [!NOTE]
-    > Alternately, select the dialog box and click the **ControlEvents** button to display the list of common Windows events for all controls in the dialog box.
+   > [!NOTE]
+   > Alternately, select the dialog box and click the **ControlEvents** button to display the list of common Windows events for all controls in the dialog box.
 
 3. In the **Properties** window, click the right column next to the event to handle, and then select the suggested notification event name (for example, `OnBnClickedOK` handles BN_CLICKED).
 
-    > [!NOTE]
-    > Alternately, you can provide an event handler name of your choice, rather than selecting the default event handler name.
+   > [!NOTE]
+   > Alternately, you can provide an event handler name of your choice, rather than selecting the default event handler name.
 
    Once you have selected the event, Visual Studio opens the **Text Editor** and displays the event handler's code. For example, the following code is added for the default `OnBnClickedOK`:
 
@@ -57,14 +57,16 @@ If you want to add the event handler to a class other than the one implementing 
 For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
 
 ## Requirements
- Win32
+
+Win32
 
 ## See Also
- [Default Control Events](../windows/default-control-events.md)  
- [Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)  
- [Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)  
- [Adding a Class](../ide/adding-a-class-visual-cpp.md)  
- [Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)  
- [Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)  
- [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)  
- [MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)  
+
+[Default Control Events](../windows/default-control-events.md)  
+[Defining Member Variables for Dialog Controls](../windows/defining-member-variables-for-dialog-controls.md)  
+[Dialog Box Controls and Variable Types](../ide/dialog-box-controls-and-variable-types.md)  
+[Adding a Class](../ide/adding-a-class-visual-cpp.md)  
+[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)  
+[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)  
+[Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)  
+[MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)  

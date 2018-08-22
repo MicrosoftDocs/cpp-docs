@@ -12,18 +12,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::Release Method
-Deletes the underlying string value and intializes the current **HString** object to an empty value.  
-  
-## Syntax  
-  
-```cpp  
+
+Deletes the underlying string value and intializes the current **HString** object to an empty value.
+
+## Syntax
+
+```cpp
 void Release() throw()  
-```  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HString Class](../windows/hstring-class.md)
+```
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HString Class](../windows/hstring-class.md)

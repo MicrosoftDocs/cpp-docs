@@ -13,48 +13,51 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # control
-Specifies that the user-defined type is a control.  
-  
-## Syntax  
-  
-```cpp  
-[control]  
-```  
-  
-## Remarks  
- The **control** attribute implies the [coclass](../windows/coclass.md) attribute. The **control** C++ attribute has the same functionality as the [control](http://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL attribute.  
-  
-## Example  
-  
-```cpp  
-// cpp_attr_ref_control.cpp  
-// compile with: /LD  
-#include <windows.h>  
-[module(name="Test", control=true)];  
-  
-[object, uuid("9e66a290-4365-11d2-a997-00c04fa37ddb")]  
-__interface ICustom {  
-   HRESULT Custom([in] long l, [out, retval] long *pLong);  
-};  
-  
-[coclass, control, appobject, uuid("9e66a294-4365-11d2-a997-00c04fa37ddb")]  
-class CTest : public ICustom {};  
-```  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|**class**, **struct**|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
+
+Specifies that the user-defined type is a control.
+
+## Syntax
+
+```cpp
+[control]
+```
+
+## Remarks
+
+The **control** attribute implies the [coclass](../windows/coclass.md) attribute. The **control** C++ attribute has the same functionality as the [control](http://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL attribute.
+
+## Example
+
+```cpp
+// cpp_attr_ref_control.cpp
+// compile with: /LD
+#include <windows.h>
+[module(name="Test", control=true)];
+
+[object, uuid("9e66a290-4365-11d2-a997-00c04fa37ddb")]
+__interface ICustom {
+   HRESULT Custom([in] long l, [out, retval] long *pLong);
+};
+
+[coclass, control, appobject, uuid("9e66a294-4365-11d2-a997-00c04fa37ddb")]
+class CTest : public ICustom {};
+```
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|**class**, **struct**|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Class Attributes](../windows/class-attributes.md)  
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  

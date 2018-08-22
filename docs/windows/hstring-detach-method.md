@@ -12,21 +12,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HString::Detach Method
-Disassociates the specified **HString** object from its underlying value.  
-  
-## Syntax  
-  
-```cpp  
+
+Disassociates the specified **HString** object from its underlying value.
+
+## Syntax
+
+```cpp
 HSTRING Detach() throw()  
-```  
-  
-## Return Value  
- The underlying **HString** value before the detach operation started.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HString Class](../windows/hstring-class.md)
+```
+
+## Return Value
+
+The underlying **HString** value before the detach operation started.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HString Class](../windows/hstring-class.md)

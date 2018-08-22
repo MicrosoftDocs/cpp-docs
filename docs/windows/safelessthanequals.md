@@ -13,47 +13,53 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeLessThanEquals
-Compares two numbers.  
-  
-## Syntax  
-  
-```cpp  
-template <typename T, typename U>  
-inline bool SafeLessThanEquals (  
-   const T t,  
-   const U u  
-) throw ();  
-```  
-  
-### Parameters  
- [in] *t*  
- The first number to compare. This must be of type `T`.  
-  
- [in] *u*  
- The second number to compare. This must be of type `U`.  
-  
-## Return Value  
- **true** if *t* is less than or equal to *u*; otherwise **false**.  
-  
-## Remarks  
- **SafeLessThanEquals** extends the regular comparison operator by enabling you to compare two different types of numbers.  
-  
- This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single comparison operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  
-  
+
+Compares two numbers.
+
+## Syntax
+
+```cpp
+template <typename T, typename U>
+inline bool SafeLessThanEquals (
+   const T t,
+   const U u
+) throw ();
+```
+
+### Parameters
+
+[in] *t*  
+The first number to compare. This must be of type `T`.
+
+[in] *u*  
+The second number to compare. This must be of type `U`.
+
+## Return Value
+
+**true** if *t* is less than or equal to *u*; otherwise **false**.
+
+## Remarks
+
+**SafeLessThanEquals** extends the regular comparison operator by enabling you to compare two different types of numbers.
+
+This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single comparison operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).
+
 > [!NOTE]
->  This method should only be used when a single mathematical operation must be protected. If there are multiple operations, you should use the `SafeInt` class instead of calling the individual stand-alone functions.  
-  
- For more information about the template types `T` and `U`, see [SafeInt Functions](../windows/safeint-functions.md).  
-  
-## Requirements  
- **Header:** safeint.h  
-  
- **Namespace:** Microsoft::Utilities  
-  
-## See Also  
- [SafeInt Functions](../windows/safeint-functions.md)   
- [SafeInt Library](../windows/safeint-library.md)   
- [SafeInt Class](../windows/safeint-class.md)   
- [SafeGreaterThan](../windows/safegreaterthan.md)   
- [SafeLessThan](../windows/safelessthan.md)   
- [SafeGreaterThanEquals](../windows/safegreaterthanequals.md)
+> This method should only be used when a single mathematical operation must be protected. If there are multiple operations, you should use the `SafeInt` class instead of calling the individual stand-alone functions.
+
+For more information about the template types `T` and `U`, see [SafeInt Functions](../windows/safeint-functions.md).
+
+## Requirements
+
+**Header:** safeint.h
+
+**Namespace:** Microsoft::Utilities
+
+## See Also
+
+[SafeInt Functions](../windows/safeint-functions.md)  
+[SafeInt Library](../windows/safeint-library.md)  
+[SafeInt Class](../windows/safeint-class.md)  
+[SafeGreaterThan](../windows/safegreaterthan.md)  
+[SafeLessThan](../windows/safelessthan.md)  
+[SafeGreaterThanEquals](../windows/safegreaterthanequals.md)

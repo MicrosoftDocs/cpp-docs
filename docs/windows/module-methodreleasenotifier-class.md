@@ -13,49 +13,53 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier Class
-Invokes an event handler when the last object in the current module is released. The event handler is specified by an object and its pointer-to-a-method member.  
-  
-## Syntax  
-  
-```cpp  
-template<typename T>  
-class MethodReleaseNotifier : public ReleaseNotifier;  
-```  
-  
-### Parameters  
- *T*  
- The type of the object whose member function is the event handler.  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[Module::MethodReleaseNotifier::MethodReleaseNotifier Constructor](../windows/module-methodreleasenotifier-methodreleasenotifier-constructor.md)|Initializes a new instance of the **Module::MethodReleaseNotifier** class.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[Module::MethodReleaseNotifier::Invoke Method](../windows/module-methodreleasenotifier-invoke-method.md)|Calls the event handler associated with the current **Module::MethodReleaseNotifier** object.|  
-  
-### Protected Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[Module::MethodReleaseNotifier::method_ Data Member](../windows/module-methodreleasenotifier-method-data-member.md)|Holds a pointer to the event handler for the current **Module::MethodReleaseNotifier** object.|  
-|[Module::MethodReleaseNotifier::object_ Data Member](../windows/module-methodreleasenotifier-object-data-member.md)|Holds a pointer to the object whose member function is the event handler for the current **Module::MethodReleaseNotifier** object.|  
-  
-## Inheritance Hierarchy  
- `ReleaseNotifier`  
-  
- `MethodReleaseNotifier`  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## See Also
- [Module Class](../windows/module-class.md)
+
+Invokes an event handler when the last object in the current module is released. The event handler is specified by an object and its pointer-to-a-method member.
+
+## Syntax
+
+```cpp
+template<typename T>
+class MethodReleaseNotifier : public ReleaseNotifier;
+```
+
+### Parameters
+
+*T*  
+The type of the object whose member function is the event handler.
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[Module::MethodReleaseNotifier::MethodReleaseNotifier Constructor](../windows/module-methodreleasenotifier-methodreleasenotifier-constructor.md)|Initializes a new instance of the **Module::MethodReleaseNotifier** class.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[Module::MethodReleaseNotifier::Invoke Method](../windows/module-methodreleasenotifier-invoke-method.md)|Calls the event handler associated with the current **Module::MethodReleaseNotifier** object.|
+
+### Protected Data Members
+
+|Name|Description|
+|----------|-----------------|
+|[Module::MethodReleaseNotifier::method_ Data Member](../windows/module-methodreleasenotifier-method-data-member.md)|Holds a pointer to the event handler for the current **Module::MethodReleaseNotifier** object.|
+|[Module::MethodReleaseNotifier::object_ Data Member](../windows/module-methodreleasenotifier-object-data-member.md)|Holds a pointer to the object whose member function is the event handler for the current **Module::MethodReleaseNotifier** object.|
+
+## Inheritance Hierarchy
+
+`ReleaseNotifier`
+
+`MethodReleaseNotifier`
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+[Module Class](../windows/module-class.md)

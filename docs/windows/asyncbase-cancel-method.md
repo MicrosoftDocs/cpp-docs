@@ -13,26 +13,31 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::Cancel Method
-Cancels an asynchronous operation.  
-  
-## Syntax  
-  
-```cpp  
-STDMETHOD(  
-   Cancel  
-)(void);  
-```  
-  
-## Return Value  
- By default, always returns S_OK.  
-  
-## Remarks  
- **Cancel()** is a default implementation of `IAsyncInfo::Cancel`, and does no actual work. To actually cancel an asynchronous operation, override the `OnCancel()` pure virtual method.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Cancels an asynchronous operation.
+
+## Syntax
+
+```cpp
+STDMETHOD(
+   Cancel
+)(void);
+```
+
+## Return Value
+
+By default, always returns S_OK.
+
+## Remarks
+
+**Cancel()** is a default implementation of `IAsyncInfo::Cancel`, and does no actual work. To actually cancel an asynchronous operation, override the `OnCancel()` pure virtual method.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

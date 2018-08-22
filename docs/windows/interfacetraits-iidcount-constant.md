@@ -13,22 +13,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # InterfaceTraits::IidCount Constant
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-static const unsigned long IidCount = 1;  
-```  
-  
-## Remarks  
- Holds the number of interface IDs associated with the current **InterfaceTraits** object.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [InterfaceTraits Structure](../windows/interfacetraits-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+static const unsigned long IidCount = 1;
+```
+
+## Remarks
+
+Holds the number of interface IDs associated with the current **InterfaceTraits** object.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[InterfaceTraits Structure](../windows/interfacetraits-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

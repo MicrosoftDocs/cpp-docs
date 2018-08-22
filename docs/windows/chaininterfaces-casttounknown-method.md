@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ChainInterfaces::CastToUnknown Method
-Casts the interface pointer of the type defined by the *I0* template parameter to a pointer to `IUnknown`.  
-  
-## Syntax  
-  
-```cpp  
-__forceinline IUnknown* CastToUnknown();  
-```  
-  
-## Return Value  
- A pointer to `IUnknown`.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ChainInterfaces Structure](../windows/chaininterfaces-structure.md)
+
+Casts the interface pointer of the type defined by the *I0* template parameter to a pointer to `IUnknown`.
+
+## Syntax
+
+```cpp
+__forceinline IUnknown* CastToUnknown();
+```
+
+## Return Value
+
+A pointer to `IUnknown`.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ChainInterfaces Structure](../windows/chaininterfaces-structure.md)

@@ -13,34 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # unique (C++)
-Specifies a unique pointer.  
-  
-## Syntax  
-  
-```cpp  
-[unique]  
-```  
-  
-## Remarks  
- The **unique** C++ attribute has the same functionality as the [unique](http://msdn.microsoft.com/library/windows/desktop/aa367294) MIDL attribute.  
-  
-## Example  
- See the [ref](../windows/ref-cpp.md) example for a sample use of **unique**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|**typedef**, **struct**, **union**, interface parameter, interface method|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
+
+Specifies a unique pointer.
+
+## Syntax
+
+```cpp
+[unique]
+```
+
+## Remarks
+
+The **unique** C++ attribute has the same functionality as the [unique](http://msdn.microsoft.com/library/windows/desktop/aa367294) MIDL attribute.
+
+## Example
+
+See the [ref](../windows/ref-cpp.md) example for a sample use of **unique**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|**typedef**, **struct**, **union**, interface parameter, interface method|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
+[Parameter Attributes](../windows/parameter-attributes.md)  

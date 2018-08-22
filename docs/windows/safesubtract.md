@@ -13,47 +13,53 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeSubtract
-Subtracts two numbers in a way that protects against overflow.  
-  
-## Syntax  
-  
-```cpp  
-template<typename T, typename U>  
-inline bool SafeSubtract (  
-   T t,  
-   U u,  
-   T& result  
-) throw ();  
-```  
-  
-### Parameters  
- [in] *t*  
- The first number in the subtraction. This must be of type `T`.  
-  
- [in] *u*  
- The number to subtract from *t*. This must be of type `U`.  
-  
- [out] *result*  
- The parameter where **SafeSubtract** stores the result.  
-  
-## Return Value  
- **true** if no error occurs; **false** if an error occurs.  
-  
-## Remarks  
- This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single subtraction operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).  
-  
+
+Subtracts two numbers in a way that protects against overflow.
+
+## Syntax
+
+```cpp
+template<typename T, typename U>
+inline bool SafeSubtract (
+   T t,
+   U u,
+   T& result
+) throw ();
+```
+
+### Parameters
+
+[in] *t*  
+The first number in the subtraction. This must be of type `T`.
+
+[in] *u*  
+The number to subtract from *t*. This must be of type `U`.
+
+[out] *result*  
+The parameter where **SafeSubtract** stores the result.
+
+## Return Value
+
+**true** if no error occurs; **false** if an error occurs.
+
+## Remarks
+
+This method is part of [SafeInt Library](../windows/safeint-library.md) and is designed for a single subtraction operation without creating an instance of the [SafeInt Class](../windows/safeint-class.md).
+
 > [!NOTE]
->  This method should only be used when a single mathematical operation must be protected. If there are multiple operations, you should use the `SafeInt` class instead of calling the individual stand-alone functions.  
-  
- For more information about the template types `T` and `U`, see [SafeInt Functions](../windows/safeint-functions.md).  
-  
-## Requirements  
- **Header:** safeint.h  
-  
- **Namespace:** Microsoft::Utilities  
-  
-## See Also  
- [SafeInt Functions](../windows/safeint-functions.md)   
- [SafeInt Library](../windows/safeint-library.md)   
- [SafeInt Class](../windows/safeint-class.md)   
- [SafeAdd](../windows/safeadd.md)
+> This method should only be used when a single mathematical operation must be protected. If there are multiple operations, you should use the `SafeInt` class instead of calling the individual stand-alone functions.
+
+For more information about the template types `T` and `U`, see [SafeInt Functions](../windows/safeint-functions.md).
+
+## Requirements
+
+**Header:** safeint.h
+
+**Namespace:** Microsoft::Utilities
+
+## See Also
+
+[SafeInt Functions](../windows/safeint-functions.md)  
+[SafeInt Library](../windows/safeint-library.md)  
+[SafeInt Class](../windows/safeint-class.md)  
+[SafeAdd](../windows/safeadd.md)

@@ -13,31 +13,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Implements::FillArrayWithIid Method
-Inserts the interface ID specified by the current zeroth template parameter into the specified array element.  
-  
-## Syntax  
-  
-```cpp  
-__forceinline static void FillArrayWithIid(  
-   unsigned long &index,  
-   _In_ IID* iids  
-);  
-```  
-  
-### Parameters  
- *index*  
- A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.  
-  
- *iids*  
- An array of type IID.  
-  
-## Remarks  
- Internal helper function.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Implements Structure](../windows/implements-structure.md)
+
+Inserts the interface ID specified by the current zeroth template parameter into the specified array element.
+
+## Syntax
+
+```cpp
+__forceinline static void FillArrayWithIid(
+   unsigned long &index,
+   _In_ IID* iids
+);
+```
+
+### Parameters
+
+*index*  
+A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.
+
+*iids*  
+An array of type IID.
+
+## Remarks
+
+Internal helper function.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Implements Structure](../windows/implements-structure.md)
