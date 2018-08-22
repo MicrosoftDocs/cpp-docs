@@ -18,8 +18,7 @@ Dissociates a handler method from an event.
 ## Syntax  
   
 ```cpp 
-  
-      long  __unhook(  
+long  __unhook(  
    &SourceClass::EventMethod,  
    source,  
    &ReceiverClass::HandlerMethod  
@@ -48,11 +47,11 @@ long  __unhook(
  The interface name being unhooked from *receiver*, only for COM event receivers in which the *layout_dependent* parameter of the [event_receiver](../windows/event-receiver.md) attribute is **true**.  
   
  *source*  
- A pointer to an instance of the event source. Depending on the code `type` specified in **event_receiver**, *source* can be one of the following:  
+ A pointer to an instance of the event source. Depending on the code `type` specified in `event_receiver`, *source* can be one of the following:  
   
 -   A native event source object pointer.  
   
--   An **IUnknown**-based pointer (COM source).  
+-   An `IUnknown`-based pointer (COM source).  
   
 -   A managed object pointer (for managed events).  
   
@@ -94,7 +93,7 @@ long  __unhook(
 ## Example  
  See [Event Handling in Native C++](../cpp/event-handling-in-native-cpp.md) and [Event Handling in COM](../cpp/event-handling-in-com.md) for samples.  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [event_source](../windows/event-source.md)   
  [event_receiver](../windows/event-receiver.md)   

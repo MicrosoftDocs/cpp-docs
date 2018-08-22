@@ -27,7 +27,7 @@ The **Advanced** property page in the **MIDL** folder specifies the following MI
   
 -   Check Stub Data ([/error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Validate Parameters ([/robust](http://msdn.microsoft.com/library/windows/desktop/aa367363)) *  
+-   Validate Parameters ([/robust](http://msdn.microsoft.com/library/windows/desktop/aa367363)) \*  
   
 -   Struct Member Alignment ([/Zp](http://msdn.microsoft.com/library/windows/desktop/aa367388))  
   

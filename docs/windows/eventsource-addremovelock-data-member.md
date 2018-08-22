@@ -17,7 +17,7 @@ Synchronizes access to the [targets_](../windows/eventsource-targets-data-member
   
 ## Syntax  
   
-```  
+```cpp  
 Wrappers::SRWLock addRemoveLock_;  
 ```  
   

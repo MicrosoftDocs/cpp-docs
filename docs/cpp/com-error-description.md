@@ -20,9 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 _bstr_t Description( ) const;  
-  
 ```  
   
 ## Return Value  
@@ -33,5 +31,5 @@ _bstr_t Description( ) const;
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_error Class](../cpp/com-error-class.md)

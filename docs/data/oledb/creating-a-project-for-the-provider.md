@@ -12,9 +12,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Project for the Provider
-#### To create a project in which the OLE DB provider will reside  
+### To create a project in which the OLE DB provider will reside  
   
-1.  From the **File** menu, click `New`, and then click **Project**.  
+1.  From the **File** menu, click **New**, and then click **Project**.  
   
      The **New Project** dialog box appears.  
   

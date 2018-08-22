@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Creating and Setting Guides and Margins
-Whether you are moving controls, adding controls, or rearranging a current layout, guides can help you align controls accurately within a dialog box. Guides appear as blue dotted lines across the dialog box displayed in the editor and corresponding arrows in the rulers (at the top and along the left side of the Dialog editor).  
+Whether you are moving controls, adding controls, or rearranging a current layout, guides can help you align controls accurately within a dialog box. Guides appear as blue dotted lines across the dialog box displayed in the editor and corresponding arrows in the rulers (at the top and along the left side of the **Dialog** editor).  
   
  When you create a dialog box, four margins are provided. Margins are modified guides, appearing as blue dotted lines.  
   
@@ -34,18 +34,17 @@ Whether you are moving controls, adding controls, or rearranging a current layou
   
 -   Drag the corresponding arrow off the ruler.  
   
-#### To move margins  
+### To move margins  
   
 1.  Drag the margin to the new position.  
   
      To make a margin disappear, move the margin to a zero position. To bring the margin back, place the pointer over the margin's zero position and move the margin into position.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
   
-### Requirements  
+## Requirements  
  Win32  
   
 ## See Also  
  [Dialog Editor States (Guides and Grids)](../windows/dialog-editor-states-guides-and-grids.md)   
  [Controls in Dialog Boxes](../windows/controls-in-dialog-boxes.md)
-

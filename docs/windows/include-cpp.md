@@ -17,14 +17,13 @@ Specifies one or more header files to be included in the generated .idl file.
   
 ## Syntax  
   
-```  
-  
-      [ include(  
+```cpp  
+[ include(  
    header_file  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *header_file*  
  The name of a file that you want included in the generated .idl file.  
   
@@ -34,9 +33,9 @@ Specifies one or more header files to be included in the generated .idl file.
  The **include** C++ attribute has the same functionality as the [include](http://msdn.microsoft.com/library/windows/desktop/aa367052) MIDL attribute.  
   
 ## Example  
- The following code shows an example of how to use **include**. For this example, the file include.h contains only a #include statement.  
+ The following code shows an example of how to use **include**. For this example, the file include.h contains only a `#include` statement.  
   
-```  
+```cpp  
 // cpp_attr_ref_include.cpp  
 // compile with: /LD  
 [module(name="MyLib")];  
@@ -62,4 +61,4 @@ Specifies one or more header files to be included in the generated .idl file.
  [import](../windows/import.md)   
  [importidl](../windows/importidl.md)   
  [includelib](../windows/includelib-cpp.md)   
- [importlib](../windows/importlib.md)   
+ [importlib](../windows/importlib.md)   

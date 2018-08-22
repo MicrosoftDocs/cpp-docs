@@ -25,6 +25,25 @@ goto identifier;
  The labeled statement designated by `identifier` must be in the current function. All `identifier` names are members of an internal namespace and therefore do not interfere with other identifiers.  
   
  A statement label is meaningful only to a **goto** statement; otherwise, statement labels are ignored. Labels cannot be redeclared.  
+
+A **goto** statement is not allowed to transfer control to a location that skips over the initialization of any variable that is in scope in that location. The following example raises C2362:
+
+```cpp
+int goto_fn(bool b)
+{
+    if (!b)
+    {
+        goto exit;  // C2362
+    }
+    else
+    { /*...*/ }
+
+    int error_code = 42;
+
+exit:
+    return error_code;
+}
+```
   
  It is good programming style to use the **break**, **continue**, and **return** statements instead of the **goto** statement whenever possible. However, because the **break** statement exits from only one level of a loop, you might have to use a **goto** statement to exit a deeply nested loop.  
   
@@ -74,6 +93,6 @@ Outer loop executing. i = 3
 Jumped to stop. i = 3  
 ```  
   
-## See Also  
+## See also  
  [Jump Statements](../cpp/jump-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

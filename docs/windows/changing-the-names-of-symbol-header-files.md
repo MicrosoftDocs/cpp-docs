@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Changing the Names of Symbol Header Files
-Normally all symbol definitions are saved in Resource.h. However, you may need to change this include filename so that you can, for example, work with more than one resource file in the same directory.  
+Normally all symbol definitions are saved in `Resource.h`. However, you may need to change this include filename so that you can, for example, work with more than one resource file in the same directory.  
   
 ### To change the name of the resource symbol header file  
   
@@ -24,10 +24,9 @@ Normally all symbol definitions are saved in Resource.h. However, you may need t
   
 2.  In the **Symbol header file** box, type the new name for the include file.  
   
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.*  
+ For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.  
   
- Requirements  
-  
+## Requirements  
  Win32  
   
 ## See Also  

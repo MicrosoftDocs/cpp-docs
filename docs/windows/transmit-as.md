@@ -17,15 +17,14 @@ Instructs the compiler to associate a presented type that client and server appl
   
 ## Syntax  
   
-```  
-  
-      [ transmit_as(  
+```cpp  
+[ transmit_as(  
    type  
 ) ]  
 ```  
   
-#### Parameters  
- `type`  
+### Parameters  
+ *type*  
  Specifies the data type that is transmitted between client and server.  
   
 ## Remarks  
@@ -34,7 +33,7 @@ Instructs the compiler to associate a presented type that client and server appl
 ## Example  
  The following code shows a use of the **transmit_as** attribute:  
   
-```  
+```cpp  
 // cpp_attr_ref_transmit_as.cpp  
 // compile with: /LD  
 #include "windows.h"  
@@ -68,7 +67,7 @@ struct _TREE_NODE_TYPE * right;
   
 |||  
 |-|-|  
-|**Applies to**|`typedef`|  
+|**Applies to**|**typedef**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -78,4 +77,4 @@ struct _TREE_NODE_TYPE * right;
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
- [export](../windows/export.md)   
+ [export](../windows/export.md)   

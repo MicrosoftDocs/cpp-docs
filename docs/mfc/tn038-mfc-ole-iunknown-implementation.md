@@ -243,7 +243,7 @@ In addition, interface maps support the following advanced features:
 
 - The implementation is hookable and extensible
 
-For more information on aggregation, see the [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558\(v=vs.85\).aspx) topic.
+For more information on aggregation, see the [Aggregation](/windows/desktop/com/aggregation) topic.
 
 MFC's interface map support is rooted in the `CCmdTarget` class. `CCmdTarget` "*has-a*" reference count as well as all the member functions associated with the [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) implementation (the reference count for example is in `CCmdTarget`). To create a class that supports OLE COM, you derive a class from `CCmdTarget` and use various macros as well as member functions of `CCmdTarget` to implement the desired interfaces. MFC's implementation uses nested classes to define each interface implementation much like the example above. This is made easier with a standard implementation of IUnknown as well as a number of macros that eliminate some of the repetitive code.
 
@@ -352,7 +352,7 @@ In addition, the framework uses message maps internally. This allows you to deri
 
 ### Aggregation and Interface Maps
 
-In addition to supporting stand-alone COM objects, MFC also supports aggregation. Aggregation itself is too complex a topic to discuss here; refer to the [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558\(v=vs.85\).aspx) topic for more information on aggregation. This note will simply describe the support for aggregation built into the framework and interface maps.
+In addition to supporting stand-alone COM objects, MFC also supports aggregation. Aggregation itself is too complex a topic to discuss here; refer to the [Aggregation](/windows/desktop/com/aggregation) topic for more information on aggregation. This note will simply describe the support for aggregation built into the framework and interface maps.
 
 There are two ways to use aggregation: (1) using a COM object that supports aggregation, and (2) implementing an object that can be aggregated by another. These capabilities can be referred to as "using an aggregate object" and "making an object aggregatable". MFC supports both.
 

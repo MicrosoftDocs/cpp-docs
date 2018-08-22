@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::LockShared Method
-Acquires an SRWLock object in shared mode.  
+Acquires an **SRWLock** object in shared mode.  
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLockShared LockShared();  
   
 static SyncLockShared LockShared(  
@@ -25,12 +25,12 @@ static SyncLockShared LockShared(
 );  
 ```  
   
-#### Parameters  
- `lock`  
- Pointer to an SRWLock object.  
+### Parameters  
+ *lock*  
+ Pointer to an **SRWLock** object.  
   
 ## Return Value  
- An SRWLock object in shared mode.  
+ An **SRWLock** object in shared mode.  
   
 ## Requirements  
  **Header:** corewrappers.h  

@@ -27,8 +27,8 @@ The following attributes apply to the methods in a class, coclass, or interface.
 |[defaultbind](../windows/defaultbind.md)|Indicates the single, bindable property that best represents the object.|  
 |[defaultcollelem](../windows/defaultcollelem.md)|Used for Visual Basic code optimization.|  
 |[displaybind](../windows/displaybind.md)|Indicates a property that should be displayed to the user as bindable.|  
-|[helpcontext](../windows/helpcontext.md)|Specifies a context ID that lets the user view information about this element in the Help file.|  
-|[helpfile](../windows/helpfile.md)|Sets the name of the Help file for a type library.|  
+|[helpcontext](../windows/helpcontext.md)|Specifies a context ID that lets the user view information about this element in the **Help** file.|  
+|[helpfile](../windows/helpfile.md)|Sets the name of the **Help** file for a type library.|  
 |[helpstring](../windows/helpstring.md)|Specifies a character string that is used to describe the element to which it applies.|  
 |[helpstringcontext](../windows/helpstringcontext.md)|Specifies the ID of a help topic in an .hlp or .chm file.|  
 |[helpstringdll](../windows/helpstringdll.md)|Specifies the name of the DLL to use to perform document string lookup (localization).|  
@@ -43,10 +43,10 @@ The following attributes apply to the methods in a class, coclass, or interface.
 |[propputref](../windows/propputref.md)|Specifies a property-setting function that uses a reference instead of a value.|  
 |[ptr](../windows/ptr.md)|Designates a pointer as a full pointer.|  
 |[range](../windows/range-cpp.md)|Specifies a range of allowable values for arguments or fields whose values are set at run time.|  
-|[requestedit](../windows/requestedit.md)|Indicates that the property supports the **OnRequestEdit** notification.|  
+|[requestedit](../windows/requestedit.md)|Indicates that the property supports the `OnRequestEdit` notification.|  
 |[restricted](../windows/restricted.md)|Specifies that a member of a module, interface, or dispinterface cannot be called arbitrarily.|  
-|[satype](../windows/satype.md)|Specifies the data type of the **SAFEARRAY** structure.|  
-|[source](../windows/source-cpp.md)|Specifies the control's source interfaces for connection points on a class. On a property or method, the **source** attribute indicates that the member returns an object or VARIANT that is a source of events.|  
+|[satype](../windows/satype.md)|Specifies the data type of the `SAFEARRAY` structure.|  
+|[source](../windows/source-cpp.md)|Specifies the control's source interfaces for connection points on a class. On a property or method, the `source` attribute indicates that the member returns an object or VARIANT that is a source of events.|  
 |[synchronize](../windows/synchronize.md)|Synchronizes access to the target method.|  
 |[vararg](../windows/vararg.md)|Specifies that the function take a variable number of arguments.|  
   

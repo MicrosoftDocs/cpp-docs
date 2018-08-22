@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 SyncLockT(  
    _Inout_ SyncLockT&& other  
 );  
@@ -27,17 +27,17 @@ explicit SyncLockT(
 );  
 ```  
   
-#### Parameters  
- `other`  
- An rvalue-reference to another SyncLockT object.  
+### Parameters  
+ *other*  
+ An rvalue-reference to another **SyncLockT** object.  
   
- `sync`  
- A reference to another SyncLockWithStatusT object.  
+ *sync*  
+ A reference to another `SyncLockWithStatusT` object.  
   
 ## Remarks  
- Initializes a new instance of the SyncLockT class.  
+ Initializes a new instance of the **SyncLockT** class.  
   
- The first constructor initializes the current SyncLockT object from another SyncLockT object specified by parameter `other`, and then invalidates the other SyncLockT object. The second constructor is `protected`, and initializes the current SyncLockT object to an invalid state.  
+ The first constructor initializes the current **SyncLockT** object from another **SyncLockT** object specified by parameter *other*, and then invalidates the other **SyncLockT** object. The second constructor is **protected**, and initializes the current **SyncLockT** object to an invalid state.  
   
 ## Requirements  
  **Header:** corewrappers.h  

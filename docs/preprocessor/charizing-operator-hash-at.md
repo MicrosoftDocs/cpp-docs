@@ -15,27 +15,28 @@ ms.workload: ["cplusplus"]
 # Charizing Operator (#@)
 **Microsoft Specific**  
   
- The charizing operator can be used only with arguments of macros. If **#@** precedes a formal parameter in the definition of the macro, the actual argument is enclosed in single quotation marks and treated as a character when the macro is expanded. For example:  
+The charizing operator can be used only with arguments of macros. If `#@` precedes a formal parameter in the definition of the macro, the actual argument is enclosed in single quotation marks and treated as a character when the macro is expanded. For example:  
   
 ```  
 #define makechar(x)  #@x  
 ```  
   
- causes the statement  
+causes the statement  
   
 ```  
 a = makechar(b);  
 ```  
   
- to be expanded to  
+to be expanded to  
   
 ```  
 a = 'b';  
 ```  
   
- The single-quotation character cannot be used with the charizing operator.  
+The single-quotation character cannot be used with the charizing operator.  
   
- **END Microsoft Specific**  
+**END Microsoft Specific**  
   
 ## See Also  
- [Preprocessor Operators](../preprocessor/preprocessor-operators.md)
+ 
+[Preprocessor Operators](../preprocessor/preprocessor-operators.md)

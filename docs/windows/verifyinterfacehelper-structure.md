@@ -17,7 +17,7 @@ Supports the Windows Runtime C++ Template Library infrastructure and is not inte
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    bool isWinRTInterface,  
    typename I  
@@ -30,11 +30,11 @@ template <
 struct VerifyInterfaceHelper<false, I>;  
 ```  
   
-#### Parameters  
- `I`  
+### Parameters  
+ *I*  
  An interface to verify.  
   
- `isWinRTInterface`  
+ *isWinRTInterface*  
   
 ## Remarks  
  Verifies that the interface specified by the template parameter meets certain requirements.  

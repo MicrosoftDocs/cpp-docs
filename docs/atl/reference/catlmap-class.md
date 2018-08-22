@@ -653,5 +653,5 @@ V  m_value;
   
 ## See Also  
  [Marquee Sample](../../visual-cpp-samples.md)   
- [UpdatePV Sample](../../visual-cpp-samples.md)   
+ [UpdatePV Sample](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)   
  [Class Overview](../../atl/atl-class-overview.md)

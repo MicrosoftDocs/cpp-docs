@@ -67,7 +67,7 @@ Point pt4(pt1); // Copy constructor call
 > [!NOTE]
 > It is advisable to follow the [rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)) that a class which defines a copy assignment operator should also explicitly define copy constructor, destructor, and, starting with C++11, move constructor and move assignment operator.
 
-## See Also
+## See also
 
 - [Operator Overloading](../cpp/operator-overloading.md)
 - [Copy Constructors and Copy Assignment Operators (C++)](../cpp/copy-constructors-and-copy-assignment-operators-cpp.md)

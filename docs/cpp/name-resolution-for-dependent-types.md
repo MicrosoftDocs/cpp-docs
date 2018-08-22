@@ -84,7 +84,7 @@ int main()
   
 ### Output  
   
-```  
+```Output  
 Int MyNamespace::myFunction  
 ```  
   
@@ -120,5 +120,5 @@ int main() {
   
  Conformance with the disambiguation rules is required because, by default, C++ assumes that `AY::Rebind` isn't a template, and so the compiler interprets the following "`<`" as a less-than. It has to know that `Rebind` is a template so that it can correctly parse "`<`" as an angle bracket.  
   
-## See Also  
+## See also  
  [Name Resolution](../cpp/templates-and-name-resolution.md)

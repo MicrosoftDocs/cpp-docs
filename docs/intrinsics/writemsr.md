@@ -37,7 +37,7 @@ void __writemsr( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__writemsr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writemsr`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

@@ -21,23 +21,20 @@ To define a member variable for any dialog box control except buttons, you can u
   
 1.  In the [Dialog editor](../windows/dialog-editor.md), select a control.  
   
-2.  While pressing the **CTRL** key, double-click the dialog box control.  
+2.  While pressing the **Ctrl** key, double-click the dialog box control.  
   
      The [Add Member Variable wizard](../ide/add-member-variable-wizard.md) appears.  
   
 3.  Type the appropriate information in the **Add Member Variable** wizard. For more information, see [Dialog Data Exchange](../mfc/dialog-data-exchange.md).  
   
-4.  Click **OK** to return to the Dialog editor.  
+4.  Click **OK** to return to the **Dialog** editor.  
   
     > [!TIP]
     >  To jump from any dialog box control to its existing handler, double-click the control.  
   
-
-  
  You can also use the **Member Variables** tab in **MFC Class Wizard** to add new member variables for a specified class, and view those that have already been defined.  
   
- Requirements  
-  
+## Requirements  
  MFC  
   
 ## See Also  
@@ -49,4 +46,3 @@ To define a member variable for any dialog box control except buttons, you can u
  [Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)   
  [Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)   
  [MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)
-

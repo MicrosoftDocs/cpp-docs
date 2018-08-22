@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventSource::GetSize Method
-Retrieves the number of event handlers associated with the current EventSource object  
+Retrieves the number of event handlers associated with the current **EventSource** object  
   
 ## Syntax  
   
-```  
+```cpp  
 size_t GetSize() const;  
 ```  
   

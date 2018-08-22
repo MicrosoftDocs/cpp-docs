@@ -54,9 +54,9 @@ The ostream_iterator class must satisfy the requirements for an output iterator.
 
 |Operator|Description|
 |-|-|
-|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression * `i` = `x`.|
+|[operator*](#op_star)|Dereferencing operator used to implement the output iterator expression \* `i` = `x`.|
 |[operator++](#op_add_add)|A nonfunctional increment operator that returns an `ostream_iterator` to the same object it addressed before the operation was called.|
-|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression * `i` = `x` for writing to an output stream.|
+|[operator=](#op_eq)|Assignment operator used to implement the output iterator expression \* `i` = `x` for writing to an output stream.|
 
 ## Requirements
 
@@ -214,7 +214,7 @@ Elements written to output stream:
 
 ## <a name="op_eq"></a>  ostream_iterator::operator=
 
-Assignment operator used to implement the output_iterator expression * `i` = `x` for writing to an output stream.
+Assignment operator used to implement the output_iterator expression \* `i` = `x` for writing to an output stream.
 
 ```cpp
 ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
@@ -231,7 +231,7 @@ The operator inserts *val* into the output stream associated with the object, fo
 
 ### Remarks
 
-The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression * `ii` = `t` be valid and says nothing about the operator or the operator= on their own. This member operator returns `*this`.
+The requirements for an output iterator that the `ostream_iterator` must satisfy require only the expression \* `ii` = `t` be valid and says nothing about the operator or the operator= on their own. This member operator returns `*this`.
 
 ### Example
 

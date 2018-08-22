@@ -21,6 +21,6 @@ Designates a null pointer constant of type `std::nullptr_t`, which is convertibl
 ## Remarks  
  Avoid using NULL or zero (`0`) as a null pointer constant; **nullptr** is less vulnerable to misuse and works better in most situations.  For example, given `func(std::pair<const char *, double>)`, then calling `func(std::make_pair(NULL, 3.14))` causes a compiler error.  The macro NULL expands to `0`, so that the call `std::make_pair(0, 3.14)` returns `std::pair<int, double>`, which is not convertible to func()'s `std::pair<const char *, double>` parameter type.  Calling `func(std::make_pair(nullptr, 3.14))` successfully compiles because `std::make_pair(nullptr, 3.14)` returns `std::pair<std::nullptr_t, double>`, which is convertible to `std::pair<const char *, double>`.  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [nullptr](../windows/nullptr-cpp-component-extensions.md)

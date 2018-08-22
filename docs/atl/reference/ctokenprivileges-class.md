@@ -267,7 +267,7 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 ### Return Value  
  Returns the updated `CTokenPrivileges` object.  
   
-##  <a name="operator_const_token_privileges__star"></a>  CTokenPrivileges::operator const TOKEN_PRIVILEGES *  
+##  <a name="operator_const_token_privileges__star"></a>  CTokenPrivileges::operator const TOKEN_PRIVILEGES \*  
  Casts a value to a pointer to the `TOKEN_PRIVILEGES` structure.  
   
 ```  

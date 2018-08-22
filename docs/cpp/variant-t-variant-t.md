@@ -20,7 +20,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 _variant_t( ) throw( );  
   
 _variant_t(  
@@ -188,7 +187,7 @@ _variant_t(
  An **unsigned int** value to be copied into the new `_variant_t` object.  
   
  *i8Src*  
- An __**int64** value to be copied into the new `_variant_t` object.  
+ An **__int64** value to be copied into the new `_variant_t` object.  
   
  *ui8Src*  
  An **unsigned __int64** value to be copied into the new `_variant_t` object.  
@@ -203,7 +202,7 @@ _variant_t(
   
 -   **_variant_t( _variant_t&**  *var_t_Src*  **)** Constructs a `_variant_t` object from another `_variant_t` object. The variant type is retained.  
   
--   **_variant_t( VARIANT&**  *varSrc* **, bool**  `fCopy`  **)** Constructs a `_variant_t` object from an existing `VARIANT` object. If `fCopy` is **false**, the **VARIANT** object is attached to the new object without making a copy.  
+-   **_variant_t( VARIANT&**  *varSrc* **, bool**  `fCopy`  **)** Constructs a `_variant_t` object from an existing `VARIANT` object. If *fCopy* is **false**, the **VARIANT** object is attached to the new object without making a copy.  
   
 -   **_variant_t( short**  *sSrc* **, VARTYPE**  `vtSrc`  **= VT_I2 )** Constructs a `_variant_t` object of type VT_I2 or VT_BOOL from a **short** integer value. Any other `VARTYPE` results in an E_INVALIDARG error.  
   
@@ -233,5 +232,5 @@ _variant_t(
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)

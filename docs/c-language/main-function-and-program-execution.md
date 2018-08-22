@@ -30,4 +30,5 @@ main( int argc, char *argv[ ], char *envp[ ] )
  See [Using wmain](../c-language/using-wmain.md) for a description of the wide-character version of **main**.  
   
 ## See Also  
- [main: Program Startup](../cpp/main-program-startup.md)
+ [main: Program Startup](../cpp/main-program-startup.md)   
+ [Parsing C Command-Line Arguments](../c-language/parsing-c-command-line-arguments.md)

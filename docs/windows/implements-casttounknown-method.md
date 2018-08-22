@@ -13,16 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Implements::CastToUnknown Method
-Gets a pointer to the underlying IUnknown interface.  
+Gets a pointer to the underlying `IUnknown` interface.  
   
 ## Syntax  
   
-```  
+```cpp  
 __forceinline IUnknown* CastToUnknown();  
 ```  
   
 ## Return Value  
- This operation always succeeds and returns the IUnknown pointer.  
+ This operation always succeeds and returns the `IUnknown` pointer.  
   
 ## Remarks  
  Internal helper function.  

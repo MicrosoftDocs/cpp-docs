@@ -27,8 +27,8 @@ statements
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`identifier`|The identifier whose existence you want to test.|  
-|`statements`|One or more statements to execute if `identifier` does not exist.|  
+|*identifier*|The identifier whose existence you want to test.|  
+|*statements*|One or more statements to execute if *identifier* does not exist.|  
   
 ## Remarks  
   
@@ -48,7 +48,7 @@ statements
 ## Example  
  For an example about how to use **__if_not_exists**, see [__if_exists Statement](../cpp/if-exists-statement.md).  
   
-## See Also  
+## See also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [__if_exists Statement](../cpp/if-exists-statement.md)

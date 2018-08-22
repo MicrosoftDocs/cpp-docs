@@ -239,25 +239,25 @@ The following table shows the mapping from unwind codes to opcodes. The most com
 
 |Byte 1|Byte 2|Byte 3|Byte 4|Opsize|Explanation|
 |------------|------------|------------|------------|------------|-----------------|
-|00-7F||||16|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x7F) * 4|
+|00-7F||||16|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x7F) \* 4|
 |80-BF|00-FF|||32|`pop   {r0-r12, lr}`<br /><br /> where LR is popped if Code & 0x2000 and r0-r12 are popped if the corresponding bit is set in Code & 0x1FFF|
 |C0-CF||||16|`mov   sp,rX`<br /><br /> where X is Code & 0x0F|
 |D0-D7||||16|`pop   {r4-rX,lr}`<br /><br /> where X is (Code & 0x03) + 4 and LR is popped if Code & 0x04|
 |D8-DF||||32|`pop   {r4-rX,lr}`<br /><br /> where X is (Code & 0x03) + 8 and LR is popped if Code & 0x04|
 |E0-E7||||32|`vpop  {d8-dX}`<br /><br /> where X is (Code & 0x07) + 8|
-|E8-EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> where X is (Code & 0x03FF) * 4|
+|E8-EB|00-FF|||32|`addw  sp,sp,#X`<br /><br /> where X is (Code & 0x03FF) \* 4|
 |EC-ED|00-FF|||16|`pop   {r0-r7,lr}`<br /><br /> where LR is popped if Code & 0x0100 and r0-r7 are popped if the corresponding bit is set in Code & 0x00FF|
 |EE|00-0F|||16|Microsoft-specific|
 |EE|10-FF|||16|Available|
-|EF|00-0F|||32|`ldr   lr,[sp],#X`<br /><br /> where X is (Code & 0x000F) * 4|
+|EF|00-0F|||32|`ldr   lr,[sp],#X`<br /><br /> where X is (Code & 0x000F) \* 4|
 |EF|10-FF|||32|Available|
 |F0-F4||||-|Available|
 |F5|00-FF|||32|`vpop  {dS-dE}`<br /><br /> where S is (Code & 0x00F0) >> 4 and E is Code & 0x000F|
 |F6|00-FF|||32|`vpop  {dS-dE}`<br /><br /> where S is ((Code & 0x00F0) >> 4) + 16 and E is (Code & 0x000F) + 16|
-|F7|00-FF|00-FF||16|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFF) * 4|
-|F8|00-FF|00-FF|00-FF|16|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFFFF) * 4|
-|F9|00-FF|00-FF||32|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFF) * 4|
-|FA|00-FF|00-FF|00-FF|32|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFFFF) * 4|
+|F7|00-FF|00-FF||16|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFF) \* 4|
+|F8|00-FF|00-FF|00-FF|16|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFFFF) \* 4|
+|F9|00-FF|00-FF||32|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFF) \* 4|
+|FA|00-FF|00-FF|00-FF|32|`add   sp,sp,#X`<br /><br /> where X is (Code & 0x00FFFFFF) \* 4|
 |FB||||16|nop (16-bit)|
 |FC||||32|nop (32-bit)|
 |FD||||16|end + 16-bit nop in epilogue|
@@ -742,3 +742,4 @@ Function:
 
 [Overview of ARM ABI Conventions](../build/overview-of-arm-abi-conventions.md)  
 [Common Visual C++ ARM Migration Issues](../build/common-visual-cpp-arm-migration-issues.md)  
+

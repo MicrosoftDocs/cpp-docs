@@ -304,7 +304,7 @@ inline unsigned int mad(
  The third specified argument.  
   
 ### Return Value  
- The result of `_X` * `_Y` + `_Z`.  
+ The result of `_X` \* `_Y` + `_Z`.  
   
 ##  <a name="make_array"></a>  make_array  
  Create an array from a Direct3D buffer interface pointer.  

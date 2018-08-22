@@ -17,21 +17,21 @@ Retrieves the handle of the asynchronous operation.
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHOD(  
    get_Id  
 )(unsigned int *id) override;  
 ```  
   
-#### Parameters  
- `id`  
+### Parameters  
+ *id*  
  The location where the handle is to be stored.  
   
 ## Return Value  
  S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.  
   
 ## Remarks  
- This method implements IAsyncInfo::get_Id.  
+ This method implements `IAsyncInfo::get_Id`.  
   
 ## Requirements  
  **Header:** async.h  

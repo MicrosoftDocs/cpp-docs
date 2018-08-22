@@ -134,7 +134,7 @@ Building Lists of Columns to Bind Dynamically
  The result of the preceding procedures is two main lists: Columns-to-Bind-Dynamically containing the names of columns and Dynamic-Column-Values containing the values in the columns for the current record.  
   
 > [!TIP]
->  If the new columns are not all of the same data type, you might want an extra parallel list containing items that somehow define the type of each corresponding element in the column list. (You can use the values **AFX_RFX_BOOL**, **AFX_RFX_BYTE**, and so on, for this if you want. These constants are defined in AFXDB.H.) Choose a list type based on how you represent the column data types.  
+>  If the new columns are not all of the same data type, you might want an extra parallel list containing items that somehow define the type of each corresponding element in the column list. (You can use the values AFX_RFX_BOOL, AFX_RFX_BYTE, and so on, for this if you want. These constants are defined in AFXDB.H.) Choose a list type based on how you represent the column data types.  
   
 ###  <a name="_core_adding_rfx_calls_to_bind_the_columns"></a> Adding RFX Calls to Bind the Columns  
  Finally, arrange for the dynamic binding to occur by placing RFX calls for the new columns in your `DoFieldExchange` function.  
@@ -145,7 +145,7 @@ Building Lists of Columns to Bind Dynamically
   
  In the common case, in your `RFX_Text` function calls you extract `CString` objects from the lists, as in the following lines of code, where Columns-to-Bind-Dynamically is a `CStringList` called `m_listName` and Dynamic-Column-Values is a `CStringList` called `m_listValue`:  
   
-```  
+```cpp  
 RFX_Text( pFX,   
             m_listName.GetNext( posName ),   
             m_listValue.GetNext( posValue ));  
@@ -156,7 +156,7 @@ RFX_Text( pFX,
 > [!TIP]
 >  If the new columns are different data types, use a switch statement in your loop to call the appropriate RFX function for each type.  
   
- When the framework calls `DoFieldExchange` during the **Open** process to bind columns to the recordset, the RFX calls for the static columns bind those columns. Then your loop repeatedly calls RFX functions for the dynamic columns.  
+ When the framework calls `DoFieldExchange` during the `Open` process to bind columns to the recordset, the RFX calls for the static columns bind those columns. Then your loop repeatedly calls RFX functions for the dynamic columns.  
   
 ## See Also  
  [Recordset (ODBC)](../../data/odbc/recordset-odbc.md)   

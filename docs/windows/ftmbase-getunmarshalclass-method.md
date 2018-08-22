@@ -17,7 +17,7 @@ Gets the CLSID that COM uses to locate the DLL containing the code for the corre
   
 ## Syntax  
   
-```  
+```cpp  
 STDMETHODIMP GetUnmarshalClass(  
    __in REFIID riid,  
    __in_opt void *pv,  
@@ -28,27 +28,27 @@ STDMETHODIMP GetUnmarshalClass(
 ) override;  
 ```  
   
-#### Parameters  
- `riid`  
+### Parameters  
+ *riid*  
  Reference to the identifier of the interface to be marshaled.  
   
- `pv`  
+ *pv*  
  Pointer to the interface to be marshaled; can be NULL if the caller does not have a pointer to the desired interface.  
   
- `dwDestContext`  
+ *dwDestContext*  
  Destination context where the specified interface is to be unmarshaled.  
   
  Specify one or more MSHCTX enumeration values.  
   
  Unmarshaling can occur either in another apartment of the current process (MSHCTX_INPROC) or in another process on the same computer as the current process (MSHCTX_LOCAL).  
   
- `pvDestContext`  
+ *pvDestContext*  
  Reserved for future use; must be NULL.  
   
- `mshlflags`  
+ *mshlflags*  
  When this operation completes, pointer to the CLSID to be used to create a proxy in the client process.  
   
- `pCid`  
+ *pCid*  
   
 ## Return Value  
  S_OK if successful; otherwise, S_FALSE.  

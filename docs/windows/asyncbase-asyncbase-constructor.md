@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::AsyncBase Constructor
-Initializes an instance of the AsyncBase class.  
+Initializes an instance of the **AsyncBase** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 AsyncBase();  
 ```  
   

@@ -20,13 +20,12 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 BSTR copy( bool fCopy = true ) const;  
 ```  
   
 #### Parameters  
  *fCopy*  
- If TRUE, `copy` returns a copy of the contained `BSTR`, otherwise `copy` returns the actual BSTR.  
+ If TRUE, **copy** returns a copy of the contained `BSTR`, otherwise **copy** returns the actual BSTR.  
   
 ## Remarks  
  Returns a newly allocated copy of the encapsulated `BSTR` object.  
@@ -41,5 +40,5 @@ STDMETHODIMP CAlertMsg::get_ConnectionStr(BSTR *pVal){ //  m_bsConStr is _bstr_t
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

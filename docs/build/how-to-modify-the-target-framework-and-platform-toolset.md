@@ -52,7 +52,7 @@ You can change Visual C++ project settings to target different versions of the .
   
 3.  In the left pane of the dialog box, expand **Configuration Properties** and then select **General**.  
   
-4.  In the right pane, select **Platform Toolset** and then select the toolset you want from the drop-down list. For example, if you have installed the [!INCLUDE[vs_dev10_long](../build/includes/vs_dev10_long_md.md)] toolset, select **Visual Studio 2010 (v100)** to use it for your project.  
+4.  In the right pane, select **Platform Toolset** and then select the toolset you want from the drop-down list. For example, if you have installed the Visual Studio 2010 toolset, select **Visual Studio 2010 (v100)** to use it for your project.  
   
 5.  Choose the **OK** button.  
   

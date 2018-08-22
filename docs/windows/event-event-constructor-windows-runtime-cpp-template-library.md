@@ -12,11 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Event::Event Constructor (Windows Runtime C++ Template Library)
-Initializes a new instance of the Event class.  
+Initializes a new instance of the **Event** class.  
   
 ## Syntax  
   
-```  
+```cpp  
 explicit Event(  
    HANDLE h = HandleT::Traits::GetInvalidValue()  
 );  
@@ -25,9 +25,9 @@ WRL_NOTHROW Event(
 );  
 ```  
   
-#### Parameters  
- `h`  
- Handle to an event. By default, `h` is initialized to `nullptr`.  
+### Parameters  
+ *h*  
+ Handle to an event. By default, *h* is initialized to **nullptr**.  
   
 ## Requirements  
  **Header:** corewrappers.h  

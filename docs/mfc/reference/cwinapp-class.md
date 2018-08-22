@@ -367,7 +367,7 @@ virtual void DoWaitCursor(int nCode);
  [!code-cpp[NVC_MFCWindowing#37](../../mfc/reference/codesnippet/cpp/cwinapp-class_3.cpp)]  
   
 ##  <a name="enabled2dsupport"></a>  CWinApp::EnableD2DSupport  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 is required.  
   
  Enables application D2D support. Call this method before the main window is initialized.  
   

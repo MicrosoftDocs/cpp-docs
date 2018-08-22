@@ -14,15 +14,14 @@ ms.workload: ["cplusplus", "uwp"]
 Declares an enumeration at namespace scope, which is a user-defined type consisting of a set of named constants called enumerators.  
   
 ## All Runtimes  
- **Remarks**  
+### Remarks
   
- C++/CX and C++/CLI support `public enum class` and `private enum class` which are similar to the standard C++ `enum class` but with the addition of the accessibility specifier. Under **/clr**, the C++11 `enum class` type is permitted but will generate warning C4472 which is intended to ensure that you really want the ISO enum type and not the C++/CX and C++/CLI type. For more information about the ISO Standard C++ `enum` keyword, see [Enumerations](../cpp/enumerations-cpp.md).  
+ C++/CX and C++/CLI support **public enum class** and **private enum class** which are similar to the standard C++ **enum class** but with the addition of the accessibility specifier. Under **/clr**, the C++11 **enum class** type is permitted but will generate warning C4472 which is intended to ensure that you really want the ISO enum type and not the C++/CX and C++/CLI type. For more information about the ISO Standard C++ **enum** keyword, see [Enumerations](../cpp/enumerations-cpp.md).  
   
 ## Windows Runtime  
- **Syntax**  
+### Syntax  
   
-```  
-  
+```cpp  
       access  
       enum class  
       enumeration-identifier  
@@ -30,10 +29,9 @@ Declares an enumeration at namespace scope, which is a user-defined type consist
 accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [var];  
 ```  
   
- **Parameters**  
-  
+### Parameters  
  *access*  
- The accessibility of the enumeration, which can be `public` or `private`.  
+ The accessibility of the enumeration, which can be **public** or **private**.  
   
  *enumeration-identifier*  
  The name of the enumeration.  
@@ -41,7 +39,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
  *underlying-type*  
  (Optional) The underlying type of the enumeration.  
   
- (Optional. Windows Runtime only) The underlying type of the enumeration, which can be `bool`, `char`, `char16`, `int16`, `uint16`, `int`, `uint32`, `int64`, or `uint64`.  
+ (Optional. Windows Runtime only) The underlying type of the enumeration, which can be **bool**, **char**, `char16`, `int16`, `uint16`, **int**, `uint32`, `int64`, or `uint64`.  
   
  *enumerator-list*  
  A comma-delimited list of enumerator names.  
@@ -51,7 +49,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
  *var*  
  (Optional) The name of a variable of the enumeration type.  
   
- **Remarks**  
+### Remarks 
   
  For more information, and examples, see [Enums](http://msdn.microsoft.com/%20library/windows/apps/hh755820.aspx).  
   
@@ -59,42 +57,41 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
   
 -   If *underlying-type* is numeric, and an enumerator specifies the maximum value for that type, the value of the next implicitly defined enumeratoin cannot be represented.  
   
--   If *underlying-type* is `bool`, and more than two enumerators are implicitly defined, the enumerators after the first two cannot be represented.  
+-   If *underlying-type* is **bool**, and more than two enumerators are implicitly defined, the enumerators after the first two cannot be represented.  
   
 -   If *underlying-type* is `char16`, and the enumeration value ranges from 0xD800 through 0xDFFF, the value can be represented. However, the value logically incorrect because it represents half a Unicode surrogate pair and should not appear in isolation.  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime 
- **Syntax**  
+### Syntax
   
-```  
-  
+```cpp  
       access  
       enum class  
       name [:type] { enumerator-list } var;  
 accessenum structname [:type] { enumerator-list } var;  
 ```  
   
- **Parameters**  
+ ### Parameters  
   
- `access`  
- The accessibility of the enum.  Can be either **public** or `private`.  
+ *access*  
+ The accessibility of the enum. Can be either **public** or **private**.  
   
- `enumerator-list`  
+ *enumerator-list*  
  A comma-separated list of the identifiers (enumerators) in the enumeration.  
   
- `name`  
- The name of the enumeration.  Anonymous managed enumerations are not allowed.  
+ *name*  
+ The name of the enumeration. Anonymous managed enumerations are not allowed.  
   
- `type` (optional)  
- The underlying type of the *identifiers*.  This can be any scalar type, such as signed or unsigned versions of int, short, or long.  `bool` or `char` is also allowed.  
+ *type* (optional)  
+ The underlying type of the *identifiers*. This can be any scalar type, such as signed or unsigned versions of **int**, **short**, or **long**.  **bool** or **char** is also allowed.  
   
- `var` (optional)  
+ *var* (optional)  
  The name of a variable of the enumeration type.  
   
- **Remarks**  
+### Remarks 
   
  **enum class** and **enum struct** are equivalent declarations.  
   
@@ -135,9 +132,9 @@ static const int mon = 1;
   
  In Visual C++ 2002 and Visual C++ 2003, enumerators were weakly injected (visible in the enclosing scope unless there was another identifier with the same name).  
   
- If a standard C++ enum is defined (without **class** or `struct`), compiling with **/clr** will cause the enumeration to be compiled as a managed enum.  The enumeration still has the semantics of an unmanaged enumeration.  Note, the compiler injects an attribute, `Microsoft::VisualC::NativeEnumAttribute`, which the Visual C++ compiler recognizes, to identify a programmer's intent for the enum to be a native enum.  Other compilers will simply see the standard enum as a managed enum.  
+ If a standard C++ enum is defined (without **class** or **struct**), compiling with `/clr` will cause the enumeration to be compiled as a managed enum.  The enumeration still has the semantics of an unmanaged enumeration.  Note, the compiler injects an attribute, `Microsoft::VisualC::NativeEnumAttribute`, which the Visual C++ compiler recognizes, to identify a programmer's intent for the enum to be a native enum.  Other compilers will simply see the standard enum as a managed enum.  
   
- A named, standard enum compiled with /clr will be visible in the assembly as a managed enum, and can be consumed by any other managed compiler.   However, an unnamed standard enum will not be publicly visible from the assembly.  
+ A named, standard enum compiled with `/clr` will be visible in the assembly as a managed enum, and can be consumed by any other managed compiler.   However, an unnamed standard enum will not be publicly visible from the assembly.  
   
  In Visual C++ 2002 and Visual C++ 2003, a standard enum used as the type in a function parameter:  
   
@@ -155,13 +152,13 @@ int main() {
   
  would emit the following in MSIL for the function signature:  
   
-```  
+```cpp  
 void f(int32);  
 ```  
   
  However, in current versions of the compiler, the standard enum is emitted as a managed enum with a [NativeEnumAttribute] and the following in MSIL for the function signature:  
   
-```  
+```cpp  
 void f(E)  
 ```  
   
@@ -172,12 +169,9 @@ void f(E)
 -   [Underlying Type of an Enum](../dotnet/how-to-define-and-consume-enums-in-cpp-cli.md)  
   
 ### Requirements  
- Compiler option: **/clr**  
+ Compiler option: `/clr`  
   
 ### Examples  
- **Example**  
-  
- desc  
   
 ```cpp  
 // mcppv2_enum_2.cpp  
@@ -208,8 +202,6 @@ int main()
 }   
 ```  
   
- **Output**  
-  
 ```Output  
 no automatic conversion to int: b  
   
@@ -218,7 +210,6 @@ convert to int: 1
 1  
   
 1  
-  
 ```  
   
 ## See Also  

@@ -30,5 +30,5 @@ The Visual C/C++ compiler provides several different conventions for calling int
   
 -   [Obsolete calling conventions](../cpp/obsolete-calling-conventions.md)  
   
-## See Also  
+## See also  
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)

@@ -17,7 +17,7 @@ Registers and retrieves an instance of a specified type defined in a specified c
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T>  
 inline HRESULT ActivateInstance(  
    _In_ HSTRING activatableClassId,  
@@ -25,15 +25,15 @@ inline HRESULT ActivateInstance(
 );  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  A type to activate.  
   
- `activatableClassId`  
- The name of the class ID that defines parameter `T`.  
+ *activatableClassId*  
+ The name of the class ID that defines parameter *T*.  
   
- `instance`  
- When this operation completes, a reference to an instance of `T`.  
+ *instance*  
+ When this operation completes, a reference to an instance of *T*.  
   
 ## Return Value  
  S_OK if successful; otherwise, an error HRESULT that indicates the cause of the error.  

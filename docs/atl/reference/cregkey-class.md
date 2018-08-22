@@ -829,7 +829,7 @@ LONG SetStringValue(
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- This method uses [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923\(v=vs.85\).aspx) to write the value to the registry.  
+ This method uses [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) to write the value to the registry.  
   
 ##  <a name="setvalue"></a>  CRegKey::SetValue  
  Call this method to store data in the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.  

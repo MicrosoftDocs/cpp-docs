@@ -15,7 +15,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 typeid(type-id)  
 typeid(expression)  
 ```  
@@ -31,7 +30,7 @@ typeid(expression)
   
 -   A reference to a class  
   
--   A pointer, dereferenced with *  
+-   A pointer, dereferenced with \*  
   
 -   A subscripted pointer (i.e. [ ]). (Note that it is generally not safe to use a subscript with a pointer to a polymorphic type.)  
   
@@ -89,6 +88,6 @@ T max( T arg1, T arg2 ) {
 }  
 ```  
   
-## See Also  
+## See also  
  [Run-Time Type Information](../cpp/run-time-type-information.md)   
  [Keywords](../cpp/keywords-cpp.md)

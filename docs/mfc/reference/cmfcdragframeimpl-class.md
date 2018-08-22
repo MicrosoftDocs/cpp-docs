@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CMFCDragFrameImpl Class
 The `CMFCDragFrameImpl` class draws the drag rectangle that appears when the user drags a pane in the standard dock mode.  
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
    
 ## Syntax  
   

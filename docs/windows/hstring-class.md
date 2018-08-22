@@ -21,7 +21,7 @@ class HString;
 ```  
   
 ## Remarks  
- The Windows Runtime provides access to strings through HSTRING handles. The HString class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern. 
+ The Windows Runtime provides access to strings through HSTRING handles. The **HString** class provides convenience functions and operators to simplify using HSTRING handles. This class can handle the lifetime of the HSTRING it owns through an RAII pattern. 
   
 ## Members  
   
@@ -29,27 +29,27 @@ class HString;
   
 |Name|Description|  
 |----------|-----------------|  
-|[HString::HString Constructor](../windows/hstring-hstring-constructor.md)|Initializes a new instance of the HString class.|  
-|[HString::~HString Destructor](../windows/hstring-tilde-hstring-destructor.md)|Destroys the current instance of the HString class.|  
+|[HString::HString Constructor](../windows/hstring-hstring-constructor.md)|Initializes a new instance of the **HString** class.|  
+|[HString::~HString Destructor](../windows/hstring-tilde-hstring-destructor.md)|Destroys the current instance of the **HString** class.|  
   
 ### Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[HString::Set Method](../windows/hstring-set-method.md)|Sets the value of the current HString object to the specified wide-character string or HString parameter.|  
-|[HString::Attach Method](../windows/hstring-attach-method.md)|Associates the specified HString object with the current HString object.|  
-|[HString::CopyTo Method](../windows/hstring-copyto-method.md)|Copies the current HString object to an HSTRING object.|  
-|[HString::Detach Method](../windows/hstring-detach-method.md)|Disassociates the specified HString object from its underlying value.|  
+|[HString::Set Method](../windows/hstring-set-method.md)|Sets the value of the current **HString** object to the specified wide-character string or **HString** parameter.|  
+|[HString::Attach Method](../windows/hstring-attach-method.md)|Associates the specified **HString** object with the current **HString** object.|  
+|[HString::CopyTo Method](../windows/hstring-copyto-method.md)|Copies the current **HString** object to an HSTRING object.|  
+|[HString::Detach Method](../windows/hstring-detach-method.md)|Disassociates the specified **HString** object from its underlying value.|  
 |[HString::GetAddressOf Method](../windows/hstring-getaddressof-method.md)|Retrieves a pointer to the underlying HSTRING handle.|  
 |[HString::Get Method](../windows/hstring-get-method.md)|Retrieves the value of the underlying HSTRING handle.|  
-|[HString::Release Method](../windows/hstring-release-method.md)|Deletes the underlying string value and intializes the current HString object to an empty value.|  
-|[HString::MakeReference Method](../windows/hstring-makereference-method.md)|Creates an HStringReference object from a specified string parameter.|  
+|[HString::Release Method](../windows/hstring-release-method.md)|Deletes the underlying string value and intializes the current **HString** object to an empty value.|  
+|[HString::MakeReference Method](../windows/hstring-makereference-method.md)|Creates an `HStringReference` object from a specified string parameter.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[HString::Operator= Operator](../windows/hstring-operator-assign-operator.md)|Moves the value of another HString object to the current HString object.|  
+|[HString::Operator= Operator](../windows/hstring-operator-assign-operator.md)|Moves the value of another **HString** object to the current **HString** object.|  
 |[HString::Operator== Operator](../windows/hstring-operator-equality-operator.md)|Indicates whether the two parameters are equal.|  
 |[HString::Operator!= Operator](../windows/hstring-operator-inequality-operator.md)|Indicates whether the two parameters are not equal.|  
   

@@ -13,9 +13,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Adding or Deleting a String
-You can quickly insert new entries into the string table using the String editor. New strings are placed at the end of the table and are given the next available identifier. You can then edit the ID, Value, or Caption properties in the [Properties window](/visualstudio/ide/reference/properties-window) as needed.  
+You can quickly insert new entries into the string table using the **String** editor. New strings are placed at the end of the table and are given the next available identifier. You can then edit the **ID**, **Value**, or **Caption** properties in the [Properties window](/visualstudio/ide/reference/properties-window) as needed.  
   
- The String editor makes sure you do not use an ID that's already in use. If you select an ID already in use, the String editor will notify you and then assign a generic unique ID, for example IDS_STRING58113.  
+ The **String** editor makes sure you do not use an ID that's already in use. If you select an ID already in use, the **String** editor will notify you and then assign a generic unique ID, for example `IDS_STRING58113`.  
   
 ### To add a string table entry  
   
@@ -47,14 +47,12 @@ You can quickly insert new entries into the string table using the String editor
   
  \- or -  
   
--   Press the **DELETE** key.  
+-   Press the **Delete** key.  
   
- For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
+ For information on adding resources to managed projects (those that target the common language runtime), please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) and [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
   
- **Requirements**  
-  
+## Requirements  
  Win32  
   
 ## See Also  
  [String Editor](../windows/string-editor.md)   
-

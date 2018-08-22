@@ -13,11 +13,11 @@ ms.author: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeIntException Class
-The `SafeInt` class uses `SafeIntException` to identify why a mathematical operation cannot be completed.  
+The `SafeInt` class uses **SafeIntException** to identify why a mathematical operation cannot be completed.  
   
 ## Syntax  
   
-```  
+```cpp  
 class SafeIntException;  
 ```  
   
@@ -25,10 +25,10 @@ class SafeIntException;
   
 ### Public Constructors  
  [SafeIntException::SafeIntException](../windows/safeintexception-safeintexception.md)  
- Creates a `SafeIntException` object.  
+ Creates a **SafeIntException** object.  
   
 ## Remarks  
- The [SafeInt Class](../windows/safeint-class.md) is the only class that uses the `SafeIntException` class.  
+ The [SafeInt Class](../windows/safeint-class.md) is the only class that uses the **SafeIntException** class.  
   
 ## Inheritance Hierarchy  
  [SafeIntException Class](../windows/safeintexception-class.md)  

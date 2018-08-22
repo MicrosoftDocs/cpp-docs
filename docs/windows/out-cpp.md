@@ -17,10 +17,8 @@ Identifies pointer parameters that are returned from the called procedure to the
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [out]  
-  
 ```  
   
 ## Remarks  
@@ -46,4 +44,4 @@ Identifies pointer parameters that are returned from the called procedure to the
  [IDL Attributes](../windows/idl-attributes.md)   
  [Parameter Attributes](../windows/parameter-attributes.md)   
  [defaultvalue](../windows/defaultvalue.md)   
- [id](../windows/id.md)   
+ [id](../windows/id.md)   

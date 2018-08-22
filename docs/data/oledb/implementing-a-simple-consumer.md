@@ -35,7 +35,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 1.  In MyCons.cpp, change the main code by inserting the bold text as follows:  
   
-    ```  
+    ```cpp  
     // MyCons.cpp : Defines the entry point for the console application.  
     //  
     #include "stdafx.h"  
@@ -43,7 +43,18 @@ The following topics show how to edit the files created by the MFC Application W
     ...  
     int main(int argc, char* argv[])  
     {  
- HRESULT hr = CoInitialize(NULL);   // Instantiate rowset   CProducts rs;   hr = rs.OpenAll();   ATLASSERT(SUCCEEDED(hr ) );   hr = rs.MoveFirst();   // Iterate through the rowset   while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )   {      // Print out the column information for each row      printf("Product ID: %d, Name: %s, Unit Price: %d, Quantity per Unit: %d, Units in Stock %d, Reorder Level %d\n",             rs.m_ProductID, rs.m_ProductName, rs.m_UnitPrice, rs.m_QuantityPerUnit, rs.m_UnitsInStock, rs.m_ReorderLevel );      hr = rs.MoveNext();   }   rs.Close();   rs.ReleaseCommand();   CoUninitialize();  
+       HRESULT hr = CoInitialize(NULL);   // Instantiate rowset   
+       CProducts rs;   
+       hr = rs.OpenAll();   
+       ATLASSERT(SUCCEEDED(hr ) );   
+       hr = rs.MoveFirst();   // Iterate through the rowset   
+       while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )   {      // Print out the column information for each row      
+         printf("Product ID: %d, Name: %s, Unit Price: %d, Quantity per Unit: %d, Units in Stock %d, Reorder Level %d\n",             
+           rs.m_ProductID, rs.m_ProductName, rs.m_UnitPrice, rs.m_QuantityPerUnit, rs.m_UnitsInStock, rs.m_ReorderLevel );      
+         hr = rs.MoveNext();   }   
+       rs.Close();   
+       rs.ReleaseCommand();   
+       CoUninitialize();  
   
        return 0;  
     }  
@@ -54,7 +65,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 -   Instantiate the bookmarks. These are objects of type [CBookmark](../../data/oledb/cbookmark-class.md).  
   
--   Request a bookmark column from the provider by setting the **DBPROP_IRowsetLocate** property.  
+-   Request a bookmark column from the provider by setting the `DBPROP_IRowsetLocate` property.  
   
 -   Add a bookmark entry to the column map by using the [BOOKMARK_ENTRY](../../data/oledb/bookmark-entry.md) macro.  
   
@@ -73,9 +84,9 @@ The following topics show how to edit the files created by the MFC Application W
   
 #### To instantiate the bookmark  
   
-1.  The accessor needs to contain an object of type [CBookmark](../../data/oledb/cbookmark-class.md). The `nSize` parameter specifies the size of the bookmark buffer in bytes (typically 4 for 32-bit platforms and 8 for 64-bit platforms). Add the following declaration to the column data members in the user record class:  
+1.  The accessor needs to contain an object of type [CBookmark](../../data/oledb/cbookmark-class.md). The *nSize* parameter specifies the size of the bookmark buffer in bytes (typically 4 for 32-bit platforms and 8 for 64-bit platforms). Add the following declaration to the column data members in the user record class:  
   
-    ```  
+    ```cpp  
     //////////////////////////////////////////////////////////////////////  
     // Products.h  
     class CProductsAccessor  
@@ -90,7 +101,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 1.  Add the following code in the `GetRowsetProperties` method in the user record class:  
   
-    ```  
+    ```cpp  
     // Set the DBPROP_IRowsetLocate property.  
     void GetRowsetProperties(CDBPropSet* pPropSet)  
     {  
@@ -104,7 +115,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 1.  Add the following entry to the column map in the user record class:  
   
-    ```  
+    ```cpp  
     // Set a bookmark entry in the column map.  
     BEGIN_COLUMN_MAP(CProductsAccessor)  
        BOOKMARK_ENTRY(m_bookmark)   // Add bookmark entry  
@@ -118,7 +129,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 1.  In the MyCons.cpp file from the console application you previously created, change the main code to read as follows. To use bookmarks, the main code needs to instantiate its own bookmark object (`myBookmark`); this is a different bookmark from the one in the accessor (`m_bookmark`).  
   
-    ```  
+    ```cpp  
     ///////////////////////////////////////////////////////////////////////  
     // MyCons.cpp : Defines the entry point for the console application.  
     //  
@@ -131,7 +142,7 @@ The following topics show how to edit the files created by the MFC Application W
   
     int _tmain(int argc, _TCHAR* argv[])  
     {  
- HRESULT hr = CoInitialize(NULL);  
+       HRESULT hr = CoInitialize(NULL);  
   
        // Instantiate rowset  
        CProducts rs;  
@@ -194,7 +205,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 1.  In the consumer application you previously created, change your `CCommand` declaration to specify `CStreamRowset` as the rowset class as follows:  
   
-    ```  
+    ```cpp  
     class CProducts : public CCommand<CAccessor<CProductsAccessor>, CStreamRowset >  
     ```  
   
@@ -202,7 +213,7 @@ The following topics show how to edit the files created by the MFC Application W
   
 1.  In the MyCons.cpp file from the console application you previously created, change the main code to read as follows:  
   
-    ```  
+    ```cpp  
     ///////////////////////////////////////////////////////////////////////  
     // MyCons.cpp : Defines the entry point for the console application.  
     //  
@@ -215,7 +226,7 @@ The following topics show how to edit the files created by the MFC Application W
   
     int _tmain(int argc, _TCHAR* argv[])  
     {  
- HRESULT hr = CoInitialize(NULL);  
+       HRESULT hr = CoInitialize(NULL);  
   
        // Instantiate rowset  
        CProducts rs;  
@@ -237,7 +248,7 @@ The following topics show how to edit the files created by the MFC Application W
        for (;;)  
        {  
           // Read sequential stream data into buffer  
-    HRESULT hr = rs.m_spStream->Read(buffer, 1000, &cbRead);  
+          HRESULT hr = rs.m_spStream->Read(buffer, 1000, &cbRead);  
           if (FAILED (hr))  
              break;  
           // Output buffer to file  

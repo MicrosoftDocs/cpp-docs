@@ -13,7 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # region, endregion
-**#pragma region** lets you specify a block of code that you can expand or collapse when using the [outlining feature](/visualstudio/ide/outlining) of the Visual Studio Code Editor.  
+`#pragma region` lets you specify a block of code that you can expand or collapse when using the [outlining feature](/visualstudio/ide/outlining) of the Visual Studio Code Editor.  
   
 ## Syntax  
   
@@ -22,21 +22,22 @@ ms.workload: ["cplusplus"]
 #pragma endregion comment  
 ```  
   
-#### Parameters  
- `comment`(optional)  
- A comment that will display in the code editor.  
+### Parameters  
+*comment* (optional)  
+A comment that will display in the code editor.  
   
- *name*(optional)  
- The name of the region.  This name will display in the code editor.  
+*name* (optional)  
+The name of the region.  This name will display in the code editor.  
   
 ## Remarks  
- **#pragma endregion** marks the end of a **#pragma region** block.  
+ 
+`#pragma endregion` marks the end of a `#pragma region` block.  
   
- A `#region` block must be terminated with **#pragma endregion**.  
+A `#region` block must be terminated with `#pragma endregion`.  
   
 ## Example  
   
-```  
+```cpp  
 // pragma_directives_region.cpp  
 #pragma region Region_1  
 void Test() {}  
@@ -48,4 +49,5 @@ int main() {}
 ```  
   
 ## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

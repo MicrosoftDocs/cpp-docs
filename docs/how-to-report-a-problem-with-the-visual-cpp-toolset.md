@@ -326,7 +326,7 @@ A *link repro* is the linker-generated contents of a directory specified by the 
 
 1. Enter **mkdir linkrepro** to create a directory for the link repro.
 
-1. Enter the command **set link\_repro=linkrepro** to set the **link\_repro** environment variable to the directory you just created.
+1. Enter the command **set link\_repro=linkrepro** to set the **link\_repro** environment variable to the directory you just created. If your build is run from a different directory, as is often the case for more complex projects, then set **link\_repro** to the full path to your linkrepro directory instead.
 
 1. To build the repro project in Visual Studio, in the developer command prompt console window, enter the command **devenv**. This ensures that the value of the **link\_repro** environment variable is visible to Visual Studio. To build the project at the command line, use the command line arguments captured above to duplicate the repro build.
 

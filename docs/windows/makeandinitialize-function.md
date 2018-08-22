@@ -29,66 +29,66 @@ typename TArg8,
 typename TArg9> HRESULT MakeAndInitialize(_Outptr_result_nullonfailure_ I** ppvObject, TArg1 &&arg1, TArg2 &&arg2, TArg3 &&arg3, TArg4 &&arg4, TArg5 &&arg5, TArg6 &&arg6, TArg7 &&arg7, TArg8 &&arg8, TArg9 &&arg9) throw()  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  A user-specified class that inherits from `WRL::RuntimeClass`.  
   
- `TArg1`  
+ *TArg1*  
  Type of argument 1 that is passed to the specified runtime class.  
   
- `TArg2`  
+ *TArg2*  
  Type of argument 2 that is passed to the specified runtime class.  
   
- `TArg3`  
+ *TArg3*  
  Type of argument 3 that is passed to the specified runtime class.  
   
- `TArg4`  
+ *TArg4*  
  Type of argument 4 that is passed to the specified runtime class.  
   
- `TArg5`  
+ *TArg5*  
  Type of argument 5 that is passed to the specified runtime class.  
   
- `TArg6`  
+ *TArg6*  
  Type of argument 6 that is passed to the specified runtime class.  
   
- `TArg7`  
+ *TArg7*  
  Type of argument 7 that is passed to the specified runtime class.  
   
- `TArg8`  
+ *TArg8*  
  Type of argument 8 that is passed to the specified runtime class.  
   
- `TArg9`  
+ *TArg9*  
  Type of argument 9 that is passed to the specified runtime class.  
   
- `arg1`  
+ *arg1*  
  Argument 1 that is passed to the specified runtime class.  
   
- `arg2`  
+ *arg2*  
  Argument 2 that is passed to the specified runtime class.  
   
- `arg3`  
+ *arg3*  
  Argument 3 that is passed to the specified runtime class.  
   
- `arg4`  
+ *arg4*  
  Argument 4 that is passed to the specified runtime class.  
   
- `arg5`  
+ *arg5*  
  Argument 5 that is passed to the specified runtime class.  
   
- `arg6`  
+ *arg6*  
  Argument 6 that is passed to the specified runtime class.  
   
- `arg7`  
+ *arg7*  
  Argument 7 that is passed to the specified runtime class.  
   
- `arg8`  
+ *arg8*  
  Argument 8 that is passed to the specified runtime class.  
   
- `arg9`  
+ *arg9*  
  Argument 9 that is passed to the specified runtime class.  
   
 ## Return Value  
- An `HRESULT` value.  
+ An HRESULT value.  
   
 ## Remarks  
  See [How to: Instantiate WRL Components Directly](../windows/how-to-instantiate-wrl-components-directly.md) to learn the differences between this function and [Microsoft::WRL::Make](../windows/make-function.md), and for an example.  

@@ -841,7 +841,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Mimics the appearance of Microsoft Windows XP or Microsoft Vista when the user selects a Windows XP or Vista theme.  
   
  [CMFCVisualManagerWindows7 Class](../../mfc/reference/cmfcvisualmanagerwindows7-class.md)  
- Gives an application the appearance of a [!INCLUDE[win7](../../build/includes/win7_md.md)] application.  
+ Gives an application the appearance of a Windows 7 application.  
   
  [CMFCWindowsManagerDialog Class](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)  
  Enables a user to manage MDI child windows in a MDI application.  
@@ -1009,7 +1009,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Used for a special case of the OLE Edit Links dialog box, which should be used when you need to update only existing linked or embedded objects in a document.  
   
  [COleVariant Class](../../mfc/reference/colevariant-class.md)  
- Encapsulates the [VARIANT](http://msdn.microsoft.com/e305240e-9e11-4006-98cc-26f4932d2118) data type.  
+ Encapsulates the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) data type.  
   
  [CPagerCtrl Class](../../mfc/reference/cpagerctrl-class.md)  
  The `CPagerCtrl` class wraps the Windows pager control, which can scroll into view a contained window that does not fit the containing window.  

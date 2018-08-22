@@ -15,15 +15,15 @@ ms.workload: ["cplusplus"]
 # _com_ptr_t Class
 **Microsoft Specific**  
   
- A `_com_ptr_t` object encapsulates a COM interface pointer and is called a "smart" pointer. This template class manages resource allocation and deallocation through function calls to the `IUnknown` member functions: `QueryInterface`, `AddRef`, and `Release`.  
+ A **_com_ptr_t** object encapsulates a COM interface pointer and is called a "smart" pointer. This template class manages resource allocation and deallocation through function calls to the `IUnknown` member functions: `QueryInterface`, `AddRef`, and `Release`.  
   
- A smart pointer is usually referenced by the typedef definition provided by the _COM_SMARTPTR_TYPEDEF macro. This macro takes an interface name and the IID and declares a specialization of `_com_ptr_t` with the name of the interface plus a suffix of `Ptr`. For example:  
+ A smart pointer is usually referenced by the typedef definition provided by the _COM_SMARTPTR_TYPEDEF macro. This macro takes an interface name and the IID and declares a specialization of **_com_ptr_t** with the name of the interface plus a suffix of `Ptr`. For example:  
   
 ```cpp 
 _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));  
 ```  
   
- declares the `_com_ptr_t` specialization `IMyInterfacePtr`.  
+ declares the **_com_ptr_t** specialization `IMyInterfacePtr`.  
   
  A set of [function templates](../cpp/relational-function-templates.md), not members of this template class, support comparisons with a smart pointer on the right side of the comparison operator.  
   
@@ -31,7 +31,7 @@ _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
   
 |||  
 |-|-|  
-|[_com_ptr_t](../cpp/com-ptr-t-com-ptr-t.md)|Constructs a `_com_ptr_t` object.|  
+|[_com_ptr_t](../cpp/com-ptr-t-com-ptr-t.md)|Constructs a **_com_ptr_t** object.|  
   
 ### Low-Level Operations  
   
@@ -50,7 +50,7 @@ _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
   
 |||  
 |-|-|  
-|[operator =](../cpp/com-ptr-t-operator-equal.md)|Assigns a new value to an existing `_com_ptr_t` object.|  
+|[operator =](../cpp/com-ptr-t-operator-equal.md)|Assigns a new value to an existing **_com_ptr_t** object.|  
 |[operators ==, !=, \<, >, \<=, >=](../cpp/com-ptr-t-relational-operators.md)|Compare the smart pointer object to another smart pointer, raw interface pointer, or NULL.|  
 |[Extractors](../cpp/com-ptr-t-extractors.md)|Extract the encapsulated COM interface pointer.|  
   
@@ -61,5 +61,5 @@ _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
   
  **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   
-## See Also  
+## See also  
  [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)

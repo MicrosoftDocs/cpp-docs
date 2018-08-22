@@ -314,7 +314,7 @@ VARIANT Detach();
  The underlying `VARIANT` value in the `COleSafeArray` object.  
   
 ### Remarks  
- The function detaches the data in a safe array by setting the [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) of the object to VT_EMPTY. It is the caller's responsibility to free the array by calling the Windows function [VariantClear](http://msdn.microsoft.com/28741d81-8404-4f85-95d3-5c209ec13835).  
+ The function detaches the data in a safe array by setting the [VARTYPE](http://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) of the object to VT_EMPTY. It is the caller's responsibility to free the array by calling the Windows function [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear).  
   
  On error, the function throws a [COleException](../../mfc/reference/coleexception-class.md).  
   
@@ -542,7 +542,7 @@ void PutElement(
  Pointer to the data to assign to the array. VT_DISPATCH, VT_UNKNOWN, and VT_BSTR variant types are pointers and do not require another level of indirection.  
   
 ### Remarks  
- This function automatically calls the Windows functions [SafeArrayLock](https://msdn.microsoft.com/library/windows/desktop/ms221492.aspx) and [SafeArrayUnlock](https://msdn.microsoft.com/library/windows/desktop/ms221246.aspx) before and after assigning the element. If the data element is a string, object, or variant, the function copies it correctly, and if the existing element is a string, object, or variant, it is cleared correctly.  
+ This function automatically calls the Windows functions [SafeArrayLock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraylock) and [SafeArrayUnlock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearrayunlock) before and after assigning the element. If the data element is a string, object, or variant, the function copies it correctly, and if the existing element is a string, object, or variant, it is cleared correctly.  
   
  Note that you can have multiple locks on an array, so you can put elements into an array while the array is locked by other operations.  
   

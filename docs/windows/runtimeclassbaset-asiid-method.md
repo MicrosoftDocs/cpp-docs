@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template<typename T>  
 __forceinline static HRESULT AsIID(  
    _In_ T* implements,  
@@ -26,18 +26,18 @@ __forceinline static HRESULT AsIID(
 );  
 ```  
   
-#### Parameters  
- `T`  
- A type that implements the interface ID specified by parameter `riid`.  
+### Parameters  
+ *T*  
+ A type that implements the interface ID specified by parameter *riid*.  
   
- `implements`  
- A variable of the type specified by template parameter `T`.  
+ *implements*  
+ A variable of the type specified by template parameter *T*.  
   
- `riid`  
+ *riid*  
  The interface ID to retrieve.  
   
- `ppvObject`  
- If this operation is successful, a pointer-to-a-pointer to the interface specified by parameter `riid`.  
+ *ppvObject*  
+ If this operation is successful, a pointer-to-a-pointer to the interface specified by parameter *riid*.  
   
 ## Return Value  
  S_OK if successful; otherwise, an HRESULT that describes the error.  

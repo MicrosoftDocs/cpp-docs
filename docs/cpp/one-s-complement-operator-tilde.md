@@ -16,7 +16,6 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 ~ cast-expression  
 ```  
   
@@ -24,7 +23,7 @@ ms.workload: ["cplusplus"]
  The one's complement operator (`~`), sometimes called the "bitwise complement" operator, yields a bitwise one's complement of its operand. That is, every bit that is 1 in the operand is 0 in the result. Conversely, every bit that is 0 in the operand is 1 in the result. The operand to the one's complement operator must be an integral type.  
   
 ## Operator Keyword for ~  
- The `compl` operator is the text equivalent of `~`. There are two ways to access the `compl` operator in your programs: include the header file `iso646.h`, or compile with [/Za](../build/reference/za-ze-disable-language-extensions.md).  
+ The **compl** operator is the text equivalent of `~`. There are two ways to access the **compl** operator in your programs: include the header file `iso646.h`, or compile with [/Za](../build/reference/za-ze-disable-language-extensions.md).  
   
 ## Example  
   
@@ -47,7 +46,7 @@ int main () {
   
  Integral promotion is performed on integral operands, and the resultant type is the type to which the operand is promoted. See [Standard Conversions](standard-conversions.md) for more information on how the promotion is done.  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Unary Arithmetic Operators](../c-language/unary-arithmetic-operators.md)

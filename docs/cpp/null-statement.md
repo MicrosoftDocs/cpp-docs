@@ -38,5 +38,5 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Expression Statement](../cpp/expression-statement.md)

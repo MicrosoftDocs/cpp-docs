@@ -45,7 +45,6 @@ The `void __stdcall f3() throw();` declaration uses the syntax defined by the C+
 **END Microsoft Specific**
 
 ## See also
-
-[__declspec](../cpp/declspec.md)  
-[noexcept](noexcept-cpp.md)  
-[Keywords](../cpp/keywords-cpp.md)  
+ [__declspec](../cpp/declspec.md)  
+ [noexcept](noexcept-cpp.md)  
+ [Keywords](../cpp/keywords-cpp.md)  

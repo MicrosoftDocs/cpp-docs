@@ -17,14 +17,13 @@ Emits the specified string, without the quote characters, into the generated .id
   
 ## Syntax  
   
-```  
-  
-      [ cpp_quote(  
+```cpp  
+[ cpp_quote(  
    "statement"  
 ) ];  
 ```  
   
-#### Parameters  
+### Parameters  
  *statement*  
  A C instruction.  
   
@@ -53,4 +52,4 @@ Emits the specified string, without the quote characters, into the generated .id
   
 ## See Also  
  [IDL Attributes](../windows/idl-attributes.md)   
- [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   
+ [Stand-Alone Attributes](../windows/stand-alone-attributes.md)   

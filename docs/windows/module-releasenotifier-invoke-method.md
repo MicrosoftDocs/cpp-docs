@@ -17,7 +17,7 @@ When implemented, calls an event handler when the last object in a module is rel
   
 ## Syntax  
   
-```  
+```cpp  
 virtual void Invoke() = 0;  
 ```  
   

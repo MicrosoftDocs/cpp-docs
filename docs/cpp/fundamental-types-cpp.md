@@ -60,5 +60,5 @@ Fundamental types in C++ are divided into three categories: integral, floating p
   
  For more information about type conversion, see [Standard Conversions](../cpp/standard-conversions.md).  
   
-## See Also  
+## See also  
  [Data Type Ranges](../cpp/data-type-ranges.md)

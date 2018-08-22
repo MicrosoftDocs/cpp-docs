@@ -315,6 +315,6 @@ public:
 };  
 ```  
   
-## See Also  
+## See also  
  [Namespaces](../cpp/namespaces-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

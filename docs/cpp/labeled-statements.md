@@ -49,7 +49,6 @@ int main() {
     test_label(1);  // in label1   
     test_label(2);  // in label2  
 }  
-  
 ```  
   
  **The goto statement**  
@@ -172,9 +171,8 @@ int main() {
       cerr << "At Test2 label." << endl;  
 // At Test2 label.  
 }  
-  
 ```  
   
-## See Also  
+## See also  
  [Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)   
  [switch Statement (C++)](../cpp/switch-statement-cpp.md)

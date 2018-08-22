@@ -25,5 +25,5 @@ char *psz = szError1;
 szError1 = psz;  
 ```  
   
-## See Also  
+## See also  
  [Arrays](../cpp/arrays-cpp.md)

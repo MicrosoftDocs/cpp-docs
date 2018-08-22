@@ -17,10 +17,8 @@ Indicates that the database will be notified immediately of all changes to a pro
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [immediatebind]  
-  
 ```  
   
 ## Remarks  
@@ -47,4 +45,4 @@ Indicates that the database will be notified immediately of all changes to a pro
  [Method Attributes](../windows/method-attributes.md)   
  [defaultbind](../windows/defaultbind.md)   
  [displaybind](../windows/displaybind.md)   
- [requestedit](../windows/requestedit.md)   
+ [requestedit](../windows/requestedit.md)   

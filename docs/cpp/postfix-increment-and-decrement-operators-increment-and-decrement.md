@@ -27,7 +27,7 @@ postfix-expression --
 i++;  
 ```  
   
- The effect of applying the postfix increment operator (`++`) is that the operand's value is increased by one unit of the appropriate type. Similarly, the effect of applying the postfix decrement operator (**--**) is that the operand's value is decreased by one unit of the appropriate type.  
+ The effect of applying the postfix increment operator (**++**) is that the operand's value is increased by one unit of the appropriate type. Similarly, the effect of applying the postfix decrement operator (**--**) is that the operand's value is decreased by one unit of the appropriate type.  
   
  It is important to note that a postfix increment or decrement expression evaluates to the value of the expression *prior to* application of the respective operator. The increment or decrement operation occurs *after* the operand is evaluated. This issue arises only when the postfix increment or decrement operation occurs in the context of a larger expression.  
   
@@ -62,7 +62,7 @@ Compass myCompass;
 for( myCompass = North; myCompass != West; myCompass++ ) // Error  
 ```  
   
-## See Also  
+## See also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Postfix Increment and Decrement Operators](../c-language/c-postfix-increment-and-decrement-operators.md)

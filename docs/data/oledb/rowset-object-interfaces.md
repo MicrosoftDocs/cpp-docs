@@ -16,30 +16,30 @@ The following table shows the mandatory and optional interfaces defined by OLE D
   
 |Interface|Required?|Implemented by OLE DB templates?|  
 |---------------|---------------|--------------------------------------|  
-|[IAccessor](https://msdn.microsoft.com/en-us/library/ms719672.aspx)|Mandatory|Yes|  
-|[IColumnsInfo](https://msdn.microsoft.com/en-us/library/ms724541.aspx)|Mandatory|Yes|  
-|[IConvertType](https://msdn.microsoft.com/en-us/library/ms715926.aspx)|Mandatory|Yes|  
-|[IRowset](https://msdn.microsoft.com/en-us/library/ms720986.aspx)|Mandatory|Yes|  
-|[IRowsetInfo](https://msdn.microsoft.com/en-us/library/ms724541.aspx)|Mandatory|Yes|  
-|[IChapteredRowset](https://msdn.microsoft.com/en-us/library/ms718180.aspx)|Optional|No|  
-|[IColumnsInfo2](https://msdn.microsoft.com/en-us/library/ms712953.aspx)|Optional|No|  
-|[IColumnsRowset](https://msdn.microsoft.com/en-us/library/ms722657.aspx)|Optional|No|  
+|[IAccessor](/previous-versions/windows/desktop/ms719672\(v=vs.85\))|Mandatory|Yes|  
+|[IColumnsInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\))|Mandatory|Yes|  
+|[IConvertType](/previous-versions/windows/desktop/ms715926\(v=vs.85\))|Mandatory|Yes|  
+|[IRowset](/previous-versions/windows/desktop/ms720986\(v=vs.85\))|Mandatory|Yes|  
+|[IRowsetInfo](/previous-versions/windows/desktop/ms724541\(v=vs.85\))|Mandatory|Yes|  
+|[IChapteredRowset](/previous-versions/windows/desktop/ms718180\(v=vs.85\))|Optional|No|  
+|[IColumnsInfo2](/previous-versions/windows/desktop/ms712953\(v=vs.85\))|Optional|No|  
+|[IColumnsRowset](/previous-versions/windows/desktop/ms722657\(v=vs.85\))|Optional|No|  
 |[IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)|Optional|Yes (through ATL)|  
-|[IDBAsynchStatus](https://msdn.microsoft.com/en-us/library/ms709832.aspx)|Optional|No|  
-|[IGetRow](https://msdn.microsoft.com/en-us/library/ms718047.aspx)|Optional|No|  
-|[IRowsetChange](https://msdn.microsoft.com/en-us/library/ms715790.aspx)|Optional|Yes|  
-|[IRowsetChapterMember](https://msdn.microsoft.com/en-us/library/ms725430.aspx)|Optional|No|  
-|[IRowsetCurrentIndex](https://msdn.microsoft.com/en-us/library/ms709700.aspx)|Optional|No|  
-|[IRowsetFind](https://msdn.microsoft.com/en-us/library/ms724221.aspx)|Optional|No|  
-|[IRowsetIdentity](https://msdn.microsoft.com/en-us/library/ms715913.aspx)|Optional (but required for level 0 providers)|Yes|  
-|[IRowsetIndex](https://msdn.microsoft.com/en-us/library/ms719604.aspx)|Optional|No|  
-|[IRowsetLocate](https://msdn.microsoft.com/en-us/library/ms721190.aspx)|Optional|Yes|  
-|[IRowsetRefresh](https://msdn.microsoft.com/en-us/library/ms714892.aspx)|Optional|No|  
-|[IRowsetScroll](https://msdn.microsoft.com/en-us/library/ms712984.aspx)|Optional|No|  
-|[IRowsetUpdate](https://msdn.microsoft.com/en-us/library/ms714401.aspx)|Optional|Yes|  
-|[IRowsetView](https://msdn.microsoft.com/en-us/library/ms709755.aspx)|Optional|No|  
-|[ISupportErrorInfo](https://msdn.microsoft.com/en-us/library/ms715816.aspx)|Optional|Yes|  
-|[IRowsetBookmark](https://msdn.microsoft.com/en-us/library/ms714246.aspx)|Optional|No|  
+|[IDBAsynchStatus](/previous-versions/windows/desktop/ms709832\(v=vs.85\))|Optional|No|  
+|[IGetRow](/previous-versions/windows/desktop/ms718047\(v=vs.85\))|Optional|No|  
+|[IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\))|Optional|Yes|  
+|[IRowsetChapterMember](/previous-versions/windows/desktop/ms725430\(v=vs.85\))|Optional|No|  
+|[IRowsetCurrentIndex](/previous-versions/windows/desktop/ms709700\(v=vs.85\))|Optional|No|  
+|[IRowsetFind](/previous-versions/windows/desktop/ms724221\(v=vs.85\))|Optional|No|  
+|[IRowsetIdentity](/previous-versions/windows/desktop/ms715913\(v=vs.85\))|Optional (but required for level 0 providers)|Yes|  
+|[IRowsetIndex](/previous-versions/windows/desktop/ms719604\(v=vs.85\))|Optional|No|  
+|[IRowsetLocate](/previous-versions/windows/desktop/ms721190\(v=vs.85\))|Optional|Yes|  
+|[IRowsetRefresh](/previous-versions/windows/desktop/ms714892\(v=vs.85\))|Optional|No|  
+|[IRowsetScroll](/previous-versions/windows/desktop/ms712984\(v=vs.85\))|Optional|No|  
+|[IRowsetUpdate](/previous-versions/windows/desktop/ms714401\(v=vs.85\))|Optional|Yes|  
+|[IRowsetView](/previous-versions/windows/desktop/ms709755\(v=vs.85\))|Optional|No|  
+|[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|Optional|Yes|  
+|[IRowsetBookmark](/previous-versions/windows/desktop/ms714246\(v=vs.85\))|Optional|No|  
   
  The wizard-generated rowset object implements `IAccessor`, `IRowset`, and `IRowsetInfo` through inheritance. The `IAccessorImpl` binds both output columns. The `IRowset` interface handles fetches rows and data. The `IRowsetInfo` interface handles the rowset properties.  
   

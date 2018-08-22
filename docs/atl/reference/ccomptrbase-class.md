@@ -55,7 +55,7 @@ class CComPtrBase
 |[CComPtrBase::operator T*](#operator_t_star)|The cast operator.|  
 |[CComPtrBase::operator !](#operator_not)|The NOT operator.|  
 |[CComPtrBase::operator &](#operator_amp)|The & operator.|  
-|[CComPtrBase::operator *](#operator_star)|The * operator.|  
+|[CComPtrBase::operator *](#operator_star)|The \* operator.|  
 |[CComPtrBase::operator <](#ccomptrbase__operator lt)|The less-than operator.|  
 |[CComPtrBase::operator ==](#operator_eq_eq)|The equality operator.|  
 |[CComPtrBase::operator ->](#operator_ptr)|The pointer-to-members operator.|  
@@ -151,10 +151,10 @@ HRESULT CoCreateInstance(
  CLSID associated with the data and code that will be used to create the object.  
   
 ### Return Value  
- Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING or E_NOINTERFACE on failure. See [CoCreateClassInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) and [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) for a description of these errors.  
+ Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING or E_NOINTERFACE on failure. See [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) and [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) for a description of these errors.  
   
 ### Remarks  
- If the first form of the method is called, [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) is used to recover the CLSID. Both forms then call [CoCreateClassInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
+ If the first form of the method is called, [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) is used to recover the CLSID. Both forms then call [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
  In debug builds, an assertion error will occur if [CComPtrBase::p](#p) is not equal to NULL.  
   
@@ -224,8 +224,8 @@ T** operator&() throw();
 ### Return Value  
  Returns the address of the object pointed to by the `CComPtrBase` object.  
   
-##  <a name="operator_star"></a>  CComPtrBase::operator *  
- The * operator.  
+##  <a name="operator_star"></a>  CComPtrBase::operator \*  
+ The \* operator.  
   
 ```
 T& operator*() const throw();
@@ -278,7 +278,7 @@ bool operator<(T* pT) const throw();
 ### Return Value  
  Returns true if the pointer managed by current object is less than the pointer to which it is being compared.  
   
-##  <a name="operator_t_star"></a>  CComPtrBase::operator T*  
+##  <a name="operator_t_star"></a>  CComPtrBase::operator T\*  
  The cast operator.  
   
 ```  

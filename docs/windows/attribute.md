@@ -17,45 +17,44 @@ Allows you to create a custom attribute.
   
 ## Syntax  
   
-```  
-  
-      [ attribute(  
+```cpp  
+[ attribute(  
    AllowOn,  
    AllowMultiple=boolean,  
    Inherited=boolean  
 ) ]  
 ```  
   
-#### Parameters  
+### Parameters  
  *AllowOn*  
- Specifies the language elements to which the custom attribute can be applied. Default is **System::AttributeTargets::All** (see [System::AttributeTargets](https://msdn.microsoft.com/en-us/library/system.attributetargets.aspx)).  
+ Specifies the language elements to which the custom attribute can be applied. Default is `System::AttributeTargets::All` (see [System::AttributeTargets](https://msdn.microsoft.com/library/system.attributetargets.aspx)).  
   
- `AllowMultiple`  
- Specifies whether the custom attribute can be applied repeatedly to a construct. Default is **FALSE**.  
+ *AllowMultiple*  
+ Specifies whether the custom attribute can be applied repeatedly to a construct. Default is FALSE.  
   
- `Inherited`  
- Indicates if the attribute is to be inherited by subclasses. The compiler provides no special support for this functionality; it is the job of the attribute consumers (Reflection, for example) to respect this information. If `Inherited` is **TRUE**, the attribute is inherited. If `AllowMultiple` is **TRUE**, the attribute will accumulate on the derived member; if `AllowMultiple` is **FALSE**, the attribute will override (or replace) in inheritance. If `Inherited` is **FALSE**, the attribute will not be inherited. Default is **TRUE**.  
+ *Inherited*  
+ Indicates if the attribute is to be inherited by subclasses. The compiler provides no special support for this functionality; it is the job of the attribute consumers (`Reflection`, for example) to respect this information. If *Inherited* is TRUE, the attribute is inherited. If *AllowMultiple* is TRUE, the attribute will accumulate on the derived member; if *AllowMultiple* is FALSE, the attribute will override (or replace) in inheritance. If *Inherited* is FALSE, the attribute will not be inherited. Default is TRUE.  
   
 ## Remarks  
   
 > [!NOTE]
->  The `attribute` attribute is now deprecated.  Use the common language runtime attribute System.Attribute to directly to create user-defined attirbutes.  For more information, see [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md).  
+>  The **attribute** attribute is now deprecated.  Use the common language runtime attribute `System.Attribute` to directly to create user-defined attirbutes. For more information, see [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md).  
   
- You define a [custom attribute](../windows/custom-attributes-cpp.md) by placing the `attribute` attribute on a managed class or struct definition. The name of the class is the custom attribute. For example:  
+ You define a [custom attribute](../windows/custom-attributes-cpp.md) by placing the **attribute** attribute on a managed class or struct definition. The name of the class is the custom attribute. For example:  
   
-```  
+```cpp  
 [ attribute(Parameter) ]  
 public ref class MyAttr {};  
 ```  
   
- defines an attribute called MyAttr that can be applied to function parameters. The class must be public if the attribute is going to be used in other assemblies.  
+ defines an attribute called `MyAttr` that can be applied to function parameters. The class must be public if the attribute is going to be used in other assemblies.  
   
 > [!NOTE]
->  To prevent namespace collisions, all attribute names implicitly end with "Attribute"; in this example, the name of the attribute and class is actually MyAttrAttribute, but MyAttr and MyAttrAttribute can be used interchangeably.  
+>  To prevent namespace collisions, all attribute names implicitly end with "Attribute"; in this example, the name of the attribute and class is actually `MyAttrAttribute`, but `MyAttr` and `MyAttrAttribute` can be used interchangeably.  
   
  The class's public constructors define the attribute's unnamed parameters. Overloaded constructors allow multiple ways of specifying the attribute, so a custom attribute that is defined the following way:  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute.cpp  
 // compile with: /c /clr  
 using namespace System;  
@@ -75,7 +74,7 @@ ref class ClassB {};   // Attribute with one parameter
   
  The class's public data members and properties are the attribute's optional named parameters:  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute_2.cpp  
 // compile with: /c /clr  
 using namespace System;  
@@ -101,9 +100,9 @@ ref class ClassC {};
   
  See [User-Defined Attributes](../windows/user-defined-attributes-cpp-component-extensions.md) for a discussion on attribute targets.  
   
- The `attribute` attribute has an `AllowMultiple` parameter that specifies whether the custom attribute is single use or multiuse (can appear more than once on the same entity).  
+ The **attribute** attribute has an *AllowMultiple* parameter that specifies whether the custom attribute is single use or multiuse (can appear more than once on the same entity).  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute_3.cpp  
 // compile with: /c /clr  
 using namespace System;  
@@ -116,21 +115,21 @@ ref struct MyAttr {
 ref class ClassA {};  
 ```  
   
- Custom attribute classes are derived directly or indirectly from <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>, which makes identifying attribute definitions in metadata fast and easy. The `attribute` attribute implies inheritance from System::Attribute, so explicit derivation is not necessary:  
+ Custom attribute classes are derived directly or indirectly from <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>, which makes identifying attribute definitions in metadata fast and easy. The **attribute** attribute implies inheritance from `System::Attribute`, so explicit derivation is not necessary:  
   
-```  
+```cpp  
 [ attribute(Class) ]  
 ref class MyAttr  
 ```  
   
  is equivalent to  
   
-```  
+```cpp  
 [ attribute(Class) ]  
 ref class MyAttr : System::Attribute   // OK, but redundant.  
 ```  
   
- `attribute` is an alias for <xref:System.AttributeUsageAttribute?displayProperty=fullName> (not AttributeAttribute; this is an exception to the attribute naming rule).  
+ **attribute** is an alias for <xref:System.AttributeUsageAttribute?displayProperty=fullName> (not AttributeAttribute; this is an exception to the attribute naming rule).  
   
 ## Requirements  
   
@@ -138,7 +137,7 @@ ref class MyAttr : System::Attribute   // OK, but redundant.
   
 |||  
 |-|-|  
-|**Applies to**|`ref` **class**, **ref struct**|  
+|**Applies to**|**ref class**, **ref struct**|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -147,7 +146,7 @@ ref class MyAttr : System::Attribute   // OK, but redundant.
   
 ## Example  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute_4.cpp  
 // compile with: /c /clr  
 using namespace System;  
@@ -163,7 +162,7 @@ ref class MyClass {};
 ## Example  
  The `Inherited` named argument specifies whether a custom attribute applied on a base class will show up on reflection of a derived class.  
   
-```  
+```cpp  
 // cpp_attr_ref_attribute_5.cpp  
 // compile with: /clr  
 using namespace System;  
@@ -203,4 +202,4 @@ int main() {
   
 ## See Also  
  [Attributes Alphabetical Reference](../windows/attributes-alphabetical-reference.md)   
- [Custom Attributes](http://msdn.microsoft.com/en-us/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+ [Custom Attributes](http://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

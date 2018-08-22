@@ -20,13 +20,11 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 unsigned int length ( ) const throw( );  
-  
 ```  
   
 ## Remarks  
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

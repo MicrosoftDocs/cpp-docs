@@ -17,14 +17,14 @@ Invokes the current progress event handler.
   
 ## Syntax  
   
-```  
+```cpp  
 void FireProgress(  
    const typename ProgressTraits::Arg2Type arg  
 );  
 ```  
   
-#### Parameters  
- `arg`  
+### Parameters  
+ *arg*  
  The event handler method to invoke.  
   
 ## Remarks  

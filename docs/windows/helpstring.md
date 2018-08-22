@@ -17,15 +17,14 @@ Specifies a character string that is used to describe the element to which it ap
   
 ## Syntax  
   
-```  
-  
-      [ helpstring(  
+```cpp  
+[ helpstring(  
    "string"  
 ) ]  
 ```  
   
-#### Parameters  
- `string`  
+### Parameters  
+ *string*  
  The text of the help string.  
   
 ## Remarks  
@@ -40,7 +39,7 @@ Specifies a character string that is used to describe the element to which it ap
   
 |||  
 |-|-|  
-|**Applies to**|`interface`, `typedef`, **class**, method, property|  
+|**Applies to**|**interface**, **typedef**, **class**, method, property|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
 |**Invalid attributes**|None|  
@@ -54,4 +53,4 @@ Specifies a character string that is used to describe the element to which it ap
  [Method Attributes](../windows/method-attributes.md)   
  [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)   
  [helpfile](../windows/helpfile.md)   
- [helpcontext](../windows/helpcontext.md)   
+ [helpcontext](../windows/helpcontext.md)   

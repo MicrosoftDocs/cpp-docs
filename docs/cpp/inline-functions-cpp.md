@@ -222,7 +222,6 @@ int main() {
 }  
 //  Sample Input:  xyz  
 // Sample Output:  Z  
-  
 ```  
   
  The intent of the expression `toupper(getc(stdin))` is that a character should be read from the console device (`stdin`) and, if necessary, converted to uppercase.  
@@ -252,6 +251,6 @@ Sample Input: a
 Sample Output: A  
 ```  
   
-## See Also  
+## See also  
  [noinline](../cpp/noinline.md)   
  [auto_inline](../preprocessor/auto-inline.md)

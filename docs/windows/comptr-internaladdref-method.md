@@ -13,11 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::InternalAddRef Method
-Increments the reference count of the interface associated with this ComPtr.  
+Increments the reference count of the interface associated with this **ComPtr**.  
   
 ## Syntax  
   
-```  
+```cpp  
 void InternalAddRef() const;  
 ```  
   

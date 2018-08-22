@@ -24,14 +24,14 @@ This topic explains:
 ## SQL Statement Construction  
  Your recordset bases record selection primarily on a SQL **SELECT** statement. When you declare your class with a wizard, it writes an overriding version of the `GetDefaultSQL` member function that looks something like this (for a recordset class called `CAuthors`).  
   
-```  
+```cpp  
 CString CAuthors::GetDefaultSQL()  
 {  
     return "AUTHORS";  
 }  
 ```  
   
- By default, this override returns the table name you specified with the wizard. In the example, the table name is "AUTHORS." When you later call the recordset's **Open** member function, **Open** constructs a final **SELECT** statement of the form:  
+ By default, this override returns the table name you specified with the wizard. In the example, the table name is "AUTHORS." When you later call the recordset's `Open` member function, `Open` constructs a final **SELECT** statement of the form:  
   
 ```  
 SELECT rfx-field-list FROM table-name [WHERE m_strFilter]   
@@ -43,14 +43,14 @@ SELECT rfx-field-list FROM table-name [WHERE m_strFilter]
 > [!NOTE]
 >  If you specify a column name that contains (or could contain) spaces, you must enclose the name in square brackets. For example, the name "First Name" should be "[First Name]".  
   
- To override the default **SELECT** statement, pass a string containing a complete **SELECT** statement when you call **Open**. Instead of constructing its own default string, the recordset uses the string you supply. If your replacement statement contains a **WHERE** clause, do not specify a filter in **m_strFilter** because you would then have two filter statements. Similarly, if your replacement statement contains an **ORDER BY** clause, do not specify a sort in `m_strSort` so that you will not have two sort statements.  
+ To override the default **SELECT** statement, pass a string containing a complete **SELECT** statement when you call `Open`. Instead of constructing its own default string, the recordset uses the string you supply. If your replacement statement contains a **WHERE** clause, do not specify a filter in `m_strFilter` because you would then have two filter statements. Similarly, if your replacement statement contains an **ORDER BY** clause, do not specify a sort in `m_strSort` so that you will not have two sort statements.  
   
 > [!NOTE]
 >  If you use literal strings in your filters (or other parts of the SQL statement), you might have to "quote" (enclose in specified delimiters) such strings with a DBMS-specific literal prefix and literal suffix character (or characters).  
   
- You might also encounter special syntactic requirements for operations such as outer joins, depending on your DBMS. Use ODBC functions to obtain this information from your driver for the DBMS. For example, call **::SQLGetTypeInfo** for a particular data type, such as **SQL_VARCHAR**, to request the **LITERAL_PREFIX** and **LITERAL_SUFFIX** characters. If you are writing database-independent code, see Appendix C in the *ODBC SDK**Programmer's Reference* on the MSDN Library CD for detailed syntax information.  
+ You might also encounter special syntactic requirements for operations such as outer joins, depending on your DBMS. Use ODBC functions to obtain this information from your driver for the DBMS. For example, call `::SQLGetTypeInfo` for a particular data type, such as `SQL_VARCHAR`, to request the LITERAL_PREFIX and LITERAL_SUFFIX characters. If you are writing database-independent code, see Appendix C in the *ODBC SDK**Programmer's Reference* on the MSDN Library CD for detailed syntax information.  
   
- A recordset object constructs the SQL statement that it uses to select records unless you pass a custom SQL statement. How this is done depends mainly on the value you pass in the `lpszSQL` parameter of the **Open** member function.  
+ A recordset object constructs the SQL statement that it uses to select records unless you pass a custom SQL statement. How this is done depends mainly on the value you pass in the *lpszSQL* parameter of the `Open` member function.  
   
  The general form of a SQL **SELECT** statement is:  
   
@@ -71,17 +71,17 @@ SELECT [ALL | DISTINCT] column-list FROM table-list
 >  Use this technique only with a recordset opened as read-only.  
   
 ## Overriding the SQL Statement  
- The following table shows the possibilities for the `lpszSQL` parameter to **Open**. The cases in the table are explained following the table.  
+ The following table shows the possibilities for the *lpszSQL* parameter to `Open`. The cases in the table are explained following the table.  
   
  **The lpszSQL Parameter and the Resulting SQL String**  
   
 |Case|What you pass in lpszSQL|The resulting SELECT statement|  
 |----------|------------------------------|------------------------------------|  
-|1|**NULL**|**SELECT** *rfx-field-list* **FROM** *table-name*<br /><br /> `CRecordset::Open` calls `GetDefaultSQL` to get the table name. The resulting string is one of cases 2 through 5, depending on what `GetDefaultSQL` returns.|  
-|2|A table name|**SELECT** *rfx-field-list* **FROM** *table-name*<br /><br /> The field list is taken from the RFX statements in `DoFieldExchange`. If **m_strFilter** and `m_strSort` are not empty, adds the **WHERE** and/or **ORDER BY** clauses.|  
-|3 *|A complete **SELECT** statement but without a **WHERE** or **ORDER BY** clause|As passed. If **m_strFilter** and `m_strSort` are not empty, adds the **WHERE** and/or **ORDER BY** clauses.|  
-|4 *|A complete **SELECT** statement with a **WHERE** and/or **ORDER BY** clause|As passed. **m_strFilter** and/or `m_strSort` must remain empty, or two filter and/or sort statements are produced.|  
-|5 *|A call to a stored procedure|As passed.|  
+|1|NULL|**SELECT** *rfx-field-list* **FROM** *table-name*<br /><br /> `CRecordset::Open` calls `GetDefaultSQL` to get the table name. The resulting string is one of cases 2 through 5, depending on what `GetDefaultSQL` returns.|  
+|2|A table name|**SELECT** *rfx-field-list* **FROM** *table-name*<br /><br /> The field list is taken from the RFX statements in `DoFieldExchange`. If `m_strFilter` and `m_strSort` are not empty, adds the **WHERE** and/or **ORDER BY** clauses.|  
+|3 \*|A complete **SELECT** statement but without a **WHERE** or **ORDER BY** clause|As passed. If `m_strFilter` and `m_strSort` are not empty, adds the **WHERE** and/or **ORDER BY** clauses.|  
+|4 \*|A complete **SELECT** statement with a **WHERE** and/or **ORDER BY** clause|As passed. `m_strFilter` and/or `m_strSort` must remain empty, or two filter and/or sort statements are produced.|  
+|5 \*|A call to a stored procedure|As passed.|  
   
  \* `m_nFields` must be less than or equal to the number of columns specified in the **SELECT** statement. The data type of each column specified in the **SELECT** statement must be the same as the data type of the corresponding RFX output column.  
   
@@ -93,7 +93,7 @@ SELECT [ALL | DISTINCT] column-list FROM table-list
   
  The following example constructs a SQL statement that selects records from an MFC database application. When the framework calls the `GetDefaultSQL` member function, the function returns the name of the table, `SECTION`.  
   
-```  
+```cpp  
 CString CEnrollSet::GetDefaultSQL()  
 {  
     return "SECTION";  
@@ -102,7 +102,7 @@ CString CEnrollSet::GetDefaultSQL()
   
  To obtain the names of the columns for the SQL **SELECT** statement, the framework calls the `DoFieldExchange` member function.  
   
-```  
+```cpp  
 void CEnrollSet::DoFieldExchange(CFieldExchange* pFX)  
 {  
     pFX->SetFieldType(CFieldExchange::outputColumn);  
@@ -116,7 +116,7 @@ void CEnrollSet::DoFieldExchange(CFieldExchange* pFX)
   
  When complete, the SQL statement looks like this:  
   
-```  
+```sql  
 SELECT CourseID, InstructorID, RoomNo, Schedule, SectionNo   
     FROM SECTION  
 ```  
@@ -128,7 +128,7 @@ SELECT CourseID, InstructorID, RoomNo, Schedule, SectionNo
   
      Your column list should match the column names and types in the same order as they are listed in `DoFieldExchange`.  
   
--   You have reason to manually retrieve column values using the ODBC function **::SQLGetData** rather than relying on RFX to bind and retrieve columns for you.  
+-   You have reason to manually retrieve column values using the ODBC function `::SQLGetData` rather than relying on RFX to bind and retrieve columns for you.  
   
      You might, for example, want to accommodate new columns a customer of your application added to the database tables after the application was distributed. You need to add these extra field data members, which were not known at the time you declared the class with a wizard.  
   
@@ -139,10 +139,10 @@ SELECT CourseID, InstructorID, RoomNo, Schedule, SectionNo
      For information and an example, see [Recordset: Performing a Join (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).  
   
 ### Case 4   lpszSQL = SELECT/FROM Plus WHERE and/or ORDER BY  
- You specify everything: the column list (based on the RFX calls in `DoFieldExchange`), the table list, and the contents of a **WHERE** and/or an **ORDER BY** clause. If you specify your **WHERE** and/or **ORDER BY** clauses this way, do not use **m_strFilter** and/or `m_strSort`.  
+ You specify everything: the column list (based on the RFX calls in `DoFieldExchange`), the table list, and the contents of a **WHERE** and/or an **ORDER BY** clause. If you specify your **WHERE** and/or **ORDER BY** clauses this way, do not use `m_strFilter` and/or `m_strSort`.  
   
 ### Case 5   lpszSQL = a Stored Procedure Call  
- If you need to call a predefined query (such as a stored procedure in a Microsoft SQL Server database), you must write a **CALL** statement in the string you pass to `lpszSQL`. The wizards do not support declaring a recordset class for calling a predefined query. Not all predefined queries return records.  
+ If you need to call a predefined query (such as a stored procedure in a Microsoft SQL Server database), you must write a **CALL** statement in the string you pass to *lpszSQL*. The wizards do not support declaring a recordset class for calling a predefined query. Not all predefined queries return records.  
   
  If a predefined query does not return records, you can use the `CDatabase` member function `ExecuteSQL` directly. For a predefined query that does return records, you must also manually write the RFX calls in `DoFieldExchange` for any columns the procedure returns. The RFX calls must be in the same order and return the same types, as the predefined query. For more information, see [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
   

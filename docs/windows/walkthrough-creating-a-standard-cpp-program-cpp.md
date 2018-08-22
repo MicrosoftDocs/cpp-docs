@@ -13,14 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating a Standard C++ Program (C++)
-You can use Visual C++ in the Visual Studio integrated development environment (IDE) to create Standard C++ programs. By following the steps in this walkthrough, you can create a project, add a new file to the project, modify the file to add C++ code, and then compile and run the program by using [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
+You can use Visual C++ in the Visual Studio integrated development environment (IDE) to create Standard C++ programs. By following the steps in this walkthrough, you can create a project, add a new file to the project, modify the file to add C++ code, and then compile and run the program by using Visual Studio.  
   
  You can type your own C++ program or use one of the sample programs. The sample program in this walkthrough is a console application. This application uses the `set` container in the C++ Standard Library.  
   
  Visual C++ complies with the 2003 C++ Standard, with these major exceptions: two-stage name lookup, exception specifications, and export. Additionally, Visual C++ supports several C++0x features, for example, lambdas, auto, static_assert, rvalue references, and extern templates.  
   
 > [!NOTE]
->  If compliance with the standard is required, use the **/Za** compiler option to disable Microsoft extensions to the standard. For more information, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md).  
+>  If compliance with the standard is required, use the `/Za` compiler option to disable Microsoft extensions to the standard. For more information, see [/Za, /Ze (Disable Language Extensions)](../build/reference/za-ze-disable-language-extensions.md).  
   
 ## Prerequisites  
  To complete this walkthrough, you must understand the fundamentals of the C++ language.  
@@ -45,7 +45,7 @@ You can use Visual C++ in the Visual Studio integrated development environment (
   
     2.  In the **Code** node, click **C++ File (.cpp)**, type a name for the file, and then click **Add**.  
   
-     The .cpp file appears in the Source Files folder in **Solution Explorer**, and the file is opened in the Visual Studio editor.  
+     The .cpp file appears in the **Source Files** folder in **Solution Explorer**, and the file is opened in the Visual Studio editor.  
   
 6.  In the file in the editor, type a valid C++ program that uses the C++ Standard Library, or copy one of the sample programs and paste it in the file.  
   

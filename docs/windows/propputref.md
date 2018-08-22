@@ -17,10 +17,8 @@ Specifies a property setting function that uses a reference instead of a value.
   
 ## Syntax  
   
-```  
-  
+```cpp  
 [propputref]  
-  
 ```  
   
 ## Remarks  
@@ -38,7 +36,7 @@ Specifies a property setting function that uses a reference instead of a value.
 |**Applies to**|Method|  
 |**Repeatable**|No|  
 |**Required attributes**|None|  
-|**Invalid attributes**|**propget**, **propput**|  
+|**Invalid attributes**|`propget`, `propput`|  
   
  For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
   
@@ -46,4 +44,4 @@ Specifies a property setting function that uses a reference instead of a value.
  [IDL Attributes](../windows/idl-attributes.md)   
  [Method Attributes](../windows/method-attributes.md)   
  [propget](../windows/propget.md)   
- [propput](../windows/propput.md)   
+ [propput](../windows/propput.md)   

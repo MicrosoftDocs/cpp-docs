@@ -21,7 +21,7 @@ ms.workload: ["cplusplus", "uwp"]
  This feature is not supported in the Windows Runtime.  
   
 ### Requirements  
- Compiler option: **/ZW**  
+ Compiler option: `/ZW`  
   
 ## Common Language Runtime  
  The following code example demonstrates how to use type forwarding.  
@@ -34,10 +34,10 @@ ms.workload: ["cplusplus", "uwp"]
 ```  
   
 ### Parameters  
- `new`  
+ *new*  
  The assembly into which you are moving the type definition.  
   
- `type`  
+ *type*  
  The type whose definition you are moving into another assembly.  
   
 ### Remarks  
@@ -89,4 +89,4 @@ ms.workload: ["cplusplus", "uwp"]
 5.  Use A.dll without recompiling client applications.  
   
 ### Requirements  
- Compiler option: **/clr**
+ Compiler option: `/clr`

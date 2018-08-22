@@ -17,7 +17,7 @@ Supports the WRL infrastructure and is not intended to be used directly from you
   
 ## Syntax  
   
-```  
+```cpp  
 template <  
    typename T  
 >  
@@ -25,11 +25,11 @@ class ComPtrRef : public ComPtrRefBase<T>;
 ```  
   
 #### Parameters  
- `T`  
- A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the ComPtr.  
+ *T*  
+ A [ComPtr\<T>](../windows/comptr-class.md) type or a type derived from it, not merely the interface represented by the `ComPtr`.  
   
 ## Remarks  
- Represents a reference to an object of type ComPtr\<T>.  
+ Represents a reference to an object of type `ComPtr<T>`.  
   
 ## Members  
   
@@ -37,25 +37,25 @@ class ComPtrRef : public ComPtrRefBase<T>;
   
 |Name|Description|  
 |----------|-----------------|  
-|[ComPtrRef::ComPtrRef Constructor](../windows/comptrref-comptrref-constructor.md)|Initializes a new instance of the ComPtrRef class from the specified pointer to another ComPtrRef object.|  
+|[ComPtrRef::ComPtrRef Constructor](../windows/comptrref-comptrref-constructor.md)|Initializes a new instance of the **ComPtrRef** class from the specified pointer to another **ComPtrRef** object.|  
   
 ### Public Methods  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ComPtrRef::GetAddressOf Method](../windows/comptrref-getaddressof-method.md)|Retrieves the address of a pointer to the interface represented by the current ComPtrRef object.|  
-|[ComPtrRef::ReleaseAndGetAddressOf Method](../windows/comptrref-releaseandgetaddressof-method.md)|Deletes the current ComPtrRef object and returns a pointer-to-a-pointer to the interface that was represented by the ComPtrRef object.|  
+|[ComPtrRef::GetAddressOf Method](../windows/comptrref-getaddressof-method.md)|Retrieves the address of a pointer to the interface represented by the current **ComPtrRef** object.|  
+|[ComPtrRef::ReleaseAndGetAddressOf Method](../windows/comptrref-releaseandgetaddressof-method.md)|Deletes the current **ComPtrRef** object and returns a pointer-to-a-pointer to the interface that was represented by the **ComPtrRef** object.|  
   
 ### Public Operators  
   
 |Name|Description|  
 |----------|-----------------|  
-|[ComPtrRef::operator InterfaceType** Operator](../windows/comptrref-operator-interfacetype-star-star-operator.md)|Deletes the current ComPtrRef object and returns a pointer-to-a-pointer to the interface that was represented by the ComPtrRef object.|  
+|[ComPtrRef::operator InterfaceType** Operator](../windows/comptrref-operator-interfacetype-star-star-operator.md)|Deletes the current **ComPtrRef** object and returns a pointer-to-a-pointer to the interface that was represented by the **ComPtrRef** object.|  
 |[ComPtrRef::operator T* Operator](../windows/comptrref-operator-t-star-operator.md)|Returns the value of the [ptr_](../windows/comptrrefbase-ptr-data-member.md) data member of the current ComPtrRef object.|  
-|[ComPtrRef::operator void** Operator](../windows/comptrref-operator-void-star-star-operator.md)|Deletes the current ComPtrRef object, casts the pointer to the interface that was represented by the ComPtrRef object as a pointer-to-pointer-to `void`, and then returns the cast pointer.|  
-|[ComPtrRef::operator* Operator](../windows/comptrref-operator-star-operator.md)|Retrieves the pointer to the interface represented by the current ComPtrRef object.|  
-|[ComPtrRef::operator== Operator](../windows/comptrref-operator-equality-operator.md)|Indicates whether two ComPtrRef objects are equal.|  
-|[ComPtrRef::operator!= Operator](../windows/comptrref-operator-inequality-operator.md)|Indicates whether two ComPtrRef objects are not equal.|  
+|[ComPtrRef::operator void** Operator](../windows/comptrref-operator-void-star-star-operator.md)|Deletes the current **ComPtrRef** object, casts the pointer to the interface that was represented by the **ComPtrRef** object as a pointer-to-pointer-to **void**, and then returns the cast pointer.|  
+|[ComPtrRef::operator* Operator](../windows/comptrref-operator-star-operator.md)|Retrieves the pointer to the interface represented by the current **ComPtrRef** object.|  
+|[ComPtrRef::operator== Operator](../windows/comptrref-operator-equality-operator.md)|Indicates whether two **ComPtrRef** objects are equal.|  
+|[ComPtrRef::operator!= Operator](../windows/comptrref-operator-inequality-operator.md)|Indicates whether two **ComPtrRef** objects are not equal.|  
   
 ## Inheritance Hierarchy  
  `ComPtrRefBase`  
