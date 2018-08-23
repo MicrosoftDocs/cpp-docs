@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CWinApp Class
+
 The base class from which you derive a Windows application object.
 
 ## Syntax
@@ -320,7 +321,6 @@ LONG DelRegTree(
     HKEY hParentKey,
     const CString& strKeyName);
 
- 
 LONG DelRegTree(
     HKEY hParentKey,
     const CString& strKeyName,
@@ -411,8 +411,8 @@ Enables application D2D support. Call this method before the main window is init
 
 ```
 BOOL EnableD2DSupport(
-D2D1_FACTORY_TYPE d2dFactoryType = D2D1_FACTORY_TYPE_SINGLE_THREADED,
-DWRITE_FACTORY_TYPE writeFactoryType = DWRITE_FACTORY_TYPE_SHARED);
+    D2D1_FACTORY_TYPE d2dFactoryType = D2D1_FACTORY_TYPE_SINGLE_THREADED,
+    DWRITE_FACTORY_TYPE writeFactoryType = DWRITE_FACTORY_TYPE_SHARED);
 ```
 
 ### Parameters
@@ -715,7 +715,7 @@ This member function is not case sensitive, so the strings in the *lpszSection* 
 > `GetProfileBinary` allocates a buffer and returns its address in \* *ppData*. The caller is responsible for freeing the buffer using **delete []**.
 
 > [!IMPORTANT]
->  The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 ### Example
 
@@ -756,7 +756,7 @@ This member function supports hexadecimal notation for the value in the .INI fil
 This member function is not case sensitive, so the strings in the *lpszSection* and *lpszEntry* parameters may differ in case.
 
 > [!IMPORTANT]
->  The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 ### Example
 
@@ -793,7 +793,7 @@ The return value is the string from the application's .INI file or *lpszDefault*
 ### Remarks
 
 > [!IMPORTANT]
->  The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
 
 ### Example
 
@@ -807,8 +807,8 @@ Returns the key for HKEY_CURRENT_USER\\"Software"\RegistryKey\AppName\lpszSectio
 
 ```
 HKEY GetSectionKey(
-LPCTSTR lpszSection,
-CAtlTransactionManager* pTM = NULL);
+    LPCTSTR lpszSection,
+    CAtlTransactionManager* pTM = NULL);
 ```
 
 ### Parameters
@@ -876,7 +876,7 @@ Application initialization is conceptually divided into two sections: one-time a
 Override `InitInstance` to initialize each new instance of your application running under Windows. Typically, you override `InitInstance` to construct your main window object and set the `CWinThread::m_pMainWnd` data member to point to that window. For more information on overriding this member function, see [CWinApp: The Application Class](../../mfc/cwinapp-the-application-class.md).
 
 > [!NOTE]
->  MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;en-us;828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).
+> MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;en-us;828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).
 
 ### Example
 
@@ -955,7 +955,7 @@ A handle to an icon if successful; otherwise NULL.
 You can use the [LoadStandardIcon](#loadstandardicon) or [LoadOEMIcon](#loadoemicon) member function to access the predefined Windows icons.
 
 > [!NOTE]
->  This member function calls the Win32 API function [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072), which can only load an icon whose size conforms to the SM_CXICON and SM_CYICON system metric values.
+> This member function calls the Win32 API function [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072), which can only load an icon whose size conforms to the SM_CXICON and SM_CYICON system metric values.
 
 ##  <a name="loadoemcursor"></a>  CWinApp::LoadOEMCursor
 
@@ -1149,9 +1149,9 @@ enum AFX_HELP_TYPE {
     };
 ```
 
--   To set the application's help to HTML Help, call [SetHelpMode](#sethelpmode) and specify `afxHTMLHelp`.
+- To set the application's help to HTML Help, call [SetHelpMode](#sethelpmode) and specify `afxHTMLHelp`.
 
--   To set the application's help to WinHelp, call `SetHelpMode` and specify `afxWinHelp`.
+- To set the application's help to WinHelp, call `SetHelpMode` and specify `afxWinHelp`.
 
 ##  <a name="m_hinstance"></a>  CWinApp::m_hInstance
 
@@ -1250,7 +1250,7 @@ The application name can come from the parameter passed to the [CWinApp](#cwinap
 Returned by the global function [AfxGetAppName](application-information-and-management.md#afxgetappname). `m_pszAppName` is a public variable of type **const char\***.
 
 > [!NOTE]
->  If you assign a value to `m_pszAppName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
+> If you assign a value to `m_pszAppName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
 
 [!code-cpp[NVC_MFCWindowing#57](../../mfc/reference/codesnippet/cpp/cwinapp-class_18.cpp)]
 
@@ -1271,7 +1271,7 @@ LPCTSTR m_pszExeName;
 Unlike [m_pszAppName](#m_pszappname), this name cannot contain blanks. `m_pszExeName` is a public variable of type **const char\***.
 
 > [!NOTE]
->  If you assign a value to `m_pszExeName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
+> If you assign a value to `m_pszExeName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
 
 [!code-cpp[NVC_MFCWindowing#58](../../mfc/reference/codesnippet/cpp/cwinapp-class_20.cpp)]
 
@@ -1288,7 +1288,7 @@ LPCTSTR m_pszHelpFilePath;
 By default, the framework initializes `m_pszHelpFilePath` to the name of the application with ".HLP" appended. To change the name of the help file, set `m_pszHelpFilePath` to point to a string that contains the complete name of the desired help file. A convenient place to do this is in the application's [InitInstance](#initinstance) function. `m_pszHelpFilePath` is a public variable of type **const char\***.
 
 > [!NOTE]
->  If you assign a value to `m_pszHelpFilePath`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
+> If you assign a value to `m_pszHelpFilePath`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
 
 [!code-cpp[NVC_MFCWindowing#59](../../mfc/reference/codesnippet/cpp/cwinapp-class_21.cpp)]
 
@@ -1305,7 +1305,7 @@ LPCTSTR m_pszProfileName;
 `m_pszProfileName` is a public variable of type **const char\***.
 
 > [!NOTE]
->  If you assign a value to `m_pszProfileName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
+> If you assign a value to `m_pszProfileName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
 
 [!code-cpp[NVC_MFCWindowing#60](../../mfc/reference/codesnippet/cpp/cwinapp-class_22.cpp)]
 
@@ -1321,7 +1321,7 @@ LPCTSTR m_pszRegistryKey;
 
 Normally, this data member is treated as read-only.
 
--   The value is stored to a registry key. The name for the application profile setting is appended to the following registry key: HKEY_CURRENT_USER/Software/LocalAppWizard-Generated/.
+- The value is stored to a registry key. The name for the application profile setting is appended to the following registry key: HKEY_CURRENT_USER/Software/LocalAppWizard-Generated/.
 
 If you assign a value to `m_pszRegistryKey`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
 
@@ -1515,18 +1515,18 @@ Nonzero to receive more idle processing time; 0 if no more idle time is needed.
 
 The following summarizes idle loop processing:
 
-1.  If the message loop in the Microsoft Foundation Class Library checks the message queue and finds no pending messages, it calls `OnIdle` for the application object and supplies 0 as the *lCount* argument.
+1. If the message loop in the Microsoft Foundation Class Library checks the message queue and finds no pending messages, it calls `OnIdle` for the application object and supplies 0 as the *lCount* argument.
 
 2. `OnIdle` performs some processing and returns a nonzero value to indicate it should be called again to do further processing.
 
-3.  The message loop checks the message queue again. If no messages are pending, it calls `OnIdle` again, incrementing the *lCount* argument.
+3. The message loop checks the message queue again. If no messages are pending, it calls `OnIdle` again, incrementing the *lCount* argument.
 
-4.  Eventually, `OnIdle` finishes processing all its idle tasks and returns 0. This tells the message loop to stop calling `OnIdle` until the next message is received from the message queue, at which point the idle cycle restarts with the argument set to 0.
+4. Eventually, `OnIdle` finishes processing all its idle tasks and returns 0. This tells the message loop to stop calling `OnIdle` until the next message is received from the message queue, at which point the idle cycle restarts with the argument set to 0.
 
 Do not perform lengthy tasks during `OnIdle` because your application cannot process user input until `OnIdle` returns.
 
 > [!NOTE]
->  The default implementation of `OnIdle` updates command user-interface objects such as menu items and toolbar buttons, and it performs internal data structure cleanup. Therefore, if you override `OnIdle`, you must call `CWinApp::OnIdle` with the `lCount` in your overridden version. First call all base-class idle processing (that is, until the base class `OnIdle` returns 0). If you need to perform work before the base-class processing completes, review the base-class implementation to select the proper *lCount* during which to do your work.
+> The default implementation of `OnIdle` updates command user-interface objects such as menu items and toolbar buttons, and it performs internal data structure cleanup. Therefore, if you override `OnIdle`, you must call `CWinApp::OnIdle` with the `lCount` in your overridden version. First call all base-class idle processing (that is, until the base class `OnIdle` returns 0). If you need to perform work before the base-class processing completes, review the base-class implementation to select the proper *lCount* during which to do your work.
 
 If you do not want `OnIdle` to be called whenever a message is retrieved from the message queue, you can override the [CWinThreadIsIdleMessage](../../mfc/reference/cwinthread-class.md#isidlemessage). If an application has set a very short timer, or if the system is sending the WM_SYSTIMER message, then `OnIdle` will be called repeatedly, and degrade performance.
 
@@ -1542,8 +1542,8 @@ The framework calls this method to open the named [CDocument](../../mfc/referenc
 
 ```
 virtual CDocument* OpenDocumentFile(
-LPCTSTR lpszFileName
-BOOL bAddToMRU = TRUE);
+    LPCTSTR lpszFileName
+    BOOL bAddToMRU = TRUE);
 ```
 
 ### Parameters
@@ -1583,7 +1583,7 @@ A reference to a [CCommandLineInfo](../../mfc/reference/ccommandlineinfo-class.m
 
 When you start a new MFC project using the Application Wizard, the Application Wizard will create a local instance of `CCommandLineInfo`, and then call `ProcessShellCommand` and `ParseCommandLine` in the [InitInstance](#initinstance) member function. A command line follows the route described below:
 
-1.  After being created in `InitInstance`, the `CCommandLineInfo` object is passed to `ParseCommandLine`.
+1. After being created in `InitInstance`, the `CCommandLineInfo` object is passed to `ParseCommandLine`.
 
 2. `ParseCommandLine` then calls `CCommandLineInfo::ParseParam` repeatedly, once for each parameter.
 
@@ -1661,7 +1661,7 @@ Nonzero if the shell command is processed successfully. If 0, return FALSE from 
 
 When you start a new MFC project using the Application Wizard, the Application Wizard will create a local instance of `CCommandLineInfo`, and then call `ProcessShellCommand` and [ParseCommandLine](#parsecommandline) in the `InitInstance` member function. A command line follows the route described below:
 
-1.  After being created in `InitInstance`, the `CCommandLineInfo` object is passed to `ParseCommandLine`.
+1. After being created in `InitInstance`, the `CCommandLineInfo` object is passed to `ParseCommandLine`.
 
 2. `ParseCommandLine` then calls [CCommandLineInfo::ParseParam](../../mfc/reference/ccommandlineinfo-class.md#parseparam) repeatedly, once for each parameter.
 
@@ -1759,17 +1759,16 @@ Registers the application with the restart manager.
 
 ```
 virtual HRESULT RegisterWithRestartManager(
-BOOL bRegisterRecoveryCallback,
-const CString& strRestartIdentifier);
+    BOOL bRegisterRecoveryCallback,
+    const CString& strRestartIdentifier);
 
- 
 virtual HRESULT RegisterWithRestartManager(
-LPCWSTR pwzCommandLineArgs,
-DWORD dwRestartFlags,
-APPLICATION_RECOVERY_CALLBACK pRecoveryCallback,
-LPVOID lpvParam,
-DWORD dwPingInterval,
-DWORD dwCallbackFlags);
+    LPCWSTR pwzCommandLineArgs,
+    DWORD dwRestartFlags,
+    APPLICATION_RECOVERY_CALLBACK pRecoveryCallback,
+    LPVOID lpvParam,
+    DWORD dwPingInterval,
+    DWORD dwCallbackFlags);
 ```
 
 ### Parameters

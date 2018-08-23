@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CWnd Class
+
 Provides the base functionality of all window classes in the Microsoft Foundation Class Library.
 
 ## Syntax
@@ -888,7 +889,7 @@ TRUE to cancel tool tips when a key is pressed and set the status bar text to th
 ### Remarks
 
 > [!NOTE]
->  Using this member function has no effect on tool tips managed by your code. It only affects the tool tip control managed by [CWnd::EnableToolTips](#enabletooltips).
+> Using this member function has no effect on tool tips managed by your code. It only affects the tool tip control managed by [CWnd::EnableToolTips](#enabletooltips).
 
 ### Example
 
@@ -1130,7 +1131,7 @@ TRUE if the method was successful; otherwise FALSE.
 > [!WARNING]
 > `CWnd::PreCreateWindow` now assigns the hMenu member of its `CREATESTRUCT` parameter to the **this** pointer if the menu is NULL and the style contains WS_CHILD. For proper functionality, ensure that your dialog control has an ID that is not NULL.
 >
->  This change fixes a crash in managed/native interop scenarios. A TRACE statement in `CWnd::Create` alerts the developer of the problem.
+> This change fixes a crash in managed/native interop scenarios. A TRACE statement in `CWnd::Create` alerts the developer of the problem.
 
 Use the [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) function to register window classes. User defined window classes are available in the module where they are registered.
 
@@ -1269,7 +1270,7 @@ A pointer to a [CFile](../../mfc/reference/cfile-class.md) containing the persis
 *bStorage*  
 Indicates whether the data in *pPersist* should be interpreted as IStorage or IStream data. If the data in *pPersist* is a storage, *bStorage* should be TRUE. If the data in *pPersist* is a stream, *bStorage* should be FALSE. The default value is FALSE.
 
-*bstrLicKe*y
+*bstrLicKey*  
 Optional license key data. This data is needed only for creating controls that require a run-time license key. If the control supports licensing, you must provide a license key for the creation of the control to succeed. The default value is NULL.
 
 *clsid*  
@@ -1382,7 +1383,7 @@ TRUE if the method was successful; otherwise FALSE.
 > [!WARNING]
 > `CWnd::PreCreateWindow` now assigns the hMenu member of its `CREATESTRUCT` parameter to the **this** pointer if the menu is NULL and the style contains WS_CHILD. For proper functionality, ensure that your dialog control has an ID that is not NULL.
 >
->  This change fixes a crash in managed/native interop scenarios. A `TRACE` statement in `CWnd::Create` alerts the developer of the problem.
+> This change fixes a crash in managed/native interop scenarios. A `TRACE` statement in `CWnd::Create` alerts the developer of the problem.
 
 The default extended window style is WS_EX_LEFT. The default window style is WS_OVERLAPPED.
 
@@ -2060,7 +2061,7 @@ TRUE if tool tips are enabled; otherwise FALSE.
 Override [OnToolHitTest](#ontoolhittest) to provide the [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) struct or structs for the window.
 
 > [!NOTE]
->  Some windows, such as [CToolBar](../../mfc/reference/ctoolbar-class.md), provide a built-in implementation of [OnToolHitTest](#ontoolhittest).
+> Some windows, such as [CToolBar](../../mfc/reference/ctoolbar-class.md), provide a built-in implementation of [OnToolHitTest](#ontoolhittest).
 
 See [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) in the Windows SDK for more information on this structure.
 
@@ -3492,7 +3493,7 @@ A group of controls begins with a control that was created with the [WS_GROUP](s
 By default, the `GetNextDlgGroupItem` member function returns a pointer to the next control in the group. If *pWndCtl* identifies the first control in the group and *bPrevious* is TRUE, `GetNextDlgGroupItem` returns a pointer to the last control in the group.
 
 > [!NOTE]
->  Because MFC supports windowless ActiveX controls, standard ActiveX controls, and windows, referring to a control by only an HWND no longer suffices. The `COleControlSiteOrWnd` object includes information that identifies the object as a windowed ActiveX control, a windowless ActiveX control, or a window, as follows:
+> Because MFC supports windowless ActiveX controls, standard ActiveX controls, and windows, referring to a control by only an HWND no longer suffices. The `COleControlSiteOrWnd` object includes information that identifies the object as a windowed ActiveX control, a windowless ActiveX control, or a window, as follows:
 
 |Control or window type|Identifying information|
 |----------------------------|-----------------------------|
@@ -3678,7 +3679,7 @@ Address of the variable that will that will receive the property value. It must 
 `GetProperty` returns the value through *pvProp*.
 
 > [!NOTE]
->  This function should be called only on a `CWnd` object that represents an ActiveX control.
+> This function should be called only on a `CWnd` object that represents an ActiveX control.
 
 For more information about using this member function with ActiveX Control Containers, see the article [ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
 
@@ -3737,7 +3738,7 @@ A pointer to the safe owner for the given window.
 The safe owner is the first non-child parent window of *pParent*. If *pParent* is NULL, the thread's main window (retrieved via [AfxGetMainWnd](../../mfc/reference/application-information-and-management.md#afxgetmainwnd)) is used to find an owner.
 
 > [!NOTE]
->  The framework itself uses this function to determine the correct owner window for dialog boxes and property sheets where the owner is not specified.
+> The framework itself uses this function to determine the correct owner window for dialog boxes and property sheets where the owner is not specified.
 
 ##  <a name="getscrollbarctrl"></a>  CWnd::GetScrollBarCtrl
 
@@ -4527,7 +4528,7 @@ void AFX_CDECL InvokeHelper(
     VARTYPE vtRet,
     void* pvRet,
     const BYTE* pbParamInfo,
-...);
+    ... );
 ```
 
 ### Parameters
@@ -4557,7 +4558,7 @@ The *pbParamInfo* parameter specifies the types of the parameters passed to the 
 This function converts the parameters to VARIANTARG values, then invokes the `IDispatch::Invoke` method on the ActiveX control. If the call to `IDispatch::Invoke` fails, this function will throw an exception. If the SCODE (status code) returned by `IDispatch::Invoke` is DISP_E_EXCEPTION, this function throws a [COleException](../../mfc/reference/coleexception-class.md) object, otherwise it throws a [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).
 
 > [!NOTE]
->  This function should be called only on a `CWnd` object that represents an ActiveX control.
+> This function should be called only on a `CWnd` object that represents an ActiveX control.
 
 For more information about using this member function with ActiveX Control Containers, see the article [ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
 
@@ -4929,7 +4930,7 @@ If *nFlags* is nonzero, `ModifyStyle` calls the Windows API function [SetWindowP
 To modify a window's extended styles, see [ModifyStyleEx](#modifystyleex).
 
 > [!NOTE]
->  For some styles in certain controls (the ES_READONLY style in the edit control, for example), `ModifyStyle` may not properly change the style because the control may need to perform special internal processing. In these cases, a corresponding message to change the style will be available ( EM_SETREADONLY in the example mentioned).
+> For some styles in certain controls (the ES_READONLY style in the edit control, for example), `ModifyStyle` may not properly change the style because the control may need to perform special internal processing. In these cases, a corresponding message to change the style will be available ( EM_SETREADONLY in the example mentioned).
 
 ### Example
 
@@ -5090,7 +5091,7 @@ If TRUE, the `CWnd` is being activated; otherwise deactivated.
 If the `CWnd` object is activated with a mouse click, it will also receive an [OnMouseActivate](#onmouseactivate) member function call.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onactivateapp"></a>  CWnd::OnActivateApp
 
@@ -5113,7 +5114,7 @@ Specifies the value of the thread ID. If *bActive* is TRUE, *dwThreadID* identif
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onambientproperty"></a>  CWnd::OnAmbientProperty
 
@@ -5171,7 +5172,7 @@ afx_msg void OnAppCommand(
 This method receives the [WM_APPCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646275) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onaskcbformatname"></a>  CWnd::OnAskCbFormatName
 
@@ -5198,7 +5199,7 @@ The Clipboard owner should provide a name for its format.
 Override this member function and copy the name of the CF_OWNERDISPLAY format into the specified buffer, not exceeding the maximum number of bytes specified.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oncancelmode"></a>  CWnd::OnCancelMode
 
@@ -5234,7 +5235,7 @@ A window receives this message even if it calls [ReleaseCapture](http://msdn.mic
 See the Windows SDK for information on the `ReleaseCapture` Windows function.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onchangecbchain"></a>  CWnd::OnChangeCbChain
 
@@ -5259,7 +5260,7 @@ Specifies the window handle that follows the window being removed from the Clipb
 Each `CWnd` object that receives an `OnChangeCbChain` call should use the [SendMessage](http://msdn.microsoft.com/library/windows/desktop/ms644950) Windows function to send the [WM_CHANGECBCHAIN](http://msdn.microsoft.com/library/windows/desktop/ms649019) message to the next window in the Clipboard-viewer chain (the handle returned by `SetClipboardViewer`). If *hWndRemove* is the next window in the chain, the window specified by *hWndAfter* becomes the next window, and Clipboard messages are passed on to it.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onchangeuistate"></a>  CWnd::OnChangeUIState
 
@@ -5336,7 +5337,7 @@ Because there is not necessarily a one-to-one correspondence between keys presse
 For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and the right CTRL keys on the main section of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; and the slash (/) and ENTER keys in the numeric keypad. Some other keyboards may support the extended-key bit in *nFlags*.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onchartoitem"></a>  CWnd::OnCharToItem
 
@@ -5367,7 +5368,7 @@ The framework calls this member function to specify the action that the applicat
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onchildactivate"></a>  CWnd::OnChildActivate
 
@@ -5457,7 +5458,7 @@ afx_msg void OnColorizationColorChanged(
 This method receives the [WM_DWMNCRENDERINGCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388198) notification message, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oncommand"></a>  CWnd::OnCommand
 
@@ -5488,7 +5489,7 @@ An application returns nonzero if it processes this message; otherwise 0.
 Override this member function in your derived class to handle the [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message. An override will not process the message map unless the base class `OnCommand` is called.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oncompacting"></a>  CWnd::OnCompacting
 
@@ -5510,7 +5511,7 @@ This indicates that system memory is low.
 When a `CWnd` object receives this call, it should free as much memory as possible, taking into account the current level of activity of the application and the total number of applications running in Windows. The application can call the Windows function to determine how many applications are running.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oncompareitem"></a>  CWnd::OnCompareItem
 
@@ -5549,7 +5550,7 @@ Two items in the combo or list box are reformed in a `COMPAREITEMSTRUCT` structu
 If the `hwndItem` member of the `COMPAREITEMSTRUCT` structure belongs to a [CListBox](../../mfc/reference/clistbox-class.md) or [CComboBox](../../mfc/reference/ccombobox-class.md) object, then the `CompareItem` virtual function of the appropriate class is called. Override `CComboBox::CompareItem` or `CListBox::CompareItem` in your derived `CListBox` or `CComboBox` class to do the item comparison.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oncompositionchanged"></a>  CWnd::OnCompositionChanged
 
@@ -5564,7 +5565,7 @@ afx_msg void OnCompositionChanged();
 This method receives the [WM_DWMCOMPOSITIONCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388199) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oncontextmenu"></a>  CWnd::OnContextMenu
 
@@ -5623,7 +5624,7 @@ The receiving application should consider the data read-only. The structure poin
 If the receiving application needs access to the data after this function returns, it must copy the data received to a local buffer.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oncreate"></a>  CWnd::OnCreate
 
@@ -5651,7 +5652,7 @@ Override this member function to perform any needed initialization of a derived 
 The `CREATESTRUCT` structure contains copies of the parameters used to create the window.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onctlcolor"></a>  CWnd::OnCtlColor
 
@@ -5704,7 +5705,7 @@ To change the background color of a single-line edit control, set the brush hand
 `OnCtlColor` will not be called for the list box of a drop-down combo box because the drop-down list box is actually a child of the combo box and not a child of the window. To change the color of the drop-down list box, create a `CComboBox` with an override of `OnCtlColor` that checks for CTLCOLOR_LISTBOX in the `nCtlColor` parameter. In this handler, the `SetBkColor` member function must be used to set the background color for the text.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function. To add the following method to your dialog class, use the Visual Studio properties pane to add a message handler for WM_CTLCOLOR. Alternatively, you can manually add an ON_WM_CTLCOLOR() entry to the message map.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function. To add the following method to your dialog class, use the Visual Studio properties pane to add a message handler for WM_CTLCOLOR. Alternatively, you can manually add an ON_WM_CTLCOLOR() entry to the message map.
 
 ### Example
 
@@ -5753,7 +5754,7 @@ Since there is not necessarily a one-to-one correspondence between keys pressed 
 For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and the right CTRL keys on the main section of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; and the slash (/) and ENTER keys in the numeric keypad. Some other keyboards may support the extended-key bit in *nFlags*.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="ondeleteitem"></a>  CWnd::OnDeleteItem
 
@@ -5778,7 +5779,7 @@ Specifies a long pointer to a [DELETEITEMSTRUCT](../../mfc/reference/deleteitems
 If the `hwndItem` member of the `DELETEITEMSTRUCT` structure belongs to a combo box or list box, then the `DeleteItem` virtual function of the appropriate class is called. Override the `DeleteItem` member function of the appropriate control's class to delete item-specific data.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="ondestroy"></a>  CWnd::OnDestroy
 
@@ -5847,7 +5848,7 @@ The *nEvent* parameter can be one of these values:
 - DBT_DEVNODES_CHANGED Device node has changed.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="ondevmodechange"></a>  CWnd::OnDevModeChange
 
@@ -5869,7 +5870,7 @@ Applications that handle the WM_DEVMODECHANGE message may reinitialize their dev
 This function is not called when the user changes the default printer from Control Panel. In this case, the `OnWinIniChange` function is called.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="ondrawclipboard"></a>  CWnd::OnDrawClipboard
 
@@ -5946,7 +5947,7 @@ Before returning from processing this message, an application should ensure that
 If the `hwndItem` member belongs to a [CButton](../../mfc/reference/cbutton-class.md), [CMenu](../../mfc/reference/cmenu-class.md), [CListBox](../../mfc/reference/clistbox-class.md), or [CComboBox](../../mfc/reference/ccombobox-class.md) object, then the `DrawItem` virtual function of the appropriate class is called. Override the `DrawItem` member function of the appropriate control's class to draw the item.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="ondropfiles"></a>  CWnd::OnDropFiles
 
@@ -5966,7 +5967,7 @@ A pointer to an internal data structure that describes the dropped files. This h
 Typically, a derived class will be designed to support dropped files and it will register itself during window construction.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onenable"></a>  CWnd::OnEnable
 
@@ -5986,7 +5987,7 @@ Specifies whether the `CWnd` object has been enabled or disabled. This parameter
 `OnEnable` is called before the [EnableWindow](#enablewindow) member function returns, but after the window enabled state ( [WS_DISABLED](styles-used-by-mfc.md#window-styles) style bit) has changed.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onendsession"></a>  CWnd::OnEndSession
 
@@ -6010,7 +6011,7 @@ If *bEnding* is TRUE, Windows can terminate any time after all applications have
 You do not need to call the [DestroyWindow](#destroywindow) member function or [PostQuitMessage](http://msdn.microsoft.com/library/windows/desktop/ms644945) Windows function when the session is ending.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onenteridle"></a>  CWnd::OnEnterIdle
 
@@ -6039,7 +6040,7 @@ Specifies a pointer to the dialog box (if *nWhy* is MSGF_DIALOGBOX), or the wind
 A modal dialog box or menu enters an idle state when no messages are waiting in its queue after it has processed one or more previous messages.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onentermenuloop"></a>  CWnd::OnEnterMenuLoop
 
@@ -6057,7 +6058,7 @@ Specifies whether the menu involved is a popup menu. Has a nonzero value if the 
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onentersizemove"></a>  CWnd::OnEnterSizeMove
 
@@ -6074,7 +6075,7 @@ This method receives the [WM_ENTERSIZEMOVE](http://msdn.microsoft.com/library/wi
 A window enters a moving or sizing modal loop when the user clicks the window's title bar or sizing border, or when the window passes the [WM_SYSCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646360) message to the [CWnd::DefWindowProc](#defwindowproc) function and the *wParam* parameter of that message specifies SC_MOVE or SC_SIZE.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onerasebkgnd"></a>  CWnd::OnEraseBkgnd
 
@@ -6106,7 +6107,7 @@ An overridden `OnEraseBkgnd` should return nonzero in response to WM_ERASEBKGND 
 Windows assumes the background is computed with the MM_TEXT mapping mode. If the device context is using any other mapping mode, the area erased may not be within the visible part of the client area.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onexitmenuloop"></a>  CWnd::OnExitMenuLoop
 
@@ -6124,7 +6125,7 @@ Specifies whether the menu involved is a pop-up menu. Has a nonzero value if the
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onexitsizemove"></a>  CWnd::OnExitSizeMove
 
@@ -6141,7 +6142,7 @@ This method receives the [WM_EXITSIZEMOVE](http://msdn.microsoft.com/library/win
 A window enters a moving or sizing modal loop when the user clicks the window's title bar or sizing border, or when the window passes the [WM_SYSCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646360) message to the [CWnd::DefWindowProc](#defwindowproc) function and the *wParam* parameter of that message specifies SC_MOVE or SC_SIZE.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onfontchange"></a>  CWnd::OnFontChange
 
@@ -6217,7 +6218,7 @@ The maximized size is the size of the window when its borders are fully extended
 Windows fills in an array of points specifying default values for the various positions and dimensions. The application may change these values in `OnGetMinMaxInfo`.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onhelp"></a>  CWnd::OnHelp
 
@@ -6312,7 +6313,7 @@ afx_msg void OnHotKey(
 This method receives the [WM_HOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646279) notification, which is described in the Windows SDK. This message is placed at the top of the message queue associated with the thread that registered the hot key. Use the [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309) function to register a system-wide hot key.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onhscroll"></a>  CWnd::OnHScroll
 
@@ -6361,7 +6362,7 @@ The SB_THUMBTRACK scroll-bar code typically is used by applications that give so
 If an application scrolls the contents controlled by the scroll bar, it must also reset the position of the scroll box with the [SetScrollPos](#setscrollpos) member function.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ### Example
 
@@ -6410,7 +6411,7 @@ Contains the scroll-box position if the scroll-bar code is SB_THUMBPOSITION; oth
 The owner should scroll the Clipboard image, invalidate the appropriate section, and update the scroll-bar values.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oniconerasebkgnd"></a>  CWnd::OnIconEraseBkgnd
 
@@ -6432,7 +6433,7 @@ Specifies the device-context object of the icon. May be temporary and should not
 The [DefWindowProc](#defwindowproc) member function fills the icon background with the background brush of the parent window.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oninitmenu"></a>  CWnd::OnInitMenu
 
@@ -6454,7 +6455,7 @@ Specifies the menu to be initialized. May be temporary and should not be stored 
 `OnInitMenu` is only called once, when a menu is first accessed (for example, when a user clicks an item on the menu bar). This method does not provide information about menu items. As the user moves to items within the menu (for example, by moving the mouse across several menu items) the function is not called again. Once the user exits from the menu (for example, by clicking on the application client area) and later clicks an item on the menu bar, the function will be called again.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oninitmenupopup"></a>  CWnd::OnInitMenuPopup
 
@@ -6483,7 +6484,7 @@ TRUE if the pop-up menu is the Control menu; otherwise FALSE.
 This allows an application to modify the pop-up menu before it is displayed without changing the entire menu.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oninputdevicechange"></a>  CWnd::OnInputDeviceChange
 
@@ -6504,7 +6505,7 @@ afx_msg void OnInputDeviceChange(unsigned short uFlag);
 This method receives the [WM_INPUT_DEVICE_CHANGE](http://msdn.microsoft.com/library/windows/desktop/ms645591) notification, which is described in the Windows SDK. The is a generic input device message.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oninputlangchange"></a>  CWnd::OnInputLangChange
 
@@ -6528,7 +6529,7 @@ afx_msg void OnInputLangChange(
 This method receives the [WM_INPUTLANGCHANGE](http://msdn.microsoft.com/library/windows/desktop/ms632629) notification message, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="oninputlangchangerequest"></a>  CWnd::OnInputLangChangeRequest
 
@@ -6552,7 +6553,7 @@ afx_msg void OnInputLangChangeRequest(
 This method receives the [WM_INPUTLANGCHANGEREQUEST](http://msdn.microsoft.com/library/windows/desktop/ms632630) notification message, which is described in the Windows SDK. This message is posted when the user chooses a new input language with either a hotkey that is specified in the keyboard control panel application, or from the indicator on the system taskbar.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onkeydown"></a>  CWnd::OnKeyDown
 
@@ -6597,7 +6598,7 @@ Because of auto-repeat, more than one `OnKeyDown` call may occur before an [OnKe
 For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and the right CTRL keys on the main section of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; and the slash (/) and ENTER keys in the numeric keypad. Some other keyboards may support the extended-key bit in *nFlags*.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onkeyup"></a>  CWnd::OnKeyUp
 
@@ -6640,7 +6641,7 @@ A nonsystem key is a keyboard key that is pressed when the ALT key is not presse
 For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and the right CTRL keys on the main section of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; and the slash (/) and ENTER keys in the numeric keypad. Some other keyboards may support the extended-key bit in *nFlags*.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onkillfocus"></a>  CWnd::OnKillFocus
 
@@ -6660,7 +6661,7 @@ Specifies a pointer to the window that receives the input focus (may be NULL or 
 If the `CWnd` object is displaying a caret, the caret should be destroyed at this point.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onlbuttondblclk"></a>  CWnd::OnLButtonDblClk
 
@@ -6695,7 +6696,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 Only windows that have the CS_DBLCLKS [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) style will receive `OnLButtonDblClk` calls. This is the default for Microsoft Foundation Class windows. Windows calls `OnLButtonDblClk` when the user presses, releases, and then presses the left mouse button again within the system's double-click time limit. Double-clicking the left mouse button actually generates four events: [WM_LBUTTONDOWN](#onlbuttondown), [WM_LBUTTONUP](#onlbuttonup) messages, the WM_LBUTTONDBLCLK call, and another WM_LBUTTONUP message when the button is released.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onlbuttondown"></a>  CWnd::OnLButtonDown
 
@@ -6728,7 +6729,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onlbuttonup"></a>  CWnd::OnLButtonUp
 
@@ -6759,7 +6760,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmbuttondblclk"></a>  CWnd::OnMButtonDblClk
 
@@ -6794,7 +6795,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 Only windows that have the CS_DBLCLKS [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) style will receive `OnMButtonDblClk` calls. This is the default for all Microsoft Foundation Class windows. Windows generates an `OnMButtonDblClk` call when the user presses, releases, and then presses the middle mouse button again within the system's double-click time limit. Double-clicking the middle mouse button actually generates four events: [WM_MBUTTONDOWN](#onmbuttondown) and [WM_MBUTTONUP](#onmbuttonup) messages, the WM_MBUTTONDBLCLK call, and another WM_MBUTTONUP message.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmbuttondown"></a>  CWnd::OnMButtonDown
 
@@ -6827,7 +6828,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmbuttonup"></a>  CWnd::OnMButtonUp
 
@@ -6858,7 +6859,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmdiactivate"></a>  CWnd::OnMDIActivate
 
@@ -6887,7 +6888,7 @@ Contains a pointer to the MDI child window being deactivated. This pointer may b
 An MDI child window is activated independently of the MDI frame window. When the frame becomes active, the child window that was last activated with a `OnMDIActivate` call receives an [WM_NCACTIVATE](#onncactivate) message to draw an active window frame and caption bar, but it does not receive another `OnMDIActivate` call.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmeasureitem"></a>  CWnd::OnMeasureItem
 
@@ -6919,7 +6920,7 @@ If the item being measured is a `CMenu`, `CListBox` or `CComboBox` object, then 
 `OnMeasureItem` will be called only if the control's class is created at run time, or it is created with the LBS_OWNERDRAWVARIABLE or CBS_OWNERDRAWVARIABLE style. If the control is created by the dialog editor, `OnMeasureItem` will not be called. This is because the [WM_MEASUREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775925) message is sent early in the creation process of the control. If you subclass by using `DDX_Control`, `SubclassDlgItem`, or `SubclassWindow`, the subclassing usually occurs after the creation process. Therefore, there is no way to handle the [WM_MEASUREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775925) message in the control's `OnChildNotify` function, which is the mechanism MFC uses to implement ON_WM_MEASUREITEM_REFLECT.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmenuchar"></a>  CWnd::OnMenuChar
 
@@ -6960,7 +6961,7 @@ The low-order word is ignored if the high-order word contains 0 or 1. Applicatio
 It is sent to the `CWnd` that owns the menu. `OnMenuChar` is also called when the user presses ALT and any other key, even if the key does not correspond to a mnemonic character. In this case, *pMenu* points to the menu owned by the `CWnd`, and *nFlags* is 0.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmenudrag"></a>  CWnd::OnMenuDrag
 
@@ -6991,7 +6992,7 @@ afx_msg UINT OnMenuDrag(
 This method receives the [WM_MENUDRAG](http://msdn.microsoft.com/library/windows/desktop/ms647606) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmenugetobject"></a>  CWnd::OnMenuGetObject
 
@@ -7019,7 +7020,7 @@ afx_msg UINT OnMenuGetObject(MENUGETOBJECTINFO* pMenuGetObjectInfo);
 This method receives the [WM_MENUGETOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms647607) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmenurbuttonup"></a>  CWnd::OnMenuRButtonUp
 
@@ -7043,7 +7044,7 @@ afx_msg void OnMenuRButtonUp(
 This method receives the [WM_MENURBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms647610) notification, which is described in the Windows SDK. The [WM_MENURBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms647610) message enables an application to provide a context-sensitive menu for the menu item specified in the message.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmenuselect"></a>  CWnd::OnMenuSelect
 
@@ -7090,7 +7091,7 @@ If *nFlags* contains MF_SYSMENU, identifies the menu associated with the message
 If *nFlags* contains 0xFFFF and *hSysMenu* contains 0, Windows has closed the menu because the user pressed the ESC key or clicked outside the menu.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmouseactivate"></a>  CWnd::OnMouseActivate
 
@@ -7133,7 +7134,7 @@ The default implementation passes this message to the parent window before any p
 For a description of the individual hit-test area codes, see the [OnNcHitTest](#onnchittest) member function
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ### Example
 
@@ -7173,7 +7174,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 |MK_XBUTTON2|The XBUTTON2 mouse button of the Microsoft IntelliMouse is pressed.|
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmousehwheel"></a>  CWnd::OnMouseHWheel
 
@@ -7199,7 +7200,7 @@ afx_msg void OnMouseHWheel(
 This method receives the [WM_MOUSEHWHEEL](http://msdn.microsoft.com/library/windows/desktop/ms645614) notification message, which is described in the Windows SDK. This message is sent to the window that has the focus when the mouse's horizontal scroll wheel is tilted or rotated.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmouseleave"></a>  CWnd::OnMouseLeave
 
@@ -7214,7 +7215,7 @@ afx_msg void OnMouseLeave();
 This method receives the [WM_MOUSELEAVE](http://msdn.microsoft.com/library/windows/desktop/ms645615) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmousemove"></a>  CWnd::OnMouseMove
 
@@ -7249,7 +7250,7 @@ Specifies the x- and y-coordinate of the cursor. These coordinates are always re
 If the mouse is not captured, the WM_MOUSEMOVE message is received by the `CWnd` object beneath the mouse cursor; otherwise, the message goes to the window that has captured the mouse.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmousewheel"></a>  CWnd::OnMouseWheel
 
@@ -7321,7 +7322,7 @@ Specifies the new y-coordinate location of the upper-left corner of the client a
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onmoving"></a>  CWnd::OnMoving
 
@@ -7344,7 +7345,7 @@ Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT s
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncactivate"></a>  CWnd::OnNcActivate
 
@@ -7368,7 +7369,7 @@ Nonzero if Windows should proceed with default processing; 0 to prevent the capt
 The default implementation draws the title bar and title-bar text in their active colors if *bActive* is TRUE and in their inactive colors if *bActive* is FALSE.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onnccalcsize"></a>  CWnd::OnNcCalcSize
 
@@ -7399,7 +7400,7 @@ The `rgrc[1]` and `rgrc[2]` rectangles are valid only if *bCalcValidRects* is TR
 The default implementation calculates the size of the client area based on the window characteristics (presence of scroll bars, menu, and so on), and places the result in *lpncsp*.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onnccreate"></a>  CWnd::OnNcCreate
 
@@ -7421,7 +7422,7 @@ Nonzero if the nonclient area is created. It is 0 if an error occurs; the `Creat
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncdestroy"></a>  CWnd::OnNcDestroy
 
@@ -7457,7 +7458,7 @@ One of the mouse hit-test enumerated values listed below.
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onnclbuttondblclk"></a>  CWnd::OnNcLButtonDblClk
 
@@ -7482,7 +7483,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 If appropriate, the [WM_SYSCOMMAND](#onsyscommand) message is sent.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onnclbuttondown"></a>  CWnd::OnNcLButtonDown
 
@@ -7507,7 +7508,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 If appropriate, the [WM_SYSCOMMAND](#onsyscommand) is sent.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received.If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received.If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onnclbuttonup"></a>  CWnd::OnNcLButtonUp
 
@@ -7532,7 +7533,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 If appropriate, [WM_SYSCOMMAND](#onsyscommand) is sent.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncmbuttondblclk"></a>  CWnd::OnNcMButtonDblClk
 
@@ -7555,7 +7556,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncmbuttondown"></a>  CWnd::OnNcMButtonDown
 
@@ -7578,7 +7579,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncmbuttonup"></a>  CWnd::OnNcMButtonUp
 
@@ -7601,7 +7602,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncmousehover"></a>  CWnd::OnNcMouseHover
 
@@ -7625,7 +7626,7 @@ afx_msg void OnNcMouseHover(
 This method receives the [WM_NCMOUSEHOVER](http://msdn.microsoft.com/library/windows/desktop/ms645625) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncmouseleave"></a>  CWnd::OnNcMouseLeave
 
@@ -7640,7 +7641,7 @@ afx_msg void OnNcMouseLeave();
 This method receives the [WM_NCMOUSELEAVE](http://msdn.microsoft.com/library/windows/desktop/ms645626) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncmousemove"></a>  CWnd::OnNcMouseMove
 
@@ -7665,7 +7666,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 If appropriate, the [WM_SYSCOMMAND](#onsyscommand) message is sent.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncpaint"></a>  CWnd::OnNcPaint
 
@@ -7702,7 +7703,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncrbuttondown"></a>  CWnd::OnNcRButtonDown
 
@@ -7725,7 +7726,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncrbuttonup"></a>  CWnd::OnNcRButtonUp
 
@@ -7748,7 +7749,7 @@ Specifies a `CPoint` object that contains the x and y screen coordinates of the 
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncrenderingchanged"></a>  CWnd::OnNcRenderingChanged
 
@@ -7769,7 +7770,7 @@ afx_msg void OnNcRenderingChanged(BOOL bIsRendering);
 This method receives the [WM_DWMNCRENDERINGCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388200) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncxbuttondblclk"></a>  CWnd::OnNcXButtonDblClk
 
@@ -7795,7 +7796,7 @@ void OnNcXButtonDblClk(
 This method receives the [WM_XBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms646244) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncxbuttondown"></a>  CWnd::OnNcXButtonDown
 
@@ -7821,7 +7822,7 @@ afx_msg void OnNcXButtonDown(
 This method receives the [WM_NCXBUTTONDOWN](http://msdn.microsoft.com/library/windows/desktop/ms645632) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onncxbuttonup"></a>  CWnd::OnNcXButtonUp
 
@@ -7847,7 +7848,7 @@ afx_msg void OnNcXButtonUp(
 This method receives the [WM_NCXBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms646240) notification, which is described in the Windows SDK. This message is posted to the window that contains the cursor. If a window has captured the mouse, this message is not posted.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onnextmenu"></a>  CWnd::OnNextMenu
 
@@ -7871,7 +7872,7 @@ afx_msg void OnNextMenu(
 This method receives the [WM_UNINITMENUPOPUP](http://msdn.microsoft.com/library/windows/desktop/ms647614) notification, which is described in the Windows SDK. In response to this message, your application can set the `hmenuNext` member of the [MDINEXTMENU](http://msdn.microsoft.com/library/windows/desktop/ms647561) structure to specify the menu to switch to, and the `hwndNext` member to specify the window to receive menu notification messages.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onnotify"></a>  CWnd::OnNotify
 
@@ -7937,7 +7938,7 @@ afx_msg UINT OnNotifyFormat(
 This method receives the [WM_NOTIFYFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb775584) notification, which is described in the Windows SDK. WM_NOTIFY messages are sent from a common control to its parent window, and from the parent window to the common control.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onpaint"></a>  CWnd::OnPaint
 
@@ -7990,7 +7991,7 @@ To determine whether the entire client area or just a portion of it needs repain
 `OnPaintClipboard` should use the [GlobalLock](http://msdn.microsoft.com/library/windows/desktop/aa366584) Windows function to lock the memory that contains the `PAINTSTRUCT` data structure and unlock that memory with the [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows function before it exits.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onpalettechanged"></a>  CWnd::OnPaletteChanged
 
@@ -8014,7 +8015,7 @@ The `OnPaletteChanged` member function is called for all top-level and overlappe
 To avoid an infinite loop, the window shouldn't realize its palette unless it determines that *pFocusWnd* does not contain a pointer to itself.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onpaletteischanging"></a>  CWnd::OnPaletteIsChanging
 
@@ -8070,7 +8071,7 @@ When the child window is being created, the system calls `OnParentNotify` just b
 All child windows except those that have the [WS_EX_NOPARENTNOTIFY](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) style send this message to their parent windows. By default, child windows in a dialog box have the WS_EX_NOPARENTNOTIFY style unless the child window was created without this style by calling the [CreateEx](#createex) member function.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onpowerbroadcast"></a>  CWnd::OnPowerBroadcast
 
@@ -8100,7 +8101,7 @@ This method receives the [WM_POWERBROADCAST](http://msdn.microsoft.com/library/w
 The *nPowerEvent* parameter specifies events such as battery power is low, the power status has changed, permission to suspend operation is requested or denied, an operation is resuming automatically after an event, the system is suspending operation, or an operation is resuming after suspension. The *nEventData* parameter is typically not used. For more information, see the *wParam* and *lParam* parameters of the [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) message.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onquerydragicon"></a>  CWnd::OnQueryDragIcon
 
@@ -8206,7 +8207,7 @@ afx_msg void OnRawInput(
 This method receives the [WM_INPUT](http://msdn.microsoft.com/library/windows/desktop/ms646275) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onrbuttondblclk"></a>  CWnd::OnRButtonDblClk
 
@@ -8241,7 +8242,7 @@ Specifies the x and y coordinates of the cursor. These coordinates are always re
 Only windows that have the CS_DBLCLKS [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) style can receive `OnRButtonDblClk` calls. This is the default for windows within the Microsoft Foundation Class Library. Windows calls `OnRButtonDblClk` when the user presses, releases, and then again presses the right mouse button within the system's double-click time limit. Double-clicking the right mouse button actually generates four events: [WM_RBUTTONDOWN](#onrbuttondown) and [WM_RBUTTONUP](#onrbuttonup) messages, the `OnRButtonDblClk` call, and another WM_RBUTTONUP message when the button is released.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onrbuttondown"></a>  CWnd::OnRButtonDown
 
@@ -8368,7 +8369,7 @@ The receiver should render the data in that format and pass it to the Clipboard 
 Do not call the `OpenClipboard` member function or the `CloseClipboard` Windows function from within `OnRenderFormat`.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsessionchange"></a>  CWnd::OnSessionChange
 
@@ -8394,7 +8395,7 @@ This method receives the [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/librar
 The *nSessionState* parameter specifies that a session is connected or disconnected from the console or a remote terminal, a user logged on or off, a session is locked or unlocked, or a session has changed to remote-controlled status. For more information, see the *wParam* parameter of the [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/library/aa383828) message.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsetcursor"></a>  CWnd::OnSetCursor
 
@@ -8433,7 +8434,7 @@ If *nHitTest* is HTERROR and *message* is a mouse button-down message, the `Mess
 The *message* parameter is 0 when `CWnd` enters menu mode.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsetfocus"></a>  CWnd::OnSetFocus
 
@@ -8453,7 +8454,7 @@ Contains the `CWnd` object that loses the input focus (may be NULL). The pointer
 To display a caret, `CWnd` should call the appropriate caret functions at this point.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsettingchange"></a>  CWnd::OnSettingChange
 
@@ -8512,7 +8513,7 @@ Specifies the status of the window being shown. It is 0 if the message is sent b
 A window is hidden or shown when the `ShowWindow` member function is called, when an overlapped window is maximized or restored, or when an overlapped or pop-up window is closed (made iconic) or opened (displayed on the screen). When an overlapped window is closed, all pop-up windows associated with that window are hidden.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsize"></a>  CWnd::OnSize
 
@@ -8551,7 +8552,7 @@ Specifies the new height of the client area.
 If the [SetScrollPos](#setscrollpos) or [MoveWindow](#movewindow) member function is called for a child window from `OnSize`, the `bRedraw` parameter of `SetScrollPos` or `MoveWindow` should be nonzero to cause the `CWnd` to be repainted.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ### Example
 
@@ -8582,7 +8583,7 @@ The `OnSizeClipboard` member function is called with a null rectangle (0,0,0,0) 
 Within `OnSizeClipboard`, an application must use the [GlobalLock](http://msdn.microsoft.com/library/windows/desktop/aa366584) Windows function to lock the memory that contains the RECT data structure. Have the application unlock that memory with the [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows function before it yields or returns control.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsizing"></a>  CWnd::OnSizing
 
@@ -8607,7 +8608,7 @@ Address of the [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT s
 By processing this message, an application can monitor the size and position of the drag rectangle and, if needed, change its size or position.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ### Example
 
@@ -8636,7 +8637,7 @@ Specifies the number of jobs remaining in the Print Manager queue.
 This call is for informational purposes only.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onstylechanged"></a>  CWnd::OnStyleChanged
 
@@ -8663,7 +8664,7 @@ Points to a [STYLESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms63
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onstylechanging"></a>  CWnd::OnStyleChanging
 
@@ -8690,7 +8691,7 @@ Points to a [STYLESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms63
 ### Remarks
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsyschar"></a>  CWnd::OnSysChar
 
@@ -8733,7 +8734,7 @@ When the context code is 0, WM_SYSCHAR can pass the [WM_SYSCHAR](http://msdn.mic
 For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and the right CTRL keys on the main section of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; and the slash (/) and ENTER keys in the numeric keypad. Some other keyboards may support the extended-key bit in *nFlags*.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsyscolorchange"></a>  CWnd::OnSysColorChange
 
@@ -8814,7 +8815,7 @@ An application can carry out any system command at any time by passing a WM_SYSC
 Accelerator (shortcut) keystrokes that are defined to select items from the Control menu are translated into `OnSysCommand` calls; all other accelerator keystrokes are translated into [WM_COMMAND](#oncommand) messages.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsysdeadchar"></a>  CWnd::OnSysDeadChar
 
@@ -8853,7 +8854,7 @@ Specifies the scan code, key-transition code, previous key state, and context co
 It specifies the character value of a dead key.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsyskeydown"></a>  CWnd::OnSysKeyDown
 
@@ -8900,7 +8901,7 @@ Because of auto-repeat, more than one `OnSysKeyDown` call may occur before the [
 For IBM Enhanced 101- and 102-key keyboards, enhanced keys are the right ALT and the right CTRL keys on the main section of the keyboard; the INS, DEL, HOME, END, PAGE UP, PAGE DOWN, and arrow keys in the clusters to the left of the numeric keypad; and the slash (/) and ENTER keys in the numeric keypad. Some other keyboards may support the extended-key bit in *nFlags*.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onsyskeyup"></a>  CWnd::OnSysKeyUp
 
@@ -8954,7 +8955,7 @@ For non-U.S. Enhanced 102-key keyboards, the right ALT key is handled as the CTR
 |4.|[WM_SYSKEYUP](http://msdn.microsoft.com/library/windows/desktop/ms646287)|VK_MENU|
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="ontcard"></a>  CWnd::OnTCard
 
@@ -9032,7 +9033,7 @@ Specifies the identifier of the timer.
 The [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows function sends a [WM_TIMER](http://msdn.microsoft.com/library/windows/desktop/ms644902) message when no other messages are in the application's message queue.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ### Example
 
@@ -9158,7 +9159,7 @@ afx_msg void OnUniChar(
 This method receives the [WM_UNICHAR](http://msdn.microsoft.com/library/windows/desktop/ms646288) notification, which is described in the Windows SDK. The [WM_UNICHAR](http://msdn.microsoft.com/library/windows/desktop/ms646288) message is designed to send or post Unicode characters to ANSI windows. It is equivalent to the [WM_CHAR](http://msdn.microsoft.com/library/windows/desktop/ms646276) message, but uses Unicode Transformation Format-32 encoding (UTF-32), whereas the [WM_CHAR](http://msdn.microsoft.com/library/windows/desktop/ms646276) message uses UTF-16.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onuninitmenupopup"></a>  CWnd::OnUnInitMenuPopup
 
@@ -9182,7 +9183,7 @@ afx_msg void OnUnInitMenuPopup(
 This method receives the [WM_UNINITMENUPOPUP](http://msdn.microsoft.com/library/windows/desktop/ms647614) notification, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onupdateuistate"></a>  CWnd::OnUpdateUIState
 
@@ -9231,7 +9232,7 @@ afx_msg void OnUserChanged();
 This method receives the [WM_USERCHANGED](http://msdn.microsoft.com/library/windows/desktop/ms632651) notification message, which is described in the Windows SDK. When the user logs on or off, the operating system updates user-specific settings. The system sends this message immediately after updating the settings.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onvkeytoitem"></a>  CWnd::OnVKeyToItem
 
@@ -9264,7 +9265,7 @@ Specifies the action that the application performed in response to the message. 
 This member function is called by the framework only for list boxes that have the [LBS_HASSTRINGS](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) style.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onvscroll"></a>  CWnd::OnVScroll
 
@@ -9313,7 +9314,7 @@ If the scroll message came from a scroll-bar control, contains a pointer to the 
 If `OnVScroll` scrolls the contents of the `CWnd` object, it must also reset the position of the scroll box with the [SetScrollPos](#setscrollpos) member function.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onvscrollclipboard"></a>  CWnd::OnVScrollClipboard
 
@@ -9358,7 +9359,7 @@ Contains the scroll-box position if the scroll-bar code is SB_THUMBPOSITION; oth
 The owner should scroll the Clipboard image, invalidate the appropriate section, and update the scroll-bar values.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onwindowmaximizedchanged"></a>  CWnd::OnWindowMaximizedChanged
 
@@ -9379,7 +9380,7 @@ afx_msg void OnWindowMaximizedChanged(BOOL bIsMaximized);
 This method receives the [WM_DWMWINDOWMAXIMIZEDCHANGE](http://msdn.microsoft.com/library/windows/desktop/dd388201) notification message, which is described in the Windows SDK.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onwindowposchanged"></a>  CWnd::OnWindowPosChanged
 
@@ -9399,7 +9400,7 @@ Points to a [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) data struct
 The default implementation sends the [WM_SIZE](http://msdn.microsoft.com/library/windows/desktop/ms632646) and [WM_MOVE](http://msdn.microsoft.com/library/windows/desktop/ms632631) messages to the window. These messages are not sent if an application handles the `OnWindowPosChanged` call without calling its base class. It is more efficient to perform any move or size change processing during the call to `OnWindowPosChanged` without calling its base class.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onwindowposchanging"></a>  CWnd::OnWindowPosChanging
 
@@ -9421,7 +9422,7 @@ An application can prevent changes to the window by setting or clearing the appr
 For a window with the [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) or [WS_THICKFRAME](styles-used-by-mfc.md#window-styles) style, the default implementation sends a [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) message to the window. This is done to validate the new size and position of the window and to enforce the CS_BYTEALIGNCLIENT and CS_BYTEALIGN client styles. An application can override this functionality by not calling its base class.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onwininichange"></a>  CWnd::OnWinIniChange
 
@@ -9447,7 +9448,7 @@ If an application changes many different sections in WIN.INI at the same time, t
 If an application receives an `OnWinIniChange` call with *lpszSection* set to NULL, the application should check all sections in WIN.INI that affect the application.
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onwndmsg"></a>  CWnd::OnWndMsg
 
@@ -9521,7 +9522,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 |MK_XBUTTON2|The XBUTTON2 mouse button of the Microsoft IntelliMouse is pressed.|
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onxbuttondown"></a>  CWnd::OnXButtonDown
 
@@ -9559,7 +9560,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 |MK_XBUTTON2|The XBUTTON2 mouse button of the Microsoft IntelliMouse is pressed.|
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="onxbuttonup"></a>  CWnd::OnXButtonUp
 
@@ -9597,7 +9598,7 @@ The *nFlags* parameter can be a combination of modifier keys listed in the follo
 |MK_XBUTTON2|The XBUTTON2 mouse button of the Microsoft IntelliMouse is pressed.|
 
 > [!NOTE]
->  This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
+> This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
 
 ##  <a name="openclipboard"></a>  CWnd::OpenClipboard
 
@@ -9750,7 +9751,7 @@ Nonzero if the window creation should continue; 0 to indicate creation failure.
 > [!WARNING]
 > `CWnd::PreCreateWindow` now assigns the hMenu member of *cs* to the **this** pointer if the menu is NULL and the style contains WS_CHILD. For proper functionality, ensure that your dialog control has an ID that is not NULL.
 >
->  This change fixes a crash in managed/native interop scenarios. A TRACE statement in `CWnd::Create` alerts the developer of the problem.
+> This change fixes a crash in managed/native interop scenarios. A TRACE statement in `CWnd::Create` alerts the developer of the problem.
 
 Never call this function directly.
 
@@ -10776,7 +10777,7 @@ A single parameter of the type specified by *vtProp*.
 ### Remarks
 
 > [!NOTE]
->  This function should be called only on a `CWnd` object that represents an OLE control.
+> This function should be called only on a `CWnd` object that represents an OLE control.
 
 For more information about using this member function with OLE Control Containers, see the article [ActiveX Control Containers: Programming ActiveX Controls in an ActiveX Control Container](../../mfc/programming-activex-controls-in-a-activex-control-container.md).
 
@@ -11332,7 +11333,7 @@ When a window is dynamically subclassed, windows messages will route through the
 This member function attaches the Windows control to a `CWnd` object and replaces the window's `WndProc` and `AfxWndProc` functions. The function stores a pointer to the old `WndProc` in the `CWnd` object.
 
 > [!NOTE]
->  The window must not already be attached to an MFC object when this function is called.
+> The window must not already be attached to an MFC object when this function is called.
 
 ### Example
 
