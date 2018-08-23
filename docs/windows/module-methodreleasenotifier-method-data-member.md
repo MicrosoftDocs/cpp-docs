@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier::method_ Data Member
-Holds a pointer to the event handler for the current **Module::MethodReleaseNotifier** object.  
-  
-## Syntax  
-  
-```cpp  
-void (T::* method_)();  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::MethodReleaseNotifier Class](../windows/module-methodreleasenotifier-class.md)
+
+Holds a pointer to the event handler for the current **Module::MethodReleaseNotifier** object.
+
+## Syntax
+
+```cpp
+void (T::* method_)();
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::MethodReleaseNotifier Class](../windows/module-methodreleasenotifier-class.md)

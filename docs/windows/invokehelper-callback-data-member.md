@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # InvokeHelper::callback_ Data Member
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-TCallback callback_;  
-```  
-  
-## Remarks  
- Represents the event handler to call when an event occurs.  
-  
- The `TCallback` template parameter specifies the type of the event handler.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [InvokeHelper Structure](../windows/invokehelper-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+TCallback callback_;
+```
+
+## Remarks
+
+Represents the event handler to call when an event occurs.
+
+The `TCallback` template parameter specifies the type of the event handler.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[InvokeHelper Structure](../windows/invokehelper-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

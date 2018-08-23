@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::~HandleT Destructor
-Deinitializes an instance of the **HandleT** class.  
-  
-## Syntax  
-  
-```cpp  
-~HandleT();  
-```  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+
+Deinitializes an instance of the **HandleT** class.
+
+## Syntax
+
+```cpp
+~HandleT();
+```
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

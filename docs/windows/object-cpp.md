@@ -13,39 +13,43 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # object (C++)
-Identifies a custom interface.  
-  
-## Syntax  
-  
-```cpp  
-[object]  
-```  
-  
-## Remarks  
- When preceding an interface definition, the **object** C++ attribute causes the interface to be placed in the .idl file as a custom interface.  
-  
- Any interface marked with object must inherit from `IUnknown`. This condition is satisfied if any of the base interfaces inherit from `IUnknown`. If no base interfaces inherit from `IUnknown`, the compiler will cause the interface marked with **object** to derive from `IUnknown`.  
-  
-## Example  
- See [nonbrowsable](../windows/nonbrowsable.md) for an example of how to use **object**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|**interface**|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
- [dual](../windows/dual.md)   
- [dispinterface](../windows/dispinterface.md)   
- [custom](../windows/custom-cpp.md)   
- [__interface](../cpp/interface.md)   
+
+Identifies a custom interface.
+
+## Syntax
+
+```cpp
+[object]
+```
+
+## Remarks
+
+When preceding an interface definition, the **object** C++ attribute causes the interface to be placed in the .idl file as a custom interface.
+
+Any interface marked with object must inherit from `IUnknown`. This condition is satisfied if any of the base interfaces inherit from `IUnknown`. If no base interfaces inherit from `IUnknown`, the compiler will cause the interface marked with **object** to derive from `IUnknown`.
+
+## Example
+
+See [nonbrowsable](../windows/nonbrowsable.md) for an example of how to use **object**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|**interface**|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Interface Attributes](../windows/interface-attributes.md)  
+[dual](../windows/dual.md)  
+[dispinterface](../windows/dispinterface.md)  
+[custom](../windows/custom-cpp.md)  
+[__interface](../cpp/interface.md)  

@@ -13,24 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # VerifyInheritanceHelper::Verify Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-static void Verify();  
-```  
-  
-## Remarks  
- Tests the two interfaces specified by the current template parameters and determines whether one interface is derived from the other.  
-  
- An error is emitted if one interface is not derived from the other.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [VerifyInheritanceHelper Structure](../windows/verifyinheritancehelper-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+static void Verify();
+```
+
+## Remarks
+
+Tests the two interfaces specified by the current template parameters and determines whether one interface is derived from the other.
+
+An error is emitted if one interface is not derived from the other.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[VerifyInheritanceHelper Structure](../windows/verifyinheritancehelper-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

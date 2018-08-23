@@ -13,25 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FileHandleTraits Structure
-Defines characteristics of a file handle.  
-  
-## Syntax  
-  
-```cpp  
-struct FileHandleTraits : HANDLETraits;  
-```  
-  
-## Members  
-  
-## Inheritance Hierarchy  
- `HANDLETraits`  
-  
- `FileHandleTraits`  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+
+Defines characteristics of a file handle.
+
+## Syntax
+
+```cpp
+struct FileHandleTraits : HANDLETraits;
+```
+
+## Members
+
+## Inheritance Hierarchy
+
+`HANDLETraits`
+
+`FileHandleTraits`
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

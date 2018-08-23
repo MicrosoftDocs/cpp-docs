@@ -21,6 +21,6 @@ ms.workload: ["cplusplus"]
   
  **/clr** implies **/EHa**, and you cannot specify any other **/EH** compiler option with **/clr**. For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).  
   
- You may get D8016 after updating a [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] 6.0 project: the project update wizard process may enable **/RTC** for each source code file in the project, which overrides the **/RTC** setting for the project.  To resolve, change the **/RTC** setting for each source code file in the project to the default setting, which means the project setting for **/RTC** will be in effect for each file.  
+ You may get D8016 after updating a Visual C++ 6.0 project: the project update wizard process may enable **/RTC** for each source code file in the project, which overrides the **/RTC** setting for the project.  To resolve, change the **/RTC** setting for each source code file in the project to the default setting, which means the project setting for **/RTC** will be in effect for each file.  
   
  See [/RTC (Run-Time Error Checks)](../../build/reference/rtc-run-time-error-checks.md) for information on changing the **/RTC** property setting.

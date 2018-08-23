@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::IDisposable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::IDisposable Interface"]
 ms.assetid: f4344056-7030-42ed-bc98-b140edffddcd
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::IDisposable Interface

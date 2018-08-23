@@ -13,22 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Deleting a Version Information Block
-### To delete a version information block  
-  
-1.  Open the version information resource by double-clicking its icon in [Resource View](../windows/resource-view-window.md).  
-  
-    > [!NOTE]
-    >  If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).  
-  
-2.  Right-click the block header you wish to delete then choose **Delete Version Info Block** from the shortcut menu.  
-  
-     This command deletes the selected header and leaves the remaining version information intact. Please note you cannot undo the action.  
-  
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
-  
+
+### To delete a version information block
+
+1. Open the version information resource by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
+
+   > [!NOTE]
+   > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).
+
+2. Right-click the block header you wish to delete then choose **Delete Version Info Block** from the shortcut menu.
+
+   This command deletes the selected header and leaves the remaining version information intact. Please note you cannot undo the action.
+
+For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
+
 ## Requirements
- Win32  
-  
-## See Also  
- [Version Information Editor](../windows/version-information-editor.md)   
- [Version Information (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)
+
+Win32
+
+## See Also
+
+[Version Information Editor](../windows/version-information-editor.md)  
+[Version Information (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

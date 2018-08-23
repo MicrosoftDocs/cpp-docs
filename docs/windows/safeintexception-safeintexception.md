@@ -8,42 +8,47 @@ f1_keywords: ["SafeIntException", "SafeIntException.SafeIntException", "SafeIntE
 dev_langs: ["C++"]
 helpviewer_keywords: ["SafeIntException, constructor"]
 ms.assetid: 8e5a0c24-a56b-4c80-9ee8-876604b1e7dc
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SafeIntException::SafeIntException
-Creates a **SafeIntException** object.  
-  
-## Syntax  
-  
-```cpp  
-SafeIntException();  
-  
-SafeIntException(  
-   SafeIntError code  
-);  
-```  
-  
-### Parameters  
- [in] *code*  
- An enumerated data value that describes the error that occurred.  
-  
-## Remarks  
- The possible values for *code* are defined in the file Safeint.h. For convenience, the possible values are also listed here.  
-  
--   `SafeIntNoError`  
-  
--   `SafeIntArithmeticOverflow`  
-  
--   `SafeIntDivideByZero`  
-  
-## Requirements  
- **Header:** safeint.h  
-  
- **Namespace:** msl::utilities  
-  
-## See Also  
- [SafeInt Library](../windows/safeint-library.md)   
- [SafeIntException Class](../windows/safeintexception-class.md)   
- [SafeInt Class](../windows/safeint-class.md)
+
+Creates a **SafeIntException** object.
+
+## Syntax
+
+```cpp
+SafeIntException();
+
+SafeIntException(
+   SafeIntError code
+);
+```
+
+### Parameters
+
+[in] *code*  
+An enumerated data value that describes the error that occurred.
+
+## Remarks
+
+The possible values for *code* are defined in the file Safeint.h. For convenience, the possible values are also listed here.
+
+- `SafeIntNoError`
+
+- `SafeIntArithmeticOverflow`
+
+- `SafeIntDivideByZero`
+
+## Requirements
+
+**Header:** safeint.h
+
+**Namespace:** msl::utilities
+
+## See Also
+
+[SafeInt Library](../windows/safeint-library.md)  
+[SafeIntException Class](../windows/safeintexception-class.md)  
+[SafeInt Class](../windows/safeint-class.md)

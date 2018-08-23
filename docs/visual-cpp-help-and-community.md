@@ -6,8 +6,8 @@ ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Visual C++ Help and Community
@@ -25,7 +25,7 @@ Here's how to getting information about how to write C++ code and use the Visual
 |Title|Description|
 |-----------|-----------------|
 |[Visual C++](visual-cpp-in-visual-studio.md)|Contains reference and conceptual documentation about Visual C++. Part of the MSDN Library.|
-|[Windows Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=256534)|Contains information about how to use C++ and other languages to develop apps for [!INCLUDE[win8](build/reference/includes/win8_md.md)]. Part of the Windows Developer Center; the C++ content is under the Docs > Language Reference node.|
+|[Windows Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=256534)|Contains information about how to use C++ and other languages to develop apps for Windows 8. Part of the Windows Developer Center; the C++ content is under the Docs > Language Reference node.|
 
 ### Online and Offline Documentation
 

@@ -13,35 +13,39 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # out (C++)
-Identifies pointer parameters that are returned from the called procedure to the calling procedure (from the server to the client).  
-  
-## Syntax  
-  
-```cpp  
-[out]  
-```  
-  
-## Remarks  
- The **out** C++ attribute has the same functionality as the [out](http://msdn.microsoft.com/library/windows/desktop/aa367136) MIDL attribute.  
-  
-## Example  
- See the example for [bindable](../windows/bindable.md) for a sample use of **out**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|Interface parameter|  
-|**Repeatable**|No|  
-|**Required attributes**|None|  
-|**Invalid attributes**|None|  
-  
- For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Parameter Attributes](../windows/parameter-attributes.md)   
- [defaultvalue](../windows/defaultvalue.md)   
- [id](../windows/id.md)   
+
+Identifies pointer parameters that are returned from the called procedure to the calling procedure (from the server to the client).
+
+## Syntax
+
+```cpp
+[out]
+```
+
+## Remarks
+
+The **out** C++ attribute has the same functionality as the [out](http://msdn.microsoft.com/library/windows/desktop/aa367136) MIDL attribute.
+
+## Example
+
+See the example for [bindable](../windows/bindable.md) for a sample use of **out**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|Interface parameter|
+|**Repeatable**|No|
+|**Required attributes**|None|
+|**Invalid attributes**|None|
+
+For more information about the attribute contexts, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Parameter Attributes](../windows/parameter-attributes.md)  
+[defaultvalue](../windows/defaultvalue.md)  
+[id](../windows/id.md)  

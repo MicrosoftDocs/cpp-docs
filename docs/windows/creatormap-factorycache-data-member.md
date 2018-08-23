@@ -13,22 +13,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CreatorMap::factoryCache Data Member
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-FactoryCache* factoryCache;  
-```  
-  
-## Remarks  
- Stores the pointer to the factory cache for the **CreatorMap**.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [CreatorMap Structure](../windows/creatormap-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+FactoryCache* factoryCache;
+```
+
+## Remarks
+
+Stores the pointer to the factory cache for the **CreatorMap**.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[CreatorMap Structure](../windows/creatormap-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

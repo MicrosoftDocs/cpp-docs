@@ -13,26 +13,31 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ImplementsBase Structure
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-struct ImplementsBase;  
-```  
-  
-## Remarks  
- Used to validate template parameter types in [Implements Structure](../windows/implements-structure.md).  
-  
- The **ImplementsBase** structure is empty by design.  
-  
-## Inheritance Hierarchy  
- `ImplementsBase`  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+struct ImplementsBase;
+```
+
+## Remarks
+
+Used to validate template parameter types in [Implements Structure](../windows/implements-structure.md).
+
+The **ImplementsBase** structure is empty by design.
+
+## Inheritance Hierarchy
+
+`ImplementsBase`
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HANDLETraits::GetInvalidValue Method
-Represents an invalid handle.  
-  
-## Syntax  
-  
-```cpp  
-inline static HANDLE GetInvalidValue();  
-```  
-  
-## Return Value  
- Always returns INVALID_HANDLE_VALUE. (INVALID_HANDLE_VALUE is defined by Windows.)  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [HANDLETraits Structure](../windows/handletraits-structure.md)
+
+Represents an invalid handle.
+
+## Syntax
+
+```cpp
+inline static HANDLE GetInvalidValue();
+```
+
+## Return Value
+
+Always returns INVALID_HANDLE_VALUE. (INVALID_HANDLE_VALUE is defined by Windows.)
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[HANDLETraits Structure](../windows/handletraits-structure.md)

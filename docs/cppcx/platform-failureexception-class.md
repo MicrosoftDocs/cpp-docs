@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::FailureException::FailureException", "VCCORLIB
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::FailureException"]
 ms.assetid: 1729cd07-bfc2-448e-9db5-185d5cbf5b81
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::FailureException Class

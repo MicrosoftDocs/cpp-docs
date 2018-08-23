@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Details"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details Namespace"]
 ms.assetid: e13c1f93-c823-4f0f-a3ee-2429bfd184db
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details Namespace

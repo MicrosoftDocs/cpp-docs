@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/PlatformSizeT::SizeT constructor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::SizeT Struct"]
 ms.assetid: 0803612c-8ba1-430c-9b7b-1bebae88608d
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::SizeT value class

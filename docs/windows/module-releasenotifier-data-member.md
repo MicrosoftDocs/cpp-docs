@@ -13,18 +13,20 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::releaseNotifier_ Data Member
-Holds a pointer to a `ReleaseNotifier` object.  
-  
-## Syntax  
-  
-```cpp  
-ReleaseNotifier *releaseNotifier_;  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## See Also
- [Module Class](../windows/module-class.md)
+
+Holds a pointer to a `ReleaseNotifier` object.
+
+## Syntax
+
+```cpp
+ReleaseNotifier *releaseNotifier_;
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+[Module Class](../windows/module-class.md)

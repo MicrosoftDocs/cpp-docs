@@ -12,28 +12,28 @@ ms.workload: ["cplusplus"]
 ---
 # Configuring Programs for Windows XP
 
-Because Visual Studio supports multiple platform toolsets, you can target operating systems and runtime libraries that are not supported by the default toolset. For example, by switching the platform toolset, you can use the C++11, C++14, and C++17 language enhancements supported by the Visual C++ compiler in Visual Studio to create apps that target [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. You can also use older platform toolsets to maintain binary-compatible legacy code and still take advantage of the latest features of the Visual Studio IDE.
+Because Visual Studio supports multiple platform toolsets, you can target operating systems and runtime libraries that are not supported by the default toolset. For example, by switching the platform toolset, you can use the C++11, C++14, and C++17 language enhancements supported by the Visual C++ compiler in Visual Studio to create apps that target Windows XP and Windows Server 2003. You can also use older platform toolsets to maintain binary-compatible legacy code and still take advantage of the latest features of the Visual Studio IDE.
 
 ## Install the Windows XP platform toolset
-To get the platform toolset and components to target [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] in Visual Studio 2017, run the Visual Studio Installer. When you initially install Visual Studio or when you choose **Modify** to modify an existing installation, make sure that the **Desktop development with C++** workload is selected. In the list of optional components for this workload, choose **Windows XP support for C++**, and then choose **Install** or **Modify**.
+To get the platform toolset and components to target Windows XP and Windows Server 2003 in Visual Studio 2017, run the Visual Studio Installer. When you initially install Visual Studio or when you choose **Modify** to modify an existing installation, make sure that the **Desktop development with C++** workload is selected. In the list of optional components for this workload, choose **Windows XP support for C++**, and then choose **Install** or **Modify**.
 
 ## Windows XP targeting experience
 
-The Windows XP platform toolset that's included in Visual Studio is a version of the Windows 7 SDK, but it uses the current C++ compiler. It also configures project properties to appropriate default values, for example, the specification of a compatible linker for down-level targeting. Only Windows desktop apps that are created by using a Windows XP platform toolset run on [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)], but those apps can also run on more recent Windows operating systems.
+The Windows XP platform toolset that's included in Visual Studio is a version of the Windows 7 SDK, but it uses the current C++ compiler. It also configures project properties to appropriate default values, for example, the specification of a compatible linker for down-level targeting. Only Windows desktop apps that are created by using a Windows XP platform toolset run on Windows XP and Windows Server 2003, but those apps can also run on more recent Windows operating systems.
 
 #### To target Windows XP
 
 1. In **Solution Explorer**, open the shortcut menu for your project, and then choose **Properties**.
 
-1. In the **Property Pages** dialog box for the project, under **Configuration Properties** > **General**, set the **Platform Toolset** property to the desired Windows XP toolset. For example, choose **Visual Studio 2017 - Windows XP (v141_xp)** to create code for [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] by using the Microsoft Visual C++ 2017 compiler.
+1. In the **Property Pages** dialog box for the project, under **Configuration Properties** > **General**, set the **Platform Toolset** property to the desired Windows XP toolset. For example, choose **Visual Studio 2017 - Windows XP (v141_xp)** to create code for Windows XP and Windows Server 2003 by using the Microsoft Visual C++ 2017 compiler.
 
 ### C++ runtime support
 
-Along with the Windows XP platform toolset, the C Runtime Library (CRT), C++ Standard Library, Active Template Library (ATL), Concurrency Runtime Library (ConCRT), Parallel Patterns Library (PPL), Microsoft Foundation Class Library (MFC), and C++ AMP (C++ Accelerated Massive Programming) library include runtime support for [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. For these operating systems, the minimum supported versions are [!INCLUDE[winxp](../build/includes/winxp_md.md)] Service Pack 3 (SP3) for x86, [!INCLUDE[winxp](../build/includes/winxp_md.md)] Service Pack 2 (SP2) for x64, and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] Service Pack 2 (SP2) for both x86 and x64.
+Along with the Windows XP platform toolset, the C Runtime Library (CRT), C++ Standard Library, Active Template Library (ATL), Concurrency Runtime Library (ConCRT), Parallel Patterns Library (PPL), Microsoft Foundation Class Library (MFC), and C++ AMP (C++ Accelerated Massive Programming) library include runtime support for Windows XP and Windows Server 2003. For these operating systems, the minimum supported versions are Windows XP Service Pack 3 (SP3) for x86, Windows XP Service Pack 2 (SP2) for x64, and Windows Server 2003 Service Pack 2 (SP2) for both x86 and x64.
 
 These libraries are supported by the platform toolsets installed by Visual Studio, depending on the target:
 
-|Library|Default platform toolset targeting Windows desktop apps|Default platform toolset targeting Store apps|Windows XP platform toolset targeting [!INCLUDE[winxp](../build/includes/winxp_md.md)], [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]|
+|Library|Default platform toolset targeting Windows desktop apps|Default platform toolset targeting Store apps|Windows XP platform toolset targeting Windows XP, Windows Server 2003|
 |---|---|---|---|
 |CRT|X|X|X|
 |C++ Standard Library|X|X|X|
@@ -43,7 +43,7 @@ These libraries are supported by the platform toolsets installed by Visual Studi
 |C++ AMP|X|X||
 
 > [!NOTE]
-> Apps that are written in C++/CLI and target the .NET Framework 4 run on [!INCLUDE[winxp](../build/includes/winxp_md.md)] and [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)].
+> Apps that are written in C++/CLI and target the .NET Framework 4 run on Windows XP and Windows Server 2003.
 
 ### Differences between the toolsets
 
@@ -55,15 +55,15 @@ Due to differences in platform and library support, the development experience f
 
 - **Remote debugging**
 
-   Remote Tools for Visual Studio doesn't support remote debugging on [!INCLUDE[winxp](../build/includes/winxp_md.md)] or [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. To debug an app when it's running on [!INCLUDE[winxp](../build/includes/winxp_md.md)] or [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)], you can use a debugger from an older version of Visual Studio to debug it locally or remotely. This resembles the experience of debugging an app on Windows Vista, which is a runtime target of the platform toolset, but not a remote debugging target.
+   Remote Tools for Visual Studio doesn't support remote debugging on Windows XP or Windows Server 2003. To debug an app when it's running on Windows XP or Windows Server 2003, you can use a debugger from an older version of Visual Studio to debug it locally or remotely. This resembles the experience of debugging an app on Windows Vista, which is a runtime target of the platform toolset, but not a remote debugging target.
 
 - **Static analysis**
 
-   The Windows XP platform toolsets don't support static analysis because the SAL annotations for the Windows 7 SDK and the runtime libraries are incompatible. When you want to perform static analysis on an app that supports [!INCLUDE[winxp](../build/includes/winxp_md.md)] or [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)], you can temporarily switch the solution to target the default platform toolset to perform the analysis, and then switch back to the Windows XP platform toolset to build the app.
+   The Windows XP platform toolsets don't support static analysis because the SAL annotations for the Windows 7 SDK and the runtime libraries are incompatible. When you want to perform static analysis on an app that supports Windows XP or Windows Server 2003, you can temporarily switch the solution to target the default platform toolset to perform the analysis, and then switch back to the Windows XP platform toolset to build the app.
 
 - **Debugging of DirectX graphics**
 
-     Because the Graphics Debugger does not support the Direct3D 9 API, it cannot be used to debug apps that use Direct3D on [!INCLUDE[winxp](../build/includes/winxp_md.md)] or [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. However, if the app implements an alternative renderer that uses the Direct3D 10 or Direct3D 11 APIs, the Graphics Debugger can be used to diagnose problems with the use of those APIs.
+     Because the Graphics Debugger does not support the Direct3D 9 API, it cannot be used to debug apps that use Direct3D on Windows XP or Windows Server 2003. However, if the app implements an alternative renderer that uses the Direct3D 10 or Direct3D 11 APIs, the Graphics Debugger can be used to diagnose problems with the use of those APIs.
 
 - **Building HLSL**
 

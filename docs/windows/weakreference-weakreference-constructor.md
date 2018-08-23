@@ -13,23 +13,27 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakReference::WeakReference Constructor
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-WeakReference();  
-```  
-  
-## Remarks  
- Initializes a new instance of the [WeakReference class](../windows/weakreference-class1.md).  
-  
- The strong reference pointer for the **WeakReference** object is initialized to **nullptr**, and the strong reference count is initialized to 1.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+WeakReference();
+```
+
+## Remarks
+
+Initializes a new instance of the [WeakReference class](../windows/weakreference-class1.md).
+
+The strong reference pointer for the **WeakReference** object is initialized to **nullptr**, and the strong reference count is initialized to 1.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

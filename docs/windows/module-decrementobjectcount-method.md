@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::DecrementObjectCount Method
-Decrements the number of objects tracked by the module.  
-  
-## Syntax  
-  
-```cpp  
-virtual long DecrementObjectCount();  
-```  
-  
-## Return Value  
- The count before the decrement operation.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
+
+Decrements the number of objects tracked by the module.
+
+## Syntax
+
+```cpp
+virtual long DecrementObjectCount();
+```
+
+## Return Value
+
+The count before the decrement operation.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
 ## See Also
+
 [Module Class](../windows/module-class.md)

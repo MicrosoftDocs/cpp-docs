@@ -12,30 +12,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # InspectableClass Macro
-Sets the runtime class name and trust level.  
-  
-## Syntax  
-  
-```cpp  
-InspectableClass(  
-   runtimeClassName,   
+
+Sets the runtime class name and trust level.
+
+## Syntax
+
+```cpp
+InspectableClass(
+   runtimeClassName,
    trustLevel)  
-```  
-  
-### Parameters  
- *runtimeClassName*  
- The full textual name of the runtime class.  
-  
- *trustLevel*  
- One of the [TrustLevel](http://msdn.microsoft.com/library/br224625.aspx) enumerated values.  
-  
-## Remarks  
- The **InspectableClass** macro can be used only with Windows Runtime types.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [RuntimeClass Class](../windows/runtimeclass-class.md)
+```
+
+### Parameters
+
+*runtimeClassName*  
+The full textual name of the runtime class.
+
+*trustLevel*  
+One of the [TrustLevel](http://msdn.microsoft.com/library/br224625.aspx) enumerated values.
+
+## Remarks
+
+The **InspectableClass** macro can be used only with Windows Runtime types.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[RuntimeClass Class](../windows/runtimeclass-class.md)

@@ -13,22 +13,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # EventTargetArray::~EventTargetArray Destructor
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-~EventTargetArray();  
-```  
-  
-## Remarks  
- Deinitializes the current **EventTargetArray** class.  
-  
-## Requirements  
- **Header:** event.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [EventTargetArray Class](../windows/eventtargetarray-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+~EventTargetArray();
+```
+
+## Remarks
+
+Deinitializes the current **EventTargetArray** class.
+
+## Requirements
+
+**Header:** event.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[EventTargetArray Class](../windows/eventtargetarray-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

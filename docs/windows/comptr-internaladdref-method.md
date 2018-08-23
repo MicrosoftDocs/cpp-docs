@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::InternalAddRef Method
-Increments the reference count of the interface associated with this **ComPtr**.  
-  
-## Syntax  
-  
-```cpp  
-void InternalAddRef() const;  
-```  
-  
-## Remarks  
- This method is protected.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+
+Increments the reference count of the interface associated with this **ComPtr**.
+
+## Syntax
+
+```cpp
+void InternalAddRef() const;
+```
+
+## Remarks
+
+This method is protected.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

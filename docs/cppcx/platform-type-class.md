@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Type::GetTypeCode", "VCCORLIB/Platform::Type::
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Type Class"]
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Type Class

@@ -13,33 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # BoolStruct Structure
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-struct BoolStruct;  
-```  
-  
-## Remarks  
- The **BoolStruct** structure defines whether a `ComPtr` is managing the object lifetime of an interface. **BoolStruct** is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.  
-  
-## Members  
-  
-### Public Data Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[BoolStruct::Member Data Member](../windows/boolstruct-member-data-member.md)|Specifies that a [ComPtr](../windows/comptr-class.md) is, or is not, managing the object lifetime of an interface.|  
-  
-## Inheritance Hierarchy  
- `BoolStruct`  
-  
-## Requirements  
- **Header:** internal.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)   
- [ComPtr::operator Microsoft::WRL::Details::BoolType Operator](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+struct BoolStruct;
+```
+
+## Remarks
+
+The **BoolStruct** structure defines whether a `ComPtr` is managing the object lifetime of an interface. **BoolStruct** is used internally by the [BoolType()](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md) operator.
+
+## Members
+
+### Public Data Members
+
+|Name|Description|
+|----------|-----------------|
+|[BoolStruct::Member Data Member](../windows/boolstruct-member-data-member.md)|Specifies that a [ComPtr](../windows/comptr-class.md) is, or is not, managing the object lifetime of an interface.|
+
+## Inheritance Hierarchy
+
+`BoolStruct`
+
+## Requirements
+
+**Header:** internal.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)  
+[ComPtr::operator Microsoft::WRL::Details::BoolType Operator](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md)

@@ -12,22 +12,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComposableBase Class
-## Syntax  
-  
-```cpp  
-template<  
-   typename FactoryInterface = IInspectable  
->  
-class ComposableBase;  
-```  
-  
-### Parameters  
- *FactoryInterface*  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+
+## Syntax
+
+```cpp
+template<
+   typename FactoryInterface = IInspectable
+>
+class ComposableBase;
+```
+
+### Parameters
+
+*FactoryInterface*
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)

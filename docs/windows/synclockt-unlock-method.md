@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SyncLockT::Unlock Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-void Unlock();  
-```  
-  
-## Remarks  
- Releases control of the resource held by the current **SyncLockT** object, if any.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::Details  
-  
-## See Also  
- [SyncLockT Class](../windows/synclockt-class.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+void Unlock();
+```
+
+## Remarks
+
+Releases control of the resource held by the current **SyncLockT** object, if any.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::Details
+
+## See Also
+
+[SyncLockT Class](../windows/synclockt-class.md)

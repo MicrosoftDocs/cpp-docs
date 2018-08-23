@@ -12,21 +12,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::DecrementReference Method
-Decrements the reference count for the current **RuntimeClass** object.  
-  
-## Syntax  
-  
-```cpp  
-ULONG DecrementReference();  
-```  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [RuntimeClass Class](../windows/runtimeclass-class.md)
+
+Decrements the reference count for the current **RuntimeClass** object.
+
+## Syntax
+
+```cpp
+ULONG DecrementReference();
+```
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[RuntimeClass Class](../windows/runtimeclass-class.md)

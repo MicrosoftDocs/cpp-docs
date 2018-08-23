@@ -8,8 +8,8 @@ f1_keywords: ["collection/Windows::Foundation::Collections::to_vector"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["to_vector Function"]
 ms.assetid: 9cdd5123-7243-4def-a1d3-162e0bf6219e
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # to_vector Function

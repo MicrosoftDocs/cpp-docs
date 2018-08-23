@@ -13,32 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSection::TryLock Method
-Attempts to enter a critical section without blocking. If the call is successful, the calling thread takes ownership of the critical section.  
-  
-## Syntax  
-  
-```cpp  
-SyncLock TryLock();  
-  
-static SyncLock TryLock(  
-   _In_ CRITICAL_SECTION* cs  
-);  
-```  
-  
-### Parameters  
- *cs*  
- A user-specified critical section object.  
-  
-## Return Value  
- A nonzero value if the critical section is successfully entered or the current thread already owns the critical section. Zero if another thread already owns the critical section.  
-  
-## Remarks  
- The first **TryLock** function affects the current critical section object. The second **TryLock** function affects a user-specified critical section.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [CriticalSection Class](../windows/criticalsection-class.md)
+
+Attempts to enter a critical section without blocking. If the call is successful, the calling thread takes ownership of the critical section.
+
+## Syntax
+
+```cpp
+SyncLock TryLock();
+
+static SyncLock TryLock(
+   _In_ CRITICAL_SECTION* cs
+);
+```
+
+### Parameters
+
+*cs*  
+A user-specified critical section object.
+
+## Return Value
+
+A nonzero value if the critical section is successfully entered or the current thread already owns the critical section. Zero if another thread already owns the critical section.
+
+## Remarks
+
+The first **TryLock** function affects the current critical section object. The second **TryLock** function affects a user-specified critical section.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[CriticalSection Class](../windows/criticalsection-class.md)

@@ -8,8 +8,8 @@ f1_keywords: ["wWinMain"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["wide characters [C++], wmain function", "wWinMain function", "wmain function"]
 ms.assetid: 41213c41-668c-40a4-8a1e-77d9eded720d
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Support for Using wmain

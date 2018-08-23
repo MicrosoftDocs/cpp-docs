@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SRWLock::SRWLock Constructor
-Initializes a new instance of the **SRWLock** class.  
-  
-## Syntax  
-  
-```cpp  
-SRWLock();  
-```  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [SRWLock Class](../windows/srwlock-class.md)
+
+Initializes a new instance of the **SRWLock** class.
+
+## Syntax
+
+```cpp
+SRWLock();
+```
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[SRWLock Class](../windows/srwlock-class.md)

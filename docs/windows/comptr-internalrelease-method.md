@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ComPtr::InternalRelease Method
-Performs a COM Release operation on the interface associated with this **ComPtr**.  
-  
-## Syntax  
-  
-```cpp  
-void InternalRelease();  
-```  
-  
-## Remarks  
- This method is protected.  
-  
-## Requirements  
- **Header:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ComPtr Class](../windows/comptr-class.md)
+
+Performs a COM Release operation on the interface associated with this **ComPtr**.
+
+## Syntax
+
+```cpp
+void InternalRelease();
+```
+
+## Remarks
+
+This method is protected.
+
+## Requirements
+
+**Header:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ComPtr Class](../windows/comptr-class.md)

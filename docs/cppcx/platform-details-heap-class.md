@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Details::Heap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Details::Heap Class"]
 ms.assetid: d6dcf9c0-8036-433f-9eb8-c53ec49b0993
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::Heap Class

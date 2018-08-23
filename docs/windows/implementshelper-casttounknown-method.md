@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ImplementsHelper::CastToUnknown Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-IUnknown* CastToUnknown();  
-```  
-  
-## Return Value  
- Pointer to the underlying `IUnknown` interface.  
-  
-## Remarks  
- Gets a pointer to the underlying `IUnknown` interface for the current `Implements` structure.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ImplementsHelper Structure](../windows/implementshelper-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+IUnknown* CastToUnknown();
+```
+
+## Return Value
+
+Pointer to the underlying `IUnknown` interface.
+
+## Remarks
+
+Gets a pointer to the underlying `IUnknown` interface for the current `Implements` structure.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ImplementsHelper Structure](../windows/implementshelper-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
