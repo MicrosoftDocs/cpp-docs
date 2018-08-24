@@ -109,7 +109,7 @@ If your ActiveX control displays text, you can allow the control user to change 
   
 6.  For **Implementation Type**, click **Get/Set Methods**.  
   
-7.  In the **Property Type** box, select **IDispatch\*** for the property's type.  
+7.  In the **Property Type** box, select **IDispatch&ast;** for the property's type.  
   
 8.  Click **Finish**.  
   

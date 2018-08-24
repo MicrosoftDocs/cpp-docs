@@ -140,7 +140,7 @@ class  CComClassFactory2 : public IClassFactory2,
   
 - **static BOOL VerifyLicenseKey( BSTR** `bstr` **);**  
   
-- **static BOOL GetLicenseKey( DWORD** `dwReserved` **, BSTR\*** `pBstr` **);**  
+- **static BOOL GetLicenseKey( DWORD** `dwReserved` **, BSTR&ast;** `pBstr` **);**  
   
 - **static BOOL IsLicenseValid( );**  
   

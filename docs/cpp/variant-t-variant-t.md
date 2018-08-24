@@ -198,7 +198,7 @@ _variant_t(
   
 -   **_variant_t( VARIANT&**  *varSrc*  **)** Constructs a `_variant_t` object from a copy of the `VARIANT` object. The variant type is retained.  
   
--   **_variant_t( VARIANT\***  *pVarSrc*  **)** Constructs a `_variant_t` object from a copy of the `VARIANT` object. The variant type is retained.  
+-   <strong>_variant_t( VARIANT\*</strong>  *pVarSrc*  **)** Constructs a `_variant_t` object from a copy of the `VARIANT` object. The variant type is retained.  
   
 -   **_variant_t( _variant_t&**  *var_t_Src*  **)** Constructs a `_variant_t` object from another `_variant_t` object. The variant type is retained.  
   
@@ -216,15 +216,15 @@ _variant_t(
   
 -   **_variant_t( _bstr_t&**  `bstrSrc`  **)** Constructs a `_variant_t` object of type VT_BSTR from a `_bstr_t` object. A new `BSTR` is allocated.  
   
--   **_variant_t( wchar_t \*** *wstrSrc*  **)** Constructs a `_variant_t` object of type VT_BSTR from a Unicode string. A new `BSTR` is allocated.  
+-   <strong>_variant_t( wchar_t \*</strong> *wstrSrc*  **)** Constructs a `_variant_t` object of type VT_BSTR from a Unicode string. A new `BSTR` is allocated.  
   
--   **_variant_t( char\***  `strSrc`  **)** Constructs a `_variant_t` object of type VT_BSTR from a string. A new `BSTR` is allocated.  
+-   <strong>_variant_t( char\*</strong>  `strSrc`  **)** Constructs a `_variant_t` object of type VT_BSTR from a string. A new `BSTR` is allocated.  
   
 -   **_variant_t( bool**  `bSrc`  **)** Constructs a `_variant_t` object of type VT_BOOL from a **bool** value.  
   
--   **_variant_t( IUnknown\***  `pIUknownSrc` **, bool**  `fAddRef`  **= true )** Constructs a `_variant_t` object of type VT_UNKNOWN from a COM interface pointer. If `fAddRef` is **true**, then `AddRef` is called on the supplied interface pointer to match the call to `Release` that will occur when the `_variant_t` object is destroyed. It is up to you to call `Release` on the supplied interface pointer. If `fAddRef` is **false**, this constructor takes ownership of the supplied interface pointer; do not call `Release` on the supplied interface pointer.  
+-   <strong>_variant_t( IUnknown\*</strong>  `pIUknownSrc` **, bool**  `fAddRef`  **= true )** Constructs a `_variant_t` object of type VT_UNKNOWN from a COM interface pointer. If `fAddRef` is **true**, then `AddRef` is called on the supplied interface pointer to match the call to `Release` that will occur when the `_variant_t` object is destroyed. It is up to you to call `Release` on the supplied interface pointer. If `fAddRef` is **false**, this constructor takes ownership of the supplied interface pointer; do not call `Release` on the supplied interface pointer.  
   
--   **_variant_t( IDispatch\***  `pDispSrc` **, bool**  `fAddRef`  **= true )** Constructs a `_variant_t` object of type VT_DISPATCH from a COM interface pointer. If `fAddRef` is **true**, then `AddRef` is called on the supplied interface pointer to match the call to `Release` that will occur when the `_variant_t` object is destroyed. It is up to you to call `Release` on the supplied interface pointer. If `fAddRef` is **false**, this constructor takes ownership of the supplied interface pointer; do not call `Release` on the supplied interface pointer.  
+-   <strong>_variant_t( IDispatch\*</strong>  `pDispSrc` **, bool**  `fAddRef`  **= true )** Constructs a `_variant_t` object of type VT_DISPATCH from a COM interface pointer. If `fAddRef` is **true**, then `AddRef` is called on the supplied interface pointer to match the call to `Release` that will occur when the `_variant_t` object is destroyed. It is up to you to call `Release` on the supplied interface pointer. If `fAddRef` is **false**, this constructor takes ownership of the supplied interface pointer; do not call `Release` on the supplied interface pointer.  
   
 -   **_variant_t( DECIMAL&**  `decSrc`  **)** Constructs a `_variant_t` object of type VT_DECIMAL from a `DECIMAL` value.  
   

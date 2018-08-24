@@ -30,11 +30,11 @@ operator bool( ) const throw( );
   
 ## Remarks  
   
--   **operator Interface\*** Returns the encapsulated interface pointer, which may be NULL.  
+-   <strong>operator Interface\*</strong> Returns the encapsulated interface pointer, which may be NULL.  
   
 -   **operator Interface&** Returns a reference to the encapsulated interface pointer, and issues an error if the pointer is NULL.  
   
--   **operator\*** Allows a smart pointer object to act as though it were the actual encapsulated interface when dereferenced.  
+-   <strong>operator\*</strong> Allows a smart pointer object to act as though it were the actual encapsulated interface when dereferenced.  
   
 -   **operator->** Allows a smart pointer object to act as though it were the actual encapsulated interface when dereferenced.  
   

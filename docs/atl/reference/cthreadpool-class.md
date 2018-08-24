@@ -58,7 +58,7 @@ class CThreadPool : public IThreadPoolConfig
 ## Remarks  
  Threads in the pool are created and destroyed when the pool is initialized, resized, or shut down. An instance of class *Worker* will be created on the stack of each worker thread in the pool. Each instance will live for the lifetime of the thread.  
   
- Immediately after creation of a thread, *Worker*:: `Initialize` will be called on the object associated with that thread. Immediately before destruction of a thread, *Worker*:: `Terminate` will be called. Both methods must accept a **void\*** argument. The value of this argument is passed to the thread pool through the *pvWorkerParam* parameter of [CThreadPool::Initialize](#initialize).  
+ Immediately after creation of a thread, *Worker*::`Initialize` will be called on the object associated with that thread. Immediately before destruction of a thread, *Worker*::`Terminate` will be called. Both methods must accept a <strong>void\*</strong> argument. The value of this argument is passed to the thread pool through the *pvWorkerParam* parameter of [CThreadPool::Initialize](#initialize).  
   
  When there are work items in the queue and worker threads available for work, a worker thread will pull an item off the queue and call the `Execute` method of the *Worker* object for that thread. Three items are then passed to the method: the item from the queue, the same `pvWorkerParam` passed to *Worker*:: `Initialize` and *Worker*:: `Terminate`, and a pointer to the [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) structure used for the IO completion port queue.  
   

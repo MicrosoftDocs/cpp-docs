@@ -30,7 +30,7 @@ A pointer to one type of value can be converted to a pointer to a different type
   
 -   If the size of the integral type is different from the size of the pointer type, the integral type is first converted to the size of the pointer, using the conversion paths given in the tables [Conversion from Signed Integral Types](../c-language/conversions-from-signed-integral-types.md) and [Conversion from Unsigned Integral Types](../c-language/conversions-from-unsigned-integral-types.md). It is then treated as a pointer value.  
   
- An integral constant expression with value 0 or such an expression cast to type **void \*** can be converted by a type cast, by assignment, or by comparison to a pointer of any type. This produces a null pointer that is equal to another null pointer of the same type, but this null pointer is not equal to any pointer to a function or to an object. Integers other than the constant 0 can be converted to pointer type, but the result is not portable.  
+ An integral constant expression with value 0 or such an expression cast to type <strong>void \*</strong> can be converted by a type cast, by assignment, or by comparison to a pointer of any type. This produces a null pointer that is equal to another null pointer of the same type, but this null pointer is not equal to any pointer to a function or to an object. Integers other than the constant 0 can be converted to pointer type, but the result is not portable.  
   
 ## See Also  
  [Assignment Conversions](../c-language/assignment-conversions.md)

@@ -149,7 +149,7 @@ struct somestruct
   
  The compiler allows an unsized or zero-sized array as the last member of a structure. This can be useful if the size of a constant array differs when used in various situations. The declaration of such a structure looks like this:  
   
- `struct` *identifier***{** *set-of-declarations* *type array-name***[ ];};**  
+**struct** *identifier* **{** *set-of-declarations* *type* <em>array-name</em>**\[]; };**  
   
  Unsized arrays can appear only as the last member of a structure. Structures containing unsized array declarations can be nested within other structures as long as no further members are declared in any enclosing structures. Arrays of such structures are not allowed. The `sizeof` operator, when applied to a variable of this type or to the type itself, assumes 0 for the size of the array.  
   

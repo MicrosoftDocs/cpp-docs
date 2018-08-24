@@ -1067,16 +1067,16 @@ BOOL GetAmbientProperty(
   
 |vtProp|Type of pvProp|  
 |------------|--------------------|  
-|VT_BOOL|**BOOL\***|  
+|VT_BOOL|`BOOL*`|  
 |VT_BSTR|`CString*`|  
-|VT_I2|**short\***|  
-|VT_I4|**long\***|  
-|VT_R4|**float\***|  
-|VT_R8|**double\***|  
-|VT_CY|**CY\***|  
-|VT_COLOR|OLE_COLOR*|  
-|VT_DISPATCH|LPDISPATCH*|  
-|VT_FONT|LPFONTDISP*|  
+|VT_I2|`short*`|  
+|VT_I4|`long*`|  
+|VT_R4|`float*`|  
+|VT_R8|`double*`|  
+|VT_CY|`CY*`|  
+|VT_COLOR|`OLE_COLOR*`|  
+|VT_DISPATCH|`LPDISPATCH*`|  
+|VT_FONT|`LPFONTDISP*`|  
   
 ### Return Value  
  Nonzero if the ambient property is supported; otherwise 0.  
