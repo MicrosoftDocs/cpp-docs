@@ -79,10 +79,16 @@ To change the default CMake settings, choose **CMake | Change CMake Settings | C
       "remoteCMakeListsRoot": "/var/tmp/src/${workspaceHash}/${name}",
       "cmakeExecutable": "/usr/local/bin/cmake",
       "buildRoot": "${env.LOCALAPPDATA}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.LOCALAPPDATA}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
       "remoteBuildRoot": "/var/tmp/build/${workspaceHash}/build/${name}",
+      "remoteInstallRoot": "/var/tmp/build/${workspaceHash}/install/${name}",
       "remoteCopySources": true,
       "remoteCopySourcesOutputVerbosity": "Normal",
       "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopySourcesExclusionList": [".vs", ".git"],
+      "rsyncCommandArgs" : "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput" : "false",
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
@@ -90,7 +96,19 @@ To change the default CMake settings, choose **CMake | Change CMake Settings | C
 }
 ```
 
-The `name` value can be whatever you like. The `remoteMachineName` value specifies which remote system to target, in case you have more than one. IntelliSense is enabled for this field to help you select the right system. The field `remoteCMakeListsRoot` specifies where your project sources will be copied to on the remote system. The field `remoteBuildRoot` is where the build output will be generated on your remote system. That output is also copied locally to the location specified by `buildRoot`.
+The `name` value can be whatever you like. The `remoteMachineName` value specifies which remote system to target, in case you have more than one. IntelliSense is enabled for this field to help you select the right system. The field `remoteCMakeListsRoot` specifies where your project sources will be copied to on the remote system. The field `remoteBuildRoot` is where the build output will be generated on your remote system. That output is also copied locally to the location specified by `buildRoot`. The `remoteInstallRoot` and `installRoot` fields are similar to `remoteBuildRoot` and `buildRoot`, except they apply when doing a cmake install. The `remoteCopySources` entry controls whether or not your local sources are copied to the remote machine. You might set this to false if you have a lot of files and you're already syncing the sources yourself. The `remoteCopyOutputVerbosity` value controls the verbosity of the copy step in case you need to diagnose errors. The `remoteCopySourcesConcurrentCopies` entry controls how many processes are spawned to do the copy. The `remoteCopySourcesMethod` value can be one of rsync or sftp. The `remoteCopySourcesExclusionList` field allows you to control what gets copied to the remote machine. The `rsyncCommandArgs` value lets you control the rsync method of copying. The `remoteCopyBuildOutput` field controls whether or not the remote build output is copied to your local build folder.
+
+There are also some optional settings you can use for more control:
+
+```json
+{
+      "remotePreBuildCommand": "",
+      "remotePreGenerateCommand": "",
+      "remotePostBuildCommand": "",
+}
+```
+
+These options allow you to run commands on the remote box before and after building, and before CMake generation. They can be any valid command on the remote box. Output is piped back to Visual Studio.
 
 ## Build a supported CMake release from source
 
