@@ -1673,6 +1673,8 @@ struct S : Base<T> {
 
 To fix the error, change the `return` statement to `return this->base_value;`.
 
+**Note:** In the Boost python library, there has been for a long time an MSVC-specific workaround for a template forward declaration in [unwind_type.hpp](https://github.com/boostorg/python/blame/develop/include/boost/python/detail/unwind_type.hpp). Under [/permissive-](build/reference/permissive-standards-conformance.md) mode starting with Visual Studio 2017 version 15.8 (_MSC_VER=1915), the MSVC compiler does argument-dependent name lookup (ADL) correctly and is consistent with other compilers, making this workaround guard unnecessary. In order to avoid this error *C3861: 'unwind_type': identifier not found*, see [PR 229](https://github.com/boostorg/python/pull/229) in the Boostorg repo to update the header file. We have already patched the [vcpkg](vcpkg.md) Boost package, so if you get or upgrade your Boost sources from vcpkg then you do not need to apply the patch separately.
+
 ### forward declarations and definitions in namespace std
 
 The C++ standard doesn't allow a user to add forward declarations or definitions into namespace `std`. Adding declarations or definitions to namespace `std` or to a namespace within namespace std now results in undefined behavior.
