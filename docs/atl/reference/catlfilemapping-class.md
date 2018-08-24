@@ -35,10 +35,10 @@ class CAtlFileMapping : public CAtlFileMappingBase
   
 |Name|Description|  
 |----------|-----------------|  
-|[CAtlFileMapping::operator T*](#operator_t_star)|Allows implicit conversion of `CAtlFileMapping` objects to `T`**\***.|  
+|[CAtlFileMapping::operator T*](#operator_t_star)|Allows implicit conversion of `CAtlFileMapping` objects to `T*`.|  
   
 ## Remarks  
- This class adds a single cast operator to allow implicit conversion of `CAtlFileMapping` objects to `T`**\***. Other members are supplied by the base class, [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
+ This class adds a single cast operator to allow implicit conversion of `CAtlFileMapping` objects to `T*`. Other members are supplied by the base class, [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
   
 ## Inheritance Hierarchy  
  [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md)  
@@ -49,17 +49,17 @@ class CAtlFileMapping : public CAtlFileMappingBase
  **Header:** atlfile.h  
   
 ##  <a name="operator_t_star"></a>  CAtlFileMapping::operator T*  
- Allows implicit conversion of `CAtlFileMapping` objects to `T`**\***.  
+ Allows implicit conversion of `CAtlFileMapping` objects to `T*`.  
   
 ```  
 operator T*() const throw();
 ```  
   
 ### Return Value  
- Returns a `T`**\*** pointer to the start of the memory-mapped file.  
+ Returns a `T*` pointer to the start of the memory-mapped file.  
   
 ### Remarks  
- Calls [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) and reinterprets the returned pointer as a `T`**\*** where *T* is the type used as the template parameter of this class.  
+ Calls [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) and reinterprets the returned pointer as a `T*` where *T* is the type used as the template parameter of this class.  
   
 ## See Also  
  [CAtlFileMappingBase Class](../../atl/reference/catlfilemappingbase-class.md)   

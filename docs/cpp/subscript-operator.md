@@ -46,9 +46,9 @@ double aDbl[2];
   
  A subscript expression can also have multiple subscripts, as follows:  
   
- *expression1* **[***expression2***] [***expression3***]**...  
+ *expression1* **[** *expression2* **] [** *expression3* **]** ...  
   
- Subscript expressions associate from left to right. The leftmost subscript expression, *expression1***[***expression2***]**, is evaluated first. The address that results from adding *expression1* and *expression2* forms a pointer expression; then *expression3* is added to this pointer expression to form a new pointer expression, and so on until the last subscript expression has been added. The indirection operator (**\***) is applied after the last subscripted expression is evaluated, unless the final pointer value addresses an array type.  
+ Subscript expressions associate from left to right. The leftmost subscript expression, *expression1* **[** *expression2* **]**, is evaluated first. The address that results from adding *expression1* and *expression2* forms a pointer expression; then *expression3* is added to this pointer expression to form a new pointer expression, and so on until the last subscript expression has been added. The indirection operator (<strong>\*</strong>) is applied after the last subscripted expression is evaluated, unless the final pointer value addresses an array type.  
   
  Expressions with multiple subscripts refer to elements of multidimensional arrays. A multidimensional array is an array whose elements are arrays. For example, the first element of a three-dimensional array is an array with two dimensions. The following example declares and initializes a simple two-dimensional array of characters:  
   

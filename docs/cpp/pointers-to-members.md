@@ -31,7 +31,7 @@ Declarations of pointers to members are special cases of pointer declarations.  
   - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).  
 1. The qualified name of the class containing the members to be pointed to.  
   - The :: operator.  
-  - The **\*** operator.  
+  - The <strong>\*</strong> operator.  
   - Optional **const** and/or **volatile** specifiers.  
   - The identifier naming the pointer to member.  
   

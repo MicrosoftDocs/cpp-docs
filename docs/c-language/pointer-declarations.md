@@ -14,34 +14,29 @@ ms.workload: ["cplusplus"]
 # Pointer Declarations
 A "pointer declaration" names a pointer variable and specifies the type of the object to which the variable points. A variable declared as a pointer holds a memory address.  
   
-## Syntax  
- *declarator*:  
- &nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*  
-  
- *direct-declarator*:  
- &nbsp;&nbsp;*identifier*  
-  
- &nbsp;&nbsp;**(** *declarator* **)**  
-  
- &nbsp;&nbsp;*direct-declarator* **[** *constant-expression*<sub>opt</sub> **]**  
-  
- &nbsp;&nbsp;*direct-declarator* **(** *parameter-type-list* **)**  
-  
- &nbsp;&nbsp;*direct-declarator* **(** *identifier-list*<sub>opt</sub> **)**  
-  
- *pointer*:  
- &nbsp;&nbsp;**\*** *type-qualifier-list*<sub>opt</sub>  
-  
- &nbsp;&nbsp;**\*** *type-qualifier-list*<sub>opt</sub> *pointer*  
-  
- *type-qualifier-list*:  
- &nbsp;&nbsp;*type-qualifier*  
-  
- &nbsp;&nbsp;*type-qualifier-list* *type-qualifier*  
+## Syntax
+
+*declarator*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*pointer*<sub>opt</sub> *direct-declarator*  
+
+*direct-declarator*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*identifier*  
+&nbsp;&nbsp;&nbsp;&nbsp;**(** *declarator* **)**  
+&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator* **[** *constant-expression*<sub>opt</sub> **]**  
+&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator* **(** *parameter-type-list* **)**  
+&nbsp;&nbsp;&nbsp;&nbsp;*direct-declarator* **(** *identifier-list*<sub>opt</sub> **)**  
+
+*pointer*:  
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *type-qualifier-list*<sub>opt</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;<strong>\*</strong> *type-qualifier-list*<sub>opt</sub> *pointer*  
+
+*type-qualifier-list*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier*  
+&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier-list* *type-qualifier*  
   
  The *type-specifier* gives the type of the object, which can be any basic, structure, or union type. Pointer variables can also point to functions, arrays, and other pointers. (For information on declaring and interpreting more complex pointer types, refer to [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md).)  
   
- By making the *type-specifier* **void**, you can delay specification of the type to which the pointer refers. Such an item is referred to as a "pointer to **void**" and is written as `void *`. A variable declared as a pointer to *void* can be used to point to an object of any type. However, to perform most operations on the pointer or on the object to which it points, the type to which it points must be explicitly specified for each operation. (Variables of type **char \*** and type **void \*** are assignment-compatible without a type cast.) Such conversion can be accomplished with a type cast (see [Type-Cast Conversions](../c-language/type-cast-conversions.md) for more information).  
+ By making the *type-specifier* **void**, you can delay specification of the type to which the pointer refers. Such an item is referred to as a "pointer to **void**" and is written as `void *`. A variable declared as a pointer to *void* can be used to point to an object of any type. However, to perform most operations on the pointer or on the object to which it points, the type to which it points must be explicitly specified for each operation. (Variables of type <strong>char \*</strong> and type <strong>void \*</strong> are assignment-compatible without a type cast.) Such conversion can be accomplished with a type cast (see [Type-Cast Conversions](../c-language/type-cast-conversions.md) for more information).  
   
  The *type-qualifier* can be either **const** or **volatile**, or both. These specify, respectively, that the pointer cannot be modified by the program itself (**const**), or that the pointer can legitimately be modified by some process beyond the control of the program (**volatile**). (See [Type Qualifiers](../c-language/type-qualifiers.md) for more information on **const** and **volatile**.)  
   

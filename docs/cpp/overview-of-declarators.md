@@ -43,7 +43,7 @@ const char *pch, ch;
   
  **Declarators for Pointers, References and Arrays**  
   
- Pointer operators inserted in front of the name cause the object to be a pointer or reference.  The **\*** operator declares the name as a pointer; the **&** operator declares it as a reference.  
+ Pointer operators inserted in front of the name cause the object to be a pointer or reference.  The <strong>\*</strong> operator declares the name as a pointer; the **&** operator declares it as a reference.  
   
 ```cpp 
 int *i; // declarator is *i  

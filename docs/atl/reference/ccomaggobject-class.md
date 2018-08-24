@@ -117,7 +117,7 @@ static HRESULT WINAPI CreateInstance(
   
 ### Parameters  
  *pp*  
- [out] A pointer to a **CComAggObject\<***contained* **>** pointer. If `CreateInstance` is unsuccessful, *pp* is set to NULL.  
+ [out] A pointer to a **CComAggObject\<**<em>contained</em>**>** pointer. If `CreateInstance` is unsuccessful, *pp* is set to NULL.  
   
 ### Return Value  
  A standard HRESULT value.  

@@ -31,8 +31,9 @@ You can overload both member functions and non-member functions. The following t
 |**const** or **volatile**|Yes, when applied to entire function|
 |[ref-qualifier](#ref-qualifier)|Yes|  
   
-## Example  
- The following example illustrates how overloading can be used.  
+## Example
+
+The following example illustrates how overloading can be used.  
   
 ```cpp 
 // function_overloading.cpp  
@@ -258,9 +259,9 @@ volatile Over&
   
 1.  Exact match. An exact match between the types with which the function is called and the types declared in the function prototype is always the best match. Sequences of trivial conversions are classified as exact matches. However, sequences that do not make any of these conversions are considered better than sequences that convert:  
   
-    -   From pointer, to pointer to **const** (`type` **\*** to **const** `type` **\***).  
+    -   From pointer, to pointer to **const** (`type` <strong>\*</strong> to **const** `type` <strong>\*</strong>).  
   
-    -   From pointer, to pointer to **volatile** (`type` **\*** to **volatile** `type` **\***).  
+    -   From pointer, to pointer to **volatile** (`type` <strong>\*</strong> to **volatile** `type` <strong>\*</strong>).  
   
     -   From reference, to reference to **const** (`type` **&** to **const** `type` **&**).  
   

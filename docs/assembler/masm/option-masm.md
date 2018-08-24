@@ -37,7 +37,7 @@ optionlist
 |**PROC**|**PROLOGUE**|**READONLY**|**NOREADONLY**|  
 |**SCOPED**|**NOSCOPED**|**SEGMENT**|**SETIF2**.|  
   
- The syntax for LANGUAGE is **OPTION LANGUAGE:***x*, where *x* is one of C, SYSCALL, STDCALL, PASCAL, FORTRAN, or BASIC.  SYSCALL, PASCAL, FORTRAN, and BASIC are not supported with used with [.MODEL](../../assembler/masm/dot-model.md) FLAT.  
+ The syntax for LANGUAGE is **OPTION LANGUAGE:**<em>x</em>, where *x* is one of C, SYSCALL, STDCALL, PASCAL, FORTRAN, or BASIC.  SYSCALL, PASCAL, FORTRAN, and BASIC are not supported with used with [.MODEL](../../assembler/masm/dot-model.md) FLAT.  
   
 ## See Also  
  [Directives Reference](../../assembler/masm/directives-reference.md)

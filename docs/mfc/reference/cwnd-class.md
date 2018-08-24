@@ -1645,7 +1645,7 @@ The *lpPathSpec* parameter has the following form:
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-In this example, *drive* is a drive letter, *directory* is a valid directory name, and *filename* is a valid filename that must contain at least one wildcard. The wildcards are a question mark ( ****), which means match any character, and an asterisk ( **\***), meaning match any number of characters.
+In this example, *drive* is a drive letter, *directory* is a valid directory name, and *filename* is a valid filename that must contain at least one wildcard. The wildcards are a question mark ( ****), which means match any character, and an asterisk ( <strong>\*</strong>), meaning match any number of characters.
 
 If you specify a 0-length string for *lpPathSpec*, or if you specify only a directory name but do not include any file specification, the string will be changed to "*.\*".
 
@@ -1713,7 +1713,7 @@ The *lpPathSpec* parameter has the following form:
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-In this example, *drive* is a drive letter, *directory* is a valid directory name, and *filename* is a valid filename that must contain at least one wildcard. The wildcards are a question mark ( ****), which means match any character, and an asterisk ( **\***), which means match any number of characters.
+In this example, *drive* is a drive letter, *directory* is a valid directory name, and *filename* is a valid filename that must contain at least one wildcard. The wildcards are a question mark ( ****), which means match any character, and an asterisk ( <strong>\*</strong>), which means match any number of characters.
 
 If you specify a zero-length string for *lpPathSpec*, the current directory will be used and *lpPathSpec* will not be modified. If you specify only a directory name but do not include any file specification, the string will be changed to "*".
 

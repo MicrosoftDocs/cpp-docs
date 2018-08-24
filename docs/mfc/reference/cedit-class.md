@@ -974,7 +974,7 @@ void SetPasswordChar(TCHAR ch);
   
  When the `SetPasswordChar` member function is called, `CEdit` will redraw all visible characters using the character specified by *ch*.  
   
- If the edit control is created with the [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) style, the default password character is set to an asterisk ( **\***). This style is removed if `SetPasswordChar` is called with *ch* set to 0.  
+ If the edit control is created with the [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) style, the default password character is set to an asterisk ( <strong>\*</strong>). This style is removed if `SetPasswordChar` is called with *ch* set to 0.  
   
  For more information, see [EM_SETPASSWORDCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761653) in the Windows SDK.  
   
