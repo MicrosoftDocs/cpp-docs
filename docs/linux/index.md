@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-ms.topic: landing-page
+ms.topic: conceptual
 title: Linux Development with C++ Documentation
 description: Create and debug applications running on Linux.
 author: "mikeblome"
