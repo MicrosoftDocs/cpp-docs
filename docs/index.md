@@ -1,6 +1,6 @@
 --- 
 layout: HubPage
-ms.topic: hub-page
+ms.topic: conceptual
 title: Visual C++ Documentation | Microsoft Docs
 description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
 author: "mikeblome"
