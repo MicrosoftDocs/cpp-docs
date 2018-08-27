@@ -96,6 +96,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/atl-mfc-shared/date-and-time-general-purpose-classes.md",
+            "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/atl-mfc-shared/reference/index.md",
             "redirect_url": "/cpp/atl-mfc-shared/reference/classes-shared-by-mfc-and-atl",
             "redirect_document_id": false
