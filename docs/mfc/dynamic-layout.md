@@ -148,3 +148,4 @@ The previous procedure is useful for specifying dynamic layout properties for a 
 [Control Classes](../mfc/control-classes.md)  
 [Dialog Box Classes](../mfc/dialog-box-classes.md)  
 [Dialog Editor](../windows/dialog-editor.md)  
+[Dynamic Dialog Layout for MFC in Visual C++ 2015](https://mariusbancila.ro/blog/2015/07/27/dynamic-dialog-layout-for-mfc-in-visual-c-2015/)
