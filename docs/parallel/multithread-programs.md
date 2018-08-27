@@ -16,8 +16,8 @@ A thread is basically a path of execution through a program. It is also the smal
   
 A process consists of one or more threads and the code, data, and other resources of a program in memory. Typical program resources are open files, semaphores, and dynamically allocated memory. A program executes when the system scheduler gives one of its threads execution control. The scheduler determines which threads should run and when they should run. Threads of lower priority might have to wait while higher priority threads complete their tasks. On multiprocessor machines, the scheduler can move individual threads to different processors to balance the CPU load.  
   
-Each thread in a process operates independently. Unless you make them visible to each other, the threads execute individually and are unaware of the other threads in a process. Threads sharing common resources, however, must coordinate their work by using semaphores or another method of interprocess communication. For more information about synchronizing threads, see [Writing a Multithreaded Win32 Program](../parallel/writing-a-multithreaded-win32-program.md).  
+Each thread in a process operates independently. Unless you make them visible to each other, the threads execute individually and are unaware of the other threads in a process. Threads sharing common resources, however, must coordinate their work by using semaphores or another method of interprocess communication. For more information about synchronizing threads, see [Writing a Multithreaded Win32 Program](writing-a-multithreaded-win32-program.md).  
   
 ## See Also  
 
-[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)

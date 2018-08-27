@@ -1,7 +1,7 @@
 ---
-title: "Multithreading: Terminating Threads | Microsoft Docs"
+title: "Multithreading: Terminating Threads in MFC | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/27/2018"
 ms.technology: ["cpp-parallel"]
 ms.topic: "conceptual"
 f1_keywords: ["CREATE_SUSPENDED"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# Multithreading: Terminating Threads
+# Multithreading: Terminating Threads in MFC
 Two normal situations cause a thread to terminate: the controlling function exits or the thread is not allowed to run to completion. If a word processor used a thread for background printing, the controlling function would terminate normally if printing completed successfully. If the user wants to cancel the printing, however, the background printing thread has to be terminated prematurely. This topic explains both how to implement each situation and how to get the exit code of a thread after it terminates.  
   
 - [Normal Thread Termination](#_core_normal_thread_termination)  
@@ -49,7 +49,7 @@ Either method allows you to determine why a `CWinThread` object terminated.
   
 ## See Also  
  
-[Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md)   
+[Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)   
 [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)   
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)   
 [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659)
