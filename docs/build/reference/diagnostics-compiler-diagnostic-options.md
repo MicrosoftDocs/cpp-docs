@@ -23,6 +23,9 @@ Use the **/diagnostics** compiler option to specify the display of error and war
 ```  
 
 ## Remarks  
+
+This option is supported in Visual Studio 2017 and later.
+
 The **/diagnostics** compiler option controls the display of error and warning information.  
   
 The **/diagnostics:classic** option is the default, which reports only the line number where the issue was found.  

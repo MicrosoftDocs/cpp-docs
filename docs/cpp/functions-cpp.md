@@ -293,7 +293,7 @@ template<typename F, typename Tuple = tuple<T...>,
 }
 ```
 
-## Returning multiple values from a function
+## <a name="multi_val"></a> Returning multiple values from a function
 
 There are various ways to return more than one value from a function:
 

@@ -19,13 +19,10 @@ Visual Studio 2017 brings many updates and fixes to the Visual C++ environment. 
 ### C++ conformance improvements
 
 In this release, we've updated the C++ compiler and standard library with enhanced support for C++11 and C++14 features, as well as preliminary support for certain features expected to be in the C++17 standard. For detailed information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md).
-**Visual Studio 2017 version 15.5**:  
 
-   The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
+**Visual Studio 2017 version 15.5**: The compiler supports about 75% of the features that are new in C++17, including structured bindings, `constexpr` lambdas, `if constexpr`, inline variables, fold expressions, and adding `noexcept` to the type system. These are available under the **/std:c++17** option. For more information, see [C++ Conformance Improvements in Visual Studio 2017](cpp-conformance-improvements-2017.md)
 
-**Visual Studio 2017 version 15.7**:  
-
-The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) and [Visual C++ Language Conformance](visual-cpp-language-conformance.md).
+**Visual Studio 2017 version 15.7**: The MSVC compiler toolset in Visual Studio version 15.7 now conforms with the C++ Standard. For more information, see [Announcing: MSVC Conforms to the C++ Standard](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) and [Visual C++ Language Conformance](visual-cpp-language-conformance.md).
 
 ### New compiler options
 

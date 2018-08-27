@@ -4,22 +4,27 @@
       {
         "files": [
           "**/*.md",
-          "**/**.yml"
+          "**/*.yml"
         ],
+        "group": "group-vc2015",
+        "src": ".",
         "exclude": [
           "**/obj/**",
           "vcppdocs/**",
           "**/includes/**"
         ]
       }
-    ],
+        ],
     "resource": [
       {
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.gif"
+          "**/*.gif",
+          "**/*.svg"
         ],
+        "group": "group-vc2015",
+        "src": ".",
         "exclude": [
           "**/obj/**",
           "vcppdocs/**",
@@ -53,6 +58,12 @@
     },
     "template": [],
     "xref": ["msdn.4.5.2.zip", "namespaces.4.5.2.zip", "vs.110.zip", "vs.140.zip", "office15.zip"],
-    "dest": "vcppdocs"
+    "dest": "vcppdocs",
+    "groups": {
+        "group-vc2015": {
+        "moniker_range": ">= vs-2015",
+        "dest": "vcppdocs-2015"
+      }
+    }
   }
 }

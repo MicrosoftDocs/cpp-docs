@@ -12,7 +12,8 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Formatting Time: Automation Classes
-#### To format a time  
+
+## To format a time  
   
  Use the `Format` member function of either [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) or [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) to create a character string representing the time or elapsed time.  
   
@@ -20,13 +21,11 @@ ms.workload: ["cplusplus"]
   
  For more information, see class [COleVariant](../mfc/reference/colevariant-class.md).  
   
-### What do you want to know more about  
+## What do you want to know more about?  
   
--   [General date and time programming in MFC](../atl-mfc-shared/date-and-time.md)  
+- [General date and time programming in MFC](../atl-mfc-shared/date-and-time.md)  
   
--   [General-purpose classes for date and time programming](../atl-mfc-shared/date-and-time-general-purpose-classes.md)  
-  
--   [Working with SYSTEMTIME](../atl-mfc-shared/date-and-time-systemtime-support.md)  
+- [Working with SYSTEMTIME](../atl-mfc-shared/date-and-time-systemtime-support.md)  
   
 ## See Also  
  [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)

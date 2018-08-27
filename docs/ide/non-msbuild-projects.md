@@ -1,7 +1,7 @@
 ---
 title: "Open Folder projects in Visual C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "08/02/2017"
+ms.date: "06/01/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,7 +12,8 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Open Folder projects in Visual C++
-Visual Studio 2017 introduces the "Open Folder" feature, which enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. 
+
+In Visual Studio 2017 and later, the "Open Folder" feature enables you to open a folder of source files and immediately start coding with support for IntelliSense, browsing, refactoring, debugging, and so on. No .sln or .vcxproj files are loaded; if needed, you can specify custom tasks as well as build and launch parameters through simple .json files. 
 Powered by Open Folder, Visual C++ can now support not only loose collections of files, but also virtually any build system, including CMake, Ninja, QMake (for Qt projects), gyp, SCons, Gradle, Buck, make and more. 
 
 To use Open Folder, from the main menu select *File | Open | Folder* or press *Ctrl + Shift + Alt + O*. 
@@ -22,7 +23,7 @@ Solution Explorer immediately displays all the files in the folder. You can clic
 CMake is integrated in the Visual Studio IDE as CMake Tools for Visual C++, a component of the C++ desktop workload. For more information, see [CMake Tools for Visual C++](cmake-tools-for-visual-cpp.md).
  
 ## QMake projects that target the Qt framework
-You can use CMake Tools for Visual C++ to target Qt to build Qt projects, or you can use the Qt Visual Studio Extension. Note: As of August 2017, the [Qt Visual Studio Extension support for Visual Studio 2017](https://download.qt.io/development_releases/vsaddin/) is available as a beta version.
+You can use CMake Tools for Visual C++ to target Qt to build Qt projects, or you can use the [Qt Visual Studio Extension](https://download.qt.io/development_releases/vsaddin/) for either Visual Studio 2015 or Visual Studio 2017.
 
 ## gyp, Cons, SCons, Buck, etc
 You can use any build system in Visual C++ and still enjoy the advantages of the Visual C++ IDE and debugger. When you open the root folder of your project, Visual C++ uses heuristics to index the source files for IntelliSense and browsing. You can provide hints about the structure of your code by editing the CppProperties.json file. In a similar way, you can configure your build program by editing the launch.vs.json file. 

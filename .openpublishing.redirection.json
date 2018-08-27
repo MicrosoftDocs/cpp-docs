@@ -26,6 +26,51 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/atl/which-atl-classes-facilitate-activex-control-containment-q.md",
+            "redirect_url": "/cpp/atl/atl-control-containment-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl/what-is-the-atl-control-hosting-api-q.md",
+            "redirect_url": "/cpp/atl/atl-control-containment-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl/what-is-atlaxwin100-q.md",
+            "redirect_url": "/cpp/atl/atl-control-containment-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl/when-do-i-need-to-call-atlaxwininit-q.md",
+            "redirect_url": "/cpp/atl/atl-control-containment-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl/what-is-a-host-object-q.md",
+            "redirect_url": "/cpp/atl/atl-control-containment-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl/can-i-host-more-than-one-control-in-a-single-window-q.md",
+            "redirect_url": "/cpp/atl/atl-control-containment-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl/can-i-reuse-a-host-window-q.md",
+            "redirect_url": "/cpp/atl/atl-control-containment-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl/when-do-i-need-to-call-atlaxwinterm-q.md",
+            "redirect_url": "/cpp/atl/atl-control-containment-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl/hosting-activex-controls-using-atl-axhost.md",
+            "redirect_url": "/cpp/atl/atl-control-containment-faq",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/atl/reference/index.md",
             "redirect_url": "/cpp/atl/reference/atl-classes",
             "redirect_document_id": false
@@ -48,6 +93,11 @@
         {
             "source_path": "docs/atl-mfc-shared/index.md",
             "redirect_url": "/cpp/atl-mfc-shared/atl-mfc-shared-classes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/atl-mfc-shared/date-and-time-general-purpose-classes.md",
+            "redirect_url": "/cpp/atl-mfc-shared/date-and-time",
             "redirect_document_id": false
         },
         {
