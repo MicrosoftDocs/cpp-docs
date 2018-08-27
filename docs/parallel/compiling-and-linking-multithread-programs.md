@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Compiling and Linking Multithread Programs
-The Bounce.c program is introduced in [Sample Multithread C Program](../parallel/sample-multithread-c-program.md).  
+The Bounce.c program is introduced in [Sample Multithread C Program](sample-multithread-c-program.md).  
   
 Programs are compiled multithreaded by default.  
   
@@ -38,4 +38,4 @@ Programs are compiled multithreaded by default.
   
 ## See Also
 
-[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)

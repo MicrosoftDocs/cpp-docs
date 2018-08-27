@@ -102,4 +102,4 @@ The following guidelines must be observed when declaring statically bound thread
   
 ## See Also  
  
-[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)   
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)   

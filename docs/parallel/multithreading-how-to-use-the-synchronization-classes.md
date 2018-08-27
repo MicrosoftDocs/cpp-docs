@@ -1,7 +1,7 @@
 ---
-title: "Multithreading: How to Use the Synchronization Classes | Microsoft Docs"
+title: "Multithreading: How to Use the MFC Synchronization Classes | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/27/2018"
 ms.technology: ["cpp-parallel"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# Multithreading: How to Use the Synchronization Classes
+# Multithreading: How to Use the MFC Synchronization Classes
 Synchronizing resource access between threads is a common problem when writing multithreaded applications. Having two or more threads simultaneously access the same data can lead to undesirable and unpredictable results. For example, one thread could be updating the contents of a structure while another thread is reading the contents of the same structure. It is unknown what data the reading thread will receive: the old data, the newly written data, or possibly a mixture of both. MFC provides a number of synchronization and synchronization access classes to aid in solving this problem. This topic explains the classes available and how to use them to create thread-safe classes in a typical multithreaded application.  
   
 A typical multithreaded application has a class that represents a resource to be shared among threads. A properly designed, fully thread-safe class does not require you to call any synchronization functions. Everything is handled internally to the class, allowing you to concentrate on how to best use the class, not about how it might get corrupted. An effective technique for creating a fully thread-safe class is to merge the synchronization class into the resource class. Merging the synchronization classes into the shared class is a straightforward process.  
@@ -44,8 +44,8 @@ singleLock.Unlock();
   
 The drawbacks to this approach are that the class will be slightly slower than the same class without the synchronization objects added. Also, if there is a chance that more than one thread might delete the object, the merged approach might not always work. In this situation, it is better to maintain separate synchronization objects.  
   
-For information about determining which synchronization class to use in different situations, see [Multithreading: When to Use the Synchronization Classes](../parallel/multithreading-when-to-use-the-synchronization-classes.md). For more information about synchronization, see [Synchronization](http://msdn.microsoft.com/library/windows/desktop/ms686353) in the Windows SDK. For more information about multithreading support in MFC, see [Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md).  
+For information about determining which synchronization class to use in different situations, see [Multithreading: When to Use the Synchronization Classes](multithreading-when-to-use-the-synchronization-classes.md). For more information about synchronization, see [Synchronization](/windows/desktop/Sync/synchronization) in the Windows SDK. For more information about multithreading support in MFC, see [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md).  
   
 ## See Also  
  
-[Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md)
+[Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Avoiding Problem Areas with Multithread Programs
-There are several problems you might encounter in creating, linking, or executing a multithread C program. Some of the more common problems are described in the following table. (For a similar discussion from the MFC point of view, see [Multithreading: Programming Tips](../parallel/multithreading-programming-tips.md).)  
+There are several problems you might encounter in creating, linking, or executing a multithread C program. Some of the more common problems are described in the following table. (For a similar discussion from the MFC point of view, see [Multithreading: Programming Tips](multithreading-programming-tips.md).)  
   
 |Problem|Probable cause|  
 |-------------|--------------------|  
@@ -21,4 +21,4 @@ There are several problems you might encounter in creating, linking, or executin
   
 ## See Also  
 
-[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)
