@@ -60,8 +60,8 @@ The copy assignment operator is not to be confused with the copy constructor. Th
 // Copy constructor is called--not overloaded copy assignment operator!
 Point pt3 = pt1;
 
-// The previous initialization is line is similar to the following:
-Point pt4(pt1); // Copy constructor call
+// The previous initialization is similar to the following:
+Point pt4(pt1); // Copy constructor call.
 ```
 
 > [!NOTE]
