@@ -1,7 +1,7 @@
 ---
 title: "Multithreading Support for Older Code (Visual C++) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/27/2018"
 ms.technology: ["cpp-parallel"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -16,13 +16,13 @@ Visual C++ allows you to have multiple concurrent threads of execution running s
   
 ## In This Section  
  
-[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)  
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)  
 Provides support for creating multithread applications with Microsoft Windows  
   
-[Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md)  
+[Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)  
 Describes what processes and threads are and what the MFC approach to multithreading is.  
   
-[Multithreading and Locales](../parallel/multithreading-and-locales.md)  
+[Multithreading and Locales](multithreading-and-locales.md)  
 Discusses issues that arise when using the locale functionality of both the C Runtime Library and the C++ Standard Library in a multithreaded application.  
   
 ## Related Sections  

@@ -39,4 +39,4 @@ The [_endthread](../c-runtime-library/reference/endthread-endthreadex.md) functi
   
 ## See Also  
  
-[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)

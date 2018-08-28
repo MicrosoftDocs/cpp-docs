@@ -433,7 +433,7 @@ unsigned __stdcall RunThreadB(void *params)
   
 ## See Also  
 
-[Multithreading Support for Older Code (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)   
+[Multithreading Support for Older Code (Visual C++)](multithreading-support-for-older-code-visual-cpp.md)   
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)   
 [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)   
 [setlocale](../preprocessor/setlocale.md)   

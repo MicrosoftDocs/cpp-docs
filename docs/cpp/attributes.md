@@ -1,7 +1,7 @@
 ---
-title: "C++ Standard Attributes | Microsoft Docs"
+title: "Attributes in C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/28/2017"
+ms.date: "06/01/2018"
 ms.topic: "language-reference"
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
 author: "mikeblome"

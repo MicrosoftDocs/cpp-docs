@@ -7,7 +7,7 @@
       "build_output_subfolder": "vcppdocs",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [">= vs-2015"],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",

@@ -1,7 +1,7 @@
 ---
-title: "Multithreading: Creating User-Interface Threads | Microsoft Docs"
+title: "Multithreading: Creating MFC User-Interface Threads | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/27/2018"
 ms.technology: ["cpp-parallel"]
 ms.topic: "conceptual"
 f1_keywords: ["CREATE_SUSPENDED", "SECURITY_ATTRIBUTES"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# Multithreading: Creating User-Interface Threads
+# Multithreading: Creating MFC User-Interface Threads
 A user-interface thread is commonly used to handle user input and respond to user events independently of threads executing other portions of the application. The main application thread (provided in your `CWinApp`-derived class) is already created and started for you. This topic describes the steps necessary to create additional user-interface threads.  
   
 The first thing you must do when creating a user-interface thread is derive a class from [CWinThread](../mfc/reference/cwinthread-class.md). You must declare and implement this class, using the [DECLARE_DYNCREATE](../mfc/reference/run-time-object-model-services.md#declare_dyncreate) and [IMPLEMENT_DYNCREATE](../mfc/reference/run-time-object-model-services.md#implement_dyncreate) macros. This class must override some functions and can override others. These functions and what they should do are presented in the following table.  
@@ -21,7 +21,6 @@ The first thing you must do when creating a user-interface thread is derive a cl
   
 |Function|Purpose|  
 |--------------|-------------|  
-
 |[ExitInstance](../mfc/reference/cwinthread-class.md#exitinstance)|Perform cleanup when thread terminates. Usually overridden.|  
 |[InitInstance](../mfc/reference/cwinthread-class.md#initinstance)|Perform thread instance initialization. Must be overridden.|  
 |[OnIdle](../mfc/reference/cwinthread-class.md#onidle)|Perform thread-specific idle-time processing. Not usually overridden.|  
@@ -46,12 +45,12 @@ MFC provides two versions of `AfxBeginThread` through parameter overloading: one
   
 ## What do you want to know more about?  
   
-- [Multithreading: Terminating Threads](../parallel/multithreading-terminating-threads.md)  
+- [Multithreading: Terminating Threads](multithreading-terminating-threads.md)  
   
-- [Multithreading: Creating Worker Threads](../parallel/multithreading-creating-worker-threads.md)  
+- [Multithreading: Creating Worker Threads](multithreading-creating-worker-threads.md)  
   
-- [Processes and Threads](http://msdn.microsoft.com/library/windows/desktop/ms684841)  
+- [Processes and Threads](/windows/desktop/ProcThread/processes-and-threads)  
   
 ## See Also  
  
-[Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md)
+[Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)
