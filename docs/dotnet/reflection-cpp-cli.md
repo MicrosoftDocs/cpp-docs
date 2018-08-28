@@ -19,12 +19,12 @@ Reflection allows known data types to be inspected at runtime. Reflection allows
 
 Note that the assembly name provided is the strong name (see [Creating and Using Strong-Named Assemblies](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)), which includes the assembly version, culture, and signing information. Note also that the name of the namespace in which the data type is defined can be retrieved, along with the name of the base class.
 
-The most common way to access reflection features is through the <xref:System.Object.GetType%2A> method. This method is provided by [System::Object](https://msdn.microsoft.com/en-us/library/system.object.aspx), from which all garbage-collected classes derive.
+The most common way to access reflection features is through the <xref:System.Object.GetType%2A> method. This method is provided by [System::Object](https://msdn.microsoft.com/library/system.object.aspx), from which all garbage-collected classes derive.
 
 > [!NOTE]
 > Reflection on an .exe built with the Visual C++ compiler is only allowed if the .exe is built with the **/clr:pure** or **/clr:safe** compiler options. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015 and unavailable in Visual Studio 2017. See [/clr (Common Language Runtime Compilation)](../build/reference/clr-common-language-runtime-compilation.md) for more information.
 
-For more information, see [System.Reflection Namespace](https://msdn.microsoft.com/en-us/library/system.reflection.aspx)
+For more information, see [System.Reflection Namespace](https://msdn.microsoft.com/library/system.reflection.aspx)
 
 ## Example: GetType
 
@@ -165,9 +165,9 @@ public:
 
 ## Example: inspection of assemblies
 
-If the code above is compiled into a DLL called vcpp_reflection_6.dll, you can then use reflection to inspect the contents of this assembly. This involves using the static reflection API function [Assembly::Load](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.load.aspx) to load the assembly. This function returns the address of an **Assembly** object that can then be queried about the modules and types within.
+If the code above is compiled into a DLL called vcpp_reflection_6.dll, you can then use reflection to inspect the contents of this assembly. This involves using the static reflection API function [Assembly::Load](https://msdn.microsoft.com/library/system.reflection.assembly.load.aspx) to load the assembly. This function returns the address of an **Assembly** object that can then be queried about the modules and types within.
 
-Once the reflection system successfully loads the assembly, an array of **Type** objects is retrieved with the [Assembly::GetTypes](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.gettypes.aspx) function. Each array element contains information about a different type, although in this case, only one class is defined. Using a loop, each **Type** in this array is queried about the type members using the **Type::GetMembers** function. This function returns an array of **MethodInfo** objects, each object containing information about the member function, data member, or property in the type.
+Once the reflection system successfully loads the assembly, an array of **Type** objects is retrieved with the [Assembly::GetTypes](https://msdn.microsoft.com/library/system.reflection.assembly.gettypes.aspx) function. Each array element contains information about a different type, although in this case, only one class is defined. Using a loop, each **Type** in this array is queried about the type members using the **Type::GetMembers** function. This function returns an array of **MethodInfo** objects, each object containing information about the member function, data member, or property in the type.
 
 Note that the list of methods includes the functions explicitly defined in **TestClass** and the functions implicitly inherited from the **System::Object** class. As part of being described in .NET rather than in Visual C++ syntax, properties appear as the underlying data member accessed by the get/set functions. The get/set functions appear in this list as regular methods. Reflection is supported through the common language runtime, not by the Visual C++ compiler.
 

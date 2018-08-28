@@ -36,7 +36,7 @@ Interaction Between an ActiveX Control Container and a Windowed ActiveX Control
   
 -   [Active Documents](../mfc/active-documents.md)  
   
--   [Understanding ActiveX Controls](http://msdn.microsoft.com/library/windows/desktop/ms693753)  
+-   [Understanding ActiveX Controls](/windows/desktop/com/activex-controls)  
   
 -   [Upgrading an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)  
   

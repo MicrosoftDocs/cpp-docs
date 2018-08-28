@@ -111,4 +111,4 @@ Note that [idl_quote](../windows/idl-quote.md) lets you use MIDL constructs that
 ## See Also
 
 [Attributes by Group](../windows/attributes-by-group.md)  
-[Attribute Limitations](http://msdn.microsoft.com/6e6c4329-f667-4869-b991-cbe9cb7a8f61)
+[Attribute Limitations](https://msdn.microsoft.com/6e6c4329-f667-4869-b991-cbe9cb7a8f61)

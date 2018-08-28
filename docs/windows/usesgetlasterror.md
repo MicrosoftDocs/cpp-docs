@@ -24,7 +24,7 @@ Tells the caller that if there is an error when calling that function, then the 
 
 ## Remarks
 
-The **usesgetlasterror** C++ attribute has the same functionality as the [usesgetlasterror](http://msdn.microsoft.com/library/windows/desktop/aa367297) MIDL attribute.
+The **usesgetlasterror** C++ attribute has the same functionality as the [usesgetlasterror](/windows/desktop/Midl/usesgetlasterror) MIDL attribute.
 
 ## Example
 

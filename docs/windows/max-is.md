@@ -31,7 +31,7 @@ One or more C-language expressions. Empty argument slots are allowed.
 
 ## Remarks
 
-The **max_is** C++ attribute has the same functionality as the [max_is](http://msdn.microsoft.com/library/windows/desktop/aa367074) MIDL attribute.
+The **max_is** C++ attribute has the same functionality as the [max_is](/windows/desktop/Midl/max-is) MIDL attribute.
 
 ## Requirements
 

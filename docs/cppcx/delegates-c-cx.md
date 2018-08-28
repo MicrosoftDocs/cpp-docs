@@ -22,7 +22,7 @@ The `delegate` keyword is used to declare a reference type that is the Windows R
 event PrimeFoundHandler^ primeFoundEvent;  
 ```  
   
- When declaring delegates that will be exposed to clients across the Windows Runtime application binary interface, use [Windows::Foundation::TypedEventHandler\<TSender, TResult>](http://msdn.microsoft.com/library/windows/apps/br225997.aspx). This delegate has predefined proxy and stub binaries that enable it to be consumed by Javascript clients.  
+ When declaring delegates that will be exposed to clients across the Windows Runtime application binary interface, use [Windows::Foundation::TypedEventHandler\<TSender, TResult>](https://msdn.microsoft.com/library/windows/apps/br225997.aspx). This delegate has predefined proxy and stub binaries that enable it to be consumed by Javascript clients.  
   
 ## Consuming delegates  
  When you create a Universal Windows Platform app, you often work with a delegate as the type of an event that a Windows Runtime class exposes. To subscribe to an event, create an instance of its delegate type by specifying a function—or lambda—that matches the delegate signature. Then use the `+=` operator to pass the delegate object to the event member on the class. This is known as subscribing to the event. When the class instance "fires" the event, your function is called, along with any other handlers that were added by your object or other objects.  

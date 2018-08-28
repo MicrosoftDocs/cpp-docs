@@ -48,7 +48,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 ## Remarks  
  This class, derived from [CSecurityDesc](../../atl/reference/csecuritydesc-class.md), provides methods for creating and managing the security descriptor of a private object.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
+ For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CSecurityDesc](../../atl/reference/csecuritydesc-class.md)  
@@ -80,13 +80,13 @@ bool ConvertToAutoInherit(
  Specifies whether the new object can contain other objects. A value of true indicates that the new object is a container. A value of false indicates that the new object is not a container.  
   
  *GenericMapping*  
- Pointer to a [GENERIC_MAPPING](http://msdn.microsoft.com/library/windows/desktop/aa446633) structure that specifies the mapping from each generic right to specific rights for the object.  
+ Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.  
   
 ### Return Value  
  Returns true on success, false on failure.  
   
 ### Remarks  
- This method attempts to determine whether the ACEs in the discretionary access-control list (DACL) and system access-control list (SACL) of the current security descriptor were inherited from the parent security descriptor. It calls the [ConvertToAutoInheritPrivateObjectSecurity](http://msdn.microsoft.com/library/windows/desktop/aa376403) function.  
+ This method attempts to determine whether the ACEs in the discretionary access-control list (DACL) and system access-control list (SACL) of the current security descriptor were inherited from the parent security descriptor. It calls the [ConvertToAutoInheritPrivateObjectSecurity](https://msdn.microsoft.com/library/windows/desktop/aa376403) function.  
   
 ##  <a name="cprivateobjectsecuritydesc"></a>  CPrivateObjectSecurityDesc::CPrivateObjectSecurityDesc  
  The constructor.  
@@ -143,7 +143,7 @@ bool Create(
  Reference to the [CAccessToken](../../atl/reference/caccesstoken-class.md) object for the client process on whose behalf the object is being created.  
   
  *GenericMapping*  
- Pointer to a [GENERIC_MAPPING](http://msdn.microsoft.com/library/windows/desktop/aa446633) structure that specifies the mapping from each generic right to specific rights for the object.  
+ Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.  
   
  *ObjectType*  
  Pointer to a `GUID` structure that identifies the type of object associated with the current object. Set *ObjectType* to NULL if the object does not have a GUID.  
@@ -152,13 +152,13 @@ bool Create(
  Specifies whether the new object can contain other objects. A value of true indicates that the new object is a container. A value of false indicates that the new object is not a container.  
   
  *AutoInheritFlags*  
- A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](http://msdn.microsoft.com/library/windows/desktop/aa446581) for more details.  
+ A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581) for more details.  
   
 ### Return Value  
  Returns true on success, false on failure.  
   
 ### Remarks  
- This method calls [CreatePrivateObjectSercurity](http://msdn.microsoft.com/library/windows/desktop/aa376405) or [CreatePrivateObjectSecurityEx](http://msdn.microsoft.com/library/windows/desktop/aa446581).  
+ This method calls [CreatePrivateObjectSercurity](https://msdn.microsoft.com/library/windows/desktop/aa376405) or [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581).  
   
  The second method permits specifying the object type GUID of the new object or controlling how ACEs are inherited.  
   
@@ -176,7 +176,7 @@ bool Get(
   
 ### Parameters  
  *si*  
- A set of bit flags that indicate the parts of the security descriptor to retrieve. This value can be a combination of the [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) bit flags.  
+ A set of bit flags that indicate the parts of the security descriptor to retrieve. This value can be a combination of the [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit flags.  
   
  *pResult*  
  Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object that receives a copy of the requested information from the specified security descriptor.  
@@ -221,19 +221,19 @@ bool Set(
   
 ### Parameters  
  *si*  
- A set of bit flags that indicate the parts of the security descriptor to set. This value can be a combination of the [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) bit flags.  
+ A set of bit flags that indicate the parts of the security descriptor to set. This value can be a combination of the [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit flags.  
   
  *Modification*  
  Pointer to a [CSecurityDesc](../../atl/reference/csecuritydesc-class.md) object. The parts of this security descriptor indicated by the *si* parameter are applied to the object's security descriptor.  
   
  *GenericMapping*  
- Pointer to a [GENERIC_MAPPING](http://msdn.microsoft.com/library/windows/desktop/aa446633) structure that specifies the mapping from each generic right to specific rights for the object.  
+ Pointer to a [GENERIC_MAPPING](/windows/desktop/api/winnt/ns-winnt-_generic_mapping) structure that specifies the mapping from each generic right to specific rights for the object.  
   
  *Token*  
  Reference to the [CAccessToken](../../atl/reference/caccesstoken-class.md) object for the client process on whose behalf the object is being created.  
   
  *AutoInheritFlags*  
- A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](http://msdn.microsoft.com/library/windows/desktop/aa446581) for more details.  
+ A set of bit flags that control how access-control entries (ACEs) are inherited from *pParent*. See [CreatePrivateObjectSecurityEx](https://msdn.microsoft.com/library/windows/desktop/aa446581) for more details.  
   
 ### Return Value  
  Returns true on success, false on failure.  
@@ -242,7 +242,7 @@ bool Set(
  The second method permits specifying the object type GUID of the object or controlling how ACEs are inherited.  
   
 ## See Also  
- [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
+ [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)   
  [CSecurityDesc Class](../../atl/reference/csecuritydesc-class.md)

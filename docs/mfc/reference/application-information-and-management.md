@@ -85,7 +85,7 @@ CWinThread* AfxBeginThread(
  Parameter to be passed to the controlling function as shown in the parameter to the function declaration in *pfnThreadProc*.  
   
  *nPriority*  
- The desired priority of the thread. For a full list and description of the available priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
+ The desired priority of the thread. For a full list and description of the available priorities, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.  
   
  *nStackSize*  
  Specifies the size in bytes of the stack for the new thread. If 0, the stack size defaults to the same size stack as the creating thread.  
@@ -98,7 +98,7 @@ CWinThread* AfxBeginThread(
 - **0** Start the thread immediately after creation.  
   
  *lpSecurityAttrs*  
- Points to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies the security attributes for the thread. If NULL, the same security attributes as the creating thread will be used. For more information on this structure, see the Windows SDK.  
+ Points to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies the security attributes for the thread. If NULL, the same security attributes as the creating thread will be used. For more information on this structure, see the Windows SDK.  
   
 ### Return Value  
  Pointer to the newly created thread object, or NULL if a failure occurs.  
@@ -167,7 +167,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
  *lpszName*  
  A pointer to a string containing the resource ID.    
  *lpszType*  
- A pointer to the type of resource. For a list of resource types, see [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042) in the Windows SDK.  
+ A pointer to the type of resource. For a list of resource types, see [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) in the Windows SDK.  
    
 ### Return Value  
  A handle to the module that contains the resource.  
@@ -495,7 +495,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
  If the function succeeds, the return value is a handle to the module. If the function fails, the return value is NULL.  
   
 ### Remarks  
- It returns a handle that can be used in [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212) to get the address of a DLL function. `AfxLoadLibrary` can also be used to map other executable modules.  
+ It returns a handle that can be used in [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212) to get the address of a DLL function. `AfxLoadLibrary` can also be used to map other executable modules.  
   
  Each process maintains a reference count for each loaded library module. This reference count is incremented each time `AfxLoadLibrary` is called and is decremented each time `AfxFreeLibrary` is called. When the reference count reaches zero, the module is unmapped from the address space of the calling process and the handle is no longer valid.  
   
@@ -548,7 +548,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
   
 ### Parameters  
  *lpWndClass*  
- Pointer to a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure containing information about the window class to be registered. For more information on this structure, see the Windows SDK.  
+ Pointer to a [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure containing information about the window class to be registered. For more information on this structure, see the Windows SDK.  
   
 ### Return Value  
  TRUE if the class is successfully registered; otherwise FALSE.  
@@ -577,7 +577,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
   
 ### Parameters  
  *nClassStyle*  
- Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure in the Windows SDK. If NULL, the defaults will be set as follows:  
+ Specifies the Windows class style or combination of styles, created by using the bitwise-OR ( **&#124;**) operator, for the window class. For a list of class styles, see the [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure in the Windows SDK. If NULL, the defaults will be set as follows:  
   
 -   Sets the mouse style to CS_DBLCLKS, which sends double-click messages to the window procedure when the user double-clicks the mouse.  
   
@@ -591,7 +591,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
  Specifies a handle to the cursor resource to be installed in each window created from the window class. If you use the default of **0**, you will get the standard IDC_ARROW cursor.  
   
  *hbrBackground*  
- Specifies a handle to the brush resource to be installed in each window created from the window class. If you use the default of **0**, you will have a NULL background brush, and your window will, by default, not erase its background while processing [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055).  
+ Specifies a handle to the brush resource to be installed in each window created from the window class. If you use the default of **0**, you will have a NULL background brush, and your window will, by default, not erase its background while processing [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd).  
   
  *hIcon*  
  Specifies a handle to the icon resource to be installed in each window created from the window class. If you use the default of **0**, you will get the standard, waving-flag Windows logo icon.  

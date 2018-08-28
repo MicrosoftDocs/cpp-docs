@@ -89,7 +89,7 @@ ref class MyOptions
  In Visual C++, when you create a reference to an in-proc Windows Runtime class that has a marshaling behavior of "None", the compiler issues warning C4451 but doesn't suggest that you consider using `Platform::Agile<T>`.  The compiler can't offer any help beyond this warning, so it's your responsibility to use the class correctly and ensure that your code calls STA components only from the user-interface thread, and MTA components only from a background thread.  
   
 ## Authoring agile Windows Runtime components  
- When you define a ref class in C++/CX, it's agile by default—that is, it has `ThreadingModel`=Both and `MarshallingType`=Agile.  If you're using the Windows Runtime C++ Template Library, you can make your class agile by deriving from `FtmBase`, which uses the `FreeThreadedMarshaller`.  If you author a class that has `ThreadingModel`=Both or `ThreadingModel`=MTA, make sure that the class is thread-safe. For more information, see [Create and Consume Objects (WRL)](http://msdn.microsoft.com/en-us/d5e42216-e888-4f1f-865a-b5ccd0def73e).  
+ When you define a ref class in C++/CX, it's agile by default—that is, it has `ThreadingModel`=Both and `MarshallingType`=Agile.  If you're using the Windows Runtime C++ Template Library, you can make your class agile by deriving from `FtmBase`, which uses the `FreeThreadedMarshaller`.  If you author a class that has `ThreadingModel`=Both or `ThreadingModel`=MTA, make sure that the class is thread-safe. For more information, see [Create and Consume Objects (WRL)](https://msdn.microsoft.com/d5e42216-e888-4f1f-865a-b5ccd0def73e).  
   
  You can modify the threading model and marshaling behavior of a ref class. However, if you make changes that render the class non-agile, you must understand the implications that are associated with those changes.  
   
@@ -116,5 +116,5 @@ public ref class MySTAClass
  The threading and marshaling information that's required by a third-party Windows Runtime component is specified in the app manifest registration information for the component. We recommend that you make all of your Windows Runtime components agile. This ensures that client code can call your component from any thread in the app, and improves the performance of those calls because they are direct calls that have no marshaling. If you author your class in this way, then client code doesn't have to use `Platform::Agile<T>` to consume your class.  
   
 ## See Also  
- [ThreadingModel](http://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)   
- [MarshallingBehavior](http://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)
+ [ThreadingModel](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)   
+ [MarshallingBehavior](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)

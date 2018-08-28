@@ -65,19 +65,19 @@ class CMFCToolBarButton : public CObject
 |[CMFCToolBarButton::IsOwnerOf](#isownerof)|Determines whether the button is the owner of the provided window handle.|  
 |[CMFCToolBarButton::IsVisible](#isvisible)|Determines whether the toolbar button is visible.|  
 |[CMFCToolBarButton::IsWindowVisible](#iswindowvisible)|Determines whether the underlying window handle of the button is visible.|  
-|[CMFCToolBarButton::NotifyCommand](#notifycommand)|Specifies whether the button processes the [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message.|  
+|[CMFCToolBarButton::NotifyCommand](#notifycommand)|Specifies whether the button processes the [WM_COMMAND](/windows/desktop/menurc/wm-command) message.|  
 |[CMFCToolBarButton::OnAddToCustomizePage](#onaddtocustomizepage)|Called by the framework when the button is added to a **Customize** dialog box.|  
 |[CMFCToolBarButton::OnBeforeDrag](#onbeforedrag)|Specifies whether the button can be dragged.|  
 |[CMFCToolBarButton::OnBeforeDrop](#onbeforedrop)|Specifies whether a user can drop the button onto the target toolbar.|  
 |[CMFCToolBarButton::OnCalculateSize](#oncalculatesize)|Called by the framework to calculate the size of the button for the specified device context and docking state.|  
-|[CMFCToolBarButton::OnCancelMode](#oncancelmode)|Called by the framework to handle the [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) message.|  
+|[CMFCToolBarButton::OnCancelMode](#oncancelmode)|Called by the framework to handle the [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) message.|  
 |[CMFCToolBarButton::OnChangeParentWnd](#onchangeparentwnd)|Called by the framework when the button is inserted into a new toolbar.|  
 |[CMFCToolBarButton::OnClick](#onclick)|Called by the framework when the user clicks the mouse button.|  
 |[CMFCToolBarButton::OnClickUp](#onclickup)|Called by the framework when the user releases the mouse button.|  
 |[CMFCToolBarButton::OnContextHelp](#oncontexthelp)|Called by the framework when the parent toolbar handles a WM_HELPHITTEST message.|  
 |[CMFCToolBarButton::OnCtlColor](#onctlcolor)|Called by the framework when the parent toolbar handles a WM_CTLCOLOR message.|  
 |[CMFCToolBarButton::OnCustomizeMenu](#oncustomizemenu)|Allows the button to modify the provided menu when the application displays a shortcut menu on the parent toolbar.|  
-|[CMFCToolBarButton::OnDblClk](#ondblclk)|Called by the framework when the parent toolbar handles a [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) message.|  
+|[CMFCToolBarButton::OnDblClk](#ondblclk)|Called by the framework when the parent toolbar handles a [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) message.|  
 |[CMFCToolBarButton::OnDraw](#ondraw)|Called by the framework to draw the button by using the specified styles and options.|  
 |[CMFCToolBarButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|Called by the framework to draw the button in the **Commands** pane of the **Customize** dialog box.|  
 |[CMFCToolBarButton::OnGetCustomToolTipText](#ongetcustomtooltiptext)|Called by the framework to retrieve the custom tooltip text for the button.|  
@@ -281,7 +281,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
  Set this parameter to TRUE to enable input, or to FALSE to disable input.  
   
 ### Remarks  
- This method calls the `EnableWindow` function to enable or disable input. For more information, see [EnableWindow](http://msdn.microsoft.com/library/windows/desktop/ms646291) in the Windows SDK.  
+ This method calls the `EnableWindow` function to enable or disable input. For more information, see [EnableWindow](https://msdn.microsoft.com/library/windows/desktop/ms646291) in the Windows SDK.  
   
 ##  <a name="exporttomenubutton"></a>  CMFCToolBarButton::ExportToMenuButton  
  Copies text from the toolbar button to a menu.  
@@ -719,7 +719,7 @@ CString m_strText;
  This data member contains the text label of the button. The text label can be empty.  
   
 ##  <a name="notifycommand"></a>  CMFCToolBarButton::NotifyCommand  
- Specifies whether the button processes the [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message.  
+ Specifies whether the button processes the [WM_COMMAND](/windows/desktop/menurc/wm-command) message.  
   
 ```  
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -733,7 +733,7 @@ virtual BOOL NotifyCommand(int iNotifyCode);
  This method returns FALSE.  
   
 ### Remarks  
- The framework calls this method when it is about to send a [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) message to the parent window.  
+ The framework calls this method when it is about to send a [WM_COMMAND](/windows/desktop/menurc/wm-command) message to the parent window.  
   
  By default, this method returns FALSE. Override this method to return TRUE if you want to process the WM_COMMAND message or FALSE to indicate that the parent toolbar should handle the message.  
   
@@ -812,14 +812,14 @@ virtual SIZE OnCalculateSize(
  Override this method if you want to provide the size of a non-standard button (for example, an edit box button).  
   
 ##  <a name="oncancelmode"></a>  CMFCToolBarButton::OnCancelMode  
- Called by the framework to handle the [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) message.  
+ Called by the framework to handle the [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) message.  
   
 ```  
 virtual void OnCancelMode();
 ```  
   
 ### Remarks  
- The default implementation of this method does nothing. Override this method if you want to handle the [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) message.  
+ The default implementation of this method does nothing. Override this method if you want to handle the [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) message.  
   
 ##  <a name="onchangeparentwnd"></a>  CMFCToolBarButton::OnChangeParentWnd  
  Called by the framework when the button is inserted into a new toolbar.  
@@ -939,7 +939,7 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
  The default implementation does nothing and returns FALSE. Override this method and return a nonzero value if you want to modify the contents of the provided menu.  
   
 ##  <a name="ondblclk"></a>  CMFCToolBarButton::OnDblClk  
- Called by the framework when the parent toolbar handles a [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) message.  
+ Called by the framework when the parent toolbar handles a [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) message.  
   
 ```  
 virtual void OnDblClk(CWnd* pWnd);
@@ -950,7 +950,7 @@ virtual void OnDblClk(CWnd* pWnd);
  -   The parent window of the button.  
   
 ### Remarks  
- This method is called by the `CMFCToolBar::OnLButtonDblClk` method when the parent toolbar handles a [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) message.  
+ This method is called by the `CMFCToolBar::OnLButtonDblClk` method when the parent toolbar handles a [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) message.  
   
  The default implementation of this method does nothing.  
   

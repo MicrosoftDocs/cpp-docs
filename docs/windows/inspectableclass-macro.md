@@ -29,7 +29,7 @@ InspectableClass(
 The full textual name of the runtime class.
 
 *trustLevel*  
-One of the [TrustLevel](http://msdn.microsoft.com/library/br224625.aspx) enumerated values.
+One of the [TrustLevel](https://msdn.microsoft.com/library/br224625.aspx) enumerated values.
 
 ## Remarks
 

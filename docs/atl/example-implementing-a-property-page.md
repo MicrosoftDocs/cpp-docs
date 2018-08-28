@@ -60,7 +60,7 @@ This example shows how to build a property page that displays (and allows you to
  These controls will be used to display the file name of the document and its read-only status.  
   
 > [!NOTE]
->  The dialog resource does not include a frame or command buttons, nor does it have the tabbed look that you might have expected. These features are provided by a property page frame such as the one created by calling [OleCreatePropertyFrame](http://msdn.microsoft.com/library/windows/desktop/ms678437).  
+>  The dialog resource does not include a frame or command buttons, nor does it have the tabbed look that you might have expected. These features are provided by a property page frame such as the one created by calling [OleCreatePropertyFrame](/windows/desktop/api/olectl/nf-olectl-olecreatepropertyframe).  
   
 ##  <a name="vcconadding_message_handlers"></a> Adding Message Handlers  
  With the controls in place, you can add message handlers to update the dirty status of the page when the value of either of the controls changes:  

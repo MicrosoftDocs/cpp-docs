@@ -36,7 +36,7 @@ To implement an interface, you must have created a project as an ATL COM applica
 4.  In Class View, expand the object's Bases and Interfaces node to see the interface you have implemented, and then expand the interface's node to see its available properties, methods, and events.  
   
     > [!NOTE]
-    >  You can also use the [Object Browser](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470) to examine the members of the interface.  
+    >  You can also use the [Object Browser](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470) to examine the members of the interface.  
   
 ## See Also  
  [Creating a COM Interface](../ide/creating-a-com-interface-visual-cpp.md)   

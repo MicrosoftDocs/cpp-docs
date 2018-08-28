@@ -232,7 +232,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
   
 ### Parameters  
  *nShowCmd*  
- Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section. Defaults to SW_HIDE.  
+ Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section. Defaults to SW_HIDE.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -258,7 +258,7 @@ static void UninitializeCom() throw();
 ```  
   
 ### Remarks  
- By default this method simply calls [CoUninitialize](http://msdn.microsoft.com/library/windows/desktop/ms688715) and is called from the destructor. Override this method if you override [CAtlExeModuleT::InitializeCom](#initializecom).  
+ By default this method simply calls [CoUninitialize](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) and is called from the destructor. Override this method if you override [CAtlExeModuleT::InitializeCom](#initializecom).  
   
 ##  <a name="unlock"></a>  CAtlExeModuleT::Unlock  
  Decrements the module's lock count.  
@@ -279,7 +279,7 @@ int WinMain(int nShowCmd) throw();
   
 ### Parameters  
  *nShowCmd*  
- Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section.  
+ Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section.  
   
 ### Return Value  
  Returns the executable's return value.  

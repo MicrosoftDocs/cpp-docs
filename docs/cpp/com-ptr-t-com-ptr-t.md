@@ -157,7 +157,7 @@ explicit _com_ptr_t( 
  A multibyte string that holds either a `CLSID` (starting with "**{**") or a `ProgID`.  
   
  *pOuter*  
- The outer unknown for [aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558).  
+ The outer unknown for [aggregation](/windows/desktop/com/aggregation).  
   
 ## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

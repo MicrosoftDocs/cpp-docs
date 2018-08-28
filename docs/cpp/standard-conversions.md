@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Standard Conversions
-The C++ language defines conversions between its fundamental types. It also defines conversions for pointer, reference, and pointer-to-member derived types. These conversions are called "standard conversions." (For more information about types, standard types, and derived types, see [Types](http://msdn.microsoft.com/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
+The C++ language defines conversions between its fundamental types. It also defines conversions for pointer, reference, and pointer-to-member derived types. These conversions are called "standard conversions." (For more information about types, standard types, and derived types, see [Types](https://msdn.microsoft.com/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
   
  This section discusses the following standard conversions:  
   
@@ -198,7 +198,7 @@ Inheritance Graph for Illustration of Base-Class Accessibility
 ||Protected|Yes|  
 ||Public|Yes|  
   
- The second case in which a pointer to a class can be converted to a pointer to a base class is when you use an explicit type conversion. (See [Expressions with Explicit Type Conversions](http://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about explicit type conversions.)  
+ The second case in which a pointer to a class can be converted to a pointer to a base class is when you use an explicit type conversion. (See [Expressions with Explicit Type Conversions](https://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about explicit type conversions.)  
   
  The result of such a conversion is a pointer to the "subobject," the portion of the object that is completely described by the base class.  
   
@@ -237,7 +237,7 @@ int main()
  A pointer to a function can be converted to type `void *`, if type `void *` is large enough to hold that pointer.  
   
 ### Pointer to void  
- Pointers to type **void** can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). (See [Expressions with Explicit Type Conversions](http://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about type casts.) A pointer to any type can be converted implicitly to a pointer to type **void**.A pointer to an incomplete object of a type can be converted to a pointer to **void** (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it is declared, but there is insufficient information available to determine its size or base class.  
+ Pointers to type **void** can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). (See [Expressions with Explicit Type Conversions](https://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about type casts.) A pointer to any type can be converted implicitly to a pointer to type **void**.A pointer to an incomplete object of a type can be converted to a pointer to **void** (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it is declared, but there is insufficient information available to determine its size or base class.  
   
  A pointer to any object that is not **const** or **volatile** can be implicitly converted to a pointer of type `void *`.  
   

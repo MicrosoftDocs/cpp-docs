@@ -46,7 +46,7 @@ class COleChangeIconDialog : public COleDialog
 ## Remarks  
  Create an object of class `COleChangeIconDialog` when you want to call this dialog box. After a `COleChangeIconDialog` object has been constructed, you can use the [m_ci](#m_ci) structure to initialize the values or states of controls in the dialog box. The `m_ci` structure is of type OLEUICHANGEICON. For more information about using this dialog class, see the [DoModal](#domodal) member function.  
   
- For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the Windows SDK.  
+ For more information, see the [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) structure in the Windows SDK.  
   
  For more information about OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -101,7 +101,7 @@ explicit COleChangeIconDialog(
 ### Remarks  
  To display the dialog box, call the [DoModal](#domodal) function.  
   
- For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the Windows SDK.  
+ For more information, see the [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) structure in the Windows SDK.  
   
 ##  <a name="dochangeicon"></a>  COleChangeIconDialog::DoChangeIcon  
  Call this function to change the icon representing the item to the one selected in the dialog box after [DoModal](#domodal) returns IDOK.  
@@ -131,7 +131,7 @@ virtual INT_PTR DoModal();
   
 - IDCANCEL if the user canceled the dialog box.  
   
-- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeIcon](http://msdn.microsoft.com/library/windows/desktop/ms688307) function in the Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeIcon](/windows/desktop/api/oledlg/nf-oledlg-oleuichangeicona) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_ci](#m_ci) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
@@ -158,7 +158,7 @@ OLEUICHANGEICON m_ci;
 ### Remarks  
  Members of this structure can be modified either directly or through member functions.  
   
- For more information, see the [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) structure in the Windows SDK.  
+ For more information, see the [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) structure in the Windows SDK.  
   
 ## See Also  
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   

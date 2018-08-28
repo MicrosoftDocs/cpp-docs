@@ -27,7 +27,7 @@ The following illustration depicts the relationship among the classes and interf
   
  Because the client does not have to go through the outer object to interact with the inner object, aggregated objects are usually more efficient. Also, the outer object does not have to know the functionality of the aggregated object, given that the interface of the aggregated object is directly available to the client. However, not all objects can be aggregated. For an object to be aggregated, it needs to be designed with aggregation in mind.  
   
- ATL implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) in two phases:  
+ ATL implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) in two phases:  
   
 -   [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), or [CComPolyObject](../atl/reference/ccompolyobject-class.md) implements the `IUnknown` methods.  
   

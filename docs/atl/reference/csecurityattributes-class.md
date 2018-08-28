@@ -39,9 +39,9 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 |[CSecurityAttributes::Set](#set)|Call this method to set the attributes of the `CSecurityAttributes` object.|  
   
 ## Remarks  
- The `SECURITY_ATTRIBUTES` structure contains a [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.  
+ The `SECURITY_ATTRIBUTES` structure contains a [security descriptor](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) used for the creation of an object and specifies whether the handle retrieved by specifying this structure is inheritable.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
+ For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  `SECURITY_ATTRIBUTES`  
@@ -85,7 +85,7 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
   
 ## See Also  
  [Security Sample](../../visual-cpp-samples.md)   
- [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560)   
- [security descriptor](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
+ [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)   
+ [security descriptor](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)

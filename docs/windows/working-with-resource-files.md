@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 # Working with Resource Files
 
 > [!WARNING]
-> This section applies to Windows desktop applications written in C++. For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](http://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).
+> This section applies to Windows desktop applications written in C++. For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](https://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).
 >
 > For information on adding resources to C++/CLI  projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
 
@@ -40,7 +40,7 @@ Describes the resource editors provided in Visual Studio, the types of resources
 [Visual C++](../visual-cpp-in-visual-studio.md)  
 Provides links into the Visual C++ documentation.
 
-[Introducing Visual Studio](http://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
+[Introducing Visual Studio](https://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
 Describes the complete set of development tools that all use the same integrated development environment (IDE), allowing them to share tools and facilitates in the creation of mixed-language solutions.
 
 [Talk to Us](/visualstudio/ide/talk-to-us)  
@@ -49,4 +49,4 @@ Provides links to information on using the documentation set, contacting product
 ## See Also
 
 [Windows Desktop Applications](../windows/windows-desktop-applications-cpp.md)  
-[Menus and Other Resources](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

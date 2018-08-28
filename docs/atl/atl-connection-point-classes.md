@@ -18,7 +18,7 @@ ATL uses the following classes to support connection points:
   
 -   [IConnectionPointContainerImpl](../atl/reference/iconnectionpointcontainerimpl-class.md) implements the connection point container and manages the list of `IConnectionPointImpl` objects.  
   
--   [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) implements a connection point representing the [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) interface.  
+-   [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) implements a connection point representing the [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) interface.  
   
 -   [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) manages an arbitrary number of connections between the connection point and its sinks.  
   

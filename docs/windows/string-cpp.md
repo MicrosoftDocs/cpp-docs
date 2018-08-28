@@ -24,7 +24,7 @@ Indicates that the one-dimensional **char**, **wchar_t**, `byte` (or equivalent)
 
 ## Remarks
 
-The **string** C++ attribute has the same functionality as the [string](http://msdn.microsoft.com/library/windows/desktop/aa367270) MIDL attribute.
+The **string** C++ attribute has the same functionality as the [string](/windows/desktop/Midl/string) MIDL attribute.
 
 ## Example
 

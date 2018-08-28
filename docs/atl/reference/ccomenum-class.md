@@ -28,7 +28,7 @@ class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
   
 #### Parameters  
  *Base*  
- A COM enumerator ( [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx)) interface.  
+ A COM enumerator interface. See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example. 
   
  *piid*  
  A pointer to the interface ID of the enumerator interface.  

@@ -62,4 +62,4 @@ Win32
 [Resource Editors](../windows/resource-editors.md)  
 [User-Interface Objects and Command IDs](../mfc/user-interface-objects-and-command-ids.md)  
 [Menus](../mfc/menus-mfc.md)  
-[Menus](http://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)
+[Menus](https://msdn.microsoft.com/library/windows/desktop/ms646977.aspx)

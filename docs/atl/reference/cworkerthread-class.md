@@ -212,7 +212,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- When the handle is removed [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) will be called on the associated object that was passed to [AddHandle](#addhandle). If this call fails, `CWorkerThread` will call the Windows [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211) function on the handle.  
+ When the handle is removed [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) will be called on the associated object that was passed to [AddHandle](#addhandle). If this call fails, `CWorkerThread` will call the Windows [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) function on the handle.  
   
 ##  <a name="shutdown"></a>  CWorkerThread::Shutdown  
  Call this method to shut down the worker thread.  

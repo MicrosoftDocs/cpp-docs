@@ -165,7 +165,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 ```  
   
 ### Return Value  
- A pointer to the [IShellFolder Interface](http://msdn.microsoft.com/library/windows/desktop/bb775075) for the selected object.  
+ A pointer to the [IShellFolder Interface](https://msdn.microsoft.com/library/windows/desktop/bb775075) for the selected object.  
   
 ### Remarks  
  This method returns NULL if no object is currently selected.  
@@ -200,7 +200,7 @@ SHCONTF GetItemTypes() const;
 ```  
   
 ### Return Value  
- A [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539) value that contains the type of items listed in the `CMFCShellListCtrl`.  
+ A [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf) value that contains the type of items listed in the `CMFCShellListCtrl`.  
   
 ### Remarks  
  To set the type of items listed in a `CMFCShellListCtrl`, call [CMFCShellListCtrl::SetItemTypes](#setitemtypes).  
@@ -359,7 +359,7 @@ void SetItemTypes(SHCONTF nTypes);
  A list of item types that the `CMFCShellListCtrl` object supports.  
   
 ### Remarks  
- For more information about the list of item types, see [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539).  
+ For more information about the list of item types, see [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

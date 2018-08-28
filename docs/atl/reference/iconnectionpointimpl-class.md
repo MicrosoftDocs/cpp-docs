@@ -77,7 +77,7 @@ STDMETHOD(Advise)(
 ### Remarks  
  Use [Unadvise](#unadvise) to terminate the connection call.  
   
- See [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) in the Windows SDK.  
+ See [IConnectionPoint::Advise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-advise) in the Windows SDK.  
   
 ##  <a name="enumconnections"></a>  IConnectionPointImpl::EnumConnections  
  Creates an enumerator to iterate through the connections for the connection point.  
@@ -87,7 +87,7 @@ STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 ```  
   
 ### Remarks  
- See [IConnectionPoint::EnumConnections](http://msdn.microsoft.com/library/windows/desktop/ms680755) in the Windows SDK.  
+ See [IConnectionPoint::EnumConnections](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-enumconnections) in the Windows SDK.  
   
 ##  <a name="getconnectioninterface"></a>  IConnectionPointImpl::GetConnectionInterface  
  Retrieves the IID of the interface represented by the connection point.  
@@ -97,7 +97,7 @@ STDMETHOD(GetConnectionInterface)(IID* piid2);
 ```  
   
 ### Remarks  
- See [IConnectionPoint::GetConnectionInterface](http://msdn.microsoft.com/library/windows/desktop/ms693468) in the Windows SDK.  
+ See [IConnectionPoint::GetConnectionInterface](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-getconnectioninterface) in the Windows SDK.  
   
 ##  <a name="getconnectionpointcontainer"></a>  IConnectionPointImpl::GetConnectionPointContainer  
  Retrieves an interface pointer to the connectable object.  
@@ -107,7 +107,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 ```  
   
 ### Remarks  
- See [IConnectionPoint::GetConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms679669) in the Windows SDK.  
+ See [IConnectionPoint::GetConnectionPointContainer](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-getconnectionpointcontainer) in the Windows SDK.  
   
 ##  <a name="m_vec"></a>  IConnectionPointImpl::m_vec  
  Manages the connections between the connection point object and a sink.  
@@ -127,8 +127,8 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 ```  
   
 ### Remarks  
- See [IConnectionPoint::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms686608) in the Windows SDK.  
+ See [IConnectionPoint::Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) in the Windows SDK.  
   
 ## See Also  
- [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318)   
+ [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)   
  [Class Overview](../../atl/atl-class-overview.md)

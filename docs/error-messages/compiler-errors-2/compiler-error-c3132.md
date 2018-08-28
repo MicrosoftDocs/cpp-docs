@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Compiler Error C3132
 'function-parameter' : parameter arrays can only be applied to a formal argument of type 'single-dimensional managed array'  
   
- The [ParamArray](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx) attribute was applied to a parameter that was not a single-dimension array.  
+ The [ParamArray](https://msdn.microsoft.com/library/system.paramarrayattribute.aspx) attribute was applied to a parameter that was not a single-dimension array.  
   
  The following sample generates C3132:  
   

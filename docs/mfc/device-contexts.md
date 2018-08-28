@@ -27,21 +27,21 @@ A device context is a Windows data structure containing information about the dr
   
 ### What do you want to know more about  
   
--   [Device contexts (definition)](http://msdn.microsoft.com/library/windows/desktop/dd183553)  
+-   [Device contexts (definition)](https://msdn.microsoft.com/library/windows/desktop/dd183553)  
   
 -   [Drawing in a View](../mfc/drawing-in-a-view.md)  
   
 -   [Interpreting User Input Through a View](../mfc/interpreting-user-input-through-a-view.md)  
   
--   [Lines and curves](http://msdn.microsoft.com/library/windows/desktop/dd145028)  
+-   [Lines and curves](https://msdn.microsoft.com/library/windows/desktop/dd145028)  
   
--   [Filled shapes](http://msdn.microsoft.com/library/windows/desktop/dd162714)  
+-   [Filled shapes](https://msdn.microsoft.com/library/windows/desktop/dd162714)  
   
--   [Fonts and text](http://msdn.microsoft.com/library/windows/desktop/dd144819)  
+-   [Fonts and text](/windows/desktop/gdi/fonts-and-text)  
   
--   [Colors](http://msdn.microsoft.com/library/windows/desktop/dd183450)  
+-   [Colors](https://msdn.microsoft.com/library/windows/desktop/dd183450)  
   
--   [Coordinate spaces and transformations](http://msdn.microsoft.com/library/windows/desktop/dd183475)  
+-   [Coordinate spaces and transformations](https://msdn.microsoft.com/library/windows/desktop/dd183475)  
   
 ## See Also  
  [Window Objects](../mfc/window-objects.md)

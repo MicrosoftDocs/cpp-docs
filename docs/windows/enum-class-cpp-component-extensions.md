@@ -55,7 +55,7 @@ The value of each enumerator is a constant expression that is either defined imp
 
 ### Remarks
 
-For more information, and examples, see [Enums](http://msdn.microsoft.com/%20library/windows/apps/hh755820.aspx).
+For more information, and examples, see [Enums](https://msdn.microsoft.com/%20library/windows/apps/hh755820.aspx).
 
 Note that the compiler emits error messages if the constant expression that defines the value of an enumerator cannot be represented by the *underlying-type*.  However, the compiler does not report an error for a value that is inappropriate for the underlying type. For example:
 

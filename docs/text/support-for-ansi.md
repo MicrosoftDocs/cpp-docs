@@ -17,4 +17,4 @@ Most MFC classes and methods support the ANSI character set, although the MFC fr
 ## See Also  
  [Support for Unicode](../text/support-for-unicode.md)   
  [Deprecated ANSI APIs](../mfc/deprecated-ansi-apis.md)   
- [Shell And Common Controls Versions](http://msdn.microsoft.com/library/windows/desktop/bb776779)
+ [Shell And Common Controls Versions](https://msdn.microsoft.com/library/windows/desktop/bb776779)

@@ -31,7 +31,7 @@ The dispatch ID for the interface method.
 
 ## Remarks
 
-The **id** C++ attribute has the same functionality as the [id](http://msdn.microsoft.com/library/windows/desktop/aa367040) MIDL attribute.
+The **id** C++ attribute has the same functionality as the [id](/windows/desktop/Midl/id) MIDL attribute.
 
 ## Example
 

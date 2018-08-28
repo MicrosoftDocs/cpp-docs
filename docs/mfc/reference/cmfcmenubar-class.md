@@ -276,7 +276,7 @@ virtual BOOL CreateEx(
 ### Remarks  
  You should use this function instead of [CMFCMenuBar::Create](#create) when you want to specify styles in addition to the toolbar style. Some frequently used additional styles are TBSTYLE_TRANSPARENT and CBRS_TOP.  
   
- For lists of additional styles, see [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439), [common control styles](http://msdn.microsoft.com/library/windows/desktop/bb775498), and [common window styles](http://msdn.microsoft.com/library/windows/desktop/ms632600).  
+ For lists of additional styles, see [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles), [common control styles](/windows/desktop/Controls/common-control-styles), and [common window styles](https://msdn.microsoft.com/library/windows/desktop/ms632600).  
   
 ### Example  
  The following example demonstrates how to use the `CreateEx` method of the `CMFCMenuBar` class. This code snippet is part of the [IE Demo sample](../../visual-cpp-samples.md).  
@@ -853,7 +853,7 @@ static BOOL SetMenuFont(
   
 ### Parameters  
  [in] *lpLogFont*  
- A pointer to a [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/bb773327) structure that defines the font to set.  
+ A pointer to a [LOGFONT](/windows/desktop/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) structure that defines the font to set.  
   
  [in] *bHorz*  
  TRUE if you want the *lpLogFont* parameter to be used for the vertical font, FALSE if you want it to be used for horizontal font.  

@@ -19,7 +19,7 @@ Visual C++ provides language extensions to help you program against runtime plat
 
 C++/CX is a subset of C++/CLI. For extensions that are common to C++/CX and C++/CLI, the semantics depend on whether you are targeting the common language runtime (CLR) or the Windows Runtime. To compile your app to run on the Windows Runtime, specify the `/ZW` compiler option. To compile it to run on the CLR, specify the `/clr` compiler option. These switches are set automatically when you use Visual Studio to create a project.
 
-For more information about how to create Universal Windows Platform apps in C++, see [Roadmap for Windows Runtime apps using C++](http://msdn.microsoft.com/library/windows/apps/hh700360.aspx).
+For more information about how to create Universal Windows Platform apps in C++, see [Roadmap for Windows Runtime apps using C++](https://msdn.microsoft.com/library/windows/apps/hh700360.aspx).
 
 C++/CLI extends the ISO/ANSI C++ standard, and is defined under the Ecma C++/CLI Standard. For more information, see [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 

@@ -124,7 +124,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Provides the functionality of a Windows checklist box.  
   
  [CClientDC Class](../../mfc/reference/cclientdc-class.md)  
- Handles the calling of the Windows functions [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) at construction time and [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) at destruction time.  
+ Handles the calling of the Windows functions [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) at construction time and [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) at destruction time.  
   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)  
  Base class for the Microsoft Foundation Class Library message-map architecture.  
@@ -850,7 +850,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Represents a half-height frame window typically seen around floating toolbars.  
   
  [CMonikerFile Class](../../mfc/reference/cmonikerfile-class.md)  
- Represents a stream of data ([IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)) named by an [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705).  
+ Represents a stream of data ([IStream](/windows/desktop/api/objidl/nn-objidl-istream)) named by an [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker).  
   
  [CMonthCalCtrl Class](../../mfc/reference/cmonthcalctrl-class.md)  
  Encapsulates the functionality of a month calendar control.  
@@ -919,7 +919,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Provides support for custom client-side control interfaces.  
   
  [COleConvertDialog Class](../../mfc/reference/coleconvertdialog-class.md)  
- For more information, see the [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) structure in the Windows SDK.  
+ For more information, see the [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) structure in the Windows SDK.  
   
  [COleCurrency Class](../../mfc/reference/colecurrency-class.md)  
  Encapsulates the `CURRENCY` data type of OLE automation.  
@@ -1162,7 +1162,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Encapsulates a sinusoidal-velocity transition that has an amplitude that is determined by the initial velocity of the animation variable.  
   
  [CSize Class](../../atl-mfc-shared/reference/csize-class.md)  
- Similar to the Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure, which implements a relative coordinate or position.  
+ Similar to the Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure, which implements a relative coordinate or position.  
   
  [CSliderCtrl Class](../../mfc/reference/csliderctrl-class.md)  
  Provides the functionality of the Windows common slider control.  

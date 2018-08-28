@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # QueryInterface
-Although there are mechanisms by which an object can express the functionality it provides statically (before it is instantiated), the fundamental COM mechanism is to use the `IUnknown` method called [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521).  
+Although there are mechanisms by which an object can express the functionality it provides statically (before it is instantiated), the fundamental COM mechanism is to use the `IUnknown` method called [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)).  
   
  Every interface is derived from `IUnknown`, so every interface has an implementation of `QueryInterface`. Regardless of implementation, this method queries an object using the IID of the interface to which the caller wants a pointer. If the object supports that interface, `QueryInterface` retrieves a pointer to the interface, while also calling `AddRef`. Otherwise, it returns the E_NOINTERFACE error code.  
   
@@ -21,5 +21,5 @@ Although there are mechanisms by which an object can express the functionality i
   
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   
- [QueryInterface: Navigating in an Object](http://msdn.microsoft.com/library/windows/desktop/ms687230)
+ [QueryInterface: Navigating in an Object](/windows/desktop/com/queryinterface--navigating-in-an-object)
 

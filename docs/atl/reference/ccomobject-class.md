@@ -45,7 +45,7 @@ class CComObject : public Base
 |[CComObject::Release](#release)|Decrements the reference count on the object.|  
   
 ## Remarks  
- `CComObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for a nonaggregated object. However, calls to `QueryInterface`, `AddRef`, and `Release` are delegated to `CComObjectRootEx`.  
+ `CComObject` implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) for a nonaggregated object. However, calls to `QueryInterface`, `AddRef`, and `Release` are delegated to `CComObjectRootEx`.  
   
  For more information about using `CComObject`, see the article [Fundamentals of ATL COM Objects](../../atl/fundamentals-of-atl-com-objects.md).  
   

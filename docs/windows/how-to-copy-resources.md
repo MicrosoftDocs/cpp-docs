@@ -19,7 +19,7 @@ You can copy resources from one file to another without changing them or you can
 You can easily copy resources from an existing resource or executable file to your current resource file. To do this, you open both files containing resources at the same time and drag items from one file to another or copy and paste between the two files. This method works for resource script (.rc) files and resource template (.rct) files, as well as executable (.exe) files.
 
 > [!NOTE]
-> Visual C++ includes sample resource files that you can use in your own application. For more information, see [CLIPART: Common Resources](http://msdn.microsoft.com/9bac2891-b6b3-49ec-a287-cec850c707e0).
+> Visual C++ includes sample resource files that you can use in your own application. For more information, see [CLIPART: Common Resources](https://msdn.microsoft.com/9bac2891-b6b3-49ec-a287-cec850c707e0).
 
 You can use the drag-and-drop method between .rc files that are open [outside of the project](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).
 
