@@ -17,8 +17,8 @@ Apps built by using Visual Studio can be targeted to various platforms, as follo
 
 |Operating System|x86|x64|ARM|
 |----------------------|---------|---------|---------|
-|Windows XP|X*|X*||
-|Windows Server 2003|X*|X*||
+|Windows XP|X\*|X\*||
+|Windows Server 2003|X\*|X\*||
 |Windows Vista|X|X||
 |Windows Server 2008|X|X||
 |Windows 7|X|X||
@@ -26,9 +26,9 @@ Apps built by using Visual Studio can be targeted to various platforms, as follo
 |Windows 8|X|X|X|
 |Windows 8.1|X|X|X|
 |Windows 10|X|X|X|
-|Android **|X|X|X|
-|iOS **|X|X|X|
-|Linux ***|X|X|X|
+|Android \*\*|X|X|X|
+|iOS \*\*|X|X|X|
+|Linux \*\*\*|X|X|X|
 
 \* You can use the Windows XP platform toolset included in Visual Studio 2017, Visual Studio 2015, Visual Studio 2013, and Visual Studio 2012 Update 1 or later to build Windows XP and Windows Server 2003 projects. For information on how to use this platform toolset, see [Configuring Programs for Windows XP](build/configuring-programs-for-windows-xp.md). For additional information on changing the platform toolset, see [How to: Modify the Target Framework and Platform Toolset](build/how-to-modify-the-target-framework-and-platform-toolset.md).
 

@@ -1,7 +1,7 @@
 ---
 title: "Compiler Warning (level 3) C4161 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/27/2018"
 ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4161"]
@@ -13,28 +13,32 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 3) C4161
-\#pragma pragma(pop...) : more pops than pushes  
-  
- Because your source code contains one more pop than pushes for pragma ***pragma***, the stack may not behave as you expect. To avoid the warning, be sure that the number of pops does not exceed the number of pushes.  
-  
-## Example  
- The following example generates C4161:  
-  
-```  
-// C4161.cpp  
-// compile with: /W3 /LD  
-#pragma pack(push, id)  
-#pragma pack(pop, id)  
-#pragma pack(pop, id)   // C4161, an extra pop  
-  
-#pragma bss_seg(".my_data1")  
-int j;  
-  
-#pragma bss_seg(push, stack1, ".my_data2")     
-int l;  
-  
-#pragma bss_seg(pop, stack1)  
-int m;  
-  
-#pragma bss_seg(pop, stack1)   // C4161  
+
+> #pragma *pragma*(pop...) : more pops than pushes
+
+## Remarks
+
+Because your source code contains one more pop than pushes for pragma *pragma*, the stack may not behave as you expect. To avoid the warning, be sure that the number of pops does not exceed the number of pushes.
+
+## Example
+
+The following example generates C4161:
+
+```cpp
+// C4161.cpp
+// compile with: /W3 /LD
+#pragma pack(push, id)
+#pragma pack(pop, id)
+#pragma pack(pop, id)   // C4161, an extra pop
+
+#pragma bss_seg(".my_data1")
+int j;
+
+#pragma bss_seg(push, stack1, ".my_data2")
+int l;
+
+#pragma bss_seg(pop, stack1)
+int m;
+
+#pragma bss_seg(pop, stack1)   // C4161
 ```
