@@ -138,11 +138,11 @@ class  CComClassFactory2 : public IClassFactory2,
  *license*  
  A class that implements the following static functions:  
   
-- **static BOOL VerifyLicenseKey( BSTR** `bstr` **);**  
+- `static BOOL VerifyLicenseKey( BSTR bstr );`  
   
-- **static BOOL GetLicenseKey( DWORD** `dwReserved` **, BSTR&ast;** `pBstr` **);**  
+- `static BOOL GetLicenseKey( DWORD dwReserved, BSTR * pBstr );`  
   
-- **static BOOL IsLicenseValid( );**  
+- `static BOOL IsLicenseValid( );`  
   
 ### Remarks  
  `CComClassFactory2` implements the [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) interface, which is an extension of [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364). `IClassFactory2` controls object creation through a license. A class factory executing on a licensed machine can provide a run-time license key. This license key allows an application to instantiate objects when a full machine license does not exist.  

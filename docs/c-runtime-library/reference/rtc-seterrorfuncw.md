@@ -50,7 +50,15 @@ Before you can call this function, you must first call one of the run-time error
 
 **_RTC_error_fnW** is defined as follows:
 
-> **typedef int (__cdecl &ast; _RTC_error_fnW)(int** *errorType* **, const wchar_t &ast;** *filename* **, int** *linenumber* **, const wchar_t &ast;** *moduleName* **, const wchar_t &ast;** *format* **, ...);**
+```cpp
+typedef int (__cdecl * _RTC_error_fnW)(
+    int errorType,
+    const wchar_t * filename,
+    int linenumber,
+    const wchar_t * moduleName,
+    const wchar_t * format,
+    ... );
+```
 
 where:
 

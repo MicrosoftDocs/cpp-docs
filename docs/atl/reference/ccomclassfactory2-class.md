@@ -28,11 +28,11 @@ class CComClassFactory2 : public IClassFactory2,
  *license*  
  A class that implements the following static functions:  
   
-- **static BOOL VerifyLicenseKey( BSTR** `bstr` **);**  
+- `static BOOL VerifyLicenseKey( BSTR bstr );`  
   
-- **static BOOL GetLicenseKey( DWORD** `dwReserved` **, BSTR&ast;** `pBstr` **);**  
+- `static BOOL GetLicenseKey( DWORD dwReserved, BSTR * pBstr );`  
   
-- **static BOOL IsLicenseValid( );**  
+- `static BOOL IsLicenseValid( );`  
   
 ## Members  
   

@@ -537,7 +537,7 @@ DWORD_PTR GetItemData(int nIndex) const;
  [!code-cpp[NVC_MFC_CListBox#15](../../mfc/codesnippet/cpp/clistbox-class_15.cpp)]  
   
 ##  <a name="getitemdataptr"></a>  CListBox::GetItemDataPtr  
- Retrieves the application-supplied 32-bit value associated with the specified list-box item as a pointer ( **void &ast;**).  
+ Retrieves the application-supplied 32-bit value associated with the specified list-box item as a pointer (<strong>void \*</strong>).  
   
 ```  
 void* GetItemDataPtr(int nIndex) const;  
@@ -1037,7 +1037,7 @@ int SetItemData(
  [!code-cpp[NVC_MFC_CListBox#34](../../mfc/codesnippet/cpp/clistbox-class_34.cpp)]  
   
 ##  <a name="setitemdataptr"></a>  CListBox::SetItemDataPtr  
- Sets the 32-bit value associated with the specified item in a list box to be the specified pointer ( **void &ast;**).  
+ Sets the 32-bit value associated with the specified item in a list box to be the specified pointer ( <strong>void \*</strong>).  
   
 ```  
 int SetItemDataPtr(

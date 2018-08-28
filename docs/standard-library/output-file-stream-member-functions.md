@@ -86,7 +86,7 @@ int main( )
 }
 ```
 
-The `write` function does not stop when it reaches a null character, so the complete class structure is written. The function takes two arguments: a **char** pointer and a count of characters to write. Note the required cast to **char&ast;** before the address of the structure object.
+The `write` function does not stop when it reaches a null character, so the complete class structure is written. The function takes two arguments: a **char** pointer and a count of characters to write. Note the required cast to <strong>char\*</strong> before the address of the structure object.
 
 ## The seekp and tellp Functions
 

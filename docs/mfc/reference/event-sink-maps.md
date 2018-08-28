@@ -211,7 +211,7 @@ ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
  The dispatch ID of the property involved in the notification.  
   
  *pfnRequest*  
- Pointer to a member function that handles the `OnRequestEdit` notification for this property. This function should have a BOOL return type and a **BOOL&ast;** parameter. This function should set the parameter to TRUE to allow the property to change and FALSE to disallow. The function should return TRUE to indicate the notification was handled; otherwise FALSE.  
+ Pointer to a member function that handles the `OnRequestEdit` notification for this property. This function should have a BOOL return type and a <strong>BOOL\*</strong> parameter. This function should set the parameter to TRUE to allow the property to change and FALSE to disallow. The function should return TRUE to indicate the notification was handled; otherwise FALSE.  
   
  *pfnChanged*  
  Pointer to a member function that handles the `OnChanged` notification for this property. The function should have a BOOL return type and a UINT parameter. The function should return TRUE to indicate that notification was handled; otherwise FALSE.  
@@ -273,7 +273,7 @@ ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
  The dispatch ID of the property involved in the notification.  
   
  *pfnRequest*  
- Pointer to a member function that handles the `OnRequestEdit` notification for this property. This function should have a BOOL return type and a **BOOL&ast;** parameter. This function should set the parameter to TRUE to allow the property to change and FALSE to disallow. The function should return TRUE to indicate the notification was handled; otherwise FALSE.  
+ Pointer to a member function that handles the `OnRequestEdit` notification for this property. This function should have a BOOL return type and a <strong>BOOL\*</strong> parameter. This function should set the parameter to TRUE to allow the property to change and FALSE to disallow. The function should return TRUE to indicate the notification was handled; otherwise FALSE.  
   
  *pfnChanged*  
  Pointer to a member function that handles the `OnChanged` notification for this property. The function should have a BOOL return type and no parameters. The function should return TRUE to indicate the notification was handled; otherwise FALSE.  

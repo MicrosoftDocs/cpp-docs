@@ -27,7 +27,7 @@ When controls in Windows 3.x need to send a notification message that includes a
 
 **Notification Messages in Win32**
 
-For controls that existed in Windows 3.1, the Win32 API uses most of the notification messages that were used in Windows 3.x. However, Win32 also adds a number of sophisticated, complex controls to those supported in Windows 3.x. Frequently, these controls need to send additional data with their notification messages. Rather than adding a new **WM_&ast;** message for each new notification that needs additional data, the designers of the Win32 API chose to add just one message, WM_NOTIFY, which can pass any amount of additional data in a standardized fashion.
+For controls that existed in Windows 3.1, the Win32 API uses most of the notification messages that were used in Windows 3.x. However, Win32 also adds a number of sophisticated, complex controls to those supported in Windows 3.x. Frequently, these controls need to send additional data with their notification messages. Rather than adding a new <strong>WM_\*</strong> message for each new notification that needs additional data, the designers of the Win32 API chose to add just one message, WM_NOTIFY, which can pass any amount of additional data in a standardized fashion.
 
 WM_NOTIFY messages contain the ID of the control sending the message in *wParam* and a pointer to a structure in *lParam*. This structure is either an **NMHDR** structure or some larger structure that has an **NMHDR** structure as its first member. Note that since the **NMHDR** member is first, a pointer to this structure can be used as either a pointer to an **NMHDR** or as a pointer to the larger structure depending on how you cast it.
 

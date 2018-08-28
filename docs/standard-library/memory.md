@@ -72,7 +72,7 @@ Defines a class, an operator, and several templates that help allocate and free 
 |-|-|
 |[allocator](../standard-library/allocator-class.md)|The template class describes an object that manages storage allocation and freeing for arrays of objects of type **Type**.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Describes an object that determines all the information that is needed by an allocator-enabled container.|
-|[auto_ptr](../standard-library/auto-ptr-class.md)|The template class describes an object that stores a pointer to an allocated object of type **Type &ast;** that ensures the object to which it points gets deleted when its enclosing auto_ptr gets destroyed.|
+|[auto_ptr](../standard-library/auto-ptr-class.md)|The template class describes an object that stores a pointer to an allocated object of type <strong>Type \*</strong> that ensures the object to which it points gets deleted when its enclosing auto_ptr gets destroyed.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|Reports bad weak_ptr exception.|
 |[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|Helps generate a `shared_ptr`.|
 |[pointer_traits](../standard-library/pointer-traits-struct.md)|Supplies information that is needed by an object of template class `allocator_traits` to describe an allocator with pointer type `Ptr`.|

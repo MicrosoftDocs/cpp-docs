@@ -45,7 +45,7 @@ The template struct defines the member types
 
 - `reference`: a synonym for `Iterator::reference`.
 
-The partial specializations determine the critical types associated with an object pointer of type **Type &ast;** or const **Type &ast;**.
+The partial specializations determine the critical types associated with an object pointer of type <strong>Type \*</strong> or <strong>const Type \*</strong>.
 
 In this implementation you can also use several template functions that do not make use of partial specialization:
 
