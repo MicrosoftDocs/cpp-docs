@@ -25,10 +25,10 @@ class money_get : public locale::facet;
 
 ### Parameters
 
-*CharType*
+*CharType*<br/>
  The type used within a program to encode characters in a locale.
 
-*InputIterator*
+*InputIterator*<br/>
  The type of iterator from which the get functions read their input.
 
 ## Remarks
@@ -94,22 +94,22 @@ virtual iter_type do_get(iter_type first,
 
 ### Parameters
 
-*first*
+*first*<br/>
  Input iterator addressing the beginning of the sequence to be converted.
 
-*last*
+*last*<br/>
  Input iterator addressing the end of the sequence to be converted.
 
-*Intl*
+*Intl*<br/>
  A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-*Iosbase*
+*Iosbase*<br/>
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
-*State*
+*State*<br/>
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded or not.
 
-*val*
+*val*<br/>
  A string storing the converted sequence.
 
 ### Return Value
@@ -176,22 +176,22 @@ iter_type get(iter_type first,
 
 ### Parameters
 
-*first*
+*first*<br/>
  Input iterator addressing the beginning of the sequence to be converted.
 
-*last*
+*last*<br/>
  Input iterator addressing the end of the sequence to be converted.
 
-*Intl*
+*Intl*<br/>
  A Boolean value indicating the type of currency symbol expected in the sequence: **true** if international, **false** if domestic.
 
-*Iosbase*
+*Iosbase*<br/>
  A format flag which when set indicates that the currency symbol is optional; otherwise, it is required
 
-*State*
+*State*<br/>
  Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
-*val*
+*val*<br/>
  A string storing the converted sequence.
 
 ### Return Value
@@ -273,7 +273,7 @@ explicit money_get(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*
+*_Refs*<br/>
  Integer value used to specify the type of memory management for the object.
 
 ### Remarks
@@ -288,7 +288,7 @@ The possible values for the *_Refs* parameter and their significance are:
 
 No direct examples are possible, because the destructor is protected.
 
-The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)( **_***Refs*).
+The constructor initializes its base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(*_Refs*).
 
 ## <a name="string_type"></a>  money_get::string_type
 

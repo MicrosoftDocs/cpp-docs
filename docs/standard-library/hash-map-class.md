@@ -31,16 +31,16 @@ class hash_map
 
 ### Parameters
 
-*Key*
+*Key*<br/>
  The key data type to be stored in the hash_map.
 
-*Type*
+*Type*<br/>
  The element data type to be stored in the hash_map.
 
-*Traits*
+*Traits*<br/>
  The type which includes two function objects, one of class compare able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and hash_compare<`Key`, less<`Key`> > is the default value.
 
-*Allocator*
+*Allocator*<br/>
  The type that represents the stored allocator object that encapsulates details about the hash_map's allocation and deallocation of memory. This argument is optional, and the default value is allocator<pair <const `Key`, `Type`>>.
 
 ## Remarks
@@ -434,11 +434,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 A type `const_iterator` cannot be used to modify the value of an element.
 
-The `const_iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type `pair`*\<***const Key, Type***>*, whose first member is the key to the element and whose second member is the mapped datum held by the element.
+The `const_iterator` defined by hash_map points to elements that are objects of [value_type](#value_type), that is of type `pair< const Key, Type >`, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
 To dereference a `const_iterator` `cIter` pointing to an element in a hash_map, use the `->` operator.
 
-To access the value of the key for the element, use `cIter` **-> first**, which is equivalent to (\* `cIter`) **.first**. To access the value of the mapped datum for the element, use `cIter` **-> second**, which is equivalent to (\* `cIter`) **.second**.
+To access the value of the key for the element, use `cIter->first`, which is equivalent to `(*cIter).first`. To access the value of the mapped datum for the element, use `cIter->second`, which is equivalent to `(*cIter).second`.
 
 ### Example
 
@@ -555,7 +555,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key value of the elements to be matched from the hash_map.
 
 ### Return Value
@@ -1047,7 +1047,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key value to be compared with the sort key of an element from the hash_map being searched.
 
 ### Return Value
@@ -1136,16 +1136,16 @@ size_type erase(const key_type& key);
 
 ### Parameters
 
-*_Where*
+*_Where*<br/>
  Position of the element to be removed from the hash_map.
 
-*first*
+*first*<br/>
  Position of the first element removed from the hash_map.
 
-*last*
+*last*<br/>
  Position just beyond the last element removed from the hash_map.
 
-*key*
+*key*<br/>
  The key value of the elements to be removed from the hash_map.
 
 ### Return Value
@@ -1258,7 +1258,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key value to be matched by the sort key of an element from the hash_map being searched.
 
 ### Return Value
@@ -1799,7 +1799,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key value to be compared with the sort key of an element from the hash_map being searched.
 
 ### Return Value
@@ -2438,7 +2438,7 @@ void swap(hash_map& right);
 
 ### Parameters
 
-*right*
+*right*<br/>
  The argument hash_map providing the elements to be swapped with the target hash_map.
 
 ### Remarks
@@ -2514,7 +2514,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key value to be compared with the sort key value of an element from the hash_map being searched.
 
 ### Return Value
@@ -2658,7 +2658,7 @@ typedef pair<const Key, Type> value_type;
 
 ### Remarks
 
-`value_type` is declared to be `pair` *\<***const**[key_type](#key_type), [mapped_type](#mapped_type)*>* and not `pair`**\<key_type, mapped_type>** because the keys of an associative container may not be changed using a nonconstant iterator or reference.
+`value_type` is declared to be `pair<const key_type, mapped_type>` and not `pair<key_type, mapped_type>` because the keys of an associative container may not be changed using a nonconstant iterator or reference.
 
 ### Example
 
