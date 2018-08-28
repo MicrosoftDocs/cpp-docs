@@ -111,7 +111,7 @@ CPageSetupDialog(
   
 - PSD_DISABLEORIENTATION Disables the page orientation dialog control.  
   
-- PSD_RETURNDEFAULT Causes `CPageSetupDialog` to return [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures that are initialized for the system default printer without displaying a dialog box. It is assumed that both `hDevNames` and `hDevMode` are NULL; otherwise, the function returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only `hDevNames` is returned; `hDevMode` is NULL.  
+- PSD_RETURNDEFAULT Causes `CPageSetupDialog` to return [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures that are initialized for the system default printer without displaying a dialog box. It is assumed that both `hDevNames` and `hDevMode` are NULL; otherwise, the function returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only `hDevNames` is returned; `hDevMode` is NULL.  
   
 - PSD_DISABLEPAPER Disables the paper selection control.  
   
@@ -137,7 +137,7 @@ CPageSetupDialog(
  [!code-cpp[NVC_MFCDocView#94](../../mfc/codesnippet/cpp/cpagesetupdialog-class_1.cpp)]  
   
 ##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC  
- Creates a printer device context from the [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.  
+ Creates a printer device context from the [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.  
   
 ```  
 HDC CreatePrinterDC();
@@ -154,7 +154,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
+ IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](https://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
   
  IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.  
   
@@ -188,7 +188,7 @@ LPDEVMODE GetDevMode() const;
 ```  
   
 ### Return Value  
- The [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) function, which is described in the Windows SDK.  
+ The [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](https://msdn.microsoft.com/library/windows/desktop/aa366595) function, which is described in the Windows SDK.  
   
 ##  <a name="getdrivername"></a>  CPageSetupDialog::GetDriverName  
  Call this function after calling [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) to retrieve the name of the system-defined printer device driver.  
@@ -251,7 +251,7 @@ PAGESETUPDLG m_psd;
   
  If you modify the `m_psd` data member directly, you will override any default behavior.  
   
- For more information on the [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842) structure, see the Windows SDK.  
+ For more information on the [PAGESETUPDLG](https://msdn.microsoft.com/library/windows/desktop/ms646842) structure, see the Windows SDK.  
   
  See the example for [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).  
   
@@ -311,7 +311,7 @@ virtual UINT PreDrawPage(
   
 ### Parameters  
  *wPaper*  
- Specifies a value that indicates the paper size. This value can be one of the **DMPAPER_** values listed in the description of the [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure.  
+ Specifies a value that indicates the paper size. This value can be one of the **DMPAPER_** values listed in the description of the [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) structure.  
   
  *wFlags*  
  Indicates the orientation of the paper or envelope, and whether the printer is a dot-matrix or HPPCL (Hewlett Packard Printer Control Language) device. This parameter can have one of the following values:  
@@ -333,7 +333,7 @@ virtual UINT PreDrawPage(
 -   0x01f   Envelope in portrait mode (dot matrix)  
   
  *pPSD*  
- Pointer to a `PAGESETUPDLG` structure. For more information on [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), see the Windows SDK.  
+ Pointer to a `PAGESETUPDLG` structure. For more information on [PAGESETUPDLG](https://msdn.microsoft.com/library/windows/desktop/ms646842), see the Windows SDK.  
   
 ### Return Value  
  Nonzero value if handled; otherwise 0.  

@@ -101,14 +101,14 @@ virtual BOOL FindFile(
   
 -   INTERNET_FLAG_DONT_CACHE   Do not cache the data, either locally or in any gateways.  
   
--   INTERNET_FLAG_RAW_DATA   Override the default to return the raw data ( [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structures for FTP).  
+-   INTERNET_FLAG_RAW_DATA   Override the default to return the raw data ( [WIN32_FIND_DATA](https://msdn.microsoft.com/library/windows/desktop/aa365740) structures for FTP).  
   
 -   INTERNET_FLAG_SECURE   Secures transactions on the wire with Secure Sockets Layer or PCT. This flag is applicable to HTTP requests only.  
   
 -   INTERNET_FLAG_EXISTING_CONNECT   If possible, reuse the existing connections to the server for new `FindFile` requests instead of creating a new session for each request.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
  After calling `FindFile` to retrieve the first FTP file, you can call [FindNextFile](#findnextfile) to retrieve subsequent FTP files.  
@@ -124,12 +124,12 @@ virtual BOOL FindNextFile();
 ```  
   
 ### Return Value  
- Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.  
+ Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.  
   
 ### Remarks  
  You must call this function at least once before calling any attribute function (see [CFileFind::FindNextFile](../../mfc/reference/cfilefind-class.md#findnextfile)).  
   
- `FindNextFile` wraps the Win32 function [FindNextFile](http://msdn.microsoft.com/library/windows/desktop/aa364428).  
+ `FindNextFile` wraps the Win32 function [FindNextFile](https://msdn.microsoft.com/library/windows/desktop/aa364428).  
   
 ### Example  
   See the example earlier in this topic.  

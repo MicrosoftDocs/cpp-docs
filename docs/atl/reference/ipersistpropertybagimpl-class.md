@@ -63,7 +63,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ```  
   
 ### Remarks  
- See [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) in the Windows SDK.  
+ See [IPersist::GetClassID](https://msdn.microsoft.com/library/windows/desktop/ms688664) in the Windows SDK.  
   
 ##  <a name="initnew"></a>  IPersistPropertyBagImpl::InitNew  
  Initializes a newly created object.  

@@ -73,7 +73,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
   
 ### Parameters  
  *preo*  
- Pointer to an [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the new client item is empty.  
+ Pointer to an [REOBJECT](https://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the new client item is empty.  
   
 ### Return Value  
  Pointer to a new [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object which has been added to this document.  
@@ -81,7 +81,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 ### Remarks  
  This function does not perform any OLE initialization.  
   
- For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the Windows SDK.  
+ For more information, see the [REOBJECT](https://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the Windows SDK.  
   
 ##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat  
  Call this function to determine the text format for streaming the contents of the rich edit.  

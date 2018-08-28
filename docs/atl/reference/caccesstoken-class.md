@@ -83,9 +83,9 @@ class CAccessToken
 |[CAccessToken::SetPrimaryGroup](#setprimarygroup)|Call this method to set the primary group of the `CAccessToken` object.|  
   
 ## Remarks  
- An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.  
+ An [access token](https://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
+ For an introduction to the access control model in Windows, see [Access Control](https://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -155,13 +155,13 @@ bool CreateImpersonationToken(
  Pointer to the new `CAccessToken` object.  
   
  *sil*  
- Specifies a [SECURITY_IMPERSONATION_LEVEL](http://msdn.microsoft.com/library/windows/desktop/aa379572) enumerated type that supplies the impersonation level of the new token.  
+ Specifies a [SECURITY_IMPERSONATION_LEVEL](https://msdn.microsoft.com/library/windows/desktop/aa379572) enumerated type that supplies the impersonation level of the new token.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- `CreateImpersonationToken` calls [DuplicateToken](http://msdn.microsoft.com/library/windows/desktop/aa446616) to create a new impersonation token.  
+ `CreateImpersonationToken` calls [DuplicateToken](https://msdn.microsoft.com/library/windows/desktop/aa446616) to create a new impersonation token.  
   
 ##  <a name="createprimarytoken"></a>  CAccessToken::CreatePrimaryToken  
  Call this method to create a new primary token.  
@@ -178,16 +178,16 @@ bool CreatePrimaryToken(
  Pointer to the new `CAccessToken` object.  
   
  *dwDesiredAccess*  
- Specifies the requested access rights for the new token. The default, MAXIMUM_ALLOWED, requests all access rights that are valid for the caller. See [Access Rights and Access Masks](http://msdn.microsoft.com/library/windows/desktop/aa374902) for more on access rights.  
+ Specifies the requested access rights for the new token. The default, MAXIMUM_ALLOWED, requests all access rights that are valid for the caller. See [Access Rights and Access Masks](https://msdn.microsoft.com/library/windows/desktop/aa374902) for more on access rights.  
   
  *pTokenAttributes*  
- Pointer to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new token and determines whether child processes can inherit the token. If *pTokenAttributes* is NULL, the token gets a default security descriptor and the handle cannot be inherited.  
+ Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new token and determines whether child processes can inherit the token. If *pTokenAttributes* is NULL, the token gets a default security descriptor and the handle cannot be inherited.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- `CreatePrimaryToken` calls [DuplicateTokenEx](http://msdn.microsoft.com/library/windows/desktop/aa446617) to create a new primary token.  
+ `CreatePrimaryToken` calls [DuplicateTokenEx](https://msdn.microsoft.com/library/windows/desktop/aa446617) to create a new primary token.  
   
 ##  <a name="createprocessasuser"></a>  CAccessToken::CreateProcessAsUser  
  Call this method to create a new process running in the security context of the user represented by the `CAccessToken` object.  
@@ -214,22 +214,22 @@ bool CreateProcessAsUser(
  Pointer to a null-terminated string that specifies the command line to execute.  
   
  *pProcessInformation*  
- Pointer to a [PROCESS_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/ms684873) structure that receives identification information about the new process.  
+ Pointer to a [PROCESS_INFORMATION](https://msdn.microsoft.com/library/windows/desktop/ms684873) structure that receives identification information about the new process.  
   
  *pStartupInfo*  
- Pointer to a [STARTUPINFO](http://msdn.microsoft.com/library/windows/desktop/ms686331) structure that specifies how the main window for the new process should appear.  
+ Pointer to a [STARTUPINFO](https://msdn.microsoft.com/library/windows/desktop/ms686331) structure that specifies how the main window for the new process should appear.  
   
  *dwCreationFlags*  
- Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](http://msdn.microsoft.com/library/windows/desktop/ms682429) for a list of flags.  
+ Specifies additional flags that control the priority class and the creation of the process. See the Win32 function [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) for a list of flags.  
   
  *bLoadProfile*  
- If TRUE, the user's profile is loaded with [LoadUserProfile](http://msdn.microsoft.com/library/windows/desktop/bb762281).  
+ If TRUE, the user's profile is loaded with [LoadUserProfile](https://msdn.microsoft.com/library/windows/desktop/bb762281).  
   
  *pProcessAttributes*  
- Pointer to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new process and determines whether child processes can inherit the returned handle. If *pProcessAttributes* is NULL, the process gets a default security descriptor and the handle cannot be inherited.  
+ Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new process and determines whether child processes can inherit the returned handle. If *pProcessAttributes* is NULL, the process gets a default security descriptor and the handle cannot be inherited.  
   
  *pThreadAttributes*  
- Pointer to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new thread and determines whether child processes can inherit the returned handle. If *pThreadAttributes* is NULL, the thread gets a default security descriptor and the handle cannot be inherited.  
+ Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies a security descriptor for the new thread and determines whether child processes can inherit the returned handle. If *pThreadAttributes* is NULL, the thread gets a default security descriptor and the handle cannot be inherited.  
   
  *bInherit*  
  Indicates whether the new process inherits handles from the calling process. If TRUE, each inheritable open handle in the calling process is inherited by the new process. Inherited handles have the same value and access privileges as the original handles.  
@@ -241,7 +241,7 @@ bool CreateProcessAsUser(
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- `CreateProcessAsUser` uses the `CreateProcessAsUser` Win32 function to create a new process that runs in the security context of the user represented by the `CAccessToken` object. See the description of the [CreateProcessAsUser](http://msdn.microsoft.com/library/windows/desktop/ms682429) function for a full discussion of the parameters required.  
+ `CreateProcessAsUser` uses the `CreateProcessAsUser` Win32 function to create a new process that runs in the security context of the user represented by the `CAccessToken` object. See the description of the [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) function for a full discussion of the parameters required.  
   
  For this method to succeed, the `CAccessToken` object must hold AssignPrimaryToken (unless it is a restricted token) and IncreaseQuota privileges.  
   
@@ -273,7 +273,7 @@ bool CreateRestrictedToken(
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- `CreateRestrictedToken` uses the [CreateRestrictedToken](http://msdn.microsoft.com/library/windows/desktop/aa446583) Win32 function to create a new `CAccessToken` object, with restrictions.  
+ `CreateRestrictedToken` uses the [CreateRestrictedToken](https://msdn.microsoft.com/library/windows/desktop/aa446583) Win32 function to create a new `CAccessToken` object, with restrictions.  
   
 > [!IMPORTANT]
 >  When using `CreateRestrictedToken`, ensure the following: the existing token is valid (and not entered by the user) and *SidsToDisable* and *PrivilegesToDelete* are both valid (and not entered by the user). If the method returns FALSE, deny functionality.  
@@ -429,7 +429,7 @@ bool GetImpersonationLevel(
   
 ### Parameters  
  *pImpersonationLevel*  
- Pointer to a [SECURITY_IMPERSONATION_LEVEL](http://msdn.microsoft.com/library/windows/desktop/aa379572) enumeration type which will receive the impersonation level information.  
+ Pointer to a [SECURITY_IMPERSONATION_LEVEL](https://msdn.microsoft.com/library/windows/desktop/aa379572) enumeration type which will receive the impersonation level information.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -443,7 +443,7 @@ bool GetLogonSessionId(LUID* pluid) const throw(...);
   
 ### Parameters  
  *pluid*  
- Pointer to a [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261) which will receive the Logon Session ID.  
+ Pointer to a [LUID](https://msdn.microsoft.com/library/windows/desktop/aa379261) which will receive the Logon Session ID.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -534,7 +534,7 @@ bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- Calls the [OpenProcessToken](http://msdn.microsoft.com/library/aa379295\(vs.85\).aspx) Win32 function.  
+ Calls the [OpenProcessToken](https://msdn.microsoft.com/library/aa379295\(vs.85\).aspx) Win32 function.  
   
 ##  <a name="getprofile"></a>  CAccessToken::GetProfile  
  Call this method to get the handle pointing to the user profile associated with the `CAccessToken` object.  
@@ -555,7 +555,7 @@ bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
   
 ### Parameters  
  *pSource*  
- Pointer to a [TOKEN_SOURCE](http://msdn.microsoft.com/library/windows/desktop/aa379631) structure.  
+ Pointer to a [TOKEN_SOURCE](https://msdn.microsoft.com/library/windows/desktop/aa379631) structure.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -569,7 +569,7 @@ bool GetStatistics(TOKEN_STATISTICS* pStatistics) const throw(...);
   
 ### Parameters  
  *pStatistics*  
- Pointer to a [TOKEN_STATISTICS](http://msdn.microsoft.com/library/windows/desktop/aa379632) structure.  
+ Pointer to a [TOKEN_STATISTICS](https://msdn.microsoft.com/library/windows/desktop/aa379632) structure.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -622,7 +622,7 @@ bool GetTokenId(LUID* pluid) const throw(...);
   
 ### Parameters  
  *pluid*  
- Pointer to a [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261) which will receive the Token ID.  
+ Pointer to a [LUID](https://msdn.microsoft.com/library/windows/desktop/aa379261) which will receive the Token ID.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -636,7 +636,7 @@ bool GetType(TOKEN_TYPE* pType) const throw(...);
   
 ### Parameters  
  *pType*  
- Address of the [TOKEN_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379633) variable that, on success, receives the type of the token.  
+ Address of the [TOKEN_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379633) variable that, on success, receives the type of the token.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -748,16 +748,16 @@ bool LogonUser(
  Pointer to a null-terminated string that specifies the clear-text password for the user account specified by *pszUserName*.  
   
  *dwLogonType*  
- Specifies the type of logon operation to perform. See [LogonUser](http://msdn.microsoft.com/library/windows/desktop/aa378184) for more details.  
+ Specifies the type of logon operation to perform. See [LogonUser](https://msdn.microsoft.com/library/windows/desktop/aa378184) for more details.  
   
  *dwLogonProvider*  
- Specifies the logon provider. See [LogonUser](http://msdn.microsoft.com/library/windows/desktop/aa378184) for more details.  
+ Specifies the logon provider. See [LogonUser](https://msdn.microsoft.com/library/windows/desktop/aa378184) for more details.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- The access token resulting from the logon will be associated with the `CAccessToken`. For this method to succeed, the `CAccessToken` object must hold SE_TCB_NAME privileges, identifying the holder as part of the trusted computer base. See [LogonUser](http://msdn.microsoft.com/library/windows/desktop/aa378184) for more information regarding the privileges required.  
+ The access token resulting from the logon will be associated with the `CAccessToken`. For this method to succeed, the `CAccessToken` object must hold SE_TCB_NAME privileges, identifying the holder as part of the trusted computer base. See [LogonUser](https://msdn.microsoft.com/library/windows/desktop/aa378184) for more information regarding the privileges required.  
   
 ##  <a name="opencomclienttoken"></a>  CAccessToken::OpenCOMClientToken  
  Call this method from within a COM server handling a call from a client to initialize the `CAccessToken` with the access token from the COM client.  
@@ -777,7 +777,7 @@ bool OpenCOMClientToken(
  If TRUE, the current thread will impersonate the calling COM client if this call completes successfully. If FALSE, the access token will be opened, but the thread will not have an impersonation token when this call completes.  
   
  *bOpenAsSelf*  
- Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](http://msdn.microsoft.com/library/windows/desktop/ms683182) method or against the security context of the process for the calling thread.  
+ Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](https://msdn.microsoft.com/library/windows/desktop/ms683182) method or against the security context of the process for the calling thread.  
   
  If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.  
   
@@ -809,7 +809,7 @@ bool OpenNamedPipeClientToken(
  If TRUE, the current thread will impersonate the calling pipe client if this call completes successfully. If FALSE, the access token will be opened, but the thread will not have an impersonation token when this call completes.  
   
  *bOpenAsSelf*  
- Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](http://msdn.microsoft.com/library/windows/desktop/ms683182) method or against the security context of the process for the calling thread.  
+ Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](https://msdn.microsoft.com/library/windows/desktop/ms683182) method or against the security context of the process for the calling thread.  
   
  If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.  
   
@@ -841,7 +841,7 @@ bool OpenRPCClientToken(
  If TRUE, the current thread will impersonate the calling RPC client if this call completes successfully. If FALSE, the access token will be opened, but the thread will not have an impersonation token when this call completes.  
   
  *bOpenAsSelf*  
- Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](http://msdn.microsoft.com/library/windows/desktop/ms683182) method or against the security context of the process for the calling thread.  
+ Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](https://msdn.microsoft.com/library/windows/desktop/ms683182) method or against the security context of the process for the calling thread.  
   
  If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.  
   
@@ -870,12 +870,12 @@ bool OpenThreadToken(
  If TRUE, the thread will be left at the requested impersonation level after this method completes. If FALSE, the thread will revert to its original impersonation level.  
   
  *bOpenAsSelf*  
- Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](http://msdn.microsoft.com/library/windows/desktop/ms683182) method or against the security context of the process for the calling thread.  
+ Indicates whether the access check is to be made against the security context of the thread calling the [GetThreadToken](https://msdn.microsoft.com/library/windows/desktop/ms683182) method or against the security context of the process for the calling thread.  
   
  If this parameter is FALSE, the access check is performed using the security context for the calling thread. If the thread is impersonating a client, this security context can be that of a client process. If this parameter is TRUE, the access check is made using the security context of the process for the calling thread.  
   
  *sil*  
- Specifies a [SECURITY_IMPERSONATION_LEVEL](http://msdn.microsoft.com/library/windows/desktop/aa379572) enumerated type that supplies the impersonation level of the token.  
+ Specifies a [SECURITY_IMPERSONATION_LEVEL](https://msdn.microsoft.com/library/windows/desktop/aa379572) enumerated type that supplies the impersonation level of the token.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
@@ -896,7 +896,7 @@ bool PrivilegeCheck(
   
 ### Parameters  
  *RequiredPrivileges*  
- Pointer to a [PRIVILEGE_SET](http://msdn.microsoft.com/library/windows/desktop/aa379307) structure.  
+ Pointer to a [PRIVILEGE_SET](https://msdn.microsoft.com/library/windows/desktop/aa379307) structure.  
   
  *pbResult*  
  Pointer to a value the method sets to indicate whether any or all of the specified privilege are enabled in the `CAccessToken` object.  
@@ -905,7 +905,7 @@ bool PrivilegeCheck(
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379263) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](http://msdn.microsoft.com/library/windows/desktop/aa379304) Win32 function.  
+ When `PrivilegeCheck` returns, the `Attributes` member of each [LUID_AND_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379263) structure is set to SE_PRIVILEGE_USED_FOR_ACCESS if the corresponding privilege is enabled. This method calls the [PrivilegeCheck](https://msdn.microsoft.com/library/windows/desktop/aa379304) Win32 function.  
   
 ##  <a name="revert"></a>  CAccessToken::Revert  
  Call this method to stop a thread from using an impersonation token.  
@@ -977,5 +977,5 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
   
 ## See Also  
  [ATLSecurity Sample](../../visual-cpp-samples.md)   
- [Access Tokens](http://msdn.microsoft.com/library/windows/desktop/aa374909)   
+ [Access Tokens](https://msdn.microsoft.com/library/windows/desktop/aa374909)   
  [Class Overview](../../atl/atl-class-overview.md)

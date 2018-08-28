@@ -33,7 +33,7 @@ The name of a file that you want included in the generated .idl file.
 
 The **include** C++ attribute causes an `#include` statement to be placed below the `import "docobj.idl"` statement in the generated .idl file.
 
-The **include** C++ attribute has the same functionality as the [include](http://msdn.microsoft.com/library/windows/desktop/aa367052) MIDL attribute.
+The **include** C++ attribute has the same functionality as the [include](https://msdn.microsoft.com/library/windows/desktop/aa367052) MIDL attribute.
 
 ## Example
 

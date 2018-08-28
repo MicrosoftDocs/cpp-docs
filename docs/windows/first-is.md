@@ -31,7 +31,7 @@ One or more C-language expressions. Empty argument slots are allowed.
 
 ## Remarks
 
-The **first_is** C++ attribute has the same functionality as the [first_is](http://msdn.microsoft.com/library/windows/desktop/aa366831) MIDL attribute.
+The **first_is** C++ attribute has the same functionality as the [first_is](https://msdn.microsoft.com/library/windows/desktop/aa366831) MIDL attribute.
 
 ## Example
 

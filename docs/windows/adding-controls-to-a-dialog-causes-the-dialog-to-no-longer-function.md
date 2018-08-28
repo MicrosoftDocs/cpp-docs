@@ -45,11 +45,11 @@ Currently, the Dialog editor does not automatically add code to your project whe
 
 ## The fix for common controls
 
-In order to use common controls on a dialog box, you need to call [InitCommonControlsEx](http://msdn.microsoft.com/library/windows/desktop/bb775697) or `AFXInitCommonControls` before you create the dialog box.
+In order to use common controls on a dialog box, you need to call [InitCommonControlsEx](https://msdn.microsoft.com/library/windows/desktop/bb775697) or `AFXInitCommonControls` before you create the dialog box.
 
 ## The fix for RichEdit controls
 
-You must call `LoadLibrary` for rich edit controls. For more information, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md), [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the Windows SDK, and [Overview of the Rich Edit Control](../mfc/overview-of-the-rich-edit-control.md).
+You must call `LoadLibrary` for rich edit controls. For more information, see [Using the RichEdit 1.0 Control with MFC](../windows/using-the-richedit-1-0-control-with-mfc.md), [About Rich Edit Controls](https://msdn.microsoft.com/library/windows/desktop/bb787873) in the Windows SDK, and [Overview of the Rich Edit Control](../mfc/overview-of-the-rich-edit-control.md).
 
 ## Requirements
 

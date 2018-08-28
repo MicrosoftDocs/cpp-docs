@@ -39,7 +39,7 @@ class _U_STRINGorID
 |[_U_STRINGorID::m_lpstr](#_u_stringorid__m_lpstr)|The resource identifier.|  
   
 ## Remarks  
- This class is designed for implementing wrappers to the Windows resource management API such as the [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042), [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072), and [LoadMenu](http://msdn.microsoft.com/library/windows/desktop/ms647990) functions, which accept an LPCTSTR argument that may be either the name of a resource or its ID.  
+ This class is designed for implementing wrappers to the Windows resource management API such as the [FindResource](https://msdn.microsoft.com/library/windows/desktop/ms648042), [LoadIcon](https://msdn.microsoft.com/library/windows/desktop/ms648072), and [LoadMenu](https://msdn.microsoft.com/library/windows/desktop/ms647990) functions, which accept an LPCTSTR argument that may be either the name of a resource or its ID.  
   
  The class defines two constructor overloads: one accepts a LPCTSTR argument and the other accepts a UINT argument. The UINT argument is converted to a resource type compatible with Windows resource-management functions using the MAKEINTRESOURCE macro and the result stored in the class's single data member, [m_lpstr](#_u_stringorid__m_lpstr). The argument to the LPCTSTR constructor is stored directly without conversion.  
   

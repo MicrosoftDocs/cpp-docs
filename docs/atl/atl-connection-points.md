@@ -16,7 +16,7 @@ A connectable object is one that supports outgoing interfaces. An outgoing inter
   
  ![Connection points](../atl/media/vc2zw31.gif "vc2zw31")  
   
- Each connection point supports the [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318) interface. The connectable object exposes its connection points to the client through the [IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857) interface.  
+ Each connection point supports the [IConnectionPoint](https://msdn.microsoft.com/library/windows/desktop/ms694318) interface. The connectable object exposes its connection points to the client through the [IConnectionPointContainer](https://msdn.microsoft.com/library/windows/desktop/ms683857) interface.  
   
 ## In This Section  
  [ATL Connection Point Classes](../atl/atl-connection-point-classes.md)  

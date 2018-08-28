@@ -193,7 +193,7 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
  Optional extra strings to be written to the event log.  
   
 ### Remarks  
- This method writes details out to an event log, using the function [ReportEvent](http://msdn.microsoft.com/library/windows/desktop/aa363679). If no service is running, the string is sent to the console.  
+ This method writes details out to an event log, using the function [ReportEvent](https://msdn.microsoft.com/library/windows/desktop/aa363679). If no service is running, the string is sent to the console.  
   
 ##  <a name="m_bservice"></a>  CAtlServiceModuleT::m_bService  
  Flag indicating the program is running as a service.  
@@ -223,7 +223,7 @@ SERVICE_STATUS_HANDLE m_hServiceStatus;
 ```  
   
 ### Remarks  
- The [SERVICE_STATUS](http://msdn.microsoft.com/library/windows/desktop/ms685996) structure contains information about a service.  
+ The [SERVICE_STATUS](https://msdn.microsoft.com/library/windows/desktop/ms685996) structure contains information about a service.  
   
 ##  <a name="m_status"></a>  CAtlServiceModuleT::m_status  
  Member variable storing the status information structure for the current service.  
@@ -233,7 +233,7 @@ SERVICE_STATUS m_status;
 ```  
   
 ### Remarks  
- The [SERVICE_STATUS](http://msdn.microsoft.com/library/windows/desktop/ms685996) structure contains information about a service.  
+ The [SERVICE_STATUS](https://msdn.microsoft.com/library/windows/desktop/ms685996) structure contains information about a service.  
   
 ##  <a name="m_szservicename"></a>  CAtlServiceModuleT::m_szServiceName  
  The name of the service being registered.  
@@ -351,7 +351,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
   
 ### Parameters  
  *nShowCmd*  
- Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section. The default value is SW_HIDE.  
+ Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section. The default value is SW_HIDE.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -387,7 +387,7 @@ void SetServiceStatus(DWORD dwState) throw();
   
 ### Parameters  
  *dwState*  
- The new status. See [SetServiceStatus](http://msdn.microsoft.com/library/windows/desktop/ms686241) for possible values.  
+ The new status. See [SetServiceStatus](https://msdn.microsoft.com/library/windows/desktop/ms686241) for possible values.  
   
 ### Remarks  
  Updates the Service Control Manager's status information for the service. It is called by [CAtlServiceModuleT::Run](#run), [CAtlServiceModuleT::ServiceMain](#servicemain) and other handler methods. The status is also stored in the member variable [CAtlServiceModuleT::m_status](#m_status).  
@@ -401,7 +401,7 @@ HRESULT Start(int nShowCmd) throw();
   
 ### Parameters  
  *nShowCmd*  
- Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section.  
+ Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -451,7 +451,7 @@ int WinMain(int nShowCmd) throw();
   
 ### Parameters  
  *nShowCmd*  
- Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) section.  
+ Specifies how the window is to be shown. This parameter can be one of the values discussed in the [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) section.  
   
 ### Return Value  
  Returns the service's return value.  

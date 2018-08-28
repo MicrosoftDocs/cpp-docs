@@ -77,7 +77,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::OnDragEnter](#ondragenter)|Called by the framework when the cursor is first dragged into the tab control window.|  
 |[CMFCTabCtrl::OnDragOver](#ondragover)|Called by the framework during a drag operation when the mouse is moved over the drop target window. (Overrides [CMFCBaseTabCtrl::OnDragOver](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover).)|  
 |[CMFCTabCtrl::OnShowTabDocumentsMenu](#onshowtabdocumentsmenu)|Displays a popup menu of tabbed windows, waits until the user selects a tab, and makes the selected tab the active tab.|  
-|`CMFCTabCtrl::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. (Overrides [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|  
+|`CMFCTabCtrl::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. (Overrides [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|  
 |`CMFCTabCtrl::RecalcLayout`|Recalculates the internal layout of the tab control. (Overrides [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|  
 |[CMFCTabCtrl::SetActiveInMDITabGroup](#setactiveinmditabgroup)|Sets the current tab of a tab control as the active tab in an multiple document interface tab group.|  
 |[CMFCTabCtrl::SetActiveTab](#setactivetab)|Activates a tab. (Overrides [CMFCBaseTabCtrl::SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|  
@@ -675,7 +675,7 @@ virtual DROPEFFECT OnDragEnter(
  Points to a data object that contains data that the user drags.  
   
  [in] *dwKeyState*  
- Contains the state of the modifier keys. This parameter is a bitwise combination (OR) of the following values: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see the **Message Parameters** section of [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
+ Contains the state of the modifier keys. This parameter is a bitwise combination (OR) of the following values: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see the **Message Parameters** section of [About Mouse Input](https://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
  [in] *point*  
  Contains the current location of the cursor in client coordinates.  
@@ -703,7 +703,7 @@ virtual DROPEFFECT OnDragOver(
  Pointer to a [COleDataObject](../../mfc/reference/coledataobject-class.md) object that is being dragged over the drop target.  
   
  [in] *dwKeyState*  
- The state of the modifier keys, which is a bitwise combination (OR) of MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see "Message Parameters" in [About Mouse Input](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
+ The state of the modifier keys, which is a bitwise combination (OR) of MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON. For more information, see "Message Parameters" in [About Mouse Input](https://msdn.microsoft.com/library/windows/desktop/ms645601).  
   
  [in] *point*  
  The current mouse position.  
@@ -891,7 +891,7 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
   
 ### Parameters  
  [out] *pScrollInfo*  
- Pointer to a [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) structure or NULL. When this method returns, and if this parameter is not NULL, the structure contains all the parameters of the scroll bar. The default value is NULL.  
+ Pointer to a [SCROLLINFO](https://msdn.microsoft.com/library/windows/desktop/bb787537) structure or NULL. When this method returns, and if this parameter is not NULL, the structure contains all the parameters of the scroll bar. The default value is NULL.  
   
 ### Return Value  
  TRUE if this method succeeds; otherwise, FALSE.  

@@ -104,12 +104,12 @@ Use these member functions to test for errors while writing to a stream:
 
 |Function|Return value|
 |--------------|------------------|
-|[bad](http://msdn.microsoft.com/Library/4038d331-e9c9-48b0-bf49-c6505744469c)|Returns **true** if there is an unrecoverable error.|
-|[fail](http://msdn.microsoft.com/Library/619f1b36-1e72-4551-8b48-888ae4e370d2)|Returns **true** if there is an unrecoverable error or an "expected" condition, such as a conversion error, or if the file is not found. Processing can often resume after a call to `clear` with a zero argument.|
-|[good](http://msdn.microsoft.com/Library/77f0aa17-2ae1-48ae-8040-592d301e3972)|Returns **true** if there is no error condition (unrecoverable or otherwise) and the end-of-file flag is not set.|
-|[eof](http://msdn.microsoft.com/Library/3087f631-1268-49cd-86cf-ff4108862329)|Returns **true** on the end-of-file condition.|
-|[clear](http://msdn.microsoft.com/Library/dc172694-1267-45f8-8f5c-e822e16fc271)|Sets the internal error state. If called with the default arguments, it clears all error bits.|
-|[rdstate](http://msdn.microsoft.com/Library/e235e4e2-7e95-4777-a160-3938d263dd9c)|Returns the current error state.|
+|[bad](https://msdn.microsoft.com/Library/4038d331-e9c9-48b0-bf49-c6505744469c)|Returns **true** if there is an unrecoverable error.|
+|[fail](https://msdn.microsoft.com/Library/619f1b36-1e72-4551-8b48-888ae4e370d2)|Returns **true** if there is an unrecoverable error or an "expected" condition, such as a conversion error, or if the file is not found. Processing can often resume after a call to `clear` with a zero argument.|
+|[good](https://msdn.microsoft.com/Library/77f0aa17-2ae1-48ae-8040-592d301e3972)|Returns **true** if there is no error condition (unrecoverable or otherwise) and the end-of-file flag is not set.|
+|[eof](https://msdn.microsoft.com/Library/3087f631-1268-49cd-86cf-ff4108862329)|Returns **true** on the end-of-file condition.|
+|[clear](https://msdn.microsoft.com/Library/dc172694-1267-45f8-8f5c-e822e16fc271)|Sets the internal error state. If called with the default arguments, it clears all error bits.|
+|[rdstate](https://msdn.microsoft.com/Library/e235e4e2-7e95-4777-a160-3938d263dd9c)|Returns the current error state.|
 
 The **!** operator is overloaded to perform the same function as the `fail` function. Thus the expression:
 

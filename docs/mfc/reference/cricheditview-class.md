@@ -239,16 +239,16 @@ CHARFORMAT2& GetCharFormatSelection();
 ```  
   
 ### Return Value  
- A [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure which contains the character formatting attributes of the current selection.  
+ A [CHARFORMAT2](https://msdn.microsoft.com/library/windows/desktop/bb787883) structure which contains the character formatting attributes of the current selection.  
   
 ### Remarks  
- For more information, see the [EM_GETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb788026) message and the [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the Windows SDK.  
+ For more information, see the [EM_GETCHARFORMAT](https://msdn.microsoft.com/library/windows/desktop/bb788026) message and the [CHARFORMAT2](https://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
   
 ##  <a name="getclipboarddata"></a>  CRichEditView::GetClipboardData  
- The framework calls this function as part of the processing of [IRichEditOleCallback::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774315).  
+ The framework calls this function as part of the processing of [IRichEditOleCallback::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774315).  
   
 ```  
 virtual HRESULT GetClipboardData(
@@ -260,7 +260,7 @@ virtual HRESULT GetClipboardData(
   
 ### Parameters  
  *lpchrg*  
- Pointer to the [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure specifying the range of characters (and OLE items) to copy to the data object specified by *lplpdataobj*.  
+ Pointer to the [CHARRANGE](https://msdn.microsoft.com/library/windows/desktop/bb787885) structure specifying the range of characters (and OLE items) to copy to the data object specified by *lplpdataobj*.  
   
  *dwReco*  
  Clipboard operation flag. Can be one of these values.  
@@ -276,23 +276,23 @@ virtual HRESULT GetClipboardData(
 - RECO_PASTE Paste from the Clipboard.  
   
  *lpRichDataObj*  
- Pointer to an [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) object containing the Clipboard data from the rich edit control ( [IRichEditOle::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774341)).  
+ Pointer to an [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421) object containing the Clipboard data from the rich edit control ( [IRichEditOle::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774341)).  
   
  *lplpdataobj*  
  Pointer to the pointer variable that receives the address of the `IDataObject` object representing the range specified in the *lpchrg* parameter. The value of *lplpdataobj* is ignored if an error is returned.  
   
 ### Return Value  
- An HRESULT value reporting the success of the operation. For more information on HRESULT, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
+ An HRESULT value reporting the success of the operation. For more information on HRESULT, see [Structure of COM Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ### Remarks  
  If the return value indicates success, `IRichEditOleCallback::GetClipboardData` returns the `IDataObject` accessed by *lplpdataobj*; otherwise, it returns the one accessed by *lpRichDataObj*. Override this function to supply your own Clipboard data. The default implementation of this function returns E_NOTIMPL.  
   
  This is an advanced overridable.  
   
- For more information, see [IRichEditOle::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774341), [IRichEditOleCallback::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774315), and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) in the Windows SDK and see [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) in the Windows SDK.  
+ For more information, see [IRichEditOle::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774341), [IRichEditOleCallback::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774315), and [CHARRANGE](https://msdn.microsoft.com/library/windows/desktop/bb787885) in the Windows SDK and see [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421) in the Windows SDK.  
   
 ##  <a name="getcontextmenu"></a>  CRichEditView::GetContextMenu  
- The framework calls this function as part of the processing of [IRichEditOleCallback::GetContextMenu](http://msdn.microsoft.com/library/windows/desktop/bb774317).  
+ The framework calls this function as part of the processing of [IRichEditOleCallback::GetContextMenu](https://msdn.microsoft.com/library/windows/desktop/bb774317).  
   
 ```  
 virtual HMENU GetContextMenu(
@@ -309,7 +309,7 @@ virtual HMENU GetContextMenu(
  Pointer to a `OLEOBJECT` structure specifying the first selected OLE object if the selection contains one or more OLE items. If the selection contains no items, *lpoleobj* is NULL. The `OLEOBJECT` structure holds a pointer to an OLE object v-table.  
   
  *lpchrg*  
- Pointer to a [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) structure containing the current selection.  
+ Pointer to a [CHARRANGE](https://msdn.microsoft.com/library/windows/desktop/bb787885) structure containing the current selection.  
   
 ### Return Value  
  Handle to the context menu.  
@@ -331,7 +331,7 @@ virtual HMENU GetContextMenu(
   
  The default implementation returns NULL. This is an advanced overridable.  
   
- For more information, see [IRichEditOleCallback::GetContextMenu](http://msdn.microsoft.com/library/windows/desktop/bb774317) and [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) in the Windows SDK.  
+ For more information, see [IRichEditOleCallback::GetContextMenu](https://msdn.microsoft.com/library/windows/desktop/bb774317) and [CHARRANGE](https://msdn.microsoft.com/library/windows/desktop/bb787885) in the Windows SDK.  
   
  For more information on the `OLEOBJECT` type, see the OLE Data Structures and Structure Allocation article in the *OLE Knowledge Base*.  
   
@@ -399,10 +399,10 @@ PARAFORMAT2& GetParaFormatSelection();
 ```  
   
 ### Return Value  
- A [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure which contains the paragraph formatting attributes of the current selection.  
+ A [PARAFORMAT2](https://msdn.microsoft.com/library/windows/desktop/bb787942) structure which contains the paragraph formatting attributes of the current selection.  
   
 ### Remarks  
- For more information, see [EM_GETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774182) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the Windows SDK.  
+ For more information, see [EM_GETPARAFORMAT](https://msdn.microsoft.com/library/windows/desktop/bb774182) message and [PARAFORMAT2](https://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the Windows SDK.  
   
 ##  <a name="getprintrect"></a>  CRichEditView::GetPrintRect  
  Call this function to retrieve the bounds of the printing area within the page rectangle.  
@@ -471,7 +471,7 @@ long GetTextLengthEx(
   
 ### Parameters  
  *dwFlags*  
- Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](http://msdn.microsoft.com/library/windows/desktop/bb787915) described in the Windows SDK.  
+ Value specifying the method to be used in determining the text length. This member can be one or more of the values listed in the flags member of [GETTEXTLENGTHEX](https://msdn.microsoft.com/library/windows/desktop/bb787915) described in the Windows SDK.  
   
  *uCodePage*  
  Code page for translation (CP_ACP for ANSI Code Page, 1200 for Unicode).  
@@ -480,7 +480,7 @@ long GetTextLengthEx(
  The number of characters or bytes in the edit control. If incompatible flags were set in *dwFlags*, this member function returns E_INVALIDARG.  
   
 ### Remarks  
- `GetTextLengthEx` provides additional ways of determining the length of the text. It supports the Rich Edit 2.0 functionality. For more information, see [About Rich Edit Controls](http://msdn.microsoft.com/library/windows/desktop/bb787873) in the Windows SDK.  
+ `GetTextLengthEx` provides additional ways of determining the length of the text. It supports the Rich Edit 2.0 functionality. For more information, see [About Rich Edit Controls](https://msdn.microsoft.com/library/windows/desktop/bb787873) in the Windows SDK.  
   
 ##  <a name="insertfileasobject"></a>  CRichEditView::InsertFileAsObject  
  Call this function to insert the specified file (as a [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object) into a rich edit view.  
@@ -508,7 +508,7 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
  An HRESULT value indicating the success of the insertion.  
   
 ### Remarks  
- For more information on HRESULT, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
+ For more information on HRESULT, see [Structure of COM Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
   
 ##  <a name="isricheditformat"></a>  CRichEditView::IsRichEditFormat  
  Call this function to determine if *cf* is a Clipboard format which is text, rich text, or rich text with OLE items.  
@@ -586,7 +586,7 @@ void OnCharEffect(
 ### Remarks  
  Each call to this function toggles the specified formatting effects for the current selection.  
   
- For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
+ For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](https://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#155](../../mfc/codesnippet/cpp/cricheditview-class_5.cpp)]  
@@ -640,7 +640,7 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
   
 ### Parameters  
  *lpStg*  
- Pointer to an [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) object.  
+ Pointer to an [IStorage](https://msdn.microsoft.com/library/windows/desktop/aa380015) object.  
   
 ### Return Value  
  Nonzero if successful; otherwise, 0;  
@@ -650,7 +650,7 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
   
  This is an advanced overridable.  
   
- For more information, see [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) in the Windows SDK.  
+ For more information, see [IStorage](https://msdn.microsoft.com/library/windows/desktop/aa380015) in the Windows SDK.  
   
 ##  <a name="onparaalign"></a>  CRichEditView::OnParaAlign  
  Call this function to change the paragraph alignment for the selected paragraphs.  
@@ -759,9 +759,9 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
  The text which was not found.  
   
 ### Remarks  
- Override this function to change the output notification from a [MessageBeep](http://msdn.microsoft.com/library/windows/desktop/ms680356).  
+ Override this function to change the output notification from a [MessageBeep](https://msdn.microsoft.com/library/windows/desktop/ms680356).  
   
- For more information, see [MessageBeep](http://msdn.microsoft.com/library/windows/desktop/ms680356) in the Windows SDK.  
+ For more information, see [MessageBeep](https://msdn.microsoft.com/library/windows/desktop/ms680356) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#157](../../mfc/codesnippet/cpp/cricheditview-class_7.cpp)]  
@@ -789,7 +789,7 @@ void OnUpdateCharEffect(
 ### Remarks  
  The mask *dwMask* specifies which character formatting attributes to check. The flags *dwEffect* list the character formatting attributes to set/clear.  
   
- For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
+ For more information on the *dwMask* and *dwEffect* parameters and their potential values, see the corresponding data members of [CHARFORMAT](https://msdn.microsoft.com/library/windows/desktop/bb787881) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#158](../../mfc/codesnippet/cpp/cricheditview-class_8.cpp)]  
@@ -898,7 +898,7 @@ virtual HRESULT QueryAcceptData(
   
 ### Parameters  
  *lpdataobj*  
- Pointer to the [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) to query.  
+ Pointer to the [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421) to query.  
   
  *lpcfFormat*  
  Pointer to the acceptable data format.  
@@ -918,7 +918,7 @@ virtual HRESULT QueryAcceptData(
 ### Remarks  
  Override this function to handle different organization of COM items in your derived document class. This is an advanced overridable.  
   
- For more information on HRESULT and `IDataObject`, see [Structure of COM Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), respectively, in the Windows SDK.  
+ For more information on HRESULT and `IDataObject`, see [Structure of COM Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421), respectively, in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/cpp/cricheditview-class_10.cpp)]  
@@ -932,12 +932,12 @@ void SetCharFormat(CHARFORMAT2 cf);
   
 ### Parameters  
  *cf*  
- [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure containing the new default character formatting attributes.  
+ [CHARFORMAT2](https://msdn.microsoft.com/library/windows/desktop/bb787883) structure containing the new default character formatting attributes.  
   
 ### Remarks  
  Only the attributes specified by the `dwMask` member of *cf* are changed by this function.  
   
- For more information, see [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) message and [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the Windows SDK.  
+ For more information, see [EM_SETCHARFORMAT](https://msdn.microsoft.com/library/windows/desktop/bb774230) message and [CHARFORMAT2](https://msdn.microsoft.com/library/windows/desktop/bb787883) structure in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
@@ -987,7 +987,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
   
 ### Parameters  
  *pf*  
- [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure containing the new default paragraph formatting attributes.  
+ [PARAFORMAT2](https://msdn.microsoft.com/library/windows/desktop/bb787942) structure containing the new default paragraph formatting attributes.  
   
 ### Return Value  
  Nonzero if successful; otherwise, 0.  
@@ -995,7 +995,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ### Remarks  
  Only the attributes specified by the `dwMask` member of *pf* are changed by this function.  
   
- For more information, see [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) message and [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the Windows SDK.  
+ For more information, see [EM_SETPARAFORMAT](https://msdn.microsoft.com/library/windows/desktop/bb774276) message and [PARAFORMAT2](https://msdn.microsoft.com/library/windows/desktop/bb787942) structure in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#162](../../mfc/codesnippet/cpp/cricheditview-class_12.cpp)]  

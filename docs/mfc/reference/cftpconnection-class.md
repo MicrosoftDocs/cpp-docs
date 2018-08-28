@@ -144,7 +144,7 @@ CInternetFile* Command(
 - `CmdRespRead` A response is expected.  
   
  *dwFlags*  
- A value containing the flags that control this function. For a complete list, see [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133).  
+ A value containing the flags that control this function. For a complete list, see [FTPCommand](https://msdn.microsoft.com/library/windows/desktop/aa384133).  
   
  *dwContext*  
  A pointer to a value containing an application-defined value used to identify the application context in callbacks.  
@@ -153,7 +153,7 @@ CInternetFile* Command(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133) function, as described in the Windows SDK.  
+ This member function emulates the functionality of the [FTPCommand](https://msdn.microsoft.com/library/windows/desktop/aa384133) function, as described in the Windows SDK.  
   
  If an error occurs, MFC throws an exception of type [CInternetException](../../mfc/reference/cinternetexception-class.md).  
   
@@ -169,7 +169,7 @@ BOOL CreateDirectory(LPCTSTR pstrDirName);
  A pointer to a string containing the name of the directory to create.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Windows function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Windows function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  Use `GetCurrentDirectory` to determine the current working directory for this connection to the server. Do not assume that the remote system has connected you to the root directory.  
@@ -203,7 +203,7 @@ BOOL GetCurrentDirectory(
 |On return|The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.|  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  To get the directory name as a URL instead, call [GetCurrentDirectoryAsURL](#getcurrentdirectoryasurl).  
@@ -237,7 +237,7 @@ BOOL GetCurrentDirectoryAsURL(
 |On return|The number of characters stored to *pstrDirName*. If the member function fails and ERROR_INSUFFICIENT_BUFFER is returned, then *lpdwLen* contains the number of bytes that the application must allocate in order to receive the string.|  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  `GetCurrentDirectoryAsURL` behaves the same as [GetCurrentDirectory](#getcurrentdirectory)  
@@ -287,13 +287,13 @@ BOOL GetFile(
 -   FILE_ATTRIBUTE_TEMPORARY   The file is being used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.  
   
  *dwFlags*  
- Specifies the conditions under which the transfer occurs. This parameter can be any of the *dwFlags* values described in [FtpGetFile](http://msdn.microsoft.com/library/windows/desktop/aa384157) in the Windows SDK.  
+ Specifies the conditions under which the transfer occurs. This parameter can be any of the *dwFlags* values described in [FtpGetFile](https://msdn.microsoft.com/library/windows/desktop/aa384157) in the Windows SDK.  
   
  *dwContext*  
  The context identifier for the file retrieval. See **Remarks** for more information about *dwContext*.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  `GetFile` is a high-level routine that handles all of the overhead associated with reading a file from an FTP server and storing it locally. Applications that only retrieve file data, or that require close control over the file transfer, should use `OpenFile` and [CInternetFile::Read](../../mfc/reference/cinternetfile-class.md#read) instead.  
@@ -375,7 +375,7 @@ BOOL PutFile(
  The context identifier for placing the file. See **Remarks** for more information about *dwContext*.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  `PutFile` is a high-level routine that handles all of the operations associated with storing a file on an FTP server. Applications that only send data, or that require closer control over the file transfer, should use [OpenFile](#openfile) and [CInternetFile::Write](../../mfc/reference/cinternetfile-class.md#write).  
@@ -394,7 +394,7 @@ BOOL Remove(LPCTSTR pstrFileName);
  A pointer to a string containing the file name to remove.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  The *pstrFileName* parameter can be either a partially qualified filename relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. The `Remove` function translates the directory name separators to the appropriate characters before they are used.  
@@ -411,7 +411,7 @@ BOOL RemoveDirectory(LPCTSTR pstrDirName);
  A pointer to a string containing the directory to be removed.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  Use [GetCurrentDirectory](#getcurrentdirectory) to determine the server's current working directory. Do not assume that the remote system has connected you to the root directory.  
@@ -435,7 +435,7 @@ BOOL Rename(
  A pointer to a string containing the file's new name.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  The *pstrExisting* and *pstrNew* parameters can be either a partially qualified filename relative to the current directory or fully qualified. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. `Rename` translates the directory name separators to the appropriate characters before they are used.  
@@ -452,7 +452,7 @@ BOOL SetCurrentDirectory(LPCTSTR pstrDirName);
  A pointer to a string containing the name of the directory.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  The *pstrDirName* parameter can be either a partially or fully qualified filename relative to the current directory. A backslash (\\) or forward slash (/) can be used as the directory separator for either name. `SetCurrentDirectory` translates the directory name separators to the appropriate characters before they are used.  

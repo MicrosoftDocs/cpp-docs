@@ -103,7 +103,7 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
   
 #### Parameters  
  *pUnkOuter*  
- [in] An outer [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) when aggregating, otherwise NULL.  
+ [in] An outer [IUnknown](https://msdn.microsoft.com/library/windows/desktop/ms680509) when aggregating, otherwise NULL.  
   
  *cRestrictions*  
  [in] The count of restrictions applied to the schema rowset.  
@@ -237,7 +237,7 @@ STDMETHOD (GetSchema s )(ULONG * pcSchemas,
  The implementation of this function requires the user to have a schema map in the session class. Using the schema map information, it then responds with the array of GUIDs for the schemas in the map. This represents the schemas supported by the provider.  
 
 ## See Also  
- [IDBSchemaRowsetImpl Class Members](http://msdn.microsoft.com/e74f6f82-541c-42e7-b4c6-e2d4656a0649)   
+ [IDBSchemaRowsetImpl Class Members](https://msdn.microsoft.com/e74f6f82-541c-42e7-b4c6-e2d4656a0649)   
  [Schema Rowset Classes and Typedef Classes](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)   
  [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md)    
  [SCHEMA_ENTRY](../../data/oledb/schema-entry.md)    

@@ -519,7 +519,7 @@ UINT GetDefaultItem(
  If the function succeeds, the return value is the identifier or position of the menu item. If the function fails, the return value is - 1.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 function [GetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647976), as described in the Windows SDK.  
+ This member function implements the behavior of the Win32 function [GetMenuDefaultItem](https://msdn.microsoft.com/library/windows/desktop/ms647976), as described in the Windows SDK.  
   
 ### Example  
   See the example for [CMenu::InsertMenu](#insertmenu).  
@@ -546,7 +546,7 @@ BOOL GetMenuInfo(LPMENUINFO lpcmi) const;
   
 ### Parameters  
  *lpcmi*  
- A pointer to a [MENUINFO](http://msdn.microsoft.com/library/windows/desktop/ms647575) structure containing information for the menu.  
+ A pointer to a [MENUINFO](https://msdn.microsoft.com/library/windows/desktop/ms647575) structure containing information for the menu.  
   
 ### Return Value  
  If the function succeeds, the return value is nonzero; otherwise, the return value is zero.  
@@ -599,16 +599,16 @@ BOOL GetMenuItemInfo(
  Identifier or position of the menu item to get information about. The meaning of this parameter depends on the value of `ByPos`.  
   
  *lpMenuItemInfo*  
- A pointer to a [MENUITEMINFO](http://msdn.microsoft.com/library/windows/desktop/ms647578), as described in the Windows SDK, that contains information about the menu.  
+ A pointer to a [MENUITEMINFO](https://msdn.microsoft.com/library/windows/desktop/ms647578), as described in the Windows SDK, that contains information about the menu.  
   
  *fByPos*  
  Value specifying the meaning of `nIDItem`. By default, `ByPos` is FALSE, which indicates that uItem is a menu item identifier. If `ByPos` is not set to FALSE, it indicates a menu item position.  
   
 ### Return Value  
- If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.  
+ If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.  
   
 ### Remarks  
- This member function implements the behavior of the of the Win32 function [GetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms647980), as described in the Windows SDK. Note that in the MFC implementation of `GetMenuItemInfo`, you do not use a handle to a menu.  
+ This member function implements the behavior of the of the Win32 function [GetMenuItemInfo](https://msdn.microsoft.com/library/windows/desktop/ms647980), as described in the Windows SDK. Note that in the MFC implementation of `GetMenuItemInfo`, you do not use a handle to a menu.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#26](../../mfc/reference/codesnippet/cpp/cmenu-class_6.cpp)]  
@@ -766,7 +766,7 @@ BOOL InsertMenu(
   
 |nFlags|Interpretation of lpszNewItem|  
 |------------|-----------------------------------|  
-|MF_OWNERDRAW|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application in the `itemData` member of the structure supplied by the [WM_MEASUREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775925) and [WM_DRAWITEM](http://msdn.microsoft.com/library/windows/desktop/bb775923) messages. These messages are sent when the menu item is initially displayed or is changed.|  
+|MF_OWNERDRAW|Contains an application-supplied 32-bit value that the application can use to maintain additional data associated with the menu item. This 32-bit value is available to the application in the `itemData` member of the structure supplied by the [WM_MEASUREITEM](https://msdn.microsoft.com/library/windows/desktop/bb775925) and [WM_DRAWITEM](https://msdn.microsoft.com/library/windows/desktop/bb775923) messages. These messages are sent when the menu item is initially displayed or is changed.|  
 |MF_STRING|Contains a long pointer to a null-terminated string. This is the default interpretation.|  
 |MF_SEPARATOR|The *lpszNewItem* parameter is ignored (not needed).|  
   
@@ -800,7 +800,7 @@ BOOL InsertMenuItem(
   
 ### Parameters  
  *uItem*  
- See description of *uItem* in [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988) in the Windows SDK.  
+ See description of *uItem* in [InsertMenuItem](https://msdn.microsoft.com/library/windows/desktop/ms647988) in the Windows SDK.  
   
  *lpMenuItemInfo*  
  See description of *lpmii* in `InsertMenuItem` in the Windows SDK.  
@@ -809,7 +809,7 @@ BOOL InsertMenuItem(
  See description of *fByPosition* in `InsertMenuItem` in the Windows SDK.  
   
 ### Remarks  
- This function wraps [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988), described in the Windows SDK.  
+ This function wraps [InsertMenuItem](https://msdn.microsoft.com/library/windows/desktop/ms647988), described in the Windows SDK.  
   
 ##  <a name="loadmenu"></a>  CMenu::LoadMenu  
  Loads a menu resource from the application's executable file and attaches it to the `CMenu` object.  
@@ -844,13 +844,13 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
   
 ### Parameters  
  *lpMenuTemplate*  
- Points to a menu template (which is a single [MENUITEMTEMPLATEHEADER](http://msdn.microsoft.com/library/windows/desktop/ms647583) structure and a collection of one or more [MENUITEMTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms647581) structures). For more information on these two structures, see the Windows SDK.  
+ Points to a menu template (which is a single [MENUITEMTEMPLATEHEADER](https://msdn.microsoft.com/library/windows/desktop/ms647583) structure and a collection of one or more [MENUITEMTEMPLATE](https://msdn.microsoft.com/library/windows/desktop/ms647581) structures). For more information on these two structures, see the Windows SDK.  
   
 ### Return Value  
  Nonzero if the menu resource was loaded successfully; otherwise 0.  
   
 ### Remarks  
- A menu template is a header followed by a collection of one or more [MENUITEMTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms647581) structures, each of which may contain one or more menu items and pop-up menus.  
+ A menu template is a header followed by a collection of one or more [MENUITEMTEMPLATE](https://msdn.microsoft.com/library/windows/desktop/ms647581) structures, each of which may contain one or more menu items and pop-up menus.  
   
  The version number should be 0.  
   
@@ -1042,10 +1042,10 @@ BOOL SetDefaultItem(
  Value specifying the meaning of *uItem*. If this parameter is FALSE, *uItem* is a menu item identifier. Otherwise, it is a menu item position.  
   
 ### Return Value  
- If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.  
+ If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, use the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360), as described in the Windows SDK.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 function [SetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647996), as described in the Windows SDK.  
+ This member function implements the behavior of the Win32 function [SetMenuDefaultItem](https://msdn.microsoft.com/library/windows/desktop/ms647996), as described in the Windows SDK.  
   
 ### Example  
   See the example for [CMenu::InsertMenu](#insertmenu).  
@@ -1079,7 +1079,7 @@ BOOL SetMenuInfo(LPCMENUINFO lpcmi);
   
 ### Parameters  
  *lpcmi*  
- A pointer to a [MENUINFO](http://msdn.microsoft.com/library/windows/desktop/ms647575) structure containing information for the menu.  
+ A pointer to a [MENUINFO](https://msdn.microsoft.com/library/windows/desktop/ms647575) structure containing information for the menu.  
   
 ### Return Value  
  If the function succeeds, the return value is nonzero; otherwise, the return value is zero.  
@@ -1145,7 +1145,7 @@ BOOL SetMenuItemInfo(
   
 ### Parameters  
  *uItem*  
- See description of *uItem* in [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001) in the Windows SDK.  
+ See description of *uItem* in [SetMenuItemInfo](https://msdn.microsoft.com/library/windows/desktop/ms648001) in the Windows SDK.  
   
  *lpMenuItemInfo*  
  See description of *lpmii* in `SetMenuItemInfo` in the Windows SDK.  
@@ -1154,7 +1154,7 @@ BOOL SetMenuItemInfo(
  See description of *fByPosition* in `SetMenuItemInfo` in the Windows SDK.  
   
 ### Remarks  
- This function wraps [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001), described in the Windows SDK.  
+ This function wraps [SetMenuItemInfo](https://msdn.microsoft.com/library/windows/desktop/ms648001), described in the Windows SDK.  
   
 ##  <a name="trackpopupmenu"></a>  CMenu::TrackPopupMenu  
  Displays a floating pop-up menu at the specified location and tracks the selection of items on the pop-up menu.  
@@ -1170,7 +1170,7 @@ BOOL TrackPopupMenu(
   
 ### Parameters  
  *nFlags*  
- Specifies screen-position and mouse-position flags. See [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) for a list of available flags.  
+ Specifies screen-position and mouse-position flags. See [TrackPopupMenu](https://msdn.microsoft.com/library/windows/desktop/ms648002) for a list of available flags.  
   
  *x*  
  Specifies the horizontal position in screen coordinates of the pop-up menu. Depending on the value of the *nFlags* parameter, the menu can be left-aligned, right-aligned, or centered relative to this position.  
@@ -1185,7 +1185,7 @@ BOOL TrackPopupMenu(
  Ignored.  
   
 ### Return Value  
- This method returns the result of calling [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) in the Windows SDK.  
+ This method returns the result of calling [TrackPopupMenu](https://msdn.microsoft.com/library/windows/desktop/ms648002) in the Windows SDK.  
   
 ### Remarks  
  A floating pop-up menu can appear anywhere on the screen.  
@@ -1207,7 +1207,7 @@ BOOL TrackPopupMenuEx(
   
 ### Parameters  
  *fuFlags*  
- Specifies various functions for the extended menu. For a listing of all values and their meaning, see [TrackPopupMenuEx](http://msdn.microsoft.com/library/windows/desktop/ms648003).  
+ Specifies various functions for the extended menu. For a listing of all values and their meaning, see [TrackPopupMenuEx](https://msdn.microsoft.com/library/windows/desktop/ms648003).  
   
  *x*  
  Specifies the horizontal position in screen coordinates of the pop-up menu.  
@@ -1219,15 +1219,15 @@ BOOL TrackPopupMenuEx(
  A pointer to the window owning the pop-up menu and receiving the messages from the created menu. This window can be any window from the current application but cannot be NULL. If you specify TPM_NONOTIFY in the *fuFlags* parameter, the function does not send any messages to *pWnd*. The function must return for the window pointed to by *pWnd* to receive the WM_COMMAND message.  
   
  *lptpm*  
- Pointer to a [TPMPARAMS](http://msdn.microsoft.com/library/windows/desktop/ms647586) structure that specifies an area of the screen the menu should not overlap. This parameter can be NULL.  
+ Pointer to a [TPMPARAMS](https://msdn.microsoft.com/library/windows/desktop/ms647586) structure that specifies an area of the screen the menu should not overlap. This parameter can be NULL.  
   
 ### Return Value  
  If you specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is the menu-item identifier of the item that the user selected. If the user cancels the menu without making a selection, or if an error occurs, then the return value is 0.  
   
- If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is nonzero if the function succeeds and 0 if it fails. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ If you do not specify TPM_RETURNCMD in the *fuFlags* parameter, the return value is nonzero if the function succeeds and 0 if it fails. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- A floating pop-up menu can appear anywhere on the screen. For more information on handling errors when creating the pop-up menu, see [TrackPopupMenuEx](http://msdn.microsoft.com/library/windows/desktop/ms648003).  
+ A floating pop-up menu can appear anywhere on the screen. For more information on handling errors when creating the pop-up menu, see [TrackPopupMenuEx](https://msdn.microsoft.com/library/windows/desktop/ms648003).  
   
 ## See Also  
  [MFC Sample CTRLTEST](../../visual-cpp-samples.md)   

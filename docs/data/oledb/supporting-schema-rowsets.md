@@ -97,7 +97,7 @@ class CUpdateSessionTRSchemaRowset :
  By default, the implementation returns 0 (does not support any restrictions) for any request. UpdatePV is an example of a provider that does support restrictions.  
   
 ### Example  
- This code is taken from the [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) sample. UpdatePv supports the three required schema rowsets: `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, and `DBSCHEMA_PROVIDER_TYPES`. As an example of how to implement schema support in your provider, this topic takes you through implementing the `DBSCHEMA_TABLE` rowset.  
+ This code is taken from the [UpdatePV](https://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) sample. UpdatePv supports the three required schema rowsets: `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, and `DBSCHEMA_PROVIDER_TYPES`. As an example of how to implement schema support in your provider, this topic takes you through implementing the `DBSCHEMA_TABLE` rowset.  
   
 > [!NOTE]
 >  The sample code might differ from what is listed here; you should regard the sample code as the more up-to-date version.  
@@ -251,7 +251,7 @@ virtual DBSTATUS GetDBStatus(CSimpleRow* , ATLCOLUMNINFO* pColInfo)
   
  For information about how consumers can use `IDBSchemaRowset` methods, see [Obtaining Metadata with Schema Rowsets](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).  
   
- For an example of an provider that supports schema rowsets, see the [UpdatePV](http://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) sample.  
+ For an example of an provider that supports schema rowsets, see the [UpdatePV](https://msdn.microsoft.com/c8bed873-223c-4a7d-af55-f90138c6f38f) sample.  
   
 ## See Also  
  [Advanced Provider Techniques](../../data/oledb/advanced-provider-techniques.md)

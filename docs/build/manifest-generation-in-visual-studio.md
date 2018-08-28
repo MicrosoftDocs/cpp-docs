@@ -30,6 +30,6 @@ Generation of a manifest file for a particular project can be controlled in the 
   
 ## See Also  
  [How to: Embed a Manifest Inside a C/C++ Application](../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md)   
- [About Private Assemblies](http://msdn.microsoft.com/library/ff951638)   
- [Manifest Tool](http://msdn.microsoft.com/library/aa375649)   
+ [About Private Assemblies](https://msdn.microsoft.com/library/ff951638)   
+ [Manifest Tool](https://msdn.microsoft.com/library/aa375649)   
  [Understanding Manifest Generation for C/C++ Programs](../build/understanding-manifest-generation-for-c-cpp-programs.md)

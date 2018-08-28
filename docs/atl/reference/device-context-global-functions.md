@@ -19,7 +19,7 @@ This function creates a device context for a given device.
 |[AtlCreateTargetDC](#atlcreatetargetdc)|Creates a device context.|  
   
 ##  <a name="atlcreatetargetdc"></a>  AtlCreateTargetDC  
- Creates a device context for the device specified in the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure.  
+ Creates a device context for the device specified in the [DVTARGETDEVICE](https://msdn.microsoft.com/library/windows/desktop/ms686613) structure.  
   
 ```
 HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);

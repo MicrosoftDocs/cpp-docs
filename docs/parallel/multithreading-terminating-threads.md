@@ -25,7 +25,7 @@ Two normal situations cause a thread to terminate: the controlling function exit
  
 For a worker thread, normal thread termination is simple: Exit the controlling function and return a value that signifies the reason for termination. You can use either the [AfxEndThread](../mfc/reference/application-information-and-management.md#afxendthread) function or a **return** statement. Typically, 0 signifies successful completion, but that is up to you.  
   
-For a user-interface thread, the process is just as simple: from within the user-interface thread, call [PostQuitMessage](http://msdn.microsoft.com/library/windows/desktop/ms644945) in the Windows SDK. The only parameter that `PostQuitMessage` takes is the exit code of the thread. As for worker threads, 0 typically signifies successful completion.  
+For a user-interface thread, the process is just as simple: from within the user-interface thread, call [PostQuitMessage](https://msdn.microsoft.com/library/windows/desktop/ms644945) in the Windows SDK. The only parameter that `PostQuitMessage` takes is the exit code of the thread. As for worker threads, 0 typically signifies successful completion.  
   
 ##  <a name="_core_premature_thread_termination"></a> Premature Thread Termination  
  
@@ -35,7 +35,7 @@ Terminating a thread prematurely is almost as simple: Call [AfxEndThread](../mfc
   
 ##  <a name="_core_retrieving_the_exit_code_of_a_thread"></a> Retrieving the Exit Code of a Thread  
  
-To get the exit code of either the worker or the user-interface thread, call the [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190) function. For information about this function, see the Windows SDK. This function takes the handle to the thread (stored in the `m_hThread` data member of `CWinThread` objects) and the address of a DWORD.  
+To get the exit code of either the worker or the user-interface thread, call the [GetExitCodeThread](https://msdn.microsoft.com/library/windows/desktop/ms683190) function. For information about this function, see the Windows SDK. This function takes the handle to the thread (stored in the `m_hThread` data member of `CWinThread` objects) and the address of a DWORD.  
   
 If the thread is still active, `GetExitCodeThread` places STILL_ACTIVE in the supplied DWORD address; otherwise, the exit code is placed in this address.  
   
@@ -52,4 +52,4 @@ Either method allows you to determine why a `CWinThread` object terminated.
 [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)   
 [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)   
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)   
-[ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659)
+[ExitThread](https://msdn.microsoft.com/library/windows/desktop/ms682659)

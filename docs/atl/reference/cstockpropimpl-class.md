@@ -433,7 +433,7 @@ HRESULT STDMETHODCALLTYPE get_Picture(IPictureDisp** ppPicture);
   
 ### Parameters  
  *ppPicture*  
- Variable that receives a pointer to the picture's properties. See [IPictureDisp](http://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.  
+ Variable that receives a pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -800,7 +800,7 @@ HRESULT STDMETHODCALLTYPE put_Picture(IPictureDisp* pPicture);
   
 ### Parameters  
  *pPicture*  
- A pointer to the picture's properties. See [IPictureDisp](http://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.  
+ A pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -921,7 +921,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
   
 ### Parameters  
  *pPicture*  
- A pointer to the picture's properties. See [IPictureDisp](http://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.  
+ A pointer to the picture's properties. See [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) for more details.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  

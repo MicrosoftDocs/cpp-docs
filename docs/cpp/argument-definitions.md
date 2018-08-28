@@ -30,7 +30,7 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
  The first command-line argument is always `argv`**[1]** and the last one is `argv`**[**`argc` - 1**]**.  
   
 > [!NOTE]
->  By convention, `argv`**[0]** is the command with which the program is invoked.  However, it is possible to spawn a process using [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms683197) and if you use both the first and second arguments (*lpApplicationName* and *lpCommandLine*), `argv`**[0]** may not be the executable name; use [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) to retrieve the executable name, and its fully-qualified path.  
+>  By convention, `argv`**[0]** is the command with which the program is invoked.  However, it is possible to spawn a process using [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms683197) and if you use both the first and second arguments (*lpApplicationName* and *lpCommandLine*), `argv`**[0]** may not be the executable name; use [GetModuleFileName](https://msdn.microsoft.com/library/windows/desktop/ms683197) to retrieve the executable name, and its fully-qualified path.  
   
 ## Microsoft Specific  
  *envp*  

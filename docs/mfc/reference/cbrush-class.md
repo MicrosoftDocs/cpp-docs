@@ -33,14 +33,14 @@ class CBrush : public CGdiObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CBrush::CreateBrushIndirect](#createbrushindirect)|Initializes a brush with the style, color, and pattern specified in a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure.|  
+|[CBrush::CreateBrushIndirect](#createbrushindirect)|Initializes a brush with the style, color, and pattern specified in a [LOGBRUSH](https://msdn.microsoft.com/library/windows/desktop/dd145035) structure.|  
 |[CBrush::CreateDIBPatternBrush](#createdibpatternbrush)|Initializes a brush with a pattern specified by a device-independent bitmap (DIB).|  
 |[CBrush::CreateHatchBrush](#createhatchbrush)|Initializes a brush with the specified hatched pattern and color.|  
 |[CBrush::CreatePatternBrush](#createpatternbrush)|Initializes a brush with a pattern specified by a bitmap.|  
 |[CBrush::CreateSolidBrush](#createsolidbrush)|Initializes a brush with the specified solid color.|  
 |[CBrush::CreateSysColorBrush](#createsyscolorbrush)|Creates a brush that is the default system color.|  
 |[CBrush::FromHandle](#fromhandle)|Returns a pointer to a `CBrush` object when given a handle to a Windows `HBRUSH` object.|  
-|[CBrush::GetLogBrush](#getlogbrush)|Gets a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure.|  
+|[CBrush::GetLogBrush](#getlogbrush)|Gets a [LOGBRUSH](https://msdn.microsoft.com/library/windows/desktop/dd145035) structure.|  
   
 ### Public Operators  
   
@@ -102,7 +102,7 @@ explicit CBrush(CBitmap* pBitmap);
   
  If you use the constructor with no arguments, you must initialize the resulting `CBrush` object with [CreateSolidBrush](#createsolidbrush), [CreateHatchBrush](#createhatchbrush), [CreateBrushIndirect](#createbrushindirect), [CreatePatternBrush](#createpatternbrush), or [CreateDIBPatternBrush](#createdibpatternbrush). If you use one of the constructors that takes arguments, then no further initialization is necessary. The constructors with arguments can throw an exception if errors are encountered, while the constructor with no arguments will always succeed.  
   
- The constructor with a single [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter constructs a solid brush with the specified color. The color specifies an RGB value and can be constructed with the RGB macro in WINDOWS.H.  
+ The constructor with a single [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) parameter constructs a solid brush with the specified color. The color specifies an RGB value and can be constructed with the RGB macro in WINDOWS.H.  
   
  The constructor with two parameters constructs a hatch brush. The *nIndex* parameter specifies the index of a hatched pattern. The *crColor* parameter specifies the color.  
   
@@ -112,7 +112,7 @@ explicit CBrush(CBitmap* pBitmap);
  [!code-cpp[NVC_MFCDocView#21](../../mfc/codesnippet/cpp/cbrush-class_1.cpp)]  
   
 ##  <a name="createbrushindirect"></a>  CBrush::CreateBrushIndirect  
- Initializes a brush with a style, color, and pattern specified in a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure.  
+ Initializes a brush with a style, color, and pattern specified in a [LOGBRUSH](https://msdn.microsoft.com/library/windows/desktop/dd145035) structure.  
   
 ```  
 BOOL CreateBrushIndirect(const LOGBRUSH* lpLogBrush);
@@ -120,7 +120,7 @@ BOOL CreateBrushIndirect(const LOGBRUSH* lpLogBrush);
   
 ### Parameters  
  *lpLogBrush*  
- Points to a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure that contains information about the brush.  
+ Points to a [LOGBRUSH](https://msdn.microsoft.com/library/windows/desktop/dd145035) structure that contains information about the brush.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
@@ -179,11 +179,11 @@ BOOL CreateDIBPatternBrush(
   
  For information about using the following Windows functions, see the Windows SDK:  
   
-- [CreateDIBPatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183492) (This function is provided only for compatibility with applications written for versions of Windows earlier than 3.0; use the `CreateDIBPatternBrushPt` function.)  
+- [CreateDIBPatternBrush](https://msdn.microsoft.com/library/windows/desktop/dd183492) (This function is provided only for compatibility with applications written for versions of Windows earlier than 3.0; use the `CreateDIBPatternBrushPt` function.)  
   
-- [CreateDIBPatternBrushPt](http://msdn.microsoft.com/library/windows/desktop/dd183493) (This function should be used for Win32-based applications.)  
+- [CreateDIBPatternBrushPt](https://msdn.microsoft.com/library/windows/desktop/dd183493) (This function should be used for Win32-based applications.)  
   
-- [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574)  
+- [GlobalAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366574)  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#23](../../mfc/codesnippet/cpp/cbrush-class_3.cpp)]  
@@ -214,7 +214,7 @@ BOOL CreateHatchBrush(
 - HS_VERTICAL Vertical hatch  
   
  *crColor*  
- Specifies the foreground color of the brush as an RGB color (the color of the hatches). See [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) in the Windows SDK for more information.  
+ Specifies the foreground color of the brush as an RGB color (the color of the hatches). See [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) in the Windows SDK for more information.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -248,7 +248,7 @@ BOOL CreatePatternBrush(CBitmap* pBitmap);
   
  A brush created using a monochrome bitmap (1 color plane, 1 bit per pixel) is drawn using the current text and background colors. Pixels represented by a bit set to 0 are drawn with the current text color. Pixels represented by a bit set to 1 are drawn with the current background color.  
   
- For information about using [CreatePatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183508), a Windows function, see the Windows SDK.  
+ For information about using [CreatePatternBrush](https://msdn.microsoft.com/library/windows/desktop/dd183508), a Windows function, see the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#25](../../mfc/codesnippet/cpp/cbrush-class_5.cpp)]  
@@ -262,7 +262,7 @@ BOOL CreateSolidBrush(COLORREF crColor);
   
 ### Parameters  
  *crColor*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) structure that specifies the color of the brush. The color specifies an RGB value and can be constructed with the RGB macro in WINDOWS.H.  
+ A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) structure that specifies the color of the brush. The color specifies an RGB value and can be constructed with the RGB macro in WINDOWS.H.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -284,7 +284,7 @@ BOOL CreateSysColorBrush(int nIndex);
   
 ### Parameters  
  *nIndex*  
- Specifies a color index. This value corresponds to the color used to paint one of the 21 window elements. See [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) in the Windows SDK for a list of values.  
+ Specifies a color index. This value corresponds to the color used to paint one of the 21 window elements. See [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) in the Windows SDK for a list of values.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -314,7 +314,7 @@ static CBrush* PASCAL FromHandle(HBRUSH hBrush);
 ### Remarks  
  If a `CBrush` object is not already attached to the handle, a temporary `CBrush` object is created and attached. This temporary `CBrush` object is valid only until the next time the application has idle time in its event loop. At this time, all temporary graphic objects are deleted. In other words, the temporary object is valid only during the processing of one window message.  
   
- For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
+ For more information about using graphic objects, see [Graphic Objects](https://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
 ### Example  
   See the example for [CBrush::CBrush](#cbrush).  
@@ -328,7 +328,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
   
 ### Parameters  
  *pLogBrush*  
- Points to a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure that contains information about the brush.  
+ Points to a [LOGBRUSH](https://msdn.microsoft.com/library/windows/desktop/dd145035) structure that contains information about the brush.  
   
 ### Return Value  
  If the function succeeds, and *pLogBrush* is a valid pointer, the return value is the number of bytes stored into the buffer.  
@@ -358,7 +358,7 @@ operator HBRUSH() const;
 ### Remarks  
  This operator is a casting operator, which supports direct use of an HBRUSH object.  
   
- For more information about using graphic objects, see [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
+ For more information about using graphic objects, see [Graphic Objects](https://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/cpp/cbrush-class_8.cpp)]  

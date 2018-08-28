@@ -99,7 +99,7 @@ virtual INT_PTR DoModal();
   
 - IDCANCEL if none of the linked or embedded items in the current document need updating.  
   
-- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) function in the Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](https://msdn.microsoft.com/library/windows/desktop/ms679703) function in the Windows SDK.  
   
 ### Remarks  
  All links and/or embeddings are updated unless the user selects the Cancel button.  

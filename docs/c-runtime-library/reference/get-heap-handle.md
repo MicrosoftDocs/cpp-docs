@@ -31,7 +31,7 @@ Returns the handle to the Win32 heap used by the C run-time system.
 
 ## Remarks
 
-Use this function if you want to call [HeapSetInformation](http://msdn.microsoft.com/library/windows/desktop/aa366705) and enable the Low Fragmentation Heap on the CRT heap.
+Use this function if you want to call [HeapSetInformation](https://msdn.microsoft.com/library/windows/desktop/aa366705) and enable the Low Fragmentation Heap on the CRT heap.
 
 ## Requirements
 

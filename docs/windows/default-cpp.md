@@ -39,7 +39,7 @@ If no default source interface is specified, the first source interface is used 
 
 ## Remarks
 
-The **default** C++ attribute has the same functionality as the [default](http://msdn.microsoft.com/library/windows/desktop/aa366787) MIDL attribute. The **default** attribute is also used with the [case](../windows/case-cpp.md) attribute.
+The **default** C++ attribute has the same functionality as the [default](https://msdn.microsoft.com/library/windows/desktop/aa366787) MIDL attribute. The **default** attribute is also used with the [case](../windows/case-cpp.md) attribute.
 
 ## Example
 

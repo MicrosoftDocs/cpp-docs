@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Making Owner-Drawn Header Controls
-You can define individual items of a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Header Controls](http://msdn.microsoft.com/library/windows/desktop/bb775238) in the Windows SDK.  
+You can define individual items of a header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) to be owner-drawn items. For more information, see [Owner-Drawn Header Controls](https://msdn.microsoft.com/library/windows/desktop/bb775238) in the Windows SDK.  
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)   

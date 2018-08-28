@@ -24,7 +24,7 @@ Specifies a unique pointer.
 
 ## Remarks
 
-The **unique** C++ attribute has the same functionality as the [unique](http://msdn.microsoft.com/library/windows/desktop/aa367294) MIDL attribute.
+The **unique** C++ attribute has the same functionality as the [unique](https://msdn.microsoft.com/library/windows/desktop/aa367294) MIDL attribute.
 
 ## Example
 

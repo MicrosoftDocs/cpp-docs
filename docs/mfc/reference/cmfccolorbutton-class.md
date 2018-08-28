@@ -63,10 +63,10 @@ class CMFCColorButton : public CMFCButton
 |`m_bAltColorDlg`|A Boolean. If TRUE, the framework displays the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) color dialog box when the *other* button is clicked, or if FALSE, the system color dialog box. The default value is TRUE. For more information, see [CMFCColorButton::EnableOtherButton](#enableotherbutton).|  
 |`m_bAutoSetFocus`|A Boolean. If TRUE, the framework sets the focus on the color menu when the menu is displayed, or if FALSE, does not change the focus. The default value is TRUE.|  
 |[CMFCColorButton::m_bEnabledInCustomizeMode](#m_benabledincustomizemode)|Indicates whether customization mode is enabled for the color button.|  
-|`m_Color`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value. Contains the currently selected color.|  
-|`m_ColorAutomatic`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value. Contains the currently selected default color.|  
-|`m_Colors`|A [CArray](../../mfc/reference/carray-class.md) of [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) values. Contains the currently available colors.|  
-|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) of [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) values. Contains the current document colors.|  
+|`m_Color`|A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value. Contains the currently selected color.|  
+|`m_ColorAutomatic`|A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value. Contains the currently selected default color.|  
+|`m_Colors`|A [CArray](../../mfc/reference/carray-class.md) of [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) values. Contains the currently available colors.|  
+|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) of [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) values. Contains the current document colors.|  
 |`m_nColumns`|An integer. Contains the number of columns to display in the grid of colors in a color selection menu.|  
 |`m_pPalette`|A pointer to a [CPalette](../../mfc/reference/cpalette-class.md). Contains the colors that are available in the current color selection menu.|  
 |`m_pPopup`|A pointer to a [CMFCColorPopupMenu Class](../../mfc/reference/cmfccolorpopupmenu-class.md) object. The color selection menu that is displayed when you click the color button.|  
@@ -390,7 +390,7 @@ virtual void UpdateColor(COLORREF color);
  [CMFCButton Class](../../mfc/reference/cmfcbutton-class.md)   
  [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md)   
  [CMFCColorButton::OnShowColorPopup](#onshowcolorpopup)   
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
+ [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449)   
  [CPalette Class](../../mfc/reference/cpalette-class.md)   
  [CArray Class](../../mfc/reference/carray-class.md)   
  [CList Class](../../mfc/reference/clist-class.md)   

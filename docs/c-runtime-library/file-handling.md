@@ -77,7 +77,7 @@ These routines provide a way to change the representation of the file between a 
 
 - [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 
-- [CreatePipe](http://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)
+- [CreatePipe](https://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)
 
 - [CreateNamedPipe](/windows/desktop/api/winbase/nf-winbase-createnamedpipea)
 

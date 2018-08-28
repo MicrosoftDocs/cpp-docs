@@ -99,10 +99,10 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
  Pointer to the COM module.  
   
  *dwClsContext*  
- Specifies the context in which the class object is to be run. Possible values are CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, or CLSCTX_LOCAL_SERVER. See [CLSCTX](http://msdn.microsoft.com/library/windows/desktop/ms693716) for more details.  
+ Specifies the context in which the class object is to be run. Possible values are CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER, or CLSCTX_LOCAL_SERVER. See [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) for more details.  
   
  *dwFlags*  
- Determines the connection types to the class object. Possible values are REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, or REGCLS_MULTI_SEPARATE. See [REGCLS](http://msdn.microsoft.com/library/windows/desktop/ms679697) for more details.  
+ Determines the connection types to the class object. Possible values are REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE, or REGCLS_MULTI_SEPARATE. See [REGCLS](https://msdn.microsoft.com/library/windows/desktop/ms679697) for more details.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  

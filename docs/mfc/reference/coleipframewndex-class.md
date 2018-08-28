@@ -831,7 +831,7 @@ virtual void WinHelp(
  Specifies data as required for the type of help specified by *nCmd*.  
   
  [in] *nCmd*  
- Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](http://msdn.microsoft.com/library/windows/desktop/bb762267) in the Windows SDK.  
+ Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](https://msdn.microsoft.com/library/windows/desktop/bb762267) in the Windows SDK.  
   
 ### Remarks  
   

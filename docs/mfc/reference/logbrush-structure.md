@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # LOGBRUSH Structure
-The `LOGBRUSH` structure defines the style, color, and pattern of a physical brush. It is used by the Windows [CreateBrushIndirect](http://msdn.microsoft.com/library/windows/desktop/dd183487) and [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705) functions.  
+The `LOGBRUSH` structure defines the style, color, and pattern of a physical brush. It is used by the Windows [CreateBrushIndirect](https://msdn.microsoft.com/library/windows/desktop/dd183487) and [ExtCreatePen](https://msdn.microsoft.com/library/windows/desktop/dd162705) functions.  
   
 ## Syntax  
   

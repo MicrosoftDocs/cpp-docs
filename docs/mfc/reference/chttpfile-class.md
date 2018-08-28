@@ -99,7 +99,7 @@ BOOL AddRequestHeaders(
  A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing the request header or headers to be added.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  `AddRequestHeaders` appends additional, free-format headers to the HTTP request handle. It is intended for use by sophisticated clients who need detailed control over the exact request sent to the HTTP server.  
@@ -166,10 +166,10 @@ BOOL EndRequest(
   
 ### Parameters  
  *dwFlags*  
- Flags describing the operation. For a list of the appropriate flags, see [HttpEndRequest](http://msdn.microsoft.com/library/windows/desktop/aa384230) in the Windows SDK.  
+ Flags describing the operation. For a list of the appropriate flags, see [HttpEndRequest](https://msdn.microsoft.com/library/windows/desktop/aa384230) in the Windows SDK.  
   
  *lpBuffIn*  
- Pointer to an initialized [INTERNET_BUFFERS](http://msdn.microsoft.com/library/windows/desktop/aa385132) that describes the input buffer used for the operation.  
+ Pointer to an initialized [INTERNET_BUFFERS](https://msdn.microsoft.com/library/windows/desktop/aa385132) that describes the input buffer used for the operation.  
   
  *dwContext*  
  The context identifier for the `CHttpFile` operation. See Remarks for more information about this parameter.  
@@ -248,7 +248,7 @@ BOOL QueryInfo(
   
 - HTTP_QUERY_FLAG_REQUEST_HEADERS Typically, the application queries the response headers, but an application can also query request headers by using this flag.  
   
-- HTTP_QUERY_FLAG_SYSTEMTIME For those headers whose value is a date/time string, such as "Last-Modified-Time," this flag returns the header value as a standard Win32 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure that does not require the application to parse the data. If you use this flag, you may want to use the `SYSTEMTIME` override of the function.  
+- HTTP_QUERY_FLAG_SYSTEMTIME For those headers whose value is a date/time string, such as "Last-Modified-Time," this flag returns the header value as a standard Win32 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that does not require the application to parse the data. If you use this flag, you may want to use the `SYSTEMTIME` override of the function.  
   
 - HTTP_QUERY_FLAG_NUMBER For those headers whose value is a number, such as the status code, this flag returns the data as a 32-bit number.  
   
@@ -270,10 +270,10 @@ BOOL QueryInfo(
  An index value. See *lpdwIndex*.  
   
  *pSysTime*  
- A pointer to a Win32 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.  
+ A pointer to a Win32 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  Use this member function only after a successful call to [SendRequest](#sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
@@ -348,7 +348,7 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
  A reference to a status code. Status codes indicate the success or failure of the requested event. See **Remarks** for a selection of status code descriptions.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  Use this member function only after a successful call to [SendRequest](#sendrequest) or on a `CHttpFile` object successfully created by [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
@@ -431,13 +431,13 @@ BOOL SendRequestEx(
  Number of bytes to be sent in the request.  
   
  *dwFlags*  
- Flags describing the operation. For a list of appropriate flags, see [HttpSendRequestEx](http://msdn.microsoft.com/library/windows/desktop/aa384318) in the Windows SDK.  
+ Flags describing the operation. For a list of appropriate flags, see [HttpSendRequestEx](https://msdn.microsoft.com/library/windows/desktop/aa384318) in the Windows SDK.  
   
  *dwContext*  
  The context identifier for the `CHttpFile` operation. See Remarks for more information about this parameter.  
   
  *lpBuffIn*  
- Pointer to an initialized [INTERNET_BUFFERS](http://msdn.microsoft.com/library/windows/desktop/aa385132) that describes the input buffer used for the operation.  
+ Pointer to an initialized [INTERNET_BUFFERS](https://msdn.microsoft.com/library/windows/desktop/aa385132) that describes the input buffer used for the operation.  
   
  *lpBuffOut*  
  Pointer to an initialized INTERNET_BUFFERS that describes the output buffer used for the operation.  

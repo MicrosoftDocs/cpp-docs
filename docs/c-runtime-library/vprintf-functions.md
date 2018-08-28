@@ -71,7 +71,7 @@ Each of the `vprintf` functions takes a pointer to an argument list, then format
  For **vsprintf**, `vswprintf`, `_vsnprintf` and `_vsnwprintf`, if copying occurs between strings that overlap, the behavior is undefined.  
   
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). If using the secure versions of these functions (either the **_s** or **_p** suffixes), a user-supplied format string could trigger an invalid parameter exception if the user-supplied string contains invalid formatting characters.  
+>  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](https://msdn.microsoft.com/library/windows/desktop/ms717795). If using the secure versions of these functions (either the **_s** or **_p** suffixes), a user-supplied format string could trigger an invalid parameter exception if the user-supplied string contains invalid formatting characters.  
   
 ## See Also  
  [Stream I/O](../c-runtime-library/stream-i-o.md)   

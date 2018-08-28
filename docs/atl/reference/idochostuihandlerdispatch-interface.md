@@ -33,19 +33,19 @@ interface IDocHostUIHandlerDispatch : IDispatch
   
 |||  
 |-|-|  
-|[EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)|Called from MSHTML implementation of [IOleInPlaceActiveObject::EnableModeless](http://msdn.microsoft.com/library/windows/desktop/ms680115). Also called when MSHTML displays modal UI.|  
+|[EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)|Called from MSHTML implementation of [IOleInPlaceActiveObject::EnableModeless](https://msdn.microsoft.com/library/windows/desktop/ms680115). Also called when MSHTML displays modal UI.|  
 |[FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx)|Called on the host by MSHTML to allow the host to replace MSHTML's data object.|  
-|[GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)|Called by MSHTML when it is being used as a drop target to allow the host to supply an alternative [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679).|  
+|[GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)|Called by MSHTML when it is being used as a drop target to allow the host to supply an alternative [IDropTarget](https://msdn.microsoft.com/library/windows/desktop/ms679679).|  
 |[GetExternal](https://msdn.microsoft.com/library/aa753256.aspx)|Called by MSHTML to obtain the host's IDispatch interface.|  
 |[GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx)|Retrieves the UI capabilities of MSHTML host.|  
 |[GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx)|Returns the registry key under which MSHTML stores user preferences.|  
 |[HideUI](https://msdn.microsoft.com/library/aa753259.aspx)|Called when MSHTML removes its menus and toolbars.|  
-|[OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)|Called from MSHTML implementation of [IOleInPlaceActiveObject::OnDocWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms687281).|  
-|[OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)|Called from MSHTML implementation of [IOleInPlaceActiveObject::OnFrameWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms683969).|  
-|[ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx)|Called from MSHTML implementation of [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053).|  
+|[OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)|Called from MSHTML implementation of [IOleInPlaceActiveObject::OnDocWindowActivate](https://msdn.microsoft.com/library/windows/desktop/ms687281).|  
+|[OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)|Called from MSHTML implementation of [IOleInPlaceActiveObject::OnFrameWindowActivate](https://msdn.microsoft.com/library/windows/desktop/ms683969).|  
+|[ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx)|Called from MSHTML implementation of [IOleInPlaceActiveObject::ResizeBorder](https://msdn.microsoft.com/library/windows/desktop/ms680053).|  
 |[ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx)|Called from MSHTML to display a context menu.|  
 |[ShowUI](https://msdn.microsoft.com/library/aa753265.aspx)|Allows the host to replace MSHTML menus and toolbars.|  
-|[TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)|Called by MSHTML when [IOleInPlaceActiveObject::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693360) or [IOleControlSite::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693756) is called.|  
+|[TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)|Called by MSHTML when [IOleInPlaceActiveObject::TranslateAccelerator](https://msdn.microsoft.com/library/windows/desktop/ms693360) or [IOleControlSite::TranslateAccelerator](https://msdn.microsoft.com/library/windows/desktop/ms693756) is called.|  
 |[TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx)|Called by MSHTML to allow the host an opportunity to modify the URL to be loaded.|  
 |[UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)|Notifies the host that the command state has changed.|  
   

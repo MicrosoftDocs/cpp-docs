@@ -24,7 +24,7 @@ Designates a pointer as a full pointer.
 
 ## Remarks
 
-The **ptr** C++ attribute has the same functionality as the [ptr](http://msdn.microsoft.com/library/windows/desktop/aa367149) MIDL attribute.
+The **ptr** C++ attribute has the same functionality as the [ptr](https://msdn.microsoft.com/library/windows/desktop/aa367149) MIDL attribute.
 
 ## Example
 

@@ -74,7 +74,7 @@ typedef struct tagBITMAP {  /* bm */
   
  All devices support bitmaps that have the RC_BITBLT bit set in the RASTERCAPS index of the [CDC::GetDeviceCaps](../../mfc/reference/cdc-class.md#getdevicecaps) member function.  
   
- Each device has its own unique color format. In order to transfer a bitmap from one device to another, use the [GetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd144879) and [SetDIBits](http://msdn.microsoft.com/library/windows/desktop/dd162973) Windows functions.  
+ Each device has its own unique color format. In order to transfer a bitmap from one device to another, use the [GetDIBits](https://msdn.microsoft.com/library/windows/desktop/dd144879) and [SetDIBits](https://msdn.microsoft.com/library/windows/desktop/dd162973) Windows functions.  
   
 ## Requirements  
  **Header:** wingdi.h  

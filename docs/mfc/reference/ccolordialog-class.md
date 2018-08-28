@@ -55,13 +55,13 @@ class CColorDialog : public CCommonDialog
   
  To construct a `CColorDialog` object, use the provided constructor or derive a new class and use your own custom constructor.  
   
- Once the dialog box has been constructed, you can set or modify any values in the [m_cc](#m_cc) structure to initialize the values of the dialog box's controls. The *m_cc* structure is of type [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830).  
+ Once the dialog box has been constructed, you can set or modify any values in the [m_cc](#m_cc) structure to initialize the values of the dialog box's controls. The *m_cc* structure is of type [CHOOSECOLOR](https://msdn.microsoft.com/library/windows/desktop/ms646830).  
   
  After initializing the dialog box's controls, call the `DoModal` member function to display the dialog box and allow the user to select a color. `DoModal` returns the user's selection of either the dialog box's OK (IDOK) or Cancel (IDCANCEL) button.  
   
  If `DoModal` returns IDOK, you can use one of `CColorDialog`'s member functions to retrieve the information input by the user.  
   
- You can use the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred during initialization of the dialog box and to learn more about the error.  
+ You can use the Windows [CommDlgExtendedError](https://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred during initialization of the dialog box and to learn more about the error.  
   
  `CColorDialog` relies on the COMMDLG.DLL file that ships with Windows versions 3.1 and later.  
   
@@ -105,7 +105,7 @@ CColorDialog(
  The default color selection. If no value is specified, the default is RGB(0,0,0) (black).  
   
  *dwFlags*  
- A set of flags that customize the function and appearance of the dialog box. For more information, see the [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830) structure in the Windows SDK.  
+ A set of flags that customize the function and appearance of the dialog box. For more information, see the [CHOOSECOLOR](https://msdn.microsoft.com/library/windows/desktop/ms646830) structure in the Windows SDK.  
   
  *pParentWnd*  
  A pointer to the dialog box's parent or owner window.  
@@ -121,7 +121,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
+ IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](https://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
   
  IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.  
   
@@ -141,7 +141,7 @@ COLORREF GetColor() const;
 ```  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that contains the RGB information for the color selected in the color dialog box.  
+ A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value that contains the RGB information for the color selected in the color dialog box.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#50](../../mfc/codesnippet/cpp/ccolordialog-class_2.cpp)]  
@@ -165,7 +165,7 @@ static COLORREF* PASCAL GetSavedCustomColors();
  [!code-cpp[NVC_MFCDocView#51](../../mfc/codesnippet/cpp/ccolordialog-class_3.cpp)]  
   
 ##  <a name="m_cc"></a>  CColorDialog::m_cc  
- A structure of type [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830), whose members store the characteristics and values of the dialog box.  
+ A structure of type [CHOOSECOLOR](https://msdn.microsoft.com/library/windows/desktop/ms646830), whose members store the characteristics and values of the dialog box.  
   
 ```  
 CHOOSECOLOR m_cc;  

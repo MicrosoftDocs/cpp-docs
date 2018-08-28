@@ -48,7 +48,7 @@ class COleBusyDialog : public COleDialog
 > [!NOTE]
 >  Application Wizard-generated container code uses this class.  
   
- For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the Windows SDK.  
+ For more information, see the [OLEUIBUSY](https://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the Windows SDK.  
   
  For more information on OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -103,7 +103,7 @@ explicit COleBusyDialog(
 ### Remarks  
  To display the dialog box, call [DoModal](#domodal).  
   
- For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the Windows SDK.  
+ For more information, see the [OLEUIBUSY](https://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the Windows SDK.  
   
 ##  <a name="domodal"></a>  COleBusyDialog::DoModal  
  Call this function to display the OLE Server Busy or Server Not Responding dialog box.  
@@ -119,7 +119,7 @@ virtual INT_PTR DoModal();
   
 - IDCANCEL if the user canceled the dialog box.  
   
-- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIBusy](http://msdn.microsoft.com/library/windows/desktop/ms680125) function in the Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIBusy](https://msdn.microsoft.com/library/windows/desktop/ms680125) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_bz](#m_bz) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
@@ -165,7 +165,7 @@ OLEUIBUSY m_bz;
 ### Remarks  
  Members of this structure can be modified directly or through member functions.  
   
- For more information, see the [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the Windows SDK.  
+ For more information, see the [OLEUIBUSY](https://msdn.microsoft.com/library/windows/desktop/ms682493) structure in the Windows SDK.  
   
 ## See Also  
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   

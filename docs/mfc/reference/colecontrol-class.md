@@ -216,9 +216,9 @@ class COleControl : public CWnd
   
  Controls do not need a window. Services that a window offers can easily be provided via a single shared window (usually the container's) and a bit of dispatching code. Having a window is mostly an unnecessary complication on the object.  
   
- When windowless activation is used, the container (which does have a window) is responsible for providing services that would otherwise have been provided by the control's own window. For example, if your control needs to query the keyboard focus, query the mouse capture, or obtain a device context, these operations are managed by the container. The `COleControl`[windowless-operation member functions](http://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) invoke these operations on the container.  
+ When windowless activation is used, the container (which does have a window) is responsible for providing services that would otherwise have been provided by the control's own window. For example, if your control needs to query the keyboard focus, query the mouse capture, or obtain a device context, these operations are managed by the container. The `COleControl`[windowless-operation member functions](https://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) invoke these operations on the container.  
   
- When windowless activation is enabled, the container delegates input messages to the control's `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) for windowless support). `COleControl`'s implementation of this interface will dispatch these messages through your control's message map, after adjusting the mouse coordinates appropriately. You can process these messages like ordinary window messages, by adding the corresponding entries to the message map.  
+ When windowless activation is enabled, the container delegates input messages to the control's `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](https://msdn.microsoft.com/library/windows/desktop/ms692646) for windowless support). `COleControl`'s implementation of this interface will dispatch these messages through your control's message map, after adjusting the mouse coordinates appropriately. You can process these messages like ordinary window messages, by adding the corresponding entries to the message map.  
   
  In a windowless control, you should always use the `COleControl` member functions instead of the corresponding `CWnd` member functions or their related Windows API functions.  
   
@@ -272,7 +272,7 @@ LPFONTDISP AmbientFont();
 ```  
   
 ### Return Value  
- A pointer to the container's ambient Font dispatch interface. The default value is NULL. If the return is not equal to NULL, you are responsible for releasing the font by calling its [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) member function.  
+ A pointer to the container's ambient Font dispatch interface. The default value is NULL. If the return is not equal to NULL, you are responsible for releasing the font by calling its [IUnknown::Release](https://msdn.microsoft.com/library/windows/desktop/ms682317) member function.  
   
 ### Remarks  
  The ambient Font property is defined by the container and available to all controls.Note that the container is not required to support this property.  
@@ -496,7 +496,7 @@ void ControlInfoChanged();
 ```  
   
 ### Remarks  
- Upon receiving this notification, the control's container obtains the new set of mnemonics by making a call to [IOleControl::GetControlInfo](http://msdn.microsoft.com/library/windows/desktop/ms693730). Note that the container is not required to respond to this notification.  
+ Upon receiving this notification, the control's container obtains the new set of mnemonics by making a call to [IOleControl::GetControlInfo](https://msdn.microsoft.com/library/windows/desktop/ms693730). Note that the container is not required to respond to this notification.  
   
 ##  <a name="displayerror"></a>  COleControl::DisplayError  
  Called by the framework after the stock Error event has been handled (unless the event handler has suppressed the display of the error).  
@@ -1214,7 +1214,7 @@ enum ControlFlags {
  By default, `GetControlFlags` returns `fastBeginPaint | clipPaintDC`.  
   
  `fastBeginPaint`  
- If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](http://msdn.microsoft.com/library/windows/desktop/dd183362) API (set by default).  
+ If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](https://msdn.microsoft.com/library/windows/desktop/dd183362) API (set by default).  
   
  `clipPaintDC`  
  If not set, disables the call to `IntersectClipRect` made by `COleControl` and gains a small speed advantage. If you are using windowless activation, the flag has no effect.  
@@ -1344,13 +1344,13 @@ void GetFontTextMetrics(
   
 ### Parameters  
  *lptm*  
- Pointer to a [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure.  
+ Pointer to a [TEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd145132) structure.  
   
  *fontHolder*  
  Reference to a [CFontHolder](../../mfc/reference/cfontholder-class.md) object.  
   
 ### Remarks  
- Such a font can be selected with the [COleControl::SelectFontObject](#selectfontobject) function. `GetFontTextMetrics` will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information about `fontHolder`'s font if successful, or fill the structure with zeros if not successful. You should use this function instead of [GetTextMetrics](http://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.  
+ Such a font can be selected with the [COleControl::SelectFontObject](#selectfontobject) function. `GetFontTextMetrics` will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information about `fontHolder`'s font if successful, or fill the structure with zeros if not successful. You should use this function instead of [GetTextMetrics](https://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.  
   
  The `TEXTMETRIC` structure for the default font is refreshed when the [SelectFontObject](#selectfontobject) function is called. You should call `GetFontTextMetrics` only after selecting the stock Font property to assure the information it provides is valid.  
   
@@ -1362,7 +1362,7 @@ OLE_COLOR GetForeColor();
 ```  
   
 ### Return Value  
- The return value specifies the current foreground color as a OLE_COLOR value, if successful. This value can be translated to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value with a call to `TranslateColor`.  
+ The return value specifies the current foreground color as a OLE_COLOR value, if successful. This value can be translated to a [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value with a call to `TranslateColor`.  
   
 ##  <a name="gethwnd"></a>  COleControl::GetHwnd  
  Implements the Get function of the stock hWnd property.  
@@ -1457,10 +1457,10 @@ void GetStockTextMetrics(LPTEXTMETRIC lptm);
   
 ### Parameters  
  *lptm*  
- A pointer to a [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure.  
+ A pointer to a [TEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd145132) structure.  
   
 ### Remarks  
- The `GetStockTextMetrics` function will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information if successful, or fill the structure with zeros if not successful. Use this function instead of [GetTextMetrics](http://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.  
+ The `GetStockTextMetrics` function will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information if successful, or fill the structure with zeros if not successful. Use this function instead of [GetTextMetrics](https://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.  
   
  The `TEXTMETRIC` structure for the default font is refreshed when the `SelectStockFont` function is called. You should call this function only after selecting the stock font to assure the information it provides is valid.  
   
@@ -1580,7 +1580,7 @@ void InvalidateControl(
  Specifies whether the background within the update region is to be erased when the update region is processed.  
   
 ### Remarks  
- If *lpRect* has a NULL value, the entire control will be redrawn. If *lpRect* is not NULL, this indicates the portion of the control's rectangle that is to be invalidated. In cases where the control has no window, or is currently not active, the rectangle is ignored, and a call is made to the client site's [IAdviseSink::OnViewChange](http://msdn.microsoft.com/library/windows/desktop/ms694337) member function. Use this function instead of `CWnd::InvalidateRect` or `InvalidateRect`.  
+ If *lpRect* has a NULL value, the entire control will be redrawn. If *lpRect* is not NULL, this indicates the portion of the control's rectangle that is to be invalidated. In cases where the control has no window, or is currently not active, the rectangle is ignored, and a call is made to the client site's [IAdviseSink::OnViewChange](https://msdn.microsoft.com/library/windows/desktop/ms694337) member function. Use this function instead of `CWnd::InvalidateRect` or `InvalidateRect`.  
   
 ##  <a name="invalidatergn"></a>  COleControl::InvalidateRgn  
  Invalidates the container window's client area within the given region.  
@@ -1597,7 +1597,7 @@ void InvalidateRgn(CRgn* pRgn, BOOL bErase = TRUE);
  Specifies whether the background within the invalidated region is to be erased. If TRUE, the background is erased. If FALSE, the background remains unchanged.  
   
 ### Remarks  
- This can be used to redraw windowless controls within the container. The invalidated region, along with all other areas in the update region, is marked for painting when the next [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message is sent.  
+ This can be used to redraw windowless controls within the container. The invalidated region, along with all other areas in the update region, is marked for painting when the next [WM_PAINT](https://msdn.microsoft.com/library/windows/desktop/dd145213) message is sent.  
   
  If *bErase* is TRUE for any part of the update region, the background in the entire region, not just in the given part, is erased.  
   
@@ -2016,7 +2016,7 @@ virtual void OnGetControlInfo(LPCONTROLINFO pControlInfo);
   
 ### Parameters  
  *pControlInfo*  
- Pointer to a [CONTROLINFO](http://msdn.microsoft.com/library/windows/desktop/ms680734) structure to be filled in.  
+ Pointer to a [CONTROLINFO](https://msdn.microsoft.com/library/windows/desktop/ms680734) structure to be filled in.  
   
 ### Remarks  
  This information consists primarily of a description of the control's mnemonic keys. The default implementation fills *pControlInfo* with default information.  
@@ -2073,13 +2073,13 @@ virtual BOOL OnGetNaturalExtent(
   
 ### Parameters  
  *dwAspect*  
- Specifies how the object is to be represented. Representations include content, an icon, a thumbnail, or a printed document. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.  
+ Specifies how the object is to be represented. Representations include content, an icon, a thumbnail, or a printed document. Valid values are taken from the enumeration [DVASPECT](https://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.  
   
  *lindex*  
  The portion of the object that is of interest. Currently only -1 is valid.  
   
  *ptd*  
- Points to the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure defining the target device for which the object's size should be returned.  
+ Points to the [DVTARGETDEVICE](https://msdn.microsoft.com/library/windows/desktop/ms686613) structure defining the target device for which the object's size should be returned.  
   
  *hicTargetDev*  
  Specifies the information context for the target device indicated by the *ptd* parameter from which the object can extract device metrics and test the device's capabilities. If *ptd* is NULL, the object should ignore the value in the *hicTargetDev* parameter.  
@@ -2164,7 +2164,7 @@ virtual BOOL OnGetPredefinedValue(
  Nonzero if a value has been returned in *lpvarOut*; otherwise 0.  
   
 ##  <a name="ongetviewextent"></a>  COleControl::OnGetViewExtent  
- Called by the framework in response to a container's [IViewObject2::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms684032) request.  
+ Called by the framework in response to a container's [IViewObject2::GetExtent](https://msdn.microsoft.com/library/windows/desktop/ms684032) request.  
   
 ```  
 virtual BOOL OnGetViewExtent(
@@ -2176,13 +2176,13 @@ virtual BOOL OnGetViewExtent(
   
 ### Parameters  
  *dwDrawAspect*  
- DWORD describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.  
+ DWORD describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](https://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.  
   
  *lindex*  
  The portion of the object that is of interest. Currently only -1 is valid.  
   
  *ptd*  
- Points to the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure defining the target device for which the object's size should be returned.  
+ Points to the [DVTARGETDEVICE](https://msdn.microsoft.com/library/windows/desktop/ms686613) structure defining the target device for which the object's size should be returned.  
   
  *lpsizel*  
  Points to the location where the object's size is returned.  
@@ -2202,7 +2202,7 @@ virtual BOOL OnGetViewRect(DWORD dwAspect, LPRECTL pRect);
   
 ### Parameters  
  *dwAspect*  
- DWORD describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2:  
+ DWORD describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](https://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2:  
   
 - DVASPECT_CONTENT Bounding rectangle of the whole object. Top-left corner at the object's origin and size equal to the extent returned by `GetViewExtent`*.*  
   
@@ -2211,7 +2211,7 @@ virtual BOOL OnGetViewRect(DWORD dwAspect, LPRECTL pRect);
 - DVASPECT_TRANSPARENT Rectangle covering all transparent or irregular parts.  
   
  *pRect*  
- Points to the [RECTL](http://msdn.microsoft.com/library/windows/desktop/dd162907) structure specifying the rectangle in which the object should be drawn. This parameter controls the positioning and stretching of the object.  
+ Points to the [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) structure specifying the rectangle in which the object should be drawn. This parameter controls the positioning and stretching of the object.  
   
 ### Return Value  
  Nonzero if the rectangle sized to the object is successfully returned; otherwise 0.  
@@ -2460,7 +2460,7 @@ virtual BOOL OnQueryHitPoint(
   
 ### Parameters  
  *dwAspect*  
- Specifies how the object is represented. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.  
+ Specifies how the object is represented. Valid values are taken from the enumeration [DVASPECT](https://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.  
   
  *pRectBounds*  
  Pointer to a `RECT` structure specifying the bounding rectangle of the OLE control client area.  
@@ -2502,7 +2502,7 @@ virtual BOOL OnQueryHitRect(
   
 ### Parameters  
  *dwAspect*  
- Specifies how the object is to be represented. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.  
+ Specifies how the object is to be represented. Valid values are taken from the enumeration [DVASPECT](https://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.  
   
  *pRectBounds*  
  Pointer to a `RECT` structure specifying the bounding rectangle of the OLE control client area.  
@@ -2537,10 +2537,10 @@ virtual BOOL OnRenderData(
   
 ### Parameters  
  *lpFormatEtc*  
- Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
+ Points to the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
  *lpStgMedium*  
- Points to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data is to be returned.  
+ Points to a [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data is to be returned.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -2565,7 +2565,7 @@ virtual BOOL OnRenderFileData(
   
 ### Parameters  
  *lpFormatEtc*  
- Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
+ Points to the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
  *pFile*  
  Points to a [CFile](../../mfc/reference/cfile-class.md) object in which the data is to be rendered.  
@@ -2591,7 +2591,7 @@ virtual BOOL OnRenderGlobalData(
   
 ### Parameters  
  *lpFormatEtc*  
- Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
+ Points to the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.  
   
  *phGlobal*  
  Points to a handle to global memory in which the data is to be returned. If no memory has been allocated, this parameter can be NULL.  
@@ -2618,7 +2618,7 @@ virtual void OnResetState();
 ### Remarks  
  The default implementation calls [DoPropExchange](#dopropexchange), passing a `CPropExchange` object that causes properties to be set to their default values.  
   
- The control writer can insert initialization code for the OLE control in this overridable. This function is called when [IPersistStream::Load](http://msdn.microsoft.com/library/windows/desktop/ms680568) or [IPersistStorage::Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) fails, or [IPersistStreamInit::InitNew](http://msdn.microsoft.com/library/windows/desktop/ms690234) or [IPersistStorage::InitNew](http://msdn.microsoft.com/library/windows/desktop/ms687194) is called, without first calling either `IPersistStream::Load` or `IPersistStorage::Load`.  
+ The control writer can insert initialization code for the OLE control in this overridable. This function is called when [IPersistStream::Load](https://msdn.microsoft.com/library/windows/desktop/ms680568) or [IPersistStorage::Load](https://msdn.microsoft.com/library/windows/desktop/ms680557) fails, or [IPersistStreamInit::InitNew](https://msdn.microsoft.com/library/windows/desktop/ms690234) or [IPersistStorage::InitNew](https://msdn.microsoft.com/library/windows/desktop/ms687194) is called, without first calling either `IPersistStream::Load` or `IPersistStorage::Load`.  
   
 ##  <a name="onsetclientsite"></a>  COleControl::OnSetClientSite  
  Called by the framework when the container has called the control's `IOleControl::SetClientSite` function.  
@@ -2644,10 +2644,10 @@ virtual BOOL OnSetData(
   
 ### Parameters  
  *lpFormatEtc*  
- Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format of the data.  
+ Pointer to a [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format of the data.  
   
  *lpStgMedium*  
- Pointer to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data resides.  
+ Pointer to a [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data resides.  
   
  *bRelease*  
  TRUE if the control should free the storage medium; FALSE if the control should not free the storage medium.  
@@ -2663,7 +2663,7 @@ virtual BOOL OnSetData(
  For more information, see the `FORMATETC` and `STGMEDIUM` structures in the Windows SDK.  
   
 ##  <a name="onsetextent"></a>  COleControl::OnSetExtent  
- Called by the framework when the control's extent needs to be changed, as a result of a call to [IOleObject::SetExtent](http://msdn.microsoft.com/library/windows/desktop/ms694330).  
+ Called by the framework when the control's extent needs to be changed, as a result of a call to [IOleObject::SetExtent](https://msdn.microsoft.com/library/windows/desktop/ms694330).  
   
 ```  
 virtual BOOL OnSetExtent(LPSIZEL lpSizeL);
@@ -2682,7 +2682,7 @@ virtual BOOL OnSetExtent(LPSIZEL lpSizeL);
  Override this function to alter the default resizing of your control.  
   
 ##  <a name="onsetobjectrects"></a>  COleControl::OnSetObjectRects  
- Called by the framework to implement a call to [IOleInPlaceObject::SetObjectRects](http://msdn.microsoft.com/library/windows/desktop/ms683767).  
+ Called by the framework to implement a call to [IOleInPlaceObject::SetObjectRects](https://msdn.microsoft.com/library/windows/desktop/ms683767).  
   
 ```  
 virtual BOOL OnSetObjectRects(
@@ -2757,7 +2757,7 @@ virtual BOOL OnWindowlessMessage(
 ### Remarks  
  Processes window messages for windowless controls. `COleControl`'s `OnWindowlessMessage` should be used for window messages other than mouse messages and keyboard messages. `COleControl` provides [SetCapture](#setcapture) and [SetFocus](#setfocus) specifically to get mouse capture and keyboard focus for windowless OLE objects.  
   
- Because windowless objects do not have a window, they need a mechanism to let the container dispatch messages to them. A windowless OLE object gets messages from its container, through the `OnWindowMessage` method on the `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) for windowless support). `OnWindowMessage` does not take an `HWND` parameter.  
+ Because windowless objects do not have a window, they need a mechanism to let the container dispatch messages to them. A windowless OLE object gets messages from its container, through the `OnWindowMessage` method on the `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](https://msdn.microsoft.com/library/windows/desktop/ms692646) for windowless support). `OnWindowMessage` does not take an `HWND` parameter.  
   
 ##  <a name="parenttoclient"></a>  COleControl::ParentToClient  
  Translates the coordinates of *pPoint* into client coordinates.  
@@ -3364,7 +3364,7 @@ void TransformCoords(
  The first two flags, XFORMCOORDS_POSITION and XFORMCOORDS_SIZE, indicate whether the coordinates should be treated as a position or a size. The remaining two flags indicate the direction of transformation.  
   
 ##  <a name="translatecolor"></a>  COleControl::TranslateColor  
- Converts a color value from the OLE_COLOR data type to the [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) data type.  
+ Converts a color value from the OLE_COLOR data type to the [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) data type.  
   
 ```  
 COLORREF TranslateColor(
@@ -3374,7 +3374,7 @@ COLORREF TranslateColor(
   
 ### Parameters  
  *clrColor*  
- A OLE_COLOR data type. For more information, see the Windows [OleTranslateColor](http://msdn.microsoft.com/library/windows/desktop/ms694353) function.  
+ A OLE_COLOR data type. For more information, see the Windows [OleTranslateColor](https://msdn.microsoft.com/library/windows/desktop/ms694353) function.  
   
  *hpal*  
  A handle to an optional palette; can be NULL.  
@@ -3396,7 +3396,7 @@ BOOL WillAmbientsBeValidDuringLoad();
  Nonzero indicates that ambient properties will be valid; otherwise ambient properties will not be valid.  
   
 ### Remarks  
- In some containers, your control may not have access to its ambient properties during the initial call to the override of `COleControl::DoPropExchange`. This is the case if the container calls [IPersistStreamInit::Load](http://msdn.microsoft.com/library/windows/desktop/ms680730) or [IPersistStorage::Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) prior to calling [IOleObject::SetClientSite](http://msdn.microsoft.com/library/windows/desktop/ms684013) (that is, if it does not honor the OLEMISC_SETCLIENTSITEFIRST status bit).  
+ In some containers, your control may not have access to its ambient properties during the initial call to the override of `COleControl::DoPropExchange`. This is the case if the container calls [IPersistStreamInit::Load](https://msdn.microsoft.com/library/windows/desktop/ms680730) or [IPersistStorage::Load](https://msdn.microsoft.com/library/windows/desktop/ms680557) prior to calling [IOleObject::SetClientSite](https://msdn.microsoft.com/library/windows/desktop/ms684013) (that is, if it does not honor the OLEMISC_SETCLIENTSITEFIRST status bit).  
   
 ##  <a name="windowproc"></a>  COleControl::WindowProc  
  Provides a Windows procedure for a `COleControl` object.  

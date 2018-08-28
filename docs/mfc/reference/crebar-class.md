@@ -88,7 +88,7 @@ BOOL AddBar(
  A pointer to a `CBitmap` object to be displayed on the rebar background. NULL by default.  
   
  *dwStyle*  
- A DWORD containing the style to apply to the rebar. See the `fStyle` function description in the Win32 structure [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) for a complete list of band styles.  
+ A DWORD containing the style to apply to the rebar. See the `fStyle` function description in the Win32 structure [REBARBANDINFO](https://msdn.microsoft.com/library/windows/desktop/bb774393) for a complete list of band styles.  
   
  *clrFore*  
  A COLORREF value that represents the foreground color of the rebar.  
@@ -118,7 +118,7 @@ virtual BOOL Create(
  Pointer to the `CWnd` object whose Windows window is the parent of the status bar. Normally your frame window.  
   
  *dwCtrlStyle*  
- The rebar control style. By default, RBS_BANDBORDERS, which displays narrow lines to separate adjacent bands within the rebar control. See [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK for a list of styles.  
+ The rebar control style. By default, RBS_BANDBORDERS, which displays narrow lines to separate adjacent bands within the rebar control. See [Rebar Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK for a list of styles.  
   
  *dwStyle*  
  The rebar window styles.  

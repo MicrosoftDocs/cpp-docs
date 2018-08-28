@@ -24,7 +24,7 @@ Specifies that the user-defined type is a control.
 
 ## Remarks
 
-The **control** attribute implies the [coclass](../windows/coclass.md) attribute. The **control** C++ attribute has the same functionality as the [control](http://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL attribute.
+The **control** attribute implies the [coclass](../windows/coclass.md) attribute. The **control** C++ attribute has the same functionality as the [control](https://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL attribute.
 
 ## Example
 

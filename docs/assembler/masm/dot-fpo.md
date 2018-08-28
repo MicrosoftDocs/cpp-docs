@@ -52,7 +52,7 @@ cbFrame
  Indicates whether the EBP register has been allocated. either 0 or 1.  
   
  *cbFrame*  
- Indicates the frame type.  See [FPO_DATA](http://msdn.microsoft.com/library/windows/desktop/ms679352) for more information.  
+ Indicates the frame type.  See [FPO_DATA](https://msdn.microsoft.com/library/windows/desktop/ms679352) for more information.  
   
 ## See Also  
  [Directives Reference](../../assembler/masm/directives-reference.md)

@@ -91,7 +91,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::OnTearOffMenu](#ontearoffmenu)|Called by the framework when a menu that has a tear-off bar is activated.|  
 |[CMDIFrameWndEx::OnUpdateFrameMenu](#onupdateframemenu)|Called by the framework to update the frame menu. (Overrides `CMDIFrameWnd::OnUpdateFrameMenu`.)|  
 |[CMDIFrameWndEx::PaneFromPoint](#panefrompoint)|Returns the docking pane that contains the specified point.|  
-|`CMDIFrameWndEx::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions.  (Overrides `CMDIFrameWnd::PreTranslateMessage`.)|  
+|`CMDIFrameWndEx::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions.  (Overrides `CMDIFrameWnd::PreTranslateMessage`.)|  
 |[CMDIFrameWndEx::RecalcLayout](#recalclayout)|Called by the framework to recalculate the layout of the frame window. (Overrides [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).)|  
 |[CMDIFrameWndEx::RemovePaneFromDockManager](#removepanefromdockmanager)|Unregisters a pane and removes it from the docking manager.|  
 |[CMDIFrameWndEx::SaveMDIState](#savemdistate)|Saves the current layout of MDI Tabbed Groups and the list of previously opened documents.|  
@@ -1180,7 +1180,7 @@ virtual BOOL OnMenuButtonToolHitTest(
  The toolbar button.  
   
  [out] *pTI*  
- Pointer to a [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) structure.  
+ Pointer to a [TOOLINFO](https://msdn.microsoft.com/library/windows/desktop/bb760256) structure.  
   
 ### Return Value  
  TRUE if the application fills the *pTI* parameter. The default implementation returns FALSE.  
@@ -1629,7 +1629,7 @@ virtual void WinHelp(
  Specifies data as required for the type of help specified by *nCmd*.  
   
  [in] *nCmd*  
- Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](http://msdn.microsoft.com/library/windows/desktop/bb762267) in the Windows SDK.  
+ Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](https://msdn.microsoft.com/library/windows/desktop/bb762267) in the Windows SDK.  
   
 ### Remarks  
  This method overrides [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp).  

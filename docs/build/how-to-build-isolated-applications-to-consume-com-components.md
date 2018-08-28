@@ -37,5 +37,5 @@ Isolated applications are applications that have manifests built into the progra
 5.  Build the solution.  
   
 ## See Also  
- [Isolated Applications](http://msdn.microsoft.com/library/aa375190)   
- [About Side-by-Side Assemblies](http://msdn.microsoft.com/library/ff951640)
+ [Isolated Applications](https://msdn.microsoft.com/library/aa375190)   
+ [About Side-by-Side Assemblies](https://msdn.microsoft.com/library/ff951640)

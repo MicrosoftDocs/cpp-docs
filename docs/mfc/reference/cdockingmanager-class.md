@@ -214,7 +214,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
   
 ### Parameters  
  [in] *hdwp*  
- Specifies the deferred window position structure. For more information, see [Windows Data Types](http://msdn.microsoft.com/library/windows/desktop/aa383751).  
+ Specifies the deferred window position structure. For more information, see [Windows Data Types](https://msdn.microsoft.com/library/windows/desktop/aa383751).  
   
 ### Remarks  
   
@@ -759,7 +759,7 @@ CSmartDockingManager* GetSmartDockingManager();
 ```  
   
 ### Return Value  
- A pointer to the [smart docking manager](http://msdn.microsoft.com/f537a1a6-fb9e-41d7-952f-0f25d5ee7534).  
+ A pointer to the [smart docking manager](https://msdn.microsoft.com/f537a1a6-fb9e-41d7-952f-0f25d5ee7534).  
   
 ##  <a name="getsmartdockingmanagerpermanent"></a>  CDockingManager::GetSmartDockingManagerPermanent  
  Retrieves a pointer to the smart docking manager.  

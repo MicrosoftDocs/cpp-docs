@@ -34,7 +34,7 @@ Include the iostreams standard header \<streambuf> to define the template class 
 
 |Class|Description|
 |-|-|
-|[basic_streambuf Class](http://msdn.microsoft.com/d9c706ba-ce01-43e0-b0b2-a558fc53ea8d)|The template class describes an abstract base class for deriving a stream buffer, which controls the transmission of elements to and from a specific representation of a stream.|
+|[basic_streambuf Class](https://msdn.microsoft.com/d9c706ba-ce01-43e0-b0b2-a558fc53ea8d)|The template class describes an abstract base class for deriving a stream buffer, which controls the transmission of elements to and from a specific representation of a stream.|
 
 ## See also
 

@@ -54,7 +54,7 @@ class CComPolyObject : public IUnknown,
 |[CComPolyObject::m_contained](#m_contained)|Delegates `IUnknown` calls to the outer unknown if the object is aggregated or to the `IUnknown` of the object if the object is not aggregated.|  
   
 ## Remarks  
- `CComPolyObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) for an aggregated or nonaggregated object.  
+ `CComPolyObject` implements [IUnknown](https://msdn.microsoft.com/library/windows/desktop/ms680509) for an aggregated or nonaggregated object.  
   
  When an instance of `CComPolyObject` is created, the value of the outer unknown is checked. If it is NULL, `IUnknown` is implemented for a nonaggregated object. If the outer unknown is not NULL, `IUnknown` is implemented for an aggregated object.  
   

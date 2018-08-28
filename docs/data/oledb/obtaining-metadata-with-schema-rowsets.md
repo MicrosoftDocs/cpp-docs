@@ -79,7 +79,7 @@ CRestrictions<CAccessor<CColumnsInfo>
   
  For more information about OLE DB schema rowsets, including restriction columns, see [Appendix B: Schema Rowsets](http://go.microsoft.com/fwlink/p/?linkid=64681) in the OLE DB Programmer's Reference.  
   
- For more complex examples of how to use schema rowset classes, see the [CatDB](http://msdn.microsoft.com/003d516b-2bf6-444e-8be5-4ebaa0b66046) and [DBViewer](http://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832) samples.  
+ For more complex examples of how to use schema rowset classes, see the [CatDB](https://msdn.microsoft.com/003d516b-2bf6-444e-8be5-4ebaa0b66046) and [DBViewer](https://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832) samples.  
   
  For information about provider support for schema rowsets, see [Supporting Schema Rowsets](../../data/oledb/supporting-schema-rowsets.md).  
   

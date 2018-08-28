@@ -62,7 +62,7 @@ explicit CWindowDC(CWnd* pWnd);
  The window whose client area the device-context object will access.  
   
 ### Remarks  
- The constructor calls the Windows function [GetWindowDC](http://msdn.microsoft.com/library/windows/desktop/dd144947).  
+ The constructor calls the Windows function [GetWindowDC](https://msdn.microsoft.com/library/windows/desktop/dd144947).  
   
  An exception (of type `CResourceException`) is thrown if the Windows `GetWindowDC` call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.  
   

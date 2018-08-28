@@ -213,7 +213,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
   
 #### \<time.h>  
   
-- **clock** In previous versions, the [clock](../c-runtime-library/reference/clock.md) function was implemented using the Windows API [GetSystemTimeAsFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724397.aspx). With this implementation, the clock function was sensitive to the system time, and was thus not necessarily monotonic. The clock function has been reimplemented in terms of [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and is now monotonic.  
+- **clock** In previous versions, the [clock](../c-runtime-library/reference/clock.md) function was implemented using the Windows API [GetSystemTimeAsFileTime](https://msdn.microsoft.com/library/windows/desktop/ms724397.aspx). With this implementation, the clock function was sensitive to the system time, and was thus not necessarily monotonic. The clock function has been reimplemented in terms of [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904.aspx) and is now monotonic.  
   
 - **fstat and _utime** In previous versions, the [_stat](../c-runtime-library/reference/stat-functions.md), [fstat](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md), and [_utime](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md) functions handle daylight savings time incorrectly. Prior to Visual Studio 2013, all of these functions incorrectly adjusted standard time times as if they were in daylight time.  
   

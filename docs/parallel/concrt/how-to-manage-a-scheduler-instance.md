@@ -25,7 +25,7 @@ Scheduler instances let you associate specific scheduling policies with various 
   
      If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Attach](reference/scheduler-class.md#attach) method when you need to associate the scheduler with the current context.  
   
-3.  Call the [CreateEvent](http://msdn.microsoft.com/library/windows/desktop/ms682396) function to create a handle to a non-signaled, auto-reset event object.  
+3.  Call the [CreateEvent](https://msdn.microsoft.com/library/windows/desktop/ms682396) function to create a handle to a non-signaled, auto-reset event object.  
   
 4.  Pass the handle to the event object that you just created to the [concurrency::CurrentScheduler::RegisterShutdownEvent](reference/currentscheduler-class.md#registershutdownevent) method or the [concurrency::Scheduler::RegisterShutdownEvent](reference/scheduler-class.md#registershutdownevent) method. This registers the event to be set when the scheduler is destroyed.  
   
@@ -35,9 +35,9 @@ Scheduler instances let you associate specific scheduling policies with various 
   
      If you use the `Scheduler::Create` method, call the [concurrency::Scheduler::Release](reference/scheduler-class.md#release) method to decrement the reference count of the `Scheduler` object.  
   
-7.  Pass the handle to the event to the [WaitForSingleObject](http://msdn.microsoft.com/library/windows/desktop/ms687032) function to wait for the scheduler to shut down.  
+7.  Pass the handle to the event to the [WaitForSingleObject](https://msdn.microsoft.com/library/windows/desktop/ms687032) function to wait for the scheduler to shut down.  
   
-8.  Call the [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211) function to close the handle to the event object.  
+8.  Call the [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) function to close the handle to the event object.  
   
 ## Example  
  The following code shows two ways to manage a scheduler instance. Each example first uses the default scheduler to perform a task that prints out the unique identifier of the current scheduler. Each example then uses a scheduler instance to perform the same task again. Finally, each example restores the default scheduler as the current one and performs the task one more time.  

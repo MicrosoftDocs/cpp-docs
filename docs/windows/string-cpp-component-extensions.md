@@ -36,7 +36,7 @@ using namespace default;
 
 ### Remarks
 
-For more information and examples about strings, see [Platform::String, std::wstring, and Literals (Platform)](http://msdn.microsoft.com/ec92fbc6-edf3-4137-a85e-8e29bdb857a8)
+For more information and examples about strings, see [Platform::String, std::wstring, and Literals (Platform)](https://msdn.microsoft.com/ec92fbc6-edf3-4137-a85e-8e29bdb857a8)
 
 ### Requirements
 

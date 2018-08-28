@@ -67,10 +67,10 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx
 |[CBindStatusCallback::m_dwTotalRead](#m_dwtotalread)|Total number of bytes read.|  
 |[CBindStatusCallback::m_pFunc](#m_pfunc)|Pointer to the function called when data is available.|  
 |[CBindStatusCallback::m_pT](#m_pt)|Pointer to the object requesting the asynchronous data transfer.|  
-|[CBindStatusCallback::m_spBindCtx](#m_spbindctx)|Pointer to the [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) interface for the current bind operation.|  
+|[CBindStatusCallback::m_spBindCtx](#m_spbindctx)|Pointer to the [IBindCtx](https://msdn.microsoft.com/library/windows/desktop/ms693755) interface for the current bind operation.|  
 |[CBindStatusCallback::m_spBinding](#m_spbinding)|Pointer to the `IBinding` interface for the current bind operation.|  
-|[CBindStatusCallback::m_spMoniker](#m_spmoniker)|Pointer to the [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) interface for the URL to use.|  
-|[CBindStatusCallback::m_spStream](#m_spstream)|Pointer to the [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) interface for the data transfer.|  
+|[CBindStatusCallback::m_spMoniker](#m_spmoniker)|Pointer to the [IMoniker](https://msdn.microsoft.com/library/windows/desktop/ms679705) interface for the URL to use.|  
+|[CBindStatusCallback::m_spStream](#m_spstream)|Pointer to the [IStream](https://msdn.microsoft.com/library/windows/desktop/aa380034) interface for the data transfer.|  
   
 ## Remarks  
  The `CBindStatusCallback` class implements the `IBindStatusCallback` interface. `IBindStatusCallback` must be implemented by your application so it can receive notifications from an asynchronous data transfer. The asynchronous moniker provided by the system uses `IBindStatusCallback` methods to send and receive information about the asynchronous data transfer to and from your object.  
@@ -244,7 +244,7 @@ T* m_pT;
  The `CBindStatusCallback` object is templatized on this object's class.  
   
 ##  <a name="m_spbindctx"></a>  CBindStatusCallback::m_spBindCtx  
- A pointer to an [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) interface that provides access to the bind context (an object that stores information about a particular moniker binding operation).  
+ A pointer to an [IBindCtx](https://msdn.microsoft.com/library/windows/desktop/ms693755) interface that provides access to the bind context (an object that stores information about a particular moniker binding operation).  
   
 ```
 CComPtr<IBindCtx> m_spBindCtx;
@@ -264,7 +264,7 @@ CComPtr<IBinding> m_spBinding;
  Initialized in `OnStartBinding` and released in `OnStopBinding`.  
   
 ##  <a name="m_spmoniker"></a>  CBindStatusCallback::m_spMoniker  
- A pointer to the [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) interface for the URL to use.  
+ A pointer to the [IMoniker](https://msdn.microsoft.com/library/windows/desktop/ms679705) interface for the URL to use.  
   
 ```
 CComPtr<IMoniker> m_spMoniker;
@@ -274,7 +274,7 @@ CComPtr<IMoniker> m_spMoniker;
  Initialized in `StartAsyncDownload`.  
   
 ##  <a name="m_spstream"></a>  CBindStatusCallback::m_spStream  
- A pointer to the [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) interface of the current bind operation.  
+ A pointer to the [IStream](https://msdn.microsoft.com/library/windows/desktop/aa380034) interface of the current bind operation.  
   
 ```
 CComPtr<IStream> m_spStream;
@@ -302,10 +302,10 @@ STDMETHOD(
  [in] The cumulative amount (in bytes) of data available since the beginning of the binding. Can be zero, indicating that the amount of data is not relevant or that no specific amount became available.  
   
  *pformatetc*  
- [in] Pointer to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682242) structure that contains the format of the available data. If there is no format, can be CF_NULL.  
+ [in] Pointer to the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682242) structure that contains the format of the available data. If there is no format, can be CF_NULL.  
   
  *pstgmed*  
- [in] Pointer to the [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms695269) structure that holds the actual data now available.  
+ [in] Pointer to the [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms695269) structure that holds the actual data now available.  
   
 ### Return Value  
  One of the standard HRESULT values.  

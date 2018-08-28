@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Isolated COM, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
-Use this dialog box to specify **Isolated COM** options for [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
+Use this dialog box to specify **Isolated COM** options for [Mt.exe](https://msdn.microsoft.com/library/aa375649).  
   
  To access this property page dialog box, open the property pages for your project or your property sheet. Expand the **Manifest Tool** node under **Common Properties**, and then select **Isolated COM**.  
   
@@ -34,7 +34,7 @@ Use this dialog box to specify **Isolated COM** options for [Mt.exe](http://msdn
  Uses the /replacements option to specify the full path to the file that contains values for replaceable strings in the .rgs file.  
   
 ## See Also  
- [Isolated Applications](http://msdn.microsoft.com/library/aa375190)   
+ [Isolated Applications](https://msdn.microsoft.com/library/aa375190)   
  [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest)   
  [Manifest Tool Property Pages](../ide/manifest-tool-property-pages.md)   
  [Working with Project Properties](../ide/working-with-project-properties.md)   

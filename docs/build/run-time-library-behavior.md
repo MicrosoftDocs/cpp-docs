@@ -96,7 +96,7 @@ extern "C" BOOL WINAPI DllMain (
   
 Because regular MFC DLLs have a `CWinApp` object, they should perform their initialization and termination tasks in the same location as an MFC application: in the `InitInstance` and `ExitInstance` member functions of the DLL's `CWinApp`-derived class. Because MFC provides a `DllMain` function that is called by `_DllMainCRTStartup` for `DLL_PROCESS_ATTACH` and `DLL_PROCESS_DETACH`, you should not write your own `DllMain` function. The MFC-provided `DllMain` function calls `InitInstance` when your DLL is loaded and it calls `ExitInstance` before the DLL is unloaded.  
   
-A regular MFC DLL can keep track of multiple threads by calling [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801) and [TlsGetValue](http://msdn.microsoft.com/library/windows/desktop/ms686812) in its `InitInstance` function. These functions allow the DLL to track thread-specific data.  
+A regular MFC DLL can keep track of multiple threads by calling [TlsAlloc](https://msdn.microsoft.com/library/windows/desktop/ms686801) and [TlsGetValue](https://msdn.microsoft.com/library/windows/desktop/ms686812) in its `InitInstance` function. These functions allow the DLL to track thread-specific data.  
   
 In your regular MFC DLL that dynamically links to MFC, if you are using any MFC OLE, MFC Database (or DAO), or MFC Sockets support, respectively, the debug MFC extension DLLs MFCO*version*D.dll, MFCD*version*D.dll, and MFCN*version*D.dll (where *version* is the version number) are linked in automatically. You must call one of the following predefined initialization functions for each of these DLLs that you are using in your regular MFC DLL's `CWinApp::InitInstance`.  
   
@@ -159,14 +159,14 @@ Applications that explicitly link to MFC extension DLLs must call `AfxTermExtens
   
 Because the MFCx0.dll is fully initialized by the time `DllMain` is called, you can allocate memory and call MFC functions within `DllMain` (unlike the 16-bit version of MFC).  
   
-Extension DLLs can take care of multithreading by handling the `DLL_THREAD_ATTACH` and `DLL_THREAD_DETACH` cases in the `DllMain` function. These cases are passed to `DllMain` when threads attach and detach from the DLL. Calling [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801) when a DLL is attaching allows the DLL to maintain thread local storage (TLS) indexes for every thread attached to the DLL.  
+Extension DLLs can take care of multithreading by handling the `DLL_THREAD_ATTACH` and `DLL_THREAD_DETACH` cases in the `DllMain` function. These cases are passed to `DllMain` when threads attach and detach from the DLL. Calling [TlsAlloc](https://msdn.microsoft.com/library/windows/desktop/ms686801) when a DLL is attaching allows the DLL to maintain thread local storage (TLS) indexes for every thread attached to the DLL.  
   
 Note that the header file Afxdllx.h contains special definitions for structures used in MFC extension DLLs, such as the definition for `AFX_EXTENSION_MODULE` and `CDynLinkLibrary`. You should include this header file in your MFC extension DLL.  
   
 > [!NOTE]
 >  It is important that you neither define nor undefine any of the `_AFX_NO_XXX` macros in Stdafx.h. These macros exist only for the purpose of checking whether a particular target platform supports that feature or not. You can write your program to check these macros (for example, `#ifndef _AFX_NO_OLE_SUPPORT`), but your program should never define or undefine these macros.  
   
-A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](http://msdn.microsoft.com/library/windows/desktop/ms686997) in the Windows SDK. Note that the sample contains an entry-point function called `LibMain`, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.  
+A sample initialization function that handles multithreading is included in [Using Thread Local Storage in a Dynamic-Link Library](https://msdn.microsoft.com/library/windows/desktop/ms686997) in the Windows SDK. Note that the sample contains an entry-point function called `LibMain`, but you should name this function `DllMain` so that it works with the MFC and C run-time libraries.  
   
 ## See Also  
   

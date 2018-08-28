@@ -12,7 +12,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating a UWP app using WRL and Media Foundation
 
-Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).
+Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/apps/ms694197).
 
 This example creates a custom Media Foundation transform that applies a grayscale effect to images that are captured from a webcam. The app uses C++ to define the custom transform and C# to use the component to transform the captured images.
 
@@ -26,7 +26,7 @@ In most cases, you can use C++/CX to create Windows Runtime). However, sometimes
 
 ## Prerequisites
 
-- Experience with the [Windows Runtime](http://msdn.microsoft.com/library/windows/apps/br211377.aspx).
+- Experience with the [Windows Runtime](https://msdn.microsoft.com/library/windows/apps/br211377.aspx).
 
 - Experience with COM.
 
@@ -42,7 +42,7 @@ In most cases, you can use C++/CX to create Windows Runtime). However, sometimes
 
 - The [InspectableClass](../windows/inspectableclass-macro.md) macro implements basic COM functionality such as reference counting and the `QueryInterface` method, and sets the runtime class name and trust level.
 
-- Use the Microsoft::WRL::[Module class](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/b4acf5de-2f4c-4c8b-b5ff-9140d023ecbe/locales/en-US) to implement DLL entry-point functions such as [DllGetActivationFactory](http://msdn.microsoft.com/library/br205771.aspx), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject).
+- Use the Microsoft::WRL::[Module class](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/b4acf5de-2f4c-4c8b-b5ff-9140d023ecbe/locales/en-US) to implement DLL entry-point functions such as [DllGetActivationFactory](https://msdn.microsoft.com/library/br205771.aspx), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), and [DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject).
 
 - Link your component DLL to runtimeobject.lib. Also specify [/WINMD](../cppcx/compiler-and-linker-options-c-cx.md) on the linker line to generate Windows metadata.
 
@@ -103,7 +103,7 @@ In most cases, you can use C++/CX to create Windows Runtime). However, sometimes
 
 3. In `Package.appxmanifest`, on the **Capabilities** tab, select **Microphone** and **Webcam**. Both capabilities are required to capture photos from the webcam.
 
-4. In `MainPage.xaml`, add this code to the root [Grid](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) element:
+4. In `MainPage.xaml`, add this code to the root [Grid](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) element:
 
    [!code-xml[wrl-media-capture#7](../windows/codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
 
@@ -122,5 +122,5 @@ The example shows how to capture photos from the default webcam one at a time. T
 ## See Also
 
 [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)  
-[Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197)  
+[Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/apps/ms694197)  
 [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

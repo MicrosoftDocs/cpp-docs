@@ -31,7 +31,7 @@ A C language expression that specifies an IID of a COM interface pointed to by a
 
 ## Remarks
 
-The **iid_is** C++ attribute has the same functionality as the [iid_is](http://msdn.microsoft.com/library/windows/desktop/aa367044) MIDL attribute.
+The **iid_is** C++ attribute has the same functionality as the [iid_is](https://msdn.microsoft.com/library/windows/desktop/aa367044) MIDL attribute.
 
 ## Example
 

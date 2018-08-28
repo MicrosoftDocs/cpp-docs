@@ -33,7 +33,7 @@ class Win32ThreadTraits
 |[Win32ThreadTraits::CreateThread](#createthread)|(Static) Call this function to create a thread that should not use CRT functions.|  
   
 ## Remarks  
- Thread traits are classes that provide a creation function for a particular type of thread. The creation function has the same signature and semantics as the Windows [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) function.  
+ Thread traits are classes that provide a creation function for a particular type of thread. The creation function has the same signature and semantics as the Windows [CreateThread](https://msdn.microsoft.com/library/windows/desktop/ms682453) function.  
   
  Thread traits are used by the following classes:  
   
@@ -79,10 +79,10 @@ static HANDLE CreateThread(
  [out] Address of the DWORD variable that, on success, receives the thread ID of the newly created thread.  
   
 ### Return Value  
- Returns the handle to the newly created thread or NULL on failure. Call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) to get extended error information.  
+ Returns the handle to the newly created thread or NULL on failure. Call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) to get extended error information.  
   
 ### Remarks  
- See [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) for further information on the parameters to this function.  
+ See [CreateThread](https://msdn.microsoft.com/library/windows/desktop/ms682453) for further information on the parameters to this function.  
   
  This function calls `CreateThread` to create the thread.  
   

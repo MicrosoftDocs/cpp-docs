@@ -17,7 +17,7 @@ Use a list control to display any arrangement of icons with labels, as in File E
   
  In some views, users can drag icons to different positions or edit icon labels. For example, see the right-hand pane in File Explorer, which uses a list control in a nondialog window. You can experiment with the available views in Explorer's View menu.  
   
- For related information, see [About List-View Controls](http://msdn.microsoft.com/library/windows/desktop/bb774735) in the Windows SDK.  
+ For related information, see [About List-View Controls](https://msdn.microsoft.com/library/windows/desktop/bb774735) in the Windows SDK.  
   
 > [!NOTE]
 >  The Windows SDK refers to list controls as "list view controls." This usage of "view" does not refer to MFC view classes, particularly `CListView`. For more information, see [List Control and List View](../mfc/list-control-and-list-view.md).  

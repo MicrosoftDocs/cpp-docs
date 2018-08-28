@@ -31,7 +31,7 @@ A UUID that identifies the version of the interface.
 
 ## Remarks
 
-The **async_uuid** C++ attribute has the same functionality as the [async_uuid](http://msdn.microsoft.com/library/windows/desktop/aa366735) MIDL attribute.
+The **async_uuid** C++ attribute has the same functionality as the [async_uuid](https://msdn.microsoft.com/library/windows/desktop/aa366735) MIDL attribute.
 
 ## Example
 

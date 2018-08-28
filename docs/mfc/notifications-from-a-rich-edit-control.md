@@ -18,13 +18,13 @@ Notification messages report events affecting a rich edit control ([CRichEditCtr
   
  The following paragraphs list several specific notifications and their uses:  
   
--   EN_MSGFILTER Handling the EN_MSGFILTER notification lets a class, either the rich edit control or its parent window, filter all keyboard and mouse input to the control. The handler can prevent the keyboard or mouse message from being processed or can change the message by modifying the specified [MSGFILTER](http://msdn.microsoft.com/library/windows/desktop/bb787936) structure.  
+-   EN_MSGFILTER Handling the EN_MSGFILTER notification lets a class, either the rich edit control or its parent window, filter all keyboard and mouse input to the control. The handler can prevent the keyboard or mouse message from being processed or can change the message by modifying the specified [MSGFILTER](https://msdn.microsoft.com/library/windows/desktop/bb787936) structure.  
   
 -   EN_PROTECTED Handle the EN_PROTECTED notification message to detect when the user attempts to modify protected text. To mark a range of text as protected, you can set the protected character effect. For more information, see [Character Formatting in Rich Edit Controls](../mfc/character-formatting-in-rich-edit-controls.md).  
   
--   EN_DROPFILES You can enable the user to drop files in a rich edit control by processing the EN_DROPFILES notification message. The specified [ENDROPFILES](http://msdn.microsoft.com/library/windows/desktop/bb787895) structure contains information about the files being dropped.  
+-   EN_DROPFILES You can enable the user to drop files in a rich edit control by processing the EN_DROPFILES notification message. The specified [ENDROPFILES](https://msdn.microsoft.com/library/windows/desktop/bb787895) structure contains information about the files being dropped.  
   
--   EN_SELCHANGE An application can detect when the current selection changes by processing the EN_SELCHANGE notification message. The notification message specifies a [SELCHANGE](http://msdn.microsoft.com/library/windows/desktop/bb787952) structure containing information about the new selection.  
+-   EN_SELCHANGE An application can detect when the current selection changes by processing the EN_SELCHANGE notification message. The notification message specifies a [SELCHANGE](https://msdn.microsoft.com/library/windows/desktop/bb787952) structure containing information about the new selection.  
   
 ## See Also  
  [Using CRichEditCtrl](../mfc/using-cricheditctrl.md)   

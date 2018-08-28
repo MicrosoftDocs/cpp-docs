@@ -71,7 +71,7 @@ SQLULEN m_dwDataLength;
 ```  
   
 ### Remarks  
- This size may be smaller than the size of the memory block allocated for the data. Call the Win32 [GLobalSize](http://msdn.microsoft.com/library/windows/desktop/aa366593) function to get the allocated size.  
+ This size may be smaller than the size of the memory block allocated for the data. Call the Win32 [GLobalSize](https://msdn.microsoft.com/library/windows/desktop/aa366593) function to get the allocated size.  
   
 ##  <a name="m_hdata"></a>  CLongBinary::m_hData  
  Stores a Windows HGLOBAL handle to the actual binary large object data.  

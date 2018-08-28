@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IPropertyPageImpl Class
-This class implements `IUnknown` and provides a default implementation of the [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface.  
+This class implements `IUnknown` and provides a default implementation of the [IPropertyPage](https://msdn.microsoft.com/library/windows/desktop/ms691246) interface.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -69,7 +69,7 @@ class IPropertyPageImpl
 |[IPropertyPageImpl::m_size](#m_size)|Stores the height and width of the property page's dialog box, in pixels.|  
   
 ## Remarks  
- The [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) interface allows an object to manage a particular property page within a property sheet. Class `IPropertyPageImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
+ The [IPropertyPage](https://msdn.microsoft.com/library/windows/desktop/ms691246) interface allows an object to manage a particular property page within a property sheet. Class `IPropertyPageImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -94,7 +94,7 @@ HRESULT Activate(
 ### Remarks  
  By default, the dialog box is always modeless, regardless of the value of the *bModal* parameter.  
   
- See [IPropertyPage::Activate](http://msdn.microsoft.com/library/windows/desktop/ms682250) in the Windows SDK.  
+ See [IPropertyPage::Activate](https://msdn.microsoft.com/library/windows/desktop/ms682250) in the Windows SDK.  
   
 ##  <a name="apply"></a>  IPropertyPageImpl::Apply  
  Applies current property page values to the underlying objects specified through `SetObjects`.  
@@ -107,7 +107,7 @@ HRESULT Apply();
  Returns S_OK.  
   
 ### Remarks  
- See [IPropertyPage::Apply](http://msdn.microsoft.com/library/windows/desktop/ms691284) in the Windows SDK.  
+ See [IPropertyPage::Apply](https://msdn.microsoft.com/library/windows/desktop/ms691284) in the Windows SDK.  
   
 ##  <a name="deactivate"></a>  IPropertyPageImpl::Deactivate  
  Destroys the dialog box window created with [Activate](#activate).  
@@ -117,7 +117,7 @@ HRESULT Deactivate();
 ```  
   
 ### Remarks  
- See [IPropertyPage::Deactivate](http://msdn.microsoft.com/library/windows/desktop/ms682504) in the Windows SDK.  
+ See [IPropertyPage::Deactivate](https://msdn.microsoft.com/library/windows/desktop/ms682504) in the Windows SDK.  
   
 ##  <a name="getpageinfo"></a>  IPropertyPageImpl::GetPageInfo  
  Fills the *pPageInfo* structure with information contained in the data members.  
@@ -129,7 +129,7 @@ HRESULT GetPageInfo(PROPPAGEINFO* pPageInfo);
 ### Remarks  
  `GetPageInfo` loads the string resources associated with [m_dwDocString](#m_dwdocstring), [m_dwHelpFile](#m_dwhelpfile), and [m_dwTitle](#m_dwtitle).  
   
- See [IPropertyPage::GetPageInfo](http://msdn.microsoft.com/library/windows/desktop/ms680714) in the Windows SDK.  
+ See [IPropertyPage::GetPageInfo](https://msdn.microsoft.com/library/windows/desktop/ms680714) in the Windows SDK.  
   
 ##  <a name="help"></a>  IPropertyPageImpl::Help  
  Invokes Windows help for the property page.  
@@ -139,7 +139,7 @@ HRESULT Help(PROPPAGEINFO* pPageInfo);
 ```  
   
 ### Remarks  
- See [IPropertyPage::Help](http://msdn.microsoft.com/library/windows/desktop/ms691504) in the Windows SDK.  
+ See [IPropertyPage::Help](https://msdn.microsoft.com/library/windows/desktop/ms691504) in the Windows SDK.  
   
 ##  <a name="ipropertypageimpl"></a>  IPropertyPageImpl::IPropertyPageImpl  
  The constructor.  
@@ -204,7 +204,7 @@ UINT m_dwTitle;
 ```  
   
 ##  <a name="m_ppagesite"></a>  IPropertyPageImpl::m_pPageSite  
- Points to the [IPropertyPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690583) interface through which the property page communicates with the property frame.  
+ Points to the [IPropertyPageSite](https://msdn.microsoft.com/library/windows/desktop/ms690583) interface through which the property page communicates with the property frame.  
   
 ```
 IPropertyPageSite* m_pPageSite;
@@ -232,7 +232,7 @@ HRESULT Move(LPCRECT pRect);
 ```  
   
 ### Remarks  
- See [IPropertyPage::Move](http://msdn.microsoft.com/library/windows/desktop/ms680118) in the Windows SDK.  
+ See [IPropertyPage::Move](https://msdn.microsoft.com/library/windows/desktop/ms680118) in the Windows SDK.  
   
 ##  <a name="setdirty"></a>  IPropertyPageImpl::SetDirty  
  Flags the property page's state as changed or unchanged, depending on the value of *bDirty*.  
@@ -256,17 +256,17 @@ HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
 ```  
   
 ### Remarks  
- See [IPropertyPage::SetObjects](http://msdn.microsoft.com/library/windows/desktop/ms678529) in the Windows SDK.  
+ See [IPropertyPage::SetObjects](https://msdn.microsoft.com/library/windows/desktop/ms678529) in the Windows SDK.  
   
 ##  <a name="setpagesite"></a>  IPropertyPageImpl::SetPageSite  
- Provides the property page with an [IPropertyPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690583) pointer, through which the property page communicates with the property frame.  
+ Provides the property page with an [IPropertyPageSite](https://msdn.microsoft.com/library/windows/desktop/ms690583) pointer, through which the property page communicates with the property frame.  
   
 ```
 HRESULT SetPageSite(IPropertyPageSite* pPageSite);
 ```  
   
 ### Remarks  
- See [IPropertyPage::SetPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690413) in the Windows SDK.  
+ See [IPropertyPage::SetPageSite](https://msdn.microsoft.com/library/windows/desktop/ms690413) in the Windows SDK.  
   
 ##  <a name="show"></a>  IPropertyPageImpl::Show  
  Makes the property page dialog box visible or invisible.  
@@ -276,7 +276,7 @@ HRESULT Show(UINT nCmdShow);
 ```  
   
 ### Remarks  
- See [IPropertyPage::Show](http://msdn.microsoft.com/library/windows/desktop/ms694467) in the Windows SDK.  
+ See [IPropertyPage::Show](https://msdn.microsoft.com/library/windows/desktop/ms694467) in the Windows SDK.  
   
 ##  <a name="translateaccelerator"></a>  IPropertyPageImpl::TranslateAccelerator  
  Processes the keystroke specified in `pMsg`.  
@@ -286,7 +286,7 @@ HRESULT TranslateAccelerator(MSG* pMsg);
 ```  
   
 ### Remarks  
- See [IPropertyPage::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms686603) in the Windows SDK.  
+ See [IPropertyPage::TranslateAccelerator](https://msdn.microsoft.com/library/windows/desktop/ms686603) in the Windows SDK.  
   
 ## See Also  
  [IPropertyPage2Impl Class](../../atl/reference/ipropertypage2impl-class.md)   

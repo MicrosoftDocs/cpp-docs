@@ -39,7 +39,7 @@ class CLocalHeap : public IAtlMemMgr
  `CLocalHeap` implements memory allocation functions using the Win32 local heap functions.  
   
 > [!NOTE]
->  The local heap functions are slower than other memory management functions and do not provide as many features. Therefore, new applications should use the [heap functions](http://msdn.microsoft.com/library/windows/desktop/aa366711). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class.  
+>  The local heap functions are slower than other memory management functions and do not provide as many features. Therefore, new applications should use the [heap functions](https://msdn.microsoft.com/library/windows/desktop/aa366711). These are available in the [CWin32Heap](../../atl/reference/cwin32heap-class.md) class.  
   
 ## Example  
  See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).  
@@ -69,7 +69,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### Remarks  
  Call [CLocalHeap::Free](#free) or [CLocalHeap::Reallocate](#reallocate) to free the memory allocated by this method.  
   
- Implemented using [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723) with a flag parameter of LMEM_FIXED.  
+ Implemented using [LocalAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366723) with a flag parameter of LMEM_FIXED.  
   
 ##  <a name="free"></a>  CLocalHeap::Free  
  Call this method to free a block of memory allocated by this memory manager.  
@@ -83,7 +83,7 @@ virtual void Free(void* p) throw();
  Pointer to memory previously allocated by this memory manager. NULL is a valid value and does nothing.  
   
 ### Remarks  
- Implemented using [LocalFree](http://msdn.microsoft.com/library/windows/desktop/aa366730).  
+ Implemented using [LocalFree](https://msdn.microsoft.com/library/windows/desktop/aa366730).  
   
 ##  <a name="getsize"></a>  CLocalHeap::GetSize  
  Call this method to get the allocated size of a memory block allocated by this memory manager.  
@@ -100,7 +100,7 @@ virtual size_t GetSize(void* p) throw();
  Returns the size of the allocated memory block in bytes.  
   
 ### Remarks  
- Implemented using [LocalSize](http://msdn.microsoft.com/library/windows/desktop/aa366745).  
+ Implemented using [LocalSize](https://msdn.microsoft.com/library/windows/desktop/aa366745).  
   
 ##  <a name="reallocate"></a>  CLocalHeap::Reallocate  
  Call this method to reallocate memory allocated by this memory manager.  
@@ -122,7 +122,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ### Remarks  
  Call [CLocalHeap::Free](#free) to free the memory allocated by this method.  
   
- Implemented using [LocalReAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366742).  
+ Implemented using [LocalReAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366742).  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)   

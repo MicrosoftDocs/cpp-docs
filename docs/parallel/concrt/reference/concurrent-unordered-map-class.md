@@ -309,7 +309,7 @@ std::pair<const_iterator,
  The key value to search for.  
   
 ### Return Value  
- A [pair](http://msdn.microsoft.com/en-us/c5a37023-d939-4eb2-ae24-ce8e0cd4505d) where the first element is an iterator to the beginning and the second element is an iterator to the end of the range.  
+ A [pair](https://msdn.microsoft.com/c5a37023-d939-4eb2-ae24-ce8e0cd4505d) where the first element is an iterator to the beginning and the second element is an iterator to the end of the range.  
   
 ### Remarks  
  It is possible for concurrent inserts to cause additional keys to be inserted after the begin iterator and before the end iterator.  

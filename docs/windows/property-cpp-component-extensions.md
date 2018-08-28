@@ -83,7 +83,7 @@ The property method body of the set or get accessor. The *property_body* can use
 
 ## Windows Runtime
 
-For more information, see [Properties (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755807.aspx).
+For more information, see [Properties (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh755807.aspx).
 
 ### Requirements
 

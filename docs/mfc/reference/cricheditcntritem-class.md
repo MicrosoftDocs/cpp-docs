@@ -69,7 +69,7 @@ CRichEditCntrItem(
   
 ### Parameters  
  *preo*  
- Pointer to an [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the client item is empty.  
+ Pointer to an [REOBJECT](https://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the client item is empty.  
   
  *pContainer*  
  Pointer to the container document that will contain this item. If *pContainer* is NULL, you must explicitly call [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) to add this client item to a document.  
@@ -77,10 +77,10 @@ CRichEditCntrItem(
 ### Remarks  
  This function does not perform any OLE initialization.  
   
- For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the Windows SDK.  
+ For more information, see the [REOBJECT](https://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the Windows SDK.  
   
 ##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject  
- Call this function to synchronize the device aspect, [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318), of this `CRichEditCntrltem` to that specified by *reo*.  
+ Call this function to synchronize the device aspect, [DVASPECT](https://msdn.microsoft.com/library/windows/desktop/ms690318), of this `CRichEditCntrltem` to that specified by *reo*.  
   
 ```  
 void SyncToRichEditObject(REOBJECT& reo);
@@ -88,10 +88,10 @@ void SyncToRichEditObject(REOBJECT& reo);
   
 ### Parameters  
  *reo*  
- Reference to an [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item.  
+ Reference to an [REOBJECT](https://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item.  
   
 ### Remarks  
- For more information, see [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) in the Windows SDK.  
+ For more information, see [DVASPECT](https://msdn.microsoft.com/library/windows/desktop/ms690318) in the Windows SDK.  
   
 ## See Also  
  [MFC Sample WORDPAD](../../visual-cpp-samples.md)   

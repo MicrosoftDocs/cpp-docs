@@ -71,7 +71,7 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
 }
 ```
 
-For more information, see [Boxing (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh969554.aspx).
+For more information, see [Boxing (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh969554.aspx).
 
 ## Common Language Runtime
 

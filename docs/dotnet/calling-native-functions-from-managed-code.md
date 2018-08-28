@@ -20,7 +20,7 @@ The common language runtime provides Platform Invocation Services, or PInvoke, t
   
 -   [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)  
   
--   [A Closer Look at Platform Invoke](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
+-   [A Closer Look at Platform Invoke](https://msdn.microsoft.com/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
   
  The samples in this section just illustrate how `PInvoke` can be used. `PInvoke` can simplify customized data marshaling because you provide marshaling information declaratively in attributes instead of writing procedural marshaling code.  
   

@@ -116,7 +116,7 @@ PROPSHEETPAGE m_psp;
 ### Remarks  
  Use this structure to initialize the appearance of a property page after it is constructed.  
   
- For more information on this structure, including a listing of its members, see [PROPSHEETPAGE](http://msdn.microsoft.com/library/aa815151) in the Windows SDK.  
+ For more information on this structure, including a listing of its members, see [PROPSHEETPAGE](https://msdn.microsoft.com/library/aa815151) in the Windows SDK.  
   
 ##  <a name="onapply"></a>  CSnapInPropertyPageImpl::OnApply  
  This member function is called when the user clicks the **OK** or the **Apply Now** button.  

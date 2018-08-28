@@ -36,7 +36,7 @@ class CComHeap : public IAtlMemMgr
 |[CComHeap::Reallocate](#reallocate)|Call this method to reallocate memory allocated by this memory manager.|  
   
 ## Remarks  
- `CComHeap` implements memory allocation functions using the COM allocation functions, including [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727), [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722), [IMalloc::GetSize](http://msdn.microsoft.com/library/windows/desktop/ms691226), and [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280). The maximum amount of memory that can be allocated is equal to INT_MAX (2147483647) bytes.  
+ `CComHeap` implements memory allocation functions using the COM allocation functions, including [CoTaskMemAlloc](https://msdn.microsoft.com/library/windows/desktop/ms692727), [CoTaskMemFree](https://msdn.microsoft.com/library/windows/desktop/ms680722), [IMalloc::GetSize](https://msdn.microsoft.com/library/windows/desktop/ms691226), and [CoTaskMemRealloc](https://msdn.microsoft.com/library/windows/desktop/ms687280). The maximum amount of memory that can be allocated is equal to INT_MAX (2147483647) bytes.  
   
 ## Example  
  See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).  
@@ -66,7 +66,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### Remarks  
  Call [CComHeap::Free](#free) or [CComHeap::Reallocate](#reallocate) to free the memory allocated by this method.  
   
- Implemented using [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727).  
+ Implemented using [CoTaskMemAlloc](https://msdn.microsoft.com/library/windows/desktop/ms692727).  
   
 ##  <a name="free"></a>  CComHeap::Free  
  Call this method to free a block of memory allocated by this memory manager.  
@@ -80,7 +80,7 @@ virtual void Free(void* p) throw();
  Pointer to memory previously allocated by this memory manager. NULL is a valid value and does nothing.  
   
 ### Remarks  
- Implemented using [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722).  
+ Implemented using [CoTaskMemFree](https://msdn.microsoft.com/library/windows/desktop/ms680722).  
   
 ##  <a name="getsize"></a>  CComHeap::GetSize  
  Call this method to get the allocated size of a memory block allocated by this memory manager.  
@@ -97,7 +97,7 @@ virtual size_t GetSize(void* p) throw();
  Returns the size of the allocated memory block in bytes.  
   
 ### Remarks  
- Implemented using [IMalloc::GetSize](http://msdn.microsoft.com/library/windows/desktop/ms691226).  
+ Implemented using [IMalloc::GetSize](https://msdn.microsoft.com/library/windows/desktop/ms691226).  
   
 ##  <a name="reallocate"></a>  CComHeap::Reallocate  
  Call this method to reallocate memory allocated by this memory manager.  
@@ -119,7 +119,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ### Remarks  
  Call [CComHeap::Free](#free) to free the memory allocated by this method.  
   
- Implemented using [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280).  
+ Implemented using [CoTaskMemRealloc](https://msdn.microsoft.com/library/windows/desktop/ms687280).  
   
 ## See Also  
  [DynamicConsumer Sample](../../visual-cpp-samples.md)   

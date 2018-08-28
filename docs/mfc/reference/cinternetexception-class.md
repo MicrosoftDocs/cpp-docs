@@ -85,7 +85,7 @@ DWORD m_dwError;
 ### Remarks  
  This error value may be a system error code, found in WINERROR.H, or an error value from WININET.H.  
   
- For a list of Win32 error codes, see [Error Codes](http://msdn.microsoft.com/library/windows/desktop/ms681381). For a list of Internet-specific error messages, see  . Both topics are in the Windows SDK.  
+ For a list of Win32 error codes, see [Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms681381). For a list of Internet-specific error messages, see  . Both topics are in the Windows SDK.  
   
 ## See Also  
  [CException Class](../../mfc/reference/cexception-class.md)   

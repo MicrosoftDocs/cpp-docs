@@ -22,7 +22,7 @@ Results in more efficient code for an .exe file for accessing thread-local stora
 ```  
   
 ## Remarks  
- **/GA** speeds access to data declared with [__declspec(thread)](../../cpp/declspec.md) in a Windows-based program. When this option is set, the [__tls_index](http://msdn.microsoft.com/library/windows/desktop/ms686749) macro is assumed to be 0.  
+ **/GA** speeds access to data declared with [__declspec(thread)](../../cpp/declspec.md) in a Windows-based program. When this option is set, the [__tls_index](https://msdn.microsoft.com/library/windows/desktop/ms686749) macro is assumed to be 0.  
   
  Using **/GA** for a DLL can result in bad code generation.  
   

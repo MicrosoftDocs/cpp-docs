@@ -72,7 +72,7 @@ void Execute(
  A custom parameter understood by the worker class. Also passed to `WorkerArchetype::Initialize` and `Terminate`.  
   
  *pOverlapped*  
- A pointer to the [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) structure used to create the queue on which work items were queued.  
+ A pointer to the [OVERLAPPED](https://msdn.microsoft.com/library/windows/desktop/ms684342) structure used to create the queue on which work items were queued.  
   
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 Called to initialize the worker object before any requests are passed to `WorkerArchetype::Execute`.  

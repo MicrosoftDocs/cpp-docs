@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComClassFactory2 Class
-This class implements the [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) interface.  
+This class implements the [IClassFactory2](https://msdn.microsoft.com/library/windows/desktop/ms692720) interface.  
   
 ## Syntax  
   
@@ -47,7 +47,7 @@ class CComClassFactory2 : public IClassFactory2,
 |[CComClassFactory2::RequestLicKey](#requestlickey)|Creates and returns a license key.|  
   
 ## Remarks  
- `CComClassFactory2` implements the [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) interface, which is an extension of [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364). `IClassFactory2` controls object creation through a license. A class factory executing on a licensed machine can provide a run-time license key. This license key allows an application to instantiate objects when a full machine license does not exist.  
+ `CComClassFactory2` implements the [IClassFactory2](https://msdn.microsoft.com/library/windows/desktop/ms692720) interface, which is an extension of [IClassFactory](https://msdn.microsoft.com/library/windows/desktop/ms694364). `IClassFactory2` controls object creation through a license. A class factory executing on a licensed machine can provide a run-time license key. This license key allows an application to instantiate objects when a full machine license does not exist.  
   
  ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), which declares [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) as the default class factory. To use `CComClassFactory2`, specify the [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) macro in your object's class definition. For example:  
   
@@ -132,7 +132,7 @@ STDMETHOD(CreateInstanceLic)(
  You can obtain a license key using [RequestLicKey](#requestlickey). In order to create an object on an unlicensed machine, you must call `CreateInstanceLic`.  
   
 ##  <a name="getlicinfo"></a>  CComClassFactory2::GetLicInfo  
- Fills a [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) structure with information that describes the class factory's licensing capabilities.  
+ Fills a [LICINFO](https://msdn.microsoft.com/library/windows/desktop/ms690590) structure with information that describes the class factory's licensing capabilities.  
   
 ```
 STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
@@ -168,7 +168,7 @@ STDMETHOD(LockServer)(BOOL fLock);
  Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be quickly created.  
   
 ##  <a name="requestlickey"></a>  CComClassFactory2::RequestLicKey  
- Creates and returns a license key, provided that the `fRuntimeKeyAvail` member of the [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) structure is TRUE.  
+ Creates and returns a license key, provided that the `fRuntimeKeyAvail` member of the [LICINFO](https://msdn.microsoft.com/library/windows/desktop/ms690590) structure is TRUE.  
   
 ```
 STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);

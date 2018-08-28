@@ -153,7 +153,7 @@ ms.workload: ["cplusplus"]
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/windows/uwp/gaming/e2e">
+                                <a href="https://msdn.microsoft.com/windows/uwp/gaming/e2e">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

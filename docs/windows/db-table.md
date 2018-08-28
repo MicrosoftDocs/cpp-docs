@@ -64,7 +64,7 @@ class CProducts {
 };
 ```
 
-For an example of this attribute used in an application, see the samples [AtlAgent](http://msdn.microsoft.com/52bef5da-c1a0-4223-b4e6-9e464b6db409) and [MultiRead](http://msdn.microsoft.com/5a2a915a-77dc-492f-94b2-1b809995dd5e).
+For an example of this attribute used in an application, see the samples [AtlAgent](https://msdn.microsoft.com/52bef5da-c1a0-4223-b4e6-9e464b6db409) and [MultiRead](https://msdn.microsoft.com/5a2a915a-77dc-492f-94b2-1b809995dd5e).
 
 ## Requirements
 

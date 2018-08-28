@@ -142,6 +142,6 @@ The member functions [do_narrow](../standard-library/ctype-class.md#do_narrow) a
 
 ## See also
 
-[facet Class](http://msdn.microsoft.com/Library/dd4f12f5-cb1b-457f-af56-2fb204216ec1)<br/>
+[facet Class](https://msdn.microsoft.com/Library/dd4f12f5-cb1b-457f-af56-2fb204216ec1)<br/>
 [ctype_base Class](../standard-library/ctype-base-class.md)<br/>
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

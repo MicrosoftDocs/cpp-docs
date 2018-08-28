@@ -53,7 +53,7 @@ Shows how to use the Windows Runtime C++ Template Library to start asynchronous 
 Shows how to use the Windows Runtime C++ Template Library to subscribe to and handle the events of a Windows Runtime object.
 
 [Walkthrough: Creating a UWP app using WRL and Media Foundation](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
-Learn how to create a UWP app that uses [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).
+Learn how to create a UWP app that uses [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/apps/ms694197).
 
 [How to: Create a Classic COM Component](../windows/how-to-create-a-classic-com-component-using-wrl.md)  
 Shows how to use the Windows Runtime C++ Template Library to create a basic COM component and a basic way to register and consume the COM component from a desktop app.

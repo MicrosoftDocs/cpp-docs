@@ -48,7 +48,7 @@ class CHotKeyCtrl : public CWnd
   
  When the user has chosen a key combination, the application can retrieve the specified key combination from the control and use the WM_SETHOTKEY message to set up the hot key in the system. Whenever the user presses the hot key thereafter, from any part of the system, the window specified in the WM_SETHOTKEY message receives a WM_SYSCOMMAND message specifying SC_HOTKEY. This message activates the window that receives it. The hot key remains valid until the application that called WM_SETHOTKEY exits.  
   
- This mechanism is different from the hot key support that depends on the WM_HOTKEY message and the Windows [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309) and [UnregisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646327) functions.  
+ This mechanism is different from the hot key support that depends on the WM_HOTKEY message and the Windows [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) and [UnregisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646327) functions.  
   
  For more information on using `CHotKeyCtrl`, see [Controls](../../mfc/controls-mfc.md) and [Using CHotKeyCtrl](../../mfc/using-chotkeyctrl.md).  
   
@@ -84,7 +84,7 @@ virtual BOOL Create(
   
 ### Parameters  
  *dwStyle*  
- Specifies the hot key control's style. Apply any combination of control styles. See [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK for more information.  
+ Specifies the hot key control's style. Apply any combination of control styles. See [Common Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK for more information.  
   
  *rect*  
  Specifies the hot key control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT structure](../../mfc/reference/rect-structure1.md).  
@@ -117,13 +117,13 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  *dwExStyle*  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  *dwStyle*  
- Specifies the hot key control's style. Apply any combination of control styles. For more information, see [Common Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK.  
+ Specifies the hot key control's style. Apply any combination of control styles. For more information, see [Common Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK.  
   
  *rect*  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
+ A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
  *pParentWnd*  
  A pointer to the window that is the control's parent.  

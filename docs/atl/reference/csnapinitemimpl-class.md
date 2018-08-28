@@ -78,7 +78,7 @@ class ATL_NO_VTABLE CSnapInItemImpl : public CSnapInItem
  **Header:** atlsnap.h  
   
 ##  <a name="addmenuitems"></a>  CSnapInItemImpl::AddMenuItems  
- This method implements the Win32 function [IExtendContextMenu::AddMenuItems](http://msdn.microsoft.com/library/aa814841).  
+ This method implements the Win32 function [IExtendContextMenu::AddMenuItems](https://msdn.microsoft.com/library/aa814841).  
   
 ```
 AddMenuItems(  
@@ -114,7 +114,7 @@ AddMenuItems(
 - CCT_UNINITIALIZED Data object has an invalid type.  
   
 ##  <a name="command"></a>  CSnapInItemImpl::Command  
- This method implements the Win32 function [IExtendContextMenu::Command](http://msdn.microsoft.com/library/aa814842).  
+ This method implements the Win32 function [IExtendContextMenu::Command](https://msdn.microsoft.com/library/aa814842).  
   
 ```
 Command(long lCommandID, DATA_OBJECT_TYPES type);
@@ -136,7 +136,7 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 - CCT_UNINITIALIZED Data object has an invalid type.  
   
 ##  <a name="createpropertypages"></a>  CSnapInItemImpl::CreatePropertyPages  
- This method implements the Win32 function [IExtendPropertySheet::CreatePropertyPages](http://msdn.microsoft.com/library/aa814846).  
+ This method implements the Win32 function [IExtendPropertySheet::CreatePropertyPages](https://msdn.microsoft.com/library/aa814846).  
   
 ```
 CreatePropertyPages(  
@@ -248,7 +248,7 @@ SCOPEDATAITEM m_scopeDataItem;
 ```  
   
 ##  <a name="m_resultdataitem"></a>  CSnapInItemImpl::m_resultDataItem  
- The [RESULTDATAITEM](http://msdn.microsoft.com/library/aa815165) structure of the snap-in data object.  
+ The [RESULTDATAITEM](https://msdn.microsoft.com/library/aa815165) structure of the snap-in data object.  
   
 ```
 RESULTDATAITEM m_resultDataItem;

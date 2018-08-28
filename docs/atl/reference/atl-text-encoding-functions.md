@@ -422,7 +422,7 @@ inline BOOL QPDecode(
  Pointer to a variable that contains the length in bytes of *szDest*. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.  
   
  [in] *dwFlags*  
- Flags describing how the conversion is to be performed. See [ATLSMTP_QPENCODE Flags](http://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
+ Flags describing how the conversion is to be performed. See [ATLSMTP_QPENCODE Flags](https://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  

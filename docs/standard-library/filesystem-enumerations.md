@@ -22,7 +22,7 @@ This topic documents the enums in the filesystem header.
 
 ## <a name="copy_options"></a>  copy_options
 
-An enumeration of bitmask values that is used with [copy](http://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) and [copy_file](http://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) functions to specify behavior.
+An enumeration of bitmask values that is used with [copy](https://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) and [copy_file](https://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) functions to specify behavior.
 
 ### Syntax
 

@@ -38,7 +38,7 @@ class IPropertyPage2Impl : public IPropertyPageImpl<T>
 |[IPropertyPage2Impl::EditProperty](#editproperty)|Specifies which property control will receive the focus when the property page is activated. The ATL implementation returns E_NOTIMPL.|  
   
 ## Remarks  
- The [IPropertyPage2](http://msdn.microsoft.com/library/windows/desktop/ms683996) interface extends [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) by adding the `EditProperty` method. This method allows a client to select a specific property in a property page object.  
+ The [IPropertyPage2](https://msdn.microsoft.com/library/windows/desktop/ms683996) interface extends [IPropertyPage](https://msdn.microsoft.com/library/windows/desktop/ms691246) by adding the `EditProperty` method. This method allows a client to select a specific property in a property page object.  
   
  Class `IPropertyPage2Impl` simply returns E_NOTIMPL for `IPropertyPage2::EditProperty`. However, it inherits the default implementation of [IPropertyPageImpl](../../atl/reference/ipropertypageimpl-class.md) and implements `IUnknown` by sending information to the dump device in debug builds.  
   
@@ -67,7 +67,7 @@ HRESULT EditProperty(DISPID dispID);
  Returns E_NOTIMPL.  
   
 ### Remarks  
- See [IPropertyPage2::EditProperty](http://msdn.microsoft.com/library/windows/desktop/ms690353) in the Windows SDK.  
+ See [IPropertyPage2::EditProperty](https://msdn.microsoft.com/library/windows/desktop/ms690353) in the Windows SDK.  
   
 ## See Also  
  [IPerPropertyBrowsingImpl Class](../../atl/reference/iperpropertybrowsingimpl-class.md)   

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComClassFactory Class
-This class implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface.  
+This class implements the [IClassFactory](https://msdn.microsoft.com/library/windows/desktop/ms694364) interface.  
   
 ## Syntax  
   
@@ -33,7 +33,7 @@ class CComClassFactory
 |[CComClassFactory::LockServer](#lockserver)|Locks the class factory in memory.|  
   
 ## Remarks  
- `CComClassFactory` implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. `IClassFactory` must be implemented for every class that you register in the system registry and to which you assign a CLSID.  
+ `CComClassFactory` implements the [IClassFactory](https://msdn.microsoft.com/library/windows/desktop/ms694364) interface, which contains methods for creating an object of a particular CLSID, as well as locking the class factory in memory to allow new objects to be created more quickly. `IClassFactory` must be implemented for every class that you register in the system registry and to which you assign a CLSID.  
   
  ATL objects normally acquire a class factory by deriving from [CComCoClass](../../atl/reference/ccomcoclass-class.md). This class includes the macro [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), which declares `CComClassFactory` as the default class factory. To override this default, specify one of the `DECLARE_CLASSFACTORY`*XXX* macros in your class definition. For example, the [DECLARE_CLASSFACTORY_EX](aggregation-and-class-factory-macros.md#declare_classfactory_ex) macro uses the specified class for the class factory:  
   

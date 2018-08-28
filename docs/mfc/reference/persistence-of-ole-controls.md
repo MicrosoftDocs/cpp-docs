@@ -81,7 +81,7 @@ hBlobDefault
   
 -   A block of memory containing the actual binary data.  
   
- Note that `PX_Blob` will allocate memory, using the Windows [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) API, when loading BLOB-type properties. You are responsible for freeing this memory. Therefore, the destructor of your control should call [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579) on any BLOB-type property handles to free up any memory allocated to your control.  
+ Note that `PX_Blob` will allocate memory, using the Windows [GlobalAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366574) API, when loading BLOB-type properties. You are responsible for freeing this memory. Therefore, the destructor of your control should call [GlobalFree](https://msdn.microsoft.com/library/windows/desktop/aa366579) on any BLOB-type property handles to free up any memory allocated to your control.  
   
 ##  <a name="px_bool"></a>  PX_Bool  
  Call this function within your control's `DoPropExchange` member function to serialize or initialize a property of type BOOL.  

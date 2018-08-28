@@ -46,7 +46,7 @@ class CReBarCtrl : public CWnd
 |[CReBarCtrl::GetBarHeight](#getbarheight)|Retrieves the height of the rebar control.|  
 |[CReBarCtrl::GetBarInfo](#getbarinfo)|Retrieves information about the rebar control and the image list it uses.|  
 |[CReBarCtrl::GetBkColor](#getbkcolor)|Retrieves a rebar control's default background color.|  
-|[CReBarCtrl::GetColorScheme](#getcolorscheme)|Retrieves the [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) structure associated with the rebar control.|  
+|[CReBarCtrl::GetColorScheme](#getcolorscheme)|Retrieves the [COLORSCHEME](https://msdn.microsoft.com/library/windows/desktop/bb775502) structure associated with the rebar control.|  
 |[CReBarCtrl::GetDropTarget](#getdroptarget)|Retrieves a rebar control's `IDropTarget` interface pointer.|  
 |[CReBarCtrl::GetExtendedStyle](#getextendedstyle)|Gets the extended style of the current rebar control.|  
 |[CReBarCtrl::GetImageList](#getimagelist)|Retrieves the image list associated with a rebar control.|  
@@ -105,7 +105,7 @@ class CReBarCtrl : public CWnd
   
 -   Custom draw functionality.  
   
--   A variety of control styles in addition to standard window styles. For a list of these styles, see [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK.  
+-   A variety of control styles in addition to standard window styles. For a list of these styles, see [Rebar Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK.  
   
  For more information, see [Using CReBarCtrl](../../mfc/using-crebarctrl.md).  
   
@@ -122,7 +122,7 @@ class CReBarCtrl : public CWnd
  **Header:** afxcmn.h  
   
 ##  <a name="begindrag"></a>  CReBarCtrl::BeginDrag  
- Implements the behavior of the Win32 message [RB_BEGINDRAG](http://msdn.microsoft.com/library/windows/desktop/bb774429), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_BEGINDRAG](https://msdn.microsoft.com/library/windows/desktop/bb774429), as described in the Windows SDK.  
   
 ```  
 void BeginDrag(
@@ -150,10 +150,10 @@ virtual BOOL Create(
   
 ### Parameters  
  *dwStyle*  
- Specifies the combination of rebar control styles applied to the control. See [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK for a list of supported styles.  
+ Specifies the combination of rebar control styles applied to the control. See [Rebar Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK for a list of supported styles.  
   
  *rect*  
- A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure, which is the position and size of the rebar control.  
+ A reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, which is the position and size of the rebar control.  
   
  *pParentWnd*  
  A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the rebar control. It must not be NULL.  
@@ -190,13 +190,13 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  *dwExStyle*  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  *dwStyle*  
- Specifies the combination of rebar control styles applied to the control. For a list of supported styles, see [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK.  
+ Specifies the combination of rebar control styles applied to the control. For a list of supported styles, see [Rebar Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK.  
   
  *rect*  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
+ A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
   
  *pParentWnd*  
  A pointer to the window that is the control's parent.  
@@ -221,7 +221,7 @@ CReBarCtrl();
   See the example for [CReBarCtrl::Create](#create).  
   
 ##  <a name="deleteband"></a>  CReBarCtrl::DeleteBand  
- Implements the behavior of the Win32 message [RB_DELETEBAND](http://msdn.microsoft.com/library/windows/desktop/bb774431), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_DELETEBAND](https://msdn.microsoft.com/library/windows/desktop/bb774431), as described in the Windows SDK.  
   
 ```  
 BOOL DeleteBand(UINT uBand);
@@ -249,14 +249,14 @@ void DragMove(DWORD dwPos = (DWORD)-1);
  A DWORD value that contains the new mouse coordinates. The horizontal coordinate is contained in the LOWORD and the vertical coordinate is contained in the HIWORD. If you pass (DWORD)-1, the rebar control will use the position of the mouse the last time the control's thread called `GetMessage` or `PeekMessage`.  
   
 ##  <a name="enddrag"></a>  CReBarCtrl::EndDrag  
- Implements the behavior of the Win32 message [RB_ENDDRAG](http://msdn.microsoft.com/library/windows/desktop/bb774435), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_ENDDRAG](https://msdn.microsoft.com/library/windows/desktop/bb774435), as described in the Windows SDK.  
   
 ```  
 void EndDrag();
 ```  
   
 ##  <a name="getbandborders"></a>  CReBarCtrl::GetBandBorders  
- Implements the behavior of the Win32 message [RB_GETBANDBORDERS](http://msdn.microsoft.com/library/windows/desktop/bb774437), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETBANDBORDERS](https://msdn.microsoft.com/library/windows/desktop/bb774437), as described in the Windows SDK.  
   
 ```  
 void GetBandBorders(
@@ -269,10 +269,10 @@ void GetBandBorders(
  Zero-based index of the band for which the borders will be retrieved.  
   
  *prc*  
- A pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the band borders. If the rebar control has the RBS_BANDBORDERS style, each member of this structure will receive the number of pixels, on the corresponding side of the band, that constitute the border. If the rebar control does not have the RBS_BANDBORDERS style, only the left member of this structure receives valid information. For a description of rebar control styles, see [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK.  
+ A pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the band borders. If the rebar control has the RBS_BANDBORDERS style, each member of this structure will receive the number of pixels, on the corresponding side of the band, that constitute the border. If the rebar control does not have the RBS_BANDBORDERS style, only the left member of this structure receives valid information. For a description of rebar control styles, see [Rebar Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK.  
   
 ##  <a name="getbandcount"></a>  CReBarCtrl::GetBandCount  
- Implements the behavior of the Win32 message [RB_GETBANDCOUNT](http://msdn.microsoft.com/library/windows/desktop/bb774439), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETBANDCOUNT](https://msdn.microsoft.com/library/windows/desktop/bb774439), as described in the Windows SDK.  
   
 ```  
 UINT GetBandCount() const;  
@@ -282,7 +282,7 @@ UINT GetBandCount() const;
  The number of bands assigned to the control.  
   
 ##  <a name="getbandinfo"></a>  CReBarCtrl::GetBandInfo  
- Implements the behavior of the Win32 message [RB_GETBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774451) as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETBANDINFO](https://msdn.microsoft.com/library/windows/desktop/bb774451) as described in the Windows SDK.  
   
 ```  
 BOOL GetBandInfo(
@@ -295,7 +295,7 @@ BOOL GetBandInfo(
  Zero-based index of the band for which the information will be retrieved.  
   
  *prbbi*  
- A pointer to a [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) structure to receive the band information. You must set the `cbSize` member of this structure to `sizeof(REBARBANDINFO)` and set the `fMask` member to the items you want to retrieve before sending this message.  
+ A pointer to a [REBARBANDINFO](https://msdn.microsoft.com/library/windows/desktop/bb774393) structure to receive the band information. You must set the `cbSize` member of this structure to `sizeof(REBARBANDINFO)` and set the `fMask` member to the items you want to retrieve before sending this message.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -309,10 +309,10 @@ void GetBandMargins(PMARGINS pMargins);
   
 ### Parameters  
  *pMargins*  
- A pointer to a [MARGINS](http://msdn.microsoft.com/library/windows/desktop/bb773244)structure that will receive the information.  
+ A pointer to a [MARGINS](https://msdn.microsoft.com/library/windows/desktop/bb773244)structure that will receive the information.  
   
 ### Remarks  
- This member function emulates the functionality of the [RB_GETBANDMARGINS](http://msdn.microsoft.com/library/windows/desktop/bb774453) message, as described in the Windows SDK.  
+ This member function emulates the functionality of the [RB_GETBANDMARGINS](https://msdn.microsoft.com/library/windows/desktop/bb774453) message, as described in the Windows SDK.  
   
 ##  <a name="getbarheight"></a>  CReBarCtrl::GetBarHeight  
  Retrieves the height of the rebar bar.  
@@ -325,7 +325,7 @@ UINT GetBarHeight() const;
  Value that represents the height, in pixels, of the control.  
   
 ##  <a name="getbarinfo"></a>  CReBarCtrl::GetBarInfo  
- Implements the behavior of the Win32 message [RB_GETBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774457), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETBARINFO](https://msdn.microsoft.com/library/windows/desktop/bb774457), as described in the Windows SDK.  
   
 ```  
 BOOL GetBarInfo(REBARINFO* prbi) const;  
@@ -333,13 +333,13 @@ BOOL GetBarInfo(REBARINFO* prbi) const;
   
 ### Parameters  
  *prbi*  
- A pointer to a [REBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774395) structure that will receive the rebar control information. You must set the *cbSize* member of this structure to `sizeof(REBARINFO)` before sending this message.  
+ A pointer to a [REBARINFO](https://msdn.microsoft.com/library/windows/desktop/bb774395) structure that will receive the rebar control information. You must set the *cbSize* member of this structure to `sizeof(REBARINFO)` before sending this message.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
   
 ##  <a name="getbkcolor"></a>  CReBarCtrl::GetBkColor  
- Implements the behavior of the Win32 message [RB_GETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774459), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETBKCOLOR](https://msdn.microsoft.com/library/windows/desktop/bb774459), as described in the Windows SDK.  
   
 ```  
 COLORREF GetBkColor() const;  
@@ -349,7 +349,7 @@ COLORREF GetBkColor() const;
  A COLORREF value that represent the current default background color.  
   
 ##  <a name="getcolorscheme"></a>  CReBarCtrl::GetColorScheme  
- Retrieves the [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) structure for the rebar control.  
+ Retrieves the [COLORSCHEME](https://msdn.microsoft.com/library/windows/desktop/bb775502) structure for the rebar control.  
   
 ```  
 BOOL GetColorScheme(COLORSCHEME* lpcs);
@@ -357,7 +357,7 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
   
 ### Parameters  
  *lpcs*  
- A pointer to a [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) structure, as described in the Windows SDK.  
+ A pointer to a [COLORSCHEME](https://msdn.microsoft.com/library/windows/desktop/bb775502) structure, as described in the Windows SDK.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -366,14 +366,14 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
  The `COLORSCHEME` structure includes the button highlight color and the button shadow color.  
   
 ##  <a name="getdroptarget"></a>  CReBarCtrl::GetDropTarget  
- Implements the behavior of the Win32 message [RB_GETDROPTARGET](http://msdn.microsoft.com/library/windows/desktop/bb774463), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETDROPTARGET](https://msdn.microsoft.com/library/windows/desktop/bb774463), as described in the Windows SDK.  
   
 ```  
 IDropTarget* GetDropTarget() const;  
 ```  
   
 ### Return Value  
- A pointer to an [IDropTarget](http://msdn.microsoft.com/library/windows/desktop/ms679679) interface.  
+ A pointer to an [IDropTarget](https://msdn.microsoft.com/library/windows/desktop/ms679679) interface.  
   
 ##  <a name="getextendedstyle"></a>  CReBarCtrl::GetExtendedStyle  
  Gets the extended styles of the current rebar control.  
@@ -386,7 +386,7 @@ DWORD GetExtendedStyle() const;
  A bitwise combination (OR) of flags that indicate the extended styles. The possible flags are RBS_EX_SPLITTER and RBS_EX_TRANSPARENT. For more information, see the *dwMask* parameter of the [CReBarCtrl::SetExtendedStyle](#setextendedstyle) method.  
   
 ### Remarks  
- This method sends the [RB_GETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb774433) message, which is described in the Windows SDK.  
+ This method sends the [RB_GETEXTENDEDSTYLE](https://msdn.microsoft.com/library/windows/desktop/bb774433) message, which is described in the Windows SDK.  
   
 ##  <a name="getimagelist"></a>  CReBarCtrl::GetImageList  
  Gets the `CImageList` object associated with a rebar control.  
@@ -399,7 +399,7 @@ CImageList* GetImageList() const;
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object. Returns NULL if no image list is set for the control.  
   
 ### Remarks  
- This member function uses size and mask information stored in the [REBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774395) structure, as described in the Windows SDK.  
+ This member function uses size and mask information stored in the [REBARINFO](https://msdn.microsoft.com/library/windows/desktop/bb774395) structure, as described in the Windows SDK.  
   
 ##  <a name="getpalette"></a>  CReBarCtrl::GetPalette  
  Retrieves the rebar control's current palette.  
@@ -418,7 +418,7 @@ CPalette* GetPalette() const;
  [!code-cpp[NVC_MFC_CReBarCtrl#5](../../mfc/reference/codesnippet/cpp/crebarctrl-class_3.cpp)]  
   
 ##  <a name="getrect"></a>  CReBarCtrl::GetRect  
- Implements the behavior of the Win32 message [RB_GETRECT](http://msdn.microsoft.com/library/windows/desktop/bb774469), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETRECT](https://msdn.microsoft.com/library/windows/desktop/bb774469), as described in the Windows SDK.  
   
 ```  
 BOOL GetRect(
@@ -431,7 +431,7 @@ BOOL GetRect(
  Zero-based index of a band in the rebar control.  
   
  *prc*  
- A pointer to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the bounds of the rebar band.  
+ A pointer to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that will receive the bounds of the rebar band.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -440,7 +440,7 @@ BOOL GetRect(
  [!code-cpp[NVC_MFC_CReBarCtrl#6](../../mfc/reference/codesnippet/cpp/crebarctrl-class_4.cpp)]  
   
 ##  <a name="getrowcount"></a>  CReBarCtrl::GetRowCount  
- Implements the behavior of the Win32 message [RB_GETROWCOUNT](http://msdn.microsoft.com/library/windows/desktop/bb774471), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETROWCOUNT](https://msdn.microsoft.com/library/windows/desktop/bb774471), as described in the Windows SDK.  
   
 ```  
 UINT GetRowCount() const;  
@@ -453,7 +453,7 @@ UINT GetRowCount() const;
  [!code-cpp[NVC_MFC_CReBarCtrl#7](../../mfc/reference/codesnippet/cpp/crebarctrl-class_5.cpp)]  
   
 ##  <a name="getrowheight"></a>  CReBarCtrl::GetRowHeight  
- Implements the behavior of the Win32 message [RB_GETROWHEIGHT](http://msdn.microsoft.com/library/windows/desktop/bb774473), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETROWHEIGHT](https://msdn.microsoft.com/library/windows/desktop/bb774473), as described in the Windows SDK.  
   
 ```  
 UINT GetRowHeight(UINT uRow) const;  
@@ -470,7 +470,7 @@ UINT GetRowHeight(UINT uRow) const;
  [!code-cpp[NVC_MFC_CReBarCtrl#8](../../mfc/reference/codesnippet/cpp/crebarctrl-class_6.cpp)]  
   
 ##  <a name="gettextcolor"></a>  CReBarCtrl::GetTextColor  
- Implements the behavior of the Win32 message [RB_GETTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774475), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETTEXTCOLOR](https://msdn.microsoft.com/library/windows/desktop/bb774475), as described in the Windows SDK.  
   
 ```  
 COLORREF GetTextColor() const;  
@@ -480,7 +480,7 @@ COLORREF GetTextColor() const;
  A COLORREF value that represent the current default text color.  
   
 ##  <a name="gettooltips"></a>  CReBarCtrl::GetToolTips  
- Implements the behavior of the Win32 message [RB_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb774477), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_GETTOOLTIPS](https://msdn.microsoft.com/library/windows/desktop/bb774477), as described in the Windows SDK.  
   
 ```  
 CToolTipCtrl* GetToolTips() const;  
@@ -493,7 +493,7 @@ CToolTipCtrl* GetToolTips() const;
  Note that the MFC implementation of `GetToolTips` returns a pointer to a `CToolTipCtrl`, rather than an HWND.  
   
 ##  <a name="hittest"></a>  CReBarCtrl::HitTest  
- Implements the behavior of the Win32 message [RB_HITTEST](http://msdn.microsoft.com/library/windows/desktop/bb774494), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_HITTEST](https://msdn.microsoft.com/library/windows/desktop/bb774494), as described in the Windows SDK.  
   
 ```  
 int HitTest(RBHITTESTINFO* prbht);
@@ -501,13 +501,13 @@ int HitTest(RBHITTESTINFO* prbht);
   
 ### Parameters  
  *prbht*  
- A pointer to a [RBHITTESTINFO](http://msdn.microsoft.com/library/windows/desktop/bb774391) structure. Before sending the message, the `pt` member of this structure must be initialized to the point that will be tested, in client coordinates.  
+ A pointer to a [RBHITTESTINFO](https://msdn.microsoft.com/library/windows/desktop/bb774391) structure. Before sending the message, the `pt` member of this structure must be initialized to the point that will be tested, in client coordinates.  
   
 ### Return Value  
  The zero-based index of the band at the given point, or -1 if no rebar band was at the point.  
   
 ##  <a name="idtoindex"></a>  CReBarCtrl::IDToIndex  
- Implements the behavior of the Win32 message [RB_IDTOINDEX](http://msdn.microsoft.com/library/windows/desktop/bb774496), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_IDTOINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774496), as described in the Windows SDK.  
   
 ```  
 int IDToIndex(UINT uBandID) const;  
@@ -515,13 +515,13 @@ int IDToIndex(UINT uBandID) const;
   
 ### Parameters  
  *uBandID*  
- The application-defined identifier of the specified band, passed in the `wID` member of the [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) structure when the band is inserted.  
+ The application-defined identifier of the specified band, passed in the `wID` member of the [REBARBANDINFO](https://msdn.microsoft.com/library/windows/desktop/bb774393) structure when the band is inserted.  
   
 ### Return Value  
  The zero-based band index if successful, or -1 otherwise. If duplicate band indices exist, the first one is returned.  
   
 ##  <a name="insertband"></a>  CReBarCtrl::InsertBand  
- Implements the behavior of the Win32 message [RB_INSERTBAND](http://msdn.microsoft.com/library/windows/desktop/bb774498), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_INSERTBAND](https://msdn.microsoft.com/library/windows/desktop/bb774498), as described in the Windows SDK.  
   
 ```  
 BOOL InsertBand(
@@ -534,7 +534,7 @@ BOOL InsertBand(
  Zero-based index of the location where the band will be inserted. If you set this parameter to -1, the control will add the new band at the last location.  
   
  *prbbi*  
- A pointer to a [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) structure that defines the band to be inserted. You must set the *cbSize* member of this structure to `sizeof(REBARBANDINFO)` before calling this function.  
+ A pointer to a [REBARBANDINFO](https://msdn.microsoft.com/library/windows/desktop/bb774393) structure that defines the band to be inserted. You must set the *cbSize* member of this structure to `sizeof(REBARBANDINFO)` before calling this function.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -554,7 +554,7 @@ void MaximizeBand(UINT uBand);
  Zero-based index of the band to be maximized.  
   
 ### Remarks  
- Implements the behavior of the Win32 message [RB_MAXIMIZEBAND](http://msdn.microsoft.com/library/windows/desktop/bb774500) with `fIdeal` set to 0, as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_MAXIMIZEBAND](https://msdn.microsoft.com/library/windows/desktop/bb774500) with `fIdeal` set to 0, as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CReBarCtrl#10](../../mfc/reference/codesnippet/cpp/crebarctrl-class_8.cpp)]  
@@ -571,13 +571,13 @@ void MinimizeBand(UINT uBand);
  Zero-based index of the band to be minimized.  
   
 ### Remarks  
- Implements the behavior of the Win32 message [RB_MINIMIZEBAND](http://msdn.microsoft.com/library/windows/desktop/bb774502), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_MINIMIZEBAND](https://msdn.microsoft.com/library/windows/desktop/bb774502), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CReBarCtrl#11](../../mfc/reference/codesnippet/cpp/crebarctrl-class_9.cpp)]  
   
 ##  <a name="moveband"></a>  CReBarCtrl::MoveBand  
- Implements the behavior of the Win32 message [RB_MOVEBAND](http://msdn.microsoft.com/library/windows/desktop/bb774504), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_MOVEBAND](https://msdn.microsoft.com/library/windows/desktop/bb774504), as described in the Windows SDK.  
   
 ```  
 BOOL MoveBand(
@@ -596,7 +596,7 @@ BOOL MoveBand(
  Nonzero if successful; otherwise zero.  
   
 ##  <a name="pushchevron"></a>  CReBarCtrl::PushChevron  
- Implements the behavior of the Win32 message [RB_PUSHCHEVRON](http://msdn.microsoft.com/library/windows/desktop/bb774506), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_PUSHCHEVRON](https://msdn.microsoft.com/library/windows/desktop/bb774506), as described in the Windows SDK.  
   
 ```  
 void PushChevron(
@@ -609,7 +609,7 @@ void PushChevron(
  Zero-based index of the band whose chevron is to be pushed.  
   
  *lAppValue*  
- An application defined 32-bit value. See *lAppValue* in [RB_PUSHCHEVRON](http://msdn.microsoft.com/library/windows/desktop/bb774506) in the Windows SDK.  
+ An application defined 32-bit value. See *lAppValue* in [RB_PUSHCHEVRON](https://msdn.microsoft.com/library/windows/desktop/bb774506) in the Windows SDK.  
   
 ##  <a name="restoreband"></a>  CReBarCtrl::RestoreBand  
  Resizes a band in a rebar control to its ideal size.  
@@ -623,13 +623,13 @@ void RestoreBand(UINT uBand);
  Zero-based index of the band to be maximized.  
   
 ### Remarks  
- Implements the behavior of the Win32 message [RB_MAXIMIZEBAND](http://msdn.microsoft.com/library/windows/desktop/bb774500) with `fIdeal` set to 1, as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_MAXIMIZEBAND](https://msdn.microsoft.com/library/windows/desktop/bb774500) with `fIdeal` set to 1, as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CReBarCtrl#12](../../mfc/reference/codesnippet/cpp/crebarctrl-class_10.cpp)]  
   
 ##  <a name="setbandinfo"></a>  CReBarCtrl::SetBandInfo  
- Implements the behavior of the Win32 message [RB_SETBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774508), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_SETBANDINFO](https://msdn.microsoft.com/library/windows/desktop/bb774508), as described in the Windows SDK.  
   
 ```  
 BOOL SetBandInfo(
@@ -642,7 +642,7 @@ BOOL SetBandInfo(
  Zero-based index of the band to receive the new settings.  
   
  *prbbi*  
- Pointer to a [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) structure that defines the band to be inserted. You must set the `cbSize` member of this structure to `sizeof(REBARBANDINFO)` before sending this message.  
+ Pointer to a [REBARBANDINFO](https://msdn.microsoft.com/library/windows/desktop/bb774393) structure that defines the band to be inserted. You must set the `cbSize` member of this structure to `sizeof(REBARBANDINFO)` before sending this message.  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -670,7 +670,7 @@ BOOL SetBandWidth(
  TRUE if the method is successful; otherwise, FALSE.  
   
 ### Remarks  
- This method sends the [RB_SETBANDWIDTH](http://msdn.microsoft.com/library/windows/desktop/bb774511) message, which is described in the Windows SDK.  
+ This method sends the [RB_SETBANDWIDTH](https://msdn.microsoft.com/library/windows/desktop/bb774511) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, `m_rebar`, that is used to access the current rebar control. This variable is used in the next example.  
@@ -683,7 +683,7 @@ BOOL SetBandWidth(
  [!code-cpp[NVC_MFC_CReBarCtrl_s1#2](../../mfc/reference/codesnippet/cpp/crebarctrl-class_13.cpp)]  
   
 ##  <a name="setbarinfo"></a>  CReBarCtrl::SetBarInfo  
- Implements the behavior of the Win32 message [RB_SETBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774513), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_SETBARINFO](https://msdn.microsoft.com/library/windows/desktop/bb774513), as described in the Windows SDK.  
   
 ```  
 BOOL SetBarInfo(REBARINFO* prbi);
@@ -691,7 +691,7 @@ BOOL SetBarInfo(REBARINFO* prbi);
   
 ### Parameters  
  *prbi*  
- A pointer to a [REBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb774395) structure that contains the information to be set. You must set the `cbSize` member of this structure to `sizeof(REBARINFO)` before sending this message  
+ A pointer to a [REBARINFO](https://msdn.microsoft.com/library/windows/desktop/bb774395) structure that contains the information to be set. You must set the `cbSize` member of this structure to `sizeof(REBARINFO)` before sending this message  
   
 ### Return Value  
  Nonzero if successful; otherwise zero.  
@@ -700,7 +700,7 @@ BOOL SetBarInfo(REBARINFO* prbi);
  [!code-cpp[NVC_MFC_CReBarCtrl#14](../../mfc/reference/codesnippet/cpp/crebarctrl-class_14.cpp)]  
   
 ##  <a name="setbkcolor"></a>  CReBarCtrl::SetBkColor  
- Implements the behavior of the Win32 message [RB_SETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774515), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_SETBKCOLOR](https://msdn.microsoft.com/library/windows/desktop/bb774515), as described in the Windows SDK.  
   
 ```  
 COLORREF SetBkColor(COLORREF clr);
@@ -711,7 +711,7 @@ COLORREF SetBkColor(COLORREF clr);
  The COLORREF value that represents the new default background color.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that represents the previous default background color.  
+ A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value that represents the previous default background color.  
   
 ### Remarks  
  See this topic for more information about when to set the background color, and how to set the default.  
@@ -725,7 +725,7 @@ void SetColorScheme(const COLORSCHEME* lpcs);
   
 ### Parameters  
  *lpcs*  
- A pointer to a [COLORSCHEME](http://msdn.microsoft.com/library/windows/desktop/bb775502) structure, as described in the Windows SDK.  
+ A pointer to a [COLORSCHEME](https://msdn.microsoft.com/library/windows/desktop/bb775502) structure, as described in the Windows SDK.  
   
 ### Remarks  
  The `COLORSCHEME` structure includes both the button highlight color and the button shadow color.  
@@ -743,14 +743,14 @@ DWORD SetExtendedStyle(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwMask*|A bitwise combination (OR) of flags that specify which flags in the *dwStyleEx* parameter apply. Use one or more of the following values:<br /><br /> RBS_EX_SPLITTER: By default, show the splitter on the bottom in horizontal mode, and to the right in vertical mode.<br /><br /> RBS_EX_TRANSPARENT: Forward the [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055) message to the parent window.|  
+|[in] *dwMask*|A bitwise combination (OR) of flags that specify which flags in the *dwStyleEx* parameter apply. Use one or more of the following values:<br /><br /> RBS_EX_SPLITTER: By default, show the splitter on the bottom in horizontal mode, and to the right in vertical mode.<br /><br /> RBS_EX_TRANSPARENT: Forward the [WM_ERASEBKGND](https://msdn.microsoft.com/library/windows/desktop/ms648055) message to the parent window.|  
 |[in] *dwStyleEx*|A bitwise combination (OR) of flags that specify the styles to apply. To set a style, specify the same flag that is used in the *dwMask* parameter. To reset a style, specify binary zero.|  
   
 ### Return Value  
  The previous extended style.  
   
 ### Remarks  
- This method sends the [RB_SETEXTENDEDSTYLE](http://msdn.microsoft.com/library/windows/desktop/bb774519) message, which is described in the Windows SDK.  
+ This method sends the [RB_SETEXTENDEDSTYLE](https://msdn.microsoft.com/library/windows/desktop/bb774519) message, which is described in the Windows SDK.  
   
 ##  <a name="setimagelist"></a>  CReBarCtrl::SetImageList  
  Assigns an image list to a rebar control.  
@@ -767,7 +767,7 @@ BOOL SetImageList(CImageList* pImageList);
  Nonzero if successful; otherwise zero.  
   
 ##  <a name="setowner"></a>  CReBarCtrl::SetOwner  
- Implements the behavior of the Win32 message [RB_SETPARENT](http://msdn.microsoft.com/library/windows/desktop/bb774522), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_SETPARENT](https://msdn.microsoft.com/library/windows/desktop/bb774522), as described in the Windows SDK.  
   
 ```  
 CWnd* SetOwner(CWnd* pWnd);
@@ -787,7 +787,7 @@ CWnd* SetOwner(CWnd* pWnd);
 >  This member function does not change the actual parent that was set when the control was created; rather it sends notification messages to the window you specify.  
   
 ##  <a name="setpalette"></a>  CReBarCtrl::SetPalette  
- Implements the behavior of the Win32 message [RB_SETPALETTE](http://msdn.microsoft.com/library/windows/desktop/bb774520), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_SETPALETTE](https://msdn.microsoft.com/library/windows/desktop/bb774520), as described in the Windows SDK.  
   
 ```  
 CPalette* SetPalette(HPALETTE hPal);
@@ -804,7 +804,7 @@ CPalette* SetPalette(HPALETTE hPal);
  Note that this member function uses a `CPalette` object as its return value, rather than an HPALETTE.  
   
 ##  <a name="settextcolor"></a>  CReBarCtrl::SetTextColor  
- Implements the behavior of the Win32 message [RB_SETTEXTCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb774524), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_SETTEXTCOLOR](https://msdn.microsoft.com/library/windows/desktop/bb774524), as described in the Windows SDK.  
   
 ```  
 COLORREF SetTextColor(COLORREF clr);
@@ -815,7 +815,7 @@ COLORREF SetTextColor(COLORREF clr);
  A COLORREF value that represents the new text color in the `CReBarCtrl` object.  
   
 ### Return Value  
- The [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value representing the previous text color associated with the `CReBarCtrl` object.  
+ The [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value representing the previous text color associated with the `CReBarCtrl` object.  
   
 ### Remarks  
  It is provided to support text color flexibility in a rebar control.  
@@ -849,10 +849,10 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
  The return value is not used.  
   
 ### Remarks  
- This member function emulates the functionality of the [RB_SETWINDOWTHEME](http://msdn.microsoft.com/library/windows/desktop/bb774530) message, as described in the Windows SDK.  
+ This member function emulates the functionality of the [RB_SETWINDOWTHEME](https://msdn.microsoft.com/library/windows/desktop/bb774530) message, as described in the Windows SDK.  
   
 ##  <a name="showband"></a>  CReBarCtrl::ShowBand  
- Implements the behavior of the Win32 message [RB_SHOWBAND](http://msdn.microsoft.com/library/windows/desktop/bb774532), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_SHOWBAND](https://msdn.microsoft.com/library/windows/desktop/bb774532), as described in the Windows SDK.  
   
 ```  
 BOOL ShowBand(
@@ -871,7 +871,7 @@ BOOL ShowBand(
  Nonzero if successful; otherwise zero.  
   
 ##  <a name="sizetorect"></a>  CReBarCtrl::SizeToRect  
- Implements the behavior of the Win32 message [RB_SIZETORECT](http://msdn.microsoft.com/library/windows/desktop/bb774534), as described in the Windows SDK.  
+ Implements the behavior of the Win32 message [RB_SIZETORECT](https://msdn.microsoft.com/library/windows/desktop/bb774534), as described in the Windows SDK.  
   
 ```  
 BOOL SizeToRect(CRect& rect);

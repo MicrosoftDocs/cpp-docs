@@ -24,7 +24,7 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 |[IChapteredRowset](/previous-versions/windows/desktop/ms718180\(v=vs.85\))|Optional|No|  
 |[IColumnsInfo2](/previous-versions/windows/desktop/ms712953\(v=vs.85\))|Optional|No|  
 |[IColumnsRowset](/previous-versions/windows/desktop/ms722657\(v=vs.85\))|Optional|No|  
-|[IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)|Optional|Yes (through ATL)|  
+|[IConnectionPointContainer](https://msdn.microsoft.com/library/windows/desktop/ms683857)|Optional|Yes (through ATL)|  
 |[IDBAsynchStatus](/previous-versions/windows/desktop/ms709832\(v=vs.85\))|Optional|No|  
 |[IGetRow](/previous-versions/windows/desktop/ms718047\(v=vs.85\))|Optional|No|  
 |[IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\))|Optional|Yes|  

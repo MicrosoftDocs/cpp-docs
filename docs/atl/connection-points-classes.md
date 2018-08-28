@@ -19,7 +19,7 @@ The following classes provide support for connection points:
   
 -   [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) Implements a connection point.  
   
--   [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) Implements a connection point representing the [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) interface.  
+-   [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) Implements a connection point representing the [IPropertyNotifySink](https://msdn.microsoft.com/library/windows/desktop/ms692638) interface.  
   
 -   [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) Manages unlimited connections between a connection point and its sinks.  
   

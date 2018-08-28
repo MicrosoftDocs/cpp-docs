@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IProvideClassInfo2Impl Class
-This class provides a default implementation of the [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) and [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) methods.  
+This class provides a default implementation of the [IProvideClassInfo](https://msdn.microsoft.com/library/windows/desktop/ms687303) and [IProvideClassInfo2](https://msdn.microsoft.com/library/windows/desktop/ms693764) methods.  
   
 ## Syntax  
   
@@ -67,7 +67,7 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 |[IProvideClassInfo2Impl::_tih](#_tih)|Manages the type information for the coclass.|  
   
 ## Remarks  
- The [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) interface extends [IProvideClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) by adding the `GetGUID` method. This method allows a client to retrieve an object's outgoing interface IID for its default event set. Class `IProvideClassInfo2Impl` provides a default implementation of the `IProvideClassInfo` and `IProvideClassInfo2` methods.  
+ The [IProvideClassInfo2](https://msdn.microsoft.com/library/windows/desktop/ms693764) interface extends [IProvideClassInfo](https://msdn.microsoft.com/library/windows/desktop/ms687303) by adding the `GetGUID` method. This method allows a client to retrieve an object's outgoing interface IID for its default event set. Class `IProvideClassInfo2Impl` provides a default implementation of the `IProvideClassInfo` and `IProvideClassInfo2` methods.  
   
  `IProvideClassInfo2Impl` contains a static member of type `CComTypeInfoHolder` that manages the type information for the coclass.  
   
@@ -87,7 +87,7 @@ STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
 ```  
   
 ### Remarks  
- See [IProvideClassInfo::GetClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms690192) in the Windows SDK.  
+ See [IProvideClassInfo::GetClassInfo](https://msdn.microsoft.com/library/windows/desktop/ms690192) in the Windows SDK.  
   
 ##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID  
  Retrieves the GUID for the object's outgoing dispinterface.  
@@ -99,7 +99,7 @@ STDMETHOD(GetGUID)(
 ```  
   
 ### Remarks  
- See [IProvideClassInfo2::GetGUID](http://msdn.microsoft.com/library/windows/desktop/ms679721) in the Windows SDK.  
+ See [IProvideClassInfo2::GetGUID](https://msdn.microsoft.com/library/windows/desktop/ms679721) in the Windows SDK.  
   
 ##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl  
  The constructor.  

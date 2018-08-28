@@ -61,7 +61,7 @@ The version number you want to assign to the library block. The default value is
 The unique ID for the library. If you omit this parameter, an ID will be automatically generated for the library. You may need to retrieve the *uuid* of your library block, which you can do by using the identifier **__uuidof(** *libraryname* **)**.
 
 *lcid*  
-The localization parameter. See [lcid](http://msdn.microsoft.com/library/windows/desktop/aa367067) for more information.
+The localization parameter. See [lcid](https://msdn.microsoft.com/library/windows/desktop/aa367067) for more information.
 
 *control* (optional)  
 Specifies that all coclasses in the library are controls.
@@ -70,7 +70,7 @@ Specifies that all coclasses in the library are controls.
 Specifies the type library.
 
 *helpstringdll*  (optional)  
-Sets the name of the .dll file to use to perform a document string lookup. See [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) for more information.
+Sets the name of the .dll file to use to perform a document string lookup. See [helpstringdll](https://msdn.microsoft.com/library/windows/desktop/aa366860) for more information.
 
 *helpfile* (optional)  
 The name of the **Help** file for the type library.
@@ -82,10 +82,10 @@ The **Help ID** for this type library.
 See [helpstringcontext](../windows/helpstringcontext.md) for more information.
 
 *hidden* (optional)  
-Prevents the entire library from being displayed. This usage is intended for use with controls. Hosts need to create a new type library that wraps the control with extended properties. See the [hidden](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL attribute for more information.
+Prevents the entire library from being displayed. This usage is intended for use with controls. Hosts need to create a new type library that wraps the control with extended properties. See the [hidden](https://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL attribute for more information.
 
 *restricted* (optional)  
-Members of the library cannot be called arbitrarily. See the [restricted](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL attribute for more information.
+Members of the library cannot be called arbitrarily. See the [restricted](https://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL attribute for more information.
 
 *custom*  (optional)  
 One or more attributes; this is similar to the [custom](../windows/custom-cpp.md) attribute. The first parameter to *custom* is the GUID of the attribute. For example:
@@ -112,15 +112,15 @@ If this attribute is used within a project that uses ATL, the behavior of the at
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583), [DllRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](http://msdn.microsoft.com/library/windows/desktop/ms690368), and [DllGetClassObject](http://msdn.microsoft.com/library/windows/desktop/dd797891).
+   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) is used as the base class and the standard DLL entry points required for a COM server. These entry points are [DllMain](https://msdn.microsoft.com/library/windows/desktop/ms682583), [DllRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](https://msdn.microsoft.com/library/windows/desktop/ms690368), and [DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891).
 
 - `type` = **exe**
 
-   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
 
 - `type` = **service**
 
-   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) is used as the base class and the standard executable entry point [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
 
 - `type` = **unspecified**
 
@@ -181,7 +181,7 @@ For more information, see [Attribute Contexts](../windows/attribute-contexts.md)
 [Stand-Alone Attributes](../windows/stand-alone-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
 [usesgetlasterror](../windows/usesgetlasterror.md)  
-[library](http://msdn.microsoft.com/library/windows/desktop/aa367069)  
+[library](https://msdn.microsoft.com/library/windows/desktop/aa367069)  
 [helpcontext](../windows/helpcontext.md)  
 [helpstring](../windows/helpstring.md)  
 [helpfile](../windows/helpfile.md)  

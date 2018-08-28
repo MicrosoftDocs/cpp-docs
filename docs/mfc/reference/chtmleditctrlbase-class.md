@@ -350,7 +350,7 @@ HRESULT ExecCommand(
  The command ID to be executed. For a list, see [MSHTML Command Identifiers](https://msdn.microsoft.com/library/aa741315.aspx).  
   
  *cmdExecOpt*  
- Values taken from the [OLECMDEXECOPT](http://msdn.microsoft.com/library/windows/desktop/ms683930) enumeration, which describe how the object should execute the command.  
+ Values taken from the [OLECMDEXECOPT](https://msdn.microsoft.com/library/windows/desktop/ms683930) enumeration, which describe how the object should execute the command.  
   
  *pInVar*  
  The input arguments.  
@@ -365,7 +365,7 @@ HRESULT ExecCommand(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- This method provides the functionality of [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300).  
+ This method provides the functionality of [IOleCommandTarget::Exec](https://msdn.microsoft.com/library/windows/desktop/ms690300).  
   
 ##  <a name="font"></a>  CHtmlEditCtrlBase::Font  
  Opens a font dialog box to enable the user to change the text color, font, and font size of the current selection.  
@@ -613,7 +613,7 @@ HRESULT GetIsDirty() const;
 ```  
   
 ### Remarks  
- Indicates whether the document has changed. `GetIsDirty` returns an HRESULT from [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910).  
+ Indicates whether the document has changed. `GetIsDirty` returns an HRESULT from [IPersistStorage::IsDirty](https://msdn.microsoft.com/library/windows/desktop/ms683910).  
   
 ##  <a name="getshowalignedsitetags"></a>  CHtmlEditCtrlBase::GetShowAlignedSiteTags  
  Returns whether a glyph is displayed for all elements that have a `styleFloat` property.  
@@ -1244,7 +1244,7 @@ long QueryStatus(long cmdID) const;
  The command ID. Command identifiers are taken from the CGID_MSHTML command group. These commands are defined in Mshtmcid.h. You can also find the list online at [MSHTML Command Identifiers](http://go.microsoft.com/fwlink/p/?linkid=149220).  
   
 ### Return Value  
- Returns an [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) indicating the status for *cmdID*, or 0 on failure.  
+ Returns an [OLECMDF](https://msdn.microsoft.com/library/windows/desktop/ms695237) indicating the status for *cmdID*, or 0 on failure.  
   
 ##  <a name="radiobutton"></a>  CHtmlEditCtrlBase::RadioButton  
  Overwrites a radio control on the current selection.  

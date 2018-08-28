@@ -45,9 +45,9 @@ class CMetaFileDC : public CDC
   
  After you have sent the desired commands to the metafile, call the `Close` member function, which closes the metafile device contexts and returns a metafile handle. Then dispose of the `CMetaFileDC` object.  
   
- [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) can then use the metafile handle to play the metafile repeatedly. The metafile can also be manipulated by Windows functions such as [CopyMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183480), which copies a metafile to disk.  
+ [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) can then use the metafile handle to play the metafile repeatedly. The metafile can also be manipulated by Windows functions such as [CopyMetaFile](https://msdn.microsoft.com/library/windows/desktop/dd183480), which copies a metafile to disk.  
   
- When the metafile is no longer needed, delete it from memory with the [DeleteMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183537) Windows function.  
+ When the metafile is no longer needed, delete it from memory with the [DeleteMetaFile](https://msdn.microsoft.com/library/windows/desktop/dd183537) Windows function.  
   
  You can also implement the `CMetaFileDC` object so that it can handle both output calls and attribute GDI calls such as `GetTextExtent`. Such a metafile is more flexible and can more easily reuse general GDI code, which often consists of a mix of output and attribute calls. The `CMetaFileDC` class inherits two device contexts, `m_hDC` and `m_hAttribDC`, from CDC. The `m_hDC` device context handles all [CDC](../../mfc/reference/cdc-class.md) GDI output calls and the `m_hAttribDC` device context handles all CDC GDI attribute calls. Normally, these two device contexts refer to the same device. In the case of `CMetaFileDC`, the attribute DC is set to NULL by default.  
   
@@ -76,9 +76,9 @@ HMETAFILE Close();
  A valid HMETAFILE if the function is successful; otherwise NULL.  
   
 ### Remarks  
- The Windows metafile handle can also be used to manipulate the metafile with Windows functions such as [CopyMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183480).  
+ The Windows metafile handle can also be used to manipulate the metafile with Windows functions such as [CopyMetaFile](https://msdn.microsoft.com/library/windows/desktop/dd183480).  
   
- Delete the metafile after use by calling the Windows [DeleteMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183537) function.  
+ Delete the metafile after use by calling the Windows [DeleteMetaFile](https://msdn.microsoft.com/library/windows/desktop/dd183537) function.  
   
 ##  <a name="closeenhanced"></a>  CMetaFileDC::CloseEnhanced  
  Closes an enhanced-metafile device context and returns a handle that identifies an enhanced-format metafile.  

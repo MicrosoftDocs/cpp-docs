@@ -16,13 +16,13 @@ The easiest way to customize the memory allocation scheme for string data is to 
   
 -   [CCRTHeap](../atl/reference/ccrtheap-class.md) Wraps the standard CRT heap functions ([malloc](../c-runtime-library/reference/malloc.md), [free](../c-runtime-library/reference/free.md), and [realloc](../c-runtime-library/reference/realloc.md))  
   
--   [CWin32Heap](../atl/reference/cwin32heap-class.md) Wraps a Win32 heap handle, using [HeapAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366597), [HeapFree](http://msdn.microsoft.com/library/windows/desktop/aa366701), and [HeapRealloc](http://msdn.microsoft.com/library/windows/desktop/aa366704)  
+-   [CWin32Heap](../atl/reference/cwin32heap-class.md) Wraps a Win32 heap handle, using [HeapAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366597), [HeapFree](https://msdn.microsoft.com/library/windows/desktop/aa366701), and [HeapRealloc](https://msdn.microsoft.com/library/windows/desktop/aa366704)  
   
--   [CLocalHeap](../atl/reference/clocalheap-class.md) Wraps the Win32 APIs: [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723), [LocalFree](http://msdn.microsoft.com/library/windows/desktop/aa366730), and [LocalRealloc](http://msdn.microsoft.com/library/windows/desktop/aa366742)  
+-   [CLocalHeap](../atl/reference/clocalheap-class.md) Wraps the Win32 APIs: [LocalAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366723), [LocalFree](https://msdn.microsoft.com/library/windows/desktop/aa366730), and [LocalRealloc](https://msdn.microsoft.com/library/windows/desktop/aa366742)  
   
--   [CGlobalHeap](../atl/reference/cglobalheap-class.md) Wraps the Win32 APIs: [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574), [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579), and [GlobalRealloc](http://msdn.microsoft.com/library/windows/desktop/aa366590).  
+-   [CGlobalHeap](../atl/reference/cglobalheap-class.md) Wraps the Win32 APIs: [GlobalAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366574), [GlobalFree](https://msdn.microsoft.com/library/windows/desktop/aa366579), and [GlobalRealloc](https://msdn.microsoft.com/library/windows/desktop/aa366590).  
   
--   [CComHeap](../atl/reference/ccomheap-class.md) Wraps the COM Task Allocator APIs: [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727), [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722), and [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280)  
+-   [CComHeap](../atl/reference/ccomheap-class.md) Wraps the COM Task Allocator APIs: [CoTaskMemAlloc](https://msdn.microsoft.com/library/windows/desktop/ms692727), [CoTaskMemFree](https://msdn.microsoft.com/library/windows/desktop/ms680722), and [CoTaskMemRealloc](https://msdn.microsoft.com/library/windows/desktop/ms687280)  
   
  For the purpose of string memory management, the most useful class is `CWin32Heap` because it allows you to create multiple independent heaps. For example, if you wanted to use a separate heap just for strings, you could do the following:  
   

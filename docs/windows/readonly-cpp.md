@@ -24,7 +24,7 @@ Prohibits assignment to a data member.
 
 ## Remarks
 
-The **readonly** C++ attribute has the same functionality as the [readonly](http://msdn.microsoft.com/library/windows/desktop/aa367152) MIDL attribute.
+The **readonly** C++ attribute has the same functionality as the [readonly](https://msdn.microsoft.com/library/windows/desktop/aa367152) MIDL attribute.
 
 If you want to prohibit modification of a method parameter, then use the [in](../windows/in-cpp.md) attribute.
 

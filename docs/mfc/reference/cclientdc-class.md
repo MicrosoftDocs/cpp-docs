@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CClientDC Class
-Takes care of calling the Windows functions [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) at construction time and [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) at destruction time.  
+Takes care of calling the Windows functions [GetDC](https://msdn.microsoft.com/library/windows/desktop/dd144871) at construction time and [ReleaseDC](https://msdn.microsoft.com/library/windows/desktop/dd162920) at destruction time.  
   
 ## Syntax  
   
@@ -62,7 +62,7 @@ explicit CClientDC(CWnd* pWnd);
  The window whose client area the device context object will access.  
   
 ### Remarks  
- The constructor calls the Windows function [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871).  
+ The constructor calls the Windows function [GetDC](https://msdn.microsoft.com/library/windows/desktop/dd144871).  
   
  An exception (of type `CResourceException`) is thrown if the Windows `GetDC` call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.  
   

@@ -141,7 +141,7 @@ template<class _InIt, class _OutIt> inline
 ```  
   
 ### Remarks  
- This function behaves the same as the C++ Standard Library function `copy`. For more information, see [copy](http://msdn.microsoft.com/Library/f1fec7da-e01b-40f1-b5bd-6b81e304cae1). 
+ This function behaves the same as the C++ Standard Library function `copy`. For more information, see [copy](https://msdn.microsoft.com/Library/f1fec7da-e01b-40f1-b5bd-6b81e304cae1). 
 
 ## <a name="copy_backward"></a> copy_backward (STL/CLR)
 Assigns the values of elements from a source range to a destination range, iterating through the source sequence of elements and assigning them new positions in a backward direction.  
@@ -680,7 +680,7 @@ template<class _FwdIt, class _Ty> inline
 ```  
   
 ### Remarks  
- This function behaves the same as the C++ Standard Library function `remove`. For more information, see [remove](http://msdn.microsoft.com/Library/77e2585c-441e-448d-bd1d-c893d1356ed8).  
+ This function behaves the same as the C++ Standard Library function `remove`. For more information, see [remove](https://msdn.microsoft.com/Library/77e2585c-441e-448d-bd1d-c893d1356ed8).  
 
 ## <a name="remove_copy"></a> remove_copy (STL/CLR)
 Copies elements from a source range to a destination range, except that elements of a specified value are not copied, without disturbing the order of the remaining elements and returning the end of a new destination range.  
@@ -1003,7 +1003,7 @@ Exchanges the values of the elements between two types of objects, assigning the
 ```  
   
 ### Remarks  
- This function behaves the same as the C++ Standard Library function `swap`. For more information, see [swap](http://msdn.microsoft.com/Library/b471a2de-035e-4aff-b1c7-345d85d93972).  
+ This function behaves the same as the C++ Standard Library function `swap`. For more information, see [swap](https://msdn.microsoft.com/Library/b471a2de-035e-4aff-b1c7-345d85d93972).  
 
 ## <a name="swap_ranges"></a> swap_ranges (STL/CLR)
 Exchanges the elements of one range with the elements of another, equal sized range.  

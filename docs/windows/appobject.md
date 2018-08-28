@@ -24,7 +24,7 @@ Identifies the coclass as an application object, which is associated with a full
 
 ## Remarks
 
-The **appobject** C++ attribute has the same functionality as the [appobject](http://msdn.microsoft.com/library/windows/desktop/aa366726) MIDL attribute.
+The **appobject** C++ attribute has the same functionality as the [appobject](https://msdn.microsoft.com/library/windows/desktop/aa366726) MIDL attribute.
 
 ## Example
 

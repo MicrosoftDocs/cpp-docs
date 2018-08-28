@@ -85,7 +85,7 @@ The `*this` object in a lambda expression may now be captured by value. This ena
 
 The `register` keyword, previously deprecated (and ignored by the compiler), is now removed from the language. For more information, see [Remove Deprecated Use of the register Keyword](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html).
 
-For the complete list of conformance improvements up through Visual Studio 2015 Update 3, see [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/en-us/library/mt723604.aspx).
+For the complete list of conformance improvements up through Visual Studio 2015 Update 3, see [Visual C++ What's New 2003 through 2015](https://msdn.microsoft.com/library/mt723604.aspx).
 
 ## <a name="improvements_155"></a>  Improvements in Visual Studio 2017 version 15.5
 

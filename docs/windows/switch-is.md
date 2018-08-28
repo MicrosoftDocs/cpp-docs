@@ -24,7 +24,7 @@ Specifies the expression or identifier acting as the union discriminant that sel
 
 ## Remarks
 
-The **switch_is** C++ attribute has the same functionality as the [switch_is](http://msdn.microsoft.com/library/windows/desktop/aa367275) MIDL attribute.
+The **switch_is** C++ attribute has the same functionality as the [switch_is](https://msdn.microsoft.com/library/windows/desktop/aa367275) MIDL attribute.
 
 ## Example
 

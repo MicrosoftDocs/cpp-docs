@@ -108,7 +108,7 @@ static HBITMAP __stdcall CreateBitmap_32(
  A handle to the newly created DIB bitmap if this method is successful; otherwise NULL.  
   
 ### Remarks  
- For more information about how to create a DIB bitmap, see [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183491).  
+ For more information about how to create a DIB bitmap, see [CreateDIBSection](https://msdn.microsoft.com/library/windows/desktop/dd183491).  
   
 ##  <a name="drawalpha"></a>  CDrawingManager::DrawAlpha  
  Displays bitmaps that have transparent or semitransparent pixels.  
@@ -135,7 +135,7 @@ void DrawAlpha(
  The source rectangle.  
   
 ### Remarks  
- This method performs alpha-blending for two bitmaps. For more information about alpha-blending, see [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) in the Windows SDK.  
+ This method performs alpha-blending for two bitmaps. For more information about alpha-blending, see [AlphaBlend](https://msdn.microsoft.com/library/windows/desktop/dd183351) in the Windows SDK.  
   
 ##  <a name="drawellipse"></a>  CDrawingManager::DrawEllipse  
  Draws an ellipse with the supplied fill and border colors.  

@@ -107,7 +107,7 @@ The following combo-box styles are available in MFC. For more information about 
   
 ## <a name="edit-styles"></a>  Edit styles  
   
-Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CEdit::Create](../../mfc/reference/cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
+Edit styles apply to [CEdit Class](../../mfc/reference/cedit-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CEdit::Create](../../mfc/reference/cedit-class.md#create). For more information about edit control styles in Windows, see [Edit Control Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -202,7 +202,7 @@ The following message-box styles are available.
   
 ## <a name="scroll-bar-styles"></a> Scroll-bar styles  
   
-Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533).  
+Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). For more information about scroll bar control styles in Windows, see [Scroll Bar Control Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb787533).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -219,7 +219,7 @@ Scroll-bar styles apply to [CScrollBar Class](../../mfc/reference/cscrollbar-cla
   
 ## <a name="static-styles"></a> Static styles  
   
-Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CStatic::Create](../../mfc/reference/cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773).  
+Static styles apply to [CStatic Class](../../mfc/reference/cstatic-class.md) objects. Specify a combination of styles in the *dwStyle* parameter of [CStatic::Create](../../mfc/reference/cstatic-class.md#create). For more information about static control styles in Windows, see [Static Control Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb760773).  
   
 |Style|Description|  
 |-----------|-----------------|  
@@ -297,7 +297,7 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 |WS_EX_CONTEXTHELP|Includes a question mark in the title bar of the window. When the user clicks the question mark, the cursor changes to a question mark with a pointer. If the user then clicks a child window, the child receives a WM_HELP message.|  
 |WS_EX_CONTROLPARENT|Allows the user to navigate among the child windows of the window by using the TAB key.|  
 |WS_EX_DLGMODALFRAME|Designates a window with a double border that may (optionally) be created with a title bar when you specify the WS_CAPTION style flag in the *dwStyle* parameter.|  
-|WS_EX_LAYERED|The window is a [layered window](http://msdn.microsoft.com/library/ms632599.aspx#layered). This style cannot be used if the window has a [class style](http://msdn.microsoft.com/library/ms633574.aspx#class_styles) of either CS_OWNDC or CS_CLASSDC. However, Microsoft Windows 8 does support the WS_EX_LAYERED style for child windows, where previous Windows versions support it only for top-level windows.|  
+|WS_EX_LAYERED|The window is a [layered window](https://msdn.microsoft.com/library/ms632599.aspx#layered). This style cannot be used if the window has a [class style](https://msdn.microsoft.com/library/ms633574.aspx#class_styles) of either CS_OWNDC or CS_CLASSDC. However, Microsoft Windows 8 does support the WS_EX_LAYERED style for child windows, where previous Windows versions support it only for top-level windows.|  
 |WS_EX_LEFT|Gives window generic left-aligned properties. This is the default.|  
 |WS_EX_LEFTSCROLLBAR|Places a vertical scroll bar to the left of the client area.|  
 |WS_EX_LTRREADING|Displays the window text using left-to-right reading order properties. This is the default.|  
@@ -323,14 +323,14 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)  
 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)  
 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)  
-[CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679)  
-[CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680)  
+[CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679)  
+[CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)  
 [Button Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951)  
 [Combo Box Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796)  
-[Edit Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464)  
+[Edit Control Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775464)  
 [List Box Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149) 
 [MessageBox Function (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505) 
-[Scroll Bar Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533)  
-[Static Control Styles (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773)  
+[Scroll Bar Control Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb787533)  
+[Static Control Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb760773)  
 [Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600)  
 [Extended Window Styles (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543)  

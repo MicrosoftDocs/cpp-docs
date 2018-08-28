@@ -109,7 +109,7 @@ DWORD Lock(
  Specifies whether all objects waited on must become signaled at the same time before returning. If FALSE, `Lock` will return when any one of the objects waited on is signaled.  
   
  *dwWakeMask*  
- Specifies other conditions that are allowed to abort the wait. For a full list of the available options for this parameter, see [MsgWaitForMultipleObjects](http://msdn.microsoft.com/library/windows/desktop/ms684242) in the Windows SDK.  
+ Specifies other conditions that are allowed to abort the wait. For a full list of the available options for this parameter, see [MsgWaitForMultipleObjects](https://msdn.microsoft.com/library/windows/desktop/ms684242) in the Windows SDK.  
   
 ### Return Value  
  If `Lock` fails, it returns - 1. If successful, it returns one of the following values:  

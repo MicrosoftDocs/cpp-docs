@@ -56,7 +56,7 @@ interface IMyInterface {
   
  See [Implementing an Interface](../ide/implementing-an-interface-visual-cpp.md) and [Adding Objects and Controls to an ATL Project](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) for more information.  
   
- Visual C++ provides several ways to view and [edit the COM interfaces](../ide/editing-a-com-interface.md) defined for your projects. [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925) displays icons for any interface or dispinterface defined in an .idl file in your C++ project.  
+ Visual C++ provides several ways to view and [edit the COM interfaces](../ide/editing-a-com-interface.md) defined for your projects. [Class View](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925) displays icons for any interface or dispinterface defined in an .idl file in your C++ project.  
   
  For ATL-based COM object classes, Class View reads the COM map in the ATL class to display the relationship between the ATL class and any interfaces it implements.  
   

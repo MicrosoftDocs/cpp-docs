@@ -62,7 +62,7 @@ Stack size for a new thread, or 0.
 Argument list to be passed to a new thread, or **NULL**.
 
 *Security*<br/>
-Pointer to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that determines whether the returned handle can be inherited by child processes. If *Security* is **NULL**, the handle cannot be inherited. Must be **NULL** for Windows 95 applications.
+Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that determines whether the returned handle can be inherited by child processes. If *Security* is **NULL**, the handle cannot be inherited. Must be **NULL** for Windows 95 applications.
 
 *initflag*<br/>
 Flags that control the initial state of a new thread. Set *initflag* to 0 to run immediately, or to **CREATE_SUSPENDED** to create the thread in a suspended state; use [ResumeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-resumethread) to execute the thread. Set *initflag* to **STACK_SIZE_PARAM_IS_A_RESERVATION** flag to use *stack_size* as the initial reserve size of the stack in bytes; if this flag is not specified, *stack_size* specifies the commit size.
@@ -100,7 +100,7 @@ It's safer to use **_beginthreadex** than **_beginthread**. If the thread that's
 
 You can call [_endthread](endthread-endthreadex.md) or **_endthreadex** explicitly to terminate a thread; however, **_endthread** or **_endthreadex** is called automatically when the thread returns from the routine that's passed as a parameter. Terminating a thread with a call to **_endthread** or **_endthreadex** helps ensure correct recovery of resources that are allocated for the thread.
 
-**_endthread** automatically closes the thread handle, whereas **_endthreadex** does not. Therefore, when you use **_beginthread** and **_endthread**, do not explicitly close the thread handle by calling the Win32 [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. This behavior differs from the Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
+**_endthread** automatically closes the thread handle, whereas **_endthreadex** does not. Therefore, when you use **_beginthread** and **_endthread**, do not explicitly close the thread handle by calling the Win32 [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. This behavior differs from the Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
 
 > [!NOTE]
 > For an executable file linked with Libcmt.lib, do not call the Win32 **ExitThread** API so that you don't prevent the run-time system from reclaiming allocated resources. **_endthread** and **_endthreadex** reclaim allocated thread resources and then call **ExitThread**.
@@ -304,4 +304,4 @@ Counter should be 1000000; it is-> 1000000
 - [_endthread, _endthreadex](endthread-endthreadex.md)
 - [abort](abort.md)
 - [exit, _Exit, _exit](exit-exit-exit.md)
-- [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190)
+- [GetExitCodeThread](https://msdn.microsoft.com/library/windows/desktop/ms683190)

@@ -206,4 +206,4 @@ int main() {
 ## See Also
 
 [Attributes Alphabetical Reference](../windows/attributes-alphabetical-reference.md)  
-[Custom Attributes](http://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+[Custom Attributes](https://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

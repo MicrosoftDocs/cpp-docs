@@ -117,9 +117,9 @@ CMFCRibbonFontComboBox(
  Specifies the width, in pixels, of the combo box.  
   
 ### Remarks  
- For more information about possible *nFontType* parameter values, see [EnumFontFamProc](http://msdn.microsoft.com/library/windows/desktop/dd162621) in the Windows SDK documentation.  
+ For more information about possible *nFontType* parameter values, see [EnumFontFamProc](https://msdn.microsoft.com/library/windows/desktop/dd162621) in the Windows SDK documentation.  
   
- For more information about valid character sets that can be assigned to *nCharSet*, and valid values that can be assigned to *nPitchAndFamily*, see [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) in the Windows SDK documentation.  
+ For more information about valid character sets that can be assigned to *nCharSet*, and valid values that can be assigned to *nPitchAndFamily*, see [LOGFONT](https://msdn.microsoft.com/library/windows/desktop/dd145037) in the Windows SDK documentation.  
   
 ##  <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc  
  For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  

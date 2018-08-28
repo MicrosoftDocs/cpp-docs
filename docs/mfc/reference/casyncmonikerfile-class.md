@@ -52,7 +52,7 @@ class CAsyncMonikerFile : public CMonikerFile
 |[CAsyncMonikerFile::OnStopBinding](#onstopbinding)|Called when asynchronous transfer is stopped.|  
   
 ## Remarks  
- Derived from [CMonikerFile](../../mfc/reference/cmonikerfile-class.md), which in turn is derived from [COleStreamFile](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` uses the [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) interface to access any data stream asynchronously, including loading files asynchronously from a URL. The files can be datapath properties of ActiveX controls.  
+ Derived from [CMonikerFile](../../mfc/reference/cmonikerfile-class.md), which in turn is derived from [COleStreamFile](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` uses the [IMoniker](https://msdn.microsoft.com/library/windows/desktop/ms679705) interface to access any data stream asynchronously, including loading files asynchronously from a URL. The files can be datapath properties of ActiveX controls.  
   
  Asynchronous monikers are used primarily in Internet-enabled applications and ActiveX controls to provide a responsive user-interface during file transfers. A prime example of this is the use of [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md) to provide asynchronous properties for ActiveX controls. The `CDataPathProperty` object will repeatedly get a callback to indicate availability of new data during a lengthy property exchange process.  
   
@@ -119,7 +119,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
   
  [CAsyncMonikerFile::Open](#open) calls `CreateBindStatusCallback`.  
   
- For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](http://msdn.microsoft.com/library/ie/ms775060) interface and [How Asynchronous Binding and Storage Work](http://msdn.microsoft.com/library/windows/desktop/aa379152). For a discussion of aggregation, see [Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558). All three topics are in the Windows SDK.  
+ For more information about asynchronous monikers and asynchronous binding, see the [IBindStatusCallback](https://msdn.microsoft.com/library/ie/ms775060) interface and [How Asynchronous Binding and Storage Work](https://msdn.microsoft.com/library/windows/desktop/aa379152). For a discussion of aggregation, see [Aggregation](https://msdn.microsoft.com/library/windows/desktop/ms686558). All three topics are in the Windows SDK.  
   
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo  
  Called from the client of an asynchronous moniker to tell the asynchronous moniker how it wants to bind.  
@@ -159,7 +159,7 @@ FORMATETC* GetFormatEtc() const;
 ```  
   
 ### Return Value  
- A pointer to the Windows structure [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) for the currently opened stream. Returns NULL if the moniker has not been bound, if it is not asynchronous, or if the asynchronous operation has not begun.  
+ A pointer to the Windows structure [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) for the currently opened stream. Returns NULL if the moniker has not been bound, if it is not asynchronous, or if the asynchronous operation has not begun.  
   
 ##  <a name="getpriority"></a>  CAsyncMonikerFile::GetPriority  
  Called from the client of an asynchronous moniker as the binding process starts to receive the priority given to the thread for the binding operation.  
@@ -169,7 +169,7 @@ virtual LONG GetPriority() const;
 ```  
   
 ### Return Value  
- The priority at which the asynchronous transfer will take place. One of the standard thread priority flags: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, and THREAD_PRIORITY_TIME_CRITICAL. See the Windows function [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) for a description of these values.  
+ The priority at which the asynchronous transfer will take place. One of the standard thread priority flags: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, and THREAD_PRIORITY_TIME_CRITICAL. See the Windows function [SetThreadPriority](https://msdn.microsoft.com/library/windows/desktop/ms686277) for a description of these values.  
   
 ### Remarks  
  `GetPriority` should not be called directly. THREAD_PRIORITY_NORMAL is returned by the default implementation.  

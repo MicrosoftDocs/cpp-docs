@@ -48,7 +48,7 @@ For more information on all of these concepts, see [Guide to Windows Universal A
 
 ##  <a name="BK_Native"></a> Desktop and Server applications
 
-To learn the basics of writing Windows client applications for the desktop, see [Developing Windows Applications in C++](http://msdn.microsoft.com/vstudio//hh304489) and [Introduction to Windows Programming in C++](http://msdn.microsoft.com/library/windows/desktop/ff381398\(v=vs.85\).aspx).
+To learn the basics of writing Windows client applications for the desktop, see [Developing Windows Applications in C++](https://msdn.microsoft.com/vstudio//hh304489) and [Introduction to Windows Programming in C++](https://msdn.microsoft.com/library/windows/desktop/ff381398\(v=vs.85\).aspx).
 
 On Windows 10, you can use Visual C++ to create many kinds of desktop programs:
 

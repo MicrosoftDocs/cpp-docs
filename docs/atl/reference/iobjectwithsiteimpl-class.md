@@ -44,7 +44,7 @@ template <class T>
 |[IObjectWithSiteImpl::m_spUnkSite](#m_spunksite)|Manages the site's `IUnknown` pointer.|  
   
 ## Remarks  
- The [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) interface allows an object to communicate with its site. Class `IObjectWithSiteImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
+ The [IObjectWithSite](https://msdn.microsoft.com/library/windows/desktop/ms693765) interface allows an object to communicate with its site. Class `IObjectWithSiteImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  `IObjectWithSiteImpl` specifies two methods. The client first calls `SetSite`, passing the site's `IUnknown` pointer. This pointer is stored within the object, and can later be retrieved through a call to `GetSite`.  
   
@@ -70,7 +70,7 @@ STDMETHOD(GetSite)(
 ### Remarks  
  If the site supports this interface, the pointer is returned via `ppvSite`. Otherwise, `ppvSite` is set to NULL.  
   
- See [IObjectWithSite::GetSite](http://msdn.microsoft.com/library/windows/desktop/ms694452) in the Windows SDK.  
+ See [IObjectWithSite::GetSite](https://msdn.microsoft.com/library/windows/desktop/ms694452) in the Windows SDK.  
   
 ##  <a name="m_spunksite"></a>  IObjectWithSiteImpl::m_spUnkSite  
  Manages the site's `IUnknown` pointer.  
@@ -104,7 +104,7 @@ STDMETHOD(SetSite)(IUnknown* pUnkSite);
 ```  
   
 ### Remarks  
- See [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869) in the Windows SDK.  
+ See [IObjectWithSite::SetSite](https://msdn.microsoft.com/library/windows/desktop/ms683869) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

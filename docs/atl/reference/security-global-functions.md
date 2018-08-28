@@ -51,7 +51,7 @@ inline bool AtlGetDacl(
  Handle to the object for which to retrieve the security information.  
   
  *ObjectType*  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
+ Specifies a value from the [SE_OBJECT_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
  *pDacl*  
  Pointer to a DACL object which will contain the retrieved security information.  
@@ -81,7 +81,7 @@ inline bool AtlSetDacl(
  Handle to the object for which to set security information.  
   
  *ObjectType*  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
+ Specifies a value from the [SE_OBJECT_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
  *rDacl*  
  The DACL containing the new security information.  
@@ -115,7 +115,7 @@ inline bool AtlGetGroupSid(
  Handle to the object from which to retrieve security information.  
   
  *ObjectType*  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
+ Specifies a value from the [SE_OBJECT_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
  *pSid*  
  Pointer to a `CSid` object which will contain the new security information.  
@@ -144,7 +144,7 @@ inline bool AtlSetGroupSid(
  Handle to the object for which to set security information.  
   
  *ObjectType*  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
+ Specifies a value from the [SE_OBJECT_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
  *rSid*  
  The `CSid` object containing the new security information.  
@@ -173,7 +173,7 @@ inline bool AtlGetOwnerSid(
  Handle to the object from which to retrieve security information.  
   
  *ObjectType*  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
+ Specifies a value from the [SE_OBJECT_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
  *pSid*  
  Pointer to a `CSid` object which will contain the new security information.  
@@ -202,7 +202,7 @@ inline bool AtlSetOwnerSid(
  Handle to the object for which to set security information.  
   
  *ObjectType*  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
+ Specifies a value from the [SE_OBJECT_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
  *rSid*  
  The `CSid` object containing the new security information.  
@@ -232,7 +232,7 @@ inline bool AtlGetSacl(
  Handle to the object from which to retrieve the security information.  
   
  *ObjectType*  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
+ Specifies a value from the [SE_OBJECT_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
  *pSacl*  
  Pointer to a SACL object which will contain the retrieved security information.  
@@ -269,7 +269,7 @@ inline bool AtlSetSacl(
  Handle to the object for which to set security information.  
   
  *ObjectType*  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
+ Specifies a value from the [SE_OBJECT_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *hObject* parameter.  
   
  *rSacl*  
  The SACL containing the new security information.  
@@ -313,13 +313,13 @@ inline bool AtlGetSecurityDescriptor(
  Pointer to a null-terminated string that specifies the name of the object from which to retrieve security information.  
   
  *ObjectType*  
- Specifies a value from the [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *pszObjectName* parameter.  
+ Specifies a value from the [SE_OBJECT_TYPE](https://msdn.microsoft.com/library/windows/desktop/aa379593) enumeration that indicates the type of object identified by the *pszObjectName* parameter.  
   
  *pSecurityDescriptor*  
  The object which receives the requested security descriptor.  
   
  *requestedInfo*  
- A set of [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) bit flags that indicate the type of security information to retrieve. This parameter can be a combination of the following values.  
+ A set of [SECURITY_INFORMATION](https://msdn.microsoft.com/library/windows/desktop/aa379573) bit flags that indicate the type of security information to retrieve. This parameter can be a combination of the following values.  
   
  *bRequestNeededPrivileges*  
  If true, the function will attempt to enable the SE_SECURITY_NAME privilege, and restore it on completion.  

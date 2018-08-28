@@ -24,15 +24,15 @@ Indicates that the property supports data binding.
 
 ## Remarks
 
-The **bindable** C++ attribute has the same functionality as the [bindable](http://msdn.microsoft.com/library/windows/desktop/aa366738) MIDL attribute. You can use it on properties defined with the [propget](../windows/propget.md), [propput](../windows/propput.md), or [propputref](../windows/propputref.md) attributes, or you can manually define a bindable method.
+The **bindable** C++ attribute has the same functionality as the [bindable](https://msdn.microsoft.com/library/windows/desktop/aa366738) MIDL attribute. You can use it on properties defined with the [propget](../windows/propget.md), [propput](../windows/propput.md), or [propputref](../windows/propputref.md) attributes, or you can manually define a bindable method.
 
 The following MFC samples show the use of **bindable**:
 
-- [Controls Samples: MFC-Based ActiveX Controls](http://msdn.microsoft.com/a44adf86-0ba0-4504-bedb-512b6cba2e63)
+- [Controls Samples: MFC-Based ActiveX Controls](https://msdn.microsoft.com/a44adf86-0ba0-4504-bedb-512b6cba2e63)
 
-- [CIRC Sample: ActiveX Control](http://msdn.microsoft.com/9ba34d04-280e-49f4-90ae-41a6be44c95b)
+- [CIRC Sample: ActiveX Control](https://msdn.microsoft.com/9ba34d04-280e-49f4-90ae-41a6be44c95b)
 
-- [TESTHELP Sample: ActiveX Control with Tooltips and Help](http://msdn.microsoft.com/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)
+- [TESTHELP Sample: ActiveX Control with Tooltips and Help](https://msdn.microsoft.com/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)
 
 ## Example
 

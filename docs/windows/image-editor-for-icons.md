@@ -50,4 +50,4 @@ None
 ## See Also
 
 [Resource Editors](../windows/resource-editors.md)  
-[Icons](http://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)
+[Icons](https://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)
