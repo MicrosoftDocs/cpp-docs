@@ -155,7 +155,7 @@ HRESULT GetData(
 ### Remarks  
  The *pformatetcIn* parameter must specify a storage medium type of TYMED_MFPICT.  
   
- See [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
+ See [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
   
 ##  <a name="getdatahere"></a>  IDataObjectImpl::GetDataHere  
  Similar to `GetData`, except the client must allocate the `STGMEDIUM` structure.  

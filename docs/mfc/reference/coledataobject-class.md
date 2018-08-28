@@ -158,7 +158,7 @@ BOOL GetData(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- For more information, see [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.  
+ For more information, see [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.  
   
  For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.  
   

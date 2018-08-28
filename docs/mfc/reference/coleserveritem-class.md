@@ -607,7 +607,7 @@ virtual BOOL OnRenderData(
   
  This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If your data is small and fixed in size, override `OnRenderGlobalData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
- For more information, see [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc), and [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) in the Windows SDK.  
+ For more information, see [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc), and [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) in the Windows SDK.  
   
 ##  <a name="onrenderfiledata"></a>  COleServerItem::OnRenderFileData  
  Called by the framework to retrieve data in the specified format when the storage medium is a file.  
@@ -633,7 +633,7 @@ virtual BOOL OnRenderFileData(
   
  This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata).  
   
- For more information, see [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.  
+ For more information, see [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.  
   
 ##  <a name="onrenderglobaldata"></a>  COleServerItem::OnRenderGlobalData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is global memory.  
@@ -661,7 +661,7 @@ virtual BOOL OnRenderGlobalData(
   
  This is an advanced overridable. Override this function to provide your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage mediums, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata).  
   
- For more information, see [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.  
+ For more information, see [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) in the Windows SDK.  
   
 ##  <a name="onsetcolorscheme"></a>  COleServerItem::OnSetColorScheme  
  Called by the framework to specify a color palette to be used when editing the OLE item.  

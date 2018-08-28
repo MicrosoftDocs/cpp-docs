@@ -315,7 +315,7 @@ virtual BOOL OnRenderData(
   
  This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If your data is small and fixed in size, override `OnRenderGlobalData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
- For more information, see the [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structures, the [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) enumeration type, and [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
+ For more information, see the [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structures, the [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) enumeration type, and [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
   
 ##  <a name="onrenderfiledata"></a>  COleDataSource::OnRenderFileData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is a file.  
@@ -341,7 +341,7 @@ virtual BOOL OnRenderFileData(
   
  This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override `OnRenderFileData`. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- For more information, see the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure and [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
+ For more information, see the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure and [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
   
 ##  <a name="onrenderglobaldata"></a>  COleDataSource::OnRenderGlobalData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is global memory.  
@@ -369,7 +369,7 @@ virtual BOOL OnRenderGlobalData(
   
  This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata). For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- For more information, see the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure and [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
+ For more information, see the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure and [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
   
 ##  <a name="onsetdata"></a>  COleDataSource::OnSetData  
  Called by the framework to set or replace the data in the `COleDataSource` object in the specified format.  
@@ -399,7 +399,7 @@ virtual BOOL OnSetData(
   
  The default implementation does nothing. Override this function to replace the data in the specified format. This is an advanced overridable.  
   
- For more information, see the [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structures and the [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) and [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) functions in the Windows SDK.  
+ For more information, see the [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) and [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structures and the [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) and [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) functions in the Windows SDK.  
   
 ##  <a name="setclipboard"></a>  COleDataSource::SetClipboard  
  Puts the data contained in the `COleDataSource` object on the Clipboard after calling one of the following functions: [CacheData](#cachedata), [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), or [DelayRenderFileData](#delayrenderfiledata).  
