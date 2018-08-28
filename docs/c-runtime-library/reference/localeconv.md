@@ -54,7 +54,7 @@ n_sep_by_space|Set to 1 if currency symbol is separated by space from value for 
 p_sign_posn|Position of positive sign in nonnegative formatted monetary quantities.
 n_sign_posn|Position of positive sign in negative formatted monetary quantities.
 
-Except as specified, members of the **lconv** structure that have `char *` and `wchar_t *` versions are pointers to strings. Any of these that equals **""** (or **L""** for <strong>wchar_t \*</strong>) is either of zero length or not supported in the current locale. Note that **decimal_point** and **_W_decimal_point** are always supported and of nonzero length.
+Except as specified, members of the **lconv** structure that have `char *` and `wchar_t *` versions are pointers to strings. Any of these that equals **""** (or **L""** for **wchar_t** <strong>\*</strong>) is either of zero length or not supported in the current locale. Note that **decimal_point** and **_W_decimal_point** are always supported and of nonzero length.
 
 The **char** members of the structure are small nonnegative numbers, not characters. Any of these that equals **CHAR_MAX** is not supported in the current locale.
 

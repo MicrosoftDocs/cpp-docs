@@ -21,7 +21,7 @@ Any Microsoft MBCS run-time library routine that handles only one multibyte char
 
 Therefore it is best to represent a byte of a multibyte character as an 8-bit `unsigned char`. Or, to avoid a negative result, simply convert a single-byte character of type **char** to an `unsigned char` before converting it to an **int** or a **long**.
 
-Because some SBCS string-handling functions take (signed) <strong>char\*</strong> parameters, a type mismatch compiler warning will result when **_MBCS** is defined. There are three ways to avoid this warning, listed in order of efficiency:
+Because some SBCS string-handling functions take (signed) **char**<strong>\*</strong> parameters, a type mismatch compiler warning will result when **_MBCS** is defined. There are three ways to avoid this warning, listed in order of efficiency:
 
 1. Use the type-safe inline functions in TCHAR.H. This is the default behavior.
 

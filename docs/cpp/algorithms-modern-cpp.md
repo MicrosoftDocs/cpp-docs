@@ -65,7 +65,7 @@ The range-based **for** loop is a C++11 language feature, not a C++ Standard Lib
 
 - A `begin` method that returns an iterator to the beginning of the structure and an `end` method that returns an iterator to the end of the structure.
 
-- Support in the iterator for these methods: <strong>operator\*</strong>, **operator!=**, and **operator++** (prefix version).
+- Support in the iterator for these methods: **operator**<strong>\*</strong>, **operator!=**, and **operator++** (prefix version).
 
 These methods can be either members or stand-alone functions.
 

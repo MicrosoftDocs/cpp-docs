@@ -32,14 +32,14 @@ You can use type casts to explicitly convert types.
 |-----------------------|-----------------------|  
 |Integral types|Any integer type or floating-point type, or pointer to an object|  
 |Floating-point|Any arithmetic type|  
-|A pointer to an object, or (<strong>void \*</strong>)|Any integer type, (<strong>void \*</strong>), a pointer to an object, or a function pointer|  
+|A pointer to an object, or (**void** <strong>\*</strong>)|Any integer type, (**void** <strong>\*</strong>), a pointer to an object, or a function pointer|  
 |Function pointer|Any integral type, a pointer to an object, or a function pointer|  
 |A structure, union, or array|None|  
 |Void type|Any type|  
   
  Any identifier can be cast to `void` type. However, if the type specified in a type-cast expression is not `void`, then the identifier being cast to that type cannot be a `void` expression. Any expression can be cast to `void`, but an expression of type `void` cannot be cast to any other type. For example, a function with `void` return type cannot have its return cast to another type.  
   
- Note that a <strong>void \*</strong> expression has a type pointer to `void`, not type `void`. If an object is cast to `void` type, the resulting expression cannot be assigned to any item. Similarly, a type-cast object is not an acceptable l-value, so no assignment can be made to a type-cast object.  
+ Note that a **void** <strong>\*</strong> expression has a type pointer to `void`, not type `void`. If an object is cast to `void` type, the resulting expression cannot be assigned to any item. Similarly, a type-cast object is not an acceptable l-value, so no assignment can be made to a type-cast object.  
   
  **Microsoft Specific**  
   
@@ -47,7 +47,7 @@ You can use type casts to explicitly convert types.
   
  **END Microsoft Specific**  
   
- You can convert an expression to type `void` with a cast, but the resulting expression can be used only where a value is not required. An object pointer converted to <strong>void \*</strong> and back to the original type will return to its original value.  
+ You can convert an expression to type `void` with a cast, but the resulting expression can be used only where a value is not required. An object pointer converted to **void** <strong>\*</strong> and back to the original type will return to its original value.  
   
 ## See Also  
  [Type Conversions](../c-language/type-conversions-c.md)

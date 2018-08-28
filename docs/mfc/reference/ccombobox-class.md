@@ -641,13 +641,13 @@ DWORD_PTR GetItemData(int nIndex) const;
  The 32-bit value associated with the item, or CB_ERR if an error occurs.  
   
 ### Remarks  
- The 32-bit value can be set with the *dwItemData* parameter of a [SetItemData](#setitemdata) member function call. Use the `GetItemDataPtr` member function if the 32-bit value to be retrieved is a pointer (<strong>void \*</strong>).  
+ The 32-bit value can be set with the *dwItemData* parameter of a [SetItemData](#setitemdata) member function call. Use the `GetItemDataPtr` member function if the 32-bit value to be retrieved is a pointer (**void** <strong>\*</strong>).  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#21](../../mfc/reference/codesnippet/cpp/ccombobox-class_21.cpp)]  
   
 ##  <a name="getitemdataptr"></a>  CComboBox::GetItemDataPtr  
- Retrieves the application-supplied 32-bit value associated with the specified combo-box item as a pointer (<strong>void \*</strong>).  
+ Retrieves the application-supplied 32-bit value associated with the specified combo-box item as a pointer (**void** <strong>\*</strong>).  
   
 ```  
 void* GetItemDataPtr(int nIndex) const;  
@@ -1094,7 +1094,7 @@ int SetItemData(
  [!code-cpp[NVC_MFC_CComboBox#36](../../mfc/reference/codesnippet/cpp/ccombobox-class_38.cpp)]  
   
 ##  <a name="setitemdataptr"></a>  CComboBox::SetItemDataPtr  
- Sets the 32-bit value associated with the specified item in a combo box to be the specified pointer (<strong>void \*</strong>).  
+ Sets the 32-bit value associated with the specified item in a combo box to be the specified pointer (**void** <strong>\*</strong>).  
   
 ```  
 int SetItemDataPtr(

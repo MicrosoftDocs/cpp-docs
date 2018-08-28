@@ -1247,7 +1247,7 @@ LPCTSTR m_pszAppName;
 
 The application name can come from the parameter passed to the [CWinApp](#cwinapp) constructor, or, if not specified, to the resource string with the ID of AFX_IDS_APP_TITLE. If the application name is not found in the resource, it comes from the program's .EXE filename.
 
-Returned by the global function [AfxGetAppName](application-information-and-management.md#afxgetappname). `m_pszAppName` is a public variable of type <strong>const char\*</strong>.
+Returned by the global function [AfxGetAppName](application-information-and-management.md#afxgetappname). `m_pszAppName` is a public variable of type **const char**<strong>\*</strong>.
 
 > [!NOTE]
 > If you assign a value to `m_pszAppName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
@@ -1268,7 +1268,7 @@ LPCTSTR m_pszExeName;
 
 ### Remarks
 
-Unlike [m_pszAppName](#m_pszappname), this name cannot contain blanks. `m_pszExeName` is a public variable of type <strong>const char\*</strong>.
+Unlike [m_pszAppName](#m_pszappname), this name cannot contain blanks. `m_pszExeName` is a public variable of type **const char**<strong>\*</strong>.
 
 > [!NOTE]
 > If you assign a value to `m_pszExeName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
@@ -1285,7 +1285,7 @@ LPCTSTR m_pszHelpFilePath;
 
 ### Remarks
 
-By default, the framework initializes `m_pszHelpFilePath` to the name of the application with ".HLP" appended. To change the name of the help file, set `m_pszHelpFilePath` to point to a string that contains the complete name of the desired help file. A convenient place to do this is in the application's [InitInstance](#initinstance) function. `m_pszHelpFilePath` is a public variable of type <strong>const char\*</strong>.
+By default, the framework initializes `m_pszHelpFilePath` to the name of the application with ".HLP" appended. To change the name of the help file, set `m_pszHelpFilePath` to point to a string that contains the complete name of the desired help file. A convenient place to do this is in the application's [InitInstance](#initinstance) function. `m_pszHelpFilePath` is a public variable of type **const char**<strong>\*</strong>.
 
 > [!NOTE]
 > If you assign a value to `m_pszHelpFilePath`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:
@@ -1302,7 +1302,7 @@ LPCTSTR m_pszProfileName;
 
 ### Remarks
 
-`m_pszProfileName` is a public variable of type <strong>const char\*</strong>.
+`m_pszProfileName` is a public variable of type **const char**<strong>\*</strong>.
 
 > [!NOTE]
 > If you assign a value to `m_pszProfileName`, it must be dynamically allocated on the heap. The `CWinApp` destructor calls **free**( ) with this pointer. You many want to use the `_tcsdup`( ) run-time library function to do the allocating. Also, free the memory associated with the current pointer before assigning a new value. For example:

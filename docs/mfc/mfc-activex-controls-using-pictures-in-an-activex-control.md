@@ -84,7 +84,7 @@ This article describes the common Picture type and how to implement it in your A
   
 5.  In the **Property Name** box, type the property name. For example purposes, `ControlPicture` is used in this procedure.  
   
-6.  In the **Property Type** box, select <strong>IPictureDisp\*</strong> for the property type.  
+6.  In the **Property Type** box, select **IPictureDisp**<strong>\*</strong> for the property type.  
   
 7.  For **Implementation Type**, click **Get/Set Methods**.  
   
