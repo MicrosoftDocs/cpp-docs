@@ -1,7 +1,7 @@
 ---
 title: "CMFCButton Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/28/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCButton", "AFXBUTTON/CMFCButton", "AFXBUTTON/CMFCButton::CleanUp", "AFXBUTTON/CMFCButton::EnableFullTextTooltip", "AFXBUTTON/CMFCButton::EnableMenuFont", "AFXBUTTON/CMFCButton::EnableWindowsTheming", "AFXBUTTON/CMFCButton::GetToolTipCtrl", "AFXBUTTON/CMFCButton::IsAutoCheck", "AFXBUTTON/CMFCButton::IsAutorepeatCommandMode", "AFXBUTTON/CMFCButton::IsCheckBox", "AFXBUTTON/CMFCButton::IsChecked", "AFXBUTTON/CMFCButton::IsHighlighted", "AFXBUTTON/CMFCButton::IsPressed", "AFXBUTTON/CMFCButton::IsPushed", "AFXBUTTON/CMFCButton::IsRadioButton", "AFXBUTTON/CMFCButton::IsWindowsThemingEnabled", "AFXBUTTON/CMFCButton::SetAutorepeatMode", "AFXBUTTON/CMFCButton::SetCheckedImage", "AFXBUTTON/CMFCButton::SetFaceColor", "AFXBUTTON/CMFCButton::SetImage", "AFXBUTTON/CMFCButton::SetMouseCursor", "AFXBUTTON/CMFCButton::SetMouseCursorHand", "AFXBUTTON/CMFCButton::SetStdImage", "AFXBUTTON/CMFCButton::SetTextColor", "AFXBUTTON/CMFCButton::SetTextHotColor", "AFXBUTTON/CMFCButton::SetTooltip", "AFXBUTTON/CMFCButton::SizeToContent", "AFXBUTTON/CMFCButton::OnDraw", "AFXBUTTON/CMFCButton::OnDrawBorder", "AFXBUTTON/CMFCButton::OnDrawFocusRect", "AFXBUTTON/CMFCButton::OnDrawText", "AFXBUTTON/CMFCButton::OnFillBackground", "AFXBUTTON/CMFCButton::SelectFont", "AFXBUTTON/CMFCButton::m_bDrawFocus", "AFXBUTTON/CMFCButton::m_bHighlightChecked", "AFXBUTTON/CMFCButton::m_bRightImage", "AFXBUTTON/CMFCButton::m_bTransparent", "AFXBUTTON/CMFCButton::m_nAlignStyle", "AFXBUTTON/CMFCButton::m_nFlatStyle"]
@@ -319,7 +319,7 @@ BOOL m_bDrawFocus;
  The `CMFCButton` constructor initializes this member to TRUE.  
 
 ##  <a name="m_bGrayDisabled"></a>  CMFCButton::m_bGrayDisabled
-When TRUE, enables a disabled button to be drawn as grayed-out.|
+When TRUE, enables a disabled button to be drawn as grayed-out.
 
 
 ```  
@@ -336,7 +336,7 @@ BOOL m_bHighlightChecked;
 ### Remarks  
  Set the `m_bHighlightChecked` member to TRUE to specify that the framework will highlight a BS_CHECKBOX-style button when the mouse hovers over it.  
 
-##  <a name="m_bResponseOnButtonDown"></a> CMFCButton::m_bResponseOnButtonDown](#m_bResponseOnButtonDown)|
+##  <a name="m_bResponseOnButtonDown"></a> CMFCButton::m_bResponseOnButtonDown
 Indicates whether to respond to button down events.
 
 ```  
@@ -351,7 +351,7 @@ BOOL m_bRightImage;
 ```  
 
 
-##  <a name="m_bTopImage"></a>  CMFCButton::m_bTopImage](#m_bTopImage)| 
+##  <a name="m_bTopImage"></a>  CMFCButton::m_bTopImage](#m_bTopImage)
 Indicates whether the image is on top of the button.
 
 ```  
