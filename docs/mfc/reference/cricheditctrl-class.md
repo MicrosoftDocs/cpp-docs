@@ -145,7 +145,7 @@ BOOL CanPaste(UINT nFormat = 0) const;
   
 ### Parameters  
  *nFormat*  
- The Clipboard data format to query. This parameter can be one of the predefined Clipboard formats or the value returned by [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049).  
+ The Clipboard data format to query. This parameter can be one of the predefined Clipboard formats or the value returned by [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata).  
   
 ### Return Value  
  Nonzero if the Clipboard format can be pasted; otherwise 0.  
@@ -153,7 +153,7 @@ BOOL CanPaste(UINT nFormat = 0) const;
 ### Remarks  
  If *nFormat* is 0, `CanPaste` will try any format currently on the Clipboard.  
   
- For more information, see [EM_CANPASTE](https://msdn.microsoft.com/library/windows/desktop/bb787993) message and [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) function in the Windows SDK.  
+ For more information, see [EM_CANPASTE](https://msdn.microsoft.com/library/windows/desktop/bb787993) message and [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CRichEditCtrl#1](../../mfc/reference/codesnippet/cpp/cricheditctrl-class_1.cpp)]  

@@ -208,7 +208,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnHelpIndex](#onhelpindex)|Handles the ID_HELP_INDEX command and provides a default Help topic.|
 |[CWnd::OnHelpUsing](#onhelpusing)|Handles the ID_HELP_USING command.|
 |[CWnd::OnToolHitTest](#ontoolhittest)|Determines whether a point is in the bounding rectangle of the specified tool and retrieves information about the tool.|
-|[CWnd::OpenClipboard](#openclipboard)|Opens the Clipboard. Other applications will not be able to modify the Clipboard until the Windows [CloseClipboard](https://msdn.microsoft.com/library/windows/desktop/ms649035) function is called.|
+|[CWnd::OpenClipboard](#openclipboard)|Opens the Clipboard. Other applications will not be able to modify the Clipboard until the Windows [CloseClipboard](/windows/desktop/api/winuser/nf-winuser-closeclipboard) function is called.|
 |[CWnd::PaintWindowlessControls](#paintwindowlesscontrols)|Draws windowless controls on the control container.|
 |[CWnd::PostMessage](#postmessage)|Places a message in the application queue, then returns without waiting for the window to process the message.|
 |[CWnd::PreCreateWindow](#precreatewindow)|Called before the creation of the Windows window attached to this `CWnd` object.|
@@ -8347,7 +8347,7 @@ afx_msg void OnRenderAllFormats();
 
 ### Remarks
 
-The Clipboard owner should render the data in all the formats it is capable of generating and pass a data handle for each format to the Clipboard by calling the [SetClipboardData](https://msdn.microsoft.com/library/windows/desktop/ms649051) Windows function. This ensures that the Clipboard contains valid data even though the application that rendered the data is destroyed. The application should call the [OpenClipboard](#openclipboard) member function before calling the [SetClipboardData](https://msdn.microsoft.com/library/windows/desktop/ms649051) Windows function and call the [CloseClipboard](https://msdn.microsoft.com/library/windows/desktop/ms649035) Windows function afterward.
+The Clipboard owner should render the data in all the formats it is capable of generating and pass a data handle for each format to the Clipboard by calling the [SetClipboardData](https://msdn.microsoft.com/library/windows/desktop/ms649051) Windows function. This ensures that the Clipboard contains valid data even though the application that rendered the data is destroyed. The application should call the [OpenClipboard](#openclipboard) member function before calling the [SetClipboardData](https://msdn.microsoft.com/library/windows/desktop/ms649051) Windows function and call the [CloseClipboard](/windows/desktop/api/winuser/nf-winuser-closeclipboard) Windows function afterward.
 
 ##  <a name="onrenderformat"></a>  CWnd::OnRenderFormat
 
@@ -9614,7 +9614,7 @@ Nonzero if the Clipboard is opened via `CWnd`, or 0 if another application or wi
 
 ### Remarks
 
-Other applications will not be able to modify the Clipboard until the [CloseClipboard](https://msdn.microsoft.com/library/windows/desktop/ms649035) Windows function is called.
+Other applications will not be able to modify the Clipboard until the [CloseClipboard](/windows/desktop/api/winuser/nf-winuser-closeclipboard) Windows function is called.
 
 The current `CWnd` object will not become the owner of the Clipboard until the [EmptyClipboard](https://msdn.microsoft.com/library/windows/desktop/ms649037) Windows function is called.
 

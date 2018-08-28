@@ -973,7 +973,7 @@ CComPtr<IDataAdviseHolder>
 > [!NOTE]
 >  To use this data member within your control class, you must declare it as a data member in your control class. Your control class will not inherit this data member from the base class because it is declared within a union in the base class.  
   
- A data object is a control that can transfer data and that implements [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421), whose methods specify the format and transfer medium of the data.  
+ A data object is a control that can transfer data and that implements [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject), whose methods specify the format and transfer medium of the data.  
   
  The interface `m_spDataAdviseHolder` implements the [IDataObject::DAdvise](https://msdn.microsoft.com/library/windows/desktop/ms692579) and [IDataObject::DUnadvise](https://msdn.microsoft.com/library/windows/desktop/ms692448) methods to establish and delete advisory connections to the container. The control's container must implement an advise sink by supporting the [IAdviseSink](https://msdn.microsoft.com/library/windows/desktop/ms692513) interface.  
   

@@ -18,7 +18,7 @@ A `collection` is a COM object that provides an interface that allows access to 
   
  An `enumerator` is a COM object that provides an interface for iterating through items in a collection. Enumerator interfaces provide serial access to the elements of a collection via four required methods: `Next`, `Skip`, `Reset`, and `Clone`.  
   
- You can learn more about enumerator interfaces by reading about the archetypal (but entirely imaginary) [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx) interface.  
+ You can learn more about enumerator interfaces by reading reference content such as [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) interface.  
   
 ## In This Section  
  [ATL Collection and Enumerator Classes](../atl/atl-collection-and-enumerator-classes.md)  

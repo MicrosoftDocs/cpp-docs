@@ -276,7 +276,7 @@ virtual HRESULT GetClipboardData(
 - RECO_PASTE Paste from the Clipboard.  
   
  *lpRichDataObj*  
- Pointer to an [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421) object containing the Clipboard data from the rich edit control ( [IRichEditOle::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774341)).  
+ Pointer to an [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) object containing the Clipboard data from the rich edit control ( [IRichEditOle::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774341)).  
   
  *lplpdataobj*  
  Pointer to the pointer variable that receives the address of the `IDataObject` object representing the range specified in the *lpchrg* parameter. The value of *lplpdataobj* is ignored if an error is returned.  
@@ -289,7 +289,7 @@ virtual HRESULT GetClipboardData(
   
  This is an advanced overridable.  
   
- For more information, see [IRichEditOle::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774341), [IRichEditOleCallback::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774315), and [CHARRANGE](https://msdn.microsoft.com/library/windows/desktop/bb787885) in the Windows SDK and see [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421) in the Windows SDK.  
+ For more information, see [IRichEditOle::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774341), [IRichEditOleCallback::GetClipboardData](https://msdn.microsoft.com/library/windows/desktop/bb774315), and [CHARRANGE](https://msdn.microsoft.com/library/windows/desktop/bb787885) in the Windows SDK and see [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) in the Windows SDK.  
   
 ##  <a name="getcontextmenu"></a>  CRichEditView::GetContextMenu  
  The framework calls this function as part of the processing of [IRichEditOleCallback::GetContextMenu](https://msdn.microsoft.com/library/windows/desktop/bb774317).  
@@ -898,7 +898,7 @@ virtual HRESULT QueryAcceptData(
   
 ### Parameters  
  *lpdataobj*  
- Pointer to the [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421) to query.  
+ Pointer to the [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) to query.  
   
  *lpcfFormat*  
  Pointer to the acceptable data format.  
@@ -918,7 +918,7 @@ virtual HRESULT QueryAcceptData(
 ### Remarks  
  Override this function to handle different organization of COM items in your derived document class. This is an advanced overridable.  
   
- For more information on HRESULT and `IDataObject`, see [Structure of COM Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421), respectively, in the Windows SDK.  
+ For more information on HRESULT and `IDataObject`, see [Structure of COM Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms690088) and [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject), respectively, in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/cpp/cricheditview-class_10.cpp)]  

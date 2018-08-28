@@ -62,7 +62,7 @@ Use **db_column** in conjunction with either the [db_table](../windows/db-table.
 
 When the consumer attribute provider applies this attribute to a class, the compiler will rename the class to \_*YourClassName*Accessor, where *YourClassName* is the name you gave the class, and the compiler will also create a class called *YourClassName*, which derives from \_*YourClassName*Accessor.  In Class View, you will see both classes.
 
-For examples of this attribute used in an application, see the samples [AtlAgent](https://msdn.microsoft.com/52bef5da-c1a0-4223-b4e6-9e464b6db409), and [MultiRead](https://msdn.microsoft.com/5a2a915a-77dc-492f-94b2-1b809995dd5e).
+For examples of this attribute used in an application, see the samples [AtlAgent](https://github.com/Microsoft/VCSamples), and [MultiRead](https://github.com/Microsoft/VCSamples).
 
 ## Example
 

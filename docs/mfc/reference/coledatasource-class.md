@@ -77,7 +77,7 @@ void CacheData(
   
 ### Parameters  
  *cfFormat*  
- The Clipboard format in which the data is to be offered. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
+ The Clipboard format in which the data is to be offered. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function.  
   
  *lpStgMedium*  
  Points to a [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) structure containing the data in the format specified.  
@@ -96,7 +96,7 @@ void CacheData(
   
  For more information, see the [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structures in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
+ For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.  
   
 ##  <a name="cacheglobaldata"></a>  COleDataSource::CacheGlobalData  
  Call this function to specify a format in which data is offered during data transfer operations.  
@@ -110,7 +110,7 @@ void CacheGlobalData(
   
 ### Parameters  
  *cfFormat*  
- The Clipboard format in which the data is to be offered. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
+ The Clipboard format in which the data is to be offered. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function.  
   
  *hGlobal*  
  Handle to the global memory block containing the data in the format specified.  
@@ -125,7 +125,7 @@ void CacheGlobalData(
   
  For more information, see the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
+ For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.  
   
 ##  <a name="coledatasource"></a>  COleDataSource::COleDataSource  
  Constructs a `COleDataSource` object.  
@@ -145,7 +145,7 @@ void DelayRenderData(
   
 ### Parameters  
  *cfFormat*  
- The Clipboard format in which the data is to be offered. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
+ The Clipboard format in which the data is to be offered. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function.  
   
  *lpFormatEtc*  
  Points to a [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which the data is to be offered. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, default values are used for the other fields in the `FORMATETC` structure.  
@@ -159,7 +159,7 @@ void DelayRenderData(
   
  For more information, see the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
+ For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.  
   
 ##  <a name="delayrenderfiledata"></a>  COleDataSource::DelayRenderFileData  
  Call this function to specify a format in which data is offered during data transfer operations.  
@@ -172,7 +172,7 @@ void DelayRenderFileData(
   
 ### Parameters  
  *cfFormat*  
- The Clipboard format in which the data is to be offered. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
+ The Clipboard format in which the data is to be offered. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function.  
   
  *lpFormatEtc*  
  Points to a [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which the data is to be offered. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, default values are used for the other fields in the `FORMATETC` structure.  
@@ -186,7 +186,7 @@ void DelayRenderFileData(
   
  For more information, see the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
+ For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.  
   
 ##  <a name="delaysetdata"></a>  COleDataSource::DelaySetData  
  Call this function to support changing the contents of the data source.  
@@ -199,7 +199,7 @@ void DelaySetData(
   
 ### Parameters  
  *cfFormat*  
- The Clipboard format in which the data is to be placed. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) function.  
+ The Clipboard format in which the data is to be placed. This parameter can be one of the predefined Clipboard formats or the value returned by the native Windows [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) function.  
   
  *lpFormatEtc*  
  Points to a [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure describing the format in which the data is to be replaced. Provide a value for this parameter if you want to specify additional format information beyond the Clipboard format specified by *cfFormat*. If it is NULL, default values are used for the other fields in the `FORMATETC` structure.  
@@ -209,7 +209,7 @@ void DelaySetData(
   
  For more information, see the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
   
- For more information, see [RegisterClipboardFormat](https://msdn.microsoft.com/library/windows/desktop/ms649049) in the Windows SDK.  
+ For more information, see [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) in the Windows SDK.  
   
 ##  <a name="dodragdrop"></a>  COleDataSource::DoDragDrop  
  Call the `DoDragDrop` member function to perform a drag-and-drop operation for this data source, typically in an [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) handler.  
@@ -315,7 +315,7 @@ virtual BOOL OnRenderData(
   
  This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If your data is small and fixed in size, override `OnRenderGlobalData`. If your data is in a file, or is of variable size, override `OnRenderFileData`.  
   
- For more information, see the [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structures, the [TYMED](https://msdn.microsoft.com/library/windows/desktop/ms691227) enumeration type, and [IDataObject::GetData](https://msdn.microsoft.com/library/windows/desktop/ms678431) in the Windows SDK.  
+ For more information, see the [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structures, the [TYMED](https://msdn.microsoft.com/library/windows/desktop/ms691227) enumeration type, and [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
   
 ##  <a name="onrenderfiledata"></a>  COleDataSource::OnRenderFileData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is a file.  
@@ -341,7 +341,7 @@ virtual BOOL OnRenderFileData(
   
  This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you might want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override `OnRenderFileData`. For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- For more information, see the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](https://msdn.microsoft.com/library/windows/desktop/ms678431) in the Windows SDK.  
+ For more information, see the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
   
 ##  <a name="onrenderglobaldata"></a>  COleDataSource::OnRenderGlobalData  
  Called by the framework to retrieve data in the specified format when the specified storage medium is global memory.  
@@ -369,7 +369,7 @@ virtual BOOL OnRenderGlobalData(
   
  This is an advanced overridable. Override this function to supply your data in the requested format and medium. Depending on your data, you may want to override one of the other versions of this function instead. If you want to handle multiple storage media, override [OnRenderData](#onrenderdata). If your data is in a file, or is of variable size, override [OnRenderFileData](#onrenderfiledata). For more information on delayed rendering as handled by MFC, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- For more information, see the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](https://msdn.microsoft.com/library/windows/desktop/ms678431) in the Windows SDK.  
+ For more information, see the [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structure and [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
   
 ##  <a name="onsetdata"></a>  COleDataSource::OnSetData  
  Called by the framework to set or replace the data in the `COleDataSource` object in the specified format.  
@@ -399,7 +399,7 @@ virtual BOOL OnSetData(
   
  The default implementation does nothing. Override this function to replace the data in the specified format. This is an advanced overridable.  
   
- For more information, see the [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structures and the [ReleaseStgMedium](https://msdn.microsoft.com/library/windows/desktop/ms693491) and [IDataObject::GetData](https://msdn.microsoft.com/library/windows/desktop/ms678431) functions in the Windows SDK.  
+ For more information, see the [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) and [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) structures and the [ReleaseStgMedium](https://msdn.microsoft.com/library/windows/desktop/ms693491) and [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) functions in the Windows SDK.  
   
 ##  <a name="setclipboard"></a>  COleDataSource::SetClipboard  
  Puts the data contained in the `COleDataSource` object on the Clipboard after calling one of the following functions: [CacheData](#cachedata), [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), or [DelayRenderFileData](#delayrenderfiledata).  

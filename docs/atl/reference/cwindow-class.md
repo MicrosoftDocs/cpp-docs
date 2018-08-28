@@ -1551,7 +1551,7 @@ BOOL OpenClipboard() throw();
 ```  
   
 ### Remarks  
- See [OpenClipboard](https://msdn.microsoft.com/library/windows/desktop/ms649048) in the Windows SDK.  
+ See [OpenClipboard](/windows/desktop/api/winuser/nf-winuser-openclipboard) in the Windows SDK.  
   
 ##  <a name="operator_hwnd"></a>  CWindow::operator HWND  
  Converts a `CWindow` object to an HWND.  

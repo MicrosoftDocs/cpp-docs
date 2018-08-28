@@ -53,7 +53,8 @@ ATL provides code for manipulating paths and URLs in the form of [CPathT](../atl
 |[AtlUnescapeUrl](../atl/reference/atl-http-utility-functions.md#atlunescapeurl)|Call this function to convert escaped characters back to their original values.|  
 |[SystemTimeToHttpDate](../atl/reference/atl-http-utility-functions.md#systemtimetohttpdate)|Call this function to convert a system time to a string in a format suitable for using in HTTP headers.|  
 
-|[ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#addbackslash)|This function is an overloaded wrapper for [PathAddBackslash](https://msdn.microsoft.com/library/windows/desktop/bb773561).|  
+|[ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#addbackslash)|This function is an overloaded wrapper for [PathAddBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha
+).|  
 |[ATLPath::AddExtension](../atl/reference/atl-path-functions.md#addextension)|This function is an overloaded wrapper for [PathAddExtension](https://msdn.microsoft.com/library/windows/desktop/bb773563).|  
 |[ATLPath::Append](../atl/reference/atl-path-functions.md#append)|This function is an overloaded wrapper for [PathAppend](https://msdn.microsoft.com/library/windows/desktop/bb773565).|  
 |[ATLPath::BuildRoot](../atl/reference/atl-path-functions.md#buildroot)|This function is an overloaded wrapper for [PathBuildRoot](https://msdn.microsoft.com/library/windows/desktop/bb773567).|  

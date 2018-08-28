@@ -21,7 +21,7 @@ The following procedure is an example of how to:
 
 ### To change the font of text on an image
 
-1. Create a C++ Windows Forms Application. For details, see [Creating a Windows Application Project](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa). The [Windows Forms Application Template](https://msdn.microsoft.com/1babdebf-ab3f-4a64-a608-98499a5b9cea) adds a file named `app.ico` to your project by default.
+1. Create a C++ Windows Forms Application. For details, see [Creating a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5\(v=vs.100\)). The [Windows Forms Application Template](https://msdn.microsoft.com/1babdebf-ab3f-4a64-a608-98499a5b9cea) adds a file named `app.ico` to your project by default.
 
 2. In **Solution Explorer**, double-click the file app.ico. The [Image Editor](../windows/image-editor-for-icons.md) will open.
 

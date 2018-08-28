@@ -20,5 +20,5 @@ There are times when an object's implementor would like to take advantage of the
   
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   
- [Reusing Objects](https://msdn.microsoft.com/library/windows/desktop/ms678443)
+ [Reusing Objects](/windows/desktop/com/reusing-objects)
 

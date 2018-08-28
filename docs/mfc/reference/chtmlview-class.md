@@ -945,7 +945,7 @@ virtual HRESULT OnFilterDataObject(
   
 ### Parameters  
  *pDataObject*  
- Address of the [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421) interface supplied by Internet Explorer or MSHTML.  
+ Address of the [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) interface supplied by Internet Explorer or MSHTML.  
   
  *ppDataObject*  
  Address that receives the `IDataObject` interface pointer supplied by the host. The contents of this parameter should always be initialized to NULL, even if the method fails.  

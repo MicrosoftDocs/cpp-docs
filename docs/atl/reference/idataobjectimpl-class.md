@@ -47,7 +47,7 @@ class IDataObjectImpl
 |[IDataObjectImpl::SetData](#setdata)|Transfers data from the client to the data object. The ATL implementation returns E_NOTIMPL.|  
   
 ## Remarks  
- The [IDataObject](https://msdn.microsoft.com/library/windows/desktop/ms688421) interface provides methods to support Uniform Data Transfer. `IDataObject` uses the standard format structures [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) and [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) to retrieve and store data.  
+ The [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) interface provides methods to support Uniform Data Transfer. `IDataObject` uses the standard format structures [FORMATETC](https://msdn.microsoft.com/library/windows/desktop/ms682177) and [STGMEDIUM](https://msdn.microsoft.com/library/windows/desktop/ms683812) to retrieve and store data.  
   
  `IDataObject` also manages connections to advise sinks to handle data change notifications. In order for the client to receive data change notifications from the data object, the client must implement the [IAdviseSink](https://msdn.microsoft.com/library/windows/desktop/ms692513) interface on an object called an advise sink. When the client then calls `IDataObject::DAdvise`, a connection is established between the data object and the advise sink.  
   
@@ -115,7 +115,7 @@ HRESULT EnumFormatEtc(
 ```  
   
 ### Remarks  
- See [IDataObject::EnumFormatEtc](https://msdn.microsoft.com/library/windows/desktop/ms683979) in the Windows SDK.  
+ See [IDataObject::EnumFormatEtc](/windows/desktop/api/objidl/nf-objidl-idataobject-enumformatetc) in the Windows SDK.  
   
 ### Return Value  
  Returns E_NOTIMPL.  
@@ -155,7 +155,7 @@ HRESULT GetData(
 ### Remarks  
  The *pformatetcIn* parameter must specify a storage medium type of TYMED_MFPICT.  
   
- See [IDataObject::GetData](https://msdn.microsoft.com/library/windows/desktop/ms678431) in the Windows SDK.  
+ See [IDataObject::GetData](windows/desktop/api/objidl/nf-objidl-idataobject-getdata) in the Windows SDK.  
   
 ##  <a name="getdatahere"></a>  IDataObjectImpl::GetDataHere  
  Similar to `GetData`, except the client must allocate the `STGMEDIUM` structure.  
