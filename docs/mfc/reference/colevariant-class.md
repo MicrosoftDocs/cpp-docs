@@ -147,7 +147,7 @@ COleVariant(LPCITEMIDLIST pidl);
  A [CLongBinary](../../mfc/reference/clongbinary-class.md) object to be copied into the new `COleVariant` object.  
   
  *pidl*  
- A pointer to a [ITEMIDLIST](https://msdn.microsoft.com/library/windows/desktop/bb773321) structure to be copied into the new `COleVariant` object.  
+ A pointer to a [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) structure to be copied into the new `COleVariant` object.  
   
 ### Remarks  
  All these constructors create new `COleVariant` objects initialized to the specified value. A brief description of each of these constructors follows.  
@@ -182,7 +182,7 @@ COleVariant(LPCITEMIDLIST pidl);
   
 - **COleVariant(** `lbSrc` **)** Copies a `CLongBinary` object into the new object, VT_EMPTY.  
   
- For more information on SCODE, see [Structure of COM Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
+ For more information on SCODE, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK.  
   
 ##  <a name="changetype"></a>  COleVariant::ChangeType  
  Converts the type of variant value in this `COleVariant` object.  

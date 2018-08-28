@@ -82,7 +82,7 @@ class CFileTime :  public FILETIME
 |Day|Hour \* 24|  
 |Week|Day \* 7|  
   
- **Note** Not all file systems can record creation and last access time and not all file systems record them in the same manner. For example, on the Windows NT FAT file system, create time has a resolution of 10 milliseconds, write time has a resolution of 2 seconds, and access time has a resolution of 1 day (the access date). On NTFS, access time has a resolution of 1 hour. Furthermore, FAT records times on disk in local time, but NTFS records times on disk in UTC. For more information, see [File Times](https://msdn.microsoft.com/library/windows/desktop/ms724290).  
+ **Note** Not all file systems can record creation and last access time and not all file systems record them in the same manner. For example, on the Windows NT FAT file system, create time has a resolution of 10 milliseconds, write time has a resolution of 2 seconds, and access time has a resolution of 1 day (the access date). On NTFS, access time has a resolution of 1 hour. Furthermore, FAT records times on disk in local time, but NTFS records times on disk in UTC. For more information, see [File Times](/windows/desktop/SysInfo/file-times).  
   
 ## Inheritance Hierarchy  
  `FILETIME`  

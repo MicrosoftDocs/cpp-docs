@@ -31,7 +31,7 @@ The ID of the entry point.
 
 ## Remarks
 
-The **entry** C++ attribute has the same functionality as the [entry](https://msdn.microsoft.com/library/windows/desktop/aa366815) MIDL attribute.
+The **entry** C++ attribute has the same functionality as the [entry](/windows/desktop/Midl/entry) MIDL attribute.
 
 ## Example
 

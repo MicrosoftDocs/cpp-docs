@@ -137,7 +137,7 @@ IUnknown* GetAt(int nIndex);
  The index of the element to retrieve.  
   
 ### Return Value  
- A pointer to an [IUnknown](https://msdn.microsoft.com/library/windows/desktop/ms680509) interface.  
+ A pointer to an [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface.  
   
 ##  <a name="getcookie"></a>  CComDynamicUnkArray::GetCookie  
  Call this method to get the cookie associated with a given `IUnknown` pointer.  

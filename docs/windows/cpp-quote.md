@@ -35,7 +35,7 @@ The **cpp_quote** C++ attribute is useful if you want to put a preprocessor dire
 
 You can also use **cpp_quote** and generate an .h file as part of the MIDL compilation. For example, if you have a C++ header file that uses C++ IDL attributes but cannot use this file for some task, then you can compile it to create a MIDL-generated .h file, which you should be able to use.
 
-The **cpp_quote** attribute has the same functionality as the [cpp_quote](https://msdn.microsoft.com/library/windows/desktop/aa366765) MIDL attribute.
+The **cpp_quote** attribute has the same functionality as the [cpp_quote](/windows/desktop/Midl/cpp-quote) MIDL attribute.
 
 ## Example
 

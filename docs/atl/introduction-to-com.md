@@ -30,5 +30,5 @@ COM is the fundamental "object model" on which ActiveX Controls and OLE are buil
   
 ## See Also  
  [Introduction to COM and ATL](../atl/introduction-to-com-and-atl.md)   
- [The Component Object Model](https://msdn.microsoft.com/library/windows/desktop/ms694363)
+ [The Component Object Model](/windows/desktop/com/the-component-object-model)
 

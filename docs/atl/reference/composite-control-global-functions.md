@@ -76,9 +76,9 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100  
 ```  
   
- For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](https://msdn.microsoft.com/library/windows/desktop/aa380902) under Windows SDK*: SDK Tools*.  
+ For more information on editing resource scripts, see [How to: Open a Resource Script File in Text Format](../../windows/how-to-open-a-resource-script-file-in-text-format.md). For more information on control resource-definition statements, see [Common Control Parameters](/windows/desktop/menurc/common-control-parameters) under Windows SDK*: SDK Tools*.  
   
- For more information on dialog boxes in general, refer to [DialogBox](https://msdn.microsoft.com/library/windows/desktop/ms645452) and [CreateDialogParam](https://msdn.microsoft.com/library/windows/desktop/ms645445) in the Windows SDK.  
+ For more information on dialog boxes in general, refer to [DialogBox](/windows/desktop/api/winuser/nf-winuser-dialogboxa) and [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) in the Windows SDK.  
   
 ##  <a name="atlaxcreatedialog"></a>  AtlAxCreateDialog  
  Creates a modeless dialog box from a dialog template provided by the user.  
@@ -114,7 +114,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 ### Remarks  
  The resulting dialog box can contain ActiveX controls.  
   
- See [CreateDialog](https://msdn.microsoft.com/library/windows/desktop/ms645434) and [CreateDialogParam](https://msdn.microsoft.com/library/windows/desktop/ms645445) in the Windows SDK.  
+ See [CreateDialog](/windows/desktop/api/winuser/nf-winuser-createdialoga) and [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) in the Windows SDK.  
   
 ##  <a name="atlaxcreatecontrol"></a>  AtlAxCreateControl  
  Creates an ActiveX control, initializes it, and hosts it in the specified window.  

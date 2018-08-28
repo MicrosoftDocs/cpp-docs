@@ -12,7 +12,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ClickOnce Deployment for Visual C++ Applications
-Visual Studio provides two different technologies for deploying Windows applications: ClickOnce deployment or [Windows Installer](https://msdn.microsoft.com/library/cc185688) deployment.  
+Visual Studio provides two different technologies for deploying Windows applications: ClickOnce deployment or [Windows Installer](/windows/desktop/Msi/windows-installer-portal) deployment.  
   
 ## ClickOnce Deployment in C++  
  The Visual C++ development environment does not directly support deployment of Visual C++ projects with ClickOnce, but tools are available to use it.  

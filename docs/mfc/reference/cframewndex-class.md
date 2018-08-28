@@ -67,7 +67,7 @@ class CFrameWndEx : public CFrameWnd
 |[CFrameWndEx::OnCreate](#oncreate)|Called by the framework after the frame is created.|  
 |[CFrameWndEx::OnDestroy](#ondestroy)|Called by the framework when the frame is destroyed.|  
 |[CFrameWndEx::OnDrawMenuImage](#ondrawmenuimage)|Called by the framework when the application draws the image associated with a menu item.|  
-|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a `CMFCPopupMenu` object processes a [WM_PAINT](https://msdn.microsoft.com/library/windows/desktop/dd145213) message.|  
+|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a `CMFCPopupMenu` object processes a [WM_PAINT](/windows/desktop/gdi/wm-paint) message.|  
 |[CFrameWndEx::OnDWMCompositionChanged](#ondwmcompositionchanged)|Called by the framework when Desktop Window Manager (DWM) composition has been enabled or disabled.|  
 |[CFrameWndEx::OnExitSizeMove](#onexitsizemove)|Called by the framework when the frame stops moving or resizing.|  
 |[CFrameWndEx::OnGetMinMaxInfo](#ongetminmaxinfo)|Called by the framework when the frame is resized to set window dimension limits.|  
@@ -946,7 +946,7 @@ afx_msg void OnLButtonDown(
   
 ### Parameters  
  [in] *nFlags*  
- Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONDOWN Notification](https://msdn.microsoft.com/library/windows/desktop/ms645607).  
+ Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONDOWN Notification](/windows/desktop/inputdev/wm-lbuttondown).  
   
  [in] *point*  
  Specifies the x and y coordinates of the pointer, relative to the upper-left corner of the window.  
@@ -964,7 +964,7 @@ afx_msg void OnLButtonUp(
   
 ### Parameters  
  [in] *nFlags*  
- Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONUP Notification](https://msdn.microsoft.com/library/windows/desktop/ms645608).  
+ Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONUP Notification](/windows/desktop/inputdev/wm-lbuttonup).  
   
  [in] *point*  
  Specifies the x and y coordinates of the pointer, relative to the upper-left corner of the window.  
@@ -1038,7 +1038,7 @@ afx_msg void OnMouseMove(
   
 ### Parameters  
  [in] *nFlags*  
- Indicates whether a user pressed modifier keys. For possible values see the parameter *wParam* in [WM_MOUSEMOVE Notification](https://msdn.microsoft.com/library/windows/desktop/ms645616).  
+ Indicates whether a user pressed modifier keys. For possible values see the parameter *wParam* in [WM_MOUSEMOVE Notification](/windows/desktop/inputdev/wm-mousemove).  
   
  [in] *point*  
  Specifies the x and y coordinates of the pointer relative to the upper-left corner of the window.  
@@ -1107,7 +1107,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
  The location of the pointer in screen coordinates.  
   
 ### Return Value  
- A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](https://msdn.microsoft.com/library/windows/desktop/ms645618).  
+ A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](/windows/desktop/inputdev/wm-nchittest).  
   
 ### Remarks  
   
@@ -1122,7 +1122,7 @@ afx_msg void OnNcMouseMove(
   
 ### Parameters  
  [in] *nHitTest*  
- A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](https://msdn.microsoft.com/library/windows/desktop/ms645618).  
+ A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](/windows/desktop/inputdev/wm-nchittest).  
   
  [in] *point*  
  The location of the pointer in screen coordinates.  
@@ -1186,7 +1186,7 @@ afx_msg LRESULT OnPowerBroadcast(
   
 ### Parameters  
  [in] *wp*  
- The power management event. For a list of possible values see [WM_POWERBROADCAST Message](https://msdn.microsoft.com/library/windows/desktop/aa373247).  
+ The power management event. For a list of possible values see [WM_POWERBROADCAST Message](/windows/desktop/Power/wm-powerbroadcast).  
   
  [in] *lp*  
  This parameter is not used.  
@@ -1335,7 +1335,7 @@ afx_msg void OnSize(
   
 ### Parameters  
  [in] *nType*  
- The type of resizing. For possible values see the parameter *wParam* in [WM_SIZE Notification](https://msdn.microsoft.com/library/windows/desktop/ms632646).  
+ The type of resizing. For possible values see the parameter *wParam* in [WM_SIZE Notification](/windows/desktop/winmsg/wm-size).  
   
  [in] *cx*  
  New width of the frame in pixels.  
@@ -1356,7 +1356,7 @@ afx_msg void OnSizing(
   
 ### Parameters  
  [in] *fwSide*  
- The edge of the frame that is moved. See the parameter *wParam* in [WM_SIZING Notification](https://msdn.microsoft.com/library/windows/desktop/ms632647).  
+ The edge of the frame that is moved. See the parameter *wParam* in [WM_SIZING Notification](/windows/desktop/winmsg/wm-sizing).  
   
  [in, out] *pRect*  
  Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](../../mfc/reference/rect-structure1.md) structure that contains the frame's coordinates.  
@@ -1713,10 +1713,10 @@ virtual void WinHelp(
   
 ### Parameters  
  *dwData*  
- Data that depends on the *nCmd* parameter. For a list of possible values see [WinHelp](https://msdn.microsoft.com/library/windows/desktop/bb762267).  
+ Data that depends on the *nCmd* parameter. For a list of possible values see [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa).  
   
  *nCmd*  
- The help command. For a list of possible values see [WinHelp](https://msdn.microsoft.com/library/windows/desktop/bb762267).  
+ The help command. For a list of possible values see [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa).  
   
 ### Remarks  
   

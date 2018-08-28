@@ -33,7 +33,7 @@ DECLARE_OLEMISC_STATUS( miscstatus )
  All applicable OLEMISC flags.  
   
 ### Remarks  
- This macro is used to set the OLEMISC flags for an ActiveX control. Refer to [IOleObject::GetMiscStatus](https://msdn.microsoft.com/library/windows/desktop/ms678521) for more details.  
+ This macro is used to set the OLEMISC flags for an ActiveX control. Refer to [IOleObject::GetMiscStatus](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-getmiscstatus) for more details.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#124](../../atl/codesnippet/cpp/object-status-macros_1.h)]  

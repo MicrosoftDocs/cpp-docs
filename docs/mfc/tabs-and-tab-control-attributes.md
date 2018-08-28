@@ -20,7 +20,7 @@ You have considerable control over the appearance and behavior of tabs that make
   
  [!code-cpp[NVC_MFCControlLadenDialog#32](../mfc/codesnippet/cpp/tabs-and-tab-control-attributes_1.cpp)]  
   
- For more information about tab attributes, see [Tabs and Tab Attributes](https://msdn.microsoft.com/library/windows/desktop/bb760550) in the Windows SDK. For more information about adding tabs to a tab control, see [Adding Tabs to a Tab Control](../mfc/adding-tabs-to-a-tab-control.md) later in this topic.  
+ For more information about tab attributes, see [Tabs and Tab Attributes](/windows/desktop/Controls/tab-controls) in the Windows SDK. For more information about adding tabs to a tab control, see [Adding Tabs to a Tab Control](../mfc/adding-tabs-to-a-tab-control.md) later in this topic.  
   
 ## See Also  
  [Using CTabCtrl](../mfc/using-ctabctrl.md)   

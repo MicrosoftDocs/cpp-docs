@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IRunnableObjectImpl Class
-This class implements `IUnknown` and provides a default implementation of the [IRunnableObject](https://msdn.microsoft.com/library/windows/desktop/ms692783) interface.  
+This class implements `IUnknown` and provides a default implementation of the [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) interface.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -42,7 +42,7 @@ class IRunnableObjectImpl
 |[IRunnableObjectImpl::SetContainedObject](#setcontainedobject)|Indicates that the control is embedded. The ATL implementation returns S_OK.|  
   
 ## Remarks  
- The [IRunnableObject](https://msdn.microsoft.com/library/windows/desktop/ms692783) interface enables a container to determine if a control is running, force it to run, or lock it into the running state. Class `IRunnableObjectImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
+ The [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) interface enables a container to determine if a control is running, force it to run, or lock it into the running state. Class `IRunnableObjectImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -65,7 +65,7 @@ HRESULT GetRunningClass(LPCLSID lpClsid);
  The ATL implementation sets \* *lpClsid* to GUID_NULL and returns E_UNEXPECTED.  
   
 ### Remarks  
- See [IRunnableObject::GetRunningClass](https://msdn.microsoft.com/library/windows/desktop/ms693734) in the Windows SDK.  
+ See [IRunnableObject::GetRunningClass](/windows/desktop/api/objidl/nf-objidl-irunnableobject-getrunningclass) in the Windows SDK.  
   
 ##  <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning  
  Determines if the control is running.  
@@ -78,7 +78,7 @@ virtual BOOL IsRunning();
  The ATL implementation returns TRUE.  
   
 ### Remarks  
- See [IRunnableObject::IsRunning](https://msdn.microsoft.com/library/windows/desktop/ms678496) in the Windows SDK.  
+ See [IRunnableObject::IsRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-isrunning) in the Windows SDK.  
   
 ##  <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning  
  Locks the control into the running state.  
@@ -91,7 +91,7 @@ HRESULT LockRunning(BOOL fLock, BOOL fLastUnlockCloses);
  The ATL implementation returns S_OK.  
   
 ### Remarks  
- See [IRunnableObject::LockRunning](https://msdn.microsoft.com/library/windows/desktop/ms693361) in the Windows SDK.  
+ See [IRunnableObject::LockRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-lockrunning) in the Windows SDK.  
   
 ##  <a name="run"></a>  IRunnableObjectImpl::Run  
  Forces the control to run.  
@@ -104,7 +104,7 @@ HRESULT Run(LPBINDCTX lpbc);
  The ATL implementation returns S_OK.  
   
 ### Remarks  
- See [IRunnableObject::Run](https://msdn.microsoft.com/library/windows/desktop/ms694517) in the Windows SDK.  
+ See [IRunnableObject::Run](/windows/desktop/api/objidl/nf-objidl-irunnableobject-run) in the Windows SDK.  
   
 ##  <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject  
  Indicates that the control is embedded.  
@@ -117,7 +117,7 @@ HRESULT SetContainedObject(BOOL fContained);
  The ATL implementation returns S_OK.  
   
 ### Remarks  
- See [IRunnableObject::SetContainedObject](https://msdn.microsoft.com/library/windows/desktop/ms693710) in the Windows SDK.  
+ See [IRunnableObject::SetContainedObject](/windows/desktop/api/objidl/nf-objidl-irunnableobject-setcontainedobject) in the Windows SDK.  
   
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)   

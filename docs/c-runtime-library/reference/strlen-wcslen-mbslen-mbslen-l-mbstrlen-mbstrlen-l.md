@@ -63,7 +63,7 @@ Each of these functions returns the number of characters in *str*, excluding the
 
 **strlen** interprets the string as a single-byte character string, so its return value is always equal to the number of bytes, even if the string contains multibyte characters. **wcslen** is a wide-character version of **strlen**; the argument of **wcslen** is a wide-character string and the count of characters is in wide (two-byte) characters. **wcslen** and **strlen** behave identically otherwise.
 
-**Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](https://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Security Note** These functions incur a potential threat brought about by a buffer overrun problem. Buffer overrun problems are a frequent method of system attack, resulting in an unwarranted elevation of privilege. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### Generic-Text Routine Mappings
 

@@ -47,7 +47,7 @@ class COleStreamFile : public CFile
   
  For more information about manipulating streams and storages, see the article [Containers: Compound Files](../../mfc/containers-compound-files.md)..  
   
- For more information, see [IStream](https://msdn.microsoft.com/library/windows/desktop/aa380034) and [IStorage](https://msdn.microsoft.com/library/windows/desktop/aa380015) in the Windows SDK.  
+ For more information, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream) and [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -73,7 +73,7 @@ void Attach(LPSTREAM lpStream);
 ### Remarks  
  The object must not already be associated with an OLE stream.  
   
- For more information, see [IStream](https://msdn.microsoft.com/library/windows/desktop/aa380034) in the Windows SDK.  
+ For more information, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream) in the Windows SDK.  
   
 ##  <a name="colestreamfile"></a>  COleStreamFile::COleStreamFile  
  Creates a `COleStreamFile` object.  
@@ -89,7 +89,7 @@ COleStreamFile(LPSTREAM lpStream = NULL);
 ### Remarks  
  If *lpStream* is NULL, the object is not associated with an OLE stream, otherwise, the object is associated with the supplied OLE stream.  
   
- For more information, see [IStream](https://msdn.microsoft.com/library/windows/desktop/aa380034) in the Windows SDK.  
+ For more information, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream) in the Windows SDK.  
   
 ##  <a name="creatememorystream"></a>  COleStreamFile::CreateMemoryStream  
  Safely creates a new stream out of global, shared memory where a failure is a normal, expected condition.  
@@ -108,7 +108,7 @@ BOOL CreateMemoryStream(CFileException* pError = NULL);
 ### Remarks  
  The memory is allocated by the OLE subsystem.  
   
- For more information, see [CreateStreamOnHGlobal](https://msdn.microsoft.com/library/windows/desktop/aa378980) in the Windows SDK.  
+ For more information, see [CreateStreamOnHGlobal](/windows/desktop/api/combaseapi/nf-combaseapi-createstreamonhglobal) in the Windows SDK.  
   
 ##  <a name="createstream"></a>  COleStreamFile::CreateStream  
  Safely creates a new stream in the supplied storage object where a failure is a normal, expected condition.  
@@ -140,7 +140,7 @@ BOOL CreateStream(
 ### Remarks  
  A file exception will be thrown if the open fails and *pError* is not NULL.  
   
- For more information, see [IStorage::CreateStream](https://msdn.microsoft.com/library/windows/desktop/aa380020) in the Windows SDK.  
+ For more information, see [IStorage::CreateStream](/windows/desktop/api/objidl/nf-objidl-istorage-createstream) in the Windows SDK.  
   
 ##  <a name="detach"></a>  COleStreamFile::Detach  
  Disassociates the stream from the object without closing the stream.  
@@ -155,7 +155,7 @@ LPSTREAM Detach();
 ### Remarks  
  The stream must be closed in some other fashion before the program terminates.  
   
- For more information, see [IStream](https://msdn.microsoft.com/library/windows/desktop/aa380034) in the Windows SDK.  
+ For more information, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream) in the Windows SDK.  
   
 ##  <a name="getstream"></a>  COleStreamFile::GetStream  
  Call this function to return a pointer to current stream.  
@@ -165,7 +165,7 @@ IStream* GetStream() const;
 ```  
   
 ### Return Value  
- A pointer to the current stream interface ( [IStream](https://msdn.microsoft.com/library/windows/desktop/aa380034)).  
+ A pointer to the current stream interface ( [IStream](/windows/desktop/api/objidl/nn-objidl-istream)).  
   
 ##  <a name="openstream"></a>  COleStreamFile::OpenStream  
  Opens an existing stream.  
@@ -197,7 +197,7 @@ BOOL OpenStream(
 ### Remarks  
  A file exception will be thrown if the open fails and *pError* is not NULL.  
   
- For more information, see [IStorage::OpenStream](https://msdn.microsoft.com/library/windows/desktop/aa380025) in the Windows SDK.  
+ For more information, see [IStorage::OpenStream](/windows/desktop/api/objidl/nf-objidl-istorage-openstream) in the Windows SDK.  
   
 ## See Also  
  [CFile Class](../../mfc/reference/cfile-class.md)   

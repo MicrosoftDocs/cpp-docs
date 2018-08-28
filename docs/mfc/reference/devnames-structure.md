@@ -33,7 +33,7 @@ typedef struct tagDEVNAMES { /* dvnm */
  (Input/Output) Specifies the offset in characters to a null-terminated string that contains the filename (without the extension) of the device driver. On input, this string is used to determine the printer to display initially in the dialog box.  
   
  *wDeviceOffset*  
- (Input/Output) Specifies the offset in characters to the null-terminated string (maximum of 32 bytes including the null) that contains the name of the device. This string must be identical to the `dmDeviceName` member of the [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) structure.  
+ (Input/Output) Specifies the offset in characters to the null-terminated string (maximum of 32 bytes including the null) that contains the name of the device. This string must be identical to the `dmDeviceName` member of the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) structure.  
   
  *wOutputOffset*  
  (Input/Output) Specifies the offset in characters to the null-terminated string that contains the DOS device name for the physical output medium (output port).  

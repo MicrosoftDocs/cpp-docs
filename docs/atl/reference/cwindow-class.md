@@ -259,7 +259,7 @@ HDC BeginPaint(LPPAINTSTRUCT lpPaint) throw();
 ```  
   
 ### Remarks  
- See [BeginPaint](https://msdn.microsoft.com/library/windows/desktop/dd183362) in the Windows SDK.  
+ See [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/cpp/cwindow-class_2.cpp)]  
@@ -302,7 +302,7 @@ BOOL ChangeClipboardChain(HWND hWndNewNext) throw();
 ```  
   
 ### Remarks  
- See [ChangeClipboardChain](https://msdn.microsoft.com/library/windows/desktop/ms649034) in the Windows SDK.  
+ See [ChangeClipboardChain](/windows/desktop/api/winuser/nf-winuser-changeclipboardchain) in the Windows SDK.  
   
 ##  <a name="checkdlgbutton"></a>  CWindow::CheckDlgButton  
  Changes the check state of the specified button.  
@@ -312,7 +312,7 @@ BOOL CheckDlgButton(int nIDButton, UINT nCheck) throw();
 ```  
   
 ### Remarks  
- See [CheckDlgButton](https://msdn.microsoft.com/library/windows/desktop/bb761875) in the Windows SDK.  
+ See [CheckDlgButton](/windows/desktop/api/winuser/nf-winuser-checkdlgbutton) in the Windows SDK.  
   
 ##  <a name="checkradiobutton"></a>  CWindow::CheckRadioButton  
  Checks the specified radio button.  
@@ -325,7 +325,7 @@ BOOL CheckRadioButton(
 ```  
   
 ### Remarks  
- See [CheckRadioButton](https://msdn.microsoft.com/library/windows/desktop/bb761877) in the Windows SDK.  
+ See [CheckRadioButton](/windows/desktop/api/winuser/nf-winuser-checkradiobutton) in the Windows SDK.  
   
 ##  <a name="childwindowfrompoint"></a>  CWindow::ChildWindowFromPoint  
  Retrieves the child window containing the specified point.  
@@ -356,7 +356,7 @@ BOOL ClientToScreen(LPRECT lpRect) const throw();
 ```  
   
 ### Remarks  
- See [ClientToScreen](https://msdn.microsoft.com/library/windows/desktop/dd183434) in the Windows SDK.  
+ See [ClientToScreen](/windows/desktop/api/winuser/nf-winuser-clienttoscreen) in the Windows SDK.  
   
  The second version of this method allows you to convert the coordinates of a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
@@ -418,7 +418,7 @@ BOOL CreateCaret(HBITMAP pBitmap) throw();
 ```  
   
 ### Remarks  
- See [CreateCaret](https://msdn.microsoft.com/library/windows/desktop/ms648399) in the Windows SDK.  
+ See [CreateCaret](/windows/desktop/api/winuser/nf-winuser-createcaret) in the Windows SDK.  
   
 ##  <a name="creategraycaret"></a>  CWindow::CreateGrayCaret  
  Creates a gray rectangle for the system caret.  
@@ -428,7 +428,7 @@ BOOL CreateGrayCaret(int nWidth, int nHeight) throw();
 ```  
   
 ### Remarks  
- See [CreateCaret](https://msdn.microsoft.com/library/windows/desktop/ms648399) in the Windows SDK.  
+ See [CreateCaret](/windows/desktop/api/winuser/nf-winuser-createcaret) in the Windows SDK.  
   
  Passes (HBITMAP) 1 for the bitmap handle parameter to the Win32 function.  
   
@@ -440,7 +440,7 @@ BOOL CreateSolidCaret(int nWidth, int nHeight) throw();
 ```  
   
 ### Remarks  
- See [CreateCaret](https://msdn.microsoft.com/library/windows/desktop/ms648399) in the Windows SDK.  
+ See [CreateCaret](/windows/desktop/api/winuser/nf-winuser-createcaret) in the Windows SDK.  
   
  Passes (HBITMAP) 0 for the bitmap handle parameter to the Win32 function.  
   
@@ -518,7 +518,7 @@ int DlgDirList(
 ```  
   
 ### Remarks  
- See [DlgDirList](https://msdn.microsoft.com/library/windows/desktop/bb761366) in the Windows SDK.  
+ See [DlgDirList](/windows/desktop/api/winuser/nf-winuser-dlgdirlista) in the Windows SDK.  
   
 ##  <a name="dlgdirlistcombobox"></a>  CWindow::DlgDirListComboBox  
  Fills a combo box with the names of all files matching a specified path or file name.  
@@ -532,7 +532,7 @@ int DlgDirListComboBox(
 ```  
   
 ### Remarks  
- See [DlgDirListComboBox](https://msdn.microsoft.com/library/windows/desktop/bb775935) in the Windows SDK.  
+ See [DlgDirListComboBox](/windows/desktop/api/winuser/nf-winuser-dlgdirlistcomboboxa) in the Windows SDK.  
   
 ##  <a name="dlgdirselect"></a>  CWindow::DlgDirSelect  
  Retrieves the current selection from a list box.  
@@ -545,7 +545,7 @@ BOOL DlgDirSelect(
 ```  
   
 ### Remarks  
- See [DlgDirSelectEx](https://msdn.microsoft.com/library/windows/desktop/bb761368) in the Windows SDK.  
+ See [DlgDirSelectEx](/windows/desktop/api/winuser/nf-winuser-dlgdirselectexa) in the Windows SDK.  
   
 ##  <a name="dlgdirselectcombobox"></a>  CWindow::DlgDirSelectComboBox  
  Retrieves the current selection from a combo box.  
@@ -558,7 +558,7 @@ BOOL DlgDirSelectComboBox(
 ```  
   
 ### Remarks  
- See [DlgDirSelectComboBoxEx](https://msdn.microsoft.com/library/windows/desktop/bb775937) in the Windows SDK.  
+ See [DlgDirSelectComboBoxEx](/windows/desktop/api/winuser/nf-winuser-dlgdirselectcomboboxexa) in the Windows SDK.  
   
 ##  <a name="dragacceptfiles"></a>  CWindow::DragAcceptFiles  
  Registers whether the window accepts dragged files.  
@@ -568,7 +568,7 @@ void DragAcceptFiles(BOOL bAccept = TRUE);
 ```  
   
 ### Remarks  
- See [DragAcceptFiles](https://msdn.microsoft.com/library/windows/desktop/bb776406) in the Windows SDK.  
+ See [DragAcceptFiles](/windows/desktop/api/shellapi/nf-shellapi-dragacceptfiles) in the Windows SDK.  
   
 ##  <a name="drawmenubar"></a>  CWindow::DrawMenuBar  
  Redraws the window's menu bar.  
@@ -578,7 +578,7 @@ BOOL DrawMenuBar() throw();
 ```  
   
 ### Remarks  
- See [DrawMenuBar](https://msdn.microsoft.com/library/windows/desktop/ms647633) in the Windows SDK.  
+ See [DrawMenuBar](/windows/desktop/api/winuser/nf-winuser-drawmenubar) in the Windows SDK.  
   
 ##  <a name="enablescrollbar"></a>  CWindow::EnableScrollBar  
  Enables or disables the scroll bar arrows.  
@@ -588,7 +588,7 @@ BOOL EnableScrollBar(UINT uSBFlags, UINT uArrowFlags = ESB_ENABLE_BOTH) throw();
 ```  
   
 ### Remarks  
- See [EnableScrollBar](https://msdn.microsoft.com/library/windows/desktop/bb787579) in the Windows SDK.  
+ See [EnableScrollBar](/windows/desktop/api/winuser/nf-winuser-enablescrollbar) in the Windows SDK.  
   
 ##  <a name="enablewindow"></a>  CWindow::EnableWindow  
  Enables or disables input.  
@@ -611,7 +611,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint) throw();
 ```  
   
 ### Remarks  
- See [EndPaint](https://msdn.microsoft.com/library/windows/desktop/dd162598) in the Windows SDK.  
+ See [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#2](../../atl/codesnippet/cpp/cwindow-class_2.cpp)]  
@@ -624,7 +624,7 @@ BOOL FlashWindow(BOOL bInvert) throw();
 ```  
   
 ### Remarks  
- See [FlashWindow](https://msdn.microsoft.com/library/windows/desktop/ms679346) in the Windows SDK.  
+ See [FlashWindow](/windows/desktop/api/winuser/nf-winuser-flashwindow) in the Windows SDK.  
   
 ##  <a name="getclientrect"></a>  CWindow::GetClientRect  
  Retrieves the coordinates of the client area.  
@@ -647,7 +647,7 @@ HDC GetDC() throw();
 ```  
   
 ### Remarks  
- See [GetDC](https://msdn.microsoft.com/library/windows/desktop/dd144871) in the Windows SDK.  
+ See [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/cpp/cwindow-class_9.cpp)]  
@@ -660,7 +660,7 @@ HDC GetDCEx(HRGN hRgnClip, DWORD flags) throw();
 ```  
   
 ### Remarks  
- See [GetDCEx](https://msdn.microsoft.com/library/windows/desktop/dd144873) in the Windows SDK.  
+ See [GetDCEx](/windows/desktop/api/winuser/nf-winuser-getdcex) in the Windows SDK.  
   
 ##  <a name="getdescendantwindow"></a>  CWindow::GetDescendantWindow  
  Finds the descendant window specified by the given identifier.  
@@ -713,7 +713,7 @@ int GetDlgCtrlID() const throw();
 ```  
   
 ### Remarks  
- See [GetDlgCtrlID](https://msdn.microsoft.com/library/windows/desktop/ms645478) in the Windows SDK.  
+ See [GetDlgCtrlID](/windows/desktop/api/winuser/nf-winuser-getdlgctrlid) in the Windows SDK.  
   
 ##  <a name="getdlghost"></a>  CWindow::GetDlgHost  
  Retrieves a pointer to an interface to the ATL Control hosting container.  
@@ -749,7 +749,7 @@ HWND GetDlgItem(int nID) const throw();
 ```  
   
 ### Remarks  
- See [GetDlgItem](https://msdn.microsoft.com/library/windows/desktop/ms645481) in the Windows SDK.  
+ See [GetDlgItem](/windows/desktop/api/winuser/nf-winuser-getdlgitem) in the Windows SDK.  
   
 ##  <a name="getdlgitemint"></a>  CWindow::GetDlgItemInt  
  Translates a control's text to an integer.  
@@ -762,7 +762,7 @@ UINT GetDlgItemInt(
 ```  
   
 ### Remarks  
- See [GetDlgItemInt](https://msdn.microsoft.com/library/windows/desktop/ms645485) in the Windows SDK.  
+ See [GetDlgItemInt](/windows/desktop/api/winuser/nf-winuser-getdlgitemint) in the Windows SDK.  
   
 ##  <a name="getdlgitemtext"></a>  CWindow::GetDlgItemText  
  Retrieves a control's text.  
@@ -779,7 +779,7 @@ BOOL GetDlgItemText(
 ```  
   
 ### Remarks  
- See [GetDlgItemText](https://msdn.microsoft.com/library/windows/desktop/ms645489) in the Windows SDK.  
+ See [GetDlgItemText](/windows/desktop/api/winuser/nf-winuser-getdlgitemtexta) in the Windows SDK.  
   
 ### Remarks  
  The second version of this method allows you to copy the control's text to a BSTR. This version returns TRUE if the text is successfully copied; otherwise, FALSE.  
@@ -801,7 +801,7 @@ DWORD GetExStyle() const throw();
  [!code-cpp[NVC_ATL_Windowing#10](../../atl/codesnippet/cpp/cwindow-class_10.cpp)]  
   
 ##  <a name="getfont"></a>  CWindow::GetFont  
- Retrieves the window's current font by sending a [WM_GETFONT](https://msdn.microsoft.com/library/windows/desktop/ms632624) message to the window.  
+ Retrieves the window's current font by sending a [WM_GETFONT](/windows/desktop/winmsg/wm-getfont) message to the window.  
   
 ```
 HFONT GetFont() const throw();
@@ -818,7 +818,7 @@ DWORD GetHotKey() const throw();
 ```  
   
 ### Return Value  
- The virtual key code and modifiers for the hot key associated with the window. For a list of possible modifiers, see [WM_GETHOTKEY](https://msdn.microsoft.com/library/windows/desktop/ms646278) in the Windows SDK. For a list of standard virtual key codes, see Winuser.h.  
+ The virtual key code and modifiers for the hot key associated with the window. For a list of possible modifiers, see [WM_GETHOTKEY](/windows/desktop/inputdev/wm-gethotkey) in the Windows SDK. For a list of standard virtual key codes, see Winuser.h.  
   
 ##  <a name="geticon"></a>  CWindow::GetIcon  
  Retrieves the handle to the window's large or small icon.  
@@ -835,7 +835,7 @@ HICON GetIcon(BOOL bBigIcon = TRUE) const;
  An icon handle.  
   
 ### Remarks  
- `GetIcon` sends a [WM_GETICON](https://msdn.microsoft.com/library/windows/desktop/ms632625) message to the window.  
+ `GetIcon` sends a [WM_GETICON](/windows/desktop/winmsg/wm-geticon) message to the window.  
   
 ##  <a name="getlastactivepopup"></a>  CWindow::GetLastActivePopup  
  Retrieves the most recently active pop-up window.  
@@ -855,7 +855,7 @@ HMENU GetMenu() const throw();
 ```  
   
 ### Remarks  
- See [GetMenu](https://msdn.microsoft.com/library/windows/desktop/ms647640) in the Windows SDK.  
+ See [GetMenu](/windows/desktop/api/winuser/nf-winuser-getmenu) in the Windows SDK.  
   
 ##  <a name="getnextdlggroupitem"></a>  CWindow::GetNextDlgGroupItem  
  Retrieves the previous or next control within a group of controls.  
@@ -865,7 +865,7 @@ HWND GetNextDlgGroupItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 ```  
   
 ### Remarks  
- See [GetNextDlgGroupItem](https://msdn.microsoft.com/library/windows/desktop/ms645492) in the Windows SDK.  
+ See [GetNextDlgGroupItem](/windows/desktop/api/winuser/nf-winuser-getnextdlggroupitem) in the Windows SDK.  
   
 ##  <a name="getnextdlgtabitem"></a>  CWindow::GetNextDlgTabItem  
  Retrieves the previous or next control having the WS_TABSTOP style.  
@@ -875,7 +875,7 @@ HWND GetNextDlgTabItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 ```  
   
 ### Remarks  
- See [GetNextDlgTabItem](https://msdn.microsoft.com/library/windows/desktop/ms645495) in the Windows SDK.  
+ See [GetNextDlgTabItem](/windows/desktop/api/winuser/nf-winuser-getnextdlgtabitem) in the Windows SDK.  
   
 ##  <a name="getparent"></a>  CWindow::GetParent  
  Retrieves the immediate parent window.  
@@ -898,7 +898,7 @@ BOOL GetScrollInfo(int nBar, LPSCROLLINFO lpScrollInfo) throw();
 ```  
   
 ### Remarks  
- See [GetScrollInfo](https://msdn.microsoft.com/library/windows/desktop/bb787583) in the Windows SDK.  
+ See [GetScrollInfo](/windows/desktop/api/winuser/nf-winuser-getscrollinfo) in the Windows SDK.  
   
 ##  <a name="getscrollpos"></a>  CWindow::GetScrollPos  
  Retrieves the position of the scroll box.  
@@ -908,7 +908,7 @@ int GetScrollPos(int nBar) const throw();
 ```  
   
 ### Remarks  
- See [GetScrollPos](https://msdn.microsoft.com/library/windows/desktop/bb787585) in the Windows SDK.  
+ See [GetScrollPos](/windows/desktop/api/winuser/nf-winuser-getscrollpos) in the Windows SDK.  
   
 ##  <a name="getscrollrange"></a>  CWindow::GetScrollRange  
  Retrieves the scroll bar range.  
@@ -921,7 +921,7 @@ BOOL GetScrollRange(
 ```  
   
 ### Remarks  
- See [GetScrollRange](https://msdn.microsoft.com/library/windows/desktop/bb787587) in the Windows SDK.  
+ See [GetScrollRange](/windows/desktop/api/winuser/nf-winuser-getscrollrange) in the Windows SDK.  
   
 ##  <a name="getstyle"></a>  CWindow::GetStyle  
  Retrieves the window styles of the window.  
@@ -947,7 +947,7 @@ HMENU GetSystemMenu(BOOL bRevert) const throw();
 ```  
   
 ### Remarks  
- See [GetSystemMenu](https://msdn.microsoft.com/library/windows/desktop/ms647985) in the Windows SDK.  
+ See [GetSystemMenu](/windows/desktop/api/winuser/nf-winuser-getsystemmenu) in the Windows SDK.  
   
 ##  <a name="gettoplevelparent"></a>  CWindow::GetTopLevelParent  
  Retrieves the window's top-level parent window.  
@@ -990,7 +990,7 @@ BOOL GetUpdateRect(LPRECT lpRect, BOOL bErase = FALSE) throw();
 ```  
   
 ### Remarks  
- See [GetUpdateRect](https://msdn.microsoft.com/library/windows/desktop/dd144943) in the Windows SDK.  
+ See [GetUpdateRect](/windows/desktop/api/winuser/nf-winuser-getupdaterect) in the Windows SDK.  
   
 ##  <a name="getupdatergn"></a>  CWindow::GetUpdateRgn  
  Retrieves the update region and copies it into a specified region.  
@@ -1000,7 +1000,7 @@ int GetUpdateRgn(HRGN hRgn, BOOL bErase = FALSE) throw();
 ```  
   
 ### Remarks  
- See [GetUpdateRgn](https://msdn.microsoft.com/library/windows/desktop/dd144944) in the Windows SDK.  
+ See [GetUpdateRgn](/windows/desktop/api/winuser/nf-winuser-getupdatergn) in the Windows SDK.  
   
 ##  <a name="getwindow"></a>  CWindow::GetWindow  
  Retrieves the specified window.  
@@ -1020,7 +1020,7 @@ DWORD GetWindowContextHelpId() const throw();
 ```  
   
 ### Remarks  
- See [GetWindowContextHelpId](https://msdn.microsoft.com/library/windows/desktop/bb776429) in the Windows SDK.  
+ See [GetWindowContextHelpId](/windows/desktop/api/winuser/nf-winuser-getwindowcontexthelpid) in the Windows SDK.  
   
 ##  <a name="getwindowdc"></a>  CWindow::GetWindowDC  
  Retrieves a device context for the entire window.  
@@ -1030,7 +1030,7 @@ HDC GetWindowDC() throw();
 ```  
   
 ### Remarks  
- See [GetWindowDC](https://msdn.microsoft.com/library/windows/desktop/dd144947) in the Windows SDK.  
+ See [GetWindowDC](/windows/desktop/api/winuser/nf-winuser-getwindowdc) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#14](../../atl/codesnippet/cpp/cwindow-class_14.cpp)]  
@@ -1107,7 +1107,7 @@ int GetWindowRgn(HRGN hRgn) throw();
 ```  
   
 ### Remarks  
- See [GetWindowRgn](https://msdn.microsoft.com/library/windows/desktop/dd144950) in the Windows SDK.  
+ See [GetWindowRgn](/windows/desktop/api/winuser/nf-winuser-getwindowrgn) in the Windows SDK.  
   
 ##  <a name="getwindowtext"></a>  CWindow::GetWindowText  
  Retrieves the window's text.  
@@ -1180,7 +1180,7 @@ void GotoDlgCtrl(HWND hWndCtrl) const throw();
 ```  
   
 ### Remarks  
- See [WM_NEXTDLGCTL](https://msdn.microsoft.com/library/windows/desktop/ms645432) in the Windows SDK.  
+ See [WM_NEXTDLGCTL](/windows/desktop/dlgbox/wm-nextdlgctl) in the Windows SDK.  
   
 ##  <a name="hidecaret"></a>  CWindow::HideCaret  
  Hides the system caret.  
@@ -1190,7 +1190,7 @@ BOOL HideCaret() throw();
 ```  
   
 ### Remarks  
- See [HideCaret](https://msdn.microsoft.com/library/windows/desktop/ms648403) in the Windows SDK.  
+ See [HideCaret](/windows/desktop/api/winuser/nf-winuser-hidecaret) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#17](../../atl/codesnippet/cpp/cwindow-class_17.cpp)]  
@@ -1206,7 +1206,7 @@ BOOL HiliteMenuItem(
 ```  
   
 ### Remarks  
- See [HiliteMenuItem](https://msdn.microsoft.com/library/windows/desktop/ms647986) in the Windows SDK.  
+ See [HiliteMenuItem](/windows/desktop/api/winuser/nf-winuser-hilitemenuitem) in the Windows SDK.  
   
 ##  <a name="invalidate"></a>  CWindow::Invalidate  
  Invalidates the entire client area.  
@@ -1216,7 +1216,7 @@ BOOL Invalidate(BOOL bErase = TRUE) throw();
 ```  
   
 ### Remarks  
- See [InvalidateRect](https://msdn.microsoft.com/library/windows/desktop/dd145002) in the Windows SDK.  
+ See [InvalidateRect](/windows/desktop/api/winuser/nf-winuser-invalidaterect) in the Windows SDK.  
   
  Passes NULL for the `RECT` parameter to the `InvalidateRect` Win32 function.  
   
@@ -1231,7 +1231,7 @@ BOOL InvalidateRect(LPCRECT lpRect, BOOL bErase = TRUE) throw();
 ```  
   
 ### Remarks  
- See [InvalidateRect](https://msdn.microsoft.com/library/windows/desktop/dd145002) in the Windows SDK.  
+ See [InvalidateRect](/windows/desktop/api/winuser/nf-winuser-invalidaterect) in the Windows SDK.  
   
 ##  <a name="invalidatergn"></a>  CWindow::InvalidateRgn  
  Invalidates the client area within the specified region.  
@@ -1241,7 +1241,7 @@ void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
 ```  
   
 ### Remarks  
- See [InvalidateRgn](https://msdn.microsoft.com/library/windows/desktop/dd145003) in the Windows SDK.  
+ See [InvalidateRgn](/windows/desktop/api/winuser/nf-winuser-invalidatergn) in the Windows SDK.  
   
 ### Remarks  
  Specifies a **void** return type, while the `InvalidateRgn` Win32 function always returns TRUE.  
@@ -1264,7 +1264,7 @@ BOOL IsDialogMessage(LPMSG lpMsg) throw();
 ```  
   
 ### Remarks  
- See [IsDialogMessage](https://msdn.microsoft.com/library/windows/desktop/ms645498) in the Windows SDK.  
+ See [IsDialogMessage](/windows/desktop/api/winuser/nf-winuser-isdialogmessagea) in the Windows SDK.  
   
 ##  <a name="isdlgbuttonchecked"></a>  CWindow::IsDlgButtonChecked  
  Determines the check state of the button.  
@@ -1274,7 +1274,7 @@ UINT IsDlgButtonChecked(int nIDButton) const throw();
 ```  
   
 ### Remarks  
- See [IsDlgButtonChecked](https://msdn.microsoft.com/library/windows/desktop/bb761879) in the Windows SDK.  
+ See [IsDlgButtonChecked](/windows/desktop/api/winuser/nf-winuser-isdlgbuttonchecked) in the Windows SDK.  
   
 ##  <a name="isiconic"></a>  CWindow::IsIconic  
  Determines whether the window is minimized.  
@@ -1372,7 +1372,7 @@ BOOL KillTimer(UINT nIDEvent) throw();
  See [KillTimer](https://msdn.microsoft.com/library/windows/desktop/ms644903) in the Windows SDK.  
   
 ##  <a name="lockwindowupdate"></a>  CWindow::LockWindowUpdate  
- Disables or enables drawing in the window by calling the [LockWindowUpdate](https://msdn.microsoft.com/library/windows/desktop/dd145034) Win32 function.  
+ Disables or enables drawing in the window by calling the [LockWindowUpdate](/windows/desktop/api/winuser/nf-winuser-lockwindowupdate) Win32 function.  
   
 ```
 BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
@@ -1410,7 +1410,7 @@ int MapWindowPoints(
 ```  
   
 ### Remarks  
- See [MapWindowPoints](https://msdn.microsoft.com/library/windows/desktop/dd145046) in the Windows SDK.  
+ See [MapWindowPoints](/windows/desktop/api/winuser/nf-winuser-mapwindowpoints) in the Windows SDK.  
   
  The second version of this method allows you to convert the coordinates of a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
@@ -1425,7 +1425,7 @@ int MessageBox(
 ```  
   
 ### Remarks  
- See [MessageBox](https://msdn.microsoft.com/library/windows/desktop/ms645505) in the Windows SDK.  
+ See [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#24](../../atl/codesnippet/cpp/cwindow-class_24.cpp)]  
@@ -1541,7 +1541,7 @@ void NextDlgCtrl() const throw();
 ```  
   
 ### Remarks  
- See [WM_NEXTDLGCTL](https://msdn.microsoft.com/library/windows/desktop/ms645432) in the Windows SDK.  
+ See [WM_NEXTDLGCTL](/windows/desktop/dlgbox/wm-nextdlgctl) in the Windows SDK.  
   
 ##  <a name="openclipboard"></a>  CWindow::OpenClipboard  
  Opens the Clipboard.  
@@ -1593,10 +1593,10 @@ void PrevDlgCtrl() const throw();
 ```  
   
 ### Remarks  
- See [WM_NEXTDLGCTL](https://msdn.microsoft.com/library/windows/desktop/ms645432) in the Windows SDK.  
+ See [WM_NEXTDLGCTL](/windows/desktop/dlgbox/wm-nextdlgctl) in the Windows SDK.  
   
 ##  <a name="print"></a>  CWindow::Print  
- Sends a [WM_PRINT](https://msdn.microsoft.com/library/windows/desktop/dd145216) message to the window to request that it draw itself in the specified device context.  
+ Sends a [WM_PRINT](/windows/desktop/gdi/wm-print) message to the window to request that it draw itself in the specified device context.  
   
 ```
 void Print(HDC hDC, DWORD dwFlags) const throw();
@@ -1622,7 +1622,7 @@ void Print(HDC hDC, DWORD dwFlags) const throw();
 - PRF_OWNED Draw all owned windows.  
   
 ##  <a name="printclient"></a>  CWindow::PrintClient  
- Sends a [WM_PRINTCLIENT](https://msdn.microsoft.com/library/windows/desktop/dd145217) message to the window to request that it draw its client area in the specified device context.  
+ Sends a [WM_PRINTCLIENT](/windows/desktop/gdi/wm-printclient) message to the window to request that it draw its client area in the specified device context.  
   
 ```
 void PrintClient(HDC hDC, DWORD dwFlags) const throw();
@@ -1667,7 +1667,7 @@ throw()
 ```  
   
 ### Remarks  
- See [RedrawWindow](https://msdn.microsoft.com/library/windows/desktop/dd162911) in the Windows SDK.  
+ See [RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#28](../../atl/codesnippet/cpp/cwindow-class_28.cpp)]  
@@ -1680,7 +1680,7 @@ int ReleaseDC(HDC hDC);
 ```  
   
 ### Remarks  
- See [ReleaseDC](https://msdn.microsoft.com/library/windows/desktop/dd162920) in the Windows SDK.  
+ See [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#9](../../atl/codesnippet/cpp/cwindow-class_9.cpp)]  
@@ -1714,7 +1714,7 @@ BOOL ScreenToClient(LPRECT lpRect) const throw();
 ```  
   
 ### Remarks  
- See [ScreenToClient](https://msdn.microsoft.com/library/windows/desktop/dd162952) in the Windows SDK.  
+ See [ScreenToClient](/windows/desktop/api/winuser/nf-winuser-screentoclient) in the Windows SDK.  
   
  The second version of this method allows you to convert the coordinates of a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
   
@@ -1730,7 +1730,7 @@ BOOL ScrollWindow(
 ```  
   
 ### Remarks  
- See [ScrollWindow](https://msdn.microsoft.com/library/windows/desktop/bb787591) in the Windows SDK.  
+ See [ScrollWindow](/windows/desktop/api/winuser/nf-winuser-scrollwindow) in the Windows SDK.  
   
 ##  <a name="scrollwindowex"></a>  CWindow::ScrollWindowEx  
  Scrolls the specified client area with additional features.  
@@ -1747,7 +1747,7 @@ int ScrollWindowEx(
 ```  
   
 ### Remarks  
- See [ScrollWindowEx](https://msdn.microsoft.com/library/windows/desktop/bb787593) in the Windows SDK.  
+ See [ScrollWindowEx](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) in the Windows SDK.  
   
 ##  <a name="senddlgitemmessage"></a>  CWindow::SendDlgItemMessage  
  Sends a message to a control.  
@@ -1761,7 +1761,7 @@ LRESULT SendDlgItemMessage(
 ```  
   
 ### Remarks  
- See [SendDlgItemMessage](https://msdn.microsoft.com/library/windows/desktop/ms645515) in the Windows SDK.  
+ See [SendDlgItemMessage](/windows/desktop/api/winuser/nf-winuser-senddlgitemmessagea) in the Windows SDK.  
   
 ##  <a name="sendmessage"></a>  CWindow::SendMessage  
  Sends a message to the window and does not return until the window procedure has processed the message.  
@@ -1858,7 +1858,7 @@ HWND SetClipboardViewer() throw();
 ```  
   
 ### Remarks  
- See [SetClipboardViewer](https://msdn.microsoft.com/library/windows/desktop/ms649052) in the Windows SDK.  
+ See [SetClipboardViewer](/windows/desktop/api/winuser/nf-winuser-setclipboardviewer) in the Windows SDK.  
   
 ##  <a name="setdlgctrlid"></a>  CWindow::SetDlgCtrlID  
  Sets the identifier of the window to the specified value.  
@@ -1885,7 +1885,7 @@ BOOL SetDlgItemInt(
 ```  
   
 ### Remarks  
- See [SetDlgItemInt](https://msdn.microsoft.com/library/windows/desktop/ms645518) in the Windows SDK.  
+ See [SetDlgItemInt](/windows/desktop/api/winuser/nf-winuser-setdlgitemint) in the Windows SDK.  
   
 ##  <a name="setdlgitemtext"></a>  CWindow::SetDlgItemText  
  Changes a control's text.  
@@ -1895,7 +1895,7 @@ BOOL SetDlgItemText(int nID, LPCTSTR lpszString) throw();
 ```  
   
 ### Remarks  
- See [SetDlgItemText](https://msdn.microsoft.com/library/windows/desktop/ms645521) in the Windows SDK.  
+ See [SetDlgItemText](/windows/desktop/api/winuser/nf-winuser-setdlgitemtexta) in the Windows SDK.  
   
 ##  <a name="setfocus"></a>  CWindow::SetFocus  
  Sets the input focus to the window.  
@@ -1911,7 +1911,7 @@ HWND SetFocus() throw();
  [!code-cpp[NVC_ATL_Windowing#31](../../atl/codesnippet/cpp/cwindow-class_31.cpp)]  
   
 ##  <a name="setfont"></a>  CWindow::SetFont  
- Changes the window's current font by sending a [WM_SETFONT](https://msdn.microsoft.com/library/windows/desktop/ms632642) message to the window.  
+ Changes the window's current font by sending a [WM_SETFONT](/windows/desktop/winmsg/wm-setfont) message to the window.  
   
 ```
 void SetFont(HFONT hFont, BOOL bRedraw = TRUE) throw();
@@ -1939,7 +1939,7 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
  [in] The modifiers of the hot key. For a list of possible values, see WM_SETHOTKEY in the Windows SDK.  
   
 ### Return Value  
- For a list of possible return values, see [WM_SETHOTKEY](https://msdn.microsoft.com/library/windows/desktop/ms646284) in the Windows SDK.  
+ For a list of possible return values, see [WM_SETHOTKEY](/windows/desktop/inputdev/wm-sethotkey) in the Windows SDK.  
   
 ##  <a name="seticon"></a>  CWindow::SetIcon  
  Sets the window's large or small icon to the icon identified by *hIcon*.  
@@ -1959,7 +1959,7 @@ HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
  The handle to the previous icon.  
   
 ### Remarks  
- `SetIcon` sends a [WM_SETICON](https://msdn.microsoft.com/library/windows/desktop/ms632643) message to the window.  
+ `SetIcon` sends a [WM_SETICON](/windows/desktop/winmsg/wm-seticon) message to the window.  
   
 ##  <a name="setmenu"></a>  CWindow::SetMenu  
  Changes the window's current menu.  
@@ -1969,7 +1969,7 @@ BOOL SetMenu(HMENU hMenu) throw();
 ```  
   
 ### Remarks  
- See [SetMenu](https://msdn.microsoft.com/library/windows/desktop/ms647995) in the Windows SDK.  
+ See [SetMenu](/windows/desktop/api/winuser/nf-winuser-setmenu) in the Windows SDK.  
   
 ##  <a name="setparent"></a>  CWindow::SetParent  
  Changes the parent window.  
@@ -1985,7 +1985,7 @@ HWND SetParent(HWND hWndNewParent) throw();
  [!code-cpp[NVC_ATL_Windowing#32](../../atl/codesnippet/cpp/cwindow-class_32.cpp)]  
   
 ##  <a name="setredraw"></a>  CWindow::SetRedraw  
- Sets or clears the redraw flag by sending a [WM_SETREDRAW](https://msdn.microsoft.com/library/windows/desktop/dd145219) message to the window.  
+ Sets or clears the redraw flag by sending a [WM_SETREDRAW](/windows/desktop/gdi/wm-setredraw) message to the window.  
   
 ```
 void SetRedraw(BOOL bRedraw = TRUE) throw();
@@ -2012,7 +2012,7 @@ int SetScrollInfo(
 ```  
   
 ### Remarks  
- See [SetScrollInfo](https://msdn.microsoft.com/library/windows/desktop/bb787595) in the Windows SDK.  
+ See [SetScrollInfo](/windows/desktop/api/winuser/nf-winuser-setscrollinfo) in the Windows SDK.  
   
 ##  <a name="setscrollpos"></a>  CWindow::SetScrollPos  
  Changes the position of the scroll box.  
@@ -2025,7 +2025,7 @@ int SetScrollPos(
 ```  
   
 ### Remarks  
- See [SetScrollPos](https://msdn.microsoft.com/library/windows/desktop/bb787597) in the Windows SDK.  
+ See [SetScrollPos](/windows/desktop/api/winuser/nf-winuser-setscrollpos) in the Windows SDK.  
   
 ##  <a name="setscrollrange"></a>  CWindow::SetScrollRange  
  Changes the scroll bar range.  
@@ -2039,7 +2039,7 @@ BOOL SetScrollRange(
 ```  
   
 ### Remarks  
- See [SetScrollRange](https://msdn.microsoft.com/library/windows/desktop/bb787599) in the Windows SDK.  
+ See [SetScrollRange](/windows/desktop/api/winuser/nf-winuser-setscrollrange) in the Windows SDK.  
   
 ##  <a name="settimer"></a>  CWindow::SetTimer  
  Creates a timer event.  
@@ -2062,7 +2062,7 @@ BOOL SetWindowContextHelpId(DWORD dwContextHelpId) throw();
 ```  
   
 ### Remarks  
- See [SetWindowContextHelpId](https://msdn.microsoft.com/library/windows/desktop/bb762101) in the Windows SDK.  
+ See [SetWindowContextHelpId](/windows/desktop/api/winuser/nf-winuser-setwindowcontexthelpid) in the Windows SDK.  
   
 ##  <a name="setwindowlong"></a>  CWindow::SetWindowLong  
  Sets a 32-bit value at a specified offset into the extra window memory.  
@@ -2130,7 +2130,7 @@ int SetWindowRgn(HRGN hRgn, BOOL bRedraw = FALSE) throw();
 ```  
   
 ### Remarks  
- See [SetWindowRgn](https://msdn.microsoft.com/library/windows/desktop/dd145102) in the Windows SDK.  
+ See [SetWindowRgn](/windows/desktop/api/winuser/nf-winuser-setwindowrgn) in the Windows SDK.  
   
 ##  <a name="setwindowtext"></a>  CWindow::SetWindowText  
  Changes the window's text.  
@@ -2163,7 +2163,7 @@ BOOL ShowCaret() throw();
 ```  
   
 ### Remarks  
- See [ShowCaret](https://msdn.microsoft.com/library/windows/desktop/ms648406) in the Windows SDK.  
+ See [ShowCaret](/windows/desktop/api/winuser/nf-winuser-showcaret) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#35](../../atl/codesnippet/cpp/cwindow-class_35.cpp)]  
@@ -2186,7 +2186,7 @@ BOOL ShowScrollBar(UINT nBar, BOOL bShow = TRUE) throw();
 ```  
   
 ### Remarks  
- See [ShowScrollBar](https://msdn.microsoft.com/library/windows/desktop/bb787601) in the Windows SDK.  
+ See [ShowScrollBar](/windows/desktop/api/winuser/nf-winuser-showscrollbar) in the Windows SDK.  
   
 ##  <a name="showwindow"></a>  CWindow::ShowWindow  
  Sets the window's show state.  
@@ -2219,7 +2219,7 @@ BOOL UpdateWindow() throw();
 ```  
   
 ### Remarks  
- See [UpdateWindow](https://msdn.microsoft.com/library/windows/desktop/dd145167) in the Windows SDK.  
+ See [UpdateWindow](/windows/desktop/api/winuser/nf-winuser-updatewindow) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATL_Windowing#37](../../atl/codesnippet/cpp/cwindow-class_37.cpp)]  
@@ -2232,7 +2232,7 @@ BOOL ValidateRect(LPCRECT lpRect) throw();
 ```  
   
 ### Remarks  
- See [ValidateRect](https://msdn.microsoft.com/library/windows/desktop/dd145194) in the Windows SDK.  
+ See [ValidateRect](/windows/desktop/api/winuser/nf-winuser-validaterect) in the Windows SDK.  
   
 ##  <a name="validatergn"></a>  CWindow::ValidateRgn  
  Validates the client area within the specified region.  
@@ -2242,7 +2242,7 @@ BOOL ValidateRgn(HRGN hRgn) throw();
 ```  
   
 ### Remarks  
- See [ValidateRgn](https://msdn.microsoft.com/library/windows/desktop/dd145195) in the Windows SDK.  
+ See [ValidateRgn](/windows/desktop/api/winuser/nf-winuser-validatergn) in the Windows SDK.  
   
 ##  <a name="winhelp"></a>  CWindow::WinHelp  
  Starts Windows Help.  
@@ -2255,7 +2255,7 @@ BOOL WinHelp(
 ```  
   
 ### Remarks  
- See [WinHelp](https://msdn.microsoft.com/library/windows/desktop/bb762267) in the Windows SDK.  
+ See [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) in the Windows SDK.  
   
 ## See Also  
  [Class Overview](../../atl/atl-class-overview.md)

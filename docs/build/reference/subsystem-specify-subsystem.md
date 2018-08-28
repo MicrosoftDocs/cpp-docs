@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
 ```  
   
  BOOT_APPLICATION  
- An application that runs in the Windows boot environment. For more information about boot applications, see [About BCD](https://msdn.microsoft.com/library/windows/desktop/aa362639).  
+ An application that runs in the Windows boot environment. For more information about boot applications, see [About BCD](/previous-versions/windows/desktop/bcd/about-bcd).  
   
  CONSOLE  
  Win32 character-mode application. The operating system provides a console for console applications. If `main` or `wmain` is defined for native code, `int main(array<String ^> ^)` is defined for managed code, or you build the application completely by using `/clr:safe`, CONSOLE is the default.  

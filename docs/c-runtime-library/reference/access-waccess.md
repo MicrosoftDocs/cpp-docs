@@ -63,7 +63,7 @@ When used with files, the **_access** function determines whether the specified 
 |04|Read-only|
 |06|Read and write|
 
-This function only checks whether the file and directory are read-only or not, it does not check the filesystem security settings. For that you need an access token. For more information on filesystem security, see [Access Tokens](https://msdn.microsoft.com/library/windows/desktop/aa374909). An ATL class exists to provide this functionality; see [CAccessToken Class](../../atl/reference/caccesstoken-class.md).
+This function only checks whether the file and directory are read-only or not, it does not check the filesystem security settings. For that you need an access token. For more information on filesystem security, see [Access Tokens](/windows/desktop/SecAuthZ/access-tokens). An ATL class exists to provide this functionality; see [CAccessToken Class](../../atl/reference/caccesstoken-class.md).
 
 **_waccess** is a wide-character version of **_access**; the *path* argument to **_waccess** is a wide-character string. **_waccess** and **_access** behave identically otherwise.
 

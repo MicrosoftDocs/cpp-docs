@@ -31,7 +31,7 @@ The local function that you want to be called when a remote function is invoked.
 
 ## Remarks
 
-The **call_as** C++ attribute has the same functionality as the [call_as](https://msdn.microsoft.com/library/windows/desktop/aa366748) MIDL attribute.
+The **call_as** C++ attribute has the same functionality as the [call_as](/windows/desktop/Midl/call-as) MIDL attribute.
 
 ## Example
 

@@ -178,7 +178,7 @@ void GetErrorInfo(int nIndex);
 ### Remarks  
  This is an OLE code. You will seldom need to use this value because, in almost all cases, more specific MFC or DAO error information is available in the other `CDaoException` data members.  
   
- For information about SCODE, see the topic [Structure of OLE Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK. The SCODE data type maps to the HRESULT data type.  
+ For information about SCODE, see the topic [Structure of OLE Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK. The SCODE data type maps to the HRESULT data type.  
   
 ## See Also  
  [CException Class](../../mfc/reference/cexception-class.md)   

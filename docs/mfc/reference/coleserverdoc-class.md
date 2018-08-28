@@ -209,7 +209,7 @@ LPOLECLIENTSITE GetClientSite() const;
 ```  
   
 ### Return Value  
- Retrieves a pointer to the underlying [IOleClientSite](https://msdn.microsoft.com/library/windows/desktop/ms693706) interface.  
+ Retrieves a pointer to the underlying [IOleClientSite](/windows/desktop/api/oleidl/nn-oleidl-ioleclientsite) interface.  
   
 ##  <a name="getdocobjectserver"></a>  COleServerDoc::GetDocObjectServer  
  Override this function to create a new `CDocObjectServer` item and return a pointer to it.  
@@ -405,7 +405,7 @@ virtual void OnClose(OLECLOSE dwCloseOption);
 ### Remarks  
  The default implementation calls `CDocument::OnCloseDocument`.  
   
- For more information and additional values, see [OLECLOSE](https://msdn.microsoft.com/library/windows/desktop/ms680623) in the Windows SDK.  
+ For more information and additional values, see [OLECLOSE](/windows/desktop/api/oleidl/ne-oleidl-tagoleclose) in the Windows SDK.  
   
 ##  <a name="ondeactivate"></a>  COleServerDoc::OnDeactivate  
  Called by the framework when the user deactivates an embedded or linked item that is currently in-place active.  
@@ -581,7 +581,7 @@ virtual void OnResizeBorder(
 ### Remarks  
  This function resizes and adjusts toolbars and other user-interface elements in accordance with the new window size.  
   
- For more information, see [IOleInPlaceUIWindow](https://msdn.microsoft.com/library/windows/desktop/ms680716) in the Windows SDK.  
+ For more information, see [IOleInPlaceUIWindow](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceuiwindow) in the Windows SDK.  
   
  This is an advanced overridable.  
   

@@ -12,9 +12,9 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Bottomless Rich Edit Controls
-Your application can resize a rich edit control ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) as needed so that it is always the same size as its contents. A rich edit control supports this so-called "bottomless" functionality by sending its parent window an [EN_REQUESTRESIZE](https://msdn.microsoft.com/library/windows/desktop/bb787983) notification message whenever the size of its contents changes.  
+Your application can resize a rich edit control ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) as needed so that it is always the same size as its contents. A rich edit control supports this so-called "bottomless" functionality by sending its parent window an [EN_REQUESTRESIZE](/windows/desktop/Controls/en-requestresize) notification message whenever the size of its contents changes.  
   
- When processing the **EN_REQUESTRESIZE** notification message, an application should resize the control to the dimensions in the specified [REQRESIZE](https://msdn.microsoft.com/library/windows/desktop/bb787950) structure. An application might also move any information near the control to accommodate the control's change in height. To resize the control, you can use the `CWnd` function [SetWindowPos](../mfc/reference/cwnd-class.md#setwindowpos).  
+ When processing the **EN_REQUESTRESIZE** notification message, an application should resize the control to the dimensions in the specified [REQRESIZE](/windows/desktop/api/richedit/ns-richedit-_reqresize) structure. An application might also move any information near the control to accommodate the control's change in height. To resize the control, you can use the `CWnd` function [SetWindowPos](../mfc/reference/cwnd-class.md#setwindowpos).  
   
  You can force a bottomless rich edit control to send an **EN_REQUESTRESIZE** notification message by using the [RequestResize](../mfc/reference/cricheditctrl-class.md#requestresize) member function. This message can be useful in the [OnSize](../mfc/reference/cwnd-class.md#onsize) handler.  
   

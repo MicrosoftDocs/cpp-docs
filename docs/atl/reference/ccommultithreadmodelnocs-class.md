@@ -98,7 +98,7 @@ typedef CComFakeCriticalSection CriticalSection;
  See [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).  
   
 ##  <a name="decrement"></a>  CComMultiThreadModelNoCS::Decrement  
- This static function calls the Win32 function [InterlockedDecrement](https://msdn.microsoft.com/library/windows/desktop/ms683580), which decrements the value of the variable pointed to by *p*.  
+ This static function calls the Win32 function [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement), which decrements the value of the variable pointed to by *p*.  
   
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw();
@@ -115,7 +115,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
  **InterlockedDecrement** prevents more than one thread from simultaneously using this variable.  
   
 ##  <a name="increment"></a>  CComMultiThreadModelNoCS::Increment  
- This static function calls the Win32 function [InterlockedIncrement](https://msdn.microsoft.com/library/windows/desktop/ms683614), which increments the value of the variable pointed to by *p*.  
+ This static function calls the Win32 function [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement), which increments the value of the variable pointed to by *p*.  
   
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();

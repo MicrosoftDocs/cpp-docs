@@ -31,7 +31,7 @@ One or more C-language expressions. Empty argument slots are allowed.
 
 ## Remarks
 
-The **length_is** C++ attribute has the same functionality as the [length_is](https://msdn.microsoft.com/library/windows/desktop/aa367068) MIDL attribute.
+The **length_is** C++ attribute has the same functionality as the [length_is](/windows/desktop/Midl/length-is) MIDL attribute.
 
 ## Example
 

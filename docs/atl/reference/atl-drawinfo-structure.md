@@ -40,13 +40,13 @@ struct ATL_DRAWINFO {
  The size of the structure, in bytes.  
   
  `dwDrawAspect`  
- Specifies how the target is to be represented. Representations can include content, an icon, a thumbnail, or a printed document. For a list of possible values, see [DVASPECT](https://msdn.microsoft.com/library/windows/desktop/ms690318) and [DVASPECT2](https://msdn.microsoft.com/library/windows/desktop/ms688644).  
+ Specifies how the target is to be represented. Representations can include content, an icon, a thumbnail, or a printed document. For a list of possible values, see [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) and [DVASPECT2](/windows/desktop/api/ocidl/ne-ocidl-tagdvaspect2).  
   
  `lindex`  
  Portion of the target that is of interest for the draw operation. Its interpretation varies depending on the value in the `dwDrawAspect` member.  
   
  `ptd`  
- Pointer to a [DVTARGETDEVICE](https://msdn.microsoft.com/library/windows/desktop/ms686613) structure that enables drawing optimizations depending on the aspect specified. Note that newer objects and containers that support optimized drawing interfaces support this member as well. Older objects and containers that do not support optimized drawing interfaces always specify NULL for this member.  
+ Pointer to a [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) structure that enables drawing optimizations depending on the aspect specified. Note that newer objects and containers that support optimized drawing interfaces support this member as well. Older objects and containers that do not support optimized drawing interfaces always specify NULL for this member.  
   
  `hicTargetDev`  
  Information context for the target device pointed to by `ptd` from which the object can extract device metrics and test the device's capabilities. If `ptd` is NULL, the object should ignore the value in the `hicTargetDev` member.  
@@ -58,7 +58,7 @@ struct ATL_DRAWINFO {
  Pointer to a [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) structure specifying the rectangle on `hdcDraw` and in which the object should be drawn. This member controls the positioning and stretching of the object. This member should be NULL to draw a windowless in-place active object. In every other situation, NULL is not a legal value and should result in an `E_INVALIDARG` error code. If the container passes a non-NULL value to a windowless object, the object should render the requested aspect into the specified device context and rectangle. A container can request this from a windowless object to render a second, non-active view of the object or to print the object.  
   
  `prcWBounds`  
- If `hdcDraw` is a metafile device context (see [GetDeviceCaps](https://msdn.microsoft.com/library/windows/desktop/dd144877) in the Windows SDK), this is a pointer to a `RECTL` structure specifying the bounding rectangle in the underlying metafile. The rectangle structure contains the window extent and window origin. These values are useful for drawing metafiles. The rectangle indicated by `prcBounds` is nested inside this `prcWBounds` rectangle; they are in the same coordinate space.  
+ If `hdcDraw` is a metafile device context (see [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) in the Windows SDK), this is a pointer to a `RECTL` structure specifying the bounding rectangle in the underlying metafile. The rectangle structure contains the window extent and window origin. These values are useful for drawing metafiles. The rectangle indicated by `prcBounds` is nested inside this `prcWBounds` rectangle; they are in the same coordinate space.  
   
  `bOptimize`  
  Nonzero if the drawing of the control is to be optimized, otherwise 0. If the drawing is optimized, the state of the device context is automatically restored when you are finished rendering.  
@@ -85,7 +85,7 @@ struct ATL_DRAWINFO {
   
 ## See Also  
   [Classes and structs](../../atl/reference/atl-classes.md)
- [IViewObject::Draw](https://msdn.microsoft.com/library/windows/desktop/ms688655)   
+ [IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)   
  [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)
 
 

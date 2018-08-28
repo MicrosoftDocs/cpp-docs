@@ -31,7 +31,7 @@ One or more interfaces that may not be called arbitrarily on a COM object. This 
 
 ## Remarks
 
-The **restricted** C++ attribute has the same functionality as the [restricted](https://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL attribute.
+The **restricted** C++ attribute has the same functionality as the [restricted](/windows/desktop/Midl/restricted) MIDL attribute.
 
 ## Example
 

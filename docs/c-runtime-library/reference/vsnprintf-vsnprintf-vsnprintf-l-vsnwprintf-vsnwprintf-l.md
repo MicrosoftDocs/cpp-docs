@@ -127,7 +127,7 @@ If *format* is **NULL**, or if *buffer* is **NULL** and *count* is not equal to 
 Each of these functions takes a pointer to an argument list, then formats the data, and writes up to *count* characters  to the memory pointed to by *buffer*. The **vsnprintf** function always writes a null terminator, even if it truncates the output. When using **_vsnprintf** and **_vsnwprintf**, the buffer will be null-terminated only if there is room at the end (that is, if the number of characters to write is less than *count*).
 
 > [!IMPORTANT]
-> To prevent certain kinds of security risks, ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](https://msdn.microsoft.com/library/windows/desktop/ms717795).
+> To prevent certain kinds of security risks, ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 > [!NOTE]
 > To ensure that there is room for the terminating null when calling **_vsnprintf**, **_vsnprintf_l**, **_vsnwprintf** and **_vsnwprintf_l**, be sure that *count* is strictly less than the buffer length and initialize the buffer to null prior to calling the function.

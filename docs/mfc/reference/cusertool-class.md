@@ -124,7 +124,7 @@ virtual BOOL Invoke();
  Nonzero if the command was executed successfully; otherwise 0.  
   
 ### Remarks  
- Calls [ShellExecute](https://msdn.microsoft.com/library/windows/desktop/bb762153) to execute a command associated with the user tool. The function fails if the command is empty or if [ShellExecute](https://msdn.microsoft.com/library/windows/desktop/bb762153) fails.  
+ Calls [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) to execute a command associated with the user tool. The function fails if the command is empty or if [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) fails.  
   
 ##  <a name="loaddefaulticon"></a>  CUserTool::LoadDefaultIcon  
  Loads the default icon for a user tool.  

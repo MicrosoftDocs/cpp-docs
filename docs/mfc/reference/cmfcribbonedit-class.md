@@ -146,7 +146,7 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
  A pointer to the parent window of the `CMFCRibbonEdit` object.  
   
  [in] *dwEditStyle*  
- Specifies the style of the text box. You can combine the window styles listed in the Remarks section with the [edit control styles](https://msdn.microsoft.com/library/windows/desktop/bb775464) that are described in the Windows SDK.  
+ Specifies the style of the text box. You can combine the window styles listed in the Remarks section with the [edit control styles](/windows/desktop/Controls/edit-control-styles) that are described in the Windows SDK.  
   
 ### Return Value  
  A pointer to the new text box if the method was successful; otherwise, NULL.  
@@ -267,7 +267,7 @@ int GetTextAlign() const;
   
 - **ES_RIGHT** for right alignment  
   
- For more information about these styles, see [Edit Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb775464).  
+ For more information about these styles, see [Edit Control Styles](/windows/desktop/Controls/edit-control-styles).  
   
 ##  <a name="getwidth"></a>  CMFCRibbonEdit::GetWidth  
  Retrieves the width, in pixels, of the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  
@@ -523,7 +523,7 @@ virtual void Redraw();
 ```  
   
 ### Remarks  
- This method redraws the display rectangle for the `CMFCRibbonEdit` object by indirectly calling [CWnd::RedrawWindow](https://msdn.microsoft.com/library/windows/desktop/dd162911) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.  
+ This method redraws the display rectangle for the `CMFCRibbonEdit` object by indirectly calling [CWnd::RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonEdit::SetACCData  
  Sets the accessibility data for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) object.  
@@ -577,7 +577,7 @@ void SetTextAlign(int nAlign);
   
 - ES_RIGHT for right alignment  
   
- For more information about these styles, see [Edit Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb775464).  
+ For more information about these styles, see [Edit Control Styles](/windows/desktop/Controls/edit-control-styles).  
   
 ##  <a name="setwidth"></a>  CMFCRibbonEdit::SetWidth  
  Sets the width of the text box for the [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) control.  

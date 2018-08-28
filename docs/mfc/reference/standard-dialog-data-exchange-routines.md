@@ -149,7 +149,7 @@ void AFXAPI DDX_Check(
  A reference to a member variable of the dialog box, form view, or control view object with which data is exchanged.  
   
 ### Remarks  
- When `DDX_Check` is called, *value* is set to the current state of the check box control. For a list of the possible state values, see [BM_GETCHECK](https://msdn.microsoft.com/library/windows/desktop/bb775986) in the Windows SDK.  
+ When `DDX_Check` is called, *value* is set to the current state of the check box control. For a list of the possible state values, see [BM_GETCHECK](/windows/desktop/Controls/bm-getcheck) in the Windows SDK.  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
@@ -286,7 +286,7 @@ void AFXAPI DDX_IPAddress(
 |1|16 through 23|  
 |0|24 through 31|  
   
- Use the Win32 [IPM_GETADDRESS](https://msdn.microsoft.com/library/windows/desktop/bb761378) to read the value, or use [IPM_SETADDRESS](https://msdn.microsoft.com/library/windows/desktop/bb761380) to fill the value. These messages are described in the Windows SDK.  
+ Use the Win32 [IPM_GETADDRESS](/windows/desktop/Controls/ipm-getaddress) to read the value, or use [IPM_SETADDRESS](/windows/desktop/Controls/ipm-setaddress) to fill the value. These messages are described in the Windows SDK.  
   
 ### Remarks  
  When `DDX_IPAddress` is called, *value* is either read from the IP Address control, or *value* is written to the control, depending on the direction of the exchange.  
@@ -478,7 +478,7 @@ void AFXAPI DDX_Scroll(
  A reference to a member variable of the dialog box, form view or control view object with which data is exchanged.  
   
 ### Remarks  
- When `DDX_Scroll` is called, *value* is set to the current position of the control's thumb. For more information on the values associated with the current position of the control's thumb, see [GetScrollPos](https://msdn.microsoft.com/library/windows/desktop/bb787585) in the Windows SDK.  
+ When `DDX_Scroll` is called, *value* is set to the current position of the control's thumb. For more information on the values associated with the current position of the control's thumb, see [GetScrollPos](/windows/desktop/api/winuser/nf-winuser-getscrollpos) in the Windows SDK.  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   

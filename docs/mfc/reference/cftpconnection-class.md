@@ -144,7 +144,7 @@ CInternetFile* Command(
 - `CmdRespRead` A response is expected.  
   
  *dwFlags*  
- A value containing the flags that control this function. For a complete list, see [FTPCommand](https://msdn.microsoft.com/library/windows/desktop/aa384133).  
+ A value containing the flags that control this function. For a complete list, see [FTPCommand](/windows/desktop/api/wininet/nf-wininet-ftpcommanda).  
   
  *dwContext*  
  A pointer to a value containing an application-defined value used to identify the application context in callbacks.  
@@ -153,7 +153,7 @@ CInternetFile* Command(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the [FTPCommand](https://msdn.microsoft.com/library/windows/desktop/aa384133) function, as described in the Windows SDK.  
+ This member function emulates the functionality of the [FTPCommand](/windows/desktop/api/wininet/nf-wininet-ftpcommanda) function, as described in the Windows SDK.  
   
  If an error occurs, MFC throws an exception of type [CInternetException](../../mfc/reference/cinternetexception-class.md).  
   
@@ -287,7 +287,7 @@ BOOL GetFile(
 -   FILE_ATTRIBUTE_TEMPORARY   The file is being used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.  
   
  *dwFlags*  
- Specifies the conditions under which the transfer occurs. This parameter can be any of the *dwFlags* values described in [FtpGetFile](https://msdn.microsoft.com/library/windows/desktop/aa384157) in the Windows SDK.  
+ Specifies the conditions under which the transfer occurs. This parameter can be any of the *dwFlags* values described in [FtpGetFile](/windows/desktop/api/wininet/nf-wininet-ftpgetfilea) in the Windows SDK.  
   
  *dwContext*  
  The context identifier for the file retrieval. See **Remarks** for more information about *dwContext*.  

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IPersistStreamInitImpl Class
-This class implements `IUnknown` and provides a default implementation of the [IPersistStreamInit](https://msdn.microsoft.com/library/windows/desktop/ms682273) interface.  
+This class implements `IUnknown` and provides a default implementation of the [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) interface.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -44,7 +44,7 @@ class ATL_NO_VTABLE IPersistStreamInitImpl
 |[IPersistStreamInitImpl::Save](#save)|Saves the object's properties to the specified stream.|  
   
 ## Remarks  
- The [IPersistStreamInit](https://msdn.microsoft.com/library/windows/desktop/ms682273) interface allows a client to request that your object loads and saves its persistent data to a single stream. Class `IPersistStreamInitImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
+ The [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) interface allows a client to request that your object loads and saves its persistent data to a single stream. Class `IPersistStreamInitImpl` provides a default implementation of this interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -64,7 +64,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ```  
   
 ### Remarks  
- See [IPersist::GetClassID](https://msdn.microsoft.com/library/windows/desktop/ms688664) in the Windows SDK.  
+ See [IPersist::GetClassID](/windows/desktop/api/objidl/nf-objidl-ipersist-getclassid) in the Windows SDK.  
   
 ##  <a name="getsizemax"></a>  IPersistStreamInitImpl::GetSizeMax  
  Retrieves the size of the stream needed to save the object's data.  
@@ -77,7 +77,7 @@ STDMETHOD(GetSizeMax)(ULARGE_INTEGER FAR* pcbSize);
  Returns E_NOTIMPL.  
   
 ### Remarks  
- See [IPersistStreamInit::GetSizeMax](https://msdn.microsoft.com/library/windows/desktop/ms687287) in the Windows SDK.  
+ See [IPersistStreamInit::GetSizeMax](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-getsizemax) in the Windows SDK.  
   
 ##  <a name="initnew"></a>  IPersistStreamInitImpl::InitNew  
  Initializes a newly created object.  
@@ -87,7 +87,7 @@ STDMETHOD(InitNew)();
 ```  
   
 ### Remarks  
- See [IPersistStreamInit::InitNew](https://msdn.microsoft.com/library/windows/desktop/ms690234) in the Windows SDK.  
+ See [IPersistStreamInit::InitNew](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-initnew) in the Windows SDK.  
   
 ##  <a name="isdirty"></a>  IPersistStreamInitImpl::IsDirty  
  Checks whether the object's data has changed since it was last saved.  
@@ -97,7 +97,7 @@ STDMETHOD(IsDirty)();
 ```  
   
 ### Remarks  
- See [IPersistStreamInit::IsDirty](https://msdn.microsoft.com/library/windows/desktop/ms680092) in the Windows SDK.  
+ See [IPersistStreamInit::IsDirty](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-isdirty) in the Windows SDK.  
   
 ##  <a name="load"></a>  IPersistStreamInitImpl::Load  
  Loads the object's properties from the specified stream.  
@@ -109,7 +109,7 @@ STDMETHOD(Load)(LPSTREAM pStm);
 ### Remarks  
  ATL uses the object's property map to retrieve this information.  
   
- See [IPersistStreamInit::Load](https://msdn.microsoft.com/library/windows/desktop/ms680730) in the Windows SDK.  
+ See [IPersistStreamInit::Load](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-load) in the Windows SDK.  
   
 ##  <a name="save"></a>  IPersistStreamInitImpl::Save  
  Saves the object's properties to the specified stream.  
@@ -121,8 +121,8 @@ STDMETHOD(Save)(LPSTREAM pStm, BOOL fClearDirty);
 ### Remarks  
  ATL uses the object's property map to store this information.  
   
- See [IPersistStreamInit::Save](https://msdn.microsoft.com/library/windows/desktop/ms694439) in the Windows SDK.  
+ See [IPersistStreamInit::Save](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-save) in the Windows SDK.  
   
 ## See Also  
- [Storages and Streams](https://msdn.microsoft.com/library/windows/desktop/aa380352)   
+ [Storages and Streams](/windows/desktop/Stg/storages-and-streams)   
  [Class Overview](../../atl/atl-class-overview.md)

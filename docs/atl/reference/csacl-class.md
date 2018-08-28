@@ -55,7 +55,7 @@ class CSacl : public CAcl
   
  Use the class methods provided to add, remove, create, and delete ACEs from the `SACL` object. See also [AtlGetSacl](security-global-functions.md#atlgetsacl) and [AtlSetSacl](security-global-functions.md#atlsetsacl).  
   
- For an introduction to the access control model in Windows, see [Access Control](https://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
+ For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CAcl](../../atl/reference/cacl-class.md)  
@@ -114,7 +114,7 @@ bool AddAuditAce(
 ### Remarks  
  A `CSacl` object contains access-control entries (ACEs) that specify the types of access attempts that generate audit records in the security event log. This method adds such an ACE to the `CSacl` object.  
   
- See [ACE_HEADER](https://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the *AceFlags* parameter.  
+ See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for a description of the various flags which can be set in the *AceFlags* parameter.  
   
 ##  <a name="csacl"></a>  CSacl::CSacl  
  The constructor.  
@@ -191,7 +191,7 @@ void RemoveAllAces() throw();
   
 ## See Also  
  [CAcl Class](../../atl/reference/cacl-class.md)   
- [ACLs](https://msdn.microsoft.com/library/windows/desktop/aa374872)   
- [ACEs](https://msdn.microsoft.com/library/windows/desktop/aa374868)   
+ [ACLs](/windows/desktop/SecAuthZ/access-control-lists)   
+ [ACEs](/windows/desktop/SecAuthZ/access-control-entries)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)

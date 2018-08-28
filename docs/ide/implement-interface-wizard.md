@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Implement Interface Wizard
 This wizard implements an interface for a COM object. Implementations of many interfaces are included in the COM libraries available with Visual Studio and Windows. An interface implementation is associated with an object when an instance of that object is created, and it provides the services that the object offers.  
   
- For a discussion of interfaces and implementations, see [Interfaces and Interface Implementations](https://msdn.microsoft.com/library/windows/desktop/ms694356) in the Windows SDK.  
+ For a discussion of interfaces and implementations, see [Interfaces and Interface Implementations](/windows/desktop/com/interfaces-and-interface-implementations) in the Windows SDK.  
   
  **Implement interface from**  
  Specifies the location of the type library, from which the interface is created.  

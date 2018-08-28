@@ -35,7 +35,7 @@ For more information, see:
   
 -   [Compiler Options](../build/reference/compiler-options.md)  
   
--   [Migration Tips](https://msdn.microsoft.com/library/windows/desktop/aa384214)  
+-   [Migration Tips](/windows/desktop/WinProg64/migration-tips)  
   
 ## See Also  
 

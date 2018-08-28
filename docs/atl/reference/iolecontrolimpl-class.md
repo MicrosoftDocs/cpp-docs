@@ -41,7 +41,7 @@ class IOleControlImpl
 |[IOleControlImpl::OnMnemonic](#onmnemonic)|Informs the control that a user has pressed a specified keystroke. The ATL implementation returns E_NOTIMPL.|  
   
 ## Remarks  
- Class `IOleControlImpl` provides a default implementation of the [IOleControl](https://msdn.microsoft.com/library/windows/desktop/ms694320) interface and implements `IUnknown` by sending information to the dump device in debug builds.  
+ Class `IOleControlImpl` provides a default implementation of the [IOleControl](/windows/desktop/api/ocidl/nn-ocidl-iolecontrol) interface and implements `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -63,7 +63,7 @@ HRESULT FreezeEvents(BOOL bFreeze);
 ### Remarks  
  `FreezeEvents` then returns S_OK.  
   
- See [IOleControl::FreezeEvents](https://msdn.microsoft.com/library/windows/desktop/ms678482) in the Windows SDK.  
+ See [IOleControl::FreezeEvents](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-freezeevents) in the Windows SDK.  
   
 ##  <a name="getcontrolinfo"></a>  IOleControlImpl::GetControlInfo  
  Fills in information about the control's keyboard behavior.  
@@ -73,7 +73,7 @@ HRESULT GetControlInfo(LPCONTROLINFO pCI);
 ```  
   
 ### Remarks  
- See [IOleControl:GetControlInfo](https://msdn.microsoft.com/library/windows/desktop/ms693730) in the Windows SDK.  
+ See [IOleControl:GetControlInfo](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo) in the Windows SDK.  
   
 ### Return Value  
  Returns E_NOTIMPL.  
@@ -89,7 +89,7 @@ HRESULT OnAmbientPropertyChange(DISPID dispid);
  Returns S_OK.  
   
 ### Remarks  
- See [IOleControl::OnAmbientPropertyChange](https://msdn.microsoft.com/library/windows/desktop/ms690175) in the Windows SDK.  
+ See [IOleControl::OnAmbientPropertyChange](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-onambientpropertychange) in the Windows SDK.  
   
 ##  <a name="onmnemonic"></a>  IOleControlImpl::OnMnemonic  
  Informs the control that a user has pressed a specified keystroke.  
@@ -102,9 +102,9 @@ HRESULT OnMnemonic(LPMSG pMsg);
  Returns E_NOTIMPL.  
   
 ### Remarks  
- See [IOleControl::OnMnemonic](https://msdn.microsoft.com/library/windows/desktop/ms680699) in the Windows SDK.  
+ See [IOleControl::OnMnemonic](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-onmnemonic) in the Windows SDK.  
   
 ## See Also  
  [IOleObjectImpl Class](../../atl/reference/ioleobjectimpl-class.md)   
- [ActiveX Controls Interfaces](https://msdn.microsoft.com/library/windows/desktop/ms692724)   
+ [ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)   
  [Class Overview](../../atl/atl-class-overview.md)

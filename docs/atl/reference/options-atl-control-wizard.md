@@ -67,7 +67,7 @@ Insert "Search Results" summary here.
   
 -   **Custom**: Creates an interface that exposes methods directly through a VTBL.  
   
-     If you select **Custom**, then you can specify that the control is **Automation compatible**. If you select **Automation compatible**, then the wizard adds the [oleautomation](../../windows/oleautomation.md) attribute to the interface in the IDL, and the interface can be marshaled by the universal marshaler in oleaut32.dll. See [Marshaling Details](https://msdn.microsoft.com/library/windows/desktop/ms692621) in the Windows SDK for more information.  
+     If you select **Custom**, then you can specify that the control is **Automation compatible**. If you select **Automation compatible**, then the wizard adds the [oleautomation](../../windows/oleautomation.md) attribute to the interface in the IDL, and the interface can be marshaled by the universal marshaler in oleaut32.dll. See [Marshaling Details](/windows/desktop/com/marshaling-details) in the Windows SDK for more information.  
   
      Additionally, if you select **Automation compatible**, then all parameters for all methods in the control must be VARIANT compatible.  
   
@@ -76,7 +76,7 @@ Insert "Search Results" summary here.
   
 -   **Connection points**: Enables connection points for your object by making your object's class derive from [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) and allowing it to expose a source interface.  
   
--   **Licensed**: Adds support to the control for [licensing](https://msdn.microsoft.com/library/windows/desktop/ms690543). Licensed controls can only be hosted if the client machine has the correct license.  
+-   **Licensed**: Adds support to the control for [licensing](/windows/desktop/com/licensing). Licensed controls can only be hosted if the client machine has the correct license.  
   
 ## See Also  
  [ATL Control Wizard](../../atl/reference/atl-control-wizard.md)

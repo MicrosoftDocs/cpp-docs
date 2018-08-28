@@ -166,10 +166,10 @@ BOOL EndRequest(
   
 ### Parameters  
  *dwFlags*  
- Flags describing the operation. For a list of the appropriate flags, see [HttpEndRequest](https://msdn.microsoft.com/library/windows/desktop/aa384230) in the Windows SDK.  
+ Flags describing the operation. For a list of the appropriate flags, see [HttpEndRequest](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) in the Windows SDK.  
   
  *lpBuffIn*  
- Pointer to an initialized [INTERNET_BUFFERS](https://msdn.microsoft.com/library/windows/desktop/aa385132) that describes the input buffer used for the operation.  
+ Pointer to an initialized [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) that describes the input buffer used for the operation.  
   
  *dwContext*  
  The context identifier for the `CHttpFile` operation. See Remarks for more information about this parameter.  
@@ -431,13 +431,13 @@ BOOL SendRequestEx(
  Number of bytes to be sent in the request.  
   
  *dwFlags*  
- Flags describing the operation. For a list of appropriate flags, see [HttpSendRequestEx](https://msdn.microsoft.com/library/windows/desktop/aa384318) in the Windows SDK.  
+ Flags describing the operation. For a list of appropriate flags, see [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) in the Windows SDK.  
   
  *dwContext*  
  The context identifier for the `CHttpFile` operation. See Remarks for more information about this parameter.  
   
  *lpBuffIn*  
- Pointer to an initialized [INTERNET_BUFFERS](https://msdn.microsoft.com/library/windows/desktop/aa385132) that describes the input buffer used for the operation.  
+ Pointer to an initialized [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) that describes the input buffer used for the operation.  
   
  *lpBuffOut*  
  Pointer to an initialized INTERNET_BUFFERS that describes the output buffer used for the operation.  

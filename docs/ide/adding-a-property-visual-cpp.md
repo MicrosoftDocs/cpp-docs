@@ -38,5 +38,5 @@ You can use the [Add Property Wizard](../ide/names-add-property-wizard.md) to ad
 ## See Also  
  [Creating a COM Interface](../ide/creating-a-com-interface-visual-cpp.md)   
  [Editing a COM Interface](../ide/editing-a-com-interface.md)   
- [The Component Object Model](https://msdn.microsoft.com/library/windows/desktop/ms694363)   
- [Interface Pointers and Interfaces](https://msdn.microsoft.com/library/windows/desktop/ms688484)
+ [The Component Object Model](/windows/desktop/com/the-component-object-model)   
+ [Interface Pointers and Interfaces](/windows/desktop/com/interface-pointers-and-interfaces)

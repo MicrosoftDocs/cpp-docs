@@ -31,7 +31,7 @@ Manifest resources are XML files that describe the dependencies that an applicat
 </dependency>
 ```
 
-For a Windows XP or Windows Vista application, the manifest resource not only specifies that the application use the most current version of the Windows common controls (v6.0, as seen above) but it also supports the [Syslink control](https://msdn.microsoft.com/library/windows/desktop/bb760706).
+For a Windows XP or Windows Vista application, the manifest resource not only specifies that the application use the most current version of the Windows common controls (v6.0, as seen above) but it also supports the [Syslink control](/windows/desktop/Controls/syslink-overview).
 
 To view the version and type information contained in a manifest resource, you can open the file in an XML viewer or in the Visual Studio [Text Editor](https://msdn.microsoft.com/508e1f18-99d5-48ad-b5ad-d011b21c6ab1). For more information, see [Opening a manifest resource in the Visual Studio Text Editor](../windows/how-to-open-a-manifest-resource.md).
 

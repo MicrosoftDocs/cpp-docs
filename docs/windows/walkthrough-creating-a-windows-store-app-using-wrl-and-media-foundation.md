@@ -12,7 +12,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Walkthrough: Creating a UWP app using WRL and Media Foundation
 
-Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/apps/ms694197).
+Learn how to use the Windows Runtime C++ Template Library (WRL) to create a Universal Windows Platform (UWP) app that uses [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
 
 This example creates a custom Media Foundation transform that applies a grayscale effect to images that are captured from a webcam. The app uses C++ to define the custom transform and C# to use the component to transform the captured images.
 
@@ -122,5 +122,5 @@ The example shows how to capture photos from the default webcam one at a time. T
 ## See Also
 
 [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)  
-[Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/apps/ms694197)  
+[Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)  
 [Media extensions sample](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

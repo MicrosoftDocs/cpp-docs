@@ -22,7 +22,7 @@ MFC supports views that scroll and views that are automatically scaled to the si
   
 -   Scaling a view  
   
--   [View coordinates](https://msdn.microsoft.com/library/windows/desktop/dd145205)  
+-   [View coordinates](/windows/desktop/gdi/window-coordinate-system)  
   
 ##  <a name="_core_scrolling_a_view"></a> Scrolling a View  
  Frequently the size of a document is greater than the size its view can display. This may occur because the document's data increases or the user shrinks the window that frames the view. In such cases, the view must support scrolling.  

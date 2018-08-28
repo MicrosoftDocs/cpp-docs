@@ -62,4 +62,4 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 [Interface Attributes](../windows/interface-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[uuid](https://msdn.microsoft.com/library/windows/desktop/aa367302)  
+[uuid](/windows/desktop/Midl/uuid)  

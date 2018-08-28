@@ -101,7 +101,7 @@ virtual BOOL FindFile(
   
 -   INTERNET_FLAG_DONT_CACHE   Do not cache the data, either locally or in any gateways.  
   
--   INTERNET_FLAG_RAW_DATA   Override the default to return the raw data ( [WIN32_FIND_DATA](https://msdn.microsoft.com/library/windows/desktop/aa365740) structures for FTP).  
+-   INTERNET_FLAG_RAW_DATA   Override the default to return the raw data ( [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structures for FTP).  
   
 -   INTERNET_FLAG_SECURE   Secures transactions on the wire with Secure Sockets Layer or PCT. This flag is applicable to HTTP requests only.  
   
@@ -129,7 +129,7 @@ virtual BOOL FindNextFile();
 ### Remarks  
  You must call this function at least once before calling any attribute function (see [CFileFind::FindNextFile](../../mfc/reference/cfilefind-class.md#findnextfile)).  
   
- `FindNextFile` wraps the Win32 function [FindNextFile](https://msdn.microsoft.com/library/windows/desktop/aa364428).  
+ `FindNextFile` wraps the Win32 function [FindNextFile](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea).  
   
 ### Example  
   See the example earlier in this topic.  

@@ -354,10 +354,10 @@ virtual void GetSmartDockingBaseGuideColors(
   
 ### Parameters  
  [in] *clrBaseGroupBackground*  
- Reference to a [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) to set to the background color.  
+ Reference to a [COLORREF](/windows/desktop/gdi/colorref) to set to the background color.  
   
  [in] *clrBaseGroupBorder*  
- Reference to a [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) to set to the border color.  
+ Reference to a [COLORREF](/windows/desktop/gdi/colorref) to set to the border color.  
   
 ### Remarks  
   
@@ -369,7 +369,7 @@ virtual COLORREF GetSmartDockingHighlightToneColor();
 ```  
   
 ### Return Value  
- Returns a [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) that contains the highlight tone color.  
+ Returns a [COLORREF](/windows/desktop/gdi/colorref) that contains the highlight tone color.  
   
 ### Remarks  
   
@@ -394,7 +394,7 @@ virtual void GetTabFrameColors(
  A pointer to the tabbed window where the frame is drawing a tab.  
   
  [out] *clrDark*  
- A reference to a [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) parameter where this method stores the color for the dark border of a tab.  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter where this method stores the color for the dark border of a tab.  
   
  [out] *clrBlack*  
  A reference to a COLORREF parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
@@ -439,7 +439,7 @@ virtual COLORREF GetToolbarDisabledColor() const;
 ```  
   
 ### Return Value  
- Returns a [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) that contains the disabled color.  
+ Returns a [COLORREF](/windows/desktop/gdi/colorref) that contains the disabled color.  
   
 ### Remarks  
   
@@ -998,7 +998,7 @@ virtual COLORREF OnDrawPaneCaption(
  A rectangle that specifies the boundaries of the caption buttons.  
   
 ### Return Value  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the text color of the caption.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the caption.  
   
 ### Remarks  
   
@@ -1111,7 +1111,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
  A pointer to a caption bar. The visual manager draws this [CMFCRibbonContextCaption Class](../../mfc/reference/cmfcribboncontextcaption-class.md).  
   
 ### Return Value  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the color of the text on the caption bar.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the color of the text on the caption bar.  
   
 ### Remarks  
  Override this method in a derived class to customize the appearance of the caption bar for a ribbon category.  

@@ -396,13 +396,13 @@ BOOL AlphaBlend(
  Specifies the height, in logical units, of the source rectangle.  
   
  *blend*  
- Specifies a [BLENDFUNCTION](https://msdn.microsoft.com/library/windows/desktop/dd183393) structure.  
+ Specifies a [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) structure.  
   
 ### Return Value  
  TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
- See [AlphaBlend](https://msdn.microsoft.com/library/windows/desktop/dd183351) in the Windows SDK for more information.  
+ See [AlphaBlend](/windows/desktop/api/wingdi/nf-wingdi-alphablend) in the Windows SDK for more information.  
   
 ##  <a name="anglearc"></a>  CDC::AngleArc  
  Draws a line segment and an arc.  
@@ -601,7 +601,7 @@ BOOL BeginPath();
 ### Remarks  
  After a path bracket is open, an application can begin calling GDI drawing functions to define the points that lie in the path. An application can close an open path bracket by calling the `EndPath` member function. When an application calls `BeginPath`, any previous paths are discarded.  
   
- See [BeginPath](https://msdn.microsoft.com/library/windows/desktop/dd183363) in the Windows SDK for a list of the drawing functions that define points in a path.  
+ See [BeginPath](/windows/desktop/api/wingdi/nf-wingdi-beginpath) in the Windows SDK for a list of the drawing functions that define points in a path.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#30](../../mfc/codesnippet/cpp/cdc-class_2.cpp)]  
@@ -644,9 +644,9 @@ BOOL BitBlt(
  Specifies the logical y-coordinate of the upper-left corner of the source bitmap.  
   
  *dwRop*  
- Specifies the raster operation to be performed. Raster-operation codes define how the GDI combines colors in output operations that involve a current brush, a possible source bitmap, and a destination bitmap. See [BitBlt](https://msdn.microsoft.com/library/windows/desktop/dd183370) in the Windows SDK for a list of the raster-operation codes for *dwRop* and their descriptions  
+ Specifies the raster operation to be performed. Raster-operation codes define how the GDI combines colors in output operations that involve a current brush, a possible source bitmap, and a destination bitmap. See [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of the raster-operation codes for *dwRop* and their descriptions  
   
- For a complete list of raster-operation codes, see [About Raster Operation Codes](https://msdn.microsoft.com/library/windows/desktop/dd162892) in the Windows SDK.  
+ For a complete list of raster-operation codes, see [About Raster Operation Codes](/windows/desktop/gdi/raster-operation-codes) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
@@ -807,7 +807,7 @@ BOOL CreateDC(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- The PRINT.H header file is required if the [DEVMODE](https://msdn.microsoft.com/library/windows/desktop/dd183565) structure is used.  
+ The PRINT.H header file is required if the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) structure is used.  
   
  Device names follow these conventions: an ending colon (:) is recommended, but optional. Windows strips the terminating colon so that a device name ending with a colon is mapped to the same port as the same name without a colon. The driver and port names must not contain leading or trailing spaces. GDI output functions cannot be used with information contexts.  
   
@@ -1023,7 +1023,7 @@ BOOL DrawEdge(
  A pointer to a `RECT` structure that contains the logical coordinates of the rectangle.  
   
  *nEdge*  
- Specifies the type of inner and outer edge to draw. This parameter must be a combination of one inner-border flag and one outer-border flag. See [DrawEdge](https://msdn.microsoft.com/library/windows/desktop/dd162477) in the Windows SDK for a table of the parameter's types.  
+ Specifies the type of inner and outer edge to draw. This parameter must be a combination of one inner-border flag and one outer-border flag. See [DrawEdge](/windows/desktop/api/winuser/nf-winuser-drawedge) in the Windows SDK for a table of the parameter's types.  
   
  *nFlags*  
  The flags that specify the type of border to be drawn. See `DrawEdge` in the Windows SDK for a table of the parameter's values. For diagonal lines, the BF_RECT flags specify the end point of the vector bounded by the rectangle parameter.  
@@ -1089,7 +1089,7 @@ BOOL DrawFrameControl(
  A pointer to a `RECT` structure that contains the logical coordinates of the rectangle.  
   
  *nType*  
- Specifies the type of frame control to draw. See the *uType* parameter in [DrawFrameControl](https://msdn.microsoft.com/library/windows/desktop/dd162480) in the Windows SDK for a list of this parameter's possible values.  
+ Specifies the type of frame control to draw. See the *uType* parameter in [DrawFrameControl](/windows/desktop/api/winuser/nf-winuser-drawframecontrol) in the Windows SDK for a list of this parameter's possible values.  
   
  *nState*  
  Specifies the initial state of the frame control. Can be one or more of the values described for the *uState* parameter in `DrawFrameControl` in the Windows SDK. Use the *nState* value DFCS_ADJUSTRECT to adjust the bounding rectangle to exclude the surrounding edge of the push button.  
@@ -1280,7 +1280,7 @@ BOOL DrawState(
  A handle to a bitmap.  
   
  *nFlags*  
- Flags that specify the image type and state. See [DrawState](https://msdn.microsoft.com/library/windows/desktop/dd162496) in the Windows SDK for the possible *nFlags* types and states.  
+ Flags that specify the image type and state. See [DrawState](/windows/desktop/api/winuser/nf-winuser-drawstatea) in the Windows SDK for the possible *nFlags* types and states.  
   
  *hBrush*  
  A handle to a brush.  
@@ -1304,7 +1304,7 @@ BOOL DrawState(
  Length of the text string pointed to by *lpszText*. If *nTextLen* is 0, the string is assumed to be null-terminated.  
   
  *lpDrawProc*  
- A pointer to a callback function used to render an image. This parameter is required if the image type in *nFlags* is DST_COMPLEX. It is optional and can be NULL if the image type is DST_TEXT. For all other image types, this parameter is ignored. For more information about the callback function, see the [DrawStateProc](https://msdn.microsoft.com/library/windows/desktop/dd162497) function in the Windows SDK.  
+ A pointer to a callback function used to render an image. This parameter is required if the image type in *nFlags* is DST_COMPLEX. It is optional and can be NULL if the image type is DST_TEXT. For all other image types, this parameter is ignored. For more information about the callback function, see the [DrawStateProc](/windows/desktop/api/winuser/nc-winuser-drawstateproc) function in the Windows SDK.  
   
  *lData*  
  Specifies information about the image. The meaning of this parameter depends on the image type.  
@@ -1343,7 +1343,7 @@ int DrawText(
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that contains the specified characters to be drawn.  
   
  *nFormat*  
- Specifies the method of formatting the text. It can be any combination of the values described for the *uFormat* parameter in [DrawText](https://msdn.microsoft.com/library/windows/desktop/dd162498) in the Windows SDK. (combine using the bitwise OR operator):  
+ Specifies the method of formatting the text. It can be any combination of the values described for the *uFormat* parameter in [DrawText](/windows/desktop/api/winuser/nf-winuser-drawtext) in the Windows SDK. (combine using the bitwise OR operator):  
   
 > [!NOTE]
 >  Some *uFormat* flag combinations can cause the passed string to be modified. Using DT_MODIFYSTRING with either DT_END_ELLIPSIS or DT_PATH_ELLIPSIS may cause the string to be modified, causing an assertion in the `CString` override. The values DT_CALCRECT, DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP, and DT_NOPREFIX cannot be used with the DT_TABSTOP value.  
@@ -1397,16 +1397,16 @@ int DrawTextEx(
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that contains the specified characters to be drawn.  
   
  *nFormat*  
- Specifies the method of formatting the text. It can be any combination of the values described for the *uFormat* parameter in [DrawText](https://msdn.microsoft.com/library/windows/desktop/dd162498) in the Windows SDK. (Combine using the bitwise **OR** operator):  
+ Specifies the method of formatting the text. It can be any combination of the values described for the *uFormat* parameter in [DrawText](/windows/desktop/api/winuser/nf-winuser-drawtext) in the Windows SDK. (Combine using the bitwise **OR** operator):  
   
 > [!NOTE]
 >  Some *uFormat* flag combinations can cause the passed string to be modified. Using DT_MODIFYSTRING with either DT_END_ELLIPSIS or DT_PATH_ELLIPSIS may cause the string to be modified, causing an assertion in the `CString` override. The values DT_CALCRECT, DT_EXTERNALLEADING, DT_INTERNAL, DT_NOCLIP, and DT_NOPREFIX cannot be used with the DT_TABSTOP value.  
   
  *lpDTParams*  
- Pointer to a [DRAWTEXTPARAMS](https://msdn.microsoft.com/library/windows/desktop/dd162500) structure that specifies additional formatting options. This parameter can be NULL.  
+ Pointer to a [DRAWTEXTPARAMS](/windows/desktop/api/winuser/ns-winuser-tagdrawtextparams) structure that specifies additional formatting options. This parameter can be NULL.  
   
 ### Remarks  
- It formats text by expanding tabs into appropriate spaces, aligning text to the left, right, or center of the given rectangle, and breaking text into lines that fit within the given rectangle. The type of formatting is specified by *nFormat* and *lpDTParams*. For more information, see [CDC::DrawText](#drawtext) and [DrawTextEx](https://msdn.microsoft.com/library/windows/desktop/dd162499) in the Windows SDK.  
+ It formats text by expanding tabs into appropriate spaces, aligning text to the left, right, or center of the given rectangle, and breaking text into lines that fit within the given rectangle. The type of formatting is specified by *nFormat* and *lpDTParams*. For more information, see [CDC::DrawText](#drawtext) and [DrawTextEx](/windows/desktop/api/winuser/nf-winuser-drawtextexa) in the Windows SDK.  
   
  The text color may be set by [CDC::SetTextColor](#settextcolor).  
   
@@ -1566,7 +1566,7 @@ int Escape(
  *nEscape*  
  Specifies the escape function to be performed.  
   
- For a complete list of escape functions, see [Escape](https://msdn.microsoft.com/library/windows/desktop/dd162701) in the Windows SDK.  
+ For a complete list of escape functions, see [Escape](/windows/desktop/api/wingdi/nf-wingdi-escape) in the Windows SDK.  
   
  *nCount*  
  Specifies the number of bytes of data pointed to by *lpszInData*.  
@@ -1617,11 +1617,11 @@ int Escape(
   
 - [CDC::StartPage](#startpage)  
   
- In addition, [CDC::GetDeviceCaps](#getdevicecaps) supports Win32 indexes that supersede other printer escapes. See [GetDeviceCaps](https://msdn.microsoft.com/library/windows/desktop/dd144877) in the Windows SDK for more information.  
+ In addition, [CDC::GetDeviceCaps](#getdevicecaps) supports Win32 indexes that supersede other printer escapes. See [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) in the Windows SDK for more information.  
   
  This member function allows applications to access facilities of a particular device that are not directly available through GDI.  
   
- Use the first version if your application uses predefined escape values. Use the second version if your application defines private escape values. See [ExtEscape](https://msdn.microsoft.com/library/windows/desktop/dd162708) in the Windows SDK for more information about the second version.  
+ Use the first version if your application uses predefined escape values. Use the second version if your application defines private escape values. See [ExtEscape](/windows/desktop/api/wingdi/nf-wingdi-extescape) in the Windows SDK for more information about the second version.  
   
 ##  <a name="excludecliprect"></a>  CDC::ExcludeClipRect  
  Creates a new clipping region that consists of the existing clipping region minus the specified rectangle.  
@@ -2190,11 +2190,11 @@ BOOL GetCharABCWidths(
   
  When the `GetCharABCWidths` member function retrieves negative "A" or "C" widths for a character, that character includes underhangs or overhangs.  
   
- To convert the ABC widths to font design units, an application should create a font whose height (as specified in the `lfHeight` member of the [LOGFONT](https://msdn.microsoft.com/library/windows/desktop/dd145037) structure) is equal to the value stored in the `ntmSizeEM` member of the [NEWTEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd162741) structure. (The value of the `ntmSizeEM` member can be retrieved by calling the [EnumFontFamilies](https://msdn.microsoft.com/library/windows/desktop/dd162619) Windows function.)  
+ To convert the ABC widths to font design units, an application should create a font whose height (as specified in the `lfHeight` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure) is equal to the value stored in the `ntmSizeEM` member of the [NEWTEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagnewtextmetrica) structure. (The value of the `ntmSizeEM` member can be retrieved by calling the [EnumFontFamilies](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesa) Windows function.)  
   
  The ABC widths of the default character are used for characters that are outside the range of the currently selected font.  
   
- To retrieve the widths of characters in non-TrueType fonts, applications should use the [GetCharWidth](https://msdn.microsoft.com/library/windows/desktop/dd144861) Windows function.  
+ To retrieve the widths of characters in non-TrueType fonts, applications should use the [GetCharWidth](/windows/desktop/api/wingdi/nf-wingdi-getcharwidtha) Windows function.  
   
 ##  <a name="getcharabcwidthsi"></a>  CDC::GetCharABCWidthsI  
  Retrieves the widths, in logical units, of consecutive glyph indices in a specified range from the current TrueType font.  
@@ -2218,13 +2218,13 @@ BOOL GetCharABCWidthsI(
  A pointer to an array containing glyph indices. If the value is NULL, the *giFirst* parameter is used instead. The *cgi* parameter specifies the number of glyph indices in this array.  
   
  *lpabc*  
- Pointer to an array of [ABC](https://msdn.microsoft.com/library/windows/desktop/dd162454) structures receiving the character widths. This array must contain at least as many `ABC` structures as there are glyph indices specified by the *cgi* parameter.  
+ Pointer to an array of [ABC](/windows/desktop/api/wingdi/ns-wingdi-_abc) structures receiving the character widths. This array must contain at least as many `ABC` structures as there are glyph indices specified by the *cgi* parameter.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetCharABCWidthsI](https://msdn.microsoft.com/library/windows/desktop/dd144859), as described in the Windows SDK.  
+ This member function emulates the functionality of the function [GetCharABCWidthsI](/windows/desktop/api/wingdi/nf-wingdi-getcharabcwidthsi), as described in the Windows SDK.  
   
 ##  <a name="getcharwidth"></a>  CDC::GetCharWidth  
  Retrieves the widths of individual characters in a consecutive group of characters from the current font, using `m_hAttribDC`, the input device context.  
@@ -2292,7 +2292,7 @@ BOOL GetCharWidthI(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetCharWidthI](https://msdn.microsoft.com/library/windows/desktop/dd144864), as described in the Windows SDK.  
+ This member function emulates the functionality of the function [GetCharWidthI](/windows/desktop/api/wingdi/nf-wingdi-getcharwidthi), as described in the Windows SDK.  
   
 ##  <a name="getclipbox"></a>  CDC::GetClipBox  
  Retrieves the dimensions of the tightest bounding rectangle around the current clipping boundary.  
@@ -2419,12 +2419,12 @@ COLORREF GetDCBrushColor() const;
 ```  
   
 ### Return Value  
- If the function succeeds, the return value is the [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value for the current brush color.  
+ If the function succeeds, the return value is the [COLORREF](/windows/desktop/gdi/colorref) value for the current brush color.  
   
  If the function fails, the return value is CLR_INVALID.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetDCBrushColor](https://msdn.microsoft.com/library/windows/desktop/dd144872), as described in the Windows SDK.  
+ This member function emulates the functionality of the function [GetDCBrushColor](/windows/desktop/api/wingdi/nf-wingdi-getdcbrushcolor), as described in the Windows SDK.  
   
 ##  <a name="getdcpencolor"></a>  CDC::GetDCPenColor  
  Retrieves the current pen color.  
@@ -2434,12 +2434,12 @@ COLORREF GetDCPenColor() const;
 ```  
   
 ### Return Value  
- If the function succeeds, the return value is the [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value for the current pen color.  
+ If the function succeeds, the return value is the [COLORREF](/windows/desktop/gdi/colorref) value for the current pen color.  
   
  If the function fails, the return value is CLR_INVALID.  
   
 ### Remarks  
- This member function utilizes the Win32 function [GetDCPenColor](https://msdn.microsoft.com/library/windows/desktop/dd144875), as described in the Windows SDK.  
+ This member function utilizes the Win32 function [GetDCPenColor](/windows/desktop/api/wingdi/nf-wingdi-getdcpencolor), as described in the Windows SDK.  
   
 ##  <a name="getdevicecaps"></a>  CDC::GetDeviceCaps  
  Retrieves a wide range of device-specific information about the display device.  
@@ -2450,7 +2450,7 @@ int GetDeviceCaps(int nIndex) const;
   
 ### Parameters  
  *nIndex*  
- Specifies the type of information to return. See [GetDeviceCaps](https://msdn.microsoft.com/library/windows/desktop/dd144877) in the Windows SDK for a list of values.  
+ Specifies the type of information to return. See [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) in the Windows SDK for a list of values.  
   
 ### Return Value  
  The value of the requested capability if the function is successful.  
@@ -2490,7 +2490,7 @@ DWORD GetFontData(
   
  An application can sometimes use the `GetFontData` member function to save a TrueType font with a document. To do this, the application determines whether the font can be embedded and then retrieves the entire font file, specifying 0 for the *dwTable*, *dwOffset*, and *cbData* parameters.  
   
- Applications can determine whether a font can be embedded by checking the `otmfsType` member of the [OUTLINETEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd162755) structure. If bit 1 of `otmfsType` is set, embedding is not permitted for the font. If bit 1 is clear, the font can be embedded. If bit 2 is set, the embedding is read only.  
+ Applications can determine whether a font can be embedded by checking the `otmfsType` member of the [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-_outlinetextmetrica) structure. If bit 1 of `otmfsType` is set, embedding is not permitted for the font. If bit 1 is clear, the font can be embedded. If bit 2 is set, the embedding is read only.  
   
  If an application attempts to use this function to retrieve information for a non-TrueType font, the `GetFontData` member function returns -1.  
   
@@ -2502,10 +2502,10 @@ DWORD GetFontLanguageInfo() const;
 ```  
   
 ### Return Value  
- The return value identifies characteristics of the currently selected font. For a complete listing of possible values, see [GetFontLanguageInfo](https://msdn.microsoft.com/library/windows/desktop/dd144886).  
+ The return value identifies characteristics of the currently selected font. For a complete listing of possible values, see [GetFontLanguageInfo](/windows/desktop/api/wingdi/nf-wingdi-getfontlanguageinfo).  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetFontLanguageInfo](https://msdn.microsoft.com/library/windows/desktop/dd144886), as described in the Windows SDK.  
+ This member function emulates the functionality of the function [GetFontLanguageInfo](/windows/desktop/api/wingdi/nf-wingdi-getfontlanguageinfo), as described in the Windows SDK.  
   
 ##  <a name="getglyphoutline"></a>  CDC::GetGlyphOutline  
  Retrieves the outline curve or bitmap for an outline character in the current font.  
@@ -2532,7 +2532,7 @@ DWORD GetGlyphOutline(
 |GGO_BITMAP|Returns the glyph bitmap. When the function returns, the buffer pointed to by *lpBuffer* contains a 1-bit-per-pixel bitmap whose rows start on doubleword boundaries.|  
 |GGO_NATIVE|Returns the curve data points in the rasterizer's native format, using device units. When this value is specified, any transformation specified in *lpmat2* is ignored.|  
   
- When the value of *nFormat* is 0, the function fills in a [GLYPHMETRICS](https://msdn.microsoft.com/library/windows/desktop/dd144955) structure but does not return glyph-outline data.  
+ When the value of *nFormat* is 0, the function fills in a [GLYPHMETRICS](/windows/desktop/api/wingdi/ns-wingdi-_glyphmetrics) structure but does not return glyph-outline data.  
   
  *lpgm*  
  Points to a GLYPHMETRICS structure that describes the placement of the glyph in the character cell.  
@@ -2544,7 +2544,7 @@ DWORD GetGlyphOutline(
  Points to a buffer into which the function copies information about the outline character. If *nFormat* specifies the GGO_NATIVE value, the information is copied in the form of TTPOLYGONHEADER and TTPOLYCURVE structures. If this value is NULL and *nFormat* is either the GGO_BITMAP or GGO_NATIVE value, the function returns the required size of the buffer.  
   
  *lpmat2*  
- Points to a [MAT2](https://msdn.microsoft.com/library/windows/desktop/dd145048) structure that contains a transformation matrix for the character. This parameter cannot be NULL, even when the GGO_NATIVE value is specified for *nFormat*.  
+ Points to a [MAT2](/windows/desktop/api/wingdi/ns-wingdi-_mat2) structure that contains a transformation matrix for the character. This parameter cannot be NULL, even when the GGO_NATIVE value is specified for *nFormat*.  
   
 ### Return Value  
  The size, in bytes, of the buffer required for the retrieved information if *cbBuffer* is 0 or *lpBuffer* is NULL. Otherwise, it is a positive value if the function is successful, or -1 if there is an error.  
@@ -2552,7 +2552,7 @@ DWORD GetGlyphOutline(
 ### Remarks  
  An application can rotate characters retrieved in bitmap format by specifying a 2-by-2 transformation matrix in the structure pointed to by *lpmat2*.  
   
- A glyph outline is returned as a series of contours. Each contour is defined by a [TTPOLYGONHEADER](https://msdn.microsoft.com/library/windows/desktop/dd145158) structure followed by as many `TTPOLYCURVE` structures as are required to describe it. All points are returned as [POINTFX](https://msdn.microsoft.com/library/windows/desktop/dd162806) structures and represent absolute positions, not relative moves. The starting point given by the `pfxStart` member of the [TTPOLYGONHEADER](https://msdn.microsoft.com/library/windows/desktop/dd145158) structure is the point at which the outline for a contour begins. The [TTPOLYCURVE](https://msdn.microsoft.com/library/windows/desktop/dd145157) structures that follow can be either polyline records or spline records. Polyline records are a series of points; lines drawn between the points describe the outline of the character. Spline records represent the quadratic curves used by TrueType (that is, quadratic b-splines).  
+ A glyph outline is returned as a series of contours. Each contour is defined by a [TTPOLYGONHEADER](/windows/desktop/api/wingdi/ns-wingdi-tagttpolygonheader) structure followed by as many `TTPOLYCURVE` structures as are required to describe it. All points are returned as [POINTFX](/windows/desktop/api/wingdi/ns-wingdi-tagpointfx) structures and represent absolute positions, not relative moves. The starting point given by the `pfxStart` member of the [TTPOLYGONHEADER](/windows/desktop/api/wingdi/ns-wingdi-tagttpolygonheader) structure is the point at which the outline for a contour begins. The [TTPOLYCURVE](/windows/desktop/api/wingdi/ns-wingdi-tagttpolycurve) structures that follow can be either polyline records or spline records. Polyline records are a series of points; lines drawn between the points describe the outline of the character. Spline records represent the quadratic curves used by TrueType (that is, quadratic b-splines).  
   
 ##  <a name="getgraphicsmode"></a>  CDC::GetGraphicsMode  
  Retrieves the current graphics mode for the specified device context.  
@@ -2562,14 +2562,14 @@ int GetGraphicsMode() const;
 ```  
   
 ### Return Value  
- Returns the current graphics mode on success. For a list of the values that this method can return, see [GetGraphicsMode](https://msdn.microsoft.com/library/windows/desktop/dd144892).  
+ Returns the current graphics mode on success. For a list of the values that this method can return, see [GetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-getgraphicsmode).  
   
  Returns 0 on failure.  
   
  To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- This method wraps the Windows GDI function [GetGraphicsMode](https://msdn.microsoft.com/library/windows/desktop/dd144892).  
+ This method wraps the Windows GDI function [GetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-getgraphicsmode).  
   
 ##  <a name="gethalftonebrush"></a>  CDC::GetHalftoneBrush  
  Call this member function to retrieve a halftone brush.  
@@ -2597,7 +2597,7 @@ int GetKerningPairs(
   
 ### Parameters  
  *nPairs*  
- Specifies the number of [KERNINGPAIR](https://msdn.microsoft.com/library/windows/desktop/dd145024) structures pointed to by *lpkrnpair*. The function will not copy more kerning pairs than specified by *nPairs*.  
+ Specifies the number of [KERNINGPAIR](/windows/desktop/api/wingdi/ns-wingdi-tagkerningpair) structures pointed to by *lpkrnpair*. The function will not copy more kerning pairs than specified by *nPairs*.  
   
  *lpkrnpair*  
  Points to an array of `KERNINGPAIR` structures that receive the kerning pairs when the function returns. This array must contain at least as many structures as specified by *nPairs*. If this parameter is NULL, the function returns the total number of kerning pairs for the font.  
@@ -2675,7 +2675,7 @@ UINT GetOutlineTextMetrics(
   
 ### Parameters  
  *lpotm*  
- Points to an array of [OUTLINETEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd162755) structures. If this parameter is NULL, the function returns the size of the buffer required for the retrieved metric data.  
+ Points to an array of [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-_outlinetextmetrica) structures. If this parameter is NULL, the function returns the size of the buffer required for the retrieved metric data.  
   
  *cbData*  
  Specifies the size, in bytes, of the buffer to which information is returned.  
@@ -2687,7 +2687,7 @@ UINT GetOutlineTextMetrics(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- The [OUTLINETEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd162755) structure contains most of the font metric information provided with the TrueType format, including a [TEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd145132) structure. The last four members of the `OUTLINETEXTMETRIC` structure are pointers to strings. Applications should allocate space for these strings in addition to the space required for the other members. Because there is no system-imposed limit to the size of the strings, the simplest method for allocating memory is to retrieve the required size by specifying NULL for *lpotm* in the first call to the `GetOutlineTextMetrics` function.  
+ The [OUTLINETEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-_outlinetextmetrica) structure contains most of the font metric information provided with the TrueType format, including a [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure. The last four members of the `OUTLINETEXTMETRIC` structure are pointers to strings. Applications should allocate space for these strings in addition to the space required for the other members. Because there is no system-imposed limit to the size of the strings, the simplest method for allocating memory is to retrieve the required size by specifying NULL for *lpotm* in the first call to the `GetOutlineTextMetrics` function.  
   
 ##  <a name="getoutputcharwidth"></a>  CDC::GetOutputCharWidth  
  Uses the output device context, `m_hDC`, and retrieves the widths of individual characters in a consecutive group of characters from the current font.  
@@ -2801,7 +2801,7 @@ BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;
   
 ### Parameters  
  *lpMetrics*  
- Points to the [TEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd145132) structure that receives the metrics.  
+ Points to the [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure that receives the metrics.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
@@ -3114,7 +3114,7 @@ BOOL GetTextExtentExPointI(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetTextExtentExPointI](https://msdn.microsoft.com/library/windows/desktop/dd144936), as described in the Windows SDK.  
+ This member function emulates the functionality of the function [GetTextExtentExPointI](/windows/desktop/api/wingdi/nf-wingdi-gettextextentexpointi), as described in the Windows SDK.  
   
 ##  <a name="gettextextentpointi"></a>  CDC::GetTextExtentPointI  
  Retrieves the width and height of the specified array of glyph indices.  
@@ -3140,7 +3140,7 @@ BOOL GetTextExtentPointI(
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function emulates the functionality of the function [GetTextExtentPointI](https://msdn.microsoft.com/library/windows/desktop/dd144939), as described in the Windows SDK.  
+ This member function emulates the functionality of the function [GetTextExtentPointI](/windows/desktop/api/wingdi/nf-wingdi-gettextextentpointi), as described in the Windows SDK.  
   
 ##  <a name="gettextface"></a>  CDC::GetTextFace  
  Call this member function to copy the typeface name of the current font into a buffer.  
@@ -3178,7 +3178,7 @@ BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;
   
 ### Parameters  
  *lpMetrics*  
- Points to the [TEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd145132) structure that receives the metrics.  
+ Points to the [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure that receives the metrics.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
@@ -3245,7 +3245,7 @@ BOOL GetWorldTransform(XFORM& rXform) const;
   
 ### Parameters  
  *rXform*  
- Reference to an [XFORM](https://msdn.microsoft.com/library/windows/desktop/dd145228) structure that receives the current world-space to page-space transformation.  
+ Reference to an [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) structure that receives the current world-space to page-space transformation.  
   
 ### Return Value  
  Returns a nonzero value on success.  
@@ -3255,7 +3255,7 @@ BOOL GetWorldTransform(XFORM& rXform) const;
  To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- This method wraps the Windows GDI function [GetWorldTransform](https://msdn.microsoft.com/library/windows/desktop/dd144953).  
+ This method wraps the Windows GDI function [GetWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-getworldtransform).  
   
 ##  <a name="gradientfill"></a>  CDC::GradientFill  
  Call this member function to fill rectangle and triangle structures with color that smoothly fades from one side to the other.  
@@ -3271,19 +3271,19 @@ BOOL GradientFill(
   
 ### Parameters  
  *pVertices*  
- Pointer to an array of [TRIVERTEX](https://msdn.microsoft.com/library/windows/desktop/dd145142) structures that each define a triangle vertex.  
+ Pointer to an array of [TRIVERTEX](/windows/desktop/api/wingdi/ns-wingdi-_trivertex) structures that each define a triangle vertex.  
   
  *nVertices*  
  The number of vertices.  
   
  *pMesh*  
- Array of [GRADIENT_TRIANGLE](https://msdn.microsoft.com/library/windows/desktop/dd144959) structures in triangle mode, or an array of [GRADIENT_RECT](https://msdn.microsoft.com/library/windows/desktop/dd144958) structures in rectangle mode.  
+ Array of [GRADIENT_TRIANGLE](/windows/desktop/api/wingdi/ns-wingdi-_gradient_triangle) structures in triangle mode, or an array of [GRADIENT_RECT](/windows/desktop/api/wingdi/ns-wingdi-_gradient_rect) structures in rectangle mode.  
   
  *nMeshElements*  
  The number of elements (triangles or rectangles) in *pMesh*.  
   
  *dwMode*  
- Specifies gradient fill mode. For a list of possible values, see [GradientFill](https://msdn.microsoft.com/library/windows/desktop/dd144957) in the Windows SDK.  
+ Specifies gradient fill mode. For a list of possible values, see [GradientFill](/windows/desktop/api/wingdi/nf-wingdi-gradientfill) in the Windows SDK.  
   
 ### Return Value  
  TRUE if successful; otherwise FALSE.  
@@ -3342,7 +3342,7 @@ virtual BOOL GrayString(
   
  An application can draw dimmed (grayed) strings on devices that support a solid gray color without calling the `GrayString` member function. The system color COLOR_GRAYTEXT is the solid-gray system color used to draw disabled text. The application can call the `GetSysColor` Windows function to retrieve the color value of COLOR_GRAYTEXT. If the color is other than 0 (black), the application can call the `SetTextColor` member function to set the text color to the color value and then draw the string directly. If the retrieved color is black, the application must call `GrayString` to dim (gray) the text.  
   
- If *lpfnOutput* is NULL, GDI uses the Windows [TextOut](https://msdn.microsoft.com/library/windows/desktop/dd145133) function, and *lpData* is assumed to be a far pointer to the character to be output. If the characters to be output cannot be handled by the `TextOut` member function (for example, the string is stored as a bitmap), the application must supply its own output function.  
+ If *lpfnOutput* is NULL, GDI uses the Windows [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) function, and *lpData* is assumed to be a far pointer to the character to be output. If the characters to be output cannot be handled by the `TextOut` member function (for example, the string is stored as a bitmap), the application must supply its own output function.  
   
  Also note that all callback functions must trap Microsoft Foundation exceptions before returning to Windows, since exceptions cannot be thrown across callback boundaries. For more information about exceptions, see the article [Exceptions](../../mfc/exception-handling-in-mfc.md).  
   
@@ -3638,10 +3638,10 @@ BOOL ModifyWorldTransform(
   
 ### Parameters  
  *rXform*  
- Reference to an [XFORM](https://msdn.microsoft.com/library/windows/desktop/dd145228) structure used to modify the world transformation for the given device context.  
+ Reference to an [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) structure used to modify the world transformation for the given device context.  
   
  *iMode*  
- Specifies how the transformation data modifies the current world transformation. For a list of the values that this parameter can take, see [ModifyWorldTransform](https://msdn.microsoft.com/library/windows/desktop/dd145060).  
+ Specifies how the transformation data modifies the current world transformation. For a list of the values that this parameter can take, see [ModifyWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-modifyworldtransform).  
   
 ### Return Value  
  Returns a nonzero value on success.  
@@ -3651,7 +3651,7 @@ BOOL ModifyWorldTransform(
  To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- This method wraps the Windows GDI function [ModifyWorldTransform](https://msdn.microsoft.com/library/windows/desktop/dd145060).  
+ This method wraps the Windows GDI function [ModifyWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-modifyworldtransform).  
   
 ##  <a name="moveto"></a>  CDC::MoveTo  
  Moves the current position to the point specified by *x* and *y* (or by *point*).  
@@ -4131,7 +4131,7 @@ BOOL Polyline(
 ### Remarks  
  The lines are drawn from the first point through subsequent points using the current pen. Unlike the `LineTo` member function, the `Polyline` function neither uses nor updates the current position.  
   
- For more information, see [PolyLine](https://msdn.microsoft.com/library/windows/desktop/dd162815) in the Windows SDK.  
+ For more information, see [PolyLine](/windows/desktop/api/wingdi/nf-wingdi-polyline) in the Windows SDK.  
   
 ##  <a name="polylineto"></a>  CDC::PolylineTo  
  Draws one or more straight lines.  
@@ -4980,7 +4980,7 @@ COLORREF SetDCBrushColor(COLORREF crColor);
  If the function fails, the return value is CLR_INVALID.  
   
 ### Remarks  
- This method emulates the functionality of the function [SetDCBrushColor](https://msdn.microsoft.com/library/windows/desktop/dd162969), as described in the Windows SDK.  
+ This method emulates the functionality of the function [SetDCBrushColor](/windows/desktop/api/wingdi/nf-wingdi-setdcbrushcolor), as described in the Windows SDK.  
   
 ##  <a name="setdcpencolor"></a>  CDC::SetDCPenColor  
  Sets the current device context (DC) pen color to the specified color value.  
@@ -4997,7 +4997,7 @@ COLORREF SetDCPenColor(COLORREF crColor);
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- This member function utilizes the Win32 function [SetDCPenColor](https://msdn.microsoft.com/library/windows/desktop/dd162970), as described in the Windows SDK.  
+ This member function utilizes the Win32 function [SetDCPenColor](/windows/desktop/api/wingdi/nf-wingdi-setdcpencolor), as described in the Windows SDK.  
   
 ##  <a name="setgraphicsmode"></a>  CDC::SetGraphicsMode  
  Sets the graphics mode for the specified device context.  
@@ -5008,7 +5008,7 @@ int SetGraphicsMode(int iMode);
   
 ### Parameters  
  *iMode*  
- Specifies the graphics mode. For a list of the values that this parameter can take, see [SetGraphicsMode](https://msdn.microsoft.com/library/windows/desktop/dd162977).  
+ Specifies the graphics mode. For a list of the values that this parameter can take, see [SetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-setgraphicsmode).  
   
 ### Return Value  
  Returns the old graphics mode on success.  
@@ -5016,7 +5016,7 @@ int SetGraphicsMode(int iMode);
  Returns 0 on failure. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- This method wraps the Windows GDI function [SetGraphicsMode](https://msdn.microsoft.com/library/windows/desktop/dd162977).  
+ This method wraps the Windows GDI function [SetGraphicsMode](/windows/desktop/api/wingdi/nf-wingdi-setgraphicsmode).  
   
 ##  <a name="setlayout"></a>  CDC::SetLayout  
  Call this member function to change the layout of the text and graphics for a device context to right to left, the standard layout for cultures such as Arabic and Hebrew.  
@@ -5047,7 +5047,7 @@ DWORD SetLayout(DWORD dwLayout);
   
  In some cases, such as with many bitmaps, you may want to preserve the left-to-right layout. In these cases, render the image by calling `BitBlt` or `StretchBlt`, then set the bitmap control flag for *dwLayout* to LAYOUT_BITMAPORIENTATIONPRESERVED.  
   
- Once you change the layout with the LAYOUT_RTL flag, the flags normally specifying right or left are reversed. To avoid confusion, you may want to define alternate names for the standard flags. For a list of suggested alternate flag names, see [SetLayout](https://msdn.microsoft.com/library/windows/desktop/dd162979) in the Windows SDK.  
+ Once you change the layout with the LAYOUT_RTL flag, the flags normally specifying right or left are reversed. To avoid confusion, you may want to define alternate names for the standard flags. For a list of suggested alternate flag names, see [SetLayout](/windows/desktop/api/wingdi/nf-wingdi-setlayout) in the Windows SDK.  
   
 ##  <a name="setmapmode"></a>  CDC::SetMapMode  
  Sets the mapping mode.  
@@ -5165,7 +5165,7 @@ COLORREF SetPixel(
  Specifies the logical y-coordinate of the point to be set.  
   
  *crColor*  
- A COLORREF RGB value that specifies the color used to paint the point. See [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) in the Windows SDK for a description of this value.  
+ A COLORREF RGB value that specifies the color used to paint the point. See [COLORREF](/windows/desktop/gdi/colorref) in the Windows SDK for a description of this value.  
   
  *point*  
  Specifies the logical x- and y-coordinates of the point to be set. You can pass either a `POINT` structure or a `CPoint` object for this parameter.  
@@ -5300,7 +5300,7 @@ int SetStretchBltMode(int nStretchMode);
 |BLACKONWHITE|Performs a Boolean AND operation using the color values for the eliminated and existing pixels. If the bitmap is a monochrome bitmap, this mode preserves black pixels at the expense of white pixels.|  
 |COLORONCOLOR|Deletes the pixels. This mode deletes all eliminated lines of pixels without trying to preserve their information.|  
 |HALFTONE|Maps pixels from the source rectangle into blocks of pixels in the destination rectangle. The average color over the destination block of pixels approximates the color of the source pixels.|  
-||After setting the HALFTONE stretching mode, an application must call the Win32 function [SetBrushOrgEx](https://msdn.microsoft.com/library/windows/desktop/dd162967) to set the brush origin. If it fails to do so, brush misalignment occurs.|  
+||After setting the HALFTONE stretching mode, an application must call the Win32 function [SetBrushOrgEx](/windows/desktop/api/wingdi/nf-wingdi-setbrushorgex) to set the brush origin. If it fails to do so, brush misalignment occurs.|  
 |STRETCH_ANDSCANS|**Windows 95/98**: Same as BLACKONWHITE|  
 |STRETCH_DELETESCANS|**Windows 95/98**: Same as COLORONCOLOR|  
 |STRETCH_HALFTONE|**Windows 95/98**: Same as HALFTONE.|  
@@ -5582,7 +5582,7 @@ BOOL SetWorldTransform(const XFORM& rXform);
   
 ### Parameters  
  *rXform*  
- Reference to an [XFORM](https://msdn.microsoft.com/library/windows/desktop/dd145228) structure that contains the transformation data.  
+ Reference to an [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) structure that contains the transformation data.  
   
 ### Return Value  
  Returns a nonzero value on success.  
@@ -5592,7 +5592,7 @@ BOOL SetWorldTransform(const XFORM& rXform);
  To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- This method wraps the Windows GDI function [SetWorldTransform](https://msdn.microsoft.com/library/windows/desktop/dd145104).  
+ This method wraps the Windows GDI function [SetWorldTransform](/windows/desktop/api/wingdi/nf-wingdi-setworldtransform).  
   
 ##  <a name="startdoc"></a>  CDC::StartDoc  
  Informs the device driver that a new print job is starting and that all subsequent `StartPage` and `EndPage` calls should be spooled under the same job until an `EndDoc` call occurs.  
@@ -5604,7 +5604,7 @@ int StartDoc(LPCTSTR lpszDocName);
   
 ### Parameters  
  *lpDocInfo*  
- Points to a [DOCINFO](https://msdn.microsoft.com/library/windows/desktop/dd183574) structure containing the name of the document file and the name of the output file.  
+ Points to a [DOCINFO](/windows/desktop/api/wingdi/ns-wingdi-_docinfoa) structure containing the name of the document file and the name of the output file.  
   
  *lpszDocName*  
  Pointer to a string containing the name of the document file.  
@@ -5924,7 +5924,7 @@ BOOL TransparentBlt(
 ### Remarks  
  `TransparentBlt` allows for transparency; that is, the RGB color indicated by *clrTransparent* is rendered transparent for the transfer.  
   
- For more information, see [TransparentBlt](https://msdn.microsoft.com/library/windows/desktop/dd145141) in the Windows SDK.  
+ For more information, see [TransparentBlt](/windows/desktop/api/wingdi/nf-wingdi-transparentblt) in the Windows SDK.  
   
 ##  <a name="updatecolors"></a>  CDC::UpdateColors  
  Updates the client area of the device context by matching the current colors in the client area to the system palette on a pixel-by-pixel basis.  
@@ -5936,7 +5936,7 @@ void UpdateColors();
 ### Remarks  
  An inactive window with a realized logical palette may call `UpdateColors` as an alternative to redrawing its client area when the system palette changes.  
   
- For more information about using color palettes, see [UpdateColors](https://msdn.microsoft.com/library/windows/desktop/dd145166) in the Windows SDK.  
+ For more information about using color palettes, see [UpdateColors](/windows/desktop/api/wingdi/nf-wingdi-updatecolors) in the Windows SDK.  
   
  The `UpdateColors` member function typically updates a client area faster than redrawing the area. However, because the function performs the color translation based on the color of each pixel before the system palette changed, each call to this function results in the loss of some color accuracy.  
   

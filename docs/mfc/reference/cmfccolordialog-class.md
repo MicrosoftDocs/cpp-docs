@@ -122,7 +122,7 @@ COLORREF GetColor() const;
 ```  
   
 ### Return Value  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value that contains the RGB information for the color selected in the color dialog box.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value that contains the RGB information for the color selected in the color dialog box.  
   
 ### Remarks  
  Call this function after you call the `DoModal` method.  
@@ -169,7 +169,7 @@ void SetNewColor(COLORREF rgb);
   
 ### Parameters  
  [in] *rgb*  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) that specifies an RGB color.  
+ A [COLORREF](/windows/desktop/gdi/colorref) that specifies an RGB color.  
   
 ### Remarks  
   

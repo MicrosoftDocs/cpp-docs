@@ -533,7 +533,7 @@ virtual COLORREF GetActiveTabColor() const;
 ```  
   
 ### Return Value  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value that specifies the background color of the active tab.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value that specifies the background color of the active tab.  
   
 ### Remarks  
  By default, the background color of the active tab is COLOR_WINDOW. You can change the background color for the active tab by using the method [CMFCBaseTabCtrl::SetActiveTabColor](#setactivetabcolor).  
@@ -546,7 +546,7 @@ virtual COLORREF GetActiveTabTextColor() const;
 ```  
   
 ### Return Value  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value that specifies the text color of the active tab.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value that specifies the text color of the active tab.  
   
 ### Remarks  
  By default, the text color for active tabs is COLOR_WINDOWTEXT. You can change the text color with the method [CMFCBaseTabCtrl::SetActiveTabTextColor](#setactivetabtextcolor).  
@@ -569,7 +569,7 @@ const CArray<COLORREF,COLORREF>& GetAutoColors() const;
 ```  
   
 ### Return Value  
- A reference to an array of [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) values that the [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) object uses for automatic tab coloring.  
+ A reference to an array of [COLORREF](/windows/desktop/gdi/colorref) values that the [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) object uses for automatic tab coloring.  
   
 ### Remarks  
  By default, the framework initializes the array of colors to library-defined colors. You can provide a custom array of colors by calling the method [CMFCBaseTabCtrl::SetAutoColors](#setautocolors).  
@@ -715,7 +715,7 @@ virtual COLORREF GetTabBkColor(int iTab) const;
  The zero-based index of the tab.  
   
 ### Return Value  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value that indicates the background color of the specified tab; -1 if *iTab* is out of range.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value that indicates the background color of the specified tab; -1 if *iTab* is out of range.  
   
 ##  <a name="gettabbordersize"></a>  CMFCBaseTabCtrl::GetTabBorderSize  
  Retrieves the size of the tab borders in the tab control.  
@@ -933,7 +933,7 @@ virtual COLORREF GetTabTextColor(int iTab) const;
  The zero-based index of the tab.  
   
 ### Return Value  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the text color of the specified tab; -1 if *iTab* is out of range.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the specified tab; -1 if *iTab* is out of range.  
   
 ##  <a name="gettabwnd"></a>  CMFCBaseTabCtrl::GetTabWnd  
  Returns the pointer to the pane that resides on the specified tab.  
@@ -1612,7 +1612,7 @@ virtual void SetActiveTabTextColor(COLORREF clr);
   
 ### Parameters  
  [in] *clr*  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that specifies the new text color.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that specifies the new text color.  
   
 ### Remarks  
  By default, the framework obtains the text color from [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371). Override this default color by using the `SetActiveTabTextColor` method.  
@@ -1686,7 +1686,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
  The width of each image in pixels.  
   
  [in] *clrTransp*  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the transparent color of the image.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the transparent color of the image.  
   
  [in] *hImageList*  
  A handle to a preloaded image list.  
@@ -1871,7 +1871,7 @@ virtual BOOL SetTabTextColor(
  The zero-based index of the tab.  
   
  [in] *color*  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the new text color.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the new text color.  
   
 ### Return Value  
  Nonzero if successful; 0 otherwise.  

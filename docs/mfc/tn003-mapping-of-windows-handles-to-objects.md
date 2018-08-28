@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 This note describes the MFC routines that support mapping Windows object handles to C++ objects.  
   
 ## The Problem  
- Windows objects are typically represented by various [HANDLE](https://msdn.microsoft.com/library/windows/desktop/aa383751) objects The MFC classes wrap Windows object handles with C++ objects. The handle wrapping functions of the MFC class library let you find the C++ object that is wrapping the Windows object that has a particular handle. However, sometimes an object does not have a C++ wrapper object and at these times the system creates a temporary object to act as the C++ wrapper.  
+ Windows objects are typically represented by various [HANDLE](/windows/desktop/WinProg/windows-data-types) objects The MFC classes wrap Windows object handles with C++ objects. The handle wrapping functions of the MFC class library let you find the C++ object that is wrapping the Windows object that has a particular handle. However, sometimes an object does not have a C++ wrapper object and at these times the system creates a temporary object to act as the C++ wrapper.  
   
  The Windows objects that use handle maps are as follows:  
   

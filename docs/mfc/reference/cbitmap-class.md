@@ -135,7 +135,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 ### Remarks  
  Although a bitmap cannot be directly selected for a display device, it can be selected as the current bitmap for a memory device context by using [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) and copied to any compatible device context by using the [CDC::BitBlt](../../mfc/reference/cdc-class.md#bitblt) or [CDC::StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) function. (The [CDC::PatBlt](../../mfc/reference/cdc-class.md#patblt) function can copy the bitmap for the current brush directly to the display device context.)  
   
- If the `BITMAP` structure pointed to by the *lpBitmap* parameter has been filled in by using the `GetObject` function, the bits of the bitmap are not specified and the bitmap is uninitialized. To initialize the bitmap, an application can use a function such as [CDC::BitBlt](../../mfc/reference/cdc-class.md#bitblt) or [SetDIBits](https://msdn.microsoft.com/library/windows/desktop/dd162973) to copy the bits from the bitmap identified by the first parameter of `CGdiObject::GetObject` to the bitmap created by `CreateBitmapIndirect`.  
+ If the `BITMAP` structure pointed to by the *lpBitmap* parameter has been filled in by using the `GetObject` function, the bits of the bitmap are not specified and the bitmap is uninitialized. To initialize the bitmap, an application can use a function such as [CDC::BitBlt](../../mfc/reference/cdc-class.md#bitblt) or [SetDIBits](/windows/desktop/api/wingdi/nf-wingdi-setdibits) to copy the bits from the bitmap identified by the first parameter of `CGdiObject::GetObject` to the bitmap created by `CreateBitmapIndirect`.  
   
  When you finish with the `CBitmap` object created with `CreateBitmapIndirect` function, first select the bitmap out of the device context, then delete the `CBitmap` object.  
   
@@ -335,7 +335,7 @@ BOOL LoadMappedBitmap(
 ### Remarks  
  By default, `LoadMappedBitmap` will map colors commonly used in button glyphs.  
   
- For information about creating a mapped bitmap, see the Windows function [CreateMappedBitmap](http://go.microsoft.com/fwlink/p/?linkid=230562) and the [COLORMAP](https://msdn.microsoft.com/library/windows/desktop/bb760448) structure in the Windows SDK.  
+ For information about creating a mapped bitmap, see the Windows function [CreateMappedBitmap](http://go.microsoft.com/fwlink/p/?linkid=230562) and the [COLORMAP](/windows/desktop/api/commctrl/ns-commctrl-_colormap) structure in the Windows SDK.  
   
 ##  <a name="loadoembitmap"></a>  CBitmap::LoadOEMBitmap  
  Loads a predefined bitmap used by Windows.  
@@ -389,7 +389,7 @@ operator HBITMAP() const;
 ### Remarks  
  This operator is a casting operator, which supports direct use of an `HBITMAP` object.  
   
- For more information about using graphic objects, see [Graphic Objects](https://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
+ For more information about using graphic objects, see [Graphic Objects](/windows/desktop/gdi/graphic-objects) in the Windows SDK.  
   
 ##  <a name="setbitmapbits"></a>  CBitmap::SetBitmapBits  
  Sets the bits of a bitmap to the bit values given by *lpBits*.  

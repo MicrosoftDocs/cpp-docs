@@ -35,7 +35,7 @@ Terminating a thread prematurely is almost as simple: Call [AfxEndThread](../mfc
   
 ##  <a name="_core_retrieving_the_exit_code_of_a_thread"></a> Retrieving the Exit Code of a Thread  
  
-To get the exit code of either the worker or the user-interface thread, call the [GetExitCodeThread](https://msdn.microsoft.com/library/windows/desktop/ms683190) function. For information about this function, see the Windows SDK. This function takes the handle to the thread (stored in the `m_hThread` data member of `CWinThread` objects) and the address of a DWORD.  
+To get the exit code of either the worker or the user-interface thread, call the [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread) function. For information about this function, see the Windows SDK. This function takes the handle to the thread (stored in the `m_hThread` data member of `CWinThread` objects) and the address of a DWORD.  
   
 If the thread is still active, `GetExitCodeThread` places STILL_ACTIVE in the supplied DWORD address; otherwise, the exit code is placed in this address.  
   
@@ -52,4 +52,4 @@ Either method allows you to determine why a `CWinThread` object terminated.
 [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)   
 [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)   
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)   
-[ExitThread](https://msdn.microsoft.com/library/windows/desktop/ms682659)
+[ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread)

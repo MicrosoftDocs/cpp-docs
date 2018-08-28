@@ -258,7 +258,7 @@ static void UninitializeCom() throw();
 ```  
   
 ### Remarks  
- By default this method simply calls [CoUninitialize](https://msdn.microsoft.com/library/windows/desktop/ms688715) and is called from the destructor. Override this method if you override [CAtlExeModuleT::InitializeCom](#initializecom).  
+ By default this method simply calls [CoUninitialize](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) and is called from the destructor. Override this method if you override [CAtlExeModuleT::InitializeCom](#initializecom).  
   
 ##  <a name="unlock"></a>  CAtlExeModuleT::Unlock  
  Decrements the module's lock count.  

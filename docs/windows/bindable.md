@@ -24,7 +24,7 @@ Indicates that the property supports data binding.
 
 ## Remarks
 
-The **bindable** C++ attribute has the same functionality as the [bindable](https://msdn.microsoft.com/library/windows/desktop/aa366738) MIDL attribute. You can use it on properties defined with the [propget](../windows/propget.md), [propput](../windows/propput.md), or [propputref](../windows/propputref.md) attributes, or you can manually define a bindable method.
+The **bindable** C++ attribute has the same functionality as the [bindable](/windows/desktop/Midl/bindable) MIDL attribute. You can use it on properties defined with the [propget](../windows/propget.md), [propput](../windows/propput.md), or [propputref](../windows/propputref.md) attributes, or you can manually define a bindable method.
 
 The following MFC samples show the use of **bindable**:
 

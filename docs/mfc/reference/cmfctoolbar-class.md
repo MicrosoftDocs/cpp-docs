@@ -600,7 +600,7 @@ virtual BOOL Create(
  A pointer to the parent window of the toolbar.  
   
  [in] *dwStyle*  
- The toolbar style. See [Toolbar Control and Button Styles](https://msdn.microsoft.com/library/windows/desktop/bb760439) in the Windows SDK for the list of styles.  
+ The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) in the Windows SDK for the list of styles.  
   
  [in] *nID*  
  The ID of the child window of the toolbar.  
@@ -634,7 +634,7 @@ virtual BOOL CreateEx(
  Additional styles for creating the embedded control bar object.  
   
  [in] *dwStyle*  
- The toolbar style. See [Toolbar Control and Button Styles](https://msdn.microsoft.com/library/windows/desktop/bb760439) for a list of appropriate styles.  
+ The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) for a list of appropriate styles.  
   
  [in] *rcBorders*  
  A `CRect` object that specifies the widths of the toolbar window borders.  
@@ -1177,7 +1177,7 @@ static COLORREF GetHotTextColor();
 ```  
   
 ### Return Value  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value that represent the current highlighted text color.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value that represent the current highlighted text color.  
   
 ### Remarks  
  Call [CMFCToolBar::SetHotTextColor](#sethottextcolor) to set a new text color for highlighted toolbar buttons.  

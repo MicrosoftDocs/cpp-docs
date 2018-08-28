@@ -76,7 +76,7 @@ virtual BOOL Create(
   
 ### Parameters  
  *pLibrary*  
- A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
+ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), which defines a library of standard transitions.  
 
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  

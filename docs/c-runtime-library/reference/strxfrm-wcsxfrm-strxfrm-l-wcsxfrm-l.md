@@ -85,7 +85,7 @@ In the "C" locale, the order of the characters in the character set (ASCII chara
 
 In locales for which the character set and the lexicographic character order differ, use **strxfrm** on the original strings and then **strcmp** on the resulting strings to produce a lexicographic string comparison according to the current locale's **LC_COLLATE** category setting. Thus, to compare two strings lexicographically in the above locale, use **strxfrm** on the original strings, then **strcmp** on the resulting strings. Alternately, you can use **strcoll** rather than **strcmp** on the original strings.
 
-**strxfrm** is basically a wrapper around [LCMapString](https://msdn.microsoft.com/library/windows/desktop/dd318700) with **LCMAP_SORTKEY**.
+**strxfrm** is basically a wrapper around [LCMapString](/windows/desktop/api/winnls/nf-winnls-lcmapstringa) with **LCMAP_SORTKEY**.
 
 The value of the following expression is the size of the array needed to hold the **strxfrm** transformation of the source string:
 

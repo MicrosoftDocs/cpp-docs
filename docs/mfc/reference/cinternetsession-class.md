@@ -200,7 +200,7 @@ For more information about asynchronous operations, see the article [Internet Fi
 
 ## <a name="getcookie"></a>  CInternetSession::GetCookie
 
-This member function implements the behavior of the Win32 function [InternetGetCookie](https://msdn.microsoft.com/library/windows/desktop/aa384710), as described in the Windows SDK.
+This member function implements the behavior of the Win32 function [InternetGetCookie](/windows/desktop/api/wininet/nf-wininet-internetgetcookiea), as described in the Windows SDK.
 
 ```cpp
 static BOOL GetCookie(
@@ -439,7 +439,7 @@ The *dwInternetStatus* parameter indicates the operation being performed and det
 |INTERNET_STATUS_RESPONSE_RECEIVED|Successfully received a response from the server. The *lpvStatusInformation* parameter is NULL.|
 |INTERNET_STATUS_CLOSING_CONNECTION|Closing the connection to the server. The *lpvStatusInformation* parameter is NULL.|
 |INTERNET_STATUS_CONNECTION_CLOSED|Successfully closed the connection to the server. The *lpvStatusInformation* parameter is NULL.|
-|INTERNET_STATUS_HANDLE_CREATED|Used by the Win32 API function [InternetConnect](https://msdn.microsoft.com/library/windows/desktop/aa384363) to indicate that it has created the new handle. This lets the application call the Win32 function [InternetCloseHandle](https://msdn.microsoft.com/library/windows/desktop/aa384350) from another thread if the connect is taking too long. See the Windows SDKfor more information about these functions.|
+|INTERNET_STATUS_HANDLE_CREATED|Used by the Win32 API function [InternetConnect](/windows/desktop/api/wininet/nf-wininet-internetconnecta) to indicate that it has created the new handle. This lets the application call the Win32 function [InternetCloseHandle](/windows/desktop/api/wininet/nf-wininet-internetclosehandle) from another thread if the connect is taking too long. See the Windows SDKfor more information about these functions.|
 |INTERNET_STATUS_HANDLE_CLOSING|Successfully terminated this handle value.|
 
 Override this member function to require some action before a status callback routine is performed.
@@ -552,7 +552,7 @@ Returns TRUE if successful, or FALSE otherwise. To get the specific error code, 
 
 ### Remarks
 
-This member function implements the behavior of the Win32 message [InternetSetCookie](https://msdn.microsoft.com/library/windows/desktop/aa385107), as described in the Windows SDK.
+This member function implements the behavior of the Win32 message [InternetSetCookie](/windows/desktop/api/wininet/nf-wininet-internetsetcookiea), as described in the Windows SDK.
 
 ## <a name="setoption"></a>  CInternetSession::SetOption
 
@@ -575,7 +575,7 @@ BOOL SetOption(
 ### Parameters
 
 *dwOption*  
-The Internet option to set. See [Option Flags](https://msdn.microsoft.com/library/windows/desktop/aa385328) in the Windows SDKfor a list of the possible options.
+The Internet option to set. See [Option Flags](/windows/desktop/WinInet/option-flags) in the Windows SDKfor a list of the possible options.
 
 *lpBuffer*  
 A buffer that contains the option setting.

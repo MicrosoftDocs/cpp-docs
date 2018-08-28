@@ -76,7 +76,7 @@ class CSecurityDesc
   
  Applications should not modify the `SECURITY_DESCRIPTOR` structure directly, and instead should use the class methods provided.  
   
- For an introduction to the access control model in Windows, see [Access Control](https://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
+ For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -116,7 +116,7 @@ bool FromString(LPCTSTR pstr) throw(...);
   
 ### Parameters  
  *pstr*  
- Pointer to a null-terminated string that contains the [string-format security descriptor](https://msdn.microsoft.com/library/windows/desktop/aa379570) to be converted.  
+ Pointer to a null-terminated string that contains the [string-format security descriptor](/windows/desktop/SecAuthZ/security-descriptor-string-format) to be converted.  
   
 ### Return Value  
  Returns true on success. Throws an exception on failure.  
@@ -124,7 +124,7 @@ bool FromString(LPCTSTR pstr) throw(...);
 ### Remarks  
  The string can be created by using [CSecurityDesc::ToString](#tostring). Converting the security descriptor into a string makes it easier to store and transmit.  
   
- This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](https://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora).  
   
 ##  <a name="getcontrol"></a>  CSecurityDesc::GetControl  
  Retrieves control information from the security descriptor.  
@@ -212,7 +212,7 @@ const SECURITY_DESCRIPTOR* GetPSECURITY_DESCRIPTOR() const throw();
 ```  
   
 ### Return Value  
- Returns a pointer to the [SECURITY_DESCRIPTOR](https://msdn.microsoft.com/library/windows/desktop/aa379561) structure.  
+ Returns a pointer to the [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) structure.  
   
 ##  <a name="getsacl"></a>  CSecurityDesc::GetSacl  
  Retrieves system access-control list (SACL) information from the security descriptor.  
@@ -389,7 +389,7 @@ bool IsSelfRelative() const throw();
 ```  
   
 ### Return Value  
- Returns true if the security descriptor is in self-relative format with all the security information in a contiguous block of memory. Returns false if the security descriptor is in absolute format. For more information, see [Absolute and Self-Relative Security Descriptors](https://msdn.microsoft.com/library/windows/desktop/aa374807).  
+ Returns true if the security descriptor is in self-relative format with all the security information in a contiguous block of memory. Returns false if the security descriptor is in absolute format. For more information, see [Absolute and Self-Relative Security Descriptors](/windows/desktop/SecAuthZ/absolute-and-self-relative-security-descriptors).  
   
 ##  <a name="makeabsolute"></a>  CSecurityDesc::MakeAbsolute  
  Call this method to convert the security descriptor to absolute format.  
@@ -402,7 +402,7 @@ bool MakeAbsolute() throw(...);
  Returns true if the method succeeds, false otherwise.  
   
 ### Remarks  
- A security descriptor in absolute format contains pointers to the information it contains, rather than the information itself. A security descriptor in self-relative format contains the information in a contiguous block of memory. In a self-relative security descriptor, a `SECURITY_DESCRIPTOR` structure always starts the information, but the security descriptor's other components can follow the structure in any order. Instead of using memory addresses, the components of the self-relative security descriptor are identified by offsets from the beginning of the security descriptor. This format is useful when a security descriptor must be stored on a disk or transmitted by means of a communications protocol. For more information, see [Absolute and Self-Relative Security Descriptors](https://msdn.microsoft.com/library/windows/desktop/aa374807).  
+ A security descriptor in absolute format contains pointers to the information it contains, rather than the information itself. A security descriptor in self-relative format contains the information in a contiguous block of memory. In a self-relative security descriptor, a `SECURITY_DESCRIPTOR` structure always starts the information, but the security descriptor's other components can follow the structure in any order. Instead of using memory addresses, the components of the self-relative security descriptor are identified by offsets from the beginning of the security descriptor. This format is useful when a security descriptor must be stored on a disk or transmitted by means of a communications protocol. For more information, see [Absolute and Self-Relative Security Descriptors](/windows/desktop/SecAuthZ/absolute-and-self-relative-security-descriptors).  
   
 ##  <a name="makeselfrelative"></a>  CSecurityDesc::MakeSelfRelative  
  Call this method to convert the security descriptor to self-relative format.  
@@ -415,7 +415,7 @@ bool MakeSelfRelative() throw(...);
  Returns true if the method succeeds, false otherwise.  
   
 ### Remarks  
- A security descriptor in absolute format contains pointers to the information it contains, rather than containing the information itself. A security descriptor in self-relative format contains the information in a contiguous block of memory. In a self-relative security descriptor, a `SECURITY_DESCRIPTOR` structure always starts the information, but the security descriptor's other components can follow the structure in any order. Instead of using memory addresses, the components of the security descriptor are identified by offsets from the beginning of the security descriptor. This format is useful when a security descriptor must be stored on a disk or transmitted by means of a communications protocol. For more information, see [Absolute and Self-Relative Security Descriptors](https://msdn.microsoft.com/library/windows/desktop/aa374807).  
+ A security descriptor in absolute format contains pointers to the information it contains, rather than containing the information itself. A security descriptor in self-relative format contains the information in a contiguous block of memory. In a self-relative security descriptor, a `SECURITY_DESCRIPTOR` structure always starts the information, but the security descriptor's other components can follow the structure in any order. Instead of using memory addresses, the components of the security descriptor are identified by offsets from the beginning of the security descriptor. This format is useful when a security descriptor must be stored on a disk or transmitted by means of a communications protocol. For more information, see [Absolute and Self-Relative Security Descriptors](/windows/desktop/SecAuthZ/absolute-and-self-relative-security-descriptors).  
   
 ##  <a name="operator_eq"></a>  CSecurityDesc::operator =  
  Assignment operator.  
@@ -553,7 +553,7 @@ bool ToString(
   
 ### Parameters  
  *pstr*  
- Pointer to a null-terminated string which will receive the [string-format security descriptor](https://msdn.microsoft.com/library/windows/desktop/aa379570).  
+ Pointer to a null-terminated string which will receive the [string-format security descriptor](/windows/desktop/SecAuthZ/security-descriptor-string-format).  
   
  *si*  
  Specifies a combination of SECURITY_INFORMATION bit flags to indicate the components of the security descriptor to include in the output string.  
@@ -575,12 +575,12 @@ bool ToString(
   
  If the DACL is NULL and the SE_DACL_PRESENT control bit is set in the input security descriptor, the method fails.  
   
- If the DACL is NULL and the SE_DACL_PRESENT control bit is not set in the input security descriptor, the resulting security descriptor string does not have a D: component. See [Security Descriptor String Format](https://msdn.microsoft.com/library/windows/desktop/aa379570) for more details.  
+ If the DACL is NULL and the SE_DACL_PRESENT control bit is not set in the input security descriptor, the resulting security descriptor string does not have a D: component. See [Security Descriptor String Format](/windows/desktop/SecAuthZ/security-descriptor-string-format) for more details.  
   
- This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](https://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ This method calls [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora).  
   
 ## See Also  
  [Security Sample](../../visual-cpp-samples.md)   
- [SECURITY_DESCRIPTOR](https://msdn.microsoft.com/library/windows/desktop/aa379561)   
+ [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)

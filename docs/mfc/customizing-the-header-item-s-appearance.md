@@ -28,7 +28,7 @@ By setting the *dwStyle* parameter when you first create a header control ([CHea
   
      The **HDS_HIDDEN** style indicates that the header control is intended to be used as a data container and not a visual control. This style does not automatically hide the control but, instead, affects the behavior of `CHeaderCtrl::Layout`. The value returned in the *cy* member of the `WINDOWPOS` structure will be zero indicating that the control should not be visible to the user.  
   
- For more information about these properties, see [Items](https://msdn.microsoft.com/library/windows/desktop/bb775238) in the Windows SDK. For information about adding items to a header control, see [Adding Items to the Header Control](../mfc/adding-items-to-the-header-control.md).  
+ For more information about these properties, see [Items](/windows/desktop/Controls/header-controls) in the Windows SDK. For information about adding items to a header control, see [Adding Items to the Header Control](../mfc/adding-items-to-the-header-control.md).  
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)   

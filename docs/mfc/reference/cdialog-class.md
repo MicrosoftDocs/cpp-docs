@@ -70,7 +70,7 @@ class CDialog : public CWnd
   
  To create a modal dialog box, construct an object on the stack using the constructor for your derived dialog class and then call `DoModal` to create the dialog window and its controls. If you wish to create a modeless dialog, call `Create` in the constructor of your dialog class.  
   
- You can also create a template in memory by using a [DLGTEMPLATE](https://msdn.microsoft.com/library/windows/desktop/ms645394) data structure as described in the Windows SDK. After you construct a `CDialog` object, call [CreateIndirect](#createindirect) to create a modeless dialog box, or call [InitModalIndirect](#initmodalindirect) and [DoModal](#domodal) to create a modal dialog box.  
+ You can also create a template in memory by using a [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) data structure as described in the Windows SDK. After you construct a `CDialog` object, call [CreateIndirect](#createindirect) to create a modeless dialog box, or call [InitModalIndirect](#initmodalindirect) and [DoModal](#domodal) to create a modal dialog box.  
   
  The exchange and validation data map is written in an override of `CWnd::DoDataExchange` that is added to your new dialog class. See the [DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange) member function in `CWnd` for more on the exchange and validation functionality.  
   
@@ -175,7 +175,7 @@ virtual BOOL Create(
   
  The `Create` member function returns immediately after it creates the dialog box.  
   
- Use the WS_VISIBLE style in the dialog-box template if the dialog box should appear when the parent window is created. Otherwise, you must call `ShowWindow`. For further dialog-box styles and their application, see the [DLGTEMPLATE](https://msdn.microsoft.com/library/windows/desktop/ms645394) structure in the Windows SDK and [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) in the *MFC Reference*.  
+ Use the WS_VISIBLE style in the dialog-box template if the dialog box should appear when the parent window is created. Otherwise, you must call `ShowWindow`. For further dialog-box styles and their application, see the [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) structure in the Windows SDK and [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) in the *MFC Reference*.  
   
  Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the `Create` function.  
   
@@ -199,7 +199,7 @@ virtual BOOL CreateIndirect(
   
 ### Parameters  
  *lpDialogTemplate*  
- Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](https://msdn.microsoft.com/library/windows/desktop/ms645394) structure and control information, as described in the Windows SDK.  
+ Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) structure and control information, as described in the Windows SDK.  
   
  *pParentWnd*  
  Points to the dialog object's parent window object (of type [CWnd](../../mfc/reference/cwnd-class.md)). If it is NULL, the dialog object's parent window is set to the main application window.  
@@ -216,7 +216,7 @@ virtual BOOL CreateIndirect(
 ### Remarks  
  The `CreateIndirect` member function returns immediately after it creates the dialog box.  
   
- Use the WS_VISIBLE style in the dialog-box template if the dialog box should appear when the parent window is created. Otherwise, you must call `ShowWindow` to cause it to appear. For more information on how you can specify other dialog-box styles in the template, see the [DLGTEMPLATE](https://msdn.microsoft.com/library/windows/desktop/ms645394) structure in the Windows SDK.  
+ Use the WS_VISIBLE style in the dialog-box template if the dialog box should appear when the parent window is created. Otherwise, you must call `ShowWindow` to cause it to appear. For more information on how you can specify other dialog-box styles in the template, see the [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) structure in the Windows SDK.  
   
  Use the `CWnd::DestroyWindow` function to destroy a dialog box created by the `CreateIndirect` function.  
   
@@ -313,7 +313,7 @@ BOOL InitModalIndirect(
   
 ### Parameters  
  *lpDialogTemplate*  
- Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](https://msdn.microsoft.com/library/windows/desktop/ms645394) structure and control information, as described in the Windows SDK.  
+ Points to memory that contains a dialog-box template used to create the dialog box. This template is in the form of a [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) structure and control information, as described in the Windows SDK.  
   
  *hDialogTemplate*  
  Contains a handle to global memory containing a dialog-box template. This template is in the form of a `DLGTEMPLATE` structure and data for each control in the dialog box.  

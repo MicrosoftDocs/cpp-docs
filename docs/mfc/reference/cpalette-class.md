@@ -89,7 +89,7 @@ void AnimatePalette(
 ### Remarks  
  When an application calls `AnimatePalette`, it does not have to update its client area, because Windows maps the new entries into the system palette immediately.  
   
- The `AnimatePalette` function will only change entries with the PC_RESERVED flag set in the corresponding `palPaletteEntry` member of the [LOGPALETTE](https://msdn.microsoft.com/library/windows/desktop/dd145040) structure that is attached to the `CPalette` object. See LOGPALETTE in the Windows SDK for more information about this structure.  
+ The `AnimatePalette` function will only change entries with the PC_RESERVED flag set in the corresponding `palPaletteEntry` member of the [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) structure that is attached to the `CPalette` object. See LOGPALETTE in the Windows SDK for more information about this structure.  
   
 ##  <a name="cpalette"></a>  CPalette::CPalette  
  Constructs a `CPalette` object.  
@@ -116,7 +116,7 @@ BOOL CreateHalftonePalette(CDC* pDC);
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- An application should create a halftone palette when the stretching mode of a device context is set to HALFTONE. The logical halftone palette returned by the [CreateHalftonePalette](https://msdn.microsoft.com/library/windows/desktop/dd183503) member function should then be selected and realized into the device context before the [CDC::StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) or [StretchDIBits](https://msdn.microsoft.com/library/windows/desktop/dd145121) function is called.  
+ An application should create a halftone palette when the stretching mode of a device context is set to HALFTONE. The logical halftone palette returned by the [CreateHalftonePalette](/windows/desktop/api/wingdi/nf-wingdi-createhalftonepalette) member function should then be selected and realized into the device context before the [CDC::StretchBlt](../../mfc/reference/cdc-class.md#stretchblt) or [StretchDIBits](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits) function is called.  
   
  See the Windows SDK for more information about `CreateHalftonePalette` and `StretchDIBits`.  
   
@@ -129,7 +129,7 @@ BOOL CreatePalette(LPLOGPALETTE lpLogPalette);
   
 ### Parameters  
  *lpLogPalette*  
- Points to a [LOGPALETTE](https://msdn.microsoft.com/library/windows/desktop/dd145040) structure that contains information about the colors in the logical palette.  
+ Points to a [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) structure that contains information about the colors in the logical palette.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -214,7 +214,7 @@ operator HPALETTE() const;
 ### Remarks  
  This operator is a casting operator, which supports direct use of an HPALETTE object.  
   
- For more information about using graphic objects, see the article [Graphic Objects](https://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
+ For more information about using graphic objects, see the article [Graphic Objects](/windows/desktop/gdi/graphic-objects) in the Windows SDK.  
   
 ##  <a name="resizepalette"></a>  CPalette::ResizePalette  
  Changes the size of the logical palette attached to the `CPalette` object to the number of entries specified by *nNumEntries*.  
@@ -233,7 +233,7 @@ BOOL ResizePalette(UINT nNumEntries);
 ### Remarks  
  If an application calls `ResizePalette` to reduce the size of the palette, the entries remaining in the resized palette are unchanged. If the application calls `ResizePalette` to enlarge the palette, the additional palette entries are set to black (the red, green, and blue values are all 0), and the flags for all additional entries are set to 0.  
   
- For more information on the Windows API `ResizePalette`, see [ResizePalette](https://msdn.microsoft.com/library/windows/desktop/dd162928) in the Windows SDK.  
+ For more information on the Windows API `ResizePalette`, see [ResizePalette](/windows/desktop/api/wingdi/nf-wingdi-resizepalette) in the Windows SDK.  
   
 ##  <a name="setpaletteentries"></a>  CPalette::SetPaletteEntries  
  Sets RGB color values and flags in a range of entries in a logical palette.  

@@ -51,7 +51,7 @@ This article explains how you can access the [CToolBarCtrl](../mfc/reference/cto
   
 -   [Control bars](../mfc/control-bars.md)  
   
- For general information about using Windows common controls, see [Common Controls](https://msdn.microsoft.com/library/windows/desktop/bb775493).  
+ For general information about using Windows common controls, see [Common Controls](/windows/desktop/Controls/common-controls-intro).  
   
 ## See Also  
  [MFC Toolbar Implementation](../mfc/mfc-toolbar-implementation.md)

@@ -457,7 +457,7 @@ virtual DROPEFFECT OnDropEx(
   
     -   Examine *dropList* to determine the drop effects supported by the drop source. Enable only these actions on the popup menu.  
   
-    -   Use [SetMenuDefaultItem](https://msdn.microsoft.com/library/windows/desktop/ms647996) to set the default action based on *dropDefault*.  
+    -   Use [SetMenuDefaultItem](/windows/desktop/api/winuser/nf-winuser-setmenudefaultitem) to set the default action based on *dropDefault*.  
   
     -   Finally, take the action indicated by the user selection from the popup menu.  
   
@@ -477,7 +477,7 @@ virtual DROPEFFECT OnDropEx(
   
 - DROPEFFECT_SCROLL Indicates that a drag scroll operation is about to occur or is occurring in the target.  
   
- For more information on setting the default menu command, see [SetMenuDefaultItem](https://msdn.microsoft.com/library/windows/desktop/ms647996) in the Windows SDK and [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) in this volume.  
+ For more information on setting the default menu command, see [SetMenuDefaultItem](/windows/desktop/api/winuser/nf-winuser-setmenudefaultitem) in the Windows SDK and [CMenu::GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) in this volume.  
   
 ##  <a name="onendprinting"></a>  CView::OnEndPrinting  
  Called by the framework after a document has been printed or previewed.  
@@ -736,7 +736,7 @@ virtual void OnUpdate(
   
  To use *lHint*, define special hint values, typically a bitmask or an enumerated type, and have the document pass one of these values. To use *pHint*, derive a hint class from [CObject](../../mfc/reference/cobject-class.md) and have the document pass a pointer to a hint object; when overriding `OnUpdate`, use the [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof) member function to determine the run-time type of the hint object.  
   
- Typically you should not perform any drawing directly from `OnUpdate`. Instead, determine the rectangle describing, in device coordinates, the area that requires updating; pass this rectangle to [CWnd::InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect). This causes painting to occur the next time a [WM_PAINT](https://msdn.microsoft.com/library/windows/desktop/dd145213) message is received.  
+ Typically you should not perform any drawing directly from `OnUpdate`. Instead, determine the rectangle describing, in device coordinates, the area that requires updating; pass this rectangle to [CWnd::InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect). This causes painting to occur the next time a [WM_PAINT](/windows/desktop/gdi/wm-paint) message is received.  
   
  If *lHint* is 0 and *pHint* is NULL, the document has sent a generic update notification. If a view receives a generic update notification, or if it cannot decode the hints, it should invalidate its entire client area.  
   

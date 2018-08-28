@@ -118,7 +118,7 @@ BOOL SelectFont(
  Specifies a font name.  
   
  [in] *nCharSet*  
- Specifies a character set. The default value is DEFAULT_CHARSET. For more information, see the `lfCharSet` member of the [LOGFONT](https://msdn.microsoft.com/library/windows/desktop/dd145037) structure.  
+ Specifies a character set. The default value is DEFAULT_CHARSET. For more information, see the `lfCharSet` member of the [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure.  
   
 ### Return Value  
  TRUE if an item in the font combo box matches the specified font description object or font name and charset; otherwise, FALSE.  

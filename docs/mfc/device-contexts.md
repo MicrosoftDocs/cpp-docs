@@ -37,7 +37,7 @@ A device context is a Windows data structure containing information about the dr
   
 -   [Filled shapes](https://msdn.microsoft.com/library/windows/desktop/dd162714)  
   
--   [Fonts and text](https://msdn.microsoft.com/library/windows/desktop/dd144819)  
+-   [Fonts and text](/windows/desktop/gdi/fonts-and-text)  
   
 -   [Colors](https://msdn.microsoft.com/library/windows/desktop/dd183450)  
   

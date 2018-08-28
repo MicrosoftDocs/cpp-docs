@@ -61,7 +61,7 @@ STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 ```  
   
 ### Remarks  
- See [IConnectionPointContainer::EnumConnectionPoints](https://msdn.microsoft.com/library/windows/desktop/ms682460) in the Windows SDK.  
+ See [IConnectionPointContainer::EnumConnectionPoints](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpointcontainer-enumconnectionpoints) in the Windows SDK.  
   
 ##  <a name="findconnectionpoint"></a>  IConnectionPointContainerImpl::FindConnectionPoint  
  Retrieves an interface pointer to the connection point that supports the specified IID.  
@@ -71,8 +71,8 @@ STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 ```  
   
 ### Remarks  
- See [IConnectionPointContainer::FindConnectionPoint](https://msdn.microsoft.com/library/windows/desktop/ms692476) in the Windows SDK.  
+ See [IConnectionPointContainer::FindConnectionPoint](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) in the Windows SDK.  
   
 ## See Also  
- [IConnectionPointContainer](https://msdn.microsoft.com/library/windows/desktop/ms683857)   
+ [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)   
  [Class Overview](../../atl/atl-class-overview.md)

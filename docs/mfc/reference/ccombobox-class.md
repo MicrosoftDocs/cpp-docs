@@ -173,7 +173,7 @@ int AddString(LPCTSTR lpszString);
  If the list box was not created with the [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style, the string is added to the end of the list. Otherwise, the string is inserted into the list, and the list is sorted.  
   
 > [!NOTE]
->  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](https://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
+>  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.  
   
  To insert a string into a specific location within the list, use the [InsertString](#insertstring) member function.  
   
@@ -380,7 +380,7 @@ int Dir(
  If the return value is greater than or equal to 0, it is the zero-based index of the last filename added to the list. The return value is CB_ERR if an error occurs; the return value is CB_ERRSPACE if insufficient space is available to store the new strings.  
   
 ### Remarks  
- This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](https://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
+ This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#10](../../mfc/reference/codesnippet/cpp/ccombobox-class_10.cpp)]  
@@ -424,7 +424,7 @@ int FindString(
  If the return value is greater than or equal to 0, it is the zero-based index of the matching item. It is CB_ERR if the search was unsuccessful.  
   
 ### Remarks  
- This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](https://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
+ This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#12](../../mfc/reference/codesnippet/cpp/ccombobox-class_12.cpp)]  
@@ -463,13 +463,13 @@ BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
   
 ### Parameters  
  *pcbi*  
- A pointer to the [COMBOBOXINFO](https://msdn.microsoft.com/library/windows/desktop/bb775798) structure.  
+ A pointer to the [COMBOBOXINFO](/windows/desktop/api/winuser/ns-winuser-tagcomboboxinfo) structure.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- This member function emulates the functionality of the [CB_GETCOMBOBOXINFO](https://msdn.microsoft.com/library/windows/desktop/bb775839) message, as described in the Windows SDK.  
+ This member function emulates the functionality of the [CB_GETCOMBOBOXINFO](/windows/desktop/Controls/cb-getcomboboxinfo) message, as described in the Windows SDK.  
   
 ##  <a name="getcount"></a>  CComboBox::GetCount  
  Call this member function to retrieve the number of items in the list-box portion of a combo box.  
@@ -512,7 +512,7 @@ BOOL GetCueBanner(
 ### Remarks  
  Cue text is a prompt that is displayed in the input area of the combo box control. The cue text is displayed until the user provides input.  
   
- This method sends the [CB_GETCUEBANNER](https://msdn.microsoft.com/library/windows/desktop/bb775843) message, which is described in the Windows SDK.  
+ This method sends the [CB_GETCUEBANNER](/windows/desktop/Controls/cb-getcuebanner) message, which is described in the Windows SDK.  
   
 ##  <a name="getcursel"></a>  CComboBox::GetCurSel  
  Call this member function to determine which item in the combo box is selected.  
@@ -756,7 +756,7 @@ int GetMinVisible() const;
  The minimum number of visible items in the current drop-down list.  
   
 ### Remarks  
- This method sends the [CB_GETMINVISIBLE](https://msdn.microsoft.com/library/windows/desktop/bb775915) message, which is described in the Windows SDK.  
+ This method sends the [CB_GETMINVISIBLE](/windows/desktop/Controls/cb-setminvisible) message, which is described in the Windows SDK.  
   
 ##  <a name="gettopindex"></a>  CComboBox::GetTopIndex  
  Retrieves the zero-based index of the first visible item in the list-box portion of the combo box.  
@@ -826,7 +826,7 @@ int InsertString(
  Unlike the [AddString](#addstring) member function, the `InsertString` member function does not cause a list with the [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) style to be sorted.  
   
 > [!NOTE]
->  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](https://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
+>  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CComboBox#27](../../mfc/reference/codesnippet/cpp/ccombobox-class_27.cpp)]  
@@ -943,7 +943,7 @@ BOOL SetCueBanner(LPCTSTR lpszText);
 ### Remarks  
  Cue text is a prompt that is displayed in the input area of the combo box control. The cue text is displayed until the user provides input.  
   
- This method sends the [CB_SETCUEBANNER](https://msdn.microsoft.com/library/windows/desktop/bb775897) message, which is described in the Windows SDK.  
+ This method sends the [CB_SETCUEBANNER](/windows/desktop/Controls/cb-setcuebanner) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, *m_combobox*, that is used to programmatically access the combo box control. This variable is used in the next example.  
@@ -1020,7 +1020,7 @@ BOOL SetEditSel(
  The positions are zero-based. To select the first character of the edit control, you specify a starting position of 0. The ending position is for the character just after the last character to select. For example, to select the first four characters of the edit control, you would use a starting position of 0 and an ending position of 4.  
   
 > [!NOTE]
->  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](https://msdn.microsoft.com/library/windows/desktop/bb775738) in the Windows SDK.  
+>  This function is not supported by the Windows `ComboBoxEx` control. For more information on this control, see [ComboBoxEx Controls](/windows/desktop/Controls/comboboxex-controls) in the Windows SDK.  
   
 ### Example  
   See the example for [CComboBox::GetEditSel](#geteditsel).  
@@ -1184,7 +1184,7 @@ BOOL SetMinVisibleItems(int iMinVisible);
  TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
- This method sends the [CB_SETMINVISIBLE](https://msdn.microsoft.com/library/windows/desktop/bb775915) message, which is described in the Windows SDK.  
+ This method sends the [CB_SETMINVISIBLE](/windows/desktop/Controls/cb-setminvisible) message, which is described in the Windows SDK.  
   
 ### Example  
  The following code example defines the variable, *m_combobox*, that is used to programmatically access the combo box control. This variable is used in the next example.  

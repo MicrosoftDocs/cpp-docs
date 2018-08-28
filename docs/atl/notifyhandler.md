@@ -32,7 +32,7 @@ The name of the function identified by the third parameter of the NOTIFY_HANDLER
  The identifier of the control sending the message.  
   
  *pnmh*  
- Address of an [NMHDR](https://msdn.microsoft.com/library/windows/desktop/bb775514) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the `NMHDR` structure as its first member.  
+ Address of an [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) structure that contains the notification code and additional information. For some notification messages, this parameter points to a larger structure that has the `NMHDR` structure as its first member.  
   
  *bHandled*  
  The message map sets *bHandled* to TRUE before *NotifyHandler* is called. If *NotifyHandler* does not fully handle the message, it should set *bHandled* to **FALSE** to indicate the message needs further processing.  

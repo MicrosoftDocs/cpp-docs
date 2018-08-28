@@ -304,7 +304,7 @@ BOOL BitBlt(
  The logical y-coordinate of the upper left corner of the destination rectangle.  
   
  *dwROP*  
- The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](https://msdn.microsoft.com/library/windows/desktop/dd183370) in the Windows SDK for a list of other raster-operation codes and their descriptions.  
+ The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.  
   
  *pointDest*  
  A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure indicating the upper left corner of the destination rectangle.  
@@ -331,7 +331,7 @@ BOOL BitBlt(
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- For more information, see [BitBlt](https://msdn.microsoft.com/library/windows/desktop/dd183370) in the Windows SDK.  
+ For more information, see [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) in the Windows SDK.  
   
 ##  <a name="cimage"></a>  CImage::CImage  
  Constructs a `CImage` object.  
@@ -583,7 +583,7 @@ void GetColorTable(UINT iFirstColor,
  The number of color table entries to retrieve.  
   
  *prgbColors*  
- A pointer to the array of [RGBQUAD](https://msdn.microsoft.com/library/windows/desktop/dd162938) structures to retrieve the color table entries.  
+ A pointer to the array of [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) structures to retrieve the color table entries.  
   
 ##  <a name="getdc"></a>  CImage::GetDC  
  Retrieves the device context that currently has the image selected into it.  
@@ -1131,7 +1131,7 @@ BOOL PlgBlt(
 ### Remarks  
  If *hbmMask* identifies a valid monochrome bitmap, `PlgBit` uses this bitmap to mask the bits of color data from the source rectangle.  
   
- This method applies to Windows NT, versions 4.0 and later only. See [PlgBlt](https://msdn.microsoft.com/library/windows/desktop/dd162804) in the Windows SDK for more detailed information.  
+ This method applies to Windows NT, versions 4.0 and later only. See [PlgBlt](/windows/desktop/api/wingdi/nf-wingdi-plgblt) in the Windows SDK for more detailed information.  
   
 ##  <a name="releasedc"></a>  CImage::ReleaseDC  
  Releases the device context.  
@@ -1209,7 +1209,7 @@ void SetColorTable(
  The number of color table entries to set.  
   
  *prgbColors*  
- A pointer to the array of [RGBQUAD](https://msdn.microsoft.com/library/windows/desktop/dd162938) structures to set the color table entries.  
+ A pointer to the array of [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) structures to set the color table entries.  
   
 ### Remarks  
  This method supports only DIB section bitmaps.  
@@ -1349,7 +1349,7 @@ BOOL StretchBlt(
  The height, in logical units, of the destination rectangle.  
   
  *dwROP*  
- The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](https://msdn.microsoft.com/library/windows/desktop/dd183370) in the Windows SDK for a list of other raster-operation codes and their descriptions.  
+ The raster operation to be performed. Raster-operation codes define exactly how to combine the bits of the source, the destination, and the pattern (as defined by the currently selected brush) to form the destination. See [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) in the Windows SDK for a list of other raster-operation codes and their descriptions.  
   
  *rectDest*  
  A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure, identifying the destination.  
@@ -1373,7 +1373,7 @@ BOOL StretchBlt(
  Nonzero if successful, otherwise 0.  
   
 ### Remarks  
- For more information, see [StretchBlt](https://msdn.microsoft.com/library/windows/desktop/dd145120) in the Windows SDK.  
+ For more information, see [StretchBlt](/windows/desktop/api/wingdi/nf-wingdi-stretchblt) in the Windows SDK.  
   
 ##  <a name="transparentblt"></a>  CImage::TransparentBlt  
  Copies a bitmap from the source device context to this current device context.  
@@ -1489,11 +1489,11 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 ## See Also  
  [MMXSwarm Sample](../../visual-cpp-samples.md)   
  [SimpleImage Sample](../../visual-cpp-samples.md)   
- [Device-Independent Bitmaps](https://msdn.microsoft.com/library/windows/desktop/dd183562)   
- [CreateDIBSection](https://msdn.microsoft.com/library/windows/desktop/dd183494)   
+ [Device-Independent Bitmaps](/windows/desktop/gdi/device-independent-bitmaps)   
+ [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
  [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)
- [Device-Independent Bitmaps](https://msdn.microsoft.com/library/windows/desktop/dd183562)   
- [CreateDIBSection](https://msdn.microsoft.com/library/windows/desktop/dd183494)   
+ [Device-Independent Bitmaps](/windows/desktop/gdi/device-independent-bitmaps)   
+ [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
 
 
 

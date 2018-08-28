@@ -107,7 +107,7 @@ HRESULT Create(
  The file name.  
   
  *dwDesiredAccess*  
- The desired access. See *dwDesiredAccess* in [CreateFile](https://msdn.microsoft.com/library/windows/desktop/aa363858) in the Windows SDK.  
+ The desired access. See *dwDesiredAccess* in [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) in the Windows SDK.  
   
  *dwShareMode*  
  The share mode. See *dwShareMode* in `CreateFile`.  
@@ -128,7 +128,7 @@ HRESULT Create(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls [CreateFile](https://msdn.microsoft.com/library/windows/desktop/aa363858) to create or open the file.  
+ Calls [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) to create or open the file.  
   
 ##  <a name="flush"></a>  CAtlFile::Flush  
  Call this method to clear the buffers for the file and cause all buffered data to be written to the file.  
@@ -141,7 +141,7 @@ HRESULT Flush() throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls [FlushFileBuffers](https://msdn.microsoft.com/library/windows/desktop/aa364439) to flush buffered data to the file.  
+ Calls [FlushFileBuffers](/windows/desktop/api/fileapi/nf-fileapi-flushfilebuffers) to flush buffered data to the file.  
   
 ##  <a name="getoverlappedresult"></a>  CAtlFile::GetOverlappedResult  
  Call this method to get the results of an overlapped operation on the file.  
@@ -155,7 +155,7 @@ HRESULT GetOverlappedResult(
   
 ### Parameters  
  *pOverlapped*  
- The overlapped structure. See *lpOverlapped* in [GetOverlappedResult](https://msdn.microsoft.com/library/windows/desktop/ms683209) in the Windows SDK.  
+ The overlapped structure. See *lpOverlapped* in [GetOverlappedResult](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) in the Windows SDK.  
   
  *dwBytesTransferred*  
  The bytes transferred. See *lpNumberOfBytesTransferred* in `GetOverlappedResult`.  
@@ -167,7 +167,7 @@ HRESULT GetOverlappedResult(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls [GetOverlappedResult](https://msdn.microsoft.com/library/windows/desktop/ms683209) to get the results of an overlapped operation on the file.  
+ Calls [GetOverlappedResult](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) to get the results of an overlapped operation on the file.  
   
 ##  <a name="getposition"></a>  CAtlFile::GetPosition  
  Call this method to get the current file pointer position.  
@@ -184,7 +184,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls [SetFilePointer](https://msdn.microsoft.com/library/windows/desktop/aa365541) to get the current file pointer position.  
+ Calls [SetFilePointer](/windows/desktop/api/fileapi/nf-fileapi-setfilepointer) to get the current file pointer position.  
   
 ##  <a name="getsize"></a>  CAtlFile::GetSize  
  Call this method to get the size in bytes of the file.  
@@ -201,7 +201,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls [GetFileSize](https://msdn.microsoft.com/library/windows/desktop/aa364955) to get the size in bytes of the file.  
+ Calls [GetFileSize](/windows/desktop/api/fileapi/nf-fileapi-getfilesize) to get the size in bytes of the file.  
   
 ##  <a name="lockrange"></a>  CAtlFile::LockRange  
  Call this method to lock a region in the file to prevent other processes from accessing it.  
@@ -221,7 +221,7 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls [LockFile](https://msdn.microsoft.com/library/windows/desktop/aa365202) to lock a region in the file. Locking bytes in a file prevents access to those bytes by other processes. You can lock more than one region of a file, but no overlapping regions are allowed. When you unlock a region, using [CAtlFile::UnlockRange](#unlockrange), the byte range must correspond exactly to the region that was previously locked. `LockRange` does not merge adjacent regions; if two locked regions are adjacent, you must unlock each separately.  
+ Calls [LockFile](/windows/desktop/api/fileapi/nf-fileapi-lockfile) to lock a region in the file. Locking bytes in a file prevents access to those bytes by other processes. You can lock more than one region of a file, but no overlapping regions are allowed. When you unlock a region, using [CAtlFile::UnlockRange](#unlockrange), the byte range must correspond exactly to the region that was previously locked. `LockRange` does not merge adjacent regions; if two locked regions are adjacent, you must unlock each separately.  
   
 ##  <a name="m_ptm"></a>  CAtlFile::m_pTM  
  Pointer to a `CAtlTransactionManager` object.  
@@ -268,16 +268,16 @@ HRESULT Read(
  The number of bytes read.  
   
  *pOverlapped*  
- The overlapped structure. See *lpOverlapped* in [ReadFile](https://msdn.microsoft.com/library/windows/desktop/aa365467) in the Windows SDK.  
+ The overlapped structure. See *lpOverlapped* in [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile) in the Windows SDK.  
   
  *pfnCompletionRoutine*  
- The completion routine. See *lpCompletionRoutine* in [ReadFileEx](https://msdn.microsoft.com/library/windows/desktop/aa365468) in the Windows SDK.  
+ The completion routine. See *lpCompletionRoutine* in [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) in the Windows SDK.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The first three forms call [ReadFile](https://msdn.microsoft.com/library/windows/desktop/aa365467), the last [ReadFileEx](https://msdn.microsoft.com/library/windows/desktop/aa365468) to read data from the file. Use [CAtlFile::Seek](#seek) to move the file pointer.  
+ The first three forms call [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile), the last [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) to read data from the file. Use [CAtlFile::Seek](#seek) to move the file pointer.  
   
 ##  <a name="seek"></a>  CAtlFile::Seek  
  Call this method to move the file pointer of the file.  
@@ -299,7 +299,7 @@ HRESULT Seek(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls [SetFilePointer](https://msdn.microsoft.com/library/windows/desktop/aa365541) to move the file pointer.  
+ Calls [SetFilePointer](/windows/desktop/api/fileapi/nf-fileapi-setfilepointer) to move the file pointer.  
   
 ##  <a name="setsize"></a>  CAtlFile::SetSize  
  Call this method to set the size of the file.  
@@ -316,7 +316,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls [SetFilePointer](https://msdn.microsoft.com/library/windows/desktop/aa365541) and [SetEndOfFile](https://msdn.microsoft.com/library/windows/desktop/aa365531) to set the size of the file. On return, the file pointer is positioned at the end of the file.  
+ Calls [SetFilePointer](/windows/desktop/api/fileapi/nf-fileapi-setfilepointer) and [SetEndOfFile](/windows/desktop/api/fileapi/nf-fileapi-setendoffile) to set the size of the file. On return, the file pointer is positioned at the end of the file.  
   
 ##  <a name="unlockrange"></a>  CAtlFile::UnlockRange  
  Call this method to unlock a region of the file.  
@@ -336,7 +336,7 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- Calls [UnlockFile](https://msdn.microsoft.com/library/windows/desktop/aa365715) to unlock a region of the file.  
+ Calls [UnlockFile](/windows/desktop/api/fileapi/nf-fileapi-unlockfile) to unlock a region of the file.  
   
 ##  <a name="write"></a>  CAtlFile::Write  
  Call this method to write data to the file starting at the position indicated by the file pointer.  
@@ -367,10 +367,10 @@ HRESULT Write(
  The number of bytes to be transferred from the buffer.  
   
  *pOverlapped*  
- The overlapped structure. See *lpOverlapped* in [WriteFile](https://msdn.microsoft.com/library/windows/desktop/aa365747) in the Windows SDK.  
+ The overlapped structure. See *lpOverlapped* in [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) in the Windows SDK.  
   
  *pfnCompletionRoutine*  
- The completion routine. See *lpCompletionRoutine* in [WriteFileEx](https://msdn.microsoft.com/library/windows/desktop/aa365748) in the Windows SDK.  
+ The completion routine. See *lpCompletionRoutine* in [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) in the Windows SDK.  
   
  *pnBytesWritten*  
  The bytes written.  
@@ -379,7 +379,7 @@ HRESULT Write(
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- The first three forms call [WriteFile](https://msdn.microsoft.com/library/windows/desktop/aa365747), the last calls [WriteFileEx](https://msdn.microsoft.com/library/windows/desktop/aa365748) to write data to the file. Use [CAtlFile::Seek](#seek) to move the file pointer.  
+ The first three forms call [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile), the last calls [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) to write data to the file. Use [CAtlFile::Seek](#seek) to move the file pointer.  
   
 ## See Also  
  [Marquee Sample](../../visual-cpp-samples.md)   

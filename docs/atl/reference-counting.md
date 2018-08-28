@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Reference Counting
 COM itself does not automatically try to remove an object from memory when it thinks the object is no longer being used. Instead, the object programmer must remove the unused object. The programmer determines whether an object can be removed based on a reference count.  
   
- COM uses the `IUnknown` methods, [AddRef](https://msdn.microsoft.com/library/windows/desktop/ms691379) and [Release](https://msdn.microsoft.com/library/windows/desktop/ms682317), to manage the reference count of interfaces on an object. The general rules for calling these methods are:  
+ COM uses the `IUnknown` methods, [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) and [Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release), to manage the reference count of interfaces on an object. The general rules for calling these methods are:  
   
 -   Whenever a client receives an interface pointer, `AddRef` must be called on the interface.  
   
@@ -29,5 +29,5 @@ COM itself does not automatically try to remove an object from memory when it th
   
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   
- [Managing Object Lifetimes through Reference Counting](https://msdn.microsoft.com/library/windows/desktop/ms687260)
+ [Managing Object Lifetimes through Reference Counting](/windows/desktop/com/managing-object-lifetimes-through-reference-counting)
 

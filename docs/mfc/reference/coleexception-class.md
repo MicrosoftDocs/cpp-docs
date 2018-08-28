@@ -62,7 +62,7 @@ SCODE m_sc;
 ### Remarks  
  This variable's value is set by [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
   
- For more information on SCODE, see [Structure of COM Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
+ For more information on SCODE, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]  
@@ -86,7 +86,7 @@ static SCODE PASCAL Process(const CException* pAnyException);
 > [!NOTE]
 >  This function is **static**.  
   
- For more information on SCODE, see [Structure of COM Error Codes](https://msdn.microsoft.com/library/windows/desktop/ms690088) in the Windows SDK.  
+ For more information on SCODE, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes) in the Windows SDK.  
   
 ### Example  
   See the example for [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).  

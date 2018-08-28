@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Header Control Examples
-For examples of header controls, see the [Header Controls](https://msdn.microsoft.com/library/windows/desktop/bb775238) in the Windows SDK.  
+For examples of header controls, see the [Header Controls](/windows/desktop/Controls/header-controls) in the Windows SDK.  
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)   

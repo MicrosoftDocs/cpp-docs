@@ -39,9 +39,9 @@ Loading a C/C++ application can fail if dependent libraries cannot be found. Thi
     > [!NOTE]
     >  If both an embedded manifest and a separate manifest file are present, the operating system loader uses the embedded manifest and ignores the separate file. However, on Windows XP, the opposite is true—the separate manifest file is used and the embedded manifest is ignored.  
   
-5.  We recommend that you embed a manifest in every DLL because external manifests are ignored when a DLL is loaded though a `LoadLibrary` call. For more information, see [Assembly manifests](https://msdn.microsoft.com/library/aa374219).  
+5.  We recommend that you embed a manifest in every DLL because external manifests are ignored when a DLL is loaded though a `LoadLibrary` call. For more information, see [Assembly manifests](/windows/desktop/SbsCs/assembly-manifests).  
   
-6.  Check that all assemblies that are enumerated in the manifest are correctly installed on the computer. Each assembly is specified in the manifest by its name, version number, and processor architecture. If your application depends on side-by-side assemblies, check that these assemblies are correctly installed on the computer so that the operating system loader can find them, as described in [Assembly Searching Sequence](https://msdn.microsoft.com/library/aa374224). Remember that 64-bit assemblies cannot be loaded in 32-bit processes and cannot be executed on 32-bit operating systems.  
+6.  Check that all assemblies that are enumerated in the manifest are correctly installed on the computer. Each assembly is specified in the manifest by its name, version number, and processor architecture. If your application depends on side-by-side assemblies, check that these assemblies are correctly installed on the computer so that the operating system loader can find them, as described in [Assembly Searching Sequence](/windows/desktop/SbsCs/assembly-searching-sequence). Remember that 64-bit assemblies cannot be loaded in 32-bit processes and cannot be executed on 32-bit operating systems.  
   
 ## Example  
  Assume we have an application, appl.exe, that's built by using Visual C++. The application manifest either is embedded in appl.exe as the binary resource RT_MANIFEST, which has an ID equal to 1, or is stored as the separate file appl.exe.manifest. The content of this manifest resembles this:  
@@ -70,7 +70,7 @@ Loading a C/C++ application can fail if dependent libraries cannot be found. Thi
 </assembly>  
 ```  
   
- Side-by-side assemblies can also use [publisher configuration files](https://msdn.microsoft.com/library/aa375682)—also known as policy files—to globally redirect applications and assemblies to use one version of a side-by-side assembly instead of another version of the same assembly. You can check the policies for a shared assembly in the %WINDIR%\WinSxS\Policies\ folder. Here is an example policy file:  
+ Side-by-side assemblies can also use [publisher configuration files](/windows/desktop/SbsCs/publisher-configuration-files)—also known as policy files—to globally redirect applications and assemblies to use one version of a side-by-side assembly instead of another version of the same assembly. You can check the policies for a shared assembly in the %WINDIR%\WinSxS\Policies\ folder. Here is an example policy file:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -94,7 +94,7 @@ Loading a C/C++ application can fail if dependent libraries cannot be found. Thi
   
 2.  Try to open the \\<assemblyName\>\ folder in the folder that contains appl.exe, and if \\<assemblyName\>\ exists, try to load a manifest file that has the name \<assemblyName>.manifest from this folder. If the manifest is found, the loader loads the assembly from the \\<assemblyName\>\ folder. If the assembly is not found, load fails.  
   
- For more information about how the loader searches for dependent assemblies, see [Assembly Searching Sequence](https://msdn.microsoft.com/library/aa374224). If the loader fails to find a dependent assembly as a private assembly, load fails and the message "The system cannot execute the specified program" is displayed. To resolve this error, make sure that dependent assemblies—and DLLs that are part of them—are installed on the computer as either private or shared assemblies.  
+ For more information about how the loader searches for dependent assemblies, see [Assembly Searching Sequence](/windows/desktop/SbsCs/assembly-searching-sequence). If the loader fails to find a dependent assembly as a private assembly, load fails and the message "The system cannot execute the specified program" is displayed. To resolve this error, make sure that dependent assemblies—and DLLs that are part of them—are installed on the computer as either private or shared assemblies.  
   
 ## See Also  
  [Concepts of Isolated Applications and Side-by-side Assemblies](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   

@@ -25,7 +25,7 @@ The `_beginthread` and `_beginthreadex` functions create a new thread and return
  
 The `_beginthread` and `_beginthreadex` functions create a new thread. A thread shares the code and data segments of a process with other threads in the process but has its own unique register values, stack space, and current instruction address. The system gives CPU time to each thread, so that all threads in a process can execute concurrently.  
   
-`_beginthread` and `_beginthreadex` are similar to the [CreateThread](https://msdn.microsoft.com/library/windows/desktop/ms682453) function in the Win32 API but has these differences:  
+`_beginthread` and `_beginthreadex` are similar to the [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) function in the Win32 API but has these differences:  
   
 - They initialize certain C run-time library variables. This is important only if you use the C run-time library in your threads.  
   

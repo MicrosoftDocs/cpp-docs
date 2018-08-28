@@ -49,5 +49,5 @@ ms.workload: ["cplusplus"]
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   
  [Linker Options](../../build/reference/linker-options.md)   
- [Storing User-Specific Information](https://msdn.microsoft.com/library/aa383452)   
+ [Storing User-Specific Information](/windows/desktop/TermServ/storing-user-specific-information)   
  [Legacy Applications in a Terminal Services Environment](https://msdn.microsoft.com/library/aa382957.aspx)

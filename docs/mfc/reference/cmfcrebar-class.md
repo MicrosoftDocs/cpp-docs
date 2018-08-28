@@ -87,7 +87,7 @@ BOOL AddBar(
  Specifies the bitmap to be displayed on the rebar background.  
   
  [in] *dwStyle*  
- Contains the style to apply to the band. For a complete list of band styles, see the description for `fStyle` in the [REBARBANDINFO](https://msdn.microsoft.com/library/windows/desktop/bb774393) structure in the Windows SDK documentation.  
+ Contains the style to apply to the band. For a complete list of band styles, see the description for `fStyle` in the [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) structure in the Windows SDK documentation.  
   
  [in] *clrFore*  
  Represents the foreground color of the rebar.  
@@ -114,7 +114,7 @@ BOOL Create(
  A pointer to the parent window of this rebar control.  
   
  [in] *dwCtrlStyle*  
- Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK documentation.  
+ Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK documentation.  
   
  [in] *dwStyle*  
  The window style of the rebar control. For a list of valid styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  

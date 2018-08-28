@@ -24,14 +24,14 @@ Use this page of the ATL Active Server Page Component Wizard to design for incre
   
 |Option|Description|  
 |------------|-----------------|  
-|**Single**|Specifies that the object uses the single threading model. In the single threading model, an object always runs in the primary COM thread. See [Single-Threaded Apartments](https://msdn.microsoft.com/library/windows/desktop/ms680112) and [InprocServer32](https://msdn.microsoft.com/library/windows/desktop/ms682390) for more information.|  
-|**Apartment**|Specifies that the object uses apartment threading. Equivalent to single thread apartment. Each object of an apartment-threaded component is assigned an apartment for its thread, for the life of the object; however, multiple threads can be used for multiple objects. Each apartment is tied to a specific thread and has a Windows message pump (default).<br /><br /> See [Single-Threaded Apartments](https://msdn.microsoft.com/library/windows/desktop/ms680112) for more information.|  
+|**Single**|Specifies that the object uses the single threading model. In the single threading model, an object always runs in the primary COM thread. See [Single-Threaded Apartments](/windows/desktop/com/single-threaded-apartments) and [InprocServer32](/windows/desktop/com/inprocserver32) for more information.|  
+|**Apartment**|Specifies that the object uses apartment threading. Equivalent to single thread apartment. Each object of an apartment-threaded component is assigned an apartment for its thread, for the life of the object; however, multiple threads can be used for multiple objects. Each apartment is tied to a specific thread and has a Windows message pump (default).<br /><br /> See [Single-Threaded Apartments](/windows/desktop/com/single-threaded-apartments) for more information.|  
 |**Both**|Specifies that the object can use either apartment or free threading, depending from which kind of a thread it is created.|  
-|**Free**|Specifies that the object uses free threading. Free threading is equivalent to a multithread apartment model. See [Multithreaded Apartments](https://msdn.microsoft.com/library/windows/desktop/ms693421) for more information.|  
+|**Free**|Specifies that the object uses free threading. Free threading is equivalent to a multithread apartment model. See [Multithreaded Apartments](/windows/desktop/com/multithreaded-apartments) for more information.|  
 |**Neutral**|Specifies that the object follows the guidelines for multithreaded apartments, but it can execute on any kind of thread.|  
   
  **Aggregation**  
- Indicates whether the object uses [aggregation](https://msdn.microsoft.com/library/windows/desktop/ms686558). The aggregate object chooses which interfaces to expose to clients, and the interfaces are exposed as if the aggregate object implemented them. Clients of the aggregate object communicate only with the aggregate object.  
+ Indicates whether the object uses [aggregation](/windows/desktop/com/aggregation). The aggregate object chooses which interfaces to expose to clients, and the interfaces are exposed as if the aggregate object implemented them. Clients of the aggregate object communicate only with the aggregate object.  
   
 |Option|Description|  
 |------------|-----------------|  

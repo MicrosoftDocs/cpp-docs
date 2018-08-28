@@ -297,7 +297,7 @@ Extended window styles apply to [CWnd Class](../../mfc/reference/cwnd-class.md) 
 |WS_EX_CONTEXTHELP|Includes a question mark in the title bar of the window. When the user clicks the question mark, the cursor changes to a question mark with a pointer. If the user then clicks a child window, the child receives a WM_HELP message.|  
 |WS_EX_CONTROLPARENT|Allows the user to navigate among the child windows of the window by using the TAB key.|  
 |WS_EX_DLGMODALFRAME|Designates a window with a double border that may (optionally) be created with a title bar when you specify the WS_CAPTION style flag in the *dwStyle* parameter.|  
-|WS_EX_LAYERED|The window is a [layered window](https://msdn.microsoft.com/library/ms632599.aspx#layered). This style cannot be used if the window has a [class style](https://msdn.microsoft.com/library/ms633574.aspx#class_styles) of either CS_OWNDC or CS_CLASSDC. However, Microsoft Windows 8 does support the WS_EX_LAYERED style for child windows, where previous Windows versions support it only for top-level windows.|  
+|WS_EX_LAYERED|The window is a [layered window](/windows/desktop/winmsg/window-features). This style cannot be used if the window has a [class style](/windows/desktop/winmsg/about-window-classes) of either CS_OWNDC or CS_CLASSDC. However, Microsoft Windows 8 does support the WS_EX_LAYERED style for child windows, where previous Windows versions support it only for top-level windows.|  
 |WS_EX_LEFT|Gives window generic left-aligned properties. This is the default.|  
 |WS_EX_LEFTSCROLLBAR|Places a vertical scroll bar to the left of the client area.|  
 |WS_EX_LTRREADING|Displays the window text using left-to-right reading order properties. This is the default.|  

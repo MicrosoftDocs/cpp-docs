@@ -84,7 +84,7 @@ virtual BOOL Create(
   
 ### Parameters  
  *dwStyle*  
- Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK. This parameter must include the WS_CHILD style. It should also include the WS_VISIBLE style.  
+ Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK. This parameter must include the WS_CHILD style. It should also include the WS_VISIBLE style.  
   
  *rect*  
  Specifies the status bar control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
@@ -125,7 +125,7 @@ virtual BOOL CreateEx(
  Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
   
  *dwStyle*  
- Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](https://msdn.microsoft.com/library/windows/desktop/bb775498) in the Windows SDK. This parameter must include the WS_CHILD style. It should also include the WS_VISIBLE style.  
+ Specifies the status bar control's style. Apply any combination of status bar control styles listed in [Common Control Styles](/windows/desktop/Controls/common-control-styles) in the Windows SDK. This parameter must include the WS_CHILD style. It should also include the WS_VISIBLE style.  
   
  *rect*  
  A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
@@ -158,7 +158,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
 ### Parameters  
  *lpDrawItemStruct*  
- A long pointer to a [DRAWITEMSTRUCT](https://msdn.microsoft.com/library/windows/desktop/bb775802) structure that contains information about the type of drawing required.  
+ A long pointer to a [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) structure that contains information about the type of drawing required.  
   
 ### Remarks  
  The `itemAction` member of the `DRAWITEMSTRUCT` structure defines the drawing action that is to be performed.  
@@ -218,7 +218,7 @@ HICON GetIcon(int iPart) const;
  The handle to the icon if the method successful; otherwise, NULL.  
   
 ### Remarks  
- This method sends the [SB_GETICON](https://msdn.microsoft.com/library/windows/desktop/bb760744) message, which is described in the Windows SDK.  
+ This method sends the [SB_GETICON](/windows/desktop/Controls/sb-geticon) message, which is described in the Windows SDK.  
   
  A status bar control consists of a row of text output panes, which are also known as parts. For more information about the status bar, see [Status Bar Implementation in MFC](../../mfc/status-bar-implementation-in-mfc.md) and [Setting the Mode of a CStatusBarCtrl Object](../../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md).  
   
@@ -362,7 +362,7 @@ CString GetTipText(int nPane) const;
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing the text to be used in the tooltip.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_GETTIPTEXT](https://msdn.microsoft.com/library/windows/desktop/bb760751), as described in the Windows SDK.  
+ This member function implements the behavior of the Win32 message [SB_GETTIPTEXT](/windows/desktop/Controls/sb-gettiptext), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#7](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_9.cpp)]  
@@ -378,7 +378,7 @@ BOOL IsSimple() const;
  Nonzero if the status window control is in simple mode; otherwise zero.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_ISSIMPLE](https://msdn.microsoft.com/library/windows/desktop/bb760753), as described in the Windows SDK.  
+ This member function implements the behavior of the Win32 message [SB_ISSIMPLE](/windows/desktop/Controls/sb-issimple), as described in the Windows SDK.  
   
 ##  <a name="setbkcolor"></a>  CStatusBarCtrl::SetBkColor  
  Sets the background color in a status bar.  
@@ -392,10 +392,10 @@ COLORREF SetBkColor(COLORREF cr);
  COLORREF value that specifies the new background color. Specify the CLR_DEFAULT value to cause the status bar to use its default background color.  
   
 ### Return Value  
- A [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value that represents the previous default background color.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value that represents the previous default background color.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_SETBKCOLOR](https://msdn.microsoft.com/library/windows/desktop/bb760754), as described in the Windows SDK.  
+ This member function implements the behavior of the Win32 message [SB_SETBKCOLOR](/windows/desktop/Controls/sb-setbkcolor), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#8](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_10.cpp)]  
@@ -420,7 +420,7 @@ BOOL SetIcon(
  Nonzero if successful; otherwise zero.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_SETICON](https://msdn.microsoft.com/library/windows/desktop/bb760755), as described in the Windows SDK.  
+ This member function implements the behavior of the Win32 message [SB_SETICON](/windows/desktop/Controls/sb-seticon), as described in the Windows SDK.  
   
 ### Example  
   See the example for [CStatusBarCtrl::SetBkColor](#setbkcolor).  
@@ -527,7 +527,7 @@ void SetTipText(
  A pointer to a string containing the tooltip text.  
   
 ### Remarks  
- This member function implements the behavior of the Win32 message [SB_SETTIPTEXT](https://msdn.microsoft.com/library/windows/desktop/bb760759), as described in the Windows SDK.  
+ This member function implements the behavior of the Win32 message [SB_SETTIPTEXT](/windows/desktop/Controls/sb-settiptext), as described in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_14.cpp)]  

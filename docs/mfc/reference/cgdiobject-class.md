@@ -104,7 +104,7 @@ BOOL CreateStockObject(int nIndex);
   
 ### Parameters  
  *nIndex*  
- A constant specifying the type of stock object desired. See the parameter *fnObject* for [GetStockObject](https://msdn.microsoft.com/library/windows/desktop/dd144925) in the Windows SDK for a description of appropriate values.  
+ A constant specifying the type of stock object desired. See the parameter *fnObject* for [GetStockObject](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) in the Windows SDK for a description of appropriate values.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
@@ -195,14 +195,14 @@ int GetObject(
 |------------|-----------------|  
 |`CPen`|[LOGPEN](../../mfc/reference/logpen-structure.md)|  
 |`CBrush`|[LOGBRUSH](../../mfc/reference/logbrush-structure.md)|  
-|`CFont`|[LOGFONT](https://msdn.microsoft.com/library/windows/desktop/dd145037)|  
+|`CFont`|[LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)|  
 |`CBitmap`|[BITMAP](../../mfc/reference/bitmap-structure.md)|  
 |`CPalette`|WORD|  
 |`CRgn`|Not supported|  
   
  If the object is a `CBitmap` object, `GetObject` returns only the width, height, and color format information of the bitmap. The actual bits can be retrieved by using [CBitmap::GetBitmapBits](../../mfc/reference/cbitmap-class.md#getbitmapbits).  
   
- If the object is a `CPalette` object, `GetObject` retrieves a WORD that specifies the number of entries in the palette. The function does not retrieve the [LOGPALETTE](https://msdn.microsoft.com/library/windows/desktop/dd145040) structure that defines the palette. An application can get information on palette entries by calling [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).  
+ If the object is a `CPalette` object, `GetObject` retrieves a WORD that specifies the number of entries in the palette. The function does not retrieve the [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) structure that defines the palette. An application can get information on palette entries by calling [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).  
   
 ##  <a name="getobjecttype"></a>  CGdiObject::GetObjectType  
  Retrieves the type of the GDI object.  

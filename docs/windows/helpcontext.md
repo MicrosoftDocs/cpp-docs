@@ -31,7 +31,7 @@ The context ID of the help topic. See [HTML Help: Context-Sensitive Help for You
 
 ## Remarks
 
-The **helpcontext** C++ attribute has the same functionality as the [helpcontext](https://msdn.microsoft.com/library/windows/desktop/aa366851) MIDL attribute.
+The **helpcontext** C++ attribute has the same functionality as the [helpcontext](/windows/desktop/Midl/helpcontext) MIDL attribute.
 
 ## Example
 

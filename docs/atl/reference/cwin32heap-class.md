@@ -52,7 +52,7 @@ class CWin32Heap : public IAtlMemMgr
 |[CWin32Heap::m_hHeap](#m_hheap)|Handle to the heap object.|  
   
 ## Remarks  
- `CWin32Heap` implements memory allocation methods using the Win32 heap allocation functions, including [HeapAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366597) and [HeapFree](https://msdn.microsoft.com/library/windows/desktop/aa366701). Unlike other Heap classes, `CWin32Heap` requires a valid heap handle to be provided before memory is allocated: the other classes default to using the process heap. The handle can be supplied to the constructor or to the [CWin32Heap::Attach](#attach) method. See the [CWin32Heap::CWin32Heap](#cwin32heap) method for more details.  
+ `CWin32Heap` implements memory allocation methods using the Win32 heap allocation functions, including [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc) and [HeapFree](/windows/desktop/api/heapapi/nf-heapapi-heapfree). Unlike other Heap classes, `CWin32Heap` requires a valid heap handle to be provided before memory is allocated: the other classes default to using the process heap. The handle can be supplied to the constructor or to the [CWin32Heap::Attach](#attach) method. See the [CWin32Heap::CWin32Heap](#cwin32heap) method for more details.  
   
 ## Example  
  See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).  
@@ -82,7 +82,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### Remarks  
  Call [CWin32Heap::Free](#free) or [CWin32Heap::Reallocate](#reallocate) to free the memory allocated by this method.  
   
- Implemented using [HeapAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366597).  
+ Implemented using [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc).  
   
 ##  <a name="attach"></a>  CWin32Heap::Attach  
  Attaches the heap object to an existing heap.  

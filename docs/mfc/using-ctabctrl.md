@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # Using CTabCtrl
 A "tab control" is analogous to the dividers in a notebook or the labeled folders in a file cabinet. Use the tab control, represented by class [CTabCtrl](../mfc/reference/ctabctrl-class.md), to show multiple pages of information or controls to a user, one at a time, in a format that suggests a peer or logical relationship between each page.  
   
- For more information on tab controls, see [Tab Controls](https://msdn.microsoft.com/library/windows/desktop/bb760550) in the Windows SDK.  
+ For more information on tab controls, see [Tab Controls](/windows/desktop/Controls/tab-controls) in the Windows SDK.  
   
 ## What do you want to know more about  
   

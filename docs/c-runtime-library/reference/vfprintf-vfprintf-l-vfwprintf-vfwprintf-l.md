@@ -77,7 +77,7 @@ Each of these functions takes a pointer to an argument list, then formats and wr
 The versions of these functions with the **_l** suffix are identical except that they use the locale parameter passed in instead of the current thread locale.
 
 > [!IMPORTANT]
-> Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](https://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### Generic-Text Routine Mappings
 

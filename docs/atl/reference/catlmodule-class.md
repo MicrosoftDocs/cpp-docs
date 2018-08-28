@@ -142,7 +142,7 @@ virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
   
  In debug builds, an assertion error will occur if *ppGIT* is equal to NULL, or if the Global Interface Table pointer cannot be obtained.  
   
- See [IGlobalInterfaceTable](https://msdn.microsoft.com/library/windows/desktop/ms678517) for information on the Global Interface Table.  
+ See [IGlobalInterfaceTable](/windows/desktop/api/objidl/nn-objidl-iglobalinterfacetable) for information on the Global Interface Table.  
   
 ##  <a name="getlockcount"></a>  CAtlModule::GetLockCount  
  Returns the lock count.  

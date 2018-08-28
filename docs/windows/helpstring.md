@@ -31,7 +31,7 @@ The text of the help string.
 
 ## Remarks
 
-The **helpstring** C++ attribute has the same functionality as the [helpstring](https://msdn.microsoft.com/library/windows/desktop/aa366856) MIDL attribute.
+The **helpstring** C++ attribute has the same functionality as the [helpstring](/windows/desktop/Midl/helpstring) MIDL attribute.
 
 ## Example
 

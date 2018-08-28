@@ -86,7 +86,7 @@ Each of the `_spawn` functions creates and executes a new process:
 >  Spaces embedded in strings may cause unexpected behavior; for example, passing `_spawn` the string `"hi there"` will result in the new process getting two arguments, `"hi"` and `"there"`. If the intent was to have the new process open a file named "hi there", the process would fail. You can avoid this by quoting the string: `"\"hi there\""`.  
   
 > [!IMPORTANT]
->  Do not pass user input to `_spawn` without explicitly checking its content. `_spawn` will result in a call to [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms682425) so keep in mind that unqualified path names could lead to potential security vulnerabilities.  
+>  Do not pass user input to `_spawn` without explicitly checking its content. `_spawn` will result in a call to [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) so keep in mind that unqualified path names could lead to potential security vulnerabilities.  
   
  You can pass argument pointers as separate arguments (in `_spawnl`, `_spawnle`, `_spawnlp`, and `_spawnlpe`) or as an array of pointers (in `_spawnv`, `_spawnve`, `_spawnvp`, and `_spawnvpe`). You must pass at least one argument, `arg0` or `argv`[0], to the spawned process. By convention, this argument is the name of the program as you would type it on the command line. A different value does not produce an error.  
   
@@ -106,7 +106,7 @@ Each of the `_spawn` functions creates and executes a new process:
 ## Redirecting Output  
  If you are calling `_spawn` from a DLL or a GUI application and want to redirect the output to a pipe, you have two options:  
   
--   Use the Win32 API to create a pipe, then call [AllocConsole](https://msdn.microsoft.com/library/windows/desktop/ms681944), set the handle values in the startup structure, and call [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms682425).  
+-   Use the Win32 API to create a pipe, then call [AllocConsole](https://msdn.microsoft.com/library/windows/desktop/ms681944), set the handle values in the startup structure, and call [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).  
   
 -   Call [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md) which will create a pipe and invoke the app using **cmd.exe /c** (or **command.exe /c**).  
   

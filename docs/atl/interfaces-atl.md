@@ -23,5 +23,5 @@ An interface is the way in which an object exposes its functionality to the outs
   
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   
- [COM Objects and Interfaces](https://msdn.microsoft.com/library/windows/desktop/ms690343)
+ [COM Objects and Interfaces](/windows/desktop/com/com-objects-and-interfaces)
 

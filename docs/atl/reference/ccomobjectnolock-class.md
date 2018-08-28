@@ -44,7 +44,7 @@ class CComObjectNoLock : public Base
 |[CComObjectNoLock::Release](#release)|Decrements the reference count on the object.|  
   
 ## Remarks  
- `CComObjectNoLock` is similar to [CComObject](../../atl/reference/ccomobject-class.md) in that it implements [IUnknown](https://msdn.microsoft.com/library/windows/desktop/ms680509) for a nonaggregated object; however, `CComObjectNoLock` does not increment the module lock count in the constructor.  
+ `CComObjectNoLock` is similar to [CComObject](../../atl/reference/ccomobject-class.md) in that it implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) for a nonaggregated object; however, `CComObjectNoLock` does not increment the module lock count in the constructor.  
   
  ATL uses `CComObjectNoLock` internally for class factories. In general, you will not use this class directly.  
   

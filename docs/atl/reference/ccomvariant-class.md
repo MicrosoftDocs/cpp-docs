@@ -376,7 +376,7 @@ HRESULT ReadFromStream(IStream* pStream);
   
 ### Parameters  
  *pStream*  
- [in] A pointer to the [IStream](https://msdn.microsoft.com/library/windows/desktop/aa380034) interface on the stream containing the data.  
+ [in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on the stream containing the data.  
   
 ### Return Value  
  A standard HRESULT value.  
@@ -413,7 +413,7 @@ HRESULT WriteToStream(IStream* pStream);
   
 ### Parameters  
  *pStream*  
- [in] A pointer to the [IStream](https://msdn.microsoft.com/library/windows/desktop/aa380034) interface on a stream.  
+ [in] A pointer to the [IStream](/windows/desktop/api/objidl/nn-objidl-istream) interface on a stream.  
   
 ### Return Value  
  A standard HRESULT value.  

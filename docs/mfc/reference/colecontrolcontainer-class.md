@@ -72,7 +72,7 @@ class COleControlContainer : public CCmdTarget
 |[COleControlContainer::m_siteMap](#m_sitemap)|The site map.|  
   
 ## Remarks  
- This is done by providing support for one or more ActiveX control sites (implemented by `COleControlSite`). `COleControlContainer` fully implements the [IOleInPlaceFrame](https://msdn.microsoft.com/library/windows/desktop/ms692770) and [IOleContainer](https://msdn.microsoft.com/library/windows/desktop/ms690103) interfaces, allowing the contained ActiveX controls to fulfill their qualifications as in-place items.  
+ This is done by providing support for one or more ActiveX control sites (implemented by `COleControlSite`). `COleControlContainer` fully implements the [IOleInPlaceFrame](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceframe) and [IOleContainer](/windows/desktop/api/oleidl/nn-oleidl-iolecontainer) interfaces, allowing the contained ActiveX controls to fulfill their qualifications as in-place items.  
   
  Commonly, this class is used in conjunction with `COccManager` and `COleControlSite` to implement a custom ActiveX control container, with custom sites for one or more ActiveX controls.  
   

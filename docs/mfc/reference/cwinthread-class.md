@@ -139,7 +139,7 @@ virtual int ExitInstance();
 ```  
   
 ### Return Value  
- The thread's exit code; 0 indicates no errors, and values greater than 0 indicate an error. This value can be retrieved by calling [GetExitCodeThread](https://msdn.microsoft.com/library/windows/desktop/ms683190).  
+ The thread's exit code; 0 indicates no errors, and values greater than 0 indicate an error. This value can be retrieved by calling [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).  
   
 ### Remarks  
  Do not call this member function from anywhere but within the `Run` member function. This member function is used only in user-interface threads.  
@@ -189,7 +189,7 @@ int GetThreadPriority();
   
 - THREAD_PRIORITY_IDLE  
   
- For more information on these priorities, see [SetThreadPriority](https://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
+ For more information on these priorities, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.  
   
 ##  <a name="initinstance"></a>  CWinThread::InitInstance  
  `InitInstance` must be overridden to initialize each new instance of a user-interface thread.  
@@ -462,10 +462,10 @@ virtual int Run();
 ```  
   
 ### Return Value  
- An **int** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](https://msdn.microsoft.com/library/windows/desktop/ms683190).  
+ An **int** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).  
   
 ### Remarks  
- `Run` acquires and dispatches Windows messages until the application receives a [WM_QUIT](https://msdn.microsoft.com/library/windows/desktop/ms632641) message. If the thread's message queue currently contains no messages, `Run` calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) for standard keyboard translation. Finally, the [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows function is called.  
+ `Run` acquires and dispatches Windows messages until the application receives a [WM_QUIT](/windows/desktop/winmsg/wm-quit) message. If the thread's message queue currently contains no messages, `Run` calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) for standard keyboard translation. Finally, the [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows function is called.  
   
  `Run` is rarely overridden, but you can override it to implement special behavior.  
   
@@ -496,7 +496,7 @@ BOOL SetThreadPriority(int nPriority);
   
 - THREAD_PRIORITY_IDLE  
   
- For more information on these priorities, see [SetThreadPriority](https://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
+ For more information on these priorities, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if function was successful; otherwise 0.  

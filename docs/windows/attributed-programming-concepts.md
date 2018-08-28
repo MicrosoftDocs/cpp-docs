@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 Visual C++ includes a variety of material to help you use attributes in your programs. Attributes, a new feature in Visual C++, are designed to simplify COM programming and .NET Framework common language runtime development. When you include attributes in your source files, the compiler works with provider dynamic-link libraries (DLL) to insert code or modify the code in the generated object files. There are attributes that aid in the creation of .idl files, interfaces, type libraries, and other COM elements. In the integrated development environment (IDE), attributes are supported by the wizards and by the Properties window.
 
-While attributes eliminate some of the detailed coding needed to write COM objects, you need a background in [COM fundamentals](https://msdn.microsoft.com/library/windows/desktop/ms694363) to best use them.
+While attributes eliminate some of the detailed coding needed to write COM objects, you need a background in [COM fundamentals](/windows/desktop/com/the-component-object-model) to best use them.
 
 ## In This Section
 

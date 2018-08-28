@@ -21,21 +21,21 @@ A quick way to create an ActiveX control, or other specialized control, is to su
   
 |Message sent by the control|Message reflected to the control|  
 |---------------------------------|--------------------------------------|  
-|[WM_COMMAND](https://msdn.microsoft.com/library/windows/desktop/ms647591)|OCM_COMMAND|  
-|[WM_CTLCOLORBTN](https://msdn.microsoft.com/library/windows/desktop/bb761849)|OCM_CTLCOLORBTN|  
-|[WM_CTLCOLOREDIT](https://msdn.microsoft.com/library/windows/desktop/bb761691)|OCM_CTLCOLOREDIT|  
-|[WM_CTLCOLORDLG](https://msdn.microsoft.com/library/windows/desktop/ms645417)|OCM_CTLCOLORDLG|  
-|[WM_CTLCOLORLISTBOX](https://msdn.microsoft.com/library/windows/desktop/bb761360)|OCM_CTLCOLORLISTBOX|  
-|[WM_CTLCOLORSCROLLBAR](https://msdn.microsoft.com/library/windows/desktop/bb787573)|OCM_CTLCOLORSCROLLBAR|  
-|[WM_CTLCOLORSTATIC](https://msdn.microsoft.com/library/windows/desktop/bb787524)|OCM_CTLCOLORSTATIC|  
-|[WM_DRAWITEM](https://msdn.microsoft.com/library/windows/desktop/bb775923)|OCM_DRAWITEM|  
-|[WM_MEASUREITEM](https://msdn.microsoft.com/library/windows/desktop/bb775925)|OCM_MEASUREITEM|  
-|[WM_DELETEITEM](https://msdn.microsoft.com/library/windows/desktop/bb761362)|OCM_DELETEITEM|  
-|[WM_VKEYTOITEM](https://msdn.microsoft.com/library/windows/desktop/bb761364)|OCM_VKEYTOITEM|  
-|[WM_CHARTOITEM](https://msdn.microsoft.com/library/windows/desktop/bb761358)|OCM_CHARTOITEM|  
-|[WM_COMPAREITEM](https://msdn.microsoft.com/library/windows/desktop/bb775921)|OCM_COMPAREITEM|  
-|[WM_HSCROLL](https://msdn.microsoft.com/library/windows/desktop/bb787575)|OCM_HSCROLL|  
-|[WM_VSCROLL](https://msdn.microsoft.com/library/windows/desktop/bb787577)|OCM_VSCROLL|  
+|[WM_COMMAND](/windows/desktop/menurc/wm-command)|OCM_COMMAND|  
+|[WM_CTLCOLORBTN](/windows/desktop/Controls/wm-ctlcolorbtn)|OCM_CTLCOLORBTN|  
+|[WM_CTLCOLOREDIT](/windows/desktop/Controls/wm-ctlcoloredit)|OCM_CTLCOLOREDIT|  
+|[WM_CTLCOLORDLG](/windows/desktop/dlgbox/wm-ctlcolordlg)|OCM_CTLCOLORDLG|  
+|[WM_CTLCOLORLISTBOX](/windows/desktop/Controls/wm-ctlcolorlistbox)|OCM_CTLCOLORLISTBOX|  
+|[WM_CTLCOLORSCROLLBAR](/windows/desktop/Controls/wm-ctlcolorscrollbar)|OCM_CTLCOLORSCROLLBAR|  
+|[WM_CTLCOLORSTATIC](/windows/desktop/Controls/wm-ctlcolorstatic)|OCM_CTLCOLORSTATIC|  
+|[WM_DRAWITEM](/windows/desktop/Controls/wm-drawitem)|OCM_DRAWITEM|  
+|[WM_MEASUREITEM](/windows/desktop/Controls/wm-measureitem)|OCM_MEASUREITEM|  
+|[WM_DELETEITEM](/windows/desktop/Controls/wm-deleteitem)|OCM_DELETEITEM|  
+|[WM_VKEYTOITEM](/windows/desktop/Controls/wm-vkeytoitem)|OCM_VKEYTOITEM|  
+|[WM_CHARTOITEM](/windows/desktop/Controls/wm-chartoitem)|OCM_CHARTOITEM|  
+|[WM_COMPAREITEM](/windows/desktop/Controls/wm-compareitem)|OCM_COMPAREITEM|  
+|[WM_HSCROLL](/windows/desktop/Controls/wm-hscroll)|OCM_HSCROLL|  
+|[WM_VSCROLL](/windows/desktop/Controls/wm-vscroll)|OCM_VSCROLL|  
 |[WM_PARENTNOTIFY](/previous-versions/windows/desktop/inputmsg/wm-parentnotify)|OCM_PARENTNOTIFY|  
 |[WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)|OCM_NOTIFY|  
   

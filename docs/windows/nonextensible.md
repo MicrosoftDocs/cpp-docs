@@ -24,7 +24,7 @@ Specifies that the `IDispatch` implementation includes only the properties and m
 
 ## Remarks
 
-The **nonextensible** C++ attribute has the same functionality as the [nonextensible](https://msdn.microsoft.com/library/windows/desktop/aa367120) MIDL attribute.
+The **nonextensible** C++ attribute has the same functionality as the [nonextensible](/windows/desktop/Midl/nonextensible) MIDL attribute.
 
 Use of **nonextensible** also requires the [oleautomation](../windows/oleautomation.md) attribute.
 

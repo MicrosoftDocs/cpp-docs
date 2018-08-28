@@ -39,10 +39,10 @@ class ATL_NO_VTABLE IRowsetCreatorImpl
 |[SetSite](#setsite)|Sets the site that contains the rowset object.|  
   
 ## Remarks  
- This class inherits from [IObjectWithSite](https://msdn.microsoft.com/library/windows/desktop/ms693765) and overrides [IObjectWithSite::SetSite](https://msdn.microsoft.com/library/windows/desktop/ms683869). When a provider command or session object creates a rowset, it calls `QueryInterface` on the rowset object looking for `IObjectWithSite` and calls `SetSite` passing the rowset object's `IUnkown` interface as the site interface.  
+ This class inherits from [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) and overrides [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite). When a provider command or session object creates a rowset, it calls `QueryInterface` on the rowset object looking for `IObjectWithSite` and calls `SetSite` passing the rowset object's `IUnkown` interface as the site interface.  
 
 ## <a name="setsite"></a> IRowsetCreatorImpl::SetSite
-Sets the site that contains the rowset object. For more information, see [IObjectWithSite::SetSite](https://msdn.microsoft.com/library/windows/desktop/ms683869).  
+Sets the site that contains the rowset object. For more information, see [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite).  
   
 ### Syntax  
   

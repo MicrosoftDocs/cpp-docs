@@ -134,7 +134,7 @@ static BOOL __stdcall IsKeyHandled(
 |-|-|  
 |Parameter|Description|  
 |[in] *nKey*|The key to check.|  
-|[in] *fVirt*|Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](https://msdn.microsoft.com/library/windows/desktop/ms646340).|  
+|[in] *fVirt*|Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/desktop/api/winuser/ns-winuser-tagaccel).|  
 |[in] *pWndFrame*|A frame window. This method determines whether a shortcut key is handled in this frame.|  
 |[in] *bIsDefaultFrame*|A Boolean parameter that indicates whether *pWndFrame* is the default frame window.|  
   

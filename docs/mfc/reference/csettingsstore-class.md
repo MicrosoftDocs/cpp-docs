@@ -103,7 +103,7 @@ CSettingsStore(
 ### Remarks  
  If *bAdmin* is set to TRUE, the `m_hKey` member variable is set to **HKEY_LOCAL_MACHINE**. If you set *bAdmin* to FALSE, `m_hKey` is set to **HKEY_CURRENT_USER**.  
   
- The security access depends on the *bReadOnly* parameter. If *bReadonly* is FALSE, the security access will be set to **KEY_ALL_ACCESS**. If *bReadyOnly* is TRUE, the security access will be set to a combination of **KEY_QUERY_VALUE, KEY_NOTIFY** and **KEY_ENUMERATE_SUB_KEYS**. For more information about security access together with the registry, see [Registry Key Security and Access Rights](https://msdn.microsoft.com/library/windows/desktop/ms724878).  
+ The security access depends on the *bReadOnly* parameter. If *bReadonly* is FALSE, the security access will be set to **KEY_ALL_ACCESS**. If *bReadyOnly* is TRUE, the security access will be set to a combination of **KEY_QUERY_VALUE, KEY_NOTIFY** and **KEY_ENUMERATE_SUB_KEYS**. For more information about security access together with the registry, see [Registry Key Security and Access Rights](/windows/desktop/SysInfo/registry-key-security-and-access-rights).  
   
  The destructor for `CSettingsStore` releases `m_hKey` automatically.  
   

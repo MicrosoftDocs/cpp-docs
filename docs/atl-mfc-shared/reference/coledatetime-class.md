@@ -178,7 +178,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
  A `SYSTEMTIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object.  
   
  *filetimeSrc*  
- A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](https://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
+ A `FILETIME` structure to be converted to a date/time value and copied into the new `COleDateTime` object. Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](/windows/desktop/SysInfo/file-times) in the Windows SDK for more information.  
   
  *nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*  
  Indicate the date and time values to be copied into the new `COleDateTime` object.  
@@ -217,7 +217,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 - `COleDateTime(` *systimeSrc* **)** Constructs a `COleDateTime` object from a `SYSTEMTIME` value.  
   
-- `COleDateTime(` `filetimeSrc` **)** Constructs a `COleDateTime` object from a `FILETIME` value. . Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](https://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
+- `COleDateTime(` `filetimeSrc` **)** Constructs a `COleDateTime` object from a `FILETIME` value. . Note that `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a local time in the structure, your results will be incorrect. See [File Times](/windows/desktop/SysInfo/file-times) in the Windows SDK for more information.  
   
 - `COleDateTime(` `nYear`, `nMonth`, `nDay`, `nHour`, `nMin`, `nSec` **)** Constructs a `COleDateTime` object from the specified numerical values.  
   
@@ -255,7 +255,7 @@ CString Format(UINT nFormatID) const;
 - VAR_DATEVALUEONLY Ignore the time portion during parsing.  
   
  *lcid*  
- Indicates locale ID to use for the conversion. For more information about language identifiers, see [Language Identifiers](https://msdn.microsoft.com/library/windows/desktop/dd318691).  
+ Indicates locale ID to use for the conversion. For more information about language identifiers, see [Language Identifiers](/windows/desktop/Intl/language-identifiers).  
   
  *lpszFormat*  
  A formatting string similar to the `printf` formatting string. Each formatting code, preceded by a percent ( `%`) sign, is replaced by the corresponding `COleDateTime` component. Other characters in the formatting string are copied unchanged to the returned string. See the run-time function [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for more information. The value and meaning of the formatting codes for `Format` are:  
@@ -737,7 +737,7 @@ COleDateTime& operator=(const UDATE& udate) throw();
   
 - **operator =(** `udate` **)** The `UDATE` value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; if unsuccessful, it is set to invalid. A `UDATE` structure represents an "unpacked" date. See the function [VarDateFromUdate](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate) for more details.  
   
-- **operator =(** `filetimeSrc` **)** The [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. See [File Times](https://msdn.microsoft.com/library/windows/desktop/ms724290) in the Windows SDK for more information.  
+- **operator =(** `filetimeSrc` **)** The [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) value is converted and copied into this `COleDateTime` object. If the conversion is successful, the status of this object is set to valid; otherwise it is set to invalid. `FILETIME` uses Universal Coordinated Time (UTC), so if you pass a UTC time in the structure, your results will be converted from UTC time to local time, and will be stored as variant time. This behavior is the same as in Visual C++ 6.0 and Visual C++.NET 2003 SP2. See [File Times](/windows/desktop/SysInfo/file-times) in the Windows SDK for more information.  
   
  For more information, see the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entry in the Windows SDK.  
   

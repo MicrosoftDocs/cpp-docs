@@ -235,6 +235,6 @@ HRESULT Revoke() throw();
   
 ## See Also  
  [Free Threaded Marshaler](../../atl/atl-and-the-free-threaded-marshaler.md)   
- [Accessing Interfaces Across Apartments](https://msdn.microsoft.com/library/windows/desktop/ms682353)   
- [When to Use the Global Interface Table](https://msdn.microsoft.com/library/windows/desktop/ms693729)   
+ [Accessing Interfaces Across Apartments](/windows/desktop/com/accessing-interfaces-across-apartments)   
+ [When to Use the Global Interface Table](/windows/desktop/com/when-to-use-the-global-interface-table)   
  [Class Overview](../../atl/atl-class-overview.md)

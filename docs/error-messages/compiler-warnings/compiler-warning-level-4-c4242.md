@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
   
  This warning is off by default. See [Compiler Warnings That Are Off by Default](../../preprocessor/compiler-warnings-that-are-off-by-default.md) for more information.  
   
- For additional information on C4242, see [Common Compiler Errors](https://msdn.microsoft.com/library/windows/desktop/aa384160).  
+ For additional information on C4242, see [Common Compiler Errors](/windows/desktop/WinProg64/common-compiler-errors).  
   
  The following sample generates C4242:  
   

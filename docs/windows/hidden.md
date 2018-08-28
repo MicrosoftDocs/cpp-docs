@@ -24,7 +24,7 @@ Indicates that the item exists but should not be displayed in a user-oriented br
 
 ## Remarks
 
-The **hidden** C++ attribute has the same functionality as the [hidden](https://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL attribute.
+The **hidden** C++ attribute has the same functionality as the [hidden](/windows/desktop/Midl/hidden) MIDL attribute.
 
 ## Example
 

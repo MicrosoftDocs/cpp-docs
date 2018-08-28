@@ -85,7 +85,7 @@ CWinThread* AfxBeginThread(
  Parameter to be passed to the controlling function as shown in the parameter to the function declaration in *pfnThreadProc*.  
   
  *nPriority*  
- The desired priority of the thread. For a full list and description of the available priorities, see [SetThreadPriority](https://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
+ The desired priority of the thread. For a full list and description of the available priorities, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.  
   
  *nStackSize*  
  Specifies the size in bytes of the stack for the new thread. If 0, the stack size defaults to the same size stack as the creating thread.  
@@ -167,7 +167,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
  *lpszName*  
  A pointer to a string containing the resource ID.    
  *lpszType*  
- A pointer to the type of resource. For a list of resource types, see [FindResource](https://msdn.microsoft.com/library/windows/desktop/ms648042) in the Windows SDK.  
+ A pointer to the type of resource. For a list of resource types, see [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) in the Windows SDK.  
    
 ### Return Value  
  A handle to the module that contains the resource.  
@@ -591,7 +591,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
  Specifies a handle to the cursor resource to be installed in each window created from the window class. If you use the default of **0**, you will get the standard IDC_ARROW cursor.  
   
  *hbrBackground*  
- Specifies a handle to the brush resource to be installed in each window created from the window class. If you use the default of **0**, you will have a NULL background brush, and your window will, by default, not erase its background while processing [WM_ERASEBKGND](https://msdn.microsoft.com/library/windows/desktop/ms648055).  
+ Specifies a handle to the brush resource to be installed in each window created from the window class. If you use the default of **0**, you will have a NULL background brush, and your window will, by default, not erase its background while processing [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd).  
   
  *hIcon*  
  Specifies a handle to the icon resource to be installed in each window created from the window class. If you use the default of **0**, you will get the standard, waving-flag Windows logo icon.  

@@ -1180,7 +1180,7 @@ virtual BOOL OnMenuButtonToolHitTest(
  The toolbar button.  
   
  [out] *pTI*  
- Pointer to a [TOOLINFO](https://msdn.microsoft.com/library/windows/desktop/bb760256) structure.  
+ Pointer to a [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) structure.  
   
 ### Return Value  
  TRUE if the application fills the *pTI* parameter. The default implementation returns FALSE.  
@@ -1629,7 +1629,7 @@ virtual void WinHelp(
  Specifies data as required for the type of help specified by *nCmd*.  
   
  [in] *nCmd*  
- Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](https://msdn.microsoft.com/library/windows/desktop/bb762267) in the Windows SDK.  
+ Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp Function](/windows/desktop/api/winuser/nf-winuser-winhelpa) in the Windows SDK.  
   
 ### Remarks  
  This method overrides [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp).  

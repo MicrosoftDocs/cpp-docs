@@ -31,7 +31,7 @@ One or more interfaces that you specify when you apply the source attribute to a
 
 ## Remarks
 
-The **source** C++ attribute has the same functionality as the [source](https://msdn.microsoft.com/library/windows/desktop/aa367166) MIDL attribute.
+The **source** C++ attribute has the same functionality as the [source](/windows/desktop/Midl/source) MIDL attribute.
 
 You can use the [default](../windows/default-cpp.md) attribute to specify the default source interface for an object.
 

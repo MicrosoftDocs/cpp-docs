@@ -193,7 +193,7 @@ BOOL DrawTextOnGlass(
  [in] *hTheme*  
  Handle to the theme data of a window, or NULL. The framework uses the specified theme to draw the text if this parameter is not NULL and themes are supported. Otherwise, the framework does not use a theme to draw the text.  
   
- Use the [OpenThemeData](https://msdn.microsoft.com/library/windows/desktop/bb759821) method to create an HTHEME.  
+ Use the [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) method to create an HTHEME.  
   
  [in] *pDC*  
  Pointer to a device context.  
@@ -213,7 +213,7 @@ BOOL DrawTextOnGlass(
  [in] *dwFlags*  
  A bitwise combination (OR) of flags that specify how the specified text is drawn.  
   
- If the *hTheme* parameter is `NULL` or if themes are not supported and enabled, the *nFormat* parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method describes the valid flags. If themes are supported, the *dwFlags* parameter of the [DrawThemeTextEx](https://msdn.microsoft.com/library/windows/desktop/bb773317) method describes the valid flags.  
+ If the *hTheme* parameter is `NULL` or if themes are not supported and enabled, the *nFormat* parameter of the [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) method describes the valid flags. If themes are supported, the *dwFlags* parameter of the [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) method describes the valid flags.  
   
  [in] *nGlowSize*  
  The size of a glow effect that is drawn on the background before drawing the specified text. The default value is 0.  
@@ -225,16 +225,16 @@ BOOL DrawTextOnGlass(
  TRUE if a theme is used to draw the specified text; otherwise, FALSE.  
   
 ### Remarks  
- A theme defines the visual style of an application. A theme is not used to draw the text if the *hTheme* parameter is NULL, or if the [DrawThemeTextEx](https://msdn.microsoft.com/library/windows/desktop/bb773317) method is not supported, or if [Desktop Window Manager](https://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is disabled.  
+ A theme defines the visual style of an application. A theme is not used to draw the text if the *hTheme* parameter is NULL, or if the [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) method is not supported, or if [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) (DWM) composition is disabled.  
   
 ### See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
- [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449)   
+ [COLORREF](/windows/desktop/gdi/colorref)   
  [Parts and States](https://msdn.microsoft.com/library/windows/desktop/bb773210)   
  [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext)   
- [DrawThemeTextEx](https://msdn.microsoft.com/library/windows/desktop/bb773317)   
- [Desktop Window Manager](https://msdn.microsoft.com/library/windows/desktop/aa969540)   
- [Enable and Control DWM Composition](https://msdn.microsoft.com/library/windows/desktop/aa969538)
+ [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)   
+ [Desktop Window Manager](/windows/desktop/dwm/dwm-overview)   
+ [Enable and Control DWM Composition](/windows/desktop/dwm/composition-ovw)
 
 ## <a name="enableaccessibilitysupport"></a> AFX_GLOBAL_DATA::EnableAccessibilitySupport
 Enables or disables Microsoft Active Accessibility support.  
@@ -317,13 +317,13 @@ COLORREF GetColor(int nColor);
  The RGB color value of the specified user interface element. For more information, see Remarks.  
   
 ### Remarks  
- If the *nColor* parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](https://msdn.microsoft.com/library/windows/desktop/dd144927) method, which returns NULL if the color is not supported.  
+ If the *nColor* parameter is out of range, the return value is zero. Because zero is also a valid RGB value, you cannot use this method to determine whether a system color is supported by the current operating system. Instead, use the [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) method, which returns NULL if the color is not supported.  
   
 ### See Also  
 
  [GetSysColor Function](https://msdn.microsoft.com/library/windows/desktop/ms724371)   
- [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449)   
- [GetSysColorBrush](https://msdn.microsoft.com/library/windows/desktop/dd144927)
+ [COLORREF](/windows/desktop/gdi/colorref)   
+ [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)
 
 ## <a name="getdirect2dfactory"></a> AFX_GLOBAL_DATA::GetDirect2dFactory
  Returns a pointer to the ID2D1Factory interface that is stored in the global data. If the interface is not initialized, it is created and has the default parameters.  
@@ -471,7 +471,7 @@ BOOL IsD2DInitialized() const;
  TRUE if D2D was initialized; otherwise FALSE.  
   
 ## <a name="isdwmcompositionenabled"></a> AFX_GLOBAL_DATA::IsDwmCompositionEnabled
-Provides a simple way to call the Windows [DwmIsCompositionEnabled](https://msdn.microsoft.com/library/windows/desktop/aa969518) method.  
+Provides a simple way to call the Windows [DwmIsCompositionEnabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) method.  
   
   
 ```  
@@ -479,11 +479,11 @@ BOOL IsDwmCompositionEnabled();
 ```  
   
 ### Return Value  
- TRUE if [Desktop Window Manager](https://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) composition is enabled; otherwise, FALSE.  
+ TRUE if [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) (DWM) composition is enabled; otherwise, FALSE.  
   
 ### See Also    
- [Desktop Window Manager](https://msdn.microsoft.com/library/windows/desktop/aa969540)   
- [Enable and Control DWM Composition](https://msdn.microsoft.com/library/windows/desktop/aa969538)
+ [Desktop Window Manager](/windows/desktop/dwm/dwm-overview)   
+ [Enable and Control DWM Composition](/windows/desktop/dwm/composition-ovw)
 
 ## <a name="ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
  Indicates whether images are currently displayed in high contrast.    
@@ -658,7 +658,7 @@ BOOL Resume();
  TRUE if this method succeeds; otherwise, FALSE. In debug mode, this method asserts if this method is unsuccessful.  
   
 ### Remarks  
- This method is called when the framework receives the [WM_POWERBROADCAST](https://msdn.microsoft.com/library/windows/desktop/aa373247) message.  
+ This method is called when the framework receives the [WM_POWERBROADCAST](/windows/desktop/Power/wm-powerbroadcast) message.  
   
 ## <a name="setlayeredattrib"></a> AFX_GLOBAL_DATA::SetLayeredAttrib
 Provides a simple way to call the Windows [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540) method.  
@@ -677,7 +677,7 @@ BOOL SetLayeredAttrib(
  Handle to the layered window.  
   
  [in] *crKey*  
- The transparency color key that the [Desktop Window Manager](https://msdn.microsoft.com/library/windows/desktop/aa969540) uses to compose the layered window.  
+ The transparency color key that the [Desktop Window Manager](/windows/desktop/dwm/dwm-overview) uses to compose the layered window.  
   
  [in] *bAlpha*  
  The alpha value that is used to describe the opacity of the layered window.  
@@ -689,7 +689,7 @@ BOOL SetLayeredAttrib(
  TRUE if this method succeeds; otherwise, FALSE.   
  
 ### See Also   
- [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449)   
+ [COLORREF](/windows/desktop/gdi/colorref)   
  [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540)
 
 ## <a name="setmenufont"></a> AFX_GLOBAL_DATA::SetMenuFont

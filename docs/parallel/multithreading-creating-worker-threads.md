@@ -30,7 +30,7 @@ There are two overloaded versions of `AfxBeginThread`: one that can only create 
   
 - The parameter to be passed to the controlling function.  
   
-- (Optional) The desired priority of the thread. The default is normal priority. For more information about the available priority levels, see [SetThreadPriority](https://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
+- (Optional) The desired priority of the thread. The default is normal priority. For more information about the available priority levels, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.  
   
 - (Optional) The desired stack size for the thread. The default is the same size stack as the creating thread.  
   

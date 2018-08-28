@@ -140,7 +140,7 @@ void InitializeFont(
   
 ### Parameters  
  *pFontDesc*  
- Pointer to a font description structure ( [FONTDESC](https://msdn.microsoft.com/library/windows/desktop/ms692782)) that specifies the font's characteristics.  
+ Pointer to a font description structure ( [FONTDESC](/windows/desktop/api/olectl/ns-olectl-tagfontdesc)) that specifies the font's characteristics.  
   
  *pFontDispAmbient*  
  Pointer to the container's ambient Font property.  
@@ -168,7 +168,7 @@ void QueryTextMetrics(LPTEXTMETRIC lptm);
   
 ### Parameters  
  *lptm*  
- A pointer to a [TEXTMETRIC](https://msdn.microsoft.com/library/windows/desktop/dd145132) structure that will receive the information.  
+ A pointer to a [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure that will receive the information.  
   
 ##  <a name="releasefont"></a>  CFontHolder::ReleaseFont  
  This function disconnects the `CFontHolder` object from its `IFont` interface.  

@@ -20,7 +20,7 @@ These functions support manipulation of URLs.
 |[AtlGetDefaultUrlPort](#atlgetdefaulturlport)|Gets the default port number associated with a particular Internet protocol or scheme.|  
 |[AtlIsUnsafeUrlChar](#atlisunsafeurlchar)|Determines whether a character is safe for use in a URL.|  
 |[AtlUnescapeUrl](#atlunescapeurl)|Converts escaped characters back to their original values.|  
-|[RGBToHtml](#rgbtohtml)|Converts a [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value to the HTML text corresponding to that color value.|
+|[RGBToHtml](#rgbtohtml)|Converts a [COLORREF](/windows/desktop/gdi/colorref) value to the HTML text corresponding to that color value.|
 |[SystemTimeToHttpDate](#systemtimetohttpdate)|Call this function to convert a system time to a string in a format suitable for using in HTTP headers.|
 
 ## Requirements  
@@ -62,10 +62,10 @@ inline BOOL AtlCanonicalizeUrl(
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- Behaves like the current version of [InternetCanonicalizeUrl](https://msdn.microsoft.com/library/windows/desktop/aa384342) but does not require WinInet or Internet Explorer to be installed.  
+ Behaves like the current version of [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla) but does not require WinInet or Internet Explorer to be installed.  
   
 ### See Also  
- [InternetCanonicalizeUrl](https://msdn.microsoft.com/library/windows/desktop/aa384342)
+ [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)
 
  ## <a name="atlcombineurl"></a> AtlCombineUrl
  Call this function to combine a base URL and a relative URL into a single, canonical URL.  
@@ -99,7 +99,7 @@ inline BOOL AtlCombineUrl(
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- Behaves like the current version of [InternetCombineUrl](https://msdn.microsoft.com/library/windows/desktop/aa384355) but does not require WinInet or Internet Explorer to be installed.  
+ Behaves like the current version of [InternetCombineUrl](/windows/desktop/api/wininet/nf-wininet-internetcombineurla) but does not require WinInet or Internet Explorer to be installed.  
   
 ## <a name="atlescapeurl"></a> AtlEscapeUrl
  Call this function to convert all unsafe characters to escape sequences.  
@@ -207,7 +207,7 @@ inline BOOL AtlUnescapeUrl(
  Reverses the conversion process applied by [AtlEscapeUrl](#atlescapeurl).  
   
 ## <a name="rgbtohtml"></a> RGBToHtml
-Converts a [COLORREF](https://msdn.microsoft.com/library/windows/desktop/dd183449) value to the HTML text corresponding to that color value.  
+Converts a [COLORREF](/windows/desktop/gdi/colorref) value to the HTML text corresponding to that color value.  
   
 ```  
 bool inline RGBToHtml(  
