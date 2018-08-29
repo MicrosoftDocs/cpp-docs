@@ -19,5 +19,5 @@ The COM technique of marshaling allows interfaces exposed by an object in one pr
   
 ## See Also  
  [Introduction to COM](../atl/introduction-to-com.md)   
- [Marshaling Details](http://msdn.microsoft.com/library/windows/desktop/ms692621)
+ [Marshaling Details](/windows/desktop/com/marshaling-details)
 

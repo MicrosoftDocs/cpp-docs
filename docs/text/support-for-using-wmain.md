@@ -29,4 +29,4 @@ wmain( int argc, wchar_t *argv[ ], wchar_t *envp[ ] )
 ## See Also  
  [Support for Unicode](../text/support-for-unicode.md)   
  [Unicode Programming Summary](../text/unicode-programming-summary.md)   
- [WinMain Function](http://msdn.microsoft.com/library/windows/desktop/ms633559)
+ [WinMain Function](https://msdn.microsoft.com/library/windows/desktop/ms633559)

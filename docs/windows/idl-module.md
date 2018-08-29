@@ -53,10 +53,10 @@ The ID of a help topic in an .hlp or .chm file.
 The Help ID for this type library.
 
 *hidden* (optional)  
-A parameter that prevents the library from being displayed. See the [hidden](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL attribute for more information.
+A parameter that prevents the library from being displayed. See the [hidden](/windows/desktop/Midl/hidden) MIDL attribute for more information.
 
 *restricted*  (optional)  
-Members of the library cannot be arbitrarily called. See the [restricted](http://msdn.microsoft.com/library/windows/desktop/aa367157) MIDL attribute for more information.
+Members of the library cannot be arbitrarily called. See the [restricted](/windows/desktop/Midl/restricted) MIDL attribute for more information.
 
 *function declaration*  
 The function that you will define.
@@ -65,7 +65,7 @@ The function that you will define.
 
 The **idl_module** C++ attribute lets you specify the entry point in a .dll file, which allows you to import from a .dll file.
 
-The **idl_module** attribute has functionality similar to the [module](http://msdn.microsoft.com/library/windows/desktop/aa367099) MIDL attribute.
+The **idl_module** attribute has functionality similar to the [module](/windows/desktop/Midl/module) MIDL attribute.
 
 You can export anything from a COM object that you can export from a .dll file by putting a DLL entry point in the library block of an .idl file.
 

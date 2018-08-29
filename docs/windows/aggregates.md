@@ -94,6 +94,6 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 [COM Attributes](../windows/com-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558)  
-[Aggregatable](http://msdn.microsoft.com/library/windows/desktop/aa366721)  
+[Aggregation](/windows/desktop/com/aggregation)  
+[Aggregatable](/windows/desktop/Midl/aggregatable)  
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)  

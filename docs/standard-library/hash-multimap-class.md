@@ -31,16 +31,16 @@ class hash_multimap
 
 ### Parameters
 
-*Key*
+*Key*<br/>
  The key data type to be stored in the hash_multimap.
 
-*Type*
+*Type*<br/>
  The element data type to be stored in the hash_multimap.
 
-*Traits*
+*Traits*<br/>
  The type that includes two function objects, one of class *Traits* that is able to compare two element values as sort keys to determine their relative order and a hash function that is a unary predicate mapping key values of the elements to unsigned integers of type `size_t`. This argument is optional, and the `hash_compare<Key, less<Key>>` is the default value.
 
-*Allocator*
+*Allocator*<br/>
  The type that represents the stored allocator object that encapsulates details about the hash_multimap's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<pair <const Key, Type>>`.
 
 ## Remarks
@@ -387,11 +387,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 A type `const_iterator` cannot be used to modify the value of an element.
 
-The `const_iterator` defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***constKey, Type***>*. The value of the key is available through the first member pair, and the value of the mapped element is available through the second member of the pair.
+The `const_iterator` defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair<const Key, Type>`. The value of the key is available through the first member pair, and the value of the mapped element is available through the second member of the pair.
 
 To dereference a `const_iterator` `cIter` pointing to an element in a hash_multimap, use the `->` operator.
 
-To access the value of the key for the element, use `cIter` -> **first**, which is equivalent to (\* `cIter`). **first**. To access the value of the mapped datum for the element, use `cIter` -> **second**, which is equivalent to (\* `cIter`). **first**.
+To access the value of the key for the element, use `cIter->first`, which is equivalent to `(*cIter).first`. To access the value of the mapped datum for the element, use `cIter->second`, which is equivalent to `(*cIter).second`.
 
 ### Example
 
@@ -485,11 +485,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 A type `const_reverse_iterator` cannot modify the value of an element and is use to iterate through the hash_multimap in reverse.
 
-The `const_reverse_iterator` defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key, Type>**, whose first member is the key to the element and whose second member is the mapped datum held by the element.
+The `const_reverse_iterator` defined by hash_multimap points to objects of [value_type](#value_type), which are of type `pair<const Key, Type>`, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
 To dereference a `const_reverse_iterator` `crIter` pointing to an element in a hash_multimap, use the `->` operator.
 
-To access the value of the key for the element, use `crIter` -> **first**, which is equivalent to (\* `crIter`). **first**. To access the value of the mapped datum for the element, use `crIter` -> **second**, which is equivalent to (\* `crIter`). **first**.
+To access the value of the key for the element, use `crIter->first`, which is equivalent to `(*crIter).first`. To access the value of the mapped datum for the element, use `crIter->second`, which is equivalent to `(*crIter).second`.
 
 ### Example
 
@@ -508,7 +508,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key of the elements to be matched from the hash_multimap.
 
 ### Return Value
@@ -1004,7 +1004,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
@@ -1095,16 +1095,16 @@ size_type erase(const key_type& key);
 
 ### Parameters
 
-*_Where*
+*_Where*<br/>
  Position of the element to be removed from the hash_multimap.
 
-*first*
+*first*<br/>
  Position of the first element removed from the hash_multimap.
 
-*last*
+*last*<br/>
  Position just beyond the last element removed from the hash_multimap.
 
-*key*
+*key*<br/>
  The key of the elements to be removed from the hash_multimap.
 
 ### Return Value
@@ -1219,7 +1219,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key to be matched by the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
@@ -1670,7 +1670,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value
@@ -2224,7 +2224,7 @@ void swap(hash_multimap& right);
 
 ### Parameters
 
-*right*
+*right*<br/>
  The hash_multimap providing the elements to be swapped or the hash_multimap whose elements are to be exchanged with those of the hash_multimap.
 
 ### Remarks
@@ -2298,7 +2298,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the hash_multimap being searched.
 
 ### Return Value

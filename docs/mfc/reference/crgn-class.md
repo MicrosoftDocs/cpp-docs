@@ -627,7 +627,7 @@ operator HRGN() const;
 ### Remarks  
  This operator is a casting operator, which supports direct use of an HRGN object.  
   
- For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
+ For more information about using graphic objects, see the article [Graphic Objects](/windows/desktop/gdi/graphic-objects) in the Windows SDK.  
   
 ##  <a name="ptinregion"></a>  CRgn::PtInRegion  
  Checks whether the point given by *x* and *y* is in the region stored in the `CRgn` object.  

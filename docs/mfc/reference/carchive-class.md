@@ -504,7 +504,7 @@ CRuntimeClass* ReadClass(
   
  Your runtime class must use [DECLARE_SERIAL](../../mfc/reference/run-time-object-model-services.md#declare_serial) and [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial); otherwise, `ReadClass` will throw a [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   
- If *pSchema* is NULL, the schema of the stored class can be retrieved by calling [CArchive::GetObjectSchema](#getobjectschema); otherwise, **\****pSchema* will contain the schema of the run-time class that was previously stored.  
+ If *pSchema* is NULL, the schema of the stored class can be retrieved by calling [CArchive::GetObjectSchema](#getobjectschema); otherwise, <strong>\*</strong>*pSchema* will contain the schema of the run-time class that was previously stored.  
   
  You can use [SerializeClass](#serializeclass) instead of `ReadClass`, which handles both reading and writing of the class reference.  
   

@@ -450,7 +450,7 @@ C++ AMP includes a graphics library that is designed for accelerated graphics pr
   
 - [writeonly_texture_view Class](../../parallel/amp/reference/writeonly-texture-view-class.md): Provides write-only access to any texture.  
   
-- [Short Vector Library](http://msdn.microsoft.com/en-us/4c4f5bed-c396-493b-a238-c347563f645f): Defines a set of short vector types of length 2, 3, and 4 that are based on **int**, `uint`, **float**, **double**, [norm](../../parallel/amp/reference/norm-class.md), or [unorm](../../parallel/amp/reference/unorm-class.md).  
+- [Short Vector Library](https://msdn.microsoft.com/4c4f5bed-c396-493b-a238-c347563f645f): Defines a set of short vector types of length 2, 3, and 4 that are based on **int**, `uint`, **float**, **double**, [norm](../../parallel/amp/reference/norm-class.md), or [unorm](../../parallel/amp/reference/unorm-class.md).  
   
 ## Universal Windows Platform (UWP) Apps  
  

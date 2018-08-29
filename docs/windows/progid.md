@@ -65,4 +65,4 @@ For more information about the attribute contexts, see [Attribute Contexts](../w
 [IDL Attributes](../windows/idl-attributes.md)  
 [Class Attributes](../windows/class-attributes.md)  
 [Typedef, Enum, Union, and Struct Attributes](../windows/typedef-enum-union-and-struct-attributes.md)  
-[ProgID Key](http://msdn.microsoft.com/library/windows/desktop/dd542719)  
+[ProgID Key](/windows/desktop/com/-progid--key)  

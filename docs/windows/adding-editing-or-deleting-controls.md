@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 Using the **Dialog** editor, you can add, resize, edit, and delete controls in dialog boxes. You can also edit the properties of a control, such as its ID, or whether it is initially visible at run time.
 
-You can use the shortcut menu in the **Dialog** editor to quickly add registered ActiveX controls to a dialog box, and you can add ActiveX controls to the **Toolbox** for quick access (for more information, see [Customize Toolbox Dialog Box](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)).
+You can use the shortcut menu in the **Dialog** editor to quickly add registered ActiveX controls to a dialog box, and you can add ActiveX controls to the **Toolbox** for quick access (for more information, see [Customize Toolbox Dialog Box](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)).
 
 - [Add a control to a dialog box](adding-a-control-to-a-dialog-box.md)
 

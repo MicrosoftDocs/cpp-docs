@@ -174,9 +174,9 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |Operator|Description|  
 |--------------|-----------------|  
-|[operator++](http://msdn.microsoft.com/en-us/4cfdd07e-927a-42f8-aaa0-d6881687f413)|Advances to next item in the queue. This operator is overloaded to provide both pre-increment and post-increment semantics.|  
-|[operator*](http://msdn.microsoft.com/en-us/a0e671fc-76e6-4fb4-b95c-ced4dd2b2017)|Retrieves a reference to the current item.|  
-|[operator->](http://msdn.microsoft.com/en-us/41fa393d-ae1e-4a38-bb4b-19e8df709ca9)|Retrieves a pointer to the current item.|  
+|[operator++](https://msdn.microsoft.com/4cfdd07e-927a-42f8-aaa0-d6881687f413)|Advances to next item in the queue. This operator is overloaded to provide both pre-increment and post-increment semantics.|  
+|[operator*](https://msdn.microsoft.com/a0e671fc-76e6-4fb4-b95c-ced4dd2b2017)|Retrieves a reference to the current item.|  
+|[operator->](https://msdn.microsoft.com/41fa393d-ae1e-4a38-bb4b-19e8df709ca9)|Retrieves a pointer to the current item.|  
   
  [[Top](#top)]  
   

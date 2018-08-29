@@ -18,7 +18,7 @@ ms.workload: ["cplusplus"]
 ```  
   
 ## Remarks  
- /MANIFEST specifies that the linker should create a side-by-side manifest file. For more information about manifest files, see [Manifest Files Reference](http://msdn.microsoft.com/library/aa375632).  
+ /MANIFEST specifies that the linker should create a side-by-side manifest file. For more information about manifest files, see [Manifest Files Reference](/windows/desktop/SbsCs/manifest-files-reference).  
   
  The default is /MANIFEST.  
   

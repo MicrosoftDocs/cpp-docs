@@ -50,7 +50,7 @@ Discusses how to ensure proper shutdown of a managed application that consumes a
 [How to: Create a Partially Trusted Application by Removing Dependency on the CRT Library DLL](../dotnet/create-a-partially-trusted-application.md)<br/>
 Discusses how to create a partially trusted Common Language Runtime application using Visual C++ by removing dependency on msvcm90.dll.
 
-For more information about coding guidelines for mixed assemblies, see the MSDN article [An Overview of Managed/Unmanaged Code Interoperability](https://msdn.microsoft.com/en-us/library/ms973872.aspx).
+For more information about coding guidelines for mixed assemblies, see the MSDN article [An Overview of Managed/Unmanaged Code Interoperability](https://msdn.microsoft.com/library/ms973872.aspx).
 
 ## See also
 

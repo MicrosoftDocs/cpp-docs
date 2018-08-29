@@ -21,7 +21,7 @@ Use this wizard to create an MFC class from an interface in an available ActiveX
   
 ### To add an MFC class from an ActiveX control  
   
-1.  In either **Solution Explorer** or [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the name of the project to which you want to add the ActiveX control class.  
+1.  In either **Solution Explorer** or [Class View](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the name of the project to which you want to add the ActiveX control class.  
   
 2.  From the shortcut menu, click **Add**, and then click **Add Class**.  
   

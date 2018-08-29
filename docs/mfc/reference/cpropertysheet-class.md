@@ -60,13 +60,13 @@ class CPropertySheet : public CWnd
 
 |Name|Description|
 |----------|-----------------|
-|[CPropertySheet::m_psh](#m_psh)|The Windows [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) structure. Provides access to basic property sheet parameters.|
+|[CPropertySheet::m_psh](#m_psh)|The Windows [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2) structure. Provides access to basic property sheet parameters.|
 
 ## Remarks
 
 A property sheet consists of a `CPropertySheet` object and one or more [CPropertyPage](../../mfc/reference/cpropertypage-class.md) objects. The framework displays a property sheet as a window with a set of tab indices and an area that contains the currently selected page. The user navigates to a specific page by using the appropriate tab.
 
-`CPropertySheet` provides support for the expanded [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546) structure introduced in Windows 98 and Windows NT 2000. The structure contains additional flags and members that support using a "watermark" background bitmap.
+`CPropertySheet` provides support for the expanded [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2) structure introduced in Windows 98 and Windows NT 2000. The structure contains additional flags and members that support using a "watermark" background bitmap.
 
 To display these new images automatically in your property sheet object, pass valid values for the bitmap and palette images in the call to [CPropertySheet::Construct](#construct) or [CPropertySheet::CPropertySheet](#cpropertysheet).
 
@@ -544,7 +544,7 @@ For example, call this member function if you want to add bitmaps to each of the
 
 ##  <a name="m_psh"></a>  CPropertySheet::m_psh
 
-A structure whose members store the characteristics of [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546).
+A structure whose members store the characteristics of [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2).
 
 ### Remarks
 
@@ -567,13 +567,13 @@ void MapDialogRect(LPRECT lpRect) const;
 ### Parameters
 
 *lpRect*  
-Points to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
+Points to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure or [CRect](../../atl-mfc-shared/reference/crect-class.md) object that contains the dialog-box coordinates to be converted.
 
 ### Remarks
 
 Dialog-box units are stated in terms of the current dialog-box base unit derived from the average width and height of characters in the font used for dialog-box text. One horizontal unit is one-fourth of the dialog-box base-width unit, and one vertical unit is one-eighth of the dialog-box base height unit.
 
-The [GetDialogBaseUnits](http://msdn.microsoft.com/library/windows/desktop/ms645475) Windows function returns size information for the system font, but you can specify a different font for each property sheet if you use the DS_SETFONT style in the resource-definition file. The [MapDialogRect](http://msdn.microsoft.com/library/windows/desktop/ms645502) Windows function, described in the Windows SDK, uses the appropriate font for this dialog box.
+The [GetDialogBaseUnits](/windows/desktop/api/winuser/nf-winuser-getdialogbaseunits) Windows function returns size information for the system font, but you can specify a different font for each property sheet if you use the DS_SETFONT style in the resource-definition file. The [MapDialogRect](/windows/desktop/api/winuser/nf-winuser-mapdialogrect) Windows function, described in the Windows SDK, uses the appropriate font for this dialog box.
 
 The `MapDialogRect` member function replaces the dialog-box units in *lpRect* with screen units (pixels) so that the rectangle can be used to create a dialog box or position a control within a box.
 
@@ -626,9 +626,9 @@ nButton : Identifies the button to be pressed. This parameter can be one of the 
 
 ### Remarks
 
-See [PSM_PRESSBUTTON](http://msdn.microsoft.com/library/windows/desktop/bb774597) for more information about the Windows SDK Pressbutton message.
+See [PSM_PRESSBUTTON](/windows/desktop/Controls/psm-pressbutton) for more information about the Windows SDK Pressbutton message.
 
-A call to `PressButton` will not send the [PSN_APPLY](http://msdn.microsoft.com/library/windows/desktop/bb774552) notification from a property page to the framework. To send this notification, call [CPropertyPage::OnOK](../../mfc/reference/cpropertypage-class.md#onok).
+A call to `PressButton` will not send the [PSN_APPLY](/windows/desktop/Controls/psn-apply) notification from a property page to the framework. To send this notification, call [CPropertyPage::OnOK](../../mfc/reference/cpropertypage-class.md#onok).
 
 ### Example
 

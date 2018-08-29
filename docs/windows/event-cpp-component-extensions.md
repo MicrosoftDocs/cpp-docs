@@ -72,7 +72,7 @@ You can use **operators+=** and **operator-=** to add and remove an event handle
 
 ### Remarks
 
-For more information, see [Events (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh755799.aspx).
+For more information, see [Events (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh755799.aspx).
 
 If you intend to add and then remove an event handler, you must save the EventRegistrationToken structure that is returned by the add operation. Then in the remove operation, you must use the saved EventRegistrationToken structure to identify the event handler to be removed.
 

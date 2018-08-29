@@ -17,7 +17,7 @@ ms.workload: ["cplusplus", "uwp"]
 Verifies that the type of the specified argument derives from the `IUnknown` interface.
 
 > [!IMPORTANT]
-> This template specialization supports the WRL infrastructure and is not intended to be used directly from your code. Use [IID_PPV_ARGS](http://msdn.microsoft.com/library/windows/desktop/ee330727.aspx) instead.
+> This template specialization supports the WRL infrastructure and is not intended to be used directly from your code. Use [IID_PPV_ARGS](https://msdn.microsoft.com/library/windows/desktop/ee330727.aspx) instead.
 
 ## Syntax
 
@@ -50,4 +50,4 @@ A compile-time error is generated if the template parameter *T* doesn't derive f
 
 ## See Also
 
-[Reference (Windows Runtime Library)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)
+[Reference (Windows Runtime Library)](https://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)

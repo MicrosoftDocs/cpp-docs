@@ -18,7 +18,7 @@ An accelerator table is a Windows resource that contains a list of accelerator k
 
 Normally, accelerators are used as keyboard shortcuts for program commands that are also available on a menu or toolbar. However, you can use the accelerator table to define key combinations for commands that don't have a user-interface object associated with them.
 
-You can use [Class View](http://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925) to hook accelerator key commands to code.
+You can use [Class View](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925) to hook accelerator key commands to code.
 
 With the **Accelerator** editor, you can:
 

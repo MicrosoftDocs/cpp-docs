@@ -35,7 +35,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
  [in] The class object's description.  
   
 ### Remarks  
- ATL enters this description into the object map through the [OBJECT_ENTRY](http://msdn.microsoft.com/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) macro.  
+ ATL enters this description into the object map through the [OBJECT_ENTRY](https://msdn.microsoft.com/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) macro.  
   
  DECLARE_OBJECT_DESCRIPTION implements a `GetObjectDescription` function, which you can use to override the [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) method.  
 

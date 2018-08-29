@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
   
  This can be an unsafe conversion even for pointer values that fit in 32 bits when sign extension occurs. If a negative 32-bit integer is assigned to a 64-bit pointer type, sign extension causes the pointer value to reference a memory address different from the value of the integer.  
   
- This warning is only issued for 64-bit compilation targets. For more information, see [Rules for Using Pointers](http://msdn.microsoft.com/library/windows/desktop/aa384242).  
+ This warning is only issued for 64-bit compilation targets. For more information, see [Rules for Using Pointers](/windows/desktop/WinProg64/rules-for-using-pointers).  
   
  The following code example generates C4312 when it is compiled for 64-bit targets:  
   

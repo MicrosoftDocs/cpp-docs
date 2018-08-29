@@ -25,7 +25,7 @@ Specifies packing alignment for structure, union, and class members.
 
 To pack a class is to place its members directly after each other in memory, which can mean that some or all members can be aligned on a boundary smaller than the default alignment the target architecture. **pack** gives control at the data-declaration level. This differs from compiler option [/Zp](../build/reference/zp-struct-member-alignment.md), which only provides module-level control. **pack** takes effect at the first **struct**, **union**, or **class** declaration after the pragma is seen. **pack** has no effect on definitions. Calling **pack** with no arguments sets *n* to the value set in the compiler option `/Zp`. If the compiler option is not set, the default value is 8.  
   
-If you change the alignment of a structure, it may not use as much space in memory, but you may see a decrease in performance or even get a hardware-generated exception for unaligned access.  You can modify this exception behavior by using [SetErrorMode](http://msdn.microsoft.com/library/windows/desktop/ms680621).  
+If you change the alignment of a structure, it may not use as much space in memory, but you may see a decrease in performance or even get a hardware-generated exception for unaligned access.  You can modify this exception behavior by using [SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621).  
   
 *show* (optional)  
 Displays the current byte value for packing alignment. The value is displayed by a warning message.  

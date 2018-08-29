@@ -25,7 +25,7 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
   
 #### Parameters  
  *Base*  
- A COM enumerator ( [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx)) interface.  
+ A COM enumerator. See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example.
   
  *piid*  
  A pointer to the interface ID of the enumerator interface.  
@@ -45,11 +45,11 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
   
 |Name|Description|  
 |----------|-----------------|  
-|[IEnumOnSTLImpl::Clone](#clone)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
+|[IEnumOnSTLImpl::Clone](#clone)|The implementation of **Clone**.|  
 |[IEnumOnSTLImpl::Init](#init)|Initializes the enumerator.|  
-|[IEnumOnSTLImpl::Next](#next)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
-|[IEnumOnSTLImpl::Reset](#reset)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
-|[IEnumOnSTLImpl::Skip](#skip)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
+|[IEnumOnSTLImpl::Next](#next)|The implementation of **Next**.|  
+|[IEnumOnSTLImpl::Reset](#reset)|The implementation of **Reset**.|  
+|[IEnumOnSTLImpl::Skip](#skip)|The implementation of **Skip**.|  
   
 ### Public Data Members  
   
@@ -102,7 +102,7 @@ HRESULT Init(
  You must call this method before passing a pointer to the enumerator interface back to any clients.  
   
 ##  <a name="clone"></a>  IEnumOnSTLImpl::Clone  
- This method provides the implementation of the [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx) method by creating an object of type `CComEnumOnSTL`, initializing it with the same collection and iterator used by the current object, and returning the interface on the newly created object.  
+ This method provides the implementation of the **Clone** method by creating an object of type `CComEnumOnSTL`, initializing it with the same collection and iterator used by the current object, and returning the interface on the newly created object.  
   
 ```
 STDMETHOD(Clone)(Base** ppEnum);
@@ -143,7 +143,7 @@ CollType::iterator m_iter;
 ```  
   
 ##  <a name="next"></a>  IEnumOnSTLImpl::Next  
- This method provides the implementation of the [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) method.  
+ This method provides the implementation of the **Next** method.  
   
 ```
 STDMETHOD(Next)(
@@ -166,7 +166,7 @@ STDMETHOD(Next)(
  A standard HRESULT value.  
   
 ##  <a name="reset"></a>  IEnumOnSTLImpl::Reset  
- This method provides the implementation of the [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx) method.  
+ This method provides the implementation of the **Reset** method.  
   
 ```
 STDMETHOD(Reset)(void);
@@ -176,7 +176,7 @@ STDMETHOD(Reset)(void);
  A standard HRESULT value.  
   
 ##  <a name="skip"></a>  IEnumOnSTLImpl::Skip  
- This method provides the implementation of the [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx) method.  
+ This method provides the implementation of the **Skip** method.  
   
 ```
 STDMETHOD(Skip)(ULONG celt);

@@ -25,16 +25,16 @@ class multiset
 
 ### Parameters
 
-*Key*
+*Key*<br/>
  The element data type to be stored in the multiset.
 
-*Compare*
+*Compare*<br/>
  The type that provides a function object that can compare two element values as sort keys to determine their relative order in the multiset. The binary predicate **less**\<Key> is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
-*Allocator*
- The type that represents the stored allocator object that encapsulates details about the multiset's allocation and deallocation of memory. The default value is **allocator***\<Key>.*
+*Allocator*<br/>
+ The type that represents the stored allocator object that encapsulates details about the multiset's allocation and deallocation of memory. The default value is `allocator<Key>`.
 
 ## Remarks
 
@@ -390,7 +390,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key of the elements to be matched from the multiset.
 
 ### Return Value
@@ -786,7 +786,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the multiset being searched.
 
 ### Return Value
@@ -871,16 +871,16 @@ size_type erase(
 
 ### Parameters
 
-*Where*
+*Where*<br/>
  Position of the element to be removed.
 
-*First*
+*First*<br/>
  Position of the first element to be removed.
 
-*Last*
+*Last*<br/>
  Position just beyond the last element to be removed.
 
-*Key*
+*Key*<br/>
  The key value of the elements to be removed.
 
 ### Return Value
@@ -906,7 +906,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key value to be matched by the sort key of an element from the multiset being searched.
 
 ### Return Value
@@ -1349,7 +1349,7 @@ iterator lower_bound(const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the multiset being searched.
 
 ### Return Value
@@ -1956,7 +1956,7 @@ void swap(
 
 ### Parameters
 
-*right*
+*right*<br/>
  The argument multiset providing the elements to be swapped with the target multiset.
 
 ### Remarks
@@ -2025,7 +2025,7 @@ iterator upper_bound(const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the multiset being searched.
 
 ### Return Value
@@ -2229,7 +2229,7 @@ The multiset has elements: 10 20.
 
 ## See also
 
-[\<set> Members](http://msdn.microsoft.com/0c2d57c0-173f-4204-b579-c5f06aad8b95)<br/>
+[\<set> Members](https://msdn.microsoft.com/0c2d57c0-173f-4204-b579-c5f06aad8b95)<br/>
 [Containers](../cpp/containers-modern-cpp.md)<br/>
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

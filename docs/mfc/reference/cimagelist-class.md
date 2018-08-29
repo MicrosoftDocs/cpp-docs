@@ -181,7 +181,7 @@ CImageList();
 ```  
   
 ##  <a name="copy"></a>  CImageList::Copy  
- This member function implements the behavior of the Win32 function [ImageList_Copy](http://msdn.microsoft.com/library/windows/desktop/bb761520), as described in the Windows SDK.  
+ This member function implements the behavior of the Win32 function [ImageList_Copy](/windows/desktop/api/commctrl/nf-commctrl-imagelist_copy), as described in the Windows SDK.  
   
 ```  
 BOOL Copy(
@@ -509,16 +509,16 @@ BOOL DrawEx(
  Location at which to draw within the specified device context.  
   
  *sz*  
- Size of the portion of the image to draw relative to the upper-left corner of the image. See *dx* and *dy* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
+ Size of the portion of the image to draw relative to the upper-left corner of the image. See *dx* and *dy* in [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) in the Windows SDK.  
   
  *clrBk*  
- Background color of the image. See *rgbBk* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
+ Background color of the image. See *rgbBk* in [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) in the Windows SDK.  
   
  *clrFg*  
- Foreground color of the image. See *rgbFg* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
+ Foreground color of the image. See *rgbFg* in [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) in the Windows SDK.  
   
  *nStyle*  
- Flag specifying the drawing style. See *fStyle* in [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) in the Windows SDK.  
+ Flag specifying the drawing style. See *fStyle* in [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -553,7 +553,7 @@ BOOL DrawIndirect(
   
 ### Parameters  
  *pimldp*  
- A pointer to an [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure that contains information about the draw operation.  
+ A pointer to an [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) structure that contains information about the draw operation.  
   
  *pDC*  
  A pointer to the destination device context. You must delete this [CDC](../../mfc/reference/cdc-class.md) object when you are done with it.  
@@ -562,23 +562,23 @@ BOOL DrawIndirect(
  The zero-based index of the image to be drawn.  
   
  *pt*  
- A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y- coordinates where the image will be drawn.  
+ A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y- coordinates where the image will be drawn.  
   
  *sz*  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure indicating the size of the image to be drawn.  
+ A [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure indicating the size of the image to be drawn.  
   
  *ptOrigin*  
- A [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.  
+ A [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure containing the x- and y-coordinates specifying the upper left corner of the drawing operation with respect to the image itself. Pixels of the image that are to the left of the x-coordinate and above the y-coordinate are not drawn.  
   
  *fStyle*  
  Flag specifying the drawing style and, optionally, the overlay image. See the Remarks section for information on the overlay image. The MFC default implementation, ILD_NORMAL, draws the image using the background color for the image list. If the background color is the CLR_NONE value, the image is drawn transparently using a mask.  
   
- Other possible styles are described under the *fStyle* member of the [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure.  
+ Other possible styles are described under the *fStyle* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) structure.  
   
  *dwRop*  
  Value specifying a raster-operation code. These codes define how the color data for the source rectangle will be combined with the color data for the destination rectangle to achieve the final color. MFC's default implementation, SRCCOPY, copies the source rectangle directly to the destination rectangle. This parameter is ignored if the *fStyle* parameter does not include the ILD_ROP flag.  
   
- Other possible values are described under the *dwRop* member of the [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) structure.  
+ Other possible values are described under the *dwRop* member of the [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) structure.  
   
  *rgbBack*  
  The image background color, by default CLR_DEFAULT. This parameter can be an application-defined RGB value or one of the following values:  
@@ -609,7 +609,7 @@ BOOL DrawIndirect(
  When used with ILS_APLHA, this member holds the value for the alpha channel. This value can be from 0 to 255, with 0 being completely transparent, and 255 being completely opaque.  
   
  *crEffect*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value used for glow and shadow effects.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value used for glow and shadow effects.  
   
 ### Return Value  
  TRUE if the image is successfully drawn; otherwise FALSE.  
@@ -617,7 +617,7 @@ BOOL DrawIndirect(
 ### Remarks  
  Use the first version if you want to fill the Win32 structure yourself. Use the second version if you want to take advantage of one or more of MFC's default arguments, or avoid managing the structure.  
   
- An overlay image is an image that is drawn on top of the primary image, specified in this member function by the *nImage* parameter. Draw an overlay mask by using the [Draw](#draw) member function with the one-based index of the overlay mask specified by using the [INDEXTOOVERLAYMASK](http://msdn.microsoft.com/library/windows/desktop/bb761408) macro.  
+ An overlay image is an image that is drawn on top of the primary image, specified in this member function by the *nImage* parameter. Draw an overlay mask by using the [Draw](#draw) member function with the one-based index of the overlay mask specified by using the [INDEXTOOVERLAYMASK](/windows/desktop/api/commctrl/nf-commctrl-indextooverlaymask) macro.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CImageList#11](../../mfc/reference/codesnippet/cpp/cimagelist-class_10.cpp)]  
@@ -650,7 +650,7 @@ HICON ExtractIcon(int nImage);
  Handle of the icon if successful; otherwise NULL.  
   
 ### Remarks  
- This method relies on the behavior of the [ImageList_ExtractIcon](http://msdn.microsoft.com/library/windows/desktop/bb761401) macro to create the icon. Refer to the [ImageList_ExtractIcon](http://msdn.microsoft.com/library/windows/desktop/bb761401) macro for more information on icon creation and cleanup.  
+ This method relies on the behavior of the [ImageList_ExtractIcon](/windows/desktop/api/commctrl/nf-commctrl-imagelist_extracticon) macro to create the icon. Refer to the [ImageList_ExtractIcon](/windows/desktop/api/commctrl/nf-commctrl-imagelist_extracticon) macro for more information on icon creation and cleanup.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CImageList#12](../../mfc/reference/codesnippet/cpp/cimagelist-class_12.cpp)]  
@@ -719,7 +719,7 @@ static CImageList* PASCAL GetDragImage(
   
 ### Parameters  
  *lpPoint*  
- Address of a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the current drag position.  
+ Address of a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) structure that receives the current drag position.  
   
  *lpPointHotSpot*  
  Address of a `POINT` structure that receives the offset of the drag image relative to the drag position.  
@@ -754,7 +754,7 @@ BOOL GetImageInfo(
  Zero-based index of the image.  
   
  *pImageInfo*  
- Pointer to an [IMAGEINFO](http://msdn.microsoft.com/library/windows/desktop/bb761393) structure that receives information about the image. The information in this structure can be used to directly manipulate the bitmaps for the image.  
+ Pointer to an [IMAGEINFO](/windows/desktop/api/commctrl/ns-commctrl-_imageinfo) structure that receives information about the image. The information in this structure can be used to directly manipulate the bitmaps for the image.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -915,7 +915,7 @@ BOOL SetDragCursorImage(
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Because the dragging functions use the new image during a drag operation, you should use the Windows [ShowCursor](http://msdn.microsoft.com/library/windows/desktop/ms648396) function to hide the actual mouse cursor after calling `CImageList::SetDragCursorImage`. Otherwise, the system may appear to have two mouse cursors for the duration of the drag operation.  
+ Because the dragging functions use the new image during a drag operation, you should use the Windows [ShowCursor](/windows/desktop/api/winuser/nf-winuser-showcursor) function to hide the actual mouse cursor after calling `CImageList::SetDragCursorImage`. Otherwise, the system may appear to have two mouse cursors for the duration of the drag operation.  
   
 ##  <a name="setimagecount"></a>  CImageList::SetImageCount  
  Call this member function to reset the number of images in a `CImageList` object.  

@@ -26,7 +26,7 @@ The \<summary> tag should be used to describe a type or a type member. Use [\<re
  A summary of the object.  
   
 ## Remarks  
- The text for the \<summary> tag is the only source of information about the type in IntelliSense, and is also displayed in the [Object Browser](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470) and in the Code Comment Web Report.  
+ The text for the \<summary> tag is the only source of information about the type in IntelliSense, and is also displayed in the [Object Browser](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470) and in the Code Comment Web Report.  
   
  Compile with [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) to process documentation comments to a file.  
   

@@ -31,7 +31,7 @@ The name of a .tlb file, in quotes, that you want imported into the type library
 
 ## Remarks
 
-The **importlib** C++ attribute causes an `importlib` statement to be placed in the library block of the generated .idl file. The **importlib** attribute has the same functionality as the [importlib](http://msdn.microsoft.com/library/windows/desktop/aa367050) MIDL attribute.
+The **importlib** C++ attribute causes an `importlib` statement to be placed in the library block of the generated .idl file. The **importlib** attribute has the same functionality as the [importlib](/windows/desktop/Midl/importlib) MIDL attribute.
 
 ## Example
 

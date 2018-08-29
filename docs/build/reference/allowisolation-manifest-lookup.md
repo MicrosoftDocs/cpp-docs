@@ -28,9 +28,9 @@ Specifies behavior for manifest lookup.
   
  **/ALLOWISOLATION** is the default.  
   
- When isolation is disabled for an executable, the Windows loader will not attempt to find an application manifest for the newly created process. The new process will not have a default activation context, even if there is a manifest inside the executable or placed in the same directory as the executable with name *executable-name***.exe.manifest**.  
+ When isolation is disabled for an executable, the Windows loader will not attempt to find an application manifest for the newly created process. The new process will not have a default activation context, even if there is a manifest inside the executable or placed in the same directory as the executable with name <em>executable-name</em>**.exe.manifest**.  
   
- For more information, see [Manifest Files Reference](http://msdn.microsoft.com/library/aa375632).  
+ For more information, see [Manifest Files Reference](/windows/desktop/SbsCs/manifest-files-reference).  
   
 ### To set this linker option in the Visual Studio development environment  
   

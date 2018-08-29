@@ -28,18 +28,18 @@ class multimap;
 
 ### Parameters
 
-*Key*
+*Key*<br/>
  The key data type to be stored in the multimap.
 
-*Type*
+*Type*<br/>
  The element data type to be stored in the multimap.
 
-*Traits*
+*Traits*<br/>
  The type that provides a function object that can compare two element values as sort keys to determine their relative order in the multimap. The binary predicate `less<Key>` is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#heterogeneous-lookup-in-associative-containers-c14)
 
-*Allocator*
+*Allocator*<br/>
  The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair <const Key, Type> >`.
 
 ## Remarks
@@ -317,11 +317,11 @@ typedef implementation-defined const_iterator;
 
 A type `const_iterator` cannot be used to modify the value of an element.
 
-The `const_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key**, **Type***>*. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
+The `const_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair<const Key, Type>`. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
 
-To dereference a `const_iterator` `cIter` pointing to an element in a multimap, use the **->** operator.
+To dereference a `const_iterator` *cIter* pointing to an element in a multimap, use the **->** operator.
 
-To access the value of the key for the element, use `cIter` -> **first**, which is equivalent to (\* `cIter`). **first**. To access the value of the mapped datum for the element, use `cIter` -> **second**, which is equivalent to (\* `cIter`). **second**.
+To access the value of the key for the element, use `cIter->first`, which is equivalent to `(*cIter).first`. To access the value of the mapped datum for the element, use `cIter->second`, which is equivalent to `(*cIter).second`.
 
 ### Example
 
@@ -403,11 +403,11 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 A type `const_reverse_iterator` cannot modify the value of an element and is use to iterate through the multimap in reverse.
 
-The `const_reverse_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key**, **Type***>*. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
+The `const_reverse_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair<const Key, Type>`. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
 
-To dereference a `const_reverse_iterator` `crIter` pointing to an element in a multimap, use the **->** operator.
+To dereference a `const_reverse_iterator` *crIter* pointing to an element in a multimap, use the **->** operator.
 
-To access the value of the key for the element, use `crIter` -> **first**, which is equivalent to (\* `crIter`). **first**. To access the value of the mapped datum for the element, use `crIter` -> **second**, which is equivalent to (\* `crIter`). **first**.
+To access the value of the key for the element, use `crIter->first`, which is equivalent to `(*crIter).first`. To access the value of the mapped datum for the element, use `crIter->second`, which is equivalent to `(*crIter).first`.
 
 ### Example
 
@@ -423,7 +423,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key of the elements to be matched from the multimap.
 
 ### Return Value
@@ -824,7 +824,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the multimap being searched.
 
 ### Return Value
@@ -911,16 +911,16 @@ size_type erase(
 
 ### Parameters
 
-*Where*
+*Where*<br/>
  Position of the element to be removed.
 
-*First*
+*First*<br/>
  Position of the first element to be removed.
 
-*Last*
+*Last*<br/>
  Position just beyond the last element to be removed.
 
-*Key*
+*Key*<br/>
  The key of the elements to be removed.
 
 ### Return Value
@@ -946,7 +946,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key value to be matched by the sort key of an element from the multimap being searched.
 
 ### Return Value
@@ -1270,11 +1270,11 @@ typedef implementation-defined iterator;
 
 ### Remarks
 
-The `iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key**, **Type***>*. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
+The `iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair<const Key, Type>`. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
 
-To dereference an **iterator**`Iter` pointing to an element in a multimap, use the `->` operator.
+To dereference an `iterator` *Iter* pointing to an element in a multimap, use the **->** operator.
 
-To access the value of the key for the element, use `Iter` -> **first**, which is equivalent to (\* `Iter`). **first**. To access the value of the mapped datum for the element, use `Iter` -> **second**, which is equivalent to (\* `Iter`). **second**.
+To access the value of the key for the element, use `Iter->first`, which is equivalent to `(*Iter).first`. To access the value of the mapped datum for the element, use `Iter->second`, which is equivalent to `(*Iter).second`.
 
 A type `iterator` can be used to modify the value of an element.
 
@@ -1298,7 +1298,7 @@ Returns the function object that a multimap uses to order its elements.
 
 The stored object defines the member function
 
-**bool operator**( **const Key&** *x*, **const Key&** *y*);
+`bool operator( const Key& x, const Key& y);`
 
 which returns true if *x* strictly precedes *y* in the sort order.
 
@@ -1401,7 +1401,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the multimap being searched.
 
 ### Return Value
@@ -2020,11 +2020,11 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 A type `reverse_iterator` is use to iterate through the multimap in reverse.
 
-The `reverse_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair`*\<***const Key**, **Type***>*. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
+The `reverse_iterator` defined by multimap points to objects of [value_type](#value_type), which are of type `pair<const Key, Type>`. The value of the key is available through the first member pair and the value of the mapped element is available through the second member of the pair.
 
-To dereference a `reverse_iterator` `rIter` pointing to an element in a multimap, use the -> operator.
+To dereference a `reverse_iterator` *rIter* pointing to an element in a multimap, use the **->** operator.
 
-To access the value of the key for the element, use `rIter` -> **first**, which is equivalent to (\* `rIter`). **first**. To access the value of the mapped datum for the element, use `rIter` -> **second**, which is equivalent to (\* `rIter`). **first**.
+To access the value of the key for the element, use `rIter->first`, which is equivalent to `(*rIter).first`. To access the value of the mapped datum for the element, use `rIter->second`, which is equivalent to `(*rIter).second`.
 
 ### Example
 
@@ -2097,7 +2097,7 @@ void swap(
 
 ### Parameters
 
-*right*
+*right*<br/>
  The multimap providing the elements to be swapped, or the multimap whose elements are to be exchanged with those of the multimap `left`.
 
 ### Remarks
@@ -2167,7 +2167,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the multimap being searched.
 
 ### Return Value
@@ -2368,7 +2368,7 @@ The values of the mapped elements are: 10 20.
 
 ## See also
 
-[\<map> Members](http://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
+[\<map> Members](https://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
 [Containers](../cpp/containers-modern-cpp.md)<br/>
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

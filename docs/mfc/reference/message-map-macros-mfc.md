@@ -274,7 +274,7 @@ ON_MESSAGE( message, memberFxn )
  The type of the function must be `afx_msg LRESULT (CWnd::*)(WPARAM, LPARAM)`.  
   
 ### Remarks  
- User-defined messages are any messages that are not standard Windows WM_MESSAGE messages. When selecting a message ID, you must use values within the range of WM_USER (0x0400) to 0x7FFF or WM_APP (0x8000) to 0xBFFF. For more information regarding message IDs, see [WM_APP](http://msdn.microsoft.com/library/windows/desktop/ms644930).  
+ User-defined messages are any messages that are not standard Windows WM_MESSAGE messages. When selecting a message ID, you must use values within the range of WM_USER (0x0400) to 0x7FFF or WM_APP (0x8000) to 0xBFFF. For more information regarding message IDs, see [WM_APP](/windows/desktop/winmsg/wm-app).  
   
  There should be exactly one ON_MESSAGE macro statement in your message map for every user-defined message that must be mapped to a message-handler function.  
   
@@ -472,7 +472,7 @@ END_MESSAGE_MAP()
  **Header:** afxmsg_.h  
   
 ### See Also  
- [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947)   
+ [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)   
  [User-Defined Handlers](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE	

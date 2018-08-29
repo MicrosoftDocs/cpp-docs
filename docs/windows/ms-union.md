@@ -24,7 +24,7 @@ Controls the network data representation alignment of nonencapsulated unions.
 
 ## Remarks
 
-The **ms_union** C++ attribute has the same functionality as the [ms_union](http://msdn.microsoft.com/library/windows/desktop/aa367100) MIDL attribute.
+The **ms_union** C++ attribute has the same functionality as the [ms_union](/windows/desktop/Midl/ms-union-attrib) MIDL attribute.
 
 ## Example
 

@@ -30,7 +30,7 @@ You cannot apply the **export** attribute to a class even if the class only has 
 
 If you export an unnamed **enum** or **struct**, it is given a name that begins with **__unnamed**<em>x</em>, where *x* is a sequential number.
 
-The typedefs valid for export are base types, structs, unions, enums, or type identifiers.  See [typedef](http://msdn.microsoft.com/library/windows/desktop/aa367287) for more information.
+The typedefs valid for export are base types, structs, unions, enums, or type identifiers.  See [typedef](/windows/desktop/Midl/typedef) for more information.
 
 ## Example
 

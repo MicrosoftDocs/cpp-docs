@@ -44,7 +44,7 @@ class CPaintDC : public CDC
 ## Remarks  
  It performs a [CWnd::BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint) at construction time and [CWnd::EndPaint](../../mfc/reference/cwnd-class.md#endpaint) at destruction time.  
   
- A `CPaintDC` object can only be used when responding to a [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message, usually in your `OnPaint` message-handler member function.  
+ A `CPaintDC` object can only be used when responding to a [WM_PAINT](/windows/desktop/gdi/wm-paint) message, usually in your `OnPaint` message-handler member function.  
   
  For more information on using `CPaintDC`, see [Device Contexts](../../mfc/device-contexts.md).  
   
@@ -70,7 +70,7 @@ explicit CPaintDC(CWnd* pWnd);
  Points to the `CWnd` object to which the `CPaintDC` object belongs.  
   
 ### Remarks  
- An exception (of type `CResourceException`) is thrown if the Windows [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.  
+ An exception (of type `CResourceException`) is thrown if the Windows [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) call fails. A device context may not be available if Windows has already allocated all of its available device contexts. Your application competes for the five common display contexts available at any given time under Windows.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#97](../../mfc/codesnippet/cpp/cpaintdc-class_1.cpp)]  

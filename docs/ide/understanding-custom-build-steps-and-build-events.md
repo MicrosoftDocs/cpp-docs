@@ -56,4 +56,4 @@ From within the Visual C++ development environment, there are three basic ways t
 ## See Also  
  [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)   
  [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)   
- [Tool Build Order Dialog Box](http://msdn.microsoft.com/en-us/6204c5b1-7ce9-4948-9ff6-0268642ee14c)
+ [Tool Build Order Dialog Box](https://msdn.microsoft.com/6204c5b1-7ce9-4948-9ff6-0268642ee14c)

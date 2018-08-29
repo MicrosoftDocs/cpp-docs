@@ -82,7 +82,7 @@ class CFileTime :  public FILETIME
 |Day|Hour \* 24|  
 |Week|Day \* 7|  
   
- **Note** Not all file systems can record creation and last access time and not all file systems record them in the same manner. For example, on the Windows NT FAT file system, create time has a resolution of 10 milliseconds, write time has a resolution of 2 seconds, and access time has a resolution of 1 day (the access date). On NTFS, access time has a resolution of 1 hour. Furthermore, FAT records times on disk in local time, but NTFS records times on disk in UTC. For more information, see [File Times](http://msdn.microsoft.com/library/windows/desktop/ms724290).  
+ **Note** Not all file systems can record creation and last access time and not all file systems record them in the same manner. For example, on the Windows NT FAT file system, create time has a resolution of 10 milliseconds, write time has a resolution of 2 seconds, and access time has a resolution of 1 day (the access date). On NTFS, access time has a resolution of 1 hour. Furthermore, FAT records times on disk in local time, but NTFS records times on disk in UTC. For more information, see [File Times](/windows/desktop/SysInfo/file-times).  
   
 ## Inheritance Hierarchy  
  `FILETIME`  
@@ -103,7 +103,7 @@ CFileTime(ULONGLONG nTime) throw();
   
 ### Parameters  
  *ft*  
- A [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure.  
+ A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure.  
   
  *nTime*  
  The date and time expressed as a 64-bit value.  
@@ -393,7 +393,7 @@ static const ULONGLONG Week = Day* 7;
  See the example for [CFileTime::Millisecond](#millisecond).  
   
 ## See Also  
- [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284)   
+ [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
  [CFileTimeSpan Class](../../atl-mfc-shared/reference/cfiletimespan-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

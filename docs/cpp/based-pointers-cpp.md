@@ -42,7 +42,7 @@ struct llist_t {
  The pointer `vpBuffer` is assigned the address of memory allocated at some later point in the program. The linked list is relocated relative to the value of `vpBuffer`.  
   
 > [!NOTE]
->  Persisting identifiers containing pointers can also be accomplished by using [memory-mapped files](http://msdn.microsoft.com/library/windows/desktop/aa366556).  
+>  Persisting identifiers containing pointers can also be accomplished by using [memory-mapped files](/windows/desktop/Memory/file-mapping).  
   
  When dereferencing a based pointer, the base must be either explicitly specified or implicitly known through the declaration.  
   

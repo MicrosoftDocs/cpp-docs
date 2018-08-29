@@ -17,7 +17,7 @@ A build event is a command that MSBuild performs at a particular stage in the bu
   
  Each of the three build events is represented in an item definition group by a command element (`<Command>`) that is executed and a message element (`<Message>`) that is displayed when **MSBuild** performs the build event. Each element is optional, and if you specify the same element multiple times, the last occurrence takes precedence.  
   
- An optional *use-in-build* element (`<`*build-event***UseInBuild**`>`) can be specified in a property group to indicate whether the build event is executed. The value of the content of a *use-in-build* element is either `true` or `false`. By default, a build event is executed unless its corresponding *use-in-build* element is set to `false`.  
+ An optional *use-in-build* element (`<`*build-event*`UseInBuild>`) can be specified in a property group to indicate whether the build event is executed. The value of the content of a *use-in-build* element is either `true` or `false`. By default, a build event is executed unless its corresponding *use-in-build* element is set to `false`.  
   
  The following table lists each build event XML element:  
   

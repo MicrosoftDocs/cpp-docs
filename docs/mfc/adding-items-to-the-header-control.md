@@ -16,13 +16,13 @@ After creating your header control ([CHeaderCtrl](../mfc/reference/cheaderctrl-c
   
 ### To add a header item  
   
-1.  Prepare an [HD_ITEM](http://msdn.microsoft.com/library/windows/desktop/bb775247) structure.  
+1.  Prepare an [HD_ITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) structure.  
   
 2.  Call [CHeaderCtrl::InsertItem](../mfc/reference/cheaderctrl-class.md#insertitem), passing the structure.  
   
 3.  Repeat steps 1 and 2 for additional items.  
   
- For more information, see [Adding an Item to a Header Control](http://msdn.microsoft.com/library/windows/desktop/bb775238) in the Windows SDK.  
+ For more information, see [Adding an Item to a Header Control](/windows/desktop/Controls/header-controls) in the Windows SDK.  
   
 ## See Also  
  [Using CHeaderCtrl](../mfc/using-cheaderctrl.md)   

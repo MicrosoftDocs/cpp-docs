@@ -16,7 +16,7 @@ The linker tool (LINK.EXE) accepts .obj files that are in Common Object File For
 
 ## Remarks
 
-Microsoft provides a complete description of the common object file format. For more information, see [PE Format](https://msdn.microsoft.com/library/windows/desktop/ms680547).
+Microsoft provides a complete description of the common object file format. For more information, see [PE Format](/windows/desktop/Debug/pe-format).
 
 ## Unicode support
 
@@ -31,4 +31,4 @@ For more information about the compiler and linker, see [Unicode Support in the 
 [Support for Unicode](../../text/support-for-unicode.md)  
 [Unicode Support in the Compiler and Linker](../../build/reference/unicode-support-in-the-compiler-and-linker.md)  
 [Unicode standard](http://go.microsoft.com/fwlink/p/?linkid=37123)  
-[PE Format](https://msdn.microsoft.com/library/windows/desktop/ms680547)  
+[PE Format](/windows/desktop/Debug/pe-format)  

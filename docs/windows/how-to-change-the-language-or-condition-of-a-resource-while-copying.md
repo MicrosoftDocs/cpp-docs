@@ -16,7 +16,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 While copying in a resource, you can change its language property or condition property, or both.
 
-- The language of the resource identifies just that, the language for the resource. This is used by [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042) to help identify the resource for which you're looking. (However, resources can have differences for each language that aren't related to text, for example, accelerators that might only work on a Japanese keyboard or a bitmap that would only be appropriate for Chinese localized builds, etc.)
+- The language of the resource identifies just that, the language for the resource. This is used by [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) to help identify the resource for which you're looking. (However, resources can have differences for each language that aren't related to text, for example, accelerators that might only work on a Japanese keyboard or a bitmap that would only be appropriate for Chinese localized builds, etc.)
 
 - The condition of a resource is a defined symbol that identifies a condition under which this particular copy of the resource is to be used.
 

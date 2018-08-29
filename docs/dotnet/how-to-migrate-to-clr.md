@@ -74,7 +74,7 @@ COMObj2->Method(args);  // C++ equivalent
  After your project compiles and runs in Visual Studio 2010 you should create new project configurations for **/clr** rather than modifying the default configurations. **/clr** is incompatible with some compiler options and creating separate configurations lets you build your project as native or managed. When **/clr** is selected in the property pages dialog box, project settings not compatible with **/clr** are disabled (and disabled options are not automatically restored if **/clr** is subsequently unselected).  
   
 ### Create New Project Configurations  
- You can use **Copy Settings From** option in the [New Project Configuration Dialog Box](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be) to create a project configuration based on your existing project settings. Do this once for the Debug configuration and once for Release configuration. Subsequent changes can then be applied to the **/clr** -specific configurations only, leaving the original project configurations intact.  
+ You can use **Copy Settings From** option in the [New Project Configuration Dialog Box](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be) to create a project configuration based on your existing project settings. Do this once for the Debug configuration and once for Release configuration. Subsequent changes can then be applied to the **/clr** -specific configurations only, leaving the original project configurations intact.  
   
  Projects that use custom build rules may require extra attention.  
   

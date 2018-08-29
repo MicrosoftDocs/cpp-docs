@@ -34,7 +34,7 @@ An important aspect of developing applications for international markets is the 
  [Internationalization](../c-runtime-library/internationalization.md)  
  Discusses international support in the C run-time library.  
   
- [International Samples](http://msdn.microsoft.com/aa8d390c-cf4c-4dd8-9dea-74d81f93f2f8)  
+ [International Samples](https://msdn.microsoft.com/aa8d390c-cf4c-4dd8-9dea-74d81f93f2f8)  
  Provides links to samples demonstrating internationalization in Visual C++.  
   
  [Language and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)  

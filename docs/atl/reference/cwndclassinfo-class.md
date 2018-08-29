@@ -59,7 +59,7 @@ class CWndClassInfo
   
  [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwndclassinfo-class_1.h)]  
   
- For more information about window classes, see [Window Classes](http://msdn.microsoft.com/library/windows/desktop/ms632596) in the Windows SDK.  
+ For more information about window classes, see [Window Classes](https://msdn.microsoft.com/library/windows/desktop/ms632596) in the Windows SDK.  
   
  For more information about using windows in ATL, see the article [ATL Window Classes](../../atl/atl-window-classes.md).  
   
@@ -118,7 +118,7 @@ TCHAR m_szAutoName[13];
  `CWndClassInfo` uses `m_szAutoName` only if NULL is passed for the `WndClassName` parameter to [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class), the [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) or [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass). ATL will construct a name when the window class is registered.  
   
 ##  <a name="m_wc"></a>  CWndClassInfo::m_wc  
- Maintains the window class information in a [WNDCLASSEX](http://msdn.microsoft.com/library/windows/desktop/ms633577) structure.  
+ Maintains the window class information in a [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577) structure.  
   
 ```
 WNDCLASSEX m_wc;

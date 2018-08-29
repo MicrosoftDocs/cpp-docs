@@ -52,7 +52,7 @@ class COlePasteSpecialDialog : public COleDialog
 ## Remarks  
  Create an object of class `COlePasteSpecialDialog` when you want to call this dialog box. After a `COlePasteSpecialDialog` object has been constructed, you can use the [AddFormat](#addformat) and [AddStandardFormats](#addstandardformats) member functions to add Clipboard formats to the dialog box. You can also use the [m_ps](#m_ps) structure to initialize the values or states of controls in the dialog box. The `m_ps` structure is of type OLEUIPASTESPECIAL.  
   
- For more information, see the [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) structure in the Windows SDK.  
+ For more information, see the [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) structure in the Windows SDK.  
   
  For more information regarding OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -124,9 +124,9 @@ void AddFormat(
 ### Remarks  
  This function can be called to add either standard formats such as CF_TEXT or CF_TIFF or custom formats that your application has registered with the system. For more information about pasting data objects into your application, see the article [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- For more information, see the [TYMED](http://msdn.microsoft.com/library/windows/desktop/ms691227) enumeration type and the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
+ For more information, see the [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) enumeration type and the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure in the Windows SDK.  
   
- For more information, see the [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) enumerated type in the Windows SDK.  
+ For more information, see the [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) enumerated type in the Windows SDK.  
   
 ##  <a name="addlinkentry"></a>  COlePasteSpecialDialog::AddLinkEntry  
  Adds a new entry to the list of supported Clipboard formats.  
@@ -140,7 +140,7 @@ OLEUIPASTEFLAG AddLinkEntry(UINT cf);
  The clipboard format to add.  
   
 ### Return Value  
- An [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) structure containing the information for the new link entry.  
+ An [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) structure containing the information for the new link entry.  
   
 ##  <a name="addstandardformats"></a>  COlePasteSpecialDialog::AddStandardFormats  
  Call this function to add the following Clipboard formats to the list of formats your application can support in a Paste Special operation:  
@@ -198,7 +198,7 @@ COlePasteSpecialDialog(
 ### Remarks  
  This function only constructs a `COlePasteSpecialDialog` object. To display the dialog box, call the [DoModal](#domodal) function.  
   
- For more information, see the [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) enumerated type in the Windows SDK.  
+ For more information, see the [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) enumerated type in the Windows SDK.  
   
 ##  <a name="createitem"></a>  COlePasteSpecialDialog::CreateItem  
  Creates the new item that was chosen in the Paste Special dialog box.  
@@ -231,7 +231,7 @@ virtual INT_PTR DoModal();
   
 - IDCANCEL if the user canceled the dialog box.  
   
-- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIPasteSpecial](http://msdn.microsoft.com/library/windows/desktop/ms694512) function in the Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the `COleDialog::GetLastError` member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIPasteSpecial](/windows/desktop/api/oledlg/nf-oledlg-oleuipastespeciala) function in the Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_ps](#m_ps) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
@@ -255,7 +255,7 @@ DVASPECT GetDrawAspect() const;
 ### Remarks  
  Only call this function after [DoModal](#domodal) returns IDOK.  
   
- For more information on drawing aspect, see the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure in the Windows SDK.  
+ For more information on drawing aspect, see the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure in the Windows SDK.  
   
 ##  <a name="geticonicmetafile"></a>  COlePasteSpecialDialog::GetIconicMetafile  
  Gets the metafile associated with the item selected by the user.  
@@ -278,7 +278,7 @@ int GetPasteIndex() const;
  The index into the array of `OLEUIPASTEENTRY` structures that was selected by the user. The format that corresponds to the selected index should be used when performing the paste operation.  
   
 ### Remarks  
- For more information, see the [OLEUIPASTEENTRY](http://msdn.microsoft.com/library/windows/desktop/ms690165) structure in the Windows SDK.  
+ For more information, see the [OLEUIPASTEENTRY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipasteentrya) structure in the Windows SDK.  
   
 ##  <a name="getselectiontype"></a>  COlePasteSpecialDialog::GetSelectionType  
  Determines the type of selection the user made.  
@@ -322,7 +322,7 @@ OLEUIPASTESPECIAL m_ps;
 ### Remarks  
  Members of this structure can be modified directly or through member functions.  
   
- For more information, see the [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) structure in the Windows SDK.  
+ For more information, see the [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) structure in the Windows SDK.  
   
 ## See Also  
  [MFC Sample OCLIENT](../../visual-cpp-samples.md)   

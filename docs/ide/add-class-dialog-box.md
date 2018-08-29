@@ -21,7 +21,7 @@ The **Add Class** dialog box contains templates that allow you to:
   
 -   Automatically create your new class by adding the appropriate files and source code to your project.  
   
- You can access the **Add Class** dialog box from the **Project** menu, **Solution Explorer**, or [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  
+ You can access the **Add Class** dialog box from the **Project** menu, **Solution Explorer**, or [Class View](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  
   
 > [!NOTE]
 >  When you attempt to add a class that is not suited to your current project, you will receive an error message. Click **OK** to return to the **Add Class** dialog box.  

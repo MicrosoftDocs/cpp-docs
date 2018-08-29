@@ -54,7 +54,7 @@ This document describes the differences between the features and programming mod
  The Windows API uses the C programming language to expose the programming model. The Concurrency Runtime provides a C++ programming interface that takes advantage of the newest features in the C++ language. For example, lambda functions provide a succinct, type-safe mechanism for defining parallel work functions. For more information about the newest C++ features that the Concurrency Runtime uses, see [Overview](../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ### Threads and Thread Pools  
- The central concurrency mechanism in the Windows API is the thread. You typically use the [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) function to create threads. Although threads are relatively easy to create and use, the operating system allocates a significant amount of time and other resources to manage them. Additionally, although each thread is guaranteed to receive the same execution time as any other thread at the same priority level, the associated overhead requires that you create sufficiently large tasks. For smaller or more fine-grained tasks, the overhead that is associated with concurrency can outweigh the benefit of running the tasks in parallel.  
+ The central concurrency mechanism in the Windows API is the thread. You typically use the [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) function to create threads. Although threads are relatively easy to create and use, the operating system allocates a significant amount of time and other resources to manage them. Additionally, although each thread is guaranteed to receive the same execution time as any other thread at the same priority level, the associated overhead requires that you create sufficiently large tasks. For smaller or more fine-grained tasks, the overhead that is associated with concurrency can outweigh the benefit of running the tasks in parallel.  
   
  Thread pools are one way to reduce the cost of thread management. Custom thread pools and the thread pool implementation that is provided by the Windows API both enable small work items to efficiently run in parallel. The Windows thread pool maintains work items in a first-in, first-out (FIFO) queue. Each work item is started in the order in which it was added to the pool.  
   
@@ -67,7 +67,7 @@ This document describes the differences between the features and programming mod
   
  In Windows 7 and Windows Server 2008 R2, the operating system further supports concurrency and scalability. For example, these operating systems support computers that have more than 64 hardware threads. An existing application that uses the Windows API must be modified to take advantage of these new features. However, an application that uses the Concurrency Runtime automatically uses these features and does not require modifications.  
   
- [base.user-mode_scheduling](http://msdn.microsoft.com/library/windows/desktop/dd627187)  
+ [base.user-mode_scheduling](https://msdn.microsoft.com/library/windows/desktop/dd627187)  
   
  [[Top](#top)]  
   

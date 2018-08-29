@@ -34,7 +34,7 @@ class CEnumeratorAccessor
 |[m_nType](#ntype)|A variable indicating whether the row describes a data source or an enumerator.|  
 |[m_szDescription](#szdescription)|The description of the data source or enumerator.|  
 |[m_szName](#szname)|The name of the data source or enumerator.|  
-|[m_szParseName](#szparsename)|String to pass to [IParseDisplayName](http://msdn.microsoft.com/library/windows/desktop/ms680604) to obtain a moniker for the data source or enumerator.|  
+|[m_szParseName](#szparsename)|String to pass to [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) to obtain a moniker for the data source or enumerator.|  
   
 ## Remarks  
  This rowset consists of the data sources and enumerators visible from the current enumerator.  
@@ -88,7 +88,7 @@ WCHAR m_szName[129];
  See [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) in the *OLE DB Programmer's Reference* for more information.  
 
 ## <a name="szparsename"></a> CEnumeratorAccessor::m_szParseName
-String to pass to [IParseDisplayName](http://msdn.microsoft.com/library/windows/desktop/ms680604) to obtain a moniker for the data source or enumerator.  
+String to pass to [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) to obtain a moniker for the data source or enumerator.  
   
 ### Syntax  
   

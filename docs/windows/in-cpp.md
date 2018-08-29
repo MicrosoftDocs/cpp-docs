@@ -24,7 +24,7 @@ Indicates that a parameter is to be passed from the calling procedure to the cal
 
 ## Remarks
 
-The **in** C++ attribute has the same functionality as the [in](http://msdn.microsoft.com/library/windows/desktop/aa367051) MIDL attribute.
+The **in** C++ attribute has the same functionality as the [in](/windows/desktop/Midl/in) MIDL attribute.
 
 ## Example
 

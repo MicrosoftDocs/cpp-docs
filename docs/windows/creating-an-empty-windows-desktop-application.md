@@ -31,4 +31,4 @@ Next, you can [add files to your empty Visual C++ project](../windows/adding-fil
 
 ## See Also
 
-[Deploying Applications](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+[Deploying Applications](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

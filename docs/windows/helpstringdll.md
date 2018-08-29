@@ -31,7 +31,7 @@ The DLL to use to perform document string lookup.
 
 ## Remarks
 
-The **helpstringdll** C++ attribute has the same functionality as the [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) MIDL attribute.
+The **helpstringdll** C++ attribute has the same functionality as the [helpstringdll](/windows/desktop/Midl/helpstringdll) MIDL attribute.
 
 ## Example
 

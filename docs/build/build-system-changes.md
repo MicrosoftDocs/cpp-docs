@@ -38,7 +38,7 @@ The MSBuild system is used to build Visual C++ projects. However, in Visual Stud
   
  In the current release, inheritance is supported by specifying the value of a property as the concatenation of one or more literal values and property macros. The **$(Inherit)** and **$(NoInherit)** macros are not supported.  
   
- In the following example, a semicolon-delimited list is assigned to a property on a property page. The list consists of the concatenation of the *\<value>* literal and the value of the `MyProperty` property, which is accessed by using the macro notation, **$(***MyProperty***)**.  
+ In the following example, a semicolon-delimited list is assigned to a property on a property page. The list consists of the concatenation of the *\<value>* literal and the value of the `MyProperty` property, which is accessed by using the macro notation, **$(**<em>MyProperty</em>**)**.  
   
 ```  
 Property=<value>;$(MyProperty)  

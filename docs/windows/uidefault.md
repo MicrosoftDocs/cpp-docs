@@ -24,7 +24,7 @@ Indicates that the type information member is the default member for display in 
 
 ## Remarks
 
-The **uidefault** C++ attribute has the same functionality as the [uidefault](http://msdn.microsoft.com/library/windows/desktop/aa367292) MIDL attribute.
+The **uidefault** C++ attribute has the same functionality as the [uidefault](/windows/desktop/Midl/uidefault) MIDL attribute.
 
 ## Example
 

@@ -41,7 +41,7 @@ class CComCoClass
 |[CComCoClass::GetObjectDescription](#getobjectdescription)|(Static) Override to return the object's description.|  
   
 ## Remarks  
- `CComCoClass` provides methods for retrieving an object's CLSID, setting error information, and creating instances of the class. Any class registered in the [object map](http://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f) should be derived from `CComCoClass`.  
+ `CComCoClass` provides methods for retrieving an object's CLSID, setting error information, and creating instances of the class. Any class registered in the [object map](https://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f) should be derived from `CComCoClass`.  
   
  `CComCoClass` also defines the default class factory and aggregation model for your object. `CComCoClass` uses the following two macros:  
   

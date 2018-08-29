@@ -478,7 +478,7 @@ virtual BOOL OnAssignKey(ACCEL* pAccel);
   
 ### Parameters  
  [in, out] *pAccel*  
- Pointer to the proposed keyboard assigment that is expressed as an [ACCEL](http://msdn.microsoft.com/library/windows/desktop/ms646340) struct.  
+ Pointer to the proposed keyboard assigment that is expressed as an [ACCEL](/windows/desktop/api/winuser/ns-winuser-tagaccel) struct.  
   
 ### Return Value  
  TRUE if the key can be assigned, or FALSE if the key cannot be assigned. The default implementation always returns TRUE.  

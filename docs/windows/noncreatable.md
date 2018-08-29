@@ -24,7 +24,7 @@ Defines an object that cannot be instantiated by itself.
 
 ## Remarks
 
-The **noncreatable** C++ attribute has the same functionality as the [noncreatable](http://msdn.microsoft.com/library/windows/desktop/aa367118) MIDL attribute and is automatically passed through to the generated .IDL file by the compiler.
+The **noncreatable** C++ attribute has the same functionality as the [noncreatable](/windows/desktop/Midl/noncreatable) MIDL attribute and is automatically passed through to the generated .IDL file by the compiler.
 
 When this attribute is used within a project that uses ATL, the behavior of the attribute changes. In addition to the above behavior, the attribute also injects the [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) macro. This macro indicates to ATL that the object cannot be created externally.
 

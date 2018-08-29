@@ -122,7 +122,7 @@ void AddBackslash();
 ```  
   
 ### Remarks  
- For more information, see [PathAddBackSlash](http://msdn.microsoft.com/library/windows/desktop/bb773561).  
+ For more information, see [PathAddBackSlash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha).  
   
 ##  <a name="addextension"></a>  CPathT::AddExtension  
  Call this method to add a file extension to a path.  
@@ -139,7 +139,7 @@ BOOL AddExtension(PCXSTR pszExtension);
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- For more information, see [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563).  
+ For more information, see [PathAddExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddextensiona).  
   
 ##  <a name="append"></a>  CPathT::Append  
  Call this method to append a string to the current path.  
@@ -156,7 +156,7 @@ BOOL Append(PCXSTR pszMore);
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- For more information, see [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565).  
+ For more information, see [PathAppend](/windows/desktop/api/shlwapi/nf-shlwapi-pathappenda).  
   
 ##  <a name="buildroot"></a>  CPathT::BuildRoot  
  Call this method to create a root path from a given drive number.  
@@ -170,7 +170,7 @@ void BuildRoot(int iDrive);
  The drive number (0 is A:, 1 is B:, and so on).  
   
 ### Remarks  
- For more information, see [PathBuildRoot](http://msdn.microsoft.com/library/windows/desktop/bb773567).  
+ For more information, see [PathBuildRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathbuildroota).  
   
 ##  <a name="canonicalize"></a>  CPathT::Canonicalize  
  Call this method to convert the path to canonical form.  
@@ -180,7 +180,7 @@ void Canonicalize();
 ```  
   
 ### Remarks  
- For more information, see [PathCanonicalize](http://msdn.microsoft.com/library/windows/desktop/bb773569).  
+ For more information, see [PathCanonicalize](/windows/desktop/api/shlwapi/nf-shlwapi-pathcanonicalizea).  
   
 ##  <a name="combine"></a>  CPathT::Combine  
  Call this method to concatenate a string representing a directory name and a string representing a file path name into one path.  
@@ -197,7 +197,7 @@ void Combine(PCXSTR pszDir, PCXSTR  pszFile);
  The file path.  
   
 ### Remarks  
- For more information, see [PathCombine](http://msdn.microsoft.com/library/windows/desktop/bb773571).  
+ For more information, see [PathCombine](/windows/desktop/api/shlwapi/nf-shlwapi-pathcombinea).  
   
 ##  <a name="commonprefix"></a>  CPathT::CommonPrefix  
  Call this method to determine whether the specified path shares a common prefix with the current path.  
@@ -214,7 +214,7 @@ CPathT<StringType> CommonPrefix(PCXSTR pszOther);
  Returns the common prefix.  
   
 ### Remarks  
- A prefix is one of these types: "C:\\\\", ".", "..", "..\\\\". For more information, see [PathCommonPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773574).  
+ A prefix is one of these types: "C:\\\\", ".", "..", "..\\\\". For more information, see [PathCommonPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathcommonprefixa).  
   
 ##  <a name="compactpath"></a>  CPathT::CompactPath  
  Call this method to truncate a file path to fit within a given pixel width by replacing path components with ellipses.  
@@ -234,7 +234,7 @@ BOOL CompactPath(HDC hDC, UINT nWidth);
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- For more information, see [PathCompactPath](http://msdn.microsoft.com/library/windows/desktop/bb773575).  
+ For more information, see [PathCompactPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpatha).  
   
 ##  <a name="compactpathex"></a>  CPathT::CompactPathEx  
  Call this method to truncate a file path to fit within a given number of characters by replacing path components with ellipses.  
@@ -254,7 +254,7 @@ BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- For more information, see [PathCompactPathEx](http://msdn.microsoft.com/library/windows/desktop/bb773578).  
+ For more information, see [PathCompactPathEx](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpathexa).  
   
 ##  <a name="cpatht"></a>  CPathT::CPathT  
  The constructor.  
@@ -283,7 +283,7 @@ BOOL FileExists() const;
  Returns TRUE if the file exists, FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathFileExists](http://msdn.microsoft.com/library/windows/desktop/bb773584).  
+ For more information, see [PathFileExists](/windows/desktop/api/shlwapi/nf-shlwapi-pathfileexistsa).  
   
 ##  <a name="findextension"></a>  CPathT::FindExtension  
  Call this method to find the position of the file extension within the path.  
@@ -296,7 +296,7 @@ int FindExtension() const;
  Returns the position of the "." preceding the extension. If no extension is found, returns -1.  
   
 ### Remarks  
- For more information, see [PathFindExtension](http://msdn.microsoft.com/library/windows/desktop/bb773587).  
+ For more information, see [PathFindExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindextensiona).  
   
 ##  <a name="findfilename"></a>  CPathT::FindFileName  
  Call this method to find the position of the file name within the path.  
@@ -309,7 +309,7 @@ int FindFileName() const;
  Returns the position of the file name. If no file name is found, returns -1.  
   
 ### Remarks  
- For more information, see [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589).  
+ For more information, see [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea).  
   
 ##  <a name="getdrivenumber"></a>  CPathT::GetDriveNumber  
  Call this method to search the path for a drive letter within the range of 'A' to 'Z' and return the corresponding drive number.  
@@ -322,7 +322,7 @@ int GetDriveNumber() const;
  Returns the drive number as an integer from 0 through 25 (corresponding to 'A' through 'Z') if the path has a drive letter, or -1 otherwise.  
   
 ### Remarks  
- For more information, see [PathGetDriveNumber](http://msdn.microsoft.com/library/windows/desktop/bb773612).  
+ For more information, see [PathGetDriveNumber](/windows/desktop/api/shlwapi/nf-shlwapi-pathgetdrivenumbera).  
   
 ##  <a name="getextension"></a>  CPathT::GetExtension  
  Call this method to get the file extension from the path.  
@@ -345,7 +345,7 @@ BOOL IsDirectory() const;
  Returns a non-zero value (16) if the path is a directory, FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathIsDirectory](http://msdn.microsoft.com/library/windows/desktop/bb773621).  
+ For more information, see [PathIsDirectory](/windows/desktop/api/shlwapi/nf-shlwapi-pathisdirectorya).  
   
 ##  <a name="isfilespec"></a>  CPathT::IsFileSpec  
  Call this method to search a path for any path-delimiting characters (for example, ':' or '\\' ). If there are no path-delimiting characters present, the path is considered to be a File Spec path.  
@@ -358,7 +358,7 @@ BOOL IsFileSpec() const;
  Returns TRUE if there are no path-delimiting characters within the path, or FALSE if there are path-delimiting characters.  
   
 ### Remarks  
- For more information, see [PathIsFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773627).  
+ For more information, see [PathIsFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathisfilespeca).  
   
 ##  <a name="isprefix"></a>  CPathT::IsPrefix  
  Call this method to determine whether a path contains a valid prefix of the type passed by *pszPrefix*.  
@@ -375,7 +375,7 @@ BOOL IsPrefix(PCXSTR pszPrefix) const;
  Returns TRUE if the path contains the prefix, or FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650).  
+ For more information, see [PathIsPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathisprefixa).  
   
 ##  <a name="isrelative"></a>  CPathT::IsRelative  
  Call this method to determine if the path is relative.  
@@ -388,7 +388,7 @@ BOOL IsRelative() const;
  Returns TRUE if the path is relative, or FALSE if it is absolute.  
   
 ### Remarks  
- For more information, see [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660).  
+ For more information, see [PathIsRelative](/windows/desktop/api/shlwapi/nf-shlwapi-pathisrelativea).  
   
 ##  <a name="isroot"></a>  CPathT::IsRoot  
  Call this method to determine if the path is a directory root.  
@@ -401,7 +401,7 @@ BOOL IsRoot() const;
  Returns TRUE if the path is a root, or FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674).  
+ For more information, see [PathIsRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathisroota).  
   
 ##  <a name="issameroot"></a>  CPathT::IsSameRoot  
  Call this method to determine whether another path has a common root component with the current path.  
@@ -418,7 +418,7 @@ BOOL IsSameRoot(PCXSTR pszOther) const;
  Returns TRUE if both strings have the same root component, or FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687).  
+ For more information, see [PathIsSameRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathissameroota).  
   
 ##  <a name="isunc"></a>  CPathT::IsUNC  
  Call this method to determine whether the path is a valid UNC (universal naming convention) path for a server and share.  
@@ -431,7 +431,7 @@ BOOL IsUNC() const;
  Returns TRUE if the path is a valid UNC path, or FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathIsUNC](http://msdn.microsoft.com/library/windows/desktop/bb773712).  
+ For more information, see [PathIsUNC](/windows/desktop/api/shlwapi/nf-shlwapi-pathisunca).  
   
 ##  <a name="isuncserver"></a>  CPathT::IsUNCServer  
  Call this method to determine whether the path is a valid UNC (universal naming convention) path for a server only.  
@@ -444,7 +444,7 @@ BOOL IsUNCServer() const;
  Returns TRUE if the string is a valid UNC path for a server only (no share name), or FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722).  
+ For more information, see [PathIsUNCServer](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncservera).  
   
 ##  <a name="isuncservershare"></a>  CPathT::IsUNCServerShare  
  Call this method to determine whether the path is a valid UNC (universal naming convention) share path, \\\ *server*\ *share*.  
@@ -457,7 +457,7 @@ BOOL IsUNCServerShare() const;
  Returns TRUE if the path is in the form \\\ *server*\ *share*, or FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723).  
+ For more information, see [PathIsUNCServerShare](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncserversharea).  
   
 ##  <a name="m_strpath"></a>  CPathT::m_strPath  
  The path.  
@@ -480,7 +480,7 @@ BOOL MakePretty();
  Returns TRUE if the path has been converted, or FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathMakePretty](http://msdn.microsoft.com/library/windows/desktop/bb773725).  
+ For more information, see [PathMakePretty](/windows/desktop/api/shlwapi/nf-shlwapi-pathmakeprettya).  
   
 ##  <a name="matchspec"></a>  CPathT::MatchSpec  
  Call this method to search the path for a string containing a wildcard match type.  
@@ -497,7 +497,7 @@ BOOL MatchSpec(PCXSTR pszSpec) const;
  Returns TRUE if the string matches, or FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727).  
+ For more information, see [PathMatchSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathmatchspeca).  
   
 ##  <a name="operator_add_eq"></a>  CPathT::operator +=  
  This operator appends a string to the path.  
@@ -571,7 +571,7 @@ void QuoteSpaces();
 ```  
   
 ### Remarks  
- For more information, see [PathQuoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773739).  
+ For more information, see [PathQuoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathquotespacesa).  
   
 ##  <a name="relativepathto"></a>  CPathT::RelativePathTo  
  Call this method to create a relative path from one file or folder to another.  
@@ -601,7 +601,7 @@ BOOL RelativePathTo(
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- For more information, see [PathRelativePathTo](http://msdn.microsoft.com/library/windows/desktop/bb773740).  
+ For more information, see [PathRelativePathTo](/windows/desktop/api/shlwapi/nf-shlwapi-pathrelativepathtoa).  
   
 ##  <a name="removeargs"></a>  CPathT::RemoveArgs  
  Call this method to remove any command-line arguments from the path.  
@@ -611,7 +611,7 @@ void RemoveArgs();
 ```  
   
 ### Remarks  
- For more information, see [PathRemoveArgs](http://msdn.microsoft.com/library/windows/desktop/bb773742).  
+ For more information, see [PathRemoveArgs](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveargsa).  
   
 ##  <a name="removebackslash"></a>  CPathT::RemoveBackslash  
  Call this method to remove the trailing backslash from the path.  
@@ -621,7 +621,7 @@ void RemoveBackslash();
 ```  
   
 ### Remarks  
- For more information, see [PathRemoveBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773743).  
+ For more information, see [PathRemoveBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovebackslasha).  
   
 ##  <a name="removeblanks"></a>  CPathT::RemoveBlanks  
  Call this method to remove all leading and trailing spaces from the path.  
@@ -631,7 +631,7 @@ void RemoveBlanks();
 ```  
   
 ### Remarks  
- For more information, see [PathRemoveBlanks](http://msdn.microsoft.com/library/windows/desktop/bb773745).  
+ For more information, see [PathRemoveBlanks](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveblanksa).  
   
 ##  <a name="removeextension"></a>  CPathT::RemoveExtension  
  Call this method to remove the file extension from the path, if there is one.  
@@ -641,7 +641,7 @@ void RemoveExtension();
 ```  
   
 ### Remarks  
- For more information, see [PathRemoveExtension](http://msdn.microsoft.com/library/windows/desktop/bb773746).  
+ For more information, see [PathRemoveExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveextensiona).  
   
 ##  <a name="removefilespec"></a>  CPathT::RemoveFileSpec  
  Call this method to remove the trailing file name and backslash from the path, if it has them.  
@@ -654,7 +654,7 @@ BOOL RemoveFileSpec();
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- For more information, see [PathRemoveFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773748).  
+ For more information, see [PathRemoveFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovefilespeca).  
   
 ##  <a name="renameextension"></a>  CPathT::RenameExtension  
  Call this method to replace the file name extension in the path with a new extension. If the file name does not contain an extension, the extension will be attached to the end of the path.  
@@ -671,7 +671,7 @@ BOOL RenameExtension(PCXSTR pszExtension);
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- For more information, see [PathRenameExtension](http://msdn.microsoft.com/library/windows/desktop/bb773749).  
+ For more information, see [PathRenameExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathrenameextensiona).  
   
 ##  <a name="skiproot"></a>  CPathT::SkipRoot  
  Call this method to parse a path, ignoring the drive letter or UNC (universal naming convention) server/share path parts.  
@@ -684,7 +684,7 @@ int SkipRoot() const;
  Returns the position of the beginning of the subpath that follows the root (drive letter or UNC server/share).  
   
 ### Remarks  
- For more information, see [PathSkipRoot](http://msdn.microsoft.com/library/windows/desktop/bb773754).  
+ For more information, see [PathSkipRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathskiproota).  
   
 ##  <a name="strippath"></a>  CPathT::StripPath  
  Call this method to remove the path portion of a fully qualified path and file name.  
@@ -694,7 +694,7 @@ void StripPath();
 ```  
   
 ### Remarks  
- For more information, see [PathStripPath](http://msdn.microsoft.com/library/windows/desktop/bb773756).  
+ For more information, see [PathStripPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathstrippatha).  
   
 ##  <a name="striptoroot"></a>  CPathT::StripToRoot  
  Call this method to remove all parts of the path except for the root information.  
@@ -707,7 +707,7 @@ BOOL StripToRoot();
  Returns TRUE if a valid drive letter was found in the path, or FALSE otherwise.  
   
 ### Remarks  
- For more information, see [PathStripToRoot](http://msdn.microsoft.com/library/windows/desktop/bb773757).  
+ For more information, see [PathStripToRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathstriptoroota).  
   
 ##  <a name="unquotespaces"></a>  CPathT::UnquoteSpaces  
  Call this method to remove quotation marks from the beginning and end of a path.  
@@ -717,7 +717,7 @@ void UnquoteSpaces();
 ```  
   
 ### Remarks  
- For more information, see [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763).  
+ For more information, see [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa).  
   
 ##  <a name="xchar"></a>  CPathT::XCHAR  
  A character type.  

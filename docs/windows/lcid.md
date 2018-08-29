@@ -24,7 +24,7 @@ Lets you pass a locale identifier to a function.
 
 ## Remarks
 
-The **lcid** C++ attribute implements the functionality of the [lcid](http://msdn.microsoft.com/library/windows/desktop/aa367067) MIDL attribute. If you want to implement locale for a library block, use the **lcid=**`lcid` parameter to the [module](../windows/module-cpp.md) attribute.
+The **lcid** C++ attribute implements the functionality of the [lcid](/windows/desktop/Midl/lcid) MIDL attribute. If you want to implement locale for a library block, use the **lcid=**`lcid` parameter to the [module](../windows/module-cpp.md) attribute.
 
 ## Example
 

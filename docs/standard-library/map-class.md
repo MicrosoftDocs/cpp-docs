@@ -30,18 +30,18 @@ class map;
 
 ### Parameters
 
-*Key*
+*Key*<br/>
  The key data type to be stored in the map.
 
-*Type*
+*Type*<br/>
  The element data type to be stored in the map.
 
-*Traits*
+*Traits*<br/>
  The type that provides a function object that can compare two element values as sort keys to determine their relative order in the map. This argument is optional and the binary predicate `less<Key>` is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the std::less<> predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
-*Allocator*
+*Allocator*<br/>
  The type that represents the stored allocator object that encapsulates details about the map's allocation and deallocation of memory. This argument is optional and the default value is `allocator<pair<const Key, Type> >`.
 
 ## Remarks
@@ -483,7 +483,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key value of the elements to be matched from the map.
 
 ### Return Value
@@ -947,7 +947,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key value to be compared with the sort key of an element from the map being searched.
 
 ### Return Value
@@ -1034,16 +1034,16 @@ size_type erase(
 
 ### Parameters
 
-*Where*
+*Where*<br/>
  Position of the element to be removed.
 
-*First*
+*First*<br/>
  Position of the first element to be removed.
 
-*Last*
+*Last*<br/>
  Position just beyond the last element to be removed.
 
-*Key*
+*Key*<br/>
  The key value of the elements to be removed.
 
 ### Return Value
@@ -1146,7 +1146,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key value to be matched by the sort key of an element from the map being searched.
 
 ### Return Value
@@ -1479,11 +1479,11 @@ typedef implementation-defined iterator;
 
 ### Remarks
 
-The `iterator` defined by map points to elements that are objects of [value_type](#value_type), that is of type `pair`*\<***constKey**, **Type***>*, whose first member is the key to the element and whose second member is the mapped datum held by the element.
+The iterator defined by map points to elements that are objects of [value_type](#value_type), that is of type `pair<const Key, Type>`, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
-To dereference an **iterator**`Iter` pointing to an element in a map, use the `->` operator.
+To dereference an iterator *Iter* pointing to an element in a map, use the `->` operator.
 
-To access the value of the key for the element, use `Iter` -> **first**, which is equivalent to (\* `Iter`). **first**. To access the value of the mapped datum for the element, use `Iter` -> **second**, which is equivalent to (\* `Iter`). **second**.
+To access the value of the key for the element, use `Iter->first`, which is equivalent to `(*Iter).first`. To access the value of the mapped datum for the element, use `Iter->second`, which is equivalent to `(*Iter).second`.
 
 ### Example
 
@@ -1505,7 +1505,7 @@ Returns the function object that a map uses to order its elements.
 
 The stored object defines the member function
 
-**bool operator**( **constKey&**`left`, **const Key&**`right`);
+`bool operator(const Key& left, const Key& right);`
 
 which returns **true** if `left` precedes and is not equal to `right` in the sort order.
 
@@ -1608,7 +1608,7 @@ const_iterator lower_bound(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key value to be compared with the sort key of an element from the map being searched.
 
 ### Return Value
@@ -2321,9 +2321,9 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 A type `reverse_iterator` cannot modify the value of an element and is use to iterate through the map in reverse.
 
-The `reverse_iterator` defined by map points to elements that are objects of [value_type](#value_type), that is of type `pair`*\<***constKey**, **Type***>*, whose first member is the key to the element and whose second member is the mapped datum held by the element.
+The `reverse_iterator` defined by map points to elements that are objects of [value_type](#value_type), that is of type `pair<const Key, Type>`, whose first member is the key to the element and whose second member is the mapped datum held by the element.
 
-To dereference a `reverse_iterator` `rIter` pointing to an element in a map, use the `->` operator.
+To dereference a `reverse_iterator` *rIter* pointing to an element in a map, use the `->` operator.
 
 To access the value of the key for the element, use `rIter` -> **first**, which is equivalent to (\* `rIter`). **first**. To access the value of the mapped datum for the element, use `rIter` -> **second**, which is equivalent to (\* `rIter`). **first**.
 
@@ -2398,7 +2398,7 @@ void swap(
 
 ### Parameters
 
-*right*
+*right*<br/>
  The argument map providing the elements to be swapped with the target map.
 
 ### Remarks
@@ -2469,7 +2469,7 @@ const_iterator upper_bound(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key value to be compared with the sort key value of an element from the map being searched.
 
 ### Return Value
@@ -2659,7 +2659,7 @@ int main( )
 
 ## See also
 
-[\<map> Members](http://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
+[\<map> Members](https://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
 [Containers](../cpp/containers-modern-cpp.md)<br/>
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standard Library Reference](../standard-library/cpp-standard-library-reference.md)<br/>

@@ -42,4 +42,4 @@ MFC or ATL
 ## See Also
 
 [Resource Editors](../windows/resource-editors.md)  
-[Menus and Other Resources](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+[Menus and Other Resources](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
