@@ -237,7 +237,7 @@ int main()
  A pointer to a function can be converted to type `void *`, if type `void *` is large enough to hold that pointer.  
   
 ### Pointer to void  
- Pointers to type **void** can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). (See [Expressions with Explicit Type Conversions](https://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about type casts.) A pointer to any type can be converted implicitly to a pointer to type **void**.A pointer to an incomplete object of a type can be converted to a pointer to **void** (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it is declared, but there is insufficient information available to determine its size or base class.  
+ Pointers to type **void** can be converted to pointers to any other type, but only with an explicit type cast (unlike in C). A pointer to any type can be converted implicitly to a pointer to type **void**.A pointer to an incomplete object of a type can be converted to a pointer to **void** (implicitly) and back (explicitly). The result of such a conversion is equal to the value of the original pointer. An object is considered incomplete if it is declared, but there is insufficient information available to determine its size or base class.  
   
  A pointer to any object that is not **const** or **volatile** can be implicitly converted to a pointer of type `void *`.  
   
