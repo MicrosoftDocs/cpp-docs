@@ -40,9 +40,6 @@ Describes the resource editors provided in Visual Studio, the types of resources
 [Visual C++](../visual-cpp-in-visual-studio.md)  
 Provides links into the Visual C++ documentation.
 
-[Introducing Visual Studio](https://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
-Describes the complete set of development tools that all use the same integrated development environment (IDE), allowing them to share tools and facilitates in the creation of mixed-language solutions.
-
 [Talk to Us](/visualstudio/ide/talk-to-us)  
 Provides links to information on using the documentation set, contacting product support, and employing accessibility features.
 

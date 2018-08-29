@@ -17,10 +17,10 @@ ms.workload: ["cplusplus", "uwp"]
 
 1. From the **Edit** menu, choose **Find Symbol**.
 
-2. In the [Find Symbol dialog box](https://msdn.microsoft.com/63e93d9c-784f-418d-a76a-723da5ff5d96), in the **Find What** box, select a previous search string from the drop-down list or type the accelerator key you want to find (for example, ID_ACCEL1).
+2. In the [Find Symbol dialog box](/visualstudio/ide/go-to), in the **Find What** box, select a previous search string from the drop-down list or type the accelerator key you want to find (for example, ID_ACCEL1).
 
    > [!TIP]
-   > To use [regular expressions](/visualstudio/ide/using-regular-expressions-in-visual-studio) for your search, you must use the [Find in Files command](/visualstudio/ide/reference/find-command) from the **Edit** menu instead of the **Find Symbol** command. To enable regular expressions, you must have the **Use: Regular Expressions** check box selected in the [Find dialog box](https://msdn.microsoft.com/dad03582-4931-4893-83ba-84b37f5b1600). Then you can click the right-arrow button to the right of the **Find What** box to display a list of regular search expressions. When you select an expression from this list, it is substituted as the search text in the **Find What** box.
+   > To use [regular expressions](/visualstudio/ide/using-regular-expressions-in-visual-studio) for your search, you must use the [Find in Files command](/visualstudio/ide/reference/find-command) from the **Edit** menu instead of the **Find Symbol** command. To enable regular expressions, you must have the **Use: Regular Expressions** check box selected in the [Find dialog box](/visualstudio/ide/finding-and-replacing-text). Then you can click the right-arrow button to the right of the **Find What** box to display a list of regular search expressions. When you select an expression from this list, it is substituted as the search text in the **Find What** box.
 
 3. Select any of the **Find** options.
 
