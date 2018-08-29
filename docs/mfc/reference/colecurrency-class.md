@@ -106,7 +106,7 @@ COleCurrency(
   
 - COleCurrency() Constructs a `COleCurrency` object initialized to 0 (zero).  
   
-- COleCurrency(`cySrc`) Constructs a `COleCurrency` object from a [CURRENCY](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) value.  
+- COleCurrency(`cySrc`) Constructs a `COleCurrency` object from a [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) value.  
   
 - COleCurrency(`curSrc`) Constructs a `COleCurrency` object from an existing `COleCurrency` object. The new object has the same status as the source object.  
   
@@ -114,7 +114,7 @@ COleCurrency(
   
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency` object from the specified numerical components. If the absolute value of the fractional part is greater than 10,000, the appropriate adjustment is made to the units. Note that the units and fractional part are specified by signed long values.  
   
- For more information, see the [CURRENCY](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entries in the Windows SDK.  
+ For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) and [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entries in the Windows SDK.  
   
 ### Example  
  The following examples show the effects of the zero-parameter and two-parameter constructors:  
@@ -203,14 +203,14 @@ enum CurrencyStatus {
  [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]  
   
 ##  <a name="m_cur"></a>  COleCurrency::m_cur  
- The underlying [CURRENCY](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) structure for this `COleCurrency` object.  
+ The underlying [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) structure for this `COleCurrency` object.  
   
 ### Remarks  
   
 > [!CAUTION]
 >  Changing the value in the `CURRENCY` structure accessed by the pointer returned by this function will change the value of this `COleCurrency` object. It does not change the status of this `COleCurrency` object.  
   
- For more information, see the [CURRENCY](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) entry in the Windows SDK.  
+ For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) entry in the Windows SDK.  
   
 ##  <a name="m_status"></a>  COleCurrency::m_status  
  The type of this data member is the enumerated type `CurrencyStatus`, which is defined within the `COleCurrency` class.  
@@ -277,7 +277,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
   
 - **operator =(** *varSrc* **)** If the conversion of the `VARIANT` value (or [COleVariant](../../mfc/reference/colevariant-class.md) object) to a currency ( `VT_CY`) is successful, the converted value is copied into this `COleCurrency` object and its status is set to valid. If the conversion is not successful, the value of the `COleCurrency` object is set to 0 and its status to invalid.  
   
- For more information, see the [CURRENCY](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) and [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entries in the Windows SDK.  
+ For more information, see the [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy) and [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) entries in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  

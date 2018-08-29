@@ -37,5 +37,5 @@ An MFC DLL is a binary file that acts as a shared library of functions that can 
  [Visual C++ Project Types](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)   
  [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Property Pages](../../ide/property-pages-visual-cpp.md)   
- [Deploying Applications](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+
 

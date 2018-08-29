@@ -62,7 +62,7 @@ This topic describes how to add a toolbar button that contains a Windows control
   
     1.  Pass the `ID_EDIT_FIND_COMBO` as the command ID.  
   
-    2.  Use [CCommandManager::GetCmdImage](https://msdn.microsoft.com/4094d08e-de74-4398-a483-76d27a742dca) with `ID_EDIT_FIND` to obtain the image index.  
+    2.  Use [CCommandManager::GetCmdImage](reference/internal-classes.md) with `ID_EDIT_FIND` to obtain the image index.  
   
     3.  For a list of available combo box styles, see [Combo-Box Styles](../mfc/reference/styles-used-by-mfc.md#combo-box-styles).  
   

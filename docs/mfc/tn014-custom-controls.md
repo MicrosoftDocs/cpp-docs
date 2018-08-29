@@ -110,7 +110,7 @@ The most typical example of a self-drawing button is a bitmap button. A bitmap b
 
 Occasionally you will want to change the functionality of an object that already exists. The previous examples required you to customize the controls before they were created. Dynamic subclassing enables you to customize a control that has already been created.
 
-Subclassing is the Windows term for replacing the [WndProc](https://msdn.microsoft.com/94ba8ffa-3c36-46d4-ac74-9bd10b1ffd26) of a window with a customized `WndProc` and calling the old `WndProc` for default functionality.
+Subclassing is the Windows term for replacing the <xref:System.Windows.Forms.Control.WndProc> of a window with a customized `WndProc` and calling the old `WndProc` for default functionality.
 
 This should not be confused with C++ class derivation. For clarification, the C++ terms *base class* and *derived class* are analogous to *superclass* and *subclass* in the Windows object model. C++ derivation with MFC and Windows subclassing are functionally similar, except C++ does not support dynamic subclassing.
 

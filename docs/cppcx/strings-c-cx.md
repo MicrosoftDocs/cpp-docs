@@ -68,5 +68,3 @@ void GetDecodedStrings(std::vector<std::wstring> strings)
 }  
 ```  
   
-## See Also  
- [Built-in Types](https://msdn.microsoft.com/acc196fd-09da-4882-b554-6c94685ec75f)
