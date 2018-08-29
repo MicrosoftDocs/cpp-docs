@@ -19,11 +19,11 @@ The following table shows the mandatory and optional interfaces defined by OLE D
 |`IDBCreateSession`|Mandatory|Yes|  
 |`IDBInitialize`|Mandatory|Yes|  
 |`IDBProperties`|Mandatory|Yes|  
-|[IPersist](http://msdn.microsoft.com/library/windows/desktop/ms688695)|Mandatory|Yes|  
-|[IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)|Optional|No|  
+|[IPersist](/windows/desktop/api/objidl/nn-objidl-ipersist)|Mandatory|Yes|  
+|[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Optional|No|  
 |`IDBDataSourceAdmin`|Optional|No|  
 |`IDBInfo`|Optional|No|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Optional|No|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Optional|No|  
 |`ISupportErrorInfo`|Optional|No|  
   
  The data source object implements the `IDBProperties`, `IDBInitialize`, and `IDBCreateSession` interfaces through inheritance. You can choose to support additional functionality by inheriting or not inheriting from one of these implementation classes. If you want to support the `IDBDataSourceAdmin` interface, you must inherit from the `IDBDataSourceAdminImpl` class.  

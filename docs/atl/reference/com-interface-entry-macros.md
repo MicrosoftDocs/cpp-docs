@@ -26,7 +26,7 @@ ms.workload: ["cplusplus"]
 |[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|Same as [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), except that querying for any IID results in forwarding the query to *punk*.|  
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|Same as [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), except if *punk* is NULL, it automatically creates the aggregate described by the *clsid*.|  
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|Same as [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate), except that querying for any IID results in forwarding the query to *punk*, and if *punk* is NULL, automatically creating the aggregate described by the *clsid*.|  
-|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Causes your program to call [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297) when the specified interface is queried for.|  
+|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Causes your program to call [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) when the specified interface is queried for.|  
 |[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|Saves the interface-specific data for every instance.|  
 |[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|Exposes your tear-off interfaces.|  
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|Processes the COM map of the base class when the processing reaches this entry in the COM map.|  
@@ -208,7 +208,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
  [!code-cpp[NVC_ATL_Windowing#115](../../atl/codesnippet/cpp/com-map-macros_7.h)]  
   
 ##  <a name="com_interface_entry_break"></a>  COM_INTERFACE_ENTRY_BREAK  
- Causes your program to call [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297) when the specified interface is queried for.  
+ Causes your program to call [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) when the specified interface is queried for.  
   
 ```
 COM_INTERFACE_ENTRY_BREAK(x)

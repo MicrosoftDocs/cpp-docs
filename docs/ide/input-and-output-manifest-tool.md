@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # Input and Output, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
 
-Use this dialog box to specify input and output options for [Mt.exe](http://msdn.microsoft.com/library/aa375649).
+Use this dialog box to specify input and output options for [Mt.exe](/windows/desktop/SbsCs/mt-exe).
 
 To access this property page dialog box, open the property pages for your project or your property sheet. Expand the **Manifest Tool** node under **Configuration Properties**, and then select **Input and Output**.
 

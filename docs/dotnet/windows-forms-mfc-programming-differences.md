@@ -54,4 +54,4 @@ The topics in [Using a Windows Form User Control in MFC](../dotnet/using-a-windo
   
 ## See Also  
  [Using a Windows Form User Control in MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)   
- [Windows Forms Walkthroughs](http://msdn.microsoft.com/en-us/fd44d13d-4733-416f-aefc-32592e59e5d9)
+ [Windows Forms Walkthroughs](https://msdn.microsoft.com/fd44d13d-4733-416f-aefc-32592e59e5d9)

@@ -603,7 +603,7 @@ DWORD GetListBoxInfo() const;
  Number of items per column of the `CListBox` object.  
   
 ### Remarks  
- This member function emulates the functionality of the [LB_GETLISTBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775208) message, as described in the Windows SDK.  
+ This member function emulates the functionality of the [LB_GETLISTBOXINFO](/windows/desktop/Controls/lb-getlistboxinfo) message, as described in the Windows SDK.  
   
 ##  <a name="getlocale"></a>  CListBox::GetLocale  
  Retrieves the locale used by the list box.  

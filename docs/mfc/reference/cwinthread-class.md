@@ -41,7 +41,7 @@ class CWinThread : public CCmdTarget
 |[CWinThread::IsIdleMessage](#isidlemessage)|Checks for special messages.|  
 |[CWinThread::OnIdle](#onidle)|Override to perform thread-specific idle-time processing.|  
 |[CWinThread::PostThreadMessage](#postthreadmessage)|Posts a message to another `CWinThread` object.|  
-|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934).|  
+|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).|  
 |[CWinThread::ProcessMessageFilter](#processmessagefilter)|Intercepts certain messages before they reach the application.|  
 |[CWinThread::ProcessWndProcException](#processwndprocexception)|Intercepts all unhandled exceptions thrown by the thread's message and command handlers.|  
 |[CWinThread::PumpMessage](#pumpmessage)|Contains the thread's message loop.|  
@@ -113,7 +113,7 @@ BOOL CreateThread(
  Specifies the size in bytes of the stack for the new thread. If **0**, the stack size defaults to the same size as that of the process's primary thread.  
   
  *lpSecurityAttrs*  
- Points to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies the security attributes for the thread.  
+ Points to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that specifies the security attributes for the thread.  
   
 ### Return Value  
  Nonzero if the thread is created successfully; otherwise 0.  
@@ -139,7 +139,7 @@ virtual int ExitInstance();
 ```  
   
 ### Return Value  
- The thread's exit code; 0 indicates no errors, and values greater than 0 indicate an error. This value can be retrieved by calling [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190).  
+ The thread's exit code; 0 indicates no errors, and values greater than 0 indicate an error. This value can be retrieved by calling [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).  
   
 ### Remarks  
  Do not call this member function from anywhere but within the `Run` member function. This member function is used only in user-interface threads.  
@@ -189,7 +189,7 @@ int GetThreadPriority();
   
 - THREAD_PRIORITY_IDLE  
   
- For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
+ For more information on these priorities, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.  
   
 ##  <a name="initinstance"></a>  CWinThread::InitInstance  
  `InitInstance` must be overridden to initialize each new instance of a user-interface thread.  
@@ -353,10 +353,10 @@ BOOL PostThreadMessage(
  The posted message is mapped to the proper message handler by the message map macro ON_THREAD_MESSAGE.  
   
 > [!NOTE]
->  When calling the Windows [PostThreadMessage](http://msdn.microsoft.com/library/windows/desktop/ms644946) function within an MFC application, the MFC message handlers are not called. For more information, see the Knowledge Base article, "PRB: MFC Message Handler Not Called with PostThreadMessage()" (Q142415).  
+>  When calling the Windows [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946) function within an MFC application, the MFC message handlers are not called. For more information, see the Knowledge Base article, "PRB: MFC Message Handler Not Called with PostThreadMessage()" (Q142415).  
   
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage  
- Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934).  
+ Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).  
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -462,10 +462,10 @@ virtual int Run();
 ```  
   
 ### Return Value  
- An **int** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190).  
+ An **int** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).  
   
 ### Remarks  
- `Run` acquires and dispatches Windows messages until the application receives a [WM_QUIT](http://msdn.microsoft.com/library/windows/desktop/ms632641) message. If the thread's message queue currently contains no messages, `Run` calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) for standard keyboard translation. Finally, the [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows function is called.  
+ `Run` acquires and dispatches Windows messages until the application receives a [WM_QUIT](/windows/desktop/winmsg/wm-quit) message. If the thread's message queue currently contains no messages, `Run` calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) for standard keyboard translation. Finally, the [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows function is called.  
   
  `Run` is rarely overridden, but you can override it to implement special behavior.  
   
@@ -496,7 +496,7 @@ BOOL SetThreadPriority(int nPriority);
   
 - THREAD_PRIORITY_IDLE  
   
- For more information on these priorities, see [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) in the Windows SDK.  
+ For more information on these priorities, see [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if function was successful; otherwise 0.  

@@ -1,6 +1,6 @@
 --- 
 layout: HubPage
-ms.topic: hub-page
+ms.topic: conceptual
 title: Visual C++ Documentation | Microsoft Docs
 description: Learn how to use C++ to develop applications, services, and tools for your platforms and devices.
 author: "mikeblome"
@@ -153,7 +153,7 @@ ms.workload: ["cplusplus"]
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/windows/uwp/gaming/e2e">
+                                <a href="https://msdn.microsoft.com/windows/uwp/gaming/e2e">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

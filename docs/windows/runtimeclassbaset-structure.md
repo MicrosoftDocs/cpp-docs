@@ -47,5 +47,5 @@ Provides helper methods for `QueryInterface` operations and getting interface ID
 
 ## See Also
 
-[Reference (Windows Runtime Library)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)  
+[Reference (Windows Runtime Library)](https://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)  
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

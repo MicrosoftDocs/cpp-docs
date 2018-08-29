@@ -54,11 +54,11 @@ class CTokenGroups
 |[CTokenGroups::operator =](#operator_eq)|Assignment operator.|  
   
 ## Remarks  
- An [access token](http://msdn.microsoft.com/library/windows/desktop/aa374909) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.  
+ An [access token](/windows/desktop/SecAuthZ/access-tokens) is an object that describes the security context of a process or thread and is allocated to each user logged onto a Windows system.  
   
- The `CTokenGroups` class is a wrapper for the [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure, containing information about the group security identifiers (SIDs) in an access token.  
+ The `CTokenGroups` class is a wrapper for the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure, containing information about the group security identifiers (SIDs) in an access token.  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
+ For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -79,7 +79,7 @@ void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
  The attributes to associate with the `CSid` object.  
   
  *rTokenGroups*  
- A [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure.  
+ A [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure.  
   
 ### Remarks  
  These methods add one or more `CSid` objects and their associated attributes to the `CTokenGroups` object.  
@@ -95,7 +95,7 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
   
 ### Parameters  
  *rhs*  
- The `CTokenGroups` object or [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure with which to construct the `CTokenGroups` object.  
+ The `CTokenGroups` object or [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure with which to construct the `CTokenGroups` object.  
   
 ### Remarks  
  The `CTokenGroups` object can optionally be created using a `TOKEN_GROUPS` structure or a previously defined `CTokenGroups` object.  
@@ -159,7 +159,7 @@ const TOKEN_GROUPS* GetPTOKEN_GROUPS() const throw(...);
 ```  
   
 ### Return Value  
- Retrieves a pointer to the [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure belonging to the `CTokenGroups` access token object.  
+ Retrieves a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure belonging to the `CTokenGroups` access token object.  
   
 ##  <a name="getsidsandattributes"></a>  CTokenGroups::GetSidsAndAttributes  
  Retrieves the `CSid` objects and (optionally) the attributes belonging to the `CTokenGroups` object.  
@@ -212,7 +212,7 @@ CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
   
 ### Parameters  
  *rhs*  
- The `CTokenGroups` object or [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure to assign to the `CTokenGroups` object.  
+ The `CTokenGroups` object or [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure to assign to the `CTokenGroups` object.  
   
 ### Return Value  
  Returns the updated `CTokenGroups` object.  
@@ -225,7 +225,7 @@ operator const TOKEN_GROUPS *() const throw(...);
 ```  
   
 ### Remarks  
- Casts a value to a pointer to the [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) structure.  
+ Casts a value to a pointer to the [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) structure.  
   
 ## See Also  
  [Security Sample](../../visual-cpp-samples.md)   

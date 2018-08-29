@@ -27,7 +27,7 @@ Microsoft OLE DB is a legacy technology; for new applications it is the required
 |OLE DB templates classes and macros|[OLE DB Templates Reference](../../data/oledb/ole-db-templates.md) (Visual C++)|  
 |OLE DB consumer attributes|[OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)|  
 |OLE DB interfaces|[OLE DB programmer's reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) (in the Windows SDK)|  
-|OLE DB templates samples|[OLE DB Templates Samples](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)| 
+|OLE DB templates samples|[OLE DB Templates Samples](https://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)| 
 |Data access programming overview (Visual C++)|[Data Access Programming](../../data/data-access-programming-mfc-atl.md)|  
 |ODBC conceptual topics|[Open Database Connectivity (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  
 

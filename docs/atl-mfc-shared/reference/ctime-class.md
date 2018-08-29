@@ -36,7 +36,7 @@ class CTime
 |[CTime::Format](#format)|Converts a `CTime` object into a formatted string — based on the local time zone.|  
 |[CTime::FormatGmt](#formatgmt)|Converts a `CTime` object into a formatted string — based on UTC.|  
 |[CTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Converts the time information stored in the `CTime` object to a Win32-compatible DBTIMESTAMP structure.|  
-|[CTime::GetAsSystemTime](#getassystemtime)|Converts the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.|  
+|[CTime::GetAsSystemTime](#getassystemtime)|Converts the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure.|  
 |[CTime::GetCurrentTime](#getcurrenttime)|Creates a `CTime` object that represents the current time (static member function).|  
 |[CTime::GetDay](#getday)|Returns the day represent by the `CTime` object.|  
 |[CTime::GetDayOfWeek](#getdayofweek)|Returns the day of the week represented by the `CTime` object.|  
@@ -180,7 +180,7 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
     > [!NOTE]
     >  The constructor using `DBTIMESTAMP` parameter is only available when OLEDB.h is included.  
   
- For more information, see the [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure in the Windows SDK. Also see the [MS-DOS Date and Time](http://msdn.microsoft.com/library/windows/desktop/ms724503) entry in the Windows SDK.  
+ For more information, see the [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) and [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure in the Windows SDK. Also see the [MS-DOS Date and Time](/windows/desktop/SysInfo/ms-dos-date-and-time) entry in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#148](../../atl-mfc-shared/codesnippet/cpp/ctime-class_2.cpp)]  
@@ -258,7 +258,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#150](../../atl-mfc-shared/codesnippet/cpp/ctime-class_4.cpp)]  
   
 ##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime  
- Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure.  
+ Call this member function to convert the time information stored in the `CTime` object to a Win32-compatible [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure.  
   
 ```  
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();
@@ -266,7 +266,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
   
 ### Parameters  
  *timeDest*  
- A reference to a [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will hold the converted date/time value of the `CTime` object.  
+ A reference to a [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) structure that will hold the converted date/time value of the `CTime` object.  
   
 ### Return Value  
  TRUE if successful; otherwise FALSE.  

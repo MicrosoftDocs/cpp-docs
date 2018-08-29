@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComContainedObject Class
-This class implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) by delegating to the owner object's `IUnknown`.  
+This class implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) by delegating to the owner object's `IUnknown`.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -48,7 +48,7 @@ class CComContainedObject : public Base
 |[CComContainedObject::Release](#release)|Decrements the reference count on the owner object.|  
   
 ## Remarks  
- ATL uses `CComContainedObject` in classes [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), and [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` implements [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) by delegating to the owner object's `IUnknown`. (The owner is either the outer object of an aggregation, or the object for which a tear-off interface is being created.) `CComContainedObject` calls `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease`, all inherited through `Base`.  
+ ATL uses `CComContainedObject` in classes [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), and [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` implements [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) by delegating to the owner object's `IUnknown`. (The owner is either the outer object of an aggregation, or the object for which a tear-off interface is being created.) `CComContainedObject` calls `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, and `OuterRelease`, all inherited through `Base`.  
   
 ## Inheritance Hierarchy  
  `Base`  

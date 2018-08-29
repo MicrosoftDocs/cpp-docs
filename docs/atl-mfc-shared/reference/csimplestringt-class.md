@@ -430,11 +430,11 @@ PXSTR GetBufferSetLength(int nLength);
   
  For more information about reference counting, see the following articles:  
   
-- [Managing Object Lifetimes through Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms687260) in the Windows SDK. 
+- [Managing Object Lifetimes through Reference Counting](/windows/desktop/com/managing-object-lifetimes-through-reference-counting) in the Windows SDK. 
   
-- [Implementing Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms693431) in the Windows SDK.
+- [Implementing Reference Counting](/windows/desktop/com/implementing-reference-counting) in the Windows SDK.
   
-- [Rules for Managing Reference Counts](http://msdn.microsoft.com/library/windows/desktop/ms692481) in the Windows SDK.  
+- [Rules for Managing Reference Counts](/windows/desktop/com/rules-for-managing-reference-counts) in the Windows SDK.  
   
 ### Example  
  The following example demonstrates the use of `CSimpleStringT::GetBufferSetLength`.  
@@ -558,11 +558,11 @@ PXSTR LockBuffer();
   
  For more information about reference counting, see the following articles:  
   
-- [Managing Object Lifetimes through Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms687260) in the Windows SDK  
+- [Managing Object Lifetimes through Reference Counting](/windows/desktop/com/managing-object-lifetimes-through-reference-counting) in the Windows SDK  
   
-- [Implementing Reference Counting](http://msdn.microsoft.com/library/windows/desktop/ms693431) in the Windows SDK  
+- [Implementing Reference Counting](/windows/desktop/com/implementing-reference-counting) in the Windows SDK  
   
-- [Rules for Managing Reference Counts](http://msdn.microsoft.com/library/windows/desktop/ms692481) in the Windows SDK  
+- [Rules for Managing Reference Counts](/windows/desktop/com/rules-for-managing-reference-counts) in the Windows SDK  
   
 ### Example  
  The following example demonstrates the use of `CSimpleStringT::LockBuffer`.  

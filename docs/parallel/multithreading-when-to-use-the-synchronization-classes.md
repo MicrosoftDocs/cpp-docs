@@ -1,7 +1,7 @@
 ---
-title: "Multithreading: When to Use the Synchronization Classes | Microsoft Docs"
+title: "Multithreading: When to Use the MFC Synchronization Classes | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/27/2018"
 ms.technology: ["cpp-parallel"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
-# Multithreading: When to Use the Synchronization Classes
+# Multithreading: When to Use the MFC Synchronization Classes
 The multithreaded classes provided with MFC fall into two categories: synchronization objects ([CSyncObject](../mfc/reference/csyncobject-class.md), [CSemaphore](../mfc/reference/csemaphore-class.md), [CMutex](../mfc/reference/cmutex-class.md), [CCriticalSection](../mfc/reference/ccriticalsection-class.md), and [CEvent](../mfc/reference/cevent-class.md)) and synchronization access objects ([CMultiLock](../mfc/reference/cmultilock-class.md) and [CSingleLock](../mfc/reference/csinglelock-class.md)).  
   
 Synchronization classes are used when access to a resource must be controlled to ensure integrity of the resource. Synchronization access classes are used to gain access to these controlled resources. This topic describes when to use each class.  
@@ -44,8 +44,8 @@ This example application uses all three types of synchronization classes. Becaus
  
 Choosing which synchronization access class to use is even simpler. If your application is concerned with accessing a single controlled resource only, use `CSingleLock`. If it needs access to any one of a number of controlled resources, use `CMultiLock`. In example 1, `CSingleLock` would have been used, because in each case only one resource is needed at any particular time.  
   
-For information about how the synchronization classes are used, see [Multithreading: How to Use the Synchronization Classes](../parallel/multithreading-how-to-use-the-synchronization-classes.md). For information about synchronization, see [Synchronization](http://msdn.microsoft.com/library/windows/desktop/ms686353) in the Windows SDK. For information about multithreading support in MFC, see [Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md).  
+For information about how the synchronization classes are used, see [Multithreading: How to Use the Synchronization Classes](multithreading-how-to-use-the-synchronization-classes.md). For information about synchronization, see [Synchronization](/windows/desktop/Sync/synchronization) in the Windows SDK. For information about multithreading support in MFC, see [Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md).  
   
 ## See Also  
  
-[Multithreading with C++ and MFC](../parallel/multithreading-with-cpp-and-mfc.md)
+[Multithreading with C++ and MFC](multithreading-with-cpp-and-mfc.md)

@@ -206,7 +206,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    }
    ```
 
-   This function returns an `HWND`, which is a handle to a window. A handle is somewhat like a pointer that Windows uses to keep track of open windows. For more information, see [Windows Data Types](https://msdn.microsoft.com/library/windows/desktop/aa383751).
+   This function returns an `HWND`, which is a handle to a window. A handle is somewhat like a pointer that Windows uses to keep track of open windows. For more information, see [Windows Data Types](/windows/desktop/WinProg/windows-data-types).
 
 1. At this point the window has been created, but we still need to tell Windows to make it visible. That's what this code does:
 
@@ -327,9 +327,9 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
 1. To enable the `WndProc` function to handle the messages that the application receives, implement a switch statement.
 
-   One important message to handle is the [WM_PAINT](https://msdn.microsoft.com/library/windows/desktop/dd145213) message. The application receives this message when part of its displayed window must be updated. This event can occur when a user moves a window in front of your window, then moves it away again. Your application doesn't know when events like this occur; only Windows knows, so it notifies you with `WM_PAINT`. When the window is first displayed, all of it must be updated.
+   One important message to handle is the [WM_PAINT](/windows/desktop/gdi/wm-paint) message. The application receives this message when part of its displayed window must be updated. This event can occur when a user moves a window in front of your window, then moves it away again. Your application doesn't know when events like this occur; only Windows knows, so it notifies you with `WM_PAINT`. When the window is first displayed, all of it must be updated.
 
-   To handle a `WM_PAINT` message, first call [BeginPaint](https://msdn.microsoft.com/library/windows/desktop/dd183362), then handle all the logic to lay out the text, buttons, and other controls in the window, and then call [EndPaint](https://msdn.microsoft.com/library/windows/desktop/dd162598). For this application, the logic between the beginning call and the ending call is to display the string "Hello, Windows desktop!" in the window. In the following code, notice that the [TextOut](https://msdn.microsoft.com/library/windows/desktop/dd145133) function is used to display the string.
+   To handle a `WM_PAINT` message, first call [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint), then handle all the logic to lay out the text, buttons, and other controls in the window, and then call [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint). For this application, the logic between the beginning call and the ending call is to display the string "Hello, Windows desktop!" in the window. In the following code, notice that the [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) function is used to display the string.
 
    ```cpp
    PAINTSTRUCT ps;
@@ -356,7 +356,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
 
    `HDC` in this code is a handle to a device context, which is a data structure that Windows uses to enable your application to communicate with the graphics subsystem. The `BeginPaint` and `EndPaint` functions ensure that your application behaves like a good citizen and doesn't use the device context for longer than it needs to. This helps ensure the graphics subsystem is available for use by other applications.
 
-1. An application typically handles many other messages, for example, [WM_CREATE](https://msdn.microsoft.com/library/windows/desktop/ms632619) when a window is first created, and [WM_DESTROY](https://msdn.microsoft.com/library/windows/desktop/ms632620) when the window is closed. The following code shows a basic but complete `WndProc` function.
+1. An application typically handles many other messages, for example, [WM_CREATE](/windows/desktop/winmsg/wm-create) when a window is first created, and [WM_DESTROY](/windows/desktop/winmsg/wm-destroy) when the window is closed. The following code shows a basic but complete `WndProc` function.
 
    ```cpp
    LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)

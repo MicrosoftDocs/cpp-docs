@@ -24,7 +24,7 @@ Identifies pointer parameters that are returned from the called procedure to the
 
 ## Remarks
 
-The **out** C++ attribute has the same functionality as the [out](http://msdn.microsoft.com/library/windows/desktop/aa367136) MIDL attribute.
+The **out** C++ attribute has the same functionality as the [out](/windows/desktop/Midl/out-idl) MIDL attribute.
 
 ## Example
 

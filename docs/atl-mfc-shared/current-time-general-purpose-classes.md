@@ -33,8 +33,7 @@ The following procedure shows how to create a `CTime` object and initialize it w
   
  [!code-cpp[NVC_ATLMFC_Utilities#173](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_3.cpp)]  
   
-## See Also  
- [Date and Time: General-Purpose Classes](../atl-mfc-shared/date-and-time-general-purpose-classes.md)
+
 
 
 

@@ -73,7 +73,7 @@ class CWinApp : public CWinThread
 |[CWinApp::OnIdle](#onidle)|Override to perform application-specific idle-time processing.|
 |[CWinApp::OpenDocumentFile](#opendocumentfile)|Called by the framework to open a document from a file.|
 |[CWinApp::ParseCommandLine](#parsecommandline)|Parses individual parameters and flags in the command line.|
-|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934).|
+|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).|
 |[CWinApp::ProcessMessageFilter](#processmessagefilter)|Intercepts certain messages before they reach the application.|
 |[CWinApp::ProcessShellCommand](#processshellcommand)|Handles command-line arguments and flags.|
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|Intercepts all unhandled exceptions thrown by the application's message and command handlers.|
@@ -663,7 +663,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 ### Parameters
 
 *pPrintDlg*  
-A pointer to a [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) structure.
+A pointer to a [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) structure.
 
 ### Return Value
 
@@ -715,7 +715,7 @@ This member function is not case sensitive, so the strings in the *lpszSection* 
 > `GetProfileBinary` allocates a buffer and returns its address in \* *ppData*. The caller is responsible for freeing the buffer using **delete []**.
 
 > [!IMPORTANT]
-> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### Example
 
@@ -756,7 +756,7 @@ This member function supports hexadecimal notation for the value in the .INI fil
 This member function is not case sensitive, so the strings in the *lpszSection* and *lpszEntry* parameters may differ in case.
 
 > [!IMPORTANT]
-> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### Example
 
@@ -793,7 +793,7 @@ The return value is the string from the application's .INI file or *lpszDefault*
 ### Remarks
 
 > [!IMPORTANT]
-> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> The data returned by this function is not necessarily NULL terminated, and the caller must perform validation. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### Example
 
@@ -876,7 +876,7 @@ Application initialization is conceptually divided into two sections: one-time a
 Override `InitInstance` to initialize each new instance of your application running under Windows. Typically, you override `InitInstance` to construct your main window object and set the `CWinThread::m_pMainWnd` data member to point to that window. For more information on overriding this member function, see [CWinApp: The Application Class](../../mfc/cwinapp-the-application-class.md).
 
 > [!NOTE]
-> MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;en-us;828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).
+> MFC applications must be initialized as single threaded apartment (STA). If you call [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) in your `InitInstance` override, specify COINIT_APARTMENTTHREADED (rather than COINIT_MULTITHREADED). For more information, see PRB: MFC Application Stops Responding When You Initialize the Application as a Multithreaded Apartment (828643) at [http://support.microsoft.com/default.aspxscid=kb;en-us;828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).
 
 ### Example
 
@@ -912,7 +912,7 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 Points to a null-terminated string that contains the name of the cursor resource. You can use a `CString` for this argument.
 
 *nIDResource*  
-ID of the cursor resource. For a list of resources, see [LoadCursor](http://msdn.microsoft.com/library/windows/desktop/ms648391) in the Windows SDK.
+ID of the cursor resource. For a list of resources, see [LoadCursor](/windows/desktop/api/winuser/nf-winuser-loadcursora) in the Windows SDK.
 
 ### Return Value
 
@@ -955,7 +955,7 @@ A handle to an icon if successful; otherwise NULL.
 You can use the [LoadStandardIcon](#loadstandardicon) or [LoadOEMIcon](#loadoemicon) member function to access the predefined Windows icons.
 
 > [!NOTE]
-> This member function calls the Win32 API function [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072), which can only load an icon whose size conforms to the SM_CXICON and SM_CYICON system metric values.
+> This member function calls the Win32 API function [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona), which can only load an icon whose size conforms to the SM_CXICON and SM_CYICON system metric values.
 
 ##  <a name="loadoemcursor"></a>  CWinApp::LoadOEMCursor
 
@@ -1065,7 +1065,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 ### Parameters
 
 *lpszIconName*  
-A manifest constant identifier that specifies a predefined Windows icon. These identifiers are defined in WINDOWS.H. For a list of the possible predefined values and their descriptions, see the *lpIconName* parameter in [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072) in the Windows SDK.
+A manifest constant identifier that specifies a predefined Windows icon. These identifiers are defined in WINDOWS.H. For a list of the possible predefined values and their descriptions, see the *lpIconName* parameter in [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona) in the Windows SDK.
 
 ### Return Value
 
@@ -1597,7 +1597,7 @@ For a description of the command-line flags, see [CCommandLineInfo::m_nShellComm
 
 ##  <a name="pretranslatemessage"></a>  CWinApp::PreTranslateMessage
 
-Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) The default implementation performs accelerator-key translation, so you must call the `CWinApp::PreTranslateMessage` member function in your overridden version.
+Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) The default implementation performs accelerator-key translation, so you must call the `CWinApp::PreTranslateMessage` member function in your overridden version.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -1934,7 +1934,7 @@ void SelectPrinter(
 A handle to a [DEVNAMES](../../mfc/reference/devnames-structure.md) structure that identifies the driver, device, and output port names of a specific printer.
 
 *hDevMode*  
-A handle to a [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) structure that specifies information about the device initialization and environment of a printer.
+A handle to a [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) structure that specifies information about the device initialization and environment of a printer.
 
 *bFreeOld*  
 Frees the previously-selected printer.
@@ -2073,7 +2073,7 @@ virtual void WinHelp(
 Specifies additional data. The value used depends on the value of the *nCmd* parameter.
 
 *nCmd*  
-Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows function.
+Specifies the type of help requested. For a list of possible values and how they affect the *dwData* parameter, see the [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows function.
 
 ### Remarks
 

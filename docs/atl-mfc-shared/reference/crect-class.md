@@ -336,7 +336,7 @@ void DeflateRect(int l, int t, int r, int b) throw();
  Specifies the number of units to deflate the top and bottom of `CRect`.  
   
  *size*  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to deflate `CRect`. The `cx` value specifies the number of units to deflate the left and right sides and the `cy` value specifies the number of units to deflate the top and bottom.  
+ A [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to deflate `CRect`. The `cx` value specifies the number of units to deflate the left and right sides and the `cy` value specifies the number of units to deflate the top and bottom.  
   
  *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` that specifies the number of units to deflate each side.  
@@ -455,7 +455,7 @@ void InflateRect(int l, int t, int r,  int b) throw();
  Specifies the number of units to inflate the top and bottom of `CRect`.  
   
  *size*  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to inflate `CRect`. The `cx` value specifies the number of units to inflate the left and right sides and the `cy` value specifies the number of units to inflate the top and bottom.  
+ A [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) or [CSize](csize-class.md) that specifies the number of units to inflate `CRect`. The `cx` value specifies the number of units to inflate the left and right sides and the `cy` value specifies the number of units to inflate the top and bottom.  
   
  *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` that specifies the number of units to inflate each side.  
@@ -714,7 +714,7 @@ void OffsetRect(SIZE size) throw();
  Contains a [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object specifying both dimensions by which to move.  
   
  *size*  
- Contains a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object specifying both dimensions by which to move.  
+ Contains a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object specifying both dimensions by which to move.  
   
 ### Remarks  
  Moves `CRect`*x* units along the x-axis and *y* units along the y-axis. The *x* and *y* parameters are signed values, so `CRect` can be moved left or right and up or down.  
@@ -880,7 +880,7 @@ void operator+=(LPCRECT lpRect) throw();
  A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object that specifies the number of units to move the rectangle.  
   
  *size*  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
+ A [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
   
  *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to inflate each side of `CRect`.  
@@ -919,7 +919,7 @@ void operator-=(LPCRECT lpRect) throw();
  A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object that specifies the number of units to move the rectangle.  
   
  *size*  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
+ A [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the rectangle.  
   
  *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to deflate each side of `CRect`.  
@@ -1011,7 +1011,7 @@ CRect operator+(SIZE size) const throw();
  A [POINT](../../mfc/reference/point-structure1.md) structure or [CPoint](cpoint-class.md) object that specifies the number of units to move the return value.  
   
  *size*  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the return value.  
+ A [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or [CSize](csize-class.md) object that specifies the number of units to move the return value.  
   
  *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to inflate each side of the return value.  
@@ -1050,7 +1050,7 @@ CRect operator-(LPCRECT lpRect) const throw();
  A [POINT](../../mfc/reference/point-structure1.md) structure or `CPoint` object that specifies the number of units to move the return value.  
   
  *size*  
- A [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object that specifies the number of units to move the return value.  
+ A [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object that specifies the number of units to move the return value.  
   
  *lpRect*  
  Points to a [RECT](../../mfc/reference/rect-structure1.md) structure or `CRect` object that contains the number of units to deflate each side of the return value.  

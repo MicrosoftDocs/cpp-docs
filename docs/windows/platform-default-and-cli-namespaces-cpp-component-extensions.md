@@ -22,7 +22,7 @@ Visual C++ provides a default namespace for your project when you create the pro
 
 ## Windows Runtime
 
-For more information, see [Namespaces and type visibility (C++/CX)](http://msdn.microsoft.com/library/windows/apps/hh969551.aspx).
+For more information, see [Namespaces and type visibility (C++/CX)](https://msdn.microsoft.com/library/windows/apps/hh969551.aspx).
 
 ### Requirements
 

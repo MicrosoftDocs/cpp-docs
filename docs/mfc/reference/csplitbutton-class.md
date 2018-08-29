@@ -43,7 +43,7 @@ class CSplitButton : public CButton
 |[CSplitButton::OnDropDown](#ondropdown)|Handles the BCN_DROPDOWN notification that the system sends when a user clicks the drop-down arrow of the current split button control.|  
   
 ## Remarks  
- The `CSplitButton` class is derived from the [CButton](../../mfc/reference/cbutton-class.md) class. The split button control is a button control whose style is BS_SPLITBUTTON. It displays a custom menu when a user clicks the drop-down arrow. For more information, see the BS_SPLITBUTTON and BS_DEFSPLITBUTTON styles in [Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb775951).  
+ The `CSplitButton` class is derived from the [CButton](../../mfc/reference/cbutton-class.md) class. The split button control is a button control whose style is BS_SPLITBUTTON. It displays a custom menu when a user clicks the drop-down arrow. For more information, see the BS_SPLITBUTTON and BS_DEFSPLITBUTTON styles in [Button Styles](/windows/desktop/Controls/button-styles).  
   
  The following figure depicts a dialog box that contains a pager control and a (1) split button control. The (2) drop-down arrow has already been clicked and the (3) submenu is displayed.  
   
@@ -83,7 +83,7 @@ virtual BOOL Create(
 |Parameter|Description|  
 |---------------|-----------------|  
 |[in] *dwStyle*|A bitwise combination (OR) of styles to be applied to the control. For more information, see [Button Styles](../../mfc/reference/styles-used-by-mfc.md#button-styles).|  
-|[in] *rect*|A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|  
+|[in] *rect*|A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control.|  
 |[in] *pParentWnd*|A non-null pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control.|  
 |[in] *nID*|The ID of the control.|  
   
@@ -127,8 +127,8 @@ afx_msg void OnDropDown(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *pNMHDR*|Pointer to an [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) structure that contains information about the [BCN_DROPDOWN](http://msdn.microsoft.com/library/windows/desktop/bb775983) notification.|  
-|[out] *pResult*|(Not used; no value is returned.) Return value of the [BCN_DROPDOWN](http://msdn.microsoft.com/library/windows/desktop/bb775983) notification.|  
+|[in] *pNMHDR*|Pointer to an [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) structure that contains information about the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|  
+|[out] *pResult*|(Not used; no value is returned.) Return value of the [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) notification.|  
   
 ### Remarks  
  When the user clicks the drop-down arrow on a split button control, system sends a BCN_DROPDOWN notification message, which the `OnDropDown` method handles. However, the `CSplitButton` object does not forward the BCN_DROPDOWN notification to the control that contains the split button control. Consequently, the containing control cannot support a custom action in response to the notification.  

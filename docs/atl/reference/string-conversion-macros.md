@@ -21,7 +21,7 @@ The string conversion macros discussed here are valid for both ATL and MFC. For 
 
 ##  <a name="devmode_and_textmetric_string_conversion_macros"></a>  DEVMODE and TEXTMETRIC String Conversion Macros
 
-These macros create a copy of a [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) or [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure and convert the strings within the new structure to a new string type. The macros allocate memory on the stack for the new structure and return a pointer to the new structure.  
+These macros create a copy of a [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) or [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure and convert the strings within the new structure to a new string type. The macros allocate memory on the stack for the new structure and return a pointer to the new structure.  
   
 ```cpp
 MACRONAME( address_of_structure )

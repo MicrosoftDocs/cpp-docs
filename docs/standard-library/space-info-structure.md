@@ -45,5 +45,5 @@ struct space_info	{
 
 [Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
 [\<filesystem>](../standard-library/filesystem.md)<br/>
-[space](http://msdn.microsoft.com/7fce0b0e-523b-4598-b218-47245d0204ca)<br/>
+[space](https://msdn.microsoft.com/7fce0b0e-523b-4598-b218-47245d0204ca)<br/>
 [File System Navigation (C++)](../standard-library/file-system-navigation.md)<br/>

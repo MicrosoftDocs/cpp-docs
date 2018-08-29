@@ -80,7 +80,7 @@ template <class T,
 |Creating controls|[ATL Tutorial](../../atl/active-template-library-atl-tutorial.md)|  
 |Using dialog boxes in ATL|[ATL Window Classes](../../atl/atl-window-classes.md)|  
 |ATL Project Wizard|[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)|  
-|Dialog boxes|[Dialog Boxes](http://msdn.microsoft.com/library/windows/desktop/ms632588) and subsequent topics in the Windows SDK|  
+|Dialog boxes|[Dialog Boxes](https://msdn.microsoft.com/library/windows/desktop/ms632588) and subsequent topics in the Windows SDK|  
   
 ## Requirements  
  **Header:** atlwin.h  
@@ -104,7 +104,7 @@ HWND Create(
  [in] The handle to the owner window.  
   
  **RECT&** *rect*  
- [in] A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the dialog's size and position.  
+ [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the dialog's size and position.  
   
  *dwInitParam*  
  [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
@@ -177,7 +177,7 @@ INT_PTR DoModal(
   
 ### Parameters  
  *hWndParent*  
- [in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](http://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.  
+ [in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.  
   
  *dwInitParam*  
  [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  

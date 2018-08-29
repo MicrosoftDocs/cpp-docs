@@ -684,7 +684,7 @@ virtual CWnd* GetParentWnd() const;
  A pointer to the parent window for the ribbon element if the method was successful; otherwise, NULL.  
   
 ### Remarks  
- The parent window for a ribbon element is a [CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md) or a [CMFCRibbonPanelMenuBar](http://msdn.microsoft.com/7bd4b986-8b7b-493e-9746-bd3161b78581).  
+ The parent window for a ribbon element is a [CMFCRibbonBar Class](../../mfc/reference/cmfcribbonbar-class.md) or a [CMFCRibbonPanelMenuBar](https://msdn.microsoft.com/7bd4b986-8b7b-493e-9746-bd3161b78581).  
   
 ##  <a name="getpressed"></a>  CMFCRibbonBaseElement::GetPressed  
  Retrieves a pointer to the ribbon element if the user currently presses it.  
@@ -1449,7 +1449,7 @@ virtual void Redraw();
 ```  
   
 ### Remarks  
- This method redraws the display rectangle for the ribbon element by calling [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.  
+ This method redraws the display rectangle for the ribbon element by calling [CWnd::RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) with the RDW_INVALIDATE, RDW_ERASE, and RDW_UPDATENOW flags set.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonBaseElement::SetACCData  
  Sets the accessibility data for the ribbon element.  

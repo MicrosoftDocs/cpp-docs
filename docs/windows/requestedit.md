@@ -24,7 +24,7 @@ Indicates that the property supports the `OnRequestEdit` notification.
 
 ## Remarks
 
-The **requestedit** C++ attribute has the same functionality as the [requestedit](http://msdn.microsoft.com/library/windows/desktop/aa367155) MIDL attribute.
+The **requestedit** C++ attribute has the same functionality as the [requestedit](/windows/desktop/Midl/requestedit) MIDL attribute.
 
 ## Example
 

@@ -620,7 +620,7 @@ void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 > [!NOTE]
 > `FormatMessage` attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.  
   
- Each insert must have a corresponding parameter following the *pszFormat* or *nFormatID* parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) function in the Windows SDK.  
+ Each insert must have a corresponding parameter following the *pszFormat* or *nFormatID* parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#118](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_13.cpp)]  
@@ -645,7 +645,7 @@ void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 > [!NOTE]
 > `FormatMessageV` calls [CStringT::FormatMessage](#formatmessage), which attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.  
   
- For more information, see the Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) function in the Windows SDK.  
+ For more information, see the Windows [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.  
   
 ##  <a name="formatv"></a>  CStringT::FormatV  
  Formats a message string using a variable argument list.  

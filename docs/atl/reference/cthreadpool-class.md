@@ -60,7 +60,7 @@ class CThreadPool : public IThreadPoolConfig
   
  Immediately after creation of a thread, *Worker*::`Initialize` will be called on the object associated with that thread. Immediately before destruction of a thread, *Worker*::`Terminate` will be called. Both methods must accept a **void**<strong>\*</strong> argument. The value of this argument is passed to the thread pool through the *pvWorkerParam* parameter of [CThreadPool::Initialize](#initialize).  
   
- When there are work items in the queue and worker threads available for work, a worker thread will pull an item off the queue and call the `Execute` method of the *Worker* object for that thread. Three items are then passed to the method: the item from the queue, the same `pvWorkerParam` passed to *Worker*:: `Initialize` and *Worker*:: `Terminate`, and a pointer to the [OVERLAPPED](http://msdn.microsoft.com/library/windows/desktop/ms684342) structure used for the IO completion port queue.  
+ When there are work items in the queue and worker threads available for work, a worker thread will pull an item off the queue and call the `Execute` method of the *Worker* object for that thread. Three items are then passed to the method: the item from the queue, the same `pvWorkerParam` passed to *Worker*:: `Initialize` and *Worker*:: `Terminate`, and a pointer to the [OVERLAPPED](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) structure used for the IO completion port queue.  
   
  The *Worker* class declares the type of the items that will be queued on the thread pool by providing a typedef, *Worker*:: `RequestType`. This type must be capable of being cast to and from a ULONG_PTR.  
   
@@ -283,7 +283,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
  The requested maximum time in milliseconds that the thread pool will wait for a thread to shut down. If 0 or no value is supplied, this method will use the timeout set by [CThreadPool::SetTimeout](#settimeout).  
   
 ### Remarks  
- This method posts a shutdown request to all threads in the pool. If the timeout expires, this method will call [TerminateThread](http://msdn.microsoft.com/library/windows/desktop/ms686717) on any thread that did not exit. This method is called automatically from the destructor of the class.  
+ This method posts a shutdown request to all threads in the pool. If the timeout expires, this method will call [TerminateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread) on any thread that did not exit. This method is called automatically from the destructor of the class.  
   
 ## See Also  
  [IThreadPoolConfig Interface](../../atl/reference/ithreadpoolconfig-interface.md)   

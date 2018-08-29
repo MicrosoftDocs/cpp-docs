@@ -87,7 +87,7 @@ void ConnectTemplate(
  Indicates whether a single instance of the application can support multiple instantiations. If TRUE, multiple instances of the application are launched for each request to create an object.  
   
 ### Remarks  
- For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the Windows SDK.  
+ For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.  
   
 ##  <a name="unregister"></a>  COleTemplateServer::Unregister  
  Unregisters the associated document template.  

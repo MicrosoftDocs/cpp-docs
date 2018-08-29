@@ -33,7 +33,7 @@ These free functions in the [\<filesystem>](../standard-library/filesystem.md) h
 |[system_complete](#system_complete)|[temp_directory_path](#temp_directory_path)|[u8path](#u8path)|
 
 
-## <a name=""></a>  <a name="absolute"></a> absolute
+## <a name="absolute"></a> absolute
 
 ```cpp
 path absolute(const path& pval, const path& base = current_path());
@@ -141,7 +141,7 @@ if (!exists(t))
 
 Otherwise, do nothing.
 
-## <a name="opy_file"></a>  copy_file
+## <a name="copy_file"></a>  copy_file
 
 ```cpp
 bool copy_file(const path& from, const path& to);

@@ -56,7 +56,7 @@ class CDacl : public CAcl
   
  Use the class methods provided to create, add, remove, and delete ACEs from the `CDacl` object. See also [AtlGetDacl](security-global-functions.md#atlgetdacl) and [AtlSetDacl](security-global-functions.md#atlsetdacl).  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
+ For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CAcl](../../atl/reference/cacl-class.md)  
@@ -105,7 +105,7 @@ bool AddAllowedAce(
 ### Remarks  
  A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that allows access to the `CDacl` object.  
   
- See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
+ See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.  
   
 ##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce  
  Adds a denied ACE (access-control entry) to the `CDacl` object.  
@@ -146,7 +146,7 @@ bool AddDeniedAce(
 ### Remarks  
  A `CDacl` object contains zero or more ACEs (access-control entries) that identify the users and groups who can access the object. This method adds an ACE that denies access to the `CDacl` object.  
   
- See [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) for a description of the various flags which can be set in the `AceFlags` parameter.  
+ See [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) for a description of the various flags which can be set in the `AceFlags` parameter.  
   
 ##  <a name="cdacl"></a>  CDacl::CDacl  
  The constructor.  
@@ -227,7 +227,7 @@ void RemoveAllAces() throw();
 ## See Also  
  [Security Sample](../../visual-cpp-samples.md)   
  [CAcl Class](../../atl/reference/cacl-class.md)   
- [ACLs](http://msdn.microsoft.com/library/windows/desktop/aa374872)   
- [ACEs](http://msdn.microsoft.com/library/windows/desktop/aa374868)   
+ [ACLs](/windows/desktop/SecAuthZ/access-control-lists)   
+ [ACEs](/windows/desktop/SecAuthZ/access-control-entries)   
  [Class Overview](../../atl/atl-class-overview.md)   
  [Security Global Functions](../../atl/reference/security-global-functions.md)

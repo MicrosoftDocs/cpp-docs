@@ -113,7 +113,7 @@ HRESULT Fire_OnRowsetChange(IRowset* pRowset,
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   
  [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)   
- [Notifications (COM)](http://msdn.microsoft.com/library/windows/desktop/ms678433)   
+ [Notifications (COM)](https://msdn.microsoft.com/library/windows/desktop/ms678433)   
  [BEGIN_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#begin_connection_point_map)   
  [END_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#end_connection_point_map)   
  [CONNECTION_POINT_ENTRY](../../atl/reference/connection-point-macros.md#connection_point_entry)   

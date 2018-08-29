@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CSize Class
-Similar to the Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure, which implements a relative coordinate or position.  
+Similar to the Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure, which implements a relative coordinate or position.  
   
 ## Syntax  
   
@@ -75,7 +75,7 @@ CSize( DWORD dwSize) throw();
  Sets the `cy` member for the `CSize`.  
   
  *initSize*  
- [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object used to initialize `CSize`.  
+ [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure or `CSize` object used to initialize `CSize`.  
   
  *initPt*  
  [POINT](../../mfc/reference/point-structure1.md) structure or `CPoint` object used to initialize `CSize`.  
@@ -149,9 +149,9 @@ CRect operator+(const RECT* lpRect) const throw();
   
 - **operator +(** `size` **)**This operation adds two `CSize` values.  
   
-- **operator +(** `point` **)**This operation offsets (moves) a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) (or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) value by this `CSize` value. The **cx** and **cy** members of this `CSize` value are added to the **x** and **y** data members of the **POINT** value. It is analogous to the version of [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) that takes a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) parameter.  
+- **operator +(** `point` **)**This operation offsets (moves) a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) (or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) value by this `CSize` value. The **cx** and **cy** members of this `CSize` value are added to the **x** and **y** data members of the **POINT** value. It is analogous to the version of [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) that takes a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) parameter.  
   
-- **operator +(** `lpRect` **)**This operation offsets (moves) a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) (or [CRect](../../atl-mfc-shared/reference/crect-class.md)) value by this `CSize` value. The **cx** and **cy** members of this `CSize` value are added to the **left**, **top**, **right**, and **bottom** data members of the `RECT` value. It is analogous to the version of [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) that takes a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) parameter.  
+- **operator +(** `lpRect` **)**This operation offsets (moves) a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) (or [CRect](../../atl-mfc-shared/reference/crect-class.md)) value by this `CSize` value. The **cx** and **cy** members of this `CSize` value are added to the **left**, **top**, **right**, and **bottom** data members of the `RECT` value. It is analogous to the version of [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) that takes a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) parameter.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#102](../../atl-mfc-shared/codesnippet/cpp/csize-class_6.cpp)]  
@@ -171,9 +171,9 @@ CSize operator-() const throw();
   
 - **operator -(** `size` **)**This operation subtracts two `CSize` values.  
   
-- **operator -(** `point` **)**This operation offsets (moves) a [POINT](http://msdn.microsoft.com/library/windows/desktop/dd162805) or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) value by the additive inverse of this `CSize` value. The **cx** and **cy** of this `CSize` value are subtracted from the **x** and **y** data members of the **POINT** value. It is analogous to the version of [CPoint::operator -](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) that takes a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) parameter.  
+- **operator -(** `point` **)**This operation offsets (moves) a [POINT](https://msdn.microsoft.com/library/windows/desktop/dd162805) or [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) value by the additive inverse of this `CSize` value. The **cx** and **cy** of this `CSize` value are subtracted from the **x** and **y** data members of the **POINT** value. It is analogous to the version of [CPoint::operator -](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) that takes a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) parameter.  
   
-- **operator -(** `lpRect` **)**This operation offsets (moves) a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) or [CRect](../../atl-mfc-shared/reference/crect-class.md) value by the additive inverse of this `CSize` value. The **cx** and **cy** members of this `CSize` value are subtracted from the **left**, **top**, **right**, and **bottom** data members of the `RECT` value. It is analogous to the version of [CRect::operator -](../../atl-mfc-shared/reference/crect-class.md#operator_-) that takes a [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) parameter.  
+- **operator -(** `lpRect` **)**This operation offsets (moves) a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) or [CRect](../../atl-mfc-shared/reference/crect-class.md) value by the additive inverse of this `CSize` value. The **cx** and **cy** members of this `CSize` value are subtracted from the **left**, **top**, **right**, and **bottom** data members of the `RECT` value. It is analogous to the version of [CRect::operator -](../../atl-mfc-shared/reference/crect-class.md#operator_-) that takes a [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) parameter.  
   
 - **operator -( )**This operation returns the additive inverse of this `CSize` value.  
   

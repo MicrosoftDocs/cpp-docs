@@ -25,7 +25,7 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
   
 #### Parameters  
  *Base*  
- A COM enumerator ( [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx)) interface.  
+ A COM enumerator interface. See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example. 
   
  *piid*  
  A pointer to the interface ID of the enumerator interface.  
@@ -49,11 +49,11 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
   
 |Name|Description|  
 |----------|-----------------|  
-|[CComEnumImpl::Clone](#clone)|The implementation of [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
+|[CComEnumImpl::Clone](#clone)|The implementation of the **Clone** enumeration interface method.|  
 |[CComEnumImpl::Init](#init)|Initializes the enumerator.|  
-|[CComEnumImpl::Next](#next)|The implementation of [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
-|[CComEnumImpl::Reset](#reset)|The implementation of [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
-|[CComEnumImpl::Skip](#skip)|The implementation of [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
+|[CComEnumImpl::Next](#next)|The implementation of **Next**.|  
+|[CComEnumImpl::Reset](#reset)|The implementation of **Reset**.|  
+|[CComEnumImpl::Skip](#skip)|The implementation of **Skip**.|  
   
 ### Public Data Members  
   
@@ -66,7 +66,7 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
 |[CComEnumImpl::m_spUnk](#m_spunk)|The `IUnknown` pointer of the object supplying the collection being enumerated.|  
   
 ## Remarks  
- `CComEnumImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array. This class is analogous to the `IEnumOnSTLImpl` class, which provides an implementation of an enumerator interface based on a C++ Standard Library container.  
+See [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) for an example of method implementations. `CComEnumImpl` provides the implementation for a COM enumerator interface where the items being enumerated are stored in an array. This class is analogous to the `IEnumOnSTLImpl` class, which provides an implementation of an enumerator interface based on a C++ Standard Library container.  
   
 > [!NOTE]
 >  For details on further differences between `CComEnumImpl` and `IEnumOnSTLImpl`, see [CComEnumImpl::Init](#init).  
@@ -152,7 +152,7 @@ enum CComEnumFlags
 >  The prototype of this method specifies the array elements as being of type `T`, where `T` was defined as a template parameter to the class. This is the same type that is exposed by means of the COM interface method [CComEnumImpl::Next](#next). The implication of this is that, unlike [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md), this class does not support different storage and exposed data types. The data type of elements in the array must be the same as the data type exposed by means of the COM interface.  
   
 ##  <a name="clone"></a>  CComEnumImpl::Clone  
- This method provides the implementation of the [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx) method by creating an object of type `CComEnum`, initializing it with the same array and iterator used by the current object, and returning the interface on the newly created object.  
+ This method provides the implementation of the **Clone** method by creating an object of type `CComEnum`, initializing it with the same array and iterator used by the current object, and returning the interface on the newly created object.  
   
 ```
 STDMETHOD(Clone)(Base** ppEnum);
@@ -204,7 +204,7 @@ DWORD m_dwFlags;
 ```  
   
 ##  <a name="next"></a>  CComEnumImpl::Next  
- This method provides the implementation of the [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) method.  
+ This method provides the implementation of the **Next** method.  
   
 ```
 STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
@@ -224,7 +224,7 @@ STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
  A standard HRESULT value.  
   
 ##  <a name="reset"></a>  CComEnumImpl::Reset  
- This method provides the implementation of the [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx) method.  
+ This method provides the implementation of the **Reset** method.  
   
 ```
 STDMETHOD(Reset)(void);
@@ -234,7 +234,7 @@ STDMETHOD(Reset)(void);
  A standard HRESULT value.  
   
 ##  <a name="skip"></a>  CComEnumImpl::Skip  
- This method provides the implementation of the [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx) method.  
+ This method provides the implementation of the **Skip** method.  
   
 ```
 STDMETHOD(Skip)(ULONG celt);

@@ -30,9 +30,9 @@ There are constraints regarding the delay loading of imports.
   
 ## See Also  
  [Linker Support for Delay-Loaded DLLs](../../build/reference/linker-support-for-delay-loaded-dlls.md)   
- [LoadLibrary function](http://msdn.microsoft.com/library/windows/desktop/ms684175.aspx)   
- [GetModuleHandle function](http://msdn.microsoft.com/library/windows/desktop/ms683199.aspx)   
- [GetProcAddress function](http://msdn.microsoft.com/library/windows/desktop/ms683212.aspx)   
+ [LoadLibrary function](https://msdn.microsoft.com/library/windows/desktop/ms684175.aspx)   
+ [GetModuleHandle function](https://msdn.microsoft.com/library/windows/desktop/ms683199.aspx)   
+ [GetProcAddress function](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx)   
  [TlsAlloc function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)   
  [TlsFree function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree)   
  [TlsGetValue function](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)   

@@ -24,7 +24,7 @@ Indicates that the database will be notified immediately of all changes to a pro
 
 ## Remarks
 
-The **immediatebind** C++ attribute has the same functionality as the [immediatebind](http://msdn.microsoft.com/library/windows/desktop/aa367045) MIDL attribute.
+The **immediatebind** C++ attribute has the same functionality as the [immediatebind](/windows/desktop/Midl/immediatebind) MIDL attribute.
 
 ## Example
 

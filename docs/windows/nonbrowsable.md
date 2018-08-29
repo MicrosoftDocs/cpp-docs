@@ -24,7 +24,7 @@ Indicates that an interface member should not be displayed in a property browser
 
 ## Remarks
 
-The **nonbrowsable** C++ attribute has the same functionality as the [nonbrowsable](http://msdn.microsoft.com/library/windows/desktop/aa367117) MIDL attribute.
+The **nonbrowsable** C++ attribute has the same functionality as the [nonbrowsable](/windows/desktop/Midl/nonbrowsable) MIDL attribute.
 
 ## Example
 

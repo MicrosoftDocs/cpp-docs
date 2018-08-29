@@ -24,7 +24,7 @@ Ensures that a typedef will go into the type library even if it is not reference
 
 ## Remarks
 
-The **public** C++ attribute has the same functionality as the [public](http://msdn.microsoft.com/library/windows/desktop/aa367150) MIDL attribute.
+The **public** C++ attribute has the same functionality as the [public](/windows/desktop/Midl/public) MIDL attribute.
 
 ## Example
 

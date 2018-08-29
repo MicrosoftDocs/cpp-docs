@@ -96,7 +96,7 @@ Returns a pointer to the destination string. No return value is reserved to indi
 The **strncat** function appends, at most, the first *count* characters of *strSource* to *strDest*. The initial character of *strSource* overwrites the terminating null character of *strDest*. If a null character appears in *strSource* before *count* characters are appended, **strncat** appends all characters from *strSource*, up to the null character. If *count* is greater than the length of *strSource*, the length of *strSource* is used in place of *count*. The all cases, the resulting string is terminated with a null character. If copying takes place between strings that overlap, the behavior is undefined.
 
 > [!IMPORTANT]
-> **strncat** does not check for sufficient space in *strDest*; it is therefore a potential cause of buffer overruns. Keep in mind that *count* limits the number of characters appended; it is not a limit on the size of *strDest*. See the example below. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> **strncat** does not check for sufficient space in *strDest*; it is therefore a potential cause of buffer overruns. Keep in mind that *count* limits the number of characters appended; it is not a limit on the size of *strDest*. See the example below. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 **wcsncat** and **_mbsncat** are wide-character and multibyte-character versions of **strncat**. The string arguments and return value of **wcsncat** are wide-character strings; those of **_mbsncat** are multibyte-character strings. These three functions behave identically otherwise.
 

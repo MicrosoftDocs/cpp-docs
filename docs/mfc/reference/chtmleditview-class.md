@@ -91,7 +91,7 @@ virtual BOOL Create(
  Specifies the window style attributes. By default, the WS_VISIBLE and WS_CHILD Windows styles are set.  
   
  *rect*  
- A reference to a [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.  
+ A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.  
   
  *pParentWnd*  
  A pointer to the parent window of the control.  

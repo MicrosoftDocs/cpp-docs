@@ -64,5 +64,5 @@ None
 ## See Also
 
 [Image Editor for Icons](../windows/image-editor-for-icons.md)  
-[Icons](http://msdn.microsoft.com/library/windows/desktop/ms646973)  
-[Cursors](http://msdn.microsoft.com/library/windows/desktop/ms646970)
+[Icons](https://msdn.microsoft.com/library/windows/desktop/ms646973)  
+[Cursors](https://msdn.microsoft.com/library/windows/desktop/ms646970)

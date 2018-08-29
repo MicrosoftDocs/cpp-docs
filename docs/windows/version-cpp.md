@@ -31,7 +31,7 @@ The version number of the `coclass`. If not specified, 1.0 will be placed in the
 
 ## Remarks
 
-The **version** C++ attribute has the same functionality as the [version](http://msdn.microsoft.com/library/windows/desktop/aa367306) MIDL attribute and is passed through to the generated .idl file.
+The **version** C++ attribute has the same functionality as the [version](/windows/desktop/Midl/version) MIDL attribute and is passed through to the generated .idl file.
 
 ## Example
 

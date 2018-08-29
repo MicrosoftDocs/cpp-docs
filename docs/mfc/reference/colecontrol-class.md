@@ -218,9 +218,9 @@ OLE controls can be used in-place active without a window. Windowless controls h
 
 Controls do not need a window. Services that a window offers can easily be provided via a single shared window (usually the container's) and a bit of dispatching code. Having a window is mostly an unnecessary complication on the object.
 
-When windowless activation is used, the container (which does have a window) is responsible for providing services that would otherwise have been provided by the control's own window. For example, if your control needs to query the keyboard focus, query the mouse capture, or obtain a device context, these operations are managed by the container. The `COleControl`[windowless-operation member functions](http://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) invoke these operations on the container.
+When windowless activation is used, the container (which does have a window) is responsible for providing services that would otherwise have been provided by the control's own window. For example, if your control needs to query the keyboard focus, query the mouse capture, or obtain a device context, these operations are managed by the container. The `COleControl` windowless-operation member functions invoke these operations on the container.
 
-When windowless activation is enabled, the container delegates input messages to the control's `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) for windowless support). `COleControl`'s implementation of this interface will dispatch these messages through your control's message map, after adjusting the mouse coordinates appropriately. You can process these messages like ordinary window messages, by adding the corresponding entries to the message map.
+When windowless activation is enabled, the container delegates input messages to the control's `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceobject) for windowless support). `COleControl`'s implementation of this interface will dispatch these messages through your control's message map, after adjusting the mouse coordinates appropriately. You can process these messages like ordinary window messages, by adding the corresponding entries to the message map.
 
 In a windowless control, you should always use the `COleControl` member functions instead of the corresponding `CWnd` member functions or their related Windows API functions.
 
@@ -284,7 +284,7 @@ LPFONTDISP AmbientFont();
 
 ### Return Value
 
-A pointer to the container's ambient Font dispatch interface. The default value is NULL. If the return is not equal to NULL, you are responsible for releasing the font by calling its [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) member function.
+A pointer to the container's ambient Font dispatch interface. The default value is NULL. If the return is not equal to NULL, you are responsible for releasing the font by calling its [IUnknown::Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) member function.
 
 ### Remarks
 
@@ -554,7 +554,7 @@ void ControlInfoChanged();
 
 ### Remarks
 
-Upon receiving this notification, the control's container obtains the new set of mnemonics by making a call to [IOleControl::GetControlInfo](http://msdn.microsoft.com/library/windows/desktop/ms693730). Note that the container is not required to respond to this notification.
+Upon receiving this notification, the control's container obtains the new set of mnemonics by making a call to [IOleControl::GetControlInfo](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo). Note that the container is not required to respond to this notification.
 
 ##  <a name="displayerror"></a>  COleControl::DisplayError
 
@@ -1362,7 +1362,7 @@ enum ControlFlags {
 By default, `GetControlFlags` returns `fastBeginPaint | clipPaintDC`.
 
 `fastBeginPaint`
-If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](http://msdn.microsoft.com/library/windows/desktop/dd183362) API (set by default).
+If set, uses a begin-paint function tailored for OLE controls instead of the [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) API (set by default).
 
 `clipPaintDC`
 If not set, disables the call to `IntersectClipRect` made by `COleControl` and gains a small speed advantage. If you are using windowless activation, the flag has no effect.
@@ -1512,14 +1512,14 @@ void GetFontTextMetrics(
 ### Parameters
 
 *lptm*<br/>
-Pointer to a [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure.
+Pointer to a [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure.
 
 *fontHolder*<br/>
 Reference to a [CFontHolder](../../mfc/reference/cfontholder-class.md) object.
 
 ### Remarks
 
-Such a font can be selected with the [COleControl::SelectFontObject](#selectfontobject) function. `GetFontTextMetrics` will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information about `fontHolder`'s font if successful, or fill the structure with zeros if not successful. You should use this function instead of [GetTextMetrics](http://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.
+Such a font can be selected with the [COleControl::SelectFontObject](#selectfontobject) function. `GetFontTextMetrics` will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information about `fontHolder`'s font if successful, or fill the structure with zeros if not successful. You should use this function instead of [GetTextMetrics](/windows/desktop/api/wingdi/nf-wingdi-gettextmetrics) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.
 
 The `TEXTMETRIC` structure for the default font is refreshed when the [SelectFontObject](#selectfontobject) function is called. You should call `GetFontTextMetrics` only after selecting the stock Font property to assure the information it provides is valid.
 
@@ -1533,7 +1533,7 @@ OLE_COLOR GetForeColor();
 
 ### Return Value
 
-The return value specifies the current foreground color as a OLE_COLOR value, if successful. This value can be translated to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value with a call to `TranslateColor`.
+The return value specifies the current foreground color as a OLE_COLOR value, if successful. This value can be translated to a [COLORREF](/windows/desktop/gdi/colorref) value with a call to `TranslateColor`.
 
 ##  <a name="gethwnd"></a>  COleControl::GetHwnd
 
@@ -1644,11 +1644,11 @@ void GetStockTextMetrics(LPTEXTMETRIC lptm);
 ### Parameters
 
 *lptm*<br/>
-A pointer to a [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) structure.
+A pointer to a [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) structure.
 
 ### Remarks
 
-The `GetStockTextMetrics` function will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information if successful, or fill the structure with zeros if not successful. Use this function instead of [GetTextMetrics](http://msdn.microsoft.com/library/windows/desktop/dd144941) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.
+The `GetStockTextMetrics` function will initialize the `TEXTMETRIC` structure pointed to by *lptm* with valid metrics information if successful, or fill the structure with zeros if not successful. Use this function instead of [GetTextMetrics](/windows/desktop/api/wingdi/nf-wingdi-gettextmetrics) when painting your control because controls, like any embedded OLE object, may be required to render themselves into a metafile.
 
 The `TEXTMETRIC` structure for the default font is refreshed when the `SelectStockFont` function is called. You should call this function only after selecting the stock font to assure the information it provides is valid.
 
@@ -1787,7 +1787,7 @@ Specifies whether the background within the update region is to be erased when t
 
 ### Remarks
 
-If *lpRect* has a NULL value, the entire control will be redrawn. If *lpRect* is not NULL, this indicates the portion of the control's rectangle that is to be invalidated. In cases where the control has no window, or is currently not active, the rectangle is ignored, and a call is made to the client site's [IAdviseSink::OnViewChange](http://msdn.microsoft.com/library/windows/desktop/ms694337) member function. Use this function instead of `CWnd::InvalidateRect` or `InvalidateRect`.
+If *lpRect* has a NULL value, the entire control will be redrawn. If *lpRect* is not NULL, this indicates the portion of the control's rectangle that is to be invalidated. In cases where the control has no window, or is currently not active, the rectangle is ignored, and a call is made to the client site's [IAdviseSink::OnViewChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-onviewchange) member function. Use this function instead of `CWnd::InvalidateRect` or `InvalidateRect`.
 
 ##  <a name="invalidatergn"></a>  COleControl::InvalidateRgn
 
@@ -1807,7 +1807,7 @@ Specifies whether the background within the invalidated region is to be erased. 
 
 ### Remarks
 
-This can be used to redraw windowless controls within the container. The invalidated region, along with all other areas in the update region, is marked for painting when the next [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message is sent.
+This can be used to redraw windowless controls within the container. The invalidated region, along with all other areas in the update region, is marked for painting when the next [WM_PAINT](/windows/desktop/gdi/wm-paint) message is sent.
 
 If *bErase* is TRUE for any part of the update region, the background in the entire region, not just in the given part, is erased.
 
@@ -2297,7 +2297,7 @@ virtual void OnGetControlInfo(LPCONTROLINFO pControlInfo);
 ### Parameters
 
 *pControlInfo*<br/>
-Pointer to a [CONTROLINFO](http://msdn.microsoft.com/library/windows/desktop/ms680734) structure to be filled in.
+Pointer to a [CONTROLINFO](/windows/desktop/api/ocidl/ns-ocidl-tagcontrolinfo) structure to be filled in.
 
 ### Remarks
 
@@ -2364,13 +2364,13 @@ virtual BOOL OnGetNaturalExtent(
 ### Parameters
 
 *dwAspect*<br/>
-Specifies how the object is to be represented. Representations include content, an icon, a thumbnail, or a printed document. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.
+Specifies how the object is to be represented. Representations include content, an icon, a thumbnail, or a printed document. Valid values are taken from the enumeration [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) or DVASPECT2.
 
 *lindex*<br/>
 The portion of the object that is of interest. Currently only -1 is valid.
 
 *ptd*<br/>
-Points to the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure defining the target device for which the object's size should be returned.
+Points to the [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) structure defining the target device for which the object's size should be returned.
 
 *hicTargetDev*<br/>
 Specifies the information context for the target device indicated by the *ptd* parameter from which the object can extract device metrics and test the device's capabilities. If *ptd* is NULL, the object should ignore the value in the *hicTargetDev* parameter.
@@ -2378,17 +2378,14 @@ Specifies the information context for the target device indicated by the *ptd* p
 *pExtentInfo*<br/>
 Points to the `DVEXTENTINFO` structure that specifies sizing data. The `DVEXTENTINFO` structure is:
 
-`typedef struct  tagExtentInfo`
-
-`{`
-
-`UINT cb;`
-
-`DWORD dwExtentMode;`
-
-`SIZEL sizelProposed;`
-
-`}   DVEXTENTINFO;`
+```cpp
+typedef struct tagExtentInfo
+{
+    UINT cb;
+    DWORD dwExtentMode;
+    SIZEL sizelProposed;
+}   DVEXTENTINFO;
+```
 
 The structure member `dwExtentMode` can take one of two values:
 
@@ -2465,7 +2462,7 @@ Nonzero if a value has been returned in *lpvarOut*; otherwise 0.
 
 ##  <a name="ongetviewextent"></a>  COleControl::OnGetViewExtent
 
-Called by the framework in response to a container's [IViewObject2::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms684032) request.
+Called by the framework in response to a container's [IViewObject2::GetExtent](/windows/desktop/api/oleidl/nf-oleidl-iviewobject2-getextent) request.
 
 ```
 virtual BOOL OnGetViewExtent(
@@ -2478,13 +2475,13 @@ virtual BOOL OnGetViewExtent(
 ### Parameters
 
 *dwDrawAspect*<br/>
-DWORD describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.
+DWORD describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) or DVASPECT2.
 
 *lindex*<br/>
 The portion of the object that is of interest. Currently only -1 is valid.
 
 *ptd*<br/>
-Points to the [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) structure defining the target device for which the object's size should be returned.
+Points to the [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) structure defining the target device for which the object's size should be returned.
 
 *lpsizel*<br/>
 Points to the location where the object's size is returned.
@@ -2508,7 +2505,7 @@ virtual BOOL OnGetViewRect(DWORD dwAspect, LPRECTL pRect);
 ### Parameters
 
 *dwAspect*<br/>
-DWORD describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2:
+DWORD describing which form, or aspect, of an object is to be displayed. Valid values are taken from the enumeration [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) or DVASPECT2:
 
 - DVASPECT_CONTENT Bounding rectangle of the whole object. Top-left corner at the object's origin and size equal to the extent returned by `GetViewExtent`*.*
 
@@ -2517,7 +2514,7 @@ DWORD describing which form, or aspect, of an object is to be displayed. Valid v
 - DVASPECT_TRANSPARENT Rectangle covering all transparent or irregular parts.
 
 *pRect*<br/>
-Points to the [RECTL](http://msdn.microsoft.com/library/windows/desktop/dd162907) structure specifying the rectangle in which the object should be drawn. This parameter controls the positioning and stretching of the object.
+Points to the [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) structure specifying the rectangle in which the object should be drawn. This parameter controls the positioning and stretching of the object.
 
 ### Return Value
 
@@ -2801,7 +2798,7 @@ virtual BOOL OnQueryHitPoint(
 ### Parameters
 
 *dwAspect*<br/>
-Specifies how the object is represented. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.
+Specifies how the object is represented. Valid values are taken from the enumeration [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) or DVASPECT2.
 
 *pRectBounds*<br/>
 Pointer to a `RECT` structure specifying the bounding rectangle of the OLE control client area.
@@ -2847,7 +2844,7 @@ virtual BOOL OnQueryHitRect(
 ### Parameters
 
 *dwAspect*<br/>
-Specifies how the object is to be represented. Valid values are taken from the enumeration [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) or DVASPECT2.
+Specifies how the object is to be represented. Valid values are taken from the enumeration [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) or DVASPECT2.
 
 *pRectBounds*<br/>
 Pointer to a `RECT` structure specifying the bounding rectangle of the OLE control client area.
@@ -2886,10 +2883,10 @@ virtual BOOL OnRenderData(
 ### Parameters
 
 *lpFormatEtc*<br/>
-Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.
+Points to the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure specifying the format in which information is requested.
 
 *lpStgMedium*<br/>
-Points to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data is to be returned.
+Points to a [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) structure in which the data is to be returned.
 
 ### Return Value
 
@@ -2918,7 +2915,7 @@ virtual BOOL OnRenderFileData(
 ### Parameters
 
 *lpFormatEtc*<br/>
-Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.
+Points to the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure specifying the format in which information is requested.
 
 *pFile*<br/>
 Points to a [CFile](../../mfc/reference/cfile-class.md) object in which the data is to be rendered.
@@ -2948,7 +2945,7 @@ virtual BOOL OnRenderGlobalData(
 ### Parameters
 
 *lpFormatEtc*<br/>
-Points to the [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format in which information is requested.
+Points to the [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure specifying the format in which information is requested.
 
 *phGlobal*<br/>
 Points to a handle to global memory in which the data is to be returned. If no memory has been allocated, this parameter can be NULL.
@@ -2979,7 +2976,7 @@ virtual void OnResetState();
 
 The default implementation calls [DoPropExchange](#dopropexchange), passing a `CPropExchange` object that causes properties to be set to their default values.
 
-The control writer can insert initialization code for the OLE control in this overridable. This function is called when [IPersistStream::Load](http://msdn.microsoft.com/library/windows/desktop/ms680568) or [IPersistStorage::Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) fails, or [IPersistStreamInit::InitNew](http://msdn.microsoft.com/library/windows/desktop/ms690234) or [IPersistStorage::InitNew](http://msdn.microsoft.com/library/windows/desktop/ms687194) is called, without first calling either `IPersistStream::Load` or `IPersistStorage::Load`.
+The control writer can insert initialization code for the OLE control in this overridable. This function is called when [IPersistStream::Load](/windows/desktop/api/objidl/nf-objidl-ipersiststream-load) or [IPersistStorage::Load](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-load) fails, or [IPersistStreamInit::InitNew](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-initnew) or [IPersistStorage::InitNew](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-initnew) is called, without first calling either `IPersistStream::Load` or `IPersistStorage::Load`.
 
 ##  <a name="onsetclientsite"></a>  COleControl::OnSetClientSite
 
@@ -3009,10 +3006,10 @@ virtual BOOL OnSetData(
 ### Parameters
 
 *lpFormatEtc*<br/>
-Pointer to a [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) structure specifying the format of the data.
+Pointer to a [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) structure specifying the format of the data.
 
 *lpStgMedium*<br/>
-Pointer to a [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) structure in which the data resides.
+Pointer to a [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) structure in which the data resides.
 
 *bRelease*<br/>
 TRUE if the control should free the storage medium; FALSE if the control should not free the storage medium.
@@ -3031,7 +3028,7 @@ For more information, see the `FORMATETC` and `STGMEDIUM` structures in the Wind
 
 ##  <a name="onsetextent"></a>  COleControl::OnSetExtent
 
-Called by the framework when the control's extent needs to be changed, as a result of a call to [IOleObject::SetExtent](http://msdn.microsoft.com/library/windows/desktop/ms694330).
+Called by the framework when the control's extent needs to be changed, as a result of a call to [IOleObject::SetExtent](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setextent).
 
 ```
 virtual BOOL OnSetExtent(LPSIZEL lpSizeL);
@@ -3054,7 +3051,7 @@ Override this function to alter the default resizing of your control.
 
 ##  <a name="onsetobjectrects"></a>  COleControl::OnSetObjectRects
 
-Called by the framework to implement a call to [IOleInPlaceObject::SetObjectRects](http://msdn.microsoft.com/library/windows/desktop/ms683767).
+Called by the framework to implement a call to [IOleInPlaceObject::SetObjectRects](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceobject-setobjectrects).
 
 ```
 virtual BOOL OnSetObjectRects(
@@ -3140,7 +3137,7 @@ Nonzero if successful; otherwise 0.
 
 Processes window messages for windowless controls. `COleControl`'s `OnWindowlessMessage` should be used for window messages other than mouse messages and keyboard messages. `COleControl` provides [SetCapture](#setcapture) and [SetFocus](#setfocus) specifically to get mouse capture and keyboard focus for windowless OLE objects.
 
-Because windowless objects do not have a window, they need a mechanism to let the container dispatch messages to them. A windowless OLE object gets messages from its container, through the `OnWindowMessage` method on the `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) for windowless support). `OnWindowMessage` does not take an `HWND` parameter.
+Because windowless objects do not have a window, they need a mechanism to let the container dispatch messages to them. A windowless OLE object gets messages from its container, through the `OnWindowMessage` method on the `IOleInPlaceObjectWindowless` interface (an extension of [IOleInPlaceObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceobject) for windowless support). `OnWindowMessage` does not take an `HWND` parameter.
 
 ##  <a name="parenttoclient"></a>  COleControl::ParentToClient
 
@@ -3849,7 +3846,7 @@ The first two flags, XFORMCOORDS_POSITION and XFORMCOORDS_SIZE, indicate whether
 
 ##  <a name="translatecolor"></a>  COleControl::TranslateColor
 
-Converts a color value from the OLE_COLOR data type to the [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) data type.
+Converts a color value from the OLE_COLOR data type to the [COLORREF](/windows/desktop/gdi/colorref) data type.
 
 ```
 COLORREF TranslateColor(
@@ -3860,7 +3857,7 @@ COLORREF TranslateColor(
 ### Parameters
 
 *clrColor*<br/>
-A OLE_COLOR data type. For more information, see the Windows [OleTranslateColor](http://msdn.microsoft.com/library/windows/desktop/ms694353) function.
+A OLE_COLOR data type. For more information, see the Windows [OleTranslateColor](/windows/desktop/api/olectl/nf-olectl-oletranslatecolor) function.
 
 *hpal*<br/>
 A handle to an optional palette; can be NULL.
@@ -3887,7 +3884,7 @@ Nonzero indicates that ambient properties will be valid; otherwise ambient prope
 
 ### Remarks
 
-In some containers, your control may not have access to its ambient properties during the initial call to the override of `COleControl::DoPropExchange`. This is the case if the container calls [IPersistStreamInit::Load](http://msdn.microsoft.com/library/windows/desktop/ms680730) or [IPersistStorage::Load](http://msdn.microsoft.com/library/windows/desktop/ms680557) prior to calling [IOleObject::SetClientSite](http://msdn.microsoft.com/library/windows/desktop/ms684013) (that is, if it does not honor the OLEMISC_SETCLIENTSITEFIRST status bit).
+In some containers, your control may not have access to its ambient properties during the initial call to the override of `COleControl::DoPropExchange`. This is the case if the container calls [IPersistStreamInit::Load](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-load) or [IPersistStorage::Load](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-load) prior to calling [IOleObject::SetClientSite](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setclientsite) (that is, if it does not honor the OLEMISC_SETCLIENTSITEFIRST status bit).
 
 ##  <a name="windowproc"></a>  COleControl::WindowProc
 

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "dotnet"]
 
 Windows developers must always be wary of loader lock when running code during `DllMain`. However, there are some additional considerations that come into play when dealing with C++/clr mixed-mode assemblies.
 
-Code within [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583) must not access the CLR. This means that `DllMain` should make no calls to managed functions, directly or indirectly; no managed code should be declared or implemented in `DllMain`; and no garbage collection or automatic library loading should take place within `DllMain`.
+Code within [DllMain](/windows/desktop/Dlls/dllmain) must not access the CLR. This means that `DllMain` should make no calls to managed functions, directly or indirectly; no managed code should be declared or implemented in `DllMain`; and no garbage collection or automatic library loading should take place within `DllMain`.
   
 ## Causes of Loader Lock
 

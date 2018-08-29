@@ -33,4 +33,4 @@ Microsoft provides several implementations of OLE DB, a set of COM interfaces th
  [Creating an OLE DB Provider](../data/oledb/creating-an-ole-db-provider.md)   
  [OLE DB Consumer Templates Reference](../data/oledb/ole-db-consumer-templates-reference.md)   
  [OLE DB Provider Templates Reference](../data/oledb/ole-db-provider-templates-reference.md)   
- [OLE DB Templates Samples](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)
+ [OLE DB Templates Samples](https://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)

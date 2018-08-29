@@ -256,7 +256,7 @@ void SetTimeSpan(LONGLONG nSpan) throw();
  The new value for the time span in milliseconds.  
   
 ## See Also  
- [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284)   
+ [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
  [CFileTime Class](../../atl-mfc-shared/reference/cfiletime-class.md)   
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   
  [ATL/MFC Shared Classes](../../atl-mfc-shared/atl-mfc-shared-classes.md)

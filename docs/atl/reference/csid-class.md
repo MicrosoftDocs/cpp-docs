@@ -79,7 +79,7 @@ class CSid
   
  Applications should not modify the `SID` structure directly, but instead use the methods provided in this wrapper class. See also [AtlGetOwnerSid](security-global-functions.md#atlgetownersid), [AtlSetGroupSid](security-global-functions.md#atlsetgroupsid), [AtlGetGroupSid](security-global-functions.md#atlgetgroupsid), and [AtlSetOwnerSid](security-global-functions.md#atlsetownersid).  
   
- For an introduction to the access control model in Windows, see [Access Control](http://msdn.microsoft.com/library/windows/desktop/aa374860) in the Windows SDK.  
+ For an introduction to the access control model in Windows, see [Access Control](/windows/desktop/SecAuthZ/access-control) in the Windows SDK.  
   
 ## Requirements  
  **Header:** atlsecurity.h  
@@ -95,7 +95,7 @@ LPCTSTR AccountName() const throw(...);
  Returns the LPCTSTR pointing to the name of the account.  
   
 ### Remarks  
- This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166).  
+ This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).  
   
  If no account name for the `SID` can be found, `AccountName` returns an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as a logon `SID` that identifies a logon session.  
   
@@ -176,7 +176,7 @@ LPCTSTR Domain() const throw(...);
  Returns the `LPCTSTR` pointing to the domain.  
   
 ### Remarks  
- This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166).  
+ This method attempts to find a name for the specified `SID` (security identifier). For full details, see [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).  
   
  If no account name for the `SID` can be found, `Domain` returns the domain as an empty string. This can occur if a network timeout prevents this method from finding the name. It also occurs for security identifiers with no corresponding account name, such as a logon `SID` that identifies a logon session.  
   
@@ -196,7 +196,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
  Returns TRUE on success, FALSE on failure.  
   
 ### Remarks  
- See [EqualPrefixSid](http://msdn.microsoft.com/library/windows/desktop/aa446621) in the Windows SDK for more details.  
+ See [EqualPrefixSid](https://msdn.microsoft.com/library/windows/desktop/aa446621) in the Windows SDK for more details.  
   
 ##  <a name="getlength"></a>  CSid::GetLength  
  Returns the length of the `CSid` object.  
@@ -461,7 +461,7 @@ LPCTSTR Sid() const throw(...);
 ```  
   
 ### Return Value  
- Returns the `SID` structure as a string in a format suitable for display, storage, or transmission. Equivalent to [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399).  
+ Returns the `SID` structure as a string in a format suitable for display, storage, or transmission. Equivalent to [ConvertSidToStringSid](/windows/desktop/api/sddl/nf-sddl-convertsidtostringsida).  
   
 ##  <a name="sidnameuse"></a>  CSid::SidNameUse  
  Returns a description of the state of the `CSid` object.  

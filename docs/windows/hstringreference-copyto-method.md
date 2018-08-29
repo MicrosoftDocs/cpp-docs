@@ -29,7 +29,7 @@ The HSTRING that receives the copy.
 
 ## Remarks
 
-This method calls the [WindowsDuplicateString](http://msdn.microsoft.com/library/br224634.aspx) function.
+This method calls the [WindowsDuplicateString](https://msdn.microsoft.com/library/br224634.aspx) function.
 
 ## Requirements
 

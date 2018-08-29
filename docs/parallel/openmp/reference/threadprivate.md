@@ -34,7 +34,7 @@ Specifies that a variable is private to a thread.
   
  The `threadprivate` directive is based on the [thread](../../../cpp/thread.md)`__declspec` attribute; limits on **__declspec(thread)** apply to `threadprivate`.  
   
- You cannot use `threadprivate` in any DLL that will be loaded via [LoadLibrary](http://msdn.microsoft.com/library/windows/desktop/ms684175).  This includes DLLs that are loaded with [/DELAYLOAD (Delay Load Import)](../../../build/reference/delayload-delay-load-import.md), which also uses **LoadLibrary**.  
+ You cannot use `threadprivate` in any DLL that will be loaded via [LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175).  This includes DLLs that are loaded with [/DELAYLOAD (Delay Load Import)](../../../build/reference/delayload-delay-load-import.md), which also uses **LoadLibrary**.  
   
  You can use `threadprivate` in a DLL that is statically loaded at process startup.  
   

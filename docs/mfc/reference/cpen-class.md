@@ -34,10 +34,10 @@ class CPen : public CGdiObject
 |Name|Description|  
 |----------|-----------------|  
 |[CPen::CreatePen](#createpen)|Creates a logical cosmetic or geometric pen with the specified style, width, and brush attributes, and attaches it to the `CPen` object.|  
-|[CPen::CreatePenIndirect](#createpenindirect)|Creates a pen with the style, width, and color given in a [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) structure, and attaches it to the `CPen` object.|  
+|[CPen::CreatePenIndirect](#createpenindirect)|Creates a pen with the style, width, and color given in a [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) structure, and attaches it to the `CPen` object.|  
 |[CPen::FromHandle](#fromhandle)|Returns a pointer to a `CPen` object when given a Windows HPEN.|  
-|[CPen::GetExtLogPen](#getextlogpen)|Gets an [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) underlying structure.|  
-|[CPen::GetLogPen](#getlogpen)|Gets a [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) underlying structure.|  
+|[CPen::GetExtLogPen](#getextlogpen)|Gets an [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen) underlying structure.|  
+|[CPen::GetLogPen](#getlogpen)|Gets a [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) underlying structure.|  
   
 ### Public Operators  
   
@@ -121,7 +121,7 @@ CPen(
   
 - PS_JOIN_BEVEL Joins are beveled.  
   
-- PS_JOIN_MITER Joins are mitered when they are within the current limit set by the [SetMiterLimit](http://msdn.microsoft.com/library/windows/desktop/dd145076) function. If the join exceeds this limit, it is beveled.  
+- PS_JOIN_MITER Joins are mitered when they are within the current limit set by the [SetMiterLimit](/windows/desktop/api/wingdi/nf-wingdi-setmiterlimit) function. If the join exceeds this limit, it is beveled.  
   
 - PS_JOIN_ROUND Joins are round.  
   
@@ -185,7 +185,7 @@ BOOL CreatePen(
  Contains an RGB color for the pen.  
   
  *pLogBrush*  
- Points to a [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) structure. If *nPenStyle* is PS_COSMETIC, the `lbColor` member of the `LOGBRUSH` structure specifies the color of the pen and the *lbStyle* member of the `LOGBRUSH` structure must be set to BS_SOLID. If nPenStyle is PS_GEOMETRIC, all members must be used to specify the brush attributes of the pen.  
+ Points to a [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) structure. If *nPenStyle* is PS_COSMETIC, the `lbColor` member of the `LOGBRUSH` structure specifies the color of the pen and the *lbStyle* member of the `LOGBRUSH` structure must be set to BS_SOLID. If nPenStyle is PS_GEOMETRIC, all members must be used to specify the brush attributes of the pen.  
   
  *nStyleCount*  
  Specifies the length, in doubleword units, of the *lpStyle* array. This value must be zero if *nPenStyle* is not PS_USERSTYLE.  
@@ -267,7 +267,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
   
 ### Parameters  
  *pLogPen*  
- Points to an [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) structure that contains information about the pen.  
+ Points to an [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen) structure that contains information about the pen.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -277,13 +277,13 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
   
  See the following topics in the Windows SDK for information about pen attributes:  
   
-- [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
+- [GetObject](/windows/desktop/api/wingdi/nf-wingdi-getobject)  
   
-- [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711)  
+- [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen)  
   
-- [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041)  
+- [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen)  
   
-- [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705)  
+- [ExtCreatePen](/windows/desktop/api/wingdi/nf-wingdi-extcreatepen)  
   
 ### Example  
  The following code example demonstrates calling `GetExtLogPen` to retrieve a pen's attributes, and then create a new, cosmetic pen with the same color.  
@@ -299,7 +299,7 @@ int GetLogPen(LOGPEN* pLogPen);
   
 ### Parameters  
  *pLogPen*  
- Points to a [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) structure to contain information about the pen.  
+ Points to a [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) structure to contain information about the pen.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
@@ -311,9 +311,9 @@ int GetLogPen(LOGPEN* pLogPen);
   
  See the following topics in the Windows SDK for information about pen attributes:  
   
-- [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
+- [GetObject](/windows/desktop/api/wingdi/nf-wingdi-getobject)  
   
-- [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041)  
+- [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen)  
   
 ### Example  
  The following code example demonstrates calling `GetLogPen` to retrieve a pen character, and then create a new, solid pen with the same color.  
@@ -333,7 +333,7 @@ operator HPEN() const;
 ### Remarks  
  This operator is a casting operator, which supports direct use of an HPEN object.  
   
- For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in Windows SDK.  
+ For more information about using graphic objects, see the article [Graphic Objects](/windows/desktop/gdi/graphic-objects) in Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/cpp/cpen-class_7.cpp)]  

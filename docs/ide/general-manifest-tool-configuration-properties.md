@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # General, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
-Use this dialog box to specify general options for [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
+Use this dialog box to specify general options for [Mt.exe](https://msdn.microsoft.com/library/aa375649).  
   
  To access this property page dialog box, open the property pages for your project or your property sheet. Expand the **Manifest Tool** node under **Configuration Properties**, and then select **General**.  
   

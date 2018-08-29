@@ -70,26 +70,26 @@ If you are using an earlier version of the Visual C++ compiler toolset that supp
 
 3. Remove all unmanaged types:
 
-   Wherever appropriate, replace unmanaged types with references to structures from the [System](https://msdn.microsoft.com/en-us/library/system.appdomainmanager.appdomainmanager.aspx) namespace. Common managed types are listed in the following table:
+   Wherever appropriate, replace unmanaged types with references to structures from the [System](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx) namespace. Common managed types are listed in the following table:
 
    |Structure|Description|
    |---------------|-----------------|
-   |[Boolean](https://msdn.microsoft.com/en-us/library/system.boolean\(v=vs.140\).aspx)|Represents a Boolean value.|
-   |[Byte](https://msdn.microsoft.com/en-us/library/system.byte\(v=vs.140\).aspx)|Represents an 8-bit unsigned integer.|
-   |[Char](https://msdn.microsoft.com/en-us/library/system.char\(v=vs.140\).aspx)|Represents a Unicode character.|
-   |[DateTime](https://msdn.microsoft.com/en-us/library/system.datetime.datetime.aspx)|Represents an instant in time, typically expressed as a date and time of day.|
-   |[Decimal](https://msdn.microsoft.com/en-us/library/system.decimal\(v=vs.140\).aspx)|Represents a decimal number.|
-   |[Double](https://msdn.microsoft.com/en-us/library/system.double\(v=vs.140\).aspx)|Represents a double-precision floating-point number.|
-   |[Guid](https://msdn.microsoft.com/en-us/library/system.guid\(v=vs.140\).aspx)|Represents a globally unique identifier (GUID).|
-   |[Int16](https://msdn.microsoft.com/en-us/library/system.int16\(v=vs.140\).aspx)|Represents a 16-bit signed integer.|
-   |[Int32](https://msdn.microsoft.com/en-us/library/system.int32\(v=vs.140\).aspx)|Represents a 32-bit signed integer.|
-   |[Int64](https://msdn.microsoft.com/en-us/library/system.int64\(v=vs.140\).aspx)|Represents a 64-bit signed integer.|
-   |[IntPtr](https://msdn.microsoft.com/en-us/library/system.intptr\(v=vs.140\).aspx)|A platform-specific type that is used to represent a pointer or a handle.|
-   |[SByte](https://msdn.microsoft.com/en-us/library/system.byte.aspx)|Represents an 8-bit signed integer.|
-   |[Single](https://msdn.microsoft.com/en-us/library/system.single.aspx)|Represents a single-precision floating-point number.|
-   |[TimeSpan](https://msdn.microsoft.com/en-us/library/system.timespan\(v=vs.140\).aspx)|Represents a time interval.|
-   |[UInt16](https://msdn.microsoft.com/en-us/library/system.uint16\(v=vs.140\).aspx)|Represents a 16-bit unsigned integer.|
-   |[UInt32](https://msdn.microsoft.com/en-us/library/system.uint32\(v=vs.140\).aspx)|Represents a 32-bit unsigned integer.|
-   |[UInt64](https://msdn.microsoft.com/en-us/library/system.uint64\(v=vs.140\).aspx)|Represents a 64-bit unsigned integer.|
-   |[UIntPtr](https://msdn.microsoft.com/en-us/library/system.uintptr\(v=vs.140\).aspx)|A platform-specific type that is used to represent a pointer or a handle.|
-   |[Void](https://msdn.microsoft.com/en-us/library/system.void\(v=vs.140\).aspx)|Indicates a method that does not return a value; that is, the method has the void return type.|
+   |[Boolean](https://msdn.microsoft.com/library/system.boolean\(v=vs.140\).aspx)|Represents a Boolean value.|
+   |[Byte](https://msdn.microsoft.com/library/system.byte\(v=vs.140\).aspx)|Represents an 8-bit unsigned integer.|
+   |[Char](https://msdn.microsoft.com/library/system.char\(v=vs.140\).aspx)|Represents a Unicode character.|
+   |[DateTime](https://msdn.microsoft.com/library/system.datetime.datetime.aspx)|Represents an instant in time, typically expressed as a date and time of day.|
+   |[Decimal](https://msdn.microsoft.com/library/system.decimal\(v=vs.140\).aspx)|Represents a decimal number.|
+   |[Double](https://msdn.microsoft.com/library/system.double\(v=vs.140\).aspx)|Represents a double-precision floating-point number.|
+   |[Guid](https://msdn.microsoft.com/library/system.guid\(v=vs.140\).aspx)|Represents a globally unique identifier (GUID).|
+   |[Int16](https://msdn.microsoft.com/library/system.int16\(v=vs.140\).aspx)|Represents a 16-bit signed integer.|
+   |[Int32](https://msdn.microsoft.com/library/system.int32\(v=vs.140\).aspx)|Represents a 32-bit signed integer.|
+   |[Int64](https://msdn.microsoft.com/library/system.int64\(v=vs.140\).aspx)|Represents a 64-bit signed integer.|
+   |[IntPtr](https://msdn.microsoft.com/library/system.intptr\(v=vs.140\).aspx)|A platform-specific type that is used to represent a pointer or a handle.|
+   |[SByte](https://msdn.microsoft.com/library/system.byte.aspx)|Represents an 8-bit signed integer.|
+   |[Single](https://msdn.microsoft.com/library/system.single.aspx)|Represents a single-precision floating-point number.|
+   |[TimeSpan](https://msdn.microsoft.com/library/system.timespan\(v=vs.140\).aspx)|Represents a time interval.|
+   |[UInt16](https://msdn.microsoft.com/library/system.uint16\(v=vs.140\).aspx)|Represents a 16-bit unsigned integer.|
+   |[UInt32](https://msdn.microsoft.com/library/system.uint32\(v=vs.140\).aspx)|Represents a 32-bit unsigned integer.|
+   |[UInt64](https://msdn.microsoft.com/library/system.uint64\(v=vs.140\).aspx)|Represents a 64-bit unsigned integer.|
+   |[UIntPtr](https://msdn.microsoft.com/library/system.uintptr\(v=vs.140\).aspx)|A platform-specific type that is used to represent a pointer or a handle.|
+   |[Void](https://msdn.microsoft.com/library/system.void\(v=vs.140\).aspx)|Indicates a method that does not return a value; that is, the method has the void return type.|

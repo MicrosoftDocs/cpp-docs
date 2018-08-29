@@ -24,7 +24,7 @@ Indicates the single, bindable property that best represents the object.
 
 ## Remarks
 
-The **defaultbind** C++ attribute has the same functionality as the [defaultbind](http://msdn.microsoft.com/library/windows/desktop/aa366790) MIDL attribute.
+The **defaultbind** C++ attribute has the same functionality as the [defaultbind](/windows/desktop/Midl/defaultbind) MIDL attribute.
 
 ## Example
 

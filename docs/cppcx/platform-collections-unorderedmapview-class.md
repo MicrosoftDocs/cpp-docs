@@ -63,7 +63,7 @@ ref class UnorderedMapView sealed;
  **Namespace:** Platform::Collections  
 
 ## <a name="first"></a>  UnorderedMapView::First Method
-Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.  
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.  
   
 ### Syntax  
   
@@ -118,7 +118,7 @@ V Lookup(K key);
 
 
 ## <a name="size"></a>  UnorderedMapView::Size Method
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMapView.  
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMapView.  
   
 ### Syntax  
   
@@ -213,7 +213,7 @@ UnorderedMapView(
  The typename of the UnorderedMapView.  
   
  `H`  
- A function object that can a hash value for a key. Defaults to [std::hash\<K>](http://msdn.microsoft.com/en-us/54f67435-af9d-4217-a29d-fa4d2491a104) for the types that `std::hash` supports.  
+ A function object that can a hash value for a key. Defaults to [std::hash\<K>](https://msdn.microsoft.com/54f67435-af9d-4217-a29d-fa4d2491a104) for the types that `std::hash` supports.  
   
  `P`  
  A type that provides a function object that can compare two keys to determine their equality. Defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).  

@@ -16,4 +16,4 @@ Standard include files declare C run-time library functions as they are implemen
   
 ## See Also  
 
-[Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)

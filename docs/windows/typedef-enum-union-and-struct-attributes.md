@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Typedef, Enum, Union, and Struct Attributes
 
-The following attributes apply to the [typedef](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1), [struct](../cpp/struct-cpp.md), and [enum](../cpp/enumerations-cpp.md) C++ keywords.
+The following attributes apply to the [typedef](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1), [struct](../cpp/struct-cpp.md), and [enum](../cpp/enumerations-cpp.md) C++ keywords.
 
 ### typedef
 
