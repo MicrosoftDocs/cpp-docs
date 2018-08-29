@@ -61,7 +61,7 @@ ms.workload: ["cplusplus"]
  `__iscsymf`  
  Letter or underscore.  
   
- **isdigit**  
+ `isdigit`  
  Decimal digit (0 - 9).  
   
  `isgraph`  
@@ -102,17 +102,16 @@ ms.workload: ["cplusplus"]
  `iswcntrl`  
  Control wide character.  
   
- **__iswcsym**  
- Any wide character for which **isalnum** is true, or the '_' character.  
+ `__iswcsym`  
+ Any wide character for which `isalnum` is true, or the '_' character.  
   
- **__iswcsymf**  
+ `__iswcsymf`  
  Any wide character for which `iswalpha` is true, or the '_' character.  
   
  `iswctype`  
  Character has property specified by the `desc` argument. For each valid value of the `desc` argument of `iswctype`, there is an equivalent wide-character classification routine, as shown in the following table:  
   
- **Equivalence of iswctype(**   
- ***c, desc* ) to Other isw Testing Routines**  
+ ### Equivalence of iswctype(c, desc) to Other isw Testing Routines
   
 |Value of *desc* argument|iswctype( *c, desc* ) equivalent|  
 |------------------------------|----------------------------------------|  

@@ -24,7 +24,7 @@ A few additional caveats:
 
 - If the expression `~Ty` throws an exception, the resulting state of the container object is undefined.
 
-- If the container stores an allocator object *al*, and *al* throws an exception other than as a result of a call to *al***.allocate**, the resulting state of the container object is undefined.
+- If the container stores an allocator object *al*, and *al* throws an exception other than as a result of a call to `al.allocate`, the resulting state of the container object is undefined.
 
 - If the container stores a function object *comp*, to determine how to order the controlled sequence, and *comp* throws an exception of any kind, the resulting state of the container object is undefined.
 

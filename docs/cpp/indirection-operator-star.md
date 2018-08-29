@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 ```  
   
 ## Remarks  
- The unary indirection operator (**\***) dereferences a pointer; that is, it converts a pointer value to an l-value. The operand of the indirection operator must be a pointer to a type. The result of the indirection expression is the type from which the pointer type is derived. The use of the **\*** operator in this context is different from its meaning as a binary operator, which is multiplication.  
+ The unary indirection operator (<strong>\*</strong>) dereferences a pointer; that is, it converts a pointer value to an l-value. The operand of the indirection operator must be a pointer to a type. The result of the indirection expression is the type from which the pointer type is derived. The use of the <strong>\*</strong> operator in this context is different from its meaning as a binary operator, which is multiplication.  
   
  If the operand points to a function, the result is a function designator. If it points to a storage location, the result is an l-value designating the storage location.  
   

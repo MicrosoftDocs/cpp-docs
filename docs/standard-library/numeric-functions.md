@@ -50,7 +50,7 @@ The sum of *val* and all the elements in the specified range for the first templ
 
 ### Remarks
 
-The initial value insures that there will be a well-defined result when the range is empty, in which case *val* is returned. The binary operation does not need to be associative or commutative. The result is initialized to the initial value *val* and then *result* = `binary_op` ( *result*, **\***`Iter`) is calculated iteratively through the range, where `Iter` is an iterator pointing to successive element in the range. The range must be valid and the complexity is linear with the size of the range. The return type of the binary operator must be convertible to **Type** to ensure closure during the iteration.
+The initial value insures that there will be a well-defined result when the range is empty, in which case *val* is returned. The binary operation does not need to be associative or commutative. The result is initialized to the initial value *val* and then *result* = `binary_op` ( *result*, <strong>\*</strong>`Iter`) is calculated iteratively through the range, where `Iter` is an iterator pointing to successive element in the range. The range must be valid and the complexity is linear with the size of the range. The return type of the binary operator must be convertible to **Type** to ensure closure during the iteration.
 
 ### Example
 

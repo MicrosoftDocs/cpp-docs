@@ -221,7 +221,7 @@ virtual LPTSTR ReadString(
  A reference to the [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that receives the read line.  
   
 ### Return Value  
- A pointer to the buffer containing plain data retrieved from the [CInternetFile](../../mfc/reference/cinternetfile-class.md) object. Regardless of the data type of the buffer passed to this method, it does not perform any manipulations on the data (for example, conversion to Unicode), so you must map the returned data to the structure you expect, as if the **void\*** type were returned.  
+ A pointer to the buffer containing plain data retrieved from the [CInternetFile](../../mfc/reference/cinternetfile-class.md) object. Regardless of the data type of the buffer passed to this method, it does not perform any manipulations on the data (for example, conversion to Unicode), so you must map the returned data to the structure you expect, as if the **void** <strong>\*</strong> type were returned.  
   
  NULL if end-of-file was reached without reading any data; or, if boolean, FALSE if end-of-file was reached without reading any data.  
   

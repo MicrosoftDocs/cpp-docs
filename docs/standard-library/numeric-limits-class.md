@@ -25,12 +25,12 @@ class numeric_limits
 
 ### Parameters
 
-*Type*
+*Type*<br/>
  The fundamental element data type whose properties are being tested or queried or set.
 
 ## Remarks
 
-The header defines explicit specializations for the types **wchar_t**, **bool**, **char**, **signed char**, **unsigned char**, **short**, **unsigned short**, **int**, **unsigned int**, **long**, **unsigned long**, **float**, **double**, **long double****,** **long long**, **unsigned long long**, `char16_t`, and `char32_t`. For these explicit specializations, the member [numeric_limits::is_specialized](#is_specialized) is **true**, and all relevant members have meaningful values. The program can supply additional explicit specializations. Most member functions of the class describe or test possible implementations of **float**.
+The header defines explicit specializations for the types **wchar_t**, **bool**, **char**, **signed char**, **unsigned char**, **short**, **unsigned short**, **int**, **unsigned int**, **long**, **unsigned long**, **float**, **double**, **long double**, **long long**, **unsigned long long**, **char16_t**, and **char32_t**. For these explicit specializations, the member [numeric_limits::is_specialized](#is_specialized) is **true**, and all relevant members have meaningful values. The program can supply additional explicit specializations. Most member functions of the class describe or test possible implementations of **float**.
 
 For an arbitrary specialization, no members have meaningful values. A member object that does not have a meaningful value stores zero (or **false**) and a member function that does not return a meaningful value returns `Type(0)`.
 

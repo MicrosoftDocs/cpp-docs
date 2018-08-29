@@ -40,7 +40,7 @@ name ENDS
  If this parameter is not specified, **PARA** is used by default.  
   
  *combine*  
- **PUBLIC**, **STACK**, **COMMON**, **MEMORY**, **AT***address*, **PRIVATE**  
+ **PUBLIC**, **STACK**, **COMMON**, **MEMORY**, **AT**<em>address</em>, **PRIVATE**  
   
  *use*  
  **USE16**, **USE32**, **FLAT**  

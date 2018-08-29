@@ -105,7 +105,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, signed char* str);
 ```
 
-returns `Istr` >> ( `char`**\***) `str`.
+returns `Istr >> ( char * ) str`.
 
 The template function:
 
@@ -115,7 +115,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, signed char& Ch);
 ```
 
-returns `Istr` >> ( **char&**) `Ch`.
+returns `Istr >> ( char& ) Ch`.
 
 The template function:
 
@@ -125,7 +125,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, unsigned char* str);
 ```
 
-returns `Istr` >> ( **char \***) `str`.
+returns `Istr >> ( char * ) str`.
 
 The template function:
 
@@ -135,7 +135,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, unsigned char& Ch);
 ```
 
-returns `Istr` >> ( **char&**) `Ch`.
+returns `Istr >> ( char& ) Ch`.
 
 The template function:
 
@@ -146,7 +146,7 @@ basic_istream<Elem, Tr>& operator>>(
     Type& val);
 ```
 
-returns `Istr` `>>` `val` (and converts an `rvalue reference` to `Istr` to an `lvalue` in the process).
+returns `Istr >> val` (and converts an rvalue reference to `Istr` to an lvalue in the process).
 
 ### Example
 

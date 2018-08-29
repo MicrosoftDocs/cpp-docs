@@ -28,7 +28,7 @@ wint_t _fgetwchar( void );
 
 ## Return Value
 
-**_fgetchar** returns the character read as an **int** or return **EOF** to indicate an error or end of file. **_****fgetwchar** returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns **WEOF** to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition.
+**\_fgetchar** returns the character read as an **int** or returns `EOF` to indicate an error or end of file. **\_fgetwchar** returns, as a [wint_t](../../c-runtime-library/standard-types.md), the wide character that corresponds to the character read or returns `WEOF` to indicate an error or end of file. For both functions, use **feof** or **ferror** to distinguish between an error and an end-of-file condition.
 
 ## Remarks
 

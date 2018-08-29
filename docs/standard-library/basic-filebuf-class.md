@@ -25,10 +25,10 @@ class basic_filebuf : public basic_streambuf<Elem, Tr>
 
 ### Parameters
 
-*Elem*
+*Elem*<br/>
  The basic element of the file buffer.
 
-*Tr*
+*Tr*<br/>
  The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
@@ -367,13 +367,13 @@ basic_filebuf<Elem, Tr> *open(
 
 ### Parameters
 
-*_Filename*
+*_Filename*<br/>
  The name of the file to open.
 
-*_Mode*
+*_Mode*<br/>
  One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*
+*_Prot*<br/>
  The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Return Value
@@ -416,7 +416,7 @@ basic_filebuf& operator=(basic_filebuf&& right);
 
 ### Parameters
 
-*right*
+*right*<br/>
  An rvalue reference to a [basic_filebuf](../standard-library/basic-filebuf-class.md) object.
 
 ### Return Value
@@ -437,7 +437,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 
 ### Parameters
 
-*_Meta*
+*_Meta*<br/>
  The character to insert into the buffer or `traits_type::eof`.
 
 ### Return Value
@@ -446,7 +446,7 @@ If the function cannot succeed, it returns `traits_type::eof`. Otherwise, it ret
 
 ### Remarks
 
-If _ *Meta***!= traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the protected virtual member function endeavors to insert the element **ch = traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*) into the output buffer. It can do so in various ways:
+If *_Meta* **!= traits_type::**[eof](../standard-library/char-traits-struct.md#eof), the protected virtual member function endeavors to insert the element **ch = traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*_Meta*) into the output buffer. It can do so in various ways:
 
 - If a write position is available, it can store the element into the write position and increment the next pointer for the output buffer.
 
@@ -464,7 +464,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
 
 ### Parameters
 
-*_Meta*
+*_Meta*<br/>
  The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
@@ -501,13 +501,13 @@ virtual pos_type seekoff(off_type _Off,
 
 ### Parameters
 
-*_Off*
+*_Off*<br/>
  The position to seek for relative to *_Way*.
 
-*_Way*
+*_Way*<br/>
  The starting point for offset operations. See [seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Which*
+*_Which*<br/>
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -532,10 +532,10 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### Parameters
 
-*_Sp*
+*_Sp*<br/>
  The position to seek for.
 
-*_Which*
+*_Which*<br/>
  Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
@@ -562,10 +562,10 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### Parameters
 
-*_Buffer*
+*_Buffer*<br/>
  Pointer to a buffer.
 
-*count*
+*count*<br/>
  Size of the buffer.
 
 ### Return Value
@@ -586,7 +586,7 @@ void swap(basic_filebuf& right);
 
 ### Parameters
 
-*right*
+*right*<br/>
  An `lvalue` reference to another `basic_filebuf`.
 
 ## <a name="sync"></a>  basic_filebuf::sync

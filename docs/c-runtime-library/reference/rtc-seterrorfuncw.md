@@ -50,23 +50,31 @@ Before you can call this function, you must first call one of the run-time error
 
 **_RTC_error_fnW** is defined as follows:
 
-> **typedef int (__cdecl \*_RTC_error_fnW)(int** *errorType* **, const wchar_t \*** *filename* **, int**  *linenumber* **, const wchar_t \*** *moduleName* **, const wchar_t \*** *format* **, ...);**
+```cpp
+typedef int (__cdecl * _RTC_error_fnW)(
+    int errorType,
+    const wchar_t * filename,
+    int linenumber,
+    const wchar_t * moduleName,
+    const wchar_t * format,
+    ... );
+```
 
 where:
 
-*errorType*
+*errorType*<br/>
 The type of error that's specified by [_RTC_SetErrorType](rtc-seterrortype.md).
 
-*filename*
+*filename*<br/>
 The source file where the failure occurred, or null if no debug information is available.
 
-*linenumber*
+*linenumber*<br/>
 The line in *filename* where the failure occurred, or 0 if no debug information is available.
 
-*moduleName*
+*moduleName*<br/>
 The DLL or executable name where the failure occurred.
 
-*format*
+*format*<br/>
 printf style string to display an error message, using the remaining parameters. The first argument of the VA_ARGLIST is the RTC Error number that occurred.
 
 For an example that shows how to use **_RTC_error_fnW**, see [Native Run-Time Checks Customization](/visualstudio/debugger/native-run-time-checks-customization).

@@ -788,7 +788,7 @@ The reference to the element offset.
 
 ### Remarks
 
-The operator returns **\***( **\*this** + `Off`).
+The operator returns <strong>\*</strong>( **\*this** + `Off`).
 
 ### Example
 

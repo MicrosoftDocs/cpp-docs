@@ -75,8 +75,8 @@ CComObject(void* = NULL);
 ```  
   
 ### Parameters  
- **void\***  
- [in] This unnamed parameter is not used. It exists for symmetry with other **CCom***XXX*`Object`*XXX* constructors.  
+ <em>void\*</em>  
+ [in] This unnamed parameter is not used. It exists for symmetry with other `CComXXXObjectXXX` constructors.  
   
 ### Remarks  
  The destructor decrements it.  
