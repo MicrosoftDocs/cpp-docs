@@ -34,10 +34,6 @@ using namespace default;
    String^ MyString3 = "Hello, world!";
 ```
 
-### Remarks
-
-For more information and examples about strings, see [Platform::String, std::wstring, and Literals (Platform)](https://msdn.microsoft.com/ec92fbc6-edf3-4137-a85e-8e29bdb857a8)
-
 ### Requirements
 
 Compiler option: `/ZW`

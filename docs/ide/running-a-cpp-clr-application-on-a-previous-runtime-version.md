@@ -20,9 +20,5 @@ Unless otherwise specified, a C++ .NET Framework application is built to run on 
   
  If you specify more than one runtime version and the application runs on a computer that has more than one installed runtime version, the application uses the first version that is specified in the config file and is installed.  
   
- For more information, see [How to: Configure an App to Target a .NET Framework Version](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717).  
-  
- To run on version 1.0 or version 1.1 of the CLR, an application that is built by the Visual C++ compiler must be compiled by using [/clr:initialAppDomain](../build/reference/clr-common-language-runtime-compilation.md).  
-  
 ## See Also  
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)

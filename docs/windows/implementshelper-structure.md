@@ -58,5 +58,4 @@ This template traverses a list of interfaces and adds them as base classes, and 
 
 ## See Also
 
-[Reference (Windows Runtime Library)](https://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)  
 [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -12,7 +12,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Standard Conversions
-The C++ language defines conversions between its fundamental types. It also defines conversions for pointer, reference, and pointer-to-member derived types. These conversions are called "standard conversions." (For more information about types, standard types, and derived types, see [Types](https://msdn.microsoft.com/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
+The C++ language defines conversions between its fundamental types. It also defines conversions for pointer, reference, and pointer-to-member derived types. These conversions are called *standard conversions*.  
   
  This section discusses the following standard conversions:  
   
@@ -198,7 +198,7 @@ Inheritance Graph for Illustration of Base-Class Accessibility
 ||Protected|Yes|  
 ||Public|Yes|  
   
- The second case in which a pointer to a class can be converted to a pointer to a base class is when you use an explicit type conversion. (See [Expressions with Explicit Type Conversions](https://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) for more information about explicit type conversions.)  
+ The second case in which a pointer to a class can be converted to a pointer to a base class is when you use an explicit type conversion. (See [Explicit Type Conversion Operator](explicit-type-conversion-operator-parens.md) for more information about explicit type conversions.)  
   
  The result of such a conversion is a pointer to the "subobject," the portion of the object that is completely described by the base class.  
   

@@ -42,7 +42,7 @@ Type^ tx2 = (Type^)(tn);
 ```  
   
 ## .NET Framework Equivalent  
- .NET Framework programs project `TypeName` as [System.Type](assetId:///System.Type?qualifyHint=False&autoUpgrade=True).  
+ .NET Framework programs project `TypeName` as <xref:System.Type>
   
 ### Requirements  
   

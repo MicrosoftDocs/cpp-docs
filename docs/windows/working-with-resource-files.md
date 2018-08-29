@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 # Working with Resource Files
 
 > [!WARNING]
-> This section applies to Windows desktop applications written in C++. For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](https://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).
+> This section applies to Windows desktop applications written in C++. For information about resources in Universal Windows Platform apps written in C++, see [Defining App Resources](/windows/uwp/app-resources/).
 >
 > For information on adding resources to C++/CLI  projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*.
 
