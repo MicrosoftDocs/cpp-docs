@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .386P
-Enables assembly of all instructions (including privileged) for the 80386 processor; disables assembly of instructions introduced with later processors.  
-  
-## Syntax  
-  
-```  
-  
-.386P  
-  
-```  
-  
-## Remarks  
- Also enables 80387 instructions.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables assembly of all instructions (including privileged) for the 80386 processor; disables assembly of instructions introduced with later processors.
+
+## Syntax
+
+> .386P
+
+## Remarks
+
+Also enables 80387 instructions.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

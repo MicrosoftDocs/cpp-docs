@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # GROUP
-Add the specified *segments* to the group called *name*.  
-  
-## Syntax  
-  
-```  
-  
-name GROUP segment [[, segment]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Add the specified *segments* to the group called *name*.
+
+## Syntax
+
+```
+
+name GROUP segment [[, segment]]...
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

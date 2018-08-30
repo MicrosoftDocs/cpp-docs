@@ -13,20 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # EQU
-The first directive assigns numeric value of *expression* to *name*.  
-  
-## Syntax  
-  
-```  
-  
-      name EQU expression  
-name EQU <text>  
-```  
-  
-## Remarks  
- The *name* cannot be redefined later.  
-  
- The second directive assigns specified *text* to *name*. The *name* can be assigned a different *text* later. See [TEXTEQU](../../assembler/masm/textequ.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+The first directive assigns numeric value of *expression* to *name*.
+
+## Syntax
+
+> *name* EQU *expression*
+
+> *name* EQU \<*text*>
+
+## Remarks
+
+The *name* cannot be redefined later.
+
+The second directive assigns specified *text* to *name*. The *name* can be assigned a different *text* later. See [TEXTEQU](../../assembler/masm/textequ.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

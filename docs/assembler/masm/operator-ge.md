@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator GE
-Returns true (-1) if *expression1* is greater than or equal to *expression2*, or returns false (0) if it is not.  
-  
-## Syntax  
-  
-```  
-  
-expression1 GE expression2  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns true (-1) if *expression1* is greater than or equal to *expression2*, or returns false (0) if it is not.
+
+## Syntax
+
+```
+
+expression1 GE expression2
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

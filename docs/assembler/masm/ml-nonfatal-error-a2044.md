@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2044
-**invalid character in file**  
-  
- The source file contained a character outside a comment, string, or literal that was not recognized as an operator or other legal character.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**invalid character in file**
+
+The source file contained a character outside a comment, string, or literal that was not recognized as an operator or other legal character.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

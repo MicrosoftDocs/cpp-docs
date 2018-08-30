@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # PURGE
-Deletes the specified macros from memory.  
-  
-## Syntax  
-  
-```  
-  
-PURGE macroname [[, macroname]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Deletes the specified macros from memory.
+
+## Syntax
+
+```
+
+PURGE macroname [[, macroname]]...
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

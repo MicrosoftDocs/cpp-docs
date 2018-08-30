@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .486P
-Enables assembly of all instructions (including privileged) for the 80486 processor.  
-  
-## Syntax  
-  
-```  
-  
-.486P  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables assembly of all instructions (including privileged) for the 80486 processor.
+
+## Syntax
+
+> .486P
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

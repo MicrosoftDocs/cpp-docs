@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .CREF
-Enables listing of symbols in the symbol portion of the symbol table and browser file.  
-  
-## Syntax  
-  
-```  
-  
-.CREF  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables listing of symbols in the symbol portion of the symbol table and browser file.
+
+## Syntax
+
+> .CREF
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

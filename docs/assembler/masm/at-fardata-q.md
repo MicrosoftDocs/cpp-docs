@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @fardata?
-The name of the segment defined by the [.FARDATA?](../../assembler/masm/dot-fardata-q.md) directive (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@fardata?  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The name of the segment defined by the [.FARDATA?](../../assembler/masm/dot-fardata-q.md) directive (text macro).
+
+## Syntax
+
+> @fardata?
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

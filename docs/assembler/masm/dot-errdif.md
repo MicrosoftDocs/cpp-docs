@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERRDIF[[I]]
-Generates an error if the text items are different.  
-  
-## Syntax  
-  
-```  
-  
-.ERRDIF[[I]] <textitem1>, <textitem2> [[, message]]  
-```  
-  
-## Remarks  
- If **I** is given, the comparison is case insensitive.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Generates an error if the text items are different.
+
+## Syntax
+
+> .ERRDIF[[I]] <textitem1>, <textitem2> [[, message]]
+
+## Remarks
+
+If **I** is given, the comparison is case insensitive.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

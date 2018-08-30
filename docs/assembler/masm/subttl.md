@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # SUBTTL
-See [SUBTITLE](../../assembler/masm/subtitle.md).  
-  
-## Syntax  
-  
-```  
-  
-SUBTTL  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [SUBTITLE](../../assembler/masm/subtitle.md).
+
+## Syntax
+
+> SUBTTL
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

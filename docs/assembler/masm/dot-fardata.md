@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .FARDATA
-When used with [.MODEL](../../assembler/masm/dot-model.md), starts a far data segment for initialized data (segment name FAR_DATA or *name*).  
-  
-## Syntax  
-  
-```  
-  
-.FARDATA [[name]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+When used with [.MODEL](../../assembler/masm/dot-model.md), starts a far data segment for initialized data (segment name FAR_DATA or *name*).
+
+## Syntax
+
+```
+
+.FARDATA [[name]]
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

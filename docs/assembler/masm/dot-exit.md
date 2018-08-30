@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .EXIT
-Generates termination code.  
-  
-## Syntax  
-  
-```  
-  
-.EXIT [[expression]]  
-```  
-  
-## Remarks  
- Returns optional *expression* to shell.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Generates termination code.
+
+## Syntax
+
+> .EXIT [[expression]]
+
+## Remarks
+
+Returns optional *expression* to shell.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

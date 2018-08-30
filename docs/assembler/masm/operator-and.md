@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator AND
-Returns the result of a bitwise AND operation for *expression1* and *expression2*.  
-  
-## Syntax  
-  
-```  
-  
-expression1 AND expression2  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the result of a bitwise AND operation for *expression1* and *expression2*.
+
+## Syntax
+
+```
+
+expression1 AND expression2
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

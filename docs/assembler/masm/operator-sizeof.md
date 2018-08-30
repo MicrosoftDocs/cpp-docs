@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator SIZEOF
-Returns the number of bytes in *variable* or `type`.  
-  
-## Syntax  
-  
-```  
-  
-SIZEOF {variable | type}  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the number of bytes in *variable* or `type`.
+
+## Syntax
+
+```
+
+SIZEOF {variable | type}
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

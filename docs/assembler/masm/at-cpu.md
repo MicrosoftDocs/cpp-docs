@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Cpu
-A bit mask specifying the processor mode (numeric equate).  
-  
-## Syntax  
-  
-```  
-  
-@Cpu  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+A bit mask specifying the processor mode (numeric equate).
+
+## Syntax
+
+> @Cpu
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

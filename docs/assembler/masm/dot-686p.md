@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .686P
-Enables assembly of all instructions (including privileged) for the Pentium Pro processor.  
-  
-## Syntax  
-  
-```  
-  
-.686P  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables assembly of all instructions (including privileged) for the Pentium Pro processor.
+
+## Syntax
+
+> .686P
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

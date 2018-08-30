@@ -1,5 +1,5 @@
 ---
-title: "operator &amp;&amp; (MASM) | Microsoft Docs"
+title: "Substitution operator (MASM) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-masm"]
@@ -12,18 +12,14 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# operator &amp;&amp; (MASM)
-Replaces `parameter` with its corresponding argument value.  
-  
-## Syntax  
-  
-```  
-  
-&  
-parameter  
-&  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+# Substitution operator (MASM)
+
+Replaces *parameter* with its corresponding argument value.
+
+## Syntax
+
+> &*parameter*&
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

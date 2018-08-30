@@ -13,19 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # MACRO
-Marks a macro block called *name* and establishes *parameter* placeholders for arguments passed when the macro is called.  
-  
-## Syntax  
-  
-```  
-  
-   name MACRO [[parameter [[:REQ | :=default | :VARARG]]]]...  
-statements  
-ENDM [[value]]  
-```  
-  
-## Remarks  
- A macro function returns *value* to the calling statement.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Marks a macro block called *name* and establishes *parameter* placeholders for arguments passed when the macro is called.
+
+## Syntax
+
+> *name* MACRO [[*parameter* [[:REQ | :=*default* | :VARARG]] ]] ...<br/>
+> *statements*<br/>
+> ENDM [[*value*]]
+
+## Remarks
+
+A macro function returns *value* to the calling statement.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # EVEN
-Aligns the next variable or instruction on an even byte.  
-  
-## Syntax  
-  
-```  
-  
-EVEN  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Aligns the next variable or instruction on an even byte.
+
+## Syntax
+
+> EVEN
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

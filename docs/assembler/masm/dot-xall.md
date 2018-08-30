@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .XALL
-See [.LISTMACRO](../../assembler/masm/dot-listmacro.md).  
-  
-## Syntax  
-  
-```  
-  
-.XALL  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [.LISTMACRO](../../assembler/masm/dot-listmacro.md).
+
+## Syntax
+
+> .XALL
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator MOD
-Returns the integer value of the remainder (modulo) when dividing *expression1* by *expression2*.  
-  
-## Syntax  
-  
-```  
-  
-expression1 MOD expression2  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the integer value of the remainder (modulo) when dividing *expression1* by *expression2*.
+
+## Syntax
+
+```
+
+expression1 MOD expression2
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

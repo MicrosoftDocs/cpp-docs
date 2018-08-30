@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .LFCOND
-## Syntax  
-  
-```  
-  
-.LFCOND  
-  
-```  
-  
-## Remarks  
- See [.LISTIF](../../assembler/masm/dot-listif.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> .LFCOND
+
+## Remarks
+
+See [.LISTIF](../../assembler/masm/dot-listif.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

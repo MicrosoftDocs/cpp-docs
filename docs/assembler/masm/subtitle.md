@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # SUBTITLE
-Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).  
-  
-## Syntax  
-  
-```  
-  
-SUBTITLE text  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).
+
+## Syntax
+
+```
+
+SUBTITLE text
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

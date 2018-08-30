@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2054
-**forced error : value not equal to 0**  
-  
- The conditional-error directive [.ERRNZ](../../assembler/masm/dot-errnz.md) was used to generate this error.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**forced error : value not equal to 0**
+
+The conditional-error directive [.ERRNZ](../../assembler/masm/dot-errnz.md) was used to generate this error.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

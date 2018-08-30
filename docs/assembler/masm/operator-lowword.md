@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator LOWWORD
-Returns the low 16 bits of *expression*. MASM expressions are 64-bit values.  
-  
-## Syntax  
-  
-```  
-  
-LOWWORD expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the low 16 bits of *expression*. MASM expressions are 64-bit values.
+
+## Syntax
+
+```
+
+LOWWORD expression
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

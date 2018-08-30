@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .NOLISTIF
-Suppresses listing of conditional blocks whose condition evaluates to false (0).  
-  
-## Syntax  
-  
-```  
-  
-.NOLISTIF  
-  
-```  
-  
-## Remarks  
- This is the default. Same as [.SFCOND](../../assembler/masm/dot-sfcond.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Suppresses listing of conditional blocks whose condition evaluates to false (0).
+
+## Syntax
+
+> .NOLISTIF
+
+## Remarks
+
+This is the default. Same as [.SFCOND](../../assembler/masm/dot-sfcond.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

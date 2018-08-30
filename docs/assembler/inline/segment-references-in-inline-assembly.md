@@ -12,10 +12,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Segment References in Inline Assembly
-## Microsoft Specific  
- You must refer to segments by register rather than by name (the segment name `_TEXT` is invalid, for instance). Segment overrides must use the register explicitly, as in ES:[BX].  
-  
- **END Microsoft Specific**  
-  
-## See Also  
- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+## Microsoft Specific
+You must refer to segments by register rather than by name (the segment name `_TEXT` is invalid, for instance). Segment overrides must use the register explicitly, as in ES:[BX].
+
+**END Microsoft Specific**
+
+## See Also
+[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

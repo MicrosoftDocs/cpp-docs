@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2074
-**cannot access label through segment registers**  
-  
- An attempt was made to access a label through a segment register that was not assumed to its segment or group.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**cannot access label through segment registers**
+
+An attempt was made to access a label through a segment register that was not assumed to its segment or group.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

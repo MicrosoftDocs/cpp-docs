@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # TBYTE
-Allocates and optionally initializes 10 bytes of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.  
-  
-## Syntax  
-  
-```  
-[[name]] TBYTEinitializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)   
- [DT](../../assembler/masm/dt.md)
+Allocates and optionally initializes 10 bytes of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.
+
+## Syntax
+
+```
+[[name]] TBYTEinitializer [[, initializer]]...
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[DT](../../assembler/masm/dt.md)<br/>

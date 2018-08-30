@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ?
-In data declarations, a value that the assembler allocates but does not initialize.  
-  
-## Syntax  
-  
-```  
-  
-?  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+In data declarations, a value that the assembler allocates but does not initialize.
+
+## Syntax
+
+> ?
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

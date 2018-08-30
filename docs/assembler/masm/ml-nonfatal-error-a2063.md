@@ -13,11 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2063
-**can ALIGN only to power of 2 : expression**  
-  
- The expression specified with the [ALIGN](../../assembler/masm/align-masm.md) directive was invalid.  
-  
- The **ALIGN** expression must be a power of 2 between 2 and 256, and must be less than or equal to the alignment of the current segment, structure, or union.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**can ALIGN only to power of 2 : expression**
+
+The expression specified with the [ALIGN](../../assembler/masm/align-masm.md) directive was invalid.
+
+The **ALIGN** expression must be a power of 2 between 2 and 256, and must be less than or equal to the alignment of the current segment, structure, or union.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

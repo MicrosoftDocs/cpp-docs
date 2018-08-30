@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERRDEF
-Generates an error if *name* is a previously defined label, variable, or symbol.  
-  
-## Syntax  
-  
-```  
-  
-.ERRDEF name [[, message]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Generates an error if *name* is a previously defined label, variable, or symbol.
+
+## Syntax
+
+```
+
+.ERRDEF name [[, message]]
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

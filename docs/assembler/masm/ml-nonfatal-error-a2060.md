@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2060
-**forced error : strings not equal**  
-  
- The conditional-error directive [.ERRDIF](../../assembler/masm/dot-errdif.md) or **.ERRDIFI** was used to generate this error.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**forced error : strings not equal**
+
+The conditional-error directive [.ERRDIF](../../assembler/masm/dot-errdif.md) or **.ERRDIFI** was used to generate this error.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

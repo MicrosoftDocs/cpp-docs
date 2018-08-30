@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator NOT
-Returns *expression* with all bits reversed.  
-  
-## Syntax  
-  
-```  
-  
-NOT expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns *expression* with all bits reversed.
+
+## Syntax
+
+```
+
+NOT expression
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

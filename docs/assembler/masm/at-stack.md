@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @stack
-DGROUP for near stacks or STACK for far stacks (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@stack  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+DGROUP for near stacks or STACK for far stacks (text macro).
+
+## Syntax
+
+> @stack
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

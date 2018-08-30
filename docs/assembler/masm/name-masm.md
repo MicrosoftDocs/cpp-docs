@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # NAME (MASM)
-Ignored.  
-  
-## Syntax  
-  
-```  
-  
-NAME  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Ignored.
+
+## Syntax
+
+> NAME
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

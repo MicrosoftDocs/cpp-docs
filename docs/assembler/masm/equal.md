@@ -13,20 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # =
-Assigns the numeric value of *expression* to *name*.  
-  
-## Syntax  
-  
-```  
-  
-name  
- =   
-expression  
-  
-```  
-  
-## Remarks  
- The symbol can be redefined later.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Assigns the numeric value of *expression* to *name*.
+
+## Syntax
+
+> *name* = *expression*
+
+## Remarks
+
+The symbol can be redefined later.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

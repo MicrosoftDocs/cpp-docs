@@ -13,13 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator &quot; &quot;
-Treats "*text*" as a string.  
-  
-## Syntax  
-  
-```  
-"text"  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Treats "*text*" as a string.
+
+## Syntax
+
+```
+"text"
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

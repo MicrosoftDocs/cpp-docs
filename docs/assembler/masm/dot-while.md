@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .WHILE
-Generates code that executes the block of `statements` while `condition` remains true.  
-  
-## Syntax  
-  
-```  
-  
-   .WHILE condition  
-statements  
-.ENDW  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Generates code that executes the block of `statements` while `condition` remains true.
+
+## Syntax
+
+> .WHILE condition<br/>
+> statements<br/>
+> .ENDW
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

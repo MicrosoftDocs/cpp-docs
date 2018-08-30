@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # REPT
-See [REPEAT](../../assembler/masm/repeat.md).  
-  
-## Syntax  
-  
-```  
-  
-REPT  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [REPEAT](../../assembler/masm/repeat.md).
+
+## Syntax
+
+> REPT
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

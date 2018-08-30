@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # STRUC
-See [STRUCT](../../assembler/masm/struct-masm.md).  
-  
-## Syntax  
-  
-```  
-  
-STRUC  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [STRUCT](../../assembler/masm/struct-masm.md).
+
+## Syntax
+
+> STRUC
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

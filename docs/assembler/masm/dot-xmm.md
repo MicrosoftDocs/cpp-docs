@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .XMM
-Enables assembly of Internet Streaming SIMD Extension instructions.  
-  
-## Syntax  
-  
-```  
-  
-.XMM  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables assembly of Internet Streaming SIMD Extension instructions.
+
+## Syntax
+
+> .XMM
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

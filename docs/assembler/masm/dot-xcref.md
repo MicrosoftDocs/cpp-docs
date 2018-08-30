@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .XCREF
-See [.NOCREF](../../assembler/masm/dot-nocref.md).  
-  
-## Syntax  
-  
-```  
-  
-.XCREF  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [.NOCREF](../../assembler/masm/dot-nocref.md).
+
+## Syntax
+
+> .XCREF
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

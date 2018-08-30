@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .LISTMACRO
-Starts listing of macro expansion statements that generate code or data.  
-  
-## Syntax  
-  
-```  
-  
-.LISTMACRO  
-  
-```  
-  
-## Remarks  
- This is the default. Same as [.XALL](../../assembler/masm/dot-xall.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Starts listing of macro expansion statements that generate code or data.
+
+## Syntax
+
+> .LISTMACRO
+
+## Remarks
+
+This is the default. Same as [.XALL](../../assembler/masm/dot-xall.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

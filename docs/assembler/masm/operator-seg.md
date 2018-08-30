@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator SEG
-Returns the segment of *expression*.  
-  
-## Syntax  
-  
-```  
-  
-SEG expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the segment of *expression*.
+
+## Syntax
+
+```
+
+SEG expression
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

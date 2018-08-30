@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2079
-**instruction does not allow FAR direct addressing**  
-  
- A conditional jump or loop cannot be to a different segment or group.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**instruction does not allow FAR direct addressing**
+
+A conditional jump or loop cannot be to a different segment or group.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

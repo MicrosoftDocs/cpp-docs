@@ -13,17 +13,20 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # FWORD
-Allocates and optionally initializes 6 bytes of storage for each `initializer`.  
-  
-## Syntax  
-  
-```  
-[[name]] FWORD initializer [[, initializer]]...  
-```  
-  
-## Remarks  
- Also can be used as a type specifier anywhere a type is legal.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)   
- [DF](../../assembler/masm/df.md)
+
+Allocates and optionally initializes 6 bytes of storage for each `initializer`.
+
+## Syntax
+
+```
+[[name]] FWORD initializer [[, initializer]]...
+```
+
+## Remarks
+
+Also can be used as a type specifier anywhere a type is legal.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[DF](../../assembler/masm/df.md)<br/>

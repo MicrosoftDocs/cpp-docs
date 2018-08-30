@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERR
-Generates an error.  
-  
-## Syntax  
-  
-```  
-  
-.ERR [[message]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Generates an error.
+
+## Syntax
+
+```
+
+.ERR [[message]]
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

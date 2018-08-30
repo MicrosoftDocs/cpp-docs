@@ -13,20 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # FOR (MASM)
-Marks a block that will be repeated once for each `argument`, with the current `argument` replacing `parameter` on each repetition.  
-  
-## Syntax  
-  
-```  
-  
-   FOR   
-   parameter [[:REQ | :=default]] , <argument [[, argument]]...>  
-statements  
-ENDM  
-```  
-  
-## Remarks  
- Same as [IRP](../../assembler/masm/irp.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Marks a block that will be repeated once for each *argument*, with the current *argument* replacing *parameter* on each repetition.
+
+## Syntax
+
+> FOR *parameter* [[:REQ | :=*default*]] , \<*argument* [[, *argument*]]...><br/>
+> *statements*<br/>
+> ENDM
+
+## Remarks
+
+Same as [IRP](../../assembler/masm/irp.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -13,15 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # LABEL (MASM)
-Creates a new label by assigning the current location-counter value and the given `type` to *name*.  
-  
-## Syntax  
-  
-```  
-  
-      name LABEL type  
-name LABEL [[NEAR | FAR | PROC]] PTR [[type]]   
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Creates a new label by assigning the current location-counter value and the given *type* to *name*.
+
+## Syntax
+
+> *name* LABEL *type*
+
+> *name* LABEL [[NEAR | FAR | PROC]] PTR [[*type*]]
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -13,16 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator ! (MASM)
-Treats `character` as a literal character rather than as an operator or symbol.  
-  
-## Syntax  
-  
-```  
-  
-!  
-character  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Treats `character` as a literal character rather than as an operator or symbol.
+
+## Syntax
+
+> ! *character*
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

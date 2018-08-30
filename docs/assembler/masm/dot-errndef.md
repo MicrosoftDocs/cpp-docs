@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERRNDEF
-Generates an error if *name* has not been defined.  
-  
-## Syntax  
-  
-```  
-  
-.ERRNDEF name [[, message]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Generates an error if *name* has not been defined.
+
+## Syntax
+
+```
+
+.ERRNDEF name [[, message]]
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

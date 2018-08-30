@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # SBYTE (MASM)
-Allocates and optionally initializes a signed byte of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.  
-  
-## Syntax  
-  
-```  
-  
-name SBYTEinitializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)   
- [BYTE](../../assembler/masm/byte-masm.md)   
- [DB](../../assembler/masm/db.md)
+
+Allocates and optionally initializes a signed byte of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.
+
+## Syntax
+
+> name SBYTEinitializer [[, initializer]]...
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[BYTE](../../assembler/masm/byte-masm.md)<br/>
+[DB](../../assembler/masm/db.md)<br/>

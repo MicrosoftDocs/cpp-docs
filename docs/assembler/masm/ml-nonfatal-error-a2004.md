@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2004
-**symbol type conflict : identifier**  
-  
- The [EXTERNDEF](../../assembler/masm/externdef.md) or [LABEL](../../assembler/masm/label-masm.md) directive was used on a variable, symbol, data structure, or label that was defined in the same module but with a different type.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**symbol type conflict : identifier**
+
+The [EXTERNDEF](../../assembler/masm/externdef.md) or [LABEL](../../assembler/masm/label-masm.md) directive was used on a variable, symbol, data structure, or label that was defined in the same module but with a different type.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

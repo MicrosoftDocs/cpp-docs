@@ -13,11 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2119
-**language type must be specified**  
-  
- A procedure definition or prototype was not given a language type.  
-  
- A language type must be declared in each procedure definition or prototype if a default language type is not specified. A default language type is set using either the [.MODEL](../../assembler/masm/dot-model.md) directive, **OPTION LANG**, or the ML command-line options **/Gc** or **/Gd**.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**language type must be specified**
+
+A procedure definition or prototype was not given a language type.
+
+A language type must be declared in each procedure definition or prototype if a default language type is not specified. A default language type is set using either the [.MODEL](../../assembler/masm/dot-model.md) directive, **OPTION LANG**, or the ML command-line options **/Gc** or **/Gd**.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

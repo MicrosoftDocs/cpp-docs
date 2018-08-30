@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Environ
-Value of environment variable *envvar* (macro function).  
-  
-## Syntax  
-  
-```  
-  
-@Environ( envvar )  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+Value of environment variable *envvar* (macro function).
+
+## Syntax
+
+```
+
+@Environ( envvar )
+```
+
+## See Also
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .UNTIL
-See [.REPEAT](../../assembler/masm/dot-repeat.md).  
-  
-## Syntax  
-  
-```  
-  
-.UNTIL  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [.REPEAT](../../assembler/masm/dot-repeat.md).
+
+## Syntax
+
+> .UNTIL
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

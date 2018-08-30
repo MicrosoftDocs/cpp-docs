@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator .
-The first operator returns *expression* plus the offset of *field* within its structure or union. The second operator returns value at the location pointed to by *register* plus the offset of *field* within its structure or union.  
-  
-## Syntax  
-  
-```  
-  
-      expression  
-      . field [[. field]]...  
-[register]. field [[. field]]...  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+The first operator returns *expression* plus the offset of *field* within its structure or union. The second operator returns value at the location pointed to by *register* plus the offset of *field* within its structure or union.
+
+## Syntax
+
+> *expression*<br/> . *field* [[. *field*]] ...
+
+> [*register*]. *field* [[. *field*]] ...
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2059
-**forced error : strings equal**  
-  
- The conditional-error directive [.ERRIDN](../../assembler/masm/dot-erridn.md) or **.ERRIDNI** was used to generate this error.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**forced error : strings equal**
+
+The conditional-error directive [.ERRIDN](../../assembler/masm/dot-erridn.md) or **.ERRIDNI** was used to generate this error.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

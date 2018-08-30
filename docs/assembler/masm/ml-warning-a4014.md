@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Warning A4014
-instructions and initialized data not supported in BSS segments  
-  
- An attempt was made to define initialized data within a BSS section.  A BSS section is defined as a class whose name is BSS.  This includes the simplified segment `.data?`.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+instructions and initialized data not supported in BSS segments
+
+An attempt was made to define initialized data within a BSS section.  A BSS section is defined as a class whose name is BSS.  This includes the simplified segment `.data?`.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

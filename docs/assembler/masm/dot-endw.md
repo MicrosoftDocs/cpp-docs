@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ENDW
-## Syntax  
-  
-```  
-  
-.ENDW  
-  
-```  
-  
-## Remarks  
- See [.WHILE](../../assembler/masm/dot-while.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> .ENDW
+
+## Remarks
+
+See [.WHILE](../../assembler/masm/dot-while.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .SFCOND
-See [.NOLISTIF](../../assembler/masm/dot-nolistif.md).  
-  
-## Syntax  
-  
-```  
-  
-.SFCOND  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [.NOLISTIF](../../assembler/masm/dot-nolistif.md).
+
+## Syntax
+
+> .SFCOND
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

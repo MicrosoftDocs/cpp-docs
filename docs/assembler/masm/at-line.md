@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Line
-The source line number in the current file (numeric equate).  
-  
-## Syntax  
-  
-```  
-  
-@Line  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The source line number in the current file (numeric equate).
+
+## Syntax
+
+> @Line
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

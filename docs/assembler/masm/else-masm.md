@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ELSE (MASM)
-Marks the beginning of an alternate block within a conditional block.  
-  
-## Syntax  
-  
-```  
-  
-ELSE  
-  
-```  
-  
-## Remarks  
- See [IF](../../assembler/masm/if-masm.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Marks the beginning of an alternate block within a conditional block.
+
+## Syntax
+
+> ELSE
+
+## Remarks
+
+See [IF](../../assembler/masm/if-masm.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

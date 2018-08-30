@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # SIZESTR
-Finds the size of a text item.  
-  
-## Syntax  
-  
-```  
-  
-name SIZESTR textitem  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Finds the size of a text item.
+
+## Syntax
+
+```
+
+name SIZESTR textitem
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

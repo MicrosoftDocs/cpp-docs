@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .LISTMACROALL
-Starts listing of all statements in macros.  
-  
-## Syntax  
-  
-```  
-  
-.LISTMACROALL  
-  
-```  
-  
-## Remarks  
- Same as [.LALL](../../assembler/masm/dot-lall.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Starts listing of all statements in macros.
+
+## Syntax
+
+> .LISTMACROALL
+
+## Remarks
+
+Same as [.LALL](../../assembler/masm/dot-lall.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

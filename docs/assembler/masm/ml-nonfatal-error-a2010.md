@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2010
-**invalid type expression**  
-  
- The operand to [THIS](../../assembler/masm/operator-this.md) or [PTR](../../assembler/masm/operator-ptr.md) was not a valid type expression.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**invalid type expression**
+
+The operand to [THIS](../../assembler/masm/operator-this.md) or [PTR](../../assembler/masm/operator-ptr.md) was not a valid type expression.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

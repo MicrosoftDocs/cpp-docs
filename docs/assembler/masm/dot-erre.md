@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERRE
-Generates an error if *expression* is false (0).  
-  
-## Syntax  
-  
-```  
-  
-.ERRE expression [[, message]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Generates an error if *expression* is false (0).
+
+## Syntax
+
+```
+
+.ERRE expression [[, message]]
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

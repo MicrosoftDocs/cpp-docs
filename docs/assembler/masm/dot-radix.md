@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .RADIX
-Sets the default radix, in the range 2 to 16, to the value of *expression*.  
-  
-## Syntax  
-  
-```  
-  
-.RADIX expression  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Sets the default radix, in the range 2 to 16, to the value of *expression*.
+
+## Syntax
+
+```
+
+.RADIX expression
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # GOTO (MASM)
 
 Transfers assembly to the line marked **:**_macrolabel_.
-  
+
 ## Syntax
 
 > **GOTO** *macrolabel*

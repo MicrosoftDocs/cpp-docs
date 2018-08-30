@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # CATSTR
-Concatenates text items.  
-  
-## Syntax  
-  
-```  
-  
-name CATSTR [[textitem1 [[, textitem2]] ...]]  
-```  
-  
-## Remarks  
- Each text item can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Concatenates text items.
+
+## Syntax
+
+> name CATSTR [[textitem1 [[, textitem2]] ...]]
+
+## Remarks
+
+Each text item can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

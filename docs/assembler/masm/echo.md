@@ -13,19 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ECHO
-Displays *message* to the standard output device (by default, the screen).  
-  
-## Syntax  
-  
-```  
-  
-ECHO   
-message  
-  
-```  
-  
-## Remarks  
- Same as [%OUT](../../assembler/masm/percent-out.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Displays *message* to the standard output device (by default, the screen).
+
+## Syntax
+
+> ECHO *message*
+
+## Remarks
+
+Same as [%OUT](../../assembler/masm/percent-out.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # PUBLIC (MASM)
-Makes each variable, label, or absolute symbol specified as *name* available to all other modules in the program.  
-  
-## Syntax  
-  
-```  
-  
-PUBLIC [[langtype]] name [[, [[langtype]] name]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Makes each variable, label, or absolute symbol specified as *name* available to all other modules in the program.
+
+## Syntax
+
+```
+
+PUBLIC [[langtype]] name [[, [[langtype]] name]]...
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

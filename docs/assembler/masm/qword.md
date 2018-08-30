@@ -13,15 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # QWORD
-Allocates and optionally initializes 8 bytes of storage for each `initializer`. Also can be used as a type specifier anywhere a type is legal.  
-  
-## Syntax  
-  
-```  
-[[name]] QWORD initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)   
- [SQWORD](../../assembler/masm/qword.md)   
- [DQ](../../assembler/masm/dq.md)
+
+Allocates and optionally initializes 8 bytes of storage for each `initializer`. Also can be used as a type specifier anywhere a type is legal.
+
+## Syntax
+
+```
+[[name]] QWORD initializer [[, initializer]]...
+```
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[SQWORD](../../assembler/masm/qword.md)<br/>
+[DQ](../../assembler/masm/dq.md)<br/>

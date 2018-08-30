@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IFNDEF
-Grants assembly if *name* has not been defined.  
-  
-## Syntax  
-  
-```  
-  
-IFNDEF name  
-```  
-  
-## Remarks  
- See [IF](../../assembler/masm/if-masm.md) for complete syntax.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Grants assembly if *name* has not been defined.
+
+## Syntax
+
+> IFNDEF name
+
+## Remarks
+
+See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

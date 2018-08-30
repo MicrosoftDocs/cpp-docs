@@ -13,16 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator ;;
-Treats *text* as a comment in a macro that appears only in the macro definition. The listing does not show *text* where the macro is expanded.  
-  
-## Syntax  
-  
-```  
-  
-;;  
-text  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Treats *text* as a comment in a macro that appears only in the macro definition. The listing does not show *text* where the macro is expanded.
+
+## Syntax
+
+> ;; *text*
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

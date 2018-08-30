@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .SALL
-See [.NOLISTMACRO](../../assembler/masm/dot-nolistmacro.md).  
-  
-## Syntax  
-  
-```  
-  
-.SALL  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [.NOLISTMACRO](../../assembler/masm/dot-nolistmacro.md).
+
+## Syntax
+
+> .SALL
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

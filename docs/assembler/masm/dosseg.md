@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # DOSSEG
-Identical to [.DOSSEG](../../assembler/masm/dot-dosseg.md), which is the preferred form.  
-  
-## Syntax  
-  
-```  
-  
-DOSSEG  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Identical to [.DOSSEG](../../assembler/masm/dot-dosseg.md), which is the preferred form.
+
+## Syntax
+
+> DOSSEG
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

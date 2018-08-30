@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @F
-The location of the next [@@:](../../assembler/masm/at-at.md) label.  
-  
-## Syntax  
-  
-```  
-  
-@F  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The location of the next [@@:](../../assembler/masm/at-at.md) label.
+
+## Syntax
+
+> @F
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

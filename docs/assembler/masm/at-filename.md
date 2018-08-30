@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @FileName
-The base name of the main file being assembled (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@FileName  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The base name of the main file being assembled (text macro).
+
+## Syntax
+
+> @FileName
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

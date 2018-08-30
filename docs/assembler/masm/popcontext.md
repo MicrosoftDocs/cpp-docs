@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # POPCONTEXT
-Restores part or all of the current `context` (saved by the [PUSHCONTEXT](../../assembler/masm/pushcontext.md) directive). The `context` can be **ASSUMES**, `RADIX`, **LISTING**, **CPU**, or **ALL**.  
-  
-## Syntax  
-  
-```  
-  
-POPCONTEXT context  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Restores part or all of the current `context` (saved by the [PUSHCONTEXT](../../assembler/masm/pushcontext.md) directive). The `context` can be **ASSUMES**, `RADIX`, **LISTING**, **CPU**, or **ALL**.
+
+## Syntax
+
+```
+
+POPCONTEXT context
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

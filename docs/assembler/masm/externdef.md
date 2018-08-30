@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # EXTERNDEF
-Defines one or more external variables, labels, or symbols called *name* whose type is `type`.  
-  
-## Syntax  
-  
-```  
-  
-EXTERNDEF [[langtype]] name:type [[, [[langtype]] name:type]]...  
-```  
-  
-## Remarks  
- If *name* is defined in the module, it is treated as [PUBLIC](../../assembler/masm/public-masm.md). If *name* is referenced in the module, it is treated as [EXTERN](../../assembler/masm/extern-masm.md). If *name* is not referenced, it is ignored. The `type` can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Normally used in include files.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Defines one or more external variables, labels, or symbols called *name* whose type is `type`.
+
+## Syntax
+
+> EXTERNDEF [[langtype]] name:type [[, [[langtype]] name:type]]...
+
+## Remarks
+
+If *name* is defined in the module, it is treated as [PUBLIC](../../assembler/masm/public-masm.md). If *name* is referenced in the module, it is treated as [EXTERN](../../assembler/masm/extern-masm.md). If *name* is not referenced, it is ignored. The `type` can be [ABS](../../assembler/masm/operator-abs.md), which imports *name* as a constant. Normally used in include files.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -13,15 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator +
-The first operator returns *expression1* plus *expression2*. The second operator reverses the sign of *expression*.  
-  
-## Syntax  
-  
-```  
-  
-      expression1 + expression2  
--expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+The first operator returns *expression1* plus *expression2*. The second operator reverses the sign of *expression*.
+
+## Syntax
+
+> *expression1* + *expression2*
+
+> -*expression*
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

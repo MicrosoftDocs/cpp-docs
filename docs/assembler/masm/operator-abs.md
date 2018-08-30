@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator ABS
-See the [EXTERNDEF](../../assembler/masm/externdef.md) directive.  
-  
-## Syntax  
-  
-```  
-  
-ABS  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+See the [EXTERNDEF](../../assembler/masm/externdef.md) directive.
+
+## Syntax
+
+> ABS
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @InStr
-Macro function that finds the first occurrence of *string2* in *string1*, beginning at *position* within *string1*. If *position* does not appear, search begins at start of *string1*. Returns a position integer or 0 if *string2* is not found.  
-  
-## Syntax  
-  
-```  
-  
-@InStr( [[position]], string1, string2 )  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+Macro function that finds the first occurrence of *string2* in *string1*, beginning at *position* within *string1*. If *position* does not appear, search begins at start of *string1*. Returns a position integer or 0 if *string2* is not found.
+
+## Syntax
+
+```
+
+@InStr( [[position]], string1, string2 )
+```
+
+## See Also
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

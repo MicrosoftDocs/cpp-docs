@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @CurSeg
-The name of the current segment (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@CurSeg  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The name of the current segment (text macro).
+
+## Syntax
+
+> @CurSeg
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

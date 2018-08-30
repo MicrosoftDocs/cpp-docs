@@ -13,16 +13,16 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # STRUCT (MASM)
-Declares a structure type having the specified *fielddeclarations*. Each field must be a valid data definition. Same as [STRUC](../../assembler/masm/struc.md).  
-  
-## Syntax  
-  
-```  
-  
-   name STRUCT [[alignment]] [[, NONUNIQUE]]  
-fielddeclarations  
-name ENDS  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Declares a structure type having the specified *field-declarations*. Each field must be a valid data definition. Same as [STRUC](../../assembler/masm/struc.md).
+
+## Syntax
+
+> *name* STRUCT [[*alignment*]] [[, NONUNIQUE]]<br/>
+> *field-declarations*<br/>
+> *name* ENDS
+
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

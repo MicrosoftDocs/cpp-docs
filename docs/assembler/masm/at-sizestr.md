@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @SizeStr
-A macro function that returns the length of the given string. Returns an integer.  
-  
-## Syntax  
-  
-```  
-  
-@SizeStr( string )  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+A macro function that returns the length of the given string. Returns an integer.
+
+## Syntax
+
+```
+
+@SizeStr( string )
+```
+
+## See Also
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

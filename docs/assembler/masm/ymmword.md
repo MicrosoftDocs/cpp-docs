@@ -13,16 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # YMMWORD
-Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX) instructions.  
-  
-## Syntax  
-  
-```  
-YMMWORD  
-```  
-  
-## Remarks  
- `YMMWORD` is intended to represent the same type as `__m256` for the AVX intrinsics.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX) instructions.
+
+## Syntax
+
+```
+YMMWORD
+```
+
+## Remarks
+
+`YMMWORD` is intended to represent the same type as `__m256` for the AVX intrinsics.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

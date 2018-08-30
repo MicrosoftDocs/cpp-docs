@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @code
-The name of the code segment (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@code  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The name of the code segment (text macro).
+
+## Syntax
+
+> @code
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

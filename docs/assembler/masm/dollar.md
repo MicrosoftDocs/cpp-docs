@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # $
-The current value of the location counter.  
-  
-## Syntax  
-  
-```  
-  
-$  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The current value of the location counter.
+
+## Syntax
+
+> $
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

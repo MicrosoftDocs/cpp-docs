@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .K3D
-Enables assembly of K3D instructions.  
-  
-## Syntax  
-  
-```  
-  
-.K3D  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables assembly of K3D instructions.
+
+## Syntax
+
+> .K3D
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

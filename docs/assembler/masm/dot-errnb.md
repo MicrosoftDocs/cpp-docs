@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERRNB
-Generates an error if *textitem* is not blank.  
-  
-## Syntax  
-  
-```  
-  
-.ERRNB <textitem> [[, message]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Generates an error if *textitem* is not blank.
+
+## Syntax
+
+```
+
+.ERRNB <textitem> [[, message]]
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

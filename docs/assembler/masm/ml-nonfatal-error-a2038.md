@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2038
-**missing operand for macro operator**  
-  
- The assembler found the end of a macro's parameter list immediately after the [!](../../assembler/masm/operator-logical-not-masm-run-time.md) or [%](../../assembler/masm/operator-percent.md) operator.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**missing operand for macro operator**
+
+The assembler found the end of a macro's parameter list immediately after the [!](../../assembler/masm/operator-logical-not-masm-run-time.md) or [%](../../assembler/masm/operator-percent.md) operator.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

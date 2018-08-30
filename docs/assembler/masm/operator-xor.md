@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator XOR
-Returns the result of a bitwise **XOR** operation for *expression1* and *expression2*.  
-  
-## Syntax  
-  
-```  
-  
-expression1 XOR expression2  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the result of a bitwise **XOR** operation for *expression1* and *expression2*.
+
+## Syntax
+
+```
+
+expression1 XOR expression2
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -13,16 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ORG
-Sets the location counter to *expression*.  
-  
-## Syntax  
-  
-```  
-  
-ORG   
-expression  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Sets the location counter to *expression*.
+
+## Syntax
+
+> ORG *expression*
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

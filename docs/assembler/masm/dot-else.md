@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ELSE
-## Syntax  
-  
-```  
-  
-.ELSE  
-  
-```  
-  
-## Remarks  
- See [.IF](../../assembler/masm/dot-if.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> .ELSE
+
+## Remarks
+
+See [.IF](../../assembler/masm/dot-if.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

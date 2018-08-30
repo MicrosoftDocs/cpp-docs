@@ -13,11 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2037
-**statement not allowed inside structure definition**  
-  
- A structure definition contained an invalid statement.  
-  
- A structure cannot contain instructions, labels, procedures, control-flow directives, [.STARTUP](../../assembler/masm/dot-startup.md), or [.EXIT](../../assembler/masm/dot-exit.md).  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**statement not allowed inside structure definition**
+
+A structure definition contained an invalid statement.
+
+A structure cannot contain instructions, labels, procedures, control-flow directives, [.STARTUP](../../assembler/masm/dot-startup.md), or [.EXIT](../../assembler/masm/dot-exit.md).
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

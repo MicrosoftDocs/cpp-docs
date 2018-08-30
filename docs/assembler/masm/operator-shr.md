@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator SHR
-Returns the result of shifting the bits of *expression* right *count* number of bits.  
-  
-## Syntax  
-  
-```  
-  
-expression SHR count  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the result of shifting the bits of *expression* right *count* number of bits.
+
+## Syntax
+
+```
+
+expression SHR count
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

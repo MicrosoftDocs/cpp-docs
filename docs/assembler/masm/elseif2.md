@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ELSEIF2
-[ELSEIF](../../assembler/masm/elseif-masm.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE**.  
-  
-## Syntax  
-  
-```  
-  
-ELSEIF2  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+[ELSEIF](../../assembler/masm/elseif-masm.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE**.
+
+## Syntax
+
+> ELSEIF2
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

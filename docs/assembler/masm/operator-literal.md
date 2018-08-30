@@ -13,17 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator &lt;&gt;
-Treats *text* as a single literal element.  
-  
-## Syntax  
-  
-```  
-  
-<  
-text  
->  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Treats *text* as a single literal element.
+
+## Syntax
+
+> \<*text*>
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ENDIF
-## Syntax  
-  
-```  
-  
-.ENDIF  
-  
-```  
-  
-## Remarks  
- See [.IF](../../assembler/masm/dot-if.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> .ENDIF
+
+## Remarks
+
+See [.IF](../../assembler/masm/dot-if.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

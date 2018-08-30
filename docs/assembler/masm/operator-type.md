@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator TYPE
-Returns the type of *expression*.  
-  
-## Syntax  
-  
-```  
-  
-TYPE expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the type of *expression*.
+
+## Syntax
+
+```
+
+TYPE expression
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -13,13 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # DT
-Allocates and optionally initializes 10 bytes of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal. `DT` is a synonym of [TBYTE](../../assembler/masm/tbyte.md).  
-  
-## Syntax  
-  
-```  
-[[name]] DT initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Allocates and optionally initializes 10 bytes of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal. `DT` is a synonym of [TBYTE](../../assembler/masm/tbyte.md).
+
+## Syntax
+
+```
+[[name]] DT initializer [[, initializer]]...
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

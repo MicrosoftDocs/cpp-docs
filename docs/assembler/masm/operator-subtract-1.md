@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator /
-Returns *expression1* divided by *expression2*.  
-  
-## Syntax  
-  
-```  
-  
-expression1 / expression2  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns *expression1* divided by *expression2*.
+
+## Syntax
+
+```
+
+expression1 / expression2
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

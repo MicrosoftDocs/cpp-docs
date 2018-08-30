@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .NOLIST
-Suppresses program listing.  
-  
-## Syntax  
-  
-```  
-  
-.NOLIST  
-  
-```  
-  
-## Remarks  
- Same as [.XLIST](../../assembler/masm/dot-xlist.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Suppresses program listing.
+
+## Syntax
+
+> .NOLIST
+
+## Remarks
+
+Same as [.XLIST](../../assembler/masm/dot-xlist.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

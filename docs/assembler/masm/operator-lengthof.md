@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator LENGTHOF
-Returns the number of data objects in *variable*.  
-  
-## Syntax  
-  
-```  
-  
-LENGTHOF variable  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the number of data objects in *variable*.
+
+## Syntax
+
+```
+
+LENGTHOF variable
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

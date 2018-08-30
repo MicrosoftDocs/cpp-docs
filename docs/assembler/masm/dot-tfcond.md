@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .TFCOND
-Toggles listing of false conditional blocks.  
-  
-## Syntax  
-  
-```  
-  
-.TFCOND  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Toggles listing of false conditional blocks.
+
+## Syntax
+
+> .TFCOND
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

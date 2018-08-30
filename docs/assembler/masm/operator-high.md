@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator HIGH
-Returns the high 8 bits of the low 16 bits of *expression*. MASM expressions are 64-bit values.  
-  
-## Syntax  
-  
-```  
-  
-HIGH expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the high 8 bits of the low 16 bits of *expression*. MASM expressions are 64-bit values.
+
+## Syntax
+
+```
+
+HIGH expression
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

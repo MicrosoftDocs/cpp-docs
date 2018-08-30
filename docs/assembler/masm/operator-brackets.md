@@ -12,15 +12,15 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# operator \[\]  
+# operator \[\]
 
-Returns *expression1* plus \[*expression2*\].  
-  
-## Syntax  
-  
-```  
-expression1 [expression2]  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns *expression1* plus \[*expression2*\].
+
+## Syntax
+
+```
+expression1 [expression2]
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2069
-**no operands allowed for this instruction**  
-  
- One or more operands were specified with an instruction that takes no operands.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**no operands allowed for this instruction**
+
+One or more operands were specified with an instruction that takes no operands.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

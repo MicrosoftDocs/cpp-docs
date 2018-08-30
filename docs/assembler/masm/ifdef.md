@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IFDEF
-Grants assembly if *name* is a previously defined label, variable, or symbol.  
-  
-## Syntax  
-  
-```  
-  
-IFDEF name  
-```  
-  
-## Remarks  
- See [IF](../../assembler/masm/if-masm.md) for complete syntax.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Grants assembly if *name* is a previously defined label, variable, or symbol.
+
+## Syntax
+
+> IFDEF name
+
+## Remarks
+
+See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

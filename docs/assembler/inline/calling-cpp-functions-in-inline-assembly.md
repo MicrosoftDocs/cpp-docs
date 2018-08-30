@@ -12,12 +12,12 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Calling C++ Functions in Inline Assembly
-## Microsoft Specific  
- An `__asm` block can call only global C++ functions that are not overloaded. If you call an overloaded global C++ function or a C++ member function, the compiler issues an error.  
-  
- You can also call any functions declared with **extern "C"** linkage. This allows an `__asm` block within a C++ program to call the C library functions, because all the standard header files declare the library functions to have **extern "C"** linkage.  
-  
- **END Microsoft Specific**  
-  
-## See Also  
- [Inline Assembler](../../assembler/inline/inline-assembler.md)
+## Microsoft Specific
+An `__asm` block can call only global C++ functions that are not overloaded. If you call an overloaded global C++ function or a C++ member function, the compiler issues an error.
+
+You can also call any functions declared with **extern "C"** linkage. This allows an `__asm` block within a C++ program to call the C library functions, because all the standard header files declare the library functions to have **extern "C"** linkage.
+
+**END Microsoft Specific**
+
+## See Also
+[Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>

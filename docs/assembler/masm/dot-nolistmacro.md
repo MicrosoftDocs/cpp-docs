@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .NOLISTMACRO
-Suppresses listing of macro expansions.  
-  
-## Syntax  
-  
-```  
-  
-.NOLISTMACRO  
-  
-```  
-  
-## Remarks  
- Same as [.SALL](../../assembler/masm/dot-sall.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Suppresses listing of macro expansions.
+
+## Syntax
+
+> .NOLISTMACRO
+
+## Remarks
+
+Same as [.SALL](../../assembler/masm/dot-sall.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

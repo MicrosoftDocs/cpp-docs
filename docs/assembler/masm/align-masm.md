@@ -13,17 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ALIGN (MASM)
-Aligns the next variable or instruction on a byte that is a multiple of `number`.  
-  
-## Syntax  
-  
-```  
-  
-ALIGN [[  
-number  
-]]  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Aligns the next variable or instruction on a byte that is a multiple of *number*.
+
+## Syntax
+
+> ALIGN [[*number*]]
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

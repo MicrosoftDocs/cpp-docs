@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .DATA?
-When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data segment for uninitialized data (segment name _BSS).  
-  
-## Syntax  
-  
-```  
-  
-.DATA?  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data segment for uninitialized data (segment name _BSS).
+
+## Syntax
+
+> .DATA?
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

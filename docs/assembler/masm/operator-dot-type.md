@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator .TYPE
-See [OPATTR](../../assembler/masm/operator-opattr.md).  
-  
-## Syntax  
-  
-```  
-  
-.TYPE expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+See [OPATTR](../../assembler/masm/operator-opattr.md).
+
+## Syntax
+
+```
+
+.TYPE expression
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2097
-**segment expected : identifier**  
-  
- The [GROUP](../../assembler/masm/group.md) directive was given an identifier that was not a defined segment.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**segment expected : identifier**
+
+The [GROUP](../../assembler/masm/group.md) directive was given an identifier that was not a defined segment.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

@@ -13,11 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2019
-**operand must be RECORD type or field**  
-  
- The operand following the [WIDTH](../../assembler/masm/operator-width.md) or [MASK](../../assembler/masm/operator-mask.md) operator was not valid.  
-  
- The [WIDTH](../../assembler/masm/operator-width.md) operator takes an operand that is the name of a field or a record. The [MASK](../../assembler/masm/operator-mask.md) operator takes an operand that is the name of a field or a record type.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**operand must be RECORD type or field**
+
+The operand following the [WIDTH](../../assembler/masm/operator-width.md) or [MASK](../../assembler/masm/operator-mask.md) operator was not valid.
+
+The [WIDTH](../../assembler/masm/operator-width.md) operator takes an operand that is the name of a field or a record. The [MASK](../../assembler/masm/operator-mask.md) operator takes an operand that is the name of a field or a record type.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

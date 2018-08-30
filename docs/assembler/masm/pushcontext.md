@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # PUSHCONTEXT
-Saves part or all of the current `context`: segment register assumes, radix value, listing and cref flags, or processor/coprocessor values. The `context` can be **ASSUMES**, `RADIX`, **LISTING**, **CPU**, or **ALL**.  
-  
-## Syntax  
-  
-```  
-  
-PUSHCONTEXT context  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Saves part or all of the current `context`: segment register assumes, radix value, listing and cref flags, or processor/coprocessor values. The `context` can be **ASSUMES**, `RADIX`, **LISTING**, **CPU**, or **ALL**.
+
+## Syntax
+
+```
+
+PUSHCONTEXT context
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

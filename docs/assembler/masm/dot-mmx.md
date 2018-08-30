@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .MMX
-Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions.  
-  
-## Syntax  
-  
-```  
-  
-.MMX  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables assembly of MMX or single-instruction, multiple data (SIMD) instructions.
+
+## Syntax
+
+> .MMX
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

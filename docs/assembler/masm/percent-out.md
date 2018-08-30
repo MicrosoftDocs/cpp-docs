@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # %OUT
-See [ECHO](../../assembler/masm/echo.md).  
-  
-## Syntax  
-  
-```  
-  
-%OUT  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [ECHO](../../assembler/masm/echo.md).
+
+## Syntax
+
+> %OUT
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

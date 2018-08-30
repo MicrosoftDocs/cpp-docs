@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # REAL8
-Allocates and optionally initializes a double-precision (8-byte) floating-point number for each *initializer*.  
-  
-## Syntax  
-  
-```  
-  
-name REAL8 initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Allocates and optionally initializes a double-precision (8-byte) floating-point number for each *initializer*.
+
+## Syntax
+
+```
+
+name REAL8 initializer [[, initializer]]...
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

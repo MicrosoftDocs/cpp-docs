@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2070
-**invalid instruction operands**  
-  
- One or more operands were not valid for the instruction with which they were specified.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**invalid instruction operands**
+
+One or more operands were not valid for the instruction with which they were specified.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

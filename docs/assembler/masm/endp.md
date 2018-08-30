@@ -13,19 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ENDP
-Marks the end of procedure *name* previously begun with **PROC**.  
-  
-## Syntax  
-  
-```  
-  
-name  
- ENDP  
-  
-```  
-  
-## Remarks  
- See [PROC](../../assembler/masm/proc.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Marks the end of procedure *name* previously begun with **PROC**.
+
+## Syntax
+
+> *name* ENDP
+
+## Remarks
+
+See [PROC](../../assembler/masm/proc.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # REPEAT
-Marks a block that is to be repeated *expression* times. Same as [REPT](../../assembler/masm/rept.md).  
-  
-## Syntax  
-  
-```  
-  
-   REPEAT expression  
-statements  
-ENDM  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Marks a block that is to be repeated *expression* times. Same as [REPT](../../assembler/masm/rept.md).
+
+## Syntax
+
+> REPEAT *expression*<br/>
+> *statements*<br/>
+> ENDM
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

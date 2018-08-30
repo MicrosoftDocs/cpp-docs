@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # RECORD (MASM)
-Declares a record type consisting of the specified fields. *fieldname* names the field, *width* specifies the number of bits, and *expression* gives its initial value.  
-  
-## Syntax  
-  
-```  
-  
-   recordname RECORD fieldname:width [[= expression]]   
-[[, fieldname:width [[= expression]]]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Declares a record type consisting of the specified fields. *fieldname* names the field, *width* specifies the number of bits, and *expression* gives its initial value.
+
+## Syntax
+
+> *recordname* RECORD *fieldname*:*width* [[= *expression*]] [[, *fieldname*:*width* [[= *expression*]] ]] ...
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

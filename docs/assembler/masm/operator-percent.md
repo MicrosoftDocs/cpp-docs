@@ -13,16 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator %
-Treats the value of *expression* in a macro argument as text.  
-  
-## Syntax  
-  
-```  
-  
-%  
-expression  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Treats the value of *expression* in a macro argument as text.
+
+## Syntax
+
+> % *expression*
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

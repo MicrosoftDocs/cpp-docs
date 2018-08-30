@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator OFFSET
-Returns the offset into the relevant segment of *expression*.  
-  
-## Syntax  
-  
-```  
-  
-OFFSET expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the offset into the relevant segment of *expression*.
+
+## Syntax
+
+```
+
+OFFSET expression
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

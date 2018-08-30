@@ -13,10 +13,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # EVEN and ALIGN Directives
-## Microsoft Specific  
- Although the inline assembler doesn't support most MASM directives, it does support `EVEN` and **ALIGN**. These directives put **NOP** (no operation) instructions in the assembly code as needed to align labels to specific boundaries. This makes instruction-fetch operations more efficient for some processors.  
-  
- **END Microsoft Specific**  
-  
-## See Also  
- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+## Microsoft Specific
+Although the inline assembler doesn't support most MASM directives, it does support `EVEN` and **ALIGN**. These directives put **NOP** (no operation) instructions in the assembly code as needed to align labels to specific boundaries. This makes instruction-fetch operations more efficient for some processors.
+
+**END Microsoft Specific**
+
+## See Also
+[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

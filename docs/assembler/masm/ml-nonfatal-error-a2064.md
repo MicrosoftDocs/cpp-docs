@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2064
-**structure alignment must be 1, 2, 4, 8, or 16**  
-  
- The alignment specified in a structure definition was invalid.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**structure alignment must be 1, 2, 4, 8, or 16**
+
+The alignment specified in a structure definition was invalid.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2055
-**forced error : symbol not defined**  
-  
- The conditional-error directive [.ERRNDEF](../../assembler/masm/dot-errndef.md) was used to generate this error.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**forced error : symbol not defined**
+
+The conditional-error directive [.ERRNDEF](../../assembler/masm/dot-errndef.md) was used to generate this error.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

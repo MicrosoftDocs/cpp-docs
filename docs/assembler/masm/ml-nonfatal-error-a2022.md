@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2022
-**instruction operands must be the same size**  
-  
- The operands to an instruction did not have the same size.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**instruction operands must be the same size**
+
+The operands to an instruction did not have the same size.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

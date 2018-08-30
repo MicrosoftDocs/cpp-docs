@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # TYPEDEF (MASM)
-Defines a new type called *name*, which is equivalent to `type`.  
-  
-## Syntax  
-  
-```  
-  
-name TYPEDEF type  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Defines a new type called *name*, which is equivalent to `type`.
+
+## Syntax
+
+```
+
+name TYPEDEF type
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

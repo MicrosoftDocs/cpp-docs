@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator LENGTH
-Returns the number of data items in *variable* created by the first initializer.  
-  
-## Syntax  
-  
-```  
-  
-LENGTH variable  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the number of data items in *variable* created by the first initializer.
+
+## Syntax
+
+```
+
+LENGTH variable
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

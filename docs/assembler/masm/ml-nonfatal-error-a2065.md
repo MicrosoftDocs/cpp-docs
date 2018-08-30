@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2065
-**expected : token**  
-  
- The assembler expected the given token.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**expected : token**
+
+The assembler expected the given token.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

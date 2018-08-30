@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Version
-615 in MASM 6.15 (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@Version  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+615 in MASM 6.15 (text macro).
+
+## Syntax
+
+> @Version
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @FileCur
-The name of the current file (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@FileCur  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The name of the current file (text macro).
+
+## Syntax
+
+> @FileCur
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

@@ -13,18 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # DWORD
-Allocates and optionally initializes a double word (4 bytes) of storage for each `initializer`.  
-  
-## Syntax  
-  
-```  
-[[name]] DWORD initializer [[, initializer]]...  
-```  
-  
-## Remarks  
- Can also be used as a type specifier anywhere a type is legal.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)   
- [SDWORD](../../assembler/masm/sdword.md)   
- [DD](../../assembler/masm/dd.md)
+
+Allocates and optionally initializes a double word (4 bytes) of storage for each `initializer`.
+
+## Syntax
+
+```
+[[name]] DWORD initializer [[, initializer]]...
+```
+
+## Remarks
+
+Can also be used as a type specifier anywhere a type is legal.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[SDWORD](../../assembler/masm/sdword.md)<br/>
+[DD](../../assembler/masm/dd.md)<br/>

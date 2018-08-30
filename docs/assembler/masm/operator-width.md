@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator WIDTH
-Returns the width in bits of the current *recordfieldname* or *record*.  
-  
-## Syntax  
-  
-```  
-  
-WIDTH {recordfieldname | record}  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the width in bits of the current *recordfieldname* or *record*.
+
+## Syntax
+
+```
+
+WIDTH {recordfieldname | record}
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

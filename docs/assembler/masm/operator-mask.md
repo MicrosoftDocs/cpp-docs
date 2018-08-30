@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator MASK
-Returns a bit mask in which the bits in *recordfieldname* or *record* are set and all other bits are cleared.  
-  
-## Syntax  
-  
-```  
-  
-MASK {recordfieldname | record}  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns a bit mask in which the bits in *recordfieldname* or *record* are set and all other bits are cleared.
+
+## Syntax
+
+```
+
+MASK {recordfieldname | record}
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

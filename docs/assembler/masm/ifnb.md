@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IFNB
-Grants assembly if *textitem* is not blank.  
-  
-## Syntax  
-  
-```  
-  
-IFNB textitem  
-```  
-  
-## Remarks  
- See [IF](../../assembler/masm/if-masm.md) for complete syntax.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Grants assembly if *textitem* is not blank.
+
+## Syntax
+
+> IFNB textitem
+
+## Remarks
+
+See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

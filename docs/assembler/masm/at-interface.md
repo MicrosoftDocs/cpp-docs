@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Interface
-Information about the language parameters (numeric equate).  
-  
-## Syntax  
-  
-```  
-  
-@Interface  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+Information about the language parameters (numeric equate).
+
+## Syntax
+
+> @Interface
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

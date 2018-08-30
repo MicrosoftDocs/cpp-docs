@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator THIS
-Returns an operand of specified `type` whose offset and segment values are equal to the current location counter value.  
-  
-## Syntax  
-  
-```  
-  
-THIS type  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns an operand of specified `type` whose offset and segment values are equal to the current location counter value.
+
+## Syntax
+
+```
+
+THIS type
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator ADDR
-See the [INVOKE](../../assembler/masm/invoke.md) directive.  
-  
-## Syntax  
-  
-```  
-  
-ADDR  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+See the [INVOKE](../../assembler/masm/invoke.md) directive.
+
+## Syntax
+
+> ADDR
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

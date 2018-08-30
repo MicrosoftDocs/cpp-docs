@@ -13,16 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator SECTIONREL
-Returns the section relative offset of expression relative to the section containing the target in the final executable.  
-  
-## Syntax  
-  
-```  
-SECTIONREL expression  
-```  
-  
-## Remarks  
- SECTIONREL is available only with COFF object emission.  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Returns the section relative offset of expression relative to the section containing the target in the final executable.
+
+## Syntax
+
+```
+SECTIONREL expression
+```
+
+## Remarks
+
+SECTIONREL is available only with COFF object emission.
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

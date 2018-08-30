@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Time
-The system time in 24-hour hh:mm:ss format (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@Time  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The system time in 24-hour hh:mm:ss format (text macro).
+
+## Syntax
+
+> @Time
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

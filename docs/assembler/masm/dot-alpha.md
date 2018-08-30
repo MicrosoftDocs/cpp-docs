@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ALPHA
-Orders segments alphabetically.  
-  
-## Syntax  
-  
-```  
-  
-.ALPHA  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Orders segments alphabetically.
+
+## Syntax
+
+> .ALPHA
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

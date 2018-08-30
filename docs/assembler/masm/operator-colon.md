@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator :
-Overrides the default segment of *expression* with `segment`. The `segment` can be a segment register, group name, segment name, or segment expression. The *expression* must be a constant.  
-  
-## Syntax  
-  
-```  
-  
-segment  
-: expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Overrides the default segment of *expression* with *segment*. The *segment* can be a segment register, group name, segment name, or segment expression. The *expression* must be a constant.
+
+## Syntax
+
+> *segment* : *expression*
+
+## See Also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

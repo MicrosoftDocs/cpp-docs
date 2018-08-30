@@ -12,10 +12,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # MASM Expressions in Inline Assembly
-## Microsoft Specific  
- Inline assembly code can use any MASM expression, which is any combination of operands and operators that evaluates to a single value or address.  
-  
- **END Microsoft Specific**  
-  
-## See Also  
- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+## Microsoft Specific
+Inline assembly code can use any MASM expression, which is any combination of operands and operators that evaluates to a single value or address.
+
+**END Microsoft Specific**
+
+## See Also
+[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

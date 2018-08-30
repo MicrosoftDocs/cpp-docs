@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # OWORD
-Used as a type specifier when an 16-byte data type is required.  
-  
-## Syntax  
-  
-```  
-  
-OWORD  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Used as a type specifier when an 16-byte data type is required.
+
+## Syntax
+
+> OWORD
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

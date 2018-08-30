@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .NOCREF
-Suppresses listing of symbols in the symbol table and browser file.  
-  
-## Syntax  
-  
-```  
-  
-.NOCREF [[name[[, name]]...]]  
-```  
-  
-## Remarks  
- If names are specified, then only the given names are suppressed. Same as [.XCREF](../../assembler/masm/dot-xcref.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Suppresses listing of symbols in the symbol table and browser file.
+
+## Syntax
+
+> .NOCREF [[name[[, name]]...]]
+
+## Remarks
+
+If names are specified, then only the given names are suppressed. Same as [.XCREF](../../assembler/masm/dot-xcref.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

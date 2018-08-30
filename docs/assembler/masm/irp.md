@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IRP
-## Syntax  
-  
-```  
-  
-IRP  
-  
-```  
-  
-## Remarks  
- See [FOR](../../assembler/masm/for-masm.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> IRP
+
+## Remarks
+
+See [FOR](../../assembler/masm/for-masm.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

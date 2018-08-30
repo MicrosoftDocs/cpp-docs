@@ -11,7 +11,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Fatal Errors
-For more information about ML fatal errors, see [ML Error Messages](../../assembler/masm/ml-error-messages.md).  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+For more information about ML fatal errors, see [ML Error Messages](../../assembler/masm/ml-error-messages.md).
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERRNZ
-Generates an error if *expression* is true (nonzero).  
-  
-## Syntax  
-  
-```  
-  
-.ERRNZ expression [[, message]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Generates an error if *expression* is true (nonzero).
+
+## Syntax
+
+```
+
+.ERRNZ expression [[, message]]
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

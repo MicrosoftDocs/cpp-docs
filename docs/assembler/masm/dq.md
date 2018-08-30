@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # DQ
-Allocates and optionally initializes 8 bytes of storage for each `initializer`. Also can be used as a type specifier anywhere a type is legal. `DQ` is a synonym of [QWORD](../../assembler/masm/qword.md).  
-  
-## Syntax  
-  
-```  
-[[name]] DQ initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)   
- [QWORD](../../assembler/masm/qword.md)
+Allocates and optionally initializes 8 bytes of storage for each `initializer`. Also can be used as a type specifier anywhere a type is legal. `DQ` is a synonym of [QWORD](../../assembler/masm/qword.md).
+
+## Syntax
+
+```
+[[name]] DQ initializer [[, initializer]]...
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[QWORD](../../assembler/masm/qword.md)<br/>

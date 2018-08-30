@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # REAL10
-Allocates and optionally initializes a 10-byte floating-point number for each *initializer*.  
-  
-## Syntax  
-  
-```  
-  
-name REAL10 initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Allocates and optionally initializes a 10-byte floating-point number for each *initializer*.
+
+## Syntax
+
+```
+
+name REAL10 initializer [[, initializer]]...
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

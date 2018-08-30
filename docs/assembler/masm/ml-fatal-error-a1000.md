@@ -13,27 +13,29 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Fatal Error A1000
-**cannot open file: filename**  
-  
- The assembler was unable to open a source, include, or output file.  
-  
- One of the following may be a cause:  
-  
--   The file does not exist.  
-  
--   The file is in use by another process.  
-  
--   The filename is not valid.  
-  
--   A read-only file with the output filename already exists.  
-  
--   The current drive is full.  
-  
--   The current directory is the root and is full.  
-  
--   The device cannot be written to.  
-  
--   The drive is not ready.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+
+**cannot open file: filename**
+
+The assembler was unable to open a source, include, or output file.
+
+One of the following may be a cause:
+
+-   The file does not exist.
+
+-   The file is in use by another process.
+
+-   The filename is not valid.
+
+-   A read-only file with the output filename already exists.
+
+-   The current drive is full.
+
+-   The current directory is the root and is full.
+
+-   The device cannot be written to.
+
+-   The drive is not ready.
+
+## See Also
+
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

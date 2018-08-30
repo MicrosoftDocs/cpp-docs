@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IRPC
-## Syntax  
-  
-```  
-  
-IRPC  
-  
-```  
-  
-## Remarks  
- See [FORC](../../assembler/masm/forc.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> IRPC
+
+## Remarks
+
+See [FORC](../../assembler/masm/forc.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

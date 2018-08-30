@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .LISTIF
-Starts listing of statements in false conditional blocks.  
-  
-## Syntax  
-  
-```  
-  
-.LISTIF  
-  
-```  
-  
-## Remarks  
- Same as [.LFCOND](../../assembler/masm/dot-lfcond.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Starts listing of statements in false conditional blocks.
+
+## Syntax
+
+> .LISTIF
+
+## Remarks
+
+Same as [.LFCOND](../../assembler/masm/dot-lfcond.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

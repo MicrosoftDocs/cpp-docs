@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Date
-The system date in the format mm/dd/yy (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@Date  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The system date in the format mm/dd/yy (text macro).
+
+## Syntax
+
+> @Date
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

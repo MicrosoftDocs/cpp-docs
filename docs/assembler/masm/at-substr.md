@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @SubStr
-A macro function that returns a substring starting at *position*.  
-  
-## Syntax  
-  
-```  
-  
-@SubStr( string, position [[, length]] )  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+A macro function that returns a substring starting at *position*.
+
+## Syntax
+
+```
+
+@SubStr( string, position [[, length]] )
+```
+
+## See Also
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

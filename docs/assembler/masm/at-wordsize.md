@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @WordSize
-Two for a 16-bit segment or four for a 32-bit segment (numeric equate).  
-  
-## Syntax  
-  
-```  
-  
-@WordSize  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+Two for a 16-bit segment or four for a 32-bit segment (numeric equate).
+
+## Syntax
+
+> @WordSize
+
+## See Also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

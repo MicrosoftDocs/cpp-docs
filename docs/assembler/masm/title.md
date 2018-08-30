@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # TITLE
-Defines the program listing title.  
-  
-## Syntax  
-  
-```  
-  
-TITLE text  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Defines the program listing title.
+
+## Syntax
+
+```
+
+TITLE text
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

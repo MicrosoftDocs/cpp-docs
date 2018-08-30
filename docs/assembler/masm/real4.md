@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # REAL4
-Allocates and optionally initializes a single-precision (4-byte) floating-point number for each *initializer*.  
-  
-## Syntax  
-  
-```  
-  
-name REAL4 initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Allocates and optionally initializes a single-precision (4-byte) floating-point number for each *initializer*.
+
+## Syntax
+
+```
+
+name REAL4 initializer [[, initializer]]...
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

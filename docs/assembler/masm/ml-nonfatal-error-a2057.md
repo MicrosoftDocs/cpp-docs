@@ -13,9 +13,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2057
-**forced error : string blank**  
-  
- The conditional-error directive [.ERRB](../../assembler/masm/dot-errb.md) was used to generate this error.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**forced error : string blank**
+
+The conditional-error directive [.ERRB](../../assembler/masm/dot-errb.md) was used to generate this error.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .SEQ
-Orders segments sequentially (the default order).  
-  
-## Syntax  
-  
-```  
-  
-.SEQ  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Orders segments sequentially (the default order).
+
+## Syntax
+
+> .SEQ
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

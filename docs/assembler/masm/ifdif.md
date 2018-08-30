@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IFDIF]
-Grants assembly if the text items are different.  
-  
-## Syntax  
-  
-```  
-  
-IFDIF[[I]] textitem1, textitem2  
-```  
-  
-## Remarks  
- If **I** is given, the comparison is case insensitive. See [IF](../../assembler/masm/if-masm.md) for complete syntax.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Grants assembly if the text items are different.
+
+## Syntax
+
+> IFDIF[[I]] textitem1, textitem2
+
+## Remarks
+
+If **I** is given, the comparison is case insensitive. See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

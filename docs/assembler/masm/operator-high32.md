@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator HIGH32
-Returns the high 32 bits of *expression*. MASM expressions are 64-bit values.  
-  
-## Syntax  
-  
-```  
-  
-HIGH32 expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns the high 32 bits of *expression*. MASM expressions are 64-bit values.
+
+## Syntax
+
+```
+
+HIGH32 expression
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

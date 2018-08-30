@@ -13,11 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2039
-**line too long**  
-  
- A source-file line exceeded the limit of 512 characters.  
-  
- If multiple physical lines are concatenated with the line-continuation character ( \ ), then the resulting logical line is still limited to 512 characters.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+**line too long**
+
+A source-file line exceeded the limit of 512 characters.
+
+If multiple physical lines are concatenated with the line-continuation character ( \ ), then the resulting logical line is still limited to 512 characters.
+
+## See Also
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

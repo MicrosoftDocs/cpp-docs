@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # END (MASM)
-Marks the end of a module and, optionally, sets the program entry point to *address*.  
-  
-## Syntax  
-  
-```  
-  
-END [[address]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+Marks the end of a module and, optionally, sets the program entry point to *address*.
+
+## Syntax
+
+```
+
+END [[address]]
+```
+
+## See Also
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

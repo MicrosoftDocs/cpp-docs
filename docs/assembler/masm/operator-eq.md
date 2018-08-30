@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator EQ
-Returns true (-1) if *expression1* equals *expression2*, or returns false (0) if it does not.  
-  
-## Syntax  
-  
-```  
-  
-expression1 EQ expression2  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Returns true (-1) if *expression1* equals *expression2*, or returns false (0) if it does not.
+
+## Syntax
+
+```
+
+expression1 EQ expression2
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

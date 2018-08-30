@@ -13,16 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # EXTRN
-## Syntax  
-  
-```  
-  
-EXTRN  
-  
-```  
-  
-## Remarks  
- See [EXTERN](../../assembler/masm/extern-masm.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+## Syntax
+
+> EXTRN
+
+## Remarks
+
+See [EXTERN](../../assembler/masm/extern-masm.md).
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

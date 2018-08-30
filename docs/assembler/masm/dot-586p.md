@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .586P
-Enables assembly of all instructions (including privileged) for the Pentium processor.  
-  
-## Syntax  
-  
-```  
-  
-.586P  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables assembly of all instructions (including privileged) for the Pentium processor.
+
+## Syntax
+
+> .586P
+
+## See Also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

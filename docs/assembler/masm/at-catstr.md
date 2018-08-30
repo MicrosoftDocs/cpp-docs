@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @CatStr
-Macro function that concatenates one or more strings. Returns a string.  
-  
-## Syntax  
-  
-```  
-  
-@CatStr( string1 [[, string2...]] )  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+Macro function that concatenates one or more strings. Returns a string.
+
+## Syntax
+
+```
+
+@CatStr( string1 [[, string2...]] )
+```
+
+## See Also
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

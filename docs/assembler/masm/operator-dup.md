@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator DUP
-Specifies *count* number of declarations of *initialvalue*.  
-  
-## Syntax  
-  
-```  
-  
-count DUP (initialvalue [[, initialvalue]]...)  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+Specifies *count* number of declarations of *initialvalue*.
+
+## Syntax
+
+```
+
+count DUP (initialvalue [[, initialvalue]]...)
+```
+
+## See Also
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>
