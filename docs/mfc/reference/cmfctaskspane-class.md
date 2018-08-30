@@ -101,18 +101,9 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::RemoveAllPages](#removeallpages)|Removes all pages from the task pane except the default (first) page.|  
 |[CMFCTasksPane::RemoveAllTasks](#removealltasks)|Removes all tasks from the group.|  
 |[CMFCTasksPane::RemoveGroup](#removegroup)|Removes a group.|  
-|[CMFCTasksPane::RemovePage](#removepage)|Removes a specified page from the task pane.|  
+|[CMFCTasksPane::RemovePage](#removepage)|Removes a specified page from the task pane.|
 |[CMFCTasksPane::RemoveTask](#removetask)|Removes a task from a task group.|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](cdockablepane-class.md).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](cdockablepane-class.md).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](cdockablepane-class.md).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](cdockablepane-class.md).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](cdockablepane-class.md).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](cdockablepane-class.md).)|  
 |[CMFCTasksPane::SaveState](#savestate)|(Overrides [CDockablePane::SaveState](cdockablepane-class.md).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](cdockablepane-class.md).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](cdockablepane-class.md).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Overrides [CDockablePane::PreTranslateMessage](cdockablepane-class.md).)|  
 |[CMFCTasksPane::Serialize](#serialize)|(Overrides [CDockablePane::Serialize]().)|  
 |[CMFCTasksPane::SetActivePage](#setactivepage)|Activates a specified page in the task pane.|  
 |[CMFCTasksPane::SetCaption](#setcaption)|Sets the caption name of a task pane.|  
@@ -128,7 +119,7 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::SetTaskName](#settaskname)|Sets the name for a task.|  
 |[CMFCTasksPane::SetTasksIconHorzOffset](#settasksiconhorzoffset)||  
 |[CMFCTasksPane::SetTasksIconVertOffset](#settasksiconvertoffset)||  
-|[CMFCTasksPane::SetTaskTextColor](#settasktextcolor)|Sets the text color for a task.|  
+|[CMFCTasksPane::SetTaskTextColor](#settasktextcolor)|Sets the text color for a task.| 
 |[CMFCTasksPane::SetTasksHorzOffset](#settaskshorzoffset)|Sets the horizontal offset of tasks from the left and right edges of their parent groups.|  
 |[CMFCTasksPane::SetVertMargin](#setvertmargin)|Sets the vertical spacing between a task pane and the edges of the client area.|  
 |[CMFCTasksPane::SetWindowHeight](#setwindowheight)|Sets the height for a window.|  
