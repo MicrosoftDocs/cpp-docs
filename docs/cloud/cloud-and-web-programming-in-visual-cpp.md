@@ -53,7 +53,7 @@ In C++, you have several options for connecting to the web and the cloud.
 
    Provides a native COM interface that you can use in Windows Runtime apps or Windows desktop apps to connect to the Internet over HTTP and issue GET, PUT, and other HTTP commands. For more information, see [Walkthrough: Connecting Using Tasks and XML HTTP Requests](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md).
 
-- [Windows Internet (WinInet)](/windows/desktop/WinInet/portal).aspx)
+- [Windows Internet (WinInet)](/windows/desktop/WinInet/portal)
 
    Windows API that you can use in Windows desktop apps to connect to the Internet.
 
