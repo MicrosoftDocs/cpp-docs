@@ -1,7 +1,7 @@
 ---
 title: "CMFCButton Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/28/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCButton", "AFXBUTTON/CMFCButton", "AFXBUTTON/CMFCButton::CleanUp", "AFXBUTTON/CMFCButton::EnableFullTextTooltip", "AFXBUTTON/CMFCButton::EnableMenuFont", "AFXBUTTON/CMFCButton::EnableWindowsTheming", "AFXBUTTON/CMFCButton::GetToolTipCtrl", "AFXBUTTON/CMFCButton::IsAutoCheck", "AFXBUTTON/CMFCButton::IsAutorepeatCommandMode", "AFXBUTTON/CMFCButton::IsCheckBox", "AFXBUTTON/CMFCButton::IsChecked", "AFXBUTTON/CMFCButton::IsHighlighted", "AFXBUTTON/CMFCButton::IsPressed", "AFXBUTTON/CMFCButton::IsPushed", "AFXBUTTON/CMFCButton::IsRadioButton", "AFXBUTTON/CMFCButton::IsWindowsThemingEnabled", "AFXBUTTON/CMFCButton::SetAutorepeatMode", "AFXBUTTON/CMFCButton::SetCheckedImage", "AFXBUTTON/CMFCButton::SetFaceColor", "AFXBUTTON/CMFCButton::SetImage", "AFXBUTTON/CMFCButton::SetMouseCursor", "AFXBUTTON/CMFCButton::SetMouseCursorHand", "AFXBUTTON/CMFCButton::SetStdImage", "AFXBUTTON/CMFCButton::SetTextColor", "AFXBUTTON/CMFCButton::SetTextHotColor", "AFXBUTTON/CMFCButton::SetTooltip", "AFXBUTTON/CMFCButton::SizeToContent", "AFXBUTTON/CMFCButton::OnDraw", "AFXBUTTON/CMFCButton::OnDrawBorder", "AFXBUTTON/CMFCButton::OnDrawFocusRect", "AFXBUTTON/CMFCButton::OnDrawText", "AFXBUTTON/CMFCButton::OnFillBackground", "AFXBUTTON/CMFCButton::SelectFont", "AFXBUTTON/CMFCButton::m_bDrawFocus", "AFXBUTTON/CMFCButton::m_bHighlightChecked", "AFXBUTTON/CMFCButton::m_bRightImage", "AFXBUTTON/CMFCButton::m_bTransparent", "AFXBUTTON/CMFCButton::m_nAlignStyle", "AFXBUTTON/CMFCButton::m_nFlatStyle"]
@@ -80,12 +80,17 @@ class CMFCButton : public CButton
   
 |Name|Description|  
 |----------|-----------------|  
-|[CMFCButton::m_bDrawFocus](#m_bdrawfocus)|Indicates whether to draw a focus rectangle around a button.|  
-|[CMFCButton::m_bHighlightChecked](#m_bhighlightchecked)|Indicates whether to highlight a BS_CHECKBOX-style button when the cursor hovers over it.|  
-|[CMFCButton::m_bRightImage](#m_brightimage)|Indicates whether to display an image on the right side of the button.|  
-|[CMFCButton::m_bTransparent](#m_btransparent)|Indicates whether the button is transparent.|  
 |[CMFCButton::m_nAlignStyle](#m_nalignstyle)|Specifies the alignment of the button text.|  
+|[CMFCButton::m_bDontUseWinXPTheme](#m_bDontUseWinXPTheme)|Specifies whether to use Windows XP themes.|
+|[CMFCButton::m_bDrawFocus](#m_bdrawfocus)|Indicates whether to draw a focus rectangle around a button.| 
 |[CMFCButton::m_nFlatStyle](#m_nflatstyle)|Specifies the style of the button, such as borderless, flat, semi-flat, or 3D.|  
+|[CMFCButton::m_bGrayDisabled](#m_bGrayDisabled)|When TRUE, enables a disabled button to be drawn as grayed-out.|
+|[CMFCButton::m_bHighlightChecked](#m_bhighlightchecked)|Indicates whether to highlight a BS_CHECKBOX-style button when the cursor hovers over it.|  
+|[CMFCButton::m_bResponseOnButtonDown](#m_bResponseOnButtonDown)|Indicates whether to respond to button down events.|
+|[CMFCButton::m_bRightImage](#m_brightimage)|Indicates whether to display an image on the right side of the button.|
+|[CMFCButton::m_bTopImage](#m_bTopImage)| Indicates whether the image is on top of the button.|
+|[CMFCButton::m_bTransparent](#m_btransparent)|Indicates whether the button is transparent.|  
+|[CMFCButton::m_bWasDblClk](#m_bWasDblClk)| Indicates whether the last click event was a double-click.|
   
 ## Remarks  
  Other types of buttons are derived from the `CMFCButton` class, such as the [CMFCURLLinkButton](../../mfc/reference/cmfclinkctrl-class.md) class, which supports hyperlinks, and the `CMFCColorButton` class, which supports a color picker dialog box.  
@@ -291,7 +296,16 @@ static BOOL IsWindowsThemingEnabled();
   
 ### Return Value  
  TRUE if the style of the button border corresponds to the current Windows theme; otherwise, FALSE.  
-  
+
+
+
+## <a name="m_bDontUseWinXPTheme"/> CMFCButton::m_bDontUseWinXPTheme
+Specifies whether to use Windows XP themes when drawing the button.
+
+```  
+BOOL m_bDontUseWinXPTheme;  
+```
+
 ##  <a name="m_bdrawfocus"></a>  CMFCButton::m_bDrawFocus  
  Indicates whether to draw a focus rectangle around a button.  
   
@@ -303,7 +317,15 @@ BOOL m_bDrawFocus;
  Set the `m_bDrawFocus` member to TRUE to specify that the framework will draw a focus rectangle around the button's text and image if the button receives focus.  
   
  The `CMFCButton` constructor initializes this member to TRUE.  
-  
+
+##  <a name="m_bGrayDisabled"></a>  CMFCButton::m_bGrayDisabled
+When TRUE, enables a disabled button to be drawn as grayed-out.
+
+
+```  
+BOOL m_bGrayDisabled;  
+```
+
 ##  <a name="m_bhighlightchecked"></a>  CMFCButton::m_bHighlightChecked  
  Indicates whether to highlight a BS_CHECKBOX-style button when the cursor hovers over it.  
   
@@ -313,14 +335,29 @@ BOOL m_bHighlightChecked;
   
 ### Remarks  
  Set the `m_bHighlightChecked` member to TRUE to specify that the framework will highlight a BS_CHECKBOX-style button when the mouse hovers over it.  
-  
+
+##  <a name="m_bResponseOnButtonDown"></a> CMFCButton::m_bResponseOnButtonDown
+Indicates whether to respond to button down events.
+
+```  
+BOOL m_bResponseOnButtonDown;  
+```  
+
 ##  <a name="m_brightimage"></a>  CMFCButton::m_bRightImage  
  Indicates whether to display an image on the right side of the button.  
   
 ```  
 BOOL m_bRightImage;  
 ```  
-  
+
+
+##  <a name="m_bTopImage"></a>  CMFCButton::m_bTopImage](#m_bTopImage)
+Indicates whether the image is on top of the button.
+
+```  
+BOOL m_bTopImage;  
+```
+
 ### Remarks  
  Set the `m_bRightImage` member to TRUE to specify that the framework will display the button's image to the right of the button's text label.  
   
@@ -351,7 +388,14 @@ AlignStyle m_nAlignStyle;
 |ALIGN_RIGHT|Aligns the button text to the right side of the button.|  
   
  The `CMFCButton` constructor initializes this member to ALIGN_CENTER.  
-  
+
+##  <a name="m_bWasDblClk"></a>  CMFCButton::m_bWasDblClk](#m_bWasDblClk)| 
+Indicates whether the last click event was a double-click.|
+
+```  
+BOOL m_bWasDblClk;  
+```  
+
 ##  <a name="m_nflatstyle"></a>  CMFCButton::m_nFlatStyle  
  Specifies the style of the button, such as borderless, flat, semi-flat, or 3D.  
   
