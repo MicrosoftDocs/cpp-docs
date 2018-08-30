@@ -1,7 +1,7 @@
 ---
 title: "Segment References in Inline Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,10 +12,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Segment References in Inline Assembly
-## Microsoft Specific
+
+**Microsoft Specific**
+
 You must refer to segments by register rather than by name (the segment name `_TEXT` is invalid, for instance). Segment overrides must use the register explicitly, as in ES:[BX].
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

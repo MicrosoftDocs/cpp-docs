@@ -1,7 +1,7 @@
 ---
 title: "MASM Operators Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -84,6 +84,6 @@ ms.workload: ["cplusplus"]
 |[PTR](../../assembler/masm/operator-ptr.md)|[SHORT](../../assembler/masm/operator-short.md)|[SIZE](../../assembler/masm/operator-size.md)|
 |[SIZEOF](../../assembler/masm/operator-sizeof.md)|[THIS](../../assembler/masm/operator-this.md)|[TYPE](../../assembler/masm/operator-type.md)|
 
-## See Also
+## See also
 
 [Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>

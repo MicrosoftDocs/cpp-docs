@@ -1,7 +1,7 @@
 ---
 title: "Writing Functions with Inline Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,10 +12,12 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Writing Functions with Inline Assembly
-## Microsoft Specific
+
+**Microsoft Specific**
+
 If you write a function with inline assembly code, it's easy to pass arguments to the function and return a value from it. The following examples compare a function first written for a separate assembler and then rewritten for the inline assembler. The function, called `power2`, receives two parameters, multiplying the first parameter by 2 to the power of the second parameter. Written for a separate assembler, the function might look like this:
 
-```
+```asm
 ; POWER.ASM
 ; Compute the power of an integer
 ;
@@ -40,9 +42,10 @@ _TEXT   ENDS
 Since it's written for a separate assembler, the function requires a separate source file and assembly and link steps. C and C++ function arguments are usually passed on the stack, so this version of the `power2` function accesses its arguments by their positions on the stack. (Note that the **MODEL** directive, available in MASM and some other assemblers, also allows you to access stack arguments and local stack variables by name.)
 
 ## Example
+
 This program writes the `power2` function with inline assembly code:
 
-```
+```cpp
 // Power2_inline_asm.c
 // compile with: /EHsc
 // processor: x86
@@ -74,5 +77,6 @@ Because the inline version of `power2` doesn't execute a C `return` statement, i
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>

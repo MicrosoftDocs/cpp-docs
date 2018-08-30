@@ -1,7 +1,7 @@
 ---
 title: ".LISTALL | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".LISTALL"]
@@ -24,6 +24,6 @@ Starts listing of all statements.
 
 Equivalent to the combination of [.LIST](../../assembler/masm/dot-list.md), [.LISTIF](../../assembler/masm/dot-listif.md), and [.LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

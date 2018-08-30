@@ -1,7 +1,7 @@
 ---
 title: ".SAVEREG | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".SAVEREG"]
@@ -18,9 +18,7 @@ Generates either a `UWOP_SAVE_NONVOL` or a `UWOP_SAVE_NONVOL_FAR` unwind code en
 
 ## Syntax
 
-```
-.SAVEREG reg, offset
-```
+> .SAVEREG reg, offset
 
 ## Remarks
 
@@ -28,6 +26,6 @@ Generates either a `UWOP_SAVE_NONVOL` or a `UWOP_SAVE_NONVOL_FAR` unwind code en
 
 For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

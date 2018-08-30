@@ -1,7 +1,7 @@
 ---
 title: ".ALLOCSTACK | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".ALLOCSTACK"]
@@ -18,9 +18,7 @@ Generates a **UWOP_ALLOC_SMALL** or a **UWOP_ALLOC_LARGE** with the specified si
 
 ## Syntax
 
-```
-.ALLOCSTACK size
-```
+> .ALLOCSTACK size
 
 ## Remarks
 
@@ -36,7 +34,7 @@ Fore more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-f
 
 The following sample shows how to specify an unwind/exception handler:
 
-```
+```asm
 ; ml64 ex3.asm /link /entry:Example1  /SUBSYSTEM:Console
 text SEGMENT
 PUBLIC Example3
@@ -64,6 +62,6 @@ text ENDS
 END
 ```
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

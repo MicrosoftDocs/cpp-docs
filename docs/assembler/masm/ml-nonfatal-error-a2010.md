@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2010 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2010"]
@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2010
+
 **invalid type expression**
 
 The operand to [THIS](../../assembler/masm/operator-this.md) or [PTR](../../assembler/masm/operator-ptr.md) was not a valid type expression.
 
-## See Also
+## See also
+
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

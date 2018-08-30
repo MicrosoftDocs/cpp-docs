@@ -1,7 +1,7 @@
 ---
 title: "SUBTITLE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["SUBTITLE"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # SUBTITLE
+
 Defines the listing subtitle. Same as [SUBTTL](../../assembler/masm/subttl.md).
 
 ## Syntax
 
-```
+> SUBTITLE text
 
-SUBTITLE text
-```
+## See also
 
-## See Also
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

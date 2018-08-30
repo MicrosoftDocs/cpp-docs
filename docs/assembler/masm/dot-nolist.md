@@ -1,7 +1,7 @@
 ---
 title: ".NOLIST | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".NOLIST"]
@@ -24,6 +24,6 @@ Suppresses program listing.
 
 Same as [.XLIST](../../assembler/masm/dot-xlist.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

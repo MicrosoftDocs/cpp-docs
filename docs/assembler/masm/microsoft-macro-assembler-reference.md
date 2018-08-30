@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Macro Assembler Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -43,7 +43,7 @@ Information about how to create output files for x64.
 [Visual C++](../../visual-cpp-in-visual-studio.md)<br/>
 Provides links to different areas of the Visual Studio and Visual C++ documentation.
 
-## See Also
+## See also
 
 [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)<br/>
 [x86Intrinsics](../../intrinsics/x86-intrinsics-list.md)<br/>

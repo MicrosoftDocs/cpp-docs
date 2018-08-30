@@ -1,7 +1,7 @@
 ---
 title: "IF (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["if"]
@@ -30,6 +30,6 @@ Grants assembly of *ifstatements* if *expression1* is true (nonzero) or *elseifs
 
 The following directives may be substituted for [ELSEIF](../../assembler/masm/elseif-masm.md): **ELSEIFB**, **ELSEIFDEF**, **ELSEIFDIF**, **ELSEIFDIFI**, **ELSEIFE**, **ELSEIFIDN**, **ELSEIFIDNI**, **ELSEIFNB**, and **ELSEIFNDEF**. Optionally, assembles *elsestatements* if the previous expression is false. Note that the expressions are evaluated at assembly time.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

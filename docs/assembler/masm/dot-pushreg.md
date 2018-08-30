@@ -1,7 +1,7 @@
 ---
 title: ".PUSHREG | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".PUSHREG"]
@@ -18,9 +18,7 @@ Generates a `UWOP_PUSH_NONVOL` unwind code entry for the specified register numb
 
 ## Syntax
 
-```
-.PUSHREG register
-```
+> .PUSHREG register
 
 ## Remarks
 
@@ -36,7 +34,7 @@ The following sample shows how to push non-volatile tegisters.
 
 ### Code
 
-```
+```asm
 ; ml64 ex1.asm /link /entry:Example1 /SUBSYSTEM:CONSOLE
 _text SEGMENT
 Example1 PROC FRAME
@@ -56,6 +54,6 @@ _text ENDS
 END
 ```
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

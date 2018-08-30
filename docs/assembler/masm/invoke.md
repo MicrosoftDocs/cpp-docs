@@ -1,7 +1,7 @@
 ---
 title: "INVOKE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["Invoke"]
@@ -24,6 +24,6 @@ Calls the procedure at the address given by *expression*, passing the arguments 
 
 Each argument passed to the procedure may be an expression, a register pair, or an address expression (an expression preceded by `ADDR`).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "Debugging and Listings for Inline Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,7 +12,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Debugging and Listings for Inline Assembly
-## Microsoft Specific
+
+**Microsoft Specific**
+
 Programs containing inline assembly code can be debugged with a source-level debugger if you compile with the [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) option.
 
 Within the debugger, you can set breakpoints on both C or C++ and assembly-language lines. If you enable mixed assembly and source mode, you can display both the source and disassembled form of the assembly code.
@@ -23,5 +25,6 @@ If you create a mixed source and assembly listing with the [/FAs](../../build/re
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

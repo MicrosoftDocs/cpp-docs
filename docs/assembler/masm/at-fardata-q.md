@@ -1,7 +1,7 @@
 ---
 title: "@fardata? | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@fardata?"]
@@ -20,6 +20,6 @@ The name of the segment defined by the [.FARDATA?](../../assembler/masm/dot-fard
 
 > @fardata?
 
-## See Also
+## See also
 
 [Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

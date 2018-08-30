@@ -1,7 +1,7 @@
 ---
 title: "ML and ML64 Command-Line Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["ML"]
@@ -20,14 +20,11 @@ For more information on ml64.exe, see [MASM for x64 (ml64.exe)](../../assembler/
 
 ## Syntax
 
-```
-ML [[options]] filename [[ [[options]]  filename]]
-ML64 [[options]] filename [[ [[options]]  filename]]
-...
-[[/link linkoptions]]
-```
+> ML [[*options*]] *filename* [[ [[*options*]]  *filename*]]
 
-#### Parameters
+> ML64 [[*options*]] *filename* [[ [[*options*]]  *filename*]] ... [[/link *linkoptions*]]
+
+### Parameters
 
 *options*<br/>
 The options listed in the following table.
@@ -35,50 +32,50 @@ The options listed in the following table.
 |Option|Action|
 |------------|------------|
 |**/AT**|Enables tiny-memory-model support. Enables error messages for code constructs that violate the requirements for .com format files. Note that this is not equivalent to the [.MODEL](../../assembler/masm/dot-model.md) **TINY** directive.<br /><br /> Not available in ml64.exe.|
-|**/Bl** `filename`|Selects an alternate linker.|
+|**/Bl** *filename*|Selects an alternate linker.|
 |**/c**|Assembles only. Does not link.|
 |**/coff**|Generates common object file format (COFF) type of object module. Generally required for Win32 assembly language development.<br /><br /> Not available in ml64.exe.|
 |**/Cp**|Preserves case of all user identifiers.|
 |**/Cu**|Maps all identifiers to upper case (default).<br /><br /> Not available in ml64.exe.|
 |**/Cx**|Preserves case in public and extern symbols.|
-|**/D** `symbol`[[=`value`]]|Defines a text macro with the given name. If `value` is missing, it is blank. Multiple tokens separated by spaces must be enclosed in quotation marks.|
+|**/D** *symbol*[[=*value*]]|Defines a text macro with the given name. If *value* is missing, it is blank. Multiple tokens separated by spaces must be enclosed in quotation marks.|
 |**/EP**|Generates a preprocessed source listing (sent to STDOUT). See **/Sf**.|
 |**/ERRORREPORT** [ **NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND** ]|If ml.exe or ml64.exe fails at runtime, you can use **/ERRORREPORT** to send information to Microsoft about these internal errors.<br /><br /> For more information about **/ERRORREPORT**, see [/errorReport (Report Internal Compiler Errors)](../../build/reference/errorreport-report-internal-compiler-errors.md).|
-|**/F** `hexnum`|Sets stack size to `hexnum` bytes (this is the same as **/link/STACK**:`number`). The value must be expressed in hexadecimal notation. There must be a space between **/F** and `hexnum`.|
-|**/Fe** `filename`|Names the executable file.|
-|**/Fl**[[`filename`]]|Generates an assembled code listing. See **/Sf**.|
-|**/Fm**[[`filename`]]|Creates a linker map file.|
-|**/Fo** `filename`|Names an object file. See Remarks section for more information.|
+|**/F** *hexnum*|Sets stack size to *hexnum* bytes (this is the same as **/link/STACK**:*number*). The value must be expressed in hexadecimal notation. There must be a space between **/F** and *hexnum*.|
+|**/Fe** *filename*|Names the executable file.|
+|**/Fl**[[*filename*]]|Generates an assembled code listing. See **/Sf**.|
+|**/Fm**[[*filename*]]|Creates a linker map file.|
+|**/Fo** *filename*|Names an object file. See Remarks section for more information.|
 |**/FPi**|Generates emulator fix-ups for floating-point arithmetic (mixed language only).<br /><br /> Not available in ml64.exe.|
-|**/Fr**[[`filename`]]|Generates a source browser .sbr file.|
-|**/FR**[[`filename`]]|Generates an extended form of a source browser .sbr file.|
+|**/Fr**[[*filename*]]|Generates a source browser .sbr file.|
+|**/FR**[[*filename*]]|Generates an extended form of a source browser .sbr file.|
 |**/Gc**|Specifies use of FORTRAN- or Pascal-style function calling and naming conventions. Same as **OPTION LANGUAGE:PASCAL**.<br /><br /> Not available in ml64.exe.|
 |**/Gd**|Specifies use of C-style function calling and naming conventions. Same as **OPTION LANGUAGE:C**.<br /><br /> Not available in ml64.exe.|
 |**/GZ**|Specifies use of __stdcall function calling and naming conventions.  Same as **OPTION LANGUAGE:STCALL**.<br /><br /> Not available in ml64.exe.|
-|**/H** `number`|Restricts external names to number significant characters. The default is 31 characters.<br /><br /> Not available in ml64.exe.|
+|**/H** *number*|Restricts external names to number significant characters. The default is 31 characters.<br /><br /> Not available in ml64.exe.|
 |**/help**|Calls QuickHelp for help on ML.|
-|**/I** `pathname`|Sets path for include file. A maximum of 10 **/I** options is allowed.|
+|**/I** *pathname*|Sets path for include file. A maximum of 10 **/I** options is allowed.|
 |**/nologo**|Suppresses messages for successful assembly.|
 |**/omf**|Generates object module file format (OMF) type of object module.  **/omf** implies **/c**; ML.exe does not support linking OMF objects.<br /><br /> Not available in ml64.exe.|
 |**/Sa**|Turns on listing of all available information.|
 |**/safeseh**|Marks the object as either containing no exception handlers or containing exception handlers that are all declared with [.SAFESEH](../../assembler/masm/dot-safeseh.md).<br /><br /> Not available in ml64.exe.|
 |**/Sf**|Adds first-pass listing to listing file.|
-|**/Sl** `width`|Sets the line width of source listing in characters per line. Range is 60 to 255 or 0. Default is 0. Same as [PAGE](../../assembler/masm/page.md) width.|
+|**/Sl** *width*|Sets the line width of source listing in characters per line. Range is 60 to 255 or 0. Default is 0. Same as [PAGE](../../assembler/masm/page.md) width.|
 |**/Sn**|Turns off symbol table when producing a listing.|
-|**/Sp** `length`|Sets the page length of source listing in lines per page. Range is 10 to 255 or 0. Default is 0. Same as [PAGE](../../assembler/masm/page.md) length.|
-|**/Ss** `text`|Specifies text for source listing. Same as [SUBTITLE](../../assembler/masm/subtitle.md) text.|
-|**/St** `text`|Specifies title for source listing. Same as [TITLE](../../assembler/masm/title.md) text.|
+|**/Sp** *length*|Sets the page length of source listing in lines per page. Range is 10 to 255 or 0. Default is 0. Same as [PAGE](../../assembler/masm/page.md) length.|
+|**/Ss** *text*|Specifies text for source listing. Same as [SUBTITLE](../../assembler/masm/subtitle.md) text.|
+|**/St** *text*|Specifies title for source listing. Same as [TITLE](../../assembler/masm/title.md) text.|
 |**/Sx**|Turns on false conditionals in listing.|
-|**/Ta** `filename`|Assembles source file whose name does not end with the .asm extension.|
+|**/Ta** *filename*|Assembles source file whose name does not end with the .asm extension.|
 |**/w**|Same as **/W0/WX**.|
-|**/W** `level`|Sets the warning level, where `level` = 0, 1, 2, or 3.|
+|**/W** *level*|Sets the warning level, where *level* = 0, 1, 2, or 3.|
 |**/WX**|Returns an error code if warnings are generated.|
 |**/X**|Ignore INCLUDE environment path.|
 |**/Zd**|Generates line-number information in object file.|
 |**/Zf**|Makes all symbols public.|
 |**/Zi**|Generates CodeView information in object file.|
 |**/Zm**|Enables**M510** option for maximum compatibility with MASM 5.1.<br /><br /> Not available in ml64.exe.|
-|**/Zp**[[`alignment`]]|Packs structures on the specified byte boundary. The `alignment` can be 1, 2, or 4.|
+|**/Zp**[[*alignment*]]|Packs structures on the specified byte boundary. The *alignment* can be 1, 2, or 4.|
 |**/Zs**|Performs a syntax check only.|
 |**/?**|Displays a summary of ML command-line syntax.|
 
@@ -102,7 +99,7 @@ Some command-line options to ML and ML64 are placement-sensitive. For example, b
 |ML|Specifies default command-line options.|
 |TMP|Specifies path for temporary files.|
 
-## See Also
+## See also
 
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>
 [Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>

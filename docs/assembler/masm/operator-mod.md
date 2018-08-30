@@ -1,7 +1,7 @@
 ---
 title: "operator MOD | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["Mod", "operator MOD"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator MOD
+
 Returns the integer value of the remainder (modulo) when dividing *expression1* by *expression2*.
 
 ## Syntax
 
-```
+> expression1 MOD expression2
 
-expression1 MOD expression2
-```
+## See also
 
-## See Also
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

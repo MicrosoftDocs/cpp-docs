@@ -1,7 +1,7 @@
 ---
 title: "CATSTR | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["CATSTR"]
@@ -24,6 +24,6 @@ Concatenates text items.
 
 Each text item can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

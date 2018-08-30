@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2054 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2054"]
@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2054
+
 **forced error : value not equal to 0**
 
 The conditional-error directive [.ERRNZ](../../assembler/masm/dot-errnz.md) was used to generate this error.
 
-## See Also
+## See also
+
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

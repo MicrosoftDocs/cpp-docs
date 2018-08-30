@@ -1,7 +1,7 @@
 ---
 title: "ECHO | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["ECHO"]
@@ -24,6 +24,6 @@ Displays *message* to the standard output device (by default, the screen).
 
 Same as [%OUT](../../assembler/masm/percent-out.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

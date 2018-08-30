@@ -1,7 +1,7 @@
 ---
 title: "TYPEDEF (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["typedef"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # TYPEDEF (MASM)
-Defines a new type called *name*, which is equivalent to `type`.
+
+Defines a new type called *name*, which is equivalent to *type*.
 
 ## Syntax
 
-```
+> *name* TYPEDEF *type*
 
-name TYPEDEF type
-```
+## See also
 
-## See Also
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

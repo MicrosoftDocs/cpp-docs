@@ -1,7 +1,7 @@
 ---
 title: "operator &quot; &quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["&#34; &#34;", "operator &#34; &#34;"]
@@ -13,13 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator &quot; &quot;
+
 Treats "*text*" as a string.
 
 ## Syntax
 
-```
-"text"
-```
+> "text"
 
-## See Also
+## See also
+
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

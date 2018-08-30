@@ -1,7 +1,7 @@
 ---
 title: ".ERRNB | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".ERRNB"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERRNB
+
 Generates an error if *textitem* is not blank.
 
 ## Syntax
 
-```
+> .ERRNB <textitem> [[, message]]
 
-.ERRNB <textitem> [[, message]]
-```
+## See also
 
-## See Also
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

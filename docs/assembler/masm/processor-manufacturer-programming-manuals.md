@@ -1,7 +1,7 @@
 ---
 title: "Processor Manufacturer Programming Manuals | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/01/2018"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -16,16 +16,16 @@ This article provides links to websites that may contain programming information
 
 ## Processor Manufacturer Websites
 
-- [AMD Developer Guides, Manuals & ISA Documents](https://go.microsoft.com/fwlink/p/?linkid=874958)
+- [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
 
-- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://go.microsoft.com/fwlink/p/?LinkID=510021)
+- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/articles/intel-sdm)
 
-- [Introduction to Intel Advanced Vector Extensions](https://go.microsoft.com/fwlink/p/?linkid=874961)
+- [Introduction to Intel Advanced Vector Extensions](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
 
 ## Remarks
 
 Neither Visual Studio nor the Microsoft Macro Assembler support all processors.
 
-## See Also
+## See also
 
 - [Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)

@@ -1,7 +1,7 @@
 ---
 title: "Assembly-Language Comments | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,10 +12,12 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Assembly-Language Comments
-## Microsoft Specific
+
+**Microsoft Specific**
+
 Instructions in an `__asm` block can use assembly-language comments:
 
-```
+```cpp
 __asm mov ax, offset buff ; Load address of buff
 ```
 
@@ -23,5 +25,6 @@ Because C macros expand into a single logical line, avoid using assembly-languag
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

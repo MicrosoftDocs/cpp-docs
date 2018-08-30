@@ -1,7 +1,7 @@
 ---
 title: "COMMENT (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["Comment"]
@@ -22,6 +22,6 @@ Treats all *text* between or on the same line as the delimiters as a comment.
 > [[text]]<br/>
 > [[text]] delimiter [[text]]
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

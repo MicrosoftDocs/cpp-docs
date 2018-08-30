@@ -1,7 +1,7 @@
 ---
 title: "PUSHCONTEXT | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["PUSHCONTEXT"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # PUSHCONTEXT
+
 Saves part or all of the current `context`: segment register assumes, radix value, listing and cref flags, or processor/coprocessor values. The `context` can be **ASSUMES**, `RADIX`, **LISTING**, **CPU**, or **ALL**.
 
 ## Syntax
 
-```
+> PUSHCONTEXT context
 
-PUSHCONTEXT context
-```
+## See also
 
-## See Also
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

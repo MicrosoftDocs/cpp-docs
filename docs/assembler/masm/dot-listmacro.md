@@ -1,7 +1,7 @@
 ---
 title: ".LISTMACRO | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".LISTMACRO"]
@@ -24,6 +24,6 @@ Starts listing of macro expansion statements that generate code or data.
 
 This is the default. Same as [.XALL](../../assembler/masm/dot-xall.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

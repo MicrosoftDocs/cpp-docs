@@ -1,7 +1,7 @@
 ---
 title: "MASM Expressions in Inline Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,10 +12,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # MASM Expressions in Inline Assembly
-## Microsoft Specific
+
+**Microsoft Specific**
+
 Inline assembly code can use any MASM expression, which is any combination of operands and operators that evaluates to a single value or address.
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

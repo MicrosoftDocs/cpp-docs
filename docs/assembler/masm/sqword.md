@@ -1,7 +1,7 @@
 ---
 title: "SQWORD | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["SQWORD"]
@@ -20,7 +20,7 @@ Allocates and optionally initializes 8 signed bytes of storage for each `initial
 
 > name SQWORD initializer [[, initializer]]...
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>
 [QWORD](../../assembler/masm/qword.md)<br/>

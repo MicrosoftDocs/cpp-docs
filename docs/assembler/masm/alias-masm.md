@@ -1,7 +1,7 @@
 ---
 title: "ALIAS (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["Alias"]
@@ -28,6 +28,6 @@ The actual name of the function or procedure.  The angle brackets are required.
 *alias*<br/>
 The alternate or alias name.  The angle brackets are required.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

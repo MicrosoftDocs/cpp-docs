@@ -1,7 +1,7 @@
 ---
 title: "DD | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["dd"]
@@ -18,14 +18,12 @@ Allocates and optionally initializes a double word (4 bytes) of storage for each
 
 ## Syntax
 
-```
-[[name]] DD initializer [[, initializer]]...
-```
+> [[name]] DD initializer [[, initializer]]...
 
 ## Remarks
 
 Can also be used as a type specifier anywhere a type is legal.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

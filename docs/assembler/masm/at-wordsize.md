@@ -1,7 +1,7 @@
 ---
 title: "@WordSize | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@WordSize"]
@@ -20,6 +20,6 @@ Two for a 16-bit segment or four for a 32-bit segment (numeric equate).
 
 > @WordSize
 
-## See Also
+## See also
 
 [Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

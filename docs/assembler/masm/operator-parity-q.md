@@ -1,7 +1,7 @@
 ---
 title: "operator PARITY? | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["PARITY?", "operator PARITY?"]
@@ -20,6 +20,6 @@ Status of parity flag. Used only within [.IF](../../assembler/masm/dot-if.md), [
 
 > PARITY?
 
-## See Also
+## See also
 
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

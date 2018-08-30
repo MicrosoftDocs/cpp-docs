@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2206 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2206"]
@@ -20,11 +20,10 @@ An expression cannot be evaluated because it is missing an operator. This error 
 
 The following line will generate this error:
 
-```
+```asm
 value1 = ( 1 + 2 ) 3
-
 ```
 
-## See Also
+## See also
 
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

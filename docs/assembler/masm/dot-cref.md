@@ -1,7 +1,7 @@
 ---
 title: ".CREF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".CREF"]
@@ -20,6 +20,6 @@ Enables listing of symbols in the symbol portion of the symbol table and browser
 
 > .CREF
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

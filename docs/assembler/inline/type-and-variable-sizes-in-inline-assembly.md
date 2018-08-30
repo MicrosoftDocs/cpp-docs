@@ -1,7 +1,7 @@
 ---
 title: "Type and Variable Sizes in Inline Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["length", "Type"]
@@ -18,15 +18,15 @@ ms.workload: ["cplusplus"]
 
 The **LENGTH**, **SIZE**, and **TYPE** operators have a limited meaning in inline assembly. They cannot be used at all with the `DUP` operator (because you cannot define data with MASM directives or operators). But you can use them to find the size of C or C++ variables or types:
 
--   The **LENGTH** operator can return the number of elements in an array. It returns the value 1 for non-array variables.
+- The **LENGTH** operator can return the number of elements in an array. It returns the value 1 for non-array variables.
 
--   The **SIZE** operator can return the size of a C or C++ variable. A variable's size is the product of its **LENGTH** and **TYPE**.
+- The **SIZE** operator can return the size of a C or C++ variable. A variable's size is the product of its **LENGTH** and **TYPE**.
 
--   The **TYPE** operator can return the size of a C or C++ type or variable. If the variable is an array, **TYPE** returns the size of a single element of the array.
+- The **TYPE** operator can return the size of a C or C++ type or variable. If the variable is an array, **TYPE** returns the size of a single element of the array.
 
-For example, if your program has an 8-element `int` array,
+For example, if your program has an 8-element **int** array,
 
-```
+```cpp
 int arr[8];
 ```
 
@@ -40,6 +40,6 @@ the following C and assembly expressions yield the size of `arr` and its element
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

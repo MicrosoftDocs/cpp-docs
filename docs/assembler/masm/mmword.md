@@ -1,7 +1,7 @@
 ---
 title: "MMWORD | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["MMWORD"]
@@ -18,16 +18,14 @@ Used for 64-bit multimedia operands with MMX and SSE (XMM) instructions.
 
 ## Syntax
 
-```
-MMWORD
-```
+> MMWORD
 
 ## Remarks
 
 `MMWORD` is a type.  Prior to MMWORD being added to MASM, equivalent functionality could have been achieved with:
 
-```
-mov mm0, qword ptr [ebx]
+```asm
+    mov mm0, qword ptr [ebx]
 ```
 
 While both instructions work on 64-bit operands, `QWORD` is the type for 64-bit unsigned integers and `MMWORD` is the type for a 64-bit multimedia value.
@@ -36,6 +34,6 @@ While both instructions work on 64-bit operands, `QWORD` is the type for 64-bit 
 
 ## Example
 
-```
-movq     mm0, mmword ptr [ebx]
+```asm
+    movq     mm0, mmword ptr [ebx]
 ```

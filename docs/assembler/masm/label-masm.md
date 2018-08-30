@@ -1,7 +1,7 @@
 ---
 title: "LABEL (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["Label"]
@@ -22,6 +22,6 @@ Creates a new label by assigning the current location-counter value and the give
 
 > *name* LABEL [[NEAR | FAR | PROC]] PTR [[*type*]]
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

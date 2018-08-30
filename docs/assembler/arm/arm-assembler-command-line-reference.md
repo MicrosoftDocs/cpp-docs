@@ -1,7 +1,7 @@
 ---
 title: "ARM Assembler Command-Line Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -85,7 +85,7 @@ The following example demonstrates how to use armasm in a typical scenario. Firs
 
 **cl myccode.c /link myasmcode.obj**
 
-## See Also
+## See also
 
 [ARM Assembler Diagnostic Messages](../../assembler/arm/arm-assembler-diagnostic-messages.md)<br/>
 [ARM Assembler Directives](../../assembler/arm/arm-assembler-directives.md)<br/>

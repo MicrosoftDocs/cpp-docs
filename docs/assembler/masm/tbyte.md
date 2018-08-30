@@ -1,7 +1,7 @@
 ---
 title: "TBYTE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["TBYTE"]
@@ -13,14 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # TBYTE
+
 Allocates and optionally initializes 10 bytes of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.
 
 ## Syntax
 
-```
-[[name]] TBYTEinitializer [[, initializer]]...
-```
+> [[name]] TBYTEinitializer [[, initializer]]...
 
-## See Also
+## See also
+
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>
 [DT](../../assembler/masm/dt.md)<br/>

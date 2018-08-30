@@ -1,7 +1,7 @@
 ---
 title: ".ERRDEF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".ERRDEF"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ERRDEF
+
 Generates an error if *name* is a previously defined label, variable, or symbol.
 
 ## Syntax
 
-```
+> .ERRDEF name [[, message]]
 
-.ERRDEF name [[, message]]
-```
+## See also
 
-## See Also
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

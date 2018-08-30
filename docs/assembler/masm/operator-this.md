@@ -1,7 +1,7 @@
 ---
 title: "operator THIS | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["this", "operator THIS"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator THIS
+
 Returns an operand of specified `type` whose offset and segment values are equal to the current location counter value.
 
 ## Syntax
 
-```
+> THIS type
 
-THIS type
-```
+## See also
 
-## See Also
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: ".RADIX | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".RADIX"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .RADIX
+
 Sets the default radix, in the range 2 to 16, to the value of *expression*.
 
 ## Syntax
 
-```
+> .RADIX expression
 
-.RADIX expression
-```
+## See also
 
-## See Also
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

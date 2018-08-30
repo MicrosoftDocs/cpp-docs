@@ -1,7 +1,7 @@
 ---
 title: "POPCONTEXT | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["POPCONTEXT"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # POPCONTEXT
+
 Restores part or all of the current `context` (saved by the [PUSHCONTEXT](../../assembler/masm/pushcontext.md) directive). The `context` can be **ASSUMES**, `RADIX`, **LISTING**, **CPU**, or **ALL**.
 
 ## Syntax
 
-```
+> POPCONTEXT context
 
-POPCONTEXT context
-```
+## See also
 
-## See Also
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

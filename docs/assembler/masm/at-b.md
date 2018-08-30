@@ -1,7 +1,7 @@
 ---
 title: "@B | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@B"]
@@ -20,6 +20,6 @@ The location of the previous [@@:](../../assembler/masm/at-at.md) label.
 
 > @B
 
-## See Also
+## See also
 
 [Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

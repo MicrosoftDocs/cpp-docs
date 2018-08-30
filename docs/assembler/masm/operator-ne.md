@@ -1,7 +1,7 @@
 ---
 title: "operator NE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["NE", "operator NE"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator NE
+
 Returns true (-1) if *expression1* does not equal *expression2*, or returns false (0) if it does.
 
 ## Syntax
 
-```
+> expression1 NE expression2
 
-expression1 NE expression2
-```
+## See also
 
-## See Also
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

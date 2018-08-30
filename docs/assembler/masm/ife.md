@@ -1,7 +1,7 @@
 ---
 title: "IFE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["IFE"]
@@ -24,6 +24,6 @@ Grants assembly if *expression* is false (0).
 
 See [IF](../../assembler/masm/if-masm.md) for complete syntax.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "operator OPATTR | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator OPATTR", "OPATTR"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator OPATTR
+
 Returns a word defining the mode and scope of *expression*. The low byte is identical to the byte returned by [.TYPE](../../assembler/masm/operator-dot-type.md). The high byte contains additional information.
 
 ## Syntax
 
-```
+> OPATTR expression
 
-OPATTR expression
-```
+## See also
 
-## See Also
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "operator ! (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator !"]
@@ -20,6 +20,6 @@ Treats `character` as a literal character rather than as an operator or symbol.
 
 > ! *character*
 
-## See Also
+## See also
 
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "Symbols Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -56,6 +56,6 @@ ms.workload: ["cplusplus"]
 |[@fardata?](../../assembler/masm/at-fardata-q.md)|[@Model](../../assembler/masm/at-model.md)|[@stack](../../assembler/masm/at-stack.md)|
 |[@WordSize](../../assembler/masm/at-wordsize.md)|||
 
-## See Also
+## See also
 
 [Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>

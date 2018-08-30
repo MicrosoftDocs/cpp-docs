@@ -1,7 +1,7 @@
 ---
 title: ".ENDPROLOG | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".ENDPROLOG"]
@@ -18,9 +18,7 @@ Signals the end of the prologue declarations.
 
 ## Syntax
 
-```
-.ENDPROLOG
-```
+> .ENDPROLOG
 
 ## Remarks
 
@@ -28,6 +26,6 @@ It is an error to use any of the prologue declarations outside of the region bet
 
 For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

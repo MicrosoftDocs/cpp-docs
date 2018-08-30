@@ -1,7 +1,7 @@
 ---
 title: "%OUT | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["%OUT"]
@@ -20,6 +20,6 @@ See [ECHO](../../assembler/masm/echo.md).
 
 > %OUT
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

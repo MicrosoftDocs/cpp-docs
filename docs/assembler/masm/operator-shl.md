@@ -1,7 +1,7 @@
 ---
 title: "operator SHL | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator SHL", "SHL"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator SHL
+
 Returns the result of shifting the bits of *expression* left *count* number of bits.
 
 ## Syntax
 
-```
+> expression SHL count
 
-expression SHL count
-```
+## See also
 
-## See Also
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

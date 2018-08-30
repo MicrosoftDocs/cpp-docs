@@ -1,7 +1,7 @@
 ---
 title: "Accessing C or C++ Data in __asm Blocks | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,10 +12,12 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Accessing C or C++ Data in __asm Blocks
-## Microsoft Specific
+
+**Microsoft Specific**
+
 A great convenience of inline assembly is the ability to refer to C or C++ variables by name. An `__asm` block can refer to any symbols, including variable names, that are in scope where the block appears. For instance, if the C variable `var` is in scope, the instruction
 
-```
+```cpp
 __asm mov eax, var
 ```
 
@@ -25,14 +27,14 @@ If a class, structure, or union member has a unique name, an `__asm` block can r
 
 If you declare variables with the types
 
-```
+```cpp
 struct first_type hal;
 struct second_type oat;
 ```
 
 all references to the member `same_name` must use the variable name because `same_name` is not unique. But the member `weasel` has a unique name, so you can refer to it using only its member name:
 
-```
+```cpp
 // InlineAssembler_Accessing_C_asm_Blocks.cpp
 // processor: x86
 #include <stdio.h>
@@ -69,5 +71,6 @@ You can access data members in C++ without regard to access restrictions. Howeve
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>

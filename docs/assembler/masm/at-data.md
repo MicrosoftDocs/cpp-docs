@@ -1,7 +1,7 @@
 ---
 title: "@data | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@data"]
@@ -20,6 +20,6 @@ The name of the default data group. Evaluates to DGROUP for all models except **
 
 > @data
 
-## See Also
+## See also
 
 [Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

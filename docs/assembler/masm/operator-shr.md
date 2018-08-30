@@ -1,7 +1,7 @@
 ---
 title: "operator SHR | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["SHR", "operator SHR"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator SHR
+
 Returns the result of shifting the bits of *expression* right *count* number of bits.
 
 ## Syntax
 
-```
+> expression SHR count
 
-expression SHR count
-```
+## See also
 
-## See Also
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

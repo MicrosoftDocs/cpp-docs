@@ -1,7 +1,7 @@
 ---
 title: "ORG | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["ORG"]
@@ -20,6 +20,6 @@ Sets the location counter to *expression*.
 
 > ORG *expression*
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

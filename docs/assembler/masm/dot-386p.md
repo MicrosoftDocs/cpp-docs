@@ -1,7 +1,7 @@
 ---
 title: ".386P | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".386P"]
@@ -24,6 +24,6 @@ Enables assembly of all instructions (including privileged) for the 80386 proces
 
 Also enables 80387 instructions.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

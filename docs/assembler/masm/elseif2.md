@@ -1,7 +1,7 @@
 ---
 title: "ELSEIF2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["ELSEIF2"]
@@ -20,6 +20,6 @@ ms.workload: ["cplusplus"]
 
 > ELSEIF2
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

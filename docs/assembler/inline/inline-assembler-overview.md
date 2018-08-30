@@ -1,7 +1,7 @@
 ---
 title: "Inline Assembler Overview | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,6 +12,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Inline Assembler Overview
+
 **Microsoft Specific**
 
 The inline assembler lets you embed assembly-language instructions in your C and C++ source programs without extra assembly and link steps. The inline assembler is built into the compiler — you don't need a separate assembler such as the Microsoft Macro Assembler (MASM).
@@ -22,7 +23,7 @@ The [__asm](../../assembler/inline/asm.md) keyword invokes the inline assembler 
 
 The following code is a simple `__asm` block enclosed in braces. (The code is a custom function prolog sequence.)
 
-```
+```cpp
 // asm_overview.cpp
 // processor: x86
 void __declspec(naked) main()
@@ -44,7 +45,7 @@ void __declspec(naked) main()
 
 Alternatively, you can put `__asm` in front of each assembly instruction:
 
-```
+```cpp
 __asm push ebp
 __asm mov  ebp, esp
 __asm sub  esp, __LOCAL_SIZE
@@ -52,11 +53,12 @@ __asm sub  esp, __LOCAL_SIZE
 
 Since the `__asm` keyword is a statement separator, you can also put assembly instructions on the same line:
 
-```
+```cpp
 __asm push ebp   __asm mov  ebp, esp   __asm sub  esp, __LOCAL_SIZE
 ```
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>

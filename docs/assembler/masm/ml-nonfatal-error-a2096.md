@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2096 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2096"]
@@ -20,10 +20,10 @@ A segment or group was expected but was not found.
 
 One of the following occurred:
 
--   The left operand specified with the segment override operator (**:**) was not a segment register (CS, DS, SS, ES, FS, or GS), group name, segment name, or segment expression.
+- The left operand specified with the segment override operator (**:**) was not a segment register (CS, DS, SS, ES, FS, or GS), group name, segment name, or segment expression.
 
--   The [ASSUME](../../assembler/masm/assume.md) directive was given a segment register without a valid segment address, segment register, group, or the special **FLAT** group.
+- The [ASSUME](../../assembler/masm/assume.md) directive was given a segment register without a valid segment address, segment register, group, or the special **FLAT** group.
 
-## See Also
+## See also
 
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2022 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2022"]
@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2022
+
 **instruction operands must be the same size**
 
 The operands to an instruction did not have the same size.
 
-## See Also
+## See also
+
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

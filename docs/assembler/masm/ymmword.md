@@ -1,7 +1,7 @@
 ---
 title: "YMMWORD | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["YMMWORD"]
@@ -18,14 +18,12 @@ Used for 256-bit multimedia operands with Intel Advanced Vector Extensions (AVX)
 
 ## Syntax
 
-```
-YMMWORD
-```
+> YMMWORD
 
 ## Remarks
 
 `YMMWORD` is intended to represent the same type as `__m256` for the AVX intrinsics.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

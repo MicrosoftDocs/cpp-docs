@@ -1,7 +1,7 @@
 ---
 title: "Substitution operator (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator &&"]
@@ -20,6 +20,6 @@ Replaces *parameter* with its corresponding argument value.
 
 > &*parameter*&
 
-## See Also
+## See also
 
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "@code | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@code"]
@@ -20,6 +20,6 @@ The name of the code segment (text macro).
 
 > @code
 
-## See Also
+## See also
 
 [Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

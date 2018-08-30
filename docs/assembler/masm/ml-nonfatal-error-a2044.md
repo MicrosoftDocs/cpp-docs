@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2044 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2044"]
@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2044
+
 **invalid character in file**
 
 The source file contained a character outside a comment, string, or literal that was not recognized as an operator or other legal character.
 
-## See Also
+## See also
+
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

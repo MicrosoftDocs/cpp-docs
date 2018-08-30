@@ -1,7 +1,7 @@
 ---
 title: "operator LENGTHOF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator LENGTHOF", "LENGTHOF"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator LENGTHOF
+
 Returns the number of data objects in *variable*.
 
 ## Syntax
 
-```
+> LENGTHOF variable
 
-LENGTHOF variable
-```
+## See also
 
-## See Also
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

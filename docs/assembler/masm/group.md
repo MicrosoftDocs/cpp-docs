@@ -1,7 +1,7 @@
 ---
 title: "GROUP | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["group"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # GROUP
+
 Add the specified *segments* to the group called *name*.
 
 ## Syntax
 
-```
+> name GROUP segment [[, segment]]...
 
-name GROUP segment [[, segment]]...
-```
+## See also
 
-## See Also
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

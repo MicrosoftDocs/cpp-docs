@@ -1,7 +1,7 @@
 ---
 title: "REPEAT | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["REPEAT"]
@@ -22,6 +22,6 @@ Marks a block that is to be repeated *expression* times. Same as [REPT](../../as
 > *statements*<br/>
 > ENDM
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

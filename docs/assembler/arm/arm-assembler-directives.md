@@ -1,7 +1,7 @@
 ---
 title: "ARM Assembler Directives | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -100,7 +100,7 @@ Not supported.
 `THUMBX`<br/>
 Not supported because the Microsoft ARM assembler does not support the Thumb-2EE instruction set.
 
-## See Also
+## See also
 
 [ARM Assembler Command-Line Reference](../../assembler/arm/arm-assembler-command-line-reference.md)<br/>
 [ARM Assembler Diagnostic Messages](../../assembler/arm/arm-assembler-diagnostic-messages.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "ML Fatal Error A1007 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A1007"]
@@ -20,22 +20,22 @@ The assembler reached its nesting limit. The limit is 20 levels except where not
 
 One of the following was nested too deeply:
 
--   A high-level directive such as [.IF](../../assembler/masm/dot-if.md), [.REPEAT](../../assembler/masm/dot-repeat.md), or [.WHILE](../../assembler/masm/dot-while.md).
+- A high-level directive such as [.IF](../../assembler/masm/dot-if.md), [.REPEAT](../../assembler/masm/dot-repeat.md), or [.WHILE](../../assembler/masm/dot-while.md).
 
--   A structure definition.
+- A structure definition.
 
--   A conditional-assembly directive.
+- A conditional-assembly directive.
 
--   A procedure definition.
+- A procedure definition.
 
--   A [PUSHCONTEXT](../../assembler/masm/pushcontext.md) directive (the limit is 10).
+- A [PUSHCONTEXT](../../assembler/masm/pushcontext.md) directive (the limit is 10).
 
--   A segment definition.
+- A segment definition.
 
--   An include file.
+- An include file.
 
--   A macro.
+- A macro.
 
-## See Also
+## See also
 
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

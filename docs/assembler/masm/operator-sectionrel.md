@@ -1,7 +1,7 @@
 ---
 title: "operator SECTIONREL | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator SECTIONREL", "SECTIONREL"]
@@ -18,14 +18,12 @@ Returns the section relative offset of expression relative to the section contai
 
 ## Syntax
 
-```
-SECTIONREL expression
-```
+> SECTIONREL expression
 
 ## Remarks
 
 SECTIONREL is available only with COFF object emission.
 
-## See Also
+## See also
 
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

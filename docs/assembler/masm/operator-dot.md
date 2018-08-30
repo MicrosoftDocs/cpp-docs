@@ -1,7 +1,7 @@
 ---
 title: "operator dot | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator ."]
@@ -22,6 +22,6 @@ The first operator returns *expression* plus the offset of *field* within its st
 
 > [*register*]. *field* [[. *field*]] ...
 
-## See Also
+## See also
 
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

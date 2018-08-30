@@ -1,7 +1,7 @@
 ---
 title: "SEGMENT | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["SEGMENT"]
@@ -61,6 +61,6 @@ Designates how segments should be combined and ordered in the assembled file. Ty
 
 For `ALIGN(n)`, *n* may be any power of 2 from 1 to 8192; not supported with **/omf**.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

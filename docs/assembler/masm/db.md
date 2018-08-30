@@ -1,7 +1,7 @@
 ---
 title: "DB | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["DB"]
@@ -18,15 +18,13 @@ Allocates and optionally initializes a byte of storage for each `initializer`. `
 
 ## Syntax
 
-```
-[[name]] DB initializer [[, initializer]] ...
-```
+> [[name]] DB initializer [[, initializer]] ...
 
 ## Remarks
 
 Can also be used as a type specifier anywhere a type is legal.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>
 [DB](../../assembler/masm/db.md)<br/>

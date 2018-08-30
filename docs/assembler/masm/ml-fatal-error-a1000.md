@@ -1,7 +1,7 @@
 ---
 title: "ML Fatal Error A1000 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A1000"]
@@ -20,22 +20,22 @@ The assembler was unable to open a source, include, or output file.
 
 One of the following may be a cause:
 
--   The file does not exist.
+- The file does not exist.
 
--   The file is in use by another process.
+- The file is in use by another process.
 
--   The filename is not valid.
+- The filename is not valid.
 
--   A read-only file with the output filename already exists.
+- A read-only file with the output filename already exists.
 
--   The current drive is full.
+- The current drive is full.
 
--   The current directory is the root and is full.
+- The current directory is the root and is full.
 
--   The device cannot be written to.
+- The device cannot be written to.
 
--   The drive is not ready.
+- The drive is not ready.
 
-## See Also
+## See also
 
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

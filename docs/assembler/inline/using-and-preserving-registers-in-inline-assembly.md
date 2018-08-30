@@ -1,7 +1,7 @@
 ---
 title: "Using and Preserving Registers in Inline Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,7 +12,9 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Using and Preserving Registers in Inline Assembly
-## Microsoft Specific
+
+**Microsoft Specific**
+
 In general, you should not assume that a register will have a given value when an `__asm` block begins. Register values are not guaranteed to be preserved across separate `__asm` blocks. If you end a block of inline code and begin another, you cannot rely on the registers in the second block to retain their values from the first block. An `__asm` block inherits whatever register values result from the normal flow of control.
 
 If you use the `__fastcall` calling convention, the compiler passes function arguments in registers instead of on the stack. This can create problems in functions with `__asm` blocks because a function has no way to tell which parameter is in which register. If the function happens to receive a parameter in EAX and immediately stores something else in EAX, the original parameter is lost. In addition, you must preserve the ECX register in any function declared with `__fastcall`.
@@ -30,5 +32,6 @@ Some SSE types require eight-byte stack alignment, forcing the compiler to emit 
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>

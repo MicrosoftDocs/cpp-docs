@@ -1,7 +1,7 @@
 ---
 title: "EVEN | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["EVEN"]
@@ -20,6 +20,6 @@ Aligns the next variable or instruction on an even byte.
 
 > EVEN
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

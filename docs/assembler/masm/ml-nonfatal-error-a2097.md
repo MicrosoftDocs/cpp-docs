@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2097 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2097"]
@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2097
+
 **segment expected : identifier**
 
 The [GROUP](../../assembler/masm/group.md) directive was given an identifier that was not a defined segment.
 
-## See Also
+## See also
+
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

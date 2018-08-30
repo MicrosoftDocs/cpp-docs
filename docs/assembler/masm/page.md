@@ -1,7 +1,7 @@
 ---
 title: "PAGE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["PAGE"]
@@ -21,6 +21,6 @@ The first directive sets line *length* and character *width* of the program list
 > PAGE [[*length*]][[, *width*]]<br/><br/>
 > PAGE +
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

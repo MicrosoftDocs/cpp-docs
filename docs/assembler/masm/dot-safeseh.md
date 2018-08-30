@@ -1,7 +1,7 @@
 ---
 title: ".SAFESEH | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".SAFESEH"]
@@ -28,7 +28,7 @@ For more information about structured exception handlers, see [/SAFESEH](../../b
 
 For example, to register a safe exception handler, create a new MASM file (as follows), assemble with /safeseh, and add it to the linked objects.
 
-```
+```asm
 .386
 .model  flat
 MyHandler   proto
@@ -36,6 +36,6 @@ MyHandler   proto
 end
 ```
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

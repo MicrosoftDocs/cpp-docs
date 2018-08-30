@@ -1,7 +1,7 @@
 ---
 title: ".486P | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".486P"]
@@ -20,6 +20,6 @@ Enables assembly of all instructions (including privileged) for the 80486 proces
 
 > .486P
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

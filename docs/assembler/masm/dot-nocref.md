@@ -1,7 +1,7 @@
 ---
 title: ".NOCREF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".NOCREF"]
@@ -24,6 +24,6 @@ Suppresses listing of symbols in the symbol table and browser file.
 
 If names are specified, then only the given names are suppressed. Same as [.XCREF](../../assembler/masm/dot-xcref.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

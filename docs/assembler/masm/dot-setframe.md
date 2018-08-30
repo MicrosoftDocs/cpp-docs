@@ -1,7 +1,7 @@
 ---
 title: ".SETFRAME | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".SETFRAME"]
@@ -18,9 +18,7 @@ Fills in the frame register field and offset in the unwind information using the
 
 ## Syntax
 
-```
-.SETFRAME reg, offset
-```
+> .SETFRAME reg, offset
 
 ## Remarks
 
@@ -36,7 +34,7 @@ The following sample shows how to use a frame pointer:
 
 ### Code
 
-```
+```asm
 ; ml64 frmex2.asm /link /entry:frmex2 /SUBSYSTEM:CONSOLE
 _text SEGMENT
 frmex2 PROC FRAME
@@ -63,6 +61,6 @@ _text ENDS
 END
 ```
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

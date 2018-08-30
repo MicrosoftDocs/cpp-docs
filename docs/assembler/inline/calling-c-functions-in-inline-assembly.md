@@ -1,7 +1,7 @@
 ---
 title: "Calling C Functions in Inline Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,10 +12,12 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Calling C Functions in Inline Assembly
-## Microsoft Specific
+
+**Microsoft Specific**
+
 An `__asm` block can call C functions, including C library routines. The following example calls the `printf` library routine:
 
-```
+```cpp
 // InlineAssembler_Calling_C_Functions_in_Inline_Assembly.cpp
 // processor: x86
 #include <stdio.h>
@@ -45,7 +47,7 @@ int main( void )
 
 Because function arguments are passed on the stack, you simply push the needed arguments — string pointers, in the previous example — before calling the function. The arguments are pushed in reverse order, so they come off the stack in the desired order. To emulate the C statement
 
-```
+```cpp
 printf( format, hello, world );
 ```
 
@@ -53,5 +55,6 @@ the example pushes pointers to `world`, `hello`, and `format`, in that order, an
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>

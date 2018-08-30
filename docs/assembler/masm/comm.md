@@ -1,7 +1,7 @@
 ---
 title: "COMM | Microsoft Docs"
 ms.custom: ""
-ms.date: "05/22/2018"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["COMM"]
@@ -34,7 +34,7 @@ The optional *langtype* sets the naming conventions for the name that follows. I
 
 This example creates an array of 512 BYTE elements:
 
-```masm
+```asm
 COMM FAR ByteArray:BYTE:512
 ```
 

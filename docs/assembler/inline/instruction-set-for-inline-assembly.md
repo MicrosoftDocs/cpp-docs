@@ -1,7 +1,7 @@
 ---
 title: "Instruction Set for Inline Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -12,10 +12,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Instruction Set for Inline Assembly
-## Microsoft Specific
+
+**Microsoft Specific**
+
 The Visual C++ compiler supports all opcodes through the Pentium 4 and AMD Athlon. Additional instructions supported by the target processor can be created with the [_emit Pseudoinstruction](../../assembler/inline/emit-pseudoinstruction.md).
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

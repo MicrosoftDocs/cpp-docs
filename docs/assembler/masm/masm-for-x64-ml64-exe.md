@@ -1,7 +1,7 @@
 ---
 title: "MASM for x64 (ml64.exe) | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/21/2018"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -41,19 +41,19 @@ Create your assembler-language code in the .asm file you added. When you build y
 
 You can use the following ml64-specific directives in your assembler-language source code that targets x64:
 
--   [.ALLOCSTACK](../../assembler/masm/dot-allocstack.md)
+- [.ALLOCSTACK](../../assembler/masm/dot-allocstack.md)
 
--   [.ENDPROLOG](../../assembler/masm/dot-endprolog.md)
+- [.ENDPROLOG](../../assembler/masm/dot-endprolog.md)
 
--   [.PUSHFRAME](../../assembler/masm/dot-pushframe.md)
+- [.PUSHFRAME](../../assembler/masm/dot-pushframe.md)
 
--   [.PUSHREG](../../assembler/masm/dot-pushreg.md)
+- [.PUSHREG](../../assembler/masm/dot-pushreg.md)
 
--   [.SAVEREG](../../assembler/masm/dot-savereg.md)
+- [.SAVEREG](../../assembler/masm/dot-savereg.md)
 
--   [.SAVEXMM128](../../assembler/masm/dot-savexmm128.md)
+- [.SAVEXMM128](../../assembler/masm/dot-savexmm128.md)
 
--   [.SETFRAME](../../assembler/masm/dot-setframe.md)
+- [.SETFRAME](../../assembler/masm/dot-setframe.md)
 
 In addition, the [PROC](../../assembler/masm/proc.md) directive has been updated for use with ml64.exe.
 
@@ -61,7 +61,7 @@ In addition, the [PROC](../../assembler/masm/proc.md) directive has been updated
 
 MASM emits the 0x67 address size override if a memory operand includes 32-bit registers. For example, the following examples cause the address size override to be emitted:
 
-```MASM
+```asm
 mov rax, QWORD PTR [ecx]
 mov eax, DWORD PTR [ecx*2+r10d]
 mov eax, DWORD PTR [ecx*2+r10d+0100h]
@@ -73,11 +73,11 @@ MASM assumes that if a 32-bit displacement appears alone as a memory operand, 64
 
 Finally, mixing register sizes within a memory operand, as demonstrated in the following code, generates an error.
 
-```MASM
+```asm
 mov eax, DWORD PTR [rcx*2+r10d]
 mov eax, DWORD PTR [ecx*2+r10+0100h]
 ```
 
-## See Also
+## See also
 
 [Microsoft Macro Assembler Reference](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>

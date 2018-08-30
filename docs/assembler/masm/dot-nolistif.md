@@ -1,7 +1,7 @@
 ---
 title: ".NOLISTIF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".NOLISTIF"]
@@ -24,6 +24,6 @@ Suppresses listing of conditional blocks whose condition evaluates to false (0).
 
 This is the default. Same as [.SFCOND](../../assembler/masm/dot-sfcond.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

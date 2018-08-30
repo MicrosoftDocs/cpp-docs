@@ -1,7 +1,7 @@
 ---
 title: "PROC | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["PROC"]
@@ -33,7 +33,7 @@ See [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) for
 
 ## Example
 
-```
+```asm
 ; ml64 ex1.asm /link /entry:Example1 /SUBSYSTEM:CONSOLE
 _text SEGMENT
 Example1 PROC FRAME
@@ -55,7 +55,7 @@ END
 
 The above code will emit the following function table and unwind information:
 
-```
+```Output
 FileHeader->Machine 34404
 Dumping Unwind Information for file ex2.exe
 
@@ -76,6 +76,6 @@ Dumping Unwind Information for file ex2.exe
       Code offset: 0x01, PUSH_NONVOL, register=rbp
 ```
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

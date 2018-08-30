@@ -1,7 +1,7 @@
 ---
 title: ".PUSHFRAME | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".PUSHFRAME"]
@@ -18,9 +18,7 @@ Generates a `UWOP_PUSH_MACHFRAME` unwind code entry. If the optional `code` is s
 
 ## Syntax
 
-```
-.PUSHFRAME [code]
-```
+> .PUSHFRAME [code]
 
 ## Remarks
 
@@ -28,6 +26,6 @@ Generates a `UWOP_PUSH_MACHFRAME` unwind code entry. If the optional `code` is s
 
 For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

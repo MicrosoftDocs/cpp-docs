@@ -1,7 +1,7 @@
 ---
 title: "REAL4 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["REAL4"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # REAL4
+
 Allocates and optionally initializes a single-precision (4-byte) floating-point number for each *initializer*.
 
 ## Syntax
 
-```
+> name REAL4 initializer [[, initializer]]...
 
-name REAL4 initializer [[, initializer]]...
-```
+## See also
 
-## See Also
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

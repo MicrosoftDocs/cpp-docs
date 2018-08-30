@@ -1,7 +1,7 @@
 ---
 title: "IFNDEF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["IFNDEF"]
@@ -24,6 +24,6 @@ Grants assembly if *name* has not been defined.
 
 See [IF](../../assembler/masm/if-masm.md) for complete syntax.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

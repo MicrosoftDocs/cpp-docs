@@ -1,7 +1,7 @@
 ---
 title: "DF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["DF"]
@@ -18,14 +18,12 @@ Allocates and optionally initializes 6 bytes of storage for each `initializer`. 
 
 ## Syntax
 
-```
-[[name]] DF initializer [[, initializer]]...
-```
+> [[name]] DF initializer [[, initializer]]...
 
 ## Remarks
 
 Also can be used as a type specifier anywhere a type is legal.
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

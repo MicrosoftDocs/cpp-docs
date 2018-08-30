@@ -1,7 +1,7 @@
 ---
 title: ".LISTIF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".LISTIF"]
@@ -24,6 +24,6 @@ Starts listing of statements in false conditional blocks.
 
 Same as [.LFCOND](../../assembler/masm/dot-lfcond.md).
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

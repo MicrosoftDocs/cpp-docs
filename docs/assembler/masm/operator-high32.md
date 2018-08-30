@@ -1,7 +1,7 @@
 ---
 title: "operator HIGH32 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["HIGH32", "operator HIGH32"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator HIGH32
+
 Returns the high 32 bits of *expression*. MASM expressions are 64-bit values.
 
 ## Syntax
 
-```
+> HIGH32 expression
 
-HIGH32 expression
-```
+## See also
 
-## See Also
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -24,7 +24,7 @@ The articles in this section of the documentation provide reference material for
 |[ARM Architecture Reference Manual](https://developer.arm.com/search#q=ARM%20Architecture%20Reference%20Manual) on the ARM Developer website.|Choose the relevant manual for your ARM architecture. Each contains reference sections about ARM, Thumb, NEON, and VFP, and additional information about the ARM assembly language.|
 |[ARM Compiler armasm User Guide](https://developer.arm.com/search#q=ARM%20Compiler%20armasm%20User%20Guide) on the ARM Developer website.|Choose a recent version to find up-to-date information about the ARM assembly language. **Note:**  The "armasm" assembler that is referred to on the ARM Developer website is not the Microsoft armasm assembler that is included in Visual Studio and is documented in this section.|
 
-## See Also
+## See also
 
 [ARM Intrinsics](../../intrinsics/arm-intrinsics.md)<br/>
 [Compiler Intrinsics](../../intrinsics/compiler-intrinsics.md)<br/>

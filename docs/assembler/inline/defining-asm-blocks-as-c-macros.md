@@ -1,7 +1,7 @@
 ---
 title: "Defining __asm Blocks as C Macros | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -17,15 +17,15 @@ ms.workload: ["cplusplus"]
 
 C macros offer a convenient way to insert assembly code into your source code, but they demand extra care because a macro expands into a single logical line. To create trouble-free macros, follow these rules:
 
--   Enclose the `__asm` block in braces.
+- Enclose the `__asm` block in braces.
 
--   Put the `__asm` keyword in front of each assembly instruction.
+- Put the `__asm` keyword in front of each assembly instruction.
 
--   Use old-style C comments ( `/* comment */`) instead of assembly-style comments ( `; comment`) or single-line C comments ( `// comment`).
+- Use old-style C comments ( `/* comment */`) instead of assembly-style comments ( `; comment`) or single-line C comments ( `// comment`).
 
 To illustrate, the following example defines a simple macro:
 
-```
+```cpp
 #define PORTIO __asm      \
 /* Port output */         \
 {                         \
@@ -37,7 +37,7 @@ To illustrate, the following example defines a simple macro:
 
 At first glance, the last three `__asm` keywords seem superfluous. They are needed, however, because the macro expands into a single line:
 
-```
+```cpp
 __asm /* Port output */ { __asm mov al, 2  __asm mov dx, 0xD007 __asm out dx, al }
 ```
 
@@ -53,6 +53,6 @@ Be careful not to invoke macros of this type indiscriminately. For instance, inv
 
 **END Microsoft Specific**
 
-## See Also
+## See also
 
 [Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>

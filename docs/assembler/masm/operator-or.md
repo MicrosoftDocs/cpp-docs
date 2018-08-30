@@ -1,7 +1,7 @@
 ---
 title: "operator OR | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator OR", "Or"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator OR
+
 Returns the result of a bitwise `OR` operation for *expression1* and *expression2*.
 
 ## Syntax
 
-```
+> expression1 OR expression2
 
-expression1 OR expression2
-```
+## See also
 
-## See Also
 [Operators Reference](../../assembler/masm/operators-reference.md)<br/>

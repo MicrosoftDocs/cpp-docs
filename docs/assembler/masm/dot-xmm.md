@@ -1,7 +1,7 @@
 ---
 title: ".XMM | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".XMM"]
@@ -20,6 +20,6 @@ Enables assembly of Internet Streaming SIMD Extension instructions.
 
 > .XMM
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

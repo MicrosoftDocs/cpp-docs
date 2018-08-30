@@ -1,7 +1,7 @@
 ---
 title: "__asm | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 f1_keywords: ["__asm", "__asm_cpp"]
@@ -13,28 +13,25 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # __asm
+
 **Microsoft Specific**
 
 The `__asm` keyword invokes the inline assembler and can appear wherever a C or C++ statement is legal. It cannot appear by itself. It must be followed by an assembly instruction, a group of instructions enclosed in braces, or, at the very least, an empty pair of braces. The term "`__asm` block" here refers to any instruction or group of instructions, whether or not in braces.
 
 > [!NOTE]
->  Visual C++ support for the Standard C++ `asm` keyword is limited to the fact that the compiler will not generate an error on the keyword. However, an `asm` block will not generate any meaningful code. Use `__asm` instead of `asm`.
-
-Syntax:
-
-__asm *assembly-instruction* [ ; ]
-
-__asm { *assembly-instruction-list* } [ ; ]
+> Visual C++ support for the Standard C++ `asm` keyword is limited to the fact that the compiler will not generate an error on the keyword. However, an `asm` block will not generate any meaningful code. Use `__asm` instead of `asm`.
 
 ## Grammar
-`__asm`  `assembly-instruction`  `;`opt
 
-`__asm {`  `assembly-instruction-list`  `};`opt
+*asm-block*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__asm** *assembly-instruction* **;**<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__asm {** *assembly-instruction-list* **}** **;**<sub>opt</sub>
 
-*assembly-instruction-list*:
-`assembly-instruction` `;`opt
+*assembly-instruction-list*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;**<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;** *assembly-instruction-list* **;**<sub>opt</sub>
 
-`assembly-instruction` `;` `assembly-instruction-list` `;`opt
+## Remarks
 
 If used without braces, the `__asm` keyword means that the rest of the line is an assembly-language statement. If used with braces, it means that each line between the braces is an assembly-language statement. For compatibility with previous versions, `_asm` is a synonym for `__asm`.
 
@@ -42,7 +39,7 @@ Since the `__asm` keyword is a statement separator, you can put assembly instruc
 
 Before Visual C++ 2005, the instruction
 
-```
+```cpp
 __asm int 3
 ```
 
@@ -51,9 +48,10 @@ did not cause native code to be generated when compiled with **/clr**; the compi
 `__asm int 3` now results in native code generation for the function. If you want a function to cause a break point in your code and if you want that function compiled to MSIL, use [__debugbreak](../../intrinsics/debugbreak.md).
 
 ## Example
+
 The following code fragment is a simple `__asm` block enclosed in braces:
 
-```
+```cpp
 __asm {
    mov al, 2
    mov dx, 0xD007
@@ -63,7 +61,7 @@ __asm {
 
 Alternatively, you can put `__asm` in front of each assembly instruction:
 
-```
+```cpp
 __asm mov al, 2
 __asm mov dx, 0xD007
 __asm out dx, al
@@ -71,7 +69,7 @@ __asm out dx, al
 
 Because the `__asm` keyword is a statement separator, you can also put assembly instructions on the same line:
 
-```
+```cpp
 __asm mov al, 2   __asm mov dx, 0xD007   __asm out dx, al
 ```
 
@@ -81,6 +79,7 @@ Unlike braces in C and C++, the braces enclosing an `__asm` block don't affect v
 
 **END Microsoft Specific**
 
-## See Also
+## See also
+
 [Keywords](../../cpp/keywords-cpp.md)<br/>
 [Inline Assembler](../../assembler/inline/inline-assembler.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: ".586P | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".586P"]
@@ -20,6 +20,6 @@ Enables assembly of all instructions (including privileged) for the Pentium proc
 
 > .586P
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>

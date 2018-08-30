@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2031 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2031"]
@@ -20,11 +20,11 @@ An attempt was made to use a register that was not a base or index register in a
 
 For example, the following expressions cause this error:
 
-```
+```asm
 [ax]
 [bl]
 ```
 
-## See Also
+## See also
 
 [ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "SWORD | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["SWORD"]
@@ -20,7 +20,7 @@ Allocates and optionally initializes a signed word (2 bytes) of storage for each
 
 > name SWORD initializer [[, initializer]]...
 
-## See Also
+## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>
 [WORD](../../assembler/masm/word.md)<br/>
