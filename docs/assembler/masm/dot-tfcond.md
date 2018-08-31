@@ -1,7 +1,7 @@
 ---
 title: ".TFCOND | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".TFCOND"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .TFCOND
-Toggles listing of false conditional blocks.  
-  
-## Syntax  
-  
-```  
-  
-.TFCOND  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Toggles listing of false conditional blocks.
+
+## Syntax
+
+> .TFCOND
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

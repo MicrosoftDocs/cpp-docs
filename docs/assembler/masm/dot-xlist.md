@@ -1,7 +1,7 @@
 ---
 title: ".XLIST | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".XLIST"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .XLIST
-See [.NOLIST](../../assembler/masm/dot-nolist.md).  
-  
-## Syntax  
-  
-```  
-  
-.XLIST  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [.NOLIST](../../assembler/masm/dot-nolist.md).
+
+## Syntax
+
+> .XLIST
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

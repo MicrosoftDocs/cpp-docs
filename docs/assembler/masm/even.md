@@ -1,7 +1,7 @@
 ---
 title: "EVEN | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["EVEN"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # EVEN
-Aligns the next variable or instruction on an even byte.  
-  
-## Syntax  
-  
-```  
-  
-EVEN  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Aligns the next variable or instruction on an even byte.
+
+## Syntax
+
+> EVEN
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

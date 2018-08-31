@@ -1,7 +1,7 @@
 ---
 title: "@Line | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@Line"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Line
-The source line number in the current file (numeric equate).  
-  
-## Syntax  
-  
-```  
-  
-@Line  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The source line number in the current file (numeric equate).
+
+## Syntax
+
+> @Line
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

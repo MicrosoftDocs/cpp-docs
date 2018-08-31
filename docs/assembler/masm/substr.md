@@ -1,7 +1,7 @@
 ---
 title: "SUBSTR | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["substr"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # SUBSTR
-Returns a substring of *textitem*, starting at *position*. The *textitem* can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.  
-  
-## Syntax  
-  
-```  
-  
-name SUBSTR textitem, position [[, length]]  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Returns a substring of *textitem*, starting at *position*. The *textitem* can be a literal string, a constant preceded by a `%`, or the string returned by a macro function.
+
+## Syntax
+
+> name SUBSTR textitem, position [[, length]]
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

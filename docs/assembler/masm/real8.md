@@ -1,7 +1,7 @@
 ---
 title: "REAL8 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["REAL8"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # REAL8
-Allocates and optionally initializes a double-precision (8-byte) floating-point number for each *initializer*.  
-  
-## Syntax  
-  
-```  
-  
-name REAL8 initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Allocates and optionally initializes a double-precision (8-byte) floating-point number for each *initializer*.
+
+## Syntax
+
+> name REAL8 initializer [[, initializer]]...
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: ".NOLISTMACRO | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".NOLISTMACRO"]
@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .NOLISTMACRO
-Suppresses listing of macro expansions.  
-  
-## Syntax  
-  
-```  
-  
-.NOLISTMACRO  
-  
-```  
-  
-## Remarks  
- Same as [.SALL](../../assembler/masm/dot-sall.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Suppresses listing of macro expansions.
+
+## Syntax
+
+> .NOLISTMACRO
+
+## Remarks
+
+Same as [.SALL](../../assembler/masm/dot-sall.md).
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
