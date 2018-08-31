@@ -61,7 +61,7 @@ This topic describes all the types of files that are associated with Visual C++ 
 |.pch|Debug|Precompiled header file.|  
 |.rc, .rc2|Resource|[Resource script files](../windows/working-with-resource-files.md) to generate resources.|  
 |.sbr|Compiling|Source browser intermediate file. The input file for [BSCMAKE](../build/reference/bscmake-options.md).|  
-|.sln|Solution|The [solution](https://msdn.microsoft.com/a45c299d-69f5-4b67-879d-1383417df0a7) file.|  
+|.sln|Solution|The [solution](/visualstudio/ide/solutions-and-projects-in-visual-studio) file.|  
 |.suo|Solution|The solution options file.|  
 |.txt|Resource|A text file, usually the "readme" file.|  
 |.vap|Project|A Visual Studio Analyzer project file.|  

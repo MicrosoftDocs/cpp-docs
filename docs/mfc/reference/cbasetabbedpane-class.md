@@ -61,7 +61,7 @@ class CBaseTabbedPane : public CDockablePane
 |[CBaseTabbedPane::RecalcLayout](#recalclayout)|Recalculates layout information for the pane. (Overrides [CPane::RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout).)|  
 |[CBaseTabbedPane::RemovePane](#removepane)|Removes a pane from the tabbed pane.|  
 |`CBaseTabbedPane::SaveSiblingBarIDs`|Used internally during serialization.|  
-|`CBaseTabbedPane::Serialize`|(Overrides [CDockablePane::Serialize](https://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
+|`CBaseTabbedPane::Serialize`|(Overrides [CDockablePane::Serialize](cdockablepane-class.md).)|  
 |`CBaseTabbedPane::SerializeTabWindow`|Used internally during serialization.|  
 |[CBaseTabbedPane::SetAutoDestroy](#setautodestroy)|Determines whether the tabbed control bar will be destroyed automatically.|  
 |[CBaseTabbedPane::SetAutoHideMode](#setautohidemode)|Toggles the docking pane between displayed and auto-hide mode. (Overrides [CDockablePane::SetAutoHideMode](../../mfc/reference/cdockablepane-class.md#setautohidemode).)|  

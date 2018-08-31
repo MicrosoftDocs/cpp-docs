@@ -39,4 +39,4 @@ namespace Windows::Foundation;
 
 ## See Also
 
-[Windows Namespace](https://msdn.microsoft.com/45b08650-69cd-4f7f-a959-b7361476865c)
+[Windows UWP Namespaces](/uwp/api/)

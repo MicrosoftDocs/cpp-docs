@@ -5981,6 +5981,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/ide/redistributing-database-support-files.md",
+            "redirect_url": "../data/data-access-in-cpp",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/intrinsics/index.md",
             "redirect_url": "/cpp/intrinsics/compiler-intrinsics-and-assembly-language",
             "redirect_document_id": false

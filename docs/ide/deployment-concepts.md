@@ -47,4 +47,4 @@ For deployment examples and suggestions about troubleshooting, see:
 
 - [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)
 - [Understanding the Dependencies of a Visual C++ Application](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md)
-- [Windows Installer Deployment](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)
+

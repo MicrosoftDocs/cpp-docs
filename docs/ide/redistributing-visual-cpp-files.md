@@ -38,7 +38,6 @@ To resolve this kind of error, make sure that your application installer builds 
 |-----------|-----------------|
 |[Redistributing By Using Merge Modules](../ide/redistributing-components-by-using-merge-modules.md)|Describes how to use Visual C++ redistributable merge modules to install the Visual C++ runtime libraries as shared DLLs in the %windir%\system32\ folder.|
 |[Redistributing Visual C++ ActiveX Controls](../ide/redistributing-visual-cpp-activex-controls.md)|Describes how to redistribute an application that uses ActiveX Controls.|
-|[Redistributing Database Support Files](../ide/redistributing-database-support-files.md)|Discusses how to redistribute support files for Data Access Objects (DAO) and the database technologies in the Microsoft Data Access SDK.|
 |[Redistributing the MFC Library](../ide/redistributing-the-mfc-library.md)|Describes how to redistribute an application that uses MFC.|
 |[Redistributing an ATL application](../ide/redistributing-an-atl-application.md)|Describes how to redistribute an application that uses ATL. Starting in Visual Studio 2012, no redistributable library for ATL is required.|
 |[Deployment Examples](../ide/deployment-examples.md)|Links to examples that demonstrate how to deploy Visual C++ applications.|

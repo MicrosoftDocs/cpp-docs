@@ -175,7 +175,7 @@ The device paths of three special accelerators are available as properties of th
   
 ## Interoperability  
  
-The C++ AMP runtime supports interoperability between the `accelerator_view` class and the Direct3D [ID3D11Device interface](http://go.microsoft.com/fwlink/p/?linkId=248488). The [create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) method takes an `IUnknown` interface and returns an `accelerator_view` object. The [get_device](https://msdn.microsoft.com/8194125e-8396-4d62-aa8a-65831dea8439) method takes an `accelerator_view` object and returns an `IUknown` interface.  
+The C++ AMP runtime supports interoperability between the `accelerator_view` class and the Direct3D [ID3D11Device interface](http://go.microsoft.com/fwlink/p/?linkId=248488). The [create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) method takes an `IUnknown` interface and returns an `accelerator_view` object. The [get_device](reference/concurrency-direct3d-namespace-functions-amp.md#get_device) method takes an `accelerator_view` object and returns an `IUknown` interface.  
   
 ## See Also  
  

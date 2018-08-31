@@ -174,7 +174,7 @@ PROPERTY_INFO_ENTRY(dwPropID)
  [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) value that can be used in conjunction with the property set GUID to identify a property.  
   
 #### Remarks  
- This macro sets the property value of type `DWORD` to a default value defined in ATLDB.H. To set the property to a value of your choosing, use [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). To set the [VARTYPE](https://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) and [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) for the property at the same time, use [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
+ This macro sets the property value of type `DWORD` to a default value defined in ATLDB.H. To set the property to a value of your choosing, use [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). To set the `VARTYPE` and [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) for the property at the same time, use [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
   
 #### Example  
  See [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
@@ -193,7 +193,7 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
  [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) value that can be used in conjunction with the property set GUID to identify a property.  
   
  *vt*  
- [in] The [VARTYPE](https://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) of this property entry.  
+ [in] The `VARTYPE` of this property entry. (Defined in wtypes.h)  
   
  *dwFlags*  
  [in] A [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) value describing this property entry.  

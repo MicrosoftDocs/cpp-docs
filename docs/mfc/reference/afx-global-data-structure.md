@@ -637,7 +637,7 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
  The name of the window class to register.  
   
 ### Return Value  
- The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](https://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
+ The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](exception-processing.md#afxthrowresourceexception).  
   
 ### Remarks  
  The return value is a colon-delimited list of the *lpszClassNamePrefix* parameter string, and the hexadecimal text representations of the handles of the current application instance; the application cursor, which is the arrow cursor whose identifier is IDC_ARROW; and the background brush. For more information about registering MFC window classes, see [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  

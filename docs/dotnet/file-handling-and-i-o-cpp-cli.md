@@ -314,6 +314,6 @@ int main()
 ## See Also   
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 
- [File and Stream I-O](https://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)
+ [File and Stream I-O](/dotnet/standard/io/index)
 
  [System.IO namespace](https://msdn.microsoft.com/library/system.io.aspx)

@@ -41,7 +41,6 @@ Visual Studio provides two different technologies for deploying Windows applicat
  [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/windows/desktop/aa386968)   
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
  [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)   
- [Windows Installer Deployment](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
  [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
  [Creating Bootstrapper Packages](/visualstudio/deployment/creating-bootstrapper-packages)   
  [.NET Programming with C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)   

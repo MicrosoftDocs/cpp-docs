@@ -23,12 +23,6 @@ namespace concurrency;
   
 ## Members  
   
-### Namespaces  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[concurrency::extensibility Namespace](https://msdn.microsoft.com/16a86ff2-128e-4edf-89e4-38aac79c81f9)||  
-  
 ### Typedefs  
   
 |Name|Description|  
@@ -110,7 +104,7 @@ namespace concurrency;
 |[structured_task_group Class](structured-task-group-class.md)|The `structured_task_group` class represents a highly structured collection of parallel work. You can queue individual parallel tasks to a `structured_task_group` using `task_handle` objects, and wait for them to complete, or cancel the task group before they have finished executing, which will abort any tasks that have not begun execution.|  
 |[target_block Class](target-block-class.md)|The `target_block` class is an abstract base class that provides basic link management functionality and error checking for target only blocks.|  
 |[task Class (Concurrency Runtime)](task-class.md)|The Parallel Patterns Library (PPL) `task` class. A `task` object represents work that can be executed asynchronously, and concurrently with other tasks and parallel work produced by parallel algorithms in the Concurrency Runtime. It produces a result of type `_ResultType` on successful completion. Tasks of type `task<void>` produce no result. A task can be waited upon and canceled independently of other tasks. It can also be composed with other tasks using continuations(`then`), and join(`when_all`) and choice(`when_any`) patterns.|  
-|[task_canceled Class](task-canceled-class.md)|This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](https://msdn.microsoft.com/5389e8a5-5038-40b6-844a-55e9b58ad35f), for a canceled task.|  
+|[task_canceled Class](task-canceled-class.md)|This class describes an exception thrown by the PPL tasks layer in order to force the current task to cancel. It is also thrown by the `get()` method on [task](task-class.md), for a canceled task.|  
 |[task_completion_event Class](task-completion-event-class.md)|The `task_completion_event` class allows you to delay the execution of a task until a condition is satisfied, or start a task in response to an external event.|  
 |[task_continuation_context Class](task-continuation-context-class.md)|The `task_continuation_context` class allows you to specify where you would like a continuation to be executed. It is only useful to use this class from a UWP app. For non-Windows Runtime apps, the task continuation's execution context is determined by the runtime, and not configurable.|  
 |[task_group Class](task-group-class.md)|The `task_group` class represents a collection of parallel work which can be waited on or canceled.|  
@@ -169,7 +163,7 @@ namespace concurrency;
 |[asend Function](concurrency-namespace-functions.md#asend)|Overloaded. An asynchronous send operation, which schedules a task to propagate the data to the target block.|  
 |[cancel_current_task Function](concurrency-namespace-functions.md#cancel_current_task)|Cancels the currently executing task. This function can be called from within the body of a task to abort the task's execution and cause it to enter the `canceled` state.<br /><br /> It is not a supported scenario to call this function if you are not within the body of a `task`. Doing so will result in undefined behavior such as a crash or a hang in your application.|  
 |[create_async Function](concurrency-namespace-functions.md#create_async)|Creates a Windows Runtime asynchronous construct based on a user supplied lambda or function object. The return type of `create_async` is one of either `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, or `IAsyncOperationWithProgress<TResult, TProgress>^` based on the signature of the lambda passed to the method.|  
-|[create_task Function](concurrency-namespace-functions.md#create_task)|Overloaded. Creates a PPL [task](https://msdn.microsoft.com/5389e8a5-5038-40b6-844a-55e9b58ad35f) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.|  
+|[create_task Function](concurrency-namespace-functions.md#create_task)|Overloaded. Creates a PPL [task](task-class.md) object. `create_task` can be used anywhere you would have used a task constructor. It is provided mainly for convenience, because it allows use of the `auto` keyword while creating tasks.|  
 |[CreateResourceManager Function](concurrency-namespace-functions.md#createresourcemanager)|Returns an interface that represents the singleton instance of the Concurrency Runtime's Resource Manager. The Resource Manager is responsible for assigning resources to schedulers that want to cooperate with each other.|  
 |[DisableTracing Function](concurrency-namespace-functions.md#disabletracing)|Disables tracing in the Concurrency Runtime. This function is deprecated because ETW tracing is unregistered by default.|  
 |[EnableTracing Function](concurrency-namespace-functions.md#enabletracing)|Enables tracing in the Concurrency Runtime. This function is deprecated because ETW tracing is now on by default.|  
