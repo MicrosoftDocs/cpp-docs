@@ -142,8 +142,8 @@ BOOL DestroyWindow();
   
 ```
 INT_PTR DoModal(
-  HWND hWndParent = ::GetActiveWindow(), 
-  LPARAM dwInitParam = NULL);
+    HWND hWndParent = ::GetActiveWindow(), 
+    LPARAM dwInitParam = NULL);
 ```  
   
 ### Parameters  

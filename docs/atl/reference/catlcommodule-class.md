@@ -115,8 +115,8 @@ HRESULT RegisterTypeLib();
   
 ```
 HRESULT UnregisterServer(
-  BOOL bRegTypeLib = FALSE,  
-  const CLSID* pCLSID = NULL);
+    BOOL bRegTypeLib = FALSE,  
+    const CLSID* pCLSID = NULL);
 ```  
   
 ### Parameters  

@@ -139,7 +139,7 @@ inline BOOL Create();
   
 ```
 inline HANDLE CreateFile(
-  LPCTSTR lpFileName,
+    LPCTSTR lpFileName,
     DWORD dwDesiredAccess,
     DWORD dwShareMode,
     LPSECURITY_ATTRIBUTES lpSecurityAttributes,
@@ -195,8 +195,8 @@ inline BOOL DeleteFile(LPCTSTR lpFileName);
   
 ```
 inline HANDLE FindFirstFile(
-  LPCTSTR lpFileName,
-  WIN32_FIND_DATA* pNextInfo);
+    LPCTSTR lpFileName,
+    WIN32_FIND_DATA* pNextInfo);
 ```  
   
 ### Parameters  

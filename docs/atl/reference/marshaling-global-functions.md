@@ -38,7 +38,8 @@ HRESULT AtlFreeMarshalStream(IStream* pStream);
  [in] A pointer to the `IStream` interface on the stream used for marshaling.  
   
 ### Example  
-  See the example for [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
+
+See the example for [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
   
 ##  <a name="atlmarshalptrinproc"></a>  AtlMarshalPtrInProc  
  Creates a new stream object, writes the CLSID of the proxy to the stream, and marshals the specified interface pointer by writing the data needed to initialize the proxy into the stream.  
@@ -97,7 +98,8 @@ HRESULT AtlUnmarshalPtr(
  A standard HRESULT value.  
   
 ### Example  
-  See the example for [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
+
+See the example for [AtlMarshalPtrInProc](#atlmarshalptrinproc).  
   
 ## See Also  
  [Functions](../../atl/reference/atl-functions.md)

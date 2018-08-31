@@ -85,7 +85,9 @@ virtual HRESULT STDMETHODCALLTYPE FileUnregister(
   
  
 ##  <a name="stringregister"></a>  IRegistrar::StringRegister  
-  Registers the specified string data.
+
+Registers the specified string data.
+
 ```
 virtual HRESULT STDMETHODCALLTYPE StringRegister( 
     /* [in] */ _In_z_ LPCOLESTR data) = 0;

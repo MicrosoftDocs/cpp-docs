@@ -88,8 +88,10 @@ typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
 ## Requirements
 **Header:** atlbase.h 
   
-##  <a name="atl_url_port"></a>  ATL_URL_PORT 
-  The type used by [CUrl](curl-class.md) for specifying a port number.
+##  <a name="atl_url_port"></a>  ATL_URL_PORT
+
+The type used by [CUrl](curl-class.md) for specifying a port number.
+
 ```  
 typedef WORD ATL_URL_PORT;
 ```  

@@ -28,8 +28,8 @@ These functions provide support for converting to and from pixel and HIMETRIC un
  
 ```
 extern void AtlHiMetricToPixel(
-  const SIZEL* lpSizeInHiMetric, 
-  LPSIZEL lpSizeInPix);
+    const SIZEL* lpSizeInHiMetric, 
+    LPSIZEL lpSizeInPix);
 ```  
   
 ### Parameters  
