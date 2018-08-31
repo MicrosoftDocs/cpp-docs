@@ -27,7 +27,7 @@ ms.workload: ["cplusplus"]
   
 -   [Dump the object's data for diagnostic purposes](/previous-versions/visualstudio/visual-studio-2010/sc15kz85\(v=vs.100\))  
   
--   Validate the object's internal state (see [MFC ASSERT_VALID and CObject::AssertValid](https://msdn.microsoft.com/7654fb75-9e9a-499a-8165-0a96faf2d5e6))  
+-   Validate the object's internal state (see [MFC ASSERT_VALID and CObject::AssertValid](reference/diagnostic-services.md#assert_valid))  
   
 -   [Have the class serialize itself to persistent storage](../mfc/serialization-in-mfc.md)  
   

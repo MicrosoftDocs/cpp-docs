@@ -36,9 +36,3 @@ Provides links to all attribute reference topics.
 
 [Attributed Programming](../windows/attributed-programming-concepts.md)  
 Provides a conceptual overview of attributes.
-
-[Reference](https://msdn.microsoft.com/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
-Provides links to topics describing the C and C++ language references, the libraries provided with Visual C++, the Visual C++ Extensibility Object Model, and the Microsoft Macro Assembler (MASM).
-
-[Visual C++ Samples](../visual-cpp-samples.md)  
-Provides links to sample code showing the capabilities of Visual C++ and the libraries and technologies it supports.

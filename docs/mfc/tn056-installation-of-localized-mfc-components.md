@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # TN056: Installation of Localized MFC Components
 This tech note, which discussed the installation of localized MFC components, is now obsolete.  
   
- **See**  [Deploying Applications](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4) for additional **information on redistributing Visual C++ applications. Also see** [TechNote 57](../mfc/tn057-localization-of-mfc-components.md) for more information on localizing MFC applications.  
+ **See** [TechNote 57](../mfc/tn057-localization-of-mfc-components.md) for more information on localizing MFC applications.  
   
 ## See Also  
  [Technical Notes by Number](../mfc/technical-notes-by-number.md)   

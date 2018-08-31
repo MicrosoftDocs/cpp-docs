@@ -1944,7 +1944,7 @@ void EnableActiveAccessibility();
 
 ### Remarks
 
-MFC's default Active Accessibility support is sufficient for standard windows and controls, including ActiveX controls; however, if your `CWnd`-derived class contains nonwindowed user interface elements, MFC has no way of knowing about them. In that case, you must override the appropriate [Active Accessibility member functions](https://msdn.microsoft.com/68af04ac-4eb9-4b7d-b33f-c45512097a74) in your class, and you must call `EnableActiveAccessibility` in the class's constructor.
+MFC's default Active Accessibility support is sufficient for standard windows and controls, including ActiveX controls; however, if your `CWnd`-derived class contains nonwindowed user interface elements, MFC has no way of knowing about them. In that case, you must override the appropriate [Active Accessibility member functions](/windows/desktop/winauto/sdk-components) in your class, and you must call `EnableActiveAccessibility` in the class's constructor.
 
 ##  <a name="enabledynamiclayout"></a>  CWnd::EnableDynamicLayout
 

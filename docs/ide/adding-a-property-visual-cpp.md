@@ -16,7 +16,7 @@ You can use the [Add Property Wizard](../ide/names-add-property-wizard.md) to ad
   
 ### To add a property to your object  
   
-1.  In [Class View](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the name of the interface to which you want to add the property.  
+1.  In [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the name of the interface to which you want to add the property.  
   
     > [!NOTE]
     >  You can also add properties to dispinterfaces, which, unless the project is attributed, are nested within the library node.  

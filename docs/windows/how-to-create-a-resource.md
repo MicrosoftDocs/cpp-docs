@@ -35,7 +35,7 @@ ms.workload: ["cplusplus", "uwp"]
 
 ### To create a new resource in Class View
 
-1. In [Class View](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click your class and choose **Add**, then click **Add Resource** from the shortcut menu.
+1. In [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click your class and choose **Add**, then click **Add Resource** from the shortcut menu.
 
 2. In the [Add Resource dialog box](../windows/add-resource-dialog-box.md), choose the type of resource you'd like to add to your project.
 

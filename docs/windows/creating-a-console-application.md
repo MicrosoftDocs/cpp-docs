@@ -33,4 +33,3 @@ The easiest way to create a Win32 console application is to use the **Win32 Appl
 [Console Projects](/visualstudio/debugger/debugging-preparation-console-projects)  
 [Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)  
 [Property Pages](../ide/property-pages-visual-cpp.md)  
-[Deploying Applications](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

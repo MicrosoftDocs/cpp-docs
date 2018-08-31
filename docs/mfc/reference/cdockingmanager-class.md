@@ -759,7 +759,7 @@ CSmartDockingManager* GetSmartDockingManager();
 ```  
   
 ### Return Value  
- A pointer to the [smart docking manager](https://msdn.microsoft.com/f537a1a6-fb9e-41d7-952f-0f25d5ee7534).  
+ A pointer to the smart docking manager.  
   
 ##  <a name="getsmartdockingmanagerpermanent"></a>  CDockingManager::GetSmartDockingManagerPermanent  
  Retrieves a pointer to the smart docking manager.  

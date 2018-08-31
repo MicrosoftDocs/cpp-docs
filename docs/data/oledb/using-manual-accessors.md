@@ -40,7 +40,7 @@ There are four things to do when handling an unknown command:
   
 6.  Call `GetNextResult` to determine if more rowsets are available. Repeat steps 2 through 5.  
   
- For an example of a manual accessor, see `CDBListView::CallProcedure` in the [DBVIEWER](https://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832) sample.  
+ For an example of a manual accessor, see `CDBListView::CallProcedure` in the [DBVIEWER](https://github.com/Microsoft/VCSamples) sample.  
   
 ## See Also  
  [Using Accessors](../../data/oledb/using-accessors.md)

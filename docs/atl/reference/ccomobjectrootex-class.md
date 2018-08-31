@@ -254,7 +254,7 @@ IUnknown*
  If the object is aggregated, the pointer to the outer unknown is stored in `m_pOuterUnknown`. If the object is not aggregated, the reference count accessed by `AddRef` and `Release` is stored in [m_dwRef](#m_dwref).  
   
 ##  <a name="objectmain"></a>  CComObjectRootEx::ObjectMain  
- For each class listed in the [object map](https://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f), this function is called once when the module is initialized, and again when it is terminated.  
+ For each class listed in the object map, this function is called once when the module is initialized, and again when it is terminated.  
   
 ```
 static void WINAPI ObjectMain(bool bStarting);

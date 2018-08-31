@@ -4,7 +4,7 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
-f1_keywords: ["AFX_GLOBAL_DATA"]
+f1_keywords: ["AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::~AFX_GLOBAL_DATA", "AFXGLOBALS/AFX_GLOBAL_DATA::CleanUp", "AFXGLOBALS/AFX_GLOBAL_DATA::D2D1MakeRotateMatrix", "AFXGLOBALS/AFX_GLOBAL_DATA::DrawParentBackground", "AFXGLOBALS/AFX_GLOBAL_DATA::DrawTextOnGlass", "AFXGLOBALS/AFX_GLOBAL_DATA::ExcludeTag", "AFXGLOBALS/AFX_GLOBAL_DATA::GetColor", "AFXGLOBALS/AFX_GLOBAL_DATA::GetDirect2dFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::GetHandCursor", "AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList", "AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList3", "AFXGLOBALS/AFX_GLOBAL_DATA::GetNonClientMetrics", "AFXGLOBALS/AFX_GLOBAL_DATA::GetShellAutohideBars", "AFXGLOBALS/AFX_GLOBAL_DATA::GetTextHeight", "AFXGLOBALS/AFX_GLOBAL_DATA::GetWICFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::GetWriteFactory", "AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized", "AFXGLOBALS/AFX_GLOBAL_DATA::Is32BitIcons", "AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized", "AFXGLOBALS/AFX_GLOBAL_DATA::IsDwmCompositionEnabled", "AFXGLOBALS/AFX_GLOBAL_DATA::IsHighContrastMode", "AFXGLOBALS/AFX_GLOBAL_DATA::OnSettingChange", "AFXGLOBALS/AFX_GLOBAL_DATA::RegisterWindowClass", "AFXGLOBALS/AFX_GLOBAL_DATA::ReleaseTaskBarRefs", "AFXGLOBALS/AFX_GLOBAL_DATA::Resume", "AFXGLOBALS/AFX_GLOBAL_DATA::SetLayeredAttrib", "AFXGLOBALS/AFX_GLOBAL_DATA::SetMenuFont", "AFXGLOBALS/AFX_GLOBAL_DATA::ShellCreateItemFromParsingName", "AFXGLOBALS/AFX_GLOBAL_DATA::UpdateFonts", "AFXGLOBALS/AFX_GLOBAL_DATA::UpdateSysColors", "AFXGLOBALS/AFX_GLOBAL_DATA::EnableAccessibilitySupport", "AFXGLOBALS/AFX_GLOBAL_DATA::IsAccessibilitySupport", "AFXGLOBALS/AFX_GLOBAL_DATA::IsWindowsLayerSupportAvailable", "AFXGLOBALS/AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport", "AFXGLOBALS/AFX_GLOBAL_DATA::bIsWindows7", "AFXGLOBALS/AFX_GLOBAL_DATA::clrActiveCaptionGradient", "AFXGLOBALS/AFX_GLOBAL_DATA::clrInactiveCaptionGradient", "AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons", "AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseSystemFont", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurHand", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretch", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretchVert", "AFXGLOBALS/AFX_GLOBAL_DATA::m_hiconTool", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessDock", "AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["AFX_GLOBAL_DATA structure [MFC]", "AFX_GLOBAL_DATA constructor"]
 ms.assetid: c7abf2fb-ad5e-4336-a01d-260c29ed53a2
@@ -20,7 +20,7 @@ The `AFX_GLOBAL_DATA` structure contains fields and methods that are used to man
 ```  
 struct AFX_GLOBAL_DATA  
 ```  
-  
+
 ## Members  
   
 ### Public Constructors  
@@ -637,7 +637,7 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
  The name of the window class to register.  
   
 ### Return Value  
- The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](https://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
+ The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](exception-processing.md#afxthrowresourceexception).  
   
 ### Remarks  
  The return value is a colon-delimited list of the *lpszClassNamePrefix* parameter string, and the hexadecimal text representations of the handles of the current application instance; the application cursor, which is the arrow cursor whose identifier is IDC_ARROW; and the background brush. For more information about registering MFC window classes, see [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
