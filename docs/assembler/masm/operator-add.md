@@ -14,13 +14,11 @@ ms.workload: ["cplusplus"]
 ---
 # operator +
 
-The first operator returns *expression1* plus *expression2*. The second operator reverses the sign of *expression*.
+The first operator returns *expression1* plus *expression2*.
 
 ## Syntax
 
 > *expression1* + *expression2*
-
-> -*expression*
 
 ## See also
 
