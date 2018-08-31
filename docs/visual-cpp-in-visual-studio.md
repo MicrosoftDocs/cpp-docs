@@ -133,7 +133,7 @@ Asynchronous and parallel algorithms that execute on the CPU.
 [C++ AMP (C++ Accelerated Massive Parallelism)](parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 Massively parallel algorithms that execute on the GPU.
 
-[Windows Runtime Template Library (WRL)](https://msdn.microsoft.com/library/windows/apps/hh438466.aspx)<br/>
+[Windows Runtime Template Library (WRL)](windows/windows-runtime-cpp-template-library-wrl.md)<br/>
 Universal Windows Platform (UWP) apps and components.
 
 [.NET Programming with C++/CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
