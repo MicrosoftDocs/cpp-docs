@@ -10,7 +10,7 @@ ms.workload: ["cplusplus"]
 ---
 # What's New for Visual C++ in Visual Studio 2017
 
-Visual Studio 2017 brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through the [Report a Problem](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) and [Provide a Suggestion](https://visualstudio.uservoice.com/) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, please visit [What's new in Visual Studio 2017](https://go.microsoft.com/fwlink/p/?linkid=834481).
+Visual Studio 2017 brings many updates and fixes to the Visual C++ environment. We've fixed over 250 bugs and reported issues in the compiler and tools, many submitted by customers through the [Report a Problem](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) and [Provide a Suggestion](https://visualstudio.uservoice.com/) options under **Send Feedback**. Thank you for reporting bugs! For more information on what's new in all of Visual Studio, please visit [What's new in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio).
 
 <!--The compiler and tools version number in Visual Studio 2017 is 14.10.24629. -->
 

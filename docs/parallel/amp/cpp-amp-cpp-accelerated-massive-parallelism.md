@@ -37,4 +37,4 @@ C++ AMP (C++ Accelerated Massive Parallelism) accelerates the execution of your 
  
 [Parallel Programming in Native Code Blog](http://go.microsoft.com/fwlink/p/?linkid=238472)  
 [C++ AMP sample projects for download](http://go.microsoft.com/fwlink/p/?linkid=248508)  
-[Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)
+[Analyzing C++ AMP Code with the Concurrency Visualizer](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)
