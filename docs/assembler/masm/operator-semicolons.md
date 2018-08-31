@@ -1,7 +1,7 @@
 ---
 title: "operator ;; | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["%3B%3B", "operator %3B%3B"]
@@ -13,16 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator ;;
-Treats *text* as a comment in a macro that appears only in the macro definition. The listing does not show *text* where the macro is expanded.  
-  
-## Syntax  
-  
-```  
-  
-;;  
-text  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Treats *text* as a comment in a macro that appears only in the macro definition. The listing does not show *text* where the macro is expanded.
+
+## Syntax
+
+> ;; *text*
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

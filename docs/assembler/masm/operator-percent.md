@@ -1,7 +1,7 @@
 ---
 title: "operator % | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["%", "operator %"]
@@ -13,16 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator %
-Treats the value of *expression* in a macro argument as text.  
-  
-## Syntax  
-  
-```  
-  
-%  
-expression  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Treats the value of *expression* in a macro argument as text.
+
+## Syntax
+
+> % *expression*
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

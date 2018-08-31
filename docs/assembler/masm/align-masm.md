@@ -1,7 +1,7 @@
 ---
 title: "ALIGN (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["align"]
@@ -13,17 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ALIGN (MASM)
-Aligns the next variable or instruction on a byte that is a multiple of `number`.  
-  
-## Syntax  
-  
-```  
-  
-ALIGN [[  
-number  
-]]  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Aligns the next variable or instruction on a byte that is a multiple of *number*.
+
+## Syntax
+
+> ALIGN [[*number*]]
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

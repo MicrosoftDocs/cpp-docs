@@ -1,7 +1,7 @@
 ---
 title: "%OUT | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["%OUT"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # %OUT
-See [ECHO](../../assembler/masm/echo.md).  
-  
-## Syntax  
-  
-```  
-  
-%OUT  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [ECHO](../../assembler/masm/echo.md).
+
+## Syntax
+
+> %OUT
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

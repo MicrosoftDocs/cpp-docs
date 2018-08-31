@@ -1,7 +1,7 @@
 ---
 title: "operator DUP | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator DUP"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator DUP
-Specifies *count* number of declarations of *initialvalue*.  
-  
-## Syntax  
-  
-```  
-  
-count DUP (initialvalue [[, initialvalue]]...)  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Specifies *count* number of declarations of *initialvalue*.
+
+## Syntax
+
+> count DUP (initialvalue [[, initialvalue]]...)
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

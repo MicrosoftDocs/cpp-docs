@@ -1,7 +1,7 @@
 ---
 title: "operator + | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["+", "operator +"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator +
-The first operator returns *expression1* plus *expression2*. The second operator reverses the sign of *expression*.  
-  
-## Syntax  
-  
-```  
-  
-      expression1 + expression2  
--expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+The first operator returns *expression1* plus *expression2*.
+
+## Syntax
+
+> *expression1* + *expression2*
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

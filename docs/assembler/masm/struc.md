@@ -1,7 +1,7 @@
 ---
 title: "STRUC | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["STRUC"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # STRUC
-See [STRUCT](../../assembler/masm/struct-masm.md).  
-  
-## Syntax  
-  
-```  
-  
-STRUC  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+See [STRUCT](../../assembler/masm/struct-masm.md).
+
+## Syntax
+
+> STRUC
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

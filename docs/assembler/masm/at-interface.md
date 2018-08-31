@@ -1,7 +1,7 @@
 ---
 title: "@Interface | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@Interface"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Interface
-Information about the language parameters (numeric equate).  
-  
-## Syntax  
-  
-```  
-  
-@Interface  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+Information about the language parameters (numeric equate).
+
+## Syntax
+
+> @Interface
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

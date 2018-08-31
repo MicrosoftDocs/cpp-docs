@@ -1,7 +1,7 @@
 ---
 title: "GOTO (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/11/2018"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["goto"]
@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # GOTO (MASM)
 
 Transfers assembly to the line marked **:**_macrolabel_.
-  
+
 ## Syntax
 
 > **GOTO** *macrolabel*
@@ -26,4 +26,4 @@ Transfers assembly to the line marked **:**_macrolabel_.
 
 ## See also
 
-- [Directives Reference](../../assembler/masm/directives-reference.md)
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

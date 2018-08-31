@@ -1,7 +1,7 @@
 ---
 title: ".LIST | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".LIST"]
@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .LIST
-Starts listing of statements.  
-  
-## Syntax  
-  
-```  
-  
-.LIST  
-  
-```  
-  
-## Remarks  
- This is the default.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Starts listing of statements.
+
+## Syntax
+
+> .LIST
+
+## Remarks
+
+This is the default.
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "ALIAS (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["Alias"]
@@ -13,26 +13,21 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ALIAS (MASM)
-The **ALIAS** directive creates an alternate name for a function.  This lets you create multiple names for a function, or create libraries that allow the linker (LINK.exe) to map an old function to a new function.  
-  
-## Syntax  
-  
-```  
-  
-ALIAS  <  
-alias  
-> = <  
-actual-name  
->  
-  
-```  
-  
-#### Parameters  
- `actual-name`  
- The actual name of the function or procedure.  The angle brackets are required.  
-  
- `alias`  
- The alternate or alias name.  The angle brackets are required.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+The **ALIAS** directive creates an alternate name for a function.  This lets you create multiple names for a function, or create libraries that allow the linker (LINK.exe) to map an old function to a new function.
+
+## Syntax
+
+> ALIAS \<*alias*> = \<*actual-name*>
+
+#### Parameters
+
+*actual-name*<br/>
+The actual name of the function or procedure.  The angle brackets are required.
+
+*alias*<br/>
+The alternate or alias name.  The angle brackets are required.
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
