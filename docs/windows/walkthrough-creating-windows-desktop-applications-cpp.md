@@ -168,7 +168,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    }
    ```
 
-1. Now you can create a window. Use the [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) function.
+1. Now you can create a window. Use the [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) function.
 
    ```cpp
    static TCHAR szWindowClass[] = _T("DesktopApp");
@@ -234,7 +234,7 @@ Next, you'll learn how to create the code for a Windows desktop application in V
    return (int) msg.wParam;
    ```
 
-   For more information about the structures and functions in the message loop, see [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936), [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955), and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).
+   For more information about the structures and functions in the message loop, see [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
 
    At this point, the `WinMain` function should resemble the following code.
 

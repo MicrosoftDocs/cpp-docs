@@ -41,7 +41,7 @@ class CWinThread : public CCmdTarget
 |[CWinThread::IsIdleMessage](#isidlemessage)|Checks for special messages.|  
 |[CWinThread::OnIdle](#onidle)|Override to perform thread-specific idle-time processing.|  
 |[CWinThread::PostThreadMessage](#postthreadmessage)|Posts a message to another `CWinThread` object.|  
-|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).|  
+|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).|  
 |[CWinThread::ProcessMessageFilter](#processmessagefilter)|Intercepts certain messages before they reach the application.|  
 |[CWinThread::ProcessWndProcException](#processwndprocexception)|Intercepts all unhandled exceptions thrown by the thread's message and command handlers.|  
 |[CWinThread::PumpMessage](#pumpmessage)|Contains the thread's message loop.|  
@@ -356,7 +356,7 @@ BOOL PostThreadMessage(
 >  When calling the Windows [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946) function within an MFC application, the MFC message handlers are not called. For more information, see the Knowledge Base article, "PRB: MFC Message Handler Not Called with PostThreadMessage()" (Q142415).  
   
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage  
- Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).  
+ Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).  
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -465,7 +465,7 @@ virtual int Run();
  An **int** value that is returned by the thread. This value can be retrieved by calling [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).  
   
 ### Remarks  
- `Run` acquires and dispatches Windows messages until the application receives a [WM_QUIT](/windows/desktop/winmsg/wm-quit) message. If the thread's message queue currently contains no messages, `Run` calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) for standard keyboard translation. Finally, the [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows function is called.  
+ `Run` acquires and dispatches Windows messages until the application receives a [WM_QUIT](/windows/desktop/winmsg/wm-quit) message. If the thread's message queue currently contains no messages, `Run` calls `OnIdle` to perform idle-time processing. Incoming messages go to the [PreTranslateMessage](#pretranslatemessage) member function for special processing and then to the Windows function [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) for standard keyboard translation. Finally, the [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows function is called.  
   
  `Run` is rarely overridden, but you can override it to implement special behavior.  
   
