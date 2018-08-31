@@ -20,13 +20,13 @@ For information about individual intrinsics, see these resources, as appropriate
 
 - [Intel Intrinsics Guide](https://software.intel.com/sites/landingpage/IntrinsicsGuide/). Use the search box to find specific intrinsics.
 
-- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://go.microsoft.com/fwlink/p/?LinkID=510021)
+- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/articles/intel-sdm)
 
-- [Intel Architecture Instruction Set Extensions Programming Reference](https://go.microsoft.com/fwlink/p/?linkid=874960)
+- [Intel Architecture Instruction Set Extensions Programming Reference](https://software.intel.com/isa-extensions)
 
-- [Introduction to Intel Advanced Vector Extensions](https://go.microsoft.com/fwlink/p/?linkid=874961)
+- [Introduction to Intel Advanced Vector Extensions](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
 
-- [AMD Developer Guides, Manuals & ISA Documents](https://go.microsoft.com/fwlink/p/?linkid=874958)
+- [AMD Developer Guides, Manuals & ISA Documents](https://developer.amd.com/resources/developer-guides-manuals/)
 
 The following table lists the intrinsics available on x86 processors. The Technology column lists required instruction-set support. Use the [__cpuid](../intrinsics/cpuid-cpuidex.md) intrinsic to determine instruction-set support at run time. If two entries are in one row, they represent different entry points for the same intrinsic. A [1] indicates the intrinsic is available only on AMD processors. A [2] indicates the intrinsic is available only on Intel processors. A [3] indicates the prototype is a macro. The header required for the function prototype is listed in the Header column. The intrin.h header includes both immintrin.h and ammintrin.h for simplicity.
 
