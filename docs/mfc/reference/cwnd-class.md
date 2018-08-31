@@ -411,8 +411,8 @@ class CWnd : public CCmdTarget
 |[CWnd::OnSizeClipboard](#onsizeclipboard)|Called when the size of the client area of the Clipboard-viewer window has changed.|
 |[CWnd::OnSizing](#onsizing)|Indicates that the user is resizing the rectangle.|
 |[CWnd::OnSpoolerStatus](#onspoolerstatus)|Called from Print Manager whenever a job is added to or removed from the Print Manager queue.|
-|[CWnd::OnStyleChanged](#onstylechanged)|Indicates that the [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows function has changed one or more of the window's styles.|
-|[CWnd::OnStyleChanging](#onstylechanging)|Indicates that the [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows function is about to change one or more of the window's styles.|
+|[CWnd::OnStyleChanged](#onstylechanged)|Indicates that the [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) Windows function has changed one or more of the window's styles.|
+|[CWnd::OnStyleChanging](#onstylechanging)|Indicates that the [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) Windows function is about to change one or more of the window's styles.|
 |[CWnd::OnSysChar](#onsyschar)|Called when a keystroke translates to a system character.|
 |[CWnd::OnSysColorChange](#onsyscolorchange)|Called for all top-level windows when a change is made in the system color setting.|
 |[CWnd::OnSysCommand](#onsyscommand)|Called when the user selects a command from the Control menu, or when the user selects the Maximize or Minimize button.|
@@ -424,7 +424,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnTimer](#ontimer)|Called after each interval specified in [SetTimer](#settimer).|
 |[CWnd::OnTouchInput](#ontouchinput)|Process single input from Windows touch.|
 |[CWnd::OnTouchInputs](#ontouchinputs)|Process inputs from Windows touch.|
-|[CWnd::OnUniChar](#onunichar)|Called when a key is pressed. That is, the current window has the keyboard focus and a [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) message is translated by the [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) function.|
+|[CWnd::OnUniChar](#onunichar)|Called when a key is pressed. That is, the current window has the keyboard focus and a [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) message is translated by the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) function.|
 |[CWnd::OnUnInitMenuPopup](#onuninitmenupopup)|Called when a drop-down menu or submenu has been destroyed.|
 |[CWnd::OnUpdateUIState](#onupdateuistate)|Called to change the user interface (UI) state for the specified window and all its child windows.|
 |[CWnd::OnUserChanged](#onuserchanged)|Called after the user has logged on or off.|
@@ -1421,7 +1421,7 @@ The caret shape can be a line or a block.
 
 The parameters *nWidth* and *nHeight* specify the caret's width and height (in logical units); the exact width and height (in pixels) depend on the mapping mode.
 
-The system's window-border width or height can be retrieved by the [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) Windows function with the SM_CXBORDER and SM_CYBORDER indexes. Using the window-border width or height ensures that the caret will be visible on a high-resolution display.
+The system's window-border width or height can be retrieved by the [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Windows function with the SM_CXBORDER and SM_CYBORDER indexes. Using the window-border width or height ensures that the caret will be visible on a high-resolution display.
 
 The `CreateGrayCaret` member function automatically destroys the previous caret shape, if any, regardless of which window owns the caret. Once created, the caret is initially hidden. To show the caret, the [ShowCaret](#showcaret) member function must be called.
 
@@ -1455,7 +1455,7 @@ The caret shape can be a line or block.
 
 The parameters *nWidth* and *nHeight* specify the caret's width and height (in logical units); the exact width and height (in pixels) depend on the mapping mode.
 
-The system's window-border width or height can be retrieved by the [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) Windows function with the SM_CXBORDER and SM_CYBORDER indexes. Using the window-border width or height ensures that the caret will be visible on a high-resolution display.
+The system's window-border width or height can be retrieved by the [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Windows function with the SM_CXBORDER and SM_CYBORDER indexes. Using the window-border width or height ensures that the caret will be visible on a high-resolution display.
 
 The `CreateSolidCaret` member function automatically destroys the previous caret shape, if any, regardless of which window owns the caret. Once created, the caret is initially hidden. To show the caret, the [ShowCaret](#showcaret) member function must be called.
 
@@ -4188,7 +4188,7 @@ Default attributes are assigned to the display context each time it retrieves th
 
 `GetWindowDC` is intended to be used for special painting effects within the `CWnd` nonclient area. Painting in nonclient areas of any window is not recommended.
 
-The [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) Windows function can be used to retrieve the dimensions of various parts of the nonclient area, such as the caption bar, menu, and scroll bars.
+The [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Windows function can be used to retrieve the dimensions of various parts of the nonclient area, such as the caption bar, menu, and scroll bars.
 
 After painting is complete, the [ReleaseDC](#releasedc) member function must be called to release the display context. Failure to release the display context will seriously affect painting requested by applications due to limitations on the number of device contexts that can be open at the same time.
 
@@ -4618,7 +4618,7 @@ Specifies whether the member function has processed the given message. It is non
 
 When the `IsDialogMessage` function processes a message, it checks for keyboard messages and converts them to selection commands for the corresponding dialog box. For example, the TAB key selects the next control or group of controls, and the DOWN ARROW key selects the next control in a group.
 
-You must not pass a message processed by `IsDialogMessage` to the [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) or [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions, because it has already been processed.
+You must not pass a message processed by `IsDialogMessage` to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) or [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions, because it has already been processed.
 
 ##  <a name="isdlgbuttonchecked"></a>  CWnd::IsDlgButtonChecked
 
@@ -4915,9 +4915,9 @@ Nonzero if style was successfully modified; otherwise, 0.
 
 ### Remarks
 
-Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Window Styles](https://msdn.microsoft.com/library/windows/desktop/ms632600) and [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for information about the available window styles.
+Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Window Styles](https://msdn.microsoft.com/library/windows/desktop/ms632600) and [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for information about the available window styles.
 
-If *nFlags* is nonzero, `ModifyStyle` calls the Windows API function [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) and redraws the window by combining *nFlags* with the following four preset flags:
+If *nFlags* is nonzero, `ModifyStyle` calls the Windows API function [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) and redraws the window by combining *nFlags* with the following four preset flags:
 
 - SWP_NOSIZE Retains the current size.
 
@@ -4964,9 +4964,9 @@ Nonzero if style was successfully modified; otherwise, 0.
 
 ### Remarks
 
-Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) in this book and [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK for information about the available extended styles
+Styles to be added or removed can be combined by using the bitwise OR (&#124;) operator. See the topics [Extended Window Styles](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) in this book and [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK for information about the available extended styles
 
-If *nFlags* is nonzero, `ModifyStyleEx` calls the Windows API function [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) and redraws the window by combining *nFlags* with the following four preset flags:
+If *nFlags* is nonzero, `ModifyStyleEx` calls the Windows API function [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) and redraws the window by combining *nFlags* with the following four preset flags:
 
 - SWP_NOSIZE Retains the current size.
 
@@ -7290,7 +7290,7 @@ Nonzero if mouse wheel scrolling is enabled; otherwise 0.
 
 ### Remarks
 
-Unless overridden, `OnMouseWheel` calls the default of [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel). Windows automatically routes the message to the control or child window that has the focus. The Win32 function [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572) propagates the message up the parent chain to the window that processes it.
+Unless overridden, `OnMouseWheel` calls the default of [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel). Windows automatically routes the message to the control or child window that has the focus. The Win32 function [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca) propagates the message up the parent chain to the window that processes it.
 
 The *zDelta* parameter is a multiple of WHEEL_DELTA, which is set at 120. This value is the threshold for an action to be taken, and one such action (for example, scrolling forward one notch) should occur for each delta.
 
@@ -8641,7 +8641,7 @@ This call is for informational purposes only.
 
 ##  <a name="onstylechanged"></a>  CWnd::OnStyleChanged
 
-The framework calls this member function after the [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) function has changed one or more of the window's styles.
+The framework calls this member function after the [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) function has changed one or more of the window's styles.
 
 ```
 afx_msg void OnStyleChanged(
@@ -8668,7 +8668,7 @@ Points to a [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms6
 
 ##  <a name="onstylechanging"></a>  CWnd::OnStyleChanging
 
-The framework calls this member function when the [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) function is about to change one or more of the window's styles.
+The framework calls this member function when the [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) function is about to change one or more of the window's styles.
 
 ```
 afx_msg void OnStyleChanging(
@@ -9030,7 +9030,7 @@ Specifies the identifier of the timer.
 
 ### Remarks
 
-The [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows function sends a [WM_TIMER](/windows/desktop/winmsg/wm-timer) message when no other messages are in the application's message queue.
+The [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows function sends a [WM_TIMER](/windows/desktop/winmsg/wm-timer) message when no other messages are in the application's message queue.
 
 > [!NOTE]
 > This member function is called by the framework to allow your application to handle a Windows message. The parameters passed to your function reflect the parameters received by the framework when the message was received. If you call the base-class implementation of this function, that implementation will use the parameters originally passed with the message and not the parameters you supply to the function.
@@ -9137,7 +9137,7 @@ TRUE if application processes Windows touch inputs; otherwise FALSE.
 
 ##  <a name="onunichar"></a>  CWnd::OnUniChar
 
-The framework calls this member function when a key is pressed. That is, the current window has the keyboard focus and a [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) message is translated by the [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) function.
+The framework calls this member function when a key is pressed. That is, the current window has the keyboard focus and a [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) message is translated by the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) function.
 
 ```
 afx_msg void OnUniChar(
@@ -9384,7 +9384,7 @@ This method receives the [WM_DWMWINDOWMAXIMIZEDCHANGE](/windows/desktop/dwm/wm-d
 
 ##  <a name="onwindowposchanged"></a>  CWnd::OnWindowPosChanged
 
-The framework calls this member function when the size, position, or Z-order has changed as a result of a call to the [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) member function or another window-management function.
+The framework calls this member function when the size, position, or Z-order has changed as a result of a call to the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) member function or another window-management function.
 
 ```
 afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
@@ -9404,7 +9404,7 @@ The default implementation sends the [WM_SIZE](/windows/desktop/winmsg/wm-size) 
 
 ##  <a name="onwindowposchanging"></a>  CWnd::OnWindowPosChanging
 
-The framework calls this member function when the size, position, or Z-order is about to change as a result of a call to the [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) member function or another window-management function.
+The framework calls this member function when the size, position, or Z-order is about to change as a result of a call to the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) member function or another window-management function.
 
 ```
 afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
@@ -9779,7 +9779,7 @@ Overriding this member function allows for dynamic subclassing of controls. It i
 
 ##  <a name="pretranslatemessage"></a>  CWnd::PreTranslateMessage
 
-Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions.
+Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -10233,7 +10233,7 @@ This function is similar to the [ScrollWindow](/windows/desktop/api/winuser/nf-w
 
 If [SW_INVALIDATE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) and [SW_ERASE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) are not specified, the `ScrollWindowEx` member function does not invalidate the area that is scrolled away from. If either of these flags is set, `ScrollWindowEx` invalidates this area. The area is not updated until the application calls the [UpdateWindow](/windows/desktop/api/winuser/nf-winuser-updatewindow) member function, calls the [RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) member function (specifying [RDW_UPDATENOW](/windows/desktop/api/winuser/nf-winuser-redrawwindow) or [RDW_ERASENOW](/windows/desktop/api/winuser/nf-winuser-redrawwindow)), or retrieves the [WM_PAINT](/windows/desktop/gdi/wm-paint) message from the application queue.
 
-If the window has the [WS_CLIPCHILDREN](https://msdn.microsoft.com/library/windows/desktop/ms632679) style, the returned areas specified by *prgnUpdate* and *lpRectUpdate* represent the total area of the scrolled window that must be updated, including any areas in child windows that need updating.
+If the window has the [WS_CLIPCHILDREN](/windows/desktop/api/winuser/nf-winuser-createwindowa) style, the returned areas specified by *prgnUpdate* and *lpRectUpdate* represent the total area of the scrolled window that must be updated, including any areas in child windows that need updating.
 
 If the [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) flag is specified, Windows will not properly update the screen if part of a child window is scrolled. The part of the scrolled child window that lies outside the source rectangle will not be erased and will not be redrawn properly in its new destination. Use the [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) Windows function to move child windows that do not lie completely within the *lpRectScroll* rectangle. The cursor is repositioned if the SW_SCROLLCHILDREN flag is set and the caret rectangle intersects the scroll rectangle.
 
@@ -10674,7 +10674,7 @@ Pointer to a COLORREF value that specifies the transparency color key to be used
 Alpha value used to describe the opacity of the layered window. For more information, see the `SourceConstantAlpha` member of the [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) structure. When *bAlpha* is 0, the window is completely transparent. When *bAlpha* is 255, the window is opaque.
 
 *dwFlags*  
-Specifies an action to take. This parameter can be one or more of the following values. For a list of possible values, see [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540).
+Specifies an action to take. This parameter can be one or more of the following values. For a list of possible values, see [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes).
 
 ### Return Value
 
@@ -10682,7 +10682,7 @@ Nonzero if the function succeeds; otherwise 0.
 
 ### Remarks
 
-This member function emulates the functionality of the function [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540), as described in the Windows SDK.
+This member function emulates the functionality of the function [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes), as described in the Windows SDK.
 
 ##  <a name="setmenu"></a>  CWnd::SetMenu
 

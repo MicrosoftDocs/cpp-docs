@@ -120,7 +120,7 @@ class CBasePane : public CWnd
 |[CBasePane::OnSetAccData](#onsetaccdata)|`CBasePane` does not use this method.|  
 |`CBasePane::OnUpdateCmdUI`|Used internally.|  
 |[CBasePane::PaneFromPoint](#panefrompoint)|Returns the pane that contains the given point.|  
-|`CBasePane::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|`CBasePane::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CBasePane::RecalcLayout](#recalclayout)|`CBasePane` does not use this method.|  
 |[CBasePane::RemovePaneFromDockManager](#removepanefromdockmanager)|Unregisters a pane and removes it from the list in the docking manager.|  
 |[CBasePane::SaveState](#savestate)|Saves the pane's state to the registry.|  

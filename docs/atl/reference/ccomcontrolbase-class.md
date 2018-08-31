@@ -160,7 +160,7 @@ CComControlBase(HWND& h);
 ```  
   
 ### Remarks  
- If the control is windowed, `~CComControlBase` destroys it by calling [DestroyWindow](https://msdn.microsoft.com/library/windows/desktop/ms632682).  
+ If the control is windowed, `~CComControlBase` destroys it by calling [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow).  
   
 ##  <a name="controlqueryinterface"></a>  CComControlBase::ControlQueryInterface  
  Retrieves a pointer to the requested interface.  

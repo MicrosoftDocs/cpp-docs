@@ -151,7 +151,7 @@ virtual BOOL Create(
   
 ### Parameters  
  *dwStyle*  
- Specifies the tree view control's style. Apply window styles, described in [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.  
+ Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.  
   
  *rect*  
  Specifies the tree view control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
@@ -189,10 +189,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  *dwExStyle*  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.  
   
  *dwStyle*  
- Specifies the tree view control's style. Apply window styles, described in [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.  
+ Specifies the tree view control's style. Apply window styles, described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa), and any combination of [tree view control styles](/windows/desktop/Controls/tree-view-control-window-styles) as described in the Windows SDK.  
   
  *rect*  
  A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  

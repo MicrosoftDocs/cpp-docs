@@ -193,16 +193,16 @@ HWND Create(
  [in] Specifies the name of the window. The default value is NULL.  
   
  *dwStyle*  
- [in] The style of the window. The default value is WS_CHILD &#124; WS_VISIBLE. For a list of possible values, see [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
+ [in] The style of the window. The default value is WS_CHILD &#124; WS_VISIBLE. For a list of possible values, see [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.  
   
  *dwExStyle*  
- [in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ [in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.  
   
  *MenuOrID*  
  [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.  
   
  *lpCreateParam*  
- [in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680).  
+ [in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).  
   
 ### Return Value  
  If successful, the handle to the newly created window; otherwise, NULL.  

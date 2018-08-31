@@ -91,7 +91,7 @@ virtual BOOL Create(
   
 ### Parameters  
  *dwStyle*  
- The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
+ The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for a list of windows styles.  
   
  *rect*  
  A reference to the IP Address Control's size and position. It can be either a [CRect](../../atl-mfc-shared/reference/crect-class.md) object or a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure.  
@@ -128,10 +128,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  *dwExStyle*  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.  
   
  *dwStyle*  
- The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a list of windows styles.  
+ The IP Address control's style. Apply a combination of window styles. You must include the WS_CHILD style because the control must be a child window. See [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for a list of windows styles.  
   
  *rect*  
  A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  
