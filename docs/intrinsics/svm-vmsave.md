@@ -32,7 +32,7 @@ void __svm_vmsave(
 |[in] `VmcbPhysicalAddress`|The physical address of the VMCB.|  
   
 ## Remarks  
- The `__svm_vmsave` function is equivalent to the `VMSAVE` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "AMD64 Architecture Programmer's Manual Volume 2: System Programming," document number 24593, revision 3.11 or later, at the [AMD Corporation](https://www.amd.com) site.  
+ The `__svm_vmsave` function is equivalent to the `VMSAVE` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "AMD64 Architecture Programmer's Manual Volume 2: System Programming," document number 24593, revision 3.11 or later, at the [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.  
   
 ## Requirements  
   
