@@ -88,4 +88,4 @@ end
 ## See also
 
 [Directives Reference](../../assembler/masm/directives-reference.md)<br/>
-[Visual C++ Samples and Related Documentation for Visual Studio 2010](http://go.microsoft.com/fwlink/p/?linkid=178749)<br/>
+

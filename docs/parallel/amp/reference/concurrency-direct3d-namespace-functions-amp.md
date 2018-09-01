@@ -214,19 +214,20 @@ IUnknown *get_buffer(
 ### Return Value  
  The IUnknown interface pointer corresponding to the Direct3D buffer underlying the array.  
 
-##  <a name="get_device"></a>  get_device
+## <a name="get_device"> get_device
 Get the D3D device interface underlying a accelerator_view.
 
 ```
-IUnknown* get_device(const accelerator_view &Av);
+IUnknown* get_device(const accelerator_view Av);
 ```
 
 ### Parameters
 `Av`
-The D3D `accelerator_view` for which the underlying D3D device interface is returned.  
+The D3D accelerator_view for which the underlying D3D device interface is returned.
 
-### Return Value
-The `IUnknown` interface pointer of the D3D device underlying the `accelerator_view`.
+
+### Return value
+The `IUnknown` interface pointer of the D3D device underlying the accelerator_view.
 
 ##  <a name="imax"></a>  imax  
  Determine the maximum numeric value of the arguments  
