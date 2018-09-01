@@ -80,7 +80,7 @@ If you attempt to use a **Vector** type in a public return value or parameter, c
 |||
 |-|-|
 |Name|Description|
-|event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](http://go.microsoft.com/fwlink/p/?LinkId=262644)|Occurs when the Vector changes.|
+|event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Occurs when the Vector changes.|
 
 ## Inheritance Hierarchy
 

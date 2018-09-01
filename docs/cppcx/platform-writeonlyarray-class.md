@@ -172,7 +172,7 @@ T& set(
 
   
 ### Remarks  
- For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
+ For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes).  
   
   
 ## See Also  

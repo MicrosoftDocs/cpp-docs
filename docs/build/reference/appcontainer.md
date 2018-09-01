@@ -25,4 +25,4 @@ Marks an executable that must run in an app container—for example, a Microsoft
   
 ## See Also  
  [EDITBIN Options](../../build/reference/editbin-options.md)   
- [What's a Universal Windows App?](http://go.microsoft.com/fwlink/p/?LinkID=522074)
+ [What's a Universal Windows App?](/windows/uwp/get-started/universal-application-platform-guide)
