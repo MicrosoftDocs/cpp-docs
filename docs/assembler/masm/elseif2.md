@@ -1,7 +1,7 @@
 ---
 title: "ELSEIF2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["ELSEIF2"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ELSEIF2
-[ELSEIF](../../assembler/masm/elseif-masm.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE**.  
-  
-## Syntax  
-  
-```  
-  
-ELSEIF2  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+[ELSEIF](../../assembler/masm/elseif-masm.md) block evaluated on every assembly pass if **OPTION:SETIF2** is **TRUE**.
+
+## Syntax
+
+> ELSEIF2
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

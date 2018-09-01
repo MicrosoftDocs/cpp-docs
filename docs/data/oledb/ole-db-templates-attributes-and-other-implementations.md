@@ -31,7 +31,7 @@ ms.workload: ["cplusplus", "data-storage"]
   
 -   See the list of [OLE DB consumer classes](../../data/oledb/ole-db-consumer-templates-reference.md) or [OLE DB provider classes](../../data/oledb/ole-db-provider-templates-reference.md).  
   
--   See the list of [OLE DB templates samples](https://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c).  
+-   See the list of [OLE DB templates samples](https://github.com/Microsoft/VCSamples).  
   
 -   See [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) (in the Windows SDK).  
   

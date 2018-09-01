@@ -48,6 +48,3 @@ A compile-time error is generated if the template parameter *T* doesn't derive f
 
 **Header:** client.h
 
-## See Also
-
-[Reference (Windows Runtime Library)](https://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)

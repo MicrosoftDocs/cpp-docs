@@ -686,7 +686,7 @@ virtual BOOL ModifyStyle(
  The styles to be added from the current window styles.  
   
  *nFlags*  
- Window positioning flags. For a list of possible values, see the [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) function in the Windows SDK.  
+ Window positioning flags. For a list of possible values, see the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.  
   
 ### Return Value  
  Nonzero if the styles are changed, otherwise zero.  
@@ -694,7 +694,7 @@ virtual BOOL ModifyStyle(
 ### Remarks  
  The control's stock Enabled property will be modified to match the setting for WS_DISABLED. The control's stock Border Style property will be modified to match the requested setting for WS_BORDER. All other styles are applied directly to the control's window handle, if one is present.  
   
- Modifies the window styles of the control. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) function in the Windows SDK for information about the available window styles.  
+ Modifies the window styles of the control. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) function in the Windows SDK for information about the available window styles.  
   
  If *nFlags* is nonzero, `ModifyStyle` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:  
   
@@ -726,7 +726,7 @@ virtual BOOL ModifyStyleEx(
  The extended styles to be added from the current window styles.  
   
  *nFlags*  
- Window positioning flags. For a list of possible values, see the [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) function in the Windows SDK.  
+ Window positioning flags. For a list of possible values, see the [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) function in the Windows SDK.  
   
 ### Return Value  
  Nonzero if the styles are changed, otherwise zero.  
@@ -734,7 +734,7 @@ virtual BOOL ModifyStyleEx(
 ### Remarks  
  The control's stock Appearance property will be modified to match the setting for WS_EX_CLIENTEDGE. All other extended window styles are applied directly to the control's window handle, if one is present.  
   
- Modifies the window extended styles of the control site object. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) function in the Windows SDK for information about the available window styles.  
+ Modifies the window extended styles of the control site object. Styles to be added or removed can be combined by using the bitwise OR ( &#124; ) operator. See the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function in the Windows SDK for information about the available window styles.  
   
  If *nFlags* is nonzero, `ModifyStyleEx` calls the Win32 function `SetWindowPos`, and redraws the window by combining *nFlags* with the following four flags:  
   
@@ -940,7 +940,7 @@ virtual BOOL SetWindowPos(
  The new height of the window.  
   
  *nFlags*  
- Specifies the window sizing and positioning flags. For possible values, see the Remarks section for [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) in the Windows SDK.  
+ Specifies the window sizing and positioning flags. For possible values, see the Remarks section for [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) in the Windows SDK.  
   
 ### Return Value  
  Nonzero if successful, otherwise zero.  

@@ -1,7 +1,7 @@
 ---
 title: "IFDEF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["IFDEF"]
@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IFDEF
-Grants assembly if *name* is a previously defined label, variable, or symbol.  
-  
-## Syntax  
-  
-```  
-  
-IFDEF name  
-```  
-  
-## Remarks  
- See [IF](../../assembler/masm/if-masm.md) for complete syntax.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Grants assembly if *name* is a previously defined label, variable, or symbol.
+
+## Syntax
+
+> IFDEF name
+
+## Remarks
+
+See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

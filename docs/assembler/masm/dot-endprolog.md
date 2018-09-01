@@ -1,7 +1,7 @@
 ---
 title: ".ENDPROLOG | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".ENDPROLOG"]
@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ENDPROLOG
-Signals the end of the prologue declarations.  
-  
-## Syntax  
-  
-```  
-.ENDPROLOG  
-```  
-  
-## Remarks  
- It is an error to use any of the prologue declarations outside of the region between [PROC](../../assembler/masm/proc.md) FRAME and .ENDPROLOG.  
-  
- For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Signals the end of the prologue declarations.
+
+## Syntax
+
+> .ENDPROLOG
+
+## Remarks
+
+It is an error to use any of the prologue declarations outside of the region between [PROC](../../assembler/masm/proc.md) FRAME and .ENDPROLOG.
+
+For more information, see [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md).
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

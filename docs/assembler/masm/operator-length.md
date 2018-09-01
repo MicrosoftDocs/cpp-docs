@@ -1,7 +1,7 @@
 ---
 title: "operator LENGTH | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator LENGTH", "length"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator LENGTH
-Returns the number of data items in *variable* created by the first initializer.  
-  
-## Syntax  
-  
-```  
-  
-LENGTH variable  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Returns the number of data items in *variable* created by the first initializer.
+
+## Syntax
+
+> LENGTH variable
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

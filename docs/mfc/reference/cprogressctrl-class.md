@@ -96,7 +96,7 @@ virtual BOOL Create(
   
 ### Parameters  
  *dwStyle*  
- Specifies the progress bar control's style. Apply any combination of window stylesdescribed in [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK, in addition to the following progress bar control styles, to the control:  
+ Specifies the progress bar control's style. Apply any combination of window stylesdescribed in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK, in addition to the following progress bar control styles, to the control:  
   
 - PBS_VERTICAL Displays progress information vertically, top to bottom. Without this flag, the progress bar control displays horizontally, left to right.  
   
@@ -134,10 +134,10 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  *dwExStyle*  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.  
   
  *dwStyle*  
- Specifies the progress bar control's style. Apply any combination of window styles described in [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
+ Specifies the progress bar control's style. Apply any combination of window styles described in [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.  
   
  *rect*  
  A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure describing the size and position of the window to be created, in client coordinates of *pParentWnd*.  

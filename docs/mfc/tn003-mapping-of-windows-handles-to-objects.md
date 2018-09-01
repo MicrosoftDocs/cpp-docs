@@ -60,7 +60,7 @@ CWnd myWnd;
 myWnd.Attach(hWnd);
 ```  
   
- This makes an entry in the permanent map associating *myWnd* and *hWnd*. Calling `CWnd::FromHandle(hWnd)` will now return a pointer to *myWnd*. When *myWnd* is deleted, the destructor will automatically destroy *hWnd* by calling the Windows [DestroyWindow](https://msdn.microsoft.com/library/windows/desktop/ms632682) function. If this is not desired, *hWnd* must be detached from *myWnd* before *myWnd* is destroyed (normally when leaving the scope at which *myWnd* was defined). The `Detach` method does this.  
+ This makes an entry in the permanent map associating *myWnd* and *hWnd*. Calling `CWnd::FromHandle(hWnd)` will now return a pointer to *myWnd*. When *myWnd* is deleted, the destructor will automatically destroy *hWnd* by calling the Windows [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow) function. If this is not desired, *hWnd* must be detached from *myWnd* before *myWnd* is destroyed (normally when leaving the scope at which *myWnd* was defined). The `Detach` method does this.  
   
 ```  
 myWnd.Detach();

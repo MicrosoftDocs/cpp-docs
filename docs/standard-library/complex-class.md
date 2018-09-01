@@ -789,5 +789,4 @@ of type value_type: c1 = (3,4).
 
 ## See also
 
-[complex Members](https://msdn.microsoft.com/d5c4466c-43a0-4817-aca1-9a5d492dae28)<br/>
 [Thread Safety in the C++ Standard Library](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

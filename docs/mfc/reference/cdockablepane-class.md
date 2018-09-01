@@ -76,7 +76,7 @@ class CDockablePane : public CPane
 |[CDockablePane::IsTabLocationBottom](#istablocationbottom)|Specifies whether tabs are located at the top or bottom of the pane.|  
 |[CDockablePane::IsTracked](#istracked)|Specifies whether a pane is being dragged by the user.|  
 |[CDockablePane::IsVisible](#isvisible)|Determines whether the current pane is visible.|  
-|[CDockablePane::LoadState](https://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917)|Used internally.|  
+|[CDockablePane::LoadState](#loadstate)|Used internally.|  
 |[CDockablePane::OnAfterChangeParent](#onafterchangeparent)|Called by the framework when the parent of a pane has changed. (Overrides [CPane::OnAfterChangeParent](../../mfc/reference/cpane-class.md#onafterchangeparent).)|  
 |[CDockablePane::OnAfterDockFromMiniFrame](#onafterdockfromminiframe)|Called by the framework when a floating docking bar docks at a frame window.|  
 |[CDockablePane::OnBeforeChangeParent](#onbeforechangeparent)|Called by the framework when the parent of the pane is about to change. (Overrides [CPane::OnBeforeChangeParent](../../mfc/reference/cpane-class.md#onbeforechangeparent).)|  
@@ -1016,7 +1016,18 @@ virtual BOOL IsVisible() const;
  If the dockable pane is in autohide mode and `IsHideInAutoHideMode` returns TRUE the visibility state depends on the visibility state of the related autohide toolbar.  
   
  If the dockable pane is not in autohide mode, the visibility state is determined by the [CBasePane::IsVisible](../../mfc/reference/cbasepane-class.md#isvisible) method.  
-  
+
+## ##  <a name="loadstate"></a>  CDockablePane::LoadState  
+For internal use only. For more detail see the source code located in the VC\atlmfc\src\mfc folder of your Visual Studio installation.
+
+```
+virtual BOOL LoadState(
+   LPCTSTR lpszProfileName = NULL,
+   int nIndex = -1,
+   UINT uiID = (UINT) -1
+);  
+```
+
 ##  <a name="m_bdisableanimation"></a>  CDockablePane::m_bDisableAnimation  
  Specifies whether autohide animation of the dockable pane is disabled.  
   

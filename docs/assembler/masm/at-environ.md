@@ -1,7 +1,7 @@
 ---
 title: "@Environ | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@Environ"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Environ
-Value of environment variable *envvar* (macro function).  
-  
-## Syntax  
-  
-```  
-  
-@Environ( envvar )  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+Value of environment variable *envvar* (macro function).
+
+## Syntax
+
+> @Environ( envvar )
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

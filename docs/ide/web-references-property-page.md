@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Web References Property Page
-The **Web References** property page specifies how the XML Web service proxy class will be generated. An XML Web service proxy class will be generated if you add a web reference to your project. See [Add Web Reference](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) for more information.  
+The **Web References** property page specifies how the XML Web service proxy class will be generated. An XML Web service proxy class will be generated if you add a web reference to your project.  
   
  The **Web References** property page contains the following properties:  
   

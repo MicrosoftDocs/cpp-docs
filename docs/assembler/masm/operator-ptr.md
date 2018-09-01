@@ -1,7 +1,7 @@
 ---
 title: "operator PTR | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["PTR", "operator PTR"]
@@ -13,15 +13,15 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator PTR
-The first operator forces the *expression* to be treated as having the specified `type`. The second operator specifies a pointer to `type`.  
-  
-## Syntax  
-  
-```  
-  
-      type PTR expression  
-[[distance]] PTR type  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+The first operator forces the *expression* to be treated as having the specified *type*. The second operator specifies a pointer to *type*.
+
+## Syntax
+
+> *type* PTR *expression*
+
+> [[*distance*]] PTR *type*
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

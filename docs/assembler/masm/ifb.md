@@ -1,7 +1,7 @@
 ---
 title: "IFB | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["IFB"]
@@ -13,19 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # IFB
-Grants assembly if *textitem* is blank.  
-  
-## Syntax  
-  
-```  
-  
-IFB   
-textitem  
-  
-```  
-  
-## Remarks  
- See [IF](../../assembler/masm/if-masm.md) for complete syntax.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Grants assembly if *textitem* is blank.
+
+## Syntax
+
+> IFB *textitem*
+
+## Remarks
+
+See [IF](../../assembler/masm/if-masm.md) for complete syntax.
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

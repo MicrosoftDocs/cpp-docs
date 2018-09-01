@@ -15,7 +15,7 @@ ms.workload: ["cplusplus", "dotnet"]
 Functions that are implemented in unmanaged DLLs can be called from managed code using Platform Invoke (P/Invoke) functionality. If the source code for the DLL is not available, P/Invoke is the only option for interoperating. However, unlike other .NET languages, Visual C++ provides an alternative to P/Invoke. For more information, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
   
 ## Example  
- The following code example uses the Win32 [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) function to retrieve the current resolution of the screen in pixels.  
+ The following code example uses the Win32 [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) function to retrieve the current resolution of the screen in pixels.  
   
  For functions that use only intrinsic types as arguments and return values, no extra work is required. Other data types, such as function pointers, arrays, and structures, require additional attributes to ensure proper data marshaling.  
   

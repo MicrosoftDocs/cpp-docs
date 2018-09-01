@@ -47,7 +47,7 @@ In addition to dynamically linked libraries, Visual Studio supplies most of its 
 
 ## Troubleshooting deployment issues
 
-The load order of Visual C++ libraries is system-dependent. To diagnose loader issues, use depends.exe or where.exe. For more information, see [Dynamic-Link Library Search Order (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx).
+The load order of Visual C++ libraries is system-dependent. To diagnose loader issues, use depends.exe or where.exe. For more information, see [Dynamic-Link Library Search Order (Windows)](/windows/desktop/Dlls/dynamic-link-library-search-order).
 
 ## See also
 

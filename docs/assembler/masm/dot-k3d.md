@@ -1,7 +1,7 @@
 ---
 title: ".K3D | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".K3D"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .K3D
-Enables assembly of K3D instructions.  
-  
-## Syntax  
-  
-```  
-  
-.K3D  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Enables assembly of K3D instructions.
+
+## Syntax
+
+> .K3D
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

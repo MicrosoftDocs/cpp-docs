@@ -1,7 +1,7 @@
 ---
 title: ".LISTMACROALL | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".LISTMACROALL"]
@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .LISTMACROALL
-Starts listing of all statements in macros.  
-  
-## Syntax  
-  
-```  
-  
-.LISTMACROALL  
-  
-```  
-  
-## Remarks  
- Same as [.LALL](../../assembler/masm/dot-lall.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Starts listing of all statements in macros.
+
+## Syntax
+
+> .LISTMACROALL
+
+## Remarks
+
+Same as [.LALL](../../assembler/masm/dot-lall.md).
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

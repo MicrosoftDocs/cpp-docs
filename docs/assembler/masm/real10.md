@@ -1,7 +1,7 @@
 ---
 title: "REAL10 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["REAL10"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # REAL10
-Allocates and optionally initializes a 10-byte floating-point number for each *initializer*.  
-  
-## Syntax  
-  
-```  
-  
-name REAL10 initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Allocates and optionally initializes a 10-byte floating-point number for each *initializer*.
+
+## Syntax
+
+> name REAL10 initializer [[, initializer]]...
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
