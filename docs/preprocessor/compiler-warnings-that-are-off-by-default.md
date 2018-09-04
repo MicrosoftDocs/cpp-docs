@@ -11,7 +11,6 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Compiler warnings that are off by default
-
 The compiler includes warnings that are turned off by default, because most developers don't want to see them. In some cases, they represent a stylistic choice, or are common idioms in older code, or take advantage of a Microsoft extension to the language. In other cases, they indicate an area where programmers often make incorrect assumptions, which may lead to unexpected or undefined behavior. Some of these warnings may be very noisy in library headers. The C runtime libraries and the C++ standard libraries are intended to emit no warnings only at warning level [/W4](../build/reference/compiler-option-warning-level.md).
 
 ## Enable warnings that are off by default
@@ -28,7 +27,7 @@ You can enable warnings that are normally off by default by using one of the fol
 
 - [/Wall](../build/reference/compiler-option-warning-level.md)
 
-   **/Wall** enables all warnings that are off by default. If you use this option, you can turn off individual warnings by using the [/wd](../build/reference/compiler-option-warning-level.md) option.
+   `/Wall` enables all warnings that are off by default. If you use this option, you can turn off individual warnings by using the [/wd](../build/reference/compiler-option-warning-level.md) option.
 
 - [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
 

@@ -34,7 +34,7 @@ In writing your [tool tip notification handler](../mfc/handling-ttn-needtext-not
  `} TOOLTIPTEXT, FAR *LPTOOLTIPTEXT;`  
   
  *hdr*  
- Identifies the tool that needs text. The only member of this structure you might need is the control's command ID. The control's command ID will be in the *idFrom* member of the **NMHDR** structure, accessed with the syntax `hdr.idFrom`. See [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) for a discussion of members of the **NMHDR** structure.  
+ Identifies the tool that needs text. The only member of this structure you might need is the control's command ID. The control's command ID will be in the *idFrom* member of the **NMHDR** structure, accessed with the syntax `hdr.idFrom`. See [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) for a discussion of members of the **NMHDR** structure.  
   
  *lpszText*  
  Address of a string to receive the text for a tool.  

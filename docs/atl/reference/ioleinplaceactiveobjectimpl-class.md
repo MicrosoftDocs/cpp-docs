@@ -45,7 +45,7 @@ class IOleInPlaceActiveObjectImpl
   
   
 ## Remarks  
- The [IOleInPlaceActiveObject](http://msdn.microsoft.com/library/windows/desktop/ms691299) interface assists communication between an in-place control and its container; for example, communicating the active state of the control and container, and informing the control it needs to resize itself. Class `IOleInPlaceActiveObjectImpl` provides a default implementation of `IOleInPlaceActiveObject` and supports `IUnknown` by sending information to the dump device in debug builds.  
+ The [IOleInPlaceActiveObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceactiveobject) interface assists communication between an in-place control and its container; for example, communicating the active state of the control and container, and informing the control it needs to resize itself. Class `IOleInPlaceActiveObjectImpl` provides a default implementation of `IOleInPlaceActiveObject` and supports `IUnknown` by sending information to the dump device in debug builds.  
   
  **Related Articles** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)  
   
@@ -68,7 +68,7 @@ HRESULT ContextSensitiveHelp(BOOL fEnterMode);
  Returns E_NOTIMPL.  
   
 ### Remarks  
- See [IOleWindow::ContextSensitiveHelp](http://msdn.microsoft.com/library/windows/desktop/ms680059) in the Windows SDK.  
+ See [IOleWindow::ContextSensitiveHelp](/windows/desktop/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) in the Windows SDK.  
   
 ##  <a name="enablemodeless"></a>  IOleInPlaceActiveObjectImpl::EnableModeless  
  Enables modeless dialog boxes.  
@@ -81,7 +81,7 @@ HRESULT EnableModeless(BOOL fEnable);
  Returns S_OK.  
   
 ### Remarks  
- See [IOleInPlaceActiveObject::EnableModeless](http://msdn.microsoft.com/library/windows/desktop/ms680115) in the Windows SDK.  
+ See [IOleInPlaceActiveObject::EnableModeless](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless) in the Windows SDK.  
   
 ##  <a name="getwindow"></a>  IOleInPlaceActiveObjectImpl::GetWindow  
  The container calls this function to get the window handle of the control.  
@@ -93,7 +93,7 @@ HRESULT GetWindow(HWND* phwnd);
 ### Remarks  
  Some containers will not work with a control that has been windowless, even if it is currently windowed. In ATL's implementation, if the `CComControl::m_bWasOnceWindowless` data member is TRUE, the function returns E_FAIL. Otherwise, if \* *phwnd* is not NULL, `GetWindow` assigns *phwnd* to the control class's data member `m_hWnd` and returns S_OK.  
   
- See [IOleWindow::GetWindow](http://msdn.microsoft.com/library/windows/desktop/ms687282) in the Windows SDK.  
+ See [IOleWindow::GetWindow](/windows/desktop/api/oleidl/nf-oleidl-iolewindow-getwindow) in the Windows SDK.  
   
 ##  <a name="ondocwindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnDocWindowActivate  
  Notifies the control when the container's document window is activated or deactivated.  
@@ -106,7 +106,7 @@ HRESULT OnDocWindowActivate(BOOL fActivate);
  Returns S_OK.  
   
 ### Remarks  
- See [IOleInPlaceActiveObject::OnDocWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms687281) in the Windows SDK.  
+ See [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate) in the Windows SDK.  
   
 ##  <a name="onframewindowactivate"></a>  IOleInPlaceActiveObjectImpl::OnFrameWindowActivate  
  Notifies the control when the container's top-level frame window is activated or deactivated.  
@@ -119,7 +119,7 @@ HRESULT OnFrameWindowActivate(BOOL fActivate);
  Returns S_OK.  
   
 ### Remarks  
- See [IOleInPlaceActiveObject::OnFrameWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms683969) in the Windows SDK.  
+ See [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) in the Windows SDK.  
   
 ##  <a name="resizeborder"></a>  IOleInPlaceActiveObjectImpl::ResizeBorder  
  Informs the control it needs to resize its borders.  
@@ -135,7 +135,7 @@ HRESULT ResizeBorder(
  Returns S_OK.  
   
 ### Remarks  
- See [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053) in the Windows SDK.  
+ See [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder) in the Windows SDK.  
   
 ##  <a name="translateaccelerator"></a>  IOleInPlaceActiveObjectImpl::TranslateAccelerator  
  Processes menu accelerator-key messages from the container.  
@@ -152,9 +152,9 @@ HRESULT TranslateAccelerator(LPMSG lpmsg);
  S_FALSE if the message was not translated.  
   
 ### Remarks  
- See [IOleInPlaceActiveObject::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693360) in the Windows SDK.  
+ See [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) in the Windows SDK.  
   
 ## See Also  
  [CComControl Class](../../atl/reference/ccomcontrol-class.md)  
- [ActiveX Controls Interfaces](http://msdn.microsoft.com/library/windows/desktop/ms692724)  
+ [ActiveX Controls Interfaces](/windows/desktop/com/activex-controls-interfaces)  
  [Class Overview](../../atl/atl-class-overview.md)

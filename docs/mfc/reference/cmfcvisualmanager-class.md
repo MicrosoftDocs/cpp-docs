@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCVisualManager Class
 Provides support for changing the appearance of your application at a global level. The `CMFCVisualManager` class works together with a class that provides instructions to draw the GUI controls of your application using a consistent style. These other classes are referred to as visual managers and they inherit from `CMFCBaseVisualManager`.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
@@ -441,7 +441,7 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
  A pointer to an auto-hide button.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that specifies the text color of *pButton*.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that specifies the text color of *pButton*.  
   
 ### Remarks  
  Override this method in a derived class to customize the text color of an auto-hide button in your application. To do this, return the color that you want your application to use as the text color.  
@@ -471,7 +471,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
  A pointer to a caption bar.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the color of the text in *pBar*.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the color of the text in *pBar*.  
   
 ### Remarks  
  Override this method in your derived class to customize the text color for a caption bar. In your overridden method, return the desired color.  
@@ -649,7 +649,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
  A pointer to the property list that the framework is drawing.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the background color of *pPropList*.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the background color of *pPropList*.  
   
 ### Remarks  
  Override this function to customize the background color of a property list in your application.  
@@ -666,7 +666,7 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
  A pointer to the property list.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the text color of the property list.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the property list.  
   
 ### Remarks  
  Override this function to customize the text color of a property list in your application.  
@@ -865,7 +865,7 @@ virtual void GetTabFrameColors(
  A pointer to the tabbed window where the frame is drawing a tab.  
   
  [out] *clrDark*  
- A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter where this method stores the color for the dark border of a tab.  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter where this method stores the color for the dark border of a tab.  
   
  [out] *clrBlack*  
  A reference to a COLORREF parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
@@ -1429,7 +1429,7 @@ virtual BOOL OnDrawBrowseButton(
  An enumerated value that specifies the state of the button.  
   
  [out] *clrText*  
- A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter. This is a reserved value and is currently unused.  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter. This is a reserved value and is currently unused.  
   
 ### Return Value  
  TRUE if successful; otherwise FALSE.  
@@ -2229,7 +2229,7 @@ virtual COLORREF OnDrawPaneCaption(
  A rectangle that specifies the boundaries of the caption buttons.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the text color of the caption.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the caption.  
   
 ### Remarks  
  Override this method in a derived visual manager to customize the appearance of pane captions.  
@@ -2456,7 +2456,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
  A pointer to a caption bar. The visual manager draws this [CMFCRibbonContextCaption Class](../../mfc/reference/cmfcribboncontextcaption-class.md) object.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the color of the text on the caption bar.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the color of the text on the caption bar.  
   
 ### Remarks  
  Override this method in a derived class to customize the appearance of the caption bar for a ribbon category. For more information about the caption bar, see [CMFCRibbonContextCaption Class](../../mfc/reference/cmfcribboncontextcaption-class.md).  
@@ -3241,7 +3241,7 @@ virtual void OnDrawStatusBarProgress(
  The current progress for the progress bar.  
   
  [in] *clrBar*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the initial color for the progress bar. The value is either the start of a color gradient or the complete color of the progress bar.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the initial color for the progress bar. The value is either the start of a color gradient or the complete color of the progress bar.  
   
  [in] *clrProgressBarDest*  
  A COLORREF parameter that indicates the end of a color gradient for the progress bar. If *clrProgressBarDest* is -1, the framework does not draw the progress bar as a color gradient. Instead, it fills the whole progress bar with the color specified by *clrBar*.  
@@ -3901,7 +3901,7 @@ virtual void OnFillOutlookBarCaption(
  A rectangle that specifies the boundaries of the caption bar.  
   
  [out] *clrText*  
- A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter. The method writes the color of text on the caption bar to this parameter.  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter. The method writes the color of text on the caption bar to this parameter.  
   
 ### Remarks  
  The default implementation of this method fills the caption bar with the color for shadows based on the current skin. Override this method in a derived visual manager to customize the color of the Outlook caption bar.  
@@ -3932,7 +3932,7 @@ virtual void OnFillOutlookPageButton(
  A Boolean parameter that specifies whether the button is pressed.  
   
  [out] *clrText*  
- A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter. This method stores the text color of the outlook page button in this parameter.  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter. This method stores the text color of the outlook page button in this parameter.  
   
 ### Remarks  
  Override this function in a derived visual manager to customize the appearance of Outlook page buttons.  

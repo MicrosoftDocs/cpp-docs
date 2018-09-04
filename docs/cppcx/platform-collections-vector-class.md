@@ -8,8 +8,8 @@ f1_keywords: ["COLLECTION/Platform::Collections::Vector::Vector", "COLLECTION/Pl
 dev_langs: ["C++"]
 helpviewer_keywords: ["Vector Class (C++/Cx)"]
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::Vector Class
@@ -80,7 +80,7 @@ If you attempt to use a **Vector** type in a public return value or parameter, c
 |||
 |-|-|
 |Name|Description|
-|event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](http://go.microsoft.com/fwlink/p/?LinkId=262644)|Occurs when the Vector changes.|
+|event [Windows::Foundation::Collection::VectorChangedEventHandler\<T>^ VectorChanged](/uwp/api/windows.foundation.collections.vectorchangedeventhandler)|Occurs when the Vector changes.|
 
 ## Inheritance Hierarchy
 

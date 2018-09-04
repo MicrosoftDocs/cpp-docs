@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::GetOnProgress Method
-Copies the address of the current progress event handler to the specified variable.  
-  
-## Syntax  
-  
-```  
-STDMETHOD(  
-   GetOnProgress  
-)(TProgress** progressHandler);  
-```  
-  
-#### Parameters  
- `progressHandler`  
- The location where the address of the current progress event handler is stored.  
-  
-## Return Value  
- S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Copies the address of the current progress event handler to the specified variable.
+
+## Syntax
+
+```cpp
+STDMETHOD(
+   GetOnProgress
+)(TProgress** progressHandler);
+```
+
+### Parameters
+
+*progressHandler*  
+The location where the address of the current progress event handler is stored.
+
+## Return Value
+
+S_OK if successful; otherwise, E_ILLEGAL_METHOD_CALL.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

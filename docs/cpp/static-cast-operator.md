@@ -102,6 +102,6 @@ void f() {
   
  Due to the danger of performing unchecked casts on top of a relocating garbage collector, the use of **static_cast** should only be in performance-critical code when you are certain it will work correctly. If you must use **static_cast** in release mode, substitute it with [safe_cast](../windows/safe-cast-cpp-component-extensions.md) in your debug builds to ensure success.  
   
-## See Also  
+## See also  
  [Casting Operators](../cpp/casting-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)

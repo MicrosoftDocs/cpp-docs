@@ -1,7 +1,7 @@
 ---
 title: ".DATA | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".DATA"]
@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .DATA
-When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data segment for initialized data (segment name _DATA).  
-  
-## Syntax  
-  
-```  
-.DATA  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)   
- [.DATA?](../../assembler/masm/dot-data-q.md)   
- [.CONST](../../assembler/masm/dot-const.md)   
- [.FARDATA](../../assembler/masm/dot-fardata.md)   
- [.FARDATA?](../../assembler/masm/dot-fardata-q.md)
+
+When used with [.MODEL](../../assembler/masm/dot-model.md), starts a near data segment for initialized data (segment name _DATA).
+
+## Syntax
+
+> .DATA
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[.DATA?](../../assembler/masm/dot-data-q.md)<br/>
+[.CONST](../../assembler/masm/dot-const.md)<br/>
+[.FARDATA](../../assembler/masm/dot-fardata.md)<br/>
+[.FARDATA?](../../assembler/masm/dot-fardata-q.md)<br/>

@@ -21,7 +21,7 @@ The unwind data info structure is used to record the effects a function has on t
 |UBYTE|Count of unwind codes|  
 |UBYTE: 4|Frame Register|  
 |UBYTE: 4|Frame Register offset (scaled)|  
-|USHORT * n|Unwind codes array|  
+|USHORT \* n|Unwind codes array|  
 |variable|Can either be of form (1) or (2) below|  
   
  (1)  Exception Handler  
@@ -63,7 +63,7 @@ The unwind data info structure is used to record the effects a function has on t
  If nonzero, then the function uses a frame pointer, and this field is the number of the nonvolatile register used as the frame pointer, using the same encoding for the operation info field of UNWIND_CODE nodes.  
   
  **Frame register offset (scaled)**  
- If the frame register field is nonzero, then this is the scaled offset from RSP that is applied to the FP reg when it is established. The actual FP reg is set to RSP + 16 * this number, allowing offsets from 0 to 240. This permits pointing the FP reg into the middle of the local stack allocation for dynamic stack frames, allowing better code density through shorter instructions (more instructions can use the 8-bit signed offset form).  
+ If the frame register field is nonzero, then this is the scaled offset from RSP that is applied to the FP reg when it is established. The actual FP reg is set to RSP + 16 \* this number, allowing offsets from 0 to 240. This permits pointing the FP reg into the middle of the local stack allocation for dynamic stack frames, allowing better code density through shorter instructions (more instructions can use the 8-bit signed offset form).  
   
  **Unwind codes array**  
  This is an array of items that explains the effect of the prolog on the nonvolatile registers and RSP. See the section on UNWIND_CODE for the meanings of individual items. For alignment purposes, this array will always have an even number of entries, with the final entry potentially unused (in which case the array will be one longer than indicated by the count of unwind codes field).  

@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivationFactory::ActivationFactory Constructor
-Initializes the ActivationFactory class.  
-  
-## Syntax  
-  
-```  
-ActivationFactory();  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [ActivationFactory Class](../windows/activationfactory-class.md)
+
+Initializes the **ActivationFactory** class.
+
+## Syntax
+
+```cpp
+ActivationFactory();
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[ActivationFactory Class](../windows/activationfactory-class.md)

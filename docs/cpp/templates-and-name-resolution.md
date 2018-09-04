@@ -74,6 +74,5 @@ In template definitions, there are three types of names.
   
  Type-dependent and value-dependent expressions are expressions that involve variables that are type dependent or value dependent. These expressions can have semantics that differ, depending on the parameters used for the template.  
   
-## See Also
-
+## See also
  [Templates](../cpp/templates-cpp.md)

@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::WriteOnlyArray::begin", "VCCORLIB/Platform::Wr
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::WriteOnlyArray Class"]
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::WriteOnlyArray Class
@@ -172,7 +172,7 @@ T& set(
 
   
 ### Remarks  
- For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
+ For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes).  
   
   
 ## See Also  

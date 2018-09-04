@@ -64,7 +64,7 @@ These articles explain the fundamentals of OLE programming using MFC. MFC provid
  [Container/Server COM Components](../mfc/containers-advanced-features.md)  
  Describes the steps necessary to incorporate optional advanced features into existing container applications.  
   
- [The Component Object Model](http://msdn.microsoft.com/library/windows/desktop/ms694363)  
+ [The Component Object Model](/windows/desktop/com/the-component-object-model)  
  Describes using OLE without MFC.  
   
 ## See Also  

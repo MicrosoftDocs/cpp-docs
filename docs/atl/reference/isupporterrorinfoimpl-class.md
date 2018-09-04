@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # ISupportErrorInfoImpl Class
-This class provides a default implementation of the [ISupportErrorInfo Interface](http://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32) and can be used when only a single interface generates errors on an object.  
+This class provides a default implementation of the [ISupportErrorInfo Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) and can be used when only a single interface generates errors on an object.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -28,7 +28,7 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
   
 #### Parameters  
  *piid*  
- A pointer to the IID of an interface that supports [IErrorInfo](http://msdn.microsoft.com/4dda6909-2d9a-4727-ae0c-b5f90dcfa447).  
+ A pointer to the IID of an interface that supports [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo).  
   
 ## Members  
   
@@ -36,10 +36,10 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
   
 |Name|Description|  
 |----------|-----------------|  
-|[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](#interfacesupportserrorinfo)|Indicates whether the interface identified by `riid` supports the [IErrorInfo](http://msdn.microsoft.com/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface.|  
+|[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](#interfacesupportserrorinfo)|Indicates whether the interface identified by `riid` supports the [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) interface.|  
   
 ## Remarks  
- The [ISupportErrorInfo Interface](http://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32) ensures that error information can be returned to the client. Objects that use `IErrorInfo` must implement `ISupportErrorInfo`.  
+ The [ISupportErrorInfo Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) ensures that error information can be returned to the client. Objects that use `IErrorInfo` must implement `ISupportErrorInfo`.  
   
  Class `ISupportErrorInfoImpl` provides a default implementation of `ISupportErrorInfo` and can be used when only a single interface generates errors on an object. For example:  
   
@@ -54,14 +54,14 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
  **Header:** atlcom.h  
   
 ##  <a name="interfacesupportserrorinfo"></a>  ISupportErrorInfoImpl::InterfaceSupportsErrorInfo  
- Indicates whether the interface identified by `riid` supports the [IErrorInfo](http://msdn.microsoft.com/4dda6909-2d9a-4727-ae0c-b5f90dcfa447) interface.  
+ Indicates whether the interface identified by `riid` supports the [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) interface.  
   
 ```
 STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
 ```  
   
 ### Remarks  
- See [ISupportErrorInfo::InterfaceSupportsErrorInfo](http://msdn.microsoft.com/a54ef18d-ee3f-4483-ac4a-99d758f0960a) in the Windows SDK.  
+ See [ISupportErrorInfo::InterfaceSupportsErrorInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) in the Windows SDK.  
   
 ##  <a name="getsize"></a>  IThreadPoolConfig::GetSize  
  Call this method to get the number of threads in the pool.  
@@ -110,7 +110,7 @@ STDMETHOD(SetSize)int nNumThreads);
   
  If *nNumThreads* is negative, its absolute value will be multiplied by the number of processors in the machine to get the total number of threads.  
   
- If *nNumThreads* is zero, [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) will be multiplied by the number of processors in the machine to get the total number of threads.  
+ If *nNumThreads* is zero, ATLS_DEFAULT_THREADSPERPROC will be multiplied by the number of processors in the machine to get the total number of threads.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  

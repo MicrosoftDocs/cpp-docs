@@ -134,7 +134,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C3611](compiler-error-c3611.md)|'*identifier*': a sealed function cannot have a pure-specifier|
 |[Compiler Error C3612](compiler-error-c3612.md)|'*identifier*': a sealed class cannot have any pure virtual methods|
 |Compiler Error C3613|missing return type after '->' ('int' assumed)|
-|Compiler Error C3614|Differing values for pack size within the same class; previous was was '*value*', new value is '*value*'|
+|Compiler Error C3614|Differing values for pack size within the same class; previous was '*value*', new value is '*value*'|
 |[Compiler Error C3615](compiler-error-c3615.md)|constexpr function '*function*' cannot result in a constant expression|
 |Compiler Error C3616|Obsolete.|
 |Compiler Error C3617|Obsolete.|

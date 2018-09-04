@@ -6,8 +6,8 @@ ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::UnorderedMap"]
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::UnorderedMap Class
@@ -104,7 +104,7 @@ virtual void Clear();
 
 ## <a name="first"></a>  UnorderedMap::First Method
 
-Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.
 
 ### Syntax
 
@@ -124,7 +124,7 @@ A convenient way to hold the iterator returned by First() is to assign the retur
 
 ## <a name="getview"></a>  UnorderedMap::GetView Method
 
-Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) interface.
+Returns a read-only view of the current UnorderedMap; that is, an [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md) that implements the [Windows::Foundation::Collections::IMapView::IMapView]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface.
 
 ### Syntax
 
@@ -215,7 +215,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### Property Value/Return Value
 
-A [MapChangedEventHandler\<K,V>](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](http://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
+A [MapChangedEventHandler\<K,V>](/uwp/api/windows.foundation.collections.mapchangedeventhandler) that contains information about the object that raised the event, and the kind of change that occurred. See also [IMapChangedEventArgs\<K>](https://msdn.microsoft.com/library/windows/apps/br226034.aspx) and [CollectionChange Enumeration](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx).
 
 ## .NET Framework Equivalent
 
@@ -239,7 +239,7 @@ The key portion of the key-value pair. The type of *key* is typename *K*.
 
 ## <a name="size"></a>  UnorderedMap::Size Method
 
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMap.
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMap.
 
 ### Syntax
 
@@ -345,7 +345,7 @@ The typename of the current UnorderedMap.
 A function object that can compare two keys to determine whether they are equal. This parameter defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).
 
 *H*  
-A function object that produces a hash value for a keys. This parameter defaults to [hash Class 1](../standard-library/hash-class.md) for the key types that that class supports.
+A function object that produces a hash value for a keys. This parameter defaults to [hash Class 1](../standard-library/hash-class.md) for the key types that the class supports.
 
 *m*  
 A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the current UnorderedMap.

@@ -12,37 +12,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Event Class (Windows Runtime C++ Template Library)
-Represents an event.  
-  
-## Syntax  
-  
-```  
-class Event : public HandleT<HandleTraits::EventTraits>;  
-```  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[Event::Event Constructor (Windows Runtime C++ Template Library)](../windows/event-event-constructor-windows-runtime-cpp-template-library.md)|Initializes a new instance of the Event class.|  
-  
-### Public Operators  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[Event::operator= Operator](../windows/event-operator-assign-operator.md)|Assigns the specified Event reference to the current Event instance.|  
-  
-## Inheritance Hierarchy  
- `HandleT`  
-  
- `Event`  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [Microsoft::WRL::Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+
+Represents an event.
+
+## Syntax
+
+```cpp
+class Event : public HandleT<HandleTraits::EventTraits>;
+```
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[Event::Event Constructor (Windows Runtime C++ Template Library)](../windows/event-event-constructor-windows-runtime-cpp-template-library.md)|Initializes a new instance of the **Event** class.|
+
+### Public Operators
+
+|Name|Description|
+|----------|-----------------|
+|[Event::operator= Operator](../windows/event-operator-assign-operator.md)|Assigns the specified **Event** reference to the current **Event** instance.|
+
+## Inheritance Hierarchy
+
+`HandleT`
+
+`Event`
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[Microsoft::WRL::Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)

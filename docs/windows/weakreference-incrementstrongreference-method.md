@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # WeakReference::IncrementStrongReference Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-ULONG IncrementStrongReference();  
-```  
-  
-## Return Value  
- The incremented strong reference count.  
-  
-## Remarks  
- Increments the strong reference count of the current WeakReference object.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+ULONG IncrementStrongReference();
+```
+
+## Return Value
+
+The incremented strong reference count.
+
+## Remarks
+
+Increments the strong reference count of the current **WeakReference** object.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
 [WeakReference Class](../windows/weakreference-class1.md)  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

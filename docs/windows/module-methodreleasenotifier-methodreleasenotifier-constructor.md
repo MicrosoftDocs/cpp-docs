@@ -13,34 +13,37 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier::MethodReleaseNotifier Constructor
-Initializes a new instance of the Module::MethodReleaseNotifier class.  
-  
-## Syntax  
-  
-```  
-  
-MethodReleaseNotifier(  
-   _In_ T* object,   
-   _In_ void (T::* method)(),   
-   bool release) throw() :  
-            ReleaseNotifier(release), object_(object),   
-            method_(method);  
-```  
-  
-#### Parameters  
- `object`  
- An object whose member function is an event handler.  
-  
- `method`  
- The member function of parameter `object` that is the event handler.  
-  
- `release`  
- Specify `true` to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) method; otherwise, specify `false`.  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::MethodReleaseNotifier Class](../windows/module-methodreleasenotifier-class.md)
+
+Initializes a new instance of the **Module::MethodReleaseNotifier** class.
+
+## Syntax
+
+```cpp
+MethodReleaseNotifier(
+   _In_ T* object,
+   _In_ void (T::* method)(),
+   bool release) throw() :
+            ReleaseNotifier(release), object_(object),
+            method_(method);
+```
+
+### Parameters
+
+*object*  
+An object whose member function is an event handler.
+
+*method*  
+The member function of parameter *object* that is the event handler.
+
+*release*  
+Specify **true** to enable calling the underlying [Module::ReleaseNotifier::Release()](../windows/module-releasenotifier-release.md) method; otherwise, specify **false**.
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::MethodReleaseNotifier Class](../windows/module-methodreleasenotifier-class.md)

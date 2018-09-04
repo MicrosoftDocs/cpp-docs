@@ -21,7 +21,7 @@ Specifies compiler generation of instructions to mitigate certain Spectre varian
 
 ## Remarks
 
-The **/Qspectre** option causes the compiler to insert instructions to mitigate certain [Spectre security vulnerabilities](https://spectreattack.com/spectre.pdf). These vulnerabilities, called *speculative execution side-channel attacks*, affect many operating systems and modern processors, including processors from Intel, AMD, and ARM.
+The **/Qspectre** option is available in Visual Studio 2017 version 15.7 and later. It causes the compiler to insert instructions to mitigate certain [Spectre security vulnerabilities](https://spectreattack.com/spectre.pdf). These vulnerabilities, called *speculative execution side-channel attacks*, affect many operating systems and modern processors, including processors from Intel, AMD, and ARM.
 
 The **/Qspectre** option is off by default.
 
@@ -46,6 +46,16 @@ When the **/Qspectre** option is enabled, the compiler attempts to identify inst
 ### Performance impact
 
 The performance impact of **/Qspectre** has been seen to be negligible in several very large code bases, but there are no guarantees that performance of your code under **/Qspectre** remains unaffected. You should benchmark your code to determine the effect of the option on performance. If you know that the mitigation is not required in a performance-critical block or loop, the mitigation can be selectively disabled by use of a [__declspec(spectre(nomitigation))](../../cpp/spectre.md) directive. This directive is not available in compilers that only support the  **/d2guardspecload** option.
+
+### Required libraries
+
+The **/Qspectre** compiler option generates code that implicitly links versions of the runtime libraries that have been built to provide Spectre mitigations. These libraries are optional components that must be installed by using the Visual Studio Installer:
+
+- VC++ 2017 version *version_number* Libs for Spectre (x86 and x64)
+- Visual C++ ATL (x86/x64) with Spectre Mitigations
+- Visual C++ MFC for x86/x64 with Spectre Mitigations
+
+If you build your code by using **/Qspectre** and these libraries are not installed, the build system reports **warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found**. If your MFC or ATL code fails to build and the linker reports an error such as **fatal error LNK1104: cannot open file 'oldnames.lib'**, these missing libraries may be the cause.
 
 ### Additional information
 

@@ -32,7 +32,7 @@ As part of [enabling tool tips](../mfc/enabling-tool-tips.md), you handle the **
  Identifier of the control that sent the notification. Not used. The control id is taken from the **NMHDR** structure.  
   
  `pNMHDR`  
- A pointer to the [NMTTDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb760258) structure. This structure is also discussed further in [The TOOLTIPTEXT Structure](../mfc/tooltiptext-structure.md).  
+ A pointer to the [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) structure. This structure is also discussed further in [The TOOLTIPTEXT Structure](../mfc/tooltiptext-structure.md).  
   
  `pResult`  
  A pointer to result code you can set before you return. **TTN_NEEDTEXT** handlers can ignore the *pResult* parameter.  

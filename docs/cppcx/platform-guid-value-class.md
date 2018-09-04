@@ -8,12 +8,12 @@ f1_keywords: ["VCCORLIB/Platform::Guid"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Guid Struct"]
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Guid value class
-Represents a [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) type in the Windows Runtime type system.  
+Represents a [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) type in the Windows Runtime type system.  
   
 ## Syntax  
   
@@ -32,7 +32,7 @@ public value struct Guid
 |[operator()](#operator-call)|Converts a Guid to a GUID.|  
   
 ### Remarks  
- For an example of how to generate a new Platform::Guid using the Windows function [CoCreateGuid](http://msdn.microsoft.com/library/windows/desktop/ms688568\(v=vs.85\).aspx), see [WinRT component: How to generate a GUID?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)  
+ For an example of how to generate a new Platform::Guid using the Windows function [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid), see [WinRT component: How to generate a GUID?](http://blogs.msdn.com/b/eternalcoding/archive/2013/03/25/winrt-component-how-to-generate-a-guid.aspx)  
   
 ### Requirements  
  **Minimum supported client:** Windows 8  
@@ -141,7 +141,7 @@ Platform::Guid::operator!=
 
 
 ## <a name="operator-call"></a> Guid::operator() Operator
-Implicitly converts a [GUID structure](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)GUID to a Platform::Guid.  
+Implicitly converts a [GUID structure](https://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)GUID to a Platform::Guid.  
   
 ### Syntax  
   

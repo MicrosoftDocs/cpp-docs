@@ -6,8 +6,8 @@ ms.technology: "cpp-windows"
 ms.topic: "reference"
 f1_keywords: ["collection/Platform::Collections::UnorderedMapView"]
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::UnorderedMapView Class
@@ -34,7 +34,7 @@ ref class UnorderedMapView sealed;
  A type that provides a function object that can compare two key values for equality. By default, [std::equal_to\<K>](../standard-library/equal-to-struct.md)  
   
 ### Remarks  
- UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView\<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262409) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
+ UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView\<K,V>](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
   
 ### Members  
   
@@ -63,7 +63,7 @@ ref class UnorderedMapView sealed;
  **Namespace:** Platform::Collections  
 
 ## <a name="first"></a>  UnorderedMapView::First Method
-Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.  
+Returns an iterator that specifies the first [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) element in the unordered map.  
   
 ### Syntax  
   
@@ -118,7 +118,7 @@ V Lookup(K key);
 
 
 ## <a name="size"></a>  UnorderedMapView::Size Method
-Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMapView.  
+Returns the number of [Windows::Foundation::Collections::IKeyValuePair\<K,V>](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) elements in the UnorderedMapView.  
   
 ### Syntax  
   
@@ -213,7 +213,7 @@ UnorderedMapView(
  The typename of the UnorderedMapView.  
   
  `H`  
- A function object that can a hash value for a key. Defaults to [std::hash\<K>](http://msdn.microsoft.com/en-us/54f67435-af9d-4217-a29d-fa4d2491a104) for the types that `std::hash` supports.  
+ A function object that can a hash value for a key. Defaults to [std::hash\<K>](../standard-library/hash-class.md) for the types that `std::hash` supports.  
   
  `P`  
  A type that provides a function object that can compare two keys to determine their equality. Defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).  
@@ -229,4 +229,4 @@ UnorderedMapView(
    
 ## See Also  
  [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)   
- [Windows::Foundation::IMapView](http://go.microsoft.com/fwlink/p/?LinkId=262409)
+ [Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)

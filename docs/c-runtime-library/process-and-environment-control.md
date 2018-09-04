@@ -40,7 +40,7 @@ Use the process-control routines to start, stop, and manage processes from withi
 |[exit](../c-runtime-library/reference/exit-exit-exit.md)|Call functions registered by **atexit** and **_onexit**, flush all buffers, close all open files, and terminate process|
 |[_exit](../c-runtime-library/reference/exit-exit-exit.md)|Terminate process immediately without calling **atexit** or **_onexit** or flushing buffers|
 |[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md), [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)|Get value of environment variable|
-|[_getpid](../c-runtime-library/reference/getpid.md)|Get process ID number|[System::Diagnostics::Process::Id](https://msdn.microsoft.com/en-us/library/system.diagnostics.process.id.aspx)|
+|[_getpid](../c-runtime-library/reference/getpid.md)|Get process ID number|[System::Diagnostics::Process::Id](https://msdn.microsoft.com/library/system.diagnostics.process.id.aspx)|
 |[longjmp](../c-runtime-library/reference/longjmp.md)|Restore saved stack environment; use it to execute a nonlocal **goto**|
 |[_onexit](../c-runtime-library/reference/onexit-onexit-m.md)|Schedule routines for execution at program termination; use for compatibility with Microsoft C/C++ version 7.0 and earlier|
 |[_pclose](../c-runtime-library/reference/pclose.md)|Wait for new command processor and close stream on associated pipe|

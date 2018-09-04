@@ -34,8 +34,6 @@ The tasks listed in this topic are sorted based on the task you want to accompli
   
 -   [Optimize an ActiveX control](../mfc/mfc-activex-controls-optimization.md)  
   
--   [Create Signed CAB Files for MFC and ATL Controls](http://msdn.microsoft.com/14e50724-2505-4258-ae6b-326b706de409)  
-  
 ###  <a name="_core_wininet_tasks"></a> WinInet Tasks  
   
 -   [Learn about WinInet, the Win32 API functions for Internet access](../mfc/wininet-basics.md)  

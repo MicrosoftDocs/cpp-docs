@@ -49,5 +49,5 @@ After the tag (name) for the class, a colon appears followed by a list of base s
   
  The [__super](../cpp/super.md) and [__interface](../cpp/interface.md) keywords are documented in this section.  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

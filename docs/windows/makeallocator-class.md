@@ -13,62 +13,67 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # MakeAllocator Class
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-  
-template<  
-   typename T,  
-   bool hasWeakReferenceSupport =   
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+template<
+   typename T,
+   bool hasWeakReferenceSupport =
          !__is_base_of(RuntimeClassFlags<InhibitWeakReference>, T)>
- class MakeAllocator;  
-  
-template<typename T>  
-class MakeAllocator<T, false>;  
-  
-template<typename T>  
-class MakeAllocator<T, true>;  
-```  
-  
-#### Parameters  
- `T`  
- A type name.  
-  
- `hasWeakReferenceSupport`  
- `true` to allocate memory for an object that supports weak references; `false` to allocate memory for an object that doesn't support weak references.  
-  
-## Remarks  
- Allocates memory for an activatable class, with or without weak reference support.  
-  
- Override the MakeAllocator class to implement a user-defined memory allocation model.  
-  
- MakeAllocator is typically used to prevent memory leaks if an object throws during construction.  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[MakeAllocator::MakeAllocator Constructor](../windows/makeallocator-makeallocator-constructor.md)|Initializes a new instance of the MakeAllocator class.|  
-|[MakeAllocator::~MakeAllocator Destructor](../windows/makeallocator-tilde-makeallocator-destructor.md)|Deinitializes the current instance of the MakeAllocator class.|  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[MakeAllocator::Allocate Method](../windows/makeallocator-allocate-method.md)|Allocates memory and associates it with the current MakeAllocator object.|  
-|[MakeAllocator::Detach Method](../windows/makeallocator-detach-method.md)|Disassociates memory allocated by the [Allocate](../windows/makeallocator-allocate-method.md) method from the current MakeAllocator object.|  
-  
-## Inheritance Hierarchy  
- `MakeAllocator`  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+ class MakeAllocator;
+
+template<typename T>
+class MakeAllocator<T, false>;
+
+template<typename T>
+class MakeAllocator<T, true>;
+```
+
+### Parameters
+
+*T*  
+A type name.
+
+*hasWeakReferenceSupport*  
+**true** to allocate memory for an object that supports weak references; **false** to allocate memory for an object that doesn't support weak references.
+
+## Remarks
+
+Allocates memory for an activatable class, with or without weak reference support.
+
+Override the **MakeAllocator** class to implement a user-defined memory allocation model.
+
+**MakeAllocator** is typically used to prevent memory leaks if an object throws during construction.
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[MakeAllocator::MakeAllocator Constructor](../windows/makeallocator-makeallocator-constructor.md)|Initializes a new instance of the **MakeAllocator** class.|
+|[MakeAllocator::~MakeAllocator Destructor](../windows/makeallocator-tilde-makeallocator-destructor.md)|Deinitializes the current instance of the **MakeAllocator** class.|
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[MakeAllocator::Allocate Method](../windows/makeallocator-allocate-method.md)|Allocates memory and associates it with the current **MakeAllocator** object.|
+|[MakeAllocator::Detach Method](../windows/makeallocator-detach-method.md)|Disassociates memory allocated by the [Allocate](../windows/makeallocator-allocate-method.md) method from the current **MakeAllocator** object.|
+
+## Inheritance Hierarchy
+
+`MakeAllocator`
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

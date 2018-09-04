@@ -28,6 +28,5 @@ Use the `Format` member function from either the [CTime](../atl-mfc-shared/refer
   
 -   [Automation support of date and time programming](../atl-mfc-shared/date-and-time-automation-support.md)  
   
-## See Also  
- [Date and Time: General-Purpose Classes](../atl-mfc-shared/date-and-time-general-purpose-classes.md)
+
 

@@ -30,7 +30,7 @@ struct alignment_of;
 
 ## Remarks
 
-The type query holds the value of the the alignment of the type *Ty*.
+The type query holds the value of the alignment of the type *Ty*.
 
 ## Requirements
 

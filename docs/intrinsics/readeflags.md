@@ -32,7 +32,7 @@ unsigned __int64 __readeflags(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readeflags`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readeflags`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

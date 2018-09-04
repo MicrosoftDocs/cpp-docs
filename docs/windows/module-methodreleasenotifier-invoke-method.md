@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Module::MethodReleaseNotifier::Invoke Method
-Calls the event handler associated with the current Module::MethodReleaseNotifier object.  
-  
-## Syntax  
-  
-```  
-void Invoke();  
-```  
-  
-## Requirements  
- **Header:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [Module::MethodReleaseNotifier Class](../windows/module-methodreleasenotifier-class.md)
+
+Calls the event handler associated with the current **Module::MethodReleaseNotifier** object.
+
+## Syntax
+
+```cpp
+void Invoke();
+```
+
+## Requirements
+
+**Header:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[Module::MethodReleaseNotifier Class](../windows/module-methodreleasenotifier-class.md)

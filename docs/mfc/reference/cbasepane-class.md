@@ -120,7 +120,7 @@ class CBasePane : public CWnd
 |[CBasePane::OnSetAccData](#onsetaccdata)|`CBasePane` does not use this method.|  
 |`CBasePane::OnUpdateCmdUI`|Used internally.|  
 |[CBasePane::PaneFromPoint](#panefrompoint)|Returns the pane that contains the given point.|  
-|`CBasePane::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|`CBasePane::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CBasePane::RecalcLayout](#recalclayout)|`CBasePane` does not use this method.|  
 |[CBasePane::RemovePaneFromDockManager](#removepanefromdockmanager)|Unregisters a pane and removes it from the list in the docking manager.|  
 |[CBasePane::SaveState](#savestate)|Saves the pane's state to the registry.|  
@@ -1217,7 +1217,7 @@ virtual HDWP MoveWindow(
  A handle to a deferred window position structure, or NULL.  
   
 ### Remarks  
- If you pass NULL as the *hdwp* parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632672) or by storing the return value of a previous call to this method.  
+ If you pass NULL as the *hdwp* parameter, this method moves the window normally. If you pass a handle, this method performs a deferred window move. You can obtain a handle by calling [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) or by storing the return value of a previous call to this method.  
   
 ##  <a name="onafterchangeparent"></a>  CBasePane::OnAfterChangeParent  
  Called by the framework after the pane's parent changes.  

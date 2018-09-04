@@ -45,6 +45,6 @@ A [unique_ptr](../standard-library/unique-ptr-class.md) does not share its point
   
  For more examples, see [make_unique](../standard-library/memory-functions.md#make_unique).  
   
-## See Also  
+## See also  
  [Smart Pointers](../cpp/smart-pointers-modern-cpp.md)   
  [make_unique](../standard-library/memory-functions.md#make_unique)

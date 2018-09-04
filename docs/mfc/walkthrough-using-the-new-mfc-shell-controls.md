@@ -17,7 +17,7 @@ In this walkthrough, you will create an application that resembles File Explorer
 
 ## Prerequisites
 
-This walkthrough assumes that you have set up [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] to use **General Development Settings**. If you are using a different development setting, some [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] windows that we use in this walkthrough might not be displayed by default.
+This walkthrough assumes that you have set up Visual Studio to use **General Development Settings**. If you are using a different development setting, some Visual Studio windows that we use in this walkthrough might not be displayed by default.
 
 ### To create a new MFC application by using the MFC Application Wizard
 

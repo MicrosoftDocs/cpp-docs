@@ -25,7 +25,7 @@ ms.workload: ["cplusplus"]
   
 -   Differing argument list lengths (on `__cdecl`, only on cast from longer list to shorter list, even if shorter is varargs).  
   
--   Pointer to data (other than **void\***) aliased against a pointer to function.  
+-   Pointer to data (other than **void**<strong>\*</strong>) aliased against a pointer to function.  
   
 -   Any other type difference that would yield an error or warning on a `reinterpret_cast`.  
   

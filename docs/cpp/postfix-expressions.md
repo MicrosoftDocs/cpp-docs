@@ -22,13 +22,12 @@ Postfix expressions consist of primary expressions or expressions in which postf
 |[Function call operator](../cpp/function-call-operator-parens.md)|**( )**|  
 |[Explicit type conversion operator](../cpp/explicit-type-conversion-operator-parens.md)|*type-name* **( )**|  
 |[Member access operator](../cpp/member-access-operators-dot-and.md)|**.** or **->**|  
-|[Postfix increment operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|`++`|  
+|[Postfix increment operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**++**|  
 |[Postfix decrement operator](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**--**|  
   
  The following syntax describes possible postfix expressions:  
   
 ```  
-  
 primary-expression   
 postfix-expression[expression]postfix-expression(expression-list)simple-type-name(expression-list)postfix-expression.namepostfix-expression->namepostfix-expression++postfix-expression--cast-keyword < typename > (expression )typeid ( typename )  
 ```  
@@ -39,7 +38,7 @@ postfix-expression[expression]postfix-expression(expression-list)simple-type-nam
 func(1)->GetValue()++  
 ```  
   
- In the above expression, func is a primary expression, func(1) is a function postfix expression, func(1)->GetData is a postfix expression specifying a member of the class, func(1)->GetData() is another function postfix expression, and the entire expression is a postfix expression incrementing the return value of GetData.  The meaning of the expression as a whole is "call func passing 1 as an argument and get a pointer to a class as a return value.  Then call GetValue() on that class, then increment the value returned.  
+ In the above expression, `func` is a primary expression, `func(1)` is a function postfix expression, `func(1)->GetData` is a postfix expression specifying a member of the class, `func(1)->GetData()` is another function postfix expression, and the entire expression is a postfix expression incrementing the return value of GetData.  The meaning of the expression as a whole is "call func passing 1 as an argument and get a pointer to a class as a return value.  Then call `GetValue()` on that class, then increment the value returned.  
   
  The expressions listed above are assignment expressions, meaning that the result of these expressions must be an r-value.  
   
@@ -179,7 +178,7 @@ void print( const char *string, const char *terminator )
 }  
 ```  
   
- The preceding program declares a function, `print`, that takes two arguments. However, the second argument, `terminator`, has a default value, `"\n"`. In `main`, the first two calls to `print` allow the default second argument to supply a new line to terminate the printed string. The third call specifies an explicit value for the second argument. The output from the program is  
+ The preceding program declares a function, `print`, that takes two arguments. However, the second argument, *terminator*, has a default value, `"\n"`. In `main`, the first two calls to `print` allow the default second argument to supply a new line to terminate the printed string. The third call specifies an explicit value for the second argument. The output from the program is  
   
 ```Output 
 hello,  
@@ -187,5 +186,5 @@ world!
 good morning, sunshine.  
 ```  
   
-## See Also  
+## See also  
  [Types of Expressions](../cpp/types-of-expressions.md)

@@ -899,7 +899,7 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
 ### Remarks  
  If the value of the *nStyle* parameter is not valid, this method asserts in Debug mode and raises [CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md) in Release mode. In case of other runtime errors, this method asserts in Debug mode and raises an exception derived from the [CException](../../mfc/reference/cexception-class.md) class.  
   
- This method affects the state of menus in applications written for [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] and later.  
+ This method affects the state of menus in applications written for Windows Vista and later.  
   
 ##  <a name="setmessagetext"></a>  CFrameWnd::SetMessageText  
  Call this function to place a string in the status-bar pane that has an ID of 0.  

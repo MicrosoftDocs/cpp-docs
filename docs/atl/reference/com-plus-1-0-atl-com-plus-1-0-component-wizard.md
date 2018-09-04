@@ -33,8 +33,8 @@ Use this page of the ATL COM+ 1.0 Component Wizard to specify interface type and
 |Option|Description|  
 |------------|-----------------|  
 |**ISupportErrorInfo**|Creates support for the [ISupportErrorInfo](../../atl/reference/isupporterrorinfoimpl-class.md) interface so the object can return error information to the client.|  
-|**IObjectControl**|Provides your object access to the three [IObjectControl](http://msdn.microsoft.com/library/windows/desktop/ms686474) methods: [Activate](http://msdn.microsoft.com/library/windows/desktop/ms681303), [CanBePooled](http://msdn.microsoft.com/library/windows/desktop/ms684322), and [Deactivate](http://msdn.microsoft.com/library/windows/desktop/ms687094).|  
-|**IObjectConstruct**|Creates support for the [IObjectConstruct](http://msdn.microsoft.com/library/windows/desktop/ms680583) interface to manage passing in parameters from other methods or objects.|  
+|**IObjectControl**|Provides your object access to the three [IObjectControl](/windows/desktop/api/comsvcs/nn-comsvcs-iobjectcontrol) methods: [Activate](/windows/desktop/api/comsvcs/nf-comsvcs-iobjectcontrol-activate), [CanBePooled](/windows/desktop/api/comsvcs/nf-comsvcs-iobjectcontrol-canbepooled), and [Deactivate](/windows/desktop/api/comsvcs/nf-comsvcs-iobjectcontrol-deactivate).|  
+|**IObjectConstruct**|Creates support for the [IObjectConstruct](/windows/desktop/api/comsvcs/nn-comsvcs-iobjectconstruct) interface to manage passing in parameters from other methods or objects.|  
   
  **Transaction**  
  Indicates that the object supports transactions. Includes the file mtxattr.h in the .idl file (nonattributed projects).  

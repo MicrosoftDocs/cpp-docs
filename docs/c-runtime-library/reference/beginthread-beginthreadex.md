@@ -62,10 +62,10 @@ Stack size for a new thread, or 0.
 Argument list to be passed to a new thread, or **NULL**.
 
 *Security*<br/>
-Pointer to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that determines whether the returned handle can be inherited by child processes. If *Security* is **NULL**, the handle cannot be inherited. Must be **NULL** for Windows 95 applications.
+Pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that determines whether the returned handle can be inherited by child processes. If *Security* is **NULL**, the handle cannot be inherited. Must be **NULL** for Windows 95 applications.
 
 *initflag*<br/>
-Flags that control the initial state of a new thread. Set *initflag* to 0 to run immediately, or to **CREATE_SUSPENDED** to create the thread in a suspended state; use [ResumeThread](http://msdn.microsoft.com/library/windows/desktop/ms685086.aspx) to execute the thread. Set *initflag* to **STACK_SIZE_PARAM_IS_A_RESERVATION** flag to use *stack_size* as the initial reserve size of the stack in bytes; if this flag is not specified, *stack_size* specifies the commit size.
+Flags that control the initial state of a new thread. Set *initflag* to 0 to run immediately, or to **CREATE_SUSPENDED** to create the thread in a suspended state; use [ResumeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-resumethread) to execute the thread. Set *initflag* to **STACK_SIZE_PARAM_IS_A_RESERVATION** flag to use *stack_size* as the initial reserve size of the stack in bytes; if this flag is not specified, *stack_size* specifies the commit size.
 
 *thrdaddr*<br/>
 Points to a 32-bit variable that receives the thread identifier. If it's **NULL**, it's not used.
@@ -84,7 +84,7 @@ For more information about **uintptr_t**, see [Standard Types](../../c-runtime-l
 
 The **_beginthread** function creates a thread that begins execution of a routine at *start_address*. The routine at *start_address* must use the **__cdecl** (for native code) or **__clrcall** (for managed code) calling convention and should have no return value. When the thread returns from that routine, it is terminated automatically. For more information about threads, see [Multithreading Support for Older Code (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
-**_beginthreadex** resembles the Win32 [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453.aspx) API more closely than **_beginthread** does. **_beginthreadex** differs from **_beginthread** in the following ways:
+**_beginthreadex** resembles the Win32 [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) API more closely than **_beginthread** does. **_beginthreadex** differs from **_beginthread** in the following ways:
 
 - **_beginthreadex** has three additional parameters: *initflag*, *Security*, and **threadaddr**. The new thread can be created in a suspended state, with a specified security, and can be accessed by using *thrdaddr*, which is the thread identifier.
 
@@ -100,7 +100,7 @@ It's safer to use **_beginthreadex** than **_beginthread**. If the thread that's
 
 You can call [_endthread](endthread-endthreadex.md) or **_endthreadex** explicitly to terminate a thread; however, **_endthread** or **_endthreadex** is called automatically when the thread returns from the routine that's passed as a parameter. Terminating a thread with a call to **_endthread** or **_endthreadex** helps ensure correct recovery of resources that are allocated for the thread.
 
-**_endthread** automatically closes the thread handle, whereas **_endthreadex** does not. Therefore, when you use **_beginthread** and **_endthread**, do not explicitly close the thread handle by calling the Win32 [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. This behavior differs from the Win32 [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659.aspx) API.
+**_endthread** automatically closes the thread handle, whereas **_endthreadex** does not. Therefore, when you use **_beginthread** and **_endthread**, do not explicitly close the thread handle by calling the Win32 [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. This behavior differs from the Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
 
 > [!NOTE]
 > For an executable file linked with Libcmt.lib, do not call the Win32 **ExitThread** API so that you don't prevent the run-time system from reclaiming allocated resources. **_endthread** and **_endthreadex** reclaim allocated thread resources and then call **ExitThread**.
@@ -187,7 +187,7 @@ void CheckKey( void * ignored )
     repeat = 0;    // _endthread implied
 }
 
-// Bounce - Thread to create and and control a colored letter that moves
+// Bounce - Thread to create and control a colored letter that moves
 // around on the screen.
 //
 // Params: parg - the value to create the character from
@@ -250,7 +250,7 @@ Press any key to end the sample application.
 
 ## Example
 
-The following sample code demonstrates how you can use the thread handle that's returned by **_beginthreadex** with the synchronization API [WaitForSingleObject](http://msdn.microsoft.com/library/windows/desktop/ms687032.aspx). The main thread waits for the second thread to terminate before it continues. When the second thread calls **_endthreadex**, it causes its thread object to go to the signaled state. This allows the primary thread to continue running. This cannot be done with **_beginthread** and **_endthread**, because **_endthread** calls **CloseHandle**, which destroys the thread object before it can be set to the signaled state.
+The following sample code demonstrates how you can use the thread handle that's returned by **_beginthreadex** with the synchronization API [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject). The main thread waits for the second thread to terminate before it continues. When the second thread calls **_endthreadex**, it causes its thread object to go to the signaled state. This allows the primary thread to continue running. This cannot be done with **_beginthread** and **_endthread**, because **_endthread** calls **CloseHandle**, which destroys the thread object before it can be set to the signaled state.
 
 ```cpp
 // crt_begthrdex.cpp
@@ -304,4 +304,4 @@ Counter should be 1000000; it is-> 1000000
 - [_endthread, _endthreadex](endthread-endthreadex.md)
 - [abort](abort.md)
 - [exit, _Exit, _exit](exit-exit-exit.md)
-- [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190)
+- [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread)

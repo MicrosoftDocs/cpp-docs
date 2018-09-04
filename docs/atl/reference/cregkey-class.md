@@ -85,10 +85,10 @@ class CRegKey
   
  `CRegKey` provides a programming interface to the system registry for a given machine. For example, to open a particular registry key, call `CRegKey::Open`. To retrieve or modify a data value, call `CRegKey::QueryValue` or `CRegKey::SetValue`, respectively. To close a key, call `CRegKey::Close`.  
   
- When you close a key, its registry data is written (flushed) to the hard disk. This process may take several seconds. If your application must explicitly write registry data to the hard disk, you can call the [RegFlushKey](http://msdn.microsoft.com/library/windows/desktop/ms724867) Win32 function. However, `RegFlushKey` uses many system resources and should be called only when absolutely necessary.  
+ When you close a key, its registry data is written (flushed) to the hard disk. This process may take several seconds. If your application must explicitly write registry data to the hard disk, you can call the [RegFlushKey](/windows/desktop/api/winreg/nf-winreg-regflushkey) Win32 function. However, `RegFlushKey` uses many system resources and should be called only when absolutely necessary.  
   
 > [!IMPORTANT]
->  Any methods that allow the caller to specify a registry location have the potential to read data that cannot be trusted. Methods that make use of [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) should take into consideration that this function does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
+>  Any methods that allow the caller to specify a registry location have the potential to read data that cannot be trusted. Methods that make use of [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) should take into consideration that this function does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
   
 ## Requirements  
  **Header:** atlbase.h  
@@ -142,13 +142,13 @@ LONG Create(
  Specifies the class of the key to be created or opened. The default value is REG_NONE.  
   
  *dwOptions*  
- Options for the key. The default value is REG_OPTION_NON_VOLATILE. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the Windows SDK.  
+ Options for the key. The default value is REG_OPTION_NON_VOLATILE. For a list of possible values and descriptions, see [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) in the Windows SDK.  
   
  *samDesired*  
  The security access for the key. The default value is KEY_READ &#124; KEY_WRITE. For a list of possible values and descriptions, see `RegCreateKeyEx`.  
   
  *lpSecAttr*  
- A pointer to a [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) structure that indicates whether the handle of the key can be inherited by a child process. By default, this parameter is NULL (meaning the handle cannot be inherited).  
+ A pointer to a [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) structure that indicates whether the handle of the key can be inherited by a child process. By default, this parameter is NULL (meaning the handle cannot be inherited).  
   
  *lpdwDisposition*  
  [out] If non-NULL, retrieves either REG_CREATED_NEW_KEY (if the key did not exist and was created) or REG_OPENED_EXISTING_KEY (if the key existed and was opened).  
@@ -261,7 +261,7 @@ LONG EnumKey(
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- To enumerate the subkeys, call `CRegKey::EnumKey` with an index of zero. Increment the index value and repeat until the method returns ERROR_NO_MORE_ITEMS. For more information, see [RegEnumKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724862) in the Windows SDK.  
+ To enumerate the subkeys, call `CRegKey::EnumKey` with an index of zero. Increment the index value and repeat until the method returns ERROR_NO_MORE_ITEMS. For more information, see [RegEnumKeyEx](/windows/desktop/api/winreg/nf-winreg-regenumkeyexa) in the Windows SDK.  
   
 ##  <a name="flush"></a>  CRegKey::Flush  
  Call this method to write all of the attributes of the open registry key into the registry.  
@@ -274,7 +274,7 @@ LONG Flush() throw();
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- For more information, see [RegEnumFlush](http://msdn.microsoft.com/library/windows/desktop/ms724867) in the Windows SDK.  
+ For more information, see [RegEnumFlush](/windows/desktop/api/winreg/nf-winreg-regflushkey) in the Windows SDK.  
   
 ##  <a name="getkeysecurity"></a>  CRegKey::GetKeySecurity  
  Call this method to retrieve a copy of the security descriptor protecting the open registry key.  
@@ -288,7 +288,7 @@ LONG GetKeySecurity(
   
 ### Parameters  
  *si*  
- The [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) value that indicates the requested security information.  
+ The [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) value that indicates the requested security information.  
   
  *psd*  
  A pointer to a buffer that receives a copy of the requested security descriptor.  
@@ -300,7 +300,7 @@ LONG GetKeySecurity(
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code is defined in WINERROR.H.  
   
 ### Remarks  
- For more information, see [RegGetKeySecurity](http://msdn.microsoft.com/library/windows/desktop/aa379313).  
+ For more information, see [RegGetKeySecurity](/windows/desktop/api/winreg/nf-winreg-reggetkeysecurity).  
   
 ##  <a name="m_hkey"></a>  CRegKey::m_hKey  
  Contains a handle of the registry key associated with the `CRegKey` object.  
@@ -357,7 +357,7 @@ LONG NotifyChangeKeyValue(
 > [!NOTE]
 >  This method does not notify the caller if the specified key is deleted.  
   
- For more details and a sample program, see [RegNotifyChangeKeyValue](http://msdn.microsoft.com/library/windows/desktop/ms724892).  
+ For more details and a sample program, see [RegNotifyChangeKeyValue](/windows/desktop/api/winreg/nf-winreg-regnotifychangekeyvalue).  
   
 ##  <a name="open"></a>  CRegKey::Open  
  Call this method to open the specified key and set [m_hKey](#m_hkey) to the handle of this key.  
@@ -377,7 +377,7 @@ LONG Open(
  Specifies the name of a key to be created or opened. This name must be a subkey of *hKeyParent*.  
   
  *samDesired*  
- The security access for the key. The default value is KEY_ALL_ACCESS. For a list of possible values and descriptions, see [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) in the Windows SDK.  
+ The security access for the key. The default value is KEY_ALL_ACCESS. For a list of possible values and descriptions, see [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) in the Windows SDK.  
   
 ### Return Value  
  If successful, returns ERROR_SUCCESS; otherwise, a non-zero error value defined in WINERROR.H.  
@@ -435,10 +435,10 @@ LONG QueryBinaryValue(
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_BINARY, ERROR_INVALID_DATA is returned.  
   
 ### Remarks  
- This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) for more details.  
   
 > [!IMPORTANT]
->  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
+>  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
   
 ##  <a name="querydwordvalue"></a>  CRegKey::QueryDWORDValue  
  Call this method to retrieve the DWORD data for a specified value name.  
@@ -460,10 +460,10 @@ LONG QueryDWORDValue(
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_DWORD, ERROR_INVALID_DATA is returned.  
   
 ### Remarks  
- This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) for more details.  
   
 > [!IMPORTANT]
->  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
+>  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
   
 ##  <a name="queryguidvalue"></a>  CRegKey::QueryGUIDValue  
  Call this method to retrieve the GUID data for a specified value name.  
@@ -485,7 +485,7 @@ LONG QueryGUIDValue(
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not a valid GUID, ERROR_INVALID_DATA is returned.  
   
 ### Remarks  
- This method makes use of `CRegKey::QueryStringValue` and converts the string into a GUID using [CLSIDFromString](http://msdn.microsoft.com/library/windows/desktop/ms680589).  
+ This method makes use of `CRegKey::QueryStringValue` and converts the string into a GUID using [CLSIDFromString](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromstring).  
   
 > [!IMPORTANT]
 >  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted.  
@@ -514,10 +514,10 @@ LONG QueryMultiStringValue(
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_MULTI_SZ, ERROR_INVALID_DATA is returned.  
   
 ### Remarks  
- This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) for more details.  
   
 > [!IMPORTANT]
->  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
+>  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
   
 ##  <a name="queryqwordvalue"></a>  CRegKey::QueryQWORDValue  
  Call this method to retrieve the QWORD data for a specified value name.  
@@ -539,10 +539,10 @@ LONG QueryQWORDValue(
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_QWORD, ERROR_INVALID_DATA is returned.  
   
 ### Remarks  
- This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) for more details.  
   
 > [!IMPORTANT]
->  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
+>  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
   
 ##  <a name="querystringvalue"></a>  CRegKey::QueryStringValue  
  Call this method to retrieve the string data for a specified value name.  
@@ -568,10 +568,10 @@ LONG QueryStringValue(
  If the method succeeds, ERROR_SUCCESS is returned. If the method fails to read a value, it returns a nonzero error code defined in WINERROR.H. If the data referenced is not of type REG_SZ, ERROR_INVALID_DATA is returned. If the method returns ERROR_MORE_DATA, *pnChars* equals zero, not the required buffer size in bytes.  
   
 ### Remarks  
- This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) for more details.  
+ This method makes use of `RegQueryValueEx` and confirms that the correct type of data is returned. See [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) for more details.  
   
 > [!IMPORTANT]
->  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
+>  This method allows the caller to specify any registry location, potentially reading data which cannot be trusted. Also, the [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) function used by this method does not explicitly handle strings which are NULL terminated. Both conditions should be checked for by the calling code.  
   
 ##  <a name="queryvalue"></a>  CRegKey::QueryValue  
  Call this method to retrieve the data for the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.  
@@ -670,7 +670,7 @@ LONG SetBinaryValue(
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- This method uses [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) to write the value to the registry.  
+ This method uses [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) to write the value to the registry.  
   
 ##  <a name="setdwordvalue"></a>  CRegKey::SetDWORDValue  
  Call this method to set the DWORD value of the registry key.  
@@ -690,7 +690,7 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- This method uses [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) to write the value to the registry.  
+ This method uses [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) to write the value to the registry.  
   
 ##  <a name="setguidvalue"></a>  CRegKey::SetGUIDValue  
  Call this method to set the GUID value of the registry key.  
@@ -710,7 +710,7 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- This method makes use of `CRegKey::SetStringValue` and converts the GUID into a string using [StringFromGUID2](http://msdn.microsoft.com/library/windows/desktop/ms683893).  
+ This method makes use of `CRegKey::SetStringValue` and converts the GUID into a string using [StringFromGUID2](/windows/desktop/api/combaseapi/nf-combaseapi-stringfromguid2).  
   
 ##  <a name="setkeyvalue"></a>  CRegKey::SetKeyValue  
  Call this method to store data in a specified value field of a specified key.  
@@ -754,16 +754,16 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 |DACL_SECURITY_INFORMATION|Sets the key's discretionary access-control list (DACL). The key must have WRITE_DAC access, or the calling process must be the object's owner.|  
 |GROUP_SECURITY_INFORMATION|Sets the key's primary group security identifier (SID). The key must have WRITE_OWNER access, or the calling process must be the object's owner.|  
 |OWNER_SECURITY_INFORMATION|Sets the key's owner SID. The key must have WRITE_OWNER access, or the calling process must be the object's owner or have the SE_TAKE_OWNERSHIP_NAME privilege enabled.|  
-|SACL_SECURITY_INFORMATION|Sets the key's system access-control list (SACL). The key must have ACCESS_SYSTEM_SECURITY access. The proper way to get this access is to enable the SE_SECURITY_NAME [privilege](http://msdn.microsoft.com/library/windows/desktop/aa379306) in the caller's current access token, open the handle for ACCESS_SYSTEM_SECURITY access, and then disable the privilege.|  
+|SACL_SECURITY_INFORMATION|Sets the key's system access-control list (SACL). The key must have ACCESS_SYSTEM_SECURITY access. The proper way to get this access is to enable the SE_SECURITY_NAME [privilege](https://msdn.microsoft.com/library/windows/desktop/aa379306) in the caller's current access token, open the handle for ACCESS_SYSTEM_SECURITY access, and then disable the privilege.|  
   
  *psd*  
- Pointer to a [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561) structure that specifies the security attributes to set for the specified key.  
+ Pointer to a [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) structure that specifies the security attributes to set for the specified key.  
   
 ### Return Value  
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- Sets the key's security attributes. See [RegSetKeySecurity](http://msdn.microsoft.com/library/windows/desktop/aa379314) for more details.  
+ Sets the key's security attributes. See [RegSetKeySecurity](/windows/desktop/api/winreg/nf-winreg-regsetkeysecurity) for more details.  
   
 ##  <a name="setmultistringvalue"></a>  CRegKey::SetMultiStringValue  
  Call this method to set the multistring value of the registry key.  
@@ -783,7 +783,7 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- This method uses [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) to write the value to the registry.  
+ This method uses [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) to write the value to the registry.  
   
 ##  <a name="setqwordvalue"></a>  CRegKey::SetQWORDValue  
  Call this method to set the QWORD value of the registry key.  
@@ -803,7 +803,7 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- This method uses [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) to write the value to the registry.  
+ This method uses [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) to write the value to the registry.  
   
 ##  <a name="setstringvalue"></a>  CRegKey::SetStringValue  
  Call this method to set the string value of the registry key.  
@@ -829,7 +829,7 @@ LONG SetStringValue(
  If the method succeeds, the return value is ERROR_SUCCESS. If the method fails, the return value is a nonzero error code defined in WINERROR.H.  
   
 ### Remarks  
- This method uses [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923\(v=vs.85\).aspx) to write the value to the registry.  
+ This method uses [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) to write the value to the registry.  
   
 ##  <a name="setvalue"></a>  CRegKey::SetValue  
  Call this method to store data in the specified value field of [m_hKey](#m_hkey). Earlier versions of this method are no longer supported and are marked as ATL_DEPRECATED.  
@@ -898,7 +898,7 @@ ATL_DEPRECATED LONG SetValue(
 ### Remarks  
  The two original versions of `SetValue` are marked as ATL_DEPRECATED and should no longer be used. The compiler will issue a warning if these forms are used.  
   
- The third method calls [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923).  
+ The third method calls [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa).  
   
 ## See Also  
  [DCOM Sample](../../visual-cpp-samples.md)   

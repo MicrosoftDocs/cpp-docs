@@ -59,7 +59,7 @@ The **assert** macro prints a diagnostic message when *expression* evaluates to 
 
 The diagnostic message is printed in wide characters. Thus, it will work as expected even if there are Unicode characters in the expression.
 
-The destination of the diagnostic message depends on the type of application that called the routine. Console applications always receive the message through **stderr**. In a Windows-based application, **assert** calls the Windows [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) function to create a message box to display the message along with an **OK** button. When the user clicks **OK**, the program aborts immediately.
+The destination of the diagnostic message depends on the type of application that called the routine. Console applications always receive the message through **stderr**. In a Windows-based application, **assert** calls the Windows [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) function to create a message box to display the message along with an **OK** button. When the user clicks **OK**, the program aborts immediately.
 
 When the application is linked with a debug version of the run-time libraries, **assert** creates a message box with three buttons: **Abort**, **Retry**, and **Ignore**. If the user clicks **Abort**, the program aborts immediately. If the user clicks **Retry**, the debugger is called and the user can debug the program if just-in-time (JIT) debugging is enabled. If the user clicks **Ignore**, **assert** continues with its normal execution: creating the message box with the **OK** button. Note that clicking **Ignore** when an error condition exists can result in undefined behavior.
 

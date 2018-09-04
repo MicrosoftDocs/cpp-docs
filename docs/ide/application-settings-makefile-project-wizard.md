@@ -33,4 +33,4 @@ Provide the information for the project. The options you specify are reflected i
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)   
  [Creating Desktop Projects By Using Application Wizards](../ide/creating-desktop-projects-by-using-application-wizards.md)   
  [Property Pages](../ide/property-pages-visual-cpp.md)   
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ 

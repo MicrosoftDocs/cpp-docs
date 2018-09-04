@@ -35,7 +35,6 @@ One or more parameters which must be a literal type and must itself be a constan
 
 ## Return Value
 
-
  A constexpr variable or function must return a [literal type](trivial-standard-layout-and-pod-types.md#literal_types).
 
 ## constexpr variables
@@ -71,7 +70,7 @@ The following rules apply to constexpr functions:
 
 - It cannot be [virtual](../cpp/virtual-cpp.md). A a constructor cannot be defined as constexpr if the enclosing class has any virtual base classes.
 
-- The body can be defined as **= default** or **= delete**.
+- The body can be defined as `= default` or `= delete`.
 
 - The body can contain no **goto** statements or try blocks.
 
@@ -173,14 +172,12 @@ int main()
     cout << "The value of foo is " << foo.GetValue() << endl;
 
 }
-
 ```
 
 ## Requirements
 
 Visual Studio 2015
 
-## See Also
-
-- [Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)
-- [const](../cpp/const-cpp.md)
+## See also
+ [Declarations and Definitions](../cpp/declarations-and-definitions-cpp.md)  
+ [const](../cpp/const-cpp.md)

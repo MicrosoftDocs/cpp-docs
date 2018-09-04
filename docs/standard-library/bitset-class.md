@@ -25,7 +25,7 @@ class bitset
 
 ### Parameters
 
-*N*
+*N*<br/>
  Specifies the number of bits in the bitset object with a nonzero integer of type `size_t` that must be known at compile time.
 
 ## Remarks
@@ -199,25 +199,25 @@ explicit bitset(
 
 ### Parameters
 
-*val*
+*val*<br/>
  The unsigned integer whose base two representation is used to initialize the bits in the bitset being constructed.
 
-*str*
+*str*<br/>
  The string of zeros and ones used to initialize the bitset bit values.
 
-*_CStr*
+*_CStr*<br/>
  A C-style string of zeros and ones used to initialize the bitset bit values.
 
-*_Pos*
+*_Pos*<br/>
  The position of the character in the string, counting from left to right and starting with zero, used to initialize the first bit in the bitset.
 
-*count*
+*count*<br/>
  The number of characters in the string that is used to provide initial values for the bits in the bitset.
 
-*_Zero*
+*_Zero*<br/>
  The character that is used to represent a zero. The default is '0'.
 
-*_One*
+*_One*<br/>
  The character that is used to represent a one. The default is '1'.
 
 ### Remarks
@@ -434,7 +434,7 @@ bitset\<N>& flip(size_t _Pos);
 
 ### Parameters
 
-*_Pos*
+*_Pos*<br/>
  The position of the bit whose value is to be inverted.
 
 ### Return Value
@@ -443,7 +443,7 @@ A copy of the modified bitset for which the member function was invoked.
 
 ### Remarks
 
-The second member function throws an [out_of_range](../standard-library/out-of-range-class.md) exception if the position specified as a parameter is greater than the size *N* of the **bitset\<***N***>** whose bit was inverted.
+The second member function throws an [out_of_range](../standard-library/out-of-range-class.md) exception if the position specified as a parameter is greater than the size *N* of the **bitset\<** *N* **>** whose bit was inverted.
 
 ### Example
 
@@ -563,7 +563,7 @@ bool operator!=(const bitset\<N>& right) const;
 
 ### Parameters
 
-*right*
+*right*<br/>
  The bitset that is to be compared to the target bitset for inequality.
 
 ### Return Value
@@ -625,7 +625,7 @@ bitset\<N>& operator&=(const bitset\<N>& right);
 
 ### Parameters
 
-*right*
+*right*<br/>
  The bitset that is to be combined bitwise with the target bitset.
 
 ### Return Value
@@ -692,7 +692,7 @@ bitset\<N> operator<<(size_t _Pos) const;
 
 ### Parameters
 
-*_Pos*
+*_Pos*<br/>
  The number of positions to the left that the bits in the bitset are to be shifted.
 
 ### Return Value
@@ -744,7 +744,7 @@ bitset\<N>& operator<<=(size_t _Pos);
 
 ### Parameters
 
-*_Pos*
+*_Pos*<br/>
  The number of positions to the left the bits in the bitset are to be shifted.
 
 ### Return Value
@@ -791,7 +791,7 @@ bool operator==(const bitset\<N>& right) const;
 
 ### Parameters
 
-*right*
+*right*<br/>
  The bitset that is to be compared to the target bitset for equality.
 
 ### Return Value
@@ -852,7 +852,7 @@ bitset\<N> operator>>(size_t _Pos) const;
 
 ### Parameters
 
-*_Pos*
+*_Pos*<br/>
  The number of positions to the right the bits in the bitset are to be shifted.
 
 ### Return Value
@@ -905,7 +905,7 @@ bitset\<N>& operator>>=(size_t _Pos);
 
 ### Parameters
 
-*_Pos*
+*_Pos*<br/>
  The number of positions to the right the bits in the bitset are to be shifted.
 
 ### Return Value
@@ -954,7 +954,7 @@ reference operator[](size_t _Pos);
 
 ### Parameters
 
-*_Pos*
+*_Pos*<br/>
  The position locating the bit within the bitset.
 
 ### Remarks
@@ -997,7 +997,7 @@ bitset\<N>& operator^=(const bitset\<N>& right);
 
 ### Parameters
 
-*right*
+*right*<br/>
  The bitset that is to be combined bitwise with the target bitset.
 
 ### Return Value
@@ -1063,7 +1063,7 @@ bitset\<N>& operator|=(const bitset\<N>& right);
 
 ### Parameters
 
-*right*
+*right*<br/>
  The bitset that is to be combined bitwise with the target bitset.
 
 ### Return Value
@@ -1183,10 +1183,10 @@ public:
 
 ### Parameters
 
-*val*
+*val*<br/>
  The value of the object of type **bool** to be assigned to a bit in a bitset.
 
-*_Bitref*
+*_Bitref*<br/>
  A reference of the form *x [ i ]* to the bit at position *i* in bitset *x*.
 
 ### Return Value
@@ -1195,7 +1195,7 @@ A reference to the bit in the bitset specified by the argument position for the 
 
 ### Remarks
 
-The class `reference` exists only as a helper class for the bitset `operator[]`. The member class describes an object that can access an individual bit within a bitset. Let *b* be an object of type **bool**, *x* and *y* objects of type **bitset\<***N***>**, and *i* and *j* valid positions within such an object. The notation *x [i]* references the bit at position *i* in bitset *x*. The member functions of class `reference` provide, in order, the following operations:
+The class `reference` exists only as a helper class for the bitset `operator[]`. The member class describes an object that can access an individual bit within a bitset. Let *b* be an object of type **bool**, *x* and *y* objects of type **bitset\<** *N* **>**, and *i* and *j* valid positions within such an object. The notation *x [i]* references the bit at position *i* in bitset *x*. The member functions of class `reference` provide, in order, the following operations:
 
 |Operation|Definition|
 |---------------|----------------|
@@ -1298,7 +1298,7 @@ bitset\<N>& reset(size_t _Pos);
 
 ### Parameters
 
-*_Pos*
+*_Pos*<br/>
  The position of the bit in the bitset to be reset to 0.
 
 ### Return Value
@@ -1361,10 +1361,10 @@ bitset\<N>& set(
 
 ### Parameters
 
-*_Pos*
+*_Pos*<br/>
  The position of the bit in the bitset to be set to assigned a value.
 
-*val*
+*val*<br/>
  The value to be assigned to the bit at the position specified.
 
 ### Return Value
@@ -1467,7 +1467,7 @@ bool test(size_t _Pos) const;
 
 ### Parameters
 
-*_Pos*
+*_Pos*<br/>
  The position of the bit in the bitset to be tested for its value.
 
 ### Return Value
@@ -1477,4 +1477,3 @@ bool test(size_t _Pos) const;
 ### Remarks
 
 The member function throws an [out_of_range](../standard-library/out-of-range-class.md)
-

@@ -18,7 +18,6 @@ Executes *statement* repeatedly until *expression* evaluates to zero.
 ## Syntax  
   
 ```  
-  
 while ( expression )  
    statement  
 ```  
@@ -59,7 +58,7 @@ int main()
   
  The termination condition is evaluated at the top of the loop. If there are no trailing underscores, the loop never executes.  
   
-## See Also  
+## See also  
  [Iteration Statements](../cpp/iteration-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [do-while Statement (C++)](../cpp/do-while-statement-cpp.md)   

@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # CriticalSection::IsValid Method
-Indicates whether the current critical section is valid.  
-  
-## Syntax  
-  
-```  
-bool IsValid() const;  
-```  
-  
-## Return Value  
- By default, always returns `true`.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [CriticalSection Class](../windows/criticalsection-class.md)
+
+Indicates whether the current critical section is valid.
+
+## Syntax
+
+```cpp
+bool IsValid() const;
+```
+
+## Return Value
+
+By default, always returns **true**.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[CriticalSection Class](../windows/criticalsection-class.md)

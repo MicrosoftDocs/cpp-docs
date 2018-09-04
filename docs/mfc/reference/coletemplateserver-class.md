@@ -87,7 +87,7 @@ void ConnectTemplate(
  Indicates whether a single instance of the application can support multiple instantiations. If TRUE, multiple instances of the application are launched for each request to create an object.  
   
 ### Remarks  
- For more information, see [CLSID Key](http://msdn.microsoft.com/library/windows/desktop/ms691424) in the Windows SDK.  
+ For more information, see [CLSID Key](/windows/desktop/com/clsid-key-hklm) in the Windows SDK.  
   
 ##  <a name="unregister"></a>  COleTemplateServer::Unregister  
  Unregisters the associated document template.  
@@ -143,7 +143,7 @@ void UpdateRegistry(
   
  The information in the arguments *rglpszRegister* and *rglpszOverwrite* is written to the registry through a call to [AfxOleRegisterServerClass](application-control.md#afxoleregisterserverclass). The default information, which is registered when the two arguments are NULL, is suitable for most applications. For information on the structure of the information in these arguments, see `AfxOleRegisterServerClass`.  
   
- For more information, see [Implementing the IDispatch Interface](http://msdn.microsoft.com/0e171f7f-0022-4e9b-ac8e-98192828e945).  
+ For more information, see [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).  
   
 ## See Also  
  [MFC Sample HIERSVR](../../visual-cpp-samples.md)   

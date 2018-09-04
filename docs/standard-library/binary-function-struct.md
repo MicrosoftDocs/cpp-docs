@@ -30,11 +30,9 @@ struct binary_function {
 
 The template struct serves as a base for classes that define a member function of the form:
 
-**result_type operator()**( **constfirst_argument_type&**,
+> *result_type* ** operator()( const** <em>first_argument_type</em>**&, const** <em>second_argument_type</em>**& ) const**
 
-**const second_argument_type&** ) **const**
-
-All such binary functions can refer to their first argument type as `first_argument_type`, their second argument type as `second_argument_type`, and their return type as ***result_type***.
+All such binary functions can refer to their first argument type as *first_argument_type*, their second argument type as *second_argument_type*, and their return type as *result_type*.
 
 ## Example
 

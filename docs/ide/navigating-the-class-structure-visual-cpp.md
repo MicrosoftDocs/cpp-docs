@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Navigating the Class Structure (Visual C++)
-You can navigate a project class structure, including functions, inheritance and interfaces using either [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925) or the [Object Browser](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470).  
+You can navigate a project class structure, including functions, inheritance and interfaces using either **Class View** or the **Object Browser**. For more information, see [Viewing the structure of code](/visualstudio/ide/viewing-the-structure-of-code).  
   
  You can go to a function declaration by double-clicking on the function name in Class View. You can go to a class definition by double-clicking on a class name in Class View.  
   

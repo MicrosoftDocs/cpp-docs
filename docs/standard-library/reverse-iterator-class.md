@@ -184,7 +184,7 @@ The type is a synonym for the template parameter `Iterator`.
 
 See [reverse_iterator::base](#base) for an example of how to declare and use `iterator_type`.
 
-## <a name="op_star"></a>  reverse_iterator::operator*
+## <a name="op_star"></a>  reverse_iterator::operator\*
 
 Returns the element that a reverse_iterator addresses.
 
@@ -788,7 +788,7 @@ The reference to the element offset.
 
 ### Remarks
 
-The operator returns **\***( **\*this** + `Off`).
+The operator returns <strong>\*</strong>( **\*this** + `Off`).
 
 ### Example
 

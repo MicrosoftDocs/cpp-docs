@@ -5,8 +5,8 @@ ms.date: "01/22/2017"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: a24d5f45-8dbb-4540-958f-c76c90d8ed93
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Template ref classes (C++/CX)

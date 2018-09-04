@@ -39,11 +39,12 @@ class CDocObjectServerItem : public COleServerItem
   
 |Name|Description|  
 |----------|-----------------|  
+|[CDocObjectServerItem::OnDoVerb](#ondoverb)|Throws an exception if the framework tries to hide a DocObject item.|
 |[CDocObjectServerItem::OnHide](#onhide)|Throws an exception if the framework tries to hide a DocObject item.|  
 |[CDocObjectServerItem::OnShow](#onshow)|Called by the framework to make the DocObject item in-place active. If the item is not a DocObject, calls [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow).|  
   
 ## Remarks  
- `CDocObjectServerItem` defines overridable member functions: [OnHide](#onhide), [OnOpen](http://msdn.microsoft.com/7a9b1363-6ad8-4732-9959-4e35c07644fd), and [OnShow](#onshow).  
+ `CDocObjectServerItem` defines overridable member functions: [OnHide](#onhide), [OnDoVerb](#ondoverb), and [OnShow](#onshow).  
   
  To use `CDocObjectServerItem`, assure that the [OnGetEmbeddedItem](../../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) override in your `COleServerDoc`-derived class returns a new `CDocObjectServerItem` object. If you need to change any functionality in your item, you can create a new instance of your own `CDocObjectServerItem`-derived class.  
   

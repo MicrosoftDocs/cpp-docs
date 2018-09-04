@@ -13,24 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Finding Binary Data
-You can search for either ASCII strings or hexadecimal bytes. For example, to find "Hello," you can search for either the string "Hello" or for "48 65 6C 6C 6F" (the hexadecimal equivalent).  
-  
-### To find binary data  
-  
-1.  From the **Edit** menu, click [Find](/visualstudio/ide/reference/find-command).  
-  
-2.  In the **Find What** box, select a previous search string from the drop-down list or type the data you want to find.  
-  
-3.  Select any of the **Find** options.  
-  
-4.  Click **Find Next**.  
-  
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide.* For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).  
-  
- Requirements  
-  
- None  
-  
-## See Also  
- [Binary Editor](binary-editor.md)
 
+You can search for either ASCII strings or hexadecimal bytes. For example, to find "Hello," you can search for either the string "Hello" or for "48 65 6C 6C 6F" (the hexadecimal equivalent).
+
+### To find binary data
+
+1. From the **Edit** menu, click [Find](/visualstudio/ide/reference/find-command).
+
+2. In the **Find What** box, select a previous search string from the drop-down list or type the data you want to find.
+
+3. Select any of the **Find** options.
+
+4. Click **Find Next**.
+
+For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the *.NET Framework Developer's Guide*. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resource strings to properties, see [Creating Resource Files for Desktop Apps](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). For information on globalization and localization of resources in managed apps, see [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index).
+
+## Requirements
+
+None
+
+## See Also
+
+[Binary Editor](binary-editor.md)

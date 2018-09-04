@@ -13,30 +13,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::CreateGlobalInterfaceTable Method
-Creates a global interface table (GIT).  
-  
-## Syntax  
-  
-```  
-static HRESULT CreateGlobalInterfaceTable(  
-   __out IGlobalInterfaceTable **git  
-);  
-```  
-  
-#### Parameters  
- `git`  
- When this operation completes, a pointer to a global interface table.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Remarks  
- For more information, see the "IGlobalInterfaceTable" topic in the "COM Interfaces" subtopic of the "COM Reference" topic in the MSDN Library.  
-  
-## Requirements  
- **Header:** ftm.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [FtmBase Class](../windows/ftmbase-class.md)
+
+Creates a global interface table (GIT).
+
+## Syntax
+
+```cpp
+static HRESULT CreateGlobalInterfaceTable(
+   __out IGlobalInterfaceTable **git
+);
+```
+
+### Parameters
+
+*git*  
+When this operation completes, a pointer to a global interface table.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Remarks
+
+For more information, see the `IGlobalInterfaceTable` topic in the **COM Interfaces** subtopic of the **COM Reference** topic in the MSDN Library.
+
+## Requirements
+
+**Header:** ftm.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[FtmBase Class](../windows/ftmbase-class.md)

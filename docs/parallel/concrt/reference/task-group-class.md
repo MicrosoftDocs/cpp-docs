@@ -1,3 +1,17 @@
+---
+title: "task_group Class | Microsoft Docs"
+ms.custom: ""
+ms.date: "07/20/2018"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
+f1_keywords: ["task_group", "PPL/concurrency::task_group", "PPL/concurrency::task_group::task_group"]
+dev_langs: ["C++"]
+helpviewer_keywords: ["task_group class"]
+author: "mikeblome"
+ms.author: "mblome"
+ms.workload: ["cplusplus"]
+---
+# task_group Class
 The `task_group` class represents a collection of parallel work which can be waited on or canceled.  
   
 ## Syntax  

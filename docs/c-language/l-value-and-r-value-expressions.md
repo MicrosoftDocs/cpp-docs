@@ -26,7 +26,7 @@ Expressions that refer to memory locations are called "l-value" expressions. An 
   
 -   A member-selection expression (**->** or **.**)  
   
--   A unary-indirection (**\***) expression that does not refer to an array  
+-   A unary-indirection (<strong>\*</strong>) expression that does not refer to an array  
   
 -   An l-value expression in parentheses  
   

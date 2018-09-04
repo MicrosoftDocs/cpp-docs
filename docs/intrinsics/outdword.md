@@ -37,7 +37,7 @@ void __outdword( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__outdword`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outdword`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

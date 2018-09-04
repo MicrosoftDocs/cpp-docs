@@ -1,7 +1,7 @@
 ---
 title: "ML Nonfatal Error A2074 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "error-reference"
 f1_keywords: ["A2074"]
@@ -13,9 +13,11 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2074
-**cannot access label through segment registers**  
-  
- An attempt was made to access a label through a segment register that was not assumed to its segment or group.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+
+**cannot access label through segment registers**
+
+An attempt was made to access a label through a segment register that was not assumed to its segment or group.
+
+## See also
+
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

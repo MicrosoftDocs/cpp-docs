@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::Runtime::InteropServices"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::Runtime::InteropServices Namespace"]
 ms.assetid: 546b981a-a360-4a78-b89f-fdf0df848747
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Runtime::InteropServices Namespace

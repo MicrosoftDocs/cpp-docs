@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Idle Loop Processing
 Many applications perform lengthy processing "in the background." Sometimes performance considerations dictate using multithreading for such work. Threads involve extra development overhead, so they are not recommended for simple tasks like the idle-time work that MFC does in the [OnIdle](../mfc/reference/cwinthread-class.md#onidle) function. This article focuses on idle processing. For more information about multithreading, see [Multithreading Topics](../parallel/multithreading-support-for-older-code-visual-cpp.md).  
   
- Some kinds of background processing are appropriately done during intervals that the user is not otherwise interacting with the application. In an application developed for the Microsoft Windows operating system, an application can perform idle-time processing by splitting a lengthy process into many small fragments. After processing each fragment, the application yields execution control to Windows using a [PeekMessage](http://msdn.microsoft.com/library/windows/desktop/ms644943) loop.  
+ Some kinds of background processing are appropriately done during intervals that the user is not otherwise interacting with the application. In an application developed for the Microsoft Windows operating system, an application can perform idle-time processing by splitting a lengthy process into many small fragments. After processing each fragment, the application yields execution control to Windows using a [PeekMessage](https://msdn.microsoft.com/library/windows/desktop/ms644943) loop.  
   
  This article explains two ways to do idle processing in your application:  
   
@@ -23,7 +23,7 @@ Many applications perform lengthy processing "in the background." Sometimes perf
 -   Embedding another **PeekMessage** loop somewhere else in the application.  
   
 ##  <a name="_core_peekmessage_in_the_mfc_message_loop"></a> PeekMessage in the MFC Message Loop  
- In an application developed with MFC, the main message loop in the `CWinThread` class contains a message loop that calls the [PeekMessage](http://msdn.microsoft.com/library/windows/desktop/ms644943) Win32 API. This loop also calls the `OnIdle` member function of `CWinThread` between messages. An application can process messages in this idle time by overriding the `OnIdle` function.  
+ In an application developed with MFC, the main message loop in the `CWinThread` class contains a message loop that calls the [PeekMessage](https://msdn.microsoft.com/library/windows/desktop/ms644943) Win32 API. This loop also calls the `OnIdle` member function of `CWinThread` between messages. An application can process messages in this idle time by overriding the `OnIdle` function.  
   
 > [!NOTE]
 >  `Run`, `OnIdle`, and certain other member functions are now members of class `CWinThread` rather than of class `CWinApp`. `CWinApp` is derived from `CWinThread`.  

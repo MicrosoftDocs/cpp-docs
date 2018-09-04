@@ -1,7 +1,7 @@
 ---
 title: "operator IMAGEREL | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator IMAGEREL", "IMAGEREL"]
@@ -13,18 +13,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator IMAGEREL
-Returns the image relative offset of `expression`.  
-  
-## Syntax  
-  
-```  
-IMAGEREL expression  
-```  
-  
-## Remarks  
- The resulting value is often referred to as an RVA or Relative Virtual Address.  
-  
- IMAGEREL is available only with COFF object emission.  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Returns the image relative offset of `expression`.
+
+## Syntax
+
+> IMAGEREL expression
+
+## Remarks
+
+The resulting value is often referred to as an RVA or Relative Virtual Address.
+
+IMAGEREL is available only with COFF object emission.
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

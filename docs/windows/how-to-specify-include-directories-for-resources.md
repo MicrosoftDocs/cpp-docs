@@ -12,21 +12,23 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # How to: Specify Include Directories for Resources
-### To specify include directories for a specific .rc file  
-  
-1.  Right-click the .rc file in Solution Explorer and select **Properties** from the shortcut menu.  
-  
-2.  In the **Property Pages** dialog box, click the **Resources** node in the left pane, then specify the additional include directories in the **Additional include directories** property.  
-  
- For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the .NET Framework Developer's Guide. For information on manually adding resource files to managed projects, accessing resources, displaying static resources, and assigning resources strings to properties, see [Walkthrough: Using Resources for Localization with ASP.NET](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
-  
- **Requirements**  
-  
- Win32  
-  
-## See Also  
- [Resource Includes Dialog Box](../windows/resource-includes-dialog-box.md)   
- [TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)   
- [Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)   
- [Resource Files](../windows/resource-files-visual-studio.md)   
- [Resource Editors](../windows/resource-editors.md)
+
+### To specify include directories for a specific .rc file
+
+1. Right-click the .rc file in Solution Explorer and select **Properties** from the shortcut menu.
+
+2. In the **Property Pages** dialog box, click the **Resources** node in the left pane, then specify the additional include directories in the **Additional include directories** property.
+
+For information on adding resources to managed projects, please see [Resources in Desktop Apps](/dotnet/framework/resources/index) in the .NET Framework Developer's Guide. 
+
+## Requirements
+
+Win32
+
+## See Also
+
+[Resource Includes Dialog Box](../windows/resource-includes-dialog-box.md)  
+[TN035: Using Multiple Resource Files and Header Files with Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)  
+[Symbols: Resource Identifiers](../windows/symbols-resource-identifiers.md)  
+[Resource Files](../windows/resource-files-visual-studio.md)  
+[Resource Editors](../windows/resource-editors.md)

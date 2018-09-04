@@ -45,6 +45,5 @@ If a value exceeds the largest integer representation, the Microsoft compiler ge
 
 **END Microsoft Specific**
 
-## See Also
-
-[Floating Limits](../cpp/floating-limits.md)  
+## See also
+ [Floating Limits](../cpp/floating-limits.md)  

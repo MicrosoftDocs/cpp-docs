@@ -21,6 +21,8 @@ Specify standards conformance mode to the compiler. Use this option to help you 
 
 ## Remarks
 
+This option is supported in Visual Studio 2017 and later.
+
 You can use the **/permissive-** compiler option to specify standards-conforming compiler behavior. This option disables permissive behaviors, and sets the [/Zc](../../build/reference/zc-conformance.md) compiler options for strict conformance. In the IDE, this option also makes the IntelliSense engine underline non-conforming code.
 
 By default, the **/permissive-** option is set in new projects created by Visual Studio 2017 version 15.5 and later versions. It is not set by default in earlier versions. When the option is set, the compiler generates diagnostic errors or warnings when non-standard language constructs are detected in your code, including some common bugs in pre-C++11 code.

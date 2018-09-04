@@ -52,7 +52,7 @@ static void* Allocate(size_t nBytes) throw();
  Returns a void pointer to the allocated space, or NULL if there is insufficient memory available.  
   
 ### Remarks  
- Allocates memory. See [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727) for more details.  
+ Allocates memory. See [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) for more details.  
   
 ##  <a name="free"></a>  CComAllocator::Free  
  Call this static function to free allocated memory.  
@@ -66,7 +66,7 @@ static void Free(void* p) throw();
  Pointer to the allocated memory.  
   
 ### Remarks  
- Frees the allocated memory. See [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722) for more details.  
+ Frees the allocated memory. See [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) for more details.  
   
 ##  <a name="reallocate"></a>  CComAllocator::Reallocate  
  Call this static function to reallocate memory.  
@@ -86,7 +86,7 @@ static void* Reallocate(void* p, size_t nBytes) throw();
  Returns a void pointer to the allocated space, or NULL if there is insufficient memory  
   
 ### Remarks  
- Resizes the amount of allocated memory. See [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280) for more details.  
+ Resizes the amount of allocated memory. See [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc) for more details.  
   
 ## See Also  
  [CComHeapPtr Class](../../atl/reference/ccomheapptr-class.md)   

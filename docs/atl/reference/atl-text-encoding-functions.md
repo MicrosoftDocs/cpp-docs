@@ -5,6 +5,9 @@ ms.date: "11/04/2016"
 ms.topic: "reference"
 f1_keywords: ["atlbase/ATL::AtlGetHexValue", "atlbase/ATL::AtlGetVersion", "atlenc/ATL::AtlHexDecode", "atlenc/ATL::AtlHexDecodeGetRequiredLength", "atlenc/ATL::AtlHexEncode", "atlenc/ATL::AtlHexEncodeGetRequiredLength", "atlenc/ATL::AtlHexValue", "atlenc/ATL::BEncode", "atlenc/ATL::BEncodeGetRequiredLength", "atlenc/ATL::EscapeXML", "atlenc/ATL::GetExtendedChars", "atlenc/ATL::IsExtendedChar", "atlenc/ATL::QEncode", "atlenc/ATL::QEncodeGetRequiredLength", "atlenc/ATL::QPDecode", "atlenc/ATL::QPDecodeGetRequiredLength", "atlenc/ATL::QPEncode", "atlenc/ATL::QPEncodeGetRequiredLength", "atlenc/ATL::UUDecode", "atlenc/ATL::UUDecodeGetRequiredLength", "atlenc/ATL::UUEncode", "atlenc/ATL::UUEncodeGetRequiredLength"]
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
+author: "mikeblome"
+ms.author: "mblome"
+ms.workload: ["cplusplus"]
 ---
 # ATL Text Encoding Functions
 These functions support text encoding and decoding.
@@ -419,7 +422,7 @@ inline BOOL QPDecode(
  Pointer to a variable that contains the length in bytes of *szDest*. If the function succeeds, the variable receives the number of bytes written to the buffer. If the function fails, the variable receives the required length in bytes of the buffer.  
   
  [in] *dwFlags*  
- Flags describing how the conversion is to be performed. See [ATLSMTP_QPENCODE Flags](http://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
+ ATLSMTP_QPENCODE flags describing how the conversion is to be performed.  
   
 ### Return Value  
  Returns TRUE on success, FALSE on failure.  

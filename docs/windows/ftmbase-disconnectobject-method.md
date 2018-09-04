@@ -13,27 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # FtmBase::DisconnectObject Method
-Forcibly releases all external connections to an object. The object's server calls the object's implementation of this method prior to shutting down.  
-  
-## Syntax  
-  
-```  
-STDMETHODIMP DisconnectObject(  
-   __in DWORD dwReserved  
-) override;  
-```  
-  
-#### Parameters  
- `dwReserved`  
- Reserved for future use; must be zero.  
-  
-## Return Value  
- S_OK if successful; otherwise, an HRESULT that indicates the error.  
-  
-## Requirements  
- **Header:** ftm.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [FtmBase Class](../windows/ftmbase-class.md)
+
+Forcibly releases all external connections to an object. The object's server calls the object's implementation of this method prior to shutting down.
+
+## Syntax
+
+```cpp
+STDMETHODIMP DisconnectObject(
+   __in DWORD dwReserved
+) override;
+```
+
+### Parameters
+
+*dwReserved*  
+Reserved for future use; must be zero.
+
+## Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## Requirements
+
+**Header:** ftm.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[FtmBase Class](../windows/ftmbase-class.md)

@@ -22,8 +22,6 @@ MFC supports several different ways of working with dates and times. These inclu
   
 ## What do you want to know more about  
   
--   [Date and Time: General-Purpose Classes](../atl-mfc-shared/date-and-time-general-purpose-classes.md)  
-  
 -   [Date and Time: SYSTEMTIME Support](../atl-mfc-shared/date-and-time-systemtime-support.md)  
   
 -   [Date and Time: Automation Support](../atl-mfc-shared/date-and-time-automation-support.md)  

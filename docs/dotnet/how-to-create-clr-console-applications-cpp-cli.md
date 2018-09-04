@@ -20,7 +20,7 @@ You can use the Console Application template to create a console app project tha
   
 -   References to these .NET Framework namespaces:  
   
-    -   [System](https://msdn.microsoft.com/en-us/library/system.appdomainmanager.appdomainmanager.aspx)—Contains fundamental classes and base classes that define commonly used values and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.  
+    -   [System](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)—Contains fundamental classes and base classes that define commonly used values and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.  
   
     -   mscorlib—The assembly DLL that supports .NET Framework development.  
   

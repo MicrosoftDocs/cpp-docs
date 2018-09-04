@@ -1,7 +1,7 @@
 ---
 title: ".ALPHA | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".ALPHA"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .ALPHA
-Orders segments alphabetically.  
-  
-## Syntax  
-  
-```  
-  
-.ALPHA  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Orders segments alphabetically.
+
+## Syntax
+
+> .ALPHA
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "operator NOT | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator NOT"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator NOT
-Returns *expression* with all bits reversed.  
-  
-## Syntax  
-  
-```  
-  
-NOT expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Returns *expression* with all bits reversed.
+
+## Syntax
+
+> NOT expression
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

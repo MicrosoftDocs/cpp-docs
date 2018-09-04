@@ -15,12 +15,7 @@ ms.workload: ["cplusplus"]
 A postfix expression followed by an expression in square brackets (**[ ]**) is a subscripted representation of an element of an array object. A subscript expression represents the value at the address that is *expression* positions beyond *postfix-expression* when expressed as  
   
 ```  
-  
-postfix-expression  
-[  
-expression  
-]  
-  
+postfix-expression [ expression ]
 ```  
   
  Usually, the value represented by *postfix-expression* is a pointer value, such as an array identifier, and *expression* is an integral value. However, all that is required syntactically is that one of the expressions be of pointer type and the other be of integral type. Thus the integral value could be in the *postfix-expression* position and the pointer value could be in the brackets in the *expression*, or "subscript," position. For example, this code is legal:  
@@ -36,7 +31,7 @@ int main() {
   
  Subscript expressions are generally used to refer to array elements, but you can apply a subscript to any pointer. Whatever the order of values, *expression* must be enclosed in brackets (**[ ]**).  
   
- The subscript expression is evaluated by adding the integral value to the pointer value, then applying the indirection operator (**\***) to the result. (See [Indirection and Address-of Operators](../c-language/indirection-and-address-of-operators.md) for a discussion of the indirection operator.) In effect, for a one-dimensional array, the following four expressions are equivalent, assuming that `a` is a pointer and `b` is an integer:  
+ The subscript expression is evaluated by adding the integral value to the pointer value, then applying the indirection operator (<strong>\*</strong>) to the result. (See [Indirection and Address-of Operators](../c-language/indirection-and-address-of-operators.md) for a discussion of the indirection operator.) In effect, for a one-dimensional array, the following four expressions are equivalent, assuming that `a` is a pointer and `b` is an integer:  
   
 ```  
 a[b]  

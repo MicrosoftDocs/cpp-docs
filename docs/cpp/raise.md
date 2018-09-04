@@ -18,9 +18,7 @@ Emphasizes the call site of an event.
 ## Syntax  
   
 ```  
-  
 __raise method-declarator;  
-  
 ```  
   
 ## Remarks  
@@ -57,7 +55,7 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Event Handling](../cpp/event-handling.md)   
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

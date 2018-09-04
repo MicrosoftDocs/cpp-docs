@@ -47,4 +47,4 @@ See the examples in [C Runtime Error R6035](../../error-messages/tool-errors/c-r
 
 ## See also
 
-[Compiler Security Checks In Depth](http://go.microsoft.com/fwlink/p/?linkid=7260)<br/>
+[Microsoft Security Response Center](https://www.microsoft.com/en-us/msrc?rtc=1)

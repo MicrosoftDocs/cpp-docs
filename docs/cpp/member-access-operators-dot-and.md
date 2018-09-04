@@ -27,7 +27,7 @@ postfix-expression -> name
   
 1.  In the first form, *postfix-expression* represents a value of struct, class, or union type, and *name* names a member of the specified structure, union, or class. The value of the operation is that of *name* and is an l-value if *postfix-expression* is an l-value.  
   
-2.  In the second form, *postfix-expression* represents a pointer to a structure, union, or class, and *name* names a member of the specified structure, union, or class. The value is that of *name* and is an l-value. The **->** operator dereferences the pointer. Therefore, the expressions *e***->**`member` and **(\****e***)**.`member` (where *e* represents a pointer) yield identical results (except when the operators **->** or **\*** are overloaded).  
+2.  In the second form, *postfix-expression* represents a pointer to a structure, union, or class, and *name* names a member of the specified structure, union, or class. The value is that of *name* and is an l-value. The **->** operator dereferences the pointer. Therefore, the expressions `e->member` and `(*e).member` (where *e* represents a pointer) yield identical results (except when the operators **->** or <strong>\*</strong> are overloaded).  
   
 ## Example  
  The following example demonstrates both forms of the member access operator.  
@@ -64,7 +64,7 @@ int main() {
 2/1/2000  
 ```  
   
-## See Also  
+## See also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)   

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComClassFactoryAutoThread Class
-This class implements the [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) interface, and allows objects to be created in multiple apartments.  
+This class implements the [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) interface, and allows objects to be created in multiple apartments.  
   
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
@@ -100,7 +100,7 @@ STDMETHODIMP LockServer(BOOL fLock);
  Calling `LockServer` allows a client to hold onto a class factory so that multiple objects can be quickly created.  
   
 ## See Also  
- [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364)   
+ [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)   
  [CComClassFactory2 Class](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactorySingleton Class](../../atl/reference/ccomclassfactorysingleton-class.md)   
  [CComObjectRootEx Class](../../atl/reference/ccomobjectrootex-class.md)   

@@ -13,7 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerWindows7 Class
-The `CMFCVisualManagerWindows7` gives an application the appearance of a [!INCLUDE[win7](../../build/includes/win7_md.md)] application.  
+The `CMFCVisualManagerWindows7` gives an application the appearance of a Windows 7 application.  
   
 ## Syntax  
   
@@ -88,7 +88,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |`CMFCVisualManagerWindows7::SetStyle`|Sets the color scheme of the `CMFCVisualManagerWindows7` GUI.|  
   
 ## Remarks  
- Use the `CMFCVisualManagerWindows7` class to change the appearance of your application to mimic a default [!INCLUDE[win7](../../build/includes/win7_md.md)] application. This class might not be valid if your application is running on a version of Windows earlier than [!INCLUDE[win7](../../build/includes/win7_md.md)]. In that scenario, the application uses the default visual manager defined in [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
+ Use the `CMFCVisualManagerWindows7` class to change the appearance of your application to mimic a default Windows 7 application. This class might not be valid if your application is running on a version of Windows earlier than Windows 7. In that scenario, the application uses the default visual manager defined in [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
   
  The CMFCVisualManagerWindows7 inherits multiple methods from both the [CMFCVisualManagerWindows Class](../../mfc/reference/cmfcvisualmanagerwindows-class.md) and the `CMFCVisualManager` class. The methods listed in the previous section are methods new to the `CMFCVisualManagerWindows7` class.  
   

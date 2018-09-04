@@ -11,28 +11,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HStringReference::CopyTo Method
-Copies the current HStringReference object to an HSTRING object.  
-  
-## Syntax  
-  
-```  
-  
-HRESULT CopyTo(  
-   _Out_ HSTRING *str  
-   ) const throw();  
-```  
-  
-#### Parameters  
- `str`  
- The HSTRING that receives the copy.  
-  
-## Remarks  
- This method calls the [WindowsDuplicateString](http://msdn.microsoft.com/library/br224634.aspx) function.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HStringReference Class](../windows/hstringreference-class.md)
+
+Copies the current **HStringReference** object to an HSTRING object.
+
+## Syntax
+
+```cpp
+HRESULT CopyTo(
+   _Out_ HSTRING *str
+   ) const throw();
+```
+
+### Parameters
+
+*str*  
+The HSTRING that receives the copy.
+
+## Remarks
+
+This method calls the [WindowsDuplicateString](https://msdn.microsoft.com/library/br224634.aspx) function.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HStringReference Class](../windows/hstringreference-class.md)

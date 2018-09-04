@@ -8,8 +8,8 @@ f1_keywords: ["COLLECTION/Platform::Collections::VectorView::VectorView", "COLLE
 dev_langs: ["C++"]
 helpviewer_keywords: ["VectorView Class"]
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::VectorView Class
@@ -30,7 +30,7 @@ template <typename T, typename E>
  Specifies a binary predicate for testing equality with values of type `T`. The default value is `std::equal_to<T>`.  
   
 ### Remarks  
- The `VectorView` class implements the [Windows::Foundation::Collections::IVectorView\<T>](http://go.microsoft.com/fwlink/p/?LinkId=262411) interface, and support for Standard Template Library iterators.  
+ The `VectorView` class implements the [Windows::Foundation::Collections::IVectorView\<T>](/uwp/api/Windows.Foundation.Collections.IVectorView_T_) interface, and support for Standard Template Library iterators.  
   
 ### Members  
   

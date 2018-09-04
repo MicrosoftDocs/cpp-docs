@@ -51,13 +51,13 @@ These are the assumptions made in the exception handling description:
 
 6. The stack frame layout is organized as described in next section.
 
-## ARM64 Stack Frame Layout
+## ARM64 stack frame layout
 
 ![stack frame layout](../build/media/arm64-exception-handling-stack-frame.png "stack frame layout")
 
 For frame chained functions, the fp and lr pair can be saved at any position in the local variable area depending on optimization considerations. The goal is to maximize the number of locals that can be reached by one single instruction based on frame pointer (r29) or stack pointer (sp). However for `alloca` functions, it must be chained and r29 must point to the bottom of stack. To allow for better register-pair-addressing-mode coverage, nonvolatile register aave areas are positioned at the top of the Local area stack. Here are examples that illustrate several of the most efficient prolog sequences. For the sake of clarity and better cache locality, the order of storing callee-saved registers in all canonical prologs is in "growing up" order. `#framesz` below represents the size of entire stack (excluding alloca area). `#localsz` and `#outsz` denote local area size (including the save area for the \<r29, lr> pair) and outgoing parameter size, respectively.
 
-1. chained, #localsz <= 512
+1. Chained, #localsz <= 512
 
     ```asm
         stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
@@ -71,7 +71,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         sub    sp, #outsz               // (optional for #outsz != 0)
     ```
 
-2. chained, #localsz > 512
+2. Chained, #localsz > 512
 
     ```asm
         stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
@@ -85,7 +85,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         add    r29,sp, #outsz           // setup r29 points to bottom of local area
     ```
 
-3. unchained, leaf functions (lr unsaved)
+3. Unchained, leaf functions (lr unsaved)
 
     ```asm
         stp    r19,r20,[sp, -72]!       // pre-indexed, save in 1st FP/INT reg-pair
@@ -128,7 +128,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         sub    sp,#framesz-16           // allocate the remaining local area
     ```
 
-   * The reg save area allocation is not folded into the stp because a pre-indexed reg-lr stp cannot be represented with the unwind codes.
+   \* The reg save area allocation is not folded into the stp because a pre-indexed reg-lr stp cannot be represented with the unwind codes.
 
    All locals are accessed based on SP. \<r29> points to the previous frame.
 
@@ -157,7 +157,7 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
 
    For optimization purpose, r29 can be put at any position in local area to provide a better coverage for "reg-pair" and pre-/post-indexed offset addressing mode. Locals below frame pointers can be accessed based on SP.
 
-7. chained, frame size > 4K, with/without  alloca(),
+7. Chained, frame size > 4K, with or without alloca(),
 
     ```asm
         stp    r29, lr, [sp, -80]!          // pre-indexed, save <r29,lr>
@@ -180,33 +180,9 @@ For frame chained functions, the fp and lr pair can be saved at any position in 
         ldp    r29, lr, [sp], -80           // post-indexed, reload <r29,lr>
     ```
 
-## ARM64 RFG (/d2rwg, /d2rfgfull)
+## ARM64 exception handling information
 
-When ARM64 RFG is enabled (/d2rwg, /d2rfgfull) lr is encrypted before being stored on the stack and decrypted after being loaded from the stack. The actual encryption/decryption varies depending on the flavor of RFG.
-
-### Example
-
-```asm
-    sub    sp,sp,#0x10
-    add    lr,lr,x28                // add cookie reg to lr (start of encryption)
-    ror    lr,lr,x28                // ror lr with cookie reg (encryption contd.)
-    eor    lr,lr,x28                // eor lr with cookie reg (end of encryption)
-    stp    x19,lr,[sp]              // store x19, encrypted lr on the stack
-    ...
-    ...
-    ldp    x19,lr,[sp]              // load x19, encrypted lr from the stack
-    eor    lr,lr,x28                // eor lr with cookie reg (start of decryption)
-    neg    xip0,x28                 // neg x28 (decryption contd. simulate rol)
-    ror    lr,lr,xip0               // ror lr, neg x28(decryption contd. simulate rol)
-    sub    lr,lr,x28                // sub cookie reg from lr (end of decryption)
-    add    sp,sp,#0x10
-```
-
-With the current implementation, functions which have rfg enabled are required to emit .xdata.
-
-## ARM64 Exception Handling Information
-
-### .pdata Records
+### .pdata records
 
 The .pdata records are an ordered array of fixed-length items which describe every stack-manipulating function in a PE binary. Note carefully the phrase "stack-manipulating": leaf functions which do not require any local storage and which do not need to save/restore non-volatile registers do not require a .pdata record; these should be explicitly omitted to save space. A unwind from one of these functions can simply get the return address from LR to move up to the caller.
 
@@ -224,7 +200,7 @@ The fields are as follows:
 
 - **Packed Unwind Data** is a compressed description of the operations needed to unwind from a function, assuming a canonical form. In this case, no .xdata record is required.
 
-### .xdata Records
+### .xdata records
 
 When the packed unwind format is insufficient to describe the unwinding of a function, a variable-length .xdata record must be created. The address of this record is stored in the second word of the .pdata record. The format of the .xdata is a packed variable-length set of words:
 
@@ -294,7 +270,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 
 It should be noted that although the prolog and each epilog has its own index into the unwind codes, the table is shared between them, and it is entirely possible (and not altogether uncommon) that they can all share the same codes (see Example 2 in Appendix A below). Compiler writers should optimize for this case, in particular because the largest index that can be specified is 255, thus limiting the total number of unwind codes for a particular function.
 
-### Unwind Codes
+### Unwind codes
 
 The array of unwind codes is pool of sequences that describe exactly how to undo the effects of the prolog, in the order in which the operations need to be undone. The unwind codes can be thought of as a mini instruction set, encoded as a string of bytes. When execution is complete, the return address to the calling function is in the lr register, and all non-volatile registers are restored to their values at the time the function was called.
 

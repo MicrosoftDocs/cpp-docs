@@ -8,8 +8,8 @@ f1_keywords: ["COLLECTION/Platform::Collections::InputIterator::InputIterator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["InputIterator Class"]
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Collections::InputIterator Class
@@ -92,7 +92,7 @@ pointer operator->() const;
   
 
 
-## <a name="operator-dereference"></a>  InputIterator::operator* Operator
+## <a name="operator-dereference"></a>  InputIterator::operator\* Operator
 Retrieves a reference to the element specified by the current InputIterator.  
   
 ### Syntax  

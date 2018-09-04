@@ -13,23 +13,27 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # AsyncBase::TryTransitionToCompleted Method
-Indicates whether the current asynchronous operation has completed.  
-  
-## Syntax  
-  
-```  
-bool TryTransitionToCompleted(  
-   void  
-);  
-```  
-  
-## Return Value  
- `true` if the asynchronous operation has completed; otherwise, `false`.  
-  
-## Requirements  
- **Header:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## See Also  
- [AsyncBase Class](../windows/asyncbase-class.md)
+
+Indicates whether the current asynchronous operation has completed.
+
+## Syntax
+
+```cpp
+bool TryTransitionToCompleted(
+   void
+);
+```
+
+## Return Value
+
+**true** if the asynchronous operation has completed; otherwise, **false**.
+
+## Requirements
+
+**Header:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## See Also
+
+[AsyncBase Class](../windows/asyncbase-class.md)

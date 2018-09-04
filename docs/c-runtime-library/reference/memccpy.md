@@ -52,7 +52,7 @@ If the character *c* is copied, **_memccpy** returns a pointer to the char in *d
 
 The **_memccpy** function copies 0 or more characters of *src* to *dest*, halting when the character *c* has been copied or when *count* characters have been copied, whichever comes first.
 
-**Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Security Note** Make sure that the destination buffer is the same size or larger than the source buffer. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ## Requirements
 

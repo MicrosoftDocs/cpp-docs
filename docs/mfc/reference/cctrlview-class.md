@@ -119,7 +119,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
   
 ### Parameters  
  *cs*  
- A [CREATESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms632603) structure.  
+ A [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) structure.  
   
 ### Return Value  
  Nonzero if the window creation should continue; 0 to indicate creation failure.  

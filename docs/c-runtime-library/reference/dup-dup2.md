@@ -44,7 +44,7 @@ For more information about these and other return codes, see [_doserrno, errno, 
 
 The **_dup** and **_dup2** functions associate a second file descriptor with a currently open file. These functions can be used to associate a predefined file descriptor, such as that for **stdout**, with a different file. Operations on the file can be carried out using either file descriptor. The type of access allowed for the file is unaffected by the creation of a new descriptor. **_dup** returns the next available file descriptor for the given file. **_dup2** forces *fd2* to refer to the same file as *fd1*. If *fd2* is associated with an open file at the time of the call, that file is closed.
 
-Both **_dup** and **_dup2** accept file descriptors as parameters. To pass a stream (**FILE \***) to either of these functions, use [_fileno](fileno.md). The **fileno** routine returns the file descriptor currently associated with the given stream. The following example shows how to associate **stderr** (defined as **FILE \*** in Stdio.h) with a file descriptor:
+Both **_dup** and **_dup2** accept file descriptors as parameters. To pass a stream (`FILE *`) to either of these functions, use [_fileno](fileno.md). The **fileno** routine returns the file descriptor currently associated with the given stream. The following example shows how to associate **stderr** (defined as `FILE *` in Stdio.h) with a file descriptor:
 
 ```C
 int cstderr = _dup( _fileno( stderr ));

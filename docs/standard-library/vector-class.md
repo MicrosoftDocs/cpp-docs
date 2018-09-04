@@ -29,7 +29,7 @@ class vector
  The element data type to be stored in the vector
 
 *Allocator*  
- The type that represents the stored allocator object that encapsulates details about the vector's allocation and deallocation of memory. This argument is optional and the default value is **allocator***\<Type>.*
+ The type that represents the stored allocator object that encapsulates details about the vector's allocation and deallocation of memory. This argument is optional and the default value is `allocator<Type>`.
 
 ## Remarks
 
@@ -1096,7 +1096,7 @@ int main( )
    const int& ii = v1.front( );
 
    cout << "The first integer of v1 is "<< i << endl;
-   // by incrementing i, we move the the front reference to the second element
+   // by incrementing i, we move the front reference to the second element
    i++;
    cout << "Now, the first integer of v1 is "<< i << endl;
 }
@@ -1470,7 +1470,7 @@ void push_back(T&& Val);
 
 ### Parameters
 
-*Val*
+*Val*<br/>
  The value to assign to the element added to the end of the vector.
 
 ### Example

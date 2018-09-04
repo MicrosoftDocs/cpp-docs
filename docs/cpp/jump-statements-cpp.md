@@ -34,5 +34,5 @@ goto identifier;
   
 -   [goto Statement](../cpp/goto-statement-cpp.md)  
   
-## See Also  
+## See also  
  [Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)

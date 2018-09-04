@@ -5,8 +5,8 @@ ms.date: "01/22/2017"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Array and WriteOnlyArray (C++/CX)
@@ -43,7 +43,7 @@ You can freely use regular C-style arrays or [std::array](../standard-library/ar
  [!code-cpp[cx_arrays#01](../cppcx/codesnippet/CPP/js-array/class1.cpp#01)]  
   
 ## ReceiveArray pattern  
- In the ReceiveArray pattern, client code declares an array and passes it to a method which allocates the memory for it and initializes it. The C++ input parameter type is is a pointer-to-hat: `Array<T>^*`. The following example shows how to declare an array object in JavaScript, and pass it to a C++ function that allocates the memory, initializes the elements, and returns it to JavaScript. JavaScript treats the allocated array as a return value, but the C++ function treats it as an out parameter.  
+ In the ReceiveArray pattern, client code declares an array and passes it to a method which allocates the memory for it and initializes it. The C++ input parameter type is a pointer-to-hat: `Array<T>^*`. The following example shows how to declare an array object in JavaScript, and pass it to a C++ function that allocates the memory, initializes the elements, and returns it to JavaScript. JavaScript treats the allocated array as a return value, but the C++ function treats it as an out parameter.  
   
  [!code-javascript[cx_arrays#102](../cppcx/codesnippet/JavaScript/array-and-writeonlyarray-c-_3.js)]  
   
@@ -75,12 +75,12 @@ You can freely use regular C-style arrays or [std::array](../standard-library/ar
 ## Use ArrayReference to avoid copying data  
  In some scenarios where data is being passed across the ABI into a [Platform::Array](../cppcx/platform-array-class.md), and you ultimately want to process that data in a C-style array for efficiency, you can use [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) to avoid the extra copy operation. When you pass a [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) as an argument to a parameter that takes a `Platform::Array`, the `ArrayReference` will store the data directly into a C-style array that you specify. Just be aware that `ArrayReference` has no lock on the source data, so if it that data is modified or deleted on another thread before the call completes, the results will be undefined.  
   
- The following code snippet shows how to copy the results of a [DataReader](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.datareader.aspx) operation into a `Platform::Array` (the usual pattern), and then how to substitute `ArrayReference` to copy the data directly into a C-style array:  
+ The following code snippet shows how to copy the results of a [DataReader](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.datareader.aspx) operation into a `Platform::Array` (the usual pattern), and then how to substitute `ArrayReference` to copy the data directly into a C-style array:  
   
  [!code-cpp[cx_arrays#07](../cppcx/codesnippet/CPP/js-array/class1.h#07)]  
   
 ## Avoid exposing an Array as a property  
- In general, you should avoid exposing a `Platform::Array` type as a property in a ref class because the entire array is returned even when client code is only attempting to access a single element. When you need to expose a sequence container as a property in a public ref class, [Windows::Foundation::IVector](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) is a better choice. In private or internal APIs (which are not published to metadata), consider using a standard C++ container such as [std::vector](../standard-library/vector-class.md).  
+ In general, you should avoid exposing a `Platform::Array` type as a property in a ref class because the entire array is returned even when client code is only attempting to access a single element. When you need to expose a sequence container as a property in a public ref class, [Windows::Foundation::IVector](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) is a better choice. In private or internal APIs (which are not published to metadata), consider using a standard C++ container such as [std::vector](../standard-library/vector-class.md).  
   
 ## See Also  
  [Type System](../cppcx/type-system-c-cx.md)   

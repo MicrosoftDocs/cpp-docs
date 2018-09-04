@@ -14,33 +14,30 @@ ms.workload: ["cplusplus"]
 # Overview of Declarations
 A "declaration" specifies the interpretation and attributes of a set of identifiers. A declaration that also causes storage to be reserved for the object or function named by the identifier is called a "definition." C declarations for variables, functions, and types have this syntax:  
   
-## Syntax  
- `declaration`:  
- *declaration-specifiers* *attribute-seq*opt*init-declarator-list*opt**;**  
-  
- /\* *attribute-seq*opt is Microsoft specific */  
-  
- *declaration-specifiers*:  
- *storage-class-specifier declaration-specifiers*opt  
-  
- *type-specifier declaration-specifiers*opt  
-  
- *type-qualifier declaration-specifiers*opt  
-  
- *init-declarator-list*:  
- *init-declarator*  
-  
- *init-declarator-list* , *init-declarator*  
-  
- *init-declarator*:  
- *declarator*  
-  
- *declarator*  **=**  *initializer*  
+## Syntax
+
+*declaration*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers* *attribute-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub>**;**
+
+/\* *attribute-seq*<sub>opt</sub> is Microsoft specific */
+
+*declaration-specifiers*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*storage-class-specifier* *declaration-specifiers*<sub>opt</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;*type-specifier* *declaration-specifiers*<sub>opt</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;*type-qualifier* *declaration-specifiers*<sub>opt</sub>  
+
+*init-declarator-list*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*  
+&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list* **,** *init-declarator*  
+
+*init-declarator*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*declarator*  
+&nbsp;&nbsp;&nbsp;&nbsp;*declarator* **=** *initializer*  
   
 > [!NOTE]
->  This syntax for `declaration` is not repeated in the following sections. Syntax in the following sections usually begins with the `declarator` nonterminal.  
+> This syntax for *declaration* is not repeated in the following sections. Syntax in the following sections usually begins with the *declarator* nonterminal.  
   
- The declarations in the *init-declarator-list* contain the identifiers being named; *init* is an abbreviation for initializer. The *init-declarator-list* is a comma-separated sequence of declarators, each of which can have additional type information, or an initializer, or both. The `declarator` contains the identifiers, if any, being declared. The *declaration-specifiers* nonterminal consists of a sequence of type and storage-class specifiers that indicate the linkage, storage duration, and at least part of the type of the entities that the declarators denote. Therefore, declarations are made up of some combination of storage-class specifiers, type specifiers, type qualifiers, declarators, and initializers.  
+ The declarations in the *init-declarator-list* contain the identifiers being named; *init* is an abbreviation for initializer. The *init-declarator-list* is a comma-separated sequence of declarators, each of which can have additional type information, or an initializer, or both. The *declarator* contains the identifiers, if any, being declared. The *declaration-specifiers* nonterminal consists of a sequence of type and storage-class specifiers that indicate the linkage, storage duration, and at least part of the type of the entities that the declarators denote. Therefore, declarations are made up of some combination of storage-class specifiers, type specifiers, type qualifiers, declarators, and initializers.  
   
  Declarations can contain one or more of the optional attributes listed in *attribute-seq*; *seq* is an abbreviation for sequence. These Microsoft-specific attributes perform a variety of functions, which are discussed in detail throughout this book.  
   
@@ -52,7 +49,7 @@ int const *fp;
   
  declares a variable named `fp` as a pointer to a nonmodifiable (**const**) `int` value. You can define more than one variable in a declaration by using multiple declarators, separated by commas.  
   
- A declaration must have at least one declarator, or its type specifier must declare a structure tag, union tag, or members of an enumeration. Declarators provide any remaining information about an identifier. A declarator is an identifier that can be modified with brackets (**[ ]**), asterisks (**\***), or parentheses ( **( )** ) to declare an array, pointer, or function type, respectively. When you declare simple variables (such as character, integer, and floating-point items), or structures and unions of simple variables, the `declarator` is just an identifier. For more information on declarators, see [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md).  
+ A declaration must have at least one declarator, or its type specifier must declare a structure tag, union tag, or members of an enumeration. Declarators provide any remaining information about an identifier. A declarator is an identifier that can be modified with brackets (**[ ]**), asterisks (<strong>\*</strong>), or parentheses ( **( )** ) to declare an array, pointer, or function type, respectively. When you declare simple variables (such as character, integer, and floating-point items), or structures and unions of simple variables, the `declarator` is just an identifier. For more information on declarators, see [Declarators and Variable Declarations](../c-language/declarators-and-variable-declarations.md).  
   
  All definitions are implicitly declarations, but not all declarations are definitions. For example, variable declarations that begin with the `extern` storage-class specifier are "referencing," rather than "defining" declarations. If an external variable is to be referred to before it is defined, or if it is defined in another source file from the one where it is used, an `extern` declaration is necessary. Storage is not allocated by "referencing" declarations, nor can variables be initialized in declarations.  
   

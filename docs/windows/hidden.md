@@ -13,37 +13,39 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # hidden
-Indicates that the item exists but should not be displayed in a user-oriented browser.  
-  
-## Syntax  
-  
-```  
-  
-[hidden]  
-  
-```  
-  
-## Remarks  
- The **hidden** C++ attribute has the same functionality as the [hidden](http://msdn.microsoft.com/library/windows/desktop/aa366861) MIDL attribute.  
-  
-## Example  
- See the example for [bindable](../windows/bindable.md) for an example of how to use **hidden**.  
-  
-## Requirements  
-  
-### Attribute Context  
-  
-|||  
-|-|-|  
-|**Applies to**|`interface`, **class**, `struct`, method, property|  
-|**Repeatable**|No|  
-|**Required attributes**|**coclass** (when applied to **class** or `struct`)|  
-|**Invalid attributes**|None|  
-  
- For more information, see [Attribute Contexts](../windows/attribute-contexts.md).  
-  
-## See Also  
- [IDL Attributes](../windows/idl-attributes.md)   
- [Interface Attributes](../windows/interface-attributes.md)   
- [Class Attributes](../windows/class-attributes.md)   
- [Method Attributes](../windows/method-attributes.md)   
+
+Indicates that the item exists but should not be displayed in a user-oriented browser.
+
+## Syntax
+
+```cpp
+[hidden]
+```
+
+## Remarks
+
+The **hidden** C++ attribute has the same functionality as the [hidden](/windows/desktop/Midl/hidden) MIDL attribute.
+
+## Example
+
+See the example for [bindable](../windows/bindable.md) for an example of how to use **hidden**.
+
+## Requirements
+
+### Attribute Context
+
+|||
+|-|-|
+|**Applies to**|**interface**, **class**, **struct**, method, property|
+|**Repeatable**|No|
+|**Required attributes**|**coclass** (when applied to **class** or **struct**)|
+|**Invalid attributes**|None|
+
+For more information, see [Attribute Contexts](../windows/attribute-contexts.md).
+
+## See Also
+
+[IDL Attributes](../windows/idl-attributes.md)  
+[Interface Attributes](../windows/interface-attributes.md)  
+[Class Attributes](../windows/class-attributes.md)  
+[Method Attributes](../windows/method-attributes.md)  

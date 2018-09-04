@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # CMFCPopupMenu Class
 Implements Windows pop-up menu functionality and extends it by adding features such as tear-off menus and tooltips.
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
   
 ## Syntax  
   
@@ -345,7 +345,7 @@ static void EnableMenuSound(BOOL bEnable = TRUE);
  TRUE to enable sound, FALSE otherwise.  
   
 ### Remarks  
- If you enable sound, the framework calls the [PlaySound](http://msdn.microsoft.com/library/windows/desktop/bb774426) method when a user opens a pop-up menu or selects a menu command. By default, this feature is enabled.  
+ If you enable sound, the framework calls the [PlaySound](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iusernotification-playsound) method when a user opens a pop-up menu or selects a menu command. By default, this feature is enabled.  
   
 ##  <a name="enableresize"></a>  CMFCPopupMenu::EnableResize  
 

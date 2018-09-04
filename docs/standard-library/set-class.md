@@ -27,16 +27,16 @@ class set
 
 ### Parameters
 
-*Key*
+*Key*<br/>
  The element data type to be stored in the set.
 
-*Traits*
+*Traits*<br/>
  The type that provides a function object that can compare two element values as sort keys to determine their relative order in the set. This argument is optional, and the binary predicate **less** *\<Key>* is the default value.
 
 In C++14 you can enable heterogeneous lookup by specifying the `std::less<>` or `std::greater<>` predicate that has no type parameters. For more information, see [Heterogeneous Lookup in Associative Containers](../standard-library/stl-containers.md#sequence_containers)
 
-*Allocator*
- The type that represents the stored allocator object that encapsulates details about the set's allocation and deallocation of memory. This argument is optional, and the default value is **allocator***\<Key>.*
+*Allocator*<br/>
+ The type that represents the stored allocator object that encapsulates details about the set's allocation and deallocation of memory. This argument is optional, and the default value is `allocator<Key>`.
 
 ## Remarks
 
@@ -396,7 +396,7 @@ size_type count(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key of the elements to be matched from the set.
 
 ### Return Value
@@ -842,7 +842,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the set being searched.
 
 ### Return Value
@@ -927,16 +927,16 @@ size_type erase(
 
 ### Parameters
 
-*Where*
+*Where*<br/>
  Position of the element to be removed.
 
-*First*
+*First*<br/>
  Position of the first element to be removed.
 
-*Last*
+*Last*<br/>
  Position just beyond the last element to be removed.
 
-*Key*
+*Key*<br/>
  The key value of the elements to be removed.
 
 ### Return Value
@@ -1039,7 +1039,7 @@ const_iterator find(const Key& key) const;
 
 ### Parameters
 
-*key*
+*key*<br/>
  The key value to be matched by the sort key of an element from the set being searched.
 
 ### Return Value
@@ -1503,7 +1503,7 @@ iterator lower_bound(const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the set being searched.
 
 ### Return Value
@@ -2123,7 +2123,7 @@ void swap(
 
 ### Parameters
 
-*right*
+*right*<br/>
  The argument set providing the elements to be swapped with the target set.
 
 ### Remarks
@@ -2192,7 +2192,7 @@ iterator upper_bound(const Key& key);
 
 ### Parameters
 
-*key*
+*key*<br/>
  The argument key to be compared with the sort key of an element from the set being searched.
 
 ### Return Value

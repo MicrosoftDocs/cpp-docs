@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ModuleBase::DecrementObjectCount Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-virtual long DecrementObjectCount() = 0;  
-```  
-  
-## Return Value  
- The count before the decrement operation.  
-  
-## Remarks  
- When implemented, decrements the number of objects tracked by the module.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ModuleBase Class](../windows/modulebase-class.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+virtual long DecrementObjectCount() = 0;
+```
+
+## Return Value
+
+The count before the decrement operation.
+
+## Remarks
+
+When implemented, decrements the number of objects tracked by the module.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ModuleBase Class](../windows/modulebase-class.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

@@ -4,17 +4,9 @@ ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-cli"]
 ms.topic: "reference"
-f1_keywords: ["<cliext/functional>", "cliext::binary_delegate", "cliext::binary_delegate_noreturn", "cliext::binary_negate", "cliext::bind1st", "cliext::bind2nd", "cliext::binder1st", "cliext::binder2nd", 
-    "cliext::divides", "cliext::equal_to", "cliext::greater", "cliext::greater_equal", "cliext::less", "cliext::less_equal", "cliext::logical_and", "cliext::logical_not", "cliext::logical_or", "cliext::minus", 
-    "cliext::modulus", "cliext::multiplies", "cliext::negate", "cliext::not_equal_to", "cliext::not1", "cliext::not2", "cliext::plus", "cliext::unary_delegate", "cliext::unary_delegate_noreturn", 
-    "cliext::unary_negate"]
+f1_keywords: ["<cliext/functional>", "cliext::binary_delegate", "cliext::binary_delegate_noreturn", "cliext::binary_negate", "cliext::bind1st", "cliext::bind2nd", "cliext::binder1st", "cliext::binder2nd", "cliext::divides", "cliext::equal_to", "cliext::greater", "cliext::greater_equal", "cliext::less", "cliext::less_equal", "cliext::logical_and", "cliext::logical_not", "cliext::logical_or", "cliext::minus", "cliext::modulus", "cliext::multiplies", "cliext::negate", "cliext::not_equal_to", "cliext::not1", "cliext::not2", "cliext::plus", "cliext::unary_delegate", "cliext::unary_delegate_noreturn", "cliext::unary_negate"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["<functional> header [STL/CLR]", "<cliext/functional> header [STL/CLR]", "functional functions [STL/CLR]", "binary_delegate function [STL/CLR]", "binary_delegate_noreturn function [STL/CLR]",
-    "binary_negate function [STL/CLR]", "bind1st function [STL/CLR]", "bind2nd function [STL/CLR]", "binder1st function [STL/CLR]", "binder2nd function [STL/CLR]", "divides function [STL/CLR]", 
-    "equal_to function [STL/CLR]", "greater function [STL/CLR]", "greater_equal function [STL/CLR]", "less function [STL/CLR]", "less_equal function [STL/CLR]", "logical_and function [STL/CLR]", 
-    "logical_not function [STL/CLR]", "logical_or function [STL/CLR]", "minus function [STL/CLR]", "modulus function [STL/CLR]", "multiplies function [STL/CLR]", "negate function [STL/CLR]", 
-    "not_equal_to function [STL/CLR]", "not1 function [STL/CLR]", "not2 function [STL/CLR]", "plus function [STL/CLR]", "unary_delegate function [STL/CLR]", "unary_delegate_noreturn function [STL/CLR]", 
-    "unary_negate function [STL/CLR]"]
+helpviewer_keywords: ["<functional> header [STL/CLR]", "<cliext/functional> header [STL/CLR]", "functional functions [STL/CLR]", "binary_delegate function [STL/CLR]", "binary_delegate_noreturn function [STL/CLR]", "binary_negate function [STL/CLR]", "bind1st function [STL/CLR]", "bind2nd function [STL/CLR]", "binder1st function [STL/CLR]", "binder2nd function [STL/CLR]", "divides function [STL/CLR]", "equal_to function [STL/CLR]", "greater function [STL/CLR]", "greater_equal function [STL/CLR]", "less function [STL/CLR]", "less_equal function [STL/CLR]", "logical_and function [STL/CLR]", "logical_not function [STL/CLR]", "logical_or function [STL/CLR]", "minus function [STL/CLR]", "modulus function [STL/CLR]", "multiplies function [STL/CLR]", "negate function [STL/CLR]", "not_equal_to function [STL/CLR]", "not1 function [STL/CLR]", "not2 function [STL/CLR]", "plus function [STL/CLR]", "unary_delegate function [STL/CLR]", "unary_delegate_noreturn function [STL/CLR]", "unary_negate function [STL/CLR]"]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
 author: "mikeblome"
 ms.author: "mblome"
@@ -39,9 +31,9 @@ Include the STL/CLR header `<cliext/functional>` to define the a number of templ
 |Delegate|Description|  
 |--------------|-----------------|  
 |[binary_delegate (STL/CLR)](#binary_delegate)|Two-argument delegate.|  
-|[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|Two-argument delegate returning `void`.|  
+|[binary_delegate_noreturn (STL/CLR)](#binary_delegate_noreturn)|Two-argument delegate returning **void**.|  
 |[unary_delegate (STL/CLR)](#unary_delegate)|One-argument delegate.|  
-|[unary_delegate_noreturn (STL/CLR)](#unary_delegate_noreturn)|One-argument delegate returning `void`.|  
+|[unary_delegate_noreturn (STL/CLR)](#unary_delegate_noreturn)|One-argument delegate returning **void**.|  
   
 |Class|Description|  
 |-----------|-----------------|  
@@ -79,7 +71,7 @@ The genereic class describes a two-argument delegate. You use it specify a deleg
   
 ### Syntax  
   
-```  
+```cpp  
 generic<typename Arg1,  
     typename Arg2,  
     typename Result>  
@@ -87,13 +79,13 @@ generic<typename Arg1,
 ```  
   
 #### Parameters  
- Arg1  
+ *Arg1*  
  The type of the first argument.  
   
- Arg2  
+ *Arg2*  
  The type of the second argument.  
   
- Result  
+ *Result*  
  The return type.  
   
 ### Remarks  
@@ -139,7 +131,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -149,25 +140,25 @@ compare(L'b', L'a') = False
 ```  
 
 ## <a name="binary_delegate_noreturn"></a> binary_delegate_noreturn (STL/CLR)
-The genereic class describes a two-argument delegate that returns `void`. You use it specify a delegate in terms of its argument.  
+The genereic class describes a two-argument delegate that returns **void**. You use it specify a delegate in terms of its argument.  
   
 ### Syntax  
   
-```  
+```cpp  
 generic<typename Arg1,  
     typename Arg2>  
     delegate void binary_delegate(Arg1, Arg2);  
 ```  
   
 #### Parameters  
- Arg1  
+ *Arg1*  
  The type of the first argument.  
   
- Arg2  
+ *Arg2*  
  The type of the second argument.  
   
 ### Remarks  
- The genereic delegate describes a two-argument function that returns `void`.  
+ The genereic delegate describes a two-argument function that returns **void**.  
   
  Note that for:  
   
@@ -207,7 +198,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -221,7 +211,7 @@ The template class describes a functor that, when called, returns the logical NO
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Fun>  
     ref class binary_negate  
     { // wrap operator()  
@@ -244,7 +234,7 @@ public:
 ```  
   
 #### Parameters  
- Fun  
+ *Fun*  
  The type of the stored functor.  
   
 ## Member Functions  
@@ -318,7 +308,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -333,7 +322,7 @@ Generates a `binder1st` for an argument and functor.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Fun,  
     typename Arg>  
     binder1st<Fun> bind1st(Fun% functor,  
@@ -341,17 +330,17 @@ template<typename Fun,
 ```  
   
 #### Template Parameters  
- Arg  
+ *Arg*  
  The type of the argument.  
   
- Fun  
+ *Fun*  
  The type of the functor.  
   
 #### Function Parameters  
- functor  
+ *functor*  
  The functor to wrap.  
   
- left  
+ *left*  
  The first argument to wrap.  
   
 ### Remarks  
@@ -397,7 +386,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -411,7 +399,7 @@ Generates a `binder2nd` for an argument and functor.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Fun,  
     typename Arg>  
     binder2nd<Fun> bind2nd(Fun% functor,  
@@ -419,17 +407,17 @@ template<typename Fun,
 ```  
   
 #### Template Parameters  
- Arg  
+ *Arg*  
  The type of the argument.  
   
- Fun  
+ *Fun*  
  The type of the functor.  
   
 #### Function Parameters  
- functor  
+ *functor*  
  The functor to wrap.  
   
- right  
+ *right*  
  The second argument to wrap.  
   
 ### Remarks  
@@ -475,7 +463,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -489,7 +476,7 @@ The template class describes a one-argument functor that, when called, returns i
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Fun>  
     ref class binder1st  
     { // wrap operator()  
@@ -511,7 +498,7 @@ public:
 ```  
   
 #### Parameters  
- Fun  
+ *Fun*  
  The type of the stored functor.  
   
 ### Member Functions  
@@ -578,7 +565,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -592,7 +578,7 @@ The template class describes a one-argument functor that, when called, returns i
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Fun>  
     ref class binder2nd  
     { // wrap operator()  
@@ -614,7 +600,7 @@ public:
 ```  
   
 #### Parameters  
- Fun  
+ *Fun*  
  The type of the stored functor.  
   
 ## Member Functions  
@@ -681,7 +667,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -695,7 +680,7 @@ The template class describes a functor that, when called, returns the first argu
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class divides  
     { // wrap operator()  
@@ -717,7 +702,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments and return value.  
   
 ### Member Functions  
@@ -780,7 +765,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -794,7 +778,7 @@ The template class describes a functor that, when called, returns true only if t
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class equal_to  
     { // wrap operator()  
@@ -816,7 +800,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -879,7 +863,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -893,7 +876,7 @@ The template class describes a functor that, when called, returns true only if t
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class greater  
     { // wrap operator()  
@@ -915,7 +898,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -978,7 +961,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -992,7 +974,7 @@ The template class describes a functor that, when called, returns true only if t
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class greater_equal  
     { // wrap operator()  
@@ -1014,7 +996,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -1077,7 +1059,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1091,7 +1072,7 @@ The template class describes a functor that, when called, returns true only if t
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class less  
     { // wrap operator()  
@@ -1113,7 +1094,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -1176,7 +1157,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1190,7 +1170,7 @@ The template class describes a functor that, when called, returns true only if t
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class less_equal  
     { // wrap operator()  
@@ -1212,7 +1192,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -1275,7 +1255,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1289,7 +1268,7 @@ The template class describes a functor that, when called, returns true only if b
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class logical_and  
     { // wrap operator()  
@@ -1311,7 +1290,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -1374,7 +1353,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1388,7 +1366,7 @@ The template class describes a functor that, when called, returns true only if e
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class logical_not  
     { // wrap operator()  
@@ -1408,7 +1386,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -1463,7 +1441,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1476,7 +1453,7 @@ The template class describes a functor that, when called, returns true only if e
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class logical_or  
     { // wrap operator()  
@@ -1498,7 +1475,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -1561,7 +1538,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1575,7 +1551,7 @@ The template class describes a functor that, when called, returns the first argu
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class minus  
     { // wrap operator()  
@@ -1597,7 +1573,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments and return value.  
   
 ### Member Functions  
@@ -1660,7 +1636,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1674,7 +1649,7 @@ The template class describes a functor that, when called, returns the first argu
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class modulus  
     { // wrap operator()  
@@ -1696,7 +1671,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments and return value.  
   
 ### Member Functions  
@@ -1759,7 +1734,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1773,7 +1747,7 @@ The template class describes a functor that, when called, returns the first argu
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class multiplies  
     { // wrap operator()  
@@ -1795,7 +1769,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments and return value.  
   
 ### Member Functions  
@@ -1858,7 +1832,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1872,7 +1845,7 @@ The template class describes a functor that, when called, returns its argument n
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class negate  
     { // wrap operator()  
@@ -1892,7 +1865,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -1947,7 +1920,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -1960,7 +1932,7 @@ The template class describes a functor that, when called, returns true only if t
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class not_equal_to  
     { // wrap operator()  
@@ -1982,7 +1954,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments.  
   
 ### Member Functions  
@@ -2045,7 +2017,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2059,17 +2030,17 @@ Generates a `unary_negate` for a functor.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Fun>  
     unary_negate<Fun> not1(Fun% functor);  
 ```  
   
 #### Template Parameters  
- Fun  
+ *Fun*  
  The type of the functor.  
   
 #### Function Parameters  
- functor  
+ *functor*  
  The functor to wrap.  
   
 ### Remarks  
@@ -2114,7 +2085,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2128,17 +2098,17 @@ Generates a `binary_negate` for a functor.
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Fun>  
     binary_negate<Fun> not2(Fun% functor);  
 ```  
   
 #### Template Parameters  
- Fun  
+ *Fun*  
  The type of the functor.  
   
 #### Function Parameters  
- functor  
+ *functor*  
  The functor to wrap.  
   
 ### Remarks  
@@ -2191,7 +2161,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2206,7 +2175,7 @@ The template class describes a functor that, when called, returns the first argu
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Arg>  
     ref class plus  
     { // wrap operator()  
@@ -2228,7 +2197,7 @@ public:
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the arguments and return value.  
   
 ### Member Functions  
@@ -2291,7 +2260,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2305,17 +2273,17 @@ The genereic class describes a one-argument delegate. You use it specify a deleg
   
 ### Syntax  
   
-```  
+```cpp  
 generic<typename Arg,  
     typename Result>  
     delegate Result unary_delegate(Arg);  
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the argument.  
   
- Result  
+ *Result*  
  The return type.  
   
 ### Remarks  
@@ -2356,7 +2324,6 @@ int main()
     System::Console::WriteLine("hash(L'b') = {0}", myhash(L'b'));   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2365,21 +2332,21 @@ hash(L'b') = 22
 ```  
 
 ## <a name="unary_delegate_noreturn"></a> unary_delegate_noreturn (STL/CLR)
-The genereic class describes a one-argument delegate that returns `void`. You use it specify a delegate in terms of its argument type.  
+The genereic class describes a one-argument delegate that returns **void**. You use it specify a delegate in terms of its argument type.  
   
 ### Syntax  
   
-```  
+```cpp  
 generic<typename Arg>  
     delegate void unary_delegate_noreturn(Arg);  
 ```  
   
 #### Parameters  
- Arg  
+ *Arg*  
  The type of the argument.  
   
 ### Remarks  
- The genereic delegate describes a one-argument function that returns `void`.  
+ The genereic delegate describes a one-argument function that returns **void**.  
   
  Note that for:  
   
@@ -2417,7 +2384,6 @@ int main()
     myhash(L'b');   
     return (0);   
     }  
-  
 ```  
   
 ```Output  
@@ -2430,7 +2396,7 @@ The template class describes a functor that, when called, returns the logical NO
   
 ### Syntax  
   
-```  
+```cpp  
 template<typename Fun>  
     ref class unary_negate  
     { // wrap operator()  
@@ -2451,7 +2417,7 @@ public:
 ```  
   
 #### Parameters  
- Fun  
+ *Fun*  
  The type of the stored functor.  
   
 ### Member Functions  
@@ -2515,7 +2481,6 @@ int main()
     System::Console::WriteLine();   
     return (0);   
     }  
-  
 ```  
   
 ```Output  

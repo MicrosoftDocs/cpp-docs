@@ -113,11 +113,11 @@ class ATL_NO_VTABLE CComControlBase
 |[CComControlBase::m_rcPos](#m_rcpos)|The position in pixels of the control, expressed in the coordinates of the container.|  
 |[CComControlBase::m_sizeExtent](#m_sizeextent)|The extent of the control in HIMETRIC units (each unit is 0.01 millimeters) for a particular display.|  
 |[CComControlBase::m_sizeNatural](#m_sizenatural)|The physical size of the control in HIMETRIC units (each unit is 0.01 millimeters).|  
-|[CComControlBase::m_spAdviseSink](#m_spadvisesink)|A direct pointer to the advisory connection on the container (the container's [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513)).|  
+|[CComControlBase::m_spAdviseSink](#m_spadvisesink)|A direct pointer to the advisory connection on the container (the container's [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink)).|  
 |[CComControlBase::m_spAmbientDispatch](#m_spambientdispatch)|A `CComDispatchDriver` object that lets you retrieve and set the container's properties through an `IDispatch` pointer.|  
 |[CComControlBase::m_spClientSite](#m_spclientsite)|A pointer to the control's client site within the container.|  
 |[CComControlBase::m_spDataAdviseHolder](#m_spdataadviseholder)|Provides a standard means to hold advisory connections between data objects and advise sinks.|  
-|[CComControlBase::m_spInPlaceSite](#m_spinplacesite)|A pointer to the container's [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), or [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) interface pointer.|  
+|[CComControlBase::m_spInPlaceSite](#m_spinplacesite)|A pointer to the container's [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), or [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) interface pointer.|  
 |[CComControlBase::m_spOleAdviseHolder](#m_spoleadviseholder)|Provides a standard implementation of a way to hold advisory connections.|  
   
 ## Remarks  
@@ -160,7 +160,7 @@ CComControlBase(HWND& h);
 ```  
   
 ### Remarks  
- If the control is windowed, `~CComControlBase` destroys it by calling [DestroyWindow](http://msdn.microsoft.com/library/windows/desktop/ms632682).  
+ If the control is windowed, `~CComControlBase` destroys it by calling [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow).  
   
 ##  <a name="controlqueryinterface"></a>  CComControlBase::ControlQueryInterface  
  Retrieves a pointer to the requested interface.  
@@ -362,7 +362,7 @@ HRESULT GetAmbientFont(IFont** ppFont);
   
 ### Parameters  
  *ppFont*  
- A pointer to the container's ambient [IFont](http://msdn.microsoft.com/library/windows/desktop/ms680673) interface.  
+ A pointer to the container's ambient [IFont](/windows/desktop/api/ocidl/nn-ocidl-ifont) interface.  
   
 ### Return Value  
  One of the standard HRESULT values.  
@@ -379,7 +379,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
   
 ### Parameters  
  *ppFont*  
- A pointer to the container's ambient [IFontDisp](http://msdn.microsoft.com/library/windows/desktop/ms692695) dispatch interface.  
+ A pointer to the container's ambient [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) dispatch interface.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -677,7 +677,7 @@ unsigned m_bAutoSize:1;
 > [!NOTE]
 >  To use this data member within your control class, you must declare it as a data member in your control class. Your control class will not inherit this data member from the base class because it is declared within a union in the base class.  
   
- If you add the **Auto Size** option on the [Stock Properties](../../atl/reference/stock-properties-atl-control-wizard.md) tab of the ATL Control Wizard, the wizard automatically creates this data member in your control class, creates put and get methods for the property, and supports [IPropertyNotifySink](http://msdn.microsoft.com/library/windows/desktop/ms692638) to automatically notify the container when the property changes.  
+ If you add the **Auto Size** option on the [Stock Properties](../../atl/reference/stock-properties-atl-control-wizard.md) tab of the ATL Control Wizard, the wizard automatically creates this data member in your control class, creates put and get methods for the property, and supports [IPropertyNotifySink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) to automatically notify the container when the property changes.  
   
 ##  <a name="m_bdrawfromnatural"></a>  CComControlBase::m_bDrawFromNatural  
  Flag indicating that `IDataObjectImpl::GetData` and `CComControlBase::GetZoomInfo` should set the control size from `m_sizeNatural` rather than from `m_sizeExtent`.  
@@ -729,7 +729,7 @@ unsigned m_bInPlaceSiteEx:1;
 > [!NOTE]
 >  To use this data member within your control class, you must declare it as a data member in your control class. Your control class will not inherit this data member from the base class because it is declared within a union in the base class.  
   
- The data member `m_spInPlaceSite` points to an [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), or [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) interface, depending on the value of the `m_bWndLess` and `m_bInPlaceSiteEx` flags. (The data member `m_bNegotiatedWnd` must be TRUE for the `m_spInPlaceSite` pointer to be valid.)  
+ The data member `m_spInPlaceSite` points to an [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), or [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) interface, depending on the value of the `m_bWndLess` and `m_bInPlaceSiteEx` flags. (The data member `m_bNegotiatedWnd` must be TRUE for the `m_spInPlaceSite` pointer to be valid.)  
   
  If `m_bWndLess` is FALSE and `m_bInPlaceSiteEx` is TRUE, `m_spInPlaceSite` is an `IOleInPlaceSiteEx` interface pointer. See [m_spInPlaceSite](#m_spinplacesite) for a table showing the relationship among these three data members.  
   
@@ -759,7 +759,7 @@ unsigned m_bRecomposeOnResize:1;
 > [!NOTE]
 >  To use this data member within your control class, you must declare it as a data member in your control class. Your control class will not inherit this data member from the base class because it is declared within a union in the base class.  
   
- This flag is checked by [IOleObjectImpl::SetExtent](../../atl/reference/ioleobjectimpl-class.md#setextent) and, if TRUE, `SetExtent` notifies the container of view changes. if this flag is set, the OLEMISC_RECOMPOSEONRESIZE bit in the [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) enumeration should also be set.  
+ This flag is checked by [IOleObjectImpl::SetExtent](../../atl/reference/ioleobjectimpl-class.md#setextent) and, if TRUE, `SetExtent` notifies the container of view changes. if this flag is set, the OLEMISC_RECOMPOSEONRESIZE bit in the [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) enumeration should also be set.  
   
 ##  <a name="m_brequiressave"></a>  CComControlBase::m_bRequiresSave  
  Flag indicating the control has changed since it was last saved.  
@@ -850,7 +850,7 @@ unsigned m_bWndLess:1;
 > [!NOTE]
 >  To use this data member within your control class, you must declare it as a data member in your control class. Your control class will not inherit this data member from the base class because it is declared within a union in the base class.  
   
- The data member `m_spInPlaceSite` points to an [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), or [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) interface, depending on the value of the `m_bWndLess` and [CComControlBase::m_bInPlaceSiteEx](#m_binplacesiteex) flags. (The data member [CComControlBase::m_bNegotiatedWnd](#m_bnegotiatedwnd) must be TRUE for the [CComControlBase::m_spInPlaceSite](#m_spinplacesite) pointer to be valid.)  
+ The data member `m_spInPlaceSite` points to an [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), or [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) interface, depending on the value of the `m_bWndLess` and [CComControlBase::m_bInPlaceSiteEx](#m_binplacesiteex) flags. (The data member [CComControlBase::m_bNegotiatedWnd](#m_bnegotiatedwnd) must be TRUE for the [CComControlBase::m_spInPlaceSite](#m_spinplacesite) pointer to be valid.)  
   
  If `m_bWndLess` is TRUE, `m_spInPlaceSite` is an `IOleInPlaceSiteWindowless` interface pointer. See [CComControlBase::m_spInPlaceSite](#m_spinplacesite) for a table showing the complete relationship between these data members.  
   
@@ -923,7 +923,7 @@ SIZE m_sizeNatural;
  You can convert the size to pixels with the global function [AtlHiMetricToPixel](pixel-himetric-conversion-global-functions.md#atlhimetrictopixel).  
   
 ##  <a name="m_spadvisesink"></a>  CComControlBase::m_spAdviseSink  
- A direct pointer to the advisory connection on the container (the container's [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513)).  
+ A direct pointer to the advisory connection on the container (the container's [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink)).  
   
 ```
 CComPtr<IAdviseSink>
@@ -973,12 +973,12 @@ CComPtr<IDataAdviseHolder>
 > [!NOTE]
 >  To use this data member within your control class, you must declare it as a data member in your control class. Your control class will not inherit this data member from the base class because it is declared within a union in the base class.  
   
- A data object is a control that can transfer data and that implements [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), whose methods specify the format and transfer medium of the data.  
+ A data object is a control that can transfer data and that implements [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject), whose methods specify the format and transfer medium of the data.  
   
- The interface `m_spDataAdviseHolder` implements the [IDataObject::DAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692579) and [IDataObject::DUnadvise](http://msdn.microsoft.com/library/windows/desktop/ms692448) methods to establish and delete advisory connections to the container. The control's container must implement an advise sink by supporting the [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) interface.  
+ The interface `m_spDataAdviseHolder` implements the [IDataObject::DAdvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dadvise) and [IDataObject::DUnadvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dunadvise) methods to establish and delete advisory connections to the container. The control's container must implement an advise sink by supporting the [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) interface.  
   
 ##  <a name="m_spinplacesite"></a>  CComControlBase::m_spInPlaceSite  
- A pointer to the container's [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), or [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) interface pointer.  
+ A pointer to the container's [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), or [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) interface pointer.  
   
 ```
 CComPtr<IOleInPlaceSiteWindowless>
@@ -1013,7 +1013,7 @@ CComPtr<IOleAdviseHolder>
 > [!NOTE]
 >  To use this data member within your control class, you must declare it as a data member in your control class. Your control class will not inherit this data member from the base class because it is declared within a union in the base class.  
   
- The interface `m_spOleAdviseHolder` implements the [IOleObject::Advise](http://msdn.microsoft.com/library/windows/desktop/ms686573) and [IOleObject::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms693749) methods to establish and delete advisory connections to the container. The control's container must implement an advise sink by supporting the [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) interface.  
+ The interface `m_spOleAdviseHolder` implements the [IOleObject::Advise](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-advise) and [IOleObject::Unadvise](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-unadvise) methods to establish and delete advisory connections to the container. The control's container must implement an advise sink by supporting the [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) interface.  
   
 ##  <a name="ondraw"></a>  CComControlBase::OnDraw  
  Override this method to draw your control.  
@@ -1206,7 +1206,7 @@ HRESULT SendOnDataChange(DWORD advf = 0);
   
 ### Parameters  
  *advf*  
- Advise flags that specify how the call to [IAdviseSink::OnDataChange](http://msdn.microsoft.com/library/windows/desktop/ms687283) is made. Values are from the [ADVF](http://msdn.microsoft.com/library/windows/desktop/ms693742) enumeration.  
+ Advise flags that specify how the call to [IAdviseSink::OnDataChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-ondatachange) is made. Values are from the [ADVF](/windows/desktop/api/objidl/ne-objidl-tagadvf) enumeration.  
   
 ### Return Value  
  Returns S_OK on success, or an error HRESULT on failure.  
@@ -1259,7 +1259,7 @@ HRESULT SendOnViewChange(DWORD dwAspect, LONG lindex = -1);
  Returns S_OK on success, or an error HRESULT on failure.  
   
 ### Remarks  
- `SendOnViewChange` calls [IAdviseSink::OnViewChange](http://msdn.microsoft.com/library/windows/desktop/ms694337). The only value of *lindex* currently supported is -1, which indicates that the entire view is of interest.  
+ `SendOnViewChange` calls [IAdviseSink::OnViewChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-onviewchange). The only value of *lindex* currently supported is -1, which indicates that the entire view is of interest.  
   
 ##  <a name="setcontrolfocus"></a>  CComControlBase::SetControlFocus  
  Sets or removes the keyboard focus to or from the control.  
@@ -1276,7 +1276,7 @@ BOOL SetControlFocus(BOOL bGrab);
  Returns TRUE if the control successfully receives focus; otherwise, FALSE.  
   
 ### Remarks  
- For a windowed control, the Windows API function [SetFocus](http://msdn.microsoft.com/library/windows/desktop/ms646312) is called. For a windowless control, [IOleInPlaceSiteWindowless::SetFocus](http://msdn.microsoft.com/library/windows/desktop/ms679745) is called. Through this call, a windowless control obtains the keyboard focus and can respond to window messages.  
+ For a windowed control, the Windows API function [SetFocus](https://msdn.microsoft.com/library/windows/desktop/ms646312) is called. For a windowless control, [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) is called. Through this call, a windowless control obtains the keyboard focus and can respond to window messages.  
   
 ##  <a name="setdirty"></a>  CComControlBase::SetDirty  
  Sets the data member `m_bRequiresSave` to the value in *bDirty*.  

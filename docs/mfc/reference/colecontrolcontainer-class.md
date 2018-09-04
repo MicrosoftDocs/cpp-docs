@@ -72,7 +72,7 @@ class COleControlContainer : public CCmdTarget
 |[COleControlContainer::m_siteMap](#m_sitemap)|The site map.|  
   
 ## Remarks  
- This is done by providing support for one or more ActiveX control sites (implemented by `COleControlSite`). `COleControlContainer` fully implements the [IOleInPlaceFrame](http://msdn.microsoft.com/library/windows/desktop/ms692770) and [IOleContainer](http://msdn.microsoft.com/library/windows/desktop/ms690103) interfaces, allowing the contained ActiveX controls to fulfill their qualifications as in-place items.  
+ This is done by providing support for one or more ActiveX control sites (implemented by `COleControlSite`). `COleControlContainer` fully implements the [IOleInPlaceFrame](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceframe) and [IOleContainer](/windows/desktop/api/oleidl/nn-oleidl-iolecontainer) interfaces, allowing the contained ActiveX controls to fulfill their qualifications as in-place items.  
   
  Commonly, this class is used in conjunction with `COccManager` and `COleControlSite` to implement a custom ActiveX control container, with custom sites for one or more ActiveX controls.  
   
@@ -372,7 +372,7 @@ virtual UINT GetDlgItemInt(
  Pointer to a Boolean variable that receives a function success/failure value (TRUE indicates success, FALSE indicates failure).  
   
  *bSigned*  
- Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the *bSigned* parameter is TRUE, specifying that the value to be retrieved is a signed integer value, cast the return value to an **int** type. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the *bSigned* parameter is TRUE, specifying that the value to be retrieved is a signed integer value, cast the return value to an **int** type. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Return Value  
  If successful, the variable pointed to by *lpTrans* is set to TRUE, and the return value is the translated value of the control text.  
@@ -409,7 +409,7 @@ virtual int GetDlgItemText(
 ### Return Value  
  If the function succeeds, the return value specifies the number of characters copied to the buffer, not including the terminating null character.  
   
- If the function fails, the return value is zero. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ If the function fails, the return value is zero. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ##  <a name="handlesetfocus"></a>  COleControlContainer::HandleSetFocus  
  Determines if the container handles WM_SETFOCUS messages.  

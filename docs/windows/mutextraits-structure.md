@@ -13,31 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # MutexTraits Structure
-Defines common characteristics of the [Mutex](../windows/mutex-class1.md) class.  
-  
-## Syntax  
-  
-```  
-struct MutexTraits : HANDLENullTraits;  
-```  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[MutexTraits::Unlock Method](../windows/mutextraits-unlock-method.md)|Releases exclusive control of a shared resource.|  
-  
-## Inheritance Hierarchy  
- `HANDLENullTraits`  
-  
- `MutexTraits`  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## See Also  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+
+Defines common characteristics of the [Mutex](../windows/mutex-class1.md) class.
+
+## Syntax
+
+```cpp
+struct MutexTraits : HANDLENullTraits;
+```
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[MutexTraits::Unlock Method](../windows/mutextraits-unlock-method.md)|Releases exclusive control of a shared resource.|
+
+## Inheritance Hierarchy
+
+`HANDLENullTraits`
+
+`MutexTraits`
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## See Also
+
+[Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

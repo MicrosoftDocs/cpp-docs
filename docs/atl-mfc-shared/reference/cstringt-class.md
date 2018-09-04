@@ -213,9 +213,9 @@ BSTR AllocSysString() const;
  In MFC programs, a [CMemoryException Class](../../mfc/reference/cmemoryexception-class.md) is thrown if insufficient memory exists. In ATL programs, a [CAtlException](../../atl/reference/catlexception-class.md) is thrown. This function is normally used to return strings for Automation.  
   
 
- Commonly, if this string is passed to a COM function as an [in] parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](https://msdn.microsoft.com/library/windows/desktop/ms221481.aspx), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).  
+ Commonly, if this string is passed to a COM function as an [in] parameter, then this requires the caller to free the string. This can be done by using [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring), as described in the Windows SDK. For more information, see [Allocating and Releasing Memory for a BSTR](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).  
   
- For more information about OLE allocation functions in Windows, see [SysAllocString](https://msdn.microsoft.com/library/windows/desktop/ms221458.aspx) in the Windows SDK.  
+ For more information about OLE allocation functions in Windows, see [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) in the Windows SDK.  
 
   
 ### Example  
@@ -467,7 +467,7 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
 - `CStringT`( `const unsigned char*` `psz` ): Allows you to construct a `CStringT` from a pointer to **unsigned char**.  
   
 > [!NOTE]
->  Define the _CSTRING_DISABLE_NARROW_WIDE_CONVERSION macro to turn off implicit string conversion between [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] and [!INCLUDE[TLA#tla_unicode](../../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] strings. The macro excludes from compilation constructors that support conversion.  
+>  Define the _CSTRING_DISABLE_NARROW_WIDE_CONVERSION macro to turn off implicit string conversion between ANSI and Unicode strings. The macro excludes from compilation constructors that support conversion.  
   
  Note that the *strSrc* parameter can be either a `CStringT` or `CThisSimpleString` object. For `CStringT`, use one of its default instantiations (`CString`, `CStringA`, or `CStringW`); for `CThisSimpleString`, use a **this** pointer. `CThisSimpleString` declares an instance of the [CSimpleStringT Class](../../atl-mfc-shared/reference/csimplestringt-class.md), which is a smaller string class with less built-in functionality than the `CStringT` class.  
   
@@ -620,7 +620,7 @@ void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 > [!NOTE]
 > `FormatMessage` attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.  
   
- Each insert must have a corresponding parameter following the *pszFormat* or *nFormatID* parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) function in the Windows SDK.  
+ Each insert must have a corresponding parameter following the *pszFormat* or *nFormatID* parameter. Within the message text, several escape sequences are supported for dynamically formatting the message. For more information, see the Windows [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_ATLMFC_Utilities#118](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_13.cpp)]  
@@ -645,7 +645,7 @@ void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 > [!NOTE]
 > `FormatMessageV` calls [CStringT::FormatMessage](#formatmessage), which attempts to allocate system memory for the newly formatted string. If this attempt fails, a memory exception is automatically thrown.  
   
- For more information, see the Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) function in the Windows SDK.  
+ For more information, see the Windows [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) function in the Windows SDK.  
   
 ##  <a name="formatv"></a>  CStringT::FormatV  
  Formats a message string using a variable argument list.  

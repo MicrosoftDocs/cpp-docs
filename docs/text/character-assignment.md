@@ -7,12 +7,12 @@ ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["characters [C++], assignments", "MBCS [C++], character assignments"]
 ms.assetid: dcc329cd-92df-4e20-817d-364be62ff28f
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Character Assignment
-Consider the following example, in which the `while` loop scans a string, copying all characters except 'X' into another string:  
+Consider the following example, in which the **while** loop scans a string, copying all characters except 'X' into another string:  
   
 ```  
 while( *sz2 )  

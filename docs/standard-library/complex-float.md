@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 ---
 # complex&lt;float&gt;
 
-Describes an object that stores an ordered pair of objects both of type **float***,* the first representing the real part of a complex number and the second representing the imaginary part.
+Describes an object that stores an ordered pair of objects both of type **float**, the first representing the real part of a complex number and the second representing the imaginary part.
 
 ## Syntax
 
@@ -40,14 +40,14 @@ constexpr complex(
 
 ### Parameters
 
-*_RealVal*
- The value of type **float** for the real part of the complex number being constructed.
+*_RealVal*<br/>
+The value of type **float** for the real part of the complex number being constructed.
 
-*_ImagVal*
- The value of type **float** for the imaginary part of the complex number being constructed.
+*_ImagVal*<br/>
+The value of type **float** for the imaginary part of the complex number being constructed.
 
-*complexNum*
- The complex number of type **double** or of type **long double** whose real and imaginary parts are used to initialize a complex number of type **float** being constructed.
+*complexNum*<br/>
+The complex number of type **double** or of type **long double** whose real and imaginary parts are used to initialize a complex number of type **float** being constructed.
 
 ## Return Value
 

@@ -18,5 +18,5 @@ This section includes the following topics:
   
 -   [Based Pointers](../cpp/based-pointers-cpp.md)  
   
-## See Also  
+## See also  
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)

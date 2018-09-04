@@ -30,7 +30,7 @@ unsigned __int64 __readcr3(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readcr3`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readcr3`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

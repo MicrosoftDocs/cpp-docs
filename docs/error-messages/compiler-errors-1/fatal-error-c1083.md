@@ -74,7 +74,7 @@ To set the include directory path in Visual Studio, open the project’s **Prope
 
 ## The command line INCLUDE or LIB environment is not set
 
-When the compiler is invoked on the command line, environment variables are often used to specify search paths. If the search path described by the **INCLUDE** or **LIB** environment variable is not set correctly, a C1083 error can be generated. We strongly recommend using a developer command prompt shortcut to set the basic environment for command line builds. For more information, see see [Build C/C++ on the Command Line](../../build/building-on-the-command-line.md). For more information about how to use environment variables, see [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build).
+When the compiler is invoked on the command line, environment variables are often used to specify search paths. If the search path described by the **INCLUDE** or **LIB** environment variable is not set correctly, a C1083 error can be generated. We strongly recommend using a developer command prompt shortcut to set the basic environment for command line builds. For more information, see [Build C/C++ on the Command Line](../../build/building-on-the-command-line.md). For more information about how to use environment variables, see [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build).
 
 ## The file may be locked or in use
 

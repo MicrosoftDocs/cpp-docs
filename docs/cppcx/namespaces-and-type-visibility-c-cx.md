@@ -5,8 +5,8 @@ ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Namespaces and Type Visibility (C++/CX )
@@ -36,7 +36,7 @@ A namespace is a standard C++ construct for grouping types that have related fun
 |`internal` or `private public`|The member is public within the app or component, but is not visible in metadata.|No|  
   
 ## Windows Runtime namespaces  
- The Windows API consists of types that are declared in the Windows::\* namespaces. These namespaces are reserved for Windows, and types cannot be added to them. In the **Object Browser**, you can view these namespaces in the windows.winmd file. For documentation about these namespaces, see [Windows API](http://msdn.microsoft.com/library/windows/apps/br211377).  
+ The Windows API consists of types that are declared in the Windows::\* namespaces. These namespaces are reserved for Windows, and types cannot be added to them. In the **Object Browser**, you can view these namespaces in the windows.winmd file. For documentation about these namespaces, see [Windows API](https://msdn.microsoft.com/library/windows/apps/br211377).  
   
 ## C++/CX namespaces  
  The C++/CX define certain types in these namespaces as part of the projection of the Windows Runtime type system.  

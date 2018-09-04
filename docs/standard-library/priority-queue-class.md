@@ -25,14 +25,14 @@ class priority_queue
 
 ### Parameters
 
-*Type*
+*Type*<br/>
  The element data type to be stored in the priority_queue.
 
-*Container*
+*Container*<br/>
  The type of the underlying container used to implement the priority_queue.
 
-*Compare*
- The type that provides a function object that can compare two element values as sort keys to determine their relative order in the priority_queue. This argument is optional and the binary predicate **less***\<***typename** *Container***::value_type***>* is the default value.
+*Compare*<br/>
+ The type that provides a function object that can compare two element values as sort keys to determine their relative order in the priority_queue. This argument is optional and the binary predicate `less<typename Container::value_type>` is the default value.
 
 ## Remarks
 
@@ -227,19 +227,19 @@ priority_queue(InputIterator first, InputIterator last, const Traits&_comp, cons
 
 ### Parameters
 
-*_ comp*
+*_ comp*<br/>
  The comparison function of type **constTraits** used to order the elements in the priority_queue, which defaults to compare function of the base container.
 
-*_Cont*
+*_Cont*<br/>
  The base container of which the constructed priority_queue is to be a copy.
 
-*right*
+*right*<br/>
  The priority_queue of which the constructed set is to be a copy.
 
-*first*
+*first*<br/>
  The position of the first element in the range of elements to be copied.
 
-*last*
+*last*<br/>
  The position of the first element beyond the range of elements to be copied.
 
 ### Remarks
@@ -371,7 +371,7 @@ void push(const Type& val);
 
 ### Parameters
 
-*val*
+*val*<br/>
  The element added to the top of the priority_queue.
 
 ### Remarks

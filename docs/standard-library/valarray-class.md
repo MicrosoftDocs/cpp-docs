@@ -98,10 +98,10 @@ valarray<Type> apply(Type _Func(constType&)) const;
 
 ### Parameters
 
-*_Func(Type)*
+*_Func(Type)*<br/>
  The function object to be applied to each element of the operand valarray.
 
-*_Func(const Type&)*
+*_Func(const Type&)*<br/>
  The function object for const to be applied to each element of the operand valarray.
 
 ### Return Value
@@ -110,7 +110,7 @@ A valarray whose elements have had `_Func` applied element-wise to the elements 
 
 ### Remarks
 
-The member function returns an object of class [valarray](../standard-library/valarray-class.md)**\<Type>**, of length [size](#size), each of whose elements `I` is **func**(( **\*this**)[ `I`]).
+The member function returns an object of class [valarray](../standard-library/valarray-class.md)**\<Type>**, of length [size](#size), each of whose elements *I* is `_Func((*this)[I])`.
 
 ### Example
 
@@ -1216,7 +1216,7 @@ A reference to an element or its value at specified index or a specified subset.
 
 ### Remarks
 
-The member operator is overloaded to provide several ways to select sequences of elements from among those controlled by *\****this**. The first group of five member operators work in conjunction with various overloads of [operator=](#op_eq) (and other assigning operators) to allow selective replacement (slicing) of the controlled sequence. The selected elements must exist.
+The member operator is overloaded to provide several ways to select sequences of elements from among those controlled by <strong>\*this</strong>. The first group of five member operators work in conjunction with various overloads of [operator=](#op_eq) (and other assigning operators) to allow selective replacement (slicing) of the controlled sequence. The selected elements must exist.
 
 When compiled by using [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md) defined as 1 or 2, a runtime error occurs if you attempt to access an element outside the bounds of the valarray.  See [Checked Iterators](../standard-library/checked-iterators.md) for more information.
 

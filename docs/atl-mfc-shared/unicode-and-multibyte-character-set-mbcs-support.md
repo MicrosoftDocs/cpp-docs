@@ -50,9 +50,9 @@ To complete Unicode programming of your application, you must also:
 
    - Use TCHAR where you would use **char**.
 
-   - Use LPTSTR where you would use **char\***.
+   - Use LPTSTR where you would use **char**<strong>\*</strong>.
 
-   - Use LPCTSTR where you would use **const char\***. `CString` provides the operator LPCTSTR to convert between `CString` and LPCTSTR.
+   - Use LPCTSTR where you would use **const char**<strong>\*</strong>. `CString` provides the operator LPCTSTR to convert between `CString` and LPCTSTR.
 
 `CString` also supplies Unicode-aware constructors, assignment operators, and comparison operators.
 
@@ -84,7 +84,7 @@ Under DBCS, a given string can contain all single-byte ANSI characters, all doub
 
 Generic-text function mappings for all of the run-time string-handling routines are discussed in [C Run-Time Library Reference](../c-runtime-library/c-run-time-library-reference.md). For a list, see [Internationalization](../c-runtime-library/internationalization.md).
 
-Similarly, `CString` methods are implemented by using generic data type mappings. To enable both MBCS and Unicode, MFC uses TCHAR for **char** or `wchar_t`, LPTSTR for **char\*** or `wchar_t*`, and LPCTSTR for **const char\*** or `const wchar_t*`. These ensure the correct mappings for either MBCS or Unicode.
+Similarly, `CString` methods are implemented by using generic data type mappings. To enable both MBCS and Unicode, MFC uses TCHAR for **char** or `wchar_t`, LPTSTR for **char**<strong>\*</strong> or `wchar_t*`, and LPCTSTR for **const char**<strong>\*</strong> or `const wchar_t*`. These ensure the correct mappings for either MBCS or Unicode.
 
 ## See Also
 

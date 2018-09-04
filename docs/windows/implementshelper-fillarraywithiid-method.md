@@ -13,31 +13,36 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ImplementsHelper::FillArrayWithIid Method
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-void FillArrayWithIid(  
-   _Inout_ unsigned long *index,   
-   _Inout_ IID* iids) throw();  
-```  
-  
-#### Parameters  
- `index`  
- A zero-based index that indicates the starting array element for this operation. When this operation completes, `index` is incremented by 1.  
-  
- `iids`  
- An array of type IIDs.  
-  
-## Remarks  
- Inserts the interface ID specified by the current zeroth template parameter into the specified array element.  
-  
-## Requirements  
- **Header:** implements.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [ImplementsHelper Structure](../windows/implementshelper-structure.md)   
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+void FillArrayWithIid(
+   _Inout_ unsigned long *index,
+   _Inout_ IID* iids) throw();
+```
+
+### Parameters
+
+*index*  
+A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.
+
+*iids*  
+An array of type IIDs.
+
+## Remarks
+
+Inserts the interface ID specified by the current zeroth template parameter into the specified array element.
+
+## Requirements
+
+**Header:** implements.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[ImplementsHelper Structure](../windows/implementshelper-structure.md)  
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

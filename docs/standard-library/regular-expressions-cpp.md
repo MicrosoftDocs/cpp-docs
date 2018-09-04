@@ -128,7 +128,7 @@ A repetition count can also take one of the following forms:
 
 - "{`min`,}", or "\\{`min`,\\}" in `basic` and `grep`. Equivalent to "{`min`,unbounded}".
 
-- "*". Equivalent to "{0,unbounded}".
+- "\*". Equivalent to "{0,unbounded}".
 
 Examples:
 
@@ -136,7 +136,7 @@ Examples:
 
 - "a{2,}" matches the target sequence "aa", the target sequence "aaa", and so on, but does not match the target sequence "a".
 
-- "a*" matches the target sequence "", the target sequence "a", the target sequence "aa", and so on.
+- "a\*" matches the target sequence "", the target sequence "a", the target sequence "aa", and so on.
 
 For all grammars except `basic` and `grep`, a repetition count can also take one of the following forms:
 
@@ -195,7 +195,7 @@ The following table summarizes the features that are available in the various re
 |positive assert|||+||||
 |repetition using "{}"||+|+||+|+|
 |repetition using "\\{\\}"|+|||+|||
-|repetition using '*'|+|+|+|+|+|+|
+|repetition using '\*'|+|+|+|+|+|+|
 |repetition using '?' and '+'||+|+||+|+|
 |unicode escape sequence|||+||||
 |wildcard character|+|+|+|+|+|+|
@@ -301,10 +301,10 @@ A dsw character escape is a short name for a character class, as shown in the fo
 |"\D"|"[^[:d:]]"|"[^[:digit:]]"|
 |"\s"|"[[:s:]]"|"[[:space:]]"|
 |"\S"|"[^[:s:]]"|"[^[:space:]]"|
-|"\w"|"[[:w:]]"|"[a-zA-Z0-9_]"*|
-|"\W"|"[^[:w:]]"|"[^a-zA-Z0-9_]"*|
+|"\w"|"[[:w:]]"|"[a-zA-Z0-9_]"\*|
+|"\W"|"[^[:w:]]"|"[^a-zA-Z0-9_]"\*|
 
-*ASCII character set
+\*ASCII character set
 
 ### Equivalence Class
 
@@ -367,7 +367,7 @@ Examples:
 
 ### Negative Assert
 
-A negative assert matches anything but its contents. It does not consume any characters in the target sequence. For example, "(!aa)(a*)" matches the target sequence "a" and associates capture group 1 with the subsequence "a". It does not match the target sequence "aa" or the target sequence "aaa".
+A negative assert matches anything but its contents. It does not consume any characters in the target sequence. For example, "(!aa)(a\*)" matches the target sequence "a" and associates capture group 1 with the subsequence "a". It does not match the target sequence "aa" or the target sequence "aaa".
 
 ### Negative Word Boundary Assert
 
@@ -391,7 +391,7 @@ An ordinary character is any valid character that does not have a special meanin
 
 In `ECMAScript`, the following characters have special meanings:
 
-- ^  $  \  .  *  +  ?  (  )  [  ]  {  }  &#124;
+- ^  $  \  .  \*  +  ?  (  )  [  ]  {  }  &#124;
 
 In `basic` and `grep`, the following characters have special meanings:
 
@@ -407,7 +407,7 @@ Also in `basic` and `grep`, the following characters have special meanings when 
 
 In `extended`, `egrep`, and `awk`, the following characters have special meanings:
 
-- .   [   \   (   *   +   ?   {   &#124;
+- .   [   \   (   \*   +   ?   {   &#124;
 
 Also in `extended`, `egrep`, and `awk`, the following characters have special meanings when they are used in a particular context.
 

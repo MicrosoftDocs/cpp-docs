@@ -112,19 +112,19 @@ BOOL DoOleVerb(
  Numerical identifier of the verb.  
   
  *lpMsg*  
- Pointer to the [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) structure describing the event (such as a double-click) that invoked the verb.  
+ Pointer to the [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) structure describing the event (such as a double-click) that invoked the verb.  
   
  *hWndParent*  
  Handle of the document window containing the object.  
   
  *lpRect*  
- Pointer to the [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.  
+ Pointer to the [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.  
   
 ### Return Value  
  TRUE if successful, otherwise FALSE.  
   
 ### Remarks  
- This member function is basically an implementation of [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508). The possible actions are enumerated by [CCmdTarget::EnumOleVerbs](#enumoleverbs).  
+ This member function is basically an implementation of [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb). The possible actions are enumerated by [CCmdTarget::EnumOleVerbs](#enumoleverbs).  
   
 ##  <a name="enableautomation"></a>  CCmdTarget::EnableAutomation  
  Call this function to enable OLE automation for an object.  
@@ -178,13 +178,13 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
   
 ### Parameters  
  *ppenumOleVerb*  
- A pointer to a pointer to an [IEnumOLEVERB](http://msdn.microsoft.com/library/windows/desktop/ms695084) interface.  
+ A pointer to a pointer to an [IEnumOLEVERB](/windows/desktop/api/oleidl/nn-oleidl-ienumoleverb) interface.  
   
 ### Return Value  
  TRUE if the object supports at least one OLE verb (in which case \* *ppenumOleVerb* points to an `IEnumOLEVERB` enumerator interface), otherwise FALSE.  
   
 ### Remarks  
- This member function is basically an implementation of [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781).  
+ This member function is basically an implementation of [IOleObject::EnumVerbs](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-enumverbs).  
   
 ##  <a name="fromidispatch"></a>  CCmdTarget::FromIDispatch  
  Call this function to map an `IDispatch` pointer, received from automation member functions of a class, into the `CCmdTarget` object that implements the interfaces of the `IDispatch` object.  
@@ -212,7 +212,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
   
 ### Parameters  
  *pIID*  
- A pointer to an interface ID (a [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931)).  
+ A pointer to an interface ID (a [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931)).  
   
 ### Return Value  
  TRUE if successful, otherwise FALSE. If successful, \* *pIID* is set to the primary dispatch interface ID.  
@@ -237,7 +237,7 @@ LPDISPATCH GetIDispatch(BOOL bAddRef);
  The `IDispatch` pointer associated with the object.  
   
 ### Remarks  
- For objects that call `EnableAutomation` in their constructors, making them automation enabled, this function returns a pointer to the Foundation Class implementation of `IDispatch` that is used by clients who communicate via the `IDispatch` interface. Calling this function automatically adds a reference to the pointer, so it is not necessary to make a call to [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379).  
+ For objects that call `EnableAutomation` in their constructors, making them automation enabled, this function returns a pointer to the Foundation Class implementation of `IDispatch` that is used by clients who communicate via the `IDispatch` interface. Calling this function automatically adds a reference to the pointer, so it is not necessary to make a call to [IUnknown::AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref).  
   
 ##  <a name="gettypeinfocount"></a>  CCmdTarget::GetTypeInfoCount  
  Retrieves the number of type information interfaces that an object provides.  
@@ -250,7 +250,7 @@ virtual UINT GetTypeInfoCount();
  The number of type information interfaces.  
   
 ### Remarks  
- This member function basically implements [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
+ This member function basically implements [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount).  
   
  Derived classes should override this function to return the number of type information interfaces provided (either 0 or 1). If not overridden, `GetTypeInfoCount` returns 0. To override, use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeLib` and `GetTypeLibCache`.  
   
@@ -269,13 +269,13 @@ HRESULT GetTypeInfoOfGuid(
  A locale identifier ( `LCID`).  
   
  *guid*  
- The [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931) of the type description.  
+ The [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) of the type description.  
   
  *ppTypeInfo*  
  Pointer to a pointer to the `ITypeInfo` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * *ppTypeInfo* points to the type information interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeInfo* points to the type information interface.  
   
 ##  <a name="gettypelib"></a>  CCmdTarget::GetTypeLib  
  Gets a pointer to a type library.  
@@ -294,7 +294,7 @@ virtual HRESULT GetTypeLib(
  A pointer to a pointer to the `ITypeLib` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * *ppTypeLib* points to the type library interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeLib* points to the type library interface.  
   
 ### Remarks  
  Derived classes should override this member function (if not overridden, `GetTypeLib` returns TYPE_E_CANTLOADLIBRARY). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLibCache`.  
@@ -386,10 +386,10 @@ virtual BOOL OnCmdMsg(
   
 |*nCode* value|*pExtra* value|  
 |-------------------|--------------------|  
-|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)*|  
-|CN_EVENT|AFX_EVENT*|  
-|CN_UPDATE_COMMAND_UI|CCmdUI*|  
-|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)*|  
+|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)\*|  
+|CN_EVENT|AFX_EVENT\*|  
+|CN_UPDATE_COMMAND_UI|CCmdUI\*|  
+|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)\*|  
 |CN_OLE_UNREGISTER|NULL|  
   
 ### Example  

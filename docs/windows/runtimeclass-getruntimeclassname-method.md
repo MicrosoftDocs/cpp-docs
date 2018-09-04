@@ -14,7 +14,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # RuntimeClass::GetRuntimeClassName Method
 
-Gets the runtime class name of the current RuntimeClass object.
+Gets the runtime class name of the current **RuntimeClass** object.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ## Remarks
 
-An assert error is emitted if &#95;&#95;WRL_STRICT&#95;&#95; or &#95;&#95;WRL_FORCE_INSPECTABLE_CLASS_MACRO&#95;&#95; isn't defined.
+An assert error is emitted if `__WRL_STRICT__` or `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` isn't defined.
 
 ## Requirements
 

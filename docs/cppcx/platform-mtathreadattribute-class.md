@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::MTAThreadAttribute::Equals", "VCCORLIB/Platfor
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::MTAThreadAttribute Class"]
 ms.assetid: bfc546a7-4333-4407-85b4-4721565e1f44
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::MTAThreadAttribute Class

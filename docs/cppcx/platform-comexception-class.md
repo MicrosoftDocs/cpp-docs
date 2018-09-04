@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::COMException", "VCCORLIB/Platform::Exception::
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::COMException Class"]
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::COMException Class
@@ -101,7 +101,7 @@ public:property int HResult {    int get();}
  An HRESULT value that specifies the error.  
   
 ### Remarks  
- For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
+ For more information about how to interpret the HRESULT value, see [Structure of COM Error Codes](/windows/desktop/com/structure-of-com-error-codes).  
 
 ## <a name="message"></a> COMException::Message Property
 Message that describes the exception.  

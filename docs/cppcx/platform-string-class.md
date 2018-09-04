@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::String::String", "VCCORLIB/Platform::String::B
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::String"]
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::String Class
@@ -59,7 +59,7 @@ public ref class String sealed : Object,
 |[String::Equals](#equals)|Indicates whether the specified object is equal to the current object.|  
 |[String::GetHashCode](#gethashcode)|Returns the hash code for this instance.|  
 |[String::IsEmpty](#isempty)|Indicates whether the current String object is empty.|  
-|[String::IsFastPass](#isfastpass)|Indicates whether the current String object is is participating in a *fast pass* operation. In a fast pass operation, reference counting is suspended.|  
+|[String::IsFastPass](#isfastpass)|Indicates whether the current String object is participating in a *fast pass* operation. In a fast pass operation, reference counting is suspended.|  
 |[String::Length](#length)|Retrieves the length of the current String object.|  
 |[String::ToString](#tostring)|Returns a String object whose value is the same as the current string.|  
   
@@ -253,7 +253,7 @@ bool IsEmpty()
 
 
 ## <a name="isfastpass"></a>  String::IsFastPass Method
-Indicates whether the current String object is is participating in a *fast pass* operation. In a fast pass operation, reference counting is suspended.  
+Indicates whether the current String object is participating in a *fast pass* operation. In a fast pass operation, reference counting is suspended.  
   
 ### Syntax  
   

@@ -20,9 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
 void Clear( );  
-  
 ```  
   
 ## Remarks  
@@ -30,5 +28,5 @@ void Clear( );
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)

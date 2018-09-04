@@ -43,7 +43,7 @@ const char *pch, ch;
   
  **Declarators for Pointers, References and Arrays**  
   
- Pointer operators inserted in front of the name cause the object to be a pointer or reference.  The **\*** operator declares the name as a pointer; the **&** operator declares it as a reference.  
+ Pointer operators inserted in front of the name cause the object to be a pointer or reference.  The <strong>\*</strong> operator declares the name as a pointer; the **&** operator declares it as a reference.  
   
 ```cpp 
 int *i; // declarator is *i  
@@ -117,7 +117,7 @@ int i, *j, f(int k);  // int, pointer to int, function returning int
 int* i, f(int k);  // pointer to int, function returning int (not int*)  
 ```  
   
- may look like the declaration of an **int** pointer and a function returning `int*`, but it is not.  That's because the * is part of the declarator for `i`, not part of the declarator for `f`.  
+ may look like the declaration of an **int** pointer and a function returning `int*`, but it is not.  That's because the \* is part of the declarator for `i`, not part of the declarator for `f`.  
   
  **Simplifying declarator syntax with typedef**  
   
@@ -162,13 +162,11 @@ int a, *b, c[5], **d, &e=a;
   - pointer-operator declarator   
   - ( declarator )  
 
-  
 - and *pointer-operator* is one of:  
   
-  - * [cv-qualifiers]  
-  - & [cv-qualifiers] ::nested-name-specifier * [cv-qualifiers]  
+  - \* [cv-qualifiers]  
+  - & [cv-qualifiers] ::nested-name-specifier \* [cv-qualifiers]  
 
-  
  Because a declarator may contain declarators, it is possible to construct the more complex derived types such as arrays of pointers, functions returning arrays of function pointers, by using the above rules.  To form each step of the construction, start with the identifier representing the base data type and apply the syntax rule above with the previous expression as the `declarator`.  The order that you apply the syntax rules should be the reverse of the way the expression is stated in English.  If applying the *pointer-operator* syntax rule to an array or function expression, use parentheses if you want a pointer to the array or function, as in the last row in the table below.  
   
  The following example shows the construction of "pointer to array of 10 pointers to int".  
@@ -180,4 +178,4 @@ int a, *b, c[5], **d, &e=a;
 |array of 10|`(*i)[10]`|4|  
 |pointer to|`*((*i)[10])`|6 and then 5|  
   
- When multiple pointer, reference, array or function modifiers are used, declarators may become quite complicated.  The topic [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md) describes how to read more complex declarator syntax.  The topic is applicable to both C and C++, although in C++, anywhere the * is used to indicate a pointer, a qualified name such as MyClass::\* may be used to specify a pointer to a member of a class.
+ When multiple pointer, reference, array or function modifiers are used, declarators may become quite complicated.  The topic [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md) describes how to read more complex declarator syntax.  The topic is applicable to both C and C++, although in C++, anywhere the \* is used to indicate a pointer, a qualified name such as MyClass::\* may be used to specify a pointer to a member of a class.

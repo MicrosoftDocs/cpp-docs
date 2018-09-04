@@ -36,5 +36,5 @@ Class C with B Subobject and A Subobject
   
 -   [Run-time type information](../cpp/run-time-type-information.md)  
   
-## See Also  
+## See also  
  [Expressions](../cpp/expressions-cpp.md)

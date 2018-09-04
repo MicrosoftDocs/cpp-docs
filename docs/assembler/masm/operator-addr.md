@@ -1,7 +1,7 @@
 ---
 title: "operator ADDR | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["ADDR", "operator ADDR"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator ADDR
-See the [INVOKE](../../assembler/masm/invoke.md) directive.  
-  
-## Syntax  
-  
-```  
-  
-ADDR  
-  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+See the [INVOKE](../../assembler/masm/invoke.md) directive.
+
+## Syntax
+
+> ADDR
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

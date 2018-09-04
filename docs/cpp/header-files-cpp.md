@@ -11,7 +11,6 @@ dev_langs: ["C++"]
 helpviewer_keywords: ["header files [C++]"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Header files (C++)
@@ -82,12 +81,12 @@ After the compiler finishes compiling each .cpp file into .obj files, it passes 
 
 ## Include guards
 
-Typically, header files have an *include guard* or a **#pragma once** directive to ensure that they are not inserted multiple times into a single .cpp file. 
+Typically, header files have an *include guard* or a `#pragma once` directive to ensure that they are not inserted multiple times into a single .cpp file. 
 
+```cpp
 // my_class.h
 #ifndef MY_CLASS_H // include guard
 #define MY_CLASS_H
-
 
 namespace N
 {
@@ -96,10 +95,10 @@ namespace N
     public:
         void do_something();
     };
-
 }
 
 #endif /* MY_CLASS_H */
+```
 
 ## What to put in a header file
 
@@ -125,14 +124,12 @@ The following example shows the various kinds of declarations and definitions th
 
 namespace N  // namespace declaration
 {
-
     inline namespace P
     {
         //...
     }
 
     enum class colors : short { red, blue, purple, azure };
-
 
     const double PI = 3.14;  // const and constexpr definitions
     constexpr int MeaningOfLife{ 42 };
@@ -149,7 +146,6 @@ namespace N  // namespace declaration
 #ifdef LOG   // conditional compilation directive
     void print_to_log();
 #endif
-
 
     class my_class   // regular class definition, 
     {                // but no non-inline function definitions
@@ -186,5 +182,5 @@ namespace N  // namespace declaration
 
     template <typename T>  // template declaration
     class value_widget;
-
 }
+```

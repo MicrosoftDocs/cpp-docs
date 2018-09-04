@@ -27,7 +27,7 @@ void _enable(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_enable`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_enable`|x86, ARM, x64|  
   
  **Header file** \<intrin.h>  
   

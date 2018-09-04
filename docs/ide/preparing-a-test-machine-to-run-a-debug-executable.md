@@ -33,6 +33,6 @@ To prepare a computer to test the debug version of an application that is built 
 ## See Also  
  
  [Deployment in Visual C++](../ide/deployment-in-visual-cpp.md)   
- [Windows Installer Command line options](http://msdn.microsoft.com/library/windows/desktop/aa367988.aspx)   
+ [Windows Installer Command line options](/windows/desktop/Msi/command-line-options)   
  [Deployment Examples](../ide/deployment-examples.md)
  [Remote Debugging](/visualstudio/debugger/remote-debugging.md)

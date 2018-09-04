@@ -21,7 +21,7 @@ ms.workload: ["cplusplus"]
  where:  
   
  `file`  
- The name of the file that that contains [MIDL command line options](http://msdn.microsoft.com/library/windows/desktop/aa366839).  
+ The name of the file that contains [MIDL command line options](/windows/desktop/Midl/general-midl-command-line-syntax).  
   
 ## Remarks  
  All options for the conversion of an IDL file to a TLB file must be given in `file`; MIDL command-line options cannot be specified on the linker's command line. If /MIDL is not specified, the MIDL compiler will be invoked with only the IDL file name and no other options.  

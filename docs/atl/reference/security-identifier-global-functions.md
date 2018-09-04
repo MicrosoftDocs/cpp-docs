@@ -154,9 +154,9 @@ CSid NetworkService() throw(...);
 ```  
   
 ### Remarks  
- Use NetworkService to enable the NT AUTHORITY\NetworkService user to read a CPerfMon security object. NetworkService adds a SecurityAttribute to the ATLServer code which will allow the DLL to login under the NetworkService account on [!INCLUDE[WinXpFamily](../../atl/reference/includes/winxpfamily_md.md)] and greater operating system.  
+ Use NetworkService to enable the NT AUTHORITY\NetworkService user to read a CPerfMon security object. NetworkService adds a SecurityAttribute to the ATLServer code which will allow the DLL to login under the NetworkService account on Windows XP Home Edition, Windows XP Professional, Windows Server 2003 and greater operating system.  
   
- When custom log counters are created with ATLServer CPerfMon class in the Perfmon MMC, the counters may not appear when viewing the log file although they will appear correctly in the realtime view. CPerfMon custom performance counters don't have the necessary permissions to run under the "Performance Logs and Alerts" service (smlogsvc.exe) on [!INCLUDE[WinXpFamily](../../atl/reference/includes/winxpfamily_md.md)] (or greater) operating systems. This service runs under the "NT AUTHORITY\NetworkService" account.  
+ When custom log counters are created with ATLServer CPerfMon class in the Perfmon MMC, the counters may not appear when viewing the log file although they will appear correctly in the realtime view. CPerfMon custom performance counters don't have the necessary permissions to run under the "Performance Logs and Alerts" service (smlogsvc.exe) on Windows XP Home Edition, Windows XP Professional, Windows Server 2003 (or greater) operating systems. This service runs under the "NT AUTHORITY\NetworkService" account.  
   
 ##  <a name="null"></a>  Sids::Null  
  Returns the SECURITY_NULL_RID SID.  

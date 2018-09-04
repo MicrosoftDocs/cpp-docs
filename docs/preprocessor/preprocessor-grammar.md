@@ -14,87 +14,88 @@ ms.workload: ["cplusplus"]
 # Preprocessor Grammar
 **#define**  *identifier* *token-string*opt  
   
- *#* **define**  *identifier*[**(** *identifier*opt**,** *...* **,** *identifier*opt **)**] *token-string*opt  
+*#* **define**  *identifier*[**(** *identifier*opt**,** *...* **,** *identifier*opt **)**] *token-string*opt  
   
- **defined(**  *identifier* **)**  
+**defined(**  *identifier* **)**  
   
- **defined**  *identifier*  
+**defined**  *identifier*  
   
- `#include` **"***path-spec***"**  
+`#include` **"***path-spec***"**  
   
- `#include` **\<***path-spec***>**  
+`#include` **\<***path-spec***>**  
   
- **#line**  *digit-sequence*  **"** *filename* **"**opt  
+**#line**  *digit-sequence*  **"** *filename* **"**opt  
   
- *#* **undef**  *identifier*  
+*#* **undef**  *identifier*  
   
- **#error**  *token-string*  
+**#error**  *token-string*  
   
- **#pragma**  *token-string*  
+**#pragma**  *token-string*  
   
- *conditional* :  
- *if-part elif-parts*opt*else-part*opt*endif-line*  
+*conditional* :  
+*if-part elif-parts*opt*else-part*opt*endif-line*  
   
- *if-part* :  
- *if-linetext*  
+*if-part* :  
+*if-linetext*  
   
- *if-line* :  
- **#if**  *constant-expression*  
+*if-line* :  
+**#if**  *constant-expression*  
   
- **#ifdef**  *identifier*  
+**#ifdef**  *identifier*  
   
- **#ifndef**  *identifier*  
+**#ifndef**  *identifier*  
   
- *elif-parts* :  
- *elif-line text*  
+*elif-parts* :  
+*elif-line text*  
   
- *elif-parts elif-line text*  
+*elif-parts elif-line text*  
   
- *elif-line* :  
- **#elif**  *constant-expression*  
+*elif-line* :  
+**#elif**  *constant-expression*  
   
- *else-part* :  
- *else-linetext*  
+*else-part* :  
+*else-linetext*  
   
- *else-line* :  
- `#else`  
+*else-line* :  
+`#else`  
   
- *endif-line* :  
- `#endif`  
+*endif-line* :  
+`#endif`  
   
- *digit-sequence* :  
- *digit*  
+*digit-sequence* :  
+*digit*  
   
- *digit-sequence digit*  
+*digit-sequence digit*  
   
- *digit* : one of  
- **0 1 2 3 4 5 6 7 8 9**  
+*digit* : one of  
+**0 1 2 3 4 5 6 7 8 9**  
   
- *token-string* :  
- String of tokens  
+*token-string* :  
+String of tokens  
   
- *token* :  
- *keyword*  
+*token* :  
+*keyword*  
   
- *identifier*  
+*identifier*  
   
- *constant*  
+*constant*  
   
- *operator*  
+*operator*  
   
- `punctuator`  
+`punctuator`  
   
- *filename* :  
- Legal operating system filename  
+*filename* :  
+Legal operating system filename  
   
- *path-spec* :  
- Legal file path  
+*path-spec* :  
+Legal file path  
   
- *text* :  
- Any sequence of text  
+*text* :  
+Any sequence of text  
   
 > [!NOTE]
->  The following nonterminals are expanded in the [Lexical Conventions](../cpp/lexical-conventions.md) section of the *C++ Language Reference*: `constant`, `constant`-*expression*, *identifier*, *keyword*, `operator`, and `punctuator`.  
+> The following nonterminals are expanded in the [Lexical Conventions](../cpp/lexical-conventions.md) section of the *C++ Language Reference*: `constant`, `constant`-*expression*, *identifier*, *keyword*, `operator`, and `punctuator`.  
   
 ## See Also  
- [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+ 
+[Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

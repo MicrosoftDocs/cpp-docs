@@ -29,15 +29,15 @@ STDMETHOD( CreateInstance )(
 ### Parameters
 
 *pUnkOuter*  
-Must be `nullptr`; otherwise, the return value is CLASS_E_NOAGGREGATION.
+Must be **nullptr**; otherwise, the return value is CLASS_E_NOAGGREGATION.
 
-SimpleClassFactory doesn't support aggregation. If aggregation were supported and the object being created was part of an aggregate, `pUnkOuter` would be a pointer to the controlling IUnknown interface of the aggregate.
+SimpleClassFactory doesn't support aggregation. If aggregation were supported and the object being created was part of an aggregate, *pUnkOuter* would be a pointer to the controlling `IUnknown` interface of the aggregate.
 
 *riid*  
 Interface ID of the object to create.
 
 *ppvObject*  
-When this operation completes, pointer to an instance of the object specified by the `riid` parameter.
+When this operation completes, pointer to an instance of the object specified by the *riid* parameter.
 
 ## Return Value
 
@@ -45,7 +45,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ## Remarks
 
-If &#95;&#95;WRL_STRICT&#95;&#95; is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the ClassicCom or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+If `__WRL_STRICT__` is defined, an assert error is emitted if the base class specified in the class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the ClassicCom or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
 
 ## Requirements
 

@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Raising Software Exceptions
 Some of the most common sources of program errors are not flagged as exceptions by the system. For example, if you attempt to allocate a memory block but there is insufficient memory, the run-time or API function does not raise an exception but returns an error code.  
   
- However, you can treat any condition as an exception by detecting that condition in your code and then reporting it by calling the [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) function. By flagging errors this way, you can bring the advantages of structured exception handling to any kind of run-time error.  
+ However, you can treat any condition as an exception by detecting that condition in your code and then reporting it by calling the [RaiseException](https://msdn.microsoft.com/library/windows/desktop/ms680552) function. By flagging errors this way, you can bring the advantages of structured exception handling to any kind of run-time error.  
   
  To use structured exception handling with errors:  
   
@@ -41,7 +41,7 @@ Some of the most common sources of program errors are not flagged as exceptions 
 #define STATUS_FILE_BAD_FORMAT        0xE0000002  
 ```  
   
- After you have defined an exception code, you can use it to raise an exception. For example, the following code raises the STATUS_INSUFFICIENT_MEM exception in response to a memory allocation problem:  
+ After you have defined an exception code, you can use it to raise an exception. For example, the following code raises the `STATUS_INSUFFICIENT_MEM` exception in response to a memory allocation problem:  
   
 ```cpp 
 lpstr = _malloc( nBufferSize );  
@@ -49,7 +49,7 @@ if (lpstr == NULL)
     RaiseException( STATUS_INSUFFICIENT_MEM, 0, 0, 0);  
 ```  
   
- If you want to simply raise an exception, you can set the last three parameters to 0. The three last parameters are useful for passing additional information and setting a flag that prevents handlers from continuing execution. See the [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) function in the [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] for more information.  
+ If you want to simply raise an exception, you can set the last three parameters to 0. The three last parameters are useful for passing additional information and setting a flag that prevents handlers from continuing execution. See the [RaiseException](https://msdn.microsoft.com/library/windows/desktop/ms680552) function in the Windows SDK for more information.  
   
  In your exception-handling filters, you can then test for the codes you've defined. For example:  
   
@@ -61,6 +61,6 @@ __except (GetExceptionCode() == STATUS_INSUFFICIENT_MEM ||
         GetExceptionCode() == STATUS_FILE_BAD_FORMAT )  
 ```  
   
-## See Also  
+## See also  
  [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)   
  [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

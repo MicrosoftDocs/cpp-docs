@@ -13,50 +13,56 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # IsBaseOfStrict Structure
-Supports the WRL infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```  
-template <  
-   typename Base,  
-   typename Derived  
->  
-  
-struct IsBaseOfStrict;  
-template <  
-   typename Base  
->  
-struct IsBaseOfStrict<Base, Base>;  
-```  
-  
-#### Parameters  
- `Base`  
- The base type.  
-  
- `Derived`  
- The derived type.  
-  
-## Remarks  
- Tests whether one type is the base of another.  
-  
- The first template tests whether a type is derived from a base type, which might yield **true** or **false**. The second template tests whether a type is derived from itself, which always yields **false**.  
-  
-## Members  
-  
-### Public Constants  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[IsBaseOfStrict::value Constant](../windows/isbaseofstrict-value-constant.md)|Indicates whether one type is the base of another.|  
-  
-## Inheritance Hierarchy  
- `IsBaseOfStrict`  
-  
-## Requirements  
- **Header:** internal.h  
-  
- **Namespace:** Microsoft::WRL::Details  
-  
-## See Also  
- [Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)
+
+Supports the WRL infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+template <
+   typename Base,
+   typename Derived
+>
+
+struct IsBaseOfStrict;
+template <
+   typename Base
+>
+struct IsBaseOfStrict<Base, Base>;
+```
+
+### Parameters
+
+*Base*  
+The base type.
+
+*Derived*  
+The derived type.
+
+## Remarks
+
+Tests whether one type is the base of another.
+
+The first template tests whether a type is derived from a base type, which might yield **true** or **false**. The second template tests whether a type is derived from itself, which always yields **false**.
+
+## Members
+
+### Public Constants
+
+|Name|Description|
+|----------|-----------------|
+|[IsBaseOfStrict::value Constant](../windows/isbaseofstrict-value-constant.md)|Indicates whether one type is the base of another.|
+
+## Inheritance Hierarchy
+
+`IsBaseOfStrict`
+
+## Requirements
+
+**Header:** internal.h
+
+**Namespace:** Microsoft::WRL::Details
+
+## See Also
+
+[Microsoft::WRL::Details Namespace](../windows/microsoft-wrl-details-namespace.md)

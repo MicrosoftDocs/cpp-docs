@@ -41,7 +41,7 @@ class CComCoClass
 |[CComCoClass::GetObjectDescription](#getobjectdescription)|(Static) Override to return the object's description.|  
   
 ## Remarks  
- `CComCoClass` provides methods for retrieving an object's CLSID, setting error information, and creating instances of the class. Any class registered in the [object map](http://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f) should be derived from `CComCoClass`.  
+ `CComCoClass` provides methods for retrieving an object's CLSID, setting error information, and creating instances of the class. Any class registered in the object map should be derived from `CComCoClass`.  
   
  `CComCoClass` also defines the default class factory and aggregation model for your object. `CComCoClass` uses the following two macros:  
   
@@ -78,7 +78,7 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
  [out] The address of a pointer variable that receives the requested interface pointer if creation succeeds.  
   
 ### Return Value  
- A standard HRESULT value. See [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615) in the Windows SDK for a description of possible return values.  
+ A standard HRESULT value. See [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) in the Windows SDK for a description of possible return values.  
   
 ### Remarks  
  Use the first overload of this function for typical object creation; use the second overload when you need to aggregate the object being created.  
@@ -90,7 +90,7 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
  Note that the interface *Q* must have an IID associated with it that can be retrieved using the [__uuidof](../../cpp/uuidof-operator.md) operator.  
   
 ### Example  
- In the following example, `CDocument` is a wizard-generated ATL class derived from `CComCoClass` that implements the `IDocument` interface. The class is registered in the object map with the OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO macro so clients can't create instances of the document using [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615). `CApplication` is a CoClass that provides a method on one of its own COM interfaces to create instances of the document class. The code below shows how easy it to create instances of the document class using the `CreateInstance` member inherited from the `CComCoClass` base class.  
+ In the following example, `CDocument` is a wizard-generated ATL class derived from `CComCoClass` that implements the `IDocument` interface. The class is registered in the object map with the OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO macro so clients can't create instances of the document using [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance). `CApplication` is a CoClass that provides a method on one of its own COM interfaces to create instances of the document class. The code below shows how easy it to create instances of the document class using the `CreateInstance` member inherited from the `CComCoClass` base class.  
   
  [!code-cpp[NVC_ATL_COM#11](../../atl/codesnippet/cpp/ccomcoclass-class_2.cpp)]  
   

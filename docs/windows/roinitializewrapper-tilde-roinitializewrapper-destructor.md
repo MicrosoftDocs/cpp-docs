@@ -12,21 +12,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # RoInitializeWrapper::~RoInitializeWrapper Destructor
-Uninitializes the Windows Runtime.  
-  
-## Syntax  
-  
-```cpp  
+
+Uninitializes the Windows Runtime.
+
+## Syntax
+
+```cpp
 ~RoInitializeWrapper()  
-```  
-  
-## Remarks  
- The RoInitializeWrapper class invokes Windows::Foundation::Uninitialize().  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+```
+
+## Remarks
+
+The **RoInitializeWrapper** class invokes `Windows::Foundation::Uninitialize()`.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

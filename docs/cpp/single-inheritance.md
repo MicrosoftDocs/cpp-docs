@@ -47,7 +47,7 @@ Sample of Directed Acyclic Graph
  In the diagram shown above, called a "directed acyclic graph" (or "DAG"), some of the classes are base classes for more than one derived class. However, the reverse is not true: there is only one direct base class for any given derived class. The graph in the figure depicts a "single inheritance" structure.  
   
 > [!NOTE]
->  Directed acyclic graphs are not unique to single inheritance. They are also used to depict multiple-inheritance graphs. This topic is covered in [Multiple Inheritance](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca).  
+>  Directed acyclic graphs are not unique to single inheritance. They are also used to depict multiple-inheritance graphs.  
   
  In inheritance, the derived class contains the members of the base class plus any new members you add. As a result, a derived class can refer to members of the base class (unless those members are redefined in the derived class). The scope-resolution operator (`::`) can be used to refer to members of direct or indirect base classes when those members have been redefined in the derived class. Consider this example:  
   
@@ -148,4 +148,3 @@ int main() {
   
 > [!NOTE]
 >  Forcing the base class to implement a function such as `PrintNameOf` is often not the best design. [Virtual Functions](../cpp/virtual-functions.md) offers other design alternatives.  
-  

@@ -8,8 +8,8 @@ f1_keywords: ["VCCORLIB/Platform::ChangedStateException", "VCCORLIB/Platform::Ch
 dev_langs: ["C++"]
 helpviewer_keywords: ["Platform::ChangedStateException"]
 ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::ChangedStateException Class

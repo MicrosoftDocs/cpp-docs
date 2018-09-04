@@ -11,7 +11,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # How to: Create and Use CComPtr and CComQIPtr Instances
-In classic Windows programming, libraries are often implemented as COM objects (or more precisely, as COM servers). Many Windows operating system components are implemented as COM servers, and many contributors provide libraries in this form. For information about the basics of COM, see [Component Object Model (COM)](http://msdn.microsoft.com/3578ca42-a4b6-44b3-ad5b-aeb5fa61f3f4).  
+In classic Windows programming, libraries are often implemented as COM objects (or more precisely, as COM servers). Many Windows operating system components are implemented as COM servers, and many contributors provide libraries in this form. For information about the basics of COM, see [Component Object Model (COM)](/windows/desktop/com/component-object-model--com--portal).  
   
  When you instantiate a Component Object Model (COM) object, store the interface pointer in a COM smart pointer, which performs the reference counting by using calls to `AddRef` and `Release` in the destructor. If you are using the Active Template Library (ATL) or the Microsoft Foundation Class Library (MFC), then use the `CComPtr` smart pointer. If you are not using ATL or MFC, then use `_com_ptr_t`. Because there is no COM equivalent to `std::unique_ptr`, use these smart pointers for both single-owner and multiple-owner scenarios. Both `CComPtr` and `ComQIPtr` support move operations that have rvalue references.  
   
@@ -32,5 +32,5 @@ In classic Windows programming, libraries are often implemented as COM objects (
   
  [!code-cpp[COM_smart_pointers#03](../cpp/codesnippet/CPP/how-to-create-and-use-ccomptr-and-ccomqiptr-instances_3.cpp)]  
   
-## See Also  
+## See also  
  [Smart Pointers](../cpp/smart-pointers-modern-cpp.md)

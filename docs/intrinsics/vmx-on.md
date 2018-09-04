@@ -38,13 +38,13 @@ unsigned char __vmx_on(
 |2|The operation failed without status available.|  
   
 ## Remarks  
- The `__vmx_on` function corresponds to the `VMXON` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," document number C97063-002, at the [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ The `__vmx_on` function corresponds to the `VMXON` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," document number C97063-002, at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.  
   
 ## Requirements  
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__vmx_on`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_on`|x64|  
   
  **Header file** \<intrin.h>  
   

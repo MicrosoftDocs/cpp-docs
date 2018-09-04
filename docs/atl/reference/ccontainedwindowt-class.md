@@ -88,7 +88,7 @@ class CContainedWindowT : public TBase
 |Creating controls|[ATL Tutorial](../../atl/active-template-library-atl-tutorial.md)|  
 |Using windows in ATL|[ATL Window Classes](../../atl/atl-window-classes.md)|  
 |ATL Project Wizard|[Creating an ATL Project](../../atl/reference/creating-an-atl-project.md)|  
-|Windows|[Windows](http://msdn.microsoft.com/library/windows/desktop/ms632595) and subsequent topics in the Windows SDK|  
+|Windows|[Windows](https://msdn.microsoft.com/library/windows/desktop/ms632595) and subsequent topics in the Windows SDK|  
   
 ## Inheritance Hierarchy  
  `TBase`  
@@ -187,22 +187,22 @@ HWND Create(
  [in] The handle to the parent or owner window.  
   
  *rect*  
- [in] A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.  
+ [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the position of the window. The `RECT` can be passed by pointer or by reference.  
   
  *szWindowName*  
  [in] Specifies the name of the window. The default value is NULL.  
   
  *dwStyle*  
- [in] The style of the window. The default value is WS_CHILD &#124; WS_VISIBLE. For a list of possible values, see [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
+ [in] The style of the window. The default value is WS_CHILD &#124; WS_VISIBLE. For a list of possible values, see [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.  
   
  *dwExStyle*  
- [in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ [in] The extended window style. The default value is 0, meaning no extended style. For a list of possible values, see [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.  
   
  *MenuOrID*  
  [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.  
   
  *lpCreateParam*  
- [in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680).  
+ [in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).  
   
 ### Return Value  
  If successful, the handle to the newly created window; otherwise, NULL.  
@@ -241,7 +241,7 @@ LRESULT DefWindowProc(
  The result of the message processing.  
   
 ### Remarks  
- By default, `DefWindowProc` calls the [CallWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).  
+ By default, `DefWindowProc` calls the [CallWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 function to send the message information to the window procedure specified in [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).  
   
 ##  <a name="getcurrentmessage"></a>  CContainedWindowT::GetCurrentMessage  
  Returns the current message (`m_pCurrentMsg`).  

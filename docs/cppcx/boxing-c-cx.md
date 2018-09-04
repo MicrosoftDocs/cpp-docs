@@ -5,12 +5,12 @@ ms.date: "12/30/2016"
 ms.technology: "cpp-windows"
 ms.topic: "language-reference"
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-author: "ghogen"
-ms.author: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Boxing (C++/CX)
-*Boxing* is wrapping a value type variable such as [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)—or a fundamental scalar type such as `int`—in a ref class when the variable is passed to a method that takes [Platform::Object^](../cppcx/platform-object-class.md) as its input type.  
+*Boxing* is wrapping a value type variable such as [Windows::Foundation::DateTime](https://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)—or a fundamental scalar type such as `int`—in a ref class when the variable is passed to a method that takes [Platform::Object^](../cppcx/platform-object-class.md) as its input type.  
   
 ## Passing a value type to an Object^ parameter  
  Although you don't have to explicitly box a variable to pass it to a method parameter of type [Platform::Object^](../cppcx/platform-object-class.md), you do have to explicitly cast back to the original type when you retrieve values that have been previously boxed.  

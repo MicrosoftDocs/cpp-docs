@@ -1,7 +1,7 @@
 ---
 title: "PAGE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["PAGE"]
@@ -13,15 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # PAGE
-The first directive sets line *length* and character *width* of the program listing. If no arguments are given, generates a page break. The second directive increments the section number and resets the page number to 1.  
-  
-## Syntax  
-  
-```  
-  
-      PAGE [[[[length]], width]]  
-PAGE +  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+The first directive sets line *length* and character *width* of the program listing. If no arguments are given, generates a page break. The second directive increments the section number and resets the page number to 1.
+
+## Syntax
+
+> PAGE [[*length*]][[, *width*]]<br/><br/>
+> PAGE +
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # naked (C++)
 **Microsoft Specific**  
   
- For functions declared with the **naked** attribute, the compiler generates code without prolog and epilog code. You can use this feature to write your own prolog/epilog code sequences using inline assembler code. Naked functions are particularly useful in writing virtual device drivers.  Note that the **naked** attribute is only valid on x86 and ARM, and is not available on [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  
+ For functions declared with the **naked** attribute, the compiler generates code without prolog and epilog code. You can use this feature to write your own prolog/epilog code sequences using inline assembler code. Naked functions are particularly useful in writing virtual device drivers.  Note that the **naked** attribute is only valid on x86 and ARM, and is not available on x64.  
   
 ## Syntax  
   
@@ -29,7 +29,6 @@ __declspec(naked) declarator
 
  The compiler cannot generate an inline function for a function marked with the naked attribute, even if the function is also marked with the [__forceinline](inline-functions-cpp.md) keyword.  
 
-  
  The compiler issues an error if the **naked** attribute is applied to anything other than the definition of a non-member method.  
   
 ## Examples  
@@ -61,7 +60,7 @@ __declspec( naked ) int func();  // Error--naked attribute not permitted on func
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [Naked Function Calls](../cpp/naked-function-calls.md)

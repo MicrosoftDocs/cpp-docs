@@ -12,11 +12,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Using Verifiable Assemblies with SQL Server (C++/CLI)
-Extended stored procedures, packaged as dynamic-link libraries (DLLs), provide a way to extend SQL Server functionality through functions developed with Visual C++. Extended stored procedures are implemented as functions inside DLLs. In addition to functions, extended stored procedures can also define [user-defined types](../cpp/classes-and-structs-cpp.md) and [aggregate functions](http://msdn.microsoft.com/en-us/de255454-f45e-4281-81f9-bc61893ac5da) (such as SUM or AVG).  
+Extended stored procedures, packaged as dynamic-link libraries (DLLs), provide a way to extend SQL Server functionality through functions developed with Visual C++. Extended stored procedures are implemented as functions inside DLLs. In addition to functions, extended stored procedures can also define [user-defined types](../cpp/classes-and-structs-cpp.md) and aggregate functions (such as SUM or AVG).  
   
  When a client executes an extended stored procedure, SQL Server searches for the DLL associated with the extended stored procedure and loads the DLL. SQL Server calls the requested extended stored procedure and executes it under a specified security context. The extended stored procedure then passes result sets and returns parameters back to the server.  
   
- [!INCLUDE[sqprsqlong](../dotnet/includes/sqprsqlong_md.md)] provides extensions to Transact-SQL (T-SQL) to allow you to install verifiable assemblies into SQL Server. The SQL Server permission set specifies the security context, with the following levels of security:  
+ SQL Server provides extensions to Transact-SQL (T-SQL) to allow you to install verifiable assemblies into SQL Server. The SQL Server permission set specifies the security context, with the following levels of security:  
   
 -   Unrestricted mode: Run code at your own risk; code does not have to be verifiably type-safe.  
   

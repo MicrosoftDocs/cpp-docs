@@ -13,35 +13,38 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # IID_PPV_ARGS_Helper Function
-Verifies that the type of the specified argument derives from the `IUnknown` interface.  
-  
+
+Verifies that the type of the specified argument derives from the `IUnknown` interface.
+
 > [!IMPORTANT]
->  This template specialization supports the WRL infrastructure and is not intended to be used directly from your code. Use [IID_PPV_ARGS](http://msdn.microsoft.com/library/windows/desktop/ee330727.aspx) instead.  
-  
-## Syntax  
-  
-```  
-template<typename T>  
-void** IID_PPV_ARGS_Helper(  
-   _Inout_ Microsoft::WRL::Details::ComPtrRef<T> pp  
-);  
-```  
-  
-#### Parameters  
- `T`  
- The type of argument `pp`.  
-  
- `pp`  
- A doubly-indirect pointer.  
-  
-## Return Value  
- Argument `pp` cast to a pointer-to-a-pointer to `void`.  
-  
-## Remarks  
- A compile-time error is generated if the template parameter `T` doesn't derive from `IUnknown`.  
-  
-## Requirements  
- **Header:** client.h  
-  
-## See Also  
- [Reference (Windows Runtime Library)](http://msdn.microsoft.com/en-us/00000000-0000-0000-0000-000000000000)
+> This template specialization supports the WRL infrastructure and is not intended to be used directly from your code. Use [IID_PPV_ARGS](https://msdn.microsoft.com/library/windows/desktop/ee330727.aspx) instead.
+
+## Syntax
+
+```cpp
+template<typename T>
+void** IID_PPV_ARGS_Helper(
+   _Inout_ Microsoft::WRL::Details::ComPtrRef<T> pp
+);
+```
+
+### Parameters
+
+*T*  
+The type of argument *pp*.
+
+*pp*  
+A doubly-indirect pointer.
+
+## Return Value
+
+Argument *pp* cast to a pointer-to-a-pointer to **void**.
+
+## Remarks
+
+A compile-time error is generated if the template parameter *T* doesn't derive from `IUnknown`.
+
+## Requirements
+
+**Header:** client.h
+

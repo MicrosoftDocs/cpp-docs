@@ -52,7 +52,7 @@ class CWin32Heap : public IAtlMemMgr
 |[CWin32Heap::m_hHeap](#m_hheap)|Handle to the heap object.|  
   
 ## Remarks  
- `CWin32Heap` implements memory allocation methods using the Win32 heap allocation functions, including [HeapAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366597) and [HeapFree](http://msdn.microsoft.com/library/windows/desktop/aa366701). Unlike other Heap classes, `CWin32Heap` requires a valid heap handle to be provided before memory is allocated: the other classes default to using the process heap. The handle can be supplied to the constructor or to the [CWin32Heap::Attach](#attach) method. See the [CWin32Heap::CWin32Heap](#cwin32heap) method for more details.  
+ `CWin32Heap` implements memory allocation methods using the Win32 heap allocation functions, including [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc) and [HeapFree](/windows/desktop/api/heapapi/nf-heapapi-heapfree). Unlike other Heap classes, `CWin32Heap` requires a valid heap handle to be provided before memory is allocated: the other classes default to using the process heap. The handle can be supplied to the constructor or to the [CWin32Heap::Attach](#attach) method. See the [CWin32Heap::CWin32Heap](#cwin32heap) method for more details.  
   
 ## Example  
  See the example for [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md).  
@@ -82,7 +82,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### Remarks  
  Call [CWin32Heap::Free](#free) or [CWin32Heap::Reallocate](#reallocate) to free the memory allocated by this method.  
   
- Implemented using [HeapAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366597).  
+ Implemented using [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc).  
   
 ##  <a name="attach"></a>  CWin32Heap::Attach  
  Attaches the heap object to an existing heap.  
@@ -141,7 +141,7 @@ CWin32Heap(
   
  The parameter HEAP_NO_SERIALIZE specifies that mutual exclusion will not be used when the heap functions allocate and free memory, with an according increase in performance.  
   
- The third parameter defaults to 0, which allows the heap to grow as required. See [HeapCreate](http://msdn.microsoft.com/library/windows/desktop/aa366599\(v=vs.85\).aspx) for an explanation of the memory sizes and flags.  
+ The third parameter defaults to 0, which allows the heap to grow as required. See [HeapCreate](/windows/desktop/api/heapapi/nf-heapapi-heapcreate) for an explanation of the memory sizes and flags.  
   
 ##  <a name="dtor"></a>  CWin32Heap::~CWin32Heap  
  The destructor.  

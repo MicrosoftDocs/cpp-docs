@@ -50,5 +50,5 @@ ms.workload: ["cplusplus"]
 ## See Also  
  [Implementing a Window](../atl/implementing-a-window.md)   
  [Message Maps](../atl/message-maps-atl.md)   
- [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
+ [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
 

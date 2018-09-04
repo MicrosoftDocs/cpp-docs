@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 # CMFCToolBar Class
 The `CMFCToolBar` class resembles [CToolBar Class](../../mfc/reference/ctoolbar-class.md), but provides additional support for user interface features. These include flat toolbars, toolbars with hot images, large icons, pager buttons, locked toolbars, rebar controls, text under images, background images, and tabbed toolbars. The `CMFCToolBar` class also contains built-in support for user customization of toolbars and menus, drag-and-drop between toolbars and menus, combo box buttons, edit box buttons, color pickers, and roll-up buttons.
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
   
 ## Syntax  
   
@@ -600,7 +600,7 @@ virtual BOOL Create(
  A pointer to the parent window of the toolbar.  
   
  [in] *dwStyle*  
- The toolbar style. See [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the Windows SDK for the list of styles.  
+ The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) in the Windows SDK for the list of styles.  
   
  [in] *nID*  
  The ID of the child window of the toolbar.  
@@ -634,7 +634,7 @@ virtual BOOL CreateEx(
  Additional styles for creating the embedded control bar object.  
   
  [in] *dwStyle*  
- The toolbar style. See [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) for a list of appropriate styles.  
+ The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) for a list of appropriate styles.  
   
  [in] *rcBorders*  
  A `CRect` object that specifies the widths of the toolbar window borders.  
@@ -1177,7 +1177,7 @@ static COLORREF GetHotTextColor();
 ```  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that represent the current highlighted text color.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value that represent the current highlighted text color.  
   
 ### Remarks  
  Call [CMFCToolBar::SetHotTextColor](#sethottextcolor) to set a new text color for highlighted toolbar buttons.  
@@ -1906,7 +1906,7 @@ BOOL IsOneRowWithSibling();
  TRUE if the toolbar and its sibling are positioned on the same row; otherwise FALSE.  
   
 ### Remarks  
- The [CMFCCustomizeButton::CreatePopupMenu](http://msdn.microsoft.com/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) method calls this method to determine how to show the **Customize** pop-up menu. If this method returns TRUE, the framework displays the **Show Buttons on One Row** button. Otherwise, the framework displays the **Show Buttons on Two Rows** button.  
+ The [CMFCCustomizeButton::CreatePopupMenu](internal-classes.md) method calls this method to determine how to show the **Customize** pop-up menu. If this method returns TRUE, the framework displays the **Show Buttons on One Row** button. Otherwise, the framework displays the **Show Buttons on Two Rows** button.  
   
  You typically do not have to use this method. To enable the **Show Buttons on One Row** or **Show Buttons on Two Rows** buttons, call [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   

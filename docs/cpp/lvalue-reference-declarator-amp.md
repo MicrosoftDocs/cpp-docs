@@ -18,7 +18,6 @@ Holds the address of an object but behaves syntactically like an object.
 ## Syntax  
   
 ```  
-  
 type-id & cast-expression  
 ```  
   
@@ -67,7 +66,7 @@ int main()
 Bill is 40  
 ```  
   
-## See Also  
+## See also  
  [References](../cpp/references-cpp.md)   
  [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)   
  [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)   

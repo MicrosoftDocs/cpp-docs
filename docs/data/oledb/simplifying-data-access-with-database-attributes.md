@@ -25,13 +25,13 @@ This topic demonstrates the use of database attributes to simplify database oper
   
 -   The `db_source` call in the attributed version is equivalent to the `OpenDataSource()` call in the template declaration.  
   
--   The **db_table** call in the attributed version is equivalent to the following template declaration:  
+-   The `db_table` call in the attributed version is equivalent to the following template declaration:  
   
     ```  
     class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  
     ```  
   
--   The **db_column** calls in the attributed version are equivalent to the column map (see `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) in the template declaration.  
+-   The `db_column` calls in the attributed version are equivalent to the column map (see `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) in the template declaration.  
   
  The attributes inject a user record class declaration for you. The user record class is equivalent to `CAuthorsNoAttrAccessor` in the template declaration. If your table class is `CAuthors`, the injected user record class is named `CAuthorsAccessor`, and you can only view its declaration in injected code. For more information, see "Attribute-Injected User Record Classes" in [User Records](../../data/oledb/user-records.md).  
   
@@ -40,7 +40,7 @@ This topic demonstrates the use of database attributes to simplify database oper
  For information about the attributes discussed in this topic, see [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md).  
   
 ## Table and Accessor Declaration Using Attributes  
- The following code calls `db_source` and **db_table** on the table class. `db_source` specifies the data source and connection to be used. **db_table** injects the appropriate template code to declare a table class. **db_column** specify the column map and inject the accessor declaration. You can use OLE DB consumer attributes in any project that supports ATL.  
+ The following code calls `db_source` and `db_table` on the table class. `db_source` specifies the data source and connection to be used. `db_table` injects the appropriate template code to declare a table class. `db_column` specify the column map and inject the accessor declaration. You can use OLE DB consumer attributes in any project that supports ATL.  
   
  Here is the table and accessor declaration using attributes:  
   
@@ -184,4 +184,3 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
   
 ## See Also  
  [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)   
- [Attributes Walkthroughs](http://msdn.microsoft.com/en-us/73df1d5d-261a-4521-98fb-06dcbf5ec0d0)

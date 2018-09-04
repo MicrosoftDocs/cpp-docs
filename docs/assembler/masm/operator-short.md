@@ -1,7 +1,7 @@
 ---
 title: "operator SHORT | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator SHORT"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator SHORT
-Sets the type of *label* to short. All jumps to *label* must be short (within the range -128 to +127 bytes from the jump instruction to *label*).  
-  
-## Syntax  
-  
-```  
-  
-SHORT label  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Sets the type of *label* to short. All jumps to *label* must be short (within the range -128 to +127 bytes from the jump instruction to *label*).
+
+## Syntax
+
+> SHORT label
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

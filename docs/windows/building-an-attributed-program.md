@@ -12,19 +12,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # Building an Attributed Program
-After you put Visual C++ attributes into your source code, you may want the Visual C++ compiler to produce a type library and .idl file for you. The following linker options help you build .tlb and .idl files:  
-  
--   [/IDLOUT](../build/reference/idlout-name-midl-output-files.md)  
-  
--   [/IGNOREIDL](../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)  
-  
--   [/MIDL](../build/reference/midl-specify-midl-command-line-options.md)  
-  
--   [/TLBOUT](../build/reference/tlbout-name-dot-tlb-file.md)  
-  
- Some projects contain multiple independent .idl files. These are used to produce two or more .tlb files and optionally bind them into the resource block. This scenario is not currently supported in Visual C++.  
-  
- In addition, the Visual C++ linker will output all IDL-related attribute information to a single MIDL file. There will be no way to generate two type libraries from a single project.  
-  
-## See Also  
- [Concepts](../windows/attributed-programming-concepts.md)
+
+After you put Visual C++ attributes into your source code, you may want the Visual C++ compiler to produce a type library and .idl file for you. The following linker options help you build .tlb and .idl files:
+
+- [/IDLOUT](../build/reference/idlout-name-midl-output-files.md)
+
+- [/IGNOREIDL](../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
+
+- [/MIDL](../build/reference/midl-specify-midl-command-line-options.md)
+
+- [/TLBOUT](../build/reference/tlbout-name-dot-tlb-file.md)
+
+Some projects contain multiple independent .idl files. These are used to produce two or more .tlb files and optionally bind them into the resource block. This scenario is not currently supported in Visual C++.
+
+In addition, the Visual C++ linker will output all IDL-related attribute information to a single MIDL file. There will be no way to generate two type libraries from a single project.
+
+## See Also
+
+[Concepts](../windows/attributed-programming-concepts.md)

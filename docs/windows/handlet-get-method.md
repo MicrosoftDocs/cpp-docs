@@ -13,21 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # HandleT::Get Method
-Gets the value of the underlying handle.  
-  
-## Syntax  
-  
-```  
-typename HandleTraits::Type Get() const;  
-```  
-  
-## Return Value  
- A handle.  
-  
-## Requirements  
- **Header:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers  
-  
-## See Also  
- [HandleT Class](../windows/handlet-class.md)
+
+Gets the value of the underlying handle.
+
+## Syntax
+
+```cpp
+typename HandleTraits::Type Get() const;
+```
+
+## Return Value
+
+A handle.
+
+## Requirements
+
+**Header:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers
+
+## See Also
+
+[HandleT Class](../windows/handlet-class.md)

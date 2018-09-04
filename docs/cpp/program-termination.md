@@ -20,5 +20,5 @@ In C++, there are several ways to exit a program:
   
 -   Execute a [return](../cpp/return-statement-in-program-termination-cpp.md) statement from `main`.  
   
-## See Also  
+## See also  
  [main: Program Startup](../cpp/main-program-startup.md)

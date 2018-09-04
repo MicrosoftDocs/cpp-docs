@@ -108,7 +108,7 @@ static HBITMAP __stdcall CreateBitmap_32(
  A handle to the newly created DIB bitmap if this method is successful; otherwise NULL.  
   
 ### Remarks  
- For more information about how to create a DIB bitmap, see [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183491).  
+ For more information about how to create a DIB bitmap, see [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap).  
   
 ##  <a name="drawalpha"></a>  CDrawingManager::DrawAlpha  
  Displays bitmaps that have transparent or semitransparent pixels.  
@@ -135,7 +135,7 @@ void DrawAlpha(
  The source rectangle.  
   
 ### Remarks  
- This method performs alpha-blending for two bitmaps. For more information about alpha-blending, see [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) in the Windows SDK.  
+ This method performs alpha-blending for two bitmaps. For more information about alpha-blending, see [AlphaBlend](/windows/desktop/api/wingdi/nf-wingdi-alphablend) in the Windows SDK.  
   
 ##  <a name="drawellipse"></a>  CDrawingManager::DrawEllipse  
  Draws an ellipse with the supplied fill and border colors.  
@@ -871,7 +871,7 @@ static COLORREF __stdcall SmartMixColors(
 ### Remarks  
  This method fails with an error if either *k1* or *k2* is less than zero. If both of these parameters are set to 0, the method returns `RGB(0, 0, 0)`.  
   
- The weighted ratio is calculated with the following formula:                         (color1 * k1 + color2 \* k2)/(k1 + k2). After the weighted ratio is determined, the method calculates the luminosity for the mixed color. It then multiplies the luminosity by *dblLumRatio*. If the value is larger than 1.0, the method sets the luminosity for the mixed color to the new value. Otherwise, the luminosity is set to 1.0.  
+ The weighted ratio is calculated with the following formula:                         (color1 \* k1 + color2 \* k2)/(k1 + k2). After the weighted ratio is determined, the method calculates the luminosity for the mixed color. It then multiplies the luminosity by *dblLumRatio*. If the value is larger than 1.0, the method sets the luminosity for the mixed color to the new value. Otherwise, the luminosity is set to 1.0.  
   
 ##  <a name="drawrotated"></a>  CDrawingManager::DrawRotated  
  Rotates a source DC content inside the given rectangle by 90 degrees.  
