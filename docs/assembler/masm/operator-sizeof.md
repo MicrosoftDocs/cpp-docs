@@ -1,7 +1,7 @@
 ---
 title: "operator SIZEOF | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator SIZEOF"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator SIZEOF
-Returns the number of bytes in *variable* or `type`.  
-  
-## Syntax  
-  
-```  
-  
-SIZEOF {variable | type}  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Returns the number of bytes in *variable* or `type`.
+
+## Syntax
+
+> SIZEOF {variable | type}
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: "EXITM | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["EXITM"]
@@ -13,17 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # EXITM
-Terminates expansion of the current repeat or macro block and begins assembly of the next statement outside the block.  
-  
-## Syntax  
-  
-```  
-  
-EXITM [[textitem]]   
-```  
-  
-## Remarks  
- In a macro function, *textitem* is the value returned.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Terminates expansion of the current repeat or macro block and begins assembly of the next statement outside the block.
+
+## Syntax
+
+> EXITM [[textitem]]
+
+## Remarks
+
+In a macro function, *textitem* is the value returned.
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

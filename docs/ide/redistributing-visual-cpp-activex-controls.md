@@ -33,8 +33,6 @@ Visual C++ 6.0 supplies ActiveX controls you can use in applications that you th
   
  If these DLLs are not available on the target system, you need to get them updated using the prescribed mechanism for updating the corresponding operating system. You can download the latest service packs for Windows operating systems from [http://windowsupdate.microsoft.com](http://windowsupdate.microsoft.com).  
   
- If your application uses one of the ActiveX controls that connects to a database, you must have the Microsoft Data Access Components (MDAC) installed on the target system. For more information, see [Redistributing Database Support Files](../ide/redistributing-database-support-files.md).  
-  
  When using an ActiveX control that connects to a database, you also need to replicate the data source name on the target computer. You can do this programmatically with functions such as `ConfigDSN`.  
   
  Some redistributable ActiveX controls have additional dependencies. For each .ocx file in the Os\System folder on the Visual C++ 6.0 product CD, there is also a .dep file. For each .ocx file that you want to redistribute, look for one or more USES entries in the corresponding .dep file. If a file is listed, you must ensure that the file is on the target computer. Any DLLs directly supporting an .ocx file need to be registered. (For Regsvr32.exe to succeed, the target computer must first contain all of the DLLs the control statically loads.) Furthermore, if a DLL that is listed as a dependency also has a .dep file in the Os\System folder on the Visual C++ 6.0 CD, you must also investigate that .dep file for USES entries.  

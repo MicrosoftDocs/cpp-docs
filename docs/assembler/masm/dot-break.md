@@ -1,7 +1,7 @@
 ---
 title: ".BREAK | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".BREAK"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .BREAK
-Generates code to terminate a [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md) block if *condition* is true.  
-  
-## Syntax  
-  
-```  
-  
-.BREAK [[.IF condition]]   
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Generates code to terminate a [.WHILE](../../assembler/masm/dot-while.md) or [.REPEAT](../../assembler/masm/dot-repeat.md) block if *condition* is true.
+
+## Syntax
+
+> .BREAK [[.IF condition]]
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

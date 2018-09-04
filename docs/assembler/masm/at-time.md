@@ -1,7 +1,7 @@
 ---
 title: "@Time | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@Time"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Time
-The system time in 24-hour hh:mm:ss format (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@Time  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+The system time in 24-hour hh:mm:ss format (text macro).
+
+## Syntax
+
+> @Time
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

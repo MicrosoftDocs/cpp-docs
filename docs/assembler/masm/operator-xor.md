@@ -1,7 +1,7 @@
 ---
 title: "operator XOR | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["operator XOR", "Xor"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator XOR
-Returns the result of a bitwise **XOR** operation for *expression1* and *expression2*.  
-  
-## Syntax  
-  
-```  
-  
-expression1 XOR expression2  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Returns the result of a bitwise **XOR** operation for *expression1* and *expression2*.
+
+## Syntax
+
+> expression1 XOR expression2
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

@@ -284,7 +284,7 @@ BOOL CreateSysColorBrush(int nIndex);
   
 ### Parameters  
  *nIndex*  
- Specifies a color index. This value corresponds to the color used to paint one of the 21 window elements. See [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) in the Windows SDK for a list of values.  
+ Specifies a color index. This value corresponds to the color used to paint one of the 21 window elements. See [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) in the Windows SDK for a list of values.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  

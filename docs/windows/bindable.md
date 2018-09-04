@@ -28,11 +28,11 @@ The **bindable** C++ attribute has the same functionality as the [bindable](/win
 
 The following MFC samples show the use of **bindable**:
 
-- [Controls Samples: MFC-Based ActiveX Controls](https://msdn.microsoft.com/a44adf86-0ba0-4504-bedb-512b6cba2e63)
+- [Controls Samples: MFC-Based ActiveX Controls](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
-- [CIRC Sample: ActiveX Control](https://msdn.microsoft.com/9ba34d04-280e-49f4-90ae-41a6be44c95b)
+- [CIRC Sample: ActiveX Control](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
-- [TESTHELP Sample: ActiveX Control with Tooltips and Help](https://msdn.microsoft.com/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)
+- [TESTHELP Sample: ActiveX Control with Tooltips and Help](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
 ## Example
 

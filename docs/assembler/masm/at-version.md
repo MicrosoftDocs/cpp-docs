@@ -1,7 +1,7 @@
 ---
 title: "@Version | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["@Version"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @Version
-615 in MASM 6.15 (text macro).  
-  
-## Syntax  
-  
-```  
-  
-@Version  
-  
-```  
-  
-## See Also  
- [Symbols Reference](../../assembler/masm/symbols-reference.md)
+
+615 in MASM 6.15 (text macro).
+
+## Syntax
+
+> @Version
+
+## See also
+
+[Symbols Reference](../../assembler/masm/symbols-reference.md)<br/>

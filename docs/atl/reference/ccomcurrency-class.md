@@ -539,5 +539,5 @@ HRESULT SetInteger(LONGLONG nInteger);
   
 ## See Also  
  [COleCurrency Class](../../mfc/reference/colecurrency-class.md)   
- [CURRENCY](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e)   
+ [CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy)   
  [Class Overview](../../atl/atl-class-overview.md)

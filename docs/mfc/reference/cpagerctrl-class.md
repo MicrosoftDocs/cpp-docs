@@ -130,7 +130,7 @@ virtual BOOL CreateEx(
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] *dwExStyle*|A bitwise combination of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) function.|  
+|[in] *dwExStyle*|A bitwise combination of extended styles to be applied to the control. For more information, see the *dwExStyle* parameter of the [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) function.|  
 |[in] *dwStyle*|A bitwise combination (OR) of [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) and [pager control styles](/windows/desktop/Controls/pager-control-styles) to be applied to the control.|  
 |[in] *rect*|A reference to a [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure that contains the position and size of the control in client coordinates.|  
 |[in] *pParentWnd*|A pointer to a [CWnd](../../mfc/reference/cwnd-class.md) object that is the parent window of the control. This parameter cannot be NULL.|  

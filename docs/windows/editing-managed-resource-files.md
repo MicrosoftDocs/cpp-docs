@@ -16,8 +16,6 @@ ms.workload: ["cplusplus", "uwp"]
 
 Managed resource files (.resx) are XML files. When you add a managed resource file to your project from the **Add New Item** dialog box, the **Managed Resources Editor** opens by default.
 
-For more information, see [Resources in .Resx File Format](https://msdn.microsoft.com/0c476133-87e4-47e8-b0ef-4b88f4ef3dc5).
-
 ## See Also
 
 [Resource Files](../windows/resource-files-visual-studio.md)

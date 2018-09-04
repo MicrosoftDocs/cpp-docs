@@ -30,7 +30,7 @@ template <typename T, typename E>
  Specifies a binary predicate for testing equality with values of type `T`. The default value is `std::equal_to<T>`.  
   
 ### Remarks  
- The `VectorView` class implements the [Windows::Foundation::Collections::IVectorView\<T>](http://go.microsoft.com/fwlink/p/?LinkId=262411) interface, and support for Standard Template Library iterators.  
+ The `VectorView` class implements the [Windows::Foundation::Collections::IVectorView\<T>](/uwp/api/Windows.Foundation.Collections.IVectorView_T_) interface, and support for Standard Template Library iterators.  
   
 ### Members  
   

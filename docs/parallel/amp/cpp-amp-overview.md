@@ -450,7 +450,7 @@ C++ AMP includes a graphics library that is designed for accelerated graphics pr
   
 - [writeonly_texture_view Class](../../parallel/amp/reference/writeonly-texture-view-class.md): Provides write-only access to any texture.  
   
-- [Short Vector Library](https://msdn.microsoft.com/4c4f5bed-c396-493b-a238-c347563f645f): Defines a set of short vector types of length 2, 3, and 4 that are based on **int**, `uint`, **float**, **double**, [norm](../../parallel/amp/reference/norm-class.md), or [unorm](../../parallel/amp/reference/unorm-class.md).  
+- Short Vector Library: Defines a set of short vector types of length 2, 3, and 4 that are based on **int**, `uint`, **float**, **double**, [norm](../../parallel/amp/reference/norm-class.md), or [unorm](../../parallel/amp/reference/unorm-class.md).  
   
 ## Universal Windows Platform (UWP) Apps  
  
@@ -482,7 +482,7 @@ The Concurrency Visualizer includes support for analyzing performance of C++ AMP
   
 - [Channels (Threads View)](/visualstudio/profiling/channels-threads-view)  
   
-- [Analyzing C++ AMP Code with the Concurrency Visualizer](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)  
+- [Analyzing C++ AMP Code with the Concurrency Visualizer](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)  
   
 ## Performance Recommendations  
  

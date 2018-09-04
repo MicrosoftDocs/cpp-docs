@@ -28,7 +28,3 @@ ms.workload: ["cplusplus", "uwp"]
 The project appears in **Solution Explorer** with three directories to contain source files, header files, and resource files.
 
 Next, you can [add files to your empty Visual C++ project](../windows/adding-files-to-an-empty-win32-applications.md).
-
-## See Also
-
-[Deploying Applications](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

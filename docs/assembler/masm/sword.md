@@ -1,7 +1,7 @@
 ---
 title: "SWORD | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["SWORD"]
@@ -13,15 +13,14 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # SWORD
-Allocates and optionally initializes a signed word (2 bytes) of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.  
-  
-## Syntax  
-  
-```  
-  
-name SWORD initializer [[, initializer]]...  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)   
- [WORD](../../assembler/masm/word.md)
+
+Allocates and optionally initializes a signed word (2 bytes) of storage for each `initializer`. Can also be used as a type specifier anywhere a type is legal.
+
+## Syntax
+
+> name SWORD initializer [[, initializer]]...
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>
+[WORD](../../assembler/masm/word.md)<br/>

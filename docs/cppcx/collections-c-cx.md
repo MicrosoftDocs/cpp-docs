@@ -138,6 +138,5 @@ void FindButton(UIElementCollection^ col)
   
 ## See Also  
  [Type System](../cppcx/type-system-c-cx.md)   
- [Built-in Types](https://msdn.microsoft.com/acc196fd-09da-4882-b554-6c94685ec75f)   
  [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)   
  [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

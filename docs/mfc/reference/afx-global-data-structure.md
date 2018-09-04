@@ -58,7 +58,7 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::RegisterWindowClass](#registerwindowclass)|Registers the specified MFC window class.|  
 |[AFX_GLOBAL_DATA::ReleaseTaskBarRefs](#releasetaskbarrefs)|Releases interfaces obtained through GetITaskbarList and GetITaskbarList3 methods.|  
 |[AFX_GLOBAL_DATA::Resume](#resume)|Reinitializes internal function pointers that access methods that support Windows [themes and visual styles](/windows/desktop/Controls/visual-styles-overview).|  
-|[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Provides a simple way to call the Windows [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540) method.|  
+|[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Provides a simple way to call the Windows [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) method.|  
 |[AFX_GLOBAL_DATA::SetMenuFont](#setmenufont)|Creates the specified logical font.|  
 |[AFX_GLOBAL_DATA::ShellCreateItemFromParsingName](#shellcreateitemfromparsingname)|Creates and initializes a Shell item object from a parsing name.|  
 |[AFX_GLOBAL_DATA::UpdateFonts](#updatefonts)|Reintializes the logical fonts that are used by the framework.|  
@@ -311,7 +311,7 @@ COLORREF GetColor(int nColor);
   
 ### Parameters   
  [in] *nColor*  
- A value that specifies a user interface element whose color is retrieved. For a list of valid values, see the *nIndex* parameter of the [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) method.  
+ A value that specifies a user interface element whose color is retrieved. For a list of valid values, see the *nIndex* parameter of the [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) method.  
   
 ### Return Value  
  The RGB color value of the specified user interface element. For more information, see Remarks.  
@@ -321,7 +321,7 @@ COLORREF GetColor(int nColor);
   
 ### See Also  
 
- [GetSysColor Function](https://msdn.microsoft.com/library/windows/desktop/ms724371)   
+ [GetSysColor Function](/windows/desktop/api/winuser/nf-winuser-getsyscolor)   
  [COLORREF](/windows/desktop/gdi/colorref)   
  [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)
 
@@ -637,7 +637,7 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
  The name of the window class to register.  
   
 ### Return Value  
- The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](https://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
+ The qualified name of the registered class if this method succeeds; otherwise, a [resource exception](exception-processing.md#afxthrowresourceexception).  
   
 ### Remarks  
  The return value is a colon-delimited list of the *lpszClassNamePrefix* parameter string, and the hexadecimal text representations of the handles of the current application instance; the application cursor, which is the arrow cursor whose identifier is IDC_ARROW; and the background brush. For more information about registering MFC window classes, see [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
@@ -661,7 +661,7 @@ BOOL Resume();
  This method is called when the framework receives the [WM_POWERBROADCAST](/windows/desktop/Power/wm-powerbroadcast) message.  
   
 ## <a name="setlayeredattrib"></a> AFX_GLOBAL_DATA::SetLayeredAttrib
-Provides a simple way to call the Windows [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540) method.  
+Provides a simple way to call the Windows [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) method.  
   
   
 ```  
@@ -690,7 +690,7 @@ BOOL SetLayeredAttrib(
  
 ### See Also   
  [COLORREF](/windows/desktop/gdi/colorref)   
- [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540)
+ [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)
 
 ## <a name="setmenufont"></a> AFX_GLOBAL_DATA::SetMenuFont
 Creates the specified logical font.  

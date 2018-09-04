@@ -25,7 +25,7 @@ If you dynamically link your application to the MFC library, you must redistribu
   
  If your application uses the MFC classes that implement the WebBrowser control (for example, [CHtmlView Class](../mfc/reference/chtmlview-class.md) or [CHtmlEditView Class](../mfc/reference/chtmleditview-class.md)), we recommend that you also install the most current version of Microsoft Internet Explorer so that the target computer will have the most current common control files. (At a minimum, Internet Explorer 4.0 is required.) Information about how to install Internet Explorer components is available in "Article 185375: How To Create a Single EXE Install of Internet Explorer" on the Microsoft Support website.  
   
- If your application uses the MFC database classes (for example, [CRecordset Class](../mfc/reference/crecordset-class.md) and [CRecordView Class](../mfc/reference/crecordview-class.md)), you must redistribute ODBC and any ODBC drivers that your application uses. For more information, see [Redistributing Database Support Files](../ide/redistributing-database-support-files.md).  
+ If your application uses the MFC database classes (for example, [CRecordset Class](../mfc/reference/crecordset-class.md) and [CRecordView Class](../mfc/reference/crecordview-class.md)), you must redistribute ODBC and any ODBC drivers that your application uses.  
   
  If your MFC application uses Windows Forms controls, you must redistribute mfcmifc80.dll with your application. This DLL is a strong-name-signed .NET assembly that can be redistributed with an application in its application local folder or by deploying it to the Global Assembly Cache (GAC) by using the [Gacutil.exe (Global Assembly Cache Tool)](/dotnet/framework/tools/gacutil-exe-gac-tool).  
   

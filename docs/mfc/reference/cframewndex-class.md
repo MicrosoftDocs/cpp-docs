@@ -1259,7 +1259,7 @@ afx_msg LRESULT OnSetText(
  Pointer to the text for the window.  
   
 ### Return Value  
- Return value from a call to [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572).  
+ Return value from a call to [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca).  
   
 ### Remarks  
   

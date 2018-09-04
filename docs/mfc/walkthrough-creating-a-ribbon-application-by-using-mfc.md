@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 This walkthrough shows how to use the **MFC Application Wizard** to create an application that has a ribbon by default. You can then expand the ribbon by adding a **Custom** ribbon category that has a **Favorites** ribbon panel, and then adding some frequently used commands to the panel.  
   
 ## Prerequisites  
- This walkthrough assumes that you have set Visual Studio to use **General Development Settings**. If you are using different settings, some of the user interface (UI) elements that are referenced in the following instructions might not be displayed. For information about how to change settings, see [How to: Reset Your Settings](https://msdn.microsoft.com/c95c51be-e609-4769-abba-65e6beedec76).  
+ This walkthrough assumes that you have set Visual Studio to use **General Development Settings**. If you are using different settings, some of the user interface (UI) elements that are referenced in the following instructions might not be displayed.  
   
 ### To create an MFC application that has a ribbon  
   

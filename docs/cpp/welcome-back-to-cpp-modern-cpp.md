@@ -124,7 +124,7 @@ void f()
   
 -   [Portability At ABI Boundaries](../cpp/portability-at-abi-boundaries-modern-cpp.md)  
   
- For more information, see the StackOverflow article [what C++ idioms are deprecated in C++11](http://go.microsoft.com/fwlink/p/?linkid=402836)  
+ For more information, see the StackOverflow article [what C++ idioms are deprecated in C++11](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11).  
   
 ## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   

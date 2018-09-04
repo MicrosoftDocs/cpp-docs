@@ -184,4 +184,3 @@ HRESULT hr = Open(m_session, "Authors", pPropSet);
   
 ## See Also  
  [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)   
- [Attributes Walkthroughs](https://msdn.microsoft.com/73df1d5d-261a-4521-98fb-06dcbf5ec0d0)

@@ -1,9 +1,10 @@
 ---
 title: "Concurrency::direct3d namespace functions (AMP) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/31/2018"
 ms.topic: "reference"
-f1_keywords: ["amp/Concurrency::direct3d::abs", "amp/Concurrency::direct3d::countbits", "amp/Concurrency::direct3d::create_accelerator_view", "amp/Concurrency::direct3d::d3d_access_lock", "amp/Concurrency::direct3d::d3d_access_unlock", "amp/Concurrency::direct3d::firstbithigh", "amp/Concurrency::direct3d::get_buffer", "amp/Concurrency::direct3d::imax", "amp/Concurrency::direct3d::is_timeout_disabled", "amp/Concurrency::direct3d::mad", "amp/Concurrency::direct3d::noise", "amp/Concurrency::direct3d::radians", "amp/Concurrency::direct3d::reversebits", "amp/Concurrency::direct3d::saturate", "amp/Concurrency::direct3d::smoothstep", "amp/Concurrency::direct3d::step", "amp/Concurrency::direct3d::umin"]
+f1_keywords: ["amp/Concurrency::direct3d::abs", "amp/Concurrency::direct3d::countbits", "amp/Concurrency::direct3d::create_accelerator_view", "amp/Concurrency::direct3d::d3d_access_lock", "amp/Concurrency::direct3d::d3d_access_unlock", "amp/Concurrency::direct3d::firstbithigh", "amp/Concurrency::direct3d::get_buffer",
+"amp/Concurrency::direct3d::get_device", "amp/Concurrency::direct3d::imax", "amp/Concurrency::direct3d::is_timeout_disabled", "amp/Concurrency::direct3d::mad", "amp/Concurrency::direct3d::noise", "amp/Concurrency::direct3d::radians", "amp/Concurrency::direct3d::reversebits", "amp/Concurrency::direct3d::saturate", "amp/Concurrency::direct3d::smoothstep", "amp/Concurrency::direct3d::step", "amp/Concurrency::direct3d::umin"]
 dev_langs: ["C++"]
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
 author: "mikeblome"
@@ -14,9 +15,9 @@ ms.workload: ["cplusplus"]
 ||||  
 |-|-|-|  
 |[abs](#abs)|[clamp](#clamp)|[countbits](#countbits)|
-|[create_accelerator_view](#create_accelerator_view)|||
-|[d3d_access_lock](#d3d_access_lock)|[d3d_access_try_lock](#d3d_access_try_lock)|[d3d_access_unlock](#d3d_access_unlock)|  
-|[firstbithigh](#firstbithigh)|[firstbitlow](#firstbitlow)|[get_buffer](#get_buffer)|  
+|[create_accelerator_view](#create_accelerator_view)|[d3d_access_lock](#d3d_access_lock)||
+|[d3d_access_try_lock](#d3d_access_try_lock)|[d3d_access_unlock](#d3d_access_unlock)|[firstbithigh](#firstbithigh)|  
+|[firstbitlow](#firstbitlow)|[get_buffer](#get_buffer)|[get_device](#get_device)|  
 |[imax](#imax)|[imin](#imin)|[is_timeout_disabled](#is_timeout_disabled)|  
 |[mad](#mad)|[make_array](#make_array)|[noise](#noise)|  
 |[radians](#radians)|[rcp](#rcp)|[reversebits](#reversebits)|  
@@ -212,10 +213,25 @@ IUnknown *get_buffer(
   
 ### Return Value  
  The IUnknown interface pointer corresponding to the Direct3D buffer underlying the array.  
-  
+
+## <a name="get_device"> get_device
+Get the D3D device interface underlying a accelerator_view.
+
+```
+IUnknown* get_device(const accelerator_view Av);
+```
+
+### Parameters
+`Av`
+The D3D accelerator_view for which the underlying D3D device interface is returned.
+
+
+### Return value
+The `IUnknown` interface pointer of the D3D device underlying the accelerator_view.
+
 ##  <a name="imax"></a>  imax  
  Determine the maximum numeric value of the arguments  
-  
+
 ```  
 inline int imax(
     int _X,  

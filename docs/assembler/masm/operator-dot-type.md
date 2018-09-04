@@ -1,7 +1,7 @@
 ---
 title: "operator .TYPE | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".TYPE", "operator .TYPE"]
@@ -13,14 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # operator .TYPE
-See [OPATTR](../../assembler/masm/operator-opattr.md).  
-  
-## Syntax  
-  
-```  
-  
-.TYPE expression  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+See [OPATTR](../../assembler/masm/operator-opattr.md).
+
+## Syntax
+
+> .TYPE expression
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

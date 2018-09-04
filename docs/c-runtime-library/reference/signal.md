@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 Sets interrupt signal handling.
 
 > [!IMPORTANT]
-> Do not use this method to shut down a Microsoft Store app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](http://go.microsoft.com/fwlink/?LinkId=865936). For more information, see [UWP app lifecycle](http://go.microsoft.com/fwlink/p/?LinkId=865934).
+> Do not use this method to shut down a Microsoft Store app, except in testing or debugging scenarios. Programmatic or UI ways to close a Store app are not permitted according to the [Microsoft Store policies](/legal/windows/agreements/store-policies). For more information, see [UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
 
 ## Syntax
 

@@ -1,7 +1,7 @@
 ---
 title: ".NOLIST | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: [".NOLIST"]
@@ -13,18 +13,17 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .NOLIST
-Suppresses program listing.  
-  
-## Syntax  
-  
-```  
-  
-.NOLIST  
-  
-```  
-  
-## Remarks  
- Same as [.XLIST](../../assembler/masm/dot-xlist.md).  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Suppresses program listing.
+
+## Syntax
+
+> .NOLIST
+
+## Remarks
+
+Same as [.XLIST](../../assembler/masm/dot-xlist.md).
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

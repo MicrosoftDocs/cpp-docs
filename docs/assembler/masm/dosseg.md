@@ -1,7 +1,7 @@
 ---
 title: "DOSSEG | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "reference"
 f1_keywords: ["DOSSEG"]
@@ -13,15 +13,13 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # DOSSEG
-Identical to [.DOSSEG](../../assembler/masm/dot-dosseg.md), which is the preferred form.  
-  
-## Syntax  
-  
-```  
-  
-DOSSEG  
-  
-```  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Identical to [.DOSSEG](../../assembler/masm/dot-dosseg.md), which is the preferred form.
+
+## Syntax
+
+> DOSSEG
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

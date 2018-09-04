@@ -419,7 +419,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
  Nonzero if the initialization of the control hosting code was successful; otherwise FALSE.  
   
 ### Remarks  
- This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) or [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680), as described in the Windows SDK.  
+ This function must be called before using the ATL control hosting API. Following a call to this function, the **"AtlAxWin"** window class can be used in calls to [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) or [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa), as described in the Windows SDK.  
 
 ##  <a name="atlaxwinterm"></a>  AtlAxWinTerm  
  This function uninitializes ATL's control hosting code by unregistering the **"AtlAxWin80"** and **"AtlAxWinLic80"** window classes.  

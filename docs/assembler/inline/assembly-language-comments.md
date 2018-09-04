@@ -1,7 +1,7 @@
 ---
 title: "Assembly-Language Comments | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "08/30/2018"
 ms.technology: ["cpp-masm"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -12,16 +12,19 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Assembly-Language Comments
-## Microsoft Specific  
- Instructions in an `__asm` block can use assembly-language comments:  
-  
-```  
-__asm mov ax, offset buff ; Load address of buff  
-```  
-  
- Because C macros expand into a single logical line, avoid using assembly-language comments in macros. (See [Defining __asm Blocks as C Macros](../../assembler/inline/defining-asm-blocks-as-c-macros.md).) An `__asm` block can also contain C-style comments; for more information, see [Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md).  
-  
- **END Microsoft Specific**  
-  
-## See Also  
- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+
+**Microsoft Specific**
+
+Instructions in an `__asm` block can use assembly-language comments:
+
+```cpp
+__asm mov ax, offset buff ; Load address of buff
+```
+
+Because C macros expand into a single logical line, avoid using assembly-language comments in macros. (See [Defining __asm Blocks as C Macros](../../assembler/inline/defining-asm-blocks-as-c-macros.md).) An `__asm` block can also contain C-style comments; for more information, see [Using C or C++ in __asm Blocks](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md).
+
+**END Microsoft Specific**
+
+## See also
+
+[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>
