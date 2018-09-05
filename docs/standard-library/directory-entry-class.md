@@ -40,7 +40,7 @@ For more information and code examples, see [File System Navigation (C++)](../st
 |-|-|
 |[assign](#assign)|The member function assigns *pval* to `mypath`, *stat* to `mystat`, and *symstat* to `mysymstat`.|
 |[path](#path)|The member function returns `mypath`.|
-|[replace_filename](#replace_filename)|The member function replaces `mypath` with `mypath.parent_path() / pval`, `mystat` with *stat_arg*, and `mysymstat` with *symstat_arg*|
+|[replace_filename](#replace_filename)|The member function replaces `mypath` with `mypath.parent_path()` / *pval*, `mystat` with *stat_arg*, and `mysymstat` with *symstat_arg*|
 |[status](#status)|Both member functions return `mystat` possibly first altered.|
 |[symlink_status](#symlink_status)|Both member functions return `mysymstat` possibly first altered.|
 
@@ -48,14 +48,14 @@ For more information and code examples, see [File System Navigation (C++)](../st
 
 |Operator|Description|
 |-|-|
-|[operator!=](#op_noeq)|Replaces the elements of the list with a copy of another list.|
+|[operator!=](#op_neq)|Replaces the elements of the list with a copy of another list.|
 |[operator=](#op_as)|The defaulted member assignment operators behave as expected.|
-|[operator==](#op_eq)|The member function returns `mypath == right.mypath`.|
-|[operator<](#op_lt)|The member function returns `mypath < right.mypath`.|
-|[operator<=](#op_lteq)|The member function returns `!(right < *this)`.|
-|[operator>](#op_gt)|The member function returns `right < *this`.|
-|[operator>=](#op_gteq)|The member function returns `!(*this < right)`.|
-|[operator const path_type&](#op_gteq)|The member operator returns `mypath`.|
+|[operator==](#op_eq)|Returns `mypath == right.mypath`.|
+|[operator<](#op_lt)|Returns `mypath < right.mypath`.|
+|[operator<=](#op_lteq)|Returns `!(right < *this)`.|
+|[operator>](#op_gt)|Returns `right < *this`.|
+|[operator>=](#op_gteq)|Returns `!(*this < right)`.|
+|[operator const path_type&](#path_type)|Returns `mypath`.|
 
 ## Requirements
 
@@ -73,6 +73,14 @@ void assign(const std::experimental::filesystem::path& pval,
     file_status symstat_arg = file_status());
 ```
 
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*pval*|The stored file name path.|
+|*stat_arg*|The status of the stored file name.|
+|*symstat_arg*|The symbolic link status of the stored file name.|
+
 ## <a name="directory_entry"></a> directory_entry
 
 The defaulted constructors behave as expected. The fourth constructor initializes `mypath` to *pval*, `mystat` to *stat_arg*, and `mysymstat` to *symstat_arg*.
@@ -86,6 +94,14 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
     file_status symstat_arg = file_status());
 ```
 
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*pval*|The stored file name path.|
+|*stat_arg*|The status of the stored file name.|
+|*symstat_arg*|The symbolic link status of the stored file name.|
+
 ## <a name="op_neq"></a> operator!=
 
 The member function returns `!(*this == right)`.
@@ -93,6 +109,12 @@ The member function returns `!(*this == right)`.
 ```cpp
 bool operator!=(const directory_entry& right) const noexcept;
 ```
+
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
 
 ## <a name="op_as"></a> operator=
 
@@ -103,6 +125,12 @@ directory_entry& operator=(const directory_entry&) = default;
 directory_entry& operator=(directory_entry&&) noexcept = default;
 ```
 
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being copied into the `directory_entry`.|
+
 ## <a name="op_eq"></a> operator==
 
 The member function returns `mypath == right.mypath`.
@@ -110,6 +138,12 @@ The member function returns `mypath == right.mypath`.
 ```cpp
 bool operator==(const directory_entry& right) const noexcept;
 ```
+
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
 
 ## <a name="op_lt"></a> operator&lt;
 
@@ -119,6 +153,12 @@ The member function returns `mypath < right.mypath`.
 bool operator<(const directory_entry& right) const noexcept;
 ```
 
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
+
 ## <a name="op_lteq"></a> operator&lt;=
 
 The member function returns `!(right < *this)`.
@@ -126,6 +166,12 @@ The member function returns `!(right < *this)`.
 ```cpp
 bool operator&lt;=(const directory_entry& right) const noexcept;
 ```
+
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
 
 ## <a name="op_gt"></a> operator&gt;
 
@@ -135,6 +181,12 @@ The member function returns `right < *this`.
 bool operator&gt;(const directory_entry& right) const noexcept;
 ```
 
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
+
 ## <a name="op_gteq"></a> operator&gt;=
 
 The member function returns `!(*this < right)`.
@@ -142,6 +194,12 @@ The member function returns `!(*this < right)`.
 ```cpp
 bool operator&gt;=(const directory_entry& right) const noexcept;
 ```
+
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
 
 ## <a name="path_type"></a> operator const path_type&
 
@@ -161,7 +219,7 @@ const std::experimental::filesystem::path& path() const noexcept;
 
 ## <a name="replace_filename"></a> replace_filename
 
-The member function replaces `mypath` with `mypath.parent_path() / pval`, `mystat` with *stat_arg*, and `mysymstat` with *symstat_arg*
+The member function replaces `mypath` with `mypath.parent_path()` / *pval*, `mystat` with *stat_arg*, and `mysymstat` with *symstat_arg*
 
 ```cpp
 void replace_filename(
@@ -169,6 +227,14 @@ void replace_filename(
     file_status stat_arg = file_status(),
     file_status symstat_arg = file_status());
 ```
+
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*pval*|The stored file name path.|
+|*stat_arg*|The status of the stored file name.|
+|*symstat_arg*|The symbolic link status of the stored file name.|
 
 ## <a name="status"></a> status
 
@@ -183,6 +249,12 @@ file_status status() const;
 file_status status(error_code& ec) const noexcept;
 ```
 
+### Parameters
+
+|Parameter|Description|
+|-|-|
+|*ec*|The status error code.|
+
 ## <a name="symlink_status"></a> symlink_status
 
 Both member functions return `mysymstat` possibly first altered as follows: If `status_known(mysymstat)` then do nothing. Otherwise, `mysymstat = symlink_status(mypval)`.
@@ -191,6 +263,10 @@ Both member functions return `mysymstat` possibly first altered as follows: If `
 file_status symlink_status() const;
 file_status symlink_status(error_code& ec) const noexcept;
 ```
+
+|Parameter|Description|
+|-|-|
+|*ec*|The status error code.|
 
 ## See also
 
