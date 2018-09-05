@@ -12,22 +12,26 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Strings (ATL/MFC)
-Nearly all programs work with string data. Visual C++ provides several ways to manage this string data.  
-  
-## In This Section  
- [Using CStringT](../atl-mfc-shared/using-cstringt.md)  
- Describes programming using the template class CStringT.  
-  
- [Using CString](../atl-mfc-shared/using-cstring.md)  
- Describes programming using CString, the default implementation of CStringT.  
-  
-## Related Sections  
- [CStringT Overview](../atl-mfc-shared/reference/cstringt-class.md)  
- Provides reference information about the shared `CStringT` class.  
-  
- [MFC Concepts](../mfc/mfc-concepts.md)  
- Provides conceptual and task-based topics to help you program using the MFC Library.  
-  
-## See Also  
- [ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)
+
+Nearly all programs work with string data. Visual C++ provides several ways to manage this string data.
+
+## In This Section
+
+[Using CStringT](../atl-mfc-shared/using-cstringt.md)  
+Describes programming using the template class CStringT.
+
+[Using CString](../atl-mfc-shared/using-cstring.md)  
+Describes programming using CString, the default implementation of CStringT.
+
+## Related Sections
+
+[CStringT Overview](../atl-mfc-shared/reference/cstringt-class.md)  
+Provides reference information about the shared `CStringT` class.
+
+[MFC Concepts](../mfc/mfc-concepts.md)  
+Provides conceptual and task-based topics to help you program using the MFC Library.
+
+## See Also
+
+[ATL/MFC Shared Classes](../atl-mfc-shared/atl-mfc-shared-classes.md)
 
