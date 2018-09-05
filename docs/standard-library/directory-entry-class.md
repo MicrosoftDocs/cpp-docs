@@ -28,7 +28,44 @@ The class stores an object of type [path](../standard-library/path-class.md). Th
 
 For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
-## assign
+### Constructors
+
+|Constructor|Description|
+|-|-|
+|[directory_entry](#directory_entry)|The defaulted constructors behave as expected. The fourth constructor initializes `mypath` to *pval*, `mystat` to *stat_arg*, and `mysymstat` to *symstat_arg*.|
+
+### Member functions
+
+|Member function|Description|
+|-|-|
+|[assign](#assign)|The member function assigns *pval* to `mypath`, *stat* to `mystat`, and *symstat* to `mysymstat`.|
+|[path](#path)|The member function returns `mypath`.|
+|[replace_filename](#replace_filename)|The member function replaces `mypath` with `mypath.parent_path() / pval`, `mystat` with *stat_arg*, and `mysymstat` with *symstat_arg*|
+|[status](#status)|Both member functions return `mystat` possibly first altered.|
+|[symlink_status](#symlink_status)|Both member functions return `mysymstat` possibly first altered.|
+
+### Operators
+
+|Operator|Description|
+|-|-|
+|[operator!=](#op_noeq)|Replaces the elements of the list with a copy of another list.|
+|[operator=](#op_as)|The defaulted member assignment operators behave as expected.|
+|[operator==](#op_eq)|The member function returns `mypath == right.mypath`.|
+|[operator<](#op_lt)|The member function returns `mypath < right.mypath`.|
+|[operator<=](#op_lteq)|The member function returns `!(right < *this)`.|
+|[operator>](#op_gt)|The member function returns `right < *this`.|
+|[operator>=](#op_gteq)|The member function returns `!(*this < right)`.|
+|[operator const path_type&](#op_gteq)|The member operator returns `mypath`.|
+
+## Requirements
+
+**Header:** \<experimental/filesystem&gt;
+
+**Namespace:** std::experimental::filesystem
+
+## <a name="assign"></a> assign
+
+The member function assigns *pval* to `mypath`, *stat_arg* to `mystat`, and *symstat_arg* to `mysymstat`.
 
 ```cpp
 void assign(const std::experimental::filesystem::path& pval,
@@ -36,9 +73,9 @@ void assign(const std::experimental::filesystem::path& pval,
     file_status symstat_arg = file_status());
 ```
 
-The member function assigns pval to mypath, stat to mystat, and symstat to mysymstat.
+## <a name="directory_entry"></a> directory_entry
 
-## directory_entry
+The defaulted constructors behave as expected. The fourth constructor initializes `mypath` to *pval*, `mystat` to *stat_arg*, and `mysymstat` to *symstat_arg*.
 
 ```cpp
 directory_entry() = default;
@@ -49,82 +86,82 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
     file_status symstat_arg = file_status());
 ```
 
-The defaulted constructors behave as expected. The fourth constructor initializes mypath to pval, mystat to stat_arg, and mysymstat to symstat_arg.
+## <a name="op_neq"></a> operator!=
 
-## operator!=
+The member function returns `!(*this == right)`.
 
 ```cpp
 bool operator!=(const directory_entry& right) const noexcept;
 ```
 
-The member function returns !(*this == right).
+## <a name="op_as"></a> operator=
 
-## operator=
+The defaulted member assignment operators behave as expected.
 
 ```cpp
 directory_entry& operator=(const directory_entry&) = default;
 directory_entry& operator=(directory_entry&&) noexcept = default;
 ```
 
-The defaulted member assignment operators behave as expected.
+## <a name="op_eq"></a> operator==
 
-## operator==
+The member function returns `mypath == right.mypath`.
 
 ```cpp
 bool operator==(const directory_entry& right) const noexcept;
 ```
 
-The member function returns mypath == right.mypath.
+## <a name="op_lt"></a> operator&lt;
 
-## operator&lt;
+The member function returns `mypath < right.mypath`.
 
 ```cpp
 bool operator<(const directory_entry& right) const noexcept;
 ```
 
-The member function returns mypath &lt; right.mypath.
+## <a name="op_lteq"></a> operator&lt;=
 
-## operator&lt;=
+The member function returns `!(right < *this)`.
 
 ```cpp
 bool operator&lt;=(const directory_entry& right) const noexcept;
 ```
 
-The member function returns !(right \< *this).
+## <a name="op_gt"></a> operator&gt;
 
-## operator&gt;
+The member function returns `right < *this`.
 
 ```cpp
 bool operator&gt;(const directory_entry& right) const noexcept;
 ```
 
-The member function returns right \< *this.
+## <a name="op_gteq"></a> operator&gt;=
 
-## operator&gt;=
+The member function returns `!(*this < right)`.
 
 ```cpp
 bool operator&gt;=(const directory_entry& right) const noexcept;
 ```
 
-The member function returns !(*this \< right).
+## <a name="path_type"></a> operator const path_type&
 
-## operator const path_type&
+The member operator returns `mypath`.
 
 ```cpp
 operator const std::experimental::filesystem::path&() const;
 ```
 
-The member operator returns mypath.
+## <a name="path"></a> path
 
-## path
+The member function returns `mypath`.
 
 ```cpp
 const std::experimental::filesystem::path& path() const noexcept;
 ```
 
-The member function returns mypath.
+## <a name="replace_filename"></a> replace_filename
 
-## replace_filename
+The member function replaces `mypath` with `mypath.parent_path() / pval`, `mystat` with *stat_arg*, and `mysymstat` with *symstat_arg*
 
 ```cpp
 void replace_filename(
@@ -133,37 +170,29 @@ void replace_filename(
     file_status symstat_arg = file_status());
 ```
 
-The member function replaces mypath with mypath.parent_path() / pval, mystat with stat_arg, and mysymstat with symstat_arg
+## <a name="status"></a> status
 
-## status
+Both member functions return `mystat` possibly first altered as follows:
+
+1. If `status_known(mystat)` then do nothing.
+
+1. Otherwise, if `!status_known(mysymstat) && !is_symlink(mysymstat)` then `mystat = mysymstat`.
 
 ```cpp
 file_status status() const;
 file_status status(error_code& ec) const noexcept;
 ```
 
-Both member functions return mystat possibly first altered as follows:
+## <a name="symlink_status"></a> symlink_status
 
-1. If status_known(mystat) then do nothing.
-
-1. Otherwise, if !status_known(mysymstat) && !is_symlink(mysymstat) then mystat = mysymstat.
-
-## symlink_status
+Both member functions return `mysymstat` possibly first altered as follows: If `status_known(mysymstat)` then do nothing. Otherwise, `mysymstat = symlink_status(mypval)`.
 
 ```cpp
 file_status symlink_status() const;
 file_status symlink_status(error_code& ec) const noexcept;
 ```
 
-Both member functions return mysymstat possibly first altered as follows:If status_known(mysymstat) then do nothing. Otherwise, mysymstat = symlink_status(mypval).
-
-## Requirements
-
-**Header:** \<experimental/filesystem&gt;
-
-**Namespace:** std::experimental::filesystem
-
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
-[\<filesystem&gt;](../standard-library/filesystem.md)<br/>
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)  
+[\<filesystem&gt;](../standard-library/filesystem.md)  
