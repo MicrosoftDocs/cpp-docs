@@ -19,7 +19,7 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 > [!NOTE]
 > This wizard requires you to click the **Data Source** button to select a data source before entering names in the `Class` and **.h file** fields.
 
-## UIElement List  
+## UIElement List
 
 - **Data Source**
 

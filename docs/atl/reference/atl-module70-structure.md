@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _ATL_MODULE70 Structure
-Contains data used by every ATL module.  
-  
-## Syntax  
-  
+
+Contains data used by every ATL module.
+
+## Syntax
+
 ```
 struct _ATL_MODULE70 {
     UINT cbSize;
@@ -24,33 +25,31 @@ struct _ATL_MODULE70 {
     _ATL_TERMFUNC_ELEM* m_pTermFuncs;
     CComCriticalSection m_csStaticDataInitAndTypeInfo;
 };
-```  
-  
-## Members  
- `cbSize`  
- The size of the structure, used for versioning.  
-  
- `m_nLockCnt`  
- Reference count to determine how long the module should stay alive.  
-  
- `m_pTermFuncs`  
- Tracks functions that have been registered to be called when ATL shuts down.  
-  
- `m_csStaticDataInitAndTypeInfo`  
- Used to coordinate access to internal data in multithreaded situations.  
-  
-## Remarks  
- [_ATL_MODULE](atl-typedefs.md#_atl_module) is defined as a typedef of `_ATL_MODULE70`.  
-  
-## Requirements  
- **Header:** atlbase.h  
-  
-## See Also  
- [Classes and structs](../../atl/reference/atl-classes.md)
+```
 
+## Members
 
+`cbSize`  
+The size of the structure, used for versioning.
 
+`m_nLockCnt`  
+Reference count to determine how long the module should stay alive.
 
+`m_pTermFuncs`  
+Tracks functions that have been registered to be called when ATL shuts down.
 
+`m_csStaticDataInitAndTypeInfo`  
+Used to coordinate access to internal data in multithreaded situations.
 
+## Remarks
+
+[_ATL_MODULE](atl-typedefs.md#_atl_module) is defined as a typedef of `_ATL_MODULE70`.
+
+## Requirements
+
+**Header:** atlbase.h
+
+## See Also
+
+[Classes and structs](../../atl/reference/atl-classes.md)
 

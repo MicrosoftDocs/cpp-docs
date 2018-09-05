@@ -32,24 +32,24 @@ The adapted type.
 
 ### Public Constructors
 
-|Name|Description|  
-|----------|-----------------|  
+|Name|Description|
+|----------|-----------------|
 |[CAdapt::CAdapt](#cadapt)|The constructor.|
 
 ### Public Operators
 
-|Name|Description|  
-|----------|-----------------|  
-|[CAdapt::operator const T&](#operator_const_t_amp)|Returns a **const** reference to `m_T`.|  
-|[CAdapt::operator T&](#operator_t_amp)|Returns a reference to `m_T`.|  
-|[CAdapt::operator <](#operator_lt)|Compares an object of the adapted type with `m_T`.|  
-|[CAdapt::operator =](#operator_eq)|Assigns an object of the adapted type to `m_T`.|  
+|Name|Description|
+|----------|-----------------|
+|[CAdapt::operator const T&](#operator_const_t_amp)|Returns a **const** reference to `m_T`.|
+|[CAdapt::operator T&](#operator_t_amp)|Returns a reference to `m_T`.|
+|[CAdapt::operator <](#operator_lt)|Compares an object of the adapted type with `m_T`.|
+|[CAdapt::operator =](#operator_eq)|Assigns an object of the adapted type to `m_T`.|
 |[CAdapt::operator ==](#operator_eq_eq)|Compares an object of the adapted type with `m_T`.|
 
 ### Public Data Members
 
-|Name|Description|  
-|----------|-----------------|  
+|Name|Description|
+|----------|-----------------|
 |[CAdapt::m_T](#m_t)|The data being adapted.|
 
 ## Remarks

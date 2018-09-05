@@ -13,51 +13,51 @@ ms.workload: ["cplusplus"]
 ---
 # ATL Functions
 
-To find an ATL function by category, see the following topics.  
-  
+To find an ATL function by category, see the following topics.
+
 [ATL Path Functions](../../atl/reference/com-map-global-functions.md)  
 Provide support for manipulating file paths.
- 
+
 [COM Map Global Functions](../../atl/reference/com-map-global-functions.md)  
-Provide support for COM map `IUnknown` implementations.  
-  
+Provide support for COM map `IUnknown` implementations.
+
 [Composite Control Global Functions](../../atl/reference/composite-control-global-functions.md)  
-Provide support for creating dialog boxes, and for creating, hosting and licensing ActiveX controls.  
-  
+Provide support for creating dialog boxes, and for creating, hosting and licensing ActiveX controls.
+
 [Connection Point Global Functions](../../atl/reference/connection-point-global-functions.md)  
-Provide support for connection points and sink maps.  
-  
+Provide support for connection points and sink maps.
+
 [Debugging and Error Reporting Global Functions](../../atl/reference/debugging-and-error-reporting-global-functions.md)  
-Provide useful debugging and trace facilities.  
-  
+Provide useful debugging and trace facilities.
+
 [Device Context Global Functions](../../atl/reference/device-context-global-functions.md)  
-Creates a device context for a given device.  
-  
+Creates a device context for a given device.
+
 [Event Handling Global Functions](../../atl/reference/event-handling-global-functions.md)  
-Provides an event handler.  
-  
+Provides an event handler.
+
 [Marshaling Global Functions](../../atl/reference/marshaling-global-functions.md)  
-Provide support for marshaling and converting marshaling data into interface pointers.  
-  
+Provide support for marshaling and converting marshaling data into interface pointers.
+
 [Pixel/HIMETRIC Conversion Global Functions](../../atl/reference/pixel-himetric-conversion-global-functions.md)  
-Provide support for converting to and from pixel and HIMETRIC units.  
-  
+Provide support for converting to and from pixel and HIMETRIC units.
+
 [Registry and TypeLib Global Functions](../../atl/reference/registry-and-typelib-global-functions.md)  
-Provide support for loading and registering a type library.  
-  
+Provide support for loading and registering a type library.
+
 [Security Global Functions](../../atl/reference/security-global-functions.md)  
-Provide support for modifying SID and ACL objects.  
-  
+Provide support for modifying SID and ACL objects.
+
 [Security Identifier Global Functions](../../atl/reference/security-identifier-global-functions.md)  
-Return common well-known SID objects.  
-  
+Return common well-known SID objects.
+
 [Server Registration Global Functions](../../atl/reference/server-registration-global-functions.md)  
-Provide support for registering and unregistering server objects in the object map.  
-  
+Provide support for registering and unregistering server objects in the object map.
+
 [WinModule Global Functions](../../atl/reference/winmodule-global-functions.md)  
-Provide support for `_AtlCreateWndData` structure operations.  
-  
-## See Also  
+Provide support for `_AtlCreateWndData` structure operations.
+
+## See Also
 
 [ATL COM Desktop Components](../../atl/atl-com-desktop-components.md)   
 [Macros](../../atl/reference/atl-macros.md)   

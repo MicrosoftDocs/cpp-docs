@@ -12,14 +12,15 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Understanding Parse Trees
-You can define one or more parse trees in your registrar script, where each parse tree has the following form:  
-  
+
+You can define one or more parse trees in your registrar script, where each parse tree has the following form:
+
 ```  
 <root key>{<registry expression>}+  
-```  
-  
-where:  
-  
+```
+
+where:
+
 ```  
 <root key> ::= HKEY_CLASSES_ROOT | HKEY_CURRENT_USER |  
     HKEY_LOCAL_MACHINE | HKEY_USERS |  
@@ -34,13 +35,13 @@ where:
 <Key Value> ::== <Key Type><Key Name>  
 <Key Type> ::= s | d  
 <Key Value> ::= '<AlphaNumeric>'  
-```  
-  
+```
+
 > [!NOTE]
-> `HKEY_CLASSES_ROOT` and `HKCR` are equivalent; `HKEY_CURRENT_USER` and `HKCU` are equivalent; and so on.  
-  
-A parse tree can add multiple keys and subkeys to the \<root key>. In doing so, it keeps a subkey's handle open until the parser has completed parsing all of its subkeys. This approach is more efficient than operating on a single key at a time, as seen in the following example:  
-  
+> `HKEY_CLASSES_ROOT` and `HKCR` are equivalent; `HKEY_CURRENT_USER` and `HKCU` are equivalent; and so on.
+
+A parse tree can add multiple keys and subkeys to the \<root key>. In doing so, it keeps a subkey's handle open until the parser has completed parsing all of its subkeys. This approach is more efficient than operating on a single key at a time, as seen in the following example:
+
 ```  
 HKEY_CLASSES_ROOT  
 {  
@@ -52,10 +53,11 @@ HKEY_CLASSES_ROOT
         }  
     }  
 }  
-```  
-  
-Here, the Registrar initially opens (creates) `HKEY_CLASSES_ROOT\MyVeryOwnKey`. It then sees that `MyVeryOwnKey` has a subkey. Rather than close the key to `MyVeryOwnKey`, the Registrar retains the handle and opens (creates) `HasASubKey` using this parent handle. (The system registry can be slower when no parent handle is open.) Thus, opening `HKEY_CLASSES_ROOT\MyVeryOwnKey` and then opening `HasASubKey` with `MyVeryOwnKey` as the parent is faster than opening `MyVeryOwnKey`, closing `MyVeryOwnKey`, and then opening `MyVeryOwnKey\HasASubKey`.  
-  
-## See Also  
+```
+
+Here, the Registrar initially opens (creates) `HKEY_CLASSES_ROOT\MyVeryOwnKey`. It then sees that `MyVeryOwnKey` has a subkey. Rather than close the key to `MyVeryOwnKey`, the Registrar retains the handle and opens (creates) `HasASubKey` using this parent handle. (The system registry can be slower when no parent handle is open.) Thus, opening `HKEY_CLASSES_ROOT\MyVeryOwnKey` and then opening `HasASubKey` with `MyVeryOwnKey` as the parent is faster than opening `MyVeryOwnKey`, closing `MyVeryOwnKey`, and then opening `MyVeryOwnKey\HasASubKey`.
+
+## See Also
+
 [Creating Registrar Scripts](../atl/creating-registrar-scripts.md)
 

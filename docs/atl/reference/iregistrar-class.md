@@ -13,6 +13,7 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # IRegistrar Interface
+
 This interface is defined in atliface.h and is used internally by CAtlModule member functions such as [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced).
 
 ## Syntax
@@ -81,7 +82,7 @@ Unregisters the file.
 
 ```
 virtual HRESULT STDMETHODCALLTYPE FileUnregister(
-    */ _In_z_ LPCOLESTR fileName) = 0;
+    /* [in] */ _In_z_ LPCOLESTR fileName) = 0;
 ```
 
 ##  <a name="stringregister"></a>  IRegistrar::StringRegister
@@ -126,7 +127,7 @@ virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
 
 ## See Also
 
-[Using Replaceable Parameters (The Registrar's Preprocessor)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)
-[Class Overview](../../atl/atl-class-overview.md)
-[Module Classes](../../atl/atl-module-classes.md)
+[Using Replaceable Parameters (The Registrar's Preprocessor)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)   
+[Class Overview](../../atl/atl-class-overview.md)   
+[Module Classes](../../atl/atl-module-classes.md)   
 [Registry Component (Registrar)](../../atl/atl-registry-component-registrar.md)

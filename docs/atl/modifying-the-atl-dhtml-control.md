@@ -16,13 +16,13 @@ ms.workload: ["cplusplus"]
 The ATL Control Wizard provides starter code so you can build and run the control, and so you can see how the methods are written in the project files and how the DHTML calls into the control's C++ code using the dispatch methods. You can add any dispatch method to the interface. Then, you can call the methods in the HTML resource.
 
 #### To modify the ATL DHTML control
-  
+
 1. In Class View, expand the control project.
 
    Note that the interface that ends in "UI" has one method, `OnClick`. The interface that does not end in "UI" does not have any methods.
-  
+
 2. Add a method called `MethodInvoked` to the interface that does not end in "UI."
-  
+
    This method will be added to the interface that is used in the control container for container interaction, not to the interface used by DHTML to interact with the control. Only the container can invoke this method.
 
 3. Find the stubbed-out method in the .cpp file and add code to display a message box, for example:

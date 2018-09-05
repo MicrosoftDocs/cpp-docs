@@ -36,7 +36,7 @@ struct ATL_DRAWINFO {
 };
 ```
 
-## Members  
+## Members
 
 `cbSize`  
 The size of the structure, in bytes.
@@ -77,13 +77,13 @@ The width and height of the rectangle into which the object is rendered. The zoo
 `ZoomDen`  
 The actual width and height of the target.
 
-## Remarks  
+## Remarks
 
 Typical usage of this structure would be the retrieval of information during the rendering of the target object. For example, you could retrieve values from ATL_DRAWINFO inside your overload of [CComControlBase::OnDrawAdvanced](ccomcontrolbase-class.md#ondrawadvanced).
 
 This structure stores pertinent information used to render the appearance of an object for the target device. The information provided can be used in drawing to the screen, a printer, or even a metafile.
 
-## Requirements  
+## Requirements
 
 **Header:** atlctl.h
 

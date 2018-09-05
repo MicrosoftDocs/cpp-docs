@@ -13,57 +13,66 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # CComHeapPtr Class
-A smart pointer class for managing heap pointers.  
-  
-## Syntax  
-  
+
+A smart pointer class for managing heap pointers.
+
+## Syntax
+
 ```
 template<typename T>  
 class CComHeapPtr : public CHeapPtr<T, CComAllocator>
-```  
-  
-#### Parameters  
- *T*  
- The object type to be stored on the heap.  
-  
-## Members  
-  
-### Public Constructors  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[CComHeapPtr::CComHeapPtr](#ccomheapptr)|The constructor.|  
-  
-## Remarks  
- `CComHeapPtr` derives from `CHeapPtr`, but uses [CComAllocator](../../atl/reference/ccomallocator-class.md) to allocate memory using COM routines. See [CHeapPtr](../../atl/reference/cheapptr-class.md) and [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) for the methods available.  
-  
-## Inheritance Hierarchy  
- [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md)  
-  
- [CHeapPtr](../../atl/reference/cheapptr-class.md)  
-  
- `CComHeapPtr`  
-  
-## Requirements  
- **Header:** atlbase.h  
-  
-##  <a name="ccomheapptr"></a>  CComHeapPtr::CComHeapPtr  
- The constructor.  
-  
+```
+
+#### Parameters
+
+*T*  
+The object type to be stored on the heap.
+
+## Members
+
+### Public Constructors
+
+|Name|Description|
+|----------|-----------------|
+|[CComHeapPtr::CComHeapPtr](#ccomheapptr)|The constructor.|
+
+## Remarks
+
+`CComHeapPtr` derives from `CHeapPtr`, but uses [CComAllocator](../../atl/reference/ccomallocator-class.md) to allocate memory using COM routines. See [CHeapPtr](../../atl/reference/cheapptr-class.md) and [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) for the methods available.
+
+## Inheritance Hierarchy
+
+[CHeapPtrBase](../../atl/reference/cheapptrbase-class.md)
+
+[CHeapPtr](../../atl/reference/cheapptr-class.md)
+
+`CComHeapPtr`
+
+## Requirements
+
+**Header:** atlbase.h
+
+##  <a name="ccomheapptr"></a>  CComHeapPtr::CComHeapPtr
+
+The constructor.
+
 ```
 CComHeapPtr() throw();
 explicit CComHeapPtr(T* pData) throw();
-```  
-  
-### Parameters  
- *pData*  
- An existing `CComHeapPtr` object.  
-  
-### Remarks  
- The heap pointer can optionally be created using an existing `CComHeapPtr` object. If so, the new `CComHeapPtr` object assumes responsibility for managing the new pointer and resources.  
-  
-## See Also  
- [CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
- [CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)   
- [CComAllocator Class](../../atl/reference/ccomallocator-class.md)   
- [Class Overview](../../atl/atl-class-overview.md)
+```
+
+### Parameters
+
+*pData*  
+An existing `CComHeapPtr` object.
+
+### Remarks
+
+The heap pointer can optionally be created using an existing `CComHeapPtr` object. If so, the new `CComHeapPtr` object assumes responsibility for managing the new pointer and resources.
+
+## See Also
+
+[CHeapPtr Class](../../atl/reference/cheapptr-class.md)   
+[CHeapPtrBase Class](../../atl/reference/cheapptrbase-class.md)   
+[CComAllocator Class](../../atl/reference/ccomallocator-class.md)   
+[Class Overview](../../atl/atl-class-overview.md)

@@ -19,7 +19,7 @@ ms.workload: ["cplusplus"]
 &nbsp;&nbsp;&nbsp;&nbsp;*string-literal*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*operator*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*punctuator*
-  
+
 *preprocessing-token*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*header-name*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
@@ -27,15 +27,15 @@ ms.workload: ["cplusplus"]
 &nbsp;&nbsp;&nbsp;&nbsp;*character-constant*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*string-literal*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*operator punctuator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;each non-whitespace character that cannot be one of the above  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;each non-whitespace character that cannot be one of the above
+
 *header-name*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**\<**  *path-spec*  **>**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**"**  *path spec*  **"**  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;**"**  *path spec*  **"**
+
 *path-spec*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Legal file path  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;Legal file path
+
 *pp-number*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*digit*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**.** *digit*<br/>

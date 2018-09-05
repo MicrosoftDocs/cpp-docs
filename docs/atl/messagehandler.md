@@ -14,18 +14,18 @@ ms.workload: ["cplusplus"]
 ---
 # MessageHandler
 
-`MessageHandler` is the name of the function identified by the second parameter of the MESSAGE_HANDLER macro in your message map.  
-  
-## Syntax  
-  
+`MessageHandler` is the name of the function identified by the second parameter of the MESSAGE_HANDLER macro in your message map.
+
+## Syntax
+
 ```
 LRESULT MessageHandler(
     UINT uMsg,  
     WPARAM wParam,  
     LPARAM lParam,  
     BOOL& bHandled);
-```  
-  
+```
+
 ### Parameters
 
 *uMsg*  

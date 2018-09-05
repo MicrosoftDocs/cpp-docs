@@ -12,11 +12,13 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Scope of ATL
-ATL allows you to easily create COM objects, Automation servers, and ActiveX controls. ATL provides built-in support for many of the fundamental COM interfaces.  
-  
- ATL is shipped as source code which you include in your application. ATL also makes a DLL available (atl90.dll), which contains code that can be shared across components. However, this DLL is not necessary.  
-  
-## See Also  
- [Introduction to ATL](../atl/introduction-to-atl.md)   
- [ATL Project Wizard](../atl/reference/atl-project-wizard.md)
+
+ATL allows you to easily create COM objects, Automation servers, and ActiveX controls. ATL provides built-in support for many of the fundamental COM interfaces.
+
+ATL is shipped as source code which you include in your application. ATL also makes a DLL available (atl90.dll), which contains code that can be shared across components. However, this DLL is not necessary.
+
+## See Also
+
+[Introduction to ATL](../atl/introduction-to-atl.md)   
+[ATL Project Wizard](../atl/reference/atl-project-wizard.md)
 

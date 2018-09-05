@@ -92,6 +92,6 @@ Use this page of the wizard to identify additional user element options for the 
 
 ## See Also
 
-[ATL Control Wizard](../../atl/reference/atl-control-wizard.md)
+[ATL Control Wizard](../../atl/reference/atl-control-wizard.md)<br/>
 [SUBEDIT Sample: Superclasses a Standard Windows Control](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit)
 
