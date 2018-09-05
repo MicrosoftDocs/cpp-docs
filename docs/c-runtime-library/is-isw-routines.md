@@ -27,91 +27,91 @@ ms.workload: ["cplusplus"]
 |[isdigit, iswdigit, _isdigit_l, _iswdigit_l](../c-runtime-library/reference/isdigit-iswdigit-isdigit-l-iswdigit-l.md)|[isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l](../c-runtime-library/reference/isxdigit-iswxdigit-isxdigit-l-iswxdigit-l.md)|  
   
 ## Remarks  
- These routines test characters for specified conditions.  
+These routines test characters for specified conditions.  
   
- The **is** routines produce meaningful results for any integer argument from -1 (`EOF`) to **UCHAR_MAX** (0xFF), inclusive. The expected argument type is `int`.  
+The **is** routines produce meaningful results for any integer argument from -1 (`EOF`) to **UCHAR_MAX** (0xFF), inclusive. The expected argument type is `int`.  
   
 > [!CAUTION]
 >  For the **is** routines, passing an argument of type `char` may yield unpredictable results. An SBCS or MBCS single-byte character of type `char` with a value greater than 0x7F is negative. If a `char` is passed, the compiler may convert the value to a signed `int` or a signed **long**. This value may be sign-extended by the compiler, with unexpected results.  
   
- The **isw** routines produce meaningful results for any integer value from - 1 (**WEOF**) to 0xFFFF, inclusive. The **wint_t** data type is defined in WCHAR.H as an **unsigned short**; it can hold any wide character or the wide-character end-of-file (**WEOF**) value.  
+The **isw** routines produce meaningful results for any integer value from - 1 (**WEOF**) to 0xFFFF, inclusive. The **wint_t** data type is defined in WCHAR.H as an **unsigned short**; it can hold any wide character or the wide-character end-of-file (**WEOF**) value.  
   
- The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead.  
+The output value is affected by the setting of the `LC_CTYPE` category setting of the locale; see [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) for more information. The versions of these functions without the **_l** suffix use the current locale for this locale-dependent behavior; the versions with the **_l** suffix are identical except that they use the locale parameter passed in instead.  
   
- In the "C" locale, the test conditions for the **is** routines are as follows:  
+In the "C" locale, the test conditions for the **is** routines are as follows:  
   
- `isalnum`  
- Alphanumeric (A - Z, a - z, or 0 - 9).  
+`isalnum`  
+Alphanumeric (A - Z, a - z, or 0 - 9).  
   
- `isalpha`  
- Alphabetic (A - Z or a - z).  
+`isalpha`  
+Alphabetic (A - Z or a - z).  
   
- `__isascii`  
- ASCII character (0x00 - 0x7F).  
+`__isascii`  
+ASCII character (0x00 - 0x7F).  
   
- `isblank`  
- Horizontal tab or space character (0x09 or 0x20).  
+`isblank`  
+Horizontal tab or space character (0x09 or 0x20).  
   
- `iscntrl`  
- Control character (0x00 - 0x1F or 0x7F).  
+`iscntrl`  
+Control character (0x00 - 0x1F or 0x7F).  
   
- `__iscsym`  
- Letter, underscore, or digit.  
+`__iscsym`  
+Letter, underscore, or digit.  
   
- `__iscsymf`  
- Letter or underscore.  
+`__iscsymf`  
+Letter or underscore.  
   
- `isdigit`  
- Decimal digit (0 - 9).  
+`isdigit`  
+Decimal digit (0 - 9).  
   
- `isgraph`  
- Printable character except space ( ).  
+`isgraph`  
+Printable character except space ( ).  
   
- `islower`  
- Lowercase letter (a - z).  
+`islower`  
+Lowercase letter (a - z).  
   
- `isprint`  
- Printable character including space (0x20 - 0x7E).  
+`isprint`  
+Printable character including space (0x20 - 0x7E).  
   
- `ispunct`  
- Punctuation character.  
+`ispunct`  
+Punctuation character.  
   
- `isspace`  
- White-space character (0x09 - 0x0D or 0x20).  
+`isspace`  
+White-space character (0x09 - 0x0D or 0x20).  
   
- `isupper`  
- Uppercase letter (A - Z).  
+`isupper`  
+Uppercase letter (A - Z).  
   
- `isxdigit`  
- Hexadecimal digit (A - F, a - f, or 0 - 9).  
+`isxdigit`  
+Hexadecimal digit (A - F, a - f, or 0 - 9).  
   
- For the **isw** routines, the result of the test for the specified condition is independent of locale. The test conditions for the **isw** functions are as follows:  
+For the **isw** routines, the result of the test for the specified condition is independent of locale. The test conditions for the **isw** functions are as follows:  
   
- `iswalnum`  
- `iswalpha` or `iswdigit`.  
+`iswalnum`  
+`iswalpha` or `iswdigit`.  
   
- `iswalpha`  
- Any wide character that is one of an implementation-defined set for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswalpha` returns nonzero only for wide characters for which `iswupper` or `iswlower` is nonzero.  
+`iswalpha`  
+Any wide character that is one of an implementation-defined set for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswalpha` returns nonzero only for wide characters for which `iswupper` or `iswlower` is nonzero.  
   
- `iswascii`  
- Wide-character representation of ASCII character (0x0000 - 0x007F).  
+`iswascii`  
+Wide-character representation of ASCII character (0x0000 - 0x007F).  
   
- `iswblank`  
- Wide character that corresponds to the standard space character or is one of an implementation-defined set of wide characters for which `iswalnum` is false. Standard blank characters are space (L' ') and horizontal tab (L'\t').  
+`iswblank`  
+Wide character that corresponds to the standard space character or is one of an implementation-defined set of wide characters for which `iswalnum` is false. Standard blank characters are space (L' ') and horizontal tab (L'\t').  
   
- `iswcntrl`  
- Control wide character.  
+`iswcntrl`  
+Control wide character.  
   
- `__iswcsym`  
- Any wide character for which `isalnum` is true, or the '_' character.  
+`__iswcsym`  
+Any wide character for which `isalnum` is true, or the '_' character.  
   
- `__iswcsymf`  
- Any wide character for which `iswalpha` is true, or the '_' character.  
+`__iswcsymf`  
+Any wide character for which `iswalpha` is true, or the '_' character.  
   
- `iswctype`  
- Character has property specified by the `desc` argument. For each valid value of the `desc` argument of `iswctype`, there is an equivalent wide-character classification routine, as shown in the following table:  
+`iswctype`  
+Character has property specified by the `desc` argument. For each valid value of the `desc` argument of `iswctype`, there is an equivalent wide-character classification routine, as shown in the following table:  
   
- ### Equivalence of iswctype(c, desc) to Other isw Testing Routines
+### Equivalence of iswctype(c, desc) to Other isw Testing Routines
   
 |Value of *desc* argument|iswctype( *c, desc* ) equivalent|  
 |------------------------------|----------------------------------------|  
@@ -129,38 +129,38 @@ ms.workload: ["cplusplus"]
 |**_UPPER**|**iswupper(** `c` **)**|  
 |**_HEX**|**iswxdigit(** `c` **)**|  
   
- `iswdigit`  
- Wide character corresponding to a decimal-digit character.  
+`iswdigit`  
+Wide character corresponding to a decimal-digit character.  
   
- `iswgraph`  
- Printable wide character except space wide character (L' ').  
+`iswgraph`  
+Printable wide character except space wide character (L' ').  
   
- `iswlower`  
- Lowercase letter, or one of implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswlower` returns nonzero only for wide characters that correspond to lowercase letters.  
+`iswlower`  
+Lowercase letter, or one of implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswlower` returns nonzero only for wide characters that correspond to lowercase letters.  
   
- `iswprint`  
- Printable wide character, including space wide character (L' ').  
+`iswprint`  
+Printable wide character, including space wide character (L' ').  
   
- `iswpunct`  
- Printable wide character that is neither space wide character (L' ') nor wide character for which `iswalnum` is nonzero.  
+`iswpunct`  
+Printable wide character that is neither space wide character (L' ') nor wide character for which `iswalnum` is nonzero.  
   
- `iswspace`  
- Wide character that corresponds to standard white-space character or is one of implementation-defined set of wide characters for which `iswalnum` is false. Standard white-space characters are: space (L' '), formfeed (L'\f'), newline (L'\n'), carriage return (L'\r'), horizontal tab (L'\t'), and vertical tab (L'\v').  
+`iswspace`  
+Wide character that corresponds to standard white-space character or is one of implementation-defined set of wide characters for which `iswalnum` is false. Standard white-space characters are: space (L' '), formfeed (L'\f'), newline (L'\n'), carriage return (L'\r'), horizontal tab (L'\t'), and vertical tab (L'\v').  
   
- `iswupper`  
- Wide character that is uppercase or is one of an implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswupper` returns nonzero only for wide characters that correspond to uppercase characters.  
+`iswupper`  
+Wide character that is uppercase or is one of an implementation-defined set of wide characters for which none of `iswcntrl`, `iswdigit`, `iswpunct`, or `iswspace` is nonzero. `iswupper` returns nonzero only for wide characters that correspond to uppercase characters.  
   
- `iswxdigit`  
- Wide character that corresponds to a hexadecimal-digit character.  
+`iswxdigit`  
+Wide character that corresponds to a hexadecimal-digit character.  
   
 ## Example  
-  
-```  
+
+```C
 // crt_isfam.c  
 /* This program tests all characters between 0x0  
- * and 0x7F, then displays each character with abbreviations  
- * for the character-type codes that apply.  
- */  
+* and 0x7F, then displays each character with abbreviations  
+* for the character-type codes that apply.  
+*/  
   
 #include <stdio.h>  
 #include <ctype.h>  
@@ -193,7 +193,7 @@ int main( void )
   
 ## Output  
   
-```  
+```Output  
 00            AS  C                              .  
 01            AS  C                              .  
 02            AS  C                              .  
@@ -322,11 +322,12 @@ int main( void )
 7d   }        AS              G    PU    PR      .  
 7e   ~        AS              G    PU    PR      .  
 7f            AS  C                              .  
-```  
-  
-## See Also  
- [Character Classification](../c-runtime-library/character-classification.md)   
- [Locale](../c-runtime-library/locale.md)   
- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)   
- [Interpretation of Multibyte-Character Sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
- [to Functions](../c-runtime-library/to-functions.md)
+```
+
+## See Also
+
+[Character Classification](../c-runtime-library/character-classification.md)   
+[Locale](../c-runtime-library/locale.md)   
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)   
+[Interpretation of Multibyte-Character Sequences](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
+[to Functions](../c-runtime-library/to-functions.md)

@@ -12,13 +12,15 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Aggregation
-There are times when an object's implementor would like to take advantage of the services offered by another, prebuilt object. Furthermore, it would like this second object to appear as a natural part of the first. COM achieves both of these goals through containment and aggregation.  
-  
- Aggregation means that the containing (outer) object creates the contained (inner) object as part of its creation process and the interfaces of the inner object are exposed by the outer. An object allows itself to be aggregatable or not. If it is, then it must follow certain rules for aggregation to work properly.  
-  
- Primarily, all `IUnknown` method calls on the contained object must delegate to the containing object.  
-  
-## See Also  
- [Introduction to COM](../atl/introduction-to-com.md)   
- [Reusing Objects](/windows/desktop/com/reusing-objects)
+
+There are times when an object's implementor would like to take advantage of the services offered by another, prebuilt object. Furthermore, it would like this second object to appear as a natural part of the first. COM achieves both of these goals through containment and aggregation.
+
+Aggregation means that the containing (outer) object creates the contained (inner) object as part of its creation process and the interfaces of the inner object are exposed by the outer. An object allows itself to be aggregatable or not. If it is, then it must follow certain rules for aggregation to work properly.
+
+Primarily, all `IUnknown` method calls on the contained object must delegate to the containing object.
+
+## See Also
+
+[Introduction to COM](../atl/introduction-to-com.md)   
+[Reusing Objects](/windows/desktop/com/reusing-objects)
 

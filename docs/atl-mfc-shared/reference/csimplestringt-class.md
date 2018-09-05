@@ -147,13 +147,14 @@ void AppendChar(XCHAR ch);
  Copies a character or characters to a `CSimpleStringT` object.  
   
 ### Syntax  
-  
-```  
+
+```
 static void CopyChars(
-  XCHAR* pchDest,
-  const XCHAR* pchSrc, 
-  int nChars) throw();
-```  
+    XCHAR* pchDest,
+    const XCHAR* pchSrc,
+    int nChars) throw();
+```
+
 #### Parameters  
  *pchDest*  
  A pointer to a character string.  
@@ -182,13 +183,14 @@ _tprintf_s(_T("%s\n"), str);
 Copies a character or characters to a `CSimpleStringT` object.  
   
 ### Syntax  
-  
-```  
+
+```
 static void CopyCharsOverlapped(
-  XCHAR* pchDest,
-  const XCHAR* pchSrc,
-  int nChars) throw(); 
-```  
+    XCHAR* pchDest,
+    const XCHAR* pchSrc,
+    int nChars) throw();
+```
+
 #### Parameters  
  *pchDest*  
  A pointer to a character string.  
@@ -815,7 +817,7 @@ CSimpleString s(_T("abc"), pMgr);
 LPTSTR p = s.GetBuffer(bufferSize);
 _tcscpy_s(p, bufferSize, _T("abc"));
 
-  // use the buffer directly
+// use the buffer directly
 ASSERT(s.GetLength() == 3);
 
 // String length = 3

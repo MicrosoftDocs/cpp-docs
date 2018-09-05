@@ -12,14 +12,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Debugging and Exceptions Classes
-These classes provide support for exception handling and debugging.  
-  
--   [CAtlDebugInterfacesModule](../atl/reference/catldebuginterfacesmodule-class.md) This class provides support for debugging interfaces.  
-  
--   [CAtlException](../atl/reference/catlexception-class.md) This class defines an ATL exception.  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)   
- [Debugging and Error Reporting Global Functions](../atl/reference/debugging-and-error-reporting-global-functions.md)   
- [Debugging and Error Reporting Macros](../atl/reference/debugging-and-error-reporting-macros.md)
+
+These classes provide support for exception handling and debugging.
+
+- [CAtlDebugInterfacesModule](../atl/reference/catldebuginterfacesmodule-class.md) This class provides support for debugging interfaces.
+
+- [CAtlException](../atl/reference/catlexception-class.md) This class defines an ATL exception.
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)   
+[Debugging and Error Reporting Global Functions](../atl/reference/debugging-and-error-reporting-global-functions.md)   
+[Debugging and Error Reporting Macros](../atl/reference/debugging-and-error-reporting-macros.md)
 

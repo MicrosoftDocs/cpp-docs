@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _ATL_BASE_MODULE70 Structure
-Used by any project that uses ATL.  
-  
-## Syntax  
-  
+
+Used by any project that uses ATL.
+
+## Syntax
+
 ```
 struct _ATL_BASE_MODULE70 {
     UINT cbSize;
@@ -28,43 +29,43 @@ struct _ATL_BASE_MODULE70 {
     CRITICAL_SECTION m_csResource;
     CSimpleArray<HINSTANCE> m_rgResourceInstance;
 };
-```  
-  
-## Members  
- `cbSize`  
- The size of the structure, used for versioning.  
-  
- `m_hInst`  
- The `hInstance` for this module (either exe or dll).  
-  
- `m_hInstResource`  
- Default instance resource handle.  
-  
- `m_bNT5orWin98`  
- Operating system version information. Used internally by ATL.  
-  
- `dwAtlBuildVer`  
- Stores the version of ATL. Currently 0x0700.  
-  
- `pguidVer`  
- ATL's internal GUID.  
-  
- `m_csResource`  
- Used to synchronize access to the `m_rgResourceInstance` array. Used internally by ATL.  
-  
- `m_rgResourceInstance`  
- Array used to search for resources in all the resource instances of which ATL is aware. Used internally by ATL.  
-  
-## Remarks  
- [_ATL_BASE_MODULE](atl-typedefs.md#_atl_base_module) is defined as a typedef of _ATL_BASE_MODULE70.  
-  
-## Requirements  
- **Header:** atlcore.h  
-  
-## See Also  
- [Classes and structs](../../atl/reference/atl-classes.md)
+```
 
+## Members
 
+`cbSize`  
+The size of the structure, used for versioning.
 
+`m_hInst`  
+The `hInstance` for this module (either exe or dll).
 
+`m_hInstResource`  
+Default instance resource handle.
+
+`m_bNT5orWin98`  
+Operating system version information. Used internally by ATL.
+
+`dwAtlBuildVer`  
+Stores the version of ATL. Currently 0x0700.
+
+`pguidVer`  
+ATL's internal GUID.
+
+`m_csResource`  
+Used to synchronize access to the `m_rgResourceInstance` array. Used internally by ATL.
+
+`m_rgResourceInstance`  
+Array used to search for resources in all the resource instances of which ATL is aware. Used internally by ATL.
+
+## Remarks
+
+[_ATL_BASE_MODULE](atl-typedefs.md#_atl_base_module) is defined as a typedef of _ATL_BASE_MODULE70.
+
+## Requirements
+
+**Header:** atlcore.h
+
+## See Also
+
+[Classes and structs](../../atl/reference/atl-classes.md)
 

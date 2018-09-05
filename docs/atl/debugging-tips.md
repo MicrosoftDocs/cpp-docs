@@ -12,14 +12,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Debugging Tips
-The following topics outline some useful steps for debugging your service:  
-  
--   [Using Task Manager](../atl/using-task-manager.md)  
-  
--   [Displaying Assertions](../atl/displaying-assertions.md)  
-  
--   [Running the Program as a Local Server](../atl/running-the-program-as-a-local-server.md)  
-  
-## See Also  
- [Services](../atl/atl-services.md)
+
+The following topics outline some useful steps for debugging your service:
+
+- [Using Task Manager](../atl/using-task-manager.md)
+
+- [Displaying Assertions](../atl/displaying-assertions.md)
+
+- [Running the Program as a Local Server](../atl/running-the-program-as-a-local-server.md)
+
+## See Also
+
+[Services](../atl/atl-services.md)
 

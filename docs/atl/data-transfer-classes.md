@@ -13,12 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Data Transfer Classes
-The following classes support various types of data transfer:  
-  
--   [IDataObjectImpl](../atl/reference/idataobjectimpl-class.md) Supports Uniform Data Transfer by using standard formats to retrieve and set data. Handles data change notifications by managing connections to advise sinks.  
-  
--   [CBindStatusCallback](../atl/reference/cbindstatuscallback-class.md) Allows an asynchronous moniker to send and receive information about the asynchronous data transfer to and from your object.  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)
+
+The following classes support various types of data transfer:
+
+- [IDataObjectImpl](../atl/reference/idataobjectimpl-class.md) Supports Uniform Data Transfer by using standard formats to retrieve and set data. Handles data change notifications by managing connections to advise sinks.
+
+- [CBindStatusCallback](../atl/reference/cbindstatuscallback-class.md) Allows an asynchronous moniker to send and receive information about the asynchronous data transfer to and from your object.
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)
 

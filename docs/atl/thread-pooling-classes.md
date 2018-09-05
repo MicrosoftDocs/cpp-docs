@@ -13,14 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Thread Pooling Classes
-The following classes support thread pooling:  
-  
--   [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) Implements an EXE module, with support for multiple thread-pooled apartments.  
-  
--   [CComApartment](../atl/reference/ccomapartment-class.md) Manages an apartment in a thread-pooled EXE module.  
-  
--   [CComSimpleThreadAllocator](../atl/reference/ccomsimplethreadallocator-class.md) Manages thread selection for an EXE module.  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)
+
+The following classes support thread pooling:
+
+- [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) Implements an EXE module, with support for multiple thread-pooled apartments.
+
+- [CComApartment](../atl/reference/ccomapartment-class.md) Manages an apartment in a thread-pooled EXE module.
+
+- [CComSimpleThreadAllocator](../atl/reference/ccomsimplethreadallocator-class.md) Manages thread selection for an EXE module.
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)
 

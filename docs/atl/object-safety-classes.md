@@ -13,13 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Object Safety Classes
-The following class provides support for object safety:  
-  
--   [IObjectSafetyImpl](../atl/reference/iobjectsafetyimpl-class.md) Allows an object to be marked as safe for initialization or safe for scripting.  
-  
-## Related Articles  
- [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)
+
+The following class provides support for object safety:
+
+- [IObjectSafetyImpl](../atl/reference/iobjectsafetyimpl-class.md) Allows an object to be marked as safe for initialization or safe for scripting.
+
+## Related Articles
+
+[ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)
 

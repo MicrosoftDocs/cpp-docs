@@ -126,13 +126,13 @@ m_myImage.ReleaseDC();
 ```cpp  
 void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 {
-  UNREFERENCED_PARAMETER(nFlags);
-
-  CBitmap* pBitmap = CBitmap::FromHandle(m_myImage);
-  m_pmenuPop->AppendMenu(0, ID_BMPCOMMAND, pBitmap);
-  ClientToScreen(&point);
-  m_pmenuPop->TrackPopupMenu(TPM_RIGHTBUTTON | TPM_LEFTALIGN, point.x, 
-  point.y, this);
+    UNREFERENCED_PARAMETER(nFlags);
+    
+    CBitmap* pBitmap = CBitmap::FromHandle(m_myImage);
+    m_pmenuPop->AppendMenu(0, ID_BMPCOMMAND, pBitmap);
+    ClientToScreen(&point);
+    m_pmenuPop->TrackPopupMenu(TPM_RIGHTBUTTON | TPM_LEFTALIGN, point.x, 
+    point.y, this);
 }
 ```  
 
@@ -1196,9 +1196,9 @@ HRESULT Save(LPCTSTR pszFileName,
   
 ```
 void SetColorTable(
-  UINT iFirstColor, 
-  UINT nColors,
-  const RGBQUAD* prgbColors) throw();
+    UINT iFirstColor, 
+    UINT nColors,
+    const RGBQUAD* prgbColors) throw();
 ```  
   
 ### Parameters  
@@ -1463,25 +1463,24 @@ BOOL TransparentBlt(
 BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage, 
        int xDest, int yDest, int nDestWidth, int nDestHeight)
 {
-  HDC hDstDC = NULL;
-  BOOL bResult;
+    HDC hDstDC = NULL;
+    BOOL bResult;
 
-  if(pSrcImage == NULL || pDstImage == NULL)
-  {
-  // Invalid parameter
-  return FALSE;
-  }
+    if(pSrcImage == NULL || pDstImage == NULL)
+    {
+        // Invalid parameter
+        return FALSE;
+    }
 
-  // Obtain a DC to the destination image
-  hDstDC = pDstImage->GetDC();
+    // Obtain a DC to the destination image
+    hDstDC = pDstImage->GetDC();
+    // Perform the blit
+    bResult = pSrcImage->TransparentBlt(hDstDC, xDest, yDest, nDestWidth, nDestHeight);
 
-  // Perform the blit
-  bResult = pSrcImage->TransparentBlt(hDstDC, xDest, yDest, nDestWidth, nDestHeight);
+    // Release the destination DC
+    pDstImage->ReleaseDC();
 
-  // Release the destination DC
-  pDstImage->ReleaseDC();
-
-  return bResult;
+    return bResult;
 }
 ```
 

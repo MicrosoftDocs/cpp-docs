@@ -12,13 +12,15 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Modifying the ATL Project
-At this point, your composite control project implements the necessary objects for your composite control. The next step is to add any controls that the composite control will contain and handle any necessary events.  
-  
- To add additional ActiveX or Windows controls, add a new resource script and then use the Dialog editor. For more information on adding controls (and related tasks), see [Dialog Editor](../windows/dialog-editor.md).  
-  
- To handle any necessary events from the ActiveX controls, see [Adding Functionality to the Composite Control](../atl/adding-functionality-to-the-composite-control.md).  
-  
-## See Also  
- [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)   
- [How to: Create a Resource Script File](../windows/how-to-create-a-resource-script-file.md)
+
+At this point, your composite control project implements the necessary objects for your composite control. The next step is to add any controls that the composite control will contain and handle any necessary events.
+
+To add additional ActiveX or Windows controls, add a new resource script and then use the Dialog editor. For more information on adding controls (and related tasks), see [Dialog Editor](../windows/dialog-editor.md).
+
+To handle any necessary events from the ActiveX controls, see [Adding Functionality to the Composite Control](../atl/adding-functionality-to-the-composite-control.md).
+
+## See Also
+
+[Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)   
+[How to: Create a Resource Script File](../windows/how-to-create-a-resource-script-file.md)
 

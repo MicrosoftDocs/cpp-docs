@@ -97,7 +97,7 @@ explicit CFixedStringT(const unsigned char* psz);
   
 ```
 CFixedStringT<StringType, t_nChars>& operator=(
-  const CFixedStringT<StringType, t_nChars>& str);
+    const CFixedStringT<StringType, t_nChars>& str);
 CFixedStringT<StringType, t_nChars>& operator=(const char* psz);
 CFixedStringT<StringType, t_nChars>& operator=(const wchar_t* psz);
 CFixedStringT<StringType, t_nChars>& operator=(const unsigned char* psz);
