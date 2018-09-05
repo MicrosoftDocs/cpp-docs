@@ -1,7 +1,7 @@
 ---
 title: "@ (Specify a Linker Response File) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/05/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["@"]
@@ -13,27 +13,31 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # @ (Specify a Linker Response File)
-```  
-@response_file  
-```  
-  
-## Remarks  
- where:  
-  
- `response_file`  
- A text file specifying linker commands.  
-  
-## Remarks  
- See [@ (Specify a Compiler Response File)](../../build/reference/at-specify-a-compiler-response-file.md) for more information.  
-  
-### To set this linker option in the Visual Studio development environment  
-  
-1.  This linker option is not available from the Visual Studio development environment.  
-  
-### To set this linker option programmatically  
-  
-1.  This linker option cannot be changed programmatically.  
-  
-## See Also  
- [Setting Linker Options](../../build/reference/setting-linker-options.md)   
- [Linker Options](../../build/reference/linker-options.md)
+
+Specifies a linker response file.
+
+## Syntax
+
+> **\@**<em>response_file</em>
+
+## Arguments
+
+*response_file*  
+A text file specifying linker commands.
+
+## Remarks
+
+See [@ (Specify a Compiler Response File)](../../build/reference/at-specify-a-compiler-response-file.md) for more information.
+
+### To set this linker option in the Visual Studio development environment
+
+- This linker option is not available from the Visual Studio development environment.
+
+### To set this linker option programmatically
+
+- This linker option cannot be changed programmatically.
+
+## See Also
+
+[Setting Linker Options](../../build/reference/setting-linker-options.md)  
+[Linker Options](../../build/reference/linker-options.md)
