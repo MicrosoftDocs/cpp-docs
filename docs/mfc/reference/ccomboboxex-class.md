@@ -159,7 +159,7 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  *dwExStyle*  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.  
   
  *dwStyle*  
  The combo box control's style. See [Create](#create) for a list of styles.  
@@ -340,7 +340,7 @@ CImageList* SetImageList(CImageList* pImageList);
  A pointer to a [CImageList](../../mfc/reference/cimagelist-class.md) object containing the images previously used by the `CComboBoxEx` control. NULL if no image list was previously set.  
   
 ### Remarks  
- This member function implements the functionality of the message [CBEM_SETIMAGELIST](/windows/desktop/Controls/cbem-setimagelist), as described in the Windows SDK. If you change the height of the default edit control, call the Win32 function [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) to resize your control after you call `SetImageList`, or it will not display properly.  
+ This member function implements the functionality of the message [CBEM_SETIMAGELIST](/windows/desktop/Controls/cbem-setimagelist), as described in the Windows SDK. If you change the height of the default edit control, call the Win32 function [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) to resize your control after you call `SetImageList`, or it will not display properly.  
   
  The `CImageList` object pointed to by the return value is a temporary object and is destroyed during the next idle processing time.  
   

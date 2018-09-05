@@ -73,7 +73,7 @@ class CWinApp : public CWinThread
 |[CWinApp::OnIdle](#onidle)|Override to perform application-specific idle-time processing.|
 |[CWinApp::OpenDocumentFile](#opendocumentfile)|Called by the framework to open a document from a file.|
 |[CWinApp::ParseCommandLine](#parsecommandline)|Parses individual parameters and flags in the command line.|
-|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).|
+|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Filters messages before they are dispatched to the Windows functions [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).|
 |[CWinApp::ProcessMessageFilter](#processmessagefilter)|Intercepts certain messages before they reach the application.|
 |[CWinApp::ProcessShellCommand](#processshellcommand)|Handles command-line arguments and flags.|
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|Intercepts all unhandled exceptions thrown by the application's message and command handlers.|
@@ -1597,7 +1597,7 @@ For a description of the command-line flags, see [CCommandLineInfo::m_nShellComm
 
 ##  <a name="pretranslatemessage"></a>  CWinApp::PreTranslateMessage
 
-Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) The default implementation performs accelerator-key translation, so you must call the `CWinApp::PreTranslateMessage` member function in your overridden version.
+Override this function to filter window messages before they are dispatched to the Windows functions [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) The default implementation performs accelerator-key translation, so you must call the `CWinApp::PreTranslateMessage` member function in your overridden version.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);

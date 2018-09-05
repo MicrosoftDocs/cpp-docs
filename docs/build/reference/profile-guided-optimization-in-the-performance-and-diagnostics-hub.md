@@ -12,13 +12,13 @@ ms.workload: ["cplusplus"]
 ---
 # Profile Guided Optimization in the Visual Studio 2013 Performance and Diagnostics Hub
 
-If you are using Visual Studio 2013, the Profile Guided Optimization for Visual C++ plug-in in the Performance and Diagnostics Hub streamlines the profile guided optimization experience for developers. You can [download the plug-in](http://go.microsoft.com/fwlink/p/?LinkId=327915) from the Visual Studio website. The plug-in is not supported in later versions of Visual Studio.
+If you are using Visual Studio 2013, the Profile Guided Optimization for Visual C++ plug-in in the Performance and Diagnostics Hub streamlines the profile guided optimization experience for developers. You can [download the plug-in](https://marketplace.visualstudio.com/items?itemName=ProfileGuidedOptimizationTeam.ProfileGuidedOptimizationforVisualC) from the Visual Studio website. The plug-in is not supported in later versions of Visual Studio.
 
 Profile guided optimization (PGO) helps you create builds of x86 and x64 native apps that are optimized for the way users interact with them. PGO is a multi-step process: You create an app build that's instrumented for profiling, and then you perform "training." That is, you run the instrumented app through common user interaction scenarios. You save the captured profiling data, and then you rebuild your app by using the results to guide whole-program optimization. Although you can perform these steps individually in Visual Studio or on the command line, the PGO plug-in centralizes and simplifies the process. The PGO plug-in sets all of the required options, guides you through each step, shows you the analysis, and then uses the results to configure the build to optimize each function for size or speed. The PGO plug-in also makes it easy to rerun your app training and update the build-optimization data as you change your code.
 
 ## Prerequisites
 
-You must [download the PGO plug-in](http://go.microsoft.com/fwlink/p/?LinkId=327915) and install it in Visual Studio before you can use it in the Performance and Diagnostics Hub.
+You must [download the PGO plug-in](https://marketplace.visualstudio.com/items?itemName=ProfileGuidedOptimizationTeam.ProfileGuidedOptimizationforVisualC) and install it in Visual Studio before you can use it in the Performance and Diagnostics Hub.
 
 ## Walkthrough: Using the PGO Plug-in to Optimize an App
 

@@ -435,7 +435,7 @@ virtual BOOL Create(
   
 - WS_DISABLED Rarely  
   
- See [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK for a description of window styles.  
+ See [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK for a description of window styles.  
   
  Optionally, apply a combination of [common control styles](/windows/desktop/Controls/common-control-styles), as described in the Windows SDK.  
   
@@ -459,7 +459,7 @@ virtual BOOL CreateEx(
   
 ### Parameters  
  *dwExStyle*  
- Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ Specifies the extended style of the control being created. For a list of extended Windows styles, see the *dwExStyle* parameter for [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.  
   
  *dwStyle*  
  Specifies the toolbar control's style. Toolbars must always have the WS_CHILD style. In addition, you can specify any combination of toolbar styles and window styles as described in the **Remarks** section of [Create](#create).  

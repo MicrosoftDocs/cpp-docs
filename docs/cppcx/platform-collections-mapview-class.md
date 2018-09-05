@@ -36,7 +36,7 @@ ref class MapView sealed;
  A type that provides a function object that can compare two element values as sort keys to determine their relative order in the MapView. By default, [std::less\<K>](../standard-library/less-struct.md).  
   
 ### Remarks  
- MapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView \<K,V>](http://go.microsoft.com/fwlink/p/?LinkId=262409) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
+ MapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView \<K,V>](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
   
 ### Members  
   

@@ -48,7 +48,7 @@ Adds recommended Security Development Lifecycle (SDL) checks. These checks inclu
 -   Performs class member initialization. Automatically initializes all class members to zero on object instantiation (before the constructor runs). This helps prevent the use of uninitialized data associated with class members that the constructor does not explicitly initialize.  
   
 ## Remarks  
- For more information, see [Warnings, /sdl, and improving uninitialized variable detection](http://go.microsoft.com/fwlink/p/?LinkId=331012).  
+ For more information, see [Warnings, /sdl, and improving uninitialized variable detection](https://cloudblogs.microsoft.com/microsoftsecure/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection/).  
   
 #### To set this compiler option in the Visual Studio development environment  
   

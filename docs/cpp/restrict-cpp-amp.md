@@ -75,7 +75,7 @@ The restriction specifier can be applied to function and lambda declarations. It
   
     -   Varargs.  
   
- For a discussion of function limitations, see [restrict(amp) Restrictions](http://go.microsoft.com/fwlink/p/?LinkId=251089).  
+ For a discussion of function limitations, see [restrict (amp) Restrictions](https://blogs.msdn.microsoft.com/nativeconcurrency/2011/12/19/restrictamp-restrictions-part-0-of-n-introduction/).  
   
 ## Example  
  The following example shows how to use the `restrict(amp)`clause.  

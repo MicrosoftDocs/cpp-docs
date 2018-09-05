@@ -28,15 +28,9 @@ You should consider the following issues before starting your OLE DB application
  **Do you have older code using another data access technology (ADO, ODBC, or DAO)?**  
  Given the possible combinations of technologies (such as using ADO components with OLE DB components and migrating ODBC code to OLE DB), covering all situations is beyond the scope of the Visual C++ documentation. However, many articles covering various scenarios are available on the following Microsoft Web sites:  
   
--   [Microsoft Help and Support](http://go.microsoft.com/fwlink/p/?linkid=148218)  
+-   [Microsoft Help and Support](https://support.microsoft.com/)  
   
--   [Microsoft Data Access Technical Articles Overview](http://go.microsoft.com/fwlink/p/?linkid=148217)  
-  
--   [Visual Studio Solution Center](http://go.microsoft.com/fwlink/p/?linkid=148215)  
-  
--   [Search Microsoft.com](http://search.microsoft.com/)  
-  
- When you perform a search, enter a combination of keywords that best fits your scenario; for example: if you were using ADO objects with an OLE DB provider, try a Boolean search with **ADO AND "OLE DB"**. If you wanted to migrate older DAO code to ODBC, select "all words" and specify strings such as **migrating DAO**.  
+-   [Microsoft Data Access Technical Articles Overview](https://msdn.microsoft.com/en-us/library/ms810811.aspx)  
   
 ## See Also  
  [OLE DB Programming](../../data/oledb/ole-db-programming.md)   

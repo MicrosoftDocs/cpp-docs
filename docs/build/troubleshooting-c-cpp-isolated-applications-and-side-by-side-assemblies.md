@@ -34,7 +34,7 @@ Loading a C/C++ application can fail if dependent libraries cannot be found. Thi
   
 3.  If your application depends on side-by-side assemblies and a manifest is not present, you have to ensure that the linker generates a manifest for your project. Check the linker option **Generate manifest** in the **Project Properties** dialog box for the project.  
   
-4.  If the manifest is embedded in the binary, ensure that the ID of RT_MANIFEST is correct for this type of the binary. For more information about which resource ID to use, see [Using Side-by-Side Assemblies as a Resource (Windows)](https://msdn.microsoft.com/library/windows/desktop/aa376617.aspx). If the manifest is in a separate file, open it in an XML editor or text editor. For more information about manifests and rules for deployment, see [Manifests](https://msdn.microsoft.com/library/aa375365).  
+4.  If the manifest is embedded in the binary, ensure that the ID of RT_MANIFEST is correct for this type of the binary. For more information about which resource ID to use, see [Using Side-by-Side Assemblies as a Resource (Windows)](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource). If the manifest is in a separate file, open it in an XML editor or text editor. For more information about manifests and rules for deployment, see [Manifests](https://msdn.microsoft.com/library/aa375365).  
   
     > [!NOTE]
     >  If both an embedded manifest and a separate manifest file are present, the operating system loader uses the embedded manifest and ignores the separate file. However, on Windows XP, the opposite is true—the separate manifest file is used and the embedded manifest is ignored.  

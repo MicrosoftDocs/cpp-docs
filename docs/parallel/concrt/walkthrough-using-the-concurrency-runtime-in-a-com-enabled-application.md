@@ -25,7 +25,7 @@ This document demonstrates how to use the Concurrency Runtime in an application 
   
 - [Exception Handling](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)  
   
- For more information about COM, see [Component Object Model (COM)](https://msdn.microsoft.com/library/windows/desktop/ms680573).  
+ For more information about COM, see [Component Object Model (COM)](/windows/desktop/com/component-object-model--com--portal).  
   
 ## Managing the Lifetime of the COM Library  
  Although the use of COM with the Concurrency Runtime follows the same principles as any other concurrency mechanism, the following guidelines can help you use these libraries together effectively.  

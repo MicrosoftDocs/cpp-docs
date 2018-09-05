@@ -133,16 +133,16 @@ HWND Create(
  [in] Specifies the name of the window. The default value is NULL.  
   
  *dwStyle*  
- [in] The style of the window. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) in the Windows SDK.  
+ [in] The style of the window. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) in the Windows SDK.  
   
  *dwExStyle*  
- [in] The extended window style. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) in the Windows SDK.  
+ [in] The extended window style. This value is combined with the style provided by the traits class for the window. The default value gives the traits class full control over the style. For a list of possible values, see [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) in the Windows SDK.  
   
  *MenuOrID*  
  [in] For a child window, the window identifier. For a top-level window, a menu handle for the window. The default value is **0U**.  
   
  *lpCreateParam*  
- [in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680).  
+ [in] A pointer to window-creation data. For a full description, see the description for the final parameter to [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).  
   
 ### Return Value  
  If successful, the handle to the newly created window. Otherwise, NULL.  
@@ -239,7 +239,7 @@ WNDPROC m_pfnSuperWindowProc;
   
 |Type of window|Window procedure|  
 |--------------------|----------------------|  
-|A window based on a new window class, specified through the [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) macro.|The [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572) Win32 function.|  
+|A window based on a new window class, specified through the [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) macro.|The [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca) Win32 function.|  
 |A window based on a window class that modifies an existing class, specified through the [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) macro.|The existing window class's window procedure.|  
 |A subclassed window.|The subclassed window's original window procedure.|  
   

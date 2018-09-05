@@ -14,7 +14,7 @@ ms.workload: ["cplusplus"]
 # Changing List Control Styles
 You can change the window style of a list control ([CListCtrl](../mfc/reference/clistctrl-class.md)) at any time after you create it. By changing the window style, you change the kind of view the control uses. For example, to emulate the Explorer, you might supply menu items or toolbar buttons for switching the control between different views: icon view, list view, and so on.  
   
- For example, when the user selects your menu item, you could make a call to [GetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633584) to retrieve the current style of the control and then call [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) to reset the style. For more information, see [Using List View Controls](/windows/desktop/Controls/using-list-view-controls) in the Windows SDK.  
+ For example, when the user selects your menu item, you could make a call to [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) to retrieve the current style of the control and then call [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) to reset the style. For more information, see [Using List View Controls](/windows/desktop/Controls/using-list-view-controls) in the Windows SDK.  
   
  Available styles are listed in [Create](../mfc/reference/clistctrl-class.md#create). The styles **LVS_ICON**, **LVS_SMALLICON**, **LVS_LIST**, and **LVS_REPORT** designate the four list control views.  
   
