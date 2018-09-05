@@ -75,11 +75,14 @@ void assign(const std::experimental::filesystem::path& pval,
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*pval*|The stored file name path.|
-|*stat_arg*|The status of the stored file name.|
-|*symstat_arg*|The symbolic link status of the stored file name.|
+*pval*  
+The stored file name path.  
+
+*stat_arg*  
+The status of the stored file name.  
+
+*symstat_arg*  
+The symbolic link status of the stored file name.  
 
 ## <a name="directory_entry"></a> directory_entry
 
@@ -96,11 +99,14 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*pval*|The stored file name path.|
-|*stat_arg*|The status of the stored file name.|
-|*symstat_arg*|The symbolic link status of the stored file name.|
+*pval*  
+The stored file name path.  
+
+*stat_arg*  
+The status of the stored file name.  
+
+*symstat_arg*  
+The symbolic link status of the stored file name.  
 
 ## <a name="op_neq"></a> operator!=
 
@@ -112,9 +118,8 @@ bool operator!=(const directory_entry& right) const noexcept;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
+*right*  
+The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.  
 
 ## <a name="op_as"></a> operator=
 
@@ -127,9 +132,8 @@ directory_entry& operator=(directory_entry&&) noexcept = default;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being copied into the `directory_entry`.|
+*right*  
+The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.  
 
 ## <a name="op_eq"></a> operator==
 
@@ -141,9 +145,8 @@ bool operator==(const directory_entry& right) const noexcept;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
+*right*  
+The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.  
 
 ## <a name="op_lt"></a> operator&lt;
 
@@ -155,9 +158,8 @@ bool operator<(const directory_entry& right) const noexcept;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
+*right*  
+The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.  
 
 ## <a name="op_lteq"></a> operator&lt;=
 
@@ -169,9 +171,8 @@ bool operator&lt;=(const directory_entry& right) const noexcept;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
+*right*  
+The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.  
 
 ## <a name="op_gt"></a> operator&gt;
 
@@ -183,9 +184,8 @@ bool operator&gt;(const directory_entry& right) const noexcept;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
+*right*  
+The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.  
 
 ## <a name="op_gteq"></a> operator&gt;=
 
@@ -197,9 +197,8 @@ bool operator&gt;=(const directory_entry& right) const noexcept;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*right*|The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.|
+*right*  
+The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.  
 
 ## <a name="path_type"></a> operator const path_type&
 
@@ -230,11 +229,14 @@ void replace_filename(
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*pval*|The stored file name path.|
-|*stat_arg*|The status of the stored file name.|
-|*symstat_arg*|The symbolic link status of the stored file name.|
+*pval*  
+The stored file name path.  
+
+*stat_arg*  
+The status of the stored file name.  
+
+*symstat_arg*  
+The symbolic link status of the stored file name.  
 
 ## <a name="status"></a> status
 
@@ -251,9 +253,8 @@ file_status status(error_code& ec) const noexcept;
 
 ### Parameters
 
-|Parameter|Description|
-|-|-|
-|*ec*|The status error code.|
+*ec*  
+The status error code.  
 
 ## <a name="symlink_status"></a> symlink_status
 
@@ -264,9 +265,10 @@ file_status symlink_status() const;
 file_status symlink_status(error_code& ec) const noexcept;
 ```
 
-|Parameter|Description|
-|-|-|
-|*ec*|The status error code.|
+### Parameters
+
+*ec*  
+The status error code.  
 
 ## See also
 
