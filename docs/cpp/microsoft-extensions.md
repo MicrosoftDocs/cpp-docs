@@ -12,36 +12,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Microsoft Extensions
-*asm-statement*:  
- **__asm**  *assembly-instruction* **;**opt  
-  
- **__asm {**  *assembly-instruction-list*  **};**opt  
-  
- *assembly-instruction-list*:  
- *assembly-instruction* **;**opt  
-  
- *assembly-instruction* **;** *assembly-instruction-list* **;**opt  
-  
- *ms-modifier-list*:  
- *ms-modifier ms-modifier-list*opt  
-  
- *ms-modifier*:  
- **__cdecl**  
-  
- **__fastcall**  
-  
- **__stdcall**  
-  
- **__syscall** (reserved for future implementations)  
-  
- **__oldcall** (reserved for future implementations)  
-  
- **__unaligned** (reserved for future implementations)  
-  
- *based-modifier*  
-  
- *based-modifier*:  
- **__based (** *based-type* **)**  
-  
- *based-type*:  
- *name*  
+
+*asm-statement*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__asm**  *assembly-instruction* **;**<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__asm {**  *assembly-instruction-list*  **} ;**<sub>opt</sub>
+
+*assembly-instruction-list*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;**<sub>opt</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;** *assembly-instruction-list* **;**<sub>opt</sub>
+
+*ms-modifier-list*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ms-modifier* *ms-modifier-list*<sub>opt</sub>
+
+*ms-modifier*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__cdecl**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__fastcall**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__stdcall**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__syscall** (reserved for future implementations)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__oldcall** (reserved for future implementations)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__unaligned** (reserved for future implementations)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*based-modifier*
+
+*based-modifier*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__based (** *based-type* **)**
+
+*based-type*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*name*

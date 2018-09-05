@@ -11,54 +11,40 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Summary of Tokens
-*token*:  
- *keyword*  
+
+*token*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*keyword*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*constant*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*string-literal*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*operator*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*punctuator*
   
- *identifier*  
+*preprocessing-token*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*header-name*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*pp-number*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*character-constant*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*string-literal*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*operator punctuator*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;each non-whitespace character that cannot be one of the above  
   
- *constant*  
+*header-name*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**\<**  *path-spec*  **>**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**"**  *path spec*  **"**  
   
- *string-literal*  
+*path-spec*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Legal file path  
   
- *operator*  
-  
- `punctuator`  
-  
- *preprocessing-token*:  
- *header-name*  
-  
- *identifier*  
-  
- *pp-number*  
-  
- *character-constant*  
-  
- *string-literal*  
-  
- *operator punctuator*  
-  
- each nonwhite-space character that cannot be one of the above  
-  
- *header-name*:  
- **\<**  *path-spec*  **> "**  *path spec*  **"**  
-  
- *path-spec*:  
- Legal file path  
-  
- *pp-number*:  
- *digit*  
-  
- **.** *digit*  
-  
- *pp-number digit*  
-  
- *pp-number nondigit*  
-  
- *pp-number*  **e**  *sign*  
-  
- *pp-number*  **E**  *sign*  
-  
- *pp-number*  **.**  
-  
-## See Also  
- [Lexical Grammar](../c-language/lexical-grammar.md)
+*pp-number*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**.** *digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*pp-number* *digit* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*pp-number* *nondigit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*pp-number*  **e**  *sign*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*pp-number*  **E**  *sign*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*pp-number*  **.**
+
+## See Also
+
+[Lexical Grammar](../c-language/lexical-grammar.md)

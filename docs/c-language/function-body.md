@@ -12,20 +12,23 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Function Body
-A "function body" is a compound statement containing the statements that specify what the function does.  
-  
-## Syntax  
- *function-definition*:  
- *declaration-specifiers* opt*attribute-seq* opt*declarator declaration-list* opt*compound-statement*  
-  
- /\* *attribute-seq* is Microsoft Specific */  
-  
- *compound-statement*: /\* The function body \*/  
- **{**  *declaration-list* opt*statement-list* opt**}**  
-  
- Variables declared in a function body, "local variables," have **auto** storage class unless otherwise specified. When the function is called, storage is created for the local variables and local initializations are performed. Execution control passes to the first statement in *compound-statement* and continues until a `return` statement is executed or the end of the function body is encountered. Control then returns to the point at which the function was called.  
-  
- A `return` statement containing an expression must be executed if the function is to return a value. The return value of a function is undefined if no `return` statement is executed or if the `return` statement does not include an expression.  
-  
-## See Also  
- [C Function Definitions](../c-language/c-function-definitions.md)
+
+A *function body* is a compound statement containing the statements that specify what the function does.
+
+## Syntax
+
+*function-definition*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *attribute-seq*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
+
+/\* *attribute-seq* is Microsoft Specific \*/
+
+*compound-statement*: /\* The function body \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-list*<sub>opt</sub> *statement-list*<sub>opt</sub> **}**
+
+Variables declared in a function body, known as *local variables*, have **auto** storage class unless otherwise specified. When the function is called, storage is created for the local variables and local initializations are performed. Execution control passes to the first statement in *compound-statement* and continues until a **return** statement is executed or the end of the function body is encountered. Control then returns to the point at which the function was called.
+
+A **return** statement containing an expression must be executed if the function is to return a value. The return value of a function is undefined if no **return** statement is executed or if the **return** statement does not include an expression.
+
+## See Also
+
+[C Function Definitions](../c-language/c-function-definitions.md)

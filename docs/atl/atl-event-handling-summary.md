@@ -21,7 +21,7 @@ In general, handling COM events is a relatively simple process. There are three 
 -   Unadvise the event source when your object no longer needs to receive events.  
   
 ## Implementing the Interface  
- There are four main ways of implementing an interface using ATL.  
+There are four main ways of implementing an interface using ATL.  
   
 |Derive from|Suitable for Interface type|Requires you to implement all methods*|Requires a type library at run time|  
 |-----------------|---------------------------------|---------------------------------------------|-----------------------------------------|  
@@ -30,10 +30,10 @@ In general, handling COM events is a relatively simple process. There are three 
 |[IDispEventImpl](../atl/reference/idispeventimpl-class.md)|Dispinterface|No|Yes|  
 |[IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md)|Dispinterface|No|No|  
   
- \* When using ATL support classes, you are never required to implement the `IUnknown` or `IDispatch` methods manually.  
+\* When using ATL support classes, you are never required to implement the `IUnknown` or `IDispatch` methods manually.  
   
 ## Advising and Unadvising the Event Source  
- There are three main ways of advising and unadvising an event source using ATL.  
+There are three main ways of advising and unadvising an event source using ATL.  
   
 |Advise function|Unadvise function|Most suitable for use with|Requires you to keep track of a cookie|Comments|  
 |---------------------|-----------------------|--------------------------------|---------------------------------------------|--------------|
@@ -43,6 +43,6 @@ In general, handling COM events is a relatively simple process. There are three 
 |[CAxDialogImpl::AdviseSinkMap(TRUE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|[CAxDialogImpl::AdviseSinkMap(FALSE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|ActiveX controls in a dialog box|No|`CAxDialogImpl::AdviseSinkMap` advises and unadvises all ActiveX controls in the dialog resource. This is done automatically for you.|  
   
 ## See Also  
- [Event Handling](../atl/event-handling-and-atl.md)   
- [Supporting IDispEventImpl](../atl/supporting-idispeventimpl.md)
+[Event Handling](../atl/event-handling-and-atl.md)   
+[Supporting IDispEventImpl](../atl/supporting-idispeventimpl.md)
 

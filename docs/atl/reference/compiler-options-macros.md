@@ -30,14 +30,14 @@ These macros control specific compiler features.
 |[_ATL_SINGLE_THREADED](#_atl_single_threaded)|Define if all of your objects use the single threading model.|  
   
 ##  <a name="_atl_all_warnings"></a>  _ATL_ALL_WARNINGS  
- A symbol which enables errors in projects converted from previous versions of ATL.  
+A symbol which enables errors in projects converted from previous versions of ATL.  
   
 ```
 #define _ATL_ALL_WARNINGS
 ```  
   
 ### Remarks  
- Before Visual C++ .NET 2002, ATL disabled a lot of warnings and left them disabled so that they never showed up in user code. Specifically:  
+Before Visual C++ .NET 2002, ATL disabled a lot of warnings and left them disabled so that they never showed up in user code. Specifically:  
   
 -   C4127 conditional expression is constant  
   
@@ -53,137 +53,137 @@ These macros control specific compiler features.
   
 -   C4702 unreachable code  
   
- In projects converted from previous versions, these warnings are still disabled by the libraries headers.  
+In projects converted from previous versions, these warnings are still disabled by the libraries headers.  
   
- By adding the following line to the stdafx.h file before including libraries headers, this behavior can be changed.  
+By adding the following line to the stdafx.h file before including libraries headers, this behavior can be changed.  
   
- [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]  
+[!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]  
   
- If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they are not disabled globally (or if the user explicitly disables individual warnings, not to enable them).  
+If this `#define` is added, the ATL headers are careful to preserve the state of these warnings so that they are not disabled globally (or if the user explicitly disables individual warnings, not to enable them).  
   
- New projects have this `#define` set in stdafx.h by default.  
+New projects have this `#define` set in stdafx.h by default.  
   
 ##  <a name="_atl_apartment_threaded"></a>  _ATL_APARTMENT_THREADED  
- Define if one or more of your objects use apartment threading.  
+Define if one or more of your objects use apartment threading.  
   
 ```
 _ATL_APARTMENT_THREADED
 ```  
   
 ### Remarks  
- Specifies apartment threading. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.  
+Specifies apartment threading. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.  
   
 ##  <a name="_atl_cstring_explicit_constructors"></a>  _ATL_CSTRING_EXPLICIT_CONSTRUCTORS  
- Makes certain `CString` constructors explicit, preventing any unintentional conversions.  
+Makes certain `CString` constructors explicit, preventing any unintentional conversions.  
   
 ```
 _ATL_CSTRING_EXPLICIT_CONSTRUCTORS
 ```  
   
 ### Remarks  
- When this is defined, all CString constructors that take a single parameter are compiled with the explicit keyword, which prevents implicit conversions of input arguments. This means for example, that when _UNICODE is defined, if you attempt use a char* string as a CString constructor argument, a compiler error will result. Use this macro in situations where you need to prevent implicit conversions between narrow and wide string types.  
+When this is defined, all CString constructors that take a single parameter are compiled with the explicit keyword, which prevents implicit conversions of input arguments. This means for example, that when _UNICODE is defined, if you attempt use a char* string as a CString constructor argument, a compiler error will result. Use this macro in situations where you need to prevent implicit conversions between narrow and wide string types.  
   
- By using the _T macro on all constructor string arguments, you can define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS and avoid compile errors regardless of whether _UNICODE is defined.  
+By using the _T macro on all constructor string arguments, you can define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS and avoid compile errors regardless of whether _UNICODE is defined.  
   
 ##  <a name="_atl_enable_ptm_warning"></a>  _ATL_ENABLE_PTM_WARNING  
- Define this macro in order to force the use of ANSI C++ standard-compliant syntax for pointer to member functions. Using this macro will cause the C4867 compiler error to be generated when non-standard syntax is used to initialize a pointer to a member function.  
+Define this macro in order to force the use of ANSI C++ standard-compliant syntax for pointer to member functions. Using this macro will cause the C4867 compiler error to be generated when non-standard syntax is used to initialize a pointer to a member function.  
   
 ```
 #define _ATL_ENABLE_PTM_WARNING
 ```  
   
 ### Remarks  
- The ATL and MFC libraries have been changed to match the Visual C++ compiler's improved standard C++ compliance. According to the ANSI C++ standard, the syntax of a pointer to a class member function should be `&CMyClass::MyFunc`.  
+The ATL and MFC libraries have been changed to match the Visual C++ compiler's improved standard C++ compliance. According to the ANSI C++ standard, the syntax of a pointer to a class member function should be `&CMyClass::MyFunc`.  
   
- When [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should be C++ standard compliant.  
+When [_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) is not defined (the default case), ATL/MFC disables the C4867 error in macro maps (notably message maps) so that code that was created in earlier versions can continue to build as before. If you define **_ATL_ENABLE_PTM_WARNING**, your code should be C++ standard compliant.  
   
- However, the non-standard form has been deprecated, so you need to move existing code to C++ standard compliant syntax. For example, the following:  
+However, the non-standard form has been deprecated, so you need to move existing code to C++ standard compliant syntax. For example, the following:  
   
- [!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/cpp/compiler-options-macros_2.cpp)]  
+[!code-cpp[NVC_MFCListView#14](../../atl/reference/codesnippet/cpp/compiler-options-macros_2.cpp)]  
   
- Should be changed to:  
+Should be changed to:  
   
- [!code-cpp[NVC_MFCListView#11](../../atl/reference/codesnippet/cpp/compiler-options-macros_3.cpp)]  
+[!code-cpp[NVC_MFCListView#11](../../atl/reference/codesnippet/cpp/compiler-options-macros_3.cpp)]  
   
- Note that for map macros that add the '&' character, you should not add it again in your code.  
+Note that for map macros that add the '&' character, you should not add it again in your code.  
   
 ##  <a name="_atl_free_threaded"></a>  _ATL_FREE_THREADED  
- Define if one or more of your objects use free or neutral threading.  
+Define if one or more of your objects use free or neutral threading.  
   
 ```
 _ATL_FREE_THREADED
 ```  
   
 ### Remarks  
- Specifies free threading. Free threading is equivalent to a multithread apartment model. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.  
+Specifies free threading. Free threading is equivalent to a multithread apartment model. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.  
   
 ##  <a name="_atl_multi_threaded"></a>  _ATL_MULTI_THREADED  
- A symbol that indicates the project will have objects that are marked as Both, Free or Neutral.  
+A symbol that indicates the project will have objects that are marked as Both, Free or Neutral.  
   
 ```
 _ATL_MULTI_THREADED
 ```  
   
 ### Remarks  
- If this symbol is defined, ATL will pull in code that will correctly synchronize access to global data. New code should use the equivalent macro [_ATL_FREE_THREADED](#_atl_free_threaded) instead.  
+If this symbol is defined, ATL will pull in code that will correctly synchronize access to global data. New code should use the equivalent macro [_ATL_FREE_THREADED](#_atl_free_threaded) instead.  
   
 ##  <a name="_atl_no_automatic_namespace"></a>  _ATL_NO_AUTOMATIC_NAMESPACE  
- A symbol which prevents the default use of namespace as ATL.  
+A symbol which prevents the default use of namespace as ATL.  
   
 ```
 _ATL_NO_AUTOMATIC_NAMESPACE
 ```  
   
 ### Remarks  
- If this symbol is not defined, including atlbase.h will perform **using namespace ATL** by default, which may lead to naming conflicts. To prevent this, define this symbol.  
+If this symbol is not defined, including atlbase.h will perform **using namespace ATL** by default, which may lead to naming conflicts. To prevent this, define this symbol.  
   
 ##  <a name="_atl_no_com_support"></a>  _ATL_NO_COM_SUPPORT  
- A symbol which prevents COM-related code from being compiled with your project.  
+A symbol which prevents COM-related code from being compiled with your project.  
   
 ```
 _ATL_NO_COM_SUPPORT
 ```  
   
 ##  <a name="atl_no_vtable"></a>  ATL_NO_VTABLE  
- A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.  
+A symbol that prevents the vtable pointer from being initialized in the class's constructor and destructor.  
   
 ```
 ATL_NO_VTABLE
 ```  
   
 ### Remarks  
- If the vtable pointer is prevented from being initialized in the class's constructor and destructor, the linker can eliminate the vtable and all of the functions to which it points. Expands to **__declspec(novtable)**.  
+If the vtable pointer is prevented from being initialized in the class's constructor and destructor, the linker can eliminate the vtable and all of the functions to which it points. Expands to **__declspec(novtable)**.  
   
 ### Example  
- [!code-cpp[NVC_ATL_COM#53](../../atl/codesnippet/cpp/compiler-options-macros_4.h)]  
+[!code-cpp[NVC_ATL_COM#53](../../atl/codesnippet/cpp/compiler-options-macros_4.h)]  
   
 ##  <a name="atl_noinline"></a>  ATL_NOINLINE  
- A symbol that indicates a function should not be inlined.  
+A symbol that indicates a function should not be inlined.  
   
 ```
     ATL_NOINLINE inline
-    myfunction
- {
-...
- }
+    myfunction()
+    {
+    ...
+    }
 ```  
   
 ### Parameters  
- *myfunction*  
- The function that should not be inlined.  
+*myfunction*  
+The function that should not be inlined.  
   
 ### Remarks  
- Use this symbol if you want to ensure a function does not get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to **__declspec(noinline)**.  
+Use this symbol if you want to ensure a function does not get inlined by the compiler, even though it must be declared as inline so that it can be placed in a header file. Expands to **__declspec(noinline)**.  
   
 ##  <a name="_atl_single_threaded"></a>  _ATL_SINGLE_THREADED  
- Define if all of your objects use the single threading model  
+Define if all of your objects use the single threading model  
   
 ```
 _ATL_SINGLE_THREADED
 ```  
   
 ### Remarks  
- Specifies that the object always runs in the primary COM thread. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.  
+Specifies that the object always runs in the primary COM thread. See [Specifying the Project's Threading Model](../../atl/specifying-the-threading-model-for-a-project-atl.md) for other threading options, and [Options, ATL Simple Object Wizard](../../atl/reference/options-atl-simple-object-wizard.md) for a description of the threading models available for an ATL object.  
   
 ## See Also  
- [Macros](../../atl/reference/atl-macros.md)
+[Macros](../../atl/reference/atl-macros.md)

@@ -14,28 +14,24 @@ ms.workload: ["cplusplus"]
 # Definitions and Conventions
 Terminals are endpoints in a syntax definition. No other resolution is possible. Terminals include the set of reserved words and user-defined identifiers.  
   
- Nonterminals are placeholders in the syntax and are defined elsewhere in this syntax summary. Definitions can be recursive.  
+Nonterminals are placeholders in the syntax and are defined elsewhere in this syntax summary. Definitions can be recursive.  
   
- An optional component is indicated by the subscripted opt. For example,  
+An optional component is indicated by the subscripted <sub>opt</sub>. For example,  
   
-```  
+> **{** *expression*<sub>opt</sub> **}**
   
-{  
-expression <SUB>opt</SUB> }  
-```  
+indicates an optional expression enclosed in braces.  
   
- indicates an optional expression enclosed in braces.  
-  
- The syntax conventions use different font attributes for different components of the syntax. The symbols and fonts are as follows:  
+The syntax conventions use different font attributes for different components of the syntax. The symbols and fonts are as follows:  
   
 |Attribute|Description|  
 |---------------|-----------------|  
 |*nonterminal*|Italic type indicates nonterminals.|  
 |**const**|Terminals in bold type are literal reserved words and symbols that must be entered as shown. Characters in this context are always case sensitive.|  
-|opt|Nonterminals followed by opt are always optional.|  
+|<sub>opt</sub>|Nonterminals followed by <sub>opt</sub> are always optional.|  
 |default typeface|Characters in the set described or listed in this typeface can be used as terminals in C statements.|  
   
- A colon (**:**) following a nonterminal introduces its definition. Alternative definitions are listed on separate lines, except when prefaced with the words "one of."  
+A colon (**:**) following a nonterminal introduces its definition. Alternative definitions are listed on separate lines, except when prefaced with the words "one of."  
   
 ## See Also  
- [C Language Syntax Summary](../c-language/c-language-syntax-summary.md)
+[C Language Syntax Summary](../c-language/c-language-syntax-summary.md)

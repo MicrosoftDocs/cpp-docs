@@ -12,18 +12,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # External Definitions
-*translation-unit*:  
- *external-declaration*  
+
+*translation-unit*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*external-declaration* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*translation-unit* *external-declaration*  
   
- *translation-unit external-declaration*  
-  
- *external-declaration*:       /\* Allowed only at external (file) scope \*/  
- *function-definition*  
-  
- `declaration`  
-  
- *function-definition*:         /\* Declarator here is the function declarator \*/  
- *declaration-specifiers* opt*declarator declaration-list* opt*compound-statement*  
-  
-## See Also  
- [Phrase Structure Grammar](../c-language/phrase-structure-grammar.md)
+*external-declaration*: /\* Allowed only at external (file) scope \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*function-definition*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*declaration*
+
+*function-definition*: /\* Declarator here is the function declarator \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*declaration-specifiers*<sub>opt</sub> *declarator* *declaration-list*<sub>opt</sub> *compound-statement*
+
+## See Also
+
+[Phrase Structure Grammar](../c-language/phrase-structure-grammar.md)

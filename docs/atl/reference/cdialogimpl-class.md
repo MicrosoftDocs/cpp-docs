@@ -18,22 +18,20 @@ This class provides methods for creating a modal or modeless dialog box.
 > [!IMPORTANT]
 >  This class and its members cannot be used in applications that execute in the Windows Runtime.  
   
-## Syntax  
-  
-```  
- 
-template <class T,  
-    class TBase = CWindow>  
-    class ATL_NO_VTABLE CDialogImpl : public CDialogImplBaseT<TBase>  
- 
-```  
-  
+## Syntax
+
+```
+template <class T,
+    class TBase = CWindow>
+    class ATL_NO_VTABLE CDialogImpl : public CDialogImplBaseT<TBase>
+```
+
 #### Parameters  
- *T*  
- Your class, derived from `CDialogImpl`.  
+*T*  
+Your class, derived from `CDialogImpl`.  
   
- *TBase*  
- The base class of your new class. The default base class is [CWindow](../../atl/reference/cwindow-class.md).  
+*TBase*  
+The base class of your new class. The default base class is [CWindow](../../atl/reference/cwindow-class.md).  
   
 ## Members  
   
@@ -62,18 +60,18 @@ template <class T,
 |[StartDialogProc](#startdialogproc)|Called when the first message is received to process messages sent to the dialog box.|  
   
 ## Remarks  
- With `CDialogImpl` you can create a modal or modeless dialog box. `CDialogImpl` provides the dialog box procedure, which uses the default message map to direct messages to the appropriate handlers.  
+With `CDialogImpl` you can create a modal or modeless dialog box. `CDialogImpl` provides the dialog box procedure, which uses the default message map to direct messages to the appropriate handlers.  
   
- The base class destructor `~CWindowImplRoot` ensures that the window is gone before destroying the object.  
+The base class destructor `~CWindowImplRoot` ensures that the window is gone before destroying the object.  
   
- `CDialogImpl` derives from `CDialogImplBaseT`, which in turn derives from `CWindowImplRoot`.  
+`CDialogImpl` derives from `CDialogImplBaseT`, which in turn derives from `CWindowImplRoot`.  
   
 > [!NOTE]
 >  Your class must define an `IDD` member that specifies the dialog template resource ID. For example, the ATL Project Wizard automatically adds the following line to your class:  
   
- [!code-cpp[NVC_ATL_Windowing#41](../../atl/codesnippet/cpp/cdialogimpl-class_1.h)]  
+[!code-cpp[NVC_ATL_Windowing#41](../../atl/codesnippet/cpp/cdialogimpl-class_1.h)]  
   
- where `MyDlg` is the **Short name** entered in the wizard's **Names** page.  
+where `MyDlg` is the **Short name** entered in the wizard's **Names** page.  
   
 |For more information about|See|  
 |--------------------------------|---------|  
@@ -83,10 +81,10 @@ template <class T,
 |Dialog boxes|[Dialog Boxes](https://msdn.microsoft.com/library/windows/desktop/ms632588) and subsequent topics in the Windows SDK|  
   
 ## Requirements  
- **Header:** atlwin.h  
+**Header:** atlwin.h  
   
 ##  <a name="create"></a>  CDialogImpl::Create  
- Creates a modeless dialog box.  
+Creates a modeless dialog box.  
   
 ```  
 HWND Create(
@@ -100,74 +98,68 @@ HWND Create(
 ```  
   
 ### Parameters  
- *hWndParent*  
- [in] The handle to the owner window.  
+*hWndParent*  
+[in] The handle to the owner window.  
   
- **RECT&** *rect*  
- [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the dialog's size and position.  
+**RECT&** *rect*  
+[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure specifying the dialog's size and position.  
   
- *dwInitParam*  
- [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
+*dwInitParam*  
+[in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
   
 ### Return Value  
- The handle to the newly created dialog box.  
+The handle to the newly created dialog box.  
   
 ### Remarks  
- This dialog box is automatically attached to the `CDialogImpl` object. To create a modal dialog box, call [DoModal](#domodal). The second override above is used only with [CComControl](../../atl/reference/ccomcontrol-class.md).  
+This dialog box is automatically attached to the `CDialogImpl` object. To create a modal dialog box, call [DoModal](#domodal). The second override above is used only with [CComControl](../../atl/reference/ccomcontrol-class.md).  
   
 ##  <a name="destroywindow"></a>  CDialogImpl::DestroyWindow  
- Destroys a modeless dialog box.  
-  
-```  
- 
-BOOL DestroyWindow();
+Destroys a modeless dialog box.  
 
- 
-```  
-  
+```
+BOOL DestroyWindow();
+```
+
 ### Return Value  
- TRUE if the dialog box was successfully destroyed; otherwise FALSE.  
+TRUE if the dialog box was successfully destroyed; otherwise FALSE.  
   
 ### Remarks  
- Returns TRUE if the dialog box was successfully destroyed; otherwise FALSE.  
+Returns TRUE if the dialog box was successfully destroyed; otherwise FALSE.  
   
 ##  <a name="dialogproc"></a>  CDialogImpl::DialogProc  
- This static function implements the dialog box procedure.  
-  
-```  
- 
+This static function implements the dialog box procedure.  
+
+```
 static LRESULT CALLBACK DialogProc(
     HWND hWnd,  
     UINT uMsg,  
     WPARAM wParam,  
     LPARAM lParam);
+```
 
- 
-```  
-  
 ### Parameters  
- *hWnd*  
- [in] The handle to the dialog box.  
+*hWnd*  
+[in] The handle to the dialog box.  
   
- *uMsg*  
- [in] The message sent to the dialog box.  
+*uMsg*  
+[in] The message sent to the dialog box.  
   
- *wParam*  
- [in] Additional message-specific information.  
+*wParam*  
+[in] Additional message-specific information.  
   
- *lParam*  
- [in] Additional message-specific information.  
+*lParam*  
+[in] Additional message-specific information.  
   
 ### Return Value  
- TRUE if the message is processed; otherwise, FALSE.  
+TRUE if the message is processed; otherwise, FALSE.  
   
 ### Remarks  
- `DialogProc` uses the default message map to direct messages to the appropriate handlers.  
+`DialogProc` uses the default message map to direct messages to the appropriate handlers.  
   
- You can override `DialogProc` to provide a different mechanism for handling messages.  
+You can override `DialogProc` to provide a different mechanism for handling messages.  
   
 ##  <a name="domodal"></a>  CDialogImpl::DoModal  
- Creates a modal dialog box.  
+Creates a modal dialog box.  
   
 ```   
 INT_PTR DoModal(  
@@ -176,86 +168,86 @@ INT_PTR DoModal(
 ```  
   
 ### Parameters  
- *hWndParent*  
- [in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.  
+*hWndParent*  
+[in] The handle to the owner window. The default value is the return value of the [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 function.  
   
- *dwInitParam*  
- [in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
+*dwInitParam*  
+[in] Specifies the value to pass to the dialog box in the *lParam* parameter of the WM_INITDIALOG message.  
   
 ### Return Value  
- If successful, the value of the *nRetCode* parameter specified in the call to [EndDialog](#enddialog). Otherwise, -1.  
+If successful, the value of the *nRetCode* parameter specified in the call to [EndDialog](#enddialog). Otherwise, -1.  
   
 ### Remarks  
- This dialog box is automatically attached to the `CDialogImpl` object.  
+This dialog box is automatically attached to the `CDialogImpl` object.  
   
- To create a modeless dialog box, call [Create](#create).  
+To create a modeless dialog box, call [Create](#create).  
   
 ##  <a name="enddialog"></a>  CDialogImpl::EndDialog  
- Destroys a modal dialog box.  
+Destroys a modal dialog box.  
   
 ```   
 BOOL EndDialog(int nRetCode); 
 ```  
   
 ### Parameters  
- *nRetCode*  
- [in] The value to be returned by [CDialogImpl::DoModal](#domodal).  
+*nRetCode*  
+[in] The value to be returned by [CDialogImpl::DoModal](#domodal).  
   
 ### Return Value  
- TRUE if the dialog box is destroyed; otherwise, FALSE.  
+TRUE if the dialog box is destroyed; otherwise, FALSE.  
   
 ### Remarks  
- `EndDialog` must be called through the dialog procedure. After the dialog box is destroyed, Windows uses the value of *nRetCode* as the return value for `DoModal`, which created the dialog box.  
+`EndDialog` must be called through the dialog procedure. After the dialog box is destroyed, Windows uses the value of *nRetCode* as the return value for `DoModal`, which created the dialog box.  
   
 > [!NOTE]
 >  Do not call `EndDialog` to destroy a modeless dialog box. Call [CWindow::DestroyWindow](../../atl/reference/cwindow-class.md#destroywindow) instead.  
   
 ##  <a name="getdialogproc"></a>  CDialogImpl::GetDialogProc  
- Returns `DialogProc`, the current dialog box procedure.  
+Returns `DialogProc`, the current dialog box procedure.  
   
 ```   
 virtual WNDPROC GetDialogProc(); 
 ```  
   
 ### Return Value  
- The current dialog box procedure.  
+The current dialog box procedure.  
   
 ### Remarks  
- Override this method to replace the dialog procedure with your own.  
+Override this method to replace the dialog procedure with your own.  
   
 ##  <a name="mapdialogrect"></a>  CDialogImpl::MapDialogRect  
- Converts (maps) the dialog-box units of the specified rectangle to screen units (pixels).  
+Converts (maps) the dialog-box units of the specified rectangle to screen units (pixels).  
   
 ```   
 BOOL MapDialogRect(LPRECT lpRect); 
 ```  
   
 ### Parameters  
- *lpRect*  
- Points to a `CRect` object or [RECT](../../mfc/reference/rect-structure1.md) structure that is to receive the client coordinates of the update that encloses the update region.  
+*lpRect*  
+Points to a `CRect` object or [RECT](../../mfc/reference/rect-structure1.md) structure that is to receive the client coordinates of the update that encloses the update region.  
   
 ### Return Value  
- Nonzero if the update succeeds; 0 if the update fails. To get extended error information, call `GetLastError`.  
+Nonzero if the update succeeds; 0 if the update fails. To get extended error information, call `GetLastError`.  
   
 ### Remarks  
- The function replaces the coordinates in the specified `RECT` structure with the converted coordinates, which allows the structure to be used to create a dialog box or position a control within a dialog box.  
+The function replaces the coordinates in the specified `RECT` structure with the converted coordinates, which allows the structure to be used to create a dialog box or position a control within a dialog box.  
   
 ##  <a name="onfinalmessage"></a>  CDialogImpl::OnFinalMessage  
- Called after receiving the last message (typically `WM_NCDESTROY`).  
+Called after receiving the last message (typically `WM_NCDESTROY`).  
   
 ```   
 virtual void OnFinalMessage(HWND hWnd); 
 ```  
   
 ### Parameters  
- *hWnd*  
- [in] A handle to the window being destroyed.  
+*hWnd*  
+[in] A handle to the window being destroyed.  
   
 ### Remarks  
- Note that if you want to automatically delete your object upon the window destruction, you can call **delete this;** here.  
+Note that if you want to automatically delete your object upon the window destruction, you can call **delete this;** here.  
   
 ##  <a name="startdialogproc"></a>  CDialogImpl::StartDialogProc  
- Called only once, when the first message is received, to process messages sent to the dialog box.  
+Called only once, when the first message is received, to process messages sent to the dialog box.  
   
 ```   
 static LRESULT CALLBACK StartDialogProc(
@@ -266,24 +258,24 @@ static LRESULT CALLBACK StartDialogProc(
 ```  
   
 ### Parameters  
- *hWnd*  
- [in] The handle to the dialog box.  
+*hWnd*  
+[in] The handle to the dialog box.  
   
- *uMsg*  
- [in] The message sent to the dialog box.  
+*uMsg*  
+[in] The message sent to the dialog box.  
   
- *wParam*  
- [in] Additional message-specific information.  
+*wParam*  
+[in] Additional message-specific information.  
   
- *lParam*  
- [in] Additional message-specific information.  
+*lParam*  
+[in] Additional message-specific information.  
   
 ### Return Value  
- The window procedure.  
+The window procedure.  
   
 ### Remarks  
- After the initial call to `StartDialogProc`, `DialogProc` is set as a dialog procedure, and further calls go there.  
+After the initial call to `StartDialogProc`, `DialogProc` is set as a dialog procedure, and further calls go there.  
   
 ## See Also  
- [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
- [Class Overview](../../atl/atl-class-overview.md)
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
+[Class Overview](../../atl/atl-class-overview.md)

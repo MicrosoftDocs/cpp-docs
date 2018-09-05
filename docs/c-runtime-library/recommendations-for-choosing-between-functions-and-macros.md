@@ -17,7 +17,7 @@ Most Microsoft run-time library routines are compiled or assembled functions, bu
   
 -   Enclose the routine name in parentheses.  
   
-    ```  
+    ```C
     #include <ctype.h>  
     a = _toupper(a);    // Use macro version of toupper.  
     a = (_toupper)(a);  // Force compiler to use   
@@ -26,12 +26,12 @@ Most Microsoft run-time library routines are compiled or assembled functions, bu
   
 -   "Undefine" the macro definition with the `#undef` directive:  
   
-    ```  
+    ```C
     #include <ctype.h>  
     #undef _toupper  
     ```  
   
- If you need to choose between a function and a macro implementation of a library routine, consider the following trade-offs:  
+If you need to choose between a function and a macro implementation of a library routine, consider the following trade-offs:  
   
 -   **Speed versus size** The main benefit of using macros is faster execution time. During preprocessing, a macro is expanded (replaced by its definition) inline each time it is used. A function definition occurs only once regardless of how many times it is called. Macros may increase code size but do not have the overhead associated with function calls.  
   
@@ -40,4 +40,4 @@ Most Microsoft run-time library routines are compiled or assembled functions, bu
 -   **Type-checking** When you declare a function, the compiler can check the argument types. Because you cannot declare a macro, the compiler cannot check macro argument types; although it can check the number of arguments you pass to a macro.  
   
 ## See Also  
- [CRT Library Features](../c-runtime-library/crt-library-features.md)
+[CRT Library Features](../c-runtime-library/crt-library-features.md)

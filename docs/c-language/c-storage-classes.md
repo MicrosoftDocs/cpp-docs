@@ -21,13 +21,13 @@ C provides the following storage-class specifiers:
 
 ## Syntax
 
-*storage-class-specifier*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**auto**  
-&nbsp;&nbsp;&nbsp;&nbsp;**register**  
-&nbsp;&nbsp;&nbsp;&nbsp;**static**  
-&nbsp;&nbsp;&nbsp;&nbsp;**extern**  
-&nbsp;&nbsp;&nbsp;&nbsp;**typedef**  
-&nbsp;&nbsp;&nbsp;&nbsp;**__declspec** **(** *extended-decl-modifier-seq* **)** /* Microsoft Specific \*/
+*storage-class-specifier*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**auto**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**register**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**static**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**extern**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**typedef**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *extended-decl-modifier-seq* **)** /\* Microsoft Specific \*/
 
 Except for `__declspec`, you can use only one *storage-class-specifier* in the *declaration-specifier* in a declaration. If no storage-class specification is made, declarations within a block create automatic objects.
 
