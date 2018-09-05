@@ -1,7 +1,7 @@
 ---
 title: "Creating a Makefile Project | Microsoft Docs"
 ms.custom: ""
-ms.date: "02/28/2018"
+ms.date: "09/05/2018"
 ms.technology: ["cpp-ide"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.makefile.project"]
@@ -13,6 +13,10 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Creating a Makefile Project
+
+A *makefile* is a text file that contains instructions for how to compile and link (or *build*) a set of source code files. A *make* program reads the makefile and invokes a compiler, linker and possibly other programs to make an executable file. Microsoft's implementation of the *make* program is called NMAKE.
+
+Makefiles are an older technology and are generally not considered suitable for modern software projects. In Visual Studio, *MSBuild* is the modern successor to *make*. CMake, a widely-used modern build system, is also supported. In fact, you can use Visual Studio with any modern build system for C++.
 
 If you have an existing source code project that you build from the command line by using a makefile, the Visual Studio development environment has several ways of turning it into a project that can take full advantage of Visual Studio IDE features. This article describes how to create a Makefile Project in Visual Studio that uses your existing makefile to build your code in the IDE. Alternatively, you can use the **Create New Project from Existing Code Files** wizard to create a native MSBuild project from your source code. For more information, see [How to: Create a C++ Project from Existing Code](how-to-create-a-cpp-project-from-existing-code.md). Starting in Visual Studio 2017, you can also use the **Open Folder** feature, which can use several existing build systems as if they were native Visual Studio projects. For more information, see [Open Folder projects in Visual C++](non-msbuild-projects.md).
 
