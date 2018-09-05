@@ -76,11 +76,11 @@ class CUrl
 
 `CUrl` allows you to manipulate the fields of a URL, such as the path or port number. `CUrl` understands URLs of the following form:
 
-\<Scheme>://\<UserName>:\<Password>@\<HostName>:\<PortNumber>/\<UrlPath>\<ExtraInfo>
+\<Scheme>://\<UserName>:\<Password>\@\<HostName>:\<PortNumber>/\<UrlPath>\<ExtraInfo>
 
 (Some fields are optional.) For example, consider this URL:
 
-http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents
+`http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents`
 
 [CUrl::CrackUrl](#crackurl) parses it as follows:
 
@@ -90,7 +90,7 @@ http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents
 
 - Password: "secret"
 
-- HostName: "www.microsoft.com"
+- HostName: "`www.microsoft.com`"
 
 - PortNumber: 80
 
@@ -195,7 +195,7 @@ Returns TRUE on success, FALSE on failure.
 
 This method appends its individual fields in order to construct the complete URL string using the following format:
 
-**\<scheme>://\<user>:\<pass>@\<domain>:\<port>\<path>\<extra>**
+**\<scheme>://\<user>:\<pass>\@\<domain>:\<port>\<path>\<extra>**
 
 When calling this method, the *pdwMaxLength* parameter should initially contain the maximum length of the string buffer referenced by the *lpszUrl* parameter. The value of the *pdwMaxLength* parameter will be updated with the actual length of the URL string.
 
