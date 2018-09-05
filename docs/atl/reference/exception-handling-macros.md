@@ -13,50 +13,60 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Exception Handling Macros
-These macros provide support for exception handling.  
-  
-|||  
-|-|-|  
-|[_ATLCATCH](#_atlcatch)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|  
-|[_ATLCATCHALL](#_atlcatchall)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|  
-|[_ATLTRY](#_atltry)|Marks a guarded code section where an error could possibly occur.|  
-  
+
+These macros provide support for exception handling.
+
+|||
+|-|-|
+|[_ATLCATCH](#_atlcatch)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|
+|[_ATLCATCHALL](#_atlcatchall)|Statement(s) to handle errors occurring in the associated `_ATLTRY`.|
+|[_ATLTRY](#_atltry)|Marks a guarded code section where an error could possibly occur.|
+
 ## Requirements:
+
 **Header:** atldef.h
 
-##  <a name="_atlcatch"></a>  _ATLCATCH  
- Statement(s) to handle errors occurring in the associated `_ATLTRY`.  
-  
+##  <a name="_atlcatch"></a>  _ATLCATCH
+
+Statement(s) to handle errors occurring in the associated `_ATLTRY`.
+
 ```
 _ATLCATCH(e)
-```  
-  
-### Parameters  
- *e*  
- The exception to catch.  
-  
-### Remarks  
- Used in conjunction with `_ATLTRY`. Resolves to C++ [catch(CAtlException e)](../../cpp/try-throw-and-catch-statements-cpp.md) for handling a given type of C++ exceptions.  
-  
-##  <a name="_atlcatchall"></a>  _ATLCATCHALL  
- Statement(s) to handle errors occurring in the associated `_ATLTRY`.  
-  
+```
+
+### Parameters
+
+*e*  
+The exception to catch.
+
+### Remarks
+
+Used in conjunction with `_ATLTRY`. Resolves to C++ [catch(CAtlException e)](../../cpp/try-throw-and-catch-statements-cpp.md) for handling a given type of C++ exceptions.
+
+##  <a name="_atlcatchall"></a>  _ATLCATCHALL
+
+Statement(s) to handle errors occurring in the associated `_ATLTRY`.
+
 ```
 _ATLCATCHALL
-```  
-  
-### Remarks  
- Used in conjunction with `_ATLTRY`. Resolves to C++ [catch(...)](../../cpp/try-throw-and-catch-statements-cpp.md) for handling all types of C++ exceptions.  
-  
-##  <a name="_atltry"></a>  _ATLTRY  
- Marks a guarded code section where an error could possibly occur.  
-  
+```
+
+### Remarks
+
+Used in conjunction with `_ATLTRY`. Resolves to C++ [catch(...)](../../cpp/try-throw-and-catch-statements-cpp.md) for handling all types of C++ exceptions.
+
+##  <a name="_atltry"></a>  _ATLTRY
+
+Marks a guarded code section where an error could possibly occur.
+
 ```
 _ATLTRY
-```  
-  
-### Remarks  
- Used in conjunction with [_ATLCATCH](#_atlcatch) or [_ATLCATCHALL](#_atlcatchall). Resolves to the C++ symbol [try](../../cpp/try-throw-and-catch-statements-cpp.md).  
-  
-## See Also  
- [Macros](../../atl/reference/atl-macros.md)
+```
+
+### Remarks
+
+Used in conjunction with [_ATLCATCH](#_atlcatch) or [_ATLCATCHALL](#_atlcatchall). Resolves to the C++ symbol [try](../../cpp/try-throw-and-catch-statements-cpp.md).
+
+## See Also
+
+[Macros](../../atl/reference/atl-macros.md)

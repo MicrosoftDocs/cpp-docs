@@ -1,7 +1,7 @@
 ---
 title: "Preprocessor Grammar | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/04/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 dev_langs: ["C++"]
@@ -12,90 +12,78 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # Preprocessor Grammar
-**#define**  *identifier* *token-string*opt  
-  
-*#* **define**  *identifier*[**(** *identifier*opt**,** *...* **,** *identifier*opt **)**] *token-string*opt  
-  
-**defined(**  *identifier* **)**  
-  
-**defined**  *identifier*  
-  
-`#include` **"***path-spec***"**  
-  
-`#include` **\<***path-spec***>**  
-  
-**#line**  *digit-sequence*  **"** *filename* **"**opt  
-  
-*#* **undef**  *identifier*  
-  
-**#error**  *token-string*  
-  
-**#pragma**  *token-string*  
-  
-*conditional* :  
-*if-part elif-parts*opt*else-part*opt*endif-line*  
-  
-*if-part* :  
-*if-linetext*  
-  
-*if-line* :  
-**#if**  *constant-expression*  
-  
-**#ifdef**  *identifier*  
-  
-**#ifndef**  *identifier*  
-  
-*elif-parts* :  
-*elif-line text*  
-  
-*elif-parts elif-line text*  
-  
-*elif-line* :  
-**#elif**  *constant-expression*  
-  
-*else-part* :  
-*else-linetext*  
-  
-*else-line* :  
-`#else`  
-  
-*endif-line* :  
-`#endif`  
-  
-*digit-sequence* :  
-*digit*  
-  
-*digit-sequence digit*  
-  
-*digit* : one of  
-**0 1 2 3 4 5 6 7 8 9**  
-  
-*token-string* :  
-String of tokens  
-  
-*token* :  
-*keyword*  
-  
-*identifier*  
-  
-*constant*  
-  
-*operator*  
-  
-`punctuator`  
-  
-*filename* :  
-Legal operating system filename  
-  
-*path-spec* :  
-Legal file path  
-  
-*text* :  
-Any sequence of text  
-  
+
+*control-line*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#define** *identifier* *token-string*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#define** <em>identifier</em>**(** *identifier*<sub>opt</sub> **,** ... **,** *identifier*<sub>opt</sub> **)** *token-string*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#include** **"** *path-spec* **"**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#include** **\<** *path-spec* **>**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#line** *digit-sequence*  **"** *filename* **"**<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#undef** *identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#error** *token-string*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#pragma** *token-string*
+
+*constant-expression*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**defined(** *identifier* **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**defined** *identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;any other constant expression
+
+*conditional* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*if-part* *elif-parts*<sub>opt</sub> *else-part*<sub>opt</sub> *endif-line*
+
+*if-part* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*if-line* *text*
+
+*if-line* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#if** *constant-expression*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#ifdef** *identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#ifndef** *identifier*
+
+*elif-parts* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*elif-line* *text*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*elif-parts* *elif-line* *text*
+
+*elif-line* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#elif** *constant-expression*
+
+*else-part* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*else-line* *text*
+
+*else-line* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#else**
+
+*endif-line* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**#endif**
+
+*digit-sequence* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*digit-sequence* *digit*
+
+*digit* : one of<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
+
+*token-string* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;String of tokens
+
+*token* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*keyword*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*constant*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*operator*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*punctuator*
+
+*filename* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Legal operating system filename
+
+*path-spec* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Legal file path
+
+*text* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Any sequence of text
+
 > [!NOTE]
-> The following nonterminals are expanded in the [Lexical Conventions](../cpp/lexical-conventions.md) section of the *C++ Language Reference*: `constant`, `constant`-*expression*, *identifier*, *keyword*, `operator`, and `punctuator`.  
-  
-## See Also  
- 
+> The following nonterminals are expanded in the [Lexical Conventions](../cpp/lexical-conventions.md) section of the *C++ Language Reference*: *constant*, *constant-expression*, *identifier*, *keyword*, *operator*, and *punctuator*.
+
+## See Also
+
 [Grammar Summary (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

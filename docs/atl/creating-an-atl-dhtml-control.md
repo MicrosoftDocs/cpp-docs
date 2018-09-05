@@ -12,16 +12,18 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Creating an ATL DHTML Control
-The ATL Control Wizard automates the process of creating a DHTML control. It generates the necessary resource files, including an HTML file containing sample code.  
-  
-#### To create an ATL DHTML control  
-  
-1.  Follow the steps in [Creating an ATL Project](../atl/reference/creating-an-atl-project.md).  
-  
-2.  In Class View, right-click the project node, point to **Add**, and click **Add Class** from the shortcut menu. In the **Add Class** dialog box, double-click the [ATL Control Wizard](../atl/reference/atl-control-wizard.md). In the ATL Control Wizard, click the **Options** tab and select **DHTML control**.  
-  
- You can now [test the default control](../atl/testing-the-atl-dhtml-control.md).  
-  
-## See Also  
- [Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)
+
+The ATL Control Wizard automates the process of creating a DHTML control. It generates the necessary resource files, including an HTML file containing sample code.
+
+#### To create an ATL DHTML control
+
+1. Follow the steps in [Creating an ATL Project](../atl/reference/creating-an-atl-project.md).
+
+2. In Class View, right-click the project node, point to **Add**, and click **Add Class** from the shortcut menu. In the **Add Class** dialog box, double-click the [ATL Control Wizard](../atl/reference/atl-control-wizard.md). In the ATL Control Wizard, click the **Options** tab and select **DHTML control**.
+
+You can now [test the default control](../atl/testing-the-atl-dhtml-control.md).
+
+## See Also
+
+[Support for DHTML Control](../atl/atl-support-for-dhtml-controls.md)
 

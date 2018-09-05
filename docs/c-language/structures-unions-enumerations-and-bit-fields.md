@@ -22,4 +22,4 @@ ms.workload: ["cplusplus"]
 -   [The enum Type](../c-language/enum-type.md)  
   
 ## See Also  
- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
