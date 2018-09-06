@@ -47,13 +47,13 @@ _RPTFWn(
 
 ### Parameters
 
-*reportType*
+*reportType*<br/>
 Report type: **_CRT_WARN**, **_CRT_ERROR**, or **_CRT_ASSERT**.
 
-*format*
+*format*<br/>
 Format-control string used to create the user message.
 
-*args*
+*args*<br/>
 Substitution arguments used by *format*.
 
 ## Remarks

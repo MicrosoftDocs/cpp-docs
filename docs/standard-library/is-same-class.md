@@ -25,11 +25,11 @@ struct is_same;
 
 ### Parameters
 
-*Ty1*
- The first type to query.
+*Ty1*<br/>
+The first type to query.
 
-*Ty2*
- The second type to query.
+*Ty2*<br/>
+The second type to query.
 
 ## Remarks
 

@@ -67,14 +67,14 @@ gslice(
 
 ### Parameters
 
-*_StartIndex*
- The valarray index of the first element in the subset.
+*_StartIndex*<br/>
+The valarray index of the first element in the subset.
 
-*_LenArray*
- An array specifying the number of elements in each slice.
+*_LenArray*<br/>
+An array specifying the number of elements in each slice.
 
-*_IncArray*
- An array specifying the stride in each slice.
+*_IncArray*<br/>
+An array specifying the stride in each slice.
 
 ### Return Value
 
@@ -200,13 +200,13 @@ int main( )
 
 ```Output
 The operand valarray va is:
- ( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
+( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
 The size of the valarray is: 20.
 
 The valarray for vaGSlice is vaResult:
- va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
+va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
 The size of vaResult is:
- vaGSlice.size ( ) = ( 4 4 ).
+vaGSlice.size ( ) = ( 4 4 ).
 ```
 
 ## <a name="start"></a>  gslice::start
@@ -266,9 +266,9 @@ int main( )
 
 ```Output
 The operand valarray va is:
- ( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
+( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
 The valarray for vaGSlice is vaResult:
- va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
+va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
 The index of the first element of vaResult is: 0.
 ```
 
@@ -333,11 +333,11 @@ int main( )
 
 ```Output
 The operand valarray va is:
- ( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
+( 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 ).
 The valarray for vaGSlice is vaResult:
- va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
+va[vaGSlice] = ( 0 4 8 12 7 11 15 19 ).
 The strides of vaResult are:
- vaGSlice.stride ( ) = ( 7 4 ).
+vaGSlice.stride ( ) = ( 7 4 ).
 ```
 
 ## See also

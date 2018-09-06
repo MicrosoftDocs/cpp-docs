@@ -73,11 +73,11 @@ class basic_regex {
 
 ### Parameters
 
-*Elem*
- The type of elements to match.
+*Elem*<br/>
+The type of elements to match.
 
-*RXtraits*
- Traits class for elements.
+*RXtraits*<br/>
+Traits class for elements.
 
 ## Remarks
 
@@ -139,38 +139,38 @@ basic_regex& assign(
 
 ### Parameters
 
-*STtraits*
- Traits class for a string source.
+*STtraits*<br/>
+Traits class for a string source.
 
-*STalloc*
- Allocator class for a string source.
+*STalloc*<br/>
+Allocator class for a string source.
 
-*InIt*
- Input iterator type for a range source.
+*InIt*<br/>
+Input iterator type for a range source.
 
-*right*
- Regex source to copy.
+*right*<br/>
+Regex source to copy.
 
-*ptr*
- Pointer to beginning of sequence to copy.
+*ptr*<br/>
+Pointer to beginning of sequence to copy.
 
-*flags*
- Syntax option flags to add while copying.
+*flags*<br/>
+Syntax option flags to add while copying.
 
 *len/TD>*
- Length of sequence to copy.
+Length of sequence to copy.
 
-*str*
- String to copy.
+*str*<br/>
+String to copy.
 
-*first*
- Beginning of sequence to copy.
+*first*<br/>
+Beginning of sequence to copy.
 
-*last*
- End of sequence to copy.
+*last*<br/>
+End of sequence to copy.
 
-*IList*
- The initializer_list to copy.
+*IList*<br/>
+The initializer_list to copy.
 
 ### Remarks
 
@@ -295,38 +295,38 @@ explicit basic_regex(
 
 ### Parameters
 
-*STtraits*
- Traits class for a string source.
+*STtraits*<br/>
+Traits class for a string source.
 
-*STalloc*
- Allocator class for a string source.
+*STalloc*<br/>
+Allocator class for a string source.
 
-*InIt*
- Input iterator type for a range source.
+*InIt*<br/>
+Input iterator type for a range source.
 
-*right*
- Regex source to copy.
+*right*<br/>
+Regex source to copy.
 
-*ptr*
- Pointer to beginning of sequence to copy.
+*ptr*<br/>
+Pointer to beginning of sequence to copy.
 
-*flags*
- Syntax option flags to add while copying.
+*flags*<br/>
+Syntax option flags to add while copying.
 
 *len/TD>*
- Length of sequence to copy.
+Length of sequence to copy.
 
-*str*
- String to copy.
+*str*<br/>
+String to copy.
 
-*first*
- Beginning of sequence to copy.
+*first*<br/>
+Beginning of sequence to copy.
 
-*last*
- End of sequence to copy.
+*last*<br/>
+End of sequence to copy.
 
-*IList*
- The initializer_list to copy.
+*IList*<br/>
+The initializer_list to copy.
 
 ### Remarks
 
@@ -719,8 +719,8 @@ locale_type imbue(locale_type loc);
 
 ### Parameters
 
-*loc*
- The locale object to store.
+*loc*<br/>
+The locale object to store.
 
 ### Remarks
 
@@ -1020,17 +1020,17 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 
 ### Parameters
 
-*STtraits*
- Traits class for a string source.
+*STtraits*<br/>
+Traits class for a string source.
 
-*STalloc*
- Allocator class for a string source.
+*STalloc*<br/>
+Allocator class for a string source.
 
-*right*
- Regex source to copy.
+*right*<br/>
+Regex source to copy.
 
-*str*
- String to copy.
+*str*<br/>
+String to copy.
 
 ### Remarks
 
@@ -1131,8 +1131,8 @@ void swap(basic_regex& right) throw();
 
 ### Parameters
 
-*right*
- The regular expression object to swap with.
+*right*<br/>
+The regular expression object to swap with.
 
 ### Remarks
 

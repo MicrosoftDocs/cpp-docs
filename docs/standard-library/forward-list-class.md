@@ -796,20 +796,20 @@ void splice_after(
 
 ### Parameters
 
-*Where*
- The position in the destination forward_list after which to insert.
+*Where*<br/>
+The position in the destination forward_list after which to insert.
 
-*Source*
- The source forward_list that is to be inserted into the destination forward_list.
+*Source*<br/>
+The source forward_list that is to be inserted into the destination forward_list.
 
-*Iter*
- The element to be inserted from the source forward_list.
+*Iter*<br/>
+The element to be inserted from the source forward_list.
 
-*First*
- The first element in the range to be inserted from source forward_list.
+*First*<br/>
+The first element in the range to be inserted from source forward_list.
 
-*Last*
- The first position beyond the range to be inserted from the source forward_list.
+*Last*<br/>
+The first position beyond the range to be inserted from the source forward_list.
 
 ### Remarks
 

@@ -28,8 +28,8 @@ using add_rvalue_reference_t = typename add_rvalue_reference<T>::type;
 
 ### Parameters
 
-*T*
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 

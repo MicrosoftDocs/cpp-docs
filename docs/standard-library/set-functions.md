@@ -23,11 +23,11 @@ void swap(set<Key, Traits, Allocator>& left, set<Key, Traits, Allocator>& right)
 
 ### Parameters
 
-*right*
- The set providing the elements to be swapped, or the set whose elements are to be exchanged with those of the set *left*.
+*right*<br/>
+The set providing the elements to be swapped, or the set whose elements are to be exchanged with those of the set *left*.
 
-*left*
- The set whose elements are to be exchanged with those of the set *right*.
+*left*<br/>
+The set whose elements are to be exchanged with those of the set *right*.
 
 ### Remarks
 
@@ -52,11 +52,11 @@ void swap(multiset<Key, Traits, Allocator>& left, multiset<Key, Traits, Allocato
 
 ### Parameters
 
-*right*
- The multiset providing the elements to be swapped, or the multiset whose elements are to be exchanged with those of the multiset *left*.
+*right*<br/>
+The multiset providing the elements to be swapped, or the multiset whose elements are to be exchanged with those of the multiset *left*.
 
-*left*
- The multiset whose elements are to be exchanged with those of the multiset *right*.
+*left*<br/>
+The multiset whose elements are to be exchanged with those of the multiset *right*.
 
 ### Remarks
 

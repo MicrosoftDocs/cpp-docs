@@ -33,14 +33,14 @@ class mem_fun1_ref_t : public binary_function<Type, Arg, Result> {
 
 ### Parameters
 
-*_Pm*
- A pointer to the member function of class `Type` to be converted to a function object.
+*_Pm*<br/>
+A pointer to the member function of class `Type` to be converted to a function object.
 
-*left*
- The object that the *_Pm* member function is called on.
+*left*<br/>
+The object that the *_Pm* member function is called on.
 
-*right*
- The argument that is being given to *_Pm*.
+*right*<br/>
+The argument that is being given to *_Pm*.
 
 ## Return Value
 

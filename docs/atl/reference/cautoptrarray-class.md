@@ -30,7 +30,7 @@ class CAutoPtrArray : public CAtlArray<
 
 #### Parameters
 
-`E`  
+*E*<br/>
 The pointer type.
 
 ## Members

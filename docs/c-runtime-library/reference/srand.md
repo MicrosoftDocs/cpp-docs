@@ -28,7 +28,7 @@ void srand(
 
 ### Parameters
 
-*seed*
+*seed*<br/>
 Seed for pseudorandom number generation
 
 ## Remarks

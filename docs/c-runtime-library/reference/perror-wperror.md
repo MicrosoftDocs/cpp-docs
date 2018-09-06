@@ -32,7 +32,7 @@ void _wperror(
 
 ### Parameters
 
-*message*
+*message*<br/>
 String message to print.
 
 ## Remarks

@@ -30,8 +30,8 @@ using remove_const_t = typename remove_const<T>::type;
 
 ### Parameters
 
-*T*
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 

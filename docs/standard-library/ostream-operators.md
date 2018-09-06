@@ -79,23 +79,23 @@ basic_ostream <_Elem, _Tr>& operator<<(
 
 ### Parameters
 
-*_Ch*
- A character.
+*_Ch*<br/>
+A character.
 
-*_Elem*
- The element type.
+*_Elem*<br/>
+The element type.
 
-*_Ostr*
- A `basic_ostream` object.
+*_Ostr*<br/>
+A `basic_ostream` object.
 
-*str*
- A character string.
+*str*<br/>
+A character string.
 
-*_Tr*
- Character traits.
+*_Tr*<br/>
+Character traits.
 
-*val*
- The type
+*val*<br/>
+The type
 
 ### Return Value
 

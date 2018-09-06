@@ -152,9 +152,9 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 ### Parameters
 
 *rSrc*  
-A reference to an object of the adapted type to be copied. 
+A reference to an object of the adapted type to be copied.
 
-*rSrCA*
+*rSrCA*  
 A reference to an object to be moved.
 
 ### Return Value

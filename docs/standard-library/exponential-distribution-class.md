@@ -49,10 +49,10 @@ public:
 
 ### Parameters
 
-*RealType*
+*RealType*<br/>
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
-*URNG*
+*URNG*<br/>
 The random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -165,11 +165,11 @@ explicit exponential_distribution(const param_type& parm);
 
 ### Parameters
 
-*lambda*
- The `lambda` distribution parameter.
+*lambda*<br/>
+The `lambda` distribution parameter.
 
-*parm*
- The parameter package used to construct the distribution.
+*parm*<br/>
+The parameter package used to construct the distribution.
 
 ### Remarks
 
@@ -196,10 +196,10 @@ struct param_type {
 
 ### Parameters
 
-*lambda*
+*lambda*<br/>
 The `lambda` distribution parameter.
 
-*right*
+*right*<br/>
 The `param_type` object to compare to this.
 
 ### Remarks

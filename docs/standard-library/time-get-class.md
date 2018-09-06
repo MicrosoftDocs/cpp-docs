@@ -27,10 +27,10 @@ class time_get : public time_base;
 ### Parameters
 
 *CharType*  
- The type used within a program to encode characters.
+The type used within a program to encode characters.
 
 *InputIterator*  
- The iterator from which the time values are read.
+The iterator from which the time values are read.
 
 ## Remarks
 
@@ -173,7 +173,7 @@ Reads and converts character data to a time value. Accepts one conversion specif
 ```cpp
 virtual iter_type
     do_get(
- iter_type first,
+iter_type first,
     iter_type last,
     ios_base& iosbase,
     ios_base::iostate& state,
@@ -184,26 +184,26 @@ virtual iter_type
 
 ### Parameters
 
-*first*
- An Input iterator that indicates the start of the sequence to convert.
+*first*<br/>
+An Input iterator that indicates the start of the sequence to convert.
 
-*last*
- An Input iterator that indicates the end of the sequence.
+*last*<br/>
+An Input iterator that indicates the end of the sequence.
 
-*iosbase*
- A stream object.
+*iosbase*<br/>
+A stream object.
 
-*state*
- A field in iosbase where appropriate bitmask elements are set to indicate errors.
+*state*<br/>
+A field in iosbase where appropriate bitmask elements are set to indicate errors.
 
-*ptm*
- A pointer to the time structure where the time is to be stored.
+*ptm*<br/>
+A pointer to the time structure where the time is to be stored.
 
-*fmt*
- A conversion specifier character.
+*fmt*<br/>
+A conversion specifier character.
 
-*mod*
- An optional modifier character.
+*mod*<br/>
+An optional modifier character.
 
 ### Return Value
 
@@ -278,19 +278,19 @@ virtual iter_type do_get_date(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
 *state*  
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the date information is to be stored.
+A pointer to where the date information is to be stored.
 
 ### Return Value
 
@@ -329,19 +329,19 @@ virtual iter_type do_get_monthname(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- Unused.
+Unused.
 
 *state*  
- An output parameter that sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+An output parameter that sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the month information is to be stored.
+A pointer to where the month information is to be stored.
 
 ### Return Value
 
@@ -372,19 +372,19 @@ virtual iter_type do_get_time(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- Unused.
+Unused.
 
 *state*  
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the date information is to be stored.
+A pointer to where the date information is to be stored.
 
 ### Return Value
 
@@ -423,19 +423,19 @@ virtual iter_type do_get_weekday(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
 *state*  
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the weekday information is to be stored.
+A pointer to where the weekday information is to be stored.
 
 ### Return Value
 
@@ -466,19 +466,19 @@ virtual iter_type do_get_year(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
 *state*  
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the year information is to be stored.
+A pointer to where the year information is to be stored.
 
 ### Return Value
 
@@ -521,31 +521,31 @@ iter_type get(
 ### Parameters
 
 *first*  
- Input iterator that indicates where the sequence to be converted starts.
+Input iterator that indicates where the sequence to be converted starts.
 
 *last*  
- Input iterator that indicates the end of the sequence to be converted.
+Input iterator that indicates the end of the sequence to be converted.
 
 *iosbase*  
- The stream.
+The stream.
 
 *state*  
- The appropriate bitmask elements are set for the stream state to indicate errors.
+The appropriate bitmask elements are set for the stream state to indicate errors.
 
 *ptm*  
- Pointer to the time structure where the time is to be stored.
+Pointer to the time structure where the time is to be stored.
 
 *fmt*  
- A conversion specifier character.
+A conversion specifier character.
 
 *mod*  
- An optional modifier character.
+An optional modifier character.
 
 *fmt_first*  
- Points to where the format directives start.
+Points to where the format directives start.
 
 *fmt_last*  
- Points to the end of the format directives.
+Points to the end of the format directives.
 
 ### Return Value
 
@@ -578,19 +578,19 @@ iter_type get_date(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
 *state*  
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the date information is to be stored.
+A pointer to where the date information is to be stored.
 
 ### Return Value
 
@@ -672,19 +672,19 @@ iter_type get_monthname(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- Unused.
+Unused.
 
 *state*  
- An output parameter that sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+An output parameter that sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the month information is to be stored.
+A pointer to where the month information is to be stored.
 
 ### Return Value
 
@@ -764,19 +764,19 @@ iter_type get_time(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- Unused.
+Unused.
 
 *state*  
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the date information is to be stored.
+A pointer to where the date information is to be stored.
 
 ### Return Value
 
@@ -845,19 +845,19 @@ iter_type get_weekday(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
 *state*  
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the weekday information is to be stored.
+A pointer to where the weekday information is to be stored.
 
 ### Return Value
 
@@ -922,19 +922,19 @@ iter_type get_year(iter_type first,
 ### Parameters
 
 *first*  
- Input iterator addressing the beginning of the sequence to be converted.
+Input iterator addressing the beginning of the sequence to be converted.
 
 *last*  
- Input iterator addressing the end of the sequence to be converted.
+Input iterator addressing the end of the sequence to be converted.
 
 *iosbase*  
- A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
+A format flag which when set indicates that the currency symbol is optional; otherwise, it is required.
 
 *state*  
- Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
+Sets the appropriate bitmask elements for the stream state according to whether the operations succeeded.
 
 *ptm*  
- A pointer to where the year information is to be stored.
+A pointer to where the year information is to be stored.
 
 ### Return Value
 
@@ -1008,7 +1008,7 @@ explicit time_get(size_t refs = 0);
 ### Parameters
 
 *refs*  
- Integer value used to specify the type of memory management for the object.
+Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 

@@ -25,14 +25,14 @@ class basic_ostringstream : public basic_ostream<Elem, Tr>
 
 ### Parameters
 
-*Alloc*
- The allocator class.
+*Alloc*<br/>
+The allocator class.
 
-*Elem*
- The type of the basic element of the string.
+*Elem*<br/>
+The type of the basic element of the string.
 
-*Tr*
- The character traits specialized on the basic element of the string.
+*Tr*<br/>
+The character traits specialized on the basic element of the string.
 
 ## Remarks
 
@@ -83,11 +83,11 @@ explicit basic_ostringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base:
 
 ### Parameters
 
-*_Mode*
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*str*
- An object of type `basic_string`.
+*str*<br/>
+An object of type `basic_string`.
 
 ### Remarks
 
@@ -129,8 +129,8 @@ void str(
 
 ### Parameters
 
-*_Newstr*
- The new string.
+*_Newstr*<br/>
+The new string.
 
 ### Return Value
 

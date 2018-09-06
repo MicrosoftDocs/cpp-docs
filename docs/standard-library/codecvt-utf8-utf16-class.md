@@ -23,11 +23,11 @@ class codecvt_utf8_utf16 : public _STD codecvt<Elem, char, StateType>
 
 ## Parameters
 
-*Elem*
+*Elem*<br/>
 The wide-character element type.
-*Maxcode*
+*Maxcode*<br/>
 The maximum number of characters for the locale facet.
-*Mode*
+*Mode*<br/>
 Configuration information for the locale facet.
 
 ## Remarks

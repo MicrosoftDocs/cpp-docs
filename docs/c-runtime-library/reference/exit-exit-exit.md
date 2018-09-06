@@ -37,7 +37,7 @@ void _exit(
 
 ### Parameters
 
-*status*
+*status*<br/>
 Exit status code.
 
 ## Remarks

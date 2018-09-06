@@ -23,7 +23,7 @@ namespace regex_constants {
     enum syntax_option_type;
     enum match_flag_type;
     enum error_type;
- }
+}
 ```
 
 ## Remarks
@@ -127,7 +127,7 @@ The type is a bitmask type that describes options to be used when matching a tex
 
 The match options are:
 
-`match_default`
+*match_default*<br/>
 
 `match_not_bol` -- do not treat the first position in the target sequence as the beginning of a line
 

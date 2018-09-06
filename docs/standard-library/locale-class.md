@@ -275,8 +275,8 @@ locale combine(const locale& Loc) const;
 
 ### Parameters
 
-*Loc*
- The locale containing the facet to be inserted into the target locale.
+*Loc*<br/>
+The locale containing the facet to be inserted into the target locale.
 
 ### Return Value
 
@@ -344,8 +344,8 @@ static locale global(const locale& Loc);
 
 ### Parameters
 
-*Loc*
- The locale to be used as the default locale by the program.
+*Loc*<br/>
+The locale to be used as the default locale by the program.
 
 ### Return Value
 
@@ -414,20 +414,20 @@ locale(const locale& Loc, const Facet* Fac);
 
 ### Parameters
 
-*Locname*
- Name of a locale.
+*Locname*<br/>
+Name of a locale.
 
-*Loc*
- A locale that is to be copied in constructing the new locale.
+*Loc*<br/>
+A locale that is to be copied in constructing the new locale.
 
-*Other*
- A locale from which to select a category.
+*Other*<br/>
+A locale from which to select a category.
 
-*Cat*
- The category to be substituted into the constructed locale.
+*Cat*<br/>
+The category to be substituted into the constructed locale.
 
-*Fac*
- The facet to be substituted into the constructed locale.
+*Fac*<br/>
+The facet to be substituted into the constructed locale.
 
 ### Remarks
 
@@ -538,8 +538,8 @@ bool operator!=(const locale& right) const;
 
 ### Parameters
 
-*right*
- One of the locales to be tested for inequality.
+*right*<br/>
+One of the locales to be tested for inequality.
 
 ### Return Value
 
@@ -584,9 +584,9 @@ int main( )
 
 ```Output
 locales loc1 (German_Germany.1252) and
- loc2 (German_Germany.1252) are equal.
+loc2 (German_Germany.1252) are equal.
 locales loc1 (German_Germany.1252) and
- loc3 (English_United States.1252) are not equal.
+loc3 (English_United States.1252) are not equal.
 ```
 
 ## <a name="op_call"></a>  locale::operator()
@@ -602,11 +602,11 @@ bool operator()(
 
 ### Parameters
 
-*left*
- The left string.
+*left*<br/>
+The left string.
 
-*right*
- The right string.
+*right*<br/>
+The right string.
 
 ### Return Value
 
@@ -671,8 +671,8 @@ bool operator==(const locale& right) const;
 
 ### Parameters
 
-*right*
- One of the locales to be tested for equality.
+*right*<br/>
+One of the locales to be tested for equality.
 
 ### Return Value
 
@@ -721,9 +721,9 @@ int main( )
 
 ```Output
 locales loc1 (German_Germany.1252)
- and loc2 (German_Germany.1252) are equal.
+and loc2 (German_Germany.1252) are equal.
 locales loc1 (German_Germany.1252)
- and loc3 (English_United States.1252) are not equal.
+and loc3 (English_United States.1252) are not equal.
 ```
 
 ## See also

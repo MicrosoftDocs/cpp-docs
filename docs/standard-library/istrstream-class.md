@@ -70,11 +70,11 @@ istrstream(
 
 ### Parameters
 
-*count*
- The length of the buffer (*ptr*).
+*count*<br/>
+The length of the buffer (*ptr*).
 
-*ptr*
- The contents with which the buffer is initialized.
+*ptr*<br/>
+The contents with which the buffer is initialized.
 
 ### Remarks
 

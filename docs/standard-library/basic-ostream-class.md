@@ -25,11 +25,11 @@ class basic_ostream : virtual public basic_ios<Elem, Tr>
 
 ### Parameters
 
-*Elem*
- A `char_type`.
+*Elem*<br/>
+A `char_type`.
 
-*Tr*
- The character `traits_type`.
+*Tr*<br/>
+The character `traits_type`.
 
 ## Remarks
 
@@ -40,16 +40,16 @@ iostate state = goodbit;
 const sentry ok(*this);
 
 if (ok)
- {try
- {<convert and insert elements
+{try
+{<convert and insert elements
     accumulate flags in state> }
     catch (...)
- {try
- {setstate(badbit);
+{try
+{setstate(badbit);
 
 }
     catch (...)
- {}
+{}
     if ((exceptions()& badbit) != 0)
     throw; }}
 width(0);
@@ -68,16 +68,16 @@ const sentry ok(*this);
 if (!ok)
     state |= badbit;
 else
- {try
- {<obtain and insert elements
+{try
+{<obtain and insert elements
     accumulate flags in state> }
     catch (...)
- {try
- {setstate(badbit);
+{try
+{setstate(badbit);
 
 }
     catch (...)
- {}
+{}
     if ((exceptions()& badbit) != 0)
     throw; }}
 setstate(state);
@@ -138,14 +138,14 @@ basic_ostream(basic_ostream&& right);
 
 ### Parameters
 
-*strbuf*
- An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).
+*strbuf*<br/>
+An object of type [basic_streambuf](../standard-library/basic-streambuf-class.md).
 
-*_Isstd*
- **true** if this is a standard stream; otherwise, **false**.
+*_Isstd*<br/>
+**true** if this is a standard stream; otherwise, **false**.
 
-*right*
- An rvalue reference to an object of type `basic_ostream`.
+*right*<br/>
+An rvalue reference to an object of type `basic_ostream`.
 
 ### Remarks
 
@@ -222,14 +222,14 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
 
 ### Parameters
 
-*Pfn*
- A function pointer.
+*Pfn*<br/>
+A function pointer.
 
-*strbuf*
- A pointer to a `stream_buf` object.
+*strbuf*<br/>
+A pointer to a `stream_buf` object.
 
-*val*
- An element to write to the stream.
+*val*<br/>
+An element to write to the stream.
 
 ### Return Value
 
@@ -343,8 +343,8 @@ basic_ostream& operator=(basic_ostream&& right);
 
 ### Parameters
 
-*right*
- An `rvalue` reference to a `basic_ostream` object.
+*right*<br/>
+An `rvalue` reference to a `basic_ostream` object.
 
 ### Remarks
 
@@ -360,8 +360,8 @@ basic_ostream<Elem, Tr>& put(char_type _Ch);
 
 ### Parameters
 
-*_Ch*
- A character.
+*_Ch*<br/>
+A character.
 
 ### Return Value
 
@@ -404,14 +404,14 @@ basic_ostream<Elem, Tr>& seekp(off_type _Off, ios_base::seekdir _Way);
 
 ### Parameters
 
-*_Pos*
- The position in the stream.
+*_Pos*<br/>
+The position in the stream.
 
-*_Off*
- The offset relative to *_Way*.
+*_Off*<br/>
+The offset relative to *_Way*.
 
-*_Way*
- One of the [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) enumerations.
+*_Way*<br/>
+One of the [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) enumerations.
 
 ### Return Value
 
@@ -478,8 +478,8 @@ void swap(basic_ostream& right);
 
 ### Parameters
 
-*right*
- A reference to a `basic_ostream` object.
+*right*<br/>
+A reference to a `basic_ostream` object.
 
 ### Remarks
 
@@ -515,11 +515,11 @@ basic_ostream<Elem, Tr>& write(const char_type* str, streamsize count);
 
 ### Parameters
 
-*count*
- Count of characters to put into the stream.
+*count*<br/>
+Count of characters to put into the stream.
 
-*str*
- Characters to put into the stream.
+*str*<br/>
+Characters to put into the stream.
 
 ### Return Value
 
