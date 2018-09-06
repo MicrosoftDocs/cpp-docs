@@ -1,7 +1,7 @@
 ---
 title: "EXPORTS | Microsoft Docs"
 ms.custom: ""
-ms.date: "08/20/2018"
+ms.date: "09/07/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["EXPORTS"]
@@ -77,9 +77,16 @@ There are four ways to export a definition, listed in recommended order:
 
 3. An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command
 
-4. A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`  
+4. A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`. The following example shows a #pragma comment directive before a function declaration as shown here, where `_PlainFuncName` is the undecorated name, and `_PlainFuncName@4` is the decorated name of the function:
 
-All four methods can be used in the same program. When LINK builds a program that contains exports, it also creates an import library, unless an .EXP file is used in the build.
+    ```cpp
+    #pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")
+    BOOL CALLBACK PlainFuncName( Things * lpParams)
+    ```
+
+The #pragma directive is useful if you need to export an undecorated function name, and have different exports depending on the build configuration (for example 32 vs. 64 bit builds).
+
+All four methods can be used in the same program. When LINK builds a program that contains exports, it also creates an import library, unless an .EXP file is used in the build. 
 
 Here's an example of an EXPORTS section:
 
