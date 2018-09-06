@@ -70,7 +70,7 @@ class path;
 |[make_preferred](#make_preferred)|Converts each separator to a preferred_separator as needed.|
 |[native](#native)|Returns `myname`.|
 |[parent_path](#parent_path)|Returns the parent path component of `myname`.|
-|[preferred_seperator](#preferred_seperator)|The constant object gives the preferred character for separating path components, depending on the host operating system. |
+|[preferred_separator](#preferred_separator)|The constant object gives the preferred character for separating path components, depending on the host operating system. |
 |[relative_path](#relative_path)|Returns the relative path component of `myname`. |
 |[remove_filename](#remove_filename)|Removes the filename.|
 |[replace_extension](#replace_extension)|Replaces the extension of `myname`. |
@@ -91,10 +91,10 @@ class path;
 
 |Operator|Description|
 |-|-|
-|[operator=](#op_eq)|Replaces the elements of the path with a copy of another path.|
+|[operator=](#op_as)|Replaces the elements of the path with a copy of another path.|
 |[operator+=](#op_add)|Various `concat` expressions.|
 |[operator/=](#op_divide)|Various `append` expressions.|
-|[operator stringtype](#op_string)|Returns `myname`.|
+|[operator string_type](#op_string)|Returns `myname`.|
 
 ## Requirements
 
@@ -104,7 +104,7 @@ class path;
 
 ## <a name="append"></a> path::append
 
-Appends the specified sequence to `mypath`, converted and inserting a preferred_separator as needed.
+Appends the specified sequence to `mypath`, converted and inserting a `preferred_separator` as needed.
 
 ```cpp
 template <class Source>
@@ -252,7 +252,7 @@ path extension() const;
 
 Returns the suffix of `filename() X` such that:
 
-If `X == path(".") || X == path("..")` or if X contains no dot, the suffix is empty.
+If `X == path(".") || X == path("..")` or if `X` contains no dot, the suffix is empty.
 
 Otherwise, the suffix begins with (and includes) the rightmost dot.
 
