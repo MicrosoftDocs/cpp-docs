@@ -70,7 +70,8 @@ All static_assert tests of add_rvalue_reference passed.
 
 ## Requirements
 
-Header: \<type_traits\> Namespace: std
+Header: \<type_traits>  
+Namespace: std
 
 ## See also
 

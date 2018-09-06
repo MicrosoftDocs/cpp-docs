@@ -175,7 +175,7 @@ The possible values for the *_Refs* parameter and their significance are:
 
 - 1: The lifetime of the object must be manually managed.
 
-- \> 1: These values are not defined.
+- 2: These values are not defined.
 
 The constructor initializes its `locale::facet` base object with **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
