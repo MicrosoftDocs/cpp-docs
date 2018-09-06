@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::SimpleActivationFactory::ActivateInstance"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""ActivateInstance method""]"]
+helpviewer_keywords: ["ActivateInstance method"]
 ms.assetid: 4f836e51-5a6c-4bad-b871-9f25199298b4
 author: "mikeblome"
 ms.author: "mblome"

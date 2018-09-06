@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::Close"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Close method""]"]
+helpviewer_keywords: ["Close method"]
 ms.assetid: a52b1124-754b-4393-b491-64aae0c22f1c
 author: "mikeblome"
 ms.author: "mblome"

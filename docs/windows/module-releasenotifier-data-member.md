@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::releaseNotifier_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""releaseNotifier_ data member""]"]
+helpviewer_keywords: ["releaseNotifier_ data member"]
 ms.assetid: 99bb1ceb-469c-489d-8a14-f67f410a83d5
 author: "mikeblome"
 ms.author: "mblome"

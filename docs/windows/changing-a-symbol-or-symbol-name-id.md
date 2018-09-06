@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.changing"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""symbol names"", ""symbols [C++], names""]"]
+helpviewer_keywords: ["symbol names", "symbols [C++], names"]
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
 author: "mikeblome"
 ms.author: "mblome"

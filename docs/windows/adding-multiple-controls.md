@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""controls [C++], adding multiple""]"]
+helpviewer_keywords: ["controls [C++], adding multiple"]
 ms.assetid: cc100201-0669-4e74-bb08-f7134ddd03aa
 author: "mikeblome"
 ms.author: "mblome"

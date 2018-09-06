@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleT::Detach"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Detach method""]"]
+helpviewer_keywords: ["Detach method"]
 ms.assetid: f7df0f90-fafb-4d1b-a215-a6c62941f6b0
 author: "mikeblome"
 ms.author: "mblome"

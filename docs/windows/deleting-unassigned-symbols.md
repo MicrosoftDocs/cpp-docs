@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""symbols [C++], deleting"", ""symbols [C++], unassigned"", ""unassigned symbols""]"]
+helpviewer_keywords: ["symbols [C++], deleting", "symbols [C++], unassigned", "unassigned symbols"]
 ms.assetid: 47641c46-1bad-44fb-8f85-79ae36919f13
 author: "mikeblome"
 ms.author: "mblome"

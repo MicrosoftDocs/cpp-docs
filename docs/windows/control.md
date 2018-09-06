@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.control"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Control attribute""]"]
+helpviewer_keywords: ["Control attribute"]
 ms.assetid: 3d046bb2-4afe-4cb8-a762-233b296e1975
 author: "mikeblome"
 ms.author: "mblome"

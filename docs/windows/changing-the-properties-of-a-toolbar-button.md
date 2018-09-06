@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""toolbar controls [MFC], command ID"", ""toolbar buttons [C++], setting properties"", ""Toolbar editor [C++], toolbar button properties"", ""command IDs, toolbar buttons""]"]
+helpviewer_keywords: ["toolbar controls [MFC], command ID", "toolbar buttons [C++], setting properties", "Toolbar editor [C++], toolbar button properties", "command IDs, toolbar buttons"]
 ms.assetid: b16a0635-e703-4156-acea-a54df279295a
 author: "mikeblome"
 ms.author: "mblome"

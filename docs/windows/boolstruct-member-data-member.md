@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::BoolStruct::Member"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Member data member""]"]
+helpviewer_keywords: ["Member data member"]
 ms.assetid: 7e270602-6552-49c8-9ac7-d143babc1231
 author: "mikeblome"
 ms.author: "mblome"

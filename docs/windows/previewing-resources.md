@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.resource.previewing", "vs.resvw.resource.previewing"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""resources [C++], viewing""]"]
+helpviewer_keywords: ["resources [C++], viewing"]
 ms.assetid: d6abda66-0e2b-4ac3-a59a-a57b8c6fb70b
 author: "mikeblome"
 ms.author: "mblome"

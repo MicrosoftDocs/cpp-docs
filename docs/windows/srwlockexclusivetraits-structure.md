@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockExclusiveTraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""SRWLockExclusiveTraits structure""]"]
+helpviewer_keywords: ["SRWLockExclusiveTraits structure"]
 ms.assetid: 38a996ef-c2d7-4886-b413-a426ecee8f05
 author: "mikeblome"
 ms.author: "mblome"

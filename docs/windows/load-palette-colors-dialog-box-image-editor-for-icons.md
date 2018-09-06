@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.loadcolorpalette"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""color palettes"", ""Load Palette Colors dialog box [C++]""]"]
+helpviewer_keywords: ["color palettes", "Load Palette Colors dialog box [C++]"]
 ms.assetid: a1b17203-3e02-4498-91de-4ed089156df1
 author: "mikeblome"
 ms.author: "mblome"

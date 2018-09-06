@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Text Tool Font dialog box [C++]"", ""fonts, changing on an image"", ""text, on images""]"]
+helpviewer_keywords: ["Text Tool Font dialog box [C++]", "fonts, changing on an image", "text, on images"]
 ms.assetid: c398e2e7-0263-43c1-9ab4-768a280c2407
 author: "mikeblome"
 ms.author: "mblome"

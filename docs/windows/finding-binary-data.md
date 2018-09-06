@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""hexadecimal bytes in binary data"", ""strings [C++], searching for"", ""file searches [C++]"", ""binary data, finding"", ""ASCII characters, finding in binary data""]"]
+helpviewer_keywords: ["hexadecimal bytes in binary data", "strings [C++], searching for", "file searches [C++]", "binary data, finding", "ASCII characters, finding in binary data"]
 ms.assetid: 1675b19c-66e3-4040-82c2-5dde4b1793f8
 author: "mikeblome"
 ms.author: "mblome"

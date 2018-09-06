@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""pop-up menus"", ""menus [C++], pop-up""]"]
+helpviewer_keywords: ["pop-up menus", "menus [C++], pop-up"]
 ms.assetid: 220a16dd-a6e8-4362-af85-68fbfce2870e
 author: "mikeblome"
 ms.author: "mblome"

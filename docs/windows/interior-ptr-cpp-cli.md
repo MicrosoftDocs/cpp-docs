@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["stdcli::language::interior_ptr", "interior_ptr_cpp", "interior_ptr"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""interior_ptr keyword [C++]""]"]
+helpviewer_keywords: ["interior_ptr keyword [C++]"]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
 author: "mikeblome"
 ms.author: "mblome"

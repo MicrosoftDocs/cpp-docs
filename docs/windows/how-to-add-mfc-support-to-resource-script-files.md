@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.add.MFC"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""rc files [C++], adding MFC support"", "".rc files [C++], adding MFC support"", ""MFC, adding support to resource scripts files"", ""resource script files [C++], adding MFC support""]"]
+helpviewer_keywords: ["rc files [C++], adding MFC support", ".rc files [C++], adding MFC support", "MFC, adding support to resource scripts files", "resource script files [C++], adding MFC support"]
 ms.assetid: 599dfe9d-ad26-4e34-899c-49b56599e37f
 author: "mikeblome"
 ms.author: "mblome"

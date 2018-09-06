@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::Attach"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Attach method""]"]
+helpviewer_keywords: ["Attach method"]
 ms.assetid: 5b911f2d-9830-4dc7-b9e3-527abd55d2c8
 author: "mikeblome"
 ms.author: "mblome"

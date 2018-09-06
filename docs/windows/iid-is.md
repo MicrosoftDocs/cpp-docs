@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.iid_is"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""iid_is attribute""]"]
+helpviewer_keywords: ["iid_is attribute"]
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["where"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""where keyword [C++]"", ""constraints, C++""]"]
+helpviewer_keywords: ["where keyword [C++]", "constraints, C++"]
 ms.assetid: eb828cc9-684f-48a3-a898-b327700c0a63
 author: "mikeblome"
 ms.author: "mblome"

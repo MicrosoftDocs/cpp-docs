@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::CreatorMap", "implements/Microsoft::WRL::Details::CreatorMap"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""CreatorMap structure""]"]
+helpviewer_keywords: ["CreatorMap structure"]
 ms.assetid: 94e40927-90c3-4107-bca3-3ad2dc4beda9
 author: "mikeblome"
 ms.author: "mblome"

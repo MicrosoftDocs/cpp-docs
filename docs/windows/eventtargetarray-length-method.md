@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::EventTargetArray::Length"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Length method""]"]
+helpviewer_keywords: ["Length method"]
 ms.assetid: f8bd8d42-977b-4695-b07a-227a68be5259
 author: "mikeblome"
 ms.author: "mblome"

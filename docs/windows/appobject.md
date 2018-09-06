@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.appobject"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""appobject attribute""]"]
+helpviewer_keywords: ["appobject attribute"]
 ms.assetid: 8ce30b73-e945-403e-a755-6bc78078a695
 author: "mikeblome"
 ms.author: "mblome"

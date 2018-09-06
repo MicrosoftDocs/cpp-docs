@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""controls [C++], troubleshooting"", ""dialog boxes [C++], troubleshooting"", ""InitCommonControls""]"]
+helpviewer_keywords: ["controls [C++], troubleshooting", "dialog boxes [C++], troubleshooting", "InitCommonControls"]
 ms.assetid: b2dd4574-ea59-4343-8d65-b387cead5da6
 author: "mikeblome"
 ms.author: "mblome"

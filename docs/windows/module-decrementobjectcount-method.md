@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::DecrementObjectCount"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""DecrementObjectCount method""]"]
+helpviewer_keywords: ["DecrementObjectCount method"]
 ms.assetid: 6a06d1f9-7881-4f0e-891f-46b0e5c4f604
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::CreatorMap::serverName"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""serverName data member""]"]
+helpviewer_keywords: ["serverName data member"]
 ms.assetid: 07a853f7-98cd-47a1-a2ff-0db74dc4cb37
 author: "mikeblome"
 ms.author: "mblome"

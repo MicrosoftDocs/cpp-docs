@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Wrappers namespace""]"]
+helpviewer_keywords: ["Wrappers namespace"]
 ms.assetid: 36ac38c7-1fc3-42da-a879-5c68661dc9e1
 author: "mikeblome"
 ms.author: "mblome"

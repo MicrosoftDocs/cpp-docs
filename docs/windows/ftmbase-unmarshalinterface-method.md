@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase::UnmarshalInterface"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""UnmarshalInterface method""]"]
+helpviewer_keywords: ["UnmarshalInterface method"]
 ms.assetid: 6850a621-e9a6-4001-bc1e-bd5d1b121adc
 author: "mikeblome"
 ms.author: "mblome"

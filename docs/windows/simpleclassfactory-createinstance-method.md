@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::SimpleClassFactory::CreateInstance"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""CreateInstance method""]"]
+helpviewer_keywords: ["CreateInstance method"]
 ms.assetid: 17b7947a-2608-49d9-b730-fef76501c9bc
 author: "mikeblome"
 ms.author: "mblome"

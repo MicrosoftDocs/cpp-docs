@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::InvokeModeOptions"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""InvokeModeOptions structure"", ""InvokeMode enum""]"]
+helpviewer_keywords: ["InvokeModeOptions structure", "InvokeMode enum"]
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]

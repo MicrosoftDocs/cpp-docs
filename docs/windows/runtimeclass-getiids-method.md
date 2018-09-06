@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClass::GetIids"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""GetIids method""]"]
+helpviewer_keywords: ["GetIids method"]
 ms.assetid: 826a67d1-ebc4-4940-b5d5-7cd66885e4a1
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.version"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""version information resources [C++]"", ""resources [C++], editing version information""]"]
+helpviewer_keywords: ["version information resources [C++]", "resources [C++], editing version information"]
 ms.assetid: d3a7d4e4-7d31-47c2-902c-f50b8404ba4f
 author: "mikeblome"
 ms.author: "mblome"

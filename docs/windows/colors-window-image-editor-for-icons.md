@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.colorswindow"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Image editor [C++], Colors Palette"", ""Colors Palette, Image editor"", ""colors [C++], inverting"", ""colors [C++]"", ""Color Indicator""]"]
+helpviewer_keywords: ["Image editor [C++], Colors Palette", "Colors Palette, Image editor", "colors [C++], inverting", "colors [C++]", "Color Indicator"]
 ms.assetid: 1d9b6c16-bf1d-4488-a19b-5d6fe601846a
 author: "mikeblome"
 ms.author: "mblome"

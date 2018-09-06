@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::sync_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""sync_ data member""]"]
+helpviewer_keywords: ["sync_ data member"]
 ms.assetid: 9c3ef215-f3b7-41b4-bf93-e3b73c054787
 author: "mikeblome"
 ms.author: "mblome"

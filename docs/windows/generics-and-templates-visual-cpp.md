@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""generics [C++], vs. templates"", ""templates, C++""]"]
+helpviewer_keywords: ["generics [C++], vs. templates", "templates, C++"]
 ms.assetid: 63adec79-b1dc-4a1a-a21d-b8a72a8fce31
 author: "mikeblome"
 ms.author: "mblome"

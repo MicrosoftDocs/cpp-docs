@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleT::operator="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""operator= operator""]"]
+helpviewer_keywords: ["operator= operator"]
 ms.assetid: 9e42dcca-30fa-4e8b-8954-802fd64a5595
 author: "mikeblome"
 ms.author: "mblome"

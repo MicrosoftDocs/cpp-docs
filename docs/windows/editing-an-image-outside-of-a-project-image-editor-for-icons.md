@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Image editor [C++], editing images"", ""images [C++], editing""]"]
+helpviewer_keywords: ["Image editor [C++], editing images", "images [C++], editing"]
 ms.assetid: ac297b51-95c2-4512-a07f-b5d1596fc61e
 author: "mikeblome"
 ms.author: "mblome"

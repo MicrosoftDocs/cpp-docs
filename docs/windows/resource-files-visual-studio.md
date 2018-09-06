@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""resources [C++]"", "".rc files [C++]"", ""resource files [C++]"", ""resource script files [C++]"", ""resource script files [C++], Win-32 based applications"", ""resource script files [C++], files updated when editing resources"", ""resources [C++], types of resource files"", ""rct files [C++]"", ""resources [C++]"", ""rc files [C++]"", ""resource files [C++], types of"", "".rct files [C++]"", ""resource script files [C++], unsupported types""]"]
+helpviewer_keywords: ["resources [C++]", ".rc files [C++]", "resource files [C++]", "resource script files [C++]", "resource script files [C++], Win-32 based applications", "resource script files [C++], files updated when editing resources", "resources [C++], types of resource files", "rct files [C++]", "rc files [C++]", "resource files [C++], types of", ".rct files [C++]", "resource script files [C++], unsupported types"]
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
 author: "mikeblome"
 ms.author: "mblome"

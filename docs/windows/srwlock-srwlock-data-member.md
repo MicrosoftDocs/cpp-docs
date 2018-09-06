@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::SRWLock::SRWLock_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""SRWLock_ data member""]"]
+helpviewer_keywords: ["SRWLock_ data member"]
 ms.assetid: 19f053c2-019a-45ef-9c1f-e0144a951561
 author: "mikeblome"
 ms.author: "mblome"

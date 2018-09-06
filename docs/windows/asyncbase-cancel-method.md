@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::Cancel"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Cancel method""]"]
+helpviewer_keywords: ["Cancel method"]
 ms.assetid: 8bfebc63-3848-4629-bc89-aa538ed7e7ad
 author: "mikeblome"
 ms.author: "mblome"

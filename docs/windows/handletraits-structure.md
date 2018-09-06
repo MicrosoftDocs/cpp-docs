@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""HANDLETraits structure""]"]
+helpviewer_keywords: ["HANDLETraits structure"]
 ms.assetid: 22963e88-d857-4624-9182-7c986daff722
 author: "mikeblome"
 ms.author: "mblome"

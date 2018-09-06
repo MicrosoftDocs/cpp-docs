@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resource"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""file types [C++], for resources"", ""resources [C++], editing"", ""files [C++], editable types""]"]
+helpviewer_keywords: ["file types [C++], for resources", "resources [C++], editing", "files [C++], editable types"]
 ms.assetid: c40f9204-f2f2-400b-9f53-53b7bf291356
 author: "mikeblome"
 ms.author: "mblome"

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""pointers, interior""]"]
+helpviewer_keywords: ["pointers, interior"]
 ms.assetid: 64e08b0e-9396-4046-ab51-8f6588f32330
 author: "mikeblome"
 ms.author: "mblome"

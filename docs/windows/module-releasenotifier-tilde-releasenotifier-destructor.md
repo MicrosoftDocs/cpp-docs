@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::ReleaseNotifier::~ReleaseNotifier"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""~ReleaseNotifier, destructor""]"]
+helpviewer_keywords: ["~ReleaseNotifier, destructor"]
 ms.assetid: 5904d4dc-dce2-4100-a7fb-f14633515595
 author: "mikeblome"
 ms.author: "mblome"

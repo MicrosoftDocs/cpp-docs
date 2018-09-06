@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::TerminateMap"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""TerminateMap function""]"]
+helpviewer_keywords: ["TerminateMap function"]
 ms.assetid: 1c314a61-da5d-49bb-ac44-c34ee3c23b66
 author: "mikeblome"
 ms.author: "mblome"

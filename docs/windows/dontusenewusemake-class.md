@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::DontUseNewUseMake"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""DontUseNewUseMake class""]"]
+helpviewer_keywords: ["DontUseNewUseMake class"]
 ms.assetid: 8b38d07b-fc14-4cea-afb9-4c1a7dde0093
 author: "mikeblome"
 ms.author: "mblome"

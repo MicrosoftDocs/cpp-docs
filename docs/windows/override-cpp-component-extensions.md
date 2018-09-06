@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""overriding, override keyword [C++]"", ""override keyword [C++]""]"]
+helpviewer_keywords: ["overriding, override keyword [C++]", "override keyword [C++]"]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::~Module"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""~Module, destructor""]"]
+helpviewer_keywords: ["~Module, destructor"]
 ms.assetid: 760f1b74-3094-4974-a011-98a5e942ebc3
 author: "mikeblome"
 ms.author: "mblome"

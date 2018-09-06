@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.customcolorselector"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Custom Color Selector dialog box [C++]"", ""colors [C++]"" image""]"]
+helpviewer_keywords: ["Custom Color Selector dialog box [C++]", "colors [C++], image"]
 ms.assetid: 534d0c2a-b3f6-4f09-9346-3bbf85bb3dd7
 author: "mikeblome"
 ms.author: "mblome"

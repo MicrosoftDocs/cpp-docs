@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.accelerator.F1"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""accelerator tables [C++], editing"", ""tables [C++], accelerator key"", ""accelerator keys [C++]"", ""resource editors [C++], Accelerator editor"", ""keyboard shortcuts [C++], Accelerator editor""]"]
+helpviewer_keywords: ["accelerator tables [C++], editing", "tables [C++], accelerator key", "accelerator keys [C++]", "resource editors [C++], Accelerator editor", "keyboard shortcuts [C++], Accelerator editor"]
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
 author: "mikeblome"
 ms.author: "mblome"

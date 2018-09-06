@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Mutex"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Mutex class""]"]
+helpviewer_keywords: ["Mutex class"]
 ms.assetid: 682a0963-721c-46a2-8871-000e9997505b
 author: "mikeblome"
 ms.author: "mblome"

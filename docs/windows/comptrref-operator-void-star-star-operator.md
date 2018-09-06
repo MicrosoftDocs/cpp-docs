@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef::operator void**"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""operator void** operator""]"]
+helpviewer_keywords: ["operator void** operator"]
 ms.assetid: f020045c-9de4-4392-8783-73f0fc0761c6
 author: "mikeblome"
 ms.author: "mblome"

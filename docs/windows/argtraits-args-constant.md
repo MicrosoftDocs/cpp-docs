@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::ArgTraits::args"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""args constant""]"]
+helpviewer_keywords: ["args constant"]
 ms.assetid: a68100ab-254b-4571-a0bc-946f1633a46b
 author: "mikeblome"
 ms.author: "mblome"

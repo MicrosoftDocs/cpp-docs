@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Dialog Editor [C++], guides and margins""]"]
+helpviewer_keywords: ["Dialog Editor [C++], guides and margins"]
 ms.assetid: dbacf9ef-e8b0-4125-a7ce-84911c482e98
 author: "mikeblome"
 ms.author: "mblome"

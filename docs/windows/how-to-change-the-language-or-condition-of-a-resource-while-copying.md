@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.resource.changing"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Language property [C++]""]"]
+helpviewer_keywords: ["Language property [C++]"]
 ms.assetid: 8f622ab0-bac2-468f-ae70-78911afc4759
 author: "mikeblome"
 ms.author: "mblome"

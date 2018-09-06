@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.insertActiveXControls"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Insert ActiveX Control dialog box [C++]"", ""ActiveX controls [C++], adding to dialog boxes""]"]
+helpviewer_keywords: ["Insert ActiveX Control dialog box [C++]", "ActiveX controls [C++], adding to dialog boxes"]
 ms.assetid: 06638ea3-0726-40da-a989-9b89292d0e3d
 author: "mikeblome"
 ms.author: "mblome"

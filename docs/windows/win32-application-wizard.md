@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.win32.overview"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Win32 Application Wizard"", ""Win32 Project Wizard""]"]
+helpviewer_keywords: ["Win32 Application Wizard", "Win32 Project Wizard"]
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
 author: "mikeblome"
 ms.author: "mblome"

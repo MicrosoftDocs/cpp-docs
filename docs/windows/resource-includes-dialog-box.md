@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resourceincludes"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Resource Includes dialog box [C++]"", ""rc files [C++], changing storage"", ""symbol header files [C++], changing"", "".rc files [C++], changing storage"", ""symbol header files [C++], read-only"", ""symbols [C++], symbol header files""]"]
+helpviewer_keywords: ["Resource Includes dialog box [C++]", "rc files [C++], changing storage", "symbol header files [C++], changing", ".rc files [C++], changing storage", "symbol header files [C++], read-only", "symbols [C++], symbol header files"]
 ms.assetid: 659a54e6-e416-4045-8411-798730ff4ce3
 author: "mikeblome"
 ms.author: "mblome"

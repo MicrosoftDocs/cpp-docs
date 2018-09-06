@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::WeakReference::WeakReference"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""WeakReference, constructor""]"]
+helpviewer_keywords: ["WeakReference, constructor"]
 ms.assetid: 4959a9d7-78ea-423d-a46b-50d010d29fff
 author: "mikeblome"
 ms.author: "mblome"

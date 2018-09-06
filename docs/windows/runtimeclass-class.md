@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClass"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""RuntimeClass class""]"]
+helpviewer_keywords: ["RuntimeClass class"]
 ms.assetid: d52f9d1a-98e5-41f2-a143-8fb629dd0727
 author: "mikeblome"
 ms.author: "mblome"

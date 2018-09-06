@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.toolbar.F1"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""resource editors [C++], Toolbar editor"", ""editors, toolbars"", ""toolbars [C++], editing"", ""Toolbar editor""]"]
+helpviewer_keywords: ["resource editors [C++], Toolbar editor", "editors, toolbars", "toolbars [C++], editing", "Toolbar editor"]
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
 author: "mikeblome"
 ms.author: "mblome"

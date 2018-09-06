@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["SafeInt"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""libraries, SafeInt"", ""SafeInt library""]"]
+helpviewer_keywords: ["libraries, SafeInt", "SafeInt library"]
 ms.assetid: 5321e875-67c5-49d7-9650-85a876552d14
 author: "mikeblome"
 ms.author: "mblome"

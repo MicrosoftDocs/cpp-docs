@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::SRWLock::LockExclusive"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""LockExclusive method""]"]
+helpviewer_keywords: ["LockExclusive method"]
 ms.assetid: f361b672-fca6-45cc-a9b4-310cc0d23fdc
 author: "mikeblome"
 ms.author: "mblome"

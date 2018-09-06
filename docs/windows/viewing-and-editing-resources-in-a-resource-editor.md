@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vs.resourceview"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""resources [C++], viewing"", ""layouts, previewing resource"", ""resource editors [C++], viewing resources"", "".rc files [C++], viewing resources"", ""resources [C++], editing""]"]
+helpviewer_keywords: ["resources [C++], viewing", "layouts, previewing resource", "resource editors [C++], viewing resources", ".rc files [C++], viewing resources", "resources [C++], editing"]
 ms.assetid: ba8bdc07-3f60-43c7-aa5c-d5dd11f0966e
 author: "mikeblome"
 ms.author: "mblome"

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Image editor [C++], drawing lines"", ""shapes, drawing""]"]
+helpviewer_keywords: ["Image editor [C++], drawing lines", "shapes, drawing"]
 ms.assetid: 7edd86db-77b1-451f-8001-bbfed9c6304f
 author: "mikeblome"
 ms.author: "mblome"

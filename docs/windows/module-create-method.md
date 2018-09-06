@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::Create"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Create method""]"]
+helpviewer_keywords: ["Create method"]
 ms.assetid: bfa97fd7-5226-4604-92a5-3b9697053e64
 author: "mikeblome"
 ms.author: "mblome"

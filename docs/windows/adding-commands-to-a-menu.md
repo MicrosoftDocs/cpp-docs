@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.menu"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""menu items, adding to menus"", ""menus [C++], adding items"", ""commands [C++], adding to menus""]"]
+helpviewer_keywords: ["menu items, adding to menus", "menus [C++], adding items", "commands [C++], adding to menus"]
 ms.assetid: 1523a755-0ab5-42f8-9e98-bb9881564431
 author: "mikeblome"
 ms.author: "mblome"

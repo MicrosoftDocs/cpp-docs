@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Module class""]"]
+helpviewer_keywords: ["Module class"]
 ms.assetid: dd67e3b8-c2e1-4f53-8c0f-565a140ba649
 author: "mikeblome"
 ms.author: "mblome"

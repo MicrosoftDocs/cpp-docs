@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::ChainInterfaces::CanCastTo"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""CanCastTo method""]"]
+helpviewer_keywords: ["CanCastTo method"]
 ms.assetid: 8be44875-53ed-494b-91a0-0f8e399685bb
 author: "mikeblome"
 ms.author: "mblome"

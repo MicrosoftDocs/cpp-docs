@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::As"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""As method""]"]
+helpviewer_keywords: ["As method"]
 ms.assetid: 2ad6c262-9bdb-4c59-a330-1af8bcd445cc
 author: "mikeblome"
 ms.author: "mblome"

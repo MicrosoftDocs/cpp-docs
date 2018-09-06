@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""attributes [C++], about attributes""]"]
+helpviewer_keywords: ["attributes [C++/CLI], about attributes"]
 ms.assetid: 3aff8bfa-a2a3-4fcb-a2c6-1d96a2b4c68d
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::RegisterObjects"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""RegisterObjects method""]"]
+helpviewer_keywords: ["RegisterObjects method"]
 ms.assetid: db4077b7-068d-4534-aaa5-41b5444ccb49
 author: "mikeblome"
 ms.author: "mblome"

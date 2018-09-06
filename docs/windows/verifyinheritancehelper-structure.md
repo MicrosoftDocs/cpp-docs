@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::VerifyInheritanceHelper"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""VerifyInheritanceHelper structure""]"]
+helpviewer_keywords: ["VerifyInheritanceHelper structure"]
 ms.assetid: 8a48a702-0f71-4807-935b-8311f0a7a8b6
 author: "mikeblome"
 ms.author: "mblome"

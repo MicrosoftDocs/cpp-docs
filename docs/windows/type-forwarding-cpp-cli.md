@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""type forwarding, C++""]"]
+helpviewer_keywords: ["type forwarding, C++"]
 ms.assetid: ae730b69-0c27-41cc-84e1-3132783866ea
 author: "mikeblome"
 ms.author: "mblome"

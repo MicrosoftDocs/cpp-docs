@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""controls [C++], layout grid"", ""snap to layout grid"", ""grids, turning on or off"", ""layout grid in Dialog Editor"", ""grids, changing size""]"]
+helpviewer_keywords: ["controls [C++], layout grid", "snap to layout grid", "grids, turning on or off", "layout grid in Dialog Editor", "grids, changing size"]
 ms.assetid: ec31f595-7542-485b-806f-efbaeccc1b3d
 author: "mikeblome"
 ms.author: "mblome"

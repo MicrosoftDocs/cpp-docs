@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""controls [C++], dialog boxes"", ""dialog box controls [C++], about dialog box controls"", ""dialog box controls""]"]
+helpviewer_keywords: ["controls [C++], dialog boxes", "dialog box controls [C++], about dialog box controls", "dialog box controls"]
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
 author: "mikeblome"
 ms.author: "mblome"

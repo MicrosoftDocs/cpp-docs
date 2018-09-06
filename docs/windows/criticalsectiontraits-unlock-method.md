@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::Unlock"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Unlock method""]"]
+helpviewer_keywords: ["Unlock method"]
 ms.assetid: 8fb382f5-6eda-407e-9673-71d77bda4962
 author: "mikeblome"
 ms.author: "mblome"

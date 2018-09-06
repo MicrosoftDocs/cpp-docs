@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""variable argument lists"", ""parameter arrays""]"]
+helpviewer_keywords: ["variable argument lists", "parameter arrays"]
 ms.assetid: db1a27f4-02a8-4318-8690-1f2893f52b38
 author: "mikeblome"
 ms.author: "mblome"

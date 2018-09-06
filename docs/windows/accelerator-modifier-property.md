@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Modifier property""]"]
+helpviewer_keywords: ["Modifier property"]
 ms.assetid: f05a9379-e037-4cfb-b6ef-d2c655bcfa7f
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::OnClose"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""OnClose method""]"]
+helpviewer_keywords: ["OnClose method"]
 ms.assetid: 96766450-c262-4611-8534-7d190b799142
 author: "mikeblome"
 ms.author: "mblome"

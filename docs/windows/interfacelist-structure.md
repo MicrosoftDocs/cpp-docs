@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceList"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""InterfaceList structure""]"]
+helpviewer_keywords: ["InterfaceList structure"]
 ms.assetid: 6ec3228d-eb3e-4b7e-aef1-7dcf17bdf61a
 author: "mikeblome"
 ms.author: "mblome"

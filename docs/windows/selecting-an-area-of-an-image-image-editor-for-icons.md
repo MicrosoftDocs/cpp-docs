@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.editing"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Image editor [C++], image selection"", ""Image editor [C++], selecting images"", ""images [C++], selecting"", ""cursors [C++], selecting areas of""]"]
+helpviewer_keywords: ["Image editor [C++], image selection", "Image editor [C++], selecting images", "images [C++], selecting", "cursors [C++], selecting areas of"]
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
 author: "mikeblome"
 ms.author: "mblome"

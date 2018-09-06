@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""AsyncBase class""]"]
+helpviewer_keywords: ["AsyncBase class"]
 ms.assetid: 64259b9b-f427-4ffd-a611-e7a2f82362b2
 author: "mikeblome"
 ms.author: "mblome"

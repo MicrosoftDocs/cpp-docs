@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::GetStatus"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""GetStatus method""]"]
+helpviewer_keywords: ["GetStatus method"]
 ms.assetid: d448b51d-a63d-40d9-a9ee-4aad3204118d
 author: "mikeblome"
 ms.author: "mblome"

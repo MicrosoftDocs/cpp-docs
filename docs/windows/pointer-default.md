@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.pointer_default"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""pointer_default attribute""]"]
+helpviewer_keywords: ["pointer_default attribute"]
 ms.assetid: 2d0c7bbc-a1e8-4337-9e54-e304523e2735
 author: "mikeblome"
 ms.author: "mblome"

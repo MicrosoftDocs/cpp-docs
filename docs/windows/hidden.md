@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.hidden"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""hidden attribute""]"]
+helpviewer_keywords: ["hidden attribute"]
 ms.assetid: 199c96dd-fc07-46c7-af93-92020aebebe7
 author: "mikeblome"
 ms.author: "mblome"

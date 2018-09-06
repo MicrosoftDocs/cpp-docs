@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.texttool"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""text, adding to an image"", ""Text Tool dialog box [C++]""]"]
+helpviewer_keywords: ["text, adding to an image", "Text Tool dialog box [C++]"]
 ms.assetid: a6036ef4-1871-40db-8239-6ddbe8f422f5
 author: "mikeblome"
 ms.author: "mblome"

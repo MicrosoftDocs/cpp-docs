@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource::addRemoveLock_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""addRemoveLock_ data member""]"]
+helpviewer_keywords: ["addRemoveLock_ data member"]
 ms.assetid: e2d69256-4891-4aad-ad0b-76479c0bb076
 author: "mikeblome"
 ms.author: "mblome"

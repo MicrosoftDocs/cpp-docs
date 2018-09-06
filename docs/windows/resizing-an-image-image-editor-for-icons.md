@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.editing"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Image editor [C++], resizing images"", ""graphics [C++], resizing"", ""images [C++], resizing"", ""resizing images""]"]
+helpviewer_keywords: ["Image editor [C++], resizing images", "graphics [C++], resizing", "images [C++], resizing", "resizing images"]
 ms.assetid: d83a02c4-4dfe-4586-a0df-51a50c2ba71d
 author: "mikeblome"
 ms.author: "mblome"

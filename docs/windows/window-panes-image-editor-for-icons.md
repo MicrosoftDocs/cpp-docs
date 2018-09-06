@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.bitmap", "vc.editors.icon"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""graphics editor [C++]"", ""Image editor [C++], panes""]"]
+helpviewer_keywords: ["graphics editor [C++]", "Image editor [C++], panes"]
 ms.assetid: d66ea5b3-e2e2-4fc4-aa99-f50022cc690e
 author: "mikeblome"
 ms.author: "mblome"

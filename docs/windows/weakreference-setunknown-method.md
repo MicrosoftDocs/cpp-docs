@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::WeakReference::SetUnknown"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""SetUnknown method""]"]
+helpviewer_keywords: ["SetUnknown method"]
 ms.assetid: 5dddb9e3-a7c1-4195-8166-97c5ab6e972f
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.readonly"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""readonly attribute""]"]
+helpviewer_keywords: ["readonly attribute"]
 ms.assetid: 1246cadd-5304-43a9-beea-51153d12704d
 author: "mikeblome"
 ms.author: "mblome"

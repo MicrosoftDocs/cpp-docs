@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::GetClassObject"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""GetClassObject method""]"]
+helpviewer_keywords: ["GetClassObject method"]
 ms.assetid: 95b0de1b-f728-4f96-9f44-f6ea71ce56e4
 author: "mikeblome"
 ms.author: "mblome"

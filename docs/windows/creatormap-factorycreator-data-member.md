@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::CreatorMap::factoryCreator"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""factoryCreator data member""]"]
+helpviewer_keywords: ["factoryCreator data member"]
 ms.assetid: c9aac363-8f38-4cfd-9605-1e6ac74c5097
 author: "mikeblome"
 ms.author: "mblome"

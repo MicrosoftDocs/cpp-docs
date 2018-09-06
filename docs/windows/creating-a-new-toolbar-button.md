@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.toolbar"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Toolbar editor [C++], creating buttons"", ""toolbar buttons [C++], button image"", ""toolbar buttons [C++], creating"", ""toolbar buttons (in Toolbar editor)""]"]
+helpviewer_keywords: ["Toolbar editor [C++], creating buttons", "toolbar buttons [C++], button image", "toolbar buttons [C++], creating", "toolbar buttons (in Toolbar editor)"]
 ms.assetid: 46c120fe-4f2a-4887-a08f-bd1fea04b3f4
 author: "mikeblome"
 ms.author: "mblome"

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Functions with interior and native pointers, overloading""]"]
+helpviewer_keywords: ["Functions with interior and native pointers, overloading"]
 ms.assetid: d70df625-4aad-457c-84f5-70a0a290cc1f
 author: "mikeblome"
 ms.author: "mblome"

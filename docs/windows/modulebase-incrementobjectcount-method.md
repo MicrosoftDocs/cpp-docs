@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ModuleBase::IncrementObjectCount"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""IncrementObjectCount method""]"]
+helpviewer_keywords: ["IncrementObjectCount method"]
 ms.assetid: 2d70b472-684c-4bb7-8bab-09505cfcaf28
 author: "mikeblome"
 ms.author: "mblome"

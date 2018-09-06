@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""dialog boxes [C++], creating"", ""modal dialog boxes [C++], logon screens"", ""logon screens""]"]
+helpviewer_keywords: ["dialog boxes [C++], creating", "modal dialog boxes [C++], logon screens", "logon screens"]
 ms.assetid: 54823c27-1658-4388-bd12-0a1ce8f3899e
 author: "mikeblome"
 ms.author: "mblome"

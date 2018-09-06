@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""attributes [C++], class attributes""]"]
+helpviewer_keywords: ["attributes [C++/CLI], class attributes"]
 ms.assetid: fad04ea1-d8ff-46d4-bb42-2b4500a6ab60
 author: "mikeblome"
 ms.author: "mblome"

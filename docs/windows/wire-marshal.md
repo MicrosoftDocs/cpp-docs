@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.wire_marshal"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""wire_marshal attribute""]"]
+helpviewer_keywords: ["wire_marshal attribute"]
 ms.assetid: 244f9d72-776d-4ebd-b60a-cee600a126b5
 author: "mikeblome"
 ms.author: "mblome"

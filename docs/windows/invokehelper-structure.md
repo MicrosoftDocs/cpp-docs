@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::InvokeHelper"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""InvokeHelper structure""]"]
+helpviewer_keywords: ["InvokeHelper structure"]
 ms.assetid: 555ad2bc-4dd6-4e65-a2e2-1242c395f0e5
 author: "mikeblome"
 ms.author: "mblome"

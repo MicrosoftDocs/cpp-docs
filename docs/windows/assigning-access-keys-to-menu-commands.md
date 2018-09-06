@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""access keys [C++], checking"", ""menus [C++], shortcut keys"", ""keyboard shortcuts [C++], command assignments"", ""access keys [C++], assigning"", ""mnemonics [C++]"" adding to menus"", ""keyboard shortcuts [C++], uniqueness checking"", ""mnemonics [C++]"" uniqueness checking"", ""Check Mnemonics command""]"]
+helpviewer_keywords: ["access keys [C++], checking", "menus [C++], shortcut keys", "keyboard shortcuts [C++], command assignments", "access keys [C++], assigning", "mnemonics [C++], adding to menus", "keyboard shortcuts [C++], uniqueness checking", "mnemonics [C++], uniqueness checking", "Check Mnemonics command"]
 ms.assetid: fbcf1a00-af6a-4171-805a-0ac01d4e8b0d
 author: "mikeblome"
 ms.author: "mblome"

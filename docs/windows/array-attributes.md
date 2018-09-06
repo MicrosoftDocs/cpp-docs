@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""arrays [C++], attributes""]"]
+helpviewer_keywords: ["arrays [C++], attributes"]
 ms.assetid: 36f80b76-7f20-41ae-a6bf-460e5379f26b
 author: "mikeblome"
 ms.author: "mblome"

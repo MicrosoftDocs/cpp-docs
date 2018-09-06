@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::InternalAddRef"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""InternalAddRef method""]"]
+helpviewer_keywords: ["InternalAddRef method"]
 ms.assetid: f8e860ef-c56e-42a6-a712-77aaab1464ab
 author: "mikeblome"
 ms.author: "mblome"

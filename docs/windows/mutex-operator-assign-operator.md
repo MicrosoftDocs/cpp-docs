@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Mutex::operator="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""operator= operator""]"]
+helpviewer_keywords: ["operator= operator"]
 ms.assetid: 9b0ee206-a930-4fea-8dc0-1f79839e9d13
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::PutOnProgress"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""PutOnProgress method""]"]
+helpviewer_keywords: ["PutOnProgress method"]
 ms.assetid: 1f5f180e-eb5a-4afe-ac16-69dbf36f0383
 author: "mikeblome"
 ms.author: "mblome"

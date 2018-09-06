@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.customimage"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Custom Image dialog box [C++]""]"]
+helpviewer_keywords: ["Custom Image dialog box [C++]"]
 ms.assetid: 68e2cc5c-19de-428e-bc25-ec6b260247d0
 author: "mikeblome"
 ms.author: "mblome"

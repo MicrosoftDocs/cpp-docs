@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::BoolStruct"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""BoolStruct structure""]"]
+helpviewer_keywords: ["BoolStruct structure"]
 ms.assetid: 666eae78-e81d-4fb7-a9e4-1ba617d6d4cd
 author: "mikeblome"
 ms.author: "mblome"

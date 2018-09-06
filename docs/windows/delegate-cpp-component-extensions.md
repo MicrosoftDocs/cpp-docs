@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["delegate_cpp", "delegate"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""delegate keyword [C++]""]"]
+helpviewer_keywords: ["delegate keyword [C++]"]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
 author: "mikeblome"
 ms.author: "mblome"

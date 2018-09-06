@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.transmit_as"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""transmit_as attribute""]"]
+helpviewer_keywords: ["transmit_as attribute"]
 ms.assetid: 53d0b8ab-5b06-423e-83eb-3d01a10424b2
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::MutexTraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""MutexTraits structure""]"]
+helpviewer_keywords: ["MutexTraits structure"]
 ms.assetid: 6582df80-b9ba-4892-948f-d572a3b23d54
 author: "mikeblome"
 ms.author: "mblome"

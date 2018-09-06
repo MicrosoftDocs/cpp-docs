@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::Get"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Get method""]"]
+helpviewer_keywords: ["Get method"]
 ms.assetid: 078eee51-7bca-4924-a74b-cd4f6a05de31
 author: "mikeblome"
 ms.author: "mblome"

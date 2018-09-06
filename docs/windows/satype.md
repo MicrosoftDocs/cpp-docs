@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.satype"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""satype attribute""]"]
+helpviewer_keywords: ["satype attribute"]
 ms.assetid: 1716590b-6bcb-4aba-b1bc-82f7335f02c3
 author: "mikeblome"
 ms.author: "mblome"

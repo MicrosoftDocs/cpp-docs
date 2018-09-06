@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""ComPtrRef class""]"]
+helpviewer_keywords: ["ComPtrRef class"]
 ms.assetid: d6bdfd20-e977-45b4-9ac1-1b8efbdb77de
 author: "mikeblome"
 ms.author: "mblome"

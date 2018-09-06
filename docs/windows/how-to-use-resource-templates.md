@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""language-specific template files [C++]"", ""resource templates"", ""resources [C++], creating"", ""rct files [C++]"", ""templates, resource templates"", ""resources [C++], templates"", "".rct files [C++]""]"]
+helpviewer_keywords: ["language-specific template files [C++]", "resource templates", "resources [C++], creating", "rct files [C++]", "templates, resource templates", "resources [C++], templates", ".rct files [C++]"]
 ms.assetid: bdfe7060-f98e-4859-8285-9c8570360e9d
 author: "mikeblome"
 ms.author: "mblome"

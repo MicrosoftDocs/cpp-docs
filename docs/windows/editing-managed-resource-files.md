@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vb.xmldesigner.data"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["["".resx files [C++], editing"", ""resource files [C++], editing"", ""resx files [C++], editing""]"]
+helpviewer_keywords: [".resx files [C++], editing", "resource files [C++], editing", "resx files [C++], editing"]
 ms.assetid: 42593030-7897-4bf3-920c-e0b2d11c5bbd
 author: "mikeblome"
 ms.author: "mblome"

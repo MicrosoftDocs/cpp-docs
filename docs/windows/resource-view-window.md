@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vs.resourceview.F1"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""resources [C++], viewing"", ""Resource View window""]"]
+helpviewer_keywords: ["resources [C++], viewing", "Resource View window"]
 ms.assetid: 10be7ff6-195f-4783-9ec5-87e5e06a7369
 author: "mikeblome"
 ms.author: "mblome"

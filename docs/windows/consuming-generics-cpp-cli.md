@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""generics [C++], consuming from .NET languages""]"]
+helpviewer_keywords: ["generics [C++], consuming from .NET languages"]
 ms.assetid: e6330ef5-e907-432e-b527-7a22f5899639
 author: "mikeblome"
 ms.author: "mblome"

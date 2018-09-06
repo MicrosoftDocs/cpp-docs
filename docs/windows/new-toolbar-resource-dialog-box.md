@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.newtoolbarresource"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""New Toolbar Resource dialog box [C++]""]"]
+helpviewer_keywords: ["New Toolbar Resource dialog box [C++]"]
 ms.assetid: 52dd01ad-e748-4ab2-b3eb-59f5df990ca6
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.dialog"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""dialog boxes [C++], adding controls to""]"]
+helpviewer_keywords: ["dialog boxes [C++], adding controls to"]
 ms.assetid: b2a26d19-093f-49ca-93da-fef00dfbb381
 author: "mikeblome"
 ms.author: "mblome"

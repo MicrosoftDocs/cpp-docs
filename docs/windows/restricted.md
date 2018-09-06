@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.restricted"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""restricted attribute""]"]
+helpviewer_keywords: ["restricted attribute"]
 ms.assetid: 504a96be-b904-4269-8be1-920feba201b4
 author: "mikeblome"
 ms.author: "mblome"

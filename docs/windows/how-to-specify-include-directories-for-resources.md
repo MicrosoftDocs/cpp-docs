@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""directories [C++], specifying include paths for resources"", ""include files [C++], specifying for resources"", ""resources [C++], including in projects""]"]
+helpviewer_keywords: ["directories [C++], specifying include paths for resources", "include files [C++], specifying for resources", "resources [C++], including in projects"]
 ms.assetid: d6a7c0f6-4810-4bb0-b4b7-7d2476a20ca2
 author: "mikeblome"
 ms.author: "mblome"

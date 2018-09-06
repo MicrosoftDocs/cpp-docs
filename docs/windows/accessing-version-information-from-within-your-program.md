@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.version"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""VerQueryValue"", ""version information, accessing from within programs"", ""GetFileVersionInfo"", ""version information""]"]
+helpviewer_keywords: ["VerQueryValue", "version information, accessing from within programs", "GetFileVersionInfo", "version information"]
 ms.assetid: 18622333-d9e8-4309-9465-677cd10c79b1
 author: "mikeblome"
 ms.author: "mblome"

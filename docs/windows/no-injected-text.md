@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.no_injected_text"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""no_injected_text attribute""]"]
+helpviewer_keywords: ["no_injected_text attribute"]
 ms.assetid: 5256f808-e41e-4f4a-9ea5-e447919f5696
 author: "mikeblome"
 ms.author: "mblome"

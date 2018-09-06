@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ImplementsHelper"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""ImplementsHelper structure""]"]
+helpviewer_keywords: ["ImplementsHelper structure"]
 ms.assetid: b857ba80-81bd-4e53-92b6-210991954243
 author: "mikeblome"
 ms.author: "mblome"

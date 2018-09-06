@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Semaphore::Lock"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Lock method""]"]
+helpviewer_keywords: ["Lock method"]
 ms.assetid: 0eef6ede-dc7d-4f09-a6c8-2f7d39d65bfa
 author: "mikeblome"
 ms.author: "mblome"

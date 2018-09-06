@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["interface_CPP"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""interface class keyword"", ""interface struct keyword""]"]
+helpviewer_keywords: ["interface class keyword", "interface struct keyword"]
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
 author: "mikeblome"
 ms.author: "mblome"

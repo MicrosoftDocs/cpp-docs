@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::TryTransitionToCompleted"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""TryTransitionToCompleted method""]"]
+helpviewer_keywords: ["TryTransitionToCompleted method"]
 ms.assetid: 8d038e0a-47ec-4cfc-8aeb-6821282df67a
 author: "mikeblome"
 ms.author: "mblome"

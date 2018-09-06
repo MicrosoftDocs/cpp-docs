@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.immediatebind"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""immediatebind attribute""]"]
+helpviewer_keywords: ["immediatebind attribute"]
 ms.assetid: 186d40e6-9166-4d0c-9853-4e7e4d25226f
 author: "mikeblome"
 ms.author: "mblome"

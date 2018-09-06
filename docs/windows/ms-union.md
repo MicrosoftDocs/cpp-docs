@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.ms_union"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""ms_union attribute""]"]
+helpviewer_keywords: ["ms_union attribute"]
 ms.assetid: bb548689-6962-457e-af56-8ffdf68987eb
 author: "mikeblome"
 ms.author: "mblome"

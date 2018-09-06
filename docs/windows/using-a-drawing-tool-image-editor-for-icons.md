@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.drawing"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Image editor [C++], selecting drawing tools"", ""Image editor [C++], toolbar"", ""drawing tools""]"]
+helpviewer_keywords: ["Image editor [C++], selecting drawing tools", "Image editor [C++], toolbar", "drawing tools"]
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
 author: "mikeblome"
 ms.author: "mblome"

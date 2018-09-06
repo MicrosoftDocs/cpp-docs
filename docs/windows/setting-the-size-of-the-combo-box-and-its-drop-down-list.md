@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.combo"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""combo boxes, sizing"", ""controls [C++], sizing""]"]
+helpviewer_keywords: ["combo boxes, sizing", "controls [C++], sizing"]
 ms.assetid: 51fb53cf-9ddf-4a20-962e-8553938e55ee
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase::GetUnmarshalClass"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""GetUnmarshalClass method""]"]
+helpviewer_keywords: ["GetUnmarshalClass method"]
 ms.assetid: 535fc539-5b97-4967-b158-f7568f13d341
 author: "mikeblome"
 ms.author: "mblome"

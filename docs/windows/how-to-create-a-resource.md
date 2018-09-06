@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""toolbars [C++], resources"", ""resource toolbars"", ""resources [C++], creating""]"]
+helpviewer_keywords: ["toolbars [C++], resources", "resource toolbars", "resources [C++], creating"]
 ms.assetid: aad44914-9145-45a3-a7d8-9de89b366716
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::MethodReleaseNotifier::Invoke"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Invoke method""]"]
+helpviewer_keywords: ["Invoke method"]
 ms.assetid: 7467abab-9abc-4fd5-8f0e-ee9a4ef282b9
 author: "mikeblome"
 ms.author: "mblome"

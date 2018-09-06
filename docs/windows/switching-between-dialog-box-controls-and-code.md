@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""events [C++], viewing for controls"", ""Windows messages [C++], controls"", ""messages [C++], viewing for dialog boxes"", ""Dialog Editor [C++], accessing code"", ""code [C++], switching from Dialog Editor"", ""controls [C++], jumping to code"", ""Dialog Editor [C++], switching between controls and code""]"]
+helpviewer_keywords: ["events [C++], viewing for controls", "Windows messages [C++], controls", "messages [C++], viewing for dialog boxes", "Dialog Editor [C++], accessing code", "code [C++], switching from Dialog Editor", "controls [C++], jumping to code", "Dialog Editor [C++], switching between controls and code"]
 ms.assetid: 7da73815-b853-4203-ba45-bbe570695122
 author: "mikeblome"
 ms.author: "mblome"

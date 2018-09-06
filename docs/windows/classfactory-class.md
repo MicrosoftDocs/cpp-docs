@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ClassFactory"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""ClassFactory class""]"]
+helpviewer_keywords: ["ClassFactory class"]
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
 author: "mikeblome"
 ms.author: "mblome"

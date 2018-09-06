@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""attributes [C++], reference topics""]"]
+helpviewer_keywords: ["attributes [C++/CLI], reference topics"]
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
 author: "mikeblome"
 ms.author: "mblome"

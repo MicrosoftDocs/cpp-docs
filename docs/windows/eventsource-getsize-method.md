@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource::GetSize"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""GetSize method""]"]
+helpviewer_keywords: ["GetSize method"]
 ms.assetid: 7825aab5-1a6b-465f-9159-3a6684142d1f
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.last_is"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""last_is attribute""]"]
+helpviewer_keywords: ["last_is attribute"]
 ms.assetid: 9e045ac0-fa38-4249-af55-67bde5d0a58c
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::InvokeHelper::Invoke"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Invoke method""]"]
+helpviewer_keywords: ["Invoke method"]
 ms.assetid: 98618815-c30e-4699-b3dd-203c91b1bf3b
 author: "mikeblome"
 ms.author: "mblome"

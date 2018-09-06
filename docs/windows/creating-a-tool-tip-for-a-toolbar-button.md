@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""tool tips [C++], adding to toolbar buttons"", ""\n in tool tip"", ""toolbar buttons [C++], tool tips"", ""buttons [C++], tool tips"", ""Toolbar editor [C++], creating tool tips""]"]
+helpviewer_keywords: ["tool tips [C++], adding to toolbar buttons", "\n in tool tip", "toolbar buttons [C++], tool tips", "buttons [C++], tool tips", "Toolbar editor [C++], creating tool tips"]
 ms.assetid: 0af65342-fd78-4e78-8d0d-dc68f7fc462e
 author: "mikeblome"
 ms.author: "mblome"

@@ -5,7 +5,7 @@ ms.date: "06/18/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""resource editing"", ""resources [C++], editing""]"]
+helpviewer_keywords: ["resource editing", "resources [C++], editing"]
 ms.assetid: d0820df1-ba84-40ac-bce9-29ea5ee7e3f8
 author: "mikeblome"
 ms.author: "mblome"

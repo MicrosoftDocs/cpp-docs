@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["lang", "cli"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""lang namespace"", ""cli namespace""]"]
+helpviewer_keywords: ["lang namespace", "cli namespace"]
 ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
 author: "mikeblome"
 ms.author: "mblome"

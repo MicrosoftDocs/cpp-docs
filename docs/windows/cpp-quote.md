@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.cpp_quote"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""cpp_quote attribute""]"]
+helpviewer_keywords: ["cpp_quote attribute"]
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
 author: "mikeblome"
 ms.author: "mblome"

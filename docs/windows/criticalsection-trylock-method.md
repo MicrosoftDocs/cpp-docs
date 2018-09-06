@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::CriticalSection::TryLock"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""TryLock method""]"]
+helpviewer_keywords: ["TryLock method"]
 ms.assetid: 504bb87c-2cd0-4f54-b458-b3efb9789053
 author: "mikeblome"
 ms.author: "mblome"

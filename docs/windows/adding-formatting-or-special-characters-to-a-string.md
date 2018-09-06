@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""special characters, adding to strings"", ""ASCII characters, adding to strings"", ""strings [C++], formatting"", ""strings [C++], special characters""]"]
+helpviewer_keywords: ["special characters, adding to strings", "ASCII characters, adding to strings", "strings [C++], formatting", "strings [C++], special characters"]
 ms.assetid: c40f394a-8b2c-4896-ab30-6922863ddbb5
 author: "mikeblome"
 ms.author: "mblome"

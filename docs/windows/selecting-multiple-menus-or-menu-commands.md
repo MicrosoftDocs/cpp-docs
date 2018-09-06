@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""menu commands [C++], selecting"", ""menus [C++], selecting"", ""commands [C++], menu commands""]"]
+helpviewer_keywords: ["menu commands [C++], selecting", "menus [C++], selecting", "commands [C++], menu commands"]
 ms.assetid: b6f17897-2a40-4afd-97d4-a38b7661680b
 author: "mikeblome"
 ms.author: "mblome"

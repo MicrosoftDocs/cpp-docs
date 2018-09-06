@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClassFlags::value"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""value constant""]"]
+helpviewer_keywords: ["value constant"]
 ms.assetid: df5e6939-a424-489f-a5da-0027b0eee230
 author: "mikeblome"
 ms.author: "mblome"

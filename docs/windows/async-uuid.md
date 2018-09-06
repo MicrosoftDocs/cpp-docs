@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.async_uuid"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""async_uuid attribute""]"]
+helpviewer_keywords: ["async_uuid attribute"]
 ms.assetid: 235cb0d7-be58-4dd9-983c-e2a21bbc42c6
 author: "mikeblome"
 ms.author: "mblome"

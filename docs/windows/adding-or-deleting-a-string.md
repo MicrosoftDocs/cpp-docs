@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.string"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""strings [C++], adding to string tables"", ""string tables [C++], deleting strings"", ""strings [C++], deleting in string tables"", ""string tables [C++], adding strings""]"]
+helpviewer_keywords: ["strings [C++], adding to string tables", "string tables [C++], deleting strings", "strings [C++], deleting in string tables", "string tables [C++], adding strings"]
 ms.assetid: 077077b4-0f4b-4633-92d6-60b321164cab
 author: "mikeblome"
 ms.author: "mblome"

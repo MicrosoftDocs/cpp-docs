@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.db_accessor"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""db_accessor attribute""]"]
+helpviewer_keywords: ["db_accessor attribute"]
 ms.assetid: ec407a9f-24d7-4822-96d4-7cc6a0301815
 author: "mikeblome"
 ms.author: "mblome"

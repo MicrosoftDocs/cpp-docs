@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Toolbar editor [C++], spacing toolbar buttons"", ""toolbar buttons [C++], space between buttons""]"]
+helpviewer_keywords: ["Toolbar editor [C++], spacing toolbar buttons", "toolbar buttons [C++], space between buttons"]
 ms.assetid: 3bbbacec-cd42-4c35-9ea5-de62daa4041d
 author: "mikeblome"
 ms.author: "mblome"

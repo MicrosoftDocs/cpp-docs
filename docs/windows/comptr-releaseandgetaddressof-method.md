@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::ReleaseAndGetAddressOf"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""ReleaseAndGetAddressOf method""]"]
+helpviewer_keywords: ["ReleaseAndGetAddressOf method"]
 ms.assetid: 3751dcb4-d50e-432c-89e4-e736be34d434
 author: "mikeblome"
 ms.author: "mblome"

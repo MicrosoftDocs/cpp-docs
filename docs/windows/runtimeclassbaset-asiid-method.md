@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::RuntimeClassBaseT::AsIID"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""AsIID method""]"]
+helpviewer_keywords: ["AsIID method"]
 ms.assetid: 90d7df8a-cf9e-4eef-8837-bc1a25f3fa1a
 author: "mikeblome"
 ms.author: "mblome"

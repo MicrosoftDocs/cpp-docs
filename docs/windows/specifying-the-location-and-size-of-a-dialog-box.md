@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""dialog boxes [C++], size"", ""dialog boxes [C++], positioning""]"]
+helpviewer_keywords: ["dialog boxes [C++], size", "dialog boxes [C++], positioning"]
 ms.assetid: 2b7c495e-6595-4cfb-9664-80b2826d0851
 author: "mikeblome"
 ms.author: "mblome"

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""bitmaps [C++], converting to toolbars"", ""Toolbar editor [C++], converting bitmaps"", ""toolbars [C++], converting bitmaps""]"]
+helpviewer_keywords: ["bitmaps [C++], converting to toolbars", "Toolbar editor [C++], converting bitmaps", "toolbars [C++], converting bitmaps"]
 ms.assetid: 971c181b-40f5-44be-843d-677a7c235667
 author: "mikeblome"
 ms.author: "mblome"

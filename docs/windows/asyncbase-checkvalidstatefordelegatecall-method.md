@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::CheckValidStateForDelegateCall"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""CheckValidStateForDelegateCall method""]"]
+helpviewer_keywords: ["CheckValidStateForDelegateCall method"]
 ms.assetid: d997ebe7-2378-4e74-a379-f0f85e6922f0
 author: "mikeblome"
 ms.author: "mblome"

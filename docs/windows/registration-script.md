@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.registration_script"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""registration_script attribute""]"]
+helpviewer_keywords: ["registration_script attribute"]
 ms.assetid: 786f8072-9187-4163-a979-7a604dd4c888
 author: "mikeblome"
 ms.author: "mblome"

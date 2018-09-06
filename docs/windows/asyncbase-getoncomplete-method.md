@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::GetOnComplete"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""GetOnComplete method""]"]
+helpviewer_keywords: ["GetOnComplete method"]
 ms.assetid: f06ae02d-9a88-41d2-b749-bdc1a7ff8748
 author: "mikeblome"
 ms.author: "mblome"

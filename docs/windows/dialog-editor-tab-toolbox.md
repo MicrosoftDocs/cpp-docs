@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Toolbox [C++], Dialog Editor tab"", ""controls [C++], types"", ""syslink controls in dialog boxes"", ""custom controls [C++], dialog boxes"", ""controls [C++], standard"", ""Dialog Editor [C++], creating controls"", ""controls [C++], adding to dialog boxes""]"]
+helpviewer_keywords: ["Toolbox [C++], Dialog Editor tab", "controls [C++], types", "syslink controls in dialog boxes", "custom controls [C++], dialog boxes", "controls [C++], standard", "Dialog Editor [C++], creating controls", "controls [C++], adding to dialog boxes"]
 ms.assetid: 253885c2-dcb9-4d8e-ac9b-805ea31cbf5e
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.opendeviceimage"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Open <Device> Image dialog box [C++]""]"]
+helpviewer_keywords: ["Open <Device> Image dialog box [C++]"]
 ms.assetid: 27cb60ec-8704-4e58-ab1c-8cc3b34e66be
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.version"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""blocks, deleting"", ""version information, deleting blocks"", ""resources [C++], deleting version information""]"]
+helpviewer_keywords: ["blocks, deleting", "version information, deleting blocks", "resources [C++], deleting version information"]
 ms.assetid: 4e1641eb-d5b2-4183-b273-bc5b51af1537
 author: "mikeblome"
 ms.author: "mblome"

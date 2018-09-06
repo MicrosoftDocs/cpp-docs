@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ModuleBase::ModuleBase"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""ModuleBase, constructor""]"]
+helpviewer_keywords: ["ModuleBase, constructor"]
 ms.assetid: f5aeb035-b938-45d9-aed2-3b5b75921191
 author: "mikeblome"
 ms.author: "mblome"

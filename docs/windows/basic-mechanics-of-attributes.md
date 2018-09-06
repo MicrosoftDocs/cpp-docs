@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""attributes [C++], inserting in code"", ""attributes [C++], about attributes""]"]
+helpviewer_keywords: ["attributes [C++/CLI], inserting in code", "attributes [C++/CLI], about attributes"]
 ms.assetid: dc2069c3-b9f3-4a72-965c-4e5208ce8e34
 author: "mikeblome"
 ms.author: "mblome"

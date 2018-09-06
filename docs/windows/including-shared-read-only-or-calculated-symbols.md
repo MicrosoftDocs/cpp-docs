@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.shared.calculated"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""symbols [C++], read-only"", ""symbols [C++], shared"", ""symbols [C++], calculated"", ""read-only symbols"", ""symbol directives"", ""calculated symbols"", ""shared symbols""]"]
+helpviewer_keywords: ["symbols [C++], read-only", "symbols [C++], shared", "symbols [C++], calculated", "read-only symbols", "symbol directives", "calculated symbols", "shared symbols"]
 ms.assetid: 32b77faf-a066-4371-a072-9a5b84c0766d
 author: "mikeblome"
 ms.author: "mblome"

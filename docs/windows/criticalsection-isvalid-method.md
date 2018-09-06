@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::CriticalSection::IsValid"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""IsValid method""]"]
+helpviewer_keywords: ["IsValid method"]
 ms.assetid: 0080106c-925e-4b3b-89d4-f47668e8bce6
 author: "mikeblome"
 ms.author: "mblome"

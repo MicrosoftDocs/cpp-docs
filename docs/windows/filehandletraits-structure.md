@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::FileHandleTraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""FileHandleTraits structure""]"]
+helpviewer_keywords: ["FileHandleTraits structure"]
 ms.assetid: e1107c42-2cd6-4253-9c16-8ecb35f05cd9
 author: "mikeblome"
 ms.author: "mblome"

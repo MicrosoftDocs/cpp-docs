@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""opaque backgrounds [C++]"", ""colors [C++], image"", ""Image editor [C++], transparent or opague backgrounds"", ""images [C++], transparency"", ""images [C++], opaque background""]"]
+helpviewer_keywords: ["opaque backgrounds [C++]", "colors [C++], image", "Image editor [C++], transparent or opague backgrounds", "images [C++], transparency", "images [C++], opaque background"]
 ms.assetid: 61b743d9-c86b-405d-9a81-0806431b4363
 author: "mikeblome"
 ms.author: "mblome"

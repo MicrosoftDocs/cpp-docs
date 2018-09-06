@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClass::QueryInterface"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""QueryInterface method""]"]
+helpviewer_keywords: ["QueryInterface method"]
 ms.assetid: 8f01f4a1-3fa2-4a8e-88c6-03629236cb9f
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ActivationFactory::GetTrustLevel"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""GetTrustLevel method""]"]
+helpviewer_keywords: ["GetTrustLevel method"]
 ms.assetid: 31547ae6-d2ab-4039-923c-154d53fb1a8b
 author: "mikeblome"
 ms.author: "mblome"

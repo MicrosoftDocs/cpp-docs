@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vcfirstapp", "vccreatefirst"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""command-line applications [C++], standard"", ""standard applications [C++]""]"]
+helpviewer_keywords: ["command-line applications [C++], standard", "standard applications [C++]"]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
 author: "mikeblome"
 ms.author: "mblome"

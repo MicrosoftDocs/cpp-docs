@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Test Dialog command"", ""testing, dialog boxes"", ""dialog boxes [C++], testing""]"]
+helpviewer_keywords: ["Test Dialog command", "testing, dialog boxes", "dialog boxes [C++], testing"]
 ms.assetid: 45034ee9-c554-4f4b-8c46-6ddefdee8951
 author: "mikeblome"
 ms.author: "mblome"

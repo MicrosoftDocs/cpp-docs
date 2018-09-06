@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource::targets_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""targets_ data member""]"]
+helpviewer_keywords: ["targets_ data member"]
 ms.assetid: 5d5cee05-3315-4514-bce2-19173c923c7d
 author: "mikeblome"
 ms.author: "mblome"

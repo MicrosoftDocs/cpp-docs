@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""toolbar buttons [C++], deleting"", ""Toolbar editor [C++], deleting buttons""]"]
+helpviewer_keywords: ["toolbar buttons [C++], deleting", "Toolbar editor [C++], deleting buttons"]
 ms.assetid: 0888cb9b-6804-4717-93d0-3437bbc6241c
 author: "mikeblome"
 ms.author: "mblome"

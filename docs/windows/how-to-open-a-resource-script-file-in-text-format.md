@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resource"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""resource script files [C++], opening in text format"", "".rc files [C++], opening in text format"", ""rc files [C++], opening in text format""]"]
+helpviewer_keywords: ["resource script files [C++], opening in text format", ".rc files [C++], opening in text format", "rc files [C++], opening in text format"]
 ms.assetid: 0bc57527-f53b-40c9-99a9-4dcbc5c9af57
 author: "mikeblome"
 ms.author: "mblome"

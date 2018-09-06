@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceTraits::CastToBase"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""CastToBase method""]"]
+helpviewer_keywords: ["CastToBase method"]
 ms.assetid: 0591a017-0adf-4358-b946-eb0a307ce7f2
 author: "mikeblome"
 ms.author: "mblome"

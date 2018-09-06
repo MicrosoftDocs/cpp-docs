@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.com_interface_entry"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""com_interface_entry attribute""]"]
+helpviewer_keywords: ["com_interface_entry attribute"]
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
 author: "mikeblome"
 ms.author: "mblome"

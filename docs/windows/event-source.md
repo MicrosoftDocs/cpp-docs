@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.event_source"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""event handling, attributes"", ""event logs, event source"", ""event sources, creating"", ""event_source attribute"", ""event sources"", ""event handling, creating event source""]"]
+helpviewer_keywords: ["event handling, attributes", "event logs, event source", "event sources, creating", "event_source attribute", "event sources", "event handling, creating event source"]
 ms.assetid: 0983e36a-6127-4fbb-8a22-8dfec6564c16
 author: "mikeblome"
 ms.author: "mblome"

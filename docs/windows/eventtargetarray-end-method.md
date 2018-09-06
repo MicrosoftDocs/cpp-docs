@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::EventTargetArray::End"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""End method""]"]
+helpviewer_keywords: ["End method"]
 ms.assetid: 20c491b8-f355-4d8f-ad14-8f46121d9af6
 author: "mikeblome"
 ms.author: "mblome"

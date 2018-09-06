@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.GridSettings", "vc.editors.gridsettings"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Grid Settings dialog box [C++]""]"]
+helpviewer_keywords: ["Grid Settings dialog box [C++]"]
 ms.assetid: 59ce033a-ff10-48cd-b414-f9cb74da6789
 author: "mikeblome"
 ms.author: "mblome"

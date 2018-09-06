@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.vi_progid"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""vi_progid attribute""]"]
+helpviewer_keywords: ["vi_progid attribute"]
 ms.assetid: a52449be-b93e-4111-b883-44bb8da53261
 author: "mikeblome"
 ms.author: "mblome"

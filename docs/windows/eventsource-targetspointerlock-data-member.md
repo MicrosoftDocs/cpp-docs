@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource::targetsPointerLock_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""targetsPointerLock_ data member""]"]
+helpviewer_keywords: ["targetsPointerLock_ data member"]
 ms.assetid: 8f08409f-5262-4be7-9cf1-2ed15f19684a
 author: "mikeblome"
 ms.author: "mblome"

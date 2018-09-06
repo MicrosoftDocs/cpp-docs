@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.noncreatable"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""noncreatable attribute""]"]
+helpviewer_keywords: ["noncreatable attribute"]
 ms.assetid: 4d17937b-0bff-41af-ba57-53e18b7ab5a9
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClass::~RuntimeClass"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""~RuntimeClass, destructor""]"]
+helpviewer_keywords: ["~RuntimeClass, destructor"]
 ms.assetid: 561c9427-7877-47cb-bf0e-a5cf425bb657
 author: "mikeblome"
 ms.author: "mblome"

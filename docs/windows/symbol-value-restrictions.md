@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.restrictions.value"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""symbols [C++], value restrictions"", ""restrictions, symbol values""]"]
+helpviewer_keywords: ["symbols [C++], value restrictions", "restrictions, symbol values"]
 ms.assetid: 32467ec3-690b-4cd0-a4d0-7d189a3296cb
 author: "mikeblome"
 ms.author: "mblome"

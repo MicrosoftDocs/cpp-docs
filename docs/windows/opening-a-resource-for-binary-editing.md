@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""binary data, editing"", ""resources [C++], opening for binary editing""]"]
+helpviewer_keywords: ["binary data, editing", "resources [C++], opening for binary editing"]
 ms.assetid: d3cdb0e4-da66-410d-8e49-b29073ff2929
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.nonbrowsable"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""nonbrowsable attribute""]"]
+helpviewer_keywords: ["nonbrowsable attribute"]
 ms.assetid: e71a98e7-4b65-454a-9829-342b9f2a84be
 author: "mikeblome"
 ms.author: "mblome"

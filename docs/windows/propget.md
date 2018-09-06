@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.propget"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""propget attribute""]"]
+helpviewer_keywords: ["propget attribute"]
 ms.assetid: c9d4a97f-36dd-4b61-8eb0-b1a217598f14
 author: "mikeblome"
 ms.author: "mblome"

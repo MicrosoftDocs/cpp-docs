@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::WeakRef"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""WeakRef class""]"]
+helpviewer_keywords: ["WeakRef class"]
 ms.assetid: 572be703-c641-496c-8af5-ad6164670ba1
 author: "mikeblome"
 ms.author: "mblome"

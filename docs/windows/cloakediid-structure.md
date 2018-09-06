@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::CloakedIid"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""CloakedIid structure""]"]
+helpviewer_keywords: ["CloakedIid structure"]
 ms.assetid: 82e0e377-ca3a-46bc-b850-ae2c46c15bb5
 author: "mikeblome"
 ms.author: "mblome"

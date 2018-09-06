@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Make Same Size command"", ""controls [C++], sizing""]"]
+helpviewer_keywords: ["Make Same Size command", "controls [C++], sizing"]
 ms.assetid: 94b50613-67e2-497b-a2b6-6d98dccfd345
 author: "mikeblome"
 ms.author: "mblome"

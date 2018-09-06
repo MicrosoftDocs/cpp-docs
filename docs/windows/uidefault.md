@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.uidefault"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""uidefault attribute""]"]
+helpviewer_keywords: ["uidefault attribute"]
 ms.assetid: 200de0e0-2e34-40a2-bae4-8d485a62264d
 author: "mikeblome"
 ms.author: "mblome"

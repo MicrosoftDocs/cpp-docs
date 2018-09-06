@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ClassFactory::LockServer"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""LockServer method""]"]
+helpviewer_keywords: ["LockServer method"]
 ms.assetid: 8d859815-956d-4f81-a5af-7cdee7e945de
 author: "mikeblome"
 ms.author: "mblome"

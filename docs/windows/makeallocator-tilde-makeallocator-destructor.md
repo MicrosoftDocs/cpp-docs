@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::MakeAllocator::~MakeAllocator"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""~MakeAllocator, destructor""]"]
+helpviewer_keywords: ["~MakeAllocator, destructor"]
 ms.assetid: f1299c5f-cc6b-4d4e-85d4-aee1be0e2b0a
 author: "mikeblome"
 ms.author: "mblome"

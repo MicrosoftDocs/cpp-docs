@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Win32 applications, console"", ""Win32, console applications"", ""console applications, Win32""]"]
+helpviewer_keywords: ["Win32 applications, console", "Win32, console applications", "console applications, Win32"]
 ms.assetid: aedfb6b3-ca1f-4e8e-8439-1b680810ee47
 author: "mikeblome"
 ms.author: "mblome"

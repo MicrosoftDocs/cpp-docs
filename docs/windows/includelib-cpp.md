@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.includelib"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""includelib attribute""]"]
+helpviewer_keywords: ["includelib attribute"]
 ms.assetid: cd90ea6e-5ae8-4f11-b8d1-662db95412b2
 author: "mikeblome"
 ms.author: "mblome"

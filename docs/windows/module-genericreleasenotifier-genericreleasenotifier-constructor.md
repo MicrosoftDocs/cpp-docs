@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::GenericReleaseNotifier::GenericReleaseNotifier"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""GenericReleaseNotifier, constructor""]"]
+helpviewer_keywords: ["GenericReleaseNotifier, constructor"]
 ms.assetid: feb5b687-a4b0-4809-9022-8f292181b7a1
 author: "mikeblome"
 ms.author: "mblome"

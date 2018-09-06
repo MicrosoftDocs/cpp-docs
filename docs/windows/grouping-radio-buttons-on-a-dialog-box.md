@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog.grouping"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""member variables, adding to radio button groups"", ""variables, dialog box control member variables"", ""dialog box controls [C++], grouping radio buttons"", ""grouping controls"", ""radio buttons, grouping on dialog boxes""]"]
+helpviewer_keywords: ["member variables, adding to radio button groups", "variables, dialog box control member variables", "dialog box controls [C++], grouping radio buttons", "grouping controls", "radio buttons [C++], grouping on dialog boxes"]
 ms.assetid: 3cc43f9e-56c8-4faa-9930-ce81733c69de
 author: "mikeblome"
 ms.author: "mblome"

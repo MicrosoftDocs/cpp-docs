@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource::Remove"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Remove method""]"]
+helpviewer_keywords: ["Remove method"]
 ms.assetid: afafedf5-3665-4408-a639-fb6884f7c5f9
 author: "mikeblome"
 ms.author: "mblome"

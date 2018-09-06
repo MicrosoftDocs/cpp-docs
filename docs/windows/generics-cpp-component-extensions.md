@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["generic_cpp", "generic"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""generics [C++]""]"]
+helpviewer_keywords: ["generics [C++]"]
 ms.assetid: c7ccc316-a411-4c00-b2e2-f0c0eadc6cfd
 author: "mikeblome"
 ms.author: "mblome"

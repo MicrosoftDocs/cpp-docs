@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""DLUs (dialog units)"", ""controls [C++], aligning"", ""Dialog Editor [C++], snap to guides"", ""guides, tick mark interval"", ""dialog box controls [C++], placement"", ""guides, aligning controls"", ""dialog units (DLUs)"", ""snap to guides (Dialog editor)"", ""controls [C++], sizing"", ""tick mark interval in Dialog editor"", ""controls [C++], snap to guides/grid""]"]
+helpviewer_keywords: ["DLUs (dialog units)", "controls [C++], aligning", "Dialog Editor [C++], snap to guides", "guides, tick mark interval", "dialog box controls [C++], placement", "guides, aligning controls", "dialog units (DLUs)", "snap to guides (Dialog editor)", "controls [C++], sizing", "tick mark interval in Dialog editor", "controls [C++], snap to guides/grid"]
 ms.assetid: 17db84ba-5288-4478-be57-afa748aa6447
 author: "mikeblome"
 ms.author: "mblome"

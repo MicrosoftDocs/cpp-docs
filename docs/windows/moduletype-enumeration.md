@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ModuleType"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""ModuleType enumeration""]"]
+helpviewer_keywords: ["ModuleType enumeration"]
 ms.assetid: 61a763af-a5a4-451d-8b40-815af507fcde
 author: "mikeblome"
 ms.author: "mblome"

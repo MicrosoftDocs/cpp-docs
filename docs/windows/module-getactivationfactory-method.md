@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::GetActivationFactory"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""GetActivationFactory method""]"]
+helpviewer_keywords: ["GetActivationFactory method"]
 ms.assetid: 59da8844-072e-414b-b89c-1db1cc4fd81d
 author: "mikeblome"
 ms.author: "mblome"

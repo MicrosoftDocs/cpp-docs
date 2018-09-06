@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Key property""]"]
+helpviewer_keywords: ["Key property"]
 ms.assetid: d1570cd9-b414-4cd6-96bd-47c38281eaca
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClass::RuntimeClass"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""RuntimeClass, constructor""]"]
+helpviewer_keywords: ["RuntimeClass, constructor"]
 ms.assetid: b096e89c-1b8f-4605-8c34-a1cd62e4806e
 author: "mikeblome"
 ms.author: "mblome"

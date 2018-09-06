@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.symbol.resource"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""resource symbols"", ""View Use button"", ""resource editors [C++], resource symbols""]"]
+helpviewer_keywords: ["resource symbols", "View Use button", "resource editors [C++], resource symbols"]
 ms.assetid: f715807b-5af2-4627-be25-be63b23fd097
 author: "mikeblome"
 ms.author: "mblome"

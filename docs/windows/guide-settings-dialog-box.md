@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""DLUs (dialog units)"", ""Dialog Editor [C++], snap to guides"", ""grid spacing"", ""guides, settings"", ""dialog units (DLUs)"", ""layout grid in Dialog Editor"", ""snap to guides (Dialog editor)"", ""controls [C++], snap to guides/grid"", ""Guide Settings dialog box (Dialog editor)""]"]
+helpviewer_keywords: ["DLUs (dialog units)", "Dialog Editor [C++], snap to guides", "grid spacing", "guides, settings", "dialog units (DLUs)", "layout grid in Dialog Editor", "snap to guides (Dialog editor)", "controls [C++], snap to guides/grid", "Guide Settings dialog box (Dialog editor)"]
 ms.assetid: 55381e1c-146a-4fa7-b1b3-b1492817615f
 author: "mikeblome"
 ms.author: "mblome"

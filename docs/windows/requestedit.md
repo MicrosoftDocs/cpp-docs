@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.requestedit"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""requestedit attribute""]"]
+helpviewer_keywords: ["requestedit attribute"]
 ms.assetid: b3c24790-3c4a-4646-8722-03d7b51172ee
 author: "mikeblome"
 ms.author: "mblome"

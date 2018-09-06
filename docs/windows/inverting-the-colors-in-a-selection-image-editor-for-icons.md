@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.color"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""colors [C++], image"", ""Image editor [C++], color inversion"", ""images [C++], colors"", ""colors [C++], inverting""]"]
+helpviewer_keywords: ["colors [C++], image", "Image editor [C++], color inversion", "images [C++], colors", "colors [C++], inverting"]
 ms.assetid: ec8c724c-6595-4ae8-8893-56e40c14033e
 author: "mikeblome"
 ms.author: "mblome"

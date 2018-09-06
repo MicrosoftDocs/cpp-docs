@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.dialog"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Dialog Editor [C++], shortcut keys""]"]
+helpviewer_keywords: ["Dialog Editor [C++], shortcut keys"]
 ms.assetid: 940270e9-a974-425b-a681-dfeaba0adf66
 author: "mikeblome"
 ms.author: "mblome"

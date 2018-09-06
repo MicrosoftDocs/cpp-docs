@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase::marshaller_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""marshaller_ data member""]"]
+helpviewer_keywords: ["marshaller_ data member"]
 ms.assetid: bed5e718-e9d8-433b-8fa4-266282555a56
 author: "mikeblome"
 ms.author: "mblome"

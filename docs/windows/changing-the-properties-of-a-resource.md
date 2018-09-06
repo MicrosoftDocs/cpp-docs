@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""properties [C++], resources"", ""resources [C++], properties""]"]
+helpviewer_keywords: ["properties [C++], resources", "resources [C++], properties"]
 ms.assetid: c4373b36-2651-4954-afa6-3f66300673d4
 author: "mikeblome"
 ms.author: "mblome"

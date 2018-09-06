@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeMultiply"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""SafeMultiply function""]"]
+helpviewer_keywords: ["SafeMultiply function"]
 ms.assetid: 81d988a5-fac7-4930-8c37-c24fa8e2c853
 author: "mikeblome"
 ms.author: "mblome"

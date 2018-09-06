@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::ChainInterfaces::Verify"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Verify method""]"]
+helpviewer_keywords: ["Verify method"]
 ms.assetid: c591e130-8686-4130-ba69-1aaedc250038
 author: "mikeblome"
 ms.author: "mblome"

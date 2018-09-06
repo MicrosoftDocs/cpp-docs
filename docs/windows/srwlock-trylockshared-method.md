@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::SRWLock::TryLockShared"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""TryLockShared method""]"]
+helpviewer_keywords: ["TryLockShared method"]
 ms.assetid: 10cc198d-39a0-4d18-aa78-706744948668
 author: "mikeblome"
 ms.author: "mblome"

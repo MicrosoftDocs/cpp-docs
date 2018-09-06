@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.switch_type"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""switch_type attribute""]"]
+helpviewer_keywords: ["switch_type attribute"]
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
 author: "mikeblome"
 ms.author: "mblome"

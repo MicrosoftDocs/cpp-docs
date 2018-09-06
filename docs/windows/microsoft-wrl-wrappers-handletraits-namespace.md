@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""HandleTraits namespace""]"]
+helpviewer_keywords: ["HandleTraits namespace"]
 ms.assetid: 2fb5c6d1-bfc2-4e09-91eb-31705064ffb3
 author: "mikeblome"
 ms.author: "mblome"

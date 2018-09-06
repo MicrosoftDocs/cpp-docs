@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Close method""]"]
+helpviewer_keywords: ["Close method"]
 ms.assetid: 6fb2fa0d-df20-45dc-856f-f78497f8bdf9
 author: "mikeblome"
 ms.author: "mblome"

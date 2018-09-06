@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.entry"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""entry attribute""]"]
+helpviewer_keywords: ["entry attribute"]
 ms.assetid: ba4843e3-d7ad-4b86-9a15-0b4192f0f698
 author: "mikeblome"
 ms.author: "mblome"

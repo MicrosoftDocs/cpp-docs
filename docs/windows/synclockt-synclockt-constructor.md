@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""SyncLockT, constructor""]"]
+helpviewer_keywords: ["SyncLockT, constructor"]
 ms.assetid: 713dfd9f-7369-4d86-b4a0-8b32c184d89b
 author: "mikeblome"
 ms.author: "mblome"

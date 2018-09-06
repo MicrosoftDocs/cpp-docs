@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Make"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""Make function""]"]
+helpviewer_keywords: ["Make function"]
 ms.assetid: 66704143-df99-4a95-904d-ed99607e1034
 author: "mikeblome"
 ms.author: "mblome"

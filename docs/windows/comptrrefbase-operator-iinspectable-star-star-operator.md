@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRefBase::operator IInspectable**"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""operator IInspectable** operator""]"]
+helpviewer_keywords: ["operator IInspectable** operator"]
 ms.assetid: 06ac1051-606c-449b-a566-cac78ca53762
 author: "mikeblome"
 ms.author: "mblome"

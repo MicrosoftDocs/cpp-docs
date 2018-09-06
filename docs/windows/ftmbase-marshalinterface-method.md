@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase::MarshalInterface"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""MarshalInterface method""]"]
+helpviewer_keywords: ["MarshalInterface method"]
 ms.assetid: fc8421b4-06e4-4925-b908-c285fe4790d2
 author: "mikeblome"
 ms.author: "mblome"

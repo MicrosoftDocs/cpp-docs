@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::MethodReleaseNotifier"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""MethodReleaseNotifier class""]"]
+helpviewer_keywords: ["MethodReleaseNotifier class"]
 ms.assetid: 5c2902be-964b-488f-9f1c-adf504995cbc
 author: "mikeblome"
 ms.author: "mblome"

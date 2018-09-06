@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.defaultvtable"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["[""defaultvtable attribute""]"]
+helpviewer_keywords: ["defaultvtable attribute"]
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
 author: "mikeblome"
 ms.author: "mblome"
