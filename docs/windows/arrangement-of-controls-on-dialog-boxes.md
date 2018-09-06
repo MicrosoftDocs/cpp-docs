@@ -1,5 +1,5 @@
 ---
-title: "Arrangement of Controls on Dialog Box (C++)es | Microsoft Docs"
+title: "Arrangement of Controls on Dialog Boxes (C++)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]

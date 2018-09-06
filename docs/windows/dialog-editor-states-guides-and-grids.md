@@ -1,5 +1,5 @@
 ---
-title: "Dialog Editor (C++) States (Guides and Grids) | Microsoft Docs"
+title: "Dialog Editor States (Guides and Grids) (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Dialog Editor (C++) States (Guides and Grids)
+# Dialog Editor States (Guides and Grids) (C++) 
 
 You can arrange controls on dialog boxes with the **Dialog** editor in one of three different states:
 

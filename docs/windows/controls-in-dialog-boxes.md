@@ -1,5 +1,5 @@
 ---
-title: "Controls in Dialog Box (C++)es | Microsoft Docs"
+title: "Controls in Dialog Boxes (C++)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
