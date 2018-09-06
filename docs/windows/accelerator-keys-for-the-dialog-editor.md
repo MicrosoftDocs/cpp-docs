@@ -1,5 +1,5 @@
 ---
-title: "Accelerator Keys for the C++ Dialog Editor | Microsoft Docs"
+title: "Accelerator Keys for the Dialog Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Accelerator Keys for the C++ Dialog Editor
+# Accelerator Keys for the Dialog Editor (C++)
 
 Below are the default accelerator keys for the Dialog editor commands. To change shortcut keys, click **Options** on the **Tools** menu, then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
 

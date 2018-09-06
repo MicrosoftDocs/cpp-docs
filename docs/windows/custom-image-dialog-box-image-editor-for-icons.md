@@ -1,5 +1,5 @@
 ---
-title: "Custom Image C++ Dialog Box (Image Editor for Icons) | Microsoft Docs"
+title: "Custom Image Dialog Box (C++) (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Custom Image C++ Dialog Box (Image Editor for Icons)
+# Custom Image Dialog Box (C++) (Image Editor for Icons)
 Enables you to create a new image with a custom size and number of colors.
  **Width**  
  Provides a space for you to enter the width of the custom image in pixels (1 - 512, limit of 2048).

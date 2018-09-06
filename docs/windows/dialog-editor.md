@@ -1,5 +1,5 @@
 ---
-title: "C++ Dialog Editor | Microsoft Docs"
+title: "Dialog Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# C++ Dialog Editor
+# Dialog Editor (C++)
 
 The **Dialog** editor allows you to create or edit dialog box resources. You open the dialog editor by double-clicking on a dialog’s .rc file in the **Resource View** window (**View** > **Resource View**). Note that **Resource View** is not available in Express editions.
 

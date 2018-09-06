@@ -1,5 +1,5 @@
 ---
-title: "Changing the Properties of a C++ Toolbar Button | Microsoft Docs"
+title: "Changing the Properties of a Toolbar Button (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Changing the Properties of a C++ Toolbar Button
+# Changing the Properties of a Toolbar Button (C++)
 
 ### To change the properties of a toolbar button
 

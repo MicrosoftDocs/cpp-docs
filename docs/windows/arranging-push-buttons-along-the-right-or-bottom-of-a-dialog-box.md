@@ -1,5 +1,5 @@
 ---
-title: "Arranging Push Buttons Along the Right or Bottom of a C++ Dialog Box | Microsoft Docs"
+title: "Arranging Push Buttons Along the Right or Bottom of a Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Arranging Push Buttons Along the Right or Bottom of a C++ Dialog Box
+# Arranging Push Buttons Along the Right or Bottom of a Dialog Box (C++)
 
 ### To arrange push buttons along the right or bottom of a dialog box
 

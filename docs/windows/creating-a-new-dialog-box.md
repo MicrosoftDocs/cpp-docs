@@ -1,5 +1,5 @@
 ---
-title: "Creating a New C++ Dialog Box | Microsoft Docs"
+title: "Creating a New Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Creating a New C++ Dialog Box
+# Creating a New Dialog Box (C++)
 
 ### To create a new dialog box
 

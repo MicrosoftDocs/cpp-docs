@@ -1,5 +1,5 @@
 ---
-title: "C++ Dialog Editor Tab, Toolbox | Microsoft Docs"
+title: "Dialog Editor (C++) Tab, Toolbox | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# C++ Dialog Editor Tab, Toolbox
+# Dialog Editor (C++) Tab, Toolbox
 
 The **Dialog Editor** tab appears in the [Toolbox window](/visualstudio/ide/reference/toolbox) when you're working in the **Dialog** editor. To add controls to your new dialog box, drag controls from the **Toolbox** to the dialog box you are creating (for more information, see [Adding a Control to a Dialog Box](adding-a-control-to-a-dialog-box.md)). You can then move the controls around or change their size and shape.
 

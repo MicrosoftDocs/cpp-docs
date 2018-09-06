@@ -1,5 +1,5 @@
 ---
-title: "New Toolbar Resource C++ Dialog Box | Microsoft Docs"
+title: "New Toolbar Resource Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# New Toolbar Resource C++ Dialog Box
+# New Toolbar Resource Dialog Box (C++)
 
 The **New Toolbar Resource** dialog box allows you to specify the width and height of the buttons you are adding to a toolbar resource in a C++ project. The default is 16 × 15 pixels.
 

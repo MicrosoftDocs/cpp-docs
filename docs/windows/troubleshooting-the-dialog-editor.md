@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting the C++ Dialog Editor | Microsoft Docs"
+title: "Troubleshooting the Dialog Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Troubleshooting the C++ Dialog Editor
+# Troubleshooting the Dialog Editor (C++)
 
 Below are a few issues of which you should be aware when working in the C++ **Dialog** editor.
 

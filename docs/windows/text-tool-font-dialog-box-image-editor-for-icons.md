@@ -1,5 +1,5 @@
 ---
-title: "Text Tool Font C++ Dialog Box (Image Editor for Icons) | Microsoft Docs"
+title: "Text Tool Font Dialog Box (C++) (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Text Tool Font C++ Dialog Box (Image Editor for Icons)
+# Text Tool Font Dialog Box (C++) (Image Editor for Icons)
 
 Specifies font settings when you use the [Text Tool Dialog Box](../windows/text-tool-dialog-box-image-editor-for-icons.md) of the [Image Editor](../windows/image-editor-for-icons.md).
 

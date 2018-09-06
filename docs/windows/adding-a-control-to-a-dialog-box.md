@@ -1,5 +1,5 @@
 ---
-title: "Adding a Control to a C++ Dialog Box | Microsoft Docs"
+title: "Adding a Control to a Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Adding a Control to a C++ Dialog Box
+# Adding a Control to a Dialog Box (C++)
 
 ### To add a control to a dialog box
 

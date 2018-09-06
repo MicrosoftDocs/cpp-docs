@@ -1,5 +1,5 @@
 ---
-title: "Switching Between C++ Dialog Box Controls and Code | Microsoft Docs"
+title: "Switching Between Dialog Box (C++) Controls and Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Switching Between C++ Dialog Box Controls and Code
+# Switching Between Dialog Box (C++) Controls and Code
 
 In MFC applications, you can double-click on dialog box controls to jump to their handler code or to quickly create stub handler functions.
 

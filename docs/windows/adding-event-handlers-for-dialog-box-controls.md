@@ -1,5 +1,5 @@
 ---
-title: "Adding Event Handlers for C++ C++ Dialog Box Controls | Microsoft Docs"
+title: "Adding Event Handlers for Dialog Box Controls (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "06/28/2018"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Adding Event Handlers for C++ Dialog Box Controls
+# Adding Event Handlers for Dialog Box Controls (C++)
 
 For project dialog boxes that are already associated with a class, you can take advantage of some shortcuts when you create event handlers. You can quickly create a handler either for the default control notification event or for any applicable Windows message.
 

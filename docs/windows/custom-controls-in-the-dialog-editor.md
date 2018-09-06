@@ -1,5 +1,5 @@
 ---
-title: "Custom Controls in the C++ Dialog Editor | Microsoft Docs"
+title: "Custom Controls in the Dialog Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Custom Controls in the C++ Dialog Editor
+# Custom Controls in the Dialog Editor (C++)
 
 The Dialog editor lets you use existing "custom" or "user" controls in a dialog box template.
 

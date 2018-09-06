@@ -1,5 +1,5 @@
 ---
-title: "Creating a C++ Dialog Box That Users Cannot Exit | Microsoft Docs"
+title: "Creating a Dialog Box (C++) That Users Cannot Exit | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Creating a C++ Dialog Box That Users Cannot Exit
+# Creating a Dialog Box (C++) That Users Cannot Exit
 
 You can create a runtime dialog box that a user cannot exit. This kind of dialog box is useful for logons, and for application or document locks.
 

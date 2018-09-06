@@ -1,5 +1,5 @@
 ---
-title: "Specifying the Location and Size of a C++ Dialog Box | Microsoft Docs"
+title: "Specifying the Location and Size of a Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Specifying the Location and Size of a C++ Dialog Box
+# Specifying the Location and Size of a Dialog Box (C++)
 
 The location and size of a C++ dialog box, as well as the location and size of controls within it, are measured in dialog units. The values for individual controls and the dialog box appear in the lower right of the Visual Studio status bar when you select them.
 

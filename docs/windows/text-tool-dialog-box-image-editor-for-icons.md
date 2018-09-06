@@ -1,5 +1,5 @@
 ---
-title: "Text Tool C++ Dialog Box (Image Editor for Icons) | Microsoft Docs"
+title: "Text Tool Dialog Box (C++) (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Text Tool C++ Dialog Box (Image Editor for Icons)
+# Text Tool Dialog Box (C++) (Image Editor for Icons)
 
 Use the **Text Tool** dialog box to add text to a cursor, bitmap, or icon resource.
 

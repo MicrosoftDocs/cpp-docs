@@ -1,5 +1,5 @@
 ---
-title: "New &lt;Device&gt; Image Type C++ Dialog Box (Image Editor for Icons) | Microsoft Docs"
+title: "New &lt;Device&gt; Image Type Dialog Box (C++) (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# New &lt;Device&gt; Image Type C++ Dialog Box (Image Editor for Icons)
+# New &lt;Device&gt; Image Type Dialog Box (C++) (Image Editor for Icons)
 
 Enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, click **New Image Type** on the **Image** menu.
 

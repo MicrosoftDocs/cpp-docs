@@ -1,5 +1,5 @@
 ---
-title: "Open &lt;Device&gt; Image C++ Dialog Box (Image Editor for Icons) | Microsoft Docs"
+title: "Open &lt;Device&gt; Image Dialog Box (C++) (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Open &lt;Device&gt; Image C++ Dialog Box (Image Editor for Icons)
+# Open &lt;Device&gt; Image Dialog Box (C++) (Image Editor for Icons)
 
 Use this dialog box to open device images in C++ projects. It lists existing device images in the current resource (images that are part of the current resource).
 

@@ -1,5 +1,5 @@
 ---
-title: "Defining Member Variables for C++ Dialog Controls | Microsoft Docs"
+title: "Defining Member Variables for Dialog Controls (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Defining Member Variables for C++ Dialog Controls
+# Defining Member Variables for Dialog Controls (C++)
 
 To define a member variable for any dialog box control except buttons, you can use the following method.
 

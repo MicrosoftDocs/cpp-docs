@@ -1,5 +1,5 @@
 ---
-title: "Insert ActiveX Control C++ Dialog Box | Microsoft Docs"
+title: "Insert ActiveX Control Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Insert ActiveX Control C++ Dialog Box
+# Insert ActiveX Control Dialog Box (C++)
 
 This dialog box enables you to [insert ActiveX controls into your dialog box](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md) while using the [Dialog editor](../windows/dialog-editor.md).
 

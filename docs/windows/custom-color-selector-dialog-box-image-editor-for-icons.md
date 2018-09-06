@@ -1,5 +1,5 @@
 ---
-title: "Custom Color Selector C++ Dialog Box (Image Editor for Icons) | Microsoft Docs"
+title: "Custom Color Selector Dialog Box (C++) (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Custom Color Selector C++ Dialog Box (Image Editor for Icons)
+# Custom Color Selector Dialog Box (C++) (Image Editor for Icons)
 
 This dialog box allows you to customize the colors you use for your image. For more information, see [Customizing or Changing Colors](../windows/customizing-or-changing-colors-image-editor-for-icons.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "Arrangement of Controls on C++ Dialog Boxes | Microsoft Docs"
+title: "Arrangement of Controls on Dialog Box (C++)es | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Arrangement of Controls on C++ Dialog Boxes
+# Arrangement of Controls on Dialog Box (C++)es
 
 The **Dialog** editor provides layout tools that align and size controls automatically. For most tasks, you can use the [Dialog Editor Toolbar](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). All **Dialog Editor** toolbar commands are also available on the **Format** menu, and most have [shortcut keys](../windows/accelerator-keys-for-the-dialog-editor.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "Centering Controls in a C++ Dialog Box | Microsoft Docs"
+title: "Centering Controls in a Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Centering Controls in a C++ Dialog Box
+# Centering Controls in a Dialog Box (C++)
 
 ### To center controls in a dialog box
 

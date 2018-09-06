@@ -1,5 +1,5 @@
 ---
-title: "Grid Settings C++ Dialog Box (Image Editor for Icons) | Microsoft Docs"
+title: "Grid Settings Dialog Box (C++) (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Grid Settings C++ Dialog Box (Image Editor for Icons)
+# Grid Settings Dialog Box (C++) (Image Editor for Icons)
 
 Allows you to specify the grid settings for your image and displays grid lines over the edited image. The lines are useful for editing the image, but are not saved as part of the image itself.
 

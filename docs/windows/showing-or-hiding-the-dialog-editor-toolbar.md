@@ -1,5 +1,5 @@
 ---
-title: "Showing or Hiding the C++ Dialog Editor Toolbar | Microsoft Docs"
+title: "Showing or Hiding the Dialog Editor (C++) Toolbar | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Showing or Hiding the C++ Dialog Editor Toolbar
+# Showing or Hiding the Dialog Editor (C++) Toolbar
 
 When you open the **Dialog** editor in a C++ project, the **Dialog Editor** toolbar automatically appears at the top of your solution.
 

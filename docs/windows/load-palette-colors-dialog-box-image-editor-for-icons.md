@@ -1,5 +1,5 @@
 ---
-title: "Load Palette Colors C++ Dialog Box (Image Editor for Icons) | Microsoft Docs"
+title: "Load Palette Colors Dialog Box (C++) (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Load Palette Colors C++ Dialog Box (Image Editor for Icons)
+# Load Palette Colors Dialog Box (C++) (Image Editor for Icons)
 
 Use this dialog box to load special color palettes to use in your C++ project. For more information, see [Saving and Loading Different Color Palettes](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).
 

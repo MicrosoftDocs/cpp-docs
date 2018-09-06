@@ -1,5 +1,5 @@
 ---
-title: "Resource Includes C++ Dialog Box | Microsoft Docs"
+title: "Resource Includes Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Resource Includes C++ Dialog Box
+# Resource Includes Dialog Box (C++)
 
 You can use the **Resource Includes** dialog box in a C++ project to modify the environment's normal working arrangement of storing all resources in the project .rc file and all [symbols](../windows/symbols-resource-identifiers.md) in Resource.h.
 

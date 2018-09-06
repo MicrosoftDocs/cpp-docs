@@ -1,5 +1,5 @@
 ---
-title: "Grouping Radio Buttons on a C++ Dialog Box | Microsoft Docs"
+title: "Grouping Radio Buttons on a Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Grouping Radio Buttons on a C++ Dialog Box
+# Grouping Radio Buttons on a Dialog Box (C++)
 
 When you add radio buttons to a dialog box, treat them as a group by setting a **Group** property in the **Properties** window for the first button in the group. A control ID for that radio button then appears in the [Add Member Variable Wizard](../ide/add-member-variable-wizard.md), allowing you to add a member variable for the group of radio buttons.
 
