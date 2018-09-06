@@ -39,7 +39,7 @@ class file_status;
 
 |Operator|Description|
 |-|-|
-|[list::operator=](#op_as)|The defaulted member assignment operators behave as expected.|
+|[operator=](#op_as)|The defaulted member assignment operators behave as expected.|
 
 ## Requirements
 
@@ -82,6 +82,11 @@ The defaulted member assignment operators behave as expected.
 file_status& operator=(const file_status&) noexcept = default;
 file_status& operator=(file_status&&) nexcept = default;
 ```
+
+### Parameters
+
+*file_status*<br/>
+The [file_status](../standard-library/file-status-class.md) being copied into the `file_status`.
 
 ## <a name="type"></a> type
 
