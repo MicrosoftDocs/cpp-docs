@@ -16,6 +16,10 @@ ms.workload: ["cplusplus"]
 
 This wizard creates the classes that compose an OLE DB provider.
 
+> [!WARNING]
+> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used, which indicates that developers prefer hand-coding over the wizard functionality. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+
+
 ## Remarks
 
 Beginning with Visual Studio 2008, the registration script produced by this wizard will register its COM components under **HKEY_CURRENT_USER** instead of **HKEY_LOCAL_MACHINE**. To modify this behavior, set the **Register component for all users** option of the ATL Wizard.

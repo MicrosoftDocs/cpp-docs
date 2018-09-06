@@ -13,9 +13,10 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # MFC ODBC Consumer Wizard
-Insert "Search Results" summary here.  
-  
- This wizard sets up an ODBC recordset class and the data bindings necessary to access the specified data source.  
+This wizard sets up an ODBC recordset class and the data bindings necessary to access the specified data source.  
+
+> [!WARNING]
+> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used, which indicates that developers prefer hand-coding over the wizard functionality. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
   
 ## UIElement List  
  **Data Source**  
