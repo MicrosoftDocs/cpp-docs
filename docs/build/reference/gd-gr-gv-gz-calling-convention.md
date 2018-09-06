@@ -1,7 +1,7 @@
 ---
 title: "/Gd, /Gr, /Gv, /Gz (Calling Convention) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/05/2018"
 ms.technology: ["cpp-tools"]
 ms.topic: "reference"
 f1_keywords: ["/gr", "/Gv", "/gz", "/Gd", "VC.Project.VCCLCompilerTool.CallingConvention"]
@@ -13,6 +13,7 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # /Gd, /Gr, /Gv, /Gz (Calling Convention)
+
 These options determine the order in which function arguments are pushed onto the stack, whether the caller function or called function removes the arguments from the stack at the end of the call, and the name-decorating convention that the compiler uses to identify individual functions.
 
 ## Syntax
@@ -58,7 +59,7 @@ Some of a `__fastcall` function's arguments are passed in registers (for x86 pro
 > [!NOTE]
 > Be careful when you use the `__fastcall` calling convention for any function that's written in inline assembly language. Your use of registers could conflict with the compiler's use.
 
-For C, the `__fastcall` naming convention uses the function name preceded by an at sign (`@`) followed by the size of the function's arguments in bytes. No case translation is done. The compiler uses this template for the naming convention:
+For C, the `__fastcall` naming convention uses the function name preceded by an at sign (**\@**) followed by the size of the function's arguments in bytes. No case translation is done. The compiler uses this template for the naming convention:
 
 `@function_name@number`
 
@@ -68,7 +69,7 @@ When you use the `__fastcall` naming convention, use the standard include files.
 
 A `__stdcall` function's arguments are pushed onto the stack from right to left, and the called function pops these arguments from the stack before it returns.
 
-For C, the `__stdcall` naming convention uses the function name preceded by an underscore ( `_` ) and followed by an at sign (@) and the size of the function's arguments in bytes. No case translation is performed. The compiler uses this template for the naming convention:
+For C, the `__stdcall` naming convention uses the function name preceded by an underscore (**\_**) and followed by an at sign (**\@**) and the size of the function's arguments in bytes. No case translation is performed. The compiler uses this template for the naming convention:
 
 `_functionname@number`
 
@@ -76,7 +77,7 @@ For C, the `__stdcall` naming convention uses the function name preceded by an u
 
 A `__vectorcall` function’s integer arguments are passed by value, using up to two (on x86) or four (on x64) integer registers, and up to six XMM registers for floating-point and vector values, and the rest are passed on the stack from right to left. The called function cleans off the stack before it returns. Vector and floating-point return values are returned in XMM0.
 
-For C, the `__vectorcall` naming convention uses the function name followed by two at signs (@@) and the size of the function's arguments in bytes. No case translation is performed. The compiler uses this template for the naming convention:
+For C, the `__vectorcall` naming convention uses the function name followed by two at signs (**\@\@**) and the size of the function's arguments in bytes. No case translation is performed. The compiler uses this template for the naming convention:
 
 `functionname@@number`
 

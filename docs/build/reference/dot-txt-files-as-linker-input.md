@@ -12,8 +12,10 @@ ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
 # .Txt Files as Linker Input
-LINK expects various text files as additional input. The [command-file](../../build/reference/link-command-files.md) specifier (@) and the [Base Address](../../build/reference/base-base-address.md) (/BASE), [/DEF](../../build/reference/def-specify-module-definition-file.md), and [/ORDER](../../build/reference/order-put-functions-in-order.md) options all specify text files. These files can have any extension, not just .txt.  
-  
-## See Also  
- [LINK Input Files](../../build/reference/link-input-files.md)   
- [Linker Options](../../build/reference/linker-options.md)
+
+LINK expects various text files as additional input. The [command-file](../../build/reference/link-command-files.md) specifier (**\@**) and the [Base Address](../../build/reference/base-base-address.md) (/BASE), [/DEF](../../build/reference/def-specify-module-definition-file.md), and [/ORDER](../../build/reference/order-put-functions-in-order.md) options all specify text files. These files can have any extension, not just .txt.
+
+## See Also
+
+[LINK Input Files](../../build/reference/link-input-files.md)   
+[Linker Options](../../build/reference/linker-options.md)
