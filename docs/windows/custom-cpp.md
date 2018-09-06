@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.custom"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["custom attributes, defining"]
+helpviewer_keywords: ["[""custom attributes, defining""]"]
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
 author: "mikeblome"
 ms.author: "mblome"

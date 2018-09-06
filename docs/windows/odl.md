@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.odl"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["odl attribute"]
+helpviewer_keywords: ["[""odl attribute""]"]
 ms.assetid: 75dcb314-b50f-4a63-9180-507ac1bc78f3
 author: "mikeblome"
 ms.author: "mblome"

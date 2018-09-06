@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SemaphoreTraits structure"]
+helpviewer_keywords: ["[""SemaphoreTraits structure""]"]
 ms.assetid: eddb8576-d063-409b-9201-cc87ca5d111e
 author: "mikeblome"
 ms.author: "mblome"

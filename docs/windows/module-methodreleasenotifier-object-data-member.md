@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::MethodReleaseNotifier::object_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["object_ data member"]
+helpviewer_keywords: ["[""object_ data member""]"]
 ms.assetid: 502d4a6f-f612-4d4e-9df7-fede288e9501
 author: "mikeblome"
 ms.author: "mblome"

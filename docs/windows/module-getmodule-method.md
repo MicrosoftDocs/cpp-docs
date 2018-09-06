@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::GetModule"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GetModule method"]
+helpviewer_keywords: ["[""GetModule method""]"]
 ms.assetid: 78b5fd68-8131-4ef9-8b6c-20f8c7b36992
 author: "mikeblome"
 ms.author: "mblome"

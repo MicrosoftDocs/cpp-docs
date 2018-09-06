@@ -1,12 +1,12 @@
 ---
-title: "How to: Import and Export Resources | Microsoft Docs"
+title: "How to: Import and Export Resources (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vs.resvw.resource.importing", "vc.resvw.resource.importing"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resources [Visual Studio], exporting", "graphics [C++], exporting", "graphics [C++], importing", "resources [Visual Studio], importing", "bitmaps [C++], importing and exporting", "toolbars [C++], importing", "images [C++], importing", "toolbars [C++], exporting", "cursors [C++], importing and exporting", "images [C++], exporting"]
+helpviewer_keywords: ["[""resources [C++], exporting"", ""graphics [C++], exporting"", ""graphics [C++], importing"", ""resources [C++], importing"", ""bitmaps [C++], importing and exporting"", ""toolbars [C++], importing"", ""images [C++], importing"", ""toolbars [C++], exporting"", ""cursors [C++], importing and exporting"", ""images [C++], exporting""]"]
 ms.assetid: 3c9329dc-dcb8-4edd-a600-78e3e572bd89
 author: "mikeblome"
 ms.author: "mblome"

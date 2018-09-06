@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::EventTargetArray::AddTail"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["AddTail method"]
+helpviewer_keywords: ["[""AddTail method""]"]
 ms.assetid: d0fafab9-049c-40e0-a40c-d126c9ee63e6
 author: "mikeblome"
 ms.author: "mblome"

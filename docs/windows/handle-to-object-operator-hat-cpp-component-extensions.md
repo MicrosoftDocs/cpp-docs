@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["^ handle to object [C++]"]
+helpviewer_keywords: ["[""^ handle to object [C++]""]"]
 ms.assetid: 70c411e6-be57-4468-a944-6ea7be89f392
 author: "mikeblome"
 ms.author: "mblome"

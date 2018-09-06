@@ -1,17 +1,17 @@
 ---
-title: "Changing the Properties of Multiple Accelerator Keys | Microsoft Docs"
+title: "Changing the Properties of Multiple Accelerator Keys (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["keyboard shortcuts [C++], property changing", "accelerator tables [C++], changing properties"]
+helpviewer_keywords: ["[""keyboard shortcuts [C++], property changing"", ""accelerator tables [C++], changing properties""]"]
 ms.assetid: b55c9bd6-b430-48bb-b942-0e6f21d7abf9
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Changing the Properties of Multiple Accelerator Keys
+# Changing the Properties of Multiple Accelerator Keys (C++)
 
 ### To change the properties of multiple accelerator keys
 

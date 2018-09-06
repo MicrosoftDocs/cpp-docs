@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["boxing, Visual C++"]
+helpviewer_keywords: ["[""boxing, C++""]"]
 ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
 author: "mikeblome"
 ms.author: "mblome"

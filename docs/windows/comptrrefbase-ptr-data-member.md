@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRefBase::ptr_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ptr_ data member"]
+helpviewer_keywords: ["[""ptr_ data member""]"]
 ms.assetid: 9b1c07f9-531f-41c2-9ac0-f7cf49f5f586
 author: "mikeblome"
 ms.author: "mblome"

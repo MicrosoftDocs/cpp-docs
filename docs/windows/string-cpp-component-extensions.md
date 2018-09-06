@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["string support with /clr", "/clr compiler option [C++], string support"]
+helpviewer_keywords: ["[""string support with /clr"", ""/clr compiler option [C++], string support""]"]
 ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
 author: "mikeblome"
 ms.author: "mblome"

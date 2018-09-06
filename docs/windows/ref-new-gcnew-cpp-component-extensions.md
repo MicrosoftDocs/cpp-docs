@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["gcnew", "ref new", "gcnew_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ref new keyword (C++)", "gcnew keyword [C++]"]
+helpviewer_keywords: ["[""ref new keyword (C++)"", ""gcnew keyword [C++]""]"]
 ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ActivationFactory::GetIids"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GetIids method"]
+helpviewer_keywords: ["[""GetIids method""]"]
 ms.assetid: 0983d709-d155-4d65-aae4-5b2c8bb0fede
 author: "mikeblome"
 ms.author: "mblome"

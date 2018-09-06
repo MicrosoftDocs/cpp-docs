@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceTraits::CastToUnknown"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CastToUnknown method"]
+helpviewer_keywords: ["[""CastToUnknown method""]"]
 ms.assetid: aca47fa0-3c60-47f2-a73c-258f7160adff
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncResultType"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["AsyncResultType enumeration"]
+helpviewer_keywords: ["[""AsyncResultType enumeration""]"]
 ms.assetid: 4195d234-3f3f-4363-9118-6ad2a7551cf2
 author: "mikeblome"
 ms.author: "mblome"

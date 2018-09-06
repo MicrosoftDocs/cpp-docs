@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Semaphore"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Semaphore class"]
+helpviewer_keywords: ["[""Semaphore class""]"]
 ms.assetid: ded53526-17b4-4381-9c60-ea5e77363db6
 author: "mikeblome"
 ms.author: "mblome"

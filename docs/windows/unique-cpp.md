@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.unique"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["unique attribute"]
+helpviewer_keywords: ["[""unique attribute""]"]
 ms.assetid: abd7ed14-5ae7-44a8-8333-0058e9c92b2f
 author: "mikeblome"
 ms.author: "mblome"

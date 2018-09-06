@@ -1,17 +1,17 @@
 ---
-title: "Menu Command Properties | Microsoft Docs"
+title: "Menu Command Properties (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["menu items, properties"]
+helpviewer_keywords: ["[""menu items, properties""]"]
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Menu Command Properties
+# Menu Command Properties (C++)
 
 The information below is organized according to the **Menu** properties that appear in the [Properties Window](/visualstudio/ide/reference/properties-window) when you select a menu command. These are listed alphabetically although the **Properties** window also enables you to view these properties by category.
 

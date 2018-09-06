@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.db_param"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["db_param attribute"]
+helpviewer_keywords: ["[""db_param attribute""]"]
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
 author: "mikeblome"
 ms.author: "mblome"

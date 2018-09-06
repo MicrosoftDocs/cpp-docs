@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["pin_ptr_cpp", "stdcli::language::pin_ptr", "pin_ptr"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["pinning pointers", "pin_ptr keyword [C++]"]
+helpviewer_keywords: ["[""pinning pointers"", ""pin_ptr keyword [C++]""]"]
 ms.assetid: 6c2e6c73-4ec2-4dce-8e1f-ccf3a9f9d0aa
 author: "mikeblome"
 ms.author: "mblome"

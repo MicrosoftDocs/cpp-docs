@@ -1,17 +1,17 @@
 ---
-title: "How to: Search for Symbols in Resources | Microsoft Docs"
+title: "How to: Search for Symbols in Resources (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["symbols, finding", "resources [Visual Studio], searching for symbols"]
+helpviewer_keywords: ["[""symbols [C++], finding"", ""resources [C++], searching for symbols""]"]
 ms.assetid: 6efef8e8-d0d4-4c49-b895-314974e7791a
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# How to: Search for Symbols in Resources
+# How to: Search for Symbols in Resources (C++)
 
 ### To find symbols in resources
 

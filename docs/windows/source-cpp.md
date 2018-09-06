@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.source"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["source attribute"]
+helpviewer_keywords: ["[""source attribute""]"]
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
 author: "mikeblome"
 ms.author: "mblome"

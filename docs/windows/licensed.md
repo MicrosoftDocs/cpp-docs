@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.licensed"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["licensed attribute"]
+helpviewer_keywords: ["[""licensed attribute""]"]
 ms.assetid: 09cf3b4a-d3f2-43e3-9180-d420333b23bf
 author: "mikeblome"
 ms.author: "mblome"

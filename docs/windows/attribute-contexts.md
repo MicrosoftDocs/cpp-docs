@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["attributes [C++], contexts"]
+helpviewer_keywords: ["[""attributes [C++], contexts""]"]
 ms.assetid: 3086351f-77a8-4048-99e9-3b6b041b9437
 author: "mikeblome"
 ms.author: "mblome"

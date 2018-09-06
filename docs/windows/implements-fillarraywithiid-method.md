@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Implements::FillArrayWithIid"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["FillArrayWithIid method"]
+helpviewer_keywords: ["[""FillArrayWithIid method""]"]
 ms.assetid: b2e62e3f-0ab9-4c70-aad7-856268544f44
 author: "mikeblome"
 ms.author: "mblome"

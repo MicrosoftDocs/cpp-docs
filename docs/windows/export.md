@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.export"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["export attribute"]
+helpviewer_keywords: ["[""export attribute""]"]
 ms.assetid: 70b3e848-fad6-4e09-8c72-be60ca72a4df
 author: "mikeblome"
 ms.author: "mblome"

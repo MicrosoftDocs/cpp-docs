@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::InterfaceTraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["InterfaceTraits structure"]
+helpviewer_keywords: ["[""InterfaceTraits structure""]"]
 ms.assetid: ede0c284-19a7-4892-9738-ff3da4923d0a
 author: "mikeblome"
 ms.author: "mblome"

@@ -1,17 +1,17 @@
 ---
-title: "Toolbar Button Properties | Microsoft Docs"
+title: "Toolbar Button Properties (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["size, toolbar buttons", "toolbar buttons (in Toolbar editor), setting properties", "Toolbar editor, toolbar button properties", "status bars, active toolbar button text", "command IDs, toolbar buttons", "width, toolbar buttons"]
+helpviewer_keywords: ["[""size, toolbar buttons"", ""toolbar buttons [C++], setting properties"", ""Toolbar editor [C++], toolbar button properties"", ""status bars [C++], active toolbar button text"", ""command IDs, toolbar buttons"", ""width, toolbar buttons""]"]
 ms.assetid: b2705814-7c5d-4f24-8f77-07559b0cdda2
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Toolbar Button Properties
+# Toolbar Button Properties (C++)
 
 The properties of a toolbar button are:
 

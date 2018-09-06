@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.idl_quote"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["idl_quote attribute"]
+helpviewer_keywords: ["[""idl_quote attribute""]"]
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
 author: "mikeblome"
 ms.author: "mblome"

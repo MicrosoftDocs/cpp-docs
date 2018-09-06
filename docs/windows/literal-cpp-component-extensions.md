@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["literal", "literal_cpp"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["literal keyword [C++]"]
+helpviewer_keywords: ["[""literal keyword [C++]""]"]
 ms.assetid: 6b1a1f36-2e1d-4a23-8eb6-172f4f3c477f
 author: "mikeblome"
 ms.author: "mblome"

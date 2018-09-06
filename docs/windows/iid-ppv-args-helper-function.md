@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/IID_PPV_ARGS_Helper"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IID_PPV_ARGS_Helper function"]
+helpviewer_keywords: ["[""IID_PPV_ARGS_Helper function""]"]
 ms.assetid: afee9b23-8df1-4575-903f-e9ba748418f0
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::AgileEventSource", "event/Microsoft::WRL::InvokeModeOptions"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["AgileEventSource class"]
+helpviewer_keywords: ["[""AgileEventSource class""]"]
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]

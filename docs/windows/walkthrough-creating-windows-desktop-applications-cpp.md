@@ -5,7 +5,7 @@ ms.date: "06/12/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Windows applications [C++], Win32", "Windows Desktop applications [C++]", "Windows API [C++]"]
+helpviewer_keywords: ["[""Windows applications [C++], Win32"", ""Windows Desktop applications [C++]"", ""Windows API [C++]""]"]
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]

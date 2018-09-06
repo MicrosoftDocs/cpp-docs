@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/ABI::Windows::Foundation", "client/Windows::Foundation"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Foundation namespace"]
+helpviewer_keywords: ["[""Foundation namespace""]"]
 ms.assetid: 96a6b5e0-ddee-4b21-ae4e-da5feeb945c3
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::UnregisterCOMObject"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["UnregisterCOMObject method"]
+helpviewer_keywords: ["[""UnregisterCOMObject method""]"]
 ms.assetid: 5d377525-0385-482a-a215-6e8a1f032861
 author: "mikeblome"
 ms.author: "mblome"

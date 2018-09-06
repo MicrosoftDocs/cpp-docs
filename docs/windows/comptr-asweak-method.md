@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::AsWeak"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["AsWeak method"]
+helpviewer_keywords: ["[""AsWeak method""]"]
 ms.assetid: 23e29dcd-39cb-423f-abe6-6df4428213bf
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.first_is"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["first_is attribute"]
+helpviewer_keywords: ["[""first_is attribute""]"]
 ms.assetid: 89acbf56-3b38-4d44-83e8-1ce2f6f74ffd
 author: "mikeblome"
 ms.author: "mblome"

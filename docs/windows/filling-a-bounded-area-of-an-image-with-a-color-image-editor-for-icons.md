@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["colors [C++], image", "images [C++], colors", "Image editor [C++], colors", "Fill tool"]
+helpviewer_keywords: ["[""colors [C++], image"", ""images [C++], colors"", ""Image editor [C++], colors"", ""Fill tool""]"]
 ms.assetid: e647ef83-421b-4818-855d-249b4c4cb5f2
 author: "mikeblome"
 ms.author: "mblome"

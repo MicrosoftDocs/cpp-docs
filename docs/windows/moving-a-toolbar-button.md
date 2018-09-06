@@ -1,11 +1,11 @@
 ---
-title: "Moving a Toolbar Button | Microsoft Docs"
+title: "Moving a Toolbar Button (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["toolbar buttons (in Toolbar editor), moving", "Toolbar editor, moving buttons"]
+helpviewer_keywords: ["[""toolbar buttons [C++], moving"", ""Toolbar editor [C++], moving buttons""]"]
 ms.assetid: 7625f2ce-8ac4-4428-a3f8-a95bfdf6f95f
 author: "mikeblome"
 ms.author: "mblome"
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus", "uwp"]
 ---
 # Moving a Toolbar Button
 
-### To move a toolbar button
+### To move a toolbar button (C++)
 
 1. In the **Toolbar View** pane, drag the button that you want to move to its new location on the toolbar.
 

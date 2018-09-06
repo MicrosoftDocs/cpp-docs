@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::GetOnProgress"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GetOnProgress method"]
+helpviewer_keywords: ["[""GetOnProgress method""]"]
 ms.assetid: 286ddc9c-3e30-41a2-8e8b-e53d3fb0649d
 author: "mikeblome"
 ms.author: "mblome"

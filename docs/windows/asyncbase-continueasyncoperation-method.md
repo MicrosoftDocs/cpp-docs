@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::ContinueAsyncOperation"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ContinueAsyncOperation method"]
+helpviewer_keywords: ["[""ContinueAsyncOperation method""]"]
 ms.assetid: ce38181d-2fc3-4579-b0ce-237a3c7648bc
 author: "mikeblome"
 ms.author: "mblome"

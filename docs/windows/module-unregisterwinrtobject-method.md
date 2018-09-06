@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::UnregisterWinRTObject"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["UnregisterWinRTObject method"]
+helpviewer_keywords: ["[""UnregisterWinRTObject method""]"]
 ms.assetid: 32334aa7-2293-40d2-9a89-4b02e2e31f3c
 author: "mikeblome"
 ms.author: "mblome"

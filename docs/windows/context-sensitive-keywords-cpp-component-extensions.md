@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal_CPP"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["context-sensitive keywords"]
+helpviewer_keywords: ["[""context-sensitive keywords""]"]
 ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
 author: "mikeblome"
 ms.author: "mblome"

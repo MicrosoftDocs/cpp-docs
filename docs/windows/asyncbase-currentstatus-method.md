@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::CurrentStatus"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CurrentStatus method"]
+helpviewer_keywords: ["[""CurrentStatus method""]"]
 ms.assetid: 26ee4c4a-6525-4a5f-b49c-3ca40c365eb6
 author: "mikeblome"
 ms.author: "mblome"

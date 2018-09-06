@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.local"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["local attribute"]
+helpviewer_keywords: ["[""local attribute""]"]
 ms.assetid: 35cdd668-bd8e-492a-b7b8-263e7b662437
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRefBase::operator IUnknown**"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operator IUnknown** operator"]
+helpviewer_keywords: ["[""operator IUnknown** operator""]"]
 ms.assetid: c2950abf-a7aa-480a-ba41-615703e7f931
 author: "mikeblome"
 ms.author: "mblome"

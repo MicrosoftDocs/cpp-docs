@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.include"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["include attribute"]
+helpviewer_keywords: ["[""include attribute""]"]
 ms.assetid: d23f8b91-fe5b-48fa-9371-8bd73af7b8e3
 author: "mikeblome"
 ms.author: "mblome"

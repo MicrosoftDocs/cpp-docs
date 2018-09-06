@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SyncLockWithStatusT, constructor"]
+helpviewer_keywords: ["[""SyncLockWithStatusT, constructor""]"]
 ms.assetid: 5d2fb820-ae1b-495f-8084-ebb4fecc3104
 author: "mikeblome"
 ms.author: "mblome"

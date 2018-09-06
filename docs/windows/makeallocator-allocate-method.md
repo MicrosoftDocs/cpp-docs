@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::MakeAllocator::Allocate"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Allocate method"]
+helpviewer_keywords: ["[""Allocate method""]"]
 ms.assetid: a01997bc-4ff1-4ed0-9def-e4aaa15b0598
 author: "mikeblome"
 ms.author: "mblome"

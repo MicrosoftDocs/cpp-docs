@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["EventSource class"]
+helpviewer_keywords: ["[""EventSource class""]"]
 ms.assetid: 91f1c072-6af4-44e6-b6d8-ac6d0c688dde
 author: "mikeblome"
 ms.author: "mblome"

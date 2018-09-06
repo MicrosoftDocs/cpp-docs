@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::IsBaseOfStrict"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IsBaseOfStrict structure"]
+helpviewer_keywords: ["[""IsBaseOfStrict structure""]"]
 ms.assetid: 6fed7366-c8d4-4991-b4fb-43ed93f8e1bf
 author: "mikeblome"
 ms.author: "mblome"

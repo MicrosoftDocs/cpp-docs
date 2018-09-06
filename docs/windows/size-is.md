@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.size_is"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["size_is attribute"]
+helpviewer_keywords: ["[""size_is attribute""]"]
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
 author: "mikeblome"
 ms.author: "mblome"

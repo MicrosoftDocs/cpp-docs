@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.default"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["default attribute", "attributes [C#], default attribute", "defaults, default attribute"]
+helpviewer_keywords: ["[""default attribute"", ""attributes [C#], default attribute"", ""defaults, default attribute""]"]
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
 author: "mikeblome"
 ms.author: "mblome"

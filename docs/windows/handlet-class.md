@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleT"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["HandleT class"]
+helpviewer_keywords: ["[""HandleT class""]"]
 ms.assetid: 3822b32a-a426-4d94-a54d-919d4df60ee2
 author: "mikeblome"
 ms.author: "mblome"

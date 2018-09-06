@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeLessThanEquals"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SafeLessThanEquals function"]
+helpviewer_keywords: ["[""SafeLessThanEquals function""]"]
 ms.assetid: cbd70526-faf2-4fbc-96a0-b61e8cf5f04a
 author: "mikeblome"
 ms.author: "mblome"

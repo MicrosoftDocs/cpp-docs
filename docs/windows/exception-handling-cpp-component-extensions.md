@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["structured exception handling, managed exceptions", "Exception class, managed applications", "exception handling", "C++ exception handling", "exception handling, types of", "managed exceptions", "System::Exception class in managed applications"]
+helpviewer_keywords: ["[""structured exception handling, managed exceptions"", ""Exception class, managed applications"", ""exception handling"", ""C++ exception handling"", ""exception handling, types of"", ""managed exceptions"", ""System::Exception class in managed applications""]"]
 ms.assetid: ccb11fe8-6938-41ac-b477-a183e85865b9
 author: "mikeblome"
 ms.author: "mblome"

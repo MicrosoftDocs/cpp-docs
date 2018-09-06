@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::Unlock"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Unlock method"]
+helpviewer_keywords: ["[""Unlock method""]"]
 ms.assetid: 33cdead9-1900-4094-b18e-38fcf1a0bd28
 author: "mikeblome"
 ms.author: "mblome"

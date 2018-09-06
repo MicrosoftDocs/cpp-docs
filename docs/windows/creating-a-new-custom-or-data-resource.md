@@ -1,18 +1,18 @@
 ---
-title: "Creating a New Custom or Data Resource | Microsoft Docs"
+title: "Creating a New Custom or Data Resource (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["custom resources [C++]", "data resources [C++]", "resources [Visual Studio], creating"]
+helpviewer_keywords: ["[""custom resources [C++]"", ""data resources [C++]"", ""resources [C++], creating""]"]
 ms.assetid: 9918bf96-38fa-43a1-a384-572f95d84950
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Creating a New Custom or Data Resource
+# Creating a New Custom or Data Resource (C++)
 
 You can create a new custom or data resource by placing the resource in a separate file using normal resource script (.rc) file syntax, and then including that file by right-clicking your project in **Solution Explorer** and clicking **Resource Includes** on the shortcut menu.
 

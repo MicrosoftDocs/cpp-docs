@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource::InvokeAll"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["InvokeAll method"]
+helpviewer_keywords: ["[""InvokeAll method""]"]
 ms.assetid: 1506618f-0421-4428-a4d0-4ea2b10a3bf6
 author: "mikeblome"
 ms.author: "mblome"

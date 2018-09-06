@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::InternalRelease"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["InternalRelease method"]
+helpviewer_keywords: ["[""InternalRelease method""]"]
 ms.assetid: a5554f37-b32b-48a7-8443-847f84cd43ec
 author: "mikeblome"
 ms.author: "mblome"

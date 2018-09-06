@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::PutOnComplete"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["PutOnComplete method"]
+helpviewer_keywords: ["[""PutOnComplete method""]"]
 ms.assetid: 1c469ff9-b2df-4637-bf05-01a617043149
 author: "mikeblome"
 ms.author: "mblome"

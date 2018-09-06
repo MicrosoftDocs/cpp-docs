@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeIntException Class"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SafeIntException class"]
+helpviewer_keywords: ["[""SafeIntException class""]"]
 ms.assetid: 88bef958-1f48-4d55-ad4f-d1f9581a293a
 author: "mikeblome"
 ms.author: "mblome"

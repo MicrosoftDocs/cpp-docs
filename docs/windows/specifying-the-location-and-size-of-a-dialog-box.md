@@ -1,19 +1,19 @@
 ---
-title: "Specifying the Location and Size of a Dialog Box | Microsoft Docs"
+title: "Specifying the Location and Size of a C++ Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["dialog boxes, size", "dialog boxes, positioning"]
+helpviewer_keywords: ["[""dialog boxes [C++], size"", ""dialog boxes [C++], positioning""]"]
 ms.assetid: 2b7c495e-6595-4cfb-9664-80b2826d0851
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Specifying the Location and Size of a Dialog Box
+# Specifying the Location and Size of a C++ Dialog Box
 
-The location and size of a dialog box, as well as the location and size of controls within it, are measured in dialog units. The values for individual controls and the dialog box appear in the lower right of the Visual Studio status bar when you select them.
+The location and size of a C++ dialog box, as well as the location and size of controls within it, are measured in dialog units. The values for individual controls and the dialog box appear in the lower right of the Visual Studio status bar when you select them.
 
 There are three properties that you can set in the [Properties Window](/visualstudio/ide/reference/properties-window) to specify where a dialog box will appear onscreen. The **Center** property is Boolean; if you set the value to **True**, the dialog box will always appear in the center of the screen. If you set it to **False**, you can then set the **XPos** and **YPos** properties to explicitly define where onscreen the dialog box will appear. The position properties are offset values from the upper left-hand corner of the viewing area, which is defined as `{X=0, Y=0}`. The position is also based on the **Absolute Align** property: if **True**, the coordinates are relative to the screen; if **False**, the coordinates are relative to the dialog owner's window.
 

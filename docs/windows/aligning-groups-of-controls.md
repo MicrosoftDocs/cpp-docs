@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["controls [C++], aligning"]
+helpviewer_keywords: ["[""controls [C++], aligning""]"]
 ms.assetid: a4f49a73-4a17-44b3-8568-aa35f646b5cf
 author: "mikeblome"
 ms.author: "mblome"

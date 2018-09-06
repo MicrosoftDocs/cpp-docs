@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::put_Id"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["put_Id method"]
+helpviewer_keywords: ["[""put_Id method""]"]
 ms.assetid: aebad85f-4774-42de-b625-a9cf5f65cb4e
 author: "mikeblome"
 ms.author: "mblome"

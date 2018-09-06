@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["ref class keyword [C++]", "value class keyword [C++]", "value struct keyword [C++]", "ref struct keyword [C++]"]
+helpviewer_keywords: ["[""ref class keyword [C++]"", ""value class keyword [C++]"", ""value struct keyword [C++]"", ""ref struct keyword [C++]""]"]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
 author: "mikeblome"
 ms.author: "mblome"

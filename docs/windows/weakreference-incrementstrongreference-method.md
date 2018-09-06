@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::WeakReference::IncrementStrongReference"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IncrementStrongReference method"]
+helpviewer_keywords: ["[""IncrementStrongReference method""]"]
 ms.assetid: d0232426-a8cb-48b4-99d4-165de2d66cb9
 author: "mikeblome"
 ms.author: "mblome"

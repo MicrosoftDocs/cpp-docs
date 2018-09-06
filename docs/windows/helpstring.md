@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.helpstring"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["helpstring attribute [C++]"]
+helpviewer_keywords: ["[""helpstring attribute [C++]""]"]
 ms.assetid: 0401e905-a63e-4fad-98d0-d1efea111966
 author: "mikeblome"
 ms.author: "mblome"

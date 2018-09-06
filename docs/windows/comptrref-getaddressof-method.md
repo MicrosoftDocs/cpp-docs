@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef::GetAddressOf"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GetAddressOf method"]
+helpviewer_keywords: ["[""GetAddressOf method""]"]
 ms.assetid: 797df323-a2fa-412b-ab60-32cce3721096
 author: "mikeblome"
 ms.author: "mblome"

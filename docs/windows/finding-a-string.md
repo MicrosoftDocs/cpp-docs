@@ -1,18 +1,18 @@
 ---
-title: "Finding a String | Microsoft Docs"
+title: "Finding a String Resource (C++)| Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.string"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["strings [C++], searching", "strings [C++]"]
+helpviewer_keywords: ["[""strings [C++], searching"", ""strings [C++]""]"]
 ms.assetid: c2497173-f356-4f77-97d6-f0ac41782510
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Finding a String
+# Finding a String Resource (C++)
 
 You can search for one or more strings in the string table, and use [regular expressions](/visualstudio/ide/using-regular-expressions-in-visual-studio) with the **Find in Files** command (**Edit** menu) to locate all instances of strings that match a pattern.
 

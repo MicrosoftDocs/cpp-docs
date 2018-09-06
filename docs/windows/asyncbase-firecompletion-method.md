@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::FireCompletion"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["FireCompletion method"]
+helpviewer_keywords: ["[""FireCompletion method""]"]
 ms.assetid: b5e29d6d-52e7-4148-a7f3-a313b1359819
 author: "mikeblome"
 ms.author: "mblome"

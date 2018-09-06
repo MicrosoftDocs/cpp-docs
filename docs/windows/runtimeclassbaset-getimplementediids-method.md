@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::RuntimeClassBaseT::GetImplementedIIDS"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GetImplementedIIDS method"]
+helpviewer_keywords: ["[""GetImplementedIIDS method""]"]
 ms.assetid: adae54da-521d-4add-87f5-242fbd85f33b
 author: "mikeblome"
 ms.author: "mblome"

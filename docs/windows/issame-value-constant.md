@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::IsSame::value"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["value constant"]
+helpviewer_keywords: ["[""value constant""]"]
 ms.assetid: ee72deff-54a2-4482-9967-49a86d07f834
 author: "mikeblome"
 ms.author: "mblome"

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["templates, with CLR types"]
+helpviewer_keywords: ["[""templates, with CLR types""]"]
 ms.assetid: cf59d16b-5514-448b-9a95-e0b4fcb616a6
 author: "mikeblome"
 ms.author: "mblome"

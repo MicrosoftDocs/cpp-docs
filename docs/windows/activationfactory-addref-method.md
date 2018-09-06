@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ActivationFactory::AddRef"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["AddRef method"]
+helpviewer_keywords: ["[""AddRef method""]"]
 ms.assetid: dfe96189-ddbe-410a-9f8d-5d8ecc8cc7e6
 author: "mikeblome"
 ms.author: "mblome"

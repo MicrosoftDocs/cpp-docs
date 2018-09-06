@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::RegisterCOMObject"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["RegisterCOMObject method"]
+helpviewer_keywords: ["[""RegisterCOMObject method""]"]
 ms.assetid: 59f223dc-03c6-429d-95da-b74b3f73b702
 author: "mikeblome"
 ms.author: "mblome"

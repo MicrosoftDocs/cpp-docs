@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeEquals"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SafeEquals function"]
+helpviewer_keywords: ["[""SafeEquals function""]"]
 ms.assetid: 6019627d-f170-413b-9abd-2b5b34396a72
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeDivide"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SafeDivide function"]
+helpviewer_keywords: ["[""SafeDivide function""]"]
 ms.assetid: b5b27484-ad6e-46b1-ba9f-1c7120dd103b
 author: "mikeblome"
 ms.author: "mblome"

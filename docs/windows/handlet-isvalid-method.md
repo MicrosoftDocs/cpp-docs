@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleT::IsValid"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IsValid method"]
+helpviewer_keywords: ["[""IsValid method""]"]
 ms.assetid: 2c3e72fd-e67b-4908-9929-9007e1a4fc25
 author: "mikeblome"
 ms.author: "mblome"

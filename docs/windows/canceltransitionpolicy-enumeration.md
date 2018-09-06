@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::CancelTransitionPolicy::TransitionFromCanceled", "module/Microsoft::WRL::CancelTransitionPolicy::RemainCanceled", "module/Microsoft::WRL::CancelTransitionPolicy"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CancelTransitionPolicy Enumeration"]
+helpviewer_keywords: ["[""CancelTransitionPolicy Enumeration""]"]
 ms.assetid: 5de49f7d-e5e3-43e9-bbca-666caf226cef
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::EventSource::Add"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Add method"]
+helpviewer_keywords: ["[""Add method""]"]
 ms.assetid: 8bded85b-929e-4425-a464-e5de67bb774c
 author: "mikeblome"
 ms.author: "mblome"

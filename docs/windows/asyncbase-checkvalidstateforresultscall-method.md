@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::CheckValidStateForResultsCall"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CheckValidStateForResultsCall method"]
+helpviewer_keywords: ["[""CheckValidStateForResultsCall method""]"]
 ms.assetid: 87ca6805-bff1-4063-b855-6dd26132deff
 author: "mikeblome"
 ms.author: "mblome"

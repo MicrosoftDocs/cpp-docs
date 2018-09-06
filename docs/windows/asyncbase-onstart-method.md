@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::OnStart"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["OnStart method"]
+helpviewer_keywords: ["[""OnStart method""]"]
 ms.assetid: 1e51f186-2918-4269-8e88-a7dfc3139c45
 author: "mikeblome"
 ms.author: "mblome"

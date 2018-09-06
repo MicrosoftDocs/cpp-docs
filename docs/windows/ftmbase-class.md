@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["ftm/Microsoft::WRL::FtmBase"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["FtmBase class"]
+helpviewer_keywords: ["[""FtmBase class""]"]
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::MakeAllocator::Detach"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Detach method"]
+helpviewer_keywords: ["[""Detach method""]"]
 ms.assetid: 78012634-2dda-4ea2-9ffe-40f105d2fe47
 author: "mikeblome"
 ms.author: "mblome"

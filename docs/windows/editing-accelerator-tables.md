@@ -1,20 +1,20 @@
 ---
-title: "Editing Accelerator Tables | Microsoft Docs"
+title: "Editing Accelerator Tables (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.accelerator"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["accelerator tables [C++], editing", "keyboard shortcuts [C++], editing in an accelerator table"]
+helpviewer_keywords: ["[""accelerator tables [C++], editing"", ""keyboard shortcuts [C++], editing in an accelerator table""]"]
 ms.assetid: 56e24efb-d06b-4ed9-8915-1f99f725e247
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Editing Accelerator Tables
+# Editing Accelerator Tables (C++)
 
-In Visual C++, you can edit an accelerator table directly with in-place editing in the **Accelerator** editor.
+In a C++ project, you can edit an accelerator table directly with in-place editing in the **Accelerator** editor.
 
 The procedures below refer to the use of standard property pages, however, both in-place editing and the property page method have the same result. Changes made using property pages or using in-place editing are immediately reflected in the accelerator table.
 

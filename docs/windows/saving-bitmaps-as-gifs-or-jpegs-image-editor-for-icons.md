@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.editing"]
 dev_langs: ["C++"]
-helpviewer_keywords: [".gif files, saving bitmaps as", "jpg files, saving bitmaps as", "jpeg files, saving bitmaps as", ".jpg files, saving bitmaps as", "Image editor [C++], converting image formats", "gif files, saving bitmaps as", "bitmaps [C++], converting formats", ".jpeg files, saving bitmaps as", "graphics [C++], converting formats", "images [C++], converting formats"]
+helpviewer_keywords: ["["".gif files [C++], saving bitmaps as"", ""jpg files [C++], saving bitmaps as"", ""jpeg files [C++], saving bitmaps as"", "".jpg files [C++], saving bitmaps as"", ""Image editor [C++], converting image formats"", ""gif files [C++], saving bitmaps as"", ""bitmaps [C++], converting formats"", "".jpeg files [C++], saving bitmaps as"", ""graphics [C++], converting formats"", ""images [C++], converting formats""]"]
 ms.assetid: 115df69f-10fb-4e6f-906b-853c1e4a54af
 author: "mikeblome"
 ms.author: "mblome"

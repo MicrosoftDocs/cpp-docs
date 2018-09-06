@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.string"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["string attribute"]
+helpviewer_keywords: ["[""string attribute""]"]
 ms.assetid: ddde900a-2e99-4fcd-86e8-57e1bdba7c93
 author: "mikeblome"
 ms.author: "mblome"

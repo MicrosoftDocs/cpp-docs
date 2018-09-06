@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Mutex::Lock"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Lock method"]
+helpviewer_keywords: ["[""Lock method""]"]
 ms.assetid: 61d95072-b690-441e-a080-0bf94a733141
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::InvokeHelper::callback_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["callback_ data member"]
+helpviewer_keywords: ["[""callback_ data member""]"]
 ms.assetid: 6f0cbf6d-0448-46f8-ba71-bd6fd8702e3a
 author: "mikeblome"
 ms.author: "mblome"

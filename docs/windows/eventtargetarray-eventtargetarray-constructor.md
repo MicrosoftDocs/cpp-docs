@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::EventTargetArray::EventTargetArray"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["EventTargetArray, constructor"]
+helpviewer_keywords: ["[""EventTargetArray, constructor""]"]
 ms.assetid: 6c6d3737-3cd3-4515-a8f6-d27901bb8ed2
 author: "mikeblome"
 ms.author: "mblome"

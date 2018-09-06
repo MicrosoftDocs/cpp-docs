@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["generic delegates", "delegates, generic [C++]"]
+helpviewer_keywords: ["[""generic delegates"", ""delegates, generic [C++]""]"]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
 author: "mikeblome"
 ms.author: "mblome"

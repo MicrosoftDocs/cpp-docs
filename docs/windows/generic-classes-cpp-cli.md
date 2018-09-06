@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["classes [C++], generic", "generic classes [C++], about generic classes", "data types [C++], generic", "generic classes", "generics [C++], declaring generic classes"]
+helpviewer_keywords: ["[""classes [C++], generic"", ""generic classes [C++], about generic classes"", ""data types [C++], generic"", ""generic classes"", ""generics [C++], declaring generic classes""]"]
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
 author: "mikeblome"
 ms.author: "mblome"

@@ -1,18 +1,18 @@
 ---
-title: "How to: Copy Resources | Microsoft Docs"
+title: "How to: Copy Resources (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.resource.copying", "vs.resvw.resource.copying"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resources [Visual Studio], moving between files", "resources [Visual Studio], copying", "resource files, copying or moving resources between", "resource files, tiling", ".rc files, copying resources between", "rc files, copying resources between"]
+helpviewer_keywords: ["[""resources [C++], moving between files"", ""resources [C++], copying"", ""resource files [C++], copying or moving resources between"", ""resource files [C++], tiling"", "".rc files [C++], copying resources between"", ""rc files [C++], copying resources between""]"]
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# How to: Copy Resources
+# How to: Copy Resources (C++)
 
 You can copy resources from one file to another without changing them or you can [change the language or condition of a resource while copying it](../windows/how-to-change-the-language-or-condition-of-a-resource-while-copying.md).
 

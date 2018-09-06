@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::MixIn"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["MixIn structure"]
+helpviewer_keywords: ["[""MixIn structure""]"]
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
 author: "mikeblome"
 ms.author: "mblome"

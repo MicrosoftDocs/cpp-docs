@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Size to Content command", "size, controls", "text, autosizing controls to fit text", "controls [C++], sizing"]
+helpviewer_keywords: ["[""Size to Content command"", ""size, controls"", ""text, autosizing controls to fit text"", ""controls [C++], sizing""]"]
 ms.assetid: 14ccba02-7171-463a-a121-7018cf1e2e5a
 author: "mikeblome"
 ms.author: "mblome"

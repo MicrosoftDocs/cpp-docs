@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::TryTransitionToError"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["TryTransitionToError method"]
+helpviewer_keywords: ["[""TryTransitionToError method""]"]
 ms.assetid: f6d11c25-1ce3-43f9-af1c-97c4dc0f6f0f
 author: "mikeblome"
 ms.author: "mblome"

@@ -1,20 +1,20 @@
 ---
-title: "New Custom Resource Dialog Box | Microsoft Docs"
+title: "New Custom Resource C++ Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.newcustomresource"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resources [C++], adding", "Custom Resource Type dialog box"]
+helpviewer_keywords: ["[""resources [C++], adding"", ""Custom Resource Type dialog box [C++]""]"]
 ms.assetid: 8216e29d-27ca-4aed-8036-d55fa4468ea2
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# New Custom Resource Dialog Box
+# New Custom Resource C++ Dialog Box
 
-Enables you to create a new custom resource.
+Enables you to create a new custom resource in a C++ project.
 
 ### Resource Type
 

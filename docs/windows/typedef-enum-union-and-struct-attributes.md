@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["union attributes", "attributes [C++], reference topics", "struct attributes", "typedef attributes", "enum attributes"]
+helpviewer_keywords: ["[""union attributes"", ""attributes [C++], reference topics""]"]
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
 author: "mikeblome"
 ms.author: "mblome"

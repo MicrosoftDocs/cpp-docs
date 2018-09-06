@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["HANDLENullTraits structure"]
+helpviewer_keywords: ["[""HANDLENullTraits structure""]"]
 ms.assetid: 88a29a14-c516-40cb-a0ca-ee897a668623
 author: "mikeblome"
 ms.author: "mblome"

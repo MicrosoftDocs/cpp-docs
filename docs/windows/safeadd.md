@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeAdd"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SafeAdd function"]
+helpviewer_keywords: ["[""SafeAdd function""]"]
 ms.assetid: 3f82b91d-59fe-4ee1-873b-d056182fa8be
 author: "mikeblome"
 ms.author: "mblome"

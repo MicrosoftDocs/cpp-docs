@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::SimpleActivationFactory"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SimpleActivationFactory class"]
+helpviewer_keywords: ["[""SimpleActivationFactory class""]"]
 ms.assetid: aff768e0-0038-4fd7-95d2-ad7d308da41c
 author: "mikeblome"
 ms.author: "mblome"

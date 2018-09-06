@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["functions [C++], generic", "generic methods", "generics [C++], functions", "methods [C++], generic", "generic functions"]
+helpviewer_keywords: ["[""functions [C++], generic"", ""generic methods"", ""generics [C++], functions"", ""methods [C++], generic"", ""generic functions""]"]
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
 author: "mikeblome"
 ms.author: "mblome"

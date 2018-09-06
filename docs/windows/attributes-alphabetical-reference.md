@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.attributes"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["attributes [C++]"]
+helpviewer_keywords: ["[""attributes [C++]""]"]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2
 author: "mikeblome"
 ms.author: "mblome"

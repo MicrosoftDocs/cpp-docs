@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Image editor [C++], resizing images", "size [C++], images", "images [C++], resizing", "resizing images"]
+helpviewer_keywords: ["[""Image editor [C++], resizing images"", ""size [C++], images"", ""images [C++], resizing"", ""resizing images""]"]
 ms.assetid: 10782937-7eb4-4340-bdec-618ee7d7904b
 author: "mikeblome"
 ms.author: "mblome"

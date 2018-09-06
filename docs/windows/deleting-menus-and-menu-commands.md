@@ -1,17 +1,17 @@
 ---
-title: "Deleting Menus and Menu Commands | Microsoft Docs"
+title: "Deleting Menus and Menu Commands (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["menu items, deleting", "commands, deleting from menus", "menus, deleting"]
+helpviewer_keywords: ["[""menu items, deleting"", ""commands [C++], deleting from menus"", ""menus [C++], deleting""]"]
 ms.assetid: bdfd5b6e-3275-4597-a8bb-cd19bea9f9ad
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Deleting Menus and Menu Commands
+# Deleting Menus and Menu Commands (C++)
 ### To delete a menu or menu command
 
 1. Right-click the menu name or command.

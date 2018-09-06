@@ -1,18 +1,18 @@
 ---
-title: "New &lt;Device&gt; Image Type Dialog Box (Image Editor for Icons) | Microsoft Docs"
+title: "New &lt;Device&gt; Image Type C++ Dialog Box (Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.newimagetype"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["New <Device> Image Type dialog box"]
+helpviewer_keywords: ["[""New <Device> Image Type dialog box [C++]""]"]
 ms.assetid: 9c1344f5-dea0-42cd-9042-b13032f72be2
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# New &lt;Device&gt; Image Type Dialog Box (Image Editor for Icons)
+# New &lt;Device&gt; Image Type C++ Dialog Box (Image Editor for Icons)
 
 Enables you to create a new device image of a specified type. To open the **New \<Device> Image** dialog box, click **New Image Type** on the **Image** menu.
 

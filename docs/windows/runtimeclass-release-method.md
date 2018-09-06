@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClass::Release"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Release method"]
+helpviewer_keywords: ["[""Release method""]"]
 ms.assetid: 0bd6f9e2-ad90-4de6-adef-a6286f458cb6
 author: "mikeblome"
 ms.author: "mblome"

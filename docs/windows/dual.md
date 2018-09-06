@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.dual"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["dual attribute"]
+helpviewer_keywords: ["[""dual attribute""]"]
 ms.assetid: 5d4a9069-d819-42cd-ba56-bbcda17157d9
 author: "mikeblome"
 ms.author: "mblome"

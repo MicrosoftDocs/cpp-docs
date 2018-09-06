@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["event/Microsoft::WRL::Details::ArgTraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ArgTraits structure"]
+helpviewer_keywords: ["[""ArgTraits structure""]"]
 ms.assetid: 58ae4115-c1bc-48c8-b01b-e60554841c30
 author: "mikeblome"
 ms.author: "mblome"

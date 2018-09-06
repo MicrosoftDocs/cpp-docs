@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.pragma"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["pragma attribute"]
+helpviewer_keywords: ["[""pragma attribute""]"]
 ms.assetid: 3f90d023-b8b5-4007-8311-008bb72cbea1
 author: "mikeblome"
 ms.author: "mblome"

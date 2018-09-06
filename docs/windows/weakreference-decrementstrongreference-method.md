@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::WeakReference::DecrementStrongReference"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["DecrementStrongReference method"]
+helpviewer_keywords: ["[""DecrementStrongReference method""]"]
 ms.assetid: 97d70d9f-41b8-4f8d-a6fa-4137cc4f9029
 author: "mikeblome"
 ms.author: "mblome"

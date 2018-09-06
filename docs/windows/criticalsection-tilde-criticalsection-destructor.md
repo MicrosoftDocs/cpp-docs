@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::CriticalSection::~CriticalSection"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["~CriticalSection, destructor"]
+helpviewer_keywords: ["[""~CriticalSection, destructor""]"]
 ms.assetid: 46fcd52f-d384-4635-b427-d0bee2304e2d
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ClassFactory::QueryInterface"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["QueryInterface method"]
+helpviewer_keywords: ["[""QueryInterface method""]"]
 ms.assetid: 9593881f-4585-4d70-8ca6-b328918d4d6b
 author: "mikeblome"
 ms.author: "mblome"

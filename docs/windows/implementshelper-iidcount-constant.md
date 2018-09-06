@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ImplementsHelper::IidCount"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IidCount constant"]
+helpviewer_keywords: ["[""IidCount constant""]"]
 ms.assetid: 214cde76-8d2f-4f74-97e6-1af7ee8a08a4
 author: "mikeblome"
 ms.author: "mblome"

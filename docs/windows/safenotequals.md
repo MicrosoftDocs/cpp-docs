@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["SafeNotEquals"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["SafeNotEquals function"]
+helpviewer_keywords: ["[""SafeNotEquals function""]"]
 ms.assetid: 032e45a8-4159-4b55-b7cc-ecd27f4e4788
 author: "mikeblome"
 ms.author: "mblome"

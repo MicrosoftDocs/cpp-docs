@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::WeakReference::Resolve"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Resolve method"]
+helpviewer_keywords: ["[""Resolve method""]"]
 ms.assetid: fc65a4b7-48a0-4d64-a793-37f566fdd8e7
 author: "mikeblome"
 ms.author: "mblome"

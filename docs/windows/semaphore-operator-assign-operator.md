@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::Semaphore::operator="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operator= operator"]
+helpviewer_keywords: ["[""operator= operator""]"]
 ms.assetid: ea19839f-91f0-4b00-a35b-5728fcba4981
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::get_Status"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["get_Status method"]
+helpviewer_keywords: ["[""get_Status method""]"]
 ms.assetid: 9823ecb9-212e-471d-b76f-7b8f21208905
 author: "mikeblome"
 ms.author: "mblome"

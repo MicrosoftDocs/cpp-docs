@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.case"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["case attribute"]
+helpviewer_keywords: ["[""case attribute""]"]
 ms.assetid: 6fb883c3-0526-4932-a901-b4564dcaeb7d
 author: "mikeblome"
 ms.author: "mblome"

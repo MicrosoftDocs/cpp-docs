@@ -1,11 +1,11 @@
 ---
-title: "Working with Resource Files | Microsoft Docs"
+title: "Working with Resource Files (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["resources [Visual Studio], about resources", "resources [C++], about resource files", "resource files, about resource files"]
+helpviewer_keywords: ["[""resources [C++], about resources"", ""resources [C++], about resource files"", ""resource files [C++], about resource files""]"]
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
 author: "mikeblome"
 ms.author: "mblome"

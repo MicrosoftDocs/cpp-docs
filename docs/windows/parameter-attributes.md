@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["attributes [C++], parameter attributes", "parameter attributes"]
+helpviewer_keywords: ["[""attributes [C++], parameter attributes"", ""parameter attributes""]"]
 ms.assetid: 024c2dd5-49d7-4ced-a17a-c56c1bc485b6
 author: "mikeblome"
 ms.author: "mblome"

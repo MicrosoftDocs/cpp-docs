@@ -1,17 +1,17 @@
 ---
-title: "Associating a Menu Command with an Accelerator Key | Microsoft Docs"
+title: "Associating a Menu Command with an Accelerator Key (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["keyboard shortcuts, menu association", "commands, associating menu commands with accelerator keys", "menu commands, associating with keyboard shortcuts"]
+helpviewer_keywords: ["[""keyboard shortcuts [C++], menu association"", ""commands [C++], associating menu commands with accelerator keys"", ""menu commands [C++], associating with keyboard shortcuts""]"]
 ms.assetid: ad2de43f-b20a-4c9f-bda8-0420179da48c
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Associating a Menu Command with an Accelerator Key
+# Associating a Menu Command with an Accelerator Key (C++)
 
 There are often times you want a menu command and a keyboard combination to issue the same program command. You do this by using the **Menu** editor to assign the same resource identifier to the menu command and to an entry in your application's accelerator table. You then edit the [Caption](../windows/menu-command-properties.md) of the menu command to show the name of the accelerator key.
 

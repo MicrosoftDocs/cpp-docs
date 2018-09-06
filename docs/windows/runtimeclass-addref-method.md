@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::RuntimeClass::AddRef"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["AddRef method"]
+helpviewer_keywords: ["[""AddRef method""]"]
 ms.assetid: 9c705749-680b-4308-bbec-5b601e8e7dbd
 author: "mikeblome"
 ms.author: "mblome"

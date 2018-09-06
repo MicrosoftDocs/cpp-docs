@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::get_ErrorCode"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["get_ErrorCode method"]
+helpviewer_keywords: ["[""get_ErrorCode method""]"]
 ms.assetid: 50b4f8a2-9a21-4ea0-bb5d-7ff524d62aea
 author: "mikeblome"
 ms.author: "mblome"

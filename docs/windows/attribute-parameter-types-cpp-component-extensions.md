@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["custom attributes, parameter types"]
+helpviewer_keywords: ["[""custom attributes, parameter types""]"]
 ms.assetid: d9f127a3-7f08-456f-acc6-256805632712
 author: "mikeblome"
 ms.author: "mblome"

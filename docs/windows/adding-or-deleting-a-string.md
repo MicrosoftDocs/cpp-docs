@@ -1,18 +1,18 @@
 ---
-title: "Adding or Deleting a String | Microsoft Docs"
+title: "Adding or Deleting a String Resource (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.string"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["strings [C++], adding to string tables", "string tables, deleting strings", "strings [C++], deleting in string tables", "string tables, adding strings"]
+helpviewer_keywords: ["[""strings [C++], adding to string tables"", ""string tables [C++], deleting strings"", ""strings [C++], deleting in string tables"", ""string tables [C++], adding strings""]"]
 ms.assetid: 077077b4-0f4b-4633-92d6-60b321164cab
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Adding or Deleting a String
+# Adding or Deleting a String Resource (C++)
 
 You can quickly insert new entries into the string table using the **String** editor. New strings are placed at the end of the table and are given the next available identifier. You can then edit the **ID**, **Value**, or **Caption** properties in the [Properties window](/visualstudio/ide/reference/properties-window) as needed.
 

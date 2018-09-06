@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["%"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["tracking references", "% tracking reference [C++]"]
+helpviewer_keywords: ["[""tracking references"", ""% tracking reference [C++]""]"]
 ms.assetid: 142a7269-ab69-4b54-a6d7-833bef06228f
 author: "mikeblome"
 ms.author: "mblome"

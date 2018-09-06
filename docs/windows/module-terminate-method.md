@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::Terminate"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Terminate method"]
+helpviewer_keywords: ["[""Terminate method""]"]
 ms.assetid: cf358117-45dc-43c7-ac1e-1e1eedc59e41
 author: "mikeblome"
 ms.author: "mblome"

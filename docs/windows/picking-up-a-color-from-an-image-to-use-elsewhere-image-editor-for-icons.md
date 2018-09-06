@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.image.color"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["colors [C++], image", "images [C++], colors", "colors [C++], selection tools", "Image editor [C++], colors", "Select Color tool"]
+helpviewer_keywords: ["[""colors [C++], image"", ""images [C++], colors"", ""colors [C++], selection tools"", ""Image editor [C++], colors"", ""Select Color tool""]"]
 ms.assetid: b2753617-bde6-4e18-a441-20b9fa6d3cb1
 author: "mikeblome"
 ms.author: "mblome"

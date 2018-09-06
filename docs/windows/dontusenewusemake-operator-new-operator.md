@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::DontUseNewUseMake::operator new"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operator new operator"]
+helpviewer_keywords: ["[""operator new operator""]"]
 ms.assetid: 6af07a0d-2271-430c-9d9b-5a4223fed049
 author: "mikeblome"
 ms.author: "mblome"

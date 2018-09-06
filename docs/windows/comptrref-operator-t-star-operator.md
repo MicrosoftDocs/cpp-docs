@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::Details::ComPtrRef::operator T*"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["operator T* operator"]
+helpviewer_keywords: ["[""operator T* operator""]"]
 ms.assetid: b4f83370-0ebc-4d56-87c6-1a8ea2d0079b
 author: "mikeblome"
 ms.author: "mblome"

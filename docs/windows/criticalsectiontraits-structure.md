@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CriticalSectionTraits structure"]
+helpviewer_keywords: ["[""CriticalSectionTraits structure""]"]
 ms.assetid: c515a1b5-4eb0-40bc-9035-c4d9352c9de7
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::CriticalSection::Lock"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Lock method"]
+helpviewer_keywords: ["[""Lock method""]"]
 ms.assetid: 37cb184c-e13c-49ef-b6a0-13908a956414
 author: "mikeblome"
 ms.author: "mblome"

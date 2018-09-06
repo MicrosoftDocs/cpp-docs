@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::Start"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Start method"]
+helpviewer_keywords: ["[""Start method""]"]
 ms.assetid: 67405c9d-0d1a-4c1e-8ea4-6ba01c1f90d9
 author: "mikeblome"
 ms.author: "mblome"

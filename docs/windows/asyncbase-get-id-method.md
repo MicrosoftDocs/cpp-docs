@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::get_Id"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["get_Id method"]
+helpviewer_keywords: ["[""get_Id method""]"]
 ms.assetid: 591d8366-ea76-4deb-9278-9d3bc394a42b
 author: "mikeblome"
 ms.author: "mblome"

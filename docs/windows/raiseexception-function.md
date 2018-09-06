@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::RaiseException"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["RaiseException function"]
+helpviewer_keywords: ["[""RaiseException function""]"]
 ms.assetid: f9c74f6d-112a-4d2e-900f-622f795d5dbf
 author: "mikeblome"
 ms.author: "mblome"

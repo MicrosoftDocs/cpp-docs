@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.importlib"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["importlib attribute"]
+helpviewer_keywords: ["[""importlib attribute""]"]
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
 author: "mikeblome"
 ms.author: "mblome"

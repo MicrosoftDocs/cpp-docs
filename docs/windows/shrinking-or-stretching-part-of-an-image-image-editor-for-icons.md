@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["bitmaps [C++], shrinking", "images [C++], stretching", "bitmaps [C++], stretching", "images [C++], shrinking"]
+helpviewer_keywords: ["[""bitmaps [C++], shrinking"", ""images [C++], stretching"", ""bitmaps [C++], stretching"", ""images [C++], shrinking""]"]
 ms.assetid: c5f58e2c-6b6e-4fb3-9784-76483b2440af
 author: "mikeblome"
 ms.author: "mblome"

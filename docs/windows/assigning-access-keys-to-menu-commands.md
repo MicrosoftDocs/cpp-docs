@@ -1,19 +1,19 @@
 ---
-title: "Assigning Access Keys to Menu Commands | Microsoft Docs"
+title: "Assigning Access Keys to Menu Commands (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["access keys [C++], checking", "menus, shortcut keys", "keyboard shortcuts [C++], command assignments", "access keys [C++], assigning", "mnemonics, adding to menus", "keyboard shortcuts [C++], uniqueness checking", "mnemonics, uniqueness checking", "Check Mnemonics command"]
+helpviewer_keywords: ["[""access keys [C++], checking"", ""menus [C++], shortcut keys"", ""keyboard shortcuts [C++], command assignments"", ""access keys [C++], assigning"", ""mnemonics [C++]"" adding to menus"", ""keyboard shortcuts [C++], uniqueness checking"", ""mnemonics [C++]"" uniqueness checking"", ""Check Mnemonics command""]"]
 ms.assetid: fbcf1a00-af6a-4171-805a-0ac01d4e8b0d
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Assigning Access Keys to Menu Commands
+# Assigning Access Keys to Menu Commands (C++)
 
-You can assign an access key (a mnemonic that allows the user to select the menu with the keyboard) to your menus and menu commands.
+In a C++ project, you can assign an access key (a mnemonic that allows the user to select the menu with the keyboard) to your menus and menu commands.
 
 ### To assign an access (shortcut) key to a menu command
 

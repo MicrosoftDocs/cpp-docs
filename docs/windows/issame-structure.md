@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["internal/Microsoft::WRL::Details::IsSame"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IsSame structure"]
+helpviewer_keywords: ["[""IsSame structure""]"]
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
 author: "mikeblome"
 ms.author: "mblome"

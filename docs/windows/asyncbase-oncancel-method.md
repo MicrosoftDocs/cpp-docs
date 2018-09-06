@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::OnCancel"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["OnCancel method"]
+helpviewer_keywords: ["[""OnCancel method""]"]
 ms.assetid: 4bd0b68e-a9df-4913-9f6c-e093ed55c3f9
 author: "mikeblome"
 ms.author: "mblome"

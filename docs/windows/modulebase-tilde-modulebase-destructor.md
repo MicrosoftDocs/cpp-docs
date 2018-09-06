@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::Details::ModuleBase::~ModuleBase"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["~ModuleBase, destructor"]
+helpviewer_keywords: ["[""~ModuleBase, destructor""]"]
 ms.assetid: e1cbaf32-34b9-4479-931b-b7ef151cae06
 author: "mikeblome"
 ms.author: "mblome"

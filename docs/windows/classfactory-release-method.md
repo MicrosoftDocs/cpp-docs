@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::ClassFactory::Release"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Release method"]
+helpviewer_keywords: ["[""Release method""]"]
 ms.assetid: 49da2002-f9d6-4d7f-8a65-48c20b1bf99f
 author: "mikeblome"
 ms.author: "mblome"

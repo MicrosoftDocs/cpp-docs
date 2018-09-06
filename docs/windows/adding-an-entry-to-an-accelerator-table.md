@@ -1,21 +1,21 @@
 ---
-title: "Adding an Entry to an Accelerator Table | Microsoft Docs"
+title: "Adding an Entry to an Accelerator Table (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["accelerator tables [C++], adding entries", "New Accelerator command"]
+helpviewer_keywords: ["[""accelerator tables [C++], adding entries"", ""New Accelerator command""]"]
 ms.assetid: 559c2415-8323-4339-9447-6966665f8288
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Adding an Entry to an Accelerator Table
+# Adding an Entry to an Accelerator Table (C++)
 
 ### To add an entry to an accelerator table
 
-1. Open the accelerator table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
+1. In a C++ project, open the accelerator table by double-clicking its icon in [Resource View](../windows/resource-view-window.md).
 
    > [!NOTE]
    > If your project doesn't already contain an .rc file, please see [Creating a New Resource Script File](../windows/how-to-create-a-resource-script-file.md).

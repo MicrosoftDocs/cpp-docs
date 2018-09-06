@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.range"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["range attribute"]
+helpviewer_keywords: ["[""range attribute""]"]
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
 author: "mikeblome"
 ms.author: "mblome"

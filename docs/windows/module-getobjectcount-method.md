@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::GetObjectCount"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GetObjectCount method"]
+helpviewer_keywords: ["[""GetObjectCount method""]"]
 ms.assetid: 9fe29747-7e7f-40f2-9f6b-9a206b17fa8e
 author: "mikeblome"
 ms.author: "mblome"

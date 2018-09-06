@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.implements_category"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["implements_category attribute"]
+helpviewer_keywords: ["[""implements_category attribute""]"]
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
 author: "mikeblome"
 ms.author: "mblome"

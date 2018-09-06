@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::CreatorMap::activationId"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["activationId data member"]
+helpviewer_keywords: ["[""activationId data member""]"]
 ms.assetid: 77518b76-6e6a-4b48-8e2e-a4c7c67769e0
 author: "mikeblome"
 ms.author: "mblome"

@@ -1,17 +1,17 @@
 ---
-title: "Displaying or Hiding the Toolbar (Image Editor for Icons) | Microsoft Docs"
+title: "Displaying or Hiding the Toolbar (C++ Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Image editor [C++], toolbar", "toolbars [C++], showing", "toolbars [C++], hiding"]
+helpviewer_keywords: ["[""Image editor [C++], toolbar"", ""toolbars [C++], showing"", ""toolbars [C++], hiding""]"]
 ms.assetid: 78d25184-a8f4-457f-aa6f-069a5a27bcf8
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Displaying or Hiding the Toolbar (Image Editor for Icons)
+# Displaying or Hiding the Toolbar (C++ Image Editor for Icons)
 
 Since many of the drawing tools are available from the [keyboard](../windows/accelerator-keys-image-editor-for-icons.md), it is sometimes useful to hide the **Image Editor** toolbar.
 

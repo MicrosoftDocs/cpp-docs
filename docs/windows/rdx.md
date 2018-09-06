@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.rdx"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["rdx attribute"]
+helpviewer_keywords: ["[""rdx attribute""]"]
 ms.assetid: ff8e4312-c1ad-4934-bdaa-86f54409651e
 author: "mikeblome"
 ms.author: "mblome"

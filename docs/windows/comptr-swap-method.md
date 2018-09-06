@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::ComPtr::Swap"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Swap method"]
+helpviewer_keywords: ["[""Swap method""]"]
 ms.assetid: 74275f00-b24e-4b4c-b8b6-ac2aa2dd7ae9
 author: "mikeblome"
 ms.author: "mblome"

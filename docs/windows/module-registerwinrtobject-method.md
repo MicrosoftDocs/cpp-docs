@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::RegisterWinRTObject"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["RegisterWinRTObject method"]
+helpviewer_keywords: ["[""RegisterWinRTObject method""]"]
 ms.assetid: a2782c9c-b9c5-4e4b-9c8d-ef513aea20c5
 author: "mikeblome"
 ms.author: "mblome"

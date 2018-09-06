@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::WeakRef::CopyTo"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["CopyTo method"]
+helpviewer_keywords: ["[""CopyTo method""]"]
 ms.assetid: f83de6da-b3d4-41a6-9845-cd725ecf3b75
 author: "mikeblome"
 ms.author: "mblome"

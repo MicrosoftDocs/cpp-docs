@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["blank projects", "projects [C++], creating", "empty projects", "empty projects, creating"]
+helpviewer_keywords: ["[""projects [C++], creating"", ""empty projects [C++]""]"]
 ms.assetid: e0f0e628-041d-4c50-b221-5807b9184000
 author: "mikeblome"
 ms.author: "mblome"

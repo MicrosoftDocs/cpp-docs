@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["images [C++], stand-alone editing", "Image editor [C++], converting image formats", "graphics [C++], converting formats", "images [C++], converting formats"]
+helpviewer_keywords: ["[""images [C++], stand-alone editing"", ""Image editor [C++], converting image formats"", ""graphics [C++], converting formats"", ""images [C++], converting formats""]"]
 ms.assetid: 0409c2bd-3bd8-4d72-9c71-c683b6cf51be
 author: "mikeblome"
 ms.author: "mblome"

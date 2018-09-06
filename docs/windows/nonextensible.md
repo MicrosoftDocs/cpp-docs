@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.nonextensible"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["nonextensible attribute"]
+helpviewer_keywords: ["[""nonextensible attribute""]"]
 ms.assetid: c7ef1554-809f-4ea0-a7cd-dc7786d40c3e
 author: "mikeblome"
 ms.author: "mblome"

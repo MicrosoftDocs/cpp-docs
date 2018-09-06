@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.out"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["out attribute"]
+helpviewer_keywords: ["[""out attribute""]"]
 ms.assetid: 5051b1bf-4949-4bf1-b82f-35e14f0f244b
 author: "mikeblome"
 ms.author: "mblome"

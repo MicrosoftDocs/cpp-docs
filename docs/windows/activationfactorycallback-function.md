@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Details::ActivationFactoryCallback"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ActivationFactoryCallback function"]
+helpviewer_keywords: ["[""ActivationFactoryCallback function""]"]
 ms.assetid: dd40c79b-1273-4f2a-8c24-ae9926fb4fd9
 author: "mikeblome"
 ms.author: "mblome"

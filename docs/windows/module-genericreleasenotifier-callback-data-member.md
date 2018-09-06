@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::Module::GenericReleaseNotifier::callback_"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["callback_ data member"]
+helpviewer_keywords: ["[""callback_ data member""]"]
 ms.assetid: a17c47ae-fe95-46b6-aee5-74fbfe32e031
 author: "mikeblome"
 ms.author: "mblome"

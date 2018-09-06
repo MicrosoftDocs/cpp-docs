@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.usesgetlasterror"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["usesgetlasterror attribute"]
+helpviewer_keywords: ["[""usesgetlasterror attribute""]"]
 ms.assetid: d149e33d-35a7-46cb-9137-ae6883d86122
 author: "mikeblome"
 ms.author: "mblome"

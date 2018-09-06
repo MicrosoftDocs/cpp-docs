@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["async/Microsoft::WRL::AsyncBase::FireProgress"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["FireProgress method"]
+helpviewer_keywords: ["[""FireProgress method""]"]
 ms.assetid: 4512bef6-0ebc-4465-9b8a-4c9dfa82084c
 author: "mikeblome"
 ms.author: "mblome"

@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.db_column"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["db_column attribute"]
+helpviewer_keywords: ["[""db_column attribute""]"]
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
 author: "mikeblome"
 ms.author: "mblome"

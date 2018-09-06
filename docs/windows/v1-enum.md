@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["vc-attr.v1_enum"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["v1_enum attribute"]
+helpviewer_keywords: ["[""v1_enum attribute""]"]
 ms.assetid: 2fe92d92-81b9-4a1c-b6ce-437d0eb770ca
 author: "mikeblome"
 ms.author: "mblome"

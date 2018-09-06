@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["corewrappers/Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::GetInvalidValue"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["GetInvalidValue method"]
+helpviewer_keywords: ["[""GetInvalidValue method""]"]
 ms.assetid: e95d2cc1-e70f-463f-8ff0-183cdeac1138
 author: "mikeblome"
 ms.author: "mblome"

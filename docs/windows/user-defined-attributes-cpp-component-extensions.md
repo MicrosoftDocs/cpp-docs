@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["metadata, extending", "custom attributes, extending metadata"]
+helpviewer_keywords: ["[""metadata, extending"", ""custom attributes, extending metadata""]"]
 ms.assetid: 98b29048-a3ea-4698-8441-f149cdaec9fb
 author: "mikeblome"
 ms.author: "mblome"

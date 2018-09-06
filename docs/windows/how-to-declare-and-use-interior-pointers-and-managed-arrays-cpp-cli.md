@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["pointers, interior", "arrays [C++], managed"]
+helpviewer_keywords: ["[""pointers, interior"", ""arrays [C++], managed""]"]
 ms.assetid: e61a2c09-a7d0-4867-91ea-6b8788a01079
 author: "mikeblome"
 ms.author: "mblome"

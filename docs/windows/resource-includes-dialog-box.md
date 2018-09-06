@@ -1,20 +1,20 @@
 ---
-title: "Resource Includes Dialog Box | Microsoft Docs"
+title: "Resource Includes C++ Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resourceincludes"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Resource Includes dialog box", "rc files, changing storage", "symbol header files, changing", "compiling source code, including resources", ".rc files, changing storage", "symbol header files, read-only", "symbols, symbol header files"]
+helpviewer_keywords: ["[""Resource Includes dialog box [C++]"", ""rc files [C++], changing storage"", ""symbol header files [C++], changing"", "".rc files [C++], changing storage"", ""symbol header files [C++], read-only"", ""symbols [C++], symbol header files""]"]
 ms.assetid: 659a54e6-e416-4045-8411-798730ff4ce3
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Resource Includes Dialog Box
+# Resource Includes C++ Dialog Box
 
-You can use the **Resource Includes** dialog box to modify the environment's normal working arrangement of storing all resources in the project .rc file and all [symbols](../windows/symbols-resource-identifiers.md) in Resource.h.
+You can use the **Resource Includes** dialog box in a C++ project to modify the environment's normal working arrangement of storing all resources in the project .rc file and all [symbols](../windows/symbols-resource-identifiers.md) in Resource.h.
 
 To open the **Resource Includes** dialog box, right-click an .rc file in [Resource View](../windows/resource-view-window.md), then choose **Resource Includes** from the shortcut menu.
 

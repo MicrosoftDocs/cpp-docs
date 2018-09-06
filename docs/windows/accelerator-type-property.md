@@ -1,17 +1,17 @@
 ---
-title: "Accelerator Type Property | Microsoft Docs"
+title: "Accelerator Type Property (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Type property", "VIRTKEY"]
+helpviewer_keywords: ["[""Type property"", ""VIRTKEY""]"]
 ms.assetid: 8c349bc4-e6ad-43fa-959e-f29168af35b8
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Accelerator Type Property
+# Accelerator Type Property (C++)
 
 The accelerator **Type** property determines whether the shortcut key combination associated with the accelerator ID is a virtual key combination or an ASCII/ANSI key value:
 

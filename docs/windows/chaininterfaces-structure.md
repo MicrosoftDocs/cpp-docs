@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["implements/Microsoft::WRL::ChainInterfaces"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["ChainInterfaces structure"]
+helpviewer_keywords: ["[""ChainInterfaces structure""]"]
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
 author: "mikeblome"
 ms.author: "mblome"

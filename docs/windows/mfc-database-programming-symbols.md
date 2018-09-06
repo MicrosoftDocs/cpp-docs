@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["MFC database programming symbols", "symbols [C++], MFC", "databases [C++], MFC programming model"]
+helpviewer_keywords: ["[""MFC database programming symbols"", ""symbols [C++], MFC"", ""databases [C++], MFC programming model""]"]
 ms.assetid: 3f676a2c-cf07-415e-a336-680abdc42a5e
 author: "mikeblome"
 ms.author: "mblome"
