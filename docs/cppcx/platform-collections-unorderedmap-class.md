@@ -338,25 +338,25 @@ UnorderedMap(
 
 ### Parameters
 
-*InIt*  
+*InIt*<br/>
 The typename of the current UnorderedMap.
 
-*P*  
+*P*<br/>
 A function object that can compare two keys to determine whether they are equal. This parameter defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).
 
-*H*  
+*H*<br/>
 A function object that produces a hash value for a keys. This parameter defaults to [hash Class 1](../standard-library/hash-class.md) for the key types that the class supports.
 
-*m*  
+*m*<br/>
 A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the current UnorderedMap.
 
-*il*
+*il*<br/>
 A [std::initializer_list](../standard-library/initializer-list-class.md) of [std::pair](../standard-library/pair-structure.md) objects that is used to initialize the map.
 
-*first*  
+*first*<br/>
 The input iterator of the first element in a range of elements used to initialize the current UnorderedMap.
 
-*last*  
+*last*<br/>
 The input iterator of the first element after a range of elements used to initialize the current UnorderedMap.
 
 ## See also

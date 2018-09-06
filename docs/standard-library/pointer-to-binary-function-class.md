@@ -32,14 +32,14 @@ public:
 
 ### Parameters
 
-*pfunc*
- The binary function to be converted.
+*pfunc*<br/>
+The binary function to be converted.
 
-*left*
- The left object that the *\*pfunc* is called on.
+*left*<br/>
+The left object that the *\*pfunc* is called on.
 
-*right*
- The right object that the *\*pfunc* is called on.
+*right*<br/>
+The right object that the *\*pfunc* is called on.
 
 ## Return Value
 

@@ -23,14 +23,14 @@ RealType generate_canonical(Generator& Gen);
 
 ### Parameters
 
-*RealType*
- The floating point integral type. For possible types, see [\<random>](../standard-library/random.md).
+*RealType*<br/>
+The floating point integral type. For possible types, see [\<random>](../standard-library/random.md).
 
-*Bits*
- The random number generator.
+*Bits*<br/>
+The random number generator.
 
-*Gen*
- The random number generator.
+*Gen*<br/>
+The random number generator.
 
 ### Remarks
 

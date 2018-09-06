@@ -59,8 +59,8 @@ public:
 
 ### Parameters
 
-*RealType*
- The floating point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
+*RealType*<br/>
+The floating point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
@@ -228,31 +228,31 @@ explicit piecewise_linear_distribution(const param_type& parm);
 
 ### Parameters
 
-*firstI*
+*firstI*<br/>
 An input iterator of the first element in the distribution range.
 
-*lastI*
+*lastI*<br/>
 An input iterator of the last element in the distribution range.
 
-*firstW*
+*firstW*<br/>
 An input iterator of the first element in the weights range.
 
-*intervals*
+*intervals*<br/>
 An [initializer_list](../cpp/initializers.md) with the intervals of the distribution.
 
-*count*
+*count*<br/>
 The number of elements in the distribution range.
 
-*xmin*
+*xmin*<br/>
 The lowest value in the distribution range.
 
-*xmax*
+*xmax*<br/>
 The highest value in the distribution range. Must be greater than *xmin*.
 
-*weightfunc*
+*weightfunc*<br/>
 The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
 
-*parm*
+*parm*<br/>
 The parameter structure used to construct the distribution.
 
 ### Remarks

@@ -29,8 +29,8 @@ Type abs(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose modulus is to be determined.
+*complexNum*<br/>
+The complex number whose modulus is to be determined.
 
 ### Return Value
 
@@ -98,10 +98,10 @@ c2 = polar ( 5.0 , pi / 6 ) = (4.33013,2.5)
 c3 = polar ( 5.0 , 13 * pi / 6 ) = (4.33013,2.5)
 The modulus of c1 is recovered from c1 using: abs ( c1 ) = 5
 Argument of c1 is recovered from c1 using:
- arg ( c1 ) = 0 radians, which is 0 degrees.
+arg ( c1 ) = 0 radians, which is 0 degrees.
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.523599 radians, which is 30 degrees.
+arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 The complex numbers c2 & c3 have the same principal arguments.
 ```
 
@@ -116,8 +116,8 @@ Type arg(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose argument is to be determined.
+*complexNum*<br/>
+The complex number whose argument is to be determined.
 
 ### Return Value
 
@@ -185,10 +185,10 @@ c2 = polar ( 5.0 , pi / 6 ) = (4.33013,2.5)
 c3 = polar ( 5.0 , 13 * pi / 6 ) = (4.33013,2.5)
 The modulus of c1 is recovered from c1 using: abs ( c1 ) = 5
 Argument of c1 is recovered from c1 using:
- arg ( c1 ) = 0 radians, which is 0 degrees.
+arg ( c1 ) = 0 radians, which is 0 degrees.
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.523599 radians, which is 30 degrees.
+arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 The complex numbers c2 & c3 have the same principal arguments.
 ```
 
@@ -203,8 +203,8 @@ complex<Type> conj(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose complex conjugate is being returned.
+*complexNum*<br/>
+The complex number whose complex conjugate is being returned.
 
 ### Return Value
 
@@ -278,8 +278,8 @@ complex<Type> cos(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose cosine is being determined.
+*complexNum*<br/>
+The complex number whose cosine is being determined.
 
 ### Return Value
 
@@ -369,8 +369,8 @@ complex<Type> cosh(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose hyperbolic cosine is being determined.
+*complexNum*<br/>
+The complex number whose hyperbolic cosine is being determined.
 
 ### Return Value
 
@@ -460,8 +460,8 @@ complex<Type> exp(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose exponential is being determined.
+*complexNum*<br/>
+The complex number whose exponential is being determined.
 
 ### Return Value
 
@@ -531,8 +531,8 @@ Type imag(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose real part is to be extracted.
+*complexNum*<br/>
+The complex number whose real part is to be extracted.
 
 ### Return Value
 
@@ -583,8 +583,8 @@ complex<Type> log(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose natural logarithm is being determined.
+*complexNum*<br/>
+The complex number whose natural logarithm is being determined.
 
 ### Return Value
 
@@ -653,8 +653,8 @@ complex<Type> log10(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose base 10 logarithm is being determined.
+*complexNum*<br/>
+The complex number whose base 10 logarithm is being determined.
 
 ### Return Value
 
@@ -723,8 +723,8 @@ Type norm(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose norm is to be determined.
+*complexNum*<br/>
+The complex number whose norm is to be determined.
 
 ### Return Value
 
@@ -790,7 +790,7 @@ c3 = polar ( 5.0 , 13 * pi / 6 ) = (4.33013,2.5)
 The complex numbers c2 & c3 have the same principal arguments.
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.523599 radians, which is 30 degrees.
+arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 The norm of c2 given by: norm ( c2 ) = 25
 The modulus of c2 is the square root of the norm: sqrt ( normc2 ) = 5.
 ```
@@ -806,11 +806,11 @@ complex<Type> polar(const Type& _Modulus, const Type& _Argument = 0);
 
 ### Parameters
 
-*_Modulus*
- The modulus of the complex number being input.
+*_Modulus*<br/>
+The modulus of the complex number being input.
 
-*_Argument*
- The argument of the complex number being input.
+*_Argument*<br/>
+The argument of the complex number being input.
 
 ### Return Value
 
@@ -869,7 +869,7 @@ c3 = polar ( 5.0 , 13 * pi / 6 ) = (4.33013,2.5)
 The complex numbers c2 & c3 have the same principal arguments.
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.523599 radians, which is 30 degrees.
+arg ( c2 ) = 0.523599 radians, which is 30 degrees.
 ```
 
 ## <a name="pow"></a>  pow
@@ -892,11 +892,11 @@ complex<Type> pow(const Type& _Base, const complex<Type>& _Power);
 
 ### Parameters
 
-*_Base*
- The complex number or number that is of the parameter type for the complex number that is the base to be raised to a power by the member function.
+*_Base*<br/>
+The complex number or number that is of the parameter type for the complex number that is the base to be raised to a power by the member function.
 
-*_Power*
- The integer or complex number or number that is of the parameter type for the complex number that is the power that the base is to be raised to by the member function.
+*_Power*<br/>
+The integer or complex number or number that is of the parameter type for the complex number that is the power that the base is to be raised to by the member function.
 
 ### Return Value
 
@@ -991,28 +991,28 @@ int main( )
 Complex number for base cb1 = (3,4)
 Integer for power = 2
 Complex number returned from complex base and integer power:
- ce1 = cb1 ^ cp1 = (-7,24)
+ce1 = cb1 ^ cp1 = (-7,24)
 The modulus of ce1 is: 25
 The argument of ce1 is: 1.85459 radians, which is 106.26 degrees.
 
 Complex number for base cb2 = (3,4)
 Type double for power cp2 = pi = 3.14159
 Complex number returned from complex base and double power:
- ce2 = cb2 ^ cp2 = (-152.915,35.5475)
+ce2 = cb2 ^ cp2 = (-152.915,35.5475)
 The modulus of ce2 is: 156.993
 The argument of ce2 is: 2.91318 radians, which is 166.913 degrees.
 
 Complex number for base cb3 = (3,4)
 Complex number for power cp3= (-2,1)
 Complex number returned from complex base and complex power:
- ce3 = cb3 ^ cp3 = (0.0153517,-0.00384077)
+ce3 = cb3 ^ cp3 = (0.0153517,-0.00384077)
 The modulus of ce3 is: 0.0158249
 The argument of ce3 is: -0.245153 radians, which is -14.0462 degrees.
 
 Type double for base cb4 = pi = 3.14159
 Complex number for power cp4 = (2,-1)
 Complex number returned from double base and complex power:
- ce4 = cb4 ^ cp4 = (4.07903,-8.98725)
+ce4 = cb4 ^ cp4 = (4.07903,-8.98725)
 The modulus of ce4 is: 9.8696
 The argument of ce4 is: -1.14473 radians, which is -65.5882 degrees.
 ```
@@ -1028,8 +1028,8 @@ Type real(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose real part is to be extracted.
+*complexNum*<br/>
+The complex number whose real part is to be extracted.
 
 ### Return Value
 
@@ -1080,8 +1080,8 @@ complex<Type> sin(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose sine is being determined.
+*complexNum*<br/>
+The complex number whose sine is being determined.
 
 ### Return Value
 
@@ -1171,8 +1171,8 @@ complex<Type> sinh(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose hyperbolic sine is being determined.
+*complexNum*<br/>
+The complex number whose hyperbolic sine is being determined.
 
 ### Return Value
 
@@ -1262,8 +1262,8 @@ complex<Type> sqrt(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose square root is to be found.
+*complexNum*<br/>
+The complex number whose square root is to be found.
 
 ### Return Value
 
@@ -1322,10 +1322,10 @@ c1 = polar ( 5.0 ) = (-2.58529e-012,25)
 c2 = sqrt ( c1 ) = (3.53553,3.53553)
 The modulus of c2 is recovered from c2 using: abs ( c2 ) = 5
 Argument of c2 is recovered from c2 using:
- arg ( c2 ) = 0.785398 radians, which is 45 degrees.
+arg ( c2 ) = 0.785398 radians, which is 45 degrees.
 The modulus of c2 = sqrt( abs ( c1 ) ) =5
 The argument of c2 = ( 1 / 2 ) * arg ( c1 ) =0.785398 radians,
- which is 45 degrees.
+which is 45 degrees.
 ```
 
 ## <a name="tan"></a> tan
@@ -1339,8 +1339,8 @@ complex<Type> tan(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose tangent is being determined.
+*complexNum*<br/>
+The complex number whose tangent is being determined.
 
 ### Return Value
 
@@ -1428,8 +1428,8 @@ complex<Type> tanh(const complex<Type>& complexNum);
 
 ### Parameters
 
-*complexNum*
- The complex number whose hyperbolic tangent is being determined.
+*complexNum*<br/>
+The complex number whose hyperbolic tangent is being determined.
 
 ### Return Value
 

@@ -29,7 +29,7 @@ void free(
 
 ### Parameters
 
-*memblock*
+*memblock*<br/>
 Previously allocated memory block to be freed.
 
 ## Remarks

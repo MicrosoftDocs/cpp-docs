@@ -55,17 +55,17 @@ basic_istream<Elem, Tr>& operator>>(
 
 ### Parameters
 
-*Ch*
- A character.
+*Ch*<br/>
+A character.
 
-*Istr*
- A stream.
+*Istr*<br/>
+A stream.
 
-*str*
- A string.
+*str*<br/>
+A string.
 
-*val*
- A type.
+*val*<br/>
+A type.
 
 ### Return Value
 

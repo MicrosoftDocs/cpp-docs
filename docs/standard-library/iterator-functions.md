@@ -30,11 +30,11 @@ void advance(
 
 ### Parameters
 
-*InIt*
- The iterator that is to be incremented and that must satisfy the requirements for an input iterator.
+*InIt*<br/>
+The iterator that is to be incremented and that must satisfy the requirements for an input iterator.
 
-*Off*
- An integral type that is convertible to the iterator's difference type and that specifies the number of increments the position of the iterator is to be advanced.
+*Off*<br/>
+An integral type that is convertible to the iterator's difference type and that specifies the number of increments the position of the iterator is to be advanced.
 
 ### Remarks
 
@@ -102,8 +102,8 @@ back_insert_iterator<Container> back_inserter(Container& _Cont);
 
 ### Parameters
 
-*_Cont*
- The container into which the back insertion is to be executed.
+*_Cont*<br/>
+The container into which the back insertion is to be executed.
 
 ### Return Value
 
@@ -141,9 +141,9 @@ int main( )
 
    // Insertions can be done with template function
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 30;
+*backiter = 30;
    backiter++;
- *backiter = 40;
+*backiter = 40;
 
    // Alternatively, insertions can be done with the
    // back_insert_iterator member function
@@ -181,11 +181,11 @@ Ty *begin(Ty (& array)[Size]);
 
 ### Parameters
 
-*cont*
- A container.
+*cont*<br/>
+A container.
 
-*array*
- An array of objects of type `Ty`.
+*array*<br/>
+An array of objects of type `Ty`.
 
 ### Return Value
 
@@ -276,8 +276,8 @@ auto cbegin(const Container& cont)
 
 ### Parameters
 
-*cont*
- A container or initializer_list.
+*cont*<br/>
+A container or initializer_list.
 
 ### Return Value
 
@@ -309,8 +309,8 @@ auto cend(const Container& cont)
 
 ### Parameters
 
-*cont*
- A container or initializer_list.
+*cont*<br/>
+A container or initializer_list.
 
 ### Return Value
 
@@ -341,11 +341,11 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 
 ### Parameters
 
-*first*
- The first iterator whose distance from the second is to be determined.
+*first*<br/>
+The first iterator whose distance from the second is to be determined.
 
-*last*
- The second iterator whose distance from the first is to be determined.
+*last*<br/>
+The second iterator whose distance from the first is to be determined.
 
 ### Return Value
 
@@ -422,11 +422,11 @@ Ty *end(Ty (& array)[Size]);
 
 ### Parameters
 
-*cont*
- A container.
+*cont*<br/>
+A container.
 
-*array*
- An array of objects of type `Ty`.
+*array*<br/>
+An array of objects of type `Ty`.
 
 ### Return Value
 
@@ -449,8 +449,8 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
 
 ### Parameters
 
-*_Cont*
- The container object whose front is having an element inserted.
+*_Cont*<br/>
+The container object whose front is having an element inserted.
 
 ### Return Value
 
@@ -490,7 +490,7 @@ int main( )
 
    // Using the template function to insert an element
    front_insert_iterator< list < int> > Iter(L);
- *Iter = 100;
+*Iter = 100;
 
    // Alternatively, you may use the front_insert member function
    front_inserter ( L ) = 200;
@@ -504,9 +504,9 @@ int main( )
 
 ```Output
 The list L is:
- ( -1 0 1 2 3 4 5 6 7 8 ).
+( -1 0 1 2 3 4 5 6 7 8 ).
 After the front insertions, the list L is:
- ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
+( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
 ## <a name="inserter"></a>  inserter
@@ -523,11 +523,11 @@ inserter(
 
 ### Parameters
 
-*_Cont*
- The container to which new elements are to be added.
+*_Cont*<br/>
+The container to which new elements are to be added.
 
-*_Where*
- An iterator locating the point of insertion.
+*_Where*<br/>
+An iterator locating the point of insertion.
 
 ### Remarks
 
@@ -561,7 +561,7 @@ int main( )
 
    // Using the template version to insert an element
    insert_iterator<list <int> > Iter( L, L.begin ( ) );
- *Iter = 1;
+*Iter = 1;
 
    // Alternatively, using the member function to insert an element
    inserter ( L, L.end ( ) ) = 500;
@@ -575,9 +575,9 @@ int main( )
 
 ```Output
 The list L is:
- ( 20 30 40 ).
+( 20 30 40 ).
 After the insertions, the list L is:
- ( 1 20 30 40 500 ).
+( 1 20 30 40 500 ).
 ```
 
 ## <a name="make_checked_array_iterator"></a>  make_checked_array_iterator
@@ -591,21 +591,21 @@ Creates a [checked_array_iterator](../standard-library/checked-array-iterator-cl
 template <class Iter>
 checked_array_iterator<Iter>
     make_checked_array_iterator(
- Iter Ptr,
+Iter Ptr,
     size_t Size,
     size_t Index = 0);
 ```
 
 ### Parameters
 
-*Ptr*
- A pointer to the destination array.
+*Ptr*<br/>
+A pointer to the destination array.
 
-*Size*
- The size of the destination array.
+*Size*<br/>
+The size of the destination array.
 
-*Index*
- Optional index into the array.
+*Index*<br/>
+Optional index into the array.
 
 ### Return Value
 
@@ -687,8 +687,8 @@ make_move_iterator(const Iterator& _It);
 
 ### Parameters
 
-*_It*
- The iterator stored in the new move iterator.
+*_It*<br/>
+The iterator stored in the new move iterator.
 
 ### Remarks
 
@@ -709,8 +709,8 @@ unchecked_array_iterator<Iter>
 
 ### Parameters
 
-*Ptr*
- A pointer to the destination array.
+*Ptr*<br/>
+A pointer to the destination array.
 
 ### Return Value
 
@@ -787,11 +787,11 @@ InputIterator next(
 
 ### Parameters
 
-*first*
- The current position.
+*first*<br/>
+The current position.
 
-*_Off*
- The number of times to iterate.
+*_Off*<br/>
+The number of times to iterate.
 
 ### Return Value
 
@@ -814,11 +814,11 @@ BidirectionalIterator prev(
 
 ### Parameters
 
-*first*
- The current position.
+*first*<br/>
+The current position.
 
-*_Off*
- The number of times to iterate.
+*_Off*<br/>
+The number of times to iterate.
 
 ### Remarks
 

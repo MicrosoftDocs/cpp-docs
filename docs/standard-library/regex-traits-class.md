@@ -49,8 +49,8 @@ public:
 
 ### Parameters
 
-*Elem*
- The character element type to describe.
+*Elem*<br/>
+The character element type to describe.
 
 ## Remarks
 
@@ -323,8 +323,8 @@ locale_type imbue(locale_type loc);
 
 ### Parameters
 
-*loc*
- The locale object to store.
+*loc*<br/>
+The locale object to store.
 
 ### Remarks
 
@@ -411,11 +411,11 @@ bool isctype(char_type ch, char_class_type cls) const;
 
 ### Parameters
 
-*ch*
- The element to test.
+*ch*<br/>
+The element to test.
 
-*cls*
- The classes to test for.
+*cls*<br/>
+The classes to test for.
 
 ### Remarks
 
@@ -502,7 +502,7 @@ static size_type length(const char_type *str);
 
 ### Parameters
 
-*str*
+*str*<br/>
 
 The null-terminated sequence.
 
@@ -675,11 +675,11 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-*first*
- Beginning of sequence to look up.
+*first*<br/>
+Beginning of sequence to look up.
 
-*last*
- End of sequence to look up.
+*last*<br/>
+End of sequence to look up.
 
 ### Remarks
 
@@ -771,11 +771,11 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-*first*
- Beginning of sequence to look up.
+*first*<br/>
+Beginning of sequence to look up.
 
-*last*
- End of sequence to look up.
+*last*<br/>
+End of sequence to look up.
 
 ### Remarks
 
@@ -1114,11 +1114,11 @@ string_type transform(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-*first*
- Beginning of sequence to transform.
+*first*<br/>
+Beginning of sequence to transform.
 
-*last*
- End of sequence to transform.
+*last*<br/>
+End of sequence to transform.
 
 ### Remarks
 
@@ -1206,11 +1206,11 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 
 ### Parameters
 
-*first*
- Beginning of sequence to transform.
+*first*<br/>
+Beginning of sequence to transform.
 
-*last*
- End of sequence to transform.
+*last*<br/>
+End of sequence to transform.
 
 ### Remarks
 
@@ -1297,8 +1297,8 @@ char_type translate(char_type ch) const;
 
 ### Parameters
 
-*ch*
- The element to convert.
+*ch*<br/>
+The element to convert.
 
 ### Remarks
 
@@ -1385,8 +1385,8 @@ char_type translate_nocase(char_type ch) const;
 
 ### Parameters
 
-*ch*
- The element to convert.
+*ch*<br/>
+The element to convert.
 
 ### Remarks
 
@@ -1473,11 +1473,11 @@ int value(Elem ch, int radix) const;
 
 ### Parameters
 
-*ch*
- The element to convert.
+*ch*<br/>
+The element to convert.
 
-*radix*
- The arithmetic base to use.
+*radix*<br/>
+The arithmetic base to use.
 
 ### Remarks
 

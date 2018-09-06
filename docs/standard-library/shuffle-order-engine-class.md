@@ -25,11 +25,11 @@ class shuffle_order_engine;
 
 ### Parameters
 
-*Engine*
- The base engine type.
+*Engine*<br/>
+The base engine type.
 
-*K*
- **Table size**. Number of elements in the buffer (table). **Precondition**: `0 < K`
+*K*<br/>
+**Table size**. Number of elements in the buffer (table). **Precondition**: `0 < K`
 
 ## Members
 

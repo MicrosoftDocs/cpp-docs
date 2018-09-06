@@ -58,11 +58,11 @@ class match_results {
 
 ### Parameters
 
-*BidIt*
- The iterator type for submatches.
+*BidIt*<br/>
+The iterator type for submatches.
 
-*Alloc*
- The type of an allocator for managing storage.
+*Alloc*<br/>
+The type of an allocator for managing storage.
 
 ## Remarks
 
@@ -144,7 +144,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -265,7 +265,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -386,7 +386,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -507,7 +507,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -628,7 +628,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -749,7 +749,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -870,7 +870,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -991,7 +991,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1057,17 +1057,17 @@ string_type format(const string_type& fmt, match_flag_type flags = format_defaul
 
 ### Parameters
 
-*OutIt*
- The output iterator type.
+*OutIt*<br/>
+The output iterator type.
 
-*out*
- The output stream to write to.
+*out*<br/>
+The output stream to write to.
 
-*fmt*
- The format string.
+*fmt*<br/>
+The format string.
 
-*flags*
- The format flags.
+*flags*<br/>
+The format flags.
 
 ### Remarks
 
@@ -1133,7 +1133,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1254,7 +1254,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1375,7 +1375,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1436,8 +1436,8 @@ difference_type length(size_type sub = 0) const;
 
 ### Parameters
 
-*sub*
- The index of the submatch.
+*sub*<br/>
+The index of the submatch.
 
 ### Remarks
 
@@ -1501,7 +1501,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1564,11 +1564,11 @@ match_results(const match_results& right);
 
 ### Parameters
 
-*alloc*
- The allocator object to store.
+*alloc*<br/>
+The allocator object to store.
 
-*right*
- The match_results object to copy.
+*right*<br/>
+The match_results object to copy.
 
 ### Remarks
 
@@ -1632,7 +1632,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1753,7 +1753,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1814,8 +1814,8 @@ match_results& operator=(const match_results& right);
 
 ### Parameters
 
-*right*
- The match_results object to copy.
+*right*<br/>
+The match_results object to copy.
 
 ### Remarks
 
@@ -1879,7 +1879,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -1940,8 +1940,8 @@ const_reference operator[](size_type n) const;
 
 ### Parameters
 
-*n*
- Index of the submatch.
+*n*<br/>
+Index of the submatch.
 
 ### Remarks
 
@@ -2005,7 +2005,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2066,8 +2066,8 @@ difference_type position(size_type sub = 0) const;
 
 ### Parameters
 
-*sub*
- Index of the submatch.
+*sub*<br/>
+Index of the submatch.
 
 ### Remarks
 
@@ -2131,7 +2131,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2252,7 +2252,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2373,7 +2373,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2494,7 +2494,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2615,7 +2615,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2676,8 +2676,8 @@ string_type str(size_type sub = 0) const;
 
 ### Parameters
 
-*sub*
- Index of the submatch.
+*sub*<br/>
+Index of the submatch.
 
 ### Remarks
 
@@ -2741,7 +2741,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2862,7 +2862,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -2983,7 +2983,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -3044,8 +3044,8 @@ void swap(const match_results& right) throw();
 
 ### Parameters
 
-*right*
- The match_results object to swap with.
+*right*<br/>
+The match_results object to swap with.
 
 ### Remarks
 
@@ -3109,7 +3109,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
@@ -3230,7 +3230,7 @@ int main()
     mr.swap(mr1);
 
     char buf[10];
- *mr.format(&buf[0], "<$0>") = '\0';
+*mr.format(&buf[0], "<$0>") = '\0';
     std::cout << &buf[0] << std::endl;
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 

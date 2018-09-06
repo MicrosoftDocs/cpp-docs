@@ -27,11 +27,11 @@ bool operator!=(const set <Key, Traits, Allocator>& left, const set <Key, Traits
 
 ### Parameters
 
-*left*
- An object of type `set`.
+*left*<br/>
+An object of type `set`.
 
-*right*
- An object of type `set`.
+*right*<br/>
+An object of type `set`.
 
 ### Return Value
 
@@ -88,11 +88,11 @@ bool operator<(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 ### Parameters
 
-*left*
- An object of type `set`.
+*left*<br/>
+An object of type `set`.
 
-*right*
- An object of type `set`.
+*right*<br/>
+An object of type `set`.
 
 ### Return Value
 
@@ -149,11 +149,11 @@ bool operator!<=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### Parameters
 
-*left*
- An object of type `set`.
+*left*<br/>
+An object of type `set`.
 
-*right*
- An object of type `set`.
+*right*<br/>
+An object of type `set`.
 
 ### Return Value
 
@@ -217,11 +217,11 @@ bool operator!==(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### Parameters
 
-*left*
- An object of type `set`.
+*left*<br/>
+An object of type `set`.
 
-*right*
- An object of type `set`.
+*right*<br/>
+An object of type `set`.
 
 ### Return Value
 
@@ -278,11 +278,11 @@ bool operator>(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 ### Parameters
 
-*left*
- An object of type `set`.
+*left*<br/>
+An object of type `set`.
 
-*right*
- An object of type `set`.
+*right*<br/>
+An object of type `set`.
 
 ### Return Value
 
@@ -339,11 +339,11 @@ bool operator!>=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 ### Parameters
 
-*left*
- An object of type `set`.
+*left*<br/>
+An object of type `set`.
 
-*right*
- An object of type `set`.
+*right*<br/>
+An object of type `set`.
 
 ### Return Value
 
@@ -407,11 +407,11 @@ bool operator!=(const multiset <Key, Traits, Allocator>& left, const multiset <K
 
 ### Parameters
 
-*left*
- An object of type `multiset`.
+*left*<br/>
+An object of type `multiset`.
 
-*right*
- An object of type `multiset`.
+*right*<br/>
+An object of type `multiset`.
 
 ### Return Value
 
@@ -468,11 +468,11 @@ bool operator<(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 ### Parameters
 
-*left*
- An object of type `multiset`.
+*left*<br/>
+An object of type `multiset`.
 
-*right*
- An object of type `multiset`.
+*right*<br/>
+An object of type `multiset`.
 
 ### Return Value
 
@@ -533,11 +533,11 @@ bool operator!<=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### Parameters
 
-*left*
- An object of type `multiset`.
+*left*<br/>
+An object of type `multiset`.
 
-*right*
- An object of type `multiset`.
+*right*<br/>
+An object of type `multiset`.
 
 ### Return Value
 
@@ -607,11 +607,11 @@ bool operator!==(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### Parameters
 
-*left*
- An object of type `multiset`.
+*left*<br/>
+An object of type `multiset`.
 
-*right*
- An object of type `multiset`.
+*right*<br/>
+An object of type `multiset`.
 
 ### Return Value
 
@@ -668,11 +668,11 @@ bool operator>(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 ### Parameters
 
-*left*
- An object of type `multiset`.
+*left*<br/>
+An object of type `multiset`.
 
-*right*
- An object of type `multiset`.
+*right*<br/>
+An object of type `multiset`.
 
 ### Return Value
 
@@ -733,11 +733,11 @@ bool operator!>=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 ### Parameters
 
-*left*
- An object of type `multiset`.
+*left*<br/>
+An object of type `multiset`.
 
-*right*
- An object of type `multiset`.
+*right*<br/>
+An object of type `multiset`.
 
 ### Return Value
 

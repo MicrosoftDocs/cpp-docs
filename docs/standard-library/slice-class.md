@@ -106,11 +106,11 @@ int main( )
 
 ```Output
 The operand valarray va is:
- ( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ).
+( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ).
 The size of the valarray is: 20.
 
 The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
- ( 4 7 10 13 16 19 ).
+( 4 7 10 13 16 19 ).
 The size of slice vaSlice is: 6.
 ```
 
@@ -129,14 +129,14 @@ slice(
 
 ### Parameters
 
-*_StartIndex*
- The valarray index of the first element in the subset.
+*_StartIndex*<br/>
+The valarray index of the first element in the subset.
 
-*_Len*
- The number of elements in the subset.
+*_Len*<br/>
+The number of elements in the subset.
 
-*stride*
- The distance between elements in the subset.
+*stride*<br/>
+The distance between elements in the subset.
 
 ### Return Value
 
@@ -239,9 +239,9 @@ int main( )
 
 ```Output
 The operand valarray va is:
- ( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ).
+( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ).
 The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
- ( 4 7 10 13 16 19 ).
+( 4 7 10 13 16 19 ).
 The start index of slice vaSlice is: 3.
 ```
 
@@ -297,9 +297,9 @@ int main( )
 
 ```Output
 The operand valarray va is:
- ( 3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 ).
+( 3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 ).
 The slice of valarray va is vaResult = va[slice( 4, 5, 3)] =
- ( 15 24 33 42 51 ).
+( 15 24 33 42 51 ).
 The stride of slice vaSlice is: 3.
 ```
 

@@ -27,11 +27,11 @@ void swap(
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Example
 

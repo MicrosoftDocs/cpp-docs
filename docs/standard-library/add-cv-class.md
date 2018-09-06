@@ -28,7 +28,7 @@ using add_cv_t = typename add_cv<T>::type;
 
 ### Parameters
 
-*T*
+*T*<br/>
 The type to modify.
 
 ## Remarks

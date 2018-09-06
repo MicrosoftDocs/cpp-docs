@@ -39,7 +39,7 @@ The following options can be specified to **pgomgr**:
 *pgcfiles*<br/>
 One or more .pgc files whose profile data you want to merge into the .pgd file. You can specify a single .pgc file or multiple .pgc files. If you do not specify any .pgc files, **pgomgr** merges all .pgc files whose filenames are the same as the .pgd file.
 
-*pgdfile*
+*pgdfile*<br/>
 The .pgd file into which you are merging data from the .pgc file or files.
 
 ## Remarks

@@ -33,14 +33,14 @@ public:
 
 ### Parameters
 
-*Func*
- The binary function to be negated.
+*Func*<br/>
+The binary function to be negated.
 
-*left*
- The left operand of the binary function to be negated.
+*left*<br/>
+The left operand of the binary function to be negated.
 
-*right*
- The right operand of the binary function to be negated.
+*right*<br/>
+The right operand of the binary function to be negated.
 
 ## Return Value
 

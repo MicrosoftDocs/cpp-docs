@@ -25,11 +25,11 @@ class num_get : public locale::facet;
 
 ### Parameters
 
-*CharType*
- The type used within a program to encode characters in a locale.
+*CharType*<br/>
+The type used within a program to encode characters in a locale.
 
-*InputIterator*
- The type of iterator from which the numeric get functions read their input.
+*InputIterator*<br/>
+The type of iterator from which the numeric get functions read their input.
 
 ## Remarks
 
@@ -158,20 +158,20 @@ virtual iter_type do_get(
 
 ### Parameters
 
-*first*
- The beginning of the range of characters from which to read the number.
+*first*<br/>
+The beginning of the range of characters from which to read the number.
 
-*last*
- The end of the range of characters from which to read the number.
+*last*<br/>
+The end of the range of characters from which to read the number.
 
-*_Iosbase*
- The [ios_base](../standard-library/ios-base-class.md) whose flags are used by the conversion.
+*_Iosbase*<br/>
+The [ios_base](../standard-library/ios-base-class.md) whose flags are used by the conversion.
 
-*_State*
- The state to which failbit (see [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) is added upon failure.
+*_State*<br/>
+The state to which failbit (see [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) is added upon failure.
 
-*val*
- The value that was read.
+*val*<br/>
+The value that was read.
 
 ### Return Value
 
@@ -405,20 +405,20 @@ iter_type get(
 
 ### Parameters
 
-*first*
- The beginning of the range of characters from which to read the number.
+*first*<br/>
+The beginning of the range of characters from which to read the number.
 
-*last*
- The end of the range of characters from which to read the number.
+*last*<br/>
+The end of the range of characters from which to read the number.
 
-*_Iosbase*
- The [ios_base](../standard-library/ios-base-class.md) whose flags are used by the conversion.
+*_Iosbase*<br/>
+The [ios_base](../standard-library/ios-base-class.md) whose flags are used by the conversion.
 
-*_State*
- The state to which failbit (see [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) is added upon failure.
+*_State*<br/>
+The state to which failbit (see [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) is added upon failure.
 
-*val*
- The value that was read.
+*val*<br/>
+The value that was read.
 
 ### Return Value
 
@@ -564,8 +564,8 @@ explicit num_get(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*
- Integer value used to specify the type of memory management for the object.
+*_Refs*<br/>
+Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 

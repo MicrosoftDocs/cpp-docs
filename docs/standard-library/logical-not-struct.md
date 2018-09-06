@@ -32,16 +32,16 @@ struct logical_not<void>
   template <class Type>
   auto operator()(Type&& Left) const`
      -> decltype(!std::forward<Type>(Left));
- };
+};
 ```
 
 ### Parameters
 
-*Type*
- Any type that supports an `operator!` that takes an operand of the specified or inferred type.
+*Type*<br/>
+Any type that supports an `operator!` that takes an operand of the specified or inferred type.
 
-*Left*
- The operand of the logical not operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *Type*.
+*Left*<br/>
+The operand of the logical not operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *Type*.
 
 ## Return Value
 
@@ -86,10 +86,10 @@ int main( )
 }
 /* Output:
 Original deque:
- d1 = ( false true false true false true false )
+d1 = ( false true false true false true false )
 The deque with its values negated is:
- d2 = ( true false true false true false true )
- */
+d2 = ( true false true false true false true )
+*/
 ```
 
 ## Requirements

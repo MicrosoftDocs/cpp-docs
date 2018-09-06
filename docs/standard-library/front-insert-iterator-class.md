@@ -25,8 +25,8 @@ class front_insert_iterator;
 
 ### Parameters
 
-*Container*
- The type of container into the front of which elements are to be inserted by a `front_insert_iterator`.
+*Container*<br/>
+The type of container into the front of which elements are to be inserted by a `front_insert_iterator`.
 
 ## Remarks
 
@@ -111,8 +111,8 @@ explicit front_insert_iterator(Container& _Cont);
 
 ### Parameters
 
-*_Cont*
- The container object into which the `front_insert_iterator` is to insert elements.
+*_Cont*<br/>
+The container object into which the `front_insert_iterator` is to insert elements.
 
 ### Return Value
 
@@ -149,7 +149,7 @@ int main( )
 
    // Alternatively, one may use the template function
    front_insert_iterator< list < int> > Iter(L);
- *Iter = 30;
+*Iter = 30;
 
    cout << "After the front insertions, the list L is:\n ( ";
    for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++)
@@ -158,9 +158,9 @@ int main( )
 }
 \* Output:
 The list L is:
- ( -2 0 2 4 6 8 10 12 14 16 ).
+( -2 0 2 4 6 8 10 12 14 16 ).
 After the front insertions, the list L is:
- ( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
+( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
 *\
 ```
 
@@ -207,7 +207,7 @@ int main( )
    cout << ")." << endl;
 
    front_insert_iterator< list < int> > Iter(L);
- *Iter = 20;
+*Iter = 20;
 
    // Alternatively, you may use
    front_inserter ( L ) = 30;
@@ -219,9 +219,9 @@ int main( )
 }
 \* Output:
 The list L is:
- ( -2 0 2 4 6 8 10 12 14 16 ).
+( -2 0 2 4 6 8 10 12 14 16 ).
 After the front insertions, the list L is:
- ( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
+( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
 *\
 ```
 
@@ -258,11 +258,11 @@ int main( )
 
    list<int> L1;
    front_insert_iterator<list<int> > iter ( L1 );
- *iter = 10;
+*iter = 10;
    iter++;
- *iter = 20;
+*iter = 20;
    iter++;
- *iter = 30;
+*iter = 30;
    iter++;
 
    list <int>::iterator vIter;
@@ -288,8 +288,8 @@ front_insert_iterator<Container>& operator=(typename Container::value_type&& val
 
 ### Parameters
 
-*val*
- The value to be assigned to the container.
+*val*<br/>
+The value to be assigned to the container.
 
 ### Return Value
 
@@ -320,11 +320,11 @@ int main( )
 
    list<int> L1;
    front_insert_iterator<list<int> > iter ( L1 );
- *iter = 10;
+*iter = 10;
    iter++;
- *iter = 20;
+*iter = 20;
    iter++;
- *iter = 30;
+*iter = 30;
    iter++;
 
    list <int>::iterator vIter;
@@ -361,9 +361,9 @@ int main( )
 
    list<int> L;
    front_insert_iterator<list<int> > fiivIter( L );
- *fiivIter = 10;
- *fiivIter = 20;
- *fiivIter = 30;
+*fiivIter = 10;
+*fiivIter = 20;
+*fiivIter = 30;
 
    list<int>::iterator LIter;
    cout << "The list L is: ( ";

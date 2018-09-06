@@ -25,7 +25,7 @@ struct is_pod;
 
 ### Parameters
 
-*T*
+*T*<br/>
 The type to query.
 
 ## Remarks

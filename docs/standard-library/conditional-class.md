@@ -28,14 +28,14 @@ using conditional_t = typename conditional<_Test, _T1, _T2>::type;
 
 ### Parameters
 
-*B*
- The value that determines the selected type.
+*B*<br/>
+The value that determines the selected type.
 
-*T1*
- The type result when B is true.
+*T1*<br/>
+The type result when B is true.
 
-*T2*
- The type result when B is false.
+*T2*<br/>
+The type result when B is false.
 
 ## Remarks
 
