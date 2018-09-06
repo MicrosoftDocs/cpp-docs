@@ -1,7 +1,7 @@
 ---
 title: "ATL COM+ 1.0 Component Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/07/2018"
 ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.atl.mts.overview"]
@@ -19,7 +19,7 @@ Use this wizard to add an object to your project that supports COM+ 1.0 services
 You can specify whether the object supports dual interfaces and Automation. You can also indicate support for the error information interface, enhanced object control, transactions, and asynchronous message queuing.
 
 > [!WARNING]
-> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used, which indicates that developers prefer hand-coding over the wizard functionality. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
 
 ## Remarks
 

@@ -1,7 +1,7 @@
 ---
 title: "Add Class from Typelib Wizard | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/07/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["vc.codewiz.class.typelib"]
@@ -16,7 +16,7 @@ ms.workload: ["cplusplus"]
 Use this wizard to add an MFC class from an available type library. The wizard creates a class for each interface you add from the selected type library.
 
 > [!WARNING]
-> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used, which indicates that developers prefer hand-coding over the wizard functionality. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
+> In Visual Studio 2017 version 15.9 this code wizard is deprecated and will be removed in a future version of Visual Studio. This wizard is rarely used. General support for ATL and MFC is not impacted by the removal of this wizard. If you would like to share your feedback about this deprecation, please complete [this survey](https://www.surveymonkey.com/r/QDWKKCN). Your feedback matters to us.
   
  **Add class from**  
  Specifies the location of the type library, from which the class is created.  
