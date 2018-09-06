@@ -133,7 +133,7 @@ directory_entry& operator=(directory_entry&&) noexcept = default;
 ### Parameters
 
 *right*<br/>
-The [directory_entry](../standard-library/directory-entry-class.md) being compared to the `directory_entry`.  
+The [directory_entry](../standard-library/directory-entry-class.md) being copied into the `directory_entry`.  
 
 ## <a name="op_eq"></a> operator==
 
