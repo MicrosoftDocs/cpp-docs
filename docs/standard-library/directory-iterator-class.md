@@ -89,7 +89,7 @@ The stored object.
 
 ## <a name="increment"></a> directory_iterator::increment
 
-The function attempts to advance to the next filename in the directory. If successful, it stores that filename in myentry; otherwise it produces an end-of-sequence iterator.
+The function attempts to advance to the next filename in the directory. If successful, it stores that filename in `myentry`; otherwise it produces an end-of-sequence iterator.
 
 ```cpp
 directory_iterator& increment(error_code& ec) noexcept;
