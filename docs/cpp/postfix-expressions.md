@@ -38,7 +38,7 @@ postfix-expression[expression]postfix-expression(expression-list)simple-type-nam
 func(1)->GetValue()++  
 ```  
   
- In the above expression, `func` is a primary expression, `func(1)` is a function postfix expression, `func(1)->GetData` is a postfix expression specifying a member of the class, `func(1)->GetData()` is another function postfix expression, and the entire expression is a postfix expression incrementing the return value of GetData.  The meaning of the expression as a whole is "call func passing 1 as an argument and get a pointer to a class as a return value.  Then call `GetValue()` on that class, then increment the value returned.  
+ In the above expression, `func` is a primary expression, `func(1)` is a function postfix expression, `func(1)->GetValue` is a postfix expression specifying a member of the class, `func(1)->GetValue()` is another function postfix expression, and the entire expression is a postfix expression incrementing the return value of GetValue.  The meaning of the expression as a whole is "call func passing 1 as an argument and get a pointer to a class as a return value.  Then call `GetValue()` on that class, then increment the value returned.  
   
  The expressions listed above are assignment expressions, meaning that the result of these expressions must be an r-value.  
   
