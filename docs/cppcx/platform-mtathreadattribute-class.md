@@ -54,7 +54,7 @@ Initializes a new instance of the MTAThreadAttribute class.
 ### Syntax  
   
 ```cpp  
-public:MTAThreadAttribute()  
+public:MTAThreadAttribute();  
 ```  
   
 
@@ -64,12 +64,12 @@ Determines whether the specified object is equal to the current object.
   
 ### Syntax  
   
-```cpp  
-public:virtual override bool Equals(  Object^ obj)  
+```cpp
+public:virtual override bool Equals( Object^ obj );
 ```  
   
 ### Parameters  
- obj  
+ *obj*<br/>
  The object to compare.  
   
 ### Return Value  
@@ -83,7 +83,7 @@ Returns the hash code for this instance.
 ### Syntax  
   
 ```cpp  
-public:int GetHashCode()  
+public:int GetHashCode();
 ```  
   
 ### Return Value  
@@ -97,7 +97,7 @@ Returns a string that represents the current object.
 ### Syntax  
   
 ```cpp  
-public:String^ ToString()  
+public:String^ ToString();
 ```  
   
 ### Return Value  

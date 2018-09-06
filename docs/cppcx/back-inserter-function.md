@@ -29,11 +29,11 @@ Platform::BackInsertIterator<T>
 ```  
   
 #### Parameters  
- `T`  
- A template type parameter.  
+*T*<br/>
+A template type parameter.  
   
- `v`  
- An interface pointer that provides access to the underlying collection.  
+*v*<br/>
+An interface pointer that provides access to the underlying collection.  
   
 ### Return Value  
  An iterator.  

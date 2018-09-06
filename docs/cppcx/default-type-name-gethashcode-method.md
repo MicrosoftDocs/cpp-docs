@@ -17,7 +17,7 @@ Returns the hash code for this instance.
 ## Syntax  
   
 ```cpp  
-public:int GetHashCode()  
+public:int GetHashCode();
 ```  
   
 ### Return Value  

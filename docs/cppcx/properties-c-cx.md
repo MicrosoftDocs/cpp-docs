@@ -33,6 +33,6 @@ Windows Runtime types expose public data as properties. Client code accesses the
  [!code-cpp[cx_properties#01](../cppcx/codesnippet/CPP/cx_properties/class1.h#01)]  
   
 ## See Also  
- [Type System](../cppcx/type-system-c-cx.md)   
- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)   
- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+ [Type System](../cppcx/type-system-c-cx.md)<br/>
+[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

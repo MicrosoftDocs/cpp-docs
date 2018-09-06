@@ -54,7 +54,7 @@ Initializes a new instance of the STAThreadAttribute class.
 ### Syntax  
   
 ```cpp  
-public:STAThreadAttribute()  
+public:STAThreadAttribute();
 ```  
   
 
@@ -65,12 +65,12 @@ Determines whether the specified object is equal to the current object.
 ### Syntax  
   
 ```cpp  
-public:virtual override bool Equals(  Object^ obj)  
+public:virtual override bool Equals( Object^ obj );
 ```  
   
 ### Parameters  
- obj  
- The object to compare.  
+*obj*<br/>
+The object to compare.  
   
 ### Return Value  
  `true` if the objects are equal; otherwise, `false`.  
@@ -83,7 +83,7 @@ Returns the hash code for this instance.
 ### Syntax  
   
 ```cpp  
-public:int GetHashCode()  
+public:int GetHashCode();
 ```  
   
 ### Return Value  
@@ -97,7 +97,7 @@ Returns a string that represents the current object.
 ### Syntax  
   
 ```cpp  
-public:String^ ToString()  
+public:String^ ToString();
 ```  
   
 ### Return Value  

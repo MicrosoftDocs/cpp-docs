@@ -63,8 +63,8 @@ bool Equals(
 ```  
   
 ### Parameters  
- obj  
- The object to compare.  
+*obj*<br/>
+The object to compare.  
   
 ### Return Value  
  `true` if the objects are equal, otherwise `false`.  
@@ -77,7 +77,7 @@ Returns the `IUnknown`* identity value for this instance if it is a COM object, 
 ### Syntax  
   
 ```cpp  
-public:int GetHashCode()  
+public:int GetHashCode();
 ```  
   
 ### Return Value  
@@ -94,7 +94,7 @@ Returns a [Platform::Type](../cppcx/platform-type-class.md) object that describe
 ### Syntax  
   
 ```cpp  
-Object::GetType()  
+Object::GetType();
 ```  
 
   
@@ -113,9 +113,9 @@ rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```  
   
 ## See Also  
- [Platform::Type Class](../cppcx/platform-type-class.md)   
- [Platform namespace](../cppcx/platform-namespace-c-cx.md)   
- [Type System](../cppcx/type-system-c-cx.md
+ [Platform::Type Class](../cppcx/platform-type-class.md)<br/>
+[Platform namespace](../cppcx/platform-namespace-c-cx.md)<br/>
+[Type System](../cppcx/type-system-c-cx.md
   
 ## <a name="ctor"></a>  Object::Object Constructor
 Initializes a new instance of the Object class.  
@@ -123,7 +123,7 @@ Initializes a new instance of the Object class.
 ### Syntax  
   
 ```cpp  
-public:Object()  
+public:Object();
 ```  
 
 ## <a name="referenceequals"></a>  Object::ReferenceEquals Method
@@ -132,7 +132,7 @@ Determines whether the specified Object instances are the same instance.
 ### Syntax  
   
 ```cpp  
-public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2)  
+public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2);
 ```  
   
 ### Parameters  
@@ -152,7 +152,7 @@ Returns a string that represents the current object.
   
 ```cpp  
 public:  
-virtual String^ ToString()  
+virtual String^ ToString();
 ```  
   
 ### Return Value  

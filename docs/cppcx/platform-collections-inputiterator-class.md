@@ -23,8 +23,8 @@ class InputIterator;
 ```  
   
 #### Parameters  
- `X`  
- The typename of the InputIterator template class.  
+*X*<br/>
+The typename of the InputIterator template class.  
   
 ### Members  
   
@@ -73,8 +73,8 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iter);
 ```  
   
 ### Parameters  
- `iter`  
- An iterator object.  
+*iter*<br/>
+An iterator object.  
   
 
 
@@ -116,8 +116,8 @@ bool operator== (const InputIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another InputIterator.  
+*other*<br/>
+Another InputIterator.  
   
 ### Return Value  
  `true` if the current InputIterator is equal to `other`; otherwise, `false`.  
@@ -154,8 +154,8 @@ bool operator!=(const InputIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another InputIterator.  
+*other*<br/>
+Another InputIterator.  
   
 ### Return Value  
  `true` if the current InputIterator is not equal to `other`; otherwise, `false`.   

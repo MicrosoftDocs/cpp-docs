@@ -61,7 +61,7 @@ Returns the contents of this `StringReference` as an array of char16 values.
 ### Syntax  
   
 ```cpp  
-const ::default::char16 * Data() const  
+const ::default::char16 * Data() const;
 ```  
   
 ### Return Value  
@@ -75,7 +75,7 @@ Returns the contents of the string as an `__abi_HSTRING`.
 ### Syntax  
   
 ```cpp  
-__abi_HSTRING GetHSTRING() const  
+__abi_HSTRING GetHSTRING() const;
   
 ```  
   
@@ -93,7 +93,7 @@ Returns the contents of the string as a `Platform::String^`.
   
 ```cpp  
 __declspec(no_release_return) __declspec(no_refcount)  
-    ::Platform::String^ GetString() const  
+    ::Platform::String^ GetString() const;
 ```  
   
 ### Return Value  
@@ -105,7 +105,7 @@ Returns the number of characters in the string.
 ### Syntax  
   
 ```cpp  
-unsigned int Length() const  
+unsigned int Length() const;
 ```  
   
 ### Return Value  
@@ -126,11 +126,11 @@ StringReference& operator=(const ::default::char16* __strArg);
 ```  
   
 ### Parameters  
- `__fstrArg`  
- The address of a `StringReference` object that is used to initialize the current `StringReference` object.  
+*__fstrArg*<br/>
+The address of a `StringReference` object that is used to initialize the current `StringReference` object.  
   
- `__strArg`  
- Pointer to an array of char16 values that is used to initialize the current `StringReference` object.  
+*__strArg*<br/>
+Pointer to an array of char16 values that is used to initialize the current `StringReference` object.  
   
 ### Return Value  
  A reference to an object of type `StringReference`.  
@@ -145,11 +145,9 @@ Converts a `StringReference` object to a `Platform::String^` object.
   
 ### Syntax  
   
-```cpp  
-  
+```cpp
 __declspec(no_release_return) __declspec(no_refcount)  
-         operator ::Platform::String^() const  
-  
+         operator ::Platform::String^() const;
 ```  
   
 ### Return Value  
@@ -160,26 +158,22 @@ Initializes a new instance of the `StringReference` class.
   
 ### Syntax  
   
-```cpp  
-  
-    StringReference();  
-  
-   StringReference(const StringReference& __fstrArg)  
-  
-StringReference(const ::default::char16* __strArg)  
-  
-StringReference(const ::default::char16* __strArg, size_t __lenArg)  
+```cpp
+StringReference();  
+StringReference(const StringReference& __fstrArg);
+StringReference(const ::default::char16* __strArg);
+StringReference(const ::default::char16* __strArg, size_t __lenArg);
 ```  
   
 ### Parameters  
- `__fstrArg`  
- The `StringReference` whose data is used to initialize the new instance.  
+*__fstrArg*<br/>
+The `StringReference` whose data is used to initialize the new instance.  
   
- `__strArg`  
- Pointer to an array of char16 values that is used to initialize the new instance.  
+*__strArg*<br/>
+Pointer to an array of char16 values that is used to initialize the new instance.  
   
- `__lenArg`  
- The number of elements in `__strArg`.  
+*__lenArg*<br/>
+The number of elements in `__strArg`.  
   
 ### Remarks  
  The first version of this constructor is the default constructor. The second version initializes a new `StringReference` instance class from the object that's specified by the `__fstrArg` parameter. The third and fourth overloads initialize a new `StringReference` instance from an array of char16 values. char16 represents a 16-bit UNICODE text character.  

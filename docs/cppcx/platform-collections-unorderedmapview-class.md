@@ -24,14 +24,14 @@ ref class UnorderedMapView sealed;
 ```  
   
 #### Parameters  
- `K`  
- The type of the key in the key-value pair.  
+*K*<br/>
+The type of the key in the key-value pair.  
   
- `V`  
- The type of the value in the key-value pair.  
+*V*<br/>
+The type of the value in the key-value pair.  
   
- `C`  
- A type that provides a function object that can compare two key values for equality. By default, [std::equal_to\<K>](../standard-library/equal-to-struct.md)  
+*C*<br/>
+A type that provides a function object that can compare two key values for equality. By default, [std::equal_to\<K>](../standard-library/equal-to-struct.md)  
   
 ### Remarks  
  UnorderedMapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView\<K,V>](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
@@ -91,8 +91,8 @@ bool HasKey(K key);
 ```  
   
 ### Parameters  
- `key`  
- The key used to locate the element. The type of `key` is typename *K*.  
+*key*<br/>
+The key used to locate the element. The type of `key` is typename *K*.  
   
 ### Return Value  
  `true` if the key is found; otherwise, `false`.  
@@ -109,8 +109,8 @@ V Lookup(K key);
 ```  
   
 ### Parameters  
- `key`  
- The key used to locate an element in the UnorderedMapView. The type of `key` is typename *K*.  
+*key*<br/>
+The key used to locate an element in the UnorderedMapView. The type of `key` is typename *K*.  
   
 ### Return Value  
  The value that is paired with the `key`. The type of the return value is typename *V*.  
@@ -145,11 +145,11 @@ void Split(
 ```  
   
 ### Parameters  
- `firstPartition`  
- The first part of the original UnorderedMapView object.  
+*firstPartition*<br/>
+The first part of the original UnorderedMapView object.  
   
- `secondPartition`  
- The second part of the original UnorderedMapView object.  
+*secondPartition*<br/>
+The second part of the original UnorderedMapView object.  
   
 ### Remarks  
  This method is not operational; it does nothing.  
@@ -209,24 +209,24 @@ UnorderedMapView(
  n  
  The number of elements to preallocate space for.  
   
- `InIt`  
- The typename of the UnorderedMapView.  
+*InIt*<br/>
+The typename of the UnorderedMapView.  
   
- `H`  
- A function object that can a hash value for a key. Defaults to [std::hash\<K>](../standard-library/hash-class.md) for the types that `std::hash` supports.  
+*H*<br/>
+A function object that can a hash value for a key. Defaults to [std::hash\<K>](../standard-library/hash-class.md) for the types that `std::hash` supports.  
   
- `P`  
- A type that provides a function object that can compare two keys to determine their equality. Defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).  
+*P*<br/>
+A type that provides a function object that can compare two keys to determine their equality. Defaults to [std::equal_to\<K>](../standard-library/equal-to-struct.md).  
   
- `m`  
- A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the UnorderedMapView.  
+*m*<br/>
+A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::unordered_map](../standard-library/unordered-map-class.md) that is used to initialize the UnorderedMapView.  
   
- `first`  
- The input iterator of the first element in a range of elements used to initialize the UnorderedMapView.  
+*first*<br/>
+The input iterator of the first element in a range of elements used to initialize the UnorderedMapView.  
   
- `last`  
- The input iterator of the first element after a range of elements used to initialize the UnorderedMapView.  
+*last*<br/>
+The input iterator of the first element after a range of elements used to initialize the UnorderedMapView.  
    
 ## See Also  
- [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)   
- [Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)
+ [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)<br/>
+[Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)

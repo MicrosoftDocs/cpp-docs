@@ -43,8 +43,8 @@ Box(T valueArg);
 ```  
   
 ### Parameters  
- `valueArg`  
- The type of value to be boxed—for example, `int`, `bool`, `float64`, `DateTime`.  
+*valueArg*<br/>
+The type of value to be boxed—for example, `int`, `bool`, `float64`, `DateTime`.  
   
 
 ## <a name="box-const-t"></a> Box::operator Box&lt;const T&gt;^ Operator
@@ -57,8 +57,8 @@ operator Box<const T>^(const T valueType);
 ```  
   
 ### Parameters  
- `T`  
- Any value class, value struct, or enum type. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+*T*<br/>
+Any value class, value struct, or enum type. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
  A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
@@ -73,8 +73,8 @@ operator Box<const volatile T>^(const volatile T valueType);
 ```  
   
 ### Parameters  
- `T`  
- Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+*T*<br/>
+Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
  A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
@@ -89,8 +89,8 @@ operator Box<const T>^(const T valueType);
 ```  
   
 ### Parameters  
- `T`  
- Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+*T*<br/>
+Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
  A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
@@ -105,8 +105,8 @@ operator Box<volatile T>^(volatile T valueType);
 ```  
   
 ### Parameters  
- `T`  
- Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+*T*<br/>
+Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
  A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
@@ -121,8 +121,8 @@ operator Box<T>^(T valueType);
 ```  
   
 ### Parameters  
- `T`  
- Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
+*T*<br/>
+Any enum type, value class, or value struct. Includes the built-in types in the [default namespace](../cppcx/default-namespace.md).  
   
 ### Return Value  
  A `Platform::Box<T>^` instance that represents the original value boxed in a ref class.  
@@ -144,5 +144,5 @@ virtual property T Value{
   
   
 ## See Also  
- [Platform namespace](../cppcx/platform-namespace-c-cx.md)   
- [Boxing](../cppcx/boxing-c-cx.md)
+ [Platform namespace](../cppcx/platform-namespace-c-cx.md)<br/>
+[Boxing](../cppcx/boxing-c-cx.md)

@@ -15,7 +15,7 @@ Enables conversion from [Windows::UI::Xaml::Interop::TypeName](https://msdn.micr
 ## Syntax  
   
 ```cpp  
-Operator Type^(Windows::UI::Xaml::Interop::TypeName typeName)  
+Operator Type^(Windows::UI::Xaml::Interop::TypeName typeName);  
 ```  
   
 ### Return Value  
@@ -47,5 +47,5 @@ Type^ tx2 = (Type^)(tn);
 ### Requirements  
   
 ## See Also  
- [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)   
- [Platform::Type Class](../cppcx/platform-type-class.md)
+ [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>
+[Platform::Type Class](../cppcx/platform-type-class.md)

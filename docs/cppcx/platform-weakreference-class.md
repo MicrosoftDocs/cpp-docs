@@ -66,7 +66,7 @@ Implements the safe bool pattern for the WeakReference class. Not to be called e
 ### Syntax  
   
 ```cpp  
-BoolType BoolType()  
+BoolType BoolType();
 ```  
 
 ## <a name="resolve"></a> WeakReference::Resolve Method (Platform namespace)
@@ -74,10 +74,9 @@ Returns a handle to the original ref class, or `nullptr` if the object no longer
   
 ### Syntax  
   
-```cpp  
-  
+```cpp
 template<typename T>  
-T^ Resolve() const  
+T^ Resolve() const;
 ```  
   
 ### Parameters  
@@ -85,11 +84,9 @@ T^ Resolve() const
 ### Property Value/Return Value  
  A handle to the ref class that the WeakReference object was previously associated with, or nullptr.  
   
-### Example  
- This is the description for a Code Example.  
+### Example
   
-```  
-  
+```cpp
 Bar^ bar = ref new Bar();  
 //use bar...  
   
@@ -98,7 +95,7 @@ if (bar != nullptr)
     WeakReference wr(bar);  
     Bar^ newReference = wr.Resolve<Bar>();  
 }  
-```  
+```
   
  Note that the type parameter is T, not T^.  
   

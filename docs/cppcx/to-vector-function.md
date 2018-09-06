@@ -26,11 +26,11 @@ inline ::std::vector<T> to_vector(IVectorView<T>^ v);
 ```  
   
 #### Parameters  
- `T`  
- The template type parameter.  
+*T*<br/>
+The template type parameter.  
   
- `v`  
- An IVector or IVectorView interface that provides access to an underlying Vector or VectorView object.  
+*v*<br/>
+An IVector or IVectorView interface that provides access to an underlying Vector or VectorView object.  
   
 ### Return Value  
   

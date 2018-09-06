@@ -160,11 +160,11 @@ T& set(
 ```  
   
 ### Parameters  
- `indexArg`  
- The index of the element to set.  
+*indexArg*<br/>
+The index of the element to set.  
   
- `valueArg`  
- The value to set at `indexArg`.  
+*valueArg*<br/>
+The value to set at `indexArg`.  
   
 ### Return Value  
  A reference to the element that was just set.  
@@ -176,5 +176,5 @@ T& set(
   
   
 ## See Also  
- [Platform Namespace](platform-namespace-c-cx.md)   
- [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+ [Platform Namespace](platform-namespace-c-cx.md)<br/>
+[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

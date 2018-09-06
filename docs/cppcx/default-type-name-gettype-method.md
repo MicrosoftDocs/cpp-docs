@@ -16,9 +16,8 @@ Returns a Platform::Type^ that represents the current type.
   
 ## Syntax  
   
-```cpp  
-  
-Platform::Type^ GetType()  
+```cpp
+Platform::Type^ GetType();
 ```  
   
 ### Return Value  

@@ -26,14 +26,14 @@ ref class MapView sealed;
 ```  
   
 #### Parameters  
- `K`  
- The type of the key in the key-value pair.  
+*K*<br/>
+The type of the key in the key-value pair.  
   
- `V`  
- The type of the value in the key-value pair.  
+*V*<br/>
+The type of the value in the key-value pair.  
   
- `C`  
- A type that provides a function object that can compare two element values as sort keys to determine their relative order in the MapView. By default, [std::less\<K>](../standard-library/less-struct.md).  
+*C*<br/>
+A type that provides a function object that can compare two element values as sort keys to determine their relative order in the MapView. By default, [std::less\<K>](../standard-library/less-struct.md).  
   
 ### Remarks  
  MapView is a concrete C++ implementation of the [Windows::Foundation::Collections::IMapView \<K,V>](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) interface that is passed across the application binary interface (ABI). For more information, see [Collections (C++/CX)](../cppcx/collections-c-cx.md).  
@@ -94,8 +94,8 @@ bool HasKey(K key);
 ```  
   
 ### Parameters  
- `key`  
- The key used to locate the MapView element. The type of `key` is typename *K*.  
+*key*<br/>
+The key used to locate the MapView element. The type of `key` is typename *K*.  
   
 ### Return Value  
  `true` if the key is found; otherwise, `false`.  
@@ -112,8 +112,8 @@ V Lookup(K key);
 ```  
   
 ### Parameters  
- `key`  
- The key used to locate an element in the MapView. The type of `key` is typename *K*.  
+*key*<br/>
+The key used to locate an element in the MapView. The type of `key` is typename *K*.  
   
 ### Return Value  
  The value that is paired with the `key`. The type of the return value is typename *V*.  
@@ -143,20 +143,20 @@ MapView(
 ```  
   
 ### Parameters  
- `InIt`  
- The typename of the current MapView.  
+*InIt*<br/>
+The typename of the current MapView.  
   
- `comp`  
- A function object that can compare two element values as sort keys to determine their relative order in the MapView.  
+*comp*<br/>
+A function object that can compare two element values as sort keys to determine their relative order in the MapView.  
   
- `m`  
- A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current MapView.  
+*m*<br/>
+A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current MapView.  
   
- `first`  
- The input iterator of the first element in a range of elements used to initialize the current MapView.  
+*first*<br/>
+The input iterator of the first element in a range of elements used to initialize the current MapView.  
   
- `last`  
- The input iterator of the first element after a range of elements used to initialize the current MapView.  
+*last*<br/>
+The input iterator of the first element after a range of elements used to initialize the current MapView.  
   
  il  
  A [std::initializer_list<std::pair\<K,V>>](../standard-library/initializer-list-class.md) whose elements will be inserted into the MapView.  
@@ -192,11 +192,11 @@ void Split(
 ```  
   
 ### Parameters  
- `firstPartition`  
- The first part of the original MapView object.  
+*firstPartition*<br/>
+The first part of the original MapView object.  
   
- `secondPartition`  
- The second part of the original MapView object.  
+*secondPartition*<br/>
+The second part of the original MapView object.  
   
 ### Remarks  
  This method is not operational; it does nothing.  

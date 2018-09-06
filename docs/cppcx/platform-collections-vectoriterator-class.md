@@ -25,8 +25,8 @@ class VectorIterator;
 ```  
   
 #### Parameters  
- `T`  
- The typename of the VectorIterator template class.  
+*T*<br/>
+The typename of the VectorIterator template class.  
   
 ### Members  
   
@@ -135,8 +135,8 @@ bool operator==(const VectorIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another VectorIterator.  
+*other*<br/>
+Another VectorIterator.  
   
 ### Return Value  
  `true` if the current VectorIterator is equal to `other`; otherwise, `false`.  
@@ -154,8 +154,8 @@ bool operator>(const VectorIterator& other) const
 ```  
   
 ### Parameters  
- `other`  
- Another VectorIterator.  
+*other*<br/>
+Another VectorIterator.  
   
 ### Return Value  
  `true` if the current VectorIterator is greater than `other`; otherwise, `false`.  
@@ -173,8 +173,8 @@ bool operator>=(const VectorIterator& other) const
 ```  
   
 ### Parameters  
- `other`  
- Another VectorIterator.  
+*other*<br/>
+Another VectorIterator.  
   
 ### Return Value  
  `true` if the current VectorIterator is greater than or equal to `other`; otherwise, `false`.    
@@ -210,8 +210,8 @@ bool operator!=(const VectorIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another VectorIterator.  
+*other*<br/>
+Another VectorIterator.  
   
 ### Return Value  
  `true` if the current VectorIterator is not equal to `other`; otherwise, `false`.  
@@ -229,8 +229,8 @@ bool operator<(const VectorIterator& other) const
 ```  
   
 ### Parameters  
- `other`  
- Another VectorIterator.  
+*other*<br/>
+Another VectorIterator.  
   
 ### Return Value  
  `true` if the current VectorIterator is less than `other`; otherwise, `false`.  
@@ -248,8 +248,8 @@ bool operator<=(const VectorIterator& other) const
 ```  
   
 ### Parameters  
- `other`  
- Another VectorIterator.  
+*other*<br/>
+Another VectorIterator.  
   
 ### Return Value  
  `true` if the current VectorIterator is less than or equal to `other`; otherwise, `false`.  
@@ -269,11 +269,11 @@ difference_type operator-(const VectorIterator& other) const;
 ```  
   
 ### Parameters  
- `n`  
- A number of elements.  
+*n*<br/>
+A number of elements.  
   
- `other`  
- Another VectorIterator.  
+*other*<br/>
+Another VectorIterator.  
   
 ### Return Value  
  The first operator syntax returns a VectorIterator object that is `n` elements less than the current VectorIterator. The second operator syntax returns the number of elements between the current and the `other` VectorIterator.  
@@ -290,8 +290,8 @@ VectorIterator& operator+=(difference_type n);
 ```  
   
 ### Parameters  
- `n`  
- A integer displacement.  
+*n*<br/>
+A integer displacement.  
   
 ### Return Value  
  The updated VectorIterator.  
@@ -315,14 +315,14 @@ inline VectorIterator<T> operator+(
 ```  
   
 ### Parameters  
- `T`  
- In the second syntax, the typename of the VectorIterator.  
+*T*<br/>
+In the second syntax, the typename of the VectorIterator.  
   
- `n`  
- An integer displacement.  
+*n*<br/>
+An integer displacement.  
   
- `i`  
- In the second syntax, a VectorIterator.  
+*i*<br/>
+In the second syntax, a VectorIterator.  
   
 ### Return Value  
  In the first syntax, a VectorIterator that references the element at the specified displacement from the current VectorIterator.  
@@ -344,8 +344,8 @@ VectorIterator& operator-=(difference_type n);
 ```  
   
 ### Parameters  
- `n`  
- An integer displacement.  
+*n*<br/>
+An integer displacement.  
   
 ### Return Value  
  The updated VectorIterator.  
@@ -362,8 +362,8 @@ reference operator[](difference_type n) const;
 ```  
   
 ### Parameters  
- `n`  
- An integer displacement.  
+*n*<br/>
+An integer displacement.  
   
 ### Return Value  
  The element that is displaced by `n` elements from the current VectorIterator.  
@@ -383,8 +383,8 @@ explicit VectorIterator(
 ```  
   
 ### Parameters  
- `v`  
- An IVector\<T> object.  
+*v*<br/>
+An IVector\<T> object.  
   
 ### Remarks  
  The first syntax example is the default constructor. The second syntax example is an explicit constructor that is used to construct a VectorIterator from an IVector\<T> object.  

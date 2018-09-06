@@ -35,7 +35,7 @@ ms.workload: ["cplusplus"]
 ```  
   
 ## See Also  
- [Type System (C++/CX)](../cppcx/type-system-c-cx.md)   
- [Casting (C++/CX)](../cppcx/casting-c-cx.md)   
- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)   
- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+ [Type System (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
+[Casting (C++/CX)](../cppcx/casting-c-cx.md)<br/>
+[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

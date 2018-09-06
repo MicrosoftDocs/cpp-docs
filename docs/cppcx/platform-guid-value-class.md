@@ -49,69 +49,68 @@ Initializes a new instance of a Guid struct.
   
 ### Syntax  
   
-```cpp  
-  
-    Guid(  
-        unsigned int a,   
-        unsigned short b,   
-        unsigned short c,   
-        unsigned char d,   
-        unsigned char e,   
-        unsigned char f,   
-        unsigned char g,   
-        unsigned char h,   
-        unsigned char i,   
-        unsigned char j,   
-        unsigned char k  );  
-  
-    Guid(GUID m);  
-  
-    Guid(  
-        unsigned int a,   
-        unsigned short b,   
-        unsigned short c,   
-        Array<unsigned char>^ n );  
-```  
-  
+```cpp
+Guid(
+    unsigned int a,
+    unsigned short b,   
+    unsigned short c,   
+    unsigned char d,   
+    unsigned char e,   
+    unsigned char f,   
+    unsigned char g,   
+    unsigned char h,   
+    unsigned char i,   
+    unsigned char j,   
+    unsigned char k );  
+
+Guid(GUID m);  
+
+Guid(  
+    unsigned int a,   
+    unsigned short b,   
+    unsigned short c,   
+    Array<unsigned char>^ n );  
+```
+
 ### Parameters  
- `a`  
- The first 4 bytes of the GUID.  
+*a*<br/>
+The first 4 bytes of the GUID.  
   
- `b`  
- The next 2 bytes of the GUID.  
+*b*<br/>
+The next 2 bytes of the GUID.  
   
- `c`  
- The next 2 bytes of the GUID.  
+*c*<br/>
+The next 2 bytes of the GUID.  
   
- `d`  
- The next byte of the GUID.  
+*d*<br/>
+The next byte of the GUID.  
   
- `e`  
- The next byte of the GUID.  
+*e*<br/>
+The next byte of the GUID.  
   
- `f`  
- The next byte of the GUID.  
+*f*<br/>
+The next byte of the GUID.  
   
- `g`  
- The next byte of the GUID.  
+*g*<br/>
+The next byte of the GUID.  
   
- `h`  
- The next byte of the GUID.  
+*h*<br/>
+The next byte of the GUID.  
   
- `i`  
- The next byte of the GUID.  
+*i*<br/>
+The next byte of the GUID.  
   
- `j`  
- The next byte of the GUID.  
+*j*<br/>
+The next byte of the GUID.  
   
- `k`  
- The next byte of the GUID.  
+*k*<br/>
+The next byte of the GUID.  
   
- `m`  
- A GUID as defined .  
+*m*<br/>
+A GUID as defined.  
   
- `n`  
- The remaining 8 bytes of the GUID.  
+*n*<br/>
+The remaining 8 bytes of the GUID.  
   
 
 ## <a name="operator-equality"></a> Guid::operator== Operator
@@ -146,7 +145,7 @@ Implicitly converts a [GUID structure](https://msdn.microsoft.com/library/window
 ### Syntax  
   
 ```cpp  
-Platform::Guid operator()  
+Platform::Guid operator();  
 ```  
   
 ### Return Value  

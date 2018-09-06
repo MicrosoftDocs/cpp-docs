@@ -22,8 +22,8 @@ interface class IBox
 ```  
   
 #### Parameters  
- `T`  
- The type of the boxed value.  
+*T*<br/>
+The type of the boxed value.  
   
 ### Remarks  
  The `IBox<T>` interface is primarily used internally to represent nullable value types, as described in [Value classes and structs (C++/CX)](../cppcx/value-classes-and-structs-c-cx.md). The interface is also used to box value types that are passed to C++ methods that take parameters of type `Object^`. You can explicitly declare an input parameter as `IBox<SomeValueType>`. For an example, see [Boxing](../cppcx/boxing-c-cx.md).  
@@ -49,8 +49,8 @@ property T Value {T get();}
 ```  
   
 ### Parameters  
- `T`  
- The type of the boxed value.  
+*T*<br/>
+The type of the boxed value.  
   
 ### Property Value/Return Value  
  Returns the value that was originally stored in this object.  

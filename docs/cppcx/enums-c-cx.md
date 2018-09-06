@@ -35,6 +35,6 @@ C++/CX supports the `public enum class` keyword, which is analagous to a standar
  [!code-cpp[cx_enums#04](../cppcx/codesnippet/CPP/cpp/class1.h#04)]  
   
 ## See Also  
- [Type System](../cppcx/type-system-c-cx.md)   
- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)   
- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+ [Type System](../cppcx/type-system-c-cx.md)<br/>
+[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

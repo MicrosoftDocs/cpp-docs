@@ -15,7 +15,7 @@ Enables conversion from `Platform::Type` to [Windows::UI::Xaml::Interop::TypeNam
 ## Syntax  
   
 ```cpp  
-Operator TypeName(Platform::Type^ type)  
+Operator TypeName(Platform::Type^ type);  
 ```  
   
 ### Return Value  
@@ -47,5 +47,5 @@ Type^ tx2 = (Type^)(tn);
 ### Requirements  
   
 ## See Also  
- [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)   
- [Platform::Type Class](../cppcx/platform-type-class.md)
+ [operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>
+[Platform::Type Class](../cppcx/platform-type-class.md)

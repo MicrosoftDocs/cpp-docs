@@ -24,8 +24,8 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
 ```  
   
 #### Parameters  
- `T`  
- The type of item in the current collection.  
+*T*<br/>
+The type of item in the current collection.  
   
 ### Remarks  
  The BackInsertIterator class implements the rules required by the [back_insert_iterator Class](../standard-library/back-insert-iterator-class.md).  
@@ -67,8 +67,8 @@ explicit BackInsertIterator(
 ```  
   
 #### Parameters  
- `v`  
- An IVector\<T> object.  
+*v*<br/>
+An IVector\<T> object.  
   
 ### Remarks  
  A `BackInsertIterator` inserts elements after the last element of the object specified by parameter `v`.  
@@ -83,8 +83,8 @@ BackInsertIterator& operator=( const T& t);
 ```  
   
 #### Parameters  
- `t`  
- The object to append to the current collection.  
+*t*<br/>
+The object to append to the current collection.  
   
 ### Return Value  
  A reference to the current BackInsertIterator.  

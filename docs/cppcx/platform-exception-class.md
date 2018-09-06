@@ -62,8 +62,8 @@ Creates a Platform::Exception^ from a specified HRESULT value.
 ### Syntax  
   
 ```cpp  
-Exception^ CreateException(int32 hr)  
-Exception^ CreateException(int32 hr, Platform::String^ message)  
+Exception^ CreateException(int32 hr);  
+Exception^ CreateException(int32 hr, Platform::String^ message);  
 ```  
   
 ### Parameters  
@@ -89,17 +89,16 @@ Intializes a new instance of the Exception class.
 ### Syntax  
   
 ```cpp  
-  
-Exception(int32 hresult)  
-Exception(int32 hresult, ::Platform::String^ message)  
+Exception(int32 hresult);  
+Exception(int32 hresult, ::Platform::String^ message);  
 ```  
   
 ### Parameters  
- `hresult`  
- The error HRESULT that is represented by the exception.  
+*hresult*<br/>
+The error HRESULT that is represented by the exception.  
   
- `message`  
- A user-specified message, such as prescriptive text, that is associated with the exception. In general you should prefer the second overload in order to provide a descriptive message that is as specific as possible about how and why the error has occurred.  
+*message*<br/>
+A user-specified message, such as prescriptive text, that is associated with the exception. In general you should prefer the second overload in order to provide a descriptive message that is as specific as possible about how and why the error has occurred.  
   
 
 
@@ -109,7 +108,8 @@ The HRESULT that corresponds to the exception.
 ### Syntax  
   
 ```cpp  
-public:property int HResult {    int get();}  
+public:
+    property int HResult { int get(); }  
 ```  
   
 ## Property Value  

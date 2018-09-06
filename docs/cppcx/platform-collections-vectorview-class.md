@@ -23,11 +23,11 @@ template <typename T, typename E>
 ```  
   
 #### Parameters  
- `T`  
- The type of the elements contained in the `VectorView` object.  
+*T*<br/>
+The type of the elements contained in the `VectorView` object.  
   
- `E`  
- Specifies a binary predicate for testing equality with values of type `T`. The default value is `std::equal_to<T>`.  
+*E*<br/>
+Specifies a binary predicate for testing equality with values of type `T`. The default value is `std::equal_to<T>`.  
   
 ### Remarks  
  The `VectorView` class implements the [Windows::Foundation::Collections::IVectorView\<T>](/uwp/api/Windows.Foundation.Collections.IVectorView_T_) interface, and support for Standard Template Library iterators.  
@@ -90,8 +90,8 @@ T GetAt(
 ```  
   
 ### Parameters  
- `index`  
- A zero-based, unsigned integer that specifies a particular element in the VectorView object.  
+*index*<br/>
+A zero-based, unsigned integer that specifies a particular element in the VectorView object.  
   
 ### Return Value  
  The element specified by the `index` parameter. The element type is specified by the VectorView template parameter, *T*.  
@@ -112,11 +112,11 @@ virtual unsigned int GetMany(
 ```  
   
 ### Parameters  
- `startIndex`  
- The zero-based index of the start of the items to retrieve.  
+*startIndex*<br/>
+The zero-based index of the start of the items to retrieve.  
   
- `dest`  
- When this operation completes, an array of items that begin at the element specified by `startIndex` and end at the last element in the VectorView.  
+*dest*<br/>
+When this operation completes, an array of items that begin at the element specified by `startIndex` and end at the last element in the VectorView.  
   
 ### Return Value  
  The number of items retrieved.  
@@ -137,11 +137,11 @@ virtual bool IndexOf(
 ```  
   
 ### Parameters  
- `value`  
- The item to find.  
+*value*<br/>
+The item to find.  
   
- `index`  
- The zero-based index of the item if parameter `value` is found; otherwise, 0.  
+*index*<br/>
+The zero-based index of the item if parameter `value` is found; otherwise, 0.  
   
  The `index` parameter is 0 if either the item is the first element of the VectorView or the item was not found. If the return value is `true`, the item was found and it is the first element; otherwise, the item was not found.  
   
@@ -223,42 +223,42 @@ VectorView(
 ```  
   
 ### Parameters  
- `InIt`  
- The type of a collection of objects that is used to initialize the current VectorView.  
+*InIt*<br/>
+The type of a collection of objects that is used to initialize the current VectorView.  
   
  il  
  A [std::initializer_list](../standard-library/initializer-list-class.md) whose elements will be used to initialize the VectorView.  
   
- `N`  
- The number of elements in a collection of objects that is used to initialize the current VectorView.  
+*N*<br/>
+The number of elements in a collection of objects that is used to initialize the current VectorView.  
   
- `size`  
- The number of elements in the VectorView.  
+*size*<br/>
+The number of elements in the VectorView.  
   
- `value`  
- A value that is used to initialize each element in the current VectorView.  
+*value*<br/>
+A value that is used to initialize each element in the current VectorView.  
   
- `v`  
- An [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::vector](../standard-library/vector-class.md) that is used to initialize the current VectorView.  
+*v*<br/>
+An [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a [std::vector](../standard-library/vector-class.md) that is used to initialize the current VectorView.  
   
- `ptr`  
- Pointer to a `std::vector` that is used to initialize the current VectorView.  
+*ptr*<br/>
+Pointer to a `std::vector` that is used to initialize the current VectorView.  
   
- `arr`  
- A [Platform::Array](../cppcx/platform-array-class.md) object that is used to initialize the current VectorView.  
+*arr*<br/>
+A [Platform::Array](../cppcx/platform-array-class.md) object that is used to initialize the current VectorView.  
   
- `a`  
- A [std::array](../standard-library/array-class-stl.md) object that is used to initialize the current VectorView.  
+*a*<br/>
+A [std::array](../standard-library/array-class-stl.md) object that is used to initialize the current VectorView.  
   
- `first`  
- The first element in a sequence of objects that are used to initialize the current VectorView. The type of `first` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
+*first*<br/>
+The first element in a sequence of objects that are used to initialize the current VectorView. The type of `first` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
- `last`  
- The last element in a sequence of objects that are used to initialize the current VectorView. The type of `last` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
+*last*<br/>
+The last element in a sequence of objects that are used to initialize the current VectorView. The type of `last` is passed by means of *perfect forwarding*. For more information, see [Rvalue Reference Declarator: &&](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
 
 
   
 ## See Also  
- [Platform Namespace](platform-namespace-c-cx.md)   
- [Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+ [Platform Namespace](platform-namespace-c-cx.md)<br/>
+[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

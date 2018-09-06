@@ -38,14 +38,14 @@ template <typename T>
 ```  
   
 #### Parameters  
- `T`  
- A template type parameter.  
+*T*<br/>
+A template type parameter.  
   
- `v`  
- A collection of Vector\<T> or VectorView\<T> objects that are accessed by an IVector\<T> or IVectorView\<T> interface.  
+*v*<br/>
+A collection of Vector\<T> or VectorView\<T> objects that are accessed by an IVector\<T> or IVectorView\<T> interface.  
   
- `i`  
- A collection of arbitrary Windows Runtime objects that are accessed by an IIterable\<T> interface.  
+*i*<br/>
+A collection of arbitrary Windows Runtime objects that are accessed by an IIterable\<T> interface.  
   
 ### Return Value  
  An iterator that points to the beginning of the collection.  

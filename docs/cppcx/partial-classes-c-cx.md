@@ -87,6 +87,6 @@ A partial class is a construct that supports scenarios in which you are modifyin
  [!code-cpp[cx_partial#09](../cppcx/codesnippet/CPP/partialclassexample/address.h#09)]  
   
 ## See Also  
- [Type System](../cppcx/type-system-c-cx.md)   
- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)   
- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+ [Type System](../cppcx/type-system-c-cx.md)<br/>
+[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

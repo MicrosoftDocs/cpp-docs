@@ -18,7 +18,6 @@ Represents a sequential collection of Unicode characters that is used to represe
 ## Syntax  
   
 ```cpp  
-  
 public ref class String sealed : Object,  
     IDisposable,  
     IEquatable,  
@@ -91,9 +90,8 @@ Returns a pointer to the beginning of the current string.
   
 ### Syntax  
   
-```cpp  
-  
-char16* Begin()  
+```cpp
+char16* Begin();
 ```  
   
 ### Return Value  
@@ -104,20 +102,16 @@ Compares two `String` objects by evaluating the numeric values of the correspond
   
 ### Syntax  
   
-```cpp  
-  
-int CompareOrdinal(  
-           String^ str1,   
-           String^ str2)  
-  
+```cpp
+int CompareOrdinal( String^ str1, String^ str2 );
 ```  
   
 ### Parameters  
- `str1`  
- The first String object.  
+*str1*<br/>
+The first String object.  
   
- `str2`  
- The second String object.  
+*str2*<br/>
+The second String object.  
   
 ### Return Value  
  An integer that indicates the lexical relationship between the two comparands. The following table lists the possible return values.  
@@ -136,15 +130,15 @@ Concatenates the values of two String objects.
 ### Syntax  
   
 ```cpp    
-String^ Concat( String^ str1, String^ str2)  
+String^ Concat( String^ str1, String^ str2);
 ```  
   
 ### Parameters  
- `str1`  
- The first String object, or `null`.  
+*str1*<br/>
+The first String object, or `null`.  
   
- `str2`  
- The second String object, or `null`.  
+*str2*<br/>
+The second String object, or `null`.  
   
 ### Return Value  
  A new String^ object whose value is the concatenation of the values of `str1` and `str2`.  
@@ -159,7 +153,7 @@ Returns a pointer to the beginning of the object's data buffer as a C-style arra
 ### Syntax  
   
 ```  
-const char16* Data()  
+const char16* Data();
 ```  
   
 ### Return Value  
@@ -175,9 +169,8 @@ Frees or releases resources.
   
 ### Syntax  
   
-```cpp  
-  
-virtual override void Dispose()  
+```cpp
+virtual override void Dispose();
 ```  
 
 ## <a name="end"></a>  String::End Method
@@ -185,9 +178,8 @@ Returns a pointer past the end of the current string.
   
 ### Syntax  
   
-```cpp  
-  
-char16* End()  
+```cpp
+char16* End();
 ```  
   
 ### Return Value  
@@ -203,17 +195,14 @@ Indicates whether the specified String has the same value as the current object.
   
 ### Syntax  
   
-```cpp  
-  
-bool String::Equals(Object^ str);  
-  
-bool String::Equals(String^ str);  
-  
+```cpp
+bool String::Equals(Object^ str);
+bool String::Equals(String^ str);
 ```  
   
 ### Parameters  
- `str`  
- The object to compare.  
+*str*<br/>
+The object to compare.  
   
 ### Return Value  
  `true` if `str` is equal to the current object; otherwise, `false`.  
@@ -228,9 +217,8 @@ Returns the hash code for this instance.
   
 ### Syntax  
   
-```cpp  
-  
-virtual override int GetHashCode()  
+```cpp
+virtual override int GetHashCode();
 ```  
   
 ### Return Value  
@@ -243,8 +231,8 @@ Indicates whether the current String object is empty.
   
 ### Syntax  
   
-```cpp    
-bool IsEmpty()  
+```cpp
+bool IsEmpty();
 ```  
   
 ### Return Value  
@@ -274,9 +262,9 @@ Retrieves the number of characters in the current String object.
   
 ### Syntax  
   
-```cpp    
-unsigned int Length()  
-```  
+```cpp
+unsigned int Length();
+```
   
 ### Return Value  
  The number of characters in the current String object.  
@@ -284,11 +272,11 @@ unsigned int Length()
 ### Remarks  
  The length of a String with no characters is zero. The length of the following string is 5:  
   
-```    
-String^ str = "Hello";  
-int len = str->Length(); //len = 5  
-```  
-  
+```cpp
+String^ str = "Hello";
+int len = str->Length(); //len = 5
+```
+
  The character array returned by the [String::Data](#data) has one additional character, which is the terminating NULL or '\0'. This character is also two bytes long.  
   
 
@@ -298,17 +286,16 @@ Concatenates two [String](../cppcx/platform-string-class.md) objects into a new 
   
 ### Syntax  
   
-```cpp  
-  
-bool String::operator+( String^ str1, String^ str2)  
+```cpp
+bool String::operator+( String^ str1, String^ str2);
 ```  
   
 ### Parameters  
- `str1`  
- The first `String` object.  
+*str1*<br/>
+The first `String` object.  
   
- `str2`  
- The second `String` object, whose contents will be appended to `str1`.  
+*str2*<br/>
+The second `String` object, whose contents will be appended to `str1`.  
   
 ### Return Value  
  `true` if `str1` is equal to `str2`; otherwise, `false`.  
@@ -322,15 +309,15 @@ Indicates whether two specified String objects have the same text value.
 ### Syntax  
   
 ```cpp    
-bool String::operator==( String^ str1, String^ str2)  
+bool String::operator==( String^ str1, String^ str2);
 ```  
   
 ### Parameters  
- `str1`  
- The first String object to compare.  
+*str1*<br/>
+The first String object to compare.  
   
- `str2`  
- The second String object to compare.  
+*str2*<br/>
+The second String object to compare.  
   
 ### Return Value  
  `true` if the contents of `str1` are equal to `str2`; otherwise, `false`.  
@@ -345,16 +332,16 @@ Indicates whether the value of one String object is greater than the value of a 
   
 ### Syntax  
   
-```cpp    
-bool String::operator>( String^ str1, String^ str2)  
+```cpp
+bool String::operator>( String^ str1, String^ str2);
 ```  
   
 ### Parameters  
- `str1`  
- The first String object.  
+*str1*<br/>
+The first String object.  
   
- `str2`  
- The second String object.  
+*str2*<br/>
+The second String object.  
   
 ### Return Value  
  `true` if the value of `str1` is greater than the value of `str2`; otherwise, `false`.  
@@ -369,16 +356,16 @@ Indicates whether the value of one String object is greater than or equal to the
   
 ### Syntax  
   
-```cpp    
-bool String::operator>=( String^ str1, String^ str2) 
-```  
+```cpp
+bool String::operator>=( String^ str1, String^ str2);
+```
   
 ### Parameters  
- `str1`  
- The first String object.  
+*str1*<br/>
+The first String object.  
   
- `str2`  
- The second String object.  
+*str2*<br/>
+The second String object.  
   
 ### Return Value  
  `true` if the value of `str1` is greater than or equal to the value of `str2`; otherwise, `false`.  
@@ -391,15 +378,15 @@ Indicates whether two specifed String objects have different values.
 ### Syntax  
   
 ```cpp  
-bool String::operator!=( String^ str1, String^ str2)  
+bool String::operator!=( String^ str1, String^ str2);
 ```  
   
 ### Parameters  
- `str1`  
- The first String object to compare.  
+*str1*<br/>
+The first String object to compare.  
   
- `str2`  
- The second String object to compare.  
+*str2*<br/>
+The second String object to compare.  
   
 ### Return Value  
  `true` if `str1` is not equal to `str2`; otherwise, `false`.   
@@ -411,15 +398,15 @@ Indicates whether the value of one String object is less than the value of a sec
 ### Syntax  
   
 ```cpp  
-bool String::operator<( String^ str1, String^ str2)  
+bool String::operator<( String^ str1, String^ str2);
 ```  
   
 ### Parameters  
- `str1`  
- The first String object.  
+*str1*<br/>
+The first String object.  
   
- `str2`  
- The second String object.  
+*str2*<br/>
+The second String object.  
   
 ### Return Value  
  `true` if the value of `str1` is less than the value of `str2`; otherwise, `false`.  
@@ -431,16 +418,16 @@ Initializes a new instance of the String class with a copy of the input string d
   
 ```cpp    
 String();    
-String(char16* s)  
-String(char16* s, unsigned int n)  
+String(char16* s);
+String(char16* s, unsigned int n);
 ```  
   
 ### Parameters  
- `s`  
- A series of wide characters that initialize the string. char16  
+*s*<br/>
+A series of wide characters that initialize the string. char16  
   
- `n`  
- A number that specifies the length of the string.  
+*n*<br/>
+A number that specifies the length of the string.  
   
 ### Remarks  
  If performance is critical and you control the lifetime of the source string, you can use [Platform::StringReference](../cppcx/platform-stringreference-class.md) in place of String.  
@@ -456,7 +443,7 @@ Returns a String object whose value is the same as the current string.
 ### Syntax  
   
 ```cpp  
-String^ String::ToString()  
+String^ String::ToString();
 ```  
   
 ### Return Value  

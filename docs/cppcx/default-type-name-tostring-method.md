@@ -16,9 +16,8 @@ Returns a string that represents the current type.
   
 ## Syntax  
   
-```cpp  
-  
-String^ ToString()  
+```cpp
+String^ ToString();
 ```  
   
 ### Return Value  

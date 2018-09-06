@@ -120,7 +120,7 @@ The C++/CX supports user-defined *ref classes* and *ref structs*, and user-defin
  [!code-cpp[cx_classes#09](../cppcx/codesnippet/CPP/classesstructs/class1.h#09)]  
   
 ## See Also  
- [Type System](../cppcx/type-system-c-cx.md)   
- [Value classes and structs](../cppcx/value-classes-and-structs-c-cx.md)   
- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)   
- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+ [Type System](../cppcx/type-system-c-cx.md)<br/>
+[Value classes and structs](../cppcx/value-classes-and-structs-c-cx.md)<br/>
+[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

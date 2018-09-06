@@ -62,14 +62,14 @@ ArrayReference(ArrayReference&& otherArg)
 ```  
   
 ### Parameters  
- `dataArg`  
- A pointer to the array data.  
+*dataArg*<br/>
+A pointer to the array data.  
   
- `sizeArg`  
- The number of elements in the source array.  
+*sizeArg*<br/>
+The number of elements in the source array.  
   
- `otherArg`  
- An `ArrayReference` object whose data will be moved to initialize the new instance.  
+*otherArg*<br/>
+An `ArrayReference` object whose data will be moved to initialize the new instance.  
   
 ### Remarks  
   
@@ -87,8 +87,8 @@ ArrayReference& operator=(ArrayReference&& otherArg);
 ```  
   
 ### Parameters  
- `otherArg`  
- The object that is moved to the current `ArrayReference` object.  
+*otherArg*<br/>
+The object that is moved to the current `ArrayReference` object.  
   
 ### Return Value  
  A reference to an object of type `ArrayReference`.  

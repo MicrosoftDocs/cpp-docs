@@ -68,14 +68,14 @@ Array(T* data, unsigned int size);
 ```  
   
 #### Parameters  
- `T`  
- Class template parameter.  
+*T*<br/>
+Class template parameter.  
   
- `size`  
- The number of elements in the array.  
+*size*<br/>
+The number of elements in the array.  
   
- `data`  
- A pointer to an array of data of type `T` that is used to initialize this Array object.  
+*data*<br/>
+A pointer to an array of data of type `T` that is used to initialize this Array object.  
   
 ### Remarks  
  For more information about how to create instances of Platform::Array, see [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
@@ -90,8 +90,8 @@ T& get(unsigned int index)  const;
 ```  
   
 #### Parameters  
- `index`  
- A zero-based index that identifies an element in the array. The minimum index is 0 and the maximum index is the value specified by the `size` parameter in the [Array constructor](#ctor).  
+*index*<br/>
+A zero-based index that identifies an element in the array. The minimum index is 0 and the maximum index is the value specified by the `size` parameter in the [Array constructor](#ctor).  
   
 ### Return Value  
  The array element specified by the `index` parameter.  
@@ -109,5 +109,5 @@ property Array^ Value;
  A handle to the current array.  
 
 ## See Also  
- [Platform namespace](../cppcx/platform-namespace-c-cx.md)   
- [Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)
+ [Platform namespace](../cppcx/platform-namespace-c-cx.md)<br/>
+[Array and WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

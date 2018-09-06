@@ -23,8 +23,8 @@ class Agile;
 ```  
   
 #### Parameters  
- T  
- The typename for the non-agile class.  
+*T*<br/>
+The typename for the non-agile class.  
   
 ### Remarks  
  Most of the classes in the Windows Runtime are agile. An agile object can call, or be called by, an in-proc or out-of-proc object in the same or a different thread. If an object is not agile, wrap the non-agile object in a `Agile<T>` object, which is agile. Then the `Agile<T>` object can be marshaled, and the underlying non-agile object can be used.  
@@ -75,24 +75,20 @@ Initializes a new instance of the Agile class.
   
 ## Syntax  
   
-```cpp  
-  
- Agile();  
-  
-Agile(T^ object);   
-  
-Agile(const Agile<T>& object);  
-  
-Agile(Agile<T>&& object);  
-  
-```  
-  
+```cpp
+Agile();
+Agile(T^ object);
+Agile(const Agile<T>& object);
+Agile(Agile<T>&& object);
+```
+
 #### Parameters  
- `T`  
- A type specified by the template typename parameter.  
+
+*T*<br/>
+A type specified by the template typename parameter.  
   
- `object`  
- In the second version of this constructor, an object used to initialize a new Agile instance. In the third version, the object that is copied to the new Agile instance. In the fourth version, the object that is moved to the new Agile instance.  
+*object*<br/>
+In the second version of this constructor, an object used to initialize a new Agile instance. In the third version, the object that is copied to the new Agile instance. In the fourth version, the object that is moved to the new Agile instance.  
   
 ### Remarks  
  The first version of this constructor is the default constructor. The second version initializes new Agile instance class from the object specified by the `object` parameter. The third version is the copy constructor. The fourth version is the move constructor. This constructor cannot throw exceptions.  
@@ -102,10 +98,9 @@ Destroys the current instance of the Agile class.
   
 ## Syntax  
   
-```cpp  
-  
+```cpp
 ~Agile();  
-```  
+```
   
 ### Remarks  
  This destructor also releases the object represented by the current Agile object.  
@@ -114,13 +109,11 @@ Destroys the current instance of the Agile class.
 Returns a handle to the object that is represented by the current Agile object.  
   
 ## Syntax  
-  
-```cpp  
-  
-   T^ Get() const  
-;  
-```  
-  
+
+```cpp
+T^ Get() const;
+```
+
 ### Return Value  
  A handle to the object that is represented by the current Agile object.  
   
@@ -131,15 +124,13 @@ Reinitializes the current Agile object, and then returns the address of a handle
   
 ## Syntax  
   
-```cpp  
-  
-T^* GetAddressOf()   
-throw();  
-```  
+```cpp
+T^* GetAddressOf() throw();
+```
   
 #### Parameters  
- `T`  
- A type specified by the template typename parameter.  
+*T*<br/>
+A type specified by the template typename parameter.  
   
 ### Return Value  
  The address of a handle to an object of type `T`.  
@@ -152,15 +143,13 @@ Returns the address of a handle to the object represented by the current Agile o
   
 ## Syntax  
   
-```cpp  
-  
-T^* GetAddressOfForInOut()  throw();  
-  
+```cpp
+T^* GetAddressOfForInOut()  throw();
 ```  
   
 #### Parameters  
- `T`  
- A type specified by the template typename parameter.  
+*T*<br/>
+A type specified by the template typename parameter.  
   
 ### Return Value  
  The address of a handle to the object represented by the current Agile object.  
@@ -173,10 +162,8 @@ Discards the current Agile object's underlying object and context.
   
 ## Syntax  
   
-```cpp  
-  
-void Release() throw();  
-  
+```cpp
+void Release() throw();
 ```  
   
 ### Remarks  
@@ -187,11 +174,9 @@ Retrieves a handle to the object represented by the current Agile object.
   
 ## Syntax  
   
-```cpp  
-  
-T^ operator->()   
-const throw();  
-```  
+```cpp
+T^ operator->() const throw();
+```
   
 ### Return Value  
  A handle to the object represented by the current Agile object.  
@@ -203,33 +188,22 @@ Assigns the specified object to the current Agile object.
   
 ## Syntax  
   
-```cpp  
-  
-   Agile<T> operator=(T^ object) throw();  
-  
-   Agile<T> operator=(  
-      const Agile<T>& object  
-) throw();  
-  
-   Agile<T> operator=(  
-      Agile<T>&& object  
-) throw();  
-  
-   T^ operator=(  
-      IUnknown* lp  
-) throw();  
-  
-```  
-  
+```cpp
+Agile<T> operator=( T^ object ) throw();
+Agile<T> operator=( const Agile<T>& object ) throw();
+Agile<T> operator=( Agile<T>&& object ) throw();
+T^ operator=( IUnknown* lp ) throw();
+```
+
 #### Parameters  
- `T`  
- The type specified by the template typename.  
+*T*<br/>
+The type specified by the template typename.  
   
- `object`  
- The object or handle to an object that is copied or moved to the current Agile object.  
+*object*<br/>
+The object or handle to an object that is copied or moved to the current Agile object.  
   
- `lp`  
- The IUnknown interface pointer of a object.  
+*lp*<br/>
+The IUnknown interface pointer of a object.  
   
 ### Return Value  
  A handle to an object of type `T`  

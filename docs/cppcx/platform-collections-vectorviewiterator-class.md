@@ -25,8 +25,8 @@ class VectorViewIterator;
 ```  
   
 #### Parameters  
- `T`  
- The typename of the VectorViewIterator template class.  
+*T*<br/>
+The typename of the VectorViewIterator template class.  
   
 ### Members  
   
@@ -134,8 +134,8 @@ bool operator==(const VectorViewIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another VectorViewIterator.  
+*other*<br/>
+Another VectorViewIterator.  
   
 ### Return Value  
  `true` if the current VectorViewIterator is equal to `other`; otherwise, `false`.  
@@ -153,8 +153,8 @@ bool operator>(const VectorViewIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another VectorViewIterator.  
+*other*<br/>
+Another VectorViewIterator.  
   
 ### Return Value  
  `true` if the current VectorViewIterator is greater than `other`; otherwise, `false`.  
@@ -172,8 +172,8 @@ bool operator>=(const VectorViewIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another VectorViewIterator.  
+*other*<br/>
+Another VectorViewIterator.  
   
 ### Return Value  
  `true` if the current VectorViewIterator is greater than or equal to `other`; otherwise, `false`.  
@@ -211,8 +211,8 @@ bool operator!=(const VectorViewIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another VectorViewIterator.  
+*other*<br/>
+Another VectorViewIterator.  
   
 ### Return Value  
  `true` if the current VectorViewIterator is not equal to `other`; otherwise, `false`.  
@@ -229,8 +229,8 @@ bool operator<(const VectorViewIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another VectorIterator.  
+*other*<br/>
+Another VectorIterator.  
   
 ### Return Value  
  `true` if the current VectorIterator is less than `other`; otherwise, `false`.  
@@ -248,8 +248,8 @@ bool operator<=(const VectorViewIterator& other) const;
 ```  
   
 ### Parameters  
- `other`  
- Another VectorIterator.  
+*other*<br/>
+Another VectorIterator.  
   
 ### Return Value  
  `true` if the current VectorIterator is less than or equal to `other`; otherwise, `false`.  
@@ -269,11 +269,11 @@ difference_type operator-(const VectorViewIterator& other) const;
 ```  
   
 ### Parameters  
- `n`  
- A number of elements.  
+*n*<br/>
+A number of elements.  
   
- `other`  
- Another VectorViewIterator.  
+*other*<br/>
+Another VectorViewIterator.  
   
 ### Return Value  
  The first operator syntax returns a VectorViewIterator object that is `n` elements less than the current VectorViewIterator. The second operator syntax returns the number of elements between the current and the `other` VectorViewIterator.  
@@ -290,8 +290,8 @@ VectorViewIterator& operator+=(difference_type n);
 ```  
   
 ### Parameters  
- `n`  
- A integer displacement.  
+*n*<br/>
+A integer displacement.  
   
 ### Return Value  
  The updated VectorViewIterator.  
@@ -315,14 +315,14 @@ inline VectorViewIterator<T> operator+
 ```  
   
 ### Parameters  
- `T`  
- In the second syntax, the typename of the VectorViewIterator.  
+*T*<br/>
+In the second syntax, the typename of the VectorViewIterator.  
   
- `n`  
- An integer displacement.  
+*n*<br/>
+An integer displacement.  
   
- `i`  
- In the second syntax, a VectorViewIterator.  
+*i*<br/>
+In the second syntax, a VectorViewIterator.  
   
 ### Return Value  
  In the first syntax, a VectorViewIterator that references the element at the specified displacement from the current VectorViewIterator.  
@@ -341,8 +341,8 @@ VectorViewIterator& operator-=(difference_type n);
 ```  
   
 ### Parameters  
- `n`  
- An integer displacement.  
+*n*<br/>
+An integer displacement.  
   
 ### Return Value  
  The updated VectorIterator.  
@@ -359,8 +359,8 @@ reference operator[](difference_type n) const;
 ```  
   
 ### Parameters  
- `n`  
- An integer displacement.  
+*n*<br/>
+An integer displacement.  
   
 ### Return Value  
  The element that is displaced by `n` elements from the current VectorViewIterator.  
@@ -382,8 +382,8 @@ explicit VectorViewIterator(
 ```  
   
 ### Parameters  
- `v`  
- An IVectorView\<T> object.  
+*v*<br/>
+An IVectorView\<T> object.  
   
 ### Remarks  
  The first syntax example is the default constructor. The second syntax example is an explicit constructor that is used to construct a VectorViewIterator from an IVectorView\<T> object.  

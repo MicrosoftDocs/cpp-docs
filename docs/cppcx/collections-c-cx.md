@@ -95,28 +95,28 @@ void FindButton(UIElementCollection^ col)
   
  Elements of a modifiable collection can be changed, but elements of a read-only collection, which is known as a *view*, can only be read. Elements of a [Platform::Collections::Vector](../cppcx/platform-collections-vector-class.md) or[Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md) collection can be accessed by using an iterator or the collection's [Vector::GetAt](../cppcx/platform-collections-vector-class.md#getat) and an index. Elements of an associative collection can be accessed by using the collection's [Map::Lookup](../cppcx/platform-collections-map-class.md#lookup) and a key.  
   
- [Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md)  
- A modifiable, associative collection. Map elements are key-value pairs. Looking up a key to retrieve its associated value, and iterating through all key-value pairs, are both supported.  
+ [Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md)<br/>
+A modifiable, associative collection. Map elements are key-value pairs. Looking up a key to retrieve its associated value, and iterating through all key-value pairs, are both supported.  
   
  `Map` and `MapView` are templated on `<K, V, C = std::less<K>>`; therefore, you can customize the comparator.  Additionally, `Vector` and `VectorView` are templated on `<T, E = std::equal_to<T>>` so that you can customize the behavior of `IndexOf()`. This is important mostly for `Vector` and `VectorView` of value structs. For example, to create a Vector\<Windows::Foundation::DateTime>, you must provide a custom comparator because DateTime does not overload the == operator.  
   
- [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md)  
- A read-only version of a `Map`.  
+ [Platform::Collections::MapView Class](../cppcx/platform-collections-mapview-class.md)<br/>
+A read-only version of a `Map`.  
   
- [Platform::Collections::Vector Class](../cppcx/platform-collections-vector-class.md)  
- A modifiable sequence collection. `Vector<T>` supports constant-time random access and amortized-constant-time [Append](../cppcx/platform-collections-vector-class.md#append) operations..  
+ [Platform::Collections::Vector Class](../cppcx/platform-collections-vector-class.md)<br/>
+A modifiable sequence collection. `Vector<T>` supports constant-time random access and amortized-constant-time [Append](../cppcx/platform-collections-vector-class.md#append) operations..  
   
- [Platform::Collections::VectorView Class](../cppcx/platform-collections-vectorview-class.md)  
- A read-only version of a `Vector`.  
+ [Platform::Collections::VectorView Class](../cppcx/platform-collections-vectorview-class.md)<br/>
+A read-only version of a `Vector`.  
   
- [Platform::Collections::InputIterator Class](../cppcx/platform-collections-inputiterator-class.md)  
- An STL iterator that satisfies the requirements of an STL input iterator.  
+ [Platform::Collections::InputIterator Class](../cppcx/platform-collections-inputiterator-class.md)<br/>
+An STL iterator that satisfies the requirements of an STL input iterator.  
   
- [Platform::Collections::VectorIterator Class](../cppcx/platform-collections-vectoriterator-class.md)  
- An STL iterator that satisfies the requirements of an STL mutable random-access iterator.  
+ [Platform::Collections::VectorIterator Class](../cppcx/platform-collections-vectoriterator-class.md)<br/>
+An STL iterator that satisfies the requirements of an STL mutable random-access iterator.  
   
- [Platform::Collections::VectorViewIterator Class](../cppcx/platform-collections-vectorviewiterator-class.md)  
- An STL iterator that satisfies the requirements of an STL  `const` random-access iterator.  
+ [Platform::Collections::VectorViewIterator Class](../cppcx/platform-collections-vectorviewiterator-class.md)<br/>
+An STL iterator that satisfies the requirements of an STL  `const` random-access iterator.  
   
 ### begin() and end() functions  
  To simplify the use of the STL to process `Vector`, `VectorView`, `Map`, `MapView`, and arbitrary `Windows::Foundation::Collections` objects, C++/CX supports overloads of the [begin Function](../cppcx/begin-function.md) and [end Function](../cppcx/end-function.md) non-member functions.  
@@ -137,6 +137,6 @@ void FindButton(UIElementCollection^ col)
  The [Windows::Foundation::Collections::VectorChangedEventHandler](/uwp/api/windows.foundation.collections.vectorchangedeventhandler) and [Windows::Foundation::Collections::MapChangedEventHandler](/uwp/api/windows.foundation.collections.mapchangedeventhandler) delegates specify the signatures for event handlers for collection change events. The [Windows::Foundation::Collections::CollectionChange](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx) public enum class, and `Platform::Collection::Details::MapChangedEventArgs` and `Platform::Collections::Details::VectorChangedEventArgs` ref classes, store the event arguments to determine what caused the event. The *`EventArgs` types are defined in the `Details` namespace because you don't have to construct or consume them explicitly when you use `Map` or `Vector`.  
   
 ## See Also  
- [Type System](../cppcx/type-system-c-cx.md)   
- [Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)   
- [Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)
+ [Type System](../cppcx/type-system-c-cx.md)<br/>
+[Visual C++ Language Reference](../cppcx/visual-c-language-reference-c-cx.md)<br/>
+[Namespaces Reference](../cppcx/namespaces-reference-c-cx.md)

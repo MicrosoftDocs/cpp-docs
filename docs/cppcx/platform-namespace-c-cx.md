@@ -102,7 +102,7 @@ using namespace Platform;
 |[Platform::UIntPtr value class](../cppcx/platform-uintptr-value-class.md)|An unsigned pointer whose size is appropriate for the platform (32-bit or 64-bit).|  
   
 ## See Also  
- [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)   
- [Platform::Runtime::CompilerServices Namespace](../cppcx/platform-runtime-compilerservices-namespace.md)   
- [Platform::Runtime::InteropServices Namespace](../cppcx/platform-runtime-interopservices-namespace.md)   
- [Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)
+ [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)<br/>
+[Platform::Runtime::CompilerServices Namespace](../cppcx/platform-runtime-compilerservices-namespace.md)<br/>
+[Platform::Runtime::InteropServices Namespace](../cppcx/platform-runtime-interopservices-namespace.md)<br/>
+[Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)
