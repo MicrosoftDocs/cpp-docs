@@ -27,7 +27,7 @@ The first *definition* can be on the same line as the `EXPORTS` keyword or on a 
 
 The syntax for an export *definition* is:
 
-> *entryname*\[__=__*internal_name*|*other_module.exported_name*] \[**\@**_ordinal_ [**NONAME**] ] \[ [**PRIVATE**] | [**DATA**] ]
+> *entryname*\[__=__*internal_name*|*other_module.exported_name*] \[**\@**_ordinal_ \[**NONAME**] ] \[ \[**PRIVATE**] | \[**DATA**] ]
 
 *entryname* is the function or variable name that you want to export. This is required. If the name that you export differs from the name in the DLL, specify the export's name in the DLL by using *internal_name*. For example, if your DLL exports a function `func1` and you want callers to use it as `func2`, you would specify:
 
