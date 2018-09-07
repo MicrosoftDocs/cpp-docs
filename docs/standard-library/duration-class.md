@@ -104,17 +104,17 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 
 ### Parameters
 
-*Rep2*
- An arithmetic type to represent the number of ticks.
+*Rep2*<br/>
+An arithmetic type to represent the number of ticks.
 
-*Period2*
- A `std::ratio` template specialization to represent the tick period in units of seconds.
+*Period2*<br/>
+A `std::ratio` template specialization to represent the tick period in units of seconds.
 
-*R*
- The number of ticks of default period.
+*R*<br/>
+The number of ticks of default period.
 
-*Dur*
- The number of ticks of period specified by *Period2*.
+*Dur*<br/>
+The number of ticks of period specified by *Period2*.
 
 ### Remarks
 
@@ -190,8 +190,8 @@ duration& operator%=(const duration& Div);
 
 ### Parameters
 
-*Div*
- For the first method, *Div* represents a tick count. For the second method, *Div* is a `duration` object that contains a tick count.
+*Div*<br/>
+For the first method, *Div* represents a tick count. For the second method, *Div* is a `duration` object that contains a tick count.
 
 ### Return Value
 
@@ -207,8 +207,8 @@ duration& operator*=(const rep& Mult);
 
 ### Parameters
 
-*Mult*
- A value of the type that is specified by `duration::rep`.
+*Mult*<br/>
+A value of the type that is specified by `duration::rep`.
 
 ### Return Value
 
@@ -224,8 +224,8 @@ duration& operator/=(const rep& Div);
 
 ### Parameters
 
-*Div*
- A value of the type that is specified by `duration::rep`.
+*Div*<br/>
+A value of the type that is specified by `duration::rep`.
 
 ### Return Value
 
@@ -265,8 +265,8 @@ duration& operator+=(const duration& Dur);
 
 ### Parameters
 
-*Dur*
- A `duration` object.
+*Dur*<br/>
+A `duration` object.
 
 ### Return Value
 
@@ -282,8 +282,8 @@ duration& operator-=(const duration& Dur);
 
 ### Parameters
 
-*Dur*
- A `duration` object.
+*Dur*<br/>
+A `duration` object.
 
 ### Return Value
 
@@ -307,8 +307,8 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 
 ### Parameters
 
-*Div*
- The divisor, which is either a duration object or a value that represents tick counts.
+*Div*<br/>
+The divisor, which is either a duration object or a value that represents tick counts.
 
 ### Remarks
 

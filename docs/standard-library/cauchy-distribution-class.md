@@ -49,10 +49,10 @@ public:
 
 ### Parameters
 
-*RealType*
+*RealType*<br/>
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
-*URNG*
+*URNG*<br/>
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -230,13 +230,13 @@ explicit cauchy_distribution(const param_type& parm);
 
 ### Parameters
 
-*a*
+*a*<br/>
 The `a` distribution parameter.
 
-*b*
+*b*<br/>
 The `b` distribution parameter.
 
-*parm*
+*parm*<br/>
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -265,13 +265,13 @@ struct param_type {
 
 ### Parameters
 
-*a*
+*a*<br/>
 The `a` distribution parameter.
 
-*b*
+*b*<br/>
 The `b` distribution parameter.
 
-*right*
+*right*<br/>
 The `param_type` object to compare to this.
 
 ### Remarks

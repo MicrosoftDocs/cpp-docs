@@ -25,14 +25,14 @@ class ostream_iterator
 
 ### Parameters
 
-*Type*
- The type of object to be inserted into the output stream.
+*Type*<br/>
+The type of object to be inserted into the output stream.
 
-*CharType*
- The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is **char**.
+*CharType*<br/>
+The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is **char**.
 
-*Traits*
- The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits`\< *CharType>.*
+*Traits*<br/>
+The type that represents the character type for the `ostream_iterator`. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 The ostream_iterator class must satisfy the requirements for an output iterator. Algorithms can be written directly to output streams using an `ostream_iterator`.
 
@@ -100,9 +100,9 @@ int main( )
    // elements to the output stream:
    cout << "The integers written to the output stream\n"
         << "by intOut are:" << endl;
- *intOut = 10;
- *intOut = 20;
- *intOut = 30;
+*intOut = 10;
+*intOut = 20;
+*intOut = 30;
 }
 \* Output:
 The integers written to the output stream
@@ -149,10 +149,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *intOut = 10;
+*intOut = 10;
    intOut++;      // No effect on iterator position
- *intOut = 20;
- *intOut = 30;
+*intOut = 20;
+*intOut = 30;
 }
 \* Output:
 Elements written to output stream:
@@ -199,10 +199,10 @@ int main( )
    // standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *intOut = 10;
+*intOut = 10;
    intOut++;      // No effect on iterator position
- *intOut = 20;
- *intOut = 30;
+*intOut = 20;
+*intOut = 30;
 }
 \* Output:
 Elements written to output stream:
@@ -222,8 +222,8 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 ### Parameters
 
-*val*
- The value of the object of type `Type` to be inserted into the output stream.
+*val*<br/>
+The value of the object of type `Type` to be inserted into the output stream.
 
 ### Return Value
 
@@ -253,10 +253,10 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *intOut = 10;
+*intOut = 10;
    intOut++;      // No effect on iterator position
- *intOut = 20;
- *intOut = 30;
+*intOut = 20;
+*intOut = 30;
 }
 \* Output:
 Elements written to output stream:
@@ -281,11 +281,11 @@ ostream_iterator(
 
 ### Parameters
 
-*_Ostr*
- The output stream of type [ostream_iterator::ostream_type](#ostream_type) to be iterated over.
+*_Ostr*<br/>
+The output stream of type [ostream_iterator::ostream_type](#ostream_type) to be iterated over.
 
-*_Delimiter*
- The delimiter that is inserted into the output stream between values.
+*_Delimiter*<br/>
+The delimiter that is inserted into the output stream between values.
 
 ### Remarks
 
@@ -308,9 +308,9 @@ int main( )
 
    // ostream_iterator for stream cout
    ostream_iterator<int> intOut ( cout , "\n" );
- *intOut = 10;
+*intOut = 10;
    intOut++;
- *intOut = 20;
+*intOut = 20;
    intOut++;
 
    int i;
@@ -393,9 +393,9 @@ int main( )
    // elements to the output stream:
    cout << "The integers written to output stream\n"
         << "by intOut are:" << endl;
- *intOut = 1;
- *intOut = 10;
- *intOut = 100;
+*intOut = 1;
+*intOut = 10;
+*intOut = 100;
 }
 \* Output:
 The integers written to output stream

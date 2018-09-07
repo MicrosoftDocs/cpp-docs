@@ -21,23 +21,23 @@ An adapter class that allows a **const** member function that takes a single arg
 ```cpp
 template <class Result, class Type, class Arg>
 class const_mem_fun1_ref_t
- : public binary_function<Type, Arg, Result>
- {
+: public binary_function<Type, Arg, Result>
+{
     explicit const_mem_fun1_ref_t(Result (Type::* Pm)(Arg) const);
     Result operator()(const Type& left, Arg right) const;
- };
+};
 ```
 
 ### Parameters
 
-*Pm*
- A pointer to the member function of class `Type` to be converted to a function object.
+*Pm*<br/>
+A pointer to the member function of class `Type` to be converted to a function object.
 
-*left*
- The **const** object that the *Pm* member function is called on.
+*left*<br/>
+The **const** object that the *Pm* member function is called on.
 
-*right*
- The argument that is being given to *Pm*.
+*right*<br/>
+The argument that is being given to *Pm*.
 
 ## Return Value
 

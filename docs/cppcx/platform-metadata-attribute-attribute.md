@@ -13,27 +13,31 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Metadata::Attribute Attribute
-Represents the base class for all attributes.  
-  
-## Syntax  
-  
-```cpp  
-public ref class Attribute abstract : Object  
-```  
-  
-## Inheritance  
- [Platform::Object](../cppcx/platform-object-class.md)  
-  
- [Platform::Metadata::Attribute](../cppcx/platform-metadata-attribute-attribute.md)  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** Platform::Metadata  
-  
- **Metadata:** platform.winmd  
-  
-## See Also  
- [Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)
+
+Represents the base class for all attributes.
+
+## Syntax
+
+```cpp
+public ref class Attribute abstract : Object
+```
+
+## Inheritance
+
+[Platform::Object](../cppcx/platform-object-class.md)
+
+[Platform::Metadata::Attribute](../cppcx/platform-metadata-attribute-attribute.md)
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** Platform::Metadata
+
+**Metadata:** platform.winmd
+
+## See Also
+
+[Platform::Metadata Namespace](../cppcx/platform-metadata-namespace.md)

@@ -38,13 +38,13 @@ void _mbccpy_l(
 
 ### Parameters
 
-*dest*
+*dest*<br/>
 Copy destination.
 
-*src*
+*src*<br/>
 Multibyte character to copy.
 
-*locale*
+*locale*<br/>
 Locale to use.
 
 ## Remarks

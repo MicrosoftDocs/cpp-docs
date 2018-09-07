@@ -71,14 +71,14 @@ static pointer allocate(Alloc& al, size_type count,
 
 ### Parameters
 
-*al*
- An allocator object.
+*al*<br/>
+An allocator object.
 
-*count*
- The number of elements to allocate.
+*count*<br/>
+The number of elements to allocate.
 
-*hint*
- A `const_pointer` that might assist the allocator object in satisfying the request for storage by locating the address of an allocated object prior to the request. A null pointer is treated as no hint.
+*hint*<br/>
+A `const_pointer` that might assist the allocator object in satisfying the request for storage by locating the address of an allocated object prior to the request. A null pointer is treated as no hint.
 
 ### Return Value
 
@@ -99,14 +99,14 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 
 ### Parameters
 
-*al*
- An allocator object.
+*al*<br/>
+An allocator object.
 
-*ptr*
- A pointer to the location where the object is to be constructed.
+*ptr*<br/>
+A pointer to the location where the object is to be constructed.
 
-*args*
- A list of arguments that is passed to the object constructor.
+*args*<br/>
+A list of arguments that is passed to the object constructor.
 
 ### Remarks
 
@@ -124,14 +124,14 @@ static void deallocate(Alloc al,
 
 ### Parameters
 
-*al*
- An allocator object.
+*al*<br/>
+An allocator object.
 
-*ptr*
- A pointer to the starting location of the objects to be deallocated.
+*ptr*<br/>
+A pointer to the starting location of the objects to be deallocated.
 
-*count*
- The number of objects to deallocate.
+*count*<br/>
+The number of objects to deallocate.
 
 ### Remarks
 
@@ -150,11 +150,11 @@ static void destroy(Alloc& al, Uty* ptr);
 
 ### Parameters
 
-*al*
- An allocator object.
+*al*<br/>
+An allocator object.
 
-*ptr*
- A pointer to the location of the object.
+*ptr*<br/>
+A pointer to the location of the object.
 
 ### Remarks
 
@@ -170,8 +170,8 @@ static size_type max_size(const Alloc& al);
 
 ### Parameters
 
-*al*
- An allocator object.
+*al*<br/>
+An allocator object.
 
 ### Remarks
 
@@ -187,8 +187,8 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 
 ### Parameters
 
-*al*
- An allocator object.
+*al*<br/>
+An allocator object.
 
 ### Return Value
 

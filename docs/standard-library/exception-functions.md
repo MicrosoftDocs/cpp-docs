@@ -49,8 +49,8 @@ exception_ptr make_exception_ptr(E Except);
 
 ### Parameters
 
-*Except*
- The class with the exception to copy. Usually, you specify an [exception class](../standard-library/exception-class.md) object as the argument to the `make_exception_ptr` function, although any class object can be the argument.
+*Except*<br/>
+The class with the exception to copy. Usually, you specify an [exception class](../standard-library/exception-class.md) object as the argument to the `make_exception_ptr` function, although any class object can be the argument.
 
 ### Return Value
 
@@ -72,8 +72,8 @@ void rethrow_exception(exception_ptr P);
 
 ### Parameters
 
-*P*
- The caught exception to re-throw. If *P* is a null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), the function throws [std::bad_exception](../standard-library/bad-exception-class.md).
+*P*<br/>
+The caught exception to re-throw. If *P* is a null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), the function throws [std::bad_exception](../standard-library/bad-exception-class.md).
 
 ### Remarks
 
@@ -97,8 +97,8 @@ terminate_handler set_terminate(terminate_handler fnew) throw();
 
 ### Parameters
 
-*fnew*
- The function to be called at termination.
+*fnew*<br/>
+The function to be called at termination.
 
 ### Return Value
 
@@ -155,8 +155,8 @@ unexpected_handler set_unexpected(unexpected_handler fnew) throw();
 
 ### Parameters
 
-*fnew*
- The function to be called when an unexpected exception is encountered.
+*fnew*<br/>
+The function to be called when an unexpected exception is encountered.
 
 ### Return Value
 

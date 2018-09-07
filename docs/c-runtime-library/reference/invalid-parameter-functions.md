@@ -44,19 +44,19 @@ _invoke_watson(
 
 ## Parameters
 
-*expression*
+*expression*<br/>
 A string representing the source code parameter expression that is not valid.
 
-*function_name*
+*function_name*<br/>
 The name of the function that called the handler.
 
-*file_name*
+*file_name*<br/>
 The source code file where the handler was called.
 
-*line_number*
+*line_number*<br/>
 The line number in the source code where the handler was called.
 
-*reserved*
+*reserved*<br/>
 Unused.
 
 ## Return Value

@@ -13,22 +13,25 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::UIntPtr value class
-Represents an unsigned pointer whose size is appropriate for the platform (32-bit or 64-bit).  
-  
-## Syntax  
-  
-```cpp  
-public value struct UintPtr  
-```  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** Platform  
-  
- **Metadata:** platform.winmd  
-  
-## See Also  
- [Platform namespace](../cppcx/platform-namespace-c-cx.md)
+
+Represents an unsigned pointer whose size is appropriate for the platform (32-bit or 64-bit).
+
+## Syntax
+
+```cpp
+public value struct UintPtr
+```
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** Platform
+
+**Metadata:** platform.winmd
+
+## See Also
+
+[Platform namespace](../cppcx/platform-namespace-c-cx.md)

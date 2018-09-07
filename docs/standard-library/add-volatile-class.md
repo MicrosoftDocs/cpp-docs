@@ -28,7 +28,7 @@ using add_volatile_t = typename add_volatile<T>::type;
 
 ### Parameters
 
-*T*
+*T*<br/>
 The type to modify.
 
 ## Remarks

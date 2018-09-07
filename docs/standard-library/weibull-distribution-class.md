@@ -49,7 +49,7 @@ class weibull_distribution
 
 ### Parameters
 
-*RealType*
+*RealType*<br/>
 The floating-point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks

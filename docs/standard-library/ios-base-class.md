@@ -159,14 +159,14 @@ typedef void (__cdecl *event_callback)(
 
 ### Parameters
 
-*_E*
- The [event](#event).
+*_E*<br/>
+The [event](#event).
 
-*_Base*
- The stream in which the event was called.
+*_Base*<br/>
+The stream in which the event was called.
 
-*_I*
- A user-defined number.
+*_I*<br/>
+A user-defined number.
 
 ### Remarks
 
@@ -239,8 +239,8 @@ fmtflags flags(fmtflags fmtfl);
 
 ### Parameters
 
-*fmtfl*
- The new `fmtflags` setting.
+*fmtfl*<br/>
+The new `fmtflags` setting.
 
 ### Return Value
 
@@ -390,8 +390,8 @@ locale imbue(const locale& _Loc);
 
 ### Parameters
 
-*_Loc*
- The new locale setting.
+*_Loc*<br/>
+The new locale setting.
 
 ### Return Value
 
@@ -467,8 +467,8 @@ long& iword(int idx);
 
 ### Parameters
 
-*idx*
- The index of the value to store as an `iword`.
+*idx*<br/>
+The index of the value to store as an `iword`.
 
 ### Remarks
 
@@ -542,8 +542,8 @@ ios_base& operator=(const ios_base& right);
 
 ### Parameters
 
-*right*
- An object of type `ios_base`.
+*right*<br/>
+An object of type `ios_base`.
 
 ### Return Value
 
@@ -566,8 +566,8 @@ streamsize precision(streamsize _Prec);
 
 ### Parameters
 
-*_Prec*
- The number of significant digits to display, or the number of digits after the decimal point in fixed notation.
+*_Prec*<br/>
+The number of significant digits to display, or the number of digits after the decimal point in fixed notation.
 
 ### Return Value
 
@@ -611,8 +611,8 @@ void *& pword(int _Idx);
 
 ### Parameters
 
-*_Idx*
- The index of the value to store as a `pword`.
+*_Idx*<br/>
+The index of the value to store as a `pword`.
 
 ### Remarks
 
@@ -637,11 +637,11 @@ void register_callback(
 
 ### Parameters
 
-*pfn*
- Pointer to the callback function.
+*pfn*<br/>
+Pointer to the callback function.
 
-*idx*
- A user-defined number.
+*idx*<br/>
+A user-defined number.
 
 ### Remarks
 
@@ -804,19 +804,19 @@ fmtflags setf(
 
 ### Parameters
 
-*_Mask*
-    The flags to turn on.
+*_Mask*<br/>
+The flags to turn on.
 
-*_Unset*
-    The flags to turn off.
+*_Unset*<br/>
+The flags to turn off.
 
 ### Return Value
 
-    The previous format flags
+The previous format flags
 
 ### Remarks
 
-    The first member function effectively calls [flags](#flags)(_ *Mask* &#124; \_ *Flags*) (set selected bits) and then returns the previous format flags. The second member function effectively calls **flags**(\_ *Mask* **& fmtfl, flags& ~**`_Mask`) (replace selected bits under a mask) and then returns the previous format flags.
+The first member function effectively calls [flags](#flags)(_ *Mask* &#124; \_ *Flags*) (set selected bits) and then returns the previous format flags. The second member function effectively calls **flags**(\_ *Mask* **& fmtfl, flags& ~**`_Mask`) (replace selected bits under a mask) and then returns the previous format flags.
 
 ### Example
 
@@ -854,16 +854,16 @@ static bool sync_with_stdio(
 
 ### Parameters
 
-*_Sync*
-    Whether all streams are in sync with `stdio`.
+*_Sync*<br/>
+Whether all streams are in sync with `stdio`.
 
 ### Return Value
 
-    Previous setting for this function.
+Previous setting for this function.
 
 ### Remarks
 
-    The static member function stores a `stdio` sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
+The static member function stores a `stdio` sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
 
 ## <a name="unsetf"></a> ios_base::unsetf
 
@@ -877,16 +877,16 @@ void unsetf(
 
 ### Parameters
 
-*_Mask*
-    The flags that you want off.
+*_Mask*<br/>
+The flags that you want off.
 
 ### Remarks
 
-    The member function effectively calls [flags](#flags)(`~`*_Mask* **& flags**) (clear selected bits).
+The member function effectively calls [flags](#flags)(`~`*_Mask* **& flags**) (clear selected bits).
 
 ### Example
 
-    See [ios_base::setf](#setf) for a sample of using `unsetf`.
+See [ios_base::setf](#setf) for a sample of using `unsetf`.
 
 ## <a name="width"></a> ios_base::width
 
@@ -901,16 +901,16 @@ streamsize width(
 
 ### Parameters
 
-*_Wide*
-    The desired size of the output stream.
+*_Wide*<br/>
+The desired size of the output stream.
 
 ### Return Value
 
-    The current width setting.
+The current width setting.
 
 ### Remarks
 
-    The first member function returns the stored field width. The second member function stores *_Wide* in the field width and returns its previous stored value.
+The first member function returns the stored field width. The second member function stores *_Wide* in the field width and returns its previous stored value.
 
 ### Example
 
@@ -935,7 +935,7 @@ int main( ) {
 
 ## <a name="xalloc"></a> ios_base::xalloc
 
-    Specifies that a variable is part of the stream.
+Specifies that a variable is part of the stream.
 
 ```cpp
 static int xalloc( );
@@ -943,11 +943,11 @@ static int xalloc( );
 
 ### Return Value
 
-    The static member function returns a stored static value, which it increments on each call.
+The static member function returns a stored static value, which it increments on each call.
 
 ### Remarks
 
-    You can use the return value as a unique index argument when calling the member functions [iword](#iword) or [pword](#pword).
+You can use the return value as a unique index argument when calling the member functions [iword](#iword) or [pword](#pword).
 
 ### Example
 

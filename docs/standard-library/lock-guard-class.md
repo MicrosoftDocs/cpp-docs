@@ -59,8 +59,8 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
 
 ### Parameters
 
-*Mtx*
- A *mutex type* object.
+*Mtx*<br/>
+A *mutex type* object.
 
 ### Remarks
 

@@ -23,7 +23,7 @@ The wizard inserts into the header file a [message map](../../atl/message-maps-a
 **Short name**  
 Sets the abbreviated name for the ATL dialog object. The name you provide determines the class name and the file (.cpp and .h) names, unless you change those fields individually.
 
-`Class`  
+**Class**  
 Sets the name of the class to be created. This name is based on the name you provide in **Short name**, preceded by 'C', the typical prefix for a class name.
 
 **.h file**  

@@ -25,14 +25,14 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 ### Parameters
 
-*Alloc*
- The allocator class.
+*Alloc*<br/>
+The allocator class.
 
-*Elem*
- The type of the basic element of the string.
+*Elem*<br/>
+The type of the basic element of the string.
 
-*Tr*
- The character traits specialized on the basic element of the string.
+*Tr*<br/>
+The character traits specialized on the basic element of the string.
 
 ## Remarks
 
@@ -96,14 +96,14 @@ basic_istringstream(
 
 ### Parameters
 
-*_Mode*
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*str*
- An object of type `basic_string`.
+*str*<br/>
+An object of type `basic_string`.
 
-*right*
- An rvalue reference of a `basic_istringstream` object.
+*right*<br/>
+An rvalue reference of a `basic_istringstream` object.
 
 ### Remarks
 
@@ -123,8 +123,8 @@ basic_istringstream& operator=(basic_istringstream&& right);
 
 ### Parameters
 
-*right*
- An rvalue reference to a `basic_istringstream` object.
+*right*<br/>
+An rvalue reference to a `basic_istringstream` object.
 
 ### Remarks
 
@@ -160,8 +160,8 @@ void str(
 
 ### Parameters
 
-*_Newstr*
- The new string.
+*_Newstr*<br/>
+The new string.
 
 ### Return Value
 

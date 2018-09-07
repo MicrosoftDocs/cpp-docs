@@ -31,10 +31,10 @@ struct integral_constant {
 
 ### Parameters
 
-*T*
+*T*<br/>
 The type of the constant.
 
-*v*
+*v*<br/>
 The value of the constant.
 
 ## Remarks

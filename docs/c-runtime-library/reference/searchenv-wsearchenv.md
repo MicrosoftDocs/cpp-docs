@@ -51,13 +51,13 @@ void _wsearchenv(
 
 ### Parameters
 
-*filename*
+*filename*<br/>
 Name of the file to search for.
 
-*varname*
+*varname*<br/>
 Environment to search.
 
-*pathname*
+*pathname*<br/>
 Buffer to store the complete path.
 
 ## Remarks

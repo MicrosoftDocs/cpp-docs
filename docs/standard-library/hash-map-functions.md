@@ -27,11 +27,11 @@ void swap(
 
 ### Parameters
 
-*right*
- The hash_map whose elements are to be exchanged with those of the map *left*.
+*right*<br/>
+The hash_map whose elements are to be exchanged with those of the map *left*.
 
-*left*
- The hash_map whose elements are to be exchanged with those of the map *right*.
+*left*<br/>
+The hash_map whose elements are to be exchanged with those of the map *right*.
 
 ### Remarks
 
@@ -52,11 +52,11 @@ void swap(
 
 ### Parameters
 
-*right*
- The hash_multimap whose elements are to be exchanged with those of the map *left*.
+*right*<br/>
+The hash_multimap whose elements are to be exchanged with those of the map *left*.
 
-*left*
- The hash_multimap whose elements are to be exchanged with those of the map *right*.
+*left*<br/>
+The hash_multimap whose elements are to be exchanged with those of the map *right*.
 
 ### Remarks
 

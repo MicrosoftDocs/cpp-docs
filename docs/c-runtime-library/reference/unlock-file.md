@@ -29,7 +29,7 @@ void _unlock_file(
 
 ### Parameters
 
-*file*
+*file*<br/>
 File handle.
 
 ## Remarks

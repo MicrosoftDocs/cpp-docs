@@ -21,20 +21,20 @@ An adapter class that allows a **const** member function that takes no arguments
 ```cpp
 template <class Result, class Type>
 class const_mem_fun_ref_t
- : public unary_function<Type, Result>
+: public unary_function<Type, Result>
 {
     explicit const_mem_fun_t(Result (Type::* Pm)() const);
     Result operator()(const Type& left) const;
- };
+};
 ```
 
 ### Parameters
 
-*Pm*
- A pointer to the member function of class `Type` to be converted to a function object.
+*Pm*<br/>
+A pointer to the member function of class `Type` to be converted to a function object.
 
-*left*
- The object that the *Pm* member function is called on.
+*left*<br/>
+The object that the *Pm* member function is called on.
 
 ## Return Value
 

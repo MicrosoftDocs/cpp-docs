@@ -84,11 +84,11 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 
 ### Parameters
 
-*left*
- A C-style string or an object of type `basic_string` to be concatenated.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be concatenated.
 
-*right*
- A C-style string or an object of type `basic_string` to be concatenated.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be concatenated.
 
 ### Return Value
 
@@ -173,11 +173,11 @@ bool operator!=(
 
 ### Parameters
 
-*left*
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-*right*
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -264,11 +264,11 @@ bool operator==(
 
 ### Parameters
 
-*left*
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-*right*
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -355,11 +355,11 @@ bool operator<(
 
 ### Parameters
 
-*left*
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-*right*
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -451,11 +451,11 @@ bool operator<=(
 
 ### Parameters
 
-*left*
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-*right*
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -544,11 +544,11 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### Parameters
 
-*_Ostr*
- The output stream being written to.
+*_Ostr*<br/>
+The output stream being written to.
 
-*str*
- The string to be entered into the output stream.
+*str*<br/>
+The string to be entered into the output stream.
 
 ### Return Value
 
@@ -581,11 +581,11 @@ bool operator>(
 
 ### Parameters
 
-*left*
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-*right*
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -684,11 +684,11 @@ bool operator>=(
 
 ### Parameters
 
-*left*
- A C-style string or an object of type `basic_string` to be compared.
+*left*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
-*right*
- A C-style string or an object of type `basic_string` to be compared.
+*right*<br/>
+A C-style string or an object of type `basic_string` to be compared.
 
 ### Return Value
 
@@ -777,11 +777,11 @@ basic_istream<CharType, Traits>& operator>>(
 
 ### Parameters
 
-*_Istr*
- The input stream used to extract the sequence
+*_Istr*<br/>
+The input stream used to extract the sequence
 
-*right*
- The string that is being extracted from the input stream.
+*right*<br/>
+The string that is being extracted from the input stream.
 
 ### Return Value
 

@@ -13,25 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::ObjectDisposedException Class
-Thrown when an operation is performed on a disposed object.  
-  
-## Syntax  
-  
-```cpp  
-public ref class ObjectDisposedException : COMException,    IException,    IPrintable,    IEquatable  
-```  
-  
-### Remarks  
- For more information, see [COMException](../cppcx/platform-comexception-class.md).  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** Platform  
-  
- **Metadata:** platform.winmd  
-  
-## See Also  
- [Platform::COMException Class](../cppcx/platform-comexception-class.md)
+
+Thrown when an operation is performed on a disposed object.
+
+## Syntax
+
+```cpp
+public ref class ObjectDisposedException : COMException,    IException,    IPrintable,    IEquatable
+```
+
+### Remarks
+
+For more information, see [COMException](../cppcx/platform-comexception-class.md).
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** Platform
+
+**Metadata:** platform.winmd
+
+## See Also
+
+[Platform::COMException Class](../cppcx/platform-comexception-class.md)

@@ -27,8 +27,8 @@ class messages : public messages_base;
 
 ### Parameters
 
-*CharType*
- The type used within a program to encode characters in a locale.
+*CharType*<br/>
+The type used within a program to encode characters in a locale.
 
 ## Remarks
 
@@ -88,8 +88,8 @@ void close(catalog _Catval) const;
 
 ### Parameters
 
-*_Catval*
- The catalog to be closed.
+*_Catval*<br/>
+The catalog to be closed.
 
 ### Remarks
 
@@ -105,8 +105,8 @@ virtual void do_close(catalog _Catval) const;
 
 ### Parameters
 
-*_Catval*
- The catalog to be closed.
+*_Catval*<br/>
+The catalog to be closed.
 
 ### Remarks
 
@@ -132,17 +132,17 @@ virtual string_type do_get(
 
 ### Parameters
 
-*_Catval*
- The identification value specifying the message catalog to be searched.
+*_Catval*<br/>
+The identification value specifying the message catalog to be searched.
 
-*_Set*
- The first identified used to locate a message in a message catalog.
+*_Set*<br/>
+The first identified used to locate a message in a message catalog.
 
-*_Message*
- The second identified used to locate a message in a message catalog.
+*_Message*<br/>
+The second identified used to locate a message in a message catalog.
 
-*_Dfault*
- The string to be returned on failure.
+*_Dfault*<br/>
+The string to be returned on failure.
 
 ### Return Value
 
@@ -168,11 +168,11 @@ virtual catalog do_open(
 
 ### Parameters
 
-*_Catname*
- The name of the catalog to be searched.
+*_Catname*<br/>
+The name of the catalog to be searched.
 
-*_Loc*
- The locale being searched for in the catalog.
+*_Loc*<br/>
+The locale being searched for in the catalog.
 
 ### Return Value
 
@@ -202,17 +202,17 @@ string_type get(
 
 ### Parameters
 
-*_Catval*
- The identification value specifying the message catalog to be searched.
+*_Catval*<br/>
+The identification value specifying the message catalog to be searched.
 
-*_Set*
- The first identified used to locate a message in a message catalog.
+*_Set*<br/>
+The first identified used to locate a message in a message catalog.
 
-*_Message*
- The second identified used to locate a message in a message catalog.
+*_Message*<br/>
+The second identified used to locate a message in a message catalog.
 
-*_Dfault*
- The string to be returned on failure.
+*_Dfault*<br/>
+The string to be returned on failure.
 
 ### Return Value
 
@@ -237,11 +237,11 @@ protected: messages(
 
 ### Parameters
 
-*_Refs*
- Integer value used to specify the type of memory management for the object.
+*_Refs*<br/>
+Integer value used to specify the type of memory management for the object.
 
-*_Locname*
- The name of the locale.
+*_Locname*<br/>
+The name of the locale.
 
 ### Remarks
 
@@ -269,11 +269,11 @@ catalog open(
 
 ### Parameters
 
-*_Catname*
- The name of the catalog to be searched.
+*_Catname*<br/>
+The name of the catalog to be searched.
 
-*_Loc*
- The locale being searched for in the catalog.
+*_Loc*<br/>
+The locale being searched for in the catalog.
 
 ### Return Value
 

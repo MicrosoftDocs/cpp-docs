@@ -29,7 +29,7 @@ void _CrtMemDumpAllObjectsSince(
 
 ### Parameters
 
-*state*
+*state*<br/>
 Pointer to the heap state to begin dumping from or **NULL**.
 
 ## Remarks

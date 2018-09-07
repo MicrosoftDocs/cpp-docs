@@ -25,11 +25,11 @@ class basic_fstream : public basic_iostream<Elem, Tr>
 
 ### Parameters
 
-*Elem*
- The basic element of the file buffer.
+*Elem*<br/>
+The basic element of the file buffer.
 
-*Tr*
- The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
+*Tr*<br/>
+The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
 
@@ -116,14 +116,14 @@ basic_fstream(basic_fstream&& right);
 
 ### Parameters
 
-*_Filename*
- The name of the file to open.
+*_Filename*<br/>
+The name of the file to open.
 
-*_Mode*
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*
- The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot*<br/>
+The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
 
@@ -199,14 +199,14 @@ void open(
 
 ### Parameters
 
-*_Filename*
- The name of the file to open.
+*_Filename*<br/>
+The name of the file to open.
 
-*_Mode*
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*
- The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot*<br/>
+The default file opening protection, equivalent to the *shflag* parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
 
@@ -226,8 +226,8 @@ basic_fstream& operator=(basic_fstream&& right);
 
 ### Parameters
 
-*right*
- An lvalue reference to a `basic_fstream` object.
+*right*<br/>
+An lvalue reference to a `basic_fstream` object.
 
 ### Return Value
 
@@ -263,8 +263,8 @@ void swap(basic_fstream& right);
 
 ### Parameters
 
-*right*
- An `lvalue` reference to a `basic_fstream` object.
+*right*<br/>
+An `lvalue` reference to a `basic_fstream` object.
 
 ### Remarks
 

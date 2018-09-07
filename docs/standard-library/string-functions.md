@@ -54,14 +54,14 @@ basic_istream<Allocator, Traits>& getline(
 
 ### Parameters
 
-*is*
- The input stream from which a string is to be extracted.
+*is*<br/>
+The input stream from which a string is to be extracted.
 
-*str*
- The string into which are read the characters from the input stream.
+*str*<br/>
+The string into which are read the characters from the input stream.
 
-*delim*
- The line delimiter.
+*delim*<br/>
+The line delimiter.
 
 ### Return Value
 
@@ -398,11 +398,11 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
 
 ### Parameters
 
-*left*
- One string whose elements are to be swapped with those of another string.
+*left*<br/>
+One string whose elements are to be swapped with those of another string.
 
-*right*
- The other string whose elements are to be swapped with the first string.
+*right*<br/>
+The other string whose elements are to be swapped with the first string.
 
 ### Remarks
 

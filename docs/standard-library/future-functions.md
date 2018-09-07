@@ -30,8 +30,8 @@ future<typename result_of<Fn(ArgTypes...)>::type>
 
 ### Parameters
 
-*policy*
- A [launch](../standard-library/future-enums.md#launch) value.
+*policy*<br/>
+A [launch](../standard-library/future-enums.md#launch) value.
 
 ### Remarks
 
@@ -78,8 +78,8 @@ inline error_code make_error_code(future_errc Errno) noexcept;
 
 ### Parameters
 
-*Errno*
- A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.
+*Errno*<br/>
+A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.
 
 ### Return Value
 
@@ -95,8 +95,8 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 
 ### Parameters
 
-*Errno*
- A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.
+*Errno*<br/>
+A [future_errc](../standard-library/future-enums.md#future_errc) value that identifies the reported error.
 
 ### Return Value
 
@@ -116,11 +116,11 @@ void swap(packaged_task<Ty(ArgTypes...)>& Left, packaged_task<Ty(ArgTypes...)>& 
 
 ### Parameters
 
-*Left*
- The left `promise` object.
+*Left*<br/>
+The left `promise` object.
 
-*Right*
- The right `promise` object.
+*Right*<br/>
+The right `promise` object.
 
 ## See also
 
