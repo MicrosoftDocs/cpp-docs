@@ -112,7 +112,7 @@ To make an `index_sequence` for a parameter pack, use `index_sequence_for`\<T...
 
 ## Requirements
 
-Header: <type_traits>
+Header: \<type_traits\>
 
 Namepace: std
 
