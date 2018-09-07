@@ -2,25 +2,20 @@
 title: "new Operator (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["new keyword [C++]"]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # new Operator (C++)
 Allocates memory for an object or array of objects of *type-name* from the free store and returns a suitably typed, nonzero pointer to the object.  
   
 > [!NOTE]
->  Microsoft C++ Component Extensions provides support for the `new` keyword to add vtable slot entries. For more information, see [new (new slot in vtable)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)  
+>  Microsoft C++ Component Extensions provides support for the **new** keyword to add vtable slot entries. For more information, see [new (new slot in vtable)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)  
   
 ## Syntax  
   
@@ -40,14 +35,14 @@ Allocates memory for an object or array of objects of *type-name* from the free 
   
  The following example allocates and then frees a two-dimensional array of characters of size `dim` by 10. When allocating a multidimensional array, all dimensions except the first must be constant expressions that evaluate to positive values; the leftmost array dimension can be any expression that evaluates to a positive value. When allocating an array using the **new** operator, the first dimension can be zero — the **new** operator returns a unique pointer.  
   
-```  
+```cpp 
 char (*pchar)[10] = new char[dim][10];  
 delete [] pchar;  
 ```  
   
- The *type-name* cannot contain **const**, `volatile`, class declarations, or enumeration declarations. Therefore, the following expression is illegal:  
+ The *type-name* cannot contain **const**, **volatile**, class declarations, or enumeration declarations. Therefore, the following expression is illegal:  
   
-```  
+```cpp 
 volatile char *vch = new volatile char[20];  
 ```  
   
@@ -55,7 +50,7 @@ volatile char *vch = new volatile char[20];
   
  The **new** operator cannot be used to allocate a function, but it can be used to allocate pointers to functions. The following example allocates and then frees an array of seven pointers to functions that return integers.  
   
-```  
+```cpp 
 int (**p) () = new (int (*[7]) ());  
 delete *p;  
 ```  
@@ -76,7 +71,7 @@ delete *p;
 ## Example  
  The following code example allocates a character array and an object of class `CName` and then frees them.  
   
-```  
+```cpp 
 // expre_new_Operator.cpp  
 // compile with: /EHsc  
 #include <string.h>  
@@ -120,7 +115,7 @@ int main() {
 ## Example  
  If you use the placement new form of the **new** operator, the form with arguments in addition to the size of the allocation, the compiler does not support a placement form of the **delete** operator if the constructor throws an exception. For example:  
   
-```  
+```cpp 
 // expre_new_Operator2.cpp  
 // C2660 expected  
 class A {  
@@ -155,7 +150,7 @@ int main() {
 ## Initializing object allocated with new  
  An optional *initializer* field is included in the grammar for the **new** operator. This allows new objects to be initialized with user-defined constructors. For more information about how initialization is done, see [Initializers](../cpp/initializers.md). The following example illustrates how to use an initialization expression with the **new** operator:  
   
-```  
+```cpp 
 // expre_Initializing_Objects_Allocated_with_new.cpp  
 class Acct  
 {  
@@ -187,14 +182,14 @@ int main()
   
  No explicit per-element initialization can be done when allocating arrays using the **new** operator; only the default constructor, if present, is called. See [Default Arguments](../cpp/default-arguments.md) for more information.  
   
- If the memory allocation fails (`operator new` returns a value of 0), no initialization is performed. This protects against attempts to initialize data that does not exist.  
+ If the memory allocation fails (**operator new** returns a value of 0), no initialization is performed. This protects against attempts to initialize data that does not exist.  
   
  As with function calls, the order in which initialized expressions are evaluated is not defined. Furthermore, you should not rely on these expressions being completely evaluated before the memory allocation is performed. If the memory allocation fails and the **new** operator returns zero, some expressions in the initializer may not be completely evaluated.  
   
 ## Lifetime of objects allocated with new  
  Objects allocated with the **new** operator are not destroyed when the scope in which they are defined is exited. Because the **new** operator returns a pointer to the objects it allocates, the program must define a pointer with suitable scope to access those objects. For example:  
   
-```  
+```cpp 
 // expre_Lifetime_of_Objects_Allocated_with_new.cpp  
 // C2541 expected  
 int main()  
@@ -228,29 +223,29 @@ int main()
   
 -   Returns a pointer to the object(s) of a pointer type derived from *new-type-name* or *type-name*. The program uses this pointer to access the newly allocated object.  
   
- The **new** operator invokes the function `operator new`. For arrays of any type, and for objects that are not of **class**, `struct`, or **union** types, a global function, **::operator new**, is called to allocate storage. Class-type objects can define their own `operator new` static member function on a per-class basis.  
+ The **new** operator invokes the function **operator new**. For arrays of any type, and for objects that are not of **class**, **struct**, or **union** types, a global function, **::operator new**, is called to allocate storage. Class-type objects can define their own **operator new** static member function on a per-class basis.  
   
- When the compiler encounters the **new** operator to allocate an object of type `type`, it issues a call to `type`**::operator new( sizeof(** `type` **) )** or, if no user-defined `operator new` is defined, **::operator new( sizeof(** `type` **) )**. Therefore, the **new** operator can allocate the correct amount of memory for the object.  
+ When the compiler encounters the **new** operator to allocate an object of type **type**, it issues a call to `type`**::operator new( sizeof(** `type` **) )** or, if no user-defined **operator new** is defined, **::operator new( sizeof(** `type` **) )**. Therefore, the **new** operator can allocate the correct amount of memory for the object.  
   
 > [!NOTE]
->  The argument to `operator new` is of type **size_t**. This type is defined in DIRECT.H, MALLOC.H, MEMORY.H, SEARCH.H, STDDEF.H, STDIO.H, STDLIB.H, STRING.H, and TIME.H.  
+>  The argument to **operator new** is of type `size_t`. This type is defined in \<direct.h>, \<malloc.h>, \<memory.h>, \<search.h>, \<stddef.h>, \<stdio.h>, \<stdlib.h>, \<string.h>, and \<time.h>.  
   
- An option in the grammar allows specification of *placement* (see the Grammar for [new Operator](../cpp/new-operator-cpp.md)). The *placement* parameter can be used only for user-defined implementations of `operator new`; it allows extra information to be passed to `operator new`. An expression with a *placement* field such as `T *TObject = new ( 0x0040 ) T;` is translated to `T *TObject = T::operator new( sizeof( T ), 0x0040 );` if class T has member operator new, otherwise to `T *TObject = ::operator new( sizeof( T ), 0x0040 );`.  
+ An option in the grammar allows specification of *placement* (see the Grammar for [new Operator](../cpp/new-operator-cpp.md)). The *placement* parameter can be used only for user-defined implementations of **operator new**; it allows extra information to be passed to **operator new**. An expression with a *placement* field such as `T *TObject = new ( 0x0040 ) T;` is translated to `T *TObject = T::operator new( sizeof( T ), 0x0040 );` if class T has member operator new, otherwise to `T *TObject = ::operator new( sizeof( T ), 0x0040 );`.  
   
  The original intention of the *placement* field was to allow hardware-dependent objects to be allocated at user-specified addresses.  
   
 > [!NOTE]
->  Although the preceding example shows only one argument in the *placement* field, there is no restriction on how many extra arguments can be passed to `operator new` this way.  
+>  Although the preceding example shows only one argument in the *placement* field, there is no restriction on how many extra arguments can be passed to **operator new** this way.  
   
- Even when `operator new` has been defined for a class type, the global operator can be used by using the form of this example:  
+ Even when **operator new** has been defined for a class type, the global operator can be used by using the form of this example:  
   
-```  
+```cpp 
 T *TObject =::new TObject;  
 ```  
   
  The scope-resolution operator (`::`) forces use of the global **new** operator.  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [new and delete operators](../cpp/new-and-delete-operators.md)

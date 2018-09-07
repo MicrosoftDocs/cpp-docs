@@ -2,19 +2,14 @@
 title: "MFC DLL Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.dll.overview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC DLLs [MFC], creating", "MFC DLL Wizard", "DLLs [MFC], MFC", "DLL wizard [MFC]", "MFC DLLs [MFC]", "DLLs [MFC], creating"]
 ms.assetid: 4e936031-7e39-4f40-a295-42a09c5ff264
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC DLL Wizard
@@ -39,7 +34,6 @@ When you use the MFC DLL wizard to create an MFC DLL project, you get a working 
  [Creating and Managing Visual C++ Projects](../../ide/creating-and-managing-visual-cpp-projects.md)   
  [Property Pages](../../ide/property-pages-visual-cpp.md)   
  [Working with Project Properties](../../ide/working-with-project-properties.md)   
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)   
  [MFC Class](../../mfc/reference/adding-an-mfc-class.md)   
  [Adding a Member Function](../../ide/adding-a-member-function-visual-cpp.md)   
  [Implementing an Interface](../../ide/implementing-an-interface-visual-cpp.md)   

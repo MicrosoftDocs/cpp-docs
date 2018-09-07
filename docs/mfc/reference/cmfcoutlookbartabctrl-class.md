@@ -2,24 +2,19 @@
 title: "CMFCOutlookBarTabCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCOutlookBarTabCtrl", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::AddControl", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::CanShowFewerPageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::CanShowMorePageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::Create", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::EnableAnimation", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::EnableInPlaceEdit", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::EnableScrollButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::GetBorderSize", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::GetVisiblePageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::IsAnimation", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::IsMode2003", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::OnShowFewerPageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::OnShowMorePageButtons", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::OnShowOptions", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetActiveTab", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetBorderSize", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetPageButtonTextAlign", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetToolbarImageList", "AFXOUTLOOKBARTABCTRL/CMFCOutlookBarTabCtrl::SetVisiblePageButtons"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCOutlookBarTabCtrl [MFC], AddControl", "CMFCOutlookBarTabCtrl [MFC], CanShowFewerPageButtons", "CMFCOutlookBarTabCtrl [MFC], CanShowMorePageButtons", "CMFCOutlookBarTabCtrl [MFC], Create", "CMFCOutlookBarTabCtrl [MFC], EnableAnimation", "CMFCOutlookBarTabCtrl [MFC], EnableInPlaceEdit", "CMFCOutlookBarTabCtrl [MFC], EnableScrollButtons", "CMFCOutlookBarTabCtrl [MFC], GetBorderSize", "CMFCOutlookBarTabCtrl [MFC], GetVisiblePageButtons", "CMFCOutlookBarTabCtrl [MFC], IsAnimation", "CMFCOutlookBarTabCtrl [MFC], IsMode2003", "CMFCOutlookBarTabCtrl [MFC], OnShowFewerPageButtons", "CMFCOutlookBarTabCtrl [MFC], OnShowMorePageButtons", "CMFCOutlookBarTabCtrl [MFC], OnShowOptions", "CMFCOutlookBarTabCtrl [MFC], SetActiveTab", "CMFCOutlookBarTabCtrl [MFC], SetBorderSize", "CMFCOutlookBarTabCtrl [MFC], SetPageButtonTextAlign", "CMFCOutlookBarTabCtrl [MFC], SetToolbarImageList", "CMFCOutlookBarTabCtrl [MFC], SetVisiblePageButtons"]
 ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCOutlookBarTabCtrl Class
 A tab control that has the visual appearance of the **Navigation Pane** in Microsoft Outlook.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
 ## Syntax  
   
 ```  
@@ -104,27 +99,27 @@ void AddControl(
 ```  
   
 ### Parameters  
- [in] `pWndCtrl`  
+ [in] *pWndCtrl*  
  A pointer to a control to add.  
   
- [in] `lpszName`  
+ [in] *lpszName*  
  Specifies the name of tab.  
   
- [in] `bDetachable`  
- If `TRUE`, the page will be created as detachable.  
+ [in] *bDetachable*  
+ If TRUE, the page will be created as detachable.  
   
- [in] `nImageID`  
+ [in] *nImageID*  
  Image index in the internal image list for the image to be displayed in the new tab.  
   
- [in] `dwControlBarStyle`  
- Specifies the AFX_ `CBRS_`* style for wrapped docking panes.  
+ [in] *dwControlBarStyle*  
+ Specifies the AFX_ CBRS_* style for wrapped docking panes.  
   
 ### Remarks  
  Use this function to add a control as a new page of an outlook bar.  
   
  This function internally calls on [CMFCBaseTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab).  
   
- If you set `bDetachable` to `TRUE`, `AddControl` internally creates a `CDockablePaneAdapter` object and wraps the added control. It automatically sets the runtime class of the tabbed window to the runtime class of `CMFCOutlookBar` and the runtime class of the floating frame to `CMultiPaneFrameWnd`.  
+ If you set *bDetachable* to TRUE, `AddControl` internally creates a `CDockablePaneAdapter` object and wraps the added control. It automatically sets the runtime class of the tabbed window to the runtime class of `CMFCOutlookBar` and the runtime class of the floating frame to `CMultiPaneFrameWnd`.  
   
 ### Example  
  The following example demonstrates how to use the `AddControl` method in the `CMFCOutlookBarTabCtrl` class. This code snippet is part of the [Outlook Demo sample](../../visual-cpp-samples.md).  
@@ -139,7 +134,7 @@ virtual BOOL CanShowFewerPageButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` if there is more than one button; otherwise `FALSE`.  
+ TRUE if there is more than one button; otherwise FALSE.  
   
 ### Remarks  
  The Outlook bar tab control dynamically adds or removes tabs from the display depending on how much room is available. This method is used by the framework to assist in that process.  
@@ -152,7 +147,7 @@ virtual BOOL CanShowMorePageButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` if there are buttons that are not currently visible; otherwise `FALSE`.  
+ TRUE if there are buttons that are not currently visible; otherwise FALSE.  
   
 ### Remarks  
  The Outlook bar tab control dynamically adds or removes tabs from the display, depending on how much room is available. This method is used by the framework to assist in that process.  
@@ -168,20 +163,20 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
  Specifies the initial size and position, in pixels.  
   
- [in] `pParentWnd`  
- Points to the parent window. Must not be `NULL`.  
+ [in] *pParentWnd*  
+ Points to the parent window. Must not be NULL.  
   
- [in] `nID`  
+ [in] *nID*  
  The control ID.  
   
 ### Return Value  
  Nonzero if the control has been created successfully; otherwise 0.  
   
 ### Remarks  
- Usually, outlook bar tab controls are created when [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md) controls the `WM_CREATE` message of the process.  
+ Usually, outlook bar tab controls are created when [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md) controls the WM_CREATE message of the process.  
   
 ##  <a name="enableanimation"></a>  CMFCOutlookBarTabCtrl::EnableAnimation  
  Specifies whether the animation that occurs during the switch between active tabs is enabled.  
@@ -191,7 +186,7 @@ static void EnableAnimation(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  Specifies whether the animation should be enabled or disabled.  
   
 ### Remarks  
@@ -207,8 +202,8 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 ```  
   
 ### Parameters  
- `bEnable`  
- If `TRUE`, enable the in-place editing of the text label. If `FALSE`, disable the in-place editing.  
+ *bEnable*  
+ If TRUE, enable the in-place editing of the text label. If FALSE, disable the in-place editing.  
   
 ### Remarks  
  Call this function to enable or disable in-place editing of text  labels on tab page buttons. By default the in-place editing is disabled.  
@@ -224,13 +219,13 @@ void EnableScrollButtons(
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  Determines whether the scroll buttons are displayed.  
   
- [in] `bIsUp`  
+ [in] *bIsUp*  
  Determines whether the top scrollbar is displayed.  
   
- [in] `bIsDown`  
+ [in] *bIsDown*  
  Determines whether the bottom scrollbar is displayed.  
   
 ### Remarks  
@@ -278,7 +273,7 @@ BOOL IsMode2003() const;
 ```  
   
 ### Return Value  
- `TRUE` if the Outlook bar tab control is in Outlook 2003 mode; otherwise `FALSE`;  
+ TRUE if the Outlook bar tab control is in Outlook 2003 mode; otherwise FALSE;  
   
 ### Remarks  
  This value is set by [CMFCOutlookBar::SetMode2003](../../mfc/reference/cmfcoutlookbar-class.md#setmode2003).  
@@ -323,7 +318,7 @@ virtual BOOL SetActiveTab(int iTab);
 ```  
   
 ### Parameters  
- [in] `iTab`  
+ [in] *iTab*  
  The zero-based index of a tab to be opened.  
   
 ### Return Value  
@@ -340,7 +335,7 @@ void SetBorderSize(int nBorderSize);
 ```  
   
 ### Parameters  
- [in] `nBorderSize`  
+ [in] *nBorderSize*  
  Specifies the new border size in pixels.  
   
 ### Remarks  
@@ -356,16 +351,16 @@ void SetPageButtonTextAlign(
 ```  
   
 ### Parameters  
- [in] `uiAlign`  
+ [in] *uiAlign*  
  Specifies the text alignment.  
   
- [in] `bRedraw`  
- If `TRUE`, the outlook window will be redrawn.  
+ [in] *bRedraw*  
+ If TRUE, the outlook window will be redrawn.  
   
 ### Remarks  
  Use this function to change text alignment for page buttons.  
   
- `uiAlign` can be one of the following values:  
+ *uiAlign* can be one of the following values:  
   
 |Constant|Meaning|  
 |--------------|-------------|  
@@ -386,17 +381,17 @@ BOOL SetToolbarImageList(
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
  Specifies the resource ID of the image to load.  
   
- [in] `cx`  
+ [in] *cx*  
  Specifies the width of an image in the image list, in pixels.  
   
- [in] `clrTransp`  
+ [in] *clrTransp*  
  An RGB value that specifies the transparent color.  
   
 ### Return Value  
- Returns `TRUE` if successful; otherwise returns `FALSE`.  
+ Returns TRUE if successful; otherwise returns FALSE.  
   
 ### Remarks  
  Use this function to attach an image list whose images will be displayed on toolbar buttons in Microsoft Office 2003 mode. Image indexes should correspond to page indexes.  
@@ -411,7 +406,7 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 ```  
   
 ### Parameters  
- [in] `nVisiblePageButtons`  
+ [in] *nVisiblePageButtons*  
   
 ### Remarks  
   

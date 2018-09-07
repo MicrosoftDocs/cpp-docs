@@ -2,19 +2,14 @@
 title: "CMFCPropertyGridColorProperty Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::CMFCPropertyGridColorProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableAutomaticButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::EnableOtherButton", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::GetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColumnsNumber", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetOriginalValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertyGridColorProperty [MFC], CMFCPropertyGridColorProperty", "CMFCPropertyGridColorProperty [MFC], EnableAutomaticButton", "CMFCPropertyGridColorProperty [MFC], EnableOtherButton", "CMFCPropertyGridColorProperty [MFC], GetColor", "CMFCPropertyGridColorProperty [MFC], SetColor", "CMFCPropertyGridColorProperty [MFC], SetColumnsNumber", "CMFCPropertyGridColorProperty [MFC], SetOriginalValue"]
 ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridColorProperty Class
@@ -83,19 +78,19 @@ CMFCPropertyGridColorProperty(
 ```  
   
 ### Parameters  
- [in] `strName`  
+ [in] *strName*  
  The name of the property.  
   
- [in] `color`  
+ [in] *color*  
  The color value of the property.  
   
- [in] `pPalette`  
- Pointer to a palette of colors. The default value is `NULL`.  
+ [in] *pPalette*  
+ Pointer to a palette of colors. The default value is NULL.  
   
- [in] `lpszDescr`  
- The property description. The default value is `NULL`.  
+ [in] *lpszDescr*  
+ The property description. The default value is NULL.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
   
 ##  <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton  
@@ -109,14 +104,14 @@ void EnableAutomaticButton(
 ```  
   
 ### Parameters  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  The label text of the automatic button.  
   
- [in] `colorAutomatic`  
+ [in] *colorAutomatic*  
  The RGB color value of the automatic (default) color.  
   
- [in] `bEnable`  
- `TRUE` to enable the automatic button; otherwise, `FALSE`. The default value is `TRUE`.  
+ [in] *bEnable*  
+ TRUE to enable the automatic button; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -131,14 +126,14 @@ void EnableOtherButton(
 ```  
   
 ### Parameters  
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  The label text of the other button.  
   
- [in] `bAltColorDlg`  
- `TRUE` to display the `CMFCColorDialog` dialog box; `FALSE` to display the standard color selection dialog box. The default value is `TRUE`.  
+ [in] *bAltColorDlg*  
+ TRUE to display the `CMFCColorDialog` dialog box; FALSE to display the standard color selection dialog box. The default value is TRUE.  
   
- [in] `bEnable`  
- `TRUE` to display the other button; otherwise, `FALSE`.  The default value is `TRUE`.  
+ [in] *bEnable*  
+ TRUE to display the other button; otherwise, FALSE.  The default value is TRUE.  
   
 ### Remarks  
   
@@ -162,7 +157,7 @@ void SetColor(COLORREF color);
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
  An RGB color value.  
   
 ### Remarks  
@@ -175,7 +170,7 @@ void SetColumnsNumber(int nColumnsNumber);
 ```  
   
 ### Parameters  
- [in] `nColumnsNumber`  
+ [in] *nColumnsNumber*  
  The preferred number of columns in the color property grid.  
   
 ### Remarks  
@@ -189,7 +184,7 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 ```  
   
 ### Parameters  
- [in] `varValue`  
+ [in] *varValue*  
  A value.  
   
 ### Remarks  

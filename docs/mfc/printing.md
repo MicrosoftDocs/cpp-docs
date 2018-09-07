@@ -2,18 +2,13 @@
 title: "Printing | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["view classes [MFC], print operations", "documents [MFC], printing", "printing [MFC], from framework", "printing [MFC]"]
 ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Printing

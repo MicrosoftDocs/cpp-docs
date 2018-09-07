@@ -2,18 +2,13 @@
 title: "Tokens (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["tokens [C++]", "parsing, C++ tokens", "translation units", "white space, in C++ tokens"]
 ms.assetid: aa812fd0-6d47-4f3f-aee0-db002ee4d8b9
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Tokens (C++)
@@ -37,13 +32,13 @@ A token is the smallest element of a C++ program that is meaningful to the compi
   
  The parser separates tokens from the input stream by creating the longest token possible using the input characters in a left-to-right scan. Consider this code fragment:  
   
-```  
+```cpp 
 a = i+++j;  
 ```  
   
  The programmer who wrote the code might have intended either of these two statements:  
   
-```  
+```cpp 
 a = i + (++j)  
   
 a = (i++) + j  
@@ -51,5 +46,5 @@ a = (i++) + j
   
  Because the parser creates the longest token possible from the input stream, it chooses the second interpretation, making the tokens `i++`, `+`, and `j`.  
   
-## See Also  
+## See also  
  [Lexical Conventions](../cpp/lexical-conventions.md)

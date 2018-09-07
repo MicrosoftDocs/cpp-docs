@@ -2,18 +2,13 @@
 title: "MFC ActiveX Controls: Advanced Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], error codes", "MFC ActiveX controls [MFC], accessing invisible dialog controls", "MFC ActiveX controls [MFC], advanced topics", "FireError method [MFC]", "MFC ActiveX controls [MFC], database classes", "MFC ActiveX controls [MFC], special keys", "PreTranslateMessage method [MFC]", "MFC ActiveX controls [MFC], parameterized property", "ThrowError method [MFC]"]
 ms.assetid: e9e34abb-8e2d-461e-bb9c-a1aec5dcecbd
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Advanced Topics
@@ -66,9 +61,9 @@ This article covers advanced topics related to developing ActiveX controls. Thes
   
 8.  In the **Get Function** and **Set Function** boxes, type unique names for your Get and Set Functions or accept the default names.  
   
-9. Add a parameter, called `row` (type `short`), using the **Parameter Name** and **Parameter Type** controls.  
+9. Add a parameter, called *row* (type *short*), using the **Parameter Name** and **Parameter Type** controls.  
   
-10. Add a second parameter called `column` (type `short`).  
+10. Add a second parameter called *column* (type *short*).  
   
 11. Click **Finish**.  
   
@@ -98,48 +93,48 @@ This article covers advanced topics related to developing ActiveX controls. Thes
   
 |Error|Description|  
 |-----------|-----------------|  
-|**CTL_E_ILLEGALFUNCTIONCALL**|Illegal function call|  
-|**CTL_E_OVERFLOW**|Overflow|  
-|**CTL_E_OUTOFMEMORY**|Out of memory|  
-|**CTL_E_DIVISIONBYZERO**|Division by zero|  
-|**CTL_E_OUTOFSTRINGSPACE**|Out of string space|  
-|**CTL_E_OUTOFSTACKSPACE**|Out of stack space|  
-|**CTL_E_BADFILENAMEORNUMBER**|Bad file name or number|  
-|**CTL_E_FILENOTFOUND**|File not found|  
-|**CTL_E_BADFILEMODE**|Bad file mode|  
-|**CTL_E_FILEALREADYOPEN**|File already open|  
-|**CTL_E_DEVICEIOERROR**|Device I/O error|  
-|**CTL_E_FILEALREADYEXISTS**|File already exists|  
-|**CTL_E_BADRECORDLENGTH**|Bad record length|  
-|**CTL_E_DISKFULL**|Disk full|  
-|**CTL_E_BADRECORDNUMBER**|Bad record number|  
-|**CTL_E_BADFILENAME**|Bad file name|  
-|**CTL_E_TOOMANYFILES**|Too many files|  
-|**CTL_E_DEVICEUNAVAILABLE**|Device unavailable|  
-|**CTL_E_PERMISSIONDENIED**|Permission denied|  
-|**CTL_E_DISKNOTREADY**|Disk not ready|  
-|**CTL_E_PATHFILEACCESSERROR**|Path/file access error|  
-|**CTL_E_PATHNOTFOUND**|Path not found|  
-|**CTL_E_INVALIDPATTERNSTRING**|Invalid pattern string|  
-|**CTL_E_INVALIDUSEOFNULL**|Invalid use of NULL|  
-|**CTL_E_INVALIDFILEFORMAT**|Invalid file format|  
-|**CTL_E_INVALIDPROPERTYVALUE**|Invalid property value|  
-|**CTL_E_INVALIDPROPERTYARRAYINDEX**|Invalid property array index|  
-|**CTL_E_SETNOTSUPPORTEDATRUNTIME**|Set not supported at run time|  
-|**CTL_E_SETNOTSUPPORTED**|Set not supported (read-only property)|  
-|**CTL_E_NEEDPROPERTYARRAYINDEX**|Need property array index|  
-|**CTL_E_SETNOTPERMITTED**|Set not permitted|  
-|**CTL_E_GETNOTSUPPORTEDATRUNTIME**|Get not supported at run time|  
-|**CTL_E_GETNOTSUPPORTED**|Get not supported (write-only property)|  
-|**CTL_E_PROPERTYNOTFOUND**|Property not found|  
-|**CTL_E_INVALIDCLIPBOARDFORMAT**|Invalid clipboard format|  
-|**CTL_E_INVALIDPICTURE**|Invalid picture|  
-|**CTL_E_PRINTERERROR**|Printer error|  
-|**CTL_E_CANTSAVEFILETOTEMP**|Can't save file to TEMP|  
-|**CTL_E_SEARCHTEXTNOTFOUND**|Search text not found|  
-|**CTL_E_REPLACEMENTSTOOLONG**|Replacements too long|  
+|CTL_E_ILLEGALFUNCTIONCALL|Illegal function call|  
+|CTL_E_OVERFLOW|Overflow|  
+|CTL_E_OUTOFMEMORY|Out of memory|  
+|CTL_E_DIVISIONBYZERO|Division by zero|  
+|CTL_E_OUTOFSTRINGSPACE|Out of string space|  
+|CTL_E_OUTOFSTACKSPACE|Out of stack space|  
+|CTL_E_BADFILENAMEORNUMBER|Bad file name or number|  
+|CTL_E_FILENOTFOUND|File not found|  
+|CTL_E_BADFILEMODE|Bad file mode|  
+|CTL_E_FILEALREADYOPEN|File already open|  
+|CTL_E_DEVICEIOERROR|Device I/O error|  
+|CTL_E_FILEALREADYEXISTS|File already exists|  
+|CTL_E_BADRECORDLENGTH|Bad record length|  
+|CTL_E_DISKFULL|Disk full|  
+|CTL_E_BADRECORDNUMBER|Bad record number|  
+|CTL_E_BADFILENAME|Bad file name|  
+|CTL_E_TOOMANYFILES|Too many files|  
+|CTL_E_DEVICEUNAVAILABLE|Device unavailable|  
+|CTL_E_PERMISSIONDENIED|Permission denied|  
+|CTL_E_DISKNOTREADY|Disk not ready|  
+|CTL_E_PATHFILEACCESSERROR|Path/file access error|  
+|CTL_E_PATHNOTFOUND|Path not found|  
+|CTL_E_INVALIDPATTERNSTRING|Invalid pattern string|  
+|CTL_E_INVALIDUSEOFNULL|Invalid use of NULL|  
+|CTL_E_INVALIDFILEFORMAT|Invalid file format|  
+|CTL_E_INVALIDPROPERTYVALUE|Invalid property value|  
+|CTL_E_INVALIDPROPERTYARRAYINDEX|Invalid property array index|  
+|CTL_E_SETNOTSUPPORTEDATRUNTIME|Set not supported at run time|  
+|CTL_E_SETNOTSUPPORTED|Set not supported (read-only property)|  
+|CTL_E_NEEDPROPERTYARRAYINDEX|Need property array index|  
+|CTL_E_SETNOTPERMITTED|Set not permitted|  
+|CTL_E_GETNOTSUPPORTEDATRUNTIME|Get not supported at run time|  
+|CTL_E_GETNOTSUPPORTED|Get not supported (write-only property)|  
+|CTL_E_PROPERTYNOTFOUND|Property not found|  
+|CTL_E_INVALIDCLIPBOARDFORMAT|Invalid clipboard format|  
+|CTL_E_INVALIDPICTURE|Invalid picture|  
+|CTL_E_PRINTERERROR|Printer error|  
+|CTL_E_CANTSAVEFILETOTEMP|Can't save file to TEMP|  
+|CTL_E_SEARCHTEXTNOTFOUND|Search text not found|  
+|CTL_E_REPLACEMENTSTOOLONG|Replacements too long|  
   
- If necessary, use the **CUSTOM_CTL_SCODE** macro to define a custom error code for a condition that is not covered by one of the standard codes. The parameter for this macro should be an integer between 1000 and 32767, inclusive. For example:  
+ If necessary, use the CUSTOM_CTL_SCODE macro to define a custom error code for a condition that is not covered by one of the standard codes. The parameter for this macro should be an integer between 1000 and 32767, inclusive. For example:  
   
  [!code-cpp[NVC_MFC_AxUI#37](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_4.cpp)]  
   
@@ -163,7 +158,7 @@ This article covers advanced topics related to developing ActiveX controls. Thes
   
      -or-  
   
--   Declare a local variable and subclass as the dialog item. Insert code that resembles the following (`CMyCtrl` is the wrapper class, `IDC_MYCTRL1` is the control's ID):  
+-   Declare a local variable and subclass as the dialog item. Insert code that resembles the following (`CMyCtrl` is the wrapper class, IDC_MYCTRL1 is the control's ID):  
   
      [!code-cpp[NVC_MFC_AxCont#19](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-topics_6.cpp)]  
   

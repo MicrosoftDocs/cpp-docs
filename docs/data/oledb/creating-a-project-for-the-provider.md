@@ -2,24 +2,19 @@
 title: "Creating a Project for the Provider | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, creating", "OLE DB providers, projects", "projects [C++], creating"]
 ms.assetid: 076a75de-1d4b-486a-bcf8-9c0f6b049fa2
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Project for the Provider
-#### To create a project in which the OLE DB provider will reside  
+### To create a project in which the OLE DB provider will reside  
   
-1.  From the **File** menu, click `New`, and then click **Project**.  
+1.  From the **File** menu, click **New**, and then click **Project**.  
   
      The **New Project** dialog box appears.  
   

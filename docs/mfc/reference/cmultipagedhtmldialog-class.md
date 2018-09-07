@@ -2,19 +2,14 @@
 title: "CMultiPageDHtmlDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog", "AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog"]
 ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMultiPageDHtmlDialog Class
@@ -39,7 +34,7 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
  The mechanism for doing this is a [DHTML and URL event map](dhtml-event-maps.md), which contains embedded event maps for each page.  
   
 ## Example  
- This multipage dialog assumes three HTML resources that define simple wizard-like functionality. The first page has a `Next` button, the second a **Prev** and `Next` button, and the third a **Prev** button. When one of the buttons is pressed, a handler function calls [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#loadfromresource) to load the appropriate new page.  
+ This multipage dialog assumes three HTML resources that define simple wizard-like functionality. The first page has a **Next** button, the second a **Prev** and **Next** button, and the third a **Prev** button. When one of the buttons is pressed, a handler function calls [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#loadfromresource) to load the appropriate new page.  
   
  The pertinent parts of the class declaration (in CMyMultiPageDlg.h):  
   
@@ -92,19 +87,19 @@ CMultiPageDHtmlDialog();
 ```  
   
 ### Parameters  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  The null-terminated string that is the name of a dialog-box template resource.  
   
- `szHtmlResID`  
+ *szHtmlResID*  
  The null-terminated string that is the name of an HTML resource.  
   
- `pParentWnd`  
- A pointer to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is **NULL**, the dialog object's parent window is set to the main application window.  
+ *pParentWnd*  
+ A pointer to the parent or owner window object (of type [CWnd](../../mfc/reference/cwnd-class.md)) to which the dialog object belongs. If it is NULL, the dialog object's parent window is set to the main application window.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Contains the ID number of a dialog-box template resource.  
   
- `nHtmlResID`  
+ *nHtmlResID*  
  Contains the ID number of an HTML resource.  
   
 ##  <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog  

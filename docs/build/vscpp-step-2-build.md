@@ -1,16 +1,15 @@
 ---
 title: Build and run a C++ console app project | Microsoft Docs
-description: "Install Visual Studio support for Visual C++"
+description: "Build and run a Hello World console app in Visual C++"
 ms.custom: "mvc"
 ms.date: 12/12/2017
-ms.topic: "get-started-article"
+ms.topic: "tutorial"
 ms.technology: ["devlang-C++"]
 ms.devlang: "C++"
 dev_langs: ["C++"]
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Build and run a C++ console app project
@@ -78,6 +77,8 @@ If red squiggles appear under anything in the source code editor, the build may 
 ### Run your code in a command window issues
 
 You can also navigate to the solution Debug folder at the command line to run your app. You can't run your app from other directories without specifying the path to the app. However, you can copy your app to another directory and run it from there.
+
+If you don't see **Copy as path** in the shortcut menu, dismiss the menu, and then hold down the Shift key while you open it again. This is just for convenience. You can also copy the path to the folder from the File Explorer search bar, and paste it into the **Run** dialog, and then enter the name of your executable at the end. It's just a little more typing, but it has the same result.
 
 [Go back.](#run-your-code-in-a-command-window)
 

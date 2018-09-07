@@ -2,18 +2,13 @@
 title: "Function Call Operator: () | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["( ) function call operator", "function calls, C++ functions", "() function call operator", "postfix operators [C++]", "function calls, operator", "functions [C++], function-call operator", "function call operator ()"]
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Function Call Operator: ()
@@ -35,25 +30,25 @@ postfix-expression
   
 -   Function returning type `T`. An example declaration is  
   
-    ```  
+    ```cpp 
     T func( int i )  
     ```  
   
 -   Pointer to a function returning type `T`. An example declaration is  
   
-    ```  
+    ```cpp 
     T (*func)( int i )  
     ```  
   
 -   Reference to a function returning type `T`. An example declaration is  
   
-    ```  
+    ```cpp 
     T (&func)(int i)  
     ```  
   
 -   Pointer-to-member function dereference returning type `T`. Example function calls are  
   
-    ```  
+    ```cpp 
     (pObject->*pmf)();  
     (Object.*pmf)();  
     ```  
@@ -61,7 +56,7 @@ postfix-expression
 ## Example  
  The following example calls the standard library function `strcat_s` with three arguments:  
   
-```  
+```cpp 
 // expre_Function_Call_Operator.cpp  
 // compile with: /EHsc  
   
@@ -94,7 +89,7 @@ Welcome to C++
 ## Function call results  
  A function call evaluates to an r-value unless the function is declared as a reference type. Functions with reference return type evaluate to l-values, and can be used on the left side of an assignment statement as follows:  
   
-```  
+```cpp 
 // expre_Function_Call_Results.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -128,7 +123,7 @@ int main()
   
  Functions that return class types, pointers to class types, or references to class types can be used as the left operand to member-selection operators. Therefore, the following code is legal:  
   
-```  
+```cpp 
 // expre_Function_Results2.cpp  
 class A {  
 public:  
@@ -171,7 +166,7 @@ int main() {
   
  Functions can be called recursively. For more information about function declarations, see [Functions](functions-cpp.md). Related material is in [Program and Linkage](../cpp/program-and-linkage-cpp.md).  
   
-## See Also  
+## See also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Function Call](../c-language/function-call-c.md)   

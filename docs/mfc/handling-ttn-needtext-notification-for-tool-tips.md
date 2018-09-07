@@ -2,19 +2,14 @@
 title: "Handling TTN_NEEDTEXT Notification for Tool Tips | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["TTN_NEEDTEXT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TTN_NEEDTEXT message [MFC]", "notifications [MFC], tool tips", "tool tips [MFC], notifications"]
 ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Handling TTN_NEEDTEXT Notification for Tool Tips
@@ -37,10 +32,10 @@ As part of [enabling tool tips](../mfc/enabling-tool-tips.md), you handle the **
  Identifier of the control that sent the notification. Not used. The control id is taken from the **NMHDR** structure.  
   
  `pNMHDR`  
- A pointer to the [NMTTDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb760258) structure. This structure is also discussed further in [The TOOLTIPTEXT Structure](../mfc/tooltiptext-structure.md).  
+ A pointer to the [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) structure. This structure is also discussed further in [The TOOLTIPTEXT Structure](../mfc/tooltiptext-structure.md).  
   
  `pResult`  
- A pointer to result code you can set before you return. **TTN_NEEDTEXT** handlers can ignore the `pResult` parameter.  
+ A pointer to result code you can set before you return. **TTN_NEEDTEXT** handlers can ignore the *pResult* parameter.  
   
  As an example of a form-view notification handler:  
   

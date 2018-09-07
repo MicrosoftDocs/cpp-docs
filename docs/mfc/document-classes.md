@@ -2,19 +2,14 @@
 title: "Document Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.document"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["document classes [MFC]"]
 ms.assetid: 4bf19b02-0a4f-4319-b68e-cddcba2705cb
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Document Classes
@@ -23,7 +18,7 @@ Document class objects, created by document-template objects, manage the applica
  Document class objects interact with view objects. View objects represent the client area of a window, display a document's data, and allow users to interact with it. Documents and views are created by a document-template object.  
   
  [CDocument](../mfc/reference/cdocument-class.md)  
- The base class for application-specific documents. Derive your document class or classes from **CDocument**.  
+ The base class for application-specific documents. Derive your document class or classes from `CDocument`.  
   
  [COleDocument](../mfc/reference/coledocument-class.md)  
  Used for compound document implementation, as well as basic container support. Serves as a container for classes derived from [CDocItem](../mfc/reference/cdocitem-class.md). This class can be used as the base class for container documents and is the base class for `COleServerDoc`.  

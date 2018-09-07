@@ -2,19 +2,14 @@
 title: "CMFCFilterChunkValueImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCFilterChunkValueImpl", "AFXWIN/CMFCFilterChunkValueImpl", "AFXWIN/CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl", "AFXWIN/CMFCFilterChunkValueImpl::Clear", "AFXWIN/CMFCFilterChunkValueImpl::CopyChunk", "AFXWIN/CMFCFilterChunkValueImpl::CopyFrom", "AFXWIN/CMFCFilterChunkValueImpl::GetChunkGUID", "AFXWIN/CMFCFilterChunkValueImpl::GetChunkPID", "AFXWIN/CMFCFilterChunkValueImpl::GetChunkType", "AFXWIN/CMFCFilterChunkValueImpl::GetString", "AFXWIN/CMFCFilterChunkValueImpl::GetValue", "AFXWIN/CMFCFilterChunkValueImpl::GetValueNoAlloc", "AFXWIN/CMFCFilterChunkValueImpl::IsValid", "AFXWIN/CMFCFilterChunkValueImpl::SetBoolValue", "AFXWIN/CMFCFilterChunkValueImpl::SetDwordValue", "AFXWIN/CMFCFilterChunkValueImpl::SetFileTimeValue", "AFXWIN/CMFCFilterChunkValueImpl::SetInt64Value", "AFXWIN/CMFCFilterChunkValueImpl::SetIntValue", "AFXWIN/CMFCFilterChunkValueImpl::SetLongValue", "AFXWIN/CMFCFilterChunkValueImpl::SetSystemTimeValue", "AFXWIN/CMFCFilterChunkValueImpl::SetTextValue", "AFXWIN/CMFCFilterChunkValueImpl::SetChunk"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCFilterChunkValueImpl [MFC], CMFCFilterChunkValueImpl", "CMFCFilterChunkValueImpl [MFC], Clear", "CMFCFilterChunkValueImpl [MFC], CopyChunk", "CMFCFilterChunkValueImpl [MFC], CopyFrom", "CMFCFilterChunkValueImpl [MFC], GetChunkGUID", "CMFCFilterChunkValueImpl [MFC], GetChunkPID", "CMFCFilterChunkValueImpl [MFC], GetChunkType", "CMFCFilterChunkValueImpl [MFC], GetString", "CMFCFilterChunkValueImpl [MFC], GetValue", "CMFCFilterChunkValueImpl [MFC], GetValueNoAlloc", "CMFCFilterChunkValueImpl [MFC], IsValid", "CMFCFilterChunkValueImpl [MFC], SetBoolValue", "CMFCFilterChunkValueImpl [MFC], SetDwordValue", "CMFCFilterChunkValueImpl [MFC], SetFileTimeValue", "CMFCFilterChunkValueImpl [MFC], SetInt64Value", "CMFCFilterChunkValueImpl [MFC], SetIntValue", "CMFCFilterChunkValueImpl [MFC], SetLongValue", "CMFCFilterChunkValueImpl [MFC], SetSystemTimeValue", "CMFCFilterChunkValueImpl [MFC], SetTextValue", "CMFCFilterChunkValueImpl [MFC], SetChunk"]
 ms.assetid: 3c833f23-5b88-4d08-9e09-ca6a8aec88bf
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCFilterChunkValueImpl Class
@@ -45,7 +40,7 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 |[CMFCFilterChunkValueImpl::GetChunkGUID](#getchunkguid)|Retrieves the chunk GUID.|  
 |[CMFCFilterChunkValueImpl::GetChunkPID](#getchunkpid)|Retrieves the chunk PID (property ID).|  
 |[CMFCFilterChunkValueImpl::GetChunkType](#getchunktype)|Gets chunk type.|  
-|[CMFCFilterChunkValueImpl::GetString](#getstring)|Retrieves the the string value.|  
+|[CMFCFilterChunkValueImpl::GetString](#getstring)|Retrieves the string value.|  
 |[CMFCFilterChunkValueImpl::GetValue](#getvalue)|Retrieves the value as an allocated propvariant.|  
 |[CMFCFilterChunkValueImpl::GetValueNoAlloc](#getvaluenoalloc)|Returns non-allocated (internal value) value.|  
 |[CMFCFilterChunkValueImpl::IsValid](#isvalid)|Checks whether this property value is valid or not.|  
@@ -120,7 +115,7 @@ HRESULT CopyChunk(STAT_CHUNK* pStatChunk);
 ```  
   
 ### Parameters  
- `pStatChunk`  
+ *pStatChunk*  
  A pointer to destination value describing the characteristics of the chunk.  
   
 ### Return Value  
@@ -136,7 +131,7 @@ void CopyFrom (IFilterChunkValue* pValue);
 ```  
   
 ### Parameters  
- `pValue`  
+ *pValue*  
  Specifies the source value to copy from.  
   
 ### Remarks  
@@ -197,11 +192,11 @@ HRESULT GetValue(PROPVARIANT** ppPropVariant);
 ```  
   
 ### Parameters  
- `ppPropVariant`  
+ *ppPropVariant*  
  When the function returns, this parameter contains the chunk value.  
   
 ### Return Value  
- S_OK if PROPVARIANT was allocated successfully and the chunk value was successfully copied to `ppPropVariant`; otherwise an error code.  
+ S_OK if PROPVARIANT was allocated successfully and the chunk value was successfully copied to *ppPropVariant*; otherwise an error code.  
   
 ### Remarks  
   
@@ -225,7 +220,7 @@ BOOL IsValid() const;
 ```  
   
 ### Return Value  
- `TRUE` if the current chunk value is valid; otherwise `FALSE`.  
+ TRUE if the current chunk value is valid; otherwise FALSE.  
   
 ### Remarks  
   
@@ -254,25 +249,25 @@ HRESULT SetBoolValue(
 ```  
   
 ### Parameters  
- `pkey`  
+ *pkey*  
  Specifies a property key.  
   
- `bVal`  
+ *bVal*  
  Specifies the chunk value to set.  
   
- `chunkType`  
+ *chunkType*  
  Flags indicate whether this chunk contains a text-type or a value-type property. Flag values are taken from the CHUNKSTATE enumeration.  
   
- `locale`  
+ *locale*  
  The language and sublanguage associated with a chunk of text. Chunk locale is used by document indexers to perform proper word breaking of text. If the chunk is neither text-type nor a value-type with data type VT_LPWSTR, VT_LPSTR, or VT_BSTR, this field is ignored.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  The length in characters of the source text from which the current chunk was derived. A zero value signifies character-by-character correspondence between the source text and the derived text. A nonzero value means that no such direct correspondence exists.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  The offset from which the source text for a derived chunk starts in the source chunk.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  The type of break that separates the previous chunk from the current chunk. Values are from the CHUNK_BREAKTYPE enumeration.  
   
 ### Return Value  
@@ -294,22 +289,22 @@ HRESULT SetChunk(
 ```  
   
 ### Parameters  
- `pkey`  
+ *pkey*  
  Specifies a property key.  
   
- `chunkType`  
+ *chunkType*  
  Flags indicate whether this chunk contains a text-type or a value-type property. Flag values are taken from the CHUNKSTATE enumeration.  
   
- `locale`  
+ *locale*  
  The language and sublanguage associated with a chunk of text. Chunk locale is used by document indexers to perform proper word breaking of text. If the chunk is neither text-type nor a value-type with data type VT_LPWSTR, VT_LPSTR, or VT_BSTR, this field is ignored.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  The length in characters of the source text from which the current chunk was derived. A zero value signifies character-by-character correspondence between the source text and the derived text. A nonzero value means that no such direct correspondence exists.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  The offset from which the source text for a derived chunk starts in the source chunk.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  The type of break that separates the previous chunk from the current chunk. Values are from the CHUNK_BREAKTYPE enumeration.  
   
 ### Return Value  
@@ -332,25 +327,25 @@ HRESULT SetDwordValue(
 ```  
   
 ### Parameters  
- `pkey`  
+ *pkey*  
  Specifies a property key.  
   
- `dwVal`  
+ *dwVal*  
  Specifies the chunk value to set.  
   
- `chunkType`  
+ *chunkType*  
  Flags indicate whether this chunk contains a text-type or a value-type property. Flag values are taken from the CHUNKSTATE enumeration.  
   
- `locale`  
+ *locale*  
  The language and sublanguage associated with a chunk of text. Chunk locale is used by document indexers to perform proper word breaking of text. If the chunk is neither text-type nor a value-type with data type VT_LPWSTR, VT_LPSTR, or VT_BSTR, this field is ignored.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  The length in characters of the source text from which the current chunk was derived. A zero value signifies character-by-character correspondence between the source text and the derived text. A nonzero value means that no such direct correspondence exists.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  The offset from which the source text for a derived chunk starts in the source chunk.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  The type of break that separates the previous chunk from the current chunk. Values are from the CHUNK_BREAKTYPE enumeration.  
   
 ### Return Value  
@@ -373,25 +368,25 @@ HRESULT SetFileTimeValue(
 ```  
   
 ### Parameters  
- `pkey`  
+ *pkey*  
  Specifies a property key.  
   
- `dtVal`  
+ *dtVal*  
  Specifies the chunk value to set.  
   
- `chunkType`  
+ *chunkType*  
  Flags indicate whether this chunk contains a text-type or a value-type property. Flag values are taken from the CHUNKSTATE enumeration.  
   
- `locale`  
+ *locale*  
  The language and sublanguage associated with a chunk of text. Chunk locale is used by document indexers to perform proper word breaking of text. If the chunk is neither text-type nor a value-type with data type VT_LPWSTR, VT_LPSTR, or VT_BSTR, this field is ignored.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  The length in characters of the source text from which the current chunk was derived. A zero value signifies character-by-character correspondence between the source text and the derived text. A nonzero value means that no such direct correspondence exists.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  The offset from which the source text for a derived chunk starts in the source chunk.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  The type of break that separates the previous chunk from the current chunk. Values are from the CHUNK_BREAKTYPE enumeration.  
   
 ### Return Value  
@@ -414,25 +409,25 @@ HRESULT SetInt64Value(
 ```  
   
 ### Parameters  
- `pkey`  
+ *pkey*  
  Specifies a property key.  
   
- `nVal`  
+ *nVal*  
  Specifies the chunk value to set.  
   
- `chunkType`  
+ *chunkType*  
  Flags indicate whether this chunk contains a text-type or a value-type property. Flag values are taken from the CHUNKSTATE enumeration.  
   
- `locale`  
+ *locale*  
  The language and sublanguage associated with a chunk of text. Chunk locale is used by document indexers to perform proper word breaking of text. If the chunk is neither text-type nor a value-type with data type VT_LPWSTR, VT_LPSTR, or VT_BSTR, this field is ignored.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  The length in characters of the source text from which the current chunk was derived. A zero value signifies character-by-character correspondence between the source text and the derived text. A nonzero value means that no such direct correspondence exists.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  The offset from which the source text for a derived chunk starts in the source chunk.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  The type of break that separates the previous chunk from the current chunk. Values are from the CHUNK_BREAKTYPE enumeration.  
   
 ### Return Value  
@@ -455,25 +450,25 @@ HRESULT SetIntValue(
 ```  
   
 ### Parameters  
- `pkey`  
+ *pkey*  
  Specifies a property key.  
   
- `nVal`  
+ *nVal*  
  Specifies the chunk value to set.  
   
- `chunkType`  
+ *chunkType*  
  Flags indicate whether this chunk contains a text-type or a value-type property. Flag values are taken from the CHUNKSTATE enumeration.  
   
- `locale`  
+ *locale*  
  The language and sublanguage associated with a chunk of text. Chunk locale is used by document indexers to perform proper word breaking of text. If the chunk is neither text-type nor a value-type with data type VT_LPWSTR, VT_LPSTR, or VT_BSTR, this field is ignored.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  The length in characters of the source text from which the current chunk was derived. A zero value signifies character-by-character correspondence between the source text and the derived text. A nonzero value means that no such direct correspondence exists.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  The offset from which the source text for a derived chunk starts in the source chunk.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  The type of break that separates the previous chunk from the current chunk. Values are from the CHUNK_BREAKTYPE enumeration.  
   
 ### Return Value  
@@ -496,25 +491,25 @@ HRESULT SetLongValue(
 ```  
   
 ### Parameters  
- `pkey`  
+ *pkey*  
  Specifies a property key.  
   
- `lVal`  
+ *lVal*  
  Specifies the chunk value to set.  
   
- `chunkType`  
+ *chunkType*  
  Flags indicate whether this chunk contains a text-type or a value-type property. Flag values are taken from the CHUNKSTATE enumeration.  
   
- `locale`  
+ *locale*  
  The language and sublanguage associated with a chunk of text. Chunk locale is used by document indexers to perform proper word breaking of text. If the chunk is neither text-type nor a value-type with data type VT_LPWSTR, VT_LPSTR, or VT_BSTR, this field is ignored.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  The length in characters of the source text from which the current chunk was derived. A zero value signifies character-by-character correspondence between the source text and the derived text. A nonzero value means that no such direct correspondence exists.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  The offset from which the source text for a derived chunk starts in the source chunk.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  The type of break that separates the previous chunk from the current chunk. Values are from the CHUNK_BREAKTYPE enumeration.  
   
 ### Return Value  
@@ -537,25 +532,25 @@ HRESULT SetSystemTimeValue(
 ```  
   
 ### Parameters  
- `pkey`  
+ *pkey*  
  Specifies a property key.  
   
- `systemTime`  
+ *systemTime*  
  Specifies the chunk value to set.  
   
- `chunkType`  
+ *chunkType*  
  Flags indicate whether this chunk contains a text-type or a value-type property. Flag values are taken from the CHUNKSTATE enumeration.  
   
- `locale`  
+ *locale*  
  The language and sublanguage associated with a chunk of text. Chunk locale is used by document indexers to perform proper word breaking of text. If the chunk is neither text-type nor a value-type with data type VT_LPWSTR, VT_LPSTR, or VT_BSTR, this field is ignored.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  The length in characters of the source text from which the current chunk was derived. A zero value signifies character-by-character correspondence between the source text and the derived text. A nonzero value means that no such direct correspondence exists.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  The offset from which the source text for a derived chunk starts in the source chunk.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  The type of break that separates the previous chunk from the current chunk. Values are from the CHUNK_BREAKTYPE enumeration.  
   
 ### Return Value  
@@ -578,25 +573,25 @@ HRESULT SetTextValue(
 ```  
   
 ### Parameters  
- `pkey`  
+ *pkey*  
  Specifies a property key.  
   
- `pszValue`  
+ *pszValue*  
  Specifies the chunk value to set.  
   
- `chunkType`  
+ *chunkType*  
  Flags indicate whether this chunk contains a text-type or a value-type property. Flag values are taken from the CHUNKSTATE enumeration.  
   
- `locale`  
+ *locale*  
  The language and sublanguage associated with a chunk of text. Chunk locale is used by document indexers to perform proper word breaking of text. If the chunk is neither text-type nor a value-type with data type VT_LPWSTR, VT_LPSTR, or VT_BSTR, this field is ignored.  
   
- `cwcLenSource`  
+ *cwcLenSource*  
  The length in characters of the source text from which the current chunk was derived. A zero value signifies character-by-character correspondence between the source text and the derived text. A nonzero value means that no such direct correspondence exists.  
   
- `cwcStartSource`  
+ *cwcStartSource*  
  The offset from which the source text for a derived chunk starts in the source chunk.  
   
- `chunkBreakType`  
+ *chunkBreakType*  
  The type of break that separates the previous chunk from the current chunk. Values are from the CHUNK_BREAKTYPE enumeration.  
   
 ### Return Value  

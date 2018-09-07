@@ -2,18 +2,13 @@
 title: "Record Field Exchange: Working with the Wizard Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["DoFieldExchange method, overriding", "Unicode, with database classes", "field data members, declaring", "RFX (ODBC), wizard code", "RFX (ODBC), implementing", "field data members", "ODBC, RFX", "m_nParams data member, initializing", "m_nFields data member", "m_nParams data member", "overriding, DoFieldExchange", "m_nFields data member, initializing"]
 ms.assetid: f00d882a-ff1b-4a75-9717-98d8762bb237
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Working with the Wizard Code
@@ -33,7 +28,7 @@ This topic explains the code that the MFC Application Wizard and **Add Class** (
 ##  <a name="_core_the_field_data_member_declarations"></a> Field Data Member Declarations  
  The wizards write a recordset class declaration in an .h file that resembles the following for class `CSections`:  
   
-```  
+```cpp  
 class CSections : public CRecordset  
 {  
 public:  
@@ -73,7 +68,7 @@ public:
   
  The following `DoFieldExchange` override is for the `CSections` class. The wizard writes the function in the .cpp file for your recordset class.  
   
-```  
+```cpp  
 void CSections::DoFieldExchange(CFieldExchange* pFX)  
 {  
    pFX->SetFieldType(CFieldExchange::outputColumn);  
@@ -107,7 +102,7 @@ void CSections::DoFieldExchange(CFieldExchange* pFX)
   
  The constructor for the `CSections` recordset example looks like this:  
   
-```  
+```cpp  
 CSections::CSections(CDatabase* pdb)  
    : CRecordset(pdb)  
 {  
@@ -123,12 +118,11 @@ CSections::CSections(CDatabase* pdb)
 > [!NOTE]
 >  If you add any field data members manually, as you might if you bind new columns dynamically, you must increment `m_nFields`. Do so by appending another line of code, such as:  
   
-```  
+```cpp  
 m_nFields += 3;  
 ```  
 
  This is the code for adding three new fields. If you add any parameter data members, you must initialize the [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) data member, which contains the number of parameter data members. Put the `m_nParams` initialization outside the brackets.  
 
-  
 ## See Also  
  [Record Field Exchange (RFX)](../../data/odbc/record-field-exchange-rfx.md)

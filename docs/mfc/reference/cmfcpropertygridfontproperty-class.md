@@ -2,19 +2,14 @@
 title: "CMFCPropertyGridFontProperty Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::CMFCPropertyGridFontProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetColor", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFontProperty::GetLogFont"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertyGridFontProperty [MFC], CMFCPropertyGridFontProperty", "CMFCPropertyGridFontProperty [MFC], GetColor", "CMFCPropertyGridFontProperty [MFC], GetLogFont"]
 ms.assetid: 83693f33-bbd3-4fcb-a9ad-fa79fcf2ca24
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridFontProperty Class
@@ -71,22 +66,22 @@ CMFCPropertyGridFontProperty(
 ```  
   
 ### Parameters  
- [in] `strName`  
+ [in] *strName*  
  The name of the property.  
   
- [in] `lf`  
+ [in] *lf*  
  A logical font structure that specifies the attributes of the font.  
   
- [in] `dwFontDialogFlags`  
- Styles that are applied to the font dialog box that is displayed when you click the property value drop-down button. The default value is the bitwise combination (OR) of CF_EFFECTS and CF_SCREENFONTS. For more information, see the `Flags` parameter of the [CHOOSEFONT Structure](http://msdn.microsoft.com/library/windows/desktop/ms646832).  
+ [in] *dwFontDialogFlags*  
+ Styles that are applied to the font dialog box that is displayed when you click the property value drop-down button. The default value is the bitwise combination (OR) of CF_EFFECTS and CF_SCREENFONTS. For more information, see the *Flags* parameter of the [CHOOSEFONT Structure](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta).  
   
- [in] `lpszDescr`  
- Description of the font property. The default value is `NULL`.  
+ [in] *lpszDescr*  
+ Description of the font property. The default value is NULL.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Application-specific data, such as an integer or a pointer to other data that is associated with the property. The default value is 0.  
   
- [in] `color`  
+ [in] *color*  
  The color of the font. The default value is the default color.  
   
 ### Remarks  
@@ -117,7 +112,7 @@ LPLOGFONT GetLogFont();
 ```  
   
 ### Return Value  
- A pointer to a [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) structure that describes the selected font.  
+ A pointer to a [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) structure that describes the selected font.  
   
 ### Remarks  
   

@@ -2,33 +2,27 @@
 title: "Conditional Operator: ? : | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["?:", "?"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["conditional operators [C++]", "? : operator"]
 ms.assetid: 88643ee8-7100-4f86-880a-705ec22b6271
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Conditional Operator: ? :
 ## Syntax  
   
-```  
-  
+``` 
 expression ? expression : expression  
-```  
+``` 
   
 ## Remarks  
  The conditional operator (**? :**) is a ternary operator (it takes three operands). The conditional operator works as follows:  
   
--   The first operand is implicitly converted to `bool`. It is evaluated and all side effects are completed before continuing.  
+-   The first operand is implicitly converted to **bool**. It is evaluated and all side effects are completed before continuing.  
   
 -   If the first operand evaluates to **true** (1), the second operand is evaluated.  
   
@@ -59,7 +53,7 @@ expression ? expression : expression
   
 ## Example  
   
-```  
+```cpp 
 // expre_Expressions_with_the_Conditional_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate conditional operator  
@@ -71,6 +65,6 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Conditional-Expression Operator](../c-language/conditional-expression-operator.md)

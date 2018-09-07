@@ -2,19 +2,14 @@
 title: "Application Type, MFC Application Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.apptype"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["static libraries, MFC"]
 ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Application Type, MFC Application Wizard

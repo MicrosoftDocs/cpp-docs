@@ -1,117 +1,146 @@
 ---
 title: "Compiler Warnings by compiler version | Microsoft Docs"
 ms.custom: ""
-ms.date: "05/16/2017"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "07/03/2018"
 ms.technology: ["devlang-cpp"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "error-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["warnings, by compiler version", "cl.exe compiler, setting warning options"]
-ms.assetid: 886c5a66-088c-4a4b-908b-aa3ec189e595
-caps.latest.revision: 0
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
-# Compiler Warnings by compiler version  
-  
-The compiler can suppress warnings that were introduced after a version you can specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible.  
-  
+# Compiler Warnings by compiler version
+
+The compiler can suppress warnings that were introduced after a version you specify by using the [/Wv](../../build/reference/compiler-option-warning-level.md) compiler option. This is useful for managing your build process when you introduce a new toolset version, and want to temporarily suppress new warnings. This option does not suppress new error messages. We do not recommend you suppress all new warnings permanently! We recommend you always compile at the highest regular warning level, __/W4__, and remove the __/Wv__ option in your build as soon as possible.
+
 These versions of the compiler introduced new warnings:
 
-| Product | Compiler version number |  
-|-|-|  
-| Visual C++ 2002 | 13.00.9466 |  
-| Visual C++ 2003 | 13.10.3077 |  
-| Visual C++ 2005 | 14.00.50727.762 |  
-| Visual C++ 2008 | 15.00.21022.08 |  
-| Visual C++ 2010 | 16.00.40219.01 |  
-| Visual C++ 2012 | 17.00.51106.1 |  
-| Visual C++ 2013 | 18.00.21005.1 |  
-| Visual C++ 2015 RTM | 19.00.23026.0 |  
-| Visual C++ 2015 Update 1 | 19.00.23506.0 |  
-| Visual C++ 2015 Update 2 | 19.00.23918.0 |  
-| Visual C++ 2015 Update 3 | 19.00.24215.1 |  
-| Visual C++ 2017 RTM | 19.10.24903.0 |  
-| Visual C++ 2017 Update 1 | 19.10.25017.0 |  
-  
-You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option, which suppresses all warnings for versions greater than the specified number. For example, to suppress warnings introduced in Visual C++ 2015 Update 2 and later, you can use __/Wv:19.00.23900__. To suppress all warnings in Visual C++ 2013 and later, you can use __/Wv:18__.  
-  
+| Product | Compiler version number |
+|-|-|
+| Visual C++ 2002 | 13.00.9466 |
+| Visual C++ 2003 | 13.10.3077 |
+| Visual C++ 2005 | 14.00.50727.762 |
+| Visual C++ 2008 | 15.00.21022.08 |
+| Visual C++ 2010 | 16.00.40219.01 |
+| Visual C++ 2012 | 17.00.51106.1 |
+| Visual C++ 2013 | 18.00.21005.1 |
+| Visual C++ 2015 RTM | 19.00.23026.0 |
+| Visual C++ 2015 Update 1 | 19.00.23506.0 |
+| Visual C++ 2015 Update 2 | 19.00.23918.0 |
+| Visual C++ 2015 Update 3 | 19.00.24215.1 |
+| Visual C++ 2017 RTM | 19.10.25017.0 |
+| Visual C++ 2017 version 15.3 | 19.11.25506.0 |
+| Visual C++ 2017 version 15.5 | 19.12.25830.0 |
+| Visual C++ 2017 version 15.6 | 19.13.26128.0 |
+| Visual C++ 2017 version 15.7 | 19.14.26428.0 |
+
+You can specify only the major number, the major and minor numbers, or the major, minor, and build numbers to the __/Wv__ option. The compiler reports all warnings which match versions that begin with the specified number, and suppresses all warnings for versions greater than the specified number. For example, __/Wv:17__ reports all warnings introduced in or before any version of Visual Studio 2012, and suppresses all warnings introduced by any compiler from Visual Studio 2013 (version 18) or later. To suppress warnings introduced in Visual Studio 2015 update 2 and later, you can use __/Wv:19.00.23506__. Use __/Wv:19.11__ to report all warnings introduced in any version of Visual Studio before Visual Studio 2017 version 15.5, but suppresses warnings introduced in Visual Studio 2017 version 15.5 and later.
+
 The following sections list the warnings introduced by each version of Visual C++ that you can suppress by using the __/Wv__ compiler option. The __/Wv__ option can't suppress warnings that are not listed, which predate the specified versions of the compiler.
-  
-## Warnings introduced in Visual C++ 2017 Update 1
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.10.25000__.  
-  
-|||  
-|-|-|  
-C4597|undefined behavior: *description*  
-C4604|'*type*': passing argument by value across native and managed boundary requires valid copy constructor. Otherwise the runtime behavior is undefined  
-C4749|conditionally supported: *description*  
-C4768|__declspec attributes before linkage specification are ignored  
-C4834|discarding return value of function with 'nodiscard' attribute  
+
+## Warnings introduced in Visual C++ 2017 version 15.7 (compiler version 19.14.26428.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.13__.
+
+|||
+|-|-|
+C4642|'*issue*': could not import the constraints for generic parameter '*parameter*'
+C5045|Compiler will insert Spectre mitigation for memory load if /Qspectre switch specified
+
+## Warnings introduced in Visual C++ 2017 version 15.6 (compiler version 19.13.26128.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.12__.
+
+|||
+|-|-|
+C5044|An argument to command-line option *option* points to a path '*path*' that does not exist
+
+## Warnings introduced in Visual C++ 2017 version 15.5 (compiler version 19.12.25830.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.11__.
+
+|||
+|-|-|
+C4843|'*type1*': An exception handler of reference to array or function type is unreachable, use '*type2*' instead
+C4844|'export module *module_name*;' is now the preferred syntax for declaring a module interface
+C5039|'*function*': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception.
+C5040|dynamic exception specifications are valid only in C++14 and earlier; treating as noexcept(false)
+C5041|'*definition*': out-of-line definition for constexpr static data member is not needed and is deprecated in C++17
+C5042|'*declaration*': function declarations at block scope cannot be specified 'inline' in standard C++; remove 'inline' specifier
+C5043|'*specification*': exception specification does not match previous declaration
+
+## Warnings introduced in Visual C++ 2017 version 15.3 (compiler version 19.11.25506.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.10__.
+
+|||
+|-|-|
+C4597|undefined behavior: *description*
+C4604|'*type*': passing argument by value across native and managed boundary requires valid copy constructor. Otherwise the runtime behavior is undefined
+C4749|conditionally supported: *description*
+C4768|__declspec attributes before linkage specification are ignored
+C4834|discarding return value of function with 'nodiscard' attribute
 C4841|non-standard extension used: *extension*
-C4842|the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases  
-C4869|'nodiscard' may only be applied to classes, enumerations, and functions with non-void return type  
-C5033|'*storage-class*' is no longer a supported storage class  
-C5034|use of intrinsic '*intrinsic*' causes function *function* to be compiled as guest code  
-C5035|use of feature '*feature*' causes function *function* to be compiled as guest code  
-C5036|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*'  
-C5037|'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments  
-  
-## Warnings introduced in Visual C++ 2017 RTM  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.10__.  
-  
-|||  
-|-|-|  
+C4842|the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases
+C4869|'nodiscard' may only be applied to classes, enumerations, and functions with non-void return type
+C5033|'*storage-class*' is no longer a supported storage class
+C5034|use of intrinsic '*intrinsic*' causes function *function* to be compiled as guest code
+C5035|use of feature '*feature*' causes function *function* to be compiled as guest code
+C5036|varargs function pointer conversion when compiling with /hybrid:x86arm64 '*type1*' to '*type2*'
+C5037|'*member-function*': an out-of-line definition of a member of a class template cannot have default arguments
+C5038|data member '*member1*' will be initialized after data member '*member2*'
+
+## Warnings introduced in Visual C++ 2017 RTM (compiler version 19.10.25017.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.00__.
+
+|||
+|-|-|
 C4468|'fallthrough': attribute must be followed by a case label or a default label
 C4698|'*feature*' is for evaluation purposes only and is subject to change or removal in future updates.
 C4839|non-standard use of class '*class*' as an argument to a variadic function
 C4840|non-portable use of class '*class*' as an argument to a variadic function
-  
-## Warnings introduced in Visual C++ 2015 Update 3  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.00.24000__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2015 Update 3 (compiler version 19.00.24215.1)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.00.23918__.
+
+|||
+|-|-|
 C4467|usage of ATL attributes is deprecated
 C4596|'*name*': illegal qualified name in member declaration
 C4598|'#include \<*header*\>': header number *number* in the *source* does not match *source* at that position
 C4599|'*argument*': *source* argument number *number* does not match *source*
-  
-## Warnings introduced in Visual C++ 2015 Update 2  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.00.23900__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2015 Update 2 (compiler version 19.00.23918.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.00.23506__.
+
+|||
+|-|-|
 C4466|Could not perform coroutine heap elision
 C4595|'*class*': non-member operator new or delete functions may not be declared inline
 C4828|The file contains a character starting at offset 0x*value* that is illegal in the current source character set (codepage *number*).
 C4868|compiler may not enforce left-to-right evaluation order in braced initializer list
-  
-## Warnings introduced in Visual C++ 2015 Update 1  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.00.23500__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2015 Update 1 (compiler version 19.00.23506.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19.00.23026__.
+
+|||
+|-|-|
 C4426|optimization flags changed after including header, may be due to #pragma optimize()
 C4654|Code placed before include of precompiled header line will be ignored. Add code to precompiled header.
 C5031|#pragma warning(pop): likely mismatch, popping warning state pushed in different file
 C5032|detected #pragma warning(push) with no corresponding #pragma warning(pop)
-  
-## Warnings introduced in Visual C++ 2015 RTM  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:19__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2015 RTM (compiler version 19.00.23026.0)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:18__.
+
+|||
+|-|-|
 C4427|'*error*': overflow in constant division, undefined behavior
 C4438|'*type*': cannot be called safely in /await:clrcompat mode. If '*type*' calls into the CLR it may result in CLR head corruption
 C4455|'operator *name*': literal suffix identifiers that do not start with an underscore are reserved
@@ -121,12 +150,12 @@ C4458|declaration of '*name*' hides class member
 C4459|declaration of '*name*' hides global declaration
 C4462|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.
 C4463|overflow; assigning *value* to bit-field that can only hold values from *value* to *value*
-C4473|'*description*' : not enough arguments passed for format string
-C4474|'*description*' : too many arguments passed for format string
-C4475|'*description*' : length modifier '*modifier*' cannot be used with type field character '*character*' in format specifier
-C4476|'*description*' : unknown type field character '*character*' in format specifier
-C4477|'*description*' : format string '*string*' requires an argument of type '*type*', but variadic argument *number* has type '*type*'
-C4478|'*description*' : positional and non-positional placeholders cannot be mixed in the same format string
+C4473|'*function*' : not enough arguments passed for format string
+C4474|'*function*' : too many arguments passed for format string
+C4475|'*function*' : length modifier '*modifier*' cannot be used with type field character '*character*' in format specifier
+C4476|'*function*' : unknown type field character '*character*' in format specifier
+C4477|'*function*' : format string '*string*' requires an argument of type '*type*', but variadic argument *number* has type '*type*'
+C4478|'*function*' : positional and non-positional placeholders cannot be mixed in the same format string
 C4494|'*type*' : Ignoring __declspec(allocator) because the function return type is not a pointer or reference
 C4495|nonstandard extension '__super' used: replace with explicit base class name
 C4496|nonstandard extension 'for each' used: replace with ranged-for statement
@@ -135,15 +164,15 @@ C4498|nonstandard extension used: '*extension*'
 C4499|'*specialization*': an explicit specialization cannot have a storage class (ignored)
 C4576|a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax
 C4577|'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
-C4578|'abs': conversion from '*type*' to '*type*', possible loss of data (Did you mean to call '*name*' or to #include <cmath>?)
+C4578|'abs': conversion from '*type*' to '*type*', possible loss of data (Did you mean to call '*name*' or to #include \<cmath>?)
 C4582|'*type*': constructor is not implicitly called
 C4583|'*type*': destructor is not implicitly called
 C4587|'*type*': behavior change: constructor is no longer implicitly called
 C4588|'*type*': behavior change: destructor is no longer implicitly called
 C4589|Constructor of abstract class '*type*' ignores initializer for virtual base class '*type*'
-C4591|'constexpr' call-depth limit of *number* exceeded (/constexpr:depth<NUMBER>)
+C4591|'constexpr' call-depth limit of *number* exceeded (/constexpr:depth\<NUMBER>)
 C4592|'*type*': symbol will be dynamically initialized (implementation limitation)
-C4593|'*type*': 'constexpr' call evaluation step limit of *value* exceeded; use /constexpr:steps<NUMBER> to increase the limit
+C4593|'*type*': 'constexpr' call evaluation step limit of *value* exceeded; use /constexpr:steps\<NUMBER> to increase the limit
 C4647|behavior change: __is_pod(*type*) has different value in previous versions
 C4648|standard attribute 'carries_dependency' is ignored
 C4649|attributes are ignored in this context
@@ -164,13 +193,13 @@ C5027|'*type*': move assignment operator was implicitly defined as deleted
 C5028|'*name*': Alignment specified in prior declaration (*number*) not specified in definition
 C5029|nonstandard extension used: alignment attributes in C++ apply to variables, data members and tag types only
 C5030|attribute '*attribute*' is not recognized
-  
-## Warnings introduced in Visual C++ 2013  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:18__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2013 (compiler version 18.00.21005.1)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:17__.
+
+|||
+|-|-|
 C4301|'*type*': overriding virtual function only differs from '*declaration*' by const/volatile qualifier
 C4316|'*type*': object allocated on the heap may not be aligned *number*
 C4380|'*type*': A default constructor cannot be deprecated
@@ -193,13 +222,13 @@ C4981|Warbird: function '*declaration*' marked as __forceinline not inlined beca
 C4990|Warbird: *message*
 C4991|Warbird: function '*declaration*' marked as __forceinline not inlined because protection level of inlinee is greater than the parent
 C4992|Warbird: function '*declaration*' marked as __forceinline not inlined because it contains inline assembly which cannot be protected
-  
-## Warnings introduced in Visual C++ 2012  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:17__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2012 (compiler version 17.00.51106.1)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:16__.
+
+|||
+|-|-|
 C4330|attribute '*attribute*' for section '*section*' ignored
 C4415|duplicate __declspec(code_seg('*name*'))
 C4416|__declspec(code_seg(...)) contains empty string: ignored
@@ -236,13 +265,13 @@ C4881|the constructor and/or the destructor will not be invoked for tile_static 
 C4966|'*description*' has __code_seg annotation with unsupported segment name, annotation ignored
 C4988|'*type*': variable declared outside class/function scope
 C4989|'*description*': type has conflicting definitions.
-  
-## Warnings introduced in Visual C++ 2010  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:16__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2010 (compiler version 16.00.40219.01)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:15__.
+
+|||
+|-|-|
 C4352|'*name*': intrinsic function already defined
 C4573|the usage of '*type*' requires the compiler to capture 'this' but the current default capture mode does not allow it
 C4574|'*name*' is defined to be '0': did you mean to use '#if *name*'?
@@ -252,13 +281,13 @@ C4752|found Intel(R) Advanced Vector Extensions; consider using the appropriate 
 C4837|trigraph detected: '??*character*' replaced by '*character*'
 C4986|'*declaration*': exception specification does not match previous declaration
 C4987|nonstandard extension used: 'throw (...)'
-  
-## Warnings introduced in Visual C++ 2008  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:15__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2008 (compiler version 15.00.21022.08)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:14__.
+
+|||
+|-|-|
 C4396|'*type*': the inline specifier cannot be used when a friend declaration refers to a specialization of a function template
 C4413|'*declaration*': reference member is initialized to a temporary that doesn't persist after the constructor exits
 C4491|'*description*': has an illegal IDL version format
@@ -267,13 +296,13 @@ C4627|'*description*': skipped when looking for precompiled header use
 C4750|'*description*': function with _alloca() inlined into a loop
 C4910|'*type*': '__declspec(dllexport)' and 'extern' are incompatible on an explicit instantiation
 C4985|'*declaration*': attributes not present on previous declaration.
-  
-## Warnings introduced in Visual C++ 2005  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:14__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2005 (compiler version 14.00.50727.762)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:13__.
+
+|||
+|-|-|
 C4000|UNKNOWN WARNING    Please choose the Technical Support command on the Visual C++     Help menu, or open the Technical Support help file for more information
 C4272|'*type*': is marked __declspec(dllimport); must specify native calling convention when importing a function.
 C4333|'*expression*': right shift by too large amount, data loss
@@ -348,15 +377,15 @@ C4633|XML document comment*description*: error: *description*
 C4634|XML document comment*description*: cannot be applied: *description*
 C4635|XML document comment*description*: badly-formed XML: *description*
 C4636|XML document comment*description*: tag requires non-empty '*description*' attribute.
-C4637|XML document comment*description*: <include> tag discarded. *description*
+C4637|XML document comment*description*: \<include> tag discarded. *description*
 C4638|XML document comment*description*: reference to unknown symbol '*description*'.
 C4639|MSXML error, XML document comments will not be processed. *description*
-C4641|XML document comment has an ambiguous cross reference: 
+C4641|XML document comment has an ambiguous cross reference:
 C4678|base class '*declaration*' is less accessible than '*name*'
 C4679|'*description*': could not import member
 C4687|'*type*': a sealed abstract class cannot implement an interface '*type*'
 C4688|'*name*': constraint list contains assembly private type '*declaration*'
-C4690|[ emitidl( pop ) ]: more pops than pushes
+C4690|\[ emitidl( pop ) ]: more pops than pushes
 C4691|'*type*': type referenced was expected in unreferenced *module* '*description*', type defined in current translation unit used instead
 C4692|'*name*': signature of non-private member contains assembly private native type '*declaration*'
 C4693|'*type*': a sealed abstract class cannot have any instance members '*name*'
@@ -410,13 +439,13 @@ C4965|implicit box of integer 0; use nullptr or explicit cast
 C4970|delegate constructor: target object ignored since '*declaration*' is static
 C4971|Argument order: \<target object>, \<target function> for delegate constructor is deprecated, use \<target function>, \<target object>
 C4972|Directly modifying or treating the result of an unbox operation as an lvalue is unverifiable
-  
-## Warnings introduced in Visual C++ 2003  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:13.10__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2003 (compiler version 13.10.3077)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:13.00.9466__.
+
+|||
+|-|-|
 C4343|#pragma optimize(*description*,off) overrides /Og option
 C4344|behavior change: use of explicit template arguments results in call to '*declaration*'
 C4346|'*type*': dependent name is not a type
@@ -446,13 +475,13 @@ C4951|'*description*' has been edited since profile data was collected, function
 C4952|'*description*': no profile data found in program database '*description*'
 C4953|Inlinee '*description*' has been edited since profile data was collected, profile data not used
 C4954|'*description*': not profiled (contains __int64 switch expression)
-  
-## Warnings introduced in Visual C++ 2002  
-  
-These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:13__.  
-  
-|||  
-|-|-|  
+
+## Warnings introduced in Visual C++ 2002 (compiler version 13.00.9466)
+
+These warnings and all warnings in later versions are suppressed by using the compiler option __/Wv:12__.
+
+|||
+|-|-|
 C4096|'*type*': interface is not a COM interface; will not be emitted to IDL
 C4097|expected pragma parameter to be 'restore' or 'off'
 C4165|'HRESULT' is being converted to 'bool'; are you sure this is what you want?
@@ -500,7 +529,7 @@ C4338|#pragma *description*: standard section '*section*' is used
 C4339|'*type*': use of undefined type detected in CLR/WinRT meta-data - use of this type may lead to a runtime exception
 C4353|nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
 C4370|'*declaration*': layout of class has changed from a previous version of the compiler due to better packing
-C4371|'*declaration*': layout of class may have changed from a previous version of the compiler due to better packing of member '*type*'
+C4371|'*declaration*': layout of class may have changed from a previous version of the compiler due to better packing of member '*member*'
 C4373|'*type*': virtual function overrides '*declaration*', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
 C4387|'*description*': was considered
 C4389|'*expression*': signed/unsigned mismatch
@@ -595,8 +624,9 @@ C4995|'*name*': name was marked as #pragma deprecated
 C4996|'*issue*': *description*
 C4997|'*type*': coclass does not implement a COM interface or pseudo-interface
 C4998|EXPECTATION FAILED: *description*(*number*)
-  
-## See Also  
-[/Wv compiler option](../../build/reference/compiler-option-warning-level.md)  
-[Compiler Warnings that are off by default](../../preprocessor/compiler-warnings-that-are-off-by-default.md)  
-[warning](../../preprocessor/warning.md)  
+
+## See also
+
+- [/Wv compiler option](../../build/reference/compiler-option-warning-level.md)
+- [Compiler Warnings that are off by default](../../preprocessor/compiler-warnings-that-are-off-by-default.md)
+- [warning](../../preprocessor/warning.md)

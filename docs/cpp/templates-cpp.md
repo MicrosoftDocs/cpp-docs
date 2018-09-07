@@ -2,19 +2,14 @@
 title: "Templates (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["template_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["templates, C++", "templates [C++]"]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Templates (C++)
@@ -31,27 +26,26 @@ T minimum(const T& lhs, const T& rhs)
 }  
 ```  
   
- The above code describes a template for a generic function with a single type parameter `T`, whose return value and call parameters (lhs and rhs) are all of this type. You can name a type parameter anything you like, but by convention single upper case letters are most commonly used. `T` is a template parameter; the `typename` keyword says that this parameter is a placeholder for a type. When the function is called, the compiler will replace every instance of `T` with the concrete type argument that is either specified by the user or deduced by the compiler. The process in which the compiler generates a class or function from a template is referred to as  *template instantiation*;   `minimum<int>` is an instantiation of the template `minimum<T>`.  
+ The above code describes a template for a generic function with a single type parameter *T*, whose return value and call parameters (lhs and rhs) are all of this type. You can name a type parameter anything you like, but by convention single upper case letters are most commonly used. *T* is a template parameter; the **typename** keyword says that this parameter is a placeholder for a type. When the function is called, the compiler will replace every instance of `T` with the concrete type argument that is either specified by the user or deduced by the compiler. The process in which the compiler generates a class or function from a template is referred to as  *template instantiation*; `minimum<int>` is an instantiation of the template `minimum<T>`.  
   
  Elsewhere, a user can declare an instance of the template  that is specialized for int. Assume that get_a() and get_b() are functions that return an int:  
   
-```  
+```cpp 
 int a = get_a();  
 int b = get_b();  
 int i = minimum<int>(a, b);  
 ```  
   
- However, because this is a function template and the compiler can deduce the type of `T` from the arguments `a` and `b`, you can call it just like an ordinary function:  
+ However, because this is a function template and the compiler can deduce the type of `T` from the arguments *a* and *b*, you can call it just like an ordinary function:  
   
 ```cpp  
 int i = minimum(a, b);  
 ```  
   
- When the compiler encounters that last statement, it generates a new function in which every occurrence of *T* in the template is replaced with `int`:  
+ When the compiler encounters that last statement, it generates a new function in which every occurrence of *T* in the template is replaced with **int**:  
   
-```  
-  
-      int minimum(const int& lhs, const int& rhs)  
+```cpp   
+int minimum(const int& lhs, const int& rhs)  
 {  
     return lhs < rhs ? lhs : rhs;  
 }  
@@ -60,18 +54,17 @@ int i = minimum(a, b);
  The rules for how the compiler performs type deduction in function templates are based on the rules for ordinary functions. For more information, see [Overload Resolution of Function Template Calls](../cpp/overload-resolution-of-function-template-calls.md).  
   
 ## <a id="type_parameters"></a> Type parameters  
- In the `minimum` template above, note that the type parameter `T` is not qualified in any way until it is used in the function call parameters, where the const and reference qualifiers are added.  
+ In the `minimum` template above, note that the type parameter *T* is not qualified in any way until it is used in the function call parameters, where the const and reference qualifiers are added.  
   
  There is no practical limit to the number of type parameters. Separate multiple parameters by commas:  
   
 ```cpp  
 template <typename T, typename U, typename V> class Foo{};  
-  
 ```  
   
- The keyword `class` is equivalent to `typename` in this context. You can express the previous example as:  
+ The keyword **class** is equivalent to **typename** in this context. You can express the previous example as:  
   
-```  
+```cpp 
 template <class T, class U, class V> class Foo{};   
 ```  
   
@@ -101,14 +94,13 @@ int main()
     MyClass mc2 {2, L"goodbye"};  
     auto result = minimum(mc1, mc2); // Error! C2678  
 }  
-  
 ```  
   
  A compiler error will be generated because MyClass does not provide an overload for the < operator.  
   
  There is no inherent requirement that the type arguments for any particular template all belong to the same object hierarchy, although you can define a template that enforces such a restriction. You can combine object-oriented techniques with templates; for example, you can store a Derived* in a vector\<Base\*>.    Note that the arguments must be pointers  
   
-```  
+```cpp 
 vector<MyClass*> vec;  
    MyDerived d(3, L"back again", time(0));  
    vec.push_back(&d);  
@@ -123,7 +115,7 @@ vector<MyClass*> vec;
 ## Non-type parameters  
  Unlike generic types in other languages such as C# and Java, C++ templates support non-type parameters, also called value parameters. For example, you can provide a constant integral value to specify the length of an array, as with this example that is similar to the std::array class in the Standard Library:  
   
-```  
+```cpp 
 template<typename T, size_t L>  
 class MyArray  
 {  
@@ -131,7 +123,6 @@ class MyArray
 public:  
     MyArray() { ... }  
 };  
-  
 ```  
   
  Note the syntax in the template declaration. The size_t value is passed in as a template argument at compile time and must be constant or a constexpr expression. You use it like this:  
@@ -143,7 +134,7 @@ MyArray<MyClass*, 10> arr;
  Other kinds of values including pointers and references can be passed in as non-type parameters. For example, you can pass in a pointer to a function or function object to customize some operation inside the template code.  
   
 ## <a id="template_parameters"></a> Templates as template parameters  
- A template can be a template parameter. In this example, MyClass2 has two template parameters: a typename parameter `T` and a template parameter `Arr`:  
+ A template can be a template parameter. In this example, MyClass2 has two template parameters: a typename parameter *T* and a template parameter *Arr*:  
   
 ```cpp  
 template<typename T, template<typename U, int I> class Arr>  
@@ -155,7 +146,7 @@ class MyClass2
 };  
 ```  
   
- Because the `Arr` parameter itself has no body, its parameter names are not needed. In fact, it is an error to refer to `Arr`'s typename or class parameter names from within the body of `MyClass2`. For this reason,  `Arr`'s type parameter names can be omitted, as shown in this example:  
+ Because the *Arr* parameter itself has no body, its parameter names are not needed. In fact, it is an error to refer to *Arr*'s typename or class parameter names from within the body of `MyClass2`. For this reason,  *Arr*'s type parameter names can be omitted, as shown in this example:  
   
 ```cpp  
 template<typename T, template<typename, int> class Arr>  
@@ -200,7 +191,6 @@ int main()
 {  
     Bar<> bar; // use all default type arguments  
 }  
-  
 ```  
   
 ## Template specialization  
@@ -216,9 +206,8 @@ class MyMap<string, V> {/*...*/};
 ...  
 MyMap<int, MyClass> classes; // uses original template  
 MyMap<string, MyClass> classes2; // uses the partial specialization  
-  
 ```  
   
- A template can have any number of specializations as long as each specialized type parameter is unique.   Only class templates may be partially specialized. All complete and partial specializations of a template must be declared in the same namespace as the original template.  
+ A template can have any number of specializations as long as each specialized type parameter is unique. Only class templates may be partially specialized. All complete and partial specializations of a template must be declared in the same namespace as the original template.  
   
  For more information, see [Template Specialization](../cpp/template-specialization-cpp.md).

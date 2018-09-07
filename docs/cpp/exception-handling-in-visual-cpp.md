@@ -2,18 +2,13 @@
 title: "Exception Handling in Visual C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["try-catch keyword [C++], exception handling"]
 ms.assetid: a6aa08de-669d-4ce8-9ec3-ec20d1354fcf
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exception Handling in Visual C++
@@ -41,5 +36,5 @@ An exception is an error condition, possibly outside the program's control, that
   
  For information about exception handling on x64 processors, see [Exception Handling (x64)](../build/exception-handling-x64.md).  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

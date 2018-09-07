@@ -2,19 +2,14 @@
 title: "IVirtualProcessorRoot Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["IVirtualProcessorRoot", "CONCRTRM/concurrency::IVirtualProcessorRoot", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Activate", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::Deactivate", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::EnsureAllTasksVisible", "CONCRTRM/concurrency::IVirtualProcessorRoot::IVirtualProcessorRoot::GetId"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["IVirtualProcessorRoot structure"]
 ms.assetid: 5ef371b8-9e4f-4fef-bb0d-49099693dd2b
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # IVirtualProcessorRoot Structure

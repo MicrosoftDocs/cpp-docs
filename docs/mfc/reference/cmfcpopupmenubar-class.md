@@ -2,19 +2,14 @@
 title: "CMFCPopupMenuBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCPopupMenuBar", "AFXPOPUPMENUBAR/CMFCPopupMenuBar", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::AdjustSizeImmediate", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::BuildOrigItems", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::CloseDelayedSubMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::ExportToMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::FindDestintationToolBar", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetCurrentMenuImageSize", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetDefaultMenuId", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetLastCommandIndex", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::GetOffset", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::ImportFromMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsDropDownListMode", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsPaletteMode", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsRibbonPanel", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::IsRibbonPanelInRegularMode", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::LoadFromHash", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::RestoreDelayedSubMenu", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::SetButtonStyle", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::SetOffset", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::StartPopupMenuTimer", "AFXPOPUPMENUBAR/CMFCPopupMenuBar::m_bDisableSideBarInXPMode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPopupMenuBar [MFC], AdjustSizeImmediate", "CMFCPopupMenuBar [MFC], BuildOrigItems", "CMFCPopupMenuBar [MFC], CloseDelayedSubMenu", "CMFCPopupMenuBar [MFC], ExportToMenu", "CMFCPopupMenuBar [MFC], FindDestintationToolBar", "CMFCPopupMenuBar [MFC], GetCurrentMenuImageSize", "CMFCPopupMenuBar [MFC], GetDefaultMenuId", "CMFCPopupMenuBar [MFC], GetLastCommandIndex", "CMFCPopupMenuBar [MFC], GetOffset", "CMFCPopupMenuBar [MFC], ImportFromMenu", "CMFCPopupMenuBar [MFC], IsDropDownListMode", "CMFCPopupMenuBar [MFC], IsPaletteMode", "CMFCPopupMenuBar [MFC], IsRibbonPanel", "CMFCPopupMenuBar [MFC], IsRibbonPanelInRegularMode", "CMFCPopupMenuBar [MFC], LoadFromHash", "CMFCPopupMenuBar [MFC], RestoreDelayedSubMenu", "CMFCPopupMenuBar [MFC], SetButtonStyle", "CMFCPopupMenuBar [MFC], SetOffset", "CMFCPopupMenuBar [MFC], StartPopupMenuTimer", "CMFCPopupMenuBar [MFC], m_bDisableSideBarInXPMode"]
 ms.assetid: 4c93c459-7f70-4240-8c63-280bb811e374
-caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPopupMenuBar Class
@@ -44,8 +39,8 @@ class CMFCPopupMenuBar : public CMFCToolBar
 |[CMFCPopupMenuBar::ImportFromMenu](#importfrommenu)|Imports popup menu buttons from a specified menu.|  
 |[CMFCPopupMenuBar::IsDropDownListMode](#isdropdownlistmode)|Indicates whether the popup menu bar is in drop-down-list mode.|  
 |[CMFCPopupMenuBar::IsPaletteMode](#ispalettemode)|Indicates whether the popup menu bar is in palette mode.|  
-|[CMFCPopupMenuBar::IsRibbonPanel](#isribbonpanel)|Indicates whether this is a ribbon panel ( `FALSE` by default).|  
-|[CMFCPopupMenuBar::IsRibbonPanelInRegularMode](#isribbonpanelinregularmode)|Indicates whether this is a ribbon panel in regular mode ( `FALSE` by default).|  
+|[CMFCPopupMenuBar::IsRibbonPanel](#isribbonpanel)|Indicates whether this is a ribbon panel (FALSE by default).|  
+|[CMFCPopupMenuBar::IsRibbonPanelInRegularMode](#isribbonpanelinregularmode)|Indicates whether this is a ribbon panel in regular mode (FALSE by default).|  
 |[CMFCPopupMenuBar::LoadFromHash](#loadfromhash)|Loads an archived menu.|  
 |[CMFCPopupMenuBar::RestoreDelayedSubMenu](#restoredelayedsubmenu)|Restores a delayed menu button for closing the popup menu bar.|  
 |[CMFCPopupMenuBar::SetButtonStyle](#setbuttonstyle)|Sets the style of the toolbar button at the given index. (Overrides [CMFCToolBar::SetButtonStyle](../../mfc/reference/cmfctoolbar-class.md#setbuttonstyle).)|  
@@ -94,8 +89,8 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout);
 ```  
   
 ### Parameters  
- [in] `bRecalcLayout`  
- `TRUE` to automatically recalculate the layout of the popup menu bar pane; otherwise, `FALSE`.  
+ [in] *bRecalcLayout*  
+ TRUE to automatically recalculate the layout of the popup menu bar pane; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -107,11 +102,11 @@ BOOL BuildOrigItems(UINT uiMenuResID);
 ```  
   
 ### Parameters  
- [in] `uiMenuResID`  
+ [in] *uiMenuResID*  
  Specifies the menu ID of the menu resource to load.  
   
 ### Return Value  
- Returns `TRUE` if successful or `FALSE` if not.  
+ Returns TRUE if successful or FALSE if not.  
   
 ### Remarks  
   
@@ -144,11 +139,11 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  A point on the screen.  
   
 ### Return Value  
- Returns a handle to the toolbar where the point lies, if therei is one, or `NULL` if not.  
+ Returns a handle to the toolbar where the point lies, if there is one, or NULL if not.  
   
 ### Remarks  
   
@@ -211,14 +206,14 @@ virtual BOOL ImportFromMenu(
 ```  
   
 ### Parameters  
- [in] `hMenu`  
+ [in] *hMenu*  
  The menu from which to import the popup menu buttons.  
   
- [in] `bShowAllCommands`  
- `TRUE` if all commands on the menu are to be imported, or `FALSE` if rarely used ones may be hidden.  
+ [in] *bShowAllCommands*  
+ TRUE if all commands on the menu are to be imported, or FALSE if rarely used ones may be hidden.  
   
 ### Return Value  
- Returns `TRUE` if the menu buttons were successfully imported from the menu, or `FALSE` if not.  
+ Returns TRUE if the menu buttons were successfully imported from the menu, or FALSE if not.  
   
 ### Remarks  
   
@@ -230,7 +225,7 @@ BOOL IsDropDownListMode() const;
 ```  
   
 ### Return Value  
- Returns `TRUE` if the popup menu bar is in drop-down-list mode, or `FALSE` if not.  
+ Returns TRUE if the popup menu bar is in drop-down-list mode, or FALSE if not.  
   
 ### Remarks  
   
@@ -242,32 +237,32 @@ BOOL IsPaletteMode() const;
 ```  
   
 ### Return Value  
- Returns `TRUE` if palette mode is enabled, or `FALSE` if not.  
+ Returns TRUE if palette mode is enabled, or FALSE if not.  
   
 ### Remarks  
  When the menu bar is set to palette mode, menu items appear in multiple columns and a limited number of rows.  
   
 ##  <a name="isribbonpanel"></a>  CMFCPopupMenuBar::IsRibbonPanel  
- Indicates whether this is a ribbon panel ( `FALSE` by default).  
+ Indicates whether this is a ribbon panel (FALSE by default).  
   
 ```  
 virtual BOOL IsRibbonPanel() const;  
 ```  
   
 ### Return Value  
- Returns `FALSE` by default, indicating that this is not a ribbon panel.  
+ Returns FALSE by default, indicating that this is not a ribbon panel.  
   
 ### Remarks  
   
 ##  <a name="isribbonpanelinregularmode"></a>  CMFCPopupMenuBar::IsRibbonPanelInRegularMode  
- Indicates whether this is a ribbon panel in regular mode ( `FALSE` by default).  
+ Indicates whether this is a ribbon panel in regular mode (FALSE by default).  
   
 ```  
 virtual BOOL IsRibbonPanelInRegularMode() const;  
 ```  
   
 ### Return Value  
- Returns `FALSE` by default, indicating that this is not a ribbon panel in regular mode.  
+ Returns FALSE by default, indicating that this is not a ribbon panel in regular mode.  
   
 ### Remarks  
   
@@ -279,11 +274,11 @@ BOOL LoadFromHash(HMENU hMenu);
 ```  
   
 ### Parameters  
- [in] `hMenu`  
+ [in] *hMenu*  
  A handle to the archived menu to load.  
   
 ### Return Value  
- Returns `TRUE` if the menu is loaded successfully, or `FALSE` if not.  
+ Returns TRUE if the menu is loaded successfully, or FALSE if not.  
   
 ### Remarks  
   
@@ -295,9 +290,9 @@ BOOL m_bDisableSideBarInXPMode;
 ```  
   
 ### Remarks  
- If this member variable is set to `FALSE` and your application has a Windows XP appearance, the framework draws a gray sidebar in your application.  
+ If this member variable is set to FALSE and your application has a Windows XP appearance, the framework draws a gray sidebar in your application.  
   
- The default value is `FALSE`.  
+ The default value is FALSE.  
   
 ##  <a name="restoredelayedsubmenu"></a>  CMFCPopupMenuBar::RestoreDelayedSubMenu  
  Restores a delayed menu button for closing the popup menu bar.  
@@ -318,10 +313,10 @@ virtual void SetButtonStyle(
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  The zero-based index of the toolbar button whose style is to be set.  
   
- [in] `nStyle`  
+ [in] *nStyle*  
  The style of the button. See [ToolBar Control Styles](../../mfc/reference/toolbar-control-styles.md) for the list of available toolbar button styles.  
   
 ### Remarks  
@@ -334,7 +329,7 @@ void SetOffset(int iOffset);
 ```  
   
 ### Parameters  
- [in] `iOffset`  
+ [in] *iOffset*  
  The number of rows that the popup menu bar should be offset.  
   
 ### Remarks  
@@ -349,10 +344,10 @@ void StartPopupMenuTimer(
 ```  
   
 ### Parameters  
- [in] `pMenuButton`  
+ [in] *pMenuButton*  
  Pointer to the menu button for which to set the delay timer.  
   
- [in] `nDelayFactor`  
+ [in] *nDelayFactor*  
  A delay factor, equal to at least one, to multiply by the standard menu delay time (generally between a half second and five seconds).  
   
 ### Remarks  

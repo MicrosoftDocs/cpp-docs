@@ -2,19 +2,14 @@
 title: "CMFCImageEditorDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog", "AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog::CMFCImageEditorDialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCImageEditorDialog [MFC], CMFCImageEditorDialog"]
 ms.assetid: 6a7d08f3-1ec2-4062-9b79-a0c2776b58d1
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCImageEditorDialog Class
@@ -78,14 +73,14 @@ CMFCImageEditorDialog(
 ```  
   
 ### Parameters  
- `pBitmap`  
+ *pBitmap*  
  Pointer to an image.  
   
- `pParent`  
+ *pParent*  
  Pointer to the parent window of the current image editor dialog box.  
   
- `nBitsPixel`  
- The number of bits used to represent the color of a single pixel, which is also referred to as color depth.  If the `nBitsPixel` parameter is -1, the color depth is derived from the image specified by the `pBitmap` parameter. The default value is -1.  
+ *nBitsPixel*  
+ The number of bits used to represent the color of a single pixel, which is also referred to as color depth.  If the *nBitsPixel* parameter is -1, the color depth is derived from the image specified by the *pBitmap* parameter. The default value is -1.  
   
 ### Return Value  
  To modify an image, pass an image pointer to the `CMFCImageEditorDialog` constructor. Then call the `DoModal` method to open a modal dialog box. When the `DoModal` method returns, the bitmap contains the new image.  

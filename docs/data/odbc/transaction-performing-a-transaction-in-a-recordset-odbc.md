@@ -2,18 +2,13 @@
 title: "Transaction: Performing a Transaction in a Recordset (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["transactions, updating recordsets"]
 ms.assetid: cf1d6b48-7fb8-4903-84f7-a1822054534d
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction: Performing a Transaction in a Recordset (ODBC)
@@ -24,13 +19,13 @@ This topic explains how to perform a transaction in a recordset.
   
 #### To perform a transaction in a recordset  
   
-1.  Call the `CDatabase` object's **BeginTrans** member function.  
+1.  Call the `CDatabase` object's `BeginTrans` member function.  
   
-2.  If you have not implemented bulk row fetching, call the **AddNew/Update**, **Edit/Update**, and **Delete** member functions of one or more recordset objects of the same database as many times as needed. For more information, see [Recordset: Adding, Updating, and Deleting Records (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md). If you have implemented bulk row fetching, you must write your own functions to update the data source.  
+2.  If you have not implemented bulk row fetching, call the `AddNew/Update`, `Edit/Update`, and `Delete` member functions of one or more recordset objects of the same database as many times as needed. For more information, see [Recordset: Adding, Updating, and Deleting Records (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md). If you have implemented bulk row fetching, you must write your own functions to update the data source.  
   
-3.  Finally, call the `CDatabase` object's **CommitTrans** member function. If an error occurs in one of the updates or you decide to cancel the changes, call its **Rollback** member function.  
+3.  Finally, call the `CDatabase` object's `CommitTrans` member function. If an error occurs in one of the updates or you decide to cancel the changes, call its `Rollback` member function.  
   
- The following example uses two recordsets to delete a student's enrollment from a school registration database, removing the student from all classes in which the student is enrolled. Because the **Delete** calls in both recordsets must succeed, a transaction is required. The example assumes the existence of `m_dbStudentReg`, a member variable of type `CDatabase` already connected to the data source, and the recordset classes `CEnrollmentSet` and `CStudentSet`. The `strStudentID` variable contains a value obtained from the user.  
+ The following example uses two recordsets to delete a student's enrollment from a school registration database, removing the student from all classes in which the student is enrolled. Because the `Delete` calls in both recordsets must succeed, a transaction is required. The example assumes the existence of `m_dbStudentReg`, a member variable of type `CDatabase` already connected to the data source, and the recordset classes `CEnrollmentSet` and `CStudentSet`. The `strStudentID` variable contains a value obtained from the user.  
   
 ```  
 BOOL CEnrollDoc::RemoveStudent( CString strStudentID )  
@@ -83,7 +78,7 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
 ```  
   
 > [!NOTE]
->  Calling **BeginTrans** again without calling **CommitTrans** or **Rollback** is an error.  
+>  Calling `BeginTrans` again without calling `CommitTrans` or `Rollback` is an error.  
   
 ## See Also  
  [Transaction (ODBC)](../../data/odbc/transaction-odbc.md)   

@@ -2,18 +2,13 @@
 title: "-guard (Enable Control Flow Guard) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/guard", "VC.Project.VCCLCompilerTool.ControlFlowGuard"]
 dev_langs: ["C++"]
 ms.assetid: be495323-f59f-4cf3-a6b6-8ee69e6a19dd
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /guard (Enable Control Flow Guard)
@@ -26,7 +21,9 @@ Enable compiler generation of Control Flow Guard security checks.
 ```  
   
 ## Remarks  
- The **/guard:cf** option causes the compiler to analyze control flow for indirect call targets at compile time, and then to insert code to verify the targets at runtime. By default, **/guard:cf** is off and must be explicitly enabled. To explicitly disable this option, use **/guard:cf-**.  
+ The **/guard:cf** option causes the compiler to analyze control flow for indirect call targets at compile time, and then to insert code to verify the targets at runtime. By default, **/guard:cf** is off and must be explicitly enabled. To explicitly disable this option, use **/guard:cf-**. 
+
+**Visual Studio 2017 and later**: This option adds guards for **switch** statements that generate jump tables.
   
  When the **/guard:cf** Control Flow Guard (CFG) option is specified, the compiler and linker insert extra runtime security checks to detect attempts to compromise your code. During compiling and linking, all indirect calls in your code are analyzed to find every location that the code can reach when it runs correctly. This information is stored in extra structures in the headers of your binaries. The compiler also injects a check before every indirect call in your code that ensures the target is one of the verified locations. If the check fails at runtime on a CFG-aware operating system, the operating system closes the program.  
   

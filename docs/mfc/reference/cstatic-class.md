@@ -2,19 +2,14 @@
 title: "CStatic Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CStatic", "AFXWIN/CStatic", "AFXWIN/CStatic::CStatic", "AFXWIN/CStatic::Create", "AFXWIN/CStatic::DrawItem", "AFXWIN/CStatic::GetBitmap", "AFXWIN/CStatic::GetCursor", "AFXWIN/CStatic::GetEnhMetaFile", "AFXWIN/CStatic::GetIcon", "AFXWIN/CStatic::SetBitmap", "AFXWIN/CStatic::SetCursor", "AFXWIN/CStatic::SetEnhMetaFile", "AFXWIN/CStatic::SetIcon"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CStatic [MFC], CStatic", "CStatic [MFC], Create", "CStatic [MFC], DrawItem", "CStatic [MFC], GetBitmap", "CStatic [MFC], GetCursor", "CStatic [MFC], GetEnhMetaFile", "CStatic [MFC], GetIcon", "CStatic [MFC], SetBitmap", "CStatic [MFC], SetCursor", "CStatic [MFC], SetEnhMetaFile", "CStatic [MFC], SetIcon"]
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CStatic Class
@@ -50,7 +45,7 @@ class CStatic : public CWnd
 |[CStatic::SetIcon](#seticon)|Specifies an icon to be displayed in the static control.|  
   
 ## Remarks  
- A static control displays a text string, box, rectangle, icon, cursor, bitmap, or enhanced metafile. It can be used to label, box, or separate other controls. A static control normally takes no input and provides no output; however, it can notify its parent of mouse clicks if it's created with **SS_NOTIFY** style.  
+ A static control displays a text string, box, rectangle, icon, cursor, bitmap, or enhanced metafile. It can be used to label, box, or separate other controls. A static control normally takes no input and provides no output; however, it can notify its parent of mouse clicks if it's created with SS_NOTIFY style.  
   
  Create a static control in two steps. First, call the constructor to construct the `CStatic` object, then call the [Create](#create) member function to create the static control and attach it to the `CStatic` object.  
   
@@ -83,46 +78,46 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `lpszText`  
- Specifies the text to place in the control. If **NULL**, no text will be visible.  
+ *lpszText*  
+ Specifies the text to place in the control. If NULL, no text will be visible.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies the static control's window style. Apply any combination of [static control styles](../../mfc/reference/styles-used-by-mfc.md#static-styles) to the control.  
   
- `rect`  
+ *rect*  
  Specifies the position and size of the static control. It can be either a `RECT` structure or a `CRect` object.  
   
- `pParentWnd`  
- Specifies the `CStatic` parent window, usually a `CDialog` object. It must not be **NULL**.  
+ *pParentWnd*  
+ Specifies the `CStatic` parent window, usually a `CDialog` object. It must not be NULL.  
   
- `nID`  
+ *nID*  
  Specifies the static control's control ID.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Construct a `CStatic` object in two steps. First, call the constructor `CStatic`, and then call **Create**, which creates the Windows static control and attaches it to the `CStatic` object.  
+ Construct a `CStatic` object in two steps. First, call the constructor `CStatic`, and then call `Create`, which creates the Windows static control and attaches it to the `CStatic` object.  
   
  Apply the following [window styles](../../mfc/reference/styles-used-by-mfc.md#window-styles) to a static control:  
   
-- **WS_CHILD** Always  
+- WS_CHILD Always  
   
-- **WS_VISIBLE** Usually  
+- WS_VISIBLE Usually  
   
-- **WS_DISABLED** Rarely  
+- WS_DISABLED Rarely  
   
  If you're going to display a bitmap, cursor, icon, or metafile in the static control, you'll need to apply one of the following [static styles](../../mfc/reference/styles-used-by-mfc.md#static-styles):  
   
-- **SS_BITMAP** Use this style for bitmaps.  
+- SS_BITMAP Use this style for bitmaps.  
   
-- **SS_ICON** Use this style for cursors and icons.  
+- SS_ICON Use this style for cursors and icons.  
   
-- **SS_ENHMETAFILE** Use this style for enhanced metafiles.  
+- SS_ENHMETAFILE Use this style for enhanced metafiles.  
   
  For cursors, bitmaps, or icons, you may also want to use the following style:  
   
-- **SS_CENTERIMAGE** Use to center the image in the static control.  
+- SS_CENTERIMAGE Use to center the image in the static control.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/cpp/cstatic-class_1.cpp)]  
@@ -145,11 +140,11 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ```  
   
 ### Parameters  
- `lpDrawItemStruct`  
+ *lpDrawItemStruct*  
  A pointer to a [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) structure. The structure contains information about the item to be drawn and the type of drawing required.  
   
 ### Remarks  
- Override this function to implement drawing for an owner-drawn **CStatic** object (the control has the style **SS_OWNERDRAW**).  
+ Override this function to implement drawing for an owner-drawn `CStatic` object (the control has the style SS_OWNERDRAW).  
   
 ##  <a name="getbitmap"></a>  CStatic::GetBitmap  
  Gets the handle of the bitmap, previously set with [SetBitmap](#setbitmap), that is associated with `CStatic`.  
@@ -159,7 +154,7 @@ HBITMAP GetBitmap() const;
 ```  
   
 ### Return Value  
- A handle to the current bitmap, or **NULL** if no bitmap has been set.  
+ A handle to the current bitmap, or NULL if no bitmap has been set.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]  
@@ -172,7 +167,7 @@ HCURSOR GetCursor();
 ```  
   
 ### Return Value  
- A handle to the current cursor, or **NULL** if no cursor has been set.  
+ A handle to the current cursor, or NULL if no cursor has been set.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]  
@@ -185,7 +180,7 @@ HENHMETAFILE GetEnhMetaFile() const;
 ```  
   
 ### Return Value  
- A handle to the current enhanced metafile, or **NULL** if no enhanced metafile has been set.  
+ A handle to the current enhanced metafile, or NULL if no enhanced metafile has been set.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]  
@@ -198,7 +193,7 @@ HICON GetIcon() const;
 ```  
   
 ### Return Value  
- A handle to the current icon, or **NULL** if no icon has been set.  
+ A handle to the current icon, or NULL if no icon has been set.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]  
@@ -211,11 +206,11 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 ```  
   
 ### Parameters  
- `hBitmap`  
+ *hBitmap*  
  Handle of the bitmap to be drawn in the static control.  
   
 ### Return Value  
- The handle of the bitmap that was previously associated with the static control, or `NULL` if no bitmap was associated with the static control.  
+ The handle of the bitmap that was previously associated with the static control, or NULL if no bitmap was associated with the static control.  
   
 ### Remarks  
  The bitmap will be automatically drawn in the static control. By default, it will be drawn in the upper-left corner and the static control will be resized to the size of the bitmap.  
@@ -248,20 +243,20 @@ HCURSOR SetCursor(HCURSOR hCursor);
 ```  
   
 ### Parameters  
- `hCursor`  
+ *hCursor*  
  Handle of the cursor to be drawn in the static control.  
   
 ### Return Value  
- The handle of the cursor previously associated with the static control, or **NULL** if no cursor was associated with the static control.  
+ The handle of the cursor previously associated with the static control, or NULL if no cursor was associated with the static control.  
   
 ### Remarks  
  The cursor will be automatically drawn in the static control. By default, it will be drawn in the upper-left corner and the static control will be resized to the size of the cursor.  
   
  You can use various window and static control styles, including the following:  
   
-- **SS_ICON** Use this style always for cursors and icons.  
+- SS_ICON Use this style always for cursors and icons.  
   
-- **SS_CENTERIMAGE** Use to center in the static control. If the image is larger than the static control, it will be clipped. If it is smaller than the static control, the empty space around the image will be filled with the background color of the static control.  
+- SS_CENTERIMAGE Use to center in the static control. If the image is larger than the static control, it will be clipped. If it is smaller than the static control, the empty space around the image will be filled with the background color of the static control.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]  
@@ -274,18 +269,18 @@ HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
 ```  
   
 ### Parameters  
- `hMetaFile`  
+ *hMetaFile*  
  Handle of the enhanced metafile to be drawn in the static control.  
   
 ### Return Value  
- The handle of the enhanced metafile previously associated with the static control, or **NULL** if no enhanced metafile was associated with the static control.  
+ The handle of the enhanced metafile previously associated with the static control, or NULL if no enhanced metafile was associated with the static control.  
   
 ### Remarks  
  The enhanced metafile will be automatically drawn in the static control. The enhanced metafile is scaled to fit the size of the static control.  
   
  You can use various window and static control styles, including the following:  
   
-- **SS_ENHMETAFILE** Use this style always for enhanced metafiles.  
+- SS_ENHMETAFILE Use this style always for enhanced metafiles.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]  
@@ -298,20 +293,20 @@ HICON SetIcon(HICON hIcon);
 ```  
   
 ### Parameters  
- `hIcon`  
+ *hIcon*  
  Handle of the icon to be drawn in the static control.  
   
 ### Return Value  
- The handle of the icon previously associated with the static control, or **NULL** if no icon was associated with the static control.  
+ The handle of the icon previously associated with the static control, or NULL if no icon was associated with the static control.  
   
 ### Remarks  
  The icon will be automatically drawn in the static control. By default, it will be drawn in the upper-left corner and the static control will be resized to the size of the icon.  
   
  You can use various window and static control styles, including the following:  
   
-- **SS_ICON** Use this style always for cursors and icons.  
+- SS_ICON Use this style always for cursors and icons.  
   
-- **SS_CENTERIMAGE** Use to center in the static control. If the image is larger than the static control, it will be clipped. If it is smaller than the static control, the empty space around the image will be filled with the background color of the static control.  
+- SS_CENTERIMAGE Use to center in the static control. If the image is larger than the static control, it will be clipped. If it is smaller than the static control, the empty space around the image will be filled with the background color of the static control.  
   
 ### Example  
  [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]  

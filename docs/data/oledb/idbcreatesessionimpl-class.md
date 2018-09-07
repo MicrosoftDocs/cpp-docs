@@ -2,38 +2,36 @@
 title: "IDBCreateSessionImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: ["IDBCreateSessionImpl", "ATL.IDBCreateSessionImpl", "ATL::IDBCreateSessionImpl"]
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
+f1_keywords: ["IDBCreateSessionImpl", "ATL.IDBCreateSessionImpl", "ATL::IDBCreateSessionImpl", "IDBCreateSessionImpl::CreateSession", "IDBCreateSessionImpl.CreateSession", "CreateSession"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["IDBCreateSessionImpl class"]
+helpviewer_keywords: ["IDBCreateSessionImpl class", "CreateSession method"]
 ms.assetid: 48c02c5c-8362-45ac-af8e-bb119cf8c5c7
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # IDBCreateSessionImpl Class
-Provides an implementation for the [IDBCreateSession](https://msdn.microsoft.com/en-us/library/ms724076.aspx) interface.  
+Provides an implementation for the [IDBCreateSession](/previous-versions/windows/desktop/ms724076\(v=vs.85\)) interface.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 template <class T, class SessionClass>  
 class ATL_NO_VTABLE IDBCreateSessionImpl   
    : public IDBCreateSession  
 ```  
   
-#### Parameters  
- `T`  
+### Parameters  
+ *T*  
  YOUR CLASS, DERIVED FROM  
   
- `SessionClass`  
+ *SessionClass*  
  The session object.  
+
+## Requirements  
+ **Header:** atldb.h 
   
 ## Members  
   
@@ -41,13 +39,24 @@ class ATL_NO_VTABLE IDBCreateSessionImpl
   
 |||  
 |-|-|  
-|[CreateSession](../../data/oledb/idbcreatesessionimpl-createsession.md)|Creates a new session from the data source object and returns the requested interface on the newly created session.|  
+|[CreateSession](#createsession)|Creates a new session from the data source object and returns the requested interface on the newly created session.|  
   
 ## Remarks  
  A mandatory interface on data source objects.  
+
+## <a name="createsession"></a> IDBCreateSessionImpl::CreateSession
+Creates a new session from the data source object and returns the requested interface on the newly created session.  
   
-## Requirements  
- **Header:** atldb.h  
+### Syntax  
+  
+```cpp
+STDMETHOD(CreateSession)(IUnknown * pUnkOuter,   
+   REFIID riid,   
+   IUnknown ** ppDBSession);  
+```  
+  
+#### Parameters  
+ See [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942\(v=vs.85\)) in the *OLE DB Programmer's Reference*.   
   
 ## See Also  
  [OLE DB Provider Templates](../../data/oledb/ole-db-provider-templates-cpp.md)   

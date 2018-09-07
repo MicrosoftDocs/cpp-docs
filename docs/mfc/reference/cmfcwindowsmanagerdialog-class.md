@@ -2,19 +2,14 @@
 title: "CMFCWindowsManagerDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog", "AFXWINDOWSMANAGERDIALOG/CMFCWindowsManagerDialog::CMFCWindowsManagerDialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCWindowsManagerDialog [MFC], CMFCWindowsManagerDialog"]
 ms.assetid: 35b4b0db-33c4-4b22-94d8-5e3396341340
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCWindowsManagerDialog Class
@@ -68,10 +63,10 @@ CMFCWindowsManagerDialog(
 ```  
   
 ### Parameters  
- [in] `pMDIFrame`  
+ [in] *pMDIFrame*  
  A pointer to the parent or owner window.  
   
- [in] `bHelpButton`  
+ [in] *bHelpButton*  
  A Boolean parameter that specifies whether the framework displays a **Help** button.  
   
 ### Remarks  

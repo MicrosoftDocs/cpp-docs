@@ -2,28 +2,23 @@
 title: "Primary Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["primary expressions", "expressions [C++], name", "expressions [C++], literal", "expressions [C++], primary", "expressions [C++], qualified names"]
 ms.assetid: 8ef9a814-6058-4b93-9b6e-e8eb8350b1ca
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Primary Expressions
 Primary expressions are the building blocks of more complex expressions. They are literals, names, and names qualified by the scope-resolution operator (`::`).  A primary expression may have any of the following forms:  
   
 ```  
-  
-      literal  
-      this  
-:: namename( expression )  
+literal  
+this
+name  
+::name ( expression )  
 ```  
   
  A *literal* is a constant primary expression. Its type depends on the form of its specification. See [Literals](../cpp/numeric-boolean-and-pointer-literals-cpp.md) for complete information about specifying literals.  
@@ -32,7 +27,7 @@ Primary expressions are the building blocks of more complex expressions. They ar
   
  The type of the **this** pointer is `type` **\*const** (where `type` is the class name) within functions not specifically modifying the **this** pointer. The following example shows member function declarations and the types of **this**:  
   
-```  
+```cpp 
 // expre_Primary_Expressions.cpp  
 // compile with: /LD  
 class Example  
@@ -50,11 +45,9 @@ public:
   
  An expression enclosed in parentheses is a primary expression whose type and value are identical to those of the unparenthesized expression. It is an l-value if the unparenthesized expression is an l-value.  
   
- In the context of the primary expression syntax given above, *name* means anything in the syntax described for [Names](http://msdn.microsoft.com/en-us/1c49cc24-08d5-4884-b170-ba8ed42d80db), although when using the scope-resolution operator before the name, types of names that can only occur in a class are not allowed.  This includes user-defined conversion function names, and destructor names.  
-  
  Examples of primary expressions include:  
   
-```  
+```cpp 
 100 // literal  
 'c' // literal  
 this // in a member function, a pointer to the class instance  
@@ -66,7 +59,7 @@ this // in a member function, a pointer to the class instance
   
  The examples below are all considered *names*, and hence primary expressions, in various forms:  
   
-```  
+```cpp 
 MyClass // a identifier  
 MyClass::f // a qualified name  
 operator = // an operator function name  
@@ -76,5 +69,5 @@ A::B   // a qualified name
 A<int> // a template id  
 ```  
   
-## See Also  
+## See also  
  [Types of Expressions](../cpp/types-of-expressions.md)

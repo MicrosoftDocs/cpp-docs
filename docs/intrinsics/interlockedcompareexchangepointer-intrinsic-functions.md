@@ -2,19 +2,14 @@
 title: "_InterlockedCompareExchangePointer Intrinsic Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_InterlockedCompareExchangePointer_HLERelease", "_InterlockedCompareExchangePointer_rel", "_InterlockedCompareExchangePointer_acq_cpp", "_InterlockedCompareExchangePointer", "_InterlockedCompareExchangePointer_cpp", "_InterlockedCompareExchangePointer_np", "_InterlockedCompareExchangePointer_rel_cpp", "_InterlockedCompareExchangePointer_HLEAcquire", "_InterlockedCompareExchangePointer_acq", "_InterlockedCompareExchangePointer_nf"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["InterlockedCompareExchangePointer_acq intrinsic", "_InterlockedCompareExchangePointer_rel intrinsic", "_InterlockedCompareExchangePointer_acq intrinsic", "InterlockedCompareExchangePointer_rel intrinsic", "InterlockedCompareExchangePointer intrinsic", "_InterlockedCompareExchangePointer_HLERelease intrinsic", "_InterlockedCompareExchangePointer_HLEAcquire intrinsic", "_InterlockedCompareExchangePointer intrinsic", "_InterlockedCompareExchangePointer_nf intrinsic", "_InterlockedCompareExchangePointer_np intrinsic"]
 ms.assetid: 97fde59d-2bf9-42aa-a0fe-a5b6befdd44b
-caps.latest.revision: 19
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _InterlockedCompareExchangePointer Intrinsic Functions
@@ -79,14 +74,14 @@ long _InterlockedCompareExchangePointer_rel (
   
 |Intrinsic|Architecture|Header|  
 |---------------|------------------|------------|  
-|`_InterlockedCompareExchangePointer`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_InterlockedCompareExchangePointer`|x86, ARM, x64|\<intrin.h>|  
 |`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM|\<iiintrin.h>|  
-|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h>|  
+|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, x64|\<immintrin.h>|  
   
 ## Remarks  
  `_InterlockedCompareExchangePointer` performs an atomic comparison of the `Destination` address with the `Comparand` address. If the `Destination` address is equal to the `Comparand` address, the `Exchange` address is stored in the address specified by `Destination`. Otherwise, no operation is performed.  
   
- `_InterlockedCompareExchangePointer` provides compiler intrinsic support for the Win32 [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [_InterlockedCompareExchangePointer](http://msdn.microsoft.com/library/ff547863.aspx) function.  
+ `_InterlockedCompareExchangePointer` provides compiler intrinsic support for the Win32 Windows SDK [_InterlockedCompareExchangePointer](https://msdn.microsoft.com/library/ff547863.aspx) function.  
   
  For a example of how to use `_InterlockedCompareExchangePointer`, see [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).  
   

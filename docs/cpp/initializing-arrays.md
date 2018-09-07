@@ -2,18 +2,13 @@
 title: "Initializing Arrays | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["initializing arrays [C++]", "arrays [C++], initializing"]
 ms.assetid: 41efe5f0-15b5-4f49-9196-c4902f8fc705
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Initializing Arrays
@@ -21,7 +16,7 @@ If a class has a constructor, arrays of that class are initialized by a construc
   
  Consider the `Point` class that defines two constructors:  
   
-```  
+```cpp 
 // initializing_arrays1.cpp  
 class Point  
 {  
@@ -48,7 +43,7 @@ int main()
   
  Static member arrays (whether **const** or not) can be initialized in their definitions (outside the class declaration). For example:  
   
-```  
+```cpp 
 // initializing_arrays2.cpp  
 class WindowColors  
 {  
@@ -63,4 +58,3 @@ int main()
 {  
 }  
 ```  
-  

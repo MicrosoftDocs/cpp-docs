@@ -2,27 +2,22 @@
 title: "Using TCHAR.H Data Types with _MBCS Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["tchar.h", "TCHAR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["mapping generic-text", "generic-text data types [C++]", "generic-text mappings [C++]", "MBCS [C++], generic-text mappings", "TCHAR.H data types, mapping", "mappings [C++], TCHAR.H"]
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-caps.latest.revision: 7
-author: "ghogen"
-ms.author: "ghogen"
-manager: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Using TCHAR.H Data Types with _MBCS Code
-When the manifest constant **_MBCS** is defined, a given generic-text routine maps to one of the following kinds of routines:  
+When the manifest constant `_MBCS` is defined, a given generic-text routine maps to one of the following kinds of routines:  
   
--   An SBCS routine that handles multibyte bytes, characters, and strings appropriately. In this case, the string arguments are expected to be of type **char\***. For example, `_tprintf` maps to `printf`; the string arguments to `printf` are of type **char\***. If you use the **_TCHAR** generic-text data type for your string types, the formal and actual parameter types for `printf` match because **_TCHAR**\* maps to **char\***.  
+-   An SBCS routine that handles multibyte bytes, characters, and strings appropriately. In this case, the string arguments are expected to be of type `char*`. For example, `_tprintf` maps to `printf`; the string arguments to `printf` are of type `char*`. If you use the `_TCHAR` generic-text data type for your string types, the formal and actual parameter types for `printf` match because `_TCHAR*` maps to `char*`.  
   
--   An MBCS-specific routine. In this case, the string arguments are expected to be of type `unsigned` **char\***. For example, `_tcsrev` maps to `_mbsrev`, which expects and returns a string of type `unsigned` **char\***. If you use the **_TCHAR** generic-text data type for your string types, there is a potential type conflict because **_TCHAR** maps to type `char`.  
+-   An MBCS-specific routine. In this case, the string arguments are expected to be of type `unsigned char*`. For example, `_tcsrev` maps to `_mbsrev`, which expects and returns a string of type `unsigned char*`. If you use the `_TCHAR` generic-text data type for your string types, there is a potential type conflict because `_TCHAR` maps to type `char`.  
   
  Following are three solutions for preventing this type conflict (and the C compiler warnings or C++ compiler errors that would result):  
   
@@ -32,7 +27,7 @@ When the manifest constant **_MBCS** is defined, a given generic-text routine ma
     char * _tcsrev(char *);  
     ```  
   
-     In the default case, the prototype for `_tcsrev` maps to `_mbsrev` through a thunk in Libc.lib. This changes the types of the `_mbsrev` incoming parameters and outgoing return value from **_TCHAR \*** (that is, `char` **\***) to `unsigned` `char` **\***. This method ensures type matching when you are using **_TCHAR**, but it is relatively slow due to the function call overhead.  
+     In the default case, the prototype for `_tcsrev` maps to `_mbsrev` through a thunk in Libc.lib. This changes the types of the `_mbsrev` incoming parameters and outgoing return value from `_TCHAR*` (that is, `char *`) to `unsigned char *`. This method ensures type matching when you are using `_TCHAR`, but it is relatively slow due to the function call overhead.  
   
 -   Use function inlining by incorporating the following preprocessor statement in your code.  
   
@@ -61,7 +56,7 @@ When the manifest constant **_MBCS** is defined, a given generic-text routine ma
     #define _tcschr _mbschr  
     ```  
   
-     When you take this approach, you must be careful to ensure use of appropriate data types for string arguments and string return values. You can use type casting to ensure proper type matching or you can use the **_TXCHAR** generic-text data type. **_TXCHAR** maps to type `char` in SBCS code but maps to type `unsigned` `char` in MBCS code. For more information about generic-text macros, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md) in the *Run-Time Library Reference*.  
+     When you take this approach, you must be careful to ensure use of appropriate data types for string arguments and string return values. You can use type casting to ensure proper type matching or you can use the `_TXCHAR` generic-text data type. `_TXCHAR` maps to type **char** in SBCS code but maps to type **unsigned char** in MBCS code. For more information about generic-text macros, see [Generic-Text Mappings](../c-runtime-library/generic-text-mappings.md) in the *Run-Time Library Reference*.  
   
 ## See Also  
  [Generic-Text Mappings in Tchar.h](../text/generic-text-mappings-in-tchar-h.md)

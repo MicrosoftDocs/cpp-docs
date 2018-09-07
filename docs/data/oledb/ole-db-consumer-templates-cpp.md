@@ -2,18 +2,13 @@
 title: "OLE DB Consumer Templates (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["databases [C++], OLE DB templates", "OLE DB consumers [C++], data access", "OLE DB consumer templates [C++]", "databases [C++], consumers"]
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Consumer Templates (C++)
@@ -25,7 +20,7 @@ The OLE DB Consumer Templates support the OLE DB version 2.6 specification. (The
   
 -   Native C/C++ data types for OLE DB programming.  
   
- To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you are not familiar with OLE DB, see [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms718124.aspx).  
+ To use the OLE DB Templates, you should be familiar with C++ templates, COM, and the OLE DB interfaces. If you are not familiar with OLE DB, see [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms718124\(v=vs.85\)).  
   
  The OLE DB Templates support the existing OLE DB object model rather than adding a new object model. The top-layer classes in the OLE DB Consumer Templates parallel the components defined in the OLE DB specification. The design of the OLE DB Consumer Templates includes advanced features such as multiple accessors on a rowset. The use of templates and multiple inheritance makes the library small and flexible.  
   
@@ -59,5 +54,5 @@ The OLE DB Consumer Templates support the OLE DB version 2.6 specification. (The
 ## See Also  
  [OLE DB Programming](../../data/oledb/ole-db-programming.md)   
  [Data Access](../data-access-in-cpp.md)   
- [OLE DB SDK Documentation](https://msdn.microsoft.com/en-us/library/ms722784.aspx)   
- [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx)
+ [OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784\(v=vs.85\))   
+ [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\))

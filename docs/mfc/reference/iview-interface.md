@@ -2,19 +2,14 @@
 title: "IView Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["IView", "AFXWINFORMS/IView", "AFXWINFORMS/IView::OnActivateView", "AFXWINFORMS/IView::OnInitialUpdate", "AFXWINFORMS/IView::OnUpdate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["views [MFC]", "IView class [MFC]", "views [MFC], classes"]
 ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # IView Interface
@@ -53,7 +48,7 @@ Called by MFC when a view is activated or deactivated.
 void OnActivateView(bool activate);
 ```
 ## Parameters
-`activate`  
+*activate*  
 Indicates whether the view is being activated or deactivated.  
 
 ## <a name="oninitialupdate"></a> IView::OnInitialUpdate

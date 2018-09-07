@@ -2,19 +2,14 @@
 title: "Using CToolBarCtrl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CToolBarCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CToolBarCtrl class [MFC]", "toolbar controls [MFC], creating"]
 ms.assetid: 13cf3753-135b-4a3e-a850-ed30177fcf9d
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CToolBarCtrl

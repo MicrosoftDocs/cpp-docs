@@ -2,19 +2,14 @@
 title: "Compiler Error C3917 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C3917"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C3917"]
 ms.assetid: a24cd0c9-262f-46e5-9488-1c01f945933d
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C3917

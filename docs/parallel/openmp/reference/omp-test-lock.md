@@ -2,19 +2,14 @@
 title: "omp_test_lock | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 f1_keywords: ["omp_test_lock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["omp_test_lock OpenMP function"]
 ms.assetid: 314ca85e-0749-4c16-800f-b0f36fed256d
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # omp_test_lock

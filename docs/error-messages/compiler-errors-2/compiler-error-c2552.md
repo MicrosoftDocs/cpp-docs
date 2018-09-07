@@ -2,19 +2,14 @@
 title: "Compiler Error C2552 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2552"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2552"]
 ms.assetid: 0e0ab759-788a-4faf-9337-80d4b9e2e8c9
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2552

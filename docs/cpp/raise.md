@@ -2,19 +2,14 @@
 title: "__raise | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__raise", "__raise_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__raise keyword [C++]"]
 ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __raise
@@ -23,24 +18,20 @@ Emphasizes the call site of an event.
 ## Syntax  
   
 ```  
-  
-__raise   
-method-declarator  
-;  
-  
+__raise method-declarator;  
 ```  
   
 ## Remarks  
  From managed code, an event can only be raised from within the class where it is defined. See [event](../windows/event-cpp-component-extensions.md) for more information.  
   
- The keyword `__raise` causes an error to be emitted if you call a non-event.  
+ The keyword **__raise** causes an error to be emitted if you call a non-event.  
   
 > [!NOTE]
 >  A templated class or struct cannot contain events.  
   
 ## Example  
   
-```  
+```cpp 
 // EventHandlingRef_raise.cpp  
 struct E {  
    __event void func1();  
@@ -64,7 +55,7 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Event Handling](../cpp/event-handling.md)   
  [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md)

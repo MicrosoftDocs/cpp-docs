@@ -2,25 +2,20 @@
 title: "Implement Interface Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.impl.interface.overview"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Implement Interface Wizard [C++]"]
 ms.assetid: 947c329e-0815-4ca7-835e-c41dfeb75f9e
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Implement Interface Wizard
 This wizard implements an interface for a COM object. Implementations of many interfaces are included in the COM libraries available with Visual Studio and Windows. An interface implementation is associated with an object when an instance of that object is created, and it provides the services that the object offers.  
   
- For a discussion of interfaces and implementations, see [Interfaces and Interface Implementations](http://msdn.microsoft.com/library/windows/desktop/ms694356) in the Windows SDK.  
+ For a discussion of interfaces and implementations, see [Interfaces and Interface Implementations](/windows/desktop/com/interfaces-and-interface-implementations) in the Windows SDK.  
   
  **Implement interface from**  
  Specifies the location of the type library, from which the interface is created.  

@@ -1,26 +1,24 @@
 ---
 title: "Segment References in Inline Assembly | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "08/30/2018"
+ms.technology: ["cpp-masm"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["references, inline assembly", "segment references in inline assembly", "inline assembly, segment references", "registers", "inline assembly, registers", "registers, inline assembly"]
 ms.assetid: c63e6bb4-49d9-4fa1-bb22-eea21b5cbc0f
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Segment References in Inline Assembly
-## Microsoft Specific  
- You must refer to segments by register rather than by name (the segment name `_TEXT` is invalid, for instance). Segment overrides must use the register explicitly, as in ES:[BX].  
-  
- **END Microsoft Specific**  
-  
-## See Also  
- [Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+
+**Microsoft Specific**
+
+You must refer to segments by register rather than by name (the segment name `_TEXT` is invalid, for instance). Segment overrides must use the register explicitly, as in ES:[BX].
+
+**END Microsoft Specific**
+
+## See also
+
+[Using Assembly Language in __asm Blocks](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

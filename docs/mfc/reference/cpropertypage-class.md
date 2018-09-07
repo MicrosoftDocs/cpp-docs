@@ -2,19 +2,14 @@
 title: "CPropertyPage Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CPropertyPage", "AFXDLGS/CPropertyPage", "AFXDLGS/CPropertyPage::CPropertyPage", "AFXDLGS/CPropertyPage::CancelToClose", "AFXDLGS/CPropertyPage::Construct", "AFXDLGS/CPropertyPage::GetPSP", "AFXDLGS/CPropertyPage::OnApply", "AFXDLGS/CPropertyPage::OnCancel", "AFXDLGS/CPropertyPage::OnKillActive", "AFXDLGS/CPropertyPage::OnOK", "AFXDLGS/CPropertyPage::OnQueryCancel", "AFXDLGS/CPropertyPage::OnReset", "AFXDLGS/CPropertyPage::OnSetActive", "AFXDLGS/CPropertyPage::OnWizardBack", "AFXDLGS/CPropertyPage::OnWizardFinish", "AFXDLGS/CPropertyPage::OnWizardNext", "AFXDLGS/CPropertyPage::QuerySiblings", "AFXDLGS/CPropertyPage::SetModified", "AFXDLGS/CPropertyPage::m_psp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CPropertyPage [MFC], CPropertyPage", "CPropertyPage [MFC], CancelToClose", "CPropertyPage [MFC], Construct", "CPropertyPage [MFC], GetPSP", "CPropertyPage [MFC], OnApply", "CPropertyPage [MFC], OnCancel", "CPropertyPage [MFC], OnKillActive", "CPropertyPage [MFC], OnOK", "CPropertyPage [MFC], OnQueryCancel", "CPropertyPage [MFC], OnReset", "CPropertyPage [MFC], OnSetActive", "CPropertyPage [MFC], OnWizardBack", "CPropertyPage [MFC], OnWizardFinish", "CPropertyPage [MFC], OnWizardNext", "CPropertyPage [MFC], QuerySiblings", "CPropertyPage [MFC], SetModified", "CPropertyPage [MFC], m_psp"]
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CPropertyPage Class
@@ -40,7 +35,7 @@ class CPropertyPage : public CDialog
 |----------|-----------------|  
 |[CPropertyPage::CancelToClose](#canceltoclose)|Changes the OK button to read Close, and disables the Cancel button, after an unrecoverable change in the page of a modal property sheet.|  
 |[CPropertyPage::Construct](#construct)|Constructs a `CPropertyPage` object. Use `Construct` if you want to specify your parameters at run time, or if you are using arrays.|  
-|[CPropertyPage::GetPSP](#getpsp)|Retrieves the Windows [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548) structure associated with the `CPropertyPage` object.|  
+|[CPropertyPage::GetPSP](#getpsp)|Retrieves the Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2) structure associated with the `CPropertyPage` object.|  
 |[CPropertyPage::OnApply](#onapply)|Called by the framework when the Apply Now button is clicked.|  
 |[CPropertyPage::OnCancel](#oncancel)|Called by the framework when the Cancel button is clicked.|  
 |[CPropertyPage::OnKillActive](#onkillactive)|Called by the framework when the current page is no longer the active page. Perform data validation here.|  
@@ -58,7 +53,7 @@ class CPropertyPage : public CDialog
   
 |Name|Description|  
 |----------|-----------------|  
-|[CPropertyPage::m_psp](#m_psp)|The Windows [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548) structure. Provides access to basic property page parameters.|  
+|[CPropertyPage::m_psp](#m_psp)|The Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2) structure. Provides access to basic property page parameters.|  
   
 ## Remarks  
  As with standard dialog boxes, you derive a class from `CPropertyPage` for each page in your property sheet. To use `CPropertyPage`-derived objects, first create a [CPropertySheet](../../mfc/reference/cpropertysheet-class.md) object, and then create an object for each page that goes in the property sheet. Call [CPropertySheet::AddPage](../../mfc/reference/cpropertysheet-class.md#addpage) for each page in the sheet, and then display the property sheet by calling [CPropertySheet::DoModal](../../mfc/reference/cpropertysheet-class.md#domodal) for a modal property sheet, or [CPropertySheet::Create](../../mfc/reference/cpropertysheet-class.md#create) for a modeless property sheet.  
@@ -125,19 +120,19 @@ void Construct(
 ```  
   
 ### Parameters  
- `nIDTemplate`  
+ *nIDTemplate*  
  ID of the template used for this page.  
   
- `nIDCaption`  
+ *nIDCaption*  
  ID of the name to be placed in the tab for this page. If 0, the name will be taken from the dialog template for this page.  
   
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Contains a null-terminated string that is the name of a template resource.  
   
- `nIDHeaderTitle`  
+ *nIDHeaderTitle*  
  ID of the name to be placed in the title location of the property page header. By default, 0.  
   
- `nIDHeaderSubTitle`  
+ *nIDHeaderSubTitle*  
  ID of the name to be placed in the subtitle location of the property page header. By default, 0.  
   
 ### Remarks  
@@ -149,9 +144,9 @@ void Construct(
   
 -   The user has selected (tabbed to) this page.  
   
- Call **Construct** if one of the other class constructors has not been called. The `Construct` member function is flexible because you can leave the parameter statement blank and then specify multiple parameters and construction at any point in your code.  
+ Call `Construct` if one of the other class constructors has not been called. The `Construct` member function is flexible because you can leave the parameter statement blank and then specify multiple parameters and construction at any point in your code.  
   
- You must use `Construct` when you work with arrays, and you must call **Construct** for each member of the array so that the data members are assigned proper values.  
+ You must use `Construct` when you work with arrays, and you must call `Construct` for each member of the array so that the data members are assigned proper values.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#112](../../mfc/codesnippet/cpp/cpropertypage-class_1.cpp)]  
@@ -192,20 +187,20 @@ CPropertyPage(
 ```  
   
 ### Parameters  
- `nIDTemplate`  
+ *nIDTemplate*  
  ID of the template used for this page.  
   
- `nIDCaption`  
+ *nIDCaption*  
  ID of the name to be placed in the tab for this page. If 0, the name will be taken from the dialog template for this page.  
   
- `dwSize`  
- `lpszTemplateName`  
- Points to a string containing the name of the template for this page. Cannot be **NULL**.  
+ *dwSize*  
+ *lpszTemplateName*  
+ Points to a string containing the name of the template for this page. Cannot be NULL.  
   
- `nIDHeaderTitle`  
+ *nIDHeaderTitle*  
  ID of the name to be placed in the title location of the property page header.  
   
- `nIDHeaderSubTitle`  
+ *nIDHeaderSubTitle*  
  ID of the name to be placed in the subtitle location of the property page header.  
   
 ### Remarks  
@@ -223,7 +218,7 @@ CPropertyPage(
  [!code-cpp[NVC_MFCDocView#113](../../mfc/codesnippet/cpp/cpropertypage-class_2.cpp)]  
   
 ##  <a name="getpsp"></a>  CPropertyPage::GetPSP  
- Retrieves the Windows [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548) structure associated with the `CPropertyPage` object.  
+ Retrieves the Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2) structure associated with the `CPropertyPage` object.  
   
 ```  
 const PROPSHEETPAGE& GetPSP() const;  
@@ -232,10 +227,10 @@ PROPSHEETPAGE& GetPSP();
 ```  
   
 ### Return Value  
- A reference to the **PROPSHEETPAGE** structure.  
+ A reference to the `PROPSHEETPAGE` structure.  
   
 ##  <a name="m_psp"></a>  CPropertyPage::m_psp  
- `m_psp` is a structure whose members store the characteristics of [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548).  
+ `m_psp` is a structure whose members store the characteristics of [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2).  
   
 ```  
 PROPSHEETPAGE m_psp;  
@@ -244,7 +239,7 @@ PROPSHEETPAGE m_psp;
 ### Remarks  
  Use this structure to initialize the appearance of a property page after it is constructed.  
   
- For more information on this structure, including a listing of its members, see **PROPSHEETPAGE** in the Windows SDK.  
+ For more information on this structure, including a listing of its members, see `PROPSHEETPAGE` in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#128](../../mfc/codesnippet/cpp/cpropertypage-class_3.cpp)]  
@@ -260,13 +255,13 @@ virtual BOOL OnApply();
  Nonzero if the changes are accepted; otherwise 0.  
   
 ### Remarks  
- When the framework calls this function, changes made on all property pages in the property sheet are accepted, the property sheet retains focus, and `OnApply` returns **TRUE** (the value 1). Before `OnApply` can be called by the framework, you must have called [SetModified](#setmodified) and set its parameter to **TRUE**. This will activate the Apply Now button as soon as the user makes a change on the property page.  
+ When the framework calls this function, changes made on all property pages in the property sheet are accepted, the property sheet retains focus, and `OnApply` returns TRUE (the value 1). Before `OnApply` can be called by the framework, you must have called [SetModified](#setmodified) and set its parameter to TRUE. This will activate the Apply Now button as soon as the user makes a change on the property page.  
   
- Override this member function to specify what action your program takes when the user clicks the Apply Now button. When overriding, the function should return **TRUE** to accept changes and **FALSE** to prevent changes from taking effect.  
+ Override this member function to specify what action your program takes when the user clicks the Apply Now button. When overriding, the function should return TRUE to accept changes and FALSE to prevent changes from taking effect.  
   
  The default implementation of `OnApply` calls `OnOK`.  
   
- For more information about notification messages sent when the user presses the Apply Now or OK button in a property sheet, see [PSN_APPLY](http://msdn.microsoft.com/library/windows/desktop/bb774552) in the Windows SDK.  
+ For more information about notification messages sent when the user presses the Apply Now or OK button in a property sheet, see [PSN_APPLY](/windows/desktop/Controls/psn-apply) in the Windows SDK.  
   
 ### Example  
   See the example for [CPropertyPage::OnOK](#onok).  
@@ -312,7 +307,7 @@ virtual void OnOK();
 ```  
   
 ### Remarks  
- When the user chooses either the OK or the Apply Now button, the framework receives the [PSN_APPLY](http://msdn.microsoft.com/library/windows/desktop/bb774552) notification from the property page. The call to `OnOK` won't be made if you call [CPropertySheet::PressButton](../../mfc/reference/cpropertysheet-class.md#pressbutton) because the property page does not send the notification in that case.  
+ When the user chooses either the OK or the Apply Now button, the framework receives the [PSN_APPLY](/windows/desktop/Controls/psn-apply) notification from the property page. The call to `OnOK` won't be made if you call [CPropertySheet::PressButton](../../mfc/reference/cpropertysheet-class.md#pressbutton) because the property page does not send the notification in that case.  
   
  Override this member function to implement additional behavior specific to the currently active page when user dismisses the entire property sheet.  
   
@@ -329,12 +324,12 @@ virtual BOOL OnQueryCancel();
 ```  
   
 ### Return Value  
- Returns **FALSE** to prevent the cancel operation or TRUE to allow it.  
+ Returns FALSE to prevent the cancel operation or TRUE to allow it.  
   
 ### Remarks  
  Override this member function to specify an action the program takes when the user clicks the Cancel button.  
   
- The default implementation of `OnQueryCancel` returns **TRUE**.  
+ The default implementation of `OnQueryCancel` returns TRUE.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#117](../../mfc/codesnippet/cpp/cpropertypage-class_7.cpp)]  
@@ -403,11 +398,11 @@ virtual BOOL OnWizardFinish();
  Nonzero if the property sheet is destroyed when the wizard finishes; otherwise zero.  
   
 ### Remarks  
- When a user clicks the **Finish** button in a wizard, the framework calls this function; when `OnWizardFinish` returns **TRUE** (a nonzero value), the property sheet is able to be destroyed (but is not actually destroyed). Call `DestroyWindow` to destroy the property sheet. Do not call `DestroyWindow` from `OnWizardFinish`; doing so will cause heap corruption or other errors.  
+ When a user clicks the **Finish** button in a wizard, the framework calls this function; when `OnWizardFinish` returns TRUE (a nonzero value), the property sheet is able to be destroyed (but is not actually destroyed). Call `DestroyWindow` to destroy the property sheet. Do not call `DestroyWindow` from `OnWizardFinish`; doing so will cause heap corruption or other errors.  
   
- You can override this member function to specify some action the user must take when the Finish button is pressed. When overriding this function, return **FALSE** to prevent the property sheet from being destroyed.  
+ You can override this member function to specify some action the user must take when the Finish button is pressed. When overriding this function, return FALSE to prevent the property sheet from being destroyed.  
   
- For more information about notification messages sent when the user presses the Finish button in a wizard property sheet, see [PSN_WIZFINISH](http://msdn.microsoft.com/library/windows/desktop/bb774571) in the Windows SDK.  
+ For more information about notification messages sent when the user presses the Finish button in a wizard property sheet, see [PSN_WIZFINISH](/windows/desktop/Controls/psn-wizfinish) in the Windows SDK.  
   
  For more information on how to make a wizard-type property sheet, see [CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).  
   
@@ -448,10 +443,10 @@ LRESULT QuerySiblings(
 ```  
   
 ### Parameters  
- `wParam`  
+ *wParam*  
  Specifies additional message-dependent information.  
   
- `lParam`  
+ *lParam*  
  Specifies additional message-dependent information  
   
 ### Return Value  
@@ -475,11 +470,11 @@ void SetModified(BOOL bChanged = TRUE);
 ```  
   
 ### Parameters  
- `bChanged`  
- **TRUE** to indicate that the property page settings have been modified since the last time they were applied; **FALSE** to indicate that the property page settings have been applied, or should be ignored.  
+ *bChanged*  
+ TRUE to indicate that the property page settings have been modified since the last time they were applied; FALSE to indicate that the property page settings have been applied, or should be ignored.  
   
 ### Remarks  
- The framework keeps track of which pages are "dirty," that is, property pages for which you have called **SetModified( TRUE )**. The Apply Now button will always be enabled if you call **SetModified( TRUE )** for one of the pages. The Apply Now button will be disabled when you call **SetModified( FALSE )** for one of the pages, but only if none of the other pages is "dirty."  
+ The framework keeps track of which pages are "dirty," that is, property pages for which you have called `SetModified( TRUE )`. The Apply Now button will always be enabled if you call `SetModified( TRUE )` for one of the pages. The Apply Now button will be disabled when you call `SetModified( FALSE )` for one of the pages, but only if none of the other pages is "dirty."  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#127](../../mfc/codesnippet/cpp/cpropertypage-class_17.cpp)]  

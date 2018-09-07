@@ -2,19 +2,14 @@
 title: "-TSAWARE (Create Terminal Server Aware Application) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/tsaware", "VC.Project.VCLinkerTool.TerminalServerAware"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Terminal Server", "/TSAWARE linker option", "Terminal Server, Terminal Server-aware applications", "-TSAWARE linker option", "TSAWARE linker option"]
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /TSAWARE (Create Terminal Server Aware Application)
@@ -31,7 +26,7 @@ ms.workload: ["cplusplus"]
   
  If you use /TSAWARE and your application still uses INI files, the files will be shared by all users of the system. If that is acceptable, you can still link your application with /TSAWARE; otherwise you need to use /TSAWARE:NO.  
   
- The /TSAWARE option is enabled by default for Windows 2000 and later, for Windows and console applications. See [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) and [/VERSION](../../build/reference/version-version-information.md) for information.  
+ The /TSAWARE option is enabled by default for Windows and console applications. See [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) and [/VERSION](../../build/reference/version-version-information.md) for information.  
   
  /TSAWARE is not valid for drivers, VxDs, or DLLs.  
   
@@ -54,5 +49,5 @@ ms.workload: ["cplusplus"]
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   
  [Linker Options](../../build/reference/linker-options.md)   
- [Storing User-Specific Information](http://msdn.microsoft.com/library/aa383452)   
- [Legacy Applications in a Terminal Services Environment](https://msdn.microsoft.com/en-us/library/aa382957.aspx)
+ [Storing User-Specific Information](/windows/desktop/TermServ/storing-user-specific-information)   
+ [Legacy Applications in a Terminal Services Environment](https://msdn.microsoft.com/library/aa382957.aspx)

@@ -2,19 +2,14 @@
 title: "COleUpdateDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleUpdateDialog", "AFXODLGS/COleUpdateDialog", "AFXODLGS/COleUpdateDialog::COleUpdateDialog", "AFXODLGS/COleUpdateDialog::DoModal"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleUpdateDialog [MFC], COleUpdateDialog", "COleUpdateDialog [MFC], DoModal"]
 ms.assetid: 699ca980-52b1-4cf8-9ab1-ac6767ad5b0e
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleUpdateDialog Class
@@ -75,7 +70,7 @@ explicit COleUpdateDialog(
 ```  
   
 ### Parameters  
- `pDoc`  
+ *pDoc*  
  Points to the document containing the links that may need updating.  
   
  *bUpdateLinks*  
@@ -84,8 +79,8 @@ explicit COleUpdateDialog(
  *bUpdateEmbeddings*  
  Flag that determines whether embedded objects are to be updated.  
   
- `pParentWnd`  
- Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box will be set to the main application window.  
+ *pParentWnd*  
+ Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is NULL, the parent window of the dialog box will be set to the main application window.  
   
 ### Remarks  
  This function constructs only a `COleUpdateDialog` object. To display the dialog box, call [DoModal](../../mfc/reference/colelinksdialog-class.md#domodal). This class should be used instead of `COleLinksDialog` when you want to update only existing linked or embedded items.  
@@ -100,11 +95,11 @@ virtual INT_PTR DoModal();
 ### Return Value  
  Completion status for the dialog box. One of the following values:  
   
-- **IDOK** if the dialog box returned successfully.  
+- IDOK if the dialog box returned successfully.  
   
-- **IDCANCEL** if none of the linked or embedded items in the current document need updating.  
+- IDCANCEL if none of the linked or embedded items in the current document need updating.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) function in the Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIEditLinks](/windows/desktop/api/oledlg/nf-oledlg-oleuieditlinksa) function in the Windows SDK.  
   
 ### Remarks  
  All links and/or embeddings are updated unless the user selects the Cancel button.  

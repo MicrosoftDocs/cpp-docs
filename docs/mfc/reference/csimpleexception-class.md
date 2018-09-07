@@ -2,19 +2,14 @@
 title: "CSimpleException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSimpleException", "AFX/CSimpleException", "AFX/CSimpleException::CSimpleException", "AFX/CSimpleException::GetErrorMessage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSimpleException [MFC], CSimpleException", "CSimpleException [MFC], GetErrorMessage"]
 ms.assetid: be0eb8ef-e5b9-47d6-b0fb-efaff2d1e666
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CSimpleException Class
@@ -70,11 +65,12 @@ class AFX_NOVTABLE CSimpleException : public CException
   
 ```  
 CSimpleException();  
-explicit CSimpleException(BOOL bAutoDelete);```  
+explicit CSimpleException(BOOL bAutoDelete);
+```  
   
 ### Parameters  
- `bAutoDelete`  
- Specify **TRUE** if the memory for the `CSimpleException` object has been allocated on the heap. This will cause the `CSimpleException` object to be deleted when the **Delete** member function is called to delete the exception. Specify **FALSE** if the `CSimpleException` object is on the stack or is a global object. In this case, the `CSimpleException` object will not be deleted when the **Delete** member function is called.  
+ *bAutoDelete*  
+ Specify TRUE if the memory for the `CSimpleException` object has been allocated on the heap. This will cause the `CSimpleException` object to be deleted when the `Delete` member function is called to delete the exception. Specify FALSE if the `CSimpleException` object is on the stack or is a global object. In this case, the `CSimpleException` object will not be deleted when the `Delete` member function is called.  
   
 ### Remarks  
  You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException](exception-processing.md#afxthrowfileexception), to throw a predefined type.  
@@ -90,14 +86,14 @@ virtual BOOL GetErrorMessage(
 ```  
   
 ### Parameters  
- `lpszError`  
+ *lpszError*  
  A pointer to a buffer that will receive an error message.  
   
- `nMaxError`  
- The maximum number of characters the buffer can hold, including the **NULL** terminator.  
+ *nMaxError*  
+ The maximum number of characters the buffer can hold, including the NULL terminator.  
   
- `pnHelpContext`  
- The address of a **UINT** that will receive the help context ID. If **NULL**, no ID will be returned.  
+ *pnHelpContext*  
+ The address of a UINT that will receive the help context ID. If NULL, no ID will be returned.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0 if no error message text is available.  

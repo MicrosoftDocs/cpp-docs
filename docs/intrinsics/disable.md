@@ -2,19 +2,14 @@
 title: "_disable | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_disable_cpp", "_disable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_disable intrinsic", "rsm instruction", "disable intrinsic"]
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _disable
@@ -32,7 +27,7 @@ void _disable(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_disable`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_disable`|x86, ARM, x64|  
   
  **Header file** \<intrin.h>  
   

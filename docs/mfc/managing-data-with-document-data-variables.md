@@ -2,18 +2,13 @@
 title: "Managing Data with Document Data Variables | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["documents [MFC], data storage", "friend classes [MFC]", "classes [MFC], friend", "data [MFC]", "data [MFC], documents", "collection classes [MFC], used by document object", "document data [MFC]", "member variables [MFC], document class [MFC]"]
 ms.assetid: e70b87f4-8c30-49e5-8986-521c2ff91704
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Managing Data with Document Data Variables
@@ -23,7 +18,7 @@ Implement your document's data as member variables of your document class. For e
   
  When you define your document's member data, you will usually add member functions to the document class to set and get data items and perform other useful operations on them.  
   
- Your views access the document object by using the view's pointer to the document, installed in the view at creation time. You can retrieve this pointer in a view's member functions by calling the `CView` member function **GetDocument**. Be sure to cast this pointer to your own document type. Then you can access public document members through the pointer.  
+ Your views access the document object by using the view's pointer to the document, installed in the view at creation time. You can retrieve this pointer in a view's member functions by calling the `CView` member function `GetDocument`. Be sure to cast this pointer to your own document type. Then you can access public document members through the pointer.  
   
  If frequent data transfer requires direct access, or you wish to use the nonpublic members of the document class, you may want to make your view class a friend (in C++ terms) of the document class.  
   

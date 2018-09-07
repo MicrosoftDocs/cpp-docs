@@ -2,19 +2,14 @@
 title: "COleIPFrameWnd Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleIPFrameWnd", "AFXOLE/COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::COleIPFrameWnd", "AFXOLE/COleIPFrameWnd::OnCreateControlBars", "AFXOLE/COleIPFrameWnd::RepositionFrame"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleIPFrameWnd [MFC], COleIPFrameWnd", "COleIPFrameWnd [MFC], OnCreateControlBars", "COleIPFrameWnd [MFC], RepositionFrame"]
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleIPFrameWnd Class
@@ -61,14 +56,14 @@ class COleIPFrameWnd : public CFrameWnd
  **Header:** afxole.h  
   
 ##  <a name="coleipframewnd"></a>  COleIPFrameWnd::COleIPFrameWnd  
- Constructs a `COleIPFrameWnd` object and initializes its in-place state information, which is stored in a structure of type **OLEINPLACEFRAMEINFO**.  
+ Constructs a `COleIPFrameWnd` object and initializes its in-place state information, which is stored in a structure of type OLEINPLACEFRAMEINFO.  
   
 ```  
 COleIPFrameWnd();
 ```  
   
 ### Remarks  
- For more information, see [OLEINPLACEFRAMEINFO](http://msdn.microsoft.com/library/windows/desktop/ms693737) in the Windows SDK.  
+ For more information, see [OLEINPLACEFRAMEINFO](/windows/desktop/api/oleidl/ns-oleidl-tagoifi) in the Windows SDK.  
   
 ##  <a name="oncreatecontrolbars"></a>  COleIPFrameWnd::OnCreateControlBars  
  The framework calls the `OnCreateControlBars` function when an item is activated for in-place editing.  
@@ -89,7 +84,7 @@ virtual BOOL OnCreateControlBars(
  Pointer to the container application's frame window.  
   
  *pWndDoc*  
- Pointer to the container's document-level window. Can be **NULL** if the container is an SDI application.  
+ Pointer to the container's document-level window. Can be NULL if the container is an SDI application.  
   
 ### Return Value  
  Nonzero on success; otherwise, 0.  
@@ -107,10 +102,10 @@ virtual void RepositionFrame(
 ```  
   
 ### Parameters  
- `lpPosRect`  
+ *lpPosRect*  
  Pointer to a `RECT` structure or a `CRect` object containing the in-place frame window's current position coordinates, in pixels, relative to the client area.  
   
- `lpClipRect`  
+ *lpClipRect*  
  Pointer to a `RECT` structure or a `CRect` object containing the in-place frame window's current clipping-rectangle coordinates, in pixels, relative to the client area.  
   
 ### Remarks  

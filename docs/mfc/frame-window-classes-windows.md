@@ -2,19 +2,14 @@
 title: "Frame Window Classes (Windows) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.frame"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["frame window classes [MFC], reference"]
 ms.assetid: 6342ec5f-f922-4da8-a78e-2f5f994c7142
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Frame Window Classes (Windows)

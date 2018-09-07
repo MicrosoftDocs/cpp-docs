@@ -2,19 +2,14 @@
 title: "Add Class Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.addclass"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Add Class dialog box"]
 ms.assetid: 916259b8-8e5f-4267-bd10-313483beba67
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Add Class Dialog Box
@@ -26,7 +21,7 @@ The **Add Class** dialog box contains templates that allow you to:
   
 -   Automatically create your new class by adding the appropriate files and source code to your project.  
   
- You can access the **Add Class** dialog box from the **Project** menu, **Solution Explorer**, or [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  
+ You can access the **Add Class** dialog box from the **Project** menu, **Solution Explorer**, or [Class View](/visualstudio/ide/viewing-the-structure-of-code).  
   
 > [!NOTE]
 >  When you attempt to add a class that is not suited to your current project, you will receive an error message. Click **OK** to return to the **Add Class** dialog box.  

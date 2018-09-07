@@ -2,18 +2,13 @@
 title: "Choosing a Deployment Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["redistributing DLLs", "manifests [C++]", "DLLs [C++], redistributing", "side-by-side assemblies [C++]", "dynamic linking [C++]", "application deployment [C++], methods", "deploying applications [C++], methods", "static linking [C++]", "libraries [C++], application deployment issues"]
 ms.assetid: fd8eb956-f4a0-4ffb-b401-328c73e66986
-caps.latest.revision: 35
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Choosing a Deployment Method
@@ -28,7 +23,7 @@ Unless your Visual C++ application is self-contained and can be deployed by usin
 ## Redistributing Visual C++ Libraries  
  In your deployments, you can redistribute any version of a Visual C++ library that's licensed for redistribution. Here are three ways to deploy them:  
   
--   Central deployment by using redistributable packages, which installs Visual C++ libraries as shared DLLs in %windir%\system32\\. (Installation in this folder requires administrator rights.) You can create a script or setup program that runs the redistributable package before installing your application on the target computer. Redistributable packages are available for the x86, x64, and ARM platforms (VCRedist_x86.exe, VCRedist_x64.exe, or VCRedist_arm.exe). Visual Studio includes these packages in %ProgramFiles(x86)%\Microsoft Visual Studio `version`\VC\Redist\\`locale ID`\\. You can also download them from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=132793). (On the Download Center, search for the "Visual C++ Redistributable Package *Visual Studio version and update*" that matches your application. For example, if you used Visual Studio 2012 update 4 to build your application, then search for "Visual C++ Redistributable Package 2012 update 4".) For information about how to use a redistributable package, see [Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).  
+-   Central deployment by using redistributable packages, which installs Visual C++ libraries as shared DLLs in %windir%\system32\\. (Installation in this folder requires administrator rights.) You can create a script or setup program that runs the redistributable package before installing your application on the target computer. Redistributable packages are available for the x86, x64, and ARM platforms (VCRedist_x86.exe, VCRedist_x64.exe, or VCRedist_arm.exe). Visual Studio includes these packages in %ProgramFiles(x86)%\Microsoft Visual Studio `version`\VC\Redist\\`locale ID`\\. You can also download them from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=132793). (Use the search box in the Download Center to search for the "Visual C++ Redistributable Package *Visual Studio version and update*" that matches your application. For example, if you used Visual Studio 2015 update 3 to build your application, then search for "Visual C++ Redistributable Package 2015 update 3".) For information about how to use a redistributable package, see [Walkthrough: Deploying a Visual C++ Application By Using the Visual C++ Redistributable Package](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).  
   
 -   Central deployment by using merge modules, each of which installs a particular Visual C++ library as a shared DLL in %windir%\system32\\. (Installation to this folder requires administrator rights.) Merge modules become part of the .msi installer file for your application. Visual C++ redistributable merge modules are included in Visual Studio, in \Program Files (x86)\Common Files\Merge Modules\\. For more information, see [Redistributing By Using Merge Modules](../ide/redistributing-components-by-using-merge-modules.md).  
   
@@ -43,7 +38,5 @@ Unless your Visual C++ application is self-contained and can be deployed by usin
   
 ## See Also  
  [Deploying Desktop Applications](../ide/deploying-native-desktop-applications-visual-cpp.md)   
- [Not in Build: Choosing a Deployment Strategy](http://msdn.microsoft.com/en-us/ecd632d8-063c-4028-b785-81bba045107b)   
- [Windows Installer Deployment Overview](http://msdn.microsoft.com/en-us/3ce4610a-b54f-404e-b650-42f4a55dfc3b)   
  [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
  [Deployment Examples](../ide/deployment-examples.md)

@@ -2,19 +2,14 @@
 title: "managed, unmanaged | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.unmanaged", "managed_CPP", "unmanaged_CPP", "vc-pragma.managed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["managed pragma", "pragmas, unmanaged", "pragmas, managed", "unmanaged pragma"]
 ms.assetid: f072ddcc-e1ec-408a-8ce1-326ddb60e4a4
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # managed, unmanaged
@@ -23,31 +18,31 @@ Enable function-level control for compiling functions as managed or unmanaged.
 ## Syntax  
   
 ```  
-  
-      #pragma managed  
+#pragma managed  
 #pragma unmanaged  
 #pragma managed([push,] on | off)  
 #pragma managed(pop)  
 ```  
   
 ## Remarks  
- The [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option provides module-level control for compiling functions either as managed or unmanaged.  
+
+The [/clr](../build/reference/clr-common-language-runtime-compilation.md) compiler option provides module-level control for compiling functions either as managed or unmanaged.  
   
- An unmanaged function will be compiled for the native platform, and execution of that portion of the program will be passed to the native platform by the common language runtime.  
+An unmanaged function will be compiled for the native platform, and execution of that portion of the program will be passed to the native platform by the common language runtime.  
   
- Functions are compiled as managed by default when **/clr** is used.  
+Functions are compiled as managed by default when `/clr` is used.  
   
- When applying these pragmas:  
+When applying these pragmas:  
   
--   Add the pragma preceding a function but not within a function body.  
+- Add the pragma preceding a function but not within a function body.  
   
--   Add the pragma after `#include` statements. Do not use these pragmas before `#include` statements.  
+- Add the pragma after `#include` statements. Do not use these pragmas before `#include` statements.  
   
- The compiler ignores the `managed` and `unmanaged` pragmas if **/clr** is not used in the compilation.  
+The compiler ignores the **managed** and **unmanaged** pragmas if `/clr` is not used in the compilation.  
   
- When a template function is instantiated, the pragma state at the time of definition for the template determines if it is managed or unmanaged.  
+When a template function is instantiated, the pragma state at the time of definition for the template determines if it is managed or unmanaged.  
   
- For more information, see [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md).  
+For more information, see [Initialization of Mixed Assemblies](../dotnet/initialization-of-mixed-assemblies.md).  
   
 ## Example  
   
@@ -86,4 +81,5 @@ In unmanaged function.
 ```  
   
 ## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

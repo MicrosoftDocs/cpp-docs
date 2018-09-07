@@ -2,18 +2,13 @@
 title: "Consumer Wizard-Generated Methods | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OpenAll method", "attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "methods [C++], OLE DB Consumer Wizard-generated", "CloseDataSource method", "consumer wizard-generated classes and methods", "OpenDataSource method", "CloseAll method", "OpenRowset method", "GetRowsetProperties method"]
 ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Consumer Wizard-Generated Methods
@@ -33,14 +28,15 @@ The ATL OLE DB Consumer Wizard and the MFC Application Wizard generate certain f
   
 ## OpenAll and CloseAll  
   
-```  
+```cpp  
 HRESULT OpenAll();   
+
 void CloseAll();  
 ```  
   
- The following example shows how you can call `OpenAll` and `CloseAll` when you execute the same command repeatedly. Compare the code example in [CCommand::Close](../../data/oledb/ccommand-close.md), which shows a variation that calls **Close** and `ReleaseCommand` instead of `CloseAll`.  
+ The following example shows how you can call `OpenAll` and `CloseAll` when you execute the same command repeatedly. Compare the code example in [CCommand::Close](../../data/oledb/ccommand-close.md), which shows a variation that calls `Close` and `ReleaseCommand` instead of `CloseAll`.  
   
-```  
+```cpp  
 int main(int argc, char* argv[])  
 {  
    HRESULT hr;  
@@ -76,14 +72,14 @@ int main(int argc, char* argv[])
   
 ## OpenRowset  
   
-```  
+```cpp  
 // OLE DB Template version:   
 HRESULT OpenRowset(DBPROPSET* pPropSet = NULL)  
 // Attribute-injected version:  
 HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand = NULL);  
 ```  
   
- **OpenAll** calls this method to open the rowset or rowsets in the consumer. Typically, you do not need to call `OpenRowset` unless you want to work with multiple data sources/sessions/rowsets. `OpenRowset` is declared in the command or table class header file:  
+ `OpenAll` calls this method to open the rowset or rowsets in the consumer. Typically, you do not need to call `OpenRowset` unless you want to work with multiple data sources/sessions/rowsets. `OpenRowset` is declared in the command or table class header file:  
   
 ```  
 // OLE DB Template version:  
@@ -100,7 +96,7 @@ HRESULT OpenRowset(DBPROPSET *pPropSet = NULL)
   
  The attributes implement this method differently. This version takes a session object and a command string that defaults to the command string specified in db_command, although you can pass a different one. Note that if you define a `HasBookmark` method, the `OpenRowset` code sets the DBPROP_IRowsetLocate property; make sure you only do this if your provider supports that property.  
   
-```  
+```cpp  
 // Attribute-injected version:  
 HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand=NULL)  
 {  
@@ -119,13 +115,13 @@ HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand=NULL)
   
 ## GetRowsetProperties  
   
-```  
+```cpp 
 void GetRowsetProperties(CDBPropSet* pPropSet);  
 ```  
   
  This method retrieves a pointer to the rowset's property set; you can use this pointer to set properties such as DBPROP_IRowsetChange. `GetRowsetProperties` is used in the user record class as follows. You can modify this code to set additional rowset properties:  
   
-```  
+```cpp  
 void GetRowsetProperties(CDBPropSet* pPropSet)  
 {  
    pPropSet->AddProperty(DBPROP_CANFETCHBACKWARDS, true, DBPROPOPTIONS_OPTIONAL);  
@@ -140,8 +136,9 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
   
 ## OpenDataSource and CloseDataSource  
   
-```  
+```cpp  
 HRESULT OpenDataSource();   
+
 void CloseDataSource();  
 ```  
   

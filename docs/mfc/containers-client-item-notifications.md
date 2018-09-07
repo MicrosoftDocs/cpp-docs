@@ -2,18 +2,13 @@
 title: "Containers: Client-Item Notifications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["notifications [MFC], container client item", "OLE containers [MFC], client-item notifications", "client items and OLE containers"]
 ms.assetid: e1f1c427-01f5-45f2-b496-c5bce3d76340
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Containers: Client-Item Notifications
@@ -25,11 +20,11 @@ This article discusses the overridable functions that the MFC framework calls wh
   
 |Notification|Meaning|  
 |------------------|-------------|  
-|`OLE_CHANGED`|The OLE item's appearance has changed.|  
-|`OLE_SAVED`|The OLE item has been saved.|  
-|`OLE_CLOSED`|The OLE item has been closed.|  
+|**OLE_CHANGED**|The OLE item's appearance has changed.|  
+|**OLE_SAVED**|The OLE item has been saved.|  
+|**OLE_CLOSED**|The OLE item has been closed.|  
 |**OLE_RENAMED**|The server document containing the OLE item has been renamed.|  
-|`OLE_CHANGED_STATE`|The OLE item has changed from one state to another.|  
+|**OLE_CHANGED_STATE**|The OLE item has changed from one state to another.|  
 |**OLE_CHANGED_ASPECT**|The OLE item's draw aspect has been changed by the framework.|  
   
  These values are from the **OLE_NOTIFICATION** enumeration, which is defined in AFXOLE.H.  
@@ -38,9 +33,9 @@ This article discusses the overridable functions that the MFC framework calls wh
   
 |When first argument is|Second argument|  
 |----------------------------|---------------------|  
-|`OLE_SAVED` or `OLE_CLOSED`|Is not used.|  
-|`OLE_CHANGED`|Specifies the aspect of the OLE item that has changed.|  
-|`OLE_CHANGED_STATE`|Describes the state being entered (`emptyState`, **loadedState**, `openState`, `activeState`, or `activeUIState`).|  
+|**OLE_SAVED** or **OLE_CLOSED**|Is not used.|  
+|**OLE_CHANGED**|Specifies the aspect of the OLE item that has changed.|  
+|**OLE_CHANGED_STATE**|Describes the state being entered (*emptyState*, *loadedState*, *openState*, *activeState*, or *activeUIState*).|  
   
  For more information about the states a client item can assume, see [Containers: Client-Item States](../mfc/containers-client-item-states.md).  
   

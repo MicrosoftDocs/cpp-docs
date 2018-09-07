@@ -2,19 +2,14 @@
 title: "property (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["property_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["property __declspec keyword", "__declspec keyword [C++], property"]
 ms.assetid: f3b850ba-bf48-4df7-a1d6-8259d97309ce
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # property (C++)
@@ -25,18 +20,17 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-      __declspec( property( get=get_func_name ) ) declarator  
-__declspec( property( put=put_func_name ) ) declarator  
-__declspec( property( get=get_func_name, put=put_func_name ) ) declarator  
+   __declspec( property( get=get_func_name ) ) declarator  
+   __declspec( property( put=put_func_name ) ) declarator  
+   __declspec( property( get=get_func_name, put=put_func_name ) ) declarator  
 ```  
   
 ## Remarks  
- When the compiler sees a data member declared with this attribute on the right of a member-selection operator ("**.**" or "**->**"), it converts the operation to a **get** or **put** function, depending on whether such an expression is an l-value or an r-value. In more complicated contexts, such as "`+=`", a rewrite is performed by doing both **get** and **put**.  
+ When the compiler sees a data member declared with this attribute on the right of a member-selection operator ("**.**" or "**->**"), it converts the operation to a `get` or `put` function, depending on whether such an expression is an l-value or an r-value. In more complicated contexts, such as "`+=`", a rewrite is performed by doing both `get` and `put`.  
   
  This attribute can also be used in the declaration of an empty array in a class or structure definition. For example:  
   
-```  
+```cpp 
 __declspec(property(get=GetX, put=PutX)) int x[];  
 ```  
   
@@ -46,7 +40,7 @@ __declspec(property(get=GetX, put=PutX)) int x[];
   
 ## Example  
   
-```  
+```cpp 
 // declspec_property.cpp  
 struct S {  
    int i;  
@@ -68,6 +62,6 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)

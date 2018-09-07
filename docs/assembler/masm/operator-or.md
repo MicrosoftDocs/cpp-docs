@@ -1,31 +1,25 @@
 ---
 title: "operator OR | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "08/30/2018"
+ms.technology: ["cpp-masm"]
+ms.topic: "reference"
 f1_keywords: ["operator OR", "Or"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator OR", "OR operator, bitwise"]
 ms.assetid: fab36ba6-8ee0-4778-beb9-21dce6d99db7
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # operator OR
-Returns the result of a bitwise `OR` operation for *expression1* and *expression2*.  
-  
-## Syntax  
-  
-```  
-  
-expression1 OR expression2  
-```  
-  
-## See Also  
- [Operators Reference](../../assembler/masm/operators-reference.md)
+
+Returns the result of a bitwise `OR` operation for *expression1* and *expression2*.
+
+## Syntax
+
+> expression1 OR expression2
+
+## See also
+
+[Operators Reference](../../assembler/masm/operators-reference.md)<br/>

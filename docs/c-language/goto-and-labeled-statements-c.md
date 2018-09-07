@@ -2,43 +2,38 @@
 title: "goto and Labeled Statements (C) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 f1_keywords: ["goto"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["labeled statement", "statements, labeled", "goto keyword [C]"]
 ms.assetid: 3d0473dc-4b18-4fcc-9616-31a38499d7d7
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # goto and Labeled Statements (C)
 The `goto` statement transfers control to a label. The given label must reside in the same function and can appear before only one statement in the same function.  
   
-## Syntax  
- *statement*:  
- *labeled-statement*  
+## Syntax
+
+*statement*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*labeled-statement*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*jump-statement*
+
+*jump-statement*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**goto**  *identifier*  **;**
+
+*labeled-statement*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*identifier*  **:**  *statement*
+
+A statement label is meaningful only to a `goto` statement; in any other context, a labeled statement is executed without regard to the label.  
   
- *jump-statement*  
+A *jump-statement* must reside in the same function and can appear before only one statement in the same function. The set of *identifier* names following a `goto` has its own name space so the names do not interfere with other identifiers. Labels cannot be redeclared. See [Name Spaces](../c-language/name-spaces.md) for more information.  
   
- *jump-statement*:  
- **goto**  *identifier*  **;**  
+It is good programming style to use the **break**, **continue**, and `return` statement in preference to `goto` whenever possible. Since the **break** statement only exits from one level of the loop, a `goto` may be necessary for exiting a loop from within a deeply nested loop.  
   
- *labeled-statement*:  
- *identifier*  **:**  *statement*  
-  
- A statement label is meaningful only to a `goto` statement; in any other context, a labeled statement is executed without regard to the label.  
-  
- A *jump-statement* must reside in the same function and can appear before only one statement in the same function. The set of *identifier* names following a `goto` has its own name space so the names do not interfere with other identifiers. Labels cannot be redeclared. See [Name Spaces](../c-language/name-spaces.md) for more information.  
-  
- It is good programming style to use the **break**, **continue**, and `return` statement in preference to `goto` whenever possible. Since the **break** statement only exits from one level of the loop, a `goto` may be necessary for exiting a loop from within a deeply nested loop.  
-  
- This example demonstrates the `goto` statement:  
+This example demonstrates the `goto` statement:  
   
 ```  
 // goto.c  
@@ -66,7 +61,7 @@ int main()
 }  
 ```  
   
- In this example, a `goto` statement transfers control to the point labeled `stop` when `i` equals 5.  
+In this example, a `goto` statement transfers control to the point labeled `stop` when `i` equals 5.  
   
 ## See Also  
- [Statements](../c-language/statements-c.md)
+[Statements](../c-language/statements-c.md)

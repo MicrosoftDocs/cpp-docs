@@ -2,19 +2,14 @@
 title: "CD2DLayer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DLayer", "AFXRENDERTARGET/CD2DLayer", "AFXRENDERTARGET/CD2DLayer::CD2DLayer", "AFXRENDERTARGET/CD2DLayer::Attach", "AFXRENDERTARGET/CD2DLayer::Create", "AFXRENDERTARGET/CD2DLayer::Destroy", "AFXRENDERTARGET/CD2DLayer::Detach", "AFXRENDERTARGET/CD2DLayer::Get", "AFXRENDERTARGET/CD2DLayer::GetSize", "AFXRENDERTARGET/CD2DLayer::IsValid", "AFXRENDERTARGET/CD2DLayer::m_pLayer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DLayer [MFC], CD2DLayer", "CD2DLayer [MFC], Attach", "CD2DLayer [MFC], Create", "CD2DLayer [MFC], Destroy", "CD2DLayer [MFC], Detach", "CD2DLayer [MFC], Get", "CD2DLayer [MFC], GetSize", "CD2DLayer [MFC], IsValid", "CD2DLayer [MFC], m_pLayer"]
 ms.assetid: 2f96378e-66bb-40d1-9661-6afe324de3c1
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DLayer Class
@@ -84,7 +79,7 @@ void Attach(ID2D1Layer* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dlayer"></a>  CD2DLayer::CD2DLayer  
@@ -97,10 +92,10 @@ CD2DLayer(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DLayer::Create  
@@ -111,7 +106,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  

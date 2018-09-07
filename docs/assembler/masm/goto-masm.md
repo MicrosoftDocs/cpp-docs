@@ -1,36 +1,29 @@
 ---
 title: "GOTO (MASM) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "08/30/2018"
+ms.technology: ["cpp-masm"]
+ms.topic: "reference"
 f1_keywords: ["goto"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["GOTO directive"]
 ms.assetid: 6a5f73e7-6784-4eae-ac52-4fc77a7f369f
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # GOTO (MASM)
-Transfers assembly to the line marked **:***macrolabel*.  
-  
-## Syntax  
-  
-```  
-  
-GOTO   
-macrolabel  
-  
-```  
-  
-## Remarks  
- **GOTO** is permitted only inside [MACRO](../../assembler/masm/macro.md), [FOR](../../assembler/masm/for-masm.md), [FORC](../../assembler/masm/forc.md), [REPEAT](../../assembler/masm/repeat.md), and **WHILE** blocks. The label must be the only directive on the line and must be preceded by a leading colon.  
-  
-## See Also  
- [Directives Reference](../../assembler/masm/directives-reference.md)
+
+Transfers assembly to the line marked **:**_macrolabel_.
+
+## Syntax
+
+> **GOTO** *macrolabel*
+
+## Remarks
+
+**GOTO** is permitted only inside [MACRO](macro.md), [FOR](for-masm.md), [FORC](forc.md), [REPEAT](repeat.md), and [WHILE](while-masm.md) blocks. The *macrolabel* target must be the only directive on the line and must be preceded by a leading colon.
+
+## See also
+
+[Directives Reference](../../assembler/masm/directives-reference.md)<br/>

@@ -2,19 +2,14 @@
 title: "_umul128 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__umul128"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__umul128 intrinsic"]
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _umul128
@@ -49,7 +44,7 @@ unsigned __int64 _umul128( 
   
 |Intrinsic|Architecture|Header|  
 |---------------|------------------|------------|  
-|`_umul128`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h>|  
+|`_umul128`|ARM, x64|\<intrin.h>|  
   
 ## Example  
   

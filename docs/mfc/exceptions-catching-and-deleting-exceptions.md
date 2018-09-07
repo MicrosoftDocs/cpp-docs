@@ -2,22 +2,17 @@
 title: "Exceptions: Catching and Deleting Exceptions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["exceptions [MFC], deleting", "AND_CATCH macro [MFC]", "try-catch exception handling [MFC], catching and deleting exceptions", "exception handling [MFC], catching and deleting exceptions", "catch blocks [MFC], catching and deleting exceptions", "execution [MFC], returns from within catch block"]
 ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exceptions: Catching and Deleting Exceptions
-The following instructions and examples show you how to catch and delete exceptions. For more information on the **try**, **catch**, and `throw` keywords, see [C++ Exception Handling](../cpp/cpp-exception-handling.md).  
+The following instructions and examples show you how to catch and delete exceptions. For more information on the **try**, **catch**, and **throw** keywords, see [C++ Exception Handling](../cpp/cpp-exception-handling.md).  
   
  Your exception handlers must delete exception objects they handle, because failure to delete the exception causes a memory leak whenever that code catches an exception.  
   
@@ -32,7 +27,7 @@ The following instructions and examples show you how to catch and delete excepti
 -   Execution returns from within the **catch** block.  
   
 > [!NOTE]
->  When deleting a `CException`, use the **Delete** member function to delete the exception. Do not use the **delete** keyword, because it can fail if the exception is not on the heap.  
+>  When deleting a `CException`, use the `Delete` member function to delete the exception. Do not use the **delete** keyword, because it can fail if the exception is not on the heap.  
   
 #### To catch and delete exceptions  
   

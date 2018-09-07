@@ -2,19 +2,14 @@
 title: "CDockState Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDockState", "AFXADV/CDockState", "AFXADV/CDockState::Clear", "AFXADV/CDockState::GetVersion", "AFXADV/CDockState::LoadState", "AFXADV/CDockState::SaveState", "AFXADV/CDockState::m_arrBarInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDockState [MFC], Clear", "CDockState [MFC], GetVersion", "CDockState [MFC], LoadState", "CDockState [MFC], SaveState", "CDockState [MFC], m_arrBarInfo"]
 ms.assetid: 09e7c10b-3abd-4cb2-ad36-42420fe6bc36
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDockState Class
@@ -91,7 +86,7 @@ void LoadState(LPCTSTR lpszProfileName);
 ```  
   
 ### Parameters  
- `lpszProfileName`  
+ *lpszProfileName*  
  Points to a null-teminated string that specifies the name of a section in the initialization file or a key in the Windows registry where state information is stored.  
   
 ### Remarks  
@@ -112,7 +107,7 @@ void SaveState(LPCTSTR lpszProfileName);
 ```  
   
 ### Parameters  
- `lpszProfileName`  
+ *lpszProfileName*  
  Points to a null-teminated string that specifies the name of a section in the initialization file or a key in the Windows registry where state information is stored.  
   
 ### Remarks  

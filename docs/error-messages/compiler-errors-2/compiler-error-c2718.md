@@ -2,19 +2,14 @@
 title: "Compiler Error C2718 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2718"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2718"]
 ms.assetid: 78cc71f8-c142-46fc-9aed-970635d74f0c
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2718

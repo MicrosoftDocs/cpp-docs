@@ -2,19 +2,14 @@
 title: "CSharedFile Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSharedFile", "AFXADV/CSharedFile", "AFXADV/CSharedFile::CSharedFile", "AFXADV/CSharedFile::Detach", "AFXADV/CSharedFile::SetHandle"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSharedFile [MFC], CSharedFile", "CSharedFile [MFC], Detach", "CSharedFile [MFC], SetHandle"]
 ms.assetid: 5d000422-9ede-4318-a8c9-f7412b674f39
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CSharedFile Class
@@ -44,9 +39,9 @@ class CSharedFile : public CMemFile
 ## Remarks  
  Memory files behave like disk files except that the file is stored in RAM rather than on disk. A memory file is useful for fast temporary storage or for transferring raw bytes or serialized objects between independent processes.  
   
- Shared memory files differ from other memory files in that memory for them is allocated with the [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows function. The `CSharedFile` class stores data in a globally allocated memory block (created using **GlobalAlloc**), and this memory block can be shared using DDE, the Clipboard, or other OLE/COM uniform data transfer operations, for example, using `IDataObject`.  
+ Shared memory files differ from other memory files in that memory for them is allocated with the [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows function. The `CSharedFile` class stores data in a globally allocated memory block (created using `GlobalAlloc`), and this memory block can be shared using DDE, the Clipboard, or other OLE/COM uniform data transfer operations, for example, using `IDataObject`.  
   
- **GlobalAlloc** returns an `HGLOBAL` handle rather than a pointer to memory, such as the pointer returned by [malloc](../../c-runtime-library/reference/malloc.md). The `HGLOBAL` handle is needed in certain applications. For example, to put data on the Clipboard you need an `HGLOBAL` handle.  
+ `GlobalAlloc` returns an HGLOBAL handle rather than a pointer to memory, such as the pointer returned by [malloc](../../c-runtime-library/reference/malloc.md). The HGLOBAL handle is needed in certain applications. For example, to put data on the Clipboard you need an HGLOBAL handle.  
   
  Please note that `CSharedFile` does not use memory-mapped files, and the data cannot be directly shared between processes.  
   
@@ -77,9 +72,9 @@ CSharedFile(
   
 ### Parameters  
  *nAllocFlags*  
- Flags indicating how memory is to be allocated. See [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) for a list of valid flag values.  
+ Flags indicating how memory is to be allocated. See [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) for a list of valid flag values.  
   
- `nGrowBytes`  
+ *nGrowBytes*  
  The memory allocation increment in bytes.  
   
 ##  <a name="detach"></a>  CSharedFile::Detach  
@@ -108,11 +103,11 @@ void SetHandle(
  *hGlobalMemory*  
  Handle to the global memory to be attached to the `CSharedFile`.  
   
- `bAllowGrow`  
+ *bAllowGrow*  
  Specifies whether the memory block is allowed to grow.  
   
 ### Remarks  
- If `bAllowGrow` is nonzero, the size of the memory block is increased as necessary, for example, if an attempt is made to write more bytes to the file than were allocated for the memory block.  
+ If *bAllowGrow* is nonzero, the size of the memory block is increased as necessary, for example, if an attempt is made to write more bytes to the file than were allocated for the memory block.  
   
 ## See Also  
  [CMemFile Class](../../mfc/reference/cmemfile-class.md)   

@@ -2,19 +2,14 @@
 title: "Fatal Error C1083 | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/01/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C1083"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C1083"]
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Fatal Error C1083
@@ -79,7 +74,7 @@ To set the include directory path in Visual Studio, open the project’s **Prope
 
 ## The command line INCLUDE or LIB environment is not set
 
-When the compiler is invoked on the command line, environment variables are often used to specify search paths. If the search path described by the **INCLUDE** or **LIB** environment variable is not set correctly, a C1083 error can be generated. We strongly recommend using a developer command prompt shortcut to set the basic environment for command line builds. For more information, see see [Build C/C++ on the Command Line](../../build/building-on-the-command-line.md). For more information about how to use environment variables, see [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build).
+When the compiler is invoked on the command line, environment variables are often used to specify search paths. If the search path described by the **INCLUDE** or **LIB** environment variable is not set correctly, a C1083 error can be generated. We strongly recommend using a developer command prompt shortcut to set the basic environment for command line builds. For more information, see [Build C/C++ on the Command Line](../../build/building-on-the-command-line.md). For more information about how to use environment variables, see [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build).
 
 ## The file may be locked or in use
 
@@ -100,6 +95,8 @@ When a project is configured to use precompiled headers, the relevant .pch files
 - The file uses managed code, but the compiler option **/clr** is not specified. For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).
 
 - The file is compiled by using a different **/analyze** compiler option setting than is used to precompile the headers. When the headers for a project are precompiled, all should use the same **/analyze** settings. For more information, see [/analyze (Code Analysis)](../../build/reference/analyze-code-analysis.md).
+
+- The file or directory was created by the Windows Subsystem for Linux, per-directory case sensitivity is enabled, and the specified case of a path or file does not match the case of the path or file on disk.
 
 - The file, the directory, or the disk is read-only.
 
@@ -122,4 +119,4 @@ For information about how to build C/C++ projects in the IDE or on the command l
 
 ## See also
 
-[MSBuild Properties](/visualstudio/msbuild/msbuild-properties)
+- [MSBuild Properties](/visualstudio/msbuild/msbuild-properties)

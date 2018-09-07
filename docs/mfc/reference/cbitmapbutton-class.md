@@ -2,19 +2,14 @@
 title: "CBitmapButton Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CBitmapButton", "AFXEXT/CBitmapButton", "AFXEXT/CBitmapButton::CBitmapButton", "AFXEXT/CBitmapButton::AutoLoad", "AFXEXT/CBitmapButton::LoadBitmaps", "AFXEXT/CBitmapButton::SizeToContent"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBitmapButton [MFC], CBitmapButton", "CBitmapButton [MFC], AutoLoad", "CBitmapButton [MFC], LoadBitmaps", "CBitmapButton [MFC], SizeToContent"]
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CBitmapButton Class
@@ -54,11 +49,11 @@ class CBitmapButton : public CButton
 |Up|Down|Focused|Disabled|Application|  
 |--------|----------|-------------|--------------|-----------------|  
 |×||||Bitmap|  
-|×|×|||Button without **WS_TABSTOP** style|  
+|×|×|||Button without WS_TABSTOP style|  
 |×|×|×|×|Dialog button with all states|  
-|×|×|×||Dialog button with **WS_TABSTOP** style|  
+|×|×|×||Dialog button with WS_TABSTOP style|  
   
- When creating a bitmap-button control, set the **BS_OWNERDRAW** style to specify that the button is owner-drawn. This causes Windows to send the `WM_MEASUREITEM` and `WM_DRAWITEM` messages for the button; the framework handles these messages and manages the appearance of the button for you.  
+ When creating a bitmap-button control, set the BS_OWNERDRAW style to specify that the button is owner-drawn. This causes Windows to send the WM_MEASUREITEM and WM_DRAWITEM messages for the button; the framework handles these messages and manages the appearance of the button for you.  
   
 ### To create a bitmap-button control in a window's client area  
   
@@ -76,15 +71,15 @@ class CBitmapButton : public CButton
   
 2.  Create a dialog template with an owner-draw button positioned where you want the bitmap button. The size of the button in the template does not matter.  
   
-3.  Set the button's caption to a value such as " **MYIMAGE**" and define a symbol for the button such as **IDC_MYIMAGE**.  
+3.  Set the button's caption to a value such as " MYIMAGE" and define a symbol for the button such as IDC_MYIMAGE.  
   
-4.  In your application's resource script, give each of the images created for the button an ID constructed by appending one of the letters "U," "D," "F," or "X" (for up, down, focused, and disabled) to the string used for the button caption in step 3. For the button caption " **MYIMAGE**," for example, the IDs would be " **MYIMAGEU**," " **MYIMAGED**," " **MYIMAGEF**," and " **MYIMAGEX**." You **must** specify the ID of your bitmaps within double quotes. Otherwise the resource editor will assign an integer to the resource and MFC will fail when loading the image.  
+4.  In your application's resource script, give each of the images created for the button an ID constructed by appending one of the letters "U," "D," "F," or "X" (for up, down, focused, and disabled) to the string used for the button caption in step 3. For the button caption " MYIMAGE," for example, the IDs would be " MYIMAGEU," " MYIMAGED," " MYIMAGEF," and " MYIMAGEX." You **must** specify the ID of your bitmaps within double quotes. Otherwise the resource editor will assign an integer to the resource and MFC will fail when loading the image.  
   
 5.  In your application's dialog class (derived from `CDialog`), add a `CBitmapButton` member object.  
   
 6.  In the `CDialog` object's [OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog) routine, call the `CBitmapButton` object's [AutoLoad](#autoload) function, using as parameters the button's control ID and the `CDialog` object's **this** pointer.  
   
- If you want to handle Windows notification messages, such as **BN_CLICKED**, sent by a bitmap-button control to its parent (usually a class derived from **CDialog)**, add to the `CDialog`-derived object a message-map entry and message-handler member function for each message. The notifications sent by a `CBitmapButton` object are the same as those sent by a [CButton](../../mfc/reference/cbutton-class.md) object.  
+ If you want to handle Windows notification messages, such as BN_CLICKED, sent by a bitmap-button control to its parent (usually a class derived from `CDialog`), add to the `CDialog`-derived object a message-map entry and message-handler member function for each message. The notifications sent by a `CBitmapButton` object are the same as those sent by a [CButton](../../mfc/reference/cbutton-class.md) object.  
   
  The class [CToolBar](../../mfc/reference/ctoolbar-class.md) takes a different approach to bitmap buttons.  
   
@@ -114,10 +109,10 @@ BOOL AutoLoad(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The button's control ID.  
   
- `pParent`  
+ *pParent*  
  Pointer to the object that owns the button.  
   
 ### Return Value  
@@ -165,13 +160,13 @@ BOOL LoadBitmaps(
  Points to the null-terminated string that contains the name of the bitmap for a bitmap button's normal or "up" state. Required.  
   
  *lpszBitmapResourceSel*  
- Points to the null-terminated string that contains the name of the bitmap for a bitmap button's selected or "down" state. May be **NULL**.  
+ Points to the null-terminated string that contains the name of the bitmap for a bitmap button's selected or "down" state. May be NULL.  
   
  *lpszBitmapResourceFocus*  
- Points to the null-terminated string that contains the name of the bitmap for a bitmap button's focused state. May be **NULL**.  
+ Points to the null-terminated string that contains the name of the bitmap for a bitmap button's focused state. May be NULL.  
   
  *lpszBitmapResourceDisabled*  
- Points to the null-terminated string that contains the name of the bitmap for a bitmap button's disabled state. May be **NULL**.  
+ Points to the null-terminated string that contains the name of the bitmap for a bitmap button's disabled state. May be NULL.  
   
  *nIDBitmapResource*  
  Specifies the resource ID number of the bitmap resource for a bitmap button's normal or "up" state. Required.  

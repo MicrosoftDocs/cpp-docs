@@ -2,18 +2,13 @@
 title: "Drag and Drop: Implementing a Drop Target | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE drag and drop [MFC], implementing drop targets", "OLE drag and drop [MFC], drop target", "drag and drop [MFC], drop target"]
 ms.assetid: 0689f1ec-5326-4008-b226-4b373c881358
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Drag and Drop: Implementing a Drop Target
@@ -23,7 +18,7 @@ This article outlines how to make your application a drop target. Implementing a
   
 1.  Add a member variable to each view in the application that you want to be a drop target. This member variable must be of type `COleDropTarget` or a class derived from it.  
   
-2.  From your view class's function that handles the `WM_CREATE` message (typically `OnCreate`), call the new member variable's `Register` member function. `Revoke` will be called automatically for you when your view is destroyed.  
+2.  From your view class's function that handles the **WM_CREATE** message (typically `OnCreate`), call the new member variable's `Register` member function. `Revoke` will be called automatically for you when your view is destroyed.  
   
 3.  Override the following functions. If you want the same behavior throughout your application, override these functions in your view class. If you want to modify behavior in isolated cases or want to enable dropping on non-`CView` windows, override these functions in your `COleDropTarget`-derived class.  
   

@@ -2,19 +2,14 @@
 title: "CMFCCustomColorsPropertyPage Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCCustomColorsPropertyPage", "AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage", "AFXCUSTOMCOLORSPROPERTYPAGE/CMFCCustomColorsPropertyPage::Setup"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCCustomColorsPropertyPage [MFC], Setup"]
 ms.assetid: 46a45ba2-1fda-440d-8018-d4dcd44f5816
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCCustomColorsPropertyPage Class
@@ -83,9 +78,9 @@ void Setup(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `R`|The red component of the RGB value.|  
-|[in] `G`|The green component of the RGB value.|  
-|[in] `B`|The blue component of the RGB value.|  
+|[in] *R*|The red component of the RGB value.|  
+|[in] *G*|The green component of the RGB value.|  
+|[in] *B*|The blue component of the RGB value.|  
   
 ### Remarks  
  This method updates the current RGB and the associated HLS (hue, lightness, and saturation) color values of the property page. The [CMFCColorDialog::SetPageTwo](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) method calls this method when the framework initializes the color dialog box or the user presses the left mouse button. For more information about `CMFCColorDialog`, see [CMFCColorDialog Class](../../mfc/reference/cmfccolordialog-class.md).  

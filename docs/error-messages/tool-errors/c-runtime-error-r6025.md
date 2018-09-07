@@ -2,19 +2,14 @@
 title: "C Runtime Error R6025 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["R6025"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["R6025"]
 ms.assetid: afa06d98-9c36-445b-b3e7-b6409bc8e779
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Runtime Error R6025
@@ -33,6 +28,5 @@ pure virtual function call
   
  No object has been instantiated to handle the pure virtual function call.  
   
- This error is caused by calling a virtual function in an abstract base class through a pointer which is created by a cast to the type of the derived class, but is actually a pointer to the base class. This can occur when casting from a **void\*** to a pointer to a class when the **void\*** was created during the construction of the base class.  
+ This error is caused by calling a virtual function in an abstract base class through a pointer which is created by a cast to the type of the derived class, but is actually a pointer to the base class. This can occur when casting from a **void**<strong>\*</strong> to a pointer to a class when the **void**<strong>\*</strong> was created during the construction of the base class.  
   
- For more information, see the [Microsoft support](http://go.microsoft.com/fwlink/p/?linkid=75220) website.

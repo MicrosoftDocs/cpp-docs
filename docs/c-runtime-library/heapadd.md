@@ -2,11 +2,8 @@
 title: "_heapadd | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["_heapadd"]
 apilocation: ["msvcr100.dll", "msvcr110_clr0400.dll", "msvcr120.dll", "msvcr80.dll", "msvcrt.dll", "msvcr110.dll", "msvcr90.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["heapadd", "_heapadd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_heapadd function", "memory, adding to heaps", "heaps, adding memory", "heapadd function"]
 ms.assetid: 4d691fe2-2763-49f4-afb1-62738b7cd3ff
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _heapadd

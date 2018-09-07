@@ -1,25 +1,20 @@
 ---
 title: "How to: Convert Between Various String Types | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["converting string types", "string conversion [C++]", "strings [C++], converting"]
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-caps.latest.revision: 13
-author: "ghogen"
-ms.author: "ghogen"
-manager: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # How to: Convert Between Various String Types
 This topic demonstrates how to convert various Visual C++ string types into other strings. The strings types that are covered include `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), and <xref:System.String?displayProperty=fullName>. In all cases, a copy of the string is made when converted to the new type. Any changes made to the new string will not affect the original string, and vice versa.  
   
-## Converting from char *  
+## Converting from char \*  
   
 ## Example  
   
@@ -28,7 +23,7 @@ This topic demonstrates how to convert various Visual C++ string types into othe
   
 ### Code  
   
-```  
+```cpp  
 // convert_from_char.cpp  
 // compile with: /clr /link comsuppw.lib  
   
@@ -108,9 +103,7 @@ int main()
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 Hello, World! (char *)  
 Hello, World! (wchar_t *)  
 Hello, World! (_bstr_t)  
@@ -121,7 +114,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)  
 ```  
   
-## Converting from wchar_t *  
+## Converting from wchar_t \*  
   
 ## Example  
   
@@ -130,7 +123,7 @@ Hello, World! (System::String)
   
 ### Code  
   
-```  
+```cpp  
 // convert_from_wchar_t.cpp  
 // compile with: /clr /link comsuppw.lib  
   
@@ -231,11 +224,9 @@ int main()
     Console::WriteLine("{0}", systemstring);  
     delete systemstring;  
 }  
-```  
+```   
   
-### Output  
-  
-```  
+```Output  
 Hello, World! (wchar_t *)  
 Hello, World! (char *)  
 Hello, World! (_bstr_t)  
@@ -255,7 +246,7 @@ Hello, World! (System::String)
   
 ### Code  
   
-```  
+```cpp  
 // convert_from_bstr_t.cpp  
 // compile with: /clr /link comsuppw.lib  
   
@@ -332,11 +323,9 @@ int main()
     Console::WriteLine("{0}", systemstring);  
     delete systemstring;  
 }  
-```  
+```   
   
-### Output  
-  
-```  
+```Output  
 Hello, World! (_bstr_t)  
 Hello, World! (char *)  
 Hello, World! (wchar_t *)  
@@ -356,7 +345,7 @@ Hello, World! (System::String)
   
 ### Code  
   
-```  
+```cpp  
 // convert_from_ccombstr.cpp  
 // compile with: /clr /link comsuppw.lib  
   
@@ -445,9 +434,7 @@ int main()
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 Hello, World! (CComBSTR)  
 Hello, World! (char *)  
 Hello, World! (wchar_t *)  
@@ -469,7 +456,7 @@ Hello, World! (System::String)
   
 ### Code  
   
-```  
+```cpp  
 // convert_from_cstring.cpp  
 // compile with: /clr /link comsuppw.lib  
   
@@ -491,7 +478,7 @@ int main()
     cout << origa << " (CStringA)" << endl;  
 ```  
   
-```  
+```cpp  
 // Set up a wide character CStringW string.  
 CStringW origw("Hello, World!");  
 wcout << (LPCTSTR)origw << _T(" (CStringW)") << endl;  
@@ -580,7 +567,7 @@ Console::WriteLine("{0}", systemstring);
 delete systemstring;  
 ```  
   
-```  
+```cpp  
     // Convert a wide character CStringW to a   
     // System::String.  
     String ^systemstringw = gcnew String(origw);  
@@ -588,11 +575,9 @@ delete systemstring;
     Console::WriteLine("{0}", systemstringw);  
     delete systemstringw;  
 }  
-```  
+```   
   
-### Output  
-  
-```  
+```Output  
 Hello, World! (CStringA)  
 Hello, World! (CStringW)  
 Hello, World! (char *)  
@@ -616,7 +601,7 @@ Hello, World! (System::String)
   
 ### Code  
   
-```  
+```cpp  
 // convert_from_basic_string.cpp  
 // compile with: /clr /link comsuppw.lib  
   
@@ -691,9 +676,7 @@ int main()
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 Hello, World! (basic_string)  
 Hello, World! (char *)  
 Hello, World! (wchar_t *)  
@@ -713,7 +696,7 @@ Hello, World! (System::String)
   
 ### Code  
   
-```  
+```cpp  
 // convert_from_system_string.cpp  
 // compile with: /clr /link comsuppw.lib  
   
@@ -799,9 +782,7 @@ int main()
 }  
 ```  
   
-### Output  
-  
-```  
+```Output  
 Hello, World! (System::String)  
 Hello, World! (char *)  
 Hello, World! (wchar_t *)  

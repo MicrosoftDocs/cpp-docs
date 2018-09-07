@@ -2,106 +2,116 @@
 title: "CStringRefElementTraits Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-atl"]
 ms.topic: "reference"
 f1_keywords: ["CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits", "ATLCOLL/ATL::CStringRefElementTraits::CompareElements", "ATLCOLL/ATL::CStringRefElementTraits::CompareElementsOrdered", "ATLCOLL/ATL::CStringRefElementTraits::Hash"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CStringRefElementTraits class"]
 ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CStringRefElementTraits Class
-This class provides static functions related to strings stored in collection class objects. The string objects are dealt with as references.  
-  
-## Syntax  
-  
+
+This class provides static functions related to strings stored in collection class objects. The string objects are dealt with as references.
+
+## Syntax
+
 ```
 template <typename T>  
 class CStringRefElementTraits : public CElementTraitsBase<T>
-```  
-  
-#### Parameters  
- `T`  
- The type of data to be stored in the collection.  
-  
-## Members  
-  
-### Public Methods  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[CStringRefElementTraits::CompareElements](#compareelements)|Call this static function to compare two string elements for equality.|  
-|[CStringRefElementTraits::CompareElementsOrdered](#compareelementsordered)|Call this static function to compare two string elements.|  
-|[CStringRefElementTraits::Hash](#hash)|Call this static function to calculate a hash value for the given string element.|  
-  
-## Remarks  
- This class provides static functions for comparing strings and for creating a hash value. These functions are useful when using a collection class to store string-based data. Unlike [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md) and [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md), `CStringRefElementTraits` causes the `CString` arguments to be passed as **const CString&** references.  
-  
- For more information, see [ATL Collection Classes](../../atl/atl-collection-classes.md).  
-  
-## Inheritance Hierarchy  
- [CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)  
-  
- `CStringRefElementTraits`  
-  
-## Requirements  
- **Header:** atlcoll.h  
-  
-##  <a name="compareelements"></a>  CStringRefElementTraits::CompareElements  
- Call this static function to compare two string elements for equality.  
-  
+```
+
+#### Parameters
+
+*T*  
+The type of data to be stored in the collection.
+
+## Members
+
+### Public Methods
+
+|Name|Description|
+|----------|-----------------|
+|[CStringRefElementTraits::CompareElements](#compareelements)|Call this static function to compare two string elements for equality.|
+|[CStringRefElementTraits::CompareElementsOrdered](#compareelementsordered)|Call this static function to compare two string elements.|
+|[CStringRefElementTraits::Hash](#hash)|Call this static function to calculate a hash value for the given string element.|
+
+## Remarks
+
+This class provides static functions for comparing strings and for creating a hash value. These functions are useful when using a collection class to store string-based data. Unlike [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md) and [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md), `CStringRefElementTraits` causes the `CString` arguments to be passed as **const** `CString&` references.
+
+For more information, see [ATL Collection Classes](../../atl/atl-collection-classes.md).
+
+## Inheritance Hierarchy
+
+[CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)
+
+`CStringRefElementTraits`
+
+## Requirements
+
+**Header:** atlcoll.h
+
+##  <a name="compareelements"></a>  CStringRefElementTraits::CompareElements
+
+Call this static function to compare two string elements for equality.
+
 ```
 static bool CompareElements(INARGTYPE element1, INARGTYPE element2) throw();
-```  
-  
-### Parameters  
- `element1`  
- The first string element.  
-  
- `element2`  
- The second string element.  
-  
-### Return Value  
- Returns true if the elements are equal, false otherwise.  
-  
-##  <a name="compareelementsordered"></a>  CStringRefElementTraits::CompareElementsOrdered  
- Call this static function to compare two string elements.  
-  
+```
+
+### Parameters
+
+*element1*  
+The first string element.
+
+*element2*  
+The second string element.
+
+### Return Value
+
+Returns true if the elements are equal, false otherwise.
+
+##  <a name="compareelementsordered"></a>  CStringRefElementTraits::CompareElementsOrdered
+
+Call this static function to compare two string elements.
+
 ```
 static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
-```  
-  
-### Parameters  
- `str1`  
- The first string element.  
-  
- `str2`  
- The second string element.  
-  
-### Return Value  
- Zero if the strings are identical, < 0 if `str1` is less than `str2`, or > 0 if `str1` is greater than `str2`. The [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method is used to perform the comparisons.  
-  
-##  <a name="hash"></a>  CStringRefElementTraits::Hash  
- Call this static function to calculate a hash value for the given string element.  
-  
+```
+
+### Parameters
+
+*str1*  
+The first string element.
+
+*str2*  
+The second string element.
+
+### Return Value
+
+Zero if the strings are identical, < 0 if *str1* is less than *str2*, or > 0 if *str1* is greater than *str2*. The [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) method is used to perform the comparisons.
+
+##  <a name="hash"></a>  CStringRefElementTraits::Hash
+
+Call this static function to calculate a hash value for the given string element.
+
 ```
 static ULONG Hash(INARGTYPE str) throw();
-```  
-  
-### Parameters  
- `str`  
- The string element.  
-  
-### Return Value  
- Returns a hash value, calculated using the string's contents.  
-  
-## See Also  
- [CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)   
- [Class Overview](../../atl/atl-class-overview.md)
+```
+
+### Parameters
+
+*str*  
+The string element.
+
+### Return Value
+
+Returns a hash value, calculated using the string's contents.
+
+## See Also
+
+[CElementTraitsBase Class](../../atl/reference/celementtraitsbase-class.md)   
+[Class Overview](../../atl/atl-class-overview.md)

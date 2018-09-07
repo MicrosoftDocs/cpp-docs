@@ -2,19 +2,14 @@
 title: "Application Settings, Makefile Project Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.appwiz.makefile.appset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Makefile Project Wizard, application settings"]
 ms.assetid: e0cbce59-5984-4f68-8a1d-f7fb2007c9b4
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Application Settings, Makefile Project Wizard
@@ -38,4 +33,4 @@ Provide the information for the project. The options you specify are reflected i
  [Visual C++ Project Types](../ide/visual-cpp-project-types.md)   
  [Creating Desktop Projects By Using Application Wizards](../ide/creating-desktop-projects-by-using-application-wizards.md)   
  [Property Pages](../ide/property-pages-visual-cpp.md)   
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ 

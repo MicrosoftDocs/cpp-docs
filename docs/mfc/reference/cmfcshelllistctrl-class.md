@@ -2,19 +2,14 @@
 title: "CMFCShellListCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::DisplayParentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::EnableShellContextMenu", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentFolderName", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentItemIdList", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetCurrentShellFolder", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemPath", "AFXSHELLLISTCTRL/CMFCShellListCtrl::GetItemTypes", "AFXSHELLLISTCTRL/CMFCShellListCtrl::IsDesktop", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnCompareItems", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileDate", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnFormatFileSize", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemIcon", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnGetItemText", "AFXSHELLLISTCTRL/CMFCShellListCtrl::OnSetColumns", "AFXSHELLLISTCTRL/CMFCShellListCtrl::Refresh", "AFXSHELLLISTCTRL/CMFCShellListCtrl::SetItemTypes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCShellListCtrl [MFC], DisplayFolder", "CMFCShellListCtrl [MFC], DisplayParentFolder", "CMFCShellListCtrl [MFC], EnableShellContextMenu", "CMFCShellListCtrl [MFC], GetCurrentFolder", "CMFCShellListCtrl [MFC], GetCurrentFolderName", "CMFCShellListCtrl [MFC], GetCurrentItemIdList", "CMFCShellListCtrl [MFC], GetCurrentShellFolder", "CMFCShellListCtrl [MFC], GetItemPath", "CMFCShellListCtrl [MFC], GetItemTypes", "CMFCShellListCtrl [MFC], IsDesktop", "CMFCShellListCtrl [MFC], OnCompareItems", "CMFCShellListCtrl [MFC], OnFormatFileDate", "CMFCShellListCtrl [MFC], OnFormatFileSize", "CMFCShellListCtrl [MFC], OnGetItemIcon", "CMFCShellListCtrl [MFC], OnGetItemText", "CMFCShellListCtrl [MFC], OnSetColumns", "CMFCShellListCtrl [MFC], Refresh", "CMFCShellListCtrl [MFC], SetItemTypes"]
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
-caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCShellListCtrl Class
@@ -84,17 +79,18 @@ class CMFCShellListCtrl : public CMFCListCtrl
   
 ```  
 virtual HRESULT DisplayFolder(LPCTSTR lpszPath);
-virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);```  
+virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
+```  
   
 ### Parameters  
- [in] `lpszPath`  
+ [in] *lpszPath*  
  A string that contains the path of a folder.  
   
- [in] `lpItemInfo`  
+ [in] *lpItemInfo*  
  A pointer to a `LPAFX_SHELLITEMINFO` structure that describes a folder to display.  
   
 ### Return Value  
- `S_OK` if successful; `E_FAIL` otherwise.  
+ S_OK if successful; E_FAIL otherwise.  
   
 ##  <a name="displayparentfolder"></a>  CMFCShellListCtrl::DisplayParentFolder  
  Updates the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object to display the parent folder of the currently displayed folder.  
@@ -104,7 +100,7 @@ virtual HRESULT DisplayParentFolder();
 ```  
   
 ### Return Value  
- `S_OK` if successful; `E_FAIL` otherwise.  
+ S_OK if successful; E_FAIL otherwise.  
   
 ##  <a name="enableshellcontextmenu"></a>  CMFCShellListCtrl::EnableShellContextMenu  
  Enables the shortcut menu.  
@@ -114,7 +110,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  A Boolean that specifies whether the framework enables the shortcut menu.  
   
 ##  <a name="getcurrentfolder"></a>  CMFCShellListCtrl::GetCurrentFolder  
@@ -125,7 +121,7 @@ BOOL GetCurrentFolder(CString& strPath) const;
 ```  
   
 ### Parameters  
- [out] `strPath`  
+ [out] *strPath*  
  A reference to a string parameter where the method writes the path.  
   
 ### Return Value  
@@ -142,7 +138,7 @@ BOOL GetCurrentFolderName(CString& strName) const;
 ```  
   
 ### Parameters  
- [out] `strName`  
+ [out] *strName*  
  A reference to a string parameter where the method writes the name.  
   
 ### Return Value  
@@ -169,10 +165,10 @@ const IShellFolder* GetCurrentShellFolder() const;
 ```  
   
 ### Return Value  
- A pointer to the [IShellFolder Interface](http://msdn.microsoft.com/library/windows/desktop/bb775075) for the selected object.  
+ A pointer to the [IShellFolder Interface](https://msdn.microsoft.com/library/windows/desktop/bb775075) for the selected object.  
   
 ### Remarks  
- This method returns `NULL` if no object is currently selected.  
+ This method returns NULL if no object is currently selected.  
   
 ##  <a name="getitempath"></a>  CMFCShellListCtrl::GetItemPath  
  Retrieves the path for an item.  
@@ -184,17 +180,17 @@ BOOL GetItemPath(
 ```  
   
 ### Parameters  
- [out] `strPath`  
+ [out] *strPath*  
  A reference to a string that receives the path.  
   
- [in] `iItem`  
+ [in] *iItem*  
  The index of the list item.  
   
 ### Return Value  
- `TRUE` if successful; `FALSE` otherwise.  
+ TRUE if successful; FALSE otherwise.  
   
 ### Remarks  
- The index supplied by `iItem` is based on the items currently displayed by the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
+ The index supplied by *iItem* is based on the items currently displayed by the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
   
 ##  <a name="getitemtypes"></a>  CMFCShellListCtrl::GetItemTypes  
  Returns the type of items displayed by the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
@@ -204,7 +200,7 @@ SHCONTF GetItemTypes() const;
 ```  
   
 ### Return Value  
- A [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539) value that contains the type of items listed in the `CMFCShellListCtrl`.  
+ A [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf) value that contains the type of items listed in the `CMFCShellListCtrl`.  
   
 ### Remarks  
  To set the type of items listed in a `CMFCShellListCtrl`, call [CMFCShellListCtrl::SetItemTypes](#setitemtypes).  
@@ -217,10 +213,10 @@ BOOL IsDesktop() const;
 ```  
   
 ### Return Value  
- `TRUE` if the displayed folder is the desktop folder; `FALSE` otherwise.  
+ TRUE if the displayed folder is the desktop folder; FALSE otherwise.  
   
 ##  <a name="oncompareitems"></a>  CMFCShellListCtrl::OnCompareItems  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual int OnCompareItems(
@@ -230,9 +226,9 @@ virtual int OnCompareItems(
 ```  
   
 ### Parameters  
- [in] `lParam1`  
- [in] `lParam2`  
- [in] `iColumn`  
+ [in] *lParam1*  
+ [in] *lParam2*  
+ [in] *iColumn*  
   
 ### Return Value  
   
@@ -248,10 +244,10 @@ virtual void OnFormatFileDate(
 ```  
   
 ### Parameters  
- [in] `tmFile`  
+ [in] *tmFile*  
  The date associated with a file.  
   
- [out] `str`  
+ [out] *str*  
  A string that contains the formatted file date.  
   
 ### Remarks  
@@ -267,10 +263,10 @@ virtual void OnFormatFileSize(
 ```  
   
 ### Parameters  
- [in] `lFileSize`  
+ [in] *lFileSize*  
  The size of the file that the framework will display.  
   
- [out] `str`  
+ [out] *str*  
  A string that contains the formatted file size.  
   
 ### Remarks  
@@ -286,11 +282,11 @@ virtual int OnGetItemIcon(
 ```  
   
 ### Parameters  
- [in] `iItem`  
+ [in] *iItem*  
  The item index.  
   
- [in] `pItem`  
- A `LPAFX_SHELLITEMINFO` parameter that describes the item.  
+ [in] *pItem*  
+ A LPAFX_SHELLITEMINFO parameter that describes the item.  
   
 ### Return Value  
  The index of the icon image if successful; -1 if the function fails.  
@@ -298,7 +294,7 @@ virtual int OnGetItemIcon(
 ### Remarks  
  The icon image index is based on the system image list.  
   
- By default, this method relies on the `pItem` parameter. The value of `iItem` is not used in the default implementation. You can use `iItem` to implement custom behavior.  
+ By default, this method relies on the *pItem* parameter. The value of *iItem* is not used in the default implementation. You can use *iItem* to implement custom behavior.  
   
 ##  <a name="ongetitemtext"></a>  CMFCShellListCtrl::OnGetItemText  
  The framework calls this method when it must retrieve the text of a shell item.  
@@ -311,14 +307,14 @@ virtual CString OnGetItemText(
 ```  
   
 ### Parameters  
- [in] `iItem`  
+ [in] *iItem*  
  The item index.  
   
- [in] `iColumn`  
+ [in] *iColumn*  
  The column of interest.  
   
- [in] `pItem`  
- A `LPAFX_SHELLITEMINFO` parameter that describes the item.  
+ [in] *pItem*  
+ A LPAFX_SHELLITEMINFO parameter that describes the item.  
   
 ### Return Value  
  A `CString` that contains the text associated with the item.  
@@ -326,7 +322,7 @@ virtual CString OnGetItemText(
 ### Remarks  
  Each item in the `CMFCShellListCtrl` object may have text in one or more columns. When the framework calls this method, it specifies the column that it is interested in. If you call this function manually, you must also specify the column that you are interested in.  
   
- By default, this method relies on the `pItem` parameter to determine which item to process. The value of `iItem` is not used in the default implementation.  
+ By default, this method relies on the *pItem* parameter to determine which item to process. The value of *iItem* is not used in the default implementation.  
   
 ##  <a name="onsetcolumns"></a>  CMFCShellListCtrl::OnSetColumns  
  The framework calls this method when it sets the names of the columns.  
@@ -336,7 +332,7 @@ virtual void OnSetColumns();
 ```  
   
 ### Remarks  
- By default, the framework creates four columns in a `CMFCShellListCtrl` object. The names of these columns are `Name`, `Size`, `Type`, and `Modified`. You can override this method to customize the number of columns and their names.  
+ By default, the framework creates four columns in a `CMFCShellListCtrl` object. The names of these columns are **Name**, **Size**, **Type**, and **Modified**. You can override this method to customize the number of columns and their names.  
   
 ##  <a name="refresh"></a>  CMFCShellListCtrl::Refresh  
  Refreshes and repaints the [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object.  
@@ -359,11 +355,11 @@ void SetItemTypes(SHCONTF nTypes);
 ```  
   
 ### Parameters  
- [in] `nTypes`  
+ [in] *nTypes*  
  A list of item types that the `CMFCShellListCtrl` object supports.  
   
 ### Remarks  
- For more information about the list of item types, see [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539).  
+ For more information about the list of item types, see [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

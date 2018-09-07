@@ -2,19 +2,14 @@
 title: "CCriticalSection Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CCriticalSection", "AFXMT/CCriticalSection", "AFXMT/CCriticalSection::CCriticalSection", "AFXMT/CCriticalSection::Lock", "AFXMT/CCriticalSection::Unlock", "AFXMT/CCriticalSection::m_sect"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CCriticalSection [MFC], CCriticalSection", "CCriticalSection [MFC], Lock", "CCriticalSection [MFC], Unlock", "CCriticalSection [MFC], m_sect"]
 ms.assetid: f776f74b-5b0b-4f32-9c13-2b8e4a0d7b2b
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CCriticalSection Class
@@ -45,19 +40,19 @@ class CCriticalSection : public CSyncObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCriticalSection::operator CRITICAL_SECTION*](#operator_critical_section_star)|Retrieves a pointer to the internal **CRITICAL_SECTION** object.|  
+|[CCriticalSection::operator CRITICAL_SECTION*](#operator_critical_section_star)|Retrieves a pointer to the internal CRITICAL_SECTION object.|  
   
 ### Public Data Members  
   
 |Name|Description|  
 |----------|-----------------|  
-|[CCriticalSection::m_sect](#m_sect)|A **CRITICAL_SECTION** object.|  
+|[CCriticalSection::m_sect](#m_sect)|A CRITICAL_SECTION object.|  
   
 ## Remarks  
  Critical sections are useful when only one thread at a time can be allowed to modify data or some other controlled resource. For example, adding nodes to a linked list is a process that should only be allowed by one thread at a time. By using a `CCriticalSection` object to control the linked list, only one thread at a time can gain access to the list.  
   
 > [!NOTE]
->  The functionality of the `CCriticalSection` class is provided by an actual Win32 **CRITICAL_SECTION** object.  
+>  The functionality of the `CCriticalSection` class is provided by an actual Win32 CRITICAL_SECTION object.  
   
  Critical sections are used instead of mutexes (see [CMutex](../../mfc/reference/cmutex-class.md)) when speed is critical and the resource will not be used across process boundaries.  
   
@@ -101,10 +96,11 @@ CCriticalSection();
   
 ```  
 BOOL Lock();  
-BOOL Lock(DWORD dwTimeout);```  
+BOOL Lock(DWORD dwTimeout);
+```  
   
 ### Parameters  
- `dwTimeout`  
+ *dwTimeout*  
  `Lock` ignores this parameter value.  
   
 ### Return Value  
@@ -130,14 +126,14 @@ CRITICAL_SECTION m_sect;
 ```  
   
 ##  <a name="operator_critical_section_star"></a>  CCriticalSection::operator CRITICAL_SECTION*  
- Retrieves a **CRITICAL_SECTION** object.  
+ Retrieves a CRITICAL_SECTION object.  
   
 ```  
 operator CRITICAL_SECTION*();
 ```   
   
 ### Remarks  
- Call this function to retrieve a pointer to the internal **CRITICAL_SECTION** object.  
+ Call this function to retrieve a pointer to the internal CRITICAL_SECTION object.  
   
 ##  <a name="unlock"></a>  CCriticalSection::Unlock  
  Releases the `CCriticalSection` object for use by another thread.  

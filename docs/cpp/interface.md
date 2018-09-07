@@ -2,19 +2,14 @@
 title: "__interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__interface_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__interface keyword [C++]"]
 ms.assetid: ca5d400b-d6d8-4ba2-89af-73f67e5ec056
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __interface
@@ -37,17 +32,15 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-modifier  
- __interface interface-name {interface-definition};  
+modifier __interface interface-name {interface-definition};  
 ```  
   
 ## Remarks  
- A C++ [class](../cpp/class-cpp.md) or [struct](../cpp/struct-cpp.md) could be implemented with these rules, but `__interface` enforces them.  
+ A C++ [class](../cpp/class-cpp.md) or [struct](../cpp/struct-cpp.md) could be implemented with these rules, but **__interface** enforces them.  
   
  For example, the following is a sample interface definition:  
   
-```  
+```cpp 
 __interface IMyInterface {  
    HRESULT CommitX();  
    HRESULT get_X(BSTR* pbstrName);  
@@ -58,16 +51,16 @@ __interface IMyInterface {
   
  Notice that you do not have to explicitly indicate that the `CommitX` and `get_X` functions are pure virtual. An equivalent declaration for the first function would be:  
   
-```  
+```cpp 
 virtual HRESULT CommitX() = 0;  
 ```  
   
- `__interface` implies the [novtable](../cpp/novtable.md) `__declspec` modifier.  
+ **__interface** implies the [novtable](../cpp/novtable.md) **__declspec** modifier.  
   
 ## Example  
  The following sample shows how to use properties declared in an interface.  
   
-```  
+```cpp 
 // deriv_interface.cpp  
 #define _ATL_ATTRIBUTES 1  
 #include <atlbase.h>  
@@ -147,6 +140,6 @@ bstr_data = Testing
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Interface Attributes](../windows/interface-attributes.md)

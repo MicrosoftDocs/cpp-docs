@@ -2,18 +2,13 @@
 title: "Compiler Limits | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, limits for language constructs"]
 ms.assetid: f1fa59c6-55b4-414b-80c5-3df72952160d
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Limits
@@ -25,7 +20,7 @@ The C++ standard recommends limits for various language constructs. The followin
   
 -   Arguments in one macro invocation - C++ standard: 256, Visual C++ compiler 127.  
   
--   Characters in a character string literal or wide string literal (after concatenation) - C++ standard: 65536, Visual C++ compiler: 65535 single-byte characters, including the `null` terminator, and 32767 double-byte characters, including the `null` terminator.  
+-   Characters in a character string literal or wide string literal (after concatenation) - C++ standard: 65536, Visual C++ compiler: 65535 single-byte characters, including the NULL terminator, and 32767 double-byte characters, including the NULL terminator.  
   
 -   Levels of nested class, structure, or union definitions in a single `struct-declaration-list` - C++ standard: 256, Visual C++ compiler: 16.  
   
@@ -33,9 +28,9 @@ The C++ standard recommends limits for various language constructs. The followin
   
 -   Scope qualifications of one identifier - C++ standard: 256, Visual C++ compiler: 127.  
   
--   Nested `extern` specifications - C++ standard: 1024, Visual C++ compiler: 9 (not counting the implicit `extern` specification in global scope, or 10, if you count the implicit `extern` specification in global scope..  
+-   Nested **extern** specifications - C++ standard: 1024, Visual C++ compiler: 9 (not counting the implicit **extern** specification in global scope, or 10, if you count the implicit **extern** specification in global scope..  
   
 -   Template arguments in a template declaration - C++ standard: 1024, Visual C++ compiler: 2046.  
   
-## See Also  
+## See also  
  [Nonstandard Behavior](../cpp/nonstandard-behavior.md)

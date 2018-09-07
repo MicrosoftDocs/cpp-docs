@@ -2,25 +2,20 @@
 title: "__based Grammar | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["based addressing"]
 ms.assetid: a68ff750-c7fa-4c0c-8d5f-2df76e4686c5
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __based Grammar
 ## Microsoft Specific  
  Based addressing is useful when you need precise control over the segment in which objects are allocated (static and dynamic based data).  
   
- The only form of based addressing acceptable in 32-bit and 64-bit compilations is "based on a pointer" that defines a type that contains a 32-bit or 64-bit displacement to a 32-bit or 64-bit base or based on `void`.  
+ The only form of based addressing acceptable in 32-bit and 64-bit compilations is "based on a pointer" that defines a type that contains a 32-bit or 64-bit displacement to a 32-bit or 64-bit base or based on **void**.  
   
 ## Grammar  
  *based-range-modifier*:  
@@ -40,5 +35,5 @@ ms.workload: ["cplusplus"]
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Based Pointers](../cpp/based-pointers-cpp.md)

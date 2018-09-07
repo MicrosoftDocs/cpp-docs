@@ -1,24 +1,19 @@
 ---
-title: "Adding a Member Variable  (Visual C++) | Microsoft Docs"
+title: "Adding a Member Variable (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.codewiz.classes.member.variable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["member variables, adding", "member variables"]
 ms.assetid: 437783bd-8eb4-4508-8b73-7380116e9d71
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding a Member Variable  (Visual C++)
-You can add a member variable to a class using Class View. Member variables can be either for [data exchange and data validation](../mfc/dialog-data-exchange-and-validation.md), or they can be generic. The data member variable wizard is specifically designed to take the relevant information and use it to insert elements in your source files at the appropriate locations. You can add a member variable from the [Dialog editor](../windows/dialog-editor.md) in [Resource View](../windows/resource-view-window.md), or from [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  
+You can add a member variable to a class using Class View. Member variables can be either for [data exchange and data validation](../mfc/dialog-data-exchange-and-validation.md), or they can be generic. The data member variable wizard is specifically designed to take the relevant information and use it to insert elements in your source files at the appropriate locations. You can add a member variable from the [Dialog editor](../windows/dialog-editor.md) in [Resource View](../windows/resource-view-window.md), or from [Class View](/visualstudio/ide/viewing-the-structure-of-code).  
   
 > [!NOTE]
 >  When you are designing and implementing a dialog box, you might find it more efficient to use the Dialog editor to add the dialog box controls, and then to implement the controls' member variables.  
@@ -42,7 +37,7 @@ You can add a member variable to a class using Class View. Member variables can 
   
 ### To add a member variable from Class View using the Add Member Variable Wizard  
   
-1.  In [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), expand the project node to display the classes in the project.  
+1.  In [Class View](/visualstudio/ide/viewing-the-structure-of-code), expand the project node to display the classes in the project.  
   
 2.  Right-click the class to which you want to add a variable.  
   

@@ -2,19 +2,14 @@
 title: "CObArray Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CObArray", "AFXCOLL/CObArray", "AFXCOLL/CObArray::CObArray", "AFXCOLL/CObArray::Add", "AFXCOLL/CObArray::Append", "AFXCOLL/CObArray::Copy", "AFXCOLL/CObArray::ElementAt", "AFXCOLL/CObArray::FreeExtra", "AFXCOLL/CObArray::GetAt", "AFXCOLL/CObArray::GetCount", "AFXCOLL/CObArray::GetData", "AFXCOLL/CObArray::GetSize", "AFXCOLL/CObArray::GetUpperBound", "AFXCOLL/CObArray::InsertAt", "AFXCOLL/CObArray::IsEmpty", "AFXCOLL/CObArray::RemoveAll", "AFXCOLL/CObArray::RemoveAt", "AFXCOLL/CObArray::SetAt", "AFXCOLL/CObArray::SetAtGrow", "AFXCOLL/CObArray::SetSize"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CObArray [MFC], CObArray", "CObArray [MFC], Add", "CObArray [MFC], Append", "CObArray [MFC], Copy", "CObArray [MFC], ElementAt", "CObArray [MFC], FreeExtra", "CObArray [MFC], GetAt", "CObArray [MFC], GetCount", "CObArray [MFC], GetData", "CObArray [MFC], GetSize", "CObArray [MFC], GetUpperBound", "CObArray [MFC], InsertAt", "CObArray [MFC], IsEmpty", "CObArray [MFC], RemoveAll", "CObArray [MFC], RemoveAt", "CObArray [MFC], SetAt", "CObArray [MFC], SetAtGrow", "CObArray [MFC], SetSize"]
 ms.assetid: 27894efd-2370-4776-9ed9-24a98492af17
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CObArray Class
@@ -45,7 +40,7 @@ class CObArray : public CObject
 |[CObArray::FreeExtra](#freeextra)|Frees all unused memory above the current upper bound.|  
 |[CObArray::GetAt](#getat)|Returns the value at a given index.|  
 |[CObArray::GetCount](#getcount)|Gets the number of elements in this array.|  
-|[CObArray::GetData](#getdata)|Allows access to elements in the array. Can be **NULL**.|  
+|[CObArray::GetData](#getdata)|Allows access to elements in the array. Can be NULL.|  
 |[CObArray::GetSize](#getsize)|Gets the number of elements in this array.|  
 |[CObArray::GetUpperBound](#getupperbound)|Returns the largest valid index.|  
 |[CObArray::InsertAt](#insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
@@ -71,7 +66,7 @@ class CObArray : public CObject
   
  As with a C array, the access time for a `CObArray` indexed element is constant and is independent of the array size.  
   
- `CObArray` incorporates the `IMPLEMENT_SERIAL` macro to support serialization and dumping of its elements. If an array of `CObject` pointers is stored to an archive, either with the overloaded insertion operator or with the `Serialize` member function, each `CObject` element is, in turn, serialized along with its array index.  
+ `CObArray` incorporates the IMPLEMENT_SERIAL macro to support serialization and dumping of its elements. If an array of `CObject` pointers is stored to an archive, either with the overloaded insertion operator or with the `Serialize` member function, each `CObject` element is, in turn, serialized along with its array index.  
   
  If you need a dump of individual `CObject` elements in an array, you must set the depth of the `CDumpContext` object to 1 or greater.  
   
@@ -83,7 +78,7 @@ class CObArray : public CObject
  Array class derivation is similar to list derivation. For details on the derivation of a special-purpose list class, see the article [Collections](../../mfc/collections.md).  
   
 > [!NOTE]
->  You must use the `IMPLEMENT_SERIAL` macro in the implementation of your derived class if you intend to serialize the array.  
+>  You must use the IMPLEMENT_SERIAL macro in the implementation of your derived class if you intend to serialize the array.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -101,14 +96,14 @@ INT_PTR Add(CObject* newElement);
 ```  
   
 ### Parameters  
- `newElement`  
+ *newElement*  
  The `CObject` pointer to be added to this array.  
   
 ### Return Value  
  The index of the added element.  
   
 ### Remarks  
- If [SetSize](#setsize) has been used with an `nGrowBy` value greater than 1, then extra memory may be allocated. However, the upper bound will increase by only 1.  
+ If [SetSize](#setsize) has been used with an *nGrowBy* value greater than 1, then extra memory may be allocated. However, the upper bound will increase by only 1.  
   
  The following table shows other member functions that are similar to `CObArray::Add`.  
   
@@ -116,7 +111,7 @@ INT_PTR Add(CObject* newElement);
 |-----------|---------------------|  
 |[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR Add( BYTE** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR Add( DWORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR Add( void\*** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR Add( void** <strong>\*</strong> `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR Add( LPCTSTR** `newElement` **); throw( CMemoryException\* );**<br /><br /> **INT_PTR Add(const CString&** `newElement` **);**|  
 |[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR Add( UINT** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR Add( WORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
@@ -151,7 +146,7 @@ INT_PTR Append(const CObArray& src);
 ### Remarks  
  The arrays must be of the same type.  
   
- If necessary, **Append** may allocate extra memory to accommodate the elements appended to the array.  
+ If necessary, `Append` may allocate extra memory to accommodate the elements appended to the array.  
   
  The following table shows other member functions that are similar to `CObArray::Append`.  
   
@@ -181,7 +176,7 @@ void Copy(const CObArray& src);
  Source of the elements to be copied to the array.  
   
 ### Remarks  
- **Copy** does not free memory; however, if necessary, **Copy** may allocate extra memory to accommodate the elements copied to the array.  
+ `Copy` does not free memory; however, if necessary, `Copy` may allocate extra memory to accommodate the elements copied to the array.  
   
  The following table shows other member functions that are similar to `CObArray::Copy`.  
   
@@ -231,7 +226,7 @@ CObject*& ElementAt(INT_PTR nIndex);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `GetUpperBound`.  
   
 ### Return Value  
@@ -286,7 +281,7 @@ CObject* GetAt(INT_PTR nIndex) const;
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `GetUpperBound`.  
   
 ### Return Value  
@@ -414,7 +409,7 @@ INT_PTR GetUpperBound() const;
 ### Remarks  
  Because array indexes are zero-based, this function returns a value 1 less than `GetSize`.  
   
- The condition **GetUpperBound( )** = -1 indicates that the array contains no elements.  
+ The condition `GetUpperBound( )` = -1 indicates that the array contains no elements.  
   
  The following table shows other member functions that are similar to `CObArray::GetUpperBound`.  
   
@@ -448,25 +443,25 @@ void InsertAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that may be greater than the value returned by `GetUpperBound`.  
   
- `newElement`  
- The `CObject` pointer to be placed in this array. A `newElement` of value **NULL** is allowed.  
+ *newElement*  
+ The `CObject` pointer to be placed in this array. A *newElement* of value NULL is allowed.  
   
- `nCount`  
+ *nCount*  
  The number of times this element should be inserted (defaults to 1).  
   
- `nStartIndex`  
+ *nStartIndex*  
  An integer index that may be greater than the value returned by `GetUpperBound`.  
   
- `pNewArray`  
+ *pNewArray*  
  Another array that contains elements to be added to this array.  
   
 ### Remarks  
  The first version of `InsertAt` inserts one element (or multiple copies of an element) at a specified index in an array. In the process, it shifts up (by incrementing the index) the existing element at this index, and it shifts up all the elements above it.  
   
- The second version inserts all the elements from another `CObArray` collection, starting at the `nStartIndex` position.  
+ The second version inserts all the elements from another `CObArray` collection, starting at the *nStartIndex* position.  
   
  The `SetAt` function, in contrast, replaces one specified array element and does not shift any elements.  
   
@@ -474,12 +469,12 @@ void InsertAt(
   
 |Class|Member Function|  
 |-----------|---------------------|  
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, BYTE** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CByteArray\*** `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, DWORD** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CDWordArray\*** `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, void\*** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CPtrArray\*** `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, LPCTSTR** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CStringArray\*** `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, UINT** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CUIntArray\*** `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, WORD** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CWordArray\*** `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, BYTE** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CByteArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, DWORD** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CDWordArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CPtrArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, LPCTSTR** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CStringArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, UINT** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CUIntArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, WORD** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CWordArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|  
   
 ### Example  
   See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in all collection examples.  
@@ -519,7 +514,7 @@ CObject* operator[](int_ptr nindex) const;
   
  The Debug version of the library asserts if the subscript (either on the left or right side of an assignment statement) is out of bounds.  
   
- The following table shows other operators that are similar to **CObArray::operator []**.  
+ The following table shows other operators that are similar to `CObArray::operator []`.  
   
 |Class|Operator|  
 |-----------|--------------|  
@@ -573,10 +568,10 @@ void RemoveAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `GetUpperBound`.  
   
- `nCount`  
+ *nCount*  
  The number of elements to remove.  
   
 ### Remarks  
@@ -618,11 +613,11 @@ void SetAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `GetUpperBound`.  
   
- `newElement`  
- The object pointer to be inserted in this array. A **NULL** value is allowed.  
+ *newElement*  
+ The object pointer to be inserted in this array. A NULL value is allowed.  
   
 ### Remarks  
  `SetAt` will not cause the array to grow. Use `SetAtGrow` if you want the array to grow automatically.  
@@ -635,7 +630,7 @@ void SetAt(
 |-----------|---------------------|  
 |[CByteArray](../../mfc/reference/cbytearray-class.md)|**void SetAt( INT_PTR** `nIndex` **, BYTE** `newElement` **);**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, DWORD** `newElement` **);**|  
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, void\*** `newElement` **);**|  
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **);**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, LPCTSTR** `newElement` **);**|  
 |[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, UINT** `newElement` **);**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, WORD** `newElement` **);**|  
@@ -663,11 +658,11 @@ void SetAtGrow(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0.  
   
- `newElement`  
- The object pointer to be added to this array. A **NULL** value is allowed.  
+ *newElement*  
+ The object pointer to be added to this array. A NULL value is allowed.  
   
 ### Remarks  
  The array grows automatically if necessary (that is, the upper bound is adjusted to accommodate the new element).  
@@ -678,7 +673,7 @@ void SetAtGrow(
 |-----------|---------------------|  
 |[CByteArray](../../mfc/reference/cbytearray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, BYTE** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, DWORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, void\*** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, LPCTSTR** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
 |[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, UINT** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
 |[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, WORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|  
@@ -710,18 +705,18 @@ void SetSize(
 ```  
   
 ### Parameters  
- `nNewSize`  
+ *nNewSize*  
  The new array size (number of elements). Must be greater than or equal to 0.  
   
- `nGrowBy`  
+ *nGrowBy*  
  The minimum number of element slots to allocate if a size increase is necessary.  
   
 ### Remarks  
  If the new size is smaller than the old size, then the array is truncated and all unused memory is released. For efficiency, call `SetSize` to set the size of the array before using it. This prevents the need to reallocate and copy the array each time an item is added.  
   
- The `nGrowBy` parameter affects internal memory allocation while the array is growing. Its use never affects the array size as reported by `GetSize` and `GetUpperBound`.  
+ The *nGrowBy* parameter affects internal memory allocation while the array is growing. Its use never affects the array size as reported by `GetSize` and `GetUpperBound`.  
   
- If the size of the array has grown, all newly allocated **CObject \*** pointers are set to NULL.  
+ If the size of the array has grown, all newly allocated **CObject** <strong>\*</strong> pointers are set to NULL.  
   
  The following table shows other member functions that are similar to `CObArray::SetSize`.  
   

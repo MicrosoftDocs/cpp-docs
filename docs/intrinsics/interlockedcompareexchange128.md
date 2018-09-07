@@ -2,19 +2,14 @@
 title: "_InterlockedCompareExchange128 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_InterlockedCompareExchange128_cpp", "_InterlockedCompareExchange128"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cmpxchg16b instruction", "_InterlockedCompareExchange128 intrinsic"]
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _InterlockedCompareExchange128
@@ -55,7 +50,7 @@ unsigned char _InterlockedCompareExchange128(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_InterlockedCompareExchange128`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_InterlockedCompareExchange128`|x64|  
   
  **Header file** \<intrin.h>  
   

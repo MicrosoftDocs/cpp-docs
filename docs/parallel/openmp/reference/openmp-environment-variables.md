@@ -2,17 +2,12 @@
 title: "OpenMP Environment Variables | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # OpenMP Environment Variables

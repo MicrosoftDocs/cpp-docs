@@ -2,19 +2,14 @@
 title: "_variant_t::operator = | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_variant_t::operator="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator= [C++], variant", "operator = [C++], variant", "= operator [C++], with specific Visual C++ objects"]
 ms.assetid: 77622723-6e49-4dec-9e0f-fa74028f1a3c
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _variant_t::operator =
@@ -23,8 +18,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-      _variant_t& operator=(  
+_variant_t& operator=(  
    const VARIANT& varSrc   
 );  
   
@@ -120,9 +114,9 @@ _variant_t& operator=(
 ## Remarks  
  The operator assigns a new value to the `_variant_t` object:  
   
--   **operator=(**  *varSrc*  **)** Assigns an existing **VARIANT** to a `_variant_t` object.  
+-   **operator=(**  *varSrc*  **)** Assigns an existing `VARIANT` to a `_variant_t` object.  
   
--   **operator=(**  *pVarSrc*  **)** Assigns an existing **VARIANT** to a `_variant_t` object.  
+-   **operator=(**  *pVarSrc*  **)** Assigns an existing `VARIANT` to a `_variant_t` object.  
   
 -   **operator=(**  *var_t_Src*  **)** Assigns an existing `_variant_t` object to a `_variant_t` object.  
   
@@ -134,7 +128,7 @@ _variant_t& operator=(
   
 -   **operator=(**  *dblSrc*  **)** Assigns a **double** numerical value to a `_variant_t` object.  
   
--   **operator=(**  *cySrc*  **)** Assigns a **CY** object to a `_variant_t` object.  
+-   **operator=(**  *cySrc*  **)** Assigns a `CY` object to a `_variant_t` object.  
   
 -   **operator=(**  *bstrSrc*  **)** Assigns a `BSTR` object to a `_variant_t` object.  
   
@@ -142,17 +136,17 @@ _variant_t& operator=(
   
 -   **operator=(**  `strSrc`  **)** Assigns a multibyte string to a `_variant_t` object.  
   
--   **operator=(**  `bSrc` **)** Assigns a `bool` value to a `_variant_t` object.  
+-   **operator=(**  `bSrc` **)** Assigns a **bool** value to a `_variant_t` object.  
   
--   **operator=(**  *pDispSrc*  **)** Assigns a **VT_DISPATCH** object to a `_variant_t` object.  
+-   **operator=(**  *pDispSrc*  **)** Assigns a `VT_DISPATCH` object to a `_variant_t` object.  
   
--   **operator=(**  *pIUnknownSrc*  **)** Assigns a **VT_UNKNOWN** object to a `_variant_t` object.  
+-   **operator=(**  *pIUnknownSrc*  **)** Assigns a `VT_UNKNOWN` object to a `_variant_t` object.  
   
--   **operator=(**  *decSrc*  **)** Assigns a **DECIMAL** value to a `_variant_t` object.  
+-   **operator=(**  *decSrc*  **)** Assigns a `DECIMAL` value to a `_variant_t` object.  
   
--   **operator=(**  `bSrc` **)** Assigns a **BYTE** value to a `_variant_t` object.  
+-   **operator=(**  `bSrc` **)** Assigns a `BYTE` value to a `_variant_t` object.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_variant_t Class](../cpp/variant-t-class.md)

@@ -2,24 +2,19 @@
 title: "CMFCDragFrameImpl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDragFrameImpl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDragFrameImpl class [MFC]"]
 ms.assetid: 500cd824-8188-43c2-8754-b7bb46b5648a
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDragFrameImpl Class
 The `CMFCDragFrameImpl` class draws the drag rectangle that appears when the user drags a pane in the standard dock mode.  
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
    
 ## Syntax  
   
@@ -30,7 +25,7 @@ class CMFCDragFrameImpl
 ## Remarks  
  An object of this class is embedded in each [CPane Class](../../mfc/reference/cpane-class.md) object. Thus, each pane that uses the `CanFloat` method displays a drag rectangle when the user drags it.  
   
- You can control the thickness of the drag rectangle by using [AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat]--brokenlink--(afx-global-data-structure.md#m_ndragframethicknessfloat) and [AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](afx-global-data-structure.md#m_ndragframethicknessdock).  
+ You can control the thickness of the drag rectangle by using [AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](afx-global-data-structure.md#m_ndragframethicknessfloat) and [AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](afx-global-data-structure.md#m_ndragframethicknessdock).  
   
 ## Inheritance Hierarchy  
  [CMFCDragFrameImpl](../../mfc/reference/cmfcdragframeimpl-class.md)  
@@ -46,7 +41,7 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 ```  
   
 ### Parameters  
- [in] `bClearInternalRects`  
+ [in] *bClearInternalRects*  
   
 ### Remarks  
   
@@ -58,7 +53,7 @@ void Init(CWnd* pDraggedWnd);
 ```  
   
 ### Parameters  
- [in] `pDraggedWnd`  
+ [in] *pDraggedWnd*  
   
 ### Remarks  
   
@@ -70,7 +65,7 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 ```  
   
 ### Parameters  
- [in] `bForceMove`  
+ [in] *bForceMove*  
   
 ### Remarks  
   
@@ -86,9 +81,9 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 ```  
   
 ### Parameters  
- [in] `pTabbedBar`  
- [in] `bFirstTime`  
- [in] `pCBarToPlaceOn`  
+ [in] *pTabbedBar*  
+ [in] *bFirstTime*  
+ [in] *pCBarToPlaceOn*  
   
 ### Remarks  
   
@@ -100,7 +95,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 ```  
   
 ### Parameters  
- [in] `pOldTargetBar`  
+ [in] *pOldTargetBar*  
   
 ### Remarks  
   

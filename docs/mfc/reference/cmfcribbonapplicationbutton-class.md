@@ -2,19 +2,14 @@
 title: "CMFCRibbonApplicationButton Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::CMFCRibbonApplicationButton", "AFXRIBBONBAR/CMFCRibbonApplicationButton::SetImage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonApplicationButton [MFC], CMFCRibbonApplicationButton", "CMFCRibbonApplicationButton [MFC], SetImage"]
 ms.assetid: beb81757-fabd-4641-9130-876ba8505b78
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonApplicationButton Class
@@ -70,10 +65,10 @@ CMFCRibbonApplicationButton(UINT uiBmpResID);
 ```  
   
 ### Parameters  
- `uiBmpResID`  
+ *uiBmpResID*  
  The resource ID of the image to display on the application button.  
   
- `hBmp`  
+ *hBmp*  
  A handle to a bitmap to display on the application button.  
   
 ### Remarks  
@@ -84,13 +79,14 @@ CMFCRibbonApplicationButton(UINT uiBmpResID);
   
 ```  
 void SetImage(UINT uiBmpResID);  
-void SetImage(HBITMAP hBmp);```  
+void SetImage(HBITMAP hBmp);
+```  
   
 ### Parameters  
- [in] `uiBmpResID`  
+ [in] *uiBmpResID*  
  The resource ID of the image to display on the application button.  
   
- [in] `hBmp`  
+ [in] *hBmp*  
  A handle to a bitmap to display on the application button.  
   
 ### Remarks  

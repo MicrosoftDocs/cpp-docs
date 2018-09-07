@@ -2,18 +2,13 @@
 title: "ATL Database Classes (OLE DB Templates) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB templates [C++], ATL database classes", "database classes [C++], OLE DB", "database classes [C++], ATL"]
 ms.assetid: 219766aa-e18a-405f-9e36-d7a0fdb31b2b
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ATL Database Classes (OLE DB Templates)
@@ -31,11 +26,11 @@ Microsoft provides several implementations of OLE DB, a set of COM interfaces th
   
  Note that the MFC library contains one class, [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), that displays database records in controls. The view is a form view directly connected to a `CRowset` object, and displays the fields of the `CRowset` object in the dialog template's controls.  
   
- For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.md) and [OLE DB Programmer's Guide](http://go.microsoft.com/fwlink/p/?linkid=121548).  
+ For more information, see [OLE DB Programming](../data/oledb/ole-db-programming.md) and [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643\(v=vs.85\)).  
   
 ## See Also  
  [Creating an OLE DB Consumer](../data/oledb/creating-an-ole-db-consumer.md)   
  [Creating an OLE DB Provider](../data/oledb/creating-an-ole-db-provider.md)   
  [OLE DB Consumer Templates Reference](../data/oledb/ole-db-consumer-templates-reference.md)   
  [OLE DB Provider Templates Reference](../data/oledb/ole-db-provider-templates-reference.md)   
- [OLE DB Templates Samples](http://msdn.microsoft.com/en-us/08958863-0b5f-41ad-ae99-fca7440c553c)
+ [OLE DB Templates Samples](https://github.com/Microsoft/VCSamples)

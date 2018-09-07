@@ -2,19 +2,14 @@
 title: "COleDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleDialog", "AFXODLGS/COleDialog", "AFXODLGS/COleDialog::GetLastError"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleDialog [MFC], GetLastError"]
 ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleDialog Class
@@ -74,7 +69,7 @@ class COleDialog : public CCommonDialog
  **Header:** afxodlgs.h  
   
 ##  <a name="getlasterror"></a>  COleDialog::GetLastError  
- Call the `GetLastError` member function to get additional error information when `DoModal` returns **IDABORT**.  
+ Call the `GetLastError` member function to get additional error information when `DoModal` returns IDABORT.  
   
 ```  
 UINT GetLastError() const;  

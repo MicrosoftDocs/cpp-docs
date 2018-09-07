@@ -2,18 +2,13 @@
 title: "Scrolling and Scaling Views | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [MFC]", "scaling views [MFC]", "message handling [MFC], scroll bars in view class [MFC]", "scroll bars [MFC], messages", "scrolling views [MFC]"]
 ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Scrolling and Scaling Views
@@ -27,7 +22,7 @@ MFC supports views that scroll and views that are automatically scaled to the si
   
 -   Scaling a view  
   
--   [View coordinates](http://msdn.microsoft.com/library/windows/desktop/dd145205)  
+-   [View coordinates](/windows/desktop/gdi/window-coordinate-system)  
   
 ##  <a name="_core_scrolling_a_view"></a> Scrolling a View  
  Frequently the size of a document is greater than the size its view can display. This may occur because the document's data increases or the user shrinks the window that frames the view. In such cases, the view must support scrolling.  

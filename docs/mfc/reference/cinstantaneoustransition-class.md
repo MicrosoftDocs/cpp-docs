@@ -2,19 +2,14 @@
 title: "CInstantaneousTransition Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CInstantaneousTransition", "AFXANIMATIONCONTROLLER/CInstantaneousTransition", "AFXANIMATIONCONTROLLER/CInstantaneousTransition::CInstantaneousTransition", "AFXANIMATIONCONTROLLER/CInstantaneousTransition::Create", "AFXANIMATIONCONTROLLER/CInstantaneousTransition::m_dblFinalValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CInstantaneousTransition [MFC], CInstantaneousTransition", "CInstantaneousTransition [MFC], Create", "CInstantaneousTransition [MFC], m_dblFinalValue"]
 ms.assetid: c3d5121f-2c6b-4221-9e57-10e082a31120
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CInstantaneousTransition Class
@@ -67,7 +62,7 @@ CInstantaneousTransition(DOUBLE dblFinalValue);
 ```  
   
 ### Parameters  
- `dblFinalValue`  
+ *dblFinalValue*  
  The value of the animation variable at the end of the transition.  
   
 ##  <a name="create"></a>  CInstantaneousTransition::Create  
@@ -80,8 +75,8 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
-`pLibrary`  
- A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
+*pLibrary*  
+ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), which defines a library of standard transitions.  
 
   
 ### Return Value  

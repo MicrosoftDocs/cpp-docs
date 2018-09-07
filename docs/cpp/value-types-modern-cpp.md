@@ -2,17 +2,12 @@
 title: "Value Types (Modern C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: f63bb62c-60da-40d5-ac14-4366608fe260
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Value Types (Modern C++)
@@ -48,7 +43,6 @@ int main()
 test.cpp(15) : error C2248: 'MyRefType::operator =' : cannot access private member declared in class 'MyRefType'  
         meow.cpp(5) : see declaration of 'MyRefType::operator ='  
         meow.cpp(3) : see declaration of 'MyRefType'  
-  
 ```  
   
 ## Value types and move efficiency  
@@ -106,7 +100,6 @@ public:
             throw std::runtime_error("RUNTIME ERROR: Insufficient resources!");  
     }  
 };  
-  
 ```  
   
  If you enable copy construction/assignment, also enable move construction/assignment if it can be cheaper than a deep copy.  
@@ -116,7 +109,7 @@ public:
 ## Section  
  Content  
   
-## See Also  
+## See also  
  [C++ Type System](../cpp/cpp-type-system-modern-cpp.md)   
  [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   

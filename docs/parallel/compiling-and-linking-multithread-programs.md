@@ -2,26 +2,21 @@
 title: "Compiling and Linking Multithread Programs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["compiling multithreaded programs", "multithreading [C++], linking programs", "threading [C++], linking programs", "multithreading [C++], compiled programs", "threading [C++], compiled programs", "compiling source code [C++], multithread programs", "linking [C++], multithread programs"]
 ms.assetid: 27589afc-daf2-4f26-b868-a99de5c9dfec
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiling and Linking Multithread Programs
-The Bounce.c program is introduced in [Sample Multithread C Program](../parallel/sample-multithread-c-program.md).  
+The Bounce.c program is introduced in [Sample Multithread C Program](sample-multithread-c-program.md).  
   
- Programs are compiled multithreaded by default.  
+Programs are compiled multithreaded by default.  
   
-#### To compile and link the multithread program Bounce.c from within the development environment  
+### To compile and link the multithread program Bounce.c from within the development environment  
   
 1.  On the **File** menu, click **New**, and then click **Project**.  
   
@@ -33,7 +28,7 @@ The Bounce.c program is introduced in [Sample Multithread C Program](../parallel
   
 5.  On the **Build** menu, build the project by clicking the **Build** command.  
   
-#### To compile and link the multithread program Bounce.c from the command line  
+### To compile and link the multithread program Bounce.c from the command line  
   
 1.  Compile and link the program:  
   
@@ -41,5 +36,6 @@ The Bounce.c program is introduced in [Sample Multithread C Program](../parallel
     CL BOUNCE.C  
     ```  
   
-## See Also  
- [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+## See Also
+
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)

@@ -2,19 +2,14 @@
 title: "_bstr_t::Attach | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::Attach"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Attach method [C++]"]
 ms.assetid: 8cad867e-40fc-435b-841f-0d412c2f58d3
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _bstr_t::Attach
@@ -25,8 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-      void Attach(  
+void Attach(  
    BSTR s  
 );  
 ```  
@@ -43,5 +37,5 @@ ms.workload: ["cplusplus"]
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

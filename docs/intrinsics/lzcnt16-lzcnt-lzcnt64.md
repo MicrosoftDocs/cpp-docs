@@ -2,25 +2,20 @@
 title: "__lzcnt16, __lzcnt, __lzcnt64 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__lzcnt64", "__lzcnt16", "__lzcnt"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__lzcnt intrinsic", "lzcnt instruction", "lzcnt16 intrinsic", "lzcnt intrinsic", "__lzcnt16 intrinsic", "lzcnt64 intrinsic", "__lzcnt64 intrinsic"]
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __lzcnt16, __lzcnt, __lzcnt64
 **Microsoft Specific**  
   
- Counts the number of leading zeros in a 16-, 32-, or 64-byte integer.  
+ Counts the number of leading zeros in a 16-, 32-, or 64-bit integer.  
   
 ## Syntax  
   

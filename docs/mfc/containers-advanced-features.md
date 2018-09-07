@@ -2,18 +2,13 @@
 title: "Containers: Advanced Features | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["links [MFC], to embedded OLE objects", "containers [MFC], links to embedded OLE objects", "containers [MFC], advanced features", "container/server applications [MFC]", "embedded objects [MFC]", "OLE controls [MFC], containers", "OLE containers [MFC], advanced features", "server/container applications [MFC]", "containers [MFC], container applications"]
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Containers: Advanced Features
@@ -57,13 +52,13 @@ This article describes the steps necessary to incorporate optional advanced feat
   
     -   Connect your `COleTemplateServer` object to your document templates by calling the object's `ConnectTemplate` member function.  
   
-    -   Call the **COleTemplateServer::RegisterAll** member function to register all class objects with the OLE system.  
+    -   Call the `COleTemplateServer::RegisterAll` member function to register all class objects with the OLE system.  
   
-    -   Call `COleTemplateServer::UpdateRegistry`. The only parameter to `UpdateRegistry` should be `OAT_CONTAINER` if the application is not launched with the "/Embedded" switch. This registers the application as a container that can support links to embedded objects.  
+    -   Call `COleTemplateServer::UpdateRegistry`. The only parameter to `UpdateRegistry` should be *OAT_CONTAINER* if the application is not launched with the "/Embedded" switch. This registers the application as a container that can support links to embedded objects.  
   
          If the application is launched with the "/Embedded" switch, it should not show its main window, similar to a server application.  
   
- The MFC OLE sample [OCLIENT](../visual-cpp-samples.md) implements this feature. For an example of how this is done, see the `InitInstance` function in the OCLIENT.CPP file of this sample application.  
+ The MFC OLE sample [OCLIENT](../visual-cpp-samples.md) implements this feature. For an example of how this is done, see the `InitInstance` function in the *OCLIENT.CPP* file of this sample application.  
   
 ## See Also  
  [Containers](../mfc/containers.md)   

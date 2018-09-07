@@ -2,19 +2,14 @@
 title: "CRecentDockSiteInfo Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CRecentDockSiteInfo", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::CleanUp", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDefaultPaneDivider", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedPercent", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentDockedRect", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentListOfPanes", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentPaneContainer", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::GetRecentTabContainer", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::Init", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::IsRecentLeftPane", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SaveListOfRecentPanes", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::SetInfo", "AFXRECENTDOCKSITEINFO/CRecentDockSiteInfo::StoreDockInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRecentDockSiteInfo [MFC], CleanUp", "CRecentDockSiteInfo [MFC], GetRecentDefaultPaneDivider", "CRecentDockSiteInfo [MFC], GetRecentDockedPercent", "CRecentDockSiteInfo [MFC], GetRecentDockedRect", "CRecentDockSiteInfo [MFC], GetRecentListOfPanes", "CRecentDockSiteInfo [MFC], GetRecentPaneContainer", "CRecentDockSiteInfo [MFC], GetRecentTabContainer", "CRecentDockSiteInfo [MFC], Init", "CRecentDockSiteInfo [MFC], IsRecentLeftPane", "CRecentDockSiteInfo [MFC], SaveListOfRecentPanes", "CRecentDockSiteInfo [MFC], SetInfo", "CRecentDockSiteInfo [MFC], StoreDockInfo"]
 ms.assetid: 2dd14f95-d5a2-4461-a7a5-2c6c36a3a165
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CRecentDockSiteInfo Class
@@ -82,7 +77,7 @@ CRecentDockSiteInfo(CPane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -105,7 +100,7 @@ int GetRecentDockedPercent(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -119,7 +114,7 @@ CRect& GetRecentDockedRect(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -133,7 +128,7 @@ CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -147,7 +142,7 @@ CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -161,7 +156,7 @@ CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -184,7 +179,7 @@ BOOL IsRecentLeftPane(BOOL bForSlider);
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
+ [in] *bForSlider*  
   
 ### Return Value  
   
@@ -198,7 +193,7 @@ CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
   
 ### Return Value  
   
@@ -214,9 +209,9 @@ void SaveListOfRecentPanes(CList<HWND,
 ```  
   
 ### Parameters  
- [in] `CList<HWND`  
- [in] `lstOrg`  
- [in] `bForSlider`  
+ [in] *CList<HWND*  
+ [in] *lstOrg*  
+ [in] *bForSlider*  
   
 ### Remarks  
   
@@ -230,8 +225,8 @@ virtual void SetInfo(
 ```  
   
 ### Parameters  
- [in] `bForSlider`  
- [in] `srcInfo`  
+ [in] *bForSlider*  
+ [in] *srcInfo*  
   
 ### Remarks  
   
@@ -245,8 +240,8 @@ virtual void StoreDockInfo(
 ```  
   
 ### Parameters  
- [in] `pRecentContainer`  
- [in] `pTabbedBar`  
+ [in] *pRecentContainer*  
+ [in] *pTabbedBar*  
   
 ### Remarks  
   

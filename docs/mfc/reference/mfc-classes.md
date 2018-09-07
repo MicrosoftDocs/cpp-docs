@@ -2,18 +2,13 @@
 title: "MFC Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, classes", "classes [MFC], MFC"]
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC Classes
@@ -129,7 +124,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Provides the functionality of a Windows checklist box.  
   
  [CClientDC Class](../../mfc/reference/cclientdc-class.md)  
- Handles the calling of the Windows functions [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) at construction time and [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) at destruction time.  
+ Handles the calling of the Windows functions [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) at construction time and [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) at destruction time.  
   
  [CCmdTarget Class](../../mfc/reference/ccmdtarget-class.md)  
  Base class for the Microsoft Foundation Class Library message-map architecture.  
@@ -846,7 +841,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Mimics the appearance of Microsoft Windows XP or Microsoft Vista when the user selects a Windows XP or Vista theme.  
   
  [CMFCVisualManagerWindows7 Class](../../mfc/reference/cmfcvisualmanagerwindows7-class.md)  
- Gives an application the appearance of a [!INCLUDE[win7](../../build/includes/win7_md.md)] application.  
+ Gives an application the appearance of a Windows 7 application.  
   
  [CMFCWindowsManagerDialog Class](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)  
  Enables a user to manage MDI child windows in a MDI application.  
@@ -855,7 +850,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Represents a half-height frame window typically seen around floating toolbars.  
   
  [CMonikerFile Class](../../mfc/reference/cmonikerfile-class.md)  
- Represents a stream of data ([IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)) named by an [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705).  
+ Represents a stream of data ([IStream](/windows/desktop/api/objidl/nn-objidl-istream)) named by an [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker).  
   
  [CMonthCalCtrl Class](../../mfc/reference/cmonthcalctrl-class.md)  
  Encapsulates the functionality of a month calendar control.  
@@ -924,7 +919,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Provides support for custom client-side control interfaces.  
   
  [COleConvertDialog Class](../../mfc/reference/coleconvertdialog-class.md)  
- For more information, see the [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) structure in the Windows SDK.  
+ For more information, see the [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) structure in the Windows SDK.  
   
  [COleCurrency Class](../../mfc/reference/colecurrency-class.md)  
  Encapsulates the `CURRENCY` data type of OLE automation.  
@@ -1014,7 +1009,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Used for a special case of the OLE Edit Links dialog box, which should be used when you need to update only existing linked or embedded objects in a document.  
   
  [COleVariant Class](../../mfc/reference/colevariant-class.md)  
- Encapsulates the [VARIANT](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) data type.  
+ Encapsulates the [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) data type.  
   
  [CPagerCtrl Class](../../mfc/reference/cpagerctrl-class.md)  
  The `CPagerCtrl` class wraps the Windows pager control, which can scroll into view a contained window that does not fit the containing window.  
@@ -1062,7 +1057,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Encapsulates the services provided by the Windows common dialog box for printing.  
   
  [CPrintDialogEx Class](../../mfc/reference/cprintdialogex-class.md)  
- Encapsulates the services provided by the Windows 2000 Print property sheet.  
+ Encapsulates the services provided by the Windows Print property sheet.  
   
  [CProgressCtrl Class](../../mfc/reference/cprogressctrl-class.md)  
  Provides the functionality of the Windows common progress bar control.  
@@ -1167,7 +1162,7 @@ The classes in the following list are included in the Microsoft Foundation Class
  Encapsulates a sinusoidal-velocity transition that has an amplitude that is determined by the initial velocity of the animation variable.  
   
  [CSize Class](../../atl-mfc-shared/reference/csize-class.md)  
- Similar to the Windows [SIZE](http://msdn.microsoft.com/library/windows/desktop/dd145106) structure, which implements a relative coordinate or position.  
+ Similar to the Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) structure, which implements a relative coordinate or position.  
   
  [CSliderCtrl Class](../../mfc/reference/csliderctrl-class.md)  
  Provides the functionality of the Windows common slider control.  

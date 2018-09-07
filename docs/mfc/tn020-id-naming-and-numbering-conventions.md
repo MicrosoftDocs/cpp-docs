@@ -2,19 +2,14 @@
 title: "TN020: ID Naming and Numbering Conventions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.id"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["TN020", "resource identifiers, naming and numbering", "resource identifiers"]
 ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN020: ID Naming and Numbering Conventions
@@ -60,7 +55,7 @@ This note describes the ID naming and numbering conventions that MFC 2.0 uses fo
 |IDM_|For menu items that do not use the MFC command architecture.|  
 |ID_|For menu commands that use the MFC command architecture.|  
   
- Commands that follow the MFC command architecture must have an `ON_COMMAND` command handler and can have an `ON_UPDATE_COMMAND_UI` handler. If these command handlers follow the MFC command architecture, they will function correctly whether they are bound to a menu command, a toolbar button, or a dialog bar button. The same "ID_" prefix is also used for a menu prompt string that is displayed on the program's message bar. Most of the menu items in your application should follow the MFC command conventions. All of the standard command IDs (for example, `ID_FILE_NEW`) follow this convention.  
+ Commands that follow the MFC command architecture must have an ON_COMMAND command handler and can have an ON_UPDATE_COMMAND_UI handler. If these command handlers follow the MFC command architecture, they will function correctly whether they are bound to a menu command, a toolbar button, or a dialog bar button. The same "ID_" prefix is also used for a menu prompt string that is displayed on the program's message bar. Most of the menu items in your application should follow the MFC command conventions. All of the standard command IDs (for example, ID_FILE_NEW) follow this convention.  
   
  MFC also uses "IDP_" as a specialized form of strings (instead of "IDS_"). Strings with the "IDP_" prefix are prompts, that is, strings used in message boxes. "IDP_" strings can contain "%1" and "%2" as placeholders of strings determined by the program. "IDP_" strings usually have help topics associated with them, and "IDS_" strings do not. "IDP_" strings are always localized, and "IDS_" strings might not be localized.  
   

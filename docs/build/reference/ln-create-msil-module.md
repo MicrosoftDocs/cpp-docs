@@ -2,19 +2,14 @@
 title: "-LN (Create MSIL Module) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/LN"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-LN compiler option [C++]", "/LN compiler option [C++]"]
 ms.assetid: 4f38f4f4-3176-4caf-8200-5c7585dc1ed3
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /LN (Create MSIL Module)
@@ -37,7 +32,7 @@ Specifies that an assembly manifest should not be inserted into the output file.
   
  The default file extension for a module is .netmodule.  
   
- In [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] releases before Visual C++ 2005, a module was created with **/clr:noAssembly**.  
+ In Visual C++ releases before Visual C++ 2005, a module was created with **/clr:noAssembly**.  
   
  The Visual C++ linker accepts .netmodule files as input and the output file produced by the linker will be an assembly or .netmodule with no run-time dependence on any of the .netmodules that were input to the linker.  For more information, see [.netmodule Files as Linker Input](../../build/reference/netmodule-files-as-linker-input.md).  
   

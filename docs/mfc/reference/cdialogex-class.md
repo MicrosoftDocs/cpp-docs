@@ -2,19 +2,14 @@
 title: "CDialogEx Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDialogEx", "AFXDIALOGEX/CDialogEx", "AFXDIALOGEX/CDialogEx::CDialogEx", "AFXDIALOGEX/CDialogEx::SetBackgroundColor", "AFXDIALOGEX/CDialogEx::SetBackgroundImage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDialogEx [MFC], CDialogEx", "CDialogEx [MFC], SetBackgroundColor", "CDialogEx [MFC], SetBackgroundImage"]
 ms.assetid: a6ed3b1f-aef8-4b66-ac78-2160faf63c13
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDialogEx Class
@@ -78,17 +73,17 @@ CDialogEx(
 ```  
   
 ### Parameters  
- [in] `nIDTemplate`  
+ [in] *nIDTemplate*  
  The resource ID of a dialog box template.  
   
- [in] `lpszTemplateName`  
+ [in] *lpszTemplateName*  
  The resource name of a dialog box template.  
   
- [in] `pParent`  
- A pointer to the parent window. The default value is `NULL`.  
+ [in] *pParent*  
+ A pointer to the parent window. The default value is NULL.  
   
- [in] `pParentWnd`  
- A pointer to the parent window. The default value is `NULL`.  
+ [in] *pParentWnd*  
+ A pointer to the parent window. The default value is NULL.  
   
 ### Return Value  
   
@@ -104,11 +99,11 @@ void SetBackgroundColor(
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
  An RGB color value.  
   
- [in] `bRepaint`  
- `TRUE` to immediately update the screen; otherwise, `FALSE`. The default value is `TRUE`.  
+ [in] *bRepaint*  
+ TRUE to immediately update the screen; otherwise, FALSE. The default value is TRUE.  
   
 ### Remarks  
   
@@ -130,23 +125,23 @@ BOOL SetBackgroundImage(
 ```  
   
 ### Parameters  
- [in] `hBitmap`  
+ [in] *hBitmap*  
  A handle to the background image.  
   
- [in] `uiBmpResId`  
+ [in] *uiBmpResId*  
  The resource ID of the background image.  
   
- [in] `location`  
+ [in] *location*  
  One of the `CDialogEx::BackgroundLocation` values that specify the location of the image. Valid values include BACKGR_TILE, BACKGR_TOPLEFT, BACKGR_TOPRIGHT, BACKGR_BOTTOMLEFT, and BACKGR_BOTTOMRIGHT. The default value is BACKGR_TILE.  
   
- [in] `bAutoDestroy`  
- `TRUE` to automatically destroy the background image; otherwise, `FALSE`.  
+ [in] *bAutoDestroy*  
+ TRUE to automatically destroy the background image; otherwise, FALSE.  
   
- [in] `bRepaint`  
- `TRUE` to immediately redraw the dialog box; otherwise, `FALSE`.  
+ [in] *bRepaint*  
+ TRUE to immediately redraw the dialog box; otherwise, FALSE.  
   
 ### Return Value  
- In the second method overload syntax, `TRUE` if the method is successful; otherwise, `FALSE`.  
+ In the second method overload syntax, TRUE if the method is successful; otherwise, FALSE.  
   
 ### Remarks  
  The image that you specify is not stretched to fit the dialog box client area.  

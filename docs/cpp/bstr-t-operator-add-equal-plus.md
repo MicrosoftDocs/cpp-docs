@@ -2,19 +2,14 @@
 title: "_bstr_t::operator +=, + | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::operator+", "_bstr_t::operator+="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["+= operator [C++], appending strings", "+ operator [C++], _bstr_t objects"]
 ms.assetid: d28316ce-c2c8-4a38-bdb3-44fa4e582c44
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _bstr_t::operator +=, +
@@ -25,21 +20,10 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-      _bstr_t& operator+=(  
-   const _bstr_t& s1   
-);  
-_bstr_t operator+(  
-   const _bstr_t& s1   
-);  
-friend _bstr_t operator+(  
-   const char* s2,  
-   const _bstr_t& s1   
-);  
-friend _bstr_t operator+(  
-   const wchar_t* s3,  
-   const _bstr_t& s1   
-);  
+_bstr_t& operator+=( const _bstr_t& s1 );  
+_bstr_t operator+( const _bstr_t& s1 );  
+friend _bstr_t operator+( const char* s2, const _bstr_t& s1);  
+friend _bstr_t operator+( const wchar_t* s3, const _bstr_t& s1);  
 ```  
   
 #### Parameters  
@@ -49,7 +33,7 @@ friend _bstr_t operator+(
  *s2*  
  A multibyte string.  
   
- `s3`  
+ *s3*  
  A Unicode string.  
   
 ## Remarks  
@@ -61,9 +45,9 @@ friend _bstr_t operator+(
   
 -   **operator+(**  *s2*  **&#124;**  *s1*  **)** Returns a new `_bstr_t` that is formed by concatenating a multibyte string *s2*, converted to Unicode, with the `BSTR` encapsulated in *s1*.  
   
--   **operator+(**  `s3` **,**  *s1*  **)** Returns a new `_bstr_t` that is formed by concatenating a Unicode string `s3` with the `BSTR` encapsulated in *s1*.  
+-   **operator+(**  *s3* **,**  *s1*  **)** Returns a new `_bstr_t` that is formed by concatenating a Unicode string *s3* with the `BSTR` encapsulated in *s1*.  
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

@@ -2,19 +2,14 @@
 title: "CRichEditDoc Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CRichEditDoc", "AFXRICH/CRichEditDoc", "AFXRICH/CRichEditDoc::CreateClientItem", "AFXRICH/CRichEditDoc::GetStreamFormat", "AFXRICH/CRichEditDoc::GetView", "AFXRICH/CRichEditDoc::m_bRTF"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRichEditDoc [MFC], CreateClientItem", "CRichEditDoc [MFC], GetStreamFormat", "CRichEditDoc [MFC], GetView", "CRichEditDoc [MFC], m_bRTF"]
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CRichEditDoc Class
@@ -78,7 +73,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
   
 ### Parameters  
  *preo*  
- Pointer to an [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is **NULL**, the new client item is empty.  
+ Pointer to an [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) structure which describes an OLE item. The new `CRichEditCntrItem` object is constructed around this OLE item. If *preo* is NULL, the new client item is empty.  
   
 ### Return Value  
  Pointer to a new [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) object which has been added to this document.  
@@ -86,7 +81,7 @@ virtual CRichEditCntrItem* CreateClientItem(REOBJECT* preo = NULL) const = 0;
 ### Remarks  
  This function does not perform any OLE initialization.  
   
- For more information, see the [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) structure in the Windows SDK.  
+ For more information, see the [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) structure in the Windows SDK.  
   
 ##  <a name="getstreamformat"></a>  CRichEditDoc::GetStreamFormat  
  Call this function to determine the text format for streaming the contents of the rich edit.  
@@ -98,12 +93,12 @@ int GetStreamFormat() const;
 ### Return Value  
  One of the following flags:  
   
-- `SF_TEXT` Indicates that the rich edit control does not maintain formatting information.  
+- SF_TEXT Indicates that the rich edit control does not maintain formatting information.  
   
-- `SF_RTF` Indicates that the rich edit control does maintain formatting information.  
+- SF_RTF Indicates that the rich edit control does maintain formatting information.  
   
 ### Remarks  
- The return value is based on the [m_bRTF](#m_brtf) data member. This function returns `SF_RTF` if `m_bRTF` is **TRUE**; otherwise, `SF_TEXT`.  
+ The return value is based on the [m_bRTF](#m_brtf) data member. This function returns SF_RTF if `m_bRTF` is TRUE; otherwise, SF_TEXT.  
   
 ##  <a name="getview"></a>  CRichEditDoc::GetView  
  Call this function to access the [CRichEditView](../../mfc/reference/cricheditview-class.md) object associated with this `CRichEditDoc` object.  
@@ -119,7 +114,7 @@ virtual CRichEditView* GetView() const;
  The text and formatting information are contained within the `CRichEditView` object. The `CRichEditDoc` object maintains the OLE items for serialization. There should be only one `CRichEditView` for each `CRichEditDoc`.  
   
 ##  <a name="m_brtf"></a>  CRichEditDoc::m_bRTF  
- When **TRUE**, indicates that [CRichEditCtrl::StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) and [CRichEditCtrl::StreamOut](../../mfc/reference/cricheditctrl-class.md#streamout) should store paragraph and character-formatting characteristics.  
+ When TRUE, indicates that [CRichEditCtrl::StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) and [CRichEditCtrl::StreamOut](../../mfc/reference/cricheditctrl-class.md#streamout) should store paragraph and character-formatting characteristics.  
   
 ```  
 BOOL m_bRTF;  

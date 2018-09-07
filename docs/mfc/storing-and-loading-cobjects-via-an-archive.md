@@ -2,19 +2,14 @@
 title: "Storing and Loading CObjects via an Archive | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CObject"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CObjects [MFC], loading through archives", "CArchive class [MFC], storing and loading objects", "Serialize method, vs. CArchive operators", "CObject class [MFC], CArchive objects", "CObjects [MFC]"]
 ms.assetid: a829b6dd-bc31-47e0-8108-fbb946722db9
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Storing and Loading CObjects via an Archive
@@ -27,7 +22,7 @@ Storing and loading `CObject`s via an archive requires extra consideration. In c
 -   When deserializing the object, you already have memory allocated for it.  
   
 > [!CAUTION]
->  If you load the object using the `Serialize` function, you must also store the object using the `Serialize` function. Don't store using the `CArchive` **<<** operator and then load using the `Serialize` function, or store using the `Serialize` function and then load using **CArchive >>** operator.  
+>  If you load the object using the `Serialize` function, you must also store the object using the `Serialize` function. Don't store using the `CArchive` **<<** operator and then load using the `Serialize` function, or store using the `Serialize` function and then load using `CArchive >>` operator.  
   
  The following example illustrates the cases:  
   
@@ -35,7 +30,7 @@ Storing and loading `CObject`s via an archive requires extra consideration. In c
   
  [!code-cpp[NVC_MFCSerialization#37](../mfc/codesnippet/cpp/storing-and-loading-cobjects-via-an-archive_2.cpp)]  
   
- In summary, if your serializable class defines an embedded **CObjec**t as a member, you should *not* use the `CArchive` **<\<** and **>>** operators for that object, but should call the `Serialize` function instead. Also, if your serializable class defines a pointer to a `CObject` (or an object derived from `CObject`) as a member, but constructs this other object in its own constructor, you should also call `Serialize`.  
+ In summary, if your serializable class defines an embedded `CObject` as a member, you should *not* use the `CArchive` **<\<** and **>>** operators for that object, but should call the `Serialize` function instead. Also, if your serializable class defines a pointer to a `CObject` (or an object derived from `CObject`) as a member, but constructs this other object in its own constructor, you should also call `Serialize`.  
   
 ## See Also  
  [Serialization: Serializing an Object](../mfc/serialization-serializing-an-object.md)

@@ -2,19 +2,14 @@
 title: "How to: Integrate Custom Tools into the Project Properties | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/27/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["msbuild.cpp.howto.integratecustomtools"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["msbuild (c++), howto: integrate custom tools"]
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Integrate Custom Tools into the Project Properties
@@ -22,7 +17,7 @@ You can add custom tool options to the Visual Studio **Property Pages** window b
   
  The **Configuration Properties** section of the **Property Pages** window displays setting groups that are known as *rules*. Every rule contains the settings for a tool or a group of features. For example, the **Linker** rule contains the settings for the linker tool. The settings in a rule can be subdivided into *categories*.  
   
- This document explains how to create a file in a set directory that contains properties for your custom tool so that the properties are loaded when Visual Studio starts. For information about how to modify the file, see [Platform Extensibilty Part 2](http://go.microsoft.com/fwlink/p/?linkid=191489) on the Visual Studio Project Team blog.  
+ This document explains how to create a file in a set directory that contains properties for your custom tool so that the properties are loaded when Visual Studio starts. For information about how to modify the file, see [Platform Extensibilty Part 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/) on the Visual Studio Project Team blog.  
   
 ### To add or change project properties  
   

@@ -2,19 +2,14 @@
 title: "CMFCRibbonCategory Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonCategory", "AFXRIBBONCATEGORY/CMFCRibbonCategory", "AFXRIBBONCATEGORY/CMFCRibbonCategory::CMFCRibbonCategory", "AFXRIBBONCATEGORY/CMFCRibbonCategory::AddHidden", "AFXRIBBONCATEGORY/CMFCRibbonCategory::AddPanel", "AFXRIBBONCATEGORY/CMFCRibbonCategory::CopyFrom", "AFXRIBBONCATEGORY/CMFCRibbonCategory::FindByData", "AFXRIBBONCATEGORY/CMFCRibbonCategory::FindByID", "AFXRIBBONCATEGORY/CMFCRibbonCategory::FindPanelWithElem", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetContextID", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetData", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetDroppedDown", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetElements", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetElementsByID", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetFirstVisibleElement", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetFocused", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetHighlighted", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetImageCount", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetImageSize", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetItemIDsList", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetLastVisibleElement", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetLargeImages", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetMaxHeight", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetName", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetPanel", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetPanelCount", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetPanelFromPoint", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetPanelIndex", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetParentButton", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetParentMenuBar", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetParentRibbonBar", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetRect", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetSmallImages", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetTabColor", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetTabRect", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetTextTopLine", "AFXRIBBONCATEGORY/CMFCRibbonCategory::GetVisibleElements", "AFXRIBBONCATEGORY/CMFCRibbonCategory::HighlightPanel", "AFXRIBBONCATEGORY/CMFCRibbonCategory::HitTest", "AFXRIBBONCATEGORY/CMFCRibbonCategory::HitTestEx", "AFXRIBBONCATEGORY/CMFCRibbonCategory::HitTestScrollButtons", "AFXRIBBONCATEGORY/CMFCRibbonCategory::IsActive", "AFXRIBBONCATEGORY/CMFCRibbonCategory::IsVisible", "AFXRIBBONCATEGORY/CMFCRibbonCategory::IsWindows7Look", "AFXRIBBONCATEGORY/CMFCRibbonCategory::NotifyControlCommand", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnCancelMode", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnDraw", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnDrawImage", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnDrawMenuBorder", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnKey", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnLButtonDown", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnLButtonUp", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnMouseMove", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnRTLChanged", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnScrollHorz", "AFXRIBBONCATEGORY/CMFCRibbonCategory::OnUpdateCmdUI", "AFXRIBBONCATEGORY/CMFCRibbonCategory::RecalcLayout", "AFXRIBBONCATEGORY/CMFCRibbonCategory::RemovePanel", "AFXRIBBONCATEGORY/CMFCRibbonCategory::ReposPanels", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetCollapseOrder", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetData", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetKeys", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetName", "AFXRIBBONCATEGORY/CMFCRibbonCategory::SetTabColor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonCategory [MFC], CMFCRibbonCategory", "CMFCRibbonCategory [MFC], AddHidden", "CMFCRibbonCategory [MFC], AddPanel", "CMFCRibbonCategory [MFC], CopyFrom", "CMFCRibbonCategory [MFC], FindByData", "CMFCRibbonCategory [MFC], FindByID", "CMFCRibbonCategory [MFC], FindPanelWithElem", "CMFCRibbonCategory [MFC], GetContextID", "CMFCRibbonCategory [MFC], GetData", "CMFCRibbonCategory [MFC], GetDroppedDown", "CMFCRibbonCategory [MFC], GetElements", "CMFCRibbonCategory [MFC], GetElementsByID", "CMFCRibbonCategory [MFC], GetFirstVisibleElement", "CMFCRibbonCategory [MFC], GetFocused", "CMFCRibbonCategory [MFC], GetHighlighted", "CMFCRibbonCategory [MFC], GetImageCount", "CMFCRibbonCategory [MFC], GetImageSize", "CMFCRibbonCategory [MFC], GetItemIDsList", "CMFCRibbonCategory [MFC], GetLastVisibleElement", "CMFCRibbonCategory [MFC], GetLargeImages", "CMFCRibbonCategory [MFC], GetMaxHeight", "CMFCRibbonCategory [MFC], GetName", "CMFCRibbonCategory [MFC], GetPanel", "CMFCRibbonCategory [MFC], GetPanelCount", "CMFCRibbonCategory [MFC], GetPanelFromPoint", "CMFCRibbonCategory [MFC], GetPanelIndex", "CMFCRibbonCategory [MFC], GetParentButton", "CMFCRibbonCategory [MFC], GetParentMenuBar", "CMFCRibbonCategory [MFC], GetParentRibbonBar", "CMFCRibbonCategory [MFC], GetRect", "CMFCRibbonCategory [MFC], GetSmallImages", "CMFCRibbonCategory [MFC], GetTabColor", "CMFCRibbonCategory [MFC], GetTabRect", "CMFCRibbonCategory [MFC], GetTextTopLine", "CMFCRibbonCategory [MFC], GetVisibleElements", "CMFCRibbonCategory [MFC], HighlightPanel", "CMFCRibbonCategory [MFC], HitTest", "CMFCRibbonCategory [MFC], HitTestEx", "CMFCRibbonCategory [MFC], HitTestScrollButtons", "CMFCRibbonCategory [MFC], IsActive", "CMFCRibbonCategory [MFC], IsVisible", "CMFCRibbonCategory [MFC], IsWindows7Look", "CMFCRibbonCategory [MFC], NotifyControlCommand", "CMFCRibbonCategory [MFC], OnCancelMode", "CMFCRibbonCategory [MFC], OnDraw", "CMFCRibbonCategory [MFC], OnDrawImage", "CMFCRibbonCategory [MFC], OnDrawMenuBorder", "CMFCRibbonCategory [MFC], OnKey", "CMFCRibbonCategory [MFC], OnLButtonDown", "CMFCRibbonCategory [MFC], OnLButtonUp", "CMFCRibbonCategory [MFC], OnMouseMove", "CMFCRibbonCategory [MFC], OnRTLChanged", "CMFCRibbonCategory [MFC], OnScrollHorz", "CMFCRibbonCategory [MFC], OnUpdateCmdUI", "CMFCRibbonCategory [MFC], RecalcLayout", "CMFCRibbonCategory [MFC], RemovePanel", "CMFCRibbonCategory [MFC], ReposPanels", "CMFCRibbonCategory [MFC], SetCollapseOrder", "CMFCRibbonCategory [MFC], SetData", "CMFCRibbonCategory [MFC], SetKeys", "CMFCRibbonCategory [MFC], SetName", "CMFCRibbonCategory [MFC], SetTabColor"]
 ms.assetid: 99ba25b6-d060-4fdd-bfab-3c46c22981bb
-caps.latest.revision: 38
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonCategory Class
@@ -145,7 +140,7 @@ void AddHidden(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### Parameters  
- [in] `pElem`  
+ [in] *pElem*  
  Pointer to a ribbon element.  
   
 ### Remarks  
@@ -162,20 +157,20 @@ CMFCRibbonPanel* AddPanel(
 ```  
   
 ### Parameters  
- [in] `lpszPanelName`  
+ [in] *lpszPanelName*  
  Pointer to the name of the new ribbon panel.  
   
- [in] `hIcon`  
+ [in] *hIcon*  
  Handle to the default icon for the new ribbon panel.  
   
- [in] `pRTI`  
+ [in] *pRTI*  
  Pointer to runtime class information for a custom ribbon panel.  
   
 ### Return Value  
- Pointer to the new ribbon panel if the method was successful; otherwise `NULL` if the panel was not created.  
+ Pointer to the new ribbon panel if the method was successful; otherwise NULL if the panel was not created.  
   
 ### Remarks  
- If you want to create a custom ribbon panel, you must specify its runtime class information in `pRTI`. The custom ribbon panel class must be derived from the `CMFCRibbonPanel` class.  
+ If you want to create a custom ribbon panel, you must specify its runtime class information in *pRTI*. The custom ribbon panel class must be derived from the `CMFCRibbonPanel` class.  
   
  The default icon for the ribbon panel is displayed when there is insufficient space to display the ribbon elements.  
   
@@ -200,22 +195,22 @@ CMFCRibbonCategory(
 ```  
   
 ### Parameters  
- [in] `pParenrRibbonBar`  
+ [in] *pParenrRibbonBar*  
  Pointer to the parent ribbon bar of the ribbon category.  
   
- [in] `lpszName`  
+ [in] *lpszName*  
  Name of the ribbon category.  
   
- [in] `uiSmallImagesResID`  
+ [in] *uiSmallImagesResID*  
  Resource ID of the image list for small images that are used by ribbon elements in the ribbon category.  
   
- [in] `uiLargeImagesResID`  
+ [in] *uiLargeImagesResID*  
  Resource ID of the image list for large images that are used by ribbon elements in the ribbon category.  
   
- [in] `sizeSmallImage`  
+ [in] *sizeSmallImage*  
  Default size of small images for ribbon elements in the ribbon category.  
   
- [in] `sizeLargeImage`  
+ [in] *sizeLargeImage*  
  Default size of large images for ribbon elements in the ribbon category.  
   
 ##  <a name="copyfrom"></a>  CMFCRibbonCategory::CopyFrom  
@@ -226,7 +221,7 @@ virtual void CopyFrom(CMFCRibbonCategory& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
  The source `CMFCRibbonCategory` object.  
   
 ### Remarks  
@@ -241,14 +236,14 @@ CMFCRibbonBaseElement* FindByData(
 ```  
   
 ### Parameters  
- [in] `dwData`  
+ [in] *dwData*  
  The data associated with a ribbon element.  
   
- [in] `bVisibleOnly`  
- `TRUE` to include quick access ribbon elements in the search; `FALSE` to exclude quick access ribbon elements in the search.  
+ [in] *bVisibleOnly*  
+ TRUE to include quick access ribbon elements in the search; FALSE to exclude quick access ribbon elements in the search.  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -262,14 +257,14 @@ CMFCRibbonBaseElement* FindByID(
 ```  
   
 ### Parameters  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Command ID associated with a ribbon element.  
   
- [in] `bVisibleOnly`  
- `TRUE` to include quick access ribbon elements in the search; `FALSE` to exclude quick access ribbon elements in the search.  
+ [in] *bVisibleOnly*  
+ TRUE to include quick access ribbon elements in the search; FALSE to exclude quick access ribbon elements in the search.  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -281,11 +276,11 @@ CMFCRibbonPanel* FindPanelWithElem(const CMFCRibbonBaseElement* pElement);
 ```  
   
 ### Parameters  
- [in] `pElement`  
+ [in] *pElement*  
  Pointer to a ribbon element.  
   
 ### Return Value  
- Pointer to a ribbon panel if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon panel if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -320,7 +315,7 @@ CMFCRibbonBaseElement* GetDroppedDown();
 ```  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -333,7 +328,7 @@ void GetElements(
 ```  
   
 ### Parameters  
- [in, out] `arElements`  
+ [in, out] *arElements*  
  Reference to a [CArray](../../mfc/reference/carray-class.md) of ribbon elements.  
   
 ### Remarks  
@@ -349,10 +344,10 @@ void GetElementsByID(
 ```  
   
 ### Parameters  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  Command ID associated with a ribbon element.  
   
- [in, out] `arElements`  
+ [in, out] *arElements*  
  Reference to a [CArray](../../mfc/reference/carray-class.md) of ribbon elements.  
   
 ### Remarks  
@@ -366,7 +361,7 @@ CMFCRibbonBaseElement* GetFirstVisibleElement() const;
 ```  
   
 ### Return Value  
- Pointer to the first visible element; may be `NULL` if category does not have any visible elements.  
+ Pointer to the first visible element; may be NULL if category does not have any visible elements.  
   
 ### Remarks  
   
@@ -378,7 +373,7 @@ CMFCRibbonBaseElement* GetFocused();
 ```  
   
 ### Return Value  
- A pointer to a focused element or `NULL`.  
+ A pointer to a focused element or NULL.  
   
 ### Remarks  
   
@@ -390,7 +385,7 @@ CMFCRibbonBaseElement* GetHighlighted();
 ```  
   
 ### Return Value  
- A pointer to a highlighted element or `NULL` if no elements are highlighted.  
+ A pointer to a highlighted element or NULL if no elements are highlighted.  
   
 ### Remarks  
   
@@ -402,8 +397,8 @@ int GetImageCount(BOOL bIsLargeImage) const;
 ```  
   
 ### Parameters  
- [in] `bIsLargeImage`  
- `TRUE` for the number of images in the large image list; `FALSE` for the number of images in the small image list.  
+ [in] *bIsLargeImage*  
+ TRUE for the number of images in the large image list; FALSE for the number of images in the small image list.  
   
 ### Return Value  
  The number of images in the specified image list.  
@@ -418,8 +413,8 @@ CSize GetImageSize(BOOL bIsLargeImage) const;
 ```  
   
 ### Parameters  
- [in] `bIsLargeImage`  
- `TRUE` for the size of large images; `FALSE` for the size of small images.  
+ [in] *bIsLargeImage*  
+ TRUE for the size of large images; FALSE for the size of small images.  
   
 ### Return Value  
  The size of an image in the specified image list.  
@@ -437,11 +432,11 @@ void GetItemIDsList(
 ```  
   
 ### Parameters  
- [out] `lstItems`  
+ [out] *lstItems*  
  The list of command IDs for the ribbon elements in the ribbon category.  
   
- [in] `bHiddenOnly`  
- `TRUE` to exclude ribbon elements displayed on the ribbon panels in the ribbon category; `FALSE` to include all ribbon elements in the ribbon category.  
+ [in] *bHiddenOnly*  
+ TRUE to exclude ribbon elements displayed on the ribbon panels in the ribbon category; FALSE to include all ribbon elements in the ribbon category.  
   
 ### Remarks  
   
@@ -463,7 +458,7 @@ CMFCRibbonBaseElement* GetLastVisibleElement() const;
 ```  
   
 ### Return Value  
- Pointer to the last visible element; may be `NULL` if the category does not have any visible elements.  
+ Pointer to the last visible element; may be NULL if the category does not have any visible elements.  
   
 ### Remarks  
   
@@ -475,7 +470,7 @@ int GetMaxHeight(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the ribbon panels.  
   
 ### Return Value  
@@ -504,14 +499,14 @@ CMFCRibbonPanel* GetPanel(int nIndex);
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  The zero-based index of a ribbon panel.  
   
 ### Return Value  
  Pointer to the ribbon panel that is located at the specified index.  
   
 ### Remarks  
- An exception is thrown if `nIndex` is out of range.  
+ An exception is thrown if *nIndex* is out of range.  
   
 ##  <a name="getpanelcount"></a>  CMFCRibbonCategory::GetPanelCount  
  Returns the number of ribbon panels in the ribbon category.  
@@ -531,11 +526,11 @@ CMFCRibbonPanel* GetPanelFromPoint(CPoint point) const;
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
- Pointer to a ribbon panel if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon panel if the method was successful; otherwise NULL.  
   
 ### Remarks  
  Only ribbon panels that are contained in the ribbon category are tested.  
@@ -548,7 +543,7 @@ int GetPanelIndex(const CMFCRibbonPanel* pPanel) const;
 ```  
   
 ### Parameters  
- [in] `pPanel`  
+ [in] *pPanel*  
  Pointer to a ribbon panel.  
   
 ### Return Value  
@@ -565,7 +560,7 @@ CMFCRibbonBaseElement* GetParentButton() const;
 ```  
   
 ### Return Value  
- Returns a pointer to the parent ribbon element, or `NULL` if there is no parent element.  
+ Returns a pointer to the parent ribbon element, or NULL if there is no parent element.  
   
 ### Remarks  
   
@@ -677,7 +672,7 @@ void GetVisibleElements(
 ```  
   
 ### Parameters  
- `arElements`  
+ *arElements*  
  Array of all visible elements.  
   
 ### Remarks  
@@ -692,14 +687,14 @@ CMFCRibbonPanel* HighlightPanel(
 ```  
   
 ### Parameters  
- [in] `pHLPanel`  
+ [in] *pHLPanel*  
  Pointer to the ribbon panel to highlight.  
   
- [in] `point`  
+ [in] *point*  
  The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
- Pointer to the previously highlighted ribbon panel; otherwise `NULL` if no ribbon panel is highlighted when this method is invoked.  
+ Pointer to the previously highlighted ribbon panel; otherwise NULL if no ribbon panel is highlighted when this method is invoked.  
   
 ### Remarks  
  For more information about highlighting a ribbon panel, see [CMFCRibbonPanel::Highlight](../../mfc/reference/cmfcribbonpanel-class.md#highlight).  
@@ -714,14 +709,14 @@ CMFCRibbonBaseElement* HitTest(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
   
- [in] `bCheckPanelCaption`  
- `TRUE` to test the ribbon panel caption; `FALSE` to exclude the ribbon panel caption.  
+ [in] *bCheckPanelCaption*  
+ TRUE to test the ribbon panel caption; FALSE to exclude the ribbon panel caption.  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
  Only ribbon elements that are contained in the ribbon category are tested.  
@@ -734,7 +729,7 @@ int HitTestEx(CPoint point) const;
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
@@ -751,11 +746,11 @@ CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The point to test.  
   
 ### Return Value  
- If `point` falls within the bounding rectangle of either the left or the right scroll button of the ribbon category, returns a pointer to that button, or otherwise, returns `NULL`.  
+ If *point* falls within the bounding rectangle of either the left or the right scroll button of the ribbon category, returns a pointer to that button, or otherwise, returns NULL.  
   
 ### Remarks  
   
@@ -767,7 +762,7 @@ BOOL IsActive() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon category is the active category; otherwise `FALSE`.  
+ TRUE if the ribbon category is the active category; otherwise FALSE.  
   
 ### Remarks  
  The active ribbon category displays its ribbon panels.  
@@ -780,7 +775,7 @@ BOOL IsVisible() const;
 ```  
   
 ### Return Value  
- `TRUE` if the ribbon category is visible; otherwise `FALSE`.  
+ TRUE if the ribbon category is visible; otherwise FALSE.  
   
 ### Remarks  
  Ribbon categories that are visible display a category tab.  
@@ -793,7 +788,7 @@ BOOL IsWindows7Look() const;
 ```  
   
 ### Return Value  
- `TRUE` if the parent ribbon has Windows 7 look; otherwise `FALSE`.  
+ TRUE if the parent ribbon has Windows 7 look; otherwise FALSE.  
   
 ### Remarks  
   
@@ -809,20 +804,20 @@ virtual BOOL NotifyControlCommand(
 ```  
   
 ### Parameters  
- [in] `bAccelerator`  
- `TRUE` if this command originated from an accelerator, or `FALSE` otherwise.  
+ [in] *bAccelerator*  
+ TRUE if this command originated from an accelerator, or FALSE otherwise.  
   
- [in] `nNotifyCode`  
+ [in] *nNotifyCode*  
  The notification code.  
   
- [in] `wParam`  
+ [in] *wParam*  
  The WPARAM field of the message.  
   
- [in] `lParam`  
+ [in] *lParam*  
  The LPARAM field of the message.  
   
 ### Return Value  
- Returns `TRUE` if the message was handled, or `FALSE` if not.  
+ Returns TRUE if the message was handled, or FALSE if not.  
   
 ### Remarks  
   
@@ -843,7 +838,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the ribbon category.  
   
 ### Remarks  
@@ -862,26 +857,26 @@ virtual BOOL OnDrawImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the image.  
   
- [in] `rect`  
+ [in] *rect*  
  Display rectangle for the image.  
   
- [in] `pElement`  
+ [in] *pElement*  
  Pointer to the ribbon element that contains the image.  
   
- [in] `bIsLargeImage`  
- `TRUE` if the image is the large size; `FALSE` if the image is the small size.  
+ [in] *bIsLargeImage*  
+ TRUE if the image is the large size; FALSE if the image is the small size.  
   
- [in] `nImageIndex`  
+ [in] *nImageIndex*  
  Zero-based index of the image in the image array that is contained in the ribbon category.  
   
- [in] `bCenter`  
- `TRUE` to center the image in the display rectangle; `FALSE` to draw the image in the upper-left corner of the display rectangle.  
+ [in] *bCenter*  
+ TRUE to center the image in the display rectangle; FALSE to draw the image in the upper-left corner of the display rectangle.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise `FALSE`.  
+ TRUE if the method was successful; otherwise FALSE.  
   
 ### Remarks  
   
@@ -895,10 +890,10 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  This parameter is not used.  
   
- [in] `pMenuBar`  
+ [in] *pMenuBar*  
  This parameter is not used.  
   
 ### Remarks  
@@ -912,7 +907,7 @@ virtual BOOL OnKey(UINT nChar);
 ```  
   
 ### Parameters  
- `nChar`  
+ *nChar*  
  The virtual key code for the key that a user pressed.  
   
 ### Remarks  
@@ -925,11 +920,11 @@ virtual CMFCRibbonBaseElement* OnLButtonDown(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The x and y coordinates of the mouse pointer, relative to the upper-left corner of the window.  
   
 ### Return Value  
- Pointer to a ribbon element if the method was successful; otherwise `NULL`.  
+ Pointer to a ribbon element if the method was successful; otherwise NULL.  
   
 ### Remarks  
   
@@ -941,7 +936,7 @@ virtual void OnLButtonUp(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Remarks  
@@ -954,7 +949,7 @@ virtual void OnMouseMove(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Remarks  
@@ -967,8 +962,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### Parameters  
- [in] `bIsRTL`  
- `TRUE` if the layout is right-to-left; `FALSE` if the layout is left-to-right.  
+ [in] *bIsRTL*  
+ TRUE if the layout is right-to-left; FALSE if the layout is left-to-right.  
   
 ### Remarks  
  This method adjusts the layout of all ribbon panels and ribbon elements that are contained in the ribbon category.  
@@ -983,14 +978,14 @@ virtual BOOL OnScrollHorz(
 ```  
   
 ### Parameters  
- [in] `bScrollLeft`  
- `TRUE` to scroll to the left; `FALSE` to scroll to the right.  
+ [in] *bScrollLeft*  
+ TRUE to scroll to the left; FALSE to scroll to the right.  
   
- [in] `nScrollOffset`  
+ [in] *nScrollOffset*  
  The scroll distance in pixels.  
   
 ### Return Value  
- `TRUE` if the ribbon category moved in a horizontal direction; otherwise `FALSE`.  
+ TRUE if the ribbon category moved in a horizontal direction; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1005,14 +1000,14 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] `pCmdUI`  
+ [in] *pCmdUI*  
  Pointer to the `CMFCRibbonCmdUI` object that specifies which user-interface elements are to be enabled and which are to be disabled.  
   
- [in] `pTarget`  
+ [in] *pTarget*  
  Pointer to the window that controls the enabling or disabling of the user-interface elements.  
   
- [in] `bDisableIfNoHndler`  
- `TRUE` to disable the user-interface item if no handler is defined in a message map; otherwise, `FALSE`.  
+ [in] *bDisableIfNoHndler*  
+ TRUE to disable the user-interface item if no handler is defined in a message map; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1024,7 +1019,7 @@ virtual void RecalcLayout(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the ribbon category.  
   
 ### Remarks  
@@ -1039,14 +1034,14 @@ BOOL RemovePanel(
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  The index number of the panel to remove. Obtained by calling the [CMFCRibbonCategory::GetPanelIndex](#getpanelindex) method.  
   
- [in] `bDelete`  
- `TRUE` to delete the panel object from memory; `FALSE` to remove the panel object without deleting it.  
+ [in] *bDelete*  
+ TRUE to delete the panel object from memory; FALSE to remove the panel object without deleting it.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise, `FALSE`.  
+ TRUE if the method was successful; otherwise, FALSE.  
   
 ##  <a name="repospanels"></a>  CMFCRibbonCategory::ReposPanels  
  Adjusts the layout of all controls on the ribbon panels that are contained in the ribbon category.  
@@ -1056,7 +1051,7 @@ virtual void ReposPanels(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the ribbon panels that are contained in the ribbon category.  
   
 ### Remarks  
@@ -1069,7 +1064,7 @@ void SetCollapseOrder(const CArray<int,int>& arCollapseOrder);
 ```  
   
 ### Parameters  
- [in] `arCollapseOrder`  
+ [in] *arCollapseOrder*  
  Specifies the collapse order. The array contains zero-based indexes of ribbon panels.  
   
 ### Remarks  
@@ -1092,7 +1087,7 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### Parameters  
- [in] `dwData`  
+ [in] *dwData*  
  The user-defined data.  
   
 ##  <a name="setkeys"></a>  CMFCRibbonCategory::SetKeys  
@@ -1103,7 +1098,7 @@ void SetKeys(LPCTSTR lpszKeys);
 ```  
   
 ### Parameters  
- [in] `lpszKeys`  
+ [in] *lpszKeys*  
  The keytip text.  
   
 ### Remarks  
@@ -1117,11 +1112,11 @@ void SetName(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- [in] `lpszName`  
+ [in] *lpszName*  
  The name and keytip of the ribbon category.  
   
 ### Remarks  
- To set the keytip for the ribbon category, append a newline escape sequence followed by the keytip characters to `lpszName`.  
+ To set the keytip for the ribbon category, append a newline escape sequence followed by the keytip characters to *lpszName*.  
   
 ##  <a name="settabcolor"></a>  CMFCRibbonCategory::SetTabColor  
  Sets the color of the ribbon category.  
@@ -1131,7 +1126,7 @@ void SetTabColor(AFX_RibbonCategoryColor color);
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
  Specifies the new color of the ribbon category.  
   
 ### Remarks  

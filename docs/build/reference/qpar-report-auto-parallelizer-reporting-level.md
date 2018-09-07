@@ -2,17 +2,12 @@
 title: "-Qpar-report (Auto-Parallelizer Reporting Level) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Qpar-report (Auto-Parallelizer Reporting Level)
@@ -49,4 +44,4 @@ Enables the reporting feature of the compiler's [Auto-Parallelizer](../../parall
  [/Q Options (Low-Level Operations)](../../build/reference/q-options-low-level-operations.md)   
  [Compiler Options](../../build/reference/compiler-options.md)   
  [Setting Compiler Options](../../build/reference/setting-compiler-options.md)   
- [Parallel Programming in Native Code](http://go.microsoft.com/fwlink/p/?linkid=263662)
+ [Parallel Programming in Native Code](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

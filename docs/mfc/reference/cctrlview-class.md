@@ -2,19 +2,14 @@
 title: "CCtrlView Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CCtrlView", "AFXWIN/CCtrlView", "AFXWIN/CCtrlView::CCtrlView", "AFXWIN/CCtrlView::OnDraw", "AFXWIN/CCtrlView::PreCreateWindow", "AFXWIN/CCtrlView::m_dwDefaultStyle", "AFXWIN/CCtrlView::m_strClass"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CCtrlView [MFC], CCtrlView", "CCtrlView [MFC], OnDraw", "CCtrlView [MFC], PreCreateWindow", "CCtrlView [MFC], m_dwDefaultStyle", "CCtrlView [MFC], m_strClass"]
 ms.assetid: ff488596-1e71-451f-8fec-b0831a7b44e0
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CCtrlView Class
@@ -75,10 +70,10 @@ CCtrlView(
 ```  
   
 ### Parameters  
- `lpszClass`  
+ *lpszClass*  
  Windows class name of the view class.  
   
- `dwStyle`  
+ *dwStyle*  
  Style of the view class.  
   
 ### Remarks  
@@ -109,11 +104,11 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to the device context in which the drawing occurs.  
   
 ### Remarks  
- `OnDraw` is typically called for screen display, passing a screen device context specified by `pDC`.  
+ `OnDraw` is typically called for screen display, passing a screen device context specified by *pDC*.  
   
 ##  <a name="precreatewindow"></a>  CCtrlView::PreCreateWindow  
  Called before the creation of the Windows window attached to this `CWnd` object.  
@@ -124,7 +119,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
   
 ### Parameters  
  *cs*  
- A [CREATESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms632603) structure.  
+ A [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) structure.  
   
 ### Return Value  
  Nonzero if the window creation should continue; 0 to indicate creation failure.  
@@ -132,7 +127,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 ### Remarks  
  Never call this function directly.  
   
- The default implementation of this function checks for a **NULL** window class name and substitutes an appropriate default. Override this member function to modify the `CREATESTRUCT` structure before the window is created.  
+ The default implementation of this function checks for a NULL window class name and substitutes an appropriate default. Override this member function to modify the `CREATESTRUCT` structure before the window is created.  
   
  Each class derived from `CCtrlView` adds its own functionality to its override of `PreCreateWindow`. By design, these derivations of `PreCreateWindow` are not documented. To determine the styles appropriate to each class and the interdependencies between the styles, you can examine the MFC source code for your application's base class. If you choose to override `PreCreateWindow`, you can determine whether the styles used in your application's base class provide the functionality you need by using information gathered from the MFC source code.  
   

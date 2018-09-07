@@ -2,19 +2,14 @@
 title: "CAnimationRect Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationRect", "AFXANIMATIONCONTROLLER/CAnimationRect", "AFXANIMATIONCONTROLLER/CAnimationRect::CAnimationRect", "AFXANIMATIONCONTROLLER/CAnimationRect::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationRect::GetBottom", "AFXANIMATIONCONTROLLER/CAnimationRect::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationRect::GetLeft", "AFXANIMATIONCONTROLLER/CAnimationRect::GetRight", "AFXANIMATIONCONTROLLER/CAnimationRect::GetTop", "AFXANIMATIONCONTROLLER/CAnimationRect::GetValue", "AFXANIMATIONCONTROLLER/CAnimationRect::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationRect::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationRect::m_bFixedSize", "AFXANIMATIONCONTROLLER/CAnimationRect::m_bottomValue", "AFXANIMATIONCONTROLLER/CAnimationRect::m_leftValue", "AFXANIMATIONCONTROLLER/CAnimationRect::m_rightValue", "AFXANIMATIONCONTROLLER/CAnimationRect::m_szInitial", "AFXANIMATIONCONTROLLER/CAnimationRect::m_topValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationRect [MFC], CAnimationRect", "CAnimationRect [MFC], AddTransition", "CAnimationRect [MFC], GetBottom", "CAnimationRect [MFC], GetDefaultValue", "CAnimationRect [MFC], GetLeft", "CAnimationRect [MFC], GetRight", "CAnimationRect [MFC], GetTop", "CAnimationRect [MFC], GetValue", "CAnimationRect [MFC], SetDefaultValue", "CAnimationRect [MFC], GetAnimationVariableList", "CAnimationRect [MFC], m_bFixedSize", "CAnimationRect [MFC], m_bottomValue", "CAnimationRect [MFC], m_leftValue", "CAnimationRect [MFC], m_rightValue", "CAnimationRect [MFC], m_szInitial", "CAnimationRect [MFC], m_topValue"]
 ms.assetid: 0294156d-241e-4a57-92b2-31234fe557d6
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationRect Class
@@ -101,16 +96,16 @@ void AddTransition(
 ```  
   
 ### Parameters  
- `pLeftTransition`  
+ *pLeftTransition*  
  Specifies transition for the left side.  
   
- `pTopTransition`  
+ *pTopTransition*  
  Specifies transition for the top side.  
   
- `pRightTransition`  
+ *pRightTransition*  
  Specifies transition for the right side.  
   
- `pBottomTransition`  
+ *pBottomTransition*  
  Specifies transition for the bottom side.  
   
 ### Remarks  
@@ -149,34 +144,34 @@ CAnimationRect(
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Specifies default rectangle.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  Specifies user-defined data.  
   
- `pt`  
+ *pt*  
  Coordinate of top-left corner.  
   
- `sz`  
+ *sz*  
  Size of rectangle.  
   
- `nLeft`  
+ *nLeft*  
  Specifies coordinate of left bound.  
   
- `nTop`  
+ *nTop*  
  Specifies coordinate of top bound.  
   
- `nRight`  
+ *nRight*  
  Specifies coordinate of right bound.  
   
- `nBottom`  
+ *nBottom*  
  Specifies coordinate of bottom bound.  
   
 ### Remarks  
@@ -192,7 +187,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains pointers to four CAnimationVariable objects representing coordinates of rectangle.  
   
 ##  <a name="getbottom"></a>  CAnimationRect::GetBottom  
@@ -268,7 +263,7 @@ BOOL GetValue(CRect& rect);
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Output. Contains the current value when this method returns.  
   
 ### Return Value  
@@ -343,7 +338,7 @@ void operator=(const RECT& rect);
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  The new value of animation rectangle.  
   
 ### Remarks  
@@ -357,7 +352,7 @@ void SetDefaultValue(const CRect& rect);
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  Specifies new default values for left, top, right and bottom.  
   
 ### Remarks  

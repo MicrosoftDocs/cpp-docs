@@ -2,18 +2,13 @@
 title: "Containers: Implementing a Container | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["applications [OLE], OLE container", "OLE containers [MFC], implementing"]
 ms.assetid: af1e2079-619a-4eac-9327-985ad875823a
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Containers: Implementing a Container
@@ -21,7 +16,7 @@ This article summarizes the procedure for implementing a container and points yo
   
 #### To prepare your CWinApp-derived class  
   
-1.  Initialize the OLE libraries by calling **AfxOleInit** in the `InitInstance` member function.  
+1.  Initialize the OLE libraries by calling `AfxOleInit` in the `InitInstance` member function.  
   
 2.  Call `CDocTemplate::SetContainerInfo` in `InitInstance` to assign the menu and accelerator resources used when an embedded item is activated in-place. For more information on this topic, see [Activation](../mfc/activation-cpp.md).  
   
@@ -33,7 +28,7 @@ This article summarizes the procedure for implementing a container and points yo
   
 2.  Override `IsSelected` to check whether the item passed to it is currently selected.  
   
-3.  Implement an **OnInsertObject** message handler to display the **Insert Object** dialog box.  
+3.  Implement an `OnInsertObject` message handler to display the **Insert Object** dialog box.  
   
 4.  Implement an `OnSetFocus` message handler to transfer focus from the view to an in-place active OLE embedded item.  
   
@@ -45,9 +40,9 @@ This article summarizes the procedure for implementing a container and points yo
   
 1.  Derive a class from [COleClientItem](../mfc/reference/coleclientitem-class.md). Objects of this class represent items that have been embedded in or linked to your OLE document.  
   
-2.  Override **OnChange**, `OnChangeItemPosition`, and `OnGetItemPosition`. These functions handle sizing, positioning, and modifying embedded and linked items.  
+2.  Override `OnChange`, `OnChangeItemPosition`, and `OnGetItemPosition`. These functions handle sizing, positioning, and modifying embedded and linked items.  
   
- The application wizard will derive the class for you, but you will likely need to override **OnChange** and the other functions listed with it in step 2 in the preceding procedure. The skeleton implementations need to be customized for most applications, because these functions are implemented differently from one application to the next. For examples of this, see the MFC samples [DRAWCLI](../visual-cpp-samples.md) and [CONTAINER](../visual-cpp-samples.md).  
+ The application wizard will derive the class for you, but you will likely need to override `OnChange` and the other functions listed with it in step 2 in the preceding procedure. The skeleton implementations need to be customized for most applications, because these functions are implemented differently from one application to the next. For examples of this, see the MFC samples [DRAWCLI](../visual-cpp-samples.md) and [CONTAINER](../visual-cpp-samples.md).  
   
  You must add a number of items to the container application's menu structure to support OLE. For more information on these, see [Menus and Resources: Container Additions](../mfc/menus-and-resources-container-additions.md).  
   

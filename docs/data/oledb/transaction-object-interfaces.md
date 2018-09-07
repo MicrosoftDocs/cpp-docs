@@ -2,18 +2,13 @@
 title: "Transaction Object Interfaces | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["interfaces, OLE DB", "transaction object interfaces", "OLE DB, interfaces", "OLE DB providers, transaction support", "OLE DB provider templates, object interfaces", "interfaces, list of"]
 ms.assetid: d2ce99ce-6f7a-4ff9-bc6e-acda3633d5c8
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Transaction Object Interfaces
@@ -23,9 +18,9 @@ The transaction object defines an atomic unit of work on a data source and deter
   
 |Interface|Required?|Implemented by OLE DB templates?|  
 |---------------|---------------|--------------------------------------|  
-|[IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)|Mandatory|No|  
-|[ITransaction](https://msdn.microsoft.com/en-us/library/ms723053.aspx)|Mandatory|No|  
-|[ISupportErrorInfo](https://msdn.microsoft.com/en-us/library/ms715816.aspx)|Optional|No|  
+|[IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)|Mandatory|No|  
+|[ITransaction](/previous-versions/windows/desktop/ms723053\(v=vs.85\))|Mandatory|No|  
+|[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816\(v=vs.85\))|Optional|No|  
   
 ## See Also  
  [OLE DB Provider Template Architecture](../../data/oledb/ole-db-provider-template-architecture.md)

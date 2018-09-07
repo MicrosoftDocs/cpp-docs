@@ -2,19 +2,14 @@
 title: "Gray and Dithered Bitmap Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["AFXWIN/AfxDrawGrayBitmap", "AFXWIN/AfxGetGrayBitmap", "AFXWIN/AfxDrawDitheredBitmap", "AFXWIN/AfxGetDitheredBitmap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["gray and dithered bitmap functions [MFC]"]
 ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Gray and Dithered Bitmap Functions
@@ -53,7 +48,7 @@ void AFXAPI AfxDrawGrayBitmap(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Points to the destination DC.  
   
  *x*  
@@ -62,10 +57,10 @@ void AFXAPI AfxDrawGrayBitmap(
  *y*  
  The destination y-coordinate.  
   
- `rSrc`  
+ *rSrc*  
  The source bitmap.  
   
- `crBackground`  
+ *crBackground*  
  The new background color (typically gray, such as COLOR_MENU).  
   
 ### Remarks  
@@ -90,13 +85,13 @@ void AFXAPI AfxGetGrayBitmap(
 ```  
   
 ### Parameters  
- `rSrc`  
+ *rSrc*  
  The source bitmap.  
   
- `pDest`  
+ *pDest*  
  The destination bitmap.  
   
- `crBackground`  
+ *crBackground*  
  The new background color (typically gray, such as COLOR_MENU).  
   
 ### Remarks  
@@ -124,7 +119,7 @@ void AFXAPI AfxDrawDitheredBitmap(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Points to the destination DC.  
   
  *x*  
@@ -133,17 +128,17 @@ void AFXAPI AfxDrawDitheredBitmap(
  *y*  
  The destination y-coordinate.  
   
- `rSrc`  
+ *rSrc*  
  The source bitmap.  
   
- `cr1`  
+ *cr1*  
  One of the two dither colors, typically white.  
   
- `cr2`  
+ *cr2*  
  The other dither color, typically light gray (COLOR_MENU).  
   
 ### Remarks  
- The source bitmap is drawn on the destination DC with a two-color ( `cr1` and `cr2`) checkered pattern replacing the bitmap's background. The background of the source bitmap is defined as its white pixels and all pixels matching the color of the pixel in the upper-left corner of the bitmap.  
+ The source bitmap is drawn on the destination DC with a two-color (*cr1* and *cr2*) checkered pattern replacing the bitmap's background. The background of the source bitmap is defined as its white pixels and all pixels matching the color of the pixel in the upper-left corner of the bitmap.  
   
  ![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")  
   
@@ -166,20 +161,20 @@ void AFXAPI AfxGetDitheredBitmap(
 ```  
   
 ### Parameters  
- `rSrc`  
+ *rSrc*  
  The source bitmap.  
   
- `pDest`  
+ *pDest*  
  The destination bitmap.  
   
- `cr1`  
+ *cr1*  
  One of the two dither colors, typically white.  
   
- `cr2`  
+ *cr2*  
  The other dither color, typically light gray (COLOR_MENU).  
   
 ### Remarks  
- The source bitmap is copied to the destination bitmap with a two-color ( `cr1` and `cr2`) checkered pattern replacing the source bitmap's background. The background of the source bitmap is defined as its white pixels and all pixels matching the color of the pixel in the upper-left corner of the bitmap.  
+ The source bitmap is copied to the destination bitmap with a two-color (*cr1* and *cr2*) checkered pattern replacing the source bitmap's background. The background of the source bitmap is defined as its white pixels and all pixels matching the color of the pixel in the upper-left corner of the bitmap.  
   
  ![Comparison of dithered and original icon versions](../../mfc/reference/media/vcditheredbitmap.gif "vcditheredbitmap")  
   

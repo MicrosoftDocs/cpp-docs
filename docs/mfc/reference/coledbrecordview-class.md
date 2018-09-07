@@ -2,19 +2,14 @@
 title: "COleDBRecordView Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleDBRecordView", "AFXOLEDB/COleDBRecordView", "AFXOLEDB/COleDBRecordView::COleDBRecordView", "AFXOLEDB/COleDBRecordView::OnGetRowset", "AFXOLEDB/COleDBRecordView::OnMove"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleDBRecordView [MFC], COleDBRecordView", "COleDBRecordView [MFC], OnGetRowset", "COleDBRecordView [MFC], OnMove"]
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleDBRecordView Class
@@ -38,13 +33,13 @@ class COleDBRecordView : public CFormView
   
 |Name|Description|  
 |----------|-----------------|  
-|[COleDBRecordView::OnGetRowset](#ongetrowset)|Returns a standard `HRESULT` value.|  
+|[COleDBRecordView::OnGetRowset](#ongetrowset)|Returns a standard HRESULT value.|  
 |[COleDBRecordView::OnMove](#onmove)|Updates the current record (if dirty) on the data source and then moves to the specified record (next, previous, first, or last).|  
   
 ## Remarks  
  The view is a form view directly connected to a `CRowset` object. The view is created from a dialog template resource and displays the fields of the `CRowset` object in the dialog template's controls. The `COleDBRecordView` object uses dialog data exchange (DDX), and the navigational functionality built into `CRowset`, to automate the movement of data between the controls on the form and the fields of the rowset. `COleDBRecordView` also supplies a default implementation for moving to the first, next, previous, or last record and an interface for updating the record currently on view.  
   
- You can use DDX functions with **COleDbRecordView** to get data directly from the database recordset and display it in a dialog control. You should use the **DDX_\*** methods (such as `DDX_Text`), not the **DDX_Field\*** functions (such as `DDX_FieldText`) with **COleDbRecordView**. `DDX_FieldText` will not work with **COleDbRecordView** because `DDX_FieldText` takes an additional argument of type **CRecordset\*** (for `CRecordView`) or **CDaoRecordset\*** (for `CDaoRecordView`).  
+ You can use DDX functions with `COleDbRecordView` to get data directly from the database recordset and display it in a dialog control. You should use the `DDX_*` methods (such as `DDX_Text`), not the `DDX_Field*` functions (such as `DDX_FieldText`) with `COleDbRecordView`. `DDX_FieldText` will not work with `COleDbRecordView` because `DDX_FieldText` takes an additional argument of type `CRecordset*` (for `CRecordView`) or `CDaoRecordset*` (for `CDaoRecordView`).  
   
 > [!NOTE]
 >  If you are working with the Data Access Objects (DAO) classes rather than the OLE DB Consumer Template classes, use class [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) instead. For more information, see the article [Overview: Database Programming](../../data/data-access-programming-mfc-atl.md).  
@@ -80,10 +75,10 @@ COleDBRecordView(UINT nIDTemplate);
 ```  
   
 ### Parameters  
- `lpszTemplateName`  
+ *lpszTemplateName*  
  Contains a null-terminated string that is the name of a dialog-template resource.  
   
- `nIDTemplate`  
+ *nIDTemplate*  
  Contains the ID number of a dialog-template resource.  
   
 ### Remarks  
@@ -101,10 +96,10 @@ virtual CRowset<>* OnGetRowset() = 0;
 ```  
   
 ### Return Value  
- A standard `HRESULT` value.  
+ A standard HRESULT value.  
   
 ### Remarks  
- You must override this member function to construct or obtain a rowset object and return a handle to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the rowset handle stored in the record view if one exists. If not, it constructs a rowset object of the type you specified with ClassWizard and calls its **Open** member function to open the table or run the query, and then returns a handle to the object.  
+ You must override this member function to construct or obtain a rowset object and return a handle to it. If you declare your record view class with ClassWizard, the wizard writes a default override for you. ClassWizard's default implementation returns the rowset handle stored in the record view if one exists. If not, it constructs a rowset object of the type you specified with ClassWizard and calls its `Open` member function to open the table or run the query, and then returns a handle to the object.  
   
 > [!NOTE]
 >  Previous to MFC 7.0, `OnGetRowset` returned a pointer to `CRowset`. If you have code that calls `OnGetRowset`, you need to change the return type to the templatized class **CRowset<>**.  
@@ -122,22 +117,22 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 ```  
   
 ### Parameters  
- `nIDMoveCommand`  
+ *nIDMoveCommand*  
  One of the following standard command ID values:  
   
-- `ID_RECORD_FIRST` — Move to the first record in the recordset.  
+- ID_RECORD_FIRST — Move to the first record in the recordset.  
   
-- `ID_RECORD_LAST` — Move to the last record in the recordset.  
+- ID_RECORD_LAST — Move to the last record in the recordset.  
   
-- `ID_RECORD_NEXT` — Move to the next record in the recordset.  
+- ID_RECORD_NEXT — Move to the next record in the recordset.  
   
-- `ID_RECORD_PREV` — Move to the previous record in the recordset.  
+- ID_RECORD_PREV — Move to the previous record in the recordset.  
   
 ### Return Value  
  Nonzero if the move was successful; otherwise 0 if the move request was denied.  
   
 ### Remarks  
- The default implementation calls the appropriate **Move** member function of the `CRowset` object associated with the record view.  
+ The default implementation calls the appropriate `Move` member function of the `CRowset` object associated with the record view.  
   
  By default, `OnMove` updates the current record on the data source if the user has changed it in the record view.  
   

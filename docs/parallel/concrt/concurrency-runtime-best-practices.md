@@ -2,18 +2,13 @@
 title: "Concurrency Runtime Best Practices | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["best practices [Concurrency Runtime]", "Concurrency Runtime, practices to avoid", "practices to avoid [Concurrency Runtime]", "Concurrency Runtime, best practices"]
 ms.assetid: 7231d4be-d1e3-401d-8b66-94fd51b587c9
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Concurrency Runtime Best Practices

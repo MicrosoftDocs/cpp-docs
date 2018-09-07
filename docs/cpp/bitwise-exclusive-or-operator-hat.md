@@ -2,18 +2,13 @@
 title: "Bitwise Exclusive OR Operator: ^ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], bitwise", "exclusive OR operator", "XOR operator", "bitwise operators [C++], OR operator", "^ operator", "OR operator [C++], bitwise exclusive", "operators [C++], logical"]
 ms.assetid: f9185d85-65d5-4f64-a6d6-679758d52217
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Bitwise Exclusive OR Operator: ^
@@ -47,7 +42,5 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
-
-

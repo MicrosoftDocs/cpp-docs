@@ -2,19 +2,14 @@
 title: "Simplifying Data Access with Database Attributes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 f1_keywords: ["vc-attr.db_param", "vc-attr.db_column", "vc-attr.db_accessor", "vc-attr.db_command", "vc-attr.db_table", "vc-attr.db_source"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++], database", "attributes [C++], data access", "databases [C++], attributes", "data [C++], simplifying access", "data access [C++], database attributes", "database attributes [C++]", "OLE DB consumers [C++], database attributes", "attributes [C++], OLE DB consumer"]
 ms.assetid: 560d2456-e307-4cb7-ba7b-4d0ed674697f
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Simplifying Data Access with Database Attributes
@@ -30,13 +25,13 @@ This topic demonstrates the use of database attributes to simplify database oper
   
 -   The `db_source` call in the attributed version is equivalent to the `OpenDataSource()` call in the template declaration.  
   
--   The **db_table** call in the attributed version is equivalent to the following template declaration:  
+-   The `db_table` call in the attributed version is equivalent to the following template declaration:  
   
     ```  
-    class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor> >  
+    class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  
     ```  
   
--   The **db_column** calls in the attributed version are equivalent to the column map (see `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) in the template declaration.  
+-   The `db_column` calls in the attributed version are equivalent to the column map (see `BEGIN_COLUMN_MAP ... END_COLUMN_MAP`) in the template declaration.  
   
  The attributes inject a user record class declaration for you. The user record class is equivalent to `CAuthorsNoAttrAccessor` in the template declaration. If your table class is `CAuthors`, the injected user record class is named `CAuthorsAccessor`, and you can only view its declaration in injected code. For more information, see "Attribute-Injected User Record Classes" in [User Records](../../data/oledb/user-records.md).  
   
@@ -45,11 +40,11 @@ This topic demonstrates the use of database attributes to simplify database oper
  For information about the attributes discussed in this topic, see [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md).  
   
 ## Table and Accessor Declaration Using Attributes  
- The following code calls `db_source` and **db_table** on the table class. `db_source` specifies the data source and connection to be used. **db_table** injects the appropriate template code to declare a table class. **db_column** specify the column map and inject the accessor declaration. You can use OLE DB consumer attributes in any project that supports ATL.  
+ The following code calls `db_source` and `db_table` on the table class. `db_source` specifies the data source and connection to be used. `db_table` injects the appropriate template code to declare a table class. `db_column` specify the column map and inject the accessor declaration. You can use OLE DB consumer attributes in any project that supports ATL.  
   
  Here is the table and accessor declaration using attributes:  
   
-```  
+```cpp
 //////////////////////////////////////////////////////////////////////  
 // Table and accessor declaration using attributes  
 // authors.h  
@@ -85,7 +80,7 @@ public:
 ## Table and Accessor Declaration Using Templates  
  Here is the table and accessor declaration using templates.  
   
-```  
+```cpp
 //////////////////////////////////////////////////////////////////////  
 // Table and user record class declaration using templates  
 // authors.h  
@@ -113,7 +108,8 @@ public:
    HRESULT OpenDataSource()  
    {  
       CDataSource _db;  
-      HRESULT hr;  
+
+HRESULT hr;  
       hr = _db.OpenFromInitializationString(L"your connection string");  
       if (FAILED(hr))  
       {  
@@ -139,12 +135,12 @@ public:
       COLUMN_ENTRY_LENGTH_STATUS(3, m_YearBorn, m_dwYearBornLength, m_dwYearBornStatus)  
    END_COLUMN_MAP()  
 };  
-class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor> >  
+class CAuthorsNoAttr : public CTable<CAccessor<CAuthorsNoAttrAccessor>>  
 {  
 public:  
    HRESULT OpenAll()  
    {  
-      HRESULT hr;  
+HRESULT hr;  
       hr = OpenDataSource();  
       if (FAILED(hr))  
          return hr;  
@@ -171,7 +167,7 @@ public:
    }  
    HRESULT OpenRowset(DBPROPSET *pPropSet = NULL)  
    {  
-      HRESULT hr = Open(m_session, "Authors", pPropSet);  
+HRESULT hr = Open(m_session, "Authors", pPropSet);  
 #ifdef _DEBUG  
       if(FAILED(hr))  
          AtlTraceErrorRecords(hr);  
@@ -188,4 +184,3 @@ public:
   
 ## See Also  
  [OLE DB Consumer Attributes](../../windows/ole-db-consumer-attributes.md)   
- [Attributes Walkthroughs](http://msdn.microsoft.com/en-us/73df1d5d-261a-4521-98fb-06dcbf5ec0d0)

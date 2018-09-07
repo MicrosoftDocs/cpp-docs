@@ -1,19 +1,14 @@
 ---
 title: "Basic Concepts  (C++) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["C++, basic language concepts"]
 ms.assetid: 961801e6-2ffd-4bf1-bb71-7f55e48d9c79
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Basic Concepts  (C++)
@@ -37,5 +32,5 @@ This section explains concepts that are critical to understanding C++. C program
   
 -   [Trivial, standard-layout and POD types](../cpp/trivial-standard-layout-and-pod-types.md)  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

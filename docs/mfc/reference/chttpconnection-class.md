@@ -2,19 +2,14 @@
 title: "CHttpConnection Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CHttpConnection", "AFXINET/CHttpConnection", "AFXINET/CHttpConnection::CHttpConnection", "AFXINET/CHttpConnection::OpenRequest"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CHttpConnection [MFC], CHttpConnection", "CHttpConnection [MFC], OpenRequest"]
 ms.assetid: a402b662-c445-4988-800d-c8278551babe
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CHttpConnection Class
@@ -90,36 +85,36 @@ CHttpConnection(
 ```  
   
 ### Parameters  
- `pSession`  
+ *pSession*  
  A pointer to a [CInternetSession](../../mfc/reference/cinternetsession-class.md) object.  
   
- `hConnected`  
+ *hConnected*  
  A handle to an Internet connection.  
   
- `pstrServer`  
+ *pstrServer*  
  A pointer to a string containing the server name.  
   
- `dwContext`  
- The context identifier for the `CInternetConnection` object. See **Remarks** for more information about `dwContext`.  
+ *dwContext*  
+ The context identifier for the `CInternetConnection` object. See **Remarks** for more information about *dwContext*.  
   
- `nPort`  
+ *nPort*  
  The number that identifies the Internet port for this connection.  
   
- `pstrUserName`  
- Pointer to a null-terminated string that specifies the name of the user to log in. If **NULL**, the default is anonymous.  
+ *pstrUserName*  
+ Pointer to a null-terminated string that specifies the name of the user to log in. If NULL, the default is anonymous.  
   
- `pstrPassword`  
- A pointer to a null-terminated string that specifies the password to use to log in. If both `pstrPassword` and `pstrUserName` are **NULL**, the default anonymous password is the user's email name. If `pstrPassword` is **NULL** (or an empty string) but `pstrUserName` is not **NULL**, a blank password is used. The following table describes the behavior for the four possible settings of `pstrUserName` and `pstrPassword`:  
+ *pstrPassword*  
+ A pointer to a null-terminated string that specifies the password to use to log in. If both *pstrPassword* and *pstrUserName* are NULL, the default anonymous password is the user's email name. If *pstrPassword* is NULL (or an empty string) but *pstrUserName* is not NULL, a blank password is used. The following table describes the behavior for the four possible settings of *pstrUserName* and *pstrPassword*:  
   
-|`pstrUserName`|`pstrPassword`|Username sent to FTP server|Password sent to FTP server|  
+|*pstrUserName*|*pstrPassword*|Username sent to FTP server|Password sent to FTP server|  
 |--------------------|--------------------|---------------------------------|---------------------------------|  
-|**NULL** or " "|**NULL** or " "|"anonymous"|User's email name|  
-|Non- **NULL** String|**NULL** or " "|`pstrUserName`|" "|  
-|**NULL** Non- **NULL** String|**ERROR**|**ERROR**||  
-|Non- **NULL** String|Non- **NULL** String|`pstrUserName`|`pstrPassword`|  
+|NULL or " "|NULL or " "|"anonymous"|User's email name|  
+|Non- NULL String|NULL or " "|*pstrUserName*|" "|  
+|NULL Non- NULL String|ERROR|ERROR||  
+|Non- NULL String|Non- NULL String|*pstrUserName*|*pstrPassword*|  
   
- `dwFlags`  
- Any combination of the **INTERNET_ FLAG_\*** flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](#openrequest) for a description of `dwFlags` values.  
+ *dwFlags*  
+ Any combination of the `INTERNET_FLAG_*` flags. See the table in the **Remarks** section of [CHttpConnection::OpenRequest](#openrequest) for a description of *dwFlags* values.  
   
 ### Remarks  
  You never create a `CHttpConnection` directly. Rather, you create an object by calling [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).  
@@ -149,53 +144,53 @@ CHttpFile* OpenRequest(
 ```  
   
 ### Parameters  
- `pstrVerb`  
- A pointer to a string containing the verb to use in the request. If `NULL`, "GET" is used.  
+ *pstrVerb*  
+ A pointer to a string containing the verb to use in the request. If NULL, "GET" is used.  
   
- `pstrObjectName`  
+ *pstrObjectName*  
  A pointer to a string containing the target object of the specified verb. This is generally a filename, an executable module, or a search specifier.  
   
- `pstrReferer`  
- A pointer to a string that specifies the address (URL) of the document from which the URL in the request ( `pstrObjectName`) was obtained. If `NULL`, no HTTP header is specified.  
+ *pstrReferer*  
+ A pointer to a string that specifies the address (URL) of the document from which the URL in the request ( *pstrObjectName*) was obtained. If NULL, no HTTP header is specified.  
   
- `dwContext`  
- The context identifier for the `OpenRequest` operation. See the Remarks section for more information about `dwContext`.  
+ *dwContext*  
+ The context identifier for the `OpenRequest` operation. See the Remarks section for more information about *dwContext*.  
   
- `ppstrAcceptTypes`  
- A pointer to a null-terminated array of `LPCTSTR` pointers to strings indicating content types accepted by the client. If `ppstrAcceptTypes` is `NULL`, the servers interpret that the client only accepts documents of type "text/*" (that is, only text documents and not pictures or other binary files). The content type is equivalent to the CGI variable CONTENT_TYPE, which identifies the type of data for queries that have attached information, such as HTTP POST and PUT.  
+ *ppstrAcceptTypes*  
+ A pointer to a null-terminated array of LPCTSTR pointers to strings indicating content types accepted by the client. If *ppstrAcceptTypes* is NULL, the servers interpret that the client only accepts documents of type "text/*" (that is, only text documents and not pictures or other binary files). The content type is equivalent to the CGI variable CONTENT_TYPE, which identifies the type of data for queries that have attached information, such as HTTP POST and PUT.  
   
- `pstrVersion`  
- A pointer to a string defining the HTTP version. If `NULL`, "HTTP/1.0" is used.  
+ *pstrVersion*  
+ A pointer to a string defining the HTTP version. If NULL, "HTTP/1.0" is used.  
   
- `dwFlags`  
- Any combination of the INTERNET_ FLAG_* flags. See the Remarks section for a description of possible `dwFlags` values.  
+ *dwFlags*  
+ Any combination of the INTERNET_ FLAG_* flags. See the Remarks section for a description of possible *dwFlags* values.  
   
- `nVerb`  
+ *nVerb*  
  A number associated with the HTTP request type. Can be one of the following:  
   
-|HTTP request type|`nVerb` value|  
+|HTTP request type|*nVerb* value|  
 |-----------------------|-------------------|  
-|`HTTP_VERB_POST`|0|  
-|`HTTP_VERB_GET`|1|  
-|`HTTP_VERB_HEAD`|2|  
-|`HTTP_VERB_PUT`|3|  
-|`HTTP_VERB_LINK`|4|  
-|`HTTP_VERB_DELETE`|5|  
-|`HTTP_VERB_UNLINK`|6|  
+|HTTP_VERB_POST|0|  
+|HTTP_VERB_GET|1|  
+|HTTP_VERB_HEAD|2|  
+|HTTP_VERB_PUT|3|  
+|HTTP_VERB_LINK|4|  
+|HTTP_VERB_DELETE|5|  
+|HTTP_VERB_UNLINK|6|  
   
 ### Return Value  
  A pointer to the [CHttpFile](../../mfc/reference/chttpfile-class.md) object requested.  
   
 ### Remarks  
- `dwFlags` can be one of the following:  
+ *dwFlags* can be one of the following:  
   
 |Internet flag|Description|  
 |-------------------|-----------------|  
-|`INTERNET_FLAG_RELOAD`|Forces a download of the requested file, object, or directory listing from the origin server, not from the cache.|  
-|`INTERNET_FLAG_DONT_CACHE`|Does not add the returned entity to the cache.|  
-|`INTERNET_FLAG_MAKE_PERSISTENT`|Adds the returned entity to the cache as a persistent entity. This means that standard cache cleanup, consistency checking, or garbage collection cannot remove this item from the cache.|  
-|`INTERNET_FLAG_SECURE`|Uses secure transaction semantics. This translates to using SSL/PCT and is only meaningful in HTTP requests|  
-|`INTERNET_FLAG_NO_AUTO_REDIRECT`|Used only with HTTP, specifies that redirections should not be automatically handled in [CHttpFile::SendRequest](../../mfc/reference/chttpfile-class.md#sendrequest).|  
+|INTERNET_FLAG_RELOAD|Forces a download of the requested file, object, or directory listing from the origin server, not from the cache.|  
+|INTERNET_FLAG_DONT_CACHE|Does not add the returned entity to the cache.|  
+|INTERNET_FLAG_MAKE_PERSISTENT|Adds the returned entity to the cache as a persistent entity. This means that standard cache cleanup, consistency checking, or garbage collection cannot remove this item from the cache.|  
+|INTERNET_FLAG_SECURE|Uses secure transaction semantics. This translates to using SSL/PCT and is only meaningful in HTTP requests|  
+|INTERNET_FLAG_NO_AUTO_REDIRECT|Used only with HTTP, specifies that redirections should not be automatically handled in [CHttpFile::SendRequest](../../mfc/reference/chttpfile-class.md#sendrequest).|  
   
  Override the `dwContext` default to set the context identifier to a value of your choosing. The context identifier is associated with this specific operation of the `CHttpConnection` object created by its [CInternetSession](../../mfc/reference/cinternetsession-class.md) object. The value is returned to [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) to provide status on the operation with which it is identified. See the article [Internet First Steps: WinInet](../../mfc/wininet-basics.md) for more information about the context identifier.  
   

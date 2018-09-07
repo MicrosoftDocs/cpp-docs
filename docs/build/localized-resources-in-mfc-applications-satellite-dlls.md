@@ -2,18 +2,13 @@
 title: "Localized Resources in MFC Applications: Satellite DLLs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["multiple language support [C++]", "localization [C++], MFC resources", "localized resources [C++]", "MFC DLLs [C++], localizing", "DLLs [C++], localizing MFC", "resources [MFC], localizing", "resource-only DLLs [C++]", "resource-only DLLs [C++], MFC applications", "satellite DLLs [C++]"]
 ms.assetid: 3a1100ae-a9c8-47b5-adbd-cbedef5992ef
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Localized Resources in MFC Applications: Satellite DLLs
@@ -23,11 +18,11 @@ MFC version 7.0 and later provides enhanced support for satellite DLLs, a featur
   
  MFC attempts to load the resource DLL for each of the following languages in order, stopping when it finds one:  
   
-1.  (Windows 2000 or later only) The current user's default UI language, as returned from the GetUserDefaultUILanguage() Win32 API.  
+1. The current user's default UI language, as returned from the GetUserDefaultUILanguage() Win32 API.  
   
-2.  (Windows 2000 or later only) The current user's default UI language, without any specific sublanguage (that is, ENC [Canadian English] becomes ENU [U.S. English]).  
+2.  The current user's default UI language, without any specific sublanguage (that is, ENC [Canadian English] becomes ENU [U.S. English]).  
   
-3.  The system's default UI language. On Windows 2000 or later, this is returned from the GetSystemDefaultUILanguage() API. On other platforms, this is the language of the OS itself.  
+3.  The system's default UI language, as returned from the GetSystemDefaultUILanguage() API. On other platforms, this is the language of the OS itself.  
   
 4.  The system's default UI language, without any specific sublanguage.  
   
@@ -35,7 +30,7 @@ MFC version 7.0 and later provides enhanced support for satellite DLLs, a featur
   
  If MFC does not find any satellite DLLs, it uses whatever resources are contained in the application itself.  
   
- As an example, suppose that an application LangExample.exe uses MFC and is running on a Windows 2000 multiple user-interface system; the system UI language is ENU [U.S. English] and the current user's UI language is set to FRC [Canadian French]. MFC looks for the following DLLs in the following order:  
+ As an example, suppose that an application LangExample.exe uses MFC and is running on a multiple user-interface system; the system UI language is ENU [U.S. English] and the current user's UI language is set to FRC [Canadian French]. MFC looks for the following DLLs in the following order:  
   
 1.  LangExampleFRC.dll (user's UI language).  
   

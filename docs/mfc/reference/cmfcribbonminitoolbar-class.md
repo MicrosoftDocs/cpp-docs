@@ -2,19 +2,14 @@
 title: "CMFCRibbonMiniToolBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonMiniToolBar", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsContextMenuMode", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::IsRibbonMiniToolBar", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::SetCommands", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::Show", "AFXRIBBONMINITOOLBAR/CMFCRibbonMiniToolBar::ShowWithContextMenu"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonMiniToolBar [MFC], IsContextMenuMode", "CMFCRibbonMiniToolBar [MFC], IsRibbonMiniToolBar", "CMFCRibbonMiniToolBar [MFC], SetCommands", "CMFCRibbonMiniToolBar [MFC], Show", "CMFCRibbonMiniToolBar [MFC], ShowWithContextMenu"]
 ms.assetid: 7017e963-aeaf-4fe9-b540-e15a7ed41e94
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonMiniToolBar Class
@@ -82,10 +77,10 @@ void SetCommands(
 ```  
   
 ### Parameters  
- [in] `pRibbonBar`  
+ [in] *pRibbonBar*  
  The ribbon bar that the mini toolbar searches for the buttons to display.  
   
- [in] `lstCommands`  
+ [in] *lstCommands*  
  The list of commands to be displayed on the mini toolbar. All ribbon categories are searched to find the associated buttons.  
   
 ### Remarks  
@@ -106,14 +101,14 @@ BOOL Show(
 ```  
   
 ### Parameters  
- [in] `x`  
+ [in] *x*  
  Specifies the horizontal position of the mini toolbar in screen coordinates.  
   
- [in] `y`  
+ [in] *y*  
  Specifies the vertical position of the mini toolbar in screen coordinates.  
   
 ### Return Value  
- `TRUE` if the mini toolbar was displayed successfully; otherwise, `FALSE`.  
+ TRUE if the mini toolbar was displayed successfully; otherwise, FALSE.  
   
 ##  <a name="showwithcontextmenu"></a>  CMFCRibbonMiniToolBar::ShowWithContextMenu  
  Displays the mini toolbar together with a context menu.  
@@ -127,26 +122,26 @@ BOOL ShowWithContextMenu(
 ```  
   
 ### Parameters  
- [in] `x`  
+ [in] *x*  
  Specifies the horizontal position of the context menu in screen coordinates.  
   
- [in] `y`  
+ [in] *y*  
  Specifies the vertical position of the context menu in screen coordinates.  
   
- [in] `uiMenuResID`  
+ [in] *uiMenuResID*  
  Specifies the resource ID of the context menu to display.  
   
- [in] `pWndOwner`  
+ [in] *pWndOwner*  
  Identifies the window which receives messages from the context menu.  
   
 ### Return Value  
- `TRUE` if the context menu was displayed successfully; otherwise, `FALSE`.  
+ TRUE if the context menu was displayed successfully; otherwise, FALSE.  
   
 ### Remarks  
  Use this function to display a mini toolbar that has a context menu. The context menu is positioned 15 pixels below the mini toolbar.  
   
 ##  <a name="iscontextmenumode"></a>  CMFCRibbonMiniToolBar::IsContextMenuMode  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 BOOL IsContextMenuMode() const;  
@@ -157,7 +152,7 @@ BOOL IsContextMenuMode() const;
 ### Remarks  
   
 ##  <a name="isribbonminitoolbar"></a>  CMFCRibbonMiniToolBar::IsRibbonMiniToolBar  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual BOOL IsRibbonMiniToolBar() const;  

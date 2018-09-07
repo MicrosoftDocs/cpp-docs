@@ -2,17 +2,12 @@
 title: "Visual C++ Help and Community | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/30/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-ide"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
-caps.latest.revision: 7
-author: "ghogen"
-ms.author: "ghogen"
-manager: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Visual C++ Help and Community
@@ -23,14 +18,14 @@ Here's how to getting information about how to write C++ code and use the Visual
 
 |Title|Description|
 |-----------|-----------------|
-|[Developer Code Samples](http://go.microsoft.com/fwlink/p/?LinkId=256533)|Contains downloadable sample code from Microsoft and community contributors.|
+|[Developer Code Samples](https://code.msdn.microsoft.com/)|Contains downloadable sample code from Microsoft and community contributors.|
 
 ## Product Documentation
 
 |Title|Description|
 |-----------|-----------------|
 |[Visual C++](visual-cpp-in-visual-studio.md)|Contains reference and conceptual documentation about Visual C++. Part of the MSDN Library.|
-|[Windows Developer Center](http://go.microsoft.com/fwlink/p/?LinkId=256534)|Contains information about how to use C++ and other languages to develop apps for [!INCLUDE[win8](build/reference/includes/win8_md.md)]. Part of the Windows Developer Center; the C++ content is under the Docs > Language Reference node.|
+|[Windows Developer Center](https://developer.microsoft.com/en-us/windows/)|Contains information about how to use C++ and other languages to develop apps for Windows 8. Part of the Windows Developer Center; the C++ content is under the Docs > Language Reference node.|
 
 ### Online and Offline Documentation
 
@@ -44,7 +39,7 @@ Many sections of the documentation are also available in PDF form. These section
 
 |Title|Description|
 |-----------|-----------------|
-|[Visual C++ Team Blog](http://go.microsoft.com/fwlink/p/?LinkId=256537)|Contains posts on various subjects by the experts on the Visual C++ product team.|
-|[Channel 9](http://go.microsoft.com/fwlink/p/?LinkId=251694)|Contains video interviews and lectures. Use the search box on the Channel 9 home page to find C++ content.|
-|[Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=256535)|Contains articles and news about Visual Studio and related development tools.|
-|[MSDN forums](http://go.microsoft.com/fwlink/p/?LinkId=256538)|Official Microsoft forums where you can post questions and get answers from Microsoft and from experts in the community. Use the search box on the forums home page to find the forums that are specifically related to C++.|
+|[Visual C++ Team Blog](https://blogs.msdn.microsoft.com/vcblog/)|Contains posts on various subjects by the experts on the Visual C++ product team.|
+|[Channel 9](https://channel9.msdn.com/)|Contains video interviews and lectures. Use the search box on the Channel 9 home page to find C++ content.|
+|[Visual Studio](https://visualstudio.microsoft.com/)|Contains articles and news about Visual Studio and related development tools.|
+|[MSDN forums](https://social.msdn.microsoft.com/Forums/en-US/home?category=visualc) and [Developer Community](https://developercommunity.visualstudio.com)|Official Microsoft forums where you can post questions about C++ and get answers from Microsoft and from experts in the community.|

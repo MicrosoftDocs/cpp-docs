@@ -2,19 +2,14 @@
 title: "concurrent_unordered_set Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::concurrent_unordered_set", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::hash_function", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::insert", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::key_eq", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::swap", "CONCURRENT_UNORDERED_SET/concurrency::concurrent_unordered_set::unsafe_erase"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["concurrent_unordered_set class"]
 ms.assetid: c61f9a9a-4fd9-491a-9251-e300737ecf4b
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # concurrent_unordered_set Class
@@ -280,7 +275,7 @@ std::pair<const_iterator,
  The key value to search for.  
   
 ### Return Value  
- A [pair](http://msdn.microsoft.com/en-us/32e72d66-3020-4cb9-92c3-f7a5fa7998ff) where the first element is an iterator to the beginning and the second element is an iterator to the end of the range.  
+ A [pair](../../../standard-library/pair-structure.md) where the first element is an iterator to the beginning and the second element is an iterator to the end of the range.  
   
 ### Remarks  
  It is possible for concurrent inserts to cause additional keys to be inserted after the begin iterator and before the end iterator.  
@@ -300,7 +295,7 @@ const_iterator find(const key_type& KVal) const;
  The key value to search for.  
   
 ### Return Value  
- An iterator pointing to the location of the the first element that matched the key provided, or the iterator `end()` if no such element exists.  
+ An iterator pointing to the location of the first element that matched the key provided, or the iterator `end()` if no such element exists.  
   
 ##  <a name="get_allocator"></a> get_allocator 
 

@@ -2,27 +2,22 @@
 title: "Sample Multithread C Program | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 4706f6cd-ff9c-4dbf-99a2-1c999b568f17
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Sample Multithread C Program
-Bounce.c is a sample multithread program that creates a new thread each time the letter **a** or **A** is typed. Each thread bounces a happy face of a different color around the screen. Up to 32 threads can be created. The program's normal termination occurs when `q` or **Q** is typed. For information about compiling and linking Bounce.c, see [Compiling and Linking Multithread Programs](../parallel/compiling-and-linking-multithread-programs.md).  
+Bounce.c is a sample multithread program that creates a new thread each time the letter `a` or `A` is typed. Each thread bounces a happy face of a different color around the screen. Up to 32 threads can be created. The program's normal termination occurs when `q` or `Q` is typed. For information about compiling and linking Bounce.c, see [Compiling and Linking Multithread Programs](compiling-and-linking-multithread-programs.md).  
   
 ## Example  
   
 ### Code  
   
-```  
+```c  
 // sample_multithread_c_program.c  
 // compile with: /c  
 //  
@@ -215,4 +210,5 @@ q
 ```  
   
 ## See Also  
- [Multithreading with C and Win32](../parallel/multithreading-with-c-and-win32.md)
+
+[Multithreading with C and Win32](multithreading-with-c-and-win32.md)

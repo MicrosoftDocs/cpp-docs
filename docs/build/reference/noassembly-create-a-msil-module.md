@@ -2,19 +2,14 @@
 title: "-NOASSEMBLY (Create a MSIL Module) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/NOASSEMBLY", "VC.Project.VCLinkerTool.TurnOffAssemblyGeneration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["assemblies [C++]", "-NOASSEMBLY linker option", "/NOASSEMBLY linker option", "NOASSEMBLY linker option", "assemblies [C++], not creating an assembly"]
 ms.assetid: 3cea4e70-f451-4395-a626-1930b1b127fe
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /NOASSEMBLY (Create a MSIL Module)

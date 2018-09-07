@@ -2,17 +2,12 @@
 title: "Name Resolution for Dependent Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Name Resolution for Dependent Types
@@ -89,12 +84,12 @@ int main()
   
 ### Output  
   
-```  
+```Output  
 Int MyNamespace::myFunction  
 ```  
   
 ### Template Disambiguation  
- [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] enforces the C++98/03/11 standard rules for disambiguation with the "template" keyword. In the following example, Visual C++ 2010 would accept both the nonconforming lines and the conforming lines.  [!INCLUDE[cpp_dev11_long](../build/includes/cpp_dev11_long_md.md)] accepts only the conforming lines.  
+ Visual Studio 2012 enforces the C++98/03/11 standard rules for disambiguation with the "template" keyword. In the following example, Visual C++ 2010 would accept both the nonconforming lines and the conforming lines.  Visual Studio 2012 accepts only the conforming lines.  
   
 ```cpp  
 #include <iostream>  
@@ -125,5 +120,5 @@ int main() {
   
  Conformance with the disambiguation rules is required because, by default, C++ assumes that `AY::Rebind` isn't a template, and so the compiler interprets the following "`<`" as a less-than. It has to know that `Rebind` is a template so that it can correctly parse "`<`" as an angle bracket.  
   
-## See Also  
+## See also  
  [Name Resolution](../cpp/templates-and-name-resolution.md)

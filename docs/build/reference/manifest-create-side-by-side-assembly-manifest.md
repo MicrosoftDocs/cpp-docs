@@ -2,19 +2,14 @@
 title: "-MANIFEST (Create Side-by-Side Assembly Manifest) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.GenerateManifest"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-MANIFEST linker option", "/MANIFEST linker option", "MANIFEST linker option"]
 ms.assetid: 98c52e1e-712c-4f49-b149-4d0a3501b600
-caps.latest.revision: 20
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /MANIFEST (Create Side-by-Side Assembly Manifest)
@@ -23,7 +18,7 @@ ms.workload: ["cplusplus"]
 ```  
   
 ## Remarks  
- /MANIFEST specifies that the linker should create a side-by-side manifest file. For more information about manifest files, see [Manifest Files Reference](http://msdn.microsoft.com/library/aa375632).  
+ /MANIFEST specifies that the linker should create a side-by-side manifest file. For more information about manifest files, see [Manifest Files Reference](/windows/desktop/SbsCs/manifest-files-reference).  
   
  The default is /MANIFEST.  
   

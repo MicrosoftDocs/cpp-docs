@@ -2,19 +2,14 @@
 title: "Rvalue Reference Declarator: &amp;&amp; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["&&"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["&& rvalue reference declarator"]
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Rvalue Reference Declarator: &amp;&amp;
@@ -23,7 +18,6 @@ Holds a reference to an rvalue expression.
 ## Syntax  
   
 ```  
-  
 type-id && cast-expression  
 ```  
   
@@ -35,11 +29,11 @@ type-id && cast-expression
 ## Move Semantics  
  Rvalue references support the implementation of *move semantics*, which can significantly increase the performance of your applications. Move semantics enables you to write code that transfers resources (such as dynamically allocated memory) from one object to another. Move semantics works because it enables resources to be transferred from temporary objects that cannot be referenced elsewhere in the program.  
   
- To implement move semantics, you typically provide a *move constructor,* and optionally a move assignment operator (`operator=`), to your class. Copy and assignment operations whose sources are rvalues then automatically take advantage of move semantics. Unlike the default copy constructor, the compiler does not provide a default move constructor. For more information about how to write a move constructor and how to use it in your application, see [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
+ To implement move semantics, you typically provide a *move constructor,* and optionally a move assignment operator (**operator=**), to your class. Copy and assignment operations whose sources are rvalues then automatically take advantage of move semantics. Unlike the default copy constructor, the compiler does not provide a default move constructor. For more information about how to write a move constructor and how to use it in your application, see [Move Constructors and Move Assignment Operators (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).  
   
  You can also overload ordinary functions and operators to take advantage of move semantics. Visual C++ 2010 introduces move semantics into the C++ Standard Library. For example, the `string` class implements operations that perform move semantics. Consider the following example that concatenates several strings and prints the result:  
   
-```  
+```cpp 
 // string_concatenation.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -53,9 +47,9 @@ int main()
 }  
 ```  
   
- Before Visual C++ 2010, each call to `operator+` allocates and returns a new temporary `string` object (an rvalue). `operator+` cannot append one string to the other because it does not know whether the source strings are lvalues or rvalues. If the source strings are both lvalues, they might be referenced elsewhere in the program and therefore must not be modified. By using rvalue references, `operator+` can be modified to take rvalues, which cannot be referenced elsewhere in the program. Therefore, `operator+` can now append one string to another. This can significantly reduce the number of dynamic memory allocations that the `string` class must perform. For more information about the `string` class, see [basic_string Class](../standard-library/basic-string-class.md).  
+ Before Visual C++ 2010, each call to **operator+** allocates and returns a new temporary `string` object (an rvalue). **operator+** cannot append one string to the other because it does not know whether the source strings are lvalues or rvalues. If the source strings are both lvalues, they might be referenced elsewhere in the program and therefore must not be modified. By using rvalue references, **operator+** can be modified to take rvalues, which cannot be referenced elsewhere in the program. Therefore, **operator+** can now append one string to another. This can significantly reduce the number of dynamic memory allocations that the `string` class must perform. For more information about the `string` class, see [basic_string Class](../standard-library/basic-string-class.md).  
   
- Move semantics also helps when the compiler cannot use Return Value Optimization (RVO) or Named Return Value Optimization (NRVO). In these cases, the compiler calls the move constructor if the type defines it. For more information about Named Return Value Optimization, see [Named Return Value Optimization in Visual C++ 2005](http://go.microsoft.com/fwlink/p/?linkid=131571).  
+ Move semantics also helps when the compiler cannot use Return Value Optimization (RVO) or Named Return Value Optimization (NRVO). In these cases, the compiler calls the move constructor if the type defines it. For more information about Named Return Value Optimization, see [Named Return Value Optimization in Visual C++ 2005](https://msdn.microsoft.com/en-us/library/ms364057.aspx).  
   
  To better understand move semantics, consider the example of inserting an element into a `vector` object. If the capacity of the `vector` object is exceeded, the `vector` object must reallocate memory for its elements and then copy each element to another memory location to make room for the inserted element. When an insertion operation copies an element, it creates a new element, calls the copy constructor to copy the data from the previous element to the new element, and then destroys the previous element. Move semantics enables you to move objects directly without having to perform expensive memory allocation and copy operations.  
   
@@ -68,9 +62,9 @@ int main()
   
  Ordinarily, to solve this problem, you must provide overloaded versions of the generic function that take both `T&` and `const T&` for each of its parameters. As a result, the number of overloaded functions increases exponentially with the number of parameters. Rvalue references enable you to write one version of a function that accepts arbitrary arguments and forwards them to another function as if the other function had been called directly.  
   
- Consider the following example that declares four types, `W`, `X`, `Y`, and `Z`. The constructor for each type takes a different combination of `const` and non-`const` lvalue references as its parameters.  
+ Consider the following example that declares four types, `W`, `X`, `Y`, and `Z`. The constructor for each type takes a different combination of **const** and non-**const** lvalue references as its parameters.  
   
-```  
+```cpp 
 struct W  
 {  
    W(int&, int&) {}  
@@ -94,30 +88,30 @@ struct Z
   
  Suppose you want to write a generic function that generates objects. The following example shows one way to write this function:  
   
-```  
+```cpp 
 template <typename T, typename A1, typename A2>  
 T* factory(A1& a1, A2& a2)  
 {  
    return new T(a1, a2);  
 }  
-```  
+```
   
  The following example shows a valid call to the `factory` function:  
   
-```  
+```cpp 
 int a = 4, b = 5;  
 W* pw = factory<W>(a, b);  
 ```  
   
  However, the following example does not contain a valid call to the `factory` function because `factory` takes lvalue references that are modifiable as its parameters, but it is called by using rvalues:  
   
-```  
+```cpp 
 Z* pz = factory<Z>(2, 2);  
 ```  
   
  Ordinarily, to solve this problem, you must create an overloaded version of the `factory` function for every combination of `A&` and `const A&` parameters. Rvalue references enable you to write one version of the `factory` function, as shown in the following example:  
   
-```  
+```cpp 
 template <typename T, typename A1, typename A2>  
 T* factory(A1&& a1, A2&& a2)  
 {  
@@ -129,7 +123,7 @@ T* factory(A1&& a1, A2&& a2)
   
  The following example shows the `main` function that uses the revised `factory` function to create instances of the `W`, `X`, `Y`, and `Z` classes. The revised `factory` function forwards its parameters (either lvalues or rvalues) to the appropriate class constructor.  
   
-```  
+```cpp 
 int main()  
 {  
    int a = 4, b = 5;  
@@ -148,9 +142,9 @@ int main()
 ## Additional Properties of Rvalue References  
  **You can overload a function to take an lvalue reference and an rvalue reference.**  
   
- By overloading a function to take a `const` lvalue reference or an rvalue reference, you can write code that distinguishes between non-modifiable objects (lvalues) and modifiable temporary values (rvalues). You can pass an object to a function that takes an rvalue reference unless the object is marked as `const`. The following example shows the function `f`, which is overloaded to take an lvalue reference and an rvalue reference. The `main` function calls `f` with both lvalues and an rvalue.  
+ By overloading a function to take a **const** lvalue reference or an rvalue reference, you can write code that distinguishes between non-modifiable objects (lvalues) and modifiable temporary values (rvalues). You can pass an object to a function that takes an rvalue reference unless the object is marked as **const**. The following example shows the function `f`, which is overloaded to take an lvalue reference and an rvalue reference. The `main` function calls `f` with both lvalues and an rvalue.  
   
-```  
+```cpp 
 // reference-overload.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -182,7 +176,7 @@ int main()
   
  This example produces the following output:  
   
-```  
+```Output  
 In f(const MemoryBlock&). This version cannot modify the parameter.  
 In f(MemoryBlock&&). This version can modify the parameter.  
 ```  
@@ -195,7 +189,7 @@ In f(MemoryBlock&&). This version can modify the parameter.
   
  The following example shows the function `g`, which is overloaded to take an lvalue reference and an rvalue reference. The function `f` takes an rvalue reference as its parameter (a named rvalue reference) and returns an rvalue reference (an unnamed rvalue reference). In the call to `g` from `f`, overload resolution selects the version of `g` that takes an lvalue reference because the body of `f` treats its parameter as an lvalue. In the call to `g` from `main`, overload resolution selects the version of `g` that takes an rvalue reference because `f` returns an rvalue reference.  
   
-```  
+```cpp 
 // named-reference.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -231,7 +225,7 @@ int main()
   
  This example produces the following output:  
   
-```  
+```cpp 
 In g(const MemoryBlock&).  
 In g(MemoryBlock&&).  
 ```  
@@ -240,9 +234,9 @@ In g(MemoryBlock&&).
   
 -   **You can cast an lvalue to an rvalue reference.**  
   
- The C++ Standard Library [std::move](../standard-library/utility-functions.md#move) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the `static_cast` keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
+ The C++ Standard Library [std::move](../standard-library/utility-functions.md#move) function enables you to convert an object to an rvalue reference to that object. Alternatively, you can use the **static_cast** keyword to cast an lvalue to an rvalue reference, as shown in the following example:  
   
-```  
+```cpp 
 // cast-reference.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -274,7 +268,7 @@ int main()
   
  This example produces the following output:  
   
-```  
+```cpp 
 In g(const MemoryBlock&).  
 In g(MemoryBlock&&).  
 ```  
@@ -283,11 +277,11 @@ In g(MemoryBlock&&).
   
  It is common to write a function template that passes (or *forwards*) its parameters to another function. It is important to understand how template type deduction works for function templates that take rvalue references.  
   
- If the function argument is an rvalue, the compiler deduces the argument to be an rvalue reference. For example, if you pass an rvalue reference to an object of type `X` to a template function that takes type `T&&` as its parameter, template argument deduction deduces `T` to be `X`. Therefore, the parameter has type `X&&`. If the function argument is an lvalue or `const` lvalue, the compiler deduces its type to be an lvalue reference or `const` lvalue reference of that type.  
+ If the function argument is an rvalue, the compiler deduces the argument to be an rvalue reference. For example, if you pass an rvalue reference to an object of type `X` to a template function that takes type `T&&` as its parameter, template argument deduction deduces `T` to be `X`. Therefore, the parameter has type `X&&`. If the function argument is an lvalue or **const** lvalue, the compiler deduces its type to be an lvalue reference or **const** lvalue reference of that type.  
   
  The following example declares one structure template and then specializes it for various reference types. The `print_type_and_value` function takes an rvalue reference as its parameter and forwards it to the appropriate specialized version of the `S::print` method. The `main` function demonstrates the various ways to call the `S::print` method.  
   
-```  
+```cpp 
 // template-type-deduction.cpp  
 // Compile with: /EHsc  
 #include <iostream>  
@@ -368,7 +362,7 @@ int main()
   
  This example produces the following output:  
   
-```  
+```cpp 
 print<T&>: first  
 print<const T&>: second  
 print<T&&>: third  
@@ -377,13 +371,13 @@ print<const T&&>: fourth
   
  To resolve each call to the `print_type_and_value` function, the compiler first performs template argument deduction. The compiler then applies reference collapsing rules when it substitutes the deduced template arguments for the parameter types. For example, passing the local variable `s1` to the `print_type_and_value` function causes the compiler to produce the following function signature:  
   
-```  
+```cpp 
 print_type_and_value<string&>(string& && t)  
 ```  
   
  The compiler uses reference collapsing rules to reduce the signature to the following:  
   
-```  
+```cpp 
 print_type_and_value<string&>(string& t)  
 ```  
   
@@ -404,7 +398,7 @@ print_type_and_value<string&>(string& t)
 ## Summary  
  Rvalue references distinguish lvalues from rvalues. They can help you improve the performance of your applications by eliminating the need for unnecessary memory allocations and copy operations. They also enable you to write one version of a function that accepts arbitrary arguments and forwards them to another function as if the other function had been called directly.  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [Lvalue Reference Declarator: &](../cpp/lvalue-reference-declarator-amp.md)   
  [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md)   

@@ -2,18 +2,13 @@
 title: "Understanding Custom Build Steps and Build Events | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["builds [C++], events", "custom build steps [C++], customizing builds", "events [C++], build", "custom build steps [C++]", "build steps [C++]", "build events [C++], order of events and build steps", "build steps [C++], build events", "builds [C++], custom build steps"]
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Understanding Custom Build Steps and Build Events
@@ -61,4 +56,3 @@ From within the Visual C++ development environment, there are three basic ways t
 ## See Also  
  [Building C++ Projects in Visual Studio](../ide/building-cpp-projects-in-visual-studio.md)   
  [Common Macros for Build Commands and Properties](../ide/common-macros-for-build-commands-and-properties.md)   
- [Tool Build Order Dialog Box](http://msdn.microsoft.com/en-us/6204c5b1-7ce9-4948-9ff6-0268642ee14c)

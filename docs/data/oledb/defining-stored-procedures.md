@@ -2,18 +2,13 @@
 title: "Defining Stored Procedures | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["stored procedures, syntax", "OLE DB, stored procedures", "stored procedures, defining", "stored procedures, OLE DB"]
 ms.assetid: 54949b81-3275-4dd9-96e4-3eda1ed755f2
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Defining Stored Procedures
@@ -45,23 +40,24 @@ DEFINE_COMMAND(CMySProcAccessor, _T("{CALL dbo.dt_adduserobject (?,?) }")
   
  Next, declare the command class:  
   
-```  
-class CMySProc : public CCommand<CAccessor<CMySProcAccessor> >  
+```cpp  
+class CMySProc : public CCommand<CAccessor<CMySProcAccessor>>  
 ```  
   
  Finally, call the stored procedure in `OpenRowset` as follows:  
   
-```  
+```cpp  
 CSession m_session;  
+
 HRESULT OpenRowset()  
 {  
-   return CCommand<CAccessor<CMySProcAccessor> >::Open(m_session);  
+   return CCommand<CAccessor<CMySProcAccessor>>::Open(m_session);  
 }  
 ```  
   
  Also note that you can define a stored procedure using the database attribute [db_command](../../windows/db-command.md) as follows:  
   
-```  
+```cpp  
 db_command("{ ? = CALL dbo.dt_adduserobject }")  
 ```  
   

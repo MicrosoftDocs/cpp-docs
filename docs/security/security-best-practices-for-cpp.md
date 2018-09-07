@@ -1,30 +1,27 @@
 ---
 title: "Security Best Practices for C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "05/08/2018"
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["securitybestpracticesVC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices"]
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-caps.latest.revision: 45
-author: "ghogen"
-ms.author: "ghogen"
-manager: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Security Best Practices for C++
+
 This article contains information about security tools and practices. Using them does not make applications immune from attack, but it makes successful attacks less likely.  
   
-## Visual C++ Security Features  
+## Visual C++ Security Features
+
  These security features are built into the Visual C++ compiler and linker:  
   
  [/guard (Enable Control Flow Guard)](../build/reference/guard-enable-control-flow-guard.md)  
- Causes the compiler to to analyze control flow for indirect call targets at compile time, and then to insert code to verify the targets at runtime.  
+ Causes the compiler to analyze control flow for indirect call targets at compile time, and then to insert code to verify the targets at runtime.  
   
  [/GS (Buffer Security Check)](../build/reference/gs-buffer-security-check.md)  
  Instructs the compiler to insert overrun detection code into functions that are at risk of being exploited. When an overrun is detected, execution is stopped. By default, this option is on.  
@@ -47,7 +44,7 @@ This article contains information about security tools and practices. Using them
 ## SafeInt Library  
  [SafeInt Library](../windows/safeint-library.md) helps prevent integer overflows and other exploitable errors that might occur when the application performs mathematical operations. The `SafeInt` library includes the [SafeInt Class](../windows/safeint-class.md), the [SafeIntException Class](../windows/safeintexception-class.md), and several [SafeInt Functions](../windows/safeint-functions.md).  
   
- The `SafeInt` class protects against integer overflow and divide-by-zero exploits. You can use it to handle comparisons between values of different types. I provides two error handling policies. The default policy is for the `SafeInt` class to throw a `SafeIntException` class exception to report why a mathematical operation cannot be completed. The second policy is for the `SafeInt` class to stop program execution. You can also define a custom policy.  
+ The `SafeInt` class protects against integer overflow and divide-by-zero exploits. You can use it to handle comparisons between values of different types. It provides two error handling policies. The default policy is for the `SafeInt` class to throw a `SafeIntException` class exception to report why a mathematical operation cannot be completed. The second policy is for the `SafeInt` class to stop program execution. You can also define a custom policy.  
   
  Each `SafeInt` function protects one mathematical operation from an exploitable error. You can use two different kinds of parameters without converting them to the same type. To protect multiple mathematical operations, use the `SafeInt` class.  
   
@@ -68,7 +65,8 @@ This article contains information about security tools and practices. Using them
 -   Security  
   
 ## Windows Application Verifier  
- The Application Verifier (AppVerifier) can help you identify potential application compatibility, stability, and security issues.  
+ The [Application Verifier (AppVerifier)](/windows-hardware/drivers/debugger/application-verifier
+) can help you identify potential application compatibility, stability, and security issues.  
   
  The AppVerifier monitors how an application uses the operating system. It watches the file system, registry, memory, and APIs while the application is running, and recommends source-code fixes for issues that it uncovers.  
   
@@ -77,16 +75,18 @@ This article contains information about security tools and practices. Using them
 -   Test for potential application compatibility errors that are caused by common programming mistakes.  
   
 -   Examine an application for memory-related issues.  
-  s
+
 -   Identify potential security issues in an application.  
-  
- The AppVerifier is part of the Application Compatibility Toolkit, which is available from the [Application Compatibility](http://go.microsoft.com/fwlink/p/?linkid=91277) on the TechNet web site.  
   
 
 ## Windows User Accounts  
- Using Windows user accounts that belong to the Administrators group exposes developers and--by extension--customers to security risks. For more information, see [Running as a Member of the Users Group](running-as-a-member-of-the-users-group.md) and [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md).  
-  
+ Using Windows user accounts that belong to the Administrators group exposes developers and--by extension--customers to security risks. For more information, see [Running as a Member of the Users Group](running-as-a-member-of-the-users-group.md) and [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md).
+
+## Guidance for Speculative Execution Side Channels
+
+For information about how to indentify and mitigate against speculative execution side channel hardware vulnerabilities in C++ software, see [C++ Developer Guidance for Speculative Execution Side Channels](developer-guidance-speculative-execution.md).
+
 ## See Also  
- <xref:System.Security>   
- [Security](/dotnet/standard/security/index)   
- [How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)
+<xref:System.Security>   
+[Security](/dotnet/standard/security/index)   
+[How User Account Control (UAC) Affects Your Application](how-user-account-control-uac-affects-your-application.md)

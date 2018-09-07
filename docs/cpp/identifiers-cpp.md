@@ -2,18 +2,13 @@
 title: "Identifiers (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["decorated names", "decorated names, about decorated names", "identifiers, C++", "white space, in C++ identifiers", "identifiers [C++]"]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Identifiers (C++)
@@ -46,7 +41,7 @@ A B C D E F G H I J K L M
 N O P Q R S T U V W X Y Z  
 ```  
   
- Certain ranges of universal character names are also allowed in an identifier.  A universal character name in an identifier cannot designate a control character or a character in the basic source character set. For more information, see [Character Sets](../cpp/character-sets2.md). These Unicode code point number ranges are allowed as universal character names for any character in an identifier:  
+ Certain ranges of universal character names are also allowed in an identifier.  A universal character name in an identifier cannot designate a control character or a character in the basic source character set. For more information, see [Character Sets](../cpp/character-sets.md). These Unicode code point number ranges are allowed as universal character names for any character in an identifier:  
   
 -   00A8, 00AA, 00AD, 00AF, 00B2-00B5, 00B7-00BA, 00BC-00BE, 00C0-00D6, 00D8-00F6, 00F8-00FF, 0100-02FF, 0370-167F, 1681-180D, 180F-1DBF, 1E00-1FFF, 200B-200D, 202A-202E, 203F-2040, 2054, 2060-206F, 2070-20CF, 2100-218F, 2460-24FF, 2776-2793, 2C00-2DFF, 2E80-2FFF, 3004-3007, 3021-302F, 3031-303F, 3040-D7FF, F900-FD3D, FD40-FDCF, FDF0-FE1F, FE30-FE44, FE47-FFFD, 10000-1FFFD, 20000-2FFFD, 30000-3FFFD, 40000-4FFFD, 50000-5FFFD, 60000-6FFFD, 70000-7FFFD, 80000-8FFFD, 90000-9FFFD, A0000-AFFFD, B0000-BFFFD, C0000-CFFFD, D0000-DFFFD, E0000-EFFFD  
   
@@ -72,7 +67,7 @@ N O P Q R S T U V W X Y Z
   
  The dollar sign `$` is a valid identifier character in Visual C++. Visual C++ also allows you to use the actual characters represented by the allowed ranges of universal character names in identifiers. To use these characters, you must save the file by using a file encoding codepage that includes them.  This example shows how both extended characters and universal character names can be used interchangeably in your code.  
   
-```  
+```cpp  
 // extended_identifier.cpp  
 // In Visual Studio, use File, Advanced Save Options to set  
 // the file encoding to Unicode codepage 1200  
@@ -93,9 +88,9 @@ int main() {
   
  The first character of an identifier must be an alphabetic character, either uppercase or lowercase, or an underscore ( **_** ). Because C++ identifiers are case sensitive, `fileName` is different from `FileName`.  
   
- Identifiers cannot be exactly the same spelling and case as keywords. Identifiers that contain keywords are legal. For example, `Pint` is a legal identifier, even though it contains `int`, which is a keyword.  
+ Identifiers cannot be exactly the same spelling and case as keywords. Identifiers that contain keywords are legal. For example, `Pint` is a legal identifier, even though it contains **int**, which is a keyword.  
   
  Use of two sequential underscore characters ( **__** ) at the beginning of an identifier, or a single leading underscore followed by a capital letter, is reserved for C++ implementations in all scopes. You should avoid using one leading underscore followed by a lowercase letter for names with file scope because of possible conflicts with current or future reserved identifiers.  
   
-## See Also  
+## See also  
  [Lexical Conventions](../cpp/lexical-conventions.md)

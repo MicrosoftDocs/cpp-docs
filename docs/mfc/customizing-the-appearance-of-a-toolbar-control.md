@@ -2,19 +2,14 @@
 title: "Customizing the Appearance of a Toolbar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["TBSTYLE_"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["flat toolbars", "CToolBar class [MFC], styles", "transparent toolbars", "TBSTYLE_ styles [MFC]", "CToolBarCtrl class [MFC], object styles", "toolbar controls [MFC], style"]
 ms.assetid: fd0a73db-7ad1-4fe4-889b-02c3980f49e8
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Customizing the Appearance of a Toolbar Control
@@ -36,19 +31,19 @@ Class `CToolBarCtrl` provides many styles that affect the appearance (and, occas
 -   **TBSTYLE_ALTDRAG** Allows users to change a toolbar button's position by dragging it while holding down ALT. If this style is not specified, the user must hold down SHIFT while dragging a button.  
   
     > [!NOTE]
-    >  The `CCS_ADJUSTABLE` style must be specified to enable toolbar buttons to be dragged.  
+    >  The **CCS_ADJUSTABLE** style must be specified to enable toolbar buttons to be dragged.  
   
 -   **TBSTYLE_REGISTERDROP** Generates **TBN_GETOBJECT** notification messages to request drop target objects when the mouse pointer passes over toolbar buttons.  
   
  The remaining styles affect visual and nonvisual aspects of the toolbar object:  
   
--   `TBSTYLE_WRAPABLE` Creates a toolbar that can have multiple lines of buttons. Toolbar buttons can "wrap" to the next line when the toolbar becomes too narrow to include all buttons on the same line. Wrapping occurs on separation and nongroup boundaries.  
+-   **TBSTYLE_WRAPABLE** Creates a toolbar that can have multiple lines of buttons. Toolbar buttons can "wrap" to the next line when the toolbar becomes too narrow to include all buttons on the same line. Wrapping occurs on separation and nongroup boundaries.  
   
--   **TBSTYLE_CUSTOMERASE** Generates **NM_CUSTOMDRAW** notification messages when it processes `WM_ERASEBKGND` messages.  
+-   **TBSTYLE_CUSTOMERASE** Generates **NM_CUSTOMDRAW** notification messages when it processes **WM_ERASEBKGND** messages.  
   
--   `TBSTYLE_TOOLTIPS` Creates a tool tip control that an application can use to display descriptive text for the buttons in the toolbar.  
+-   **TBSTYLE_TOOLTIPS** Creates a tool tip control that an application can use to display descriptive text for the buttons in the toolbar.  
   
- For a complete listing of toolbar styles and extended styles, see [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) and [Toolbar Extended Styles](http://msdn.microsoft.com/library/windows/desktop/bb760430) in the Windows SDK.  
+ For a complete listing of toolbar styles and extended styles, see [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) and [Toolbar Extended Styles](/windows/desktop/Controls/toolbar-extended-styles) in the Windows SDK.  
   
 ## See Also  
  [Using CToolBarCtrl](../mfc/using-ctoolbarctrl.md)   

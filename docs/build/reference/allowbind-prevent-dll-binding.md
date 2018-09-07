@@ -2,19 +2,14 @@
 title: "-ALLOWBIND (Prevent DLL Binding) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.PreventDLLBinding", "/allowbind"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/ALLOWBIND linker option", "binding DLLs", "preventing DLL binding", "ALLOWBIND linker option", "-ALLOWBIND linker option", "DLLs [C++], preventing binding"]
 ms.assetid: 30e37e24-12e4-407e-988a-39d357403598
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /ALLOWBIND (Prevent DLL Binding)
@@ -42,5 +37,5 @@ ms.workload: ["cplusplus"]
 ## See Also  
  [Setting Linker Options](../../build/reference/setting-linker-options.md)   
  [Linker Options](../../build/reference/linker-options.md)   
- [BindImage function](http://msdn.microsoft.com/library/windows/desktop/ms679278.aspx)   
- [BindImageEx function](http://msdn.microsoft.com/library/windows/desktop/ms679279.aspx)
+ [BindImage function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimage)   
+ [BindImageEx function](/windows/desktop/api/imagehlp/nf-imagehlp-bindimageex)

@@ -2,19 +2,14 @@
 title: "CFindReplaceDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CFindReplaceDialog", "AFXDLGS/CFindReplaceDialog", "AFXDLGS/CFindReplaceDialog::CFindReplaceDialog", "AFXDLGS/CFindReplaceDialog::Create", "AFXDLGS/CFindReplaceDialog::FindNext", "AFXDLGS/CFindReplaceDialog::GetFindString", "AFXDLGS/CFindReplaceDialog::GetNotifier", "AFXDLGS/CFindReplaceDialog::GetReplaceString", "AFXDLGS/CFindReplaceDialog::IsTerminating", "AFXDLGS/CFindReplaceDialog::MatchCase", "AFXDLGS/CFindReplaceDialog::MatchWholeWord", "AFXDLGS/CFindReplaceDialog::ReplaceAll", "AFXDLGS/CFindReplaceDialog::ReplaceCurrent", "AFXDLGS/CFindReplaceDialog::SearchDown", "AFXDLGS/CFindReplaceDialog::m_fr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFindReplaceDialog [MFC], CFindReplaceDialog", "CFindReplaceDialog [MFC], Create", "CFindReplaceDialog [MFC], FindNext", "CFindReplaceDialog [MFC], GetFindString", "CFindReplaceDialog [MFC], GetNotifier", "CFindReplaceDialog [MFC], GetReplaceString", "CFindReplaceDialog [MFC], IsTerminating", "CFindReplaceDialog [MFC], MatchCase", "CFindReplaceDialog [MFC], MatchWholeWord", "CFindReplaceDialog [MFC], ReplaceAll", "CFindReplaceDialog [MFC], ReplaceCurrent", "CFindReplaceDialog [MFC], SearchDown", "CFindReplaceDialog [MFC], m_fr"]
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CFindReplaceDialog Class
@@ -41,7 +36,7 @@ class CFindReplaceDialog : public CCommonDialog
 |[CFindReplaceDialog::Create](#create)|Creates and displays a `CFindReplaceDialog` dialog box.|  
 |[CFindReplaceDialog::FindNext](#findnext)|Call this function to determine whether the user wants to find the next occurrence of the find string.|  
 |[CFindReplaceDialog::GetFindString](#getfindstring)|Call this function to retrieve the current find string.|  
-|[CFindReplaceDialog::GetNotifier](#getnotifier)|Call this function to retrieve the **FINDREPLACE** structure in your registered message handler.|  
+|[CFindReplaceDialog::GetNotifier](#getnotifier)|Call this function to retrieve the `FINDREPLACE` structure in your registered message handler.|  
 |[CFindReplaceDialog::GetReplaceString](#getreplacestring)|Call this function to retrieve the current replace string.|  
 |[CFindReplaceDialog::IsTerminating](#isterminating)|Call this function to determine whether the dialog box is terminating.|  
 |[CFindReplaceDialog::MatchCase](#matchcase)|Call this function to determine whether the user wants to match the case of the find string exactly.|  
@@ -63,9 +58,9 @@ class CFindReplaceDialog : public CCommonDialog
   
  Once a `CFindReplaceDialog` object has been constructed, you must call the [Create](#create) member function to create and display the dialog box.  
   
- Use the [m_fr](#m_fr) structure to initialize the dialog box before calling **Create**. The `m_fr` structure is of type [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). For more information on this structure, see the Windows SDK.  
+ Use the [m_fr](#m_fr) structure to initialize the dialog box before calling `Create`. The `m_fr` structure is of type [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea). For more information on this structure, see the Windows SDK.  
   
- In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) function and use the [ON_REGISTERED_MESSAGE](message-map-macros-mfc.md#on_registered_message) message-map macro in your frame window that handles this registered message.  
+ In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) function and use the [ON_REGISTERED_MESSAGE](message-map-macros-mfc.md#on_registered_message) message-map macro in your frame window that handles this registered message.  
   
  You can determine whether the user has decided to terminate the dialog box with the `IsTerminating` member function.  
   
@@ -101,9 +96,9 @@ CFindReplaceDialog();
 ```  
   
 ### Remarks  
- Because the `CFindReplaceDialog` object is a modeless dialog box, you must construct it on the heap by using the `new` operator.  
+ Because the `CFindReplaceDialog` object is a modeless dialog box, you must construct it on the heap by using the **new** operator.  
   
- During destruction, the framework tries to perform a `delete this` on the pointer to the dialog box. If you created the dialog box on the stack, the `this` pointer does not exist and undefined behavior may result.  
+ During destruction, the framework tries to perform a **delete this** on the pointer to the dialog box. If you created the dialog box on the stack, the **this** pointer does not exist and undefined behavior may result.  
   
  For more information on the construction of `CFindReplaceDialog` objects, see the [CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md) overview. Use the [CFindReplaceDialog::Create](#create) member function to display the dialog box.  
   
@@ -123,26 +118,26 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `bFindDialogOnly`  
- Set this parameter to `TRUE` to display a **Find** dialog box. Set it to `FALSE` to display a **Find/Replace** dialog box.  
+ *bFindDialogOnly*  
+ Set this parameter to TRUE to display a **Find** dialog box. Set it to FALSE to display a **Find/Replace** dialog box.  
   
- `lpszFindWhat`  
- Pointer to the default search string when the dialog box appears. If `NULL`, the dialog box does not contain a default search string.  
+ *lpszFindWhat*  
+ Pointer to the default search string when the dialog box appears. If NULL, the dialog box does not contain a default search string.  
   
- `lpszReplaceWith`  
- Pointer to the default replacement string when the dialog box appears. If `NULL`, the dialog box does not contain a default replacement string.  
+ *lpszReplaceWith*  
+ Pointer to the default replacement string when the dialog box appears. If NULL, the dialog box does not contain a default replacement string.  
   
- `dwFlags`  
- One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. The default value is `FR_DOWN`, which specifies that the search is to proceed in a downward direction. See the [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835) structure in the Windows SDK for more information on these flags.  
+ *dwFlags*  
+ One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. The default value is FR_DOWN, which specifies that the search is to proceed in a downward direction. See the [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea) structure in the Windows SDK for more information on these flags.  
   
- `pParentWnd`  
- A pointer to the dialog box's parent or owner window. This is the window that will receive the special message indicating that a find/replace action is requested. If `NULL`, the main window of the application is used.  
+ *pParentWnd*  
+ A pointer to the dialog box's parent or owner window. This is the window that will receive the special message indicating that a find/replace action is requested. If NULL, the main window of the application is used.  
   
 ### Return Value  
  Nonzero if the dialog box object was successfully created; otherwise 0.  
   
 ### Remarks  
- In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) function whose return value is a message number unique to the application's instance. Your frame window should have a message map entry that declares the callback function ( `OnFindReplace` in the example that follows) that handles this registered message. The following code fragment is an example of how to do this for a frame window class named `CMyRichEditView`:  
+ In order for the parent window to be notified of find/replace requests, you must use the Windows [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) function whose return value is a message number unique to the application's instance. Your frame window should have a message map entry that declares the callback function ( `OnFindReplace` in the example that follows) that handles this registered message. The following code fragment is an example of how to do this for a frame window class named `CMyRichEditView`:  
   
  [!code-cpp[NVC_MFCDocView#171](../../mfc/codesnippet/cpp/cfindreplacedialog-class_2.h)]  
   
@@ -186,8 +181,8 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 ```  
   
 ### Parameters  
- `lParam`  
- The **lparam** value passed to the frame window's **OnFindReplace** member function.  
+ *lParam*  
+ The *lparam* value passed to the frame window's `OnFindReplace` member function.  
   
 ### Return Value  
  A pointer to the current dialog box.  
@@ -224,7 +219,7 @@ BOOL IsTerminating() const;
  Nonzero if the user has decided to terminate the dialog box; otherwise 0.  
   
 ### Remarks  
- If this function returns nonzero, you should call the `DestroyWindow` member function of the current dialog box and set any dialog box pointer variable to **NULL**. Optionally, you can also store the find/replace text last entered and use it to initialize the next find/replace dialog box.  
+ If this function returns nonzero, you should call the `DestroyWindow` member function of the current dialog box and set any dialog box pointer variable to NULL. Optionally, you can also store the find/replace text last entered and use it to initialize the next find/replace dialog box.  
   
 ### Example  
   See the example for [CFindReplaceDialog::GetFindString](#getfindstring).  
@@ -237,9 +232,9 @@ FINDREPLACE m_fr;
 ```  
   
 ### Remarks  
- `m_fr` is a structure of type [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). Its members store the characteristics of the dialog-box object. After constructing a `CFindReplaceDialog` object, you can use `m_fr` to modify various values in the dialog box.  
+ `m_fr` is a structure of type [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea). Its members store the characteristics of the dialog-box object. After constructing a `CFindReplaceDialog` object, you can use `m_fr` to modify various values in the dialog box.  
   
- For more information on this structure, see the **FINDREPLACE** structure in the Windows SDK.  
+ For more information on this structure, see the `FINDREPLACE` structure in the Windows SDK.  
   
 ### Example  
   See the example for [CFindReplaceDialog::CFindReplaceDialog](#cfindreplacedialog).  

@@ -2,18 +2,13 @@
 title: "Active Documents on the Internet | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC], creating", "application wizards [MFC], active documents", "active documents [MFC], programming steps", "application wizards [MFC]", "active documents [MFC], using application wizards"]
 ms.assetid: a46bd8a0-e27a-4116-b1bf-dacdb7ae78d1
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Active Documents on the Internet
@@ -46,7 +41,7 @@ Active documents provide an extension to traditional embedded objects. The Activ
 |-------------------------|---------------------------------|  
 |Uses compound files as its storage mechanism.|`IPersistStorage`.|  
 |Supports the basic embedding features of Active documents, including Create From File.|`IPersistFile`, `IOleObject`, and `IDataObject`.|  
-|Supports in-place activation.|`IOleInPlaceObject` and `IOleInPlaceActiveObject` (using the container's `IOleInPlaceSite` and **IOleInPlaceFrame** interfaces).|  
+|Supports in-place activation.|`IOleInPlaceObject` and `IOleInPlaceActiveObject` (using the container's `IOleInPlaceSite` and `IOleInPlaceFrame` interfaces).|  
 |Supports the Active document extensions that involve these new interfaces. Some interfaces are optional.|`IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, and `IPrint`.|  
   
  MFC provides support for extending existing embedded server support to Active documents.  
@@ -59,7 +54,7 @@ Active documents provide an extension to traditional embedded objects. The Activ
   
 |Class type|Formerly derived from|Change to derive from|  
 |----------------|---------------------------|---------------------------|  
-|In-Place Frame|`COleIPFrameWnd`|**COleDocIPFrameWnd**|  
+|In-Place Frame|`COleIPFrameWnd`|`COleDocIPFrameWnd`|  
 |Item|`COleServerItem`|`CDocObjectServerItem`|  
   
  You will also change how information is entered in the registry, and make several other changes. If your application currently has no COM components support, you can add server support by running the Application Wizard and integrating the COM component-specific code with your existing application.  

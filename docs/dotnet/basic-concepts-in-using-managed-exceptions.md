@@ -2,18 +2,13 @@
 title: "Basic Concepts in Using Managed Exceptions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["try-catch exception handling, managed applications", "__finally keyword, managed exceptions", "exceptions, managed", "try-catch exception handling", "catch blocks", "throwing exceptions, managed exceptions", "Visual C++, handling managed exceptions"]
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Basic Concepts in Using Managed Exceptions
@@ -26,7 +21,7 @@ This topic discusses exception handling in managed applications. That is, an app
 -   [Try/Catch Blocks for CLR Extensions](#vcconbasicconceptsinusingmanagedexceptionsanchor2)  
   
 ## Remarks  
- If you compile with the **/clr** option, you can handle CLR exceptions as well as standard [C++ exception handling](../cpp/cpp-exception-handling.md) and [structured exception handling](../cpp/structured-exception-handling-c-cpp.md) (SEH). A CLR exception is any exception thrown by a managed type. The [System::Exception](https://msdn.microsoft.com/en-us/library/system.exception.aspx) class provides many useful methods for processing CLR exceptions and is recommended as a base class for user-defined exception classes.  
+ If you compile with the **/clr** option, you can handle CLR exceptions as well as standard [C++ exception handling](../cpp/cpp-exception-handling.md) and [structured exception handling](../cpp/structured-exception-handling-c-cpp.md) (SEH). A CLR exception is any exception thrown by a managed type. The [System::Exception](https://msdn.microsoft.com/library/system.exception.aspx) class provides many useful methods for processing CLR exceptions and is recommended as a base class for user-defined exception classes.  
   
  Catching exception types derived from an interface is not supported under **/clr**. Also, the common language runtime does not permit you to catch stack overflow exceptions; a stack overflow exception will terminate the process.  
   
@@ -133,7 +128,7 @@ In 'catch(MyStruct^ catchException)'
 3.  Once the stack is unwound, the catch clause is executed.  
   
 ### Catching Unmanaged Types  
- When an unmanaged object type is thrown, it is wrapped with an exception of type [System::Runtime.InteropServices::SEHException](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.sehexception.aspx). When searching for the appropriate **catch** clause, there are two possibilities.  
+ When an unmanaged object type is thrown, it is wrapped with an exception of type [System::Runtime.InteropServices::SEHException](https://msdn.microsoft.com/library/system.runtime.interopservices.sehexception.aspx). When searching for the appropriate **catch** clause, there are two possibilities.  
   
 -   If a native C++ type is encountered, the exception is unwrapped and compared to the type encountered. This comparison allows a native C++ type to be caught in the normal way.  
   

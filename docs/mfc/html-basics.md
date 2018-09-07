@@ -2,18 +2,13 @@
 title: "HTML Basics | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["HTML [MFC], about HTML"]
 ms.assetid: aab8ea9f-12d4-4bdd-a585-ac3124081a2a
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # HTML Basics
@@ -25,7 +20,7 @@ Most browsers have the capability of examining the HTML source of the pages you 
   
 1.  Open Notepad or any plain text editor.  
   
-2.  From the **File** menu, choose `New`.  
+2.  From the **File** menu, choose **New**.  
   
 3.  Type the following lines:  
   
@@ -39,7 +34,7 @@ Most browsers have the capability of examining the HTML source of the pages you 
   
 4.  From the **File** menu, choose **Save**, and save the file as c:\webpages\First.htm. Leave the file open in the editor.  
   
-5.  Switch to your browser, and from the **File** menu, choose **Open**, or type `file://C:/webpages/first.htm` in the browser's URL edit box. You should see a blank page with the window caption "Top HTML Tags."  
+5.  Switch to your browser, and from the **File** menu, choose **Open**, or type *file://C:/webpages/first.htm* in the browser's URL edit box. You should see a blank page with the window caption "Top HTML Tags."  
   
      Notice the tags are paired and are included in angle brackets. Tags are not case-sensitive, but capitalization is often used to make tags stand out.  
   

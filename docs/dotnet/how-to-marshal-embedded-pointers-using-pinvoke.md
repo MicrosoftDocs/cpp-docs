@@ -1,19 +1,14 @@
 ---
 title: "How to: Marshal Embedded Pointers Using PInvoke | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["embedded pointers [C++]", "interop [C++], embedded pointers", "platform invoke [C++], embedded pointers", "marshaling [C++], embedded pointers", "data marshaling [C++], embedded pointers"]
 ms.assetid: f12c1b9a-4f82-45f8-83c8-3fc9321dbb98
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Embedded Pointers Using PInvoke
@@ -23,8 +18,6 @@ Functions that are implemented in unmanaged DLLs can be called from managed code
  Passing structures to native code requires that a managed structure that is equivalent in terms of data layout to the native structure is created. However, structures that contain pointers require special handling. For each embedded pointer in the native structure, the managed version of the structure should contain an instance of the <xref:System.IntPtr> type. Also, memory for these instances must be explicitly allocated, initialized, and released using the <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A>, <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A>, and <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> methods.  
   
  The following code consists of an unmanaged and a managed module. The unmanaged module is a DLL that defines a function that accepts a structure called ListString that contains a pointer, and a function called TakesListStruct. The managed module is a command-line application that imports the TakesListStruct function and defines a structure called MListStruct that is equivalent to the native ListStruct except that the double* is represented with an <xref:System.IntPtr> instance. Before calling TakesListStruct, the main function allocates and initializes the memory that this field references.  
-  
- The managed module is compiled with /clr, but /clr:pure works as well. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
 ```cpp  
 // TraditionalDll6.cpp  

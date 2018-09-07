@@ -2,19 +2,14 @@
 title: "missing_wait Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["missing_wait", "CONCRT/concurrency::missing_wait", "CONCRT/concurrency::missing_wait::missing_wait"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["missing_wait class"]
 ms.assetid: ff981875-bd43-47e3-806f-b03c9f418b18
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # missing_wait Class

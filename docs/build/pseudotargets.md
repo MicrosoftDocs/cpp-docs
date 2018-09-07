@@ -2,18 +2,13 @@
 title: "Pseudotargets | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["makefiles, pseudotargets", "pseudotargets and NMAKE", "NMAKE program, pseudotargets", "timestamps, makefile pseudotargets", "NMAKE program, targets"]
 ms.assetid: c8c479dc-0129-4186-8366-bc6251f2b494
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Pseudotargets

@@ -2,18 +2,13 @@
 title: "Callback Items and the Callback Mask | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["callback items in CListCtrl class [MFC]", "CListCtrl class [MFC], callback item and callback mask"]
 ms.assetid: 67c1f76f-6144-453e-9376-6712f89430ae
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Callback Items and the Callback Mask
@@ -23,13 +18,13 @@ For each of its items, a list view control typically stores the label text, the 
   
  In addition to defining callback items, you can also modify the control's callback mask. This mask is a set of bit flags that specify the item states for which the application, rather than the control, stores the current data. The callback mask applies to all of the control's items, unlike the callback item designation, which applies to a specific item. The callback mask is zero by default, meaning that the control tracks all item states. To change this default behavior, initialize the mask to any combination of the following values:  
   
--   `LVIS_CUT` The item is marked for a cut-and-paste operation.  
+-   **LVIS_CUT** The item is marked for a cut-and-paste operation.  
   
--   `LVIS_DROPHILITED` The item is highlighted as a drag-and-drop target.  
+-   **LVIS_DROPHILITED** The item is highlighted as a drag-and-drop target.  
   
--   `LVIS_FOCUSED` The item has the focus.  
+-   **LVIS_FOCUSED** The item has the focus.  
   
--   `LVIS_SELECTED` The item is selected.  
+-   **LVIS_SELECTED** The item is selected.  
   
 -   **LVIS_OVERLAYMASK** The application stores the image list index of the current overlay image for each item.  
   

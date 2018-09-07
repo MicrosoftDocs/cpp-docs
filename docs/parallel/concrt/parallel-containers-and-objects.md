@@ -2,18 +2,13 @@
 title: "Parallel Containers and Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["parallel objects", "parallel containers", "concurrent containers"]
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-caps.latest.revision: 34
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Parallel Containers and Objects
@@ -179,14 +174,14 @@ The Parallel Patterns Library (PPL) includes several containers and objects that
   
 |Operator|Description|  
 |--------------|-----------------|  
-|[operator++](http://msdn.microsoft.com/en-us/4cfdd07e-927a-42f8-aaa0-d6881687f413)|Advances to next item in the queue. This operator is overloaded to provide both pre-increment and post-increment semantics.|  
-|[operator*](http://msdn.microsoft.com/en-us/a0e671fc-76e6-4fb4-b95c-ced4dd2b2017)|Retrieves a reference to the current item.|  
-|[operator->](http://msdn.microsoft.com/en-us/41fa393d-ae1e-4a38-bb4b-19e8df709ca9)|Retrieves a pointer to the current item.|  
+|`operator++`|Advances to next item in the queue. This operator is overloaded to provide both pre-increment and post-increment semantics.|  
+|`operator*`|Retrieves a reference to the current item.|  
+|`operator->`|Retrieves a pointer to the current item.|  
   
  [[Top](#top)]  
   
 ##  <a name="unordered_map"></a> concurrent_unordered_map Class  
- The [HYPERLINK "file:///C:\\\Users\\\thompet\\\AppData\\\Local\\\Temp\\\DxEditor\\\DduePreview\\\Default\\\798d7037-df37-4310-858b-6f590bbf6ebf\\\HTM\\\html\\\a217b4ac-af2b-4d41-94eb-09a75ee28622" concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) class is an associative container class that, just like the [std::unordered_map](../../standard-library/unordered-map-class.md) class, controls a varying-length sequence of elements of type [std::pair\<const Key, Ty>](../../standard-library/pair-structure.md). Think of an unordered map as a dictionary that you can add a key and value pair to or look up a value by key. This class is useful when you have multiple threads or tasks that have to concurrently access a shared container, insert into it, or update it.  
+ The [concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) class is an associative container class that, just like the [std::unordered_map](../../standard-library/unordered-map-class.md) class, controls a varying-length sequence of elements of type [std::pair\<const Key, Ty>](../../standard-library/pair-structure.md). Think of an unordered map as a dictionary that you can add a key and value pair to or look up a value by key. This class is useful when you have multiple threads or tasks that have to concurrently access a shared container, insert into it, or update it.  
   
  The following example shows the basic structure for using `concurrent_unordered_map`. This example inserts character keys in the range ['a', 'i']. Because the order of operations is undetermined, the final value for each key is also undetermined. However, it is safe to perform the insertions in parallel.  
   

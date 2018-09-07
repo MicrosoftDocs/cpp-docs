@@ -2,19 +2,14 @@
 title: "CMFCBaseToolBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar", "AFXBASETOOLBAR/CMFCBaseToolBar::GetDockingMode", "AFXBASETOOLBAR/CMFCBaseToolBar::GetMinSize", "AFXBASETOOLBAR/CMFCBaseToolBar::OnAfterChangeParent"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCBaseToolBar [MFC], GetDockingMode", "CMFCBaseToolBar [MFC], GetMinSize", "CMFCBaseToolBar [MFC], OnAfterChangeParent"]
 ms.assetid: 5d79206d-55e4-46f8-b1b8-042e34d7f9da
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCBaseToolBar Class
@@ -78,7 +73,7 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### Parameters  
- [out] `size`  
+ [out] *size*  
  The minimum size of a toolbar.  
   
 ##  <a name="onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent  
@@ -89,7 +84,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```  
   
 ### Parameters  
- [in] `pWndOldParent`  
+ [in] *pWndOldParent*  
  A pointer to the previous parent window.  
   
 ## See Also  

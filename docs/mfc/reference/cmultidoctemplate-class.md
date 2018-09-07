@@ -2,19 +2,14 @@
 title: "CMultiDocTemplate Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMultiDocTemplate", "AFXWIN/CMultiDocTemplate", "AFXWIN/CMultiDocTemplate::CMultiDocTemplate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMultiDocTemplate [MFC], CMultiDocTemplate"]
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMultiDocTemplate Class
@@ -77,7 +72,7 @@ CMultiDocTemplate(
 ```  
   
 ### Parameters  
- `nIDResource`  
+ *nIDResource*  
  Specifies the ID of the resources used with the document type. This may include menu, icon, accelerator table, and string resources.  
   
  The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a place holder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information on the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). This string resource is found in the application's resource file. For example:  
@@ -96,13 +91,13 @@ CMultiDocTemplate(
   
  For more information about these resource types, see [Resource Editors](../../windows/resource-editors.md).  
   
- `pDocClass`  
- Points to the `CRuntimeClass` object of the document class. This class is a **CDocument**-derived class you define to represent your documents.  
+ *pDocClass*  
+ Points to the `CRuntimeClass` object of the document class. This class is a `CDocument`-derived class you define to represent your documents.  
   
- `pFrameClass`  
+ *pFrameClass*  
  Points to the `CRuntimeClass` object of the frame-window class. This class can be a `CMDIChildWnd`-derived class, or it can be `CMDIChildWnd` itself if you want default behavior for your document frame windows.  
   
- `pViewClass`  
+ *pViewClass*  
  Points to the `CRuntimeClass` object of the view class. This class is a `CView`-derived class you define to display your documents.  
   
 ### Remarks  

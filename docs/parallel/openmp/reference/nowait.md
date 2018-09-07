@@ -2,19 +2,14 @@
 title: "nowait | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 f1_keywords: ["nowait"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["nowait OpenMP clause"]
 ms.assetid: 8a74265d-879c-46cf-8071-a1084f24f16e
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # nowait

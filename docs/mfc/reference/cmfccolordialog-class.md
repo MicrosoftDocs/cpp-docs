@@ -2,19 +2,14 @@
 title: "CMFCColorDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::CMFCColorDialog", "AFXCOLORDIALOG/CMFCColorDialog::GetColor", "AFXCOLORDIALOG/CMFCColorDialog::GetPalette", "AFXCOLORDIALOG/CMFCColorDialog::RebuildPalette", "AFXCOLORDIALOG/CMFCColorDialog::SetCurrentColor", "AFXCOLORDIALOG/CMFCColorDialog::SetNewColor", "AFXCOLORDIALOG/CMFCColorDialog::SetPageOne", "AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCColorDialog [MFC], CMFCColorDialog", "CMFCColorDialog [MFC], GetColor", "CMFCColorDialog [MFC], GetPalette", "CMFCColorDialog [MFC], RebuildPalette", "CMFCColorDialog [MFC], SetCurrentColor", "CMFCColorDialog [MFC], SetNewColor", "CMFCColorDialog [MFC], SetPageOne", "CMFCColorDialog [MFC], SetPageTwo"]
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
-caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCColorDialog Class
@@ -41,7 +36,7 @@ class CMFCColorDialog : public CDialogEx
 |----------|-----------------|  
 |[CMFCColorDialog::GetColor](#getcolor)|Returns the current selected color.|  
 |[CMFCColorDialog::GetPalette](#getpalette)|Returns the color's palette.|  
-|`CMFCColorDialog::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. For syntax and more information, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CDialogEx::PreTranslateMessage`.)|  
+|`CMFCColorDialog::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. For syntax and more information, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CDialogEx::PreTranslateMessage`.)|  
 |[CMFCColorDialog::RebuildPalette](#rebuildpalette)|Derives a palette from the system palette.|  
 |[CMFCColorDialog::SetCurrentColor](#setcurrentcolor)|Sets the current selected color.|  
 |[CMFCColorDialog::SetNewColor](#setnewcolor)|Sets the color most equivalent to a specified RGB value.|  
@@ -52,8 +47,8 @@ class CMFCColorDialog : public CDialogEx
   
 |Name|Description|  
 |----------|-----------------|  
-|`m_bIsMyPalette`|`TRUE` if the color selection dialog box uses its own color palette, or `FALSE` if the dialog box uses a palette that is specified in the `CMFCColorDialog` constructor.|  
-|`m_bPickerMode`|`TRUE` while the user is selecting a color from the selection dialog box; otherwise, `FALSE`.|  
+|`m_bIsMyPalette`|TRUE if the color selection dialog box uses its own color palette, or FALSE if the dialog box uses a palette that is specified in the `CMFCColorDialog` constructor.|  
+|`m_bPickerMode`|TRUE while the user is selecting a color from the selection dialog box; otherwise, FALSE.|  
 |`m_btnColorSelect`|The color button that the user has selected.|  
 |`m_CurrentColor`|The currently selected color.|  
 |`m_hcurPicker`|The cursor that is used to pick a color.|  
@@ -103,16 +98,16 @@ CMFCColorDialog(
 ```  
   
 ### Parameters  
- [in] `clrInit`  
+ [in] *clrInit*  
  The default color selection. If no value is specified, the default is RGB(0,0,0) (black).  
   
- [in] `dwFlags`  
+ [in] *dwFlags*  
  (Reserved.)  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  A pointer to the dialog box's parent or owner window.  
   
- [in] `hPal`  
+ [in] *hPal*  
  A handle to a color palette.  
   
 ### Return Value  
@@ -127,7 +122,7 @@ COLORREF GetColor() const;
 ```  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) value that contains the RGB information for the color selected in the color dialog box.  
+ A [COLORREF](/windows/desktop/gdi/colorref) value that contains the RGB information for the color selected in the color dialog box.  
   
 ### Remarks  
  Call this function after you call the `DoModal` method.  
@@ -160,7 +155,7 @@ void SetCurrentColor(COLORREF rgb);
 ```  
   
 ### Parameters  
- [in] `rgb`  
+ [in] *rgb*  
  An RGB color value  
   
 ### Remarks  
@@ -173,8 +168,8 @@ void SetNewColor(COLORREF rgb);
 ```  
   
 ### Parameters  
- [in] `rgb`  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) that specifies an RGB color.  
+ [in] *rgb*  
+ A [COLORREF](/windows/desktop/gdi/colorref) that specifies an RGB color.  
   
 ### Remarks  
   
@@ -189,13 +184,13 @@ void SetPageOne(
 ```  
   
 ### Parameters  
- [in] `R`  
+ [in] *R*  
  Specifies the red component of the RGB value.  
   
- [in] `G`  
+ [in] *G*  
  Specifies the green component of the RGB value.  
   
- [in] `B`  
+ [in] *B*  
  Specifies the blue component of the RGB value.  
   
 ### Remarks  
@@ -211,13 +206,13 @@ void SetPageTwo(
 ```  
   
 ### Parameters  
- [in] `R`  
+ [in] *R*  
  Specifies a red component of the RGB value  
   
- [in] `G`  
+ [in] *G*  
  Specifies a green component of an RGB value  
   
- [in] `B`  
+ [in] *B*  
  Specifies a blue component of an RGB value  
   
 ### Remarks  

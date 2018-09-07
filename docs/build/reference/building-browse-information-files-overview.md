@@ -2,18 +2,13 @@
 title: "Building Browse Information Files: Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: [".bsc files, about .bsc files", "bsc files, about bsc files", "browse information files (.bsc)", "browse information files (.bsc), creating"]
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Building Browse Information Files: Overview
@@ -42,7 +37,7 @@ To create browse information for symbol browsing, the compiler creates an .sbr f
   
 1.  Either don't build the .bsc file at the project level or use the /n switch to prevent the .sbr files from being truncated.  
   
-2.  After all the projects are built, run BSCMAKE with all of the .sbr files as input. Wildcards are accepted. For instance, if you had project directories C:\X, C:\Y, and C:\Z with .sbr files in them and you wanted to combine them all into one .bsc file, then use BSCMAKE C:\X\\*.sbr C:\Y\\\*.sbr C:\Z\\\*.sbr /o c:\whatever_directory\combined.bsc to build the combined .bsc file.  
+2.  After all the projects are built, run BSCMAKE with all of the .sbr files as input. Wildcards are accepted. For instance, if you had project directories C:\X, C:\Y, and C:\Z with .sbr files in them and you wanted to combine them all into one .bsc file, then use BSCMAKE  C:\X\\\*.sbr C:\Y\\\*.sbr C:\Z\\\*.sbr /o c:\whatever_directory\combined.bsc to build the combined .bsc file.  
   
 ## See Also  
  [C/C++ Build Tools](../../build/reference/c-cpp-build-tools.md)   

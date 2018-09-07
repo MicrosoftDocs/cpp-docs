@@ -2,19 +2,14 @@
 title: "CCmdTarget Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CCmdTarget", "AFXWIN/CCmdTarget", "AFXWIN/CCmdTarget::CCmdTarget", "AFXWIN/CCmdTarget::BeginWaitCursor", "AFXWIN/CCmdTarget::DoOleVerb", "AFXWIN/CCmdTarget::EnableAutomation", "AFXWIN/CCmdTarget::EnableConnections", "AFXWIN/CCmdTarget::EnableTypeLib", "AFXWIN/CCmdTarget::EndWaitCursor", "AFXWIN/CCmdTarget::EnumOleVerbs", "AFXWIN/CCmdTarget::FromIDispatch", "AFXWIN/CCmdTarget::GetDispatchIID", "AFXWIN/CCmdTarget::GetIDispatch", "AFXWIN/CCmdTarget::GetTypeInfoCount", "AFXWIN/CCmdTarget::GetTypeInfoOfGuid", "AFXWIN/CCmdTarget::GetTypeLib", "AFXWIN/CCmdTarget::GetTypeLibCache", "AFXWIN/CCmdTarget::IsInvokeAllowed", "AFXWIN/CCmdTarget::IsResultExpected", "AFXWIN/CCmdTarget::OnCmdMsg", "AFXWIN/CCmdTarget::OnFinalRelease", "AFXWIN/CCmdTarget::RestoreWaitCursor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CCmdTarget [MFC], CCmdTarget", "CCmdTarget [MFC], BeginWaitCursor", "CCmdTarget [MFC], DoOleVerb", "CCmdTarget [MFC], EnableAutomation", "CCmdTarget [MFC], EnableConnections", "CCmdTarget [MFC], EnableTypeLib", "CCmdTarget [MFC], EndWaitCursor", "CCmdTarget [MFC], EnumOleVerbs", "CCmdTarget [MFC], FromIDispatch", "CCmdTarget [MFC], GetDispatchIID", "CCmdTarget [MFC], GetIDispatch", "CCmdTarget [MFC], GetTypeInfoCount", "CCmdTarget [MFC], GetTypeInfoOfGuid", "CCmdTarget [MFC], GetTypeLib", "CCmdTarget [MFC], GetTypeLibCache", "CCmdTarget [MFC], IsInvokeAllowed", "CCmdTarget [MFC], IsResultExpected", "CCmdTarget [MFC], OnCmdMsg", "CCmdTarget [MFC], OnFinalRelease", "CCmdTarget [MFC], RestoreWaitCursor"]
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CCmdTarget Class
@@ -85,7 +80,7 @@ void BeginWaitCursor();
 ```  
   
 ### Remarks  
- The framework calls this function to show the user that it is busy, such as when a **CDocument** object loads or saves itself to a file.  
+ The framework calls this function to show the user that it is busy, such as when a `CDocument` object loads or saves itself to a file.  
   
  The actions of `BeginWaitCursor` are not always effective outside of a single message handler as other actions, such as `OnSetCursor` handling, could change the cursor.  
   
@@ -113,23 +108,23 @@ BOOL DoOleVerb(
 ```  
   
 ### Parameters  
- `iVerb`  
+ *iVerb*  
  Numerical identifier of the verb.  
   
- `lpMsg`  
- Pointer to the [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) structure describing the event (such as a double-click) that invoked the verb.  
+ *lpMsg*  
+ Pointer to the [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) structure describing the event (such as a double-click) that invoked the verb.  
   
- `hWndParent`  
+ *hWndParent*  
  Handle of the document window containing the object.  
   
- `lpRect`  
- Pointer to the [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.  
+ *lpRect*  
+ Pointer to the [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) structure containing the coordinates, in pixels, that define an object's bounding rectangle in *hwndParent*.  
   
 ### Return Value  
  TRUE if successful, otherwise FALSE.  
   
 ### Remarks  
- This member function is basically an implementation of [IOleObject::DoVerb](http://msdn.microsoft.com/library/windows/desktop/ms694508). The possible actions are enumerated by [CCmdTarget::EnumOleVerbs](#enumoleverbs).  
+ This member function is basically an implementation of [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb). The possible actions are enumerated by [CCmdTarget::EnumOleVerbs](#enumoleverbs).  
   
 ##  <a name="enableautomation"></a>  CCmdTarget::EnableAutomation  
  Call this function to enable OLE automation for an object.  
@@ -182,14 +177,14 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
 ```  
   
 ### Parameters  
- `ppenumOleVerb`  
- A pointer to a pointer to an [IEnumOLEVERB](http://msdn.microsoft.com/library/windows/desktop/ms695084) interface.  
+ *ppenumOleVerb*  
+ A pointer to a pointer to an [IEnumOLEVERB](/windows/desktop/api/oleidl/nn-oleidl-ienumoleverb) interface.  
   
 ### Return Value  
- TRUE if the object supports at least one OLE verb (in which case \* `ppenumOleVerb` points to an **IEnumOLEVERB** enumerator interface), otherwise FALSE.  
+ TRUE if the object supports at least one OLE verb (in which case \* *ppenumOleVerb* points to an `IEnumOLEVERB` enumerator interface), otherwise FALSE.  
   
 ### Remarks  
- This member function is basically an implementation of [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781).  
+ This member function is basically an implementation of [IOleObject::EnumVerbs](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-enumverbs).  
   
 ##  <a name="fromidispatch"></a>  CCmdTarget::FromIDispatch  
  Call this function to map an `IDispatch` pointer, received from automation member functions of a class, into the `CCmdTarget` object that implements the interfaces of the `IDispatch` object.  
@@ -199,11 +194,11 @@ static CCmdTarget* PASCAL FromIDispatch(LPDISPATCH lpDispatch);
 ```  
   
 ### Parameters  
- `lpDispatch`  
+ *lpDispatch*  
  A pointer to an `IDispatch` object.  
   
 ### Return Value  
- A pointer to the `CCmdTarget` object associated with `lpDispatch`. This function returns **NULL** if the `IDispatch` object is not recognized as a Microsoft Foundation Class `IDispatch` object.  
+ A pointer to the `CCmdTarget` object associated with *lpDispatch*. This function returns NULL if the `IDispatch` object is not recognized as a Microsoft Foundation Class `IDispatch` object.  
   
 ### Remarks  
  The result of this function is the inverse of a call to the member function `GetIDispatch`.  
@@ -217,7 +212,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
   
 ### Parameters  
  *pIID*  
- A pointer to an interface ID (a [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931)).  
+ A pointer to an interface ID (a [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931)).  
   
 ### Return Value  
  TRUE if successful, otherwise FALSE. If successful, \* *pIID* is set to the primary dispatch interface ID.  
@@ -242,7 +237,7 @@ LPDISPATCH GetIDispatch(BOOL bAddRef);
  The `IDispatch` pointer associated with the object.  
   
 ### Remarks  
- For objects that call `EnableAutomation` in their constructors, making them automation enabled, this function returns a pointer to the Foundation Class implementation of `IDispatch` that is used by clients who communicate via the `IDispatch` interface. Calling this function automatically adds a reference to the pointer, so it is not necessary to make a call to [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379).  
+ For objects that call `EnableAutomation` in their constructors, making them automation enabled, this function returns a pointer to the Foundation Class implementation of `IDispatch` that is used by clients who communicate via the `IDispatch` interface. Calling this function automatically adds a reference to the pointer, so it is not necessary to make a call to [IUnknown::AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref).  
   
 ##  <a name="gettypeinfocount"></a>  CCmdTarget::GetTypeInfoCount  
  Retrieves the number of type information interfaces that an object provides.  
@@ -255,9 +250,9 @@ virtual UINT GetTypeInfoCount();
  The number of type information interfaces.  
   
 ### Remarks  
- This member function basically implements [IDispatch::GetTypeInfoCount](http://msdn.microsoft.com/en-us/da876d53-cb8a-465c-a43e-c0eb272e2a12).  
+ This member function basically implements [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount).  
   
- Derived classes should override this function to return the number of type information interfaces provided (either 0 or 1). If not overridden, **GetTypeInfoCount** returns 0. To override, use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeLib` and `GetTypeLibCache`.  
+ Derived classes should override this function to return the number of type information interfaces provided (either 0 or 1). If not overridden, `GetTypeInfoCount` returns 0. To override, use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeLib` and `GetTypeLibCache`.  
   
 ##  <a name="gettypeinfoofguid"></a>  CCmdTarget::GetTypeInfoOfGuid  
  Retrieves the type description that corresponds to the specified GUID.  
@@ -270,17 +265,17 @@ HRESULT GetTypeInfoOfGuid(
 ```  
   
 ### Parameters  
- `lcid`  
+ *lcid*  
  A locale identifier ( `LCID`).  
   
- `guid`  
- The [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931) of the type description.  
+ *guid*  
+ The [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) of the type description.  
   
- `ppTypeInfo`  
+ *ppTypeInfo*  
  Pointer to a pointer to the `ITypeInfo` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * `ppTypeInfo` points to the type information interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeInfo* points to the type information interface.  
   
 ##  <a name="gettypelib"></a>  CCmdTarget::GetTypeLib  
  Gets a pointer to a type library.  
@@ -292,14 +287,14 @@ virtual HRESULT GetTypeLib(
 ```  
   
 ### Parameters  
- `lcid`  
- A locale identifier ( `LCID`).  
+ *lcid*  
+ A locale identifier (LCID).  
   
- `ppTypeLib`  
+ *ppTypeLib*  
  A pointer to a pointer to the `ITypeLib` interface.  
   
 ### Return Value  
- An HRESULT indicating the success or failure of the call. If successful, * `ppTypeLib` points to the type library interface.  
+ An HRESULT indicating the success or failure of the call. If successful, \* *ppTypeLib* points to the type library interface.  
   
 ### Remarks  
  Derived classes should override this member function (if not overridden, `GetTypeLib` returns TYPE_E_CANTLOADLIBRARY). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLibCache`.  
@@ -312,27 +307,27 @@ virtual CTypeLibCache* GetTypeLibCache();
 ```  
   
 ### Return Value  
- A pointer to a **CTypeLibCache** object.  
+ A pointer to a `CTypeLibCache` object.  
   
 ### Remarks  
- Derived classes should override this member function (if not overridden, **GetTypeLibCache** returns NULL). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLib`.  
+ Derived classes should override this member function (if not overridden, `GetTypeLibCache` returns NULL). Use the [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) macro, which also implements `GetTypeInfoCount` and `GetTypeLib`.  
   
 ##  <a name="isinvokeallowed"></a>  CCmdTarget::IsInvokeAllowed  
- This function is called by MFC's implementation of **IDispatch::Invoke** to determine if a given automation method (identified by `dispid`) can be invoked.  
+ This function is called by MFC's implementation of `IDispatch::Invoke` to determine if a given automation method (identified by *dispid*) can be invoked.  
   
 ```  
 virtual BOOL IsInvokeAllowed(DISPID dispid);
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  A dispatch ID.  
   
 ### Return Value  
  TRUE if the method can be invoked, otherwise FALSE.  
   
 ### Remarks  
- If `IsInvokeAllowed` returns TRUE, **Invoke** proceeds to call the method; otherwise, `Invoke` will fail, returning E_UNEXPECTED.  
+ If `IsInvokeAllowed` returns TRUE, `Invoke` proceeds to call the method; otherwise, `Invoke` will fail, returning E_UNEXPECTED.  
   
  Derived classes can override this function to return appropriate values (if not overridden, `IsInvokeAllowed` returns TRUE). See in particular [COleControl::IsInvokeAllowed](../../mfc/reference/colecontrol-class.md#isinvokeallowed).  
   
@@ -365,17 +360,17 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Contains the command ID.  
   
- `nCode`  
- Identifies the command notification code. See **Remarks** for more information about values for `nCode`.  
+ *nCode*  
+ Identifies the command notification code. See **Remarks** for more information about values for *nCode*.  
   
- `pExtra`  
- Used according to the value of `nCode`. See **Remarks** for more information about `pExtra`.  
+ *pExtra*  
+ Used according to the value of *nCode*. See **Remarks** for more information about *pExtra*.  
   
- `pHandlerInfo`  
- If not **NULL**, `OnCmdMsg` fills in the **pTarget** and **pmf** members of the `pHandlerInfo` structure instead of dispatching the command. Typically, this parameter should be **NULL**.  
+ *pHandlerInfo*  
+ If not NULL, `OnCmdMsg` fills in the *pTarget* and *pmf* members of the *pHandlerInfo* structure instead of dispatching the command. Typically, this parameter should be NULL.  
   
 ### Return Value  
  Nonzero if the message is handled; otherwise 0.  
@@ -387,14 +382,14 @@ virtual BOOL OnCmdMsg(
   
  On rare occasions, you may want to override this member function to extend the framework's standard command routing. Refer to [Technical Note 21](../../mfc/tn021-command-and-message-routing.md) for advanced details of the command-routing architecture.  
   
- If you override `OnCmdMsg`, you must supply the appropriate value for `nCode`, the command notification code, and `pExtra`, which depends on the value of `nCode`. The following table lists their corresponding values:  
+ If you override `OnCmdMsg`, you must supply the appropriate value for *nCode*, the command notification code, and *pExtra*, which depends on the value of *nCode*. The following table lists their corresponding values:  
   
-|`nCode` value|`pExtra` value|  
+|*nCode* value|*pExtra* value|  
 |-------------------|--------------------|  
-|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)*|  
-|CN_EVENT|AFX_EVENT*|  
-|CN_UPDATE_COMMAND_UI|CCmdUI*|  
-|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)*|  
+|CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)\*|  
+|CN_EVENT|AFX_EVENT\*|  
+|CN_UPDATE_COMMAND_UI|CCmdUI\*|  
+|CN_OLECOMMAND|[COleCmdUI](../../mfc/reference/colecmdui-class.md)\*|  
 |CN_OLE_UNREGISTER|NULL|  
   
 ### Example  

@@ -2,19 +2,14 @@
 title: "CMFCLinkCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCLinkCtrl", "AFXLINKCTRL/CMFCLinkCtrl", "AFXLINKCTRL/CMFCLinkCtrl::SetURL", "AFXLINKCTRL/CMFCLinkCtrl::SetURLPrefix", "AFXLINKCTRL/CMFCLinkCtrl::SizeToContent", "AFXLINKCTRL/CMFCLinkCtrl::OnDrawFocusRect"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCLinkCtrl [MFC], SetURL", "CMFCLinkCtrl [MFC], SetURLPrefix", "CMFCLinkCtrl [MFC], SizeToContent", "CMFCLinkCtrl [MFC], OnDrawFocusRect"]
 ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCLinkCtrl Class
@@ -77,10 +72,10 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  A rectangle that bounds the link control.  
   
 ### Remarks  
@@ -94,7 +89,7 @@ void SetURL(LPCTSTR lpszURL);
 ```  
   
 ### Parameters  
- [in] `lpszURL`  
+ [in] *lpszURL*  
  The button text to display.  
   
 ### Remarks  
@@ -107,7 +102,7 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 ```  
   
 ### Parameters  
- [in] `lpszPrefix`  
+ [in] *lpszPrefix*  
  The prefix of the URL protocol.  
   
 ### Remarks  
@@ -123,11 +118,11 @@ virtual CSize SizeToContent(
 ```  
   
 ### Parameters  
- [in] `bVCenter`  
- `TRUE` to center the button text and bitmap vertically between the top and bottom of the link control; otherwise, `FALSE`. The default value is `FALSE`.  
+ [in] *bVCenter*  
+ TRUE to center the button text and bitmap vertically between the top and bottom of the link control; otherwise, FALSE. The default value is FALSE.  
   
- [in] `bHCenter`  
- `TRUE` to center the button text and bitmap horizontally between the left and right sides of the link control; otherwise, `FALSE`. The default value is `FALSE`.  
+ [in] *bHCenter*  
+ TRUE to center the button text and bitmap horizontally between the left and right sides of the link control; otherwise, FALSE. The default value is FALSE.  
   
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) object that contains the new size of the link control.  

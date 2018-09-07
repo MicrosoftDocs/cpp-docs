@@ -2,19 +2,14 @@
 title: "CAnimationStoryboardEventHandler Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::CAnimationStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::OnStoryboardUpdated", "AFXANIMATIONCONTROLLER/CAnimationStoryboardEventHandler::SetAnimationController"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationStoryboardEventHandler [MFC], CAnimationStoryboardEventHandler", "CAnimationStoryboardEventHandler [MFC], CreateInstance", "CAnimationStoryboardEventHandler [MFC], OnStoryboardStatusChanged", "CAnimationStoryboardEventHandler [MFC], OnStoryboardUpdated", "CAnimationStoryboardEventHandler [MFC], SetAnimationController"]
 ms.assetid: 10a7e86b-c02d-4124-9a2e-61ecf8ac62fc
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationStoryboardEventHandler Class
@@ -73,10 +68,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
- `ppHandler`  
+ *ppHandler*  
   
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
@@ -92,13 +87,13 @@ IFACEMETHOD(OnStoryboardStatusChanged) (
 ```  
   
 ### Parameters  
- `storyboard`  
+ *storyboard*  
  A pointer to storyboard whose status has changed.  
   
- `newStatus`  
+ *newStatus*  
  Specifies new storyboard status.  
   
- `previousStatus`  
+ *previousStatus*  
  Specifies previous storyboard status.  
   
 ### Return Value  
@@ -112,7 +107,7 @@ IFACEMETHOD(OnStoryboardUpdated) (__in IUIAnimationStoryboard* storyboard);
 ```  
   
 ### Parameters  
- `storyboard`  
+ *storyboard*  
  A pointer to storyboard, which was updated.  
   
 ### Return Value  
@@ -126,7 +121,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
 ## See Also  

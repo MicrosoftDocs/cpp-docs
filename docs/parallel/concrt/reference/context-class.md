@@ -2,19 +2,14 @@
 title: "Context Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["Context", "CONCRT/concurrency::Context", "CONCRT/concurrency::Context::Block", "CONCRT/concurrency::Context::CurrentContext", "CONCRT/concurrency::Context::GetId", "CONCRT/concurrency::Context::GetScheduleGroupId", "CONCRT/concurrency::Context::GetVirtualProcessorId", "CONCRT/concurrency::Context::Id", "CONCRT/concurrency::Context::IsCurrentTaskCollectionCanceling", "CONCRT/concurrency::Context::IsSynchronouslyBlocked", "CONCRT/concurrency::Context::Oversubscribe", "CONCRT/concurrency::Context::ScheduleGroupId", "CONCRT/concurrency::Context::Unblock", "CONCRT/concurrency::Context::VirtualProcessorId", "CONCRT/concurrency::Context::Yield"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Context class"]
 ms.assetid: c0d553f3-961d-4ecd-9a29-4fa4351673b8
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Context Class
@@ -267,7 +262,7 @@ static void __cdecl YieldExecution();
 ### Remarks  
  This method will result in the process' default scheduler being created and/or attached to the calling context if there is no scheduler currently associated with the calling context.  
   
- This function is new in [!INCLUDE[vs_dev14](../../../ide/includes/vs_dev14_md.md)] and is identical to the [Yield](#yield) function but does not conflict with the Yield macro in Windows.h.  
+ This function is new in Visual Studio 2015 and is identical to the [Yield](#yield) function but does not conflict with the Yield macro in Windows.h.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)   

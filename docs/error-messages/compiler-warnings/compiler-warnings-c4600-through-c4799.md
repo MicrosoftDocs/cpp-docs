@@ -1,14 +1,13 @@
 ---
 title: "Compiler Warnings C4600 Through C4799 | Microsoft Docs"
-ms.date: "11/17/2017"
-ms.technology: ["cpp-tools"]
+ms.date: "07/03/2018"
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
-f1_keywords: ["C4602", "C4603", "C4609", "C4612", "C4613", "C4620", "C4622", "C4629", "C4631", "C4634", "C4635", "C4636", "C4637", "C4638", "C4645", "C4646", "C4655", "C4657", "C4658", "C4662", "C4670", "C4671", "C4672", "C4674", "C4676", "C4678", "C4681", "C4682", "C4685", "C4688", "C4689", "C4690", "C4693", "C4694", "C4695", "C4696", "C4718", "C4719", "C4720", "C4721", "C4722", "C4724", "C4725", "C4728", "C4729", "C4732", "C4739", "C4750", "C4751", "C4752", "C4754", "C4755", "C4757", "C4764", "C4767", "C4770", "C4792", "C4794"]
+f1_keywords: ["C4602", "C4603", "C4609", "C4612", "C4613", "C4620", "C4622", "C4629", "C4631", "C4634", "C4635", "C4636", "C4637", "C4638", "C4645", "C4646", "C4655", "C4657", "C4658", "C4662", "C4670", "C4671", "C4672", "C4674", "C4676", "C4678", "C4681", "C4682", "C4685", "C4689", "C4693", "C4694", "C4695", "C4696", "C4718", "C4719", "C4720", "C4721", "C4722", "C4724", "C4725", "C4728", "C4729", "C4732", "C4739", "C4750", "C4751", "C4752", "C4754", "C4755", "C4757", "C4764", "C4767", "C4770", "C4792", "C4794"]
 dev_langs: ["C++"]
 ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings C4600 Through C4799
@@ -96,9 +95,9 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1) C4685|expecting '> >' found '>>' when parsing template parameters|
 |[Compiler Warning (level 3) C4686](../../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md)|'user-defined type': possible change in behavior, change in UDT return calling convention|
 |[Compiler Warning (Error) C4687](../../error-messages/compiler-warnings/compiler-warning-c4687.md)|'class': a sealed abstract class cannot implement an interface 'interface'|
-|Compiler warning (level 1) C4688|'constraint': constraint list contains assembly private type 'type'|
+|[Compiler warning (level 1) C4688](../../error-messages/compiler-warnings/compiler-warning-level-1-c4688.md)|'constraint': constraint list contains assembly private type 'type'|
 |Compiler warning (level 1) C4689|'%c': unsupported character in #pragma detect_mismatch; #pragma ignored|
-|Compiler warning (level 4) C4690|[ emitidl( pop ) ]: more pops than pushes|
+|[Compiler warning (level 4) C4690](../../error-messages/compiler-warnings/compiler-warning-level-4-c4690.md)|\[ emitidl( pop ) ]: more pops than pushes|
 |[Compiler Warning (level 1) C4691](../../error-messages/compiler-warnings/compiler-warning-level-1-c4691.md)|'type': type referenced was expected in unreferenced assembly 'file', type defined in current translation unit used instead|
 |[Compiler Warning (level 1) C4692](../../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md)|'function': signature of non-private member contains assembly private native type 'native_type'|
 |[Compiler warning (level 1, Error) C4693](../../error-messages/compiler-warnings/compiler-warning-c4693.md)|'class': a sealed abstract class cannot have any instance members 'instance member'|

@@ -2,19 +2,14 @@
 title: "__segmentlimit | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__segmentlimit"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__segmentlimit intrinsic", "lsl instruction"]
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __segmentlimit
@@ -41,7 +36,7 @@ unsigned long __segmentlimit( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__segmentlimit`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__segmentlimit`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

@@ -2,19 +2,14 @@
 title: "CGopherFile Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CGopherFile", "AFXINET/CGopherFile", "AFXINET/CGopherFile::CGopherFile"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CGopherFile [MFC], CGopherFile"]
 ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CGopherFile Class
@@ -38,7 +33,7 @@ class CGopherFile : public CInternetFile
 |[CGopherFile::CGopherFile](#cgopherfile)|Constructs a `CGopherFile` object.|  
   
 ## Remarks  
- The gopher service does not allow users to write data to a gopher file because this service functions mainly as a menu-driven interface for finding information. The `CGopherFile` member functions **Write**, `WriteString`, and `Flush` are not implemented for `CGopherFile`. Calling these functions on a `CGopherFile` object, returns a [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
+ The gopher service does not allow users to write data to a gopher file because this service functions mainly as a menu-driven interface for finding information. The `CGopherFile` member functions `Write`, `WriteString`, and `Flush` are not implemented for `CGopherFile`. Calling these functions on a `CGopherFile` object, returns a [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   
  To learn more about how `CGopherFile` works with the other MFC Internet classes, see the article [Internet Programming with WinInet](../../mfc/win32-internet-extensions-wininet.md).  
   
@@ -75,25 +70,25 @@ CGopherFile(
 ```  
   
 ### Parameters  
- `hFile`  
- A handle to an `HINTERNET` file.  
+ *hFile*  
+ A handle to an HINTERNET file.  
   
- `refLocator`  
+ *refLocator*  
  A reference to a [CGopherLocator](../../mfc/reference/cgopherlocator-class.md) object.  
   
- `pConnection`  
+ *pConnection*  
  A pointer to a [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) object.  
   
- `hSession`  
+ *hSession*  
  A handle to the current Internet session.  
   
- `pstrLocator`  
+ *pstrLocator*  
  A pointer to a string used to locate the gopher server. See [Gopher Sessions](cgopherlocator-class.md) for more information about gopher locators.  
   
  *dwLocLen*  
- A DWORD containing the number of bytes in `pstrLocator`.  
+ A DWORD containing the number of bytes in *pstrLocator*.  
   
- `dwContext`  
+ *dwContext*  
  A pointer to the context identifier of the file being opened.  
   
 ### Remarks  

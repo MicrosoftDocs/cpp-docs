@@ -2,18 +2,13 @@
 title: "Calling Native Functions from Managed Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["native functions called from managed code [C++]", "managed code [C++], interoperability", "platform invoke [C++], interoperability", "interoperabiliy [C++], calling native functions from managed code", "calling native functions from managed code", "interop [C++], calling native functions from managed code"]
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Calling Native Functions from Managed Code
@@ -24,8 +19,6 @@ The common language runtime provides Platform Invocation Services, or PInvoke, t
 -   [Using Explicit PInvoke in C++ (DllImport Attribute)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)  
   
 -   [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)  
-  
--   [A Closer Look at Platform Invoke](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
   
  The samples in this section just illustrate how `PInvoke` can be used. `PInvoke` can simplify customized data marshaling because you provide marshaling information declaratively in attributes instead of writing procedural marshaling code.  
   
@@ -169,7 +162,7 @@ int main() {
   
 |wtypes.h|Visual C++|Visual C++ with /clr|Common language runtime|  
 |--------------|------------------|-----------------------------|-----------------------------|  
-|HANDLE|void *|void *|IntPtr, UIntPtr|  
+|HANDLE|void \*|void \*|IntPtr, UIntPtr|  
 |BYTE|unsigned char|unsigned char|Byte|  
 |SHORT|short|short|Int16|  
 |WORD|unsigned short|unsigned short|UInt16|  
@@ -180,10 +173,10 @@ int main() {
 |DWORD|unsigned long|unsigned long|UInt32|  
 |ULONG|unsigned long|unsigned long|UInt32|  
 |CHAR|char|char|Char|  
-|LPCSTR|char *|String ^ [in], StringBuilder ^ [in, out]|String ^ [in], StringBuilder ^ [in, out]|  
-|LPCSTR|const char *|String ^|String|  
-|LPWSTR|wchar_t *|String ^ [in], StringBuilder ^ [in, out]|String ^ [in], StringBuilder ^ [in, out]|  
-|LPCWSTR|const wchar_t *|String ^|String|  
+|LPCSTR|char \*|String ^ [in], StringBuilder ^ [in, out]|String ^ [in], StringBuilder ^ [in, out]|  
+|LPCSTR|const char \*|String ^|String|  
+|LPWSTR|wchar_t \*|String ^ [in], StringBuilder ^ [in, out]|String ^ [in], StringBuilder ^ [in, out]|  
+|LPCWSTR|const wchar_t \*|String ^|String|  
 |FLOAT|float|float|Single|  
 |DOUBLE|double|double|Double|  
   
@@ -191,7 +184,7 @@ int main() {
   
  In the example shown earlier in this topic, the CharSet parameter of DllImport specifies how managed Strings should be marshaled; in this case, they should be marshaled to ANSI strings for the native side.  
   
- You can specify marshaling information for individual arguments of a native function by using the MarshalAs attribute. There are several choices for marshaling a String * argument: BStr, ANSIBStr, TBStr, LPStr, LPWStr, and LPTStr. The default is LPStr.  
+ You can specify marshaling information for individual arguments of a native function by using the MarshalAs attribute. There are several choices for marshaling a String \* argument: BStr, ANSIBStr, TBStr, LPStr, LPWStr, and LPTStr. The default is LPStr.  
   
  In this example, the string is marshaled as a double-byte Unicode character string, LPWStr. The output is the first letter of Hello World! because the second byte of the marshaled string is null, and puts interprets this as the end-of-string marker.  
   

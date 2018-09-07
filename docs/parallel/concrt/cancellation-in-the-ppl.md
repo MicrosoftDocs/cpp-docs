@@ -2,18 +2,13 @@
 title: "Cancellation in the PPL | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["parallel algorithms, canceling [Concurrency Runtime]", "canceling parallel algorithms [Concurrency Runtime]", "parallel tasks, canceling [Concurrency Runtime]", "cancellation in the PPL", "parallel work trees [Concurrency Runtime]", "canceling parallel tasks [Concurrency Runtime]"]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
-caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Cancellation in the PPL
@@ -140,7 +135,7 @@ This document explains the role of cancellation in the Parallel Patterns Library
   
 #### Cancellation Tokens and Task Composition  
 
- The [concurrency:: HYPERLINK "http://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all) and [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) functions can help you compose multiple tasks to implement common patterns. This section describes how these functions work with cancellation tokens.  
+ The [concurrency::when_all](reference/concurrency-namespace-functions.md#when_all) and [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) functions can help you compose multiple tasks to implement common patterns. This section describes how these functions work with cancellation tokens.  
   
  When you provide a cancellation token to either the `when_all` and `when_any` function, that function cancels only when that cancellation token is cancelled or when one of the participant tasks ends in a canceled state or throws an exception.  
   

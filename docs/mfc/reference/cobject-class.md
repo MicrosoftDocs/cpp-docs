@@ -2,19 +2,14 @@
 title: "CObject Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CObject", "AFX/CObject", "AFX/CObject::CObject", "AFX/CObject::AssertValid", "AFX/CObject::Dump", "AFX/CObject::GetRuntimeClass", "AFX/CObject::IsKindOf", "AFX/CObject::IsSerializable", "AFX/CObject::Serialize"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CObject [MFC], CObject", "CObject [MFC], AssertValid", "CObject [MFC], Dump", "CObject [MFC], GetRuntimeClass", "CObject [MFC], IsKindOf", "CObject [MFC], IsSerializable", "CObject [MFC], Serialize"]
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CObject Class
@@ -117,7 +112,7 @@ CObject(const CObject& objectSrc);
 ### Remarks  
  The default version is automatically called by the constructor of your derived class.  
   
- If your class is serializable (it incorporates the `IMPLEMENT_SERIAL` macro), then you must have a default constructor (a constructor with no arguments) in your class declaration. If you do not need a default constructor, declare a private or protected "empty" constructor. For more information, see [Using CObject](../../mfc/using-cobject.md).  
+ If your class is serializable (it incorporates the IMPLEMENT_SERIAL macro), then you must have a default constructor (a constructor with no arguments) in your class declaration. If you do not need a default constructor, declare a private or protected "empty" constructor. For more information, see [Using CObject](../../mfc/using-cobject.md).  
   
  The standard C++ default class copy constructor does a member-by-member copy. The presence of the private `CObject` copy constructor guarantees a compiler error message if the copy constructor of your class is needed but not available. You must therefore provide a copy constructor if your class requires this capability.  
   
@@ -134,11 +129,11 @@ virtual void Dump(CDumpContext& dc) const;
 ```  
   
 ### Parameters  
- `dc`  
+ *dc*  
  The diagnostic dump context for dumping, usually `afxDump`.  
   
 ### Remarks  
- When you write your own class, you should override the `Dump` function to provide diagnostic services for yourself and other users of your class. The overridden `Dump` usually calls the `Dump` function of its base class before printing data members unique to the derived class. `CObject::Dump` prints the class name if your class uses the `IMPLEMENT_DYNAMIC` or `IMPLEMENT_SERIAL` macro.  
+ When you write your own class, you should override the `Dump` function to provide diagnostic services for yourself and other users of your class. The overridden `Dump` usually calls the `Dump` function of its base class before printing data members unique to the derived class. `CObject::Dump` prints the class name if your class uses the `IMPLEMENT_DYNAMIC` or IMPLEMENT_SERIAL macro.  
   
 > [!NOTE]
 >  Your `Dump` function should not print a newline character at the end of its output.  
@@ -196,14 +191,14 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 ```  
   
 ### Parameters  
- `pClass`  
+ *pClass*  
  A pointer to a [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) structure associated with your `CObject`-derived class.  
   
 ### Return Value  
  Nonzero if the object corresponds to the class; otherwise 0.  
   
 ### Remarks  
- This function tests `pClass` to see if (1) it is an object of the specified class or (2) it is an object of a class derived from the specified class. This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic), [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate), or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.  
+ This function tests *pClass* to see if (1) it is an object of the specified class or (2) it is an object of a class derived from the specified class. This function works only for classes declared with the [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic), [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate), or [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) macro.  
   
  Do not use this function extensively because it defeats the C++ polymorphism feature. Use virtual functions instead.  
   
@@ -260,7 +255,7 @@ void PASCAL operator delete(
   
  before any of your implementations in a .CPP file, then the third version of **delete** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.  
   
- Even if you do not use `DEBUG_NEW` in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.  
+ Even if you do not use DEBUG_NEW in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.  
   
  If you override operators **new** and **delete**, you forfeit this diagnostic capability.  
   
@@ -292,10 +287,10 @@ void* PASCAL operator new(
   
  before any of your implementations in a .CPP file, then the second version of **new** will be used, storing the filename and line number in the allocated block for later reporting. You do not have to worry about supplying the extra parameters; a macro takes care of that for you.  
   
- Even if you do not use `DEBUG_NEW` in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.  
+ Even if you do not use DEBUG_NEW in Debug mode, you still get leak detection, but without the source-file line-number reporting described above.  
   
 > [!NOTE]
->  If you override this operator, you must also override **delete**. Do not use the standard library **_new_handler** function.  
+>  If you override this operator, you must also override **delete**. Do not use the standard library `_new_handler` function.  
   
 ### Example  
  See [CObList::CObList](../../mfc/reference/coblist-class.md#coblist) for a listing of the `CAge` class used in the `CObject` examples.  
@@ -310,7 +305,7 @@ virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- `ar`  
+ *ar*  
  A `CArchive` object to serialize to or from.  
   
 ### Remarks  

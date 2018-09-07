@@ -2,19 +2,14 @@
 title: "firstprivate | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 f1_keywords: ["firstprivate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["firstprivate OpenMP clause"]
 ms.assetid: db479766-6d3b-4bbd-b28e-b192d826788c
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # firstprivate

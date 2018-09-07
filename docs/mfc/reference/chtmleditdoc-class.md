@@ -2,19 +2,14 @@
 title: "CHtmlEditDoc Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CHtmlEditDoc", "AFXHTML/CHtmlEditDoc", "AFXHTML/CHtmlEditDoc::CHtmlEditDoc", "AFXHTML/CHtmlEditDoc::GetView", "AFXHTML/CHtmlEditDoc::IsModified", "AFXHTML/CHtmlEditDoc::OpenURL"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CHtmlEditDoc [MFC], CHtmlEditDoc", "CHtmlEditDoc [MFC], GetView", "CHtmlEditDoc [MFC], IsModified", "CHtmlEditDoc [MFC], OpenURL"]
 ms.assetid: b2cca61f-e5d6-4099-b0d1-46bf85f0bd64
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CHtmlEditDoc Class
@@ -55,7 +50,7 @@ class AFX_NOVTABLE CHtmlEditDoc : public CDocument
  **Header:** afxhtml.h  
   
 ##  <a name="chtmleditdoc"></a>  CHtmlEditDoc::CHtmlEditDoc  
- Constructs a **CHtmlEditDoc** object.  
+ Constructs a `CHtmlEditDoc` object.  
   
 ```  
 CHtmlEditDoc();
@@ -69,7 +64,7 @@ virtual CHtmlEditView* GetView() const;
 ```  
   
 ### Return Value  
- Returns a pointer to the document's **CHtmlEditView** object.  
+ Returns a pointer to the document's `CHtmlEditView` object.  
   
 ##  <a name="ismodified"></a>  CHtmlEditDoc::IsModified  
  Returns whether the associated view's WebBrowser control contains a document that has been modified by the user.  
@@ -86,11 +81,11 @@ virtual BOOL OpenURL(LPCTSTR lpszURL);
 ```  
   
 ### Parameters  
- `lpszURL`  
+ *lpszURL*  
  The URL to open.  
   
 ### Return Value  
- Returns **TRUE** on success, **FALSE** on failure.  
+ Returns TRUE on success, FALSE on failure.  
   
 ## See Also  
  [HTMLEdit Sample](../../visual-cpp-samples.md)   

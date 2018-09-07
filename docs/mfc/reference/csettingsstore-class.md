@@ -2,19 +2,14 @@
 title: "CSettingsStore Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore::CSettingsStore", "AFXSETTINGSSTORE/CSettingsStore::Close", "AFXSETTINGSSTORE/CSettingsStore::CreateKey", "AFXSETTINGSSTORE/CSettingsStore::DeleteKey", "AFXSETTINGSSTORE/CSettingsStore::DeleteValue", "AFXSETTINGSSTORE/CSettingsStore::Open", "AFXSETTINGSSTORE/CSettingsStore::Read", "AFXSETTINGSSTORE/CSettingsStore::Write"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSettingsStore [MFC], CSettingsStore", "CSettingsStore [MFC], Close", "CSettingsStore [MFC], CreateKey", "CSettingsStore [MFC], DeleteKey", "CSettingsStore [MFC], DeleteValue", "CSettingsStore [MFC], Open", "CSettingsStore [MFC], Read", "CSettingsStore [MFC], Write"]
 ms.assetid: 0ea181de-a13e-4b29-b560-7c43838223ff
-caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CSettingsStore Class
@@ -80,14 +75,14 @@ virtual BOOL CreateKey(LPCTSTR pszPath);
 ```  
   
 ### Parameters  
- [in] `pszPath`  
+ [in] *pszPath*  
  Specifies the name of a key to be created or opened.  
   
 ### Return Value  
  0 if successful; otherwise a nonzero value.  
   
 ### Remarks  
- `CreateKey` uses `m_hKey` as the root of registry inquiries. It searches for `pszPath` as a subkey of `m_hKey`. If the key does not exist, `CreateKey` creates it. Otherwise, it opens the key. `CreateKey` then sets `m_hKey` to the created or opened key.  
+ `CreateKey` uses `m_hKey` as the root of registry inquiries. It searches for *pszPath* as a subkey of `m_hKey`. If the key does not exist, `CreateKey` creates it. Otherwise, it opens the key. `CreateKey` then sets `m_hKey` to the created or opened key.  
   
 ##  <a name="csettingsstore"></a>  CSettingsStore::CSettingsStore  
  Creates a `CSettngsStore` object.  
@@ -99,16 +94,16 @@ CSettingsStore(
 ```  
   
 ### Parameters  
- [in] `bAdmin`  
+ [in] *bAdmin*  
  Boolean parameter that specifies whether the `CSettingsStore` object is acting in administrator mode.  
   
- [in] `bReadOnly`  
+ [in] *bReadOnly*  
  Boolean parameter that specifies whether the `CSettingsStore` object is created in read-only mode.  
   
 ### Remarks  
- If `bAdmin` is set to `false`, the `m_hKey` member variable is set to `HKEY_LOCAL_MACHINE`. If you set `bAdmin` to `true`, `m_hKey` is set to `HKEY_CURRENT_USER`.  
+ If *bAdmin* is set to TRUE, the `m_hKey` member variable is set to **HKEY_LOCAL_MACHINE**. If you set *bAdmin* to FALSE, `m_hKey` is set to **HKEY_CURRENT_USER**.  
   
- The security access depends on the `bReadOnly` parameter. If `bReadonly` is `false`, the security access will be set to `KEY_ALL_ACCESS`. If `bReadyOnly` is `true`, the security access will be set to a combination of `KEY_QUERY_VALUE, KEY_NOTIFY` and `KEY_ENUMERATE_SUB_KEYS`. For more information about security access together with the registry, see [Registry Key Security and Access Rights](http://msdn.microsoft.com/library/windows/desktop/ms724878).  
+ The security access depends on the *bReadOnly* parameter. If *bReadonly* is FALSE, the security access will be set to **KEY_ALL_ACCESS**. If *bReadyOnly* is TRUE, the security access will be set to a combination of **KEY_QUERY_VALUE, KEY_NOTIFY** and **KEY_ENUMERATE_SUB_KEYS**. For more information about security access together with the registry, see [Registry Key Security and Access Rights](/windows/desktop/SysInfo/registry-key-security-and-access-rights).  
   
  The destructor for `CSettingsStore` releases `m_hKey` automatically.  
   
@@ -122,10 +117,10 @@ virtual BOOL DeleteKey(
 ```  
   
 ### Parameters  
- [in] `pszPath`  
+ [in] *pszPath*  
  The name of the key to delete.  
   
- [in] `bAdmin`  
+ [in] *bAdmin*  
  Switch that specifies the location of the key to delete.  
   
 ### Return Value  
@@ -134,7 +129,7 @@ virtual BOOL DeleteKey(
 ### Remarks  
  This method will fail if the `CSettingsStore` object is in read-only mode.  
   
- If the parameter `bAdmin` is zero, `DeleteKey` searches for the key to delete under `HKEY_CURRENT_USER`. If `bAdmin` is nonzero, `DeleteKey` searches for the key to delete under `HKEY_LOCAL_MACHINE`.  
+ If the parameter *bAdmin* is zero, `DeleteKey` searches for the key to delete under **HKEY_CURRENT_USER**. If *bAdmin* is nonzero, `DeleteKey` searches for the key to delete under **HKEY_LOCAL_MACHINE**.  
   
 ##  <a name="deletevalue"></a>  CSettingsStore::DeleteValue  
  Deletes a value from `m_hKey`.  
@@ -144,7 +139,7 @@ virtual BOOL DeleteValue(LPCTSTR pszValue);
 ```  
   
 ### Parameters  
- [in] `pszValue`  
+ [in] *pszValue*  
  Specifies the value field to remove.  
   
 ### Return Value  
@@ -158,7 +153,7 @@ virtual BOOL Open(LPCTSTR pszPath);
 ```  
   
 ### Parameters  
- [in] `pszPath`  
+ [in] *pszPath*  
  The name of a registry key.  
   
 ### Return Value  
@@ -243,59 +238,59 @@ virtual BOOL Read(
 ```  
   
 ### Parameters  
- [in] `pszKey`  
+ [in] *pszKey*  
  Pointer to a null-terminated string that contains the name of the value to read from the registry.  
   
- [out] `iVal`  
+ [out] *iVal*  
  Reference to an integer variable that receives the value read from the registry key.  
   
- [out] `dwVal`  
+ [out] *dwVal*  
  Reference to a 32-bit double word variable that receives the value read from the registry key.  
   
- [out] `sVal`  
+ [out] *sVal*  
  Reference to a string variable that receives the value read from the registry key.  
   
- [out] `scStringList`  
+ [out] *scStringList*  
  Reference to a string list variable that receives the value read from the registry key.  
   
- [out] `scArray`  
+ [out] *scArray*  
  Reference to a string array variable that receives the value read from the registry key.  
   
- [out] `dwcArray`  
+ [out] *dwcArray*  
  Reference to a 32-bit double word array variable that receives the value read from the registry key.  
   
- [out] `wcArray`  
+ [out] *wcArray*  
  Reference to a 16-bit word array variable that receives the value read from the registry key.  
   
- [out] `bcArray`  
+ [out] *bcArray*  
  Reference to a byte array variable that receives the value read from the registry key.  
   
- [out] `lpPoint`  
+ [out] *lpPoint*  
  Reference to a pointer to a `POINT` structure that receives the value read from the registry key.  
   
- [out] `rect`  
+ [out] *rect*  
  Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) variable that receives the value read from the registry key.  
   
- [out] `ppData`  
+ [out] *ppData*  
  Pointer to a pointer to data that receives the value read from the registry key.  
   
- [out] `pBytes`  
- Pointer to an unsigned integer variable. This variable receives the size of the buffer that `ppData` points to.  
+ [out] *pBytes*  
+ Pointer to an unsigned integer variable. This variable receives the size of the buffer that *ppData* points to.  
   
- [out] `list`  
+ [out] *list*  
  Reference to a [CObList](../../mfc/reference/coblist-class.md) variable that receives the value read from the registry key.  
   
- [out] `obj`  
+ [out] *obj*  
  Reference to a [CObject](../../mfc/reference/cobject-class.md) variable that receives the value read from the registry key.  
   
- [out] `pObj`  
+ [out] *pObj*  
  Reference to a pointer to a `CObject` variable that receives the value read from the registry key.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- `Read` checks for `pszKey` as a subkey of `m_hKey`.  
+ `Read` checks for *pszKey* as a subkey of `m_hKey`.  
   
 ##  <a name="write"></a>  CSettingsStore::Write  
  Writes a value to the registry under the open key.  
@@ -373,59 +368,59 @@ virtual BOOL Write(
 ```  
   
 ### Parameters  
- [in] `pszKey`  
+ [in] *pszKey*  
  Pointer to a string that contains the name of the value to set.  
   
- [in] `iVal`  
+ [in] *iVal*  
  Reference to an integer variable that contains the data to store.  
   
- [in] `dwVal`  
+ [in] *dwVal*  
  Reference to a 32-bit double word variable that contains the data to store.  
   
- [in] `pszVal`  
+ [in] *pszVal*  
  Pointer to a null-terminated string variable that contains the data to store.  
   
- [in] `scStringList`  
+ [in] *scStringList*  
  Reference to a [CStringList](../../mfc/reference/cstringlist-class.md) variable that contains the data to store.  
   
- [in] `bcArray`  
+ [in] *bcArray*  
  Reference to a byte array variable that contains the data to store.  
   
- [in] `scArray`  
+ [in] *scArray*  
  Reference to a string array variable that contains the data to store.  
   
- [in] `dwcArray`  
+ [in] *dwcArray*  
  Reference to a 32-bit double word array variable that contains the data to store.  
   
- [in] `wcArray`  
+ [in] *wcArray*  
  Reference to a 16-bit word array variable that contains the data to store.  
   
- [in] `rect`  
+ [in] *rect*  
  Reference to a [CRect](../../atl-mfc-shared/reference/crect-class.md) variable that contains the data to store.  
   
- [in] `lpPoint`  
+ [in] *lpPoint*  
  Reference to a pointer to a `POINT` variable that contains the data to store.  
   
- [in] `pData`  
+ [in] *pData*  
  Pointer to a buffer that contains the data to store.  
   
- [in] `nBytes`  
- Specifies the size, in bytes, of the data to which the `pData` parameter points.  
+ [in] *nBytes*  
+ Specifies the size, in bytes, of the data to which the *pData* parameter points.  
   
- [in] `list`  
+ [in] *list*  
  Reference to a [CObList](../../mfc/reference/coblist-class.md) variable that contains the data to store.  
   
- [in] `obj`  
+ [in] *obj*  
  Reference to a [CObject](../../mfc/reference/cobject-class.md) variable that contains the data to store.  
   
- [in] `pObj`  
+ [in] *pObj*  
  Pointer to a pointer to a `CObject` variable that contains the data to store.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
- In order to write to the registry, you must set `bReadOnly` to a nonzero value when you create a [CSettingsStore](../../mfc/reference/csettingsstore-class.md) object. For more information, see [CSettingsStore::CSettingsStore](#csettingsstore).  
+ In order to write to the registry, you must set *bReadOnly* to a nonzero value when you create a [CSettingsStore](../../mfc/reference/csettingsstore-class.md) object. For more information, see [CSettingsStore::CSettingsStore](#csettingsstore).  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

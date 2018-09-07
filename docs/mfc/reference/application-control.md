@@ -2,19 +2,14 @@
 title: "Application Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["application control [MFC]"]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Application Control
@@ -47,7 +42,7 @@ BOOL AFXAPI AfxOleCanExitApp();
  Nonzero if the application can exit; otherwise 0.  
   
 ### Remarks  
- An application should not terminate if there are outstanding references to its objects. The global functions `AfxOleLockApp` and `AfxOleUnlockApp` increment and decrement, respectively, a counter of references to the application's objects. The application should not terminate when this counter is nonzero. If the counter is nonzero, the application's main window is hidden (not destroyed) when the user chooses Close from the system menu or Exit from the File menu. The framework calls this function in **CFrameWnd::OnClose**.  
+ An application should not terminate if there are outstanding references to its objects. The global functions `AfxOleLockApp` and `AfxOleUnlockApp` increment and decrement, respectively, a counter of references to the application's objects. The application should not terminate when this counter is nonzero. If the counter is nonzero, the application's main window is hidden (not destroyed) when the user chooses Close from the system menu or Exit from the File menu. The framework calls this function in `CFrameWnd::OnClose`.  
   
 ### Example  
  [!code-cpp[NVC_MFCAutomation#2](../../mfc/codesnippet/cpp/application-control_1.cpp)]  
@@ -141,7 +136,7 @@ void AFXAPI AfxOleUnlockApp();
 ### Remarks  
  See `AfxOleLockApp` for further information.  
   
- When the number of active objects reaches zero, **AfxOleOnReleaseAllObjects** is called.  
+ When the number of active objects reaches zero, `AfxOleOnReleaseAllObjects` is called.  
   
 ### Example  
  See the example for [AfxOleLockApp](#afxolelockapp).  
@@ -158,10 +153,10 @@ BOOL AFXAPI AfxOleLockControl(  REFCLSID clsid  );
 BOOL AFXAPI AfxOleLockControl( LPCTSTR lpszProgID );  
 ```
 ### Parameters  
- `clsid`  
+ *clsid*  
  The unique class ID of the control.  
   
- `lpszProgID`  
+ *lpszProgID*  
  The unique program ID of the control.  
    
 ### Return Value  
@@ -201,10 +196,10 @@ BOOL AFXAPI AfxOleRegisterServerClass(
 ```  
   
 ### Parameters  
- `clsid`  
+ *clsid*  
  Reference to the server's OLE class ID.  
   
- `lpszClassName`  
+ *lpszClassName*  
  Pointer to a string containing the class name of the server's objects.  
   
  *lpszShortTypeName*  
@@ -213,30 +208,30 @@ BOOL AFXAPI AfxOleRegisterServerClass(
  *lpszLongTypeName*  
  Pointer to a string containing the long name of the server's object type, such as "Microsoft Excel 5.0 Chart."  
   
- `nAppType`  
- A value, taken from the **OLE_APPTYPE** enumeration, specifying the type of OLE application. Possible values are the following:  
+ *nAppType*  
+ A value, taken from the OLE_APPTYPE enumeration, specifying the type of OLE application. Possible values are the following:  
   
-- `OAT_INPLACE_SERVER` Server has full server user-interface.  
+- OAT_INPLACE_SERVER Server has full server user-interface.  
   
-- `OAT_SERVER` Server supports only embedding.  
+- OAT_SERVER Server supports only embedding.  
   
-- `OAT_CONTAINER` Container supports links to embeddings.  
+- OAT_CONTAINER Container supports links to embeddings.  
   
-- `OAT_DISPATCH_OBJECT` `IDispatch`-capable object.  
+- OAT_DISPATCH_OBJECT `IDispatch`-capable object.  
   
- `rglpszRegister`  
+ *rglpszRegister*  
  Array of pointers to strings representing the keys and values to be added to the OLE system registry if no existing values for the keys are found.  
   
- `rglpszOverwrite`  
+ *rglpszOverwrite*  
  Array of pointers to strings representing the keys and values to be added to the OLE system registry if the registry contains existing values for the given keys.  
   
 ### Return Value  
  Nonzero if the server class is successfully registered; otherwise 0.  
   
 ### Remarks  
- Most applications can use **COleTemplateServer::Register** to register the application's document types. If your application's system-registry format does not fit the typical pattern, you can use `AfxOleRegisterServerClass` for more control.  
+ Most applications can use `COleTemplateServer::Register` to register the application's document types. If your application's system-registry format does not fit the typical pattern, you can use `AfxOleRegisterServerClass` for more control.  
   
- The registry consists of a set of keys and values. The `rglpszRegister` and `rglpszOverwrite` arguments are arrays of pointers to strings, each consisting of a key and a value separated by a **NULL** character ( `'\0'`). Each of these strings can have replaceable parameters whose places are marked by the character sequences `%1` through `%5`.  
+ The registry consists of a set of keys and values. The *rglpszRegister* and *rglpszOverwrite* arguments are arrays of pointers to strings, each consisting of a key and a value separated by a **NULL** character ( `'\0'`). Each of these strings can have replaceable parameters whose places are marked by the character sequences *%1* through *%5*.  
   
  The symbols are filled in as follows:  
   
@@ -265,16 +260,16 @@ void AFXAPI AfxOleSetEditMenu(
 ```  
   
 ### Parameters  
- `pClient`  
+ *pClient*  
  A pointer to the client OLE item.  
   
- `pMenu`  
+ *pMenu*  
  A pointer to the menu object to be updated.  
   
  *iMenuItem*  
  The index of the menu item to be updated.  
   
- `nIDVerbMin`  
+ *nIDVerbMin*  
  The command ID that corresponds to the primary verb.  
   
  *nIDVerbMax*  
@@ -284,7 +279,7 @@ void AFXAPI AfxOleSetEditMenu(
  ID for the Convert menu item.  
   
 ### Remarks  
- If the server recognizes only a primary verb, the menu item becomes "verb *typename* Object" and the `nIDVerbMin` command is sent when the user chooses the command. If the server recognizes several verbs, then the menu item becomes " *typename* Object" and a submenu listing all the verbs appears when the user chooses the command. When the user chooses a verb from the submenu, `nIDVerbMin` is sent if the first verb is chosen, `nIDVerbMin` + 1 is sent if the second verb is chosen, and so forth. The default `COleDocument` implementation automatically handles this feature.  
+ If the server recognizes only a primary verb, the menu item becomes "verb *typename* Object" and the *nIDVerbMin* command is sent when the user chooses the command. If the server recognizes several verbs, then the menu item becomes " *typename* Object" and a submenu listing all the verbs appears when the user chooses the command. When the user chooses a verb from the submenu, *nIDVerbMin* is sent if the first verb is chosen, *nIDVerbMin* + 1 is sent if the second verb is chosen, and so forth. The default `COleDocument` implementation automatically handles this feature.  
   
  You must have the following statement in your client's application resource script (.RC) file:  
   
@@ -300,15 +295,15 @@ void AFXAPI AfxOleSetEditMenu(
 Unlocks the class factory of the specified control.  
    
 ### Syntax  
-  ```
+```
 BOOL AFXAPI AfxOleUnlockControl( REFCLSID clsid );  
 BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );  
 ```
 ### Parameters  
- `clsid`  
+ *clsid*  
  The unique class ID of the control.  
   
- `lpszProgID`  
+ *lpszProgID*  
  The unique program ID of the control.  
    
 ### Return Value  
@@ -318,7 +313,7 @@ BOOL AFXAPI AfxOleUnlockControl( LPCTSTR lpszProgID );
  A control is locked with `AfxOleLockControl`, so that dynamically created data associated with the control remains in memory. This can significantly speed up display of the control because the control need not be created and destroyed every time it is displayed. When you are ready to destroy the control, call `AfxOleUnlockControl`.  
    
 ### Example  
- ```cpp
+```cpp
 // Unlock control's (Microsoft Calendar Control) class factory.
 
 AfxOleUnlockControl(_T("MSCAL.Calendar"));

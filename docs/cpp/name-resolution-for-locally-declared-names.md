@@ -2,17 +2,12 @@
 title: "Name Resolution for Locally Declared Names | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 ms.assetid: 743b88f3-de11-48f4-ae83-931449ea3886
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Name Resolution for Locally Declared Names
@@ -168,6 +163,5 @@ Base
 1  
 ```  
   
-## See Also
-
+## See also
  [Name Resolution](../cpp/templates-and-name-resolution.md)

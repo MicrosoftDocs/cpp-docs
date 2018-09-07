@@ -2,18 +2,13 @@
 title: "Adding a Class from an ActiveX Control (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [C++], adding classes", "classes [C++], creating"]
 ms.assetid: 729fcb37-54b8-44d5-9b4e-50bb16e0eea4
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Adding a Class from an ActiveX Control (Visual C++)
@@ -26,7 +21,7 @@ Use this wizard to create an MFC class from an interface in an available ActiveX
   
 ### To add an MFC class from an ActiveX control  
   
-1.  In either **Solution Explorer** or [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), right-click the name of the project to which you want to add the ActiveX control class.  
+1.  In either **Solution Explorer** or [Class View](/visualstudio/ide/viewing-the-structure-of-code), right-click the name of the project to which you want to add the ActiveX control class.  
   
 2.  From the shortcut menu, click **Add**, and then click **Add Class**.  
   

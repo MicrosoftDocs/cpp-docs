@@ -2,18 +2,13 @@
 title: "Commands and Tables | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumer templates, table support", "CCommand class, OLE DB consumer templates", "commands [C++], OLE DB Consumer Templates", "CTable class", "CAccessorRowset class, command and table classes", "rowsets, accessing", "tables [C++], OLE DB Consumer Templates", "OLE DB consumer templates, command support"]
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Commands and Tables
@@ -30,7 +25,7 @@ Command and Table Classes
   
 -   For data sources that support commands, you can use the `CCommand` class instead. To execute a command, call [Open](../../data/oledb/ccommand-open.md) on this class. As an alternative, you can call `Prepare` to prepare a command that you want to execute more than once.  
   
-     **CCommand** has three template arguments: an accessor type, a rowset type, and a result type (`CNoMultipleResults`, by default, or `CMultipleResults`). If you specify `CMultipleResults`, the `CCommand` class supports the **IMultipleResults** interface and handles multiple rowsets. The [DBVIEWER](http://msdn.microsoft.com/en-us/07620f99-c347-4d09-9ebc-2459e8049832) sample shows how to handle the multiple results.  
+     `CCommand` has three template arguments: an accessor type, a rowset type, and a result type (`CNoMultipleResults`, by default, or `CMultipleResults`). If you specify `CMultipleResults`, the `CCommand` class supports the `IMultipleResults` interface and handles multiple rowsets. The [DBVIEWER](https://github.com/Microsoft/VCSamples) sample shows how to handle the multiple results.  
   
 ## See Also  
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)

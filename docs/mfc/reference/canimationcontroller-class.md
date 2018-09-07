@@ -2,19 +2,14 @@
 title: "CAnimationController Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationController", "AFXANIMATIONCONTROLLER/CAnimationController", "AFXANIMATIONCONTROLLER/CAnimationController::CAnimationController", "AFXANIMATIONCONTROLLER/CAnimationController::AddAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationController::AddKeyframeToGroup", "AFXANIMATIONCONTROLLER/CAnimationController::AnimateGroup", "AFXANIMATIONCONTROLLER/CAnimationController::CleanUpGroup", "AFXANIMATIONCONTROLLER/CAnimationController::CreateKeyframe", "AFXANIMATIONCONTROLLER/CAnimationController::EnableAnimationManagerEvent", "AFXANIMATIONCONTROLLER/CAnimationController::EnableAnimationTimerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationController::EnablePriorityComparisonHandler", "AFXANIMATIONCONTROLLER/CAnimationController::EnableStoryboardEventHandler", "AFXANIMATIONCONTROLLER/CAnimationController::FindAnimationGroup", "AFXANIMATIONCONTROLLER/CAnimationController::FindAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationController::GetKeyframeStoryboardStart", "AFXANIMATIONCONTROLLER/CAnimationController::GetUIAnimationManager", "AFXANIMATIONCONTROLLER/CAnimationController::GetUIAnimationTimer", "AFXANIMATIONCONTROLLER/CAnimationController::GetUITransitionFactory", "AFXANIMATIONCONTROLLER/CAnimationController::GetUITransitionLibrary", "AFXANIMATIONCONTROLLER/CAnimationController::IsAnimationInProgress", "AFXANIMATIONCONTROLLER/CAnimationController::IsValid", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationIntegerValueChanged", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationManagerStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationTimerPostUpdate", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationTimerPreUpdate", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationTimerRenderingTooSlow", "AFXANIMATIONCONTROLLER/CAnimationController::OnAnimationValueChanged", "AFXANIMATIONCONTROLLER/CAnimationController::OnBeforeAnimationStart", "AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityCancel", "AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityCompress", "AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityConclude", "AFXANIMATIONCONTROLLER/CAnimationController::OnHasPriorityTrim", "AFXANIMATIONCONTROLLER/CAnimationController::OnStoryboardStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationController::OnStoryboardUpdated", "AFXANIMATIONCONTROLLER/CAnimationController::RemoveAllAnimationGroups", "AFXANIMATIONCONTROLLER/CAnimationController::RemoveAnimationGroup", "AFXANIMATIONCONTROLLER/CAnimationController::RemoveAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationController::RemoveTransitions", "AFXANIMATIONCONTROLLER/CAnimationController::ScheduleGroup", "AFXANIMATIONCONTROLLER/CAnimationController::SetRelatedWnd", "AFXANIMATIONCONTROLLER/CAnimationController::UpdateAnimationManager", "AFXANIMATIONCONTROLLER/CAnimationController::OnAfterSchedule", "AFXANIMATIONCONTROLLER/CAnimationController::gkeyframeStoryboardStart", "AFXANIMATIONCONTROLLER/CAnimationController::m_bIsValid", "AFXANIMATIONCONTROLLER/CAnimationController::m_lstAnimationGroups", "AFXANIMATIONCONTROLLER/CAnimationController::m_pAnimationManager", "AFXANIMATIONCONTROLLER/CAnimationController::m_pAnimationTimer", "AFXANIMATIONCONTROLLER/CAnimationController::m_pRelatedWnd", "AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionFactory", "AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionLibrary"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationController [MFC], CAnimationController", "CAnimationController [MFC], AddAnimationObject", "CAnimationController [MFC], AddKeyframeToGroup", "CAnimationController [MFC], AnimateGroup", "CAnimationController [MFC], CleanUpGroup", "CAnimationController [MFC], CreateKeyframe", "CAnimationController [MFC], EnableAnimationManagerEvent", "CAnimationController [MFC], EnableAnimationTimerEventHandler", "CAnimationController [MFC], EnablePriorityComparisonHandler", "CAnimationController [MFC], EnableStoryboardEventHandler", "CAnimationController [MFC], FindAnimationGroup", "CAnimationController [MFC], FindAnimationObject", "CAnimationController [MFC], GetKeyframeStoryboardStart", "CAnimationController [MFC], GetUIAnimationManager", "CAnimationController [MFC], GetUIAnimationTimer", "CAnimationController [MFC], GetUITransitionFactory", "CAnimationController [MFC], GetUITransitionLibrary", "CAnimationController [MFC], IsAnimationInProgress", "CAnimationController [MFC], IsValid", "CAnimationController [MFC], OnAnimationIntegerValueChanged", "CAnimationController [MFC], OnAnimationManagerStatusChanged", "CAnimationController [MFC], OnAnimationTimerPostUpdate", "CAnimationController [MFC], OnAnimationTimerPreUpdate", "CAnimationController [MFC], OnAnimationTimerRenderingTooSlow", "CAnimationController [MFC], OnAnimationValueChanged", "CAnimationController [MFC], OnBeforeAnimationStart", "CAnimationController [MFC], OnHasPriorityCancel", "CAnimationController [MFC], OnHasPriorityCompress", "CAnimationController [MFC], OnHasPriorityConclude", "CAnimationController [MFC], OnHasPriorityTrim", "CAnimationController [MFC], OnStoryboardStatusChanged", "CAnimationController [MFC], OnStoryboardUpdated", "CAnimationController [MFC], RemoveAllAnimationGroups", "CAnimationController [MFC], RemoveAnimationGroup", "CAnimationController [MFC], RemoveAnimationObject", "CAnimationController [MFC], RemoveTransitions", "CAnimationController [MFC], ScheduleGroup", "CAnimationController [MFC], SetRelatedWnd", "CAnimationController [MFC], UpdateAnimationManager", "CAnimationController [MFC], CleanUpGroup", "CAnimationController [MFC], OnAfterSchedule", "CAnimationController [MFC], gkeyframeStoryboardStart", "CAnimationController [MFC], m_bIsValid", "CAnimationController [MFC], m_lstAnimationGroups", "CAnimationController [MFC], m_pAnimationManager", "CAnimationController [MFC], m_pAnimationTimer", "CAnimationController [MFC], m_pRelatedWnd", "CAnimationController [MFC], m_pTransitionFactory", "CAnimationController [MFC], m_pTransitionLibrary"]
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationController Class
@@ -124,7 +119,7 @@ CAnimationGroup* AddAnimationObject(CAnimationBaseObject* pObject);
 ```  
   
 ### Parameters  
- `pObject`  
+ *pObject*  
  A pointer to an animation object.  
   
 ### Return Value  
@@ -143,10 +138,10 @@ BOOL AddKeyframeToGroup(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `pKeyframe`  
+ *pKeyframe*  
  A pointer to a keyframe.  
   
 ### Return Value  
@@ -165,10 +160,10 @@ BOOL AnimateGroup(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies GroupID.  
   
- `bScheduleNow`  
+ *bScheduleNow*  
  Specifies whether to run animation right away.  
   
 ### Return Value  
@@ -193,10 +188,10 @@ void CleanUpGroup(CAnimationGroup* pGroup);
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies GroupID.  
   
- `pGroup`  
+ *pGroup*  
  A pointer to animation group to clean.  
   
 ### Remarks  
@@ -218,16 +213,16 @@ CKeyFrame* CreateKeyframe(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID for which keyframe is created.  
   
- `pTransition`  
+ *pTransition*  
  A pointer to transition. Keyframe will be inserted to storyboard after this transition.  
   
- `pKeyframe`  
+ *pKeyframe*  
  A pointer to base keyframe for this keyframe.  
   
- `offset`  
+ *offset*  
  Offset in seconds from the base keyframe specified by pKeyframe.  
   
 ### Return Value  
@@ -244,7 +239,7 @@ virtual BOOL EnableAnimationManagerEvent(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- `bEnable`  
+ *bEnable*  
  Specifies whether to set or release a handler.  
   
 ### Return Value  
@@ -263,10 +258,10 @@ virtual BOOL EnableAnimationTimerEventHandler(
 ```  
   
 ### Parameters  
- `bEnable`  
+ *bEnable*  
  Specifies whether to set or release the handlers.  
   
- `idleBehavior`  
+ *idleBehavior*  
  Specifies idle behavior for timer update handler.  
   
 ### Return Value  
@@ -283,7 +278,7 @@ virtual BOOL EnablePriorityComparisonHandler(DWORD dwHandlerType);
 ```  
   
 ### Parameters  
- `dwHandlerType`  
+ *dwHandlerType*  
  A combination of UI_ANIMATION_PHT_ flags (see remarks), which specifies what handlers to set or release.  
   
 ### Return Value  
@@ -302,10 +297,10 @@ virtual BOOL EnableStoryboardEventHandler(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `bEnable`  
+ *bEnable*  
  Specifies whether to set or release a handler.  
   
 ### Return Value  
@@ -323,10 +318,10 @@ CAnimationGroup* FindAnimationGroup(IUIAnimationStoryboard* pStoryboard);
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies a GroupID.  
   
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
 ### Return Value  
@@ -346,13 +341,13 @@ BOOL FindAnimationObject(
 ```  
   
 ### Parameters  
- `pVariable`  
+ *pVariable*  
  A pointer to animation variable.  
   
- `ppObject`  
+ *ppObject*  
  Output. Contains a pointer to animation object or NULL.  
   
- `ppGroup`  
+ *ppGroup*  
  Output. Contains a pointer to animation group that holds the animation object, or NULL.  
   
 ### Return Value  
@@ -516,7 +511,7 @@ virtual void OnAfterSchedule(CAnimationGroup* pGroup);
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group, which has been scheduled.  
   
 ### Remarks  
@@ -535,19 +530,19 @@ virtual void OnAnimationIntegerValueChanged(
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group that holds an animation object whose value has changed.  
   
- `pObject`  
+ *pObject*  
  A pointer to an animation object that contains an animation variable whose value has changed.  
   
- `variable`  
+ *variable*  
  A pointer to an animation variable.  
   
- `newValue`  
+ *newValue*  
  Specifies new value.  
   
- `prevValue`  
+ *prevValue*  
  Specifies previous value.  
   
 ### Remarks  
@@ -563,10 +558,10 @@ virtual void OnAnimationManagerStatusChanged(
 ```  
   
 ### Parameters  
- `newStatus`  
+ *newStatus*  
  New animation manager status.  
   
- `previousStatus`  
+ *previousStatus*  
  Previous animation manager status.  
   
 ### Remarks  
@@ -600,7 +595,7 @@ virtual void OnAnimationTimerRenderingTooSlow(UINT32 fps);
 ```  
   
 ### Parameters  
- `fps`  
+ *fps*  
  The current frame rate in frames per second.  
   
 ### Remarks  
@@ -619,19 +614,19 @@ virtual void OnAnimationValueChanged(
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group that holds an animation object whose value has changed.  
   
- `pObject`  
+ *pObject*  
  A pointer to an animation object that contains an animation variable whose value has changed.  
   
- `variable`  
+ *variable*  
  A pointer to an animation variable.  
   
- `newValue`  
+ *newValue*  
  Specifies new value.  
   
- `prevValue`  
+ *prevValue*  
  Specifies previous value.  
   
 ### Remarks  
@@ -645,7 +640,7 @@ virtual void OnBeforeAnimationStart(CAnimationGroup* pGroup);
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group whose animation is about to start.  
   
 ### Remarks  
@@ -662,20 +657,20 @@ virtual BOOL OnHasPriorityCancel(
 ```  
   
 ### Parameters  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  The group that owns the currently scheduled storyboard.  
   
- `pGroupNew`  
+ *pGroupNew*  
  The group that owns the new storyboard that is in scheduling conflict with the scheduled storyboard owned by pGroupScheduled.  
   
- `priorityEffect`  
+ *priorityEffect*  
  The potential effect on pGroupNew if pGroupScheduled has a higher priority.  
   
 ### Return Value  
  Should return TRUE if storyboard owned by pGroupNew has priority. Should return FALSE if storyboard owned by pGroupScheduled has priority.  
   
 ### Remarks  
- This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CANCEL. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (http://msdn.microsoft.com/library/dd371759(VS.85).aspx).  
+ This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CANCEL. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (https://msdn.microsoft.com/library/dd371759(VS.85).aspx).  
   
 ##  <a name="onhasprioritycompress"></a>  CAnimationController::OnHasPriorityCompress  
  Called by the framework to resolve scheduling conflicts.  
@@ -688,20 +683,20 @@ virtual BOOL OnHasPriorityCompress(
 ```  
   
 ### Parameters  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  The group that owns the currently scheduled storyboard.  
   
- `pGroupNew`  
+ *pGroupNew*  
  The group that owns the new storyboard that is in scheduling conflict with the scheduled storyboard owned by pGroupScheduled.  
   
- `priorityEffect`  
+ *priorityEffect*  
  The potential effect on pGroupNew if pGroupScheduled has a higher priority.  
   
 ### Return Value  
  Should return TRUE if storyboard owned by pGroupNew has priority. Should return FALSE if storyboard owned by pGroupScheduled has priority.  
   
 ### Remarks  
- This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_COMPRESS. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (http://msdn.microsoft.com/library/dd371759(VS.85).aspx).  
+ This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_COMPRESS. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (https://msdn.microsoft.com/library/dd371759(VS.85).aspx).  
   
 ##  <a name="onhaspriorityconclude"></a>  CAnimationController::OnHasPriorityConclude  
  Called by the framework to resolve scheduling conflicts.  
@@ -714,20 +709,20 @@ virtual BOOL OnHasPriorityConclude(
 ```  
   
 ### Parameters  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  The group that owns the currently scheduled storyboard.  
   
- `pGroupNew`  
+ *pGroupNew*  
  The group that owns the new storyboard that is in scheduling conflict with the scheduled storyboard owned by pGroupScheduled.  
   
- `priorityEffect`  
+ *priorityEffect*  
  The potential effect on pGroupNew if pGroupScheduled has a higher priority.  
   
 ### Return Value  
  Should return TRUE if storyboard owned by pGroupNew has priority. Should return FALSE if storyboard owned by pGroupScheduled has priority.  
   
 ### Remarks  
- This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CONCLUDE. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (http://msdn.microsoft.com/library/dd371759(VS.85).aspx).  
+ This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_CONCLUDE. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (https://msdn.microsoft.com/library/dd371759(VS.85).aspx).  
   
 ##  <a name="onhasprioritytrim"></a>  CAnimationController::OnHasPriorityTrim  
  Called by the framework to resolve scheduling conflicts.  
@@ -740,20 +735,20 @@ virtual BOOL OnHasPriorityTrim(
 ```  
   
 ### Parameters  
- `pGroupScheduled`  
+ *pGroupScheduled*  
  The group that owns the currently scheduled storyboard.  
   
- `pGroupNew`  
+ *pGroupNew*  
  The group that owns the new storyboard that is in scheduling conflict with the scheduled storyboard owned by pGroupScheduled.  
   
- `priorityEffect`  
+ *priorityEffect*  
  The potential effect on pGroupNew if pGroupScheduled has a higher priority.  
   
 ### Return Value  
  Should return TRUE if storyboard owned by pGroupNew has priority. Should return FALSE if storyboard owned by pGroupScheduled has priority.  
   
 ### Remarks  
- This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_TRIM. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (http://msdn.microsoft.com/library/dd371759(VS.85).aspx).  
+ This method is called if you enable priority comparison events using CAnimationController::EnablePriorityComparisonHandler and specify UI_ANIMATION_PHT_TRIM. It can be overridden in a derived class to take application-specific actions. Read Windows Animation API documentation for more information about Conflict Management (https://msdn.microsoft.com/library/dd371759(VS.85).aspx).  
   
 ##  <a name="onstoryboardstatuschanged"></a>  CAnimationController::OnStoryboardStatusChanged  
  Called by the framework when storyboard status has changed.  
@@ -766,13 +761,13 @@ virtual void OnStoryboardStatusChanged(
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to an animation group that owns the storyboard whose status has changed.  
   
- `newStatus`  
+ *newStatus*  
  Specifies the new status.  
   
- `previousStatus`  
+ *previousStatus*  
  Specifies the previous status.  
   
 ### Remarks  
@@ -786,7 +781,7 @@ virtual void OnStoryboardUpdated(CAnimationGroup* pGroup);
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  A pointer to a group that owns the storyboard.  
   
 ### Remarks  
@@ -810,7 +805,7 @@ void RemoveAnimationGroup(UINT32 nGroupID);
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies animation group ID.  
   
 ### Remarks  
@@ -826,10 +821,10 @@ void RemoveAnimationObject(
 ```  
   
 ### Parameters  
- `pObject`  
+ *pObject*  
  A pointer to an animation object.  
   
- `bNoDelete`  
+ *bNoDelete*  
  If this parameter is TRUE the object will not be deleted upon remove.  
   
 ### Remarks  
@@ -843,7 +838,7 @@ void RemoveTransitions(UINT32 nGroupID);
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
 ### Remarks  
@@ -859,10 +854,10 @@ BOOL ScheduleGroup(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies animation Group ID to schedule.  
   
- `time`  
+ *time*  
  Specifies time to schedule.  
   
 ### Return Value  
@@ -879,7 +874,7 @@ void SetRelatedWnd(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  A pointer to window object to set.  
   
 ### Remarks  

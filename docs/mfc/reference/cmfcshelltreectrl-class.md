@@ -2,25 +2,20 @@
 title: "CMFCShellTreeCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::EnableShellContextMenu", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetItemPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::GetRelatedList", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnChildNotify", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemIcon", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::OnGetItemText", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::Refresh", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SelectPath", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetFlags", "AFXSHELLTREECTRL/CMFCShellTreeCtrl::SetRelatedList"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCShellTreeCtrl [MFC], EnableShellContextMenu", "CMFCShellTreeCtrl [MFC], GetFlags", "CMFCShellTreeCtrl [MFC], GetItemPath", "CMFCShellTreeCtrl [MFC], GetRelatedList", "CMFCShellTreeCtrl [MFC], OnChildNotify", "CMFCShellTreeCtrl [MFC], OnGetItemIcon", "CMFCShellTreeCtrl [MFC], OnGetItemText", "CMFCShellTreeCtrl [MFC], Refresh", "CMFCShellTreeCtrl [MFC], SelectPath", "CMFCShellTreeCtrl [MFC], SetFlags", "CMFCShellTreeCtrl [MFC], SetRelatedList"]
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
-caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCShellTreeCtrl Class
 The `CMFCShellTreeCtrl` class extends [CTreeCtrl Class](../../mfc/reference/ctreectrl-class.md) functionality by displaying a hierarchy of Shell items.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
 ## Syntax  
   
 ```  
@@ -34,7 +29,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 |Name|Description|  
 |----------|-----------------|  
 |[CMFCShellTreeCtrl::EnableShellContextMenu](#enableshellcontextmenu)|Enables or disables the shortcut menu.|  
-|[CMFCShellTreeCtrl::GetFlags](#getflags)|Returns a combination of flags that are passed to [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066).|  
+|[CMFCShellTreeCtrl::GetFlags](#getflags)|Returns a combination of flags that are passed to [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066).|  
 |[CMFCShellTreeCtrl::GetItemPath](#getitempath)|Retrieves the path to an item.|  
 |[CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist)|Returns a pointer to the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object that is used together with this `CMFCShellTreeCtrl` object to create an Explorer-like window.|  
 |[CMFCShellTreeCtrl::OnChildNotify](#onchildnotify)|This member function is called by this window's parent window when it receives a notification message that applies to this window. (Overrides [CWnd::OnChildNotify](../../mfc/reference/cwnd-class.md#onchildnotify).)|  
@@ -76,7 +71,7 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  A Boolean that specifies whether to enable the shortcut menu.  
   
 ##  <a name="getflags"></a>  CMFCShellTreeCtrl::GetFlags  
@@ -87,10 +82,10 @@ DWORD GetFlags() const;
 ```  
   
 ### Return Value  
- A `DWORD` value that specifies the combination of flags currently set.  
+ A DWORD value that specifies the combination of flags currently set.  
   
 ### Remarks  
- The flags set in the `CMFCShellTreeCtrl` are sent to the method [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066) whenever the object is refreshed. You can change the flags with the [CMFCShellTreeCtrl::SetFlags](#setflags) method.  
+ The flags set in the `CMFCShellTreeCtrl` are sent to the method [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066) whenever the object is refreshed. You can change the flags with the [CMFCShellTreeCtrl::SetFlags](#setflags) method.  
   
 ##  <a name="getitempath"></a>  CMFCShellTreeCtrl::GetItemPath  
  Retrieves the path of an item in the [CMFCShellTreeCtrl Class](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
@@ -102,19 +97,19 @@ BOOL GetItemPath(
 ```  
   
 ### Parameters  
- [out] `strPath`  
+ [out] *strPath*  
  A reference to a string parameter. The method writes the path of the item to this parameter.  
   
- [in] `htreeItem`  
+ [in] *htreeItem*  
  The method retrieves the path for this tree control item.  
   
 ### Return Value  
  Nonzero if successful; 0 otherwise.  
   
 ### Remarks  
- If this method fails, `strPath` contains the empty string.  
+ If this method fails, *strPath* contains the empty string.  
   
- If you do not specify `hTreeItem`, this method tries to obtain the string for the currently selected item. If no item is selected and `hTreeItem` is `NULL`, this method fails.  
+ If you do not specify *hTreeItem*, this method tries to obtain the string for the currently selected item. If no item is selected and *hTreeItem* is NULL, this method fails.  
   
 ##  <a name="getrelatedlist"></a>  CMFCShellTreeCtrl::GetRelatedList  
  Returns a pointer to the [CMFCShellListCtrl Class](../../mfc/reference/cmfcshelllistctrl-class.md) object that is associated with this [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
@@ -141,10 +136,10 @@ virtual BOOL OnChildNotify(
 ```  
   
 ### Parameters  
- [in] `message`  
- [in] `wParam`  
- [in] `lParam`  
- [in] `pLResult`  
+ [in] *message*  
+ [in] *wParam*  
+ [in] *lParam*  
+ [in] *pLResult*  
   
 ### Return Value  
   
@@ -160,8 +155,8 @@ virtual int OnGetItemIcon(
 ```  
   
 ### Parameters  
- [in] `pItem`  
- [in] `bSelected`  
+ [in] *pItem*  
+ [in] *bSelected*  
   
 ### Return Value  
   
@@ -175,7 +170,7 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 ```  
   
 ### Parameters  
- [in] `pItem`  
+ [in] *pItem*  
   
 ### Return Value  
   
@@ -200,14 +195,14 @@ BOOL SelectPath(LPCITEMIDLIST lpidl);
 ```  
   
 ### Parameters  
- [in] `lpszPath`  
+ [in] *lpszPath*  
  A string that specifies the path of an item.  
   
- [in] `lpidl`  
+ [in] *lpidl*  
  A PIDL that specifies the item  
   
 ### Return Value  
- `S_OK` if successful; `E_FAIL` otherwise.  
+ S_OK if successful; E_FAIL otherwise.  
   
 ##  <a name="setflags"></a>  CMFCShellTreeCtrl::SetFlags  
  Sets flags to filter the tree context.  
@@ -219,14 +214,14 @@ void SetFlags(
 ```  
   
 ### Parameters  
- [in] `dwFlags`  
+ [in] *dwFlags*  
  The flags to set.  
   
- [in] `bRefresh`  
+ [in] *bRefresh*  
  A Boolean that specifies whether the `CMFCShellTreeCtrl`  should be refreshed immediately.  
   
 ### Remarks  
- The `CMFCShellTreeCtrl` passes all set flags to [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066). For more information about the values of different flags, see [IShellFolder::EnumObjects](http://msdn.microsoft.com/library/windows/desktop/bb775066).  
+ The `CMFCShellTreeCtrl` passes all set flags to [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066). For more information about the values of different flags, see [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066).  
   
 ##  <a name="setrelatedlist"></a>  CMFCShellTreeCtrl::SetRelatedList  
  Associates a [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) object with a [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) object.  
@@ -236,7 +231,7 @@ void SetRelatedList(CMFCShellListCtrl* pShellList);
 ```  
   
 ### Parameters  
- [in] `pShellList`  
+ [in] *pShellList*  
  A pointer to a `CMFCShellListCtrl` object.  
   
 ### Remarks  

@@ -2,19 +2,14 @@
 title: "-SUBSYSTEM (Specify Subsystem) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/subsystem", "VC.Project.VCLinkerTool.SubSystem", "VC.Project.VCLinkerTool.SubSystemVersion"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/SUBSYSTEM linker option", "SUBSYSTEM linker option", "-SUBSYSTEM linker option", "subsystem specifications"]
 ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b
-caps.latest.revision: 25
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /SUBSYSTEM (Specify Subsystem)
@@ -26,7 +21,7 @@ ms.workload: ["cplusplus"]
 ```  
   
  BOOT_APPLICATION  
- An application that runs in the Windows boot environment. For more information about boot applications, see [About BCD](http://msdn.microsoft.com/library/windows/desktop/aa362639).  
+ An application that runs in the Windows boot environment. For more information about boot applications, see [About BCD](/previous-versions/windows/desktop/bcd/about-bcd).  
   
  CONSOLE  
  Win32 character-mode application. The operating system provides a console for console applications. If `main` or `wmain` is defined for native code, `int main(array<String ^> ^)` is defined for managed code, or you build the application completely by using `/clr:safe`, CONSOLE is the default.  
@@ -56,10 +51,10 @@ ms.workload: ["cplusplus"]
 |Subsystem|Minimum|Default|  
 |---------------|-------------|-------------|  
 |BOOT_APPLICATION|1.0|1.0|  
-|CONSOLE|5.01 (x86) 5.02 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|6.00 (x86, [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|  
-|WINDOWS|5.01 (x86) 5.02 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|6.00 (x86, [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|  
-|NATIVE (with DRIVER:WDM)|1.00 (x86) 1.10 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)], ARM)|1.00 (x86) 1.10 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)], ARM)|  
-|NATIVE (without /DRIVER:WDM)|4.00 (x86) 5.02 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|4.00 (x86) 5.02 ([!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]) 6.02 (ARM)|  
+|CONSOLE|5.01 (x86) 5.02 (x64) 6.02 (ARM)|6.00 (x86, x64) 6.02 (ARM)|  
+|WINDOWS|5.01 (x86) 5.02 (x64) 6.02 (ARM)|6.00 (x86, x64) 6.02 (ARM)|  
+|NATIVE (with DRIVER:WDM)|1.00 (x86) 1.10 (x64, ARM)|1.00 (x86) 1.10 (x64, ARM)|  
+|NATIVE (without /DRIVER:WDM)|4.00 (x86) 5.02 (x64) 6.02 (ARM)|4.00 (x86) 5.02 (x64) 6.02 (ARM)|  
 |POSIX|1.0|19.90|  
 |EFI_APPLICATION, EFI_BOOT_SERVICE_DRIVER, EFI_ROM, EFI_RUNTIME_DRIVER|1.0|1.0|  
   

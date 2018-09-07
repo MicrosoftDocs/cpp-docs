@@ -1,21 +1,20 @@
 ---
-title: Install C++ support in Visual Studio | Microsoft Docs
+title: Install C++ support in Visual Studio 2017 | Microsoft Docs
 description: "Install Visual Studio support for Visual C++"
 ms.custom: "mvc"
-ms.date: 12/12/2017
-ms.topic: "get-started-article"
+ms.date: "06/21/2018"
+ms.topic: "tutorial"
 ms.technology: ["devlang-C++"]
 ms.devlang: "C++"
 dev_langs: ["C++"]
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Install C++ support in Visual Studio
 
-If you haven't downloaded and installed Visual Studio and the Visual C++ tools yet, here's how to get started.
+If you haven't downloaded and installed Visual Studio 2017 and the Visual C++ tools yet, here's how to get started.
 
 ## Prerequisites
 
@@ -25,17 +24,23 @@ If you haven't downloaded and installed Visual Studio and the Visual C++ tools y
 
 - Enough free disk space. Visual Studio requires at least 7GB of disk space, and can take 50GB or more if many common options are installed. We recommend you install it on your C: drive.
 
-For details on the disk space and operating system requirements, see [Visual Studio 2017 System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs). The installer reports how much disk space is required for the options you select.
+For details on the disk space and operating system requirements, see [Visual Studio Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-vs). The installer reports how much disk space is required for the options you select.
 
-## Installation
+## Visual Studio 2015 Installation
+
+ To install Visual Studio 2015, go to [Download older versions of Visual Studio](https://www.visualstudio.com/vs/older-downloads/). Run the setup program and choose **Custom installation** and then choose the C++ component. 
+
+ In general, we highly recommend that you use Visual Studio 2017 even if you need to compile your code using the Visual Studio 2015 compiler. For more information, see [Use native multi-targeting in Visual Studio to build old projects](../porting/use-native-multi-targeting.md).
+
+## Visual Studio 2017 Installation
 
 1. Download the latest Visual Studio 2017 installer for Windows.
 
    > [!div class="nextstepaction"]
-   > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&utm_source=docs&utm_medium=clickbutton">Install Visual Studio 2017 Community</a>
+   > [Install Visual Studio 2017 Community](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
    >[!Tip]
-   > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&utm_source=docs&utm_medium=clickbutton">Visual Studio 2017 Professional</a> or <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&utm_source=docs&utm_medium=clickbutton">Visual Studio 2017 Enterprise</a>.
+   > The Community edition is for individual developers, classroom learning, academic research, and open source development. For other uses, install [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) or [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 1. Find the installer file you downloaded and run it. It may be displayed in your browser, or you may find it in your Downloads folder. The installer needs Administrator privileges to run. You may see a **User Account Control** dialog asking you to give permission to let the installer make changes to your system; choose **Yes**. If you are having trouble, find the downloaded file in File Explorer, right-click on the installer icon, and choose **Run as Administrator** from the context menu.
 
@@ -53,7 +58,7 @@ For details on the disk space and operating system requirements, see [Visual Stu
 
    The first time you run Visual Studio, you are asked to sign in with a Microsoft Account. If you don't have one, you can create one for free. You must also choose a theme. Don't worry, you can change it later if you want to. 
 
-   It may take Visual Studio several minutes to to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
+   It may take Visual Studio several minutes to get ready for use the first time you run it. Here's what it looks like in a quick time-lapse:
 
    ![Visual Studio 2017 sign in](../build/media/vscpp-quickstart-first-run.gif "Visual Studio 2017 sign in")
 

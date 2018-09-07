@@ -2,19 +2,14 @@
 title: "_bstr_t::operator = | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_bstr_t::operator="]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator = [C++], bstr", "operator= [C++], bstr"]
 ms.assetid: fb31bb1b-ce29-4388-b5fd-8dac830cf18a
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _bstr_t::operator =
@@ -25,19 +20,10 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-      _bstr_t& operator=(  
-   const _bstr_t& s1   
-) throw ( );  
-_bstr_t& operator=(  
-   const char* s2   
-);  
-_bstr_t& operator=(  
-   const wchar_t* s3   
-);  
-_bstr_t& operator=(  
-   const _variant_t& var   
-);  
+_bstr_t& operator=(const _bstr_t& s1) throw ( );  
+_bstr_t& operator=(const char* s2);  
+_bstr_t& operator=(const wchar_t* s3);  
+_bstr_t& operator=(const _variant_t& var);  
 ```  
   
 #### Parameters  
@@ -47,16 +33,16 @@ _bstr_t& operator=(
  *s2*  
  A multibyte string to be assigned to an existing `_bstr_t` object.  
   
- `s3`  
+ *s3*  
  A Unicode string to be assigned to an existing `_bstr_t` object.  
   
- `var`  
+ *var*  
  A `_variant_t` object to be assigned to an existing `_bstr_t` object.  
   
  **END Microsoft Specific**  
   
 ## Example  
- See [_bstr_t::Assign](../cpp/bstr-t-assign.md) for an example of using `operator=`.  
+ See [_bstr_t::Assign](../cpp/bstr-t-assign.md) for an example of using **operator=**.  
   
-## See Also  
+## See also  
  [_bstr_t Class](../cpp/bstr-t-class.md)

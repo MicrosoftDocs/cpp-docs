@@ -2,17 +2,12 @@
 title: "concurrency namespace enums | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["CONCRT/concurrency::Agents_EventType", "CONCRT/concurrency::Concrt_TraceFlags", "CONCRT/concurrency::CriticalRegionType", "CONCRT/concurrency::PolicyElementKey", "CONCRT/concurrency::SchedulerType", "CONCRT/concurrency::SwitchingProxyState", "CONCRT/concurrency::WinRTInitializationType", "CONCRT/concurrency::join_type", "CONCRT/concurrency::message_status Enumeration"]
 dev_langs: ["C++"]
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # concurrency namespace enums

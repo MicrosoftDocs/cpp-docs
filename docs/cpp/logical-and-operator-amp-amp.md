@@ -2,34 +2,25 @@
 title: "Logical AND Operator: &amp;&amp; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["&&"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["logical AND operator", "AND operator", "&& operator"]
 ms.assetid: 50cfa664-a8c4-4b31-9bab-2f80d7cd2d1f
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Logical AND Operator: &amp;&amp;
 ## Syntax  
   
 ```  
-  
-expression   
-&&  
- expression  
-  
+expression && expression  
 ```  
   
 ## Remarks  
- The logical AND operator (**&&**) returns the boolean value **true** if both operands are **true** and returns **false** otherwise. The operands are implicitly converted to type `bool` prior to evaluation, and the result is of type `bool`. Logical AND has left-to-right associativity.  
+ The logical AND operator (**&&**) returns the boolean value TRUE if both operands are TRUE and returns FALSE otherwise. The operands are implicitly converted to type **bool** prior to evaluation, and the result is of type **bool**. Logical AND has left-to-right associativity.  
   
  The operands to the logical AND operator need not be of the same type, but they must be of integral or pointer type. The operands are commonly relational or equality expressions.  
   
@@ -37,7 +28,7 @@ expression
   
  The second operand is evaluated only if the first operand evaluates to true (nonzero). This evaluation eliminates needless evaluation of the second operand when the logical AND expression is false. You can use this short-circuit evaluation to prevent null-pointer dereferencing, as shown in the following example:  
   
-```  
+```cpp 
 char *pch = 0;  
 ...  
 (pch) && (*pch = 'a');  
@@ -50,7 +41,7 @@ char *pch = 0;
   
 ## Example  
   
-```  
+```cpp 
 // expre_Logical_AND_Operator.cpp  
 // compile with: /EHsc  
 // Demonstrate logical AND  
@@ -70,7 +61,7 @@ int main() {
 }  
 ```  
   
-## See Also  
- [C++ Built-in Operators Precedence and Associativity](cpp-built-in-operators-precedence-and-associativity.md)
+## See also  
+ [C++ Built-in Operators Precedence and Associativity](cpp-built-in-operators-precedence-and-associativity.md)  
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Logical Operators](../c-language/c-logical-operators.md)

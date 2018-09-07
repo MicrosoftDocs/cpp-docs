@@ -2,19 +2,14 @@
 title: "simple_partitioner Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["simple_partitioner", "PPL/concurrency::simple_partitioner", "PPL/concurrency::simple_partitioner::simple_partitioner"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["simple_partitioner class"]
 ms.assetid: d7e997af-54d1-43f5-abe0-def72df6edb3
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # simple_partitioner Class

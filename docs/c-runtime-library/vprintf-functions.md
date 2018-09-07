@@ -2,21 +2,16 @@
 title: "vprintf Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apilocation: ["msvcr110.dll", "msvcr120.dll", "msvcr90.dll", "msvcr100.dll", "msvcr110_clr0400.dll", "msvcr80.dll"]
 apitype: "DLLExport"
 f1_keywords: ["vprintf"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["vprintf function", "formatted text [C++]"]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # vprintf Functions
@@ -76,7 +71,7 @@ Each of the `vprintf` functions takes a pointer to an argument list, then format
  For **vsprintf**, `vswprintf`, `_vsnprintf` and `_vsnwprintf`, if copying occurs between strings that overlap, the behavior is undefined.  
   
 > [!IMPORTANT]
->  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](http://msdn.microsoft.com/library/windows/desktop/ms717795). If using the secure versions of these functions (either the **_s** or **_p** suffixes), a user-supplied format string could trigger an invalid parameter exception if the user-supplied string contains invalid formatting characters.  
+>  Ensure that *format* is not a user-defined string. For more information, see [Avoiding Buffer Overruns](/windows/desktop/SecBP/avoiding-buffer-overruns). If using the secure versions of these functions (either the **_s** or **_p** suffixes), a user-supplied format string could trigger an invalid parameter exception if the user-supplied string contains invalid formatting characters.  
   
 ## See Also  
  [Stream I/O](../c-runtime-library/stream-i-o.md)   

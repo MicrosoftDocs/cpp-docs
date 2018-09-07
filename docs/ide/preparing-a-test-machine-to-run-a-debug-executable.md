@@ -2,18 +2,13 @@
 title: "Preparing a Test Machine To Run a Debug Executable | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["debug executable, preparing a test machine to run"]
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Preparing a Test Machine To Run a Debug Executable
@@ -38,6 +33,6 @@ To prepare a computer to test the debug version of an application that is built 
 ## See Also  
  
  [Deployment in Visual C++](../ide/deployment-in-visual-cpp.md)   
- [Windows Installer Command line options](http://msdn.microsoft.com/library/windows/desktop/aa367988.aspx)   
+ [Windows Installer Command line options](/windows/desktop/Msi/command-line-options)   
  [Deployment Examples](../ide/deployment-examples.md)
  [Remote Debugging](/visualstudio/debugger/remote-debugging.md)

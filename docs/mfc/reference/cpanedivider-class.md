@@ -2,23 +2,18 @@
 title: "CPaneDivider Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CPaneDivider", "AFXPANEDIVIDER/CPaneDivider", "AFXPANEDIVIDER/CPaneDivider::CPaneDivider", "AFXPANEDIVIDER/CPaneDivider::AddPaneContainer", "AFXPANEDIVIDER/CPaneDivider::AddPane", "AFXPANEDIVIDER/CPaneDivider::AddRecentPane", "AFXPANEDIVIDER/CPaneDivider::CalcExpectedDockedRect", "AFXPANEDIVIDER/CPaneDivider::CalcFixedLayout", "AFXPANEDIVIDER/CPaneDivider::CheckVisibility", "AFXPANEDIVIDER/CPaneDivider::CreateEx", "AFXPANEDIVIDER/CPaneDivider::DoesAllowDynInsertBefore", "AFXPANEDIVIDER/CPaneDivider::DoesContainFloatingPane", "AFXPANEDIVIDER/CPaneDivider::FindPaneContainer", "AFXPANEDIVIDER/CPaneDivider::FindTabbedPane", "AFXPANEDIVIDER/CPaneDivider::GetDefaultWidth", "AFXPANEDIVIDER/CPaneDivider::GetFirstPane", "AFXPANEDIVIDER/CPaneDivider::GetPaneDividerStyle", "AFXPANEDIVIDER/CPaneDivider::GetRootContainerRect", "AFXPANEDIVIDER/CPaneDivider::GetWidth", "AFXPANEDIVIDER/CPaneDivider::Init", "AFXPANEDIVIDER/CPaneDivider::InsertPane", "AFXPANEDIVIDER/CPaneDivider::IsAutoHideMode", "AFXPANEDIVIDER/CPaneDivider::IsDefault", "AFXPANEDIVIDER/CPaneDivider::IsHorizontal", "AFXPANEDIVIDER/CPaneDivider::Move", "AFXPANEDIVIDER/CPaneDivider::NotifyAboutRelease", "AFXPANEDIVIDER/CPaneDivider::OnShowPane", "AFXPANEDIVIDER/CPaneDivider::ReleaseEmptyPaneContainers", "AFXPANEDIVIDER/CPaneDivider::RemovePane", "AFXPANEDIVIDER/CPaneDivider::ReplacePane", "AFXPANEDIVIDER/CPaneDivider::RepositionPanes", "AFXPANEDIVIDER/CPaneDivider::Serialize", "AFXPANEDIVIDER/CPaneDivider::SetAutoHideMode", "AFXPANEDIVIDER/CPaneDivider::SetPaneContainerManager", "AFXPANEDIVIDER/CPaneDivider::ShowWindow", "AFXPANEDIVIDER/CPaneDivider::StoreRecentDockSiteInfo", "AFXPANEDIVIDER/CPaneDivider::StoreRecentTabRelatedInfo", "AFXPANEDIVIDER/CPaneDivider::GetPanes", "AFXPANEDIVIDER/CPaneDivider::GetPaneDividers", "AFXPANEDIVIDER/CPaneDivider::m_nDefaultWidth", "AFXPANEDIVIDER/CPaneDivider::m_pSliderRTC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CPaneDivider [MFC], CPaneDivider", "CPaneDivider [MFC], AddPaneContainer", "CPaneDivider [MFC], AddPane", "CPaneDivider [MFC], AddRecentPane", "CPaneDivider [MFC], CalcExpectedDockedRect", "CPaneDivider [MFC], CalcFixedLayout", "CPaneDivider [MFC], CheckVisibility", "CPaneDivider [MFC], CreateEx", "CPaneDivider [MFC], DoesAllowDynInsertBefore", "CPaneDivider [MFC], DoesContainFloatingPane", "CPaneDivider [MFC], FindPaneContainer", "CPaneDivider [MFC], FindTabbedPane", "CPaneDivider [MFC], GetDefaultWidth", "CPaneDivider [MFC], GetFirstPane", "CPaneDivider [MFC], GetPaneDividerStyle", "CPaneDivider [MFC], GetRootContainerRect", "CPaneDivider [MFC], GetWidth", "CPaneDivider [MFC], Init", "CPaneDivider [MFC], InsertPane", "CPaneDivider [MFC], IsAutoHideMode", "CPaneDivider [MFC], IsDefault", "CPaneDivider [MFC], IsHorizontal", "CPaneDivider [MFC], Move", "CPaneDivider [MFC], NotifyAboutRelease", "CPaneDivider [MFC], OnShowPane", "CPaneDivider [MFC], ReleaseEmptyPaneContainers", "CPaneDivider [MFC], RemovePane", "CPaneDivider [MFC], ReplacePane", "CPaneDivider [MFC], RepositionPanes", "CPaneDivider [MFC], Serialize", "CPaneDivider [MFC], SetAutoHideMode", "CPaneDivider [MFC], SetPaneContainerManager", "CPaneDivider [MFC], ShowWindow", "CPaneDivider [MFC], StoreRecentDockSiteInfo", "CPaneDivider [MFC], StoreRecentTabRelatedInfo", "CPaneDivider [MFC], GetPanes", "CPaneDivider [MFC], GetPaneDividers", "CPaneDivider [MFC], m_nDefaultWidth", "CPaneDivider [MFC], m_pSliderRTC"]
 ms.assetid: 8e828a5d-232f-4127-b8e3-7fa45a7a476e
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CPaneDivider Class
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
  The `CPaneDivider` class divides two panes, divides two groups of panes, or separates a group of panes from the client area of the main frame window.  
   
@@ -119,7 +114,7 @@ void SetAutoHideMode(BOOL bMode);
 ```  
   
 ### Parameters  
- [in] `bMode`  
+ [in] *bMode*  
   
 ### Remarks  
   
@@ -131,7 +126,7 @@ void SetPaneContainerManager(CPaneContainerManager* p);
 ```  
   
 ### Parameters  
- [in] `p`  
+ [in] *p*  
   
 ### Remarks  
   
@@ -143,7 +138,7 @@ virtual void AddPane(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -163,10 +158,10 @@ virtual BOOL AddPaneContainer(
 ```  
   
 ### Parameters  
- [in] `barContainerManager`  
- [in] `bOuterEdge`  
- [in] `pTargetBar`  
- [in] `dwAlignment`  
+ [in] *barContainerManager*  
+ [in] *bOuterEdge*  
+ [in] *pTargetBar*  
+ [in] *dwAlignment*  
   
 ### Return Value  
   
@@ -180,7 +175,7 @@ virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Return Value  
   
@@ -199,11 +194,11 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] `pWndToDock`  
- [in] `ptMouse`  
- [in] `rectResult`  
- [in] `bDrawTab`  
- [in] `ppTargetBar`  
+ [in] *pWndToDock*  
+ [in] *ptMouse*  
+ [in] *rectResult*  
+ [in] *bDrawTab*  
+ [in] *ppTargetBar*  
   
 ### Remarks  
   
@@ -217,8 +212,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -248,8 +243,8 @@ CPaneDivider(
 ```  
   
 ### Parameters  
- [in] `bDefaultSlider`  
- [in] `pParent`  
+ [in] *bDefaultSlider*  
+ [in] *pParent*  
   
 ### Return Value  
   
@@ -269,12 +264,12 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- [in] `dwStyleEx`  
- [in] `dwStyle`  
- [in] `rect`  
- [in] `pParentWnd`  
- [in] `nID`  
- [in] `pContext`  
+ [in] *dwStyleEx*  
+ [in] *dwStyle*  
+ [in] *rect*  
+ [in] *pParentWnd*  
+ [in] *nID*  
+ [in] *pContext*  
   
 ### Return Value  
   
@@ -312,8 +307,8 @@ CPaneContainer* FindPaneContainer(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bLeftBar`  
+ [in] *pBar*  
+ [in] *bLeftBar*  
   
 ### Return Value  
   
@@ -327,7 +322,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
   
 ### Return Value  
   
@@ -363,7 +358,7 @@ void GetPaneDividers(CObList& lstSliders);
 ```  
   
 ### Parameters  
- [out] `lstSliders`  
+ [out] *lstSliders*  
  Contains the list of pane dividers that reside in the pane container.  
   
 ### Remarks  
@@ -388,7 +383,7 @@ void GetPanes(CObList& lstBars);
 ```  
   
 ### Parameters  
- [out] `lstBars`  
+ [out] *lstBars*  
  Contains the list of panes that reside in the pane container.  
   
 ### Remarks  
@@ -426,8 +421,8 @@ void Init(
 ```  
   
 ### Parameters  
- [in] `bDefaultSlider`  
- [in] `pParent`  
+ [in] *bDefaultSlider*  
+ [in] *pParent*  
   
 ### Remarks  
   
@@ -443,10 +438,10 @@ virtual BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] `pBarToInsert`  
- [in] `pTargetBar`  
- [in] `dwAlignment`  
- [in] `lpRect`  
+ [in] *pBarToInsert*  
+ [in] *pTargetBar*  
+ [in] *dwAlignment*  
+ [in] *lpRect*  
   
 ### Return Value  
   
@@ -502,8 +497,8 @@ virtual void Move(
 ```  
   
 ### Parameters  
- [in] `ptOffset`  
- [in] `bAdjustLayout`  
+ [in] *ptOffset*  
+ [in] *bAdjustLayout*  
   
 ### Remarks  
   
@@ -548,8 +543,8 @@ virtual void OnShowPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bShow`  
+ [in] *pBar*  
+ [in] *bShow*  
   
 ### Remarks  
   
@@ -570,7 +565,7 @@ virtual void RemovePane(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -584,8 +579,8 @@ virtual BOOL ReplacePane(
 ```  
   
 ### Parameters  
- [in] `pBarToReplace`  
- [in] `pBarToReplaceWith`  
+ [in] *pBarToReplace*  
+ [in] *pBarToReplaceWith*  
   
 ### Return Value  
   
@@ -601,8 +596,8 @@ virtual void RepositionPanes(
 ```  
   
 ### Parameters  
- [in] `rectNew`  
- [in] `hdwp`  
+ [in] *rectNew*  
+ [in] *hdwp*  
   
 ### Remarks  
   
@@ -614,7 +609,7 @@ void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
   
 ### Remarks  
   
@@ -626,7 +621,7 @@ void ShowWindow(int nCmdShow);
 ```  
   
 ### Parameters  
- [in] `nCmdShow`  
+ [in] *nCmdShow*  
   
 ### Remarks  
   
@@ -638,7 +633,7 @@ void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -652,8 +647,8 @@ void StoreRecentTabRelatedInfo(
 ```  
   
 ### Parameters  
- [in] `pDockingBar`  
- [in] `pTabbedBar`  
+ [in] *pDockingBar*  
+ [in] *pTabbedBar*  
   
 ### Remarks  
   

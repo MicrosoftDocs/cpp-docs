@@ -2,19 +2,14 @@
 title: "CD2DGradientBrush Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush::CD2DGradientBrush", "AFXRENDERTARGET/CD2DGradientBrush::Destroy", "AFXRENDERTARGET/CD2DGradientBrush::m_arGradientStops", "AFXRENDERTARGET/CD2DGradientBrush::m_colorInterpolationGamma", "AFXRENDERTARGET/CD2DGradientBrush::m_extendMode", "AFXRENDERTARGET/CD2DGradientBrush::m_pGradientStops"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DGradientBrush [MFC], CD2DGradientBrush", "CD2DGradientBrush [MFC], Destroy", "CD2DGradientBrush [MFC], m_arGradientStops", "CD2DGradientBrush [MFC], m_colorInterpolationGamma", "CD2DGradientBrush [MFC], m_extendMode", "CD2DGradientBrush [MFC], m_pGradientStops"]
 ms.assetid: 5bf133e6-16b7-4e3a-845d-0ce63fafe5ec
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DGradientBrush Class
@@ -84,25 +79,25 @@ CD2DGradientBrush(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `gradientStops`  
+ *gradientStops*  
  A pointer to an array of D2D1_GRADIENT_STOP structures.  
   
- `gradientStopsCount`  
+ *gradientStopsCount*  
  A value greater than or equal to 1 that specifies the number of gradient stops in the gradientStops array.  
   
- `colorInterpolationGamma`  
+ *colorInterpolationGamma*  
  The space in which color interpolation between the gradient stops is performed.  
   
- `extendMode`  
+ *extendMode*  
  The behavior of the gradient outside the [0,1] normalized range.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  A pointer to the opacity and transformation of a brush.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="destroy"></a>  CD2DGradientBrush::Destroy  

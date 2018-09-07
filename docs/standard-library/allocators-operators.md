@@ -2,15 +2,10 @@
 title: "&lt;allocators&gt; operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["allocators/std::operator!=", "allocators/std::operator=="]
 dev_langs: ["C++"]
 ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
-caps.latest.revision: 11
-manager: "ghogen"
 ---
 # &lt;allocators&gt; operators
 
@@ -20,7 +15,7 @@ These are the global template operator functions defined in &lt;allocators&gt;. 
 |-|-|
 |[operator!=](#op_neq)|[operator==](#op_eq_eq)|
 
-##  <a name="op_neq"></a>  operator!=
+## <a name="op_neq"></a>  operator!=
 
 Tests for inequality between allocator objects of a specified class.
 
@@ -35,8 +30,8 @@ bool operator!=(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|One of the allocator objects to be tested for inequality.|
-|`right`|One of the allocator objects to be tested for inequality.|
+|*left*|One of the allocator objects to be tested for inequality.|
+|*right*|One of the allocator objects to be tested for inequality.|
 
 ### Return Value
 
@@ -46,7 +41,7 @@ bool operator!=(
 
 The template operator returns `!(left == right)`.
 
-##  <a name="op_eq_eq"></a>  operator==
+## <a name="op_eq_eq"></a>  operator==
 
 Tests for equality between allocator objects of a specified class.
 
@@ -61,8 +56,8 @@ bool operator==(
 
 |Parameter|Description|
 |---------------|-----------------|
-|`left`|One of the allocator objects to be tested for equality.|
-|`right`|One of the allocator objects to be tested for equality.|
+|*left*|One of the allocator objects to be tested for equality.|
+|*right*|One of the allocator objects to be tested for equality.|
 
 ### Return Value
 
@@ -74,4 +69,4 @@ This template operator returns `left.equals(right)`.
 
 ## See also
 
-[\<allocators>](../standard-library/allocators-header.md)  
+[\<allocators>](../standard-library/allocators-header.md)

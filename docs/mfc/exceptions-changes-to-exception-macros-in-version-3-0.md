@@ -2,18 +2,13 @@
 title: "Exceptions: Changes to Exception Macros in Version 3.0 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["C++ exception handling [MFC], upgrade considerations", "CATCH macro [MFC]", "exceptions [MFC], what's changed", "THROW_LAST macro [MFC]"]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exceptions: Changes to Exception Macros in Version 3.0
@@ -38,13 +33,13 @@ This is an advanced topic.
   
  [!code-cpp[NVC_MFCExceptions#19](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_2.cpp)]  
   
- is thrown as a **CException\***, even though it is constructed as a **CCustomException**. The **CATCH** macro in MFC versions 2.5 and earlier uses `CObject::IsKindOf` to test the type at run time. Because the expression  
+ is thrown as a `CException*`, even though it is constructed as a `CCustomException`. The **CATCH** macro in MFC versions 2.5 and earlier uses `CObject::IsKindOf` to test the type at run time. Because the expression  
   
  [!code-cpp[NVC_MFCExceptions#20](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_3.cpp)]  
   
  is true, the first catch block catches the exception. In version 3.0, which uses C++ exceptions to implement many of the exception-handling macros, the second catch block matches the thrown `CException`.  
   
- Code like this is uncommon. It usually appears when an exception object is passed to another function that accepts a generic **CException\***, performs "pre-throw" processing, and finally throws the exception.  
+ Code like this is uncommon. It usually appears when an exception object is passed to another function that accepts a generic `CException*`, performs "pre-throw" processing, and finally throws the exception.  
   
  To work around this problem, move the throw expression from the function to the calling code and throw an exception of the actual type known to the compiler at the time the exception is generated.  
   
@@ -55,7 +50,7 @@ This is an advanced topic.
   
  [!code-cpp[NVC_MFCExceptions#2](../mfc/codesnippet/cpp/exceptions-changes-to-exception-macros-in-version-3-0_4.cpp)]  
   
- Using **THROW** in the catch block causes the pointer `e` to be deleted, so that the outer catch site will receive an invalid pointer. Use `THROW_LAST` to re-throw `e`.  
+ Using **THROW** in the catch block causes the pointer `e` to be deleted, so that the outer catch site will receive an invalid pointer. Use **THROW_LAST** to re-throw `e`.  
   
  For more information, see [Exceptions: Catching and Deleting Exceptions](../mfc/exceptions-catching-and-deleting-exceptions.md).  
   

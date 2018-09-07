@@ -2,19 +2,14 @@
 title: "CMFCDesktopAlertWndInfo Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_hIcon", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_nURLCmdID", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strText", "AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strURL"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDesktopAlertWndInfo [MFC], m_hIcon", "CMFCDesktopAlertWndInfo [MFC], m_nURLCmdID", "CMFCDesktopAlertWndInfo [MFC], m_strText", "CMFCDesktopAlertWndInfo [MFC], m_strURL"]
 ms.assetid: 5c9bb84e-6c96-4748-8e74-6951b6ae8e84
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertWndInfo Class
@@ -72,14 +67,14 @@ class CMFCDesktopAlertWndInfo
  **Header:** afxDesktopAlertDialog.h  
   
 ##  <a name="operator_eq"></a>  CMFCDesktopAlertWndInfo::operator=  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 CMFCDesktopAlertWndInfo& operator=(CMFCDesktopAlertWndInfo& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
   
 ### Return Value  
   

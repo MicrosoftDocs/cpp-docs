@@ -2,18 +2,13 @@
 title: "Reference-Type Function Returns | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["function return types [C++], reference type", "data types [C++], function return types", "functions [C++], return types"]
 ms.assetid: 5b73be1d-2dc7-41df-ab0a-adcba36f2ad1
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Reference-Type Function Returns
@@ -32,7 +27,7 @@ Functions can be declared to return a reference type. There are two reasons to m
 ## Example  
  Consider the `Point` example:  
   
-```  
+```cpp 
 // refType_function_returns.cpp  
 // compile with: /EHsc  
   
@@ -76,7 +71,7 @@ cout << "x = " << ThePoint.x() << "\n"
   
 ## Output  
   
-```  
+```Output  
 x = 7  
 y = 9  
 ```  
@@ -87,7 +82,7 @@ y = 9
   
  Declarations of reference types must contain initializers except in the following cases:  
   
--   Explicit `extern` declaration  
+-   Explicit **extern** declaration  
   
 -   Declaration of a class member  
   
@@ -98,7 +93,7 @@ y = 9
 ## Caution returning address of local  
  If you declare an object at local scope, that object will be destroyed when the function returns. If the function returns a reference to that object, that reference will probably cause an access violation at runtime if the caller attempts to use the null reference.  
   
-```  
+```cpp 
 // C4172 means Don’t do this!!!  
 Foo& GetFoo()  
 {  
@@ -110,5 +105,5 @@ Foo& GetFoo()
   
  The compiler issues a warning in this case: `warning C4172: returning address of local variable or temporary`. In simple programs it is possible that occasionally no access violation will occur if the reference is accessed by the caller before the memory location is overwritten. This is due to sheer luck. Heed the warning.  
   
-## See Also  
+## See also  
  [References](../cpp/references-cpp.md)

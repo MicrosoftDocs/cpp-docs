@@ -2,19 +2,14 @@
 title: "CGopherLocator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CGopherLocator", "AFXINET/CGopherLocator", "AFXINET/CGopherLocator::CGopherLocator", "AFXINET/CGopherLocator::GetLocatorType"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CGopherLocator [MFC], CGopherLocator", "CGopherLocator [MFC], GetLocatorType"]
 ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CGopherLocator Class
@@ -74,7 +69,7 @@ CGopherLocator(const CGopherLocator& ref);
 ```  
   
 ### Parameters  
- `ref`  
+ *ref*  
  A reference to a constant `CGopherLocator` object.  
   
 ### Remarks  
@@ -89,10 +84,10 @@ BOOL GetLocatorType(DWORD& dwRef) const;
   
 ### Parameters  
  *dwRef*  
- A reference to a `DWORD` that will receive the locator type. See **Remarks** for a table of locator types.  
+ A reference to a DWORD that will receive the locator type. See **Remarks** for a table of locator types.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
+ Nonzero if successful; otherwise 0. If the call fails, the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) may be called to determine the cause of the error.  
   
 ### Remarks  
  The possible types are as follows:  

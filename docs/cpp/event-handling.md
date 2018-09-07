@@ -2,18 +2,13 @@
 title: "Event Handling | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["attributes [C++], event handling", "intrinsic functions [C++], event handling", "event handling [C++], Visual C++"]
 ms.assetid: 82de3f9a-2d88-470c-9527-8a5b54c8ced4
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Event Handling
@@ -34,7 +29,6 @@ Event handling is primarily supported for COM classes (C++ classes that implemen
 |[__hook](../cpp/hook.md)|Associates a handler method with an event.|  
 |[__unhook](../cpp/unhook.md)|Dissociates a handler method from an event.|  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [Keywords](../cpp/keywords-cpp.md)   
- [Event Handling Samples](http://msdn.microsoft.com/en-us/cc0287d4-f92b-4da5-85fc-a0f186e16424)

@@ -2,19 +2,14 @@
 title: "_AddressOfReturnAddress | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_AddressOfReturnAddress_cpp", "_AddressOfReturnAddress"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_AddressOfReturnAddress intrinsic", "AddressOfReturnAddress intrinsic"]
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _AddressOfReturnAddress
@@ -32,7 +27,7 @@ void * _AddressOfReturnAddress();
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_AddressOfReturnAddress`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_AddressOfReturnAddress`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

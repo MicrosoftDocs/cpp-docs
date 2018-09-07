@@ -2,18 +2,13 @@
 title: "Windows Sockets: Background | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["record-oriented data [MFC]", "e-mail [MFC]", "Internet Protocol Suite", "mail [MFC]", "communications [MFC], domain", "Windows Sockets [MFC], stream sockets", "mail [MFC], programming for", "sockets [MFC], stream sockets", "datagram sockets [MFC]", "SOCKET handle", "data types [MFC], socket", "e-mail [MFC], programming for", "X Window servers", "sequenced data flow", "stream sockets [MFC]"]
 ms.assetid: f60d4ed2-bf23-4a0e-98d2-fee77e8473dd
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Windows Sockets: Background

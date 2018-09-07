@@ -2,19 +2,14 @@
 title: "CToolBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CToolBar", "AFXEXT/CToolBar", "AFXEXT/CToolBar::CToolBar", "AFXEXT/CToolBar::CommandToIndex", "AFXEXT/CToolBar::Create", "AFXEXT/CToolBar::CreateEx", "AFXEXT/CToolBar::GetButtonInfo", "AFXEXT/CToolBar::GetButtonStyle", "AFXEXT/CToolBar::GetButtonText", "AFXEXT/CToolBar::GetItemID", "AFXEXT/CToolBar::GetItemRect", "AFXEXT/CToolBar::GetToolBarCtrl", "AFXEXT/CToolBar::LoadBitmap", "AFXEXT/CToolBar::LoadToolBar", "AFXEXT/CToolBar::SetBitmap", "AFXEXT/CToolBar::SetButtonInfo", "AFXEXT/CToolBar::SetButtons", "AFXEXT/CToolBar::SetButtonStyle", "AFXEXT/CToolBar::SetButtonText", "AFXEXT/CToolBar::SetHeight", "AFXEXT/CToolBar::SetSizes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CToolBar [MFC], CToolBar", "CToolBar [MFC], CommandToIndex", "CToolBar [MFC], Create", "CToolBar [MFC], CreateEx", "CToolBar [MFC], GetButtonInfo", "CToolBar [MFC], GetButtonStyle", "CToolBar [MFC], GetButtonText", "CToolBar [MFC], GetItemID", "CToolBar [MFC], GetItemRect", "CToolBar [MFC], GetToolBarCtrl", "CToolBar [MFC], LoadBitmap", "CToolBar [MFC], LoadToolBar", "CToolBar [MFC], SetBitmap", "CToolBar [MFC], SetButtonInfo", "CToolBar [MFC], SetButtons", "CToolBar [MFC], SetButtonStyle", "CToolBar [MFC], SetButtonText", "CToolBar [MFC], SetHeight", "CToolBar [MFC], SetSizes"]
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CToolBar Class
@@ -60,7 +55,7 @@ class CToolBar : public CControlBar
 ## Remarks  
  The buttons can act like pushbuttons, check-box buttons, or radio buttons. `CToolBar` objects are usually embedded members of frame-window objects derived from the class [CFrameWnd](../../mfc/reference/cframewnd-class.md) or [CMDIFrameWnd](../../mfc/reference/cmdiframewnd-class.md).  
   
- [CToolBar::GetToolBarCtrl](#gettoolbarctrl), a member function new to MFC 4.0, allows you to take advantage of the Windows common control's support for toolbar customization and additional functionality. `CToolBar` member functions give you most of the functionality of the Windows common controls; however, when you call `GetToolBarCtrl`, you can give your toolbars even more of the characteristics of Windows 95/98 toolbars. When you call `GetToolBarCtrl`, it will return a reference to a `CToolBarCtrl` object. See [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) for more information about designing toolbars using Windows common controls. For more general information about common controls, see [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the Windows SDK.  
+ [CToolBar::GetToolBarCtrl](#gettoolbarctrl), a member function new to MFC 4.0, allows you to take advantage of the Windows common control's support for toolbar customization and additional functionality. `CToolBar` member functions give you most of the functionality of the Windows common controls; however, when you call `GetToolBarCtrl`, you can give your toolbars even more of the characteristics of Windows 95/98 toolbars. When you call `GetToolBarCtrl`, it will return a reference to a `CToolBarCtrl` object. See [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) for more information about designing toolbars using Windows common controls. For more general information about common controls, see [Common Controls](/windows/desktop/Controls/common-controls-intro) in the Windows SDK.  
   
  Visual C++ provides you with two methods to create a toolbar. To create a toolbar resource using the Resource Editor, follow these steps:  
   
@@ -84,7 +79,7 @@ class CToolBar : public CControlBar
   
  All the button images in the toolbar are taken from one bitmap, which must contain one image for each button. All images must be the same size; the default is 16 pixels wide and 15 pixels high. Images must be side by side in the bitmap.  
   
- The `SetButtons` function takes a pointer to an array of control IDs and an integer that specifies the number of elements in the array. The function sets each button's ID to the value of the corresponding element of the array and assigns each button an image index, which specifies the position of the button's image in the bitmap. If an array element has the value **ID_SEPARATOR**, no image index is assigned.  
+ The `SetButtons` function takes a pointer to an array of control IDs and an integer that specifies the number of elements in the array. The function sets each button's ID to the value of the corresponding element of the array and assigns each button an image index, which specifies the position of the button's image in the bitmap. If an array element has the value ID_SEPARATOR, no image index is assigned.  
   
  The order of the images in the bitmap is typically the order in which they are drawn on the screen, but you can use the [SetButtonInfo](#setbuttoninfo) function to change the relationship between image order and drawing order.  
   
@@ -101,9 +96,9 @@ class CToolBar : public CControlBar
   
  To assign text to appear on a button, call [GetButtonText](#getbuttontext) to retrieve the text to appear on the button, and then call [SetButtonText](#setbuttontext) to set the text.  
   
- To create a check-box button, assign it the style **TBBS_CHECKBOX** or use a `CCmdUI` object's `SetCheck` member function in an `ON_UPDATE_COMMAND_UI` handler. Calling `SetCheck` turns a pushbutton into a check-box button. Pass `SetCheck` an argument of 0 for unchecked, 1 for checked, or 2 for indeterminate.  
+ To create a check-box button, assign it the style TBBS_CHECKBOX or use a `CCmdUI` object's `SetCheck` member function in an ON_UPDATE_COMMAND_UI handler. Calling `SetCheck` turns a pushbutton into a check-box button. Pass `SetCheck` an argument of 0 for unchecked, 1 for checked, or 2 for indeterminate.  
   
- To create a radio button, call a [CCmdUI](../../mfc/reference/ccmdui-class.md) object's [SetRadio](../../mfc/reference/ccmdui-class.md#setradio) member function from an `ON_UPDATE_COMMAND_UI` handler. Pass `SetRadio` an argument of 0 for unchecked or nonzero for checked. In order to provide a radio group's mutually exclusive behavior, you must have `ON_UPDATE_COMMAND_UI` handlers for all of the buttons in the group.  
+ To create a radio button, call a [CCmdUI](../../mfc/reference/ccmdui-class.md) object's [SetRadio](../../mfc/reference/ccmdui-class.md#setradio) member function from an ON_UPDATE_COMMAND_UI handler. Pass `SetRadio` an argument of 0 for unchecked or nonzero for checked. In order to provide a radio group's mutually exclusive behavior, you must have ON_UPDATE_COMMAND_UI handlers for all of the buttons in the group.  
   
  For more information on using `CToolBar`, see the article [MFC Toolbar Implementation](../../mfc/mfc-toolbar-implementation.md) and [Technical Note 31: Control Bars](../../mfc/tn031-control-bars.md).  
   
@@ -129,7 +124,7 @@ int CommandToIndex(UINT nIDFind) const;
 ```  
   
 ### Parameters  
- `nIDFind`  
+ *nIDFind*  
  Command ID of a toolbar button.  
   
 ### Return Value  
@@ -146,31 +141,31 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pParentWnd`  
+ *pParentWnd*  
  Pointer to the window that is the toolbar's parent.  
   
- `dwStyle`  
+ *dwStyle*  
  The toolbar style. Additional toolbar styles supported are:  
   
-- `CBRS_TOP` Control bar is at top of the frame window.  
+- CBRS_TOP Control bar is at top of the frame window.  
   
-- `CBRS_BOTTOM` Control bar is at bottom of the frame window.  
+- CBRS_BOTTOM Control bar is at bottom of the frame window.  
   
-- `CBRS_NOALIGN` Control bar is not repositioned when the parent is resized.  
+- CBRS_NOALIGN Control bar is not repositioned when the parent is resized.  
   
-- `CBRS_TOOLTIPS` Control bar displays tool tips.  
+- CBRS_TOOLTIPS Control bar displays tool tips.  
   
-- **CBRS_SIZE_DYNAMIC** Control bar is dynamic.  
+- CBRS_SIZE_DYNAMIC Control bar is dynamic.  
   
-- **CBRS_SIZE_FIXED** Control bar is fixed.  
+- CBRS_SIZE_FIXED Control bar is fixed.  
   
-- **CBRS_FLOATING** Control bar is floating.  
+- CBRS_FLOATING Control bar is floating.  
   
-- `CBRS_FLYBY` Status bar displays information about the button.  
+- CBRS_FLYBY Status bar displays information about the button.  
   
-- **CBRS_HIDE_INPLACE** Control bar is not displayed to the user.  
+- CBRS_HIDE_INPLACE Control bar is not displayed to the user.  
   
- `nID`  
+ *nID*  
  The toolbar's child-window ID.  
   
 ### Return Value  
@@ -199,19 +194,19 @@ virtual BOOL CreateEx(
 ```  
   
 ### Parameters  
- `pParentWnd`  
+ *pParentWnd*  
  Pointer to the window that is the toolbar's parent.  
   
- `dwCtrlStyle`  
- Additional styles for the creation of the embedded [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) object. By default, this value is set to **TBSTYLE_FLAT**. For a complete list of toolbar styles, see `dwStyle`.  
+ *dwCtrlStyle*  
+ Additional styles for the creation of the embedded [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) object. By default, this value is set to TBSTYLE_FLAT. For a complete list of toolbar styles, see *dwStyle*.  
   
- `dwStyle`  
- The toolbar style. See [Toolbar Control and Button Styles](http://msdn.microsoft.com/library/windows/desktop/bb760439) in the Windows SDK for a list of appropriate styles.  
+ *dwStyle*  
+ The toolbar style. See [Toolbar Control and Button Styles](/windows/desktop/Controls/toolbar-control-and-button-styles) in the Windows SDK for a list of appropriate styles.  
   
  *rcBorders*  
  A [CRect](../../atl-mfc-shared/reference/crect-class.md) object that defines the widths of the toolbar window borders. These borders are set to 0,0,0,0 by default, thereby resulting in a toolbar window with no borders.  
   
- `nID`  
+ *nID*  
  The toolbar's child-window ID.  
   
 ### Return Value  
@@ -220,7 +215,7 @@ virtual BOOL CreateEx(
 ### Remarks  
  It also sets the toolbar height to a default value.  
   
- Use `CreateEx`, instead of [Create](#create), when certain styles need to be present during the creation of the embedded tool bar control. For example, set `dwCtrlStyle` to **TBSTYLE_FLAT &#124; TBSTYLE_TRANSPARENT** to create a toolbar that resembles the Internet Explorer 4 toolbars.  
+ Use `CreateEx`, instead of [Create](#create), when certain styles need to be present during the creation of the embedded tool bar control. For example, set *dwCtrlStyle* to TBSTYLE_FLAT &#124; TBSTYLE_TRANSPARENT to create a toolbar that resembles the Internet Explorer 4 toolbars.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#180](../../mfc/codesnippet/cpp/ctoolbar-class_2.cpp)]  
@@ -247,22 +242,22 @@ void GetButtonInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the toolbar button or separator whose information is to be retrieved.  
   
- `nID`  
- Reference to a **UINT** that is set to the command ID of the button.  
+ *nID*  
+ Reference to a UINT that is set to the command ID of the button.  
   
- `nStyle`  
- Reference to a **UINT** that is set to the style of the button.  
+ *nStyle*  
+ Reference to a UINT that is set to the style of the button.  
   
- `iImage`  
+ *iImage*  
  Reference to an integer that is set to the index of the button's image within the bitmap.  
   
 ### Remarks  
- Those values are assigned to the variables referenced by `nID`, `nStyle`, and `iImage`. The image index is the position of the image within the bitmap that contains images for all the toolbar buttons. The first image is at position 0.  
+ Those values are assigned to the variables referenced by *nID*, *nStyle*, and *iImage*. The image index is the position of the image within the bitmap that contains images for all the toolbar buttons. The first image is at position 0.  
   
- If `nIndex` specifies a separator, `iImage` is set to the separator width in pixels.  
+ If *nIndex* specifies a separator, *iImage* is set to the separator width in pixels.  
   
 ##  <a name="getbuttonstyle"></a>  CToolBar::GetButtonStyle  
  Call this member function to retrieve the style of a button or separator on the toolbar.  
@@ -272,11 +267,11 @@ UINT GetButtonStyle(int nIndex) const;
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The index of the toolbar button or separator style to be retrieved.  
   
 ### Return Value  
- The style of the button or separator specified by `nIndex`.  
+ The style of the button or separator specified by *nIndex*.  
   
 ### Remarks  
  A button's style determines how the button appears and how it responds to user input. See [SetButtonStyle](#setbuttonstyle) for examples of button styles.  
@@ -293,10 +288,10 @@ void GetButtonText(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the text to be retrieved.  
   
- `rString`  
+ *rString*  
  A reference to a [CString](../../atl-mfc-shared/reference/cstringt-class.md) object that will contain the text to be retrieved.  
   
 ### Return Value  
@@ -306,24 +301,24 @@ void GetButtonText(
  The second form of this member function fills a `CString` object with the string text.  
   
 ##  <a name="getitemid"></a>  CToolBar::GetItemID  
- This member function returns the command ID of the button or separator specified by `nIndex`.  
+ This member function returns the command ID of the button or separator specified by *nIndex*.  
   
 ```  
 UINT GetItemID(int nIndex) const;  
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the item whose ID is to be retrieved.  
   
 ### Return Value  
- The command ID of the button or separator specified by `nIndex`.  
+ The command ID of the button or separator specified by *nIndex*.  
   
 ### Remarks  
- Separators return **ID_SEPARATOR**.  
+ Separators return ID_SEPARATOR.  
   
 ##  <a name="getitemrect"></a>  CToolBar::GetItemRect  
- This member function fills the `RECT` structure whose address is contained in `lpRect` with the coordinates of the button or separator specified by `nIndex`.  
+ This member function fills the `RECT` structure whose address is contained in *lpRect* with the coordinates of the button or separator specified by *nIndex*.  
   
 ```  
 virtual void GetItemRect(
@@ -332,10 +327,10 @@ virtual void GetItemRect(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the item (button or separator) whose rectangle coordinates are to be retrieved.  
   
- `lpRect`  
+ *lpRect*  
  Address of the [RECT](../../mfc/reference/rect-structure1.md) structure that will contain the item's coordinates.  
   
 ### Remarks  
@@ -359,7 +354,7 @@ CToolBarCtrl& GetToolBarCtrl() const;
 ### Remarks  
  Use `GetToolBarCtrl` to take advantage of the functionality of the Windows toolbar common control, and to take advantage of the support [CToolBarCtrl](../../mfc/reference/ctoolbarctrl-class.md) provides for toolbar customization.  
   
- For more information about using common controls, see the article [Controls](../../mfc/controls-mfc.md) and [Common Controls](http://msdn.microsoft.com/library/windows/desktop/bb775493) in the Windows SDK.  
+ For more information about using common controls, see the article [Controls](../../mfc/controls-mfc.md) and [Common Controls](/windows/desktop/Controls/common-controls-intro) in the Windows SDK.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocViewSDI#15](../../mfc/codesnippet/cpp/ctoolbar-class_3.cpp)]  
@@ -373,10 +368,10 @@ BOOL LoadBitmap(UINT nIDResource);
 ```  
   
 ### Parameters  
- `lpszResourceName`  
+ *lpszResourceName*  
  Pointer to the resource name of the bitmap to be loaded.  
   
- `nIDResource`  
+ *nIDResource*  
  Resource ID of the bitmap to be loaded.  
   
 ### Return Value  
@@ -389,7 +384,7 @@ BOOL LoadBitmap(UINT nIDResource);
 > `CToolBar` supports bitmaps with a maximum of 16 colors. When you load an image into a toolbar editor, Visual Studio automatically converts the image to a 16-color bitmap, if necessary, and displays a warning message if the image was converted. If you use an image with more than 16 colors (using an external editor to edit the image), the application might behave unexpectedly.  
   
 ##  <a name="loadtoolbar"></a>  CToolBar::LoadToolBar  
- Call this member function to load the toolbar specified by `lpszResourceName` or `nIDResource`.  
+ Call this member function to load the toolbar specified by *lpszResourceName* or *nIDResource*.  
   
 ```  
 BOOL LoadToolBar(LPCTSTR lpszResourceName);  
@@ -397,10 +392,10 @@ BOOL LoadToolBar(UINT nIDResource);
 ```  
   
 ### Parameters  
- `lpszResourceName`  
+ *lpszResourceName*  
  Pointer to the resource name of the toolbar to be loaded.  
   
- `nIDResource`  
+ *nIDResource*  
  Resource ID of the toolbar to be loaded.  
   
 ### Return Value  
@@ -441,44 +436,44 @@ void SetButtonInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Zero-based index of the button or separator for which information is to be set.  
   
- `nID`  
+ *nID*  
  The value to which the button's command ID is set.  
   
- `nStyle`  
+ *nStyle*  
  The new button style. The following button styles are supported:  
   
-- **TBBS_BUTTON** Standard pushbutton (default)  
+- TBBS_BUTTON Standard pushbutton (default)  
   
-- **TBBS_SEPARATOR** Separator  
+- TBBS_SEPARATOR Separator  
   
-- **TBBS_CHECKBOX** Auto check-box button  
+- TBBS_CHECKBOX Auto check-box button  
   
-- **TBBS_GROUP** Marks the start of a group of buttons  
+- TBBS_GROUP Marks the start of a group of buttons  
   
-- **TBBS_CHECKGROUP** Marks the start of a group of check-box buttons  
+- TBBS_CHECKGROUP Marks the start of a group of check-box buttons  
   
-- **TBBS_DROPDOWN** Creates a drop-down list button.  
+- TBBS_DROPDOWN Creates a drop-down list button.  
   
-- **TBBS_AUTOSIZE** The button's width will be calculated based on the text of the button, not on the size of the image.  
+- TBBS_AUTOSIZE The button's width will be calculated based on the text of the button, not on the size of the image.  
   
-- **TBBS_NOPREFIX** The button text will not have an accelerator prefix associated with it.  
+- TBBS_NOPREFIX The button text will not have an accelerator prefix associated with it.  
   
- `iImage`  
+ *iImage*  
  New index for the button's image within the bitmap.  
   
 ### Remarks  
- For separators, which have the style **TBBS_SEPARATOR**, this function sets the separator's width in pixels to the value stored in `iImage`.  
+ For separators, which have the style TBBS_SEPARATOR, this function sets the separator's width in pixels to the value stored in *iImage*.  
   
 > [!NOTE]
->  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonInfo` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
+>  You can also set button states using the *nStyle* parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonInfo` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
   
  For information on bitmap images and buttons, see the [CToolBar](../../mfc/reference/ctoolbar-class.md) Overview and [CToolBar::LoadBitmap](#loadbitmap).  
   
 ##  <a name="setbuttons"></a>  CToolBar::SetButtons  
- This member function sets each toolbar button's command ID to the value specified by the corresponding element of the array `lpIDArray`.  
+ This member function sets each toolbar button's command ID to the value specified by the corresponding element of the array *lpIDArray*.  
   
 ```  
 BOOL SetButtons(
@@ -487,21 +482,21 @@ BOOL SetButtons(
 ```  
   
 ### Parameters  
- `lpIDArray`  
- Pointer to an array of command Ids. It can be **NULL** to allocate empty buttons.  
+ *lpIDArray*  
+ Pointer to an array of command Ids. It can be NULL to allocate empty buttons.  
   
- `nIDCount`  
- Number of elements in the array pointed to by `lpIDArray`.  
+ *nIDCount*  
+ Number of elements in the array pointed to by *lpIDArray*.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- If an element of the array has the value **ID_SEPARATOR**, a separator is created in the corresponding position of the toolbar. This function also sets each button's style to **TBBS_BUTTON** and each separator's style to **TBBS_SEPARATOR**, and assigns an image index to each button. The image index specifies the position of the button's image within the bitmap.  
+ If an element of the array has the value ID_SEPARATOR, a separator is created in the corresponding position of the toolbar. This function also sets each button's style to TBBS_BUTTON and each separator's style to TBBS_SEPARATOR, and assigns an image index to each button. The image index specifies the position of the button's image within the bitmap.  
   
  You do not need to account for separators in the bitmap because this function does not assign image indexes for separators. If your toolbar has buttons at positions 0, 1, and 3 and a separator at position 2, the images at positions 0, 1, and 2 in your bitmap are assigned to the buttons at positions 0, 1, and 3, respectively.  
   
- If `lpIDArray` is **NULL**, this function allocates space for the number of items specified by `nIDCount`. Use [SetButtonInfo](#setbuttoninfo) to set each item's attributes.  
+ If *lpIDArray* is NULL, this function allocates space for the number of items specified by *nIDCount*. Use [SetButtonInfo](#setbuttoninfo) to set each item's attributes.  
   
 ##  <a name="setbuttonstyle"></a>  CToolBar::SetButtonStyle  
  Call this member function to set the style of a button or separator, or to group buttons.  
@@ -513,27 +508,27 @@ void SetButtonStyle(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the button or separator whose information is to be set.  
   
- `nStyle`  
+ *nStyle*  
  The button style. The following button styles are supported:  
   
-- **TBBS_BUTTON** Standard pushbutton (default)  
+- TBBS_BUTTON Standard pushbutton (default)  
   
-- **TBBS_SEPARATOR** Separator  
+- TBBS_SEPARATOR Separator  
   
-- **TBBS_CHECKBOX** Auto check-box button  
+- TBBS_CHECKBOX Auto check-box button  
   
-- **TBBS_GROUP** Marks the start of a group of buttons  
+- TBBS_GROUP Marks the start of a group of buttons  
   
-- **TBBS_CHECKGROUP** Marks the start of a group of check-box buttons  
+- TBBS_CHECKGROUP Marks the start of a group of check-box buttons  
   
-- **TBBS_DROPDOWN** Creates a drop-down list button  
+- TBBS_DROPDOWN Creates a drop-down list button  
   
-- **TBBS_AUTOSIZE** The button's width will be calculated based on the text of the button, not on the size of the image  
+- TBBS_AUTOSIZE The button's width will be calculated based on the text of the button, not on the size of the image  
   
-- **TBBS_NOPREFIX** The button text will not have an accelerator prefix associated with it  
+- TBBS_NOPREFIX The button text will not have an accelerator prefix associated with it  
   
 ### Remarks  
  A button's style determines how the button appears and how it responds to user input.  
@@ -541,7 +536,7 @@ void SetButtonStyle(
  Before calling `SetButtonStyle`, call the [GetButtonStyle](#getbuttonstyle) member function to retrieve the button or separator style.  
   
 > [!NOTE]
->  You can also set button states using the `nStyle` parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonStyle` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
+>  You can also set button states using the *nStyle* parameter; however, because button states are controlled by the [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) handler, any state you set using `SetButtonStyle` will be lost during the next idle processing. See [How to Update User-Interface Objects](../../mfc/how-to-update-user-interface-objects.md) and [TN031: Control Bars](../../mfc/tn031-control-bars.md) for more information.  
   
 ##  <a name="setbuttontext"></a>  CToolBar::SetButtonText  
  Call this function to set the text on a button.  
@@ -553,10 +548,10 @@ BOOL SetButtonText(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  Index of the button whose text is to be set.  
   
- `lpszText`  
+ *lpszText*  
  Points to the text to be set on a button.  
   
 ### Return Value  
@@ -566,14 +561,14 @@ BOOL SetButtonText(
   See the example for [CToolBar::GetToolBarCtrl](#gettoolbarctrl).  
   
 ##  <a name="setheight"></a>  CToolBar::SetHeight  
- This member function sets the toolbar's height to the value, in pixels, specified in `cyHeight`.  
+ This member function sets the toolbar's height to the value, in pixels, specified in *cyHeight*.  
   
 ```  
 void SetHeight(int cyHeight);
 ```  
   
 ### Parameters  
- `cyHeight`  
+ *cyHeight*  
  The height in pixels of the toolbar.  
   
 ### Remarks  
@@ -594,11 +589,11 @@ void SetSizes(
  *sizeButton*  
  The size in pixels of each button.  
   
- `sizeImage`  
+ *sizeImage*  
  The size in pixels of each image.  
   
 ### Remarks  
- The `sizeImage` parameter must contain the size, in pixels, of the images in the toolbar's bitmap. The dimensions in *sizeButton* must be sufficient to hold the image plus 7 pixels extra in width and 6 pixels extra in height. This function also sets the toolbar height to fit the buttons.  
+ The *sizeImage* parameter must contain the size, in pixels, of the images in the toolbar's bitmap. The dimensions in *sizeButton* must be sufficient to hold the image plus 7 pixels extra in width and 6 pixels extra in height. This function also sets the toolbar height to fit the buttons.  
   
  Call this member function only for toolbars that do not follow *Windows Interface Guidelines for Software Design* recommendations for button and image sizes.  
   

@@ -2,19 +2,14 @@
 title: "-favor (Optimize for Architecture Specifics) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/favor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-favor compiler option [C++]", "/favor compiler option [C++]"]
 ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
-caps.latest.revision: 31
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /favor (Optimize for Architecture Specifics)
@@ -42,7 +37,7 @@ ms.workload: ["cplusplus"]
 > [!NOTE]
 >  Intel64 architecture was previously known as Extended Memory 64 Technology, and the corresponding compiler option was **/favor:EM64T**.  
   
- For information about how to program for the [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] architecture, see [x64 Software Conventions](../../build/x64-software-conventions.md).  
+ For information about how to program for the x64 architecture, see [x64 Software Conventions](../../build/x64-software-conventions.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

@@ -2,19 +2,14 @@
 title: "COleControlContainer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleControlContainer", "AFXOCC/COleControlContainer", "AFXOCC/COleControlContainer::COleControlContainer", "AFXOCC/COleControlContainer::AttachControlSite", "AFXOCC/COleControlContainer::BroadcastAmbientPropertyChange", "AFXOCC/COleControlContainer::CheckDlgButton", "AFXOCC/COleControlContainer::CheckRadioButton", "AFXOCC/COleControlContainer::CreateControl", "AFXOCC/COleControlContainer::CreateOleFont", "AFXOCC/COleControlContainer::FindItem", "AFXOCC/COleControlContainer::FreezeAllEvents", "AFXOCC/COleControlContainer::GetAmbientProp", "AFXOCC/COleControlContainer::GetDlgItem", "AFXOCC/COleControlContainer::GetDlgItemInt", "AFXOCC/COleControlContainer::GetDlgItemText", "AFXOCC/COleControlContainer::HandleSetFocus", "AFXOCC/COleControlContainer::HandleWindowlessMessage", "AFXOCC/COleControlContainer::IsDlgButtonChecked", "AFXOCC/COleControlContainer::OnPaint", "AFXOCC/COleControlContainer::OnUIActivate", "AFXOCC/COleControlContainer::OnUIDeactivate", "AFXOCC/COleControlContainer::ScrollChildren", "AFXOCC/COleControlContainer::SendDlgItemMessage", "AFXOCC/COleControlContainer::SetDlgItemInt", "AFXOCC/COleControlContainer::SetDlgItemText", "AFXOCC/COleControlContainer::m_crBack", "AFXOCC/COleControlContainer::m_crFore", "AFXOCC/COleControlContainer::m_listSitesOrWnds", "AFXOCC/COleControlContainer::m_nWindowlessControls", "AFXOCC/COleControlContainer::m_pOleFont", "AFXOCC/COleControlContainer::m_pSiteCapture", "AFXOCC/COleControlContainer::m_pSiteFocus", "AFXOCC/COleControlContainer::m_pSiteUIActive", "AFXOCC/COleControlContainer::m_pWnd", "AFXOCC/COleControlContainer::m_siteMap"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleControlContainer [MFC], COleControlContainer", "COleControlContainer [MFC], AttachControlSite", "COleControlContainer [MFC], BroadcastAmbientPropertyChange", "COleControlContainer [MFC], CheckDlgButton", "COleControlContainer [MFC], CheckRadioButton", "COleControlContainer [MFC], CreateControl", "COleControlContainer [MFC], CreateOleFont", "COleControlContainer [MFC], FindItem", "COleControlContainer [MFC], FreezeAllEvents", "COleControlContainer [MFC], GetAmbientProp", "COleControlContainer [MFC], GetDlgItem", "COleControlContainer [MFC], GetDlgItemInt", "COleControlContainer [MFC], GetDlgItemText", "COleControlContainer [MFC], HandleSetFocus", "COleControlContainer [MFC], HandleWindowlessMessage", "COleControlContainer [MFC], IsDlgButtonChecked", "COleControlContainer [MFC], OnPaint", "COleControlContainer [MFC], OnUIActivate", "COleControlContainer [MFC], OnUIDeactivate", "COleControlContainer [MFC], ScrollChildren", "COleControlContainer [MFC], SendDlgItemMessage", "COleControlContainer [MFC], SetDlgItemInt", "COleControlContainer [MFC], SetDlgItemText", "COleControlContainer [MFC], m_crBack", "COleControlContainer [MFC], m_crFore", "COleControlContainer [MFC], m_listSitesOrWnds", "COleControlContainer [MFC], m_nWindowlessControls", "COleControlContainer [MFC], m_pOleFont", "COleControlContainer [MFC], m_pSiteCapture", "COleControlContainer [MFC], m_pSiteFocus", "COleControlContainer [MFC], m_pSiteUIActive", "COleControlContainer [MFC], m_pWnd", "COleControlContainer [MFC], m_siteMap"]
 ms.assetid: f7ce9246-0fb7-4f07-a83a-6c2390d0fdf8
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleControlContainer Class
@@ -50,7 +45,7 @@ class COleControlContainer : public CCmdTarget
 |[COleControlContainer::GetDlgItem](#getdlgitem)|Retrieves the specified dialog control.|  
 |[COleControlContainer::GetDlgItemInt](#getdlgitemint)|Retrieves the value of the specified dialog control.|  
 |[COleControlContainer::GetDlgItemText](#getdlgitemtext)|Retrieves the caption of the specified dialog control.|  
-|[COleControlContainer::HandleSetFocus](#handlesetfocus)|Determines if the container handles `WM_SETFOCUS` messages.|  
+|[COleControlContainer::HandleSetFocus](#handlesetfocus)|Determines if the container handles WM_SETFOCUS messages.|  
 |[COleControlContainer::HandleWindowlessMessage](#handlewindowlessmessage)|Handles messages sent to a windowless control.|  
 |[COleControlContainer::IsDlgButtonChecked](#isdlgbuttonchecked)|Determines the state of the specified button.|  
 |[COleControlContainer::OnPaint](#onpaint)|Called to repaint a portion of the container.|  
@@ -77,7 +72,7 @@ class COleControlContainer : public CCmdTarget
 |[COleControlContainer::m_siteMap](#m_sitemap)|The site map.|  
   
 ## Remarks  
- This is done by providing support for one or more ActiveX control sites (implemented by `COleControlSite`). `COleControlContainer` fully implements the [IOleInPlaceFrame](http://msdn.microsoft.com/library/windows/desktop/ms692770) and [IOleContainer](http://msdn.microsoft.com/library/windows/desktop/ms690103) interfaces, allowing the contained ActiveX controls to fulfill their qualifications as in-place items.  
+ This is done by providing support for one or more ActiveX control sites (implemented by `COleControlSite`). `COleControlContainer` fully implements the [IOleInPlaceFrame](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceframe) and [IOleContainer](/windows/desktop/api/oleidl/nn-oleidl-iolecontainer) interfaces, allowing the contained ActiveX controls to fulfill their qualifications as in-place items.  
   
  Commonly, this class is used in conjunction with `COccManager` and `COleControlSite` to implement a custom ActiveX control container, with custom sites for one or more ActiveX controls.  
   
@@ -106,10 +101,10 @@ void AttachControlSite(
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  A pointer to a `CWnd` object.  
   
- `nIDC`  
+ *nIDC*  
  The ID of the control to be attached.  
   
 ### Remarks  
@@ -126,7 +121,7 @@ virtual void BroadcastAmbientPropertyChange(DISPID dispid);
 ```  
   
 ### Parameters  
- `dispid`  
+ *dispid*  
  The dispatch ID of the ambient property being changed.  
   
 ### Remarks  
@@ -142,17 +137,17 @@ virtual void CheckDlgButton(
 ```  
   
 ### Parameters  
- `nIDButton`  
+ *nIDButton*  
  The ID of the button to be modified.  
   
- `nCheck`  
+ *nCheck*  
  Specifies the state of the button. Can be one of the following:  
   
-- **BST_CHECKED** Sets the button state to checked.  
+- BST_CHECKED Sets the button state to checked.  
   
-- **BST_INDETERMINATE** Sets the button state to grayed, indicating an indeterminate state. Use this value only if the button has the **BS_3STATE** or **BS_AUTO3STATE** style.  
+- BST_INDETERMINATE Sets the button state to grayed, indicating an indeterminate state. Use this value only if the button has the BS_3STATE or BS_AUTO3STATE style.  
   
-- **BST_UNCHECKED** Sets the button state to cleared.  
+- BST_UNCHECKED Sets the button state to cleared.  
   
 ##  <a name="checkradiobutton"></a>  COleControlContainer::CheckRadioButton  
  Selects a specified radio button in a group and clears the remaining buttons in the group.  
@@ -165,13 +160,13 @@ virtual void CheckRadioButton(
 ```  
   
 ### Parameters  
- `nIDFirstButton`  
+ *nIDFirstButton*  
  Specifies the identifier of the first radio button in the group.  
   
- `nIDLastButton`  
+ *nIDLastButton*  
  Specifies the identifier of the last radio button in the group.  
   
- `nIDCheckButton`  
+ *nIDCheckButton*  
  Specifies the identifier of the radio button to be checked.  
   
 ##  <a name="colecontrolcontainer"></a>  COleControlContainer::COleControlContainer  
@@ -182,7 +177,7 @@ explicit COleControlContainer(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  A pointer to the parent window of the control container.  
   
 ### Remarks  
@@ -220,57 +215,57 @@ BOOL CreateControl(
 ```  
   
 ### Parameters  
- `pWndCtrl`  
+ *pWndCtrl*  
  A pointer to the window object representing the control.  
   
- `clsid`  
+ *clsid*  
  The unique class ID of the control.  
   
- `lpszWindowName`  
- A pointer to the text to be displayed in the control. Sets the value of the control's Caption or Text property (if any). If **NULL**, the control's Caption or Text property is not changed.  
+ *lpszWindowName*  
+ A pointer to the text to be displayed in the control. Sets the value of the control's Caption or Text property (if any). If NULL, the control's Caption or Text property is not changed.  
   
- `dwStyle`  
+ *dwStyle*  
  Windows styles. The available styles are listed under the **Remarks** section.  
   
- `rect`  
+ *rect*  
  Specifies the control's size and position. It can be either a `CRect` object or a `RECT` structure.  
   
- `nID`  
+ *nID*  
  Specifies the control's child window ID.  
   
- `pPersist`  
- A pointer to a `CFile` containing the persistent state for the control. The default value is **NULL**, indicating that the control initializes itself without restoring its state from any persistent storage. If not **NULL**, it should be a pointer to a `CFile`-derived object that contains the control's persistent data, in the form of either a stream or a storage. This data could have been saved in a previous activation of the client. The `CFile` can contain other data, but must have its read-write pointer set to the first byte of persistent data at the time of the call to `CreateControl`.  
+ *pPersist*  
+ A pointer to a `CFile` containing the persistent state for the control. The default value is NULL, indicating that the control initializes itself without restoring its state from any persistent storage. If not NULL, it should be a pointer to a `CFile`-derived object that contains the control's persistent data, in the form of either a stream or a storage. This data could have been saved in a previous activation of the client. The `CFile` can contain other data, but must have its read-write pointer set to the first byte of persistent data at the time of the call to `CreateControl`.  
   
- `bStorage`  
- Indicates whether the data in `pPersist` should be interpreted as `IStorage` or `IStream` data. If the data in `pPersist` is a storage, `bStorage` should be **TRUE**. If the data in `pPersist` is a stream, `bStorage` should be **FALSE**. The default value is **FALSE**.  
+ *bStorage*  
+ Indicates whether the data in *pPersist* should be interpreted as `IStorage` or `IStream` data. If the data in *pPersist* is a storage, *bStorage* should be TRUE. If the data in *pPersist* is a stream, *bStorage* should be FALSE. The default value is FALSE.  
   
- `bstrLicKey`  
- Optional license key data. This data is needed only for creating controls that require a run-time license key. If the control supports licensing, you must provide a license key for the creation of the control to succeed. The default value is **NULL**.  
+ *bstrLicKey*  
+ Optional license key data. This data is needed only for creating controls that require a run-time license key. If the control supports licensing, you must provide a license key for the creation of the control to succeed. The default value is NULL.  
   
  *ppNewSite*  
- A pointer to the existing control site that will host the control being created. The default value is **NULL**, indicating that a new control site will be automatically created and attached to the new control.  
+ A pointer to the existing control site that will host the control being created. The default value is NULL, indicating that a new control site will be automatically created and attached to the new control.  
   
- `ppt`  
- A pointer to a **POINT** structure that contains the upper-left corner of the control. The size of the control is determined by the value of *psize*. The `ppt` and *psize* values are an optional method of specifying the size and position of the control.  
+ *ppt*  
+ A pointer to a `POINT` structure that contains the upper-left corner of the control. The size of the control is determined by the value of *psize*. The *ppt* and *psize* values are an optional method of specifying the size and position of the control.  
   
  *psize*  
- A pointer to a **SIZE** structure that contains the size of the control. The upper-left corner is determined by the value of `ppt`. The `ppt` and *psize* values are an optional method of specifying the size and position of the control.  
+ A pointer to a `SIZE` structure that contains the size of the control. The upper-left corner is determined by the value of *ppt*. The *ppt* and *psize* values are an optional method of specifying the size and position of the control.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Only a subset of the Windows `dwStyle` flags are supported by `CreateControl`:  
+ Only a subset of the Windows *dwStyle* flags are supported by `CreateControl`:  
   
-- **WS_VISIBLE** Creates a window that is initially visible. Required if you want the control to be visible immediately, like ordinary windows.  
+- WS_VISIBLE Creates a window that is initially visible. Required if you want the control to be visible immediately, like ordinary windows.  
   
-- **WS_DISABLED** Creates a window that is initially disabled. A disabled window cannot receive input from the user. Can be set if the control has an Enabled property.  
+- WS_DISABLED Creates a window that is initially disabled. A disabled window cannot receive input from the user. Can be set if the control has an Enabled property.  
   
-- `WS_BORDER` Creates a window with a thin-line border. Can be set if control has a BorderStyle property.  
+- WS_BORDER Creates a window with a thin-line border. Can be set if control has a BorderStyle property.  
   
-- **WS_GROUP** Specifies the first control of a group of controls. The user can change the keyboard focus from one control in the group to the next by using the direction keys. All controls defined with the **WS_GROUP** style after the first control belong to the same group. The next control with the **WS_GROUP** style ends the group and starts the next group.  
+- WS_GROUP Specifies the first control of a group of controls. The user can change the keyboard focus from one control in the group to the next by using the direction keys. All controls defined with the WS_GROUP style after the first control belong to the same group. The next control with the WS_GROUP style ends the group and starts the next group.  
   
-- **WS_TABSTOP** Specifies a control that can receive the keyboard focus when the user presses the TAB key. Pressing the TAB key changes the keyboard focus to the next control of the **WS_TABSTOP** style.  
+- WS_TABSTOP Specifies a control that can receive the keyboard focus when the user presses the TAB key. Pressing the TAB key changes the keyboard focus to the next control of the WS_TABSTOP style.  
   
  Use the second overload to create default-sized controls.  
   
@@ -282,7 +277,7 @@ void CreateOleFont(CFont* pFont);
 ```  
   
 ### Parameters  
- `pFont`  
+ *pFont*  
  A pointer to the font to be used by the control container.  
   
 ##  <a name="finditem"></a>  COleControlContainer::FindItem  
@@ -293,7 +288,7 @@ virtual COleControlSite* FindItem(UINT nID) const;
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The identifier of the item to be found.  
   
 ### Return Value  
@@ -307,7 +302,7 @@ void FreezeAllEvents(BOOL bFreeze);
 ```  
   
 ### Parameters  
- `bFreeze`  
+ *bFreeze*  
  Nonzero if events will be processed; otherwise 0.  
   
 ### Remarks  
@@ -326,10 +321,10 @@ virtual BOOL GetAmbientProp(
 ```  
   
 ### Parameters  
- `pSite`  
+ *pSite*  
  A pointer to a control site from which the ambient property will be retrieved.  
   
- `dispid`  
+ *dispid*  
  The dispatch ID of the desired ambient property.  
   
  *pVarResult*  
@@ -350,10 +345,10 @@ virtual void GetDlgItem(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Identifier of the dialog item to retrieve.  
   
- `phWnd`  
+ *phWnd*  
  A pointer to the handle of the specified dialog item's window object.  
   
 ### Return Value  
@@ -370,26 +365,26 @@ virtual UINT GetDlgItemInt(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The identifier of the control.  
   
- `lpTrans`  
- Pointer to a Boolean variable that receives a function success/failure value ( **TRUE** indicates success, **FALSE** indicates failure).  
+ *lpTrans*  
+ Pointer to a Boolean variable that receives a function success/failure value (TRUE indicates success, FALSE indicates failure).  
   
- `bSigned`  
- Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the `bSigned` parameter is **TRUE**, specifying that the value to be retrieved is a signed integer value, cast the return value to an `int` type. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ *bSigned*  
+ Specifies whether the function should examine the text for a minus sign at the beginning and return a signed integer value if it finds one. If the *bSigned* parameter is TRUE, specifying that the value to be retrieved is a signed integer value, cast the return value to an **int** type. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Return Value  
- If successful, the variable pointed to by `lpTrans` is set to **TRUE**, and the return value is the translated value of the control text.  
+ If successful, the variable pointed to by *lpTrans* is set to TRUE, and the return value is the translated value of the control text.  
   
- If the function fails, the variable pointed to by `lpTrans` is set to **FALSE**, and the return value is zero. Note that, since zero is a possible translated value, a return value of zero does not by itself indicate failure.  
+ If the function fails, the variable pointed to by *lpTrans* is set to FALSE, and the return value is zero. Note that, since zero is a possible translated value, a return value of zero does not by itself indicate failure.  
   
- If `lpTrans` is **NULL**, the function returns no information about success or failure.  
+ If *lpTrans* is NULL, the function returns no information about success or failure.  
   
 ### Remarks  
  The function translates the retrieved text by stripping any extra spaces at the beginning of the text and then converting the decimal digits. The function stops translating when it reaches the end of the text or encounters a nonnumeric character.  
   
- This function returns zero if the translated value is greater than **INT_MAX** (for signed numbers) or **UINT_MAX** (for unsigned numbers).  
+ This function returns zero if the translated value is greater than INT_MAX (for signed numbers) or UINT_MAX (for unsigned numbers).  
   
 ##  <a name="getdlgitemtext"></a>  COleControlContainer::GetDlgItemText  
  Retrieves the text of the given control.  
@@ -402,29 +397,29 @@ virtual int GetDlgItemText(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The identifier of the control.  
   
- `lpStr`  
+ *lpStr*  
  Pointer to the text of the control.  
   
- `nMaxCount`  
- Specifies the maximum length, in characters, of the string to be copied to the buffer pointed to by `lpStr`. If the length of the string exceeds the limit, the string is truncated.  
+ *nMaxCount*  
+ Specifies the maximum length, in characters, of the string to be copied to the buffer pointed to by *lpStr*. If the length of the string exceeds the limit, the string is truncated.  
   
 ### Return Value  
  If the function succeeds, the return value specifies the number of characters copied to the buffer, not including the terminating null character.  
   
- If the function fails, the return value is zero. To get extended error information, call [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ If the function fails, the return value is zero. To get extended error information, call [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ##  <a name="handlesetfocus"></a>  COleControlContainer::HandleSetFocus  
- Determines if the container handles `WM_SETFOCUS` messages.  
+ Determines if the container handles WM_SETFOCUS messages.  
   
 ```  
 virtual BOOL HandleSetFocus();
 ```  
   
 ### Return Value  
- Nonzero if the container handles `WM_SETFOCUS` messages; otherwise zero.  
+ Nonzero if the container handles WM_SETFOCUS messages; otherwise zero.  
   
 ##  <a name="handlewindowlessmessage"></a>  COleControlContainer::HandleWindowlessMessage  
  Processes window messages for windowless controls.  
@@ -438,14 +433,14 @@ virtual BOOL HandleWindowlessMessage(
 ```  
   
 ### Parameters  
- `message`  
+ *message*  
  The identifier for the window message, provided by Windows.  
   
- `wParam`  
- Parameter of the message; provided by Windows. Specifies additional message-specific information. The contents of this parameter depend on the value of the `message` parameter.  
+ *wParam*  
+ Parameter of the message; provided by Windows. Specifies additional message-specific information. The contents of this parameter depend on the value of the *message* parameter.  
   
- `lParam`  
- Parameter of the message; provided by Windows. Specifies additional message-specific information. The contents of this parameter depend on the value of the `message` parameter.  
+ *lParam*  
+ Parameter of the message; provided by Windows. Specifies additional message-specific information. The contents of this parameter depend on the value of the *message* parameter.  
   
  *plResult*  
  Windows result code. Specifies the result of the message processing and depends on the message sent.  
@@ -464,17 +459,17 @@ virtual UINT IsDlgButtonChecked(int nIDButton) const;
 ```  
   
 ### Parameters  
- `nIDButton`  
+ *nIDButton*  
  The identifier of the button control.  
   
 ### Return Value  
- The return value, from a button created with the **BS_AUTOCHECKBOX**, **BS_AUTORADIOBUTTON**, **BS_AUTO3STATE**, **BS_CHECKBOX**, **BS_RADIOBUTTON**, or **BS_3STATE** style. Can be one of the following:  
+ The return value, from a button created with the BS_AUTOCHECKBOX, BS_AUTORADIOBUTTON, BS_AUTO3STATE, BS_CHECKBOX, BS_RADIOBUTTON, or BS_3STATE style. Can be one of the following:  
   
-- **BST_CHECKED** Button is checked.  
+- BST_CHECKED Button is checked.  
   
-- **BST_INDETERMINATE** Button is grayed, indicating an indeterminate state (applies only if the button has the **BS_3STATE** or **BS_AUTO3STATE** style).  
+- BST_INDETERMINATE Button is grayed, indicating an indeterminate state (applies only if the button has the BS_3STATE or BS_AUTO3STATE style).  
   
-- **BST_UNCHECKED** Button is cleared.  
+- BST_UNCHECKED Button is cleared.  
   
 ### Remarks  
  If the button is a three-state control, the member function determines whether it is dimmed, checked, or neither.  
@@ -550,14 +545,14 @@ CMapPtrToPtr m_siteMap;
 ```  
   
 ##  <a name="onpaint"></a>  COleControlContainer::OnPaint  
- Called by the framework to handle `WM_PAINT` requests.  
+ Called by the framework to handle WM_PAINT requests.  
   
 ```  
 virtual BOOL OnPaint(CDC* pDC);
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to the device context used by the container.  
   
 ### Return Value  
@@ -567,28 +562,28 @@ virtual BOOL OnPaint(CDC* pDC);
  Override this function to customize the painting process.  
   
 ##  <a name="onuiactivate"></a>  COleControlContainer::OnUIActivate  
- Called by the framework when the control site, pointed to by `pSite`, is about to be activated in-place.  
+ Called by the framework when the control site, pointed to by *pSite*, is about to be activated in-place.  
   
 ```  
 virtual void OnUIActivate(COleControlSite* pSite);
 ```  
   
 ### Parameters  
- `pSite`  
+ *pSite*  
  A pointer to the control site about to be in-place activated.  
   
 ### Remarks  
  In-place activation means that the container's main menu is replaced with an in-place composite menu.  
   
 ##  <a name="onuideactivate"></a>  COleControlContainer::OnUIDeactivate  
- Called by the framework when the control site, pointed to by `pSite`, is about to be deactivated.  
+ Called by the framework when the control site, pointed to by *pSite*, is about to be deactivated.  
   
 ```  
 virtual void OnUIDeactivate(COleControlSite* pSite);
 ```  
   
 ### Parameters  
- `pSite`  
+ *pSite*  
  A pointer to the control site about to be deactivated.  
   
 ### Remarks  
@@ -604,7 +599,7 @@ virtual void ScrollChildren(
 ```  
   
 ### Parameters  
- `dx`  
+ *dx*  
  The amount, in pixels, of scrolling along the x-axis.  
   
  *dy*  
@@ -622,16 +617,16 @@ virtual LRESULT SendDlgItemMessage(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Specifies the identifier of the control that receives the message.  
   
- `message`  
+ *message*  
  Specifies the message to be sent.  
   
- `wParam`  
+ *wParam*  
  Specifies additional message-specific information.  
   
- `lParam`  
+ *lParam*  
  Specifies additional message-specific information.  
   
 ##  <a name="setdlgitemint"></a>  COleControlContainer::SetDlgItemInt  
@@ -645,17 +640,17 @@ virtual void SetDlgItemInt(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The identifier of the control.  
   
- `nValue`  
+ *nValue*  
  The integer value to be displayed.  
   
- `bSigned`  
- Specifies whether the `nValue` parameter is signed or unsigned. If this parameter is **TRUE**, `nValue` is signed. If this parameter is **TRUE** and `nValue` is less than zero, a minus sign is placed before the first digit in the string. If this parameter is **FALSE**, `nValue` is unsigned.  
+ *bSigned*  
+ Specifies whether the *nValue* parameter is signed or unsigned. If this parameter is TRUE, *nValue* is signed. If this parameter is TRUE and *nValue* is less than zero, a minus sign is placed before the first digit in the string. If this parameter is FALSE, *nValue* is unsigned.  
   
 ##  <a name="setdlgitemtext"></a>  COleControlContainer::SetDlgItemText  
- Sets the text of the specified control, using the text contained in `lpszString`.  
+ Sets the text of the specified control, using the text contained in *lpszString*.  
   
 ```  
 virtual void SetDlgItemText(
@@ -664,10 +659,10 @@ virtual void SetDlgItemText(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The identifier of the control.  
   
- `lpszString`  
+ *lpszString*  
  Pointer to the text of the control.  
   
 ## See Also  

@@ -2,19 +2,14 @@
 title: "Dialog Box Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.classes.dialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["property sheet classes", "dialog box classes", "OLE common dialog classes", "common dialog classes [MFC]", "tab dialog boxes"]
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Dialog Box Classes
@@ -48,7 +43,7 @@ Class `CDialog` and its derived classes encapsulate dialog-box functionality. Si
  Provides a standard dialog box for printing a file.  
   
  [CPrintDialogEx](../mfc/reference/cprintdialogex-class.md)  
- Provides a Windows 2000 Print property sheet.  
+ Provides a Windows Print property sheet.  
   
  [CPageSetupDialog](../mfc/reference/cpagesetupdialog-class.md)  
  Encapsulates the services provided by the Windows common Page Setup dialog box with additional support for setting and modifying print margins.  

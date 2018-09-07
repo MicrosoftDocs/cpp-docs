@@ -2,22 +2,17 @@
 title: "How to: Use safe_cast in C++/CLI | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["safe_cast keyword [C++], upcasting"]
 ms.assetid: 0fbc87d8-ecdf-4cd5-81f4-0d8cc18e2aff
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Use safe_cast in C++/CLI
-This article shows how to use safe_cast in C++/CLI applications. For information about safe_cast in [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)], see [safe_cast](../windows/safe-cast-cpp-component-extensions.md).  
+This article shows how to use safe_cast in C++/CLI applications. For information about safe_cast in C++/CX, see [safe_cast](../windows/safe-cast-cpp-component-extensions.md).  
   
 ## Upcasting  
  An upcast is a cast from a derived type to one of its base classes. This cast is safe and does not require an explicit cast notation. The following sample shows how to perform an upcast, with `safe_cast` and without it.  

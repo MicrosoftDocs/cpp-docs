@@ -2,18 +2,13 @@
 title: "Using Image Lists in a Toolbar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["toolbar controls [MFC], image", "image lists [MFC], toolbar controls", "CToolBarCtrl class [MFC], image lists"]
 ms.assetid: ccbe8df4-4ed9-4b54-bb93-9a1dcb3b97eb
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using Image Lists in a Toolbar Control
@@ -23,7 +18,7 @@ By default, the images used by the buttons in a toolbar control are stored as a 
   
 -   Disabled image list   Contains images for toolbar buttons that are currently disabled.  
   
--   Highlighted image list   Contains images for toolbar buttons that are currently highlighted. This image list is used only when the toolbar uses the **TBSTYLE_FLAT** style.  
+-   Highlighted image list   Contains images for toolbar buttons that are currently highlighted. This image list is used only when the toolbar uses the TBSTYLE_FLAT style.  
   
  These image lists are used by the toolbar control when you associate them with the `CToolBarCtrl` object. This association is accomplished by making calls to [CToolBarCtrl::SetImageList](../mfc/reference/ctoolbarctrl-class.md#setimagelist), [SetDisabledImageList](../mfc/reference/ctoolbarctrl-class.md#setdisabledimagelist), and [SetHotImageList](../mfc/reference/ctoolbarctrl-class.md#sethotimagelist).  
   

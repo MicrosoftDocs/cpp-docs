@@ -2,19 +2,14 @@
 title: "message | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["message_CPP", "vc-pragma.message"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message pragma", "pragmas, message"]
 ms.assetid: 67414f25-ed47-4079-a5dc-21d9d1a39754
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # message
@@ -23,20 +18,20 @@ Sends a string literal to the standard output without terminating the compilatio
 ## Syntax  
   
 ```  
-  
 #pragma message( messagestring )  
 ```  
   
 ## Remarks  
- A typical use of the **message** pragma is to display informational messages at compile time.  
+
+A typical use of the **message** pragma is to display informational messages at compile time.  
   
- The *messagestring* parameter can be a macro that expands to a string literal, and you can concatenate such macros with string literals in any combination.  
+The *messagestring* parameter can be a macro that expands to a string literal, and you can concatenate such macros with string literals in any combination.  
   
- If you use a predefined macro in the **message** pragma, the macro should return a string, else you will have to convert the output of the macro to a string.  
+If you use a predefined macro in the **message** pragma, the macro should return a string, else you will have to convert the output of the macro to a string.  
   
- The following code fragment uses the **message** pragma to display messages during compilation:  
+The following code fragment uses the **message** pragma to display messages during compilation:  
   
-```  
+```cpp  
 // pragma_directives_message1.cpp  
 // compile with: /LD  
 #if _M_IX86 >= 500  
@@ -60,4 +55,5 @@ Sends a string literal to the standard output without terminating the compilatio
 ```  
   
 ## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

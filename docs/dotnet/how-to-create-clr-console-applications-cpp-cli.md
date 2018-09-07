@@ -2,18 +2,13 @@
 title: "How to: Create CLR Console Applications (C++/CLI) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["console applications, templates", "CLR console applications, project template"]
 ms.assetid: e89bce3c-706f-4ae0-8a90-cb1a0f674e70
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Create CLR Console Applications (C++/CLI)
@@ -25,7 +20,7 @@ You can use the Console Application template to create a console app project tha
   
 -   References to these .NET Framework namespaces:  
   
-    -   [System](https://msdn.microsoft.com/en-us/library/system.appdomainmanager.appdomainmanager.aspx)—Contains fundamental classes and base classes that define commonly used values and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.  
+    -   [System](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)—Contains fundamental classes and base classes that define commonly used values and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.  
   
     -   mscorlib—The assembly DLL that supports .NET Framework development.  
   

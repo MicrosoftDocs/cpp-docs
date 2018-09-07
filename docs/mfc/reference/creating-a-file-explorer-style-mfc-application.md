@@ -2,19 +2,14 @@
 title: "Creating a File Explorer-Style MFC Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfcexplorer.project"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["browsers [MFC], Explorer-style applications", "MFC applications [MFC], Windows Explorer-style", "Explorer-style applications [MFC], creating"]
 ms.assetid: f843ab5d-2d5d-41ca-88a4-badc0d2f8052
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating a File Explorer-Style MFC Application
@@ -24,7 +19,7 @@ Many Windows system applications use the user interface (UI) for File Explorer. 
   
  The wizard creates the following classes for you:  
   
--   The **CLeftView** class defines the left pane of the client area. It is always derived from [CTreeView](../../mfc/reference/ctreeview-class.md).  
+-   The `CLeftView` class defines the left pane of the client area. It is always derived from [CTreeView](../../mfc/reference/ctreeview-class.md).  
   
 -   The C*ProjName*View class defines the right pane of the client area. By default, it is derived from [CListView](../../mfc/reference/clistview-class.md) but can be another type of view depending on the class you specify from the **Base class** list in the [Generated Classes](../../mfc/reference/generated-classes-mfc-application-wizard.md) page of the wizard.  
   

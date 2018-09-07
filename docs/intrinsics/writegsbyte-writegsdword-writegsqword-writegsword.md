@@ -2,19 +2,14 @@
 title: "__writegsbyte, __writegsdword, __writegsqword, __writegsword | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__writegsbyte", "__writegsqword", "__writegsdword", "__writegsword"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__writegsqword intrinsic", "__writegsbyte intrinsic", "__writegsword intrinsic", "__writegsdword intrinsic"]
 ms.assetid: 7746cf6d-2259-4139-9aab-c07dd75c8037
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __writegsbyte, __writegsdword, __writegsqword, __writegsword
@@ -54,10 +49,10 @@ void __writegsqword( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__writegsbyte`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__writegsdword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__writegsqword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__writegsword`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__writegsbyte`|x64|  
+|`__writegsdword`|x64|  
+|`__writegsqword`|x64|  
+|`__writegsword`|x64|  
   
  **Header file** \<intrin.h>  
   

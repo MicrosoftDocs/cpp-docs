@@ -2,19 +2,14 @@
 title: "CKeyFrame Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame::CKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboard", "AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAfterTransition", "AFXANIMATIONCONTROLLER/CKeyFrame::AddToStoryboardAtOffset", "AFXANIMATIONCONTROLLER/CKeyFrame::GetExistingKeyframe", "AFXANIMATIONCONTROLLER/CKeyFrame::GetOffset", "AFXANIMATIONCONTROLLER/CKeyFrame::GetTransition", "AFXANIMATIONCONTROLLER/CKeyFrame::m_offset", "AFXANIMATIONCONTROLLER/CKeyFrame::m_pExistingKeyFrame", "AFXANIMATIONCONTROLLER/CKeyFrame::m_pTransition"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CKeyFrame [MFC], CKeyFrame", "CKeyFrame [MFC], AddToStoryboard", "CKeyFrame [MFC], AddToStoryboardAfterTransition", "CKeyFrame [MFC], AddToStoryboardAtOffset", "CKeyFrame [MFC], GetExistingKeyframe", "CKeyFrame [MFC], GetOffset", "CKeyFrame [MFC], GetTransition", "CKeyFrame [MFC], m_offset", "CKeyFrame [MFC], m_pExistingKeyFrame", "CKeyFrame [MFC], m_pTransition"]
 ms.assetid: d050a562-20f6-4c65-8ce5-ccb3aef1a20e
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CKeyFrame Class
@@ -76,10 +71,10 @@ virtual BOOL AddToStoryboard(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  Specifies whether to add keyframe or transition recursively.  
   
 ### Return Value  
@@ -98,10 +93,10 @@ BOOL AddToStoryboardAfterTransition(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  Specifies whether to add a transition recursively.  
   
 ### Return Value  
@@ -120,10 +115,10 @@ virtual BOOL AddToStoryboardAtOffset(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  Specifies whether to add a keyframe this keyframe depend on recursively.  
   
 ### Return Value  
@@ -145,13 +140,13 @@ CKeyFrame(
 ```  
   
 ### Parameters  
- `pTransition`  
+ *pTransition*  
  A pointer to a transition.  
   
- `pKeyframe`  
+ *pKeyframe*  
  A pointer to keyframe.  
   
- `offset`  
+ *offset*  
  Offset, in seconds, from keyframe specified by pKeyframe.  
   
 ### Remarks  

@@ -2,19 +2,14 @@
 title: "CMFCRibbonComboBox Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::CMFCRibbonComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::AddItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::DeleteItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::EnableDropDownListResize", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::FindItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetCount", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetCurSel", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetDropDownHeight", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetIntermediateSize", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::GetItemData", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::HasEditBox", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::IsResizeDropDownList", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::OnSelectItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::RemoveAllItems", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SelectItem", "AFXRIBBONCOMBOBOX/CMFCRibbonComboBox::SetDropDownHeight"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonComboBox [MFC], CMFCRibbonComboBox", "CMFCRibbonComboBox [MFC], AddItem", "CMFCRibbonComboBox [MFC], DeleteItem", "CMFCRibbonComboBox [MFC], EnableDropDownListResize", "CMFCRibbonComboBox [MFC], FindItem", "CMFCRibbonComboBox [MFC], GetCount", "CMFCRibbonComboBox [MFC], GetCurSel", "CMFCRibbonComboBox [MFC], GetDropDownHeight", "CMFCRibbonComboBox [MFC], GetIntermediateSize", "CMFCRibbonComboBox [MFC], GetItem", "CMFCRibbonComboBox [MFC], GetItemData", "CMFCRibbonComboBox [MFC], HasEditBox", "CMFCRibbonComboBox [MFC], IsResizeDropDownList", "CMFCRibbonComboBox [MFC], OnSelectItem", "CMFCRibbonComboBox [MFC], RemoveAllItems", "CMFCRibbonComboBox [MFC], SelectItem", "CMFCRibbonComboBox [MFC], SetDropDownHeight"]
 ms.assetid: 9b29a6a4-cf17-4152-9b13-0bf90784b30d
-caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonComboBox Class
@@ -87,10 +82,10 @@ virtual INT_PTR AddItem(
 ```  
   
 ### Parameters  
- [in] `lpszItem`  
+ [in] *lpszItem*  
  The string of the item to add.  
   
- [in] `dwData`  
+ [in] *dwData*  
  The data associated with the item to add.  
   
 ### Return Value  
@@ -113,19 +108,19 @@ CMFCRibbonComboBox();
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The ID of the combo box.  
   
- [in] `bHasEditBox`  
- `TRUE` if you want an edit box within the control; `FALSE` otherwise.  
+ [in] *bHasEditBox*  
+ TRUE if you want an edit box within the control; FALSE otherwise.  
   
- [in] `nWidth`  
+ [in] *nWidth*  
  Width of the combo box in pixels; or -1 for the default width.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  The display label of the combo box.  
   
- [in] `nImage`  
+ [in] *nImage*  
  The small image index of the combo box.  
   
 ### Remarks  
@@ -137,21 +132,22 @@ CMFCRibbonComboBox();
 ```  
 BOOL DeleteItem(int iIndex);
 BOOL DeleteItem(DWORD_PTR dwData);
-BOOL DeleteItem(LPCTSTR lpszText);
+
+BOOL DeleteItem(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of the item to be deleted.  
   
- [in] `dwData`  
+ [in] *dwData*  
  The data associated with the item to be deleted.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  The string of the item to be deleted. If there are multiple items with the same string, the first item is deleted.  
   
 ### Return Value  
- `TRUE` if the specified item has been deleted; otherwise, `FALSE`.  
+ TRUE if the specified item has been deleted; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -163,8 +159,8 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable resizing; `FALSE` to disable resizing.  
+ [in] *bEnable*  
+ TRUE to enable resizing; FALSE to disable resizing.  
   
 ### Remarks  
  When resizing is enabled, the list box will change size to fit the items it displays.  
@@ -177,7 +173,7 @@ int FindItem(LPCTSTR lpszText) const;
 ```  
   
 ### Parameters  
- [in] `lpszText`  
+ [in] *lpszText*  
  The string of an item in the list box.  
   
 ### Return Value  
@@ -227,7 +223,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the combo box.  
   
 ### Return Value  
@@ -244,11 +240,11 @@ LPCTSTR GetItem(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of an item in the list box.  
   
 ### Return Value  
- A pointer to the string that is associated with the item; otherwise, `NULL` if the index parameter is invalid, or if the index parameter is -1 and there is no item selected in the combo box.  
+ A pointer to the string that is associated with the item; otherwise, NULL if the index parameter is invalid, or if the index parameter is -1 and there is no item selected in the combo box.  
   
 ### Remarks  
   
@@ -260,7 +256,7 @@ DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of an item in the list box.  
   
 ### Return Value  
@@ -274,7 +270,7 @@ BOOL HasEditBox() const;
 ```  
   
 ### Return Value  
- `TRUE` if the control contains an edit box; otherwise, `FALSE`.  
+ TRUE if the control contains an edit box; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -286,7 +282,7 @@ BOOL IsResizeDropDownList() const;
 ```  
   
 ### Return Value  
- `TRUE` if the list box can be resized; otherwise `FALSE`. [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize)  
+ TRUE if the list box can be resized; otherwise FALSE. [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize)  
   
 ### Remarks  
  You can enable list box resizing by using the [CMFCRibbonComboBox::EnableDropDownListResize](#enabledropdownlistresize) method.  
@@ -299,7 +295,7 @@ virtual void OnSelectItem(int nItem);
 ```  
   
 ### Parameters  
- [in] `nItem`  
+ [in] *nItem*  
  The index of the selected item.  
   
 ### Remarks  
@@ -320,21 +316,22 @@ void RemoveAllItems();
 ```  
 BOOL SelectItem(int iIndex);
 BOOL SelectItem(DWORD_PTR dwData);
-BOOL SelectItem(LPCTSTR lpszText);
+
+BOOL SelectItem(LPCTSTR lpszText);
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of an item in the list box.  
   
- [in] `dwData`  
+ [in] *dwData*  
  The data associated with an item in the list box.  
   
- [in] `lpszText`  
+ [in] *lpszText*  
  The string of an item in the list box.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise `FALSE`.  
+ TRUE if the method was successful; otherwise FALSE.  
   
 ### Remarks  
   
@@ -346,7 +343,7 @@ void SetDropDownHeight(int nHeight);
 ```  
   
 ### Parameters  
- [in] `nHeight`  
+ [in] *nHeight*  
  The height, in pixels, of the list box.  
   
 ### Remarks  

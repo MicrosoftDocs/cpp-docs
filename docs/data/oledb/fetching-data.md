@@ -2,18 +2,13 @@
 title: "Fetching Data | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data [C++], fetching", "rowsets [C++], fetching", "fetching", "OLE DB consumer templates [C++], fetching data"]
 ms.assetid: b07f747f-9855-4f27-a03d-b1d5b10fa284
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Fetching Data
@@ -25,7 +20,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
   
 2.  If you are using `CManualAccessor`, bind the output columns if you have not already done so. To bind the columns, call `GetColumnInfo`, and then create an accessor with the bindings, as shown in the following example:  
   
-    ```  
+    ```cpp  
     // From the DBViewer Sample CDBTreeView::OnQueryEdit  
     // Get the column information  
     ULONG ulColumns       = 0;  
@@ -42,7 +37,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
   
 3.  Write a `while` loop to retrieve the data. In the loop, call `MoveNext` to advance the cursor and test the return value against S_OK, as shown in the following example:  
   
-    ```  
+    ```cpp  
     while (rs.MoveNext() == S_OK)  
     {  
         // Add code to fetch data here  
@@ -54,7 +49,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
   
     -   If you use the [CAccessor](../../data/oledb/caccessor-class.md) class, you should have a user record that contains data members. You can access your data using those data members, as shown in the following example:  
   
-        ```  
+        ```cpp  
         while (rs.MoveNext() == S_OK)  
         {  
             // Use the data members directly. In this case, m_nFooID  
@@ -66,7 +61,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
   
     -   If you use the `CDynamicAccessor` or `CDynamicParameterAccessor` class, you can fetch data by using the accessing functions `GetValue` and `GetColumn`, as shown in the following example. If you want to determine the type of data you are using, use `GetType`.  
   
-        ```  
+        ```cpp  
         while (rs.MoveNext() == S_OK)  
         {  
             // Use the dynamic accessor functions to retrieve your data.  
@@ -81,7 +76,7 @@ After you open the data source, session, and rowset objects, you can fetch data.
   
     -   If you use `CManualAccessor`, you must specify your own data members, bind them yourself, and access them directly, as shown in the following example:  
   
-        ```  
+        ```cpp  
         while (rs.MoveNext() == S_OK)  
         {  
             // Use the data members you specified in the calls to  

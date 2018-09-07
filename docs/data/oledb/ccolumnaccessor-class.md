@@ -2,27 +2,22 @@
 title: "CColumnAccessor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 f1_keywords: ["CColumnAccessor", "ATL::CColumnAccessor", "ATL.CColumnAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CColumnAccessor class"]
 ms.assetid: 6ce1e67f-6a20-490d-9326-c168b43eee7e
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CColumnAccessor Class
 Generates injected consumer code.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CColumnAccessor : public CAccessorBase  
 ```  
   
@@ -35,15 +30,15 @@ class CColumnAccessor : public CAccessorBase
   
 -   `CreateAccessor` Allocates memory for the column binding structures and initializes the column data members.  
   
--   **BindColumns** Binds columns to accessors.  
+-   `BindColumns` Binds columns to accessors.  
   
--   **SetParameterBuffer** Allocates buffers for parameters.  
+-   `SetParameterBuffer` Allocates buffers for parameters.  
   
 -   `AddParameter` Adds a parameter entry to the parameter entry structures.  
   
--   **HasOutputColumns** Determines whether the accessor has output columns  
+-   `HasOutputColumns` Determines whether the accessor has output columns  
   
--   **HasParameters** Determines whether the accessor has parameters.  
+-   `HasParameters` Determines whether the accessor has parameters.  
   
 -   `BindParameters` Binds the created parameters to columns.  
   

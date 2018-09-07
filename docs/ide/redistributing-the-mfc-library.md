@@ -2,18 +2,13 @@
 title: "Redistributing the MFC Library | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, redistributing", "redistributing MFC library"]
 ms.assetid: 72714ce1-385e-4c1c-afa5-96b03e873866
-caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Redistributing the MFC Library
@@ -30,7 +25,7 @@ If you dynamically link your application to the MFC library, you must redistribu
   
  If your application uses the MFC classes that implement the WebBrowser control (for example, [CHtmlView Class](../mfc/reference/chtmlview-class.md) or [CHtmlEditView Class](../mfc/reference/chtmleditview-class.md)), we recommend that you also install the most current version of Microsoft Internet Explorer so that the target computer will have the most current common control files. (At a minimum, Internet Explorer 4.0 is required.) Information about how to install Internet Explorer components is available in "Article 185375: How To Create a Single EXE Install of Internet Explorer" on the Microsoft Support website.  
   
- If your application uses the MFC database classes (for example, [CRecordset Class](../mfc/reference/crecordset-class.md) and [CRecordView Class](../mfc/reference/crecordview-class.md)), you must redistribute ODBC and any ODBC drivers that your application uses. For more information, see [Redistributing Database Support Files](../ide/redistributing-database-support-files.md).  
+ If your application uses the MFC database classes (for example, [CRecordset Class](../mfc/reference/crecordset-class.md) and [CRecordView Class](../mfc/reference/crecordview-class.md)), you must redistribute ODBC and any ODBC drivers that your application uses.  
   
  If your MFC application uses Windows Forms controls, you must redistribute mfcmifc80.dll with your application. This DLL is a strong-name-signed .NET assembly that can be redistributed with an application in its application local folder or by deploying it to the Global Assembly Cache (GAC) by using the [Gacutil.exe (Global Assembly Cache Tool)](/dotnet/framework/tools/gacutil-exe-gac-tool).  
   
@@ -43,7 +38,7 @@ If you dynamically link your application to the MFC library, you must redistribu
   
  The redistributable .msm files contain the DLLs that are used for localization. There is one DLL for each supported language. The installation process installs these DLLs in the %windir%\system32\ folder on the target computer.  
   
- For more information about how to localize MFC applications, see [TN057: Localization of MFC Components](../mfc/tn057-localization-of-mfc-components.md), and also [Article 208983: How to Using MFC LOC DLLs](http://go.microsoft.com/fwlink/p/?linkid=198025) on the Microsoft Support website.  
+ For more information about how to localize MFC applications, see [TN057: Localization of MFC Components](../mfc/tn057-localization-of-mfc-components.md).
   
  You can redistribute MFC localization DLLs by deploying the MFC DLL in your application local folder. For more information about how to redistribute Visual C++ libraries, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  
   

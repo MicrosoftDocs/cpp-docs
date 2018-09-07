@@ -2,19 +2,14 @@
 title: "__getcallerseflags | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_getcallerseflags", "_getcallerseflags_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_getcallerseflags intrinsic"]
 ms.assetid: 2386596f-33aa-4cc7-b026-5a834637270a
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __getcallerseflags
@@ -35,7 +30,7 @@ unsigned int __getcallerseflags(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__getcallerseflags`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__getcallerseflags`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

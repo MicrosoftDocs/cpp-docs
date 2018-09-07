@@ -2,18 +2,13 @@
 title: "MFC Toolbar Implementation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["toolbars [MFC], creating", "buttons [MFC], MFC toolbars", "toolbars [MFC], docking", "CToolBar class [MFC], creating toolbars", "MFC toolbars", "floating toolbars [MFC]", "toolbars [MFC], floating", "docking toolbars [MFC]", "bitmaps [MFC], toolbar", "toolbar controls [MFC]", "CToolBarCtrl class [MFC], implementing toolbars", "tool tips [MFC], enabling", "toolbars [MFC]", "toolbars [MFC], implementing MFC toolbars"]
 ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC Toolbar Implementation
@@ -26,7 +21,7 @@ A toolbar is a [control bar](../mfc/control-bars.md) that contains the bitmap im
 > [!NOTE]
 >  As of MFC version 4.0, toolbars and tool tips are implemented using Windows 95 and later functionality instead of the previous implementation specific to MFC.  
   
- For backward compatibility, MFC retains the older toolbar implementation in class **COldToolBar**. The documentation for earlier versions of MFC describe **COldToolBar** under `CToolBar`.  
+ For backward compatibility, MFC retains the older toolbar implementation in class `COldToolBar`. The documentation for earlier versions of MFC describe `COldToolBar` under `CToolBar`.  
   
  Create the first toolbar in your program by selecting the Toolbar option in the Application Wizard. You can also create additional toolbars.  
   

@@ -2,18 +2,13 @@
 title: "Recordset: Obtaining SUMs and Other Aggregate Results (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["SQL, retrieving aggregate values from recordsets", "recordsets, retrieving SQL aggregate values", "retrieving SQL aggregate values from recordsets", "ODBC recordsets, retrieving SQL aggregate values", "SQL aggregate values", "SQL Server projects, retrieving aggregate values from recordsets", "SQL aggregate values, retrieving from recordsets"]
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Obtaining SUMs and Other Aggregate Results (ODBC)
@@ -34,7 +29,7 @@ This topic applies to the MFC ODBC classes.
  You use these SQL functions to obtain statistical information about the records in a data source rather than to extract records from the data source. The recordset that is created usually consists of a single record (if all columns are aggregates) that contains a value. (There might be more than one record if you used a **GROUP BY** clause.) This value is the result of the calculation or extraction performed by the SQL function.  
   
 > [!TIP]
->  To add a SQL **GROUP BY** clause (and possibly a **HAVING** clause) to your SQL statement, append it to the end of **m_strFilter**. For example:  
+>  To add a SQL **GROUP BY** clause (and possibly a **HAVING** clause) to your SQL statement, append it to the end of `m_strFilter`. For example:  
   
 ```  
 m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";  

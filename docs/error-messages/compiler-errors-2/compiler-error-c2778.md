@@ -2,19 +2,14 @@
 title: "Compiler Error C2778 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2778"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2778"]
 ms.assetid: b24cb732-2914-42cc-8928-e2d87b393428
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2778
@@ -31,7 +26,7 @@ struct __declspec(uuid("00000000-0000-0000-0000-000000000000")) A {};
 struct __declspec(uuid("{00000000-0000-0000-0000-000000000000}")) B{};  
 ```  
   
- The `uuid` extended attribute accepts strings recognized by [CLSIDFromString](http://msdn.microsoft.com/library/windows/desktop/ms680589), with or without brace delimiters.  
+ The `uuid` extended attribute accepts strings recognized by [CLSIDFromString](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromstring), with or without brace delimiters.  
   
  The following sample generates C2778:  
   

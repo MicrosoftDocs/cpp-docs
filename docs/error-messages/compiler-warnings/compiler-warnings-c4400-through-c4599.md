@@ -1,15 +1,14 @@
 ---
 title: "Compiler Warnings C4400 Through C4599 | Microsoft Docs"
-ms.date: "11/17/2017"
-ms.technology: ["cpp-tools"]
+ms.date: "05/30/2018"
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
-f1_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4451", "C4452", "C4453", "C4454", "C4455", "C4456", "C4457", "C4458", "C4459", "C4464", "C4472", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595"]
-helpviewer_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4451", "C4452", "C4453", "C4454", "C4455", "C4456", "C4457", "C4458", "C4459", "C4464", "C4472", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595"]
+f1_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4451", "C4452", "C4453", "C4454", "C4455", "C4456", "C4457", "C4458", "C4459", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595"]
+helpviewer_keywords: ["C4413", "C4415", "C4416", "C4417", "C4418", "C4419", "C4421", "C4423", "C4424", "C4425", "C4426", "C4427", "C4438", "C4442", "C4443", "C4444", "C4446", "C4447", "C4448", "C4449", "C4450", "C4451", "C4452", "C4453", "C4454", "C4455", "C4456", "C4457", "C4458", "C4459", "C4472", "C4474", "C4475", "C4476", "C4478", "C4480", "C4482", "C4483", "C4491", "C4492", "C4493", "C4494", "C4495", "C4496", "C4497", "C4498", "C4499", "C4509", "C4519", "C4531", "C4542", "C4562", "C4568", "C4569", "C4573", "C4574", "C4575", "C4582", "C4583", "C4585", "C4586", "C4587", "C4588", "C4591", "C4592", "C4593", "C4594", "C4595"]
 dev_langs: ["C++"]
 ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warnings C4400 Through C4599
@@ -83,11 +82,17 @@ The articles in this section of the documentation explain a subset of the warnin
 |[Compiler Warning (level 1) C4461](../../error-messages/compiler-warnings/compiler-warning-level-1-c4461.md)|'*classname*': this class has a finalizer '!*finalizer*' but no destructor '~*dtor*'|
 |[Compiler Warning (level 1, Error) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*type*' : cannot determine the GUID of the type. Program may fail at runtime.|
 |[Compiler warning (level 4) C4463](compiler-warning-level-4-c4463.md)|overflow; assigning '*value*' to bit-field that can only hold values from '*min_value*' to '*max_value*'|
-|Compiler warning (level 4) C4464|relative include path contains '..'|
+|[Compiler warning (level 4) C4464](../../error-messages/compiler-warnings/c4464.md)|relative include path contains '..'|
 |[Compiler Warning (level 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|floating-point control pragmas ignored under /clr|
 |[Compiler warning (level 4) C4471](compiler-warning-level-4-c4471.md)|'*enumeration*': a forward declaration of an unscoped enumeration must have an underlying type (int assumed)|
 |Compiler warning (level 1) C4472|'*identifier*' is a native enum: add an access specifier (private/public) to declare a 'WinRT&#124;managed' enum|
-|Compiler warning C4480|nonstandard extension used: specifying underlying type for enum '*enumeration*'|
+|[Compiler warning (level 1) C4473](c4473.md)|'*function*' : not enough arguments passed for format string|
+|Compiler warning (level 3) C4474|'*function*' : too many arguments passed for format string|
+|Compiler warning (level 3) C4475|'*function*' : length modifier '*modifier*' cannot be used with type field character '*character*' in format specifier|
+|Compiler warning (level 3) C4476|'*function*' : unknown type field character '*character*' in format specifier|
+|[Compiler warning (level 1) C4477](c4477.md)|'*function*' : format string '*string*' requires an argument of type '*type*', but variadic argument *number* has type '*type*'|
+|Compiler warning (level 1) C4478|'*function*' : positional and non-positional placeholders cannot be mixed in the same format string|
+|Compiler warning (Error) C4480|nonstandard extension used: specifying underlying type for enum '*enumeration*'|
 |[Compiler Warning (level 4) C4481](../../error-messages/compiler-warnings/compiler-warning-level-4-c4481.md)|nonstandard extension used: override specifier '*keyword*'|
 |Compiler warning C4482|nonstandard extension used: enum '*enumeration*' used in qualified name|
 |Compiler warning (level 1, Error) C4483|syntax error: expected C++ keyword|
@@ -102,6 +107,10 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 1, Error) C4492|'*function1*': matches base ref class method '*function2*', but is not marked 'override'|
 |Compiler warning (level 3, Error) C4493|delete expression has no effect as the destructor of '*type*' does not have 'public' accessibility|
 |Compiler warning (level 1) C4494|'*function*' : Ignoring __declspec(allocator) because the function return type is not a pointer or reference|
+|Compiler warning C4495|nonstandard extension '__super' used: replace with explicit base class name|
+|Compiler warning C4496|nonstandard extension 'for each' used: replace with ranged-for statement|
+|Compiler warning C4497|nonstandard extension 'sealed' used: replace with 'final'|
+|Compiler warning C4498|nonstandard extension used: '*extension*'|
 |Compiler warning (level 4) C4499|'*function*' : an explicit specialization cannot have a storage class (ignored)"|
 |[Compiler Warning (level 1) C4502](../../error-messages/compiler-warnings/compiler-warning-level-1-c4502.md)|'*linkage specification*' requires use of keyword 'extern' and must precede all other specifiers|
 |[Compiler Warning (level 1) C4503](../../error-messages/compiler-warnings/compiler-warning-level-1-c4503.md)|'*identifier*': decorated name length exceeded, name was truncated|
@@ -166,7 +175,8 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 4) C4574|'*Identifier*' is defined to be '0': did you mean to use '#if identifier'?|
 |Compiler warning (level 1) C4575|'__vectorcall' incompatible with the '/clr' option: converting to '__stdcall'|
 |Compiler warning (level 1, Error) C4576|a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax|
-|Compiler warning (level 1, Error) C4578|'abs': conversion from '*type1*' to '*type2*', possible loss of data (Did you mean to call '*function*' or to #include <cmath>?)|
+|Compiler warning (level 1, Off) C4577|'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc|
+|Compiler warning (level 1, Error) C4578|'abs': conversion from '*type1*' to '*type2*', possible loss of data (Did you mean to call '*function*' or to #include \<cmath>?)|
 |[Compiler Warning (level 3) C4580](../../error-messages/compiler-warnings/compiler-warning-level-3-c4580.md)|[attribute] is deprecated; instead specify System::Attribute or Platform::Metadata as a base class|
 |[Compiler Warning (level 1) C4581](../../error-messages/compiler-warnings/compiler-warning-level-1-c4581.md)|deprecated behavior: '"*string*"' replaced with '*string*' to process attribute|
 |Compiler warning (level 4) C4582|'*type*': constructor is not implicitly called|

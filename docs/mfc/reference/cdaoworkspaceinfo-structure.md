@@ -2,19 +2,14 @@
 title: "CDaoWorkspaceInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["CDaoWorkspaceInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoWorkspaceInfo structure [MFC]", "DAO (Data Access Objects), Workspaces collection"]
 ms.assetid: a1f4b25e-f9c6-4196-b075-d1df99c54124
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDaoWorkspaceInfo Structure
@@ -32,7 +27,7 @@ struct CDaoWorkspaceInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  Uniquely names the workspace object. To retrieve the value of this property directly, call the querydef object's [GetName](../../mfc/reference/cdaoquerydef-class.md#getname) member function. For more information, see the topic "Name Property" in DAO Help.  
   
  *m_strUserName*  

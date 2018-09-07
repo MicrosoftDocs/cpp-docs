@@ -2,19 +2,14 @@
 title: "Inheritance Keywords | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__multiple_inheritance", "__single_inheritance_cpp", "__virtual_inheritance_cpp", "__virtual_inheritance", "__multiple_inheritance_cpp", "__single_inheritance"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__single_inheritance keyword [C++]", "declaring derived classes [C++]", "keywords [C++], inheritance keywords", "__multiple_inheritance keyword [C++]", "__virtual_inheritance keyword [C++]", "inheritance, declaring derived classes", "derived classes [C++], declaring", "inheritance, keywords"]
 ms.assetid: bb810f56-7720-4fea-b8b6-9499edd141df
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Inheritance Keywords
@@ -33,7 +28,7 @@ class [__virtual_inheritance] class-name;
   
  C++ allows you to declare a pointer to a class member prior to the definition of the class. For example:  
   
-```  
+```cpp 
 class S;  
 int S::*p;  
 ```  
@@ -46,7 +41,7 @@ int S::*p;
   
 -   Using the [pointers_to_members](../preprocessor/pointers-to-members.md) pragma  
   
--   Using the inheritance keywords `__single_inheritance`, `__multiple_inheritance`, and `__virtual_inheritance`. This technique controls the inheritance model on a per-class basis.  
+-   Using the inheritance keywords **__single_inheritance**, **__multiple_inheritance**, and **__virtual_inheritance**. This technique controls the inheritance model on a per-class basis.  
   
     > [!NOTE]
     >  If you always declare a pointer to a member of a class after defining the class, you don't need to use any of these options.  
@@ -55,7 +50,7 @@ int S::*p;
   
  If the example above is changed to:  
   
-```  
+```cpp 
 class __single_inheritance S;  
 int S::*p;  
 ```  
@@ -67,5 +62,5 @@ int S::*p;
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)

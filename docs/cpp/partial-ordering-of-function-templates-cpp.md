@@ -2,18 +2,13 @@
 title: "Partial Ordering of Function Templates (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["partial ordering of function templates"]
 ms.assetid: 0c17347d-0e80-47ad-b5ac-046462d9dc73
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 
@@ -82,12 +77,11 @@ int main() {
   
 ### Output  
   
-```  
+```Output  
 Less specialized function called  
 More specialized function called  
 Even more specialized function for const T*  
 ```  
   
-## See Also
-
-[Function Templates](../cpp/function-templates.md)
+## See also
+ [Function Templates](../cpp/function-templates.md)

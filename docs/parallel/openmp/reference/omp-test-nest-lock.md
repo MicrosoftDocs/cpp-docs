@@ -2,19 +2,14 @@
 title: "omp_test_nest_lock | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 f1_keywords: ["omp_test_nest_lock"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["omp_test_nest_lock OpenMP function"]
 ms.assetid: 4c909bbe-80e0-4100-aca6-d415d7dc5294
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # omp_test_nest_lock

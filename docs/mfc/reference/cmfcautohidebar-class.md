@@ -2,25 +2,20 @@
 title: "CMFCAutoHideBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar::CMFCAutoHideBar", "AFXAUTOHIDEBAR/CMFCAutoHideBar::AddAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::AllowShowOnPaneMenu", "AFXAUTOHIDEBAR/CMFCAutoHideBar::CalcFixedLayout", "AFXAUTOHIDEBAR/CMFCAutoHideBar::Create", "AFXAUTOHIDEBAR/CMFCAutoHideBar::GetFirstAHWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::GetVisibleCount", "AFXAUTOHIDEBAR/CMFCAutoHideBar::OnShowControlBarMenu", "AFXAUTOHIDEBAR/CMFCAutoHideBar::RemoveAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::SetActiveInGroup", "AFXAUTOHIDEBAR/CMFCAutoHideBar::SetRecentVisibleState", "AFXAUTOHIDEBAR/CMFCAutoHideBar::ShowAutoHideWindow", "AFXAUTOHIDEBAR/CMFCAutoHideBar::StretchPane", "AFXAUTOHIDEBAR/CMFCAutoHideBar::UnSetAutoHideMode", "AFXAUTOHIDEBAR/CMFCAutoHideBar::UpdateVisibleState", "AFXAUTOHIDEBAR/CMFCAutoHideBar::m_nShowAHWndDelay"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCAutoHideBar [MFC], CMFCAutoHideBar", "CMFCAutoHideBar [MFC], AddAutoHideWindow", "CMFCAutoHideBar [MFC], AllowShowOnPaneMenu", "CMFCAutoHideBar [MFC], CalcFixedLayout", "CMFCAutoHideBar [MFC], Create", "CMFCAutoHideBar [MFC], GetFirstAHWindow", "CMFCAutoHideBar [MFC], GetVisibleCount", "CMFCAutoHideBar [MFC], OnShowControlBarMenu", "CMFCAutoHideBar [MFC], RemoveAutoHideWindow", "CMFCAutoHideBar [MFC], SetActiveInGroup", "CMFCAutoHideBar [MFC], SetRecentVisibleState", "CMFCAutoHideBar [MFC], ShowAutoHideWindow", "CMFCAutoHideBar [MFC], StretchPane", "CMFCAutoHideBar [MFC], UnSetAutoHideMode", "CMFCAutoHideBar [MFC], UpdateVisibleState", "CMFCAutoHideBar [MFC], m_nShowAHWndDelay"]
 ms.assetid: 54c8d84f-de64-4efd-8a47-3ea0ade40a70
-caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCAutoHideBar Class
 The `CMFCAutoHideBar` class is a special toolbar class that implements the auto-hide feature.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
 ## Syntax  
   
 ```  
@@ -98,24 +93,24 @@ CMFCAutoHideButton* AddAutoHideWindow(
 ```  
   
 ### Parameters  
- [in] `pAutoHideWnd`  
+ [in] *pAutoHideWnd*  
  The window that you want to hide.  
   
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
  A value that specifies the alignment of the auto-hide button with the application window.  
   
 ### Return Value  
   
 ### Remarks  
- The `dwAlignment` parameter indicates where the auto-hide button resides in the application. The parameter can be any one of the following values:  
+ The *dwAlignment* parameter indicates where the auto-hide button resides in the application. The parameter can be any one of the following values:  
   
-- `CBRS_ALIGN_LEFT`  
+- CBRS_ALIGN_LEFT  
   
-- `CBRS_ALIGN_RIGHT`  
+- CBRS_ALIGN_RIGHT  
   
-- `CBRS_ALIGN_TOP`  
+- CBRS_ALIGN_TOP  
   
-- `CBRS_ALIGN_BOTTOM`  
+- CBRS_ALIGN_BOTTOM  
   
 ##  <a name="allowshowonpanemenu"></a>  CMFCAutoHideBar::AllowShowOnPaneMenu  
 
@@ -138,8 +133,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -169,13 +164,13 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `lpszClassName`  
- [in] `dwStyle`  
- [in] `rect`  
- [in] `pParentWnd`  
- [in] `nID`  
- [in] `dwControlBarStyle`  
- [in] `pContext`  
+ [in] *lpszClassName*  
+ [in] *dwStyle*  
+ [in] *rect*  
+ [in] *pParentWnd*  
+ [in] *nID*  
+ [in] *dwControlBarStyle*  
+ [in] *pContext*  
   
 ### Return Value  
   
@@ -223,7 +218,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### Parameters  
- [in] `CPoint`  
+ [in] *CPoint*  
   
 ### Return Value  
   
@@ -237,7 +232,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### Parameters  
- CDockablePane* `pAutoHideWnd`  
+ CDockablePane* *pAutoHideWnd*  
  The auto-hide window to remove.  
   
 ### Return Value  
@@ -253,7 +248,7 @@ virtual void SetActiveInGroup(BOOL bActive);
 ```  
   
 ### Parameters  
- [in] BOOL `bActive`  
+ [in] BOOL *bActive*  
  TRUE to set to active; otherwise FALSE.  
   
 ### Remarks  
@@ -267,7 +262,7 @@ void SetRecentVisibleState(BOOL bState);
 ```  
   
 ### Parameters  
- [in] `bState`  
+ [in] *bState*  
   
 ### Remarks  
   
@@ -282,11 +277,11 @@ BOOL ShowAutoHideWindow(
 ```  
   
 ### Parameters  
- [in] CDockablePane* `pAutoHideWnd`  
- [in] BOOL `bShow`  
+ [in] CDockablePane* *pAutoHideWnd*  
+ [in] BOOL *bShow*  
  TRUE to show the window.  
   
- [in] BOOL `bDelay`  
+ [in] BOOL *bDelay*  
  This parameter is ignored.  
   
 ### Return Value  
@@ -304,11 +299,11 @@ virtual CSize StretchPane(
 ```  
   
 ### Parameters  
- [in] `nLength`  
+ [in] *nLength*  
  The value is unused in the base implementation. In derived implementations, use this value to indicate the length of the resized pane.  
   
- [in] `bVert`  
- The value is unused in the base implementation. In derived implementations, use `TRUE` to handle the case where the auto-hide bar is collapsed vertically, and `FALSE` for the case where the auto-hide bar is collapsed horizontally.  
+ [in] *bVert*  
+ The value is unused in the base implementation. In derived implementations, use TRUE to handle the case where the auto-hide bar is collapsed vertically, and FALSE for the case where the auto-hide bar is collapsed horizontally.  
   
 ### Return Value  
  The resulting size of the resized pane.  

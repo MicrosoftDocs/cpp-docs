@@ -2,26 +2,21 @@
 title: "Stringizing Operator (#) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["#"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["preprocessor, operators", "arguments [C++], converting to strings", "stringizing operator", "preprocessor", "string literals, converting macro parameters to", "macros [C++], converting parameters to strings", "# preprocessor operator"]
 ms.assetid: 1175dd19-4538-43b3-ad97-a008ab80e7b1
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Stringizing Operator (#)
 The number-sign or "stringizing" operator (**#**) converts macro parameters to string literals without expanding the parameter definition. It is used only with macros that take arguments. If it precedes a formal parameter in the macro definition, the actual argument passed by the macro invocation is enclosed in quotation marks and treated as a string literal. The string literal then replaces each occurrence of a combination of the stringizing operator and formal parameter within the macro definition.  
   
 > [!NOTE]
->  The Microsoft C (versions 6.0 and earlier) extension to the ANSI C standard that previously expanded macro formal arguments appearing inside string literals and character constants is no longer supported. Code that relied on this extension should be rewritten using the stringizing (**#**) operator.  
+> The Microsoft C (versions 6.0 and earlier) extension to the ANSI C standard that previously expanded macro formal arguments appearing inside string literals and character constants is no longer supported. Code that relied on this extension should be rewritten using the stringizing (**#**) operator.  
   
 White space preceding the first token of the actual argument and following the last token of the actual argument is ignored. Any white space between the tokens in the actual argument is reduced to a single white space in the resulting string literal. Thus, if a comment occurs between two tokens in the actual argument, it is reduced to a single white space. The resulting string literal is automatically concatenated with any adjacent string literals from which it is separated only by white space.  
   
@@ -29,7 +24,8 @@ Further, if a character contained in the argument usually requires an escape seq
   
 The Visual C++ stringizing operator does not behave correctly when it is used with strings that include escape sequences. In this situation, the compiler generates [Compiler Error C2017](../error-messages/compiler-errors-1/compiler-error-c2017.md).  
   
-## Example  
+## Examples  
+
 The following example shows a macro definition that includes the stringizing operator and a main function that invokes the macro:  
   
 Such invocations would be expanded during preprocessing, producing the following code:  
@@ -58,8 +54,7 @@ In quotes in the printf function call
 "In quotes when printed to the screen"  
 "This: \"  prints an escaped double quote"  
 ```  
-  
-## Example  
+ 
 The following sample shows how you can expand a macro parameter:  
   
 ```cpp  
@@ -74,4 +69,5 @@ FB1(F B)
 ```  
   
 ## See Also  
- [Preprocessor Operators](../preprocessor/preprocessor-operators.md)
+ 
+[Preprocessor Operators](../preprocessor/preprocessor-operators.md)

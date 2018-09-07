@@ -2,18 +2,13 @@
 title: "Upgrading an Existing ActiveX Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [MFC], Internet", "LPK files for Internet controls", "safe for scripting and initialization (controls)", "OLE controls [MFC], upgrading to ActiveX", "CAB files, for ActiveX controls", "Internet applications [MFC], ActiveX controls", "Internet applications [MFC], packaging code for download", "upgrading ActiveX controls", "licensing ActiveX controls"]
 ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Upgrading an Existing ActiveX Control
@@ -76,7 +71,7 @@ CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
   
  The cabinet file pointed to by `CODEBASE` should contain the .ocx file for your ActiveX control and an .inf file to control its installation. You create the cabinet file by specifying the name of your control file and an .inf file. Do not include dependent DLLs that may already exist on the system in this cabinet file. For example, the MFC DLLs are packaged in a separate cabinet file and referred to by the controlling .inf file.  
   
- For details on how to create a CAB file, see [Creating a CAB File](http://msdn.microsoft.com/en-us/cc52fd09-bdf6-4410-a693-149a308f36a3).  
+ For details on how to create a CAB file, see [Creating a CAB File](/windows/desktop/devnotes/cabinet-api-functions).  
   
 ### The INF File  
  The following example, spindial.inf, lists the supporting files and the version information needed for the MFC Spindial control. Notice the location for the MFC DLLs is a Microsoft Web site. The mfc42.cab is provided and signed by Microsoft.  
@@ -123,9 +118,9 @@ C:\CabDevKit\cabarc.exe -s 6144 N spindial.cab spindial.ocx spindial.inf
  The `-s 6144` parameter reserves space in the cabinet for code signing.  
   
 ### The Version Tag  
- Note here that the `#Version` information specified with a CAB file applies to the control specified by the `CLASSID` parameter of the `<OBJECT>` tag.  
+ Note here that the `#Version` information specified with a CAB file applies to the control specified by the *CLASSID* parameter of the `<OBJECT>` tag.  
   
- Depending on the version specified, you can force download of your control. For complete specifications of the `OBJECT` tag including the `CODEBASE` parameter, see the W3C reference.  
+ Depending on the version specified, you can force download of your control. For complete specifications of the `OBJECT` tag including the *CODEBASE* parameter, see the W3C reference.  
   
 ##  <a name="_core_marking_a_control_safe_for_scripting_and_initializing"></a> Marking a Control Safe for Scripting and Initializing  
  ActiveX controls used in Web pages should be marked as safe for scripting and safe for initializing if they are in fact safe. A safe control will not perform disk IO or access the memory or registers of a machine directly.  
@@ -208,7 +203,7 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
 ##  <a name="_core_signing_code"></a> Signing Code  
  Code signing is designed to identify the source of code, and to guarantee that the code has not changed since it was signed. Depending on browser safety settings, users may be warned before the code is downloaded. Users may choose to trust certain certificate owners or companies, in which case code signed by those trusted will be downloaded without warning. Code is digitally signed to avoid tampering.  
   
- Make sure your final code is signed so that your control can be automatically downloaded without displaying trust warning messages. For details on how to sign code, check the documentation on Authenticode in the ActiveX SDK and see [Signing a CAB File](http://msdn.microsoft.com/en-us/04d8b47a-8f1c-4b54-ab90-730fcdc03747).  
+ Make sure your final code is signed so that your control can be automatically downloaded without displaying trust warning messages. For details on how to sign code, check the documentation on Authenticode in the ActiveX SDK and see [Signing a CAB File](/windows/desktop/devnotes/cabinet-api-functions).  
   
  Depending on trust and browser safety level settings, a certificate may be displayed to identify the signing person or company. If the safety level is none, or if the signed control's certificate owner is trusted, a certificate will not be displayed. See [Internet Explorer Browser Safety Levels and Control Behavior](#_core_internet_explorer_browser_safety_levels_and_control_behavior) for details on how the browser safety setting will determine whether your control is downloaded and a certificate displayed.  
   
@@ -223,7 +218,7 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
   
  Under OCX 96 guidelines, a control must always realize its palette in the background.  
   
- Older containers that do not use the ambient palette property will send `WM_QUERYNEWPALETTE` and `WM_PALETTECHANGED` messages. A control can override `OnQueryNewPalette` and `OnPaletteChanged` to handle these messages.  
+ Older containers that do not use the ambient palette property will send WM_QUERYNEWPALETTE and WM_PALETTECHANGED messages. A control can override `OnQueryNewPalette` and `OnPaletteChanged` to handle these messages.  
   
 ##  <a name="_core_internet_explorer_browser_safety_levels_and_control_behavior"></a> Internet Explorer Browser Safety Levels and Control Behavior  
  A browser has options for safety level, configurable by the user. Because Web pages can contain active content that might potentially harm a user's computer, browsers allow the user to select options for safety level. Depending on the way a browser implements safety levels, a control may not be downloaded at all, or will display a certificate or a warning message to allow the user to choose at run time whether or not to download the control. The behavior of ActiveX controls under high, medium, and low safety levels on Internet Explorer is listed below.  

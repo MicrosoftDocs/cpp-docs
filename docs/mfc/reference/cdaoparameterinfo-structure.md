@@ -2,19 +2,14 @@
 title: "CDaoParameterInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["CDaoParameterInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoParameterInfo structure [MFC]", "DAO (Data Access Objects), Parameters collection"]
 ms.assetid: 45fd53cd-cb84-4e12-b48d-7f2979f898ad
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDaoParameterInfo Structure
@@ -32,11 +27,11 @@ struct CDaoParameterInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  Uniquely names the parameter object. For more information, see the topic "Name Property" in DAO Help.  
   
- `m_nType`  
- A value that indicates the data type of a parameter object. For a list of the possible values, see the `m_nType` member of the [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure. For more information, see the topic "Type Property" in DAO Help.  
+ *m_nType*  
+ A value that indicates the data type of a parameter object. For a list of the possible values, see the *m_nType* member of the [CDaoFieldInfo](../../mfc/reference/cdaofieldinfo-structure.md) structure. For more information, see the topic "Type Property" in DAO Help.  
   
  *m_varValue*  
  The value of the parameter, stored in a [COleVariant](../../mfc/reference/colevariant-class.md) object.  

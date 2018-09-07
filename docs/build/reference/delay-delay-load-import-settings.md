@@ -2,19 +2,14 @@
 title: "-DELAY (Delay Load Import Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/delay", "VC.Project.VCLinkerTool.DelayNoBind", "VC.Project.VCLinkerTool.SupportUnloadOfDelayLoadedDLL", "VC.Project.VCLinkerTool.DelayUnload"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["delayed loading of DLLs, /DELAY option", "DELAY linker option", "/DELAY linker option", "-DELAY linker option"]
 ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /DELAY (Delay Load Import Settings)
@@ -32,7 +27,7 @@ ms.workload: ["cplusplus"]
   
 -   The NOBIND qualifier tells the linker not to include a bindable IAT in the final image. The default is to create the bindable IAT for delay-loaded DLLs. The resulting image cannot be statically bound. (Images with bindable IATs may be statically bound prior to execution.) See [/BIND](../../build/reference/bind.md).  
   
-     If the DLL is bound, the helper function will attempt to use the bound information instead of calling [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) on each of the referenced imports. If either the timestamp or the preferred address does not match those of the loaded DLL, the helper function will assume the bound IAT is out of date and will proceed as if the bound IAT does not exist.  
+     If the DLL is bound, the helper function will attempt to use the bound information instead of calling [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) on each of the referenced imports. If either the timestamp or the preferred address does not match those of the loaded DLL, the helper function will assume the bound IAT is out of date and will proceed as if the bound IAT does not exist.  
   
      NOBIND causes your program image to be larger but can speed load time of the DLL. If you never intend to bind the DLL, NOBIND will prevent the bound IAT from being generated.  
   

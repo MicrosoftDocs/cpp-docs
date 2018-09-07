@@ -2,18 +2,13 @@
 title: "Using Visual C++ Add New Item Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Add New Item", "Add New Item templates", "Add New Item command", "templates, Add New Item"]
 ms.assetid: 286d1be6-0473-407f-9a51-437dff1bfab7
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using Visual C++ Add New Item Templates
@@ -36,7 +31,7 @@ You can easily add items that are common to Visual C++ projects by using the **A
 |Header File (.h)|Creates a C++ header file.|  
 |HTML Page (.htm)|Creates a blank HTML file.|  
 |Icon File (.ico)|Creates a Win32 icon file.|  
-|Installer Class|Adds a class that inherits from the [Installer Class](https://msdn.microsoft.com/en-us/library/system.configuration.install.installer.aspx) using CLR features.|  
+|Installer Class|Adds a class that inherits from the [Installer Class](https://msdn.microsoft.com/library/system.configuration.install.installer.aspx) using CLR features.|  
 |MIDL File (.idl)|Creates an Interface Definition Language file.|  
 |Module-Definition File (.def)|Creates a DLL export definition file.|  
 |Property Sheet (.props)|Creates a Visual C++ property sheet file.|  

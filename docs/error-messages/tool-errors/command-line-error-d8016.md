@@ -2,19 +2,14 @@
 title: "Command-Line Error D8016 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["D8016"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["D8016"]
 ms.assetid: eec51312-7471-4f92-94b2-d517cafc8ef5
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Error D8016
@@ -26,6 +21,6 @@ ms.workload: ["cplusplus"]
   
  **/clr** implies **/EHa**, and you cannot specify any other **/EH** compiler option with **/clr**. For more information, see [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md).  
   
- You may get D8016 after updating a [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] 6.0 project: the project update wizard process may enable **/RTC** for each source code file in the project, which overrides the **/RTC** setting for the project.  To resolve, change the **/RTC** setting for each source code file in the project to the default setting, which means the project setting for **/RTC** will be in effect for each file.  
+ You may get D8016 after updating a Visual C++ 6.0 project: the project update wizard process may enable **/RTC** for each source code file in the project, which overrides the **/RTC** setting for the project.  To resolve, change the **/RTC** setting for each source code file in the project to the default setting, which means the project setting for **/RTC** will be in effect for each file.  
   
  See [/RTC (Run-Time Error Checks)](../../build/reference/rtc-run-time-error-checks.md) for information on changing the **/RTC** property setting.

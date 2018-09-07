@@ -2,18 +2,13 @@
 title: "Creating a Consumer Without Using a Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumers, creating"]
 ms.assetid: e8241cfe-5faf-48f8-9de3-241203de020b
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Creating a Consumer Without Using a Wizard
@@ -23,7 +18,7 @@ The following example assumes that you are adding OLE DB consumer support to an 
   
 -   In your Stdafx.h file, append the following `#include` statements:  
   
-    ```  
+    ```cpp  
     #include <atlbase.h>  
     #include <atldbcli.h>  
     #include <atldbsch.h> // if you are using schema templates  
@@ -38,15 +33,15 @@ The following example assumes that you are adding OLE DB consumer support to an 
   
 -   Instantiate a data source and a session. Decide what type of accessor and rowset to use and then instantiate a rowset using [CCommand](../../data/oledb/ccommand-class.md) or [CTable](../../data/oledb/ctable-class.md):  
   
-    ```  
+    ```cpp  
     CDataSource ds;  
     CSession ss;  
-    class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor> >  
+    class CMyTableName : public CCommand<CAccessor<CMyTableNameAccessor>>  
     ```  
   
--   Call **CoInitialize** to initialize COM. This is usually called in the main code. For example:  
+-   Call `CoInitialize` to initialize COM. This is usually called in the main code. For example:  
   
-    ```  
+    ```cpp  
     HRESULT hr = CoInitialize(NULL);  
     ```  
   
@@ -54,7 +49,7 @@ The following example assumes that you are adding OLE DB consumer support to an 
   
 -   Open a connection to the data source, open the session, and open and initialize the rowset (and if a command, also execute it):  
   
-    ```  
+    ```cpp  
     hr = ds.Open();  
     hr = ss.Open(ds);  
     hr = rs.Open();            // (Open also executes the command)  
@@ -66,15 +61,15 @@ The following example assumes that you are adding OLE DB consumer support to an 
   
 -   When your application is done, close the connection, session, and rowset:  
   
-    ```  
+    ```cpp  
     rs.Close();  
     ss.Close();  
     ds.Close();  
     ```  
   
-     If you are using a command, you might want to call `ReleaseCommand` after **Close**. The code example in [CCommand::Close](../../data/oledb/ccommand-close.md) shows how to call **Close** and `ReleaseCommand`.  
+     If you are using a command, you might want to call `ReleaseCommand` after `Close`. The code example in [CCommand::Close](../../data/oledb/ccommand-close.md) shows how to call `Close` and `ReleaseCommand`.  
   
--   Call **CoUnInitialize** to uninitialize COM. This is usually called in the main code.  
+-   Call `CoUnInitialize` to uninitialize COM. This is usually called in the main code.  
   
     ```  
     CoUninitialize();  

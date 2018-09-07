@@ -2,22 +2,18 @@
 title: "General Property Page (Project) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCConfiguration.IntermediateDirectory", "VC.Project.VCConfiguration.ConfigurationType", "VC.Project.VCConfiguration.ManagedExtensions", "VC.Project.VCConfiguration.BuildBrowserInformation", "VC.Project.VCConfiguration.BuildLogFile", "VC.Project.VCConfiguration.PlatformToolset", "VC.Project.VCConfiguration.TargetName", "VC.Project.VCConfiguration.", "VC.Project.VCConfiguration.TargetExt", "VC.Project.VCConfiguration.ATLMinimizesCRunTimeLibraryUsage", "VC.Project.VCConfiguration.ReferencesPath", "VC.Project.VCConfiguration.DeleteExtensionsOnClean", "VC.Project.VCConfiguration.useOfMfc", "VC.Project.VCConfiguration.CharacterSet", "VC.Project.VCGeneralMakefileSettings.ConfigurationType", "VC.Project.VCConfiguration.OutputDirectory", "VC.Project.VCConfiguration.AppSupport", "VC.Project.VCConfiguration.ToolFiles", "VC.Project.VCConfiguration.useOfATL"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Clean Build option", "output files, setting directory", "Unicode, creating C++ build configuration"]
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # General Property Page (Project)
 
-When you right-click on a project node in in Solution Explorer, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays two sections of properties:
+When you right-click on a project node in Solution Explorer, and select **Properties**, the **General** property page under the **Configuration Properties** node in the left pane displays two sections of properties:
 
 - General
 
@@ -122,7 +118,7 @@ In managed projects, specifies the .NET framework version to target.
 Specifies the [/GL](../build/reference/gl-whole-program-optimization.md) compiler option and [/LTCG](../build/reference/ltcg-link-time-code-generation.md) linker option. By default, this is disabled for Debug configurations, and enabled for Retail configurations.
 
 **Windows Store App Support**  
-Specifies whether this project supports Windows Store apps. For more information, see [/ZW (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md), and the Windows Developer Center.
+Specifies whether this project supports Windows Runtime (Universal Windows Platform) apps. For more information, see [/ZW (Windows Runtime Compilation)](../build/reference/zw-windows-runtime-compilation.md), and the Windows Developer Center.
 
 ## See also
 

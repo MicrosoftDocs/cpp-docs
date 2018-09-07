@@ -2,17 +2,12 @@
 title: "Structures, Unions, Enumerations, and Bit Fields | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 ms.assetid: 53f72553-c716-41fb-8384-89dc6712ee2a
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Structures, Unions, Enumerations, and Bit Fields
@@ -27,4 +22,4 @@ ms.workload: ["cplusplus"]
 -   [The enum Type](../c-language/enum-type.md)  
   
 ## See Also  
- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)

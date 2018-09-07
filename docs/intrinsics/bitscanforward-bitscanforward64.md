@@ -2,19 +2,14 @@
 title: "_BitScanForward, _BitScanForward64 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_BitScanForward", "_BitScanForward_cpp", "_BitScanForward64_cpp", "_BitScanForward64"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_BitScanForward intrinsic", "bsf instruction", "BitScanForward intrinsic"]
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _BitScanForward, _BitScanForward64
@@ -52,8 +47,8 @@ unsigned char _BitScanForward64(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_BitScanForward`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_BitScanForward64`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_BitScanForward`|x86, ARM, x64|  
+|`_BitScanForward64`|ARM, x64|  
   
  **Header file** \<intrin.h>  
   

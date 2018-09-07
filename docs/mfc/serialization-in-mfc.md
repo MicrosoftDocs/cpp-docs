@@ -2,18 +2,13 @@
 title: "Serialization in MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["collection classes [MFC], serialization", "bypassing serialization [MFC]", "MFC, serialization", "serialization [MFC], MFC", "serialization [MFC], bypassing"]
 ms.assetid: fb596a18-4522-47e0-96e0-192732d24c12
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Serialization in MFC
@@ -32,7 +27,7 @@ This article explains the serialization mechanism provided in the Microsoft Foun
 > [!NOTE]
 >  Do not confuse the `CArchive` class with general-purpose iostream classes, which are for formatted text only. The `CArchive` class is for binary-format serialized objects.  
   
- If you want, you can bypass MFC serialization to create your own mechanism for persistent data storage. You will need to override the class member functions that initiate serialization at the user's command. See the discussion in [Technical Note 22](../mfc/tn022-standard-commands-implementation.md) of the `ID_FILE_OPEN`, **ID_FILE_SAVE**, and **ID_FILE_SAVE_AS** standard commands.  
+ If you want, you can bypass MFC serialization to create your own mechanism for persistent data storage. You will need to override the class member functions that initiate serialization at the user's command. See the discussion in [Technical Note 22](../mfc/tn022-standard-commands-implementation.md) of the ID_FILE_OPEN, ID_FILE_SAVE, and ID_FILE_SAVE_AS standard commands.  
   
  The following articles cover the two main tasks required for serialization:  
   

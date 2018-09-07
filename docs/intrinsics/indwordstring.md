@@ -2,19 +2,14 @@
 title: "__indwordstring | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__indwordstring", "__indwordstring_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__indwordstring intrinsic", "rep insd instruction"]
 ms.assetid: 96a1cf33-f691-4916-99e4-fa849b61e3a9
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __indwordstring
@@ -46,7 +41,7 @@ void __indwordstring(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__indwordstring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__indwordstring`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

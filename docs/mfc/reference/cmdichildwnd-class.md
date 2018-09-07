@@ -2,19 +2,14 @@
 title: "CMDIChildWnd Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMDIChildWnd", "AFXWIN/CMDIChildWnd", "AFXWIN/CMDIChildWnd::CMDIChildWnd", "AFXWIN/CMDIChildWnd::Create", "AFXWIN/CMDIChildWnd::GetMDIFrame", "AFXWIN/CMDIChildWnd::MDIActivate", "AFXWIN/CMDIChildWnd::MDIDestroy", "AFXWIN/CMDIChildWnd::MDIMaximize", "AFXWIN/CMDIChildWnd::MDIRestore", "AFXWIN/CMDIChildWnd::SetHandles"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMDIChildWnd [MFC], CMDIChildWnd", "CMDIChildWnd [MFC], Create", "CMDIChildWnd [MFC], GetMDIFrame", "CMDIChildWnd [MFC], MDIActivate", "CMDIChildWnd [MFC], MDIDestroy", "CMDIChildWnd [MFC], MDIMaximize", "CMDIChildWnd [MFC], MDIRestore", "CMDIChildWnd [MFC], SetHandles"]
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMDIChildWnd Class
@@ -53,21 +48,21 @@ class CMDIChildWnd : public CFrameWnd
   
  There are three ways to construct an MDI child window:  
   
--   Directly construct it using **Create**.  
+-   Directly construct it using `Create`.  
   
 -   Directly construct it using `LoadFrame`.  
   
 -   Indirectly construct it through a document template.  
   
- Before you call **Create** or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling **Create** you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
+ Before you call `Create` or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling `Create` you can also register a window class with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
   
- Use the **Create** member function to pass the frame's creation parameters as immediate arguments.  
+ Use the `Create` member function to pass the frame's creation parameters as immediate arguments.  
   
- `LoadFrame` requires fewer arguments than **Create**, and instead retrieves most of its default values from resources, including the frame's caption, icon, accelerator table, and menu. To be accessible by `LoadFrame`, all these resources must have the same resource ID (for example, **IDR_MAINFRAME**).  
+ `LoadFrame` requires fewer arguments than `Create`, and instead retrieves most of its default values from resources, including the frame's caption, icon, accelerator table, and menu. To be accessible by `LoadFrame`, all these resources must have the same resource ID (for example, IDR_MAINFRAME).  
   
  When a `CMDIChildWnd` object contains views and documents, they are created indirectly by the framework instead of directly by the programmer. The `CDocTemplate` object orchestrates the creation of the frame, the creation of the containing views, and the connection of the views to the appropriate document. The parameters of the `CDocTemplate` constructor specify the `CRuntimeClass` of the three classes involved (document, frame, and view). A `CRuntimeClass` object is used by the framework to dynamically create new frames when specified by the user (for example, by using the File New command or the MDI Window New command).  
   
- A frame-window class derived from `CMDIChildWnd` must be declared with `DECLARE_DYNCREATE` in order for the above `RUNTIME_CLASS` mechanism to work correctly.  
+ A frame-window class derived from `CMDIChildWnd` must be declared with DECLARE_DYNCREATE in order for the above RUNTIME_CLASS mechanism to work correctly.  
   
  The `CMDIChildWnd` class inherits much of its default implementation from `CFrameWnd`. For a detailed list of these features, please refer to the [CFrameWnd](../../mfc/reference/cframewnd-class.md) class description. The `CMDIChildWnd` class has the following additional features:  
   
@@ -101,7 +96,7 @@ CMDIChildWnd();
 ```  
   
 ### Remarks  
- Call **Create** to create the visible window.  
+ Call `Create` to create the visible window.  
   
 ### Example  
   See the example for [CMDIChildWnd::Create](#create).  
@@ -120,31 +115,31 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `lpszClassName`  
- Points to a null-terminated character string that names the Windows class (a [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function. Should be **NULL** for a standard `CMDIChildWnd`.  
+ *lpszClassName*  
+ Points to a null-terminated character string that names the Windows class (a [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure). The class name can be any name registered with the [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) global function. Should be NULL for a standard `CMDIChildWnd`.  
   
- `lpszWindowName`  
+ *lpszWindowName*  
  Points to a null-terminated character string that represents the window name. Used as text for the title bar.  
   
- `dwStyle`  
- Specifies the window [style](../../mfc/reference/styles-used-by-mfc.md#window-styles) attributes. The **WS_CHILD** style is required.  
+ *dwStyle*  
+ Specifies the window [style](../../mfc/reference/styles-used-by-mfc.md#window-styles) attributes. The WS_CHILD style is required.  
   
- `rect`  
+ *rect*  
  Contains the size and position of the window. The `rectDefault` value allows Windows to specify the size and position of the new `CMDIChildWnd`.  
   
- `pParentWnd`  
- Specifies the window's parent. If **NULL**, the main application window is used.  
+ *pParentWnd*  
+ Specifies the window's parent. If NULL, the main application window is used.  
   
- `pContext`  
- Specifies a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure. This parameter can be **NULL**.  
+ *pContext*  
+ Specifies a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure. This parameter can be NULL.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The currently active MDI child frame window can determine the caption of the parent frame window. This feature is disabled by turning off the **FWS_ADDTOTITLE** style bit of the child frame window.  
+ The currently active MDI child frame window can determine the caption of the parent frame window. This feature is disabled by turning off the FWS_ADDTOTITLE style bit of the child frame window.  
   
- The framework calls this member function in response to a user command to create a child window, and the framework uses the `pContext` parameter to properly connect the child window to the application. When you call **Create**, `pContext` can be **NULL**.  
+ The framework calls this member function in response to a user command to create a child window, and the framework uses the *pContext* parameter to properly connect the child window to the application. When you call `Create`, *pContext* can be NULL.  
   
 ### Example  
  Example 1:  
@@ -169,7 +164,7 @@ CMDIFrameWnd* GetMDIFrame();
  A pointer to the MDI parent frame window.  
   
 ### Remarks  
- The frame returned is two parents removed from the `CMDIChildWnd` and is the parent of the window of type **MDICLIENT** that manages the `CMDIChildWnd` object. Call the [GetParent](../../mfc/reference/cwnd-class.md#getparent) member function to return the `CMDIChildWnd` object's immediate **MDICLIENT** parent as a temporary `CWnd` pointer.  
+ The frame returned is two parents removed from the `CMDIChildWnd` and is the parent of the window of type MDICLIENT that manages the `CMDIChildWnd` object. Call the [GetParent](../../mfc/reference/cwnd-class.md#getparent) member function to return the `CMDIChildWnd` object's immediate MDICLIENT parent as a temporary `CWnd` pointer.  
   
 ### Example  
   See the example for [CMDIFrameWnd::MDISetMenu](../../mfc/reference/cmdiframewnd-class.md#mdisetmenu).  
@@ -233,10 +228,10 @@ void SetHandles(
 ```  
   
 ### Parameters  
- `hMenu`  
+ *hMenu*  
  The handle of a menu resource.  
   
- `hAccel`  
+ *hAccel*  
  The handle of an accelerator resource.  
   
 ### Remarks  

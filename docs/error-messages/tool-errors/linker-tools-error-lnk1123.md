@@ -2,17 +2,13 @@
 title: "Linker Tools Error LNK1123 | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/29/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK1123"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1123"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1123
@@ -34,7 +30,7 @@ Input files must have the Common Object File Format (COFF) format. If an input f
 
 - Try turning off the Embed Manifest option. On the menu bar, choose **Project**, **Properties**. In the **Property Pages** dialog box, expand **Configuration Properties**, **Manifest Tool**, **Input and Output**. Change the value of **Embed Manifest** to **No**.
 
-- Make sure that the file type is valid. For example, make sure that an OMF object is 32-bit and not 16-bit. For more information, see [.Obj Files as Linker Input](../../build/reference/dot-obj-files-as-linker-input.md) and [PE Format](https://msdn.microsoft.com/library/windows/desktop/ms680547).
+- Make sure that the file type is valid. For example, make sure that an OMF object is 32-bit and not 16-bit. For more information, see [.Obj Files as Linker Input](../../build/reference/dot-obj-files-as-linker-input.md) and [PE Format](/windows/desktop/Debug/pe-format).
 
 - Make sure that the file is not corrupt. Rebuild it, if necessary.
 

@@ -2,19 +2,14 @@
 title: "CStdioFile Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CStdioFile", "AFX/CStdioFile", "AFX/CStdioFile::CStdioFile", "AFX/CStdioFile::Open", "AFX/CStdioFile::ReadString", "AFX/CStdioFile::Seek", "AFX/CStdioFile::WriteString", "AFX/CStdioFile::m_pStream"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CStdioFile [MFC], CStdioFile", "CStdioFile [MFC], Open", "CStdioFile [MFC], ReadString", "CStdioFile [MFC], Seek", "CStdioFile [MFC], WriteString", "CStdioFile [MFC], m_pStream"]
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CStdioFile Class
@@ -91,28 +86,28 @@ CStdioFile(
 ```  
   
 ### Parameters  
- `pOpenStream`  
+ *pOpenStream*  
  Specifies the file pointer returned by a call to the C run-time function [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
   
- `lpszFileName`  
+ *lpszFileName*  
  Specifies a string that is the path to the desired file. The path can be relative or absolute.  
   
- `nOpenFlags`  
- Specifies options for file creation, file sharing, and file access modes. You can specify multiple options by using the bitwise OR ( `|`) operator.  
+ *nOpenFlags*  
+ Specifies options for file creation, file sharing, and file access modes. You can specify multiple options by using the bitwise OR ( **|** ) operator.  
   
  One file access mode option is required; other modes are optional. See [CFile::CFile](../../mfc/reference/cfile-class.md#cfile) for a list of mode options and other flags. In MFC version 3.0 and later, share flags are allowed.  
   
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object.  
   
 ### Remarks  
  The default constructor does not attach a file to the `CStdioFile` object. When using this constructor, you must use the `CStdioFile::Open` method to open a file and attach it to the `CStdioFile` object.  
   
- The single-parameter constructor attaches an open file stream to the `CStdioFile` object. Allowed pointer values include the predefined input/output file pointers `stdin`, `stdout`, or `stderr`.  
+ The single-parameter constructor attaches an open file stream to the `CStdioFile` object. Allowed pointer values include the predefined input/output file pointers *stdin*, *stdout*, or *stderr*.  
   
  The two-parameter constructor creates a `CStdioFile` object and opens the corresponding file with the given path.  
   
- If you pass `NULL` for either `pOpenStream` or `lpszFileName`, the constructor throws a `CInvalidArgException*`.  
+ If you pass NULL for either *pOpenStream* or *lpszFileName*, the constructor throws a `CInvalidArgException*`.  
   
  If the file cannot be opened or created, the constructor throws a `CFileException*`.  
   
@@ -127,7 +122,7 @@ FILE* m_pStream;
 ```  
   
 ### Remarks  
- It is **NULL** if the file has never been opened or has been closed.  
+ It is NULL if the file has never been opened or has been closed.  
   
 ##  <a name="open"></a>  CStdioFile::Open  
  Overloaded. Open is designed for use with the default `CStdioFile` constructor.  
@@ -147,25 +142,25 @@ virtual BOOL Open(
 ```  
   
 ### Parameters  
- `lpszFileName`  
+ *lpszFileName*  
  A string that is the path to the desired file. The path can be relative or absolute.  
   
- `nOpenFlags`  
+ *nOpenFlags*  
  Sharing and access mode. Specifies the action to take when opening the file. You can combine options by using the bitwise-OR (&#124;) operator. One access permission and one share option are required; the modeCreate and modeNoInherit modes are optional.  
   
- `pError`  
+ *pError*  
  A pointer to an existing file-exception object that will receive the status of a failed operation.  
   
- `pTM`  
+ *pTM*  
  Pointer to a `CAtlTransactionManager` object.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
   
 ##  <a name="readstring"></a>  CStdioFile::ReadString  
- Reads text data into a buffer, up to a limit of `nMax`-1 characters, from the file associated with the `CStdioFile` object.  
+ Reads text data into a buffer, up to a limit of *nMax*-1 characters, from the file associated with the `CStdioFile` object.  
   
 ```  
 virtual LPTSTR ReadString(
@@ -176,25 +171,25 @@ virtual BOOL ReadString(CString& rString);
 ```  
   
 ### Parameters  
- `lpsz`  
+ *lpsz*  
  Specifies a pointer to a user-supplied buffer that will receive a null-terminated text string.  
   
- `nMax`  
+ *nMax*  
  Specifies the maximum number of characters to read, not counting the terminating null character.  
   
- `rString`  
+ *rString*  
  A reference to a `CString` object that will contain the string when the function returns.  
   
 ### Return Value  
- A pointer to the buffer containing the text data. **NULL** if end-of-file was reached without reading any data; or if boolean, **FALSE** if end-of-file was reached without reading any data.  
+ A pointer to the buffer containing the text data. NULL if end-of-file was reached without reading any data; or if boolean, FALSE if end-of-file was reached without reading any data.  
   
 ### Remarks  
- Reading is stopped by the first newline character. If, in that case, fewer than `nMax`-1 characters have been read, a newline character is stored in the buffer. A null character ('\0') is appended in either case.  
+ Reading is stopped by the first newline character. If, in that case, fewer than *nMax*-1 characters have been read, a newline character is stored in the buffer. A null character ('\0') is appended in either case.  
   
  [CFile::Read](../../mfc/reference/cfile-class.md#read) is also available for text-mode input, but it does not terminate on a carriage return-linefeed pair.  
   
 > [!NOTE]
->  The `CString` version of this function removes the `'\n'` if present; the `LPTSTR` version does not.  
+>  The `CString` version of this function removes the `'\n'` if present; the LPTSTR version does not.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#38](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_2.cpp)]  
@@ -209,17 +204,17 @@ virtual ULONGLONG Seek(
 ```  
   
 ### Parameters  
- `lOff`  
+ *lOff*  
  Number of bytes to move the pointer.  
   
- `nFrom`  
+ *nFrom*  
  Pointer movement mode. Must be one of the following values:  
   
-- `CFile::begin`: Move the file pointer `lOff` bytes forward from the beginning of the file.  
+- `CFile::begin`: Move the file pointer *lOff* bytes forward from the beginning of the file.  
   
-- `CFile::current`: Move the file pointer `lOff` bytes from the current position in the file.  
+- `CFile::current`: Move the file pointer *lOff* bytes from the current position in the file.  
   
-- `CFile::end`: Move the file pointer `lOff` bytes from the end of the file. Note that `lOff` must be negative to seek into the existing file; positive values will seek past the end of the file.  
+- `CFile::end`: Move the file pointer *lOff* bytes from the end of the file. Note that *lOff* must be negative to seek into the existing file; positive values will seek past the end of the file.  
   
 ### Return Value  
  If the requested position is legal, `Seek` returns the new byte offset from the beginning of the file. Otherwise, the return value is undefined and a `CFileException` object is thrown.  
@@ -244,15 +239,15 @@ virtual void WriteString(LPCTSTR lpsz);
 ```  
   
 ### Parameters  
- `lpsz`  
+ *lpsz*  
  Specifies a pointer to a buffer that contains a null-terminated string.  
   
 ### Remarks  
- The terminating null character ( `\0`) is not written to the file. This method writes newline characters in `lpsz` to the file as a carriage return/linefeed pair.  
+ The terminating null character ( `\0`) is not written to the file. This method writes newline characters in *lpsz* to the file as a carriage return/linefeed pair.  
   
  If you want to write data that is not null-terminated to a file, use `CStdioFile::Write` or [CFile::Write](../../mfc/reference/cfile-class.md#write).  
   
- This method throws a `CInvalidArgException*` if you specify `NULL` for the `lpsz` parameter.  
+ This method throws a `CInvalidArgException*` if you specify NULL for the *lpsz* parameter.  
   
  This method throws a `CFileException*` in response to file system errors.  
   

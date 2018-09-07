@@ -1,19 +1,14 @@
 ---
 title: "C++ Language Reference | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["language reference", "C++, language reference", "language reference, Visual C++", "Visual C++, language reference"]
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C++ Language Reference
@@ -51,19 +46,16 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  Expression, null, compound, selection, iteration, jump, and declaration statements.  
   
  [Declarations and Definitions](declarations-and-definitions-cpp.md)  
- Storage-class specifiers, function definitions, initializations, enumerations, class, struct, and union declarations, and typedef declarations. Also, inline functions, const keyword, namespaces.  
-  
- [Declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838)  
- The portion of a declaration statement that names an object, type, or function. Abstract declarators, type names, initializers, function declarations and definitions, arrays, references.  
+ Storage-class specifiers, function definitions, initializations, enumerations, **class**, **struct**, and **union** declarations, and **typedef** declarations. Also, **inline** functions, **const** keyword, namespaces.  
   
  [Classes, Structures, and Unions](../cpp/classes-and-structs-cpp.md)  
- Introduction to classes, structures, and unions. Also, member functions, special member functions, data members, bit fields, this pointer, nested classes.  
+ Introduction to classes, structures, and unions. Also, member functions, special member functions, data members, bit fields, **this** pointer, nested classes.  
   
  [Derived Classes](../cpp/inheritance-cpp.md)  
- Single and multiple inheritance, virtual functions, multiple base classes, abstract classes, scope rules. Also, the __super and \__interface keywords.  
+ Single and multiple inheritance, **virtual** functions, multiple base classes, **abstract** classes, scope rules. Also, the **__super** and **__interface** keywords.  
   
  [Member-Access Control](../cpp/member-access-control-cpp.md)  
- Controlling access to class members: public, private, and protected keywords. Friend functions and classes.  
+ Controlling access to class members: **public**, **private**, and **protected** keywords. Friend functions and classes.  
   
  [Overloading](operator-overloading.md)  
  Overloaded operators, rules for operator overloading.  
@@ -72,19 +64,19 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  C++ exception handling, structured exception handling (SEH), keywords used in writing exception handling statements.  
   
  [Assertion and User-Supplied Messages](../cpp/assertion-and-user-supplied-messages-cpp.md)  
- `#error` directive, the `static_assert` keyword, the `assert` macro.  
+ `#error` directive, the **static_assert** keyword, the `assert` macro.  
   
  [Templates](../cpp/templates-cpp.md)  
- Template specifications, function templates, class templates, typename keyword, templates vs. macros, templates and smart pointers.  
+ Template specifications, function templates, class templates, **typename** keyword, templates vs. macros, templates and smart pointers.  
   
  [Event Handling](../cpp/event-handling.md)  
  Declaring events and event handlers.  
   
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)  
- Modifiers specific to Microsoft C++. Memory addressing, calling conventions, naked functions, extended storage-class attributes (__declspec), \__w64.  
+ Modifiers specific to Microsoft C++. Memory addressing, calling conventions, **naked** functions, extended storage-class attributes (**__declspec**), **__w64**.  
   
  [Inline Assembler](../assembler/inline/inline-assembler.md)  
- Using assembly language and C++ in __asm blocks.  
+ Using assembly language and C++ in **__asm** blocks.  
   
  [Compiler COM Support](../cpp/compiler-com-support.md)  
  A reference to Microsoft-specific classes and global functions used to support COM types.  
@@ -111,5 +103,5 @@ For an overview of Modern C++ programming practices, see [Welcome Back to C++](w
  [Visual C++ Libraries](../standard-library/cpp-standard-library-reference.md)  
  A list of links to the reference start pages for the various Visual C++ libraries.  
   
-## See Also  
+## See also  
  [C Language Reference](../c-language/c-language-reference.md)

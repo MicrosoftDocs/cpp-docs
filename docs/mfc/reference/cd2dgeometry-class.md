@@ -2,19 +2,14 @@
 title: "CD2DGeometry Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DGeometry", "AFXRENDERTARGET/CD2DGeometry", "AFXRENDERTARGET/CD2DGeometry::CD2DGeometry", "AFXRENDERTARGET/CD2DGeometry::Attach", "AFXRENDERTARGET/CD2DGeometry::CombineWithGeometry", "AFXRENDERTARGET/CD2DGeometry::CompareWithGeometry", "AFXRENDERTARGET/CD2DGeometry::ComputeArea", "AFXRENDERTARGET/CD2DGeometry::ComputeLength", "AFXRENDERTARGET/CD2DGeometry::ComputePointAtLength", "AFXRENDERTARGET/CD2DGeometry::Destroy", "AFXRENDERTARGET/CD2DGeometry::Detach", "AFXRENDERTARGET/CD2DGeometry::FillContainsPoint", "AFXRENDERTARGET/CD2DGeometry::Get", "AFXRENDERTARGET/CD2DGeometry::GetBounds", "AFXRENDERTARGET/CD2DGeometry::GetWidenedBounds", "AFXRENDERTARGET/CD2DGeometry::IsValid", "AFXRENDERTARGET/CD2DGeometry::Outline", "AFXRENDERTARGET/CD2DGeometry::Simplify", "AFXRENDERTARGET/CD2DGeometry::StrokeContainsPoint", "AFXRENDERTARGET/CD2DGeometry::Tessellate", "AFXRENDERTARGET/CD2DGeometry::Widen", "AFXRENDERTARGET/CD2DGeometry::m_pGeometry"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DGeometry [MFC], CD2DGeometry", "CD2DGeometry [MFC], Attach", "CD2DGeometry [MFC], CombineWithGeometry", "CD2DGeometry [MFC], CompareWithGeometry", "CD2DGeometry [MFC], ComputeArea", "CD2DGeometry [MFC], ComputeLength", "CD2DGeometry [MFC], ComputePointAtLength", "CD2DGeometry [MFC], Destroy", "CD2DGeometry [MFC], Detach", "CD2DGeometry [MFC], FillContainsPoint", "CD2DGeometry [MFC], Get", "CD2DGeometry [MFC], GetBounds", "CD2DGeometry [MFC], GetWidenedBounds", "CD2DGeometry [MFC], IsValid", "CD2DGeometry [MFC], Outline", "CD2DGeometry [MFC], Simplify", "CD2DGeometry [MFC], StrokeContainsPoint", "CD2DGeometry [MFC], Tessellate", "CD2DGeometry [MFC], Widen", "CD2DGeometry [MFC], m_pGeometry"]
 ms.assetid: 3f95054b-fdb8-4e87-87f2-9fc3df7279ec
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DGeometry Class
@@ -95,7 +90,7 @@ void Attach(ID2D1Geometry* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dgeometry"></a>  CD2DGeometry::CD2DGeometry  
@@ -108,10 +103,10 @@ CD2DGeometry(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="combinewithgeometry"></a>  CD2DGeometry::CombineWithGeometry  
@@ -127,19 +122,19 @@ BOOL CombineWithGeometry(
 ```  
   
 ### Parameters  
- `inputGeometry`  
+ *inputGeometry*  
  The geometry to combine with this instance.  
   
- `combineMode`  
+ *combineMode*  
  The type of combine operation to perform.  
   
- `inputGeometryTransform`  
+ *inputGeometryTransform*  
  The transform to apply to inputGeometry before combining.  
   
- `geometrySink`  
+ *geometrySink*  
  The result of the combine operation.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -156,13 +151,13 @@ D2D1_GEOMETRY_RELATION CompareWithGeometry(
 ```  
   
 ### Parameters  
- `inputGeometry`  
+ *inputGeometry*  
  The geometry to test.  
   
- `inputGeometryTransform`  
+ *inputGeometryTransform*  
  The transform to apply to inputGeometry.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -179,13 +174,13 @@ BOOL ComputeArea(
 ```  
   
 ### Parameters  
- `worldTransform`  
+ *worldTransform*  
  The transform to apply to this geometry before computing its area.  
   
- `area`  
+ *area*  
  When this method returns, contains a pointer to the area of the transformed, flattened version of this geometry. You must allocate storage for this parameter.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -202,13 +197,13 @@ BOOL ComputeLength(
 ```  
   
 ### Parameters  
- `worldTransform`  
+ *worldTransform*  
  The transform to apply to the geometry before calculating its length.  
   
- `length`  
+ *length*  
  When this method returns, contains a pointer to the length of the geometry. For closed geometries, the length includes an implicit closing segment. You must allocate storage for this parameter.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -227,19 +222,19 @@ BOOL ComputePointAtLength(
 ```  
   
 ### Parameters  
- `length`  
+ *length*  
  The distance along the geometry of the point and tangent to find. If this distance is less then 0, this method calculates the first point in the geometry. If this distance is greater than the length of the geometry, this method calculates the last point in the geometry.  
   
- `worldTransform`  
+ *worldTransform*  
  The transform to apply to the geometry before calculating the specified point and tangent.  
   
- `point`  
+ *point*  
  The location at the specified distance along the geometry. If the geometry is empty, this point contains NaN as its x and y values.  
   
- `unitTangentVector`  
+ *unitTangentVector*  
  When this method returns, contains a pointer to the tangent vector at the specified distance along the geometry. If the geometry is empty, this vector contains NaN as its x and y values. You must allocate storage for this parameter.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -274,16 +269,16 @@ BOOL FillContainsPoint(
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  The point to test.  
   
- `worldTransform`  
+ *worldTransform*  
  The transform to apply to the geometry prior to testing for containment.  
   
- `contains`  
+ *contains*  
  When this method returns, contains a bool value that is TRUE if the area filled by the geometry contains point; otherwise, FALSE. You must allocate storage for this parameter.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The numeric accuracy with which the precise geometric path and path intersection is calculated. Points missing the fill by less than the tolerance are still considered inside. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -308,8 +303,8 @@ CD2DRectF& bounds) const;
 ```  
   
 ### Parameters  
- `worldTransform`  
- `bounds`  
+ *worldTransform*  
+ *bounds*  
   
 ### Return Value  
   
@@ -326,19 +321,19 @@ BOOL GetWidenedBounds(
 ```  
   
 ### Parameters  
- `strokeWidth`  
+ *strokeWidth*  
  The amount by which to widen the geometry by stroking its outline.  
   
- `strokeStyle`  
+ *strokeStyle*  
  The style of the stroke that widens the geometry.  
   
- `worldTransform`  
+ *worldTransform*  
  A transform to apply to the geometry after the geometry is transformed and after the geometry has been stroked.  
   
- `bounds`  
+ *bounds*  
  When this method returns, contains the bounds of the widened geometry. You must allocate storage for this parameter.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometries. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -382,13 +377,13 @@ BOOL Outline(
 ```  
   
 ### Parameters  
- `worldTransform`  
+ *worldTransform*  
  The transform to apply to the geometry outline.  
   
- `geometrySink`  
+ *geometrySink*  
  The ID2D1SimplifiedGeometrySink to which the geometry transformed outline is appended.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -406,16 +401,16 @@ BOOL Simplify(
 ```  
   
 ### Parameters  
- `simplificationOption`  
+ *simplificationOption*  
  A value that specifies whether the simplified geometry should contain curves.  
   
- `worldTransform`  
+ *worldTransform*  
  The transform to apply to the simplified geometry.  
   
- `geometrySink`  
+ *geometrySink*  
  The ID2D1SimplifiedGeometrySink to which the simplified geometry is appended.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -435,22 +430,22 @@ BOOL StrokeContainsPoint(
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  The point to test for containment.  
   
- `strokeWidth`  
+ *strokeWidth*  
  The thickness of the stroke to apply.  
   
- `strokeStyle`  
+ *strokeStyle*  
  The style of the stroke to apply.  
   
- `worldTransform`  
+ *worldTransform*  
  The transform to apply to the stroked geometry.  
   
- `contains`  
+ *contains*  
  When this method returns, contains a boolean value set to TRUE if the geometry's stroke contains the specified point; otherwise, FALSE. You must allocate storage for this parameter.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The numeric accuracy with which the precise geometric path and path intersection is calculated. Points missing the stroke by less than the tolerance are still considered inside. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -467,13 +462,13 @@ BOOL Tessellate(
 ```  
   
 ### Parameters  
- `worldTransform`  
+ *worldTransform*  
  The transform to apply to this geometry, or NULL.  
   
- `tessellationSink`  
+ *tessellationSink*  
  The ID2D1TessellationSink to which the tessellated is appended.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  
@@ -492,19 +487,19 @@ BOOL Widen(
 ```  
   
 ### Parameters  
- `strokeWidth`  
+ *strokeWidth*  
  The amount by which to widen the geometry.  
   
- `strokeStyle`  
+ *strokeStyle*  
  The style of stroke to apply to the geometry, or NULL.  
   
- `worldTransform`  
+ *worldTransform*  
  The transform to apply to the geometry after widening it.  
   
- `geometrySink`  
+ *geometrySink*  
  The ID2D1SimplifiedGeometrySink to which the widened geometry is appended.  
   
- `flatteningTolerance`  
+ *flatteningTolerance*  
  The maximum bounds on the distance between points in the polygonal approximation of the geometry. Smaller values produce more accurate results but cause slower execution.  
   
 ### Return Value  

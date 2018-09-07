@@ -1,43 +1,30 @@
 {
   "build_entry_point": "docs",
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
-  "branch_target_mapping": {
-    "live": [
-      "Publish",
-      "Pdf"
-    ],
-    "master": [
-      "Publish",
-      "Pdf"
-    ]
-  },
-  "Targets": {
-    "Pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
   "docsets_to_publish": [
     {
       "docset_name": "vcppdocs",
       "build_source_folder": "docs",
       "build_output_subfolder": "vcppdocs",
       "locale": "en-us",
-      "version": 0,
+      "monikers": [],
+      "moniker_ranges": [">= vs-2015"],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],
-  "skip_source_output_uploading": false,
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/cpp-docs",
   "git_repository_branch_open_to_public_contributors": "master",
+  "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "enable_incremental_build": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -48,9 +35,26 @@
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
   "need_generate_pdf_url_template": true,
-  "enable_incremental_build": true
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false
 }

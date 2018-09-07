@@ -2,19 +2,14 @@
 title: "OLE DB Consumer Templates Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 f1_keywords: ["vc-attr.db_param", "vc-attr.db_column", "vc-attr.db_accessor", "vc-attr.db_command", "vc-attr.db_table", "vc.templates.ole", "vc-attr.db_source"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB consumer templates, classes"]
 ms.assetid: cfc7f698-1a0e-4a09-a4d3-ccb99e6654fe
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Consumer Templates Reference
@@ -87,7 +82,7 @@ The OLE DB Consumer Templates contain the following classes. The reference mater
  Used to manipulate, set, and retrieve rowset data.  
   
  [CStreamRowset](../../data/oledb/cstreamrowset-class.md)  
- Returns an `ISequentialStream` object rather than a rowset; you then use the **Read** method to retrieve data in XML format. (SQL Server 2000 does the formatting; note that this feature works with SQL Server 2000 only.)  
+ Returns an `ISequentialStream` object rather than a rowset; you then use the `Read` method to retrieve data in XML format. (SQL Server 2000 does the formatting; note that this feature works with SQL Server 2000 only.)  
   
  [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md)  
  Provides a dummy implementation for `IRowsetNotify`, with empty functions for the `IRowsetNotify` methods `OnFieldChange`, `OnRowChange`, and `OnRowsetChange`.  

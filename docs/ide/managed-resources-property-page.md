@@ -2,19 +2,14 @@
 title: "Managed Resources Property Page | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCManagedResourceCompilerTool.ResourceFileName", "VC.Project.VCManagedResourceCompilerTool.OutputFileName", "VC.Project.VCManagedResourceCompilerTool.DefaultLocalizedResources"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Managed Resources property page"]
 ms.assetid: 80b80384-ee55-494d-9f0e-907bb98cfc19
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Managed Resources Property Page
@@ -34,6 +29,6 @@ Enables settings for the resource compiler.
  For information on how to access the **Managed Resources** property page, see [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## See Also  
- [Using RC (The RC Command Line)](http://msdn.microsoft.com/library/windows/desktop/aa381055)   
+ [Using RC (The RC Command Line)](/windows/desktop/menurc/using-rc-the-rc-command-line-)   
  [Property Pages](../ide/property-pages-visual-cpp.md)   
  [/ASSEMBLYRESOURCE (Embed a Managed Resource)](../build/reference/assemblyresource-embed-a-managed-resource.md)

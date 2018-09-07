@@ -2,19 +2,14 @@
 title: "-NOLOGO (EDITBIN) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/nologo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-NOLOGO editbin option", "/NOLOGO editbin option", "NOLOGO editbin option"]
 ms.assetid: 909a1909-0c99-4bce-8013-bf161d645f19
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /NOLOGO (EDITBIN)

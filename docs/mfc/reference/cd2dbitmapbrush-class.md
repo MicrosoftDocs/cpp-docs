@@ -2,19 +2,14 @@
 title: "CD2DBitmapBrush Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush::CD2DBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush::Attach", "AFXRENDERTARGET/CD2DBitmapBrush::Create", "AFXRENDERTARGET/CD2DBitmapBrush::Destroy", "AFXRENDERTARGET/CD2DBitmapBrush::Detach", "AFXRENDERTARGET/CD2DBitmapBrush::Get", "AFXRENDERTARGET/CD2DBitmapBrush::GetBitmap", "AFXRENDERTARGET/CD2DBitmapBrush::GetExtendModeX", "AFXRENDERTARGET/CD2DBitmapBrush::GetExtendModeY", "AFXRENDERTARGET/CD2DBitmapBrush::GetInterpolationMode", "AFXRENDERTARGET/CD2DBitmapBrush::SetBitmap", "AFXRENDERTARGET/CD2DBitmapBrush::SetExtendModeX", "AFXRENDERTARGET/CD2DBitmapBrush::SetExtendModeY", "AFXRENDERTARGET/CD2DBitmapBrush::SetInterpolationMode", "AFXRENDERTARGET/CD2DBitmapBrush::CommonInit", "AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmap", "AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmapBrush", "AFXRENDERTARGET/CD2DBitmapBrush::m_pBitmapBrushProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DBitmapBrush [MFC], CD2DBitmapBrush", "CD2DBitmapBrush [MFC], Attach", "CD2DBitmapBrush [MFC], Create", "CD2DBitmapBrush [MFC], Destroy", "CD2DBitmapBrush [MFC], Detach", "CD2DBitmapBrush [MFC], Get", "CD2DBitmapBrush [MFC], GetBitmap", "CD2DBitmapBrush [MFC], GetExtendModeX", "CD2DBitmapBrush [MFC], GetExtendModeY", "CD2DBitmapBrush [MFC], GetInterpolationMode", "CD2DBitmapBrush [MFC], SetBitmap", "CD2DBitmapBrush [MFC], SetExtendModeX", "CD2DBitmapBrush [MFC], SetExtendModeY", "CD2DBitmapBrush [MFC], SetInterpolationMode", "CD2DBitmapBrush [MFC], CommonInit", "CD2DBitmapBrush [MFC], m_pBitmap", "CD2DBitmapBrush [MFC], m_pBitmapBrush", "CD2DBitmapBrush [MFC], m_pBitmapBrushProperties"]
 ms.assetid: 46ebbe34-66e0-44c8-af1d-d129e851de5e
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DBitmapBrush Class
@@ -100,7 +95,7 @@ void Attach(ID2D1BitmapBrush* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dbitmapbrush"></a>  CD2DBitmapBrush::CD2DBitmapBrush  
@@ -134,28 +129,28 @@ CD2DBitmapBrush(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `pBitmapBrushProperties`  
+ *pBitmapBrushProperties*  
  A pointer to the extend modes and the interpolation mode of a bitmap brush.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  A pointer to the opacity and transformation of a brush.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
- `uiResID`  
+ *uiResID*  
  The resource ID number of the resource.  
   
- `lpszType`  
+ *lpszType*  
  Pointer to a null-terminated string that contains the resource type.  
   
- `sizeDest`  
+ *sizeDest*  
  Destination size of the bitmap.  
   
- `lpszImagePath`  
+ *lpszImagePath*  
  Pointer to a null-terminated string that contains the name of file.  
   
 ##  <a name="commoninit"></a>  CD2DBitmapBrush::CommonInit  
@@ -166,7 +161,7 @@ void CommonInit(D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties);
 ```  
   
 ### Parameters  
- `pBitmapBrushProperties`  
+ *pBitmapBrushProperties*  
  A pointer to the bitmap brush properties.  
   
 ##  <a name="create"></a>  CD2DBitmapBrush::Create  
@@ -177,7 +172,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  
@@ -289,7 +284,7 @@ void SetBitmap(CD2DBitmap* pBitmap);
 ```  
   
 ### Parameters  
- `pBitmap`  
+ *pBitmap*  
  The bitmap source used by the brush  
   
 ##  <a name="setextendmodex"></a>  CD2DBitmapBrush::SetExtendModeX  
@@ -300,7 +295,7 @@ void SetExtendModeX(D2D1_EXTEND_MODE extendModeX);
 ```  
   
 ### Parameters  
- `extendModeX`  
+ *extendModeX*  
  A value that specifies how the brush horizontally tiles those areas that extend past its bitmap  
   
 ##  <a name="setextendmodey"></a>  CD2DBitmapBrush::SetExtendModeY  
@@ -311,7 +306,7 @@ void SetExtendModeY(D2D1_EXTEND_MODE extendModeY);
 ```  
   
 ### Parameters  
- `extendModeY`  
+ *extendModeY*  
  A value that specifies how the brush vertically tiles those areas that extend past its bitmap  
   
 ##  <a name="setinterpolationmode"></a>  CD2DBitmapBrush::SetInterpolationMode  
@@ -322,7 +317,7 @@ void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
 ```  
   
 ### Parameters  
- `interpolationMode`  
+ *interpolationMode*  
  The interpolation mode used when the brush bitmap is scaled or rotated  
   
 ## See Also  

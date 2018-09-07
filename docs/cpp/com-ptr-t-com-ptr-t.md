@@ -2,25 +2,20 @@
 title: "_com_ptr_t::_com_ptr_t | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_com_ptr_t::_com_ptr_t"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_com_ptr_t method [C++]"]
 ms.assetid: 0c00620a-28d2-4f60-ae4a-1696be36137e
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _com_ptr_t::_com_ptr_t
 **Microsoft Specific**  
   
- Constructs a `_com_ptr_t` object.  
+ Constructs a **_com_ptr_t** object.  
   
 ## Syntax  
   
@@ -137,32 +132,32 @@ explicit _com_ptr_t( 
 ```  
   
 #### Parameters  
- `pInterface`  
+ *pInterface*  
  A raw interface pointer.  
   
- `fAddRef`  
- If **true**, `AddRef` is called to increment the reference count of the encapsulated interface pointer.  
+ *fAddRef*  
+ If TRUE, `AddRef` is called to increment the reference count of the encapsulated interface pointer.  
   
  *cp*  
- A `_com_ptr_t` object.  
+ A **_com_ptr_t** object.  
   
- `p`  
- A raw interface pointer, its type being different from the smart pointer type of this `_com_ptr_t` object.  
+ *p*  
+ A raw interface pointer, its type being different from the smart pointer type of this **_com_ptr_t** object.  
   
  *varSrc*  
  A `_variant_t` object.  
   
- `clsid`  
- The **CLSID** of a coclass.  
+ *clsid*  
+ The `CLSID` of a coclass.  
   
- `dwClsContext`  
+ *dwClsContext*  
  Context for running executable code.  
   
  *lpcStr*  
- A multibyte string that holds either a **CLSID** (starting with "**{**") or a **ProgID**.  
+ A multibyte string that holds either a `CLSID` (starting with "**{**") or a `ProgID`.  
   
- `pOuter`  
- The outer unknown for [aggregation](http://msdn.microsoft.com/library/windows/desktop/ms686558).  
+ *pOuter*  
+ The outer unknown for [aggregation](/windows/desktop/com/aggregation).  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

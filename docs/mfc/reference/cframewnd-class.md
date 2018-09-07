@@ -2,19 +2,14 @@
 title: "CFrameWnd Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CFrameWnd", "AFXWIN/CFrameWnd", "AFXWIN/CFrameWnd::CFrameWnd", "AFXWIN/CFrameWnd::ActivateFrame", "AFXWIN/CFrameWnd::BeginModalState", "AFXWIN/CFrameWnd::Create", "AFXWIN/CFrameWnd::CreateView", "AFXWIN/CFrameWnd::DockControlBar", "AFXWIN/CFrameWnd::EnableDocking", "AFXWIN/CFrameWnd::EndModalState", "AFXWIN/CFrameWnd::FloatControlBar", "AFXWIN/CFrameWnd::GetActiveDocument", "AFXWIN/CFrameWnd::GetActiveFrame", "AFXWIN/CFrameWnd::GetActiveView", "AFXWIN/CFrameWnd::GetControlBar", "AFXWIN/CFrameWnd::GetDockState", "AFXWIN/CFrameWnd::GetMenuBarState", "AFXWIN/CFrameWnd::GetMenuBarVisibility", "AFXWIN/CFrameWnd::GetMessageBar", "AFXWIN/CFrameWnd::GetMessageString", "AFXWIN/CFrameWnd::GetTitle", "AFXWIN/CFrameWnd::InitialUpdateFrame", "AFXWIN/CFrameWnd::InModalState", "AFXWIN/CFrameWnd::IsTracking", "AFXWIN/CFrameWnd::LoadAccelTable", "AFXWIN/CFrameWnd::LoadBarState", "AFXWIN/CFrameWnd::LoadFrame", "AFXWIN/CFrameWnd::NegotiateBorderSpace", "AFXWIN/CFrameWnd::OnBarCheck", "AFXWIN/CFrameWnd::OnContextHelp", "AFXWIN/CFrameWnd::OnSetPreviewMode", "AFXWIN/CFrameWnd::OnUpdateControlBarMenu", "AFXWIN/CFrameWnd::RecalcLayout", "AFXWIN/CFrameWnd::SaveBarState", "AFXWIN/CFrameWnd::SetActivePreviewView", "AFXWIN/CFrameWnd::SetActiveView", "AFXWIN/CFrameWnd::SetDockState", "AFXWIN/CFrameWnd::SetMenuBarState", "AFXWIN/CFrameWnd::SetMenuBarVisibility", "AFXWIN/CFrameWnd::SetMessageText", "AFXWIN/CFrameWnd::SetProgressBarPosition", "AFXWIN/CFrameWnd::SetProgressBarRange", "AFXWIN/CFrameWnd::SetProgressBarState", "AFXWIN/CFrameWnd::SetTaskbarOverlayIcon", "AFXWIN/CFrameWnd::SetTitle", "AFXWIN/CFrameWnd::ShowControlBar", "AFXWIN/CFrameWnd::ShowOwnedWindows", "AFXWIN/CFrameWnd::OnCreateClient", "AFXWIN/CFrameWnd::OnHideMenuBar", "AFXWIN/CFrameWnd::OnShowMenuBar", "AFXWIN/CFrameWnd::m_bAutoMenuEnable", "AFXWIN/CFrameWnd::rectDefault"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFrameWnd [MFC], CFrameWnd", "CFrameWnd [MFC], ActivateFrame", "CFrameWnd [MFC], BeginModalState", "CFrameWnd [MFC], Create", "CFrameWnd [MFC], CreateView", "CFrameWnd [MFC], DockControlBar", "CFrameWnd [MFC], EnableDocking", "CFrameWnd [MFC], EndModalState", "CFrameWnd [MFC], FloatControlBar", "CFrameWnd [MFC], GetActiveDocument", "CFrameWnd [MFC], GetActiveFrame", "CFrameWnd [MFC], GetActiveView", "CFrameWnd [MFC], GetControlBar", "CFrameWnd [MFC], GetDockState", "CFrameWnd [MFC], GetMenuBarState", "CFrameWnd [MFC], GetMenuBarVisibility", "CFrameWnd [MFC], GetMessageBar", "CFrameWnd [MFC], GetMessageString", "CFrameWnd [MFC], GetTitle", "CFrameWnd [MFC], InitialUpdateFrame", "CFrameWnd [MFC], InModalState", "CFrameWnd [MFC], IsTracking", "CFrameWnd [MFC], LoadAccelTable", "CFrameWnd [MFC], LoadBarState", "CFrameWnd [MFC], LoadFrame", "CFrameWnd [MFC], NegotiateBorderSpace", "CFrameWnd [MFC], OnBarCheck", "CFrameWnd [MFC], OnContextHelp", "CFrameWnd [MFC], OnSetPreviewMode", "CFrameWnd [MFC], OnUpdateControlBarMenu", "CFrameWnd [MFC], RecalcLayout", "CFrameWnd [MFC], SaveBarState", "CFrameWnd [MFC], SetActivePreviewView", "CFrameWnd [MFC], SetActiveView", "CFrameWnd [MFC], SetDockState", "CFrameWnd [MFC], SetMenuBarState", "CFrameWnd [MFC], SetMenuBarVisibility", "CFrameWnd [MFC], SetMessageText", "CFrameWnd [MFC], SetProgressBarPosition", "CFrameWnd [MFC], SetProgressBarRange", "CFrameWnd [MFC], SetProgressBarState", "CFrameWnd [MFC], SetTaskbarOverlayIcon", "CFrameWnd [MFC], SetTitle", "CFrameWnd [MFC], ShowControlBar", "CFrameWnd [MFC], ShowOwnedWindows", "CFrameWnd [MFC], OnCreateClient", "CFrameWnd [MFC], OnHideMenuBar", "CFrameWnd [MFC], OnShowMenuBar", "CFrameWnd [MFC], m_bAutoMenuEnable", "CFrameWnd [MFC], rectDefault"]
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CFrameWnd Class
@@ -46,7 +41,7 @@ class CFrameWnd : public CWnd
 |[CFrameWnd::EnableDocking](#enabledocking)|Allows a control bar to be docked.|  
 |[CFrameWnd::EndModalState](#endmodalstate)|Ends the frame window's modal state. Enables all of the windows disabled by `BeginModalState`.|  
 |[CFrameWnd::FloatControlBar](#floatcontrolbar)|Floats a control bar.|  
-|[CFrameWnd::GetActiveDocument](#getactivedocument)|Returns the active **CDocument** object.|  
+|[CFrameWnd::GetActiveDocument](#getactivedocument)|Returns the active `CDocument` object.|  
 |[CFrameWnd::GetActiveFrame](#getactiveframe)|Returns the active `CFrameWnd` object.|  
 |[CFrameWnd::GetActiveView](#getactiveview)|Returns the active `CView` object.|  
 |[CFrameWnd::GetControlBar](#getcontrolbar)|Retrieves the control bar.|  
@@ -109,15 +104,15 @@ class CFrameWnd : public CWnd
   
 -   Indirectly construct it using a document template.  
   
- Before you call either **Create** or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling **Create**, you can also register a window class with the [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
+ Before you call either `Create` or `LoadFrame`, you must construct the frame-window object on the heap using the C++ **new** operator. Before calling `Create`, you can also register a window class with the [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) global function to set the icon and class styles for the frame.  
   
- Use the **Create** member function to pass the frame's creation parameters as immediate arguments.  
+ Use the `Create` member function to pass the frame's creation parameters as immediate arguments.  
   
- `LoadFrame` requires fewer arguments than **Create**, and instead retrieves most of its default values from resources, including the frame's caption, icon, accelerator table, and menu. To be accessible by `LoadFrame`, all these resources must have the same resource ID (for example, **IDR_MAINFRAME**).  
+ `LoadFrame` requires fewer arguments than `Create`, and instead retrieves most of its default values from resources, including the frame's caption, icon, accelerator table, and menu. To be accessible by `LoadFrame`, all these resources must have the same resource ID (for example, IDR_MAINFRAME).  
   
  When a `CFrameWnd` object contains views and documents, they are created indirectly by the framework instead of directly by the programmer. The `CDocTemplate` object orchestrates the creation of the frame, the creation of the containing views, and the connection of the views to the appropriate document. The parameters of the `CDocTemplate` constructor specify the `CRuntimeClass` of the three classes involved (document, frame, and view). A `CRuntimeClass` object is used by the framework to dynamically create new frames when specified by the user (for example, by using the File New command or the multiple document interface (MDI) Window New command).  
   
- A frame-window class derived from `CFrameWnd` must be declared with `DECLARE_DYNCREATE` in order for the above `RUNTIME_CLASS` mechanism to work correctly.  
+ A frame-window class derived from `CFrameWnd` must be declared with DECLARE_DYNCREATE in order for the above RUNTIME_CLASS mechanism to work correctly.  
   
  A `CFrameWnd` contains default implementations to perform the following functions of a main window in a typical application for Windows:  
   
@@ -125,17 +120,17 @@ class CFrameWnd : public CWnd
   
 -   Command messages and many common frame-notification messages, including those handled by the `OnSetFocus`, `OnHScroll`, and `OnVScroll` functions of `CWnd`, are delegated by a `CFrameWnd` frame window to the currently active view.  
   
--   The currently active view (or currently active MDI child frame window in the case of an MDI frame) can determine the caption of the frame window. This feature can be disabled by turning off the **FWS_ADDTOTITLE** style bit of the frame window.  
+-   The currently active view (or currently active MDI child frame window in the case of an MDI frame) can determine the caption of the frame window. This feature can be disabled by turning off the FWS_ADDTOTITLE style bit of the frame window.  
   
 -   A `CFrameWnd` frame window manages the positioning of the control bars, views, and other child windows inside the frame window's client area. A frame window also does idle-time updating of toolbar and other control-bar buttons. A `CFrameWnd` frame window also has default implementations of commands for toggling on and off the toolbar and status bar.  
   
--   A `CFrameWnd` frame window manages the main menu bar. When a pop-up menu is displayed, the frame window uses the **UPDATE_COMMAND_UI** mechanism to determine which menu items should be enabled, disabled, or checked. When the user selects a menu item, the frame window updates the status bar with the message string for that command.  
+-   A `CFrameWnd` frame window manages the main menu bar. When a pop-up menu is displayed, the frame window uses the UPDATE_COMMAND_UI mechanism to determine which menu items should be enabled, disabled, or checked. When the user selects a menu item, the frame window updates the status bar with the message string for that command.  
   
 -   A `CFrameWnd` frame window has an optional accelerator table that automatically translates keyboard accelerators.  
   
 -   A `CFrameWnd` frame window has an optional help ID set with `LoadFrame` that is used for context-sensitive help. A frame window is the main orchestrator of semimodal states such as context-sensitive help (SHIFT+F1) and print-preview modes.  
   
--   A `CFrameWnd` frame window will open a file dragged from the File Manager and dropped on the frame window. If a file extension is registered and associated with the application, the frame window responds to the dynamic data exchange (DDE) open request that occurs when the user opens a data file in the File Manager or when the **ShellExecute** Windows function is called.  
+-   A `CFrameWnd` frame window will open a file dragged from the File Manager and dropped on the frame window. If a file extension is registered and associated with the application, the frame window responds to the dynamic data exchange (DDE) open request that occurs when the user opens a data file in the File Manager or when the `ShellExecute` Windows function is called.  
   
 -   If the frame window is the main application window (that is, `CWinThread::m_pMainWnd`), when the user closes the application, the frame window prompts the user to save any modified documents (for `OnClose` and `OnQueryEndSession`).  
   
@@ -165,7 +160,7 @@ virtual void ActivateFrame(int nCmdShow = -1);
 ```  
   
 ### Parameters  
- `nCmdShow`  
+ *nCmdShow*  
  Specifies the parameter to pass to [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow). By default, the frame is shown and correctly restored.  
   
 ### Remarks  
@@ -173,7 +168,7 @@ virtual void ActivateFrame(int nCmdShow = -1);
   
  The default implementation activates the frame and brings it to the top of the Z-order and, if necessary, carries out the same steps for the application's main frame window.  
   
- Override this member function to change how a frame is activated. For example, you can force MDI child windows to be maximized. Add the appropriate functionality, then call the base class version with an explicit `nCmdShow`.  
+ Override this member function to change how a frame is activated. For example, you can force MDI child windows to be maximized. Add the appropriate functionality, then call the base class version with an explicit *nCmdShow*.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#1](../../mfc/reference/codesnippet/cpp/cframewnd-class_1.cpp)]  
@@ -193,7 +188,7 @@ CFrameWnd();
 ```  
   
 ### Remarks  
- Call **Create** to create the visible window.  
+ Call `Create` to create the visible window.  
   
 ##  <a name="create"></a>  CFrameWnd::Create  
  Call to create and initialize the Windows frame window associated with the `CFrameWnd` object.  
@@ -211,37 +206,37 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `lpszClassName`  
- Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the `AfxRegisterWndClass` global function or the **RegisterClass** Windows function. If **NULL**, uses the predefined default `CFrameWnd` attributes.  
+ *lpszClassName*  
+ Points to a null-terminated character string that names the Windows class. The class name can be any name registered with the `AfxRegisterWndClass` global function or the `RegisterClass` Windows function. If NULL, uses the predefined default `CFrameWnd` attributes.  
   
- `lpszWindowName`  
+ *lpszWindowName*  
  Points to a null-terminated character string that represents the window name. Used as text for the title bar.  
   
- `dwStyle`  
- Specifies the window [style](../../mfc/reference/styles-used-by-mfc.md#window-styles) attributes. Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
+ *dwStyle*  
+ Specifies the window [style](../../mfc/reference/styles-used-by-mfc.md#window-styles) attributes. Include the FWS_ADDTOTITLE style if you want the title bar to automatically display the name of the document represented in the window.  
   
- `rect`  
- Specifies the size and position of the window. The `rectDefault` value allows Windows to specify the size and position of the new window.  
+ *rect*  
+ Specifies the size and position of the window. The *rectDefault* value allows Windows to specify the size and position of the new window.  
   
- `pParentWnd`  
- Specifies the parent window of this frame window. This parameter should be **NULL** for top-level frame windows.  
+ *pParentWnd*  
+ Specifies the parent window of this frame window. This parameter should be NULL for top-level frame windows.  
   
  *lpszMenuName*  
- Identifies the name of the menu resource to be used with the window. Use **MAKEINTRESOURCE** if the menu has an integer ID instead of a string. This parameter can be **NULL**.  
+ Identifies the name of the menu resource to be used with the window. Use MAKEINTRESOURCE if the menu has an integer ID instead of a string. This parameter can be NULL.  
   
- `dwExStyle`  
+ *dwExStyle*  
  Specifies the window extended [style](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) attributes.  
   
- `pContext`  
- Specifies a pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure. This parameter can be **NULL**.  
+ *pContext*  
+ Specifies a pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure. This parameter can be NULL.  
   
 ### Return Value  
  Nonzero if initialization is successful; otherwise 0.  
   
 ### Remarks  
- Construct a `CFrameWnd` object in two steps. First, invoke the constructor, which constructs the `CFrameWnd` object, and then call **Create**, which creates the Windows frame window and attaches it to the `CFrameWnd` object. **Create** initializes the window's class name and window name and registers default values for its style, parent, and associated menu.  
+ Construct a `CFrameWnd` object in two steps. First, invoke the constructor, which constructs the `CFrameWnd` object, and then call `Create`, which creates the Windows frame window and attaches it to the `CFrameWnd` object. `Create` initializes the window's class name and window name and registers default values for its style, parent, and associated menu.  
   
- Use `LoadFrame` rather than **Create** to load the frame window from a resource instead of specifying its arguments.  
+ Use `LoadFrame` rather than `Create` to load the frame window from a resource instead of specifying its arguments.  
   
 ##  <a name="createview"></a>  CFrameWnd::CreateView  
  Call `CreateView` to create a view within a frame.  
@@ -253,14 +248,14 @@ CWnd* CreateView(
 ```  
   
 ### Parameters  
- `pContext`  
+ *pContext*  
  Specifies the type of view and document.  
   
- `nID`  
+ *nID*  
  The ID number of a view.  
   
 ### Return Value  
- Pointer to a `CWnd` object if successful; otherwise **NULL**.  
+ Pointer to a `CWnd` object if successful; otherwise NULL.  
   
 ### Remarks  
  Use this member function to create "views" that are not `CView`-derived within a frame. After calling `CreateView`, you must manually set the view to active and set it to be visible; these tasks are not automatically performed by `CreateView`.  
@@ -276,27 +271,27 @@ void DockControlBar(
 ```  
   
 ### Parameters  
- `pBar`  
+ *pBar*  
  Points to the control bar to be docked.  
   
- `nDockBarID`  
+ *nDockBarID*  
  Determines which sides of the frame window to consider for docking. It can be 0, or one or more of the following:  
   
-- `AFX_IDW_DOCKBAR_TOP` Dock to the top side of the frame window.  
+- AFX_IDW_DOCKBAR_TOP Dock to the top side of the frame window.  
   
-- **AFX_IDW_DOCKBAR_BOTTOM** Dock to the bottom side of the frame window.  
+- AFX_IDW_DOCKBAR_BOTTOM Dock to the bottom side of the frame window.  
   
-- `AFX_IDW_DOCKBAR_LEFT` Dock to the left side of the frame window.  
+- AFX_IDW_DOCKBAR_LEFT Dock to the left side of the frame window.  
   
-- `AFX_IDW_DOCKBAR_RIGHT` Dock to the right side of the frame window.  
+- AFX_IDW_DOCKBAR_RIGHT Dock to the right side of the frame window.  
   
  If 0, the control bar can be docked to any side enabled for docking in the destination frame window.  
   
- `lpRect`  
+ *lpRect*  
  Determines, in screen coordinates, where the control bar will be docked in the nonclient area of the destination frame window.  
   
 ### Remarks  
- The control bar will be docked to one of the sides of the frame window specified in the calls to both [CControlBar::EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking) and [CFrameWnd::EnableDocking](#enabledocking). The side chosen is determined by `nDockBarID`.  
+ The control bar will be docked to one of the sides of the frame window specified in the calls to both [CControlBar::EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking) and [CFrameWnd::EnableDocking](#enabledocking). The side chosen is determined by *nDockBarID*.  
   
 ##  <a name="enabledocking"></a>  CFrameWnd::EnableDocking  
  Call this function to enable dockable control bars in a frame window.  
@@ -306,18 +301,18 @@ void EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- `dwDockStyle`  
+ *dwDockStyle*  
  Specifies which sides of the frame window can serve as docking sites for control bars. It can be one or more of the following:  
   
-- `CBRS_ALIGN_TOP` Allows docking at the top of the client area.  
+- CBRS_ALIGN_TOP Allows docking at the top of the client area.  
   
-- `CBRS_ALIGN_BOTTOM` Allows docking at the bottom of the client area.  
+- CBRS_ALIGN_BOTTOM Allows docking at the bottom of the client area.  
   
-- `CBRS_ALIGN_LEFT` Allows docking on the left side of the client area.  
+- CBRS_ALIGN_LEFT Allows docking on the left side of the client area.  
   
-- `CBRS_ALIGN_RIGHT` Allows docking on the right side of the client area.  
+- CBRS_ALIGN_RIGHT Allows docking on the right side of the client area.  
   
-- `CBRS_ALIGN_ANY` Allows docking on any side of the client area.  
+- CBRS_ALIGN_ANY Allows docking on any side of the client area.  
   
 ### Remarks  
  By default, control bars will be docked to a side of the frame window in the following order: top, bottom, left, right.  
@@ -346,22 +341,22 @@ void FloatControlBar(
 ```  
   
 ### Parameters  
- `pBar`  
+ *pBar*  
  Points to the control bar to be floated.  
   
- `point`  
+ *point*  
  The location, in screen coordinates, where the top left corner of the control bar will be placed.  
   
- `dwStyle`  
+ *dwStyle*  
  Specifies whether to align the control bar horizontally or vertically within its new frame window. It can be any one of the following:  
   
-- `CBRS_ALIGN_TOP` Orients the control bar vertically.  
+- CBRS_ALIGN_TOP Orients the control bar vertically.  
   
-- `CBRS_ALIGN_BOTTOM` Orients the control bar vertically.  
+- CBRS_ALIGN_BOTTOM Orients the control bar vertically.  
   
-- `CBRS_ALIGN_LEFT` Orients the control bar horizontally.  
+- CBRS_ALIGN_LEFT Orients the control bar horizontally.  
   
-- `CBRS_ALIGN_RIGHT` Orients the control bar horizontally.  
+- CBRS_ALIGN_RIGHT Orients the control bar horizontally.  
   
  If styles are passed specifying both horizontal and vertical orientation, the toolbar will be oriented horizontally.  
   
@@ -371,14 +366,14 @@ void FloatControlBar(
  This function is called by the framework when the user causes a drop operation by releasing the left mouse button while dragging the control bar over a location that is not available for docking.  
   
 ##  <a name="getactivedocument"></a>  CFrameWnd::GetActiveDocument  
- Call this member function to obtain a pointer to the current **CDocument** attached to the current active view.  
+ Call this member function to obtain a pointer to the current `CDocument` attached to the current active view.  
   
 ```  
 virtual CDocument* GetActiveDocument();
 ```  
   
 ### Return Value  
- A pointer to the current [CDocument](../../mfc/reference/cdocument-class.md). If there is no current document, returns **NULL**.  
+ A pointer to the current [CDocument](../../mfc/reference/cdocument-class.md). If there is no current document, returns NULL.  
   
 ##  <a name="getactiveframe"></a>  CFrameWnd::GetActiveFrame  
  Call this member function to obtain a pointer to the active multiple document interface (MDI) child window of an MDI frame window.  
@@ -401,10 +396,10 @@ CView* GetActiveView() const;
 ```  
   
 ### Return Value  
- A pointer to the current [CView](../../mfc/reference/cview-class.md). If there is no current view, returns **NULL**.  
+ A pointer to the current [CView](../../mfc/reference/cview-class.md). If there is no current view, returns NULL.  
   
 ### Remarks  
- This function returns **NULL** when called for an MDI main frame window ( `CMDIFrameWnd`). In an MDI application, the MDI main frame window does not have a view associated with it. Instead, each individual child window ( `CMDIChildWnd`) has one or more associated views. The active view in an MDI application can be obtained by first finding the active MDI child window and then finding the active view for that child window. The active MDI child window can be found by calling the function `MDIGetActive` or **GetActiveFrame** as demonstrated in the following:  
+ This function returns NULL when called for an MDI main frame window ( `CMDIFrameWnd`). In an MDI application, the MDI main frame window does not have a view associated with it. Instead, each individual child window ( `CMDIChildWnd`) has one or more associated views. The active view in an MDI application can be obtained by first finding the active MDI child window and then finding the active view for that child window. The active MDI child window can be found by calling the function `MDIGetActive` or `GetActiveFrame` as demonstrated in the following:  
   
  [!code-cpp[NVC_MFCWindowing#2](../../mfc/reference/codesnippet/cpp/cframewnd-class_2.cpp)]  
   
@@ -416,14 +411,14 @@ CControlBar* GetControlBar(UINT nID);
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The ID number of a control bar.  
   
 ### Return Value  
  A pointer to the control bar that is associated with the ID.  
   
 ### Remarks  
- The `nID` parameter refers to the unique identifier passed to the **Create** method of the control bar. For more information on control bars, refer to the topic entitled [Control Bars](../../mfc/control-bars.md).  
+ The *nID* parameter refers to the unique identifier passed to the `Create` method of the control bar. For more information on control bars, refer to the topic entitled [Control Bars](../../mfc/control-bars.md).  
   
  `GetControlBar` will return the control bar even if it is floating and thus is not currently a child window of the frame.  
   
@@ -435,7 +430,7 @@ void GetDockState(CDockState& state) const;
 ```  
   
 ### Parameters  
- `state`  
+ *state*  
  Contains the current state of the frame window's control bars upon return.  
   
 ### Remarks  
@@ -497,14 +492,14 @@ virtual void GetMessageString(
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  Resource ID of the desired message.  
   
- `rMessage`  
+ *rMessage*  
  `CString` object into which to place the message.  
   
 ### Remarks  
- The default implementation simply loads the string specified by `nID` from the resource file. This function is called by the framework when the message string in the status bar needs updating.  
+ The default implementation simply loads the string specified by *nID* from the resource file. This function is called by the framework when the message string in the status bar needs updating.  
   
 ##  <a name="gettitle"></a>  CFrameWnd::GetTitle  
  Retrieves the title of the window object.  
@@ -517,7 +512,7 @@ CString GetTitle() const;
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) object containing the current title of the window object.  
   
 ##  <a name="initialupdateframe"></a>  CFrameWnd::InitialUpdateFrame  
- Call **IntitialUpdateFrame** after creating a new frame with **Create**.  
+ Call `IntitialUpdateFrame` after creating a new frame with `Create`.  
   
 ```  
 void InitialUpdateFrame(
@@ -526,16 +521,16 @@ void InitialUpdateFrame(
 ```  
   
 ### Parameters  
- `pDoc`  
- Points to the document to which the frame window is associated. Can be **NULL**.  
+ *pDoc*  
+ Points to the document to which the frame window is associated. Can be NULL.  
   
- `bMakeVisible`  
- If **TRUE**, indicates that the frame should become visible and active. If **FALSE**, no descendants are made visible.  
+ *bMakeVisible*  
+ If TRUE, indicates that the frame should become visible and active. If FALSE, no descendants are made visible.  
   
 ### Remarks  
  This causes all views in that frame window to receive their `OnInitialUpdate` calls.  
   
- Also, if there was not previously an active view, the primary view of the frame window is made active. The primary view is a view with a child ID of **AFX_IDW_PANE_FIRST**. Finally, the frame window is made visible if `bMakeVisible` is nonzero. If `bMakeVisible` is 0, the current focus and visible state of the frame window will remain unchanged. It is not necessary to call this function when using the framework's implementation of File New and File Open.  
+ Also, if there was not previously an active view, the primary view of the frame window is made active. The primary view is a view with a child ID of AFX_IDW_PANE_FIRST. Finally, the frame window is made visible if *bMakeVisible* is nonzero. If *bMakeVisible* is 0, the current focus and visible state of the frame window will remain unchanged. It is not necessary to call this function when using the framework's implementation of File New and File Open.  
   
 ##  <a name="inmodalstate"></a>  CFrameWnd::InModalState  
  Call this member function to check if a frame window is modal or modeless.  
@@ -565,8 +560,8 @@ BOOL LoadAccelTable(LPCTSTR lpszResourceName);
 ```  
   
 ### Parameters  
- `lpszResourceName`  
- Identifies the name of the accelerator resource. Use **MAKEINTRESOURCE** if the resource is identified with an integer ID.  
+ *lpszResourceName*  
+ Identifies the name of the accelerator resource. Use MAKEINTRESOURCE if the resource is identified with an integer ID.  
   
 ### Return Value  
  Nonzero if the accelerator table was successfully loaded; otherwise 0.  
@@ -586,7 +581,7 @@ void LoadBarState(LPCTSTR lpszProfileName);
 ```  
   
 ### Parameters  
- `lpszProfileName`  
+ *lpszProfileName*  
  Name of a section in the initialization (INI) file or a key in the Windows registry where state information is stored.  
   
 ### Remarks  
@@ -606,43 +601,43 @@ virtual BOOL LoadFrame(
 ```  
   
 ### Parameters  
- `nIDResource`  
+ *nIDResource*  
  The ID of shared resources associated with the frame window.  
   
  *dwDefaultStyle*  
- The frame's [style](../../mfc/reference/styles-used-by-mfc.md#window-styles). Include the **FWS_ADDTOTITLE** style if you want the title bar to automatically display the name of the document represented in the window.  
+ The frame's [style](../../mfc/reference/styles-used-by-mfc.md#window-styles). Include the FWS_ADDTOTITLE style if you want the title bar to automatically display the name of the document represented in the window.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the frame's parent.  
   
- `pContext`  
- A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure. This parameter can be **NULL**.  
+ *pContext*  
+ A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure. This parameter can be NULL.  
   
 ### Remarks  
- Construct a `CFrameWnd` object in two steps. First, invoke the constructor, which constructs the `CFrameWnd` object, and then call `LoadFrame`, which loads the Windows frame window and associated resources and attaches the frame window to the `CFrameWnd` object. The `nIDResource` parameter specifies the menu, the accelerator table, the icon, and the string resource of the title for the frame window.  
+ Construct a `CFrameWnd` object in two steps. First, invoke the constructor, which constructs the `CFrameWnd` object, and then call `LoadFrame`, which loads the Windows frame window and associated resources and attaches the frame window to the `CFrameWnd` object. The *nIDResource* parameter specifies the menu, the accelerator table, the icon, and the string resource of the title for the frame window.  
   
- Use the **Create** member function rather than `LoadFrame` when you want to specify all of the frame window's creation parameters.  
+ Use the `Create` member function rather than `LoadFrame` when you want to specify all of the frame window's creation parameters.  
   
  The framework calls `LoadFrame` when it creates a frame window using a document template object.  
   
- The framework uses the `pContext` argument to specify the objects to be connected to the frame window, including any contained view objects. You can set the `pContext` argument to **NULL** when you call `LoadFrame`.  
+ The framework uses the *pContext* argument to specify the objects to be connected to the frame window, including any contained view objects. You can set the *pContext* argument to NULL when you call `LoadFrame`.  
   
 ##  <a name="m_bautomenuenable"></a>  CFrameWnd::m_bAutoMenuEnable  
- When this data member is enabled (which is the default), menu items that do not have `ON_UPDATE_COMMAND_UI` or `ON_COMMAND` handlers will be automatically disabled when the user pulls down a menu.  
+ When this data member is enabled (which is the default), menu items that do not have ON_UPDATE_COMMAND_UI or ON_COMMAND handlers will be automatically disabled when the user pulls down a menu.  
   
 ```  
 BOOL m_bAutoMenuEnable;  
 ```  
   
 ### Remarks  
- Menu items that have an `ON_COMMAND` handler but no `ON_UPDATE_COMMAND_UI` handler will be automatically enabled.  
+ Menu items that have an ON_COMMAND handler but no ON_UPDATE_COMMAND_UI handler will be automatically enabled.  
   
  When this data member is set, menu items are automatically enabled in the same way that toolbar buttons are enabled.  
   
 > [!NOTE]
 > `m_bAutoMenuEnable` has no effect on top-level menu items.  
   
- This data member simplifies the implementation of optional commands based on the current selection and reduces the need to write `ON_UPDATE_COMMAND_UI` handlers for enabling and disabling menu items.  
+ This data member simplifies the implementation of optional commands based on the current selection and reduces the need to write ON_UPDATE_COMMAND_UI handlers for enabling and disabling menu items.  
   
 ### Example  
  [!code-cpp[NVC_MFCWindowing#3](../../mfc/reference/codesnippet/cpp/cframewnd-class_3.cpp)]  
@@ -658,22 +653,22 @@ virtual BOOL NegotiateBorderSpace(
   
 ### Parameters  
  *nBorderCmd*  
- Contains one of the following values from the **enum BorderCmd**:  
+ Contains one of the following values from the `enum BorderCmd`:  
   
-- **borderGet** = 1  
+- `borderGet` = 1  
   
-- **borderRequest** = 2  
+- `borderRequest` = 2  
   
-- **borderSet** = 3  
+- `borderSet` = 3  
   
- `lpRectBorder`  
+ *lpRectBorder*  
  Pointer to a [RECT](../../mfc/reference/rect-structure1.md) structure or a [CRect](../../atl-mfc-shared/reference/crect-class.md) object that specifies the coordinates of the border.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- This member function is the **CFrameWnd** implementation of OLE border space negotiation.  
+ This member function is the `CFrameWnd` implementation of OLE border space negotiation.  
   
 ##  <a name="onbarcheck"></a>  CFrameWnd::OnBarCheck  
  Called whenever an action is performed on the specified control bar.  
@@ -683,7 +678,7 @@ afx_msg BOOL OnBarCheck(UINT nID);
 ```  
   
 ### Parameters  
- `nID`  
+ *nID*  
  The ID of the control bar being shown.  
   
 ### Return Value  
@@ -715,10 +710,10 @@ virtual BOOL OnCreateClient(
 ```  
   
 ### Parameters  
- `lpcs`  
+ *lpcs*  
  A pointer to a Windows [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) structure.  
   
- `pContext`  
+ *pContext*  
  A pointer to a [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) structure.  
   
 ### Return Value  
@@ -727,7 +722,7 @@ virtual BOOL OnCreateClient(
 ### Remarks  
  Never call this function.  
   
- The default implementation of this function creates a `CView` object from the information provided in `pContext`, if possible.  
+ The default implementation of this function creates a `CView` object from the information provided in *pContext*, if possible.  
   
  Override this function to override values passed in the `CCreateContext` object or to change the way controls in the main client area of the frame window are created. The `CCreateContext` members you can override are described in the [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) class.  
   
@@ -755,10 +750,10 @@ virtual void OnSetPreviewMode(
   
 ### Parameters  
  *bPreview*  
- Specifies whether or not to place the application in print-preview mode. Set to **TRUE** to place in print preview, **FALSE** to cancel preview mode.  
+ Specifies whether or not to place the application in print-preview mode. Set to TRUE to place in print preview, FALSE to cancel preview mode.  
   
- `pState`  
- A pointer to a **CPrintPreviewState** structure.  
+ *pState*  
+ A pointer to a `CPrintPreviewState` structure.  
   
 ### Remarks  
  The default implementation disables all standard toolbars and hides the main menu and the main client window. This turns MDI frame windows into temporary SDI frame windows.  
@@ -783,8 +778,8 @@ afx_msg void OnUpdateControlBarMenu(CCmdUI* pCmdUI);
 ```  
   
 ### Parameters  
- `pCmdUI`  
- A pointer to a [CCmdUI](../../mfc/reference/ccmdui-class.md) object representing the menu that generated the update command. The update handler calls the [Enable](../../mfc/reference/ccmdui-class.md#enable) member function of the `CCmdUI` object through `pCmdUI` to update the user interface.  
+ *pCmdUI*  
+ A pointer to a [CCmdUI](../../mfc/reference/ccmdui-class.md) object representing the menu that generated the update command. The update handler calls the [Enable](../../mfc/reference/ccmdui-class.md#enable) member function of the `CCmdUI` object through *pCmdUI* to update the user interface.  
   
 ##  <a name="recalclayout"></a>  CFrameWnd::RecalcLayout  
  Called by the framework when the standard control bars are toggled on or off or when the frame window is resized.  
@@ -794,11 +789,11 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### Parameters  
- `bNotify`  
- Determines whether the active in-place item for the frame window receives notification of the layout change. If **TRUE**, the item is notified; otherwise **FALSE**.  
+ *bNotify*  
+ Determines whether the active in-place item for the frame window receives notification of the layout change. If TRUE, the item is notified; otherwise FALSE.  
   
 ### Remarks  
- The default implementation of this member function calls the `CWnd` member function `RepositionBars` to reposition all the control bars in the frame as well as in the main client window (usually a `CView` or **MDICLIENT**).  
+ The default implementation of this member function calls the `CWnd` member function `RepositionBars` to reposition all the control bars in the frame as well as in the main client window (usually a `CView` or MDICLIENT).  
   
  Override this member function to control the appearance and behavior of control bars after the layout of the frame window has changed. For example, call it when you turn control bars on or off or add another control bar.  
   
@@ -817,7 +812,7 @@ void SaveBarState(LPCTSTR lpszProfileName) const;
 ```  
   
 ### Parameters  
- `lpszProfileName`  
+ *lpszProfileName*  
  Name of a section in the initialization file or a key in the Windows registry where state information is stored.  
   
 ### Remarks  
@@ -831,7 +826,7 @@ void SetActivePreviewView(CView* pViewNew);
 ```  
   
 ### Parameters  
- `pViewNew`  
+ *pViewNew*  
  A pointer to a view to be activated.  
   
 ### Remarks  
@@ -847,10 +842,10 @@ void SetActiveView(
   
 ### Parameters  
  *pViewNew*  
- Specifies a pointer to a [CView](../../mfc/reference/cview-class.md) object, or **NULL** for no active view.  
+ Specifies a pointer to a [CView](../../mfc/reference/cview-class.md) object, or NULL for no active view.  
   
- `bNotify`  
- Specifies whether the view is to be notified of activation. If **TRUE**, `OnActivateView` is called for the new view; if **FALSE**, it is not.  
+ *bNotify*  
+ Specifies whether the view is to be notified of activation. If TRUE, `OnActivateView` is called for the new view; if FALSE, it is not.  
   
 ### Remarks  
  The framework will call this function automatically as the user changes the focus to a view within the frame window. You can explicitly call `SetActiveView` to change the focus to the specified view.  
@@ -863,7 +858,7 @@ void SetDockState(const CDockState& state);
 ```  
   
 ### Parameters  
- `state`  
+ *state*  
  Apply the stored state to the frame window's control bars.  
   
 ### Remarks  
@@ -880,10 +875,10 @@ virtual BOOL SetMenuBarState(DWORD nState);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `nState`|Specifies whether to display or hide the menu. The `nState` parameter can have the following values:<br /><br /> -   AFX_MBS_VISIBLE (0x01) - Displays the menu if it is hidden, but has no effect if it is visible.<br />-   AFX_MBS_HIDDEN (0x02) - Hides the menu if it is visible, but has no effect if it is hidden.|  
+|[in] *nState*|Specifies whether to display or hide the menu. The *nState* parameter can have the following values:<br /><br /> -   AFX_MBS_VISIBLE (0x01) - Displays the menu if it is hidden, but has no effect if it is visible.<br />-   AFX_MBS_HIDDEN (0x02) - Hides the menu if it is visible, but has no effect if it is hidden.|  
   
 ### Return Value  
- `true` if this method successfully changes the menu state; otherwise, `false`.  
+ TRUE if this method successfully changes the menu state; otherwise, FALSE.  
   
 ### Remarks  
  If a runtime error occurs, this method asserts in Debug mode and raises an exception derived from the [CException](../../mfc/reference/cexception-class.md) class.  
@@ -899,12 +894,12 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|[in] `nStyle`|Specifies whether the menu is by default hidden, or is visible and has the focus. The `nStyle` parameter can have the following values:<br /><br /> -   AFX_MBV_KEEPVISIBLE (0x01) -<br />     The menu is displayed at all times, and by default does not have the focus.<br />-   AFX_MBV_DISPLAYONFOCUS (0x02) -<br />     The menu is hidden by default. If the menu is hidden, press the ALT key to display the menu and give it the focus. If the menu is displayed, press the ALT or ESC key to hide menu.<br />-   AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (bitwise combination (OR)) - The menu is hidden by default. If the menu is hidden, press the F10 key to display the menu and give it the focus. If the menu is displayed, press the F10 key to toggle the focus on or off the menu. The menu is displayed until you press the ALT or ESC key to hide it.|  
+|[in] *nStyle*|Specifies whether the menu is by default hidden, or is visible and has the focus. The *nStyle* parameter can have the following values:<br /><br /> -   AFX_MBV_KEEPVISIBLE (0x01) -<br />     The menu is displayed at all times, and by default does not have the focus.<br />-   AFX_MBV_DISPLAYONFOCUS (0x02) -<br />     The menu is hidden by default. If the menu is hidden, press the ALT key to display the menu and give it the focus. If the menu is displayed, press the ALT or ESC key to hide menu.<br />-   AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (bitwise combination (OR)) - The menu is hidden by default. If the menu is hidden, press the F10 key to display the menu and give it the focus. If the menu is displayed, press the F10 key to toggle the focus on or off the menu. The menu is displayed until you press the ALT or ESC key to hide it.|  
   
 ### Remarks  
- If the value of the `nStyle` parameter is not valid, this method asserts in Debug mode and raises [CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md) in Release mode. In case of other runtime errors, this method asserts in Debug mode and raises an exception derived from the [CException](../../mfc/reference/cexception-class.md) class.  
+ If the value of the *nStyle* parameter is not valid, this method asserts in Debug mode and raises [CInvalidArgException](../../mfc/reference/cinvalidargexception-class.md) in Release mode. In case of other runtime errors, this method asserts in Debug mode and raises an exception derived from the [CException](../../mfc/reference/cexception-class.md) class.  
   
- This method affects the state of menus in applications written for [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)] and later.  
+ This method affects the state of menus in applications written for Windows Vista and later.  
   
 ##  <a name="setmessagetext"></a>  CFrameWnd::SetMessageText  
  Call this function to place a string in the status-bar pane that has an ID of 0.  
@@ -915,10 +910,10 @@ void SetMessageText(UINT nID);
 ```  
   
 ### Parameters  
- `lpszText`  
+ *lpszText*  
  Points to the string to be placed on the status bar.  
   
- `nID`  
+ *nID*  
  String resource ID of the string to be placed on the status bar.  
   
 ### Remarks  
@@ -932,7 +927,7 @@ void SetProgressBarPosition(int nProgressPos);
 ```  
   
 ### Parameters  
- `nProgressPos`  
+ *nProgressPos*  
  Specifies the position to set. It must be within the range set by `SetProgressBarRange`.  
   
 ### Remarks  
@@ -947,10 +942,10 @@ void SetProgressBarRange(
 ```  
   
 ### Parameters  
- `nRangeMin`  
+ *nRangeMin*  
  Minimal value.  
   
- `nRangeMax`  
+ *nRangeMax*  
  Maximal value.  
   
 ### Remarks  
@@ -963,7 +958,7 @@ void SetProgressBarState(TBPFLAG tbpFlags);
 ```  
   
 ### Parameters  
- `tbpFlags`  
+ *tbpFlags*  
  Flags that control the current state of the progress button. Specify only one of the following flags because all states are mutually exclusive: TBPF_NOPROGRESS, TBPF_INDETERMINATE, TBPF_NORMAL, TBPF_ERROR, TBPF_PAUSED.  
   
 ### Remarks  
@@ -983,17 +978,17 @@ BOOL SetTaskbarOverlayIcon(
 ```  
   
 ### Parameters  
- `nIDResource`  
- Specifies the Resource ID of an icon to use as the overlay. See description for `hIcon` for details.  
+ *nIDResource*  
+ Specifies the Resource ID of an icon to use as the overlay. See description for *hIcon* for details.  
   
- `lpcszDescr`  
+ *lpcszDescr*  
  A pointer to a string that provides an alt text version of the information conveyed by the overlay, for accessibility purposes.  
   
- `hIcon`  
- The handle of an icon to use as the overlay. This should be a small icon, measuring 16x16 pixels at 96 dots per inch (dpi). If an overlay icon is already applied to the taskbar button, that existing overlay is replaced. This value can be `NULL`. How a `NULL` value is handled depends on whether the taskbar button represents a single window or a group of windows. It is the responsibility of the calling application to free `hIcon` when it is no longer needed.  
+ *hIcon*  
+ The handle of an icon to use as the overlay. This should be a small icon, measuring 16x16 pixels at 96 dots per inch (dpi). If an overlay icon is already applied to the taskbar button, that existing overlay is replaced. This value can be NULL. How a NULL value is handled depends on whether the taskbar button represents a single window or a group of windows. It is the responsibility of the calling application to free *hIcon* when it is no longer needed.  
   
 ### Return Value  
- `TRUE` if successful; `FALSE` if OS version is less than Windows 7 or if an error occurs setting the icon.  
+ TRUE if successful; FALSE if OS version is less than Windows 7 or if an error occurs setting the icon.  
   
 ### Remarks  
   
@@ -1005,7 +1000,7 @@ void SetTitle(LPCTSTR lpszTitle);
 ```  
   
 ### Parameters  
- `lpszTitle`  
+ *lpszTitle*  
  A pointer to a character string containing the title of the window object.  
   
 ##  <a name="showcontrolbar"></a>  CFrameWnd::ShowControlBar  
@@ -1019,14 +1014,14 @@ void ShowControlBar(
 ```  
   
 ### Parameters  
- `pBar`  
+ *pBar*  
  Pointer to the control bar to be shown or hidden.  
   
- `bShow`  
- If **TRUE**, specifies that the control bar is to be shown. If **FALSE**, specifies that the control bar is to be hidden.  
+ *bShow*  
+ If TRUE, specifies that the control bar is to be shown. If FALSE, specifies that the control bar is to be hidden.  
   
  *bDelay*  
- If **TRUE**, delay showing the control bar. If **FALSE**, show the control bar immediately.  
+ If TRUE, delay showing the control bar. If FALSE, show the control bar immediately.  
   
 ##  <a name="showownedwindows"></a>  CFrameWnd::ShowOwnedWindows  
  Call this member function to show all windows that are descendants of the `CFrameWnd` object.  
@@ -1036,7 +1031,7 @@ void ShowOwnedWindows(BOOL bShow);
 ```  
   
 ### Parameters  
- `bShow`  
+ *bShow*  
  Specifies whether the owned windows are to be shown or hidden.  
   
 ## See Also  

@@ -2,27 +2,23 @@
 title: "Variadic Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["variadic macros [C++]", "__VA_ARGS__ variadic macro specifier"]
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Variadic Macros
 Variadic macros are function-like macros that contain a variable number of arguments.  
   
 ## Remarks  
- To use variadic macros, the ellipsis may be specified as the final formal argument in a macro definition, and the replacement identifier `__VA_ARGS__` may be used in the definition to insert the extra arguments.  `__VA_ARGS__` is replaced by all of the arguments that match the ellipsis, including commas between them.  
+ 
+To use variadic macros, the ellipsis may be specified as the final formal argument in a macro definition, and the replacement identifier `__VA_ARGS__` may be used in the definition to insert the extra arguments.  `__VA_ARGS__` is replaced by all of the arguments that match the ellipsis, including commas between them.  
   
- The C Standard specifies that at least one argument must be passed to the ellipsis, to ensure that the macro does not resolve to an expression with a trailing comma.  The Visual C++ implementation will suppress a trailing comma if no arguments are passed to the ellipsis.  
+The C Standard specifies that at least one argument must be passed to the ellipsis, to ensure that the macro does not resolve to an expression with a trailing comma.  The Visual C++ implementation will suppress a trailing comma if no arguments are passed to the ellipsis.  
   
 ## Example  
   
@@ -52,10 +48,8 @@ int main() {
                              // suppresses the trailing comma  
 }  
 ```  
-  
-## Output  
-  
-```  
+    
+```Output  
 here are some varargs1(1)  
 here are some varargs2(4)  
 here are some varargs3(5)  
@@ -64,4 +58,5 @@ error
 ```  
   
 ## See Also  
- [Macros (C/C++)](../preprocessor/macros-c-cpp.md)
+ 
+[Macros (C/C++)](../preprocessor/macros-c-cpp.md)

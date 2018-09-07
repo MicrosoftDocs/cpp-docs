@@ -2,18 +2,13 @@
 title: "Displaying and Manipulating Data in a Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["forms [C++], displaying data", "displaying data [C++], forms", "ODBC [C++], forms", "record views [C++], displaying data", "data [MFC]", "data [MFC], displaying in a form"]
 ms.assetid: c56185c4-12cb-40b1-b499-02b29ea83e3a
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Displaying and Manipulating Data in a Form

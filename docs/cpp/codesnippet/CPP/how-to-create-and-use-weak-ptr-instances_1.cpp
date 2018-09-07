@@ -44,19 +44,19 @@ public:
 
 void RunTest()
 {
-    vector<shared_ptr<Controller>> v;
-
-    v.push_back(shared_ptr<Controller>(new Controller(0)));
-    v.push_back(shared_ptr<Controller>(new Controller(1)));
-    v.push_back(shared_ptr<Controller>(new Controller(2)));
-    v.push_back(shared_ptr<Controller>(new Controller(3)));
-    v.push_back(shared_ptr<Controller>(new Controller(4)));
+    vector<shared_ptr<Controller>> v {
+      make_shared<Controller>(0),
+      make_shared<Controller>(1),
+      make_shared<Controller>(2),
+      make_shared<Controller>(3),
+      make_shared<Controller>(4),
+    };
 
     // Each controller depends on all others not being deleted. 
     // Give each controller a pointer to all the others. 
     for (int i = 0 ; i < v.size(); ++i)
     {
-        for_each(v.begin(), v.end(), [v,i] (shared_ptr<Controller> p)
+        for_each(v.begin(), v.end(), [&v,i] (shared_ptr<Controller> p)
         {
             if(p->Num != i)
             {

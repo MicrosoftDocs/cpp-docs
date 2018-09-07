@@ -2,19 +2,14 @@
 title: "COccManager Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COccManager", "AFXOCC/COccManager", "AFXOCC/COccManager::CreateContainer", "AFXOCC/COccManager::CreateDlgControls", "AFXOCC/COccManager::CreateSite", "AFXOCC/COccManager::GetDefBtnCode", "AFXOCC/COccManager::IsDialogMessage", "AFXOCC/COccManager::IsLabelControl", "AFXOCC/COccManager::IsMatchingMnemonic", "AFXOCC/COccManager::OnEvent", "AFXOCC/COccManager::PostCreateDialog", "AFXOCC/COccManager::PreCreateDialog", "AFXOCC/COccManager::SetDefaultButton", "AFXOCC/COccManager::SplitDialogTemplate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COccManager [MFC], CreateContainer", "COccManager [MFC], CreateDlgControls", "COccManager [MFC], CreateSite", "COccManager [MFC], GetDefBtnCode", "COccManager [MFC], IsDialogMessage", "COccManager [MFC], IsLabelControl", "COccManager [MFC], IsMatchingMnemonic", "COccManager [MFC], OnEvent", "COccManager [MFC], PostCreateDialog", "COccManager [MFC], PreCreateDialog", "COccManager [MFC], SetDefaultButton", "COccManager [MFC], SplitDialogTemplate"]
 ms.assetid: 7d47aeed-d1ab-48e3-b4cf-d429718e370a
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COccManager Class
@@ -32,7 +27,7 @@ class COccManager : public CNoTrackObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[COccManager::CreateContainer](#createcontainer)|Creates a **COleContainer** object.|  
+|[COccManager::CreateContainer](#createcontainer)|Creates a `COleContainer` object.|  
 |[COccManager::CreateDlgControls](#createdlgcontrols)|Creates ActiveX controls, hosted by the associated `COleContainer` object.|  
 |[COccManager::CreateSite](#createsite)|Creates a `COleClientSite` object.|  
 |[COccManager::GetDefBtnCode](#getdefbtncode)|Retrieves the code of the default button.|  
@@ -46,7 +41,7 @@ class COccManager : public CNoTrackObject
 |[COccManager::SplitDialogTemplate](#splitdialogtemplate)|Separates any existing ActiveX controls from common controls in the specified dialog template.|  
   
 ## Remarks  
- The base class, **CNoTrackObject**, is an undocumented base class (located in AFXTLS.H). Designed for use by the MFC framework, classes derived from the **CNoTrackObject** class are exempt from memory leak detection. It is not recommended that you derive directly from **CNoTrackObject**.  
+ The base class, `CNoTrackObject`, is an undocumented base class (located in AFXTLS.H). Designed for use by the MFC framework, classes derived from the `CNoTrackObject` class are exempt from memory leak detection. It is not recommended that you derive directly from `CNoTrackObject`.  
   
 ## Inheritance Hierarchy  
  `CNoTrackObject`  
@@ -64,17 +59,17 @@ virtual COleControlContainer* CreateContainer(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  A pointer to the window object associated with the custom site container.  
   
 ### Return Value  
- A pointer to the newly created container; otherwise **NULL**.  
+ A pointer to the newly created container; otherwise NULL.  
   
 ### Remarks  
  For more information on creating custom sites, see [COleControlContainer::AttachControlSite](../../mfc/reference/colecontrolcontainer-class.md#attachcontrolsite).  
   
 ##  <a name="createdlgcontrols"></a>  COccManager::CreateDlgControls  
- Call this function to create ActiveX controls specified by the `pOccDialogInfo` parameter.  
+ Call this function to create ActiveX controls specified by the *pOccDialogInfo* parameter.  
   
 ```  
 virtual BOOL CreateDlgControls(
@@ -93,27 +88,27 @@ virtual BOOL CreateDlgControls(
  *pWndParent*  
  A pointer to the parent of the dialog object.  
   
- `lpszResourceName`  
+ *lpszResourceName*  
  The name of the resource being created.  
   
- `pOccDialogInfo`  
+ *pOccDialogInfo*  
  A pointer to the dialog template used to create the dialog object.  
   
- `lpResource`  
+ *lpResource*  
  A pointer to a resource.  
   
 ### Return Value  
  Nonzero if the control was created successfully; otherwise zero.  
   
 ##  <a name="createsite"></a>  COccManager::CreateSite  
- Called by the framework to create a control site, hosted by the container pointed to by `pCtrlCont`.  
+ Called by the framework to create a control site, hosted by the container pointed to by *pCtrlCont*.  
   
 ```  
 virtual COleControlSite* CreateSite(COleControlContainer* pCtrlCont);
 ```  
   
 ### Parameters  
- `pCtrlCont`  
+ *pCtrlCont*  
  A pointer to the control container hosting the new control site.  
   
 ### Return Value  
@@ -132,15 +127,15 @@ static DWORD AFX_CDECL GetDefBtnCode(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  The window object containing the button control.  
   
 ### Return Value  
  One of the following values:  
   
-- **DLGC_DEFPUSHBUTTON** Control is the default button in the dialog.  
+- DLGC_DEFPUSHBUTTON Control is the default button in the dialog.  
   
-- **DLGC_UNDEFPUSHBUTTON** Control is not the default button in the dialog.  
+- DLGC_UNDEFPUSHBUTTON Control is not the default button in the dialog.  
   
 - **0** Control is not a button.  
   
@@ -157,7 +152,7 @@ virtual BOOL IsDialogMessage(
  *pWndDlg*  
  A pointer to the intended target dialog of the message.  
   
- `lpMsg`  
+ *lpMsg*  
  A pointer to an `MSG` structure that contains the message to be checked.  
   
 ### Return Value  
@@ -173,10 +168,11 @@ virtual BOOL IsDialogMessage(
   
 ```  
 static BOOL AFX_CDECL IsLabelControl(CWnd* pWnd);  
-static BOOL AFX_CDECL IsLabelControl(COleControlSiteOrWnd* pWnd);```  
+static BOOL AFX_CDECL IsLabelControl(COleControlSiteOrWnd* pWnd);
+```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  A pointer to the window containing the control.  
   
 ### Return Value  
@@ -200,10 +196,10 @@ static BOOL AFX_CDECL IsMatchingMnemonic(
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  A pointer to the window containing the control.  
   
- `lpMsg`  
+ *lpMsg*  
  A pointer to the message containing the mnemonic to match.  
   
 ### Return Value  
@@ -226,14 +222,14 @@ virtual BOOL OnEvent(
  *pCmdTarget*  
  A pointer to the `CCmdTarget` object attempting to handle the event  
   
- `idCtrl`  
+ *idCtrl*  
  The resource ID of the control.  
   
- `pEvent`  
+ *pEvent*  
  The event being handled.  
   
- `pHandlerInfo`  
- If not **NULL**, `OnEvent` fills in the **pTarget** and **pmf** members of the **AFX_CMDHANDLERINFO** structure instead of dispatching the command. Typically, this parameter should be **NULL**.  
+ *pHandlerInfo*  
+ If not NULL, `OnEvent` fills in the `pTarget` and `pmf` members of the `AFX_CMDHANDLERINFO` structure instead of dispatching the command. Typically, this parameter should be NULL.  
   
 ### Return Value  
  Nonzero if the event was handled, otherwise zero.  
@@ -251,8 +247,8 @@ virtual const DLGTEMPLATE* PreCreateDialog(
 ```  
   
 ### Parameters  
- `pOccDialogInfo`  
- An **_AFX_OCC_DIALOG_INFO** structure containing information on the dialog template and any ActiveX controls hosted by the dialog.  
+ *pOccDialogInfo*  
+ An `_AFX_OCC_DIALOG_INFO` structure containing information on the dialog template and any ActiveX controls hosted by the dialog.  
   
  *pOrigTemplate*  
  A pointer to the dialog template to be used in creating the dialog box.  
@@ -273,8 +269,8 @@ virtual void PostCreateDialog(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 ```  
   
 ### Parameters  
- `pOccDialogInfo`  
- An **_AFX_OCC_DIALOG_INFO** structure containing information on the dialog template and any ActiveX controls hosted by the dialog.  
+ *pOccDialogInfo*  
+ An `_AFX_OCC_DIALOG_INFO` structure containing information on the dialog template and any ActiveX controls hosted by the dialog.  
   
 ### Remarks  
  This memory was allocated by a call to `SplitDialogTemplate`, and was used for any hosted ActiveX controls in the dialog box.  
@@ -291,10 +287,10 @@ static void AFX_CDECL SetDefaultButton(
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  A pointer to the window containing the control.  
   
- `bDefault`  
+ *bDefault*  
  Nonzero if the control should become the default button; otherwise zero.  
   
 ### Return Value  
@@ -303,7 +299,7 @@ static void AFX_CDECL SetDefaultButton(
 ### Remarks  
   
 > [!NOTE]
->  The control must have the **OLEMISC_ACTSLIKEBUTTON** status bit set. For more information on **OLEMISC** flags, see the [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) topic in the Windows SDK.  
+>  The control must have the OLEMISC_ACTSLIKEBUTTON status bit set. For more information on OLEMISC flags, see the [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) topic in the Windows SDK.  
   
 ##  <a name="splitdialogtemplate"></a>  COccManager::SplitDialogTemplate  
  Called by the framework to split the ActiveX controls from common dialog controls.  
@@ -315,19 +311,19 @@ virtual DLGTEMPLATE* SplitDialogTemplate(
 ```  
   
 ### Parameters  
- `pTemplate`  
+ *pTemplate*  
  A pointer to the dialog template to be examined.  
   
- `ppOleDlgItems`  
+ *ppOleDlgItems*  
  A list of pointers to dialog box items that are ActiveX controls.  
   
 ### Return Value  
- A pointer to a dialog template structure containing only non-ActiveX controls. If no ActiveX controls are present, **NULL** is returned.  
+ A pointer to a dialog template structure containing only non-ActiveX controls. If no ActiveX controls are present, NULL is returned.  
   
 ### Remarks  
- If any ActiveX controls are found, the template is analyzed and a new template, containing only non-ActiveX controls, is created. Any ActiveX controls found during this process are added to `ppOleDlgItems`.  
+ If any ActiveX controls are found, the template is analyzed and a new template, containing only non-ActiveX controls, is created. Any ActiveX controls found during this process are added to *ppOleDlgItems*.  
   
- If there are no ActiveX controls in the template, **NULL** is returned *.*  
+ If there are no ActiveX controls in the template, NULL is returned *.*  
   
 > [!NOTE]
 >  Memory allocated for the new template is freed in the `PostCreateDialog` function.  

@@ -2,19 +2,14 @@
 title: "CFileFind Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CFileFind", "AFX/CFileFind", "AFX/CFileFind::CFileFind", "AFX/CFileFind::Close", "AFX/CFileFind::FindFile", "AFX/CFileFind::FindNextFile", "AFX/CFileFind::GetCreationTime", "AFX/CFileFind::GetFileName", "AFX/CFileFind::GetFilePath", "AFX/CFileFind::GetFileTitle", "AFX/CFileFind::GetFileURL", "AFX/CFileFind::GetLastAccessTime", "AFX/CFileFind::GetLastWriteTime", "AFX/CFileFind::GetLength", "AFX/CFileFind::GetRoot", "AFX/CFileFind::IsArchived", "AFX/CFileFind::IsCompressed", "AFX/CFileFind::IsDirectory", "AFX/CFileFind::IsDots", "AFX/CFileFind::IsHidden", "AFX/CFileFind::IsNormal", "AFX/CFileFind::IsReadOnly", "AFX/CFileFind::IsSystem", "AFX/CFileFind::IsTemporary", "AFX/CFileFind::MatchesMask", "AFX/CFileFind::CloseContext", "AFX/CFileFind::m_pTM"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFileFind [MFC], CFileFind", "CFileFind [MFC], Close", "CFileFind [MFC], FindFile", "CFileFind [MFC], FindNextFile", "CFileFind [MFC], GetCreationTime", "CFileFind [MFC], GetFileName", "CFileFind [MFC], GetFilePath", "CFileFind [MFC], GetFileTitle", "CFileFind [MFC], GetFileURL", "CFileFind [MFC], GetLastAccessTime", "CFileFind [MFC], GetLastWriteTime", "CFileFind [MFC], GetLength", "CFileFind [MFC], GetRoot", "CFileFind [MFC], IsArchived", "CFileFind [MFC], IsCompressed", "CFileFind [MFC], IsDirectory", "CFileFind [MFC], IsDots", "CFileFind [MFC], IsHidden", "CFileFind [MFC], IsNormal", "CFileFind [MFC], IsReadOnly", "CFileFind [MFC], IsSystem", "CFileFind [MFC], IsTemporary", "CFileFind [MFC], MatchesMask", "CFileFind [MFC], CloseContext", "CFileFind [MFC], m_pTM"]
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CFileFind Class
@@ -103,7 +98,7 @@ CFileFind(CAtlTransactionManager* pTM);
 ```  
   
 ### Parameters  
- `pTM`  
+ *pTM*  
  Pointer to CAtlTransactionManager object  
   
 ### Example  
@@ -117,7 +112,7 @@ void Close();
 ```  
   
 ### Remarks  
- After calling **Close**, you do not have to create a new `CFileFind` instance before calling [FindFile](#findfile) to begin a new search.  
+ After calling `Close`, you do not have to create a new `CFileFind` instance before calling [FindFile](#findfile) to begin a new search.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  
@@ -132,7 +127,7 @@ virtual void CloseContext();
 ### Remarks  
  Closes the file specified by the current value of the search handle. Override this function to change the default behavior.  
   
- You must call the [FindFile](#findfile) or [FindNextFile](#findnextfile) functions at least once to retrieve a valid search handle. The **FindFile** and `FindNextFile` functions use the search handle to locate files with names that match a given name.  
+ You must call the [FindFile](#findfile) or [FindNextFile](#findnextfile) functions at least once to retrieve a valid search handle. The `FindFile` and `FindNextFile` functions use the search handle to locate files with names that match a given name.  
   
 ##  <a name="findfile"></a>  CFileFind::FindFile  
  Call this member function to open a file search.  
@@ -144,17 +139,17 @@ virtual BOOL FindFile(
 ```  
   
 ### Parameters  
- `pstrName`  
- A pointer to a string containing the name of the file to find. If you pass **NULL** for `pstrName`, **FindFile** does a wildcard (*.\*) search.  
+ *pstrName*  
+ A pointer to a string containing the name of the file to find. If you pass NULL for *pstrName*, `FindFile` does a wildcard (*.\*) search.  
   
  *dwUnused*  
- Reserved to make **FindFile** polymorphic with derived classes. Must be 0.  
+ Reserved to make `FindFile` polymorphic with derived classes. Must be 0.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
- After calling **FindFile** to begin the file search, call [FindNextFile](#findnextfile) to retrieve subsequent files. You must call `FindNextFile` at least once before calling any of the following attribute member functions:  
+ After calling `FindFile` to begin the file search, call [FindNextFile](#findnextfile) to retrieve subsequent files. You must call `FindNextFile` at least once before calling any of the following attribute member functions:  
   
 - [GetCreationTime](#getcreationtime)  
   
@@ -205,7 +200,7 @@ virtual BOOL FindNextFile();
 ```  
   
 ### Return Value  
- Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.  
+ Nonzero if there are more files; zero if the file found is the last one in the directory or if an error occurred. To get extended error information, call the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360). If the file found is the last file in the directory, or if no matching files can be found, the `GetLastError` function returns ERROR_NO_MORE_FILES.  
   
 ### Remarks  
  You must call `FindNextFile` at least once before calling any of the following attribute member functions:  
@@ -248,7 +243,7 @@ virtual BOOL FindNextFile();
   
 - [MatchesMask](#matchesmask)  
   
- `FindNextFile` wraps the Win32 function [FindNextFile](http://msdn.microsoft.com/library/windows/desktop/aa364428).  
+ `FindNextFile` wraps the Win32 function [FindNextFile](/windows/desktop/api/fileapi/nf-fileapi-findnextfilea).  
   
 ### Example  
   See the example for [CFileFind::IsDirectory](#isdirectory).  
@@ -262,10 +257,10 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ```  
   
 ### Parameters  
- `pTimeStamp`  
- A pointer to a [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was created.  
+ *pTimeStamp*  
+ A pointer to a [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was created.  
   
- `refTime`  
+ *refTime*  
  A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.  
   
 ### Return Value  
@@ -275,7 +270,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
  You must call [FindNextFile](#findnextfile) at least once before calling `GetCreationTime`.  
   
 > [!NOTE]
->  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API for more information.  
+>  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.  
   
 ### Example  
   See the example for [CFileFind::GetLength](#getlength).  
@@ -295,11 +290,11 @@ virtual CString GetFileName() const;
   
  `GetFileName` is one of three `CFileFind` member functions that return some form of the file name. The following list describes the three and how they vary:  
   
-- `GetFileName` returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file name `myfile.txt`.  
+- `GetFileName` returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file name *myfile.txt*.  
   
-- [GetFilePath](#getfilepath) returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file path `c:\myhtml\myfile.txt`.  
+- [GetFilePath](#getfilepath) returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file path *c:\myhtml\myfile.txt*.  
   
-- [GetFileTitle](#getfiletitle) returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file title `myfile`.  
+- [GetFileTitle](#getfiletitle) returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file title *myfile*.  
   
 ### Example  
  [!code-cpp[NVC_MFCFiles#32](../../atl-mfc-shared/reference/codesnippet/cpp/cfilefind-class_2.cpp)]  
@@ -319,11 +314,11 @@ virtual CString GetFilePath() const;
   
  `GetFilePath` is one of three `CFileFind` member functions that return some form of the file name. The following list describes the three and how they vary:  
   
-- [GetFileName](#getfilename) returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file name `myfile.txt`.  
+- [GetFileName](#getfilename) returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file name *myfile.txt*.  
   
 - `GetFilePath` returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file path `c:\myhtml\myfile.txt`.  
   
-- [GetFileTitle](#getfiletitle) returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file title `myfile`.  
+- [GetFileTitle](#getfiletitle) returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file title *myfile*.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  
@@ -343,11 +338,11 @@ virtual CString GetFileTitle() const;
   
  `GetFileTitle` is one of three `CFileFind` member functions that return some form of the file name. The following list describes the three and how they vary:  
   
-- [GetFileName](#getfilename) returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file name `myfile.txt`.  
+- [GetFileName](#getfilename) returns the file name, including the extension. For example, calling `GetFileName` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file name *myfile.txt*.  
   
-- [GetFilePath](#getfilepath) returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file path `c:\myhtml\myfile.txt`.  
+- [GetFilePath](#getfilepath) returns the entire path for the file. For example, calling `GetFilePath` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file path *c:\myhtml\myfile.txt*.  
   
-- `GetFileTitle` returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file `c:\myhtml\myfile.txt` returns the file title `myfile`.  
+- `GetFileTitle` returns the file name, excluding the file extension. For example, calling `GetFileTitle` to generate a user message about the file *c:\myhtml\myfile.txt* returns the file title *myfile*.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  
@@ -365,7 +360,7 @@ virtual CString GetFileURL() const;
 ### Remarks  
  You must call [FindNextFile](#findnextfile) at least once before calling `GetFileURL`.  
   
- `GetFileURL` is similar to the member function [GetFilePath](#getfilepath), except that it returns the URL in the form `file://path`. For example, calling `GetFileURL` to get the complete URL for `myfile.txt` returns the URL `file://c:\myhtml\myfile.txt`.  
+ `GetFileURL` is similar to the member function [GetFilePath](#getfilepath), except that it returns the URL in the form `file://path`. For example, calling `GetFileURL` to get the complete URL for *myfile.txt* returns the URL `file://c:\myhtml\myfile.txt`.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  
@@ -379,11 +374,11 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 ```  
   
 ### Parameters  
- `refTime`  
+ *refTime*  
  A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.  
   
- `pTimeStamp`  
- A pointer to a [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last accessed.  
+ *pTimeStamp*  
+ A pointer to a [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last accessed.  
   
 ### Return Value  
  Nonzero if successful; 0 if unsuccessful. `GetLastAccessTime` returns 0 only if [FindNextFile](#findnextfile) has never been called on this `CFileFind` object.  
@@ -392,7 +387,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
  You must call [FindNextFile](#findnextfile) at least once before calling `GetLastAccessTime`.  
   
 > [!NOTE]
->  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API for more information.  
+>  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.  
   
 ### Example  
   See the example for [CFileFind::GetLength](#getlength).  
@@ -406,10 +401,10 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ```  
   
 ### Parameters  
- `pTimeStamp`  
- A pointer to a [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last written to.  
+ *pTimeStamp*  
+ A pointer to a [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) structure containing the time the file was last written to.  
   
- `refTime`  
+ *refTime*  
  A reference to a [CTime](../../atl-mfc-shared/reference/ctime-class.md) object.  
   
 ### Return Value  
@@ -419,7 +414,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
  You must call [FindNextFile](#findnextfile) at least once before calling `GetLastWriteTime`.  
   
 > [!NOTE]
->  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_Find_Data](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API for more information.  
+>  Not all file systems use the same semantics to implement the time stamp returned by this function. This function may return the same value returned by other time stamp functions if the underlying file system or server does not support keeping the time attribute. See the [Win32_Find_Data](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure for information about time formats. On some operation systems, the returned time is in the time zone local to the machine were the file is located. See the Win32 [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API for more information.  
   
 ### Example  
   See the example for [CFileFind::GetLength](#getlength).  
@@ -437,7 +432,7 @@ ULONGLONG GetLength() const;
 ### Remarks  
  You must call [FindNextFile](#findnextfile) at least once before calling `GetLength`.  
   
- `GetLength` uses the Win32 structure [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) to get and return the value of the file size, in bytes.  
+ `GetLength` uses the Win32 structure [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) to get and return the value of the file size, in bytes.  
   
 > [!NOTE]
 >  As of MFC 7.0, `GetLength` supports 64-bit integer types. Previously existing code built with this newer version of the library may result in truncation warnings.  
@@ -458,7 +453,7 @@ virtual CString GetRoot() const;
 ### Remarks  
  You must call [FindNextFile](#findnextfile) at least once before calling `GetRoot`.  
   
- This member function returns the drive specifier and path name used to start a search. For example, calling [FindFile](#findfile) with `*.dat` results in `GetRoot` returning an empty string. Passing a path, such as `c:\windows\system\*.dll`, to **FindFile** results `GetRoot` returning `c:\windows\system\`.  
+ This member function returns the drive specifier and path name used to start a search. For example, calling [FindFile](#findfile) with `*.dat` results in `GetRoot` returning an empty string. Passing a path, such as `c:\windows\system\*.dll`, to `FindFile` results `GetRoot` returning `c:\windows\system\`.  
   
 ### Example  
   See the example for [CFileFind::GetFileName](#getfilename).  
@@ -474,7 +469,7 @@ BOOL IsArchived() const;
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Applications mark an archive file, which is to be backed up or removed, with FILE_ATTRIBUTE_ARCHIVE, a file attribute identified in the [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure.  
+ Applications mark an archive file, which is to be backed up or removed, with FILE_ATTRIBUTE_ARCHIVE, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure.  
   
  You must call [FindNextFile](#findnextfile) at least once before calling `IsArchived`.  
   
@@ -494,7 +489,7 @@ BOOL IsCompressed() const;
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- A compressed file is marked with FILE_ATTRIBUTE_COMPRESSED, a file attribute identified in the [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure. For a file, this attribute indicates that all of the data in the file is compressed. For a directory, this attribute indicates that compression is the default for newly created files and subdirectories.  
+ A compressed file is marked with FILE_ATTRIBUTE_COMPRESSED, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure. For a file, this attribute indicates that all of the data in the file is compressed. For a directory, this attribute indicates that compression is the default for newly created files and subdirectories.  
   
  You must call [FindNextFile](#findnextfile) at least once before calling `IsCompressed`.  
   
@@ -514,7 +509,7 @@ BOOL IsDirectory() const;
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- A file that is a directory is marked with FILE_ATTRIBUTE_DIRECTORY a file attribute identified in the [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure.  
+ A file that is a directory is marked with FILE_ATTRIBUTE_DIRECTORY a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure.  
   
  You must call [FindNextFile](#findnextfile) at least once before calling `IsDirectory`.  
   
@@ -552,7 +547,7 @@ BOOL IsHidden() const;
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Hidden files, which are marked with FILE_ATTRIBUTE_HIDDEN, a file attribute identified in the [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure. A hidden file is not included in an ordinary directory listing.  
+ Hidden files, which are marked with FILE_ATTRIBUTE_HIDDEN, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure. A hidden file is not included in an ordinary directory listing.  
   
  You must call [FindNextFile](#findnextfile) at least once before calling `IsHidden`.  
   
@@ -572,7 +567,7 @@ BOOL IsNormal() const;
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- Files marked with FILE_ATTRIBUTE_NORMAL, a file attribute identified in the [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure. A normal file has no other attributes set. All other file attributes override this attribute.  
+ Files marked with FILE_ATTRIBUTE_NORMAL, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure. A normal file has no other attributes set. All other file attributes override this attribute.  
   
  You must call [FindNextFile](#findnextfile) at least once before calling `IsNormal`.  
   
@@ -592,7 +587,7 @@ BOOL IsReadOnly() const;
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- A read-only file is marked with FILE_ATTRIBUTE_READONLY, a file attribute identified in the [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure. Applications can read such a file, but they cannot write to it or delete it.  
+ A read-only file is marked with FILE_ATTRIBUTE_READONLY, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure. Applications can read such a file, but they cannot write to it or delete it.  
   
  You must call [FindNextFile](#findnextfile) at least once before calling `IsReadOnly`.  
   
@@ -612,7 +607,7 @@ BOOL IsSystem() const;
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- A system file is marked with FILE_ATTRIBUTE_SYSTEM, , a file attribute identified in the [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure. A system file is part of, or is used exclusively by, the operating system.  
+ A system file is marked with FILE_ATTRIBUTE_SYSTEM, , a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure. A system file is part of, or is used exclusively by, the operating system.  
   
  You must call [FindNextFile](#findnextfile) at least once before calling `IsSystem`.  
   
@@ -632,7 +627,7 @@ BOOL IsTemporary() const;
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- A temporary file is marked with FILE_ATTRIBUTE_TEMPORARY, a file attribute identified in the [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure. A temporary file is used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.  
+ A temporary file is marked with FILE_ATTRIBUTE_TEMPORARY, a file attribute identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure. A temporary file is used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.  
   
  You must call [FindNextFile](#findnextfile) at least once before calling `IsTemporary`.  
   
@@ -658,8 +653,8 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
 ```  
   
 ### Parameters  
- `dwMask`  
- Specifies one or more file attributes, identified in the [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) structure, for the found file. To search for multiple attributes, use the bitwise OR (&#124;) operator. Any combination of the following attributes is acceptable:  
+ *dwMask*  
+ Specifies one or more file attributes, identified in the [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) structure, for the found file. To search for multiple attributes, use the bitwise OR (&#124;) operator. Any combination of the following attributes is acceptable:  
   
 -   FILE_ATTRIBUTE_ARCHIVE   The file is an archive file. Applications use this attribute to mark files for backup or removal.  
   
@@ -678,7 +673,7 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
 -   FILE_ATTRIBUTE_TEMPORARY   The file is being used for temporary storage. Applications should write to the file only if absolutely necessary. Most of the file's data remains in memory without being flushed to the media because the file will soon be deleted.  
   
 ### Return Value  
- Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ Nonzero if successful; otherwise 0. To get extended error information, call the Win32 function [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### Remarks  
  You must call [FindNextFile](#findnextfile) at least once before calling `MatchesMask`.  

@@ -2,24 +2,19 @@
 title: "CPaneContainerManager Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CPaneContainerManager", "AFXPANECONTAINERMANAGER/CPaneContainerManager", "AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPaneContainerManager", "AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPaneContainerManagerToDockablePane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPanesToList", "AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPaneToList", "AFXPANECONTAINERMANAGER/CPaneContainerManager::AddPaneToRecentPaneContainer", "AFXPANECONTAINERMANAGER/CPaneContainerManager::CalcRects", "AFXPANECONTAINERMANAGER/CPaneContainerManager::CanBeAttached", "AFXPANECONTAINERMANAGER/CPaneContainerManager::CheckAndRemoveNonValidPane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::CheckForMiniFrameAndCaption", "AFXPANECONTAINERMANAGER/CPaneContainerManager::Create", "AFXPANECONTAINERMANAGER/CPaneContainerManager::DoesAllowDynInsertBefore", "AFXPANECONTAINERMANAGER/CPaneContainerManager::DoesContainFloatingPane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::EnableGrippers", "AFXPANECONTAINERMANAGER/CPaneContainerManager::FindPaneContainer", "AFXPANECONTAINERMANAGER/CPaneContainerManager::FindTabbedPane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetAvailableSpace", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetDefaultPaneDivider", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetDockSiteFrameWnd", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetFirstPane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetFirstVisiblePane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetMinMaxOffset", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetMinSize", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetNodeCount", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetPaneContainerRTC", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetPaneCount", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetTotalRefCount", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetVisiblePaneCount", "AFXPANECONTAINERMANAGER/CPaneContainerManager::GetWindowRect", "AFXPANECONTAINERMANAGER/CPaneContainerManager::HideAll", "AFXPANECONTAINERMANAGER/CPaneContainerManager::InsertPane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::IsAutoHideMode", "AFXPANECONTAINERMANAGER/CPaneContainerManager::IsEmpty", "AFXPANECONTAINERMANAGER/CPaneContainerManager::IsRootPaneContainerVisible", "AFXPANECONTAINERMANAGER/CPaneContainerManager::NotifyPaneDivider", "AFXPANECONTAINERMANAGER/CPaneContainerManager::OnPaneDividerMove", "AFXPANECONTAINERMANAGER/CPaneContainerManager::OnShowPane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::PaneFromPoint", "AFXPANECONTAINERMANAGER/CPaneContainerManager::ReleaseEmptyPaneContainers", "AFXPANECONTAINERMANAGER/CPaneContainerManager::RemoveAllPanesAndPaneDividers", "AFXPANECONTAINERMANAGER/CPaneContainerManager::RemoveNonValidPanes", "AFXPANECONTAINERMANAGER/CPaneContainerManager::RemovePaneDivider", "AFXPANECONTAINERMANAGER/CPaneContainerManager::RemovePaneFromPaneContainer", "AFXPANECONTAINERMANAGER/CPaneContainerManager::ReplacePane", "AFXPANECONTAINERMANAGER/CPaneContainerManager::ResizePaneContainers", "AFXPANECONTAINERMANAGER/CPaneContainerManager::Serialize", "AFXPANECONTAINERMANAGER/CPaneContainerManager::SetDefaultPaneDividerForPanes", "AFXPANECONTAINERMANAGER/CPaneContainerManager::SetPaneContainerRTC", "AFXPANECONTAINERMANAGER/CPaneContainerManager::SetResizeMode", "AFXPANECONTAINERMANAGER/CPaneContainerManager::StoreRecentDockSiteInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CPaneContainerManager [MFC], AddPane", "CPaneContainerManager [MFC], AddPaneContainerManager", "CPaneContainerManager [MFC], AddPaneContainerManagerToDockablePane", "CPaneContainerManager [MFC], AddPanesToList", "CPaneContainerManager [MFC], AddPaneToList", "CPaneContainerManager [MFC], AddPaneToRecentPaneContainer", "CPaneContainerManager [MFC], CalcRects", "CPaneContainerManager [MFC], CanBeAttached", "CPaneContainerManager [MFC], CheckAndRemoveNonValidPane", "CPaneContainerManager [MFC], CheckForMiniFrameAndCaption", "CPaneContainerManager [MFC], Create", "CPaneContainerManager [MFC], DoesAllowDynInsertBefore", "CPaneContainerManager [MFC], DoesContainFloatingPane", "CPaneContainerManager [MFC], EnableGrippers", "CPaneContainerManager [MFC], FindPaneContainer", "CPaneContainerManager [MFC], FindTabbedPane", "CPaneContainerManager [MFC], GetAvailableSpace", "CPaneContainerManager [MFC], GetDefaultPaneDivider", "CPaneContainerManager [MFC], GetDockSiteFrameWnd", "CPaneContainerManager [MFC], GetFirstPane", "CPaneContainerManager [MFC], GetFirstVisiblePane", "CPaneContainerManager [MFC], GetMinMaxOffset", "CPaneContainerManager [MFC], GetMinSize", "CPaneContainerManager [MFC], GetNodeCount", "CPaneContainerManager [MFC], GetPaneContainerRTC", "CPaneContainerManager [MFC], GetPaneCount", "CPaneContainerManager [MFC], GetTotalRefCount", "CPaneContainerManager [MFC], GetVisiblePaneCount", "CPaneContainerManager [MFC], GetWindowRect", "CPaneContainerManager [MFC], HideAll", "CPaneContainerManager [MFC], InsertPane", "CPaneContainerManager [MFC], IsAutoHideMode", "CPaneContainerManager [MFC], IsEmpty", "CPaneContainerManager [MFC], IsRootPaneContainerVisible", "CPaneContainerManager [MFC], NotifyPaneDivider", "CPaneContainerManager [MFC], OnPaneDividerMove", "CPaneContainerManager [MFC], OnShowPane", "CPaneContainerManager [MFC], PaneFromPoint", "CPaneContainerManager [MFC], ReleaseEmptyPaneContainers", "CPaneContainerManager [MFC], RemoveAllPanesAndPaneDividers", "CPaneContainerManager [MFC], RemoveNonValidPanes", "CPaneContainerManager [MFC], RemovePaneDivider", "CPaneContainerManager [MFC], RemovePaneFromPaneContainer", "CPaneContainerManager [MFC], ReplacePane", "CPaneContainerManager [MFC], ResizePaneContainers", "CPaneContainerManager [MFC], Serialize", "CPaneContainerManager [MFC], SetDefaultPaneDividerForPanes", "CPaneContainerManager [MFC], SetPaneContainerRTC", "CPaneContainerManager [MFC], SetResizeMode", "CPaneContainerManager [MFC], StoreRecentDockSiteInfo"]
 ms.assetid: 3d974c15-a62f-4648-bb5b-cc31ab7950af
-caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CPaneContainerManager Class
 The `CPaneContainerManager` class manages the storage and display of the current docking layout.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
@@ -110,7 +105,7 @@ virtual void AddPane(CDockablePane* pControlBarToAdd);
 ```  
   
 ### Parameters  
- [in] `pControlBarToAdd`  
+ [in] *pControlBarToAdd*  
   
 ### Remarks  
   
@@ -131,11 +126,11 @@ virtual BOOL AddPaneContainerManager(
 ```  
   
 ### Parameters  
- [in] `srcManager`  
- [in] `bOuterEdge`  
- [in] `pTargetControlBar`  
- [in] `dwAlignment`  
- [in] `bCopy`  
+ [in] *srcManager*  
+ [in] *bOuterEdge*  
+ [in] *pTargetControlBar*  
+ [in] *dwAlignment*  
+ [in] *bCopy*  
   
 ### Return Value  
   
@@ -151,8 +146,8 @@ virtual BOOL AddPaneContainerManagerToDockablePane(
 ```  
   
 ### Parameters  
- [in] `pTargetControlBar`  
- [in] `srcManager`  
+ [in] *pTargetControlBar*  
+ [in] *srcManager*  
   
 ### Return Value  
   
@@ -168,8 +163,8 @@ void AddPanesToList(
 ```  
   
 ### Parameters  
- [in] `plstControlBars`  
- [in] `plstSliders`  
+ [in] *plstControlBars*  
+ [in] *plstSliders*  
   
 ### Remarks  
   
@@ -181,7 +176,7 @@ void AddPaneToList(CDockablePane* pControlBarToAdd);
 ```  
   
 ### Parameters  
- [in] `pControlBarToAdd`  
+ [in] *pControlBarToAdd*  
   
 ### Remarks  
   
@@ -195,8 +190,8 @@ virtual CDockablePane* AddPaneToRecentPaneContainer(
 ```  
   
 ### Parameters  
- [in] `pBarToAdd`  
- [in] `pRecentContainer`  
+ [in] *pBarToAdd*  
+ [in] *pRecentContainer*  
   
 ### Return Value  
   
@@ -217,13 +212,13 @@ void CalcRects(
 ```  
   
 ### Parameters  
- [in] `rectOriginal`  
- [in] `rectInserted`  
- [in] `rectSlider`  
- [in] `dwSliderStyle`  
- [in] `dwAlignment`  
- [in] `sizeMinOriginal`  
- [in] `sizeMinInserted`  
+ [in] *rectOriginal*  
+ [in] *rectInserted*  
+ [in] *rectSlider*  
+ [in] *dwSliderStyle*  
+ [in] *dwAlignment*  
+ [in] *sizeMinOriginal*  
+ [in] *sizeMinInserted*  
   
 ### Remarks  
   
@@ -246,7 +241,7 @@ BOOL CheckAndRemoveNonValidPane(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -262,8 +257,8 @@ virtual BOOL CheckForMiniFrameAndCaption(
 ```  
   
 ### Parameters  
- [in] `point`  
- [in] `ppTargetControlBar`  
+ [in] *point*  
+ [in] *ppTargetControlBar*  
   
 ### Return Value  
   
@@ -280,9 +275,9 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `pParentWnd`  
- [in] `pDefaultSlider`  
- [in] `pContainerRTC`  
+ [in] *pParentWnd*  
+ [in] *pDefaultSlider*  
+ [in] *pContainerRTC*  
   
 ### Return Value  
   
@@ -318,7 +313,7 @@ virtual void EnableGrippers(BOOL bEnable);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
   
 ### Remarks  
   
@@ -332,8 +327,8 @@ virtual CPaneContainer* FindPaneContainer(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bLeftBar`  
+ [in] *pBar*  
+ [in] *bLeftBar*  
   
 ### Return Value  
   
@@ -347,7 +342,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
   
 ### Return Value  
   
@@ -361,7 +356,7 @@ virtual void GetAvailableSpace(CRect& rect) const;
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -421,10 +416,10 @@ virtual void GetMinMaxOffset(
 ```  
   
 ### Parameters  
- [in] `pSlider`  
- [in] `nMinOffset`  
- [in] `nMaxOffset`  
- [in] `nStep`  
+ [in] *pSlider*  
+ [in] *nMinOffset*  
+ [in] *nMaxOffset*  
+ [in] *nStep*  
   
 ### Remarks  
   
@@ -436,7 +431,7 @@ virtual void GetMinSize(CSize& size);
 ```  
   
 ### Parameters  
- [in] `size`  
+ [in] *size*  
   
 ### Remarks  
   
@@ -503,7 +498,7 @@ virtual void GetWindowRect(CRect& rect) const;
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -529,11 +524,11 @@ virtual BOOL InsertPane(
 ```  
   
 ### Parameters  
- [in] `pControlBarToInsert`  
- [in] `pTargetControlBar`  
- [in] `dwAlignment`  
- [in] `lpRect`  
- [in] `dockMethod`  
+ [in] *pControlBarToInsert*  
+ [in] *pTargetControlBar*  
+ [in] *dwAlignment*  
+ [in] *lpRect*  
+ [in] *dockMethod*  
   
 ### Return Value  
   
@@ -593,10 +588,10 @@ virtual int OnPaneDividerMove(
 ```  
   
 ### Parameters  
- [in] `pSlider`  
- [in] `uFlags`  
- [in] `nOffset`  
- [in] `hdwp`  
+ [in] *pSlider*  
+ [in] *uFlags*  
+ [in] *nOffset*  
+ [in] *hdwp*  
   
 ### Return Value  
   
@@ -612,8 +607,8 @@ virtual BOOL OnShowPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bShow`  
+ [in] *pBar*  
+ [in] *bShow*  
   
 ### Return Value  
   
@@ -632,11 +627,11 @@ virtual CDockablePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] `point`  
- [in] `nSensitivity`  
- [in] `bExactBar`  
- [in] `bIsTabArea`  
- [in] `bCaption`  
+ [in] *point*  
+ [in] *nSensitivity*  
+ [in] *bExactBar*  
+ [in] *bIsTabArea*  
+ [in] *bCaption*  
   
 ### Return Value  
   
@@ -677,7 +672,7 @@ virtual void RemovePaneDivider(CPaneDivider* pSlider);
 ```  
   
 ### Parameters  
- [in] `pSlider`  
+ [in] *pSlider*  
   
 ### Remarks  
   
@@ -689,7 +684,7 @@ virtual BOOL RemovePaneFromPaneContainer(CDockablePane* pControlBar);
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
   
 ### Return Value  
   
@@ -705,8 +700,8 @@ virtual BOOL ReplacePane(
 ```  
   
 ### Parameters  
- [in] `pBarOld`  
- [in] `pBarNew`  
+ [in] *pBarOld*  
+ [in] *pBarNew*  
   
 ### Return Value  
   
@@ -729,11 +724,11 @@ virtual void ResizePaneContainers(
 ```  
   
 ### Parameters  
- [in] `nSide`  
- [in] `bExpand`  
- [in] `nOffset`  
- [in] `hdwp`  
- [in] `rect`  
+ [in] *nSide*  
+ [in] *bExpand*  
+ [in] *nOffset*  
+ [in] *hdwp*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -745,7 +740,7 @@ void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
   
 ### Remarks  
   
@@ -757,7 +752,7 @@ void SetDefaultPaneDividerForPanes(CPaneDivider* pSlider);
 ```  
   
 ### Parameters  
- [in] `pSlider`  
+ [in] *pSlider*  
   
 ### Remarks  
   
@@ -769,7 +764,7 @@ void SetPaneContainerRTC(CRuntimeClass* pContainerRTC);
 ```  
   
 ### Parameters  
- [in] `pContainerRTC`  
+ [in] *pContainerRTC*  
   
 ### Remarks  
   
@@ -781,7 +776,7 @@ virtual void SetResizeMode(BOOL bResize);
 ```  
   
 ### Parameters  
- [in] `bResize`  
+ [in] *bResize*  
   
 ### Remarks  
   
@@ -793,7 +788,7 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   

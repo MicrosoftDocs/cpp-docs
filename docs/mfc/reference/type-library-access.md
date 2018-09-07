@@ -2,19 +2,14 @@
 title: "Type Library Access | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.mfc.macros"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["type libraries [MFC], accessing"]
 ms.assetid: a03fa7f0-86c2-4119-bf81-202916fb74b3
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Type Library Access
@@ -60,14 +55,14 @@ IMPLEMENT_OLETYPELIB(class_name, tlid, wVerMajor,  wVerMinor)
  *tlid*  
  The ID number of the type library.  
   
- `wVerMajor`  
+ *wVerMajor*  
  The type library major version number.  
   
- `wVerMinor`  
+ *wVerMinor*  
  The type library minor version number.  
   
 ### Remarks  
- This macro must appear in the implementation file for any control class that uses the `DECLARE_OLETYPELIB` macro.  
+ This macro must appear in the implementation file for any control class that uses the DECLARE_OLETYPELIB macro.  
 
 ### Requirements  
  **Header:** afxdisp.h  

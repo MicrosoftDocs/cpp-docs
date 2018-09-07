@@ -2,19 +2,14 @@
 title: "CD2DRadialGradientBrush Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush::CD2DRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush::Attach", "AFXRENDERTARGET/CD2DRadialGradientBrush::Create", "AFXRENDERTARGET/CD2DRadialGradientBrush::Destroy", "AFXRENDERTARGET/CD2DRadialGradientBrush::Detach", "AFXRENDERTARGET/CD2DRadialGradientBrush::Get", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetCenter", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetGradientOriginOffset", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetRadiusX", "AFXRENDERTARGET/CD2DRadialGradientBrush::GetRadiusY", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetCenter", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetGradientOriginOffset", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetRadiusX", "AFXRENDERTARGET/CD2DRadialGradientBrush::SetRadiusY", "AFXRENDERTARGET/CD2DRadialGradientBrush::m_pRadialGradientBrush", "AFXRENDERTARGET/CD2DRadialGradientBrush::m_RadialGradientBrushProperties"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DRadialGradientBrush [MFC], CD2DRadialGradientBrush", "CD2DRadialGradientBrush [MFC], Attach", "CD2DRadialGradientBrush [MFC], Create", "CD2DRadialGradientBrush [MFC], Destroy", "CD2DRadialGradientBrush [MFC], Detach", "CD2DRadialGradientBrush [MFC], Get", "CD2DRadialGradientBrush [MFC], GetCenter", "CD2DRadialGradientBrush [MFC], GetGradientOriginOffset", "CD2DRadialGradientBrush [MFC], GetRadiusX", "CD2DRadialGradientBrush [MFC], GetRadiusY", "CD2DRadialGradientBrush [MFC], SetCenter", "CD2DRadialGradientBrush [MFC], SetGradientOriginOffset", "CD2DRadialGradientBrush [MFC], SetRadiusX", "CD2DRadialGradientBrush [MFC], SetRadiusY", "CD2DRadialGradientBrush [MFC], m_pRadialGradientBrush", "CD2DRadialGradientBrush [MFC], m_RadialGradientBrushProperties"]
 ms.assetid: 6c76d84a-d831-4ee2-96f1-82c1f5b0d6a9
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DRadialGradientBrush Class
@@ -95,7 +90,7 @@ void Attach(ID2D1RadialGradientBrush* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dradialgradientbrush"></a>  CD2DRadialGradientBrush::CD2DRadialGradientBrush  
@@ -114,28 +109,28 @@ CD2DRadialGradientBrush(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `gradientStops`  
+ *gradientStops*  
  A pointer to an array of D2D1_GRADIENT_STOP structures.  
   
- `gradientStopsCount`  
+ *gradientStopsCount*  
  A value greater than or equal to 1 that specifies the number of gradient stops in the gradientStops array.  
   
- `RadialGradientBrushProperties`  
+ *RadialGradientBrushProperties*  
  The center, gradient origin offset, and x-radius and y-radius of the brush's gradient.  
   
- `colorInterpolationGamma`  
+ *colorInterpolationGamma*  
  The space in which color interpolation between the gradient stops is performed.  
   
- `extendMode`  
+ *extendMode*  
  The behavior of the gradient outside the [0,1] normalized range.  
   
- `pBrushProperties`  
+ *pBrushProperties*  
  A pointer to the opacity and transformation of a brush.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DRadialGradientBrush::Create  
@@ -146,7 +141,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  
@@ -251,7 +246,7 @@ void SetCenter(CD2DPointF point);
 ```  
   
 ### Parameters  
- `point`  
+ *point*  
  The center of the gradient ellipse, in the brush's coordinate space  
   
 ##  <a name="setgradientoriginoffset"></a>  CD2DRadialGradientBrush::SetGradientOriginOffset  
@@ -262,7 +257,7 @@ void SetGradientOriginOffset(CD2DPointF gradientOriginOffset);
 ```  
   
 ### Parameters  
- `gradientOriginOffset`  
+ *gradientOriginOffset*  
  The offset of the gradient origin from the center of the gradient ellipse  
   
 ##  <a name="setradiusx"></a>  CD2DRadialGradientBrush::SetRadiusX  
@@ -273,7 +268,7 @@ void SetRadiusX(FLOAT radiusX);
 ```  
   
 ### Parameters  
- `radiusX`  
+ *radiusX*  
  The x-radius of the gradient ellipse. This value is in the brush's coordinate space  
   
 ##  <a name="setradiusy"></a>  CD2DRadialGradientBrush::SetRadiusY  
@@ -284,7 +279,7 @@ void SetRadiusY(FLOAT radiusY);
 ```  
   
 ### Parameters  
- `radiusY`  
+ *radiusY*  
  The y-radius of the gradient ellipse. This value is in the brush's coordinate space  
   
 ## See Also  

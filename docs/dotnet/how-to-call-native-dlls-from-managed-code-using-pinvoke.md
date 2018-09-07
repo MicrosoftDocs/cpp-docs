@@ -1,26 +1,21 @@
 ---
 title: "How to: Call Native DLLs from Managed Code Using PInvoke | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["platform invoke [C++], calling native DLLs", "interop [C++], calling native DLLs", "marshaling [C++], calling native DLLs", "data marshaling [C++], calling native DLLs"]
 ms.assetid: 3273eb4b-38d1-4619-92a6-71bda542be72
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Call Native DLLs from Managed Code Using PInvoke
 Functions that are implemented in unmanaged DLLs can be called from managed code using Platform Invoke (P/Invoke) functionality. If the source code for the DLL is not available, P/Invoke is the only option for interoperating. However, unlike other .NET languages, Visual C++ provides an alternative to P/Invoke. For more information, see [Using C++ Interop (Implicit PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
   
 ## Example  
- The following code example uses the Win32 [GetSystemMetrics](http://msdn.microsoft.com/library/windows/desktop/ms724385) function to retrieve the current resolution of the screen in pixels.  
+ The following code example uses the Win32 [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) function to retrieve the current resolution of the screen in pixels.  
   
  For functions that use only intrinsic types as arguments and return values, no extra work is required. Other data types, such as function pointers, arrays, and structures, require additional attributes to ensure proper data marshaling.  
   

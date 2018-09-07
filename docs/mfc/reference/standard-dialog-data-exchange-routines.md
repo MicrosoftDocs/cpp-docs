@@ -2,18 +2,13 @@
 title: "Standard Dialog Data Exchange Routines | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["standard dialog, data exchange routines"]
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Standard Dialog Data Exchange Routines
@@ -44,7 +39,7 @@ This topic lists the standard dialog data exchange (DDX) routines used for commo
 |[DDX_Text](#ddx_text)|Initializes or retrieves the current value of an edit control.|  
   
 ##  <a name="ddx_cbindex"></a>  DDX_CBIndex  
- The `DDX_CBIndex` function manages the transfer of `int` data between a combo box control in a dialog box, form view, or control view object and a `int` data member of the dialog box, form view, or control view object.  
+ The `DDX_CBIndex` function manages the transfer of **int** data between a combo box control in a dialog box, form view, or control view object and a **int** data member of the dialog box, form view, or control view object.  
   
 ```  
 void AFXAPI DDX_CBIndex(
@@ -54,10 +49,10 @@ void AFXAPI DDX_CBIndex(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the combo box control associated with the control property.  
   
  *index*  
@@ -82,10 +77,10 @@ void AFXAPI DDX_CBString(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the combo box control associated with the control property.  
   
  *value*  
@@ -113,10 +108,10 @@ void AFXAPI DDX_CBStringExact(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the combo box control associated with the control property.  
   
  *value*  
@@ -134,7 +129,7 @@ void AFXAPI DDX_CBStringExact(
   **Header** afxdd_.h  
   
 ##  <a name="ddx_check"></a>  DDX_Check  
- The `DDX_Check` function manages the transfer of `int` data between a check box control in a dialog box, form view, or control view object and a `int` data member of the dialog box, form view, or control view object.  
+ The `DDX_Check` function manages the transfer of **int** data between a check box control in a dialog box, form view, or control view object and a **int** data member of the dialog box, form view, or control view object.  
   
 ```  
 void AFXAPI DDX_Check(
@@ -144,17 +139,17 @@ void AFXAPI DDX_Check(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the check box control associated with the control property.  
   
  *value*  
  A reference to a member variable of the dialog box, form view, or control view object with which data is exchanged.  
   
 ### Remarks  
- When `DDX_Check` is called, *value* is set to the current state of the check box control. For a list of the possible state values, see [BM_GETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775986) in the Windows SDK.  
+ When `DDX_Check` is called, *value* is set to the current state of the check box control. For a list of the possible state values, see [BM_GETCHECK](/windows/desktop/Controls/bm-getcheck) in the Windows SDK.  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
@@ -162,7 +157,7 @@ void AFXAPI DDX_Check(
   **Header** afxdd_.h  
   
 ##  <a name="ddx_control"></a>  DDX_Control  
- The `DDX_Control` function subclasses the control, specified by `nIDC`, of the dialog box, form view, or control view object.  
+ The `DDX_Control` function subclasses the control, specified by *nIDC*, of the dialog box, form view, or control view object.  
   
 ```  
 void AFXAPI DDX_Control(
@@ -172,17 +167,17 @@ void AFXAPI DDX_Control(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the control to be subclassed.  
   
  *rControl*  
  A reference to a member variable of the dialog box, form view, or control view object related to the specified control.  
   
 ### Remarks  
- The `pDX` object is supplied by the framework when the `DoDataExchange` function is called. Therefore, `DDX_Control` should only be called within your override of `DoDataExchange`.  
+ The *pDX* object is supplied by the framework when the `DoDataExchange` function is called. Therefore, `DDX_Control` should only be called within your override of `DoDataExchange`.  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
@@ -210,10 +205,10 @@ void AFXAPI DDX_DateTimeCtrl(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction. You don't need to delete this object.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the date and time picker control associated with the member variable.  
   
  *value*  
@@ -229,14 +224,11 @@ void AFXAPI DDX_DateTimeCtrl(
 ### Requirements  
   **Header** afxdd_.h  
 
-   
-
- 
 ## <a name="ddx_managedcontrol"></a>  DDX_ManagedControl
 Creates a .NET control matching the control's resource ID.  
    
 ### Syntax  
-  ```  
+```  
 template <typename T>  
 void DDX_ManagedControl(  
      CDataExchange* pDX,   
@@ -244,13 +236,13 @@ void DDX_ManagedControl(
      CWinFormsControl<T>& control );  
 ```
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a [CDataExchange Class](cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the control associated with the control property.  
   
- `control`  
+ *control*  
  A reference to a [CWinFormsControl Class](cwinformscontrol-class.md) object.  
    
 ### Remarks  
@@ -278,14 +270,14 @@ void AFXAPI DDX_IPAddress(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the IP Address control associated with the control property.  
   
  *value*  
- A reference to the `DWORD` containing the four-field value of the IP Address control. The fields are filled or read as follows.  
+ A reference to the DWORD containing the four-field value of the IP Address control. The fields are filled or read as follows.  
   
 |Field|Bits containing the field value|  
 |-----------|-------------------------------------|  
@@ -294,7 +286,7 @@ void AFXAPI DDX_IPAddress(
 |1|16 through 23|  
 |0|24 through 31|  
   
- Use the Win32 [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378) to read the value, or use [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380) to fill the value. These messages are described in the Windows SDK.  
+ Use the Win32 [IPM_GETADDRESS](/windows/desktop/Controls/ipm-getaddress) to read the value, or use [IPM_SETADDRESS](/windows/desktop/Controls/ipm-setaddress) to fill the value. These messages are described in the Windows SDK.  
   
 ### Remarks  
  When `DDX_IPAddress` is called, *value* is either read from the IP Address control, or *value* is written to the control, depending on the direction of the exchange.  
@@ -305,7 +297,7 @@ void AFXAPI DDX_IPAddress(
   **Header** afxdd_.h  
   
 ##  <a name="ddx_lbindex"></a>  DDX_LBIndex  
- The `DDX_LBIndex` function manages the transfer of `int` data between a list box control in a dialog box, form view, or control view object and an `int` data member of the dialog box, form view, or control view object.  
+ The `DDX_LBIndex` function manages the transfer of **int** data between a list box control in a dialog box, form view, or control view object and an **int** data member of the dialog box, form view, or control view object.  
   
 ```  
 void AFXAPI DDX_LBIndex(
@@ -315,10 +307,10 @@ void AFXAPI DDX_LBIndex(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the list box control associated with the control property.  
   
  *index*  
@@ -343,10 +335,10 @@ void AFXAPI DDX_LBString(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the list box control associated with the control property.  
   
  *value*  
@@ -376,10 +368,10 @@ void AFXAPI DDX_LBStringExact(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the list box control associated with the control property.  
   
  *value*  
@@ -414,10 +406,10 @@ void AFXAPI DDX_MonthCalCtrl(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction. You don't need to delete this object.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the month calendar control associated with the member variable.  
   
  *value*  
@@ -436,7 +428,7 @@ void AFXAPI DDX_MonthCalCtrl(
   **Header** afxdd_.h  
   
 ##  <a name="ddx_radio"></a>  DDX_Radio  
- The `DDX_Radio` function manages the transfer of `int` data between a radio control group in a dialog box, form view, or control view object and a `int` data member of the dialog box, form view, or control view object. The value of the `int` data member is determined according to which radio button within the group is selected.  
+ The `DDX_Radio` function manages the transfer of **int** data between a radio control group in a dialog box, form view, or control view object and a **int** data member of the dialog box, form view, or control view object. The value of the **int** data member is determined according to which radio button within the group is selected.  
   
 ```  
 void AFXAPI DDX_Radio(
@@ -446,10 +438,10 @@ void AFXAPI DDX_Radio(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the first radio control in the group.  
   
  *value*  
@@ -458,7 +450,7 @@ void AFXAPI DDX_Radio(
 ### Remarks  
  When `DDX_Radio` is called, *value* is set to the current state of the radio control group. The value is set as a 0-based index of the radio control that is currently checked, or -1 if no radio controls are checked.  
   
- For example, in case that the first radio button in the group is checked (the button with WS_GROUP style) the value of the `int` member is 0 and so on.  
+ For example, in case that the first radio button in the group is checked (the button with WS_GROUP style) the value of the **int** member is 0 and so on.  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
@@ -466,7 +458,7 @@ void AFXAPI DDX_Radio(
   **Header** afxdd_.h  
   
 ##  <a name="ddx_scroll"></a>  DDX_Scroll  
- The `DDX_Scroll` function manages the transfer of `int` data between a scroll-bar control in a dialog box, form view, or control view object and an `int` data member of the dialog box, form view, or control view object.  
+ The `DDX_Scroll` function manages the transfer of **int** data between a scroll-bar control in a dialog box, form view, or control view object and an **int** data member of the dialog box, form view, or control view object.  
   
 ```  
 void AFXAPI DDX_Scroll(
@@ -476,17 +468,17 @@ void AFXAPI DDX_Scroll(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a `CDataExchange` object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the scroll-bar control associated with the control property.  
   
  *value*  
  A reference to a member variable of the dialog box, form view or control view object with which data is exchanged.  
   
 ### Remarks  
- When `DDX_Scroll` is called, *value* is set to the current position of the control's thumb. For more information on the values associated with the current position of the control's thumb, see [GetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787585) in the Windows SDK.  
+ When `DDX_Scroll` is called, *value* is set to the current position of the control's thumb. For more information on the values associated with the current position of the control's thumb, see [GetScrollPos](/windows/desktop/api/winuser/nf-winuser-getscrollpos) in the Windows SDK.  
   
  For more information about DDX, see [Dialog Data Exchange and Validation](../../mfc/dialog-data-exchange-and-validation.md).  
   
@@ -494,7 +486,7 @@ void AFXAPI DDX_Scroll(
   **Header** afxdd_.h  
   
 ##  <a name="ddx_slider"></a>  DDX_Slider  
- The `DDX_Slider` function manages the transfer of `int` data between a slider control in a dialog box or form view and an `int` data member of the dialog box or form view object.  
+ The `DDX_Slider` function manages the transfer of **int** data between a slider control in a dialog box or form view and an **int** data member of the dialog box or form view object.  
   
 ```  
 void AFXAPI DDX_Slider(
@@ -504,10 +496,10 @@ void AFXAPI DDX_Slider(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The resource ID of the slider control.  
   
  *value*  
@@ -522,7 +514,7 @@ void AFXAPI DDX_Slider(
   **Header** afxdd_.h  
   
 ##  <a name="ddx_text"></a>  DDX_Text  
- The `DDX_Text` function manages the transfer of `int`, **UINT**, **long**, `DWORD`, `CString`, **float**, or **double** data between an edit control in a dialog box, form view, or control view and a [CString](../../atl-mfc-shared/reference/cstringt-class.md) data member of the dialog box, form view, or control view object.  
+ The `DDX_Text` function manages the transfer of **int**, **UINT**, **long**, DWORD, `CString`, **float**, or **double** data between an edit control in a dialog box, form view, or control view and a [CString](../../atl-mfc-shared/reference/cstringt-class.md) data member of the dialog box, form view, or control view object.  
   
 ```  
 void AFXAPI DDX_Text(
@@ -582,10 +574,10 @@ void AFXAPI DDX_Text(
 ```  
   
 ### Parameters  
- `pDX`  
+ *pDX*  
  A pointer to a [CDataExchange](../../mfc/reference/cdataexchange-class.md) object. The framework supplies this object to establish the context of the data exchange, including its direction.  
   
- `nIDC`  
+ *nIDC*  
  The ID of an edit control in the dialog box, form view, or control view object.  
   
  *value*  

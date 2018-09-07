@@ -2,24 +2,19 @@
 title: "CMFCReBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCReBar", "AFXREBAR/CMFCReBar", "AFXREBAR/CMFCReBar::AddBar", "AFXREBAR/CMFCReBar::CalcFixedLayout", "AFXREBAR/CMFCReBar::CanFloat", "AFXREBAR/CMFCReBar::Create", "AFXREBAR/CMFCReBar::EnableDocking", "AFXREBAR/CMFCReBar::GetReBarBandInfoSize", "AFXREBAR/CMFCReBar::GetReBarCtrl", "AFXREBAR/CMFCReBar::OnShowControlBarMenu", "AFXREBAR/CMFCReBar::OnToolHitTest", "AFXREBAR/CMFCReBar::OnUpdateCmdUI", "AFXREBAR/CMFCReBar::SetPaneAlignment"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCReBar [MFC], AddBar", "CMFCReBar [MFC], CalcFixedLayout", "CMFCReBar [MFC], CanFloat", "CMFCReBar [MFC], Create", "CMFCReBar [MFC], EnableDocking", "CMFCReBar [MFC], GetReBarBandInfoSize", "CMFCReBar [MFC], GetReBarCtrl", "CMFCReBar [MFC], OnShowControlBarMenu", "CMFCReBar [MFC], OnToolHitTest", "CMFCReBar [MFC], OnUpdateCmdUI", "CMFCReBar [MFC], SetPaneAlignment"]
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCReBar Class
 A `CMFCReBar` object is a control bar that provides layout, persistence, and state information for rebar controls.  
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
 ## Syntax  
   
 ```  
@@ -41,7 +36,7 @@ class CMFCReBar : public CPane
 |[CMFCReBar::GetReBarCtrl](#getrebarctrl)|Provides direct access to the underlying [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) common control.|  
 |[CMFCReBar::OnShowControlBarMenu](#onshowcontrolbarmenu)|(Overrides [CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|  
 |[CMFCReBar::OnToolHitTest](#ontoolhittest)|(Overrides [CWnd::OnToolHitTest](../../mfc/reference/cwnd-class.md#ontoolhittest).)|  
-|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CBasePane::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/e139f06a-9793-4ee2-bc3d-517389368c77).)|  
+|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CBasePane::OnUpdateCmdUI](cbasepane-class.md).)|  
 |[CMFCReBar::SetPaneAlignment](#setpanealignment)|(Overrides [CBasePane::SetPaneAlignment](../../mfc/reference/cbasepane-class.md#setpanealignment).)|  
   
 ## Remarks  
@@ -82,26 +77,26 @@ BOOL AddBar(
 ```  
   
 ### Parameters  
- [in] [out] `pBar`  
+ [in] [out] *pBar*  
  A pointer to the child window that is to be inserted into the rebar. The referenced object must have the **WS_CHILD** window style.  
   
- [in] `pszText`  
+ [in] *pszText*  
  Specifies the text to appear on the rebar. The text is not part of the child window. Rather, it is displayed on the rebar itself.  
   
- [in] [out] `pbmp`  
+ [in] [out] *pbmp*  
  Specifies the bitmap to be displayed on the rebar background.  
   
- [in] `dwStyle`  
- Contains the style to apply to the band. For a complete list of band styles, see the description for `fStyle` in the [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) structure in the Windows SDK documentation.  
+ [in] *dwStyle*  
+ Contains the style to apply to the band. For a complete list of band styles, see the description for `fStyle` in the [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) structure in the Windows SDK documentation.  
   
- [in] `clrFore`  
+ [in] *clrFore*  
  Represents the foreground color of the rebar.  
   
- [in] `clrBack`  
+ [in] *clrBack*  
  Represents the background color of the rebar.  
   
 ### Return Value  
- `TRUE` if the band was successfully added to the rebar; otherwise, `FALSE`.  
+ TRUE if the band was successfully added to the rebar; otherwise, FALSE.  
   
 ##  <a name="create"></a>  CMFCReBar::Create  
  Creates the rebar control and attaches it to the [CMFCReBar](../../mfc/reference/cmfcrebar-class.md) object.  
@@ -115,20 +110,20 @@ BOOL Create(
 ```  
   
 ### Parameters  
- [in] [out] `pParentWnd`  
+ [in] [out] *pParentWnd*  
  A pointer to the parent window of this rebar control.  
   
- [in] `dwCtrlStyle`  
- Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](http://msdn.microsoft.com/library/windows/desktop/bb774377) in the Windows SDK documentation.  
+ [in] *dwCtrlStyle*  
+ Specifies the style for the rebar control. The default style value is **RBS_BANDBORDERS**, which displays narrow lines to separate adjacent bands on the rebar control. For a list of valid styles, see [Rebar Control Styles](/windows/desktop/Controls/rebar-control-styles) in the Windows SDK documentation.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  The window style of the rebar control. For a list of valid styles, see [Window Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] `nID`  
+ [in] *nID*  
  The rebar's child-window ID.  
   
 ### Return Value  
- `TRUE` if the rebar was created successfully; otherwise, `FALSE`.  
+ TRUE if the rebar was created successfully; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -155,8 +150,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -181,7 +176,7 @@ void EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
   
 ### Remarks  
   
@@ -204,7 +199,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 ```  
   
 ### Parameters  
- [in] `CPoint`  
+ [in] *CPoint*  
   
 ### Return Value  
   
@@ -220,8 +215,8 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### Parameters  
- [in] `point`  
- [in] `pTI`  
+ [in] *point*  
+ [in] *pTI*  
   
 ### Return Value  
   
@@ -237,8 +232,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] `pTarget`  
- [in] `bDisableIfNoHndler`  
+ [in] *pTarget*  
+ [in] *bDisableIfNoHndler*  
   
 ### Remarks  
   
@@ -250,7 +245,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 ```  
   
 ### Parameters  
- [in] `dwAlignment`  
+ [in] *dwAlignment*  
   
 ### Remarks  
   

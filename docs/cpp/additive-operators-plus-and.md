@@ -2,19 +2,14 @@
 title: "Additive Operators: + and - | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["+", "-"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operators [C++], addition", "subtraction operator [C++], additive operators", "+ operator [C++], additive operators", "additive operators [C++]", "arithmetic operators [C++], additive operators", "- operator [C++], additive operators in C++"]
 ms.assetid: d4afafe7-e201-4c69-a649-37f17756e784
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Additive Operators: + and -
@@ -64,7 +59,7 @@ expression - expression
   
 ## Example  
   
-```  
+```cpp 
 // expre_Additive_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -85,7 +80,7 @@ int main() {
 ## Pointer addition  
  If one of the operands in an addition operation is a pointer to an array of objects, the other must be of integral type. The result is a pointer that is of the same type as the original pointer and that points to another array element. The following code fragment illustrates this concept:  
   
-```  
+```cpp 
 short IntArray[10]; // Objects of type short occupy 2 bytes  
 short *pIntArray = IntArray;  
   
@@ -103,11 +98,11 @@ for( int i = 0; i < 10; ++i )
 >  Code of the form `pIntArray = pIntArray + 1` is rarely found in C++ programs; to perform an increment, these forms are preferable: `pIntArray++` or `pIntArray += 1`.  
   
 ## Pointer subtraction  
- If both operands are pointers, the result of subtraction is the difference (in array elements) between the operands. The subtraction expression yields a signed integral result of type ptrdiff_t (defined in the standard include file STDDEF.H).  
+ If both operands are pointers, the result of subtraction is the difference (in array elements) between the operands. The subtraction expression yields a signed integral result of type `ptrdiff_t` (defined in the standard include file \<stddef.h>).  
   
  One of the operands can be of integral type, as long as it is the second operand. The result of the subtraction is of the same type as the original pointer. The value of the subtraction is a pointer to the (*n* - *i*)th array element, where *n* is the element pointed to by the original pointer and *i* is the integral value of the second operand.  
   
-## See Also  
+## See also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Additive Operators](../c-language/c-additive-operators.md)

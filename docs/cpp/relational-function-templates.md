@@ -2,18 +2,13 @@
 title: "Relational Function Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["relational function templates"]
 ms.assetid: 57893a51-9adb-41fc-941d-2ca97687db2a
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Relational Function Templates
@@ -22,8 +17,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-      template<typename _InterfaceType> bool operator==(  
+template<typename _InterfaceType> bool operator==(  
    int NULL,  
    _com_ptr_t<_InterfaceType>& p   
 );  
@@ -79,11 +73,11 @@ template<typename _Interface,
 );  
 ```  
   
-#### Parameters  
+### Parameters  
  *i*  
  A raw interface pointer.  
   
- `p`  
+ *p*  
  A smart pointer.  
   
 ## Remarks  
@@ -91,5 +85,5 @@ template<typename _Interface,
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [_com_ptr_t Class](../cpp/com-ptr-t-class.md)

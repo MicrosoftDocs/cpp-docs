@@ -2,19 +2,14 @@
 title: "CMFCTasksPaneTask Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask::CMFCTasksPaneTask", "AFXTASKSPANE/CMFCTasksPaneTask::SetACCData", "AFXTASKSPANE/CMFCTasksPaneTask::m_bAutoDestroyWindow", "AFXTASKSPANE/CMFCTasksPaneTask::m_bIsBold", "AFXTASKSPANE/CMFCTasksPaneTask::m_dwUserData", "AFXTASKSPANE/CMFCTasksPaneTask::m_hwndTask", "AFXTASKSPANE/CMFCTasksPaneTask::m_nIcon", "AFXTASKSPANE/CMFCTasksPaneTask::m_nWindowHeight", "AFXTASKSPANE/CMFCTasksPaneTask::m_pGroup", "AFXTASKSPANE/CMFCTasksPaneTask::m_rect", "AFXTASKSPANE/CMFCTasksPaneTask::m_strName", "AFXTASKSPANE/CMFCTasksPaneTask::m_uiCommandID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCTasksPaneTask [MFC], CMFCTasksPaneTask", "CMFCTasksPaneTask [MFC], SetACCData", "CMFCTasksPaneTask [MFC], m_bAutoDestroyWindow", "CMFCTasksPaneTask [MFC], m_bIsBold", "CMFCTasksPaneTask [MFC], m_dwUserData", "CMFCTasksPaneTask [MFC], m_hwndTask", "CMFCTasksPaneTask [MFC], m_nIcon", "CMFCTasksPaneTask [MFC], m_nWindowHeight", "CMFCTasksPaneTask [MFC], m_pGroup", "CMFCTasksPaneTask [MFC], m_rect", "CMFCTasksPaneTask [MFC], m_strName", "CMFCTasksPaneTask [MFC], m_uiCommandID"]
 ms.assetid: c5a7513b-cd8f-4e2e-b16f-650e1fe30954
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCTasksPaneTask Class
@@ -88,28 +83,28 @@ CMFCTasksPaneTask(
 ```  
   
 ### Parameters  
- `pGroup`  
+ *pGroup*  
  Specifies the [CMFCTasksPaneTaskGroup](../../mfc/reference/cmfctaskspanetaskgroup-class.md) to which the task belongs.  
   
- `lpszName`  
+ *lpszName*  
  Specifies the name of the task.  
   
- `nIcon`  
+ *nIcon*  
  Specifies the index of the task's image in the image list.  
   
- `uiCommandID`  
+ *uiCommandID*  
  Specifies the command ID of the command that is executed when the task is clicked.  
   
- `dwUserData`  
+ *dwUserData*  
  User-defined data.  
   
- `hwndTask`  
+ *hwndTask*  
  Specifies the handle to the task window.  
   
- `bAutoDestroyWindow`  
- If `TRUE`, the task window will be destroyed automatically.  
+ *bAutoDestroyWindow*  
+ If TRUE, the task window will be destroyed automatically.  
   
- `nWindowHeight`  
+ *nWindowHeight*  
  Specifies the height of the task window.  
   
 ### Remarks  
@@ -122,7 +117,7 @@ BOOL m_bAutoDestroyWindow;
 ```  
   
 ### Remarks  
- Set to `TRUE` to specify that the task window ( [CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)) should be destroyed automatically; otherwise, `FALSE`.  
+ Set to TRUE to specify that the task window ( [CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)) should be destroyed automatically; otherwise, FALSE.  
   
 ##  <a name="m_bisbold"></a>  CMFCTasksPaneTask::m_bIsBold  
  Determines whether a task label is drawn in bold text.  
@@ -132,7 +127,7 @@ BOOL m_bIsBold;
 ```  
   
 ### Remarks  
- Set this member to `TRUE` to display bold text for the task label.  
+ Set this member to TRUE to display bold text for the task label.  
   
 ##  <a name="m_dwuserdata"></a>  CMFCTasksPaneTask::m_dwUserData  
  Contains user-defined data that is associated with the task. Set to zero if no data is associated with the task.  
@@ -222,14 +217,14 @@ virtual BOOL SetACCData(
 ```  
   
 ### Parameters  
- [in] `pParent`  
+ [in] *pParent*  
  Represents the parent window of the current task.  
   
- [out] `data`  
+ [out] *data*  
  An object of type `CAccessibilityData` that is populated with the accessibility data of the current task.  
   
 ### Return Value  
- `TRUE` if the `data` parameter was successfully populated with the accessibility data of the current task; otherwise, `FALSE`.  
+ TRUE if the *data* parameter was successfully populated with the accessibility data of the current task; otherwise, FALSE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

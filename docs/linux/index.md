@@ -1,14 +1,16 @@
 ---
 layout: LandingPage
-author: jasongroce
-ms.author: apexprodleads
+ms.topic: conceptual
 title: Linux Development with C++ Documentation
 description: Create and debug applications running on Linux.
+author: "mikeblome"
+ms.author: "mblome"
+ms.workload: ["cplusplus"]
 ---
 
 # Linux Development with C++ Documentation
 
-Create and debug applications running on Linux.
+Use Visual Studio 2017 to create and debug applications running on Linux.
 
 <ul class="panelContent cardsF">
     <li>
@@ -23,7 +25,7 @@ Create and debug applications running on Linux.
                     </div>
                     <div class="cardText">
                         <h3>Install and configure the Linux Workload</h3>
-                        <p>Learn how to setup Visual Studio to build Linux applications in C++.</p>
+                        <p>Learn how to setup Visual Studio 2017 and later to build Linux applications in C++.</p>
                     </div>
                 </div>
             </div>

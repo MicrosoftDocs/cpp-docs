@@ -2,19 +2,14 @@
 title: "How to: Use the Message-Map Cross-Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.mfc.messages"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["windows [MFC], message maps"]
 ms.assetid: 2e863d23-9e58-45ba-b5e4-a8ceefccd0c8
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Use the Message-Map Cross-Reference
@@ -26,9 +21,9 @@ In entries labeled \<memberFxn>, write your own member function for a derived [C
   
 |Term|Definition|  
 |----------|----------------|  
-|id|Any user-defined menu item ID (**WM_COMMAND** messages) or control ID (child window notification messages).|  
+|id|Any user-defined menu item ID (WM_COMMAND messages) or control ID (child window notification messages).|  
 |"message" and "wNotifyCode"|Windows message IDs as defined in WINDOWS.H.|  
-|nMessageVariable|Name of a variable that contains the return value from the **RegisterWindowMessage** Windows function.|  
+|nMessageVariable|Name of a variable that contains the return value from the `RegisterWindowMessage` Windows function.|  
   
 ## See Also  
  [Message Maps](../../mfc/reference/message-maps-mfc.md)

@@ -2,18 +2,13 @@
 title: "COM Interface Entry Points | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["entry points, COM interfaces", "state management, OLE/COM interfaces", "MFC COM, COM interface entry points", "OLE, interface entry points", "MFC, managing state data", "COM interfaces, entry points"]
 ms.assetid: 9e7421dc-0731-4748-9e1b-90acbaf26d77
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COM Interface Entry Points
@@ -23,7 +18,7 @@ For member functions of a COM interface, use the [METHOD_PROLOGUE](com-interface
   
  [!code-cpp[NVC_MFCConnectionPoints#5](../mfc/codesnippet/cpp/com-interface-entry-points_1.cpp)]  
   
- For additional information, see [Technical Note 38](../mfc/tn038-mfc-ole-iunknown-implementation.md) on MFC/OLE **IUnknown** implementation.  
+ For additional information, see [Technical Note 38](../mfc/tn038-mfc-ole-iunknown-implementation.md) on MFC/OLE `IUnknown` implementation.  
   
  The `METHOD_PROLOGUE` macro is defined as:  
   

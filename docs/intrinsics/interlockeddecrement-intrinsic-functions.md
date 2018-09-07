@@ -2,25 +2,20 @@
 title: "_InterlockedDecrement Intrinsic Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_InterlockedDecrement16_rel_cpp", "_InterlockedDecrement16_acq_cpp", "_InterlockedDecrement16_rel", "_InterlockedDecrement64_acq", "_InterlockedDecrement_nf", "_InterlockedDecrement16_nf", "_InterlockedDecrement64_rel_cpp", "_InterlockedDecrement_rel_cpp", "_InterlockedDecrement16_acq", "_InterlockedDecrement64_acq_cpp", "_InterlockedDecrement_rel", "_InterlockedDecrement64_nf", "_InterlockedDecrement16_cpp", "_InterlockedDecrement64", "_InterlockedDecrement_cpp", "_InterlockedDecrement64_rel", "_InterlockedDecrement16", "_InterlockedDecrement", "_InterlockedDecrement64_cpp", "_InterlockedDecrement_acq", "_InterlockedDecrement_acq_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["InterlockedDecrement64_rel intrinsic", "InterlockedDecrement64 intrinsic", "_InterlockedDecrement16 intrinsic", "_InterlockedDecrement16_acq intrinsic", "_InterlockedDecrement intrinsic", "_InterlockedDecrement_nf intrinsic", "_InterlockedDecrement_acq intrinsic", "_InterlockedDecrement64_rel intrinsic", "_InterlockedDecrement16_rel intrinsic", "InterlockedDecrement intrinsic", "InterlockedDecrement16 intrinsic", "_InterlockedDecrement16_nf intrinsic", "InterlockedDecrement64_acq intrinsic", "_InterlockedDecrement_rel intrinsic", "InterlockedDecrement_acq intrinsic", "_InterlockedDecrement64_acq intrinsic", "_InterlockedDecrement64 intrinsic", "_InterlockedDecrement64_nf intrinsic", "InterlockedDecrement_rel intrinsic"]
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _InterlockedDecrement Intrinsic Functions
 **Microsoft Specific**  
   
- Provides compiler intrinsic support for the Win32 [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] [InterlockedDecrement](http://msdn.microsoft.com/library/ms683580.aspx) function.  
+Provides compiler intrinsic support for the Win32 Windows SDK [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement) function.  
   
 ## Syntax  
   
@@ -74,7 +69,7 @@ __int64 _InterlockedDecrement64_nf(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, x64|  
 |`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM|  
   
  **Header file** \<intrin.h>  

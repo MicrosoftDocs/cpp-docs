@@ -2,18 +2,13 @@
 title: "_set_com_error_handler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["_set_com_error_handler function"]
 ms.assetid: 49fe4fca-5e37-4d83-abaf-15be5ce37f94
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _set_com_error_handler
@@ -33,23 +28,23 @@ void __stdcall _set_com_error_handler(
 ```  
   
 #### Parameters  
- `pHandler`  
+ *pHandler*  
  Pointer to the replacement function.  
   
- `hr`  
- `HRESULT` information.  
+ *hr*  
+ HRESULT information.  
   
- `perrinfo`  
+ *perrinfo*  
  `IErrorInfo` object.  
   
 ## Remarks  
- By default, [_com_raise_error](../cpp/com-raise-error.md) handles all COM errors. You can change this behavior by using `_set_com_error_handler` to call your own error-handling function.  
+ By default, [_com_raise_error](../cpp/com-raise-error.md) handles all COM errors. You can change this behavior by using **_set_com_error_handler** to call your own error-handling function.  
   
  The replacement function must have a signature that is equivalent to that of `_com_raise_error`.  
   
 ## Example  
   
-```  
+```cpp 
 // _set_com_error_handler.cpp  
 // compile with /EHsc  
 #include <stdio.h>  
@@ -89,9 +84,9 @@ Exception raised: Unable to establish the connection!
 ```  
   
 ## Requirements  
- **Header:** comdef.h  
+ **Header:** \<comdef.h>  
   
  **Lib:** If the **wchar_t is Native Type** compiler option is on, use comsuppw.lib or comsuppwd.lib. If **wchar_t is Native Type** is off, use comsupp.lib. For more information, see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).  
   
-## See Also  
+## See also  
  [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

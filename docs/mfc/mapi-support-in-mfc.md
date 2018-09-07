@@ -2,27 +2,22 @@
 title: "MAPI Support in MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, MAPI support", "MAPI support in MFC", "CDocument class [MFC], and MAPI", "OnUpdateFileSendMail method [MFC]", "MAPI, MFC", "OnFileSendMail method [MFC]"]
 ms.assetid: cafbecb1-0427-4077-b4b8-159bae5b49b8
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MAPI Support in MFC
-MFC supplies support for a subset of the Microsoft Messaging Application Program Interface (MAPI) in class **CDocument**. Specifically, **CDocument** has member functions that determine whether mail support is present on the end-user's machine and, if so, enable a Send Mail command whose standard command ID is **ID_FILE_SEND_MAIL**. The MFC handler function for this command allows the user to send a document through electronic mail.  
+MFC supplies support for a subset of the Microsoft Messaging Application Program Interface (MAPI) in class `CDocument`. Specifically, `CDocument` has member functions that determine whether mail support is present on the end-user's machine and, if so, enable a Send Mail command whose standard command ID is ID_FILE_SEND_MAIL. The MFC handler function for this command allows the user to send a document through electronic mail.  
   
 > [!TIP]
 >  Although MFC does not encapsulate the entire MAPI function set, you can still call MAPI functions directly, just as you can call Win32 API functions directly from MFC programs.  
   
- Providing the Send Mail command in your application is very easy. MFC provides the implementation to package a document (that is, a **CDocument**-derived object) as an attachment and send it as mail. This attachment is equivalent to a File Save command that saves (serializes) the document's contents to the mail message. This implementation calls upon the mail client on the user's machine to give the user the opportunity to address the mail and to add subject and message text to the mail message. Users see their familiar mail application's user interface. This functionality is supplied by two **CDocument** member functions: `OnFileSendMail` and `OnUpdateFileSendMail`.  
+ Providing the Send Mail command in your application is very easy. MFC provides the implementation to package a document (that is, a `CDocument`-derived object) as an attachment and send it as mail. This attachment is equivalent to a File Save command that saves (serializes) the document's contents to the mail message. This implementation calls upon the mail client on the user's machine to give the user the opportunity to address the mail and to add subject and message text to the mail message. Users see their familiar mail application's user interface. This functionality is supplied by two `CDocument` member functions: `OnFileSendMail` and `OnUpdateFileSendMail`.  
   
  MAPI needs to read the file to send the attachment. If the application keeps its data file open during an `OnFileSendMail` function call, the file needs to be opened with a share mode that allows multiple processes to access the file.  
   
@@ -31,7 +26,7 @@ MFC supplies support for a subset of the Microsoft Messaging Application Program
   
 #### To implement a Send Mail command with MFC  
   
-1.  Use the Visual C++ menu editor to add a menu item whose command ID is **ID_FILE_SEND_MAIL**.  
+1.  Use the Visual C++ menu editor to add a menu item whose command ID is ID_FILE_SEND_MAIL.  
   
      This command ID is provided by the framework in AFXRES.H. The command can be added to any menu, but it is usually added to the **File** menu.  
   
@@ -40,7 +35,7 @@ MFC supplies support for a subset of the Microsoft Messaging Application Program
      [!code-cpp[NVC_MFCDocView#9](../mfc/codesnippet/cpp/mapi-support-in-mfc_1.cpp)]  
   
     > [!NOTE]
-    >  This message map works for a document derived from either **CDocument** or **COleDocument** — it picks up the correct base class in either case, even though the message map is in your derived document class.  
+    >  This message map works for a document derived from either `CDocument` or `COleDocument` — it picks up the correct base class in either case, even though the message map is in your derived document class.  
   
 3.  Build your application.  
   
@@ -51,7 +46,7 @@ MFC supplies support for a subset of the Microsoft Messaging Application Program
   
  For related information, see the [MAPI](../mfc/mapi.md) overview.  
   
- For more information about the **CDocument** member functions that enable MAPI, see:  
+ For more information about the `CDocument` member functions that enable MAPI, see:  
   
 -   [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)  
   

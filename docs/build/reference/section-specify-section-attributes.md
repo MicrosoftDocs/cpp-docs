@@ -2,17 +2,13 @@
 title: "/SECTION (Specify Section Attributes) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/29/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/section"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["SECTION linker option", "-SECTION linker option", "section attributes", "/SECTION linker option"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /SECTION (Specify Section Attributes)
@@ -23,7 +19,7 @@ ms.workload: ["cplusplus"]
 
 The **/SECTION** option changes the attributes of a section, overriding the attributes set when the .obj file for the section was compiled.
 
-A *section* in a portable executable (PE) file is a named contiguous block of memory that contains either code or data. Some sections contain code or data that your program declared and uses directly, while other data sections are created for you by the linker and library manager (lib.exe) and contain information vital to the operating system. For more information, see [PE Format](https://msdn.microsoft.com/library/windows/desktop/ms680547).
+A *section* in a portable executable (PE) file is a named contiguous block of memory that contains either code or data. Some sections contain code or data that your program declared and uses directly, while other data sections are created for you by the linker and library manager (lib.exe) and contain information vital to the operating system. For more information, see [PE Format](/windows/desktop/Debug/pe-format).
 
 Specify a colon (:) and a section *name*. The *name* is case sensitive.
 

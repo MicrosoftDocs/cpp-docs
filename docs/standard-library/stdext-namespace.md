@@ -2,19 +2,14 @@
 title: "stdext Namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/06/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["stdext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_DEFINE_DEPRECATED_HASH_CLASSES symbol", "stdext namespace"]
 ms.assetid: 3e94fc89-0584-424f-bc09-081b73379545
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # stdext Namespace
@@ -25,11 +20,11 @@ When compiling with [/Ze](../build/reference/za-ze-disable-language-extensions.m
 
 To have the compiler generate an error for the use of `std` for members of the \<hash_map> and \<hash_set> header files with **/Ze**, add the following directive before you `#include` any C++ Standard Library header files.
 
-```cpp  
-#define _DEFINE_DEPRECATED_HASH_CLASSES 0  
-```  
+```cpp
+#define _DEFINE_DEPRECATED_HASH_CLASSES 0
+```
 
-When compiling with **/Za**, the compiler generates an error.  
+When compiling with **/Za**, the compiler generates an error.
 
 ## See Also
 

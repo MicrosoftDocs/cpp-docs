@@ -2,18 +2,13 @@
 title: "CMFCDynamicLayout Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout", "AFXLAYOUT/CMFCDynamicLayout::AddItem", "AFXLAYOUT/CMFCDynamicLayout::Adjust", "AFXLAYOUT/CMFCDynamicLayout::Create", "AFXLAYOUT/CMFCDynamicLayout::GetHostWnd", "AFXLAYOUT/CMFCDynamicLayout::GetMinSize", "AFXLAYOUT/CMFCDynamicLayout::GetWindowRect", "AFXLAYOUT/CMFCDynamicLayout::HasItem", "AFXLAYOUT/CMFCDynamicLayout::IsEmpty", "AFXLAYOUT/CMFCDynamicLayout::LoadResource", "AFXLAYOUT/CMFCDynamicLayout::SetMinSize"]
 dev_langs: ["C++"]
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDynamicLayout Class
@@ -89,16 +84,16 @@ BOOL AddItem(
 ```  
   
 ### Parameters  
- `hwnd`  
+ *hwnd*  
  The handle to the window to add.  
   
- `nID`  
+ *nID*  
  The ID of the child control to add.  
   
- `moveSettings`  
+ *moveSettings*  
  A structure that describes how the control should be moved as the window size changes.  
   
- `sizeSettings`  
+ *sizeSettings*  
  A structure that describes how the control should be resized as the window size changes.  
   
 ### Return Value  
@@ -125,7 +120,7 @@ BOOL Create(CWnd* pHostWnd);
 ```  
   
 ### Parameters  
- pHostWnd  
+ *pHostWnd*  
  A pointer to the host window.  
   
 ### Return Value  
@@ -167,7 +162,7 @@ void GetHostWndRect(CRect& rect,);
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  After the function returns, this parameter contains the bounding rectangle of the layout area. This is an out parameter; the input value is overwritten.  
   
 ### Remarks  
@@ -180,7 +175,7 @@ BOOL HasItem(HWND hwnd);
 ```  
   
 ### Parameters  
- `hwnd`  
+ *hwnd*  
  The window handle for the control.  
   
 ### Return Value  
@@ -210,13 +205,13 @@ static BOOL LoadResource(CWnd* pHostWnd,
 ```  
   
 ### Parameters  
- `pHostWnd`  
+ *pHostWnd*  
  A pointer to the host window.  
   
- `lpResource`  
+ *lpResource*  
  A pointer to the buffer that contains the AFX_DIALOG_LAYOUT resource.  
   
- `dwSize`  
+ *dwSize*  
  The buffer size in bytes.  
   
 ### Return Value  
@@ -232,7 +227,7 @@ static MoveSettings MoveHorizontal(int nRatio);
 ```  
   
 ### Parameters  
- `nRatio`  
+ *nRatio*  
  Defines as a percentage how far a child control is moved horizontally when the user resizes the host window.  
   
 ### Return Value  
@@ -248,10 +243,10 @@ static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);
 ```  
   
 ### Parameters  
- `nXRatio`  
+ *nXRatio*  
  Defines as a percentage how far a child control is moved horizontally when the user resizes the host window.  
   
- `nYRatio`  
+ *nYRatio*  
  Defines as a percentage how far a child control is moved vertically when the user resizes the host window.  
   
 ### Return Value  
@@ -320,7 +315,7 @@ static MoveSettings MoveVertical(int nRatio);
 ```  
   
 ### Parameters  
- `nRatio`  
+ *nRatio*  
  Defines as a percentage how far a child control is moved vertically when the user resizes the host window.  
   
 ### Return Value  
@@ -336,7 +331,7 @@ void SetMinSize(const CSize& size);
 ```  
   
 ### Parameters  
- `size`  
+ *size*  
  The desired size below which layout is not adjusted.  
   
 ### Remarks  
@@ -350,7 +345,7 @@ static SizeSettings SizeHorizontal(int nRatio);
 ```  
   
 ### Parameters  
- `nRatio`  
+ *nRatio*  
  Defines as a percentage how far a child control is resized horizontally when the user resizes the host window.  
   
 ### Return Value  
@@ -366,10 +361,10 @@ static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);
 ```  
   
 ### Parameters  
- `nXRatio`  
+ *nXRatio*  
  Defines as a percentage how far a child control is resized horizontally when the user resizes the host window.  
   
- `nYRatio`  
+ *nYRatio*  
  Defines as a percentage how far a child control is resized vertically when the user resizes the host window.  
   
 ### Return Value  
@@ -437,7 +432,7 @@ static SizeSettings SizeVertical(int nRatio);
 ```  
   
 ### Parameters  
- `nRatio`  
+ *nRatio*  
  Defines as a percentage how far a child control is resized vertically when the user resizes the host window.  
   
 ### Return Value  

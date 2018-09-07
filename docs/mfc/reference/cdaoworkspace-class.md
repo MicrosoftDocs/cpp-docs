@@ -2,19 +2,14 @@
 title: "CDaoWorkspace Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDaoWorkspace", "AFXDAO/CDaoWorkspace", "AFXDAO/CDaoWorkspace::CDaoWorkspace", "AFXDAO/CDaoWorkspace::Append", "AFXDAO/CDaoWorkspace::BeginTrans", "AFXDAO/CDaoWorkspace::Close", "AFXDAO/CDaoWorkspace::CommitTrans", "AFXDAO/CDaoWorkspace::CompactDatabase", "AFXDAO/CDaoWorkspace::Create", "AFXDAO/CDaoWorkspace::GetDatabaseCount", "AFXDAO/CDaoWorkspace::GetDatabaseInfo", "AFXDAO/CDaoWorkspace::GetIniPath", "AFXDAO/CDaoWorkspace::GetIsolateODBCTrans", "AFXDAO/CDaoWorkspace::GetLoginTimeout", "AFXDAO/CDaoWorkspace::GetName", "AFXDAO/CDaoWorkspace::GetUserName", "AFXDAO/CDaoWorkspace::GetVersion", "AFXDAO/CDaoWorkspace::GetWorkspaceCount", "AFXDAO/CDaoWorkspace::GetWorkspaceInfo", "AFXDAO/CDaoWorkspace::Idle", "AFXDAO/CDaoWorkspace::IsOpen", "AFXDAO/CDaoWorkspace::Open", "AFXDAO/CDaoWorkspace::RepairDatabase", "AFXDAO/CDaoWorkspace::Rollback", "AFXDAO/CDaoWorkspace::SetDefaultPassword", "AFXDAO/CDaoWorkspace::SetDefaultUser", "AFXDAO/CDaoWorkspace::SetIniPath", "AFXDAO/CDaoWorkspace::SetIsolateODBCTrans", "AFXDAO/CDaoWorkspace::SetLoginTimeout", "AFXDAO/CDaoWorkspace::m_pDAOWorkspace"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoWorkspace [MFC], CDaoWorkspace", "CDaoWorkspace [MFC], Append", "CDaoWorkspace [MFC], BeginTrans", "CDaoWorkspace [MFC], Close", "CDaoWorkspace [MFC], CommitTrans", "CDaoWorkspace [MFC], CompactDatabase", "CDaoWorkspace [MFC], Create", "CDaoWorkspace [MFC], GetDatabaseCount", "CDaoWorkspace [MFC], GetDatabaseInfo", "CDaoWorkspace [MFC], GetIniPath", "CDaoWorkspace [MFC], GetIsolateODBCTrans", "CDaoWorkspace [MFC], GetLoginTimeout", "CDaoWorkspace [MFC], GetName", "CDaoWorkspace [MFC], GetUserName", "CDaoWorkspace [MFC], GetVersion", "CDaoWorkspace [MFC], GetWorkspaceCount", "CDaoWorkspace [MFC], GetWorkspaceInfo", "CDaoWorkspace [MFC], Idle", "CDaoWorkspace [MFC], IsOpen", "CDaoWorkspace [MFC], Open", "CDaoWorkspace [MFC], RepairDatabase", "CDaoWorkspace [MFC], Rollback", "CDaoWorkspace [MFC], SetDefaultPassword", "CDaoWorkspace [MFC], SetDefaultUser", "CDaoWorkspace [MFC], SetIniPath", "CDaoWorkspace [MFC], SetIsolateODBCTrans", "CDaoWorkspace [MFC], SetLoginTimeout", "CDaoWorkspace [MFC], m_pDAOWorkspace"]
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDaoWorkspace Class
@@ -32,7 +27,7 @@ class CDaoWorkspace : public CObject
   
 |Name|Description|  
 |----------|-----------------|  
-|[CDaoWorkspace::CDaoWorkspace](#cdaoworkspace)|Constructs a workspace object. Afterwards, call **Create** or **Open**.|  
+|[CDaoWorkspace::CDaoWorkspace](#cdaoworkspace)|Constructs a workspace object. Afterwards, call `Create` or `Open`.|  
   
 ### Public Methods  
   
@@ -106,7 +101,7 @@ class CDaoWorkspace : public CObject
   
  Explicitly opening the default workspace, or opening an existing workspace in the Workspaces collection, is described under the [Open](#open) member function.  
   
- End a workspace session by closing the workspace with the [Close](#close) member function. **Close** closes any databases you have not closed previously, rolling back any uncommitted transactions.  
+ End a workspace session by closing the workspace with the [Close](#close) member function. `Close` closes any databases you have not closed previously, rolling back any uncommitted transactions.  
   
 ## Transactions  
  DAO manages transactions at the workspace level; hence, transactions on a workspace with multiple open databases apply to all of the databases. For example, if two databases have uncommitted updates and you call [CommitTrans](#committrans), all of the updates are committed. If you want to limit transactions to a single database, you need a separate workspace object for it.  
@@ -139,7 +134,7 @@ virtual void Append();
 ```  
   
 ### Remarks  
- **Append** appends a newly created workspace object to the database engine's Workspaces collection. Workspaces do not persist between database engine sessions; they are stored only in memory, not on disk. You do not have to append a workspace; if you do not, you can still use it.  
+ `Append` appends a newly created workspace object to the database engine's Workspaces collection. Workspaces do not persist between database engine sessions; they are stored only in memory, not on disk. You do not have to append a workspace; if you do not, you can still use it.  
   
  An appended workspace remains in the Workspaces collection, in an active, open state, until you call its [Close](#close) member function.  
   
@@ -153,7 +148,7 @@ void BeginTrans();
 ```  
   
 ### Remarks  
- After you call **BeginTrans**, updates you make to your data or database structure take effect when you commit the transaction. Because the workspace defines a single transaction space, the transaction applies to all open databases in the workspace. There are two ways to complete the transaction:  
+ After you call `BeginTrans`, updates you make to your data or database structure take effect when you commit the transaction. Because the workspace defines a single transaction space, the transaction applies to all open databases in the workspace. There are two ways to complete the transaction:  
   
 -   Call the [CommitTrans](#committrans) member function to commit the transaction and save changes to the data source.  
   
@@ -175,7 +170,7 @@ CDaoWorkspace();
   
 -   Call the object's [Open](#open) member function to open the default workspace or to open an existing object in the Workspaces collection.  
   
--   Or call the object's [Create](#create) member function to create a new DAO workspace object. This explicitly starts a new workspace session, which you can refer to via the `CDaoWorkspace` object. After calling **Create**, you can call [Append](#append) if you want to add the workspace to the database engine's Workspaces collection.  
+-   Or call the object's [Create](#create) member function to create a new DAO workspace object. This explicitly starts a new workspace session, which you can refer to via the `CDaoWorkspace` object. After calling `Create`, you can call [Append](#append) if you want to add the workspace to the database engine's Workspaces collection.  
   
  See the class overview for [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) for information about when you need to explicitly create a `CDaoWorkspace` object. Usually, you use workspaces created implicitly when you open a [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) object without specifying a workspace or when you open a [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) object without specifying a database object. MFC DAO objects created in this way use DAO's default workspace, which is created once and reused.  
   
@@ -189,7 +184,7 @@ virtual void Close();
 ```  
   
 ### Remarks  
- Closing an open workspace object releases the underlying DAO object and, if the workspace is a member of the Workspaces collection, removes it from the collection. Calling **Close** is good programming practice.  
+ Closing an open workspace object releases the underlying DAO object and, if the workspace is a member of the Workspaces collection, removes it from the collection. Calling `Close` is good programming practice.  
   
 > [!CAUTION]
 >  Closing a workspace object closes any open databases in the workspace. This results in any recordsets open in the databases being closed as well, and any pending edits or updates are rolled back. For related information, see the [CDaoDatabase::Close](../../mfc/reference/cdaodatabase-class.md#close), [CDaoRecordset::Close](../../mfc/reference/cdaorecordset-class.md#close), [CDaoTableDef::Close](../../mfc/reference/cdaotabledef-class.md#close), and [CDaoQueryDef::Close](../../mfc/reference/cdaoquerydef-class.md#close) member functions.  
@@ -206,10 +201,10 @@ void CommitTrans();
 ```  
   
 ### Remarks  
- A transaction consists of a series of changes to the database's data or its structure, beginning with a call to [BeginTrans](#begintrans). When you complete the transaction, either commit it or roll it back (cancel the changes) with [Rollback](#rollback). By default, without transactions, updates to records are committed immediately. Calling **BeginTrans** causes commitment of updates to be delayed until you call **CommitTrans**.  
+ A transaction consists of a series of changes to the database's data or its structure, beginning with a call to [BeginTrans](#begintrans). When you complete the transaction, either commit it or roll it back (cancel the changes) with [Rollback](#rollback). By default, without transactions, updates to records are committed immediately. Calling `BeginTrans` causes commitment of updates to be delayed until you call `CommitTrans`.  
   
 > [!CAUTION]
->  Within one workspace, transactions are always global to the workspace and are not limited to only one database or recordset. If you perform operations on more than one database or recordset within a workspace transaction, **CommitTrans** commits all pending updates, and **Rollback** restores all operations on those databases and recordsets.  
+>  Within one workspace, transactions are always global to the workspace and are not limited to only one database or recordset. If you perform operations on more than one database or recordset within a workspace transaction, `CommitTrans` commits all pending updates, and `Rollback` restores all operations on those databases and recordsets.  
   
  When you close a database or workspace with pending transactions, the transactions are all rolled back.  
   
@@ -236,64 +231,64 @@ static void PASCAL CompactDatabase(
 ```  
   
 ### Parameters  
- `lpszSrcName`  
+ *lpszSrcName*  
  The name of an existing, closed database. It can be a full path and filename, such as "C:\\\MYDB.MDB". If the filename has an extension, you must specify it. If your network supports the uniform naming convention (UNC), you can also specify a network path, such as "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB.MDB". (Double backslashes are required in the path strings because "\\" is the C++ escape character.)  
   
- `lpszDestName`  
- The full path of the compacted database that you are creating. You can also specify a network path as with `lpszSrcName`. You cannot use the `lpszDestName` argument to specify the same database file as `lpszSrcName`.  
+ *lpszDestName*  
+ The full path of the compacted database that you are creating. You can also specify a network path as with *lpszSrcName*. You cannot use the *lpszDestName* argument to specify the same database file as *lpszSrcName*.  
   
- `lpszPassword`  
- A password, used when you want to compact a password-protected database. Note that if you use the version of `CompactDatabase` that takes a password, you must supply all parameters. Also, because this is a connect parameter, it requires special formatting, as follows: ;PWD= `lpszPassword`. For example: ;PWD="Happy". (The leading semicolon is required.)  
+ *lpszPassword*  
+ A password, used when you want to compact a password-protected database. Note that if you use the version of `CompactDatabase` that takes a password, you must supply all parameters. Also, because this is a connect parameter, it requires special formatting, as follows: ;PWD= *lpszPassword*. For example: ;PWD="Happy". (The leading semicolon is required.)  
   
- `lpszLocale`  
- A string expression used to specify collating order for creating `lpszDestName`. If you omit this argument by accepting the default value of **dbLangGeneral** (see below), the locale of the new database is the same as that of the old database. Possible values are:  
+ *lpszLocale*  
+ A string expression used to specify collating order for creating *lpszDestName*. If you omit this argument by accepting the default value of `dbLangGeneral` (see below), the locale of the new database is the same as that of the old database. Possible values are:  
   
-- **dbLangGeneral** English, German, French, Portuguese, Italian, and Modern Spanish  
+- `dbLangGeneral` English, German, French, Portuguese, Italian, and Modern Spanish  
   
-- **dbLangArabic** Arabic  
+- `dbLangArabic` Arabic  
   
-- **dbLangCyrillic** Russian  
+- `dbLangCyrillic` Russian  
   
-- **dbLangCzech** Czech  
+- `dbLangCzech` Czech  
   
-- **dbLangDutch** Dutch  
+- `dbLangDutch` Dutch  
   
-- **dbLangGreek** Greek  
+- `dbLangGreek` Greek  
   
-- **dbLangHebrew** Hebrew  
+- `dbLangHebrew` Hebrew  
   
-- **dbLangHungarian** Hungarian  
+- `dbLangHungarian` Hungarian  
   
-- **dbLangIcelandic** Icelandic  
+- `dbLangIcelandic` Icelandic  
   
-- **dbLangNordic** Nordic languages (Microsoft Jet database engine version 1.0 only)  
+- `dbLangNordic` Nordic languages (Microsoft Jet database engine version 1.0 only)  
   
-- **dbLangNorwdan** Norwegian and Danish  
+- `dbLangNorwdan` Norwegian and Danish  
   
-- **dbLangPolish** Polish  
+- `dbLangPolish` Polish  
   
-- **dbLangSpanish** Traditional Spanish  
+- `dbLangSpanish` Traditional Spanish  
   
-- **dbLangSwedfin** Swedish and Finnish  
+- `dbLangSwedfin` Swedish and Finnish  
   
-- **dbLangTurkish** Turkish  
+- `dbLangTurkish` Turkish  
   
- `nOptions`  
- Indicates one or more options for the target database, `lpszDestName`. If you omit this argument by accepting the default value, the `lpszDestName` will have the same encryption and the same version as `lpszSrcName`. You can combine the **dbEncrypt** or **dbDecrypt** option with one of the version options using the bitwise-OR operator. Possible values, which specify a database format, not a database engine version, are:  
+ *nOptions*  
+ Indicates one or more options for the target database, *lpszDestName*. If you omit this argument by accepting the default value, the *lpszDestName* will have the same encryption and the same version as *lpszSrcName*. You can combine the `dbEncrypt` or `dbDecrypt` option with one of the version options using the bitwise-OR operator. Possible values, which specify a database format, not a database engine version, are:  
   
-- **dbEncrypt** Encrypt the database while compacting.  
+- `dbEncrypt` Encrypt the database while compacting.  
   
-- **dbDecrypt** Decrypt the database while compacting.  
+- `dbDecrypt` Decrypt the database while compacting.  
   
-- **dbVersion10** Create a database that uses the Microsoft Jet database engine version 1.0 while compacting.  
+- `dbVersion10` Create a database that uses the Microsoft Jet database engine version 1.0 while compacting.  
   
-- **dbVersion11** Create a database that uses the Microsoft Jet database engine version 1.1 while compacting.  
+- `dbVersion11` Create a database that uses the Microsoft Jet database engine version 1.1 while compacting.  
   
-- **dbVersion20** Create a database that uses the Microsoft Jet database engine version 2.0 while compacting.  
+- `dbVersion20` Create a database that uses the Microsoft Jet database engine version 2.0 while compacting.  
   
-- **dbVersion30** Create a database that uses the Microsoft Jet database engine version 3.0 while compacting.  
+- `dbVersion30` Create a database that uses the Microsoft Jet database engine version 3.0 while compacting.  
   
- You can use **dbEncrypt** or **dbDecrypt** in the options argument to specify whether to encrypt or to decrypt the database as it is compacted. If you omit an encryption constant or if you include both **dbDecrypt** and **dbEncrypt**, `lpszDestName` will have the same encryption as `lpszSrcName`. You can use one of the version constants in the options argument to specify the version of the data format for the compacted database. This constant affects only the version of the data format of `lpszDestName`. You can specify only one version constant. If you omit a version constant, `lpszDestName` will have the same version as `lpszSrcName`. You can compact `lpszDestName` only to a version that is the same or later than that of `lpszSrcName`.  
+ You can use `dbEncrypt` or `dbDecrypt` in the options argument to specify whether to encrypt or to decrypt the database as it is compacted. If you omit an encryption constant or if you include both `dbDecrypt` and `dbEncrypt`, *lpszDestName* will have the same encryption as *lpszSrcName*. You can use one of the version constants in the options argument to specify the version of the data format for the compacted database. This constant affects only the version of the data format of *lpszDestName*. You can specify only one version constant. If you omit a version constant, *lpszDestName* will have the same version as *lpszSrcName*. You can compact *lpszDestName* only to a version that is the same or later than that of *lpszSrcName*.  
   
 > [!CAUTION]
 >  If a database is not encrypted, it is possible, even if you implement user/password security, to directly read the binary disk file that constitutes the database.  
@@ -320,13 +315,13 @@ virtual void Create(
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  A string with up to 14 characters that uniquely names the new workspace object. You must supply a name. For related information, see the topic "Name Property" in DAO Help.  
   
  *lpszUserName*  
- The user name of the workspace's owner. For requirements, see the `lpszDefaultUser` parameter to the [SetDefaultUser](#setdefaultuser) member function. For related information, see the topic "UserName Property" in DAO Help.  
+ The user name of the workspace's owner. For requirements, see the *lpszDefaultUser* parameter to the [SetDefaultUser](#setdefaultuser) member function. For related information, see the topic "UserName Property" in DAO Help.  
   
- `lpszPassword`  
+ *lpszPassword*  
  The password for the new workspace object. A password can be up to 14 characters long and can contain any character except ASCII 0 (null). Passwords are case-sensitive. For related information, see the topic "Password Property" in DAO Help.  
   
 ### Remarks  
@@ -334,11 +329,11 @@ virtual void Create(
   
 1.  Construct a [CDaoWorkspace](#cdaoworkspace) object.  
   
-2.  Call the object's **Create** member function to create the underlying DAO workspace. You must specify a workspace name.  
+2.  Call the object's `Create` member function to create the underlying DAO workspace. You must specify a workspace name.  
   
 3.  Optionally call [Append](#append) if you want to add the workspace to the database engine's Workspaces collection. You can work with the workspace without appending it.  
   
- After the **Create** call, the workspace object is in an open state, ready for use. You do not call **Open** after **Create**. You do not call **Create** if the workspace already exists in the Workspaces collection. **Create** initializes the database engine if it has not already been initialized for your application.  
+ After the `Create` call, the workspace object is in an open state, ready for use. You do not call `Open` after `Create`. You do not call `Create` if the workspace already exists in the Workspaces collection. `Create` initializes the database engine if it has not already been initialized for your application.  
   
 ##  <a name="getdatabasecount"></a>  CDaoWorkspace::GetDatabaseCount  
  Call this member function to retrieve the number of DAO database objects in the workspace's Databases collection — the number of open databases in the workspace.  
@@ -370,28 +365,28 @@ void GetDatabaseInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index of the database object in the workspace's Databases collection, for lookup by index.  
   
- `dbinfo`  
+ *dbinfo*  
  A reference to a [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) object that returns the information requested.  
   
- `dwInfoOptions`  
+ *dwInfoOptions*  
  Options that specify which information about the database to retrieve. The available options are listed here along with what they cause the function to return:  
   
-- `AFX_DAO_PRIMARY_INFO` (Default) Name, Updatable, Transactions  
+- AFX_DAO_PRIMARY_INFO (Default) Name, Updatable, Transactions  
   
-- `AFX_DAO_SECONDARY_INFO` Primary information plus: Version, Collating Order, Query Timeout  
+- AFX_DAO_SECONDARY_INFO Primary information plus: Version, Collating Order, Query Timeout  
   
-- `AFX_DAO_ALL_INFO` Primary and secondary information plus: Connect  
+- AFX_DAO_ALL_INFO Primary and secondary information plus: Connect  
   
- `lpszName`  
+ *lpszName*  
  The name of the database object, for lookup by name. The name is a string with up to 14 characters that uniquely names the new workspace object.  
   
 ### Remarks  
  One version of the function lets you look up a database by index. The other version lets you look up a database by name.  
   
- For a description of the information returned in `dbinfo`, see the [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of `dwInfoOptions`. When you request information at one level, you get information for any prior levels as well.  
+ For a description of the information returned in *dbinfo*, see the [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. When you request information at one level, you get information for any prior levels as well.  
   
 ##  <a name="getinipath"></a>  CDaoWorkspace::GetIniPath  
  Call this member function to obtain the location of the Microsoft Jet database engine's initialization settings in the Windows registry.  
@@ -421,7 +416,7 @@ BOOL GetIsolateODBCTrans();
 ### Remarks  
  In some situations, you might need to have multiple simultaneous transactions pending on the same ODBC database. To do this, you need to open a separate workspace for each transaction. Keep in mind that although each workspace can have its own ODBC connection to the database, this slows system performance. Because transaction isolation is not normally required, ODBC connections from multiple workspace objects opened by the same user are shared by default.  
   
- Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the IsolateODBCTrans property to **TRUE** on each workspace as soon as you open it. This forces a separate ODBC connection for each workspace.  
+ Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the IsolateODBCTrans property to TRUE on each workspace as soon as you open it. This forces a separate ODBC connection for each workspace.  
   
  For related information, see the topic "IsolateODBCTrans Property" in DAO Help.  
   
@@ -517,47 +512,47 @@ void GetWorkspaceInfo(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  The zero-based index of the database object in the Workspaces collection, for lookup by index.  
   
- `wkspcinfo`  
+ *wkspcinfo*  
  A reference to a [CDaoWorkspaceInfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) object that returns the information requested.  
   
- `dwInfoOptions`  
+ *dwInfoOptions*  
  Options that specify which information about the workspace to retrieve. The available options are listed here along with what they cause the function to return:  
   
-- `AFX_DAO_PRIMARY_INFO` (Default) Name  
+- AFX_DAO_PRIMARY_INFO (Default) Name  
   
-- `AFX_DAO_SECONDARY_INFO` Primary information plus: User Name  
+- AFX_DAO_SECONDARY_INFO Primary information plus: User Name  
   
-- `AFX_DAO_ALL_INFO` Primary and secondary information plus: Isolate ODBCTrans  
+- AFX_DAO_ALL_INFO Primary and secondary information plus: Isolate ODBCTrans  
   
- `lpszName`  
+ *lpszName*  
  The name of the workspace object, for lookup by name. The name is a string with up to 14 characters that uniquely names the new workspace object.  
   
 ### Remarks  
- For a description of the information returned in `wkspcinfo`, see the [CDaoWorkspaceInfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of `dwInfoOptions`. When you request information at one level, you get information for prior levels as well.  
+ For a description of the information returned in *wkspcinfo*, see the [CDaoWorkspaceInfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) structure. This structure has members that correspond to the items of information listed above in the description of *dwInfoOptions*. When you request information at one level, you get information for prior levels as well.  
   
 ##  <a name="idle"></a>  CDaoWorkspace::Idle  
- Call **Idle** to provide the database engine with the opportunity to perform background tasks that may not be up-to-date because of intense data processing.  
+ Call `Idle` to provide the database engine with the opportunity to perform background tasks that may not be up-to-date because of intense data processing.  
   
 ```  
 static void PASCAL Idle(int nAction = dbFreeLocks);
 ```  
   
 ### Parameters  
- `nAction`  
- An action to take during the idle processing. Currently the only valid action is **dbFreeLocks**.  
+ *nAction*  
+ An action to take during the idle processing. Currently the only valid action is `dbFreeLocks`.  
   
 ### Remarks  
  This is often true in multiuser, multitasking environments in which there is not enough background processing time to keep all records in a recordset current.  
   
 > [!NOTE]
->  Calling **Idle** is not necessary with databases created with version 3.0 of the Microsoft Jet database engine. Use **Idle** only for databases created with earlier versions.  
+>  Calling `Idle` is not necessary with databases created with version 3.0 of the Microsoft Jet database engine. Use `Idle` only for databases created with earlier versions.  
   
- Usually, read locks are removed and data in local dynaset-type recordset objects is updated only when no other actions (including mouse movements) are occurring. If you periodically call **Idle**, you provide the database engine with time to catch up on background processing tasks by releasing unneeded read locks. Specifying the **dbFreeLocks** constant as an argument delays processing until all read locks are released.  
+ Usually, read locks are removed and data in local dynaset-type recordset objects is updated only when no other actions (including mouse movements) are occurring. If you periodically call `Idle`, you provide the database engine with time to catch up on background processing tasks by releasing unneeded read locks. Specifying the `dbFreeLocks` constant as an argument delays processing until all read locks are released.  
   
- This member function is not needed in single-user environments unless multiple instances of an application are running. The **Idle** member function may increase performance in a multiuser environment because it forces the database engine to flush data to disk, releasing locks on memory. You can also release read locks by making operations part of a transaction.  
+ This member function is not needed in single-user environments unless multiple instances of an application are running. The `Idle` member function may increase performance in a multiuser environment because it forces the database engine to flush data to disk, releasing locks on memory. You can also release read locks by making operations part of a transaction.  
   
  For related information, see the topic "Idle Method" in DAO Help.  
   
@@ -590,19 +585,19 @@ virtual void Open(LPCTSTR lpszName = NULL);
 ```  
   
 ### Parameters  
- `lpszName`  
- The name of the DAO workspace object to open — a string with up to 14 characters that uniquely names the workspace. Accept the default value **NULL** to explicitly open the default workspace. For naming requirements, see the `lpszName` parameter for [Create](#create). For related information, see the topic "Name Property" in DAO Help.  
+ *lpszName*  
+ The name of the DAO workspace object to open — a string with up to 14 characters that uniquely names the workspace. Accept the default value NULL to explicitly open the default workspace. For naming requirements, see the *lpszName* parameter for [Create](#create). For related information, see the topic "Name Property" in DAO Help.  
   
 ### Remarks  
  After constructing a `CDaoWorkspace` object, call this member function to do one of the following:  
   
--   Explicitly open the default workspace. Pass **NULL** for `lpszName`.  
+-   Explicitly open the default workspace. Pass NULL for *lpszName*.  
   
 -   Open an existing `CDaoWorkspace` object, a member of the Workspaces collection, by name. Pass a valid name for an existing workspace object.  
   
- **Open** puts the workspace object into an open state and also initializes the database engine if it has not already been initialized for your application.  
+ `Open` puts the workspace object into an open state and also initializes the database engine if it has not already been initialized for your application.  
   
- Although many `CDaoWorkspace` member functions can only be called after the workspace has been opened, the following member functions, which operate on the database engine, are available after construction of the C++ object but before a call to **Open**:  
+ Although many `CDaoWorkspace` member functions can only be called after the workspace has been opened, the following member functions, which operate on the database engine, are available after construction of the C++ object but before a call to `Open`:  
   
 ||||  
 |-|-|-|  
@@ -618,11 +613,11 @@ static void PASCAL RepairDatabase(LPCTSTR lpszName);
 ```  
   
 ### Parameters  
- `lpszName`  
+ *lpszName*  
  The path and filename for an existing Microsoft Jet engine database file. If you omit the path, only the current directory is searched. If your system supports the uniform naming convention (UNC), you can also specify a network path, such as: "\\\\\\\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB.MDB". (Double backslashes are required in the path string because "\\" is the C++ escape character.)  
   
 ### Remarks  
- You must close the database specified by `lpszName` before you repair it. In a multiuser environment, other users cannot have `lpszName` open while you are repairing it. If `lpszName` is not closed or is not available for exclusive use, an error occurs.  
+ You must close the database specified by *lpszName* before you repair it. In a multiuser environment, other users cannot have *lpszName* open while you are repairing it. If *lpszName* is not closed or is not available for exclusive use, an error occurs.  
   
  This member function attempts to repair a database that was marked as possibly corrupt by an incomplete write operation. This can occur if an application using the Microsoft Jet database engine is closed unexpectedly because of a power outage or computer hardware problem. If you complete the operation and call the [Close](../../mfc/reference/cdaodatabase-class.md#close) member function or you quit the application in a usual way, the database will not be marked as possibly corrupt.  
   
@@ -641,12 +636,12 @@ void Rollback();
 ### Remarks  
   
 > [!CAUTION]
->  Within one workspace object, transactions are always global to the workspace and are not limited to only one database or recordset. If you perform operations on more than one database or recordset within a workspace transaction, **Rollback** restores all operations on all of those databases and recordsets.  
+>  Within one workspace object, transactions are always global to the workspace and are not limited to only one database or recordset. If you perform operations on more than one database or recordset within a workspace transaction, `Rollback` restores all operations on all of those databases and recordsets.  
   
- If you close a workspace object without saving or rolling back any pending transactions, the transactions are automatically rolled back. If you call [CommitTrans](#committrans) or **Rollback** without first calling [BeginTrans](#begintrans), an error occurs.  
+ If you close a workspace object without saving or rolling back any pending transactions, the transactions are automatically rolled back. If you call [CommitTrans](#committrans) or `Rollback` without first calling [BeginTrans](#begintrans), an error occurs.  
   
 > [!NOTE]
->  When you begin a transaction, the database engine records its operations in a file kept in the directory specified by the TEMP environment variable on the workstation. If the transaction log file exhausts the available storage on your TEMP drive, the database engine will cause MFC to throw a `CDaoException` (DAO error 2004). At this point, if you call **CommitTrans**, an indeterminate number of operations are committed but the remaining uncompleted operations are lost, and the operation has to be restarted. Calling **Rollback** releases the transaction log and rolls back all operations in the transaction.  
+>  When you begin a transaction, the database engine records its operations in a file kept in the directory specified by the TEMP environment variable on the workstation. If the transaction log file exhausts the available storage on your TEMP drive, the database engine will cause MFC to throw a `CDaoException` (DAO error 2004). At this point, if you call `CommitTrans`, an indeterminate number of operations are committed but the remaining uncompleted operations are lost, and the operation has to be restarted. Calling `Rollback` releases the transaction log and rolls back all operations in the transaction.  
   
 ##  <a name="setdefaultpassword"></a>  CDaoWorkspace::SetDefaultPassword  
  Call this member function to set the default password that the database engine uses when a workspace object is created without a specific password.  
@@ -656,7 +651,7 @@ static void PASCAL SetDefaultPassword(LPCTSTR lpszPassword);
 ```  
   
 ### Parameters  
- `lpszPassword`  
+ *lpszPassword*  
  The default password. A password can be up to 14 characters long and can contain any character except ASCII 0 (null). Passwords are case-sensitive.  
   
 ### Remarks  
@@ -664,11 +659,11 @@ static void PASCAL SetDefaultPassword(LPCTSTR lpszPassword);
   
  To use this member function:  
   
-1.  Construct a `CDaoWorkspace` object but do not call **Create**.  
+1.  Construct a `CDaoWorkspace` object but do not call `Create`.  
   
 2.  Call `SetDefaultPassword` and, if you like, [SetDefaultUser](#setdefaultuser).  
   
-3.  Call **Create** for this workspace object or subsequent ones, without specifying a password.  
+3.  Call `Create` for this workspace object or subsequent ones, without specifying a password.  
   
  By default, the DefaultUser property is set to "admin" and the DefaultPassword property is set to an empty string ("").  
   
@@ -682,19 +677,19 @@ static void PASCAL SetDefaultUser(LPCTSTR lpszDefaultUser);
 ```  
   
 ### Parameters  
- `lpszDefaultUser`  
- The default user name. A user name can be 1 - 20 characters long and include alphabetic characters, accented characters, numbers, spaces, and symbols except for: " (quotation marks), / (forward slash), \ (backslash), \[ \] (brackets), : (colon), &#124; (pipe), \< (less-than sign), > (greater-than sign), + (plus sign), = (equal sign), ; (semicolon), , ( comma),  (question mark), * (asterisk), leading spaces, and control characters (ASCII 00 to ASCII 31). For related information, see the topic "UserName Property" in DAO Help.  
+ *lpszDefaultUser*  
+ The default user name. A user name can be 1 - 20 characters long and include alphabetic characters, accented characters, numbers, spaces, and symbols except for: " (quotation marks), / (forward slash), \ (backslash), \[ \] (brackets), : (colon), &#124; (pipe), \< (less-than sign), > (greater-than sign), + (plus sign), = (equal sign), ; (semicolon), , ( comma),  (question mark), \* (asterisk), leading spaces, and control characters (ASCII 00 to ASCII 31). For related information, see the topic "UserName Property" in DAO Help.  
   
 ### Remarks  
  The default user name that you set applies to new workspaces you create after the call. When you create subsequent workspaces, you do not need to specify a user name in the [Create](#create) call.  
   
  To use this member function:  
   
-1.  Construct a `CDaoWorkspace` object but do not call **Create**.  
+1.  Construct a `CDaoWorkspace` object but do not call `Create`.  
   
 2.  Call `SetDefaultUser` and, if you like, [SetDefaultPassword](#setdefaultpassword).  
   
-3.  Call **Create** for this workspace object or subsequent ones, without specifying a user name.  
+3.  Call `Create` for this workspace object or subsequent ones, without specifying a user name.  
   
  By default, the DefaultUser property is set to "admin" and the DefaultPassword property is set to an empty string ("").  
   
@@ -728,12 +723,12 @@ void SetIsolateODBCTrans(BOOL bIsolateODBCTrans);
   
 ### Parameters  
  *bIsolateODBCTrans*  
- Pass **TRUE** if you want to begin isolating ODBC transactions. Pass **FALSE** if you want to stop isolating ODBC transactions.  
+ Pass TRUE if you want to begin isolating ODBC transactions. Pass FALSE if you want to stop isolating ODBC transactions.  
   
 ### Remarks  
  In some situations, you might need to have multiple simultaneous transactions pending on the same ODBC database. To do this, you need to open a separate workspace for each transaction. Although each workspace can have its own ODBC connection to the database, this slows system performance. Because transaction isolation is not normally required, ODBC connections from multiple workspace objects opened by the same user are shared by default.  
   
- Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the IsolateODBCTrans property to **TRUE** on each workspace as soon as you open it. This forces a separate ODBC connection for each workspace.  
+ Some ODBC servers, such as Microsoft SQL Server, do not allow simultaneous transactions on a single connection. If you need to have more than one transaction at a time pending against such a database, set the IsolateODBCTrans property to TRUE on each workspace as soon as you open it. This forces a separate ODBC connection for each workspace.  
   
 ##  <a name="setlogintimeout"></a>  CDaoWorkspace::SetLoginTimeout  
  Call this member function to set the value of the DAO LoginTimeout property for the workspace.  
@@ -743,7 +738,7 @@ static void PASCAL SetLoginTimeout(short nSeconds);
 ```  
   
 ### Parameters  
- `nSeconds`  
+ *nSeconds*  
  The number of seconds before an error occurs when you attempt to log in to an ODBC database.  
   
 ### Remarks  

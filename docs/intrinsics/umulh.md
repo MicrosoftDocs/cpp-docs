@@ -2,19 +2,14 @@
 title: "__umulh | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__umulh"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__umulh intrinsic"]
 ms.assetid: d241b53a-e6f7-4af1-9f6e-84e149158f03
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __umulh
@@ -45,7 +40,7 @@ unsigned __int64 __umulh( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__umulh`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__umulh`|x64|  
   
  **Header file** \<intrin.h>  
   

@@ -2,18 +2,13 @@
 title: "Using Multiple Accessors on a Rowset | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["BEGIN_ACCESSOR macro", "BEGIN_ACCESSOR macro, multiple accessors", "rowsets [C++], multiple accessors", "accessors [C++], rowsets"]
 ms.assetid: 80d4dc5d-4940-4a28-a4ee-d8602f71d2a6
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Multiple Accessors on a Rowset
@@ -39,15 +34,15 @@ There are three basic scenarios in which you need to use multiple accessors:
   
  You normally create accessors using the [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) and [END_ACCESSOR](../../data/oledb/end-accessor.md) macros. You can also use the [db_accessor](../../windows/db-accessor.md) attribute. (Accessors are described further in [User Records](../../data/oledb/user-records.md).) The macros or the attribute specify whether an accessor is an automatic or a non-automatic accessor:  
   
--   In an automatic accessor, move methods such as **MoveFirst**, `MoveLast`, `MoveNext`, and `MovePrev` retrieve data for all specified columns automatically. Accessor 0 should be the automatic accessor.  
+-   In an automatic accessor, move methods such as `MoveFirst`, `MoveLast`, `MoveNext`, and `MovePrev` retrieve data for all specified columns automatically. Accessor 0 should be the automatic accessor.  
   
--   In a non-automatic accessor, the retrieval does not occur until you explicitly call a method such as **Update**, **Insert**, **Fetch**, or **Delete**. In the scenarios described above, you might not want to retrieve all the columns on every move. You can place one or more columns in a separate accessor and make that a non-automatic accessor, as shown below.  
+-   In a non-automatic accessor, the retrieval does not occur until you explicitly call a method such as `Update`, `Insert`, `Fetch`, or `Delete`. In the scenarios described above, you might not want to retrieve all the columns on every move. You can place one or more columns in a separate accessor and make that a non-automatic accessor, as shown below.  
   
  The following example uses multiple accessors to read and write to the jobs table of the SQL Server pubs database using multiple accessors. This is the most common use of multiple accessors; see the "multiple read/write rowsets" scenario above.  
   
  The user record class is as follows. It sets up two accessors: accessor 0 contains only the primary key column (ID) and accessor 1 contains other columns.  
   
-```  
+```cpp  
 class CJobs  
 {  
 public:  
@@ -80,9 +75,9 @@ END_ACCESSOR_MAP()
 };  
 ```  
   
- The main code is as follows. Calling `MoveNext` automatically retrieves data from the primary key column ID using accessor 0. Note how the **Insert** method near the end uses accessor 1 to avoid writing to the primary key column.  
+ The main code is as follows. Calling `MoveNext` automatically retrieves data from the primary key column ID using accessor 0. Note how the `Insert` method near the end uses accessor 1 to avoid writing to the primary key column.  
   
-```  
+```cpp  
 int main(int argc, char* argv[])  
 {  
     // Initalize COM  
@@ -106,7 +101,7 @@ int main(int argc, char* argv[])
         if (hr == S_OK)  
         {  
             // Ready to fetch/access data  
-            CTable<CAccessor<CJobs> > jobs;  
+            CTable<CAccessor<CJobs>> jobs;  
   
             // Set properties for making the rowset a read/write cursor  
             CDBPropSet dbRowset(DBPROPSET_ROWSET);  

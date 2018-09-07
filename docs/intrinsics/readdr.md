@@ -2,19 +2,14 @@
 title: "__readdr | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__readdr"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__readdr intrinsic"]
 ms.assetid: 061b05da-c85e-4052-b392-106f14bb84f1
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __readdr
@@ -41,7 +36,7 @@ unsigned __int64 __readdr(unsigned int DebugRegister);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readdr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readdr`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

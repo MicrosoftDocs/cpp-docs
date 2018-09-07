@@ -1,19 +1,14 @@
 ---
 title: "Run-Time Type Information | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["RTTI compiler option", "run-time type information", "run time, type checking", "type information, run-time type checking", "run-time checks, type checking"]
 ms.assetid: becbd0e5-0439-4c61-854f-8a74f7160c54
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Run-Time Type Information
@@ -33,7 +28,7 @@ Run-time type information (RTTI) is a mechanism that allows the type of an objec
   
 -   The [type_info](../cpp/type-info-class.md) class.  
   
-     Used to hold the type information returned by the `typeid` operator.  
+     Used to hold the type information returned by the **typeid** operator.  
   
-## See Also  
+## See also  
  [Casting](../cpp/casting.md)

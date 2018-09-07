@@ -2,19 +2,14 @@
 title: "CD2DEllipse Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse", "AFXRENDERTARGET/CD2DEllipse::CD2DEllipse"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DEllipse [MFC], CD2DEllipse"]
 ms.assetid: e9f02f54-acf2-427e-b349-db50cd9a77df
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DEllipse Class
@@ -57,16 +52,16 @@ CD2DEllipse(
 ```  
   
 ### Parameters  
- `rect`  
+ *rect*  
  source rectangle  
   
- `ellipse`  
+ *ellipse*  
  source ellipse  
   
- `ptCenter`  
+ *ptCenter*  
  The center point of the ellipse.  
   
- `sizeRadius`  
+ *sizeRadius*  
  The X-radius and Y-radius of the ellipse.  
   
 ## See Also  

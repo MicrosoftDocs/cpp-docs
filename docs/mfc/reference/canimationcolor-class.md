@@ -2,19 +2,14 @@
 title: "CAnimationColor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::CAnimationColor", "AFXANIMATIONCONTROLLER/CAnimationColor::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationColor::GetB", "AFXANIMATIONCONTROLLER/CAnimationColor::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetG", "AFXANIMATIONCONTROLLER/CAnimationColor::GetR", "AFXANIMATIONCONTROLLER/CAnimationColor::GetValue", "AFXANIMATIONCONTROLLER/CAnimationColor::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationColor::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationColor::m_bValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_gValue", "AFXANIMATIONCONTROLLER/CAnimationColor::m_rValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationColor [MFC], CAnimationColor", "CAnimationColor [MFC], AddTransition", "CAnimationColor [MFC], GetB", "CAnimationColor [MFC], GetDefaultValue", "CAnimationColor [MFC], GetG", "CAnimationColor [MFC], GetR", "CAnimationColor [MFC], GetValue", "CAnimationColor [MFC], SetDefaultValue", "CAnimationColor [MFC], GetAnimationVariableList", "CAnimationColor [MFC], m_bValue", "CAnimationColor [MFC], m_gValue", "CAnimationColor [MFC], m_rValue"]
 ms.assetid: 88bfabd4-efeb-4652-87e8-304253d8e48c
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationColor Class
@@ -91,13 +86,13 @@ void AddTransition(
 ```  
   
 ### Parameters  
- `pRTransition`  
+ *pRTransition*  
  Transition for Red component.  
   
- `pGTransition`  
+ *pGTransition*  
  Transition for Green component.  
   
- `pBTransition`  
+ *pBTransition*  
  Transition for Blue component.  
   
 ### Remarks  
@@ -117,16 +112,16 @@ CAnimationColor(
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  Specifies default color.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  Specifies user-defined data.  
   
 ### Remarks  
@@ -140,7 +135,7 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*>& lst);
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains pointers to three CAnimationVariable objects representing red, green and blue components.  
   
 ##  <a name="getb"></a>  CAnimationColor::GetB  
@@ -203,7 +198,7 @@ BOOL GetValue(COLORREF& color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  Output. Contains the current value when this method returns.  
   
 ### Return Value  
@@ -249,7 +244,7 @@ void operator=(COLORREF color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  Specifies new value Animation Color.  
   
 ### Remarks  
@@ -263,7 +258,7 @@ void SetDefaultValue(COLORREF color);
 ```  
   
 ### Parameters  
- `color`  
+ *color*  
  Specifies new default values for red, green and blue components.  
   
 ### Remarks  

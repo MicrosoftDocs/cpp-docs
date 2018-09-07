@@ -2,19 +2,14 @@
 title: "CPrintDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CPrintDialog", "AFXDLGS/CPrintDialog", "AFXDLGS/CPrintDialog::CPrintDialog", "AFXDLGS/CPrintDialog::CreatePrinterDC", "AFXDLGS/CPrintDialog::DoModal", "AFXDLGS/CPrintDialog::GetCopies", "AFXDLGS/CPrintDialog::GetDefaults", "AFXDLGS/CPrintDialog::GetDeviceName", "AFXDLGS/CPrintDialog::GetDevMode", "AFXDLGS/CPrintDialog::GetDriverName", "AFXDLGS/CPrintDialog::GetFromPage", "AFXDLGS/CPrintDialog::GetPortName", "AFXDLGS/CPrintDialog::GetPrinterDC", "AFXDLGS/CPrintDialog::GetToPage", "AFXDLGS/CPrintDialog::PrintAll", "AFXDLGS/CPrintDialog::PrintCollate", "AFXDLGS/CPrintDialog::PrintRange", "AFXDLGS/CPrintDialog::PrintSelection", "AFXDLGS/CPrintDialog::m_pd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CPrintDialog [MFC], CPrintDialog", "CPrintDialog [MFC], CreatePrinterDC", "CPrintDialog [MFC], DoModal", "CPrintDialog [MFC], GetCopies", "CPrintDialog [MFC], GetDefaults", "CPrintDialog [MFC], GetDeviceName", "CPrintDialog [MFC], GetDevMode", "CPrintDialog [MFC], GetDriverName", "CPrintDialog [MFC], GetFromPage", "CPrintDialog [MFC], GetPortName", "CPrintDialog [MFC], GetPrinterDC", "CPrintDialog [MFC], GetToPage", "CPrintDialog [MFC], PrintAll", "CPrintDialog [MFC], PrintCollate", "CPrintDialog [MFC], PrintRange", "CPrintDialog [MFC], PrintSelection", "CPrintDialog [MFC], m_pd"]
 ms.assetid: 5bdb2424-adf8-433d-a97c-df11a83bc4e4
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CPrintDialog Class
@@ -64,7 +59,7 @@ class CPrintDialog : public CCommonDialog
  Common print dialog boxes provide an easy way to implement Print and Print Setup dialog boxes in a manner consistent with Windows standards.  
   
 > [!NOTE]
->  The `CPrintDialogEx` class encapsulates the services provided by the Windows 2000 Print property sheet. For more information see the [CPrintDialogEx](../../mfc/reference/cprintdialogex-class.md) overview.  
+>  The `CPrintDialogEx` class encapsulates the services provided by the Windows Print property sheet. For more information see the [CPrintDialogEx](../../mfc/reference/cprintdialogex-class.md) overview.  
   
  `CPrintDialog`'s functionality is superceded by that of [CPageSetupDialog](../../mfc/reference/cpagesetupdialog-class.md), which is designed to provide you with a common dialog box for both print setup and page setup.  
   
@@ -72,23 +67,23 @@ class CPrintDialog : public CCommonDialog
   
  If you want your application to handle printing without the framework's involvement, you can use the `CPrintDialog` class "as is" with the constructor provided, or you can derive your own dialog class from `CPrintDialog` and write a constructor to suit your needs. In either case, these dialog boxes will behave like standard MFC dialog boxes because they are derived from class `CCommonDialog`.  
   
- To use a `CPrintDialog` object, first create the object using the `CPrintDialog` constructor. Once the dialog box has been constructed, you can set or modify any values in the [m_pd](#m_pd) structure to initialize the values of the dialog box's controls. The `m_pd` structure is of type [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843). For more information on this structure, see the Windows SDK.  
+ To use a `CPrintDialog` object, first create the object using the `CPrintDialog` constructor. Once the dialog box has been constructed, you can set or modify any values in the [m_pd](#m_pd) structure to initialize the values of the dialog box's controls. The `m_pd` structure is of type [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda). For more information on this structure, see the Windows SDK.  
   
- If you do not supply your own handles in `m_pd` for the **hDevMode** and **hDevNames** members, be sure to call the Windows function **GlobalFree** for these handles when you are done with the dialog box. When using the framework's Print Setup implementation provided by `CWinApp::OnFilePrintSetup`, you do not have to free these handles. The handles are maintained by `CWinApp` and are freed in `CWinApp`'s destructor. It is only necessary to free these handles when using `CPrintDialog` stand-alone.  
+ If you do not supply your own handles in `m_pd` for the `hDevMode` and `hDevNames` members, be sure to call the Windows function `GlobalFree` for these handles when you are done with the dialog box. When using the framework's Print Setup implementation provided by `CWinApp::OnFilePrintSetup`, you do not have to free these handles. The handles are maintained by `CWinApp` and are freed in `CWinApp`'s destructor. It is only necessary to free these handles when using `CPrintDialog` stand-alone.  
   
- After initializing the dialog box controls, call the `DoModal` member function to display the dialog box and allow the user to select print options. `DoModal` returns whether the user selected the OK ( **IDOK**) or Cancel ( **IDCANCEL**) button.  
+ After initializing the dialog box controls, call the `DoModal` member function to display the dialog box and allow the user to select print options. `DoModal` returns whether the user selected the OK (IDOK) or Cancel (IDCANCEL) button.  
   
- If `DoModal` returns **IDOK**, you can use one of `CPrintDialog`'s member functions to retrieve the information input by the user.  
+ If `DoModal` returns IDOK, you can use one of `CPrintDialog`'s member functions to retrieve the information input by the user.  
   
  The `CPrintDialog::GetDefaults` member function is useful for retrieving the current printer defaults without displaying a dialog box. This member function requires no user interaction.  
   
- You can use the Windows **CommDlgExtendedError** function to determine whether an error occurred during initialization of the dialog box and to learn more about the error. For more information on this function, see the Windows SDK.  
+ You can use the Windows `CommDlgExtendedError` function to determine whether an error occurred during initialization of the dialog box and to learn more about the error. For more information on this function, see the Windows SDK.  
   
  `CPrintDialog` relies on the COMMDLG.DLL file that ships with Windows versions 3.1 and later.  
   
  To customize the dialog box, derive a class from `CPrintDialog`, provide a custom dialog template, and add a message map to process the notification messages from the extended controls. Any unprocessed messages should be passed on to the base class. Customizing the hook function is not required.  
   
- To process the same message differently depending on whether the dialog box is Print or Print Setup, you must derive a class for each dialog box. You must also override the Windows **AttachOnSetup** function, which handles the creation of a new dialog box when the Print Setup button is selected within a Print dialog box.  
+ To process the same message differently depending on whether the dialog box is Print or Print Setup, you must derive a class for each dialog box. You must also override the Windows `AttachOnSetup` function, which handles the creation of a new dialog box when the Print Setup button is selected within a Print dialog box.  
   
  For more information on using `CPrintDialog`, see [Common Dialog Classes](../../mfc/common-dialog-classes.md).  
   
@@ -119,25 +114,25 @@ CPrintDialog(
 ```  
   
 ### Parameters  
- `bPrintSetupOnly`  
- Specifies whether the standard Windows Print dialog box or Print Setup dialog box is displayed. Set this parameter to **TRUE** to display the standard Windows Print Setup dialog box. Set it to **FALSE** to display the Windows Print dialog box. If `bPrintSetupOnly` is **FALSE**, a Print Setup option button is still displayed in the Print dialog box.  
+ *bPrintSetupOnly*  
+ Specifies whether the standard Windows Print dialog box or Print Setup dialog box is displayed. Set this parameter to TRUE to display the standard Windows Print Setup dialog box. Set it to FALSE to display the Windows Print dialog box. If *bPrintSetupOnly* is FALSE, a Print Setup option button is still displayed in the Print dialog box.  
   
- `dwFlags`  
- One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. For example, the **PD_ALLPAGES** flag sets the default print range to all pages of the document. See the [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) structure in the Windows SDK for more information on these flags.  
+ *dwFlags*  
+ One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator. For example, the PD_ALLPAGES flag sets the default print range to all pages of the document. See the [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) structure in the Windows SDK for more information on these flags.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the dialog box's parent or owner window.  
   
 ### Remarks  
  This member function only constructs the object. Use the `DoModal` member function to display the dialog box.  
   
- Note that when you call the constructor with `bPrintSetupOnly` set to **FALSE**, the **PD_RETURNDC** flag is automatically used. After calling `DoModal`, `GetDefaults`, or `GetPrinterDC`, a printer DC will be returned in `m_pd.hDC`. This DC must be freed with a call to [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) by the caller of `CPrintDialog`.  
+ Note that when you call the constructor with *bPrintSetupOnly* set to FALSE, the PD_RETURNDC flag is automatically used. After calling `DoModal`, `GetDefaults`, or `GetPrinterDC`, a printer DC will be returned in `m_pd.hDC`. This DC must be freed with a call to [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) by the caller of `CPrintDialog`.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#174](../../mfc/codesnippet/cpp/cprintdialog-class_1.cpp)]  
   
 ##  <a name="createprinterdc"></a>  CPrintDialog::CreatePrinterDC  
- Creates a printer device context (DC) from the [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.  
+ Creates a printer device context (DC) from the [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) and [DEVNAMES](../../mfc/reference/devnames-structure.md) structures.  
   
 ```  
 HDC CreatePrinterDC();
@@ -160,16 +155,16 @@ virtual INT_PTR DoModal();
 ```  
   
 ### Return Value  
- **IDOK** or **IDCANCEL**. If **IDCANCEL** is returned, call the Windows [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) function to determine whether an error occurred.  
+ IDOK or IDCANCEL. If IDCANCEL is returned, call the Windows [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) function to determine whether an error occurred.  
   
- **IDOK** and **IDCANCEL** are constants that indicate whether the user selected the OK or Cancel button.  
+ IDOK and IDCANCEL are constants that indicate whether the user selected the OK or Cancel button.  
   
 ### Remarks  
  If you want to initialize the various print dialog options by setting members of the `m_pd` structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
  After calling `DoModal`, you can call other member functions to retrieve the settings or information input by the user into the dialog box.  
   
- Note that when you call the constructor with `bPrintSetupOnly` set to **FALSE**, the **PD_RETURNDC** flag is automatically used. After calling `DoModal`, `GetDefaults`, or `GetPrinterDC`, a printer DC will be returned in `m_pd.hDC`. This DC must be freed with a call to [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) by the caller of `CPrintDialog`.  
+ Note that when you call the constructor with *bPrintSetupOnly* set to FALSE, the PD_RETURNDC flag is automatically used. After calling `DoModal`, `GetDefaults`, or `GetPrinterDC`, a printer DC will be returned in `m_pd.hDC`. This DC must be freed with a call to [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) by the caller of `CPrintDialog`.  
   
 ### Example  
   See the example for [CPrintDialog::CreatePrinterDC](#createprinterdc).  
@@ -203,9 +198,9 @@ BOOL GetDefaults();
 ### Remarks  
  The retrieved values are placed in the `m_pd` structure.  
   
- In some cases, a call to this function will call the [constructor](#cprintdialog) for `CPrintDialog` with `bPrintSetupOnly` set to **FALSE**. In these cases, a printer DC and **hDevNames** and **hDevMode** (two handles located in the `m_pd` data member) are automatically allocated.  
+ In some cases, a call to this function will call the [constructor](#cprintdialog) for `CPrintDialog` with *bPrintSetupOnly* set to FALSE. In these cases, a printer DC and `hDevNames` and `hDevMode` (two handles located in the `m_pd` data member) are automatically allocated.  
   
- If the constructor for `CPrintDialog` was called with `bPrintSetupOnly` set to **FALSE**, this function will not only return **hDevNames** and **hDevMode** (located in **m_pd.hDevNames** and **m_pd.hDevMode**) to the caller, but will also return a printer DC in **m_pd.hDC**. It is the responsibility of the caller to delete the printer DC and call the Windows [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579) function on the handles when you are finished with the `CPrintDialog` object.  
+ If the constructor for `CPrintDialog` was called with *bPrintSetupOnly* set to FALSE, this function will not only return `hDevNames` and `hDevMode` located in `m_pd.hDevNames` and `m_pd.hDevMode`) to the caller, but will also return a printer DC in `m_pd.hDC`. It is the responsibility of the caller to delete the printer DC and call the Windows [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) function on the handles when you are finished with the `CPrintDialog` object.  
   
 ### Example  
  This code fragment gets the default printer's device context and reports to the user the resolution of the printer in dots per inch. (This attribute of the printer's capabilities is often referred to as DPI.)  
@@ -238,7 +233,7 @@ LPDEVMODE GetDevMode() const;
 ```  
   
 ### Return Value  
- The [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) function, which is described in the Windows SDK.  
+ The [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) data structure, which contains information about the device initialization and environment of a print driver. You must unlock the memory taken by this structure with the Windows [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) function, which is described in the Windows SDK.  
   
 ### Remarks  
  Call this function after calling [DoModal](#domodal) or [GetDefaults](#getdefaults) to retrieve information about the printing device.  
@@ -302,10 +297,10 @@ HDC GetPrinterDC() const;
 ```  
   
 ### Return Value  
- A handle to the printer device context if successful; otherwise **NULL**.  
+ A handle to the printer device context if successful; otherwise NULL.  
   
 ### Remarks  
- If the `bPrintSetupOnly` parameter of the `CPrintDialog` constructor was **FALSE** (indicating that the Print dialog box is displayed), then `GetPrinterDC` returns a handle to the printer device context. You must call the Windows [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) function to delete the device context when you are done using it.  
+ If the *bPrintSetupOnly* parameter of the `CPrintDialog` constructor was FALSE (indicating that the Print dialog box is displayed), then `GetPrinterDC` returns a handle to the printer device context. You must call the Windows [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) function to delete the device context when you are done using it.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#109](../../mfc/codesnippet/cpp/cprintdialog-class_5.cpp)]  
@@ -334,7 +329,7 @@ PRINTDLG& m_pd;
 ```  
   
 ### Remarks  
- After constructing a `CPrintDialog` object, you can use `m_pd` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function. For more information on the `m_pd` structure, see [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) in the Windows SDK.  
+ After constructing a `CPrintDialog` object, you can use `m_pd` to set various aspects of the dialog box before calling the [DoModal](#domodal) member function. For more information on the `m_pd` structure, see [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) in the Windows SDK.  
   
  If you modify the `m_pd` data member directly, you will override any default behavior.  
   

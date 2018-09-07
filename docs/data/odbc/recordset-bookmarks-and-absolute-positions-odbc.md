@@ -2,19 +2,14 @@
 title: "Recordset: Bookmarks and Absolute Positions (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 f1_keywords: ["SetAbsolutePosition"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDBVariant class, bookmarks", "absolute positions, ODBC recordsets", "bookmarks, CDBVariant", "bookmarks, ODBC recordsets", "ODBC recordsets, absolute positions", "ODBC recordsets, bookmarks", "cursors [ODBC], absolute position in recordsets", "recordsets, bookmarks", "bookmarks", "SetAbsolutePosition method", "recordsets, absolute positions", "positioning records", "SetBookmark method", "record positioning", "GetBookmark method", "SetAbsolutePosition method, bookmarks"]
 ms.assetid: 189788d6-33c1-41c5-9265-97db2a5d43cc
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Bookmarks and Absolute Positions (ODBC)
@@ -37,7 +32,7 @@ This topic applies to the MFC ODBC classes.
   
  The following example illustrates how to use these member functions to mark the current record and later return to it:  
   
-```  
+```cpp  
 // rs is a CRecordset or  
 // CRecordset-derived object  
   
@@ -53,7 +48,7 @@ rs.SetBookmark( varRecordToReturnTo );
  You do not need to extract the underlying data type from the [CDBVariant Class](../../mfc/reference/cdbvariant-class.md) object. Assign the value with `GetBookmark` and return to that bookmark with `SetBookmark`.  
   
 > [!NOTE]
->  Depending on your ODBC driver and recordset type, bookmarks might not be supported. You can easily determine whether bookmarks are supported by calling [CRecordset::CanBookmark](../../mfc/reference/crecordset-class.md#canbookmark). Furthermore, if bookmarks are supported, you must explicitly choose to implement them by specifying the **CRecordset::useBookmarks** option in the [CRecordset::Open](../../mfc/reference/crecordset-class.md#open) member function. You should also check the persistence of bookmarks after certain recordset operations. For example, if you **Requery** a recordset, bookmarks might no longer be valid. Call [CDatabase::GetBookmarkPersistence](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) to check whether you can safely call `SetBookmark`.  
+>  Depending on your ODBC driver and recordset type, bookmarks might not be supported. You can easily determine whether bookmarks are supported by calling [CRecordset::CanBookmark](../../mfc/reference/crecordset-class.md#canbookmark). Furthermore, if bookmarks are supported, you must explicitly choose to implement them by specifying the `CRecordset::useBookmarks` option in the [CRecordset::Open](../../mfc/reference/crecordset-class.md#open) member function. You should also check the persistence of bookmarks after certain recordset operations. For example, if you `Requery` a recordset, bookmarks might no longer be valid. Call [CDatabase::GetBookmarkPersistence](../../mfc/reference/cdatabase-class.md#getbookmarkpersistence) to check whether you can safely call `SetBookmark`.  
   
 ##  <a name="_core_absolute_positions_in_mfc_odbc"></a> Absolute Positions in MFC ODBC  
  Besides bookmarks, class `CRecordset` allows you to set the current record by specifying an ordinal position. This is called absolute positioning.  

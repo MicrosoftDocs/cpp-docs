@@ -2,19 +2,14 @@
 title: "__movsw | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__movsw"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["movsw instruction", "rep movsw instruction", "__movsw intrinsic"]
 ms.assetid: db402ad5-7f0e-449a-b0b0-eea9928d6435
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __movsw
@@ -46,7 +41,7 @@ void __movsw( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__movsw`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsw`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

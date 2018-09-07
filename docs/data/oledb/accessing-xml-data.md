@@ -2,18 +2,13 @@
 title: "Accessing XML Data | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data access [C++], XML data", "XML [C++], accessing data", "CXMLAccessor class, retrieving XML data", "data [C++], XML data access", "rowsets [C++], retrieving XML data", "CStreamRowset class, retrieving XML data"]
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Accessing XML Data
@@ -30,13 +25,13 @@ There are two separate methods of retrieving XML data from a data source: one us
 ## Retrieving XML Data Using CStreamRowset  
  You specify [CStreamRowset](../../data/oledb/cstreamrowset-class.md) as the rowset type in your `CCommand` or `CTable` declaration. You can use it with your own accessor or no accessor, for example:  
   
-```  
+```cpp  
 CCommand<CAccessor<CMyAccessor>, CStreamRowset> myCmd;  
 ```  
   
  -or-  
   
-```  
+```cpp  
 CCommand<CNoAccessor, CStreamRowset> myCmd;  
 ```  
   
@@ -44,7 +39,7 @@ CCommand<CNoAccessor, CStreamRowset> myCmd;
   
  By contrast, when you call `CCommand::Open` (but specify `CStreamRowset` as the `TRowset` class), `ICommand::Execute` returns an `ISequentialStream` pointer, which is stored in the `m_spStream` data member of [CStreamRowset](../../data/oledb/cstreamrowset-class.md). You then use the `Read` method to retrieve the (Unicode string) data in XML format. For example:  
   
-```  
+```cpp  
 myCmd.m_spStream->Read()  
 ```  
   
@@ -60,16 +55,17 @@ myCmd.m_spStream->Read()
   
  Use `CXMLAccessor` as you would any other accessor class, passing it as a template parameter to `CCommand` or `CTable`:  
   
-```  
+```cpp  
 CTable<CXMLAccessor, CRowset> rs;  
 ```  
   
  Use [GetXMLRowData](../../data/oledb/cxmlaccessor-getxmlrowdata.md) to retrieve data from the table one row at a time, and navigate rows using methods such as `MoveNext`, for example:  
   
-```  
+```cpp  
 // Open data source, session, and rowset  
 hr = rs.MoveFirst();  
-while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
+
+while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
 {  
     CStringW strRowData;  
     myCmd.GetXMLRowData(strRowData);  

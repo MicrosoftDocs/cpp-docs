@@ -2,18 +2,13 @@
 title: "Importing and Exporting Inline Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["exporting functions [C++], inline functions", "inline functions [C++], importing", "DLLs [C++], importing", "importing functions [C++]", "DLLs [C++], exporting from", "importing inline functions [C++]", "inline functions [C++], exporting", "functions [C++], importing", "functions [C++], exporting"]
 ms.assetid: 89f488f8-b078-40fe-afd7-80bd7840057b
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Importing and Exporting Inline Functions

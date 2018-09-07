@@ -2,19 +2,14 @@
 title: "Creating a Forms-Based MFC Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfcforms.project"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["applications [MFC], forms-based", "forms-based applications [MFC]"]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating a Forms-Based MFC Application
@@ -24,7 +19,7 @@ A form is a dialog box with controls that let a user access and possibly change 
   
  If you create a multiple document interface (MDI), forms-based application, the application will be able to support multiple instances of the same form.  
   
- If you create an application with multiple top-level document support, the desktop is the implicit parent for the document and the document's frame is not restricted to the client area of the application. You can open multiple instances of the document, each with its own frame, menu, and task bar icon. You can close subsequent instances of documents individually, but if you select the `Exit` option from the **File** menu of the initial instance, the application closes all instances.  
+ If you create an application with multiple top-level document support, the desktop is the implicit parent for the document and the document's frame is not restricted to the client area of the application. You can open multiple instances of the document, each with its own frame, menu, and task bar icon. You can close subsequent instances of documents individually, but if you select the **Exit** option from the **File** menu of the initial instance, the application closes all instances.  
   
  SDI, MDI, and multiple top-level document applications are all forms based and use the document/view architecture.  
   

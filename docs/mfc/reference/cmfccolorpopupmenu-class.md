@@ -2,19 +2,14 @@
 title: "CMFCColorPopupMenu Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CMFCColorPopupMenu", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::CreateTearOffBar", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::GetMenuBar", "AFXCOLORPOPUPMENU/CMFCColorPopupMenu::SetPropList"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCColorPopupMenu [MFC], CMFCColorPopupMenu", "CMFCColorPopupMenu [MFC], CreateTearOffBar", "CMFCColorPopupMenu [MFC], GetMenuBar", "CMFCColorPopupMenu [MFC], SetPropList"]
 ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCColorPopupMenu Class
@@ -55,7 +50,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 |`m_wndColorBar`|The `CMFCColorBar` object that provides color selection.|  
   
 ### Remarks  
- This class inherits the pop-up menu functionality of the `CMFCPopupMenu` class and manages a `CMFCColorBar` object that provides color selection. When the toolbar framework is in customization mode and the `m_bEnabledInCustomizeMode` member is set to `FALSE`, the color bar object is not shown. For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)  
+ This class inherits the pop-up menu functionality of the `CMFCPopupMenu` class and manages a `CMFCColorBar` object that provides color selection. When the toolbar framework is in customization mode and the `m_bEnabledInCustomizeMode` member is set to FALSE, the color bar object is not shown. For more information about customization mode, see [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)  
   
  For more information about `CMFCColorBar`, see [CMFCColorBar Class](../../mfc/reference/cmfccolorbar-class.md).  
   
@@ -119,54 +114,54 @@ CMFCColorPopupMenu(
 ```  
   
 ### Parameters  
- [in] `colors`  
+ [in] *colors*  
  An array of colors that the framework displays on the pop-up menu.  
   
- [in] `color`  
+ [in] *color*  
  The default selected color.  
   
- [in] `lpszAutoColor`  
- The text label of the *automatic* (default) color button, or `NULL`.  
+ [in] *lpszAutoColor*  
+ The text label of the *automatic* (default) color button, or NULL.  
   
  The standard label for the automatic button is **Automatic**.  
   
- [in] `lpszOtherColor`  
- The text label of the *other* button, which displays more color choices, or `NULL`.  
+ [in] *lpszOtherColor*  
+ The text label of the *other* button, which displays more color choices, or NULL.  
   
  The standard label for the other button is **More Colors...**.  
   
- [in] `lpszDocColors`  
+ [in] *lpszDocColors*  
  The text label of the document colors button. The document colors palette lists all the colors that the document currently uses.  
   
- [in] `lstDocColors`  
+ [in] *lstDocColors*  
  A list of colors that the document currently uses.  
   
- [in] `nColumns`  
+ [in] *nColumns*  
  The number of columns that the array of colors has.  
   
- [in] `nHorzDockRows`  
+ [in] *nHorzDockRows*  
  The number of rows that the color bar has when it is docked horizontally.  
   
- [in] `nVertDockColumns`  
+ [in] *nVertDockColumns*  
  The number of columns that the color bar has when it is docked vertically.  
   
- [in] `colorAutomatic`  
+ [in] *colorAutomatic*  
  The default color that the framework applies when you click the automatic button.  
   
- [in] `uiCommandID`  
+ [in] *uiCommandID*  
  The color bar control command ID.  
   
- [in] `bStdColorDlg`  
+ [in] *bStdColorDlg*  
  A Boolean that indicates whether to show the standard system color dialog box or the [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) dialog box.  
   
- [in] `pParentBtn`  
+ [in] *pParentBtn*  
  A pointer to a parent button.  
   
- [in] `nID`  
+ [in] *nID*  
  The command ID.  
   
 ### Remarks  
- Each overloaded constructor sets the `m_bEnabledInCustomizeMode` member to `FALSE`.  
+ Each overloaded constructor sets the `m_bEnabledInCustomizeMode` member to FALSE.  
   
 ### Example  
  The following example demonstrates how to construct a `CMFCColorPopupMenu` object.  
@@ -188,9 +183,9 @@ virtual CPane* CreateTearOffBar(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `pWndMain`|Pointer to the parent window of the tear-off bar.|  
-|[in] `uiID`|The command ID of the tear-off bar.|  
-|[in] `lpszName`|The window text of the tear-off bar.|  
+|[in] *pWndMain*|Pointer to the parent window of the tear-off bar.|  
+|[in] *uiID*|The command ID of the tear-off bar.|  
+|[in] *lpszName*|The window text of the tear-off bar.|  
   
 ### Return Value  
  A pointer to the new tear-off control bar object.  
@@ -219,7 +214,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ```  
   
 ### Parameters  
- [in] `pWndList`  
+ [in] *pWndList*  
  Pointer to a property grid control object.  
   
 ## See Also  

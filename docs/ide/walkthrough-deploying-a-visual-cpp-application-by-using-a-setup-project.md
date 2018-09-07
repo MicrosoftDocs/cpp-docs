@@ -2,18 +2,13 @@
 title: "Deploy a Visual C++ Application By Using a Setup Project | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["deployment for Visual C++"]
 ms.assetid: 66735cda-8fe3-4211-a19a-2cf717a12a3f
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Deploying a Visual C++ Application By Using a Setup Project
@@ -22,7 +17,7 @@ Describes how to use a setup project to deploy a Visual C++ application.
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   A computer with [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)] installed.  
+-   A computer with Visual Studio 2012 installed.  
   
 -   An additional computer that does not have the Visual C++ libraries.  
   

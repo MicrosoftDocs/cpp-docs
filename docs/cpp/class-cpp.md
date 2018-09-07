@@ -2,30 +2,24 @@
 title: "class (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["class_cpp"]
 dev_langs: ["CPP"]
 helpviewer_keywords: ["class types [C++], class statements", "class keyword [C++]"]
 ms.assetid: dd23c09f-6598-4069-8bff-69c7f2518b9f
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # class (C++)
-The `class` keyword declares a class type or defines an object of a class type.  
+The **class** keyword declares a class type or defines an object of a class type.  
   
 ## Syntax  
   
 ```  
-  
-      [template-spec]  
-       class [ms-decl-spec] [tag [: base-list ]]  
+[template-spec]  
+class [ms-decl-spec] [tag [: base-list ]]  
 {  
    member-list  
 } [declarators];  
@@ -33,26 +27,26 @@ The `class` keyword declares a class type or defines an object of a class type.
 ```  
   
 #### Parameters  
- `template-spec`  
+ *template-spec*  
  Optional template specifications. For more information, refer to [Templates](templates-cpp.md).  
   
- `class`  
- The `class` keyword.  
+ *class*  
+ The **class** keyword.  
   
- `ms-decl-spec`  
+ *ms-decl-spec*  
  Optional storage-class specification. For more information, refer to the [__declspec](../cpp/declspec.md) keyword.  
   
- `tag`  
+ *tag*  
  The type name given to the class. The tag becomes a reserved word within the scope of the class. The tag is optional. If omitted, an anonymous class is defined. For more information, see [Anonymous Class Types](../cpp/anonymous-class-types.md).  
   
- `base-list`  
+ *base-list*  
  Optional list of classes or structures this class will derive its members from. See [Base Classes](../cpp/base-classes.md) for more information. Each base class or structure name can be preceded by an access specifier ([public](../cpp/public-cpp.md), [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md)) and the [virtual](../cpp/virtual-cpp.md) keyword. See the member-access table in [Controlling Access to Class Members](member-access-control-cpp.md) for more information.  
   
- `member-list`  
+ *member-list*  
  List of class members. Refer to [Class Member Overview](../cpp/class-member-overview.md) for more information.  
   
- `declarators`  
- Declarator list specifying the names of one or more instances of the class type. Declarators may include initializer lists if all data members of the class are `public`. This is more common in structures, whose data members are `public` by default, than in classes. See [Overview of Declarators](../cpp/overview-of-declarators.md) for more information.  
+ *declarators*  
+ Declarator list specifying the names of one or more instances of the class type. Declarators may include initializer lists if all data members of the class are **public**. This is more common in structures, whose data members are **public** by default, than in classes. See [Overview of Declarators](../cpp/overview-of-declarators.md) for more information.  
   
 ## Remarks  
  For more information on classes in general, refer to one of the following topics:  
@@ -71,7 +65,7 @@ The `class` keyword declares a class type or defines an object of a class type.
   
 ## Example  
   
-```  
+```cpp 
 // class.cpp  
 // compile with: /EHsc  
 // Example of the class keyword  
@@ -142,6 +136,6 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Keywords](../cpp/keywords-cpp.md)   
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)

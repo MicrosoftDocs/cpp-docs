@@ -2,22 +2,17 @@
 title: "C Abstract Declarators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["declarators, abstract", "abstract declarations"]
 ms.assetid: 6a556ad7-0555-421a-aa02-294d77cda8b5
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Abstract Declarators
-An abstract declarator is a declarator without an identifier, consisting of one or more pointer, array, or function modifiers. The pointer modifier (**\***) always precedes the identifier in a declarator; array (**[ ]**) and function ( **( )** ) modifiers follow the identifier. Knowing this, you can determine where the identifier would appear in an abstract declarator and interpret the declarator accordingly. See [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md) for additional information and examples of complex declarators. Generally `typedef` can be used to simplify declarators. See [Typedef Declarations](../c-language/typedef-declarations.md).  
+An abstract declarator is a declarator without an identifier, consisting of one or more pointer, array, or function modifiers. The pointer modifier (<strong>\*</strong>) always precedes the identifier in a declarator; array (**[ ]**) and function ( **( )** ) modifiers follow the identifier. Knowing this, you can determine where the identifier would appear in an abstract declarator and interpret the declarator accordingly. See [Interpreting More Complex Declarators](../c-language/interpreting-more-complex-declarators.md) for additional information and examples of complex declarators. Generally `typedef` can be used to simplify declarators. See [Typedef Declarations](../c-language/typedef-declarations.md).  
   
  Abstract declarators can be complex. Parentheses in a complex abstract declarator specify a particular interpretation, just as they do for the complex declarators in declarations.  
   

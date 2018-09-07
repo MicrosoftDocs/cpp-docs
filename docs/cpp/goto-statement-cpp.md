@@ -2,23 +2,18 @@
 title: "goto Statement (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["goto_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["goto keyword [C++]"]
 ms.assetid: 724c5deb-2de1-42d8-8ef1-23589d9bf5ed
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # goto Statement (C++)
-The `goto` statement unconditionally transfers control to the statement labeled by the specified identifier.  
+The **goto** statement unconditionally transfers control to the statement labeled by the specified identifier.  
   
 ## Syntax  
   
@@ -29,16 +24,35 @@ goto identifier;
 ## Remarks  
  The labeled statement designated by `identifier` must be in the current function. All `identifier` names are members of an internal namespace and therefore do not interfere with other identifiers.  
   
- A statement label is meaningful only to a `goto` statement; otherwise, statement labels are ignored. Labels cannot be redeclared.  
+ A statement label is meaningful only to a **goto** statement; otherwise, statement labels are ignored. Labels cannot be redeclared.  
+
+A **goto** statement is not allowed to transfer control to a location that skips over the initialization of any variable that is in scope in that location. The following example raises C2362:
+
+```cpp
+int goto_fn(bool b)
+{
+    if (!b)
+    {
+        goto exit;  // C2362
+    }
+    else
+    { /*...*/ }
+
+    int error_code = 42;
+
+exit:
+    return error_code;
+}
+```
   
- It is good programming style to use the `break`, `continue`, and `return` statements instead of the `goto` statement whenever possible. However, because the `break` statement exits from only one level of a loop, you might have to use a `goto` statement to exit a deeply nested loop.  
+ It is good programming style to use the **break**, **continue**, and **return** statements instead of the **goto** statement whenever possible. However, because the **break** statement exits from only one level of a loop, you might have to use a **goto** statement to exit a deeply nested loop.  
   
- For more information about labels and the `goto` statement, see [Labeled Statements](../cpp/labeled-statements.md) and [Using Labels with the goto Statement](http://msdn.microsoft.com/en-us/6cd7c31a-9822-4241-8566-f79f51be48fe).  
+ For more information about labels and the **goto** statement, see [Labeled Statements](../cpp/labeled-statements.md).  
   
 ## Example  
- In this example, a `goto` statement transfers control to the point labeled `stop` when `i` equals 3.  
+ In this example, a **goto** statement transfers control to the point labeled `stop` when `i` equals 3.  
   
-```  
+```cpp  
 // goto_statement.cpp  
 #include <stdio.h>  
 int main()  
@@ -79,6 +93,6 @@ Outer loop executing. i = 3
 Jumped to stop. i = 3  
 ```  
   
-## See Also  
+## See also  
  [Jump Statements](../cpp/jump-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

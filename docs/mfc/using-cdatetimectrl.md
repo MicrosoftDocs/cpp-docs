@@ -2,26 +2,21 @@
 title: "Using CDateTimeCtrl | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CDateTimeCtrl"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DateTimePicker control [MFC], CDateTimeCtrl class"]
 ms.assetid: cb2a8720-43f1-4c33-a3a4-def9a1622e00
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using CDateTimeCtrl
 The date and time picker control ([CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)) implements an intuitive and recognizable method of entering or selecting a specific date. The main interface of the control is similar in functionality to a combo box. However, if the user expands the control, a month calendar control appears (by default), allowing the user to specify a particular date. When a date is chosen, the month calendar control automatically disappears.  
   
 > [!NOTE]
->  To use both the **CDateTimePicker** and `CMonthCalCtrl` classes in your project, you must include AFXDTCTL.H, usually in your project's STDAFX.H file.  
+>  To use both the `CDateTimePicker` and `CMonthCalCtrl` classes in your project, you must include AFXDTCTL.H, usually in your project's STDAFX.H file.  
   
 ## What do you want to know more about  
   

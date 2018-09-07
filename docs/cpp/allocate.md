@@ -2,19 +2,14 @@
 title: "allocate | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["allocate_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__declspec keyword [C++], allocate", "allocate __declspec keyword"]
 ms.assetid: 67828b31-de60-4c0e-b0a6-ef3aab22641d
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # allocate
@@ -25,10 +20,7 @@ ms.workload: ["cplusplus"]
 ## Syntax  
   
 ```  
-  
-__declspec(allocate("  
-segname  
-")) declarator  
+   __declspec(allocate("segname")) declarator  
 ```  
   
 ## Remarks  
@@ -46,7 +38,7 @@ segname
   
 ## Example  
   
-```  
+```cpp 
 // allocate.cpp  
 #pragma section("mycode", read)  
 __declspec(allocate("mycode"))  int i = 0;  
@@ -57,6 +49,6 @@ int main() {
   
  **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [__declspec](../cpp/declspec.md)   
  [Keywords](../cpp/keywords-cpp.md)

@@ -2,19 +2,14 @@
 title: "timer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["timer", "AGENTS/concurrency::timer", "AGENTS/concurrency::timer::timer", "AGENTS/concurrency::timer::pause", "AGENTS/concurrency::timer::start", "AGENTS/concurrency::timer::stop", "AGENTS/concurrency::timer::accept_message", "AGENTS/concurrency::timer::consume_message", "AGENTS/concurrency::timer::link_target_notification", "AGENTS/concurrency::timer::propagate_to_any_targets", "AGENTS/concurrency::timer::release_message", "AGENTS/concurrency::timer::reserve_message", "AGENTS/concurrency::timer::resume_propagation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["timer class"]
 ms.assetid: 4f4dea51-de9f-40f9-93f5-dd724c567b49
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # timer Class

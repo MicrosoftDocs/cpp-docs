@@ -2,18 +2,13 @@
 title: "MSBuild (Visual C++) Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MSBuild overview"]
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MSBuild (Visual C++) Overview  
@@ -134,7 +129,10 @@ The following table lists several useful user-oriented targets.
 |Rebuild|Cleans and then builds your project.|  
 |ResourceCompile|Executes the Microsoft Windows Resource Compiler tool, rc.exe.|  
 |XdcMake|Executes the XML Documentation tool, xdcmake.exe.|  
-|Xsd|Executes the XML Schema Definition tool, xsd.exe.|  
+|Xsd|Executes the XML Schema Definition tool, xsd.exe. *See note below.*|  
+
+> [!NOTE] 
+> In Visual Studio 2017, C++ project support for **xsd** files is deprecated. You can still use **Microsoft.VisualC.CppCodeProvider** by adding **CppCodeProvider.dll** manually to the GAC.
   
 ## See Also  
   

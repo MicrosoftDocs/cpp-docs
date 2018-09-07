@@ -2,18 +2,13 @@
 title: "Data Access Programming (MFC-ATL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], data access applications", "databases [C++], MFC", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]
 ms.assetid: def97b2c-b5a6-445f-afeb-308050fd4852
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Access Programming (MFC/ATL)
@@ -23,7 +18,7 @@ OLE DB is a low-level, high-performance API based on the COM specification, and 
 
 If your legacy application uses OLE DB or the higher-level ADO interface to connect to SQL Server, and you are not accessing linked servers, you should consider migrating to ODBC in the near future. If you do not require cross-platform portability or the latest SQL Server features, you can possibly use the Microsoft OLE DB Provider for ODBC (MSDASQL).  MSDASQL allows applications that are built on OLE DB and ADO (which uses OLEDB internally) to access data sources through an ODBC driver. As with any translation layer, MSDASQL can impact database performace. You should test to determine whether the impact is signifant for your application. MSDASQL ships with the Windows operating system, and Windows Server 2008 & Windows Vista SP1 are the first Windows releases to include a 64-bit version of the technology.
 
-The SQL Native Client component (SNAC), which packages OLE DB and ODBC drivers in a single DLL, is deprecated for ODBC applications. The SQL Server 2012 version of SNAC (SQLNCLI11.DLL) ships with SQL Server 2016 because other SQL Server components depend on it. However, new C++ applications that connect to SQL Server or Azure SQL Database via ODBC should use [the most recent ODBC driver](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server). For more information, see [SQL Server Native Client Programming](/sql/relational-databases/native-client/sql-server-native-client-programming)
+The SQL Native Client component (SNAC), which packages OLE DB and ODBC drivers in a single DLL, is deprecated for ODBC applications. The SQL Server 2012 version of SNAC (SQLNCLI11.DLL) ships with SQL Server 2016 because other SQL Server components depend on it. However, new C++ applications that connect to SQL Server or Azure SQL Database via ODBC should use [the most recent ODBC driver](https://docs.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server). For more information, see [SQL Server Native Client Programming](/sql/relational-databases/native-client/sql-server-native-client-programming)
 
 If you use C++/CLI, you can continue to use ADO.NET as always. For more information, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), and [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).  
   
@@ -34,4 +29,4 @@ For more information about the history of data access technologies on Microsoft 
 ## See Also  
  [Data Access](data-access-in-cpp.md)
  [Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)
- [Data Access Technologies Road Map](https://msdn.microsoft.com/en-us/library/ms810810.aspx)
+ [Data Access Technologies Road Map](https://msdn.microsoft.com/library/ms810810.aspx)

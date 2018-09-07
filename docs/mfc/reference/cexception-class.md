@@ -2,19 +2,14 @@
 title: "CException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CException", "AFX/CException", "AFX/CException::CException", "AFX/CException::Delete", "AFX/CException::ReportError"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CException [MFC], CException", "CException [MFC], Delete", "CException [MFC], ReportError"]
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CException Class
@@ -87,24 +82,24 @@ explicit CException(BOOL bAutoDelete);
   
 ### Parameters  
  *b_AutoDelete*  
- Specify **TRUE** if the memory for the `CException` object has been allocated on the heap. This will cause the `CException` object to be deleted when the **Delete** member function is called to delete the exception. Specify **FALSE** if the `CException` object is on the stack or is a global object. In this case, the `CException` object will not be deleted when the **Delete** member function is called.  
+ Specify TRUE if the memory for the `CException` object has been allocated on the heap. This will cause the `CException` object to be deleted when the `Delete` member function is called to delete the exception. Specify FALSE if the `CException` object is on the stack or is a global object. In this case, the `CException` object will not be deleted when the `Delete` member function is called.  
   
 ### Remarks  
  You would normally never need to call this constructor directly. A function that throws an exception should create an instance of a `CException`-derived class and call its constructor, or it should use one of the MFC throw functions, such as [AfxThrowFileException](exception-processing.md#afxthrowfileexception), to throw a predefined type. This documentation is provided only for completeness.  
   
 ##  <a name="delete"></a>  CException::Delete  
- This function checks to see if the **CException** object was created on the heap, and if so, it calls the **delete** operator on the object.  
+ This function checks to see if the `CException` object was created on the heap, and if so, it calls the **delete** operator on the object.  
   
 ```  
 void Delete();
 ```  
   
 ### Remarks  
- When deleting a **CException** object, use the **Delete** member function to delete the exception. Do not use the **delete** operator directly, because the `CException` object may be a global object or have been created on the stack.  
+ When deleting a `CException` object, use the `Delete` member function to delete the exception. Do not use the **delete** operator directly, because the `CException` object may be a global object or have been created on the stack.  
   
  You can specify whether the object should be deleted when the object is constructed. For more information, see [CException::CException](#cexception).  
   
- You only need to call **Delete** if you are using the C++ **try**- **catch** mechanism. If you are using the MFC macros **TRY** and **CATCH**, then these macros will automatically call this function.  
+ You only need to call `Delete` if you are using the C++ **try**- **catch** mechanism. If you are using the MFC macros **TRY** and **CATCH**, then these macros will automatically call this function.  
   
 ### Example  
  ```cpp  
@@ -166,8 +161,8 @@ virtual int ReportError(
 ```  
   
 ### Parameters  
- `nType`  
- Specifies the style of the message box. Apply any combination of the [message-box styles](message-box-styles.md) to the box. If you don't specify this parameter, the default is **MB_OK**.  
+ *nType*  
+ Specifies the style of the message box. Apply any combination of the [message-box styles](styles-used-by-mfc.md#message-box-styles) to the box. If you don't specify this parameter, the default is MB_OK.  
   
  *nMessageID*  
  Specifies the resource ID (string table entry) of a message to display if the exception object does not have an error message. If 0, the message "No error message is available" is displayed.  

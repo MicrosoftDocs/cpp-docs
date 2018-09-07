@@ -2,19 +2,14 @@
 title: "CWaitCursor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CWaitCursor", "AFXWIN/CWaitCursor", "AFXWIN/CWaitCursor::CWaitCursor", "AFXWIN/CWaitCursor::Restore"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CWaitCursor [MFC], CWaitCursor", "CWaitCursor [MFC], Restore"]
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CWaitCursor Class
@@ -52,7 +47,7 @@ class CWaitCursor
 > [!NOTE]
 >  Because of how their constructors and destructors work, `CWaitCursor` objects are always declared as local variables — they're never declared as global variables nor are they allocated with **new**.  
   
- If you perform an operation which might cause the cursor to be changed, such as displaying a message box or dialog box, call the [Restore](#restore) member function to restore the wait cursor. It is okay to call **Restore** even when a wait cursor is currently displayed.  
+ If you perform an operation which might cause the cursor to be changed, such as displaying a message box or dialog box, call the [Restore](#restore) member function to restore the wait cursor. It is okay to call `Restore` even when a wait cursor is currently displayed.  
   
  Another way to display a wait cursor is to use the combination of [CCmdTarget::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor), [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor), and perhaps [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor). However, `CWaitCursor` is easier to use because you don't need to set the cursor to the previous cursor when you're done with the lengthy operation.  
   
@@ -96,7 +91,7 @@ void Restore();
 ```  
   
 ### Remarks  
- It is OK to call **Restore** even when the wait cursor is currently displayed.  
+ It is OK to call `Restore` even when the wait cursor is currently displayed.  
   
  If you need to restore the wait cursor while in a function other than the one in which the `CWaitCursor` object is declared, you can call [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor).  
   

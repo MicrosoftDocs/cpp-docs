@@ -2,19 +2,14 @@
 title: "Editing a Message Handler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.codewiz.editing.msghandler"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message handlers [MFC]", "message handling [MFC], editing handlers"]
 ms.assetid: 7babb496-1f14-43b1-a14d-2e54402a92e2
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Editing a Message Handler
@@ -22,7 +17,7 @@ Once you have defined a message handler, you can go to the member function's def
   
  To jump to a member function definition from the [dialog editor](../../windows/dialog-editor.md), double-click a control for which a handler is already defined. This navigates you to the file in which the selected control's message handler is defined.  
   
- To jump to a member function definition from [Class View](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), double-click the function name in Class View.  
+ To jump to a member function definition from [Class View](/visualstudio/ide/viewing-the-structure-of-code), double-click the function name in Class View.  
   
 ## See Also  
  [Mapping Messages to Functions](../../mfc/reference/mapping-messages-to-functions.md)   

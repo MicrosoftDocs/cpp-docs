@@ -2,24 +2,19 @@
 title: "Deprecated ANSI APIs | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, ANSI deprecated methods"]
 ms.assetid: c7c5a6fd-95e4-4bee-b3d5-d3826c30947d
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Deprecated ANSI APIs
 The Microsoft Foundation Class (MFC) library is migrating toward classes and methods that are based on the Unicode character set. Consequently, the ANSI versions of several MFC methods are deprecated. Use the Unicode versions of these methods in your future applications.  
   
- Starting with Windows Common Controls version 6.1, which ships in [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)], the following ANSI methods are deprecated.  
+ Starting with Windows Common Controls version 6.1, which ships in Windows Vista, the following ANSI methods are deprecated.  
   
 ## CButton class  
   

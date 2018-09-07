@@ -2,19 +2,14 @@
 title: "CD2DTextLayout Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DTextLayout", "AFXRENDERTARGET/CD2DTextLayout", "AFXRENDERTARGET/CD2DTextLayout::CD2DTextLayout", "AFXRENDERTARGET/CD2DTextLayout::Create", "AFXRENDERTARGET/CD2DTextLayout::Destroy", "AFXRENDERTARGET/CD2DTextLayout::Get", "AFXRENDERTARGET/CD2DTextLayout::GetFontFamilyName", "AFXRENDERTARGET/CD2DTextLayout::GetLocaleName", "AFXRENDERTARGET/CD2DTextLayout::IsValid", "AFXRENDERTARGET/CD2DTextLayout::ReCreate", "AFXRENDERTARGET/CD2DTextLayout::SetFontFamilyName", "AFXRENDERTARGET/CD2DTextLayout::SetLocaleName", "AFXRENDERTARGET/CD2DTextLayout::m_pTextLayout"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DTextLayout [MFC], CD2DTextLayout", "CD2DTextLayout [MFC], Create", "CD2DTextLayout [MFC], Destroy", "CD2DTextLayout [MFC], Get", "CD2DTextLayout [MFC], GetFontFamilyName", "CD2DTextLayout [MFC], GetLocaleName", "CD2DTextLayout [MFC], IsValid", "CD2DTextLayout [MFC], ReCreate", "CD2DTextLayout [MFC], SetFontFamilyName", "CD2DTextLayout [MFC], SetLocaleName", "CD2DTextLayout [MFC], m_pTextLayout"]
 ms.assetid: 724bd13c-f2ef-4e55-a775-8cb04b7b7908
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DTextLayout Class
@@ -91,19 +86,19 @@ CD2DTextLayout(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `strText`  
+ *strText*  
  A CString object that contains the string to create a new CD2DTextLayout object from.  
   
- `textFormat`  
+ *textFormat*  
  A CString object that contains the format to apply to the string.  
   
- `sizeMax`  
+ *sizeMax*  
  The size of the layout box.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DTextLayout::Create  
@@ -143,10 +138,10 @@ CString GetFontFamilyName(
 ```  
   
 ### Parameters  
- `currentPosition`  
+ *currentPosition*  
  The position of the text to examine.  
   
- `textRange`  
+ *textRange*  
  The range of text that has the same formatting as the text at the position specified by currentPosition. This means the run has the exact formatting as the position specified, including but not limited to the font family name.  
   
 ### Return Value  
@@ -162,10 +157,10 @@ CString GetLocaleName(
 ```  
   
 ### Parameters  
- `currentPosition`  
+ *currentPosition*  
  The position of the text to inspect.  
   
- `textRange`  
+ *textRange*  
  The range of text that has the same formatting as the text at the position specified by currentPosition. This means the run has the exact formatting as the position specified, including but not limited to the locale name.  
   
 ### Return Value  
@@ -218,10 +213,10 @@ BOOL SetFontFamilyName(
 ```  
   
 ### Parameters  
- `pwzFontFamilyName`  
+ *pwzFontFamilyName*  
  The font family name that applies to the entire text string within the range specified by textRange  
   
- `textRange`  
+ *textRange*  
  Text range to which this change applies  
   
 ### Return Value  
@@ -237,10 +232,10 @@ BOOL SetLocaleName(
 ```  
   
 ### Parameters  
- `pwzLocaleName`  
+ *pwzLocaleName*  
  A null-terminated locale name string  
   
- `textRange`  
+ *textRange*  
  Text range to which this change applies  
   
 ### Return Value  

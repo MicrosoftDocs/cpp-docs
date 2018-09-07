@@ -2,19 +2,14 @@
 title: "-ASSEMBLYMODULE (Add a MSIL Module to the Assembly) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/assemblymodule", "VC.Project.VCLinkerTool.AddModuleNamesToAssembly"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ASSEMBLYMODULE linker option", "assemblies [C++], adding modules to", "assemblies [C++]", "/ASSEMBLYMODULE linker option", "-ASSEMBLYMODULE linker option"]
 ms.assetid: 67357da8-e4b6-49fd-932c-329a5777f143
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /ASSEMBLYMODULE (Add a MSIL Module to the Assembly)

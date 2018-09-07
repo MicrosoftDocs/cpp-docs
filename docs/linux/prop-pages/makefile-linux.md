@@ -2,16 +2,12 @@
 title: "General Properties (Linux C++ Makefile Project)| Microsoft Docs"
 ms.custom: ""
 ms.date: "9/26/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["vs-ide-general"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
-#f1_keywords: [VC.Project.VCConfiguration.OutputDirectory, VC.Project.VCConfiguration.IntermediateDirectory, VC.Project.VCConfiguration.ConfigurationType, VC.Project.VCConfiguration.BuildLogFile]
 ms.workload: ["cplusplus", "linux"]
 ---
 # Makefile Project Properties (Linux C++)
@@ -88,7 +84,7 @@ Include Search Path | Specifies the include search path for resolving included f
 Forced Includes | Specifies the files that are forced included.
 Preprocessor Definitions | Specifies the preprocessor defines used by the source files.
 Undefine Preprocessor Definitions | Specifies one or more preprocessor undefines.     (/U[macro])
-Additional Options | Specifies additional compiler switches to be used by Intellisense when parsing C++ files.
+Additional Options | Specifies additional compiler switches to be used by IntelliSense when parsing C++ files.
 
 ### Build
 

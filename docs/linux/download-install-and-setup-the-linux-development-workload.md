@@ -1,20 +1,20 @@
 ---
-title: "Download, install, and setup the Linux workload | Microsoft Docs"
+title: "Install the C++ Linux workload in Visual Studio | Microsoft Docs"
+description: "Describes how to download, install, and setup the Linux workload for C++ in Visual Studio."
 ms.custom: ""
-ms.date: "11/16/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "07/20/2018"
 ms.technology: ["cpp-linux"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.tgt_pltfrm: "Linux"
+ms.topic: "conceptual"
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus", "linux"]
 ---
 
 # Download, install, and setup the Linux workload
+
+To use the Visual Studio IDE to create and debug C++ projects on Linux, you must install the **Linux development with C++** workload.
 
 ## Visual Studio setup
 1. Start the Visual Studio installer and select the **Linux development with C++** workload.

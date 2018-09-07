@@ -2,19 +2,14 @@
 title: "Command-Line Warning D9041 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["D9041"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["D9041"]
 ms.assetid: ada8815f-4246-4e25-b57d-a7f16fa107cc
-caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Command-Line Warning D9041

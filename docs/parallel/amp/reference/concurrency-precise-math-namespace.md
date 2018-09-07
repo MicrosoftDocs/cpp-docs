@@ -2,18 +2,13 @@
 title: "Concurrency::precise_math Namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-amp"]
+ms.topic: "reference"
 f1_keywords: ["AMP_MATH/Concurrency::acos", "AMP_MATH/Concurrency::acosf", "AMP_MATH/Concurrency::acosh", "AMP_MATH/Concurrency::acoshf", "AMP_MATH/Concurrency::asin", "AMP_MATH/Concurrency::asinf", "AMP_MATH/Concurrency::asinh", "AMP_MATH/Concurrency::asinhf", "AMP_MATH/Concurrency::atan", "AMP_MATH/Concurrency::atan2", "AMP_MATH/Concurrency::atan2f", "AMP_MATH/Concurrency::atanf", "AMP_MATH/Concurrency::atanh", "AMP_MATH/Concurrency::atanhf", "AMP_MATH/Concurrency::cbrt", "AMP_MATH/Concurrency::cbrtf", "AMP_MATH/Concurrency::ceil", "AMP_MATH/Concurrency::ceilf", "AMP_MATH/Concurrency::copysign", "AMP_MATH/Concurrency::copysignf", "AMP_MATH/Concurrency::cos", "AMP_MATH/Concurrency::cosf", "AMP_MATH/Concurrency::cosh", "AMP_MATH/Concurrency::coshf", "AMP_MATH/Concurrency::cospi", "AMP_MATH/Concurrency::cospif", "AMP_MATH/Concurrency::erf", "AMP_MATH/Concurrency::erfc", "AMP_MATH/Concurrency::erfcf", "AMP_MATH/Concurrency::erfcinv", "AMP_MATH/Concurrency::erfcinvf", "AMP_MATH/Concurrency::erff", "AMP_MATH/Concurrency::erfinv", "AMP_MATH/Concurrency::erfinvf", "AMP_MATH/Concurrency::exp", "AMP_MATH/Concurrency::exp10", "AMP_MATH/Concurrency::exp10f", "AMP_MATH/Concurrency::exp2", "AMP_MATH/Concurrency::exp2f", "AMP_MATH/Concurrency::expf", "AMP_MATH/Concurrency::expm1", "AMP_MATH/Concurrency::expm1f", "AMP_MATH/Concurrency::fabs", "AMP_MATH/Concurrency::fabsf", "AMP_MATH/Concurrency::fdim", "AMP_MATH/Concurrency::fdimf", "AMP_MATH/Concurrency::floor", "AMP_MATH/Concurrency::floorf", "AMP_MATH/Concurrency::fma", "AMP_MATH/Concurrency::fmaf", "AMP_MATH/Concurrency::fmax", "AMP_MATH/Concurrency::fmaxf", "AMP_MATH/Concurrency::fmin", "AMP_MATH/Concurrency::fminf", "AMP_MATH/Concurrency::fmodf", "AMP_MATH/Concurrency::fpclassify", "AMP_MATH/Concurrency::frexp", "AMP_MATH/Concurrency::frexpf", "AMP_MATH/Concurrency::hypot", "AMP_MATH/Concurrency::hypotf", "AMP_MATH/Concurrency::ilogb", "AMP_MATH/Concurrency::ilogbf", "AMP_MATH/Concurrency::isfinite", "AMP_MATH/Concurrency::isinf", "AMP_MATH/Concurrency::isnan", "AMP_MATH/Concurrency::isnormal", "AMP_MATH/Concurrency::ldexp", "AMP_MATH/Concurrency::ldexpf", "AMP_MATH/Concurrency::lgamma", "AMP_MATH/Concurrency::lgammaf", "AMP_MATH/Concurrency::log", "AMP_MATH/Concurrency::log10", "AMP_MATH/Concurrency::log10f", "AMP_MATH/Concurrency::log1p", "AMP_MATH/Concurrency::log1pf", "AMP_MATH/Concurrency::log2", "AMP_MATH/Concurrency::log2f", "AMP_MATH/Concurrency::logb", "AMP_MATH/Concurrency::logbf", "AMP_MATH/Concurrency::logf", "AMP_MATH/Concurrency::modf", "AMP_MATH/Concurrency::modff", "AMP_MATH/Concurrency::nan", "AMP_MATH/Concurrency::nanf", "AMP_MATH/Concurrency::nearbyint", "AMP_MATH/Concurrency::nearbyintf", "AMP_MATH/Concurrency::nextafter", "AMP_MATH/Concurrency::nextafterf", "AMP_MATH/Concurrency::phi", "AMP_MATH/Concurrency::phif", "AMP_MATH/Concurrency::pow", "AMP_MATH/Concurrency::powf", "AMP_MATH/Concurrency::probit", "AMP_MATH/Concurrency::probitf", "AMP_MATH/Concurrency::rcbrt", "AMP_MATH/Concurrency::rcbrtf", "AMP_MATH/Concurrency::remainder", "AMP_MATH/Concurrency::remainderf", "AMP_MATH/Concurrency::remquo", "AMP_MATH/Concurrency::remquof", "AMP_MATH/Concurrency::round", "AMP_MATH/Concurrency::roundf", "AMP_MATH/Concurrency::rsqrt", "AMP_MATH/Concurrency::rsqrtf", "AMP_MATH/Concurrency::scalb", "AMP_MATH/Concurrency::scalbf", "AMP_MATH/Concurrency::scalbn", "AMP_MATH/Concurrency::scalbnf", "AMP_MATH/Concurrency::signbit", "AMP_MATH/Concurrency::signbitf", "AMP_MATH/Concurrency::sin", "AMP_MATH/Concurrency::sincos", "AMP_MATH/Concurrency::sincosf", "AMP_MATH/Concurrency::sinf", "AMP_MATH/Concurrency::sinh", "AMP_MATH/Concurrency::sinhf", "AMP_MATH/Concurrency::sinpi", "AMP_MATH/Concurrency::sinpif", "AMP_MATH/Concurrency::sqrt", "AMP_MATH/Concurrency::sqrtf", "AMP_MATH/Concurrency::tan", "AMP_MATH/Concurrency::tanf", "AMP_MATH/Concurrency::tanh", "AMP_MATH/Concurrency::tanhf", "AMP_MATH/Concurrency::tanpi", "AMP_MATH/Concurrency::tanpif", "AMP_MATH/Concurrency::tgamma", "AMP_MATH/Concurrency::tgammaf", "AMP_MATH/Concurrency::trunc", "AMP_MATH/Concurrency::truncf"]
 dev_langs: ["C++"]
 ms.assetid: ba653308-dc28-4384-b2fd-6cd718a72f91
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Concurrency::precise_math Namespace
@@ -58,8 +53,8 @@ namespace precise_math;
 |[cosf](concurrency-precise-math-namespace-functions.md#cosf)|Calculates the cosine of the argument|  
 |[cosh](concurrency-precise-math-namespace-functions.md#cosh)|Overloaded. Calculates the hyperbolic cosine value of the argument|  
 |[coshf](concurrency-precise-math-namespace-functions.md#coshf)|Calculates the hyperbolic cosine value of the argument|  
-|[cospi](concurrency-precise-math-namespace-functions.md#cospi)|Overloaded. Calculates the cosine value of pi * _X|  
-|[cospif](concurrency-precise-math-namespace-functions.md#cospif)|Calculates the cosine value of pi * _X|  
+|[cospi](concurrency-precise-math-namespace-functions.md#cospi)|Overloaded. Calculates the cosine value of pi \* _X|  
+|[cospif](concurrency-precise-math-namespace-functions.md#cospif)|Calculates the cosine value of pi \* _X|  
 |[erf](concurrency-precise-math-namespace-functions.md#erf)|Overloaded. Computes the error function of _X|  
 |[erfc](concurrency-precise-math-namespace-functions.md#erfc)|Overloaded. Computes the complementary error function of _X|  
 |[erfcf](concurrency-precise-math-namespace-functions.md#erfcf)|Computes the complementary error function of _X|  
@@ -82,8 +77,8 @@ namespace precise_math;
 |[fdimf](concurrency-precise-math-namespace-functions.md#fdimf)|Determines the positive difference between the arguments|  
 |[floor](concurrency-precise-math-namespace-functions.md#floor)|Overloaded. Calculates the floor of the argument|  
 |[floorf](concurrency-precise-math-namespace-functions.md#floorf)|Calculates the floor of the argument|  
-|[fma](concurrency-precise-math-namespace-functions.md#fma)|Overloaded. Compute (_X * _Y) + _Z, rounded as one ternary operation|  
-|[fmaf](concurrency-precise-math-namespace-functions.md#fmaf)|Compute (_X * _Y) + _Z, rounded as one ternary operation|  
+|[fma](concurrency-precise-math-namespace-functions.md#fma)|Overloaded. Compute (_X \* _Y) + _Z, rounded as one ternary operation|  
+|[fmaf](concurrency-precise-math-namespace-functions.md#fmaf)|Compute (_X \* _Y) + _Z, rounded as one ternary operation|  
 |[fmax](concurrency-precise-math-namespace-functions.md#fmax)|Overloaded. Determine the maximum numeric value of the arguments|  
 |[fmaxf](concurrency-precise-math-namespace-functions.md#fmaxf)|Determine the maximum numeric value of the arguments|  
 |[fmin](concurrency-precise-math-namespace-functions.md#fmin)|Overloaded. Determine the minimum numeric value of the arguments|  
@@ -151,16 +146,16 @@ namespace precise_math;
 |[sinf](concurrency-precise-math-namespace-functions.md#sinf)|Calculates the sine value of the argument|  
 |[sinh](concurrency-precise-math-namespace-functions.md#sinh)|Overloaded. Calculates the hyperbolic sine value of the argument|  
 |[sinhf](concurrency-precise-math-namespace-functions.md#sinhf)|Calculates the hyperbolic sine value of the argument|  
-|[sinpi](concurrency-precise-math-namespace-functions.md#sinpi)|Overloaded. Calculates the sine value of pi * _X|  
-|[sinpif](concurrency-precise-math-namespace-functions.md#sinpif)|Calculates the sine value of pi * _X|  
+|[sinpi](concurrency-precise-math-namespace-functions.md#sinpi)|Overloaded. Calculates the sine value of pi \* _X|  
+|[sinpif](concurrency-precise-math-namespace-functions.md#sinpif)|Calculates the sine value of pi \* _X|  
 |[sqrt](concurrency-precise-math-namespace-functions.md#sqrt)|Overloaded. Calculates the squre root of the argument|  
 |[sqrtf](concurrency-precise-math-namespace-functions.md#sqrtf)|Calculates the squre root of the argument|  
 |[tan](concurrency-precise-math-namespace-functions.md#tan)|Overloaded. Calculates the tangent value of the argument|  
 |[tanf](concurrency-precise-math-namespace-functions.md#tanf)|Calculates the tangent value of the argument|  
 |[tanh](concurrency-precise-math-namespace-functions.md#tanh)|Overloaded. Calculates the hyperbolic tangent value of the argument|  
 |[tanhf](concurrency-precise-math-namespace-functions.md#tanhf)|Calculates the hyperbolic tangent value of the argument|  
-|[tanpi](concurrency-precise-math-namespace-functions.md#tanpi)|Overloaded. Calculates the tangent value of pi * _X|  
-|[tanpif](concurrency-precise-math-namespace-functions.md#tanpif)|Calculates the tangent value of pi * _X|  
+|[tanpi](concurrency-precise-math-namespace-functions.md#tanpi)|Overloaded. Calculates the tangent value of pi \* _X|  
+|[tanpif](concurrency-precise-math-namespace-functions.md#tanpif)|Calculates the tangent value of pi \* _X|  
 |[tgamma](concurrency-precise-math-namespace-functions.md#tgamma)|Overloaded. Computes the gamma function of _X|  
 |[tgammaf](concurrency-precise-math-namespace-functions.md#tgammaf)|Computes the gamma function of _X|  
 |[trunc](concurrency-precise-math-namespace-functions.md#trunc)|Overloaded. Truncates the argument to the integer component|  

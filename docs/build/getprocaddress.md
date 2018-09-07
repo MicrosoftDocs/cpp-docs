@@ -2,23 +2,18 @@
 title: "GetProcAddress | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["GetProcAddress"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["DLLs [C++], GetProcAddress", "ordinal exports [C++]", "GetProcAddress method"]
 ms.assetid: 48d14ae0-47ea-4c5d-96b1-2c158f1a26af
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # GetProcAddress
-Processes explicitly linking to a DLL call [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212) to obtain the address of an exported function in the DLL. You use the returned function pointer to call the DLL function. **GetProcAddress** takes as parameters the DLL module handle (returned by either **LoadLibrary**, `AfxLoadLibrary`, or **GetModuleHandle**) and takes either the name of the function you want to call or the function's export ordinal.  
+Processes explicitly linking to a DLL call [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212) to obtain the address of an exported function in the DLL. You use the returned function pointer to call the DLL function. **GetProcAddress** takes as parameters the DLL module handle (returned by either **LoadLibrary**, `AfxLoadLibrary`, or **GetModuleHandle**) and takes either the name of the function you want to call or the function's export ordinal.  
   
  Because you are calling the DLL function through a pointer and there is no compile-time type checking, make sure that the parameters to the function are correct so that you do not overstep the memory allocated on the stack and cause an access violation. One way to help provide type-safety is to look at the function prototypes of the exported functions and create matching typedefs for the function pointers. For example:  
   
@@ -64,7 +59,7 @@ if (hDLL != NULL)
   
 -   [LoadLibrary and AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)  
   
--   [FreeLibrary](http://msdn.microsoft.com/library/windows/desktop/ms683152)  
+-   [FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152)  
   
 -   [Exporting from a DLL Using DEF Files](../build/exporting-from-a-dll-using-def-files.md)  
   

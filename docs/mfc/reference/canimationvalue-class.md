@@ -2,19 +2,14 @@
 title: "CAnimationValue Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue::CAnimationValue", "AFXANIMATIONCONTROLLER/CAnimationValue::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationValue::GetValue", "AFXANIMATIONCONTROLLER/CAnimationValue::GetVariable", "AFXANIMATIONCONTROLLER/CAnimationValue::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationValue::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationValue::m_value"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationValue [MFC], CAnimationValue", "CAnimationValue [MFC], AddTransition", "CAnimationValue [MFC], GetValue", "CAnimationValue [MFC], GetVariable", "CAnimationValue [MFC], SetDefaultValue", "CAnimationValue [MFC], GetAnimationVariableList", "CAnimationValue [MFC], m_value"]
 ms.assetid: 78c5ae19-ede5-4f20-bfbe-68b467b603c2
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationValue Class
@@ -84,7 +79,7 @@ void AddTransition(CBaseTransition* pTransition);
 ```  
   
 ### Parameters  
- `pTransition`  
+ *pTransition*  
  A pointer to transition object.  
   
 ### Remarks  
@@ -105,16 +100,16 @@ CAnimationValue(
 ```  
   
 ### Parameters  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Specifies default value.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  specifies user-defined data.  
   
 ### Remarks  
@@ -130,7 +125,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains a pointer to CAnimationVariable representing the animated value.  
   
 ##  <a name="getvalue"></a>  CAnimationValue::GetValue  
@@ -142,10 +137,10 @@ BOOL GetValue(INT32& nValue);
 ```  
   
 ### Parameters  
- `dblValue`  
+ *dblValue*  
  Output. When the function returns it contains a current value of animation variable.  
   
- `nValue`  
+ *nValue*  
  Output. When the function returns it contains a current value of animation variable.  
   
 ### Return Value  
@@ -209,10 +204,10 @@ void operator=(INT32 nVal);
 ```  
   
 ### Parameters  
- `dblVal`  
+ *dblVal*  
  Specifies the value to be assigned to Animation Value.  
   
- `nVal`  
+ *nVal*  
  Specifies the value to be assigned to Animation Value.  
   
 ### Remarks  
@@ -226,7 +221,7 @@ void SetDefaultValue(DOUBLE dblDefaultValue);
 ```  
   
 ### Parameters  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Specifies the default value.  
   
 ### Remarks  

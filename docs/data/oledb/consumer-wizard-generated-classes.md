@@ -2,18 +2,13 @@
 title: "Consumer Wizard-Generated Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["attribute-injected classes and methods", "wizard-generated classes and methods", "OLE DB consumers, wizard-generated classes and methods", "command classes in OLE DB consumer", "classes [C++], OLE DB Consumer Wizard-generated", "consumer wizard-generated classes and methods", "user record classes in OLE DB consumer"]
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Consumer Wizard-Generated Classes
@@ -35,9 +30,9 @@ When you use the ATL OLE DB Consumer Wizard to generate a consumer, you have the
 >  If you modify the user record class or write your own consumer, the data variables must come before the status and length variables.  
   
 > [!NOTE]
->  The ATL OLE DB Consumer Wizard uses the **DB_NUMERIC** type to bind numeric data types. It formerly used **DBTYPE_VARNUMERIC** (the format of which is described by the **DB_VARNUMERIC** type; see Oledb.h). If you do not use the wizard to create consumers, it is recommended that you use **DB_NUMERIC**.  
+>  The ATL OLE DB Consumer Wizard uses the `DB_NUMERIC` type to bind numeric data types. It formerly used `DBTYPE_VARNUMERIC` (the format of which is described by the `DB_VARNUMERIC` type; see Oledb.h). If you do not use the wizard to create consumers, it is recommended that you use `DB_NUMERIC`.  
   
-```  
+```cpp  
 // Products.H : Declaration of the CProducts class  
   
 class CProductsAccessor  
@@ -83,7 +78,7 @@ public:
 ### Rowset Properties  
  Next, the wizard sets rowset properties. If you selected **Change**, **Insert**, or **Delete** in the ATL OLE DB Consumer Wizard, the appropriate properties are set here (DBPROP_IRowsetChange is always set, then one or more of DBPROPVAL_UP_CHANGE, DBPROPVAL_UP_INSERT, and/or DBPROPVAL_UP_DELETE, respectively).  
   
-```  
+```cpp  
 void GetRowsetProperties(CDBPropSet* pPropSet)  
 {  
    pPropSet->AddProperty(DBPROP_CANFETCHBACKWARDS, true, DBPROPOPTIONS_OPTIONAL);  
@@ -96,7 +91,7 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
 ### Command or Table Class  
  If you specify a command class, the wizard declares the command class; for templated code, the command looks like this:  
   
-```  
+```cpp  
 DEFINE_COMMAND_EX(CProductsAccessor, L" \  
 SELECT \  
    ProductID, \  
@@ -134,8 +129,8 @@ SELECT \
 ### Class Declaration  
  Finally, the wizard generates a command class declaration such as the following:  
   
-```  
-class CProducts : public CCommand<CAccessor<CProductsAccessor> >  
+```cpp  
+class CProducts : public CCommand<CAccessor<CProductsAccessor>>  
 ```  
   
 ## Attribute-Injected User Record Classes  
@@ -145,7 +140,7 @@ class CProducts : public CCommand<CAccessor<CProductsAccessor> >
   
  In the following example, the wizard generates a declaration for the class `COrders`, but the user record class `COrdersAccessor` does not appear, because the attributes inject it.  
   
-```  
+```cpp  
 #define _ATL_ATTRIBUTES  
 #include <atlbase.h>  
 #include <atldbcli.h>  
@@ -168,7 +163,7 @@ public:
  The injected command class declaration looks like this:  
   
 ```  
-class CProducts : public CCommand<CAccessor<_CProductsAccessor> >  
+class CProducts : public CCommand<CAccessor<_CProductsAccessor>>  
 ```  
   
  Most of the injected code is the same as or similar to the templated version. The main differences are in the injected methods, which are described in [Consumer Wizard-Generated Methods](../../data/oledb/consumer-wizard-generated-methods.md).  

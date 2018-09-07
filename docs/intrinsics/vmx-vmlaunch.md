@@ -2,19 +2,14 @@
 title: "__vmx_vmlaunch | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__vmx_vmlaunch"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["VMLAUNCH instruction", "__vmx_vmlaunch intrinsic"]
 ms.assetid: 708f7c38-b7c1-4ee7-bfc4-0daeb9cc9360
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __vmx_vmlaunch
@@ -40,13 +35,13 @@ unsigned char __vmx_vmlaunch(
 ## Remarks  
  An application can perform a VM-enter operation by using either the [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) or [__vmx_vmresume](../intrinsics/vmx-vmresume.md) function. The [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) function can be used only with a VMCS whose launch state is `Clear`, and the [__vmx_vmresume](../intrinsics/vmx-vmresume.md) function can be used only with a VMCS whose launch state is `Launched`. Consequently, use the [__vmx_vmclear](../intrinsics/vmx-vmclear.md) function to set the launch state of a VMCS to `Clear`, and then use the [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) function for your first VM-enter operation and the [__vmx_vmresume](../intrinsics/vmx-vmresume.md) function for subsequent VM-enter operations.  
   
- The `__vmx_vmlaunch` function is equivalent to the `VMLAUNCH` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," document number C97063-002, at the [Intel Corporation](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ The `__vmx_vmlaunch` function is equivalent to the `VMLAUNCH` machine instruction. This function supports the interaction of a host's virtual machine monitor with a guest operating system and its applications. For more information, search for the document, "Intel Virtualization Technical Specification for the IA-32 Intel Architecture," document number C97063-002, at the [Intel Corporation](https://software.intel.com/en-us/articles/intel-sdm) site.  
   
 ## Requirements  
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__vmx_vmlaunch`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__vmx_vmlaunch`|x64|  
   
  **Header file** \<intrin.h>  
   

@@ -2,19 +2,14 @@
 title: "COleDropSource Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleDropSource", "AFXOLE/COleDropSource", "AFXOLE/COleDropSource::COleDropSource", "AFXOLE/COleDropSource::GiveFeedback", "AFXOLE/COleDropSource::OnBeginDrag", "AFXOLE/COleDropSource::QueryContinueDrag"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleDropSource [MFC], COleDropSource", "COleDropSource [MFC], GiveFeedback", "COleDropSource [MFC], OnBeginDrag", "COleDropSource [MFC], QueryContinueDrag"]
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleDropSource Class
@@ -49,7 +44,7 @@ class COleDropSource : public CCmdTarget
   
  For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
- For more information, see [IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071) in the Windows SDK.  
+ For more information, see [IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -76,26 +71,26 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
 ```  
   
 ### Parameters  
- `dropEffect`  
+ *dropEffect*  
  The effect you would like to display to the user, usually indicating what would happen if a drop occurred at this point with the selected data. Typically, this is the value returned by the most recent call to [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter) or [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover). It can be one or more of the following:  
   
-- `DROPEFFECT_NONE` A drop would not be allowed.  
+- DROPEFFECT_NONE A drop would not be allowed.  
   
-- `DROPEFFECT_COPY` A copy operation would be performed.  
+- DROPEFFECT_COPY A copy operation would be performed.  
   
-- `DROPEFFECT_MOVE` A move operation would be performed.  
+- DROPEFFECT_MOVE A move operation would be performed.  
   
-- `DROPEFFECT_LINK` A link from the dropped data to the original data would be established.  
+- DROPEFFECT_LINK A link from the dropped data to the original data would be established.  
   
-- `DROPEFFECT_SCROLL` A drag scroll operation is about to occur or is occurring in the target.  
+- DROPEFFECT_SCROLL A drag scroll operation is about to occur or is occurring in the target.  
   
 ### Return Value  
- Returns **DRAGDROP_S_USEDEFAULTCURSORS** if dragging is in progress, **NOERROR** if it is not.  
+ Returns DRAGDROP_S_USEDEFAULTCURSORS if dragging is in progress, NOERROR if it is not.  
   
 ### Remarks  
  Override this function to provide feedback to the user about what would happen if a drop occurred at this point. The default implementation uses the OLE default cursors. For more information on drag-and-drop operations using OLE, see the article [Drag and Drop (OLE)](../../mfc/drag-and-drop-ole.md).  
   
- For more information, see [IDropSource::GiveFeedback](http://msdn.microsoft.com/library/windows/desktop/ms693723), [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129), and [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) in the Windows SDK.  
+ For more information, see [IDropSource::GiveFeedback](/windows/desktop/api/oleidl/nf-oleidl-idropsource-givefeedback), [IDropTarget::DragOver](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragover), and [IDropTarget::DragEnter](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragenter) in the Windows SDK.  
   
 ##  <a name="onbegindrag"></a>  COleDropSource::OnBeginDrag  
  Called by the framework when an event occurs that could begin a drag operation, such as pressing the left mouse button.  
@@ -105,7 +100,7 @@ virtual BOOL OnBeginDrag(CWnd* pWnd);
 ```  
   
 ### Parameters  
- `pWnd`  
+ *pWnd*  
  Points to the window that contains the selected data.  
   
 ### Return Value  
@@ -127,16 +122,16 @@ virtual SCODE QueryContinueDrag(
  *bEscapePressed*  
  States whether the ESC key has been pressed since the last call to `COleDropSource::QueryContinueDrag`.  
   
- `dwKeyState`  
- Contains the state of the modifier keys on the keyboard. This is a combination of any number of the following: **MK_CONTROL**, **MK_SHIFT**, **MK_ALT**, **MK_LBUTTON**, **MK_MBUTTON**, and **MK_RBUTTON**.  
+ *dwKeyState*  
+ Contains the state of the modifier keys on the keyboard. This is a combination of any number of the following: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, and MK_RBUTTON.  
   
 ### Return Value  
- **DRAGDROP_S_CANCEL** if the ESC key or right button is pressed, or left button is raised before dragging starts. **DRAGDROP_S_DROP** if a drop operation should occur. Otherwise `S_OK`.  
+ DRAGDROP_S_CANCEL if the ESC key or right button is pressed, or left button is raised before dragging starts. DRAGDROP_S_DROP if a drop operation should occur. Otherwise S_OK.  
   
 ### Remarks  
  Override this function if you want to change the point at which dragging is canceled or a drop occurs.  
   
- The default implementation initiates the drop or cancels the drag as follows. It cancels a drag operation when the ESC key or the right mouse button is pressed. It initiates a drop operation when the left mouse button is raised after dragging has started. Otherwise, it returns `S_OK` and performs no further operations.  
+ The default implementation initiates the drop or cancels the drag as follows. It cancels a drag operation when the ESC key or the right mouse button is pressed. It initiates a drop operation when the left mouse button is raised after dragging has started. Otherwise, it returns S_OK and performs no further operations.  
   
  Because this function is called frequently, it should be optimized as much as possible.  
   

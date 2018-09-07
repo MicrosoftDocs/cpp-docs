@@ -2,18 +2,13 @@
 title: "Explicit Overrides (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["virtual functions [C++], explicit overrides", "overriding, functions", "derived classes [C++], virtual functions", "explicit virtual function overrides", "explicit override of virtual function"]
 ms.assetid: ee583234-5cda-4e90-b55e-3f9fbf079ced
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Explicit Overrides (C++)
@@ -28,7 +23,7 @@ ms.workload: ["cplusplus"]
 ## Example  
  The following code example illustrates how to use explicit overrides:  
   
-```  
+```cpp 
 // deriv_ExplicitOverrides.cpp  
 // compile with: /GR  
 extern "C" int printf_s(const char *, ...);  
@@ -118,5 +113,5 @@ In CMyClass::IMyInt2::mf2()
 In CMyClass::IMyInt2::mf2(int)  
 ```  
   
-## See Also  
+## See also  
  [Inheritance](../cpp/inheritance-cpp.md)

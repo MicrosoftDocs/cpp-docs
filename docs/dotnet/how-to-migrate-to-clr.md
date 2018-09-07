@@ -1,19 +1,14 @@
 ---
 title: "How to: Migrate to -clr | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["upgrading Visual C++ applications, /clr compiler option", "compiling native code [C++]", "interoperability [C++], /clr compiler option", "interop [C++], /clr compiler option", "migration [C++], /clr compiler option", "/clr compiler option [C++], porting to"]
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Migrate to /clr
@@ -79,7 +74,7 @@ COMObj2->Method(args);  // C++ equivalent
  After your project compiles and runs in Visual Studio 2010 you should create new project configurations for **/clr** rather than modifying the default configurations. **/clr** is incompatible with some compiler options and creating separate configurations lets you build your project as native or managed. When **/clr** is selected in the property pages dialog box, project settings not compatible with **/clr** are disabled (and disabled options are not automatically restored if **/clr** is subsequently unselected).  
   
 ### Create New Project Configurations  
- You can use **Copy Settings From** option in the [New Project Configuration Dialog Box](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be) to create a project configuration based on your existing project settings. Do this once for the Debug configuration and once for Release configuration. Subsequent changes can then be applied to the **/clr** -specific configurations only, leaving the original project configurations intact.  
+ You can use **Copy Settings From** option in the **New Project Configuration Dialog Box** (**Build** > **Configuration Manager** > **Active Solution Configuration** > **New**) to create a project configuration based on your existing project settings. Do this once for the Debug configuration and once for Release configuration. Subsequent changes can then be applied to the **/clr** -specific configurations only, leaving the original project configurations intact.  
   
  Projects that use custom build rules may require extra attention.  
   
@@ -134,7 +129,7 @@ COMObj2->Method(args);  // C++ equivalent
 ## Using New Visual C++ Features  
  After your application compiles, links, and runs, you can begin using .NET features in any module compiled with **/clr**. For more information, see [Component Extensions for Runtime Platforms](../windows/component-extensions-for-runtime-platforms.md).  
   
- If you used Managed Extensions for C++, you can convert your code to use the new syntax. For a summary of syntactical differences, see the [(NOTINBUILD)Managed Extensions for C++ Syntax Upgrade Checklist](http://msdn.microsoft.com/en-us/edbded88-7ef3-4757-bd9d-b8f48ac2aada). For details on converting Managed Extensions for C++, see [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md).  
+ If you used Managed Extensions for C++, you can convert your code to use the new syntax. For details on converting Managed Extensions for C++, see [C++/CLI Migration Primer](../dotnet/cpp-cli-migration-primer.md).  
   
  For information on .NET programming in Visual C++ see:  
   

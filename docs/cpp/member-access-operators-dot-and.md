@@ -2,19 +2,14 @@
 title: "Member Access Operators: . and -&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: [".", "->"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["member access, expressions", "operators [C++], member access", "dot operator (.)", "-> operator", "member access, operators", "postfix operators [C++]", ". operator", "member access"]
 ms.assetid: f8fc3df9-d728-40c5-b384-276927f5f1b3
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Member Access Operators: . and -&gt;
@@ -32,12 +27,12 @@ postfix-expression -> name
   
 1.  In the first form, *postfix-expression* represents a value of struct, class, or union type, and *name* names a member of the specified structure, union, or class. The value of the operation is that of *name* and is an l-value if *postfix-expression* is an l-value.  
   
-2.  In the second form, *postfix-expression* represents a pointer to a structure, union, or class, and *name* names a member of the specified structure, union, or class. The value is that of *name* and is an l-value. The **->** operator dereferences the pointer. Therefore, the expressions *e***->**`member` and **(\****e***)**.`member` (where *e* represents a pointer) yield identical results (except when the operators **->** or **\*** are overloaded).  
+2.  In the second form, *postfix-expression* represents a pointer to a structure, union, or class, and *name* names a member of the specified structure, union, or class. The value is that of *name* and is an l-value. The **->** operator dereferences the pointer. Therefore, the expressions `e->member` and `(*e).member` (where *e* represents a pointer) yield identical results (except when the operators **->** or <strong>\*</strong> are overloaded).  
   
 ## Example  
  The following example demonstrates both forms of the member access operator.  
   
-```  
+```cpp 
 // expre_Selection_Operator.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -69,7 +64,7 @@ int main() {
 2/1/2000  
 ```  
   
-## See Also  
+## See also  
  [Postfix Expressions](../cpp/postfix-expressions.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)   

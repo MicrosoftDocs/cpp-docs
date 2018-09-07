@@ -2,19 +2,14 @@
 title: "ICommandTarget Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["ICommandTarget", "AFXWINFORMS/ICommandTarget", "AFXWINFORMS/ICommandTarget::Initialize"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandTarget interface [MFC]"]
 ms.assetid: dd9927f6-3479-4e7c-8ef9-13206cf901f3
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ICommandTarget Interface
@@ -52,7 +47,7 @@ void Initialize(ICommandSource^ cmdSource);
 ```  
   
 ### Parameters  
- `cmdSource`  
+ *cmdSource*  
  A handle to the command source object.  
   
 ### Remarks  

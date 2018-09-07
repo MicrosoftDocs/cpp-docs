@@ -1,19 +1,14 @@
 ---
 title: "How to: Marshal Function Pointers Using PInvoke | Microsoft Docs"
-ms.custom: ""
+ms.custom: "get-started-article"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data marshaling [C++], callbacks and delegates", "interop [C++], callbacks and delegates", "platform invoke [C++], callbacks and delegates", "marshaling [C++], callbacks and delegates"]
 ms.assetid: dcf396fd-a91d-49c0-ab0b-1ea160668a89
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # How to: Marshal Function Pointers Using PInvoke
@@ -31,8 +26,6 @@ This topic explains how managed delegates can be used in place of function point
  The managed module defines a delegate that is marshaled to the native code as a function pointer and uses the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute to expose the native TakesCallback function to the managed code. In the main function, an instance of the delegate is created and passed to the TakesCallback function. The program output demonstrates that this function gets executed by the native TakesCallback function.  
   
  The managed function suppresses garbage collection for the managed delegate to prevent .NET Framework garbage collection from relocating the delegate while the native function executes.  
-  
- The managed module is compiled with /clr, but /clr:pure works as well. The **/clr:pure** and **/clr:safe** compiler options are deprecated in Visual Studio 2015.  
   
 ```cpp  
 // TraditionalDll5.cpp  

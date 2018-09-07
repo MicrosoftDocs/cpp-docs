@@ -2,18 +2,13 @@
 title: "How to: Build Registration-Free COM Components | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["COM components, registration-free"]
 ms.assetid: 7e585d6a-0314-45b2-8f1b-cae9ac4df037
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Build Registration-Free COM Components
@@ -32,6 +27,6 @@ Registration-free COM components are COM components that have manifests built in
 5.  Build the solution.  
   
 ## See Also  
- [Isolated Applications](http://msdn.microsoft.com/library/aa375190)   
- [About Side-by-Side Assemblies](http://msdn.microsoft.com/library/ff951640)   
+ [Isolated Applications](/windows/desktop/SbsCs/isolated-applications)   
+ [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-)   
  [How to: Build Isolated Applications to Consume COM Components](../build/how-to-build-isolated-applications-to-consume-com-components.md)

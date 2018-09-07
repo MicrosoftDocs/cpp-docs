@@ -2,19 +2,14 @@
 title: "CConstantTransition Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::CConstantTransition", "AFXANIMATIONCONTROLLER/CConstantTransition::Create", "AFXANIMATIONCONTROLLER/CConstantTransition::m_duration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CConstantTransition [MFC], CConstantTransition", "CConstantTransition [MFC], Create", "CConstantTransition [MFC], m_duration"]
 ms.assetid: f6fa4780-a71b-4cd6-80aa-d4792ace36c2
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CConstantTransition Class
@@ -67,7 +62,7 @@ CConstantTransition (UI_ANIMATION_SECONDS duration);
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
 ##  <a name="create"></a>  CConstantTransition::Create  
@@ -80,8 +75,8 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
- A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
+ *pLibrary*  
+ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), which defines a library of standard transitions.  
 
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  

@@ -2,21 +2,16 @@
 title: "_spawn, _wspawn Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apilocation: ["msvcr80.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcrt.dll", "msvcr120.dll", "msvcr100.dll", "msvcr90.dll"]
 apitype: "DLLExport"
 f1_keywords: ["_spawn", "_tspawnlp", "_tspawnlpe", "_tspawnve", "_tspawnvp", "_tspawnvpe", "_tspawnl", "spawn", "_tspawnv", "_tspawnle", "wspawn"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_tspawnve function", "_spawn functions", "_tspawnlpe function", "tspawnvpe function", "processes, creating", "tspawnve function", "_tspawnvp function", "spawn functions", "tspawnl function", "tspawnlp function", "_tspawnvpe function", "_tspawnl function", "tspawnvp function", "tspawnv function", "processes, executing new", "_tspawnv function", "tspawnle function", "process creation", "_tspawnlp function", "tspawnlpe function", "_tspawnle function"]
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-caps.latest.revision: 26
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _spawn, _wspawn Functions
@@ -91,16 +86,16 @@ Each of the `_spawn` functions creates and executes a new process:
 >  Spaces embedded in strings may cause unexpected behavior; for example, passing `_spawn` the string `"hi there"` will result in the new process getting two arguments, `"hi"` and `"there"`. If the intent was to have the new process open a file named "hi there", the process would fail. You can avoid this by quoting the string: `"\"hi there\""`.  
   
 > [!IMPORTANT]
->  Do not pass user input to `_spawn` without explicitly checking its content. `_spawn` will result in a call to [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425) so keep in mind that unqualified path names could lead to potential security vulnerabilities.  
+>  Do not pass user input to `_spawn` without explicitly checking its content. `_spawn` will result in a call to [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) so keep in mind that unqualified path names could lead to potential security vulnerabilities.  
   
  You can pass argument pointers as separate arguments (in `_spawnl`, `_spawnle`, `_spawnlp`, and `_spawnlpe`) or as an array of pointers (in `_spawnv`, `_spawnve`, `_spawnvp`, and `_spawnvpe`). You must pass at least one argument, `arg0` or `argv`[0], to the spawned process. By convention, this argument is the name of the program as you would type it on the command line. A different value does not produce an error.  
   
- The `_spawnl`, `_spawnle`, `_spawnlp`, and `_spawnlpe` calls are typically used in cases where the number of arguments is known in advance. The `arg0` argument is usually a pointer to `cmdname`. The arguments `arg1` through `argn` are pointers to the character strings forming the new argument list. Following `argn`, there must be a `NULL` pointer to mark the end of the argument list.  
+ The `_spawnl`, `_spawnle`, `_spawnlp`, and `_spawnlpe` calls are typically used in cases where the number of arguments is known in advance. The `arg0` argument is usually a pointer to `cmdname`. The arguments `arg1` through `argn` are pointers to the character strings forming the new argument list. Following `argn`, there must be a **NULL** pointer to mark the end of the argument list.  
   
- The `_spawnv`, `_spawnve`, `_spawnvp`, and `_spawnvpe` calls are useful when there is a variable number of arguments to the new process. Pointers to the arguments are passed as an array, `argv`*.* The argument `argv`[0] is usually a pointer to a path in real mode or to the program name in protected mode, and `argv`[1] through `argv`[`n`] are pointers to the character strings forming the new argument list. The argument `argv`[`n` +1] must be a `NULL` pointer to mark the end of the argument list.  
+ The `_spawnv`, `_spawnve`, `_spawnvp`, and `_spawnvpe` calls are useful when there is a variable number of arguments to the new process. Pointers to the arguments are passed as an array, `argv`*.* The argument `argv`[0] is usually a pointer to a path in real mode or to the program name in protected mode, and `argv`[1] through `argv`[`n`] are pointers to the character strings forming the new argument list. The argument `argv`[`n` +1] must be a **NULL** pointer to mark the end of the argument list.  
   
 ## Environment of the Spawned Process  
- Files that are open when a `_spawn` call is made remain open in the new process. In the `_spawnl`, `_spawnlp`, `_spawnv`, and `_spawnvp` calls, the new process inherits the environment of the calling process. You can use the `_spawnle`, `_spawnlpe`, `_spawnve`, and `_spawnvpe` calls to alter the environment for the new process by passing a list of environment settings through the `envp` argument. The argument `envp` is an array of character pointers, each element (except the final element) of which points to a null-terminated string defining an environment variable. Such a string usually has the form `NAME`=`value` where `NAME` is the name of an environment variable and `value` is the string value to which that variable is set. (Note that `value` is not enclosed in double quotation marks.) The final element of the `envp` array should be `NULL`. When `envp` itself is `NULL`, the spawned process inherits the environment settings of the parent process.  
+ Files that are open when a `_spawn` call is made remain open in the new process. In the `_spawnl`, `_spawnlp`, `_spawnv`, and `_spawnvp` calls, the new process inherits the environment of the calling process. You can use the `_spawnle`, `_spawnlpe`, `_spawnve`, and `_spawnvpe` calls to alter the environment for the new process by passing a list of environment settings through the `envp` argument. The argument `envp` is an array of character pointers, each element (except the final element) of which points to a null-terminated string defining an environment variable. Such a string usually has the form `NAME`=`value` where `NAME` is the name of an environment variable and `value` is the string value to which that variable is set. (Note that `value` is not enclosed in double quotation marks.) The final element of the `envp` array should be **NULL**. When `envp` itself is **NULL**, the spawned process inherits the environment settings of the parent process.  
   
  The `_spawn` functions can pass all information about open files, including the translation mode, to the new process. This information is passed in real mode through the `C_FILE_INFO` entry in the environment. The startup code normally processes this entry and then deletes it from the environment. However, if a `_spawn` function spawns a non-C process, this entry remains in the environment. Printing the environment shows graphics characters in the definition string for this entry because the environment information is passed in binary form in real mode. It should not have any other effect on normal operations. In protected mode, the environment information is passed in text form and therefore contains no graphics characters.  
   
@@ -111,7 +106,7 @@ Each of the `_spawn` functions creates and executes a new process:
 ## Redirecting Output  
  If you are calling `_spawn` from a DLL or a GUI application and want to redirect the output to a pipe, you have two options:  
   
--   Use the Win32 API to create a pipe, then call [AllocConsole](http://msdn.microsoft.com/library/windows/desktop/ms681944), set the handle values in the startup structure, and call [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425).  
+-   Use the Win32 API to create a pipe, then call [AllocConsole](https://msdn.microsoft.com/library/windows/desktop/ms681944), set the handle values in the startup structure, and call [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).  
   
 -   Call [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md) which will create a pipe and invoke the app using **cmd.exe /c** (or **command.exe /c**).  
   

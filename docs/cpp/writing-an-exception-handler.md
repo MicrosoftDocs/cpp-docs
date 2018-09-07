@@ -2,18 +2,13 @@
 title: "Writing an Exception Handler | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["structured exception handling [C++], exception handlers", "exception handling [C++], exception handlers"]
 ms.assetid: 71473fee-f773-4a34-bf12-82a3af79579c
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Writing an Exception Handler
@@ -33,5 +28,5 @@ Exception handlers are typically used to respond to specific errors. You can use
   
 -   [Restrictions on exception handlers](../cpp/restrictions-on-exception-handlers.md)  
   
-## See Also  
+## See also  
  [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

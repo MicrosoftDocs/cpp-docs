@@ -1,19 +1,14 @@
 ---
 title: "Statements (C++) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["statements [C++], C++"]
 ms.assetid: 7028fddf-0d47-469a-a7df-f8576423e066
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Statements (C++)
@@ -37,9 +32,9 @@ C++ statements are the program elements that control how and in what order objec
   
     -   [Jump statements](../cpp/jump-statements-cpp.md). These statements either transfer control immediately to another location in the function or return control from the function.  
   
-    -   [Declaration statements](http://msdn.microsoft.com/en-us/14538558-356f-450e-9e1e-3cd62ba952b9). Declarations introduce a name into a program. ([Declarations and Definitions](declarations-and-definitions-cpp.md) provides more detailed information about declarations.)  
+    -   [Declaration statements](declarations-and-definitions-cpp.md). Declarations introduce a name into a program.  
   
  For information on exception handling statements see [Exception Handling](../cpp/exception-handling-in-visual-cpp.md).  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

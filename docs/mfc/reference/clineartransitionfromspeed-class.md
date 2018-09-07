@@ -2,19 +2,14 @@
 title: "CLinearTransitionFromSpeed Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CLinearTransitionFromSpeed", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::CLinearTransitionFromSpeed", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::Create", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CLinearTransitionFromSpeed::m_dblSpeed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CLinearTransitionFromSpeed [MFC], CLinearTransitionFromSpeed", "CLinearTransitionFromSpeed [MFC], Create", "CLinearTransitionFromSpeed [MFC], m_dblFinalValue", "CLinearTransitionFromSpeed [MFC], m_dblSpeed"]
 ms.assetid: 8f159a1c-8893-4017-951e-09e5758aba7d
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CLinearTransitionFromSpeed Class
@@ -70,10 +65,10 @@ CLinearTransitionFromSpeed(
 ```  
   
 ### Parameters  
- `dblSpeed`  
+ *dblSpeed*  
  The absolute value of the variable's velocity.  
   
- `dblFinalValue`  
+ *dblFinalValue*  
  The value of the animation variable at the end of the transition.  
   
 ##  <a name="create"></a>  CLinearTransitionFromSpeed::Create  
@@ -86,8 +81,8 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
-`pLibrary`  
- A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
+*pLibrary*  
+ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), which defines a library of standard transitions.  
   
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  

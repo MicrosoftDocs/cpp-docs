@@ -2,27 +2,22 @@
 title: "CNoAccessor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 f1_keywords: ["ATL::CNoAccessor", "CNoAccessor", "ATL.CNoAccessor"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CNoAccessor class"]
 ms.assetid: eb669ae5-0a56-49a3-9646-c4ae6239da31
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # CNoAccessor Class
 Can be used as a template argument (`TAccessor`) for template classes, such as `CCommand` and `CTable`, that require an accessor class argument.  
   
-## Syntax  
-  
-```  
+## Syntax
+
+```cpp
 class CNoAccessor  
 ```  
   
@@ -31,13 +26,13 @@ class CNoAccessor
   
  `CNoAccessor` implements the following stub methods, each of which correspond to other accessor class methods:  
   
--   **BindColumns** - Binds columns to accessors.  
+-   `BindColumns` - Binds columns to accessors.  
   
 -   `BindParameters` - Binds the created parameters to columns.  
   
--   **Bind** - Creates bindings.  
+-   `Bind` - Creates bindings.  
   
--   **Close** - Closes the accessor.  
+-   `Close` - Closes the accessor.  
   
 -   `ReleaseAccessors` - Releases the accessors created by the class.  
   
@@ -53,7 +48,7 @@ class CNoAccessor
   
 -   `GetBuffer` - Retrieves the pointer to the bookmark buffer.  
   
--   **NoBindOnNullRowset** - Prevents data binding on empty rowsets.  
+-   `NoBindOnNullRowset` - Prevents data binding on empty rowsets.  
   
 ## Requirements  
  **Header:** atldbcli.h  

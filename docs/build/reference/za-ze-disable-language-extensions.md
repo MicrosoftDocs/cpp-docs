@@ -2,19 +2,14 @@
 title: "-Za, -Ze (Disable Language Extensions) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLWCECompilerTool.DisableLanguageExtensions", "/za", "/ze", "VC.Project.VCCLCompilerTool.DisableLanguageExtensions"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-Za compiler option [C++]", "Za compiler option [C++]", "language extensions, disabling in compiler", "-Ze compiler option [C++]", "language extensions", "enable language extensions", "/Za compiler option [C++]", "/Ze compiler option [C++]", "Disable Language Extensions compiler option", "Ze compiler option [C++]"]
 ms.assetid: 65e49258-7161-4289-a176-7c5c0656b1a2
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /Za, /Ze (Disable Language Extensions)
@@ -32,7 +27,7 @@ The **/Za** compiler option emits an error for language constructs that are not 
 > [!NOTE]
 >  The **/Ze** option is deprecated because its behavior is on by default. We recommend you use the [/Zc (Conformance)](../../build/reference/zc-conformance.md) compiler options to control specific language extension features. For a list of deprecated compiler options, see the **Deprecated and Removed Compiler Options** section in [Compiler Options Listed by Category](../../build/reference/compiler-options-listed-by-category.md).  
   
- The [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] compiler offers a number of features beyond those specified in either the ANSI C89, ISO C99, or ISO C++ standards. These features are known collectively as Microsoft extensions to C and C++. These extensions are available by default, and not available when the **/Za** option is specified. For more information about specific extensions, see [Microsoft Extensions to C and C++](../../build/reference/microsoft-extensions-to-c-and-cpp.md).  
+ The Visual C++ compiler offers a number of features beyond those specified in either the ANSI C89, ISO C99, or ISO C++ standards. These features are known collectively as Microsoft extensions to C and C++. These extensions are available by default, and not available when the **/Za** option is specified. For more information about specific extensions, see [Microsoft Extensions to C and C++](../../build/reference/microsoft-extensions-to-c-and-cpp.md).  
   
  We recommend that you disable language extensions by specifying the **/Za** option if you plan to port your program to other environments. When **/Za** is specified, the compiler treats Microsoft extended keywords as simple identifiers, disables the other Microsoft extensions, and automatically defines the `__STDC__` predefined macro for C programs.  
   
@@ -40,7 +35,7 @@ The **/Za** compiler option emits an error for language constructs that are not 
   
  For ways to specify specific standards-conformant behavior settings, see the [/Zc](../../build/reference/zc-conformance.md) compiler option.  
   
- For more information about conformance issues with [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)], see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).  
+ For more information about conformance issues with Visual C++, see [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).  
   
 ### To set this compiler option in the Visual Studio development environment  
   

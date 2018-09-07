@@ -2,18 +2,13 @@
 title: Porting Data Applications | Microsoft Docs
 ms.custom: ""
 ms.date: "05/12/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["devlang-cpp"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC [C++], data access applications", "databases [C++], MFC", "OLE DB [C++], data access technologies", "data [C++], data access technologies", "data access [C++], class libraries for databases"]
 ms.assetid: 8d10c285-c13f-4e6e-a09e-5ee0f2666b44
-caps.latest.revision: 0
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 
@@ -28,11 +23,12 @@ The SQL Native Client component (SNAC), which packages OLE DB and ODBC drivers i
 
 If you use C++/CLI, you can continue to use ADO.NET as always. For more information, see [Data Access Using ADO.NET (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md), and [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio).  
   
--   In addition to the ODBC wrapper classes, MFC also provides Data Acess Objects (DAO) wrapper classes for connecting to Access databases.  However, DAO is obsolete. Any code based on CDaoDatabase or CDaoRecordset should be upgraded. 
+- In addition to the ODBC wrapper classes, MFC also provides Data Acess Objects (DAO) wrapper classes for connecting to Access databases.  However, DAO is obsolete. Any code based on `CDaoDatabase` or `CDaoRecordset` should be upgraded. 
 
 For more information about the history of data access technologies on Microsoft Windows, see [Microsoft Data Access Components (Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Data_Access_Components).  
 
 ## See Also  
- [Data Access in Visual C++](../data/data-access-in-cpp.md)  
- [Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)  
- [Data Access Technologies Road Map](https://msdn.microsoft.com/en-us/library/ms810810.aspx)  
+ 
+[Data Access in Visual C++](../data/data-access-in-cpp.md)  
+[Microsoft Open Database Connectivity (ODBC)](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc)  
+[Data Access Technologies Road Map](https://msdn.microsoft.com/library/ms810810.aspx)  

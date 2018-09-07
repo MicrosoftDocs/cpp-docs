@@ -2,26 +2,21 @@
 title: "Dynamically Determining Columns Returned to the Consumer | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["bookmarks [C++], dynamically determining columns", "dynamically determining columns [C++]"]
 ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Dynamically Determining Columns Returned to the Consumer
-The PROVIDER_COLUMN_ENTRY macros normally handle the **IColumnsInfo::GetColumnsInfo** call. However, because a consumer might choose to use bookmarks, the provider must be able to change the columns returned depending on whether the consumer asks for a bookmark.  
+The PROVIDER_COLUMN_ENTRY macros normally handle the `IColumnsInfo::GetColumnsInfo` call. However, because a consumer might choose to use bookmarks, the provider must be able to change the columns returned depending on whether the consumer asks for a bookmark.  
   
- To handle the **IColumnsInfo::GetColumnsInfo** call, delete the PROVIDER_COLUMN_MAP, which defines a function `GetColumnInfo`, from the `CAgentMan` user record in MyProviderRS.h and replace it with the definition for your own `GetColumnInfo` function:  
+ To handle the `IColumnsInfo::GetColumnsInfo` call, delete the PROVIDER_COLUMN_MAP, which defines a function `GetColumnInfo`, from the `CAgentMan` user record in MyProviderRS.h and replace it with the definition for your own `GetColumnInfo` function:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
 class CAgentMan  
@@ -44,11 +39,11 @@ public:
   
  Next, implement the `GetColumnInfo` function in MyProviderRS.cpp, as shown in the following code.  
   
- `GetColumnInfo` checks first to see if the OLE DB property **DBPROP_BOOKMARKS** is set. To get the property, `GetColumnInfo` uses a pointer (`pRowset`) to the rowset object. The `pThis` pointer represents the class that created the rowset, which is the class where the property map is stored. `GetColumnInfo` typecasts the `pThis` pointer to an `RMyProviderRowset` pointer.  
+ `GetColumnInfo` checks first to see if the OLE DB property `DBPROP_BOOKMARKS` is set. To get the property, `GetColumnInfo` uses a pointer (`pRowset`) to the rowset object. The `pThis` pointer represents the class that created the rowset, which is the class where the property map is stored. `GetColumnInfo` typecasts the `pThis` pointer to an `RMyProviderRowset` pointer.  
   
- To check for the **DBPROP_BOOKMARKS** property, `GetColumnInfo` uses the `IRowsetInfo` interface, which you can obtain by calling `QueryInterface` on the `pRowset` interface. As an alternative, you can use an ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) method instead.  
+ To check for the `DBPROP_BOOKMARKS` property, `GetColumnInfo` uses the `IRowsetInfo` interface, which you can obtain by calling `QueryInterface` on the `pRowset` interface. As an alternative, you can use an ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) method instead.  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////  
 // MyProviderRS.cpp  
 ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)  
@@ -109,12 +104,11 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
   
  This example uses a static array to contain the column information. If the consumer does not want the bookmark column, one entry in the array is unused. To handle the information, you create two array macros: ADD_COLUMN_ENTRY and ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX takes an extra parameter, `flags`, that is needed if you designate a bookmark column.  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
   
-#define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision,   
-scale, guid, dataClass, member) \  
+#define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \  
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
    _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
    _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  
@@ -125,8 +119,7 @@ scale, guid, dataClass, member) \
    _rgColumns[ulCols].bScale = (BYTE)scale; \  
    _rgColumns[ulCols].cbOffset = offsetof(dataClass, member);  
   
-#define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type,   
-precision, scale, guid, dataClass, member, flags) \  
+#define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member, flags) \  
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
    _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
    _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  
@@ -142,7 +135,7 @@ precision, scale, guid, dataClass, member, flags) \
   
  In the `GetColumnInfo` function, the bookmark macro is used like this:  
   
-```  
+```cpp  
 ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),  
    DBTYPE_BYTES, 0, 0, GUID_NULL, CAgentMan, dwBookmark,   
    DBCOLUMNFLAGS_ISBOOKMARK)  

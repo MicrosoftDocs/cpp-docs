@@ -2,21 +2,16 @@
 title: "operator new(CRT) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apilocation: ["msvcr110_clr0400.dll", "msvcr100.dll", "msvcr120.dll", "msvcr110.dll", "msvcr80.dll", "msvcr90.dll"]
 apitype: "DLLExport"
 f1_keywords: ["new[]"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["operator new[]", "vector new"]
 ms.assetid: 79682f85-6889-40f6-b8f7-9eed5176ea35
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # operator new(CRT)

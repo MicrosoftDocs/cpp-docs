@@ -2,18 +2,13 @@
 title: "OLE DB Programming Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Universal Data Access", "OLE DB, about OLE DB"]
 ms.assetid: a5a69730-2793-4277-a67d-6f3c8edab6df
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Programming Overview
@@ -26,7 +21,6 @@ OLE DB is a high-performance, COM-based database technology. It provides a commo
   
  Based on the COM specification, OLE DB defines an extensible and maintainable collection of interfaces that factor and encapsulate consistent, reusable portions of DBMS functionality. These interfaces define the boundaries of DBMS components such as row containers, query processors, and transaction coordinators, which enable uniform transactional access to diverse information sources.  
  
-  
 ## See Also  
  [OLE DB Programming](../../data/oledb/ole-db-programming.md)   
  [OLE DB Consumer Templates](../../data/oledb/ole-db-consumer-templates-cpp.md)   

@@ -2,19 +2,14 @@
 title: "num_threads | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 f1_keywords: ["num_threads"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["num_threads OpenMP clause"]
 ms.assetid: 09a56fc8-25c7-43e4-bbb5-71cb955d0b93
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # num_threads

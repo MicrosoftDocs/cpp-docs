@@ -2,18 +2,13 @@
 title: "Collections | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, collections", "arrays [MFC], classes", "MFC collection classes", "shapes, collection", "collection classes [MFC], MFC", "collections, about collections", "array templates [MFC]", "collection classes [MFC], template-based", "collection classes [MFC], about collection classes", "collection classes [MFC], maps", "collection classes [MFC], arrays", "shapes", "collection classes [MFC], lists", "collection classes [MFC], shapes"]
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Collections

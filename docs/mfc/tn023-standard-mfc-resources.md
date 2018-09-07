@@ -2,19 +2,14 @@
 title: "TN023: Standard MFC Resources | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.resources"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["resources [MFC]", "TN023", "standard resources"]
 ms.assetid: 60af8415-c576-4c2f-a711-ca5da0b9a1f2
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN023: Standard MFC Resources
@@ -37,7 +32,7 @@ This note describes the standard resources provided with and needed by the MFC l
   
 -   Indicate.rc: Contains string resources for the status-bar key-state indicators, such as "CAP" for Caps Lock.  
   
--   Prompts.rc: Contains menu-prompt string resources for each predefined command, such as "Create a new document" for `ID_FILE_NEW`.  
+-   Prompts.rc: Contains menu-prompt string resources for each predefined command, such as "Create a new document" for ID_FILE_NEW.  
   
 -   Commdlg.rc: A Visual C++ compatible .rc file that contains the standard COMMDLG dialog templates.  
   
@@ -69,7 +64,7 @@ This note describes the standard resources provided with and needed by the MFC l
 >  Be careful not to unintentionally move resources out of Common.rc permanently. If you hold the CTRL key while you drag resources, you will create a copy. If you do not hold CTRL down while you drag, the resources will be moved. If you are concerned that you might have accidentally made changes to the Common.rc file, click "No" when you are asked whether to save the changes to Common.rc.  
   
 > [!NOTE]
->  The .rc resource files have a special `TEXTINCLUDE` resource in them that will prevent you from accidentally saving on top of the standard .rc files.  
+>  The .rc resource files have a special TEXTINCLUDE resource in them that will prevent you from accidentally saving on top of the standard .rc files.  
   
 ### Customizing Standard Framework Resources  
  Standard framework resources are usually included in an application by using the #include command in an application's resource file. AppWizard will generate a resource file. This file includes the appropriate standard framework resources, depending on which AppWizard options you select. You can review, add, or remove which resources are included by changing the compile-time directives. To do this, open the **Resource** menu and select **Set Includes**. Look at the "Compile-Time Directives" edit item. For example:  

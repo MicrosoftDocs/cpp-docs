@@ -2,19 +2,14 @@
 title: "CMFCRibbonCustomizePropertyPage Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::AddCustomCategory", "AFXRIBBONCUSTOMIZEDIALOG/CMFCRibbonCustomizePropertyPage::OnOK"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonCustomizePropertyPage [MFC], CMFCRibbonCustomizePropertyPage", "CMFCRibbonCustomizePropertyPage [MFC], AddCustomCategory", "CMFCRibbonCustomizePropertyPage [MFC], OnOK"]
 ms.assetid: ea32a99a-dfbe-401e-8975-aa191552532f
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonCustomizePropertyPage Class
@@ -86,11 +81,11 @@ void AddCustomCategory(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `lpszName`|Specifies the custom category name.|  
-|[in] `lstIDS`|Contains ribbon command IDs to be shown in the custom category.|  
+|[in] *lpszName*|Specifies the custom category name.|  
+|[in] *lstIDS*|Contains ribbon command IDs to be shown in the custom category.|  
   
 ### Remarks  
- This method adds a category named `lpszName` to the **Commands** combo box. When the user selects the category, the commands specified in `lstIDS` appear in the command list.  
+ This method adds a category named *lpszName* to the **Commands** combo box. When the user selects the category, the commands specified in *lstIDS* appear in the command list.  
   
 ##  <a name="cmfcribboncustomizepropertypage"></a>  CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage  
  Constructs a `CMFCRibbonCustomizePropertyPage` object.  
@@ -100,7 +95,7 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 ```  
   
 ### Parameters  
- [in] `pRibbonBar`  
+ [in] *pRibbonBar*  
  A pointer to a ribbon control for which the options to customize.  
   
 ##  <a name="onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK  

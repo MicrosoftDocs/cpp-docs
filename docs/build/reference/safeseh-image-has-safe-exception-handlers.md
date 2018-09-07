@@ -2,19 +2,14 @@
 title: "-SAFESEH (Image has Safe Exception Handlers) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/SAFESEH"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/SAFESEH linker option", "-SAFESEH linker option", "SAFESEH linker option"]
 ms.assetid: 7722ff99-b833-4c65-a855-aaca902ffcb7
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /SAFESEH (Image has Safe Exception Handlers)
@@ -24,7 +19,7 @@ ms.workload: ["cplusplus"]
   
  When **/SAFESEH** is specified, the linker will only produce an image if it can also produce a table of the image's safe exception handlers. This table specifies for the operating system which exception handlers are valid for the image.  
   
- **/SAFESEH** is only valid when linking for x86 targets. **/SAFESEH** is not supported for platforms that already have the exception handlers noted. For example, on [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] and ARM, all exception handlers are noted in the PDATA. ML64.exe has support for adding annotations that emit SEH information (XDATA and PDATA) into the image, allowing you to unwind through ml64 functions. See [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) for more information.  
+ **/SAFESEH** is only valid when linking for x86 targets. **/SAFESEH** is not supported for platforms that already have the exception handlers noted. For example, on x64 and ARM, all exception handlers are noted in the PDATA. ML64.exe has support for adding annotations that emit SEH information (XDATA and PDATA) into the image, allowing you to unwind through ml64 functions. See [MASM for x64 (ml64.exe)](../../assembler/masm/masm-for-x64-ml64-exe.md) for more information.  
   
  If **/SAFESEH** is not specified, the linker will produce an image with a table of safe exceptions handlers if all modules are compatible with the safe exception handling feature. If any modules were not compatible with safe exception handling feature, the resulting image will not contain a table of safe exception handlers. If [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) specifies WINDOWSCE or one of the EFI_* options, the linker will not attempt to produce an image with a table of safe exceptions handlers, as neither of those subsystems can make use of the information.  
   

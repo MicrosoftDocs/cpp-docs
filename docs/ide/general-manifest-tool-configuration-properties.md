@@ -2,22 +2,17 @@
 title: "Manifest Tool Configuration Properties (Visual C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCManifestTool.MergeRulesFile", "VC.Project.VCManifestTool.UseUnicodeResponseFiles", "VC.Project.VCManifestTool.SuppressStartupBanner", "VC.Project.VCManifestTool.UseFAT32Workaround", "VC.Project.VCManifestTool.VerboseOutput", "VC.Project.VCManifestTool.AssemblyIdentity"]
 dev_langs: ["C++"]
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # General, Manifest Tool, Configuration Properties, &lt;Projectname&gt; Property Pages Dialog Box
-Use this dialog box to specify general options for [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
+Use this dialog box to specify general options for [Mt.exe](https://msdn.microsoft.com/library/aa375649).  
   
  To access this property page dialog box, open the property pages for your project or your property sheet. Expand the **Manifest Tool** node under **Configuration Properties**, and then select **General**.  
   

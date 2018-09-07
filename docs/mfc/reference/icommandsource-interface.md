@@ -2,19 +2,14 @@
 title: "ICommandSource Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["ICommandSource", "AFXWINFORMS/ICommandSource", "AFXWINFORMS/ICommandSource::AddCommandHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeHandler", "AFXWINFORMS/ICommandSource::AddCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::AddCommandUIHandler", "AFXWINFORMS/ICommandSource::PostCommand", "AFXWINFORMS/ICommandSource::RemoveCommandHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeHandler", "AFXWINFORMS/ICommandSource::RemoveCommandRangeUIHandler", "AFXWINFORMS/ICommandSource::RemoveCommandUIHandler", "AFXWINFORMS/ICommandSource::SendCommand"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ICommandSource interface [MFC]"]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ICommandSource Interface
@@ -62,9 +57,9 @@ void AddCommandHandler(
 ```
 
 ### Parameters  
-`cmdID`  
+*cmdID*  
 The command ID.  
-`cmdHandler`  
+*cmdHandler*  
 A handle to the command handler method.
 
 ### Remarks
@@ -81,11 +76,11 @@ void AddCommandRangeHandler(
     CommandHandler^ cmdHandler);
 ```
 ### Parameters  
-`cmdIDMin`  
+*cmdIDMin*  
 The beginning index of the command ID range.
-`cmdIDMax`  
+*cmdIDMax*  
 The ending index of the command ID range.
-`cmdHandler`  
+*cmdHandler*  
 A handle to the message handler method to which the commands are mapped.
 ### Remarks
 This method maps a contiguous range of command IDs to a single message handler and adds it to the command source object. This is used for handling a group of related buttons with one method.
@@ -99,11 +94,11 @@ void AddCommandRangeUIHandler(
     CommandUIHandler^ cmdUIHandler);
 ```
 ### Parameters  
-`cmdIDMin`  
+*cmdIDMin*  
 The beginning index of the command ID range.
-`cmdIDMax`  
+*cmdIDMax*  
 The ending index of the command ID range.
-`cmdHandler`  
+*cmdHandler*  
 A handle to the message handler method to which the commands are mapped.
 
 ### Remarks
@@ -117,9 +112,9 @@ void AddCommandUIHandler(
     CommandUIHandler^ cmdUIHandler);
 ```
 ### Parameters
-`cmdID`  
+*cmdID*  
 The command ID.  
-`cmdUIHandler`  
+*cmdUIHandler*  
 A handle to the user interface command message handler method.
 
 ### Remarks
@@ -131,7 +126,7 @@ Posts a message without waiting for it to be processed.
 void PostCommand(unsigned int command);
 ```
 ### Parameters
-`command`  
+*command*  
 The command ID of the message to be posted.
 ### Remarks
 This method asynchronously posts the message mapped to the ID specified by command. It calls CWnd::PostMessage to place the message in the window's message queue and then returns without waiting for the corresponding window to process the message.
@@ -143,7 +138,7 @@ Removes a command handler from a command source object.
 void RemoveCommandHandler(unsigned int cmdID);
 ```
 ### Parameters
-`cmdID`  
+*cmdID*  
 The command ID.
 ### Remarks
 This method removes the command handler mapped to cmdID from the command source object.
@@ -157,9 +152,9 @@ void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMax);
 ```
 ### Parameters
-`cmdIDMin`  
+*cmdIDMin*  
 The beginning index of the command ID range.
-`cmdIDMax`  
+*cmdIDMax*  
 The ending index of the command ID range.
 ### Remarks
 This method removes a group of message handlers, mapped to the command IDs specifed by cmdIDMin and cmdIDMax, from the command source object.
@@ -172,9 +167,9 @@ void RemoveCommandRangeUIHandler(
     unsigned int cmdIDMax);
 ```
 ### Parameters
-`cmdIDMin`  
+*cmdIDMin*  
 The beginning index of the command ID range.
-`cmdIDMax`  
+*cmdIDMax*  
 The ending index of the command ID range.
 ### Remarks
 This method removes a group of user interface command message handlers, mapped to the command IDs specifed by cmdIDMin and cmdIDMax, from the command source object.
@@ -185,7 +180,7 @@ Removes a user interface command message handler from a command source object.
 void RemoveCommandUIHandler(unsigned int cmdID);
 ```
 ### Parameters
-`cmdID`  
+*cmdID*  
 The command ID.
 ### Remarks
 This method removes the user interface command message handler mapped to cmdID from the command source object.
@@ -196,7 +191,7 @@ Sends a message and waits for it to be processed before returning.
 void SendCommand(unsigned int command);
 ```
 ### Parameters
-`command`  
+*command*  
 The command ID of the message to be sent.
 ### Remarks
 This method synchronously sends the message mapped to the ID specified by command. It calls CWnd::SendMessage to place the message in the window's message queue and waits until that window procedure has processed the message before returning.

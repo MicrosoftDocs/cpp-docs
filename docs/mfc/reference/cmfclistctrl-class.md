@@ -2,19 +2,14 @@
 title: "CMFCListCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl", "AFXLISTCTRL/CMFCListCtrl::EnableMarkSortedColumn", "AFXLISTCTRL/CMFCListCtrl::EnableMultipleSort", "AFXLISTCTRL/CMFCListCtrl::GetHeaderCtrl", "AFXLISTCTRL/CMFCListCtrl::IsMultipleSort", "AFXLISTCTRL/CMFCListCtrl::OnCompareItems", "AFXLISTCTRL/CMFCListCtrl::OnGetCellBkColor", "AFXLISTCTRL/CMFCListCtrl::OnGetCellFont", "AFXLISTCTRL/CMFCListCtrl::OnGetCellTextColor", "AFXLISTCTRL/CMFCListCtrl::RemoveSortColumn", "AFXLISTCTRL/CMFCListCtrl::SetSortColumn", "AFXLISTCTRL/CMFCListCtrl::Sort"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCListCtrl [MFC], EnableMarkSortedColumn", "CMFCListCtrl [MFC], EnableMultipleSort", "CMFCListCtrl [MFC], GetHeaderCtrl", "CMFCListCtrl [MFC], IsMultipleSort", "CMFCListCtrl [MFC], OnCompareItems", "CMFCListCtrl [MFC], OnGetCellBkColor", "CMFCListCtrl [MFC], OnGetCellFont", "CMFCListCtrl [MFC], OnGetCellTextColor", "CMFCListCtrl [MFC], RemoveSortColumn", "CMFCListCtrl [MFC], SetSortColumn", "CMFCListCtrl [MFC], Sort"]
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
-caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCListCtrl Class
@@ -77,10 +72,10 @@ void EnableMarkSortedColumn(
 ```  
   
 ### Parameters  
- [in] `bMark`  
+ [in] *bMark*  
  A Boolean parameter that determines whether to enable a different background color.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  A Boolean parameter that determines whether to redraw the control immediately.  
   
 ### Remarks  
@@ -94,7 +89,7 @@ void EnableMultipleSort(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
  A Boolean that specifies whether to enable multiple column sort mode.  
   
 ### Remarks  
@@ -121,7 +116,7 @@ BOOL IsMultipleSort() const;
 ```  
   
 ### Return Value  
- `TRUE` if the list control supports multiple sort; `FALSE` otherwise.  
+ TRUE if the list control supports multiple sort; FALSE otherwise.  
   
 ### Remarks  
  When a [CMFCListCtrl Class](../../mfc/reference/cmfclistctrl-class.md) supports multiple sorting, the user can sort the data in the list control by multiple columns. To enable multiple sorting, call [CMFCListCtrl::EnableMultipleSort](#enablemultiplesort).  
@@ -137,13 +132,13 @@ virtual int OnCompareItems(
 ```  
   
 ### Parameters  
- [in] `lParam1`  
+ [in] *lParam1*  
  The first item to compare.  
   
- [in] `lParam2`  
+ [in] *lParam2*  
  The second item to compare.  
   
- [in] `iColumn`  
+ [in] *iColumn*  
  The index of the column that this method is sorting.  
   
 ### Return Value  
@@ -162,14 +157,14 @@ virtual COLORREF OnGetCellBkColor(
 ```  
   
 ### Parameters  
- [in] `nRow`  
+ [in] *nRow*  
  The row of the cell in question.  
   
- [in] `nColumn`  
+ [in] *nColumn*  
  The column of the cell in question.  
   
 ### Return Value  
- A `COLOREF` value that specifies the background color of the cell.  
+ A COLOREF value that specifies the background color of the cell.  
   
 ### Remarks  
  The default implementation of `OnGetCellBkColor` does not use the supplied input parameters and instead simply calls `GetBkColor`. Therefore, by default, the whole list control will have the same background color. You can override `OnGetCellBkColor` in a derived class to mark individual cells with a separate background color.  
@@ -185,20 +180,20 @@ virtual HFONT OnGetCellFont(
 ```  
   
 ### Parameters  
- [in] `nRow`  
+ [in] *nRow*  
  The row of the cell in question.  
   
- [in] `nColumn`  
+ [in] *nColumn*  
  The column of the cell in question.  
   
- [in] `dwData`  
+ [in] *dwData*  
  User-defined data. The default implementation does not use this parameter.  
   
 ### Return Value  
  A handle to the font that is used for the current cell.  
   
 ### Remarks  
- By default, this method returns `NULL`. All of the cells in a list control have the same font. Override this method in order to provide different fonts for different cells.  
+ By default, this method returns NULL. All of the cells in a list control have the same font. Override this method in order to provide different fonts for different cells.  
   
 ##  <a name="ongetcelltextcolor"></a>  CMFCListCtrl::OnGetCellTextColor  
  The framework calls this method when it must determine the text color of an individual cell.  
@@ -210,14 +205,14 @@ virtual COLORREF OnGetCellTextColor(
 ```  
   
 ### Parameters  
- [in] `nRow`  
+ [in] *nRow*  
  The row of the cell in question.  
   
- [in] `nColumn`  
+ [in] *nColumn*  
  The column of the cell in question.  
   
 ### Return Value  
- A `COLOREF` value that specifies the text color of the cell.  
+ A COLOREF value that specifies the text color of the cell.  
   
 ### Remarks  
  By default, this method calls `GetTextColor` regardless of input parameters. The whole list control will have the same text color. You can override `OnGetCellTextColor` in a derived class to mark individual cells with a separate text color.  
@@ -230,7 +225,7 @@ void RemoveSortColumn(int iColumn);
 ```  
   
 ### Parameters  
- [in] `iColumn`  
+ [in] *iColumn*  
  The column to remove.  
   
 ### Remarks  
@@ -247,14 +242,14 @@ void SetSortColumn(
 ```  
   
 ### Parameters  
- [in] `iColumn`  
+ [in] *iColumn*  
  The column to sort.  
   
- [in] `bAscending`  
+ [in] *bAscending*  
  A Boolean that specifies the sort order.  
   
- [in] `bAdd`  
- A Boolean that specifies whether the method adds the column indicated by `iColumn` to the list of sort columns.  
+ [in] *bAdd*  
+ A Boolean that specifies whether the method adds the column indicated by *iColumn* to the list of sort columns.  
   
 ### Remarks  
  This method passes the input parameters to the header control by using the method [CMFCHeaderCtrl::SetSortColumn](../../mfc/reference/cmfcheaderctrl-class.md#setsortcolumn).  
@@ -270,14 +265,14 @@ virtual void Sort(
 ```  
   
 ### Parameters  
- [in] `iColumn`  
+ [in] *iColumn*  
  The column to sort.  
   
- [in] `bAscending`  
+ [in] *bAscending*  
  A Boolean that specifies the sort order.  
   
- [in] `bAdd`  
- A Boolean that specifies whether this method adds the column indicated by `iColumn` to the list of sort columns.  
+ [in] *bAdd*  
+ A Boolean that specifies whether this method adds the column indicated by *iColumn* to the list of sort columns.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

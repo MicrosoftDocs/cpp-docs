@@ -2,18 +2,13 @@
 title: "Predefined Rules | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rules, predefined", "NMAKE program, predefined rules", "predefined rules in NMAKE"]
 ms.assetid: 638cdc3f-4aba-4b4f-96e3-ad65b0364f12
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Predefined Rules
@@ -23,8 +18,8 @@ Predefined inference rules use NMAKE-supplied command and options macros.
 |----------|-------------|------------------------|--------------------|----------------------------|  
 |.asm.exe|$(AS) $(AFLAGS) $<|ml $<|no|x86|  
 |.asm.obj|$(AS) $(AFLAGS) /c $<|ml /c $<|yes|x86|  
-|.asm.exe|$(AS) $(AFLAGS) $<|ml64 $<|no|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|.asm.obj|$(AS) $(AFLAGS) /c $<|ml64 /c $<|yes|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|.asm.exe|$(AS) $(AFLAGS) $<|ml64 $<|no|x64|  
+|.asm.obj|$(AS) $(AFLAGS) /c $<|ml64 /c $<|yes|x64|  
 |.c.exe|$(CC) $(CFLAGS) $<|cl $<|no|all|  
 |.c.obj|$(CC) $(CFLAGS) /c $<|cl /c $<|yes|all|  
 |.cc.exe|$(CC) $(CFLAGS) $<|cl $<|no|all|  

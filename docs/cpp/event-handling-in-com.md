@@ -2,25 +2,20 @@
 title: "Event Handling in COM | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["event handling [C++], COM", "event handling [C++], about event handling", "declaring events", "event handlers [C++], COM", "event handlers", "COM, events", "event receivers, in event handling", "event handling [C++]", "hooking events", "event receivers, name and signature matching", "event sources, in event handling", "declaring events, in COM", "declaring events, event handling in COM"]
 ms.assetid: 6b4617d4-a58e-440c-a8a6-1ad1c715b2bb
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Event Handling in COM
-In COM event handling, you set up an event source and event receiver using the [event_source](../windows/event-source.md) and [event_receiver](../windows/event-receiver.md) attributes, respectively, specifying `type`=**com**. These attributes inject the appropriate code for custom, dispatch, and dual interfaces to allow the classes to which they are applied to fire events and handle events through COM connection points.  
+In COM event handling, you set up an event source and event receiver using the [event_source](../windows/event-source.md) and [event_receiver](../windows/event-receiver.md) attributes, respectively, specifying `type`=`com`. These attributes inject the appropriate code for custom, dispatch, and dual interfaces to allow the classes to which they are applied to fire events and handle events through COM connection points.  
   
 ## Declaring Events  
- In an event source class, use the [__event](../cpp/event.md) keyword on an interface declaration to declare that interface's methods as events. The events of that interface are fired when you call them as interface methods. Methods on event interfaces can have zero or more parameters (which should all be **in** parameters). The return type can be void or any integral type.  
+ In an event source class, use the [__event](../cpp/event.md) keyword on an interface declaration to declare that interface's methods as events. The events of that interface are fired when you call them as interface methods. Methods on event interfaces can have zero or more parameters (which should all be *in* parameters). The return type can be void or any integral type.  
   
 ## Defining Event Handlers  
  In an event receiver class, you define event handlers, which are methods with signatures (return types, calling conventions, and arguments) that match the event that they will handle. For COM events, calling conventions do not have to match; see [Layout Dependent COM Events](#vcconeventhandlingincomanchorlayoutdependentcomevents) below for details.  
@@ -32,12 +27,12 @@ In COM event handling, you set up an event source and event receiver using the [
 >  Typically, there are two techniques to allow a COM event receiver to access event source interface definitions. The first, as shown below, is to share a common header file. The second is to use [#import](../preprocessor/hash-import-directive-cpp.md) with the `embedded_idl` import qualifier, so that the event source type library is written to the .tlh file with the attribute-generated code preserved.  
   
 ## Firing Events  
- To fire an event, simply call a method in the interface declared with the `__event` keyword in the event source class. If handlers have been hooked to the event, the handlers will be called.  
+ To fire an event, simply call a method in the interface declared with the **__event** keyword in the event source class. If handlers have been hooked to the event, the handlers will be called.  
   
 ### COM Event Code  
  The following example shows how to fire an event in a COM class. To compile and run the example, refer to the comments in the code.  
   
-```  
+```cpp 
 // evh_server.h  
 #pragma once  
   
@@ -56,7 +51,7 @@ class DECLSPEC_UUID("530DF3AD-6936-3214-A83B-27B63C7997C4") CSource;
   
  And then the server:  
   
-```  
+```cpp 
 // evh_server.cpp  
 // compile with: /LD  
 // post-build command: Regsvr32.exe /s evh_server.dll  
@@ -81,7 +76,7 @@ public:
   
  And then the client:  
   
-```  
+```cpp 
 // evh_client.cpp  
 // compile with: /link /OPT:NOREF  
 #define _ATL_ATTRIBUTES 1  
@@ -139,7 +134,7 @@ int main() {
   
 ### Output  
   
-```  
+```Output  
 MyHandler1 was called with value 123.  
 MyHandler2 was called with value 123.  
 ```  
@@ -147,20 +142,20 @@ MyHandler2 was called with value 123.
 ##  <a name="vcconeventhandlingincomanchorlayoutdependentcomevents"></a> Layout Dependent COM Events  
  Layout dependency is only an issue for COM programming. In native and managed event handling, the signatures (return type, calling convention, and arguments) of the handlers must match their events, but the handler names do not have to match their events.  
   
- However, in COM event handling, when you set the *layout_dependent* parameter of **event_receiver** to **true**, the name and signature matching is enforced. This means that the names and signatures of the handlers in the event receiver must exactly match the names and signatures of the events to which they are hooked.  
+ However, in COM event handling, when you set the *layout_dependent* parameter of `event_receiver` to **true**, the name and signature matching is enforced. This means that the names and signatures of the handlers in the event receiver must exactly match the names and signatures of the events to which they are hooked.  
   
  When *layout_dependent* is set to **false**, the calling convention and storage class (virtual, static, and so on) can be mixed and matched between the firing event method and the hooking methods (its delegates). It is slightly more efficient to have *layout_dependent*=**true**.  
   
  For example, suppose `IEventSource` is defined to have the following methods:  
   
-```  
+```cpp 
 [id(1)] HRESULT MyEvent1([in] int value);  
 [id(2)] HRESULT MyEvent2([in] int value);  
 ```  
   
  Assume the event source has the following form:  
   
-```  
+```cpp 
 [coclass, event_source(com)]  
 class CSource : public IEventSource {  
 public:  
@@ -176,7 +171,7 @@ public:
   
  Then, in the event receiver, any handler hooked to a method in `IEventSource` must match its name and signature, as follows:  
   
-```  
+```cpp 
 [coclass, event_receiver(com, true)]  
 class CReceiver {  
 public:  
@@ -199,5 +194,5 @@ public:
 };  
 ```  
   
-## See Also  
+## See also  
  [Event Handling](../cpp/event-handling.md)

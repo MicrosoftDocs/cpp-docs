@@ -2,19 +2,14 @@
 title: "task_handle Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["task_handle", "PPL/concurrency::task_handle", "PPL/concurrency::task_handle::task_handle"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["task_handle class"]
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # task_handle Class

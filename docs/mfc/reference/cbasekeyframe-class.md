@@ -2,19 +2,14 @@
 title: "CBaseKeyFrame Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CBaseKeyFrame", "AFXANIMATIONCONTROLLER/CBaseKeyFrame", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::CBaseKeyFrame", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::AddToStoryboard", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::GetAnimationKeyframe", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsAdded", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::IsKeyframeAtOffset", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bAdded", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bIsKeyframeAtOffset", "AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_keyframe"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBaseKeyFrame [MFC], CBaseKeyFrame", "CBaseKeyFrame [MFC], AddToStoryboard", "CBaseKeyFrame [MFC], GetAnimationKeyframe", "CBaseKeyFrame [MFC], IsAdded", "CBaseKeyFrame [MFC], IsKeyframeAtOffset", "CBaseKeyFrame [MFC], m_bAdded", "CBaseKeyFrame [MFC], m_bIsKeyframeAtOffset", "CBaseKeyFrame [MFC], m_keyframe"]
 ms.assetid: 285a2eff-e7c4-43be-b5aa-737727e6866d
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CBaseKeyFrame Class
@@ -72,10 +67,10 @@ virtual BOOL AddToStoryboard(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDeepAdd`  
+ *bDeepAdd*  
  If this parameter is TRUE and the keyframe being added depends on some other keyframe or transition, this method tries to add this keyframe or transition to storyboard first.  
   
 ### Return Value  

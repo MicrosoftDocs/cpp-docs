@@ -2,19 +2,14 @@
 title: "CRgn Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CRgn", "AFXWIN/CRgn", "AFXWIN/CRgn::CRgn", "AFXWIN/CRgn::CombineRgn", "AFXWIN/CRgn::CopyRgn", "AFXWIN/CRgn::CreateEllipticRgn", "AFXWIN/CRgn::CreateEllipticRgnIndirect", "AFXWIN/CRgn::CreateFromData", "AFXWIN/CRgn::CreateFromPath", "AFXWIN/CRgn::CreatePolygonRgn", "AFXWIN/CRgn::CreatePolyPolygonRgn", "AFXWIN/CRgn::CreateRectRgn", "AFXWIN/CRgn::CreateRectRgnIndirect", "AFXWIN/CRgn::CreateRoundRectRgn", "AFXWIN/CRgn::EqualRgn", "AFXWIN/CRgn::FromHandle", "AFXWIN/CRgn::GetRegionData", "AFXWIN/CRgn::GetRgnBox", "AFXWIN/CRgn::OffsetRgn", "AFXWIN/CRgn::PtInRegion", "AFXWIN/CRgn::RectInRegion", "AFXWIN/CRgn::SetRectRgn"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRgn [MFC], CRgn", "CRgn [MFC], CombineRgn", "CRgn [MFC], CopyRgn", "CRgn [MFC], CreateEllipticRgn", "CRgn [MFC], CreateEllipticRgnIndirect", "CRgn [MFC], CreateFromData", "CRgn [MFC], CreateFromPath", "CRgn [MFC], CreatePolygonRgn", "CRgn [MFC], CreatePolyPolygonRgn", "CRgn [MFC], CreateRectRgn", "CRgn [MFC], CreateRectRgnIndirect", "CRgn [MFC], CreateRoundRectRgn", "CRgn [MFC], EqualRgn", "CRgn [MFC], FromHandle", "CRgn [MFC], GetRegionData", "CRgn [MFC], GetRgnBox", "CRgn [MFC], OffsetRgn", "CRgn [MFC], PtInRegion", "CRgn [MFC], RectInRegion", "CRgn [MFC], SetRectRgn"]
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CRgn Class
@@ -92,38 +87,38 @@ int CombineRgn(
 ```  
   
 ### Parameters  
- `pRgn1`  
+ *pRgn1*  
  Identifies an existing region.  
   
- `pRgn2`  
+ *pRgn2*  
  Identifies an existing region.  
   
- `nCombineMode`  
+ *nCombineMode*  
  Specifies the operation to be performed when combining the two source regions. It can be any one of the following values:  
   
-- **RGN_AND** Uses overlapping areas of both regions (intersection).  
+- RGN_AND Uses overlapping areas of both regions (intersection).  
   
-- **RGN_COPY** Creates a copy of region 1 (identified by `pRgn1`).  
+- RGN_COPY Creates a copy of region 1 (identified by *pRgn1*).  
   
-- **RGN_DIFF** Creates a region consisting of the areas of region 1 (identified by `pRgn1`) that are not part of region 2 (identified by `pRgn2`).  
+- RGN_DIFF Creates a region consisting of the areas of region 1 (identified by *pRgn1*) that are not part of region 2 (identified by *pRgn2*).  
   
-- **RGN_OR** Combines both regions in their entirety (union).  
+- RGN_OR Combines both regions in their entirety (union).  
   
-- **RGN_XOR** Combines both regions but removes overlapping areas.  
+- RGN_XOR Combines both regions but removes overlapping areas.  
   
 ### Return Value  
  Specifies the type of the resulting region. It can be one of the following values:  
   
-- **COMPLEXREGION** New region has overlapping borders.  
+- COMPLEXREGION New region has overlapping borders.  
   
-- **ERROR** No new region created.  
+- ERROR No new region created.  
   
-- **NULLREGION** New region is empty.  
+- NULLREGION New region is empty.  
   
-- **SIMPLEREGION** New region has no overlapping borders.  
+- SIMPLEREGION New region has no overlapping borders.  
   
 ### Remarks  
- The regions are combined as specified by `nCombineMode`.  
+ The regions are combined as specified by *nCombineMode*.  
   
  The two specified regions are combined, and the resulting region handle is stored in the `CRgn` object. Thus, whatever region is stored in the `CRgn` object is replaced by the combined region.  
   
@@ -135,26 +130,26 @@ int CombineRgn(
  [!code-cpp[NVC_MFCDocView#144](../../mfc/codesnippet/cpp/crgn-class_1.cpp)]  
   
 ##  <a name="copyrgn"></a>  CRgn::CopyRgn  
- Copies the region defined by `pRgnSrc` into the `CRgn` object.  
+ Copies the region defined by *pRgnSrc* into the `CRgn` object.  
   
 ```  
 int CopyRgn(CRgn* pRgnSrc);
 ```  
   
 ### Parameters  
- `pRgnSrc`  
+ *pRgnSrc*  
  Identifies an existing region.  
   
 ### Return Value  
  Specifies the type of the resulting region. It can be one of the following values:  
   
-- **COMPLEXREGION** New region has overlapping borders.  
+- COMPLEXREGION New region has overlapping borders.  
   
-- **ERROR** No new region created.  
+- ERROR No new region created.  
   
-- **NULLREGION** New region is empty.  
+- NULLREGION New region is empty.  
   
-- **SIMPLEREGION** New region has no overlapping borders.  
+- SIMPLEREGION New region has no overlapping borders.  
   
 ### Remarks  
  The new region replaces the region formerly stored in the `CRgn` object. This function is a special case of the [CombineRgn](#combinergn) member function.  
@@ -174,23 +169,23 @@ BOOL CreateEllipticRgn(
 ```  
   
 ### Parameters  
- `x1`  
+ *x1*  
  Specifies the logical x-coordinate of the upper-left corner of the bounding rectangle of the ellipse.  
   
- `y1`  
+ *y1*  
  Specifies the logical y-coordinate of the upper-left corner of the bounding rectangle of the ellipse.  
   
- `x2`  
+ *x2*  
  Specifies the logical x-coordinate of the lower-right corner of the bounding rectangle of the ellipse.  
   
- `y2`  
+ *y2*  
  Specifies the logical y-coordinate of the lower-right corner of the bounding rectangle of the ellipse.  
   
 ### Return Value  
  Nonzero if the operation succeeded; otherwise 0.  
   
 ### Remarks  
- The region is defined by the bounding rectangle specified by `x1`, `y1`, `x2`, and `y2`. The region is stored in the `CRgn` object.  
+ The region is defined by the bounding rectangle specified by *x1*, *y1*, *x2*, and *y2*. The region is stored in the `CRgn` object.  
   
  The size of a region is limited to 32,767 by 32,767 logical units or 64K of memory, whichever is smaller.  
   
@@ -207,14 +202,14 @@ BOOL CreateEllipticRgnIndirect(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `RECT` structure or a `CRect` object that contains the logical coordinates of the upper-left and lower-right corners of the bounding rectangle of the ellipse.  
   
 ### Return Value  
  Nonzero if the operation succeeded; otherwise 0.  
   
 ### Remarks  
- The region is defined by the structure or object pointed to by `lpRect` and is stored in the `CRgn` object.  
+ The region is defined by the structure or object pointed to by *lpRect* and is stored in the `CRgn` object.  
   
  The size of a region is limited to 32,767 by 32,767 logical units or 64K of memory, whichever is smaller.  
   
@@ -235,12 +230,12 @@ BOOL CreateFromData(
   
 ### Parameters  
  *lpXForm*  
- Points to an [XFORM](../../mfc/reference/xform-structure.md) data structure that defines the transformation to be performed on the region. If this pointer is **NULL**, the identity transformation is used.  
+ Points to an [XFORM](../../mfc/reference/xform-structure.md) data structure that defines the transformation to be performed on the region. If this pointer is NULL, the identity transformation is used.  
   
- `nCount`  
- Specifies the number of bytes pointed to by `pRgnData`.  
+ *nCount*  
+ Specifies the number of bytes pointed to by *pRgnData*.  
   
- `pRgnData`  
+ *pRgnData*  
  Points to a [RGNDATA](../../mfc/reference/rgndata-structure.md) data structure that contains the region data.  
   
 ### Return Value  
@@ -257,14 +252,14 @@ BOOL CreateFromPath(CDC* pDC);
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Identifies a device context that contains a closed path.  
   
 ### Return Value  
  Nonzero if the function is successful; otherwise 0.  
   
 ### Remarks  
- The device context identified by the `pDC` parameter must contain a closed path. After `CreateFromPath` converts a path into a region, Windows discards the closed path from the device context.  
+ The device context identified by the *pDC* parameter must contain a closed path. After `CreateFromPath` converts a path into a region, Windows discards the closed path from the device context.  
   
 ##  <a name="createpolygonrgn"></a>  CRgn::CreatePolygonRgn  
  Creates a polygonal region.  
@@ -277,8 +272,8 @@ BOOL CreatePolygonRgn(
 ```  
   
 ### Parameters  
- `lpPoints`  
- Points to an array of **POINT** structures or an array of `CPoint` objects. Each structure specifies the x-coordinate and y-coordinate of one vertex of the polygon. The **POINT** structure has the following form:  
+ *lpPoints*  
+ Points to an array of `POINT` structures or an array of `CPoint` objects. Each structure specifies the x-coordinate and y-coordinate of one vertex of the polygon. The `POINT` structure has the following form:  
   
  `typedef struct tagPOINT {`  
   
@@ -288,11 +283,11 @@ BOOL CreatePolygonRgn(
   
  `} POINT;`  
   
- `nCount`  
- Specifies the number of **POINT** structures or `CPoint` objects in the array pointed to by `lpPoints`.  
+ *nCount*  
+ Specifies the number of `POINT` structures or `CPoint` objects in the array pointed to by *lpPoints*.  
   
- `nMode`  
- Specifies the filling mode for the region. This parameter may be either **ALTERNATE** or **WINDING**.  
+ *nMode*  
+ Specifies the filling mode for the region. This parameter may be either ALTERNATE or WINDING.  
   
 ### Return Value  
  Nonzero if the operation succeeded; otherwise 0.  
@@ -302,9 +297,9 @@ BOOL CreatePolygonRgn(
   
  The size of a region is limited to 32,767 by 32,767 logical units or 64K of memory, whichever is smaller.  
   
- When the polygon-filling mode is **ALTERNATE**, the system fills the area between odd-numbered and even-numbered polygon sides on each scan line. That is, the system fills the area between the first and second side, between the third and fourth side, and so on.  
+ When the polygon-filling mode is ALTERNATE, the system fills the area between odd-numbered and even-numbered polygon sides on each scan line. That is, the system fills the area between the first and second side, between the third and fourth side, and so on.  
   
- When the polygon-filling mode is **WINDING**, the system uses the direction in which a figure was drawn to determine whether to fill an area. Each line segment in a polygon is drawn in either a clockwise or a counterclockwise direction. Whenever an imaginary line drawn from an enclosed area to the outside of a figure passes through a clockwise line segment, a count is incremented. When the line passes through a counterclockwise line segment, the count is decremented. The area is filled if the count is nonzero when the line reaches the outside of the figure.  
+ When the polygon-filling mode is WINDING, the system uses the direction in which a figure was drawn to determine whether to fill an area. Each line segment in a polygon is drawn in either a clockwise or a counterclockwise direction. Whenever an imaginary line drawn from an enclosed area to the outside of a figure passes through a clockwise line segment, a count is incremented. When the line passes through a counterclockwise line segment, the count is decremented. The area is filled if the count is nonzero when the line reaches the outside of the figure.  
   
  When an application has finished using a region created with the `CreatePolygonRgn` function, it should select the region out of the device context and use the `DeleteObject` function to remove it.  
   
@@ -323,8 +318,8 @@ BOOL CreatePolyPolygonRgn(
 ```  
   
 ### Parameters  
- `lpPoints`  
- Points to an array of **POINT** structures or an array of `CPoint` objects that defines the vertices of the polygons. Each polygon must be explicitly closed because the system does not close them automatically. The polygons are specified consecutively. The **POINT** structure has the following form:  
+ *lpPoints*  
+ Points to an array of `POINT` structures or an array of `CPoint` objects that defines the vertices of the polygons. Each polygon must be explicitly closed because the system does not close them automatically. The polygons are specified consecutively. The `POINT` structure has the following form:  
   
  `typedef struct tagPOINT {`  
   
@@ -334,14 +329,14 @@ BOOL CreatePolyPolygonRgn(
   
  `} POINT;`  
   
- `lpPolyCounts`  
- Points to an array of integers. The first integer specifies the number of vertices in the first polygon in the `lpPoints` array, the second integer specifies the number of vertices in the second polygon, and so on.  
+ *lpPolyCounts*  
+ Points to an array of integers. The first integer specifies the number of vertices in the first polygon in the *lpPoints* array, the second integer specifies the number of vertices in the second polygon, and so on.  
   
- `nCount`  
- Specifies the total number of integers in the `lpPolyCounts` array.  
+ *nCount*  
+ Specifies the total number of integers in the *lpPolyCounts* array.  
   
- `nPolyFillMode`  
- Specifies the polygon-filling mode. This value may be either **ALTERNATE** or **WINDING**.  
+ *nPolyFillMode*  
+ Specifies the polygon-filling mode. This value may be either ALTERNATE or WINDING.  
   
 ### Return Value  
  Nonzero if the operation succeeded; otherwise 0.  
@@ -353,9 +348,9 @@ BOOL CreatePolyPolygonRgn(
   
  The size of a region is limited to 32,767 by 32,767 logical units or 64K of memory, whichever is smaller.  
   
- When the polygon-filling mode is **ALTERNATE**, the system fills the area between odd-numbered and even-numbered polygon sides on each scan line. That is, the system fills the area between the first and second side, between the third and fourth side, and so on.  
+ When the polygon-filling mode is ALTERNATE, the system fills the area between odd-numbered and even-numbered polygon sides on each scan line. That is, the system fills the area between the first and second side, between the third and fourth side, and so on.  
   
- When the polygon-filling mode is **WINDING**, the system uses the direction in which a figure was drawn to determine whether to fill an area. Each line segment in a polygon is drawn in either a clockwise or a counterclockwise direction. Whenever an imaginary line drawn from an enclosed area to the outside of a figure passes through a clockwise line segment, a count is incremented. When the line passes through a counterclockwise line segment, the count is decremented. The area is filled if the count is nonzero when the line reaches the outside of the figure.  
+ When the polygon-filling mode is WINDING, the system uses the direction in which a figure was drawn to determine whether to fill an area. Each line segment in a polygon is drawn in either a clockwise or a counterclockwise direction. Whenever an imaginary line drawn from an enclosed area to the outside of a figure passes through a clockwise line segment, a count is incremented. When the line passes through a counterclockwise line segment, the count is decremented. The area is filled if the count is nonzero when the line reaches the outside of the figure.  
   
  When an application has finished using a region created with the `CreatePolyPolygonRgn` function, it should select the region out of the device context and use the [CGDIObject::DeleteObject](../../mfc/reference/cgdiobject-class.md#deleteobject) member function to remove it.  
   
@@ -371,16 +366,16 @@ BOOL CreateRectRgn(
 ```  
   
 ### Parameters  
- `x1`  
+ *x1*  
  Specifies the logical x-coordinate of the upper-left corner of the region.  
   
- `y1`  
+ *y1*  
  Specifies the logical y-coordinate of the upper-left corner of the region.  
   
- `x2`  
+ *x2*  
  Specifies the logical x-coordinate of the lower-right corner of the region.  
   
- `y2`  
+ *y2*  
  Specifies the logical y-coordinate of the lower-right corner of the region.  
   
 ### Return Value  
@@ -404,7 +399,7 @@ BOOL CreateRectRgnIndirect(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `RECT` structure or `CRect` object that contains the logical coordinates of the upper-left and lower-right corners of the region. The `RECT` structure has the following form:  
   
  `typedef struct tagRECT {`  
@@ -444,22 +439,22 @@ BOOL CreateRoundRectRgn(
 ```  
   
 ### Parameters  
- `x1`  
+ *x1*  
  Specifies the logical x-coordinate of the upper-left corner of the region.  
   
- `y1`  
+ *y1*  
  Specifies the logical y-coordinate of the upper-left corner of the region.  
   
- `x2`  
+ *x2*  
  Specifies the logical x-coordinate of the lower-right corner of the region.  
   
- `y2`  
+ *y2*  
  Specifies the logical y-coordinate of the lower-right corner of the region.  
   
  *x3*  
  Specifies the width of the ellipse used to create the rounded corners.  
   
- `y3`  
+ *y3*  
  Specifies the height of the ellipse used to create the rounded corners.  
   
 ### Return Value  
@@ -494,7 +489,7 @@ BOOL EqualRgn(CRgn* pRgn) const;
 ```  
   
 ### Parameters  
- `pRgn`  
+ *pRgn*  
  Identifies a region.  
   
 ### Return Value  
@@ -511,11 +506,11 @@ static CRgn* PASCAL FromHandle(HRGN hRgn);
 ```  
   
 ### Parameters  
- `hRgn`  
+ *hRgn*  
  Specifies a handle to a Windows region.  
   
 ### Return Value  
- A pointer to a `CRgn` object. If the function was not successful, the return value is **NULL**.  
+ A pointer to a `CRgn` object. If the function was not successful, the return value is NULL.  
   
 ### Remarks  
  If a `CRgn` object is not already attached to the handle, a temporary `CRgn` object is created and attached. This temporary `CRgn` object is valid only until the next time the application has idle time in its event loop, at which time all temporary graphic objects are deleted. Another way of saying this is that the temporary object is only valid during the processing of one window message.  
@@ -530,14 +525,14 @@ int GetRegionData(
 ```  
   
 ### Parameters  
- `lpRgnData`  
- Points to a [RGNDATA](../../mfc/reference/rgndata-structure.md) data structure that receives the information. If this parameter is **NULL**, the return value contains the number of bytes needed for the region data.  
+ *lpRgnData*  
+ Points to a [RGNDATA](../../mfc/reference/rgndata-structure.md) data structure that receives the information. If this parameter is NULL, the return value contains the number of bytes needed for the region data.  
   
- `nCount`  
- Specifies the size, in bytes, of the `lpRgnData` buffer.  
+ *nCount*  
+ Specifies the size, in bytes, of the *lpRgnData* buffer.  
   
 ### Return Value  
- If the function succeeds and `nCount` specifies an adequate number of bytes, the return value is always `nCount`. If the function fails, or if `nCount` specifies less than adequate number of bytes, the return value is 0 (error).  
+ If the function succeeds and *nCount* specifies an adequate number of bytes, the return value is always *nCount*. If the function fails, or if *nCount* specifies less than adequate number of bytes, the return value is 0 (error).  
   
 ### Remarks  
  This data includes the dimensions of the rectangles that make up the region. This function is used in conjunction with the `CRgn::CreateFromData` function.  
@@ -550,7 +545,7 @@ int GetRgnBox(LPRECT lpRect) const;
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `RECT` structure or `CRect` object to receive the coordinates of the bounding rectangle. The `RECT` structure has the following form:  
   
  `typedef struct tagRECT {`  
@@ -568,13 +563,13 @@ int GetRgnBox(LPRECT lpRect) const;
 ### Return Value  
  Specifies the region's type. It can be any of the following values:  
   
-- **COMPLEXREGION** Region has overlapping borders.  
+- COMPLEXREGION Region has overlapping borders.  
   
-- **NULLREGION** Region is empty.  
+- NULLREGION Region is empty.  
   
-- **ERROR** `CRgn` object does not specify a valid region.  
+- ERROR `CRgn` object does not specify a valid region.  
   
-- **SIMPLEREGION** Region has no overlapping borders.  
+- SIMPLEREGION Region has no overlapping borders.  
   
 ### Example  
   See the example for [CRgn::CreatePolygonRgn](#createpolygonrgn).  
@@ -597,19 +592,19 @@ int OffsetRgn(POINT point);
  *y*  
  Specifies the number of units to move up or down.  
   
- `point`  
- The x-coordinate of `point` specifies the number of units to move left or right. The y-coordinate of `point` specifies the number of units to move up or down. The `point` parameter may be either a **POINT** structure or a `CPoint` object.  
+ *point*  
+ The x-coordinate of *point* specifies the number of units to move left or right. The y-coordinate of *point* specifies the number of units to move up or down. The *point* parameter may be either a `POINT` structure or a `CPoint` object.  
   
 ### Return Value  
  The new region's type. It can be any one of the following values:  
   
-- **COMPLEXREGION** Region has overlapping borders.  
+- COMPLEXREGION Region has overlapping borders.  
   
-- **ERROR** Region handle is not valid.  
+- ERROR Region handle is not valid.  
   
-- **NULLREGION** Region is empty.  
+- NULLREGION Region is empty.  
   
-- **SIMPLEREGION** Region has no overlapping borders.  
+- SIMPLEREGION Region has no overlapping borders.  
   
 ### Remarks  
  The function moves the region *x* units along the x-axis and *y* units along the y-axis.  
@@ -627,12 +622,12 @@ operator HRGN() const;
 ```  
   
 ### Return Value  
- If successful, a handle to the Windows GDI object represented by the `CRgn` object; otherwise **NULL**.  
+ If successful, a handle to the Windows GDI object represented by the `CRgn` object; otherwise NULL.  
   
 ### Remarks  
- This operator is a casting operator, which supports direct use of an **HRGN** object.  
+ This operator is a casting operator, which supports direct use of an HRGN object.  
   
- For more information about using graphic objects, see the article [Graphic Objects](http://msdn.microsoft.com/library/windows/desktop/dd144962) in the Windows SDK.  
+ For more information about using graphic objects, see the article [Graphic Objects](/windows/desktop/gdi/graphic-objects) in the Windows SDK.  
   
 ##  <a name="ptinregion"></a>  CRgn::PtInRegion  
  Checks whether the point given by *x* and *y* is in the region stored in the `CRgn` object.  
@@ -652,21 +647,21 @@ BOOL PtInRegion(POINT point) const;
  *y*  
  Specifies the logical y-coordinate of the point to test.  
   
- `point`  
- The x- and y-coordinates of `point` specify the x- and y-coordinates of the point to test the value of. The `point` parameter can either be a **POINT** structure or a `CPoint` object.  
+ *point*  
+ The x- and y-coordinates of *point* specify the x- and y-coordinates of the point to test the value of. The *point* parameter can either be a `POINT` structure or a `CPoint` object.  
   
 ### Return Value  
  Nonzero if the point is in the region; otherwise 0.  
   
 ##  <a name="rectinregion"></a>  CRgn::RectInRegion  
- Determines whether any part of the rectangle specified by `lpRect` is within the boundaries of the region stored in the `CRgn` object.  
+ Determines whether any part of the rectangle specified by *lpRect* is within the boundaries of the region stored in the `CRgn` object.  
   
 ```  
 BOOL RectInRegion(LPCRECT lpRect) const;  
 ```  
   
 ### Parameters  
- `lpRect`  
+ *lpRect*  
  Points to a `RECT` structure or `CRect` object. The `RECT` structure has the following form:  
   
  `typedef struct tagRECT {`  
@@ -698,23 +693,23 @@ void SetRectRgn(LPCRECT lpRect);
 ```  
   
 ### Parameters  
- `x1`  
+ *x1*  
  Specifies the x-coordinate of the upper-left corner of the rectangular region.  
   
- `y1`  
+ *y1*  
  Specifies the y-coordinate of the upper-left corner of the rectangular region.  
   
- `x2`  
+ *x2*  
  Specifies the x-coordinate of the lower-right corner of the rectangular region.  
   
- `y2`  
+ *y2*  
  Specifies the y-coordinate of the lower-right corner of the rectangular region.  
   
- `lpRect`  
+ *lpRect*  
  Specifies the rectangular region. Can be either a pointer to a `RECT` structure or a `CRect` object.  
   
 ### Remarks  
- Unlike [CreateRectRgn](#createrectrgn), however, it does not allocate any additional memory from the local Windows application heap. Instead, it uses the space allocated for the region stored in the `CRgn` object. This means that the `CRgn` object must already have been initialized with a valid Windows region before calling `SetRectRgn`. The points given by `x1`, `y1`, `x2`, and `y2` specify the minimum size of the allocated space.  
+ Unlike [CreateRectRgn](#createrectrgn), however, it does not allocate any additional memory from the local Windows application heap. Instead, it uses the space allocated for the region stored in the `CRgn` object. This means that the `CRgn` object must already have been initialized with a valid Windows region before calling `SetRectRgn`. The points given by *x1*, *y1*, *x2*, and *y2* specify the minimum size of the allocated space.  
   
  Use this function instead of the `CreateRectRgn` member function to avoid calls to the local memory manager.  
   

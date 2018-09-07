@@ -2,15 +2,11 @@
 title: "Extract Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 

@@ -2,18 +2,13 @@
 title: "Class Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], operating on type", "class templates", "templates, class templates"]
 ms.assetid: 633a53c8-24ee-4c23-8c88-e7c3cb0b7ac3
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Class Templates
@@ -74,7 +69,6 @@ void X<T>::mf(const U &u)
 int main()  
 {  
 }  
-  
 ```  
   
 ## Nested class templates  
@@ -195,7 +189,7 @@ X<T>::Y<U>::~Y()
  Local classes are not allowed to have member templates.  
   
 ## Template friends  
- Class templates can have [friends](http://msdn.microsoft.com/en-us/bf412640-d857-4acb-b2b5-513131cb9681). A class or class template, function, or function template can be a friend to a template class. Friends can also be specializations of a class template or function template, but not partial specializations.  
+ Class templates can have [friends](friend-cpp.md). A class or class template, function, or function template can be a friend to a template class. Friends can also be specializations of a class template or function template, but not partial specializations.  
   
  In the following example, a friend function is defined as a function template within the class template. This code produces a version of the friend function for every instantiation of the template. This construct is useful if your friend function depends on the same template parameters as the class does.  
   
@@ -437,5 +431,5 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Templates](../cpp/templates-cpp.md)

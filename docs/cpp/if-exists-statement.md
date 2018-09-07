@@ -2,23 +2,18 @@
 title: "__if_exists Statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__if_exists_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["identifiers, testing for existence", "symbols, testing for existence", "__if_exists keyword [C++]"]
 ms.assetid: d3eb34b6-f3a9-4063-a286-b62a28c0c7fa
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __if_exists Statement
-The `__if_exists` statement tests whether the specified identifier exists. If the identifier exists, the specified statement block is executed.  
+The **__if_exists** statement tests whether the specified identifier exists. If the identifier exists, the specified statement block is executed.  
   
 ## Syntax  
   
@@ -32,28 +27,28 @@ statements
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|`identifier`|The identifier whose existence you want to test.|  
-|`statements`|One or more statements to execute if `identifier` exists.|  
+|*identifier*|The identifier whose existence you want to test.|  
+|*statements*|One or more statements to execute if *identifier* exists.|  
   
 ## Remarks  
   
 > [!CAUTION]
->  To achieve the most reliable results, use the `__if_exists` statement under the following constraints.  
+>  To achieve the most reliable results, use the **__if_exists** statement under the following constraints.  
   
--   Apply the `__if_exists` statement to only simple types, not templates.  
+-   Apply the **__if_exists** statement to only simple types, not templates.  
   
--   Apply the `__if_exists` statement to identifiers both inside or outside a class. Do not apply the `__if_exists` statement to local variables.  
+-   Apply the **__if_exists** statement to identifiers both inside or outside a class. Do not apply the **__if_exists** statement to local variables.  
   
--   Use the `__if_exists` statement only in the body of a function. Outside of the body of a function, the `__if_exists` statement can test only fully defined types.  
+-   Use the **__if_exists** statement only in the body of a function. Outside of the body of a function, the **__if_exists** statement can test only fully defined types.  
   
 -   When you test for overloaded functions, you cannot test for a specific form of the overload.  
   
- The complement to the `__if_exists` statement is the [__if_not_exists](../cpp/if-not-exists-statement.md) statement.  
+ The complement to the **__if_exists** statement is the [__if_not_exists](../cpp/if-not-exists-statement.md) statement.  
   
 ## Example  
  Notice that this example uses templates, which is not advised.  
   
-```  
+```cpp 
 // the__if_exists_statement.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -112,7 +107,7 @@ int main() {
   
 ## Output  
   
-```  
+```Output  
 In X<T>::Dump()  
 In A::Dump()  
 In X<T>::Dump()  
@@ -121,7 +116,7 @@ g_bFlag = 1
 C::f exists  
 ```  
   
-## See Also  
+## See also  
  [Selection Statements](../cpp/selection-statements-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [__if_not_exists Statement](../cpp/if-not-exists-statement.md)

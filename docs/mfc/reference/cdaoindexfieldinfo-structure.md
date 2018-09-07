@@ -2,19 +2,14 @@
 title: "CDaoIndexFieldInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["CDaoIndexFieldInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDaoIndexFieldInfo structure [MFC]", "DAO (Data Access Objects), Index Fields collection"]
 ms.assetid: 097ee8a6-83b1-4db7-8f05-d62a2deefe19
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDaoIndexFieldInfo Structure
@@ -31,11 +26,11 @@ struct CDaoIndexFieldInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  Uniquely names the index field object. For details, see the topic "Name Property" in DAO Help.  
   
  *m_bDescending*  
- Indicates the index ordering defined by the index object. **TRUE** if the order is descending.  
+ Indicates the index ordering defined by the index object. TRUE if the order is descending.  
   
 ## Remarks  
  An index object can have a number of fields, indicating which fields a tabledef (or a recordset based on a table) is indexed on. The references to Primary above indicate how the information is returned in the `m_pFieldInfos` member of a [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) object obtained by calling the `GetIndexInfo` member function of class [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getindexinfo) or [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo).  

@@ -2,19 +2,14 @@
 title: "ActivatableClass Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["ActivatableClass", "ActivatableClassWithFactory", "ActivatableClassWithFactoryEx"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ActivatableClassWithFactory", "ActivatableClass", "ActivatableClassWithFactoryEx"]
 ms.assetid: 9bd64709-ec2c-4678-8c96-ea5982622bdd
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # ActivatableClass Macros
@@ -43,7 +38,7 @@ ActivatableClassWithFactoryEx(
 ### Parameters
 
 *className*  
-Name of the class to create.  
+Name of the class to create.
 
 *factory*  
 Factory that will create an instance of the specified class.
@@ -53,7 +48,7 @@ A name that specifies a subset of factories in the module.
 
 ## Remarks
 
-Do not use these macros with classic COM unless you use the `#undef` directive to ensure that the **&#95;&#95;WRL_WINRT_STRICT&#95;&#95;** macro definition is removed.
+Do not use these macros with classic COM unless you use the `#undef` directive to ensure that the `__WRL_WINRT_STRICT__` macro definition is removed.
 
 ## Requirements
 

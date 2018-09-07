@@ -2,18 +2,13 @@
 title: "-- Overridables Comment | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Overridables comment in MFC source files", "MFC source files, Overridables comment", "overriding, Overridables comment in MFC source files", "comments, MFC"]
 ms.assetid: 8968dea5-0d94-451f-bcb2-991580e65ba2
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # // Overridables Comment
@@ -23,7 +18,7 @@ The `// Overridables` section of an MFC class declaration contains virtual funct
   
  `virtual void OnDraw( ) = 0;`  
   
- In the sample listing from class `CStdioFile`, in [An Example of the Comments](../mfc/an-example-of-the-comments.md), the list includes no overridables section. Class **CDocument**, on the other hand, lists approximately 10 overridable member functions.  
+ In the sample listing from class `CStdioFile`, in [An Example of the Comments](../mfc/an-example-of-the-comments.md), the list includes no overridables section. Class `CDocument`, on the other hand, lists approximately 10 overridable member functions.  
   
  In some classes, you may also see the comment `// Advanced Overridables`. These are functions that only advanced programmers should attempt to override. You will probably never need to override them.  
   

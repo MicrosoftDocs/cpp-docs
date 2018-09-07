@@ -2,19 +2,14 @@
 title: "Advanced Features, MFC Application Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.advanced"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard, advanced features"]
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Advanced Features, MFC Application Wizard
@@ -41,17 +36,17 @@ This topic lists options for additional features for your application, such as H
  Supports Windows sockets, which you can use to write applications that communicate over TCP/IP networks.  
   
  **Active Accessibility**  
- Adds support for [IAccessible](http://msdn.microsoft.com/library/windows/desktop/dd318466) to [CWnd](../../mfc/reference/cwnd-class.md)-derived classes, which you can use to customize the user interface for better interaction with accessibility clients.  
+ Adds support for [IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) to [CWnd](../../mfc/reference/cwnd-class.md)-derived classes, which you can use to customize the user interface for better interaction with accessibility clients.  
   
  **Common Control Manifest**  
  Enabled by default. Generates an application manifest to enable the Common Control DLL that is included with Microsoft Windows XP and newer operating systems.  
   
  Version 6 of the Common Control DLL does not automatically update the earlier version of the Common Controls that your existing applications use. To use version 6 of the Common Control DLL, you must create an application manifest that directs your application to load the DLL. This Common Control DLL also supports the Windows XP themes.  
   
- An application manifest can also specify other DLLs and versions that your application needs. For more information about application manifests, see [Isolated Applications and Side-by-Side Assemblies](http://msdn.microsoft.com/library/dd408052) in the Windows SDK.  
+ An application manifest can also specify other DLLs and versions that your application needs. For more information about application manifests, see [Isolated Applications and Side-by-Side Assemblies](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal) in the Windows SDK.  
   
  **Support Restart Manager**  
- Adds support for the [Windows Restart Manager](http://msdn.microsoft.com/library/windows/desktop/aa373680\(v=vs.85\).aspx). This video shows how to use the Restart Manager from MFC: [How Do I: Use the New Restart Manager](http://msdn.microsoft.com/vstudio/ee886407).  
+ Adds support for the [Windows Restart Manager](/windows/desktop/RstMgr/using-restart-manager). This video shows how to use the Restart Manager from MFC: [How Do I: Use the New Restart Manager](https://msdn.microsoft.com/vstudio/ee886407).  
   
  **Advanced frame panes**  
  |Option|Description|  

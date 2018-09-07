@@ -1,20 +1,15 @@
 ---
 title: "How to: Modify the Target Framework and Platform Toolset | Microsoft Docs"
-ms.custom: ""
+ms.custom: "conceptual"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
+ms.topic: "conceptual"
 f1_keywords: ["msbuild.cpp.howto.modifytargetframeworkandplatformtoolset"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["msbuild (c++), howto: modify target framework and platform toolset"]
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-caps.latest.revision: 32
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Modify the Target Framework and Platform Toolset
@@ -28,7 +23,7 @@ You can change Visual C++ project settings to target different versions of the .
 > [!NOTE]
 >  To change the target platform toolset, you must have the associated version of Visual Studio or the Windows Platform SDK installed. For example, to target the Itanium platform with the **Windows7.1SDK** platform toolset, you must have [Microsoft Windows SDK for Windows 7 and .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) installed; however, you could use another compatible version of Visual Studio to do your development work, provided that you target the correct Framework version and platform toolset.  
   
- You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](http://go.microsoft.com/fwlink/p/?linkid=196619) on the Visual C++ blog.  
+ You can extend the target platform further by creating a custom platform toolset. For more information, see [C++ Native Multi-Targeting](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) on the Visual C++ blog.  
   
 ### To change the target Framework  
   
@@ -57,7 +52,7 @@ You can change Visual C++ project settings to target different versions of the .
   
 3.  In the left pane of the dialog box, expand **Configuration Properties** and then select **General**.  
   
-4.  In the right pane, select **Platform Toolset** and then select the toolset you want from the drop-down list. For example, if you have installed the [!INCLUDE[vs_dev10_long](../build/includes/vs_dev10_long_md.md)] toolset, select **Visual Studio 2010 (v100)** to use it for your project.  
+4.  In the right pane, select **Platform Toolset** and then select the toolset you want from the drop-down list. For example, if you have installed the Visual Studio 2010 toolset, select **Visual Studio 2010 (v100)** to use it for your project.  
   
 5.  Choose the **OK** button.  
   

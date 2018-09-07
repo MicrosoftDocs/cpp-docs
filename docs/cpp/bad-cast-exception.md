@@ -2,23 +2,18 @@
 title: "bad_cast Exception | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["bad_cast", "bad_cast_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["exceptions [C++], bad_cast", "bad_cast keyword [C++]"]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # bad_cast Exception
-The `bad_cast` exception is thrown by the `dynamic_cast` operator as the result of a failed cast to a reference type.  
+The **bad_cast** exception is thrown by the **dynamic_cast** operator as the result of a failed cast to a reference type.  
   
 ## Syntax  
   
@@ -28,9 +23,9 @@ catch (bad_cast)
 ```  
   
 ## Remarks  
- The interface for `bad_cast` is:  
+ The interface for **bad_cast** is:  
   
-```  
+```cpp 
 class bad_cast : public exception {  
 public:  
    bad_cast(const char * _Message = "bad cast");  
@@ -39,9 +34,9 @@ public:
 };  
 ```  
   
- The following code contains an example of a failed `dynamic_cast` that throws the `bad_cast` exception.  
+ The following code contains an example of a failed **dynamic_cast** that throws the **bad_cast** exception.  
   
-```  
+```cpp 
 // expre_bad_cast_Exception.cpp  
 // compile with: /EHsc /GR  
 #include <typeinfo.h>  
@@ -72,18 +67,18 @@ int main() {
   
  The exception is thrown because the object being cast (a Shape) is not derived from the specified cast type (Circle). To avoid the exception, add these declarations to `main`:  
   
-```  
+```cpp 
 Circle circle_instance;  
 Circle& ref_circle = circle_instance;  
 ```  
   
- Then reverse the sense of the cast in the `try` block as follows:  
+ Then reverse the sense of the cast in the **try** block as follows:  
   
-```  
+```cpp 
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);  
 ```  
   
-## See Also  
+## See also  
  [dynamic_cast Operator](../cpp/dynamic-cast-operator.md)   
  [Keywords](../cpp/keywords-cpp.md)   
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)

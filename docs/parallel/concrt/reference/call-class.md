@@ -2,19 +2,14 @@
 title: "call Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["call", "AGENTS/concurrency::call", "AGENTS/concurrency::call::call", "AGENTS/concurrency::call::process_input_messages", "AGENTS/concurrency::call::process_message", "AGENTS/concurrency::call::propagate_message", "AGENTS/concurrency::call::send_message", "AGENTS/concurrency::call::supports_anonymous_source"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["call class"]
 ms.assetid: 1521970a-1e9c-4b0c-a681-d18e40976f49
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # call Class

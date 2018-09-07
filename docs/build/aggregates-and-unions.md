@@ -2,22 +2,17 @@
 title: "Aggregates and Unions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["aggregates [C++], and unions"]
 ms.assetid: 859fc211-b111-4f12-af98-de78e48f9b92
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Aggregates and Unions
-Other types such as arrays, structs, and unions have stricter alignment requirements that ensure consistent aggregate and union storage and data retrieval. Here are the definitions for array, structure, and union:  
+Other types, such as arrays, structs, and unions, have stricter alignment requirements that ensure consistent aggregate and union storage and data retrieval. Here are the definitions for array, structure, and union:  
   
  Array  
  Contains an ordered group of adjacent data objects. Each object is called an element. All elements within an array have the same size and data type.  
@@ -33,19 +28,19 @@ Other types such as arrays, structs, and unions have stricter alignment requirem
 ||||  
 |-|-|-|  
 |Scalar Type|C Data Type|Required Alignment|  
-|**INT8**|`char`|Byte|  
-|**UINT8**|`unsigned char`|Byte|  
+|**INT8**|**char**|Byte|  
+|**UINT8**|**unsigned char**|Byte|  
 |**INT16**|**short**|Word|  
 |**UINT16**|**unsigned short**|Word|  
-|**INT32**|**int, long**|Doubleword|  
+|**INT32**|**int**, **long**|Doubleword|  
 |**UINT32**|**unsigned int, unsigned long**|Doubleword|  
-|**INT64**|`__int64`|Quadword|  
+|**INT64**|**__int64**|Quadword|  
 |**UINT64**|**unsigned __int64**|Quadword|  
 |**FP32 (single precision)**|**float**|Doubleword|  
 |**FP64 (double precision)**|**double**|Quadword|  
-|**POINTER**|**\***|Quadword|  
-|`__m64`|**struct __m64**|Quadword|  
-|`__m128`|**struct __m128**|Octaword|  
+|**POINTER**|<strong>\*</strong>|Quadword|  
+|**__m64**|**struct __m64**|Quadword|  
+|**__m128**|**struct __m128**|Octaword|  
   
  The following aggregate alignment rules apply:  
   

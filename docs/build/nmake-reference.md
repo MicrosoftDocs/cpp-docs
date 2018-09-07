@@ -2,22 +2,17 @@
 title: "NMAKE Reference | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Microsoft program maintenance utility", "preprocessing NMAKE", "program execution [C++]", "NMAKE program"]
 ms.assetid: 24fab6e3-7e43-4da4-957a-88afbbcf8661
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # NMAKE Reference
-The Microsoft Program Maintenance Utility (NMAKE.EXE) is a command-line tool included with [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] that builds projects based on commands that are contained in a description file.  
+The Microsoft Program Maintenance Utility (NMAKE.EXE) is a command-line tool included with Visual Studio that builds projects based on commands that are contained in a description file.  
   
  To use NMAKE, you must run it in a Developer Command Prompt window. A Developer Command Prompt window has the environment variables set for the tools, libraries, and include file paths required to build at the command line. For details on how to open a Developer Command Prompt window, see [Build C/C++ code on the command line](../build/building-on-the-command-line.md).  
   

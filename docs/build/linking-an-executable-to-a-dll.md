@@ -2,18 +2,13 @@
 title: "Link an executable to a DLL | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["run time [C++], linking", "dynamic load linking [C++]", "linking [C++], DLLs", "DLLs [C++], linking", "implicit linking [C++]", "explicit linking [C++]", "executable files [C++], linking to DLLs", "loading DLLs [C++]"]
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Link an executable to a DLL  
@@ -64,7 +59,7 @@ Here are two hazards of explicit linking to be aware of:
   
 -   If the DLL has a `DllMain` entry point function, the operating system calls the function in the context of the thread that called `LoadLibrary`. The entry-point function is not called if the DLL is already attached to the process because of a previous call to `LoadLibrary` that has had no corresponding call to the `FreeLibrary` function. Explicit linking can cause problems if the DLL uses a `DllMain` function to perform initialization for each thread of a process because threads that already exist when `LoadLibrary` (or `AfxLoadLibrary`) is called are not initialized.  
   
--   If a DLL declares static-extent data as `__declspec(thread)`, it can cause a protection fault if explicitly linked. After the DLL is loaded by a call to `LoadLibrary`, it causes a protection fault whenever the code references this data. (Static-extent data includes both global and local static items.) Therefore, when you create a DLL, you should either avoid using thread-local storage or inform DLL users about the potential pitfalls of dynamically loading your DLL. For more information, see [Using thread local storage in a dynamic-link library (Windows SDK)](http://msdn.microsoft.com/library/windows/desktop/ms686997).  
+-   If a DLL declares static-extent data as `__declspec(thread)`, it can cause a protection fault if explicitly linked. After the DLL is loaded by a call to `LoadLibrary`, it causes a protection fault whenever the code references this data. (Static-extent data includes both global and local static items.) Therefore, when you create a DLL, you should either avoid using thread-local storage or inform DLL users about the potential pitfalls of dynamically loading your DLL. For more information, see [Using thread local storage in a dynamic-link library (Windows SDK)](/windows/desktop/Dlls/using-thread-local-storage-in-a-dynamic-link-library).  
   
 <a name="linking-implicitly"></a>  
   
@@ -139,7 +134,7 @@ Unlike in this example, in most cases you should call `LoadLibrary` and `FreeLib
   
 -   [Working with Import Libraries and Export Files](../build/reference/working-with-import-libraries-and-export-files.md)  
   
--   [The search path used by Windows to locate a DLL](../build/search-path-used-by-windows-to-locate-a-dll.md)  
+-   [Dynamic-Link Library Search Order](/windows/desktop/Dlls/dynamic-link-library-search-order)  
   
 ## See Also  
  [DLLs in Visual C++](../build/dlls-in-visual-cpp.md)

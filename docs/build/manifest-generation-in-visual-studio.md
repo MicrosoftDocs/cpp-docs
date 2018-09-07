@@ -2,18 +2,13 @@
 title: "Manifest Generation in Visual Studio | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["manifests [C++]"]
 ms.assetid: 0af60aa9-d223-42cd-8426-b3fc543a2a81
-caps.latest.revision: 14
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Manifest Generation in Visual Studio
@@ -35,6 +30,6 @@ Generation of a manifest file for a particular project can be controlled in the 
   
 ## See Also  
  [How to: Embed a Manifest Inside a C/C++ Application](../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md)   
- [About Private Assemblies](http://msdn.microsoft.com/library/ff951638)   
- [Manifest Tool](http://msdn.microsoft.com/library/aa375649)   
+ [About Private Assemblies](/windows/desktop/SbsCs/about-private-assemblies-)   
+ [Manifest Tool](/windows/desktop/SbsCs/mt-exe)   
  [Understanding Manifest Generation for C/C++ Programs](../build/understanding-manifest-generation-for-c-cpp-programs.md)

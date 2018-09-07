@@ -2,18 +2,13 @@
 title: "-sdl (Enable Additional Security Checks) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.SDLCheck"]
 dev_langs: ["C++"]
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /sdl (Enable Additional Security Checks)
@@ -53,7 +48,7 @@ Adds recommended Security Development Lifecycle (SDL) checks. These checks inclu
 -   Performs class member initialization. Automatically initializes all class members to zero on object instantiation (before the constructor runs). This helps prevent the use of uninitialized data associated with class members that the constructor does not explicitly initialize.  
   
 ## Remarks  
- For more information, see [Warnings, /sdl, and improving uninitialized variable detection](http://go.microsoft.com/fwlink/p/?LinkId=331012).  
+ For more information, see [Warnings, /sdl, and improving uninitialized variable detection](https://cloudblogs.microsoft.com/microsoftsecure/2012/06/06/warnings-sdl-and-improving-uninitialized-variable-detection/).  
   
 #### To set this compiler option in the Visual Studio development environment  
   

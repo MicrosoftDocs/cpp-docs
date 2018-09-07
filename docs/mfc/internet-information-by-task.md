@@ -2,18 +2,13 @@
 title: "Internet Information by Task | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, Internet applications"]
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Internet Information by Task
@@ -38,8 +33,6 @@ The tasks listed in this topic are sorted based on the task you want to accompli
 -   [Learn about Active documents in the Internet context](../mfc/active-documents-on-the-internet.md)  
   
 -   [Optimize an ActiveX control](../mfc/mfc-activex-controls-optimization.md)  
-  
--   [Create Signed CAB Files for MFC and ATL Controls](http://msdn.microsoft.com/en-us/14e50724-2505-4258-ae6b-326b706de409)  
   
 ###  <a name="_core_wininet_tasks"></a> WinInet Tasks  
   

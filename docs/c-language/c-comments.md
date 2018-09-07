@@ -1,19 +1,14 @@
 ---
 title: "C Comments | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "06/25/2018"
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["code comments, C code", "comments, documenting code", "comments, C code", "/* */ comment delimiters", "comments"]
 ms.assetid: 0f5f2825-e673-49e7-8669-94e2f5294989
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Comments
@@ -61,13 +56,13 @@ printf( "Hello\n" );  /* Comments can go here */
   
  **Microsoft Specific**  
   
- The Microsoft compiler also supports single-line comments preceded by two forward slashes (**//**). If you compile with /Za (ANSI standard), these comments generate errors. These comments cannot extend to a second line.  
+ The Microsoft compiler also supports single-line comments preceded by two forward slashes (__//__). If you compile with /Za (ANSI standard), these comments generate errors. These comments cannot extend to a second line.  
   
 ```  
 // This is a valid comment  
 ```  
   
- Comments beginning with two forward slashes (**//**) are terminated by the next newline character that is not preceded by an escape character. In the next example, the newline character is preceded by a backslash (**\\**), creating an "escape sequence." This escape sequence causes the compiler to treat the next line as part of the previous line. (For more information, see [Escape Sequences](../c-language/escape-sequences.md).)  
+ Comments beginning with two forward slashes (__//__) are terminated by the next newline character that is not preceded by an escape character. In the next example, the newline character is preceded by a backslash (**\\**), creating an "escape sequence." This escape sequence causes the compiler to treat the next line as part of the previous line. (For more information, see [Escape Sequences](../c-language/escape-sequences.md).)  
   
 ```  
 // my comment \  

@@ -2,19 +2,14 @@
 title: "CRuntimeClass Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CRuntimeClass"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CRuntimeClass structure [MFC]", "dynamic class information [MFC]", "runtime [MFC], class information", "run-time class [MFC], CRuntimeClass structure"]
 ms.assetid: de62b6ef-90d4-420f-8c70-f58b36976a2b
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CRuntimeClass Structure
@@ -74,11 +69,11 @@ static CObject* PASCAL CreateObject(LPCWSTR lpszClassName);
 ```  
   
 ### Parameters  
- `lpszClassName`  
+ *lpszClassName*  
  The familiar name of the class to be created.  
   
 ### Return Value  
- A pointer to the newly created object, or **NULL** if the class name is not found or there is insufficient memory to create the object.  
+ A pointer to the newly created object, or NULL if the class name is not found or there is insufficient memory to create the object.  
   
 ### Remarks  
  Classes derived from `CObject` can support dynamic creation, which is the ability to create an object of a specified class at run time. Document, view, and frame classes, for example, should support dynamic creation. For more information on dynamic creation and the `CreateObject` member, see [CObject Class](../../mfc/using-cobject.md) and [CObject Class: Specifying Levels of Functionality](../../mfc/specifying-levels-of-functionality.md).  
@@ -96,11 +91,11 @@ static CRuntimeClass* PASCAL FromName(LPCWSTR lpszClassName);
 ```  
   
 ### Parameters  
- `lpszClassName`  
+ *lpszClassName*  
  The familiar name of a class derived from `CObject`.  
   
 ### Return Value  
- A pointer to a `CRuntimeClass` object, corresponding to the name as passed in `lpszClassName`. The function returns **NULL** if no matching class name was found.  
+ A pointer to a `CRuntimeClass` object, corresponding to the name as passed in *lpszClassName*. The function returns NULL if no matching class name was found.  
   
 ### Example  
  [!code-cpp[NVC_MFCCObjectSample#17](../../mfc/codesnippet/cpp/cruntimeclass-structure_1.cpp)]  
@@ -119,13 +114,13 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
  The familiar name of a class derived from `CObject`.  
   
 ### Return Value  
- **TRUE** if the class calling `IsDerivedFrom` is derived from the base class whose `CRuntimeClass` structure is given as a parameter; otherwise **FALSE**.  
+ TRUE if the class calling `IsDerivedFrom` is derived from the base class whose `CRuntimeClass` structure is given as a parameter; otherwise FALSE.  
   
 ### Remarks  
- The relationship is determined by "walking" from the member's class up the chain of derived classes all the way to the top. This function only returns **FALSE** if no match is found for the base class.  
+ The relationship is determined by "walking" from the member's class up the chain of derived classes all the way to the top. This function only returns FALSE if no match is found for the base class.  
   
 > [!NOTE]
->  To use the `CRuntimeClass` structure, you must include the `IMPLEMENT_DYNAMIC`, `IMPLEMENT_DYNCREATE`, or `IMPLEMENT_SERIAL` macro in the implementation of the class for which you want to retrieve run-time object information.  
+>  To use the `CRuntimeClass` structure, you must include the IMPLEMENT_DYNAMIC, IMPLEMENT_DYNCREATE, or IMPLEMENT_SERIAL macro in the implementation of the class for which you want to retrieve run-time object information.  
   
  For more information on using `CRuntimeClass`, see the article [CObject Class: Accessing Run-Time Class Information](../../mfc/accessing-run-time-class-information.md).  
   
@@ -163,7 +158,7 @@ BOOL IsDerivedFrom(const CRuntimeClass* pBaseClass) const;
  A function pointer to the default constructor that creates an object of your class.  
   
 ### Remarks  
- This pointer is only valid if the class supports dynamic creation; otherwise, the function returns **NULL**.  
+ This pointer is only valid if the class supports dynamic creation; otherwise, the function returns NULL.  
   
 ##  <a name="m_pfngetbaseclass"></a>  CRuntimeClass::m_pfnGetBaseClass  
  If your application uses the MFC library as a shared DLL, this data member points to a function that returns the `CRuntimeClass` structure of the base class.  

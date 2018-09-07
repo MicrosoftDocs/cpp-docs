@@ -2,18 +2,13 @@
 title: "Member Function Templates | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["function templates, member functions"]
 ms.assetid: 83d51835-6a27-40ed-997c-7d90dc9182d8
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Member Function Templates
@@ -110,6 +105,5 @@ int main()
 }  
 ```  
   
-## See Also
-
+## See also
  [Function Templates](../cpp/function-templates.md)

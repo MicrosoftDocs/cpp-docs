@@ -1,18 +1,13 @@
 ---
 title: "How to: Create and Use unique_ptr Instances | Microsoft Docs"
-ms.custom: ""
+ms.custom: "how-to"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 9a373030-e587-452f-b9a5-c5f9d58b7673
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Create and Use unique_ptr Instances
@@ -22,7 +17,7 @@ A [unique_ptr](../standard-library/unique-ptr-class.md) does not share its point
   
  ![Moving the ownership of a unique&#95;ptr](../cpp/media/unique_ptr.png "unique_ptr")  
   
- `unique_ptr` is defined in the `<memory>` header in the C++ Standard Library. It is exactly is efficient as a raw pointer and can be used in C++ Standard Library containers. The addition of `unique_ptr` instances to C++ Standard Library containers is efficient because the move constructor of the `unique_ptr` eliminates the need for a copy operation.  
+ `unique_ptr` is defined in the `<memory>` header in the C++ Standard Library. It is exactly as efficient as a raw pointer and can be used in C++ Standard Library containers. The addition of `unique_ptr` instances to C++ Standard Library containers is efficient because the move constructor of the `unique_ptr` eliminates the need for a copy operation.  
   
 ## Example  
  The following example shows how to create `unique_ptr` instances and pass them between functions.  
@@ -50,6 +45,6 @@ A [unique_ptr](../standard-library/unique-ptr-class.md) does not share its point
   
  For more examples, see [make_unique](../standard-library/memory-functions.md#make_unique).  
   
-## See Also  
+## See also  
  [Smart Pointers](../cpp/smart-pointers-modern-cpp.md)   
  [make_unique](../standard-library/memory-functions.md#make_unique)

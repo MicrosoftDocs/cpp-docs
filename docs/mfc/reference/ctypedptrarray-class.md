@@ -2,19 +2,14 @@
 title: "CTypedPtrArray Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CTypedPtrArray", "AFXTEMPL/CTypedPtrArray", "AFXTEMPL/CTypedPtrArray::Add", "AFXTEMPL/CTypedPtrArray::Append", "AFXTEMPL/CTypedPtrArray::Copy", "AFXTEMPL/CTypedPtrArray::ElementAt", "AFXTEMPL/CTypedPtrArray::GetAt", "AFXTEMPL/CTypedPtrArray::InsertAt", "AFXTEMPL/CTypedPtrArray::SetAt", "AFXTEMPL/CTypedPtrArray::SetAtGrow"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CTypedPtrArray [MFC], Add", "CTypedPtrArray [MFC], Append", "CTypedPtrArray [MFC], Copy", "CTypedPtrArray [MFC], ElementAt", "CTypedPtrArray [MFC], GetAt", "CTypedPtrArray [MFC], InsertAt", "CTypedPtrArray [MFC], SetAt", "CTypedPtrArray [MFC], SetAtGrow"]
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CTypedPtrArray Class
@@ -28,10 +23,10 @@ class CTypedPtrArray : public BASE_CLASS
 ```  
   
 #### Parameters  
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Base class of the typed pointer array class; must be an array class ( `CObArray` or `CPtrArray`).  
   
- `TYPE`  
+ *TYPE*  
  Type of the elements stored in the base-class array.  
   
 ## Members  
@@ -83,7 +78,7 @@ INT_PTR Add(TYPE newElement);
  *TYPE*  
  Template parameter specifying the type of element to be added to the array.  
   
- `newElement`  
+ *newElement*  
  The element to be added to this array.  
   
 ### Return Value  
@@ -93,14 +88,14 @@ INT_PTR Add(TYPE newElement);
  For more detailed remarks, see [CObArray::Add](../../mfc/reference/cobarray-class.md#add).  
   
 ##  <a name="append"></a>  CTypedPtrArray::Append  
- This member function calls `BASE_CLASS`**::Append**.  
+ This member function calls `BASE_CLASS`::Append**.  
   
 ```  
 INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 ```  
   
 ### Parameters  
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Base class of the typed pointer array class; must be an array class ( [CObArray](../../mfc/reference/cobarray-class.md) or [CPtrArray](../../mfc/reference/cptrarray-class.md)).  
   
  *TYPE*  
@@ -123,7 +118,7 @@ void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 ```  
   
 ### Parameters  
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Base class of the typed pointer array class; must be an array class ( [CObArray](../../mfc/reference/cobarray-class.md) or [CPtrArray](../../mfc/reference/cptrarray-class.md)).  
   
  *TYPE*  
@@ -146,11 +141,11 @@ TYPE& ElementAt(INT_PTR nIndex);
  *TYPE*  
  Template parameter specifying the type of elements stored in this array.  
   
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `BASE_CLASS`**::GetUpperBound**.  
   
 ### Return Value  
- A temporary reference to the element at the location specified by `nIndex`. This element is of the type specified by the template parameter *TYPE*.  
+ A temporary reference to the element at the location specified by *nIndex*. This element is of the type specified by the template parameter *TYPE*.  
   
 ### Remarks  
  For more detailed remarks, see [CObArray::ElementAt](../../mfc/reference/cobarray-class.md#elementat).  
@@ -166,11 +161,11 @@ TYPE GetAt(INT_PTR nIndex) const;
  *TYPE*  
  Template parameter specifying the type of elements stored in the array.  
   
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `BASE_CLASS`**::GetUpperBound**.  
   
 ### Return Value  
- A copy of the element at the location specified by `nIndex`. This element is of the type specified by the template parameter *TYPE*.  
+ A copy of the element at the location specified by *nIndex*. This element is of the type specified by the template parameter *TYPE*.  
   
 ### Remarks  
  For more detailed remarks, see [CObArray::GetAt](../../mfc/reference/cobarray-class.md#getat)  
@@ -191,25 +186,25 @@ void InsertAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that may be greater than the value returned by [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound).  
   
  *TYPE*  
  Type of the elements stored in the base-class array.  
   
- `newElement`  
- The object pointer to be placed in this array. A `newElement` of value **NULL** is allowed.  
+ *newElement*  
+ The object pointer to be placed in this array. A *newElement* of value **NULL** is allowed.  
   
- `nCount`  
+ *nCount*  
  The number of times this element should be inserted (defaults to 1).  
   
- `nStartIndex`  
+ *nStartIndex*  
  An integer index that may be greater than the value returned by `CObArray::GetUpperBound`.  
   
- `BASE_CLASS`  
+ *BASE_CLASS*  
  Base class of the typed pointer array class; must be an array class ( [CObArray](../../mfc/reference/cobarray-class.md) or [CPtrArray](../../mfc/reference/cptrarray-class.md)).  
   
- `pNewArray`  
+ *pNewArray*  
  Another array that contains elements to be added to this array.  
   
 ### Remarks  
@@ -227,7 +222,7 @@ TYPE operator[ ](int_ptr nindex) const;
  *TYPE*  
  Template parameter specifying the type of elements stored in the array.  
   
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by `BASE_CLASS`**::GetUpperBound**.  
   
 ### Remarks  
@@ -245,7 +240,7 @@ void SetAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound).  
   
  *TYPE*  
@@ -267,13 +262,13 @@ void SetAtGrow(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0.  
   
  *TYPE*  
  Type of the elements stored in the base-class array.  
   
- `newElement`  
+ *newElement*  
  The object pointer to be added to this array. A **NULL** value is allowed.  
   
 ### Remarks  

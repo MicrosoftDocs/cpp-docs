@@ -2,18 +2,13 @@
 title: "Handlers for Commands and Control Notifications | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["commands [MFC], handlers for", "functions [MFC], handler", "handlers [MFC]", "controls [MFC], notifications", "handlers [MFC], control notification [MFC]", "notifications [MFC], handlers for control", "handlers [MFC], command"]
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Handlers for Commands and Control Notifications
@@ -29,7 +24,7 @@ There are no default handlers for commands or control-notification messages. The
   
  [!code-cpp[NVC_MFCMessageHandling#5](../mfc/codesnippet/cpp/handlers-for-commands-and-control-notifications_2.h)]  
   
- You might assign this command an ID of `IDC_MY_BUTTON` because it is equivalent to an application-specific user-interface object.  
+ You might assign this command an ID of **IDC_MY_BUTTON** because it is equivalent to an application-specific user-interface object.  
   
  Both categories of messages take no arguments and return no value.  
   

@@ -2,19 +2,14 @@
 title: "CD2DPathGeometry Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CD2DPathGeometry", "AFXRENDERTARGET/CD2DPathGeometry", "AFXRENDERTARGET/CD2DPathGeometry::CD2DPathGeometry", "AFXRENDERTARGET/CD2DPathGeometry::Attach", "AFXRENDERTARGET/CD2DPathGeometry::Create", "AFXRENDERTARGET/CD2DPathGeometry::Destroy", "AFXRENDERTARGET/CD2DPathGeometry::Detach", "AFXRENDERTARGET/CD2DPathGeometry::GetFigureCount", "AFXRENDERTARGET/CD2DPathGeometry::GetSegmentCount", "AFXRENDERTARGET/CD2DPathGeometry::Open", "AFXRENDERTARGET/CD2DPathGeometry::Stream", "AFXRENDERTARGET/CD2DPathGeometry::m_pPathGeometry"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CD2DPathGeometry [MFC], CD2DPathGeometry", "CD2DPathGeometry [MFC], Attach", "CD2DPathGeometry [MFC], Create", "CD2DPathGeometry [MFC], Destroy", "CD2DPathGeometry [MFC], Detach", "CD2DPathGeometry [MFC], GetFigureCount", "CD2DPathGeometry [MFC], GetSegmentCount", "CD2DPathGeometry [MFC], Open", "CD2DPathGeometry [MFC], Stream", "CD2DPathGeometry [MFC], m_pPathGeometry"]
 ms.assetid: 686216eb-5080-4242-ace5-8fa1ce96307c
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CD2DPathGeometry Class
@@ -73,7 +68,7 @@ void Attach(ID2D1PathGeometry* pResource);
 ```  
   
 ### Parameters  
- `pResource`  
+ *pResource*  
  Existing resource interface. Cannot be NULL  
   
 ##  <a name="cd2dpathgeometry"></a>  CD2DPathGeometry::CD2DPathGeometry  
@@ -86,10 +81,10 @@ CD2DPathGeometry(
 ```  
   
 ### Parameters  
- `pParentTarget`  
+ *pParentTarget*  
  A pointer to the render target.  
   
- `bAutoDestroy`  
+ *bAutoDestroy*  
  Indicates that the object will be destroyed by owner (pParentTarget).  
   
 ##  <a name="create"></a>  CD2DPathGeometry::Create  
@@ -100,7 +95,7 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ```  
   
 ### Parameters  
- `pRenderTarget`  
+ *pRenderTarget*  
  A pointer to the render target.  
   
 ### Return Value  
@@ -168,7 +163,7 @@ BOOL Stream(ID2D1GeometrySink* geometrySink);
 ```  
   
 ### Parameters  
- `geometrySink`  
+ *geometrySink*  
  The sink to which the path geometry's contents are copied. Modifying this sink does not change the contents of this path geometry.  
   
 ### Return Value  

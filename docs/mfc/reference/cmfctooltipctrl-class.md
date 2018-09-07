@@ -2,25 +2,20 @@
 title: "CMFCToolTipCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCToolTipCtrl", "AFXTOOLTIPCTRL/CMFCToolTipCtrl", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetIconSize", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::GetParams", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawBorder", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawDescription", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawIcon", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawLabel", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnDrawSeparator", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::OnFillBackground", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetDescription", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetFixedWidth", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetHotRibbonButton", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetLocation", "AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetParams"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolTipCtrl [MFC], GetIconSize", "CMFCToolTipCtrl [MFC], GetParams", "CMFCToolTipCtrl [MFC], OnDrawBorder", "CMFCToolTipCtrl [MFC], OnDrawDescription", "CMFCToolTipCtrl [MFC], OnDrawIcon", "CMFCToolTipCtrl [MFC], OnDrawLabel", "CMFCToolTipCtrl [MFC], OnDrawSeparator", "CMFCToolTipCtrl [MFC], OnFillBackground", "CMFCToolTipCtrl [MFC], SetDescription", "CMFCToolTipCtrl [MFC], SetFixedWidth", "CMFCToolTipCtrl [MFC], SetHotRibbonButton", "CMFCToolTipCtrl [MFC], SetLocation", "CMFCToolTipCtrl [MFC], SetParams"]
 ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCToolTipCtrl Class
 An extended tooltip implementation based on the [CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md). A tooltip based on the `CMFCToolTipCtrl` class can display an icon, a label, and a description. You can customize its visual appearance by using a gradient fill, custom text and border colors, bold text, rounded corners, or a balloon style.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
@@ -137,7 +132,7 @@ CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
 ```  
   
 ### Parameters  
- [in] `pParams`  
+ [in] *pParams*  
   
 ### Remarks  
   
@@ -172,13 +167,13 @@ virtual void OnDrawBorder(
 ```  
   
 ### Parameters  
- `[in] pDC`  
+ [in] *pDC*  
  Pointer to a device context.  
   
- `[in] rect`  
+ [in] *rect*  
  The bounding rectangle of the tooltip.  
   
- `[in] clrLine`  
+ [in] *clrLine*  
  Border color.  
   
 ### Remarks  
@@ -195,9 +190,9 @@ virtual CSize OnDrawDescription(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bCalcOnly`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bCalcOnly*  
   
 ### Return Value  
   
@@ -213,14 +208,14 @@ virtual BOOL OnDrawIcon(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Coordinates of the icon.  
   
 ### Return Value  
- `TRUE` if the icon was drawn. Otherwise `FALSE`.  
+ TRUE if the icon was drawn. Otherwise FALSE.  
   
 ### Remarks  
  Override this method in a derived class to display a custom icon. You must also override [CMFCToolTipCtrl::GetIconSize](#geticonsize) to enable the tooltip to correctly calculate the layout of text and description.  
@@ -236,14 +231,14 @@ virtual CSize OnDrawLabel(
 ```  
   
 ### Parameters  
- `[in] pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- `[in] rect`  
+ [in] *rect*  
  Bounding rectangle of the label area.  
   
- `[in] bCalcOnly`  
- If `TRUE`, the label will not be drawn.  
+ [in] *bCalcOnly*  
+ If TRUE, the label will not be drawn.  
   
 ### Return Value  
  Size of the label, in pixels.  
@@ -263,16 +258,16 @@ virtual void OnDrawSeparator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `x1`  
+ [in] *x1*  
  Horizontal coordinate of the left end of the separator.  
   
- [in] `x2`  
+ [in] *x2*  
  Horizontal coordinate of the right end of the separator.  
   
- [in] `Y`  
+ [in] *Y*  
  Vertical coordinate of the separator.  
   
 ### Remarks  
@@ -292,20 +287,20 @@ virtual void OnFillBackground(
 ```  
   
 ### Parameters  
- `[in] pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- `[in] rect`  
+ [in] *rect*  
  Specifies the bounding rectangle of the area to fill.  
   
- `[in] clrText`  
+ [in] *clrText*  
  Tooltip foreground color.  
   
- `[in] clrLine`  
+ [in] *clrLine*  
  Color of borders and the delimiter line between label and description.  
   
 ### Remarks  
- The default implementation fills the rectangle that is specified by `rect` with the color or pattern specified by the most recent call to [CMFCToolTipCtrl::SetParams](#setparams).  
+ The default implementation fills the rectangle that is specified by *rect* with the color or pattern specified by the most recent call to [CMFCToolTipCtrl::SetParams](#setparams).  
   
  Override this method in a derived class if you want to customize the appearance of the tooltip.  
   
@@ -317,7 +312,7 @@ virtual void SetDescription(const CString strDesrciption);
 ```  
   
 ### Parameters  
- `[in] strDesrciption`  
+ [in] *strDesrciption*  
  Description text.  
   
 ### Remarks  
@@ -333,8 +328,8 @@ void SetFixedWidth(
 ```  
   
 ### Parameters  
- [in] `nWidthRegular`  
- [in] `nWidthLargeImage`  
+ [in] *nWidthRegular*  
+ [in] *nWidthLargeImage*  
   
 ### Remarks  
   
@@ -346,7 +341,7 @@ void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 ```  
   
 ### Parameters  
- [in] `pRibbonButton`  
+ [in] *pRibbonButton*  
   
 ### Remarks  
   
@@ -358,7 +353,7 @@ void SetLocation(CPoint pt);
 ```  
   
 ### Parameters  
- [in] `pt`  
+ [in] *pt*  
   
 ### Remarks  
   
@@ -370,11 +365,11 @@ void SetParams(CMFCToolTipInfo* pParams);
 ```  
   
 ### Parameters  
- `[in] pParams`  
+ [in] *pParams*  
  Pointer to a [CMFCToolTipInfo Class](../../mfc/reference/cmfctooltipinfo-class.md) object that contains  the display parameters.  
   
 ### Remarks  
- Whenever the tooltip is displayed, it is drawn by using the colors and visual styles that `pParams` specifies. The value of `pParams` is stored in the protected member `m_Params`, which can be accessed by a derived class that overrides [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl::OnDrawIcon](#ondrawicon), [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel), [CMFCToolTipCtrl::OnDrawSeparator](#ondrawseparator), or [CMFCToolTipCtrl::OnFillBackground](#onfillbackground) to maintain the specified appearance.  
+ Whenever the tooltip is displayed, it is drawn by using the colors and visual styles that *pParams* specifies. The value of *pParams* is stored in the protected member `m_Params`, which can be accessed by a derived class that overrides [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl::OnDrawIcon](#ondrawicon), [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel), [CMFCToolTipCtrl::OnDrawSeparator](#ondrawseparator), or [CMFCToolTipCtrl::OnFillBackground](#onfillbackground) to maintain the specified appearance.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

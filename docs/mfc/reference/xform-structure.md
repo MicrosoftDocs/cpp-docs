@@ -2,19 +2,14 @@
 title: "XFORM Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["XFORM"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["XFORM structure [MFC]"]
 ms.assetid: 4fb4ef5b-05d2-4884-82d1-1cb8f7be6302
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # XFORM Structure
@@ -34,14 +29,14 @@ typedef struct  tagXFORM {  /* xfrm */
 ```  
   
 ## Remarks  
- The `XFORM` structure specifies a world-space to page-space transformation. The **eDx** and **eDy** members specify the horizontal and vertical translation components, respectively. The following table shows how the other members are used, depending on the operation:  
+ The `XFORM` structure specifies a world-space to page-space transformation. The `eDx` and `eDy` members specify the horizontal and vertical translation components, respectively. The following table shows how the other members are used, depending on the operation:  
   
 |Operation|eM11|eM12|eM21|eM22|  
 |---------------|----------|----------|----------|----------|  
 |`Rotation`|Cosine of rotation angle|Sine of rotation angle|Negative sine of rotation angle|Cosine of rotation angle|  
-|**Scaling**|Horizontal scaling component|Nothing|Nothing|Vertical scaling component|  
-|**Shear**|Nothing|Horizontal proportionality constant|Vertical proportionality constant|Nothing|  
-|**Reflection**|Horizontal reflection component|Nothing|Nothing|Vertical reflection component|  
+|`Scaling`|Horizontal scaling component|Nothing|Nothing|Vertical scaling component|  
+|`Shear`|Nothing|Horizontal proportionality constant|Vertical proportionality constant|Nothing|  
+|`Reflection`|Horizontal reflection component|Nothing|Nothing|Vertical reflection component|  
   
 ## Requirements  
  **Header:** wingdi.h  

@@ -2,24 +2,19 @@
 title: "CMFCPopupMenu Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCPopupMenu", "AFXPOPUPMENU/CMFCPopupMenu", "AFXPOPUPMENU/CMFCPopupMenu::CMFCPopupMenu", "AFXPOPUPMENU/CMFCPopupMenu::ActivatePopupMenu", "AFXPOPUPMENU/CMFCPopupMenu::AlwaysShowEmptyToolsEntry", "AFXPOPUPMENU/CMFCPopupMenu::AreAllCommandsShown", "AFXPOPUPMENU/CMFCPopupMenu::CheckArea", "AFXPOPUPMENU/CMFCPopupMenu::CloseMenu", "AFXPOPUPMENU/CMFCPopupMenu::Create", "AFXPOPUPMENU/CMFCPopupMenu::DefaultMouseClickOnClose", "AFXPOPUPMENU/CMFCPopupMenu::EnableMenuLogo", "AFXPOPUPMENU/CMFCPopupMenu::EnableMenuSound", "AFXPOPUPMENU/CMFCPopupMenu::EnableResize", "AFXPOPUPMENU/CMFCPopupMenu::EnableScrolling", "AFXPOPUPMENU/CMFCPopupMenu::EnableVertResize", "AFXPOPUPMENU/CMFCPopupMenu::FindSubItemByCommand", "AFXPOPUPMENU/CMFCPopupMenu::GetActiveMenu", "AFXPOPUPMENU/CMFCPopupMenu::GetAnimationSpeed", "AFXPOPUPMENU/CMFCPopupMenu::GetAnimationType", "AFXPOPUPMENU/CMFCPopupMenu::GetDropDirection", "AFXPOPUPMENU/CMFCPopupMenu::GetForceMenuFocus", "AFXPOPUPMENU/CMFCPopupMenu::GetForceShadow", "AFXPOPUPMENU/CMFCPopupMenu::GetHMenu", "AFXPOPUPMENU/CMFCPopupMenu::GetMenuBar", "AFXPOPUPMENU/CMFCPopupMenu::GetMenuItem", "AFXPOPUPMENU/CMFCPopupMenu::GetMenuItemCount", "AFXPOPUPMENU/CMFCPopupMenu::GetMessageWnd", "AFXPOPUPMENU/CMFCPopupMenu::GetParentArea", "AFXPOPUPMENU/CMFCPopupMenu::GetParentButton", "AFXPOPUPMENU/CMFCPopupMenu::GetParentPopupMenu", "AFXPOPUPMENU/CMFCPopupMenu::GetParentRibbonElement", "AFXPOPUPMENU/CMFCPopupMenu::GetParentToolBar", "AFXPOPUPMENU/CMFCPopupMenu::GetQuickCustomizeType", "AFXPOPUPMENU/CMFCPopupMenu::GetSelItem", "AFXPOPUPMENU/CMFCPopupMenu::HasBeenResized", "AFXPOPUPMENU/CMFCPopupMenu::HideRarelyUsedCommands", "AFXPOPUPMENU/CMFCPopupMenu::InCommand", "AFXPOPUPMENU/CMFCPopupMenu::InsertItem", "AFXPOPUPMENU/CMFCPopupMenu::InsertSeparator", "AFXPOPUPMENU/CMFCPopupMenu::IsAlwaysClose", "AFXPOPUPMENU/CMFCPopupMenu::IsAlwaysShowEmptyToolsEntry", "AFXPOPUPMENU/CMFCPopupMenu::IsCustomizePane", "AFXPOPUPMENU/CMFCPopupMenu::IsEscClose", "AFXPOPUPMENU/CMFCPopupMenu::IsIdle", "AFXPOPUPMENU/CMFCPopupMenu::IsMenuSound", "AFXPOPUPMENU/CMFCPopupMenu::IsQuickCustomize", "AFXPOPUPMENU/CMFCPopupMenu::IsResizeble", "AFXPOPUPMENU/CMFCPopupMenu::IsRightAlign", "AFXPOPUPMENU/CMFCPopupMenu::IsScrollable", "AFXPOPUPMENU/CMFCPopupMenu::IsSendMenuSelectMsg", "AFXPOPUPMENU/CMFCPopupMenu::IsShown", "AFXPOPUPMENU/CMFCPopupMenu::MoveTo", "AFXPOPUPMENU/CMFCPopupMenu::OnCmdMsg", "AFXPOPUPMENU/CMFCPopupMenu::PostCommand", "AFXPOPUPMENU/CMFCPopupMenu::PreTranslateMessage", "AFXPOPUPMENU/CMFCPopupMenu::RecalcLayout", "AFXPOPUPMENU/CMFCPopupMenu::RemoveAllItems", "AFXPOPUPMENU/CMFCPopupMenu::RemoveItem", "AFXPOPUPMENU/CMFCPopupMenu::SaveState", "AFXPOPUPMENU/CMFCPopupMenu::SetAnimationSpeed", "AFXPOPUPMENU/CMFCPopupMenu::SetAnimationType", "AFXPOPUPMENU/CMFCPopupMenu::SetAutoDestroy", "AFXPOPUPMENU/CMFCPopupMenu::SetDefaultItem", "AFXPOPUPMENU/CMFCPopupMenu::SetForceMenuFocus", "AFXPOPUPMENU/CMFCPopupMenu::SetForceShadow", "AFXPOPUPMENU/CMFCPopupMenu::SetMaxWidth", "AFXPOPUPMENU/CMFCPopupMenu::SetMessageWnd", "AFXPOPUPMENU/CMFCPopupMenu::SetParentRibbonElement", "AFXPOPUPMENU/CMFCPopupMenu::SetQuickCustomizeType", "AFXPOPUPMENU/CMFCPopupMenu::SetQuickMode", "AFXPOPUPMENU/CMFCPopupMenu::SetRightAlign", "AFXPOPUPMENU/CMFCPopupMenu::SetSendMenuSelectMsg", "AFXPOPUPMENU/CMFCPopupMenu::ShowAllCommands", "AFXPOPUPMENU/CMFCPopupMenu::TriggerResize", "AFXPOPUPMENU/CMFCPopupMenu::UpdateAllShadows", "AFXPOPUPMENU/CMFCPopupMenu::UpdateShadow", "AFXPOPUPMENU/CMFCPopupMenu::CreateTearOffBar", "AFXPOPUPMENU/CMFCPopupMenu::OnChangeHot", "AFXPOPUPMENU/CMFCPopupMenu::OnChooseItem"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPopupMenu [MFC], CMFCPopupMenu", "CMFCPopupMenu [MFC], ActivatePopupMenu", "CMFCPopupMenu [MFC], AlwaysShowEmptyToolsEntry", "CMFCPopupMenu [MFC], AreAllCommandsShown", "CMFCPopupMenu [MFC], CheckArea", "CMFCPopupMenu [MFC], CloseMenu", "CMFCPopupMenu [MFC], Create", "CMFCPopupMenu [MFC], DefaultMouseClickOnClose", "CMFCPopupMenu [MFC], EnableMenuLogo", "CMFCPopupMenu [MFC], EnableMenuSound", "CMFCPopupMenu [MFC], EnableResize", "CMFCPopupMenu [MFC], EnableScrolling", "CMFCPopupMenu [MFC], EnableVertResize", "CMFCPopupMenu [MFC], FindSubItemByCommand", "CMFCPopupMenu [MFC], GetActiveMenu", "CMFCPopupMenu [MFC], GetAnimationSpeed", "CMFCPopupMenu [MFC], GetAnimationType", "CMFCPopupMenu [MFC], GetDropDirection", "CMFCPopupMenu [MFC], GetForceMenuFocus", "CMFCPopupMenu [MFC], GetForceShadow", "CMFCPopupMenu [MFC], GetHMenu", "CMFCPopupMenu [MFC], GetMenuBar", "CMFCPopupMenu [MFC], GetMenuItem", "CMFCPopupMenu [MFC], GetMenuItemCount", "CMFCPopupMenu [MFC], GetMessageWnd", "CMFCPopupMenu [MFC], GetParentArea", "CMFCPopupMenu [MFC], GetParentButton", "CMFCPopupMenu [MFC], GetParentPopupMenu", "CMFCPopupMenu [MFC], GetParentRibbonElement", "CMFCPopupMenu [MFC], GetParentToolBar", "CMFCPopupMenu [MFC], GetQuickCustomizeType", "CMFCPopupMenu [MFC], GetSelItem", "CMFCPopupMenu [MFC], HasBeenResized", "CMFCPopupMenu [MFC], HideRarelyUsedCommands", "CMFCPopupMenu [MFC], InCommand", "CMFCPopupMenu [MFC], InsertItem", "CMFCPopupMenu [MFC], InsertSeparator", "CMFCPopupMenu [MFC], IsAlwaysClose", "CMFCPopupMenu [MFC], IsAlwaysShowEmptyToolsEntry", "CMFCPopupMenu [MFC], IsCustomizePane", "CMFCPopupMenu [MFC], IsEscClose", "CMFCPopupMenu [MFC], IsIdle", "CMFCPopupMenu [MFC], IsMenuSound", "CMFCPopupMenu [MFC], IsQuickCustomize", "CMFCPopupMenu [MFC], IsResizeble", "CMFCPopupMenu [MFC], IsRightAlign", "CMFCPopupMenu [MFC], IsScrollable", "CMFCPopupMenu [MFC], IsSendMenuSelectMsg", "CMFCPopupMenu [MFC], IsShown", "CMFCPopupMenu [MFC], MoveTo", "CMFCPopupMenu [MFC], OnCmdMsg", "CMFCPopupMenu [MFC], PostCommand", "CMFCPopupMenu [MFC], PreTranslateMessage", "CMFCPopupMenu [MFC], RecalcLayout", "CMFCPopupMenu [MFC], RemoveAllItems", "CMFCPopupMenu [MFC], RemoveItem", "CMFCPopupMenu [MFC], SaveState", "CMFCPopupMenu [MFC], SetAnimationSpeed", "CMFCPopupMenu [MFC], SetAnimationType", "CMFCPopupMenu [MFC], SetAutoDestroy", "CMFCPopupMenu [MFC], SetDefaultItem", "CMFCPopupMenu [MFC], SetForceMenuFocus", "CMFCPopupMenu [MFC], SetForceShadow", "CMFCPopupMenu [MFC], SetMaxWidth", "CMFCPopupMenu [MFC], SetMessageWnd", "CMFCPopupMenu [MFC], SetParentRibbonElement", "CMFCPopupMenu [MFC], SetQuickCustomizeType", "CMFCPopupMenu [MFC], SetQuickMode", "CMFCPopupMenu [MFC], SetRightAlign", "CMFCPopupMenu [MFC], SetSendMenuSelectMsg", "CMFCPopupMenu [MFC], ShowAllCommands", "CMFCPopupMenu [MFC], TriggerResize", "CMFCPopupMenu [MFC], UpdateAllShadows", "CMFCPopupMenu [MFC], UpdateShadow", "CMFCPopupMenu [MFC], CreateTearOffBar", "CMFCPopupMenu [MFC], OnChangeHot", "CMFCPopupMenu [MFC], OnChooseItem"]
 ms.assetid: 9555dca1-8c9c-44c9-af72-0659ddad128e
-caps.latest.revision: 40
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPopupMenu Class
 Implements Windows pop-up menu functionality and extends it by adding features such as tear-off menus and tooltips.
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
   
 ## Syntax  
   
@@ -155,8 +150,8 @@ static BOOL __stdcall ActivatePopupMenu(
 ```  
   
 ### Parameters  
- [in] `pTopFrame`  
- [in] `pPopupMenu`  
+ [in] *pTopFrame*  
+ [in] *pPopupMenu*  
   
 ### Return Value  
   
@@ -170,8 +165,8 @@ static void AlwaysShowEmptyToolsEntry(BOOL bShow = TRUE);
 ```  
   
 ### Parameters  
- [in] `bShow`  
- `TRUE` if the pop-up menu can display empty entries; `FALSE` otherwise.  
+ [in] *bShow*  
+ TRUE if the pop-up menu can display empty entries; FALSE otherwise.  
   
 ##  <a name="areallcommandsshown"></a>  CMFCPopupMenu::AreAllCommandsShown  
 
@@ -192,7 +187,7 @@ MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;
 ```  
   
 ### Parameters  
- [in] `ptScreen`  
+ [in] *ptScreen*  
  A point, in screen coordinates.  
   
 ### Return Value  
@@ -201,17 +196,17 @@ MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;
 ### Remarks  
  A MENUAREA_TYPE parameter can have any one of the following values.  
   
--   OUTSIDE - `ptScreen` is outside the pop-up menu.  
+-   OUTSIDE - *ptScreen* is outside the pop-up menu.  
   
--   LOGO - `ptScreen` is over a logo area.  
+-   LOGO - *ptScreen* is over a logo area.  
   
--   TEAROFF_CAPTION - `ptScreen` is over the tear-off caption.  
+-   TEAROFF_CAPTION - *ptScreen* is over the tear-off caption.  
   
--   SHADOW_BOTTOM - `ptScreen` is over the bottom shadow of the pop-up menu.  
+-   SHADOW_BOTTOM - *ptScreen* is over the bottom shadow of the pop-up menu.  
   
--   SHADOW_RIGHT - `ptScreen` is over the right shadow of the pop-up menu.  
+-   SHADOW_RIGHT - *ptScreen* is over the right shadow of the pop-up menu.  
   
--   MENU - `ptScreen` is over a command.  
+-   MENU - *ptScreen* is over a command.  
   
 ##  <a name="closemenu"></a>  CMFCPopupMenu::CloseMenu  
 
@@ -221,7 +216,7 @@ void CloseMenu(BOOL bSetFocusToBar = FALSE);
 ```  
   
 ### Parameters  
- [in] `bSetFocusToBar`  
+ [in] *bSetFocusToBar*  
   
 ### Remarks  
   
@@ -235,10 +230,10 @@ CMFCPopupMenu(
 ```  
   
 ### Parameters  
- [in] `pCustPage`  
+ [in] *pCustPage*  
  A pointer to a customization page.  
   
- [in] `lpszTitle`  
+ [in] *lpszTitle*  
  A string that contains the menu caption.  
   
 ### Remarks  
@@ -258,29 +253,29 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  The parent window for the `CMFCPopupMenu`.  
   
- [in] `x`  
+ [in] *x*  
  The horizontal screen coordinate for the location of the pop-up menu  
   
- [in] `y`  
+ [in] *y*  
  The vertical screen coordinate for the location of the pop-menu.  
   
- [in] `hMenu`  
+ [in] *hMenu*  
  A handle to a menu resource.  
   
- [in] `bLocked`  
- A Boolean parameter that indicates whether the menu is customizable. `FALSE` indicates that the pop-up menu is customizable.  
+ [in] *bLocked*  
+ A Boolean parameter that indicates whether the menu is customizable. FALSE indicates that the pop-up menu is customizable.  
   
- [in] `bOwnMessage`  
+ [in] *bOwnMessage*  
  A Boolean parameter that indicates how the framework routes the menu messages. See the Remarks section for more details.  
   
 ### Return Value  
- `TRUE` if the method is successful; otherwise `FALSE`.  
+ TRUE if the method is successful; otherwise FALSE.  
   
 ### Remarks  
- If `bOwnMessage` is `TRUE`, the framework routes any menu messages to `pWndParent`. `pWndParent` must not be `NULL` if `bOwnMessage` is `TRUE.` If `bOwnMessage` is `FALSE`, the framework routes the menu messages to the parent pop-up menu.  
+ If *bOwnMessage* is TRUE, the framework routes any menu messages to *pWndParent*. *pWndParent* must not be NULL if *bOwnMessage* is TRUE. If *bOwnMessage* is FALSE, the framework routes the menu messages to the parent pop-up menu.  
   
 ### Example  
  The following example demonstrates how to use the `Create` method of the `CMFCPopuMenu` class. This code snippet is part of the [Custom Pages sample](../../visual-cpp-samples.md).  
@@ -298,9 +293,9 @@ virtual CPane* CreateTearOffBar(
 ```  
   
 ### Parameters  
- [in] `pWndMain`  
- [in] `uiID`  
- [in] `lpszName`  
+ [in] *pWndMain*  
+ [in] *uiID*  
+ [in] *lpszName*  
   
 ### Return Value  
   
@@ -327,16 +322,16 @@ void EnableMenuLogo(
 ```  
   
 ### Parameters  
- [in] `iLogoSize`  
+ [in] *iLogoSize*  
  The size of the logo, in pixels.  
   
- [in] `nLogoLocation`  
+ [in] *nLogoLocation*  
  An enumerated data type that indicates the location of the logo.  
   
 ### Remarks  
  To display the logo, implement the method [CFrameWndEx::OnDrawMenuLogo](../../mfc/reference/cframewndex-class.md#ondrawmenulogo) in the main frame window.  
   
- The possible values for `nLogoLocation` are MENU_LOGO_LEFT, MENU_LOGO_RIGHT, MENU_LOGO_TOP, and MENU_LOGO_BOTTOM.  
+ The possible values for *nLogoLocation* are MENU_LOGO_LEFT, MENU_LOGO_RIGHT, MENU_LOGO_TOP, and MENU_LOGO_BOTTOM.  
   
 ##  <a name="enablemenusound"></a>  CMFCPopupMenu::EnableMenuSound  
  Enables menu sound.  
@@ -346,11 +341,11 @@ static void EnableMenuSound(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable sound, `FALSE` otherwise.  
+ [in] *bEnable*  
+ TRUE to enable sound, FALSE otherwise.  
   
 ### Remarks  
- If you enable sound, the framework calls the [PlaySound](http://msdn.microsoft.com/library/windows/desktop/bb774426) method when a user opens a pop-up menu or selects a menu command. By default, this feature is enabled.  
+ If you enable sound, the framework calls the [PlaySound](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iusernotification-playsound) method when a user opens a pop-up menu or selects a menu command. By default, this feature is enabled.  
   
 ##  <a name="enableresize"></a>  CMFCPopupMenu::EnableResize  
 
@@ -360,7 +355,7 @@ void EnableResize(CSize sizeMinResize);
 ```  
   
 ### Parameters  
- [in] `sizeMinResize`  
+ [in] *sizeMinResize*  
   
 ### Remarks  
   
@@ -372,7 +367,7 @@ void EnableScrolling(BOOL = TRUE);
 ```  
   
 ### Parameters  
- [in] `BOOL`  
+ [in] *BOOL*  
   
 ### Remarks  
   
@@ -384,7 +379,7 @@ void EnableVertResize(int nMinResize);
 ```  
   
 ### Parameters  
- [in] `nMinResize`  
+ [in] *nMinResize*  
   
 ### Remarks  
   
@@ -396,7 +391,7 @@ CMFCToolBarMenuButton* FindSubItemByCommand(UINT uiCmd) const;
 ```  
   
 ### Parameters  
- [in] `uiCmd`  
+ [in] *uiCmd*  
   
 ### Return Value  
   
@@ -436,7 +431,7 @@ static CMFCPopupMenu::ANIMATION_TYPE GetAnimationType(BOOL bNoSystem = FALSE);
 ```  
   
 ### Parameters  
- [in] `bNoSystem`  
+ [in] *bNoSystem*  
  A Boolean parameter that indicates whether this method checks the global value. FALSE if you want this method to return the animation style for this instance of the [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md).  
   
 ### Return Value  
@@ -478,7 +473,7 @@ static BOOL GetForceMenuFocus();
 ```  
   
 ### Return Value  
- `TRUE` if the input focus is returned to the menu bar when a pop-up menu is displayed; `FALSE` if the pop-up menu retains the focus.  
+ TRUE if the input focus is returned to the menu bar when a pop-up menu is displayed; FALSE if the pop-up menu retains the focus.  
   
 ### Remarks  
  By default, your application does not return focus to the menu bar. To change this setting, use [CMFCPopupMenu::SetForceMenuFocus](#setforcemenufocus).  
@@ -522,11 +517,11 @@ CMFCToolBarMenuButton* GetMenuItem(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of a menu item.  
   
 ### Return Value  
- A pointer to a menu item. `NULL` if the index is invalid.  
+ A pointer to a menu item. NULL if the index is invalid.  
   
 ### Remarks  
  Menu items are represented by the [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md). When you call this method, it returns a pointer to the appropriate `CMFCToolBarMenuButton`.  
@@ -549,7 +544,7 @@ CWnd* GetMessageWnd() const;
 ```  
   
 ### Return Value  
- A pointer to the window that receives the pop-up menu messages; `NULL` if there is no window.  
+ A pointer to the window that receives the pop-up menu messages; NULL if there is no window.  
   
 ### Remarks  
  When you use the method [CMFCPopupMenu::Create](#create) to create a pop-up menu, you specify what window receives the menu messages.  
@@ -562,7 +557,7 @@ virtual CWnd* GetParentArea(CRect& rectParentBtn);
 ```  
   
 ### Parameters  
- [in] `rectParentBtn`  
+ [in] *rectParentBtn*  
   
 ### Return Value  
   
@@ -576,7 +571,7 @@ CMFCToolBarMenuButton* GetParentButton() const;
 ```  
   
 ### Return Value  
- A pointer to the parent toolbar button. `NULL` if the pop-up menu has no parent toolbar button.  
+ A pointer to the parent toolbar button. NULL if the pop-up menu has no parent toolbar button.  
   
 ### Remarks  
  A `CMFCPopupMenu` can be associated with a button on the menu. In this scenario, the pop-up menu appears when a user selects the parent toolbar button.  
@@ -591,7 +586,7 @@ CMFCPopupMenu* GetParentPopupMenu() const;
 ```  
   
 ### Return Value  
- A pointer to the parent `CMFCPopupMenu` object; `NULL` if there is no parent pop-up menu.  
+ A pointer to the parent `CMFCPopupMenu` object; NULL if there is no parent pop-up menu.  
   
 ### Remarks  
  A pop-up menu has a parent `CMFCPopupMenu` object only if it is a submenu.  
@@ -615,7 +610,7 @@ CMFCToolBar* GetParentToolBar() const;
 ```  
   
 ### Return Value  
- A pointer to the parent toolbar. `NULL` if the pop-up menu has no parent toolbar.  
+ A pointer to the parent toolbar. NULL if the pop-up menu has no parent toolbar.  
   
 ### Remarks  
  If the `CMFCPopupMenu` is a shortcut menu, then it has no parent toolbar.  
@@ -639,7 +634,7 @@ CMFCToolBarMenuButton* GetSelItem();
 ```  
   
 ### Return Value  
- A pointer to the currently selected menu command; `NULL` if no item is selected.  
+ A pointer to the currently selected menu command; NULL if no item is selected.  
   
 ### Remarks  
  The menu commands on a pop-up menu are represented by the [CMFCToolBarMenuButton Class](../../mfc/reference/cmfctoolbarmenubutton-class.md), or a class derived from `CMFCToolBarMenuButton`.  
@@ -663,7 +658,7 @@ BOOL HideRarelyUsedCommands() const;
 ```  
   
 ### Return Value  
- `TRUE` if the pop-up menu can hide the rarely used commands; otherwise `FALSE`.  
+ TRUE if the pop-up menu can hide the rarely used commands; otherwise FALSE.  
   
 ### Remarks  
  This method specifies only whether a pop-up menu can hide rarely used commands, not if that configuration is enabled. A pop-up menu can hide rarely used commands if it has a parent button and the parent window is derived from the [CMFCMenuBar Class](../../mfc/reference/cmfcmenubar-class.md). Use [CMFCMenuBar::SetRecentlyUsedMenus](../../mfc/reference/cmfcmenubar-class.md#setrecentlyusedmenus) to enable this feature and [CMFCMenuBar::IsRecentlyUsedMenus](../../mfc/reference/cmfcmenubar-class.md#isrecentlyusedmenus) to determine if this feature is currently enabled. You must call both of these methods for the parent window.  
@@ -689,17 +684,17 @@ int InsertItem(
 ```  
   
 ### Parameters  
- [in] `button`  
+ [in] *button*  
  A reference to the menu item to add.  
   
- [in] `iInsertAt`  
- The zero-based index for the new item. If `iInsertAt` is -1, the item is added to the end of the menu.  
+ [in] *iInsertAt*  
+ The zero-based index for the new item. If *iInsertAt* is -1, the item is added to the end of the menu.  
   
 ### Return Value  
  The zero-based index of the position where the item was inserted. -1 if the method fails.  
   
 ### Remarks  
- This method will fail if you provide an invalid value for `iInsertAt`, such as an integer larger than the number of items currently on the pop-up menu.  
+ This method will fail if you provide an invalid value for *iInsertAt*, such as an integer larger than the number of items currently on the pop-up menu.  
   
 ##  <a name="insertseparator"></a>  CMFCPopupMenu::InsertSeparator  
  Inserts a separator into the pop-up menu at the specified location.  
@@ -709,16 +704,16 @@ int InsertSeparator(int iInsertAt = -1);
 ```  
   
 ### Parameters  
- [in] `iInsertAt`  
+ [in] *iInsertAt*  
  The zero-based index of the position where this method will insert the separator.  
   
 ### Return Value  
  The zero-based index of the position where the separator was inserted. -1 if this method fails.  
   
 ### Remarks  
- A value of -1 for `iInsertAt` means this method will add the separator to the end of the pop-up menu.  
+ A value of -1 for *iInsertAt* means this method will add the separator to the end of the pop-up menu.  
   
- This method fails if `iInsertAt` is an invalid value.  
+ This method fails if *iInsertAt* is an invalid value.  
   
 ##  <a name="isalwaysclose"></a>  CMFCPopupMenu::IsAlwaysClose  
 
@@ -750,7 +745,7 @@ BOOL IsCustomizePane();
 ```  
   
 ### Return Value  
- `TRUE` if the pop-up is a **QuckCustomizePane**; otherwise `FALSE`.  
+ TRUE if the pop-up is a **QuckCustomizePane**; otherwise FALSE.  
   
 ### Remarks  
  Use the **QuickCustomizePane** to enable the user to directly customize the pop-up menu. The **QuickCustomizePane** is a `CMFCPopupMenu` that appears when the user clicks on a toolbar button to edit it directly.  
@@ -776,7 +771,7 @@ virtual BOOL IsIdle() const;
 ```  
   
 ### Return Value  
- `TRUE` if the pop-up menu is in idle mode; otherwise `FALSE`.  
+ TRUE if the pop-up menu is in idle mode; otherwise FALSE.  
   
 ### Remarks  
  By default, a pop-up menu is in idle mode if the display animation is complete and the user is not scrolling the pop-up menu.  
@@ -800,7 +795,7 @@ BOOL IsQuickCustomize();
 ```  
   
 ### Return Value  
- `TRUE` if the associated menu button is in QuickCustomize mode; otherwise `FALSE`. This method will also return `FALSE` if the pop-up menu is not associated with a `CMFCToolBarMenuButton`.  
+ TRUE if the associated menu button is in QuickCustomize mode; otherwise FALSE. This method will also return FALSE if the pop-up menu is not associated with a `CMFCToolBarMenuButton`.  
   
 ### Remarks  
  In QuickCustomize mode the user selects a button on a toolbar to customize the button directly.  
@@ -824,7 +819,7 @@ BOOL IsRightAlign() const;
 ```  
   
 ### Return Value  
- `TRUE` if the menu is right-aligned; `FALSE` if the menu left-aligned.  
+ TRUE if the menu is right-aligned; FALSE if the menu left-aligned.  
   
 ### Remarks  
  You can use [CMFCPopupMenu::SetRightAlign](#setrightalign) to set the menu alignment. By default, pop-up menus use left-alignment.  
@@ -850,10 +845,10 @@ static BOOL IsSendMenuSelectMsg();
 ```  
   
 ### Return Value  
- `TRUE` if the framework notifies the parent frame; otherwise `FALSE`.  
+ TRUE if the framework notifies the parent frame; otherwise FALSE.  
   
 ### Remarks  
- The framework notifies the parent frame by sending it the `WM_MENUSELECT` message when a used selects a menu command.  
+ The framework notifies the parent frame by sending it the WM_MENUSELECT message when a used selects a menu command.  
   
 ##  <a name="isshown"></a>  CMFCPopupMenu::IsShown  
  Indicates whether the pop-up menu is currently visible.  
@@ -863,7 +858,7 @@ BOOL IsShown() const;
 ```  
   
 ### Return Value  
- `TRUE` if a pop-up menu is visible; otherwise `FALSE`.  
+ TRUE if a pop-up menu is visible; otherwise FALSE.  
   
 ##  <a name="moveto"></a>  CMFCPopupMenu::MoveTo  
 
@@ -873,7 +868,7 @@ void MoveTo(const CPoint& pt);
 ```  
   
 ### Parameters  
- [in] `pt`  
+ [in] *pt*  
   
 ### Remarks  
   
@@ -885,7 +880,7 @@ virtual void OnChangeHot(int nHot);
 ```  
   
 ### Parameters  
- [in] `nHot`  
+ [in] *nHot*  
   
 ### Remarks  
   
@@ -897,7 +892,7 @@ virtual void OnChooseItem(UINT uidCmdID);
 ```  
   
 ### Parameters  
- [in] `uidCmdID`  
+ [in] *uidCmdID*  
   
 ### Remarks  
   
@@ -913,10 +908,10 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### Parameters  
- [in] `nID`  
- [in] `nCode`  
- [in] `pExtra`  
- [in] `pHandlerInfo`  
+ [in] *nID*  
+ [in] *nCode*  
+ [in] *pExtra*  
+ [in] *pHandlerInfo*  
   
 ### Return Value  
   
@@ -930,7 +925,7 @@ BOOL PostCommand(UINT uiCommandID);
 ```  
   
 ### Parameters  
- [in] `uiCommandID`  
+ [in] *uiCommandID*  
   
 ### Return Value  
   
@@ -944,7 +939,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### Parameters  
- [in] `pMsg`  
+ [in] *pMsg*  
   
 ### Return Value  
   
@@ -958,7 +953,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### Parameters  
- [in] `bNotify`  
+ [in] *bNotify*  
   
 ### Remarks  
   
@@ -977,11 +972,11 @@ BOOL RemoveItem(int iIndex);
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of the item to delete.  
   
 ### Return Value  
- `TRUE` if the method is successful; otherwise `FALSE`.  
+ TRUE if the method is successful; otherwise FALSE.  
   
 ### Remarks  
  This method automatically arranges any separators that are affected by the removal of an item. For more information about how the framework rearranges separators, see [CMFCToolBar::RemoveButton](../../mfc/reference/cmfctoolbar-class.md#removebutton).  
@@ -1003,13 +998,13 @@ static void SetAnimationSpeed(UINT nElapse);
 ```  
   
 ### Parameters  
- [in] `nElapse`  
+ [in] *nElapse*  
  The new animation speed, in milliseconds.  
   
 ### Remarks  
  The animation speed is a global value and affects all the pop-up menus in the application. This value specifies how long it takes for the animation for a pop-up menu to finish.  
   
- By default, this parameter is set to 30 milliseconds. The range of valid values for `nElapse` is from 0 to 200.  
+ By default, this parameter is set to 30 milliseconds. The range of valid values for *nElapse* is from 0 to 200.  
   
 ##  <a name="setanimationtype"></a>  CMFCPopupMenu::SetAnimationType  
  Sets the animation type for this pop-up menu.  
@@ -1019,11 +1014,11 @@ static void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### Parameters  
- [in] `type`  
+ [in] *type*  
  An enumerated data type that specifies the type of animation.  
   
 ### Remarks  
- See [CMFCPopupMenu::GetAnimationType](#getanimationtype) for a list of valid values for `type`.  
+ See [CMFCPopupMenu::GetAnimationType](#getanimationtype) for a list of valid values for *type*.  
   
 ##  <a name="setautodestroy"></a>  CMFCPopupMenu::SetAutoDestroy  
 
@@ -1033,7 +1028,7 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 ```  
   
 ### Parameters  
- [in] `bAutoDestroy`  
+ [in] *bAutoDestroy*  
   
 ### Remarks  
   
@@ -1045,7 +1040,7 @@ void SetDefaultItem(UINT uiCmd);
 ```  
   
 ### Parameters  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  The menu command ID of the new default command.  
   
 ### Remarks  
@@ -1059,8 +1054,8 @@ static void SetForceMenuFocus(BOOL bValue);
 ```  
   
 ### Parameters  
- [in] `bValue`  
- `TRUE` if you want the framework to force the input focus to the menu bar when a pop-up menu is displayed. `FALSE` if you want the pop-up menu to retain the focus.  
+ [in] *bValue*  
+ TRUE if you want the framework to force the input focus to the menu bar when a pop-up menu is displayed. FALSE if you want the pop-up menu to retain the focus.  
   
 ### Remarks  
  This method sets a flag that is global for all pop-up menus in the application. By default, this feature is not enabled.  
@@ -1073,8 +1068,8 @@ static void SetForceShadow(BOOL bValue);
 ```  
   
 ### Parameters  
- [in] `bValue`  
- `TRUE` if you want the framework to draw menu shadows, `FALSE` otherwise.  
+ [in] *bValue*  
+ TRUE if you want the framework to draw menu shadows, FALSE otherwise.  
   
 ### Remarks  
  When you call this method, it sets a global flag in your application. This flag affects all pop-up menus in your application.  
@@ -1087,7 +1082,7 @@ void SetMaxWidth(int iMaxWidth);
 ```  
   
 ### Parameters  
- [in] `iMaxWidth`  
+ [in] *iMaxWidth*  
  The maximum width for the pop-up menu, in pixels.  
   
 ### Remarks  
@@ -1101,7 +1096,7 @@ void SetMessageWnd(CWnd* pMsgWnd);
 ```  
   
 ### Parameters  
- [in] `pMsgWnd`  
+ [in] *pMsgWnd*  
   
 ### Remarks  
   
@@ -1113,7 +1108,7 @@ void SetParentRibbonElement(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### Parameters  
- [in] `pElem`  
+ [in] *pElem*  
   
 ### Remarks  
   
@@ -1125,7 +1120,7 @@ void SetQuickCustomizeType(QUICK_CUSTOMIZE_TYPE Type);
 ```  
   
 ### Parameters  
- [in] `Type`  
+ [in] *Type*  
   
 ### Remarks  
   
@@ -1146,8 +1141,8 @@ void SetRightAlign(BOOL bRightAlign = TRUE);
 ```  
   
 ### Parameters  
- [in] `bRightAlign`  
- A Boolean that indicates the menu alignment. `TRUE` indicates right alignment, `FALSE` indicates left alignment.  
+ [in] *bRightAlign*  
+ A Boolean that indicates the menu alignment. TRUE indicates right alignment, FALSE indicates left alignment.  
   
 ### Remarks  
  By default, all pop-up menus are left-aligned.  
@@ -1160,11 +1155,11 @@ static void SetSendMenuSelectMsg(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
- `TRUE` if the pop-up menu notifies its parent frame, `FALSE` otherwise.  
+ [in] *bSet*  
+ TRUE if the pop-up menu notifies its parent frame, FALSE otherwise.  
   
 ### Remarks  
- This is a global option for all the pop-up menus in an application. If it is enabled, the pop-up menus will send a `WM_MENUSELECT` message to the parent frame when the user selects a command.  
+ This is a global option for all the pop-up menus in an application. If it is enabled, the pop-up menus will send a WM_MENUSELECT message to the parent frame when the user selects a command.  
   
 ##  <a name="showallcommands"></a>  CMFCPopupMenu::ShowAllCommands  
  Forces the pop-up menu to display all commands.  
@@ -1193,7 +1188,7 @@ static void UpdateAllShadows(LPRECT lprectScreen = NULL);
 ```  
   
 ### Parameters  
- [in] `lprectScreen`  
+ [in] *lprectScreen*  
  A rectangle that specifies the region to update, in screen coordinates.  
   
 ### Remarks  
@@ -1207,7 +1202,7 @@ void UpdateShadow(LPRECT lprectScreen = NULL);
 ```  
   
 ### Parameters  
- [in] `lprectScreen`  
+ [in] *lprectScreen*  
  A rectangle, in screen coordinates, that specifies the boundaries of the region to update.  
   
 ### Remarks  

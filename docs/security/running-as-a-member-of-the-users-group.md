@@ -2,19 +2,14 @@
 title: "Running as a Member of the Users Group | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["PRJ0050", "VCD0047"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Users Group [C++]", "security [C++], Users Group", "Windows accounts [C++]", "non administrator users [C++]", "user accounts [C++]", "administrator (not running as) [C++]"]
 ms.assetid: e48a03ec-d345-49f6-809a-1a291eecbc81
-caps.latest.revision: 17
-author: "ghogen"
-ms.author: "ghogen"
-manager: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Running as a Member of the Users Group

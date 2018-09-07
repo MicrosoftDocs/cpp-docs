@@ -2,29 +2,24 @@
 title: "Interface Elements | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["architecture [MFC], MFC Feature Pack", "MFC Feature Pack, architecture"]
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Interface Elements
-This document describes interface elements that were introduced in [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] SP1, and also describes differences with the earlier version of the library.  
+This document describes interface elements that were introduced in Visual Studio 2008 SP1, and also describes differences with the earlier version of the library.  
   
  The following illustration shows an application that was built by using the new interface elements.  
   
  ![MFC Feature Pack example application](../mfc/media/mfc_featurepack.png "mfc_featurepack")  
   
 ## Window Docking  
- Window docking functionality resembles the window docking that the [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] graphical user interface uses.  
+ Window docking functionality resembles the window docking that the Visual Studio graphical user interface uses.  
   
 ## Control Bars are Now Panes  
  Control bars are now known as panes and are derived from [CBasePane Class](../mfc/reference/cbasepane-class.md). In earlier versions of MFC, the base class of control bars was `CControlBar`.  

@@ -46,24 +46,24 @@ struct ReduceFunc : binary_function<unordered_map<wstring, size_t>,
 int wmain()
 { 
     // File 1 
-    vector<wstring> v1;
-    v1.push_back(L"word1"); //1 
-    v1.push_back(L"word1"); //2 
-    v1.push_back(L"word2"); 
-    v1.push_back(L"word3"); 
-    v1.push_back(L"word4"); 
+    vector<wstring> v1 {
+      L"word1", // 1
+      L"word1", // 1
+      L"word2",
+      L"word3",
+      L"word4"
+    };
 
     // File 2 
-    vector<wstring> v2; 
-    v2.push_back(L"word5"); 
-    v2.push_back(L"word6"); 
-    v2.push_back(L"word7"); 
-    v2.push_back(L"word8"); 
-    v2.push_back(L"word1"); //3 
+    vector<wstring> v2 {
+      L"word5",
+      L"word6",
+      L"word7",
+      L"word8",
+      L"word1" // 3
+    };
 
-    vector<vector<wstring>> v;
-    v.push_back(v1);
-    v.push_back(v2);
+    vector<vector<wstring>> v { v1, v2 };
 
     vector<unordered_map<wstring, size_t>> map(v.size()); 
 

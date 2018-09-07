@@ -2,19 +2,14 @@
 title: "CMFCRibbonProgressBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonProgressBar", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::CMFCRibbonProgressBar", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetPos", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMax", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRangeMin", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::GetRegularSize", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::IsInfiniteMode", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::OnDraw", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetInfiniteMode", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetPos", "AFXRIBBONPROGRESSBAR/CMFCRibbonProgressBar::SetRange"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonProgressBar [MFC], CMFCRibbonProgressBar", "CMFCRibbonProgressBar [MFC], GetPos", "CMFCRibbonProgressBar [MFC], GetRangeMax", "CMFCRibbonProgressBar [MFC], GetRangeMin", "CMFCRibbonProgressBar [MFC], GetRegularSize", "CMFCRibbonProgressBar [MFC], IsInfiniteMode", "CMFCRibbonProgressBar [MFC], OnDraw", "CMFCRibbonProgressBar [MFC], SetInfiniteMode", "CMFCRibbonProgressBar [MFC], SetPos", "CMFCRibbonProgressBar [MFC], SetRange"]
 ms.assetid: de3d9f2e-ed59-480e-aa7d-08a33ab36c67
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonProgressBar Class
@@ -80,13 +75,13 @@ CMFCRibbonProgressBar(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Specifies the command ID for the ribbon progress bar.  
   
- [in] `nWidth`  
+ [in] *nWidth*  
  Specifies the width, in pixels, of the ribbon progress bar.  
   
- [in] `nHeight`  
+ [in] *nHeight*  
  Specifies the height, in pixels, of the ribbon progress bar.  
   
 ##  <a name="getpos"></a>  CMFCRibbonProgressBar::GetPos  
@@ -125,14 +120,14 @@ int GetRangeMin() const;
  The minimum value of the current range.  
   
 ##  <a name="getregularsize"></a>  CMFCRibbonProgressBar::GetRegularSize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Return Value  
   
@@ -146,20 +141,20 @@ BOOL IsInfiniteMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the progress bar is in infinite mode; otherwise, `FALSE`.  
+ TRUE if the progress bar is in infinite mode; otherwise, FALSE.  
   
 ### Remarks  
  In infinite mode, the progress bar fills repeatedly from the minimum value to the maximum value. You might use infinite mode to indicate that an operation is ongoing, but that the completion time is unknown.  
   
 ##  <a name="ondraw"></a>  CMFCRibbonProgressBar::OnDraw  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -171,8 +166,8 @@ void SetInfiniteMode(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
- `TRUE` to specify that the progress bar is in infinite mode; otherwise, `FALSE`.  
+ [in] *bSet*  
+ TRUE to specify that the progress bar is in infinite mode; otherwise, FALSE.  
   
 ### Remarks  
  Usually, if the progress bar is in infinite mode, it is telling the user that an operation is ongoing, but that the completion time is unknown. Thus, the progress bar fills repeatedly from the minimum value to the maximum value.  
@@ -187,10 +182,10 @@ void SetPos(
 ```  
   
 ### Parameters  
- [in] `nPos`  
+ [in] *nPos*  
  Specifies the position to which the progress bar is set.  
   
- [in] `bRedraw`  
+ [in] *bRedraw*  
  Specifies whether the progress bar should be redrawn.  
   
 ### Remarks  
@@ -206,10 +201,10 @@ void SetRange(
 ```  
   
 ### Parameters  
- [in] `nMin`  
+ [in] *nMin*  
  Specifies the minimum value of the range.  
   
- [in] `nMax`  
+ [in] *nMax*  
  Specifies the maximum value of the range.  
   
 ### Remarks  

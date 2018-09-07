@@ -2,19 +2,14 @@
 title: "CMFCImageEditorPaletteBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::GetRowHeight", "AFXIMAGEEDITORDIALOG/CMFCImageEditorPaletteBar::IsButtonExtraSizeAvailable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCImageEditorPaletteBar [MFC], GetRowHeight", "CMFCImageEditorPaletteBar [MFC], IsButtonExtraSizeAvailable"]
 ms.assetid: 3fb7ba8e-f254-4d56-b913-9941b4ed8138
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCImageEditorPaletteBar Class
@@ -79,7 +74,7 @@ virtual BOOL IsButtonExtraSizeAvailable() const;
 ```  
   
 ### Return Value  
- This method returns `FALSE`.  
+ This method returns FALSE.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

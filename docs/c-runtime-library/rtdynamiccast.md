@@ -2,11 +2,8 @@
 title: "__RTDynamicCast | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["__RTDynamicCast"]
 apilocation: ["msvcr90.dll", "msvcr110.dll", "msvcr120.dll", "msvcrt.dll", "msvcr100.dll", "msvcr80.dll", "msvcr110_clr0400.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["__RTDynamicCast"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__RTDynamicCast"]
 ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
-caps.latest.revision: 3
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __RTDynamicCast
@@ -52,7 +47,7 @@ PVOID __RTDynamicCast (
  `true` if input is a reference; `false` if input is a pointer.  
   
 ## Return Value  
- Pointer to the appropriate sub-object, if successful; otherwise, NULL.  
+ Pointer to the appropriate sub-object, if successful; otherwise, **NULL**.  
   
 ## Exceptions  
  `bad_cast()` if the input to `dynamic_cast<>` is a reference and the cast fails.  

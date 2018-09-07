@@ -2,24 +2,19 @@
 title: "Default Arguments | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["arguments [C++], function", "function declarators", "functions [C++], default arguments", "declaring functions [C++], declarators", "default arguments", "arguments [C++], default", "defaults [C++], arguments"]
 ms.assetid: d32cf516-05cb-4d4d-b169-92f5649fdfa2
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Default Arguments
 In many cases, functions have arguments that are used so infrequently that a default value would suffice. To address this, the default-argument facility allows for specifying only those arguments to a function that are meaningful in a given call. To illustrate this concept, consider the example presented in [Function Overloading](../cpp/function-overloading.md).  
   
-```  
+```cpp 
 // Prototype three print functions.  
 int print( char *s );                  // Print a string.  
 int print( double dvalue );            // Print a double.  
@@ -29,7 +24,7 @@ int print( double dvalue, int prec );  // Print a double with a
   
  In many applications, a reasonable default can be supplied for `prec`, eliminating the need for two functions:  
   
-```  
+```cpp 
 // Prototype two print functions.  
 int print( char *s );                    // Print a string.  
 int print( double dvalue, int prec=2 );  // Print a double with a  
@@ -38,7 +33,7 @@ int print( double dvalue, int prec=2 );  // Print a double with a
   
  The implementation of the `print` function is changed slightly to reflect the fact that only one such function exists for type **double**:  
   
-```  
+```cpp 
 // default_arguments.cpp  
 // compile with: /EHsc /c  
   
@@ -71,7 +66,7 @@ int print( double dvalue, int prec ) {
   
  To invoke the new `print` function, use code such as the following:  
   
-```  
+```cpp 
 print( d );    // Precision of 2 supplied by default argument.  
 print( d, 0 ); // Override default argument to achieve other  
 //  results.  
@@ -81,13 +76,13 @@ print( d, 0 ); // Override default argument to achieve other
   
 -   Default arguments are used only in function calls where trailing arguments are omitted — they must be the last argument(s). Therefore, the following code is illegal:  
   
-    ```  
+    ```cpp 
     int print( double dvalue = 0.0, int prec );  
     ```  
   
 -   A default argument cannot be redefined in later declarations even if the redefinition is identical to the original. Therefore, the following code produces an error:  
   
-    ```  
+    ```cpp 
     // Prototype for print function.  
     int print( double dvalue, int prec = 2 );  
   
@@ -106,9 +101,6 @@ print( d, 0 ); // Override default argument to achieve other
   
 -   Default arguments can be provided for pointers to functions. For example:  
   
-    ```  
+    ```cpp 
     int (*pShowIntVal)( int i = 0 );  
     ```  
-  
-## See Also  
- 

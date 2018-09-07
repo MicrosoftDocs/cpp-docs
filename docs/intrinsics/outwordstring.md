@@ -2,19 +2,14 @@
 title: "__outwordstring | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__outwordstring"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rep outsw instruction", "__outwordstring intrinsic", "outsw instruction"]
 ms.assetid: b470c7a0-1de9-4370-886a-b2c3a1f842f4
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __outwordstring
@@ -46,7 +41,7 @@ void __outwordstring( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__outwordstring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outwordstring`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

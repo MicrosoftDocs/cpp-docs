@@ -2,19 +2,14 @@
 title: "try-except Statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["_abnormal_termination_cpp", "_exception_code_cpp", "EXCEPTION_CONTINUE_SEARCH", "_exception_info", "__except", "EXCEPTION_CONTINUE_EXECUTION", "_exception_code", "__except_cpp", "_exception_info_cpp", "EXCEPTION_EXECUTE_HANDLER", "_abnormal_termination"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__try keyword [C++]", "EXCEPTION_CONTINUE_EXECUTION macro", "EXCEPTION_CONTINUE_SEARCH macro", "EXCEPTION_EXECUTE_HANDLER macro", "GetExceptionCode function", "try-catch keyword [C++], try-except keyword [C++]", "_exception_code keyword [C++]", "try-except keyword [C++]", "_exception_info keyword [C++]", "_abnormal_termination keyword [C++]"]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # try-except Statement
@@ -44,33 +39,33 @@ Exceptions can be either hardware-based or software-based. Even when application
 > [!NOTE]
 > Structured exception handling works with Win32 for both C and C++ source files. However, it is not specifically designed for C++. You can ensure that your code is more portable by using C++ exception handling. Also, C++ exception handling is more flexible, in that it can handle exceptions of any type. For C++ programs, it is recommended that you use the C++ exception-handling mechanism ([try, catch, and throw](../cpp/try-throw-and-catch-statements-cpp.md) statements).
 
-The compound statement after the `__try` clause is the body or guarded section. The compound statement after the `__except` clause is the exception handler. The handler specifies a set of actions to be taken if an exception is raised during execution of the body of the guarded section. Execution proceeds as follows:
+The compound statement after the **__try** clause is the body or guarded section. The compound statement after the **__except** clause is the exception handler. The handler specifies a set of actions to be taken if an exception is raised during execution of the body of the guarded section. Execution proceeds as follows:
 
 1. The guarded section is executed.
 
-2. If no exception occurs during execution of the guarded section, execution continues at the statement after the `__except` clause.  
+2. If no exception occurs during execution of the guarded section, execution continues at the statement after the **__except** clause.  
 
-3. If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the `__except` *expression* (called the *filter* expression) is evaluated and the value determines how the exception is handled. There are three values:
+3. If an exception occurs during execution of the guarded section or in any routine the guarded section calls, the **__except** *expression* (called the *filter* expression) is evaluated and the value determines how the exception is handled. There are three values:
 
-   **EXCEPTION_CONTINUE_EXECUTION (-1)** Exception is dismissed. Continue execution at the point where the exception occurred.
+   EXCEPTION_CONTINUE_EXECUTION (-1) Exception is dismissed. Continue execution at the point where the exception occurred.
 
-   **EXCEPTION_CONTINUE_SEARCH (0)** Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.
+   EXCEPTION_CONTINUE_SEARCH (0) Exception is not recognized. Continue to search up the stack for a handler, first for containing **try-except** statements, then for handlers with the next highest precedence.
 
-   **EXCEPTION_EXECUTE_HANDLER (1)** Exception is recognized. Transfer control to the exception handler by executing the `__except` compound statement, then continue execution after the `__except` block.
+   EXCEPTION_EXECUTE_HANDLER (1) Exception is recognized. Transfer control to the exception handler by executing the **__except** compound statement, then continue execution after the **__except** block.
 
-Because the `__except` expression is evaluated as a C expression, it is limited to a single value, the conditional-expression operator, or the comma operator. If more extensive processing is required, the expression can call a routine that returns one of the three values listed above.
+Because the **__except** expression is evaluated as a C expression, it is limited to a single value, the conditional-expression operator, or the comma operator. If more extensive processing is required, the expression can call a routine that returns one of the three values listed above.
 
 Each application can have its own exception handler.
 
-It is not valid to jump into a `__try` statement, but valid to jump out of one. The exception handler is not called if a process is terminated in the middle of executing a **try-except** statement.  
+It is not valid to jump into a **__try** statement, but valid to jump out of one. The exception handler is not called if a process is terminated in the middle of executing a **try-except** statement.  
   
 For more information, see Knowledge Base article Q315937 : HOW TO: Trap Stack Overflow in a Visual C++ Application.  
   
 ## The __leave Keyword
 
-The `__leave` keyword is valid only within the guarded section of a **try-except** statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement after the exception handler.
+The **__leave** keyword is valid only within the guarded section of a **try-except** statement, and its effect is to jump to the end of the guarded section. Execution continues at the first statement after the exception handler.
 
-A `goto` statement can also jump out of the guarded section, and it does not degrade performance as it does in a **try-finally** statement because stack unwinding does not occur. However, we recommend that you use the `__leave` keyword rather than a `goto` statement because you are less likely to make a programming mistake if the guarded section is large or complex.
+A **goto** statement can also jump out of the guarded section, and it does not degrade performance as it does in a **try-finally** statement because stack unwinding does not occur. However, we recommend that you use the **__leave** keyword rather than a **goto** statement because you are less likely to make a programming mistake if the guarded section is large or complex.
 
 ### Structured Exception Handling Intrinsic Functions
 
@@ -87,13 +82,13 @@ typedef struct _EXCEPTION_POINTERS {
 } EXCEPTION_POINTERS, *PEXCEPTION_POINTERS; 
 ```  
 
-The pointer types `PEXCEPTION_RECORD` and `PCONTEXT` are defined in the include file WINNT.H, and `_EXCEPTION_RECORD` and `_CONTEXT` are defined in the include file EXCPT.H
+The pointer types `PEXCEPTION_RECORD` and `PCONTEXT` are defined in the include file \<winnt.h>, and `_EXCEPTION_RECORD` and `_CONTEXT` are defined in the include file \<excpt.h>
 
 You can use `GetExceptionCode` within the exception handler. However, you can use `GetExceptionInformation` only within the exception filter expression. The information it points to is generally on the stack and is no longer available when control is transferred to the exception handler.
 
 The intrinsic function `AbnormalTermination` is available within a termination handler. It returns 0 if the body of the **try-finally** statement terminates sequentially. In all other cases, it returns 1.
 
-EXCPT.H defines some alternate names for these intrinsics:
+excpt.h defines some alternate names for these intrinsics:
 
 `GetExceptionCode` is equivalent to `_exception_code`
 
@@ -153,7 +148,7 @@ int main()
   
 ## Output  
   
-```  
+```Output 
 hello  
 in try  
 in try  
@@ -167,8 +162,7 @@ world
 
 **END Microsoft Specific**  
 
-## See Also
-
-[Writing an Exception Handler](../cpp/writing-an-exception-handler.md)   
-[Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)   
-[Keywords](../cpp/keywords-cpp.md)
+## See also
+ [Writing an Exception Handler](../cpp/writing-an-exception-handler.md)   
+ [Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)   
+ [Keywords](../cpp/keywords-cpp.md)

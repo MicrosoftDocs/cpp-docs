@@ -2,19 +2,14 @@
 title: "TN053: Custom DFX Routines for DAO Database Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.dfx"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC, DAO and", "database classes [MFC], DAO", "DAO [MFC], MFC", "DFX (DAO record field exchange) [MFC], custom routines", "TN053", "DAO [MFC], classes", "DFX (DAO record field exchange) [MFC]", "custom DFX routines [MFC]"]
 ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN053: Custom DFX Routines for DAO Database Classes
@@ -121,19 +116,19 @@ PopUpEmployeeData(emp.m_strFirstName,
   
 |Operation|Description|  
 |---------------|-----------------|  
-|**AddToParameterList**|Builds PARAMETERS clause|  
-|**AddToSelectList**|Builds SELECT clause|  
-|**BindField**|Sets up binding structure|  
-|**BindParam**|Sets parameter values|  
-|**Fixup**|Sets NULL status|  
-|**AllocCache**|Allocates cache for dirty check|  
-|**StoreField**|Saves current record to cache|  
-|**LoadField**|Restores cache to member values|  
-|**FreeCache**|Frees cache|  
+|`AddToParameterList`|Builds PARAMETERS clause|  
+|`AddToSelectList`|Builds SELECT clause|  
+|`BindField`|Sets up binding structure|  
+|`BindParam`|Sets parameter values|  
+|`Fixup`|Sets NULL status|  
+|`AllocCache`|Allocates cache for dirty check|  
+|`StoreField`|Saves current record to cache|  
+|`LoadField`|Restores cache to member values|  
+|`FreeCache`|Frees cache|  
 |`SetFieldNull`|Sets field status & value to NULL|  
-|**MarkForAddNew**|Marks fields dirty if not PSEUDO NULL|  
-|**MarkForEdit**|Marks fields dirty if don't match cache|  
-|**SetDirtyField**|Sets field values marked as dirty|  
+|`MarkForAddNew`|Marks fields dirty if not PSEUDO NULL|  
+|`MarkForEdit`|Marks fields dirty if don't match cache|  
+|`SetDirtyField`|Sets field values marked as dirty|  
   
  In the next section, each operation will be explained in more detail for `DFX_Text`.  
   
@@ -155,45 +150,45 @@ PopUpEmployeeData(emp.m_strFirstName,
 ##  <a name="_mfcnotes_tn053_details_of_dfx_text"></a> Details of DFX_Text  
  As mentioned previously, the best way to explain how DFX works is to work through an example. For this purpose going through the internals of `DFX_Text` should work quite well to help provide at least a basic understanding of DFX.  
   
- **AddToParameterList**  
- This operation builds the SQL **PARAMETERS** clause ("`Parameters <param name>, <param type> ... ;`") required by Jet. Each parameter is named and typed (as specified in the RFX call). See the function **CDaoFieldExchange::AppendParamType** function to see the names of the individual types. In the case of `DFX_Text`, the type used is `text`.  
+ `AddToParameterList`  
+ This operation builds the SQL **PARAMETERS** clause ("`Parameters <param name>, <param type> ... ;`") required by Jet. Each parameter is named and typed (as specified in the RFX call). See the function `CDaoFieldExchange::AppendParamType` function to see the names of the individual types. In the case of `DFX_Text`, the type used is **text**.  
   
- **AddToSelectList**  
+ `AddToSelectList`  
  Builds the SQL **SELECT** clause. This is pretty straight forward as the column name specified by the DFX call is simply appended ("`SELECT <column name>, ...`").  
   
- **BindField**  
+ `BindField`  
  The most complex of the operations. As mentioned previously this is where the DAO binding structure used by `GetRows` is set up. As you can see from the code in `DFX_Text` the types of information in the structure include the DAO type used (**DAO_CHAR** or **DAO_WCHAR** in the case of `DFX_Text`). Additionally, the type of binding used is also set up. In an earlier section `GetRows` was described only briefly, but it was sufficient to explain that the type of binding used by MFC is always direct address binding (**DAOBINDING_DIRECT**). In addition for variable-length column binding (like `DFX_Text`) callback binding is used so that MFC can control the memory allocation and specify an address of the correct length. What this means is that MFC can always tell DAO "where" to put the data, thus allowing binding directly to member variables. The rest of the binding structure is filled in with things like the address of the memory allocation callback function and the type of column binding (binding by column name).  
   
- **BindParam**  
+ `BindParam`  
  This is a simple operation that calls `SetParamValue` with the parameter value specified in your parameter member.  
   
- **Fixup**  
+ `Fixup`  
  Fills in the **NULL** status for each field.  
   
  `SetFieldNull`  
  This operation only marks each field status as **NULL** and sets the member variable's value to **PSEUDO_NULL**.  
   
- **SetDirtyField**  
+ `SetDirtyField`  
  Calls `SetFieldValue` for each field marked dirty.  
   
  All the remaining operations only deal with using the data cache. The data cache is an extra buffer of the data in the current record that is used to make certain things simpler. For instance, "dirty" fields can be automatically detected. As described in the online documentation it can be turned off completely or at the field level. The implementation of the buffer utilizes a map. This map is used to match up dynamically allocated copies of the data with the address of the "bound" field (or `CDaoRecordset` derived data member).  
   
- **AllocCache**  
+ `AllocCache`  
  Dynamically allocates the cached field value and adds it to the map.  
   
- **FreeCache**  
+ `FreeCache`  
  Deletes the cached field value and removes it from the map.  
   
- **StoreField**  
+ `StoreField`  
  Copies the current field value into the data cache.  
   
- **LoadField**  
+ `LoadField`  
  Copies the cached value into the field member.  
   
- **MarkForAddNew**  
+ `MarkForAddNew`  
  Checks if current field value is non-**NULL** and marks it dirty if necessary.  
   
- **MarkForEdit**  
+ `MarkForEdit`  
  Compares current field value with data cache and marks dirty if necessary.  
   
 > [!TIP]

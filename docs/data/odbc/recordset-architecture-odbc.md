@@ -2,18 +2,13 @@
 title: "Recordset: Architecture (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["recordsets, data members", "field data members, recordset architecture", "field data members", "m_nParams data member, recordsets", "recordsets, architecture", "parameter data members in recordsets", "m_nFields data member", "ODBC recordsets, architecture", "m_nParams data member", "m_nFields data member, recordsets"]
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Architecture (ODBC)
@@ -33,7 +28,7 @@ This topic applies to the MFC ODBC classes.
 ##  <a name="_core_a_sample_class"></a> Sample Class  
  When you use the [MFC ODBC Consumer Wizard](../../mfc/reference/adding-an-mfc-odbc-consumer.md) from **Add Class** wizard to declare a recordset class derived from `CRecordset`, the resulting class has the general structure shown in the following simple class:  
   
-```  
+```cpp  
 class CCourse : public CRecordset  
 {  
 public:  
@@ -50,7 +45,7 @@ public:
 ##  <a name="_core_field_data_members"></a> Field Data Members  
  The most important members of your recordset class are the field data members. For each column you select from the data source, the class contains a data member of the appropriate data type for that column. For example, the [sample class](#_core_a_sample_class) shown at the beginning of this topic has two field data members, both of type `CString`, called `m_strCourseID` and `m_strCourseTitle`.  
   
- When the recordset selects a set of records, the framework automatically binds the columns of the current record (after the **Open** call, the first record is current) to the field data members of the object. That is, the framework uses the appropriate field data member as a buffer in which to store the contents of a record column.  
+ When the recordset selects a set of records, the framework automatically binds the columns of the current record (after the `Open` call, the first record is current) to the field data members of the object. That is, the framework uses the appropriate field data member as a buffer in which to store the contents of a record column.  
   
  As the user scrolls to a new record, the framework uses the field data members to represent the current record. The framework refreshes the field data members, replacing the previous record's values. The field data members are also used for updating the current record and for adding new records. As part of the process of updating a record, you specify the update values by assigning values directly to the appropriate field data member or members.  
   
@@ -59,13 +54,13 @@ public:
   
  Typically, the parameter helps narrow the selection, as in the following example. Based on the [sample class](#_core_a_sample_class) at the beginning of this topic, the recordset object might execute the following SQL statement:  
   
-```  
+```sql  
 SELECT CourseID, CourseTitle FROM Course WHERE CourseID = ?  
 ```  
   
  The "?" is a placeholder for a parameter value that you supply at run time. When you construct the recordset and set its `m_strIDParam` data member to MATH101, the effective SQL statement for the recordset becomes:  
   
-```  
+```sql  
 SELECT CourseID, CourseTitle FROM Course WHERE CourseID = MATH101  
 ```  
   

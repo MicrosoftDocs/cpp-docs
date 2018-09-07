@@ -2,18 +2,13 @@
 title: "Dialog Boxes in OLE | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC dialog boxes [MFC], OLE dialog boxes", "OLE dialog boxes", "dialog boxes", "OLE dialog boxes [MFC], about OLE dialog boxes", "dialog boxes [MFC], about dialog boxes", "dialog boxes [MFC], OLE", "Insert object"]
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Dialog Boxes in OLE
@@ -35,7 +30,7 @@ While a user runs an OLE-enabled application, there are times when the applicati
  The Edit Links dialog box allows the user to change information about the source of a linked object. The Update Links dialog box verifies the sources of all the linked items in the current dialog box and displays the Edit Links dialog box if necessary. Display the Edit Links dialog box when the user chooses Links from the Edit menu. The Update Links dialog box is usually displayed when a compound document is first opened. Use either the [COleLinksDialog](../mfc/reference/colelinksdialog-class.md) or the [COleUpdateDialog](../mfc/reference/coleupdatedialog-class.md) class, depending on which dialog box you want to display.  
   
  *Server Busy or Server Not Responding*  
- The Server Busy dialog box is displayed when the user attempts to activate an item and the server is currently unable to handle the request, usually because the server is in use by another user or task. The Server Not Responding dialog box is displayed if the server does not respond to the activation request at all. These dialog boxes are displayed via `COleMessageFilter`, based on an implementation of the OLE interface **IMessageFilter**, and the user can decide whether to attempt the activation request again. Use the [COleBusyDialog](../mfc/reference/colebusydialog-class.md) class to display this dialog box.  
+ The Server Busy dialog box is displayed when the user attempts to activate an item and the server is currently unable to handle the request, usually because the server is in use by another user or task. The Server Not Responding dialog box is displayed if the server does not respond to the activation request at all. These dialog boxes are displayed via `COleMessageFilter`, based on an implementation of the OLE interface `IMessageFilter`, and the user can decide whether to attempt the activation request again. Use the [COleBusyDialog](../mfc/reference/colebusydialog-class.md) class to display this dialog box.  
   
 ## See Also  
  [Dialog Boxes](../mfc/dialog-boxes.md)   

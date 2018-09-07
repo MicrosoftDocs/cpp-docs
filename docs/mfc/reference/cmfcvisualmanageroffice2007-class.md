@@ -2,25 +2,20 @@
 title: "CMFCVisualManagerOffice2007 Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCVisualManagerOffice2007", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::AlwaysHighlight3DTabs", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::CleanStyle", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetCaptionBarTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetHighlightedMenuItemTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetMenuItemTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetNcBtnSize", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetRibbonBar", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetRibbonHyperlinkTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetRibbonPopupBorderSize", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetRibbonQuickAccessToolBarChevronOffset", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetRibbonQuickAccessToolBarRightMargin", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetRibbonQuickAccessToolBarTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetRibbonStatusBarTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetShowAllMenuItemsHeight", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetStatusBarPaneTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetTabFrameColors", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetTabHorzMargin", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetTabTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetToolbarButtonTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetToolbarDisabledTextColor", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::GetToolTipInfo", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::IsHighlightWholeMenuItem", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::IsLayeredRibbonKeyTip", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::IsOwnerDrawCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::IsOwnerDrawMenuCheck", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::IsRibbonPresent", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawBarGripper", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawButtonBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawButtonSeparator", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawCaptionBarInfoArea", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawCheckBoxEx", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawComboBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawComboDropButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawDefaultRibbonImage", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawEditBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawFloatingToolbarBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawHeaderCtrlBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawMenuBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawMenuCheck", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawMenuItemButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawMenuLabel", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawMenuResizeBar", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawMenuScrollButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawMenuSystemButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawMiniFrameBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawOutlookBarSplitter", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawOutlookPageButtonBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawPaneCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawPopupWindowCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawPropertySheetListItem", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonApplicationButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonButtonBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonButtonsGroup", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonCaptionButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonCategory", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonCategoryCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonCategoryScroll", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonCategoryTab", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonCheckBoxOnList", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonDefaultPaneButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonDefaultPaneButtonIndicator", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonGalleryBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonGalleryButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonKeyTip", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonMainPanelButtonBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonMainPanelFrame", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonMenuCheckFrame", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonPanel", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonPanelCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonProgressBar", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonRecentFilesFrame", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonSliderChannel", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonSliderThumb", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonSliderZoomButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonStatusBarPane", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawRibbonTabsFrame", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawScrollButtons", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawSeparator", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawShowAllMenuItems", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawStatusBarPaneBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawStatusBarSizeBox", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawTab", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawTabsButtonBorder", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawTask", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawTasksGroupCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnDrawTearOffCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnEraseMDIClientArea", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnEraseTabsArea", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnEraseTabsButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnEraseTabsFrame", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillBarBackground", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillButtonInterior", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillCaptionBarButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillHighlightedArea", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillMiniFrameCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillOutlookBarCaption", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillOutlookPageButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillPopupWindowBackground", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillRibbonButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillRibbonEdit", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillRibbonMainPanelButton", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillRibbonMenuFrame", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillRibbonQuickAccessToolBarPopup", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnFillTab", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnHighlightMenuItem", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnHighlightRarelyUsedMenuItems", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnNcActivate", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnNcPaint", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnSetWindowRegion", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnUpdateSystemColors", "AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::SetResourceHandle"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCVisualManagerOffice2007 [MFC], AlwaysHighlight3DTabs", "CMFCVisualManagerOffice2007 [MFC], CleanStyle", "CMFCVisualManagerOffice2007 [MFC], GetCaptionBarTextColor", "CMFCVisualManagerOffice2007 [MFC], GetHighlightedMenuItemTextColor", "CMFCVisualManagerOffice2007 [MFC], GetMenuItemTextColor", "CMFCVisualManagerOffice2007 [MFC], GetNcBtnSize", "CMFCVisualManagerOffice2007 [MFC], GetRibbonBar", "CMFCVisualManagerOffice2007 [MFC], GetRibbonHyperlinkTextColor", "CMFCVisualManagerOffice2007 [MFC], GetRibbonPopupBorderSize", "CMFCVisualManagerOffice2007 [MFC], GetRibbonQuickAccessToolBarChevronOffset", "CMFCVisualManagerOffice2007 [MFC], GetRibbonQuickAccessToolBarRightMargin", "CMFCVisualManagerOffice2007 [MFC], GetRibbonQuickAccessToolBarTextColor", "CMFCVisualManagerOffice2007 [MFC], GetRibbonStatusBarTextColor", "CMFCVisualManagerOffice2007 [MFC], GetShowAllMenuItemsHeight", "CMFCVisualManagerOffice2007 [MFC], GetStatusBarPaneTextColor", "CMFCVisualManagerOffice2007 [MFC], GetTabFrameColors", "CMFCVisualManagerOffice2007 [MFC], GetTabHorzMargin", "CMFCVisualManagerOffice2007 [MFC], GetTabTextColor", "CMFCVisualManagerOffice2007 [MFC], GetToolbarButtonTextColor", "CMFCVisualManagerOffice2007 [MFC], GetToolbarDisabledTextColor", "CMFCVisualManagerOffice2007 [MFC], GetToolTipInfo", "CMFCVisualManagerOffice2007 [MFC], IsHighlightWholeMenuItem", "CMFCVisualManagerOffice2007 [MFC], IsLayeredRibbonKeyTip", "CMFCVisualManagerOffice2007 [MFC], IsOwnerDrawCaption", "CMFCVisualManagerOffice2007 [MFC], IsOwnerDrawMenuCheck", "CMFCVisualManagerOffice2007 [MFC], IsRibbonPresent", "CMFCVisualManagerOffice2007 [MFC], OnDrawBarGripper", "CMFCVisualManagerOffice2007 [MFC], OnDrawButtonBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawButtonSeparator", "CMFCVisualManagerOffice2007 [MFC], OnDrawCaptionBarInfoArea", "CMFCVisualManagerOffice2007 [MFC], OnDrawCheckBoxEx", "CMFCVisualManagerOffice2007 [MFC], OnDrawComboBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawComboDropButton", "CMFCVisualManagerOffice2007 [MFC], OnDrawDefaultRibbonImage", "CMFCVisualManagerOffice2007 [MFC], OnDrawEditBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawFloatingToolbarBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawHeaderCtrlBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawMenuBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawMenuCheck", "CMFCVisualManagerOffice2007 [MFC], OnDrawMenuItemButton", "CMFCVisualManagerOffice2007 [MFC], OnDrawMenuLabel", "CMFCVisualManagerOffice2007 [MFC], OnDrawMenuResizeBar", "CMFCVisualManagerOffice2007 [MFC], OnDrawMenuScrollButton", "CMFCVisualManagerOffice2007 [MFC], OnDrawMenuSystemButton", "CMFCVisualManagerOffice2007 [MFC], OnDrawMiniFrameBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawOutlookBarSplitter", "CMFCVisualManagerOffice2007 [MFC], OnDrawOutlookPageButtonBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawPaneCaption", "CMFCVisualManagerOffice2007 [MFC], OnDrawPopupWindowCaption", "CMFCVisualManagerOffice2007 [MFC], OnDrawPropertySheetListItem", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonApplicationButton", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonButtonBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonButtonsGroup", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonCaption", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonCaptionButton", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonCategory", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonCategoryCaption", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonCategoryScroll", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonCategoryTab", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonCheckBoxOnList", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonDefaultPaneButton", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonDefaultPaneButtonIndicator", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonGalleryBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonGalleryButton", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonKeyTip", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonMainPanelButtonBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonMainPanelFrame", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonMenuCheckFrame", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonPanel", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonPanelCaption", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonProgressBar", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonRecentFilesFrame", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonSliderChannel", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonSliderThumb", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonSliderZoomButton", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonStatusBarPane", "CMFCVisualManagerOffice2007 [MFC], OnDrawRibbonTabsFrame", "CMFCVisualManagerOffice2007 [MFC], OnDrawScrollButtons", "CMFCVisualManagerOffice2007 [MFC], OnDrawSeparator", "CMFCVisualManagerOffice2007 [MFC], OnDrawShowAllMenuItems", "CMFCVisualManagerOffice2007 [MFC], OnDrawStatusBarPaneBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawStatusBarSizeBox", "CMFCVisualManagerOffice2007 [MFC], OnDrawTab", "CMFCVisualManagerOffice2007 [MFC], OnDrawTabsButtonBorder", "CMFCVisualManagerOffice2007 [MFC], OnDrawTask", "CMFCVisualManagerOffice2007 [MFC], OnDrawTasksGroupCaption", "CMFCVisualManagerOffice2007 [MFC], OnDrawTearOffCaption", "CMFCVisualManagerOffice2007 [MFC], OnEraseMDIClientArea", "CMFCVisualManagerOffice2007 [MFC], OnEraseTabsArea", "CMFCVisualManagerOffice2007 [MFC], OnEraseTabsButton", "CMFCVisualManagerOffice2007 [MFC], OnEraseTabsFrame", "CMFCVisualManagerOffice2007 [MFC], OnFillBarBackground", "CMFCVisualManagerOffice2007 [MFC], OnFillButtonInterior", "CMFCVisualManagerOffice2007 [MFC], OnFillCaptionBarButton", "CMFCVisualManagerOffice2007 [MFC], OnFillHighlightedArea", "CMFCVisualManagerOffice2007 [MFC], OnFillMiniFrameCaption", "CMFCVisualManagerOffice2007 [MFC], OnFillOutlookBarCaption", "CMFCVisualManagerOffice2007 [MFC], OnFillOutlookPageButton", "CMFCVisualManagerOffice2007 [MFC], OnFillPopupWindowBackground", "CMFCVisualManagerOffice2007 [MFC], OnFillRibbonButton", "CMFCVisualManagerOffice2007 [MFC], OnFillRibbonEdit", "CMFCVisualManagerOffice2007 [MFC], OnFillRibbonMainPanelButton", "CMFCVisualManagerOffice2007 [MFC], OnFillRibbonMenuFrame", "CMFCVisualManagerOffice2007 [MFC], OnFillRibbonQuickAccessToolBarPopup", "CMFCVisualManagerOffice2007 [MFC], OnFillTab", "CMFCVisualManagerOffice2007 [MFC], OnHighlightMenuItem", "CMFCVisualManagerOffice2007 [MFC], OnHighlightRarelyUsedMenuItems", "CMFCVisualManagerOffice2007 [MFC], OnNcActivate", "CMFCVisualManagerOffice2007 [MFC], OnNcPaint", "CMFCVisualManagerOffice2007 [MFC], OnSetWindowRegion", "CMFCVisualManagerOffice2007 [MFC], OnUpdateSystemColors", "CMFCVisualManagerOffice2007 [MFC], SetResourceHandle"]
 ms.assetid: fb687c74-6d08-4c72-8acf-27f75dda6d6b
-caps.latest.revision: 35
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerOffice2007 Class
 `CMFCVisualManagerOffice2007` gives an application a Microsoft Office 2007 appearance. 
 
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
@@ -201,7 +196,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Return Value  
   
@@ -215,7 +210,7 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
   
 ### Return Value  
   
@@ -232,9 +227,9 @@ virtual COLORREF GetMenuItemTextColor(
 ```  
   
 ### Parameters  
- [in] `pButton`  
- [in] `bHighlighted`  
- [in] `bDisabled`  
+ [in] *pButton*  
+ [in] *bHighlighted*  
+ [in] *bDisabled*  
   
 ### Return Value  
   
@@ -248,7 +243,7 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
 ```  
   
 ### Parameters  
- [in] `bSmall`  
+ [in] *bSmall*  
   
 ### Return Value  
   
@@ -262,7 +257,7 @@ CMFCRibbonBar* GetRibbonBar(CWnd* pWnd) const;
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -276,7 +271,7 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
 ```  
   
 ### Parameters  
- [in] `pHyperLink`  
+ [in] *pHyperLink*  
   
 ### Return Value  
   
@@ -290,7 +285,7 @@ virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu* pPopup) const;
 ```  
   
 ### Parameters  
- [in] `pPopup`  
+ [in] *pPopup*  
   
 ### Return Value  
   
@@ -326,7 +321,7 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 ```  
   
 ### Parameters  
- [in] `bDisabled`  
+ [in] *bDisabled*  
   
 ### Return Value  
   
@@ -340,7 +335,7 @@ virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
 ```  
   
 ### Parameters  
- [in] `pStatusBar`  
+ [in] *pStatusBar*  
   
 ### Return Value  
   
@@ -356,8 +351,8 @@ virtual int GetShowAllMenuItemsHeight(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `sizeDefault`  
+ [in] *pDC*  
+ [in] *sizeDefault*  
   
 ### Return Value  
   
@@ -373,8 +368,8 @@ virtual COLORREF GetStatusBarPaneTextColor(
 ```  
   
 ### Parameters  
- [in] `pStatusBar`  
- [in] `pPane`  
+ [in] *pStatusBar*  
+ [in] *pPane*  
   
 ### Return Value  
   
@@ -397,15 +392,15 @@ virtual void GetTabFrameColors(
 ```  
   
 ### Parameters  
- [in] `pTabWnd`  
- [in] `clrDark`  
- [in] `clrBlack`  
- [in] `clrHighlight`  
- [in] `clrFace`  
- [in] `clrDarkShadow`  
- [in] `clrLight`  
- [in] `pbrFace`  
- [in] `pbrBlack`  
+ [in] *pTabWnd*  
+ [in] *clrDark*  
+ [in] *clrBlack*  
+ [in] *clrHighlight*  
+ [in] *clrFace*  
+ [in] *clrDarkShadow*  
+ [in] *clrLight*  
+ [in] *pbrFace*  
+ [in] *pbrBlack*  
   
 ### Remarks  
   
@@ -417,7 +412,7 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl* pTabWnd);
 ```  
   
 ### Parameters  
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
   
 ### Return Value  
   
@@ -434,9 +429,9 @@ virtual COLORREF GetTabTextColor(
 ```  
   
 ### Parameters  
- [in] `pTabWnd`  
- [in] `iTab`  
- [in] `bIsActive`  
+ [in] *pTabWnd*  
+ [in] *iTab*  
+ [in] *bIsActive*  
   
 ### Return Value  
   
@@ -452,8 +447,8 @@ virtual COLORREF GetToolbarButtonTextColor(
 ```  
   
 ### Parameters  
- [in] `pButton`  
- [in] `state`  
+ [in] *pButton*  
+ [in] *state*  
   
 ### Return Value  
   
@@ -480,8 +475,8 @@ virtual BOOL GetToolTipInfo(
 ```  
   
 ### Parameters  
- [in] `params`  
- [in] `nType`  
+ [in] *params*  
+ [in] *nType*  
   
 ### Return Value  
   
@@ -539,7 +534,7 @@ BOOL IsRibbonPresent(CWnd* pWnd) const;
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -557,10 +552,10 @@ virtual void OnDrawBarGripper(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectGripper`  
- [in] `bHorz`  
- [in] `pBar`  
+ [in] *pDC*  
+ [in] *rectGripper*  
+ [in] *bHorz*  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -576,10 +571,10 @@ virtual void OnDrawButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `state`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *state*  
   
 ### Remarks  
   
@@ -596,11 +591,11 @@ virtual void OnDrawButtonSeparator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `state`  
- [in] `bHorz`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *state*  
+ [in] *bHorz*  
   
 ### Remarks  
   
@@ -615,9 +610,9 @@ virtual void OnDrawCaptionBarInfoArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -635,12 +630,12 @@ virtual void OnDrawCheckBoxEx(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `nState`  
- [in] `bHighlighted`  
- [in] `bPressed`  
- [in] `bEnabled`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *nState*  
+ [in] *bHighlighted*  
+ [in] *bPressed*  
+ [in] *bEnabled*  
   
 ### Remarks  
   
@@ -658,12 +653,12 @@ virtual void OnDrawComboBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bDisabled`  
- [in] `bIsDropped`  
- [in] `bIsHighlighted`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bDisabled*  
+ [in] *bIsDropped*  
+ [in] *bIsHighlighted*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -681,12 +676,12 @@ virtual void OnDrawComboDropButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bDisabled`  
- [in] `bIsDropped`  
- [in] `bIsHighlighted`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bDisabled*  
+ [in] *bIsDropped*  
+ [in] *bIsHighlighted*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -703,11 +698,11 @@ virtual void OnDrawDefaultRibbonImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectImage`  
- [in] `bIsDisabled`  
- [in] `bIsPressed`  
- [in] `bIsHighlighted`  
+ [in] *pDC*  
+ [in] *rectImage*  
+ [in] *bIsDisabled*  
+ [in] *bIsPressed*  
+ [in] *bIsHighlighted*  
   
 ### Remarks  
   
@@ -724,11 +719,11 @@ virtual void OnDrawEditBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bDisabled`  
- [in] `bIsHighlighted`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bDisabled*  
+ [in] *bIsHighlighted*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -744,10 +739,10 @@ virtual void OnDrawFloatingToolbarBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pToolBar`  
- [in] `rectBorder`  
- [in] `rectBorderSize`  
+ [in] *pDC*  
+ [in] *pToolBar*  
+ [in] *rectBorder*  
+ [in] *rectBorderSize*  
   
 ### Remarks  
   
@@ -764,11 +759,11 @@ virtual void OnDrawHeaderCtrlBorder(
 ```  
   
 ### Parameters  
- [in] `pCtrl`  
- [in] `pDC`  
- [in] `rect`  
- [in] `bIsPressed`  
- [in] `bIsHighlighted`  
+ [in] *pCtrl*  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bIsPressed*  
+ [in] *bIsHighlighted*  
   
 ### Remarks  
   
@@ -783,9 +778,9 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pMenu`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pMenu*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -802,11 +797,11 @@ virtual void OnDrawMenuCheck(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `bHighlight`  
- [in] `bIsRadio`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *bHighlight*  
+ [in] *bIsRadio*  
   
 ### Remarks  
   
@@ -823,11 +818,11 @@ virtual void OnDrawMenuItemButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rectButton`  
- [in] `bHighlight`  
- [in] `bDisabled`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rectButton*  
+ [in] *bHighlight*  
+ [in] *bDisabled*  
   
 ### Remarks  
   
@@ -841,8 +836,8 @@ virtual COLORREF OnDrawMenuLabel(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *rect*  
   
 ### Return Value  
   
@@ -859,9 +854,9 @@ virtual void OnDrawMenuResizeBar(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `nResizeFlags`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *nResizeFlags*  
   
 ### Remarks  
   
@@ -879,12 +874,12 @@ virtual void OnDrawMenuScrollButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bIsScrollDown`  
- [in] `bIsHighlited`  
- [in] `bIsPressed`  
- [in] `bIsDisabled`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bIsScrollDown*  
+ [in] *bIsHighlited*  
+ [in] *bIsPressed*  
+ [in] *bIsDisabled*  
   
 ### Remarks  
   
@@ -901,11 +896,11 @@ virtual void OnDrawMenuSystemButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `uiSystemCommand`  
- [in] `nStyle`  
- [in] `bHighlight`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *uiSystemCommand*  
+ [in] *nStyle*  
+ [in] *bHighlight*  
   
 ### Remarks  
   
@@ -921,10 +916,10 @@ virtual void OnDrawMiniFrameBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pFrameWnd`  
- [in] `rectBorder`  
- [in] `rectBorderSize`  
+ [in] *pDC*  
+ [in] *pFrameWnd*  
+ [in] *rectBorder*  
+ [in] *rectBorderSize*  
   
 ### Remarks  
   
@@ -938,8 +933,8 @@ virtual void OnDrawOutlookBarSplitter(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectSplitter`  
+ [in] *pDC*  
+ [in] *rectSplitter*  
   
 ### Remarks  
   
@@ -955,10 +950,10 @@ virtual void OnDrawOutlookPageButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectBtn`  
- [in] `bIsHighlighted`  
- [in] `bIsPressed`  
+ [in] *pDC*  
+ [in] *rectBtn*  
+ [in] *bIsHighlighted*  
+ [in] *bIsPressed*  
   
 ### Remarks  
   
@@ -975,11 +970,11 @@ virtual COLORREF OnDrawPaneCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `bActive`  
- [in] `rectCaption`  
- [in] `rectButtons`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *bActive*  
+ [in] *rectCaption*  
+ [in] *rectButtons*  
   
 ### Return Value  
   
@@ -996,9 +991,9 @@ virtual COLORREF OnDrawPopupWindowCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectCaption`  
- [in] `pPopupWnd`  
+ [in] *pDC*  
+ [in] *rectCaption*  
+ [in] *pPopupWnd*  
   
 ### Return Value  
   
@@ -1017,11 +1012,11 @@ virtual COLORREF OnDrawPropertySheetListItem(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pParent`  
- [in] `rect`  
- [in] `bIsHighlihted`  
- [in] `bIsSelected`  
+ [in] *pDC*  
+ [in] *pParent*  
+ [in] *rect*  
+ [in] *bIsHighlihted*  
+ [in] *bIsSelected*  
   
 ### Return Value  
   
@@ -1037,8 +1032,8 @@ virtual void OnDrawRibbonApplicationButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -1052,8 +1047,8 @@ virtual void OnDrawRibbonButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -1068,9 +1063,9 @@ virtual COLORREF OnDrawRibbonButtonsGroup(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pGroup`  
- [in] `rectGroup`  
+ [in] *pDC*  
+ [in] *pGroup*  
+ [in] *rectGroup*  
   
 ### Return Value  
   
@@ -1088,10 +1083,10 @@ virtual void OnDrawRibbonCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rectCaption`  
- [in] `rectText`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rectCaption*  
+ [in] *rectText*  
   
 ### Remarks  
   
@@ -1105,8 +1100,8 @@ virtual void OnDrawRibbonCaptionButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -1121,9 +1116,9 @@ virtual void OnDrawRibbonCategory(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pCategory`  
- [in] `rectCategory`  
+ [in] *pDC*  
+ [in] *pCategory*  
+ [in] *rectCategory*  
   
 ### Remarks  
   
@@ -1137,8 +1132,8 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pContextCaption`  
+ [in] *pDC*  
+ [in] *pContextCaption*  
   
 ### Return Value  
   
@@ -1154,8 +1149,8 @@ virtual void OnDrawRibbonCategoryScroll(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pScroll`  
+ [in] *pDC*  
+ [in] *pScroll*  
   
 ### Remarks  
   
@@ -1170,9 +1165,9 @@ virtual COLORREF OnDrawRibbonCategoryTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pTab`  
- [in] `bIsActive`  
+ [in] *pDC*  
+ [in] *pTab*  
+ [in] *bIsActive*  
   
 ### Return Value  
   
@@ -1191,11 +1186,11 @@ virtual void OnDrawRibbonCheckBoxOnList(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pCheckBox`  
- [in] `rect`  
- [in] `bIsSelected`  
- [in] `bHighlighted`  
+ [in] *pDC*  
+ [in] *pCheckBox*  
+ [in] *rect*  
+ [in] *bIsSelected*  
+ [in] *bHighlighted*  
   
 ### Remarks  
   
@@ -1209,8 +1204,8 @@ virtual void OnDrawRibbonDefaultPaneButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -1227,11 +1222,11 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `bIsSelected`  
- [in] `bHighlighted`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *bIsSelected*  
+ [in] *bHighlighted*  
   
 ### Remarks  
   
@@ -1246,9 +1241,9 @@ virtual void OnDrawRibbonGalleryBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rectBorder`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rectBorder*  
   
 ### Remarks  
   
@@ -1262,8 +1257,8 @@ virtual void OnDrawRibbonGalleryButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -1279,10 +1274,10 @@ virtual void OnDrawRibbonKeyTip(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pElement`  
- [in] `rect`  
- [in] `str`  
+ [in] *pDC*  
+ [in] *pElement*  
+ [in] *rect*  
+ [in] *str*  
   
 ### Remarks  
   
@@ -1296,8 +1291,8 @@ virtual void OnDrawRibbonMainPanelButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -1312,9 +1307,9 @@ virtual void OnDrawRibbonMainPanelFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pPanel`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pPanel*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -1329,9 +1324,9 @@ virtual void OnDrawRibbonMenuCheckFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -1347,10 +1342,10 @@ virtual COLORREF OnDrawRibbonPanel(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pPanel`  
- [in] `rectPanel`  
- [in] `rectCaption`  
+ [in] *pDC*  
+ [in] *pPanel*  
+ [in] *rectPanel*  
+ [in] *rectCaption*  
   
 ### Return Value  
   
@@ -1367,9 +1362,9 @@ virtual void OnDrawRibbonPanelCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pPanel`  
- [in] `rectCaption`  
+ [in] *pDC*  
+ [in] *pPanel*  
+ [in] *rectCaption*  
   
 ### Remarks  
   
@@ -1386,11 +1381,11 @@ virtual void OnDrawRibbonProgressBar(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pProgress`  
- [in] `rectProgress`  
- [in] `rectChunk`  
- [in] `bInfiniteMode`  
+ [in] *pDC*  
+ [in] *pProgress*  
+ [in] *rectProgress*  
+ [in] *rectChunk*  
+ [in] *bInfiniteMode*  
   
 ### Remarks  
   
@@ -1405,9 +1400,9 @@ virtual void OnDrawRibbonRecentFilesFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pPanel`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pPanel*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -1422,9 +1417,9 @@ virtual void OnDrawRibbonSliderChannel(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pSlider`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pSlider*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -1442,12 +1437,12 @@ virtual void OnDrawRibbonSliderThumb(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pSlider`  
- [in] `rect`  
- [in] `bIsHighlighted`  
- [in] `bIsPressed`  
- [in] `bIsDisabled`  
+ [in] *pDC*  
+ [in] *pSlider*  
+ [in] *rect*  
+ [in] *bIsHighlighted*  
+ [in] *bIsPressed*  
+ [in] *bIsDisabled*  
   
 ### Remarks  
   
@@ -1466,13 +1461,13 @@ virtual void OnDrawRibbonSliderZoomButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pSlider`  
- [in] `rect`  
- [in] `bIsZoomOut`  
- [in] `bIsHighlighted`  
- [in] `bIsPressed`  
- [in] `bIsDisabled`  
+ [in] *pDC*  
+ [in] *pSlider*  
+ [in] *rect*  
+ [in] *bIsZoomOut*  
+ [in] *bIsHighlighted*  
+ [in] *bIsPressed*  
+ [in] *bIsDisabled*  
   
 ### Remarks  
   
@@ -1487,9 +1482,9 @@ virtual COLORREF OnDrawRibbonStatusBarPane(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `pPane`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *pPane*  
   
 ### Return Value  
   
@@ -1506,9 +1501,9 @@ virtual COLORREF OnDrawRibbonTabsFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pWndRibbonBar`  
- [in] `rectTab`  
+ [in] *pDC*  
+ [in] *pWndRibbonBar*  
+ [in] *rectTab*  
   
 ### Return Value  
   
@@ -1527,11 +1522,11 @@ virtual void OnDrawScrollButtons(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `nBorderSize`  
- [in] `iImage`  
- [in] `bHilited`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *nBorderSize*  
+ [in] *iImage*  
+ [in] *bHilited*  
   
 ### Remarks  
   
@@ -1547,10 +1542,10 @@ virtual void OnDrawSeparator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
- [in] `bIsHoriz`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
+ [in] *bIsHoriz*  
   
 ### Remarks  
   
@@ -1565,9 +1560,9 @@ virtual void OnDrawShowAllMenuItems(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `state`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *state*  
   
 ### Remarks  
   
@@ -1584,11 +1579,11 @@ virtual void OnDrawStatusBarPaneBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rectPane`  
- [in] `uiID`  
- [in] `nStyle`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rectPane*  
+ [in] *uiID*  
+ [in] *nStyle*  
   
 ### Remarks  
   
@@ -1603,9 +1598,9 @@ virtual void OnDrawStatusBarSizeBox(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pStatBar`  
- [in] `rectSizeBox`  
+ [in] *pDC*  
+ [in] *pStatBar*  
+ [in] *rectSizeBox*  
   
 ### Remarks  
   
@@ -1622,11 +1617,11 @@ virtual void OnDrawTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectTab`  
- [in] `iTab`  
- [in] `bIsActive`  
- [in] `pTabWnd`  
+ [in] *pDC*  
+ [in] *rectTab*  
+ [in] *iTab*  
+ [in] *bIsActive*  
+ [in] *pTabWnd*  
   
 ### Remarks  
   
@@ -1643,11 +1638,11 @@ virtual void OnDrawTabsButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pButton`  
- [in] `uiState`  
- [in] `pWndTab`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pButton*  
+ [in] *uiState*  
+ [in] *pWndTab*  
   
 ### Remarks  
   
@@ -1664,11 +1659,11 @@ virtual void OnDrawTask(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pTask`  
- [in] `pIcons`  
- [in] `bIsHighlighted`  
- [in] `bIsSelected`  
+ [in] *pDC*  
+ [in] *pTask*  
+ [in] *pIcons*  
+ [in] *bIsHighlighted*  
+ [in] *bIsSelected*  
   
 ### Remarks  
   
@@ -1685,11 +1680,11 @@ virtual void OnDrawTasksGroupCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pGroup`  
- [in] `bIsHighlighted`  
- [in] `bIsSelected`  
- [in] `bCanCollapse`  
+ [in] *pDC*  
+ [in] *pGroup*  
+ [in] *bIsHighlighted*  
+ [in] *bIsSelected*  
+ [in] *bCanCollapse*  
   
 ### Remarks  
   
@@ -1704,9 +1699,9 @@ virtual void OnDrawTearOffCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bIsActive`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bIsActive*  
   
 ### Remarks  
   
@@ -1720,8 +1715,8 @@ virtual BOOL OnEraseMDIClientArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectClient`  
+ [in] *pDC*  
+ [in] *rectClient*  
   
 ### Return Value  
   
@@ -1738,9 +1733,9 @@ virtual void OnEraseTabsArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pTabWnd`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pTabWnd*  
   
 ### Remarks  
   
@@ -1756,10 +1751,10 @@ virtual void OnEraseTabsButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pButton`  
- [in] `pWndTab`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pButton*  
+ [in] *pWndTab*  
   
 ### Remarks  
   
@@ -1774,9 +1769,9 @@ virtual BOOL OnEraseTabsFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pTabWnd`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pTabWnd*  
   
 ### Return Value  
   
@@ -1795,11 +1790,11 @@ virtual void OnFillBarBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rectClient`  
- [in] `rectClip`  
- [in] `bNCArea`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rectClient*  
+ [in] *rectClip*  
+ [in] *bNCArea*  
   
 ### Remarks  
   
@@ -1815,10 +1810,10 @@ virtual void OnFillButtonInterior(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `state`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *state*  
   
 ### Remarks  
   
@@ -1838,14 +1833,14 @@ virtual COLORREF OnFillCaptionBarButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
- [in] `bIsPressed`  
- [in] `bIsHighlighted`  
- [in] `bIsDisabled`  
- [in] `bHasDropDownArrow`  
- [in] `bIsSysButton`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
+ [in] *bIsPressed*  
+ [in] *bIsHighlighted*  
+ [in] *bIsDisabled*  
+ [in] *bHasDropDownArrow*  
+ [in] *bIsSysButton*  
   
 ### Return Value  
   
@@ -1863,10 +1858,10 @@ virtual void OnFillHighlightedArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `pBrush`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *pBrush*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -1882,10 +1877,10 @@ virtual COLORREF OnFillMiniFrameCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectCaption`  
- [in] `pFrameWnd`  
- [in] `bActive`  
+ [in] *pDC*  
+ [in] *rectCaption*  
+ [in] *pFrameWnd*  
+ [in] *bActive*  
   
 ### Return Value  
   
@@ -1902,9 +1897,9 @@ virtual void OnFillOutlookBarCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectCaption`  
- [in] `clrText`  
+ [in] *pDC*  
+ [in] *rectCaption*  
+ [in] *clrText*  
   
 ### Remarks  
   
@@ -1921,11 +1916,11 @@ virtual void OnFillOutlookPageButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bIsHighlighted`  
- [in] `bIsPressed`  
- [in] `clrText`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bIsHighlighted*  
+ [in] *bIsPressed*  
+ [in] *clrText*  
   
 ### Remarks  
   
@@ -1939,8 +1934,8 @@ virtual void OnFillPopupWindowBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -1954,8 +1949,8 @@ virtual COLORREF OnFillRibbonButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Return Value  
   
@@ -1978,15 +1973,15 @@ virtual void OnFillRibbonEdit(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pEdit`  
- [in] `rect`  
- [in] `bIsHighlighted`  
- [in] `bIsPaneHighlighted`  
- [in] `bIsDisabled`  
- [in] `clrText`  
- [in] `clrSelBackground`  
- [in] `clrSelText`  
+ [in] *pDC*  
+ [in] *pEdit*  
+ [in] *rect*  
+ [in] *bIsHighlighted*  
+ [in] *bIsPaneHighlighted*  
+ [in] *bIsDisabled*  
+ [in] *clrText*  
+ [in] *clrSelBackground*  
+ [in] *clrSelText*  
   
 ### Remarks  
   
@@ -2000,8 +1995,8 @@ virtual COLORREF OnFillRibbonMainPanelButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Return Value  
   
@@ -2018,9 +2013,9 @@ virtual void OnFillRibbonMenuFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pPanel`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pPanel*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -2035,9 +2030,9 @@ virtual void OnFillRibbonQuickAccessToolBarPopup(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pMenuBar`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pMenuBar*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -2055,12 +2050,12 @@ virtual void OnFillTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectFill`  
- [in] `pbrFill`  
- [in] `iTab`  
- [in] `bIsActive`  
- [in] `pTabWnd`  
+ [in] *pDC*  
+ [in] *rectFill*  
+ [in] *pbrFill*  
+ [in] *iTab*  
+ [in] *bIsActive*  
+ [in] *pTabWnd*  
   
 ### Remarks  
   
@@ -2076,10 +2071,10 @@ virtual void OnHighlightMenuItem(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `clrText`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *clrText*  
   
 ### Remarks  
   
@@ -2093,8 +2088,8 @@ virtual void OnHighlightRarelyUsedMenuItems(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectRarelyUsed`  
+ [in] *pDC*  
+ [in] *rectRarelyUsed*  
   
 ### Remarks  
   
@@ -2108,8 +2103,8 @@ virtual BOOL OnNcActivate(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
- [in] `bActive`  
+ [in] *pWnd*  
+ [in] *bActive*  
   
 ### Return Value  
   
@@ -2126,9 +2121,9 @@ virtual BOOL OnNcPaint(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
- [in] `lstSysButtons`  
- [in] `rectRedraw`  
+ [in] *pWnd*  
+ [in] *lstSysButtons*  
+ [in] *rectRedraw*  
   
 ### Return Value  
   
@@ -2144,8 +2139,8 @@ virtual BOOL OnSetWindowRegion(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
- [in] `sizeWindow`  
+ [in] *pWnd*  
+ [in] *sizeWindow*  
   
 ### Return Value  
   
@@ -2168,7 +2163,7 @@ static void __stdcall SetResourceHandle(HINSTANCE hinstRes);
 ```  
   
 ### Parameters  
- [in] `hinstRes`  
+ [in] *hinstRes*  
   
 ### Remarks  
   

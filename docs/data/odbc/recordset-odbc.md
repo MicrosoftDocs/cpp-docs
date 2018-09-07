@@ -2,18 +2,13 @@
 title: "Recordset (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["recordsets, snapshots", "recordsets, creating", "dynamic recordsets", "forward-only recordsets", "recordsets, dynasets", "ODBC recordsets, CRecordset objects", "ODBC recordsets", "recordsets, about recordsets", "snapshots, ODBC recordsets", "dynasets"]
 ms.assetid: 333337c5-575e-4d26-b5f6-47166ad7874d
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset (ODBC)
@@ -53,9 +48,9 @@ This topic applies to the MFC ODBC classes.
   
  `CRecordset` also allows for two other types of recordsets: dynamic recordsets and forward-only recordsets. Dynamic recordsets are similar to dynasets; however, dynamic recordsets reflect any records added or deleted without calling `CRecordset::Requery`. For this reason, dynamic recordsets are generally expensive with respect to processing time on the DBMS, and many ODBC drivers do not support them. In contrast, forward-only recordsets provide the most efficient method of data access for recordsets that do not require updates or backward scrolling. For example, you might use a forward-only recordset to migrate data from one data source to another, where you only need to move through the data in a forward direction. To use a forward-only recordset, you must do both of the following:  
   
--   Pass the option **CRecordset::forwardOnly** as the `nOpenType` parameter of the [Open](../../mfc/reference/crecordset-class.md#open) member function.  
+-   Pass the option `CRecordset::forwardOnly` as the *nOpenType* parameter of the [Open](../../mfc/reference/crecordset-class.md#open) member function.  
   
--   Specify **CRecordset::readOnly** in the `dwOptions` parameter of **Open**.  
+-   Specify `CRecordset::readOnly` in the *dwOptions* parameter of `Open`.  
   
     > [!NOTE]
     >  For information about ODBC driver requirements for dynaset support, see [ODBC](../../data/odbc/odbc-basics.md). For a list of ODBC drivers included in this version of Visual C++ and for information about obtaining additional drivers, see [ODBC Driver List](../../data/odbc/odbc-driver-list.md).  

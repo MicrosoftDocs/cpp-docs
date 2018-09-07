@@ -2,42 +2,34 @@
 title: "ConvertStringToBSTR | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["ConvertStringToBSTR"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ConvertStringToBSTR function"]
 ms.assetid: 071f9b3b-9643-4e06-a1e5-de96ed15bab2
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ConvertStringToBSTR
 **Microsoft Specific**  
   
- Converts a **char \*** value to a `BSTR`.  
+ Converts a `char *` value to a `BSTR`.  
   
 ## Syntax  
   
 ```  
-  
-      BSTR __stdcall ConvertStringToBSTR(  
-   const char* pSrc  
-)  
+BSTR __stdcall ConvertStringToBSTR(const char* pSrc)  
 ```  
   
 #### Parameters  
- `pSrc`  
- A **char \*** variable.  
+ *pSrc*  
+ A `char *` variable.  
   
 ## Example  
   
-```  
+```cpp 
 // ConvertStringToBSTR.cpp  
 #include <comutil.h>  
 #include <stdio.h>  
@@ -64,9 +56,9 @@ BSTR text: Test
 **END Microsoft Specific**  
   
 ## Requirements  
- **Header:** comutil.h  
+ **Header:** \<comutil.h>  
   
  **Lib:** comsuppw.lib or comsuppwd.lib (see [/Zc:wchar_t (wchar_t Is Native Type)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) for more information)  
   
-## See Also  
+## See also  
  [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

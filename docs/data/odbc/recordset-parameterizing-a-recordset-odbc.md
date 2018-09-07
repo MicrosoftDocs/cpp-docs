@@ -2,18 +2,13 @@
 title: "Recordset: Parameterizing a Recordset (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["parameterizing recordsets", "ODBC recordsets, parameterizing", "recordsets, parameterizing", "passing parameters, to queries at runtime"]
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Parameterizing a Recordset (ODBC)
@@ -38,21 +33,21 @@ This topic applies to the MFC ODBC classes.
   
 -   It lets you build a query at run time, based on information not available to you at design time, such as information obtained from your user or calculated at run time.  
   
- When you call **Open** to run the query, the recordset uses the parameter information to complete its **SQL SELECT** statement. You can parameterize any recordset.  
+ When you call `Open` to run the query, the recordset uses the parameter information to complete its **SQL SELECT** statement. You can parameterize any recordset.  
   
 ##  <a name="_core_when_to_use_parameters"></a> When to Use Parameters  
  Typical uses for parameters include:  
   
 -   Passing run-time arguments to a predefined query.  
   
-     To pass parameters to a stored procedure, you must specify a complete custom ODBC **CALL** statement — with parameter placeholders — when you call **Open**, overriding the recordset's default SQL statement. For more information, see [CRecordset::Open](../../mfc/reference/crecordset-class.md#open) in the *Class Library Reference* and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md) and [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
+     To pass parameters to a stored procedure, you must specify a complete custom ODBC **CALL** statement — with parameter placeholders — when you call `Open`, overriding the recordset's default SQL statement. For more information, see [CRecordset::Open](../../mfc/reference/crecordset-class.md#open) in the *Class Library Reference* and [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md) and [Recordset: Declaring a Class for a Predefined Query (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md).  
 
   
 -   Efficiently performing numerous requeries with different parameter information.  
   
-     For example, each time your end user looks up information for a particular student in the student registration database, you can specify the student's name or ID as a parameter obtained from the user. Then, when you call your recordset's **Requery** member function, the query selects only that student's record.  
+     For example, each time your end user looks up information for a particular student in the student registration database, you can specify the student's name or ID as a parameter obtained from the user. Then, when you call your recordset's `Requery` member function, the query selects only that student's record.  
   
-     Your recordset's filter string, stored in **m_strFilter**, might look like this:  
+     Your recordset's filter string, stored in `m_strFilter`, might look like this:  
   
     ```  
     "StudentID = ?"  
@@ -80,7 +75,7 @@ This topic applies to the MFC ODBC classes.
      The parameter value is different each time you requery the recordset for a new student ID.  
   
     > [!TIP]
-    >  Using a parameter is more efficient than simply a filter. For a parameterized recordset, the database must process a SQL **SELECT** statement only once. For a filtered recordset without parameters, the **SELECT** statement must be processed each time you **Requery** with a new filter value.  
+    >  Using a parameter is more efficient than simply a filter. For a parameterized recordset, the database must process a SQL **SELECT** statement only once. For a filtered recordset without parameters, the **SELECT** statement must be processed each time you `Requery` with a new filter value.  
   
  For more information about filters, see [Recordset: Filtering Records (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).  
   
@@ -99,7 +94,7 @@ This topic applies to the MFC ODBC classes.
   
 3.  After the wizard writes the class to a file in your project, go to the .h file and manually add one or more parameter data members to the class declaration. The addition might look something like the following example, part of a snapshot class designed to answer the query "Which students are in the senior class?"  
   
-    ```  
+    ```cpp  
     class CStudentSet : public CRecordset  
     {  
     // Field/Param Data  
@@ -137,21 +132,21 @@ This topic applies to the MFC ODBC classes.
 >  The most likely string to work with is the string you specify (if any) for the class's [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) data member, but some ODBC drivers might allow parameters in other SQL clauses.  
   
 ##  <a name="_core_passing_parameter_values_at_run_time"></a> Passing Parameter Values at Run Time  
- You must specify parameter values before you call **Open** (for a new recordset object) or **Requery** (for an existing one).  
+ You must specify parameter values before you call `Open` (for a new recordset object) or `Requery` (for an existing one).  
   
 #### To pass parameter values to a recordset object at run time  
   
 1.  Construct the recordset object.  
   
-2.  Prepare a string or strings, such as the **m_strFilter** string, containing the SQL statement, or parts of it. Put "?" placeholders where the parameter information is to go.  
+2.  Prepare a string or strings, such as the `m_strFilter` string, containing the SQL statement, or parts of it. Put "?" placeholders where the parameter information is to go.  
   
 3.  Assign a run-time parameter value to each parameter data member of the object.  
   
-4.  Call the **Open** member function (or **Requery**, for an existing recordset).  
+4.  Call the `Open` member function (or `Requery`, for an existing recordset).  
   
  For example, suppose you want to specify a filter string for your recordset using information obtained at run time. Assume you have constructed a recordset of class `CStudentSet` earlier — called `rsStudents` — and now want to requery it for a particular kind of student information.  
   
-```  
+```cpp  
 // Set up a filter string with   
 // parameter placeholders  
 rsStudents.m_strFilter = "GradYear <= ?";  

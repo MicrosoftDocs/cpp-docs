@@ -2,18 +2,13 @@
 title: "Prerequisites for Internet Client Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Internet files [MFC], writing to", "Internet [MFC], connections", "FTP (File Transfer Protocol), MFC classes", "Gopher prerequisites [MFC]", "files [MFC], writing to", "classes [MFC], connections", "HTTP [MFC], prerequisites for Internet clients", "connections [MFC], classes for", "Internet client class prerequisites [MFC]", "files [MFC], reading", "URLs [MFC], Internet client applications", "prerequisites, Internet client classes [MFC]", "Gopher client applications [MFC]"]
 ms.assetid: c51d1dfe-260c-4228-8100-e4efd90e9599
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Prerequisites for Internet Client Classes

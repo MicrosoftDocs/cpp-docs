@@ -2,19 +2,14 @@
 title: "CMFCRibbonFontComboBox Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::CMFCRibbonFontComboBox", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::BuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetCharSet", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontDesc", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetFontType", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts", "AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonFontComboBox [MFC], CMFCRibbonFontComboBox", "CMFCRibbonFontComboBox [MFC], BuildFonts", "CMFCRibbonFontComboBox [MFC], GetCharSet", "CMFCRibbonFontComboBox [MFC], GetFontDesc", "CMFCRibbonFontComboBox [MFC], GetFontType", "CMFCRibbonFontComboBox [MFC], GetPitchAndFamily", "CMFCRibbonFontComboBox [MFC], RebuildFonts", "CMFCRibbonFontComboBox [MFC], SetFont"]
 ms.assetid: 33b4db50-df4f-45fa-8f05-2e6e73c31435
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonFontComboBox Class
@@ -84,13 +79,13 @@ void BuildFonts(
 ```  
   
 ### Parameters  
- [in] `nFontType`  
+ [in] *nFontType*  
  Specifies the font type of the fonts to add.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Specifies the character set of the fonts to add.  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  Specifies the pitch and family of the fonts to add.  
   
 ##  <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox  
@@ -106,35 +101,35 @@ CMFCRibbonFontComboBox(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The command ID of the command that executes when the user selects an item from the combo box.  
   
- [in] `nFontType`  
- Specifies which font types to display in the combo box. Valid options are **DEVICE_FONTTYPE**, **RASTER_FONTTYPE**, and **TRUETYPE_FONTTYPE**, or any bitwise combination thereof.  
+ [in] *nFontType*  
+ Specifies which font types to display in the combo box. Valid options are DEVICE_FONTTYPE, RASTER_FONTTYPE, and TRUETYPE_FONTTYPE, or any bitwise combination thereof.  
   
- [in] `nCharSet`  
+ [in] *nCharSet*  
  Filters the fonts in the combo box to those that belong to the specified character set..  
   
- [in] `nPitchAndFamily`  
+ [in] *nPitchAndFamily*  
  Specifies the pitch and the family of the fonts that are displayed in the combo box.  
   
- [in] `nWidth`  
+ [in] *nWidth*  
  Specifies the width, in pixels, of the combo box.  
   
 ### Remarks  
- For more information about possible `nFontType` parameter values, see [EnumFontFamProc](http://msdn.microsoft.com/library/windows/desktop/dd162621) in the Windows SDK documentation.  
+ For more information about possible *nFontType* parameter values, see [EnumFontFamProc](https://msdn.microsoft.com/library/windows/desktop/dd162621) in the Windows SDK documentation.  
   
- For more information about valid character sets that can be assigned to `nCharSet`, and valid values that can be assigned to `nPitchAndFamily`, see [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) in the Windows SDK documentation.  
+ For more information about valid character sets that can be assigned to *nCharSet*, and valid values that can be assigned to *nPitchAndFamily*, see [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) in the Windows SDK documentation.  
   
 ##  <a name="getfontdesc"></a>  CMFCRibbonFontComboBox::GetFontDesc  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;  
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
   
 ### Return Value  
   
@@ -161,14 +156,14 @@ BOOL SetFont(
 ```  
   
 ### Parameters  
- `lpszName`  
+ `lpszName*  
  Specifies the name of the font to select.  
   
- `nCharSet`  
+ *nCharSet*  
  Specifies the character set for the selected font.  
   
- `bExact`  
- `TRUE` to specify that the character set must match when selecting a font; `FALSE` to specify that the character set can be ignored when selecting a font.  
+ *bExact*  
+ TRUE to specify that the character set must match when selecting a font; FALSE to specify that the character set can be ignored when selecting a font.  
   
 ### Return Value  
  Nonzero if the specified font was found and selected; otherwise, zero.  

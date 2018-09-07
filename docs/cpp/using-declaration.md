@@ -2,18 +2,13 @@
 title: "using Declaration | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["using declaration", "declaring namespaces, unqualified names in namespaces", "declarations [C++], using-declaration", "namespaces [C++], unqualified names in", "using keyword [C++]", "declarations [C++], namespaces"]
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # using Declaration
@@ -29,16 +24,16 @@ using declarator-list ;
 ### Parameters
   
 *nested-name-specifier*  
-    A sequence of namespace, class, or enumeration names and scope resolution operators (::), terminated by a scope resolution operator. A single scope resolution operator may be used to introduce a name from the global namespace. The keyword `typename` is optional and may be used to resolve dependent names when introduced into a class template from a base class.  
+    A sequence of namespace, class, or enumeration names and scope resolution operators (::), terminated by a scope resolution operator. A single scope resolution operator may be used to introduce a name from the global namespace. The keyword **typename** is optional and may be used to resolve dependent names when introduced into a class template from a base class.  
   
 *unqualified-id*  
     An unqualified id-expression, which may be an identifier, an overloaded operator name, a user-defined literal operator or conversion function name, a class destructor name, or a template name and argument list.  
   
 *declarator-list*  
-    A comma-separated list of [`typename`] *nested-name-specifier* *unqualified-id* declarators, followed optionally by an ellipsis.
+    A comma-separated list of [**typename**] *nested-name-specifier* *unqualified-id* declarators, followed optionally by an ellipsis.
     
 ## Remarks  
-A using declaration introduces an unqualified name as a synonym for an entity declared elsewhere. It allows a single name from a specific namespace to be used without explicit qualification in the declaration region in which it appears. This is in contrast to the [using directive](../cpp/namespaces-cpp.md#using_directives), which allows *all* the names in a namespace to be used without qualification. The `using` keyword is also used for [type aliases](../cpp/aliases-and-typedefs-cpp.md).  
+A using declaration introduces an unqualified name as a synonym for an entity declared elsewhere. It allows a single name from a specific namespace to be used without explicit qualification in the declaration region in which it appears. This is in contrast to the [using directive](../cpp/namespaces-cpp.md#using_directives), which allows *all* the names in a namespace to be used without qualification. The **using** keyword is also used for [type aliases](../cpp/aliases-and-typedefs-cpp.md).  
   
 ## Example  
  A using declaration can be used in a class definition.  
@@ -166,7 +161,7 @@ In A::g
 ## Example  
 When a using declaration is made, the synonym created by the declaration refers only to definitions that are valid at the point of the using declaration. Definitions added to a namespace after the using declaration are not valid synonyms.  
   
-A name defined by a `using` declaration is an alias for its original name. It does not affect the type, linkage or other attributes of the original declaration.  
+A name defined by a **using** declaration is an alias for its original name. It does not affect the type, linkage or other attributes of the original declaration.  
   
 ```cpp  
 // post_declaration_namespace_additions.cpp  
@@ -320,6 +315,6 @@ public:
 };  
 ```  
   
-## See Also  
+## See also  
  [Namespaces](../cpp/namespaces-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

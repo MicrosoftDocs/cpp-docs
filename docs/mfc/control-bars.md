@@ -2,22 +2,17 @@
 title: "Control Bars | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["command bars [MFC], types of", "toolbars [MFC], control bars", "control bars [MFC]", "MFC, control bars", "control bars [MFC], types of", "CDialogBar class [MFC], control bars", "status bars [MFC], control bars", "CControlBar class [MFC], MFC control bars", "dialog bars [MFC], control bars", "CToolBar class [MFC], control bars", "CStatusBar class [MFC], control bars"]
 ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Control Bars
-"Control bar" is the general name for toolbars, status bars, and dialog bars. MFC classes `CToolBar`, `CStatusBar`, `CDialogBar`, `COleResizeBar`, and **CReBar** derive from class [CControlBar](../mfc/reference/ccontrolbar-class.md), which implements their common functionality.  
+"Control bar" is the general name for toolbars, status bars, and dialog bars. MFC classes `CToolBar`, `CStatusBar`, `CDialogBar`, `COleResizeBar`, and `CReBar` derive from class [CControlBar](../mfc/reference/ccontrolbar-class.md), which implements their common functionality.  
   
  Control bars are windows that display rows of controls with which users can select options, execute commands, or obtain program information. Types of control bars include toolbars, dialog bars, and status bars.  
   
@@ -30,7 +25,7 @@ ms.workload: ["cplusplus"]
 -   Rebars, in class [CReBar](../mfc/reference/crebar-class.md)  
   
 > [!IMPORTANT]
->  As of MFC version 4.0, toolbars, status bars, and tool tips are implemented using system functionality implemented in the comctl32.dll instead of the previous implementation specific to MFC. In MFC version 6.0, **CReBar**, which also wraps comctl32.dll functionality, was added.  
+>  As of MFC version 4.0, toolbars, status bars, and tool tips are implemented using system functionality implemented in the *comctl32.dll* instead of the previous implementation specific to MFC. In MFC version 6.0, `CReBar`, which also wraps comctl32.dll functionality, was added.  
   
  Brief introductions to the control-bar types follow. For further information, see the links below.  
   

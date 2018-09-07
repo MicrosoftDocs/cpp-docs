@@ -2,19 +2,14 @@
 title: "CScrollView Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CScrollView", "AFXWIN/CScrollView", "AFXWIN/CScrollView::CScrollView", "AFXWIN/CScrollView::CheckScrollBars", "AFXWIN/CScrollView::FillOutsideRect", "AFXWIN/CScrollView::GetDeviceScrollPosition", "AFXWIN/CScrollView::GetDeviceScrollSizes", "AFXWIN/CScrollView::GetScrollPosition", "AFXWIN/CScrollView::GetTotalSize", "AFXWIN/CScrollView::ResizeParentToFit", "AFXWIN/CScrollView::ScrollToPosition", "AFXWIN/CScrollView::SetScaleToFitSize", "AFXWIN/CScrollView::SetScrollSizes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CScrollView [MFC], CScrollView", "CScrollView [MFC], CheckScrollBars", "CScrollView [MFC], FillOutsideRect", "CScrollView [MFC], GetDeviceScrollPosition", "CScrollView [MFC], GetDeviceScrollSizes", "CScrollView [MFC], GetScrollPosition", "CScrollView [MFC], GetTotalSize", "CScrollView [MFC], ResizeParentToFit", "CScrollView [MFC], ScrollToPosition", "CScrollView [MFC], SetScaleToFitSize", "CScrollView [MFC], SetScrollSizes"]
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CScrollView Class
@@ -58,9 +53,9 @@ class CScrollView : public CView
   
 -   It scrolls automatically in response to messages from the keyboard, a non-scrolling mouse, or the IntelliMouse wheel.  
   
- To scroll automatically in response to messages from the keyboard, add a WM_KEYDOWN message, and test for VK_DOWN, VK_PREV and call [SetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787597).  
+ To scroll automatically in response to messages from the keyboard, add a WM_KEYDOWN message, and test for VK_DOWN, VK_PREV and call [SetScrollPos](/windows/desktop/api/winuser/nf-winuser-setscrollpos).  
   
- You can handle mouse wheel scrolling yourself by overriding the message-mapped [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) and [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) member functions. As they are for `CScrollView`, these member functions support the recommended behaviour for [WM_MOUSEWHEEL](http://msdn.microsoft.com/library/windows/desktop/ms645617), the wheel rotation message.  
+ You can handle mouse wheel scrolling yourself by overriding the message-mapped [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) and [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) member functions. As they are for `CScrollView`, these member functions support the recommended behaviour for [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel), the wheel rotation message.  
   
  To take advantage of automatic scrolling, derive your view class from `CScrollView` instead of from `CView`. When the view is first created, if you want to calculate the size of the scrollable view based on the size of the document, call the `SetScrollSizes` member function from your override of either [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) or [CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate). (You must write your own code to query the size of the document. For an example, see the [Scribble sample](../../visual-cpp-samples.md).)  
   
@@ -72,13 +67,13 @@ class CScrollView : public CView
   
  Before the `OnDraw` member function of your derived view class is called, `CScrollView` automatically adjusts the viewport origin for the `CPaintDC` device-context object that it passes to `OnDraw`.  
   
- To adjust the viewport origin for the scrolling window, `CScrollView` overrides [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc). This adjustment is automatic for the `CPaintDC` device context that `CScrollView` passes to `OnDraw`, but you must call **CScrollView::OnPrepareDC** yourself for any other device contexts you use, such as a `CClientDC`. You can override **CScrollView::OnPrepareDC** to set the pen, background color, and other drawing attributes, but call the base class to do scaling.  
+ To adjust the viewport origin for the scrolling window, `CScrollView` overrides [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc). This adjustment is automatic for the `CPaintDC` device context that `CScrollView` passes to `OnDraw`, but you must call `CScrollView::OnPrepareDC` yourself for any other device contexts you use, such as a `CClientDC`. You can override `CScrollView::OnPrepareDC` to set the pen, background color, and other drawing attributes, but call the base class to do scaling.  
   
  Scroll bars can appear in three places relative to a view, as shown in the following cases:  
   
--   Standard window-style scroll bars can be set for the view using the **WS_HSCROLL** and **WS_VSCROLL**[Windows Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+-   Standard window-style scroll bars can be set for the view using the WS_HSCROLL and WS_VSCROLL[Windows Styles](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
--   Scroll-bar controls can also be added to the frame containing the view, in which case the framework forwards `WM_HSCROLL` and `WM_VSCROLL` messages from the frame window to the currently active view.  
+-   Scroll-bar controls can also be added to the frame containing the view, in which case the framework forwards WM_HSCROLL and WM_VSCROLL messages from the frame window to the currently active view.  
   
 -   The framework also forwards scroll messages from a `CSplitterWnd` splitter control to the currently active splitter pane (a view). When placed in a [CSplitterWnd](../../mfc/reference/csplitterwnd-class.md) with shared scroll bars, a `CScrollView` object will use the shared ones rather than creating its own.  
   
@@ -134,10 +129,10 @@ void FillOutsideRect(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Device context in which the filling is to be done.  
   
- `pBrush`  
+ *pBrush*  
  Brush with which the area is to be filled.  
   
 ### Remarks  
@@ -173,17 +168,17 @@ void GetDeviceScrollSizes(
 ```  
   
 ### Parameters  
- `nMapMode`  
+ *nMapMode*  
  Returns the current mapping mode for this view. For a list of possible values, see `SetScrollSizes`.  
   
- `sizeTotal`  
+ *sizeTotal*  
  Returns the current total size of the scroll view in device units.  
   
- `sizePage`  
- Returns the current horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll-bar shaft. The **cx** member contains the horizontal amount. The **cy** member contains the vertical amount.  
+ *sizePage*  
+ Returns the current horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll-bar shaft. The `cx` member contains the horizontal amount. The `cy` member contains the vertical amount.  
   
- `sizeLine`  
- Returns the current horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll arrow. The **cx** member contains the horizontal amount. The **cy** member contains the vertical amount.  
+ *sizeLine*  
+ Returns the current horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll arrow. The `cx` member contains the horizontal amount. The `cy` member contains the vertical amount.  
   
 ### Remarks  
  Sizes are in device units. This member function is rarely called.  
@@ -211,7 +206,7 @@ CSize GetTotalSize() const;
 ```  
   
 ### Return Value  
- The total size of the scroll view in logical units. The horizontal size is in the **cx** member of the `CSize` return value. The vertical size is in the **cy** member.  
+ The total size of the scroll view in logical units. The horizontal size is in the `cx` member of the `CSize` return value. The vertical size is in the `cy` member.  
   
 ##  <a name="resizeparenttofit"></a>  CScrollView::ResizeParentToFit  
  Call `ResizeParentToFit` to let the size of your view dictate the size of its frame window.  
@@ -222,7 +217,7 @@ void ResizeParentToFit(BOOL bShrinkOnly = TRUE);
   
 ### Parameters  
  *bShrinkOnly*  
- The kind of resizing to perform. The default value, **TRUE**, shrinks the frame window if appropriate. Scroll bars will still appear for large views or small frame windows. A value of **FALSE** causes the view always to resize the frame window exactly. This can be somewhat dangerous since the frame window could get too big to fit inside the multiple document interface (MDI) frame window or the screen.  
+ The kind of resizing to perform. The default value, TRUE, shrinks the frame window if appropriate. Scroll bars will still appear for large views or small frame windows. A value of FALSE causes the view always to resize the frame window exactly. This can be somewhat dangerous since the frame window could get too big to fit inside the multiple document interface (MDI) frame window or the screen.  
   
 ### Remarks  
  This is recommended only for views in MDI child frame windows. Use `ResizeParentToFit` in the `OnInitialUpdate` handler function of your derived `CScrollView` class. For an example of this member function, see [CScrollView::SetScrollSizes](#setscrollsizes).  
@@ -239,8 +234,8 @@ void ScrollToPosition(POINT pt);
 ```  
   
 ### Parameters  
- `pt`  
- The point to scroll to, in logical units. The **x** member must be a positive value (greater than or equal to 0, up to the total size of the view). The same is true for the **y** member when the mapping mode is `MM_TEXT`. The **y** member is negative in mapping modes other than `MM_TEXT`.  
+ *pt*  
+ The point to scroll to, in logical units. The `x` member must be a positive value (greater than or equal to 0, up to the total size of the view). The same is true for the `y` member when the mapping mode is MM_TEXT. The `y` member is negative in mapping modes other than MM_TEXT.  
   
 ### Remarks  
  The view will be scrolled so that this point is at the upper-left corner of the window. This member function must not be called if the view is scaled to fit.  
@@ -253,8 +248,8 @@ void SetScaleToFitSize(SIZE sizeTotal);
 ```  
   
 ### Parameters  
- `sizeTotal`  
- The horizontal and vertical sizes to which the view is to be scaled. The scroll view's size is measured in logical units. The horizontal size is contained in the **cx** member. The vertical size is contained in the **cy** member. Both **cx** and **cy** must be greater than or equal to 0.  
+ *sizeTotal*  
+ The horizontal and vertical sizes to which the view is to be scaled. The scroll view's size is measured in logical units. The horizontal size is contained in the `cx` member. The vertical size is contained in the `cy` member. Both `cx` and `cy` must be greater than or equal to 0.  
   
 ### Remarks  
  With scroll bars, only a portion of the logical view may be visible at any time. But with the scale-to-fit capability, the view has no scroll bars and the logical view is stretched or shrunk to exactly fit the window's client area. When the window is resized, the view draws its data at a new scale based on the size of the window.  
@@ -279,28 +274,28 @@ void SetScrollSizes(
 ```  
   
 ### Parameters  
- `nMapMode`  
+ *nMapMode*  
  The mapping mode to set for this view. Possible values include:  
   
 |Mapping Mode|Logical Unit|Positive y-axis Extends...|  
 |------------------|------------------|---------------------------------|  
-|`MM_TEXT`|1 pixel|Downward|  
-|`MM_HIMETRIC`|0.01 mm|Upward|  
-|`MM_TWIPS`|1/1440 in|Upward|  
-|`MM_HIENGLISH`|0.001 in|Upward|  
-|`MM_LOMETRIC`|0.1 mm|Upward|  
-|`MM_LOENGLISH`|0.01 in|Upward|  
+|MM_TEXT|1 pixel|Downward|  
+|MM_HIMETRIC|0.01 mm|Upward|  
+|MM_TWIPS|1/1440 in|Upward|  
+|MM_HIENGLISH|0.001 in|Upward|  
+|MM_LOMETRIC|0.1 mm|Upward|  
+|MM_LOENGLISH|0.01 in|Upward|  
   
- All of these modes are defined by Windows. Two standard mapping modes, `MM_ISOTROPIC` and `MM_ANISOTROPIC`, are not used for `CScrollView`. The class library provides the `SetScaleToFitSize` member function for scaling the view to window size. Column three in the table above describes the coordinate orientation.  
+ All of these modes are defined by Windows. Two standard mapping modes, MM_ISOTROPIC and MM_ANISOTROPIC, are not used for `CScrollView`. The class library provides the `SetScaleToFitSize` member function for scaling the view to window size. Column three in the table above describes the coordinate orientation.  
   
- `sizeTotal`  
- The total size of the scroll view. The **cx** member contains the horizontal extent. The **cy** member contains the vertical extent. Sizes are in logical units. Both **cx** and **cy** must be greater than or equal to 0.  
+ *sizeTotal*  
+ The total size of the scroll view. The `cx` member contains the horizontal extent. The `cy` member contains the vertical extent. Sizes are in logical units. Both `cx` and `cy` must be greater than or equal to 0.  
   
- `sizePage`  
- The horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll-bar shaft. The **cx** member contains the horizontal amount. The **cy** member contains the vertical amount.  
+ *sizePage*  
+ The horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll-bar shaft. The `cx` member contains the horizontal amount. The `cy` member contains the vertical amount.  
   
- `sizeLine`  
- The horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll arrow. The **cx** member contains the horizontal amount. The **cy** member contains the vertical amount.  
+ *sizeLine*  
+ The horizontal and vertical amounts to scroll in each direction in response to a mouse click in a scroll arrow. The `cx` member contains the horizontal amount. The `cy` member contains the vertical amount.  
   
 ### Remarks  
  Call it in your override of the `OnUpdate` member function to adjust scrolling characteristics when, for example, the document is initially displayed or when it changes size.  
@@ -313,7 +308,7 @@ void SetScrollSizes(
   
  [!code-cpp[NVC_MFCDocView#167](../../mfc/codesnippet/cpp/cscrollview-class_4.cpp)]  
   
- You must set the mapping mode to any of the Windows mapping modes except `MM_ISOTROPIC` or `MM_ANISOTROPIC`. If you want to use an unconstrained mapping mode, call the `SetScaleToFitSize` member function instead of `SetScrollSizes`.  
+ You must set the mapping mode to any of the Windows mapping modes except MM_ISOTROPIC or MM_ANISOTROPIC. If you want to use an unconstrained mapping mode, call the `SetScaleToFitSize` member function instead of `SetScrollSizes`.  
   
 ### Example  
  [!code-cpp[NVC_MFCDocView#168](../../mfc/codesnippet/cpp/cscrollview-class_5.cpp)]  

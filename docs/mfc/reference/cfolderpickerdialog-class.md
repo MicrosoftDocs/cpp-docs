@@ -2,19 +2,14 @@
 title: "CFolderPickerDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CFolderPickerDialog", "AFXDLGS/CFolderPickerDialog", "AFXDLGS/CFolderPickerDialog::CFolderPickerDialog"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFolderPickerDialog [MFC], CFolderPickerDialog"]
 ms.assetid: 8db01684-dd1d-4e9c-989e-07a2318a8156
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CFolderPickerDialog Class
@@ -67,16 +62,16 @@ explicit CFolderPickerDialog(
 ```  
   
 ### Parameters  
- `lpszFolder`  
+ *lpszFolder*  
  Initial folder.  
   
- `dwFlags`  
+ *dwFlags*  
  A combination of one or more flags that allow you to customize the dialog box.  
   
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the dialog box object's parent or owner window.  
   
- `dwSize`  
+ *dwSize*  
  The size of the OPENFILENAME structure.  
   
 ### Remarks  

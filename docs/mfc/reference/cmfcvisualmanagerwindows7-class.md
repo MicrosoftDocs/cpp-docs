@@ -2,23 +2,18 @@
 title: "CMFCVisualManagerWindows7 Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::CMFCVisualManagerWindows7", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor", "AFXVISUALMANAGERWINDOWS7/CMFCVisualManagerWindows7::OnFillMenuImageRect"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCVisualManagerWindows7 Class [MFC]"]
 ms.assetid: e8d87df1-0c09-4b58-8ade-4e911f796e42
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManagerWindows7 Class
-The `CMFCVisualManagerWindows7` gives an application the appearance of a [!INCLUDE[win7](../../build/includes/win7_md.md)] application.  
+The `CMFCVisualManagerWindows7` gives an application the appearance of a Windows 7 application.  
   
 ## Syntax  
   
@@ -93,7 +88,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |`CMFCVisualManagerWindows7::SetStyle`|Sets the color scheme of the `CMFCVisualManagerWindows7` GUI.|  
   
 ## Remarks  
- Use the `CMFCVisualManagerWindows7` class to change the appearance of your application to mimic a default [!INCLUDE[win7](../../build/includes/win7_md.md)] application. This class might not be valid if your application is running on a version of Windows earlier than [!INCLUDE[win7](../../build/includes/win7_md.md)]. In that scenario, the application uses the default visual manager defined in [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
+ Use the `CMFCVisualManagerWindows7` class to change the appearance of your application to mimic a default Windows 7 application. This class might not be valid if your application is running on a version of Windows earlier than Windows 7. In that scenario, the application uses the default visual manager defined in [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).  
   
  The CMFCVisualManagerWindows7 inherits multiple methods from both the [CMFCVisualManagerWindows Class](../../mfc/reference/cmfcvisualmanagerwindows-class.md) and the `CMFCVisualManager` class. The methods listed in the previous section are methods new to the `CMFCVisualManagerWindows7` class.  
   
@@ -139,20 +134,20 @@ virtual COLORREF GetRibbonEditBackgroundColor (
 ```  
   
 ### Parameters  
- [in] `pEdit`  
- A pointer to the edit control. This value cannot be `NULL`.  
+ [in] *pEdit*  
+ A pointer to the edit control. This value cannot be NULL.  
   
- [out] `bIsHighlighted`  
+ [out] *bIsHighlighted*  
  Returns whether the ribbon box is highlighted.  
   
- [out] `bIsPaneHighlighted`  
- Returns `TRUE` if the ribbon panel that contains `pEdit` is highlighted.  
+ [out] *bIsPaneHighlighted*  
+ Returns TRUE if the ribbon panel that contains *pEdit* is highlighted.  
   
- [out] `bIsDisabled`  
- Returns whether `pEdit` is disabled.  
+ [out] *bIsDisabled*  
+ Returns whether *pEdit* is disabled.  
   
 ### Return Value  
- The background color of the edit box `pEdit`.  
+ The background color of the edit box *pEdit*.  
   
 ### Remarks  
   
@@ -168,16 +163,16 @@ virtual void OnFillMenuImageRect(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of a menu button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a `CMFCToolBarButton`. The framework fills the background for this button.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the menu button image area.  
   
- [in] `state`  
+ [in] *state*  
  The button state.  
   
 ### Remarks  

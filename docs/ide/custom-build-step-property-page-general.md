@@ -2,19 +2,14 @@
 title: "Custom Build Step Property Page: General | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["VC.Project.VCCustomBuildStep.AdditionalInputs", "VC.Project.VCCustomBuildStep.CustomBuildAfterTargets", "VC.Project.VCCustomBuildStep.CustomBuildBeforeTargets", "VC.Project.VCCustomBuildStep.Outputs", "VC.Project.VCCustomBuildStep.Message", "VC.Project.VCCustomBuildStep.Command"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["project properties, custom build step", "custom build step (general)"]
 ms.assetid: bd319741-0491-46c4-a428-7c61b4b46a02
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Custom Build Step Property Page: General
@@ -39,7 +34,7 @@ For the Linux version of this page, see [Custom Build Step Properties (Linux C++
  These options define when the custom build step is run in the build process, relative to the listed targets. The most commonly listed targets are BuildGenerateSources, BuildCompile, and BuildLink, because they represent the major steps in the build process. Other often-listed targets are Midl, CLCompile, and Link.  
   
  Treat Output As Content  
- This option is only meaningful for Windows Store or Windows Phone apps, which include all content files in the .appx package.  
+ This option is only meaningful for Universal Windows Platform or Windows Phone apps, which include all content files in the .appx package.  
   
 ### To specify a custom build step  
   

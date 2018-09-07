@@ -2,18 +2,13 @@
 title: "Image Overlays in Image Lists | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["overlays [MFC]", "image lists [MFC], image overlays in", "CImageList class [MFC], image overlays in"]
 ms.assetid: aaf4e1c4-cd12-42c8-9af4-1bb458889b4e
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Image Overlays in Image Lists
@@ -21,7 +16,7 @@ Every image list ([CImageList](../mfc/reference/cimagelist-class.md)) includes a
   
  You add the index of an image to the list of overlay masks by using the [SetOverlayImage](../mfc/reference/cimagelist-class.md#setoverlayimage) member function, the index of an image, and the index of an overlay mask. Note that the indices for the overlay masks are one-based rather than zero-based.  
   
- You draw an overlay mask over an image using a single call to **Draw**. The parameters include the index of the image to draw and the index of an overlay mask. You must use the [INDEXTOOVERLAYMASK](http://msdn.microsoft.com/library/windows/desktop/bb761408) macro to specify the index of the overlay mask. You can also specify an overlay image when calling the [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect) member function.  
+ You draw an overlay mask over an image using a single call to `Draw`. The parameters include the index of the image to draw and the index of an overlay mask. You must use the [INDEXTOOVERLAYMASK](/windows/desktop/api/commctrl/nf-commctrl-indextooverlaymask) macro to specify the index of the overlay mask. You can also specify an overlay image when calling the [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect) member function.  
   
 ## See Also  
  [Using CImageList](../mfc/using-cimagelist.md)   

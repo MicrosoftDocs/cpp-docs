@@ -2,19 +2,14 @@
 title: "event Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["event", "CONCRT/concurrency::event", "CONCRT/concurrency::event::reset", "CONCRT/concurrency::event::set", "CONCRT/concurrency::event::wait", "CONCRT/concurrency::event::wait_for_multiple", "CONCRT/concurrency::event::timeout_infinite"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["event class"]
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # event Class
@@ -124,7 +119,7 @@ size_t wait(unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
  If the wait was satisfied, the value `0` is returned; otherwise, the value `COOPERATIVE_WAIT_TIMEOUT` to indicate that the wait timed out without the event becoming signaled.  
   
 > [!IMPORTANT]
->  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call `wait` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.  
+>  In a Universal Windows Platform (UWP) app, do not call `wait` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.  
   
 ##  <a name="wait_for_multiple"></a> wait_for_multiple 
 
@@ -158,7 +153,7 @@ static size_t __cdecl wait_for_multiple(
  If the parameter `_FWaitAll` is set to the value `true` to indicate that all events must become signaled to satisfy the wait, the index returned by the function carries no special significance other than the fact that it is not the value `COOPERATIVE_WAIT_TIMEOUT`.  
   
 > [!IMPORTANT]
->  In a [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] app, do not call `wait_for_multiple` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.  
+>  In a Universal Windows Platform (UWP) app, do not call `wait_for_multiple` on the ASTA thread because this call can block the current thread and can cause the app to become unresponsive.  
   
 ## See Also  
  [concurrency Namespace](concurrency-namespace.md)

@@ -2,24 +2,19 @@
 title: "Smart Pointers (Modern C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
-caps.latest.revision: 26
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Smart Pointers (Modern C++)
 In modern C++ programming, the Standard Library includes *smart pointers*, which are used to help ensure that programs are free of memory and resource leaks and are exception-safe.  
   
 ## Uses for smart pointers  
- Smart pointers are defined in the `std` namespace in the [\<memory>](../standard-library/memory.md) header file. They are crucial to the [RAII](../cpp/objects-own-resources-raii.md) or *Resource Acquisition Is Initialialization* programming idiom. The main goal of this idiom is to ensure that resource acquisition occurs at the same time that the object is initialized, so that all resources for the object are created and made ready in one line of code. In practical terms, the main principle of RAII is to give ownership of any heap-allocated resource—for example, dynamically-allocated memory or system object handles—to a stack-allocated object whose destructor contains the code to delete or free the resource and also any associated cleanup code.  
+ Smart pointers are defined in the `std` namespace in the [\<memory>](../standard-library/memory.md) header file. They are crucial to the [RAII](../cpp/objects-own-resources-raii.md) or *Resource Acquisition Is Initialization* programming idiom. The main goal of this idiom is to ensure that resource acquisition occurs at the same time that the object is initialized, so that all resources for the object are created and made ready in one line of code. In practical terms, the main principle of RAII is to give ownership of any heap-allocated resource—for example, dynamically-allocated memory or system object handles—to a stack-allocated object whose destructor contains the code to delete or free the resource and also any associated cleanup code.  
   
  In most cases, when you initialize a raw pointer or resource handle to point to an actual resource, pass the pointer to a smart pointer immediately. In modern C++, raw pointers are only used in small code blocks of limited scope, loops, or helper functions where performance is critical and there is no chance of confusion about ownership.  
   
@@ -42,11 +37,11 @@ In modern C++ programming, the Standard Library includes *smart pointers*, which
   
  The example demonstrates the following essential steps for using smart pointers.  
   
-1.  Declare the smart pointer as an automatic (local) variable. (Do not use the `new` or `malloc` expression on the smart pointer itself.)  
+1.  Declare the smart pointer as an automatic (local) variable. (Do not use the **new** or `malloc` expression on the smart pointer itself.)  
   
 2.  In the type parameter, specify the pointed-to type of the encapsulated pointer.  
   
-3.  Pass a raw pointer to a `new`-ed object in the smart pointer constructor. (Some utility functions or smart pointer constructors do this for you.)  
+3.  Pass a raw pointer to a **new**-ed object in the smart pointer constructor. (Some utility functions or smart pointer constructors do this for you.)  
   
 4.  Use the overloaded `->` and `*` operators to access the object.  
   
@@ -113,7 +108,7 @@ In modern C++ programming, the Standard Library includes *smart pointers*, which
  [CAutoPtrList Class](../atl/reference/cautoptrlist-class.md)  
  Class that encapsulates methods for manipulating a list of `CAutoPtr` nodes.  
   
-## See Also  
+## See also  
  [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)   

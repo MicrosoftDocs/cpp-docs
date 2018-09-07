@@ -2,19 +2,14 @@
 title: "typename | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["typename_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["typename template specifier"]
 ms.assetid: 52e1d901-220d-4f0d-ab43-dae7e05fb491
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # typename
@@ -23,7 +18,6 @@ In template definitions, provides a hint to the compiler that an unknown identif
 ## Syntax  
   
 ```  
-  
 typename identifier;  
 ```  
   
@@ -32,7 +26,7 @@ typename identifier;
   
  **typename** can be used by any type anywhere in a template declaration or definition. It is not allowed in the base class list, unless as a template argument to a template base class.  
   
-```  
+```cpp 
 template <class T>  
 class C1 : typename T::InnerType // Error - typename not allowed.  
 {};  
@@ -43,14 +37,14 @@ class C2 : A<typename T::InnerType>  // typename OK.
   
  The **typename** keyword can also be used in place of **class** in template parameter lists. For example, the following statements are semantically equivalent:  
   
-```  
+```cpp 
 template<class T1, class T2>...  
 template<typename T1, typename T2>...  
 ```  
   
 ## Example  
   
-```  
+```cpp 
 // typename.cpp  
 template<class T> class X  
 {  
@@ -62,6 +56,6 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Templates](../cpp/templates-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

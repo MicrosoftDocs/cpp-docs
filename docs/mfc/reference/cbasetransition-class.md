@@ -2,19 +2,14 @@
 title: "CBaseTransition Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::CBaseTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboard", "AFXANIMATIONCONTROLLER/CBaseTransition::AddToStoryboardAtKeyframes", "AFXANIMATIONCONTROLLER/CBaseTransition::Clear", "AFXANIMATIONCONTROLLER/CBaseTransition::Create", "AFXANIMATIONCONTROLLER/CBaseTransition::GetEndKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::GetRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::GetStartKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::GetTransition", "AFXANIMATIONCONTROLLER/CBaseTransition::GetType", "AFXANIMATIONCONTROLLER/CBaseTransition::IsAdded", "AFXANIMATIONCONTROLLER/CBaseTransition::SetKeyframes", "AFXANIMATIONCONTROLLER/CBaseTransition::SetRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::m_bAdded", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pEndKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pRelatedVariable", "AFXANIMATIONCONTROLLER/CBaseTransition::m_pStartKeyframe", "AFXANIMATIONCONTROLLER/CBaseTransition::m_transition", "AFXANIMATIONCONTROLLER/CBaseTransition::m_type"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CBaseTransition [MFC], CBaseTransition", "CBaseTransition [MFC], AddToStoryboard", "CBaseTransition [MFC], AddToStoryboardAtKeyframes", "CBaseTransition [MFC], Clear", "CBaseTransition [MFC], Create", "CBaseTransition [MFC], GetEndKeyframe", "CBaseTransition [MFC], GetRelatedVariable", "CBaseTransition [MFC], GetStartKeyframe", "CBaseTransition [MFC], GetTransition", "CBaseTransition [MFC], GetType", "CBaseTransition [MFC], IsAdded", "CBaseTransition [MFC], SetKeyframes", "CBaseTransition [MFC], SetRelatedVariable", "CBaseTransition [MFC], m_bAdded", "CBaseTransition [MFC], m_pEndKeyframe", "CBaseTransition [MFC], m_pRelatedVariable", "CBaseTransition [MFC], m_pStartKeyframe", "CBaseTransition [MFC], m_transition", "CBaseTransition [MFC], m_type"]
 ms.assetid: dfe84007-bbc5-43b7-b5b8-fae9145573bf
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CBaseTransition Class
@@ -95,7 +90,7 @@ BOOL AddToStoryboard(IUIAnimationStoryboard* pStoryboard);
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to storyboard, which will animate the related variable.  
   
 ### Return Value  
@@ -112,14 +107,14 @@ BOOL AddToStoryboardAtKeyframes(IUIAnimationStoryboard* pStoryboard);
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to storyboard, which will animate the related variable.  
   
 ### Return Value  
  TRUE, if transition was successfully added to a storyboard.  
   
 ### Remarks  
- Applies the transition to the related variable in the storyboard. If the start keyframe was specified, the transition begins at that keyframe. If the end keyframe was specified, the transition begins at the start keyframe and and stops at the end keyframe. If the transition was created with a duration parameter specified, that duration is overwritten with the duration of time between the start and end keyframes. If no keyframe was specified, the transition is appended to the transition added most recently to the variable.  
+ Applies the transition to the related variable in the storyboard. If the start keyframe was specified, the transition begins at that keyframe. If the end keyframe was specified, the transition begins at the start keyframe and stops at the end keyframe. If the transition was created with a duration parameter specified, that duration is overwritten with the duration of time between the start and end keyframes. If no keyframe was specified, the transition is appended to the transition added most recently to the variable.  
   
 ##  <a name="cbasetransition"></a>  CBaseTransition::CBaseTransition  
  Constructs a base transtion object.  
@@ -148,10 +143,10 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which creates standard transitions. It can be NULL for custom transitions.  
   
- `pFactory`  
+ *pFactory*  
  A pointer to transition factory, which creates custom transitions. It can be NULL for standard transitions.  
   
 ### Return Value  
@@ -211,10 +206,10 @@ IUIAnimationTransition* GetTransition();
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which creates standard transitions. It can be NULL for custom transitions.  
   
- `pFactory`  
+ *pFactory*  
  A pointer to transition factory, which creates custom transitions. It can be NULL for standard transitions.  
   
 ### Return Value  
@@ -301,10 +296,10 @@ void SetKeyframes(
 ```  
   
 ### Parameters  
- `pStart`  
+ *pStart*  
  A keyframe that specifies the beginning of the transition.  
   
- `pEnd`  
+ *pEnd*  
  A keyframe that specifies the end of the transition.  
   
 ### Remarks  
@@ -318,7 +313,7 @@ void SetRelatedVariable(CAnimationVariable* pVariable);
 ```  
   
 ### Parameters  
- `pVariable`  
+ *pVariable*  
  A pointer to related animation variable.  
   
 ### Remarks  

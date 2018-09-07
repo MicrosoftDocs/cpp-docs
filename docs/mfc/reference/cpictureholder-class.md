@@ -2,19 +2,14 @@
 title: "CPictureHolder Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CPictureHolder", "AFXCTL/CPictureHolder", "AFXCTL/CPictureHolder::CPictureHolder", "AFXCTL/CPictureHolder::CreateEmpty", "AFXCTL/CPictureHolder::CreateFromBitmap", "AFXCTL/CPictureHolder::CreateFromIcon", "AFXCTL/CPictureHolder::CreateFromMetafile", "AFXCTL/CPictureHolder::GetDisplayString", "AFXCTL/CPictureHolder::GetPictureDispatch", "AFXCTL/CPictureHolder::GetType", "AFXCTL/CPictureHolder::Render", "AFXCTL/CPictureHolder::SetPictureDispatch", "AFXCTL/CPictureHolder::m_pPict"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CPictureHolder [MFC], CPictureHolder", "CPictureHolder [MFC], CreateEmpty", "CPictureHolder [MFC], CreateFromBitmap", "CPictureHolder [MFC], CreateFromIcon", "CPictureHolder [MFC], CreateFromMetafile", "CPictureHolder [MFC], GetDisplayString", "CPictureHolder [MFC], GetPictureDispatch", "CPictureHolder [MFC], GetType", "CPictureHolder [MFC], Render", "CPictureHolder [MFC], SetPictureDispatch", "CPictureHolder [MFC], m_pPict"]
 ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CPictureHolder Class
@@ -105,29 +100,29 @@ BOOL CreateFromBitmap(
 ```  
   
 ### Parameters  
- `idResource`  
+ *idResource*  
  Resource ID of a bitmap resource.  
   
- `pBitmap`  
+ *pBitmap*  
  Pointer to a [CBitmap](../../mfc/reference/cbitmap-class.md) object.  
   
  *pPal*  
  Pointer to a [CPalette](../../mfc/reference/cpalette-class.md) object.  
   
- `bTransferOwnership`  
+ *bTransferOwnership*  
  Indicates whether the picture object will take ownership of the bitmap and palette objects.  
   
- `hbm`  
+ *hbm*  
  Handle to the bitmap from which the `CPictureHolder` object is created.  
   
- `hpal`  
+ *hpal*  
  Handle to the palette used for rendering the bitmap.  
   
 ### Return Value  
  Nonzero if the object is successfully created; otherwise 0.  
   
 ### Remarks  
- If `bTransferOwnership` is **TRUE**, the caller should not use the bitmap or palette object in any way after this call returns. If `bTransferOwnership` is **FALSE**, the caller is responsible for ensuring that the bitmap and palette objects remain valid for the lifetime of the picture object.  
+ If *bTransferOwnership* is TRUE, the caller should not use the bitmap or palette object in any way after this call returns. If *bTransferOwnership* is FALSE, the caller is responsible for ensuring that the bitmap and palette objects remain valid for the lifetime of the picture object.  
   
 ##  <a name="createfromicon"></a>  CPictureHolder::CreateFromIcon  
  Uses an icon to initialize the picture object in a `CPictureHolder`.  
@@ -143,20 +138,20 @@ BOOL CreateFromIcon(
 ```  
   
 ### Parameters  
- `idResource`  
+ *idResource*  
  Resource ID of a bitmap resource.  
   
- `hIcon`  
+ *hIcon*  
  Handle to the icon from which the `CPictureHolder` object is created.  
   
- `bTransferOwnership`  
+ *bTransferOwnership*  
  Indicates whether the picture object will take ownership of the icon object.  
   
 ### Return Value  
  Nonzero if the object is successfully created; otherwise 0.  
   
 ### Remarks  
- If `bTransferOwnership` is **TRUE**, the caller should not use the icon object in any way after this call returns. If `bTransferOwnership` is **FALSE**, the caller is responsible for ensuring that the icon object remains valid for the lifetime of the picture object.  
+ If *bTransferOwnership* is TRUE, the caller should not use the icon object in any way after this call returns. If *bTransferOwnership* is FALSE, the caller is responsible for ensuring that the icon object remains valid for the lifetime of the picture object.  
   
 ##  <a name="createfrommetafile"></a>  CPictureHolder::CreateFromMetafile  
  Uses a metafile to initialize the picture object in a `CPictureHolder`.  
@@ -170,7 +165,7 @@ BOOL CreateFromMetafile(
 ```  
   
 ### Parameters  
- `hmf`  
+ *hmf*  
  Handle to the metafile used to create the `CPictureHolder` object.  
   
  *xExt*  
@@ -179,14 +174,14 @@ BOOL CreateFromMetafile(
  *yExt*  
  Y extent of the picture.  
   
- `bTransferOwnership`  
+ *bTransferOwnership*  
  Indicates whether the picture object will take ownership of the metafile object.  
   
 ### Return Value  
  Nonzero if the object is successfully created; otherwise 0.  
   
 ### Remarks  
- If `bTransferOwnership` is **TRUE**, the caller should not use the metafile object in any way after this call returns. If `bTransferOwnership` is **FALSE**, the caller is responsible for ensuring that the metafile object remains valid for the lifetime of the picture object.  
+ If *bTransferOwnership* is TRUE, the caller should not use the metafile object in any way after this call returns. If *bTransferOwnership* is FALSE, the caller is responsible for ensuring that the metafile object remains valid for the lifetime of the picture object.  
   
 ##  <a name="getdisplaystring"></a>  CPictureHolder::GetDisplayString  
  Retrieves the string that is displayed in a container's property browser.  
@@ -196,7 +191,7 @@ BOOL GetDisplayString(CString& strValue);
 ```  
   
 ### Parameters  
- `strValue`  
+ *strValue*  
  Reference to the [CString](../../atl-mfc-shared/reference/cstringt-class.md) that is to hold the display string.  
   
 ### Return Value  
@@ -213,7 +208,7 @@ LPPICTUREDISP GetPictureDispatch();
  A pointer to the `CPictureHolder` object's `IPictureDisp` interface.  
   
 ### Remarks  
- The caller must call **Release** on this pointer when finished with it.  
+ The caller must call `Release` on this pointer when finished with it.  
   
 ##  <a name="gettype"></a>  CPictureHolder::GetType  
  Indicates whether the picture is a bitmap, metafile, or icon.  
@@ -227,11 +222,11 @@ short GetType();
   
 |Value|Meaning|  
 |-----------|-------------|  
-|**PICTYPE_UNINITIALIZED**|`CPictureHolder` object is unititialized.|  
-|**PICTYPE_NONE**|`CPictureHolder` object is empty.|  
-|**PICTYPE_BITMAP**|Picture is a bitmap.|  
-|**PICTYPE_METAFILE**|Picture is a metafile.|  
-|**PICTYPE_ICON**|Picture is an icon.|  
+|PICTYPE_UNINITIALIZED|`CPictureHolder` object is unititialized.|  
+|PICTYPE_NONE|`CPictureHolder` object is empty.|  
+|PICTYPE_BITMAP|Picture is a bitmap.|  
+|PICTYPE_METAFILE|Picture is a metafile.|  
+|PICTYPE_ICON|Picture is an icon.|  
   
 ##  <a name="m_ppict"></a>  CPictureHolder::m_pPict  
  A pointer to the `CPictureHolder` object's `IPicture` interface.  
@@ -241,7 +236,7 @@ LPPICTURE m_pPict;
 ```  
   
 ##  <a name="render"></a>  CPictureHolder::Render  
- Renders the picture in the rectangle referenced by `rcRender`.  
+ Renders the picture in the rectangle referenced by *rcRender*.  
   
 ```  
 void Render(
@@ -251,14 +246,14 @@ void Render(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  Pointer to the display context in which the picture is to be rendered.  
   
- `rcRender`  
+ *rcRender*  
  Rectangle in which the picture is to be rendered.  
   
  *rcWBounds*  
- A rectangle representing the bounding rectangle of the object rendering the picture. For a control, this rectangle is the `rcBounds` parameter passed to an override of [COleControl::OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).  
+ A rectangle representing the bounding rectangle of the object rendering the picture. For a control, this rectangle is the *rcBounds* parameter passed to an override of [COleControl::OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).  
   
 ##  <a name="setpicturedispatch"></a>  CPictureHolder::SetPictureDispatch  
  Connects the `CPictureHolder` object to a `IPictureDisp` interface.  
@@ -268,7 +263,7 @@ void SetPictureDispatch(LPPICTUREDISP pDisp);
 ```  
   
 ### Parameters  
- `pDisp`  
+ *pDisp*  
  Pointer to the new `IPictureDisp` interface.  
   
 ## See Also  

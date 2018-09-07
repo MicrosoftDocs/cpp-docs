@@ -2,19 +2,14 @@
 title: "Compiler Error C2977 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-diagnostics"]
+ms.topic: "error-reference"
 f1_keywords: ["C2977"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2977"]
 ms.assetid: 3c4218e0-5d03-4a2b-b757-c507c35f3542
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2977

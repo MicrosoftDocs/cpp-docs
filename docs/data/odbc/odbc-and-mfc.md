@@ -2,23 +2,18 @@
 title: "ODBC and MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC [C++], MFC", "connections [C++], databases", "connections [C++], data source", "databases [C++], connecting to", "data sources [C++], connecting to", "MFC [C++], ODBC and", "database connections [C++], MFC ODBC classes"]
 ms.assetid: 98f02fd7-1235-437b-89a9-edfd0fc797f7
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # ODBC and MFC
 > [!NOTE]
->  To use the MFC database classes, you must have the appropriate ODBC driver for your data source. The lastest Microsoft ODBC driver for SQL Server is [Microsoft ODBC Driver 13 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=50420). Most database vendors provide an ODBC driver for Windows. 
+>  To use the MFC database classes, you must have the appropriate ODBC driver for your data source. The lastest Microsoft ODBC driver for SQL Server is [Microsoft ODBC Driver 13 for SQL Server](https://www.microsoft.com/download/details.aspx?id=50420). Most database vendors provide an ODBC driver for Windows. 
   
  This topic introduces the main concepts of the Microsoft Foundation Classes (MFC) library's ODBC-based database classes and provides an overview of how the classes work together. For more information about ODBC and MFC, see the following topics:  
   

@@ -2,25 +2,20 @@
 title: "_mm_cvtss_si64x | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_mm_cvtss_si64x"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["cvtss2si intrinsic", "_mm_cvtss_si64x intrinsic"]
 ms.assetid: c279aff2-ee29-4271-8829-3ec691bf7718
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _mm_cvtss_si64x
 **Microsoft Specific**  
   
- Generates the [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] extended version of the Convert Scalar Single Precision Floating Point Number to 64-bit Integer (`cvtss2si`) instruction.  
+ Generates the x64 extended version of the Convert Scalar Single Precision Floating Point Number to 64-bit Integer (`cvtss2si`) instruction.  
   
 ## Syntax  
   
@@ -41,7 +36,7 @@ __int64 _mm_cvtss_si64x( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_mm_cvtss_si64x`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_mm_cvtss_si64x`|x64|  
   
  **Header file** \<intrin.h>  
   

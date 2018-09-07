@@ -2,19 +2,14 @@
 title: "CMFCAcceleratorKey Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::CMFCAcceleratorKey", "AFXACCELERATORKEY/CMFCAcceleratorKey::Format", "AFXACCELERATORKEY/CMFCAcceleratorKey::SetAccelerator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCAcceleratorKey [MFC], CMFCAcceleratorKey", "CMFCAcceleratorKey [MFC], Format", "CMFCAcceleratorKey [MFC], SetAccelerator"]
 ms.assetid: d140fbf7-23db-45ea-a63e-414a5ec7b3d5
-caps.latest.revision: 36
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCAcceleratorKey Class
@@ -64,10 +59,11 @@ class CMFCAcceleratorKey : public CObject
   
 ```  
 CMFCAcceleratorKey();  
-CMFCAcceleratorKey(LPACCEL lpAccel);```  
+CMFCAcceleratorKey(LPACCEL lpAccel);
+```  
   
 ### Parameters  
- [in] `lpAccel`  
+ [in] *lpAccel*  
  A pointer to a shortcut key.  
   
 ### Remarks  
@@ -81,7 +77,7 @@ void Format(CString& str) const;
 ```  
   
 ### Parameters  
- [out] `str`  
+ [out] *str*  
  A reference to a `CString` object where the method writes the translated shortcut key.  
   
 ### Remarks  
@@ -95,7 +91,7 @@ void SetAccelerator(LPACCEL lpAccel);
 ```  
   
 ### Parameters  
- [in] `lpAccel`  
+ [in] *lpAccel*  
  A pointer to a shortcut key.  
   
 ### Remarks  

@@ -2,19 +2,14 @@
 title: "CKeyboardManager Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CKeyboardManager", "AFXKEYBOARDMANAGER/CKeyboardManager::CleanUp", "AFXKEYBOARDMANAGER/CKeyboardManager::FindDefaultAccelerator", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyHandled", "AFXKEYBOARDMANAGER/CKeyboardManager::IsKeyPrintable", "AFXKEYBOARDMANAGER/CKeyboardManager::IsShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::LoadState", "AFXKEYBOARDMANAGER/CKeyboardManager::ResetAll", "AFXKEYBOARDMANAGER/CKeyboardManager::SaveState", "AFXKEYBOARDMANAGER/CKeyboardManager::ShowAllAccelerators", "AFXKEYBOARDMANAGER/CKeyboardManager::TranslateCharToUpper", "AFXKEYBOARDMANAGER/CKeyboardManager::UpdateAccelTable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CKeyboardManager [MFC], CKeyboardManager", "CKeyboardManager [MFC], CleanUp", "CKeyboardManager [MFC], FindDefaultAccelerator", "CKeyboardManager [MFC], IsKeyHandled", "CKeyboardManager [MFC], IsKeyPrintable", "CKeyboardManager [MFC], IsShowAllAccelerators", "CKeyboardManager [MFC], LoadState", "CKeyboardManager [MFC], ResetAll", "CKeyboardManager [MFC], SaveState", "CKeyboardManager [MFC], ShowAllAccelerators", "CKeyboardManager [MFC], TranslateCharToUpper", "CKeyboardManager [MFC], UpdateAccelTable"]
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CKeyboardManager Class
@@ -104,23 +99,23 @@ static BOOL FindDefaultAccelerator(
 ```  
   
 ### Parameters  
- [in] `uiCmd`  
+ [in] *uiCmd*  
  The command ID.  
   
- [out] `str`  
+ [out] *str*  
  A reference to a `CString` object.  
   
- [in] `pWndFrame`  
+ [in] *pWndFrame*  
  A pointer to a frame window.  
   
- [in] `bIsDefaultFrame`  
+ [in] *bIsDefaultFrame*  
  Specifies whether the frame window is the default frame window.  
   
 ### Return Value  
  Nonzero if the shortcut is found; otherwise 0.  
   
 ### Remarks  
- This method looks up the command specified by `uiCmd` and retrieves the default shortcut key. Then the method takes the string associated with this shortcut key and writes the value to the `str` parameter.  
+ This method looks up the command specified by *uiCmd* and retrieves the default shortcut key. Then the method takes the string associated with this shortcut key and writes the value to the *str* parameter.  
   
 ##  <a name="iskeyhandled"></a>  CKeyboardManager::IsKeyHandled  
  Determines whether the specified key is handled by the [CKeyboardManager Class](../../mfc/reference/ckeyboardmanager-class.md).  
@@ -138,16 +133,16 @@ static BOOL __stdcall IsKeyHandled(
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `nKey`|The key to check.|  
-|[in] `fVirt`|Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](http://msdn.microsoft.com/library/windows/desktop/ms646340).|  
-|[in] `pWndFrame`|A frame window. This method determines whether a shortcut key is handled in this frame.|  
-|[in] `bIsDefaultFrame`|A Boolean parameter that indicates whether `pWndFrame` is the default frame window.|  
+|[in] *nKey*|The key to check.|  
+|[in] *fVirt*|Specifies the behavior of the shortcut key. For a list of possible values, see [ACCEL Structure](/windows/desktop/api/winuser/ns-winuser-tagaccel).|  
+|[in] *pWndFrame*|A frame window. This method determines whether a shortcut key is handled in this frame.|  
+|[in] *bIsDefaultFrame*|A Boolean parameter that indicates whether *pWndFrame* is the default frame window.|  
   
 ### Return Value  
- `TRUE` if the shortcut key is handled. `FALSE` if the key is not handled or if `pWndFrame` is `NULL`.  
+ TRUE if the shortcut key is handled. FALSE if the key is not handled or if *pWndFrame* is NULL.  
   
 ### Remarks  
- The input parameters must match the entry in the accelerator table both for `nKey` and `fVirt` to determine whether a shortcut key is handled in `pWndFrame`.  
+ The input parameters must match the entry in the accelerator table both for *nKey* and *fVirt* to determine whether a shortcut key is handled in *pWndFrame*.  
   
 ##  <a name="iskeyprintable"></a>  CKeyboardManager::IsKeyPrintable  
  Indicates whether a character is printable.  
@@ -161,13 +156,13 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
 |||  
 |-|-|  
 |Parameter|Description|  
-|[in] `nChar`|The character that this method checks.|  
+|[in] *nChar*|The character that this method checks.|  
   
 ### Return Value  
  Nonzero if the character is printable, zero if it is not.  
   
 ### Remarks  
- This method fails if a call to [GetKeyboardState](http://msdn.microsoft.com/library/windows/desktop/ms646299) fails.  
+ This method fails if a call to [GetKeyboardState](https://msdn.microsoft.com/library/windows/desktop/ms646299) fails.  
   
 ##  <a name="isshowallaccelerators"></a>  CKeyboardManager::IsShowAllAccelerators  
  Indicates whether menus show all the shortcut keys associated with menu commands or only the default shortcut keys.  
@@ -192,17 +187,17 @@ BOOL LoadState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  The registry path where `CKeyboardManager` data is saved.  
   
- [in] `pDefaultFrame`  
+ [in] *pDefaultFrame*  
  A pointer to a frame window to use as the default window.  
   
 ### Return Value  
  Nonzero if the state was loaded successfully or 0 otherwise.  
   
 ### Remarks  
- If the `lpszProfileName` parameter is `NULL`, this method checks the default registry location for `CKeyboardManager` data. The default registry location is specified by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md). The data must be previously written with the method [CKeyboardManager::SaveState](#savestate).  
+ If the *lpszProfileName* parameter is NULL, this method checks the default registry location for `CKeyboardManager` data. The default registry location is specified by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md). The data must be previously written with the method [CKeyboardManager::SaveState](#savestate).  
   
  If you do not specify a default window, the main frame window of your application will be used.  
   
@@ -226,17 +221,17 @@ BOOL SaveState(
 ```  
   
 ### Parameters  
- [in] `lpszProfileName`  
+ [in] *lpszProfileName*  
  The registry path for saving the `CKeyboardManager` state.  
   
- [in] `pDefaultFrame`  
+ [in] *pDefaultFrame*  
  A pointer to a frame window that becomes the default window.  
   
 ### Return Value  
  Nonzero if the keyboard manager state was saved successfully, or 0 otherwise.  
   
 ### Remarks  
- If the `lpszProfileName` parameter is `NULL`, this method will write the `CKeyboardManager` state to the default location specified by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md). If you specify a location, you can load the data later using the method [CKeyboardManager::LoadState](#loadstate).  
+ If the *lpszProfileName* parameter is NULL, this method will write the `CKeyboardManager` state to the default location specified by the [CWinAppEx Class](../../mfc/reference/cwinappex-class.md). If you specify a location, you can load the data later using the method [CKeyboardManager::LoadState](#loadstate).  
   
  If you do not specify a default window, the main frame window will be used as the default window.  
   
@@ -250,16 +245,16 @@ static void ShowAllAccelerators(
 ```  
   
 ### Parameters  
- [in] `bShowAll`  
- If `true`, all the shortcut keys will be displayed. If `false`, only the first shortcut key will be displayed.  
+ [in] *bShowAll*  
+ If TRUE, all the shortcut keys will be displayed. If FALSE, only the first shortcut key will be displayed.  
   
- [in] `lpszDelimiter`  
+ [in] *lpszDelimiter*  
  A string to insert between shortcut keys. This delimiter has no effect if only one shortcut key is displayed.  
   
 ### Remarks  
  By default, if a command has more than one shortcut key associated with it, only the first shortcut key will be shown. This function enables you to list all the shortcut keys associated with all commands.  
   
- The shortcut keys will be listed next to the command in the menu bar. If all the shortcut keys are displayed, the string provided by `lpszDelimiter` will separate individual shortcut keys.  
+ The shortcut keys will be listed next to the command in the menu bar. If all the shortcut keys are displayed, the string provided by *lpszDelimiter* will separate individual shortcut keys.  
   
 ##  <a name="translatechartoupper"></a>  CKeyboardManager::TranslateCharToUpper  
  Converts a character to its upper register.  
@@ -269,7 +264,7 @@ static UINT TranslateCharToUpper(const UINT nChar);
 ```  
   
 ### Parameters  
- [in] `nChar`  
+ [in] *nChar*  
  The character to convert.  
   
 ### Return Value  
@@ -293,19 +288,19 @@ BOOL UpdateAccelTable(
 ```  
   
 ### Parameters  
- [in] `pTemplate`  
+ [in] *pTemplate*  
  A pointer to a document template.  
   
- [in] `lpAccel`  
+ [in] *lpAccel*  
  A pointer to the new shortcut key.  
   
- [in] `nSize`  
+ [in] *nSize*  
  The size of the new shortcut table.  
   
- [in] `pDefaultFrame`  
+ [in] *pDefaultFrame*  
  A pointer to the default frame window.  
   
- [in] `hAccelNew`  
+ [in] *hAccelNew*  
  A handle to the new shortcut table.  
   
 ### Return Value  

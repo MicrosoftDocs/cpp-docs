@@ -2,18 +2,13 @@
 title: "Stock Properties | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["stock properties, about stock properties", "stock properties"]
 ms.assetid: a89fc454-0b8e-447a-9033-4c8af46a24d9
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Stock Properties
@@ -29,7 +24,7 @@ If you are adding a property to an MFC dispinterface using the [Add Property Wiz
 |**Font**|Returns or sets the control's ambient font. Null if the control has no font.|  
 |`ForeColor`|Returns or sets the control's ambient `ForeColor` property.|  
 |**hWnd**|Returns or sets the control's **hWnd** property. **hWnd** has no **Member variable** implementation type.|  
-|**ReadyState**|Returns or sets the control's **ReadyState** property. A control can be uninitialized, initialized, loading, interactive, or complete. See [READYSTATE](https://msdn.microsoft.com/en-us/library/aa768362.aspx) in the *Internet SDK* for more information.|  
+|**ReadyState**|Returns or sets the control's **ReadyState** property. A control can be uninitialized, initialized, loading, interactive, or complete. See [READYSTATE](https://msdn.microsoft.com/library/aa768362.aspx) in the *Internet SDK* for more information.|  
 |**Text**|Returns or sets the text contained in a control. **Text** has no **Member variable** implementation type.|  
   
 ## See Also  

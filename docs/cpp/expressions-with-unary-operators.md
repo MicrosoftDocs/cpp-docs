@@ -2,18 +2,13 @@
 title: "Expressions with Unary Operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], unary operators", "unary operators [C++], expressions with", "expressions [C++], operators"]
 ms.assetid: 1217685b-b85d-4b48-9ff4-d90f56a26c1b
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Expressions with Unary Operators
@@ -59,7 +54,7 @@ Unary operators act on only one operand in an expression. The unary operators ar
   
 -   *unary-operator* *cast-expression*  
   
--   `sizeof` *unary-expression*  
+-   **sizeof** *unary-expression*  
   
 -   `sizeof(` *type-name* `)`  
   
@@ -77,7 +72,7 @@ Unary operators act on only one operand in an expression. The unary operators ar
   
  An *expression* can be any expression. For more information, see [Expressions](../cpp/expressions-cpp.md).  
   
- The *allocation-expression* refers to the `new` operator. The *deallocation-expression* refers to the `delete` operator. For more information, see the links earlier in this topic.  
+ The *allocation-expression* refers to the **new** operator. The *deallocation-expression* refers to the **delete** operator. For more information, see the links earlier in this topic.  
   
-## See Also  
+## See also  
  [Types of Expressions](../cpp/types-of-expressions.md)

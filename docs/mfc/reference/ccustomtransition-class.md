@@ -2,19 +2,14 @@
 title: "CCustomTransition Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CCustomTransition", "AFXANIMATIONCONTROLLER/CCustomTransition", "AFXANIMATIONCONTROLLER/CCustomTransition::CCustomTransition", "AFXANIMATIONCONTROLLER/CCustomTransition::Create", "AFXANIMATIONCONTROLLER/CCustomTransition::SetInitialValue", "AFXANIMATIONCONTROLLER/CCustomTransition::SetInitialVelocity", "AFXANIMATIONCONTROLLER/CCustomTransition::m_bInitialValueSpecified", "AFXANIMATIONCONTROLLER/CCustomTransition::m_bInitialVelocitySpecified", "AFXANIMATIONCONTROLLER/CCustomTransition::m_initialValue", "AFXANIMATIONCONTROLLER/CCustomTransition::m_initialVelocity", "AFXANIMATIONCONTROLLER/CCustomTransition::m_pInterpolator"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CCustomTransition [MFC], CCustomTransition", "CCustomTransition [MFC], Create", "CCustomTransition [MFC], SetInitialValue", "CCustomTransition [MFC], SetInitialVelocity", "CCustomTransition [MFC], m_bInitialValueSpecified", "CCustomTransition [MFC], m_bInitialVelocitySpecified", "CCustomTransition [MFC], m_initialValue", "CCustomTransition [MFC], m_initialVelocity", "CCustomTransition [MFC], m_pInterpolator"]
 ms.assetid: 5bd3f492-940f-4290-a38b-fa68eb8f8401
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CCustomTransition Class
@@ -73,7 +68,7 @@ CCustomTransition(CCustomInterpolator* pInterpolator);
 ```  
   
 ### Parameters  
- `pInterpolator`  
+ *pInterpolator*  
  A pointer to custom interpolator.  
   
 ##  <a name="create"></a>  CCustomTransition::Create  
@@ -86,7 +81,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pFactory`  
+ *pFactory*  
  A pointer to transition factory, which is responsible for creation of custom transitions.  
   
 ### Return Value  
@@ -137,7 +132,7 @@ void SetInitialValue(DOUBLE initialValue);
 ```  
   
 ### Parameters  
- `initialValue`  
+ *initialValue*  
   
 ##  <a name="setinitialvelocity"></a>  CCustomTransition::SetInitialVelocity  
  Sets an initial velocity, which will be applied to an animation variable associated with this transition.  
@@ -147,7 +142,7 @@ void SetInitialVelocity(DOUBLE initialVelocity);
 ```  
   
 ### Parameters  
- `initialVelocity`  
+ *initialVelocity*  
   
 ## See Also  
  [Classes](../../mfc/reference/mfc-classes.md)

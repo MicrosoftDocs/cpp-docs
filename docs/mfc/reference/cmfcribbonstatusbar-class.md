@@ -2,19 +2,14 @@
 title: "CMFCRibbonStatusBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonStatusBar", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddDynamicElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddExtendedElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::AddSeparator", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::Create", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::CreateEx", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::FindByID", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::FindElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetCount", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExCount", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetExtendedArea", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::GetSpace", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsBottomFrame", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsExtendedElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::IsInformationMode", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RecalcLayout", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RemoveAll", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::RemoveElement", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::SetInformation", "AFXRIBBONSTATUSBAR/CMFCRibbonStatusBar::OnDrawInformation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonStatusBar [MFC], AddDynamicElement", "CMFCRibbonStatusBar [MFC], AddElement", "CMFCRibbonStatusBar [MFC], AddExtendedElement", "CMFCRibbonStatusBar [MFC], AddSeparator", "CMFCRibbonStatusBar [MFC], Create", "CMFCRibbonStatusBar [MFC], CreateEx", "CMFCRibbonStatusBar [MFC], FindByID", "CMFCRibbonStatusBar [MFC], FindElement", "CMFCRibbonStatusBar [MFC], GetCount", "CMFCRibbonStatusBar [MFC], GetElement", "CMFCRibbonStatusBar [MFC], GetExCount", "CMFCRibbonStatusBar [MFC], GetExElement", "CMFCRibbonStatusBar [MFC], GetExtendedArea", "CMFCRibbonStatusBar [MFC], GetSpace", "CMFCRibbonStatusBar [MFC], IsBottomFrame", "CMFCRibbonStatusBar [MFC], IsExtendedElement", "CMFCRibbonStatusBar [MFC], IsInformationMode", "CMFCRibbonStatusBar [MFC], RecalcLayout", "CMFCRibbonStatusBar [MFC], RemoveAll", "CMFCRibbonStatusBar [MFC], RemoveElement", "CMFCRibbonStatusBar [MFC], SetInformation", "CMFCRibbonStatusBar [MFC], OnDrawInformation"]
 ms.assetid: 921eb57f-3b40-49fa-a38c-3f2fb6dc2893
-caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonStatusBar Class
@@ -99,7 +94,7 @@ void AddDynamicElement(CMFCRibbonBaseElement* pElement);
 ```  
   
 ### Parameters  
- [in] `pElement`  
+ [in] *pElement*  
  A pointer to a dynamic element.  
   
 ### Remarks  
@@ -116,14 +111,14 @@ void AddElement(
 ```  
   
 ### Parameters  
- [in] `pElement`  
+ [in] *pElement*  
  A pointer to the added element.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  A text label of the element.  
   
- [in] `bIsVisible`  
- `TRUE` if you want to add the element as visible, `FALSE` if you want to add the element as hidden.  
+ [in] *bIsVisible*  
+ TRUE if you want to add the element as visible, FALSE if you want to add the element as hidden.  
   
 ##  <a name="addextendedelement"></a>  CMFCRibbonStatusBar::AddExtendedElement  
  Adds a ribbon element to the extended area of the ribbon status bar.  
@@ -136,14 +131,14 @@ void AddExtendedElement(
 ```  
   
 ### Parameters  
- [in] `pElement`  
+ [in] *pElement*  
  A pointer to the added element.  
   
- [in] `lpszLabel`  
+ [in] *lpszLabel*  
  The text label of the element.  
   
- [in] `bIsVisible`  
- `TRUE` if you want to add the element as visible, `FALSE` if you want to add the element as hidden.  
+ [in] *bIsVisible*  
+ TRUE if you want to add the element as visible, FALSE if you want to add the element as hidden.  
   
 ### Remarks  
  The extended area is on the right side of the status bar control.  
@@ -169,17 +164,17 @@ BOOL Create(
 ```  
   
 ### Parameters  
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  A pointer to the parent window.  
   
- [in] `dwStyle`  
+ [in] *dwStyle*  
  A logical OR combination of control styles.  
   
- [in] `nID`  
+ [in] *nID*  
  The control ID of the status bar.  
   
 ### Return Value  
- `TRUE` if the status bar is created successfully, `FALSE` otherwise.  
+ TRUE if the status bar is created successfully, FALSE otherwise.  
   
 ##  <a name="createex"></a>  CMFCRibbonStatusBar::CreateEx  
  Creates a ribbon status bar that has an extended style.  
@@ -193,31 +188,31 @@ BOOL CreateEx(
 ```  
   
 ### Parameters  
- `pParentWnd`  
+ *pParentWnd*  
  A pointer to the parent window.  
   
- `dwCtrlStyle`  
+ *dwCtrlStyle*  
  A logical OR combination of additional styles for creating the status bar object.  
   
- `dwStyle`  
+ *dwStyle*  
  The control style of the status bar.  
   
- `nID`  
+ *nID*  
  The control ID of the status bar.  
   
 ### Return Value  
- `TRUE` if the status bar is created successfully, `FALSE` otherwise.  
+ TRUE if the status bar is created successfully, FALSE otherwise.  
   
 ##  <a name="findbyid"></a>  CMFCRibbonStatusBar::FindByID  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
 ```  
   
 ### Parameters  
- [in] `uiCmdID`  
- [in] `BOOL`  
+ [in] *uiCmdID*  
+ [in] *BOOL*  
   
 ### Return Value  
   
@@ -231,11 +226,11 @@ CMFCRibbonBaseElement* FindElement(UINT uiID);
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
  The ID of the element.  
   
 ### Return Value  
- A pointer to the element that has the specified command ID. `NULL` if there is no such element.  
+ A pointer to the element that has the specified command ID. NULL if there is no such element.  
   
 ##  <a name="getcount"></a>  CMFCRibbonStatusBar::GetCount  
  Returns the number of elements that are located in the main area of the ribbon status bar.  
@@ -255,11 +250,11 @@ CMFCRibbonBaseElement* GetElement(int nIndex);
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  Specifies a zero-based index of an element that is located in the main area of the status bar control.  
   
 ### Return Value  
- A pointer to the element that is located at the specified index. `NULL` if the index is negative or exceeds the number of elements in the status bar.  
+ A pointer to the element that is located at the specified index. NULL if the index is negative or exceeds the number of elements in the status bar.  
   
 ### Remarks  
   
@@ -281,30 +276,30 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
 ```  
   
 ### Parameters  
- [in] `nIndex`  
+ [in] *nIndex*  
  Specifies the zero-based index of an element that is located in the extended area of the status bar control.  
   
 ### Return Value  
- A pointer to the element that is located at a specified index in the extended area of the ribbon status bar. `NULL` if `nIndex` is negative or exceeds the number of elements in the extended area of the ribbon status bar.  
+ A pointer to the element that is located at a specified index in the extended area of the ribbon status bar. NULL if *nIndex* is negative or exceeds the number of elements in the extended area of the ribbon status bar.  
   
 ### Remarks  
   
 ##  <a name="getextendedarea"></a>  CMFCRibbonStatusBar::GetExtendedArea  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual BOOL GetExtendedArea(CRect& rect) const;  
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Return Value  
   
 ### Remarks  
   
 ##  <a name="getspace"></a>  CMFCRibbonStatusBar::GetSpace  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 int GetSpace() const;  
@@ -315,7 +310,7 @@ int GetSpace() const;
 ### Remarks  
   
 ##  <a name="isbottomframe"></a>  CMFCRibbonStatusBar::IsBottomFrame  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 BOOL IsBottomFrame() const;  
@@ -326,14 +321,14 @@ BOOL IsBottomFrame() const;
 ### Remarks  
   
 ##  <a name="isextendedelement"></a>  CMFCRibbonStatusBar::IsExtendedElement  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;  
 ```  
   
 ### Parameters  
- [in] `pElement`  
+ [in] *pElement*  
   
 ### Return Value  
   
@@ -347,7 +342,7 @@ BOOL IsInformationMode() const;
 ```  
   
 ### Return Value  
- `TRUE` if the status bar can work in information mode; otherwise `FALSE`.  
+ TRUE if the status bar can work in information mode; otherwise FALSE.  
   
 ### Remarks  
  In information mode, the status bar hides all regular panes and displays a message string.  
@@ -363,20 +358,20 @@ virtual void OnDrawInformation(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `strInfo`  
+ [in] *strInfo*  
  The information string.  
   
- [in] `rectInfo`  
+ [in] *rectInfo*  
  The bounding rectangle.  
   
 ### Remarks  
- Override this method in a derived class if you want to customize the appearance of the information string on the status bar. Use the [CMFCRibbonStatusBar::SetInformation](#setinformation) method to put the status bar in information mode. In this mode, the status bar hides all panes and displays the information string specified by `strInfo`.  
+ Override this method in a derived class if you want to customize the appearance of the information string on the status bar. Use the [CMFCRibbonStatusBar::SetInformation](#setinformation) method to put the status bar in information mode. In this mode, the status bar hides all panes and displays the information string specified by *strInfo*.  
   
 ##  <a name="recalclayout"></a>  CMFCRibbonStatusBar::RecalcLayout  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void RecalcLayout();
@@ -399,11 +394,11 @@ BOOL RemoveElement(UINT uiID);
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
  The ID of the element to remove from the status bar.  
   
 ### Return Value  
- `TRUE` if an element with the specified `uiID` is removed. `FALSE` otherwise.  
+ TRUE if an element with the specified *uiID* is removed. FALSE otherwise.  
   
 ##  <a name="setinformation"></a>  CMFCRibbonStatusBar::SetInformation  
  Enables or disables the information mode for the ribbon status bar.  
@@ -413,13 +408,13 @@ void SetInformation(LPCTSTR lpszInfo);
 ```  
   
 ### Parameters  
- [in] `lpszInfo`  
+ [in] *lpszInfo*  
  The information string.  
   
 ### Remarks  
- Use this method to put the status bar in the information mode. In this mode, the status bar hides all panes and displays the information string specified by `lpszInfo`.  
+ Use this method to put the status bar in the information mode. In this mode, the status bar hides all panes and displays the information string specified by *lpszInfo*.  
   
- When lpszInfo is `NULL`, the status bar reverts to regular mode.  
+ When lpszInfo is NULL, the status bar reverts to regular mode.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

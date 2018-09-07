@@ -2,18 +2,13 @@
 title: "Creating an Active Document Container Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["active documents [MFC], containers", "containers [MFC], active document", "active document containers [MFC], creating", "MFC COM, active document containment", "applications [MFC], active document container"]
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating an Active Document Container Application
@@ -27,7 +22,7 @@ The simplest and most recommended way to create an active document container app
   
 3.  Select **MFC Application** from the right pane.  
   
-4.  Name the project `MyProj`, click **OK**.  
+4.  Name the project *MyProj*, click **OK**.  
   
 5.  Select the **Compound Document Support** page.  
   
@@ -39,9 +34,9 @@ The simplest and most recommended way to create an active document container app
   
 9. When the MFC Application Wizard finishes generating the application, open the following files using Solution Explorer:  
   
-    -   MyProjview.cpp  
+    -   *MyProjview.cpp*  
   
-10. In MyProjview.cpp, make the following changes:  
+10. In *MyProjview.cpp*, make the following changes:  
   
     -   In `CMyProjView::OnPreparePrinting`, replace the function contents with the following code:  
   

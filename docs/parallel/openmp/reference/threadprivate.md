@@ -2,19 +2,14 @@
 title: "threadprivate | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 f1_keywords: ["threadprivate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["threadprivate OpenMP directive"]
 ms.assetid: 3515aaed-6f9d-4d59-85eb-342378bea2d3
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # threadprivate
@@ -39,7 +34,7 @@ Specifies that a variable is private to a thread.
   
  The `threadprivate` directive is based on the [thread](../../../cpp/thread.md)`__declspec` attribute; limits on **__declspec(thread)** apply to `threadprivate`.  
   
- You cannot use `threadprivate` in any DLL that will be loaded via [LoadLibrary](http://msdn.microsoft.com/library/windows/desktop/ms684175).  This includes DLLs that are loaded with [/DELAYLOAD (Delay Load Import)](../../../build/reference/delayload-delay-load-import.md), which also uses **LoadLibrary**.  
+ You cannot use `threadprivate` in any DLL that will be loaded via [LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175).  This includes DLLs that are loaded with [/DELAYLOAD (Delay Load Import)](../../../build/reference/delayload-delay-load-import.md), which also uses **LoadLibrary**.  
   
  You can use `threadprivate` in a DLL that is statically loaded at process startup.  
   

@@ -2,19 +2,14 @@
 title: "Automation Clients: Using Type Libraries | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["MkTypLib"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["clients, Automation", "dispatch class [MFC]", "Automation clients, type libraries", "type libraries, Automation clients", "ODL (Object Description Language)", "ODL files", "classes [MFC], dispatch", "MkTypLib tool", ".odl files"]
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Automation Clients: Using Type Libraries
@@ -22,7 +17,7 @@ Automation clients must have information about server objects' properties and me
   
  This type information can be made known in several ways. The recommended way is to create a type library.  
   
- For information on [MkTypLib](http://msdn.microsoft.com/library/windows/desktop/aa366797), see the Windows SDK.  
+ For information on [MkTypLib](/windows/desktop/Midl/differences-between-midl-and-mktyplib), see the Windows SDK.  
   
  Visual C++ can read a type-library file and create a dispatch class derived from [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md). An object of that class has properties and operations duplicating those of the server object. Your application calls this object's properties and operations, and functionality inherited from `COleDispatchDriver` routes these calls to the OLE system, which in turn routes them to the server object.  
   

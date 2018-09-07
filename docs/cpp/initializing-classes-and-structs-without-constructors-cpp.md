@@ -2,23 +2,18 @@
 title: "Initializing classes and structs without constructors (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 ms.assetid: 3e55c3d6-1c6b-4084-b9e5-221b151402f4
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Initializing classes and structs without constructors (C++)
 It is not always necessary to define a constructor for a class, especially ones that are relatively simple. Users can initialize objects of a class or struct by using uniform initialization, as shown in the following example:  
   
-```  
+```cpp 
 #include "stdafx.h"  
 #include <Windows.h>  
   
@@ -60,11 +55,10 @@ int main()
   
     return 0;  
 }  
-  
 ```  
   
  Note that when a class or struct has no constructor, you provide the list elements in the order that the members are declared in the class. If the class has a constructor, provide the elements in the order of the parameters.  
   
-## See Also  
+## See also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)   
  [Constructors](../cpp/constructors-cpp.md)

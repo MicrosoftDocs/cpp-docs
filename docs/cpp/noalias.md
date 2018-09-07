@@ -1,37 +1,34 @@
 ---
 title: "noalias | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "02/09/2018"
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["noalias_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["noalias __declspec keyword", "__declspec keyword [C++], noalias"]
 ms.assetid: efafa8b0-7f39-4edc-a81e-d287ae882c9b
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # noalias
 
 **Microsoft Specific**
 
-`noalias` means that a function call does not modify or reference visible global state and only modifies the memory pointed to *directly* by pointer parameters (first-level indirections).
+**noalias** means that a function call does not modify or reference visible global state and only modifies the memory pointed to *directly* by pointer parameters (first-level indirections).
 
-If a function is annotated as `noalias`, the optimizer can assume that, in addition to the parameters themselves, only first-level indirections of pointer parameters are referenced or modified inside the function. The visible global state is the set of all data that is not defined or referenced outside of the compilation scope, and their address is not taken. The compilation scope is all source files ([/LTCG (Link-time Code Generation)](../build/reference/ltcg-link-time-code-generation.md) builds) or a single source file (non-**/LTCG** build).
+If a function is annotated as **noalias**, the optimizer can assume that, in addition to the parameters themselves, only first-level indirections of pointer parameters are referenced or modified inside the function. The visible global state is the set of all data that is not defined or referenced outside of the compilation scope, and their address is not taken. The compilation scope is all source files ([/LTCG (Link-time Code Generation)](../build/reference/ltcg-link-time-code-generation.md) builds) or a single source file (non-**/LTCG** build).
+
+The **noalias** annotation only applies within the body of the annotated function. Marking a function as **__declspec(noalias)** does not affect the aliasing of pointers returned by the function.
+
+For another annotation that can impact aliasing, see [__declspec(restrict)](../cpp/restrict.md).
 
 ## Example
 
-The following sample demonstrates using `__declspec(restrict)` and `__declspec(noalias)`. Normally, memory returned from `malloc` is `restrict` because the CRT headers are decorated appropriately.
+The following sample demonstrates the use of **__declspec(noalias)**.
 
-However, in this example, the pointers `mempool` and `memptr` are global so the compiler has no assurance that the memory is not subject to aliasing. Decorating the functions that return pointers with `__declspec(restrict)` tells the compiler that the memory pointed to by the return value is not aliased.
-
-Decorating the function in the example that accesses memory with `__declspec(noalias)` tells the compiler that this function does not interfere with the global state except through the pointers in its parameter list.
+When the function `multiply` that accesses memory is annotated **__declspec(noalias)**, it tells the compiler that this function does not modify the global state except through the pointers in its parameter list.
 
 ```C
 // declspec_noalias.c
@@ -44,7 +41,7 @@ Decorating the function in the example that accesses memory with `__declspec(noa
 
 float * mempool, * memptr;
 
-__declspec(restrict) float * ma(int size)
+float * ma(int size)
 {
     float * retval;
     retval = memptr;
@@ -52,7 +49,7 @@ __declspec(restrict) float * ma(int size)
     return retval;
 }
 
-__declspec(restrict) float * init(int m, int n)
+float * init(int m, int n)
 {
     float * a;
     int i, j;
@@ -94,12 +91,12 @@ int main()
     a = init(M, N);
     b = init(N, P);
     c = init(M, P);
-
+ 
     multiply(a, b, c);
 }
 ```
 
-## See Also
-
-[__declspec](../cpp/declspec.md)  
-[Keywords](../cpp/keywords-cpp.md)
+## See also
+ [__declspec](../cpp/declspec.md)  
+ [Keywords](../cpp/keywords-cpp.md)  
+ [__declspec(restrict)](../cpp/restrict.md)  

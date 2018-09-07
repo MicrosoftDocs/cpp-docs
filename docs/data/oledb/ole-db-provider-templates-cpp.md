@@ -2,18 +2,13 @@
 title: "OLE DB Provider Templates (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB providers [C++], about providers", "databases [C++], OLE DB templates", "OLE DB provider templates [C++], about OLE DB provider templates", "templates [C++], OLE DB"]
 ms.assetid: fccff85f-2af8-4500-82bd-6312d28a74b8
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # OLE DB Provider Templates (C++)
@@ -54,8 +49,7 @@ OLE DB is an important part of the Microsoft Universal Data Access strategy. The
  Providers can vary greatly in complexity and functionality. It is useful to categorize providers into read-only providers and updatable providers:  
   
 -   Visual C++ 6.0 supported only read-only providers. [Creating an OLE DB Provider](../../data/oledb/creating-an-ole-db-provider.md) discusses how to create a read-only provider.  
-  
--   Visual C++ supports updatable providers, which can update (write to) the data store. For information about updatable providers, see [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md); the [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) sample is an example of an updatable provider.  
+-   Visual C++ supports updatable providers, which can update (write to) the data store. For information about updatable providers, see [Creating an Updatable Provider](../../data/oledb/creating-an-updatable-provider.md); the [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) sample is an example of an updatable provider.  
   
  For more information, see:  
   
@@ -67,5 +61,5 @@ OLE DB is an important part of the Microsoft Universal Data Access strategy. The
   
 ## See Also  
  [Data Access](../data-access-in-cpp.md)   
- [OLE DB SDK Documentation](https://msdn.microsoft.com/en-us/library/ms722784.aspx)   
- [OLE DB Programmer's Reference](https://msdn.microsoft.com/en-us/library/ms713643.aspx)
+ [OLE DB SDK Documentation](/previous-versions/windows/desktop/ms722784\(v=vs.85\))   
+ [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643\(v=vs.85\))

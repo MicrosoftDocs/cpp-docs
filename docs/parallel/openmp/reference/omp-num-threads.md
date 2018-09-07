@@ -2,19 +2,14 @@
 title: "OMP_NUM_THREADS | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 f1_keywords: ["OMP_NUM_THREADS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["OMP_NUM_THREADS OpenMP environment variable"]
 ms.assetid: 4b558124-1387-4c30-a6a5-ff5345a9ced6
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # OMP_NUM_THREADS

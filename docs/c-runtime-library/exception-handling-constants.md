@@ -2,19 +2,14 @@
 title: "Exception-Handling Constants | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["EXCEPTION_CONTINUE_SEARCH", "c.constants", "EXCEPTION_CONTINUE_EXECUTION", "EXCEPTION_EXECUTE_HANDLER"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["exception handling, constants", "EXCEPTION_CONTINUE_SEARCH constant", "EXCEPTION_EXECUTE_HANDLER constant", "EXCEPTION_CONTINUE_EXECUTION constant", "EH constants"]
 ms.assetid: e1870f41-be9e-46a3-a2ea-830dfbaa18fb
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exception-Handling Constants

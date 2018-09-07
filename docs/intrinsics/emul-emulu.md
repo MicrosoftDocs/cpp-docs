@@ -2,19 +2,14 @@
 title: "__emul, __emulu | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__emulu_cpp", "__emul", "__emul_cpp", "__emulu"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__emul intrinsic", "__emulu intrinsic"]
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __emul, __emulu
@@ -49,8 +44,8 @@ unsigned __int64 __emulu(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__emul`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__emulu`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__emul`|x86, x64|  
+|`__emulu`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

@@ -2,19 +2,14 @@
 title: "Creating an MFC ActiveX Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.activex.project"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX controls [MFC], creating", "ActiveX controls [MFC], creating"]
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating an MFC ActiveX Control
@@ -42,5 +37,5 @@ ActiveX control programs are modular programs designed to give a specific type o
 ## See Also  
  [Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Property Pages](../../ide/property-pages-visual-cpp.md)   
- [Deploying Applications](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+
 

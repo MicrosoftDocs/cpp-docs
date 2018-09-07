@@ -2,18 +2,13 @@
 title: "Data Source: Managing Connections (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC data sources [C++], multiuser environments", "generalizing connection strings", "ODBC [C++], disconnecting from data sources", "connection strings [C++], generalizing", "database connections [C++], creating", "GetDefaultConnect method", "connections [C++], data source", "ODBC connections [C++], configuring", "disconnecting from data sources", "databases [C++], connecting to", "ODBC connections [C++], disconnecting", "data sources [C++], connecting to", "ODBC connections [C++], connecting to data source", "ODBC data sources [C++], connections", "database connections [C++], MFC ODBC classes"]
 ms.assetid: c0adbcdd-c000-40c6-b199-09ffdc7b6ef2
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Data Source: Managing Connections (ODBC)
@@ -71,7 +66,7 @@ This topic applies to the MFC ODBC classes.
   
 -   Supply the data source name only. ODBC asks for the user ID and password, if required. For example, before generalizing, the connection string looks like this:  
   
-    ```  
+    ```cpp  
     CString CApp1Set::GetDefaultConnect()  
     {  
        return "ODBC;DSN=afx;Trusted_Connection=Yes;";  
@@ -80,7 +75,7 @@ This topic applies to the MFC ODBC classes.
   
      This connection string specifies a trusted connection, which uses Windows NT integrated security. You should avoid hard-coding a password or specifying a blank password, because doing so creates a major security weakness. Instead, you can give `GetDefaultConnect` a new connection string so that it queries for a user ID and password.  
   
-    ```  
+    ```cpp  
     // User must select data source and supply user ID and password:  
         return "ODBC;";  
     // User ID and password required:  
@@ -98,12 +93,12 @@ This topic applies to the MFC ODBC classes.
   
 1.  Construct a `CDatabase` object.  
   
-2.  Call its `OpenEx` or **Open** member function.  
+2.  Call its `OpenEx` or `Open` member function.  
   
  For more information about how to specify the data source if it is something other than the one you specified with a wizard, see [CDatabase::OpenEx](../../mfc/reference/cdatabase-class.md#openex) or [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open) in the *MFC Reference*.  
   
 ##  <a name="_core_disconnecting_from_a_data_source"></a> Disconnecting from a Data Source  
- You must close any open recordsets before calling the **Close** member function of `CDatabase`. In recordsets associated with the `CDatabase` object you want to close, any pending `AddNew` or **Edit** statements are canceled and all pending transactions are rolled back.  
+ You must close any open recordsets before calling the `Close` member function of `CDatabase`. In recordsets associated with the `CDatabase` object you want to close, any pending `AddNew` or `Edit` statements are canceled and all pending transactions are rolled back.  
   
 #### To disconnect from a data source  
   
@@ -118,7 +113,7 @@ This topic applies to the MFC ODBC classes.
   
 1.  Close the object's original connection.  
   
-2.  Instead of destroying the object, call its `OpenEx` or **Open** member function again.  
+2.  Instead of destroying the object, call its `OpenEx` or `Open` member function again.  
   
 ## See Also  
  [Data Source (ODBC)](../../data/odbc/data-source-odbc.md)   

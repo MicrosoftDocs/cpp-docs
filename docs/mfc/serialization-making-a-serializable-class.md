@@ -2,18 +2,13 @@
 title: "Serialization: Making a Serializable Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["serializable class [MFC]", "DECLARE_SERIAL macro [MFC]", "default constructor [MFC]", "VERSIONABLE_SCHEMA macro [MFC]", "classes [MFC], derived", "IMPLEMENT_SERIAL macro [MFC]", "no-arguments constructor [MFC]", "Serialize method, overriding", "defaults [MFC], constructor", "CObject class [MFC], deriving serializable classes", "constructors [MFC], defining with no arguments", "serialization [MFC], serializable classes", "no default constructor"]
 ms.assetid: 59a14d32-1cc8-4275-9829-99639beee27c
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Serialization: Making a Serializable Class
@@ -54,7 +49,7 @@ Five main steps are required to make a class serializable. They are listed below
  You can also use the [CArchive::Read](../mfc/reference/carchive-class.md#read) and [CArchive::Write](../mfc/reference/carchive-class.md#write) member functions to read and write large amounts of untyped data.  
   
 ##  <a name="_core_using_the_declare_serial_macro"></a> Using the DECLARE_SERIAL Macro  
- The `DECLARE_SERIAL` macro is required in the declaration of classes that will support serialization, as shown here:  
+ The DECLARE_SERIAL macro is required in the declaration of classes that will support serialization, as shown here:  
   
  [!code-cpp[NVC_MFCSerialization#3](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_3.h)]  
   
@@ -64,18 +59,18 @@ Five main steps are required to make a class serializable. They are listed below
  This constructor can be declared public, protected, or private. If you make it protected or private, you help make sure that it will only be used by the serialization functions. The constructor must put the object in a state that allows it to be deleted if necessary.  
   
 > [!NOTE]
->  If you forget to define a constructor with no arguments in a class that uses the `DECLARE_SERIAL` and `IMPLEMENT_SERIAL` macros, you will get a "no default constructor available" compiler warning on the line where the `IMPLEMENT_SERIAL` macro is used.  
+>  If you forget to define a constructor with no arguments in a class that uses the DECLARE_SERIAL and IMPLEMENT_SERIAL macros, you will get a "no default constructor available" compiler warning on the line where the IMPLEMENT_SERIAL macro is used.  
   
 ##  <a name="_core_using_the_implement_serial_macro_in_the_implementation_file"></a> Using the IMPLEMENT_SERIAL Macro in the Implementation File  
- The `IMPLEMENT_SERIAL` macro is used to define the various functions needed when you derive a serializable class from `CObject`. You use this macro in the implementation file (.CPP) for your class. The first two arguments to the macro are the name of the class and the name of its immediate base class.  
+ The IMPLEMENT_SERIAL macro is used to define the various functions needed when you derive a serializable class from `CObject`. You use this macro in the implementation file (.CPP) for your class. The first two arguments to the macro are the name of the class and the name of its immediate base class.  
   
  The third argument to this macro is a schema number. The schema number is essentially a version number for objects of the class. Use an integer greater than or equal to 0 for the schema number. (Don't confuse this schema number with database terminology.)  
   
  The MFC serialization code checks the schema number when reading objects into memory. If the schema number of the object on disk does not match the schema number of the class in memory, the library will throw a `CArchiveException`, preventing your program from reading an incorrect version of the object.  
   
- If you want your `Serialize` member function to be able to read multiple versions — that is, files written with different versions of the application — you can use the value **VERSIONABLE_SCHEMA** as an argument to the `IMPLEMENT_SERIAL` macro. For usage information and an example, see the `GetObjectSchema` member function of class `CArchive`.  
+ If you want your `Serialize` member function to be able to read multiple versions — that is, files written with different versions of the application — you can use the value *VERSIONABLE_SCHEMA* as an argument to the IMPLEMENT_SERIAL macro. For usage information and an example, see the `GetObjectSchema` member function of class `CArchive`.  
   
- The following example shows how to use `IMPLEMENT_SERIAL` for a class, `CPerson`, that is derived from `CObject`:  
+ The following example shows how to use IMPLEMENT_SERIAL for a class, `CPerson`, that is derived from `CObject`:  
   
  [!code-cpp[NVC_MFCSerialization#4](../mfc/codesnippet/cpp/serialization-making-a-serializable-class_4.cpp)]  
   

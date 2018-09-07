@@ -2,18 +2,13 @@
 title: "Calling Conventions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["calling conventions"]
 ms.assetid: 11b1e45c-8fd1-420b-bca0-a19e294c1d85
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Calling Conventions
@@ -35,5 +30,5 @@ The Visual C/C++ compiler provides several different conventions for calling int
   
 -   [Obsolete calling conventions](../cpp/obsolete-calling-conventions.md)  
   
-## See Also  
+## See also  
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)

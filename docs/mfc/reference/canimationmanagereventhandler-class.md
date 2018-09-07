@@ -2,19 +2,14 @@
 title: "CAnimationManagerEventHandler Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationManagerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CAnimationManagerEventHandler", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged", "AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationManagerEventHandler [MFC], CAnimationManagerEventHandler", "CAnimationManagerEventHandler [MFC], CreateInstance", "CAnimationManagerEventHandler [MFC], OnManagerStatusChanged", "CAnimationManagerEventHandler [MFC], SetAnimationController"]
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationManagerEventHandler Class
@@ -56,7 +51,7 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
  **Header:** afxanimationcontroller.h  
   
 ##  <a name="canimationmanagereventhandler"></a>  CAnimationManagerEventHandler::CAnimationManagerEventHandler  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 is required.  
   
  Constructs a CAnimationManagerEventHandler object.  
   
@@ -65,7 +60,7 @@ CAnimationManagerEventHandler();
 ```  
   
 ##  <a name="createinstance"></a>  CAnimationManagerEventHandler::CreateInstance  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 is required.  
   
  Creates an instance of CAnimationManagerEventHandler object.  
   
@@ -76,17 +71,17 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
- `ppManagerEventHandler`  
+ *ppManagerEventHandler*  
  Output. If the method succeeds it contains a pointer to COM object that will handle status updates to an animation manager.  
   
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
   
 ##  <a name="onmanagerstatuschanged"></a>  CAnimationManagerEventHandler::OnManagerStatusChanged  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 is required.  
   
  Called when a status of animation manager has changed.  
   
@@ -97,17 +92,17 @@ IFACEMETHOD(OnManagerStatusChanged)(
 ```  
   
 ### Parameters  
- `newStatus`  
+ *newStatus*  
  New status.  
   
- `previousStatus`  
+ *previousStatus*  
  Previous status.  
   
 ### Return Value  
  Current implementation always returns S_OK;  
   
 ##  <a name="setanimationcontroller"></a>  CAnimationManagerEventHandler::SetAnimationController  
- [!INCLUDE[dev10_sp1required](../../mfc/reference/includes/dev10_sp1required_md.md)]  
+ Visual Studio 2010 SP1 is required.  
   
  Stores a pointer to animation controller to route events.  
   
@@ -116,7 +111,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
 ## See Also  

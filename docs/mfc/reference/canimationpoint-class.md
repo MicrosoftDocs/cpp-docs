@@ -2,19 +2,14 @@
 title: "CAnimationPoint Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint::CAnimationPoint", "AFXANIMATIONCONTROLLER/CAnimationPoint::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetX", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetY", "AFXANIMATIONCONTROLLER/CAnimationPoint::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationPoint::m_xValue", "AFXANIMATIONCONTROLLER/CAnimationPoint::m_yValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationPoint [MFC], CAnimationPoint", "CAnimationPoint [MFC], AddTransition", "CAnimationPoint [MFC], GetDefaultValue", "CAnimationPoint [MFC], GetValue", "CAnimationPoint [MFC], GetX", "CAnimationPoint [MFC], GetY", "CAnimationPoint [MFC], SetDefaultValue", "CAnimationPoint [MFC], GetAnimationVariableList", "CAnimationPoint [MFC], m_xValue", "CAnimationPoint [MFC], m_yValue"]
 ms.assetid: 5dc4d46f-e695-4681-b15c-544b78b3e317
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationPoint Class
@@ -88,10 +83,10 @@ void AddTransition(
 ```  
   
 ### Parameters  
- `pXTransition`  
+ *pXTransition*  
  A pointer to transition for X coordinates.  
   
- `pYTransition`  
+ *pYTransition*  
  A pointer to transition for Y coordinate.  
   
 ### Remarks  
@@ -112,16 +107,16 @@ CAnimationPoint(
 ```  
   
 ### Parameters  
- `ptDefault`  
+ *ptDefault*  
  Specifies default point coordinates.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  Specifies user-defined data.  
   
 ### Remarks  
@@ -135,7 +130,7 @@ virtual void GetAnimationVariableList(CList<CAnimationVariable*, CAnimationVaria
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains pointers to two CAnimationVariable objects representing the X and Y coordinates.  
   
 ##  <a name="getdefaultvalue"></a>  CAnimationPoint::GetDefaultValue  
@@ -159,7 +154,7 @@ BOOL GetValue(CPoint& ptValue);
 ```  
   
 ### Parameters  
- `ptValue`  
+ *ptValue*  
  Output. Contains the current value when this method returns.  
   
 ### Return Value  
@@ -229,7 +224,7 @@ void operator=(const CPoint& ptSrc);
 ```  
   
 ### Parameters  
- `ptSrc`  
+ *ptSrc*  
  Refers to CPoint or POINT.  
   
 ### Remarks  
@@ -243,7 +238,7 @@ void SetDefaultValue(const POINT& ptDefault);
 ```  
   
 ### Parameters  
- `ptDefault`  
+ *ptDefault*  
  Specifies the default point value.  
   
 ### Remarks  

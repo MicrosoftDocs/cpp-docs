@@ -2,18 +2,13 @@
 title: "Containers: Compound Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["compound files [MFC]", "compound documents", "containers [MFC], compound files", "OLE documents [MFC], compound files", "performance [MFC], compound files", "files [MFC], compound", "standardized file structure compound files", "documents [MFC], compound", "documents [MFC], OLE", "OLE containers [MFC], compound files", "access modes for files [MFC]"]
 ms.assetid: 8b83cb3e-76c8-4bbe-ba16-737092b36f49
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Containers: Compound Files
@@ -31,7 +26,7 @@ This article explains the components and implementation of compound files and th
   
 -   Storage objects, like directories, can contain other storage and stream objects.  
   
--   **LockBytes** objects represent the interface between the storage objects and the physical hardware. They determine how the actual bytes are written to whatever storage device the **LockBytes** object is accessing, such as a hard drive or an area of global memory. For more information about **LockBytes** objects and the `ILockBytes` interface, see the *OLE Programmer's Reference*.  
+-   `LockBytes` objects represent the interface between the storage objects and the physical hardware. They determine how the actual bytes are written to whatever storage device the `LockBytes` object is accessing, such as a hard drive or an area of global memory. For more information about `LockBytes` objects and the `ILockBytes` interface, see the *OLE Programmer's Reference*.  
   
 ##  <a name="_core_advantages_and_disadvantages_of_compound_files"></a> Advantages and Disadvantages of Compound Files  
  Compound files provide benefits not available with earlier methods of file storage. They include:  
@@ -67,7 +62,7 @@ This article explains the components and implementation of compound files and th
 ##  <a name="_core_using_compound_files_format_for_your_data"></a> Using Compound Files Format for Your Data  
  After successfully creating an application that has a document class derived from `COleDocument`, ensure that your main document constructor calls `EnableCompoundFile`. When the application wizard creates OLE container applications, this call is inserted for you.  
   
- In the *OLE Programmer's Reference*, see [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034), [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015), and [ILockBytes](http://msdn.microsoft.com/library/windows/desktop/aa379238).  
+ In the *OLE Programmer's Reference*, see [IStream](/windows/desktop/api/objidl/nn-objidl-istream), [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage), and [ILockBytes](/windows/desktop/api/objidl/nn-objidl-ilockbytes).  
   
 ## See Also  
  [Containers](../mfc/containers.md)   

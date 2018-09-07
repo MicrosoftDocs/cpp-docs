@@ -2,18 +2,13 @@
 title: "ActiveX Controls on the Internet | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ActiveX controls [MFC], creating", "ActiveX controls [MFC], Internet", "downloading data with ActiveX controls", "OLE controls [MFC], upgrading to ActiveX", "Internet applications [MFC], ActiveX controls", "networks [MFC], downloading with ActiveX controls"]
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ActiveX Controls on the Internet
@@ -29,7 +24,7 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
  **In order to be an ActiveX control, a control must:**  
   
--   Support the **IUnknown** interface.  
+-   Support the `IUnknown` interface.  
   
 -   Be a COM object.  
   
@@ -75,7 +70,7 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
 #### To create your project using the MFC ActiveX Control Wizard  
   
-1.  Click `New` on the **File** menu.  
+1.  Click **New** on the **File** menu.  
   
 2.  Select **MFC ActiveX Control Wizard** from the Visual C++ projects and name your project.  
   
@@ -119,7 +114,7 @@ ActiveX controls are the updated version of the OLE control specification. Contr
   
      [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]  
   
-5.  Implement the **Get/Set** methods. For **Get**, return the string. For `Set`, load the property and call `SetModifiedFlag`.  
+5.  Implement the `Get/Set` methods. For `Get`, return the string. For `Set`, load the property and call `SetModifiedFlag`.  
   
      [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]  
   

@@ -2,25 +2,20 @@
 title: "CMFCDropDownToolBar Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::AllowShowOnPaneMenu", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadBitmap", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::LoadToolBar", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnLButtonUp", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnMouseMove", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnSendCommand", "AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar::OnUpdateCmdUI"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDropDownToolBar [MFC], AllowShowOnPaneMenu", "CMFCDropDownToolBar [MFC], LoadBitmap", "CMFCDropDownToolBar [MFC], LoadToolBar", "CMFCDropDownToolBar [MFC], OnLButtonUp", "CMFCDropDownToolBar [MFC], OnMouseMove", "CMFCDropDownToolBar [MFC], OnSendCommand", "CMFCDropDownToolBar [MFC], OnUpdateCmdUI"]
 ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
-caps.latest.revision: 37
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDropDownToolBar Class
 A toolbar that appears when the user presses and holds a top-level toolbar button.  
   
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
 ## Syntax  
   
 ```  
@@ -39,7 +34,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
 |[CMFCDropDownToolBar::OnLButtonUp](#onlbuttonup)||  
 |[CMFCDropDownToolBar::OnMouseMove](#onmousemove)||  
 |[CMFCDropDownToolBar::OnSendCommand](#onsendcommand)|(Overrides `CMFCToolBar::OnSendCommand`.)|  
-|[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CMFCToolBar::OnUpdateCmdUI](http://msdn.microsoft.com/en-us/571a38ab-2a56-4968-9796-273516126f80).)|  
+|[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(Overrides [CMFCToolBar::OnUpdateCmdUI](cmfctoolbar-class.md).|  
   
 ### Remarks  
  A `CMFCDropDownToolBar` object combines the visual appearance of a toolbar with the behavior of a popup menu. When a user presses and holds a drop-down toolbar button (see [CMFCDropDownToolbarButton Class](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)), a drop-down toolbar appears, and the user can select a button from the drop-down toolbar by scrolling to it and releasing the mouse button. After the user selects a button in the drop-down toolbar, that button is displayed as the current button on the top-level toolbar.  
@@ -113,22 +108,22 @@ virtual BOOL LoadBitmap(
 ```  
   
 ### Parameters  
- [in] `uiResID`  
+ [in] *uiResID*  
  The resource ID of the bitmap that refers to the hot toolbar images.  
   
- [in] `uiColdResID`  
+ [in] *uiColdResID*  
  The resource ID of the bitmap that refers to the cold toolbar images.  
   
- [in] `uiMenuResID`  
+ [in] *uiMenuResID*  
  The resource ID of the bitmap that refers to the regular menu images.  
   
- [in] `bLocked`  
- `TRUE` to lock the toolbar; otherwise `FALSE`.  
+ [in] *bLocked*  
+ TRUE to lock the toolbar; otherwise FALSE.  
   
- [in] `uiDisabledResID`  
+ [in] *uiDisabledResID*  
  The resource ID of the bitmap that refers to the disabled toolbar images.  
   
- [in] `uiMenuDisabledResID`  
+ [in] *uiMenuDisabledResID*  
  The resource ID of the bitmap that refers to the disabled menu images.  
   
 ### Return Value  
@@ -154,13 +149,13 @@ virtual BOOL LoadToolBar(
 ```  
   
 ### Parameters  
- [in] `uiResID`  
- [in] `uiColdResID`  
- [in] `uiMenuResID`  
- [in] `BOOL`  
- [in] `uiDisabledResID`  
- [in] `uiMenuDisabledResID`  
- [in] `uiHotResID`  
+ [in] *uiResID*  
+ [in] *uiColdResID*  
+ [in] *uiMenuResID*  
+ [in] *BOOL*  
+ [in] *uiDisabledResID*  
+ [in] *uiMenuDisabledResID*  
+ [in] *uiHotResID*  
   
 ### Return Value  
   
@@ -176,8 +171,8 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### Parameters  
- [in] `nFlags`  
- [in] `point`  
+ [in] *nFlags*  
+ [in] *point*  
   
 ### Remarks  
   
@@ -191,8 +186,8 @@ afx_msg void OnMouseMove(
 ```  
   
 ### Parameters  
- [in] `nFlags`  
- [in] `point`  
+ [in] *nFlags*  
+ [in] *point*  
   
 ### Remarks  
   
@@ -204,7 +199,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
   
 ### Return Value  
   
@@ -220,8 +215,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] `pTarget`  
- [in] `bDisableIfNoHndler`  
+ [in] *pTarget*  
+ [in] *bDisableIfNoHndler*  
   
 ### Remarks  
   

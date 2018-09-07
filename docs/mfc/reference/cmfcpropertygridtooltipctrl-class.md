@@ -2,19 +2,14 @@
 title: "CMFCPropertyGridToolTipCtrl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::CMFCPropertyGridToolTipCtrl", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Create", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Deactivate", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::GetLastRect", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Hide", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::SetTextMargin", "AFXPROPERTYGRIDTOOLTIPCTRL/CMFCPropertyGridToolTipCtrl::Track"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertyGridToolTipCtrl [MFC], CMFCPropertyGridToolTipCtrl", "CMFCPropertyGridToolTipCtrl [MFC], Create", "CMFCPropertyGridToolTipCtrl [MFC], Deactivate", "CMFCPropertyGridToolTipCtrl [MFC], GetLastRect", "CMFCPropertyGridToolTipCtrl [MFC], Hide", "CMFCPropertyGridToolTipCtrl [MFC], SetTextMargin", "CMFCPropertyGridToolTipCtrl [MFC], Track"]
 ms.assetid: 84b436e5-6695-4da0-9569-1a875e087711
-caps.latest.revision: 24
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridToolTipCtrl Class
@@ -45,7 +40,7 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 |[CMFCPropertyGridToolTipCtrl::Deactivate](#deactivate)|Deactivates and hides the tooltip control.|  
 |[CMFCPropertyGridToolTipCtrl::GetLastRect](#getlastrect)|Returns the coordinates of the last position of the tooltip control.|  
 |[CMFCPropertyGridToolTipCtrl::Hide](#hide)|Hides the tooltip control.|  
-|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|`CMFCPropertyGridToolTipCtrl::PreTranslateMessage`|Used by class [CWinApp](../../mfc/reference/cwinapp-class.md) to translate window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. (Overrides [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CMFCPropertyGridToolTipCtrl::SetTextMargin](#settextmargin)|Sets the spacing between the tooltip text and the border of the tooltip window.|  
 |[CMFCPropertyGridToolTipCtrl::Track](#track)|Displays the tooltip control.|  
   
@@ -86,7 +81,7 @@ BOOL Create(CWnd* pWndParent);
 ```  
   
 ### Parameters  
- [in] `pWndParent`  
+ [in] *pWndParent*  
  A pointer to the parent window.  
   
 ### Return Value  
@@ -110,7 +105,7 @@ void GetLastRect(CRect& rect) const;
 ```  
   
 ### Parameters  
- [out] `rect`  
+ [out] *rect*  
  Contains the last position of the tooltip control.  
   
 ##  <a name="hide"></a>  CMFCPropertyGridToolTipCtrl::Hide  
@@ -128,7 +123,7 @@ void SetTextMargin(int nTextMargin);
 ```  
   
 ### Parameters  
- [in] `nTextMargin`  
+ [in] *nTextMargin*  
  Specifies the spacing between the tooltip control text and the border of the tooltip window. The default value is 10 pixels.  
   
 ##  <a name="track"></a>  CMFCPropertyGridToolTipCtrl::Track  
@@ -141,14 +136,14 @@ void Track(
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
  Specifies the position and size of the tooltip control.  
   
- [in] `strText`  
+ [in] *strText*  
  Specifies the text to be shown in the tooltip.  
   
 ### Remarks  
- This method displays the tooltip control at the position and size specified by `rect`. If the position, size, and text have not changed since the last time this method was called, this method has no effect.  
+ This method displays the tooltip control at the position and size specified by *rect*. If the position, size, and text have not changed since the last time this method was called, this method has no effect.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

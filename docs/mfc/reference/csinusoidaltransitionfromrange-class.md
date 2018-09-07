@@ -2,19 +2,14 @@
 title: "CSinusoidalTransitionFromRange Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::Create", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMaximumValue", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_dblMinimumValue", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_duration", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_period", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromRange::m_slope"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSinusoidalTransitionFromRange [MFC], CSinusoidalTransitionFromRange", "CSinusoidalTransitionFromRange [MFC], Create", "CSinusoidalTransitionFromRange [MFC], m_dblMaximumValue", "CSinusoidalTransitionFromRange [MFC], m_dblMinimumValue", "CSinusoidalTransitionFromRange [MFC], m_duration", "CSinusoidalTransitionFromRange [MFC], m_period", "CSinusoidalTransitionFromRange [MFC], m_slope"]
 ms.assetid: 8b66a729-5f10-431a-b055-e3600d0065da
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CSinusoidalTransitionFromRange Class
@@ -73,7 +68,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which is responsible for creation of standard transitions.  
   
 ### Return Value  
@@ -92,19 +87,19 @@ CSinusoidalTransitionFromRange(
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
- `dblMinimumValue`  
+ *dblMinimumValue*  
  The value of the animation variable at a trough of the sinusoidal wave.  
   
- `dblMaximumValue`  
+ *dblMaximumValue*  
  The value of the animation variable at a peak of the sinusoidal wave.  
   
- `period`  
+ *period*  
  The period of oscillation of the sinusoidal wave in seconds.  
   
- `slope`  
+ *slope*  
  The slope at the start of the transition.  
   
 ##  <a name="m_dblmaximumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMaximumValue  

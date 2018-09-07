@@ -2,23 +2,18 @@
 title: "Scope Resolution Operator: :: | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["::"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", ":: operator"]
 ms.assetid: fd5de9d3-c716-4e12-bae9-03a16fd79a50
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Scope Resolution Operator: ::
-The scope resolution operator `::` is used to identify and disambiguate identifiers used in different scopes. For more information about scope, see [Scope](../cpp/scope-visual-cpp.md).  
+The scope resolution operator **::** is used to identify and disambiguate identifiers used in different scopes. For more information about scope, see [Scope](../cpp/scope-visual-cpp.md).  
   
 ## Syntax  
   
@@ -53,9 +48,7 @@ int main() {
     // A class name used to disambiguate  
     NamespaceA::ClassA a1;  
     a1.x = 2;  
-  
 }  
-  
 ```  
   
  A scope resolution operator without a scope qualifier refers to the global namespace.  
@@ -92,7 +85,6 @@ namespace NamespaceB {
   
 namespace NamespaceC{  
     using namespace B;  
-  
 }  
 int main() {  
     NamespaceB::ClassB c_b;  
@@ -101,7 +93,6 @@ int main() {
     c_b.x = 3;  
     c_c.x = 4;  
 }  
-  
 ```  
   
  You can use chains of scope resolution operators. In the following example, `NamespaceD::NamespaceD1` identifies the nested namespace `NamespaceD1`, and `NamespaceE::ClassE::ClassE1` identifies the nested class `ClassE1`.  
@@ -114,7 +105,6 @@ namespace NamespaceD{
 }  
   
 namespace NamespaceE{  
-  
     class ClassE{  
     public:  
         class ClassE1{  
@@ -129,7 +119,6 @@ int main() {
     NamespaceE::ClassE::ClassE1 e1;  
     e1.x = 7  ;  
 }  
-  
 ```  
   
 ## With Static Members  
@@ -149,7 +138,6 @@ int main() {
     int gx1 = ClassG::x;  
     int gx2 = ClassG::get_x();   
 }  
-  
 ```  
   
 ## With Scoped Enumerations  
@@ -163,12 +151,10 @@ enum class EnumA{
 };  
   
 int main() {  
-  
     EnumA enum_value = EnumA::First;  
 }  
-  
 ```  
   
-## See Also  
+## See also  
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Namespaces](../cpp/namespaces-cpp.md)   

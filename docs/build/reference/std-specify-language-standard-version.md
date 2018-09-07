@@ -2,17 +2,12 @@
 title: "-std (Specify Language Standard Version) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/16/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/std", "-std", "VC.Project.VCCLCompilerTool.CppLanguageStandard"]
 dev_langs: ["C++"]
 ms.assetid: 0acb74ba-1aa8-4c05-b96c-682988dc19bd
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /std (Specify Language Standard Version)
@@ -25,7 +20,7 @@ Enable supported C++ language features from the specified version of the C++ lan
 
 ## Remarks
 
-The **/std** option is used to control the version-specific ISO C++ programming language standard features enabled during compilation of your code. This option allows you to disable support for certain new language and library features that may break your existing code that conforms to a particular version of the language standard. By default, **/std:c++14** is specified, which disables language and standard library features found in later versions of the C++ language standard. Use  **/std:c++17** to enable C++17 standard-specific features and behavior. To explicitly enable the latest supported compiler and standard library features, use **/std:c++latest**.
+The **/std** option is is available in Visual Studio 2017 and later. It is used to control the version-specific ISO C++ programming language standard features enabled during compilation of your code. This option allows you to disable support for certain new language and library features that may break your existing code that conforms to a particular version of the language standard. By default, **/std:c++14** is specified, which disables language and standard library features found in later versions of the C++ language standard. Use  **/std:c++17** to enable C++17 standard-specific features and behavior. To explicitly enable the latest supported compiler and standard library features, use **/std:c++latest**.
 
 The default **/std:c++14** option enables the set of C++14 features implemented by the Visual C++ compiler. This option disables compiler and standard library support for features that are changed or new in more recent versions of the language standard, with the exception of some C++17 features already implemented in previous releases of the Visual C++ compiler. To avoid breaking changes for users who have already taken dependencies on the features available as of Visual Studio 2015 Update 2, these features remain enabled when the **/std:c++14** option is specified:
 

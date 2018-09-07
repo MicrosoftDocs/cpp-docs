@@ -2,19 +2,14 @@
 title: "Compiler Error C2864 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C2864"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C2864"]
 ms.assetid: d0ca2ad9-90a6-4aef-8511-98a3b414c102
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Error C2864

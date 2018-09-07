@@ -2,18 +2,13 @@
 title: "Regular MFC DLLs Statically Linked to MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["regular MFC DLLs [C++]", "DLLs [C++], regular", "USRDLLs", "USRDLLs, statically linked to MFC", "statically linked DLLs [C++]", "regular MFC DLLs [C++], statically linked to MFC"]
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Regular MFC DLLs Statically Linked to MFC
@@ -61,7 +56,7 @@ extern "C" __declspec(dllexport) MyExportedFunction( );
   
  A DLL that is statically linked to MFC cannot also dynamically link to the shared MFC DLLs. A DLL that is statically linked to MFC is dynamically bound to an application just like any other DLL; applications link to it just like any other DLL.  
   
- The standard MFC static link libraries are named according to the convention described in [Naming Conventions for MFC DLLs](../build/naming-conventions-for-mfc-dlls.md). However, with MFC version 3.0 and later, it is no longer necessary to manually specify to the linker the version of the MFC library you want linked in. Instead, the MFC header files automatically determine the correct version of the MFC library to link in based on preprocessor defines, such as **\_DEBUG** or **_UNICODE**. The MFC header files add /DEFAULTLIB directives instructing the linker to link in a specific version of the MFC library.  
+ The standard MFC static link libraries are named according to the convention described in [Naming Conventions for MFC DLLs](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions). However, with MFC version 3.0 and later, it is no longer necessary to manually specify to the linker the version of the MFC library you want linked in. Instead, the MFC header files automatically determine the correct version of the MFC library to link in based on preprocessor defines, such as **\_DEBUG** or **_UNICODE**. The MFC header files add /DEFAULTLIB directives instructing the linker to link in a specific version of the MFC library.  
   
 ## What do you want to do?  
   

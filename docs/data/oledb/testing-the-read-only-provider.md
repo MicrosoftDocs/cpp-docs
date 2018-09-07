@@ -2,18 +2,13 @@
 title: "Testing the Read-Only Provider | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["testing, OLE DB providers", "testing providers", "OLE DB providers, calling", "OLE DB providers, testing"]
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Testing the Read-Only Provider
@@ -42,7 +37,7 @@ To test a provider, you need a consumer. It helps if the consumer can match up w
   
  Open the header file for the dialog class (in this case TestProvDlg.h). Add the following code to the header file (outside of any class declarations):  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // TestProvDlg.h  
   
@@ -61,17 +56,17 @@ END_COLUMN_MAP()
 };  
 ```  
   
- The code represents a user record that defines what columns will be in the rowset. When the client calls **IAccessor::CreateAccessor**, it uses these entries to specify which columns to bind. The OLE DB consumer templates also allow you to bind columns dynamically. The COLUMN_ENTRY macros are the client-side version of the PROVIDER_COLUMN_ENTRY macros. The two COLUMN_ENTRY macros specify the ordinal, type, length, and data member for the two strings.  
+ The code represents a user record that defines what columns will be in the rowset. When the client calls `IAccessor::CreateAccessor`, it uses these entries to specify which columns to bind. The OLE DB consumer templates also allow you to bind columns dynamically. The COLUMN_ENTRY macros are the client-side version of the PROVIDER_COLUMN_ENTRY macros. The two COLUMN_ENTRY macros specify the ordinal, type, length, and data member for the two strings.  
   
  Add a handler function for the **Run** button by pressing CTRL and double-clicking the **Run** button. Place the following code in the function:  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////  
 // TestProvDlg.cpp  
   
 void CtestProvDlg::OnRun()  
 {  
-   CCommand<CAccessor<CProvider> > table;  
+   CCommand<CAccessor<CProvider>> table;  
    CDataSource source;  
    CSession   session;  
   
@@ -94,7 +89,7 @@ void CtestProvDlg::OnRun()
   
  The `CCommand`, `CDataSource`, and `CSession` classes all belong to the OLE DB consumer templates. Each class mimics a COM object in the provider. The `CCommand` object takes the `CProvider` class, declared in the header file, as a template parameter. The `CProvider` parameter represents bindings that you use to access the data from the provider. Here is the `Open` code for the data source, session, and command:  
   
-```  
+```cpp  
 if (source.Open("MyProvider.MyProvider.1", NULL) != S_OK)  
    return;  
   
@@ -111,9 +106,9 @@ if (table.Open(session, _T("c:\\samples\\myprov\\myData.txt")) != S_OK)
   
  Pass in the string "c:\\\samples\\\myprov\\\MyData.txt" in the `table.Open` line. If you step into the `Open` call, you see that this string is passed to the `SetCommandText` method in the provider. Note that the `ICommandText::Execute` method used that string.  
   
- To fetch the data, call `MoveNext` on the table. `MoveNext` calls the **IRowset::GetNextRows**, `GetRowCount`, and `GetData` functions. When there are no more rows (that is, the current position in the rowset is greater than `GetRowCount`), the loop terminates:  
+ To fetch the data, call `MoveNext` on the table. `MoveNext` calls the `IRowset::GetNextRows`, `GetRowCount`, and `GetData` functions. When there are no more rows (that is, the current position in the rowset is greater than `GetRowCount`), the loop terminates:  
   
-```  
+```cpp  
 while (table.MoveNext() == S_OK)  
 {  
    m_ctlString1.AddString(table.szField1);  
@@ -121,7 +116,7 @@ while (table.MoveNext() == S_OK)
 }  
 ```  
   
- Note that when there are no more rows, providers return **DB_S_ENDOFROWSET**. The **DB_S_ENDOFROWSET** value is not an error. You should always check against `S_OK` to cancel a data fetch loop and not use the SUCCEEDED macro.  
+ Note that when there are no more rows, providers return DB_S_ENDOFROWSET. The DB_S_ENDOFROWSET value is not an error. You should always check against S_OK to cancel a data fetch loop and not use the SUCCEEDED macro.  
   
  You should now be able to build and test the program.  
   

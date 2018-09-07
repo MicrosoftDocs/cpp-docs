@@ -2,18 +2,13 @@
 title: "Private Virtual Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["virtual functions, private", "derived classes, virtual functions", "access modifiers [C++], for class members", "member access [C++], virtual members"]
 ms.assetid: 04448086-bf72-44be-9c1f-dfda1744949e
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Private Virtual Functions

@@ -2,25 +2,20 @@
 title: "CMenuTearOffManager Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::CMenuTearOffManager", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Build", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::GetRegPath", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Initialize", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::IsDynamicID", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Parse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse", "AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMenuTearOffManager [MFC], CMenuTearOffManager", "CMenuTearOffManager [MFC], Build", "CMenuTearOffManager [MFC], GetRegPath", "CMenuTearOffManager [MFC], Initialize", "CMenuTearOffManager [MFC], IsDynamicID", "CMenuTearOffManager [MFC], Parse", "CMenuTearOffManager [MFC], Reset", "CMenuTearOffManager [MFC], SetInUse", "CMenuTearOffManager [MFC], SetupTearOffMenus"]
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
-caps.latest.revision: 31
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMenuTearOffManager Class
 Manages tear-off menus. A tear-off menu is a menu on the menu bar. The user can remove a tear-off menu from the menu bar, causing the tear-off menu to float.  
   
-   [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+   For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
    
 ## Syntax  
   
@@ -75,8 +70,8 @@ void Build(
 ```  
   
 ### Parameters  
- [in] `uiTearOffBarID`  
- [in] `strText`  
+ [in] *uiTearOffBarID*  
+ [in] *strText*  
   
 ### Remarks  
   
@@ -112,20 +107,20 @@ BOOL Initialize(
 ```  
   
 ### Parameters  
- [in] `lpszRegEntry`  
+ [in] *lpszRegEntry*  
  A string that contains the path of a registry entry. Your applications stores the settings for tear-off bars in this registry entry.  
   
- [in] `uiTearOffMenuFirst`  
+ [in] *uiTearOffMenuFirst*  
  The first menu ID for a tear-off menu.  
   
- [in] `uiTearOffMenuLast`  
+ [in] *uiTearOffMenuLast*  
  The last menu ID for a tear-off menu.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The range of menu IDs from `uiTearOffMenuFirst` to `uiTearOffMenuLast` must be a continuous interval. The interval defines the number of tear-off menus that can appear at the same time in the application.  
+ The range of menu IDs from *uiTearOffMenuFirst* to *uiTearOffMenuLast* must be a continuous interval. The interval defines the number of tear-off menus that can appear at the same time in the application.  
   
 ##  <a name="isdynamicid"></a>  CMenuTearOffManager::IsDynamicID  
 
@@ -135,7 +130,7 @@ BOOL IsDynamicID(UINT uiID) const;
 ```  
   
 ### Parameters  
- [in] `uiID`  
+ [in] *uiID*  
   
 ### Return Value  
   
@@ -149,7 +144,7 @@ UINT Parse(CString& str);
 ```  
   
 ### Parameters  
- [in] `str`  
+ [in] *str*  
   
 ### Return Value  
   
@@ -163,7 +158,7 @@ void Reset(HMENU hmenu);
 ```  
   
 ### Parameters  
- [in] `hmenu`  
+ [in] *hmenu*  
   
 ### Remarks  
   
@@ -177,8 +172,8 @@ void SetInUse(
 ```  
   
 ### Parameters  
- [in] `uiCmdId`  
- [in] `bUse`  
+ [in] *uiCmdId*  
+ [in] *bUse*  
   
 ### Remarks  
   
@@ -190,7 +185,7 @@ void SetupTearOffMenus(HMENU hMenu);
 ```  
   
 ### Parameters  
- [in] `hMenu`  
+ [in] *hMenu*  
   
 ### Remarks  
   

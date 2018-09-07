@@ -2,18 +2,13 @@
 title: "A Portrait of the Document-View Architecture | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["documents [MFC], views", "multiple views [MFC], updating from document", "document/view architecture [MFC]", "views [MFC], and user input", "documents [MFC], accessing data from view", "views [MFC], updating", "input [MFC], view class", "documents [MFC], multiple views", "document/view architecture [MFC], accessing data from view", "document/view architecture [MFC], about document/view architecture", "views [MFC], accessing document data from"]
 ms.assetid: 4e7f65dc-b166-45d8-bcd5-9bb0d399b946
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # A Portrait of the Document/View Architecture
@@ -22,7 +17,7 @@ Documents and views are paired in a typical MFC application. Data is stored in t
 ## Gaining Access to Document Data from the View  
  The view accesses its document's data either with the [GetDocument](../mfc/reference/cview-class.md#getdocument) function, which returns a pointer to the document, or by making the view class a C++ `friend` of the document class. The view then uses its access to the data to obtain the data when it is ready to draw or otherwise manipulate it.  
   
- For example, from the view's [OnDraw](../mfc/reference/cview-class.md#ondraw) member function, the view uses **GetDocument** to obtain a document pointer. Then it uses that pointer to access a `CString` data member in the document. The view passes the string to the `TextOut` function. To see the code for this example, see [Drawing in a View](../mfc/drawing-in-a-view.md).  
+ For example, from the view's [OnDraw](../mfc/reference/cview-class.md#ondraw) member function, the view uses `GetDocument` to obtain a document pointer. Then it uses that pointer to access a `CString` data member in the document. The view passes the string to the `TextOut` function. To see the code for this example, see [Drawing in a View](../mfc/drawing-in-a-view.md).  
   
 ## User Input to the View  
  The view might also interpret a mouse click within itself as either selection or editing of data. Similarly it might interpret keystrokes as data entry or editing. Suppose the user types a string in a view that manages text. The view obtains a pointer to the document and uses the pointer to pass the new data to the document, which stores it in some data structure.  

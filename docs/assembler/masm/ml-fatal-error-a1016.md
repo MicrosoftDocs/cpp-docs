@@ -1,28 +1,25 @@
 ---
 title: "ML Fatal Error A1016 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "08/30/2018"
+ms.technology: ["cpp-masm"]
+ms.topic: "error-reference"
 f1_keywords: ["A1016"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["A1016"]
 ms.assetid: 440b3750-ba0b-44d8-b82d-d581f62c08b2
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ML Fatal Error A1016
-**Internal Assembler Error**  
-  
- The MASM driver, called ML.exe, generated a system error.  
-  
- Note the circumstances of the error and notify Microsoft Corporation. Product Support Services is available at [http://support.microsoft.com/](http://support.microsoft.com/).  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+
+**Internal Assembler Error**
+
+The MASM driver, called ML.exe, generated a system error.
+
+Note the circumstances of the error and notify Microsoft Corporation. Product Support Services is available at [http://support.microsoft.com/](http://support.microsoft.com/).
+
+## See also
+
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

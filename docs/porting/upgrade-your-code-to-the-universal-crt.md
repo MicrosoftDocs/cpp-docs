@@ -2,15 +2,10 @@
 title: "Upgrade your code to the Universal CRT | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/31/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-caps.latest.revision: 1
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Upgrade your code to the Universal CRT
@@ -33,11 +28,11 @@ The retail and debug UCRT DLLs are found in separate locations. The retail DLLs 
 
 The C and C++ compiler-specific runtime support library, **vcruntime**, contains the code required to support program startup and features such as exception handling and intrinsics. The library and its header files are still found in the version-specific Microsoft Visual Studio folder in your Program Files or Program files (x86) directory. In Visual Studio 2017, the headers are found under Microsoft Visual Studio\\2017\\_edition_\\VC\\Tools\\MSVC\\_lib-version_\\include and the link libraries are found under Microsoft Visual Studio\\2017\\_edition_\\VC\\Tools\\MSVC\\_lib-version_\\lib\\_architecture_, where _edition_ is the edition of Visual Studio installed, _lib-version_ is the version of the libraries, and _architecture_ is the processor architecture. Link libraries for OneCore and Store are also found in the libraries folder. The retail and debug versions of the static library are libvcruntime.lib and libvcruntimed.lib. The dynamic link retail and debug stub libraries are vcruntime.lib and vcruntimed.lib, respectively.  
   
-When you update your Visual C++ projects, if you have set the project's **Linker** property **Ignore All Default Libraries** to **Yes** or if you use the /NODEFAULTLIB linker option on the command line, then you must update your list of libraries to include the new, refactored libraries. Replace the old CRT library, for example, libcmt.lib, libcmtd.lib, msvcrt.lib, or msvcrtd.lib, with the equivalent refactored libraries. For information on the specific libraries to use, see [CRT Library Features](../c-runtime-library/crt-library-features.md).  
+When you update your Visual C++ projects, if you have set the project's **Linker** property **Ignore All Default Libraries** to **Yes** or if you use the `/NODEFAULTLIB` linker option on the command line, then you must update your list of libraries to include the new, refactored libraries. Replace the old CRT library, for example, libcmt.lib, libcmtd.lib, msvcrt.lib, or msvcrtd.lib, with the equivalent refactored libraries. For information on the specific libraries to use, see [CRT Library Features](../c-runtime-library/crt-library-features.md).  
   
 ## Deployment and redistribution of the Universal CRT
   
-Because the UCRT is now a Microsoft Windows operating system component, it is included as part of the operating system in Windows 10 and is available through Windows Update for older operating systems, Windows Vista through Windows 8.1. A redistributable version is available for Windows XP. As an operating system component, UCRT updates and servicing are managed by Windows Update independently of Visual Studio and Visual C++ compiler versions. Because the UCRT is a Windows component, for security and ease of updates, and a smaller image size, we strongly recommend central deployment of the UCRT for your app.  
+Because the UCRT is now a Microsoft Windows operating system component, it is included as part of the operating system in Windows 10 and is available through Windows Update for older operating systems, Windows Vista through Windows 8.1. A redistributable version is available for Windows XP. As an operating system component, UCRT updates and servicing are managed by Windows Update independently of Visual Studio and Microsoft C++ compiler  versions. Because the UCRT is a Windows component, for security and ease of updates, and a smaller image size, we strongly recommend central deployment of the UCRT for your app.  
   
 You can use the UCRT on any version of Windows supported by Visual Studio 2015 or Visual Studio 2017. You can redistribute it using a vcredist package for supported versions of Windows other than Windows 10. The vcredist packages include the UCRT components and automatically install them on Windows operating systems that do not have them installed by default. For more information, see [Redistributing Visual C++ Files](../ide/redistributing-visual-cpp-files.md).  
   

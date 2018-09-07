@@ -2,19 +2,14 @@
 title: "CSmartDockingInfo Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSmartDockingInfo", "AFXDOCKINGMANAGER/CSmartDockingInfo", "AFXDOCKINGMANAGER/CSmartDockingInfo::CopyTo", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_bUseThemeColorInShading", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrBaseBackground", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneDest", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrToneSrc", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_clrTransparent", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_nCentralGroupOffset", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_sizeTotal", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerBmpResID", "AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerLightBmpResID"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSmartDockingInfo [MFC], CopyTo", "CSmartDockingInfo [MFC], m_bUseThemeColorInShading", "CSmartDockingInfo [MFC], m_clrBaseBackground", "CSmartDockingInfo [MFC], m_clrToneDest", "CSmartDockingInfo [MFC], m_clrToneSrc", "CSmartDockingInfo [MFC], m_clrTransparent", "CSmartDockingInfo [MFC], m_nCentralGroupOffset", "CSmartDockingInfo [MFC], m_sizeTotal", "CSmartDockingInfo [MFC], m_uiMarkerBmpResID", "CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID"]
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CSmartDockingInfo Class
@@ -93,7 +88,7 @@ void CopyTo(CSmartDockingInfo& params);
 ```  
   
 ### Parameters  
- [out] `params`  
+ [out] *params*  
  An object of type `CSmartDockingInfo` that is populated with the current smart docking parameters.  
   
 ##  <a name="m_busethemecolorinshading"></a>  CSmartDockingInfo::m_bUseThemeColorInShading  
@@ -104,9 +99,9 @@ BOOL m_bUseThemeColorInShading;
 ```  
   
 ### Remarks  
- If `TRUE`, the markers are drawn using the current theme color; otherwise the markers are drawn with a light blue color.  
+ If TRUE, the markers are drawn using the current theme color; otherwise the markers are drawn with a light blue color.  
   
- The default value is `FALSE`.  
+ The default value is FALSE.  
   
 ##  <a name="m_clrbasebackground"></a>  CSmartDockingInfo::m_clrBaseBackground  
  Specifies the base background color of smart docking markers.  
@@ -177,7 +172,7 @@ UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
 ```  
   
 ### Remarks  
- Fill this array with the resource IDs of the bitmaps representing the smart docking markers. `AFX_SD_MARKERS_NUM` is currently defined as 5. You fill the array as follows:  
+ Fill this array with the resource IDs of the bitmaps representing the smart docking markers. AFX_SD_MARKERS_NUM is currently defined as 5. You fill the array as follows:  
   
  `params.m_uiMarkerBmpResID[0] = IDB_MARKER_LEFT;`  
   
@@ -197,7 +192,7 @@ UINT m_uiMarkerLightBmpResID[AFX_SD_MARKERS_NUM];
 ```  
   
 ### Remarks  
- Fill this array with the resource IDs of the bitmaps representing the highlighted smart docking markers. `AFX_SD_MARKERS_NUM` is currently defined as 5. You fill the array as follows:  
+ Fill this array with the resource IDs of the bitmaps representing the highlighted smart docking markers. AFX_SD_MARKERS_NUM is currently defined as 5. You fill the array as follows:  
   
  `params.m_uiMarkerLightBmpResID[0] = IDB_MARKER_LEFT_LIGHT;`  
   

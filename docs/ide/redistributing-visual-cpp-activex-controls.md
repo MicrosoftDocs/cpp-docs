@@ -2,18 +2,13 @@
 title: "Redistributing Visual C++ ActiveX Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["controls [C++], redistributing", "controls [C++], distributing"]
 ms.assetid: eefbb7e4-d28c-4c35-98bf-d9540cfaae83
-caps.latest.revision: 18
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Redistributing Visual C++ ActiveX Controls
@@ -28,17 +23,15 @@ Visual C++ 6.0 supplies ActiveX controls you can use in applications that you th
   
 -   Asycfilt.dll  
   
--   Comcat.dll *  
+-   Comcat.dll \*  
   
--   Oleaut32.dll *  
+-   Oleaut32.dll \*  
   
--   Olepro32.dll *  
+-   Olepro32.dll \*  
   
 -   Stdole2.tlb  
   
  If these DLLs are not available on the target system, you need to get them updated using the prescribed mechanism for updating the corresponding operating system. You can download the latest service packs for Windows operating systems from [http://windowsupdate.microsoft.com](http://windowsupdate.microsoft.com).  
-  
- If your application uses one of the ActiveX controls that connects to a database, you must have the Microsoft Data Access Components (MDAC) installed on the target system. For more information, see [Redistributing Database Support Files](../ide/redistributing-database-support-files.md).  
   
  When using an ActiveX control that connects to a database, you also need to replicate the data source name on the target computer. You can do this programmatically with functions such as `ConfigDSN`.  
   

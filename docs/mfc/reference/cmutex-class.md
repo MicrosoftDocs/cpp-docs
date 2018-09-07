@@ -2,19 +2,14 @@
 title: "CMutex Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMutex", "AFXMT/CMutex", "AFXMT/CMutex::CMutex"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMutex [MFC], CMutex"]
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMutex Class
@@ -66,20 +61,20 @@ CMutex(
 ```  
   
 ### Parameters  
- `bInitiallyOwn`  
+ *bInitiallyOwn*  
  Specifies if the thread creating the `CMutex` object initially has access to the resource controlled by the mutex.  
   
- `lpszName`  
- Name of the `CMutex` object. If another mutex with the same name exists, `lpszName` must be supplied if the object will be used across process boundaries. If **NULL**, the mutex will be unnamed. If the name matches an existing mutex, the constructor builds a new `CMutex` object which references the mutex of that name. If the name matches an existing synchronization object that is not a mutex, the construction will fail.  
+ *lpszName*  
+ Name of the `CMutex` object. If another mutex with the same name exists, *lpszName* must be supplied if the object will be used across process boundaries. If **NULL**, the mutex will be unnamed. If the name matches an existing mutex, the constructor builds a new `CMutex` object which references the mutex of that name. If the name matches an existing synchronization object that is not a mutex, the construction will fail.  
   
- `lpsaAttribute`  
- Security attributes for the mutex object. For a full description of this structure, see [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) in the Windows SDK.  
+ *lpsaAttribute*  
+ Security attributes for the mutex object. For a full description of this structure, see [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) in the Windows SDK.  
   
 ### Remarks  
  To access or release a `CMutex` object, create a [CMultiLock](../../mfc/reference/cmultilock-class.md) or [CSingleLock](../../mfc/reference/csinglelock-class.md) object and call its [Lock](../../mfc/reference/csinglelock-class.md#lock) and [Unlock](../../mfc/reference/csinglelock-class.md#unlock) member functions. If the `CMutex` object is being used stand-alone, call its `Unlock` member function to release it.  
   
 > [!IMPORTANT]
->  After creating the `CMutex` object, use [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) to ensure that the mutex did not already exist. If the mutex did exist unexpectedly, it may indicate a rogue process is squatting and may be intending to use the mutex maliciously. In this case, the recommended security-conscious procedure is to close the handle and continue as if there was a failure in creating the object.  
+>  After creating the `CMutex` object, use [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) to ensure that the mutex did not already exist. If the mutex did exist unexpectedly, it may indicate a rogue process is squatting and may be intending to use the mutex maliciously. In this case, the recommended security-conscious procedure is to close the handle and continue as if there was a failure in creating the object.  
   
 ## See Also  
  [CSyncObject Class](../../mfc/reference/csyncobject-class.md)   

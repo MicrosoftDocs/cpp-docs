@@ -2,19 +2,14 @@
 title: "Linker Tools Error LNK1152 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["LNK1152"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["LNK1152"]
 ms.assetid: 2523b61a-1359-4612-9c16-7d1f705f32e6
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Error LNK1152

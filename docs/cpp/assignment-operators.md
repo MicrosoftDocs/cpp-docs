@@ -1,34 +1,34 @@
 ---
 title: "Assignment Operators | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "03/05/2018"
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: [">>=", "xor_eq", "&=", "<<=", "-=", "and_eq", "^=", "|=", "/=", "%=", "or_eq", "+=", "*="]
+f1_keywords: ["=", "*=", "/=", "%=", "+=", "-=", "<<=", ">>=", "&=", "^=", "|=", "&&="]
 dev_langs: ["C++"]
-helpviewer_keywords: ["or_eq operator", "&= operator", "operators [C++], assignment", "assignment operators [C++], C++", "xor_eq operator", "+= operator", "and_eq operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "assignment operators [C++]", "-= operator", "/= operator", "<<= operator"]
+helpviewer_keywords: ["operators [C++], assignment", "assignment operators [C++], C++", "&= operator", "&&= operator", "^= operator", "+= operator", ">>= operator", "|= operator", "operator>>=", "*= operator", "%= operator", "^= operator", "operator >>=", "= operator", "-= operator", "/= operator", "<<= operator"]
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Assignment Operators
 ## Syntax  
   
 ```  
-  
-      expression assignment-operator expression   
+expression assignment-operator expression   
 assignment-operator : one of  
-   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=  
+   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=  &&=
 ```  
   
 ## Remarks  
- Assignment operators store a value in the object designated by the left operand. There are two kinds of assignment operations: simple assignment, in which the value of the second operand is stored in the object specified by the first operand, and compound assignment, in which an arithmetic, shift, or bitwise operation is performed prior to storing the result. All assignment operators in the following table except the = operator are compound assignment operators.  
+ Assignment operators store a value in the object designated by the left operand. There are three kinds of assignment operations: 
+
+1. simple assignment, in which the value of the second operand is stored in the object specified by the first operand. 1. compound assignment, in which an arithmetic, shift, or bitwise operation is performed prior to storing the result.
+1. move assignment (for class types) in which resources are transferred without copying.
+
+
+All assignment operators in the following table except the = and &&= operators are compound assignment operators.  
   
 ### Assignment Operators  
   
@@ -36,15 +36,16 @@ assignment-operator : one of
 |--------------|-------------|  
 |**=**|Store the value of the second operand in the object specified by the first operand (simple assignment).|  
 |**\*=**|Multiply the value of the first operand by the value of the second operand; store the result in the object specified by the first operand.|  
-|`/=`|Divide the value of the first operand by the value of the second operand; store the result in the object specified by the first operand.|  
-|`%=`|Take modulus of the first operand specified by the value of the second operand; store the result in the object specified by the first operand.|  
-|`+=`|Add the value of the second operand to the value of the first operand; store the result in the object specified by the first operand.|  
+|**/=**|Divide the value of the first operand by the value of the second operand; store the result in the object specified by the first operand.|  
+|**%=**|Take modulus of the first operand specified by the value of the second operand; store the result in the object specified by the first operand.|  
+|**+=**|Add the value of the second operand to the value of the first operand; store the result in the object specified by the first operand.|  
 |**-=**|Subtract the value of the second operand from the value of the first operand; store the result in the object specified by the first operand.|  
 |**<\<=**|Shift the value of the first operand left the number of bits specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |**>>=**|Shift the value of the first operand right the number of bits specified by the value of the second operand; store the result in the object specified by the first operand.|  
 |**&=**|Obtain the bitwise AND of the first and second operands; store the result in the object specified by the first operand.|  
-|`^=`|Obtain the bitwise exclusive OR of the first and second operands; store the result in the object specified by the first operand.|  
-|`&#124;=`|Obtain the bitwise inclusive OR of the first and second operands; store the result in the object specified by the first operand.|  
+|**^=**|Obtain the bitwise exclusive OR of the first and second operands; store the result in the object specified by the first operand.|  
+|**\|=**|Obtain the bitwise inclusive OR of the first and second operands; store the result in the object specified by the first operand.|
+|**&&=**| Move assignment operator (for class types only). If the second operand is an rvalue, move its resources to the first operand (without copying them). See [Move constructors and move assignment operators](move-constructors-and-move-assignment-operators-cpp.md) for more information.|
   
  **Operator Keywords**  
   
@@ -53,14 +54,14 @@ assignment-operator : one of
 |Operator|Equivalent|  
 |--------------|----------------|  
 |**&=**|`and_eq`|  
-|`&#124;=`|`or_eq`|  
-|`^=`|`xor_eq`|  
+|**\|=**|`or_eq`|  
+|**^=**|`xor_eq`|  
   
  There are two ways to access these operator keywords in your programs: include the header file `iso646.h`, or compile with the [/Za](../build/reference/za-ze-disable-language-extensions.md) (Disable language extensions) compiler option.  
   
 ## Example  
   
-```  
+```cpp 
 // expre_Assignment_Operators.cpp  
 // compile with: /EHsc  
 // Demonstrate assignment operators  
@@ -91,7 +92,7 @@ int main() {
   
  An object of any unambiguously derived class from a given base class can be assigned to an object of the base class. The reverse is not true because there is an implicit conversion from derived class to base class but not from base class to derived class. For example:  
   
-```  
+```cpp 
 // expre_SimpleAssignment.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -122,14 +123,14 @@ int main()
   
  For class-type objects, assignment is different from initialization. To illustrate how different assignment and initialization can be, consider the code  
   
-```  
+```cpp 
 UserType1 A;  
 UserType2 B = A;  
 ```  
   
  The preceding code shows an initializer; it calls the constructor for `UserType2` that takes an argument of type `UserType1`. Given the code  
   
-```  
+```cpp 
 UserType1 A;  
 UserType2 B;  
   
@@ -138,7 +139,7 @@ B = A;
   
  the assignment statement  
   
-```  
+```cpp 
 B = A;   
 ```  
   
@@ -166,7 +167,7 @@ B = A;
   
  In ANSI C, the result of an assignment expression is not an l-value. Therefore, the legal C++ expression `(a += b) += c` is illegal in C.  
   
-## See Also  
+## See also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [C Assignment Operators](../c-language/c-assignment-operators.md)

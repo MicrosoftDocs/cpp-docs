@@ -1,19 +1,14 @@
 ---
 title: "Selection Statements (C++) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["selection statements [C++], syntax", "selection statements"]
 ms.assetid: 2ce662fc-5e62-461b-ac31-2c159d8ef33b
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Selection Statements (C++)
@@ -23,5 +18,5 @@ The C++ selection statements, [if](../cpp/if-else-statement-cpp.md) and [switch]
   
  See the individual topics for the syntax for each statement.  
   
-## See Also  
+## See also  
  [Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)

@@ -2,18 +2,13 @@
 title: "Linker Tools Errors and Warnings | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/17/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["errors [C++]", "linker [C++], errors and warnings", "errors [C++], linker"]
 ms.assetid: d4b12c0f-4dae-48b2-9b9e-fedf94c94cb0
-caps.latest.revision: 15
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Linker Tools Errors and Warnings
@@ -126,6 +121,8 @@ LINK, LIB, DUMPBIN, and EDITBIN generate these errors and warnings.
 
 [Linker Tools Error LNK1314](../../error-messages/tool-errors/linker-tools-error-lnk1314.md)
 
+[Linker Tools Error LNK1318](../../error-messages/tool-errors/linker-tools-error-lnk1318.md)
+
 [Linker Tools Error LNK1332](../../error-messages/tool-errors/linker-tools-error-lnk1332.md)
 
 [Linker Tools Error LNK1561](../../error-messages/tool-errors/linker-tools-error-lnk1561.md)
@@ -175,6 +172,8 @@ LINK, LIB, DUMPBIN, and EDITBIN generate these errors and warnings.
 [Linker Tools Warning LNK4010](../../error-messages/tool-errors/linker-tools-warning-lnk4010.md)
 
 [Linker Tools Warning LNK4014](../../error-messages/tool-errors/linker-tools-warning-lnk4014.md)
+
+[Linker Tools Warning LNK4020](../../error-messages/tool-errors/linker-tools-warning-lnk4020.md)
 
 [Linker Tools Warning LNK4022](../../error-messages/tool-errors/linker-tools-warning-lnk4022.md)
 

@@ -2,19 +2,14 @@
 title: "_WriteBarrier | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_WriteBarrier"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["WriteBarrier intrinsic", "_WriteBarrier intrinsic"]
 ms.assetid: a5ffdad9-0ca1-4eb7-b2f3-0f092c4bf4b5
-caps.latest.revision: 23
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _WriteBarrier
@@ -35,7 +30,7 @@ void _WriteBarrier(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_WriteBarrier`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_WriteBarrier`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

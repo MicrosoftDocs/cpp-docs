@@ -2,18 +2,13 @@
 title: "Common Problems When Creating a Release Build | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["unexpected code generation", "debugging [MFC], release builds", "release builds, troubleshooting", "stray pointers", "debug builds, difference from release builds", "MFC [C++], release builds", "heap layout problems", "pointers, stray", "release builds, building applications", "debug memory allocator", "optimization [C++], compiler", "projects [C++], debug configuration", "troubleshooting Visual C++", "troubleshooting release builds", "memory [C++], overwrites"]
 ms.assetid: 73cbc1f9-3e33-472d-9880-39a8e9977b95
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Common Problems When Creating a Release Build

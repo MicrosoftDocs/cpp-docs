@@ -1,35 +1,44 @@
 ---
 title: "Overview of Marshaling in C++ | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.date: "06/28/2018"
+ms.technology: ["cpp-cli"]
 ms.topic: "reference"
 f1_keywords: ["marshaling", "marshalling"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, marshaling", "C++ Support Library, marshaling", "marshaling, about marshaling"]
 ms.assetid: 997dd4bc-5f98-408f-b890-f35de9ce3bb8
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Overview of Marshaling in C++
-In mixed mode, you sometimes must marshal your data between native and managed types. [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] introduced the marshaling library to help you marshal and convert data in a simple way.  
-  
+In mixed mode, you sometimes must marshal your data between native and managed types. Visual Studio 2008 introduced the *marshaling library* to help you marshal and convert data in a simple way.  The marshaling library consists of a set of functions and a `marshal_context` class that perform marshaling for common types. The library is defined in these headers in the **include/msclr** directory for your Visual Studio edition:
+
+|Header|Description|  
+|---------------|-----------------|
+|marshal.h|`marshal_context` class and context-free marshaling functions|
+|marshal_atl.h| Functions for marshaling ATL types|
+|marshal_cppstd.h|Functions for marshaling standard C++ types|
+|marshal_windows.h|Functions for marshaling Windows types|
+
+
+The default path for **msclr** folder is something like this depending on which edition you have and the build number:
+
+```cmd
+C:\\Program Files (x86)\\Microsoft Visual Studio\\Preview\\Enterprise\\VC\\Tools\\MSVC\\14.15.26528\\include\\msclr
+```
+
  You can use the marshaling library with or without a [marshal_context Class](../dotnet/marshal-context-class.md). Some conversions require a context. Other conversions can be implemented using the [marshal_as](../dotnet/marshal-as.md) function. The following table lists the current conversions supported, whether they require a context, and what marshal file you have to include:  
   
 |From type|To type|Marshal method|Include file|  
 |---------------|-------------|--------------------|------------------|  
-|System::String^|const char *|marshal_context|marshal.h|  
-|const char *|System::String^|marshal_as|marshal.h|  
-|char *|System::String^|marshal_as|marshal.h|  
-|System::String^|const wchar_t*|marshal_context|marshal.h|  
-|const wchar_t *|System::String^|marshal_as|marshal.h|  
-|wchar_t *|System::String^|marshal_as|marshal.h|  
+|System::String^|const char \*|marshal_context|marshal.h|  
+|const char \*|System::String^|marshal_as|marshal.h|  
+|char \*|System::String^|marshal_as|marshal.h|  
+|System::String^|const wchar_t\*|marshal_context|marshal.h|  
+|const wchar_t \*|System::String^|marshal_as|marshal.h|  
+|wchar_t \*|System::String^|marshal_as|marshal.h|  
 |System::IntPtr|HANDLE|marshal_as|marshal_windows.h|  
 |HANDLE|System::IntPtr|marshal_as|marshal_windows.h|  
 |System::String^|BSTR|marshal_context|marshal_windows.h|  
@@ -52,7 +61,7 @@ In mixed mode, you sometimes must marshal your data between native and managed t
 > [!NOTE]
 >  If you have embedded `NULL`s in your string, the result of marshaling the string is not guaranteed. The embedded `NULL`s can cause the string to be truncated or they might be preserved.  
   
- The marshaling library headers are located in the include directory in the msclr subdirectory. This example shows how to include the msclr directory in an include header declaration:  
+This example shows how to include the msclr directory in an include header declaration:  
   
  `#include "msclr\marshal_cppstd.h"`  
   

@@ -2,37 +2,29 @@
 title: "C Multiplicative Operators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["arithmetic operators [C++], multiplicative operators", "/ operator", "/ operator, multiplicative operators", "remainder operator (%)", "operators [C], multiplication", "% operator", "slash (/) operator", "multiplication operator [C++], multiplicative operators"]
 ms.assetid: 495471c9-319b-4eb4-bd97-039a025fd3a9
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # C Multiplicative Operators
-The multiplicative operators perform multiplication (**\***), division (**/**), and remainder (`%`) operations.  
+The multiplicative operators perform multiplication (<strong>\*</strong>), division (**/**), and remainder (**%**) operations.  
   
- **Syntax**  
+## Syntax
+
+*multiplicative-expression*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*cast-expression*  
+&nbsp;&nbsp;&nbsp;&nbsp;*multiplicative-expression* <strong>\*</strong> *cast-expression*  
+&nbsp;&nbsp;&nbsp;&nbsp;*multiplicative-expression* **/** *cast-expression*  
+&nbsp;&nbsp;&nbsp;&nbsp;*multiplicative-expression* **%** *cast-expression*
+
+The operands of the remainder operator (**%**) must be integral. The multiplication (<strong>\*</strong>) and division (**/**) operators can take integral- or floating-type operands; the types of the operands can be different.  
   
- *multiplicative-expression*:  
- *cast-expression*  
-  
- *multiplicative-expression*  **\***  *cast-expression*  
-  
- *multiplicative-expression*  **/**  *cast-expression*  
-  
- *multiplicative-expression*  **%**  *cast-expression*  
-  
- The operands of the remainder operator (`%`) must be integral. The multiplication (**\***) and division (**/**) operators can take integral- or floating-type operands; the types of the operands can be different.  
-  
- The multiplicative operators perform the usual arithmetic conversions on the operands. The type of the result is the type of the operands after conversion.  
+The multiplicative operators perform the usual arithmetic conversions on the operands. The type of the result is the type of the operands after conversion.  
   
 > [!NOTE]
 >  Since the conversions performed by the multiplicative operators do not provide for overflow or underflow conditions, information may be lost if the result of a multiplicative operation cannot be represented in the type of the operands after conversion.  
@@ -41,15 +33,9 @@ The multiplicative operators perform multiplication (**\***), division (**/**), 
   
 |Operator|Description|  
 |--------------|-----------------|  
-|**\***|The multiplication operator causes its two operands to be multiplied.|  
-|**/**|The division operator causes the first operand to be divided by the second. If two integer operands are divided and the result is not an integer, it is truncated according to the following rules:|  
-||-   The result of division by 0 is undefined according to the ANSI C standard. The Microsoft C compiler generates an error at compile time or run time.|  
-||-   If both operands are positive or unsigned, the result is truncated toward 0.|  
-||-   If either operand is negative, whether the result of the operation is the largest integer less than or equal to the algebraic quotient or is the smallest integer greater than or equal to the algebraic quotient is implementation defined. (See the Microsoft Specific section below.)|  
-|`%`|The result of the remainder operator is the remainder when the first operand is divided by the second. When the division is inexact, the result is determined by the following rules:|  
-||-   If the right operand is zero, the result is undefined.|  
-||-   If both operands are positive or unsigned, the result is positive.|  
-||-   If either operand is negative and the result is inexact, the result is implementation defined. (See the Microsoft Specific section below.)|  
+|<strong>\*</strong>|The multiplication operator causes its two operands to be multiplied.|  
+|**/**|The division operator causes the first operand to be divided by the second. If two integer operands are divided and the result is not an integer, it is truncated according to the following rules:<br/><br/>- The result of division by 0 is undefined according to the ANSI C standard. The Microsoft C compiler generates an error at compile time or run time.<br/><br/>- If both operands are positive or unsigned, the result is truncated toward 0.<br/><br/>- If either operand is negative, whether the result of the operation is the largest integer less than or equal to the algebraic quotient or is the smallest integer greater than or equal to the algebraic quotient is implementation defined. (See the Microsoft Specific section below.)|  
+|**%**|The result of the remainder operator is the remainder when the first operand is divided by the second. When the division is inexact, the result is determined by the following rules:<br/><br/>- If the right operand is zero, the result is undefined.<br/><br/>- If both operands are positive or unsigned, the result is positive.<br/><br/>- If either operand is negative and the result is inexact, the result is implementation defined. (See the Microsoft Specific section below.)|  
   
  **Microsoft Specific**  
   

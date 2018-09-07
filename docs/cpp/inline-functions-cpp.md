@@ -2,19 +2,14 @@
 title: "Inline Functions (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["__forceinline_cpp", "__inline_cpp", "inline_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["inline functions [C++], class members"]
 ms.assetid: 355f120c-2847-4608-ac04-8dda18ffe10c
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Inline Functions (C++)
@@ -23,7 +18,7 @@ A function defined in the body of a class declaration is an inline function.
 ## Example  
  In the following class declaration, the `Account` constructor is an inline function. The member functions `GetBalance`, `Deposit`, and `Withdraw` are not specified as **inline** but can be implemented as inline functions.  
   
-```  
+```cpp 
 // Inline_Member_Functions.cpp  
 class Account  
 {  
@@ -63,17 +58,17 @@ int main()
  A class member function defaults to external linkage unless a definition for that function contains the **inline** specifier. The preceding example shows that these functions need not be explicitly declared with the **inline** specifier; using **inline** in the function definition causes it to be an inline function. However, it is illegal to redeclare a function as **inline** after a call to that function.  
   
 ## Inline, __inline, and \__forceinline  
- The `inline` and `__inline` specifiers instruct the compiler to insert a copy of the function body into each place the function is called.  
+ The **inline** and **__inline** specifiers instruct the compiler to insert a copy of the function body into each place the function is called.  
   
  The insertion (called inline expansion or inlining) occurs only if the compiler's cost/benefit analysis show it to be profitable. Inline expansion alleviates the function-call overhead at the potential cost of larger code size.  
   
- The `__forceinline` keyword overrides the cost/benefit analysis and relies on the judgment of the programmer instead. Exercise caution when using `__forceinline`. Indiscriminate use of `__forceinline` can result in larger code with only marginal performance gains or, in some cases, even performance losses (due to increased paging of a larger executable, for example).  
+ The **__forceinline** keyword overrides the cost/benefit analysis and relies on the judgment of the programmer instead. Exercise caution when using **__forceinline**. Indiscriminate use of **__forceinline** can result in larger code with only marginal performance gains or, in some cases, even performance losses (due to increased paging of a larger executable, for example).  
   
  Using inline functions can make your program faster because they eliminate the overhead associated with function calls. Functions expanded inline are subject to code optimizations not available to normal functions.  
   
- The compiler treats the inline expansion options and keywords as suggestions. There is no guarantee that functions will be inlined. You cannot force the compiler to inline a particular function, even with the `__forceinline` keyword. When compiling with **/clr**, the compiler will not inline a function if there are security attributes applied to the function.  
+ The compiler treats the inline expansion options and keywords as suggestions. There is no guarantee that functions will be inlined. You cannot force the compiler to inline a particular function, even with the **__forceinline** keyword. When compiling with **/clr**, the compiler will not inline a function if there are security attributes applied to the function.  
   
- The **inline** keyword is available only in C++. The `__inline` and `__forceinline` keywords are available in both C and C++. For compatibility with previous versions, **_inline** is a synonym for `__inline`.  
+ The **inline** keyword is available only in C++. The **__inline** and **__forceinline** keywords are available in both C and C++. For compatibility with previous versions, **_inline** is a synonym for **__inline**.  
   
  The **inline** keyword tells the compiler that inline expansion is preferred. However, the compiler can create a separate instance of the function (instantiate) and create standard calling linkages instead of inserting the code inline. Two cases where this can happen are:  
   
@@ -91,7 +86,7 @@ int main()
   
 ### Example 1  
   
-```  
+```cpp 
 // inline_keyword1.cpp  
 // compile with: /c  
 inline int max( int a , int b ) {  
@@ -105,7 +100,7 @@ inline int max( int a , int b ) {
   
 ### Example 2  
   
-```  
+```cpp 
 // inline_keyword2.cpp  
 // compile with: /EHsc /c  
 #include <iostream>  
@@ -120,9 +115,9 @@ private:
 ```  
   
 ### Microsoft Specific  
- The `__inline` keyword is equivalent to **inline**.  
+ The **__inline** keyword is equivalent to **inline**.  
   
- Even with `__forceinline`, the compiler cannot inline code in all circumstances. The compiler cannot inline a function if:  
+ Even with **__forceinline**, the compiler cannot inline code in all circumstances. The compiler cannot inline a function if:  
   
 -   The function or its caller is compiled with /Ob0 (the default option for debug builds).  
   
@@ -140,7 +135,7 @@ private:
   
 -   The function is also marked with the [naked](../cpp/naked-cpp.md) [__declspec](../cpp/declspec.md) modifier.  
   
- If the compiler cannot inline a function declared with `__forceinline`, it generates a level 1 warning, except when:
+ If the compiler cannot inline a function declared with **__forceinline**, it generates a level 1 warning, except when:
   
 -   The function is compiled by using /Od or /Ob0. No inlining is expected in these cases.     
   
@@ -160,7 +155,7 @@ private:
   
  A `Point` class can be defined as follows:  
   
-```  
+```cpp 
 // when_to_use_inline_functions.cpp  
 class Point  
 {  
@@ -212,7 +207,7 @@ int main()
   
  The following example shows a macro that converts lowercase letters to uppercase:  
   
-```  
+```cpp 
 // inline_functions_macro.c  
 #include <stdio.h>  
 #include <conio.h>  
@@ -227,7 +222,6 @@ int main() {
 }  
 //  Sample Input:  xyz  
 // Sample Output:  Z  
-  
 ```  
   
  The intent of the expression `toupper(getc(stdin))` is that a character should be read from the console device (`stdin`) and, if necessary, converted to uppercase.  
@@ -236,7 +230,7 @@ int main() {
   
  Inline functions remedy the problem previously described:  
   
-```  
+```cpp 
 // inline_functions_inline.cpp  
 #include <stdio.h>  
 #include <conio.h>  
@@ -257,6 +251,6 @@ Sample Input: a
 Sample Output: A  
 ```  
   
-## See Also  
+## See also  
  [noinline](../cpp/noinline.md)   
  [auto_inline](../preprocessor/auto-inline.md)

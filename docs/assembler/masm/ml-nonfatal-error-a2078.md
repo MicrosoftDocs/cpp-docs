@@ -1,26 +1,23 @@
 ---
 title: "ML Nonfatal Error A2078 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "08/30/2018"
+ms.technology: ["cpp-masm"]
+ms.topic: "error-reference"
 f1_keywords: ["A2078"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["A2078"]
 ms.assetid: 42ac48fd-ac7f-4e74-a11e-20181d443faf
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2078
-**instruction does not allow FAR indirect addressing**  
-  
- A conditional jump or loop cannot take a memory operand. It must be given a relative address or label.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+
+**instruction does not allow FAR indirect addressing**
+
+A conditional jump or loop cannot take a memory operand. It must be given a relative address or label.
+
+## See also
+
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

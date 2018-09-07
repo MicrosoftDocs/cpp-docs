@@ -2,19 +2,14 @@
 title: "Build System Changes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vc.msbuild.changes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["Build system changes, project file (.vcxprog)", "Build system changes, custom build rules", "Build system changes, MSBuild", "MSBuild, build system changes", "Build system changes, .vsprops", "Build system changes, $(Inherit)", "Build system changes, $(NoInherit)"]
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Build System Changes
@@ -36,14 +31,14 @@ The MSBuild system is used to build Visual C++ projects. However, in Visual Stud
  In this release, custom build rules are represented by three file types, .xml, .props, and .targets, instead of a .rules file. When a .rules file that was created by using an earlier release of Visual C++ is migrated to the current release, equivalent .xml, .props, and .targets files are created and stored in your project together with the original .rules file.  
   
 > [!IMPORTANT]
->  In the current release, the [!INCLUDE[TLA2#tla_ide](../build/includes/tla2sharptla_ide_md.md)] does not support the creation of new rules. For that reason, the easiest way to use a rule file from a project that was created by using an earlier release of Visual C++ is to migrate the project to the current release.  
+>  In the current release, the IDE does not support the creation of new rules. For that reason, the easiest way to use a rule file from a project that was created by using an earlier release of Visual C++ is to migrate the project to the current release.  
   
 ## Inheritance Macros  
  In earlier releases, the **$(Inherit)** macro specifies the order in which inherited properties appear on the command line that is composed by the project build system. The **$(NoInherit)** macro causes any occurrences of $(Inherit) to be ignored and causes any properties that would otherwise be inherited, not to be inherited. For example, by default the $(Inherit) macro causes files specified by using the [/I (Additional Include Directories)](../build/reference/i-additional-include-directories.md) compiler option to be appended to the command line.  
   
  In the current release, inheritance is supported by specifying the value of a property as the concatenation of one or more literal values and property macros. The **$(Inherit)** and **$(NoInherit)** macros are not supported.  
   
- In the following example, a semicolon-delimited list is assigned to a property on a property page. The list consists of the concatenation of the *\<value>* literal and the value of the `MyProperty` property, which is accessed by using the macro notation, **$(***MyProperty***)**.  
+ In the following example, a semicolon-delimited list is assigned to a property on a property page. The list consists of the concatenation of the *\<value>* literal and the value of the `MyProperty` property, which is accessed by using the macro notation, **$(**<em>MyProperty</em>**)**.  
   
 ```  
 Property=<value>;$(MyProperty)  

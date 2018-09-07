@@ -2,18 +2,13 @@
 title: "Data Objects and Data Sources: Manipulation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["data objects [MFC], manipulating", "data sources [MFC], data operations", "data sources [MFC], inserting data", "Clipboard [MFC], determining available formats", "OLE [MFC], data objects", "Clipboard [MFC], passing format information", "data sources [MFC], determining available formats", "delayed rendering [MFC]", "OLE [MFC], data sources"]
 ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Data Objects and Data Sources: Manipulation
@@ -60,7 +55,7 @@ After a data object or data source has been created, you can perform a number of
   
     -   Call the data object's `BeginEnumFormats` member function to start enumerating the formats available on the Clipboard. Then call `GetNextFormat` until the Clipboard returns a format your application supports or there are no more formats.  
   
- If you are using `ON_UPDATE_COMMAND_UI`, you can now enable the Paste and, possibly, Paste Special items on the Edit menu. To do this, call either `CMenu::EnableMenuItem` or `CCmdUI::Enable`. For more information about what container applications should do with menu items and when, see [Menus and Resources: Container Additions](../mfc/menus-and-resources-container-additions.md).  
+ If you are using **ON_UPDATE_COMMAND_UI**, you can now enable the Paste and, possibly, Paste Special items on the Edit menu. To do this, call either `CMenu::EnableMenuItem` or `CCmdUI::Enable`. For more information about what container applications should do with menu items and when, see [Menus and Resources: Container Additions](../mfc/menus-and-resources-container-additions.md).  
   
 ##  <a name="_core_retrieving_data_from_a_data_object"></a> Retrieving Data from a Data Object  
  Once you have decided on a data format, all that remains is to retrieve the data from the data object. To do this, the user decides where to put the data, and the application calls the appropriate function. The data will be available in one of the following mediums:  

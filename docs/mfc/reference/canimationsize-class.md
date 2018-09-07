@@ -2,19 +2,14 @@
 title: "CAnimationSize Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationSize", "AFXANIMATIONCONTROLLER/CAnimationSize", "AFXANIMATIONCONTROLLER/CAnimationSize::CAnimationSize", "AFXANIMATIONCONTROLLER/CAnimationSize::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationSize::GetCX", "AFXANIMATIONCONTROLLER/CAnimationSize::GetCY", "AFXANIMATIONCONTROLLER/CAnimationSize::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationSize::GetValue", "AFXANIMATIONCONTROLLER/CAnimationSize::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationSize::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationSize::m_cxValue", "AFXANIMATIONCONTROLLER/CAnimationSize::m_cyValue"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationSize [MFC], CAnimationSize", "CAnimationSize [MFC], AddTransition", "CAnimationSize [MFC], GetCX", "CAnimationSize [MFC], GetCY", "CAnimationSize [MFC], GetDefaultValue", "CAnimationSize [MFC], GetValue", "CAnimationSize [MFC], SetDefaultValue", "CAnimationSize [MFC], GetAnimationVariableList", "CAnimationSize [MFC], m_cxValue", "CAnimationSize [MFC], m_cyValue"]
 ms.assetid: ea06d1b5-502c-44a3-82ca-8bd6ba6a9364
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationSize Class
@@ -88,10 +83,10 @@ void AddTransition(
 ```  
   
 ### Parameters  
- `pCXTransition`  
+ *pCXTransition*  
  A pointer to transition for Width.  
   
- `pCYTransition`  
+ *pCYTransition*  
  A pointer to transition for Height.  
   
 ### Remarks  
@@ -112,16 +107,16 @@ CAnimationSize(
 ```  
   
 ### Parameters  
- `szDefault`  
+ *szDefault*  
  Specifies default size.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  Specifies user-defined data.  
   
 ### Remarks  
@@ -137,7 +132,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  When the function returns, it contains pointers to two CAnimationVariable objects representing the width and height.  
   
 ##  <a name="getcx"></a>  CAnimationSize::GetCX  
@@ -187,7 +182,7 @@ BOOL GetValue(CSize& szValue);
 ```  
   
 ### Parameters  
- `szValue`  
+ *szValue*  
  Output. Contains the current value when this method returns.  
   
 ### Return Value  
@@ -231,7 +226,7 @@ void operator=(const CSize& szSrc);
 ```  
   
 ### Parameters  
- `szSrc`  
+ *szSrc*  
  Refers to CSize or SIZE.  
   
 ### Remarks  
@@ -245,7 +240,7 @@ void SetDefaultValue(const CSize& szDefault);
 ```  
   
 ### Parameters  
- `szDefault`  
+ *szDefault*  
  Specifies new default size.  
   
 ### Remarks  

@@ -2,24 +2,19 @@
 title: "Rubber-Banding and Trackers | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["trackers [MFC]", "CRectTracker class [MFC], implementing trackers", "OLE objects [MFC], selecting", "rubber banding [MFC]", "WM_LBUTTONDOWN [MFC]"]
 ms.assetid: 0d0fa64c-6418-4baf-ab7f-2d16ca039230
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Rubber-Banding and Trackers
 Another feature supplied with trackers is the "rubber-band" selection, which allows a user to select multiple OLE items by dragging a sizing rectangle around the items to be selected. When the user releases the left mouse button, items within the region selected by the user are selected and can be manipulated by the user. For instance, the user might drag the selection into another container application.  
   
- Implementing this feature requires some additional code in your application's `WM_LBUTTONDOWN` handler function.  
+ Implementing this feature requires some additional code in your application's WM_LBUTTONDOWN handler function.  
   
  The following code sample implements rubber-band selection and additional features.  
   

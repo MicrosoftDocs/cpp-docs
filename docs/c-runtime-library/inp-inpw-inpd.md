@@ -2,11 +2,8 @@
 title: "_inp, _inpw, _inpd | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 apiname: ["_inp", "_inpw", "_inpd"]
 apilocation: ["msvcrt.dll", "msvcr120.dll", "msvcr110_clr0400.dll", "msvcr110.dll", "msvcr80.dll", "msvcr100.dll", "msvcr90.dll"]
 apitype: "DLLExport"
@@ -14,10 +11,8 @@ f1_keywords: ["inpd", "_inp", "_inpw", "_inpd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["inp function", "inpw function", "ports, I/O routines", "inpd function", "_inp function", "_inpd function", "I/O [CRT], port", "_inpw function"]
 ms.assetid: 5d9c2e38-fc85-4294-86d5-7282cc02d1b3
-caps.latest.revision: 16
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _inp, _inpw, _inpd
@@ -27,7 +22,7 @@ Inputs, from a port, a byte (`_inp`), a word (`_inpw`), or a double word (`_inpd
 >  These functions are obsolete. Beginning in Visual Studio 2015, they are not available in the CRT.  
   
 > [!IMPORTANT]
->  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported with /ZW](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  This API cannot be used in applications that execute in the Windows Runtime. For more information, see [CRT functions not supported in Universal Windows Platform apps](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## Syntax  
   
@@ -53,7 +48,7 @@ unsigned long _inpd(
 ## Remarks  
  The `_inp`, `_inpw`, and `_inpd` functions read a byte, a word, and a double word, respectively, from the specified input port. The input value can be any unsigned short integer in the range 0 - 65,535.  
   
- Because these functions read directly from an I/O port, they might not be used in user code in Windows NT, Windows 2000, Windows XP, and Windows Server 2003.  
+ Because these functions read directly from an I/O port, they cannot be used in user code.  
   
 ## Requirements  
   

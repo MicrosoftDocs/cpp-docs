@@ -2,18 +2,13 @@
 title: "Nested Class Declarations | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["classes [C++], declaring", "declarations, class", "nested classes [C++]", "nested classes [C++], declaring", "declaring classes [C++]", "declarations, nested classes"]
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Nested Class Declarations
@@ -21,7 +16,7 @@ A class can be declared within the scope of another class. Such a class is calle
   
  The following example shows how to declare nested classes:  
   
-```  
+```cpp 
 // nested_class_declarations.cpp  
 class BufferedIO  
 {  
@@ -64,7 +59,7 @@ int main()
   
  An exception to the scope visibility of a nested class declaration is when a type name is declared together with a forward declaration.  In this case, the class name declared by the forward declaration is visible outside the enclosing class, with its scope defined to be the smallest enclosing non-class scope.  For example:  
   
-```  
+```cpp 
 // nested_class_declarations_2.cpp  
 class C  
 {  
@@ -95,7 +90,7 @@ int main()
 ## Member functions in nested classes  
  Member functions declared in nested classes can be defined in file scope. The preceding example could have been written:  
   
-```  
+```cpp 
 // member_functions_in_nested_classes.cpp  
 class BufferedIO  
 {  
@@ -133,24 +128,24 @@ int main()
   
  In the preceding example, the *qualified-type-name* syntax is used to declare the function name. The declaration:  
   
-```  
+```cpp 
 BufferedIO::BufferedInput::read()  
 ```  
   
  means "the `read` function that is a member of the `BufferedInput` class that is in the scope of the `BufferedIO` class." Because this declaration uses the *qualified-type-name* syntax, constructs of the following form are possible:  
   
-```  
+```cpp 
 typedef BufferedIO::BufferedInput BIO_INPUT;  
   
 int BIO_INPUT::read()  
 ```  
   
- The preceding declaration is equivalent to the previous one, but it uses a `typedef` name in place of the class names.  
+ The preceding declaration is equivalent to the previous one, but it uses a **typedef** name in place of the class names.  
   
 ## Friend functions in nested classes  
  Friend functions declared in a nested class are considered to be in the scope of the nested class, not the enclosing class. Therefore, the friend functions gain no special access privileges to members or member functions of the enclosing class. If you want to use a name that is declared in a nested class in a friend function and the friend function is defined in file scope, use qualified type names as follows:  
   
-```  
+```cpp 
 // friend_functions_and_nested_classes.cpp  
   
 #include <string.h>  
@@ -196,11 +191,11 @@ int main()
   
  The following code shows the function `GetExtendedErrorStatus` declared as a friend function. In the function, which is defined in file scope, a message is copied from a static array into a class member. Note that a better implementation of `GetExtendedErrorStatus` is to declare it as:  
   
-```  
+```cpp 
 int GetExtendedErrorStatus( char *message )  
 ```  
   
  With the preceding interface, several classes can use the services of this function by passing a memory location where they want the error message copied.  
   
-## See Also  
+## See also  
  [Classes and Structs](../cpp/classes-and-structs-cpp.md)

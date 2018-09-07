@@ -2,19 +2,14 @@
 title: "Control Settings, MFC ActiveX Control Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.ctl.settings"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC ActiveX Control Wizard, control settings"]
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Control Settings, MFC ActiveX Control Wizard
@@ -78,7 +73,7 @@ Use this page of the wizard to specify how you want the control to behave. For e
  Enables the control to process mouse pointer notifications, whether control is active or not. When you select this option, the `pointerInactive` flag is one of the flags that are returned by [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags). For more information about how to use this option, see [Providing Mouse Interaction While Inactive](../../mfc/providing-mouse-interaction-while-inactive.md).  
   
  **Acts as a simple frame control**  
- Specifies that the control is a container for other controls by setting the `OLEMISC_SIMPLEFRAME` bit for the control. For more information, on the [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) website, search for "Simple Frame Site Containment".  
+ Specifies that the control is a container for other controls by setting the OLEMISC_SIMPLEFRAME bit for the control. For more information, on the [MSDN Library](http://go.microsoft.com/fwlink/p/?linkid=150542) website, search for "Simple Frame Site Containment".  
   
  **Loads properties asynchronously**  
  Enables a reset of any previous asynchronous data and initiates a new load of the asynchronous property of the control.  

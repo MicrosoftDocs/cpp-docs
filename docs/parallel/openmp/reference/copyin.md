@@ -2,19 +2,14 @@
 title: "copyin | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 f1_keywords: ["copyin"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["copyin OpenMP clause"]
 ms.assetid: 369efa88-613c-4cb1-9e11-7b9ee08a4b25
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # copyin

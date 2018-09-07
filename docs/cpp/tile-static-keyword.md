@@ -2,38 +2,33 @@
 title: "tile_static Keyword | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["tile_static_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["tile_static keyword"]
 ms.assetid: d78384d4-65d9-45cf-b3df-7e904f489d06
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # tile_static Keyword
-The `tile_static` keyword is used to declare a variable that can be accessed by all threads in a tile of threads. The lifetime of the variable starts when execution reaches the point of declaration and ends when the kernel function returns. For more information on using tiles, see [Using Tiles](../parallel/amp/using-tiles.md).  
+The **tile_static** keyword is used to declare a variable that can be accessed by all threads in a tile of threads. The lifetime of the variable starts when execution reaches the point of declaration and ends when the kernel function returns. For more information on using tiles, see [Using Tiles](../parallel/amp/using-tiles.md).  
   
- The `tile_static` keyword has the following limitations:  
+ The **tile_static** keyword has the following limitations:  
   
 -   It can be used only on variables that are in a function that has the `restrict(amp)` modifier.  
   
 -   It cannot be used on variables that are pointer or reference types.  
   
--   A `tile_static` variable cannot have an initializer. Default constructors and destructors are not invoked automatically.  
+-   A **tile_static** variable cannot have an initializer. Default constructors and destructors are not invoked automatically.  
   
--   The value of an uninitialized `tile_static` variable is undefined.  
+-   The value of an uninitialized **tile_static** variable is undefined.  
   
--   If a `tile_static` variable is declared in a call graph that is rooted by a non-tiled call to `parallel_for_each`, a warning is generated and the behavior of the variable is undefined.  
+-   If a **tile_static** variable is declared in a call graph that is rooted by a non-tiled call to `parallel_for_each`, a warning is generated and the behavior of the variable is undefined.  
   
 ## Example  
- The following example shows how a `tile_static` variable can be used to accumulate data across several threads in a tile.  
+ The following example shows how a **tile_static** variable can be used to accumulate data across several threads in a tile.  
   
 ```cpp  
 // Sample data:  
@@ -144,10 +139,9 @@ for (int i = 0; i < 4; i++) {
 // 3 3 8 8 3 3  
 // 5 5 2 2 4 4  
 // 5 5 2 2 4 4  
-  
 ```  
   
-## See Also  
+## See also  
  [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md)   
  [C++ AMP Overview](../parallel/amp/cpp-amp-overview.md)   
  [parallel_for_each Function (C++ AMP)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)   

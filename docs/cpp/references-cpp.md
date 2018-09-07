@@ -2,18 +2,13 @@
 title: "References (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["objects [C++], referencing", "references [C++]", "references, to pointers", "declarations, references", "references, declaring", "referencing objects, declarator syntax"]
 ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # References (C++)
@@ -39,7 +34,7 @@ A reference, like a pointer, stores the address of an object that is located els
   
 -   An optional storage class specifier.  
   
--   Optional **const** and/or `volatile` qualifiers.  
+-   Optional **const** and/or **volatile** qualifiers.  
   
 -   The type specifier: the name of a type.  
   
@@ -49,24 +44,24 @@ A reference, like a pointer, stores the address of an object that is located els
   
 -   The & operator or && operator.  
   
--   Optional **const** and/or `volatile` qualifers.  
+-   Optional **const** and/or **volatile** qualifers.  
   
 -   The identifier.  
   
  3. An optional initializer.  
   
- The more complex declarator forms for pointers to arrays and functions also apply to references to arrays and functions, see [pointers](../cpp/pointers-cpp.md) and [declarators](http://msdn.microsoft.com/en-us/8a7b9b51-92bd-4ac0-b3fe-0c4abe771838).  
+ The more complex declarator forms for pointers to arrays and functions also apply to references to arrays and functions, see [pointers](../cpp/pointers-cpp.md).  
   
  Multiple declarators and initializers may appear in a comma-separated list following a single declaration specifier. For example:  
   
-```  
+```cpp 
 int &i;   
 int &i, &j;   
 ```  
   
  References, pointers and objects may be declared together:  
   
-```  
+```cpp 
 int &ref, *ptr, k;   
 ```  
   
@@ -76,7 +71,7 @@ int &ref, *ptr, k;
   
 ## Example  
   
-```  
+```cpp 
 // references.cpp  
 #include <stdio.h>  
 struct S {  
@@ -104,12 +99,8 @@ int main() {
 4  
 ```  
   
-## Comment  
- Topics in this section:  
-  
--   [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)  
-  
--   [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)  
-  
--   [References to Pointers](../cpp/references-to-pointers.md)  
+## See also
+ [Reference-Type Function Arguments](../cpp/reference-type-function-arguments.md)  
+ [Reference-Type Function Returns](../cpp/reference-type-function-returns.md)  
+ [References to Pointers](../cpp/references-to-pointers.md)  
   

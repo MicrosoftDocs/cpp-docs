@@ -2,19 +2,14 @@
 title: "function (C/C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["function_CPP", "vc-pragma.function"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["function pragma", "pragmas, function"]
 ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # function (C/C++)
@@ -23,18 +18,18 @@ Specifies that calls to functions specified in the pragma's argument list be gen
 ## Syntax  
   
 ```  
-  
 #pragma function( function1 [, function2, ...] )  
 ```  
   
 ## Remarks  
- If you use the **intrinsic** pragma (or /Oi) to tell the compiler to generate intrinsic functions (intrinsic functions are generated as inline code, not as function calls), you can use the **function** pragma to explicitly force a function call. Once a function pragma is seen, it takes effect at the first function definition containing a specified intrinsic function. The effect continues to the end of the source file or to the appearance of an **intrinsic** pragma specifying the same intrinsic function. The **function** pragma can be used only outside of a function — at the global level.  
+
+If you use the `intrinsic` pragma (or /Oi) to tell the compiler to generate intrinsic functions (intrinsic functions are generated as inline code, not as function calls), you can use the **function** pragma to explicitly force a function call. Once a function pragma is seen, it takes effect at the first function definition containing a specified intrinsic function. The effect continues to the end of the source file or to the appearance of an `intrinsic` pragma specifying the same intrinsic function. The **function** pragma can be used only outside of a function — at the global level.  
   
- For lists of the functions that have intrinsic forms, see [#pragma intrinsic](../preprocessor/intrinsic.md).  
+For lists of the functions that have intrinsic forms, see [#pragma intrinsic](../preprocessor/intrinsic.md).  
   
 ## Example  
   
-```  
+```cpp  
 // pragma_directive_function.cpp  
 #include <ctype.h>  
 #include <stdio.h>  
@@ -84,5 +79,6 @@ str is 'Now************'
 str is '!!!!!!!!!!!!!!!'  
 ```  
   
-## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+## See Also
+
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

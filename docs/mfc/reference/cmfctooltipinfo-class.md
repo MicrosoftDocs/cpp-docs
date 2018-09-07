@@ -2,19 +2,14 @@
 title: "CMFCToolTipInfo Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCToolTipInfo", "AFXTOOLTIPCTRL/CMFCToolTipInfo", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bBalloonTooltip", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bBoldLabel", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bDrawDescription", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bDrawIcon", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bDrawSeparator", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bRoundedCorners", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_bVislManagerTheme", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrBorder", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrFill", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrFillGradient", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrText", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nGradientAngle", "AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nMaxDescrWidth"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCToolTipInfo [MFC], m_bBalloonTooltip", "CMFCToolTipInfo [MFC], m_bBoldLabel", "CMFCToolTipInfo [MFC], m_bDrawDescription", "CMFCToolTipInfo [MFC], m_bDrawIcon", "CMFCToolTipInfo [MFC], m_bDrawSeparator", "CMFCToolTipInfo [MFC], m_bRoundedCorners", "CMFCToolTipInfo [MFC], m_bVislManagerTheme", "CMFCToolTipInfo [MFC], m_clrBorder", "CMFCToolTipInfo [MFC], m_clrFill", "CMFCToolTipInfo [MFC], m_clrFillGradient", "CMFCToolTipInfo [MFC], m_clrText", "CMFCToolTipInfo [MFC], m_nGradientAngle", "CMFCToolTipInfo [MFC], m_nMaxDescrWidth"]
 ms.assetid: f9d3d7f8-1f08-4342-a7b2-683860e5d2a5
-caps.latest.revision: 27
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCToolTipInfo Class
@@ -74,7 +69,7 @@ BOOL m_bBalloonTooltip;
 ```  
   
 ### Remarks  
- `TRUE` indicates that tooltips use the balloon style, `FALSE` indicates that tooltips use the rectangular style.  
+ TRUE indicates that tooltips use the balloon style, FALSE indicates that tooltips use the rectangular style.  
   
 ##  <a name="m_bboldlabel"></a>  CMFCToolTipInfo::m_bBoldLabel  
  Specifies whether the font of the tooltip text is bold.  
@@ -84,7 +79,7 @@ BOOL m_bBoldLabel;
 ```  
   
 ### Remarks  
- Set this member to `TRUE` to display tooltip text with bold font, or `FALSE` to display tooltip labels with non-bold font.  
+ Set this member to TRUE to display tooltip text with bold font, or FALSE to display tooltip labels with non-bold font.  
   
 ##  <a name="m_bdrawdescription"></a>  CMFCToolTipInfo::m_bDrawDescription  
  Specifies whether each tooltip displays description text.  
@@ -94,7 +89,7 @@ BOOL m_bDrawDescription;
 ```  
   
 ### Remarks  
- Set this member to `TRUE` to display the description, or `FALSE` to hide the description. You can specify the description on a tooltip by calling [CMFCToolTipCtrl::SetDescription](../../mfc/reference/cmfctooltipctrl-class.md#setdescription)  
+ Set this member to TRUE to display the description, or FALSE to hide the description. You can specify the description on a tooltip by calling [CMFCToolTipCtrl::SetDescription](../../mfc/reference/cmfctooltipctrl-class.md#setdescription)  
   
 ##  <a name="m_bdrawicon"></a>  CMFCToolTipInfo::m_bDrawIcon  
  Specifies whether all tooltips display icons.  
@@ -104,7 +99,7 @@ BOOL m_bDrawIcon;
 ```  
   
 ### Remarks  
- Set this member to `TRUE` to display an icon on each tooltip, or `FALSE` to display tooltips without icons.  
+ Set this member to TRUE to display an icon on each tooltip, or FALSE to display tooltips without icons.  
   
 ##  <a name="m_bdrawseparator"></a>  CMFCToolTipInfo::m_bDrawSeparator  
  Specifies whether each tooltip has a separator between its label and its description.  
@@ -114,7 +109,7 @@ BOOL m_bDrawSeparator;
 ```  
   
 ### Remarks  
- Set this member to `TRUE` to display separator between tooltip label and description, or `FALSE` to display tooltips with no separator.  
+ Set this member to TRUE to display separator between tooltip label and description, or FALSE to display tooltips with no separator.  
   
 ##  <a name="m_broundedcorners"></a>  CMFCToolTipInfo::m_bRoundedCorners  
  Specifies whether all tooltips have rounded corners.  
@@ -124,7 +119,7 @@ BOOL m_bRoundedCorners;
 ```  
   
 ### Remarks  
- Set this member to `TRUE` to display rounded corners on tooltips, or `FALSE` to display rectangular corners on tooltips.  
+ Set this member to TRUE to display rounded corners on tooltips, or FALSE to display rectangular corners on tooltips.  
   
 ##  <a name="m_clrborder"></a>  CMFCToolTipInfo::m_clrBorder  
  Specifies the color of the borders on all tooltips.  
@@ -187,17 +182,17 @@ BOOL m_bVislManagerTheme;
 ```  
   
 ### Remarks  
- If `m_bVislManagerTheme` is `TRUE`, every tooltip requests a new [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) from the visual manager of the application before they appear on the screen, and uses the values in that object to determine their appearance. The other members of your [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) are ignored.  
+ If `m_bVislManagerTheme` is TRUE, every tooltip requests a new [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) from the visual manager of the application before they appear on the screen, and uses the values in that object to determine their appearance. The other members of your [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) are ignored.  
   
 ##  <a name="operator_eq"></a>  CMFCToolTipInfo::operator=  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
   
 ### Return Value  
   

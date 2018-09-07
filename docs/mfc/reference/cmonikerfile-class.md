@@ -2,23 +2,18 @@
 title: "CMonikerFile Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMonikerFile", "AFXOLE/CMonikerFile", "AFXOLE/CMonikerFile::CMonikerFile", "AFXOLE/CMonikerFile::Close", "AFXOLE/CMonikerFile::Detach", "AFXOLE/CMonikerFile::GetMoniker", "AFXOLE/CMonikerFile::Open", "AFXOLE/CMonikerFile::CreateBindContext"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMonikerFile [MFC], CMonikerFile", "CMonikerFile [MFC], Close", "CMonikerFile [MFC], Detach", "CMonikerFile [MFC], GetMoniker", "CMonikerFile [MFC], Open", "CMonikerFile [MFC], CreateBindContext"]
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMonikerFile Class
-Represents a stream of data ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)) named by an [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705).  
+Represents a stream of data ( [IStream](/windows/desktop/api/objidl/nn-objidl-istream)) named by an [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker).  
   
 ## Syntax  
   
@@ -56,7 +51,7 @@ class CMonikerFile : public COleStreamFile
   
  `CMonikerFile` cannot be used to bind to anything other than a stream. If you want to bind to storage or an object, you must use the `IMoniker` interface directly.  
   
- For more information on streams and monikers, see [COleStreamFile](../../mfc/reference/colestreamfile-class.md) in the *MFC Reference* and [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) and [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) in the Windows SDK.  
+ For more information on streams and monikers, see [COleStreamFile](../../mfc/reference/colestreamfile-class.md) in the *MFC Reference* and [IStream](/windows/desktop/api/objidl/nn-objidl-istream) and [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) in the Windows SDK.  
   
 ## Inheritance Hierarchy  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -95,11 +90,11 @@ IBindCtx* CreateBindContext(CFileException* pError);
 ```  
   
 ### Parameters  
- `pError`  
+ *pError*  
  A pointer to a file exception. In the event of an error, it will be set to the cause.  
   
 ### Return Value  
- A pointer to the bind context [IBindCtx](http://msdn.microsoft.com/library/windows/desktop/ms693755) to bind with if successful; otherwise **NULL**. If the instance was opened with an `IBindHost` interface, the bind context is retrieved from the `IBindHost`. If there is no `IBindHost` interface or the interface fails to return a bind context, a bind context is created. For a description of the [IBindHost](http://msdn.microsoft.com/library/ie/ms775076) interface, see the Windows SDK.  
+ A pointer to the bind context [IBindCtx](/windows/desktop/api/objidl/nn-objidl-ibindctx) to bind with if successful; otherwise NULL. If the instance was opened with an `IBindHost` interface, the bind context is retrieved from the `IBindHost`. If there is no `IBindHost` interface or the interface fails to return a bind context, a bind context is created. For a description of the [IBindHost](https://msdn.microsoft.com/library/ie/ms775076) interface, see the Windows SDK.  
   
 ### Remarks  
  A bind context is an object that stores information about a particular moniker binding operation. You can override this function to provide a custom bind context.  
@@ -112,7 +107,7 @@ BOOL Detach(CFileException* pError = NULL);
 ```  
   
 ### Parameters  
- `pError`  
+ *pError*  
  A pointer to a file exception. In the event of an error, it will be set to the cause.  
   
 ### Return Value  
@@ -126,10 +121,10 @@ IMoniker* GetMoniker() const;
 ```  
   
 ### Return Value  
- A pointer to the current moniker interface ( [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705)).  
+ A pointer to the current moniker interface ( [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker)).  
   
 ### Remarks  
- Since `CMonikerFile` is not an interface, the pointer returned does not increment the reference count (through [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379)), and the moniker is released when the `CMonikerFile` object is released. If you want to hold onto the moniker or release it yourself, you must `AddRef` it.  
+ Since `CMonikerFile` is not an interface, the pointer returned does not increment the reference count (through [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref)), and the moniker is released when the `CMonikerFile` object is released. If you want to hold onto the moniker or release it yourself, you must `AddRef` it.  
   
 ##  <a name="open"></a>  CMonikerFile::Open  
  Call this member function to open a file or moniker object.  
@@ -146,22 +141,22 @@ virtual BOOL Open(
 ```  
   
 ### Parameters  
- `lpszURL`  
+ *lpszURL*  
  A URL or filename of the file to be opened.  
   
- `pError`  
+ *pError*  
  A pointer to a file exception. In the event of an error, it will be set to the cause.  
   
- `pMoniker`  
+ *pMoniker*  
  A pointer to the moniker interface `IMoniker` to be used to obtain a stream.  
   
 ### Return Value  
  Nonzero if successful; otherwise 0.  
   
 ### Remarks  
- The `lpszURL` parameter cannot be used on a Macintosh. Only the `pMoniker` form of **Open** can be used on a Macintosh.  
+ The *lpszURL* parameter cannot be used on a Macintosh. Only the *pMoniker* form of `Open` can be used on a Macintosh.  
   
- You can use a URL or a filename for the `lpszURL` parameter. For example:  
+ You can use a URL or a filename for the *lpszURL* parameter. For example:  
   
  [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/cmonikerfile-class_1.cpp)]  
   

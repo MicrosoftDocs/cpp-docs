@@ -2,19 +2,14 @@
 title: "CShellManager Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CShellManager", "AFXSHELLMANAGER/CShellManager", "AFXSHELLMANAGER/CShellManager::CShellManager", "AFXSHELLMANAGER/CShellManager::BrowseForFolder", "AFXSHELLMANAGER/CShellManager::ConcatenateItem", "AFXSHELLMANAGER/CShellManager::CopyItem", "AFXSHELLMANAGER/CShellManager::CreateItem", "AFXSHELLMANAGER/CShellManager::FreeItem", "AFXSHELLMANAGER/CShellManager::GetItemCount", "AFXSHELLMANAGER/CShellManager::GetItemSize", "AFXSHELLMANAGER/CShellManager::GetNextItem", "AFXSHELLMANAGER/CShellManager::GetParentItem", "AFXSHELLMANAGER/CShellManager::ItemFromPath"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CShellManager [MFC], CShellManager", "CShellManager [MFC], BrowseForFolder", "CShellManager [MFC], ConcatenateItem", "CShellManager [MFC], CopyItem", "CShellManager [MFC], CreateItem", "CShellManager [MFC], FreeItem", "CShellManager [MFC], GetItemCount", "CShellManager [MFC], GetItemSize", "CShellManager [MFC], GetNextItem", "CShellManager [MFC], GetParentItem", "CShellManager [MFC], ItemFromPath"]
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CShellManager Class
@@ -76,29 +71,29 @@ BOOL BrowseForFolder(
 ```  
   
 ### Parameters  
- [out] `strOutFolder`  
+ [out] *strOutFolder*  
  The string used by the method to store the path of the selected folder.  
   
- [in] `pWndParent`  
+ [in] *pWndParent*  
  A pointer to the parent window.  
   
- [in] `lplszInitialFolder`  
+ [in] *lplszInitialFolder*  
  A string that contains the folder that is selected by default when the dialog box is displayed.  
   
- [in] `lpszTitle`  
+ [in] *lpszTitle*  
  The title for the dialog box.  
   
- [in] `ulFlags`  
- Flags specifying options for the dialog box. See [BROWSEINFO](http://msdn.microsoft.com/library/windows/desktop/bb773205) for the detailed description.  
+ [in] *ulFlags*  
+ Flags specifying options for the dialog box. See [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) for the detailed description.  
   
- [out] `piFolderImage`  
+ [out] *piFolderImage*  
  A pointer to the integer value where the method writes the image index of the selected folder.  
   
 ### Return Value  
  Nonzero if the user selects a folder from the dialog box; otherwise 0.  
   
 ### Remarks  
- When you call this method, the application creates and shows a dialog box that enables the user to select a folder. The method will write the path of the folder into the `strOutFolder` parameter.  
+ When you call this method, the application creates and shows a dialog box that enables the user to select a folder. The method will write the path of the folder into the *strOutFolder* parameter.  
   
 ### Example  
  The following example demonstrates how to retrieve a reference to a `CShellManager` object by using the `CWinAppEx::GetShellManager` method and how to use the `BrowseForFolder` method. This code snippet is part of the [Explorer sample](../../visual-cpp-samples.md).  
@@ -115,17 +110,17 @@ LPITEMIDLIST ConcatenateItem(
 ```  
   
 ### Parameters  
- [in] `pidl1`  
+ [in] *pidl1*  
  The first item.  
   
- [in] `pidl2`  
+ [in] *pidl2*  
  The second item.  
   
 ### Return Value  
- A pointer to the new item list if the function succeeds, otherwise `NULL`.  
+ A pointer to the new item list if the function succeeds, otherwise NULL.  
   
 ### Remarks  
- This method creates a new [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) large enough to contain both `pidl1` and `pidl2`. It then copies `pidl1` and `pidl2` to the new list.  
+ This method creates a new [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) large enough to contain both *pidl1* and *pidl2*. It then copies *pidl1* and *pidl2* to the new list.  
   
 ##  <a name="copyitem"></a>  CShellManager::CopyItem  
  Copies an item list.  
@@ -135,11 +130,11 @@ LPITEMIDLIST CopyItem(LPCITEMIDLIST pidlSource);
 ```  
   
 ### Parameters  
- [in] `pidlSource`  
+ [in] *pidlSource*  
  The original item list.  
   
 ### Return Value  
- A pointer to the newly created item list if successful; otherwise `NULL`.  
+ A pointer to the newly created item list if successful; otherwise NULL.  
   
 ### Remarks  
  The newly created item list has the same size as the source item list.  
@@ -152,11 +147,11 @@ LPITEMIDLIST CreateItem(UINT cbSize);
 ```  
   
 ### Parameters  
- [in] `cbSize`  
+ [in] *cbSize*  
  The size of the item list.  
   
 ### Return Value  
- A pointer to the created item list if successful; otherwise `NULL`.  
+ A pointer to the created item list if successful; otherwise NULL.  
   
 ##  <a name="cshellmanager"></a>  CShellManager::CShellManager  
  Constructs a `CShellManager` object.  
@@ -176,7 +171,7 @@ void FreeItem(LPITEMIDLIST pidl);
 ```  
   
 ### Parameters  
- [in] `pidl`  
+ [in] *pidl*  
  An item list to delete.  
   
 ##  <a name="getitemcount"></a>  CShellManager::GetItemCount  
@@ -187,7 +182,7 @@ UINT GetItemCount(LPCITEMIDLIST pidl);
 ```  
   
 ### Parameters  
- [in] `pidl`  
+ [in] *pidl*  
  A pointer to an item list.  
   
 ### Return Value  
@@ -201,7 +196,7 @@ UINT GetItemSize(LPCITEMIDLIST pidl);
 ```  
   
 ### Parameters  
- [in] `pidl`  
+ [in] *pidl*  
  A pointer to an item list.  
   
 ### Return Value  
@@ -215,14 +210,14 @@ LPITEMIDLIST GetNextItem(LPCITEMIDLIST pidl);
 ```  
   
 ### Parameters  
- [in] `pidl`  
+ [in] *pidl*  
  The list of items to iterate.  
   
 ### Return Value  
  A pointer to the next item in the list.  
   
 ### Remarks  
- If there are no more items in the list, this method returns `NULL`.  
+ If there are no more items in the list, this method returns NULL.  
   
 ##  <a name="getparentitem"></a>  CShellManager::GetParentItem  
  Retrieves the parent of a pointer to an item identifier list (PIDL).  
@@ -234,10 +229,10 @@ int GetParentItem(
 ```  
   
 ### Parameters  
- [in] `lpidl`  
+ [in] *lpidl*  
  A PIDL whose parent will be retrieved.  
   
- [out] `lpidlParent`  
+ [out] *lpidlParent*  
  A reference to a PIDL where the method will store the result.  
   
 ### Return Value  
@@ -256,14 +251,14 @@ HRESULT ItemFromPath(
 ```  
   
 ### Parameters  
- [in] `lpszPath`  
+ [in] *lpszPath*  
  A string that specifies the path for the item.  
   
- [out] `pidl`  
+ [out] *pidl*  
  A reference to a PIDL. The method uses this PIDL to store the pointer to its return value.  
   
 ### Return Value  
- Returns `NOERROR` if successful; an OLE-defined error value.  
+ Returns NOERROR if successful; an OLE-defined error value.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

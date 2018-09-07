@@ -2,24 +2,19 @@
 title: "Comments (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["code comments, C++", "comments, documenting code", "comments, C++ code", "white space, C++ comments"]
 ms.assetid: 6fcb906c-c264-4083-84bc-373800b2e514
-caps.latest.revision: 6
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Comments (C++)
 A comment is text that the compiler ignores but that is useful for programmers. Comments are normally used to annotate code for future reference. The compiler treats them as white space. You can use comments in testing to make certain lines of code inactive; however, `#if`/`#endif` preprocessor directives work better for this because you can surround code that contains comments but you cannot nest comments.  
   
- A C++ comment is written in one of the following ways:  
+A C++ comment is written in one of the following ways:  
   
 -   The `/*` (slash, asterisk) characters, followed by any sequence of characters (including new lines), followed by the `*/` characters. This syntax is the same as ANSI C.  
   
@@ -27,5 +22,5 @@ A comment is text that the compiler ignores but that is useful for programmers. 
   
  The comment characters (`/*`, `*/`, and `//`) have no special meaning within a character constant, string literal, or comment. Comments using the first syntax, therefore, cannot be nested.  
   
-## See Also  
+## See also  
  [Lexical Conventions](../cpp/lexical-conventions.md)

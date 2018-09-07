@@ -2,19 +2,14 @@
 title: "_rotr8, _rotr16 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["_rotr16", "_rotr8"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["_rotr8 intrinsic", "_rotr16 intrinsic"]
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # _rotr8, _rotr16
@@ -49,8 +44,8 @@ unsigned short _rotr16( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`_rotr8`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_rotr16`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_rotr8`|x86, ARM, x64|  
+|`_rotr16`|x86, ARM, x64|  
   
  **Header file** \<intrin.h>  
   

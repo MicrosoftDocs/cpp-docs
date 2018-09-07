@@ -2,18 +2,13 @@
 title: "How to: Use a Message Block Filter | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["message-block filters, using [Concurrency Runtime]", "using message-block filters [Concurrency Runtime]"]
 ms.assetid: db6b99fb-288d-4477-96dc-b9751772ebb2
-caps.latest.revision: 20
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How to: Use a Message Block Filter

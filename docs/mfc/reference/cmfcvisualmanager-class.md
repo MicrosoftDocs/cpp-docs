@@ -2,25 +2,20 @@
 title: "CMFCVisualManager Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCVisualManager", "AFXVISUALMANAGER/CMFCVisualManager", "AFXVISUALMANAGER/CMFCVisualManager::AdjustFrames", "AFXVISUALMANAGER/CMFCVisualManager::AdjustToolbars", "AFXVISUALMANAGER/CMFCVisualManager::AlwaysHighlight3DTabs", "AFXVISUALMANAGER/CMFCVisualManager::DestroyInstance", "AFXVISUALMANAGER/CMFCVisualManager::DoDrawHeaderSortArrow", "AFXVISUALMANAGER/CMFCVisualManager::DrawComboDropButtonWinXP", "AFXVISUALMANAGER/CMFCVisualManager::DrawPushButtonWinXP", "AFXVISUALMANAGER/CMFCVisualManager::DrawTextOnGlass", "AFXVISUALMANAGER/CMFCVisualManager::GetAutoHideButtonTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetButtonExtraBorder", "AFXVISUALMANAGER/CMFCVisualManager::GetCaptionBarTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetDockingTabsBordersSize", "AFXVISUALMANAGER/CMFCVisualManager::GetHighlightedMenuItemTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetInstance", "AFXVISUALMANAGER/CMFCVisualManager::GetMDITabsBordersSize", "AFXVISUALMANAGER/CMFCVisualManager::GetMenuItemTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetMenuShadowDepth", "AFXVISUALMANAGER/CMFCVisualManager::GetNcBtnSize", "AFXVISUALMANAGER/CMFCVisualManager::GetPopupMenuBorderSize", "AFXVISUALMANAGER/CMFCVisualManager::GetPropertyGridGroupColor", "AFXVISUALMANAGER/CMFCVisualManager::GetPropertyGridGroupTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetRibbonHyperlinkTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetRibbonPopupBorderSize", "AFXVISUALMANAGER/CMFCVisualManager::GetRibbonQuickAccessToolBarTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetRibbonSliderColors", "AFXVISUALMANAGER/CMFCVisualManager::GetShowAllMenuItemsHeight", "AFXVISUALMANAGER/CMFCVisualManager::GetSmartDockingBaseGuideColors", "AFXVISUALMANAGER/CMFCVisualManager::GetSmartDockingHighlightToneColor", "AFXVISUALMANAGER/CMFCVisualManager::GetSmartDockingTheme", "AFXVISUALMANAGER/CMFCVisualManager::GetStatusBarPaneTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetTabFrameColors", "AFXVISUALMANAGER/CMFCVisualManager::GetTabTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetToolbarButtonTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetToolbarDisabledTextColor", "AFXVISUALMANAGER/CMFCVisualManager::GetToolbarHighlightColor", "AFXVISUALMANAGER/CMFCVisualManager::GetToolTipInfo", "AFXVISUALMANAGER/CMFCVisualManager::HasOverlappedAutoHideButtons", "AFXVISUALMANAGER/CMFCVisualManager::IsDockingTabHasBorder", "AFXVISUALMANAGER/CMFCVisualManager::IsEmbossDisabledImage", "AFXVISUALMANAGER/CMFCVisualManager::IsFadeInactiveImage", "AFXVISUALMANAGER/CMFCVisualManager::IsMenuFlatLook", "AFXVISUALMANAGER/CMFCVisualManager::IsOfficeXPStyleMenus", "AFXVISUALMANAGER/CMFCVisualManager::IsOwnerDrawCaption", "AFXVISUALMANAGER/CMFCVisualManager::IsShadowHighlightedImage", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawAutoHideButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawBarGripper", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawBrowseButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawButtonSeparator", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCaptionBarBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCaptionBarButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCaptionBarInfoArea", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCaptionButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCheckBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawCheckBoxEx", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawComboBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawComboDropButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawControlBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawDefaultRibbonImage", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawEditBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawExpandingBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawFloatingToolbarBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawHeaderCtrlBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawHeaderCtrlSortArrow", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuArrowOnCustomizeList", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuCheck", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuItemButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuLabel", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuResizeBar", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuScrollButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuShadow", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMenuSystemButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawMiniFrameBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawOutlookBarSplitter", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawOutlookPageButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPaneBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPaneCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPaneDivider", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPopupWindowBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPopupWindowButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawPopupWindowCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonApplicationButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonButtonsGroup", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCaptionButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCategory", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCategoryCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCategoryScroll", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCategoryTab", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonCheckBoxOnList", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonColorPaletteBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonDefaultPaneButtonContext", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonDefaultPaneButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonDefaultPaneButtonIndicator", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonGalleryBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonGalleryButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonKeyTip", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonLabel", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonMainPanelButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonMainPanelFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonMenuCheckFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonPanel", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonPanelCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonProgressBar", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonQuickAccessToolBarSeparator", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonRecentFilesFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonSliderChannel", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonSliderThumb", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonSliderZoomButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonStatusBarPane", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawRibbonTabsFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawScrollButtons", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawSeparator", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawShowAllMenuItems", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawSpinButtons", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawSplitterBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawSplitterBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawStatusBarPaneBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawStatusBarProgress", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawStatusBarSizeBox", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTab", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTabCloseButton", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTabContent", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTabsButtonBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTask", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTasksGroupAreaBorder", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTasksGroupCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTasksGroupIcon", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawTearOffCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnDrawToolBoxFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnEraseMDIClientArea", "AFXVISUALMANAGER/CMFCVisualManager::OnErasePopupWindowButton", "AFXVISUALMANAGER/CMFCVisualManager::OnEraseTabsArea", "AFXVISUALMANAGER/CMFCVisualManager::OnEraseTabsButton", "AFXVISUALMANAGER/CMFCVisualManager::OnEraseTabsFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnFillAutoHideButtonBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillBarBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillButtonInterior", "AFXVISUALMANAGER/CMFCVisualManager::OnFillCaptionBarButton", "AFXVISUALMANAGER/CMFCVisualManager::OnFillCommandsListBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillHeaderCtrlBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillMiniFrameCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnFillOutlookBarCaption", "AFXVISUALMANAGER/CMFCVisualManager::OnFillOutlookPageButton", "AFXVISUALMANAGER/CMFCVisualManager::OnFillPopupWindowBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonButton", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonEdit", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonMainPanelButton", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonMenuFrame", "AFXVISUALMANAGER/CMFCVisualManager::OnFillRibbonQuickAccessToolBarPopup", "AFXVISUALMANAGER/CMFCVisualManager::OnFillSplitterBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnFillTab", "AFXVISUALMANAGER/CMFCVisualManager::OnFillTasksGroupInterior", "AFXVISUALMANAGER/CMFCVisualManager::OnFillTasksPaneBackground", "AFXVISUALMANAGER/CMFCVisualManager::OnHighlightMenuItem", "AFXVISUALMANAGER/CMFCVisualManager::OnHighlightRarelyUsedMenuItems", "AFXVISUALMANAGER/CMFCVisualManager::OnNcPaint", "AFXVISUALMANAGER/CMFCVisualManager::OnSetWindowRegion", "AFXVISUALMANAGER/CMFCVisualManager::OnUpdateSystemColors", "AFXVISUALMANAGER/CMFCVisualManager::RedrawAll", "AFXVISUALMANAGER/CMFCVisualManager::RibbonCategoryColorToRGB", "AFXVISUALMANAGER/CMFCVisualManager::SetDefaultManager", "AFXVISUALMANAGER/CMFCVisualManager::SetEmbossDisabledImage", "AFXVISUALMANAGER/CMFCVisualManager::SetFadeInactiveImage", "AFXVISUALMANAGER/CMFCVisualManager::SetMenuFlatLook", "AFXVISUALMANAGER/CMFCVisualManager::SetMenuShadowDepth", "AFXVISUALMANAGER/CMFCVisualManager::SetShadowHighlightedImage"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCVisualManager [MFC], AdjustFrames", "CMFCVisualManager [MFC], AdjustToolbars", "CMFCVisualManager [MFC], AlwaysHighlight3DTabs", "CMFCVisualManager [MFC], DestroyInstance", "CMFCVisualManager [MFC], DoDrawHeaderSortArrow", "CMFCVisualManager [MFC], DrawComboDropButtonWinXP", "CMFCVisualManager [MFC], DrawPushButtonWinXP", "CMFCVisualManager [MFC], DrawTextOnGlass", "CMFCVisualManager [MFC], GetAutoHideButtonTextColor", "CMFCVisualManager [MFC], GetButtonExtraBorder", "CMFCVisualManager [MFC], GetCaptionBarTextColor", "CMFCVisualManager [MFC], GetDockingTabsBordersSize", "CMFCVisualManager [MFC], GetHighlightedMenuItemTextColor", "CMFCVisualManager [MFC], GetInstance", "CMFCVisualManager [MFC], GetMDITabsBordersSize", "CMFCVisualManager [MFC], GetMenuItemTextColor", "CMFCVisualManager [MFC], GetMenuShadowDepth", "CMFCVisualManager [MFC], GetNcBtnSize", "CMFCVisualManager [MFC], GetPopupMenuBorderSize", "CMFCVisualManager [MFC], GetPropertyGridGroupColor", "CMFCVisualManager [MFC], GetPropertyGridGroupTextColor", "CMFCVisualManager [MFC], GetRibbonHyperlinkTextColor", "CMFCVisualManager [MFC], GetRibbonPopupBorderSize", "CMFCVisualManager [MFC], GetRibbonQuickAccessToolBarTextColor", "CMFCVisualManager [MFC], GetRibbonSliderColors", "CMFCVisualManager [MFC], GetShowAllMenuItemsHeight", "CMFCVisualManager [MFC], GetSmartDockingBaseGuideColors", "CMFCVisualManager [MFC], GetSmartDockingHighlightToneColor", "CMFCVisualManager [MFC], GetSmartDockingTheme", "CMFCVisualManager [MFC], GetStatusBarPaneTextColor", "CMFCVisualManager [MFC], GetTabFrameColors", "CMFCVisualManager [MFC], GetTabTextColor", "CMFCVisualManager [MFC], GetToolbarButtonTextColor", "CMFCVisualManager [MFC], GetToolbarDisabledTextColor", "CMFCVisualManager [MFC], GetToolbarHighlightColor", "CMFCVisualManager [MFC], GetToolTipInfo", "CMFCVisualManager [MFC], HasOverlappedAutoHideButtons", "CMFCVisualManager [MFC], IsDockingTabHasBorder", "CMFCVisualManager [MFC], IsEmbossDisabledImage", "CMFCVisualManager [MFC], IsFadeInactiveImage", "CMFCVisualManager [MFC], IsMenuFlatLook", "CMFCVisualManager [MFC], IsOfficeXPStyleMenus", "CMFCVisualManager [MFC], IsOwnerDrawCaption", "CMFCVisualManager [MFC], IsShadowHighlightedImage", "CMFCVisualManager [MFC], OnDrawAutoHideButtonBorder", "CMFCVisualManager [MFC], OnDrawBarGripper", "CMFCVisualManager [MFC], OnDrawBrowseButton", "CMFCVisualManager [MFC], OnDrawButtonBorder", "CMFCVisualManager [MFC], OnDrawButtonSeparator", "CMFCVisualManager [MFC], OnDrawCaptionBarBorder", "CMFCVisualManager [MFC], OnDrawCaptionBarButtonBorder", "CMFCVisualManager [MFC], OnDrawCaptionBarInfoArea", "CMFCVisualManager [MFC], OnDrawCaptionButton", "CMFCVisualManager [MFC], OnDrawCheckBox", "CMFCVisualManager [MFC], OnDrawCheckBoxEx", "CMFCVisualManager [MFC], OnDrawComboBorder", "CMFCVisualManager [MFC], OnDrawComboDropButton", "CMFCVisualManager [MFC], OnDrawControlBorder", "CMFCVisualManager [MFC], OnDrawDefaultRibbonImage", "CMFCVisualManager [MFC], OnDrawEditBorder", "CMFCVisualManager [MFC], OnDrawExpandingBox", "CMFCVisualManager [MFC], OnDrawFloatingToolbarBorder", "CMFCVisualManager [MFC], OnDrawHeaderCtrlBorder", "CMFCVisualManager [MFC], OnDrawHeaderCtrlSortArrow", "CMFCVisualManager [MFC], OnDrawMenuArrowOnCustomizeList", "CMFCVisualManager [MFC], OnDrawMenuBorder", "CMFCVisualManager [MFC], OnDrawMenuCheck", "CMFCVisualManager [MFC], OnDrawMenuItemButton", "CMFCVisualManager [MFC], OnDrawMenuLabel", "CMFCVisualManager [MFC], OnDrawMenuResizeBar", "CMFCVisualManager [MFC], OnDrawMenuScrollButton", "CMFCVisualManager [MFC], OnDrawMenuShadow", "CMFCVisualManager [MFC], OnDrawMenuSystemButton", "CMFCVisualManager [MFC], OnDrawMiniFrameBorder", "CMFCVisualManager [MFC], OnDrawOutlookBarSplitter", "CMFCVisualManager [MFC], OnDrawOutlookPageButtonBorder", "CMFCVisualManager [MFC], OnDrawPaneBorder", "CMFCVisualManager [MFC], OnDrawPaneCaption", "CMFCVisualManager [MFC], OnDrawPaneDivider", "CMFCVisualManager [MFC], OnDrawPopupWindowBorder", "CMFCVisualManager [MFC], OnDrawPopupWindowButtonBorder", "CMFCVisualManager [MFC], OnDrawPopupWindowCaption", "CMFCVisualManager [MFC], OnDrawRibbonApplicationButton", "CMFCVisualManager [MFC], OnDrawRibbonButtonBorder", "CMFCVisualManager [MFC], OnDrawRibbonButtonsGroup", "CMFCVisualManager [MFC], OnDrawRibbonCaption", "CMFCVisualManager [MFC], OnDrawRibbonCaptionButton", "CMFCVisualManager [MFC], OnDrawRibbonCategory", "CMFCVisualManager [MFC], OnDrawRibbonCategoryCaption", "CMFCVisualManager [MFC], OnDrawRibbonCategoryScroll", "CMFCVisualManager [MFC], OnDrawRibbonCategoryTab", "CMFCVisualManager [MFC], OnDrawRibbonCheckBoxOnList", "CMFCVisualManager [MFC], OnDrawRibbonColorPaletteBox", "CMFCVisualManager [MFC], OnDrawRibbonDefaultPaneButtonContext", "CMFCVisualManager [MFC], OnDrawRibbonDefaultPaneButton", "CMFCVisualManager [MFC], OnDrawRibbonDefaultPaneButtonIndicator", "CMFCVisualManager [MFC], OnDrawRibbonGalleryBorder", "CMFCVisualManager [MFC], OnDrawRibbonGalleryButton", "CMFCVisualManager [MFC], OnDrawRibbonKeyTip", "CMFCVisualManager [MFC], OnDrawRibbonLabel", "CMFCVisualManager [MFC], OnDrawRibbonMainPanelButtonBorder", "CMFCVisualManager [MFC], OnDrawRibbonMainPanelFrame", "CMFCVisualManager [MFC], OnDrawRibbonMenuCheckFrame", "CMFCVisualManager [MFC], OnDrawRibbonPanel", "CMFCVisualManager [MFC], OnDrawRibbonPanelCaption", "CMFCVisualManager [MFC], OnDrawRibbonProgressBar", "CMFCVisualManager [MFC], OnDrawRibbonQuickAccessToolBarSeparator", "CMFCVisualManager [MFC], OnDrawRibbonRecentFilesFrame", "CMFCVisualManager [MFC], OnDrawRibbonSliderChannel", "CMFCVisualManager [MFC], OnDrawRibbonSliderThumb", "CMFCVisualManager [MFC], OnDrawRibbonSliderZoomButton", "CMFCVisualManager [MFC], OnDrawRibbonStatusBarPane", "CMFCVisualManager [MFC], OnDrawRibbonTabsFrame", "CMFCVisualManager [MFC], OnDrawScrollButtons", "CMFCVisualManager [MFC], OnDrawSeparator", "CMFCVisualManager [MFC], OnDrawShowAllMenuItems", "CMFCVisualManager [MFC], OnDrawSpinButtons", "CMFCVisualManager [MFC], OnDrawSplitterBorder", "CMFCVisualManager [MFC], OnDrawSplitterBox", "CMFCVisualManager [MFC], OnDrawStatusBarPaneBorder", "CMFCVisualManager [MFC], OnDrawStatusBarProgress", "CMFCVisualManager [MFC], OnDrawStatusBarSizeBox", "CMFCVisualManager [MFC], OnDrawTab", "CMFCVisualManager [MFC], OnDrawTabCloseButton", "CMFCVisualManager [MFC], OnDrawTabContent", "CMFCVisualManager [MFC], OnDrawTabsButtonBorder", "CMFCVisualManager [MFC], OnDrawTask", "CMFCVisualManager [MFC], OnDrawTasksGroupAreaBorder", "CMFCVisualManager [MFC], OnDrawTasksGroupCaption", "CMFCVisualManager [MFC], OnDrawTasksGroupIcon", "CMFCVisualManager [MFC], OnDrawTearOffCaption", "CMFCVisualManager [MFC], OnDrawToolBoxFrame", "CMFCVisualManager [MFC], OnEraseMDIClientArea", "CMFCVisualManager [MFC], OnErasePopupWindowButton", "CMFCVisualManager [MFC], OnEraseTabsArea", "CMFCVisualManager [MFC], OnEraseTabsButton", "CMFCVisualManager [MFC], OnEraseTabsFrame", "CMFCVisualManager [MFC], OnFillAutoHideButtonBackground", "CMFCVisualManager [MFC], OnFillBarBackground", "CMFCVisualManager [MFC], OnFillButtonInterior", "CMFCVisualManager [MFC], OnFillCaptionBarButton", "CMFCVisualManager [MFC], OnFillCommandsListBackground", "CMFCVisualManager [MFC], OnFillHeaderCtrlBackground", "CMFCVisualManager [MFC], OnFillMiniFrameCaption", "CMFCVisualManager [MFC], OnFillOutlookBarCaption", "CMFCVisualManager [MFC], OnFillOutlookPageButton", "CMFCVisualManager [MFC], OnFillPopupWindowBackground", "CMFCVisualManager [MFC], OnFillRibbonButton", "CMFCVisualManager [MFC], OnFillRibbonEdit", "CMFCVisualManager [MFC], OnFillRibbonMainPanelButton", "CMFCVisualManager [MFC], OnFillRibbonMenuFrame", "CMFCVisualManager [MFC], OnFillRibbonQuickAccessToolBarPopup", "CMFCVisualManager [MFC], OnFillSplitterBackground", "CMFCVisualManager [MFC], OnFillTab", "CMFCVisualManager [MFC], OnFillTasksGroupInterior", "CMFCVisualManager [MFC], OnFillTasksPaneBackground", "CMFCVisualManager [MFC], OnHighlightMenuItem", "CMFCVisualManager [MFC], OnHighlightRarelyUsedMenuItems", "CMFCVisualManager [MFC], OnNcPaint", "CMFCVisualManager [MFC], OnSetWindowRegion", "CMFCVisualManager [MFC], OnUpdateSystemColors", "CMFCVisualManager [MFC], RedrawAll", "CMFCVisualManager [MFC], RibbonCategoryColorToRGB", "CMFCVisualManager [MFC], SetDefaultManager", "CMFCVisualManager [MFC], SetEmbossDisabledImage", "CMFCVisualManager [MFC], SetFadeInactiveImage", "CMFCVisualManager [MFC], SetMenuFlatLook", "CMFCVisualManager [MFC], SetMenuShadowDepth", "CMFCVisualManager [MFC], SetShadowHighlightedImage"]
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-caps.latest.revision: 58
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCVisualManager Class
 Provides support for changing the appearance of your application at a global level. The `CMFCVisualManager` class works together with a class that provides instructions to draw the GUI controls of your application using a consistent style. These other classes are referred to as visual managers and they inherit from `CMFCBaseVisualManager`.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
@@ -220,35 +215,31 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 ## Example  
  This sample demonstrates how to instantiate the standard and custom `CMFCVisualManager` objects.  
   
-```  
+```cpp
 void CMFCSkinsApp::SetSkin (int iIndex)  
 {   // destroy the current visual manager  
     if (CMFCVisualManager::GetInstance () != NULL)  
- {  
-    delete CMFCVisualManager::GetInstance ();
-
- }  
+    {  
+        delete CMFCVisualManager::GetInstance ();
+    }  
     switch (iIndex)  
- {  
+    {  
     case 0:  
-    CMFCVisualManager::GetInstance ();
-
-// create the standard visual manager  
-    break; 
+        CMFCVisualManager::GetInstance ();
+        // create the standard visual manager  
+        break; 
     case 1:  
-    new CMyVisualManager ();
-
-// create the first custom visual manager  
-    break; 
+        new CMyVisualManager ();
+        // create the first custom visual manager  
+        break; 
     case 2:  
-    new CMacStyle ();
-*// create the second custom visual manager  
-    break; 
- }  
- *// access the manager and set it properly  
+        new CMacStyle ();
+        // create the second custom visual manager  
+        break; 
+    }  
+    // access the manager and set it properly  
     CMFCVisualManager::GetInstance ()->SetLook2000 ();
-CMFCVisualManager::GetInstance ()->RedrawAll ();
-
+    CMFCVisualManager::GetInstance ()->RedrawAll ();
 }  
 ```  
   
@@ -296,7 +287,7 @@ virtual BOOL AlwaysHighlight3DTabs() const;
  `TRUE` if 3D tabs should be highlighted.  
   
 ### Remarks  
- Override this function in a derived visual manager and return `TRUE` if 3D tabs should always be highlighted. The default implementation of this method returns `FALSE`.  
+ Override this function in a derived visual manager and return TRUE if 3D tabs should always be highlighted. The default implementation of this method returns FALSE.  
   
 ##  <a name="cmfcvisualmanager"></a>  CMFCVisualManager::CMFCVisualManager  
 
@@ -306,7 +297,7 @@ CMFCVisualManager(BOOL bTemporary = FALSE);
 ```  
   
 ### Parameters  
- [in] `bTemporary`  
+ [in] *bTemporary*  
   
 ### Remarks  
   
@@ -318,7 +309,7 @@ static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
 ```  
   
 ### Parameters  
- [in] `bAutoDestroyOnly`  
+ [in] *bAutoDestroyOnly*  
   
 ### Remarks  
   
@@ -334,10 +325,10 @@ void DoDrawHeaderSortArrow(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bIsUp`  
- [in] `bDlgCtrl`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bIsUp*  
+ [in] *bDlgCtrl*  
   
 ### Remarks  
   
@@ -353,9 +344,9 @@ virtual BOOL DrawComboBorderWinXP(CDC*,
 ```  
   
 ### Parameters  
- [in] `CDC*`  
- [in] `CRect`  
- [in] `BOOL`  
+ [in] *CDC**  
+ [in] *CRect*  
+ [in] *BOOL*  
   
 ### Return Value  
   
@@ -373,9 +364,9 @@ virtual BOOL DrawComboDropButtonWinXP(CDC*,
 ```  
   
 ### Parameters  
- [in] `CDC*`  
- [in] `CRect`  
- [in] `BOOL`  
+ [in] *CDC**  
+ [in] *CRect*  
+ [in] *BOOL*  
   
 ### Return Value  
   
@@ -392,10 +383,10 @@ virtual BOOL DrawPushButtonWinXP(CDC*,
 ```  
   
 ### Parameters  
- [in] `CDC*`  
- [in] `CRect`  
- [in] `CMFCButton*`  
- [in] `UINT`  
+ [in] *CDC**  
+ [in] *CRect*  
+ [in] *CMFCButton**  
+ [in] *UINT*  
   
 ### Return Value  
   
@@ -415,12 +406,12 @@ virtual BOOL DrawTextOnGlass(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `strText`  
- [in] `rect`  
- [in] `dwFlags`  
- [in] `nGlowSize`  
- [in] `clrText`  
+ [in] *pDC*  
+ [in] *strText*  
+ [in] *rect*  
+ [in] *dwFlags*  
+ [in] *nGlowSize*  
+ [in] *clrText*  
   
 ### Return Value  
   
@@ -434,7 +425,7 @@ void EnableToolbarButtonFill(BOOL bEnable = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
+ [in] *bEnable*  
   
 ### Remarks  
   
@@ -446,11 +437,11 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to an auto-hide button.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that specifies the text color of `pButton`.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that specifies the text color of *pButton*.  
   
 ### Remarks  
  Override this method in a derived class to customize the text color of an auto-hide button in your application. To do this, return the color that you want your application to use as the text color.  
@@ -476,11 +467,11 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a caption bar.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the color of the text in `pBar`.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the color of the text in *pBar*.  
   
 ### Remarks  
  Override this method in your derived class to customize the text color for a caption bar. In your overridden method, return the desired color.  
@@ -530,7 +521,7 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
   
 ### Return Value  
   
@@ -584,9 +575,9 @@ virtual COLORREF GetMenuItemTextColor(
 ```  
   
 ### Parameters  
- [in] `pButton`  
- [in] `bHighlighted`  
- [in] `bDisabled`  
+ [in] *pButton*  
+ [in] *bHighlighted*  
+ [in] *bDisabled*  
   
 ### Return Value  
   
@@ -613,8 +604,8 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
 ```  
   
 ### Parameters  
- [in] `bSmall`  
- A Boolean parameter that indicates whether `GetNcBtnSize` should retrieve the size of a small or large system button. If `bSmall` is `TRUE`, `GetNcBtnSize` returns the size of a small system button. Otherwise, it returns the size of a large system button.  
+ [in] *bSmall*  
+ A Boolean parameter that indicates whether `GetNcBtnSize` should retrieve the size of a small or large system button. If *bSmall* is TRUE, `GetNcBtnSize` returns the size of a small system button. Otherwise, it returns the size of a large system button.  
   
 ### Return Value  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) parameter that indicate the size of the system buttons.  
@@ -654,11 +645,11 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### Parameters  
- [in] `pPropList`  
+ [in] *pPropList*  
  A pointer to the property list that the framework is drawing.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the background color of `pPropList`.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the background color of *pPropList*.  
   
 ### Remarks  
  Override this function to customize the background color of a property list in your application.  
@@ -671,11 +662,11 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
 ```  
   
 ### Parameters  
- [in] `pPropList`  
+ [in] *pPropList*  
  A pointer to the property list.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the text color of the property list.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the property list.  
   
 ### Remarks  
  Override this function to customize the text color of a property list in your application.  
@@ -688,7 +679,7 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
 ```  
   
 ### Parameters  
- [in] `pHyperLink`  
+ [in] *pHyperLink*  
   
 ### Return Value  
   
@@ -702,7 +693,7 @@ virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;
 ```  
   
 ### Parameters  
- [in] `CMFCRibbonPanelMenu*`  
+ [in] *CMFCRibbonPanelMenu**  
   
 ### Return Value  
   
@@ -738,7 +729,7 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 ```  
   
 ### Parameters  
- [in] `bDisabled`  
+ [in] *bDisabled*  
   
 ### Return Value  
   
@@ -758,12 +749,12 @@ virtual void GetRibbonSliderColors(
 ```  
   
 ### Parameters  
- [in] `pSlider`  
- [in] `bIsHighlighted`  
- [in] `bIsPressed`  
- [in] `bIsDisabled`  
- [in] `clrLine`  
- [in] `clrFill`  
+ [in] *pSlider*  
+ [in] *bIsHighlighted*  
+ [in] *bIsPressed*  
+ [in] *bIsDisabled*  
+ [in] *clrLine*  
+ [in] *clrFill*  
   
 ### Remarks  
   
@@ -775,7 +766,7 @@ virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
 ```  
   
 ### Parameters  
- [in] `pStatusBar`  
+ [in] *pStatusBar*  
   
 ### Return Value  
   
@@ -791,8 +782,8 @@ virtual int GetShowAllMenuItemsHeight(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `sizeDefault`  
+ [in] *pDC*  
+ [in] *sizeDefault*  
   
 ### Return Value  
   
@@ -808,8 +799,8 @@ virtual void GetSmartDockingBaseGuideColors(
 ```  
   
 ### Parameters  
- [in] `clrBaseGroupBackground`  
- [in] `clrBaseGroupBorder`  
+ [in] *clrBaseGroupBackground*  
+ [in] *clrBaseGroupBorder*  
   
 ### Remarks  
   
@@ -846,8 +837,8 @@ virtual COLORREF GetStatusBarPaneTextColor(
 ```  
   
 ### Parameters  
- [in] `pStatusBar`  
- [in] `pPane`  
+ [in] *pStatusBar*  
+ [in] *pPane*  
   
 ### Return Value  
   
@@ -870,31 +861,31 @@ virtual void GetTabFrameColors(
 ```  
   
 ### Parameters  
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to the tabbed window where the frame is drawing a tab.  
   
- [out] `clrDark`  
- A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter where this method stores the color for the dark border of a tab.  
+ [out] *clrDark*  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter where this method stores the color for the dark border of a tab.  
   
- [out] `clrBlack`  
- A reference to a `COLORREF` parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
+ [out] *clrBlack*  
+ A reference to a COLORREF parameter where this method stores the color for the border of the tab window. The default color for the border is black.  
   
- [out] `clrHighlight`  
- A reference to a `COLORREF` parameter where this method stores the color for the highlight state of the tab window.  
+ [out] *clrHighlight*  
+ A reference to a COLORREF parameter where this method stores the color for the highlight state of the tab window.  
   
- [out] `clrFace`  
- A reference to a `COLORREF` parameter where this method stores the color for face of the tab window.  
+ [out] *clrFace*  
+ A reference to a COLORREF parameter where this method stores the color for face of the tab window.  
   
- [out] `clrDarkShadow`  
- A reference to a `COLORREF` parameter where this method stores the color for the shadow of the tab window.  
+ [out] *clrDarkShadow*  
+ A reference to a COLORREF parameter where this method stores the color for the shadow of the tab window.  
   
- [out] `clrLight`  
- A reference to a `COLORREF` parameter where this method stores the color for the light edge of the tab window.  
+ [out] *clrLight*  
+ A reference to a COLORREF parameter where this method stores the color for the light edge of the tab window.  
   
- [out] `pbrFace`  
+ [out] *pbrFace*  
  A pointer to a reference for a brush. This method stores the brush that it uses to fill the face of the tab window in this parameter.  
   
- [out] `pbrBlack`  
+ [out] *pbrBlack*  
  A pointer to a reference for a brush. This method stores the brush it uses to fill the black edge of the tab window in this parameter.  
   
 ### Remarks  
@@ -908,7 +899,7 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl*);
 ```  
   
 ### Parameters  
- [in] `CMFCBaseTabCtrl*`  
+ [in] *CMFCBaseTabCtrl&#42;*  
   
 ### Return Value  
   
@@ -925,9 +916,9 @@ virtual COLORREF GetTabTextColor(
 ```  
   
 ### Parameters  
- [in] `CMFCBaseTabCtrl*`  
- [in] `int`  
- [in] `BOOL`  
+ [in] *CMFCBaseTabCtrl&#42;*  
+ [in] *int*  
+ [in] *BOOL*  
   
 ### Return Value  
   
@@ -1042,14 +1033,14 @@ virtual COLORREF GetToolbarButtonTextColor(
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the toolbar button.  
   
- [in] `state`  
+ [in] *state*  
  The state of the toolbar button.  
   
 ### Return Value  
- The text color of `pButton` when it has the state indicated by `state`.  
+ The text color of *pButton* when it has the state indicated by *state*.  
   
 ### Remarks  
  The text color of a [CMFCToolBarButton Class](../../mfc/reference/cmfctoolbarbutton-class.md) object depends on the state of the button. The possible states of a toolbar button are `ButtonsIsRegular`, `ButtonsIsPressed`, or `ButtonsIsHighlighted`.  
@@ -1112,8 +1103,8 @@ virtual BOOL GetToolTipInfo(
 ```  
   
 ### Parameters  
- [in] `params`  
- [in] `nType`  
+ [in] *params*  
+ [in] *nType*  
   
 ### Return Value  
   
@@ -1127,7 +1118,7 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
 ```  
   
 ### Return Value  
- `TRUE` if auto-hide buttons overlap; `FALSE` if they do not.  
+ TRUE if auto-hide buttons overlap; FALSE if they do not.  
   
 ##  <a name="isautodestroy"></a>  CMFCVisualManager::IsAutoDestroy  
 
@@ -1148,7 +1139,7 @@ virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton*) const;
 ```  
   
 ### Parameters  
- [in] `CMFCDesktopAlertWndButton*`  
+ [in] *CMFCDesktopAlertWndButton**  
   
 ### Return Value  
   
@@ -1162,7 +1153,7 @@ virtual BOOL IsDockingTabHasBorder();
 ```  
   
 ### Return Value  
- `TRUE` if the visual manager draws borders around panes that are docked and tabbed; `FALSE` otherwise.  
+ TRUE if the visual manager draws borders around panes that are docked and tabbed; FALSE otherwise.  
   
 ### Remarks  
  Docked panes become tabbed when multiple panes are docked to the same location.  
@@ -1261,7 +1252,7 @@ virtual BOOL IsOfficeXPStyleMenus() const;
  Nonzero if the visual manager displays Office XP-style menus; otherwise 0.  
   
 ### Remarks  
- The [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) calls this method when it has to draw the menu and shadow. By default, this method returns `FALSE`. If you want to use pop-up menus similar to the pop-up menus in Office XP, override this method in a custom visual manager and return `TRUE`.  
+ The [CMFCPopupMenu Class](../../mfc/reference/cmfcpopupmenu-class.md) calls this method when it has to draw the menu and shadow. By default, this method returns FALSE. If you want to use pop-up menus similar to the pop-up menus in Office XP, override this method in a custom visual manager and return TRUE.  
   
 ##  <a name="isoffsetpressedbutton"></a>  CMFCVisualManager::IsOffsetPressedButton  
 
@@ -1282,7 +1273,7 @@ virtual BOOL IsOwnerDrawCaption();
 ```  
   
 ### Return Value  
- `TRUE` if all the frame windows in the application have owner-draw captions; `FALSE` otherwise.  
+ TRUE if all the frame windows in the application have owner-draw captions; FALSE otherwise.  
   
 ##  <a name="isownerdrawmenucheck"></a>  CMFCVisualManager::IsOwnerDrawMenuCheck  
 
@@ -1324,7 +1315,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
 ```  
   
 ### Parameters  
- [in] `CMFCToolBar*`  
+ [in] *CMFCToolBar&#42;*  
   
 ### Return Value  
   
@@ -1351,8 +1342,8 @@ virtual void OnActivateApp(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
- [in] `bActive`  
+ [in] *pWnd*  
+ [in] *bActive*  
   
 ### Remarks  
   
@@ -1368,22 +1359,22 @@ virtual void OnDrawAutoHideButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectBounds`  
+ [in] *rectBounds*  
  The size and location of the auto-hide button.  
   
- [in] `rectBorderSize`  
+ [in] *rectBorderSize*  
  A [CRect](../../atl-mfc-shared/reference/crect-class.md) parameter that contains the sizes of the borders.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the auto-hide button. The framework is drawing the border for this button.  
   
 ### Remarks  
  Override this method in a derived class if you want to customize the appearance of the border of an auto-hide button. By default, this method fills a flat border with the default shadow color for your application.  
   
- The `rectBorderSize` parameter does not contain the coordinates of the border. It contains the size of the border in the `top`, `bottom`, `left`, and `right` data members. A value less than or equal to 0 indicates no border on that side of the auto-hide button.  
+ The *rectBorderSize* parameter does not contain the coordinates of the border. It contains the size of the border in the `top`, `bottom`, `left`, and `right` data members. A value less than or equal to 0 indicates no border on that side of the auto-hide button.  
   
 ##  <a name="ondrawbargripper"></a>  CMFCVisualManager::OnDrawBarGripper  
  Called by the framework when it draws the gripper for a control bar.  
@@ -1397,16 +1388,16 @@ virtual void OnDrawBarGripper(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for a control bar.  
   
- [in] `rectGripper`  
+ [in] *rectGripper*  
  The bounding rectangle for the control bar.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  A Boolean parameter that specifies whether the control bar is docked horizontally or vertically.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a control bar. The visual manager draws the gripper of this control bar.  
   
 ### Remarks  
@@ -1425,23 +1416,23 @@ virtual BOOL OnDrawBrowseButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundary for the browse button.  
   
- [in] `pEdit`  
+ [in] *pEdit*  
  A pointer to an edit control. The visual manager draws the browse button for this edit control.  
   
- [in] `state`  
+ [in] *state*  
  An enumerated value that specifies the state of the button.  
   
- [out] `clrText`  
- A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter. This is a reserved value and is currently unused.  
+ [out] *clrText*  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter. This is a reserved value and is currently unused.  
   
 ### Return Value  
- `TRUE` if successful; otherwise `FALSE`.  
+ TRUE if successful; otherwise FALSE.  
   
 ### Remarks  
  Override this function in a derived class if you want to customize the appearance of browse buttons in instances of the [CMFCEditBrowseCtrl Class](../../mfc/reference/cmfceditbrowsectrl-class.md). The possible values for the state of the button are `ButtonsIsRegular`, `ButtonsIsPressed`, and `ButtonsIsHighlighted`.  
@@ -1458,16 +1449,16 @@ virtual void OnDrawButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of a toolbar button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a toolbar button. The framework draws the border of this button.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the toolbar button.  
   
- [in] `state`  
+ [in] *state*  
  An enumerated data type that specifies the current state of the toolbar button.  
   
 ### Remarks  
@@ -1488,11 +1479,11 @@ virtual void OnDrawButtonSeparator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `state`  
- [in] `bHorz`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *state*  
+ [in] *bHorz*  
   
 ### Remarks  
   
@@ -1509,19 +1500,19 @@ virtual void OnDrawCaptionBarBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a `CMFCCaptionBar` object. The framework draws this caption bar.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the caption bar.  
   
- [in] `clrBarBorder`  
+ [in] *clrBarBorder*  
  The color of the border.  
   
- [in] `bFlatBorder`  
+ [in] *bFlatBorder*  
  A Boolean parameter that specifies whether the border has a flat, 2D appearance.  
   
 ### Remarks  
@@ -1543,14 +1534,14 @@ virtual void OnDrawCaptionBarButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
- [in] `bIsPressed`  
- [in] `bIsHighlighted`  
- [in] `bIsDisabled`  
- [in] `bHasDropDownArrow`  
- [in] `bIsSysButton`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
+ [in] *bIsPressed*  
+ [in] *bIsHighlighted*  
+ [in] *bIsDisabled*  
+ [in] *bHasDropDownArrow*  
+ [in] *bIsSysButton*  
   
 ### Remarks  
   
@@ -1565,9 +1556,9 @@ virtual void OnDrawCaptionBarInfoArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -1586,26 +1577,26 @@ virtual void OnDrawCaptionButton (
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a `CMFCCaptionButton` object. The framework draws this caption button.  
   
- [in] `bActive`  
+ [in] *bActive*  
  A Boolean parameter that specifies whether the button is active.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  A Boolean parameter that specifies whether the caption is horizontal.  
   
- [in] `bMaximized`  
+ [in] *bMaximized*  
  A Boolean parameter that specifies whether the parent pane is maximized.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  A Boolean parameter that specifies whether the caption button is disabled.  
   
- [in] `nImageID`  
- The image index for the icon to use for the button. If `nImageID` is -1, this method uses the image index recorded in `pButton`.  
+ [in] *nImageID*  
+ The image index for the icon to use for the button. If *nImageID* is -1, this method uses the image index recorded in *pButton*.  
   
 ### Remarks  
  The default implementation of this method displays a small button from the global instance of the `CMenuImages` class. The buttons are listed in the header file for `CMenuImages`. Some examples include `CMenuImages::IdClose`, `CMenuImages::IdArowLeft`, `CMenuImages::IdArowRight`, `CMenuImages::IdArowDown`, `CMenuImages::IdArowUp`, and `CMenuImages::IdPinHorz`.  
@@ -1625,11 +1616,11 @@ virtual void OnDrawCheckBox(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bHighlighted`  
- [in] `bChecked`  
- [in] `bEnabled`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bHighlighted*  
+ [in] *bChecked*  
+ [in] *bEnabled*  
   
 ### Remarks  
   
@@ -1647,12 +1638,12 @@ virtual void OnDrawCheckBoxEx(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `nState`  
- [in] `bHighlighted`  
- [in] `bPressed`  
- [in] `bEnabled`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *nState*  
+ [in] *bHighlighted*  
+ [in] *bPressed*  
+ [in] *bEnabled*  
   
 ### Remarks  
   
@@ -1670,22 +1661,22 @@ virtual void OnDrawComboBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of a combo box button.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the combo box button.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  A Boolean parameter that indicates whether the combo box button is unavailable.  
   
- [in] `bIsDropped`  
+ [in] *bIsDropped*  
  A Boolean parameter that indicates whether the combo box is dropped down.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the combo box button is highlighted.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a `CMFCToolBarComboBoxButton` object. The framework draws this combo box button.  
   
 ### Remarks  
@@ -1705,22 +1696,22 @@ virtual void OnDrawComboDropButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the drop button.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  A Boolean parameter that indicates whether the drop button is unavailable.  
   
- [in] `bIsDropped`  
+ [in] *bIsDropped*  
  A Boolean parameter that indicates whether the combo box is dropped down.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the drop button is highlighted.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a `CMFCToolBarComboBoxButton` object. The framework draws the drop button for this combo box button.  
   
 ### Remarks  
@@ -1734,7 +1725,7 @@ virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 ```  
   
 ### Parameters  
- [in] `pWndCtrl`  
+ [in] *pWndCtrl*  
   
 ### Remarks  
   
@@ -1751,19 +1742,19 @@ virtual void OnDrawDefaultRibbonImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  A rectangle that specifies the boundaries of the default image.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  A Boolean parameter that indicates whether the ribbon button is unavailable.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean parameter that indicates whether the ribbon button is pressed.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the ribbon button is highlighted.  
   
 ### Remarks  
@@ -1782,19 +1773,19 @@ virtual void OnDrawEditBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the `CMFCToolBarEditBoxButton` object.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  A Boolean parameter that indicates whether the button is unavailable.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the button is highlighted.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a `CMFCToolBarEditBoxButton` object. The framework draws the border of this edit box button.  
   
 ### Remarks  
@@ -1812,10 +1803,10 @@ virtual void OnDrawExpandingBox(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `bIsOpened`  
- [in] `colorBox`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *bIsOpened*  
+ [in] *colorBox*  
   
 ### Remarks  
   
@@ -1831,22 +1822,22 @@ virtual void OnDrawFloatingToolbarBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pToolBar`  
+ [in] *pToolBar*  
  A pointer to the floating toolbar.  
   
- [in] `rectBorder`  
+ [in] *rectBorder*  
  A rectangle that specifies the boundaries of the floating toolbar.  
   
- [in] `rectBorderSize`  
+ [in] *rectBorderSize*  
  A rectangle that specifies the border size of the toolbar.  
   
 ### Remarks  
  A floating toolbar is a toolbar that appears as a mini-frame window. Usually, this occurs when a user drags a toolbar so that it is no longer docked.  
   
- The size of the border is specified by the corresponding parameter in `rectBorderSize`. For example, the width of the top border of the toolbar is specified by `rectBorderSize.top`.  
+ The size of the border is specified by the corresponding parameter in *rectBorderSize*. For example, the width of the top border of the toolbar is specified by `rectBorderSize.top`.  
   
  Override this method in a derived visual manager to customize the appearance of the border of a floating toolbar.  
   
@@ -1863,19 +1854,19 @@ virtual void OnDrawHeaderCtrlBorder(
 ```  
   
 ### Parameters  
- [in] `pCtrl`  
+ [in] *pCtrl*  
  A pointer to a `CMFCHeaderCtrl` object. The framework draws the border of this header control.  
   
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the header control.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean parameter that indicates whether the header control is pressed.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the header control is highlighted.  
   
 ### Remarks  
@@ -1893,20 +1884,20 @@ virtual void OnDrawHeaderCtrlSortArrow(
 ```  
   
 ### Parameters  
- [in] `pCtrl`  
+ [in] *pCtrl*  
  A pointer to a header control. The visual manager draws the sort arrow of this [CMFCHeaderCtrl Class](../../mfc/reference/cmfcheaderctrl-class.md) object.  
   
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the sort arrow.  
   
- [in] `bIsUp`  
+ [in] *bIsUp*  
  A Boolean that specifies the direction of the sort arrow.  
   
 ### Remarks  
- If `bIsUp` is `TRUE`, the visual manager draws an up sort arrow. If it is `FALSE`, the visual manager draws a down sort arrow. Override `OnDrawHeaderCtrlSortArrow` in a derived class to customize the appearance of the sort button.  
+ If *bIsUp* is TRUE, the visual manager draws an up sort arrow. If it is FALSE, the visual manager draws a down sort arrow. Override `OnDrawHeaderCtrlSortArrow` in a derived class to customize the appearance of the sort button.  
   
 ##  <a name="ondrawmenuarrowoncustomizelist"></a>  CMFCVisualManager::OnDrawMenuArrowOnCustomizeList  
 
@@ -1919,9 +1910,9 @@ virtual void OnDrawMenuArrowOnCustomizeList(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectCommand`  
- [in] `bSelected`  
+ [in] *pDC*  
+ [in] *rectCommand*  
+ [in] *bSelected*  
   
 ### Remarks  
   
@@ -1936,13 +1927,13 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for a `CMFCPopupMenu` object.  
   
- [in] `pMenu`  
+ [in] *pMenu*  
  A pointer to a `CMFCPopupMenu` object. The framework draws a border around this popup menu.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the popup menu.  
   
 ### Remarks  
@@ -1961,11 +1952,11 @@ virtual void OnDrawMenuCheck(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `bHighlight`  
- [in] `bIsRadio`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *bHighlight*  
+ [in] *bIsRadio*  
   
 ### Remarks  
   
@@ -1982,11 +1973,11 @@ virtual void OnDrawMenuItemButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rectButton`  
- [in] `bHighlight`  
- [in] `bDisabled`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rectButton*  
+ [in] *bHighlight*  
+ [in] *bDisabled*  
   
 ### Remarks  
   
@@ -2000,8 +1991,8 @@ virtual COLORREF OnDrawMenuLabel(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *rect*  
   
 ### Return Value  
   
@@ -2018,9 +2009,9 @@ virtual void OnDrawMenuResizeBar(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `nResizeFlags`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *nResizeFlags*  
   
 ### Remarks  
   
@@ -2038,22 +2029,22 @@ virtual void OnDrawMenuScrollButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the scroll button.  
   
- [in] `bIsScrollDown`  
- A Boolean that indicates which type of button the visual manager draws. A value of `TRUE` indicates the visual manager draws a down button.  
+ [in] *bIsScrollDown*  
+ A Boolean that indicates which type of button the visual manager draws. A value of TRUE indicates the visual manager draws a down button.  
   
- [in] `bIsHighlited`  
+ [in] *bIsHighlited*  
  A Boolean that indicates whether the button is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean that indicates whether the button is pressed.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  A Boolean that indicates whether the button is disabled.  
   
 ### Remarks  
@@ -2076,15 +2067,15 @@ virtual void OnDrawMenuShadow(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectClient`  
- [in] `rectExclude`  
- [in] `nDepth`  
- [in] `iMinBrightness`  
- [in] `iMaxBrightness`  
- [in] `pBmpSaveBottom`  
- [in] `pBmpSaveRight`  
- [in] `bRTL`  
+ [in] *pDC*  
+ [in] *rectClient*  
+ [in] *rectExclude*  
+ [in] *nDepth*  
+ [in] *iMinBrightness*  
+ [in] *iMaxBrightness*  
+ [in] *pBmpSaveBottom*  
+ [in] *pBmpSaveRight*  
+ [in] *bRTL*  
   
 ### Remarks  
   
@@ -2101,25 +2092,25 @@ virtual void OnDrawMenuSystemButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the button.  
   
- [in] `uiSystemCommand`  
+ [in] *uiSystemCommand*  
  A flag that specifies which system command is associated with the button. Possible values are SC_CLOSE, SC_MINIMIZE, and SC_RESTORE.  
   
- [in] `nStyle`  
+ [in] *nStyle*  
  A flag that specifies the current style of the button. Possible values are TBBS_PRESSED, TBBS_DISABLED, and 0.  
   
- [in] `bHighlight`  
+ [in] *bHighlight*  
  A Boolean parameter that specifies whether the button is highlighted.  
   
 ### Remarks  
  The menu system buttons are the **Close**, **Minimize**, **Maximize**, and **Restore** buttons located on the title bar.  
   
- The default implementation for this method calls [CDC::DrawFrameControl](../../mfc/reference/cdc-class.md#drawframecontrol) with the `DFC_CAPTION` type. Override this method in your derived visual manager class to customize the appearance of system buttons.  
+ The default implementation for this method calls [CDC::DrawFrameControl](../../mfc/reference/cdc-class.md#drawframecontrol) with the DFC_CAPTION type. Override this method in your derived visual manager class to customize the appearance of system buttons.  
   
 ##  <a name="ondrawminiframeborder"></a>  CMFCVisualManager::OnDrawMiniFrameBorder  
 
@@ -2133,10 +2124,10 @@ virtual void OnDrawMiniFrameBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pFrameWnd`  
- [in] `rectBorder`  
- [in] `rectBorderSize`  
+ [in] *pDC*  
+ [in] *pFrameWnd*  
+ [in] *rectBorder*  
+ [in] *rectBorderSize*  
   
 ### Remarks  
   
@@ -2150,10 +2141,10 @@ virtual void OnDrawOutlookBarSplitter(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectSplitter`  
+ [in] *rectSplitter*  
  A rectangle that specifies the boundaries of the splitter.  
   
 ### Remarks  
@@ -2171,16 +2162,16 @@ virtual void OnDrawOutlookPageButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectBtn`  
+ [in] *rectBtn*  
  A rectangle that specifies the boundary of the Outlook page button.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean that specifies whether the button is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean that specifies whether the button is pressed.  
   
 ### Remarks  
@@ -2197,13 +2188,13 @@ virtual void OnDrawPaneBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of a control bar.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a pane. The visual manager draws the border of this pane.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that indicates the boundaries of the pane.  
   
 ### Remarks  
@@ -2222,23 +2213,23 @@ virtual COLORREF OnDrawPaneCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a `CDockablePane` object. The framework draws the caption for this pane.  
   
- [in] `bActive`  
+ [in] *bActive*  
  A Boolean parameter that indicates whether the control bar is active.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  A rectangle that specifies the boundaries of the caption.  
   
- [in] `rectButtons`  
+ [in] *rectButtons*  
  A rectangle that specifies the boundaries of the caption buttons.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the text color of the caption.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the text color of the caption.  
   
 ### Remarks  
  Override this method in a derived visual manager to customize the appearance of pane captions.  
@@ -2255,10 +2246,10 @@ virtual void OnDrawPaneDivider(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pSlider`  
- [in] `rect`  
- [in] `bAutoHideMode`  
+ [in] *pDC*  
+ [in] *pSlider*  
+ [in] *rect*  
+ [in] *bAutoHideMode*  
   
 ### Remarks  
   
@@ -2272,8 +2263,8 @@ virtual void OnDrawPopupWindowBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -2288,9 +2279,9 @@ virtual void OnDrawPopupWindowButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectClient`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rectClient*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -2305,9 +2296,9 @@ virtual COLORREF OnDrawPopupWindowCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectCaption`  
- [in] `pPopupWnd`  
+ [in] *pDC*  
+ [in] *rectCaption*  
+ [in] *pPopupWnd*  
   
 ### Return Value  
   
@@ -2323,10 +2314,10 @@ virtual void OnDrawRibbonApplicationButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the **Main Button** on the ribbon.  
   
 ### Remarks  
@@ -2342,10 +2333,10 @@ virtual void OnDrawRibbonButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) object. The framework draws the border for this ribbon button.  
   
 ### Remarks  
@@ -2362,13 +2353,13 @@ virtual COLORREF OnDrawRibbonButtonsGroup(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pGroup`  
+ [in] *pGroup*  
  A pointer to a group of buttons on the ribbon. The framework draws this group of buttons.  
   
- [in] `rectGroup`  
+ [in] *rectGroup*  
  A rectangle that specifies the boundaries of the group.  
   
 ### Return Value  
@@ -2389,16 +2380,16 @@ virtual void OnDrawRibbonCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a ribbon bar. The visual manager draws this ribbon bar.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the ribbon bar.  
   
- [in] `rectText`  
+ [in] *rectText*  
  A rectangle that specifies the boundaries for the text of the caption bar.  
   
 ### Remarks  
@@ -2414,10 +2405,10 @@ virtual void OnDrawRibbonCaptionButton(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to a device context.  
   
- `pButton`  
+ *pButton*  
  A pointer to a `CMFCRibbonCaptionButton` class. The framework draws this caption button.  
   
 ### Remarks  
@@ -2434,13 +2425,13 @@ virtual void OnDrawRibbonCategory(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pCategory`  
+ [in] *pCategory*  
  A pointer to a `CMFCRibbonCategory` object. The framework draws this ribbon category.  
   
- [in] `rectCategory`  
+ [in] *rectCategory*  
  A rectangle that specifies the boundary of all the category panels on the ribbon.  
   
 ### Remarks  
@@ -2458,14 +2449,14 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  The drawing context.  
   
- [in] `pContextCaption`  
+ [in] *pContextCaption*  
  A pointer to a caption bar. The visual manager draws this [CMFCRibbonContextCaption Class](../../mfc/reference/cmfcribboncontextcaption-class.md) object.  
   
 ### Return Value  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the color of the text on the caption bar.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the color of the text on the caption bar.  
   
 ### Remarks  
  Override this method in a derived class to customize the appearance of the caption bar for a ribbon category. For more information about the caption bar, see [CMFCRibbonContextCaption Class](../../mfc/reference/cmfcribboncontextcaption-class.md).  
@@ -2480,8 +2471,8 @@ virtual void OnDrawRibbonCategoryScroll(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pScroll`  
+ [in] *pDC*  
+ [in] *pScroll*  
   
 ### Remarks  
   
@@ -2496,13 +2487,13 @@ virtual COLORREF OnDrawRibbonCategoryTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pTab`  
+ [in] *pTab*  
  A pointer to an instance of the `CMFCRibbonTab` class. The framework draws this tab.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  A Boolean parameter that indicates whether the tab is active.  
   
 ### Return Value  
@@ -2524,11 +2515,11 @@ virtual void OnDrawRibbonCheckBoxOnList(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pCheckBox`  
- [in] `rect`  
- [in] `bIsSelected`  
- [in] `bHighlighted`  
+ [in] *pDC*  
+ [in] *pCheckBox*  
+ [in] *rect*  
+ [in] *bIsSelected*  
+ [in] *bHighlighted*  
   
 ### Remarks  
   
@@ -2550,16 +2541,16 @@ virtual void OnDrawRibbonColorPaletteBox(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pColorButton`  
- [in] `pIcon`  
- [in] `color`  
- [in] `rect`  
- [in] `bDrawTopEdge`  
- [in] `bDrawBottomEdge`  
- [in] `bIsHighlighted`  
- [in] `bIsChecked`  
- [in] `bIsDisabled`  
+ [in] *pDC*  
+ [in] *pColorButton*  
+ [in] *pIcon*  
+ [in] *color*  
+ [in] *rect*  
+ [in] *bDrawTopEdge*  
+ [in] *bDrawBottomEdge*  
+ [in] *bIsHighlighted*  
+ [in] *bIsChecked*  
+ [in] *bIsDisabled*  
   
 ### Remarks  
   
@@ -2573,10 +2564,10 @@ virtual void OnDrawRibbonDefaultPaneButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the default button for the ribbon pane.  
   
 ### Remarks  
@@ -2594,8 +2585,8 @@ virtual void OnDrawRibbonDefaultPaneButtonContext(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -2612,11 +2603,11 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
- [in] `bIsSelected`  
- [in] `bHighlighted`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
+ [in] *bIsSelected*  
+ [in] *bHighlighted*  
   
 ### Remarks  
   
@@ -2631,9 +2622,9 @@ virtual void OnDrawRibbonGalleryBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rectBorder`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rectBorder*  
   
 ### Remarks  
   
@@ -2647,8 +2638,8 @@ virtual void OnDrawRibbonGalleryButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -2664,10 +2655,10 @@ virtual void OnDrawRibbonKeyTip(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pElement`  
- [in] `rect`  
- [in] `str`  
+ [in] *pDC*  
+ [in] *pElement*  
+ [in] *rect*  
+ [in] *str*  
   
 ### Remarks  
   
@@ -2682,13 +2673,13 @@ virtual void OnDrawRibbonLabel(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pLabel`  
+ [in] *pLabel*  
  A pointer to a [CMFCRibbonLabel](../../mfc/reference/cmfcribbonlabel-class.md) object. The framework draws this ribbon label.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the ribbon panel.  
   
 ### Remarks  
@@ -2704,10 +2695,10 @@ virtual void OnDrawRibbonMainPanelButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a `CMFCRibbonButton` located on the main panel of the ribbon. The framework draws the border for this button.  
   
 ### Remarks  
@@ -2724,13 +2715,13 @@ virtual void OnDrawRibbonMainPanelFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  A pointer to the `CMFCRibbonMainPanel`.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the `CMFCRibbonMainPanel`.  
   
 ### Remarks  
@@ -2747,9 +2738,9 @@ virtual void OnDrawRibbonMenuCheckFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pButton`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pButton*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -2765,16 +2756,16 @@ virtual COLORREF OnDrawRibbonPanel(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  A pointer to a `CMFCRibbonPanel` object. The framework draws this ribbon panel.  
   
- [in] `rectPanel`  
+ [in] *rectPanel*  
  A rectangle that specifies the boundaries of the panel.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  A rectangle that specifies the boundaries of the caption for the panel.  
   
 ### Return Value  
@@ -2794,13 +2785,13 @@ virtual void OnDrawRibbonPanelCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  A pointer to a `CMFCRibbonPanel` object. The framework draws the caption for this ribbon panel.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  A rectangle that specifies the boundaries of the caption for the ribbon panel.  
   
 ### Remarks  
@@ -2819,20 +2810,20 @@ virtual void OnDrawRibbonProgressBar(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pProgress`  
+ [in] *pProgress*  
  A pointer to a `CMFCRibbonProgressBar` object. The framework draws this progress bar.  
   
- [in] `rectProgress`  
+ [in] *rectProgress*  
  A rectangle that specifies the boundaries of the progress bar.  
   
- [in] `rectChunk`  
+ [in] *rectChunk*  
  A rectangle that specifies the boundaries of the area surrounding the progress bar.  
   
- [in] `bInfiniteMode`  
- A Boolean parameter that indicates the mode of the progress bar. A value of `TRUE` means the bar is in infinite mode. The default implementation does not use this parameter.  
+ [in] *bInfiniteMode*  
+ A Boolean parameter that indicates the mode of the progress bar. A value of TRUE means the bar is in infinite mode. The default implementation does not use this parameter.  
   
 ### Remarks  
  Override this method in a derived class to customize the appearance of a progress bar.  
@@ -2848,13 +2839,13 @@ virtual void OnDrawRibbonQuickAccessToolBarSeparator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSeparator`  
+ [in] *pSeparator*  
  A pointer to a [CMFCRibbonSeparator](../../mfc/reference/cmfcribbonseparator-class.md) object. The framework draws this ribbon separator.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the separator.  
   
 ### Remarks  
@@ -2871,13 +2862,13 @@ virtual void OnDrawRibbonRecentFilesFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  A pointer to the **Main** panel on the ribbon.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the frame for the list of recent files.  
   
 ### Remarks  
@@ -2894,13 +2885,13 @@ virtual void OnDrawRibbonSliderChannel(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSlider`  
+ [in] *pSlider*  
  A pointer to a CMFCRibbonSlider object. The framework draws the channel for this ribbon slider.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries for the channel of the ribbon slider.  
   
 ### Remarks  
@@ -2920,22 +2911,22 @@ virtual void OnDrawRibbonSliderThumb(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSlider`  
+ [in] *pSlider*  
  A pointer to a `CMFCRibbonSlider`. The framework draws the thumb for this ribbon slider.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the thumb for the ribbon slider.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates if the thumb is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean parameter that indicates if the thumb is pressed.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  A Boolean parameter that indicates if the thumb is unavailable.  
   
 ### Remarks  
@@ -2956,25 +2947,25 @@ virtual void OnDrawRibbonSliderZoomButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSlider`  
+ [in] *pSlider*  
  A pointer to a `CMFCRibbonSlider` object. The framework draws this ribbon slider.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the zoom buttons on the ribbon slider.  
   
- [in] `bIsZoomOut`  
- A Boolean parameter that indicates which button the framework draws. A value of `TRUE` indicates the left button with a "-" for zoom out. A value of `FALSE` indicates the right button with a "+" for zoom in.  
+ [in] *bIsZoomOut*  
+ A Boolean parameter that indicates which button the framework draws. A value of TRUE indicates the left button with a "-" for zoom out. A value of FALSE indicates the right button with a "+" for zoom in.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the button is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean parameter that indicates whether the button is pressed.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  A Boolean parameter that indicates whether the button is unavailable.  
   
 ### Remarks  
@@ -2991,13 +2982,13 @@ virtual COLORREF OnDrawRibbonStatusBarPane(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the status bar that contains the pane.  
   
- [in] `pPane`  
+ [in] *pPane*  
  A pointer to a status bar pane. The framework draws this [CMFCRibbonStatusBarPane](../../mfc/reference/cmfcribbonstatusbarpane-class.md) object.  
   
 ### Return Value  
@@ -3017,13 +3008,13 @@ virtual COLORREF OnDrawRibbonTabsFrame(
 ```  
   
 ### Parameters  
- `pDC`  
+ *pDC*  
  A pointer to a device context.  
   
- `pWndRibbonBar`  
+ *pWndRibbonBar*  
  A pointer to a [CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md) object. The framework draws the frame for this ribbon bar.  
   
- `rectTab`  
+ *rectTab*  
  A rectangle that specifies the boundaries of the ribbon tabs.  
   
 ### Return Value  
@@ -3045,11 +3036,11 @@ virtual void OnDrawScrollButtons(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `nBorderSize`  
- [in] `iImage`  
- [in] `bHilited`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *nBorderSize*  
+ [in] *iImage*  
+ [in] *bHilited*  
   
 ### Remarks  
   
@@ -3065,17 +3056,17 @@ virtual void OnDrawSeparator(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for a control bar.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a pane that contains the separator.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the separator.  
   
- [in] `bIsHoriz`  
- A Boolean parameter that indicates the orientation of a docked pane. A value of `TRUE` indicates that the pane is docked horizontally. A value of `FALSE` indicates that the pane is docked vertically.  
+ [in] *bIsHoriz*  
+ A Boolean parameter that indicates the orientation of a docked pane. A value of TRUE indicates that the pane is docked horizontally. A value of FALSE indicates that the pane is docked vertically.  
   
 ### Remarks  
  Separators are used on control bars to separate groups of related icons. The default implementation for this method displays the standard separator. Override this method in a derived visual manager to customize the appearance of the separator.  
@@ -3091,9 +3082,9 @@ virtual void OnDrawShowAllMenuItems(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
- [in] `state`  
+ [in] *pDC*  
+ [in] *rect*  
+ [in] *state*  
   
 ### Remarks  
   
@@ -3110,23 +3101,23 @@ virtual void OnDrawSpinButtons(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectSpin`  
+ [in] *rectSpin*  
  A rectangle that specifies the boundaries of the spin control.  
   
- [in] `nState`  
+ [in] *nState*  
  A flag that indicates the state of the spin control. See the Remarks section for more information.  
   
- [in] `bOrientation`  
- A Boolean parameter that specifies the orientation of the spin control. A value of `TRUE` indicates the spin control is horizontal. Otherwise, it is vertical.  
+ [in] *bOrientation*  
+ A Boolean parameter that specifies the orientation of the spin control. A value of TRUE indicates the spin control is horizontal. Otherwise, it is vertical.  
   
- [in] `pSpinCtrl`  
+ [in] *pSpinCtrl*  
  A pointer to a spin control. The framework draws the buttons for this control.  
   
 ### Remarks  
- The `nState` parameter indicates the state of the spin control. The parameter is one of the following values:  
+ The *nState* parameter indicates the state of the spin control. The parameter is one of the following values:  
   
 -   AFX_SPIN_PRESSEDUP  
   
@@ -3151,13 +3142,13 @@ virtual void OnDrawSplitterBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSplitterWnd`  
+ [in] *pSplitterWnd*  
  A pointer to a splitter window. The framework draws the border for this window.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the splitter window.  
   
 ### Remarks  
@@ -3174,13 +3165,13 @@ virtual void OnDrawSplitterBox(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSplitterWnd`  
+ [in] *pSplitterWnd*  
  A pointer to a splitter window. The framework draws the box for this splitter window.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the splitter window.  
   
 ### Remarks  
@@ -3199,19 +3190,19 @@ virtual void OnDrawStatusBarPaneBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a `CMFCStatusBar` object. The framework draws this status bar object.  
   
- [in] `rectPane`  
+ [in] *rectPane*  
  A rectangle that specifies the boundaries of the status bar.  
   
- [in] `uiID`  
+ [in] *uiID*  
  The ID of the status bar.  
   
- [in] `nStyle`  
+ [in] *nStyle*  
  The style of the status bar.  
   
 ### Remarks  
@@ -3234,31 +3225,31 @@ virtual void OnDrawStatusBarProgress(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for the status bar.  
   
- [in] `pStatusBar`  
+ [in] *pStatusBar*  
  The `CMFCStatusBar` object that contains the progress bar.  
   
- [in] `rectProgress`  
+ [in] *rectProgress*  
  A rectangle that specifies the boundaries of the progress bar.  
   
- [in] `nProgressTotal`  
+ [in] *nProgressTotal*  
  The total number for the progress bar.  
   
- [in] `nProgressCurr`  
+ [in] *nProgressCurr*  
  The current progress for the progress bar.  
   
- [in] `clrBar`  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter that indicates the initial color for the progress bar. The value is either the start of a color gradient or the complete color of the progress bar.  
+ [in] *clrBar*  
+ A [COLORREF](/windows/desktop/gdi/colorref) parameter that indicates the initial color for the progress bar. The value is either the start of a color gradient or the complete color of the progress bar.  
   
- [in] `clrProgressBarDest`  
- A `COLORREF` parameter that indicates the end of a color gradient for the progress bar. If `clrProgressBarDest` is -1, the framework does not draw the progress bar as a color gradient. Instead, it fills the whole progress bar with the color specified by `clrBar`.  
+ [in] *clrProgressBarDest*  
+ A COLORREF parameter that indicates the end of a color gradient for the progress bar. If *clrProgressBarDest* is -1, the framework does not draw the progress bar as a color gradient. Instead, it fills the whole progress bar with the color specified by *clrBar*.  
   
- [in] `clrProgressText`  
- A `COLORREF` parameter that indicates the text color for the textual representation of the current progress. This parameter is ignored if `bProgressText` is set to `FALSE`.  
+ [in] *clrProgressText*  
+ A COLORREF parameter that indicates the text color for the textual representation of the current progress. This parameter is ignored if *bProgressText* is set to FALSE.  
   
- [in] `bProgressText`  
+ [in] *bProgressText*  
  A Boolean parameter that indicates whether to display the textual representation of the current progress.  
   
 ### Remarks  
@@ -3275,13 +3266,13 @@ virtual void OnDrawStatusBarSizeBox(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pStatBar`  
+ [in] *pStatBar*  
  A pointer to a status bar. The framework draws the size box for this status bar.  
   
- [in] `rectSizeBox`  
+ [in] *rectSizeBox*  
  A rectangle that specifies the boundaries of the size box.  
   
 ### Remarks  
@@ -3300,19 +3291,19 @@ virtual void OnDrawTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectTab`  
+ [in] *rectTab*  
  A rectangle that specifies the boundaries of the tab control.  
   
- [in] `iTab`  
+ [in] *iTab*  
  The index of the tab that the framework draws.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  A Boolean parameter that specifies whether the tab is active.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to a `CMFCBaseTabCtrl` object. The framework draws this tab control.  
   
 ### Remarks  
@@ -3334,26 +3325,26 @@ virtual void OnDrawTabCloseButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the **Close** button.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to a tab control. The framework draws the **Close** button for this tab control.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the **Close** button is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean parameter that indicates whether the **Close** button is pressed.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  A Boolean parameter that indicates whether the **Close** button is disabled.  
   
 ### Remarks  
- Override this method in a derived visual manager to customize the appearance of the **Close** button on the active tab of `pTabWnd`.  
+ Override this method in a derived visual manager to customize the appearance of the **Close** button on the active tab of *pTabWnd*.  
   
 ##  <a name="ondrawtabcontent"></a>  CMFCVisualManager::OnDrawTabContent  
  The framework calls this method when it draws the contents located on the interior of an instance of the [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md).  
@@ -3369,22 +3360,22 @@ virtual void OnDrawTabContent(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectTab`  
+ [in] *rectTab*  
  A rectangle that specifies the boundaries of the tab interior.  
   
- [in] `iTab`  
+ [in] *iTab*  
  The zero-based index of the tab. The framework draws the interior of this tab.  
   
- [in] `bIsActive`  
+ [in] *bIsActive*  
  A Boolean parameter that indicates whether a tab is active.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to the tabbed control that contains the tab being drawn.  
   
- [in] `clrText`  
+ [in] *clrText*  
  The color of text on the interior of the tab.  
   
 ### Remarks  
@@ -3403,19 +3394,19 @@ virtual void OnDrawTabsButtonBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the tab button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a [CMFCButton](../../mfc/reference/cmfcbutton-class.md) object. The framework draws the border for this `CMFCButton` instance.  
   
- [in] `uiState`  
+ [in] *uiState*  
  An unsigned integer that specifies the state of the button.  
   
- [in] `pWndTab`  
+ [in] *pWndTab*  
  A pointer to the parent tab window.  
   
 ### Remarks  
@@ -3434,23 +3425,23 @@ virtual void OnDrawTask(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pTask`  
+ [in] *pTask*  
  A pointer to a [CMFCTasksPaneTask](../../mfc/reference/cmfctaskspanetask-class.md) object. The framework draws this task.  
   
- [in] `pIcons`  
+ [in] *pIcons*  
  A pointer to the image list associated with the task pane. Each task contains an index for an image in this list.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that specifies whether the displayed task is highlighted.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  A Boolean parameter that specifies whether the displayed task is selected.  
   
 ### Remarks  
- The framework displays tasks on the task bar as both an icon and text. The `pIcons` parameter contains the icon for the task indicated by `pTask`.  
+ The framework displays tasks on the task bar as both an icon and text. The *pIcons* parameter contains the icon for the task indicated by *pTask*.  
   
  Override this method in a derived class to customize the appearance of tasks on the task bar.  
   
@@ -3466,17 +3457,17 @@ virtual void OnDrawTasksGroupAreaBorder(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the group area on the task pane.  
   
- [in] `bSpecial`  
- A Boolean parameter that specifies if the border is highlighted. A value of `TRUE` indicates that the border is highlighted.  
+ [in] *bSpecial*  
+ A Boolean parameter that specifies if the border is highlighted. A value of TRUE indicates that the border is highlighted.  
   
- [in] `bNoTitle`  
- A Boolean parameter that specifies whether the group area has a title. A value of `TRUE` indicates that the group area does not have a title.  
+ [in] *bNoTitle*  
+ A Boolean parameter that specifies whether the group area has a title. A value of TRUE indicates that the group area does not have a title.  
   
 ### Remarks  
  Override this function in a derived class to customize the border around a group area on the task pane.  
@@ -3494,19 +3485,19 @@ virtual void OnDrawTasksGroupCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pGroup`  
+ [in] *pGroup*  
  A pointer to a `CMFCTasksPaneTaskGroup` object. The framework draws the caption for this group.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the group is highlighted.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  A Boolean parameter that indicates whether the group is currently selected.  
   
- [in] `bCanCollapse`  
+ [in] *bCanCollapse*  
  A Boolean parameter that indicates whether the group can be collapsed.  
   
 ### Remarks  
@@ -3528,12 +3519,12 @@ virtual void OnDrawTasksGroupIcon(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pGroup`  
- [in] `nIconHOffset`  
- [in] `bIsHighlighted`  
- [in] `bIsSelected`  
- [in] `bCanCollapse`  
+ [in] *pDC*  
+ [in] *pGroup*  
+ [in] *nIconHOffset*  
+ [in] *bIsHighlighted*  
+ [in] *bIsSelected*  
+ [in] *bCanCollapse*  
   
 ### Remarks  
   
@@ -3548,14 +3539,14 @@ virtual void OnDrawTearOffCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the caption.  
   
- [in] `bIsActive`  
- `TRUE` if the caption is active; `FALSE` otherwise.  
+ [in] *bIsActive*  
+ TRUE if the caption is active; FALSE otherwise.  
   
 ### Remarks  
  This function is called by the framework when a `CMFCPopupMenu` object processes a WM_PAINT message and must draw a tear-off caption.  
@@ -3572,8 +3563,8 @@ virtual void OnDrawToolBoxFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -3587,14 +3578,14 @@ virtual BOOL OnEraseMDIClientArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  A rectangle that specifies the boundaries of the MDI client area.  
   
 ### Return Value  
- A reserved value. The default implementation returns `FALSE`.  
+ A reserved value. The default implementation returns FALSE.  
   
 ### Remarks  
  Override this method to execute custom code when the visual manager erases the MDI client area.  
@@ -3610,9 +3601,9 @@ virtual void OnErasePopupWindowButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `rectClient`  
- [in] `pButton`  
+ [in] *pDC*  
+ [in] *rectClient*  
+ [in] *pButton*  
   
 ### Remarks  
   
@@ -3627,17 +3618,17 @@ virtual void OnEraseTabsArea(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the tab area.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to a tab window. The framework erases the tab area for the specified tab window.  
   
 ### Remarks  
- This function is called by the framework when a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md) object processes a `WM_PAINT` message and erases the tab area.  
+ This function is called by the framework when a [CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md) object processes a WM_PAINT message and erases the tab area.  
   
  Override this method in a derived visual manager to customize the appearance of tabs.  
   
@@ -3653,20 +3644,20 @@ virtual void OnEraseTabsButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the tab button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a tab button. The framework erases the text and icon for this button.  
   
- [in] `pWndTab`  
+ [in] *pWndTab*  
  A pointer to the tab control that contains the tab button.  
   
 ### Remarks  
- The framework erases the text and icon for a button when a [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) object processes the `WM_ERASEBKGND` message.  
+ The framework erases the text and icon for a button when a [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) object processes the WM_ERASEBKGND message.  
   
  Override this method in a derived visual manager to customize the appearance of tab buttons.  
   
@@ -3681,20 +3672,20 @@ virtual BOOL OnEraseTabsFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the tab window.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to a tab window. The framework erases a frame for this `CMFCBaseTabCtrl`.  
   
 ### Return Value  
- `TRUE` if the method is successful; `FALSE` otherwise.  
+ TRUE if the method is successful; FALSE otherwise.  
   
 ### Remarks  
- This method fills the area indicated by `rect` with the background color of the active tab. It is called when a `CMFCBaseTabCtrl` object processes a `WM_PAINT` message and erases a tab frame.  
+ This method fills the area indicated by *rect* with the background color of the active tab. It is called when a `CMFCBaseTabCtrl` object processes a WM_PAINT message and erases a tab frame.  
   
 ##  <a name="onfillautohidebuttonbackground"></a>  CMFCVisualManager::OnFillAutoHideButtonBackground  
  The framework calls this method when it fills the background of an auto-hide button.  
@@ -3707,13 +3698,13 @@ virtual void OnFillAutoHideButtonBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the auto-hide button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) object. The framework fills the background for this auto-hide button.  
   
 ### Remarks  
@@ -3732,19 +3723,19 @@ virtual void OnFillBarBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for a control bar.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a `CBasePane` object. The framework fills the background of this pane.  
   
- [in] `rectClient`  
+ [in] *rectClient*  
  A rectangle that specifies the boundaries of the pane.  
   
- [in] `rectClip`  
+ [in] *rectClip*  
  A rectangle that specifies the clipping area of the pane.  
   
- [in] `bNCArea`  
+ [in] *bNCArea*  
  A reserved value.  
   
 ### Remarks  
@@ -3767,16 +3758,16 @@ virtual void OnFillButtonInterior(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context of a toolbar button.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md). The framework fills the background for this button.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the toolbar button.  
   
- [in] `state`  
+ [in] *state*  
  The state of the toolbar button.  
   
 ### Remarks  
@@ -3800,14 +3791,14 @@ virtual COLORREF OnFillCaptionBarButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pBar`  
- [in] `rect`  
- [in] `bIsPressed`  
- [in] `bIsHighlighted`  
- [in] `bIsDisabled`  
- [in] `bHasDropDownArrow`  
- [in] `bIsSysButton`  
+ [in] *pDC*  
+ [in] *pBar*  
+ [in] *rect*  
+ [in] *bIsPressed*  
+ [in] *bIsHighlighted*  
+ [in] *bIsDisabled*  
+ [in] *bHasDropDownArrow*  
+ [in] *bIsSysButton*  
   
 ### Return Value  
   
@@ -3824,13 +3815,13 @@ virtual COLORREF OnFillCommandsListBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the button.  
   
- [in] `bIsSelected`  
+ [in] *bIsSelected*  
  A Boolean parameter that indicates whether the button is selected.  
   
 ### Return Value  
@@ -3850,13 +3841,13 @@ virtual void OnFillHeaderCtrlBackground(
 ```  
   
 ### Parameters  
- [in] `pCtrl`  
+ [in] *pCtrl*  
  A pointer to a [CMFCHeaderCtrl](../../mfc/reference/cmfcheaderctrl-class.md) object. The framework fills the background for this header control.  
   
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the header control.  
   
 ### Remarks  
@@ -3874,16 +3865,16 @@ virtual COLORREF OnFillMiniFrameCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  A rectangle that specifies the boundaries of the caption bar.  
   
- [in] `pFrameWnd`  
+ [in] *pFrameWnd*  
  A pointer to a mini frame window. The framework draws the caption bar for this window.  
   
- [in] `bActive`  
+ [in] *bActive*  
  A Boolean parameter that indicates if the window is active.  
   
 ### Return Value  
@@ -3903,14 +3894,14 @@ virtual void OnFillOutlookBarCaption(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectCaption`  
+ [in] *rectCaption*  
  A rectangle that specifies the boundaries of the caption bar.  
   
- [out] `clrText`  
- A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter. The method writes the color of text on the caption bar to this parameter.  
+ [out] *clrText*  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter. The method writes the color of text on the caption bar to this parameter.  
   
 ### Remarks  
  The default implementation of this method fills the caption bar with the color for shadows based on the current skin. Override this method in a derived visual manager to customize the color of the Outlook caption bar.  
@@ -3928,20 +3919,20 @@ virtual void OnFillOutlookPageButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the Outlook page button.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that specifies whether the button is highlighted.  
   
- [in] `bIsPressed`  
+ [in] *bIsPressed*  
  A Boolean parameter that specifies whether the button is pressed.  
   
- [out] `clrText`  
- A reference to a [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parameter. This method stores the text color of the outlook page button in this parameter.  
+ [out] *clrText*  
+ A reference to a [COLORREF](/windows/desktop/gdi/colorref) parameter. This method stores the text color of the outlook page button in this parameter.  
   
 ### Remarks  
  Override this function in a derived visual manager to customize the appearance of Outlook page buttons.  
@@ -3956,10 +3947,10 @@ virtual void OnFillPopupWindowBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the popup window.  
   
 ### Remarks  
@@ -3975,14 +3966,14 @@ virtual COLORREF OnFillRibbonButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) object. The framework fills the interior of this ribbon button.  
   
 ### Return Value  
- The color of text for the ribbon button specified by `pButton` if the ribbon button supports text. A value of -1 if text is invalid for the ribbon button.  
+ The color of text for the ribbon button specified by *pButton* if the ribbon button supports text. A value of -1 if text is invalid for the ribbon button.  
   
 ### Remarks  
  Override this method in a derived visual manager to customize the appearance of ribbon buttons.  
@@ -4004,35 +3995,35 @@ virtual void OnFillRibbonEdit(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pEdit`  
+ [in] *pEdit*  
  A pointer to a `CMFCRibbonRichEditCtrl` object. The framework fills the interior of this edit control.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the edit control.  
   
- [in] `bIsHighlighted`  
+ [in] *bIsHighlighted*  
  A Boolean parameter that indicates whether the edit control is highlighted.  
   
- [in] `bIsPaneHighlighted`  
+ [in] *bIsPaneHighlighted*  
  A Boolean parameter that indicates whether the parent pane is highlighted.  
   
- [in] `bIsDisabled`  
+ [in] *bIsDisabled*  
  A Boolean parameter that indicates whether the edit control is unavailable.  
   
- [in] `clrText`  
+ [in] *clrText*  
  A reference to the text color of the edit control.  
   
- [in] `clrSelBackground`  
+ [in] *clrSelBackground*  
  A reference to the background color of the edit control when it is highlighted.  
   
- [in] `clrSelText`  
+ [in] *clrSelText*  
  A reference to the color of selected text on the edit control.  
   
 ### Remarks  
- The `CMFCRibbonRichEditCtrl` indicated by `pEdit` can be a part of a combo box button on the ribbon.  
+ The `CMFCRibbonRichEditCtrl` indicated by *pEdit* can be a part of a combo box button on the ribbon.  
   
  Override this method in a derived visual manager to customize the appearance of a `CMFCRibbonRichEditCtrl`.  
   
@@ -4046,14 +4037,14 @@ virtual COLORREF OnFillRibbonMainPanelButton(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a [CMFCRibbonButton Class](../../mfc/reference/cmfcribbonbutton-class.md) object. The framework fills this ribbon button.  
   
 ### Return Value  
- The color of text for the ribbon button specified by `pButton` if the ribbon button supports text. A value of -1 if text is invalid for the ribbon button.  
+ The color of text for the ribbon button specified by *pButton* if the ribbon button supports text. A value of -1 if text is invalid for the ribbon button.  
   
 ### Remarks  
  Override this method in a derived visual manager to customize the appearance of ribbon buttons on the **Main** panel.  
@@ -4069,13 +4060,13 @@ virtual void OnFillRibbonMenuFrame(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pPanel`  
+ [in] *pPanel*  
  A pointer to an instance of the [CMFCRibbonMainPanel Class](../../mfc/reference/cmfcribbonmainpanel-class.md). The framework fills the menu frame for this ribbon panel.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the menu frame.  
   
 ### Remarks  
@@ -4092,9 +4083,9 @@ virtual void OnFillRibbonQuickAccessToolBarPopup(
 ```  
   
 ### Parameters  
- [in] `pDC`  
- [in] `pMenuBar`  
- [in] `rect`  
+ [in] *pDC*  
+ [in] *pMenuBar*  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -4109,13 +4100,13 @@ virtual void OnFillSplitterBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pSplitterWnd`  
+ [in] *pSplitterWnd*  
  A pointer to an instance of the [CSplitterWndEx Class](csplitterwndex-class.md). The framework fills the background for this splitter window.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the splitter window.  
   
 ### Remarks  
@@ -4135,22 +4126,22 @@ virtual void OnFillTab(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectFill`  
+ [in] *rectFill*  
  A rectangle that specifies the boundaries for the tab window.  
   
- [in] `pbrFill`  
+ [in] *pbrFill*  
  A pointer to a brush. The framework uses this brush to fill the tab window.  
   
- [in] `iTab`  
+ [in] *iTab*  
  The zero-based tab index of a tab for which the framework fills the background.  
   
- [in] `bIsActive`  
- `TRUE` if the tab is active; otherwise `FALSE`.  
+ [in] *bIsActive*  
+ TRUE if the tab is active; otherwise FALSE.  
   
- [in] `pTabWnd`  
+ [in] *pTabWnd*  
  A pointer to the parent tab control.  
   
 ### Remarks  
@@ -4167,13 +4158,13 @@ virtual void OnFillTasksGroupInterior(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the task group.  
   
- [in] `bSpecial`  
+ [in] *bSpecial*  
  A Boolean that indicates if the interior is filled with a special color.  
   
 ### Remarks  
@@ -4189,10 +4180,10 @@ virtual void OnFillTasksPaneBackground(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectWorkArea`  
+ [in] *rectWorkArea*  
  A rectangle that specifies the boundaries of the task pane.  
   
 ### Remarks  
@@ -4210,22 +4201,22 @@ virtual void OnHighlightMenuItem(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to the device context for a menu.  
   
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a [CMFCToolBarMenuButton](../../mfc/reference/cmfctoolbarmenubutton-class.md) object to display. The default implementation does not use this parameter.  
   
- [in] `rect`  
+ [in] *rect*  
  A rectangle that specifies the boundaries of the menu item.  
   
- [in] `clrText`  
+ [in] *clrText*  
  The current text color of highlighted menu items. The default implementation does not use this parameter.  
   
 ### Remarks  
- The default implementation of this method does not use the parameters `pButton` or `clrText`. It fills the rectangle specified by `rect` with the standard background color.  
+ The default implementation of this method does not use the parameters *pButton* or *clrText*. It fills the rectangle specified by *rect* with the standard background color.  
   
- Override this method in a derived visual manager to customize the appearance of highlighted menu items. Use the `clrText` parameter to modify the text color of a highlighted menu item.  
+ Override this method in a derived visual manager to customize the appearance of highlighted menu items. Use the *clrText* parameter to modify the text color of a highlighted menu item.  
   
 ##  <a name="onhighlightrarelyusedmenuitems"></a>  CMFCVisualManager::OnHighlightRarelyUsedMenuItems  
  The framework calls this method when it draws a highlighted menu command.  
@@ -4237,10 +4228,10 @@ virtual void OnHighlightRarelyUsedMenuItems(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectRarelyUsed`  
+ [in] *rectRarelyUsed*  
  A rectangle that specifies the boundaries of the highlighted command.  
   
 ### Remarks  
@@ -4256,8 +4247,8 @@ virtual BOOL OnNcActivate(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
- [in] `bActive`  
+ [in] *pWnd*  
+ [in] *bActive*  
   
 ### Return Value  
   
@@ -4274,17 +4265,17 @@ virtual BOOL OnNcPaint(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to the window whose non-client area the framework draws.  
   
- [in] `lstSysButtons`  
+ [in] *lstSysButtons*  
  A list of system buttons. These are also known as caption buttons.  
   
- [in] `rectRedraw`  
+ [in] *rectRedraw*  
  A rectangle that specifies the boundaries of the non-client area.  
   
 ### Return Value  
- A reserved value. The default implementation returns `FALSE`.  
+ A reserved value. The default implementation returns FALSE.  
   
 ### Remarks  
  Override this method in a derived visual manager to customize the appearance of the window frame and caption buttons.  
@@ -4299,14 +4290,14 @@ virtual BOOL OnSetWindowRegion(
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  A pointer to the window with the region that changed.  
   
- [in] `sizeWindow`  
+ [in] *sizeWindow*  
  The size of the window.  
   
 ### Return Value  
- `TRUE` if the method is successful; `FALSE` otherwise.  
+ TRUE if the method is successful; FALSE otherwise.  
   
 ### Remarks  
  The framework calls this method to notify the visual manager that a region has been set for frames and pop-up menus. For more information, see [CWindow::SetWindowRgn](../../atl/reference/cwindow-class.md#setwindowrgn).  
@@ -4319,7 +4310,7 @@ virtual void OnUpdateSystemColors();
 ```  
   
 ### Remarks  
- The framework calls this method as a part of processing the `WM_SYSCOLORCHANGE` message. The default implementation does nothing. Override this method in a derived visual manager if you want to execute custom code when the colors change in your application.  
+ The framework calls this method as a part of processing the WM_SYSCOLORCHANGE message. The default implementation does nothing. Override this method in a derived visual manager if you want to execute custom code when the colors change in your application.  
   
 ##  <a name="redrawall"></a>  CMFCVisualManager::RedrawAll  
  Immediately redraws all the control bars in the application.  
@@ -4336,7 +4327,7 @@ virtual COLORREF RibbonCategoryColorToRGB(AFX_RibbonCategoryColor color);
 ```  
   
 ### Parameters  
- [in] `color`  
+ [in] *color*  
   
 ### Return Value  
   
@@ -4350,7 +4341,7 @@ static void SetDefaultManager(CRuntimeClass* pRTI);
 ```  
   
 ### Parameters  
- [in] `pRTI`  
+ [in] *pRTI*  
  A pointer to the runtime information for a visual manager.  
   
 ### Remarks  
@@ -4366,7 +4357,7 @@ void SetEmbossDisabledImage (BOOL bEmboss = TRUE);
 ```  
   
 ### Parameters  
- [in] `bEmboss`  
+ [in] *bEmboss*  
  A Boolean parameter that indicates whether to enable embossed mode for disabled toolbar images.  
   
 ### Remarks  
@@ -4380,7 +4371,7 @@ void SetFadeInactiveImage(BOOL bFade = TRUE);
 ```  
   
 ### Parameters  
- [in] `bFade`  
+ [in] *bFade*  
  A Boolean parameter that specifies whether to enable the lighting effect.  
   
 ### Remarks  
@@ -4394,7 +4385,7 @@ void SetMenuFlatLook(BOOL bMenuFlatLook = TRUE);
 ```  
   
 ### Parameters  
- [in] `bMenuFlatLook`  
+ [in] *bMenuFlatLook*  
  A Boolean parameter that indicates whether the menu buttons appear flat.  
   
 ### Remarks  
@@ -4408,7 +4399,7 @@ void SetMenuShadowDepth(int nDepth);
 ```  
   
 ### Parameters  
- [in] `nDepth`  
+ [in] *nDepth*  
  An integer that specifies the depth of the menu shadow in pixels.  
   
 ### Remarks  
@@ -4422,7 +4413,7 @@ void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 ```  
   
 ### Parameters  
- [in] `bShadow`  
+ [in] *bShadow*  
  A Boolean parameter that indicates whether the visual manager displays a shadow under highlighted images.  
   
 ### Remarks  

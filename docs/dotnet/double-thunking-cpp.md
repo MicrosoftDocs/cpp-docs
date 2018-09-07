@@ -2,18 +2,13 @@
 title: "Double Thunking (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-cli"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["double thunks", "interop [C++], double thunking", "mixed assemblies [C++], double thunking", "/clr compiler option [C++], double thunking", "interoperability [C++], double thunking"]
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "dotnet"]
 ---
 # Double Thunking (C++)
@@ -26,7 +21,7 @@ Double thunking refers to the loss of performance you can experience when a func
   
  Similarly, if you export ([dllexport, dllimport](../cpp/dllexport-dllimport.md)) a managed function, a native entry point is generated and any function that imports and calls that function will call through the native entry point. To avoid double thunking in this situation, do not use native export/import semantics; simply reference the metadata via `#using` (see [#using Directive](../preprocessor/hash-using-directive-cpp.md)).  
   
- The compiler has been updated to reduce unnecessary double thunking. For example, any function with a managed type in the signature (including return type) will implicitly be marked as `__clrcall`. For more information on double thunk elimination, see [http://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx).  
+ The compiler has been updated to reduce unnecessary double thunking. For example, any function with a managed type in the signature (including return type) will implicitly be marked as `__clrcall`. For more information on double thunk elimination, see [https://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx](https://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx).  
   
 ## Example  
   

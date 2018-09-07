@@ -2,18 +2,13 @@
 title: "Multiple Inline Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["inline files, multiple NMAKE", "multiple inline files", "NMAKE program, inline files"]
 ms.assetid: 6d381dcf-0ed8-45d1-8df3-b4598d860b99
-caps.latest.revision: 8
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Multiple Inline Files

@@ -2,19 +2,14 @@
 title: "include_alias | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.include_alias", "include_alias_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pragmas, include_alias", "include_alias pragma"]
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
-caps.latest.revision: 7
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # include_alias
@@ -50,7 +45,7 @@ The alias being searched for must match the specification exactly, in case as we
 #include "sys/mymath.h"
 ```
 
-no aliasing (substitution) is performed, since the header file strings do not match exactly. Also, header filenames used as arguments to the /Yu and /Yc compiler options, or the **hdrstop** pragma, are not substituted. For example, if your source file contains the following directive,
+no aliasing (substitution) is performed, since the header file strings do not match exactly. Also, header filenames used as arguments to the `/Yu` and `/Yc` compiler options, or the `hdrstop` pragma, are not substituted. For example, if your source file contains the following directive,
   
 ```cpp
 #include <AppleSystemHeaderStop.h>
@@ -69,7 +64,7 @@ You can use the **include_alias** pragma to map any header filename to another. 
 #include <stdio.h>
 ```
 
-Do not mix filenames enclosed in double quotation marks with filenames enclosed in angle brackets. For example, given the above two **#pragma include_alias** directives, the compiler performs no substitution on the following `#include` directives:
+Do not mix filenames enclosed in double quotation marks with filenames enclosed in angle brackets. For example, given the above two `#pragma include_alias` directives, the compiler performs no substitution on the following `#include` directives:
 
 ```cpp
 #include <api.h>
@@ -82,7 +77,7 @@ Furthermore, the following directive generates an error:
 #pragma include_alias(<header.h>, "header.h")  // Error
 ```
 
-Note that the filename reported in error messages, or as the value of the predefined **&#95;&#95;FILE&#95;&#95;** macro, is the name of the file after the substitution has been performed. For example, see the output after the following directives:
+Note that the filename reported in error messages, or as the value of the predefined `__FILE__` macro, is the name of the file after the substitution has been performed. For example, see the output after the following directives:
 
 ```cpp
 #pragma include_alias( "VeryLongFileName.H", "myfile.h" )

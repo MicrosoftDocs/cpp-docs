@@ -21,14 +21,14 @@
         topicHref: /cpp/c-cpp-preprocessor-reference
       - name: C Runtime Library
         tocHref: /cpp/c-runtime-library/
-        topicHref: /cpp/c-runtime-library/c-runtime-library-reference
+        topicHref: /cpp/c-runtime-library/c-run-time-library-reference
         items:
         - name: Reference
           tocHref: /cpp/c-runtime-library/reference/
-          topicHref: /cpp/c-runtime-library/reference/alphabetical-function-reference
+          topicHref: /cpp/c-runtime-library/reference/crt-alphabetical-function-reference
       - name: C++ Standard Library
         tocHref: /cpp/standard-library/
-        topicHref: /cpp/standard-library/cpp-standard-library 
+        topicHref: /cpp/standard-library/cpp-standard-library-reference 
       - name: Windows
         tocHref: /cpp/windows/
         topicHref: /cpp/windows/overview-of-windows-programming-in-cpp
@@ -53,7 +53,7 @@
           items:
           - name: Reference
             tocHref: /cpp/atl-mfc-shared/reference/
-            topicHref: /cpp/atl-mfc/shared/reference/classes-shared-by-atl-and-mfc
+            topicHref: /cpp/atl-mfc/shared/reference/classes-shared-by-mfc-and-atl
         - name: C++/CX
           tocHref: /cpp/cppcx/
           topicHref: /cpp/cppcx/visual-c-language-reference-c-cx
@@ -62,7 +62,7 @@
         topicHref: /cpp/linux/download-install-and-setup-the-linux-development-workload
       - name: .NET
         tocHref: /cpp/dotnet/
-        topicHref: /cpp/dotnet/dotnet-programming-with-cpp-cli
+        topicHref: /cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp
       - name: Parallel Programming
         tocHref: /cpp/parallel/
         topicHref: /cpp/parallel/parallel-programming-in-visual-cpp
@@ -109,7 +109,7 @@
             topicHref: /cpp/assembler/arm/arm-assembler-reference
           - name: Inline assembler
             tocHref: /cpp/assembler/inline/
-            topicHref: /cpp/assembler/inline-assembler-reference
+            topicHref: /cpp/assembler/inline-assembler
           - name: MASM
             tocHref: /cpp/assembler/masm/
             topicHref: /cpp/assembler/masm/microsoft-macro-assembler-reference
@@ -118,7 +118,7 @@
         topicHref: /cpp/porting/visual-cpp-porting-and-upgrading-guide
       - name: Text and Strings
         tocHref: /cpp/text/
-        topicHref: /cpp/text/text-and-strings
+        topicHref: /cpp/text/text-and-strings-in-visual-cpp
       - name: Security
         tocHref: /cpp/security
         topicHref: /cpp/security/security-best-practices-for-cpp

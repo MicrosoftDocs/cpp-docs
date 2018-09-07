@@ -2,19 +2,14 @@
 title: "CReversalTransition Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition::CReversalTransition", "AFXANIMATIONCONTROLLER/CReversalTransition::Create", "AFXANIMATIONCONTROLLER/CReversalTransition::m_duration"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CReversalTransition [MFC], CReversalTransition", "CReversalTransition [MFC], Create", "CReversalTransition [MFC], m_duration"]
 ms.assetid: e89516be-2d07-4885-95a8-fc278f46e3ad
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CReversalTransition Class
@@ -69,7 +64,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which is responsible for creation of standard transitions.  
   
 ### Return Value  
@@ -83,7 +78,7 @@ CReversalTransition(UI_ANIMATION_SECONDS duration);
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
 ##  <a name="m_duration"></a>  CReversalTransition::m_duration  

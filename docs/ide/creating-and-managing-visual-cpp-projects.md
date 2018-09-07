@@ -2,19 +2,14 @@
 title: "Creating and Managing Visual C++ Projects | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-ide"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 f1_keywords: ["vcprojects", "creatingmanagingVC"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ATL projects, creating", "Visual C++ projects, creating", "projects [C++], creating", "Visual C++ projects", "ATL projects"]
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Creating and Managing MSBuild-based Visual C++ Projects
@@ -57,8 +52,5 @@ You can create Visual C++ projects by choosing **File &#124; New &#124; Project*
  [Building C/C++ Programs](../build/building-c-cpp-programs.md)  
  Provides links to topics describing building your program from the command line or from the integrated development environment of Visual Studio.  
   
- [Visual C++ Reference](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
- Provides links to topics describing the C and C++ language references, the libraries provided with Visual C++, the Visual C++ Extensibility Object Model, and the Microsoft Macro Assembler (MASM).  
-  
 ## See Also  
- [Visual Studio SDK](http://msdn.microsoft.com/vstudio/extend)
+ [Visual Studio SDK](https://msdn.microsoft.com/vstudio/extend)

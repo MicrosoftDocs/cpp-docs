@@ -1,26 +1,23 @@
 ---
 title: "ML Nonfatal Error A2097 | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "08/30/2018"
+ms.technology: ["cpp-masm"]
+ms.topic: "error-reference"
 f1_keywords: ["A2097"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["A2097"]
 ms.assetid: 52f6f1f8-4eb4-4264-8619-7b9ccb20c0c7
-caps.latest.revision: 6
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # ML Nonfatal Error A2097
-**segment expected : identifier**  
-  
- The [GROUP](../../assembler/masm/group.md) directive was given an identifier that was not a defined segment.  
-  
-## See Also  
- [ML Error Messages](../../assembler/masm/ml-error-messages.md)
+
+**segment expected : identifier**
+
+The [GROUP](../../assembler/masm/group.md) directive was given an identifier that was not a defined segment.
+
+## See also
+
+[ML Error Messages](../../assembler/masm/ml-error-messages.md)<br/>

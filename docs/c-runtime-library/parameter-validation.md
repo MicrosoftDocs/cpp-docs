@@ -2,22 +2,17 @@
 title: "Parameter Validation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-standard-libraries"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["parameters, validation"]
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Parameter Validation
-Most of the security-enhanced CRT functions and many of the preexisting functions validate their parameters. This could include checking pointers for NULL, checking that integers fall into a valid range, or checking that enumeration values are valid. When an invalid parameter is found, the invalid parameter handler is executed.  
+Most of the security-enhanced CRT functions and many of the preexisting functions validate their parameters. This could include checking pointers for **NULL**, checking that integers fall into a valid range, or checking that enumeration values are valid. When an invalid parameter is found, the invalid parameter handler is executed.  
   
 ## Invalid Parameter Handler Routine  
  When a C Runtime Library function detects an invalid parameter, it captures some information about the error, and then calls a macro that wraps an invalid parameter handler dispatch function, one of [_invalid_parameter](../c-runtime-library/reference/invalid-parameter-functions.md), [_invalid_parameter_noinfo](../c-runtime-library/reference/invalid-parameter-functions.md), or [_invalid_parameter_noinfo_noreturn](../c-runtime-library/reference/invalid-parameter-functions.md). The dispatch function called depends on whether your code is, respectively, a debug build, a retail build, or the error is not considered recoverable. 

@@ -2,19 +2,14 @@
 title: "CVSListBox Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CVSListBox", "AFXVSLISTBOX/CVSListBox", "AFXVSLISTBOX/CVSListBox::CVSListBox", "AFXVSLISTBOX/CVSListBox::AddItem", "AFXVSLISTBOX/CVSListBox::EditItem", "AFXVSLISTBOX/CVSListBox::GetCount", "AFXVSLISTBOX/CVSListBox::GetItemData", "AFXVSLISTBOX/CVSListBox::GetItemText", "AFXVSLISTBOX/CVSListBox::GetSelItem", "AFXVSLISTBOX/CVSListBox::RemoveItem", "AFXVSLISTBOX/CVSListBox::SelectItem", "AFXVSLISTBOX/CVSListBox::SetItemData", "AFXVSLISTBOX/CVSListBox::GetListHwnd"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CVSListBox [MFC], CVSListBox", "CVSListBox [MFC], AddItem", "CVSListBox [MFC], EditItem", "CVSListBox [MFC], GetCount", "CVSListBox [MFC], GetItemData", "CVSListBox [MFC], GetItemText", "CVSListBox [MFC], GetSelItem", "CVSListBox [MFC], RemoveItem", "CVSListBox [MFC], SelectItem", "CVSListBox [MFC], SetItemData", "CVSListBox [MFC], GetListHwnd"]
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
-caps.latest.revision: 30
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CVSListBox Class
@@ -45,7 +40,7 @@ class CVSListBox : public CVSListBoxBase
 |[CVSListBox::GetItemData](#getitemdata)|Retrieves an application-specific 32-bit value that is associated with an editable list control item. (Overrides `CVSListBoxBase::GetItemData`.)|  
 |[CVSListBox::GetItemText](#getitemtext)|Retrieves the text of an editable list control item. (Overrides `CVSListBoxBase::GetItemText`.)|  
 |[CVSListBox::GetSelItem](#getselitem)|Retrieves the zero-based index of the currently selected item in an editable list control. (Overrides `CVSListBoxBase::GetSelItem`.)|  
-|`CVSListBox::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) and [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows functions. For more information and method syntax, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CVSListBoxBase::PreTranslateMessage`.)|  
+|`CVSListBox::PreTranslateMessage`|Translates window messages before they are dispatched to the [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) and [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows functions. For more information and method syntax, see [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Overrides `CVSListBoxBase::PreTranslateMessage`.)|  
 |[CVSListBox::RemoveItem](#removeitem)|Removes an item from an editable list control. (Overrides `CVSListBoxBase::RemoveItem`.)|  
 |[CVSListBox::SelectItem](#selectitem)|Selects an editable list control string. (Overrides `CVSListBoxBase::SelectItem`.)|  
 |[CVSListBox::SetItemData](#setitemdata)|Associates an application-specific 32-bit value with an editable list control item. (Overrides `CVSListBoxBase::SetItemData`.)|  
@@ -96,20 +91,20 @@ virtual int AddItem(
 ```  
   
 ### Parameters  
- [in] `strIext`  
+ [in] *strIext*  
  A reference to a string.  
   
- [in] `dwData`  
+ [in] *dwData*  
  An application-specific 32-bit value that is associated with the string. The default value is 0.  
   
- [in] `iIndex`  
- The zero-based index of the position that will hold the string. If the `iIndex` parameter is -1, the string is added to the end of the list. The default value is -1.  
+ [in] *iIndex*  
+ The zero-based index of the position that will hold the string. If the *iIndex* parameter is -1, the string is added to the end of the list. The default value is -1.  
   
 ### Return Value  
  The zero-based index of the position of the string in the list control.  
   
 ### Remarks  
- Use the [CVSListBox::GetItemData](#getitemdata) method to retrieve the value that is specified by the `dwData` parameter. This value can be an application-specific integer or a pointer to other data.  
+ Use the [CVSListBox::GetItemData](#getitemdata) method to retrieve the value that is specified by the *dwData* parameter. This value can be an application-specific integer or a pointer to other data.  
   
 ##  <a name="cvslistbox"></a>  CVSListBox::CVSListBox  
  Constructs a `CVSListBox` object.  
@@ -130,11 +125,11 @@ virtual BOOL EditItem(int iIndex);
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  Zero-based index of a list control item.  
   
 ### Return Value  
- `TRUE` if the edit operation starts successfully; otherwise, `FALSE`.  
+ TRUE if the edit operation starts successfully; otherwise, FALSE.  
   
 ### Remarks  
  The user starts an edit operation either by double-clicking the label of an item, or by pressing the **F2** or **SPACEBAR** key when an item has the focus.  
@@ -160,7 +155,7 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of an editable list control item.  
   
 ### Return Value  
@@ -218,11 +213,11 @@ virtual BOOL RemoveItem(int iIndex);
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of an editable list control item.  
   
 ### Return Value  
- `TRUE` if the specified item is removed; otherwise, `FALSE`.  
+ TRUE if the specified item is removed; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -234,11 +229,11 @@ virtual BOOL SelectItem(int iItem);
 ```  
   
 ### Parameters  
- [in] `iItem`  
+ [in] *iItem*  
  The zero-based index of an editable list control item.  
   
 ### Return Value  
- `TRUE` if this method is successful; otherwise, `FALSE`.  
+ TRUE if this method is successful; otherwise, FALSE.  
   
 ### Remarks  
  This method selects the specified item, and if it is required, scrolls the item into view.  
@@ -253,10 +248,10 @@ virtual void SetItemData(
 ```  
   
 ### Parameters  
- [in] `iIndex`  
+ [in] *iIndex*  
  The zero-based index of an editable list control item.  
   
- [in] `dwData`  
+ [in] *dwData*  
  A 32-bit value. This value can be an application-specific integer or a pointer to other data.  
   
 ### Remarks  

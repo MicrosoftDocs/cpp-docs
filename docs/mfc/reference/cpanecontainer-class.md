@@ -2,25 +2,20 @@
 title: "CPaneContainer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CPaneContainer", "AFXPANECONTAINER/CPaneContainer", "AFXPANECONTAINER/CPaneContainer::CPaneContainer", "AFXPANECONTAINER/CPaneContainer::AddPane", "AFXPANECONTAINER/CPaneContainer::AddRef", "AFXPANECONTAINER/CPaneContainer::AddSubPaneContainer", "AFXPANECONTAINER/CPaneContainer::CalcAvailablePaneSpace", "AFXPANECONTAINER/CPaneContainer::CalcAvailableSpace", "AFXPANECONTAINER/CPaneContainer::CalculateRecentSize", "AFXPANECONTAINER/CPaneContainer::CheckPaneDividerVisibility", "AFXPANECONTAINER/CPaneContainer::Copy", "AFXPANECONTAINER/CPaneContainer::DeletePane", "AFXPANECONTAINER/CPaneContainer::FindSubPaneContainer", "AFXPANECONTAINER/CPaneContainer::FindTabbedPane", "AFXPANECONTAINER/CPaneContainer::GetAssociatedSiblingPaneIDs", "AFXPANECONTAINER/CPaneContainer::GetLeftPane", "AFXPANECONTAINER/CPaneContainer::GetLeftPaneContainer", "AFXPANECONTAINER/CPaneContainer::GetMinSize", "AFXPANECONTAINER/CPaneContainer::GetMinSizeLeft", "AFXPANECONTAINER/CPaneContainer::GetMinSizeRight", "AFXPANECONTAINER/CPaneContainer::GetNodeCount", "AFXPANECONTAINER/CPaneContainer::GetPaneDivider", "AFXPANECONTAINER/CPaneContainer::GetParentPaneContainer", "AFXPANECONTAINER/CPaneContainer::GetRecentPaneDividerRect", "AFXPANECONTAINER/CPaneContainer::GetRecentPaneDividerStyle", "AFXPANECONTAINER/CPaneContainer::GetRecentPercent", "AFXPANECONTAINER/CPaneContainer::GetRefCount", "AFXPANECONTAINER/CPaneContainer::GetResizeStep", "AFXPANECONTAINER/CPaneContainer::GetRightPane", "AFXPANECONTAINER/CPaneContainer::GetRightPaneContainer", "AFXPANECONTAINER/CPaneContainer::GetTotalReferenceCount", "AFXPANECONTAINER/CPaneContainer::GetWindowRect", "AFXPANECONTAINER/CPaneContainer::IsDisposed", "AFXPANECONTAINER/CPaneContainer::IsEmpty", "AFXPANECONTAINER/CPaneContainer::IsLeftPane", "AFXPANECONTAINER/CPaneContainer::IsLeftPaneContainer", "AFXPANECONTAINER/CPaneContainer::IsLeftPartEmpty", "AFXPANECONTAINER/CPaneContainer::IsRightPartEmpty", "AFXPANECONTAINER/CPaneContainer::IsVisible", "AFXPANECONTAINER/CPaneContainer::Move", "AFXPANECONTAINER/CPaneContainer::OnDeleteHidePane", "AFXPANECONTAINER/CPaneContainer::OnMoveInternalPaneDivider", "AFXPANECONTAINER/CPaneContainer::OnShowPane", "AFXPANECONTAINER/CPaneContainer::Release", "AFXPANECONTAINER/CPaneContainer::ReleaseEmptyPaneContainer", "AFXPANECONTAINER/CPaneContainer::RemoveNonValidPanes", "AFXPANECONTAINER/CPaneContainer::RemovePane", "AFXPANECONTAINER/CPaneContainer::Resize", "AFXPANECONTAINER/CPaneContainer::ResizePane", "AFXPANECONTAINER/CPaneContainer::ResizePartOfPaneContainer", "AFXPANECONTAINER/CPaneContainer::Serialize", "AFXPANECONTAINER/CPaneContainer::SetPane", "AFXPANECONTAINER/CPaneContainer::SetPaneContainer", "AFXPANECONTAINER/CPaneContainer::SetPaneDivider", "AFXPANECONTAINER/CPaneContainer::SetParentPaneContainer", "AFXPANECONTAINER/CPaneContainer::SetRecentPercent", "AFXPANECONTAINER/CPaneContainer::SetUpByID", "AFXPANECONTAINER/CPaneContainer::StoreRecentDockSiteInfo", "AFXPANECONTAINER/CPaneContainer::StretchPaneContainer"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CPaneContainer [MFC], CPaneContainer", "CPaneContainer [MFC], AddPane", "CPaneContainer [MFC], AddRef", "CPaneContainer [MFC], AddSubPaneContainer", "CPaneContainer [MFC], CalcAvailablePaneSpace", "CPaneContainer [MFC], CalcAvailableSpace", "CPaneContainer [MFC], CalculateRecentSize", "CPaneContainer [MFC], CheckPaneDividerVisibility", "CPaneContainer [MFC], Copy", "CPaneContainer [MFC], DeletePane", "CPaneContainer [MFC], FindSubPaneContainer", "CPaneContainer [MFC], FindTabbedPane", "CPaneContainer [MFC], GetAssociatedSiblingPaneIDs", "CPaneContainer [MFC], GetLeftPane", "CPaneContainer [MFC], GetLeftPaneContainer", "CPaneContainer [MFC], GetMinSize", "CPaneContainer [MFC], GetMinSizeLeft", "CPaneContainer [MFC], GetMinSizeRight", "CPaneContainer [MFC], GetNodeCount", "CPaneContainer [MFC], GetPaneDivider", "CPaneContainer [MFC], GetParentPaneContainer", "CPaneContainer [MFC], GetRecentPaneDividerRect", "CPaneContainer [MFC], GetRecentPaneDividerStyle", "CPaneContainer [MFC], GetRecentPercent", "CPaneContainer [MFC], GetRefCount", "CPaneContainer [MFC], GetResizeStep", "CPaneContainer [MFC], GetRightPane", "CPaneContainer [MFC], GetRightPaneContainer", "CPaneContainer [MFC], GetTotalReferenceCount", "CPaneContainer [MFC], GetWindowRect", "CPaneContainer [MFC], IsDisposed", "CPaneContainer [MFC], IsEmpty", "CPaneContainer [MFC], IsLeftPane", "CPaneContainer [MFC], IsLeftPaneContainer", "CPaneContainer [MFC], IsLeftPartEmpty", "CPaneContainer [MFC], IsRightPartEmpty", "CPaneContainer [MFC], IsVisible", "CPaneContainer [MFC], Move", "CPaneContainer [MFC], OnDeleteHidePane", "CPaneContainer [MFC], OnMoveInternalPaneDivider", "CPaneContainer [MFC], OnShowPane", "CPaneContainer [MFC], Release", "CPaneContainer [MFC], ReleaseEmptyPaneContainer", "CPaneContainer [MFC], RemoveNonValidPanes", "CPaneContainer [MFC], RemovePane", "CPaneContainer [MFC], Resize", "CPaneContainer [MFC], ResizePane", "CPaneContainer [MFC], ResizePartOfPaneContainer", "CPaneContainer [MFC], Serialize", "CPaneContainer [MFC], SetPane", "CPaneContainer [MFC], SetPaneContainer", "CPaneContainer [MFC], SetPaneDivider", "CPaneContainer [MFC], SetParentPaneContainer", "CPaneContainer [MFC], SetRecentPercent", "CPaneContainer [MFC], SetUpByID", "CPaneContainer [MFC], StoreRecentDockSiteInfo", "CPaneContainer [MFC], StretchPaneContainer"]
 ms.assetid: beb79e08-f611-4d66-ba04-053baa79bf86
-caps.latest.revision: 32
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CPaneContainer Class
 The `CPaneContainer` class is a basic component of the docking model implemented by MFC. An object of this class stores pointers to two docking panes or to two instances of `CPaneContainer.` It also stores a pointer to the divider that separates the panes (or the containers). By nesting containers inside containers, the framework can build a binary tree that represents complex docking layouts. The root of the binary tree is stored in a [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) object.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
  
 ## Syntax  
   
@@ -122,7 +117,7 @@ CDockablePane* AddPane(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Return Value  
   
@@ -147,8 +142,8 @@ BOOL AddSubPaneContainer(
 ```  
   
 ### Parameters  
- [in] `pContainer`  
- [in] `bRightNodeNew`  
+ [in] *pContainer*  
+ [in] *bRightNodeNew*  
   
 ### Return Value  
   
@@ -166,10 +161,10 @@ virtual int CalcAvailablePaneSpace(
 ```  
   
 ### Parameters  
- [in] `nRequiredOffset`  
- [in] `pBar`  
- [in] `pContainer`  
- [in] `bLeftBar`  
+ [in] *nRequiredOffset*  
+ [in] *pBar*  
+ [in] *pContainer*  
+ [in] *bLeftBar*  
   
 ### Return Value  
   
@@ -185,8 +180,8 @@ virtual CSize CalcAvailableSpace(
 ```  
   
 ### Parameters  
- [in] `sizeStretch`  
- [in] `bLeftBar`  
+ [in] *sizeStretch*  
+ [in] *bLeftBar*  
   
 ### Return Value  
   
@@ -218,7 +213,7 @@ virtual CPaneContainer* Copy(CPaneContainer* pParentContainer);
 ```  
   
 ### Parameters  
- [in] `pParentContainer`  
+ [in] *pParentContainer*  
   
 ### Return Value  
   
@@ -236,10 +231,10 @@ CPaneContainer(
 ```  
   
 ### Parameters  
- [in] `pManager`  
- [in] `pLeftBar`  
- [in] `pRightBar`  
- [in] `pSlider`  
+ [in] *pManager*  
+ [in] *pLeftBar*  
+ [in] *pRightBar*  
+ [in] *pSlider*  
   
 ### Remarks  
   
@@ -253,8 +248,8 @@ virtual void DeletePane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `barType`  
+ [in] *pBar*  
+ [in] *barType*  
   
 ### Remarks  
   
@@ -268,8 +263,8 @@ CPaneContainer* FindSubPaneContainer(
 ```  
   
 ### Parameters  
- [in] `pObject`  
- [in] `findCriteria`  
+ [in] *pObject*  
+ [in] *findCriteria*  
   
 ### Return Value  
   
@@ -283,7 +278,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
   
 ### Return Value  
   
@@ -297,7 +292,7 @@ CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Return Value  
   
@@ -333,7 +328,7 @@ virtual void GetMinSize(CSize& size) const;
 ```  
   
 ### Parameters  
- [in] `size`  
+ [in] *size*  
   
 ### Remarks  
   
@@ -345,7 +340,7 @@ virtual void GetMinSizeLeft(CSize& size) const;
 ```  
   
 ### Parameters  
- [in] `size`  
+ [in] *size*  
   
 ### Remarks  
   
@@ -357,7 +352,7 @@ virtual void GetMinSizeRight(CSize& size) const;
 ```  
   
 ### Parameters  
- [in] `size`  
+ [in] *size*  
   
 ### Remarks  
   
@@ -492,8 +487,8 @@ virtual void GetWindowRect(
 ```  
   
 ### Parameters  
- [in] `rect`  
- [in] `bIgnoreVisibility`  
+ [in] *rect*  
+ [in] *bIgnoreVisibility*  
   
 ### Remarks  
   
@@ -527,7 +522,7 @@ BOOL IsLeftPane(CDockablePane* pBar) const;
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Return Value  
   
@@ -552,7 +547,7 @@ BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
 ```  
   
 ### Parameters  
- [in] `bCheckVisibility`  
+ [in] *bCheckVisibility*  
   
 ### Return Value  
   
@@ -566,7 +561,7 @@ BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
 ```  
   
 ### Parameters  
- [in] `bCheckVisibility`  
+ [in] *bCheckVisibility*  
   
 ### Return Value  
   
@@ -591,7 +586,7 @@ virtual void Move(CPoint ptNewLeftTop);
 ```  
   
 ### Parameters  
- [in] `ptNewLeftTop`  
+ [in] *ptNewLeftTop*  
   
 ### Remarks  
   
@@ -605,8 +600,8 @@ void OnDeleteHidePane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bHide`  
+ [in] *pBar*  
+ [in] *bHide*  
   
 ### Remarks  
   
@@ -620,8 +615,8 @@ virtual int OnMoveInternalPaneDivider(
 ```  
   
 ### Parameters  
- [in] `nOffset`  
- [in] `hdwp`  
+ [in] *nOffset*  
+ [in] *hdwp*  
   
 ### Return Value  
   
@@ -637,8 +632,8 @@ virtual void OnShowPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bShow`  
+ [in] *pBar*  
+ [in] *bShow*  
   
 ### Remarks  
   
@@ -679,7 +674,7 @@ virtual void RemovePane(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -694,9 +689,9 @@ virtual void Resize(
 ```  
   
 ### Parameters  
- [in] `rect`  
- [in] `hdwp`  
- [in] `bRedraw`  
+ [in] *rect*  
+ [in] *hdwp*  
+ [in] *bRedraw*  
   
 ### Remarks  
   
@@ -714,12 +709,12 @@ virtual void ResizePane(
 ```  
   
 ### Parameters  
- [in] `nOffset`  
- [in] `pBar`  
- [in] `pContainer`  
- [in] `bHorz`  
- [in] `bLeftBar`  
- [in] `hdwp`  
+ [in] *nOffset*  
+ [in] *pBar*  
+ [in] *pContainer*  
+ [in] *bHorz*  
+ [in] *bLeftBar*  
+ [in] *hdwp*  
   
 ### Remarks  
   
@@ -734,9 +729,9 @@ virtual void ResizePartOfPaneContainer(
 ```  
   
 ### Parameters  
- [in] `nOffset`  
- [in] `bLeftPart`  
- [in] `hdwp`  
+ [in] *nOffset*  
+ [in] *bLeftPart*  
+ [in] *hdwp*  
   
 ### Remarks  
   
@@ -748,7 +743,7 @@ void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
   
 ### Remarks  
   
@@ -762,8 +757,8 @@ void SetPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `bLeft`  
+ [in] *pBar*  
+ [in] *bLeft*  
   
 ### Remarks  
   
@@ -777,8 +772,8 @@ void SetPaneContainer(
 ```  
   
 ### Parameters  
- [in] `pContainer`  
- [in] `bLeft`  
+ [in] *pContainer*  
+ [in] *bLeft*  
   
 ### Remarks  
   
@@ -790,7 +785,7 @@ void SetPaneDivider(CPaneDivider* pSlider);
 ```  
   
 ### Parameters  
- [in] `pSlider`  
+ [in] *pSlider*  
   
 ### Remarks  
   
@@ -802,7 +797,7 @@ void SetParentPaneContainer(CPaneContainer* p);
 ```  
   
 ### Parameters  
- [in] `p`  
+ [in] *p*  
   
 ### Remarks  
   
@@ -814,7 +809,7 @@ void SetRecentPercent(int nRecentPercent);
 ```  
   
 ### Parameters  
- [in] `nRecentPercent`  
+ [in] *nRecentPercent*  
   
 ### Remarks  
   
@@ -828,8 +823,8 @@ BOOL SetUpByID(
 ```  
   
 ### Parameters  
- [in] `nID`  
- [in] `pBar`  
+ [in] *nID*  
+ [in] *pBar*  
   
 ### Return Value  
   
@@ -843,7 +838,7 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
   
 ### Remarks  
   
@@ -860,11 +855,11 @@ virtual int StretchPaneContainer(
 ```  
   
 ### Parameters  
- [in] `nOffset`  
- [in] `bStretchHorz`  
- [in] `bLeftBar`  
- [in] `bMoveSlider`  
- [in] `hdwp`  
+ [in] *nOffset*  
+ [in] *bStretchHorz*  
+ [in] *bLeftBar*  
+ [in] *bMoveSlider*  
+ [in] *hdwp*  
   
 ### Return Value  
   

@@ -2,19 +2,14 @@
 title: "Comma Operator: , | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["%2C"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["comma operator"]
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Comma Operator: ,
@@ -23,7 +18,6 @@ Allows grouping two statements where one is expected.
 ## Syntax  
   
 ```  
-  
 expression , expression  
 ```  
   
@@ -40,7 +34,7 @@ expression , expression
   
  Where the comma is normally used as a separator (for example in actual arguments to functions or aggregate initializers), the comma operator and its operands must be enclosed in parentheses. For example:  
   
-```  
+```cpp 
 func_one( x, y + 2, z );  
 func_two( (x--, y + 2), z );  
 ```  
@@ -49,7 +43,7 @@ func_two( (x--, y + 2), z );
   
 ## Example  
   
-```  
+```cpp 
 // cpp_comma_operator.cpp  
 #include <stdio.h>  
 int main () {  
@@ -67,7 +61,7 @@ int main () {
 30  
 ```  
   
-## See Also  
+## See also  
  [Expressions with Binary Operators](../cpp/expressions-with-binary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Sequential-Evaluation Operator](../c-language/sequential-evaluation-operator.md)

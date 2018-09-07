@@ -2,19 +2,14 @@
 title: "MFC ActiveX Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["MFC ActiveX Controls (MFC)"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleControl class [MFC], MFC ActiveX controls", "ActiveX controls [MFC], MFC", "containers [MFC], MFC ActiveX controls", "MFC ActiveX controls [MFC], serializing", "MFC ActiveX controls [MFC], containers", "serialization [MFC], MFC ActiveX controls", "dispatch maps [MFC], for MFC ActiveX controls", "MFC ActiveX controls [MFC], active/inactive state", "events [MFC], ActiveX controls", "MFC ActiveX controls [MFC]"]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls
@@ -41,7 +36,7 @@ Interaction Between an ActiveX Control Container and a Windowed ActiveX Control
   
 -   [Active Documents](../mfc/active-documents.md)  
   
--   [Understanding ActiveX Controls](http://msdn.microsoft.com/library/windows/desktop/ms693753)  
+-   [Understanding ActiveX Controls](/windows/desktop/com/activex-controls)  
   
 -   [Upgrading an Existing ActiveX Control to be Used on the Internet](../mfc/upgrading-an-existing-activex-control.md)  
   
@@ -62,7 +57,7 @@ Communication Between an ActiveX Control Container and an ActiveX Control
   
  The previous figure also illustrates how other OLE interfaces (besides automation and events) are handled by controls.  
   
- All of a control's communication with the container is performed by `COleControl`. To handle some of the container's requests, **COleControl** will call member functions that are implemented in the control class. All methods and some properties are handled in this way. Your control's class can also initiate communication with the container by calling member functions of `COleControl`. Events are fired in this manner.  
+ All of a control's communication with the container is performed by `COleControl`. To handle some of the container's requests, `COleControl` will call member functions that are implemented in the control class. All methods and some properties are handled in this way. Your control's class can also initiate communication with the container by calling member functions of `COleControl`. Events are fired in this manner.  
   
 ##  <a name="_core_active_and_inactive_states_of_an_activex_control"></a> Active and Inactive States of an ActiveX Control  
  A control has two basic states: active and inactive. Traditionally, these states were distinguished by whether the control had a window. An active control had a window; an inactive control did not. With the introduction of windowless activation, this distinction is no longer universal, but still applies to many controls.  

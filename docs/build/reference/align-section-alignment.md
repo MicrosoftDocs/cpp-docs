@@ -2,17 +2,13 @@
 title: "/ALIGN (Section Alignment) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/29/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.Alignment", "/align"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["sections, specifying alignment", "ALIGN linker option", "/ALIGN linker option", "-ALIGN linker option", "section alignment", "sections"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /ALIGN (Section Alignment)

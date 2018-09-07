@@ -2,19 +2,14 @@
 title: "CMFCDesktopAlertWndButton Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCaptionButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWndButton::IsCloseButton"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDesktopAlertWndButton [MFC], IsCaptionButton", "CMFCDesktopAlertWndButton [MFC], IsCloseButton"]
 ms.assetid: df39a0c8-0c39-4ab0-8c64-78c5b2c4ecaf
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertWndButton Class
@@ -53,7 +48,7 @@ class CMFCDesktopAlertWndButton : public CMFCButton
 |`CMFCDesktopAlertWndButton::m_bIsCloseButton`|A Boolean value that specifies whether the button closes the alert dialog box.|  
   
 ### Remarks  
- By default, the constructor sets the `m_bIsCaptionButton` and `m_bIsCloseButton` data members to `FALSE`. The parent `CMFCDesktopAlertDialog` object sets `m_bIsCaptionButton` to `TRUE` if the button is positioned in the caption area of the alert dialog box. The `CMFCDesktopAlertDialog` class creates a `CMFCDesktopAlertWndButton` object that serves as the button that closes the alert dialog box and sets `m_bIsCloseButton` to `TRUE`.  
+ By default, the constructor sets the `m_bIsCaptionButton` and `m_bIsCloseButton` data members to FALSE. The parent `CMFCDesktopAlertDialog` object sets `m_bIsCaptionButton` to TRUE if the button is positioned in the caption area of the alert dialog box. The `CMFCDesktopAlertDialog` class creates a `CMFCDesktopAlertWndButton` object that serves as the button that closes the alert dialog box and sets `m_bIsCloseButton` to TRUE.  
   
  Add `CMFCDesktopAlertWndButton` objects to a `CMFCDesktopAlertDialog` object as you would add any button. For more information about `CMFCDesktopAlertDialog`, see [CMFCDesktopAlertDialog Class](../../mfc/reference/cmfcdesktopalertdialog-class.md).  
   

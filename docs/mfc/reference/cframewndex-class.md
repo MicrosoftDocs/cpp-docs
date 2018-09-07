@@ -2,19 +2,14 @@
 title: "CFrameWndEx Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CFrameWndEx", "AFXFRAMEWNDEX/CFrameWndEx", "AFXFRAMEWNDEX/CFrameWndEx::ActiveItemRecalcLayout", "AFXFRAMEWNDEX/CFrameWndEx::AddPane", "AFXFRAMEWNDEX/CFrameWndEx::AdjustDockingLayout", "AFXFRAMEWNDEX/CFrameWndEx::DelayUpdateFrameMenu", "AFXFRAMEWNDEX/CFrameWndEx::DockPane", "AFXFRAMEWNDEX/CFrameWndEx::DockPaneLeftOf", "AFXFRAMEWNDEX/CFrameWndEx::EnableAutoHidePanes", "AFXFRAMEWNDEX/CFrameWndEx::EnableDocking", "AFXFRAMEWNDEX/CFrameWndEx::EnableFullScreenMainMenu", "AFXFRAMEWNDEX/CFrameWndEx::EnableFullScreenMode", "AFXFRAMEWNDEX/CFrameWndEx::EnableLoadDockState", "AFXFRAMEWNDEX/CFrameWndEx::EnablePaneMenu", "AFXFRAMEWNDEX/CFrameWndEx::GetActivePopup", "AFXFRAMEWNDEX/CFrameWndEx::GetDefaultResId", "AFXFRAMEWNDEX/CFrameWndEx::GetDockingManager", "AFXFRAMEWNDEX/CFrameWndEx::GetMenuBar", "AFXFRAMEWNDEX/CFrameWndEx::GetPane", "AFXFRAMEWNDEX/CFrameWndEx::GetRibbonBar", "AFXFRAMEWNDEX/CFrameWndEx::GetTearOffBars", "AFXFRAMEWNDEX/CFrameWndEx::GetToolbarButtonToolTipText", "AFXFRAMEWNDEX/CFrameWndEx::InsertPane", "AFXFRAMEWNDEX/CFrameWndEx::IsFullScreen", "AFXFRAMEWNDEX/CFrameWndEx::IsMenuBarAvailable", "AFXFRAMEWNDEX/CFrameWndEx::IsPointNearDockSite", "AFXFRAMEWNDEX/CFrameWndEx::IsPrintPreview", "AFXFRAMEWNDEX/CFrameWndEx::LoadFrame", "AFXFRAMEWNDEX/CFrameWndEx::NegotiateBorderSpace", "AFXFRAMEWNDEX/CFrameWndEx::OnActivate", "AFXFRAMEWNDEX/CFrameWndEx::OnActivateApp", "AFXFRAMEWNDEX/CFrameWndEx::OnChangeVisualManager", "AFXFRAMEWNDEX/CFrameWndEx::OnClose", "AFXFRAMEWNDEX/CFrameWndEx::OnCloseDockingPane", "AFXFRAMEWNDEX/CFrameWndEx::OnCloseMiniFrame", "AFXFRAMEWNDEX/CFrameWndEx::OnClosePopupMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnCmdMsg", "AFXFRAMEWNDEX/CFrameWndEx::OnContextHelp", "AFXFRAMEWNDEX/CFrameWndEx::OnCreate", "AFXFRAMEWNDEX/CFrameWndEx::OnDestroy", "AFXFRAMEWNDEX/CFrameWndEx::OnDrawMenuImage", "AFXFRAMEWNDEX/CFrameWndEx::OnDrawMenuLogo", "AFXFRAMEWNDEX/CFrameWndEx::OnDWMCompositionChanged", "AFXFRAMEWNDEX/CFrameWndEx::OnExitSizeMove", "AFXFRAMEWNDEX/CFrameWndEx::OnGetMinMaxInfo", "AFXFRAMEWNDEX/CFrameWndEx::OnIdleUpdateCmdUI", "AFXFRAMEWNDEX/CFrameWndEx::OnLButtonDown", "AFXFRAMEWNDEX/CFrameWndEx::OnLButtonUp", "AFXFRAMEWNDEX/CFrameWndEx::OnMenuButtonToolHitTest", "AFXFRAMEWNDEX/CFrameWndEx::OnMenuChar", "AFXFRAMEWNDEX/CFrameWndEx::OnMouseMove", "AFXFRAMEWNDEX/CFrameWndEx::OnMoveMiniFrame", "AFXFRAMEWNDEX/CFrameWndEx::OnNcActivate", "AFXFRAMEWNDEX/CFrameWndEx::OnNcCalcSize", "AFXFRAMEWNDEX/CFrameWndEx::OnNcHitTest", "AFXFRAMEWNDEX/CFrameWndEx::OnNcMouseMove", "AFXFRAMEWNDEX/CFrameWndEx::OnNcPaint", "AFXFRAMEWNDEX/CFrameWndEx::OnPaneCheck", "AFXFRAMEWNDEX/CFrameWndEx::OnPostPreviewFrame", "AFXFRAMEWNDEX/CFrameWndEx::OnPowerBroadcast", "AFXFRAMEWNDEX/CFrameWndEx::OnSetMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnSetPreviewMode", "AFXFRAMEWNDEX/CFrameWndEx::OnSetText", "AFXFRAMEWNDEX/CFrameWndEx::OnShowCustomizePane", "AFXFRAMEWNDEX/CFrameWndEx::OnShowPanes", "AFXFRAMEWNDEX/CFrameWndEx::OnShowPopupMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnSize", "AFXFRAMEWNDEX/CFrameWndEx::OnSizing", "AFXFRAMEWNDEX/CFrameWndEx::OnSysColorChange", "AFXFRAMEWNDEX/CFrameWndEx::OnTearOffMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnToolbarContextMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnToolbarCreateNew", "AFXFRAMEWNDEX/CFrameWndEx::OnToolbarDelete", "AFXFRAMEWNDEX/CFrameWndEx::OnUpdateFrameMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnUpdateFrameTitle", "AFXFRAMEWNDEX/CFrameWndEx::OnUpdatePaneMenu", "AFXFRAMEWNDEX/CFrameWndEx::OnWindowPosChanged", "AFXFRAMEWNDEX/CFrameWndEx::PaneFromPoint", "AFXFRAMEWNDEX/CFrameWndEx::PreTranslateMessage", "AFXFRAMEWNDEX/CFrameWndEx::RecalcLayout", "AFXFRAMEWNDEX/CFrameWndEx::RemovePaneFromDockManager", "AFXFRAMEWNDEX/CFrameWndEx::SetDockState", "AFXFRAMEWNDEX/CFrameWndEx::SetPrintPreviewFrame", "AFXFRAMEWNDEX/CFrameWndEx::SetupToolbarMenu", "AFXFRAMEWNDEX/CFrameWndEx::ShowFullScreen", "AFXFRAMEWNDEX/CFrameWndEx::ShowPane", "AFXFRAMEWNDEX/CFrameWndEx::UpdateCaption", "AFXFRAMEWNDEX/CFrameWndEx::WinHelp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CFrameWndEx [MFC], ActiveItemRecalcLayout", "CFrameWndEx [MFC], AddPane", "CFrameWndEx [MFC], AdjustDockingLayout", "CFrameWndEx [MFC], DelayUpdateFrameMenu", "CFrameWndEx [MFC], DockPane", "CFrameWndEx [MFC], DockPaneLeftOf", "CFrameWndEx [MFC], EnableAutoHidePanes", "CFrameWndEx [MFC], EnableDocking", "CFrameWndEx [MFC], EnableFullScreenMainMenu", "CFrameWndEx [MFC], EnableFullScreenMode", "CFrameWndEx [MFC], EnableLoadDockState", "CFrameWndEx [MFC], EnablePaneMenu", "CFrameWndEx [MFC], GetActivePopup", "CFrameWndEx [MFC], GetDefaultResId", "CFrameWndEx [MFC], GetDockingManager", "CFrameWndEx [MFC], GetMenuBar", "CFrameWndEx [MFC], GetPane", "CFrameWndEx [MFC], GetRibbonBar", "CFrameWndEx [MFC], GetTearOffBars", "CFrameWndEx [MFC], GetToolbarButtonToolTipText", "CFrameWndEx [MFC], InsertPane", "CFrameWndEx [MFC], IsFullScreen", "CFrameWndEx [MFC], IsMenuBarAvailable", "CFrameWndEx [MFC], IsPointNearDockSite", "CFrameWndEx [MFC], IsPrintPreview", "CFrameWndEx [MFC], LoadFrame", "CFrameWndEx [MFC], NegotiateBorderSpace", "CFrameWndEx [MFC], OnActivate", "CFrameWndEx [MFC], OnActivateApp", "CFrameWndEx [MFC], OnChangeVisualManager", "CFrameWndEx [MFC], OnClose", "CFrameWndEx [MFC], OnCloseDockingPane", "CFrameWndEx [MFC], OnCloseMiniFrame", "CFrameWndEx [MFC], OnClosePopupMenu", "CFrameWndEx [MFC], OnCmdMsg", "CFrameWndEx [MFC], OnContextHelp", "CFrameWndEx [MFC], OnCreate", "CFrameWndEx [MFC], OnDestroy", "CFrameWndEx [MFC], OnDrawMenuImage", "CFrameWndEx [MFC], OnDrawMenuLogo", "CFrameWndEx [MFC], OnDWMCompositionChanged", "CFrameWndEx [MFC], OnExitSizeMove", "CFrameWndEx [MFC], OnGetMinMaxInfo", "CFrameWndEx [MFC], OnIdleUpdateCmdUI", "CFrameWndEx [MFC], OnLButtonDown", "CFrameWndEx [MFC], OnLButtonUp", "CFrameWndEx [MFC], OnMenuButtonToolHitTest", "CFrameWndEx [MFC], OnMenuChar", "CFrameWndEx [MFC], OnMouseMove", "CFrameWndEx [MFC], OnMoveMiniFrame", "CFrameWndEx [MFC], OnNcActivate", "CFrameWndEx [MFC], OnNcCalcSize", "CFrameWndEx [MFC], OnNcHitTest", "CFrameWndEx [MFC], OnNcMouseMove", "CFrameWndEx [MFC], OnNcPaint", "CFrameWndEx [MFC], OnPaneCheck", "CFrameWndEx [MFC], OnPostPreviewFrame", "CFrameWndEx [MFC], OnPowerBroadcast", "CFrameWndEx [MFC], OnSetMenu", "CFrameWndEx [MFC], OnSetPreviewMode", "CFrameWndEx [MFC], OnSetText", "CFrameWndEx [MFC], OnShowCustomizePane", "CFrameWndEx [MFC], OnShowPanes", "CFrameWndEx [MFC], OnShowPopupMenu", "CFrameWndEx [MFC], OnSize", "CFrameWndEx [MFC], OnSizing", "CFrameWndEx [MFC], OnSysColorChange", "CFrameWndEx [MFC], OnTearOffMenu", "CFrameWndEx [MFC], OnToolbarContextMenu", "CFrameWndEx [MFC], OnToolbarCreateNew", "CFrameWndEx [MFC], OnToolbarDelete", "CFrameWndEx [MFC], OnUpdateFrameMenu", "CFrameWndEx [MFC], OnUpdateFrameTitle", "CFrameWndEx [MFC], OnUpdatePaneMenu", "CFrameWndEx [MFC], OnWindowPosChanged", "CFrameWndEx [MFC], PaneFromPoint", "CFrameWndEx [MFC], PreTranslateMessage", "CFrameWndEx [MFC], RecalcLayout", "CFrameWndEx [MFC], RemovePaneFromDockManager", "CFrameWndEx [MFC], SetDockState", "CFrameWndEx [MFC], SetPrintPreviewFrame", "CFrameWndEx [MFC], SetupToolbarMenu", "CFrameWndEx [MFC], ShowFullScreen", "CFrameWndEx [MFC], ShowPane", "CFrameWndEx [MFC], UpdateCaption", "CFrameWndEx [MFC], WinHelp"]
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-caps.latest.revision: 39
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CFrameWndEx Class
@@ -72,14 +67,14 @@ class CFrameWndEx : public CFrameWnd
 |[CFrameWndEx::OnCreate](#oncreate)|Called by the framework after the frame is created.|  
 |[CFrameWndEx::OnDestroy](#ondestroy)|Called by the framework when the frame is destroyed.|  
 |[CFrameWndEx::OnDrawMenuImage](#ondrawmenuimage)|Called by the framework when the application draws the image associated with a menu item.|  
-|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a `CMFCPopupMenu` object processes a [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message.|  
+|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Called by the framework when a `CMFCPopupMenu` object processes a [WM_PAINT](/windows/desktop/gdi/wm-paint) message.|  
 |[CFrameWndEx::OnDWMCompositionChanged](#ondwmcompositionchanged)|Called by the framework when Desktop Window Manager (DWM) composition has been enabled or disabled.|  
 |[CFrameWndEx::OnExitSizeMove](#onexitsizemove)|Called by the framework when the frame stops moving or resizing.|  
 |[CFrameWndEx::OnGetMinMaxInfo](#ongetminmaxinfo)|Called by the framework when the frame is resized to set window dimension limits.|  
 |[CFrameWndEx::OnIdleUpdateCmdUI](#onidleupdatecmdui)|Called by the framework to update the frame display when command processing is idle.|  
 |[CFrameWndEx::OnLButtonDown](#onlbuttondown)|The framework calls this method when the user presses the left mouse button.|  
 |[CFrameWndEx::OnLButtonUp](#onlbuttonup)|The framework calls this method when the user releases the left mouse button.|  
-|[CFrameWndEx::OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Called by the framework when a `CMFCToolBarButton` object processes a `WM_NCHITTEST` message.|  
+|[CFrameWndEx::OnMenuButtonToolHitTest](#onmenubuttontoolhittest)|Called by the framework when a `CMFCToolBarButton` object processes a WM_NCHITTEST message.|  
 |[CFrameWndEx::OnMenuChar](#onmenuchar)|Called by the framework when a menu is displayed and the user presses a key that does not correspond to a command.|  
 |[CFrameWndEx::OnMouseMove](#onmousemove)|The framework calls this method when the pointer moves.|  
 |[CFrameWndEx::OnMoveMiniFrame](#onmoveminiframe)|Called by the framework when a pane window moves.|  
@@ -159,14 +154,14 @@ BOOL AddPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A control bar pane to register.  
   
- [in] `bTail`  
- `TRUE` if you want to add the control bar pane to the end of the list; `FALSE` otherwise.  
+ [in] *bTail*  
+ TRUE if you want to add the control bar pane to the end of the list; FALSE otherwise.  
   
 ### Return Value  
- `TRUE` if the control bar was successfully registered; `FALSE` otherwise.  
+ TRUE if the control bar was successfully registered; FALSE otherwise.  
   
 ##  <a name="adjustdockinglayout"></a>  CFrameWndEx::AdjustDockingLayout  
  Recalculates the layout of all panes that are docked to the frame window.  
@@ -176,11 +171,11 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```  
   
 ### Parameters  
- `hdwp`  
+ *hdwp*  
  A handle to a structure that contains the positions of multiple windows. .  
   
 ### Remarks  
- The hdwp structure is initialized by the [BeginDeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632672) method.  
+ The hdwp structure is initialized by the [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) method.  
   
 ##  <a name="delayupdateframemenu"></a>  CFrameWndEx::DelayUpdateFrameMenu  
  Sets the frame menu and then updates it when command processing is idle.  
@@ -190,7 +185,7 @@ virtual void DelayUpdateFrameMenu(HMENU hMenuAlt);
 ```  
   
 ### Parameters  
- [in] `hMenuAlt`  
+ [in] *hMenuAlt*  
  Handle to an alternative menu.  
   
 ### Remarks  
@@ -206,17 +201,17 @@ void DockPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the control bar to be docked.  
   
- [in] `nDockBarID`  
+ [in] *nDockBarID*  
  The ID of the side of the frame window to dock to.  
   
- [in] `lpRect`  
+ [in] *lpRect*  
  A pointer to a constant Rect structure that specifies the window's screen position and size.  
   
 ### Remarks  
- The `nDockBarID` parameter can have one of the following values:  
+ The *nDockBarID* parameter can have one of the following values:  
   
 -   AFX_IDW_DOCKBAR_TOP  
   
@@ -236,17 +231,17 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the pane object to be docked.  
   
- [in] `pLeftOf`  
- A pointer to the pane to the left of which to dock the pane specified by `pBar`.  
+ [in] *pLeftOf*  
+ A pointer to the pane to the left of which to dock the pane specified by *pBar*.  
   
 ### Return Value  
- `TRUE` if `pBar` is docked successfully. `FALSE` otherwise.  
+ TRUE if *pBar* is docked successfully. FALSE otherwise.  
   
 ### Remarks  
- The method takes the toolbar specified by the `pBar` parameter and docks it at the left side of the toolbar specified by `pLeftOf` parameter.  
+ The method takes the toolbar specified by the *pBar* parameter and docks it at the left side of the toolbar specified by *pLeftOf* parameter.  
   
 ##  <a name="enableautohidepanes"></a>  CFrameWndEx::EnableAutoHidePanes  
  Enables auto-hide mode for the pane when it is docked to the specified side of the main frame window.  
@@ -256,14 +251,14 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Specifies the side of the main frame window to which to dock the pane.  
   
 ### Return Value  
- `TRUE` if a bar pane is successfully docked to the frame window side that is specified by `dwDockStyle`, `FALSE` otherwise.  
+ TRUE if a bar pane is successfully docked to the frame window side that is specified by *dwDockStyle*, FALSE otherwise.  
   
 ### Remarks  
- `dwDockStyle` can have one of the following values:  
+ *dwDockStyle* can have one of the following values:  
   
 -   CBRS_ALIGN_TOP: allows the control bar to be docked to the top of the client area of a frame window.  
   
@@ -281,14 +276,14 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### Parameters  
- [in] `dwDockStyle`  
+ [in] *dwDockStyle*  
  Specifies the side of the main frame window where the pane bar docks.  
   
 ### Return Value  
- `TRUE` if a bar pane can be successfully docked at the specified side. `FALSE` otherwise.  
+ TRUE if a bar pane can be successfully docked at the specified side. FALSE otherwise.  
   
 ### Remarks  
- The `dwDockStyle` parameter can have one of the following values:  
+ The *dwDockStyle* parameter can have one of the following values:  
   
 -   CBRS_ALIGN_TOP  
   
@@ -306,8 +301,8 @@ void EnableFullScreenMainMenu(BOOL bEnableMenu);
 ```  
   
 ### Parameters  
- [in] `bEnableMenu`  
- `TRUE` to show the main menu in a full screen mode, `FALSE` otherwise.  
+ [in] *bEnableMenu*  
+ TRUE to show the main menu in a full screen mode, FALSE otherwise.  
   
 ##  <a name="enablefullscreenmode"></a>  CFrameWndEx::EnableFullScreenMode  
  Enables the full-screen mode for the frame window.  
@@ -317,7 +312,7 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
 ```  
   
 ### Parameters  
- [in] `uiFullScreenCmd`  
+ [in] *uiFullScreenCmd*  
  The ID of a command that enables and disables the full screen mode.  
   
 ### Remarks  
@@ -335,8 +330,8 @@ void EnableLoadDockState(BOOL bEnable=TRUE);
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable the loading of the docking state, `FALSE` to disable the loading of the docking state.  
+ [in] *bEnable*  
+ TRUE to enable the loading of the docking state, FALSE to disable the loading of the docking state.  
   
 ##  <a name="enablepanemenu"></a>  CFrameWndEx::EnablePaneMenu  
  Enables or disables the automatic handling of the pane menu.  
@@ -352,23 +347,23 @@ void EnablePaneMenu(
 ```  
   
 ### Parameters  
- [in] `bEnable`  
- `TRUE` to enable the automatic handling of the control bar pop-up menus; `FALSE` to disable the automatic handling of the control bar pop-up menus.  
+ [in] *bEnable*  
+ TRUE to enable the automatic handling of the control bar pop-up menus; FALSE to disable the automatic handling of the control bar pop-up menus.  
   
- [in] `uiCustomizeCmd`  
+ [in] *uiCustomizeCmd*  
  The command ID of the **Customize** menu item.  
   
- [in] `strCustomizeLabel`  
+ [in] *strCustomizeLabel*  
  The label to be displayed for the **Customize** menu item  
   
- [in] `uiViewToolbarsMenuEntryID`  
+ [in] *uiViewToolbarsMenuEntryID*  
  The ID of a toolbar menu item that opens the pop-up menu in the control bar.  
   
- [in] `bContextMenuShowsToolbarsOnly`  
- If `TRUE`, the control bar context menu displays the list of toolbars only. If `FALSE`, the menu displays the list of the toolbars and the docking bars.  
+ [in] *bContextMenuShowsToolbarsOnly*  
+ If TRUE, the control bar context menu displays the list of toolbars only. If FALSE, the menu displays the list of the toolbars and the docking bars.  
   
- [in] `bViewMenuShowsToolbarsOnly`  
- If `TRUE`, the control bar menu displays the list of the toolbars only. If `FALSE`, the menu displays the list of the toolbars and the docking bars.  
+ [in] *bViewMenuShowsToolbarsOnly*  
+ If TRUE, the control bar menu displays the list of the toolbars only. If FALSE, the menu displays the list of the toolbars and the docking bars.  
   
 ##  <a name="getactivepopup"></a>  CFrameWndEx::GetActivePopup  
  Returns a pointer to the currently displayed pop-up menu.  
@@ -378,7 +373,7 @@ CMFCPopupMenu* GetActivePopup() const;
 ```  
   
 ### Return Value  
- A pointer to the currently displayed pop-up menu; otherwise `NULL`.  
+ A pointer to the currently displayed pop-up menu; otherwise NULL.  
   
 ##  <a name="getdefaultresid"></a>  CFrameWndEx::GetDefaultResId  
  Returns the resource ID that you specified when the framework loaded the frame window.  
@@ -421,11 +416,11 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The control ID.  
   
 ### Return Value  
- A pointer to the pane that has the specified ID. `NULL` if no such pane exists.  
+ A pointer to the pane that has the specified ID. NULL if no such pane exists.  
   
 ##  <a name="getribbonbar"></a>  CFrameWndEx::GetRibbonBar  
  Retrieves the ribbon bar control for the frame.  
@@ -459,14 +454,14 @@ virtual BOOL GetToolbarButtonToolTipText(
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to a toolbar button.  
   
- [in] `strTTText`  
+ [in] *strTTText*  
  The tooltip text to display for the button.  
   
 ### Return Value  
- `TRUE` if the tooltip has been displayed. `FALSE` otherwise.  
+ TRUE if the tooltip has been displayed. FALSE otherwise.  
   
 ### Remarks  
  By default, this method does nothing. Override this method if you want to display the tooltip for the toolbar button.  
@@ -482,17 +477,17 @@ BOOL InsertPane(
 ```  
   
 ### Parameters  
- `pControlBar`  
+ *pControlBar*  
  A pointer to a control bar to be inserted into the list of control bars and registered with the docking manager.  
   
- `pTarget`  
+ *pTarget*  
  A pointer to a control bar before or after which to insert the pane.  
   
- `bAfter`  
- `TRUE` if you want to insert `pControlBar` after `pTarget`, `FALSE` otherwise.  
+ *bAfter*  
+ TRUE if you want to insert *pControlBar* after *pTarget*, FALSE otherwise.  
   
 ### Return Value  
- `TRUE` if the control bar was successfully inserted and registered, `FALSE` otherwise.  
+ TRUE if the control bar was successfully inserted and registered, FALSE otherwise.  
   
 ### Remarks  
  You must register each control bar by using the [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md) to take a part in the docking layout.  
@@ -505,7 +500,7 @@ BOOL IsFullScreen() const;
 ```  
   
 ### Return Value  
- `TRUE` if the frame window is in full screen mode; otherwise `FALSE`.  
+ TRUE if the frame window is in full screen mode; otherwise FALSE.  
   
 ### Remarks  
  You can set the full screen mode by calling the [CFrameWndEx::EnableFullScreenMode](#enablefullscreenmode) method.  
@@ -518,7 +513,7 @@ BOOL IsMenuBarAvailable() const;
 ```  
   
 ### Return Value  
- `TRUE` if the frame window has a menu bar; otherwise `FALSE`.  
+ TRUE if the frame window has a menu bar; otherwise FALSE.  
   
 ##  <a name="ispointneardocksite"></a>  CFrameWndEx::IsPointNearDockSite  
  Determines whether the point is located in an alignment zone.  
@@ -531,31 +526,31 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The position of the point.  
   
- [out] `dwBarAlignment`  
+ [out] *dwBarAlignment*  
  Where the point is aligned. See the table in the Remarks section for possible values.  
   
- [out] `bOuterEdge`  
- `TRUE` if the point is located close to the frame border; `FALSE` if the point is located in a client area.  
+ [out] *bOuterEdge*  
+ TRUE if the point is located close to the frame border; FALSE if the point is located in a client area.  
   
 ### Return Value  
- `TRUE` if the point is located in an alignment zone; otherwise, `FALSE`.  
+ TRUE if the point is located in an alignment zone; otherwise, FALSE.  
   
 ### Remarks  
- The following table lists the possible values for the `dwBarAlignment` parameter.  
+ The following table lists the possible values for the *dwBarAlignment* parameter.  
   
- `CBRS_ALIGN_TOP`  
+ CBRS_ALIGN_TOP  
  Aligned to the top.  
   
- `CBRS_ALIGN_RIGHT`  
+ CBRS_ALIGN_RIGHT  
  Aligned to the right.  
   
- `CBRS_ALIGN_BOTTOM`  
+ CBRS_ALIGN_BOTTOM  
  Aligned to the bottom.  
   
- `CBRS_ALIGN_LEFT`  
+ CBRS_ALIGN_LEFT  
  Aligned to the left.  
   
 ##  <a name="isprintpreview"></a>  CFrameWndEx::IsPrintPreview  
@@ -566,7 +561,7 @@ BOOL IsPrintPreview();
 ```  
   
 ### Return Value  
- `TRUE` if the frame window is in print preview mode; otherwise, `FALSE`.  
+ TRUE if the frame window is in print preview mode; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -582,20 +577,20 @@ virtual BOOL LoadFrame(
 ```  
   
 ### Parameters  
- [in] `nIDResource`  
+ [in] *nIDResource*  
  The resource ID that is used to load all frame resources.  
   
- [in] `dwDefaultStyle`  
+ [in] *dwDefaultStyle*  
  The default frame window style.  
   
- [in] `pParentWnd`  
+ [in] *pParentWnd*  
  Pointer to the parent window of the frame.  
   
- [in] `pContext`  
+ [in] *pContext*  
  Pointer to a [CCreateContext Structure](../../mfc/reference/ccreatecontext-structure.md) class that is used by the framework during application creation.  
   
 ### Return Value  
- `TRUE` if the method was successful; otherwise, `FALSE`.  
+ TRUE if the method was successful; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -609,25 +604,25 @@ virtual BOOL NegotiateBorderSpace(
 ```  
   
 ### Parameters  
- [in] `nBorderCmd`  
+ [in] *nBorderCmd*  
  The border negotiation command. See the Remarks section for possible values.  
   
- [in, out] `lpRectBorder`  
+ [in, out] *lpRectBorder*  
  Dimensions of the border.  
   
 ### Return Value  
- `TRUE` if the layout must be recalculated; otherwise, `FALSE`.  
+ TRUE if the layout must be recalculated; otherwise, FALSE.  
   
 ### Remarks  
- The following table lists the possible values for the `nBorderCmd` parameter.  
+ The following table lists the possible values for the *nBorderCmd* parameter.  
   
- `borderGet`  
+ *borderGet*  
  Get available OLE client space.  
   
- `borderRequest`  
+ *borderRequest*  
  Request OLE client space.  
   
- `borderSet`  
+ *borderSet*  
  Set OLE client space.  
   
 ##  <a name="onactivate"></a>  CFrameWndEx::OnActivate  
@@ -641,25 +636,25 @@ afx_msg void OnActivate(
 ```  
   
 ### Parameters  
- [in] `nState`  
+ [in] *nState*  
  Whether the frame is active or inactive. See the table in the Remarks section for possible values.  
   
- [in] `pWndOther`  
+ [in] *pWndOther*  
  Pointer to another window that is switching user input with the current one.  
   
- [in] `bMinimized`  
- The minimized state of the frame. `TRUE` if the frame is minimized; otherwise, `FALSE`.  
+ [in] *bMinimized*  
+ The minimized state of the frame. TRUE if the frame is minimized; otherwise, FALSE.  
   
 ### Remarks  
- The following table lists the possible values for the `nState` parameter.  
+ The following table lists the possible values for the *nState* parameter.  
   
- `WA_ACTIVE`  
+ WA_ACTIVE  
  The frame is selected by a method other than a mouse click.  
   
- `WA_CLICKACTIVE`  
+ WA_CLICKACTIVE  
  The frame is selected by a mouse click.  
   
- `WA_INACTIVE`  
+ WA_INACTIVE  
  The frame is not selected.  
   
 ##  <a name="onactivateapp"></a>  CFrameWndEx::OnActivateApp  
@@ -672,10 +667,10 @@ afx_msg void OnActivateApp(
 ```  
   
 ### Parameters  
- [in] `bActive`  
- `TRUE` if the application is selected; `FALSE` if the application is not selected.  
+ [in] *bActive*  
+ TRUE if the application is selected; FALSE if the application is not selected.  
   
- [in] `dwThreadID`  
+ [in] *dwThreadID*  
  This parameter is not used.  
   
 ### Remarks  
@@ -690,10 +685,10 @@ afx_msg LRESULT OnChangeVisualManager(
 ```  
   
 ### Parameters  
- [in] `wParam`  
+ [in] *wParam*  
  This parameter is not used.  
   
- [in] `lParam`  
+ [in] *lParam*  
  This parameter is not used.  
   
 ### Return Value  
@@ -719,7 +714,7 @@ virtual BOOL OnCloseDockingPane(CDockablePane* pPane);
 ```  
   
 ### Return Value  
- `TRUE` if the docking bar can be closed. `FALSE` otherwise  
+ TRUE if the docking bar can be closed. FALSE otherwise  
   
 ### Remarks  
  The default implement does nothing. Override this method if you want to handle the hiding of the docking bar.  
@@ -732,7 +727,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd* pWnd);
 ```  
   
 ### Return Value  
- `TRUE` if a floating mini frame window can be closed. `FALSE` otherwise.  
+ TRUE if a floating mini frame window can be closed. FALSE otherwise.  
   
 ### Remarks  
  The default implementation does nothing. Override this method if you want to process the hiding of a floating mini frame window.  
@@ -745,11 +740,11 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 ```  
   
 ### Parameters  
- `pMenuPopup`  
+ *pMenuPopup*  
  A pointer to a pop-up menu.  
   
 ### Remarks  
- The framework sends a WM_DESTROY message when it is about to close the window. Override this method if you want to handle notifications from `CMFCPopupMenu` objects that belong to the frame window when a `CMFCPopupMenu` object is processing a `WM_DESTROY` message sent by the framework when the window is being closed.  
+ The framework sends a WM_DESTROY message when it is about to close the window. Override this method if you want to handle notifications from `CMFCPopupMenu` objects that belong to the frame window when a `CMFCPopupMenu` object is processing a WM_DESTROY message sent by the framework when the window is being closed.  
   
 ##  <a name="oncmdmsg"></a>  CFrameWndEx::OnCmdMsg  
  Dispatches command messages.  
@@ -763,20 +758,20 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  The command ID.  
   
- [in] `nCode`  
+ [in] *nCode*  
  Command message category.  
   
- [in, out] `pExtra`  
+ [in, out] *pExtra*  
  Pointer to a command object.  
   
- [in, out] `pHandlerInfo`  
+ [in, out] *pHandlerInfo*  
  Pointer to a command handler structure.  
   
 ### Return Value  
- `TRUE` if the command message was handled; otherwise, `FALSE`.  
+ TRUE if the command message was handled; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -797,7 +792,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ```  
   
 ### Parameters  
- [in] `lpCreateStruct`  
+ [in] *lpCreateStruct*  
  A pointer to the [CREATESTRUCT Structure](../../mfc/reference/createstruct-structure.md) for the new frame.  
   
 ### Return Value  
@@ -826,17 +821,17 @@ virtual BOOL OnDrawMenuImage(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pMenuButton`  
+ [in] *pMenuButton*  
  A pointer to a menu button whose image is being rendered.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  A pointer to a `Rect` structure that specifies the screen position and size of the image.  
   
 ### Return Value  
- `TRUE` if the framework successfully renders the image; `FALSE` otherwise.  
+ TRUE if the framework successfully renders the image; FALSE otherwise.  
   
 ### Remarks  
  Override this method if you want to customize the image rendering for the menu items that belong to the menu bar owned by the `CFrameWndEx` derived object.  
@@ -852,13 +847,13 @@ virtual void OnDrawMenuLogo(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `pMenu`  
+ [in] *pMenu*  
  A pointer to the menu item.  
   
- [in] `rectLogo`  
+ [in] *rectLogo*  
  A reference to a constant `CRect` structure that specifies the screen position and size of the menu logo.  
   
 ### Remarks  
@@ -874,10 +869,10 @@ afx_msg LRESULT OnDWMCompositionChanged(
 ```  
   
 ### Parameters  
- [in] `wp`  
+ [in] *wp*  
  This parameter is not used.  
   
- [in] `lp`  
+ [in] *lp*  
  This parameter is not used.  
   
 ### Return Value  
@@ -895,10 +890,10 @@ LRESULT OnExitSizeMove(
 ```  
   
 ### Parameters  
- [in] `wp`  
+ [in] *wp*  
  This parameter is not used.  
   
- [in] `lp`  
+ [in] *lp*  
  This parameter is not used.  
   
 ### Return Value  
@@ -914,8 +909,8 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 ```  
   
 ### Parameters  
- [in] `lpMMI`  
- Pointer to a [MINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632605) structure.  
+ [in] *lpMMI*  
+ Pointer to a [MINMAXINFO](https://msdn.microsoft.com/library/windows/desktop/ms632605) structure.  
   
 ### Remarks  
   
@@ -929,10 +924,10 @@ afx_msg LRESULT OnIdleUpdateCmdUI(
 ```  
   
 ### Parameters  
- [in] `wParam`  
+ [in] *wParam*  
  This parameter is not used.  
   
- [in] `lParam`  
+ [in] *lParam*  
  This parameter is not used.  
   
 ### Return Value  
@@ -950,10 +945,10 @@ afx_msg void OnLButtonDown(
 ```  
   
 ### Parameters  
- [in] `nFlags`  
- Indicates whether the user pressed modifier keys. For possible values see the parameter `wParam` in [WM_LBUTTONDOWN Notification](http://msdn.microsoft.com/library/windows/desktop/ms645607).  
+ [in] *nFlags*  
+ Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONDOWN Notification](/windows/desktop/inputdev/wm-lbuttondown).  
   
- [in] `point`  
+ [in] *point*  
  Specifies the x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Remarks  
@@ -968,16 +963,16 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### Parameters  
- [in] `nFlags`  
- Indicates whether the user pressed modifier keys. For possible values see the parameter `wParam` in [WM_LBUTTONUP Notification](http://msdn.microsoft.com/library/windows/desktop/ms645608).  
+ [in] *nFlags*  
+ Indicates whether the user pressed modifier keys. For possible values see the parameter *wParam* in [WM_LBUTTONUP Notification](/windows/desktop/inputdev/wm-lbuttonup).  
   
- [in] `point`  
+ [in] *point*  
  Specifies the x and y coordinates of the pointer, relative to the upper-left corner of the window.  
   
 ### Remarks  
   
 ##  <a name="onmenubuttontoolhittest"></a>  CFrameWndEx::OnMenuButtonToolHitTest  
- Called by the framework when a `CMFCToolBarButton` object processes a `WM_NCHITTEST` message.  
+ Called by the framework when a `CMFCToolBarButton` object processes a WM_NCHITTEST message.  
   
 ```  
 virtual BOOL OnMenuButtonToolHitTest(
@@ -986,14 +981,14 @@ virtual BOOL OnMenuButtonToolHitTest(
 ```  
   
 ### Parameters  
- [in] `pButton`  
+ [in] *pButton*  
  A pointer to the tool bar button.  
   
- [out] `pTI`  
+ [out] *pTI*  
  A pointer to a tool information structure.  
   
 ### Return Value  
- `TRUE` if the application fills the `pTI` parameter. `FALSE` otherwise.  
+ TRUE if the application fills the *pTI* parameter. FALSE otherwise.  
   
 ### Remarks  
  Override this method if you want to provide a tooltip information about a specific menu item.  
@@ -1009,13 +1004,13 @@ afx_msg LRESULT OnMenuChar(
 ```  
   
 ### Parameters  
- [in] `nChar`  
+ [in] *nChar*  
  Character code of the pressed key.  
   
- [in] `nFlags`  
- Contains the `MF_POPUP` flag if the menu displayed is a submenu; contains the `MF_SYSMENU` flag if the menu displayed is a control menu.  
+ [in] *nFlags*  
+ Contains the MF_POPUP flag if the menu displayed is a submenu; contains the MF_SYSMENU flag if the menu displayed is a control menu.  
   
- [in] `pMenu`  
+ [in] *pMenu*  
  Pointer to a menu.  
   
 ### Return Value  
@@ -1042,10 +1037,10 @@ afx_msg void OnMouseMove(
 ```  
   
 ### Parameters  
- [in] `nFlags`  
- Indicates whether a user pressed modifier keys. For possible values see the parameter `wParam` in [WM_MOUSEMOVE Notification](http://msdn.microsoft.com/library/windows/desktop/ms645616).  
+ [in] *nFlags*  
+ Indicates whether a user pressed modifier keys. For possible values see the parameter *wParam* in [WM_MOUSEMOVE Notification](/windows/desktop/inputdev/wm-mousemove).  
   
- [in] `point`  
+ [in] *point*  
  Specifies the x and y coordinates of the pointer relative to the upper-left corner of the window.  
   
 ### Remarks  
@@ -1058,11 +1053,11 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### Parameters  
- [in] `pFrame`  
+ [in] *pFrame*  
  Pointer to the [CPaneFrameWnd Class](../../mfc/reference/cpaneframewnd-class.md) pane window.  
   
 ### Return Value  
- `TRUE` if the pane window was not docked; `FALSE` if the pane window was docked.  
+ TRUE if the pane window was not docked; FALSE if the pane window was docked.  
   
 ### Remarks  
   
@@ -1074,8 +1069,8 @@ afx_msg BOOL OnNcActivate(BOOL bActive);
 ```  
   
 ### Parameters  
- [in] `bActive`  
- `TRUE` to draw the frame active; `FALSE` to draw the frame inactive.  
+ [in] *bActive*  
+ TRUE to draw the frame active; FALSE to draw the frame inactive.  
   
 ### Return Value  
  Nonzero to continue with default processing; 0 to prevent the non-client area from being deactivated.  
@@ -1092,10 +1087,10 @@ afx_msg void OnNcCalcSize(
 ```  
   
 ### Parameters  
- [in] `bCalcValidRects`  
- `TRUE` when the application must specify a valid client area; otherwise, `FALSE`.  
+ [in] *bCalcValidRects*  
+ TRUE when the application must specify a valid client area; otherwise, FALSE.  
   
- [in] `lpncsp`  
+ [in] *lpncsp*  
  Pointer to a `NCCALCSIZE_PARAMS` structure that contains frame dimension changes.  
   
 ### Remarks  
@@ -1108,11 +1103,11 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The location of the pointer in screen coordinates.  
   
 ### Return Value  
- A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](http://msdn.microsoft.com/library/windows/desktop/ms645618).  
+ A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](/windows/desktop/inputdev/wm-nchittest).  
   
 ### Remarks  
   
@@ -1126,10 +1121,10 @@ afx_msg void OnNcMouseMove(
 ```  
   
 ### Parameters  
- [in] `nHitTest`  
- A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](http://msdn.microsoft.com/library/windows/desktop/ms645618).  
+ [in] *nHitTest*  
+ A pointer hit enumerated value. For a list of possible values see [WM_NCHITTEST Notification](/windows/desktop/inputdev/wm-nchittest).  
   
- [in] `point`  
+ [in] *point*  
  The location of the pointer in screen coordinates.  
   
 ### Remarks  
@@ -1151,11 +1146,11 @@ afx_msg BOOL OnPaneCheck(UINT nID);
 ```  
   
 ### Parameters  
- [in] `nID`  
+ [in] *nID*  
  Control ID of a pane.  
   
 ### Return Value  
- `TRUE` if the command was handled; `FALSE` to continue with command processing.  
+ TRUE if the command was handled; FALSE to continue with command processing.  
   
 ### Remarks  
   
@@ -1169,11 +1164,11 @@ afx_msg LRESULT OnPostPreviewFrame(
 ```  
   
 ### Parameters  
- [in] `wParam`  
+ [in] *wParam*  
  This parameter is not used.  
   
- [in] `lParam`  
- `TRUE` when the frame is in print preview mode; `FALSE` when print preview mode is off.  
+ [in] *lParam*  
+ TRUE when the frame is in print preview mode; FALSE when print preview mode is off.  
   
 ### Return Value  
  Always returns 0.  
@@ -1190,10 +1185,10 @@ afx_msg LRESULT OnPowerBroadcast(
 ```  
   
 ### Parameters  
- [in] `wp`  
- The power management event. For a list of possible values see [WM_POWERBROADCAST Message](http://msdn.microsoft.com/library/windows/desktop/aa373247).  
+ [in] *wp*  
+ The power management event. For a list of possible values see [WM_POWERBROADCAST Message](/windows/desktop/Power/wm-powerbroadcast).  
   
- [in] `lp`  
+ [in] *lp*  
  This parameter is not used.  
   
 ### Return Value  
@@ -1213,19 +1208,19 @@ BOOL OnSetMenu(HMENU hmenu);
 ```  
   
 ### Parameters  
- [in] `wp`  
+ [in] *wp*  
  Handle to the new frame window menu.  
   
- [in] `lp`  
+ [in] *lp*  
  Handle to the new window menu.  
   
- [in] `hmenu`  
+ [in] *hmenu*  
  Handle to the new frame window menu.  
   
 ### Return Value  
- `LRESULT` is the result from calling the default window procedure.  
+ LRESULT is the result from calling the default window procedure.  
   
- `BOOL` is `TRUE` if the event was handled; otherwise, `FALSE`.  
+ BOOL is TRUE if the event was handled; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1239,10 +1234,10 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### Parameters  
- [in] `bPreview`  
- `TRUE` to enable print preview; `FALSE` to disable print preview.  
+ [in] *bPreview*  
+ TRUE to enable print preview; FALSE to disable print preview.  
   
- [in] `pState`  
+ [in] *pState*  
  Pointer to a `CPrintPreviewState` frame state structure.  
   
 ### Remarks  
@@ -1257,14 +1252,14 @@ afx_msg LRESULT OnSetText(
 ```  
   
 ### Parameters  
- [in] `wParam`  
+ [in] *wParam*  
  This parameter is not used.  
   
- [in] `lParam`  
+ [in] *lParam*  
  Pointer to the text for the window.  
   
 ### Return Value  
- Return value from a call to [DefWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633572).  
+ Return value from a call to [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca).  
   
 ### Remarks  
   
@@ -1278,14 +1273,14 @@ virtual BOOL OnShowCustomizePane(
 ```  
   
 ### Parameters  
- [in] `pMenuPane`  
+ [in] *pMenuPane*  
  A pointer to the quick customize pane.  
   
- [in] `uiToolbarID`  
+ [in] *uiToolbarID*  
  The control ID of the toolbar to customize.  
   
 ### Return Value  
- This method always return `TRUE`.  
+ This method always return TRUE.  
   
 ### Remarks  
  The quick customize menu is a pop-up menu that appears when you click the toolbar’s customize button  
@@ -1298,16 +1293,16 @@ virtual BOOL OnShowPanes(BOOL bShow);
 ```  
   
 ### Parameters  
- [in] `bShow`  
- `TRUE` if the application shows the panes; `FALSE` otherwise.  
+ [in] *bShow*  
+ TRUE if the application shows the panes; FALSE otherwise.  
   
 ### Return Value  
- This method always return `FALSE`.  
+ This method always return FALSE.  
   
 ### Remarks  
- The default implementation shows the panes if `bShow` is `TRUE` and the panes are hidden or when `bShow` is `FALSE` and the panes are visible.  
+ The default implementation shows the panes if *bShow* is TRUE and the panes are hidden or when *bShow* is FALSE and the panes are visible.  
   
- The default implementation hides the panes if `bShow` is `TRUE` and the panes are visible or when `bShow` is `FALSE` and the panes are hidden.  
+ The default implementation hides the panes if *bShow* is TRUE and the panes are visible or when *bShow* is FALSE and the panes are hidden.  
   
  Override this method in a derived class to execute custom code when the framework shows or hides panes.  
   
@@ -1319,11 +1314,11 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu* pMenu);
 ```  
   
 ### Parameters  
- [in] `pMenu`  
+ [in] *pMenu*  
  A pointer to a pop-up menu.  
   
 ### Return Value  
- `TRUE` if the pop-up menu is visible; otherwise `FALSE`.  
+ TRUE if the pop-up menu is visible; otherwise FALSE.  
   
 ### Remarks  
  Override this method in a derived class to execute custom code when the framework displays a pop-up menu. For example, override this method to change the background color of the commands in a pop-up menu.  
@@ -1339,13 +1334,13 @@ afx_msg void OnSize(
 ```  
   
 ### Parameters  
- [in] `nType`  
- The type of resizing. For possible values see the parameter `wParam` in [WM_SIZE Notification](http://msdn.microsoft.com/library/windows/desktop/ms632646).  
+ [in] *nType*  
+ The type of resizing. For possible values see the parameter *wParam* in [WM_SIZE Notification](/windows/desktop/winmsg/wm-size).  
   
- [in] `cx`  
+ [in] *cx*  
  New width of the frame in pixels.  
   
- [in] `cy`  
+ [in] *cy*  
  New height of the frame in pixels.  
   
 ### Remarks  
@@ -1360,10 +1355,10 @@ afx_msg void OnSizing(
 ```  
   
 ### Parameters  
- [in] `fwSide`  
- The edge of the frame that is moved. See the parameter `wParam` in [WM_SIZING Notification](http://msdn.microsoft.com/library/windows/desktop/ms632647).  
+ [in] *fwSide*  
+ The edge of the frame that is moved. See the parameter *wParam* in [WM_SIZING Notification](/windows/desktop/winmsg/wm-sizing).  
   
- [in, out] `pRect`  
+ [in, out] *pRect*  
  Pointer to a [CRect](../../atl-mfc-shared/reference/crect-class.md) or [RECT](../../mfc/reference/rect-structure1.md) structure that contains the frame's coordinates.  
   
 ### Remarks  
@@ -1387,19 +1382,19 @@ virtual BOOL OnTearOffMenu(
 ```  
   
 ### Parameters  
- [in] `pMenuPopup`  
+ [in] *pMenuPopup*  
  A pointer to a pop-up menu.  
   
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to a tear-off bar.  
   
 ### Return Value  
- `TRUE` if the pop-up menu with the tear-off bar is enabled; otherwise `FALSE`.  
+ TRUE if the pop-up menu with the tear-off bar is enabled; otherwise FALSE.  
   
 ### Remarks  
  Override this method in a derived class to execute custom code when the framework displays a control bar.  
   
- The default implementation does nothing and returns `TRUE`.  
+ The default implementation does nothing and returns TRUE.  
   
 ##  <a name="ontoolbarcontextmenu"></a>  CFrameWndEx::OnToolbarContextMenu  
  Called by the framework to build a toolbar pop-up menu.  
@@ -1411,10 +1406,10 @@ afx_msg LRESULT OnToolbarContextMenu(
 ```  
   
 ### Parameters  
- [in] `wp`  
+ [in] *wp*  
  This parameter is not used.  
   
- [in] `lp`  
+ [in] *lp*  
  This parameter is not used.  
   
 ### Return Value  
@@ -1432,14 +1427,14 @@ afx_msg LRESULT OnToolbarCreateNew(
 ```  
   
 ### Parameters  
- [in] `wp`  
+ [in] *wp*  
  This parameter is not used.  
   
- [in] `lp`  
+ [in] *lp*  
  Pointer to the text for the title bar of the toolbar.  
   
 ### Return Value  
- Pointer to the new toolbar; or `NULL` if a toolbar was not created.  
+ Pointer to the new toolbar; or NULL if a toolbar was not created.  
   
 ### Remarks  
   
@@ -1456,11 +1451,11 @@ afx_msg LRESULT OnToolbarDelete(
  [in]  
  This parameter is not used.  
   
- [in] `lp`  
+ [in] *lp*  
  Pointer to a toolbar.  
   
 ### Return Value  
- `TRUE` if the toolbar was deleted; otherwise, `FALSE`.  
+ TRUE if the toolbar was deleted; otherwise, FALSE.  
   
 ### Remarks  
   
@@ -1472,7 +1467,7 @@ virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 ```  
   
 ### Parameters  
- [in] `hMenuAlt`  
+ [in] *hMenuAlt*  
  Handle to the alternative menu.  
   
 ### Remarks  
@@ -1485,8 +1480,8 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```  
   
 ### Parameters  
- [in] `bAddToTitle`  
- `TRUE` to add the active document title to the frame window title bar; otherwise `FALSE.`  
+ [in] *bAddToTitle*  
+ TRUE to add the active document title to the frame window title bar; otherwise FALSE.  
   
 ### Remarks  
   
@@ -1498,7 +1493,7 @@ afx_msg void OnUpdatePaneMenu(CCmdUI* pCmdUI);
 ```  
   
 ### Parameters  
- [in] `pCmdUI`  
+ [in] *pCmdUI*  
  Pointer to the pane user interface object.  
   
 ### Remarks  
@@ -1511,7 +1506,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 ```  
   
 ### Parameters  
- [in] `lpwndpos`  
+ [in] *lpwndpos*  
  Pointer to a [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) structure that contains the new size and position.  
   
 ### Remarks  
@@ -1534,28 +1529,28 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### Parameters  
- [in] `point`  
+ [in] *point*  
  The screen coordinates of the point to check.  
   
- [in] `nSensitivity`  
+ [in] *nSensitivity*  
  Expand the bounding rectangle of each control bar by this amount when searching for point.  
   
- [in] `bExactBar`  
- `TRUE` to ignore the `nSensitivity` parameter; otherwise, `FALSE`.  
+ [in] *bExactBar*  
+ TRUE to ignore the *nSensitivity* parameter; otherwise, FALSE.  
   
- [in] `pRTCBarType`  
- If not `NULL`, the method searches only the control bars of the specified type.  
+ [in] *pRTCBarType*  
+ If not NULL, the method searches only the control bars of the specified type.  
   
- [out] `dwAlignment`  
+ [out] *dwAlignment*  
  If successful, this parameter contains the side of the control bar that is closest to the specified point. Otherwise, this parameter is not initialized.  
   
 ### Return Value  
- A pointer to a control bar that contains the `point`; `NULL` if no control is found.  
+ A pointer to a control bar that contains the *point*; NULL if no control is found.  
   
 ### Remarks  
- This method searches all the control bars in your application for a `point`.  
+ This method searches all the control bars in your application for a *point*.  
   
- Use `nSensitivity` to increase the size of the search area. Use `pRTCBarType` to restrict the types of control bars that the method searches.  
+ Use *nSensitivity* to increase the size of the search area. Use *pRTCBarType* to restrict the types of control bars that the method searches.  
   
 ##  <a name="pretranslatemessage"></a>  CFrameWndEx::PreTranslateMessage  
  Handles specific window messages before they are dispatched.  
@@ -1565,7 +1560,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ```  
   
 ### Parameters  
- [in] `pMsg`  
+ [in] *pMsg*  
  A pointer to a [MSG](../../mfc/reference/msg-structure1.md) structure that contains the message to process.  
   
 ### Return Value  
@@ -1581,7 +1576,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### Parameters  
- [in] `bNotify`  
+ [in] *bNotify*  
  Specifies whether to notify the OLE client item about the layout change.  
   
 ### Remarks  
@@ -1600,19 +1595,19 @@ void RemovePaneFromDockManager(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
  A pointer to the control bar pane to remove.  
   
- [in] `bDestroy`  
- `TRUE` to destroy the control bar after removing it; `FALSE` otherwise.  
+ [in] *bDestroy*  
+ TRUE to destroy the control bar after removing it; FALSE otherwise.  
   
- [in] `bAdjustLayout`  
- `TRUE` to adjust the docking layout; `FALSE` otherwise.  
+ [in] *bAdjustLayout*  
+ TRUE to adjust the docking layout; FALSE otherwise.  
   
- [in] `bAutoHide`  
- `TRUE` if the control bar is in auto-hide mode; `FALSE` otherwise.  
+ [in] *bAutoHide*  
+ TRUE if the control bar is in auto-hide mode; FALSE otherwise.  
   
- [in] `pBarReplacement`  
+ [in] *pBarReplacement*  
  A pointer to a pane that replaces the removed pane.  
   
 ### Remarks  
@@ -1628,7 +1623,7 @@ void SetDockState(const CDockState& state);
 ```  
   
 ### Parameters  
- `state`  
+ *state*  
  The docking state. This parameter is ignored.  
   
 ##  <a name="setprintpreviewframe"></a>  CFrameWndEx::SetPrintPreviewFrame  
@@ -1639,7 +1634,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
  Pointer to a print preview frame window.  
   
 ### Remarks  
@@ -1655,17 +1650,17 @@ void SetupToolbarMenu(
 ```  
   
 ### Parameters  
- [in] `menu`  
+ [in] *menu*  
  A `CMenu` object to be modified.  
   
- [in] `uiViewUserToolbarCmdFirst`  
+ [in] *uiViewUserToolbarCmdFirst*  
  The first user-defined command.  
   
- [in] `uiViewUserToolbarCmdLast`  
+ [in] *uiViewUserToolbarCmdLast*  
  The last user-defined command.  
   
 ### Remarks  
- The framework stores user-defined commands in a list. Use `uiViewUserToolbarCmdFirst` and `uiViewUserToolbarCmdList` to specify the indexes of the commands to insert.  
+ The framework stores user-defined commands in a list. Use *uiViewUserToolbarCmdFirst* and *uiViewUserToolbarCmdList* to specify the indexes of the commands to insert.  
   
 ##  <a name="showfullscreen"></a>  CFrameWndEx::ShowFullScreen  
  Switches the main frame between full-screen mode and regular mode.  
@@ -1686,17 +1681,17 @@ void ShowPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
+ [in] *pBar*  
  A pointer to the control bar to show or hide.  
   
- [in] `bShow`  
- If `TRUE`, the application shows the control bar. Otherwise, the application hides the control bar.  
+ [in] *bShow*  
+ If TRUE, the application shows the control bar. Otherwise, the application hides the control bar.  
   
- [in] `bDelay`  
- If `TRUE`, delay the adjustment of the docking layout until the framework calls [CFrameWndEx::AdjustDockingLayout](#adjustdockinglayout). Otherwise, recalculate the docking layout immediately.  
+ [in] *bDelay*  
+ If TRUE, delay the adjustment of the docking layout until the framework calls [CFrameWndEx::AdjustDockingLayout](#adjustdockinglayout). Otherwise, recalculate the docking layout immediately.  
   
- [in] `bActivate`  
- If `TRUE`, make the control bar active. Otherwise, display the control bar in an inactive state.  
+ [in] *bActivate*  
+ If TRUE, make the control bar active. Otherwise, display the control bar in an inactive state.  
   
 ##  <a name="updatecaption"></a>  CFrameWndEx::UpdateCaption  
  Called by the framework to update the window frame caption.  
@@ -1717,11 +1712,11 @@ virtual void WinHelp(
 ```  
   
 ### Parameters  
- `dwData`  
- Data that depends on the `nCmd` parameter. For a list of possible values see [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267).  
+ *dwData*  
+ Data that depends on the *nCmd* parameter. For a list of possible values see [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa).  
   
- `nCmd`  
- The help command. For a list of possible values see [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267).  
+ *nCmd*  
+ The help command. For a list of possible values see [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa).  
   
 ### Remarks  
   

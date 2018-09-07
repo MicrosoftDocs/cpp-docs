@@ -2,19 +2,14 @@
 title: "__indword | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__indword_cpp", "__indword"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["in instruction", "__indword intrinsic"]
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __indword
@@ -41,7 +36,7 @@ unsigned long __indword(
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__indword`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__indword`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

@@ -2,18 +2,13 @@
 title: "Walkthrough: Creating an Image-Processing Network | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["image-processing networks, creating [Concurrency Runtime]", "creating image-processing networks [Concurrency Runtime]"]
 ms.assetid: 78ccadc9-5ce2-46cc-bd62-ce0f99d356b8
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating an Image-Processing Network
@@ -32,7 +27,7 @@ This document demonstrates how to create a network of asynchronous message block
   
 -   [Walkthrough: Creating a Dataflow Agent](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)  
   
- We also recommend that you understand the basics of [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] before you start this walkthrough.  
+ We also recommend that you understand the basics of GDI+ before you start this walkthrough.  
   
 ##  <a name="top"></a> Sections  
  This walkthrough contains the following sections:  
@@ -51,7 +46,7 @@ This document demonstrates how to create a network of asynchronous message block
  [!code-cpp[concrt-image-processing-filter#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_1.cpp)]  
   
 
- The following function, `ProcessImage`, calls the given [std::function](../../standard-library/function-class.md) object to transform the color value of each pixel in a [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [Bitmap](https://msdn.microsoft.com/library/ms534420.aspx) object. The `ProcessImage` function uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm to process each row of the bitmap in parallel.  
+ The following function, `ProcessImage`, calls the given [std::function](../../standard-library/function-class.md) object to transform the color value of each pixel in a GDI+ [Bitmap](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) object. The `ProcessImage` function uses the [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algorithm to process each row of the bitmap in parallel.  
 
   
  [!code-cpp[concrt-image-processing-filter#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_2.cpp)]  
@@ -71,7 +66,7 @@ This document demonstrates how to create a network of asynchronous message block
  [[Top](#top)]  
   
 ##  <a name="network"></a> Creating the Image Processing Network  
- This section describes how to create a network of asynchronous message blocks that perform image processing on every [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] (.jpg) image in a given directory. The network performs the following image-processing operations:  
+ This section describes how to create a network of asynchronous message blocks that perform image processing on every JPEG (.jpg) image in a given directory. The network performs the following image-processing operations:  
   
 1.  For any image that is authored by Tom, convert to grayscale.  
   
@@ -83,7 +78,7 @@ This document demonstrates how to create a network of asynchronous message block
   
  After the network performs each image-processing operation, it saves the image to disk as a bitmap (.bmp) file.  
   
- The following steps show how to create a function that implements this image processing network and applies that network to every [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] image in a given directory.  
+ The following steps show how to create a function that implements this image processing network and applies that network to every JPEG image in a given directory.  
   
 #### To create the image processing network  
   
@@ -107,7 +102,7 @@ This document demonstrates how to create a network of asynchronous message block
   
      [!code-cpp[concrt-image-processing-filter#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_10.cpp)]  
   
-6.  Add the following code to send to the head of the network the full path of each [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] file in the directory.  
+6.  Add the following code to send to the head of the network the full path of each JPEG file in the directory.  
   
      [!code-cpp[concrt-image-processing-filter#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_11.cpp)]  
   
@@ -146,7 +141,7 @@ This document demonstrates how to create a network of asynchronous message block
  [[Top](#top)]  
   
 ##  <a name="complete"></a> The Complete Example  
- The following code shows the complete example. The `wmain` function manages the [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] library and calls the `ProcessImages` function to process the [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] files in the `Sample Pictures` directory.  
+ The following code shows the complete example. The `wmain` function manages the GDI+ library and calls the `ProcessImages` function to process the JPEG files in the `Sample Pictures` directory.  
   
  [!code-cpp[concrt-image-processing-filter#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_14.cpp)]  
   

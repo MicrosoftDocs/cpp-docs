@@ -2,33 +2,28 @@
 title: "Arrays in Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], arrays in", "arrays [C++], in expressions"]
 ms.assetid: 6e5a795b-d6bd-4e39-b313-6a20d47c4d4b
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Arrays in Expressions
 When an identifier of an array type appears in an expression other than `sizeof`, address-of (**&**), or initialization of a reference, it is converted to a pointer to the first array element. For example:  
   
-```  
+```cpp 
 char szError1[] = "Error: Disk drive not ready.";  
 char *psz = szError1;  
 ```  
   
  The pointer `psz` points to the first element of the array `szError1`. Note that arrays, unlike pointers, are not modifiable l-values. Therefore, the following assignment is illegal:  
   
-```  
+```cpp 
 szError1 = psz;  
 ```  
   
-## See Also  
+## See also  
  [Arrays](../cpp/arrays-cpp.md)

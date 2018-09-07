@@ -2,19 +2,14 @@
 title: "pop_macro | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["vc-pragma.pop_macro", "pop_macro_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["pop_macro pragma", "pragmas, pop_macro"]
 ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # pop_macro
@@ -23,19 +18,18 @@ Sets the value of the *macro_name* macro to the value on the top of the stack fo
 ## Syntax  
   
 ```  
-  
 #pragma pop_macro("  
 macro_name  
 ")  
-  
 ```  
   
 ## Remarks  
- You must first issue a [push_macro](../preprocessor/push-macro.md) for *macro_name* before you can do a **pop_macro**.  
+ 
+You must first issue a [push_macro](../preprocessor/push-macro.md) for *macro_name* before you can do a **pop_macro**.  
   
 ## Example  
   
-```  
+```cpp  
 // pragma_directives_pop_macro.cpp  
 // compile with: /W1  
 #include <stdio.h>  
@@ -68,4 +62,5 @@ int main() {
 ```  
   
 ## See Also  
- [Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ 
+[Pragma Directives and the __Pragma Keyword](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

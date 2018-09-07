@@ -2,18 +2,13 @@
 title: "Cast Operator: () | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cast operators [C++]", "() cast operator"]
 ms.assetid: 4c99eb92-1b19-4a5d-9840-5d8c29b8453e
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Cast Operator: ()
@@ -22,9 +17,7 @@ A type cast provides a method for explicit conversion of the type of an object i
 ## Syntax  
   
 ```  
-  
-      unary-expression  
-( type-name ) cast-expression  
+unary-expression ( type-name ) cast-expression  
 ```  
   
 ## Remarks  
@@ -34,7 +27,7 @@ A type cast provides a method for explicit conversion of the type of an object i
   
 ## Example  
   
-```  
+```cpp  
 // expre_CastOperator.cpp  
 // compile with: /EHsc  
 // Demonstrate cast operator  
@@ -54,7 +47,7 @@ int main()
   
 ## Example  
   
-```  
+```cpp 
 // expre_CastOperator2.cpp  
 // The following sample shows how to define and use a cast operator.   
 #include <string.h>  
@@ -122,7 +115,7 @@ Note that the cast changed the raw internal string
 Raw Bytes after cast:   Exciting  
 ```  
   
-## See Also  
+## See also  
  [Expressions with Unary Operators](../cpp/expressions-with-unary-operators.md)   
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Explicit Type Conversion Operator: ()](../cpp/explicit-type-conversion-operator-parens.md)   

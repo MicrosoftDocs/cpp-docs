@@ -2,19 +2,14 @@
 title: "-GA (Optimize for Windows Application) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCCLCompilerTool.OptimizeForWindowsApplication", "/ga"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/GA compiler option [C++]", "GA compiler option [C++]", "-GA compiler option [C++]", "Optimize for Windows compiler options"]
 ms.assetid: be97323e-15a0-4836-862c-95980b51926a
-caps.latest.revision: 10
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /GA (Optimize for Windows Application)
@@ -27,7 +22,7 @@ Results in more efficient code for an .exe file for accessing thread-local stora
 ```  
   
 ## Remarks  
- **/GA** speeds access to data declared with [__declspec(thread)](../../cpp/declspec.md) in a Windows-based program. When this option is set, the [__tls_index](http://msdn.microsoft.com/library/windows/desktop/ms686749) macro is assumed to be 0.  
+ **/GA** speeds access to data declared with [__declspec(thread)](../../cpp/declspec.md) in a Windows-based program. When this option is set, the [__tls_index](/windows/desktop/ProcThread/thread-local-storage) macro is assumed to be 0.  
   
  Using **/GA** for a DLL can result in bad code generation.  
   

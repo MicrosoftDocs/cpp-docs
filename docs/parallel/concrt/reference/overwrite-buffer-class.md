@@ -2,19 +2,14 @@
 title: "overwrite_buffer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["overwrite_buffer", "AGENTS/concurrency::overwrite_buffer", "AGENTS/concurrency::overwrite_buffer::overwrite_buffer", "AGENTS/concurrency::overwrite_buffer::has_value", "AGENTS/concurrency::overwrite_buffer::value", "AGENTS/concurrency::overwrite_buffer::accept_message", "AGENTS/concurrency::overwrite_buffer::consume_message", "AGENTS/concurrency::overwrite_buffer::link_target_notification", "AGENTS/concurrency::overwrite_buffer::propagate_message", "AGENTS/concurrency::overwrite_buffer::propagate_to_any_targets", "AGENTS/concurrency::overwrite_buffer::release_message", "AGENTS/concurrency::overwrite_buffer::reserve_message", "AGENTS/concurrency::overwrite_buffer::resume_propagation", "AGENTS/concurrency::overwrite_buffer::send_message", "AGENTS/concurrency::overwrite_buffer::supports_anonymous_source"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["overwrite_buffer class"]
 ms.assetid: 5cc428fe-3697-419c-9fb2-78f6181c9293
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # overwrite_buffer Class

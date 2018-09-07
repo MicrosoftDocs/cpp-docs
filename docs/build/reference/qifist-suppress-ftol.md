@@ -2,19 +2,14 @@
 title: "-QIfist (Suppress _ftol) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/qifist"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["QIfist compiler option [C++]", "-QIfist compiler option [C++]", "/QIfist compiler option [C++]"]
 ms.assetid: 1afd32a5-f658-4b66-85f4-e0ce4cb955bd
-caps.latest.revision: 17
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /QIfist (Suppress _ftol)
@@ -29,7 +24,7 @@ Deprecated. Suppresses the call of the helper function `_ftol` when a conversion
 ## Remarks  
   
 > [!NOTE]
->  **/QIfist** is only available in the compiler targeting x86; this compiler option is not available in the compilers targeting [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] orARM.  
+>  **/QIfist** is only available in the compiler targeting x86; this compiler option is not available in the compilers targeting x64 orARM.  
   
  In addition to converting from a floating-point type to integral type, the `_ftol` function ensures the rounding mode of the floating-point unit (FPU) is toward zero (truncate), by setting bits 10 and 11 of the control word. This guarantees that converting from a floating-point type to an integral type occurs as described by the ANSI C standard (the fractional portion of the number is discarded). When using **/QIfist**, this guarantee no longer applies. The rounding mode will be one of four as documented in Intel reference manuals:  
   

@@ -2,19 +2,14 @@
 title: "CMFCCaptionButton Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::CMFCCaptionButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetHit", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetIconID", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetRect", "AFXCAPTIONBUTTON/CMFCCaptionButton::GetSize", "AFXCAPTIONBUTTON/CMFCCaptionButton::IsMiniFrameButton", "AFXCAPTIONBUTTON/CMFCCaptionButton::Move", "AFXCAPTIONBUTTON/CMFCCaptionButton::OnDraw", "AFXCAPTIONBUTTON/CMFCCaptionButton::SetMiniFrameButton"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCCaptionButton [MFC], CMFCCaptionButton", "CMFCCaptionButton [MFC], GetHit", "CMFCCaptionButton [MFC], GetIconID", "CMFCCaptionButton [MFC], GetRect", "CMFCCaptionButton [MFC], GetSize", "CMFCCaptionButton [MFC], IsMiniFrameButton", "CMFCCaptionButton [MFC], Move", "CMFCCaptionButton [MFC], OnDraw", "CMFCCaptionButton [MFC], SetMiniFrameButton"]
 ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
-caps.latest.revision: 28
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCCaptionButton Class
@@ -52,9 +47,9 @@ class CMFCCaptionButton : public CObject
   
  CPaneFrameWnd.h defines command IDs for two types of caption buttons:  
   
-- `AFX_CAPTION_BTN_PIN`, which displays a pin button when the docking pane supports auto-hide mode.  
+- AFX_CAPTION_BTN_PIN, which displays a pin button when the docking pane supports auto-hide mode.  
   
-- `AFX_CAPTION_BTN_CLOSE`, which displays a **Close** button when the pane can be closed or hidden.  
+- AFX_CAPTION_BTN_CLOSE, which displays a **Close** button when the pane can be closed or hidden.  
   
 ## Example  
  The following example demonstrates how to construct a `CMFCCaptionButton` object and set the mini size of the title bar.  
@@ -82,23 +77,23 @@ CMFCCaptionButton(
 ```  
   
 ### Parameters  
- [in] `nHit`  
+ [in] *nHit*  
  The command associated with the button.  
   
- [in] `bLeftAlign`  
+ [in] *bLeftAlign*  
  Specifies whether the button is aligned to the left.  
   
- The following table lists possible values for the `nHit` parameter.  
+ The following table lists possible values for the *nHit* parameter.  
   
 |Value|Command|  
 |-----------|-------------|  
-|`AFX_HTCLOSE`|Close button.|  
-|`HTMINBUTTON`|Minimize button.|  
-|`HTMAXBUTTON`|Maximize button.|  
-|`AFX_HTLEFTBUTTON`|Left arrow button.|  
-|`AFX_HTRIGHTBUTTON`|Right arrow button.|  
-|`AFX_HTMENU`|Down arrow menu button.|  
-|`HTNOWHERE`|The default value; represents no command.|  
+|AFX_HTCLOSE|Close button.|  
+|HTMINBUTTON|Minimize button.|  
+|HTMAXBUTTON|Maximize button.|  
+|AFX_HTLEFTBUTTON|Left arrow button.|  
+|AFX_HTRIGHTBUTTON|Right arrow button.|  
+|AFX_HTMENU|Down arrow menu button.|  
+|HTNOWHERE|The default value; represents no command.|  
   
 ### Remarks  
  By default, caption buttons are not associated with a command.  
@@ -119,13 +114,13 @@ UINT GetHit() const;
   
 |Value|Command|  
 |-----------|-------------|  
-|`AFX_HTCLOSE`|Close button.|  
-|`HTMINBUTTON`|Minimize button.|  
-|`HTMAXBUTTON`|Maximize button.|  
-|`AFX_HTLEFTBUTTON`|Left arrow button.|  
-|`AFX_HTRIGHTBUTTON`|Right arrow button.|  
-|`AFX_HTMENU`|Down arrow menu button.|  
-|`HTNOWHERE`|The default value; represents no command.|  
+|AFX_HTCLOSE|Close button.|  
+|HTMINBUTTON|Minimize button.|  
+|HTMAXBUTTON|Maximize button.|  
+|AFX_HTLEFTBUTTON|Left arrow button.|  
+|AFX_HTRIGHTBUTTON|Right arrow button.|  
+|AFX_HTMENU|Down arrow menu button.|  
+|HTNOWHERE|The default value; represents no command.|  
   
 ##  <a name="geticonid"></a>  CMFCCaptionButton::GetIconID  
  Returns the image ID associated with the button.  
@@ -137,11 +132,11 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 ```  
   
 ### Parameters  
- [in] `bHorz`  
- `TRUE` for left or right arrow image IDs; `FALSE` for up or down arrow image IDs.  
+ [in] *bHorz*  
+ TRUE for left or right arrow image IDs; FALSE for up or down arrow image IDs.  
   
- [in] `bMaximized`  
- `TRUE` for a maximize image ID; `FALSE` for a minimize image ID.  
+ [in] *bMaximized*  
+ TRUE for a maximize image ID; FALSE for a minimize image ID.  
   
 ### Return Value  
  The image ID.  
@@ -183,7 +178,7 @@ BOOL IsMiniFrameButton() const;
 ```  
   
 ### Return Value  
- `TRUE` if the caption is set to mini size; otherwise `FALSE`.  
+ TRUE if the caption is set to mini size; otherwise FALSE.  
   
 ### Remarks  
   
@@ -197,10 +192,10 @@ void Move(
 ```  
   
 ### Parameters  
- [in] `ptTo`  
+ [in] *ptTo*  
  The new location.  
   
- [in] `bHide`  
+ [in] *bHide*  
  Whether to show the button.  
   
 ##  <a name="ondraw"></a>  CMFCCaptionButton::OnDraw  
@@ -216,23 +211,23 @@ virtual void OnDraw(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  Pointer to a device context for the button.  
   
- [in] `bActive`  
+ [in] *bActive*  
  Whether to draw an active button image.  
   
- [in] `bHorz`  
+ [in] *bHorz*  
  Reserved for use in a derived class.  
   
- [in] `bMaximized`  
+ [in] *bMaximized*  
  Whether to draw a maximized button image.  
   
- [in] `bDisabled`  
+ [in] *bDisabled*  
  Whether to draw an enabled button image.  
   
 ### Remarks  
- The `bMaximized` parameter is used when the button is a maximize or minimize button.  
+ The *bMaximized* parameter is used when the button is a maximize or minimize button.  
   
 ##  <a name="setminiframebutton"></a>  CMFCCaptionButton::SetMiniFrameButton  
  Sets the mini size of the title bar.  
@@ -242,8 +237,8 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 ```  
   
 ### Parameters  
- [in] `bSet`  
- `TRUE` for mini title bar height; `FALSE` for default title bar height.  
+ [in] *bSet*  
+ TRUE for mini title bar height; FALSE for default title bar height.  
   
 ## See Also  
  [Hierarchy Chart](../../mfc/hierarchy-chart.md)   

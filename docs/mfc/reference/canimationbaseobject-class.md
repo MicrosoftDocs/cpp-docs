@@ -2,19 +2,14 @@
 title: "CAnimationBaseObject Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationBaseObject", "AFXANIMATIONCONTROLLER/CAnimationBaseObject", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::CAnimationBaseObject", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::ApplyTransitions", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::ClearTransitions", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::ContainsVariable", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::CreateTransitions", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::DetachFromController", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::EnableIntegerValueChangedEvent", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::EnableValueChangedEvent", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetAutodestroyTransitions", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetGroupID", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetObjectID", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetUserData", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetAutodestroyTransitions", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetID", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetUserData", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::GetAnimationVariableList", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::SetParentAnimationObjects", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_bAutodestroyTransitions", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_dwUserData", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_nGroupID", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_nObjectID", "AFXANIMATIONCONTROLLER/CAnimationBaseObject::m_pParentController"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationBaseObject [MFC], CAnimationBaseObject", "CAnimationBaseObject [MFC], ApplyTransitions", "CAnimationBaseObject [MFC], ClearTransitions", "CAnimationBaseObject [MFC], ContainsVariable", "CAnimationBaseObject [MFC], CreateTransitions", "CAnimationBaseObject [MFC], DetachFromController", "CAnimationBaseObject [MFC], EnableIntegerValueChangedEvent", "CAnimationBaseObject [MFC], EnableValueChangedEvent", "CAnimationBaseObject [MFC], GetAutodestroyTransitions", "CAnimationBaseObject [MFC], GetGroupID", "CAnimationBaseObject [MFC], GetObjectID", "CAnimationBaseObject [MFC], GetUserData", "CAnimationBaseObject [MFC], SetAutodestroyTransitions", "CAnimationBaseObject [MFC], SetID", "CAnimationBaseObject [MFC], SetUserData", "CAnimationBaseObject [MFC], GetAnimationVariableList", "CAnimationBaseObject [MFC], SetParentAnimationObjects", "CAnimationBaseObject [MFC], m_bAutodestroyTransitions", "CAnimationBaseObject [MFC], m_dwUserData", "CAnimationBaseObject [MFC], m_nGroupID", "CAnimationBaseObject [MFC], m_nObjectID", "CAnimationBaseObject [MFC], m_pParentController"]
 ms.assetid: 76b25917-940e-4eba-940f-31d270702603
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationBaseObject Class
@@ -99,10 +94,10 @@ virtual BOOL ApplyTransitions(
 ```  
   
 ### Parameters  
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to a storyboard.  
   
- `bDependOnKeyframes`  
+ *bDependOnKeyframes*  
  With FALSE this method adds only those transitions that do not depend on keyframes.  
   
 ### Return Value  
@@ -125,13 +120,13 @@ CAnimationBaseObject(
 ```  
   
 ### Parameters  
- `nGroupID`  
+ *nGroupID*  
  Specifies Group ID.  
   
- `nObjectID`  
+ *nObjectID*  
  Specifies Object ID.  
   
- `dwUserData`  
+ *dwUserData*  
  User-defined data, which can be associated with animation object and retrieved later at runtime.  
   
 ### Remarks  
@@ -145,7 +140,7 @@ virtual void ClearTransitions(BOOL bAutodestroy);
 ```  
   
 ### Parameters  
- `bAutodestroy`  
+ *bAutodestroy*  
  Specifies whether to destroy transition objects automatically, or just remove them from the related list.  
   
 ### Remarks  
@@ -159,7 +154,7 @@ virtual BOOL ContainsVariable(IUIAnimationVariable* pVariable);
 ```  
   
 ### Parameters  
- `pVariable`  
+ *pVariable*  
  A pointer to animation variable.  
   
 ### Return Value  
@@ -201,10 +196,10 @@ virtual void EnableIntegerValueChangedEvent(
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to a parent controller.  
   
- `bEnable`  
+ *bEnable*  
  Specifies whether to enable, or disable Integer Value Changed event.  
   
 ### Remarks  
@@ -220,10 +215,10 @@ virtual void EnableValueChangedEvent(
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to a parent controller.  
   
- `bEnable`  
+ *bEnable*  
  Specifies whether to enable, or disable Value Changed event.  
   
 ### Remarks  
@@ -239,7 +234,7 @@ virtual void GetAnimationVariableList(
 ```  
   
 ### Parameters  
- `lst`  
+ *lst*  
  A list that must be filled with animation variables contained in an animation object.  
   
 ### Remarks  
@@ -340,7 +335,7 @@ void SetAutodestroyTransitions(BOOL bValue);
 ```  
   
 ### Parameters  
- `bValue`  
+ *bValue*  
  Specifies the auto destroy flag.  
   
 ### Remarks  
@@ -356,10 +351,10 @@ void SetID(
 ```  
   
 ### Parameters  
- `nObjectID`  
+ *nObjectID*  
  Specifies new Object ID.  
   
- `nGroupID`  
+ *nGroupID*  
  Specifies new Group ID.  
   
 ### Remarks  
@@ -383,7 +378,7 @@ void SetUserData (DWORD dwUserData);
 ```  
   
 ### Parameters  
- `dwUserData`  
+ *dwUserData*  
  Specifies the custom data.  
   
 ### Remarks  

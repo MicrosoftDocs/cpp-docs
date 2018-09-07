@@ -2,18 +2,13 @@
 title: "Unhandled C++ Exceptions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["event handlers [C++], unhandled exceptions", "catch keyword [C++], handler not found", "exceptions [C++], unhandled", "C++ exception handling, unhandled exceptions", "unhandled exceptions [C++]"]
 ms.assetid: 13f09c53-9254-4407-9db9-14e730e047cc
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Unhandled C++ Exceptions
@@ -22,7 +17,7 @@ If a matching handler (or ellipsis **catch** handler) cannot be found for the cu
 ## Example  
  The following example throws a `char *` exception, but does not contain a handler designated to catch exceptions of type `char *`. The call to `set_terminate` instructs `terminate` to call `term_func`.  
   
-```  
+```cpp 
 // exceptions_Unhandled_Exceptions.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -47,11 +42,11 @@ int main() {
   
 ## Output  
   
-```  
+```Output  
 term_func was called by terminate.  
 ```  
   
  The `term_func` function should terminate the program or current thread, ideally by calling `exit`. If it doesn't, and instead returns to its caller, `abort` is called.  
   
-## See Also  
+## See also  
  [C++ Exception Handling](../cpp/cpp-exception-handling.md)

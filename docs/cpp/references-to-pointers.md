@@ -1,19 +1,14 @@
 ---
 title: "References to Pointers | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "08/20/2018"
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["references, to pointers"]
 ms.assetid: 4ce48b08-1511-4d2f-a31f-95f99eac0c70
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # References to Pointers
@@ -24,7 +19,7 @@ References to pointers can be declared in much the same way as references to obj
   
  Functions `Add1` and `Add2` are functionally equivalent (although they are not called the same way). The difference is that `Add1` uses double indirection whereas `Add2` uses the convenience of a reference to a pointer.  
   
-```  
+```cpp 
 // references_to_pointers.cpp  
 // compile with: /EHsc  
   
@@ -71,7 +66,7 @@ int main( int argc, char *argv[] ) {
   
    // Read a text file from the standard input device and  
    //  build a binary tree.  
-   //while( !cin.eof() )   
+   while( !cin.eof() )   
    {  
       cin.get( szBuf, sizeOfBuffer, '\n' );  
       cin.get();  
@@ -162,5 +157,5 @@ where:
 Input is from stdin.  
 ```  
   
-## See Also  
+## See also  
  [References](../cpp/references-cpp.md)

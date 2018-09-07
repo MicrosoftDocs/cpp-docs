@@ -2,18 +2,13 @@
 title: "Using an Image List with a Rebar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["image lists [MFC], rebar controls", "rebar controls [MFC], image lists"]
 ms.assetid: 1a5836ac-019a-46aa-8741-b35c3376b839
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Using an Image List with a Rebar Control
@@ -25,9 +20,9 @@ Each rebar band can contain, among other things, an image from an associated ima
   
 2.  Modify the **REBARBANDINFO** structure to assign an image to a rebar band:  
   
-    -   Set the **fMask** member to **RBBIM_IMAGE**, using the bitwise OR operator to include additional flags as necessary.  
+    -   Set the *fMask* member to `RBBIM_IMAGE`, using the bitwise OR operator to include additional flags as necessary.  
   
-    -   Set the `iImage` member to the image list index of the image to be displayed.  
+    -   Set the *iImage* member to the image list index of the image to be displayed.  
   
 3.  Initialize any remaining data members, such as the size, text, and handle of the contained child window, with the necessary information.  
   

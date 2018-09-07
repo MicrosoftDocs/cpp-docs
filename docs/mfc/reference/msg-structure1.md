@@ -2,19 +2,14 @@
 title: "MSG Structure1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["MSG"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MSG structure [MFC]"]
 ms.assetid: dc166d27-9423-41f1-9599-5ba76d2f0138
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # MSG Structure1
@@ -37,19 +32,19 @@ typedef struct tagMSG {     // msg
  *hwnd*  
  Identifies the window whose window procedure receives the message.  
   
- `message`  
+ *message*  
  Specifies the message number.  
   
- `wParam`  
- Specifies additional information about the message. The exact meaning depends on the value of the **message** member.  
+ *wParam*  
+ Specifies additional information about the message. The exact meaning depends on the value of the `message` member.  
   
- `lParam`  
- Specifies additional information about the message. The exact meaning depends on the value of the **message** member.  
+ *lParam*  
+ Specifies additional information about the message. The exact meaning depends on the value of the `message` member.  
   
- `time`  
+ *time*  
  Specifies the time at which the message was posted.  
   
- `pt`  
+ *pt*  
  Specifies the cursor position, in screen coordinates, when the message was posted.  
   
 ## Requirements  

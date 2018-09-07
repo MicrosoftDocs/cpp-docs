@@ -2,18 +2,13 @@
 title: "Interpreting More Complex Declarators | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["complex declarators", "interpreting complex declarators"]
 ms.assetid: dd5b7019-c86d-4645-a5cc-21f834de6f4a
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Interpreting More Complex Declarators
@@ -37,7 +32,7 @@ You can enclose any declarator in parentheses to specify a particular interpreta
      7   6  4 2 1   3    5  
     ```  
   
- In this example, the steps are numbered in order and can be interpreted as follows:  
+In this example, the steps are numbered in order and can be interpreted as follows:  
   
 1.  The identifier `var` is declared as  
   

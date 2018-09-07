@@ -2,18 +2,13 @@
 title: "Toolbar Tool Tips | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["tool tips [MFC], activating", "CBRS_TOOLTIPS constant [MFC]", "tool tips [MFC], adding text", "updates [MFC]", "CBRS_FLYBY constant [MFC]", "tool tips [MFC]", "updating status bar messages", "updates, status bar messages", "status bars [MFC], tool tips", "flyby status bar updates"]
 ms.assetid: d1696305-b604-4fad-9f09-638878371412
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Toolbar Tool Tips
@@ -28,7 +23,7 @@ Tool tips are the tiny popup windows that present short descriptions of a toolba
 ##  <a name="_core_activating_tool_tips"></a> Activating Tool Tips  
  To activate tool tips in your application, you must do two things:  
   
--   Add the `CBRS_TOOLTIPS` style to the other styles (such as **WS_CHILD**, **WS_VISIBLE**, and other **CBRS_** styles) passed as the `dwStyle` parameter to the [CToolBar::Create](../mfc/reference/ctoolbar-class.md#create) function or in [SetBarStyle](../mfc/reference/ccontrolbar-class.md#setbarstyle).  
+-   Add the CBRS_TOOLTIPS style to the other styles (such as WS_CHILD, WS_VISIBLE, and other **CBRS_** styles) passed as the *dwStyle* parameter to the [CToolBar::Create](../mfc/reference/ctoolbar-class.md#create) function or in [SetBarStyle](../mfc/reference/ccontrolbar-class.md#setbarstyle).  
   
 -   As described in the procedure below, append the toolbar tip text, separated by a newline character ('\n'), to the string resource containing the command-line prompt for the toolbar command. The string resource shares the ID of the toolbar button.  
   
@@ -48,7 +43,7 @@ Tool tips are the tiny popup windows that present short descriptions of a toolba
 -   The string-table entry with the same ID as the child control in the resource file has a tool tip string.  
   
 ##  <a name="_core_fly_by_status_bar_updates"></a> Flyby Status Bar Updates  
- A feature related to tool tips is "flyby" status bar updating. By default, the message on the status bar describes only a particular toolbar button when the button is activated. By including `CBRS_FLYBY` in your list of styles passed to `CToolBar::Create`, you can have these messages updated when the mouse cursor passes over the toolbar without actually activating the button.  
+ A feature related to tool tips is "flyby" status bar updating. By default, the message on the status bar describes only a particular toolbar button when the button is activated. By including CBRS_FLYBY in your list of styles passed to `CToolBar::Create`, you can have these messages updated when the mouse cursor passes over the toolbar without actually activating the button.  
   
 ### What do you want to know more about  
   

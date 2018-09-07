@@ -2,17 +2,13 @@
 title: "/NXCOMPAT (Compatible with Data Execution Prevention) | Microsoft Docs"
 ms.custom: ""
 ms.date: "12/29/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/NXCOMPAT"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/NXCOMPAT linker option", "-NXCOMPAT linker option", "NXCOMPAT linker option"]
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /NXCOMPAT (Compatible with Data Execution Prevention)
@@ -31,11 +27,11 @@ By default, **/NXCOMPAT** is on.
 
 For more information about Data Execution Prevention, see these articles:
 
-- [A detailed description of the Data Execution Prevention (DEP) feature](http://go.microsoft.com/fwlink/p/?linkid=157771)
+- [A detailed description of the Data Execution Prevention (DEP) feature](https://support.microsoft.com/en-us/help/875352/a-detailed-description-of-the-data-execution-prevention-dep-feature-in)
 
-- [Data Execution Prevention](http://go.microsoft.com/fwlink/p/?linkid=157770)
+- [Data Execution Prevention](/windows/desktop/Memory/data-execution-prevention)
 
-- [Data Execution Prevention (Windows Embedded)](http://go.microsoft.com/fwlink/p/?linkid=157768)
+- [Data Execution Prevention (Windows Embedded)](/previous-versions/windows/embedded/ms913190\(v=winembedded.5\))
 
 ### To set this linker option in Visual Studio
 

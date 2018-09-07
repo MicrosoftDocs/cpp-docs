@@ -2,19 +2,14 @@
 title: "Docking and Floating Toolbars | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["CBRS_SIZE_DYNAMIC", "CBRS_SIZE_FIXED"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["size [MFC], toolbars", "size", "frame windows [MFC], toolbar docking", "CBRS_ALIGN_ANY constant [MFC]", "palettes, floating", "toolbars [MFC], docking", "CBRS_SIZE_DYNAMIC constant [MFC]", "floating toolbars", "toolbars [MFC], size", "toolbars [MFC], floating", "fixed-size toolbars", "CBRS_SIZE_FIXED constant [MFC]", "toolbar controls [MFC], wrapping", "toolbars [MFC], wrapping", "floating palettes"]
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Docking and Floating Toolbars
@@ -41,7 +36,7 @@ The Microsoft Foundation Class Library supports dockable toolbars. A dockable to
  See the MFC General sample [DOCKTOOL](../visual-cpp-samples.md) for examples.  
   
 ##  <a name="_core_enabling_docking_in_a_frame_window"></a> Enabling Docking in a Frame Window  
- To dock toolbars to a frame window, the frame window (or destination) must be enabled to allow docking. This is done using the [CFrameWnd::EnableDocking](../mfc/reference/cframewnd-class.md#enabledocking) function, which takes one `DWORD` parameter that is a set of style bits indicating which side of the frame window accepts docking. If a toolbar is about to be docked and there are multiple sides that it could be docked to, the sides indicated in the parameter passed to `EnableDocking` are used in the following order: top, bottom, left, right. If you want to be able to dock control bars anywhere, pass `CBRS_ALIGN_ANY` to `EnableDocking`.  
+ To dock toolbars to a frame window, the frame window (or destination) must be enabled to allow docking. This is done using the [CFrameWnd::EnableDocking](../mfc/reference/cframewnd-class.md#enabledocking) function, which takes one *DWORD* parameter that is a set of style bits indicating which side of the frame window accepts docking. If a toolbar is about to be docked and there are multiple sides that it could be docked to, the sides indicated in the parameter passed to `EnableDocking` are used in the following order: top, bottom, left, right. If you want to be able to dock control bars anywhere, pass **CBRS_ALIGN_ANY** to `EnableDocking`.  
   
 ##  <a name="_core_enabling_docking_for_a_toolbar"></a> Enabling Docking for a Toolbar  
  After you have prepared the destination for docking, you must prepare the toolbar (or source) in a similar fashion. Call [CControlBar::EnableDocking](../mfc/reference/ccontrolbar-class.md#enabledocking) for each toolbar you want to dock, specifying the destination sides to which the toolbar should dock. If none of the sides specified in the call to `CControlBar::EnableDocking` match the sides enabled for docking in the frame window, the toolbar cannot dock — it will float. Once it has been floated, it remains a floating toolbar, unable to dock to the frame window.  

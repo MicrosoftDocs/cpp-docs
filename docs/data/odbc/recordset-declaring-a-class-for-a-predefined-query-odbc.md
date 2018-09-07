@@ -2,18 +2,13 @@
 title: "Recordset: Declaring a Class for a Predefined Query (ODBC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC recordsets, queries", "predefined queries and recordsets", "stored procedures, and recordsets", "recordsets, predefined queries", "recordsets, stored procedures"]
 ms.assetid: d27c4df9-dad2-4484-ba72-92ab0c8ff928
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Recordset: Declaring a Class for a Predefined Query (ODBC)
@@ -43,7 +38,7 @@ This topic applies to the MFC ODBC classes.
   
 3.  Manually add [RFX](../../data/odbc/record-field-exchange-rfx.md) function calls in the [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) member function of the class, one corresponding to the data type of each added field data member.  
   
-    ```  
+    ```cpp  
     Immediately before these RFX calls, call <MSHelp:link keywords="_mfc_CFieldExchange.3a3a.SetFieldType" TABINDEX="0">SetFieldType</MSHelp:link>, as shown here:   
     pFX->SetFieldType( CFieldExchange::outputColumn );  
     ```  
@@ -55,7 +50,7 @@ This topic applies to the MFC ODBC classes.
   
      You must also increment the initialization value for the [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) data member. The wizard writes the initialization, but it only covers the field data members it adds for you. For example:  
   
-    ```  
+    ```cpp  
     m_nFields += 6;  
     ```  
   
@@ -77,13 +72,13 @@ This topic applies to the MFC ODBC classes.
     CString mySQL = "{CALL Delinquent_Accts (?)}";  
     ```  
   
-8.  In the code that opens the recordset, set the values of the recordset's parameter data members and then call the **Open** member function, passing your SQL string for the **lpszSQL** parameter. Or instead, replace the string returned by the `GetDefaultSQL` member function in your class.  
+8.  In the code that opens the recordset, set the values of the recordset's parameter data members and then call the `Open` member function, passing your SQL string for the *lpszSQL* parameter. Or instead, replace the string returned by the `GetDefaultSQL` member function in your class.  
   
  The following examples show the procedure for calling a predefined query, named `Delinquent_Accts`, which takes one parameter for a sales district number. This query returns three columns: `Acct_No`, `L_Name`, `Phone`. All columns are from the Customers table.  
   
  The following recordset specifies field data members for the columns the query returns and a parameter for the sales district number requested at run time.  
   
-```  
+```cpp  
 class CDelinquents : public CRecordset  
 {  
 // Field/Param Data  
@@ -99,7 +94,7 @@ class CDelinquents : public CRecordset
   
  The next example shows the initializations for the data members in the `CDelinquents` constructor.  
   
-```  
+```cpp  
 CDelinquents::CDelinquents(CDatabase* pdb)  
    : CRecordset(pdb)  
 {  
@@ -118,7 +113,7 @@ CDelinquents::CDelinquents(CDatabase* pdb)
   
  The next example shows the RFX functions in `CDelinquents::DoFieldExchange`:  
   
-```  
+```cpp  
 void CDelinquents::DoFieldExchange(CFieldExchange* pFX)  
 {  
     pFX->SetFieldType(CFieldExchange::outputColumn);  
@@ -134,7 +129,7 @@ void CDelinquents::DoFieldExchange(CFieldExchange* pFX)
   
  The next example shows how to set up the SQL string and how to use it to open the recordset.  
   
-```  
+```cpp  
 // Construct a CDelinquents recordset object  
 CDelinquents rsDel( NULL );  
 CString strSQL = "{CALL Delinquent_Accts (?)}"  

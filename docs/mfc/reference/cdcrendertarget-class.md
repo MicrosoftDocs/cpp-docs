@@ -2,19 +2,14 @@
 title: "CDCRenderTarget Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget::CDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget::Attach", "AFXRENDERTARGET/CDCRenderTarget::BindDC", "AFXRENDERTARGET/CDCRenderTarget::Create", "AFXRENDERTARGET/CDCRenderTarget::Detach", "AFXRENDERTARGET/CDCRenderTarget::GetDCRenderTarget", "AFXRENDERTARGET/CDCRenderTarget::m_pDCRenderTarget"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDCRenderTarget [MFC], CDCRenderTarget", "CDCRenderTarget [MFC], Attach", "CDCRenderTarget [MFC], BindDC", "CDCRenderTarget [MFC], Create", "CDCRenderTarget [MFC], Detach", "CDCRenderTarget [MFC], GetDCRenderTarget", "CDCRenderTarget [MFC], m_pDCRenderTarget"]
 ms.assetid: aa8059c9-08e6-49e4-9b8c-00fa54077a61
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDCRenderTarget Class
@@ -74,7 +69,7 @@ void Attach(ID2D1DCRenderTarget* pTarget);
 ```  
   
 ### Parameters  
- `pTarget`  
+ *pTarget*  
  Existing render target interface. Cannot be NULL  
   
 ##  <a name="binddc"></a>  CDCRenderTarget::BindDC  
@@ -87,10 +82,10 @@ BOOL BindDC(
 ```  
   
 ### Parameters  
- `dc`  
+ *dc*  
  The device context to which the render target issues drawing commands  
   
- `rect`  
+ *rect*  
  The dimensions of the handle to a device context (HDC) to which the render target is bound  
   
 ### Return Value  
@@ -111,7 +106,7 @@ BOOL Create(const D2D1_RENDER_TARGET_PROPERTIES& props);
 ```  
   
 ### Parameters  
- `props`  
+ *props*  
  The rendering mode, pixel format, remoting options, DPI information, and the minimum DirectX support required for hardware rendering.  
   
 ### Return Value  

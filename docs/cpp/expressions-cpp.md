@@ -1,19 +1,14 @@
 ---
 title: "Expressions (C++) | Microsoft Docs"
-ms.custom: ""
+ms.custom: "index-page"
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "index-page "
+ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++]"]
 ms.assetid: aaa1f250-7185-4113-b682-3f5e995943d1
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Expressions (C++)
@@ -41,8 +36,6 @@ This section describes C++ expressions. Expressions are sequences of operators a
   
 -   [Constant expressions](../cpp/cpp-constant-expressions.md)  
   
--   [Expressions with explicit type conversions](http://msdn.microsoft.com/en-us/060ad6b4-9592-4f3e-8509-a20ac84a85ae)  
-  
 -   [Casting operators](../cpp/casting-operators.md)  
   
 -   [Run-time type information](../cpp/run-time-type-information.md)  
@@ -58,5 +51,5 @@ This section describes C++ expressions. Expressions are sequences of operators a
     > [!NOTE]
     >  Operators for built-in types cannot be overloaded; their behavior is predefined.  
   
-## See Also  
+## See also  
  [C++ Language Reference](../cpp/cpp-language-reference.md)

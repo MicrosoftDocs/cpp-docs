@@ -2,19 +2,14 @@
 title: "Namespaces (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "08/30/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
-f1_keywords: ["namespace_CPP"]
+f1_keywords: ["namespace_CPP", "using_CPP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["namespaces [C++], C++", "namespaces [C++]", "namespaces [C++], global", "global namespace", "Visual C++, namespaces"]
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Namespaces (C++)
@@ -48,7 +43,6 @@ ContosoData::Func(mgr);
 using ContosoData::ObjectManager;  
 ObjectManager mgr;  
 mgr.DoSomething();  
-  
 ```  
   
  Use a using directive to bring everything in the namespace into scope:  
@@ -59,11 +53,10 @@ using namespace ContosoData;
 ObjectManager mgr;  
 mgr.DoSomething();  
 Func(mgr);  
-  
 ```  
   
 ## <a id="using_directives"></a> using directives  
- The `using` directive allows all the names in a **namespace** to be used without the *namespace-name* as an explicit qualifier. Use a using directive in an implementation file (i.e. *.cpp) if you are using several different identifiers in a namespace; if you are just using one or two identifiers, then consider a using declaration to only bring those identifiers into scope and not all the identifiers in the namespace. If a local variable has the same name as a namespace variable, the namespace variable is hidden. It is an error to have a namespace variable with the same name as a global variable.  
+ The **using** directive allows all the names in a **namespace** to be used without the *namespace-name* as an explicit qualifier. Use a using directive in an implementation file (i.e. *.cpp) if you are using several different identifiers in a namespace; if you are just using one or two identifiers, then consider a using declaration to only bring those identifiers into scope and not all the identifiers in the namespace. If a local variable has the same name as a namespace variable, the namespace variable is hidden. It is an error to have a namespace variable with the same name as a global variable.  
   
 > [!NOTE]
 >  A using directive can be placed at the top of a .cpp file (at file scope), or inside a class or function definition.  
@@ -80,11 +73,10 @@ namespace ContosoDataServer
 {  
     void Foo();  
     int Bar();  
-  
 }  
 ```  
   
- Function implementations in contosodata.cpp should use the fully qualified name, even if you place a `using` directive at the top of the file:  
+ Function implementations in contosodata.cpp should use the fully qualified name, even if you place a **using** directive at the top of the file:  
   
 ```cpp  
 #include "contosodata.h"  
@@ -143,7 +135,6 @@ namespace ContosoDataServer
   
     int Bar(){...};  
     int Baz(int i) { return Details::CountImpl; }      
-  
 }  
 ```  
   
@@ -200,7 +191,6 @@ namespace Parent
      template<>  
      class C<int> {};  
 }  
-  
 ```  
   
  You can use inline namespaces as a versioning mechanism to manage changes to the public interface of a library. For example, you can create a single parent namespace, and encapsulate each version of the interface in its own namespace nested inside the parent. The namespace that holds the most recent or preferred version is qualified as inline, and is therefore exposed as if it were a direct member of the parent namespace. Client code that invokes the Parent::Class will automatically bind to the new code. Clients that prefer to use the older version can still access it by using the fully qualified path to the nested namespace that has that code.  
@@ -241,7 +231,6 @@ namespace Contoso
       };  
     }  
 }  
-  
 ```  
   
 ## <a id="namespace_aliases"></a> Namespace aliases  
@@ -251,7 +240,6 @@ namespace Contoso
 namespace a_very_long_namespace_name { class Foo {}; }  
 namespace AVLNN = a_very_long_namespace_name;  
 void Bar(AVLNN::Foo foo){ }  
-  
 ```  
   
 ## anonymous or unnamed namespaces  
@@ -266,5 +254,5 @@ namespace
   
  This is called an unnamed or anonymous namespace and it is useful when you want to make variable declarations invisible to code in other files (i.e. give them internal linkage) without having to create a named namespace. All code in the same file can see the identifiers in an unnamed namespace but the identifiers, along with the namespace itself, are not visible outside that file—or more precisely outside the translation unit.  
   
-## See Also  
+## See also  
  [Declarations and Definitions](declarations-and-definitions-cpp.md)

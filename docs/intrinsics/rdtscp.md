@@ -2,19 +2,14 @@
 title: "__rdtscp | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__rdtscp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["rdtscp intrinsic", "__rdtscp intrinsic", "rdtscp instruction"]
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee
-caps.latest.revision: 13
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __rdtscp
@@ -51,7 +46,7 @@ unsigned __int64 __rdtscp(
 > [!CAUTION]
 >  Unlike `rdtsc`, `rdtscp` is a serializing instruction; nevertheless, the compiler can move code around this intrinsic.  
   
- The interpretation of the TSC value in this generation of hardware differs from that in earlier versions of [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  See hardware manuals for more information.  
+ The interpretation of the TSC value in this generation of hardware differs from that in earlier versions of x64.  See hardware manuals for more information.  
   
  The meaning of the value in `TSC_AUX[31:0]` depends on the operating system.  
   

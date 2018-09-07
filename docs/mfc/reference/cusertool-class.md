@@ -2,19 +2,14 @@
 title: "CUserTool Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CUserTool", "AFXUSERTOOL/CUserTool", "AFXUSERTOOL/CUserTool::CopyIconToClipboard", "AFXUSERTOOL/CUserTool::DrawToolIcon", "AFXUSERTOOL/CUserTool::GetCommand", "AFXUSERTOOL/CUserTool::GetCommandId", "AFXUSERTOOL/CUserTool::Invoke", "AFXUSERTOOL/CUserTool::Serialize", "AFXUSERTOOL/CUserTool::SetCommand", "AFXUSERTOOL/CUserTool::SetToolIcon", "AFXUSERTOOL/CUserTool::LoadDefaultIcon", "AFXUSERTOOL/CUserTool::m_strArguments", "AFXUSERTOOL/CUserTool::m_strInitialDirectory", "AFXUSERTOOL/CUserTool::m_strLabel"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CUserTool [MFC], CopyIconToClipboard", "CUserTool [MFC], DrawToolIcon", "CUserTool [MFC], GetCommand", "CUserTool [MFC], GetCommandId", "CUserTool [MFC], Invoke", "CUserTool [MFC], Serialize", "CUserTool [MFC], SetCommand", "CUserTool [MFC], SetToolIcon", "CUserTool [MFC], LoadDefaultIcon", "CUserTool [MFC], m_strArguments", "CUserTool [MFC], m_strInitialDirectory", "CUserTool [MFC], m_strLabel"]
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CUserTool Class
@@ -72,7 +67,7 @@ class CUserTool : public CObject
  **Header:** afxusertool.h  
   
 ##  <a name="copyicontoclipboard"></a>  CUserTool::CopyIconToClipboard  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 BOOL CopyIconToClipboard();
@@ -92,10 +87,10 @@ void DrawToolIcon(
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
  A pointer to a device context.  
   
- [in] `rectImage`  
+ [in] *rectImage*  
  Specifies the coordinates of the area to display the icon.  
   
 ##  <a name="getcommand"></a>  CUserTool::GetCommand  
@@ -129,7 +124,7 @@ virtual BOOL Invoke();
  Nonzero if the command was executed successfully; otherwise 0.  
   
 ### Remarks  
- Calls [ShellExecute](http://msdn.microsoft.com/library/windows/desktop/bb762153) to execute a command associated with the user tool. The function fails if the command is empty or if [ShellExecute](http://msdn.microsoft.com/library/windows/desktop/bb762153) fails.  
+ Calls [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) to execute a command associated with the user tool. The function fails if the command is empty or if [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) fails.  
   
 ##  <a name="loaddefaulticon"></a>  CUserTool::LoadDefaultIcon  
  Loads the default icon for a user tool.  
@@ -139,7 +134,7 @@ virtual HICON LoadDefaultIcon();
 ```  
   
 ### Return Value  
- A handle to the loaded icon ( `HICON`), or `NULL` if the default icon cannot be loaded.  
+ A handle to the loaded icon ( HICON), or NULL if the default icon cannot be loaded.  
   
 ### Remarks  
  The framework calls this method when it is unable to load an icon for a user-defined tool from the executable file of the tool.  
@@ -174,14 +169,14 @@ CString m_strLabel;
 ```  
   
 ##  <a name="serialize"></a>  CUserTool::Serialize  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ```  
 virtual void Serialize(CArchive& ar);
 ```  
   
 ### Parameters  
- [in] `ar`  
+ [in] *ar*  
   
 ### Remarks  
   
@@ -193,7 +188,7 @@ void SetCommand(LPCTSTR lpszCmd);
 ```  
   
 ### Parameters  
- [in] `lpszCmd`  
+ [in] *lpszCmd*  
  Specifies the new application to be associated with the user tool.  
   
 ### Remarks  

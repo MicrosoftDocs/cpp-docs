@@ -2,19 +2,14 @@
 title: "Compiler Warning (level 1) C4384 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-diagnostics"]
 ms.topic: "error-reference"
 f1_keywords: ["C4384"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["C4384"]
 ms.assetid: fafa8eb2-cbfc-4edb-8b0f-511ff5d37ac0
-caps.latest.revision: 5
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler Warning (level 1) C4384

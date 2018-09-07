@@ -2,19 +2,14 @@
 title: "CAnimationVariable Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationVariable", "AFXANIMATIONCONTROLLER/CAnimationVariable", "AFXANIMATIONCONTROLLER/CAnimationVariable::CAnimationVariable", "AFXANIMATIONCONTROLLER/CAnimationVariable::AddTransition", "AFXANIMATIONCONTROLLER/CAnimationVariable::ApplyTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::ClearTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::Create", "AFXANIMATIONCONTROLLER/CAnimationVariable::CreateTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::EnableIntegerValueChangedEvent", "AFXANIMATIONCONTROLLER/CAnimationVariable::EnableValueChangedEvent", "AFXANIMATIONCONTROLLER/CAnimationVariable::GetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationVariable::GetParentAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationVariable::GetValue", "AFXANIMATIONCONTROLLER/CAnimationVariable::GetVariable", "AFXANIMATIONCONTROLLER/CAnimationVariable::SetDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationVariable::SetParentAnimationObject", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_bAutodestroyTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_dblDefaultValue", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_lstTransitions", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_pParentObject", "AFXANIMATIONCONTROLLER/CAnimationVariable::m_variable"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationVariable [MFC], CAnimationVariable", "CAnimationVariable [MFC], AddTransition", "CAnimationVariable [MFC], ApplyTransitions", "CAnimationVariable [MFC], ClearTransitions", "CAnimationVariable [MFC], Create", "CAnimationVariable [MFC], CreateTransitions", "CAnimationVariable [MFC], EnableIntegerValueChangedEvent", "CAnimationVariable [MFC], EnableValueChangedEvent", "CAnimationVariable [MFC], GetDefaultValue", "CAnimationVariable [MFC], GetParentAnimationObject", "CAnimationVariable [MFC], GetValue", "CAnimationVariable [MFC], GetVariable", "CAnimationVariable [MFC], SetDefaultValue", "CAnimationVariable [MFC], SetParentAnimationObject", "CAnimationVariable [MFC], m_bAutodestroyTransitions", "CAnimationVariable [MFC], m_dblDefaultValue", "CAnimationVariable [MFC], m_lstTransitions", "CAnimationVariable [MFC], m_pParentObject", "CAnimationVariable [MFC], m_variable"]
 ms.assetid: 506e697e-31a8-4033-a27e-292f4d7b42d9
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationVariable Class
@@ -97,7 +92,7 @@ void AddTransition(CBaseTransition* pTransition);
 ```  
   
 ### Parameters  
- `pTransition`  
+ *pTransition*  
  A pointer to a transition to add.  
   
 ### Remarks  
@@ -114,13 +109,13 @@ void ApplyTransitions(
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to parent animation controller.  
   
- `pStoryboard`  
+ *pStoryboard*  
  A pointer to storyboard.  
   
- `bDependOnKeyframes`  
+ *bDependOnKeyframes*  
  TRUE, if this method should add transitions that depend on keyframes.  
   
 ### Remarks  
@@ -134,7 +129,7 @@ CAnimationVariable(DOUBLE dblDefaultValue = 0.0);
 ```  
   
 ### Parameters  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Specifies the default value.  
   
 ### Remarks  
@@ -148,7 +143,7 @@ void ClearTransitions(BOOL bAutodestroy);
 ```  
   
 ### Parameters  
- `bAutodestroy`  
+ *bAutodestroy*  
  Specifies whether this method should delete transition objects.  
   
 ### Remarks  
@@ -162,7 +157,7 @@ virtual BOOL Create(IUIAnimationManager* pManager);
 ```  
   
 ### Parameters  
- `pManager`  
+ *pManager*  
  A pointer to animation manager.  
   
 ### Return Value  
@@ -181,8 +176,8 @@ BOOL CreateTransitions(
 ```  
   
 ### Parameters  
-`pLibrary`  
- A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
+*pLibrary*  
+ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), which defines a library of standard transitions.  
   
 ### Return Value  
  TRUE if transitions were created successfully; otherwise FALSE.  
@@ -200,10 +195,10 @@ void EnableIntegerValueChangedEvent (
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to parent controller.  
   
- `bEnable`  
+ *bEnable*  
  TRUE - enable event, FALSE - disable event.  
   
 ### Remarks  
@@ -219,10 +214,10 @@ void EnableValueChangedEvent (
 ```  
   
 ### Parameters  
- `pController`  
+ *pController*  
  A pointer to parent controller.  
   
- `bEnable`  
+ *bEnable*  
  TRUE - enable event, FALSE - disable event.  
   
 ### Remarks  
@@ -263,10 +258,10 @@ HRESULT GetValue(INT32& nValue);
 ```  
   
 ### Parameters  
- `dblValue`  
+ *dblValue*  
  The current value of the animation variable.  
   
- `nValue`  
+ *nValue*  
  The current value of the animation variable.  
   
 ### Return Value  
@@ -334,7 +329,7 @@ void SetDefaultValue(DOUBLE dblDefaultValue);
 ```  
   
 ### Parameters  
- `dblDefaultValue`  
+ *dblDefaultValue*  
  Specifies the new default value.  
   
 ### Remarks  
@@ -348,7 +343,7 @@ void SetParentAnimationObject(CAnimationBaseObject* pParentObject);
 ```  
   
 ### Parameters  
- `pParentObject`  
+ *pParentObject*  
  A pointer to an animation object that contains this variable.  
   
 ### Remarks  

@@ -2,19 +2,14 @@
 title: "CSingleDocTemplate Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSingleDocTemplate", "AFXWIN/CSingleDocTemplate", "AFXWIN/CSingleDocTemplate::CSingleDocTemplate"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSingleDocTemplate [MFC], CSingleDocTemplate"]
 ms.assetid: 4f3a8212-81ee-48a0-ad22-e0ed7c36a391
-caps.latest.revision: 23
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ---
 # CSingleDocTemplate Class
 Defines a document template that implements the single document interface (SDI).  
@@ -38,7 +33,7 @@ class CSingleDocTemplate : public CDocTemplate
   
  A document template defines the relationship between three types of classes:  
   
--   A document class, which you derive from **CDocument**.  
+-   A document class, which you derive from `CDocument`.  
   
 -   A view class, which displays data from the document class listed above. You can derive this class from `CView`, `CScrollView`, `CFormView`, or `CEditView`. (You can also use `CEditView` directly.)  
   
@@ -74,7 +69,7 @@ CSingleDocTemplate(
 ```  
   
 ### Parameters  
- `nIDResource`  
+ *nIDResource*  
  Specifies the ID of the resources used with the document type. This may include menu, icon, accelerator table, and string resources.  
   
  The string resource consists of up to seven substrings separated by the '\n' character (the '\n' character is needed as a placeholder if a substring is not included; however, trailing '\n' characters are not necessary); these substrings describe the document type. For information about the substrings, see [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). This string resource is found in the application's resource file. For example:  
@@ -93,13 +88,13 @@ CSingleDocTemplate(
   
  For more information about these resource types, see the [String Editor](../../windows/string-editor.md).  
   
- `pDocClass`  
- Points to the `CRuntimeClass` object of the document class. This class is a **CDocument**-derived class you define to represent your documents.  
+ *pDocClass*  
+ Points to the `CRuntimeClass` object of the document class. This class is a `CDocument`-derived class you define to represent your documents.  
   
- `pFrameClass`  
+ *pFrameClass*  
  Points to the `CRuntimeClass` object of the frame window class. This class can be a `CFrameWnd`-derived class, or it can be `CFrameWnd` itself if you want default behavior for your main frame window.  
   
- `pViewClass`  
+ *pViewClass*  
  Points to the `CRuntimeClass` object of the view class. This class is a `CView`-derived class you define to display your documents.  
   
 ### Remarks  

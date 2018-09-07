@@ -2,18 +2,13 @@
 title: "Single Inheritance | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["single inheritance", "base classes [C++], indirect", "scope, scope resolution operator", "operators [C++], scope resolution", "scope resolution operator", "derived classes [C++], single base class", "inheritance, single"]
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Single Inheritance
@@ -26,7 +21,7 @@ Simple Single-Inheritance Graph
   
  One other item of note in the figure: `Book` is both a derived class (from `PrintedDocument`) and a base class (`PaperbackBook` is derived from `Book`). A skeletal declaration of such a class hierarchy is shown in the following example:  
   
-```  
+```cpp 
 // deriv_SingleInheritance.cpp  
 // compile with: /LD  
 class PrintedDocument {};  
@@ -52,11 +47,11 @@ Sample of Directed Acyclic Graph
  In the diagram shown above, called a "directed acyclic graph" (or "DAG"), some of the classes are base classes for more than one derived class. However, the reverse is not true: there is only one direct base class for any given derived class. The graph in the figure depicts a "single inheritance" structure.  
   
 > [!NOTE]
->  Directed acyclic graphs are not unique to single inheritance. They are also used to depict multiple-inheritance graphs. This topic is covered in [Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca).  
+>  Directed acyclic graphs are not unique to single inheritance. They are also used to depict multiple-inheritance graphs.  
   
  In inheritance, the derived class contains the members of the base class plus any new members you add. As a result, a derived class can refer to members of the base class (unless those members are redefined in the derived class). The scope-resolution operator (`::`) can be used to refer to members of direct or indirect base classes when those members have been redefined in the derived class. Consider this example:  
   
-```  
+```cpp 
 // deriv_SingleInheritance2.cpp  
 // compile with: /EHsc /c  
 #include <iostream>  
@@ -89,7 +84,7 @@ Book::Book( char *name, long pagecount ) {
   
  Note that the constructor for `Book`, (`Book::Book`), has access to the data member, `Name`. In a program, an object of type `Book` can be created and used as follows:  
   
-```  
+```cpp 
 //  Create a new object of type Book. This invokes the  
 //   constructor Book::Book.  
 Book LibraryBook( "Programming Windows, 2nd Ed", 944 );  
@@ -102,7 +97,7 @@ LibraryBook.PrintNameOf();
   
  As the preceding example demonstrates, class-member and inherited data and functions are used identically. If the implementation for class `Book` calls for a reimplementation of the `PrintNameOf` function, the function that belongs to the `Document` class can be called only by using the scope-resolution (`::`) operator:  
   
-```  
+```cpp 
 // deriv_SingleInheritance3.cpp  
 // compile with: /EHsc /LD  
 #include <iostream>  
@@ -128,7 +123,7 @@ void Book::PrintNameOf() {
   
  Pointers and references to derived classes can be implicitly converted to pointers and references to their base classes if there is an accessible, unambiguous base class. The following code demonstrates this concept using pointers (the same principle applies to references):  
   
-```  
+```cpp 
 // deriv_SingleInheritance4.cpp  
 // compile with: /W3  
 struct Document {  
@@ -140,8 +135,10 @@ class PaperbackBook : public Document {};
   
 int main() {  
    Document * DocLib[10];   // Library of ten documents.  
-   for (int i = 0 ; i < 10 ; i++)  
+   for (int i = 0 ; i < 5 ; i++)  
       DocLib[i] = new Document;  
+   for (int i = 5 ; i < 10 ; i++)  
+      DocLib[i] = new PaperbackBook;  
 }  
 ```  
   
@@ -151,4 +148,3 @@ int main() {
   
 > [!NOTE]
 >  Forcing the base class to implement a function such as `PrintNameOf` is often not the best design. [Virtual Functions](../cpp/virtual-functions.md) offers other design alternatives.  
-  

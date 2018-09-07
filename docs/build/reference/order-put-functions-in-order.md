@@ -1,20 +1,15 @@
 ---
 title: "-ORDER (Put Functions in Order) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
+ms.date: "09/05/2018"
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["VC.Project.VCLinkerTool.FunctionOrder", "/order"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ORDER linker option", "-ORDER linker option", "LINK tool [C++], program optimizing", "/ORDER linker option", "LINK tool [C++], swap tuning", "paging, optimizing"]
 ms.assetid: ecf5eb3e-e404-4e86-9a91-4e5ec157261a
-caps.latest.revision: 9
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /ORDER (Put Functions in Order)
@@ -23,7 +18,7 @@ Specify the link order for separately packaged (COMDAT) functions.
 
 ## Syntax
 
->/ORDER:@*filename*
+> **/ORDER:\@**<em>filename</em>
 
 ### Parameters
 
@@ -36,9 +31,9 @@ The **/ORDER** compiler option allows you to optimize your program's paging beha
 
 When you compile your source code into an object file, you can tell the compiler to put each function into its own section, called a *COMDAT*, by using the [/Gy (Enable function-level linking)](../../build/reference/gy-enable-function-level-linking.md) compiler option. The **/ORDER** linker option tells the linker to place COMDATs into the executable image in the order you specify.
 
-To specify the COMDAT order, create a *response file*, a text file that lists each COMDAT by name, one per line, in the order you want them to be placed by the linker. Pass the name of this file as the *filename* parameter of the **/ORDER** option. For C++ functions, the name of a COMDAT is the decorated form of the function name. Use the undecorated name for C functions, `main`, and for C++ functions declared as `extern "C"`. Function names and decorated names are case sensitive. For more information on decorated names, see [Decorated Names](../../build/reference/decorated-names.md). 
+To specify the COMDAT order, create a *response file*, a text file that lists each COMDAT by name, one per line, in the order you want them to be placed by the linker. Pass the name of this file as the *filename* parameter of the **/ORDER** option. For C++ functions, the name of a COMDAT is the decorated form of the function name. Use the undecorated name for C functions, `main`, and for C++ functions declared as `extern "C"`. Function names and decorated names are case sensitive. For more information on decorated names, see [Decorated Names](../../build/reference/decorated-names.md).
 
-To find the decorated names of your COMDATs, use the [DUMPBIN](../../build/reference/dumpbin-reference.md) tool's [/SYMBOLS](../../build/reference/symbols.md) option on the object file. The linker automatically prepends an underscore (\_) to function names in the response file unless the name starts with a question mark (?) or at sign (@). For example, if a source file, example.cpp, contains functions `int cpp_func(int)`, `extern "C" int c_func(int)` and `int main(void)`, the command `DUMPBIN /SYMBOLS example.obj` lists these decorated names:
+To find the decorated names of your COMDATs, use the [DUMPBIN](../../build/reference/dumpbin-reference.md) tool's [/SYMBOLS](../../build/reference/symbols.md) option on the object file. The linker automatically prepends an underscore (**\_**) to function names in the response file unless the name starts with a question mark (**?**) or at sign (**\@**). For example, if a source file, example.cpp, contains functions `int cpp_func(int)`, `extern "C" int c_func(int)` and `int main(void)`, the command `DUMPBIN /SYMBOLS example.obj` lists these decorated names:
 
 ```Output
 ...
@@ -59,9 +54,9 @@ The **/ORDER** option disables incremental linking. You may see linker warning [
 
 ### To set this linker option in the Visual Studio development environment
 
-1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).  
+1. Open the project's **Property Pages** dialog box. For details, see [Setting Visual C++ Project Properties](../../ide/working-with-project-properties.md).
 
-1. Under **Configuration Properties**, open **Linker** and then choose the **Optimization** property page.
+1. Select the **Configuration Properties** > **Linker** > **Optimization** property page.
 
 1. Modify the **Function Order** property to contain the name of your response file.
 

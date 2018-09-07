@@ -2,19 +2,14 @@
 title: "public (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: ["public_cpp"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["public keyword [C++]"]
 ms.assetid: f3e10a59-39f6-4bcd-827e-3e99f8f89497
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # public (C++)
@@ -38,7 +33,7 @@ public base-class
  For more information, see [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md), [friend](../cpp/friend-cpp.md), and the member-access table in [Controlling Access to Class Members](member-access-control-cpp.md).  
   
 ## /clr Specific  
- In CLR types, the C++ access specifier keywords (**public**, `private`, and `protected`) can affect the visibility of types and methods with regard to assemblies. For more information, see [Member Access Control](member-access-control-cpp.md).  
+ In CLR types, the C++ access specifier keywords (**public**, **private**, and **protected**) can affect the visibility of types and methods with regard to assemblies. For more information, see [Member Access Control](member-access-control-cpp.md).  
   
 > [!NOTE]
 >  Files compiled with [/LN](../build/reference/ln-create-msil-module.md) are not affected by this behavior. In this case, all managed classes (either public or private) will be visible.  
@@ -47,7 +42,7 @@ public base-class
   
 ## Example  
   
-```  
+```cpp 
 // keyword_public.cpp  
 class BaseClass {  
 public:  
@@ -66,6 +61,6 @@ int main() {
 }  
 ```  
   
-## See Also  
+## See also  
  [Controlling Access to Class Members](member-access-control-cpp.md)   
  [Keywords](../cpp/keywords-cpp.md)

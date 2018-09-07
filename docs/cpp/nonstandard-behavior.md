@@ -2,18 +2,13 @@
 title: "Nonstandard Behavior | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["compatibility and compliance, nonstandard behavior", "Microsoft-specific, compiler behavior", "nonstandard behavior, compliance and compatibility"]
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Nonstandard Behavior
@@ -60,7 +55,6 @@ int main() {
     g('c');  
 }  
 // Output: f(char)  
-  
 ```  
   
 ## Function Exception Specifiers  
@@ -74,7 +68,7 @@ void g() throw();    // parsed and used
  For more information on exception specifications, see [Exception Specifications](../cpp/exception-specifications-throw-cpp.md).  
   
 ## char_traits::eof()  
- The C++ standard states that [char_traits::eof](../standard-library/char-traits-struct.md#eof) must not correspond to a valid `char_type` value. The Visual C++ compiler enforces this constraint for type `char`, but not for type `wchar_t`. This does not comply with the requirement in Table 62 in section 12.1.1 of the C++ ISO specification. The example below demonstrates this.  
+ The C++ standard states that [char_traits::eof](../standard-library/char-traits-struct.md#eof) must not correspond to a valid `char_type` value. The Visual C++ compiler enforces this constraint for type **char**, but not for type **wchar_t**. This does not comply with the requirement in Table 62 in section 12.1.1 of the C++ ISO specification. The example below demonstrates this.  
   
 ```cpp  
 #include <iostream>  

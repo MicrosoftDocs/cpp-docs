@@ -2,17 +2,12 @@
 title: "String and I-O Formatting (Modern C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # String and I/O Formatting (Modern C++)
@@ -40,7 +35,6 @@ int main() 
         << endl;  
     cout.copyfmt(state); // restore previous formatting  
 }  
-  
 ```  
   
  This can be entirely too cumbersome in many cases. As an alternative, you can use Boost.Format from the Boost C++ libraries, even though it’s nonstandard. You can download any Boost library from the [Boost](http://www.boost.org/) website.  
@@ -65,10 +59,9 @@ int main() 
         cout << format("%1% %2% %|40t|%3%\n") % first[i] % last[i] % tel[i];  
     // Georges Benjamin Clemenceau             +33 (0) 123 456 789  
     // Jean de Lattre de Tassigny              +33 (0) 987 654 321  
-  
 ```  
   
-## See Also  
+## See also  
  [Welcome Back to C++](../cpp/welcome-back-to-cpp-modern-cpp.md)   
  [C++ Language Reference](../cpp/cpp-language-reference.md)   
  [C++ Standard Library](../standard-library/cpp-standard-library-reference.md)   

@@ -2,19 +2,14 @@
 title: "CArray Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CArray", "AFXTEMPL/CArray", "AFXTEMPL/CArray::CArray", "AFXTEMPL/CArray::Add", "AFXTEMPL/CArray::Append", "AFXTEMPL/CArray::Copy", "AFXTEMPL/CArray::ElementAt", "AFXTEMPL/CArray::FreeExtra", "AFXTEMPL/CArray::GetAt", "AFXTEMPL/CArray::GetCount", "AFXTEMPL/CArray::GetData", "AFXTEMPL/CArray::GetSize", "AFXTEMPL/CArray::GetUpperBound", "AFXTEMPL/CArray::InsertAt", "AFXTEMPL/CArray::IsEmpty", "AFXTEMPL/CArray::RemoveAll", "AFXTEMPL/CArray::RemoveAt", "AFXTEMPL/CArray::SetAt", "AFXTEMPL/CArray::SetAtGrow", "AFXTEMPL/CArray::SetSize"]
 dev_langs: ["CPP"]
 helpviewer_keywords: ["CArray [MFC], CArray", "CArray [MFC], Add", "CArray [MFC], Append", "CArray [MFC], Copy", "CArray [MFC], ElementAt", "CArray [MFC], FreeExtra", "CArray [MFC], GetAt", "CArray [MFC], GetCount", "CArray [MFC], GetData", "CArray [MFC], GetSize", "CArray [MFC], GetUpperBound", "CArray [MFC], InsertAt", "CArray [MFC], IsEmpty", "CArray [MFC], RemoveAll", "CArray [MFC], RemoveAt", "CArray [MFC], SetAt", "CArray [MFC], SetAtGrow", "CArray [MFC], SetSize"]
 ms.assetid: fead8b00-4cfd-4625-ad0e-251df62ba92f
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CArray Class
@@ -28,11 +23,11 @@ class CArray : public CObject
 ```  
   
 #### Parameters  
- `TYPE`  
- Template parameter that specifies the type of objects stored in the array. `TYPE` is a parameter that is returned by `CArray`.  
+ *TYPE*  
+ Template parameter that specifies the type of objects stored in the array. *TYPE* is a parameter that is returned by `CArray`.  
   
- `ARG` *_* `TYPE`  
- Template parameter that specifies the argument type that is used to access objects stored in the array. Often a reference to `TYPE`. `ARG_TYPE` is a parameter that is passed to `CArray`.  
+ *ARG* *_* *TYPE*  
+ Template parameter that specifies the argument type that is used to access objects stored in the array. Often a reference to *TYPE*. *ARG_TYPE* is a parameter that is passed to `CArray`.  
   
 ## Members  
   
@@ -53,7 +48,7 @@ class CArray : public CObject
 |[CArray::FreeExtra](#freeextra)|Frees all unused memory above the current upper bound.|  
 |[CArray::GetAt](#getat)|Returns the value at a given index.|  
 |[CArray::GetCount](#getcount)|Gets the number of elements in this array.|  
-|[CArray::GetData](#getdata)|Allows access to elements in the array. Can be **NULL**.|  
+|[CArray::GetData](#getdata)|Allows access to elements in the array. Can be NULL.|  
 |[CArray::GetSize](#getsize)|Gets the number of elements in this array.|  
 |[CArray::GetUpperBound](#getupperbound)|Returns the largest valid index.|  
 |[CArray::InsertAt](#insertat)|Inserts an element (or all the elements in another array) at a specified index.|  
@@ -105,10 +100,10 @@ INT_PTR Add(ARG_TYPE newElement);
 ```  
   
 ### Parameters  
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of arguments referencing elements in this array.  
   
- `newElement`  
+ *newElement*  
  The element to be added to this array.  
   
 ### Return Value  
@@ -137,7 +132,7 @@ INT_PTR Append(const CArray& src);
 ### Remarks  
  The arrays must be of the same type.  
   
- If necessary, **Append** may allocate extra memory to accommodate the elements appended to the array.  
+ If necessary, `Append` may allocate extra memory to accommodate the elements appended to the array.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#23](../../mfc/codesnippet/cpp/carray-class_2.cpp)]  
@@ -169,7 +164,7 @@ void Copy(const CArray& src);
 ### Remarks  
  Call this member function to overwrite the elements of one array with the elements of another array.  
   
- **Copy** does not free memory; however, if necessary, **Copy** may allocate extra memory to accommodate the elements copied to the array.  
+ `Copy` does not free memory; however, if necessary, `Copy` may allocate extra memory to accommodate the elements copied to the array.  
   
 ### Example  
  [!code-cpp[NVC_MFCCollections#25](../../mfc/codesnippet/cpp/carray-class_4.cpp)]  
@@ -183,7 +178,7 @@ const TYPE& ElementAt(INT_PTR nIndex) const;
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by [GetUpperBound](#getupperbound).  
   
 ### Return Value  
@@ -220,7 +215,7 @@ const TYPE& GetAt(INT_PTR nIndex) const;
  *TYPE*  
  Template parameter specifying the type of the array elements.  
   
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by [GetUpperBound](#getupperbound).  
   
 ### Return Value  
@@ -294,7 +289,7 @@ INT_PTR GetUpperBound() const;
 ### Remarks  
  Because array indexes are zero-based, this function returns a value 1 less than `GetSize`.  
   
- The condition **GetUpperBound( )** = -1 indicates that the array contains no elements.  
+ The condition `GetUpperBound( )` = -1 indicates that the array contains no elements.  
   
 ### Example  
   See the example for [CArray::GetAt](#getat).  
@@ -314,28 +309,28 @@ void InsertAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that may be greater than the value returned by `GetUpperBound`.  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of elements in this array.  
   
- `newElement`  
+ *newElement*  
  The element to be placed in this array.  
   
- `nCount`  
+ *nCount*  
  The number of times this element should be inserted (defaults to 1).  
   
- `nStartIndex`  
+ *nStartIndex*  
  An integer index that may be greater than the value returned by [GetUpperBound](#getupperbound).  
   
- `pNewArray`  
+ *pNewArray*  
  Another array that contains elements to be added to this array.  
   
 ### Remarks  
  In the process, it shifts up (by incrementing the index) the existing element at this index, and it shifts up all the elements above it.  
   
- The second version inserts all the elements from another `CArray` collection, starting at the `nStartIndex` position.  
+ The second version inserts all the elements from another `CArray` collection, starting at the *nStartIndex* position.  
   
  The `SetAt` function, in contrast, replaces one specified array element and does not shift any elements.  
   
@@ -364,7 +359,7 @@ const TYPE& operator[](int_ptr nindex) const;
  *TYPE*  
  Template parameter specifying the type of elements in this array.  
   
- `nIndex`  
+ *nIndex*  
  Index of the element to be accessed.  
   
 ### Remarks  
@@ -387,17 +382,17 @@ AFX_INLINE void CArray<TYPE, ARG_TYPE>::RelocateElements(
 ```  
   
 ### Parameters  
- `pNewData`  
+ *pNewData*  
  A new buffer for the array of elements.  
   
- `pData`  
+ *pData*  
  The old array of elements.  
   
- `nCount`  
+ *nCount*  
  Number of elements in the old array.  
   
 ### Remarks  
- `pNewData` is always large enough to hold all the `pData` elements.  
+ *pNewData* is always large enough to hold all the *pData* elements.  
   
  The [CArray](../../mfc/reference/carray-class.md) implementation uses this method to copy the old data to a new buffer when the array should grow or shrink (when [SetSize](#setsize) or [FreeExtra](#freeextra) are called). The default implementation just copies the data.  
   
@@ -426,10 +421,10 @@ void RemoveAt(
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by [GetUpperBound](#getupperbound).  
   
- `nCount`  
+ *nCount*  
  The number of elements to remove.  
   
 ### Remarks  
@@ -448,13 +443,13 @@ void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0 and less than or equal to the value returned by [GetUpperBound](#getupperbound).  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of arguments used for referencing array elements.  
   
- `newElement`  
+ *newElement*  
  The new element value to be stored at the specified position.  
   
 ### Remarks  
@@ -473,14 +468,14 @@ void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
 ```  
   
 ### Parameters  
- `nIndex`  
+ *nIndex*  
  An integer index that is greater than or equal to 0.  
   
- `ARG_TYPE`  
+ *ARG_TYPE*  
  Template parameter specifying the type of elements in the array.  
   
- `newElement`  
- The element to be added to this array. A **NULL** value is allowed.  
+ *newElement*  
+ The element to be added to this array. A NULL value is allowed.  
   
 ### Remarks  
  The array grows automatically if necessary (that is, the upper bound is adjusted to accommodate the new element).  
@@ -498,10 +493,10 @@ void SetSize(
 ```  
   
 ### Parameters  
- `nNewSize`  
+ *nNewSize*  
  The new array size (number of elements). Must be greater than or equal to 0.  
   
- `nGrowBy`  
+ *nGrowBy*  
  The minimum number of element slots to allocate if a size increase is necessary.  
   
 ### Remarks  
@@ -509,7 +504,7 @@ void SetSize(
   
  Use this function to set the size of your array before you begin using the array. If you do not use `SetSize`, adding elements to your array causes it to be frequently reallocated and copied. Frequent reallocation and copying are inefficient and can fragment memory.  
   
- The `nGrowBy` parameter affects internal memory allocation while the array is growing. Its use never affects the array size as reported by [GetSize](#getsize) and [GetUpperBound](#getupperbound). If the default value is used, MFC allocates memory in a way calculated to avoid memory fragmentation and optimize efficiency for most cases.  
+ The *nGrowBy* parameter affects internal memory allocation while the array is growing. Its use never affects the array size as reported by [GetSize](#getsize) and [GetUpperBound](#getupperbound). If the default value is used, MFC allocates memory in a way calculated to avoid memory fragmentation and optimize efficiency for most cases.  
   
 ### Example  
   See the example for [GetData](#getdata).  

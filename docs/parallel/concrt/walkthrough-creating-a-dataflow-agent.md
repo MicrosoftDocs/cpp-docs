@@ -2,18 +2,13 @@
 title: "Walkthrough: Creating a Dataflow Agent | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["creating dataflow agents [Concurrency Runtime]", "dataflow agents, creating [Concurrency Runtime]"]
 ms.assetid: 9db5ce3f-c51b-4de1-b79b-9ac2a0cbd130
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Walkthrough: Creating a Dataflow Agent
@@ -77,7 +72,7 @@ This document demonstrates how to create agent-based applications that are based
   
  [!code-cpp[concrt-dataflow-agent#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_5.cpp)]  
   
-6.  Wait for the `event` and `countdown event` objects to be set. These events signal that that the agent has received the sentinel value and that all operations have finished.  
+6.  Wait for the `event` and `countdown event` objects to be set. These events signal that the agent has received the sentinel value and that all operations have finished.  
   
  [!code-cpp[concrt-dataflow-agent#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-a-dataflow-agent_6.cpp)]  
   

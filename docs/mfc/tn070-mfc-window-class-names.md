@@ -2,19 +2,14 @@
 title: "TN070: MFC Window Class Names | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.classes"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["window class names [MFC]", "TN070 [MFC]"]
 ms.assetid: 90617912-dd58-4a7c-9082-ced71736d7cd
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN070: MFC Window Class Names
@@ -30,7 +25,7 @@ Afx:%x:%x
 Afx:%x:%x:%x:%x:%x  
 ```  
   
- The hex digits that replace the `%x` characters are filled in from data from the [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) structure. MFC uses this technique so that multiple C++ classes requiring identical **WNDCLASS** structures can share the same registered window class. Unlike most simple Win32 applications, MFC applications have only one **WNDPROC**, so you can easily share **WNDCLASS** structures to save time and memory. The replaceable values for the `%x` characters shown above are as follows:  
+ The hex digits that replace the `%x` characters are filled in from data from the [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) structure. MFC uses this technique so that multiple C++ classes requiring identical **WNDCLASS** structures can share the same registered window class. Unlike most simple Win32 applications, MFC applications have only one **WNDPROC**, so you can easily share **WNDCLASS** structures to save time and memory. The replaceable values for the `%x` characters shown above are as follows:  
   
 - **WNDCLASS.hInstance**  
   

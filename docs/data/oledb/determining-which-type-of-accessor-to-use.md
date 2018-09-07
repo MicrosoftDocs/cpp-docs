@@ -2,18 +2,13 @@
 title: "Determining Which Type of Accessor to Use | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["rowsets [C++], data types", "accessors [C++], types"]
 ms.assetid: 22483dd2-f4e0-4dcb-8e4d-cd43a9c1a3db
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Determining Which Type of Accessor to Use
@@ -27,11 +22,11 @@ You can determine data types on a rowset at compile time or at run time.
   
 |Accessor class|Binding|Parameter|Comment|  
 |--------------------|-------------|---------------|-------------|  
-|`CAccessor`|Create a user record with `COLUMN_ENTRY` macros. The macros bind a data member in that record to the accessor. When the rowset is created, columns cannot be unbound.|Yes, by using a **PARAM_MAP** macro entry. Once bound, parameters cannot be unbound.|Fastest accessor because of small amount of code.|  
+|`CAccessor`|Create a user record with COLUMN_ENTRY macros. The macros bind a data member in that record to the accessor. When the rowset is created, columns cannot be unbound.|Yes, by using a PARAM_MAP macro entry. Once bound, parameters cannot be unbound.|Fastest accessor because of small amount of code.|  
 |`CDynamicAccessor`|Automatic.|No.|Useful if you do not know the type of data in a rowset.|  
 |`CDynamicParameterAccessor`|Automatic, but can be [overridden](../../data/oledb/overriding-a-dynamic-accessor.md).|Yes, if the provider supports `ICommandWithParameters`. Parameters bound automatically.|Slower than `CDynamicAccessor` but useful for calling generic stored procedures.|  
-|**CDynamicStringAccessor[A,W]**|Automatic.|No.|Retrieves data accessed from the data store as string data.|  
-|`CManualAccessor`|Manual using `AddBindEntry`.|Manually using `AddParameterEntry`.|Very fast; parameters and columns bound only once. You determine the type of data to use. (See [DBVIEWER](http://msdn.microsoft.com/en-us/07620f99-c347-4d09-9ebc-2459e8049832) sample for an example.) Requires more code than `CDynamicAccessor` or `CAccessor`. It is more like calling OLE DB directly.|  
+|`CDynamicStringAccessor[A,W]`|Automatic.|No.|Retrieves data accessed from the data store as string data.|  
+|`CManualAccessor`|Manual using `AddBindEntry`.|Manually using `AddParameterEntry`.|Very fast; parameters and columns bound only once. You determine the type of data to use. (See [DBVIEWER](https://github.com/Microsoft/VCSamples) sample for an example.) Requires more code than `CDynamicAccessor` or `CAccessor`. It is more like calling OLE DB directly.|  
 |`CXMLAccessor`|Automatic.|No.|Retrieves data accessed from the data store as string data and formats it as XML-tagged data.|  
   
 ## See Also  

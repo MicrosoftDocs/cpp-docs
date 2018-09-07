@@ -2,24 +2,19 @@
 title: "Multiple Base Classes | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["base classes [C++], multiple", "derived classes [C++], multiple bases", "multiple inheritance, class declaration", "multiple base classes [C++]"]
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Multiple Base Classes
-As described in [Multiple Inheritance](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), a class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element. For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
+A class can be derived from more than one base class. In a multiple-inheritance model (where classes are derived from more than one base class), the base classes are specified using the *base-list* grammar element. For example, the class declaration for `CollectionOfBook`, derived from `Collection` and `Book`, can be specified:  
   
-```  
+```cpp 
 // deriv_MultipleBaseClasses.cpp  
 // compile with: /LD  
 class Collection {  
@@ -62,7 +57,7 @@ Simulated Lunch-Line Object
   
  Note that there are two `Queue` subobjects in the `LunchCashierQueue` object. The following code declares `Queue` to be a virtual base class:  
   
-```  
+```cpp 
 // deriv_VirtualBaseClasses.cpp  
 // compile with: /LD  
 class Queue {};  
@@ -71,7 +66,7 @@ class LunchQueue : virtual public Queue {};
 class LunchCashierQueue : public LunchQueue, public CashierQueue {};  
 ```  
   
- The `virtual` keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).  
+ The **virtual** keyword ensures that only one copy of the subobject `Queue` is included (see the following figure).  
   
  ![Simulated lunch&#45;line object, virtual base classes](../cpp/media/vc38xp3.gif "vc38XP3")  
 Simulated Lunch-Line Object with Virtual Base Classes  
@@ -89,14 +84,14 @@ Object Layout with Virtual and Nonvirtual Inheritance
 > [!NOTE]
 >  Virtual inheritance provides significant size benefits when compared with nonvirtual inheritance. However, it can introduce extra processing overhead.  
   
- If a derived class overrides a virtual function that it inherits from a virtual base class, and if a constructor or a destructor for the derived base class calls that function using a pointer to the virtual base class, the compiler may introduce additional hidden "vtordisp" fields into the classes with virtual bases. The /vd0 compiler option suppresses the addition of the hidden vtordisp constructor/destructor displacement member. The /vd1 compiler option, the default, enables them where they are necessary. Turn off vtordisps only if you are sure that all class constructors and destructors call virtual functions virtually.  
+ If a derived class overrides a virtual function that it inherits from a virtual base class, and if a constructor or a destructor for the derived base class calls that function using a pointer to the virtual base class, the compiler may introduce additional hidden "vtordisp" fields into the classes with virtual bases. The `/vd0` compiler option suppresses the addition of the hidden vtordisp constructor/destructor displacement member. The `/vd1` compiler option, the default, enables them where they are necessary. Turn off vtordisps only if you are sure that all class constructors and destructors call virtual functions virtually.  
   
- The /vd compiler option affects an entire compilation module. Use the **vtordisp** pragma to suppress and then reenable vtordisp fields on a class-by-class basis:  
+ The `/vd` compiler option affects an entire compilation module. Use the `vtordisp` pragma to suppress and then reenable `vtordisp` fields on a class-by-class basis:  
   
-```  
+```cpp 
 #pragma vtordisp( off )  
 class GetReal : virtual public { ... };  
-#pragma vtordisp( on )  
+\#pragma vtordisp( on )  
 ```  
   
 ## Name ambiguities  
@@ -104,7 +99,7 @@ class GetReal : virtual public { ... };
   
  Any expression that refers to a class member must make an unambiguous reference. The following example shows how ambiguities develop:  
   
-```  
+```cpp 
 // deriv_NameAmbiguities.cpp  
 // compile with: /LD  
 // Declare two base classes, A and B.  
@@ -127,7 +122,7 @@ class C : public A, public B {};
   
  Given the preceding class declarations, code such as the following is ambiguous because it is unclear whether `b` refers to the `b` in `A` or in `B`:  
   
-```  
+```cpp 
 C *pc = new C;  
   
 pc->b();  
@@ -145,7 +140,7 @@ pc->b();
   
  When an expression produces an ambiguity through inheritance, you can manually resolve it by qualifying the name in question with its class name. To make the preceding example compile properly with no ambiguities, use code such as:  
   
-```  
+```cpp 
 C *pc = new C;  
   
 pc->B::a();  
@@ -159,7 +154,7 @@ pc->B::a();
   
  A name dominates another name if it is defined in both classes and one class is derived from the other. The dominant name is the name in the derived class; this name is used when an ambiguity would otherwise have arisen, as shown in the following example:  
   
-```  
+```cpp 
 // deriv_Dominance.cpp  
 // compile with: /LD  
 class A {  
@@ -194,7 +189,7 @@ Ambiguous Conversion of Pointers to Base Classes
   
  The conversion to type `A*` (pointer to `A`) is ambiguous because there is no way to discern which subobject of type `A` is the correct one. Note that you can avoid the ambiguity by explicitly specifying which subobject you mean to use, as follows:  
   
-```  
+```cpp 
 (A *)(B *)&d       // Use B subobject.  
 (A *)(C *)&d       // Use C subobject.  
 ```  
@@ -209,5 +204,5 @@ Virtual vs. Nonvirtual Derivation
   
  In the figure, accessing any member of class `A` through nonvirtual base classes causes an ambiguity; the compiler has no information that explains whether to use the subobject associated with `B` or the subobject associated with `C`. However, when `A` is specified as a virtual base class, there is no question which subobject is being accessed.  
   
-## See Also  
+## See also  
  [Inheritance](../cpp/inheritance-cpp.md)

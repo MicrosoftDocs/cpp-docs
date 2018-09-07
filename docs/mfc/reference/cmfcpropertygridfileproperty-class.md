@@ -2,19 +2,14 @@
 title: "CMFCPropertyGridFileProperty Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCPropertyGridFileProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty", "AFXPROPERTYGRIDCTRL/CMFCPropertyGridFileProperty::CMFCPropertyGridFileProperty"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCPropertyGridFileProperty [MFC], CMFCPropertyGridFileProperty"]
 ms.assetid: 2bb8b8b4-47fc-4798-bd5e-dc8ea0b4cd9d
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCPropertyGridFileProperty Class
@@ -70,34 +65,34 @@ CMFCPropertyGridFileProperty(
 ```  
   
 ### Parameters  
- [in] `strName`  
+ [in] *strName*  
  The property name.  
   
- [in] `bOpenFileDialog`  
- `TRUE` to open an **Open File** dialog box; `FALSE` to open a **Save File** dialog box.  
+ [in] *bOpenFileDialog*  
+ TRUE to open an **Open File** dialog box; FALSE to open a **Save File** dialog box.  
   
- [in] `strFileName`  
+ [in] *strFileName*  
  The initial file name.  
   
- [in] `lpszDefExt`  
- A string of one or more file name extensions. The default value is `NULL`.  
+ [in] *lpszDefExt*  
+ A string of one or more file name extensions. The default value is NULL.  
   
- [in] `dwFlags`  
- Dialog box flags. The default value is a bitwise combination (OR) of `OFN_HIDEREADONLY` and `OFN_OVERWRITEPROMPT`.  
+ [in] *dwFlags*  
+ Dialog box flags. The default value is a bitwise combination (OR) of OFN_HIDEREADONLY and OFN_OVERWRITEPROMPT.  
   
- [in] `lpszFilter`  
- A string of one or more file filters. The default value is `NULL`.  
+ [in] *lpszFilter*  
+ A string of one or more file filters. The default value is NULL.  
   
- [in] `lpszDescr`  
- The property item description. The default value is `NULL`.  
+ [in] *lpszDescr*  
+ The property item description. The default value is NULL.  
   
- [in] `dwData`  
+ [in] *dwData*  
  Application-specific data that is associated with the property item. For example, a 32-bit integer or a pointer to other data. The default value is 0.  
   
 ### Return Value  
   
 ### Remarks  
- For a full list of available flags, see [OPENFILENAME structure](https://msdn.microsoft.com/library/ms646839.aspx).  
+ For a full list of available flags, see [OPENFILENAME structure](/windows/desktop/api/commdlg/ns-commdlg-tagofna).  
   
 ### Example  
  The following example demonstrates how to create an object using the constructor of the `CMFCPropertyGridFileProperty` class. This example is part of the [Visual Studio Demo sample](../../visual-cpp-samples.md).  

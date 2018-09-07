@@ -2,25 +2,20 @@
 title: "CMFCDesktopAlertWnd Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCDesktopAlertWnd", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::Create", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationSpeed", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAnimationType", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetAutoCloseTime", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetCaptionHeight", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetDialogSize", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetLastPos", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::GetTransparency", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::HasSmallCaption", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnBeforeShow", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnClickLinkButton", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnCommand", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::OnDraw", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::ProcessCommand", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationSpeed", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAnimationType", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetAutoCloseTime", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetSmallCaption", "AFXDESKTOPALERTWND/CMFCDesktopAlertWnd::SetTransparency"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCDesktopAlertWnd [MFC], Create", "CMFCDesktopAlertWnd [MFC], GetAnimationSpeed", "CMFCDesktopAlertWnd [MFC], GetAnimationType", "CMFCDesktopAlertWnd [MFC], GetAutoCloseTime", "CMFCDesktopAlertWnd [MFC], GetCaptionHeight", "CMFCDesktopAlertWnd [MFC], GetDialogSize", "CMFCDesktopAlertWnd [MFC], GetLastPos", "CMFCDesktopAlertWnd [MFC], GetTransparency", "CMFCDesktopAlertWnd [MFC], HasSmallCaption", "CMFCDesktopAlertWnd [MFC], OnBeforeShow", "CMFCDesktopAlertWnd [MFC], OnClickLinkButton", "CMFCDesktopAlertWnd [MFC], OnCommand", "CMFCDesktopAlertWnd [MFC], OnDraw", "CMFCDesktopAlertWnd [MFC], ProcessCommand", "CMFCDesktopAlertWnd [MFC], SetAnimationSpeed", "CMFCDesktopAlertWnd [MFC], SetAnimationType", "CMFCDesktopAlertWnd [MFC], SetAutoCloseTime", "CMFCDesktopAlertWnd [MFC], SetSmallCaption", "CMFCDesktopAlertWnd [MFC], SetTransparency"]
 ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
-caps.latest.revision: 33
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCDesktopAlertWnd Class
 The `CMFCDesktopAlertWnd` class implements the functionality of a modeless dialog box which appears on the screen to inform the user about an event.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]    
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.    
 ## Syntax  
   
 ```  
@@ -119,26 +114,26 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- [in] [out] `pWndOwner`  
- Specifies the owner of the alert window. That owner will then receive all notifications for the desktop alert window. This value cannot be `NULL`.  
+ [in] [out] *pWndOwner*  
+ Specifies the owner of the alert window. That owner will then receive all notifications for the desktop alert window. This value cannot be NULL.  
   
- [in] `uiDlgResID`  
+ [in] *uiDlgResID*  
  Specifies the resource ID of the alert window.  
   
- [in] `hMenu`  
- Specifies the menu that displays when the user clicks the menu button. If `NULL`, the menu button is not displayed.  
+ [in] *hMenu*  
+ Specifies the menu that displays when the user clicks the menu button. If NULL, the menu button is not displayed.  
   
- [in] `ptPos`  
+ [in] *ptPos*  
  Specifies the initial position where the alert window is displayed, using screen coordinates. If this parameter is (-1, -1), the alert window is displayed in the lower-right corner of the screen.  
   
- [in] `pRTIDlgBar`  
+ [in] *pRTIDlgBar*  
  Runtime class information for a custom dialog box class that covers the alert window's client area.  
   
- [in] `params`  
+ [in] *params*  
  Specifies parameters that are used to create an alert window.  
   
 ### Return Value  
- `TRUE` if the alert window was created successfully; otherwise, `FALSE`.  
+ TRUE if the alert window was created successfully; otherwise, FALSE.  
   
 ### Remarks  
  Call this method to create an alert window. The client area of the alert window contains a child dialog box that hosts all controls that are displayed to the user.  
@@ -170,15 +165,15 @@ CMFCPopupMenu::ANIMATION_TYPE GetAnimationType();
 ### Return Value  
  One of the following animation types:  
   
-- `NO_ANIMATION`  
+- NO_ANIMATION  
   
-- `UNFOLD`  
+- UNFOLD  
   
-- `SLIDE`  
+- SLIDE  
   
-- `FADE`  
+- FADE  
   
-- `SYSTEM_DEFAULT_ANIMATION`  
+- SYSTEM_DEFAULT_ANIMATION  
   
 ##  <a name="getautoclosetime"></a>  CMFCDesktopAlertWnd::GetAutoCloseTime  
  Returns the auto-close time out.  
@@ -240,7 +235,7 @@ BOOL HasSmallCaption() const;
 ```  
   
 ### Return Value  
- `TRUE` if the popup window is displayed with a small caption; `FALSE` if the popup window is displayed with a regular-sized caption.  
+ TRUE if the popup window is displayed with a small caption; FALSE if the popup window is displayed with a regular-sized caption.  
   
 ### Remarks  
  Use this method to determine whether the popup window has a small caption or a regular-size caption. By default, the small caption is 7 pixels high. You can obtain the height of the regular-size caption by calling the Windows API function `GetSystemMetrics(SM_CYCAPTION)`.  
@@ -253,7 +248,7 @@ virtual BOOL OnBeforeShow(CPoint&);
 ```  
   
 ### Parameters  
- [in] `CPoint&`  
+ [in] *CPoint&*  
   
 ### Return Value  
   
@@ -267,11 +262,11 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
 ```  
   
 ### Parameters  
- [in] `uiCmdID`  
+ [in] *uiCmdID*  
  This parameter is not used.  
   
 ### Return Value  
- Always `FALSE`.  
+ Always FALSE.  
   
 ### Remarks  
  Override this method in a derived class if you want to be notified when a user clicks the link on the alert window.  
@@ -286,8 +281,8 @@ virtual BOOL OnCommand(
 ```  
   
 ### Parameters  
- [in] `wParam`  
- [in] `lParam`  
+ [in] *wParam*  
+ [in] *lParam*  
   
 ### Return Value  
   
@@ -301,7 +296,7 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### Parameters  
- [in] `pDC`  
+ [in] *pDC*  
   
 ### Remarks  
   
@@ -313,7 +308,7 @@ BOOL ProcessCommand(HWND hwnd);
 ```  
   
 ### Parameters  
- [in] `hwnd`  
+ [in] *hwnd*  
   
 ### Return Value  
   
@@ -327,7 +322,7 @@ void SetAnimationSpeed(UINT nSpeed);
 ```  
   
 ### Parameters  
- [in] `nSpeed`  
+ [in] *nSpeed*  
  Specifies the new animation speed, in milliseconds.  
   
 ### Remarks  
@@ -341,21 +336,21 @@ void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### Parameters  
- [in] `type`  
+ [in] *type*  
  Specifies the animation type.  
   
 ### Remarks  
  Call this method to set animation type. You can specify one of the following values:  
   
-- `NO_ANIMATION`  
+- NO_ANIMATION  
   
-- `UNFOLD`  
+- UNFOLD  
   
-- `SLIDE`  
+- SLIDE  
   
-- `FADE`  
+- FADE  
   
-- `SYSTEM_DEFAULT_ANIMATION`  
+- SYSTEM_DEFAULT_ANIMATION  
   
 ##  <a name="setautoclosetime"></a>  CMFCDesktopAlertWnd::SetAutoCloseTime  
  Sets the auto-close time out.  
@@ -365,7 +360,7 @@ void SetAutoCloseTime(int nTime);
 ```  
   
 ### Parameters  
- [in] `nTime`  
+ [in] *nTime*  
  The time, in milliseconds, that elapses before the alert window automatically closes.  
   
 ### Remarks  
@@ -379,8 +374,8 @@ void SetSmallCaption(BOOL bSmallCaption = TRUE);
 ```  
   
 ### Parameters  
- [in] `bSmallCaption`  
- `TRUE` to specify that the alert window displays a small caption; otherwise, `FALSE` to specify that the alert window displays a regular-size caption.  
+ [in] *bSmallCaption*  
+ TRUE to specify that the alert window displays a small caption; otherwise, FALSE to specify that the alert window displays a regular-size caption.  
   
 ### Remarks  
  Call this method to display the small or regular-size caption. By default, the small caption is 7 pixels high. You can obtain the size of the regular caption by calling the Windows API function `GetSystemMetrics(SM_CYCAPTION)`.  
@@ -393,7 +388,7 @@ void SetTransparency(BYTE nTransparency);
 ```  
   
 ### Parameters  
- [in] `nTransparency`  
+ [in] *nTransparency*  
  Specifies the transparency level. This value must be between 0 and 255, inclusive. The greater the value, the more opaque the window.  
   
 ### Remarks  

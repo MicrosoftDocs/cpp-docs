@@ -2,19 +2,14 @@
 title: "-ALLOWISOLATION (Manifest Lookup) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/ALLOWISOLATION", "VC.Project.VCLinkerTool.AllowIsolation"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["-ALLOWISOLATION linker option", "/ALLOWISOLATION linker option"]
 ms.assetid: 6d41851e-b3c1-4bdf-beaa-031773089d6f
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /ALLOWISOLATION (Manifest Lookup)
@@ -33,9 +28,9 @@ Specifies behavior for manifest lookup.
   
  **/ALLOWISOLATION** is the default.  
   
- When isolation is disabled for an executable, the Windows loader will not attempt to find an application manifest for the newly created process. The new process will not have a default activation context, even if there is a manifest inside the executable or placed in the same directory as the executable with name *executable-name***.exe.manifest**.  
+ When isolation is disabled for an executable, the Windows loader will not attempt to find an application manifest for the newly created process. The new process will not have a default activation context, even if there is a manifest inside the executable or placed in the same directory as the executable with name <em>executable-name</em>**.exe.manifest**.  
   
- For more information, see [Manifest Files Reference](http://msdn.microsoft.com/library/aa375632).  
+ For more information, see [Manifest Files Reference](/windows/desktop/SbsCs/manifest-files-reference).  
   
 ### To set this linker option in the Visual Studio development environment  
   

@@ -2,19 +2,14 @@
 title: "CODBCFieldInfo Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["CODBCFieldInfo"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC [MFC], data source information", "CODBCFieldInfo structure [MFC]"]
 ms.assetid: 92598b4f-facc-4108-b282-63a179ff79ab
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CODBCFieldInfo Structure
@@ -34,7 +29,7 @@ struct CODBCFieldInfo
 ```  
   
 #### Parameters  
- `m_strName`  
+ *m_strName*  
  The name of the field.  
   
  *m_nSQLType*  
@@ -47,7 +42,7 @@ struct CODBCFieldInfo
  The scale of the field. For details, see "Precision, Scale, Length, and Display Size" in the Windows SDK.  
   
  *m_nNullability*  
- Whether the field accepts a Null value. This can be one of two values: **SQL_NULLABLE** if the field accepts Null values, or **SQL_NO_NULLS** if the field does not accept Null values.  
+ Whether the field accepts a Null value. This can be one of two values: SQL_NULLABLE if the field accepts Null values, or SQL_NO_NULLS if the field does not accept Null values.  
   
 ## Remarks  
  To retrieve this information, call [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo).  

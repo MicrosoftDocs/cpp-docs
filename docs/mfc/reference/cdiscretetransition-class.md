@@ -2,19 +2,14 @@
 title: "CDiscreteTransition Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::CDiscreteTransition", "AFXANIMATIONCONTROLLER/CDiscreteTransition::Create", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_dblFinalValue", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_delay", "AFXANIMATIONCONTROLLER/CDiscreteTransition::m_hold"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDiscreteTransition [MFC], CDiscreteTransition", "CDiscreteTransition [MFC], Create", "CDiscreteTransition [MFC], m_dblFinalValue", "CDiscreteTransition [MFC], m_delay", "CDiscreteTransition [MFC], m_hold"]
 ms.assetid: b4d84fb3-ccaa-451c-a69b-6b50dcb9b9c8
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDiscreteTransition Class
@@ -72,13 +67,13 @@ CDiscreteTransition(
 ```  
   
 ### Parameters  
- `delay`  
+ *delay*  
  The amount of time by which to delay the instantaneous switch to the final value.  
   
- `dblFinalValue`  
+ *dblFinalValue*  
  The value of the animation variable at the end of the transition.  
   
- `hold`  
+ *hold*  
  The amount of time by which to hold the variable at its final value.  
   
 ##  <a name="create"></a>  CDiscreteTransition::Create  
@@ -90,8 +85,8 @@ virtual BOOL Create(
     IUIAnimationTransitionFactory* \*not used*\);
 ```  
   
-`pLibrary`  
- A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
+*pLibrary*  
+ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), which defines a library of standard transitions.  
 
   
 ### Return Value  

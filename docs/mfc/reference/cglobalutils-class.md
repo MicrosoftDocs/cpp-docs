@@ -2,23 +2,18 @@
 title: "CGlobalUtils Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CGlobalUtils", "AFXGLOBALUTILS/CGlobalUtils", "AFXGLOBALUTILS/CGlobalUtils::AdjustRectToWorkArea", "AFXGLOBALUTILS/CGlobalUtils::CalcExpectedDockedRect", "AFXGLOBALUTILS/CGlobalUtils::CanBeAttached", "AFXGLOBALUTILS/CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd", "AFXGLOBALUTILS/CGlobalUtils::CheckAlignment", "AFXGLOBALUTILS/CGlobalUtils::CyFromString", "AFXGLOBALUTILS/CGlobalUtils::DecimalFromString", "AFXGLOBALUTILS/CGlobalUtils::FlipRect", "AFXGLOBALUTILS/CGlobalUtils::ForceAdjustLayout", "AFXGLOBALUTILS/CGlobalUtils::GetDockingManager", "AFXGLOBALUTILS/CGlobalUtils::GetOppositeAlignment", "AFXGLOBALUTILS/CGlobalUtils::GetPaneAndAlignFromPoint", "AFXGLOBALUTILS/CGlobalUtils::GetWndIcon", "AFXGLOBALUTILS/CGlobalUtils::SetNewParent", "AFXGLOBALUTILS/CGlobalUtils::StringFromCy", "AFXGLOBALUTILS/CGlobalUtils::StringFromDecimal"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CGlobalUtils [MFC], AdjustRectToWorkArea", "CGlobalUtils [MFC], CalcExpectedDockedRect", "CGlobalUtils [MFC], CanBeAttached", "CGlobalUtils [MFC], CanPaneBeInFloatingMultiPaneFrameWnd", "CGlobalUtils [MFC], CheckAlignment", "CGlobalUtils [MFC], CyFromString", "CGlobalUtils [MFC], DecimalFromString", "CGlobalUtils [MFC], FlipRect", "CGlobalUtils [MFC], ForceAdjustLayout", "CGlobalUtils [MFC], GetDockingManager", "CGlobalUtils [MFC], GetOppositeAlignment", "CGlobalUtils [MFC], GetPaneAndAlignFromPoint", "CGlobalUtils [MFC], GetWndIcon", "CGlobalUtils [MFC], SetNewParent", "CGlobalUtils [MFC], StringFromCy", "CGlobalUtils [MFC], StringFromDecimal"]
 ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CGlobalUtils Class
-[!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
@@ -66,8 +61,8 @@ void AdjustRectToworkArea(
 ```  
   
 ### Parameters  
- [in, out] `rect`  
- [in] `pRectDelta`  
+ [in, out] *rect*  
+ [in] *pRectDelta*  
   
 ### Remarks  
   
@@ -85,12 +80,12 @@ void CalcExpectedDockedRect(
 ```  
   
 ### Parameters  
- [in] `barContainerManager`  
- [in] `pWndTodock`  
- [in] `ptMouse`  
- [out] `rectResult`  
- [out] `bDrawTab`  
- [out] `ppTargetBar`  
+ [in] *barContainerManager*  
+ [in] *pWndTodock*  
+ [in] *ptMouse*  
+ [out] *rectResult*  
+ [out] *bDrawTab*  
+ [out] *ppTargetBar*  
   
 ### Remarks  
   
@@ -102,7 +97,7 @@ BOOL CanBeAttached(CWnd* pWnd) const;
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -116,7 +111,7 @@ BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -138,14 +133,14 @@ BOOL CheckAlignment(
 ```  
   
 ### Parameters  
- [in] `point`  
- [in] `pBar`  
- [in] `nSensitivity`  
- [in] `pDockManager`  
- [in] `bOuterEdge`  
- [out] `dwAlignment`  
- [in] `dwEnabledDockBars`  
- [in] `lpRectBounds`  
+ [in] *point*  
+ [in] *pBar*  
+ [in] *nSensitivity*  
+ [in] *pDockManager*  
+ [in] *bOuterEdge*  
+ [out] *dwAlignment*  
+ [in] *dwEnabledDockBars*  
+ [in] *lpRectBounds*  
   
 ### Return Value  
   
@@ -161,8 +156,8 @@ BOOL CyFromString(
 ```  
   
 ### Parameters  
- [out] `cy`  
- [in] `psz`  
+ [out] *cy*  
+ [in] *psz*  
   
 ### Return Value  
   
@@ -178,8 +173,8 @@ BOOL DecimalFromString(
 ```  
   
 ### Parameters  
- [out] `decimal`  
- [in] `psz`  
+ [out] *decimal*  
+ [in] *psz*  
   
 ### Return Value  
   
@@ -195,8 +190,8 @@ void FlipRect(
 ```  
   
 ### Parameters  
- [in, out] `rect`  
- [in] `nDegrees`  
+ [in, out] *rect*  
+ [in] *nDegrees*  
   
 ### Remarks  
   
@@ -211,9 +206,9 @@ void ForceAdjustLayout(
 ```  
   
 ### Parameters  
- [in, out] `pDockManager`  
- [in] `bForce`  
- [in] `bForceInvisible`  
+ [in, out] *pDockManager*  
+ [in] *bForce*  
+ [in] *bForceInvisible*  
   
 ### Remarks  
   
@@ -225,7 +220,7 @@ CDockingManager* GetDockingManager(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -239,7 +234,7 @@ DWORD GetOppositeAlignment(DWORD dwAlign);
 ```  
   
 ### Parameters  
- [in] `dwAlign`  
+ [in] *dwAlign*  
   
 ### Return Value  
   
@@ -259,12 +254,12 @@ BOOL GetPaneAndAlignFromPoint(
 ```  
   
 ### Parameters  
- [in] `barContainerManager`  
- [in] `pt`  
- [out] `ppTargetControlBar`  
- [out] `dwAlignment`  
- [out] `bTabArea`  
- [out] `bCaption`  
+ [in] *barContainerManager*  
+ [in] *pt*  
+ [out] *ppTargetControlBar*  
+ [out] *dwAlignment*  
+ [out] *bTabArea*  
+ [out] *bCaption*  
   
 ### Return Value  
   
@@ -278,7 +273,7 @@ HICON GetWndIcon(CWnd* pWnd);
 ```  
   
 ### Parameters  
- [in] `pWnd`  
+ [in] *pWnd*  
   
 ### Return Value  
   
@@ -295,9 +290,9 @@ void SetNewParent(
 ```  
   
 ### Parameters  
- [in] `lstControlBars`  
- [in] `pNewParent`  
- [in] `bCheckVisibility`  
+ [in] *lstControlBars*  
+ [in] *pNewParent*  
+ [in] *bCheckVisibility*  
   
 ### Remarks  
   
@@ -311,8 +306,8 @@ BOOL StringFromCy(
 ```  
   
 ### Parameters  
- [out] `str`  
- [in] `cy`  
+ [out] *str*  
+ [in] *cy*  
   
 ### Return Value  
   
@@ -328,8 +323,8 @@ BOOL StringFromDecimal(
 ```  
   
 ### Parameters  
- [out] `str`  
- [in] `decimal`  
+ [out] *str*  
+ [in] *decimal*  
   
 ### Return Value  
   

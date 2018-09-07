@@ -2,19 +2,14 @@
 title: "__ull_rshift | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__ull_rshift"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["ull_rshift intrinsic", "__ull_rshift intrinsic"]
 ms.assetid: b7ff5254-3540-4e6e-b57c-a6c4beb7dca2
-caps.latest.revision: 12
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __ull_rshift
@@ -45,7 +40,7 @@ unsigned __int64 __ull_rshift( 
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__ull_rshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ull_rshift`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

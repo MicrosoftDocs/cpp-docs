@@ -2,18 +2,13 @@
 title: "Iteration Statements (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["iteration statements", "loop structures, iteration statements"]
 ms.assetid: bf6d75f7-ead2-426a-9c47-33847f59b8c7
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Iteration Statements (C++)
@@ -25,12 +20,12 @@ Iteration statements cause statements (or compound statements) to be executed ze
   
 |Statement|Evaluated At|Initialization|Increment|  
 |---------------|------------------|--------------------|---------------|  
-|`while`|Top of loop|No|No|  
+|**while**|Top of loop|No|No|  
 |**do**|Bottom of loop|No|No|  
 |**for**|Top of loop|Yes|Yes|  
 |**range-based for**|Top of loop|Yes|Yes|  
   
  The statement part of an iteration statement cannot be a declaration. However, it can be a compound statement containing a declaration.  
   
-## See Also  
+## See also  
  [Overview of C++ Statements](../cpp/overview-of-cpp-statements.md)

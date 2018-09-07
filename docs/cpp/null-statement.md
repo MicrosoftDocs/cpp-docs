@@ -2,18 +2,13 @@
 title: "Null Statement | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], null", "null statement", "null values, expressions"]
 ms.assetid: 606f5953-55f0-40c8-ae03-3ee3a819b851
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Null Statement
@@ -23,7 +18,7 @@ The "null statement" is an expression statement with the *expression* missing. I
   
  The following code fragment shows how to copy one string to another and incorporates the null statement:  
   
-```  
+```cpp 
 // null_statement.cpp  
 char *myStrCpy( char *Dest, const char *Source )  
 {  
@@ -43,5 +38,5 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Expression Statement](../cpp/expression-statement.md)

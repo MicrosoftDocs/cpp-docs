@@ -2,18 +2,13 @@
 title: "Processing Notification Messages in a Rebar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["RBN_ notification messages, description of", "CReBarCtrl class [MFC], notification messages sent by", "RBN_ notification messages [MFC]", "notifications [MFC], CReBarCtrl"]
 ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Processing Notification Messages in a Rebar Control
@@ -21,25 +16,25 @@ In the parent class of the rebar control, create an `OnChildNotify` handler func
   
  The following notification messages can be sent by the rebar control object:  
   
--   **RBN_AUTOSIZE** Sent by a rebar control (created with the **RBS_AUTOSIZE** style) when the rebar automatically resizes itself.  
+-   RBN_AUTOSIZE Sent by a rebar control (created with the RBS_AUTOSIZE style) when the rebar automatically resizes itself.  
   
--   **RBN_BEGINDRAG** Sent by a rebar control when the user begins dragging a band.  
+-   RBN_BEGINDRAG Sent by a rebar control when the user begins dragging a band.  
   
--   **RBN_CHILDSIZE** Sent by a rebar control when a band's child window is resized.  
+-   RBN_CHILDSIZE Sent by a rebar control when a band's child window is resized.  
   
--   **RBN_DELETEDBAND** Sent by a rebar control after a band has been deleted.  
+-   RBN_DELETEDBAND Sent by a rebar control after a band has been deleted.  
   
--   **RBN_DELETINGBAND** Sent by a rebar control when a band is about to be deleted.  
+-   RBN_DELETINGBAND Sent by a rebar control when a band is about to be deleted.  
   
--   **RBN_ENDDRAG** Sent by a rebar control when the user stops dragging a band.  
+-   RBN_ENDDRAG Sent by a rebar control when the user stops dragging a band.  
   
--   **RBN_GETOBJECT** Sent by a rebar control (created with the **RBS_REGISTERDROP** style) when an object is dragged over a band in the control.  
+-   RBN_GETOBJECT Sent by a rebar control (created with the RBS_REGISTERDROP style) when an object is dragged over a band in the control.  
   
--   **RBN_HEIGHTCHANGE** Sent by a rebar control when its height has changed.  
+-   RBN_HEIGHTCHANGE Sent by a rebar control when its height has changed.  
   
--   **RBN_LAYOUTCHANGED** Sent by a rebar control when the user changes the layout of the control's bands.  
+-   RBN_LAYOUTCHANGED Sent by a rebar control when the user changes the layout of the control's bands.  
   
- For more information on these notifications, see [Rebar Control Reference](http://msdn.microsoft.com/library/windows/desktop/bb774375) in the Windows SDK.  
+ For more information on these notifications, see [Rebar Control Reference](https://msdn.microsoft.com/library/windows/desktop/bb774375) in the Windows SDK.  
   
 ## See Also  
  [Using CReBarCtrl](../mfc/using-crebarctrl.md)   

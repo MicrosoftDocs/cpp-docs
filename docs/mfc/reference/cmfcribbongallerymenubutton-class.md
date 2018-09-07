@@ -2,24 +2,19 @@
 title: "CMFCRibbonGalleryMenuButton Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CMFCRibbonGalleryMenuButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CopyFrom", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::CreatePopupMenu", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::GetPalette", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::HasButton", "AFXRIBBONPALETTEGALLERY/CMFCRibbonGalleryMenuButton::IsEmptyMenuAllowed"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CMFCRibbonGalleryMenuButton [MFC], CMFCRibbonGalleryMenuButton", "CMFCRibbonGalleryMenuButton [MFC], CopyFrom", "CMFCRibbonGalleryMenuButton [MFC], CreatePopupMenu", "CMFCRibbonGalleryMenuButton [MFC], GetPalette", "CMFCRibbonGalleryMenuButton [MFC], HasButton", "CMFCRibbonGalleryMenuButton [MFC], IsEmptyMenuAllowed"]
 ms.assetid: 4d459d9b-8b1a-4371-92f6-dc4ce6cc42c8
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CMFCRibbonGalleryMenuButton Class
 Implements a ribbon menu button that contains ribbon galleries.  
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
    
 ## Syntax  
   
@@ -90,7 +85,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### Parameters  
- [in] `src`  
+ [in] *src*  
   
 ### Remarks  
   
@@ -114,22 +109,22 @@ CMFCRibbonGalleryMenuButton(
 ```  
   
 ### Parameters  
- `uiID`  
- The command ID of the button. This is the value sent in the **WM_COMMAND** message when the user clicks this button.  
+ *uiID*  
+ The command ID of the button. This is the value sent in the WM_COMMAND message when the user clicks this button.  
   
- `iImage`  
- The index of the image to display with the gallery menu button. The images are stored in the `imagesPalette` parameter.  
+ *iImage*  
+ The index of the image to display with the gallery menu button. The images are stored in the *imagesPalette* parameter.  
   
- `lpszText`  
+ *lpszText*  
  The text to display on the menu button.  
   
- `imagesPalette`  
+ *imagesPalette*  
  Contains the list of images to display on the gallery.  
   
- `uiImagesPaletteResID`  
+ *uiImagesPaletteResID*  
  The resource ID of the image list for the images to display on the gallery.  
   
- `cxPaletteImage`  
+ *cxPaletteImage*  
  Specifies the width in pixels of the image to display on the gallery.  
   
 ### Remarks  

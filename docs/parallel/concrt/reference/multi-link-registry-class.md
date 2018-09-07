@@ -2,19 +2,14 @@
 title: "multi_link_registry Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-concrt"]
+ms.topic: "reference"
 f1_keywords: ["multi_link_registry", "AGENTS/concurrency::multi_link_registry", "AGENTS/concurrency::multi_link_registry::multi_link_registry", "AGENTS/concurrency::multi_link_registry::add", "AGENTS/concurrency::multi_link_registry::begin", "AGENTS/concurrency::multi_link_registry::contains", "AGENTS/concurrency::multi_link_registry::count", "AGENTS/concurrency::multi_link_registry::remove", "AGENTS/concurrency::multi_link_registry::set_bound"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["multi_link_registry class"]
 ms.assetid: b2aa73a8-e8a6-4255-b117-d07530c328b2
-caps.latest.revision: 19
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # multi_link_registry Class

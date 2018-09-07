@@ -2,19 +2,14 @@
 title: "CAccelerateDecelerateTransition Class1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAccelerateDecelerateTransition", "afxanimationcontroller/CAccelerateDecelerateTransition"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAccelerateDecelerateTransition class [MFC]"]
 ms.assetid: b1f31ee8-bb11-4ccc-b124-365fb02b025c
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAccelerateDecelerateTransition Class
@@ -74,16 +69,16 @@ CAccelerateDecelerateTransition(
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
- `finalValue`  
+ *finalValue*  
  The value of the animation variable at the end of the transition.  
   
- `accelerationRatio`  
+ *accelerationRatio*  
  The ratio of the time spent accelerating to the duration.  
   
- `decelerationRatio`  
+ *decelerationRatio*  
  The ratio of the time spent decelerating to the duration.  
   
 ##  <a name="create"></a>  CAccelerateDecelerateTransition::Create  
@@ -96,8 +91,8 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
-`pLibrary`  
- A pointer to an [IUIAnimationTransitionLibrary interface](https://msdn.microsoft.com/library/windows/desktop/dd371897), which defines a library of standard transitions.  
+*pLibrary*  
+ A pointer to an [IUIAnimationTransitionLibrary interface](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), which defines a library of standard transitions.  
   
 ### Return Value  
  TRUE if transition is created successfully; otherwise FALSE.  

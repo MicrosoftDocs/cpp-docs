@@ -2,19 +2,14 @@
 title: "COleDispatchException Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleDispatchException", "AFXDISP/COleDispatchException", "AFXDISP/COleDispatchException::m_dwHelpContext", "AFXDISP/COleDispatchException::m_strDescription", "AFXDISP/COleDispatchException::m_strHelpFile", "AFXDISP/COleDispatchException::m_strSource", "AFXDISP/COleDispatchException::m_wCode"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleDispatchException [MFC], m_dwHelpContext", "COleDispatchException [MFC], m_strDescription", "COleDispatchException [MFC], m_strHelpFile", "COleDispatchException [MFC], m_strSource", "COleDispatchException [MFC], m_wCode"]
 ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleDispatchException Class
@@ -39,7 +34,7 @@ class COleDispatchException : public CException
 |[COleDispatchException::m_wCode](#m_wcode)|`IDispatch`-specific error code.|  
   
 ## Remarks  
- Like the other exception classes derived from the `CException` base class, `COleDispatchException` can be used with the **THROW**, `THROW_LAST`, **TRY**, **CATCH**, `AND_CATCH`, and `END_CATCH` macros.  
+ Like the other exception classes derived from the `CException` base class, `COleDispatchException` can be used with the THROW, THROW_LAST, TRY, CATCH, AND_CATCH, and END_CATCH macros.  
   
  In general, you should call [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) to create and throw a `COleDispatchException` object.  
   

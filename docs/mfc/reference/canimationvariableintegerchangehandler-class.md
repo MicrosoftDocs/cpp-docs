@@ -2,19 +2,14 @@
 title: "CAnimationVariableIntegerChangeHandler Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CAnimationVariableIntegerChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChangeHandler", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::CreateInstance", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::OnIntegerValueChanged", "AFXANIMATIONCONTROLLER/CAnimationVariableIntegerChangeHandler::SetAnimationController"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CAnimationVariableIntegerChangeHandler [MFC], CAnimationVariableIntegerChangeHandler", "CAnimationVariableIntegerChangeHandler [MFC], CreateInstance", "CAnimationVariableIntegerChangeHandler [MFC], OnIntegerValueChanged", "CAnimationVariableIntegerChangeHandler [MFC], SetAnimationController"]
 ms.assetid: 6ac8e91b-e514-4ff6-babd-33f77c4b2b61
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CAnimationVariableIntegerChangeHandler Class
@@ -74,10 +69,10 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
- `ppHandler`  
+ *ppHandler*  
   
 ### Return Value  
  If the method succeeds, it returns S_OK. Otherwise, it returns an HRESULT error code.  
@@ -94,16 +89,16 @@ IFACEMETHOD(OnIntegerValueChanged) (
 ```  
   
 ### Parameters  
- `storyboard`  
+ *storyboard*  
  The storyboard that is animating the variable.  
   
- `variable`  
+ *variable*  
  The animation variable that was updated.  
   
- `newValue`  
+ *newValue*  
  The new rounded value.  
   
- `previousValue`  
+ *previousValue*  
  The previous rounded value.  
   
 ### Return Value  
@@ -117,7 +112,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ```  
   
 ### Parameters  
- `pAnimationController`  
+ *pAnimationController*  
  A pointer to animation controller, which will receive events.  
   
 ## See Also  

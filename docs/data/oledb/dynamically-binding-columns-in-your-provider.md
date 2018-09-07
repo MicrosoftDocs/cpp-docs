@@ -2,18 +2,13 @@
 title: "Dynamically Binding Columns in Your Provider | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["columns [C++], dynamic column binding", "dynamic column binding", "providers [C++], dynamic column binding"]
 ms.assetid: 45e811e3-f5a7-4627-98cc-bf817c4e556e
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Dynamically Binding Columns in Your Provider
@@ -25,11 +20,11 @@ Make sure you really need dynamic column binding. You might need it because:
   
 ### To implement dynamic column binding  
   
-1.  Remove any **PROVIDER_COLUMN_MAP**s from your code.  
+1.  Remove any `PROVIDER_COLUMN_MAP`s from your code.  
   
 2.  In the user record (your structure), add the following declaration:  
   
-    ```  
+    ```cpp  
     static ATLCOLUMNINFO* GetColumnInfo(void* pThis, ULONG* pcCols);  
     ```  
   
@@ -37,7 +32,7 @@ Make sure you really need dynamic column binding. You might need it because:
   
      The following example shows a `GetColumnInfo` function.  
   
-    ```  
+    ```cpp  
     // Check the property flag for bookmarks, if it is set, set the zero  
     // ordinal entry in the column map with the bookmark information.  
     CAgentRowset* pRowset = (CAgentRowset*) pThis;  

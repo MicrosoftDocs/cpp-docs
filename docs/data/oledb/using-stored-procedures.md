@@ -2,18 +2,13 @@
 title: "Using Stored Procedures | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["OLE DB, stored procedures", "stored procedures, Visual C++", "stored procedures, about stored procedures", "OLE DB provider templates, stored procedures", "stored procedures, OLE DB"]
 ms.assetid: 90507e4c-eca2-46c9-ad8c-07e10dc1d41b
-caps.latest.revision: 16
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Using Stored Procedures
@@ -22,7 +17,7 @@ A stored procedure is an executable object stored in a database. Calling a store
  A stored procedure can have any number of (including zero) input or output parameters and can pass a return value. You can either hard code parameter values as specific data values or use a parameter marker (a question mark '?').  
   
 > [!NOTE]
->  CLR SQL Server stored procedures created using Visual C++ must be compiled with the **/clr:safe** compiler option.  
+>  CLR SQL Server stored procedures created using Visual C++ must be compiled with the `/clr:safe` compiler option.  
   
  The OLE DB provider for SQL Server (SQLOLEDB) supports the following mechanisms that stored procedures use to return data:  
   

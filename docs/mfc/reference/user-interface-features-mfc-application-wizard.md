@@ -2,19 +2,14 @@
 title: "User Interface Features, MFC Application Wizard | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["vc.appwiz.mfc.exe.ui"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFC Application Wizard, user interface features"]
 ms.assetid: 59e7b829-a665-42eb-be23-3f2a36eb2dad
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # User Interface Features, MFC Application Wizard
@@ -42,7 +37,7 @@ This topic explains the options that you can use to specify the look of your app
 |------------|-----------------|  
 |**Child minimize box**|Specifies whether a child window has a minimize button (enabled by default).|  
 |**Child maximize box**|Specifies whether a child window has a maximize button (enabled by default).|  
-|**Child maximized**|Specifies whether a child window is initially maximized by setting the cs.style flag **WS_MAXIMIZE** in the [PreCreateWindow](../../mfc/reference/cwnd-class.md#precreatewindow) member function of `CChildFrame`.|  
+|**Child maximized**|Specifies whether a child window is initially maximized by setting the cs.style flag WS_MAXIMIZE in the [PreCreateWindow](../../mfc/reference/cwnd-class.md#precreatewindow) member function of `CChildFrame`.|  
   
  **Command bars (menu/toolbar/ribbon)**  
  Indicates whether your application includes menus, toolbars, and/or a ribbon. Not available for dialog-based applications.  

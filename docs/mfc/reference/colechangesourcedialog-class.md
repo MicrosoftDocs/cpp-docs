@@ -2,19 +2,14 @@
 title: "COleChangeSourceDialog Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleChangeSourceDialog", "AFXODLGS/COleChangeSourceDialog", "AFXODLGS/COleChangeSourceDialog::COleChangeSourceDialog", "AFXODLGS/COleChangeSourceDialog::DoModal", "AFXODLGS/COleChangeSourceDialog::GetDisplayName", "AFXODLGS/COleChangeSourceDialog::GetFileName", "AFXODLGS/COleChangeSourceDialog::GetFromPrefix", "AFXODLGS/COleChangeSourceDialog::GetItemName", "AFXODLGS/COleChangeSourceDialog::GetToPrefix", "AFXODLGS/COleChangeSourceDialog::IsValidSource", "AFXODLGS/COleChangeSourceDialog::m_cs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["COleChangeSourceDialog [MFC], COleChangeSourceDialog", "COleChangeSourceDialog [MFC], DoModal", "COleChangeSourceDialog [MFC], GetDisplayName", "COleChangeSourceDialog [MFC], GetFileName", "COleChangeSourceDialog [MFC], GetFromPrefix", "COleChangeSourceDialog [MFC], GetItemName", "COleChangeSourceDialog [MFC], GetToPrefix", "COleChangeSourceDialog [MFC], IsValidSource", "COleChangeSourceDialog [MFC], m_cs"]
 ms.assetid: d0e08be7-21ef-45e1-97af-fe27d99e3bac
-caps.latest.revision: 22
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # COleChangeSourceDialog Class
@@ -53,9 +48,9 @@ class COleChangeSourceDialog : public COleDialog
 |[COleChangeSourceDialog::m_cs](#m_cs)|A structure that controls the behavior of the dialog box.|  
   
 ## Remarks  
- Create an object of class `COleChangeSourceDialog` when you want to call this dialog box. After a `COleChangeSourceDialog` object has been constructed, you can use the [m_cs](#m_cs) structure to initialize the values or states of controls in the dialog box. The `m_cs` structure is of type [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160). For more information about using this dialog class, see the [DoModal](#domodal) member function.  
+ Create an object of class `COleChangeSourceDialog` when you want to call this dialog box. After a `COleChangeSourceDialog` object has been constructed, you can use the [m_cs](#m_cs) structure to initialize the values or states of controls in the dialog box. The `m_cs` structure is of type [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea). For more information about using this dialog class, see the [DoModal](#domodal) member function.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
+ For more information, see the [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) structure in Windows SDK.  
   
  For more information about OLE-specific dialog boxes, see the article [Dialog Boxes in OLE](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -87,16 +82,16 @@ explicit COleChangeSourceDialog(
 ```  
   
 ### Parameters  
- `pItem`  
+ *pItem*  
  Pointer to the linked [COleClientItem](../../mfc/reference/coleclientitem-class.md) whose source is to be updated.  
   
- `pParentWnd`  
- Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is **NULL**, the parent window of the dialog box will be set to the main application window.  
+ *pParentWnd*  
+ Points to the parent or owner window object (of type `CWnd`) to which the dialog object belongs. If it is NULL, the parent window of the dialog box will be set to the main application window.  
   
 ### Remarks  
  To display the dialog box, call the [DoModal](#domodal) function.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure and [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) function in Windows SDK.  
+ For more information, see the [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) structure and [OleUIChangeSource](/windows/desktop/api/oledlg/nf-oledlg-oleuichangesourcea) function in Windows SDK.  
   
 ##  <a name="domodal"></a>  COleChangeSourceDialog::DoModal  
  Call this function to display the OLE Change Source dialog box.  
@@ -108,16 +103,16 @@ virtual INT_PTR DoModal();
 ### Return Value  
  Completion status for the dialog box. One of the following values:  
   
-- **IDOK** if the dialog box was successfully displayed.  
+- IDOK if the dialog box was successfully displayed.  
   
-- **IDCANCEL** if the user canceled the dialog box.  
+- IDCANCEL if the user canceled the dialog box.  
   
-- **IDABORT** if an error occurred. If **IDABORT** is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) function in Windows SDK.  
+- IDABORT if an error occurred. If IDABORT is returned, call the [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) member function to get more information about the type of error that occurred. For a listing of possible errors, see the [OleUIChangeSource](/windows/desktop/api/oledlg/nf-oledlg-oleuichangesourcea) function in Windows SDK.  
   
 ### Remarks  
  If you want to initialize the various dialog box controls by setting members of the [m_cs](#m_cs) structure, you should do this before calling `DoModal`, but after the dialog object is constructed.  
   
- If `DoModal` returns **IDOK**, you can call member functions to retrieve user-entered settings or information from the dialog box. The following list names typical query functions:  
+ If `DoModal` returns IDOK, you can call member functions to retrieve user-entered settings or information from the dialog box. The following list names typical query functions:  
   
 - [GetFileName](#getfilename)  
   
@@ -159,11 +154,11 @@ CString GetFromPrefix();
  The previous prefix string of the source.  
   
 ### Remarks  
- Call this function only after [DoModal](#domodal) returns **IDOK**.  
+ Call this function only after [DoModal](#domodal) returns IDOK.  
   
- This value comes directly from the **lpszFrom** member of the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure.  
+ This value comes directly from the `lpszFrom` member of the [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) structure.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
+ For more information, see the [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) structure in Windows SDK.  
   
 ##  <a name="getitemname"></a>  COleChangeSourceDialog::GetItemName  
  Call this function to retrieve the item moniker portion of the display name for the linked client item.  
@@ -189,14 +184,14 @@ CString GetToPrefix();
  The new prefix string of the source.  
   
 ### Remarks  
- Call this function only after [DoModal](#domodal) returns **IDOK**.  
+ Call this function only after [DoModal](#domodal) returns IDOK.  
   
- This value comes directly from the **lpszTo** member of the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure.  
+ This value comes directly from the `lpszTo` member of the [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) structure.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
+ For more information, see the [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) structure in Windows SDK.  
   
 ##  <a name="m_cs"></a>  COleChangeSourceDialog::m_cs  
- This data member is a structure of type [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160).  
+ This data member is a structure of type [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea).  
   
 ```  
 OLEUICHANGESOURCE m_cs;  
@@ -205,7 +200,7 @@ OLEUICHANGESOURCE m_cs;
 ### Remarks  
  `OLEUICHANGESOURCE` is used to control the behavior of the OLE Change Source dialog box. Members of this structure can be modified directly.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
+ For more information, see the [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) structure in Windows SDK.  
   
 ##  <a name="isvalidsource"></a>  COleChangeSourceDialog::IsValidSource  
  Call this function to determine if the new source is valid.  
@@ -218,9 +213,9 @@ BOOL IsValidSource();
  Nonzero if the new source is valid, otherwise 0.  
   
 ### Remarks  
- Call this function only after [DoModal](#domodal) returns **IDOK**.  
+ Call this function only after [DoModal](#domodal) returns IDOK.  
   
- For more information, see the [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) structure in Windows SDK.  
+ For more information, see the [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) structure in Windows SDK.  
   
 ## See Also  
  [COleDialog Class](../../mfc/reference/coledialog-class.md)   

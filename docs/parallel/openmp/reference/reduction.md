@@ -2,19 +2,14 @@
 title: "reduction | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-parallel"]
+ms.topic: "reference"
 f1_keywords: ["reduction"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["reduction OpenMP clause"]
 ms.assetid: a2b051af-5a1b-4c00-9cc7-692bb43653fb
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # reduction
@@ -33,7 +28,7 @@ reduction(operation:var)
  The operator for the operation to perform on the variables (`var`) at the end of the parallel region.  
   
  `var`  
- One more more variables on which to perform scalar reduction. If more than one variable is specified, separate variable names with a comma.  
+ One or more variables on which to perform scalar reduction. If more than one variable is specified, separate variable names with a comma.  
   
 ## Remarks  
  `reduction` applies to the following directives:  
@@ -121,10 +116,10 @@ int main( )
              "%d to %d, is %d\n", 1, 10, nSum);  
   
     if (bSucceed)  
-        printf_s("All of the the functions, func1 through "  
+        printf_s("All of the functions, func1 through "  
                  "func5 succeeded!\n");  
     else  
-        printf_s("One or more of the the functions, func1 "  
+        printf_s("One or more of the functions, func1 "  
                  "through func5 failed!\n");  
   
     if (nCount != NUM_THREADS)   
@@ -156,7 +151,7 @@ int main( )
 ```Output  
 The parallel section was executed 4 times in parallel.  
 The sum of the consecutive integers from 1 to 10, is 55  
-All of the the functions, func1 through func5 succeeded!  
+All of the functions, func1 through func5 succeeded!  
 ```  
   
 ## See Also  

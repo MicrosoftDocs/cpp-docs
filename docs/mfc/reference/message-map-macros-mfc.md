@@ -2,19 +2,14 @@
 title: "Message Map Macros (MFC) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["AFXWIN/DECLARE_MESSAGE_MAP", "AFXWIN/BEGIN_MESSAGE_MAP", "AFXWIN/BEGIN_TEMPLATE_MESSAGE_MAP", "AFXWIN/END_MESSAGE_MAP", "AFXWIN/ON_COMMAND", "AFXWIN/ON_COMMAND_EX", "AFXWIN/ON_CONTROL", "AFXWIN/ON_MESSAGE", "AFXWIN/ON_OLECMD", "AFXWIN/ON_REGISTERED_MESSAGE", "AFXWIN/ON_REGISTERED_THREAD_MESSAGE", "AFXWIN/ON_THREAD_MESSAGE", "AFXWIN/ON_UPDATE_COMMAND_UI", "AFXWIN/ON_COMMAND_RANGE", "AFXWIN/ON_UPDATE_COMMAND_UI_RANGE", "AFXWIN/ON_CONTROL_RANGE"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["message map macros", "Windows messages [MFC], declaration", "demarcating Windows messages", "message maps [MFC], macros", "message maps [MFC], declaration and demarcation", "message mapping macros", "ranges, message map", "message map ranges"]
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Message Map Macros (MFC)
@@ -49,7 +44,7 @@ To support message maps, MFC supplies the following macros:
 |-|-|  
 |[ON_COMMAND_RANGE](#on_command_range)|Indicates which function will handle the range of command IDs specified in the first two parameters to the macro.|  
 |[ON_UPDATE_COMMAND_UI_RANGE](#on_update_command_ui_range)|Indicates which update handler will handle the range of command IDs specified in the first two pa]rameters to the macro.|  
-|[ON_CONTROL_RANGE](#on_control_range)|Indicates which function will handle notifications from the range of control IDs specified in the second and third parameters to the macro. The first parameter is a control-notification message, such as **BN_CLICKED**.|  
+|[ON_CONTROL_RANGE](#on_control_range)|Indicates which function will handle notifications from the range of control IDs specified in the second and third parameters to the macro. The first parameter is a control-notification message, such as BN_CLICKED.|  
   
  For more information on message maps, the message-map declaration and demarcation macros, and the message-mapping macros, see [Message Maps](../../mfc/reference/message-maps-mfc.md) and [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md). For more information about message-map ranges, see [Handlers for Message-Map Ranges](../../mfc/handlers-for-message-map-ranges.md).  
 
@@ -64,14 +59,14 @@ BEGIN_MESSAGE_MAP( theClass, baseClass )
 ```  
   
 ### Parameters  
- `theClass`  
+ *theClass*  
  Specifies the name of the class whose message map this is.  
   
- `baseClass`  
- Specifies the name of the base class of `theClass`.  
+ *baseClass*  
+ Specifies the name of the base class of *theClass*.  
   
 ### Remarks  
- In the implementation (.cpp) file that defines the member functions for your class, start the message map with the `BEGIN_MESSAGE_MAP` macro, then add macro entries for each of your message-handler functions, and complete the message map with the `END_MESSAGE_MAP` macro.  
+ In the implementation (.cpp) file that defines the member functions for your class, start the message map with the BEGIN_MESSAGE_MAP macro, then add macro entries for each of your message-handler functions, and complete the message map with the END_MESSAGE_MAP macro.  
   
  For more information about message maps, see [Message Maps](message-maps-mfc.md)  
   
@@ -93,17 +88,17 @@ Begins the definition of a message map on a class type containing a single templ
 BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )  
 ```
 ### Parameters  
- `theClass`  
+ *theClass*  
  Specifies the name of the class whose message map this is.    
- `type_name`  
+ *type_name*  
  The name of the template parameter specified for the class.    
- `baseClass`  
- Specifies the name of the base class of `theClass`.  
+ *baseClass*  
+ Specifies the name of the base class of *theClass*.  
    
 ### Remarks  
  This macro is similar to the [BEGIN_MESSAGE_MAP](message-map-macros-mfc.md#begin_message_map) macro; however, this macro is intended for classes containing a single template argument.  
   
- In the method implementation section of your class, start the message map with the **BEGIN_TEMPLATE_MESSAGE_MAP** macro; then add macro entries for each of your message-handler methods as you would for a standard message map. As with the **BEGIN_MESSAGE_MAP** macro, complete the template message map with the [END_MESSAGE_MAP](message-map-macros-mfc.md#end_message_map) macro.  
+ In the method implementation section of your class, start the message map with the BEGIN_TEMPLATE_MESSAGE_MAP macro; then add macro entries for each of your message-handler methods as you would for a standard message map. As with the BEGIN_MESSAGE_MAP macro, complete the template message map with the [END_MESSAGE_MAP](message-map-macros-mfc.md#end_message_map) macro.  
   
  For more information on implementing message maps for template classes, refer to [How to: Create a Message Map for a Template Class](../how-to-create-a-message-map-for-a-template-class.md).  
    
@@ -120,12 +115,12 @@ DECLARE_MESSAGE_MAP( )
 ```  
   
 ### Remarks  
- Use the `DECLARE_MESSAGE_MAP` macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the `BEGIN_MESSAGE_MAP` macro, macro entries for each of your message-handler functions, and the `END_MESSAGE_MAP` macro.  
+ Use the DECLARE_MESSAGE_MAP macro at the end of your class declaration. Then, in the .cpp file that defines the member functions for the class, use the BEGIN_MESSAGE_MAP macro, macro entries for each of your message-handler functions, and the END_MESSAGE_MAP macro.  
   
 > [!NOTE]
->  If you declare any member after `DECLARE_MESSAGE_MAP`, you must specify a new access type (**public**, `private`, or `protected`) for them.  
+>  If you declare any member after DECLARE_MESSAGE_MAP, you must specify a new access type (**public**, **private**, or **protected**) for them.  
   
- For more information on message maps and the `DECLARE_MESSAGE_MAP` macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
+ For more information on message maps and the DECLARE_MESSAGE_MAP macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
 ### Example  
 ```cpp  
@@ -150,7 +145,7 @@ END_MESSAGE_MAP( )
 ```  
   
 ### Remarks  
- For more information on message maps and the `END_MESSAGE_MAP` macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
+ For more information on message maps and the END_MESSAGE_MAP macro, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
 ### Requirements  
  **Header:** afxwin.h  
@@ -165,18 +160,18 @@ ON_COMMAND( id, memberFxn )
 ```  
   
 ### Parameters  
- `id`  
+ *id*  
  The command ID.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the message-handler function to which the command is mapped.  
   
 ### Remarks  
  It indicates which function will handle a command message from a command user-interface object such as a menu item or toolbar button.  
   
- When a command-target object receives a Windows **WM_COMMAND** message with the specified ID, `ON_COMMAND` will call the member function `memberFxn` to handle the message.  
+ When a command-target object receives a Windows WM_COMMAND message with the specified ID, ON_COMMAND will call the member function `memberFxn` to handle the message.  
   
- Use `ON_COMMAND` to map a single command to a member function. Use [ON_COMMAND_RANGE](#on_command_range) to map a range of command ids to one member function. Only one message-map entry can match a given command id. That is, you can't map a command to more than one handler. For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
+ Use ON_COMMAND to map a single command to a member function. Use [ON_COMMAND_RANGE](#on_command_range) to map a range of command ids to one member function. Only one message-map entry can match a given command id. That is, you can't map a command to more than one handler. For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
 ### Example  
 ```cpp  
@@ -196,14 +191,14 @@ Extended command-handler member function.
 ON_COMMAND_EX(id, memberFxn);  
 ```
 ### Parameters  
- `id`  
+ *id*  
  The command ID.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the  message-handler  function to which the  command is mapped.  
    
 ### Remarks 
-An extended form of  command message  handlers is available  for advanced uses. The  `ON_COMMAND_EX` macro  is used for such  message handlers, and  it provides a superset  of the [ON_COMMAND] (#on_command)  functionality.  Extended  command-handler member  functions take a single  parameter, a **UINT**  containing the command  ID, and return a  **BOOL**. The return  value should be TRUE to 
+An extended form of  command message  handlers is available  for advanced uses. The  ON_COMMAND_EX macro  is used for such  message handlers, and  it provides a superset  of the [ON_COMMAND] (#on_command)  functionality.  Extended  command-handler member  functions take a single  parameter, a UINT  containing the command  ID, and return a  BOOL. The return  value should be TRUE to 
 
 This macro maps a command message to an extended command-handler member function.  
    
@@ -212,14 +207,14 @@ This macro maps a command message to an extended command-handler member function
 ON_COMMAND_EX(id,  memberFxn);  
 ```
 ### Parameters  
- `id`  
+ *id*  
  The command ID.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the message-handler function to which the command is mapped.  
    
 ### Remarks  
- An extended form of command message handlers is available for advanced uses. The `ON_COMMAND_EX` macro is used for such message handlers, and it provides a superset of the [ON_COMMAND](message-map-macros-mfc.md#on_command) functionality. Extended command-handler member functions take a single parameter, a **UINT** containing the command ID, and return a **BOOL**. The return value should be TRUE to indicate that the command has been handled; otherwise routing will continue to other command target objects.  
+ An extended form of command message handlers is available for advanced uses. The ON_COMMAND_EX macro is used for such message handlers, and it provides a superset of the [ON_COMMAND](message-map-macros-mfc.md#on_command) functionality. Extended command-handler member functions take a single parameter, a UINT containing the command ID, and return a BOOL. The return value should be TRUE to indicate that the command has been handled; otherwise routing will continue to other command target objects.  
 For more information, see Technical Note [TN006: Message Maps]tm006-message-maps.md).  
    
 ### Requirements  
@@ -240,19 +235,19 @@ ON_CONTROL( wNotifyCode, id, memberFxn )
 ```  
   
 ### Parameters  
- `wNotifyCode`  
+ *wNotifyCode*  
  The notification code of the control.  
   
- `id`  
+ *id*  
  The command ID.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the message-handler function to which the command is mapped.  
   
 ### Remarks  
  Control notification messages are those sent from a control to its parent window.  
   
- There should be exactly one `ON_CONTROL` macro statement in your message map for every control notification message that must be mapped to a message-handler function.  
+ There should be exactly one ON_CONTROL macro statement in your message map for every control notification message that must be mapped to a message-handler function.  
   
  For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
@@ -270,21 +265,21 @@ ON_MESSAGE( message, memberFxn )
 ```  
   
 ### Parameters  
- `message`  
+ *message*  
  The message ID.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the message-handler function to which the message is mapped.  
   
  The type of the function must be `afx_msg LRESULT (CWnd::*)(WPARAM, LPARAM)`.  
   
 ### Remarks  
- User-defined messages are any messages that are not standard Windows `WM_MESSAGE` messages. When selecting a message ID, you must use values within the range of `WM_USER` (0x0400) to 0x7FFF or `WM_APP` (0x8000) to 0xBFFF. For more information regarding message IDs, see [WM_APP](http://msdn.microsoft.com/library/windows/desktop/ms644930).  
+ User-defined messages are any messages that are not standard Windows WM_MESSAGE messages. When selecting a message ID, you must use values within the range of WM_USER (0x0400) to 0x7FFF or WM_APP (0x8000) to 0xBFFF. For more information regarding message IDs, see [WM_APP](/windows/desktop/winmsg/wm-app).  
   
- There should be exactly one `ON_MESSAGE` macro statement in your message map for every user-defined message that must be mapped to a message-handler function.  
+ There should be exactly one ON_MESSAGE macro statement in your message map for every user-defined message that must be mapped to a message-handler function.  
   
 > [!NOTE]
->  In addition to user-defined messages, `ON_MESSAGE` handles less common Windows messages. For more information, see Knowledge Base article [99848: INFO: Use ON_MESSAGE() Macro to Map Less-Common Messages](http://go.microsoft.com/fwlink/p/?linkid=192022).  
+>  In addition to user-defined messages, ON_MESSAGE handles less common Windows messages. For more information, see Knowledge Base article [99848: INFO: Use ON_MESSAGE() Macro to Map Less-Common Messages](http://go.microsoft.com/fwlink/p/?linkid=192022).  
   
  For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md) and [User-Defined Handlers](user-defined-handlers.md)  
   
@@ -323,13 +318,13 @@ ON_OLECMD( pguid, olecmdid, id )
 ```  
   
 ### Parameters  
- `pguid`  
- Identifier of the command group to which the command belongs. Use **NULL** for the standard group.  
+ *pguid*  
+ Identifier of the command group to which the command belongs. Use NULL for the standard group.  
   
  *olecmdid*  
  The identifier of the OLE command.  
   
- `id`  
+ *id*  
  The menu ID, toolbar ID, button ID, or other ID of the resource or object issuing the command.  
   
 ### Remarks  
@@ -443,7 +438,7 @@ ON_OLECMD( pguid, olecmdid, id )
  [COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)
 
 ## <a name="on_registered_message"></a>  ON_REGISTERED_MESSAGE
-The Windows **RegisterWindowMessage** function is used to define a new window message that is guaranteed to be unique throughout the system.  
+The Windows `RegisterWindowMessage` function is used to define a new window message that is guaranteed to be unique throughout the system.  
   
 ### Syntax  
   
@@ -452,10 +447,10 @@ ON_REGISTERED_MESSAGE( nMessageVariable, memberFxn )
 ```  
   
 ### Parameters  
- `nMessageVariable`  
+ *nMessageVariable*  
  The registered window-message ID variable.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the message-handler function to which the message is mapped.  
   
 ### Remarks  
@@ -477,7 +472,7 @@ END_MESSAGE_MAP()
  **Header:** afxmsg_.h  
   
 ### See Also  
- [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947)   
+ [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)   
  [User-Defined Handlers](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE	
@@ -490,10 +485,10 @@ ON_REGISTERED_THREAD_MESSAGE(nMessageVariable, memberFxn )
 ```  
   
 ### Parameters  
- `nMessageVariable`  
+ *nMessageVariable*  
  The registered window-message ID variable.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the CWinThread-message-handler function to which the message is mapped.  
   
 ### Remarks  
@@ -512,14 +507,14 @@ ON_THREAD_MESSAGE( message, memberFxn )
 ```  
   
 ### Parameters  
- `message`  
+ *message*  
  The message ID.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the `CWinThread`-message-handler function to which the message is mapped.  
   
 ### Remarks  
- `ON_THREAD_MESSAGE` must be used instead of `ON_MESSAGE` when you have a `CWinThread` class. User-defined messages are any messages that are not standard Windows **WM_MESSAGE** messages. There should be exactly one `ON_THREAD_MESSAGE` macro statement in your message map for every user-defined message that must be mapped to a message-handler function.  
+ ON_THREAD_MESSAGE must be used instead of ON_MESSAGE when you have a `CWinThread` class. User-defined messages are any messages that are not standard Windows WM_MESSAGE messages. There should be exactly one ON_THREAD_MESSAGE macro statement in your message map for every user-defined message that must be mapped to a message-handler function.  
   
 ### Requirements  
  **Header:** afxole.h  
@@ -534,14 +529,14 @@ ON_UPDATE_COMMAND_UI( id, memberFxn )
 ```  
   
 ### Parameters  
- `id`  
+ *id*  
  The message ID.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the message-handler function to which the message is mapped.  
   
 ### Remarks  
- There should be exactly one `ON_UPDATE_COMMAND_UI` macro statement in your message map for every user-interface update command that must be mapped to a message-handler function.  
+ There should be exactly one ON_UPDATE_COMMAND_UI macro statement in your message map for every user-interface update command that must be mapped to a message-handler function.  
   
  For more information and examples, see [Message Handling and Mapping Topics](../../mfc/message-handling-and-mapping.md).  
   
@@ -561,19 +556,19 @@ ON_COMMAND_RANGE( id1, id2, memberFxn )
 ```  
   
 ### Parameters  
- `id1`  
+ *id1*  
  Command ID at the beginning of a contiguous range of command IDs.  
   
- `id2`  
+ *id2*  
  Command ID at the end of a contiguous range of command IDs.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the message-handler function to which the commands are mapped.  
   
 ### Remarks  
- The range of IDs starts with `id1` and ends with `id2`.  
+ The range of IDs starts with *id1* and ends with *id2*.  
   
- Use `ON_COMMAND_RANGE` to map a range of command IDs to one member function. Use [ON_COMMAND](#on_command) to map a single command to a member function. Only one message-map entry can match a given command ID. That is, you can't map a command to more than one handler. For more information on mapping message ranges, see [Handlers for Message-Map Ranges](../../mfc/handlers-for-message-map-ranges.md).  
+ Use ON_COMMAND_RANGE to map a range of command IDs to one member function. Use [ON_COMMAND](#on_command) to map a single command to a member function. Only one message-map entry can match a given command ID. That is, you can't map a command to more than one handler. For more information on mapping message ranges, see [Handlers for Message-Map Ranges](../../mfc/handlers-for-message-map-ranges.md).  
   
  There is no automatic support for message map ranges, so you must place the macro yourself.  
   
@@ -611,17 +606,17 @@ ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
 ```  
   
 ### Parameters  
- `id1`  
+ *id1*  
  Command ID at the beginning of a contiguous range of command IDs.  
   
- `id2`  
+ *id2*  
  Command ID at the end of a contiguous range of command IDs.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the update message-handler function to which the commands are mapped.  
   
 ### Remarks  
- Update message handlers update the state of menu items and toolbar buttons associated with the command. The range of IDs starts with `id1` and ends with `id2`.  
+ Update message handlers update the state of menu items and toolbar buttons associated with the command. The range of IDs starts with *id1* and ends with *id2*.  
   
  There is no automatic support for message map ranges, so you must place the macro yourself.  
   
@@ -629,7 +624,7 @@ ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
  **Header:** afxmsg_.h  
 
 ## <a name="on_control_range"></a>  ON_CONTROL_RANGE	 
-Use this macro to map a contiguous range of control IDs to a single message handler function for a specified Windows notification message, such as **BN_CLICKED**.  
+Use this macro to map a contiguous range of control IDs to a single message handler function for a specified Windows notification message, such as BN_CLICKED.  
   
 ### Syntax  
   
@@ -638,20 +633,20 @@ ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
 ```  
   
 ### Parameters  
- `wNotifyCode`  
+ *wNotifyCode*  
  The notification code to which your handler is responding.  
   
- `id1`  
+ *id1*  
  Command ID at the beginning of a contiguous range of control IDs.  
   
- `id2`  
+ *id2*  
  Command ID at the end of a contiguous range of control IDs.  
   
- `memberFxn`  
+ *memberFxn*  
  The name of the message-handler function to which the controls are mapped.  
   
 ### Remarks  
- The range of IDs starts with `id1` and ends with `id2`. The handler is called for the specified notification coming from any of the mapped controls.  
+ The range of IDs starts with *id1* and ends with *id2*. The handler is called for the specified notification coming from any of the mapped controls.  
   
  There is no automatic support for message map ranges, so you must place the macro yourself.  
   
@@ -660,5 +655,3 @@ ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
 ### Requirements  
  **Header:** afxmsg_.h  
   
-
-

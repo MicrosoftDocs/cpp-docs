@@ -2,18 +2,13 @@
 title: "Pointers (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["declarators, pointers", "declarations, pointers", "pointers [C++]", "pointers, declarations"]
 ms.assetid: 595387c5-8e58-4670-848f-344c7caf985e
-caps.latest.revision: 14
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Pointers (C++)
@@ -24,7 +19,7 @@ Pointers are declared using the following sequence.
 [ms-modifier] declarator ;  
 ```  
   
- where any valid pointer declarator may be used for `declarator`.  The syntax for a simple pointer declarator is as follows:  
+ where any valid pointer declarator may be used for `declarator`. The syntax for a simple pointer declarator is as follows:  
   
 ```  
 * [cv-qualifiers] identifier [= expression]  
@@ -32,25 +27,25 @@ Pointers are declared using the following sequence.
   
  1. The declaration specifiers:  
   
--   An optional storage class specifier. For more information, see [Specifiers](../cpp/specifiers.md).  
+    - An optional storage class specifier. For more information, see [Specifiers](../cpp/specifiers.md).  
   
--   An optional `const` or `volatile` keyword applying to the type of the object to be pointed to.  
+    - An optional **const** or **volatile** keyword applying to the type of the object to be pointed to.  
   
--   The type specifier: the name of a type representing the type of the object to be pointed to.  
+    - The type specifier: the name of a type representing the type of the object to be pointed to.  
   
  2. The declarator:  
   
--   An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).  
+    - An optional Microsoft specific modifier. For more information, see [Microsoft-Specific Modifiers](../cpp/microsoft-specific-modifiers.md).  
   
--   The `*` operator.  
+    - The `*` operator.  
   
--   An optional `const` or `volatile` keyword applying to the pointer itself.  
+    - An optional **const** or **volatile** keyword applying to the pointer itself.  
   
--   The identifier.  
+    - The identifier.  
   
--   An optional initializer.  
+    - An optional initializer.  
   
- The declarator for a pointer to function looks like this:  
+     The declarator for a pointer to function looks like this:  
   
 ```  
 (* [cv-qualifiers] identifier )( argument-list ) [cv-qualifers]  
@@ -67,31 +62,31 @@ Pointers are declared using the following sequence.
   
  A simple example of a pointer declaration is:  
   
-```  
+```cpp 
 char *pch;  
 ```  
   
- The preceding declaration specifies that `pch` points to an object of type `char`.  
+ The preceding declaration specifies that `pch` points to an object of type **char**.  
   
  A more complex example is  
   
-```  
+```cpp 
 static unsigned int * const ptr;  
 ```  
   
- The preceding declaration specifies that `ptr` is a constant pointer to an object of type `unsigned` `int` with static storage duration.  
+ The preceding declaration specifies that `ptr` is a constant pointer to an object of type **unsigned** **int** with static storage duration.  
   
  The next example shows how multiple pointers are declared and initialized:  
   
-```  
+```cpp 
 static int *p = &i, *q = &j;  
 ```  
   
- In the preceding example, pointers p and q both point to objects of type `int` and are initialized to the addresses of i and j respectively.  The storage class specifier `static` applies to both pointers.  
+ In the preceding example, pointers p and q both point to objects of type **int** and are initialized to the addresses of i and j respectively.  The storage class specifier **static** applies to both pointers.  
   
 ## Example  
   
-```  
+```cpp 
 // pointer.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -182,7 +177,7 @@ dog dog
 ## Example  
  Another example illustrates the use of pointers in data structures; in this case, a linked list.  
   
-```  
+```cpp 
 // pointer_linkedlist.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -241,8 +236,7 @@ int main() {
 ```  
   
 ```Output  
-  
-      a  
+a  
 45  
 d  
 a  
@@ -260,6 +254,6 @@ node 2 = 789
 a (add node)  d (display list)  q (quit)  
 ```  
   
-## See Also  
+## See also  
  [Indirection Operator: *](../cpp/indirection-operator-star.md)   
  [Address-of Operator: &](../cpp/address-of-operator-amp.md)

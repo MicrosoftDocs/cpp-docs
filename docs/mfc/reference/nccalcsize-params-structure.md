@@ -2,23 +2,18 @@
 title: "NCCALCSIZE_PARAMS Structure | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "reference"
 f1_keywords: ["NCCALCSIZE_PARAMS"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["NCCALCSIZE_PARAMS structure [MFC]"]
 ms.assetid: 3424cd9f-806a-4089-82fb-414187589edf
-caps.latest.revision: 13
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # NCCALCSIZE_PARAMS Structure
-The `NCCALCSIZE_PARAMS` structure contains information that an application can use while processing the `WM_NCCALCSIZE` message to calculate the size, position, and valid contents of the client area of a window.  
+The `NCCALCSIZE_PARAMS` structure contains information that an application can use while processing the WM_NCCALCSIZE message to calculate the size, position, and valid contents of the client area of a window.  
   
 ## Syntax  
   

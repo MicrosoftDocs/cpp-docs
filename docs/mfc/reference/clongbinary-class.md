@@ -2,19 +2,14 @@
 title: "CLongBinary Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CLongBinary", "AFXDB_/CLongBinary", "AFXDB_/CLongBinary::CLongBinary", "AFXDB_/CLongBinary::m_dwDataLength", "AFXDB_/CLongBinary::m_hData"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CLongBinary class [MFC]"]
 ms.assetid: f4320059-aeb4-4ee5-bc2b-25f19d898ef5
-caps.latest.revision: 21
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CLongBinary Class
@@ -39,7 +34,7 @@ class CLongBinary : public CObject
 |Name|Description|  
 |----------|-----------------|  
 |[CLongBinary::m_dwDataLength](#m_dwdatalength)|Contains the actual size in bytes of the data object whose handle is stored in `m_hData`.|  
-|[CLongBinary::m_hData](#m_hdata)|Contains a Windows `HGLOBAL` handle to the actual image object.|  
+|[CLongBinary::m_hData](#m_hdata)|Contains a Windows HGLOBAL handle to the actual image object.|  
   
 ## Remarks  
  For example, a record field in a SQL table might contain a bitmap representing a picture. A `CLongBinary` object stores such an object and keeps track of its size.  
@@ -69,17 +64,17 @@ CLongBinary();
 ```  
   
 ##  <a name="m_dwdatalength"></a>  CLongBinary::m_dwDataLength  
- Stores the actual size in bytes of the data stored in the `HGLOBAL` handle in `m_hData`.  
+ Stores the actual size in bytes of the data stored in the HGLOBAL handle in `m_hData`.  
   
 ```  
 SQLULEN m_dwDataLength;  
 ```  
   
 ### Remarks  
- This size may be smaller than the size of the memory block allocated for the data. Call the Win32 [GLobalSize](http://msdn.microsoft.com/library/windows/desktop/aa366593) function to get the allocated size.  
+ This size may be smaller than the size of the memory block allocated for the data. Call the Win32 [GLobalSize](/windows/desktop/api/winbase/nf-winbase-globalsize) function to get the allocated size.  
   
 ##  <a name="m_hdata"></a>  CLongBinary::m_hData  
- Stores a Windows `HGLOBAL` handle to the actual binary large object data.  
+ Stores a Windows HGLOBAL handle to the actual binary large object data.  
   
 ```  
 HGLOBAL m_hData;  

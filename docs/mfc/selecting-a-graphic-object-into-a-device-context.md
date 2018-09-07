@@ -2,18 +2,13 @@
 title: "Selecting a Graphic Object into a Device Context | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["graphic objects [MFC], selecting into device context", "SelectObject method [MFC]", "GDI objects [MFC], device contexts", "lifetime, graphic objects [MFC]", "device contexts, selecting graphic objects into", "device contexts, graphic objects [MFC]"]
 ms.assetid: cf54a330-63ef-421f-83eb-90ec7bd82eef
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Selecting a Graphic Object into a Device Context

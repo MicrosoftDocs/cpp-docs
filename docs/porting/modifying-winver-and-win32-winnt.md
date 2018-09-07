@@ -2,18 +2,13 @@
 title: "Modifying WINVER and _WIN32_WINNT | Microsoft Docs"
 ms.custom: ""
 ms.date: "09/04/2017"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["WINVER in an upgraded Visual C++ project", "_WIN32_WINNT in an upgraded Visual C++ project"]
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
-caps.latest.revision: 17
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Modifying WINVER and _WIN32_WINNT
@@ -53,11 +48,11 @@ This targets the Windows 10 operating system. These values are listed in the Win
 If you don't see all of these versions of Windows listed in a copy of SDKDDKVer.h that you're looking at, you probably are using an older version of the Windows SDK. By default, Win32 projects in Visual Studio 2017 use the Windows 10 SDK.   
   
 > [!NOTE]
->  Values are not guaranteed to work if you include internal MFC headers in your application.  
+> Values are not guaranteed to work if you include internal MFC headers in your application.  
   
-You can also define this macro by using the **/D** compiler option. For more information, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).  
+You can also define this macro by using the `/D` compiler option. For more information, see [/D (Preprocessor Definitions)](../build/reference/d-preprocessor-definitions.md).  
   
-For more information about the meanings of these macros, see [Using the Windows Headers](https://msdn.microsoft.com/library/windows/desktop/aa383745).  
+For more information about the meanings of these macros, see [Using the Windows Headers](/windows/desktop/WinProg/using-the-windows-headers).  
   
 ## See Also  
 

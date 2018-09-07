@@ -2,18 +2,13 @@
 title: "Function Template Instantiation | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["templates, instantiation", "function templates, instantiation", "instantiation, function templates"]
 ms.assetid: f22a07c7-3ad1-465a-84f5-8737e274bd47
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Function Template Instantiation
@@ -39,5 +34,5 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also  
  [Function Templates](../cpp/function-templates.md)

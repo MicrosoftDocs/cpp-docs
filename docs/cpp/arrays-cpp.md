@@ -2,26 +2,20 @@
 title: "Arrays (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["declaring arrays [C++], about declaring arrays", "multidimensional arrays [C++]", "arrays [C++]"]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
-caps.latest.revision: 12
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Arrays (C++)
 An array is a collection of like objects. The simplest case of an array is a vector, which may be declared by the following sequence:  
   
 ```  
-  
-      decl-specifier identifier [ constant-expression ]  
+decl-specifier identifier [ constant-expression ]  
 decl-specifier identifier []  
 decl-specifier identifer [][ constant-expression] . . .  
 decl-specifier identifier [ constant-expression ]  
@@ -32,7 +26,7 @@ decl-specifier identifier [ constant-expression ]
   
 -   An optional storage class specifier.  
   
--   Optional **const** and/or `volatile` specifiers.  
+-   Optional **const** and/or **volatile** specifiers.  
   
 -   The type name of the elements of the array.  
   
@@ -40,17 +34,17 @@ decl-specifier identifier [ constant-expression ]
   
 -   The identifier.  
   
--   A constant expression of integral type enclosed in brackets, **[].** If multiple dimensions are declared using additional brackets, the constant expression may be omitted on the first set of brackets.  
+-   A constant expression of integral type enclosed in brackets, **[]**. If multiple dimensions are declared using additional brackets, the constant expression may be omitted on the first set of brackets.  
   
 -   Optional additional brackets enclosing constant expressions.  
   
  3. An optional initializer.  See [Initializers](../cpp/initializers.md).  
   
- The number of elements in the array is given by the constant expression. The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The *constant-expression* must be of an integral type and must be greater than 0. A zero-sized array is legal only when the array is the last field in a `struct` or **union** and when the Microsoft extensions (/Ze) are enabled.  
+ The number of elements in the array is given by the constant expression. The first element in the array is the 0th element, and the last element is the (*n*-1) element, where *n* is the number of elements the array can contain. The *constant-expression* must be of an integral type and must be greater than 0. A zero-sized array is legal only when the array is the last field in a **struct** or **union** and when the Microsoft extensions (/Ze) are enabled.  
   
  The following example shows how to define an array at run time:  
   
-```  
+```cpp 
 // arrays.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -71,22 +65,22 @@ int main() {
 }  
 ```  
   
- Arrays are derived types and can therefore be constructed from any other derived or fundamental type except functions, references, and `void`.  
+ Arrays are derived types and can therefore be constructed from any other derived or fundamental type except functions, references, and **void**.  
   
  Arrays constructed from other arrays are multidimensional arrays. These multidimensional arrays are specified by placing multiple bracketed constant expressions in sequence. For example, consider this declaration:  
   
-```  
+```cpp 
 int i2[5][7];  
 ```  
   
- It specifies an array of type `int`, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:  
+ It specifies an array of type **int**, conceptually arranged in a two-dimensional matrix of five rows and seven columns, as shown in the following figure:  
   
  ![Conceptual layout of a multi&#45;dimensional array](../cpp/media/vc38rc1.gif "vc38RC1")  
 Conceptual Layout of Multidimensional Array  
   
  In declarations of multidimensioned arrays that have an initializer list (as described in [Initializers](../cpp/initializers.md)), the constant expression that specifies the bounds for the first dimension can be omitted. For example:  
   
-```  
+```cpp 
 // arrays2.cpp  
 // compile with: /c  
 const int cMarkets = 4;  
@@ -115,7 +109,7 @@ double TransportCosts[][cMarkets] = {
 ## Example  
  The technique of omitting the bounds specification for the first dimension of a multidimensional array can also be used in function declarations as follows:  
   
-```  
+```cpp 
 // multidimensional_arrays.cpp  
 // compile with: /EHsc  
 // arguments: 3  
@@ -167,7 +161,4 @@ The minimum cost to Market 3 is: 17.29
 ```  
   
 ## Comments  
- The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation.  
-  
-## See Also  
- 
+ The function `FindMinToMkt` is written such that adding new factories does not require any code changes, just a recompilation. 

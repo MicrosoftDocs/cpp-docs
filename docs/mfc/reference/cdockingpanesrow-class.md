@@ -2,25 +2,20 @@
 title: "CDockingPanesRow Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CDockingPanesRow", "AFXDOCKINGPANESROW/CDockingPanesRow", "AFXDOCKINGPANESROW/CDockingPanesRow::AddPane", "AFXDOCKINGPANESROW/CDockingPanesRow::AddPaneFromRow", "AFXDOCKINGPANESROW/CDockingPanesRow::ArrangePanes", "AFXDOCKINGPANESROW/CDockingPanesRow::CalcFixedLayout", "AFXDOCKINGPANESROW/CDockingPanesRow::Create", "AFXDOCKINGPANESROW/CDockingPanesRow::ExpandStretchedPanes", "AFXDOCKINGPANESROW/CDockingPanesRow::ExpandStretchedPanesRect", "AFXDOCKINGPANESROW/CDockingPanesRow::FixupVirtualRects", "AFXDOCKINGPANESROW/CDockingPanesRow::GetAvailableLength", "AFXDOCKINGPANESROW/CDockingPanesRow::GetAvailableSpace", "AFXDOCKINGPANESROW/CDockingPanesRow::GetClientRect", "AFXDOCKINGPANESROW/CDockingPanesRow::GetDockSite", "AFXDOCKINGPANESROW/CDockingPanesRow::GetExtraSpace", "AFXDOCKINGPANESROW/CDockingPanesRow::GetGroupFromPane", "AFXDOCKINGPANESROW/CDockingPanesRow::GetID", "AFXDOCKINGPANESROW/CDockingPanesRow::GetMaxPaneSize", "AFXDOCKINGPANESROW/CDockingPanesRow::GetPaneCount", "AFXDOCKINGPANESROW/CDockingPanesRow::GetPaneList", "AFXDOCKINGPANESROW/CDockingPanesRow::GetRowAlignment", "AFXDOCKINGPANESROW/CDockingPanesRow::GetRowHeight", "AFXDOCKINGPANESROW/CDockingPanesRow::GetRowOffset", "AFXDOCKINGPANESROW/CDockingPanesRow::GetVisibleCount", "AFXDOCKINGPANESROW/CDockingPanesRow::GetWindowRect", "AFXDOCKINGPANESROW/CDockingPanesRow::HasPane", "AFXDOCKINGPANESROW/CDockingPanesRow::IsEmpty", "AFXDOCKINGPANESROW/CDockingPanesRow::IsExclusiveRow", "AFXDOCKINGPANESROW/CDockingPanesRow::IsHorizontal", "AFXDOCKINGPANESROW/CDockingPanesRow::IsVisible", "AFXDOCKINGPANESROW/CDockingPanesRow::Move", "AFXDOCKINGPANESROW/CDockingPanesRow::MovePane", "AFXDOCKINGPANESROW/CDockingPanesRow::OnResizePane", "AFXDOCKINGPANESROW/CDockingPanesRow::RedrawAll", "AFXDOCKINGPANESROW/CDockingPanesRow::RemovePane", "AFXDOCKINGPANESROW/CDockingPanesRow::ReplacePane", "AFXDOCKINGPANESROW/CDockingPanesRow::RepositionPanes", "AFXDOCKINGPANESROW/CDockingPanesRow::Resize", "AFXDOCKINGPANESROW/CDockingPanesRow::ResizeByPaneDivider", "AFXDOCKINGPANESROW/CDockingPanesRow::ScreenToClient", "AFXDOCKINGPANESROW/CDockingPanesRow::SetExtra", "AFXDOCKINGPANESROW/CDockingPanesRow::ShowDockSiteRow", "AFXDOCKINGPANESROW/CDockingPanesRow::ShowPane", "AFXDOCKINGPANESROW/CDockingPanesRow::UpdateVisibleState"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CDockingPanesRow [MFC], AddPane", "CDockingPanesRow [MFC], AddPaneFromRow", "CDockingPanesRow [MFC], ArrangePanes", "CDockingPanesRow [MFC], CalcFixedLayout", "CDockingPanesRow [MFC], Create", "CDockingPanesRow [MFC], ExpandStretchedPanes", "CDockingPanesRow [MFC], ExpandStretchedPanesRect", "CDockingPanesRow [MFC], FixupVirtualRects", "CDockingPanesRow [MFC], GetAvailableLength", "CDockingPanesRow [MFC], GetAvailableSpace", "CDockingPanesRow [MFC], GetClientRect", "CDockingPanesRow [MFC], GetDockSite", "CDockingPanesRow [MFC], GetExtraSpace", "CDockingPanesRow [MFC], GetGroupFromPane", "CDockingPanesRow [MFC], GetID", "CDockingPanesRow [MFC], GetMaxPaneSize", "CDockingPanesRow [MFC], GetPaneCount", "CDockingPanesRow [MFC], GetPaneList", "CDockingPanesRow [MFC], GetRowAlignment", "CDockingPanesRow [MFC], GetRowHeight", "CDockingPanesRow [MFC], GetRowOffset", "CDockingPanesRow [MFC], GetVisibleCount", "CDockingPanesRow [MFC], GetWindowRect", "CDockingPanesRow [MFC], HasPane", "CDockingPanesRow [MFC], IsEmpty", "CDockingPanesRow [MFC], IsExclusiveRow", "CDockingPanesRow [MFC], IsHorizontal", "CDockingPanesRow [MFC], IsVisible", "CDockingPanesRow [MFC], Move", "CDockingPanesRow [MFC], MovePane", "CDockingPanesRow [MFC], OnResizePane", "CDockingPanesRow [MFC], RedrawAll", "CDockingPanesRow [MFC], RemovePane", "CDockingPanesRow [MFC], ReplacePane", "CDockingPanesRow [MFC], RepositionPanes", "CDockingPanesRow [MFC], Resize", "CDockingPanesRow [MFC], ResizeByPaneDivider", "CDockingPanesRow [MFC], ScreenToClient", "CDockingPanesRow [MFC], SetExtra", "CDockingPanesRow [MFC], ShowDockSiteRow", "CDockingPanesRow [MFC], ShowPane", "CDockingPanesRow [MFC], UpdateVisibleState"]
 ms.assetid: e7a17832-0ebb-4bce-b799-cec9b60f76fe
-caps.latest.revision: 25
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CDockingPanesRow Class
 Manages a list of panes that are located in the same horizontal or vertical row (column) of a dock site.  
 
- [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
+ For more detail see the source code located in the **VC\\atlmfc\\src\\mfc** folder of your Visual Studio installation.  
   
 ## Syntax  
   
@@ -111,10 +106,10 @@ virtual void AddPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
- [in] `dockMethod`  
- [in] `lpRect`  
- [in] `bAddLast`  
+ [in] *pControlBar*  
+ [in] *dockMethod*  
+ [in] *lpRect*  
+ [in] *bAddLast*  
   
 ### Remarks  
   
@@ -128,8 +123,8 @@ virtual void AddPaneFromRow(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
- [in] `dockMethod`  
+ [in] *pControlBar*  
+ [in] *dockMethod*  
   
 ### Remarks  
   
@@ -143,10 +138,10 @@ virtual void ArrangePanes(
 ```  
   
 ### Parameters  
- [in] `nMargin`  
+ [in] *nMargin*  
  Specifies the offset, in pixels, of the first pane from the upper-left corner of the row.  
   
- [in] `nSpacing`  
+ [in] *nSpacing*  
  Specifies the spacing, in pixels, between panes.  
   
 ### Remarks  
@@ -162,8 +157,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### Parameters  
- [in] `bStretch`  
- [in] `bHorz`  
+ [in] *bStretch*  
+ [in] *bHorz*  
   
 ### Return Value  
   
@@ -180,9 +175,9 @@ CDockingPanesRow(
 ```  
   
 ### Parameters  
- [in] `pParentDockBar`  
- [in] `nOffset`  
- [in] `nHeight`  
+ [in] *pParentDockBar*  
+ [in] *nOffset*  
+ [in] *nHeight*  
   
 ### Remarks  
   
@@ -225,8 +220,8 @@ void FixupVirtualRects(
 ```  
   
 ### Parameters  
- [in] `bMoveBackToVirtualRect`  
- [in] `pBarToExclude`  
+ [in] *bMoveBackToVirtualRect*  
+ [in] *pBarToExclude*  
   
 ### Remarks  
   
@@ -238,7 +233,7 @@ virtual int GetAvailableLength(BOOL bUseVirtualRect = FALSE) const;
 ```  
   
 ### Parameters  
- [in] `bUseVirtualRect`  
+ [in] *bUseVirtualRect*  
   
 ### Return Value  
   
@@ -252,7 +247,7 @@ virtual void GetAvailableSpace(CRect& rect);
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -264,7 +259,7 @@ void GetClientRect(CRect& rect) const;
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -300,8 +295,8 @@ void GetGroupFromPane(
 ```  
   
 ### Parameters  
- [in] `pBar`  
- [in] `lst`  
+ [in] *pBar*  
+ [in] *lst*  
   
 ### Remarks  
   
@@ -324,7 +319,7 @@ int GetMaxPaneSize(BOOL bSkipHiddenBars = TRUE) const;
 ```  
   
 ### Parameters  
- [in] `bSkipHiddenBars`  
+ [in] *bSkipHiddenBars*  
   
 ### Return Value  
   
@@ -404,7 +399,7 @@ void GetWindowRect(CRect& rect) const;
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -416,7 +411,7 @@ BOOL HasPane(CBasePane* pControlBar);
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
   
 ### Return Value  
   
@@ -474,7 +469,7 @@ virtual void Move(int nOffset);
 ```  
   
 ### Parameters  
- [in] `nOffset`  
+ [in] *nOffset*  
   
 ### Remarks  
   
@@ -509,14 +504,14 @@ void MovePane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
- [in] `ptOffset`  
- [in] `bSwapControlBars`  
- [in] `hdwp`  
- [in] `rectTarget`  
- [in] `nOffset`  
- [in] `bForward`  
- [in] `nAbsolutOffset`  
+ [in] *pControlBar*  
+ [in] *ptOffset*  
+ [in] *bSwapControlBars*  
+ [in] *hdwp*  
+ [in] *rectTarget*  
+ [in] *nOffset*  
+ [in] *bForward*  
+ [in] *nAbsolutOffset*  
   
 ### Remarks  
   
@@ -528,7 +523,7 @@ virtual void OnResizePane(CBasePane* pControlBar);
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
   
 ### Remarks  
   
@@ -549,7 +544,7 @@ virtual void RemovePane(CPane* pControlBar);
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
+ [in] *pControlBar*  
   
 ### Remarks  
   
@@ -563,8 +558,8 @@ virtual BOOL ReplacePane(
 ```  
   
 ### Parameters  
- [in] `pBarOld`  
- [in] `pBarNew`  
+ [in] *pBarOld*  
+ [in] *pBarNew*  
   
 ### Return Value  
   
@@ -582,10 +577,10 @@ virtual void RepositionPanes(
 ```  
   
 ### Parameters  
- [in] `rectNewParentBarArea`  
- [in] `nSide`  
- [in] `bExpand`  
- [in] `nOffset`  
+ [in] *rectNewParentBarArea*  
+ [in] *nSide*  
+ [in] *bExpand*  
+ [in] *nOffset*  
   
 ### Remarks  
   
@@ -597,7 +592,7 @@ virtual int Resize(int nOffset);
 ```  
   
 ### Parameters  
- [in] `nOffset`  
+ [in] *nOffset*  
   
 ### Return Value  
   
@@ -611,7 +606,7 @@ virtual int ResizeByPaneDivider(int);
 ```  
   
 ### Parameters  
- [in] `int`  
+ [in] *int*  
   
 ### Return Value  
   
@@ -625,7 +620,7 @@ void ScreenToClient(CRect& rect) const;
 ```  
   
 ### Parameters  
- [in] `rect`  
+ [in] *rect*  
   
 ### Remarks  
   
@@ -639,8 +634,8 @@ void SetExtra(
 ```  
   
 ### Parameters  
- [in] `nExtraSpace`  
- [in] `rowExtraAlign`  
+ [in] *nExtraSpace*  
+ [in] *rowExtraAlign*  
   
 ### Remarks  
   
@@ -654,8 +649,8 @@ virtual void ShowDockSiteRow(
 ```  
   
 ### Parameters  
- [in] `bShow`  
- [in] `bDelay`  
+ [in] *bShow*  
+ [in] *bDelay*  
   
 ### Remarks  
   
@@ -670,9 +665,9 @@ virtual BOOL ShowPane(
 ```  
   
 ### Parameters  
- [in] `pControlBar`  
- [in] `bShow`  
- [in] `bDelay`  
+ [in] *pControlBar*  
+ [in] *bShow*  
+ [in] *bDelay*  
   
 ### Return Value  
   
@@ -686,7 +681,7 @@ virtual void UpdateVisibleState(BOOL bDelay);
 ```  
   
 ### Parameters  
- [in] `bDelay`  
+ [in] *bDelay*  
   
 ### Remarks  
   

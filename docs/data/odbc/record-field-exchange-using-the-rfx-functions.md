@@ -2,18 +2,13 @@
 title: "Record Field Exchange: Using the RFX Functions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-data"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["ODBC [C++], data types", "data types [C++], ODBC record field exchange", "RFX (ODBC) [C++], function syntax and parameters", "DoFieldExchange method, and RFX functions", "ODBC [C++], RFX", "RFX (ODBC) [C++], data types", "function calls, RFX functions"]
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
-caps.latest.revision: 8
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "data-storage"]
 ---
 # Record Field Exchange: Using the RFX Functions
@@ -49,7 +44,7 @@ This topic explains how to use the RFX function calls that make up the body of y
 |`RFX_Binary`|`CByteArray`|  
 |`RFX_Double`|**double**|  
 |`RFX_Single`|**float**|  
-|`RFX_Int`|`int`|  
+|`RFX_Int`|**int**|  
 |`RFX_Long`|**long**|  
 |`RFX_LongBinary`|`CLongBinary`|  
 |`RFX_Text`|`CString`|  

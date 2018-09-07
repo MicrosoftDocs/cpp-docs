@@ -2,19 +2,14 @@
 title: "__readcr3 | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["__readcr3"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["__readcr3 intrinsic"]
 ms.assetid: e24392c3-cad7-4788-8f31-94bf2e9e0053
-caps.latest.revision: 11
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # __readcr3
@@ -35,7 +30,7 @@ unsigned __int64 __readcr3(void);
   
 |Intrinsic|Architecture|  
 |---------------|------------------|  
-|`__readcr3`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readcr3`|x86, x64|  
   
  **Header file** \<intrin.h>  
   

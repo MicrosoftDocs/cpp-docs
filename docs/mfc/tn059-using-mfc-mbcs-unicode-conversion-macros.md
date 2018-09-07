@@ -2,19 +2,14 @@
 title: "TN059: Using MFC MBCS-Unicode Conversion Macros | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 f1_keywords: ["vc.mfc.mbcs"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["MFCANS32.DLL", "Unicode [MFC], conversion macros", "Unicode [MFC], OLE interfaces", "conversion macros [MFC]", "converting Unicode", "MBCS [MFC], conversion macros", "macros [MFC], MBCS conversion macros", "TN059"]
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # TN059: Using MFC MBCS/Unicode Conversion Macros
@@ -73,9 +68,9 @@ pI->SomeFunctionThatNeedsUnicode(T2OLE(lpszA));
   
  There are extra calls where conversion is necessary, but using the macros is simple and effective.  
   
- The implementation of each macro uses the _alloca() function to allocate memory from the stack instead of the heap. Allocating memory from the stack is much faster than allocating memory on the heap, and the memory is automatically freed when the function is exited. In addition, the macros avoid calling **MultiByteToWideChar** (or **WideCharToMultiByte**) more than one time. This is done by allocating a little bit more memory than is necessary. We know that an MBC will convert into at most one **WCHAR** and that for each **WCHAR** we will have a maximum of two MBC bytes. By allocating a little more than necessary, but always enough to handle the conversion the second call second call to the conversion function is avoided. The call to the helper function **AfxA2Whelper** reduces the number of argument pushes that must be done in order to perform the conversion (this results in smaller code, than if it called **MultiByteToWideChar** directly).  
+ The implementation of each macro uses the _alloca() function to allocate memory from the stack instead of the heap. Allocating memory from the stack is much faster than allocating memory on the heap, and the memory is automatically freed when the function is exited. In addition, the macros avoid calling `MultiByteToWideChar` (or `WideCharToMultiByte`) more than one time. This is done by allocating a little bit more memory than is necessary. We know that an MBC will convert into at most one **WCHAR** and that for each **WCHAR** we will have a maximum of two MBC bytes. By allocating a little more than necessary, but always enough to handle the conversion the second call second call to the conversion function is avoided. The call to the helper function `AfxA2Whelper` reduces the number of argument pushes that must be done in order to perform the conversion (this results in smaller code, than if it called `MultiByteToWideChar` directly).  
   
- In order to for the macros to have space to store the a temporary length, it is necessary to declare a local variable called _convert that does this in each function that uses the conversion macros. This is done by invoking the **USES_CONVERSION** macro as seen above in the example.  
+ In order to for the macros to have space to store the a temporary length, it is necessary to declare a local variable called _convert that does this in each function that uses the conversion macros. This is done by invoking the USES_CONVERSION macro as seen above in the example.  
   
  There are both generic conversion macros and OLE specific macros. These two different macro sets are discussed below. All of the macros reside in AFXPRIV.H.  
   
@@ -92,7 +87,7 @@ W2A      (LPCWSTR) -> (LPSTR)
  Besides doing text conversions, there are also macros and helper functions for converting `TEXTMETRIC`, `DEVMODE`, `BSTR`, and OLE allocated strings. These macros are beyond the scope of this discussion - refer to AFXPRIV.H for more information on those macros.  
   
 ## OLE Conversion Macros  
- The OLE conversion macros are designed specifically for handling functions that expect **OLESTR** characters. If you examine the OLE headers, you will see many references to **LPCOLESTR** and **OLECHAR**. These types are used to refer to the type of characters used in OLE interfaces in a way that is not specific to the platform. **OLECHAR** maps to `char` in Win16 and Macintosh platforms and **WCHAR** in Win32.  
+ The OLE conversion macros are designed specifically for handling functions that expect **OLESTR** characters. If you examine the OLE headers, you will see many references to **LPCOLESTR** and **OLECHAR**. These types are used to refer to the type of characters used in OLE interfaces in a way that is not specific to the platform. **OLECHAR** maps to **char** in Win16 and Macintosh platforms and **WCHAR** in Win32.  
   
  In order to keep the number of **#ifdef** directives in the MFC code to a minimum we have a similar macro for each conversion that where OLE strings are involved. The following macros are the most commonly used:  
   
@@ -103,7 +98,7 @@ OLE2CT   (LPCOLESTR) -> (LPCTSTR)
 OLE2T   (LPCOLESTR) -> (LPCSTR)  
 ```  
   
- Again, there are similar macros for doing `TEXTMETRIC`, `DEVMODE`, `BSTR`, and OLE allocated strings. Refer to AFXPRIV.H for more information.  
+ Again, there are similar macros for doing TEXTMETRIC, DEVMODE, BSTR, and OLE allocated strings. Refer to AFXPRIV.H for more information.  
   
 ## Other Considerations  
  Do not use the macros in a tight loop. For example, you do not want to write the following kind of code:  

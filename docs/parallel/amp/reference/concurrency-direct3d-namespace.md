@@ -2,19 +2,14 @@
 title: "Concurrency::direct3d Namespace | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-amp"]
+ms.topic: "reference"
 f1_keywords: ["amp/Concurrency::direct3d", "amprt/Concurrency::direct3d", "amp_short_vectors/Concurrency::direct3d", "amp_graphics/Concurrency::direct3d", "amp_math/Concurrency::direct3d"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["direct3d namespace"]
 ms.assetid: 9566a2f1-4d5f-43e4-a3ac-676643d38420
-caps.latest.revision: 15
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Concurrency::direct3d Namespace
@@ -57,7 +52,7 @@ namespace direct3d;
 |[imax](concurrency-direct3d-namespace-functions-amp.md#imax)|Compares two values, returning the value which is greater.|  
 |[imin](concurrency-direct3d-namespace-functions-amp.md#imin)|Compares two values, returning the value which is smaller.|  
 |[is_timeout_disabled](concurrency-direct3d-namespace-functions-amp.md#is_timeout_disabled)|Returns a boolean flag indicating if timeout is disabled for the specified accelerator_view.|  
-|[mad](concurrency-direct3d-namespace-functions-amp.md#mad)|Overloaded. Performs an arithmetic multiply/add operation on three arguments: _X * _Y + _Z|  
+|[mad](concurrency-direct3d-namespace-functions-amp.md#mad)|Overloaded. Performs an arithmetic multiply/add operation on three arguments: _X \* _Y + _Z|  
 |[make_array](concurrency-direct3d-namespace-functions-amp.md#make_array)|Create an array from a D3D buffer interface pointer.|  
 |[noise](concurrency-direct3d-namespace-functions-amp.md#noise)|Generates a random value by using the Perlin noise algorithm|  
 |[radians](concurrency-direct3d-namespace-functions-amp.md#radians)|Converts _X from degrees to radians|  

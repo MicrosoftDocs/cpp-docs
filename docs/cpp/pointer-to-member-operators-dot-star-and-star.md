@@ -2,19 +2,14 @@
 title: "Pointer-to-Member Operators: .* and -&gt;* | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 f1_keywords: [".*", "->*"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["expressions [C++], pointer", "pointer-to-member operators [C++]", ".* operator", "expressions [C++], operators", "->* operator"]
 ms.assetid: 2632be3f-1c81-4523-b56c-982a92a68688
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Pointer-to-Member Operators: .* and -&gt;*
@@ -28,7 +23,7 @@ expression ->* expression
 ## Remarks  
  The pointer-to-member operators, .* and ->\*, return the value of a specific class member for the object specified on the left side of the expression.  The right side must specify a member of the class.  The following example shows how to use these operators:  
   
-```  
+```cpp 
 // expre_Expressions_with_Pointer_Member_Operators.cpp  
 // compile with: /EHsc  
 #include <iostream>  
@@ -68,7 +63,7 @@ int main() {
   
 ## Output  
   
-```  
+```Output  
 m_func1  
 m_func1  
 1  
@@ -88,7 +83,7 @@ m_func1
 ## Example  
  Consider the following classes and program fragment:  
   
-```  
+```cpp 
 // expre_Expressions_with_Pointer_Member_Operators2.cpp  
 // C2440 expected  
 class BaseClass {  
@@ -129,6 +124,5 @@ int main() {
 > [!NOTE]
 >  If the result of one of the pointer-to-member operators is a function, then the result can be used only as an operand to the function call operator.  
   
-## See Also  
+## See also  
  [C++ Built-in Operators, Precedence and Associativity](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
-

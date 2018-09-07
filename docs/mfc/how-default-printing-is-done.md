@@ -2,24 +2,19 @@
 title: "How Default Printing Is Done | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["default printing", "printing [MFC], default", "defaults, printing"]
 ms.assetid: 0f698459-0fc9-4d43-97da-29cf0f65daa2
-caps.latest.revision: 9
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # How Default Printing Is Done
 This article explains the default printing process in Windows in terms of the MFC framework.  
   
- In MFC applications, the view class has a member function named `OnDraw` that contains all the drawing code. `OnDraw` takes a pointer to a [CDC](../mfc/reference/cdc-class.md) object as a parameter. That `CDC` object represents the device context to receive the image produced by `OnDraw`. When the window displaying the document receives a [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) message, the framework calls `OnDraw` and passes it a device context for the screen (a [CPaintDC](../mfc/reference/cpaintdc-class.md) object, to be specific). Accordingly, `OnDraw`'s output goes to the screen.  
+ In MFC applications, the view class has a member function named `OnDraw` that contains all the drawing code. `OnDraw` takes a pointer to a [CDC](../mfc/reference/cdc-class.md) object as a parameter. That `CDC` object represents the device context to receive the image produced by `OnDraw`. When the window displaying the document receives a [WM_PAINT](/windows/desktop/gdi/wm-paint) message, the framework calls `OnDraw` and passes it a device context for the screen (a [CPaintDC](../mfc/reference/cpaintdc-class.md) object, to be specific). Accordingly, `OnDraw`'s output goes to the screen.  
   
  In programming for Windows, sending output to the printer is very similar to sending output to the screen. This is because the Windows graphics device interface (GDI) is hardware-independent. You can use the same GDI functions for screen display or for printing simply by using the appropriate device context. If the `CDC` object that `OnDraw` receives represents the printer, `OnDraw`'s output goes to the printer.  
   

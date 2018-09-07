@@ -2,19 +2,14 @@
 title: "-openmp (Enable OpenMP 2.0 Support) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-tools"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "reference"
 f1_keywords: ["/openmp", "VC.Project.VCCLCompilerTool.OpenMP"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["/openmp compiler option [C++]", "-openmp compiler option [C++]"]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
-caps.latest.revision: 21
 author: "corob-msft"
 ms.author: "corob"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # /openmp (Enable OpenMP 2.0 Support)
@@ -28,8 +23,6 @@ Causes the compiler to process `#pragma`[omp](../../preprocessor/omp.md).
   
 ## Remarks  
  `#pragma omp` is used to specify [Directives](../../parallel/openmp/reference/openmp-directives.md) and [Clauses](../../parallel/openmp/reference/openmp-clauses.md). If **/openmp** is not specified in a compilation, the compiler ignores OpenMP clauses and directives. [OpenMP Function](../../parallel/openmp/reference/openmp-functions.md) calls are processed by the compiler even if **/openmp** is not specified.  
-  
- An application compiled with **/openmp** and using the [Libraries](../../parallel/openmp/reference/openmp-libraries.md) can only be run on Windows 2000 or later operating systems.  
   
  Applications compiled with **/openmp** and **/clr** can only be run in a single application domain process; multiple application domains are not supported. That is, when the module constructor (.cctor) is run, it will detect the process is compiled with **/openmp** and if the application is being loaded into a non-default runtime. For more information, see [appdomain](../../cpp/appdomain.md), [/clr (Common Language Runtime Compilation)](../../build/reference/clr-common-language-runtime-compilation.md), and [Initialization of Mixed Assemblies](../../dotnet/initialization-of-mixed-assemblies.md).  
   

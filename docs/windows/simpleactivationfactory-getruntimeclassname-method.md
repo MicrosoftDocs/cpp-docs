@@ -2,18 +2,13 @@
 title: "SimpleActivationFactory::GetRuntimeClassName Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
 ms.topic: "reference"
 f1_keywords: ["module/Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName"]
 dev_langs: ["C++"]
 ms.assetid: 3aa07487-9a42-46f8-8893-37ba6315e50b
-caps.latest.revision: 3
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus", "uwp"]
 ---
 # SimpleActivationFactory::GetRuntimeClassName Method
@@ -39,7 +34,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error.
 
 ## Remarks
 
-If &#95;&#95;WRL_STRICT&#95;&#95; is defined, an assert error is emitted if the class specified by the `Base` class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
+If `__WRL_STRICT__` is defined, an assert error is emitted if the class specified by the `Base` class template parameter isn't derived from [RuntimeClass](../windows/runtimeclass-class.md), or isn't configured with the WinRt or WinRtClassicComMix [RuntimeClassType](../windows/runtimeclasstype-enumeration.md) enumeration value.
 
 ## Requirements
 

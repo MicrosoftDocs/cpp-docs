@@ -2,19 +2,14 @@
 title: "CSinusoidalTransitionFromVelocity Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
+ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFromVelocity", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::Create", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_duration", "AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_period"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["CSinusoidalTransitionFromVelocity [MFC], CSinusoidalTransitionFromVelocity", "CSinusoidalTransitionFromVelocity [MFC], Create", "CSinusoidalTransitionFromVelocity [MFC], m_duration", "CSinusoidalTransitionFromVelocity [MFC], m_period"]
 ms.assetid: cc885f17-b84b-45ee-8f1f-36a8bbb7adad
-caps.latest.revision: 18
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # CSinusoidalTransitionFromVelocity Class
@@ -70,7 +65,7 @@ virtual BOOL Create(
 ```  
   
 ### Parameters  
- `pLibrary`  
+ *pLibrary*  
  A pointer to transition library, which is responsible for creation of standard transitions.  
   
 ### Return Value  
@@ -86,10 +81,10 @@ CSinusoidalTransitionFromVelocity(
 ```  
   
 ### Parameters  
- `duration`  
+ *duration*  
  The duration of the transition.  
   
- `period`  
+ *period*  
  The period of oscillation of the sinusoidal wave in seconds.  
   
 ##  <a name="m_duration"></a>  CSinusoidalTransitionFromVelocity::m_duration  

@@ -2,18 +2,13 @@
 title: "Text and Strings in Visual C++ | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["globalization [C++], character sets", "programming [C++], international", "multiple language support [C++]", "Unicode [C++]", "international applications [C++], about international applications", "portability [C++]", "translation [C++], character sets", "non-European characters [C++]", "character sets [C++]", "globalization [C++]", "Japanese characters [C++]", "Kanji character support [C++]", "local character sets [C++]", "ASCII characters [C++]", "character sets [C++], about character sets", "localization [C++], character sets", "translating code [C++]", "localization [C++]", "character sets [C++], non-European", "portability [C++], character sets", "MBCS [C++], international programming"]
 ms.assetid: a1bb27ac-abe5-4c6b-867d-f761d4b93205
-caps.latest.revision: 12
-author: "ghogen"
-ms.author: "ghogen"
-manager: "ghogen"
+author: "mikeblome"
+ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Text and Strings in Visual C++
@@ -39,7 +34,7 @@ An important aspect of developing applications for international markets is the 
  [Internationalization](../c-runtime-library/internationalization.md)  
  Discusses international support in the C run-time library.  
   
- [International Samples](http://msdn.microsoft.com/en-us/aa8d390c-cf4c-4dd8-9dea-74d81f93f2f8)  
+ [International Samples](https://github.com/Microsoft/VCSamples)  
  Provides links to samples demonstrating internationalization in Visual C++.  
   
  [Language and Country/Region Strings](../c-runtime-library/locale-names-languages-and-country-region-strings.md)  

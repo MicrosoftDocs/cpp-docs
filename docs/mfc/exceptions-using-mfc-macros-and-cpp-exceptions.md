@@ -2,18 +2,13 @@
 title: "Exceptions: Using MFC Macros and C++ Exceptions | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["exception objects [MFC]", "memory leaks [MFC], exception object not deleted", "exception handling [MFC], MFC", "try-catch exception handling [MFC], mixing MFC macros and C++ keywords", "exception objects [MFC], deleting", "exceptions [MFC], MFC macros vs. C++ keywords", "catch blocks [MFC], mixed", "exception handling [MFC], mixed-language", "nested try blocks [MFC]", "catch blocks [MFC], explicitly deleting code in", "try-catch exception handling [MFC], nested try blocks", "heap corruption [MFC]", "nested catch blocks [MFC]"]
 ms.assetid: d664a83d-879b-44d4-bdf0-029f0aca69e9
-caps.latest.revision: 10
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Exceptions: Using MFC Macros and C++ Exceptions
@@ -34,7 +29,7 @@ This article discusses considerations for writing code that uses both the MFC ex
   
  [!code-cpp[NVC_MFCExceptions#10](../mfc/codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_1.cpp)]  
   
- The problem occurs because `e` is deleted when execution passes out of the "inner" **CATCH** block. Using the `THROW_LAST` macro instead of the **THROW** statement will cause the "outer" **CATCH** block to receive a valid pointer:  
+ The problem occurs because `e` is deleted when execution passes out of the "inner" **CATCH** block. Using the **THROW_LAST** macro instead of the **THROW** statement will cause the "outer" **CATCH** block to receive a valid pointer:  
   
  [!code-cpp[NVC_MFCExceptions#11](../mfc/codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_2.cpp)]  
   

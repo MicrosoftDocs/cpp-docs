@@ -2,18 +2,13 @@
 title: "Compiler COM Support | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: ["cpp-language"]
-ms.tgt_pltfrm: ""
 ms.topic: "language-reference"
 dev_langs: ["C++"]
 helpviewer_keywords: ["cl.exe compiler, COM support", "COM, compiler support"]
 ms.assetid: 76a78442-f2a4-4985-9967-67e20773f847
-caps.latest.revision: 7
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Compiler COM Support
@@ -22,9 +17,9 @@ ms.workload: ["cplusplus"]
   
  By using the [#import preprocessor directive](../preprocessor/hash-import-directive-cpp.md), the compiler can read a type library and convert it into a C++ header file that describes the COM interfaces as classes. A set of `#import` attributes is available for user control of the content for the resulting type library header files.  
   
- You can use the [__declspec](../cpp/declspec.md) extended attribute [uuid](../cpp/uuid-cpp.md) to assign a globally unique identifier (GUID) to a COM object. The keyword [__uuidof](../cpp/uuidof-operator.md) can be used to extract the GUID associated with a COM object. Another `__declspec` attribute, [property](../cpp/property-cpp.md), can be used to specify the **get** and **set** methods for a data member of a COM object.  
+ You can use the [__declspec](../cpp/declspec.md) extended attribute [uuid](../cpp/uuid-cpp.md) to assign a globally unique identifier (GUID) to a COM object. The keyword [__uuidof](../cpp/uuidof-operator.md) can be used to extract the GUID associated with a COM object. Another **__declspec** attribute, [property](../cpp/property-cpp.md), can be used to specify the `get` and `set` methods for a data member of a COM object.  
   
- A set of COM support global functions and classes is provided to support the **VARIANT** and `BSTR` types, implement smart pointers, and encapsulate the error object thrown by `_com_raise_error`:  
+ A set of COM support global functions and classes is provided to support the `VARIANT` and `BSTR` types, implement smart pointers, and encapsulate the error object thrown by `_com_raise_error`:  
   
 -   [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)  
   
@@ -38,6 +33,6 @@ ms.workload: ["cplusplus"]
   
 **END Microsoft Specific**  
   
-## See Also  
+## See also  
  [Compiler COM Support Classes](../cpp/compiler-com-support-classes.md)   
  [Compiler COM Global Functions](../cpp/compiler-com-global-functions.md)

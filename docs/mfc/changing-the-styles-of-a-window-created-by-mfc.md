@@ -2,18 +2,13 @@
 title: "Changing the Styles of a Window Created by MFC | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-mfc"]
+ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["window styles [MFC]", "WS_OVERLAPPEDWINDOW macro [MFC]", "single document interface (SDI), changing window attributes", "MDI [MFC], window styles", "windows [MFC], MFC", "child windows [MFC], styles", "MFC, windows", "CFrameWnd class [MFC], window styles", "CREATESTRUCT macro [MFC]", "CMDIChildWnd class [MFC], changing window styles", "multidocument interface style", "PreCreateWindow method [MFC], window styles", "single document interface (SDI), style", "default window style", "defaults [MFC], window style", "PreCreateWindow method [MFC], changing window styles", "CMainFrame class [MFC]", "styles [MFC], windows"]
 ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
-caps.latest.revision: 11
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # Changing the Styles of a Window Created by MFC
@@ -61,7 +56,7 @@ In its version of the `WinMain` function, MFC registers several standard window 
   
 -   [Frame-window styles](../mfc/frame-window-styles-cpp.md)  
   
--   [Window styles](http://msdn.microsoft.com/library/windows/desktop/ms632600)  
+-   [Window styles](https://msdn.microsoft.com/library/windows/desktop/ms632600)  
   
 ## See Also  
  [Frame-Window Styles](../mfc/frame-window-styles-cpp.md)

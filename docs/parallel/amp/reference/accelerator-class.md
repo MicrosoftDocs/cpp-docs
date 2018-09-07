@@ -2,19 +2,14 @@
 title: "accelerator Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: ["cpp-windows"]
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.technology: ["cpp-amp"]
+ms.topic: "reference"
 f1_keywords: ["AMPRT/accelerator", "AMPRT/Concurrency::accelerator::accelerator", "AMPRT/Concurrency::accelerator::create_view", "AMPRT/Concurrency::accelerator::get_all", "AMPRT/Concurrency::accelerator::get_auto_selection_view", "AMPRT/Concurrency::accelerator::get_dedicated_memory", "AMPRT/Concurrency::accelerator::get_default_cpu_access_type", "AMPRT/Concurrency::accelerator::get_default_view", "AMPRT/Concurrency::accelerator::get_description", "AMPRT/Concurrency::accelerator::get_device_path", "AMPRT/Concurrency::accelerator::get_has_display", "AMPRT/Concurrency::accelerator::get_is_debug", "AMPRT/Concurrency::accelerator::get_is_emulated", "AMPRT/Concurrency::accelerator::get_supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::get_supports_double_precision", "AMPRT/Concurrency::accelerator::get_supports_limited_double_precision", "AMPRT/Concurrency::accelerator::get_version", "AMPRT/Concurrency::accelerator::set_default", "AMPRT/Concurrency::accelerator::set_default_cpu_access_type", "AMPRT/Concurrency::accelerator::cpu_accelerator", "AMPRT/Concurrency::accelerator::dedicated_memory", "AMPRT/Concurrency::accelerator::default_accelerator", "AMPRT/Concurrency::accelerator::default_cpu_access_type", "AMPRT/Concurrency::accelerator::default_view", "AMPRT/Concurrency::accelerator::description", "AMPRT/Concurrency::accelerator::device_path", "AMPRT/Concurrency::accelerator::direct3d_ref", "AMPRT/Concurrency::accelerator::direct3d_warp", "AMPRT/Concurrency::accelerator::has_display", "AMPRT/Concurrency::accelerator::is_debug", "AMPRT/Concurrency::accelerator::is_emulated", "AMPRT/Concurrency::accelerator::supports_cpu_shared_memory", "AMPRT/Concurrency::accelerator::supports_double_precision", "AMPRT/Concurrency::accelerator::supports_limited_double_precision", "AMPRT/Concurrency::accelerator::version"]
 dev_langs: ["C++"]
 helpviewer_keywords: ["accelerator class"]
 ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
-caps.latest.revision: 29
 author: "mikeblome"
 ms.author: "mblome"
-manager: "ghogen"
 ms.workload: ["cplusplus"]
 ---
 # accelerator Class
@@ -171,7 +166,7 @@ static const wchar_t default_accelerator[];
   
 ##  <a name="default_cpu_access_type"></a> default_cpu_access_type 
 
- The default cpu [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this this `accelerator`.  
+ The default cpu [access_type](concurrency-namespace-enums-amp.md#access_type)for arrays and implicit memory allocations made on this `accelerator`.  
   
 ```  
 __declspec(property(get= get_default_cpu_access_type)) access_type default_cpu_access_type;  
@@ -485,7 +480,7 @@ static inline bool set_default(std::wstring _Path);
   
 ##  <a name="set_default_cpu_access_type"></a> set_default_cpu_access_type 
 
- Set the default cpu access_type for arrays created on this accelerator or for implicit memory allocations as part of array_views accessed on this this accelerator. This method only succeeds if the default_cpu_access_type for the accelerator has not already been overriden by a previous call to this method and the runtime selected default_cpu_access_type for this accelerator has not yet been used for allocating an array or for an implicit memory allocation backing an array_view accessed on this accelerator.  
+ Set the default cpu access_type for arrays created on this accelerator or for implicit memory allocations as part of array_views accessed on this accelerator. This method only succeeds if the default_cpu_access_type for the accelerator has not already been overriden by a previous call to this method and the runtime selected default_cpu_access_type for this accelerator has not yet been used for allocating an array or for an implicit memory allocation backing an array_view accessed on this accelerator.  
   
 ```  
 bool set_default_cpu_access_type(access_type _Default_cpu_access_type);
