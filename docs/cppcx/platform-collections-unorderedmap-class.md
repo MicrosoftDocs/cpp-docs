@@ -27,13 +27,13 @@ ref class Map sealed;
 
 #### Parameters
 
-*K*  
+*K*<br/>
 The type of the key in the key-value pair.
 
-*V*  
+*V*<br/>
 The type of the value in the key-value pair.
 
-*C*  
+*C*<br/>
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default,  [std::equal_to\<K>](../standard-library/equal-to-struct.md).
 
 ### Remarks
@@ -110,7 +110,7 @@ Returns an iterator that specifies the first [Windows::Foundation::Collections::
 
 ```cpp
 virtual Windows::Foundation::Collections::IIterator<
-   Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ 
+   Windows::Foundation::Collections::IKeyValuePair<K, V>^>^
    First();
 ```
 
@@ -150,7 +150,7 @@ bool HasKey(
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key used to locate the UnorderedMap element. The type of *key* is typename *K*.
 
 ### Return Value
@@ -172,10 +172,10 @@ virtual bool Insert(
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key portion of the key-value pair. The type of *key* is typename *K*.
 
-*value*  
+*value*<br/>
 The value portion of the key-value pair. The type of *value* is typename *V*.
 
 ### Return Value
@@ -196,7 +196,7 @@ V Lookup(
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key used to locate an element in the UnorderedMap. The type of *key* is typename *K*.
 
 ### Return Value
@@ -234,7 +234,7 @@ virtual void Remove(
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key portion of the key-value pair. The type of *key* is typename *K*.
 
 ## <a name="size"></a>  UnorderedMap::Size Method
@@ -361,9 +361,9 @@ The input iterator of the first element after a range of elements used to initia
 
 ## See also
 
-[Platform Namespace](platform-namespace-c-cx.md)  
-[Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)  
-[Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md)  
-[Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md)  
-[Collections](../cppcx/collections-c-cx.md)  
-[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[Platform Namespace](platform-namespace-c-cx.md)<br/>
+[Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)<br/>
+[Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md)<br/>
+[Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md)<br/>
+[Collections](../cppcx/collections-c-cx.md)<br/>
+[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
