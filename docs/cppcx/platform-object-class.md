@@ -59,7 +59,6 @@ Determines whether the specified object is equal to the current object.
 ### Syntax
 
 ```cpp
-
 bool Equals(
     Object^ obj
 )

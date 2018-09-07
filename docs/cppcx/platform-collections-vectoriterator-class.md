@@ -156,7 +156,6 @@ Indicates whether the current VectorIterator is greater than a specified VectorI
 ### Syntax
 
 ```cpp
-
 bool operator>(const VectorIterator& other) const
 ```
 
@@ -176,7 +175,6 @@ Indicates whether the current VectorIterator is greater than or equal to the spe
 ### Syntax
 
 ```cpp
-
 bool operator>=(const VectorIterator& other) const
 ```
 
@@ -236,7 +234,6 @@ Indicates whether the current VectorIterator is less than a specified VectorIter
 ### Syntax
 
 ```cpp
-
 bool operator<(const VectorIterator& other) const
 ```
 
@@ -256,7 +253,6 @@ Indicates whether the current VectorIterator is less than or equal to a specifie
 ### Syntax
 
 ```cpp
-
 bool operator<=(const VectorIterator& other) const
 ```
 
@@ -327,7 +323,6 @@ template <typename T>
 inline VectorIterator<T> operator+(
   ptrdiff_t n,
   const VectorIterator<T>& i);
-
 ```
 
 ### Parameters

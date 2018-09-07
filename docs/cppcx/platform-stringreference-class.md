@@ -79,7 +79,6 @@ Returns the contents of the string as an `__abi_HSTRING`.
 
 ```cpp
 __abi_HSTRING GetHSTRING() const;
-
 ```
 
 ### Return Value

@@ -19,7 +19,6 @@ This namespace contains attributes that modify the declarations of types.
 ## Syntax
 
 ```cpp
-
 namespace Platform {
    namespace Metadata {
 }}

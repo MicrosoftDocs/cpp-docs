@@ -19,7 +19,6 @@ Indicates the preferred function to invoke among several possible overloaded fun
 ## Syntax
 
 ```cpp
-
 public ref class DefaultMember abstract : Attribute
 ```
 

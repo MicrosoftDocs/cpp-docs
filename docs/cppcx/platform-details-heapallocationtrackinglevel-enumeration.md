@@ -19,7 +19,6 @@ This enumeration is intended for internal use only, and is not intended to be us
 ## Syntax
 
 ```cpp
-
 enumm class HeapAllocationTrackingLevel;
 ```
 

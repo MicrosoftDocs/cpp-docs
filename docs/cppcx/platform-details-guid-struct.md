@@ -19,7 +19,6 @@ This struct is intended for internal use only, and is not intended to be used fo
 ## Syntax
 
 ```cpp
-
 ref struct __GUID;
 ```
 

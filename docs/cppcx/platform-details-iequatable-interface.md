@@ -19,7 +19,6 @@ This interface is intended for internal use only, and is not intended to be used
 ## Syntax
 
 ```cpp
-
 interface class IEquatable;
 ```
 

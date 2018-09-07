@@ -172,7 +172,6 @@ Initializes a new instance of the UnorderedMapView class.
 ### Syntax
 
 ```cpp
-
 UnorderedMapView();
 explicit UnorderedMapView(size_t n);
 UnorderedMapView(size_t n, const H& h);

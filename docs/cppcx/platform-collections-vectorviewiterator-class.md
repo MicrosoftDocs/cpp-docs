@@ -326,7 +326,6 @@ template <typename T>
 inline VectorViewIterator<T> operator+
    (ptrdiff_t n,
    const VectorViewIterator<T>& i);
-
 ```
 
 ### Parameters

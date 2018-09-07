@@ -19,7 +19,6 @@ Indicates that an enumeration can be treated as a bit field; that is, a set of f
 ## Syntax
 
 ```cpp
-
 public ref class Flags abstract : Attribute
 ```
 

@@ -85,7 +85,6 @@ ref class MyOptions
         Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions^> m_myOptions;
 
     };
-
 ```
 
 Notice that `Agile` cannot be passed as a return value or parameter in a ref class. The `Agile<T>::Get()` method returns a handle-to-object (^) that you can pass across the application binary interface (ABI) in a public method or property.
@@ -109,7 +108,6 @@ using namespace Platform;
 public ref class MySTAClass
 {
 };
-
 ```
 
 An unsealed class must have marshaling and threading attribute settings so that the compiler can verify that derived classes have the same value for these attributes. If the class doesn't have the settings set explicitly, the compiler generates an error and fails to compile. Any class that's derived from an unsealedclass generates a compiler error in either of these cases:

@@ -85,9 +85,7 @@ Assigns the specified object to the current [Platform::ArrayReference](../cppcx/
 ### Syntax
 
 ```cpp
-
 ArrayReference& operator=(ArrayReference&& otherArg);
-
 ```
 
 ### Parameters
@@ -110,9 +108,7 @@ Converts the current [Platform::ArrayReference](../cppcx/platform-arrayreference
 ### Syntax
 
 ```cpp
-
 Array<TArg>^ operator ();
-
 ```
 
 ### Return Value

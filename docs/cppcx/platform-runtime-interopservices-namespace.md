@@ -19,7 +19,6 @@ This namespace is intended for internal use only, and is not intended to be used
 ## Syntax
 
 ```cpp
-
 namespace Platform {
    namespace InteropServices {
 }}

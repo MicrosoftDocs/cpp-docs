@@ -18,7 +18,6 @@ This namespace supports the `Platform` infrastructure and is not intended to be 
 ## Syntax
 
 ```cpp
-
 namespace Platform {  namespace Collections {    namespace Details {}}}
 ```
 

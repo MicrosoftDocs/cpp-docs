@@ -44,7 +44,6 @@ The following examples show how to declare and initialize value structs.
     TestStruct ts3;
     ts3.i = 108;
     ts3.str = "Another way to init a value struct.";
-
 ```
 
 When a variable of a value type is assigned to another variable, the value is copied, so that each of the two variables has its own copy of the data. A *value struct* is a fixed-size structure that contains only public data fields and is declared by using the `value struct` keyword.
@@ -126,7 +125,6 @@ bool MainPage::IsCurrentlyEnrolled(Student s)
     }
     return false;
 }
-
 ```
 
 A value struct itself may be made nullable in the same way, as shown here:

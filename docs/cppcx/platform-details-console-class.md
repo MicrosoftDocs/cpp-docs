@@ -19,7 +19,6 @@ This class is intended for internal use only, and is not intended to be used for
 ## Syntax
 
 ```cpp
-
 ref class Console sealed;
 ```
 

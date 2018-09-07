@@ -42,7 +42,6 @@ TypeName tn = TypeName(MainPage::typeid);
 
 // Convert back from TypeName to Type
 Type^ tx2 = (Type^)(tn);
-
 ```
 
 ## .NET Framework Equivalent

@@ -35,7 +35,6 @@ template <typename T>
     ::Platform::Collections::InputIterator<T>
     begin(
           IIterable<T>^ i         );
-
 ```
 
 #### Parameters

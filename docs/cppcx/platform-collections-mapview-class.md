@@ -177,7 +177,6 @@ Returns the number of elements in the current MapView object.
 ### Syntax
 
 ```cpp
-
 virtual property unsigned int Size;
 ```
 

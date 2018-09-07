@@ -35,7 +35,6 @@ template <typename T>
     end(
         IIterable<T>^ i
        );
-
 ```
 
 #### Parameters
