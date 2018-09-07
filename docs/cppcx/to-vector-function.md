@@ -13,31 +13,35 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # to_vector Function
-Returns a `std::vector` whose value is the same as the collection underlying the specified IVector or IVectorView parameter.  
-  
-## Syntax  
-  
-```  
-template <typename T>  
-inline ::std::vector<T> to_vector(IVector<T>^ v); 
- 
-template <typename T>  
-inline ::std::vector<T> to_vector(IVectorView<T>^ v);  
-```  
-  
-#### Parameters  
+
+Returns a `std::vector` whose value is the same as the collection underlying the specified IVector or IVectorView parameter.
+
+## Syntax
+
+```
+template <typename T>
+inline ::std::vector<T> to_vector(IVector<T>^ v);
+
+template <typename T>
+inline ::std::vector<T> to_vector(IVectorView<T>^ v);
+```
+
+#### Parameters
+
 *T*<br/>
-The template type parameter.  
-  
+The template type parameter.
+
 *v*<br/>
-An IVector or IVectorView interface that provides access to an underlying Vector or VectorView object.  
-  
-### Return Value  
-  
-### Requirements  
- **Header:** collection.h  
-  
- **Namespace:** Windows::Foundation::Collections  
-  
-## See Also  
- [Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)
+An IVector or IVectorView interface that provides access to an underlying Vector or VectorView object.
+
+### Return Value
+
+### Requirements
+
+**Header:** collection.h
+
+**Namespace:** Windows::Foundation::Collections
+
+## See Also
+
+[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)

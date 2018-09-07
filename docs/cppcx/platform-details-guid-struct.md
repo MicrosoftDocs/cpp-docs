@@ -13,25 +13,30 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details::__GUID Struct
-This struct is intended for internal use only, and is not intended to be used for development.  
-  
-## Syntax  
-  
-```cpp  
-  
-ref struct __GUID;  
-```  
-  
-### Remarks  
- This struct is provided solely for completeness because it can be inspected with browsers.  
-  
-## Inheritance Hierarchy  
- `Platform`  
-  
-### Requirements  
- **Metadata:** platform.winmd  
-  
- **Namespace:** Platform::Details  
-  
-## See Also  
- [Platform Namespace](platform-namespace-c-cx.md)
+
+This struct is intended for internal use only, and is not intended to be used for development.
+
+## Syntax
+
+```cpp
+
+ref struct __GUID;
+```
+
+### Remarks
+
+This struct is provided solely for completeness because it can be inspected with browsers.
+
+## Inheritance Hierarchy
+
+`Platform`
+
+### Requirements
+
+**Metadata:** platform.winmd
+
+**Namespace:** Platform::Details
+
+## See Also
+
+[Platform Namespace](platform-namespace-c-cx.md)

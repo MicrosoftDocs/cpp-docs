@@ -377,4 +377,4 @@ The last element in a sequence of objects that are used to initialize the curren
 ## See Also
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
-[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

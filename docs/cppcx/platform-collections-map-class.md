@@ -37,7 +37,7 @@ The type of the value in the key-value pair.
 *C*<br/>
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default, [std::less\<K>](../standard-library/less-struct.md).
 
-*__is_valid_winrt_type()*  
+*__is_valid_winrt_type()*
 A compiler generated function that validates the type of *K* and *V* and provides a friendly error message if the type cannot be stored in the Map.
 
 ### Remarks
@@ -287,4 +287,4 @@ The number of elements in the Map.
 ## See Also
 
 [Platform Namespace](platform-namespace-c-cx.md)<br/>
-[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

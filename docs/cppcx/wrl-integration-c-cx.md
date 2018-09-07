@@ -12,7 +12,7 @@ ms.workload: ["cplusplus"]
 # WRL integration (C++/CX)
 
 You freely can mix WRL code with Windows Runtime C++ Template Library (WRL) code. In the same translation unit, you can use objects declared with WRL handle-to-object (`^`) notation and WRL smart pointer (`ComPtr<T>`) notation. However, you must manually handle return values, and WRL HRESULT error codes and WRL exceptions.
-  
+
 ## WRL development
 
 For more information about authoring and consuming WRL components, see [Windows Runtime C++ Template Library (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
@@ -113,4 +113,4 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
 
 ## See also
 
-[Interoperating with Other Languages](interoperating-with-other-languages-c-cx.md)  
+[Interoperating with Other Languages](interoperating-with-other-languages-c-cx.md)

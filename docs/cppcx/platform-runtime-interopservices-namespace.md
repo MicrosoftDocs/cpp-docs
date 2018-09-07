@@ -13,36 +13,41 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Runtime::InteropServices Namespace
-This namespace is intended for internal use only, and is not intended to be used for development.  
-  
-## Syntax  
-  
-```cpp  
-  
-namespace Platform {  
-   namespace InteropServices {  
-}}  
-```  
-  
-### Members  
- Although this namespace is intended for internal use, browsers can display the following members of this namespace.  
-  
-|Name|Remark|  
-|----------|------------|  
-|ComInterfaceType|enumeration|  
-|InterfaceTypeAttribute||  
-|LayoutKind|enumeration|  
-|MarshalAsAttribute||  
-|StuctLayoutAttribute||  
-|UnmanagedType|enumeration|  
-  
-## Inheritance Hierarchy  
- `Platform`  
-  
-### Requirements  
- **Metadata:** platform.winmd  
-  
- **Namespace:** Platform::InteropServices  
-  
-## See Also  
- [Platform Namespace](platform-namespace-c-cx.md)
+
+This namespace is intended for internal use only, and is not intended to be used for development.
+
+## Syntax
+
+```cpp
+
+namespace Platform {
+   namespace InteropServices {
+}}
+```
+
+### Members
+
+Although this namespace is intended for internal use, browsers can display the following members of this namespace.
+
+|Name|Remark|
+|----------|------------|
+|ComInterfaceType|enumeration|
+|InterfaceTypeAttribute||
+|LayoutKind|enumeration|
+|MarshalAsAttribute||
+|StuctLayoutAttribute||
+|UnmanagedType|enumeration|
+
+## Inheritance Hierarchy
+
+`Platform`
+
+### Requirements
+
+**Metadata:** platform.winmd
+
+**Namespace:** Platform::InteropServices
+
+## See Also
+
+[Platform Namespace](platform-namespace-c-cx.md)

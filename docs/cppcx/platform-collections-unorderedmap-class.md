@@ -110,7 +110,7 @@ Returns an iterator that specifies the first [Windows::Foundation::Collections::
 
 ```cpp
 virtual Windows::Foundation::Collections::IIterator<
-   Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ 
+   Windows::Foundation::Collections::IKeyValuePair<K, V>^>^
    First();
 ```
 
@@ -366,4 +366,4 @@ The input iterator of the first element after a range of elements used to initia
 [Platform::Collections::Map Class](../cppcx/platform-collections-map-class.md)<br/>
 [Platform::Collections::UnorderedMapView Class](../cppcx/platform-collections-unorderedmapview-class.md)<br/>
 [Collections](../cppcx/collections-c-cx.md)<br/>
-[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

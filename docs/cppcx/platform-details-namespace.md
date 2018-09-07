@@ -13,42 +13,47 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Details Namespace
-This namespace is intended for internal use only, and is not intended to be used for development.  
-  
-## Syntax  
-  
-```cpp  
-  
-namespace Platform {  
-   namespace Details {  
-}}  
-```  
-  
-### Members  
- Although this namespace is intended for internal use, browsers can display the following members of this namespace.  
-  
-|Name|Remark|  
-|----------|------------|  
-|Console|Class. Displays output in unit tests.|  
-|_GUID|Struct|  
-|Heap|Class|  
-|HeapAllocationTrackingLevel|Enumeration|  
-|HeapEntryHandler|Delegate|  
-|IActivationFactory|Interface|  
-|IAgileObject|Interface|  
-|IClassFactory|Interface|  
-|IEquatable|Interface|  
-|IPrintable|Interface|  
-|IWeakReference|Interface|  
-|IWeakReferenceSource|Interface|  
-  
-## Inheritance Hierarchy  
- `Platform`  
-  
-### Requirements  
- **Metadata:** platform.winmd  
-  
- **Namespace:** Platform::Details  
-  
-## See Also  
- [Platform Namespace](platform-namespace-c-cx.md)
+
+This namespace is intended for internal use only, and is not intended to be used for development.
+
+## Syntax
+
+```cpp
+
+namespace Platform {
+   namespace Details {
+}}
+```
+
+### Members
+
+Although this namespace is intended for internal use, browsers can display the following members of this namespace.
+
+|Name|Remark|
+|----------|------------|
+|Console|Class. Displays output in unit tests.|
+|_GUID|Struct|
+|Heap|Class|
+|HeapAllocationTrackingLevel|Enumeration|
+|HeapEntryHandler|Delegate|
+|IActivationFactory|Interface|
+|IAgileObject|Interface|
+|IClassFactory|Interface|
+|IEquatable|Interface|
+|IPrintable|Interface|
+|IWeakReference|Interface|
+|IWeakReferenceSource|Interface|
+
+## Inheritance Hierarchy
+
+`Platform`
+
+### Requirements
+
+**Metadata:** platform.winmd
+
+**Namespace:** Platform::Details
+
+## See Also
+
+[Platform Namespace](platform-namespace-c-cx.md)

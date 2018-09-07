@@ -84,7 +84,7 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 
     if (!err->Handled) //Propagate has not been called on it yet.
 {
-     try
+    try
     {
         err->Propagate();
     }
@@ -94,7 +94,6 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
         // TODO: Log error and either take action to recover
         // or else re-throw exception to continue fail-fast
     }
-
 }
 ```
 
@@ -105,4 +104,4 @@ C++/CX does not use the `finally` clause.
 ## See also
 
 [Visual C++ Language Reference](visual-c-language-reference-c-cx.md)<br/>
-[Namespaces Reference](namespaces-reference-c-cx.md)  
+[Namespaces Reference](namespaces-reference-c-cx.md)
