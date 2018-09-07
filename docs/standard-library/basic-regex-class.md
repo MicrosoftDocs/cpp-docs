@@ -19,21 +19,8 @@ Wraps a regular expression.
 ## Syntax
 
 ```cpp
-class basic_regex {
-   public:
-   static const flag_type icase = regex_constants::icase;
-   static const flag_type nosubs = regex_constants::nosubs;
-   static const flag_type optimize = regex_constants::optimize;
-   static const flag_type collate = regex_constants::collate;
-   static const flag_type ECMAScript = regex_constants::ECMAScript;
-   static const flag_type basic = regex_constants::basic;
-   static const flag_type extended = regex_constants::extended;
-   static const flag_type awk = regex_constants::awk;
-   static const flag_type grep = regex_constants::grep;
-   static const flag_type egrep = regex_constants::egrep;
-   private:
-   RXtraits traits;    // exposition only
-   };
+template <class Elem, class RXtraits>
+class basic_regex
 ```
 
 ### Parameters
@@ -63,6 +50,22 @@ Some functions take an operand sequence that defines a regular expression. You c
 `right` -- the `basic_regex` object `right`
 
 These member functions also take an argument `flags` that specifies various options for the interpretation of the regular expression in addition to those described by the *RXtraits* type.
+
+### Members
+
+|Member|Default Value|
+|-|-|
+|public static const flag_type icase|regex_constants::icase|
+|public static const flag_type nosubs|regex_constants::nosubs|
+|public static const flag_type optimize|regex_constants::optimize|
+|public static const flag_type collate|regex_constants::collate|
+|public static const flag_type ECMAScript|regex_constants::ECMAScript|
+|public static const flag_type basic|regex_constants::basic|
+|public static const flag_type extended|regex_constants::extended|
+|public static const flag_type awk|regex_constants::awk|
+|public static const flag_type grep|regex_constants::grep|
+|public static const flag_type egrep|regex_constants::egrep|
+|private RXtraits traits||
 
 ### Constructors
 
