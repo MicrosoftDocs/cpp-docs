@@ -244,7 +244,7 @@ The articles in this section of the documentation explain a subset of the error 
 |[Compiler Error C3721](compiler-error-c3721.md)|'*signature*': incompatible signature for event|
 |[Compiler Error C3722](compiler-error-c3722.md)|a generic event is not allowed|
 |[Compiler Error C3723](compiler-error-c3723.md)|'*function*': could not resolve event|
-|[Compiler Error C3724](compiler-error-c3724.md)|must #include <windows.h> to use multi-threading with events|
+|[Compiler Error C3724](compiler-error-c3724.md)|must #include \<windows.h> to use multi-threading with events|
 |Compiler Error C3725|Obsolete.|
 |Compiler Error C3726|Obsolete.|
 |[Compiler Error C3727](compiler-error-c3727.md)|'*event*': a managed event must be a member function or a data member that is a pointer to a delegate|

@@ -93,23 +93,23 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
    After you select a data source, this box is populated with a default class name based on the table or stored procedure that you selected (see **Select a data source** below). You can edit the class name.
 
-- **.h file**  
+- **.h file**
 
    After you select a data source, this box is populated with a default header class name based on the table or stored procedure that you selected (see **Select a data source** below). You can edit the header file's name or select an existing header file.
 
-- **Attributed**  
+- **Attributed**
 
    This option specifies whether the wizard will create consumer classes using attributes or template declarations. When you select this option, the wizard uses attributes instead of template declarations (this is the default option). When you deselect this option, the wizard uses template declarations instead of attributes.
 
    - If you select a consumer **Type** of **Table**, the wizard uses the `db_source` and `db_table` attributes to create the table and table accessor class declarations, and uses `db_column` to create the column map. For example, it creates this map:
 
         ```cpp
-        // Inject table class and table accessor class declarations  
-        [db_source("<initialization_string>"), db_table("dbo.Orders")]  
-        ... 
-        // Column map  
-        [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;  
-        [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];  
+        // Inject table class and table accessor class declarations
+        [db_source("<initialization_string>"), db_table("dbo.Orders")]
+        ...
+        // Column map
+        [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;
+        [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];
         ...
         ```
 
@@ -120,20 +120,20 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
             class COrdersAccessor; // Table class
             class COrders : public CTable<CAccessor<COrdersAccessor>>;
         // ...
-        // Column map  
+        // Column map
             BEGIN_COLUMN_MAP(COrderDetailsAccessor)
                 COLUMN_ENTRY_LENGTH_STATUS(1, m_OrderID, m_dwOrderIDLength, m_dwOrderIDStatus)
                 COLUMN_ENTRY_LENGTH_STATUS(2, m_CustomerID, m_dwCustomerIDLength, m_dwCustomerIDStatus)
-                // ...  
+                // ...
             END_COLUMN_MAP()
         ```
 
    - If you select a consumer **Type** of **Command**, the wizard uses the `db_source` and `db_command` attributes, and uses `db_column` to create the column map. For example, it creates this map:
 
         ```cpp
-        [db_source("<initialization_string>"), db_command("SQL_command")]  
-        ... 
-        // Column map using db_column is the same as for consumer type of 'table'  
+        [db_source("<initialization_string>"), db_command("SQL_command")]
+        ...
+        // Column map using db_column is the same as for consumer type of 'table'
         ```
 
       instead of using the command and command accessor class declarations in the command class' .h file, for example:
@@ -180,6 +180,6 @@ This wizard sets up an OLE DB consumer class with the data bindings necessary to
 
 ## See also
 
-[ATL OLE DB Consumer](../../atl/reference/adding-an-atl-ole-db-consumer.md)  
-[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)  
+[ATL OLE DB Consumer](../../atl/reference/adding-an-atl-ole-db-consumer.md)
+[Adding Functionality with Code Wizards](../../ide/adding-functionality-with-code-wizards-cpp.md)
 [Connection Strings and Data Links (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))

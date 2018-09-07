@@ -18,7 +18,7 @@ Generates an error if the text items are different.
 
 ## Syntax
 
-> .ERRDIF[[I]] <textitem1>, <textitem2> [[, message]]
+> .ERRDIF[[I]] *textitem1*, *textitem2* [[, *message*]]
 
 ## Remarks
 

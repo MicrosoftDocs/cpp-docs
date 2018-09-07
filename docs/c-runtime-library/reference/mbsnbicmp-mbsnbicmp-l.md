@@ -75,7 +75,7 @@ If either *string1* or *string2* is a null pointer, **_mbsnbicmp** invokes the i
 
 |Routine|Required header|
 |-------------|---------------------|
-|**_mbsnbicmp**|<mbstring.h>|
+|**_mbsnbicmp**|\<mbstring.h>|
 
 For more compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).
 

@@ -42,7 +42,7 @@ ref class ptr;
 #include <msxml2.h>  
 #include <msclr\com\ptr.h>  
   
-#import <msxml3.dll> raw_interfaces_only  
+#import <msxml3.dll> // raw_interfaces_only  
   
 using namespace System;  
 using namespace System::Runtime::InteropServices;  
