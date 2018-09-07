@@ -50,6 +50,7 @@ The articles in this section of the documentation explain a subset of the warnin
 |Compiler warning (level 4) C4840|non-portable use of class '*type*' as an argument to a variadic function|
 |Compiler warning (level 4) C4841|non-standard extension used: compound member designator used in offsetof|
 |Compiler warning (level 4) C4842|the result of 'offsetof' applied to a type using multiple inheritance is not guaranteed to be consistent between compiler releases|
+|Compiler warning C4866|(c4866.md) compiler may not enforce left-to-right evaluation order for call to _operator_name_|
 |[Compiler Warning (Error) C4867](compiler-warning-c4867.md)|'function': function call missing argument list; use 'call' to create a pointer to member|
 |[Compiler Warning (level 4) C4868](compiler-warning-c4868.md)|'_file_(*line_number*)' compiler may not enforce left-to-right evaluation order in braced initialization list|
 |Compiler warning (level 2) C4872|floating point division by zero detected when compiling the call graph for the concurrency::parallel_for_each at: '*location*'|
