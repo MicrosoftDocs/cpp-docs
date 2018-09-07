@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["cli::array", "details::array", "lang::array"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["array keyword [C++]", "declaring arrays, about declaring arrays", "arrays [C++], multidimensional", "multidimensional arrays", "arrays [C++]"]
+helpviewer_keywords: ["array keyword [C++]", "arrays [C++], multidimensional", "multidimensional arrays", "arrays [C++]"]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
 author: "mikeblome"
 ms.author: "mblome"

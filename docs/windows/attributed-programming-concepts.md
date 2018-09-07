@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["attributed programming [C++]", "attributes [C++]", "programming [C++], attributed programming"]
+helpviewer_keywords: ["attributed programming [C++]", "attributes [C++/CLI]", "programming [C++], attributed programming"]
 ms.assetid: 563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e
 author: "mikeblome"
 ms.author: "mblome"

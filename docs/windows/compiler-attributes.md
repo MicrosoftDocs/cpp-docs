@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["cl.exe compiler, attributes", "attributes [C++], compiler"]
+helpviewer_keywords: ["cl.exe compiler, attributes", "attributes [C++/CLI], compiler"]
 ms.assetid: 53cd9bee-1521-48ec-b171-80feac2096cc
 author: "mikeblome"
 ms.author: "mblome"

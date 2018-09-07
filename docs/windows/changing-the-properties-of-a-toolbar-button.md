@@ -1,21 +1,21 @@
 ---
-title: "Changing the Properties of a Toolbar Button | Microsoft Docs"
+title: "Changing the Properties of a Toolbar Button (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["toolbar controls [MFC], command ID", "toolbar buttons (in Toolbar editor), setting properties", "Toolbar editor, toolbar button properties", "command IDs, toolbar buttons"]
+helpviewer_keywords: ["toolbar controls [MFC], command ID", "toolbar buttons [C++], setting properties", "Toolbar editor [C++], toolbar button properties", "command IDs, toolbar buttons"]
 ms.assetid: b16a0635-e703-4156-acea-a54df279295a
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Changing the Properties of a Toolbar Button
+# Changing the Properties of a Toolbar Button (C++)
 
 ### To change the properties of a toolbar button
 
-1. Select the toolbar button.
+1. In a C++ project, select the toolbar button.
 
 2. Type the new ID in the **ID** property in the [Properties Window](/visualstudio/ide/reference/properties-window), or use the drop-down list to select a new **ID**.
 

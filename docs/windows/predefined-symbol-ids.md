@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["symbols, predefined IDs", "predefined symbol IDs"]
+helpviewer_keywords: ["symbols [C++], predefined IDs", "predefined symbol IDs"]
 ms.assetid: 91a5d610-1a04-47e8-b8a4-63ad650a90df
 author: "mikeblome"
 ms.author: "mblome"

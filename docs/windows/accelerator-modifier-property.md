@@ -1,5 +1,5 @@
 ---
-title: "Accelerator Modifier Property | Microsoft Docs"
+title: "Accelerator Modifier Property (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Accelerator Modifier Property
+# Accelerator Modifier Property (C++)
 
 The following are legal entries for the Modifier property in the accelerator table.
 
