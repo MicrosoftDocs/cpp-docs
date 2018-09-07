@@ -20,11 +20,7 @@ Reports a bad basic_regex object.
 
 ```cpp
 class regex_error
-: public std::runtime_error {
-public:
-    explicit regex_error(regex_constants::error_code error);
-    regex_constants::error_code code() const;
-};
+: public std::runtime_error
 ```
 
 ## Remarks
