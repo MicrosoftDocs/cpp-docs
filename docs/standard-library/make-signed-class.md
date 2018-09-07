@@ -28,8 +28,8 @@ using make_signed_t = typename make_signed<T>::type;
 
 ### Parameters
 
-*T*
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 

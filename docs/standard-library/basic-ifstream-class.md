@@ -25,11 +25,11 @@ class basic_ifstream : public basic_istream<Elem, Tr>
 
 ### Parameters
 
-*Elem*
- The basic element of the file buffer.
+*Elem*<br/>
+The basic element of the file buffer.
 
-*Tr*
- The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
+*Tr*<br/>
+The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
 
@@ -122,14 +122,14 @@ basic_ifstream(basic_ifstream&& right);
 
 ### Parameters
 
-*_Filename*
- The name of the file to open.
+*_Filename*<br/>
+The name of the file to open.
 
-*_Mode*
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*
- The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot*<br/>
+The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
 
@@ -226,14 +226,14 @@ void open(
 
 ### Parameters
 
-*_Filename*
- The name of the file to open.
+*_Filename*<br/>
+The name of the file to open.
 
-*_Mode*
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*
- The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot*<br/>
+The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
 
@@ -253,8 +253,8 @@ basic_ifstream& operator=(basic_ifstream&& right);
 
 ### Parameters
 
-*right*
- An rvalue reference to a `basic_ifstream` object.
+*right*<br/>
+An rvalue reference to a `basic_ifstream` object.
 
 ### Return Value
 
@@ -290,8 +290,8 @@ void swap(basic_ifstream& right);
 
 ### Parameters
 
-*right*
- A reference to another stream buffer.
+*right*<br/>
+A reference to another stream buffer.
 
 ### Remarks
 

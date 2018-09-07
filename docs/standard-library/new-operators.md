@@ -31,8 +31,8 @@ void operator delete(void* ptr,
 
 ### Parameters
 
-*ptr*
- The pointer whose value is to be rendered invalid by the deletion.
+*ptr*<br/>
+The pointer whose value is to be rendered invalid by the deletion.
 
 ### Remarks
 
@@ -64,8 +64,8 @@ void operator delete[](void* ptr,
 
 ### Parameters
 
-*ptr*
- The pointer whose value is to be rendered invalid by the deletion.
+*ptr*<br/>
+The pointer whose value is to be rendered invalid by the deletion.
 
 ### Remarks
 
@@ -95,11 +95,11 @@ void* operator new(std::size_t count,
 
 ### Parameters
 
-*count*
- The number of bytes of storage to be allocated.
+*count*<br/>
+The number of bytes of storage to be allocated.
 
-*ptr*
- The pointer to be returned.
+*ptr*<br/>
+The pointer to be returned.
 
 ### Return Value
 
@@ -194,11 +194,11 @@ void* operator new[](std::size_t count,
 
 ### Parameters
 
-*count*
- The number of bytes of storage to be allocated for the array object.
+*count*<br/>
+The number of bytes of storage to be allocated for the array object.
 
-*ptr*
- The pointer to be returned.
+*ptr*<br/>
+The pointer to be returned.
 
 ### Return Value
 

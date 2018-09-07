@@ -28,11 +28,11 @@ using aligned_union_t = typename aligned_union<Len, Types...>::type;
 
 ### Parameters
 
-*Len*
- The alignment value for the largest type in the union.
+*Len*<br/>
+The alignment value for the largest type in the union.
 
-*Types*
- The distinct types in the underlying union.
+*Types*<br/>
+The distinct types in the underlying union.
 
 ## Remarks
 

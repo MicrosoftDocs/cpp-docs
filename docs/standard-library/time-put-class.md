@@ -27,10 +27,10 @@ class time_put : public locale::facet;
 ### Parameters
 
 *CharType*  
- The type used within a program to encode characters.
+The type used within a program to encode characters.
 
 *OutputIterator*  
- The type of iterator into which the time put functions write their output.
+The type of iterator into which the time put functions write their output.
 
 ## Remarks
 
@@ -90,19 +90,19 @@ virtual iter_type do_put(
 ### Parameters
 
 *next*  
- An output iterator where the sequence of characters representing time and date are to be inserted.
+An output iterator where the sequence of characters representing time and date are to be inserted.
 
 *_Iosbase*  
- Unused.
+Unused.
 
 *_Pt*  
- The time and date information being output.
+The time and date information being output.
 
 *_Fmt*  
- The format of the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
+The format of the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
 *_Mod*  
- A modifier for the format. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
+A modifier for the format. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
 ### Return Value
 
@@ -153,28 +153,28 @@ iter_type put(iter_type next,
 ### Parameters
 
 *next*  
- An output iterator where the sequence of characters representing time and date are to be inserted.
+An output iterator where the sequence of characters representing time and date are to be inserted.
 
 *_Iosbase*  
- Unused.
+Unused.
 
 *_Fill*  
- The character of type `CharType` used for spacing.
+The character of type `CharType` used for spacing.
 
 *_Pt*  
- The time and date information being output.
+The time and date information being output.
 
 *_Fmt*  
- The format of the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
+The format of the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
 *_Mod*  
- A modifier for the format. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
+A modifier for the format. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
 *first*  
- The beginning of the formatting string for the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
+The beginning of the formatting string for the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
 *last*  
- The end of the formatting string for the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
+The end of the formatting string for the output. See [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) for valid values.
 
 ### Return Value
 
@@ -238,8 +238,8 @@ explicit time_put(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*
- Integer value used to specify the type of memory management for the object.
+*_Refs*<br/>
+Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 

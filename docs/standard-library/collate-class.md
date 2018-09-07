@@ -25,8 +25,8 @@ class collate : public locale::facet;
 
 ### Parameters
 
-*CharType*
- The type used within a program to encode characters.
+*CharType*<br/>
+The type used within a program to encode characters.
 
 ## Remarks
 
@@ -85,17 +85,17 @@ public:
 
 protected:
     collate(
- const char* _Locname,
+const char* _Locname,
     size_t _Refs = 0);
 ```
 
 ### Parameters
 
-*_Refs*
- Integer value used to specify the type of memory management for the object.
+*_Refs*<br/>
+Integer value used to specify the type of memory management for the object.
 
-*_Locname*
- The name of the locale.
+*_Locname*<br/>
+The name of the locale.
 
 ### Remarks
 
@@ -122,17 +122,17 @@ int compare(const CharType* first1,
 
 ### Parameters
 
-*first1*
- Pointer to the first element in the first sequence to be compared.
+*first1*<br/>
+Pointer to the first element in the first sequence to be compared.
 
-*last1*
- Pointer to the last element in the first sequence to be compared.
+*last1*<br/>
+Pointer to the last element in the first sequence to be compared.
 
-*first2*
- Pointer to the first element in the second sequence to be compared.
+*first2*<br/>
+Pointer to the first element in the second sequence to be compared.
 
-*last2*
- Pointer to the last element in the second sequence to be compared.
+*last2*<br/>
+Pointer to the last element in the second sequence to be compared.
 
 ### Return Value
 
@@ -188,17 +188,17 @@ virtual int do_compare(const CharType* first1,
 
 ### Parameters
 
-*first1*
- Pointer to the first element in the first sequence to be compared.
+*first1*<br/>
+Pointer to the first element in the first sequence to be compared.
 
-*last1*
- Pointer to the last element in the first sequence to be compared.
+*last1*<br/>
+Pointer to the last element in the first sequence to be compared.
 
-*first2*
- Pointer to the first element in the second sequence to be compared.
+*first2*<br/>
+Pointer to the first element in the second sequence to be compared.
 
-*last2*
- Pointer to the last element in the second sequence to be compared.
+*last2*<br/>
+Pointer to the last element in the second sequence to be compared.
 
 ### Return Value
 
@@ -228,11 +228,11 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 ### Parameters
 
-*first*
- A pointer to the first character in the sequence whose has value is to be determined.
+*first*<br/>
+A pointer to the first character in the sequence whose has value is to be determined.
 
-*last*
- A pointer to the last character in the sequence whose has value is to be determined.
+*last*<br/>
+A pointer to the last character in the sequence whose has value is to be determined.
 
 ### Return Value
 
@@ -256,11 +256,11 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 ### Parameters
 
-*first*
- A pointer to the first character in the sequence to be converted.
+*first*<br/>
+A pointer to the first character in the sequence to be converted.
 
-*last*
- A pointer to the last character in the sequence to be converted.
+*last*<br/>
+A pointer to the last character in the sequence to be converted.
 
 ### Return Value
 
@@ -284,11 +284,11 @@ long hash(const CharType* first, const CharType* last) const;
 
 ### Parameters
 
-*first*
- A pointer to the first character in the sequence whose has value is to be determined.
+*first*<br/>
+A pointer to the first character in the sequence whose has value is to be determined.
 
-*last*
- A pointer to the last character in the sequence whose has value is to be determined.
+*last*<br/>
+A pointer to the last character in the sequence whose has value is to be determined.
 
 ### Return Value
 
@@ -354,11 +354,11 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 ### Parameters
 
-*first*
- A pointer to the first character in the sequence to be converted.
+*first*<br/>
+A pointer to the first character in the sequence to be converted.
 
-*last*
- A pointer to the last character in the sequence to be converted.
+*last*<br/>
+A pointer to the last character in the sequence to be converted.
 
 ### Return Value
 

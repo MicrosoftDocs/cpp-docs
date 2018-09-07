@@ -30,7 +30,7 @@ void _endthreadex(
 
 ### Parameters
 
-*retval*
+*retval*<br/>
 Thread exit code.
 
 ## Remarks

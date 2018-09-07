@@ -32,11 +32,11 @@ operator&(
 
 ### Parameters
 
-*left*
- The first of the two bitsets whose respective elements are to be combined with the bitwise `AND`.
+*left*<br/>
+The first of the two bitsets whose respective elements are to be combined with the bitwise `AND`.
 
-*right*
- The second of the two valarrays whose respective elements are to be combined with the bitwise `AND`.
+*right*<br/>
+The second of the two valarrays whose respective elements are to be combined with the bitwise `AND`.
 
 ### Return Value
 
@@ -84,8 +84,8 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### Parameters
 
-*right*
- An object of type **bitset\<N>** that is to be inserted into the output stream as a string.
+*right*<br/>
+An object of type **bitset\<N>** that is to be inserted into the output stream as a string.
 
 ### Return Value
 
@@ -144,11 +144,11 @@ _Istr,
 
 ### Parameters
 
-*_Istr*
- The string that is entered into the input stream to be inserted into the bitset.
+*_Istr*<br/>
+The string that is entered into the input stream to be inserted into the bitset.
 
-*right*
- The bitset that is receiving the bits from the input stream.
+*right*<br/>
+The bitset that is receiving the bits from the input stream.
 
 ### Return Value
 
@@ -229,11 +229,11 @@ operator^(
 
 ### Parameters
 
-*left*
- The first of the two bitsets whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.
+*left*<br/>
+The first of the two bitsets whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.
 
-*right*
- The second of the two valarrays whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.
+*right*<br/>
+The second of the two valarrays whose respective elements are to be combined with the bitwise `EXCLUSIVE-OR`.
 
 ### Return Value
 
@@ -281,11 +281,11 @@ operator|(
 
 ### Parameters
 
-*left*
- The first of the two bitsets whose respective elements are to be combined with the bitwise `OR`.
+*left*<br/>
+The first of the two bitsets whose respective elements are to be combined with the bitwise `OR`.
 
-*right*
- The second of the two valarrays whose respective elements are to be combined with the bitwise `OR`.
+*right*<br/>
+The second of the two valarrays whose respective elements are to be combined with the bitwise `OR`.
 
 ### Return Value
 

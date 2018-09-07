@@ -17,7 +17,7 @@ ms.workload: ["cplusplus"]
 This class implements a thread-pooled, apartment-model COM server.
 
 > [!IMPORTANT]
->  This class and its members cannot be used in applications that execute in the Windows Runtime.
+> This class and its members cannot be used in applications that execute in the Windows Runtime.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ You must use the [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factor
 `CAtlAutoThreadModule _AtlAutoModule; // name is immaterial.`
 
 > [!NOTE]
->  This class replaces the obsolete [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) class.
+> This class replaces the obsolete [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) class.
 
 ## Inheritance Hierarchy
 

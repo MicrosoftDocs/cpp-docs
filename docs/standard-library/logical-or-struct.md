@@ -23,7 +23,7 @@ template <class Type = void>
 struct logical_or : public binary_function<Type, Type, bool>
 {
     bool operator()(const Type& Left, const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator||
 template <>
@@ -32,19 +32,19 @@ struct logical_or<void>
   template <class T, class U>
   auto operator()(T&& Left, U&& Right) const`
     -> decltype(std::forward<T>(Left) || std::forward<U>(Right));
- };
+};
 ```
 
 ### Parameters
 
 *Type*, *T*, *U*
- Any type that supports an `operator||` that takes operands of the specified or inferred types.
+Any type that supports an `operator||` that takes operands of the specified or inferred types.
 
-*Left*
- The left operand of the logical disjunction operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
+*Left*<br/>
+The left operand of the logical disjunction operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *T*.
 
-*Right*
- The right operand of the logical disjunction operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
+*Right*<br/>
+The right operand of the logical disjunction operation. The unspecialized template takes an lvalue reference argument of type *Type*. The specialized template does perfect forwarding of lvalue and rvalue reference arguments of inferred type *U*.
 
 ## Return Value
 
@@ -105,11 +105,11 @@ int main( )
 }
 \* Output:
 Original deque:
- d1 = ( true true false false true false false )
+d1 = ( true true false false true false false )
 Original deque:
- d2 = ( false false false true true true true )
+d2 = ( false false false true true true true )
 The deque which is the disjuction of d1 & d2 is:
- d3 = ( true true false true true true true )
+d3 = ( true true false true true true true )
 *\
 
 ```

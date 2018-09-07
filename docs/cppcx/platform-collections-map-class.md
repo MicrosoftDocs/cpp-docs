@@ -28,16 +28,16 @@ ref class Map sealed;
 
 ### Parameters
 
-*K*  
- The type of the key in the key-value pair.
+*K*<br/>
+The type of the key in the key-value pair.
 
-*V*  
+*V*<br/>
 The type of the value in the key-value pair.
 
-*C*  
+*C*<br/>
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map. By default, [std::less\<K>](../standard-library/less-struct.md).
 
-*__is_valid_winrt_type()*  
+*__is_valid_winrt_type()*
 A compiler generated function that validates the type of *K* and *V* and provides a friendly error message if the type cannot be stored in the Map.
 
 ### Remarks
@@ -151,7 +151,7 @@ bool HasKey(K key);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key used to locate the Map element. The type of *key* is typename *K*.
 
 ### Return Value
@@ -170,10 +170,10 @@ virtual bool Insert(K key, V value);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key portion of the key-value pair. The type of *key* is typename *K*.
 
-*value*  
+*value*<br/>
 The value portion of the key-value pair. The type of *value* is typename *V*.
 
 ### Return Value
@@ -192,7 +192,7 @@ V Lookup(K key);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key used to locate an element in the Map. The type of *key* is typename *K*.
 
 ### Return Value
@@ -222,19 +222,19 @@ Map(
 
 ### Parameters
 
-*InIt*  
+*InIt*<br/>
 The typename of the current Map.
 
-*comp*  
+*comp*<br/>
 A type that provides a function object that can compare two element values as sort keys to determine their relative order in the Map.
 
-*m*  
+*m*<br/>
 A reference or [Lvalues and Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) to a `map Class` that is used to initialize the current Map.
 
-*first*  
+*first*<br/>
 The input iterator of the first element in a range of elements used to initialize the current Map.
 
-*last*  
+*last*<br/>
 The input iterator of the first element after a range of elements used to initialize the current Map.
 
 ## <a name="mapchanged"></a>  Map::MapChanged Event
@@ -267,7 +267,7 @@ virtual void Remove(K key);
 
 ### Parameters
 
-*key*  
+*key*<br/>
 The key portion of the key-value pair. The type of *key* is typename *K*.
 
 ## <a name="size"></a>  Map::Size Method
@@ -286,5 +286,5 @@ The number of elements in the Map.
 
 ## See Also
 
-[Platform Namespace](platform-namespace-c-cx.md)  
-[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[Platform Namespace](platform-namespace-c-cx.md)<br/>
+[Creating Windows Runtime Components in C++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

@@ -120,8 +120,8 @@ const_pointer address(const_reference val);
 
 ### Parameters
 
-*val*
- The const or nonconst value of the object whose address is being searched for.
+*val*<br/>
+The const or nonconst value of the object whose address is being searched for.
 
 ### Return Value
 

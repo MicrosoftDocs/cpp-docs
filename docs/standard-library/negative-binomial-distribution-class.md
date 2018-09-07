@@ -50,7 +50,7 @@ public:
 
 ### Parameters
 
-*IntType*
+*IntType*<br/>
 The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -212,13 +212,13 @@ explicit negative_binomial_distribution(const param_type& parm);
 
 ### Parameters
 
-*k*
+*k*<br/>
 The `k` distribution parameter.
 
-*p*
+*p*<br/>
 The `p` distribution parameter.
 
-*parm*
+*parm*<br/>
 The parameter structure used to construct the distribution.
 
 ### Remarks
@@ -245,13 +245,13 @@ struct param_type {
 
 ### Parameters
 
-*k*
+*k*<br/>
 The `k` distribution parameter.
 
-*p*
+*p*<br/>
 The `p` distribution parameter.
 
-*right*
+*right*<br/>
 The `param_type` structure used to compare.
 
 ### Remarks

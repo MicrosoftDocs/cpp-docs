@@ -25,11 +25,11 @@ bool operator!=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -75,11 +75,11 @@ bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -129,11 +129,11 @@ bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -184,11 +184,11 @@ bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -242,11 +242,11 @@ bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -298,11 +298,11 @@ bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 

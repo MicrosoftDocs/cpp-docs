@@ -25,11 +25,11 @@ struct is_convertible;
 
 ### Parameters
 
-*From*
- The type to convert from.
+*From*<br/>
+The type to convert from.
 
-*Ty*
- The type to convert to.
+*Ty*<br/>
+The type to convert to.
 
 ## Remarks
 

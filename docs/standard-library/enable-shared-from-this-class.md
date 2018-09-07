@@ -34,8 +34,8 @@ protected:
 
 ### Parameters
 
-*Ty*
- The type controlled by the shared pointer.
+*Ty*<br/>
+The type controlled by the shared pointer.
 
 ## Remarks
 

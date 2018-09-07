@@ -41,17 +41,17 @@ bool operator!=(
 
 ### Parameters
 
-*left*
- One of the objects to be tested for inequality.
+*left*<br/>
+One of the objects to be tested for inequality.
 
-*right*
- One of the objects to be tested for inequality.
+*right*<br/>
+One of the objects to be tested for inequality.
 
-*Ty1*
- The type controlled by the left shared pointer.
+*Ty1*<br/>
+The type controlled by the left shared pointer.
 
-*Ty2*
- The type controlled by the right shared pointer.
+*Ty2*<br/>
+The type controlled by the right shared pointer.
 
 ### Return Value
 
@@ -143,17 +143,17 @@ bool operator==(
 
 ### Parameters
 
-*left*
- One of the objects to be tested for equality.
+*left*<br/>
+One of the objects to be tested for equality.
 
-*right*
- One of the objects to be tested for equality.
+*right*<br/>
+One of the objects to be tested for equality.
 
-*Ty1*
- The type controlled by the left shared pointer.
+*Ty1*<br/>
+The type controlled by the left shared pointer.
 
-*Ty2*
- The type controlled by the right shared pointer.
+*Ty2*<br/>
+The type controlled by the right shared pointer.
 
 ### Return Value
 
@@ -251,17 +251,17 @@ bool operator>=(
 
 ### Parameters
 
-*left*
- One of the objects to be compared.
+*left*<br/>
+One of the objects to be compared.
 
-*right*
- One of the objects to be compared.
+*right*<br/>
+One of the objects to be compared.
 
-*Ty1*
- The type controlled by the left shared pointer.
+*Ty1*<br/>
+The type controlled by the left shared pointer.
 
-*Ty2*
- The type controlled by the right shared pointer.
+*Ty2*<br/>
+The type controlled by the right shared pointer.
 
 ### Remarks
 
@@ -285,17 +285,17 @@ bool operator<(
 
 ### Parameters
 
-*left*
- One of the objects to be compared.
+*left*<br/>
+One of the objects to be compared.
 
-*right*
- One of the objects to be compared.
+*right*<br/>
+One of the objects to be compared.
 
-*Ty1*
- The type controlled by the left pointer.
+*Ty1*<br/>
+The type controlled by the left pointer.
 
-*Ty2*
- The type controlled by the right pointer.
+*Ty2*<br/>
+The type controlled by the right pointer.
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
 
@@ -315,17 +315,17 @@ bool operator<=(
 
 ### Parameters
 
-*left*
- One of the objects to be compared.
+*left*<br/>
+One of the objects to be compared.
 
-*right*
- One of the objects to be compared.
+*right*<br/>
+One of the objects to be compared.
 
-*Ty1*
- The type controlled by the left shared pointer.
+*Ty1*<br/>
+The type controlled by the left shared pointer.
 
-*Ty2*
- The type controlled by the right shared pointer.
+*Ty2*<br/>
+The type controlled by the right shared pointer.
 
 ### Remarks
 
@@ -349,17 +349,17 @@ bool operator>(
 
 ### Parameters
 
-*left*
- One of the objects to be compared.
+*left*<br/>
+One of the objects to be compared.
 
-*right*
- One of the objects to be compared.
+*right*<br/>
+One of the objects to be compared.
 
-*Ty1*
- The type controlled by the left shared pointer.
+*Ty1*<br/>
+The type controlled by the left shared pointer.
 
-*Ty2*
- The type controlled by the right shared pointer.
+*Ty2*<br/>
+The type controlled by the right shared pointer.
 
 ## <a name="op_lt_lt"></a>  operator&lt;&lt;
 
@@ -373,20 +373,20 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 
 ### Parameters
 
-*Elem*
- The type of the stream element.
+*Elem*<br/>
+The type of the stream element.
 
-*Tr*
- The type the stream element traits.
+*Tr*<br/>
+The type the stream element traits.
 
-*Ty*
- The type controlled by the shared pointer.
+*Ty*<br/>
+The type controlled by the shared pointer.
 
-*out*
- The output stream.
+*out*<br/>
+The output stream.
 
-*sp*
- The shared pointer.
+*sp*<br/>
+The shared pointer.
 
 ### Remarks
 

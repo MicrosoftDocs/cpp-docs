@@ -25,8 +25,8 @@ struct is_nothrow_move_assignable;
 
 ### Parameters
 
-*Ty*
- The type to query.
+*Ty*<br/>
+The type to query.
 
 ## Remarks
 

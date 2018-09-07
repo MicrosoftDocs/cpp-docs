@@ -50,7 +50,7 @@ class promise;
 
 ## Inheritance Hierarchy
 
-`promise`
+*promise*<br/>
 
 ## Requirements
 
@@ -82,8 +82,8 @@ promise& operator=(promise&& Other) noexcept;
 
 ### Parameters
 
-*Other*
- A `promise` object.
+*Other*<br/>
+A `promise` object.
 
 ### Return Value
 
@@ -106,11 +106,11 @@ promise(promise&& Other) noexcept;
 
 ### Parameters
 
-*Al*
- A memory allocator. See [\<allocators>](../standard-library/allocators-header.md) for more information.
+*Al*<br/>
+A memory allocator. See [\<allocators>](../standard-library/allocators-header.md) for more information.
 
-*Other*
- A `promise` object.
+*Other*<br/>
+A `promise` object.
 
 ### Remarks
 
@@ -130,8 +130,8 @@ void set_exception(exception_ptr Exc);
 
 ### Parameters
 
-*Exc*
- An [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) that's stored by this method as the exception result.
+*Exc*<br/>
+An [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) that's stored by this method as the exception result.
 
 ### Remarks
 
@@ -151,8 +151,8 @@ void set_exception_at_thread_exit(exception_ptr Exc);
 
 ### Parameters
 
-*Exc*
- An [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) that's stored by this method as the exception result.
+*Exc*<br/>
+An [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) that's stored by this method as the exception result.
 
 ### Remarks
 
@@ -175,8 +175,8 @@ void promise<void>::set_value();
 
 ### Parameters
 
-*Val*
- The value to be stored as the result.
+*Val*<br/>
+The value to be stored as the result.
 
 ### Remarks
 
@@ -207,8 +207,8 @@ void promise<void>::set_value_at_thread_exit();
 
 ### Parameters
 
-*Val*
- The value to be stored as the result.
+*Val*<br/>
+The value to be stored as the result.
 
 ### Remarks
 
@@ -236,8 +236,8 @@ void swap(promise& Other) noexcept;
 
 ### Parameters
 
-*Other*
- A `promise` object.
+*Other*<br/>
+A `promise` object.
 
 ## See also
 
