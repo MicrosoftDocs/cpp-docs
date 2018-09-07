@@ -34,10 +34,10 @@ FILE *_wfdopen(
 
 ### Parameters
 
-*fd*
+*fd*<br/>
 File descriptor of the open file.
 
-*mode*
+*mode*<br/>
 Type of file access.
 
 ## Return Value

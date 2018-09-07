@@ -127,7 +127,7 @@ int main()
     return 0;
 }
 \* Output:
- 0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9
 *\
 ```
 
@@ -235,14 +235,14 @@ checked_array_iterator(
 
 ### Parameters
 
-*ptr*
- A pointer to the array.
+*ptr*<br/>
+A pointer to the array.
 
-*size*
- The size of the array.
+*size*<br/>
+The size of the array.
 
-*index*
- (Optional) An element in the array, to initialize the iterator.  By default, the iterator is initialized to the first element in the array.
+*index*<br/>
+(Optional) An element in the array, to initialize the iterator.  By default, the iterator is initialized to the first element in the array.
 
 ### Remarks
 
@@ -310,8 +310,8 @@ bool operator==(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*
- The `checked_array_iterator` against which to check for equality.
+*right*<br/>
+The `checked_array_iterator` against which to check for equality.
 
 ### Remarks
 
@@ -366,8 +366,8 @@ bool operator!=(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*
- The `checked_array_iterator` against which to check for inequality.
+*right*<br/>
+The `checked_array_iterator` against which to check for inequality.
 
 ### Remarks
 
@@ -422,8 +422,8 @@ bool operator<(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*
- The `checked_array_iterator` against which to check for inequality.
+*right*<br/>
+The `checked_array_iterator` against which to check for inequality.
 
 ### Remarks
 
@@ -478,8 +478,8 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*
- The `checked_array_iterator` to compare against.
+*right*<br/>
+The `checked_array_iterator` to compare against.
 
 ### Remarks
 
@@ -497,8 +497,8 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*
- The `checked_array_iterator` to compare against.
+*right*<br/>
+The `checked_array_iterator` to compare against.
 
 ### Remarks
 
@@ -516,8 +516,8 @@ bool operator>=(const checked_array_iterator<_Iterator>& right) const;
 
 ### Parameters
 
-*right*
- The `checked_array_iterator` to compare against.
+*right*<br/>
+The `checked_array_iterator` to compare against.
 
 ### Remarks
 
@@ -747,8 +747,8 @@ checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
 
 ### Parameters
 
-*_Off*
- The offset by which to increment the iterator.
+*_Off*<br/>
+The offset by which to increment the iterator.
 
 ### Return Value
 
@@ -795,8 +795,8 @@ checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
 
 ### Parameters
 
-*_Off*
- The offset to be added to the `checked_array_iterator`.
+*_Off*<br/>
+The offset to be added to the `checked_array_iterator`.
 
 ### Return Value
 
@@ -843,8 +843,8 @@ checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
 
 ### Parameters
 
-*_Off*
- The offset by which to increment the iterator.
+*_Off*<br/>
+The offset by which to increment the iterator.
 
 ### Return Value
 
@@ -894,8 +894,8 @@ difference_type operator-(const checked_array_iterator& right) const;
 
 ### Parameters
 
-*_Off*
- The offset to be decremented from the `checked_array_iterator`.
+*_Off*<br/>
+The offset to be decremented from the `checked_array_iterator`.
 
 ### Return Value
 
@@ -917,8 +917,8 @@ reference operator[](difference_type _Off) const;
 
 ### Parameters
 
-*_Off*
- The offset from the `checked_array_iterator` address.
+*_Off*<br/>
+The offset from the `checked_array_iterator` address.
 
 ### Return Value
 

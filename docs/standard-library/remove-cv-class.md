@@ -28,8 +28,8 @@ using remove_cv_t = typename remove_cv<T>::type;
 
 ### Parameters
 
-*T*
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 

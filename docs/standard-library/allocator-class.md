@@ -25,8 +25,8 @@ class allocator
 
 ### Parameters
 
-*Type*
- The type of object for which storage is being allocated or deallocated.
+*Type*<br/>
+The type of object for which storage is being allocated or deallocated.
 
 ## Remarks
 
@@ -105,8 +105,8 @@ const_pointer address(const_reference val) const;
 
 ### Parameters
 
-*val*
- The const or nonconst value of the object whose address is being searched for.
+*val*<br/>
+The const or nonconst value of the object whose address is being searched for.
 
 ### Return Value
 
@@ -156,7 +156,7 @@ int main( )
 
 ```Output
 The original vector v1 is:
- ( 2 4 6 8 10 12 14 ).
+( 2 4 6 8 10 12 14 ).
 The integer addressed by v1Ptr has a value of: *v1Ptr = 8.
 ```
 
@@ -170,11 +170,11 @@ pointer allocate(size_type count, const void* _Hint);
 
 ### Parameters
 
-*count*
- The number of elements for which sufficient storage is to be allocated.
+*count*<br/>
+The number of elements for which sufficient storage is to be allocated.
 
-*_Hint*
- A const pointer that may assist the allocator object satisfy the request for storage by locating the address of an object allocated prior to the request.
+*_Hint*<br/>
+A const pointer that may assist the allocator object satisfy the request for storage by locating the address of an object allocated prior to the request.
 
 ### Return Value
 
@@ -233,8 +233,8 @@ allocator(const allocator<Other>& right);
 
 ### Parameters
 
-*right*
- The allocator object to be copied.
+*right*<br/>
+The allocator object to be copied.
 
 ### Remarks
 
@@ -354,7 +354,7 @@ int main( )
 
 ```Output
 The original vector v1 is:
- ( 2 4 6 8 10 12 14 ).
+( 2 4 6 8 10 12 14 ).
 The integer's address found has a value of: 10.
 ```
 
@@ -408,7 +408,7 @@ int main( )
    // vcref = 150;
    // but the value of the first element could be modified through
    // its nonconst iterator and the const reference would remain valid
- *vfIter = 175;
+*vfIter = 175;
    cout << "The value of the element referred to by vcref,"
         <<"\n after nofication through its nonconst iterator, is: "
         << vcref << "." << endl;
@@ -417,11 +417,11 @@ int main( )
 
 ```Output
 The original vector v is:
- ( 100 200 300 400 500 600 700 ).
+( 100 200 300 400 500 600 700 ).
 The value of the element referred to by vref is: 100,
- the first element in the vector.
+the first element in the vector.
 The value of the element referred to by vcref,
- after nofication through its nonconst iterator, is: 175.
+after nofication through its nonconst iterator, is: 175.
 ```
 
 ## <a name="construct"></a>  allocator::construct
@@ -437,11 +437,11 @@ void construct(pointer ptr, _Other&&...   val);
 
 ### Parameters
 
-*ptr*
- A pointer to the location where the object is to be constructed.
+*ptr*<br/>
+A pointer to the location where the object is to be constructed.
 
-*val*
- The value with which the object being constructed is to be initialized.
+*val*<br/>
+The value with which the object being constructed is to be initialized.
 
 ### Remarks
 
@@ -491,9 +491,9 @@ int main( )
 
 ```Output
 The original vector v1 is:
- ( 3 6 9 12 15 18 21 ).
+( 3 6 9 12 15 18 21 ).
 The modified vector v1 is:
- ( 3 7 9 12 15 18 21 ).
+( 3 7 9 12 15 18 21 ).
 ```
 
 ## <a name="deallocate"></a>  allocator::deallocate
@@ -506,11 +506,11 @@ void deallocate(pointer ptr, size_type count);
 
 ### Parameters
 
-*ptr*
- A pointer to the first object to be deallocated from storage.
+*ptr*<br/>
+A pointer to the first object to be deallocated from storage.
 
-*count*
- The number of objects to be deallocated from storage.
+*count*<br/>
+The number of objects to be deallocated from storage.
 
 ### Remarks
 
@@ -530,8 +530,8 @@ void destroy(pointer ptr);
 
 ### Parameters
 
-*ptr*
- A pointer designating the address of the object to be destroyed.
+*ptr*<br/>
+A pointer designating the address of the object to be destroyed.
 
 ### Remarks
 
@@ -581,9 +581,9 @@ int main( )
 
 ```Output
 The original vector v1 is:
- ( 2 4 6 8 10 12 14 ).
+( 2 4 6 8 10 12 14 ).
 The modified vector v1 is:
- ( 2 4 6 8 10 -99 14 ).
+( 2 4 6 8 10 -99 14 ).
 ```
 
 ## <a name="difference_type"></a>  allocator::difference_type
@@ -641,7 +641,7 @@ int main( )
 
 ```Output
 The original vector v1 is:
- ( 0 2 4 6 8 10 12 14 ).
+( 0 2 4 6 8 10 12 14 ).
 Pointer v1PtrA addresses 4.
 Pointer v1PtrB addresses 12.
 The difference between the integer's addresses is: 8.
@@ -727,8 +727,8 @@ allocator<Type>& operator=(const allocator<Other>& right);
 
 ### Parameters
 
-*right*
- An allocator object to be assigned to another such object.
+*right*<br/>
+An allocator object to be assigned to another such object.
 
 ### Return Value
 
@@ -814,7 +814,7 @@ int main( )
       v1.push_back( 3 * i );
    }
 
-   cout << "The original vector v1 is:\n ( " ;
+   cout << "The original vector v1 is:\n( " ;
    for ( v1Iter = v1.begin( ) ; v1Iter != v1.end( ) ; v1Iter++ )
       cout << *v1Iter << " ";
    cout << ")." << endl;
@@ -830,7 +830,7 @@ int main( )
 
 ```Output
 The original vector v1 is:
- ( 3 6 9 12 15 18 21 ).
+( 3 6 9 12 15 18 21 ).
 The integer addressed by v1Ptr has a value of: *v1Ptr = 12.
 ```
 
@@ -842,8 +842,8 @@ struct rebind {    typedef allocator<_Other> other ;    };
 ```
 ### Parameters
 
-*other*
- The type of element for which memory is being allocated.
+*other*<br/>
+The type of element for which memory is being allocated.
 
 ### Remarks
 
@@ -942,9 +942,9 @@ int main( )
 
 ```Output
 The original vector v is:
- ( 100 200 300 400 500 600 700 ).
+( 100 200 300 400 500 600 700 ).
 The value of the element referred to by vref is: 100,
- the first element in the vector.
+the first element in the vector.
 The element referred to by vref after being modified is: 150.
 ```
 
@@ -1034,7 +1034,7 @@ int main( )
 
    vfIter = v.begin( );
    allocator<double>::value_type vecVal = 150.0;
- *vfIter = vecVal;
+*vfIter = vecVal;
    cout << "The value of the element addressed by vfIter is: "
         << *vfIter << ",\n the first element in the vector." << endl;
 
@@ -1047,11 +1047,11 @@ int main( )
 
 ```Output
 The original vector v is:
- ( 100 200 300 400 500 600 700 ).
+( 100 200 300 400 500 600 700 ).
 The value of the element addressed by vfIter is: 150,
- the first element in the vector.
+the first element in the vector.
 The modified vector v is:
- ( 150 200 300 400 500 600 700 ).
+( 150 200 300 400 500 600 700 ).
 ```
 
 ## See also

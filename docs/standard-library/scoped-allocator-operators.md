@@ -26,11 +26,11 @@ bool operator!=(
 
 ### Parameters
 
-*left*
- The left `scoped_allocator_adaptor` object.
+*left*<br/>
+The left `scoped_allocator_adaptor` object.
 
-*right*
- The right `scoped_allocator_adaptor` object.
+*right*<br/>
+The right `scoped_allocator_adaptor` object.
 
 ### Return Value
 
@@ -49,11 +49,11 @@ bool operator==(
 
 ### Parameters
 
-*left*
- The left `scoped_allocator_adaptor` object.
+*left*<br/>
+The left `scoped_allocator_adaptor` object.
 
-*right*
- The right `scoped_allocator_adaptor` object.
+*right*<br/>
+The right `scoped_allocator_adaptor` object.
 
 ### Return Value
 

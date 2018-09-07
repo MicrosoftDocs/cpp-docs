@@ -50,7 +50,7 @@ public:
 
 ### Parameters
 
-*IntType*
+*IntType*<br/>
 The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks

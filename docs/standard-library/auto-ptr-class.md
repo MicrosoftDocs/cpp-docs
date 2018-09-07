@@ -46,11 +46,11 @@ public:
 ```
 ### Parameters
 
-*right*
- The `auto_ptr` from which to get an existing resource.
+*right*<br/>
+The `auto_ptr` from which to get an existing resource.
 
-*ptr*
- The pointer specified to replace the stored pointer.
+*ptr*<br/>
+The pointer specified to replace the stored pointer.
 
 ## Remarks
 
@@ -113,11 +113,11 @@ auto _ptr(auto _ptr<Other>& right) throw();
 
 ### Parameters
 
-*ptr*
- The pointer to the object that `auto_ptr` encapsulates.
+*ptr*<br/>
+The pointer to the object that `auto_ptr` encapsulates.
 
-*right*
- The `auto_ptr` object to be copied by the constructor.
+*right*<br/>
+The `auto_ptr` object to be copied by the constructor.
 
 ### Remarks
 
@@ -267,8 +267,8 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 
 ### Parameters
 
-*right*
- An object of type `auto_ptr`.
+*right*<br/>
+An object of type `auto_ptr`.
 
 ### Return Value
 
@@ -485,8 +485,8 @@ void reset(Type* ptr = 0);
 
 ### Parameters
 
-*ptr*
- The pointer specified to replace the stored pointer `myptr`.
+*ptr*<br/>
+The pointer specified to replace the stored pointer `myptr`.
 
 ### Example
 

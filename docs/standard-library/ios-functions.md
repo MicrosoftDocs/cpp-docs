@@ -30,8 +30,8 @@ ios_base& boolalpha(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -82,8 +82,8 @@ ios_base& dec(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -135,8 +135,8 @@ ios_base& defaultfloat(ios_base& _Iosbase);
 
 ### Parameters
 
-*_Iosbase*
- An `ios_base` object.
+*_Iosbase*<br/>
+An `ios_base` object.
 
 ### Remarks
 
@@ -152,8 +152,8 @@ ios_base& fixed(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -200,8 +200,8 @@ ios_base& hex(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -227,8 +227,8 @@ ios_base& internal(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -273,8 +273,8 @@ ios_base& left(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -316,8 +316,8 @@ ios_base& noboolalpha(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -345,8 +345,8 @@ ios_base& noshowbase(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -372,8 +372,8 @@ ios_base& noshowpoint(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -419,8 +419,8 @@ ios_base& noshowpos(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -446,8 +446,8 @@ ios_base& noskipws(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -488,8 +488,8 @@ ios_base& nounitbuf(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -511,8 +511,8 @@ ios_base& nouppercase(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -536,8 +536,8 @@ ios_base& oct(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -563,8 +563,8 @@ ios_base& right(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -620,8 +620,8 @@ ios_base& scientific(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -665,8 +665,8 @@ ios_base& showbase(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -719,8 +719,8 @@ ios_base& showpoint(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -746,8 +746,8 @@ ios_base& showpos(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -791,8 +791,8 @@ ios_base& skipws(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -845,8 +845,8 @@ ios_base& unitbuf(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 
@@ -870,8 +870,8 @@ ios_base& uppercase(ios_base& str);
 
 ### Parameters
 
-*str*
- A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
+*str*<br/>
+A reference to an object of type [ios_base](../standard-library/ios-base-class.md), or to a type that inherits from `ios_base`.
 
 ### Return Value
 

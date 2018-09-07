@@ -25,8 +25,8 @@ class insert_iterator;
 
 ### Parameters
 
-`Container`
- The type of container into which elements are to be inserted by an `insert_iterator`.
+*Container*<br/>
+The type of container into which elements are to be inserted by an `insert_iterator`.
 
 ## Remarks
 
@@ -111,11 +111,11 @@ insert_iterator(Container& _Cont, typename Container::iterator _It);
 
 ### Parameters
 
-*_Cont*
- The container into which the `insert_iterator` is to insert elements.
+*_Cont*<br/>
+The container into which the `insert_iterator` is to insert elements.
 
-*_It*
- The position for the insertion.
+*_It*<br/>
+The position for the insertion.
 
 ### Remarks
 
@@ -152,7 +152,7 @@ int main( )
 
    // Alternatively, you may use the template version
    insert_iterator< list < int> > Iter(L, L.end ( ) );
- *Iter = 300;
+*Iter = 300;
 
    cout << "After the insertions, the list L is:\n ( ";
    for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++ )
@@ -161,9 +161,9 @@ int main( )
 }
 \* Output:
 The list L is:
- ( 10 20 30 ).
+( 10 20 30 ).
 After the insertions, the list L is:
- ( 2 10 20 30 300 ).
+( 2 10 20 30 300 ).
 *\
 ```
 
@@ -210,9 +210,9 @@ int main( )
    cout << ")." << endl;
 
    insert_iterator< list < int> > Iter(L, L.begin ( ) );
- *Iter = 10;
- *Iter = 20;
- *Iter = 30;
+*Iter = 10;
+*Iter = 20;
+*Iter = 30;
 
    cout << "After the insertions, the list L is:\n ( ";
    for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++ )
@@ -221,9 +221,9 @@ int main( )
 }
 \* Output:
 The original list L is:
- ( 0 2 4 6 ).
+( 0 2 4 6 ).
 After the insertions, the list L is:
- ( 10 20 30 0 2 4 6 ).
+( 10 20 30 0 2 4 6 ).
 *\
 ```
 
@@ -272,11 +272,11 @@ int main( )
    cout << ")." << endl;
 
    insert_iterator<vector<int> > ii ( vec, vec.begin ( ) );
- *ii = 30;
+*ii = 30;
    ii++;
- *ii = 40;
+*ii = 40;
    ii++;
- *ii = 50;
+*ii = 50;
 
    cout << "After the insertions, the vector vec becomes:\n ( ";
    for ( vIter = vec.begin ( ) ; vIter != vec.end ( ); vIter++ )
@@ -285,9 +285,9 @@ int main( )
 }
 \* Output:
 The vector vec is:
- ( 1 2 3 4 ).
+( 1 2 3 4 ).
 After the insertions, the vector vec becomes:
- ( 30 40 50 1 2 3 4 ).
+( 30 40 50 1 2 3 4 ).
 *\
 ```
 
@@ -305,8 +305,8 @@ insert_iterator<Container>& operator=(
 
 ### Parameters
 
-*val*
- The value to be assigned to the container.
+*val*<br/>
+The value to be assigned to the container.
 
 ### Return Value
 
@@ -357,9 +357,9 @@ int main( )
    cout << ")." << endl;
 
    insert_iterator< list < int> > Iter(L, L.begin ( ) );
- *Iter = 10;
- *Iter = 20;
- *Iter = 30;
+*Iter = 10;
+*Iter = 20;
+*Iter = 30;
 
    cout << "After the insertions, the list L is:\n ( ";
    for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++ )
@@ -368,9 +368,9 @@ int main( )
 }
 \* Output:
 The original list L is:
- ( 0 2 4 6 ).
+( 0 2 4 6 ).
 After the insertions, the list L is:
- ( 10 20 30 0 2 4 6 ).
+( 10 20 30 0 2 4 6 ).
 *\
 ```
 
@@ -401,9 +401,9 @@ int main( )
 
    list<int> L;
    insert_iterator<list<int> > iivIter( L , L.begin ( ) );
- *iivIter = 10;
- *iivIter = 20;
- *iivIter = 30;
+*iivIter = 10;
+*iivIter = 20;
+*iivIter = 30;
 
    list<int>::iterator LIter;
    cout << "The list L is: ( ";

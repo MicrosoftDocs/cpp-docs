@@ -50,10 +50,10 @@ public:
 
 ### Parameters
 
-*IntType*
+*IntType*<br/>
 The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
-*URNG*
+*URNG*<br/>
 The uniform random number generator engine. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -221,13 +221,13 @@ explicit binomial_distribution(const param_type& parm);
 
 ### Parameters
 
-*t*
+*t*<br/>
 The `t` distribution parameter.
 
-*p*
+*p*<br/>
 The `p` distribution parameter.
 
-*parm*
+*parm*<br/>
 The `param_type` structure used to construct the distribution.
 
 ### Remarks
@@ -256,14 +256,14 @@ struct param_type {
 
 ### Parameters
 
-*t*
+*t*<br/>
 The `t` distribution parameter.
 
-*p*
+*p*<br/>
 The `p` distribution parameter.
 
-*right*
- The `param_type` object to compare to this.
+*right*<br/>
+The `param_type` object to compare to this.
 
 ### Remarks
 

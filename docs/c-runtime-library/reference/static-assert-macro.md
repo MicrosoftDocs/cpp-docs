@@ -28,7 +28,7 @@ _STATIC_ASSERT(
 
 ### Parameters
 
-*booleanExpression*
+*booleanExpression*<br/>
 Expression (including pointers) that evaluates to nonzero (**TRUE**) or 0 (**FALSE**).
 
 ## Remarks

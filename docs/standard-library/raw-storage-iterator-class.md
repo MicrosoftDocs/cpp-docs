@@ -25,11 +25,11 @@ class raw_storage_iterator
 
 ### Parameters
 
-*OutputIterator*
- Specifies the output iterator for the object being stored.
+*OutputIterator*<br/>
+Specifies the output iterator for the object being stored.
 
-*Type*
- The type of object for which storage is being allocated.
+*Type*<br/>
+The type of object for which storage is being allocated.
 
 ## Remarks
 
@@ -146,9 +146,9 @@ int main( void)
 {
    Int *pInt = ( Int* ) malloc( sizeof( Int ) );
    memset( pInt, 0, sizeof( Int ) ); // Set bIsConstructed to false;
- *pInt = 5;
+*pInt = 5;
    raw_storage_iterator< Int*, Int > it( pInt );
- *it = 5;
+*it = 5;
 }
 \* Output:
 Not constructed.
@@ -168,8 +168,8 @@ raw_storage_iterator<ForwardIterator, Type>& operator=(
 
 ### Parameters
 
-`val`
- The value of the object of type `Type` to be inserted into memory.
+*val*<br/>
+The value of the object of type `Type` to be inserted into memory.
 
 ### Return Value
 
@@ -221,7 +221,7 @@ int main( void )
 *pInt = 5;
 
    raw_storage_iterator<Int*, Int> it( pInt );
- *it = 5;
+*it = 5;
 }
 \* Output:
 Not constructed.
@@ -270,7 +270,7 @@ int main( void )
    int *pInt = new int[5];
    std::raw_storage_iterator<int*,int> it( pInt );
    for ( int i = 0; i < 5; i++, it++ ) {
- *it = 2 * i;
+*it = 2 * i;
 };
 
    for ( int i = 0; i < 5; i++ ) cout << "array " << i << " = " << pInt[i] << endl;;
@@ -296,8 +296,8 @@ explicit raw_storage_iterator(ForwardIterator first);
 
 ### Parameters
 
-*first*
- The forward iterator that is to underlie the `raw_storage_iterator` object being constructed.
+*first*<br/>
+The forward iterator that is to underlie the `raw_storage_iterator` object being constructed.
 
 ### Example
 

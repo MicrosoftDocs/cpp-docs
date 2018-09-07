@@ -42,14 +42,14 @@ protected:
 
 ### Parameters
 
-*Func*
- The binary function object to be converted to a unary function object.
+*Func*<br/>
+The binary function object to be converted to a unary function object.
 
-*left*
- The value to which the first argument of the binary function object is to be bound.
+*left*<br/>
+The value to which the first argument of the binary function object is to be bound.
 
-*right*
- The value of the argument that the adapted binary object compares to the fixed value of the second argument.
+*right*<br/>
+The value of the argument that the adapted binary object compares to the fixed value of the second argument.
 
 ## Return Value
 

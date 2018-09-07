@@ -29,11 +29,11 @@ bool operator!=(
 
 ### Parameters
 
-*left*
- An object of type `map`.
+*left*<br/>
+An object of type `map`.
 
-*right*
- An object of type `map`.
+*right*<br/>
+An object of type `map`.
 
 ### Return Value
 
@@ -93,11 +93,11 @@ bool operator<(
 
 ### Parameters
 
-*left*
- An object of type `map`.
+*left*<br/>
+An object of type `map`.
 
-*right*
- An object of type `map`.
+*right*<br/>
+An object of type `map`.
 
 ### Return Value
 
@@ -157,11 +157,11 @@ bool operator<=(
 
 ### Parameters
 
-*left*
- An object of type `map`.
+*left*<br/>
+An object of type `map`.
 
-*right*
- An object of type `map`.
+*right*<br/>
+An object of type `map`.
 
 ### Return Value
 
@@ -224,11 +224,11 @@ bool operator==(
 
 ### Parameters
 
-*left*
- An object of type `map`.
+*left*<br/>
+An object of type `map`.
 
-*right*
- An object of type `map`.
+*right*<br/>
+An object of type `map`.
 
 ### Return Value
 
@@ -288,11 +288,11 @@ bool operator>(
 
 ### Parameters
 
-*left*
- An object of type `map`.
+*left*<br/>
+An object of type `map`.
 
-*right*
- An object of type `map`.
+*right*<br/>
+An object of type `map`.
 
 ### Return Value
 
@@ -352,11 +352,11 @@ bool operator>=(
 
 ### Parameters
 
-*left*
- An object of type `map`.
+*left*<br/>
+An object of type `map`.
 
-*right*
- An object of type `map`.
+*right*<br/>
+An object of type `map`.
 
 ### Return Value
 
@@ -419,11 +419,11 @@ bool operator!=(
 
 ### Parameters
 
-*left*
- An object of type `multimap`.
+*left*<br/>
+An object of type `multimap`.
 
-*right*
- An object of type `multimap`.
+*right*<br/>
+An object of type `multimap`.
 
 ### Return Value
 
@@ -483,11 +483,11 @@ bool operator<(
 
 ### Parameters
 
-*left*
- An object of type `multimap`.
+*left*<br/>
+An object of type `multimap`.
 
-*right*
- An object of type `multimap`.
+*right*<br/>
+An object of type `multimap`.
 
 ### Return Value
 
@@ -547,11 +547,11 @@ bool operator<=(
 
 ### Parameters
 
-*left*
- An object of type `multimap`.
+*left*<br/>
+An object of type `multimap`.
 
-*right*
- An object of type `multimap`.
+*right*<br/>
+An object of type `multimap`.
 
 ### Return Value
 
@@ -614,11 +614,11 @@ bool operator==(
 
 ### Parameters
 
-*left*
- An object of type `multimap`.
+*left*<br/>
+An object of type `multimap`.
 
-*right*
- An object of type `multimap`.
+*right*<br/>
+An object of type `multimap`.
 
 ### Return Value
 
@@ -678,11 +678,11 @@ bool operator>(
 
 ### Parameters
 
-*left*
- An object of type `multimap`.
+*left*<br/>
+An object of type `multimap`.
 
-*right*
- An object of type `multimap`.
+*right*<br/>
+An object of type `multimap`.
 
 ### Return Value
 
@@ -742,11 +742,11 @@ bool operator>=(
 
 ### Parameters
 
-*left*
- An object of type `multimap`.
+*left*<br/>
+An object of type `multimap`.
 
-*right*
- An object of type `multimap`.
+*right*<br/>
+An object of type `multimap`.
 
 ### Return Value
 

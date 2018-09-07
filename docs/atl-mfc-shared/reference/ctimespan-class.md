@@ -86,8 +86,7 @@ bool operator>=(CTimeSpan span) const throw();
 
 ### Parameters
 
-*span*
-
+*span*  
 The object to compare.
 
 ### Return Value

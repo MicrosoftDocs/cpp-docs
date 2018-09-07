@@ -13,25 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::Boolean value class
-Represents a Boolean value. The equivalent of `bool`.  
-  
-## Syntax  
-  
-```cpp  
-public value struct Boolean  
-```  
-  
-### Members  
- Boolean has the Equals(), GetHashCode(), and ToString() methods derived from the [Platform::Object Class](../cppcx/platform-object-class.md), and the GetTypeCode() method derived from the [Platform::Type Class](../cppcx/platform-type-class.md).  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** Platform  
-  
- **Metadata:** platform.winmd  
-  
-## See Also  
- [Platform namespace](../cppcx/platform-namespace-c-cx.md)
+
+Represents a Boolean value. The equivalent of `bool`.
+
+## Syntax
+
+```cpp
+public value struct Boolean
+```
+
+### Members
+
+Boolean has the Equals(), GetHashCode(), and ToString() methods derived from the [Platform::Object Class](../cppcx/platform-object-class.md), and the GetTypeCode() method derived from the [Platform::Type Class](../cppcx/platform-type-class.md).
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** Platform
+
+**Metadata:** platform.winmd
+
+## See Also
+
+[Platform namespace](../cppcx/platform-namespace-c-cx.md)

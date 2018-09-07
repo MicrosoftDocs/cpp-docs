@@ -51,8 +51,8 @@ void atomic_flag::clear(memory_order Order = memory_order_seq_cst) noexcept;
 
 ### Parameters
 
-*Order*
- A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Order*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="test_and_set"></a>  atomic_flag::test_and_set
 
@@ -65,8 +65,8 @@ bool atomic_flag::test_and_set(memory_order Order = memory_order_seq_cst) noexce
 
 ### Parameters
 
-*Order*
- A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Order*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### Return Value
 

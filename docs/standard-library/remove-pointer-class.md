@@ -28,8 +28,8 @@ using remove_pointer_t = typename remove_pointer<T>::type;
 
 ### Parameters
 
-*T*
- The type to modify.
+*T*<br/>
+The type to modify.
 
 ## Remarks
 

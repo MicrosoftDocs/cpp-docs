@@ -28,11 +28,11 @@ using aligned_storage_t = typename aligned_storage<Len, Align>::type;
 
 ### Parameters
 
-*Len*
- The object size.
+*Len*<br/>
+The object size.
 
-*Align*
- The object alignment.
+*Align*<br/>
+The object alignment.
 
 ## Remarks
 

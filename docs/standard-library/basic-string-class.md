@@ -25,14 +25,14 @@ class basic_string;
 
 ### Parameters
 
-*CharType*
- The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this template class, with the type definitions [string](../standard-library/string-typedefs.md#string) for elements of type **char**, [wstring](../standard-library/string-typedefs.md#wstring), for **wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [u32string](../standard-library/string-typedefs.md#u32string) for `char32_t`.
+*CharType*<br/>
+The data type of a single character to be stored in the string. The C++ Standard Library provides specializations of this template class, with the type definitions [string](../standard-library/string-typedefs.md#string) for elements of type **char**, [wstring](../standard-library/string-typedefs.md#wstring), for **wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) for `char16_t`, and [u32string](../standard-library/string-typedefs.md#u32string) for `char32_t`.
 
-*Traits*
- Various important properties of the `CharType` elements in a basic_string specialization are described by the class `Traits`. The default value is `char_traits`< `CharType`>.
+*Traits*<br/>
+Various important properties of the `CharType` elements in a basic_string specialization are described by the class `Traits`. The default value is `char_traits`< `CharType`>.
 
-*Allocator*
- The type that represents the stored allocator object that encapsulates details about the string's allocation and deallocation of memory. The default value is **allocator**< `CharType`>.
+*Allocator*<br/>
+The type that represents the stored allocator object that encapsulates details about the string's allocation and deallocation of memory. The default value is **allocator**< `CharType`>.
 
 ### Constructors
 
@@ -196,26 +196,26 @@ basic_string<CharType, Traits, Allocator>& append(
 
 ### Parameters
 
-*ptr*
- The C-string to be appended.
+*ptr*<br/>
+The C-string to be appended.
 
-*str*
- The string whose characters are to be appended.
+*str*<br/>
+The string whose characters are to be appended.
 
-*_Off*
- The index of the part of the source string supplying the characters to be appended.
+*_Off*<br/>
+The index of the part of the source string supplying the characters to be appended.
 
-*count*
- The number of characters to be appended, at most, from the source string.
+*count*<br/>
+The number of characters to be appended, at most, from the source string.
 
-*_Ch*
- The character value to be appended.
+*_Ch*<br/>
+The character value to be appended.
 
-*first*
- An input iterator addressing the first element in the range to be appended.
+*first*<br/>
+An input iterator addressing the first element in the range to be appended.
 
-*last*
- An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the range to be appended.
+*last*<br/>
+An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the range to be appended.
 
 ### Return Value
 
@@ -357,26 +357,26 @@ basic_string<CharType, Traits, Allocator>& assign(
 
 ### Parameters
 
-*ptr*
- A pointer to the characters of the C-string to be assigned to the target string.
+*ptr*<br/>
+A pointer to the characters of the C-string to be assigned to the target string.
 
-*count*
- The number of characters to be assigned, from the source string.
+*count*<br/>
+The number of characters to be assigned, from the source string.
 
-*str*
- The source string whose characters are to be assigned to the target string.
+*str*<br/>
+The source string whose characters are to be assigned to the target string.
 
-*_Ch*
- The character value to be assigned.
+*_Ch*<br/>
+The character value to be assigned.
 
-*first*
- An input iterator, const_pointer, or const_iterator addressing the first character in the range of the source string to be assigned to the target range.
+*first*<br/>
+An input iterator, const_pointer, or const_iterator addressing the first character in the range of the source string to be assigned to the target range.
 
-*last*
- An input iterator, const_pointer, or const_iterator addressing the one beyond the last character in the range of the source string to be assigned to the target range.
+*last*<br/>
+An input iterator, const_pointer, or const_iterator addressing the one beyond the last character in the range of the source string to be assigned to the target range.
 
-*off*
- The position at which new characters will start to be assigned.
+*off*<br/>
+The position at which new characters will start to be assigned.
 
 ### Return Value
 
@@ -491,8 +491,8 @@ reference at(size_type _Off);
 
 ### Parameters
 
-*_Off*
- The index of the position of the element to be referenced.
+*_Off*<br/>
+The index of the position of the element to be referenced.
 
 ### Return Value
 
@@ -618,12 +618,12 @@ basic_string(
 
 template <class InputIterator>
 basic_string(
- InputIterator first,
+InputIterator first,
     InputIterator last);
 
 template <class InputIterator>
 basic_string(
- InputIterator first,
+InputIterator first,
     InputIterator last,
     const allocator_type& _Al);
 
@@ -638,29 +638,29 @@ basic_string(
 
 ### Parameters
 
-*ptr*
- The C-string whose characters are to be used to initialize the `string` being constructed. This value cannot be a null pointer.
+*ptr*<br/>
+The C-string whose characters are to be used to initialize the `string` being constructed. This value cannot be a null pointer.
 
-*_Al*
- The storage allocator class for the string object being constructed.
+*_Al*<br/>
+The storage allocator class for the string object being constructed.
 
-*count*
- The number of characters to be initialized.
+*count*<br/>
+The number of characters to be initialized.
 
-*right*
- The string to initialize the string being constructed.
+*right*<br/>
+The string to initialize the string being constructed.
 
-*_Roff*
- The index of a character in a string that is the first to be used to initialize character values for the string being constructed.
+*_Roff*<br/>
+The index of a character in a string that is the first to be used to initialize character values for the string being constructed.
 
-*_Ch*
- The character value to be copied into the string being constructed.
+*_Ch*<br/>
+The character value to be copied into the string being constructed.
 
-*first*
- An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
+*first*<br/>
+An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
 
-*last*
- An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
+*last*<br/>
+An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
 
 ### Return Value
 
@@ -756,7 +756,7 @@ int main( ) {
    cout << "The full original string str1 is: " << str1 << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_Iter = 'G';
+*str1_Iter = 'G';
    cout << "The first character of the modified str1 is now: "
         << *str1_Iter << endl;
    cout << "The full modified string str1 is now: " << str1 << endl;
@@ -1053,26 +1053,26 @@ int compare(
 
 ### Parameters
 
-*str*
- The string that is to be compared to the operand string.
+*str*<br/>
+The string that is to be compared to the operand string.
 
-*_Pos1*
- The index of the operand string at which the comparison begins.
+*_Pos1*<br/>
+The index of the operand string at which the comparison begins.
 
-*_Num1*
- The maximum number of characters from the operand string to be compared.
+*_Num1*<br/>
+The maximum number of characters from the operand string to be compared.
 
-*_Num2*
- The maximum number of characters from the parameter string to be compared.
+*_Num2*<br/>
+The maximum number of characters from the parameter string to be compared.
 
-*_Off*
- The index of the parameter string at which the comparison begins.
+*_Off*<br/>
+The index of the parameter string at which the comparison begins.
 
-*count*
- The maximum number of characters from the parameter string to be compared.
+*count*<br/>
+The maximum number of characters from the parameter string to be compared.
 
-*ptr*
- The C-string to be compared to the operand string.
+*ptr*<br/>
+The C-string to be compared to the operand string.
 
 ### Return Value
 
@@ -1253,14 +1253,14 @@ The operand string is equal to the parameter string.
 The operand string is: AACAB
 The parameter string is: CAB
 The last three characters of the operand string
- are equal to the parameter string.
+are equal to the parameter string.
 The first three characters of the operand string
- are less than the parameter string.
+are less than the parameter string.
 
 The operand string is: AACAB
 The parameter string is: DCABD
 The three characters from position 2 of the operand string are equal to
- the 3 characters parameter string from position 1.
+the 3 characters parameter string from position 1.
 
 The operand string is: ABC
 The parameter C-string is: DEF
@@ -1269,12 +1269,12 @@ The operand string is less than the parameter C-string.
 The operand string is: AACAB
 The parameter string is: CAB
 The last three characters of the operand string
- are equal to the parameter C-string.
+are equal to the parameter C-string.
 
 The operand string is: AACAB
 The parameter C-string is: ACAB
 The 3 characters from position 2 of the operand string are equal to
- the first 3 characters of the parameter C-string.
+the first 3 characters of the parameter C-string.
 ```
 
 ## <a name="const_iterator"></a>  basic_string::const_iterator
@@ -1382,14 +1382,14 @@ size_type copy(
 
 ### Parameters
 
-*ptr*
- The target character array to which the elements are to be copied.
+*ptr*<br/>
+The target character array to which the elements are to be copied.
 
 _ *Count*
- The number of characters to be copied, at most, from the source string.
+The number of characters to be copied, at most, from the source string.
 
-*_Off*
- The beginning position in the source string from which copies are to be made.
+*_Off*<br/>
+The beginning position in the source string from which copies are to be made.
 
 ### Return Value
 
@@ -1488,17 +1488,17 @@ size_type _Copy_s(
 
 ### Parameters
 
-*dest*
- The target character array to which the elements are to be copied.
+*dest*<br/>
+The target character array to which the elements are to be copied.
 
-*dest_size*
- The size of *dest*.
+*dest_size*<br/>
+The size of *dest*.
 
 _ *Count*
- The number of characters to be copied, at most, from the source string.
+The number of characters to be copied, at most, from the source string.
 
-*_Off*
- The beginning position in the source string from which copies are to be made.
+*_Off*<br/>
+The beginning position in the source string from which copies are to be made.
 
 ### Return Value
 
@@ -1766,7 +1766,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_Iter = 'T';
+*str1_Iter = 'T';
    cout << "The last character-letter of the modified str1 is now: "
         << *str1_Iter << endl;
    cout << "The modified string str1 is now: " << str1 << endl;
@@ -1810,20 +1810,20 @@ basic_string<CharType, Traits, Allocator>& erase(
 
 ### Parameters
 
-*first*
- An iterator addressing the position of the first element in the range to be erased.
+*first*<br/>
+An iterator addressing the position of the first element in the range to be erased.
 
-*last*
- An iterator addressing the position one past the last element in the range to be erased.
+*last*<br/>
+An iterator addressing the position one past the last element in the range to be erased.
 
-*_It*
- An iterator addressing the position of the element in the string to be erased.
+*_It*<br/>
+An iterator addressing the position of the element in the string to be erased.
 
-*_Pos*
- The index of the first character in the string to be removed.
+*_Pos*<br/>
+The index of the first character in the string to be removed.
 
-*count*
- The number of elements that will be removed if there are as many in the range of the string beginning with *_Pos*.
+*count*<br/>
+The number of elements that will be removed if there are as many in the range of the string beginning with *_Pos*.
 
 ### Return Value
 
@@ -1922,20 +1922,20 @@ size_type find(
 
 ### Parameters
 
-*_Ch*
- The character value for which the member function is to search.
+*_Ch*<br/>
+The character value for which the member function is to search.
 
-*_Off*
- Index of the position at which the search is to begin.
+*_Off*<br/>
+Index of the position at which the search is to begin.
 
-*ptr*
- The C-string for which the member function is to search.
+*ptr*<br/>
+The C-string for which the member function is to search.
 
-*count*
- The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+*count*<br/>
+The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*
- The string for which the member function is to search.
+*str*<br/>
+The string for which the member function is to search.
 
 ### Return Value
 
@@ -2059,7 +2059,7 @@ The Character 'x' was not found in str1.
 
 The original string str2 is: Let me make this perfectly clear.
 The index of the 1st element of 'perfect' after
- the 5th position in str2 is: 17
+the 5th position in str2 is: 17
 The substring 'imperfect' was not found in str2 .
 
 The original string str3 is: This is a sample string for this program
@@ -2068,7 +2068,7 @@ The index of the next occurrence of 'for' is in str3 begins at: 24
 
 The original string str4 is: clearly this perfectly unclear.
 The index of the 1st element of 'clear' after
- the 5th position in str4 is: 25
+the 5th position in str4 is: 25
 The index of the 1st element of 'clear' in str4 is: 0
 ```
 
@@ -2100,20 +2100,20 @@ size_type find_first_not_of(
 
 ### Parameters
 
-*_Ch*
- The character value for which the member function is to search.
+*_Ch*<br/>
+The character value for which the member function is to search.
 
-*_Off*
- Index of the position at which the search is to begin.
+*_Off*<br/>
+Index of the position at which the search is to begin.
 
-*ptr*
- The C-string for which the member function is to search.
+*ptr*<br/>
+The C-string for which the member function is to search.
 
-*count*
- The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+*count*<br/>
+The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*
- The string for which the member function is to search.
+*str*<br/>
+The string for which the member function is to search.
 
 ### Return Value
 
@@ -2246,21 +2246,21 @@ The index of the 'non x' found in str1 is: 1
 
 The original string str2 is: BBB-1111
 Elements of the substring 'B1' were not
- found in str2 after the 6th position.
+found in str2 after the 6th position.
 The index of the 1st element of 'B2' after
- the 0th position in str2 is: 3
+the 0th position in str2 is: 3
 
 The original string str3 is: 444-555-GGG
 The index of the 1st occurrence of an element in str3
- other than one of the characters in '45G' is: 3
+other than one of the characters in '45G' is: 3
 The index of the second occurrence of an element of '45G' in str3
- after the 0th position is: 7
+after the 0th position is: 7
 
 The original string str4 is: 12-ab-12-ab
 The index of the 1st non occurrence of an element of 'ba3' in str4 after
- the 5th position is: 5
+the 5th position is: 5
 The index of the 1st non occurrence of an element of '12' in str4 after
- the 0th position is: 2
+the 0th position is: 2
 ```
 
 ## <a name="find_first_of"></a>  basic_string::find_first_of
@@ -2291,20 +2291,20 @@ size_type find_first_of(
 
 ### Parameters
 
-*_Ch*
- The character value for which the member function is to search.
+*_Ch*<br/>
+The character value for which the member function is to search.
 
-*_Off*
- Index of the position at which the search is to begin.
+*_Off*<br/>
+Index of the position at which the search is to begin.
 
-*ptr*
- The C-string for which the member function is to search.
+*ptr*<br/>
+The C-string for which the member function is to search.
 
-*count*
- The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+*count*<br/>
+The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*
- The string for which the member function is to search.
+*str*<br/>
+The string for which the member function is to search.
 
 ### Return Value
 
@@ -2436,21 +2436,21 @@ The character 'x' was not found in str1.
 
 The original string str2 is: ABCD-1234-ABCD-1234
 The index of the 1st occurrence of an element of 'B1' in str2 after
- the 6th position is: 11
+the 6th position is: 11
 The index of the 1st element of 'D2' after
- the 0th position in str2 is: 3
+the 0th position in str2 is: 3
 
 The original string str3 is: 123-abc-123-abc-456-EFG-456-EFG
 The index of the 1st occurrence of an element of '5G' in str3 after
- the 0th position is: 17
+the 0th position is: 17
 The index of the second occurrence of an element of '5G' in str3
- after the 0th position is: 22
+after the 0th position is: 22
 
 The original string str4 is: 12-ab-12-ab
 The index of the 1st occurrence of an element of 'ba3' in str4 after
- the 5th position is: 9
+the 5th position is: 9
 The index of the 1st occurrence of an element of 'a2' in str4 after
- the 0th position is: 1
+the 0th position is: 1
 ```
 
 ## <a name="find_last_not_of"></a>  basic_string::find_last_not_of
@@ -2481,20 +2481,20 @@ size_type find_last_not_of(
 
 ### Parameters
 
-*_Ch*
- The character value for which the member function is to search.
+*_Ch*<br/>
+The character value for which the member function is to search.
 
-*_Off*
- Index of the position at which the search is to finish.
+*_Off*<br/>
+Index of the position at which the search is to finish.
 
-*ptr*
- The C-string for which the member function is to search.
+*ptr*<br/>
+The C-string for which the member function is to search.
 
-*count*
- The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+*count*<br/>
+The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*
- The string for which the member function is to search.
+*str*<br/>
+The string for which the member function is to search.
 
 ### Return Value
 
@@ -2624,25 +2624,25 @@ int main( )
 ```Output
 The original string str1 is: dddd-1dd4-abdd
 The index of the last non 'd'
- found before the 7th position in str1 is: 5
+found before the 7th position in str1 is: 5
 The index of the non 'd' found in str1 is: 11
 
 The original string str2 is: BBB-1111
 The index of the last occurrence of a element
- not of 'B1' in str2 before the 6th position is: 3
+not of 'B1' in str2 before the 6th position is: 3
 The elements of the substring 'B-1' were not found in str2 .
 
 The original string str3 is: 444-555-GGG
 The index of the last occurrence of an element in str3
- other than one of the characters in '45G' is: 7
+other than one of the characters in '45G' is: 7
 The index of the penultimate occurrence of an element
- not in '45G' in str3 is: 3
+not in '45G' in str3 is: 3
 
 The original string str4 is: 12-ab-12-ab
 The index of the last occurrence of an element not
- in 'b-a' in str4 before the 5th position is: 1
+in 'b-a' in str4 before the 5th position is: 1
 The index of the last occurrence of an element not in '12'
- in str4 before the end position is: 10
+in str4 before the end position is: 10
 ```
 
 ## <a name="find_last_of"></a>  basic_string::find_last_of
@@ -2673,20 +2673,20 @@ size_type find_last_of(
 
 ### Parameters
 
-*_Ch*
- The character value for which the member function is to search.
+*_Ch*<br/>
+The character value for which the member function is to search.
 
-*_Off*
- Index of the position at which the search is to finish.
+*_Off*<br/>
+Index of the position at which the search is to finish.
 
-*ptr*
- The C-string for which the member function is to search.
+*ptr*<br/>
+The C-string for which the member function is to search.
 
-*count*
- The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+*count*<br/>
+The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*
- The string for which the member function is to search.
+*str*<br/>
+The string for which the member function is to search.
 
 ### Return Value
 
@@ -2807,19 +2807,19 @@ The character 'x' was not found in str1.
 
 The original string str2 is: ABCD-1234-ABCD-1234
 The index of the last occurrence of an element of 'B1' in str2 before
- the 12th position is: 11
+the 12th position is: 11
 The index of the last element of 'D2' after
- the 0th position in str2 is: 16
+the 0th position in str2 is: 16
 
 The original string str3 is: 456-EFG-456-EFG
 The index of the last occurrence of an element of '5E' in str3 before
- the 8th position is: 4
+the 8th position is: 4
 
 The original string str4 is: 12-ab-12-ab
 The index of the last occurrence of an element of 'ba3' in str4 before
- the 8th position is: 4
+the 8th position is: 4
 The index of the last occurrence of an element of 'a2' in str4 before
- the 0th position is: 9
+the 0th position is: 9
 ```
 
 ## <a name="front"></a>  basic_string::front
@@ -2941,32 +2941,32 @@ void insert(
 
 ### Parameters
 
-*_P0*
- The index of the position behind the point of insertion the new characters.
+*_P0*<br/>
+The index of the position behind the point of insertion the new characters.
 
-*ptr*
- The C-string to be wholly or partly inserted into the string.
+*ptr*<br/>
+The C-string to be wholly or partly inserted into the string.
 
-*count*
- The number of characters to be inserted.
+*count*<br/>
+The number of characters to be inserted.
 
-*str*
- The string to be wholly or partly inserted into the target string.
+*str*<br/>
+The string to be wholly or partly inserted into the target string.
 
-*_Off*
- The index of the part of the source string supplying the characters to be appended.
+*_Off*<br/>
+The index of the part of the source string supplying the characters to be appended.
 
-*_Ch*
- The character value of the elements to be inserted.
+*_Ch*<br/>
+The character value of the elements to be inserted.
 
-*_It*
- An iterator addressing the position behind which a character is to be inserted.
+*_It*<br/>
+An iterator addressing the position behind which a character is to be inserted.
 
-*first*
- An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
+*first*<br/>
+An input iterator, const_pointer, or const_iterator addressing the first element in the source range to be inserted.
 
-*last*
- An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
+*last*<br/>
+An input iterator, const_pointer, or const_iterator addressing the position of the one beyond the last element in the source range to be inserted.
 
 ### Return Value
 
@@ -3246,14 +3246,14 @@ basic_string<CharType, Traits, Allocator>& operator+=(
 
 ### Parameters
 
-*_Ch*
- The character to be appended.
+*_Ch*<br/>
+The character to be appended.
 
-*ptr*
- The characters of the C-string to be appended.
+*ptr*<br/>
+The characters of the C-string to be appended.
 
-*right*
- The characters of the string to be appended.
+*right*<br/>
+The characters of the string to be appended.
 
 ### Return Value
 
@@ -3338,14 +3338,14 @@ basic_string<CharType, Traits, Allocator>& operator=(
 
 ### Parameters
 
-*_Ch*
- The character value to be assigned.
+*_Ch*<br/>
+The character value to be assigned.
 
-*ptr*
- A pointer to the characters of the C-string to be assigned to the target string.
+*ptr*<br/>
+A pointer to the characters of the C-string to be assigned to the target string.
 
-*right*
- The source string whose characters are to be assigned to the target string.
+*right*<br/>
+The source string whose characters are to be assigned to the target string.
 
 ### Return Value
 
@@ -3423,8 +3423,8 @@ reference operator[](size_type _Off);
 
 ### Parameters
 
-*_Off*
- The index of the position of the element to be referenced.
+*_Off*<br/>
+The index of the position of the element to be referenced.
 
 ### Return Value
 
@@ -3540,8 +3540,8 @@ void push_back(value_type _Ch);
 
 ### Parameters
 
-*_Ch*
- The character to be added to the end of the string.
+*_Ch*<br/>
+The character to be added to the end of the string.
 
 ### Remarks
 
@@ -3633,7 +3633,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_rIter = 'A';
+*str1_rIter = 'A';
    cout << "The first character-letter of the modified str1 is now: "
         << *str1_rIter << endl;
    cout << "The full modified reversed string str1 is now:\n ";
@@ -3655,10 +3655,10 @@ int main( )
 ```Output
 The first character-letter of the reversed string str1 is: a
 The full reversed string str1 is:
- ablE was I ere I saw elbA
+ablE was I ere I saw elbA
 The first character-letter of the modified str1 is now: A
 The full modified reversed string str1 is now:
- AblE was I ere I saw elbA
+AblE was I ere I saw elbA
 The string str2 is empty.
 ```
 
@@ -3732,7 +3732,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_rIter = 'o';
+*str1_rIter = 'o';
    cout << "The last character-letter of the modified str1 is now: "
         << *str1_rIter << endl;
    cout << "The full modified reversed string str1 is now:\n ";
@@ -3754,10 +3754,10 @@ int main( )
 ```Output
 The last character-letter of the reversed string str1 is: A
 The full reversed string str1 is:
- ablE was I ere I saw elbA
+ablE was I ere I saw elbA
 The last character-letter of the modified str1 is now: o
 The full modified reversed string str1 is now:
- ablE was I ere I saw elbo
+ablE was I ere I saw elbo
 The string str2 is empty.
 ```
 
@@ -3839,41 +3839,41 @@ basic_string<CharType, Traits, Allocator>& replace(
 
 ### Parameters
 
-*str*
- The string that is to be a source of characters for the operand string.
+*str*<br/>
+The string that is to be a source of characters for the operand string.
 
-*_Pos1*
- The index of the operand string at which the replacement begins.
+*_Pos1*<br/>
+The index of the operand string at which the replacement begins.
 
-*_Num1*
- The maximum number of characters to be replaced in the operand string.
+*_Num1*<br/>
+The maximum number of characters to be replaced in the operand string.
 
-*_Pos2*
- The index of the parameter string at which the copying begins.
+*_Pos2*<br/>
+The index of the parameter string at which the copying begins.
 
-*_Num2*
- The maximum number of characters to be used from the parameter C-string.
+*_Num2*<br/>
+The maximum number of characters to be used from the parameter C-string.
 
-*ptr*
- The C-string that is to be a source of characters for the operand string.
+*ptr*<br/>
+The C-string that is to be a source of characters for the operand string.
 
-*_Ch*
- The character to be copied into the operand string.
+*_Ch*<br/>
+The character to be copied into the operand string.
 
 * first0*
- An iterator addressing the first character to be removed in the operand string.
+An iterator addressing the first character to be removed in the operand string.
 
 * last0*
- An iterator addressing the last character to be removed in the operand string.
+An iterator addressing the last character to be removed in the operand string.
 
-*first*
- An iterator, const_pointer, or const_iterator addressing the first character to be copied in the parameter string.
+*first*<br/>
+An iterator, const_pointer, or const_iterator addressing the first character to be copied in the parameter string.
 
-*last*
- An iterator, const_pointer, or const_iterator addressing the last character to be copied in the parameter string.
+*last*<br/>
+An iterator, const_pointer, or const_iterator addressing the last character to be copied in the parameter string.
 
-*count*
- The number of times *_Ch* is copied into the operand string.
+*count*<br/>
+The number of times *_Ch* is copied into the operand string.
 
 ### Return Value
 
@@ -4017,45 +4017,45 @@ The operand string s1o is: AAAAAAAA
 The parameter string s1p is: BBB
 The parameter C-string cs1p is: CCC
 The result of s1o.replace ( 1 , 3 , s1p )
- is the string: ABBBAAAA.
+is the string: ABBBAAAA.
 The result of s1o.replace ( 5 , 3 , cs1p )
- is the string: ABBBACCC.
+is the string: ABBBACCC.
 
 The operand string s2o is: AAAAAAAA
 The parameter string s1p is: BBB
 The parameter C-string cs2p is: CCC
 The result of s2o.replace (1, 3, s2p, 1, 2)
- is the string: ABBAAAA.
+is the string: ABBAAAA.
 The result of s2o.replace (4 ,3 ,cs2p)
- is the string: ABBAC.
+is the string: ABBAC.
 
 The operand string s3o is: AAAAAAAA
 The parameter character c1p is: C
 The result of s3o.replace(1, 3, 4, ch3p)
- is the string: ACCCCAAAA.
+is the string: ACCCCAAAA.
 
 The operand string s4o is: AAAAAAAA
 The parameter string s4p is: BBB
 The parameter C-string cs4p is: CCC
 The result of s1o.replace (IterF0, IterL0, s4p)
- is the string: BBBAAAAA.
+is the string: BBBAAAAA.
 The result of s4o.replace (IterF0, IterL0, cs4p)
- is the string: CCCAAAAA.
+is the string: CCCAAAAA.
 
 The operand string s5o is: AAAAAAAF
 The parameter C-string cs5p is: CCCBB
 The result of s5o.replace (IterF1, IterL1, cs4p ,4)
- is the string: CCCBAAAF.
+is the string: CCCBAAAF.
 
 The operand string s6o is: AAAAAAAG
 The parameter character ch6p is: q
 The result of s6o.replace (IterF1, IterL1, 4, ch6p)
- is the string: qqqqAAAAG.
+is the string: qqqqAAAAG.
 
 The operand string s7o is: OOOOOOO
 The parameter string s7p is: PPPP
 The result of s7o.replace (IterF3 ,IterL3 ,IterF4 ,IterL4)
- is the string: OPPOOOO.
+is the string: OPPOOOO.
 ```
 
 ## <a name="reserve"></a>  basic_string::reserve
@@ -4068,8 +4068,8 @@ void reserve(size_type count = 0);
 
 ### Parameters
 
-*count*
- The number of characters for which memory is being reserved.
+*count*<br/>
+The number of characters for which memory is being reserved.
 
 ### Remarks
 
@@ -4163,11 +4163,11 @@ void resize(
 
 ### Parameters
 
-*count*
- The new size of the string.
+*count*<br/>
+The new size of the string.
 
-*_Ch*
- The value that appended characters are initialized with if additional elements are required.
+*_Ch*<br/>
+The value that appended characters are initialized with if additional elements are required.
 
 ### Remarks
 
@@ -4302,20 +4302,20 @@ size_type rfind(
 
 ### Parameters
 
-*_Ch*
- The character value for which the member function is to search.
+*_Ch*<br/>
+The character value for which the member function is to search.
 
-*_Off*
- Index of the position at which the search is to begin.
+*_Off*<br/>
+Index of the position at which the search is to begin.
 
-*ptr*
- The C-string for which the member function is to search.
+*ptr*<br/>
+The C-string for which the member function is to search.
 
-*count*
- The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
+*count*<br/>
+The number of characters, counting forward from the first character, in the C-string for which the member function is to search.
 
-*str*
- The string for which the member function is to search.
+*str*<br/>
+The string for which the member function is to search.
 
 ### Return Value
 
@@ -4440,7 +4440,7 @@ The character 'x' was not found in str1.
 
 The original string str2 is: Let me make this perfectly clear.
 The index of the 1st element of 'perfect' before
- the 30th position in str2 is: 17
+the 30th position in str2 is: 17
 The substring 'imperfect' was not found in str2 .
 
 The original string str3 is: It is a nice day. I am happy.
@@ -4585,11 +4585,11 @@ basic_string<CharType, Traits, Allocator> substr(
 
 ### Parameters
 
-*_Off*
- An index locating the element at the position from which the copy of the string is made, with a default value of 0.
+*_Off*<br/>
+An index locating the element at the position from which the copy of the string is made, with a default value of 0.
 
-*count*
- The number of characters that are to be copied if they are present.
+*count*<br/>
+The number of characters that are to be copied if they are present.
 
 ### Return Value
 
@@ -4623,13 +4623,13 @@ int main( )
 
 ```Output
 The original string str1 is:
- Heterological paradoxes are persistent.
+Heterological paradoxes are persistent.
 
 The substring str1 copied is: logical
 
 The default substring str3 is:
- Heterological paradoxes are persistent.
- which is the entire original string.
+Heterological paradoxes are persistent.
+which is the entire original string.
 ```
 
 ## <a name="swap"></a>  basic_string::swap
@@ -4643,8 +4643,8 @@ void swap(
 
 ### Parameters
 
-*str*
- The source string whose elements are to be exchanged with those in the destination string.
+*str*<br/>
+The source string whose elements are to be exchanged with those in the destination string.
 
 ### Remarks
 
@@ -4686,11 +4686,11 @@ int main( )
 
 ```Output
 Before swapping string s1 and s2:
- The basic_string s1 = Tweedledee.
- The basic_string s2 = Tweedledum.
+The basic_string s1 = Tweedledee.
+The basic_string s2 = Tweedledum.
 After swapping string s1 and s2:
- The basic_string s1 = Tweedledum.
- The basic_string s2 = Tweedledee.
+The basic_string s1 = Tweedledum.
+The basic_string s2 = Tweedledee.
 ```
 
 ## <a name="traits_type"></a>  basic_string::traits_type
