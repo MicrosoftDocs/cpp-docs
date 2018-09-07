@@ -23,7 +23,7 @@ template <class Elem, class RXtraits>
 class basic_regex
 ```
 
-### Parameters
+## Parameters
 
 *Elem*<br/>
 The type of elements to match.
