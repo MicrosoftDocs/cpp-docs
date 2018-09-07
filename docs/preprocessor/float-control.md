@@ -23,9 +23,9 @@ Specifies floating-point behavior for a function.
 ## Options
 
 *value*, *setting* [, **push**]<br/>
-Specifies floating-point behavior. *value* can be **precise** or **except**. For more information, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md). The *setting* can either be **on** or **off**.
+Specifies floating-point behavior. *value* can be **precise**, **strict**, or **except**. For more information, see [/fp (Specify Floating-Point Behavior)](../build/reference/fp-specify-floating-point-behavior.md). The *setting* can either be **on** or **off**.
 
-If *value* is **precise**, the settings for both **precise** and **except** are specified by *setting*. **except** can only be set to **on** when **precise** is also set to **on**.
+If *value* is **strict**, the settings for both **strict** and **except** are specified by *setting*. **except** can only be set to **on** when **precise** or **strict** is also set to **on**.
 
 If the optional **push** token is added, the current setting for *value* is pushed on to the internal compiler stack.
 
