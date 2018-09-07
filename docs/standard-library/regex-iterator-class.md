@@ -22,37 +22,10 @@ Iterator class for matches.
 template<class BidIt,
    class Elem = typename std::iterator_traits<BidIt>::value_type,
    class RxTraits = regex_traits<Elem> >
-class regex_iterator {
-public:
-   typedef basic_regex<Elem, RXtraits> regex_type;
-   typedef match_results<BidIt> value_type;
-   typedef std::forward_iterator_tag iterator_category;
-   typedef std::ptrdiff_t difference_type;
-   typedef const match_results<BidIt>* pointer;
-   typedef const match_results<BidIt>& reference;
-
-   regex_iterator();
-   regex_iterator(
-      BidIt first, BidIt last, const regex_type& re,
-      regex_constants::match_flag_type f = regex_constants::match_default);
-
-   bool operator==(const regex_iterator& right);
-   bool operator!=(const regex_iterator& right);
-   const match_results<BidIt>& operator*();
-   const match_results<BidIt> * operator->();
-   regex_iterator& operator++();
-   regex_iterator& operator++(int);
-
-private:
-   BidIt begin; // exposition only
-   BidIt end; // exposition only
-   regex_type *pregex;     // exposition only
-   regex_constants::match_flag_type flags; // exposition only
-   match_results<BidIt> match; // exposition only
-   };
+class regex_iterator 
 ```
 
-### Parameters
+## Parameters
 
 *BidIt*<br/>
 The iterator type for submatches.
