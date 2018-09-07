@@ -73,11 +73,11 @@ class basic_regex {
 
 ### Parameters
 
-*Elem*
- The type of elements to match.
+*Elem*<br/>
+The type of elements to match.
 
-*RXtraits*
- Traits class for elements.
+*RXtraits*<br/>
+Traits class for elements.
 
 ## Remarks
 
@@ -99,6 +99,37 @@ Some functions take an operand sequence that defines a regular expression. You c
 
 These member functions also take an argument `flags` that specifies various options for the interpretation of the regular expression in addition to those described by the *RXtraits* type.
 
+### Constructors
+
+|Constructor|Description|
+|-|-|
+|[basic_regex](#basic_regex)|Construct the regular expression object.|
+
+### Typedefs
+
+|Type name|Description|
+|-|-|
+|[locale_type](#locale_type)|The type of the stored locale object.|
+|[value_type](#value_type)|The element type.|
+
+### Member functions
+
+|Member function|Description|
+|-|-|
+|[assign](#assign)|Assigns a value to the regular expression object.|
+|[flag_type](#flag_type)|The type of syntax option flags.|
+|[flags](#flags)|Returns syntax option flags.|
+|[get_loc](#get_loc)|Returns the stored locale object.|
+|[imbue](#imbue)|Alters the stored locale object.|
+|[mark_count](#mark_count)|Returns number of subexpressions matched.|
+|[swap](#swap)|Swaps two regular expression objects.|
+
+### Operators
+
+|Operator|Description|
+|-|-|
+|[operator=](#op_eq)|Assigns a value to the regular expression object.|
+
 ## Requirements
 
 **Header:** \<regex>
@@ -107,7 +138,7 @@ These member functions also take an argument `flags` that specifies various opti
 
 ## <a name="assign"></a>  basic_regex::assign
 
-Assigns a value to the regular expressoin object.
+Assigns a value to the regular expression object.
 
 ```cpp
 basic_regex& assign(
@@ -139,38 +170,38 @@ basic_regex& assign(
 
 ### Parameters
 
-*STtraits*
- Traits class for a string source.
+*STtraits*<br/>
+Traits class for a string source.
 
-*STalloc*
- Allocator class for a string source.
+*STalloc*<br/>
+Allocator class for a string source.
 
-*InIt*
- Input iterator type for a range source.
+*InIt*<br/>
+Input iterator type for a range source.
 
-*right*
- Regex source to copy.
+*right*<br/>
+Regex source to copy.
 
-*ptr*
- Pointer to beginning of sequence to copy.
+*ptr*<br/>
+Pointer to beginning of sequence to copy.
 
-*flags*
- Syntax option flags to add while copying.
+*flags*<br/>
+Syntax option flags to add while copying.
 
-*len/TD>*
- Length of sequence to copy.
+*len/TD>*<br/>
+Length of sequence to copy.
 
-*str*
- String to copy.
+*str*<br/>
+String to copy.
 
-*first*
- Beginning of sequence to copy.
+*first*<br/>
+Beginning of sequence to copy.
 
-*last*
- End of sequence to copy.
+*last*<br/>
+End of sequence to copy.
 
-*IList*
- The initializer_list to copy.
+*IList*<br/>
+The initializer_list to copy.
 
 ### Remarks
 
@@ -251,7 +282,6 @@ int main()
         << regex_match("abc", rx6);
     cout << endl;
 }
-
 ```
 
 ```Output
@@ -295,38 +325,38 @@ explicit basic_regex(
 
 ### Parameters
 
-*STtraits*
- Traits class for a string source.
+*STtraits*<br/>
+Traits class for a string source.
 
-*STalloc*
- Allocator class for a string source.
+*STalloc*<br/>
+Allocator class for a string source.
 
-*InIt*
- Input iterator type for a range source.
+*InIt*<br/>
+Input iterator type for a range source.
 
-*right*
- Regex source to copy.
+*right*<br/>
+Regex source to copy.
 
-*ptr*
- Pointer to beginning of sequence to copy.
+*ptr*<br/>
+Pointer to beginning of sequence to copy.
 
-*flags*
- Syntax option flags to add while copying.
+*flags*<br/>
+Syntax option flags to add while copying.
 
-*len/TD>*
- Length of sequence to copy.
+*len/TD>*<br/>
+Length of sequence to copy.
 
-*str*
- String to copy.
+*str*<br/>
+String to copy.
 
-*first*
- Beginning of sequence to copy.
+*first*<br/>
+Beginning of sequence to copy.
 
-*last*
- End of sequence to copy.
+*last*<br/>
+End of sequence to copy.
 
-*IList*
- The initializer_list to copy.
+*IList*<br/>
+The initializer_list to copy.
 
 ### Remarks
 
@@ -411,7 +441,6 @@ int main()
         << regex_match("abc", rx6);
     cout << endl;
 }
-
 ```
 
 ```Output
@@ -499,7 +528,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -596,7 +624,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -693,7 +720,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -719,8 +745,8 @@ locale_type imbue(locale_type loc);
 
 ### Parameters
 
-*loc*
- The locale object to store.
+*loc*<br/>
+The locale object to store.
 
 ### Remarks
 
@@ -795,7 +821,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -892,7 +917,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -989,7 +1013,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1020,17 +1043,17 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 
 ### Parameters
 
-*STtraits*
- Traits class for a string source.
+*STtraits*<br/>
+Traits class for a string source.
 
-*STalloc*
- Allocator class for a string source.
+*STalloc*<br/>
+Allocator class for a string source.
 
-*right*
- Regex source to copy.
+*right*<br/>
+Regex source to copy.
 
-*str*
- String to copy.
+*str*<br/>
+String to copy.
 
 ### Remarks
 
@@ -1105,7 +1128,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1131,8 +1153,8 @@ void swap(basic_regex& right) throw();
 
 ### Parameters
 
-*right*
- The regular expression object to swap with.
+*right*<br/>
+The regular expression object to swap with.
 
 ### Remarks
 
@@ -1207,7 +1229,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
@@ -1304,7 +1325,6 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
