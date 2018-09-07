@@ -30,6 +30,12 @@ namespace regex_constants {
 
 The namespace `regex_constants` encapsulates several flag types and their associated flag values.
 
+|||
+|-|-|
+|[error_type](#error_type)|Flags for reporting regular expression syntax errors.|
+|[match_flag_type](#match_flag_type)|Flags for regular expression matching options.|
+|[syntax_option_type](#syntax_option_type)|Flags for selecting syntax options.|
+
 ## Requirements
 
 **Header:** \<regex>
