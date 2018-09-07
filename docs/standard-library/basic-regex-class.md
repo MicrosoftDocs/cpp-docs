@@ -21,41 +21,6 @@ Wraps a regular expression.
 ```cpp
 class basic_regex {
    public:
-   basic_regex();
-   explicit basic_regex(const Elem *ptr,
-   flag_type flags = ECMAScript);
-   basic_regex(const Elem *ptr, size_type len,
-   flag_type flags = ECMAScript);
-   basic_regex(const basic_regex& right);
-   template <class STtraits, class STalloc>
-   explicit basic_regex(const basic_string<Elem, STtraits, STalloc>& str,
-   flag_type flags = ECMAScript);
-   template <class InIt>
-   explicit basic_regex(InIt first, InIt last,
-   flag_type flags = ECMAScript);
-   basic_regex& operator=(const basic_regex& right);
-   basic_regex& operator=(const Elem *ptr);
-   template <class STtraits, class STalloc>
-   basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
-   basic_regex& assign(const basic_regex& right);
-   basic_regex& assign(const Elem *ptr,
-   flag_type flags = ECMAScript);
-   basic_regex& assign(const Elem *ptr, size_type len,
-   flag_type flags = ECMAScript);
-   template <class STtraits, class STalloc>
-   basic_regex& assign(const basic_string<Elem, STtraits, STalloc>& str,
-   flag_type flags = ECMAScript);
-   template <class InIt>
-   basic_regex& assign(InIt first, InIt last,
-   flag_type flags = ECMAScript);
-   locale_type imbue(locale_type loc);
-   locale_type getloc() const;
-   void swap(basic_regex& other) throw();
-   unsigned mark_count() const;
-   flag_type flags() const;
-   typedef Elem value_type;
-   typedef regex_constants::syntax_option_type flag_type;
-   typedef typename RXtraits::locale_type locale_type;
    static const flag_type icase = regex_constants::icase;
    static const flag_type nosubs = regex_constants::nosubs;
    static const flag_type optimize = regex_constants::optimize;
@@ -69,7 +34,7 @@ class basic_regex {
    private:
    RXtraits traits;    // exposition only
    };
-   ```
+```
 
 ### Parameters
 
@@ -109,6 +74,7 @@ These member functions also take an argument `flags` that specifies various opti
 
 |Type name|Description|
 |-|-|
+|[flag_type](#flag_type)|The type of syntax option flags.|
 |[locale_type](#locale_type)|The type of the stored locale object.|
 |[value_type](#value_type)|The element type.|
 
@@ -117,7 +83,6 @@ These member functions also take an argument `flags` that specifies various opti
 |Member function|Description|
 |-|-|
 |[assign](#assign)|Assigns a value to the regular expression object.|
-|[flag_type](#flag_type)|The type of syntax option flags.|
 |[flags](#flags)|Returns syntax option flags.|
 |[get_loc](#get_loc)|Returns the stored locale object.|
 |[imbue](#imbue)|Alters the stored locale object.|
