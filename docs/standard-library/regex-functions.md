@@ -10,10 +10,12 @@ helpviewer_keywords: ["std::regex_match [C++]", "std::regex_replace [C++]", "std
 ---
 # &lt;regex&gt; functions
 
-||||
-|-|-|-|
-|[regex_match](#regex_match)|[regex_replace](#regex_replace)|[regex_search](#regex_search)|
-|[swap](#swap)|
+|||
+|-|-|
+|[regex_match](#regex_match)|Tests whether a regular expression matches the entire target string.|
+|[regex_replace](#regex_replace)|Replaces matched regular expressions.|
+|[regex_search](#regex_search)|Searches for a regular expression match.|
+|[swap](#swap)|Swaps two `basic_regex` or `match_results` objects.|
 
 ## <a name="regex_match"></a>  regex_match
 
