@@ -23,10 +23,7 @@ class regex_error
 : public std::runtime_error {
 public:
     explicit regex_error(regex_constants::error_code error);
-
     regex_constants::error_code code() const;
-
-
 };
 ```
 
@@ -34,28 +31,28 @@ public:
 
 The class describes an exception object thrown to report an error in the construction or use of a `basic_regex` object.
 
+### Constructors
+
+|Constructor|Description|
+|-|-|
+|[regex_error](#regex_error)|Constructs the object.|
+
+### Member functions
+
+|Member function|Description|
+|-|-|
+|[code](#code)|Returns the error code.|
+
 ## Requirements
 
 **Header:** \<regex>
 
 **Namespace:** std
 
-## <a name="code"></a>  regex_error::code
-
-Returns the error code.
+## Example
 
 ```cpp
-regex_constants::error_code code() const;
-```
-
-### Remarks
-
-The member function returns the value that was passed to the object's constructor.
-
-### Example
-
-```cpp
-// std__regex__regex_error_code.cpp
+// std__regex__regex_error.cpp
 // compile with: /EHsc
 #include <regex>
 #include <iostream>
@@ -82,12 +79,23 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
 regex error: unbalanced parentheses
 ```
+
+## <a name="code"></a>  regex_error::code
+
+Returns the error code.
+
+```cpp
+regex_constants::error_code code() const;
+```
+
+### Remarks
+
+The member function returns the value that was passed to the object's constructor.
 
 ## <a name="regex_error"></a>  regex_error::regex_error
 
@@ -105,43 +113,6 @@ The error code.
 ### Remarks
 
 The constructor constructs an object that holds the value *error*.
-
-### Example
-
-```cpp
-// std__regex__regex_error_construct.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex_error paren(std::regex_constants::error_paren);
-
-    try
-        {
-        std::regex rx("(a");
-        }
-    catch (const std::regex_error& rerr)
-        {
-        std::cout << "regex error: "
-            << (rerr.code() == paren.code()
-                 "unbalanced parentheses" : "")
-            << std::endl;
-        }
-    catch (...)
-        {
-        std::cout << "unknown exception" << std::endl;
-        }
-
-    return (0);
-    }
-
-```
-
-```Output
-regex error: unbalanced parentheses
-```
 
 ## See also
 
