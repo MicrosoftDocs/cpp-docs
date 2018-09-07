@@ -27,8 +27,7 @@ The first *definition* can be on the same line as the `EXPORTS` keyword or on a 
 
 The syntax for an export *definition* is:
 
-```DEF
-entryname[=internal_name|other_module.another_exported_name] [@Ordinal [NONAME]] [[PRIVATE] | [DATA]]
+> *entryname*\[__=__*internal_name*|*other_module.exported_name*] \[**\@**_ordinal_ [**NONAME**] ] \[ [**PRIVATE**] | [**DATA**] ]
 ```
 
 *entryname* is the function or variable name that you want to export. This is required. If the name that you export differs from the name in the DLL, specify the export's name in the DLL by using *internal_name*. For example, if your DLL exports a function `func1` and you want callers to use it as `func2`, you would specify:
@@ -45,18 +44,18 @@ EXPORTS
    func2=other_module.func1
 ```
 
-If the name that you export is from another module that exports by ordinal, specify the export's ordinal in the DLL by using *other_module.#ordinal_number*. For example, if your DLL exports a function from the other module where it is ordinal 42, and you want callers to use it as `func2`, you would specify:
+If the name that you export is from another module that exports by ordinal, specify the export's ordinal in the DLL by using *other_module*.__#__*ordinal*. For example, if your DLL exports a function from the other module where it is ordinal 42, and you want callers to use it as `func2`, you would specify:
 
 ```DEF
 EXPORTS
    func2=other_module.#42
 ```
 
-Because the Visual C++ compiler uses name decoration for C++ functions, you must either use the decorated name internal_name or define the exported functions by using extern "C" in the source code. The compiler also decorates C functions that use the [__stdcall](../../cpp/stdcall.md) calling convention with an underscore (\_) prefix and a suffix composed of the at sign (\@) followed by the number of bytes (in decimal) in the argument list.
+Because the Visual C++ compiler uses name decoration for C++ functions, you must either use the decorated name *internal_name* or define the exported functions by using `extern "C"` in the source code. The compiler also decorates C functions that use the [__stdcall](../../cpp/stdcall.md) calling convention with an underscore (\_) prefix and a suffix composed of the at sign (\@) followed by the number of bytes (in decimal) in the argument list.
 
 To find the decorated names produced by the compiler, use the [DUMPBIN](../../build/reference/dumpbin-reference.md) tool or the linker [/MAP](../../build/reference/map-generate-mapfile.md) option. The decorated names are compiler-specific. If you export the decorated names in the .DEF file, executables that link to the DLL must also be built by using the same version of the compiler. This ensures that the decorated names in the caller match the exported names in the .DEF file.
 
-You can use \@*ordinal* to specify that a number, and not the function name, will go into the DLL's export table. Many Windows DLLs export ordinals to support legacy code. It was common to use ordinals in 16-bit Windows code, because it can help minimize the size of a DLL. We don’t recommend exporting functions by ordinal unless your DLL’s clients need it for legacy support. Because the .LIB file will contain the mapping between the ordinal and the function, you can use the function name as you normally would in projects that use the DLL.
+You can use \@*ordinal* to specify that a number, and not the function name, goes into the DLL's export table. Many Windows DLLs export ordinals to support legacy code. It was common to use ordinals in 16-bit Windows code, because it can help minimize the size of a DLL. We don’t recommend exporting functions by ordinal unless your DLL’s clients need it for legacy support. Because the .LIB file will contain the mapping between the ordinal and the function, you can use the function name as you normally would in projects that use the DLL.
 
 By using the optional **NONAME** keyword, you can export by ordinal only and reduce the size of the export table in the resulting DLL. However, if you want to use [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) on the DLL, you must know the ordinal because the name will not be valid.
 
@@ -77,14 +76,14 @@ There are four ways to export a definition, listed in recommended order:
 
 3. An [/EXPORT](../../build/reference/export-exports-a-function.md) specification in a LINK command
 
-4. A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`. The following example shows a #pragma comment directive before a function declaration as shown here, where `_PlainFuncName` is the undecorated name, and `_PlainFuncName@4` is the decorated name of the function:
+4. A [comment](../../preprocessor/comment-c-cpp.md) directive in the source code, of the form `#pragma comment(linker, "/export: definition ")`. The following example shows a #pragma comment directive before a function declaration, where `PlainFuncName` is the undecorated name, and `_PlainFuncName@4` is the decorated name of the function:
 
     ```cpp
     #pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")
     BOOL CALLBACK PlainFuncName( Things * lpParams)
     ```
 
-The #pragma directive is useful if you need to export an undecorated function name, and have different exports depending on the build configuration (for example 32 vs. 64 bit builds).
+The #pragma directive is useful if you need to export an undecorated function name, and have different exports depending on the build configuration (for example, in 32-bit or 64-bit builds).
 
 All four methods can be used in the same program. When LINK builds a program that contains exports, it also creates an import library, unless an .EXP file is used in the build. 
 
