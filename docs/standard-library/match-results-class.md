@@ -96,7 +96,7 @@ The template class describes an object that controls a non-modifiable sequence o
 #include <iostream>
 
 int main()
-    {
+{
     std::regex rx("c(a*)|(b)");
     std::cmatch mr;
 
@@ -112,41 +112,34 @@ int main()
         << ", value == " << mr.suffix() << std::endl;
     std::cout << std::endl;
 
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
+    std::string fmt("\"c(a*)|(b)\" matched \"$&\"\n"
         "\"(a*)\" matched \"$1\"\n"
         "\"(b)\" matched \"$2\"\n");
     std::cout << mr.format(fmt) << std::endl;
     std::cout << std::endl;
 
-// index through submatches
+    // index through submatches
     for (size_t n = 0; n < mr.size(); ++n)
-        {
+    {
         std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
             << mr[n].matched <<
             " at position " << mr.position(n) << std::endl;
         std::cout << "  " << mr.length(n)
             << " chars, value == " << mr[n] << std::endl;
-        }
+    }
     std::cout << std::endl;
 
-// iterate through submatches
+    // iterate through submatches
     for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
+    {
         std::cout << "next submatch: matched == " << std::boolalpha
             << it->matched << std::endl;
         std::cout << "  " << it->length()
             << " chars, value == " << *it << std::endl;
-        }
+    }
     std::cout << std::endl;
 
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
+    // other members
     std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
 
     std::cmatch::allocator_type al = mr.get_allocator();
@@ -165,7 +158,7 @@ int main()
     dif = dif;
 
     return (0);
-    }
+}
 ```
 
 ```Output
@@ -190,8 +183,6 @@ next submatch: matched == true
   3 chars, value == aaa
 next submatch: matched == false
   0 chars, value ==
-
-<caaa>
 empty == false
 ```
 
