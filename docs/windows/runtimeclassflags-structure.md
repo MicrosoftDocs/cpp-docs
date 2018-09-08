@@ -1,12 +1,12 @@
 ---
 title: "RuntimeClassFlags Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/07/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["implements/Microsoft::WRL::RuntimeClassFlags"]
+f1_keywords: ["implements/Microsoft::WRL::RuntimeClassFlags", "implements/Microsoft::WRL::RuntimeClassFlags::value"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["RuntimeClassFlags structure"]
+helpviewer_keywords: ["RuntimeClassFlags structure", "value constant"]
 ms.assetid: 7098d605-bd14-4d51-82f4-3def8296a938
 author: "mikeblome"
 ms.author: "mblome"
@@ -36,7 +36,7 @@ A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) val
 
 |Name|Description|
 |----------|-----------------|
-|[RuntimeClassFlags::value Constant](../windows/runtimeclassflags-value-constant.md)|Contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.|
+|[RuntimeClassFlags::value Constant](#value-constant)|Contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.|
 
 ## Inheritance Hierarchy
 
@@ -48,6 +48,18 @@ A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) val
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## <a name="value-constant"></a>RuntimeClassFlags::value Constant
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+A field that contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.
+  
+### Syntax
+  
+```cpp
+static const unsigned int value = flags;
+```
+  
+### Requirements
+ 
+**Header:** implements.h
+  
+**Namespace:** Microsoft::WRL
