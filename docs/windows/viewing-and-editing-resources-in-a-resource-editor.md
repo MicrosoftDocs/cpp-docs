@@ -1,18 +1,18 @@
 ---
-title: "Viewing and Editing Resources in a Resource Editor | Microsoft Docs"
+title: "Viewing and Editing Resources in a Resource Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vs.resourceview"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resources [Visual Studio], viewing", "rc files, viewing resources", "Resource View pane", "layouts, previewing resource", "code, viewing resources", "resource editors, viewing resources", ".rc files, viewing resources", "resources [Visual Studio], editing"]
+helpviewer_keywords: ["resources [C++], viewing", "layouts, previewing resource", "resource editors [C++], viewing resources", ".rc files [C++], viewing resources", "resources [C++], editing"]
 ms.assetid: ba8bdc07-3f60-43c7-aa5c-d5dd11f0966e
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Viewing and Editing Resources in a Resource Editor
+# Viewing and Editing Resources in a Resource Editor (C++)
 
 Each resource type has a **Resource** editor specific to that resource type. You can rearrange, resize, add controls and features, or otherwise modify aspects of a resource using the associated editor. You can also edit a resource in [text format](../windows/how-to-open-a-resource-script-file-in-text-format.md) and [binary format](../windows/opening-a-resource-for-binary-editing.md).
 

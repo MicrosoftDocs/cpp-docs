@@ -1,20 +1,20 @@
 ---
-title: "Resource Symbols Dialog Box | Microsoft Docs"
+title: "Resource Symbols Dialog Box (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.resourcesymbols"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["New Symbol dialog box", "Resource Symbols dialog box", "Change Symbol dialog box"]
+helpviewer_keywords: ["New Symbol dialog box [C++]", "Resource Symbols dialog box [C++]", "Change Symbol dialog box [C++]"]
 ms.assetid: 9706cde3-1f48-4fcd-bedb-2b03b455e3c1
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Resource Symbols Dialog Box
+# Resource Symbols Dialog Box (C++)
 
-The **Resource Symbols** dialog box allows you to add new resource symbols, change the symbols that are displayed, or skip to the location in the source code where a symbol is in use.
+The **Resource Symbols** C++ dialog box allows you to add new resource symbols, change the symbols that are displayed, or skip to the location in the source code where a symbol is in use.
 
 **Name**  
 Displays the name of the symbol. For more information, see [Symbol Name Restrictions](../windows/symbol-name-restrictions.md).

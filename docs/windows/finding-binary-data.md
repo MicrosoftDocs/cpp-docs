@@ -1,5 +1,5 @@
 ---
-title: "Finding Binary Data | Microsoft Docs"
+title: "Finding Binary Data (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]

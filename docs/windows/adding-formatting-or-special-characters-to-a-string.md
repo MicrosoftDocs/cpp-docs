@@ -1,5 +1,5 @@
 ---
-title: "Adding Formatting or Special Characters to a String | Microsoft Docs"
+title: "Adding Formatting or Special Characters to a String Resource (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Adding Formatting or Special Characters to a String
+# Adding Formatting or Special Characters to a String Resource (C++)
 
 ### To add formatting or special characters to a string
 
