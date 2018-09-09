@@ -45,7 +45,7 @@ void AFXAPI AfxDbInitModule( );
  Make sure this call occurs before any base-class call or any added code which accesses the MFC database DLL. The MFC database DLL is an MFC extension DLL; in order for an MFC extension DLL to get wired into a `CDynLinkLibrary` chain, it must create a `CDynLinkLibrary` object in the context of every module that will be using it. `AfxDbInitModule` creates the `CDynLinkLibrary` object in your regular MFC DLL's context so that it gets wired into the `CDynLinkLibrary` object chain of the regular MFC DLL.  
    
 ### Requirements  
- **Header:** <afxdll_.h>  
+ **Header:** \<afxdll_.h>  
    
 ### See Also  
  [Macros and Globals](mfc-macros-and-globals.md)
