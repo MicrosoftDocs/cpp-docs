@@ -103,14 +103,14 @@ int main( )
       cout << *iter3 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 Original deque:
 d1 = ( true true false false true false false )
 Original deque:
 d2 = ( false false false true true true true )
 The deque which is the disjuction of d1 & d2 is:
 d3 = ( true true false true true true true )
-*\
+*/
 
 ```
 
