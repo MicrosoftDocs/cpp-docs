@@ -39,15 +39,15 @@ These free functions in the [\<filesystem>](../standard-library/filesystem.md) h
 path absolute(const path& pval, const path& base = current_path());
 ```
 
-The function returns the absolute pathname corresponding to `pval` relative to the pathname `base`:
+The function returns the absolute pathname corresponding to *pval* relative to the pathname `base`:
 
-1. If `pval.has_root_name() && pval.has_root_directory()` the function returns `pval`.
+1. If `pval.has_root_name() && pval.has_root_directory()` the function returns *pval*.
 
 1. If `pval.has_root_name() && !pval.has_root_directory()` the function returns `pval.root_name()` / `absolute(base).root_directory()` / `absolute(base).relative_path()` / `pval.relative_path()`.
 
-1. If `!pval.has_root_name() && pval.has_root_directory()` the function returns `absolute(base).root_name()` / `pval`.
+1. If `!pval.has_root_name() && pval.has_root_directory()` the function returns `absolute(base).root_name()` / *pval*.
 
-1. If `!pval.has_root_name() && !pval.has_root_directory()` the function returns `absolute(base)` / `pval`.
+1. If `!pval.has_root_name() && !pval.has_root_directory()` the function returns `absolute(base)` / *pval*.
 
 ## <a name="begin"></a>  begin
 
@@ -57,7 +57,7 @@ const recursive_directory_iterator&
     begin(const recursive_directory_iterator& iter) noexcept;
 ```
 
-Both functions return `iter`.
+Both functions return *iter*.
 
 ## <a name="canonical"></a>  canonical
 
@@ -149,7 +149,7 @@ bool copy_file(const path& from, const path& to, copy_options opts);
 bool copy_file(const path& from, const path& to, copy_options opts, error_code& ec) noexcept;
 ```
 
-The functions all possibly copy the file at *from* to *to* under control of *opts*, which is taken as copy_options::none for the overloads with no *opts* parameter. *opts* shall contain at most one of skip_existing, overwrite_existing, or update_existing.
+The functions all possibly copy the file at *from* to *to* under control of *opts*, which is taken as `copy_options::none` for the overloads with no *opts* parameter. *opts* shall contain at most one of `skip_existing`, `overwrite_existing`, or `update_existing`.
 
 If `exists(to) && !(opts & (copy_options::skip_existing | copy_options::overwrite_existing | copy_options::update_existing))` then report as an error that the file already exists.
 
