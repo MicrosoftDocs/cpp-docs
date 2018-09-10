@@ -1455,7 +1455,8 @@ int main( )
          cout << vaNOT2 [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+
+/* Output:
 The initial valarray <unsigned short int> is:  ( 0 5 2 15 4 25 6 35 8 45 ).
 The element-by-element result of the bitwise NOT operator~ is the
  valarray: ( 65535 65530 65533 65520 65531 65510 65529 65500 65527 65490 ).
@@ -1466,7 +1467,7 @@ The element-by-element result of the bitwise NOT operator~ is the
 The element-by-element result of adding one
  is the negative of the original elements the
  valarray: ( 0 2 -2 6 -4 10 -6 14 -8 18 ).
-*\
+*/
 ```
 
 ## <a name="resize"></a>  valarray::resize
