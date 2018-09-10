@@ -62,7 +62,7 @@ A zero-length match can occur when a capture group consists solely of an asserti
 
 |Operator|Description|
 |-|-|
-|[operator basic_string<>](#op_basic_string_lt_value_type_gt)|Casts submatch to a string.|
+|[operator basic_string<value_type>](#op_basic_string_lt_value_type_gt)|Casts submatch to a string.|
 
 ## Example
 
