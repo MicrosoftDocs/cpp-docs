@@ -1,7 +1,7 @@
 ---
 title: "&lt;regex&gt; functions | Microsoft Docs"
 ms.custom: ""
-ms.date: "06/19/2018"
+ms.date: "09/10/2018"
 ms.topic: "reference"
 f1_keywords: ["regex/std::regex_match", "regex/std::regex_replace", "regex/std::regex_search", "regex/std::swap"]
 dev_langs: ["C++"]
@@ -31,7 +31,6 @@ bool regex_match(
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
 
-
 // (2)
 template <class BidIt, class Elem, class RXtraits, class Alloc2>
 bool regex_match(
@@ -39,7 +38,6 @@ bool regex_match(
     Bidit last,
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
-
 
 // (3)
 template <class Elem, class Alloc, class RXtraits, class Alloc2>
@@ -49,14 +47,12 @@ bool regex_match(
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
 
-
 // (4)
 template <class Elem, class RXtraits, class Alloc2>
 bool regex_match(
     const Elem *ptr,
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
-
 
 // (5)
 template <class IOtraits, class IOalloc, class Alloc, class Elem, class RXtraits, class Alloc2>
@@ -135,7 +131,6 @@ using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-
     // (1) with char*
     // Note how const char* requires cmatch and regex
     const char *first = "abc";

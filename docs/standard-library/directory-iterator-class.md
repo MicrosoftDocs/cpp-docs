@@ -1,7 +1,7 @@
 ---
 title: "directory_iterator Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/10/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::directory_iterator", "filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::directory_iterator", "filesystem/std::experimental::filesystem::directory_iterator::increment", "filesystem/std::experimental::filesystem::directory_iterator::operator=", "filesystem/std::experimental::filesystem::directory_iterator::operator==", "filesystem/std::experimental::filesystem::directory_iterator::operator!=", "filesystem/std::experimental::filesystem::directory_iterator::operator*", "filesystem/std::experimental::filesystem::directory_iterator::operator-&gt;", "filesystem/std::experimental::filesystem::directory_iterator::operator++"]
@@ -14,15 +14,15 @@ ms.workload: ["cplusplus"]
 ---
 # directory_iterator Class
 
-Describes an input iterator that sequences through the filenames in a directory. For an iterator X, the expression *X evaluates to an object of class directory_entry that wraps the filename and anything known about its status.
+Describes an input iterator that sequences through the filenames in a directory. For an iterator `X`, the expression `*X` evaluates to an object of class `directory_entry` that wraps the filename and anything known about its status.
 
-The class stores an object of type path, called `mydir` here for the purposes of exposition, which represents the name of the directory to be sequenced, and an object of type directory_entry called `myentry` here, which represents the current filename in the directory sequence. A default constructed object of type directory_entry has an empty `mydir` pathname and represents the end-of-sequence iterator.
+The class stores an object of type `path`, called `mydir` here for the purposes of exposition, which represents the name of the directory to be sequenced, and an object of type `directory_entry` called `myentry` here, which represents the current filename in the directory sequence. A default constructed object of type `directory_entry` has an empty `mydir` pathname and represents the end-of-sequence iterator.
 
-For example, given the directory abc with entries def and ghi, the code:
+For example, given the directory `abc` with entries `def` and `ghi`, the code:
 
 `for (directory_iterator next(path("abc")), end; next != end; ++next)     visit(next->path());`
 
-will call `visit` with the arguments path("abc/def") and path("abc/ghi").
+will call `visit` with the arguments `path("abc/def")` and `path("abc/ghi")`.
 
 For more information and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
@@ -42,7 +42,7 @@ class directory_iterator;
 
 |Member function|Description|
 |-|-|
-|[increment](#increment)|The function attempts to advance to the next filename in the directory.|
+|[increment](#increment)|Attempts to advance to the next filename in the directory.|
 
 ### Operators
 

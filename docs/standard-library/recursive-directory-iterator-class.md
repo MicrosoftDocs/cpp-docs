@@ -1,7 +1,7 @@
 ---
 title: "recursive_directory_iterator Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/10/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["filesystem/std::tr2::sys::recursive_directory_iterator"]
@@ -31,7 +31,7 @@ The template class stores:
 
 1. an object of type `directory_entry` called `myentry` here, which represents the current filename in the directory sequence
 
-1. an object of type `bool`, called `no_push` here, which records whether recursive descent into subdirectories is disabled
+1. an object of type **bool**, called `no_push` here, which records whether recursive descent into subdirectories is disabled
 
 1. an object of type `directory_options`, called `myoptions` here, which records the options established at construction
 

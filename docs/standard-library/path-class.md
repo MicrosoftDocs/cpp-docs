@@ -1,7 +1,7 @@
 ---
 title: "path Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/10/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::path"]
@@ -13,7 +13,7 @@ ms.workload: ["cplusplus"]
 ---
 # path Class
 
-The **path** class stores an object of type string\_type, called myname here for the purposes of exposition, suitable for use as a pathname. string\_type is a synonym for basic\_string\<value_type>, where value\_type is a synonym for char under Windows or wchar_t under Posix.
+The **path** class stores an object of type `string_type`, called `myname` here for the purposes of exposition, suitable for use as a pathname. `string_type` is a synonym for `basic_string<value_type>`, where `value_type` is a synonym for **char** under Windows or **wchar_t** under Posix.
 
 For more information, and code examples, see [File System Navigation (C++)](../standard-library/file-system-navigation.md).
 
@@ -433,7 +433,7 @@ For `pval` an object of type `path`:
 
 ## <a name="make_preferred"></a> path::make_preferred
 
-Converts each separator to a preferred_separator as needed.
+Converts each separator to a `preferred_separator` as needed.
 
 ```cpp
 path& make_preferred();
@@ -519,7 +519,7 @@ The member functions behave the same as the following corresponding expressions:
 
 1. `concat(source);`
 
-1. `concat(path(basic_string\<Elem>(1, elem)));`
+1. `concat(path(basic_string<Elem>(1, elem)));`
 
 ## <a name="op_divide"></a> path::operator/=
 
@@ -566,7 +566,7 @@ path parent_path() const;
 
 ### Remarks
 
-Returns the parent path component of `myname`, specifically the prefix of `myname` after removing `filename().native()` and any immediately preceding directory separators. (Equally, if `begin() != end()`, it is the combining of all elements in the range [begin(), --end()) by successively applying operator/=.) The component may be empty.
+Returns the parent path component of `myname`, specifically the prefix of `myname` after removing `filename().native()` and any immediately preceding directory separators. (Equally, if `begin() != end()`, it is the combining of all elements in the range `[begin(), --end())` by successively applying `operator/=`.) The component may be empty.
 
 ## <a name="path"></a> path::path
 
@@ -677,7 +677,7 @@ The new extension.
 
 ### Remarks
 
-First removes the suffix `extension().native()` from `myname`. Then if `!newext.empty() && newext[0] != dot` (where `dot` is `*path(".").c_str()`), then `dot` is appended to `myname`. Then `newext` is appended to `myname`.
+First removes the suffix `extension().native()` from `myname`. Then if `!newext.empty() && newext[0] != dot` (where `dot` is `*path(".").c_str()`), then `dot` is appended to `myname`. Then *newext* is appended to `myname`.
 
 ## <a name="replace_filename"></a> path::replace_filename
 
@@ -737,7 +737,7 @@ path root_path() const;
 
 ### Remarks
 
-Returns the root path component of `myname`, specifically root_name() / root_directory. The component may be empty.
+Returns the root path component of `myname`, specifically `root_name()` / `root_directory`. The component may be empty.
 
 ## <a name="stem"></a> path::stem
 
@@ -763,7 +763,7 @@ string string() const;
 
 ### Remarks
 
-The first (template) member function converts the sequence stored in mypath the same way as:
+The first (template) member function converts the sequence stored in `mypath` the same way as:
 
 1. `string()` for `string<char, Traits, Alloc>()`
 
@@ -773,7 +773,7 @@ The first (template) member function converts the sequence stored in mypath the 
 
 1. `u32string()` for `string<char32_t, Traits, Alloc>()`
 
-The second member function converts the sequence stored in `mypath` to the encoding favored by the host system for a char sequence and returns it stored in an object of type string.
+The second member function converts the sequence stored in `mypath` to the encoding favored by the host system for a **char** sequence and returns it stored in an object of type `string`.
 
 ## <a name="string_type"></a> path::string_type
 
@@ -817,7 +817,7 @@ string u8string() const;
 
 ## <a name="value_type"></a> path::value_type
 
-The type describes the path elements favored by the host operating system.
+The type describes the `path` elements favored by the host operating system.
 
 ```cpp
 #if _WIN32_C_LIB
@@ -829,7 +829,7 @@ typedef char value_type;
 
 ## <a name="wstring"></a> path::wstring
 
-Converts the sequence stored in `mypath` to the encoding favored by the host system for a `wchar_t` sequence and returns it stored in an object of type `wstring`.
+Converts the sequence stored in `mypath` to the encoding favored by the host system for a **wchar_t** sequence and returns it stored in an object of type `wstring`.
 
 ```cpp
 wstring wstring() const;
