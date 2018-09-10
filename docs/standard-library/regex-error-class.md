@@ -64,8 +64,7 @@ int main()
     catch (const std::regex_error& rerr)
         {
         std::cout << "regex error: "
-            << (rerr.code() == paren.code()
-                 "unbalanced parentheses" : "")
+            << (rerr.code() == paren.code() ? "unbalanced parentheses" : "")
             << std::endl;
         }
     catch (...)
