@@ -23,7 +23,7 @@ template <class BidIt, class Alloc>
 class match_results
 ```
 
-### Parameters
+## Parameters
 
 *BidIt*<br/>
 The iterator type for submatches.
@@ -183,6 +183,7 @@ next submatch: matched == true
   3 chars, value == aaa
 next submatch: matched == false
   0 chars, value ==
+  
 empty == false
 ```
 
