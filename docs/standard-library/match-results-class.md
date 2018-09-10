@@ -1,7 +1,7 @@
 ---
 title: "match_results Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/10/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["regex/std::match_results"]
