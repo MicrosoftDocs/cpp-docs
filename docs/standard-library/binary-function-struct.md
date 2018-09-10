@@ -87,12 +87,11 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 11 5.5 3.66667 2.75 2.2 1.83333 )
 The vector v2 = ( -0 -2 -4 -6 -8 -10 )
 The element-wise averages are: ( 5.5 1.75 -0.166667 -1.625 -2.9 -4.08333 )
-*\
-
+*/
 ```
 
 ## Requirements

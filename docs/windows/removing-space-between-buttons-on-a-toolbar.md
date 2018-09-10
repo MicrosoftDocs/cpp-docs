@@ -1,17 +1,17 @@
 ---
-title: "Removing Space Between Buttons on a Toolbar | Microsoft Docs"
+title: "Removing Space Between Buttons on a Toolbar (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["Toolbar editor, spacing toolbar buttons", "toolbar buttons (in Toolbar editor), space between buttons"]
+helpviewer_keywords: ["Toolbar editor [C++], spacing toolbar buttons", "toolbar buttons [C++], space between buttons"]
 ms.assetid: 3bbbacec-cd42-4c35-9ea5-de62daa4041d
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Removing Space Between Buttons on a Toolbar
+# Removing Space Between Buttons on a Toolbar (C++)
 
 The following procedure shows you how to remove a space between buttons on a toolbar.
 

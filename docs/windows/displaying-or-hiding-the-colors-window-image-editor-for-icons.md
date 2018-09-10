@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["colors, Colors window", "Colors window, hiding colors", "Show Colors Window command", "Colors window, displaying colors"]
+helpviewer_keywords: ["colors [C++], Colors window", "Colors window, hiding colors", "Show Colors Window command", "Colors window, displaying colors"]
 ms.assetid: 43ba728d-2b69-47a1-a23a-94f82d88a26d
 author: "mikeblome"
 ms.author: "mblome"

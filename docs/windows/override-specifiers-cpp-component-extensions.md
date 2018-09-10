@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["override specifiers, Visual C++", "override specifiers"]
+helpviewer_keywords: ["override specifiers, C++", "override specifiers"]
 ms.assetid: 155bbf6f-4722-4654-afb1-9cb52af799fb
 author: "mikeblome"
 ms.author: "mblome"

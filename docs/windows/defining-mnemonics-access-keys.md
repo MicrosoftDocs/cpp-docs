@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["access keys [C++], adding", "keyboard shortcuts [C++], controls", "dialog box controls, mnemonics", "access keys [C++], checking", "mnemonics, checking for duplicate", "mnemonics", "mnemonics, dialog box controls", "keyboard shortcuts [C++], uniqueness checking", "Check Mnemonics command", "controls [C++], access keys", "access keys [C++]"]
+helpviewer_keywords: ["access keys [C++], adding", "keyboard shortcuts [C++], controls", "dialog box controls [C++], mnemonics", "access keys [C++], checking", "mnemonics [C++], checking for duplicate", "mnemonics", "mnemonics [C++], dialog box controls", "keyboard shortcuts [C++], uniqueness checking", "Check Mnemonics command", "controls [C++], access keys", "access keys [C++]"]
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
 author: "mikeblome"
 ms.author: "mblome"

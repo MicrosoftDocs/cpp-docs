@@ -1,5 +1,5 @@
 ---
-title: "Finding an Entry in an Accelerator Table | Microsoft Docs"
+title: "Finding an Entry in an Accelerator Table (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]

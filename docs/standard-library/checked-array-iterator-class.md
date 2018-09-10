@@ -77,10 +77,10 @@ int main() {
       cout << " " << b[i];
    cout << " )" << endl;
 }
-\* Output:
+/* Output:
 ( 0 1 2 3 4 )
 ( 0 1 2 3 4 )
-*\
+*/
 ```
 
 ## Example
@@ -126,9 +126,9 @@ int main()
 
     return 0;
 }
-\* Output:
+/* Output:
 0 1 2 3 4 5 6 7 8 9
-*\
+*/
 ```
 
 ### Constructors
@@ -215,9 +215,9 @@ int main() {
    cout << "The iterator underlying rpos is bpos & it points to: "
         << *bpos << "." << endl;
 }
-\* Output:
+/* Output:
 The iterator underlying rpos is bpos & it points to: 1.
-*\
+*/
 ```
 
 ## <a name="checked_array_iterator"></a>  checked_array_iterator::checked_array_iterator
@@ -277,11 +277,11 @@ int main() {
    checked_array_iterator<int*> checked_output_iterator2(b,5,3);
    cout << *checked_output_iterator2 << endl;
 }
-\* Output:
+/* Output:
 0 1 2 3 4
 0 1 2 3 4
 3
-*\
+*/
 ```
 
 ## <a name="difference_type"></a>  checked_array_iterator::difference_type
@@ -350,10 +350,10 @@ int main() {
    else
       cout << "checked_array_iterators are not equal" << endl;
 }
-\* Output:
+/* Output:
 checked_array_iterators are equal
 checked_array_iterators are not equal
-*\
+*/
 ```
 
 ## <a name="op_neq"></a>  checked_array_iterator::operator!=
@@ -406,10 +406,10 @@ int main() {
    else
       cout << "checked_array_iterators are equal" << endl;
 }
-\* Output:
+/* Output:
 checked_array_iterators are equal
 checked_array_iterators are not equal
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  checked_array_iterator::operator&lt;
@@ -462,10 +462,10 @@ int main() {
    else
       cout << "checked_output_iterator2 is not less than checked_output_iterator" << endl;
 }
-\* Output:
+/* Output:
 checked_output_iterator2 is not less than checked_output_iterator
 checked_output_iterator2 is less than checked_output_iterator
-*\
+*/
 ```
 
 ## <a name="op_gt"></a>  checked_array_iterator::operator&gt;
@@ -556,10 +556,10 @@ int main() {
    else
       cout << "checked_output_iterator2 is less than checked_output_iterator" << endl;
 }
-\* Output:
+/* Output:
 checked_output_iterator2 is greater than or equal to checked_output_iterator
 checked_output_iterator2 is less than checked_output_iterator
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  checked_array_iterator::operator*
@@ -612,7 +612,7 @@ int main() {
    cout << "b[0] = " << *p << endl;
    cout << "c[0].first = " << p_c->first << endl;
 }
-\* Output:
+/* Output:
 0
 1
 2
@@ -620,7 +620,7 @@ int main() {
 4
 b[0] = 0
 c[0].first = 10
-*\
+*/
 ```
 
 ## <a name="op_arrow"></a>  checked_array_iterator::operator-&gt;
@@ -682,11 +682,11 @@ int main() {
    checked_output_iterator++;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 6
 3
 77
-*\
+*/
 ```
 
 ## <a name="checked_array_iterator__operator--"></a>  checked_array_iterator::operator--
@@ -730,11 +730,11 @@ int main() {
    checked_output_iterator--;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 6
 3
 6
-*\
+*/
 ```
 
 ## <a name="op_add_eq"></a>  checked_array_iterator::operator+=
@@ -779,10 +779,10 @@ int main() {
    checked_output_iterator += 3;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 6
 199
-*\
+*/
 ```
 
 ## <a name="op_add"></a>  checked_array_iterator::operator+
@@ -827,10 +827,10 @@ int main() {
    checked_output_iterator = checked_output_iterator + 3;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 6
 199
-*\
+*/
 ```
 
 ## <a name="checked_array_iterator__operator-_eq"></a>  checked_array_iterator::operator-=
@@ -876,10 +876,10 @@ int main() {
    checked_output_iterator -= 2;
    cout << *checked_output_iterator << endl;
 }
-\* Output:
+/* Output:
 199
 3
-*\
+*/
 ```
 
 ## <a name="checked_array_iterator__operator-"></a>  checked_array_iterator::operator-
@@ -952,9 +952,9 @@ int main() {
 
    cout << refrpos + 1 << endl;
 }
-\* Output:
+/* Output:
 3
-*\
+*/
 ```
 
 ## <a name="pointer"></a>  checked_array_iterator::pointer

@@ -96,9 +96,9 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L2 is: ( 40 20 10 ).
-*\
+*/
 ```
 
 ## <a name="insert_iterator"></a>  insert_iterator::insert_iterator
@@ -159,12 +159,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L is:
 ( 10 20 30 ).
 After the insertions, the list L is:
 ( 2 10 20 30 300 ).
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  insert_iterator::operator*
@@ -219,12 +219,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The original list L is:
 ( 0 2 4 6 ).
 After the insertions, the list L is:
 ( 10 20 30 0 2 4 6 ).
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  insert_iterator::operator++
@@ -283,12 +283,12 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The vector vec is:
 ( 1 2 3 4 ).
 After the insertions, the vector vec becomes:
 ( 30 40 50 1 2 3 4 ).
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  insert_iterator::operator=
@@ -366,12 +366,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The original list L is:
 ( 0 2 4 6 ).
 After the insertions, the list L is:
 ( 10 20 30 0 2 4 6 ).
-*\
+*/
 ```
 
 ## <a name="reference"></a>  insert_iterator::reference
@@ -416,10 +416,10 @@ int main( )
    cout << "The first element in the list L is: "
         << RefFirst << "." << endl;
 }
-\* Output:
+/* Output:
 The list L is: ( 10 20 30 ).
 The first element in the list L is: 10.
-*\
+*/
 ```
 
 ## See also

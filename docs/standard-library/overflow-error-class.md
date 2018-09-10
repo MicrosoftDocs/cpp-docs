@@ -57,10 +57,10 @@ int main( )
       cerr << "Type " << typeid( e ).name( ) << endl;
    };
 }
-\* Output:
+/* Output:
 Caught bitset<N> overflow
 Type class std::overflow_error
-*\
+*/
 ```
 
 ## Requirements

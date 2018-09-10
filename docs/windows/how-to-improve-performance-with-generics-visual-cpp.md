@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["performance, C++", "Visual C++, performance", "Visual C++, generics", "generics [C++], performance"]
+helpviewer_keywords: ["performance, C++", "C++, performance", "C++, generics", "generics [C++], performance"]
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
 author: "mikeblome"
 ms.author: "mblome"

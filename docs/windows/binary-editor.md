@@ -1,18 +1,18 @@
 ---
-title: "Binary Editor | Microsoft Docs"
+title: "Binary Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.binary.F1"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["editors, Binary", "resources [Visual Studio], editing", "resource editors, Binary editor", "Binary editor"]
+helpviewer_keywords: ["editors, Binary", "resources [C++], editing", "resource editors [C++], Binary editor", "Binary editor"]
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Binary Editor
+# Binary Editor (C++)
 
 > [!WARNING]
 > The **Binary Editor** is not available in Express editions.

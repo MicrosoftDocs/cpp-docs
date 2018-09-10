@@ -1,20 +1,20 @@
 ---
-title: "Accelerator Editor | Microsoft Docs"
+title: "Accelerator Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.accelerator.F1"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["accelerator tables [C++], editing", "tables [Visual Studio], accelerator key", "accelerator keys", "resource editors, Accelerator editor", "keyboard shortcuts [C++], Accelerator editor", "Accelerator editor"]
+helpviewer_keywords: ["accelerator tables [C++], editing", "tables [C++], accelerator key", "accelerator keys [C++]", "resource editors [C++], Accelerator editor", "keyboard shortcuts [C++], Accelerator editor"]
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Accelerator Editor
+# Accelerator Editor (C++)
 
-An accelerator table is a Windows resource that contains a list of accelerator keys (also known as shortcut keys) and the command identifiers that are associated with them. A program can have more than one accelerator table.
+An accelerator table is a C++ Windows resource that contains a list of accelerator keys (also known as shortcut keys) and the command identifiers that are associated with them. A program can have more than one accelerator table.
 
 Normally, accelerators are used as keyboard shortcuts for program commands that are also available on a menu or toolbar. However, you can use the accelerator table to define key combinations for commands that don't have a user-interface object associated with them.
 

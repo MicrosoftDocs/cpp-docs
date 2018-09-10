@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["attributed programming", "attributes [C++], frequently asked questions", "FAQs (frequently asked questions), attributed programming [C++]"]
+helpviewer_keywords: ["attributed programming", "attributes [C++/CLI], frequently asked questions", "FAQs (frequently asked questions), attributed programming [C++]"]
 ms.assetid: a1b8349f-7f51-43c4-95ea-4edb6e5f243f
 author: "mikeblome"
 ms.author: "mblome"

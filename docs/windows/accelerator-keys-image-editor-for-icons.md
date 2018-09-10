@@ -1,5 +1,5 @@
 ---
-title: "Accelerator Keys (Image Editor for Icons) | Microsoft Docs"
+title: "Accelerator Keys (C++ Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Accelerator Keys (Image Editor for Icons)
+# Accelerator Keys (C++ Image Editor for Icons)
 
 Below are the accelerator keys for the Image editor commands that are bound to keys by default. To change accelerator keys, click **Options** on the **Tools** menu, and then choose **Keyboard** under the **Environment** folder. For more information, see [Identifying and Customizing Keyboard Shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
 

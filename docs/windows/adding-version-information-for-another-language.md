@@ -1,18 +1,18 @@
 ---
-title: "Adding Version Information for Another Language | Microsoft Docs"
+title: "Adding Version Information for Another Language (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.version"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["languages, version information", "New Version Info Block", "blocks, adding", "resources [Visual Studio], adding version information", "version information, adding for languages"]
+helpviewer_keywords: ["languages, version information", "New Version Info Block", "blocks, adding", "resources [C++], adding version information", "version information, adding for languages"]
 ms.assetid: 17f6273c-e1cc-441a-a3d8-f564341cbf20
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Adding Version Information for Another Language
+# Adding Version Information for Another Language (C++)
 
 ### To add version information for another language (new info block)
 

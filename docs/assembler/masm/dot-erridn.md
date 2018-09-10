@@ -18,7 +18,7 @@ Generates an error if the text items are identical.
 
 ## Syntax
 
-> .ERRIDN[[I]] <textitem1>, <textitem2> [[, message]]
+> .ERRIDN[[I]] *textitem1*, *textitem2* [[, *message*]]
 
 ## Remarks
 
