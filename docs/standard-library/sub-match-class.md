@@ -93,7 +93,7 @@ int main()
         << std::endl;
     std::cout << "string == " << sub << std::endl;
 
-    std::csub_match::value_type *ptr = "aab";
+    std::csub_match::value_type const *ptr = "aab";
     std::cout << "compare(\"aab\") == "
         << sub.compare(ptr) << std::endl;
     std::cout << "compare(string) == "
