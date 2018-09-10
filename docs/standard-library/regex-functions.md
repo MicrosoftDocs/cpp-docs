@@ -123,13 +123,14 @@ The functions that take a `match_results` object set its members to reflect whet
 ### Example
 
 ```cpp
-#include "stdafx.h"
+// std__regex__regex_match.cpp
+// compile with: /EHsc
 #include <regex>
 #include <iostream>
 
 using namespace std;
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
     // (1) with char*
     // Note how const char* requires cmatch and regex
@@ -139,8 +140,10 @@ int _tmain(int argc, _TCHAR* argv[])
     regex rx("a(b)c");
 
     bool found = regex_match(first, last, narrowMatch, rx);
+    if (found)
+		wcout << L"Regex found in abc" << endl;
 
-    // (1) with std::wstring
+    // (2) with std::wstring
     // Note how wstring requires wsmatch and wregex.
     // Note use of const iterators cbegin() and cend().
     wstring target(L"Hello");
@@ -150,12 +153,15 @@ int _tmain(int argc, _TCHAR* argv[])
     if (regex_match(target.cbegin(), target.cend(), wideMatch, wrx))
         wcout << L"The matching text is:" << wideMatch.str() << endl;
 
-    // (2) with std::string
+    // (3) with std::string
     string target2("Drizzle");
     regex rx2(R"(D\w+e)"); // no double backslashes with raw string literal
-    found = regex_match(target2.cbegin(), target2.cend(), rx2);
 
-    // (3) with wchar_t*
+    found = regex_match(target2.cbegin(), target2.cend(), rx2);
+    if (found)
+		wcout << L"Regex found in Drizzle" << endl;
+
+    // (4) with wchar_t*
     const wchar_t* target3 = L"2014-04-02";
     wcmatch wideMatch2;
 
@@ -169,6 +175,13 @@ int _tmain(int argc, _TCHAR* argv[])
 
      return 0;
 }
+```
+
+```Output
+Regex found in abc
+The matching text is: Hello
+Regex found in Drizzle
+The matching text is: 2014-04-02
 ```
 
 ## <a name="regex_replace"></a>  regex_replace
