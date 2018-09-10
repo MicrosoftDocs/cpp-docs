@@ -98,12 +98,12 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 2 4 6 8 10 12 )
 The vector v2 = ( 3 6 9 12 15 18 )
 The element-wise products of vectors V1 & v2
 are: ( 6 24 54 96 150 216 )
-*\
+*/
 ```
 
 ## Requirements

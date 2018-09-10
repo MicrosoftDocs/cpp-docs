@@ -113,10 +113,10 @@ int main( )
    charOutBuf++;
    cout << "." << endl;
 }
-\* Output:
+/* Output:
 The characters written to the output stream
 by charOutBuf are: OUT.
-*\
+*/
 ```
 
 ## <a name="failed"></a>  ostreambuf_iterator::failed
@@ -164,10 +164,10 @@ int main( )
    else
        cout << "No insertions failed." << endl;
 }
-\* Output:
+/* Output:
 abc are characters output individually.
 No insertions failed.
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  ostreambuf_iterator::operator\*
@@ -211,10 +211,10 @@ int main( )
 *charOutBuf = 'U';
 *charOutBuf = 'T';
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 OUT
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  ostreambuf_iterator::operator++
@@ -259,10 +259,10 @@ int main( )
 *charOutBuf = 'U';
 *charOutBuf = 'T';
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 OUT
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  ostreambuf_iterator::operator=
@@ -367,10 +367,10 @@ int main( )
    string str = "These characters are being written to the output stream.\n ";
    copy ( str.begin ( ), str. end ( ), strOut );
 }
-\* Output:
+/* Output:
 OUT are characters output individually.
 These characters are being written to the output stream.
-*\
+*/
 ```
 
 ## <a name="ostreambuf_iterator_ostream_type"></a>  ostreambuf_iterator::ostream_type
@@ -449,10 +449,10 @@ int main( )
    charOutBuf++;
    cout << "." << endl;
 }
-\* Output:
+/* Output:
 The characters written to the output stream
 by charOutBuf are: OUT.
-*\
+*/
 ```
 
 ## See also

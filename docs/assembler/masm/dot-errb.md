@@ -18,7 +18,7 @@ Generates an error if *textitem* is blank.
 
 ## Syntax
 
-> .ERRB <textitem> [[, message]]
+> .ERRB *textitem* [[, *message*]]
 
 ## See also
 

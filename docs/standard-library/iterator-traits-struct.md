@@ -106,12 +106,12 @@ int main( )
    function( vc.begin( ), vc.end( ) );
    function( li.begin( ), li.end( ) );
 }
-\* Output:
+/* Output:
 struct std::random_access_iterator_tag
 a a a a a a a a a a
 struct std::bidirectional_iterator_tag
 0 0 0 0 0 0 0 0 0 0
-*\
+*/
 ```
 
 ## Requirements

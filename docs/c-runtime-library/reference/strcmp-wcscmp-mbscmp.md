@@ -78,8 +78,8 @@ The **strcmp** functions are case-sensitive. **_stricmp**, **_wcsicmp**, and **_
 
 |Routine|Required header|
 |-------------|---------------------|
-|**strcmp**|<string.h>|
-|**wcscmp**|<string.h> or <wchar.h>|
+|**strcmp**|\<string.h>|
+|**wcscmp**|\<string.h> or \<wchar.h>|
 |**_mbscmp**|\<mbstring.h>|
 
 For additional compatibility information, see [Compatibility](../../c-runtime-library/compatibility.md).

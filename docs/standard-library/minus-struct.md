@@ -98,11 +98,11 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 1 5 9 13 17 21 )
 The vector v2 = ( -1 2 5 8 11 14 )
 The element-wise differences between v1 and v2 are: ( 2 3 4 5 6 7 )
-*\
+*/
 ```
 
 ## Requirements

@@ -150,11 +150,11 @@ int main( void)
    raw_storage_iterator< Int*, Int > it( pInt );
 *it = 5;
 }
-\* Output:
+/* Output:
 Not constructed.
 Copying 5
 Constructing 5
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  raw_storage_iterator::operator=
@@ -223,11 +223,11 @@ int main( void )
    raw_storage_iterator<Int*, Int> it( pInt );
 *it = 5;
 }
-\* Output:
+/* Output:
 Not constructed.
 Copying 5
 Constructing 5
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  raw_storage_iterator::operator++
@@ -277,13 +277,13 @@ int main( void )
 
    delete[] pInt;
 }
-\* Output:
+/* Output:
 array 0 = 0
 array 1 = 2
 array 2 = 4
 array 3 = 6
 array 4 = 8
-*\
+*/
 ```
 
 ## <a name="raw_storage_iterator"></a>  raw_storage_iterator::raw_storage_iterator
@@ -355,7 +355,7 @@ int main( void )
 
    free(pInt);
 }
-\* Output:
+/* Output:
 Error! I'm not constructed!
 Copying 1
 Error! I'm not constructed!
@@ -376,7 +376,7 @@ array 0 = 1
 array 1 = 2
 array 2 = 3
 array 3 = 4
-*\
+*/
 ```
 
 ## See also

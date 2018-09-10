@@ -104,13 +104,13 @@ int main( )
 *intOut = 20;
 *intOut = 30;
 }
-\* Output:
+/* Output:
 The integers written to the output stream
 by intOut are:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  ostream_iterator::operator*
@@ -154,12 +154,12 @@ int main( )
 *intOut = 20;
 *intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  ostream_iterator::operator++
@@ -204,12 +204,12 @@ int main( )
 *intOut = 20;
 *intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  ostream_iterator::operator=
@@ -258,12 +258,12 @@ int main( )
 *intOut = 20;
 *intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="ostream_iterator"></a>  ostream_iterator::ostream_iterator
@@ -332,12 +332,12 @@ int main( )
           ostream_iterator<int> ( cout, " : " ) );
    cout << endl;
 }
-\* Output:
+/* Output:
 10
 20
 Elements output without delimiter: 123456
 Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :
-*\
+*/
 ```
 
 ## <a name="ostream_type"></a>  ostream_iterator::ostream_type
@@ -397,13 +397,13 @@ int main( )
 *intOut = 10;
 *intOut = 100;
 }
-\* Output:
+/* Output:
 The integers written to output stream
 by intOut are:
 1
 10
 100
-*\
+*/
 ```
 
 ## See also
