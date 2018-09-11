@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
 helpviewer_keywords: ["Visual C++, security", "security [C++]", "security [C++], best practices", "Spectre", "CVE-2017-5753", "Speculative Execution"]
-author: "mamillmsft"
+author: "mike-blome"
 ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
@@ -16,7 +16,7 @@ This article contains guidance for developers to assist with identifying and mit
 
 The guidance provided by this article is related to the classes of vulnerabilities represented by:
 
-1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The `/Qspectre` switch is also available in Visual Studio 2015 Update 3 through [KB 4338871](https://support.microsoft.com/en-us/help/4338871). The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage. 
+1. CVE-2017-5753, also known as Spectre variant 1. This hardware vulnerability class is related to side channels that can arise due to speculative execution that occurs as a result of a conditional branch misprediction. The Visual C++ compiler in Visual Studio 2017 (starting with version 15.5.5) includes support for the `/Qspectre` switch which provides a compile-time mitigation for a limited set of potentially vulnerable coding patterns related to CVE-2017-5753. The `/Qspectre` switch is also available in Visual Studio 2015 Update 3 through [KB 4338871](https://support.microsoft.com/help/4338871). The documentation for the [/Qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) flag provides more information on its effects and usage. 
 
 2. CVE-2018-3639, also known as [Speculative Store Bypass (SSB)](https://aka.ms/sescsrdssb). This hardware vulnerability class is related to side channels that can arise due to speculative execution of a load ahead of a dependent store as a result of a memory access misprediction.
 
