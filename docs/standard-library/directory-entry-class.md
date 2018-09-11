@@ -1,7 +1,7 @@
 ---
 title: "directory_entry Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/10/2018"
 ms.technology: ["cpp-standard-libraries"]
 ms.topic: "reference"
 f1_keywords: ["filesystem/std::experimental::filesystem::directory_entry", "filesystem/std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &", "filesystem/std::experimental::filesystem::directory_entry::directory_entry", "filesystem/std::experimental::filesystem::directory_entry::operator=", "filesystem/std::experimental::filesystem::directory_entry::assign", "filesystem/std::experimental::filesystem::directory_entry::replace_filename", "filesystem/std::experimental::filesystem::directory_entry::path", "filesystem/std::experimental::filesystem::directory_entry::status", "filesystem/std::experimental::filesystem::directory_entry::symlink_status", "filesystem/std::experimental::filesystem::directory_entry::operator&lt;", "filesystem/std::experimental::filesystem::directory_entry::operator==", "filesystem/std::experimental::filesystem::directory_entry::operator!=", "filesystem/std::experimental::filesystem::directory_entry::operator&lt;=", "filesystem/std::experimental::filesystem::directory_entry::operator&gt;", "filesystem/std::experimental::filesystem::directory_entry::operator&gt;="]
@@ -272,5 +272,5 @@ The status error code.
 
 ## See also
 
-[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)  
-[\<filesystem&gt;](../standard-library/filesystem.md)  
+[Header Files Reference](../standard-library/cpp-standard-library-header-files.md)<br/>
+[\<filesystem&gt;](../standard-library/filesystem.md)<br/>
