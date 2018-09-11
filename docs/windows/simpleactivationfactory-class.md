@@ -76,7 +76,7 @@ The following code example demonstrates how to use SimpleActivationFactory with 
 
 **Namespace:** Microsoft::WRL
 
-## <a href="activateinstance"></a>SimpleActivationFactory::ActivateInstance Method
+## <a name="activateinstance"></a>SimpleActivationFactory::ActivateInstance Method
 
 Creates an instance of the specified interface.
 
