@@ -12,7 +12,7 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus"]
 ---
-# regex_constants Class
+# regex_constants namespace
 
 Namespace for regular expression flags.
 

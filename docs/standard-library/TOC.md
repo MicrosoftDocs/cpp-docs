@@ -346,7 +346,7 @@
 #### [<regex> typedefs](regex-typedefs.md)
 #### [basic_regex Class](basic-regex-class.md)
 #### [match_results Class](match-results-class.md)
-#### [regex_constants Class](regex-constants-class.md)
+#### [regex_constants namespace](regex-constants-class.md)
 #### [regex_error Class](regex-error-class.md)
 #### [regex_iterator Class](regex-iterator-class.md)
 #### [regex_token_iterator Class](regex-token-iterator-class.md)
