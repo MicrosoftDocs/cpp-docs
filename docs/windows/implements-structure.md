@@ -1,12 +1,12 @@
 ---
 title: "Implements Structure | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/11/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["implements/Microsoft::WRL::Implements"]
+f1_keywords: ["implements/Microsoft::WRL::Implements", "implements/Microsoft::WRL::Implements::CanCastTo", "implements/Microsoft::WRL::Implements::CastToUnknown", "implements/Microsoft::WRL::Implements::FillArrayWithIid", "implements/Microsoft::WRL::Implements::IidCount"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Implements structure"]
+helpviewer_keywords: ["Microsoft::WRL::Implements structure", "Microsoft::WRL::Implements::CanCastTo method", "Microsoft::WRL::Implements::CastToUnknown method", "Microsoft::WRL::Implements::FillArrayWithIid method", "Microsoft::WRL::Implements::IidCount method"]
 ms.assetid: 29b13e90-34d4-4a0b-babd-5187c9eb0c36
 author: "mikeblome"
 ms.author: "mblome"
@@ -92,23 +92,23 @@ Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `
 
 ### Public Typedefs
 
-|Name|Description|
-|----------|-----------------|
-|`ClassFlags`|A synonym for `RuntimeClassFlags<WinRt>`.|
+| Name        | Description                               |
+| ----------- | ----------------------------------------- |
+| `ClassFlags`| A synonym for `RuntimeClassFlags<WinRt>`. |
 
 ### Protected Methods
 
-|Name|Description|
-|----------|-----------------|
-|[Implements::CanCastTo Method](../windows/implements-cancastto-method.md)|Gets a pointer to the specified interface.|
-|[Implements::CastToUnknown Method](../windows/implements-casttounknown-method.md)|Gets a pointer to the underlying `IUnknown` interface.|
-|[Implements::FillArrayWithIid Method](../windows/implements-fillarraywithiid-method.md)|Inserts the interface ID specified by the current zeroth template parameter into the specified array element.|
+| Name                                                     | Description                                                                                                   |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [Implements::CanCastTo Method](#cancastto)               | Gets a pointer to the specified interface.                                                                    |
+| [Implements::CastToUnknown Method](#casttounknown)       | Gets a pointer to the underlying `IUnknown` interface.                                                        |
+| [Implements::FillArrayWithIid Method](#fillarraywithiid) | Inserts the interface ID specified by the current zeroth template parameter into the specified array element. |
 
 ### Protected Constants
 
-|Name|Description|
-|----------|-----------------|
-|[Implements::IidCount Constant](../windows/implements-iidcount-constant.md)|Holds the number of implemented interface IDs.|
+| Name                                       | Description                                    |
+| ------------------------------------------ | ---------------------------------------------- |
+| [Implements::IidCount Constant](#iidcount) | Holds the number of implemented interface IDs. |
 
 ## Inheritance Hierarchy
 
@@ -130,6 +130,76 @@ Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## <a name="cancastto"></a>Implements::CanCastTo Method
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+Gets a pointer to the specified interface.
+
+```cpp
+__forceinline HRESULT CanCastTo(
+   REFIID riid,
+   _Deref_out_ void **ppv
+);
+```
+
+### Parameters
+
+*riid*  
+A reference to an interface ID.
+
+*ppv*  
+If successful, a pointer to the interface specified by *riid*.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error, such as E_NOINTERFACE.
+
+### Remarks
+
+This is an internal helper function that performs a QueryInterface operation.
+
+## <a name="casttounknown"></a>Implements::CastToUnknown Method
+
+Gets a pointer to the underlying `IUnknown` interface.
+
+```cpp
+__forceinline IUnknown* CastToUnknown();
+```
+
+### Return Value
+
+This operation always succeeds and returns the `IUnknown` pointer.
+
+### Remarks
+
+Internal helper function.
+
+## <a name="fillarraywithiid"></a>Implements::FillArrayWithIid Method
+
+Inserts the interface ID specified by the current zeroth template parameter into the specified array element.
+
+```cpp
+__forceinline static void FillArrayWithIid(
+   unsigned long &index,
+   _In_ IID* iids
+);
+```
+
+### Parameters
+
+*index*  
+A zero-based index that indicates the starting array element for this operation. When this operation completes, *index* is incremented by 1.
+
+*iids*  
+An array of type IID.
+
+### Remarks
+
+Internal helper function.
+
+## <a name="iidcount"></a>Implements::IidCount Constant
+
+Holds the number of implemented interface IDs.
+
+```cpp
+static const unsigned long IidCount;
+```
