@@ -6226,6 +6226,61 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/runtimeclassflags-value-constant.md",
+            "redirect_url": "/cpp/windows/runtimeclassflags-structure#value-constant",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/simpleactivationfactory-activateinstance-method.md",
+            "redirect_url": "/cpp/windows/simpleactivationfactory-class#activateinstance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/simpleactivationfactory-getruntimeclassname-method.md",
+            "redirect_url": "/cpp/windows/simpleactivationfactory-class#getruntimeclassname",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/simpleactivationfactory-gettrustlevel-method.md",
+            "redirect_url": "/cpp/windows/simpleactivationfactory-class#gettrustlevel",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/simpleclassfactory-createinstance-method.md",
+            "redirect_url": "/cpp/windows/simpleclassfactory-class#createinstance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakref-tilde-weakref-destructor.md",
+            "redirect_url": "/cpp/windows/weakref-class#tilde-weakref",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakref-as-method.md",
+            "redirect_url": "/cpp/windows/weakref-class#as",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakref-asiid-method.md",
+            "redirect_url": "/cpp/windows/weakref-class#asiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakref-copyto-method.md",
+            "redirect_url": "/cpp/windows/weakref-class#copyto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakref-operator-ampersand-operator.md",
+            "redirect_url": "/cpp/windows/weakref-class#operator-ampersand-operator",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/weakref-weakref-constructor.md",
+            "redirect_url": "/cpp/windows/weakref-class#weakref",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/wrl-class-library-project-template.md",
             "redirect_url": "/cpp/windows/windows-runtime-cpp-template-library-wrl",
             "redirect_document_id": false
