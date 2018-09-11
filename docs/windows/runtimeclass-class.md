@@ -1,12 +1,12 @@
 ---
 title: "RuntimeClass Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/11/2018"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
-f1_keywords: ["implements/Microsoft::WRL::RuntimeClass"]
+f1_keywords: ["implements/Microsoft::WRL::RuntimeClass", "implements/Microsoft::WRL::RuntimeClass::AddRef", "implements/Microsoft::WRL::RuntimeClass::DecrementReference", "implements/Microsoft::WRL::RuntimeClass::GetIids", "implements/Microsoft::WRL::RuntimeClass::GetRuntimeClassName", "implements/Microsoft::WRL::RuntimeClass::GetTrustLevel", "implements/Microsoft::WRL::RuntimeClass::GetWeakReference", "implements/Microsoft::WRL::RuntimeClass::InternalAddRef", "implements/Microsoft::WRL::RuntimeClass::QueryInterface", "implements/Microsoft::WRL::RuntimeClass::Release", "implements/Microsoft::WRL::RuntimeClass::RuntimeClass", "implements/Microsoft::WRL::RuntimeClass::~RuntimeClass"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["RuntimeClass class"]
+helpviewer_keywords: ["Microsoft::WRL::RuntimeClass class", "Microsoft::WRL::RuntimeClass::AddRef method", "Microsoft::WRL::RuntimeClass::DecrementReference method", "Microsoft::WRL::RuntimeClass::GetIids method", "Microsoft::WRL::RuntimeClass::GetRuntimeClassName method", "Microsoft::WRL::RuntimeClass::GetTrustLevel method", "Microsoft::WRL::RuntimeClass::GetWeakReference method", "Microsoft::WRL::RuntimeClass::InternalAddRef method", "Microsoft::WRL::RuntimeClass::QueryInterface method", "Microsoft::WRL::RuntimeClass::Release method", "Microsoft::WRL::RuntimeClass::RuntimeClass, constructor", "Microsoft::WRL::RuntimeClass::~RuntimeClass, destructor"]
 ms.assetid: d52f9d1a-98e5-41f2-a143-8fb629dd0727
 author: "mikeblome"
 ms.author: "mblome"
@@ -40,10 +40,24 @@ A function which initializes the object if the `MakeAndInitialize` template func
 
 ### Public Constructors
 
-|Name|Description|
-|----------|-----------------|
-|[RuntimeClass::RuntimeClass Constructor](../windows/runtimeclass-runtimeclass-constructor.md)|Initializes the current instance of the RuntimeClass class.|
-|[RuntimeClass::~RuntimeClass Destructor](../windows/runtimeclass-tilde-runtimeclass-destructor.md)|Deinitializes the current instance of the RuntimeClass class.|
+| Name                                                          | Description                                                     |
+| ------------------------------------------------------------- | --------------------------------------------------------------- |
+| [RuntimeClass::RuntimeClass Constructor](#runtimeclass)       | Initializes the current instance of the `RuntimeClass` class.   |
+| [RuntimeClass::~RuntimeClass Destructor](#tilde-runtimeclass) | Deinitializes the current instance of the `RuntimeClass` class. |
+
+### Public Methods
+
+| Name                                                             | Description                                                                                        |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [RuntimeClass::AddRef Method](#addref)                           | Increments the reference count for the current `RuntimeClass` object.                              |
+| [RuntimeClass::DecrementReference Method](#decrementreference)   | Decrements the reference count for the current `RuntimeClass` object.                              |
+| [RuntimeClass::GetIids Method](#getiids)                         | Gets an array that can contain the interface IDs implemented by the current `RuntimeClass` object. |
+| [RuntimeClass::GetRuntimeClassName Method](#getruntimeclassname) | Gets the runtime class name of the current `RuntimeClass` object.                                  |
+| [RuntimeClass::GetTrustLevel Method](#gettrustlevel)             | Gets the trust level of the current `RuntimeClass` object.                                         |
+| [RuntimeClass::GetWeakReference Method](#getweakreference)       | Gets a pointer to the weak reference object for the current `RuntimeClass` object.                 |
+| [RuntimeClass::InternalAddRef Method](#internaladdref)           | Increments the reference count to the current `RuntimeClass` object.                               |
+| [RuntimeClass::QueryInterface Method](#queryinterface)           | Retrieves a pointer to the specified interface ID.                                                 |
+| [RuntimeClass::Release Method](#release)                         | Performs a COM Release operation on the current `RuntimeClass` object.                             |
 
 ## Inheritance Hierarchy
 
@@ -55,6 +69,189 @@ This is an implementation detail.
 
 **Namespace:** Microsoft::WRL
 
-## See Also
+## <a name="tilde-runtimeclass"></a>RuntimeClass::~RuntimeClass Destructor
 
-[Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+Deinitializes the current instance of the `RuntimeClass` class.
+
+```cpp
+virtual ~RuntimeClass();
+```
+
+## <a name="addref"></a>RuntimeClass::AddRef Method
+
+Increments the reference count for the current `RuntimeClass` object.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## <a name="decrementreference"></a>RuntimeClass::DecrementReference Method
+
+Decrements the reference count for the current `RuntimeClass` object.
+
+```cpp
+ULONG DecrementReference();
+```
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## <a name="getiids"></a>RuntimeClass::GetIids Method
+
+Gets an array that can contain the interface IDs implemented by the current `RuntimeClass` object.
+
+```cpp
+STDMETHOD(
+   GetIids
+)  
+   (_Out_ ULONG *iidCount,
+   _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);
+```
+
+### Parameters
+
+*iidCount*  
+When this operation completes, the total number of elements in array *iids*.
+
+*iids*  
+When this operation completes, a pointer to an array of interface IDs.
+
+### Return Value
+
+S_OK if successful; otherwise, E_OUTOFMEMORY.
+
+## <a name="getruntimeclassname"></a>RuntimeClass::GetRuntimeClassName Method
+
+Gets the runtime class name of the current `RuntimeClass` object.
+
+```cpp
+STDMETHOD( GetRuntimeClassName )(
+    _Out_ HSTRING* runtimeName
+);
+```
+
+### Parameters
+
+*runtimeName*  
+When this operation completes, the runtime class name.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+### Remarks
+
+An assert error is emitted if `__WRL_STRICT__` or `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` isn't defined.
+
+## <a name="gettrustlevel"></a>RuntimeClass::GetTrustLevel Method
+
+Gets the trust level of the current `RuntimeClass` object.
+
+```cpp
+STDMETHOD(GetTrustLevel)(
+    _Out_ TrustLevel* trustLvl
+);
+```
+
+### Parameters
+
+*trustLvl*  
+When this operation completes, the trust level of the current `RuntimeClass` object.
+
+### Return Value
+
+Always S_OK.
+
+### Remarks
+
+An assert error is emitted if `__WRL_STRICT__` or `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` isn't defined.
+
+## <a name="getweakreference"></a>RuntimeClass::GetWeakReference Method
+
+Gets a pointer to the weak reference object for the current `RuntimeClass` object.
+
+```cpp
+STDMETHOD(
+   GetWeakReference
+)(_Deref_out_ IWeakReference **weakReference);
+```
+
+### Parameters
+
+*weakReference*  
+When this operation completes, a pointer to a weak reference object.
+
+### Return Value
+
+Always S_OK.
+
+## <a name="internaladdref"></a>RuntimeClass::InternalAddRef Method
+
+Increments the reference count to the current `RuntimeClass` object.
+
+```cpp
+ULONG InternalAddRef();
+```
+
+### Return Value
+
+The resulting reference count.
+
+## <a name="queryinterface"></a>RuntimeClass::QueryInterface Method
+
+Retrieves a pointer to the specified interface ID.
+
+```cpp
+STDMETHOD(
+   QueryInterface
+)  
+   (REFIID riid,
+   _Deref_out_ void **ppvObject);
+```
+
+### Parameters
+
+*riid*  
+An interface ID.
+
+*ppvObject*  
+When this opereation completes, a pointer to the interface specified by the *riid* parameter.
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+## <a name="release"></a>RuntimeClass::Release Method
+
+Performs a COM Release operation on the current `RuntimeClass` object.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   Release
+)();
+```
+
+### Return Value
+
+S_OK if successful; otherwise, an HRESULT that indicates the error.
+
+### Remarks
+
+If the reference count becomes zero, the `RuntimeClass` object is deleted.
+
+## <a name="runtimeclass"></a>RuntimeClass::RuntimeClass Constructor
+
+Initializes the current instance of the `RuntimeClass` class.
+
+```cpp
+RuntimeClass();
+```
