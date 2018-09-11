@@ -52,14 +52,6 @@ A [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) val
 
 A field that contains a [RuntimeClassType Enumeration](../windows/runtimeclasstype-enumeration.md) value.
   
-### Syntax
-  
 ```cpp
 static const unsigned int value = flags;
 ```
-  
-### Requirements
- 
-**Header:** implements.h
-  
-**Namespace:** Microsoft::WRL

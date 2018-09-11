@@ -80,8 +80,6 @@ The following code example demonstrates how to use SimpleActivationFactory with 
 
 Creates an instance of the specified interface.
 
-### Syntax
-
 ```cpp
 STDMETHOD( ActivateInstance )(
     _Deref_out_ IInspectable **ppvObject
@@ -105,8 +103,6 @@ If `__WRL_STRICT__` is defined, an assert error is emitted if the base class spe
 
 Gets the runtime class name of an instance of the class specified by the `Base` class template parameter.
 
-### Syntax
-
 ```cpp
 STDMETHOD( GetRuntimeClassName )(
     _Out_ HSTRING* runtimeName
@@ -129,8 +125,6 @@ If `__WRL_STRICT__` is defined, an assert error is emitted if the class specifie
 ## <a name="gettrustlevel"></a>SimpleActivationFactory::GetTrustLevel Method
 
 Gets the trust level of an instance of the class specified by the `Base` class template parameter.
-
-### Syntax
 
 ```cpp
 STDMETHOD(
