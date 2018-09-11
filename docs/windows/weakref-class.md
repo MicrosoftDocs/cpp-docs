@@ -6,7 +6,7 @@ ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 f1_keywords: ["client/Microsoft::WRL::WeakRef", "client/Microsoft::WRL::WeakRef::~WeakRef", "client/Microsoft::WRL::WeakRef::As", "client/Microsoft::WRL::WeakRef::AsIID", "client/Microsoft::WRL::WeakRef::CopyTo", "client/Microsoft::WRL::WeakRef::operator&", "client/Microsoft::WRL::WeakRef::WeakRef"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["Microsoft::WRL::WeakRef class", "Microsoft::WRL::WeakRef::~WeakRef, destructor", "Microsoft::WRL::WeakRef::As method", "Microsoft::WRL::WeakRef::AsIID method", "Microsoft::WRL::WeakRef::CopyTo method", "operator& operator", "Microsoft::WRL::WeakRef::WeakRef, constructor"]
+helpviewer_keywords: ["Microsoft::WRL::WeakRef class", "Microsoft::WRL::WeakRef::~WeakRef, destructor", "Microsoft::WRL::WeakRef::As method", "Microsoft::WRL::WeakRef::AsIID method", "Microsoft::WRL::WeakRef::CopyTo method", "Microsoft::WRL::WeakRef::operator& operator", "Microsoft::WRL::WeakRef::WeakRef, constructor"]
 ms.assetid: 572be703-c641-496c-8af5-ad6164670ba1
 author: "mikeblome"
 ms.author: "mblome"
