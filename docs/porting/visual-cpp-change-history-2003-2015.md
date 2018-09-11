@@ -55,7 +55,7 @@ Additionally, ongoing improvements to compiler conformance can sometimes change 
   
 - **C++ overloads of math library functions** In previous versions, \<math.h> defined some, but not all, of the C++ overloads for the math library functions. \<cmath> defined the remaining overloads, so to get all of the overloads, one needed to include the \<cmath> header. This led to problems with function overload resolution in code that only included \<math.h>. Now, all C++ overloads have been removed from \<math.h> and are now present only in \<cmath>.  
   
-     To resolve errors, include <cmath> to get the declarations of the functions that were removed from \<math.h>. The following table lists the functions that were moved.  
+     To resolve errors, include \<cmath> to get the declarations of the functions that were removed from \<math.h>. The following table lists the functions that were moved.  
   
      Functions that were moved:  
   

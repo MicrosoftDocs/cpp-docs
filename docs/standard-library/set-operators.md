@@ -72,10 +72,10 @@ int main( )
    else
       cout << "The sets s1 and s3 are equal." << endl;
 }
-\* Output:
+/* Output:
 The sets s1 and s2 are not equal.
 The sets s1 and s3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  operator&lt; (set)
@@ -133,10 +133,10 @@ int main( )
    else
       cout << "The set s1 is not less than the set s3." << endl;
 }
-\* Output:
+/* Output:
 The set s1 is less than the set s2.
 The set s1 is not less than the set s3.
-*\
+*/
 ```
 
 ## <a name="op_lt_eq"></a>  operator&lt;= (set)
@@ -200,11 +200,11 @@ int main( )
    else
       cout << "The set s1 is greater than the set s4." << endl;
 }
-\* Output:
+/* Output:
 Set s1 is less than or equal to the set s2.
 The set s1 is greater than the set s3.
 Set s1 is less than or equal to the set s4.
-*\
+*/
 ```
 
 ## <a name="op_eq_eq"></a>  operator== (set)
@@ -262,10 +262,10 @@ int main( )
    else
       cout << "The sets s1 and s3 are not equal." << endl;
 }
-\* Output:
+/* Output:
 The sets s1 and s2 are not equal.
 The sets s1 and s3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_gt"></a>  operator&gt; (set)
@@ -323,10 +323,10 @@ int main( )
    else
       cout << "The set s1 is not greater than the set s3." << endl;
 }
-\* Output:
+/* Output:
 The set s1 is not greater than the set s2.
 The set s1 is greater than the set s3.
-*\
+*/
 ```
 
 ## <a name="op_gt_eq"></a>  operator&gt;= (set)
@@ -390,11 +390,11 @@ int main( )
    else
       cout << "The set s1 is less than the set s4." << endl;
 }
-\* Output:
+/* Output:
 The set s1 is less than the set s2.
 Set s1 is greater than or equal to set s3.
 Set s1 is greater than or equal to set s4.
-*\
+*/
 ```
 
 ## <a name="op_neq_multiset"></a>  operator!= (multiset)
@@ -452,10 +452,10 @@ int main( )
    else
       cout << "The multisets s1 and s3 are equal." << endl;
 }
-\* Output:
+/* Output:
 The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_lt_multiset"></a>  operator&lt; (multiset)
@@ -517,10 +517,10 @@ int main( )
       cout << "The multiset s1 is not less than "
            << "the multiset s3." << endl;
 }
-\* Output:
+/* Output:
 The multiset s1 is less than the multiset s2.
 The multiset s1 is not less than the multiset s3.
-*\
+*/
 ```
 
 ## <a name="op_lt_eq_multiset"></a>  operator&lt;= (multiset)
@@ -590,11 +590,11 @@ int main( )
       cout << "The multiset s1 is greater than "
            << "the multiset s4." << endl;
 }
-\* Output:
+/* Output:
 The multiset s1 is less than or equal to the multiset s2.
 The multiset s1 is greater than the multiset s3.
 The multiset s1 is less than or equal to the multiset s4.
-*\
+*/
 ```
 
 ## <a name="op_eq_eq_multiset"></a>  operator== (multiset)
@@ -652,10 +652,10 @@ int main( )
    else
       cout << "The multisets s1 and s3 are not equal." << endl;
 }
-\* Output:
+/* Output:
 The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_gt_multiset"></a>  operator&gt; (multiset)
@@ -717,10 +717,10 @@ int main( )
       cout << "The multiset s1 is not greater than "
            << "the multiset s3." << endl;
 }
-\* Output:
+/* Output:
 The multiset s1 is not greater than the multiset s2.
 The multiset s1 is greater than the multiset s3.
-*\
+*/
 ```
 
 ## <a name="op_gt_eq_multiset"></a>  operator&gt;= (multiset)
@@ -790,11 +790,11 @@ int main( )
       cout << "The multiset s1 is less than "
            << "the multiset s4." << endl;
 }
-\* Output:
+/* Output:
 The multiset s1 is less than the multiset s2.
 The multiset s1 is greater than or equal to the multiset s3.
 The multiset s1 is greater than or equal to the multiset s4.
-*\
+*/
 ```
 
 ## See also

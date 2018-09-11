@@ -194,9 +194,9 @@ int main( )
    istreambuf_iterator<char>::int_type inttype1 = 100;
    cout << "The inttype1 = " << inttype1 << "." << endl;
 }
-\* Output:
+/* Output:
 The inttype1 = 100.
-*\
+*/
 ```
 
 ## <a name="istream_type"></a>  istreambuf_iterator::istream_type

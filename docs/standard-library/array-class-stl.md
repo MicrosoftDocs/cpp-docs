@@ -1123,7 +1123,7 @@ int main()
 Replaces the controlled sequence.
 
 ```cpp
-array <Value>%  operator=(array <Value>% right);
+array<Value> operator=(array<Value> right);
 ```
 
 ### Parameters

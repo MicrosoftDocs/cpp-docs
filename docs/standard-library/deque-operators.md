@@ -60,9 +60,9 @@ int main( )
    else
       cout << "The deques are equal." << endl;
 }
-\* Output:
+/* Output:
 The deques are not equal.
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  operator&lt;
@@ -114,9 +114,9 @@ int main( )
    else
       cout << "Deque c1 is not less than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is less than deque c2.
-*\
+*/
 ```
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
@@ -168,9 +168,9 @@ int main( )
    else
       cout << "Deque c1 is greater than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is less than or equal to deque c2.
-*\
+*/
 
 ```
 
@@ -225,10 +225,10 @@ int main( )
    else
       cout << "The deques are not equal." << endl;
 }
-\* Output:
+/* Output:
 The deques are equal.
 The deques are not equal.
-*\
+*/
 
 ```
 
@@ -282,9 +282,9 @@ int main( )
    else
       cout << "Deque c1 is not greater than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is greater than deque c2.
-*\
+*/
 
 ```
 
@@ -338,9 +338,9 @@ int main( )
    else
       cout << "Deque c1 is less than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is greater than or equal to deque c2.
-*\
+*/
 ```
 
 ## See also

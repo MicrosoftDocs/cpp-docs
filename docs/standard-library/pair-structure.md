@@ -143,7 +143,7 @@ int main( )
            << " is already in m1,\n so the insertion failed." << endl;
    }
 }
-\* Output:
+/* Output:
 The pair p1 is: ( 10, 0.011 ).
 The pair p2 is: ( 10, 0.222 ).
 The pair p3 is: ( 10, 0.011 ).
@@ -152,7 +152,7 @@ The element (4,40) was inserted successfully in m1.
 The element with a key value of
 ( (pr2.first) -> first ) = 1 is already in m1,
 so the insertion failed.
-*\
+*/
 ```
 
 ## Requirements

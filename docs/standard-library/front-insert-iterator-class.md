@@ -96,9 +96,9 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L2 is: ( 40 10 20 ).
-*\
+*/
 ```
 
 ## <a name="front_insert_iterator"></a>  front_insert_iterator::front_insert_iterator
@@ -156,12 +156,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L is:
 ( -2 0 2 4 6 8 10 12 14 16 ).
 After the front insertions, the list L is:
 ( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  front_insert_iterator::operator\*
@@ -217,12 +217,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L is:
 ( -2 0 2 4 6 8 10 12 14 16 ).
 After the front insertions, the list L is:
 ( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  front_insert_iterator::operator++
@@ -271,9 +271,9 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L1 is: ( 30 20 10 ).
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  front_insert_iterator::operator=
@@ -333,9 +333,9 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L1 is: ( 30 20 10 ).
-*\
+*/
 ```
 
 ## <a name="reference"></a>  front_insert_iterator::reference
@@ -376,10 +376,10 @@ int main( )
    cout << "The first element in the list L is: "
         << RefFirst << "." << endl;
 }
-\* Output:
+/* Output:
 The list L is: ( 30 20 10 ).
 The first element in the list L is: 30.
-*\
+*/
 ```
 
 ## See also

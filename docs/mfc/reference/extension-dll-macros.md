@@ -89,7 +89,7 @@ void AFXAPI AfxOleInitModule( );
  If you are building an OLE control and are using `COleControlModule`, you should not call `AfxOleInitModule` because the `InitInstance` member function for `COleControlModule` calls `AfxOleInitModule`.  
    
 ### Requirements  
- **Header**: <afxdll_.h>  
+ **Header**: \<afxdll_.h>  
    
 ### See Also  
  [Macros and Globals](mfc-macros-and-globals.md)   
@@ -107,7 +107,7 @@ void AFXAPI AfxNetInitModule( );
  The MFC Sockets DLL is an MFC extension DLL; in order for an MFC extension DLL to get wired into a `CDynLinkLibrary` chain, it must create a `CDynLinkLibrary` object in the context of every module that will be using it. `AfxNetInitModule` creates the `CDynLinkLibrary` object in your regular MFC DLL's context so that it gets wired into the `CDynLinkLibrary` object chain of the regular MFC DLL.  
    
 ### Requirements  
- **Header:** <afxdll_.h>  
+ **Header:** \<afxdll_.h>  
    
 ### See Also  
  [Macros and Globals](mfc-macros-and-globals.md)   
