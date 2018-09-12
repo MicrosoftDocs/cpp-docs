@@ -1,7 +1,7 @@
 ---
 title: "Create a new C++ Linux project in Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "08/16/2018"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-linux"]
 ms.tgt_pltfrm: "Linux"
 ms.topic: "conceptual"
