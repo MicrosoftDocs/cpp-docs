@@ -1,7 +1,7 @@
 ---
 title: "MFC ActiveX Controls: Licensing an ActiveX Control | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 f1_keywords: ["COleObjectFactory"]
