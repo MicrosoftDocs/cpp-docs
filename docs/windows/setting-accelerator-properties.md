@@ -1,5 +1,5 @@
 ---
-title: "Setting Accelerator Properties | Microsoft Docs"
+title: "Setting Accelerator Properties (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]

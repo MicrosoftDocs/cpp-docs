@@ -15,7 +15,7 @@ ms.workload: ["cplusplus"]
 
 **Microsoft Specific**
 
-The limits for integer types are listed in the following table. These limits are also defined in the standard header file <limits.h>.
+The limits for integer types are listed in the following table. These limits are also defined in the standard header file \<limits.h>.
 
 ## Limits on Integer Constants
 
@@ -46,4 +46,5 @@ If a value exceeds the largest integer representation, the Microsoft compiler ge
 **END Microsoft Specific**
 
 ## See also
- [Floating Limits](../cpp/floating-limits.md)  
+
+[Floating Limits](../cpp/floating-limits.md)

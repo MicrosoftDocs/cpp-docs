@@ -1,12 +1,12 @@
 ---
-title: "Menu Editor | Microsoft Docs"
+title: "Menu Editor (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.editors.menu.F1"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["resource editors, Menu editor", "editors, menus", "Menu editor", "menus, Menu editor"]
+helpviewer_keywords: ["resource editors [C++], Menu editor", "editors, menus", "Menu editor", "menus [C++], Menu editor"]
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
 author: "mikeblome"
 ms.author: "mblome"

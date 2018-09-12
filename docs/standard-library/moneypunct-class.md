@@ -25,11 +25,11 @@ class moneypunct;
 
 ### Parameters
 
-*CharType*
- The type used within a program to encode characters.
+*CharType*<br/>
+The type used within a program to encode characters.
 
-*Intl*
- A flag specifying whether international conventions are to be observed.
+*Intl*<br/>
+A flag specifying whether international conventions are to be observed.
 
 ## Remarks
 
@@ -393,14 +393,14 @@ int main( )
 
 ```Output
 German_Germany.1252 international grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 German_Germany.1252 international frac_digits
- to the right of the radix character: 2
+to the right of the radix character: 2
 
 German_Germany.1252 domestic grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 German_Germany.1252 domestic frac_digits
- to the right of the radix character: 2
+to the right of the radix character: 2
 ```
 
 ## <a name="grouping"></a>  moneypunct::grouping
@@ -462,14 +462,14 @@ int main( )
 
 ```Output
 German_Germany.1252 international grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 German_Germany.1252 international frac_digits
- to the right of the radix character: 2
+to the right of the radix character: 2
 
 German_Germany.1252 domestic grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 German_Germany.1252 domestic frac_digits
- to the right of the radix character: 2
+to the right of the radix character: 2
 ```
 
 ## <a name="moneypunct"></a>  moneypunct::moneypunct
@@ -482,8 +482,8 @@ explicit moneypunct(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*
- Integer value used to specify the type of memory management for the object.
+*_Refs*<br/>
+Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 

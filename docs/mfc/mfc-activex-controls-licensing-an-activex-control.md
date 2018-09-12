@@ -1,7 +1,7 @@
 ---
 title: "MFC ActiveX Controls: Licensing an ActiveX Control | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 f1_keywords: ["COleObjectFactory"]
@@ -14,6 +14,9 @@ ms.workload: ["cplusplus"]
 ---
 # MFC ActiveX Controls: Licensing an ActiveX Control
 Licensing support, an optional feature of ActiveX controls, allows you to control who is able to use or distribute the control. (For additional discussion of licensing issues, see Licensing Issues in [Upgrading an Existing ActiveX Control](../mfc/upgrading-an-existing-activex-control.md).)  
+
+>[!IMPORTANT]
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
   
  This article discusses the following topics:  
   

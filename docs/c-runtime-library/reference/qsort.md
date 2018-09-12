@@ -32,16 +32,16 @@ void qsort(
 
 ### Parameters
 
-*base*
+<br/>
 Start of target array.
 
-*number*
+*number*<br/>
 Array size in elements.
 
-*width*
+*width*<br/>
 Element size in bytes.
 
-*compare*
+*compare*<br/>
 Pointer to a user-supplied routine that compares two array elements and returns a value that specifies their relationship.
 
 ## Remarks

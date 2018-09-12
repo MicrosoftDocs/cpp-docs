@@ -27,11 +27,11 @@ bool operator!=(
 
 ### Parameters
 
-*left*
- An object of type `list`.
+*left*<br/>
+An object of type `list`.
 
-*right*
- An object of type `list`.
+*right*<br/>
+An object of type `list`.
 
 ### Return Value
 
@@ -61,9 +61,9 @@ cout << "Lists not equal." << endl;
 else
 cout << "Lists equal." << endl;
 }
-\* Output:
+/* Output:
 Lists not equal.
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  operator&lt;
@@ -78,11 +78,11 @@ bool operator<(
 
 ### Parameters
 
-*left*
- An object of type `list`.
+*left*<br/>
+An object of type `list`.
 
-*right*
- An object of type `list`.
+*right*<br/>
+An object of type `list`.
 
 ### Return Value
 
@@ -116,9 +116,9 @@ int main( )
    else
       cout << "List c1 is not less than list c2." << endl;
 }
-\* Output:
+/* Output:
 List c1 is less than list c2.
-*\
+*/
 ```
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
@@ -133,11 +133,11 @@ bool operator<=(
 
 ### Parameters
 
-*left*
- An object of type `list`.
+*left*<br/>
+An object of type `list`.
 
-*right*
- An object of type `list`.
+*right*<br/>
+An object of type `list`.
 
 ### Return Value
 
@@ -171,9 +171,9 @@ int main( )
    else
       cout << "List c1 is greater than list c2." << endl;
 }
-\* Output:
+/* Output:
 List c1 is less than or equal to list c2.
-*\
+*/
 ```
 
 ## <a name="op_eq_eq"></a>  operator==
@@ -188,11 +188,11 @@ bool operator==(
 
 ### Parameters
 
-*left*
- An object of type `list`.
+*left*<br/>
+An object of type `list`.
 
-*right*
- An object of type `list`.
+*right*<br/>
+An object of type `list`.
 
 ### Return Value
 
@@ -222,9 +222,9 @@ int main( )
    else
       cout << "The lists are not equal." << endl;
 }
-\* Output:
+/* Output:
 The lists are equal.
-*\
+*/
 ```
 
 ## <a name="op_gt"></a>  operator&gt;
@@ -239,11 +239,11 @@ bool operator>(
 
 ### Parameters
 
-*left*
- An object of type `list`.
+*left*<br/>
+An object of type `list`.
 
-*right*
- An object of type `list`.
+*right*<br/>
+An object of type `list`.
 
 ### Return Value
 
@@ -277,9 +277,9 @@ int main( )
    else
       cout << "List c1 is not greater than list c2." << endl;
 }
-\* Output:
+/* Output:
 List c1 is greater than list c2.
-*\
+*/
 ```
 
 ## <a name="op_gt_eq"></a>  operator&gt;=
@@ -294,11 +294,11 @@ bool operator>=(
 
 ### Parameters
 
-*left*
- An object of type `list`.
+*left*<br/>
+An object of type `list`.
 
-*right*
- An object of type `list`.
+*right*<br/>
+An object of type `list`.
 
 ### Return Value
 
@@ -333,9 +333,9 @@ int main( )
    else
       cout << "List c1 is less than list c2." << endl;
 }
-\* Output:
+/* Output:
 List c1 is greater than or equal to list c2.
-*\
+*/
 ```
 
 ## See also

@@ -1,17 +1,17 @@
 ---
-title: "Changing the Caption Property of Multiple Strings | Microsoft Docs"
+title: "Changing the Caption Property of Multiple String Resources (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["String editor, changing properties of multiple strings", "strings [C++], changing caption property of multiple", "string editing, string tables", "string tables, changing caption of multiple strings"]
+helpviewer_keywords: ["String editor [C++], changing properties of multiple strings", "string tables [C++], changing caption of multiple strings"]
 ms.assetid: 82ac4389-fd9c-4794-a18f-c6bf5b253bd7
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Changing the Caption Property of Multiple Strings
+# Changing the Caption Property of Multiple String Resources (C++)
 
 The following procedure shows you how to change the caption property of multiple strings.
 

@@ -13,30 +13,32 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Windows::Foundation::Collections Namespace (C++/CX)
-C++/CX supplements the Windows::Foundation::Collections namespace with functions that simplify using the Vector, VectorView, Map, and MapView collection classes.  
-  
-## Syntax  
-  
-```  
-  
-namespace Windows {  
-    namespace Foundation {  
-        namespace Collections;  
-    }  
-}  
-```  
-  
-### Functions  
-  
-|Name|Description|  
-|----------|-----------------|  
-|[back_inserter Function](../cppcx/back-inserter-function.md)|Returns an iterator that can be used to insert a value at the end of a collection.|  
-|[begin Function](../cppcx/begin-function.md)|Returns an iterator that points to the beginning of a collection.|  
-|[end Function](../cppcx/end-function.md)|Returns an iterator that points beyond the end of a collection.|  
-|[to_vector Function](../cppcx/to-vector-function.md)|Returns a collection as a std::vector.|  
-  
-### Requirements  
- **Header:** collection.h  
-  
- **Namespace:** Windows::Foundation::Collections  
-  
+
+C++/CX supplements the Windows::Foundation::Collections namespace with functions that simplify using the Vector, VectorView, Map, and MapView collection classes.
+
+## Syntax
+
+```
+
+namespace Windows {
+    namespace Foundation {
+        namespace Collections;
+    }
+}
+```
+
+### Functions
+
+|Name|Description|
+|----------|-----------------|
+|[back_inserter Function](../cppcx/back-inserter-function.md)|Returns an iterator that can be used to insert a value at the end of a collection.|
+|[begin Function](../cppcx/begin-function.md)|Returns an iterator that points to the beginning of a collection.|
+|[end Function](../cppcx/end-function.md)|Returns an iterator that points beyond the end of a collection.|
+|[to_vector Function](../cppcx/to-vector-function.md)|Returns a collection as a std::vector.|
+
+### Requirements
+
+**Header:** collection.h
+
+**Namespace:** Windows::Foundation::Collections
+

@@ -25,11 +25,11 @@ class queue
 
 ### Parameters
 
-*Type*
- The element data type to be stored in the queue
+*Type*<br/>
+The element data type to be stored in the queue
 
-*Container*
- The type of the underlying container used to implement the queue.
+*Container*<br/>
+The type of the underlying container used to implement the queue.
 
 ## Remarks
 
@@ -306,8 +306,8 @@ void push(const Type& val);
 
 ### Parameters
 
-*val*
- The element added to the back of the queue.
+*val*<br/>
+The element added to the back of the queue.
 
 ### Remarks
 
@@ -357,8 +357,8 @@ explicit queue(const container_type& right);
 
 ### Parameters
 
-*right*
- The **const** container of which the constructed queue is to be a copy.
+*right*<br/>
+The **const** container of which the constructed queue is to be a copy.
 
 ### Remarks
 

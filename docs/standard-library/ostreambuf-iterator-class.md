@@ -24,11 +24,11 @@ template <class CharType = char class Traits = char_traits <CharType>>
 
 ### Parameters
 
-*CharType*
- The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is **char**.
+*CharType*<br/>
+The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is **char**.
 
-*Traits*
- The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is `char_traits`\< *CharType>.*
+*Traits*<br/>
+The type that represents the character type for the ostreambuf_iterator. This argument is optional and the default value is `char_traits`\< *CharType>.*
 
 ## Remarks
 
@@ -105,18 +105,18 @@ int main( )
    // elements to the output streambuf:
    cout << "The characters written to the output stream\n"
         << " by charOutBuf are: ";
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;
- *charOutBuf = 'U';
+*charOutBuf = 'U';
    charOutBuf++;
- *charOutBuf = 'T';
+*charOutBuf = 'T';
    charOutBuf++;
    cout << "." << endl;
 }
-\* Output:
+/* Output:
 The characters written to the output stream
- by charOutBuf are: OUT.
-*\
+by charOutBuf are: OUT.
+*/
 ```
 
 ## <a name="failed"></a>  ostreambuf_iterator::failed
@@ -153,9 +153,9 @@ int main( )
 
 *charOut = 'a';
    charOut ++;
- *charOut  = 'b';
+*charOut  = 'b';
    charOut ++;
- *charOut = 'c';
+*charOut = 'c';
    cout << " are characters output individually." << endl;
 
    bool b1 = charOut.failed ( );
@@ -164,10 +164,10 @@ int main( )
    else
        cout << "No insertions failed." << endl;
 }
-\* Output:
+/* Output:
 abc are characters output individually.
 No insertions failed.
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  ostreambuf_iterator::operator\*
@@ -206,15 +206,15 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;   // no effect on iterator position
- *charOutBuf = 'U';
- *charOutBuf = 'T';
+*charOutBuf = 'U';
+*charOutBuf = 'T';
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 OUT
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  ostreambuf_iterator::operator++
@@ -254,15 +254,15 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;      // No effect on iterator position
- *charOutBuf = 'U';
- *charOutBuf = 'T';
+*charOutBuf = 'U';
+*charOutBuf = 'T';
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 OUT
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  ostreambuf_iterator::operator=
@@ -275,8 +275,8 @@ ostreambuf_iterator<CharType, Traits>& operator=(CharType _Char);
 
 ### Parameters
 
-*_Char*
- The character to be inserted into the stream buffer.
+*_Char*<br/>
+The character to be inserted into the stream buffer.
 
 ### Return Value
 
@@ -306,15 +306,15 @@ int main( )
    // Standard iterator interface for writing
    // elements to the output stream
    cout << "Elements written to output stream:" << endl;
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;      // No effect on iterator position
- *charOutBuf = 'U';
- *charOutBuf = 'T';
+*charOutBuf = 'U';
+*charOutBuf = 'T';
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 OUT
-*\
+*/
 ```
 
 ## <a name="ostreambuf_iterator_ostreambuf_iterator"></a>  ostreambuf_iterator::ostreambuf_iterator
@@ -328,11 +328,11 @@ ostreambuf_iterator(ostream_type& Ostr) throw();
 
 ### Parameters
 
-*strbuf*
- The output streambuf object used to initialize the output stream-buffer pointer.
+*strbuf*<br/>
+The output streambuf object used to initialize the output stream-buffer pointer.
 
-*Ostr*
- The output stream object used to initialize the output stream-buffer pointer.
+*Ostr*<br/>
+The output stream object used to initialize the output stream-buffer pointer.
 
 ### Remarks
 
@@ -358,19 +358,19 @@ int main( )
 
 *charOut = 'O';
    charOut ++;
- *charOut  = 'U';
+*charOut  = 'U';
    charOut ++;
- *charOut = 'T';
+*charOut = 'T';
    cout << " are characters output individually." << endl;
 
    ostreambuf_iterator<char> strOut ( cout );
    string str = "These characters are being written to the output stream.\n ";
    copy ( str.begin ( ), str. end ( ), strOut );
 }
-\* Output:
+/* Output:
 OUT are characters output individually.
 These characters are being written to the output stream.
-*\
+*/
 ```
 
 ## <a name="ostreambuf_iterator_ostream_type"></a>  ostreambuf_iterator::ostream_type
@@ -441,18 +441,18 @@ int main( )
    // elements to the output streambuf:
    cout << "The characters written to the output stream\n"
         << " by charOutBuf are: ";
- *charOutBuf = 'O';
+*charOutBuf = 'O';
    charOutBuf++;
- *charOutBuf = 'U';
+*charOutBuf = 'U';
    charOutBuf++;
- *charOutBuf = 'T';
+*charOutBuf = 'T';
    charOutBuf++;
    cout << "." << endl;
 }
-\* Output:
+/* Output:
 The characters written to the output stream
- by charOutBuf are: OUT.
-*\
+by charOutBuf are: OUT.
+*/
 ```
 
 ## See also

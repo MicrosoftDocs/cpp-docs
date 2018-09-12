@@ -1,18 +1,18 @@
 ---
-title: "How to: Add MFC Support to Resource Script Files | Microsoft Docs"
+title: "How to: Add MFC Support to Resource Script Files (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 f1_keywords: ["vc.resvw.add.MFC"]
 dev_langs: ["C++"]
-helpviewer_keywords: ["rc files, adding MFC support", ".rc files, adding MFC support", "MFC, adding support to resource scripts files", "resource script files, adding MFC support"]
+helpviewer_keywords: ["rc files [C++], adding MFC support", ".rc files [C++], adding MFC support", "MFC, adding support to resource scripts files", "resource script files [C++], adding MFC support"]
 ms.assetid: 599dfe9d-ad26-4e34-899c-49b56599e37f
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# How to: Add MFC Support to Resource Script Files
+# How to: Add MFC Support to Resource Script Files (C++)
 
 Normally, when you build an MFC application for Windows using the [MFC Application Wizard](../mfc/reference/mfc-application-wizard.md), the wizard generates a basic set of files (including a resource script (.rc) file) that contains the core features of the Microsoft Foundation classes (MFC). However, if you are editing an .rc file for a Windows application that is not based on MFC, the following features specific to the MFC framework are not available:
 

@@ -25,11 +25,11 @@ class basic_ofstream : public basic_ostream<Elem, Tr>
 
 ### Parameters
 
-*Elem*
- The basic element of the file buffer.
+*Elem*<br/>
+The basic element of the file buffer.
 
-*Tr*
- The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
+*Tr*<br/>
+The traits of the basic element of the file buffer (usually `char_traits`< `Elem`>).
 
 ## Remarks
 
@@ -110,17 +110,17 @@ basic_ofstream(
 
 ### Parameters
 
-*_Filename*
- The name of the file to open.
+*_Filename*<br/>
+The name of the file to open.
 
-*_Mode*
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*
- The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot*<br/>
+The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-*right*
- The rvalue reference to the `basic_ofstream` object being used to initialize this `basic_ofstream` object.
+*right*<br/>
+The rvalue reference to the `basic_ofstream` object being used to initialize this `basic_ofstream` object.
 
 ### Remarks
 
@@ -232,14 +232,14 @@ void open(
 
 ### Parameters
 
-*_Filename*
- The name of the file to open.
+*_Filename*<br/>
+The name of the file to open.
 
-*_Mode*
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot*
- The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot*<br/>
+The default file opening protection, equivalent to the `shflag` parameter in [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### Remarks
 
@@ -259,8 +259,8 @@ basic_ofstream& operator=(basic_ofstream&& right);
 
 ### Parameters
 
-*right*
- An rvalue reference to a `basic_ofstream` object.
+*right*<br/>
+An rvalue reference to a `basic_ofstream` object.
 
 ### Return Value
 
@@ -296,8 +296,8 @@ void swap(basic_ofstream& right);
 
 ### Parameters
 
-*right*
- An `lvalue` reference to another `basic_ofstream` object.
+*right*<br/>
+An `lvalue` reference to another `basic_ofstream` object.
 
 ### Remarks
 

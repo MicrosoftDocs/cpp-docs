@@ -1,7 +1,7 @@
 ---
 title: "MFC COM | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 f1_keywords: ["MFC COM (MFC)"]
@@ -18,8 +18,6 @@ A subset of MFC is designed to support COM, while most of the Active Template Li
  Active technologies (such as ActiveX controls, Active document containment, OLE, and so on) use the Component Object Model (COM) to enable software components to interact with one another in a networked environment, regardless of the language with which they were created. Active technologies can be used to create applications that run on the desktop or the Internet. For more information see [Introduction to COM](../atl/introduction-to-com.md) or [The Component Object Model](/windows/desktop/com/the-component-object-model).  
   
  Active technologies include both client and server technologies, including the following:  
-  
--   [Active document containment](../mfc/active-document-containment.md), supported in MFC versions 4.2 and later, allows users to view [active documents](../mfc/active-documents.md) (such as Microsoft Excel or Word files) and activate the entire interface of the document's native application in the entire client area of an [active document container](../mfc/active-document-containers.md) such as the Microsoft Office Binder or Microsoft Internet Explorer. The containers act as clients, while the documents are provided by [active document servers](../mfc/active-document-servers.md). For more information on using active documents in Internet applications, see: [Active Documents on the Internet](../mfc/active-documents-on-the-internet.md).  
   
 -   ActiveX controls are interactive objects that can be used in containers such as a Web site. For more information on ActiveX controls, see:  
   

@@ -31,8 +31,8 @@ class fpos
 
 ### Parameters
 
-*Statetype*
- State information.
+*Statetype*<br/>
+State information.
 
 ### Constructors
 
@@ -77,14 +77,14 @@ fpos(Statetype _State, fpos_t _Filepos);
 
 ### Parameters
 
-*_Off*
- The offset into the stream.
+*_Off*<br/>
+The offset into the stream.
 
-*_State*
- The starting state of the `fpos` object.
+*_State*<br/>
+The starting state of the `fpos` object.
 
-*_Filepos*
- The offset into the stream.
+*_Filepos*<br/>
+The offset into the stream.
 
 ### Remarks
 
@@ -102,8 +102,8 @@ bool operator!=(const fpos<Statetype>& right) const;
 
 ### Parameters
 
-*right*
- The file-position indicator against which to compare.
+*right*<br/>
+The file-position indicator against which to compare.
 
 ### Return Value
 
@@ -175,8 +175,8 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 ### Parameters
 
-*_Off*
- The offset by which you want to increment the file-position indicator.
+*_Off*<br/>
+The offset by which you want to increment the file-position indicator.
 
 ### Return Value
 
@@ -200,8 +200,8 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 ### Parameters
 
-*_Off*
- The offset by which you want to increment the file-position indicator.
+*_Off*<br/>
+The offset by which you want to increment the file-position indicator.
 
 ### Return Value
 
@@ -227,11 +227,11 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 ### Parameters
 
-*right*
- File position.
+*right*<br/>
+File position.
 
-*_Off*
- Stream offset.
+*_Off*<br/>
+Stream offset.
 
 ### Return Value
 
@@ -251,8 +251,8 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 ### Parameters
 
-*_Off*
- Stream offset.
+*_Off*<br/>
+Stream offset.
 
 ### Return Value
 
@@ -276,8 +276,8 @@ bool operator==(const fpos<Statetype>& right) const;
 
 ### Parameters
 
-*right*
- The file-position indicator against which to compare.
+*right*<br/>
+The file-position indicator against which to compare.
 
 ### Return Value
 
@@ -350,8 +350,8 @@ void state(Statetype _State);
 
 ### Parameters
 
-*_State*
- The new conversion state.
+*_State*<br/>
+The new conversion state.
 
 ### Return Value
 

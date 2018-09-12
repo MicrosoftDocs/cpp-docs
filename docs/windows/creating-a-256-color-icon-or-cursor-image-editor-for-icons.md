@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["256-color palette", "cursors, color", "colors, icons", "colors, cursors", "icons, color"]
+helpviewer_keywords: ["256-color palette", "cursors [C++], color", "colors [C++], icons", "colors [C++], cursors", "icons, color"]
 ms.assetid: 2738089b-4fd3-4c45-96ae-6a15e4c6b780
 author: "mikeblome"
 ms.author: "mblome"

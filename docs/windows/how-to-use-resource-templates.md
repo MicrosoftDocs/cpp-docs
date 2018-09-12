@@ -1,17 +1,17 @@
 ---
-title: "How to: Use Resource Templates | Microsoft Docs"
+title: "How to: Use Resource Templates (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["language-specific template files", "resource templates", "resources [Visual Studio], creating", "rct files", "templates, resource templates", "resources [Visual Studio], templates", ".rct files"]
+helpviewer_keywords: ["language-specific template files [C++]", "resource templates", "resources [C++], creating", "rct files [C++]", "templates, resource templates", "resources [C++], templates", ".rct files [C++]"]
 ms.assetid: bdfe7060-f98e-4859-8285-9c8570360e9d
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# How to: Use Resource Templates
+# How to: Use Resource Templates (C++)
 
 A resource template is a customized resource that you have saved as an .rct file. A resource template can then serve as a starting point for creating other resources. Resource templates save time in developing additional resources or groups of resources that share features, such as standard controls and other repeated elements. For example, you might want to include a Help button and an icon of a company logo in several dialog boxes. To do so quickly, create a new dialog box template and customize it with the logo and the Help button.
 

@@ -29,10 +29,10 @@ _ASSERTE( booleanExpression );
 
 ### Parameters
 
-*booleanExpression*
+*booleanExpression*<br/>
 A scalar expression (including pointer expressions) that evaluates to nonzero (true) or 0 (false).
 
-*message*
+*message*<br/>
 A wide string to display as part of the report.
 
 ## Remarks

@@ -12,26 +12,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # default::(type_name)::GetType Method
-Returns a Platform::Type^ that represents the current type.  
-  
-## Syntax  
-  
-```cpp  
-  
-Platform::Type^ GetType()  
-```  
-  
-### Return Value  
- A [Platform::Type](../cppcx/platform-type-class.md)^ object that represents the current object.  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** default  
-  
- **Header:** vccorlib.h  
-  
-## See Also  
- [default namespace](../cppcx/default-namespace.md)
+
+Returns a Platform::Type^ that represents the current type.
+
+## Syntax
+
+```cpp
+Platform::Type^ GetType();
+```
+
+### Return Value
+
+A [Platform::Type](../cppcx/platform-type-class.md)^ object that represents the current object.
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** default
+
+**Header:** vccorlib.h
+
+## See Also
+
+[default namespace](../cppcx/default-namespace.md)

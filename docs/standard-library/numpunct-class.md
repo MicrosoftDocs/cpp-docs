@@ -25,8 +25,8 @@ class numpunct : public locale::facet;
 
 ### Parameters
 
-*CharType*
- The type used within a program to encode characters in a locale.
+*CharType*<br/>
+The type used within a program to encode characters in a locale.
 
 ## Remarks
 
@@ -307,7 +307,7 @@ int main( )
 
 ```Output
 German_Germany.1252 international grouping:
- the 0th group to the left of the radix character is of size 3
+the 0th group to the left of the radix character is of size 3
 ```
 
 ## <a name="numpunct"></a>  numpunct::numpunct
@@ -320,8 +320,8 @@ explicit numpunct(size_t _Refs = 0);
 
 ### Parameters
 
-*_Refs*
- Integer value used to specify the type of memory management for the object.
+*_Refs*<br/>
+Integer value used to specify the type of memory management for the object.
 
 ### Remarks
 

@@ -32,11 +32,11 @@ template<class T>
 
 ### Parameters
 
-*Fn*
- The callable type to query.
+*Fn*<br/>
+The callable type to query.
 
-*ArgTypes*
- The types of the argument list to the callable type to query.
+*ArgTypes*<br/>
+The types of the argument list to the callable type to query.
 
 ## Remarks
 

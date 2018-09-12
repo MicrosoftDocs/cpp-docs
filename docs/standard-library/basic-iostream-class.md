@@ -73,11 +73,11 @@ basic_iostream();
 
 ### Parameters
 
-*strbuf*
- An existing `basic_streambuf` object.
+*strbuf*<br/>
+An existing `basic_streambuf` object.
 
-*right*
- An existing `basic_iostream` object that is used to construct a new `basic_iostream`.
+*right*<br/>
+An existing `basic_iostream` object that is used to construct a new `basic_iostream`.
 
 ### Remarks
 
@@ -95,8 +95,8 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ### Parameters
 
-*right*
- An `rvalue` reference to a `basic_iostream` object to assign from.
+*right*<br/>
+An `rvalue` reference to a `basic_iostream` object to assign from.
 
 ### Remarks
 
@@ -112,8 +112,8 @@ void swap(basic_iostream& right);
 
 ### Parameters
 
-*right*
- The `basic_iostream` object to swap.
+*right*<br/>
+The `basic_iostream` object to swap.
 
 ### Remarks
 

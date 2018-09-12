@@ -25,8 +25,8 @@ struct is_void;
 
 ### Parameters
 
-*T*
- The type to query.
+*T*<br/>
+The type to query.
 
 ## Remarks
 

@@ -1,19 +1,19 @@
 ---
-title: "Manifest Resources | Microsoft Docs"
+title: "Manifest Resources (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["manifest resources", "resources [Visual Studio], manifest"]
+helpviewer_keywords: ["manifest resources [C++]", "resources [C++], manifest"]
 ms.assetid: 8615334c-22a0-44c0-93e0-5924528c9917
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Manifest Resources
+# Manifest Resources (C++)
 
-Manifest resources are XML files that describe the dependencies that an application uses. For example, in Visual Studio, the MFC wizard-generated manifest file defines which of the Windows common control DLLs the application should use, version 5.0 or 6.0:
+In C++ desktop projects, manifest resources are XML files that describe the dependencies that an application uses. For example, in Visual Studio, the MFC wizard-generated manifest file defines which of the Windows common control DLLs the application should use, version 5.0 or 6.0:
 
 ```xml
 <description>Your app description here</description>

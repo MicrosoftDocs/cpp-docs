@@ -30,10 +30,10 @@ void setbuf(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to **FILE** structure.
 
-*buffer*
+*buffer*<br/>
 User-allocated buffer.
 
 ## Remarks

@@ -101,7 +101,7 @@ int main( )
         << argc3 << " radians, which is " << argc3 * 180 / pi
         << " degrees." << endl;
 }
-\* Output:
+/* Output:
 Specifying initial real & imaginary parts,
  as type float gives c1 = (4,5)
 Implicit conversion from type double to type float,
@@ -111,7 +111,7 @@ Explicit conversion from type long double to type float,
 The modulus of c3 is recovered from c3 using: abs ( c3 ) = 5
 Argument of c3 is recovered from c3 using:
  arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
-*\
+*/
 ```
 
 ## Requirements

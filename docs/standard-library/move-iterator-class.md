@@ -132,8 +132,8 @@ move_iterator(const move_iterator<Type>& right);
 
 ### Parameters
 
-*right*
- The iterator to use as the stored iterator.
+*right*<br/>
+The iterator to use as the stored iterator.
 
 ### Remarks
 
@@ -149,8 +149,8 @@ move_iterator& operator+=(difference_type _Off);
 
 ### Parameters
 
-*_Off*
- An offset to add to the current position to determine the new current position.
+*_Off*<br/>
+An offset to add to the current position to determine the new current position.
 
 ### Return Value
 

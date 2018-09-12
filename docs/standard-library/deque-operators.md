@@ -25,11 +25,11 @@ bool operator!=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -60,9 +60,9 @@ int main( )
    else
       cout << "The deques are equal." << endl;
 }
-\* Output:
+/* Output:
 The deques are not equal.
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  operator&lt;
@@ -75,11 +75,11 @@ bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -114,9 +114,9 @@ int main( )
    else
       cout << "Deque c1 is not less than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is less than deque c2.
-*\
+*/
 ```
 
 ## <a name="op_lt_eq"></a>  operator&lt;=
@@ -129,11 +129,11 @@ bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -168,9 +168,9 @@ int main( )
    else
       cout << "Deque c1 is greater than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is less than or equal to deque c2.
-*\
+*/
 
 ```
 
@@ -184,11 +184,11 @@ bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -225,10 +225,10 @@ int main( )
    else
       cout << "The deques are not equal." << endl;
 }
-\* Output:
+/* Output:
 The deques are equal.
 The deques are not equal.
-*\
+*/
 
 ```
 
@@ -242,11 +242,11 @@ bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -282,9 +282,9 @@ int main( )
    else
       cout << "Deque c1 is not greater than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is greater than deque c2.
-*\
+*/
 
 ```
 
@@ -298,11 +298,11 @@ bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 ### Parameters
 
-*left*
- An object of type `deque`.
+*left*<br/>
+An object of type `deque`.
 
-*right*
- An object of type `deque`.
+*right*<br/>
+An object of type `deque`.
 
 ### Return Value
 
@@ -338,9 +338,9 @@ int main( )
    else
       cout << "Deque c1 is less than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is greater than or equal to deque c2.
-*\
+*/
 ```
 
 ## See also

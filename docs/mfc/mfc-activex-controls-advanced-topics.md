@@ -1,7 +1,7 @@
 ---
 title: "MFC ActiveX Controls: Advanced Topics | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -23,6 +23,9 @@ This article covers advanced topics related to developing ActiveX controls. Thes
 -   [Handling Special Keys in the Control](#_core_handling_special_keys_in_your_control)  
   
 -   [Accessing Dialog Controls That Are Invisible at Run Time](#_core_accessing_dialog_controls_that_are_invisible_at_run_time)  
+
+>[!IMPORTANT]
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
   
 ##  <a name="_core_using_database_classes_in_activex_controls"></a> Using Database Classes in ActiveX Controls  
  Because the ActiveX control classes are part of the class library, you can apply the same procedures and rules for using database classes in a standard MFC application to developing ActiveX controls that use the MFC database classes.  

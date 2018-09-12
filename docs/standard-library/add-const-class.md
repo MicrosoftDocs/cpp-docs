@@ -25,8 +25,8 @@ struct add_const;
 
 ### Parameters
 
-*Ty*
- The type to modify.
+*Ty*<br/>
+The type to modify.
 
 ## Remarks
 

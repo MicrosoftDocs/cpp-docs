@@ -27,7 +27,7 @@ void _lock_file( FILE* file );
 
 ### Parameters
 
-*file*
+*file*<br/>
 File handle.
 
 ## Remarks

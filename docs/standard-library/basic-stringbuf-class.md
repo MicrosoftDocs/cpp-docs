@@ -26,14 +26,14 @@ class basic_stringbuf : public basic_streambuf<Elem, Tr>
 
 ### Parameters
 
-*Alloc*
- The allocator class.
+*Alloc*<br/>
+The allocator class.
 
-*Elem*
- The type of the basic element of the string.
+*Elem*<br/>
+The type of the basic element of the string.
 
-*Tr*
- The character traits specialized on the basic element of the string.
+*Tr*<br/>
+The character traits specialized on the basic element of the string.
 
 ## Remarks
 
@@ -103,11 +103,11 @@ basic_stringbuf(
 
 ### Parameters
 
-*_Mode*
- One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+One of the enumerations in [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*str*
- An object of type [basic_string](../standard-library/basic-string-class.md).
+*str*<br/>
+An object of type [basic_string](../standard-library/basic-string-class.md).
 
 ### Remarks
 
@@ -149,8 +149,8 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-*_Meta*
- The character to insert into the buffer, or `traits_type::eof`.
+*_Meta*<br/>
+The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
 
@@ -174,8 +174,8 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### Parameters
 
-*_Meta*
- The character to insert into the buffer, or `traits_type::eof`.
+*_Meta*<br/>
+The character to insert into the buffer, or `traits_type::eof`.
 
 ### Return Value
 
@@ -210,14 +210,14 @@ virtual pos_type seekoff(
 
 ### Parameters
 
-*_Off*
- The position to seek for relative to *_Way*. For more information, see [basic_stringbuf::off_type](#off_type).
+*_Off*<br/>
+The position to seek for relative to *_Way*. For more information, see [basic_stringbuf::off_type](#off_type).
 
-*_Way*
- The starting point for offset operations. See [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
+*_Way*<br/>
+The starting point for offset operations. See [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) for possible values.
 
-*_Mode*
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions. For more information, see [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Mode*<br/>
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions. For more information, see [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
 ### Return Value
 
@@ -249,11 +249,11 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Mode = ios_base::in |
 
 ### Parameters
 
-*_Sp*
- The position to seek for.
+*_Sp*<br/>
+The position to seek for.
 
-*_Mode*
- Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
+*_Mode*<br/>
+Specifies the mode for the pointer position. The default is to allow you to modify the read and write positions.
 
 ### Return Value
 
@@ -277,8 +277,8 @@ void str(
 
 ### Parameters
 
-*_Newstr*
- The new string.
+*_Newstr*<br/>
+The new string.
 
 ### Return Value
 
@@ -366,8 +366,8 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 
 ### Parameters
 
-*other*
- The basic_stringbuf whose contents will be swapped with this basic_stringbuf.
+*other*<br/>
+The basic_stringbuf whose contents will be swapped with this basic_stringbuf.
 
 ### Remarks
 
@@ -381,8 +381,8 @@ basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
 
 ### Parameters
 
-*other*
- A basic_stringbuf whose contents, including locale traits, will be assigned to the stringbuf on the left side of the operator.
+*other*<br/>
+A basic_stringbuf whose contents, including locale traits, will be assigned to the stringbuf on the left side of the operator.
 
 ### Remarks
 

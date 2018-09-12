@@ -13,26 +13,28 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::CallbackContext Enumeration
-Specifies the thread context in which a callback function (event handler) executes.  
-  
-## Syntax  
-  
-```cpp  
-enum class CallbackContext {};  
-```  
-  
-### Members  
-  
-|Type Code|Description|  
-|---------------|-----------------|  
-|Any|The callback function can execute on any thread context.|  
-|Same|The callback function can execute on only the thread context that started the asynchronous operation.|  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** Platform  
-  
- **Metadata:** platform.winmd
+
+Specifies the thread context in which a callback function (event handler) executes.
+
+## Syntax
+
+```cpp
+enum class CallbackContext {};
+```
+
+### Members
+
+|Type Code|Description|
+|---------------|-----------------|
+|Any|The callback function can execute on any thread context.|
+|Same|The callback function can execute on only the thread context that started the asynchronous operation.|
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** Platform
+
+**Metadata:** platform.winmd
