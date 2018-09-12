@@ -42,7 +42,8 @@ This table lists the libraries that implement the vcruntime library.
 |vcruntime.lib|vcruntime\<version>.dll|DLL import library for the vcruntime.|**/MD**|_MT, _DLL|
 |vcruntimed.lib|vcruntime\<version>d.dll|DLL import library for the Debug vcruntime. Not redistributable.|**/MDd**|_DEBUG, _MT, _DLL|
 
-> [!NOTE] When the UCRT refactoring occurred, the Concurrency Runtime functions were moved into
+> [!NOTE] 
+> When the UCRT refactoring occurred, the Concurrency Runtime functions were moved into
 concrt140.dll, which was added to the C++ redistributable package. This DLL is required for C++ parallel containers and algorithms such as `concurrency::parallel_for`. In addition, the C++ Standard Library requires this DLL on Windows XP to support synchronization primitives, because Windows XP does not have condition variables.
 
 The code that initializes the CRT is in one of several libraries, based on whether the CRT library is statically or dynamically linked, or native, managed, or mixed code. This code handles CRT startup, internal per-thread data initialization, and termination. It is specific to the version of the compiler used. This library is always statically linked, even when using a dynamically linked UCRT.
