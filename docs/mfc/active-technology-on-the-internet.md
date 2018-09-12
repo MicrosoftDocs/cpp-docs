@@ -32,6 +32,5 @@ Active technology is an open platform that lets developers create exciting, dyna
 ## See Also  
  [MFC Internet Programming Basics](../mfc/mfc-internet-programming-basics.md)   
  [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md)   
- [Active Documents on the Internet](../mfc/active-documents-on-the-internet.md)   
  [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md)
 

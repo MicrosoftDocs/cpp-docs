@@ -31,8 +31,6 @@ The tasks listed in this topic are sorted based on the task you want to accompli
   
 -   [Learn about ActiveX controls in the Internet context](../mfc/activex-controls-on-the-internet.md)  
   
--   [Learn about Active documents in the Internet context](../mfc/active-documents-on-the-internet.md)  
-  
 -   [Optimize an ActiveX control](../mfc/mfc-activex-controls-optimization.md)  
   
 ###  <a name="_core_wininet_tasks"></a> WinInet Tasks  
