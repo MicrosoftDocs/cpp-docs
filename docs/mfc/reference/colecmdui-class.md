@@ -1,7 +1,7 @@
 ---
 title: "COleCmdUI Class | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "reference"
 f1_keywords: ["COleCmdUI", "AFXDOCOBJ/COleCmdUI", "AFXDOCOBJ/COleCmdUI::COleCmdUI", "AFXDOCOBJ/COleCmdUI::Enable", "AFXDOCOBJ/COleCmdUI::SetCheck", "AFXDOCOBJ/COleCmdUI::SetText"]
@@ -42,7 +42,7 @@ class COleCmdUI : public CCmdUI
   
  `COleCmdUI` allows a DocObject to receive commands that originate in its container's user interface (such as FileNew, Open, Print, and so on), and allows a container to receive commands that originate in the DocObject's user interface. Although `IDispatch` could be used to dispatch the same commands, `IOleCommandTarget` provides a simpler way to query and execute because it relies on a standard set of commands, usually without arguments, and no type information is involved. `COleCmdUI` can be used to enable, update, and set other properties of DocObject user interface commands. When you want to invoke the command, call [COleServerDoc::OnExecOleCmd](../../mfc/reference/coleserverdoc-class.md#onexecolecmd).  
   
- For further information on DocObjects, see [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) and [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md). Also see [Internet First Steps: Active Documents](../../mfc/active-documents-on-the-internet.md) and [Active Documents](../../mfc/active-documents-on-the-internet.md).  
+ For further information on DocObjects, see [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) and [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md).  
   
 ## Inheritance Hierarchy  
  [CCmdUI](../../mfc/reference/ccmdui-class.md)  
