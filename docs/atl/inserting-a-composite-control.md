@@ -12,12 +12,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Inserting a Composite Control
-The **Add Class** dialog box allows you to insert an ATL object into a project. Access this dialog box by right-clicking the project name in Solution Explorer, pointing to **Add**, and then clicking **Add Class**.  
-  
- In the **Add Class** dialog box, choose **ATL Control**. This will start the [ATL Control Wizard](../atl/reference/atl-control-wizard.md). To create a composite control, select the **Options** tab, and click the **Composite control** check box.  
-  
- A default HTML page will be created for viewing the control.  
-  
-## See Also  
- [Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)
+
+The **Add Class** dialog box allows you to insert an ATL object into a project. Access this dialog box by right-clicking the project name in Solution Explorer, pointing to **Add**, and then clicking **Add Class**.
+
+In the **Add Class** dialog box, choose **ATL Control**. This will start the [ATL Control Wizard](../atl/reference/atl-control-wizard.md). To create a composite control, select the **Options** tab, and click the **Composite control** check box.
+
+A default HTML page will be created for viewing the control.
+
+## See Also
+
+[Composite Control Fundamentals](../atl/atl-composite-control-fundamentals.md)
 

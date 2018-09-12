@@ -31,13 +31,13 @@ void _swab(
 
 ## Parameters
 
-*src*
+*src*<br/>
 Data to be copied and swapped.
 
-*dest*
+*dest*<br/>
 Storage location for swapped data.
 
-*n*
+*n*<br/>
 Number of bytes to be copied and swapped.
 
 ## Return value

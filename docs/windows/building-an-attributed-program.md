@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["tlb files", "MIDL", "MIDL, linker output", "IDL files", "tlb files, building attributed programs", ".tlb files, building attributed programs", "IDL files, building", "attributes [C++], building type libraries and .idl files", ".tlb files", ".idl files, building", "type libraries, linker options for building"]
+helpviewer_keywords: ["tlb files [C++]", "MIDL", "MIDL, linker output", "IDL files [C++]", "building type libraries and .idl files", ".tlb files [C++]", ".idl files [C++]", "type libraries, linker options for building"]
 ms.assetid: 04997b5f-bf2c-46ec-b868-c4adebbef5f4
 author: "mikeblome"
 ms.author: "mblome"

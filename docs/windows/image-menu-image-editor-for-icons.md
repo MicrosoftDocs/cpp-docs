@@ -1,5 +1,5 @@
 ---
-title: "Image Menu (Image Editor for Icons) | Microsoft Docs"
+title: "Image Menu (C++ Image Editor for Icons) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -12,7 +12,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Image Menu (Image Editor for Icons)
+# Image Menu (C++ Image Editor for Icons)
 
 The **Image** menu, which appears only when the **Image** editor is active, has commands for editing images, managing color palettes, and setting **Image Editor** window options. In addition, commands for using device images are available when working with icons and cursors.
 

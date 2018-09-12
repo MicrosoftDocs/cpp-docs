@@ -13,25 +13,29 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::OutOfBoundsException Class
-Thrown when an operation attempts to access data outside the valid range.  
-  
-## Syntax  
-  
-```cpp  
-public ref class OutOfBoundsException : COMException,    IException,    IPrintable,    IEquatable  
-```  
-  
-### Remarks  
- For more information, see the [COMException](../cppcx/platform-comexception-class.md) class.  
-  
-### Requirements  
- **Minimum supported client:** Windows 8  
-  
- **Minimum supported server:** Windows Server 2012  
-  
- **Namespace:** Platform  
-  
- **Metadata:** platform.winmd  
-  
-## See Also  
- [Platform::COMException Class](../cppcx/platform-comexception-class.md)
+
+Thrown when an operation attempts to access data outside the valid range.
+
+## Syntax
+
+```cpp
+public ref class OutOfBoundsException : COMException,    IException,    IPrintable,    IEquatable
+```
+
+### Remarks
+
+For more information, see the [COMException](../cppcx/platform-comexception-class.md) class.
+
+### Requirements
+
+**Minimum supported client:** Windows 8
+
+**Minimum supported server:** Windows Server 2012
+
+**Namespace:** Platform
+
+**Metadata:** platform.winmd
+
+## See Also
+
+[Platform::COMException Class](../cppcx/platform-comexception-class.md)

@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["MFC symbols", "symbols, MFC"]
+helpviewer_keywords: ["MFC symbols", "symbols [C++], MFC"]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
 author: "mikeblome"
 ms.author: "mblome"

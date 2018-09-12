@@ -25,11 +25,11 @@ struct extent;
 
 ### Parameters
 
-*Ty*
- The type to query.
+*Ty*<br/>
+The type to query.
 
-*I*
- The array bound to query.
+*I*<br/>
+The array bound to query.
 
 ## Remarks
 

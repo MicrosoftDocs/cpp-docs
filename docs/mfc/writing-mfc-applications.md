@@ -1,7 +1,7 @@
 ---
 title: "Writing MFC Applications | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/16/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -29,8 +29,6 @@ This article explains the initial steps you take to develop your application. Fi
  After you've made your initial design decisions about your Internet application, you can use the Application Wizard to get started. Use the Application Wizard to create a skeleton application and modify the code as described in the following articles:  
   
 -   For an ActiveX control, see [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md).  
-  
--   For an Active document, see [Active Documents on the Internet](../mfc/active-documents-on-the-internet.md).  
   
  The following articles also provide instructions to help you start your programming tasks:  
   

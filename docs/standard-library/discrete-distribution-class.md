@@ -54,8 +54,8 @@ public:
 
 ### Parameters
 
-*IntType*
- The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
+*IntType*<br/>
+The integer result type, defaults to **int**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
 
@@ -182,29 +182,29 @@ explicit discrete_distribution(const param_type& parm);
 
 ### Parameters
 
-*firstW*
- The first iterator in the list from which to construct the distribution.
+*firstW*<br/>
+The first iterator in the list from which to construct the distribution.
 
-*lastW*
- The last iterator in the list from which to construct the distribution (non-inclusive because iterators use an empty element for the end).
+*lastW*<br/>
+The last iterator in the list from which to construct the distribution (non-inclusive because iterators use an empty element for the end).
 
-*weightlist*
- The [initializer_list](../cpp/initializers.md) from which to construct the distribution.
+*weightlist*<br/>
+The [initializer_list](../cpp/initializers.md) from which to construct the distribution.
 
-*count*
- The number of elements in the distribution range. If `count==0`, equivalent to the default constructor (always generates zero).
+*count*<br/>
+The number of elements in the distribution range. If `count==0`, equivalent to the default constructor (always generates zero).
 
-*low*
- The lowest value in the distribution range.
+*low*<br/>
+The lowest value in the distribution range.
 
-*high*
- The highest value in the distribution range.
+*high*<br/>
+The highest value in the distribution range.
 
-*weightfunc*
- The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
+*weightfunc*<br/>
+The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
 
-*parm*
- The `param_type` structure used to construct the distribution.
+*parm*<br/>
+The `param_type` structure used to construct the distribution.
 
 ### Remarks
 
@@ -250,29 +250,29 @@ struct param_type {
 
 ### Parameters
 
-*firstW*
- The first iterator in the list from which to construct the distribution.
+*firstW*<br/>
+The first iterator in the list from which to construct the distribution.
 
-*lastW*
- The last iterator in the list from which to construct the distribution (non-inclusive because iterators use an empty element for the end).
+*lastW*<br/>
+The last iterator in the list from which to construct the distribution (non-inclusive because iterators use an empty element for the end).
 
-*weightlist*
- The [initializer_list](../cpp/initializers.md) from which to construct the distribution.
+*weightlist*<br/>
+The [initializer_list](../cpp/initializers.md) from which to construct the distribution.
 
-*count*
- The number of elements in the distribution range. If *count* is 0, this is equivalent to the default constructor (always generates zero).
+*count*<br/>
+The number of elements in the distribution range. If *count* is 0, this is equivalent to the default constructor (always generates zero).
 
-*low*
- The lowest value in the distribution range.
+*low*<br/>
+The lowest value in the distribution range.
 
-*high*
- The highest value in the distribution range.
+*high*<br/>
+The highest value in the distribution range.
 
-*weightfunc*
- The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
+*weightfunc*<br/>
+The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
 
-*right*
- The `param_type` object to compare to this.
+*right*<br/>
+The `param_type` object to compare to this.
 
 ### Remarks
 

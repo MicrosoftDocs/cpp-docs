@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "reference"
 dev_langs: ["C++"]
-helpviewer_keywords: ["what's new [C++], keywords", "what's new [C++], language features", "Visual C++, keywords", "keywords [C++]", "Managed Extensions for C++, replacement syntax"]
+helpviewer_keywords: ["what's new [C++], keywords", "what's new [C++], language features", "C++, keywords", "keywords [C++]", "Managed Extensions for C++, replacement syntax"]
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
 author: "mikeblome"
 ms.author: "mblome"

@@ -1,17 +1,17 @@
 ---
-title: "Moving or Copying an Accelerator Table Entry to Another Resource Script File | Microsoft Docs"
+title: "Moving or Copying an Accelerator Table Entry to Another Resource Script File (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["accelerator tables [C++], copying entries", "rc files, moving an accelerator table entry", ".rc files, moving accelerator table entries", "accelerator tables [C++], moving entries"]
+helpviewer_keywords: ["accelerator tables [C++], copying entries", "rc files [C++], moving an accelerator table entry", ".rc files [C++], moving accelerator table entries", "accelerator tables [C++], moving entries"]
 ms.assetid: 7b4dc149-c972-4ab2-8477-76c52b6feb5b
 author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Moving or Copying an Accelerator Table Entry to Another Resource Script File
+# Moving or Copying an Accelerator Table Entry to Another Resource Script File (C++)
 
 ### To move or copy an accelerator table entry to another resource script file
 

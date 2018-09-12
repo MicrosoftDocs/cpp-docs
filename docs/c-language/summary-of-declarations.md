@@ -106,7 +106,8 @@ ms.workload: ["cplusplus"]
 &nbsp;&nbsp;&nbsp;&nbsp;*identifier*
 
 *struct-or-union-specifier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union identifier*<sub>opt</sub> **{** *struct-declaration-list* **}** *struct-or-union identifier*
+&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union* *identifier*<sub>opt</sub> **{** *struct-declaration-list* **}**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*struct-or-union* *identifier*
 
 *struct-or-union*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**struct**<br/>

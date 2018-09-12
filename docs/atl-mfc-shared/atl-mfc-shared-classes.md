@@ -13,18 +13,21 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # ATL/MFC Shared Classes
-These utility classes can be used in any native C++ project without requiring any MFC DLL.  
-  
-## In This Section  
- [Classes Shared Between MFC and ATL](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)  
- Provides links to the classes shared between MFC and ATL.  
-  
-## Related Sections  
- [Active Template Library (ATL) Reference](../atl/atl-com-desktop-components.md)  
- Provides reference material for the ATL Library, a set of template-based C++ classes that simplify the programming of COM objects.  
-  
- [Microsoft Foundation Class Library (MFC) Reference](../mfc/mfc-desktop-applications.md)  
- Provides reference material for the MFC Library, a set of classes in that constitute an application framework, which is the framework of an application written for the Windows API.  
-  
- [Debugging](/visualstudio/debugger/debugging-in-visual-studio)  
- Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.
+
+These utility classes can be used in any native C++ project without requiring any MFC DLL.
+
+## In This Section
+
+[Classes Shared Between MFC and ATL](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)  
+Provides links to the classes shared between MFC and ATL.
+
+## Related Sections
+
+[Active Template Library (ATL) Reference](../atl/atl-com-desktop-components.md)  
+Provides reference material for the ATL Library, a set of template-based C++ classes that simplify the programming of COM objects.
+
+[Microsoft Foundation Class Library (MFC) Reference](../mfc/mfc-desktop-applications.md)  
+Provides reference material for the MFC Library, a set of classes in that constitute an application framework, which is the framework of an application written for the Windows API.
+
+[Debugging](/visualstudio/debugger/debugging-in-visual-studio)  
+Provides links to using the Visual Studio debugger to correct logic errors in your application or stored procedures.

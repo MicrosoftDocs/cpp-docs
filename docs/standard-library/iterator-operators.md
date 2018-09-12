@@ -33,11 +33,11 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
 
 ### Parameters
 
-*left*
- An object of type `iterator`.
+*left*<br/>
+An object of type `iterator`.
 
-*right*
- An object of type `iterator`.
+*right*<br/>
+An object of type `iterator`.
 
 ### Return Value
 
@@ -102,10 +102,10 @@ int main( )
 ```Output
 The vector vec is: ( 1 2 3 4 5 6 7 8 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterators are equal.
 The iterator rVPOS1 now points to the second element
- in the reversed sequence: 7.
+in the reversed sequence: 7.
 The iterators are not equal.
 ```
 
@@ -137,11 +137,11 @@ bool operator==(
 
 ### Parameters
 
-*left*
- An object of type iterator.
+*left*<br/>
+An object of type iterator.
 
-*right*
- An object of type iterator.
+*right*<br/>
+An object of type iterator.
 
 ### Return Value
 
@@ -208,10 +208,10 @@ int main( )
 ```Output
 The vector vec is: ( 2 4 6 8 10 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterators are equal.
 The iterator rVPOS1 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterators are not equal.
 ```
 
@@ -226,11 +226,11 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### Parameters
 
-*left*
- An object of type `iterator`.
+*left*<br/>
+An object of type `iterator`.
 
-*right*
- An object of type `iterator`.
+*right*<br/>
+An object of type `iterator`.
 
 ### Return Value
 
@@ -299,10 +299,10 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterators rVPOS1& rVPOS2 initially point to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS1 is not less than the iterator rVPOS2.
 The iterator rVPOS2 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 ```
 
@@ -317,11 +317,11 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### Parameters
 
-*left*
- An object of type iterator.
+*left*<br/>
+An object of type iterator.
 
-*right*
- An object of type iterator.
+*right*<br/>
+An object of type iterator.
 
 ### Return Value
 
@@ -392,12 +392,12 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterator rVPOS1 initially points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS2 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 The iterator rVPOS2 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 ```
 
@@ -412,11 +412,11 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 ### Parameters
 
-*left*
- An object of type iterator.
+*left*<br/>
+An object of type iterator.
 
-*right*
- An object of type iterator.
+*right*<br/>
+An object of type iterator.
 
 ### Return Value
 
@@ -483,10 +483,10 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterators rVPOS1 & rVPOS2 initially point to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 The iterator rVPOS1 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 ```
 
@@ -501,11 +501,11 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 ### Parameters
 
-*left*
- An object of type iterator.
+*left*<br/>
+An object of type iterator.
 
-*right*
- An object of type iterator.
+*right*<br/>
+An object of type iterator.
 
 ### Return Value
 
@@ -576,12 +576,12 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS2 initially points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 The iterator rVPOS1 now points to the second element
- in the reversed sequence: 8.
+in the reversed sequence: 8.
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.
 ```
 
@@ -605,11 +605,11 @@ operator+(
 
 ### Parameters
 
-*_Off*
- The number of positions the const move_iterator or const reverse_iterator is to be offset.
+*_Off*<br/>
+The number of positions the const move_iterator or const reverse_iterator is to be offset.
 
-*right*
- The iterator to be offset.
+*right*<br/>
+The iterator to be offset.
 
 ### Return Value
 
@@ -659,9 +659,9 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS1 now points to the fifth element
- in the reversed sequence: 2.
+in the reversed sequence: 2.
 ```
 
 ## <a name="operator-"></a>  operator-
@@ -682,11 +682,11 @@ Tdiff operator-(
 
 ### Parameters
 
-*left*
- An iterator.
+*left*<br/>
+An iterator.
 
-*right*
- An iterator.
+*right*<br/>
+An iterator.
 
 ### Return Value
 
@@ -751,9 +751,9 @@ int main( )
 ```Output
 The initial vector vec is: ( 0 2 4 6 8 10 ).
 The iterators rVPOS1 & rVPOS2 initially point to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 The iterator rVPOS2 now points to the fifth element
- in the reversed sequence: 2.
+in the reversed sequence: 2.
 The difference: rVPOS2 - rVPOS1= 4.
 ```
 

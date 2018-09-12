@@ -13,12 +13,14 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Tear-Off Interfaces Classes
-The following classes provide support for tear-off interfaces:  
-  
--   [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) Implements `IUnknown` for a tear-off interface.  
-  
--   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) Implements `IUnknown` for a "cached" tear-off interface.  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)
+
+The following classes provide support for tear-off interfaces:
+
+- [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) Implements `IUnknown` for a tear-off interface.
+
+- [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) Implements `IUnknown` for a "cached" tear-off interface.
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "Resources for Creating a Game Using DirectX | Microsoft Docs"
+title: "Resources for Creating a C++ Game Using DirectX | Microsoft Docs"
 ms.custom: ""
 ms.date: "06/08/2018"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "corob-msft"
 ms.author: "corob"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Resources for Creating a Game Using DirectX
+# Resources for Creating a C++ Game Using DirectX
 
 To create the best desktop games, use Visual C++ and DirectX together.
 

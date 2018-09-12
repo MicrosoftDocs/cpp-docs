@@ -13,13 +13,16 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Running Objects Classes
-The following class provides support for running objects:  
-  
--   [IRunnableObjectImpl](../atl/reference/irunnableobjectimpl-class.md) Determines if an object is running, forces it to run, or locks it into the running state.  
-  
-## Related Articles  
- [ATL Tutorial](../atl/active-template-library-atl-tutorial.md)  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)
+
+The following class provides support for running objects:
+
+- [IRunnableObjectImpl](../atl/reference/irunnableobjectimpl-class.md) Determines if an object is running, forces it to run, or locks it into the running state.
+
+## Related Articles
+
+[ATL Tutorial](../atl/active-template-library-atl-tutorial.md)
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)
 

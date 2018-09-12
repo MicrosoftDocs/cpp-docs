@@ -13,10 +13,11 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # _ATL_WIN_MODULE70 Structure
-Used by windowing code in ATL.  
-  
-## Syntax  
-  
+
+Used by windowing code in ATL.
+
+## Syntax
+
 ```
 struct _ATL_WIN_MODULE70 {
     UNIT cbSize; 
@@ -24,31 +25,31 @@ struct _ATL_WIN_MODULE70 {
     _AtlCreateWndData* m_pCreateWndList;
     CSimpleArray<ATOM> m_rgWindowClassAtoms;
 };
-```  
-  
-## Members  
- `cbSize`  
- The size of the structure, used for versioning.  
-  
- `m_csWindowCreate`  
- Used to serialize access to window registration code. Used internally by ATL.  
-  
- `m_pCreateWndList`  
- Used to bind windows to their objects. Used internally by ATL.  
-  
- `m_rgWindowClassAtoms`  
- Used to track window class registrations so that they can be properly unregistered at termination. Used internally by ATL.  
-  
-## Remarks  
- [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module) is defined as a typedef of `_ATL_WIN_MODULE70`.  
-  
-## Requirements  
- **Header:** atlbase.h  
-  
-## See Also  
- [Classes and structs](../../atl/reference/atl-classes.md)
+```
 
+## Members
 
+`cbSize`  
+The size of the structure, used for versioning.
 
+`m_csWindowCreate`  
+Used to serialize access to window registration code. Used internally by ATL.
 
+`m_pCreateWndList`  
+Used to bind windows to their objects. Used internally by ATL.
+
+`m_rgWindowClassAtoms`  
+Used to track window class registrations so that they can be properly unregistered at termination. Used internally by ATL.
+
+## Remarks
+
+[_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module) is defined as a typedef of `_ATL_WIN_MODULE70`.
+
+## Requirements
+
+**Header:** atlbase.h
+
+## See Also
+
+[Classes and structs](../../atl/reference/atl-classes.md)
 

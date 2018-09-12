@@ -13,10 +13,12 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Error Information Classes
-The following class indicates how error information is handled:  
-  
--   [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) Determines whether the object supports the [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) interface. `IErrorInfo` allows error information to be propagated back to the client.  
-  
-## See Also  
- [Class Overview](../atl/atl-class-overview.md)
+
+The following class indicates how error information is handled:
+
+- [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) Determines whether the object supports the [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) interface. `IErrorInfo` allows error information to be propagated back to the client.
+
+## See Also
+
+[Class Overview](../atl/atl-class-overview.md)
 

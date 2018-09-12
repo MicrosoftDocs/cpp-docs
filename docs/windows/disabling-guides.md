@@ -5,7 +5,7 @@ ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
-helpviewer_keywords: ["guides, disabling snapping", "Dialog editor, snap to guides", "snap to guides (Dialog editor)", "controls [C++], snap to guides/grid"]
+helpviewer_keywords: ["guides, disabling snapping", "Dialog editor [C++], snap to guides", "snap to guides (Dialog editor)", "controls [C++], snap to guides/grid"]
 ms.assetid: 51efa07b-8684-474e-a0b4-191ec5d91d1a
 author: "mikeblome"
 ms.author: "mblome"

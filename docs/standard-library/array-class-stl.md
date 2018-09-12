@@ -101,8 +101,8 @@ array(const array& right);
 
 ### Parameters
 
-*right*
- Object or range to insert.
+*right*<br/>
+Object or range to insert.
 
 ### Remarks
 
@@ -157,8 +157,8 @@ void assign(const Ty& val);
 
 ### Parameters
 
-*val*
- The value to assign.
+*val*<br/>
+The value to assign.
 
 ### Remarks
 
@@ -214,8 +214,8 @@ constexpr const_reference at(size_type off) const;
 
 ### Parameters
 
-*off*
- Position of element to access.
+*off*<br/>
+Position of element to access.
 
 ### Remarks
 
@@ -1075,8 +1075,8 @@ constexpr const_reference operator[](size_type off) const;
 
 ### Parameters
 
-*off*
- Position of element to access.
+*off*<br/>
+Position of element to access.
 
 ### Remarks
 
@@ -1123,13 +1123,13 @@ int main()
 Replaces the controlled sequence.
 
 ```cpp
-array <Value>%  operator=(array <Value>% right);
+array<Value> operator=(array<Value> right);
 ```
 
 ### Parameters
 
-*right*
- Container to copy.
+*right*<br/>
+Container to copy.
 
 ### Remarks
 
@@ -1506,8 +1506,8 @@ void swap(array& right);
 
 ### Parameters
 
-*right*
- Array to swap contents with.
+*right*<br/>
+Array to swap contents with.
 
 ### Remarks
 

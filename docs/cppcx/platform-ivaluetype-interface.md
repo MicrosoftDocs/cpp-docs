@@ -12,13 +12,15 @@ ms.author: "mblome"
 ms.workload: ["cplusplus"]
 ---
 # Platform::IValueType Interface
-`Platform::IValueType` is an infrastructure interface that is implemented by value classes and value structs. Not to be used explicitly in your code.  
-  
-## Syntax  
-  
-```cpp  
-interface class IValueType  
-```  
-  
-## See Also  
- [Platform namespace](../cppcx/platform-namespace-c-cx.md)
+
+`Platform::IValueType` is an infrastructure interface that is implemented by value classes and value structs. Not to be used explicitly in your code.
+
+## Syntax
+
+```cpp
+interface class IValueType
+```
+
+## See Also
+
+[Platform namespace](../cppcx/platform-namespace-c-cx.md)

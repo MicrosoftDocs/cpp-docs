@@ -29,7 +29,7 @@ void rewind(
 
 ### Parameters
 
-*stream*
+*stream*<br/>
 Pointer to **FILE** structure.
 
 ## Remarks

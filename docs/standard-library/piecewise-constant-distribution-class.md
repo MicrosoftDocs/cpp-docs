@@ -59,7 +59,7 @@ public:
 
 ### Parameters
 
-*RealType*
+*RealType*<br/>
 The floating point result type, defaults to **double**. For possible types, see [\<random>](../standard-library/random.md).
 
 ## Remarks
@@ -228,32 +228,32 @@ explicit piecewise_constant_distribution(const param_type& parm);
 
 ### Parameters
 
-*firstI*
- An input iterator of the first element in the distribution range.
+*firstI*<br/>
+An input iterator of the first element in the distribution range.
 
-*lastI*
- An input iterator of the last element in the distribution range.
+*lastI*<br/>
+An input iterator of the last element in the distribution range.
 
-*firstW*
- An input iterator of the first element in the weights range.
+*firstW*<br/>
+An input iterator of the first element in the weights range.
 
-*intervals*
- An [initializer_list](../cpp/initializers.md) with the intervals of the distribution.
+*intervals*<br/>
+An [initializer_list](../cpp/initializers.md) with the intervals of the distribution.
 
-*count*
- The number of elements in the distribution range.
+*count*<br/>
+The number of elements in the distribution range.
 
-*xmin*
- The lowest value in the distribution range.
+*xmin*<br/>
+The lowest value in the distribution range.
 
-*xmax*
- The highest value in the distribution range. Must be greater than *xmin*.
+*xmax*<br/>
+The highest value in the distribution range. Must be greater than *xmin*.
 
-*weightfunc*
- The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
+*weightfunc*<br/>
+The object representing the probability function for the distribution. Both the parameter and the return value must be convertible to **double**.
 
-*parm*
- The parameter structure used to construct the distribution.
+*parm*<br/>
+The parameter structure used to construct the distribution.
 
 ### Remarks
 

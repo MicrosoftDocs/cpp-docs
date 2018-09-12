@@ -98,8 +98,8 @@ packaged_task& operator=(packaged_task&& Right);
 
 ### Parameters
 
-*Right*
- A `packaged_task` object.
+*Right*<br/>
+A `packaged_task` object.
 
 ### Return Value
 
@@ -154,14 +154,14 @@ template <class Fn, class Alloc>
 
 ### Parameters
 
-*Right*
- A `packaged_task` object.
+*Right*<br/>
+A `packaged_task` object.
 
-*alloc*
- A memory allocator. For more information, see [\<allocators>](../standard-library/allocators-header.md).
+*alloc*<br/>
+A memory allocator. For more information, see [\<allocators>](../standard-library/allocators-header.md).
 
-*fn*
- A function object.
+*fn*<br/>
+A function object.
 
 ### Remarks
 
@@ -207,8 +207,8 @@ void swap(packaged_task& Right) noexcept;
 
 ### Parameters
 
-*Right*
- A `packaged_task` object.
+*Right*<br/>
+A `packaged_task` object.
 
 ## <a name="valid"></a>  packaged_task::valid
 

@@ -25,11 +25,11 @@ void swap(
 
 ### Parameters
 
-*right*
- The map providing the elements to be swapped, or the map whose elements are to be exchanged with those of the map *left*.
+*right*<br/>
+The map providing the elements to be swapped, or the map whose elements are to be exchanged with those of the map *left*.
 
-*left*
- The map whose elements are to be exchanged with those of the map *right*.
+*left*<br/>
+The map whose elements are to be exchanged with those of the map *right*.
 
 ### Remarks
 
@@ -52,11 +52,11 @@ void swap(
 
 ### Parameters
 
-*right*
- The multimap providing the elements to be swapped, or the multimap whose elements are to be exchanged with those of the multimap *left*.
+*right*<br/>
+The multimap providing the elements to be swapped, or the multimap whose elements are to be exchanged with those of the multimap *left*.
 
-*left*
- The multimap whose elements are to be exchanged with those of the multimap *right*.
+*left*<br/>
+The multimap whose elements are to be exchanged with those of the multimap *right*.
 
 ### Remarks
 

@@ -1,5 +1,5 @@
 ---
-title: "Editing Binary Data | Microsoft Docs"
+title: "Editing Binary Data (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]

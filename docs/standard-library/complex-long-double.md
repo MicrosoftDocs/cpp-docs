@@ -34,14 +34,14 @@ complex(
 
 ### Parameters
 
-*_RealVal*
- The value of type **long double** for the real part of the complex number being constructed.
+*_RealVal*<br/>
+The value of type **long double** for the real part of the complex number being constructed.
 
-*_ImagVal*
- The value of type **long double** for the imaginary part of the complex number being constructed.
+*_ImagVal*<br/>
+The value of type **long double** for the imaginary part of the complex number being constructed.
 
-*complexNum*
- The complex number of type **double** or of type **float** whose real and imaginary parts are used to initialize a complex number of type **long double** being constructed.
+*complexNum*<br/>
+The complex number of type **double** or of type **float** whose real and imaginary parts are used to initialize a complex number of type **long double** being constructed.
 
 ## Return Value
 
@@ -95,17 +95,17 @@ int main( )
         << argc3 << " radians, which is " << argc3 * 180 / pi
         << " degrees." << endl;
 }
-\* Output:
+/* Output:
 Specifying initial real & imaginary parts,
- as type float gives c1 = (4,5)
+as type float gives c1 = (4,5)
 Implicit conversion from type float to type long double,
- gives c2longdouble = (1,3)
+gives c2longdouble = (1,3)
 Implicit conversion from type long double to type float,
- gives c3longdouble = (3,4)
+gives c3longdouble = (3,4)
 The modulus of c3 is recovered from c3 using: abs ( c3 ) = 5
 Argument of c3 is recovered from c3 using:
- arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
-*\
+arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
+*/
 ```
 
 ## Requirements

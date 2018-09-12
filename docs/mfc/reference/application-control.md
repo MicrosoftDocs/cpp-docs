@@ -175,7 +175,7 @@ AfxOleLockControl(_T("MSCAL.Calendar"));
 ```
    
 ### Requirements  
- **Header:** <afxwin.h>  
+ **Header:** afxwin.h  
    
 ### See Also  
  [Macros and Globals](mfc-macros-and-globals.md)   
@@ -321,7 +321,7 @@ AfxOleUnlockControl(_T("MSCAL.Calendar"));
 ```
    
 ### Requirements  
- **Header:** <afxwin.h>  
+ **Header:** afxwin.h  
    
 ### See Also  
  [Macros and Globals](mfc-macros-and-globals.md)  

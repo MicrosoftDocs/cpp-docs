@@ -1,5 +1,5 @@
 ---
-title: "Deleting an Entry From an Accelerator Table | Microsoft Docs"
+title: "Deleting an Entry From an Accelerator Table (C++) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/04/2016"
 ms.technology: ["cpp-windows"]
@@ -11,7 +11,7 @@ author: "mikeblome"
 ms.author: "mblome"
 ms.workload: ["cplusplus", "uwp"]
 ---
-# Deleting an Entry From an Accelerator Table
+# Deleting an Entry From an Accelerator Table (C++)
 
 ### To delete an entry from an accelerator table
 
