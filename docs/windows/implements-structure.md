@@ -98,17 +98,17 @@ Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `
 
 ### Protected Methods
 
-| Name                                                     | Description                                                                                                   |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| [Implements::CanCastTo Method](#cancastto)               | Gets a pointer to the specified interface.                                                                    |
-| [Implements::CastToUnknown Method](#casttounknown)       | Gets a pointer to the underlying `IUnknown` interface.                                                        |
-| [Implements::FillArrayWithIid Method](#fillarraywithiid) | Inserts the interface ID specified by the current zeroth template parameter into the specified array element. |
+| Name                                              | Description                                                                                                   |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [Implements::CanCastTo](#cancastto)               | Gets a pointer to the specified interface.                                                                    |
+| [Implements::CastToUnknown](#casttounknown)       | Gets a pointer to the underlying `IUnknown` interface.                                                        |
+| [Implements::FillArrayWithIid](#fillarraywithiid) | Inserts the interface ID specified by the current zeroth template parameter into the specified array element. |
 
 ### Protected Constants
 
-| Name                                       | Description                                    |
-| ------------------------------------------ | ---------------------------------------------- |
-| [Implements::IidCount Constant](#iidcount) | Holds the number of implemented interface IDs. |
+| Name                              | Description                                    |
+| --------------------------------- | ---------------------------------------------- |
+| [Implements::IidCount](#iidcount) | Holds the number of implemented interface IDs. |
 
 ## Inheritance Hierarchy
 
@@ -130,7 +130,7 @@ Each *I0* through *I9* interface parameter must derive from either `IUnknown`, `
 
 **Namespace:** Microsoft::WRL
 
-## <a name="cancastto"></a>Implements::CanCastTo Method
+## <a name="cancastto"></a>Implements::CanCastTo
 
 Gets a pointer to the specified interface.
 
@@ -157,7 +157,7 @@ S_OK if successful; otherwise, an HRESULT that indicates the error, such as E_NO
 
 This is an internal helper function that performs a QueryInterface operation.
 
-## <a name="casttounknown"></a>Implements::CastToUnknown Method
+## <a name="casttounknown"></a>Implements::CastToUnknown
 
 Gets a pointer to the underlying `IUnknown` interface.
 
@@ -173,7 +173,7 @@ This operation always succeeds and returns the `IUnknown` pointer.
 
 Internal helper function.
 
-## <a name="fillarraywithiid"></a>Implements::FillArrayWithIid Method
+## <a name="fillarraywithiid"></a>Implements::FillArrayWithIid
 
 Inserts the interface ID specified by the current zeroth template parameter into the specified array element.
 
@@ -196,7 +196,7 @@ An array of type IID.
 
 Internal helper function.
 
-## <a name="iidcount"></a>Implements::IidCount Constant
+## <a name="iidcount"></a>Implements::IidCount
 
 Holds the number of implemented interface IDs.
 
