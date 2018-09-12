@@ -6231,6 +6231,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "docs/windows/implements-cancastto-method.md",
+            "redirect_url": "/cpp/windows/implements-structure#cancastto",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implements-casttounknown-method.md",
+            "redirect_url": "/cpp/windows/implements-structure#casttounknown",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implements-fillarraywithiid-method.md",
+            "redirect_url": "/cpp/windows/implements-structure#fillarraywithiid",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/windows/implements-iidcount-constant.md",
+            "redirect_url": "/cpp/windows/implements-structure#iidcount",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/windows/runtimeclass-tilde-runtimeclass-destructor.md",
             "redirect_url": "/cpp/windows/runtimeclass-class#tilde-runtimeclass",
             "redirect_document_id": false
