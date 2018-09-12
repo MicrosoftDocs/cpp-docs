@@ -1,7 +1,7 @@
 ---
 title: "Active Technology on the Internet | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -13,12 +13,12 @@ ms.workload: ["cplusplus"]
 ---
 # Active Technology on the Internet
 Active technology is an open platform that lets developers create exciting, dynamic content and applications for the global Internet, or for a company's internal network, known as an intranet. The major technologies provided by Microsoft for Internet programming are described below.  
+
+>[!IMPORTANT]
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
   
 ## ActiveX Controls  
  ActiveX controls (formerly OLE controls) are objects that can be inserted into Web pages or any other application that is an ActiveX control container. Examples include buttons, stock tickers, and chart controls. For more information, see [ActiveX Controls on the Internet](../mfc/activex-controls-on-the-internet.md).  
-  
-## Active Documents  
- Active documents can be displayed by Web browsers or document viewers. Traditional embedded objects were limited to one page and were shown embedded in the document. With Active technology, the document can be displayed full frame in the entire client area window. For more information, see [Active Documents on the Internet](../mfc/active-documents-on-the-internet.md).  
   
 ## Internet Data Download Services  
  Data can be downloaded over the Internet using common protocols: HTTP, FTP, and gopher. The MFC WinInet classes make it easy to transfer data using HTTP, FTP, and gopher protocols by abstracting the TCP/IP and WinSock protocols. The MFC asynchronous moniker classes provide a way to download files without blocking and to render large objects asynchronously. For more information, see [Win32 Internet Extensions (WinInet)](../mfc/win32-internet-extensions-wininet.md).  

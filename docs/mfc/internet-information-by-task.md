@@ -1,7 +1,7 @@
 ---
 title: "Internet Information by Task | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-mfc"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
@@ -13,6 +13,9 @@ ms.workload: ["cplusplus"]
 ---
 # Internet Information by Task
 The tasks listed in this topic are sorted based on the task you want to accomplish.  
+
+>[!IMPORTANT]
+> ActiveX is a legacy technology that should not be used for new development. For more information about modern technologies that supercede ActiveX, see [ActiveX Controls](activex-controls.md).
   
  The following categories of tasks are listed in this topic:  
   
@@ -23,8 +26,6 @@ The tasks listed in this topic are sorted based on the task you want to accompli
 ## What do you want to do  
   
 ###  <a name="_core_activex_controls.2c_.documents_and_asynchronous_moniker_tasks"></a> ActiveX Controls, Documents and Asynchronous Moniker Tasks  
-  
--   [Learn about Active documents](../mfc/active-documents-on-the-internet.md)  
   
 -   [Learn about Asynchronous Monikers](../mfc/asynchronous-monikers-on-the-internet.md)  
   
