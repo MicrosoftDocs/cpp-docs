@@ -1,7 +1,7 @@
 ---
 title: "How to: Define and Consume Classes and Structs (C++/CLI) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/04/2016"
+ms.date: "09/12/2018"
 ms.technology: ["cpp-cli"]
 ms.topic: "conceptual"
 dev_langs: ["C++"]
